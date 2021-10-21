@@ -140,8 +140,8 @@
     &-header,&-footer {
         text-overflow: ellipsis; white-space: nowrap; background-color: @modal-footer-bg; padding: @modal-padding; overflow: hidden; position: absolute; right: 0; left: 0;
 
-        .btn-lg,&.form-lg .btn { margin: ((@btn-default - @btn-lg) / 2) 0; }
-        .btn {
+        .ui-btn-lg,&.form-lg .ui-btn { margin: ((@btn-default - @btn-lg) / 2) 0; }
+        .ui-btn {
             &-sm { margin: ((@btn-default - @btn-sm) / 2) 0; }
             &-xs { margin: ((@btn-default - @btn-xs) / 2) 0; }
             &-xxs { margin: ((@btn-default - @btn-xxs) / 2) 0; }
@@ -167,7 +167,7 @@
     &-footer {
         height: @modal-footer-height; bottom: 0; z-index: @modal-footer-z-index;
 
-        .btn {
+        .ui-btn {
             &:focus { box-shadow: 0 0 0 @modal-btn-focus-size @modal-btn-focus-shadow; }
         }
     }

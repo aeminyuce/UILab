@@ -235,7 +235,7 @@
                             <div class="card-side padding-10 ui-border-b">
 
                                 <div class="dropdown menu-l right ui-ease-dropdown">
-                                    <button class="btn btn-ghost round">
+                                    <button class="ui-btn ui-btn-ghost round">
                                         <span>First Chart</span>
                                         <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                                     </button>

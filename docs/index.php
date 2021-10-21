@@ -82,11 +82,11 @@
     <header class="container header form-lg ui-theme-sub invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-12">
-                <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-square round icons-no-opacity right ui-ease-btn hidden-ie">
+                <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square round icons-no-opacity right ui-ease-btn hidden-ie">
                     <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
                     <svg class="icon visible-light"><use href="#sun-fill"/></svg>
                 </button>
-                <a href="index.php" class="btn btn-square circle margin-10-r ui-ease-btn">
+                <a href="index.php" class="ui-btn ui-btn-square circle margin-10-r ui-ease-btn">
                     <svg class="icon icon-hybrid no-opacity"><use href="#long-arrow-left"/></svg>
                 </a>
                 <h1 class="x-large inline-block"><span class="capitalize"><?php echo str_replace("-", " ", $page); ?></span></h1>
@@ -103,7 +103,7 @@
         include ($page.'.php');
 ?>
 
-<button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-lg btn-square round-l icons-no-opacity ui-ease-btn set-fixed set-r hidden-ie" style="top: 80px;">
+<button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-lg ui-btn-square round-l icons-no-opacity ui-ease-btn set-fixed set-r hidden-ie" style="top: 80px;">
     <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
     <svg class="icon visible-light"><use href="#sun-fill"/></svg>
 </button>
@@ -119,14 +119,14 @@
                 </div>
                 <div class="row">
                     <div class="col-12 align-r padding-15-r icons-no-opacity ui-ease-1st-btn">
-                        <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle btn btn-square round hidden-ie">
+                        <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square round hidden-ie">
                             <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
                             <svg class="icon visible-light"><use href="#sun-fill"/></svg>
                         </button>
-                        <a title="GitHub" href="https://github.com/aeminyuce/UILab/" class="btn btn-square round" target="_blank">
+                        <a title="GitHub" href="https://github.com/aeminyuce/UILab/" class="ui-btn ui-btn-square round" target="_blank">
                             <svg class="icon"><use href="#github"/></svg>
                         </a>
-                        <button class="btn btn-square round show-mobile-menu-r visible-md">
+                        <button class="ui-btn ui-btn-square round show-mobile-menu-r visible-md">
                             <svg class="icon"><use href="#bars-right"/></svg>
                         </button>
                     </div>
@@ -140,43 +140,43 @@
 
             <!-- sidebar -->
             <div class="col-250 ui-theme-gray ui-fill-light-200 hidden-md">
-                <div class="align-l sm-align-c padding-10 form-lg add-mobile-menu-r">
-                    <h4 class="font-bold margin-10">UI</h4>
+                <div class="align-l sm-align-c form-lg add-mobile-menu-r">
+                    <h4 class="font-bold margin-20">UI</h4>
                     <ul class="list-unstyled block-2nd ui-ease-2nd-button">
-                        <li><a class="btn btn-ghost" href="?p=alerts">Alerts</a></li>
-                        <li><a class="btn btn-ghost" href="?p=breadcrumbs">Breadcrumbs</a></li>
-                        <li><a class="btn btn-ghost" href="?p=buttons">Buttons</a></li>
-                        <li><a class="btn btn-ghost" href="?p=calendar">Calendar</a></li>
-                        <li><a class="btn btn-ghost" href="?p=card">Card</a></li>
-                        <li><a class="btn btn-ghost" href="?p=carousel">Carousel</a></li>
-                        <li><a class="btn btn-ghost" href="?p=charts">Charts</a></li>
-                        <li><a class="btn btn-ghost" href="?p=countdown">Countdown</a></li>
-                        <li><a class="btn btn-ghost" href="?p=dropdown">Dropdown</a></li>
-                        <li><a class="btn btn-ghost" href="?p=error-pages">Error Pages</a></li>
-                        <li><a class="btn btn-ghost" href="?p=forms">Forms</a></li>
-                        <li><a class="btn btn-ghost" href="?p=grid">Grid</a></li>
-                        <li><a class="btn btn-ghost" href="?p=grid-list">Grid List</a></li>
-                        <li><a class="btn btn-ghost" href="?p=image-uploader">Image Uploader</a></li>
-                        <li><a class="btn btn-ghost" href="?p=list-group">List Group</a></li>
-                        <li><a class="btn btn-ghost" href="?p=loading-mask">Loading Mask</a></li>
-                        <li><a class="btn btn-ghost" href="?p=modal">Modal</a></li>
-                        <li><a class="btn btn-ghost" href="?p=photo-images">Photo Images</a></li>
-                        <li><a class="btn btn-ghost" href="?p=pricing-tables">Pricing Tables</a></li>
-                        <li><a class="btn btn-ghost" href="?p=progress-bar">Progress Bar</a></li>
-                        <li><a class="btn btn-ghost" href="?p=steps">Steps</a></li>
-                        <li><a class="btn btn-ghost" href="?p=stripes">Stripes</a></li>
-                        <li><a class="btn btn-ghost" href="?p=svg-map">SVG Map</a></li>
-                        <li><a class="btn btn-ghost" href="?p=tables">Tables</a></li>
-                        <li><a class="btn btn-ghost" href="?p=tabs">Tabs</a></li>
-                        <li><a class="btn btn-ghost" href="?p=themes">Themes</a></li>
-                        <li><a class="btn btn-ghost" href="?p=timeline">Timeline</a></li>
-                        <li><a class="btn btn-ghost" href="?p=tooltip">Tooltip</a></li>
-                        <li><a class="btn btn-ghost" href="?p=typography">Typography</a></li>
-                        <li><a class="btn btn-ghost" href="?p=weather">Weather</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=alerts">Alerts</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=breadcrumbs">Breadcrumbs</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=buttons">Buttons</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=calendar">Calendar</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=card">Card</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=carousel">Carousel</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=charts">Charts</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=countdown">Countdown</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=dropdown">Dropdown</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=error-pages">Error Pages</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=forms">Forms</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=grid">Grid</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=grid-list">Grid List</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=image-uploader">Image Uploader</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=list-group">List Group</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=loading-mask">Loading Mask</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=modal">Modal</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=photo-images">Photo Images</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=pricing-tables">Pricing Tables</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=progress-bar">Progress Bar</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=steps">Steps</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=stripes">Stripes</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=svg-map">SVG Map</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=tables">Tables</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=tabs">Tabs</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=themes">Themes</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=timeline">Timeline</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=tooltip">Tooltip</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=typography">Typography</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=weather">Weather</a></li>
                     </ul>
-                    <h4 class="font-bold margin-10">Javascript</h4>
+                    <h4 class="font-bold margin-20">Javascript</h4>
                     <ul class="list-unstyled block-2nd ui-ease-2nd-button">
-                        <li><a class="btn btn-ghost" href="?p=ui">UI JS</a></li>
+                        <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=ui">UI JS</a></li>
                     </ul>
                 </div>
             </div>
@@ -189,10 +189,10 @@
                             <h2 class="margin-10-b">UILab</h2>
                             <p class="highlight large xs-align-c">CSS &amp; JavaScript powered responsive design system.</p>
                             <div class="form-lg ui-ease-1st-btn">
-                                <a href="?p=icons" class="btn btn-xs-fluid padding-30-h circle ui-theme-sub">
+                                <a href="?p=icons" class="ui-btn ui-btn-xs-fluid padding-30-h circle ui-theme-sub">
                                     <svg class="icon margin-5-r no-opacity ui-color"><use href="#draw"/></svg> See Icons
                                 </a>
-                                <a href="?p=download" class="btn btn-xs-fluid padding-30-h circle ui-theme-sub ui-fill-dark-100">
+                                <a href="?p=download" class="ui-btn ui-btn-xs-fluid padding-30-h circle ui-theme-sub ui-fill-dark-100">
                                     Download <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                 </a>
                             </div>
@@ -311,7 +311,7 @@
     <!-- mobile menu -->
     <div class="mobile-menu show-r ui-theme-base ui-ease-layout ui-ease-in-out">
         <div class="mobile-menu-title padding-15-v ui-fill-dark-100">
-            <button class="btn btn-square btn-lg btn-ghost round ui-ease-btn close-mobile-menu">
+            <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost round ui-ease-btn close-mobile-menu">
                 <svg class="icon no-opacity"><use href="#remove"/></svg>
             </button>
             <img src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">

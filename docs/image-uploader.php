@@ -13,12 +13,12 @@
 
                             <div class="file ui-no-border inline-block round ui-ease-form">
                                 <input class="bg-white cursor-pointer" type="file" name="images[]" multiple>
-                                <span class="btn btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
+                                <span class="ui-btn ui-btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
                                     <svg class="icon no-opacity"><use href="#plus"/></svg>
                                 </span>
                             </div>
 
-                            <button title="Send Images" type="submit" name="send" class="btn btn-square round ui-theme-base ui-fill-dark-100 ui-ease-btn">
+                            <button title="Send Images" type="submit" name="send" class="ui-btn ui-btn-square round ui-theme-base ui-fill-dark-100 ui-ease-btn">
                                 <svg class="icon"><use href="#send"/></svg>
                             </button>
 

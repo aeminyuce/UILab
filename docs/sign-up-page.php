@@ -20,7 +20,7 @@
                     <div class="row">
                         <div class="col-12 padding-15-v align-c">
                             <span class="sp-30"></span>
-                            <a href="?l=login-page" class="btn font-color-white btn-lg btn-ghost btn-ghost-border btn-sm-fluid padding-30-h circle ui-border-dual ui-stroke ui-ease-btn">
+                            <a href="?l=login-page" class="ui-btn font-color-white ui-btn-lg ui-btn-ghost ui-btn-ghost-border ui-btn-sm-fluid padding-30-h circle ui-border-dual ui-stroke ui-ease-btn">
                                 <span class="font-color-white">Have you already an account?</span>
                                 <span class="ui-color hidden-sm">Click here to login.</span>
                             </a>
@@ -130,7 +130,7 @@
 
                                     <span class="sp-30 margin-15-v"></span>
 
-                                    <button type="submit" class="signup-btn btn btn-md-fluid font-color-white circle hover-scale hover-shadow ui-ease-btn">
+                                    <button type="submit" class="signup-btn ui-btn ui-btn-md-fluid font-color-white circle hover-scale hover-shadow ui-ease-btn">
                                         <b>SIGN UP NOW</b>
                                     </button>
                                     <span class="sp-30"></span>

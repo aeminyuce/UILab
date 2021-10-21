@@ -10,37 +10,37 @@
                     <h5 class="font-color-white-50 padding-15 margin-5-b">LIBRARY</h5>
                     <ul class="list-unstyled list-spacer-15 large font-bold block-2nd ui-ease-2nd-btn">
                         <li>
-                            <a class="btn btn-ghost circle" href="#">
+                            <a class="ui-btn ui-btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#tv"/></svg>
                                 TV Shows
                             </a>
                         </li>
                         <li>
-                            <a class="btn circle selected" href="#">
+                            <a class="ui-btn circle selected" href="#">
                                 <svg class="icon"><use href="#film"/></svg>
                                 Films
                             </a>
                         </li>
                         <li>
-                            <a class="btn btn-ghost circle" href="#">
+                            <a class="ui-btn ui-btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#trophy-star"/></svg>
                                 Sports
                             </a>
                         </li>
                         <li>
-                            <a class="btn btn-ghost circle" href="#">
+                            <a class="ui-btn ui-btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#music"/></svg>
                                 Concerts
                             </a>
                         </li>
                         <li>
-                            <a class="btn btn-ghost circle" href="#">
+                            <a class="ui-btn ui-btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#face-smile"/></svg>
                                 Comedy
                             </a>
                         </li>
                         <li>
-                            <a class="btn btn-ghost circle" href="#">
+                            <a class="ui-btn ui-btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#video"/></svg>
                                 Others
                             </a>
@@ -52,19 +52,19 @@
                     <h5 class="font-color-white-50 padding-15 margin-5-b">NEWS &amp; EVENTS</h5>
                     <ul class="list-unstyled list-spacer-15 font-color-white-50 large block-2nd ui-ease-2nd-btn">
                         <li>
-                            <a class="btn btn-ghost circle" href="#">
+                            <a class="ui-btn ui-btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#news"/></svg>
                                 News
                             </a>
                         </li>
                         <li>
-                            <a class="btn btn-ghost circle" href="#">
+                            <a class="ui-btn ui-btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#network"/></svg>
                                 Community
                             </a>
                         </li>
                         <li>
-                            <a class="btn btn-ghost circle" href="#">
+                            <a class="ui-btn ui-btn-ghost circle" href="#">
                                 <svg class="icon"><use href="#calendar-days"/></svg>
                                 Events
                             </a>
@@ -91,22 +91,22 @@
                         </div>
                         <div class="col-6 align-r">
                             <span class="align-c font-color-black-50 margin-20-r sm-no-margin ui-ease-1st-btn">
-                                <button class="btn btn-square btn-ghost margin-10-l circle left show-mobile-menu-l visible-md">
+                                <button class="ui-btn ui-btn-square ui-btn-ghost margin-10-l circle left show-mobile-menu-l visible-md">
                                     <svg class="icon"><use href="#bars-left"/></svg>
                                 </button>
-                                <button class="btn btn-square btn-ghost circle ui-ease-btn visible-md" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
+                                <button class="ui-btn ui-btn-square ui-btn-ghost circle ui-ease-btn visible-md" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
                                     <svg class="icon"><use href="#search"/></svg>
                                 </button>
-                                <button class="btn btn-square btn-ghost circle">
+                                <button class="ui-btn ui-btn-square ui-btn-ghost circle">
                                     <svg class="icon"><use href="#user"/></svg>
                                 </button>
-                                <button class="btn btn-square btn-ghost circle" data-ui-notifier>
+                                <button class="ui-btn ui-btn-square ui-btn-ghost circle" data-ui-notifier>
                                     <svg class="icon"><use href="#bell"/></svg>
                                 </button>
-                                <button class="btn btn-square btn-ghost circle">
+                                <button class="ui-btn ui-btn-square ui-btn-ghost circle">
                                     <svg class="icon"><use href="#setting"/></svg>
                                 </button>
-                                <button class="btn btn-square btn-ghost circle">
+                                <button class="ui-btn ui-btn-square ui-btn-ghost circle">
                                     <svg class="icon"><use href="#help"/></svg>
                                 </button>
                             </span>
@@ -126,7 +126,7 @@
                             <div class="col-static">
                                 <div class="col-350">
                                     <div class="round set-relative">
-                                        <button class="btn full-w full-h set-absolute opacity-more ui-ease-layout" onclick="ui.modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
+                                        <button class="ui-btn full-w full-h set-absolute opacity-more ui-ease-layout" onclick="ui.modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
                                             <svg class="icon icon-xxl icon-default font-color-white set-absolute set-c"><use href="#video"/></svg>
                                         </button>
                                         <img class="img-fluid round shadow-lg" src="img/video-poster.jpg" alt="">
@@ -142,7 +142,7 @@
                                             <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image.jpg" alt=""></a>
                                             <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image2.jpg" alt=""></a>
                                             <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image3.jpg" alt=""></a>
-                                            <a class="btn btn-lg circle ui-ease-btn" href="#">+38</a>
+                                            <a class="ui-btn ui-btn-lg circle ui-ease-btn" href="#">+38</a>
                                         </div>
                                     </div>
                                 </div>
@@ -291,11 +291,11 @@
                         </div>
                     </div>
                     <div class="carousel-nav ui-ease-1st-btn">
-                        <button class="carousel-prev btn btn-ghost btn-square round">
+                        <button class="carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
                             <svg class="icon"><use href="#angle-left"/></svg>
                         </button>
                         <span class="dots font-color-black-muted"></span>
-                        <button class="carousel-next btn btn-ghost btn-square round">
+                        <button class="carousel-next ui-btn ui-btn-ghost ui-btn-square round">
                             <svg class="icon"><use href="#angle-right"/></svg>
                         </button>
                     </div>
@@ -383,11 +383,11 @@
                         </div>
                     </div>
                     <div class="carousel-nav ui-ease-1st-btn">
-                        <button class="carousel-prev btn btn-ghost btn-square round">
+                        <button class="carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
                             <svg class="icon"><use href="#angle-left"/></svg>
                         </button>
                         <span class="dots font-color-black-muted"></span>
-                        <button class="carousel-next btn btn-ghost btn-square round">
+                        <button class="carousel-next ui-btn ui-btn-ghost ui-btn-square round">
                             <svg class="icon"><use href="#angle-right"/></svg>
                         </button>
                     </div>
@@ -403,7 +403,7 @@
 <!-- mobile menu -->
 <div class="mobile-menu show-l ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
     <div class="mobile-menu-title padding-20-v x-large ui-border-b">
-        <button class="btn btn-square btn-lg btn-ghost round ui-ease-btn close-mobile-menu">
+        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost round ui-ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>
         Categories
@@ -432,7 +432,7 @@
                     </div>
                 </div>
                 <div class="col-100 col-xs-50 padding-10-v">
-                    <button class="btn block round-r ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
+                    <button class="ui-btn block round-r ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
                         <svg class="icon"><use href="#search"/></svg>
                     </button>
                 </div>
@@ -440,42 +440,42 @@
 
             <div class="row no-fluid icons-xxl block-2nd icons-no-opacity icons-margin-5-v hover-t-more-2nd ui-theme-base ui-ease-2nd-btn">
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#tv"/></svg>
                         <span class="x-large block margin-5-t">TV Shows</span>
                         <span class="font-color-black-muted">1024</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#film"/></svg>
                         <span class="x-large block margin-5-t">Films</span>
                         <span class="font-color-black-muted">775</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#trophy-star"/></svg>
                         <span class="x-large block margin-5-t">Sports</span>
                         <span class="font-color-black-muted">316</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#music"/></svg>
                         <span class="x-large block margin-5-t">Concerts</span>
                         <span class="font-color-black-muted">589</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#face-smile"/></svg>
                         <span class="x-large block margin-5-t">Comedy</span>
                         <span class="font-color-black-muted">219</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
-                    <a class="btn btn-multi no-line-height round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#video"/></svg>
                         <span class="x-large block margin-5-t">Others</span>
                         <span class="font-color-black-muted">701</span>

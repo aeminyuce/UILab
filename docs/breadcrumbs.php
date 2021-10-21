@@ -77,7 +77,7 @@
                 <div class="ui-breadcrumbs icons-no-opacity">
                     <ul class="list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="btn round ui-ease-btn" href="#" itemprop="item" title="Home">
+                            <a class="ui-btn round ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
                                     <svg class="icon margin-5-r"><use href="#home"/></svg> Home
                                 </span>
@@ -85,7 +85,7 @@
                             <meta itemprop="position" content="1" />
                         </li>
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="btn round ui-ease-btn" href="#" itemprop="item" title="Search Results">
+                            <a class="ui-btn round ui-ease-btn" href="#" itemprop="item" title="Search Results">
                                     <span itemprop="name">
                                         Search Results
                                 </span>
@@ -93,7 +93,7 @@
                             </a>
                         </li>
                         <li>
-                            <button class="btn btn-passive round">Content Details</button>
+                            <button class="ui-btn ui-btn-passive round">Content Details</button>
                         </li>
                     </ul>
                 </div>
@@ -103,7 +103,7 @@
                 <div class="ui-breadcrumbs ui-theme-sub">
                     <ul class="list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="btn round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
+                            <a class="ui-btn round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
                                     <svg class="icon margin-5-r"><use href="#home"/></svg> Home
                                 </span>
@@ -111,7 +111,7 @@
                             <meta itemprop="position" content="1" />
                         </li>
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="btn round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Search Results">
+                            <a class="ui-btn round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Search Results">
                                     <span itemprop="name">
                                         Search Results
                                 </span>
@@ -119,7 +119,7 @@
                             </a>
                         </li>
                         <li>
-                            <button class="btn btn-passive round ui-fill-dark-100">Content Details</button>
+                            <button class="ui-btn ui-btn-passive round ui-fill-dark-100">Content Details</button>
                         </li>
                     </ul>
                 </div>
@@ -129,7 +129,7 @@
                 <div class="ui-breadcrumbs ui-no-separated icons-no-opacity">
                     <ul class="list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="btn round ui-ease-btn" href="#" itemprop="item" title="Home">
+                            <a class="ui-btn round ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
                                     <svg class="icon margin-5-r"><use href="#home"/></svg> Home
                                 </span>
@@ -137,7 +137,7 @@
                             <meta itemprop="position" content="1" />
                         </li>
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="btn round ui-ease-btn" href="#" itemprop="item" title="Search Results">
+                            <a class="ui-btn round ui-ease-btn" href="#" itemprop="item" title="Search Results">
                                     <span itemprop="name">
                                         <svg class="icon margin-5-r"><use href="#angle-left"/></svg> Search Results
                                     </span>
@@ -145,7 +145,7 @@
                             </a>
                         </li>
                         <li>
-                            <button class="btn btn-passive round">Content Details</button>
+                            <button class="ui-btn ui-btn-passive round">Content Details</button>
                         </li>
                     </ul>
                 </div>
@@ -155,7 +155,7 @@
                 <div class="ui-breadcrumbs no-separated ui-theme-base">
                     <ul class="list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="btn round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
+                            <a class="ui-btn round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
                                     <svg class="icon"><use href="#home"/></svg>
                                 </span>
@@ -164,7 +164,7 @@
                         </li>
                         <li>
                             <span class="dropdown ui-ease-dropdown">
-                                <button class="btn round ui-fill-dark-100">
+                                <button class="ui-btn round ui-fill-dark-100">
                                     <svg class="icon"><use href="#ellipsis-h"/></svg>
                                 </button>
                                 <ul class="dropdown-menu round shadow-lg">
@@ -196,7 +196,7 @@
                             </span>
                         </li>
                         <li>
-                            <button class="btn btn-passive round ui-fill-dark-100">Content Details</button>
+                            <button class="ui-btn ui-btn-passive round ui-fill-dark-100">Content Details</button>
                         </li>
                     </ul>
                 </div>
@@ -206,7 +206,7 @@
                 <div class="ui-breadcrumbs no-separated ui-theme-sub">
                     <ul class="list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="btn round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
+                            <a class="ui-btn round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
                                     <svg class="icon"><use href="#home"/></svg>
                                 </span>
@@ -215,7 +215,7 @@
                         </li>
                         <li>
                             <span class="dropdown ui-ease-dropdown">
-                                <button class="btn round ui-fill-dark-100">
+                                <button class="ui-btn round ui-fill-dark-100">
                                     <svg class="icon"><use href="#ellipsis-h"/></svg>
                                 </button>
                                 <ul class="dropdown-menu round shadow-lg">
@@ -247,7 +247,7 @@
                             </span>
                         </li>
                         <li>
-                            <button class="btn btn-passive round ui-fill-dark-100">Content Details</button>
+                            <button class="ui-btn ui-btn-passive round ui-fill-dark-100">Content Details</button>
                         </li>
                     </ul>
                 </div>

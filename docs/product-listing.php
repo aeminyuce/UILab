@@ -147,7 +147,7 @@
                             </label>
 
                             <span class="sp-10"></span>
-                            <button class="btn btn-sm circle ui-ease-btn">
+                            <button class="ui-btn ui-btn-sm circle ui-ease-btn">
                                 See All
                                 <svg class="icon margin-5-l"><use href="#angle-down"/></svg>
                             </button>
@@ -155,7 +155,7 @@
                         </div>
 
                         <div class="padding-15">
-                            <button type="submit" class="btn btn-lg block round ui-fill-dark-100 ui-ease-btn"><b>SEARCH</b></button>
+                            <button type="submit" class="ui-btn ui-btn-lg block round ui-fill-dark-100 ui-ease-btn"><b>SEARCH</b></button>
                         </div>
 
                     </div>
@@ -246,13 +246,13 @@
                             </div>
                             <span class="sp-10 visible-xs"></span>
                             <span class="align-c ui-theme-sub ui-ease-1st-btn">
-                                <button class="btn btn-square round ui-fill-dark-100">
+                                <button class="ui-btn ui-btn-square round ui-fill-dark-100">
                                     <svg class="icon"><use href="#grid-column"/></svg>
                                 </button>
-                                <button class="btn btn-square round">
+                                <button class="ui-btn ui-btn-square round">
                                     <svg class="icon"><use href="#grid-row"/></svg>
                                 </button>
-                                <button class="btn btn-square round show-mobile-menu-r visible-md">
+                                <button class="ui-btn ui-btn-square round show-mobile-menu-r visible-md">
                                     <svg class="icon"><use href="#bars-right"/></svg>
                                 </button>
                             </span>
@@ -268,10 +268,10 @@
                                         src="img/product_01.png" alt=""
                                         data-ui-src="img/product_01.png,img/product_02.png,img/product_03.png"
                                     >
-                                    <button title="Prev" class="prev btn btn-ghost btn-square round ui-ease-btn">
+                                    <button title="Prev" class="prev ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="next btn btn-ghost btn-square round ui-ease-btn">
+                                    <button title="Next" class="next ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="photo-slider-nav ui-ease-1st-layout"></span>
@@ -304,10 +304,10 @@
                                         src="img/product_02.png" alt=""
                                         data-ui-src="img/product_02.png,img/product_04.png"
                                     >
-                                    <button title="Prev" class="prev btn btn-ghost btn-square round ui-ease-btn">
+                                    <button title="Prev" class="prev ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="next btn btn-ghost btn-square round ui-ease-btn">
+                                    <button title="Next" class="next ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="photo-slider-nav ui-ease-1st-layout"></span>
@@ -339,10 +339,10 @@
                                         src="img/product_03.png" alt=""
                                         data-ui-src="img/product_03.png,img/product_05.png"
                                     >
-                                    <button title="Prev" class="prev btn btn-ghost btn-square round ui-ease-btn">
+                                    <button title="Prev" class="prev ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="next btn btn-ghost btn-square round ui-ease-btn">
+                                    <button title="Next" class="next ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="photo-slider-nav ui-ease-1st-layout"></span>
@@ -371,10 +371,10 @@
                                 <span class="photo-slider margin-20-b">
                                     <svg class="slider-loader icon"><use href="#loader-line"/></svg>
                                     <img src="img/product_04.png" alt="" >
-                                    <button title="Prev" class="prev btn btn-ghost btn-square round ui-ease-btn">
+                                    <button title="Prev" class="prev ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="next btn btn-ghost btn-square round ui-ease-btn">
+                                    <button title="Next" class="next ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="photo-slider-nav ui-ease-1st-layout"></span>
@@ -402,10 +402,10 @@
                                 <span class="photo-slider margin-20-b">
                                     <svg class="slider-loader icon"><use href="#loader-line"/></svg>
                                     <img src="img/product_05.png" alt="" >
-                                    <button title="Prev" class="prev btn btn-ghost btn-square round ui-ease-btn">
+                                    <button title="Prev" class="prev ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="next btn btn-ghost btn-square round ui-ease-btn">
+                                    <button title="Next" class="next ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="photo-slider-nav ui-ease-1st-layout"></span>
@@ -436,10 +436,10 @@
                                         src="img/product_02.png" alt=""
                                         data-ui-src="img/product_02.png,img/product_04.png"
                                     >
-                                    <button title="Prev" class="prev btn btn-ghost btn-square round ui-ease-btn">
+                                    <button title="Prev" class="prev ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="next btn btn-ghost btn-square round ui-ease-btn">
+                                    <button title="Next" class="next ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
                                         <svg class="icon"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="photo-slider-nav ui-ease-1st-layout"></span>
@@ -467,7 +467,7 @@
 
                     <div class="row">
                         <div class="col-12 align-c">
-                            <button class="load-more btn btn-lg btn-xs-fluid padding-30-h circle ui-ease-btn">Load more</button>
+                            <button class="load-more ui-btn ui-btn-lg ui-btn-xs-fluid padding-30-h circle ui-ease-btn">Load more</button>
                         </div>
                     </div>
 
@@ -481,7 +481,7 @@
 <!-- mobile menu -->
 <div class="mobile-menu show-r ui-ease-layout ui-ease-in-out">
     <div class="mobile-menu-title padding-20-v x-large ui-border-b">
-        <button class="btn btn-square btn-lg btn-ghost circle ui-ease-btn close-mobile-menu">
+        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost circle ui-ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>
         Filters

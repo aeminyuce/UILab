@@ -43,8 +43,8 @@ ui.gridList = {
     // outer classnames
     nameIcon: 'icon',
 
-    nameBtnActive: 'btn-active',
-    nameBtnPassive: 'btn-passive',
+    nameBtnActive: 'ui-btn-active',
+    nameBtnPassive: 'ui-btn-passive',
 
     // icons
     sortIcon : 'sort-fill',

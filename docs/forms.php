@@ -83,7 +83,7 @@
                                 <img class="img-fluid ui-border-dual round ui-ease-border" src="img/captcha.jpg" alt="">
                             </div>
                             <div class="col-32">
-                                <button class="btn btn-square btn-ghost ui-border-dual ui-ease-btn">
+                                <button class="ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-ease-btn">
                                     <!-- for loading toggle "ui-animate-spin" -->
                                     <svg class="icon no-opacity ui-animate-spin"><use href="#sync"/></svg>
                                 </button>
@@ -155,7 +155,7 @@
                                     <img class="ui-border-dual round ui-ease-border" src="img/captcha.jpg" alt="">
                                 </div>
                                 <div class="col-42">
-                                    <button class="btn btn-square btn-ghost ui-border-dual ui-ease-btn">
+                                    <button class="ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-ease-btn">
                                         <!-- for loading toggle "ui-animate-spin" -->
                                         <svg class="icon no-opacity ui-animate-spin"><use href="#sync" /></svg>
                                     </button>
@@ -171,7 +171,7 @@
                             </div>
                         </div>
                         <div class="col-9 offset-3">
-                            <button type="reset" class="btn btn-xs-fluid round ui-ease-btn">Reset Form</button>
+                            <button type="reset" class="ui-btn ui-btn-xs-fluid round ui-ease-btn">Reset Form</button>
                         </div>
                         <div class="col-6">
                             <label class="form-label">Full Name</label>
@@ -210,8 +210,8 @@
                         </div>
 
                         <div class="col-12 ui-ease-1st-btn">
-                            <button type="reset" class="btn btn-xs-fluid round">Reset Form</button>
-                            <button type="submit" class="btn btn-xs-fluid round ui-theme-sub ui-fill-dark-100">Submit Form</button>
+                            <button type="reset" class="ui-btn ui-btn-xs-fluid round">Reset Form</button>
+                            <button type="submit" class="ui-btn ui-btn-xs-fluid round ui-theme-sub ui-fill-dark-100">Submit Form</button>
                         </div>
 
                     </div>
@@ -400,8 +400,8 @@
                             </div>
 
                             <div class="col-12 ui-ease-1st-btn">
-                                <button type="reset" class="btn btn-xs-fluid round">Reset Form</button>
-                                <button type="submit" class="btn btn-xs-fluid round ui-theme-sub ui-fill-dark-100">Submit Form</button>
+                                <button type="reset" class="ui-btn ui-btn-xs-fluid round">Reset Form</button>
+                                <button type="submit" class="ui-btn ui-btn-xs-fluid round ui-theme-sub ui-fill-dark-100">Submit Form</button>
                             </div>
                         </div>
 
@@ -426,7 +426,7 @@
                 <div class="padding-30-b ui-theme-gray">
                     <div class="file round ui-no-border ui-fill-light-100 ui-ease-form">
                         <input type="file">
-                        <span class="btn ui-ease-btn">Browse</span>
+                        <span class="ui-btn ui-ease-btn">Browse</span>
                         <i>Choose file.</i>
                     </div>
 
@@ -434,7 +434,7 @@
 
                     <div class="file round ui-ease-form">
                         <input type="file">
-                        <span class="btn ui-ease-btn">Browse</span>
+                        <span class="ui-btn ui-ease-btn">Browse</span>
                         <i>Choose file.</i>
                     </div>
 
@@ -442,7 +442,7 @@
 
                     <div class="file round ui-border-dual ui-ease-form">
                         <input type="file">
-                        <span class="btn ui-ease-btn">Browse</span>
+                        <span class="ui-btn ui-ease-btn">Browse</span>
                         <i>Choose file.</i>
                     </div>
 
@@ -452,7 +452,7 @@
                     <div class="form-lg ui-ease-1st-form">
                         <div class="file round ui-no-border ui-fill-light-100">
                             <input type="file">
-                            <span class="btn ui-ease-btn">Browse</span>
+                            <span class="ui-btn ui-ease-btn">Browse</span>
                             <i>Choose file.</i>
                         </div>
 
@@ -460,7 +460,7 @@
 
                         <div class="file round">
                             <input type="file">
-                            <span class="btn ui-ease-btn">Browse</span>
+                            <span class="ui-btn ui-ease-btn">Browse</span>
                             <i>Choose file.</i>
                         </div>
 
@@ -468,7 +468,7 @@
 
                         <div class="file round ui-border-dual">
                             <input type="file">
-                            <span class="btn ui-ease-btn">Browse</span>
+                            <span class="ui-btn ui-ease-btn">Browse</span>
                             <i>Choose file.</i>
                         </div>
                     </div>
@@ -479,31 +479,31 @@
                     <div>
                         <div class="file ui-no-border inline-block round ui-ease-form">
                             <input class="cursor-pointer" type="file">
-                            <span class="btn btn-square ui-ease-btn">
+                            <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
                         <div class="file inline-block round ui-ease-form">
                             <input class="cursor-pointer" type="file">
-                            <span class="btn btn-square ui-ease-btn">
+                            <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
                         <div class="file ui-border-dual inline-block round ui-ease-form">
                             <input class="cursor-pointer" type="file">
-                            <span class="btn btn-square ui-ease-btn">
+                            <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
                         <div class="file ui-no-border inline-block round ui-ease-form">
                             <input class="bg-white cursor-pointer" type="file">
-                            <span class="btn btn-square ui-theme-base ui-fill-dark-100 ui-ease-btn">
+                            <span class="ui-btn ui-btn-square ui-theme-base ui-fill-dark-100 ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
                         <div class="file ui-no-border inline-block round ui-ease-form">
                             <input class="bg-white cursor-pointer" type="file">
-                            <span class="btn btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
+                            <span class="ui-btn ui-btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
@@ -514,31 +514,31 @@
                     <div class="form-lg">
                         <div class="file ui-no-border inline-block round ui-ease-form">
                             <input class="cursor-pointer" type="file">
-                            <span class="btn btn-square ui-ease-btn">
+                            <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
                         <div class="file inline-block round ui-ease-form">
                             <input class="cursor-pointer" type="file">
-                            <span class="btn btn-square ui-ease-btn">
+                            <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
                         <div class="file ui-border-dual inline-block round ui-ease-form">
                             <input class="cursor-pointer" type="file">
-                            <span class="btn btn-square ui-ease-btn">
+                            <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
                         <div class="file ui-no-border inline-block round ui-ease-form">
                             <input class="bg-white cursor-pointer" type="file">
-                            <span class="btn btn-square ui-theme-base ui-fill-dark-100 ui-ease-btn">
+                            <span class="ui-btn ui-btn-square ui-theme-base ui-fill-dark-100 ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
                         <div class="file ui-no-border inline-block round ui-ease-form">
                             <input class="bg-white cursor-pointer" type="file">
-                            <span class="btn btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
+                            <span class="ui-btn ui-btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
                                 <svg class="icon"><use href="#plus"/></svg>
                             </span>
                         </div>
@@ -779,7 +779,7 @@
                                 <input type="text">
                             </div>
                         </div>
-                        <button type="reset" class="btn btn-xs-fluid round ui-ease-btn">Reset Form</button>
+                        <button type="reset" class="ui-btn ui-btn-xs-fluid round ui-ease-btn">Reset Form</button>
                     </form>
                 </div>
 
@@ -814,7 +814,7 @@
                             <label class="form-label">Label</label>
                         </div>
                         <div class="col-6 align-r">
-                            <a class="btn btn-xs font-color-black-muted round ui-ease-btn">Button</a>
+                            <a class="ui-btn ui-btn-xs font-color-black-muted round ui-ease-btn">Button</a>
                         </div>
                     </div>
                     <div class="text margin-10-b round ui-border-dual ui-ease-form">
@@ -827,7 +827,7 @@
                         </div>
                         <div class="col-6 align-r">
                             <div class="dropdown menu-l ui-ease-dropdown">
-                                <button class="btn btn-xs btn-ghost font-color-black-muted round">
+                                <button class="ui-btn ui-btn-xs ui-btn-ghost font-color-black-muted round">
                                     Dropdown Button
                                     <svg class="toggle-icon icon margin-3-l"><use href="#angle-down"/></svg>
                                 </button>
@@ -1319,12 +1319,12 @@
                                 </div>
                             </div>
                             <div class="col-32">
-                                <button class="spinner-down btn btn-square btn-ghost ui-border-dual round ui-ease-btn">
+                                <button class="spinner-down ui-btn ui-btn-square ui-btn-ghost ui-border-dual round ui-ease-btn">
                                     <svg class="icon"><use href="#minus"/></svg>
                                 </button>
                             </div>
                             <div class="col-32">
-                                <button class="spinner-up btn btn-square btn-ghost ui-border-dual round ui-ease-btn">
+                                <button class="spinner-up ui-btn ui-btn-square ui-btn-ghost ui-border-dual round ui-ease-btn">
                                     <svg class="icon"><use href="#plus"/></svg>
                                 </button>
                             </div>
@@ -1339,7 +1339,7 @@
                         <div class="currency-spinner form-holder col-static no-fluid">
 
                             <div class="col-32">
-                                <button class="currency-down btn btn-square btn-ghost ui-border-dual round ui-ease-btn">
+                                <button class="currency-down ui-btn ui-btn-square ui-btn-ghost ui-border-dual round ui-ease-btn">
                                     <svg class="icon"><use href="#minus"/></svg>
                                 </button>
                             </div>
@@ -1351,7 +1351,7 @@
                                 </div>
                             </div>
                             <div class="col-32">
-                                <button class="currency-up btn btn-square btn-ghost ui-border-dual round ui-ease-btn">
+                                <button class="currency-up ui-btn ui-btn-square ui-btn-ghost ui-border-dual round ui-ease-btn">
                                     <svg class="icon"><use href="#plus"/></svg>
                                 </button>
                             </div>
@@ -1518,7 +1518,7 @@
                             <div class="col-9">
                                 <div class="file round ui-border-dual ui-ease-form">
                                     <input class="required" type="file">
-                                    <span class="btn ui-ease-btn">Browse</span>
+                                    <span class="ui-btn ui-ease-btn">Browse</span>
                                     <i>Choose file.</i>
                                 </div>
                                 <p class="required-msg">Please, select a file.</p>
@@ -1636,8 +1636,8 @@
                             </div>
 
                             <div class="col-9 push-3 ui-ease-1st-btn">
-                                <button type="reset" class="btn btn-xs-fluid round">Reset Form</button>
-                                <button type="submit" class="btn btn-xs-fluid round ui-theme-sub ui-fill-dark-100">Submit Form</button>
+                                <button type="reset" class="ui-btn ui-btn-xs-fluid round">Reset Form</button>
+                                <button type="submit" class="ui-btn ui-btn-xs-fluid round ui-theme-sub ui-fill-dark-100">Submit Form</button>
                             </div>
                         </div>
                     </form>
@@ -1784,7 +1784,7 @@
                             <img class="img-fluid ui-border-dual ui-border-light round ui-ease-border" src="img/captcha.jpg" alt="">
                         </div>
                         <div class="col-32">
-                            <button class="btn btn-square btn-ghost ui-border-dual ui-border-light ui-ease-btn">
+                            <button class="ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-border-light ui-ease-btn">
                                 <!-- for loading toggle "ui-animate-spin" -->
                                 <svg class="icon no-opacity ui-animate-spin"><use href="#sync"/></svg>
                             </button>

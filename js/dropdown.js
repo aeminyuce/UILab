@@ -24,7 +24,7 @@ ui.dropdown = {
     nameOpenEase: 'open-ease',
 
     // outer classnames
-    nameBtn: 'btn',
+    nameBtn: 'ui-btn',
     nameMobileMenu: 'mobile-menu',
     nameNoScrolling: 'no-scroll',
 

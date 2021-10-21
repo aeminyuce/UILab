@@ -19,12 +19,12 @@
 
                             <div class="hidden-sm">
                                 <div class="ui-ease-1st-btn icons-no-opacity form-lg add-mobile-menu-r">
-                                    <a class="btn btn-sm-fluid btn-ghost" href="#">
+                                    <a class="ui-btn ui-btn-sm-fluid ui-btn-ghost" href="#">
                                         <svg class="icon margin-5-r visible-sm"><use href="#home"/></svg>
                                         <b>Home</b>
                                     </a>
                                     <div class="dropdown ui-ease-dropdown">
-                                        <button class="btn btn-sm-fluid btn-ghost">
+                                        <button class="ui-btn ui-btn-sm-fluid ui-btn-ghost">
                                             <svg class="icon margin-5-r visible-sm"><use href="#box"/></svg>
                                             <b>Products</b>
                                             <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
@@ -38,32 +38,32 @@
                                             <li><a href="#">Planting</a></li>
                                         </ul>
                                     </div>
-                                    <a class="btn btn-sm-fluid btn-ghost" href="#">
+                                    <a class="ui-btn ui-btn-sm-fluid ui-btn-ghost" href="#">
                                         <svg class="icon margin-5-r visible-sm"><use href="#users"/></svg>
                                         <b>Team</b>
                                     </a>
-                                    <a class="btn btn-sm-fluid btn-ghost" href="#">
+                                    <a class="ui-btn ui-btn-sm-fluid ui-btn-ghost" href="#">
                                         <svg class="icon margin-5-r visible-sm"><use href="#coins"/></svg>
                                         <b>Pricing</b>
                                     </a>
-                                    <a class="btn btn-sm-fluid btn-ghost" href="#">
+                                    <a class="ui-btn ui-btn-sm-fluid ui-btn-ghost" href="#">
                                         <svg class="icon margin-5-r visible-sm"><use href="#envelope-open"/></svg>
                                         <b>Contact</b>
                                     </a>
                                     <span class="inline-block margin-10-h hidden-md"></span>
                                     <span class="sp-10 visible-sm"></span>
-                                    <a class="btn btn-sm-fluid ui-fill-dark-100" href="#">
+                                    <a class="ui-btn ui-btn-sm-fluid ui-fill-dark-100" href="#">
                                         <svg class="icon margin-5-r visible-sm"><use href="#sign-in"/></svg>
                                         <b>Login</b>
                                     </a>
-                                    <a class="btn btn-sm-fluid ui-theme-farmer ui-fill-dark-100" href="#">
+                                    <a class="ui-btn ui-btn-sm-fluid ui-theme-farmer ui-fill-dark-100" href="#">
                                         <svg class="icon margin-5-r visible-sm"><use href="#user-plus"/></svg>
                                         <b>Sign Up</b>
                                     </a>
                                 </div>
                             </div>
 
-                            <button class="btn btn-lg btn-square btn-ghost ui-color ui-ease-btn show-mobile-menu-r visible-sm">
+                            <button class="ui-btn ui-btn-lg ui-btn-square ui-btn-ghost ui-color ui-ease-btn show-mobile-menu-r visible-sm">
                                 <svg class="icon no-opacity"><use href="#bars"/></svg>
                             </button>
 
@@ -85,15 +85,15 @@
         <div class="fixed padding-10-t ui-theme-farmer2">
             <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
                 <div class="col-12 xs-align-l align-c ui-ease-1st-btn">
-                    <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-color ui-border-b ui-border-lg ui-stroke active">
+                    <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-color ui-border-b ui-border-lg ui-stroke active">
                         <svg class="icon"><use href="#factory"/></svg>
                         Long Term Investment
                     </button>
-                    <button class="tab btn btn-xs-fluid btn-ghost margin-1-b">
+                    <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b">
                         <svg class="icon"><use href="#network"/></svg>
                         Connect with Our Farmers
                     </button>
-                    <button class="tab btn btn-xs-fluid btn-ghost margin-1-b">
+                    <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b">
                         <svg class="icon"><use href="#user-circle"/></svg>
                         Social Impact Investment
                     </button>
@@ -111,7 +111,7 @@
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="highlight xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
-                                <a href="#" class="btn btn-xs-fluid padding-30-h ui-fill-dark-100 ui-ease-btn">
+                                <a href="#" class="ui-btn ui-btn-xs-fluid padding-30-h ui-fill-dark-100 ui-ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
                                 </a>
@@ -127,7 +127,7 @@
                                     <span class="sp-30 hidden-md"></span>
                                     <h3 class="font-bold xx-large">Long term investment</h3>
                                     <p class="highlight x-large">Consider terms that have long term investment program.</p>
-                                    <a href="#" class="btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                                    <a href="#" class="ui-btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
                                         <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -149,7 +149,7 @@
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="highlight xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
-                                <a href="#" class="btn btn-xs-fluid padding-30-h ui-fill-dark-100 ui-ease-btn">
+                                <a href="#" class="ui-btn ui-btn-xs-fluid padding-30-h ui-fill-dark-100 ui-ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
                                 </a>
@@ -165,7 +165,7 @@
                                     <span class="sp-30"></span>
                                     <h3 class="font-bold xx-large">Connect with Our Farmers</h3>
                                     <p class="highlight x-large">Consider terms that connect with our farmers program.</p>
-                                    <a href="#" class="btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                                    <a href="#" class="ui-btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
                                         <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -187,7 +187,7 @@
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="highlight xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
-                                <a href="#" class="btn btn-xs-fluid padding-30-h ui-fill-dark-100 ui-ease-btn">
+                                <a href="#" class="ui-btn ui-btn-xs-fluid padding-30-h ui-fill-dark-100 ui-ease-btn">
                                     <svg class="icon margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
                                 </a>
@@ -203,7 +203,7 @@
                                     <span class="sp-30"></span>
                                     <h3 class="font-bold xx-large">Social Impact Investment</h3>
                                     <p class="highlight x-large">Consider terms that have social impact investment program.</p>
-                                    <a href="#" class="btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                                    <a href="#" class="ui-btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
                                         <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -232,7 +232,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Planting</h3>
                         <p class="highlight large font-color-black-50">Complete range of lands caping services.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -243,7 +243,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Garden Care</h3>
                         <p class="highlight large font-color-black-50">Resolving environmental problems with best results.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -254,7 +254,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Irrigation System</h3>
                         <p class="highlight large font-color-black-50">Idea of denouncing pleasure and praising.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -265,7 +265,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Hardscaping</h3>
                         <p class="highlight large font-color-black-50">Placing int the landscape with great pleasure.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -276,7 +276,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Planting</h3>
                         <p class="highlight large font-color-black-50">Complete range of lands caping services.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -287,7 +287,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Garden Care</h3>
                         <p class="highlight large font-color-black-50">Resolving environmental problems with best results.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -298,7 +298,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Irrigation System</h3>
                         <p class="highlight large font-color-black-50">Idea of denouncing pleasure and praising.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -309,17 +309,17 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large margin-10-b">Hardscaping</h3>
                         <p class="highlight large font-color-black-50">Placing int the landscape with great pleasure.</p>
-                        <a href="#" class="btn btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
             </div>
             <div class="carousel-nav margin-10-t icons-no-opacity ui-ease-1st-btn">
-                <button class="carousel-prev btn btn-square btn-ghost ui-fill-dark-100">
+                <button class="carousel-prev ui-btn ui-btn-square ui-btn-ghost ui-fill-dark-100">
                     <svg class="icon ui-color"><use href="#arrow-left"/></svg>
                 </button>
                 <span class="dots ui-color"></span>
-                <button class="carousel-next btn btn-square btn-ghost ui-fill-dark-100">
+                <button class="carousel-next ui-btn ui-btn-square ui-btn-ghost ui-fill-dark-100">
                     <svg class="icon ui-color"><use href="#arrow-right"/></svg>
                 </button>
             </div>
@@ -343,15 +343,15 @@
             <div class="fixed">
                 <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
                     <div class="col-12 xs-align-l align-c ui-ease-1st-btn">
-                        <button class="tab btn btn-xs-fluid btn-ghost margin-1-b ui-color ui-border-b ui-border-lg ui-stroke active">
+                        <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-color ui-border-b ui-border-lg ui-stroke active">
                             <svg class="icon ui-color"><use href="#building"/></svg>
                             Company
                         </button>
-                        <button class="tab btn btn-xs-fluid btn-ghost margin-1-b">
+                        <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b">
                             <svg class="icon ui-color"><use href="#comments"/></svg>
                             Social
                         </button>
-                        <button class="tab btn btn-xs-fluid btn-ghost margin-1-b">
+                        <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b">
                             <svg class="icon ui-color"><use href="#users"/></svg>
                             Customers
                         </button>
@@ -460,7 +460,7 @@
                     </div>
                 </div>
                 <div class="align-c padding-30-t padding-10-b">
-                    <a href="#" class="btn btn-xs-fluid padding-30-h ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-xs-fluid padding-30-h ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                         <b>View all company news</b> <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -565,7 +565,7 @@
                     </div>
                 </div>
                 <div class="align-c padding-30-t padding-10-b">
-                    <a href="#" class="btn btn-xs-fluid padding-30-h ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-xs-fluid padding-30-h ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                         <b>View all social news</b> <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -670,7 +670,7 @@
                     </div>
                 </div>
                 <div class="align-c padding-30-t padding-10-b">
-                    <a href="#" class="btn btn-xs-fluid padding-30-h ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-xs-fluid padding-30-h ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                         <b>View all customer news</b> <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -789,7 +789,7 @@
                             <span class="sp-15"></span>
                             Pellentesque mattis sed diam a rutrum. Sed fermentum accumsan egestas.
                         </p>
-                        <a href="#" class="btn btn-lg btn-xs-fluid padding-20-h margin-30-b ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                        <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid padding-20-h margin-30-b ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                             <b>View all statistics</b>
                             <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                         </a>
@@ -848,25 +848,25 @@
                         <div class="card padding-30 shadow-lg ui-theme-farmer ui-fill-dark-100">
                             <h4 class="margin-15-b">Social</h4>
                             <div class="font-color-black form-lg ui-ease-1st-btn">
-                                <a class="btn btn-ghost btn-square" href="#" target="_blank">
+                                <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
                                     <svg class="icon"><use href="#facebook"/></svg>
                                 </a>
-                                <a class="btn btn-ghost btn-square" href="#" target="_blank">
+                                <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
                                     <svg class="icon"><use href="#twitter"/></svg>
                                 </a>
-                                <a class="btn btn-ghost btn-square" href="#" target="_blank">
+                                <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
                                     <svg class="icon"><use href="#instagram"/></svg>
                                 </a>
-                                <a class="btn btn-ghost btn-square" href="#" target="_blank">
+                                <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
                                     <svg class="icon"><use href="#linkedin"/></svg>
                                 </a>
-                                <a class="btn btn-ghost btn-square" href="#" target="_blank">
+                                <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
                                     <svg class="icon"><use href="#google"/></svg>
                                 </a>
-                                <a class="btn btn-ghost btn-square" href="#" target="_blank">
+                                <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
                                     <svg class="icon"><use href="#whatsapp"/></svg>
                                 </a>
-                                <a class="btn btn-ghost btn-square" href="#" target="_blank">
+                                <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
                                     <svg class="icon"><use href="#youtube"/></svg>
                                 </a>
                             </div>
@@ -886,7 +886,7 @@
                                         </div>
                                     </div>
                                     <div class="col-42">
-                                        <button class="btn btn-square ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                                        <button class="ui-btn ui-btn-square ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                             <svg class="icon"><use href="#send"/></svg>
                                         </button>
                                     </div>
@@ -906,25 +906,25 @@
 
 <!-- page social -->
 <div class="page-social icons-lg icons-no-opacity form-lg ui-ease-1st-btn">
-    <a class="btn btn-square btn-facebook" href="#" target="_blank" data-ui-tooltip="r" title="Facebook">
+    <a class="ui-btn ui-btn-square ui-btn-facebook" href="#" target="_blank" data-ui-tooltip="r" title="Facebook">
         <svg class="icon"><use href="#facebook"/></svg>
     </a>
-    <a class="btn btn-square btn-twitter" href="#" target="_blank" data-ui-tooltip="r" title="Twitter">
+    <a class="ui-btn ui-btn-square ui-btn-twitter" href="#" target="_blank" data-ui-tooltip="r" title="Twitter">
         <svg class="icon"><use href="#twitter"/></svg>
     </a>
-    <a class="btn btn-square btn-instagram" href="#" target="_blank" data-ui-tooltip="r" title="Instagram">
+    <a class="ui-btn ui-btn-square ui-btn-instagram" href="#" target="_blank" data-ui-tooltip="r" title="Instagram">
         <svg class="icon"><use href="#instagram"/></svg>
     </a>
-    <a class="btn btn-square btn-linkedin" href="#" target="_blank" data-ui-tooltip="r" title="Linkedin">
+    <a class="ui-btn ui-btn-square ui-btn-linkedin" href="#" target="_blank" data-ui-tooltip="r" title="Linkedin">
         <svg class="icon"><use href="#linkedin"/></svg>
     </a>
-    <a class="btn btn-square btn-google" href="#" target="_blank" data-ui-tooltip="r" title="Google">
+    <a class="ui-btn ui-btn-square ui-btn-google" href="#" target="_blank" data-ui-tooltip="r" title="Google">
         <svg class="icon"><use href="#google"/></svg>
     </a>
-    <a class="btn btn-square btn-whatsapp" href="#" target="_blank" data-ui-tooltip="r" title="Whatsapp">
+    <a class="ui-btn ui-btn-square ui-btn-whatsapp" href="#" target="_blank" data-ui-tooltip="r" title="Whatsapp">
         <svg class="icon"><use href="#whatsapp"/></svg>
     </a>
-    <a class="btn btn-square btn-youtube" href="#" target="_blank" data-ui-tooltip="r" title="Youtube">
+    <a class="ui-btn ui-btn-square ui-btn-youtube" href="#" target="_blank" data-ui-tooltip="r" title="Youtube">
         <svg class="icon"><use href="#youtube"/></svg>
     </a>
 </div>
@@ -932,7 +932,7 @@
 <!-- mobile menu -->
 <div class="mobile-menu show-r ui-ease-layout ui-ease-in-out">
     <div class="mobile-menu-title ui-border-b">
-        <button class="btn btn-square btn-lg btn-ghost ui-ease-btn close-mobile-menu">
+        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>
         <a href="#"><img src="img/agriculture/logo.png" alt="" srcset="img/agriculture/logo@2x.png 2x"></a>

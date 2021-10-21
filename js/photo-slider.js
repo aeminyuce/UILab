@@ -20,7 +20,7 @@ ui.photoSlider = {
     nameLoaded: 'loaded',
 
     // outer classnames
-    nameBtn: 'btn',
+    nameBtn: 'ui-btn',
 
     // tags
     tagNavDot: 'i',

@@ -35,7 +35,7 @@
                             </div>
                             <div class="col-lg-3 col-6 no-fluid">
                                 <div class="dropdown menu-l block ui-ease-dropdown">
-                                    <button class="btn align-l round ui-fill-light-100">
+                                    <button class="ui-btn align-l round ui-fill-light-100">
                                         <span>
                                             <svg class="icon"><use href="#sort"></svg> Sort
                                         </span>
@@ -460,7 +460,7 @@
                                 </div>
                             </div>
                             <div class="col-8 no-fluid align-r">
-                                <div class="grid-list-paging pagination ui-ease-1st-btn" data-ui-default="btn round" data-ui-active="ui-border-dual ui-theme-sub ui-stroke ui-color"></div>
+                                <div class="grid-list-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn round" data-ui-active="ui-border-dual ui-theme-sub ui-stroke ui-color"></div>
                             </div>
                         </div>
 
@@ -526,13 +526,13 @@
 
                     <div class="row row-gap-xs align-l block-2nd ui-ease-2nd-btn no-fluid">
                         <div class="col-5">
-                            <button class="btn" data-ui-sort="1"><svg class="icon"><use href="#sort"></svg> Name</button>
+                            <button class="ui-btn" data-ui-sort="1"><svg class="icon"><use href="#sort"></svg> Name</button>
                         </div>
                         <div class="col-3">
-                            <button class="btn" data-ui-sort="2" data-ui-type="number"><svg class="icon"><use href="#sort"></svg> Age</button>
+                            <button class="ui-btn" data-ui-sort="2" data-ui-type="number"><svg class="icon"><use href="#sort"></svg> Age</button>
                         </div>
                         <div class="col-4">
-                            <button class="btn" data-ui-sort="3"><svg class="icon"><use href="#sort"></svg> Job</button>
+                            <button class="ui-btn" data-ui-sort="3"><svg class="icon"><use href="#sort"></svg> Job</button>
                         </div>
                     </div>
 
@@ -1228,7 +1228,7 @@
                             </div>
                         </div>
                         <div class="col-6 align-r">
-                            <div class="grid-list-paging pagination ui-ease-1st-btn" data-ui-default="btn round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
+                            <div class="grid-list-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
                         </div>
                     </div>
 
@@ -1271,13 +1271,13 @@
 
                     <div class="row row-gap-xs align-l ui-border-v block-2nd ui-ease-2nd-btn no-fluid">
                         <div class="col-5">
-                            <button class="btn btn-ghost" data-ui-sort="1"><svg class="icon"><use href="#sort"></svg> Name</button>
+                            <button class="ui-btn ui-btn-ghost" data-ui-sort="1"><svg class="icon"><use href="#sort"></svg> Name</button>
                         </div>
                         <div class="col-3">
-                            <button class="btn btn-ghost" data-ui-sort="2" data-ui-type="number"><svg class="icon"><use href="#sort"></svg> Age</button>
+                            <button class="ui-btn ui-btn-ghost" data-ui-sort="2" data-ui-type="number"><svg class="icon"><use href="#sort"></svg> Age</button>
                         </div>
                         <div class="col-4">
-                            <button class="btn btn-ghost" data-ui-sort="3"><svg class="icon"><use href="#sort"></svg> Job</button>
+                            <button class="ui-btn ui-btn-ghost" data-ui-sort="3"><svg class="icon"><use href="#sort"></svg> Job</button>
                         </div>
                     </div>
 
@@ -1813,7 +1813,7 @@
                             </div>
                         </div>
                         <div class="col-6 align-r">
-                            <div class="grid-list-paging pagination ui-ease-1st-btn" data-ui-default="btn round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
+                            <div class="grid-list-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
                         </div>
                     </div>
 

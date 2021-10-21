@@ -101,7 +101,7 @@
                         <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image.jpg" alt=""></a>
                         <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image2.jpg" alt=""></a>
                         <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image3.jpg" alt=""></a>
-                        <a class="btn btn-lg margin-5-r circle ui-ease-btn" href="#">+177</a>
+                        <a class="ui-btn ui-btn-lg margin-5-r circle ui-ease-btn" href="#">+177</a>
                     </div>
 
                     <span class="sp-5 visible-sm"></span>
@@ -111,7 +111,7 @@
                         <a href="#"><img class="img-photo ui-border-lg ui-stroke circle" src="img/profile-image2.jpg" alt=""></a>
                         <a href="#"><img class="img-photo ui-border-lg ui-stroke circle" src="img/profile-image3.jpg" alt=""></a>
                         <a href="#"><img class="img-photo ui-border-lg ui-stroke circle" src="img/profile-image.jpg" alt=""></a>
-                        <a class="btn btn-lg margin-5-r circle ui-fill-dark-300 ui-ease-btn" href="#">+177</a>
+                        <a class="ui-btn ui-btn-lg margin-5-r circle ui-fill-dark-300 ui-ease-btn" href="#">+177</a>
                     </div>
 
                     <span class="sp-30"></span>
@@ -120,7 +120,7 @@
                         <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image.jpg" alt=""></a>
                         <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image2.jpg" alt=""></a>
                         <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image3.jpg" alt=""></a>
-                        <a class="btn btn-lg margin-5-r circle ui-ease-btn" href="#">+177</a>
+                        <a class="ui-btn ui-btn-lg margin-5-r circle ui-ease-btn" href="#">+177</a>
                     </div>
 
                     <span class="sp-5 visible-sm"></span>
@@ -130,7 +130,7 @@
                         <a href="#"><img class="img-photo ui-border-lg ui-stroke circle" src="img/profile-image2.jpg" alt=""></a>
                         <a href="#"><img class="img-photo ui-border-lg ui-stroke circle" src="img/profile-image3.jpg" alt=""></a>
                         <a href="#"><img class="img-photo ui-border-lg ui-stroke circle" src="img/profile-image.jpg" alt=""></a>
-                        <a class="btn btn-lg margin-5-r circle ui-fill-dark-300 ui-ease-btn" href="#">+177</a>
+                        <a class="ui-btn ui-btn-lg margin-5-r circle ui-fill-dark-300 ui-ease-btn" href="#">+177</a>
                     </div>
 
                 </div>

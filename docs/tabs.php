@@ -8,9 +8,9 @@
                     <div class="row ui-border-b margin-15-b">
 
                         <div class="col-4 offset-4 no-padding-b">
-                            <div class="btn-holder font-color-black-muted form-lg ui-ease-1st-btn">
-                                <button class="tab btn btn-ghost round-t ui-border-lg ui-border-b ui-stroke ui-color active">Tab Button</button>
-                                <button class="tab btn btn-ghost round-t">Tab Button</button>
+                            <div class="ui-btn-holder font-color-black-muted form-lg ui-ease-1st-btn">
+                                <button class="tab ui-btn ui-btn-ghost round-t ui-border-lg ui-border-b ui-stroke ui-color active">Tab Button</button>
+                                <button class="tab ui-btn ui-btn-ghost round-t">Tab Button</button>
                             </div>
                         </div>
 
@@ -31,10 +31,10 @@
 
                 <div class="tabs padding-30-b ui-theme-sub ui-ease-tabs" data-ui-classes="ui-stroke ui-color">
 
-                    <div class="btn-holder font-color-black-muted margin-10-b form-lg ui-ease-1st-btn">
-                        <button class="tab btn btn-ghost ui-border-b round-t ui-stroke ui-color active">Tab Button</button>
-                        <button class="tab btn btn-ghost ui-border-b round-t">Tab Button</button>
-                        <button class="tab btn btn-ghost ui-border-b round-t">Tab Button</button>
+                    <div class="ui-btn-holder font-color-black-muted margin-10-b form-lg ui-ease-1st-btn">
+                        <button class="tab ui-btn ui-btn-ghost ui-border-b round-t ui-stroke ui-color active">Tab Button</button>
+                        <button class="tab ui-btn ui-btn-ghost ui-border-b round-t">Tab Button</button>
+                        <button class="tab ui-btn ui-btn-ghost ui-border-b round-t">Tab Button</button>
                     </div>
 
                     <div class="tab-content open open-ease">
@@ -53,14 +53,14 @@
                     <div class="col-12">
                         <div class="tabs ui-ease-tabs" data-ui-classes="ui-fill-dark-100">
 
-                            <div class="btn-holder margin-10-b btn-xs-fluid ui-theme-sub form-lg ui-ease-1st-btn">
-                                <button class="tab btn round ui-fill-dark-100 active">Mon</button>
-                                <button class="tab btn round">Tue</button>
-                                <button class="tab btn round">Wed</button>
-                                <button class="tab btn round">Thu</button>
-                                <button class="tab btn round">Fri</button>
-                                <button class="tab btn round">Sat</button>
-                                <button class="tab btn round">Sun</button>
+                            <div class="ui-btn-holder margin-10-b ui-btn-xs-fluid ui-theme-sub form-lg ui-ease-1st-btn">
+                                <button class="tab ui-btn round ui-fill-dark-100 active">Mon</button>
+                                <button class="tab ui-btn round">Tue</button>
+                                <button class="tab ui-btn round">Wed</button>
+                                <button class="tab ui-btn round">Thu</button>
+                                <button class="tab ui-btn round">Fri</button>
+                                <button class="tab ui-btn round">Sat</button>
+                                <button class="tab ui-btn round">Sun</button>
                             </div>
 
                             <div class="tab-content open open-ease">
@@ -93,11 +93,11 @@
                 <div class="tabs padding-30-b ui-ease-tabs" data-ui-classes="ui-stroke ui-color">
 
                     <div class="margin-10-b md-align-c ui-border-b ui-theme-sub form-lg ui-ease-1st-btn">
-                        <button class="tab tab-toggle btn btn-ghost ui-border-b ui-border-dual">
+                        <button class="tab tab-toggle ui-btn ui-btn-ghost ui-border-b ui-border-dual">
                             Tab Button
                             <svg class="icon toggle-icon margin-3-l"><use href="#angle-down"></use></svg>
                         </button>
-                        <button class="tab tab-toggle btn btn-ghost ui-border-b ui-border-dual">
+                        <button class="tab tab-toggle ui-btn ui-btn-ghost ui-border-b ui-border-dual">
                             Tab Button
                             <svg class="icon toggle-icon margin-3-l"><use href="#angle-down"></use></svg>
                         </button>
@@ -119,20 +119,20 @@
 
                     <div class="col-200 padding-1 ui-theme-sub">
 
-                        <div class="btn-list align-l icons-margin-10-r icons-no-opacity form-lg ui-ease-1st-btn">
-                            <button class="tab btn ui-border-lg ui-stroke ui-border-r ui-color active">
+                        <div class="ui-btn-list align-l icons-margin-10-r icons-no-opacity form-lg ui-ease-1st-btn">
+                            <button class="tab ui-btn ui-border-lg ui-stroke ui-border-r ui-color active">
                                 <svg class="icon"><use href="#users"/></svg>
                                 Tab Button
                             </button>
-                            <button class="tab btn">
+                            <button class="tab ui-btn">
                                 <svg class="icon"><use href="#network"/></svg>
                                 Tab Button
                             </button>
-                            <button class="tab btn">
+                            <button class="tab ui-btn">
                                 <svg class="icon"><use href="#shield"/></svg>
                                 Tab Button
                             </button>
-                            <button class="tab btn ">
+                            <button class="tab ui-btn ">
                                 <svg class="icon"><use href="#settings"/></svg>
                                 Tab Button
                             </button>
@@ -178,20 +178,20 @@
                     </div>
                     <div class="col-200 padding-1 ui-theme-sub">
 
-                        <div class="btn-list align-l icons-no-opacity form-lg ui-ease-1st-btn">
-                            <button class="tab btn ui-border-lg ui-stroke ui-border-l ui-color active">
+                        <div class="ui-btn-list align-l icons-no-opacity form-lg ui-ease-1st-btn">
+                            <button class="tab ui-btn ui-border-lg ui-stroke ui-border-l ui-color active">
                                 <svg class="icon right"><use href="#users"/></svg>
                                 Tab Button
                             </button>
-                            <button class="tab btn">
+                            <button class="tab ui-btn">
                                 <svg class="icon right"><use href="#network"/></svg>
                                 Tab Button
                             </button>
-                            <button class="tab btn">
+                            <button class="tab ui-btn">
                                 <svg class="icon right"><use href="#shield"/></svg>
                                 Tab Button
                             </button>
-                            <button class="tab btn ">
+                            <button class="tab ui-btn ">
                                 <svg class="icon right"><use href="#settings"/></svg>
                                 Tab Button
                             </button>
@@ -205,28 +205,28 @@
                 <div class="tabs padding-30-b ui-ease-tabs" data-ui-classes="ui-border-b ui-border-lg ui-stroke ui-color">
 
                     <div class="md-align-c ui-theme-sub form-lg ui-ease-1st-btn">
-                        <button class="tab btn btn-ghost ui-border-b ui-border-lg ui-stroke ui-color active">Tab Button</button>
-                        <button class="tab btn btn-ghost">Tab Button</button>
+                        <button class="tab ui-btn ui-btn-ghost ui-border-b ui-border-lg ui-stroke ui-color active">Tab Button</button>
+                        <button class="tab ui-btn ui-btn-ghost">Tab Button</button>
                     </div>
 
                     <div class="tab-content tabs col-static ui-border-dual margin-30-b ui-ease-tabs open open-ease" data-ui-classes="ui-border-lg ui-stroke ui-border-r ui-color">
 
                         <div class="col-200 padding-1 ui-theme-sub">
 
-                            <div class="btn-list align-l icons-margin-10-r icons-no-opacity form-lg ui-ease-1st-btn">
-                                <button class="tab btn ui-border-lg ui-stroke ui-border-r ui-color active">
+                            <div class="ui-btn-list align-l icons-margin-10-r icons-no-opacity form-lg ui-ease-1st-btn">
+                                <button class="tab ui-btn ui-border-lg ui-stroke ui-border-r ui-color active">
                                     <svg class="icon"><use href="#users"/></svg>
                                     Tab Button
                                 </button>
-                                <button class="tab btn">
+                                <button class="tab ui-btn">
                                     <svg class="icon"><use href="#network"/></svg>
                                     Tab Button
                                 </button>
-                                <button class="tab btn">
+                                <button class="tab ui-btn">
                                     <svg class="icon"><use href="#shield"/></svg>
                                     Tab Button
                                 </button>
-                                <button class="tab btn ">
+                                <button class="tab ui-btn ">
                                     <svg class="icon"><use href="#settings"/></svg>
                                     Tab Button
                                 </button>
@@ -255,20 +255,20 @@
 
                         <div class="col-200 padding-1 ui-theme-sub">
 
-                            <div class="btn-list align-l icons-margin-10-r icons-no-opacity form-lg ui-ease-1st-btn">
-                                <button class="tab btn ui-border-lg ui-stroke ui-border-r ui-color active">
+                            <div class="ui-btn-list align-l icons-margin-10-r icons-no-opacity form-lg ui-ease-1st-btn">
+                                <button class="tab ui-btn ui-border-lg ui-stroke ui-border-r ui-color active">
                                     <svg class="icon"><use href="#users"/></svg>
                                     Tab Button
                                 </button>
-                                <button class="tab btn">
+                                <button class="tab ui-btn">
                                     <svg class="icon"><use href="#network"/></svg>
                                     Tab Button
                                 </button>
-                                <button class="tab btn">
+                                <button class="tab ui-btn">
                                     <svg class="icon"><use href="#shield"/></svg>
                                     Tab Button
                                 </button>
-                                <button class="tab btn ">
+                                <button class="tab ui-btn ">
                                     <svg class="icon"><use href="#settings"/></svg>
                                     Tab Button
                                 </button>
@@ -300,12 +300,12 @@
                 <div class="tabs padding-30-b form-lg ui-theme-sub ui-ease-tabs">
 
                     <div id="tabID01" class="tab-content open open-ease">
-                        <button class="tab btn round ui-fill-dark-100 ui-ease-btn" data-ui-id="tabID02">Show Second</button>
+                        <button class="tab ui-btn round ui-fill-dark-100 ui-ease-btn" data-ui-id="tabID02">Show Second</button>
                         <span class="sp-10"></span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                     </div>
                     <div id="tabID02" class="tab-content">
-                        <button class="tab btn round ui-fill-dark-100 ui-ease-btn" data-ui-id="tabID01">Show First</button>
+                        <button class="tab ui-btn round ui-fill-dark-100 ui-ease-btn" data-ui-id="tabID01">Show First</button>
                         <span class="sp-10"></span>
                         Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
                         <br><br>
@@ -317,7 +317,7 @@
                 <h4>Accordion Tabs</h4>
                 <div class="tabs padding-30-b form-lg ui-theme-sub ui-ease-tabs" data-ui-classes="ui-fill-dark-100">
 
-                    <button class="tab tab-toggle btn block align-l margin-1-b round ui-ease-btn">
+                    <button class="tab tab-toggle ui-btn block align-l margin-1-b round ui-ease-btn">
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
@@ -327,7 +327,7 @@
                         </div>
                     </div>
 
-                    <button class="tab tab-toggle btn block align-l margin-1-b round ui-ease-btn">
+                    <button class="tab tab-toggle ui-btn block align-l margin-1-b round ui-ease-btn">
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
@@ -339,7 +339,7 @@
                         </div>
                     </div>
 
-                    <button class="tab tab-toggle btn block align-l margin-1-b round ui-ease-btn">
+                    <button class="tab tab-toggle ui-btn block align-l margin-1-b round ui-ease-btn">
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
@@ -356,14 +356,14 @@
                 <h4>Inner Accordion Tabs</h4>
                 <div class="tabs padding-30-b form-lg ui-theme-sub ui-ease-tabs" data-ui-classes="ui-fill-dark-100">
 
-                    <button class="tab tab-toggle btn block align-l margin-1-b ui-ease-btn">
+                    <button class="tab tab-toggle ui-btn block align-l margin-1-b ui-ease-btn">
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
                     <div class="tab-content">
 
                         <div class="tabs icons-xs" data-ui-classes="ui-color">
-                            <button class="tab tab-toggle btn-ghost btn align-l block ui-ease-btn">
+                            <button class="tab tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
                                 <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -373,7 +373,7 @@
                                 </div>
                             </div>
 
-                            <button class="tab tab-toggle btn-ghost btn align-l block ui-ease-btn">
+                            <button class="tab tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
                                 <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -386,14 +386,14 @@
 
                     </div>
 
-                    <button class="tab tab-toggle btn block align-l margin-1-b ui-ease-btn">
+                    <button class="tab tab-toggle ui-btn block align-l margin-1-b ui-ease-btn">
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
                     <div class="tab-content">
 
                         <div class="tabs icons-xs" data-ui-classes="ui-color">
-                            <button class="tab tab-toggle btn-ghost btn align-l block ui-ease-btn">
+                            <button class="tab tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
                                 <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -403,7 +403,7 @@
                                 </div>
                             </div>
 
-                            <button class="tab tab-toggle btn-ghost btn align-l block ui-ease-btn">
+                            <button class="tab tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
                                 <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -416,14 +416,14 @@
 
                     </div>
 
-                    <button class="tab tab-toggle btn block align-l margin-1-b ui-ease-btn">
+                    <button class="tab tab-toggle ui-btn block align-l margin-1-b ui-ease-btn">
                         <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
                     <div class="tab-content">
 
                         <div class="tabs icons-xs" data-ui-classes="ui-color">
-                            <button class="tab tab-toggle btn-ghost btn align-l block ui-ease-btn">
+                            <button class="tab tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
                                 <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -433,7 +433,7 @@
                                 </div>
                             </div>
 
-                            <button class="tab tab-toggle btn-ghost btn align-l block ui-ease-btn">
+                            <button class="tab tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
                                 <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -452,28 +452,28 @@
                 <div class="tabs icons-no-opacity padding-30-b ui-ease-tabs" data-ui-classes="ui-color icons-default">
 
                     <div class="font-color-black-muted margin-30-b align-c icons-xxl xs-align-l ui-theme-sub">
-                        <button class="tab btn btn-ghost btn-multi btn-sm-fluid round ui-ease-btn ui-color icons-default active">
+                        <button class="tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn ui-color icons-default active">
                             <svg class="icon ui-no hidden-md"><use href="#user-check"/></svg>
                             <span class="block margin-10-t md-no-margin">1. User Details</span>
                         </button>
 
                         <svg class="icon margin-15-h font-color-black-50 hidden-md"><use href="#long-arrow-right"/></svg>
 
-                        <button class="tab btn btn-ghost btn-multi btn-sm-fluid round ui-ease-btn">
+                        <button class="tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn">
                             <svg class="icon ui-no hidden-md"><use href="#map"/></svg>
                             <span class="block margin-10-t md-no-margin">2. Address Details</span>
                         </button>
 
                         <svg class="icon margin-15-h font-color-black-50 hidden-md"><use href="#long-arrow-right"/></svg>
 
-                        <button class="tab btn btn-ghost btn-multi btn-sm-fluid round ui-ease-btn">
+                        <button class="tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn">
                             <svg class="icon ui-no hidden-md"><use href="#credit-card"/></svg>
                             <span class="block margin-10-t md-no-margin">3. Payment Details</span>
                         </button>
 
                         <svg class="icon margin-15-h font-color-black-50 hidden-md"><use href="#long-arrow-right"/></svg>
 
-                        <button class="tab btn btn-ghost btn-multi btn-sm-fluid round ui-ease-btn">
+                        <button class="tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn">
                             <svg class="icon ui-no hidden-md"><use href="#truck-fill"/></svg>
                             <span class="block margin-10-t md-no-margin">4. Shipping</span>
                         </button>

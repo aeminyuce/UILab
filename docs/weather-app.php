@@ -123,11 +123,11 @@
 
                             </div>
                             <div class="carousel-nav padding-10-b no-margin-t ui-ease-1st-btn">
-                                <button class="carousel-prev btn btn-ghost btn-square round">
+                                <button class="carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
                                     <svg class="icon"><use href="#angle-left"/></svg>
                                 </button>
                                 <span class="dots font-color-black-50"></span>
-                                <button class="carousel-next btn btn-ghost btn-square round">
+                                <button class="carousel-next ui-btn ui-btn-ghost ui-btn-square round">
                                     <svg class="icon"><use href="#angle-right"/></svg>
                                 </button>
                             </div>
@@ -255,11 +255,11 @@
 
                             </div>
                             <div class="carousel-nav padding-10-b no-margin-t ui-ease-1st-btn">
-                                <button class="carousel-prev btn btn-ghost btn-square round">
+                                <button class="carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
                                     <svg class="icon"><use href="#angle-left"/></svg>
                                 </button>
                                 <span class="dots font-color-black-50"></span>
-                                <button class="carousel-next btn btn-ghost btn-square round">
+                                <button class="carousel-next ui-btn ui-btn-ghost ui-btn-square round">
                                     <svg class="icon"><use href="#angle-right"/></svg>
                                 </button>
                             </div>

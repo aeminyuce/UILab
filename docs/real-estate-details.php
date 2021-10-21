@@ -49,11 +49,11 @@
                                 </div>
                             </div>
                             <div class="carousel-nav ui-ease-1st-btn">
-                                <button class="carousel-prev btn btn-ghost btn-square round">
+                                <button class="carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
                                     <svg class="icon"><use href="#angle-left"/></svg>
                                 </button>
                                 <span class="dots font-color-black-muted"></span>
-                                <button class="carousel-next btn btn-ghost btn-square round">
+                                <button class="carousel-next ui-btn ui-btn-ghost ui-btn-square round">
                                     <svg class="icon"><use href="#angle-right"/></svg>
                                 </button>
                             </div>
@@ -224,7 +224,7 @@
                         <form action="#">
                             <div class="col-static no-fluid currency-spinner form-lg">
                                 <div class="col-50">
-                                    <button class="currency-down btn no-padding-h block round-l ui-ease-btn" type="button">
+                                    <button class="currency-down ui-btn no-padding-h block round-l ui-ease-btn" type="button">
                                         <svg class="icon"><use href="#minus"/></svg>
                                     </button>
                                 </div>
@@ -236,13 +236,13 @@
                                     </div>
                                 </div>
                                 <div class="col-50">
-                                    <button class="currency-up btn no-padding-h block round-r ui-ease-btn" type="button">
+                                    <button class="currency-up ui-btn no-padding-h block round-r ui-ease-btn" type="button">
                                         <svg class="icon"><use href="#plus"/></svg>
                                     </button>
                                 </div>
                             </div>
                             <span class="sp-15"></span>
-                            <button class="btn btn-lg block round ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
+                            <button class="ui-btn ui-btn-lg block round ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
                                 <b>MAKE OFFER</b>
                             </button>
                             <span class="sp-5"></span>
@@ -291,12 +291,12 @@
                     </ul>
                     <span class="sp-5"></span>
                     <div class="align-l icons-no-opacity form-lg ui-ease-1st-btn">
-                        <a class="btn block btn-multi round-t" href="#">
+                        <a class="ui-btn block ui-btn-multi round-t" href="#">
                             <svg class="icon right"><use href="#images"/></svg>
                             Show All HD Images
                         </a>
                         <span class="sp-1"></span>
-                        <a class="btn block btn-multi round-b" href="#">
+                        <a class="ui-btn block ui-btn-multi round-b" href="#">
                             <svg class="icon right"><use href="#file-pdf"/></svg>
                             Download PDF Brochure
                         </a>

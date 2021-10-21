@@ -40,7 +40,7 @@
                                                 <span class="sp-10"></span>
                                                 Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
                                                 <span class="sp-15"></span>
-                                                <a href="#" class="btn btn-xs-fluid btn-lg padding-20-h ui-ease-btn">
+                                                <a href="#" class="ui-btn ui-btn-xs-fluid ui-btn-lg padding-20-h ui-ease-btn">
                                                     Continue
                                                     <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
                                                 </a>
@@ -79,7 +79,7 @@
                                                 <span class="sp-10"></span>
                                                 Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
                                                 <span class="sp-15"></span>
-                                                <a href="#" class="btn btn-xs-fluid btn-lg padding-20-h ui-ease-btn">
+                                                <a href="#" class="ui-btn ui-btn-xs-fluid ui-btn-lg padding-20-h ui-ease-btn">
                                                     Continue
                                                     <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
                                                 </a>
@@ -118,7 +118,7 @@
                                                 <span class="sp-10"></span>
                                                 Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
                                                 <span class="sp-15"></span>
-                                                <a href="#" class="btn btn-xs-fluid btn-lg padding-20-h ui-ease-btn">
+                                                <a href="#" class="ui-btn ui-btn-xs-fluid ui-btn-lg padding-20-h ui-ease-btn">
                                                     Continue
                                                     <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
                                                 </a>
@@ -130,11 +130,11 @@
 
                         </div>
                         <div class="carousel-nav ui-ease-1st-btn">
-                            <button class="carousel-prev btn btn-ghost btn-square">
+                            <button class="carousel-prev ui-btn ui-btn-ghost ui-btn-square">
                                 <svg class="icon"><use href="#angle-left"/></svg>
                             </button>
                             <span class="dots font-color-black-muted"></span>
-                            <button class="carousel-next btn btn-ghost btn-square">
+                            <button class="carousel-next ui-btn ui-btn-ghost ui-btn-square">
                                 <svg class="icon"><use href="#angle-right"/></svg>
                             </button>
                         </div>
@@ -195,11 +195,11 @@
                             </div>
                         </div>
                         <div class="carousel-nav ui-ease-1st-btn">
-                            <button class="carousel-prev btn btn-ghost btn-square round">
+                            <button class="carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
                                 <svg class="icon"><use href="#angle-left"/></svg>
                             </button>
                             <span class="dots font-color-black-muted"></span>
-                            <button class="carousel-next btn btn-ghost btn-square round">
+                            <button class="carousel-next ui-btn ui-btn-ghost ui-btn-square round">
                                 <svg class="icon"><use href="#angle-right"/></svg>
                             </button>
                         </div>
@@ -242,11 +242,11 @@
                             </div>
                         </div>
                         <div class="carousel-nav margin-10-t ui-ease-1st-btn">
-                            <button class="carousel-prev btn btn-ghost btn-square round">
+                            <button class="carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
                                 <svg class="icon"><use href="#angle-left"/></svg>
                             </button>
                             <span class="dots font-color-black-muted"></span>
-                            <button class="carousel-next btn btn-ghost btn-square round">
+                            <button class="carousel-next ui-btn ui-btn-ghost ui-btn-square round">
                                 <svg class="icon"><use href="#angle-right"/></svg>
                             </button>
                         </div>
@@ -294,11 +294,11 @@
                                 </div>
                             </div>
                             <div class="carousel-nav ui-ease-1st-btn">
-                                <button class="carousel-prev btn btn-ghost btn-square round">
+                                <button class="carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
                                     <svg class="icon"><use href="#angle-left"/></svg>
                                 </button>
                                 <span class="dots font-color-black-muted"></span>
-                                <button class="carousel-next btn btn-ghost btn-square round">
+                                <button class="carousel-next ui-btn ui-btn-ghost ui-btn-square round">
                                     <svg class="icon"><use href="#angle-right"/></svg>
                                 </button>
                             </div>

@@ -42,11 +42,11 @@
 
                     <span class="sp-30"></span>
 
-                    <button type="submit" class="go-signup-btn btn font-color-white block round hover-scale hover-shadow ui-ease-btn">
+                    <button type="submit" class="go-signup-btn ui-btn font-color-white block round hover-scale hover-shadow ui-ease-btn">
                         <b>LOGIN</b>
                     </button>
                     <span class="sp-15"></span>
-                    <button class="tab btn btn-ghost font-color-black-50 round block ui-ease-btn" data-ui-id="lost-password">
+                    <button class="tab ui-btn ui-btn-ghost font-color-black-50 round block ui-ease-btn" data-ui-id="lost-password">
                         <svg class="icon margin-5-r no-opacity"><use href="#lock"/></svg> Forgot password?
                     </button>
 
@@ -66,11 +66,11 @@
 
                     <span class="sp-30"></span>
 
-                    <button type="submit" class="go-signup-btn btn font-color-white block round hover-scale hover-shadow ui-ease-btn">
+                    <button type="submit" class="go-signup-btn ui-btn font-color-white block round hover-scale hover-shadow ui-ease-btn">
                         <b>Reset Password</b>
                     </button>
                     <span class="sp-15"></span>
-                    <button class="tab btn btn-ghost font-color-black-50 round block ui-ease-btn" data-ui-id="login">
+                    <button class="tab ui-btn ui-btn-ghost font-color-black-50 round block ui-ease-btn" data-ui-id="login">
                         <svg class="icon margin-5-r no-opacity"><use href="#long-arrow-left"/></svg> Back to login
                     </button>
 
@@ -86,7 +86,7 @@
                     <h1 class="hidden-md">Create your account</h1>
                     <p class="x-large font-color-white-muted">Sign up to create, discover and connect with the global community.</p>
                     <span class="sp-30 margin-10-v"></span>
-                    <a href="?l=sign-up-page" class="login-btn btn btn-lg btn-sm-fluid padding-30-h circle hover-scale hover-shadow ui-ease-btn"><b>SIGN UP NOW</b></a>
+                    <a href="?l=sign-up-page" class="login-btn ui-btn ui-btn-lg ui-btn-sm-fluid padding-30-h circle hover-scale hover-shadow ui-ease-btn"><b>SIGN UP NOW</b></a>
                 </div>
 
                 <div class="login-icons icons-black">

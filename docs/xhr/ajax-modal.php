@@ -1,7 +1,7 @@
 <div class="modal-header ui-theme-base ui-fill-dark-100">
     <h4>Modal Header</h4>
     <div class="modal-buttons ui-ease-1st-btn">
-        <button class="btn circle ui-fill-dark-300">Header Button</button>
+        <button class="ui-btn circle ui-fill-dark-300">Header Button</button>
     </div>
 </div>
 <div class="modal-container large padding-30">
@@ -13,8 +13,8 @@
 </div>
 <div class="modal-footer">
     <div class="modal-buttons ui-ease-1st-btn">
-        <button type="button" class="btn padding-30-h btn-ghost ui-border-dual circle" onclick="ui.modal.close(function () { alert('Modal closed!'); });">Callback</button>
-        <button type="button" class="btn padding-30-h btn-ghost ui-border-dual circle" onclick="ui.modal.close();">Cancel</button>
-        <button type="submit" class="btn padding-30-h circle ui-theme-green ui-fill-dark-100" onclick="ui.modal.close();">Accept</button>
+        <button type="button" class="ui-btn padding-30-h ui-btn-ghost ui-border-dual circle" onclick="ui.modal.close(function () { alert('Modal closed!'); });">Callback</button>
+        <button type="button" class="ui-btn padding-30-h ui-btn-ghost ui-border-dual circle" onclick="ui.modal.close();">Cancel</button>
+        <button type="submit" class="ui-btn padding-30-h circle ui-theme-green ui-fill-dark-100" onclick="ui.modal.close();">Accept</button>
     </div>
 </div>

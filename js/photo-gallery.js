@@ -37,7 +37,7 @@ ui.photoGallery = {
     nameNext: 'next',
 
     // styling classnames
-    stylesCloseIcon: 'btn btn-lg btn-square btn-ghost round ui-ease-btn',
+    stylesCloseIcon: 'ui-btn btn-lg ui-btn-square ui-btn-ghost round ui-ease-btn',
 
     stylesPreview: 'ui-ease-layout',
     stylesPreviewBtn: 'round ui-ease-btn',

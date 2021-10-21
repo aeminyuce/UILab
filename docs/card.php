@@ -44,9 +44,9 @@
                         </div>
                         <div class="card-side padding-15 align-r sm-align-c ui-border-t ui-ease-2nd-btn">
                             <form action="#">
-                                <button type="button" class="btn padding-30-h btn-ghost ui-border-dual circle">Cancel</button>
-                                <button type="submit" class="btn padding-30-h circle ui-theme-yellow ui-fill-dark-100">Show Later</button>
-                                <button type="submit" class="btn padding-30-h circle ui-theme-green ui-fill-dark-100">Accept</button>
+                                <button type="button" class="ui-btn padding-30-h ui-btn-ghost ui-border-dual circle">Cancel</button>
+                                <button type="submit" class="ui-btn padding-30-h circle ui-theme-yellow ui-fill-dark-100">Show Later</button>
+                                <button type="submit" class="ui-btn padding-30-h circle ui-theme-green ui-fill-dark-100">Accept</button>
                             </form>
                         </div>
                     </div>
@@ -254,7 +254,7 @@
                         </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                         <span class="sp-15"></span>
-                        <a href="#" class="btn btn-xs-fluid circle ui-fill-dark-100 ui-ease-btn">
+                        <a href="#" class="ui-btn ui-btn-xs-fluid circle ui-fill-dark-100 ui-ease-btn">
                             Outgoing Link
                             <svg class="icon margin-5-l"><use href="#link"/></svg>
                         </a>
@@ -272,7 +272,7 @@
                         </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                         <span class="sp-15"></span>
-                        <a href="#" class="btn btn-xs-fluid circle ui-fill-dark-100 ui-ease-btn">
+                        <a href="#" class="ui-btn ui-btn-xs-fluid circle ui-fill-dark-100 ui-ease-btn">
                             Outgoing Link
                             <svg class="icon margin-5-l"><use href="#link"/></svg>
                         </a>
@@ -289,7 +289,7 @@
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                     <span class="sp-15"></span>
-                    <a href="#" class="btn btn-xs-fluid circle ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-xs-fluid circle ui-fill-dark-100 ui-ease-btn">
                         Outgoing Link
                         <svg class="icon margin-5-l"><use href="#link"/></svg>
                     </a>
@@ -302,7 +302,7 @@
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                     <span class="sp-15"></span>
-                    <a href="#" class="btn btn-xs-fluid circle ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-xs-fluid circle ui-fill-dark-100 ui-ease-btn">
                         Outgoing Link
                         <svg class="icon margin-5-l"><use href="#link"/></svg>
                     </a>
@@ -315,7 +315,7 @@
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
                     <span class="sp-15"></span>
-                    <a href="#" class="btn btn-xs-fluid circle ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-xs-fluid circle ui-fill-dark-100 ui-ease-btn">
                         Outgoing Link
                         <svg class="icon margin-5-l"><use href="#link"/></svg>
                     </a>

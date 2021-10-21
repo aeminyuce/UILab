@@ -9,10 +9,10 @@
                 <div class="row ui-border-b margin-15-b">
 
                     <div class="col-4 offset-4 no-padding-b">
-                        <div class="btn-holder form-lg ui-ease-1st-btn">
-                            <button class="tab btn btn-ghost round-t ui-border-b ui-border-lg ui-stroke active">CSS</button>
-                            <button class="tab btn btn-ghost round-t">JS</button>
-                            <button class="tab btn btn-ghost round-t">Icons</button>
+                        <div class="ui-btn-holder form-lg ui-ease-1st-btn">
+                            <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke active">CSS</button>
+                            <button class="tab ui-btn ui-btn-ghost round-t">JS</button>
+                            <button class="tab ui-btn ui-btn-ghost round-t">Icons</button>
                         </div>
                     </div>
 
@@ -23,7 +23,7 @@
                     <div class="align-c margin-30-b">
                         <div class="file ui-no-border round circle ui-no-border ui-ease-form form-inline-xs">
                             <input class="cursor-pointer" name="less" class="generate-import" type="file">
-                            <span class="btn circle block ui-ease-btn">
+                            <span class="ui-btn circle block ui-ease-btn">
                                 <span class="inline-block">Import LESS File</span>
                                 <svg class="icon margin-5-l"><use href="#import"/></svg>
                             </span>
@@ -509,10 +509,10 @@
                                 <textarea class="font-color-black-50 large padding-10" rows="12" placeholder="Generated CSS will be here!"></textarea>
                                 <div class="ui-border-t ui-border-dual">
                                     <div class="inline-block padding-5-r">
-                                        <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ui-ease-btn">
+                                        <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost left ui-ease-btn">
                                             <svg class="icon"><use href="#trash"/></svg>
                                         </button>
-                                        <button title="Minify code" name="css" class="generate-min btn btn-square btn-ghost ui-ease-btn">
+                                        <button title="Minify code" name="css" class="generate-min ui-btn ui-btn-square ui-btn-ghost ui-ease-btn">
                                             <svg class="icon"><use href="#code"/></svg>
                                         </button>
                                     </div>
@@ -523,9 +523,9 @@
 
                             <div class="align-r align-c ui-ease-1st-btn">
                                 <span class="sp-15 visible-xs"></span>
-                                <button name="less" class="generate-btn btn btn-xs-fluid round ui-fill-dark-100">Generate LESS</button>
+                                <button name="less" class="generate-btn ui-btn ui-btn-xs-fluid round ui-fill-dark-100">Generate LESS</button>
                                 <span class="sp-5 visible-sm"></span>
-                                <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
+                                <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid round">
                                     <svg class="icon ui-color margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard
                                 </button>
                             </div>
@@ -540,7 +540,7 @@
                     <div class="align-c margin-30-b">
                         <div class="file ui-no-border round circle ui-no-border ui-ease-form form-inline-xs">
                             <input class="cursor-pointer" name="js" class="generate-import" type="file">
-                            <span class="btn circle block ui-ease-btn">
+                            <span class="ui-btn circle block ui-ease-btn">
                                 <span class="inline-block">Import JS File</span>
                                 <svg class="icon margin-5-l"><use href="#import"/></svg>
                             </span>
@@ -877,10 +877,10 @@
                                 <textarea class="font-color-black-50 large padding-10" rows="12" placeholder="Generated JS will be here!"></textarea>
                                 <div class="ui-border-t ui-border-dual">
                                     <div class="inline-block padding-5-r">
-                                        <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ui-ease-btn">
+                                        <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost left ui-ease-btn">
                                             <svg class="icon"><use href="#trash"/></svg>
                                         </button>
-                                        <button title="Minify code" name="js" class="generate-min btn btn-square btn-ghost ui-ease-btn">
+                                        <button title="Minify code" name="js" class="generate-min ui-btn ui-btn-square ui-btn-ghost ui-ease-btn">
                                             <svg class="icon"><use href="#code"/></svg>
                                         </button>
                                     </div>
@@ -891,8 +891,8 @@
 
                             <div class="align-r align-c ui-ease-1st-btn">
                                 <span class="sp-15 visible-xs"></span>
-                                <button name="js" class="generate-btn btn btn-xs-fluid round ui-fill-dark-100">Generate JS</button>
-                                <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
+                                <button name="js" class="generate-btn ui-btn ui-btn-xs-fluid round ui-fill-dark-100">Generate JS</button>
+                                <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid round">
                                     <svg class="icon ui-color margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard
                                 </button>
                             </div>
@@ -1008,10 +1008,10 @@
                                 <textarea class="font-color-black-50 large padding-10" rows="12" placeholder="Generated icons will be here!"></textarea>
                                 <div class="ui-border-t ui-border-dual">
                                     <div class="inline-block padding-5-r">
-                                        <button title="Clear form!" class="generate-clear btn btn-square btn-ghost left ui-ease-btn">
+                                        <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost left ui-ease-btn">
                                             <svg class="icon"><use href="#trash"/></svg>
                                         </button>
-                                        <button title="Minify code" name="icon" class="generate-min btn btn-square btn-ghost ui-ease-btn">
+                                        <button title="Minify code" name="icon" class="generate-min ui-btn ui-btn-square ui-btn-ghost ui-ease-btn">
                                             <svg class="icon"><use href="#code"/></svg>
                                         </button>
                                     </div>
@@ -1022,8 +1022,8 @@
 
                             <div class="align-r align-c ui-ease-1st-btn">
                                 <span class="sp-15 visible-xs"></span>
-                                <button name="php" class="generate-btn btn btn-xs-fluid round ui-fill-dark-100" data-ui-type="icons">Generate Icons</button>
-                                <button title="Copy to clipboard!" class="generate-copy btn btn-xs-fluid round">
+                                <button name="php" class="generate-btn ui-btn ui-btn-xs-fluid round ui-fill-dark-100" data-ui-type="icons">Generate Icons</button>
+                                <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid round">
                                     <svg class="icon ui-color margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard
                                 </button>
                             </div>
