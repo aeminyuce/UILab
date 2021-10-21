@@ -267,13 +267,13 @@
                             <svg class="icon"><use href="#grid-column"/></svg>
                         </button>
                         <div class="dropdown-menu round shadow-lg no-scroll">
-                            <div class="tabs xs-full-width ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-b ui-border-lg ui-stroke ui-color" style="min-width: 300px;">
+                            <div class="tabs xs-full-width ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color" style="min-width: 300px;">
 
                                 <div class="ui-btn-holder font-color-black-muted align-c ui-border-b ui-ease-1st-btn">
                                     <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Favorites">
                                         <svg class="icon ui-no"><use href="#star"/></svg>
                                     </button>
-                                    <button class="tab ui-btn ui-btn-ghost round-t" data-ui-tooltip data-ui-only="desktop" title="History">
+                                    <button class="tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="History">
                                         <svg class="icon ui-no"><use href="#history"/></svg>
                                     </button>
                                 </div>
@@ -343,19 +343,19 @@
                             <svg class="icon"><use href="#bars-right"/></svg>
                         </button>
                         <div class="dropdown-menu round shadow-lg no-scroll">
-                            <div class="tabs xs-full-width ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-b ui-border-lg ui-stroke ui-color" style="min-width: 300px;">
+                            <div class="tabs xs-full-width ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color" style="min-width: 300px;">
 
                                 <div class="ui-btn-holder font-color-black-muted align-c ui-border-b ui-ease-1st-btn">
                                     <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Notifications">
                                         <svg class="icon ui-no"><use href="#bell"/></svg>
                                     </button>
-                                    <button class="tab ui-btn ui-btn-ghost round-t" data-ui-tooltip data-ui-only="desktop" title="Notes">
+                                    <button class="tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="Notes">
                                         <svg class="icon ui-no"><use href="#pencil-write"/></svg>
                                     </button>
-                                    <button class="tab ui-btn ui-btn-ghost round-t" data-ui-tooltip data-ui-only="desktop" title="Started Jobs">
+                                    <button class="tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="Started Jobs">
                                         <svg class="icon ui-no"><use href="#hourglass-start"/></svg>
                                     </button>
-                                    <button class="tab ui-btn ui-btn-ghost round-t" data-ui-tooltip data-ui-only="desktop" title="Completed Jobs">
+                                    <button class="tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="Completed Jobs">
                                         <svg class="icon ui-no"><use href="#hourglass-end"/></svg>
                                     </button>
                                 </div>
@@ -465,15 +465,15 @@
             <!-- header: end -->
 
             <!-- layouts: start -->
-            <div class="tabs ui-ease-tabs padding-15-b" data-ui-classes="ui-border-lg ui-border-b ui-stroke ui-color">
+            <div class="tabs ui-ease-tabs padding-15-b" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                 <div class="container">
                     <div class="row ui-border-b margin-15-b ui-theme-panel2">
                         <div class="col-4 offset-4 no-padding-b">
 
                             <div class="ui-btn-holder font-color-black-muted form-lg ui-ease-1st-btn">
-                                <button class="tab ui-btn ui-btn-ghost round-t ui-border-lg ui-border-b ui-stroke ui-color active">Forms</button>
-                                <button class="tab ui-btn ui-btn-ghost round-t">Dashboard</button>
+                                <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active">Forms</button>
+                                <button class="tab ui-btn ui-btn-ghost round-t ui-border-b">Dashboard</button>
                             </div>
 
                         </div>
@@ -1060,11 +1060,11 @@
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
                                 <div class="ui-card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
-                                    <div class="tabs form-lg ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-b ui-border-lg ui-stroke ui-color">
+                                    <div class="tabs form-lg ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                                         <div class="ui-btn-holder font-color-black-muted align-c margin-10-b ui-border-b ui-ease-1st-btn">
                                             <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active">News</button>
-                                            <button class="tab ui-btn ui-btn-ghost round-t">Announcements</button>
+                                            <button class="tab ui-btn ui-btn-ghost round-t ui-border-b">Announcements</button>
                                         </div>
                                         <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
                                             <ul class="timeline side-l margin-15-h hide-h-lines">

@@ -80,20 +80,20 @@
 <main class="container no-gutter">
 
     <!-- tab banner: start -->
-    <div class="tabs form-lg ui-ease-tabs" data-ui-classes="ui-color ui-border-b ui-border-lg ui-stroke">
+    <div class="tabs form-lg ui-ease-tabs" data-ui-classes="ui-color ui-border-lg ui-stroke">
 
         <div class="fixed padding-10-t ui-theme-farmer2">
             <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
                 <div class="col-12 xs-align-l align-c ui-ease-1st-btn">
-                    <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-color ui-border-b ui-border-lg ui-stroke active">
+                    <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b ui-color ui-border-lg ui-stroke active">
                         <svg class="icon"><use href="#factory"/></svg>
                         Long Term Investment
                     </button>
-                    <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b">
+                    <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b">
                         <svg class="icon"><use href="#network"/></svg>
                         Connect with Our Farmers
                     </button>
-                    <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b">
+                    <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b">
                         <svg class="icon"><use href="#user-circle"/></svg>
                         Social Impact Investment
                     </button>
@@ -338,20 +338,20 @@
                 </div>
             </div>
         </div>
-        <div class="tabs form-lg ui-border-t padding-10-t ui-ease-tabs" data-ui-classes="ui-color ui-border-b ui-border-lg ui-stroke">
+        <div class="tabs form-lg ui-border-t padding-10-t ui-ease-tabs" data-ui-classes="ui-color ui-border-lg ui-stroke">
 
             <div class="fixed">
                 <div class="row no-row-gap-v icons-no-opacity icons-margin-5-r">
                     <div class="col-12 xs-align-l align-c ui-ease-1st-btn">
-                        <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-color ui-border-b ui-border-lg ui-stroke active">
+                        <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b ui-color ui-border-lg ui-stroke active">
                             <svg class="icon ui-color"><use href="#building"/></svg>
                             Company
                         </button>
-                        <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b">
+                        <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b">
                             <svg class="icon ui-color"><use href="#comments"/></svg>
                             Social
                         </button>
-                        <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b">
+                        <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b">
                             <svg class="icon ui-color"><use href="#users"/></svg>
                             Customers
                         </button>
