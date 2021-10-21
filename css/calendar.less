@@ -82,20 +82,20 @@
 .ui-ease-calendar {
     transition-property: opacity;
 
-    .calendar-details,thead,tbody { transition-property: transform, opacity; transition-duration: .25s; transition-timing-function: ease-in-out; }
-    button,a,.calendar-details li { transition-property: background-color, opacity; transition-duration: @ease-default; }
+    .ui-calendar-details,thead,tbody { transition-property: transform, opacity; transition-duration: .25s; transition-timing-function: ease-in-out; }
+    button,a,.ui-calendar-details li { transition-property: background-color, opacity; transition-duration: @ease-default; }
 }
 
-.calendar {
+.ui-calendar {
     ._bg-var(card-bg); padding: @calendar-padding; overflow: hidden; display: block; position: relative; @no-user-select();
 
-    &:not(.active) { display: none; }
+    &:not(.ui-active) { display: none; }
     &,* { text-align: center !important; }
 
     table {
         width: 100%; table-layout: fixed;
 
-        &.fill-weekends {
+        &.ui-fill-weekends {
             th,td {
                 &:nth-child(n+6) { ._bg-var(calendar-weekend-bg); }
             }
@@ -106,13 +106,13 @@
         td {
             padding: @calendar-days-gap;
 
-            &.passive {
+            &.ui-passive {
                 span { min-height: @btn-default; padding: (@calendar-days-padding - (@calendar-days-gap * 2)); display: block; opacity: @calendar-days-passive-opacity; }
             }
 
             button { width: 100%; min-height: @btn-default; background: @no-color; padding: (@calendar-days-padding - @calendar-days-gap); display: block; border: 0; position: relative; }
 
-            &.toggle-details {
+            &.ui-toggle-details {
                 button {
                     &:after {
                         content: ""; width: @calendar-notifiers-width; height: @calendar-notifiers-width; background: @calendar-notifiers-bg; display: block; border-radius: 100%; position: absolute;
@@ -125,7 +125,7 @@
                 }
             }
 
-            &.today {
+            &.ui-today {
                 button {
                     font-weight: @font-bold;
 
@@ -136,7 +136,7 @@
                 }
             }
 
-            &.pickerday {
+            &.ui-pickerday {
                 button {
                      font-weight: @font-bold;
 
@@ -184,11 +184,11 @@
             &,button { border-radius: @round; }
         }
 
-        .calendar {
+        .ui-calendar {
             &-panel {
                 border-radius: @round;
 
-                .panel-call { border-radius: @round; }
+                .ui-panel-call { border-radius: @round; }
             }
 
             &-month { border-radius: @round 0 0 @round; }
@@ -201,7 +201,7 @@
         }
 
         table {
-            &.fill-weekends {
+            &.ui-fill-weekends {
                 th {
                     &:nth-child(6) { border-radius: @round 0 0 0; }
                     &:nth-child(7) { border-radius: 0 @round 0 0; }
@@ -217,10 +217,10 @@
         }
     }
 
-    &:not(.show-details) {
-        .calendar-details { opacity: 0; transform: translateX(@calendar-details-slide-size); }
+    &:not(.ui-show-details) {
+        .ui-calendar-details { opacity: 0; transform: translateX(@calendar-details-slide-size); }
     }
-    &.show-details {
+    &.ui-show-details {
         thead,tbody {
             position: relative; z-index: 1; opacity: 0 !important; transform: translateX(@calendar-details-slide-size);
 
@@ -231,7 +231,7 @@
     &-details {
         padding-left: (@calendar-details-toggle-btn-size + @calendar-caption-padding); position: absolute; top: (@calendar-caption-buttons-size + @calendar-caption-padding * 3); right: 0; bottom: 0; left: 0; z-index: 2;
 
-        &:not(.open) { display: none; }
+        &:not(.ui-open) { display: none; }
         & > button {
             width: @btn-default; height: 100%; border: 0; position: absolute; top: 0; left: 0; cursor: pointer;
 
@@ -266,17 +266,20 @@
         }
     }
 
-    .empty-details {
+    .ui-empty-details {
         li {
+            height: 100%;
+            .ui-desktop &:hover { ._bg-var(btn-bg); }
+
             & > strong,& > b,& > span { ._bg-var(calendar-empty-details-bg); }
             & > strong { height: @calendar-details-days-font-size; border-radius: 50%; }
-            & > b { width: (@layout-min / 3); height: (@calendar-details-list-padding * 2); border-radius: @calendar-details-content-radius; }
+            & > b { width: 35%; height: (@calendar-details-list-padding * 2); border-radius: @calendar-details-content-radius; }
 
             & > span {
-                width: (@layout-min - 40); height: @calendar-details-list-padding; margin-bottom: @calendar-details-list-padding !important; border-radius: @calendar-details-content-radius;
+                width: 55%; height: @calendar-details-list-padding; margin-bottom: @calendar-details-list-padding !important; border-radius: @calendar-details-content-radius;
 
-                & + span { width: (@layout-min - 80); }
-                & + span + span { width: (@layout-min / 2); }
+                & + span { width: 70%; }
+                & + span + span { width: 35%; }
             }
         }
     }
@@ -289,10 +292,10 @@
         ul { display: flex; flex-wrap: wrap; }
         li { width: 33.333332%; height: 25%; padding: @calendar-panel-items-gap; flex-grow: 1; }
 
-        .panel-call {
+        .ui-panel-call {
             font-size: @calendar-panel-items-font-size; white-space: nowrap; text-overflow: ellipsis; line-height: 100%; width: 100%; height: 100%; background-color: @no-color; padding: @calendar-panel-items-padding; overflow: hidden; border: 0;
 
-            &.selected {
+            &.ui-selected {
                 color: @white !important; font-weight: @font-bold; background-color: @calendar-pickerday-btn-bg;
 
                 .ui-desktop &:hover { background-color: @calendar-pickerday-btn-hover-bg; }
@@ -301,10 +304,10 @@
         }
     }
 
-    .calendar-container { position: relative; }
+    .ui-calendar-container { position: relative; }
 
-    &.show-panel {
-        .calendar {
+    &.ui-show-panel {
+        .ui-calendar {
             &-panel { transform: translateY(0); }
             &-container { transform: translateY(110%); }
         }
@@ -313,55 +316,55 @@
 }
 
 .text {
-    &.calendar-picker { overflow: visible !important; }
+    &.ui-calendar-picker { overflow: visible !important; }
 
-    .calendar {
+    .ui-calendar {
         width: 100%; max-width: @calendar-max-width; position: absolute; z-index: @calendar-picker-z-index; box-shadow: 0 @calendar-shadow-size @calendar-picker-shadow;
 
-        &:not(.open-ease) { opacity: 0; }
+        &:not(.ui-open-ease) { opacity: 0; }
     }
 
-    &:not(.picker-t) {
+    &:not(.ui-picker-t) {
         &.ui-no-border {
-            .calendar { margin-top: @calendar-picker-space; }
+            .ui-calendar { margin-top: @calendar-picker-space; }
         }
         &:not(.ui-border-dual):not(.ui-no-border) {
-            .calendar { margin-top: (@calendar-picker-space + 1); }
+            .ui-calendar { margin-top: (@calendar-picker-space + 1); }
         }
         &.ui-border-dual {
-            .calendar { margin-top: (@calendar-picker-space + @border-dual); }
+            .ui-calendar { margin-top: (@calendar-picker-space + @border-dual); }
         }
     }
 
-    &.picker-t {
-        .calendar { bottom: 100%; }
+    &.ui-picker-t {
+        .ui-calendar { bottom: 100%; }
 
         &.ui-no-border {
-            .calendar { margin-top: @calendar-picker-space; }
+            .ui-calendar { margin-top: @calendar-picker-space; }
         }
         &:not(.ui-border-dual):not(.ui-no-border) {
-            .calendar { margin-bottom: (@calendar-picker-space + 1); }
+            .ui-calendar { margin-bottom: (@calendar-picker-space + 1); }
         }
         &.ui-border-dual {
-            .calendar { margin-bottom: (@calendar-picker-space + @border-dual); }
+            .ui-calendar { margin-bottom: (@calendar-picker-space + @border-dual); }
         }
     }
 
-    &.picker-l {
-        .calendar { right: 0; }
+    &.ui-picker-l {
+        .ui-calendar { right: 0; }
     }
 }
 
 @media (@sm-start) {
     .text {
-        .calendar {
+        .ui-calendar {
             min-width: @calendar-min-width;
         }
     }
 }
 @media (@xs-finish) {
     .text {
-        .calendar {
+        .ui-calendar {
             min-width: @calendar-min-width-mobile;
         }
     }

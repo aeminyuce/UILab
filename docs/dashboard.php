@@ -1215,7 +1215,7 @@
                                         </ul>
                                     </div>
                                     <h4 class="align-l margin-5-t">Events</h4>
-                                    <div class="calendar ui-ease-calendar round no-padding" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>
+                                    <div class="ui-calendar ui-ease-calendar round no-padding" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>
                                 </div>
                             </div>
 

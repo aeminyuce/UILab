@@ -6,44 +6,44 @@
 ui.calendar = {
 
     // targets
-    target: 'calendar',
+    target: 'ui-calendar',
 
     // main classnames
-    nameContainer: 'calendar-container',
-    nameTitle: 'calendar-title',
-    nameDetails: 'calendar-details',
+    nameContainer: 'ui-calendar-container',
+    nameTitle: 'ui-calendar-title',
+    nameDetails: 'ui-calendar-details',
 
-    namePicker: 'calendar-picker',
-    namePickerTop: 'picker-t',
-    namePickerLeft: 'picker-l',
+    namePicker: 'ui-calendar-picker',
+    namePickerTop: 'ui-picker-t',
+    namePickerLeft: 'ui-picker-l',
 
-    namePanel: 'calendar-panel',
-    nameShowPanel: 'show-panel',
-    namePanelCall: 'panel-call',
+    namePanel: 'ui-calendar-panel',
+    nameShowPanel: 'ui-show-panel',
+    namePanelCall: 'ui-panel-call',
 
-    nameMonth: 'calendar-month',
-    nameYear: 'calendar-year',
+    nameMonth: 'ui-calendar-month',
+    nameYear: 'ui-calendar-year',
 
-    namePrev: 'calendar-prev',
-    nameNext: 'calendar-next',
+    namePrev: 'ui-calendar-prev',
+    nameNext: 'ui-calendar-next',
 
-    nameToday: 'today',
-    namePickerDay: 'pickerday',
-    namePassiveDay: 'passive',
+    nameToday: 'ui-today',
+    namePickerDay: 'ui-pickerday',
+    namePassiveDay: 'ui-passive',
 
-    nameWeekend: 'fill-weekends',
+    nameWeekend: 'ui-fill-weekends',
 
-    nameToggleDetails: 'toggle-details',
-    nameShowDetails: 'show-details',
-    nameHasDetails: 'has-details',
-    nameEmptyDetails: 'empty-details',
+    nameToggleDetails: 'ui-toggle-details',
+    nameShowDetails: 'ui-show-details',
+    nameHasDetails: 'ui-has-details',
+    nameEmptyDetails: 'ui-empty-details',
 
     // helper classnames
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
+    nameOpen: 'ui-open',
+    nameOpenEase: 'ui-open-ease',
 
-    nameActive: 'active',
-    nameSelected: 'selected',
+    nameActive: 'ui-active',
+    nameSelected: 'ui-selected',
 
     // outer classnames
     nameIcon: 'icon',
