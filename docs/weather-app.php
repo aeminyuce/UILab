@@ -30,10 +30,10 @@
                             <li>23<svg class="icon"><use href="#moon"/></svg><span>31</span></li>
                             <li>24<svg class="icon"><use href="#cloud-moon"/></svg><span>29</span></li>
                         </ul>
-                        <div class="carousel ui-card round shadow-lg" data-ui-col="1">
-                            <div class="carousel-slider icons-lg ui-ease-layout ui-ease-slow ui-ease-in-out">
+                        <div class="ui-carousel ui-card round shadow-lg" data-ui-col="1">
+                            <div class="ui-carousel-slider icons-lg ui-ease-layout ui-ease-slow ui-ease-in-out">
 
-                                <div class="slide-content padding-30 no-padding-b">
+                                <div class="ui-slide-content padding-30 no-padding-b">
                                     <h3 class="font-bold margin-15-v">Next Week</h3>
                                     <table class="table table-striped no-separated">
                                         <tr>
@@ -94,7 +94,7 @@
                                         </tr>
                                     </table>
                                 </div>
-                                <div class="slide-content padding-30 no-padding-b">
+                                <div class="ui-slide-content padding-30 no-padding-b">
                                     <div class="padding-15 no-padding-t">
                                         <h3 class="font-bold margin-15-v">Details</h3>
                                         <span class="sp-3"></span>
@@ -122,12 +122,12 @@
                                 </div>
 
                             </div>
-                            <div class="carousel-nav padding-10-b no-margin-t ui-ease-1st-btn">
-                                <button class="carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
+                            <div class="ui-carousel-nav padding-10-b no-margin-t ui-ease-1st-btn">
+                                <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
                                     <svg class="icon"><use href="#angle-left"/></svg>
                                 </button>
-                                <span class="dots font-color-black-50"></span>
-                                <button class="carousel-next ui-btn ui-btn-ghost ui-btn-square round">
+                                <span class="ui-dots font-color-black-50"></span>
+                                <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square round">
                                     <svg class="icon"><use href="#angle-right"/></svg>
                                 </button>
                             </div>
@@ -162,10 +162,10 @@
                             <li>07<svg class="icon"><use href="#sun"/></svg><span>31</span></li>
                             <li>08<svg class="icon"><use href="#cloud-sun"/></svg><span>29</span></li>
                         </ul>
-                        <div class="carousel ui-card round shadow-lg" data-ui-col="1">
-                            <div class="carousel-slider icons-lg ui-ease-layout ui-ease-slow ui-ease-in-out">
+                        <div class="ui-carousel ui-card round shadow-lg" data-ui-col="1">
+                            <div class="ui-carousel-slider icons-lg ui-ease-layout ui-ease-slow ui-ease-in-out">
 
-                                <div class="slide-content padding-30 no-padding-b">
+                                <div class="ui-slide-content padding-30 no-padding-b">
                                     <div class="padding-15 no-padding-t">
                                         <h3 class="font-bold margin-15-v">Details</h3>
                                         <span class="sp-3"></span>
@@ -191,7 +191,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="slide-content padding-30 no-padding-b">
+                                <div class="ui-slide-content padding-30 no-padding-b">
                                     <h3 class="font-bold margin-15-v">Next Week</h3>
                                     <table class="table table-striped no-separated">
                                         <tr>
@@ -254,12 +254,12 @@
                                 </div>
 
                             </div>
-                            <div class="carousel-nav padding-10-b no-margin-t ui-ease-1st-btn">
-                                <button class="carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
+                            <div class="ui-carousel-nav padding-10-b no-margin-t ui-ease-1st-btn">
+                                <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
                                     <svg class="icon"><use href="#angle-left"/></svg>
                                 </button>
-                                <span class="dots font-color-black-50"></span>
-                                <button class="carousel-next ui-btn ui-btn-ghost ui-btn-square round">
+                                <span class="ui-dots font-color-black-50"></span>
+                                <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square round">
                                     <svg class="icon"><use href="#angle-right"/></svg>
                                 </button>
                             </div>

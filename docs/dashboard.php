@@ -754,10 +754,10 @@
                         <div class="row">
 
                             <div class="col-12 no-padding">
-                                <div class="dashboard-carousel carousel" data-ui-col-xl="4" data-ui-col-lg="2" data-ui-col="2" data-ui-col-md="2" data-ui-col-sm="1" data-ui-col-xs="1">
-                                    <div class="carousel-slider icons-margin-5-r ui-ease-layout ui-ease-slow ui-ease-in-out">
+                                <div class="ui-dashboard-carousel ui-carousel" data-ui-col-xl="4" data-ui-col-lg="2" data-ui-col="2" data-ui-col-md="2" data-ui-col-sm="1" data-ui-col-xs="1">
+                                    <div class="ui-carousel-slider icons-margin-5-r ui-ease-layout ui-ease-slow ui-ease-in-out">
 
-                                        <div class="slide-content padding-10-h padding-10-t padding-15-b ui-theme-yellow">
+                                        <div class="ui-slide-content padding-10-h padding-10-t padding-15-b ui-theme-yellow">
                                             <div class="ui-card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
                                                     <div class="row no-row-gap-h row-gap-md-v">
@@ -780,7 +780,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="slide-content padding-10-h padding-10-t padding-15-b ui-theme-yellow">
+                                        <div class="ui-slide-content padding-10-h padding-10-t padding-15-b ui-theme-yellow">
                                             <div class="ui-card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
                                                     <div class="row no-row-gap-h row-gap-md-v">
@@ -803,7 +803,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="slide-content padding-10-h padding-10-t padding-15-b ui-theme-green">
+                                        <div class="ui-slide-content padding-10-h padding-10-t padding-15-b ui-theme-green">
                                             <div class="ui-card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
                                                     <div class="row no-row-gap-h row-gap-md-v">
@@ -826,7 +826,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="slide-content padding-10-h padding-10-t padding-15-b ui-theme-panel2">
+                                        <div class="ui-slide-content padding-10-h padding-10-t padding-15-b ui-theme-panel2">
                                             <div class="ui-card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
                                                     <div class="row no-row-gap-h row-gap-md-v">
@@ -851,12 +851,12 @@
                                         </div>
 
                                     </div>
-                                    <div class="carousel-nav no-margin-t margin-10-b ui-ease-1st-btn">
-                                        <button class="carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
+                                    <div class="ui-carousel-nav no-margin-t margin-10-b ui-ease-1st-btn">
+                                        <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
                                             <svg class="icon"><use href="#angle-left"/></svg>
                                         </button>
-                                        <span class="dots font-color-black-muted"></span>
-                                        <button class="carousel-next ui-btn ui-btn-ghost ui-btn-square round">
+                                        <span class="ui-dots font-color-black-muted"></span>
+                                        <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square round">
                                             <svg class="icon"><use href="#angle-right"/></svg>
                                         </button>
                                     </div>

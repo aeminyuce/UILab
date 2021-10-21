@@ -165,7 +165,7 @@
   margin-top: -80px;
   z-index: 1;
 }
-.home-links .carousel {
+.home-links .ui-carousel {
   margin: 0 -15px;
 }
 @media (max-width: 959px) {

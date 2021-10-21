@@ -6,38 +6,38 @@
 ui.carousel = {
 
     // targets
-    target: 'carousel',
+    target: 'ui-carousel',
 
-    targetGallery: 'carousel-gallery',
-    targetSlider: 'carousel-slider',
-    targetNav: 'carousel-nav',
+    targetGallery: 'ui-carousel-gallery',
+    targetSlider: 'ui-carousel-slider',
+    targetNav: 'ui-carousel-nav',
 
     // main classnames
-    nameAnimate: 'carousel-animate',
-    nameTouchMove: 'carousel-touchmove',
+    nameAnimate: 'ui-carousel-animate',
+    nameTouchMove: 'ui-carousel-touchmove',
 
-    nameHalfSize: 'half-sized',
+    nameHalfSize: 'ui-half-sized',
 
-    nameContent: 'slide-content',
+    nameContent: 'ui-slide-content',
 
-    namePrev: 'carousel-prev',
-    nameNext: 'carousel-next',
-    nameDots: 'dots',
+    namePrev: 'ui-carousel-prev',
+    nameNext: 'ui-carousel-next',
+    nameDots: 'ui-dots',
 
-    nameGalleryDetail: 'detail',
-    nameGalleryDetailLoader: 'detail-loader',
+    nameGalleryDetail: 'ui-detail',
+    nameGalleryDetailLoader: 'ui-detail-loader',
 
-    nameGalleryThumbs: 'thumbs',
-    nameGalleryImg: 'img',
+    nameGalleryThumbs: 'ui-thumbs',
+    nameGalleryImg: 'ui-img',
 
     // helper classnames
-    nameShow: 'show',
-    nameFaded: 'faded',
-    nameActive: 'active',
+    nameShow: 'ui-show',
+    nameFaded: 'ui-faded',
+    nameActive: 'ui-active',
 
-    nameFiltered: 'filtered',
-    nameNavSelected: 'selected',
-    nameGallerySelected: 'selected',
+    nameFiltered: 'ui-filtered',
+    nameNavSelected: 'ui-selected',
+    nameGallerySelected: 'ui-selected',
 
     // outer classnames
     nameScroll: 'scroll',
@@ -910,7 +910,7 @@ ui.carousel = {
                     parent = ui.closest(this, '.' + ui.carousel.targetGallery);
 
                     detail = ui.find('.' + ui.carousel.nameGalleryDetail, parent[0]);
-                    target = ui.find(ui.carousel.nameGalleryImg, detail);
+                    target = ui.find('img', detail);
 
                     thumbs = ui.find('.' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.nameGalleryImg, parent[0]);
 

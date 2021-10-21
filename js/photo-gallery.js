@@ -9,7 +9,7 @@ ui.photoGallery = {
     targetGallery: 'photo-gallery',
     targetPreview: 'photo-preview',
 
-    targetImages: 'img',
+    targetImages: 'ui-img',
 
     // main classnames
     nameGalleryPassive: 'photo-gallery-passive',

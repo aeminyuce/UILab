@@ -222,10 +222,10 @@
 
     <!-- home links: start -->
     <div class="home-links fixed align-c form-lg ui-theme-farmer2 set-relative">
-        <div class="carousel" data-ui-col="4" data-ui-col-md="2" data-ui-col-sm="2" data-ui-col-xs="1" data-ui-slide="4000">
-            <div class="carousel-slider icons-xxl hover-shadow-2nd hover-scale-2nd ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
+        <div class="ui-carousel" data-ui-col="4" data-ui-col-md="2" data-ui-col-sm="2" data-ui-col-xs="1" data-ui-slide="4000">
+            <div class="ui-carousel-slider icons-xxl hover-shadow-2nd hover-scale-2nd ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
-                <div class="slide-content padding-15">
+                <div class="ui-slide-content padding-15">
                     <div class="ui-card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#leaf"/></svg>
@@ -236,7 +236,7 @@
                     </div>
                 </div>
 
-                <div class="slide-content padding-15">
+                <div class="ui-slide-content padding-15">
                     <div class="ui-card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#wind-sock"/></svg>
@@ -247,7 +247,7 @@
                     </div>
                 </div>
 
-                <div class="slide-content padding-15">
+                <div class="ui-slide-content padding-15">
                     <div class="ui-card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#water"/></svg>
@@ -258,7 +258,7 @@
                     </div>
                 </div>
 
-                <div class="slide-content padding-15">
+                <div class="ui-slide-content padding-15">
                     <div class="ui-card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#land"/></svg>
@@ -269,7 +269,7 @@
                     </div>
                 </div>
 
-                <div class="slide-content padding-15">
+                <div class="ui-slide-content padding-15">
                     <div class="ui-card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#leaf"/></svg>
@@ -280,7 +280,7 @@
                     </div>
                 </div>
 
-                <div class="slide-content padding-15">
+                <div class="ui-slide-content padding-15">
                     <div class="ui-card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#wind-sock"/></svg>
@@ -291,7 +291,7 @@
                     </div>
                 </div>
 
-                <div class="slide-content padding-15">
+                <div class="ui-slide-content padding-15">
                     <div class="ui-card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#water"/></svg>
@@ -302,7 +302,7 @@
                     </div>
                 </div>
 
-                <div class="slide-content padding-15">
+                <div class="ui-slide-content padding-15">
                     <div class="ui-card padding-15 full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="icon ui-color"><use href="#land"/></svg>
@@ -314,13 +314,13 @@
                 </div>
 
             </div>
-            <div class="carousel-nav margin-10-t icons-no-opacity ui-ease-1st-btn">
-                <button class="carousel-prev ui-btn ui-btn-square ui-btn-ghost ui-fill-dark-100">
-                    <svg class="icon ui-color"><use href="#arrow-left"/></svg>
+            <div class="ui-carousel-nav margin-10-t icons-no-opacity ui-ease-1st-btn">
+                <button class="ui-carousel-prev ui-btn ui-btn-square ui-btn-ghost ui-fill-dark-100">
+                    <svg class="icon ui-color"><use href="#angle-left"/></svg>
                 </button>
-                <span class="dots ui-color"></span>
-                <button class="carousel-next ui-btn ui-btn-square ui-btn-ghost ui-fill-dark-100">
-                    <svg class="icon ui-color"><use href="#arrow-right"/></svg>
+                <span class="ui-dots ui-color"></span>
+                <button class="ui-carousel-next ui-btn ui-btn-square ui-btn-ghost ui-fill-dark-100">
+                    <svg class="icon ui-color"><use href="#angle-right"/></svg>
                 </button>
             </div>
         </div>

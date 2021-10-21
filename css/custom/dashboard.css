@@ -159,7 +159,7 @@ header {
 .sidebar .tabs {
   height: calc(100% - 62px);
 }
-.dashboard-carousel {
+.ui-dashboard-carousel {
   margin-bottom: -5px;
 }
 @media (min-width: 1480px) {

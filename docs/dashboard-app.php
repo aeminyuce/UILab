@@ -159,10 +159,10 @@
                         </div>
 
                         <div class="ui-card-side padding-15">
-                            <div class="carousel" data-ui-col="1">
-                                <div class="carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-in-out">
+                            <div class="ui-carousel" data-ui-col="1">
+                                <div class="ui-carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-in-out">
 
-                                    <div class="slide-content list-group ui-no-border padding-1-h">
+                                    <div class="ui-slide-content list-group ui-no-border padding-1-h">
                                         <ul class="has-photo-sm has-icon-sm ui-ease-list-group">
                                             <li class="round ui-theme-gray ui-fill-light-100">
                                                 <a href="#">
@@ -176,7 +176,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="slide-content list-group ui-no-border padding-1-h">
+                                    <div class="ui-slide-content list-group ui-no-border padding-1-h">
                                         <ul class="has-photo-sm has-icon-sm ui-ease-list-group">
                                             <li class="round ui-theme-gray ui-fill-light-100">
                                                 <a href="#">
@@ -190,7 +190,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="slide-content list-group ui-no-border padding-1-h">
+                                    <div class="ui-slide-content list-group ui-no-border padding-1-h">
                                         <ul class="has-photo-sm has-icon-sm ui-ease-list-group">
                                             <li class="round ui-theme-gray ui-fill-light-100">
                                                 <a href="#">
@@ -206,8 +206,8 @@
                                     </div>
 
                                 </div>
-                                <div class="carousel-nav ui-ease-1st-btn">
-                                    <span class="dots font-color-black-muted"></span>
+                                <div class="ui-carousel-nav ui-ease-1st-btn">
+                                    <span class="ui-dots font-color-black-muted"></span>
                                 </div>
                             </div>
                         </div>
@@ -304,7 +304,7 @@
 
                                 <span class="sp-5"></span>
 
-                                <div class="grid-list-container scroll-v" style="height: 534px;">
+                                <div class="grid-list-container scroll-v" style="height: 563px;">
 
                                     <div class="grid-list-content ui-no-border" data-ui-val="REP-701-2019|John Doe">
                                         <div class="col-static no-fluid">
