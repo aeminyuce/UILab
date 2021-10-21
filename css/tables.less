@@ -89,7 +89,7 @@
         td,th { text-align: center; }
     }
 
-    &[class*="border-"] { ._border-color-var(table-border-color); }
+    &[class*="ui-border-"] { ._border-color-var(table-border-color); }
 
     &-valign {
         td,th { vertical-align: middle !important; }
@@ -119,7 +119,7 @@
 
     &-border {
         ._border-var(@var: table-border-color);
-        &:extend(.table[class*="border-"]);
+        &:extend(.table[class*="ui-border-"]);
 
         th,td {
             &:not(:last-child) { ._border-var(@dir: border-right; @var: table-border-color); }
