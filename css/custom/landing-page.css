@@ -174,7 +174,7 @@
   }
 }
 @media (max-width: 620px) {
-  .photo-gallery > li .img {
+  .ui-photo-gallery > li .img {
     height: 150px;
   }
 }

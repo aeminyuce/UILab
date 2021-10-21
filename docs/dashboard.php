@@ -289,6 +289,19 @@
                                                 <a class="ui-btn no-margin circle ui-ease-btn" href="#">+12</a>
                                             </span>
                                         </li>
+                                        <li>
+                                            Lorem ipsum dolor sit amet.
+                                            <span class="ui-photo-gallery margin-5-t ui-ease-photo-gallery">
+                                                <a class="ui-img margin-1-h round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="38" alt=""></a>
+                                                <a class="ui-img margin-1-h round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="38" alt=""></a>
+                                                <a class="ui-img margin-1-h round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="38" alt=""></a>
+                                                <a class="ui-img margin-1-h round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="38" alt=""></a>
+                                                <a class="ui-img margin-1-h round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="38" alt=""></a>
+                                                <a class="ui-img margin-1-h round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="38" alt=""></a>
+                                                <a class="ui-img margin-1-h round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="38" alt=""></a>
+                                                <a class="ui-img margin-1-h round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="38" alt=""></a>
+                                            </span>
+                                        </li>
                                         <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                         <li>
@@ -307,26 +320,11 @@
                                         </li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                        <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
-                                        <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                     </ul>
                                 </div>
                                 <div class="tab-content align-l scroll-v" style="max-height: 420px;">
                                     <ul class="timeline side-l margin-15-h hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
-                                        <li>
-                                            Lorem ipsum dolor sit amet.
-                                            <span class="photo-gallery margin-5-t ui-ease-photo-gallery">
-                                                <a class="img margin-1-h round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="38" alt=""></a>
-                                            </span>
-                                        </li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                         <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
@@ -363,113 +361,43 @@
                                 </div>
                                 <div class="tab-content align-l scroll-v open open-ease" style="max-height: 420px;">
                                     <ul class="timeline side-l margin-15-h hide-h-lines">
-                                        <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
-                                        <li>
-                                            Lorem ipsum dolor sit amet.
-                                            <span class="photos-holder margin-5-t hover-scale-more-2nd ui-ease-2nd-layout">
-                                                <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image.jpg" alt=""></a>
-                                                <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image2.jpg" alt=""></a>
-                                                <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image3.jpg" alt=""></a>
-                                                <a class="ui-btn no-margin circle ui-ease-btn" href="#">+12</a>
-                                            </span>
-                                        </li>
-                                        <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
-                                        <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                        <li>
-                                            Nullam sit amet sagittis nisi.
-                                            <span class="icons-xl margin-5-t block ui-ease-1st-btn">
-                                                <a class="ui-btn ui-btn-square padding-4-v round" href="#">
-                                                    <svg class="icon"><use href="#file-pdf"/></svg>
-                                                </a>
-                                                <a class="ui-btn ui-btn-square padding-4-v round" href="#">
-                                                    <svg class="icon"><use href="#file-xls"/></svg>
-                                                </a>
-                                                <a class="ui-btn ui-btn-square padding-4-v round" href="#">
-                                                    <svg class="icon"><use href="#file-zip"/></svg>
-                                                </a>
-                                            </span>
-                                        </li>
+                                        <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                         <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
+                                        <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                        <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
+                                        <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                     </ul>
                                 </div>
                                 <div class="tab-content align-l scroll-v" style="max-height: 420px;">
                                     <ul class="timeline side-l margin-15-h hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
-                                        <li>
-                                            Lorem ipsum dolor sit amet.
-                                            <span class="photo-gallery margin-5-t ui-ease-photo-gallery">
-                                                <a class="img margin-1-h round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="38" alt=""></a>
-                                            </span>
-                                        </li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                         <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                         <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                         <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
-                                        <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                    </ul>
-                                </div>
-                                <div class="tab-content align-l scroll-v" style="max-height: 420px;">
-                                    <ul class="timeline side-l margin-15-h hide-h-lines">
-                                        <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
-                                        <li>
-                                            Lorem ipsum dolor sit amet.
-                                            <span class="photos-holder margin-5-t hover-scale-more-2nd ui-ease-2nd-layout">
-                                                <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image.jpg" alt=""></a>
-                                                <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image2.jpg" alt=""></a>
-                                                <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image3.jpg" alt=""></a>
-                                                <a class="ui-btn no-margin circle ui-ease-btn" href="#">+12</a>
-                                            </span>
-                                        </li>
-                                        <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
-                                        <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                        <li>
-                                            Nullam sit amet sagittis nisi.
-                                            <span class="icons-xl margin-5-t block ui-ease-1st-btn">
-                                                <a class="ui-btn ui-btn-square padding-4-v round" href="#">
-                                                    <svg class="icon"><use href="#file-pdf"/></svg>
-                                                </a>
-                                                <a class="ui-btn ui-btn-square padding-4-v round" href="#">
-                                                    <svg class="icon"><use href="#file-xls"/></svg>
-                                                </a>
-                                                <a class="ui-btn ui-btn-square padding-4-v round" href="#">
-                                                    <svg class="icon"><use href="#file-zip"/></svg>
-                                                </a>
-                                            </span>
-                                        </li>
-                                        <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
-                                        <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                        <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                     </ul>
                                 </div>
                                 <div class="tab-content align-l scroll-v" style="max-height: 420px;">
                                     <ul class="timeline side-l margin-15-h hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
-                                        <li>
-                                            Lorem ipsum dolor sit amet.
-                                            <span class="photo-gallery margin-5-t ui-ease-photo-gallery">
-                                                <a class="img margin-1-h round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="38" alt=""></a>
-                                                <a class="img margin-1-h round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="38" alt=""></a>
-                                            </span>
-                                        </li>
+                                        <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
+                                        <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                        <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
+                                        <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                        <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
+                                        <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
+                                        <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content align-l scroll-v" style="max-height: 420px;">
+                                    <ul class="timeline side-l margin-15-h hide-h-lines">
+                                        <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                         <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
@@ -1150,6 +1078,20 @@
                                                         <a class="ui-btn ui-btn-lg no-margin circle ui-ease-btn" href="#">+12</a>
                                                     </span>
                                                 </li>
+                                                <li>
+                                                    Lorem ipsum dolor sit amet.
+                                                    <span class="ui-photo-gallery margin-5-t ui-ease-photo-gallery">
+                                                        <a class="ui-img margin-1-h round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img margin-1-h round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img margin-1-h round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img margin-1-h round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img margin-1-h round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img margin-1-h round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img margin-1-h round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img margin-1-h round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img margin-1-h round" href="img/image_09.jpg"><img src="img/thumb_09.jpg" height="38" alt=""></a>
+                                                    </span>
+                                                </li>
                                                 <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
                                                 <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                                 <li>
@@ -1168,27 +1110,11 @@
                                                 </li>
                                                 <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                                 <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                                <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
-                                                <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                             </ul>
                                         </div>
                                         <div class="tab-content set-absolute set-h scroll-v" style="top: 62px; bottom: 15px;">
                                             <ul class="timeline side-l margin-15-h hide-h-lines">
                                                 <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
-                                                <li>
-                                                    Lorem ipsum dolor sit amet.
-                                                    <span class="photo-gallery margin-5-t ui-ease-photo-gallery">
-                                                        <a class="img margin-1-h round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="38" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="38" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="38" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="38" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="38" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="38" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="38" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="38" alt=""></a>
-                                                        <a class="img margin-1-h round" href="img/image_09.jpg"><img src="img/thumb_09.jpg" height="38" alt=""></a>
-                                                    </span>
-                                                </li>
                                                 <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                                 <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                                 <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>

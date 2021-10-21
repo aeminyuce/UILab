@@ -6,35 +6,35 @@
 ui.photoGallery = {
 
     // targets
-    targetGallery: 'photo-gallery',
-    targetPreview: 'photo-preview',
+    targetGallery: 'ui-photo-gallery',
+    targetPreview: 'ui-photo-preview',
 
     targetImages: 'ui-img',
 
     // main classnames
-    nameGalleryPassive: 'photo-gallery-passive',
-    nameGalleryCall: 'photo-gallery-call',
-    nameGalleryInfo: 'has-info',
-    nameGalleryTouchInfo: 'touch-info',
+    nameGalleryPassive: 'ui-photo-gallery-passive',
+    nameGalleryCall: 'ui-photo-gallery-call',
+    nameGalleryInfo: 'ui-has-info',
+    nameGalleryTouchInfo: 'ui-touch-info',
 
-    namePreviewOpened: 'photo-preview-opened',
-    namePreviewClose: 'close-photo-preview',
-    namePreviewBg: 'photo-preview-bg',
-    namePreviewLoader: 'preview-loader',
-    namePreviewInfo: 'preview-info',
-    namePreviewZoom: 'preview-zoom',
+    namePreviewOpened: 'ui-photo-preview-opened',
+    namePreviewClose: 'ui-close-photo-preview',
+    namePreviewBg: 'ui-photo-preview-bg',
+    namePreviewLoader: 'ui-preview-loader',
+    namePreviewInfo: 'ui-preview-info',
+    namePreviewZoom: 'ui-preview-zoom',
 
-    nameImgVer: 'img-v',
+    nameImgVer: 'ui-img-v',
 
     // helper classnames
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
+    nameOpen: 'ui-open',
+    nameOpenEase: 'ui-open-ease',
 
-    namePause: 'pause',
-    namePauseEase: 'pause-ease',
+    namePause: 'ui-pause',
+    namePauseEase: 'ui-pause-ease',
 
-    namePrev: 'prev',
-    nameNext: 'next',
+    namePrev: 'ui-prev',
+    nameNext: 'ui-next',
 
     // styling classnames
     stylesCloseIcon: 'ui-btn btn-lg ui-btn-square ui-btn-ghost round ui-ease-btn',

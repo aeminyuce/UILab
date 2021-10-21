@@ -691,9 +691,9 @@
 
                 <span class="sp-30 margin-10-v"></span>
 
-                <ul class="photo-gallery block-2nd has-cover ui-ease-photo-gallery">
+                <ul class="ui-photo-gallery block-2nd ui-has-cover ui-ease-photo-gallery">
                     <li>
-                        <a class="img has-info show-info" href="img/agriculture/md01.jpg">
+                        <a class="ui-img ui-has-info ui-show-info" href="img/agriculture/md01.jpg">
                             <img src="img/agriculture/md01.jpg" alt="">
                             <span class="x-large">
                                 <svg class="icon icon-xxl left margin-20-r hidden-md ui-color"><use href="#trees"/></svg>
@@ -705,37 +705,37 @@
                         </a>
                     </li>
                     <li>
-                        <a class="img has-info" href="img/agriculture/md02.jpg">
+                        <a class="ui-img ui-has-info" href="img/agriculture/md02.jpg">
                             <img src="img/agriculture/md02.jpg" alt="">
                             <span class="x-large ui-theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                         </a>
                     </li>
                     <li>
-                        <a class="img has-info" href="img/agriculture/md03.jpg">
+                        <a class="ui-img ui-has-info" href="img/agriculture/md03.jpg">
                             <img src="img/agriculture/md03.jpg" alt="">
                             <span class="x-large ui-fill-dark-100">Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                         </a>
                     </li>
                     <li>
-                        <a class="img has-info" href="img/agriculture/md04.jpg">
+                        <a class="ui-img ui-has-info" href="img/agriculture/md04.jpg">
                             <img src="img/agriculture/md04.jpg" alt="">
                             <span class="x-large ui-theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
                     <li>
-                        <a class="img has-info" href="img/agriculture/md05.jpg">
+                        <a class="ui-img ui-has-info" href="img/agriculture/md05.jpg">
                             <img src="img/agriculture/md05.jpg" alt="">
                             <span class="x-large ui-fill-dark-100">Consectetur adipiscing elit. Integer eu dignissim libero.</span>
                         </a>
                     </li>
                     <li>
-                        <a class="img has-info" href="img/agriculture/md06.jpg">
+                        <a class="ui-img ui-has-info" href="img/agriculture/md06.jpg">
                             <img class="" src="img/agriculture/md06.jpg" alt="">
                             <span class="x-large ui-theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
                     <li>
-                        <a class="img has-info" href="img/agriculture/md07.jpg">
+                        <a class="ui-img ui-has-info" href="img/agriculture/md07.jpg">
                             <img class="invert-img" src="img/agriculture/md07.jpg" alt="">
                             <span class="x-large ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
