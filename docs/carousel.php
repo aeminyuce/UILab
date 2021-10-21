@@ -12,7 +12,7 @@
                         <div class="carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
                             <div class="slide-content padding-15 padding-30-b" data-ui-animate="10">
-                                <div class="card padding-15 shadow-lg">
+                                <div class="ui-card padding-15 shadow-lg">
                                     <div class="row row-gap-lg ui-theme-gray ui-fill-light-100 full-h">
                                         <div class="col-4">
                                             <div class="row row-gap-xs ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
@@ -51,7 +51,7 @@
                             </div>
 
                             <div class="slide-content padding-15 padding-30-b" data-ui-animate="10">
-                                <div class="card padding-15 shadow-lg">
+                                <div class="ui-card padding-15 shadow-lg">
                                     <div class="row row-gap-lg ui-theme-gray ui-fill-light-100 full-h">
                                         <div class="col-4">
                                             <div class="row row-gap-xs ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
@@ -90,7 +90,7 @@
                             </div>
 
                             <div class="slide-content padding-15 padding-30-b" data-ui-animate="10">
-                                <div class="card padding-15 shadow-lg">
+                                <div class="ui-card padding-15 shadow-lg">
                                     <div class="row row-gap-lg ui-theme-gray ui-fill-light-100 full-h">
                                         <div class="col-4 col-md-3">
                                             <div class="row row-gap-xs ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
@@ -255,7 +255,7 @@
 
                 <h5 class="font-bold">Carousel Gallery</h5>
                 <div class="padding-30-b">
-                    <div class="carousel-gallery card padding-15 round shadow-lg">
+                    <div class="carousel-gallery ui-card padding-15 round shadow-lg">
                         <div class="row">
                             <div class="detail col-8 col-md-6 push-2 push-md-3 sm-fluid">
                                 <img src="img/house_01.jpg" class="photo-gallery-call cursor-pointer img-fluid ui-ease-layout" data-ui-target="#detail-carousel" data-ui-count="0" alt="">
@@ -308,7 +308,7 @@
 
                 <h5 class="font-bold">Gallery Without Carousel</h5>
                 <div class="padding-30-b">
-                    <div class="carousel-gallery card padding-15 round shadow-lg">
+                    <div class="carousel-gallery ui-card padding-15 round shadow-lg">
                         <div class="row">
                             <div class="detail col-8 col-md-6 push-2 push-md-3 sm-fluid">
                                 <img src="img/image_01.jpg" class="photo-gallery-call cursor-pointer img-fluid ui-ease-layout" data-ui-target="#detail-carousel2" data-ui-count="0" alt="">

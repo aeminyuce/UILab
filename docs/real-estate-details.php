@@ -60,7 +60,7 @@
                         </div>
                     </div>
 
-                    <div class="card round shadow-lg">
+                    <div class="ui-card round shadow-lg">
                         <div class="padding-30 large align-justify">
                             <h4>Details</h4>
                             Each villa has been meticulously designed to meet all the demands that a luxury villa has to provide as well as offer a contemporary image of great beauty.
@@ -150,8 +150,8 @@
 
             <div class="col-400 padding-10">
 
-                <div class="card align-c round shadow-lg ui-theme-sub">
-                    <div class="card-side padding-10-v ui-fill-dark-300">
+                <div class="ui-card align-c round shadow-lg ui-theme-sub">
+                    <div class="ui-card-side padding-10-v ui-fill-dark-300">
                         <ul class="list-inline countdown no-user-select">
                             <li class="padding-10-v padding-15-h hidden-xs">
                                 <svg class="icon icon-xxl"><use href="#history"/></svg>
@@ -164,12 +164,12 @@
                     </div>
                     <div class="padding-3 ui-fill-dark-100 stripe-light ui-animate-progress">
                     </div>
-                    <div class="card-side padding-5 ui-fill-dark-100">
+                    <div class="ui-card-side padding-5 ui-fill-dark-100">
                         <b class="small font-color-white">Closing: 10 August, 2018, Friday</b>
                     </div>
                 </div>
 
-                <div class="card align-c round shadow-lg ui-theme-sub">
+                <div class="ui-card align-c round shadow-lg ui-theme-sub">
                     <ul class="list-inline list-gap padding-30 padding-15-b icons-lg icons-margin-5-r ui-theme-gray inline-block-1st">
                         <li>
                             <svg class="icon"><use href="#floor-plan"/></svg>
@@ -193,7 +193,7 @@
                     </div>
                 </div>
 
-                <div class="card margin-20-b round shadow-lg">
+                <div class="ui-card margin-20-b round shadow-lg">
                     <div class="padding-30-h padding-10-v">
                         <b>Previous Offers / <span style="color: hsl(30, 100%, 63%);">Averages</span></b>
                         <div class="line-charts ui-ease-line-charts" data-ui-size="5,20" data-ui-x="1,2,3,4,5">
@@ -250,7 +250,7 @@
                     </div>
                 </div>
 
-                <div class="card padding-30 round shadow-lg">
+                <div class="ui-card padding-30 round shadow-lg">
                     <h4>Other Details</h4>
                     <ul class="list-unstyled list-spacer-15 icons-lg icons-margin-5-r">
                         <li>

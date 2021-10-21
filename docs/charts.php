@@ -231,8 +231,8 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="card round shadow-lg tabs ui-ease-tabs" data-ui-classes="font-bold">
-                            <div class="card-side padding-10 ui-border-b">
+                        <div class="ui-card round shadow-lg tabs ui-ease-tabs" data-ui-classes="font-bold">
+                            <div class="ui-card-side padding-10 ui-border-b">
 
                                 <div class="dropdown menu-l right ui-ease-dropdown">
                                     <button class="ui-btn ui-btn-ghost round">
@@ -247,7 +247,7 @@
                                 <h4 class="align-l margin-5-v">Multiple Line Charts</h4>
 
                             </div>
-                            <div class="card-side padding-15">
+                            <div class="ui-card-side padding-15">
 
                                 <div class="tab-content open open-ease">
                                     <h5 class="font-bold align-c">First Chart</h5>

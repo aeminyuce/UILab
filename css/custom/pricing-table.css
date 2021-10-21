@@ -3,6 +3,6 @@
   width: 72px;
   height: 72px;
 }
-.card.round {
+.ui-card.round {
   border-radius: 16px;
 }

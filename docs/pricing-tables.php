@@ -11,7 +11,7 @@
                 <div class="row row-gap-lg align-c">
                     <div class="col-4">
 
-                        <div class="card full-h padding-30 round shadow">
+                        <div class="ui-card full-h padding-30 round shadow">
                             <div class="margin-30-v">
                                 <svg class="icon icon-72 ui-theme-sub ui-color"><use href="#box"/></svg>
                             </div>
@@ -27,7 +27,7 @@
                     </div>
                     <div class="col-4 no-padding-v">
 
-                        <div class="card full-h padding-30 round shadow-lg ui-theme-sub ui-fill-dark-100">
+                        <div class="ui-card full-h padding-30 round shadow-lg ui-theme-sub ui-fill-dark-100">
                             <div class="margin-30-v">
                                 <svg class="icon icon-72"><use href="#gift"/></svg>
                             </div>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="col-4">
 
-                        <div class="card full-h padding-30 round shadow">
+                        <div class="ui-card full-h padding-30 round shadow">
                             <div class="margin-30-v">
                                 <svg class="icon icon-72 ui-theme-sub ui-color"><use href="#wallet"/></svg>
                             </div>
@@ -70,8 +70,8 @@
                 <div class="row row-gap-lg align-c">
                     <div class="col-4">
 
-                        <div class="card full-h round shadow">
-                            <div class="card-side padding-30 ui-border-b">
+                        <div class="ui-card full-h round shadow">
+                            <div class="ui-card-side padding-30 ui-border-b">
                                 <div class="margin-30-v">
                                     <svg class="icon icon-72 ui-theme-sub ui-color"><use href="#box"/></svg>
                                 </div>
@@ -83,7 +83,7 @@
                                     <svg class="icon margin-5-l"><use href="#heart"/></svg>
                                 </a>
                             </div>
-                            <div class="card-side padding-30">
+                            <div class="ui-card-side padding-30">
                                 <ul class="list-unstyled list-spacer-15 margin-15-v large block-2nd">
                                     <li><span class="font-color-black-muted default">Number of Users</span>1 User</li>
                                     <li><span class="font-color-black-muted default">Domains</span>1 Domain</li>
@@ -108,8 +108,8 @@
                     </div>
                     <div class="col-4 no-padding-v">
 
-                        <div class="card full-h round shadow-lg ui-theme-sub ui-fill-dark-100">
-                            <div class="card-side padding-30 ui-border-b ui-border-light">
+                        <div class="ui-card full-h round shadow-lg ui-theme-sub ui-fill-dark-100">
+                            <div class="ui-card-side padding-30 ui-border-b ui-border-light">
                                 <div class="margin-30-v">
                                     <svg class="icon icon-72"><use href="#gift"/></svg>
                                 </div>
@@ -122,7 +122,7 @@
                                     <svg class="icon margin-5-l"><use href="#shopping-cart"/></svg>
                                 </a>
                             </div>
-                            <div class="card-side padding-30">
+                            <div class="ui-card-side padding-30">
                                 <ul class="list-unstyled list-spacer-15 margin-15-v large block-2nd">
                                     <li><span class="font-color-white-50 default">Number of Users</span>5 Users</li>
                                     <li><span class="font-color-white-50 default">Domains</span>10 Domains</li>
@@ -147,8 +147,8 @@
                     </div>
                     <div class="col-4">
 
-                        <div class="card full-h round shadow">
-                            <div class="card-side padding-30 ui-border-b">
+                        <div class="ui-card full-h round shadow">
+                            <div class="ui-card-side padding-30 ui-border-b">
                                 <div class="margin-30-v">
                                     <svg class="icon icon-72 ui-theme-sub ui-color"><use href="#wallet"/></svg>
                                 </div>
@@ -160,7 +160,7 @@
                                     <svg class="icon margin-5-l"><use href="#shopping-basket"/></svg>
                                 </a>
                             </div>
-                            <div class="card-side padding-30">
+                            <div class="ui-card-side padding-30">
                                 <ul class="list-unstyled list-spacer-15 margin-15-v large block-2nd">
                                     <li><span class="font-color-black-muted default">Number of Users</span>100 Users</li>
                                     <li><span class="font-color-black-muted default">Domains</span>1000 Domains</li>

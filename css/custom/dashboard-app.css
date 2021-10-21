@@ -150,7 +150,7 @@
   background-color: var(--ui-dashboard-app-bg);
   border-radius: 48px;
 }
-.card {
+.ui-card {
   height: 700px;
   border-radius: 32px;
 }

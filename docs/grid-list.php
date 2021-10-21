@@ -4,7 +4,7 @@
             <div class="col-12 padding-30-v">
 
                 <h4>Grid List Examples</h4>
-                <div class="card padding-10 round shadow-lg">
+                <div class="ui-card padding-10 round shadow-lg">
                     <div class="grid-list grid-list-striped grid-hover ui-theme-gray ui-ease-grid-list">
 
                         <div class="row no-row-gap-v row-gap-sm-h margin-2-v">

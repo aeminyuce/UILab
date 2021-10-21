@@ -12,9 +12,9 @@
 
                 <div class="app padding-15 ui-theme-app">
 
-                    <div class="card no-margin-b">
+                    <div class="ui-card no-margin-b">
 
-                        <div class="card-side padding-15 no-padding-b icons-no-opacity">
+                        <div class="ui-card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
                                     <button class="ui-btn ui-btn-ghost ui-btn-square circle ui-fill-light-100 ui-ease-btn" data-ui-notifier>
@@ -34,7 +34,7 @@
                             </div>
                         </div>
 
-                        <div class="card-side padding-10">
+                        <div class="ui-card-side padding-10">
 
                             <div class="row row-gap-md no-fluid ui-ease-2nd-btn">
                                 <div class="col-4">
@@ -91,11 +91,11 @@
                             </div>
 
                         </div>
-                        <div class="card-side padding-15 no-padding-b">
+                        <div class="ui-card-side padding-15 no-padding-b">
                             <h5 class="font-bold">Last Week</h5>
                         </div>
 
-                        <div class="card-side padding-15 padding-5-b">
+                        <div class="ui-card-side padding-15 padding-5-b">
                             <div class="line-charts margin-15-b ui-ease-line-charts" data-ui-size="5,15" data-ui-x="1,2,3,4,5,6,7">
                                 <ul class="lines" data-ui-name="1st" data-ui-type="curved dotted">
                                     <li data-ui-y="159"></li>
@@ -118,11 +118,11 @@
                             </div>
                         </div>
 
-                        <div class="card-side padding-15-h">
+                        <div class="ui-card-side padding-15-h">
                             <h5 class="font-bold">Work Intensity</h5>
                         </div>
 
-                        <div class="card-side padding-15">
+                        <div class="ui-card-side padding-15">
                             <div class="row row-gap-md no-fluid">
                                 <div class="col-4">
                                     <div class="donut-chart ui-ease-donut-chart">
@@ -154,11 +154,11 @@
                             </div>
                         </div>
 
-                        <div class="card-side padding-15-h">
+                        <div class="ui-card-side padding-15-h">
                             <h5 class="font-bold">Last Visited</h5>
                         </div>
 
-                        <div class="card-side padding-15">
+                        <div class="ui-card-side padding-15">
                             <div class="carousel" data-ui-col="1">
                                 <div class="carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-in-out">
 
@@ -252,9 +252,9 @@
 
                 <div class="app padding-15 ui-theme-app">
 
-                    <div class="card no-margin-b">
+                    <div class="ui-card no-margin-b">
 
-                        <div class="card-side padding-15 no-padding-b icons-no-opacity">
+                        <div class="ui-card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
                                     <button class="ui-btn ui-btn-ghost ui-btn-square circle ui-fill-light-100 ui-ease-btn" data-ui-notifier>
@@ -274,7 +274,7 @@
                             </div>
                         </div>
 
-                        <div class="card-side padding-15">
+                        <div class="ui-card-side padding-15">
                             <div class="grid-list grid-list-striped grid-hover ui-ease-grid-list">
 
                                 <div class="form-lg ui-ease-1st-form">
@@ -651,9 +651,9 @@
 
                 <div class="app padding-15 ui-theme-app">
 
-                    <div class="card no-margin-b">
+                    <div class="ui-card no-margin-b">
 
-                        <div class="card-side padding-15 no-padding-b icons-no-opacity">
+                        <div class="ui-card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
                                     <button class="ui-btn ui-btn-ghost ui-btn-square circle ui-fill-light-100 ui-ease-btn" data-ui-notifier>
@@ -673,7 +673,7 @@
                             </div>
                         </div>
 
-                        <div class="card-side padding-10">
+                        <div class="ui-card-side padding-10">
 
                             <div class="tabs ui-ease-tabs" data-ui-classes="ui-theme-app ui-stroke">
 
@@ -1111,9 +1111,9 @@
 
                 <div class="app padding-15 ui-theme-app">
 
-                    <div class="card no-margin-b">
+                    <div class="ui-card no-margin-b">
 
-                        <div class="card-side padding-15 no-padding-b icons-no-opacity">
+                        <div class="ui-card-side padding-15 no-padding-b icons-no-opacity">
                             <div class="col-static no-fluid">
                                 <div class="col-50">
                                     <button class="ui-btn ui-btn-ghost ui-btn-square circle ui-fill-light-100 ui-ease-btn" data-ui-notifier>
@@ -1133,7 +1133,7 @@
                             </div>
                         </div>
 
-                        <div class="card-side padding-10">
+                        <div class="ui-card-side padding-10">
 
                             <div class="align-c padding-30 margin-5-t margin-15-b round ui-border-dual">
                                 <div class="status">

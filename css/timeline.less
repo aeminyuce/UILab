@@ -34,7 +34,7 @@
                 ._bg-var(body-bg);
 
                 .dropdown & { ._bg-var(highlighted); }
-                .card & { ._bg-var(card-bg); }
+                .ui-card & { ._bg-var(card-bg); }
             }
         }
         &.ui-color {
@@ -57,16 +57,16 @@
         }
 
         & > [class*="img-photo"] { margin-left: @timeline-card-padding; position: relative; z-index: 1; transform: translateY(50%); }
-        & > .card {
+        & > .ui-card {
             ._bg-var(body-bg); padding: @timeline-card-padding; display: block; position: relative;
 
             &:not([class*="ui-fill"]),a,button { ._color-var(black); }
         }
         & > .img-photo {
-            & + .card { padding-top: ((@photo-img-default / 2) + round((@timeline-card-padding / 2))); }
-            &-lg + .card { padding-top: ((@photo-img-lg / 2) + round((@timeline-card-padding / 2))); }
-            &-sm + .card { padding-top: ((@photo-img-sm / 2) + round((@timeline-card-padding / 2))); }
-            &-xs + .card { padding-top: ((@photo-img-xs / 2) + round((@timeline-card-padding / 2))); }
+            & + .ui-card { padding-top: ((@photo-img-default / 2) + round((@timeline-card-padding / 2))); }
+            &-lg + .ui-card { padding-top: ((@photo-img-lg / 2) + round((@timeline-card-padding / 2))); }
+            &-sm + .ui-card { padding-top: ((@photo-img-sm / 2) + round((@timeline-card-padding / 2))); }
+            &-xs + .ui-card { padding-top: ((@photo-img-xs / 2) + round((@timeline-card-padding / 2))); }
         }
     }
 

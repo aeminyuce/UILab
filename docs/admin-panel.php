@@ -10,7 +10,7 @@
             <div class="padding-20 padding-10-r md-no-padding">
 
                 <!-- profile -->
-                <div class="card padding-15-v md-no-padding-v md-no-margin round shadow-lg set-relative">
+                <div class="ui-card padding-15-v md-no-padding-v md-no-margin round shadow-lg set-relative">
                     <div class="align-c padding-10-v">
                         <div class="padding-10 set-absolute set-t set-l ui-ease-1st-btn">
                             <button class="ui-btn ui-btn-ghost ui-btn-square round show-mobile-menu-l visible-md">
@@ -94,8 +94,8 @@
                 </nav>
 
                 <!-- tips -->
-                <div class="card padding-15 round shadow-lg hidden-md">
-                    <button class="close-card ui-ease-btn">
+                <div class="ui-card padding-15 round shadow-lg hidden-md">
+                    <button class="ui-close-card ui-ease-btn">
                         <svg class="icon"><use href="#remove"/></svg>
                     </button>
                     <svg class="icon margin-10-r"><use href="#help"/></svg>
@@ -114,8 +114,8 @@
 
                     <div class="col-6">
 
-                        <div class="card full-h round shadow-lg">
-                            <div class="card-side padding-15 ui-border-b">
+                        <div class="ui-card full-h round shadow-lg">
+                            <div class="ui-card-side padding-15 ui-border-b">
                                 <a href="#" class="ui-btn right circle ui-ease-btn hidden-xs">
                                     Details
                                     <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
@@ -129,7 +129,7 @@
                                     <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
                                 </a>
                             </div>
-                            <div class="card-side padding-30">
+                            <div class="ui-card-side padding-30">
 
                                 <div class="row row-gap-md xs-fluid icons-lg margin-25-t md-no-margin">
                                     <div class="col-4">
@@ -173,14 +173,14 @@
                     </div>
 
                     <div class="col-6">
-                        <div class="calendar ui-ease-calendar round shadow-lg"></div>
+                        <div class="ui-calendar ui-ease-calendar round shadow-lg"></div>
                     </div>
 
                     <div class="col-6">
 
-                        <div class="card full-h round shadow-lg">
+                        <div class="ui-card full-h round shadow-lg">
 
-                            <div class="card-side padding-15 ui-border-b">
+                            <div class="ui-card-side padding-15 ui-border-b">
                                 <h4 class="margin-5-b">Last Week Stats</h4>
                                 <div class="font-color-black-50 xs-align-c">
                                     Maximum value of profit <b>159</b> packages.
@@ -218,7 +218,7 @@
                     <div class="col-6">
 
                         <!-- employee list -->
-                        <div class="grid-list grid-list-striped grid-hover card full-h round shadow-lg ui-theme-gray ui-ease-grid-list">
+                        <div class="grid-list grid-list-striped grid-hover ui-card full-h round shadow-lg ui-theme-gray ui-ease-grid-list">
 
                             <div class="row sm-fluid">
                                 <div class="col-5 sm-no-padding-b">

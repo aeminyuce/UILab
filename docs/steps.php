@@ -111,7 +111,7 @@
                     </ul>
                 </div>
 
-                <div class="card padding-30 round shadow-lg">
+                <div class="ui-card padding-30 round shadow-lg">
 
                     <div class="padding-30-b">
                         <ul class="steps-bar">

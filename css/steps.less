@@ -32,7 +32,7 @@
         &:before {
             content: ""; font-weight: @font-bold; font-size: @x-small; text-align: center; ._bg-var(body-bg); width: @steps-active-size; height: @steps-active-size; margin: @steps-margin-v auto; display: block; border: @steps-line-size solid @no-color; border-radius: 50%; position: relative; z-index: 1;
 
-            .card & { ._bg-var(card-bg); }
+            .ui-card & { ._bg-var(card-bg); }
         }
         &:after { content: ""; width: 100%; height: @steps-line-size; background-color: @green; position: absolute; top: (@steps-margin-v + (@steps-active-size - @steps-line-size) / 2); left: -50%; opacity: @icon-sub-opacity; }
         &:first-child {
@@ -43,7 +43,7 @@
             &:before {
                 border-color: currentColor;
 
-                .card & { ._bg-var(card-bg) !important; }
+                .ui-card & { ._bg-var(card-bg) !important; }
             }
             & ~ li {
                 ._color-var(steps-inactive-color);
@@ -51,7 +51,7 @@
                 &:before {
                     width: @steps-passive-size; height: @steps-passive-size; ._bg-var(body-bg); margin: (@steps-margin-v + (@steps-active-size - @steps-passive-size) / 2) auto; ._border-color-var(steps-border);
 
-                    .card & { ._bg-var(card-bg); ._border-color-var(steps-border); }
+                    .ui-card & { ._bg-var(card-bg); ._border-color-var(steps-border); }
                 }
                 &:after { ._bg-var(steps-border); left: -50%; }
             }
@@ -79,7 +79,7 @@
             &:before {
                 ._bg-var(body-bg); ._border-color-var(body-bg);
 
-                .card & { ._bg-var(card-bg); ._border-color-var(steps-border); }
+                .ui-card & { ._bg-var(card-bg); ._border-color-var(steps-border); }
             }
 
             & > .icon {

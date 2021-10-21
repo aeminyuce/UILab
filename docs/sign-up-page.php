@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-12">
 
-                    <div class="card margin-30-b shadow-lg">
+                    <div class="ui-card margin-30-b shadow-lg">
 
                         <div class="col-static sm-fluid">
                             <div class="row padding-20 form-lg">

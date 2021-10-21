@@ -60,8 +60,6 @@ ui.calendar = {
     stylesToday: 'ui-theme-sub ui-fill-dark-100',
     stylesPickerDay: 'ui-theme-red ui-fill-dark-100',
 
-    stylesClosing: 'closing-card ui-ease-layout',
-
     // icons
     prevIcon: 'arrow-left', // header's previous button
     nextIcon: 'arrow-right', // header's next button

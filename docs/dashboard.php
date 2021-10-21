@@ -559,10 +559,10 @@
                         <div class="row">
                             <div class="col-12">
 
-                                <div class="card round shadow-lg">
+                                <div class="ui-card round shadow-lg">
 
                                     <form action="#succesful">
-                                        <div class="card-side padding-5-h ui-border-b">
+                                        <div class="ui-card-side padding-5-h ui-border-b">
                                             <div class="col-static no-fluid">
                                                 <div class="row">
                                                     <div class="col-12">
@@ -598,7 +598,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card-side padding-15 form-lg">
+                                        <div class="ui-card-side padding-15 form-lg">
                                             <div class="row">
 
                                                 <div class="col-8 offset-2">
@@ -721,7 +721,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="card-side padding-5-h ui-border-t">
+                                        <div class="ui-card-side padding-5-h ui-border-t">
                                             <div class="row">
                                                 <div class="col-12 align-r xs-align-c ui-ease-1st-btn">
 
@@ -758,7 +758,7 @@
                                     <div class="carousel-slider icons-margin-5-r ui-ease-layout ui-ease-slow ui-ease-in-out">
 
                                         <div class="slide-content padding-10-h padding-10-t padding-15-b ui-theme-yellow">
-                                            <div class="card full-h padding-15 round shadow-lg">
+                                            <div class="ui-card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
                                                     <div class="row no-row-gap-h row-gap-md-v">
                                                         <div class="col-12">
@@ -781,7 +781,7 @@
                                             </div>
                                         </div>
                                         <div class="slide-content padding-10-h padding-10-t padding-15-b ui-theme-yellow">
-                                            <div class="card full-h padding-15 round shadow-lg">
+                                            <div class="ui-card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
                                                     <div class="row no-row-gap-h row-gap-md-v">
                                                         <div class="col-12">
@@ -804,7 +804,7 @@
                                             </div>
                                         </div>
                                         <div class="slide-content padding-10-h padding-10-t padding-15-b ui-theme-green">
-                                            <div class="card full-h padding-15 round shadow-lg">
+                                            <div class="ui-card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
                                                     <div class="row no-row-gap-h row-gap-md-v">
                                                         <div class="col-12">
@@ -827,7 +827,7 @@
                                             </div>
                                         </div>
                                         <div class="slide-content padding-10-h padding-10-t padding-15-b ui-theme-panel2">
-                                            <div class="card full-h padding-15 round shadow-lg">
+                                            <div class="ui-card full-h padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
                                                     <div class="row no-row-gap-h row-gap-md-v">
                                                         <div class="col-12">
@@ -864,7 +864,7 @@
                             </div>
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
-                                <div class="card full-h padding-15 round shadow-lg">
+                                <div class="ui-card full-h padding-15 round shadow-lg">
                                     <div class="dropdown menu-l right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost round">
                                             <svg class="icon"><use href="#ellipsis-h"/></svg>
@@ -918,7 +918,7 @@
                             </div>
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
-                                <div class="card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
+                                <div class="ui-card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
                                     <div class="tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-b ui-border-lg ui-stroke ui-color">
 
                                         <div class="ui-btn-holder font-color-black-muted align-c margin-10-b ui-border-b form-lg ui-ease-1st-btn">
@@ -1063,7 +1063,7 @@
                             </div>
 
                             <div class="col-xl-6 col-lg-6 col-12 col-md-6">
-                                <div class="card full-h padding-15 round shadow-lg tabs" data-ui-classes="font-bold">
+                                <div class="ui-card full-h padding-15 round shadow-lg tabs" data-ui-classes="font-bold">
                                     <div class="ui-ease-tabs">
                                         <div class="dropdown menu-l right ui-ease-dropdown">
                                             <button class="ui-btn ui-btn-square ui-btn-ghost round">
@@ -1131,7 +1131,7 @@
                             </div>
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
-                                <div class="card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
+                                <div class="ui-card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
                                     <div class="tabs form-lg ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-b ui-border-lg ui-stroke ui-color">
 
                                         <div class="ui-btn-holder font-color-black-muted align-c margin-10-b ui-border-b ui-ease-1st-btn">
@@ -1204,7 +1204,7 @@
                             </div>
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
-                                <div class="card full-h padding-15 round shadow-lg">
+                                <div class="ui-card full-h padding-15 round shadow-lg">
                                     <div class="dropdown menu-l right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost round">
                                             <svg class="icon"><use href="#ellipsis-h"/></svg>
@@ -1220,7 +1220,7 @@
                             </div>
 
                             <div class="col-xl-6 col-lg-6 col-12 col-md-6">
-                                <div class="card full-h padding-15 round shadow-lg">
+                                <div class="ui-card full-h padding-15 round shadow-lg">
                                     <div class="dropdown menu-l right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost round">
                                             <svg class="icon"><use href="#ellipsis-h"/></svg>

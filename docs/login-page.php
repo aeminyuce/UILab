@@ -6,7 +6,7 @@
     <div class="row no-row-gap sm-fluid full-h">
         <div class="login-forms-container col-lg-5 col-6">
 
-            <div class="forms-holder card form-lg tabs shadow-lg ui-ease-tabs">
+            <div class="forms-holder ui-card form-lg tabs shadow-lg ui-ease-tabs">
                 <form id="login" class="tab-content open open-ease" action="#">
 
                     <h3 class="margin-30-b">Login to continue</h3>
