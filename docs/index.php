@@ -5,10 +5,10 @@
 
 <head>
 
-    <title>UI Lab: CSS &amp; JavaScript powered responsive design system.</title>
+    <title>UILab is a modular design system for developing web interfaces fastly!</title>
     <meta name="keywords" content="uilab, responsive, design system, css, javascript, tools, examples">
-    <meta name="description" content="CSS & JavaScript powered responsive design system." />
-    <meta name="author" content="A. Emin Yuce"/>
+    <meta name="description" content="UILab is a modular design system for developing web interfaces fastly!" />
+    <meta name="author" content="A. Emin YUCE"/>
 
     <!-- charset -->
     <meta charset="utf-8" />
