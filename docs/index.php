@@ -194,28 +194,25 @@
             <div class="row">
                 <div class="col-12 padding-30">
 
-                    <div class="ui-card round shadow-lg">
-                        <div class="ui-card-side align-c padding-30">
-                            <h1 class="font-light">UILab is a modular design system.</h2>
-                            <h4 class="font-bold">For developing web interfaces fastly!</h4>
-                            <span class="sp-15"></span>
-                            <div class="form-lg ui-ease-1st-btn">
-                                <a href="?p=icons" class="ui-btn ui-btn-xs-fluid padding-30-h circle ui-theme-sub">
-                                    <svg class="icon margin-5-r no-opacity ui-color"><use href="#draw"/></svg> See Icons
-                                </a>
-                                <a href="?p=download" class="ui-btn ui-btn-xs-fluid padding-30-h circle ui-theme-sub ui-fill-dark-100">
-                                    Download <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
-                                </a>
-                            </div>
-
+                    <div class="card highlight align-c padding-30 round">
+                        <h1 class="font-light">UILab is a modular design system.</h2>
+                        <h4 class="font-bold">For developing web interfaces fastly!</h4>
+                        <span class="sp-15"></span>
+                        <div class="form-lg ui-ease-1st-btn">
+                            <a href="?p=icons" class="ui-btn ui-btn-xs-fluid padding-30-h circle ui-theme-sub">
+                                <svg class="icon margin-5-r no-opacity ui-color"><use href="#draw"/></svg> See Icons
+                            </a>
+                            <a href="?p=download" class="ui-btn ui-btn-xs-fluid padding-30-h circle ui-theme-sub ui-fill-dark-100">
+                                Download <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
+                            </a>
                         </div>
                     </div>
 
                     <div class="row large align-c hover-shadow-2nd hover-t-2nd">
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=dashboard-app">
-                                <img class="img-fluid round visible-light" src="img/layout-dashboard-app.jpg" alt="Dashboard App">
-                                <img class="img-fluid round visible-dark" src="img/layout-dashboard-app-dark.jpg" alt="Dashboard App Dark">
+                                <img class="img-fluid round-t visible-light" src="img/layout-dashboard-app.jpg" alt="Dashboard App">
+                                <img class="img-fluid round-t visible-dark" src="img/layout-dashboard-app-dark.jpg" alt="Dashboard App Dark">
                                 <h4 class="inline-block padding-20-v">
                                     Dashboard App
                                 </h4>
@@ -223,8 +220,8 @@
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=dashboard">
-                                <img class="img-fluid round visible-light" src="img/layout-dashboard.jpg" alt="Dashboard">
-                                <img class="img-fluid round visible-dark" src="img/layout-dashboard-dark.jpg" alt="Dashboard Dark">
+                                <img class="img-fluid round-t visible-light" src="img/layout-dashboard.jpg" alt="Dashboard">
+                                <img class="img-fluid round-t visible-dark" src="img/layout-dashboard-dark.jpg" alt="Dashboard Dark">
                                 <h4 class="inline-block padding-20-v">
                                     Dashboard
                                 </h4>
@@ -232,8 +229,8 @@
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=sign-up-page">
-                                <img class="img-fluid round visible-light" src="img/layout-sign-up-page.jpg" alt="Sign Up Page">
-                                <img class="img-fluid round visible-dark" src="img/layout-sign-up-page-dark.jpg" alt="Sign Up Page Dark">
+                                <img class="img-fluid round-t visible-light" src="img/layout-sign-up-page.jpg" alt="Sign Up Page">
+                                <img class="img-fluid round-t visible-dark" src="img/layout-sign-up-page-dark.jpg" alt="Sign Up Page Dark">
                                 <h4 class="inline-block padding-20-v">
                                     Sign Up Page
                                 </h4>
@@ -241,8 +238,8 @@
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=login-page">
-                                <img class="img-fluid round visible-light" src="img/layout-login-page.jpg" alt="Login Page">
-                                <img class="img-fluid round visible-dark" src="img/layout-login-page-dark.jpg" alt="Login Page Dark">
+                                <img class="img-fluid round-t visible-light" src="img/layout-login-page.jpg" alt="Login Page">
+                                <img class="img-fluid round-t visible-dark" src="img/layout-login-page-dark.jpg" alt="Login Page Dark">
                                 <span class="inline-block padding-20-v">
                                     Login Page
                                 </span>
@@ -250,8 +247,8 @@
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=landing-page">
-                                <img class="img-fluid round visible-light" src="img/layout-landing-page.jpg" alt="Landing Page">
-                                <img class="img-fluid round visible-dark" src="img/layout-landing-page-dark.jpg" alt="Landing Page Dark">
+                                <img class="img-fluid round-t visible-light" src="img/layout-landing-page.jpg" alt="Landing Page">
+                                <img class="img-fluid round-t visible-dark" src="img/layout-landing-page-dark.jpg" alt="Landing Page Dark">
                                 <h4 class="inline-block padding-20-v">
                                     Landing Page
                                 </h4>
@@ -259,8 +256,8 @@
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=movie-app">
-                                <img class="img-fluid round visible-light" src="img/layout-movie-app.jpg" alt="Movie App">
-                                <img class="img-fluid round visible-dark" src="img/layout-movie-app-dark.jpg" alt="Movie App Dark">
+                                <img class="img-fluid round-t visible-light" src="img/layout-movie-app.jpg" alt="Movie App">
+                                <img class="img-fluid round-t visible-dark" src="img/layout-movie-app-dark.jpg" alt="Movie App Dark">
                                 <span class="inline-block padding-20-v">
                                     Movie App
                                 </span>
@@ -268,8 +265,8 @@
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=weather-app">
-                                <img class="img-fluid round visible-light" src="img/layout-weather-app.jpg" alt="Weather App">
-                                <img class="img-fluid round visible-dark" src="img/layout-weather-app-dark.jpg" alt="Weather App Dark">
+                                <img class="img-fluid round-t visible-light" src="img/layout-weather-app.jpg" alt="Weather App">
+                                <img class="img-fluid round-t visible-dark" src="img/layout-weather-app-dark.jpg" alt="Weather App Dark">
                                 <h4 class="inline-block padding-20-v">
                                     Weather App
                                 </h4>
@@ -277,8 +274,8 @@
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=admin-panel">
-                                <img class="img-fluid round visible-light" src="img/layout-admin-panel.jpg" alt="Admin Panel">
-                                <img class="img-fluid round visible-dark" src="img/layout-admin-panel-dark.jpg" alt="Admin Panel Dark">
+                                <img class="img-fluid round-t visible-light" src="img/layout-admin-panel.jpg" alt="Admin Panel">
+                                <img class="img-fluid round-t visible-dark" src="img/layout-admin-panel-dark.jpg" alt="Admin Panel Dark">
                                 <h4 class="inline-block padding-20-v">
                                     Admin Panel
                                 </h4>
@@ -286,8 +283,8 @@
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=product-listing">
-                                <img class="img-fluid round visible-light" src="img/layout-product-listing.jpg" alt="Product Listing">
-                                <img class="img-fluid round visible-dark" src="img/layout-product-listing-dark.jpg" alt="Product Listing Dark">
+                                <img class="img-fluid round-t visible-light" src="img/layout-product-listing.jpg" alt="Product Listing">
+                                <img class="img-fluid round-t visible-dark" src="img/layout-product-listing-dark.jpg" alt="Product Listing Dark">
                                 <h4 class="inline-block padding-20-v">
                                     Product Listing
                                 </h4>
@@ -295,8 +292,8 @@
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=real-estate-details">
-                                <img class="img-fluid round visible-light" src="img/layout-real-estate-details.jpg" alt="Real Estate Details">
-                                <img class="img-fluid round visible-dark" src="img/layout-real-estate-details-dark.jpg" alt="Real Estate Details Dark">
+                                <img class="img-fluid round-t visible-light" src="img/layout-real-estate-details.jpg" alt="Real Estate Details">
+                                <img class="img-fluid round-t visible-dark" src="img/layout-real-estate-details-dark.jpg" alt="Real Estate Details Dark">
                                 <h4 class="inline-block padding-20-v">
                                     Real Estate Details
                                 </h4>
@@ -304,8 +301,8 @@
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=photo-albums">
-                                <img class="img-fluid round visible-light" src="img/layout-photo-albums.jpg" alt="Photo Albums">
-                                <img class="img-fluid round visible-dark" src="img/layout-photo-albums-dark.jpg" alt="Photo Albums Dark">
+                                <img class="img-fluid round-t visible-light" src="img/layout-photo-albums.jpg" alt="Photo Albums">
+                                <img class="img-fluid round-t visible-dark" src="img/layout-photo-albums-dark.jpg" alt="Photo Albums Dark">
                                 <h4 class="inline-block padding-20-v">
                                     Photo Albums
                                 </h4>
