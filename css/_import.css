@@ -679,9 +679,9 @@ html .row {
 .col-42 {
   width: 42px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .fixed {
-    max-width: 1200px;
+    max-width: 1400px;
   }
   .fixed-xl {
     max-width: 1400px;
@@ -1551,7 +1551,7 @@ html .row {
     display: block;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 1399px) {
   .lg-fluid.row > [class*="col-"],
   [class*="col-"].lg-fluid {
     width: 100%;
@@ -2172,7 +2172,7 @@ html .row {
     display: none !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .hidden-lg {
     display: none !important;
   }
@@ -2355,7 +2355,7 @@ html .row {
     text-align: right !important;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 1399px) {
   .visible-lg {
     display: none !important;
   }
@@ -2775,7 +2775,7 @@ html .row {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .lg-no-padding {
     padding: 0 !important;
   }
@@ -3223,7 +3223,7 @@ html .row {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .lg-no-margin {
     margin: 0 !important;
   }
@@ -7117,7 +7117,7 @@ header.ui-sticky-static {
   background-color: hsla(0, 0%, 0%, 0.35);
 }
 .modal-content.modal-lg {
-  max-width: 1200px;
+  max-width: 1400px;
   min-height: 300px;
 }
 .modal-content.modal-md {
@@ -8749,7 +8749,7 @@ button.ui-dialog-custom:focus {
     height: 360px;
   }
   .ui-photo-preview > img:not(.ui-img-v):not(.ui-preview-zoom) {
-    max-width: 1200px;
+    max-width: 1400px;
   }
 }
 @media (max-width: 959px) {

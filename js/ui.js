@@ -9,7 +9,7 @@ var ui = {
 
         // responsive breakpoints
         xl: 1680,
-        lg: 1200,
+        lg: 1400,
         md: 959,
         sm: 767,
         xs: 480,
