@@ -18,8 +18,8 @@ ui.tooltip = {
     nameClose: 'close',
 
     // styling classnames
-    stylesTarget: 'round ui-ease-tooltip',
-    stylesArrow: '',
+    stylesTarget: 'round ui-theme-red ui-fill-dark-100 ui-ease-tooltip',
+    stylesArrow: 'ui-fill-dark-100',
 
     // values
     scrollbarSize: 15,
