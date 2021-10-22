@@ -1,6 +1,9 @@
 // out: false
 /* typography */ @import (reference) 'ui.less';
 
+@headings-font-family:                  'Archivo', @font-family;
+@headings-letter-spacing:               -0.025em;
+
 @code-font-family:                      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 @font-colors:                           green yellow orange red blue;
 
@@ -118,7 +121,7 @@ body,a { ._color-var(black); }
 .xx-largest { ._font-scale(@xx-largest) !important; }
 
 h1,h2,h3,h4,h5,h6 {
-    font-weight: @font-normal; margin-bottom: 0;
+    font-family: @headings-font-family; font-weight: @font-normal; letter-spacing: @headings-letter-spacing; margin-bottom: 0;
 
     &:not(:last-child) { margin-bottom: @highlight-space; }
     & > small { font-size: @font-size !important; }

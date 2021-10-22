@@ -69,6 +69,13 @@
     <script src="../js/pie-chart.js?v=<?php echo filemtime('../js/pie-chart.js'); ?>"></script>
     <script src="../js/svg-map.js?v=<?php echo filemtime('../js/svg-map.js'); ?>"></script>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Headings Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -186,8 +193,9 @@
 
                     <div class="ui-card round shadow-lg">
                         <div class="ui-card-side padding-30">
-                            <h2 class="margin-10-b">UILab</h2>
-                            <p class="highlight large xs-align-c">CSS &amp; JavaScript powered responsive design system.</p>
+                            <h1 class="font-light">UILab is a modular design system.</h2>
+                            <h4 class="font-bold">For developing web interfaces fastly!</h4>
+                            <span class="sp-15"></span>
                             <div class="form-lg ui-ease-1st-btn">
                                 <a href="?p=icons" class="ui-btn ui-btn-xs-fluid padding-30-h circle ui-theme-sub">
                                     <svg class="icon margin-5-r no-opacity ui-color"><use href="#draw"/></svg> See Icons
