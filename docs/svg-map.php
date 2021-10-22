@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 padding-30">
 
-                <h3 class="align-c">Example</h3>
+                <h3 class="align-c">SVG Map Example 1</h3>
                 <div class="svg-map">
                     <svg viewBox="0 0 940 405" class="ui-theme-sub ui-color ui-ease-1st-svg">
                         <path
@@ -335,7 +335,7 @@
 
                 <span class="sp-30 margin-30-v"></span>
 
-                <h3 class="align-c">Example</h3>
+                <h3 class="align-c">SVG Map Example 2</h3>
                 <div class="svg-map">
                     <svg viewBox="0 0 940 405" class="ui-theme-base ui-color ui-ease-1st-svg">
                         <path

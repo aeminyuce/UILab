@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 padding-30">
 
-                <h4>Responsive Grid</h4>
+                <h3>Responsive Grid</h3>
                 <div class="padding-30-b font-ellipsis ui-theme-sub">
 
                     <div class="row no-fluid">
@@ -213,7 +213,7 @@
                     </div>
                 </div>
 
-                <h4>Static Grid</h4>
+                <h3>Static Grid</h3>
                 <div class="padding-30-b ui-theme-sub">
                     <div class="row">
                         <div class="col-static">
@@ -362,7 +362,7 @@
 
                 </div>
 
-                <h4>no-fluid Column Reset with Row</h4>
+                <h5 class="font-bold margin-5-b">no-fluid Column Reset with Row</h5>
                 <div class="padding-30-b ui-theme-sub">
                     <div class="row no-fluid">
                         <div class="col-8">
@@ -385,7 +385,7 @@
                     </div>
                 </div>
 
-                <h4>no-fluid Column Reset with Columns</h4>
+                <h5 class="font-bold margin-5-b">no-fluid Column Reset with Columns</h5>
                 <div class="padding-30-b ui-theme-sub">
                     <div class="row">
                         <div class="col-8 no-fluid">
@@ -408,7 +408,7 @@
                     </div>
                 </div>
 
-                <h4>xl-fluid Column Reset with Row</h4>
+                <h5 class="font-bold margin-5-b">xl-fluid Column Reset with Row</h5>
                 <div class="padding-30-b ui-theme-sub">
                     <div class="row xl-fluid">
                         <div class="col-8">
@@ -420,7 +420,7 @@
                     </div>
                 </div>
 
-                <h4>xl-fluid Column Reset with Columns</h4>
+                <h5 class="font-bold margin-5-b">xl-fluid Column Reset with Columns</h5>
                 <div class="padding-30-b ui-theme-sub">
                     <div class="row">
                         <div class="col-8 xl-fluid">
@@ -432,7 +432,7 @@
                     </div>
                 </div>
 
-                <h4>lg-fluid Column Reset with Row</h4>
+                <h5 class="font-bold margin-5-b">lg-fluid Column Reset with Row</h5>
                 <div class="padding-30-b ui-theme-sub">
                     <div class="row lg-fluid">
                         <div class="col-8">
@@ -444,7 +444,7 @@
                     </div>
                 </div>
 
-                <h4>lg-fluid Column Reset with Columns</h4>
+                <h5 class="font-bold margin-5-b">lg-fluid Column Reset with Columns</h5>
                 <div class="padding-30-b ui-theme-sub">
                     <div class="row">
                         <div class="col-8 lg-fluid">
@@ -456,7 +456,7 @@
                     </div>
                 </div>
 
-                <h4>sm-fluid Column Reset with Row</h4>
+                <h5 class="font-bold margin-5-b">sm-fluid Column Reset with Row</h5>
                 <div class="padding-30-b ui-theme-sub">
                     <div class="row sm-fluid">
                         <div class="col-8">
@@ -468,7 +468,7 @@
                     </div>
                 </div>
 
-                <h4>sm-fluid Column Reset with Columns</h4>
+                <h5 class="font-bold margin-5-b">sm-fluid Column Reset with Columns</h5>
                 <div class="padding-30-b ui-theme-sub">
                     <div class="row">
                         <div class="col-8 sm-fluid">
@@ -480,7 +480,7 @@
                     </div>
                 </div>
 
-                <h4>xs-fluid Column Reset with Row</h4>
+                <h5 class="font-bold margin-5-b">xs-fluid Column Reset with Row</h5>
                 <div class="padding-30-b ui-theme-sub">
                     <div class="row xs-fluid">
                         <div class="col-8">
@@ -492,7 +492,7 @@
                     </div>
                 </div>
 
-                <h4>xs-fluid Column Reset with Columns</h4>
+                <h5 class="font-bold margin-5-b">xs-fluid Column Reset with Columns</h5>
                 <div class="padding-30-b ui-theme-sub">
                     <div class="row">
                         <div class="col-8 xs-fluid">
@@ -504,7 +504,7 @@
                     </div>
                 </div>
 
-                <h4>Column Wrapping</h4>
+                <h3>Column Wrapping</h3>
                 <div class="padding-30-b ui-theme-sub">
                     <div class="row">
                         <div class="col-3 break-9">
@@ -522,7 +522,7 @@
                     </div>
                 </div>
 
-                <h4>Nesting Columns</h4>
+                <h3>Nesting Columns</h3>
                 <div class="padding-30-b ui-theme-sub">
                     <div class="row">
                         <div class="col-9 ui-fill-dark-100 round">
@@ -539,7 +539,7 @@
                     </div>
                 </div>
 
-                <h4>Column Offsetting</h4>
+                <h3>Column Offsetting</h3>
                 <div class="padding-30-b ui-theme-sub">
                     <div class="row">
                         <div class="col-4">
@@ -557,7 +557,7 @@
                     </div>
                 </div>
 
-                <h4>Column Ordering</h4>
+                <h3>Column Ordering</h3>
                 <div class="padding-30-b ui-theme-sub">
                     <div class="row">
                         <div class="col-9 push-3">

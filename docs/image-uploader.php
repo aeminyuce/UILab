@@ -7,7 +7,7 @@
                 <div class="padding-10-h ui-border-b ui-border-light">
                     <div class="row sm-align-c sm-fluid">
                         <div class="col-6">
-                            <h4 class="margin-10-v sm-no-margin">Image Uploader</h4>
+                            <h3 class="margin-10-v sm-no-margin">Image Uploader</h3>
                         </div>
                         <div class="col-6 align-r sm-no-padding-t form-lg">
 

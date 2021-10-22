@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 padding-30">
 
-                <h4>Horizontal Tabs</h4>
+                <h3>Horizontal Tabs</h3>
                 <div class="tabs padding-30-b ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
                     <div class="row ui-border-b margin-15-b">
 
@@ -89,7 +89,7 @@
                     </div>
                 </div>
 
-                <h4>Tabs with Toggle</h4>
+                <h3>Tabs with Toggle</h3>
                 <div class="tabs padding-30-b ui-ease-tabs" data-ui-classes="ui-stroke ui-color ui-border-lg">
 
                     <div class="margin-10-b md-align-c ui-border-b ui-theme-sub form-lg ui-ease-1st-btn">
@@ -114,7 +114,7 @@
 
                 </div>
 
-                <h4>Side Navigated Tabs</h4>
+                <h3>Side Navigated Tabs</h3>
                 <div class="tabs col-static ui-border-dual margin-30-b ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                     <div class="col-200 padding-1 ui-theme-sub">
@@ -201,7 +201,7 @@
 
                 </div>
 
-                <h4>Inner Tabs</h4>
+                <h3>Inner Tabs</h3>
                 <div class="tabs padding-30-b ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                     <div class="md-align-c ui-theme-sub form-lg ui-ease-1st-btn">
@@ -296,7 +296,7 @@
 
                 </div>
 
-                <h4>Tabs with ID</h4>
+                <h3>Tabs with ID</h3>
                 <div class="tabs padding-30-b form-lg ui-theme-sub ui-ease-tabs">
 
                     <div id="tabID01" class="tab-content open open-ease">
@@ -314,7 +314,7 @@
 
                 </div>
 
-                <h4>Accordion Tabs</h4>
+                <h3>Accordion Tabs</h3>
                 <div class="tabs padding-30-b form-lg ui-theme-sub ui-ease-tabs" data-ui-classes="ui-fill-dark-100">
 
                     <button class="tab tab-toggle ui-btn block align-l margin-1-b round ui-ease-btn">
@@ -353,7 +353,7 @@
 
                 </div>
 
-                <h4>Inner Accordion Tabs</h4>
+                <h3>Inner Accordion Tabs</h3>
                 <div class="tabs padding-30-b form-lg ui-theme-sub ui-ease-tabs" data-ui-classes="ui-fill-dark-100">
 
                     <button class="tab tab-toggle ui-btn block align-l margin-1-b ui-ease-btn">
@@ -448,7 +448,7 @@
 
                 </div>
 
-                <h4>Tabs with Large Icons</h4>
+                <h3>Tabs with Large Icons</h3>
                 <div class="tabs icons-no-opacity padding-30-b ui-ease-tabs" data-ui-classes="ui-color icons-default">
 
                     <div class="font-color-black-muted margin-30-b align-c icons-xxl xs-align-l ui-theme-sub">

@@ -4,7 +4,7 @@
 
             <div class="col-12">
 
-                <h4>Open Modal</h4>
+                <h3>Open Modal</h3>
                 <pre class="round">ui.modal.open({ source, size, type, closable, callback });</pre>
 
                 <dl class="dl-horizontal padding-15 round ui-border">
@@ -173,7 +173,7 @@
 
             <div class="col-12">
 
-                <h4>Close Modal</h4>
+                <h3>Close Modal</h3>
                 <pre class="round">ui.modal.close(callback);</pre>
 
                 <dl class="dl-horizontal padding-15 round ui-border">

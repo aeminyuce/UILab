@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12">
 
-                <h4>Showing/Hiding Loading Masks</h4>
+                <h3>Showing/Hiding Loading Masks</h3>
                 <div class="padding-30-b ui-theme-base">
 
                     <pre class="round">ui.loadingMask.toggle(id);</pre>
@@ -11,7 +11,7 @@
 
                 </div>
 
-                <h4>Loading Mask with Buttons</h4>
+                <h3>Loading Mask with Buttons</h3>
                 <div class="padding-30-b ui-theme-base">
 
                     <div class="form-lg ui-ease-1st-btn">
@@ -33,7 +33,7 @@
 
                 </div>
 
-                <h4>Loading Mask with Forms</h4>
+                <h3>Loading Mask with Forms</h3>
                 <div class="padding-30-b ui-theme-base">
 
                     <div class="form-lg">
@@ -81,7 +81,7 @@
 
                 </div>
 
-                <h4>Loading Mask with Whole Page</h4>
+                <h3>Loading Mask with Whole Page</h4>
                 <div class="padding-30-b ui-theme-base">
 
                     <pre class="round margin-10-t margin-5-b">ui.loadingMask.toggle('.loadingPage');</pre>

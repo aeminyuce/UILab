@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 padding-30">
 
-                <h4 class="align-c">Steps Examples</h4>
+                <h3 class="align-c">Steps Examples</h3>
 
                 <div class="padding-30-b">
                     <ul class="steps-bar">
@@ -112,6 +112,8 @@
                 </div>
 
                 <div class="ui-card padding-30 round shadow-lg">
+
+                    <h5 class="font-bold align-c margin-15-b">Steps in Card</h5>
 
                     <div class="padding-30-b">
                         <ul class="steps-bar">

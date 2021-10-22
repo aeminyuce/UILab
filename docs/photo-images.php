@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 align-c padding-30">
 
-                <h4>Photo Images</h4>
+                <h3>Photo Images</h3>
                 <div class="padding-30-b">
 
                     <img class="img-photo-xs circle" src="img/profile-image.jpg" alt="">
@@ -70,7 +70,9 @@
 
                 </div>
 
-                <h4>Photo Holder</h4>
+                <span class="sp-30"></span>
+
+                <h3>Photo Holder</h3>
                 <div class="padding-30-b">
 
                     <div class="photos-holder hover-scale-more-1st ui-ease-1st-layout">

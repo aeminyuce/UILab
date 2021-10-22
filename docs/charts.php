@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 padding-30-v">
 
-                <h4 class="align-c lg-align-l">Line Charts Examples</h4>
+                <h3>Line Charts Examples</h3>
                 <div class="row row-gap-lg-v">
                     <div class="col-6">
                         <h5 class="font-bold align-c">Line Chart</h5>
@@ -328,7 +328,7 @@
             </div>
             <div class="col-lg-8 push-lg-2 col-12 padding-30-v">
 
-                <h4 class="align-c lg-align-l">Donut Chart Examples</h4>
+                <h3>Donut Chart Examples</h3>
 
                 <div class="row row-gap-lg-v">
                     <div class="col-3 col-xs-6">
@@ -509,7 +509,7 @@
             </div>
             <div class="col-lg-8 push-lg-2 col-12 padding-30-v">
 
-                <h4 class="align-c lg-align-l">Pie Chart Examples</h4>
+                <h3>Pie Chart Examples</h3>
 
                 <div class="row row-gap-lg-v">
                     <div class="col-3 col-xs-6">

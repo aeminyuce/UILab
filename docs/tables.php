@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 padding-30">
 
-                <h4>Tables</h4>
+                <h3>Tables</h3>
                 <table class="table padding-30-b">
                     <caption>Table Caption</caption>
                     <thead>
@@ -36,7 +36,9 @@
                     </tbody>
                 </table>
 
-                <h4>No Separated Rows</h4>
+                <span class="sp-20"></span>
+
+                <h3>No Separated Rows</h3>
                 <table class="table padding-30-b no-separated">
                     <thead>
                         <tr>
@@ -68,7 +70,9 @@
                     </tbody>
                 </table>
 
-                <h4>Striped Rows</h4>
+                <span class="sp-20"></span>
+
+                <h3>Striped Rows</h3>
                 <table class="table padding-30-b table-striped">
                     <thead>
                         <tr>
@@ -100,8 +104,10 @@
                     </tbody>
                 </table>
 
-                <h4>Border Table</h4>
-                <div class="row padding-30-b">
+                <span class="sp-20"></span>
+
+                <h3>Border Table</h3>
+                <div class="row">
                     <div class="col-6">
                         <table class="table padding-30-b ui-border ui-border-lg">
                             <thead>
@@ -184,7 +190,9 @@
                     </div>
                 </div>
 
-                <h4>Hover Rows</h4>
+                <span class="sp-20"></span>
+
+                <h3>Hover Rows</h3>
                 <table class="table padding-30-b table-hover table-striped ui-ease-table">
                     <thead>
                         <tr>
@@ -222,7 +230,9 @@
                     </tbody>
                 </table>
 
-                <h4>Condensed Table</h4>
+                <span class="sp-20"></span>
+
+                <h3>Condensed Table</h3>
                 <table class="table padding-30-b table-condensed">
                     <thead>
                         <tr>
@@ -260,7 +270,9 @@
                     </tbody>
                 </table>
 
-                <h4>Ultra Condensed Table</h4>
+                <span class="sp-20"></span>
+
+                <h3>Ultra Condensed Table</h3>
                 <table class="table padding-30-b table-ultra-condensed">
                     <thead>
                         <tr>
@@ -298,7 +310,9 @@
                     </tbody>
                 </table>
 
-                <h4>Rows Themes</h4>
+                <span class="sp-20"></span>
+
+                <h3>Rows Themes</h3>
                 <table class="table padding-30-b table-hover ui-ease-table">
                     <thead>
                         <tr>
@@ -416,7 +430,9 @@
                     </tbody>
                 </table>
 
-                <h4>Table Sidebar</h4>
+                <span class="sp-20"></span>
+
+                <h3>Table Sidebar</h3>
                 <table class="table padding-30-b table-sidebar">
                     <thead>
                         <tr>
@@ -442,7 +458,9 @@
                     </tbody>
                 </table>
 
-                <h4>Fluid Table</h4>
+                <span class="sp-20"></span>
+
+                <h3>Fluid Table</h3>
                 <div class="table-fluid margin-30-b">
                     <table class="table table-striped">
                         <thead>
@@ -500,7 +518,9 @@
                     </table>
                 </div>
 
-                <h4>Scroll Table</h4>
+                <span class="sp-20"></span>
+
+                <h3>Scroll Table</h3>
                 <div class="table-scroll margin-30-b">
                     <table class="table table-striped">
                         <thead>

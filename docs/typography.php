@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-6 padding-30">
 
-                <h4>Headings</h4>
+                <h3>Headings</h3>
                 <div class="padding-30-b">
                     <h1>H1 Heading <small class="font-color-black-muted">Secondary text</small></h1>
                     <h2>H2 Heading <small class="font-color-black-muted">Secondary text</small></h2>
@@ -13,7 +13,7 @@
                     <h6>H6 Heading <small class="font-color-black-muted">Secondary text</small></h6>
                 </div>
 
-                <h4>Font Colors</h4>
+                <h3>Font Colors</h3>
                 <div class="padding-30-b">
                     <div class="ui-theme-gray ui-fill-dark-100">
                         <span class="font-color-white">.font-color-white</span>
@@ -31,7 +31,7 @@
                     <span class="clearfix"></span>
                 </div>
 
-                <h4>Font Sizes</h4>
+                <h3>Font Sizes</h3>
                 <div class="padding-30-b">
                     <span class="xx-largest">.xx-largest</span>
                     <span class="x-largest">.x-largest</span>
@@ -52,7 +52,7 @@
                     <span class="xx-smallest">.xx-smallest</span>
                 </div>
 
-                <h4>Unordered Lists</h4>
+                <h3>Unordered Lists</h4>
                 <div class="padding-30-b">
                     <ul>
                         <li>Lorem ipsum dolor sit amet</li>
@@ -73,7 +73,7 @@
                     </ul>
                 </div>
 
-                <h4>Ordered Lists</h4>
+                <h3>Ordered Lists</h3>
                 <div class="padding-30-b">
                     <ol>
                         <li>Lorem ipsum dolor sit amet</li>
@@ -87,7 +87,7 @@
                     </ol>
                 </div>
 
-                <h4>Unstyled Lists</h4>
+                <h3>Unstyled Lists</h3>
                 <div class="padding-30-b">
                     <ul class="list-unstyled">
                         <li>Lorem ipsum dolor sit amet</li>
@@ -108,7 +108,7 @@
                     </ul>
                 </div>
 
-                <h4>List Columns</h4>
+                <h3>List Columns</h3>
                 <div class="padding-30-b">
                     <h5 class="font-bold">2 Columns</h5>
                     <ul class="list-unstyled list-column-2">
@@ -171,7 +171,7 @@
                     </ul>
                 </div>
 
-                <h4>List Gaps (only inline lists)</h4>
+                <h3>List Gaps (only inline lists)</h3>
                 <div class="padding-30-b">
                     <ul class="list-inline list-gap-less">
                         <li>Lorem ipsum</li>
@@ -194,7 +194,7 @@
 
                 </div>
 
-                <h4>List Spacers</h4>
+                <h3>List Spacers</h3>
                 <div class="row padding-30-b">
                     <div class="col-12">
                         <h5 class="font-bold">With Inline Lists</h5>
@@ -291,10 +291,12 @@
 
             <div class="col-6 padding-30">
 
-                <h4>Lead</h4>
+                <h3>Lead Text</h3>
                 <p class="font-lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
 
-                <h4>Quotes</h4>
+                <span class="sp-10"></span>
+
+                <h3>Quotes</h3>
                 <div class="padding-30-b">
                     <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q>
                     <span class="sp-5"></span>
@@ -303,7 +305,7 @@
                     <q class="xx-large">Integer pellentesque sed sapien at euismod.</q>
                 </div>
 
-                <h4>Text Elements</h4>
+                <h3>Text Elements</h3>
                 <div class="row padding-30-b">
                     <div class="col-6">
                         <mark>Marked Text</mark>
@@ -341,7 +343,7 @@
                     </div>
                 </div>
 
-                <h4>Alignment Classes</h4>
+                <h3>Alignment Classes</h3>
                 <div class="padding-30-b">
                     <div class="align-l">.align-l</div>
                     <br>
@@ -355,7 +357,7 @@
                     <p class="align-nowrap"><strong>.align-nowrap:</strong> Lorem ipsum dolor sit amet.</p>
                 </div>
 
-                <h4>Transformation Classes</h4>
+                <h3>Text Transformation Classes</h3>
                 <div class="padding-30-b">
                     <span class="lowercase">lowercase</span>
                     <br>
@@ -366,7 +368,7 @@
                     <span class="initialism">initialism</span>
                 </div>
 
-                <h4>Addresses</h4>
+                <h3>Addresses</h3>
                 <div class="padding-30-b">
                     <address>
                         <strong>Twitter, Inc.</strong><br>
@@ -380,7 +382,7 @@
                     </address>
                 </div>
 
-                <h4>Blockquotes</h4>
+                <h3>Blockquotes</h3>
                 <div class="padding-30-b">
                     <blockquote>
                         <p class="highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -396,40 +398,40 @@
                     </blockquote>
                 </div>
 
-                <h4>hr Tag</h4>
+                <h3>&lsaquo;hr&rsaquo; Tag</h3>
                 <div class="padding-30-b">
                     Lorem ipsum dolor sit amet.
                     <hr class="hr">
                     Lorem ipsum dolor sit amet.
                 </div>
 
-                <h4>Inline Code</h4>
+                <h3>Inline Code</h3>
                 <div class="padding-30-b">
                     For example, <code>&lt;section&gt;</code> should be wrapped as inline.
                 </div>
 
-                <h4>User Input Code</h4>
+                <h3>User Input Code</h3>
                 <div class="padding-30-b">
                     To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
                     To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
                 </div>
 
-                <h4>Basic Block Code</h4>
+                <h3>Basic Block Code</h3>
                 <div class="padding-30-b">
                     <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
                 </div>
 
-                <h4>Variables</h4>
+                <h3>Variables</h3>
                 <div class="padding-30-b">
                     <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
                 </div>
 
-                <h4>Sample Output</h4>
+                <h3>Sample Output</h3>
                 <div class="padding-30-b">
                     <samp>This text is meant to be treated as sample output from a computer program.</samp>
                 </div>
 
-                <h4>Description Lists</h4>
+                <h3>Description Lists</h3>
                 <div class="padding-30-b">
                     <dl>
                         <dt>Description lists</dt>
@@ -442,7 +444,7 @@
                     </dl>
                 </div>
 
-                <h4>Horizontal Description Lists</h4>
+                <h3>Horizontal Description Lists</h3>
                 <div class="padding-30-b">
                     <dl class="dl-horizontal">
                         <dt>Description lists</dt>

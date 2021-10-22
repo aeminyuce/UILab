@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 padding-30">
 
-                <h4>Card Example</h4>
+                <h43Card Example</h4>
                 <div class="padding-30-b">
                     <div class="ui-card padding-15 round shadow">
                         <h4 class="margin-15-b">Title</h4>
@@ -11,7 +11,7 @@
                     </div>
                 </div>
 
-                <h4>Card Sides</h4>
+                <h3>Card Sides</h3>
                 <div class="padding-30-b">
 
                     <div class="ui-card round shadow">
@@ -53,7 +53,7 @@
 
                 </div>
 
-                <h4>Card Alerts</h4>
+                <h3>Card Alerts</h3>
                 <div class="padding-30-b">
 
                     <div class="ui-card ui-theme-gray padding-15 round ui-fill-light-300">
@@ -196,7 +196,7 @@
 
                 </div>
 
-                <h4>Card Messages</h4>
+                <h3>Card Messages</h3>
                 <div class="padding-30-b">
 
                     <div class="ui-card-success padding-15 round shadow">

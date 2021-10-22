@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 padding-30">
 
-                <h4>Theme Font Colors</h4>
+                <h3>Theme Font Colors</h3>
 
                 <div class="row row-gap-md highlight xs-fluid">
                     <div class="col-5x col-md-6 col-sm-6">
@@ -53,7 +53,7 @@
             </div>
             <div class="col-12 padding-30">
 
-                <h4>Theme Stroke Colors</h4>
+                <h3>Theme Stroke Colors</h3>
 
                 <div class="row row-gap-md highlight xs-fluid">
                     <div class="col-5x col-md-6 col-sm-6">
@@ -103,7 +103,7 @@
             </div>
             <div class="col-12 padding-30">
 
-                <h4>Theme Background Colors</h4>
+                <h3>Theme Background Colors</h3>
 
                 <b class="margin-5-b block">.ui-theme-gray</b>
                 <div class="row row-gap-xs highlight xs-fluid ui-theme-gray">

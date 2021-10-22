@@ -231,7 +231,7 @@ ajax({
 
                     <span class="sp-15"></span>
 
-                    <span class="margin-5-b block">Global variables returns true/false:</span>
+                    <span class="margin-5-b block">Global variables:</span>
                     <pre class="round variables"></pre>
 
                 </div>

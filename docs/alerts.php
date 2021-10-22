@@ -4,7 +4,7 @@
 
             <div class="col-12">
 
-                <h4>Showing Dialogues</h4>
+                <h3>Showing Dialogues</h3>
                 <pre class="round">ui.alerts.dialog({ msg: '', success: '', error: '', custom: { value: 'button text', value: 'button text' }, callback });</pre>
                 <dl class="dl-horizontal padding-15 round ui-border">
                     <dt>msg</dt>
@@ -36,7 +36,7 @@
                 </dl>
 
             </div>
-            <div class="col-12">
+            <div class="col-12 padding-30-b">
 
                 <b class="margin-5-b block">Examples:</b>
                 <pre class="round margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text'<br>});</pre>
@@ -70,10 +70,9 @@
                 </form>
 
             </div>
-
             <div class="col-12">
 
-                <h4>Showing Messages</h4>
+                <h3>Showing Messages</h3>
                 <pre class="round">ui.alerts.message({ msg: '', pos: '', theme: '' });</pre>
                 <dl class="dl-horizontal padding-15 round ui-border">
                     <dt>msg</dt>

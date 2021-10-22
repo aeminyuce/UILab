@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 padding-30">
 
-                <h4>Dropdowns</h4>
+                <h3>Dropdowns</h3>
                 <div class="row padding-30-b block-2nd form-lg ui-theme-base">
                     <div class="col-3 col-sm-6">
                         <div class="dropdown ui-ease-dropdown">
@@ -80,7 +80,7 @@
                     </div>
                 </div>
 
-                <h4>Dropdown Navs with List Columns</h4>
+                <h5 class="font-bold">Dropdown Navs with List Columns</h5>
                 <div class="row padding-30-b form-lg ui-theme-base">
                     <div class="col-12">
 
@@ -150,7 +150,7 @@
                     </div>
                 </div>
 
-                <h4>Full Horizontal Dropdown Navs</h4>
+                <h5 class="font-bold">Full Horizontal Dropdown Navs</h5>
                 <div class="row padding-30-b form-lg ui-theme-base">
                     <div class="col-12">
 
@@ -191,7 +191,7 @@
                     </div>
                 </div>
 
-                <h4>Dropdowns with Accordion Tabs</h4>
+                <h5 class="font-bold">Dropdowns with Accordion Tabs</h5>
                 <div class="row padding-30-b block-2nd form-lg ui-theme-base">
                     <div class="col-3 col-sm-6">
 
@@ -271,7 +271,7 @@
                     </div>
                 </div>
 
-                <h4>Dropdowns with Holder Content</h4>
+                <h5 class="font-bold">Dropdowns with Holder Content</h5>
                 <div class="row padding-30-b block-2nd form-lg ui-theme-base">
                     <div class="col-3 col-sm-6">
 
@@ -339,7 +339,7 @@
                     </div>
                 </div>
 
-                <h4>Dropdowns Selects</h4>
+                <h5 class="font-bold">Dropdowns Selects</h5>
                 <div class="row padding-30-b block-2nd form-lg">
                     <div class="col-3 col-sm-6">
 
@@ -423,7 +423,7 @@
                     </div>
                 </div>
 
-                <h4>Dropdowns with List Icons</h4>
+                <h5 class="font-bold">Dropdowns with List Icons</h5>
                 <div class="row padding-30-b block-2nd form-lg">
                     <div class="col-3 col-sm-6">
                         <div class="dropdown ui-ease-dropdown">
@@ -483,7 +483,7 @@
                     </div>
                 </div>
 
-                <h4>Dropdowns with Grid List</h4>
+                <h5 class="font-bold">Dropdowns with Grid List</h5>
                 <div class="row padding-30-b block-2nd form-lg">
                     <div class="col-3 col-sm-6">
                         <div class="dropdown ui-ease-dropdown">

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 padding-30-v">
 
-                <h4>Carousel Examples</h4>
+                <h3>Carousel Examples</h3>
                 <div class="padding-30-b">
 
                     <h5 class="font-bold">HTML Content Carousel</h5>

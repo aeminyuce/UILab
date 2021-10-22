@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-12 padding-30">
 
-                <h4>Forms in Grid System</h4>
+                <h3>Forms in Grid System</h3>
                 <div class="row padding-30-b">
                     <div class="col-3">
                         <label class="form-grid">Label</label>
@@ -118,7 +118,7 @@
                     </div>
                 </div>
 
-                <h4>Large Forms</h4>
+                <h3>Large Forms</h3>
                 <div class="form-lg padding-30-b">
                     <div class="row">
                         <div class="col-3">
@@ -194,7 +194,7 @@
                     </div>
                 </div>
 
-                <h4>Autocomplete Forms</h4>
+                <h3>Autocomplete Forms</h3>
                 <form action="#succesful">
                     <div class="row padding-30-b">
 
@@ -218,7 +218,7 @@
                 </form>
 
 
-                <h4>Select Forms</h4>
+                <h3>Select Forms</h3>
                 <div class="padding-30-b">
                     <div class="row">
                         <div class="col-6">
@@ -280,7 +280,7 @@
                     </div>
                 </div>
 
-                <h4>Dual Multi Selects</h4>
+                <h3>Dual Multi Selects</h3>
                 <div class="padding-30-b">
 
                     <form action="#succesful">
@@ -409,7 +409,7 @@
 
                 </div>
 
-                <h4>Textarea Forms</h4>
+                <h3>Textarea Forms</h3>
                 <div class="padding-30-b">
                     <div class="textarea margin-10-b round ui-border-dual ui-ease-form">
                         <textarea placeholder="Placeholder Text"></textarea>
@@ -422,7 +422,7 @@
                     </div>
                 </div>
 
-                <h4>File Input</h4>
+                <h3>File Input</h3>
                 <div class="padding-30-b ui-theme-gray">
                     <div class="file round ui-no-border ui-fill-light-100 ui-ease-form">
                         <input type="file">
@@ -545,7 +545,7 @@
                     </div>
                 </div>
 
-                <h4>Checkboxes and Radios</h4>
+                <h3>Checkboxes and Radios</h3>
                 <div class="padding-30-b">
                     <ul class="list-inline list-gap">
                         <li>
@@ -666,7 +666,7 @@
 
                 </div>
 
-                <h4>Range Forms</h4>
+                <h3>Range Forms</h3>
                 <div class="padding-30-b">
                     <input class="range ui-ease-range" type="range" min="0" max="10" value="0">
                     <span class="sp-10"></span>
@@ -683,7 +683,7 @@
                     <input class="range ui-ease-range" disabled type="range" min="0" max="10" value="5">
                 </div>
 
-                <h4>Inline Forms</h4>
+                <h3>Inline Forms</h3>
                 <div class="padding-30-b">
                     <div class="text margin-10-b round ui-border-dual form-inline ui-ease-form">
                         <input type="text">
@@ -719,7 +719,7 @@
                     </div>
                 </div>
 
-                <h4>Form Icons</h4>
+                <h3>Form Icons</h3>
                 <div class="padding-30-b">
                     <div class="text text-icon-l margin-10-b round ui-border-dual ui-ease-form">
                         <svg class="icon"><use href="#search"/></svg>
@@ -755,7 +755,7 @@
                     </div>
                 </div>
 
-                <h4>Clear with Form Icons</h4>
+                <h3>Clear with Form Icons</h3>
                 <div class="padding-30-b">
                     <form action="#succesful">
                         <div class="text text-icon margin-10-b round ui-border-dual has-clear ui-ease-form">
@@ -783,7 +783,7 @@
                     </form>
                 </div>
 
-                <h4>Submit with Form Icons</h4>
+                <h3>Submit with Form Icons</h3>
                 <div class="padding-30-b">
                     <form action="#succesful">
                         <div class="text text-icon round ui-border-dual ui-ease-form">
@@ -795,7 +795,7 @@
                     </form>
                 </div>
 
-                <h4>Forms with Actions</h4>
+                <h3>Forms with Actions</h3>
                 <div class="padding-30-b">
                     <div class="row row-gap-sm-v no-fluid">
                         <div class="col-6">
@@ -844,7 +844,7 @@
                     </div>
                 </div>
 
-                <h4>Form Holders</h4>
+                <h3>Form Holders</h3>
                 <div class="row padding-30-b">
                     <div class="col-12">
                         <label class="form-label">Form Holder with Grid System</label>
@@ -1294,7 +1294,7 @@
                     </div>
                 </div>
 
-                <h4>Special Forms</h4>
+                <h3>Special Forms</h3>
                 <div class="row padding-30-b">
                     <div class="col-3">
                         <label class="form-grid" >Number Form</label>
@@ -1372,7 +1372,7 @@
                     </div>
                 </div>
 
-                <h4>Required Forms</h4>
+                <h3>Required Forms</h3>
                 <div class="padding-30-b">
                     <form action="#succesful" onsubmit="return ui.alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
                         <div class="row">
@@ -1643,7 +1643,7 @@
                     </form>
                 </div>
 
-                <h4>Forms in Dark Themes</h4>
+                <h3>Forms in Dark Themes</h3>
                 <div class="padding-15 margin-30-b round ui-theme-base ui-fill-dark-100">
 
                     <div class="text form-light margin-10-b round ui-border-dual ui-ease-form">
@@ -1824,7 +1824,7 @@
 
                 </div>
 
-                <h4>Different Form Styles</h4>
+                <h3>Different Form Styles</h3>
                 <div class="row">
                     <div class="col-3">
                         <label class="form-grid">light ui-border with no radius style:</label>

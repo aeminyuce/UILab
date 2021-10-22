@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 padding-30-v">
 
-                <h4>Grid List Examples</h4>
+                <h3>Grid List Examples</h3>
                 <div class="ui-card padding-10 round shadow-lg">
                     <div class="grid-list grid-list-striped grid-hover ui-theme-gray ui-ease-grid-list">
 

@@ -4,7 +4,7 @@
 
             <div class="col-12">
 
-                <h4>Positioning</h4>
+                <h3>Positioning</h3>
                 <div class="ui-ease-1st-btn ui-theme-base padding-30-b">
                     <button class="ui-btn margin-5-b round ui-fill-dark-100" data-ui-tooltip="t" title="Tooltip <b>Top</b>">Tooltip <b>Top</b></button>
                     <button class="ui-btn margin-5-b round ui-fill-dark-100" data-ui-tooltip="b" title="Tooltip <u>Bottom</u>">Tooltip <b>Bottom</b></button>
@@ -17,13 +17,13 @@
                     <button class="ui-btn margin-5-b round ui-fill-dark-100" data-ui-tooltip="bl" title="Tooltip <em>Bottom Left</em>">Tooltip <b>Bottom Left</b></button>
                 </div>
 
-                <h4>Preventing Actions on Touch</h4>
+                <h3>Preventing Actions on Touch</h3>
                 <div class="ui-theme-sub ui-ease-1st-btn padding-30-b">
                     <a href="http://www.google.com/" target="_blank" class="ui-btn margin-5-b round ui-fill-dark-100" data-ui-tooltip="t" title="Open link now!">Link</a>
                     <button onclick="alert('Test');" class="ui-btn margin-5-b round ui-fill-dark-100" data-ui-tooltip="t" title="Run javascript aler now!">Javascript</button>
                 </div>
 
-                <h4>data-ui-only Attributes</h4>
+                <h3>data-ui-only Attributes</h3>
                 <div class="ui-theme-base ui-ease-1st-btn padding-30-b">
                     <a href="http://www.google.com/" target="_blank" class="ui-btn margin-5-b round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="mobile" title="Open link now!">Link (mobile)</a>
                     <a href="http://www.google.com/" target="_blank" class="ui-btn margin-5-b round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="desktop" title="Open link now!">Link (desktop)</a>
@@ -32,7 +32,7 @@
                     <button onclick="alert('Test');" class="ui-btn margin-5-b round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="desktop" title="Run javascript aler now!">Javascript (desktop)</button>
                 </div>
 
-                <h4>Using with Icons</h4>
+                <h3>Using with Icons</h3>
                 <div class="ui-theme-sub icons-xl ui-color padding-30-b hover-t-more-1st ui-ease-1st-layout">
                     <svg class="icon" data-ui-tooltip title="Like!"><use href="#heart"/></svg>
                     <svg class="icon" data-ui-tooltip title="Somewhere on Earth!"><use href="#marker"/></svg>
@@ -40,7 +40,7 @@
                     <svg class="icon" data-ui-tooltip title="Add favorites!"><use href="#star"/></svg>
                 </div>
 
-                <h4>Using with Forms</h4>
+                <h3>Using with Forms</h3>
                 <div class="ui-ease-1st-form padding-30-b form-lg ui-ease-1st-form">
                     <div class="text text-icon round ui-border-dual ui-ease-form">
                         <svg class="icon" data-ui-tooltip="tl" title="Your message here!"><use href="#question-circle-fill"/></svg>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
 
-                <h4>Using with Paragraphs</h4>
+                <h3>Using with Paragraphs</h3>
                 <div class="ui-ease-1st-form">
                     Lorem ipsum dolor sit amet, <b class="ui-theme-red ui-fill-light-100 ui-color" data-ui-tooltip title="<b>Nulla facilisi.</b><br>Sed purus ligula, commodo vel nisi et, lobortis ultrices erat.<br>Maecenas ac venenatis enim.">consectetur adipiscing elit.</b> Integer vitae enim quis ante lacinia tincidunt nec sed metus. Donec vitae diam non mi pharetra venenatis quis id nisl. Nunc auctor efficitur nunc nec porta. Nullam ut interdum nulla. Duis dapibus, lacus sed lacinia aliquam, orci ex congue magna, eget euismod lectus lacus ac turpis. Vestibulum facilisis tempus nunc, nec auctor risus cursus vitae. Nam cursus tristique orci non vehicula.
                     <br><br>

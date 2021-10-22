@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 padding-30">
 
-                <h4>Button Styles</h4>
+                <h3>Button Styles</h3>
                 <div class="row padding-30-b block-2nd form-lg ui-ease-2nd-btn">
                     <div class="col-3 col-sm-6">
                         <a class="ui-btn" href="#">Button</a>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
 
-                <h4>Button Themes</h4>
+                <h3>Button Themes</h3>
                 <div class="row padding-30-b block-2nd form-lg ui-ease-2nd-btn">
                     <div class="col-3 col-sm-6">
                         <a class="ui-btn ui-theme-red ui-fill-dark-100" href="#">Button</a>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
 
-                <h4>Button Sizes</h4>
+                <h3>Button Sizes</h3>
                 <div class="row xs-fluid align-l padding-30-b icons-margin-5-l block-2nd ui-ease-2nd-btn">
                     <div class="col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-lg circle ui-border" href="#">
@@ -147,8 +147,8 @@
                     </div>
                 </div>
 
-                <h4>Square Buttons</h4>
-                <div class="padding-30-b md-align-c ui-theme-sub ui-ease-1st-btn">
+                <h3>Square Buttons</h3>
+                <div class="padding-30-b align-c ui-theme-sub ui-ease-1st-btn">
                     <a class="ui-btn ui-btn-square ui-btn-xxs round ui-fill-dark-100" href="#">
                         <svg class="icon"><use href="#trash"/></svg>
                     </a>
@@ -166,7 +166,7 @@
                     </a>
                 </div>
 
-                <h4>Button Notifiers</h4>
+                <h3>Button Notifiers</h3>
                 <div class="padding-30-b align-c icons-no-opacity">
 
                     <div class="row ui-ease-2nd-btn">
@@ -254,7 +254,7 @@
 
                 </div>
 
-                <h4>Responsive Buttons</h4>
+                <h3>Responsive Buttons</h3>
                 <div class="padding-30-b form-lg ui-ease-1st-btn">
                     <a class="ui-btn ui-btn-square round ui-btn-xs-fluid" href="#">
                         <svg class="icon"><use href="#filter"/></svg>
@@ -264,7 +264,7 @@
                     <a class="ui-btn round ui-btn-xs-fluid" href="#">XS Responsive Button</a>
                 </div>
 
-                <h4>Block Level Buttons</h4>
+                <h3>Block Level Buttons</h3>
                 <div class="row padding-30-b form-lg ui-ease-2nd-btn">
                     <div class="col-6 align-c">
                         <a class="ui-btn ui-btn-xs-fluid round ui-theme-yellow ui-fill-dark-100" href="#">Responsive Button</a>
@@ -274,7 +274,7 @@
                     </div>
                 </div>
 
-                <h4>Active &amp; Passive Buttons</h4>
+                <h3>Active &amp; Passive Buttons</h3>
                 <div class="row padding-30-b block-2nd ui-ease-2nd-btn">
                     <div class="col-3 col-sm-6">
                         <a class="ui-btn ui-btn-active circle" href="#">Active Link</a>
@@ -302,7 +302,7 @@
                     </div>
                 </div>
 
-                <h4>Multi Buttons</h4>
+                <h3>Multi Buttons</h3>
                 <div class="row padding-30-b block-2nd ui-theme-green ui-ease-2nd-btn">
                     <div class="col-3 col-sm-6">
                         <a href="#" class="ui-btn ui-btn-lg ui-btn-multi round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
@@ -318,7 +318,7 @@
                     </div>
                 </div>
 
-                <h4>ui-pagination Buttons</h4>
+                <h3>ui-pagination Buttons</h3>
                 <div class="padding-30-b">
 
                     <div class="ui-pagination align-c ui-theme-sub ui-ease-1st-btn">
@@ -407,7 +407,7 @@
 
                 </div>
 
-                <h4>Button List</h4>
+                <h3>Button List</h3>
                 <div class="row padding-30-b">
                     <div class="col-6">
                         <div class="ui-btn-list align-l icons-margin-10-r form-lg icons-no-opacity ui-theme-green ui-ease-1st-btn">
@@ -463,7 +463,7 @@
                     </div>
                 </div>
 
-                <h4>Button Holder</h4>
+                <h3>Button Holder</h3>
                 <div class="row padding-30-b">
                     <div class="col-6">
                         <div class="ui-btn-holder form-lg ui-theme-base ui-ease-1st-btn">

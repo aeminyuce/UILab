@@ -1,7 +1,7 @@
 <main class="container no-gutter">
     <div class="fixed padding-30-v">
 
-        <h4>Weather Examples</h4>
+        <h3>Weather Examples</h3>
         <div class="row padding-30-b">
             <div class="col-3 col-md-6">
 

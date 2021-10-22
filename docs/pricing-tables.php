@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-12 padding-30-v">
 
-                <h4>Simple Pricing Table</h4>
+                <h3>Simple Pricing Table</h3>
 
                 <div class="row row-gap-lg align-c">
                     <div class="col-4">
@@ -65,7 +65,7 @@
 
                 <span class="sp-30"></span>
 
-                <h4>Detailed Pricing Table</h4>
+                <h3>Detailed Pricing Table</h3>
 
                 <div class="row row-gap-lg align-c">
                     <div class="col-4">

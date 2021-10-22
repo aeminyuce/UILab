@@ -151,7 +151,7 @@
             <!-- sidebar -->
             <div class="col-250 ui-theme-gray ui-fill-light-200 hidden-md">
                 <div class="align-l sm-align-c form-lg add-mobile-menu-r">
-                    <h4 class="font-bold margin-20">UI</h4>
+                    <h3 class="margin-20">Components</h3>
                     <ul class="list-unstyled block-2nd ui-ease-2nd-button">
                         <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=alerts">Alerts</a></li>
                         <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=breadcrumbs">Breadcrumbs</a></li>
@@ -184,7 +184,7 @@
                         <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=typography">Typography</a></li>
                         <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=weather">Weather</a></li>
                     </ul>
-                    <h4 class="font-bold margin-20">Javascript</h4>
+                    <h3 class="margin-20">Javascript</h3>
                     <ul class="list-unstyled block-2nd ui-ease-2nd-button">
                         <li><a class="ui-btn ui-btn-ghost padding-20-h" href="?p=ui">UI JS</a></li>
                     </ul>
@@ -195,7 +195,7 @@
                 <div class="col-12 padding-30">
 
                     <div class="ui-card round shadow-lg">
-                        <div class="ui-card-side padding-30">
+                        <div class="ui-card-side align-c padding-30">
                             <h1 class="font-light">UILab is a modular design system.</h2>
                             <h4 class="font-bold">For developing web interfaces fastly!</h4>
                             <span class="sp-15"></span>
@@ -216,27 +216,27 @@
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=dashboard-app">
                                 <img class="img-fluid round visible-light" src="img/layout-dashboard-app.jpg" alt="Dashboard App">
                                 <img class="img-fluid round visible-dark" src="img/layout-dashboard-app-dark.jpg" alt="Dashboard App Dark">
-                                <span class="inline-block padding-20-v">
+                                <h4 class="inline-block padding-20-v">
                                     Dashboard App
-                                </span>
+                                </h4>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=dashboard">
                                 <img class="img-fluid round visible-light" src="img/layout-dashboard.jpg" alt="Dashboard">
                                 <img class="img-fluid round visible-dark" src="img/layout-dashboard-dark.jpg" alt="Dashboard Dark">
-                                <span class="inline-block padding-20-v">
+                                <h4 class="inline-block padding-20-v">
                                     Dashboard
-                                </span>
+                                </h4>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=sign-up-page">
                                 <img class="img-fluid round visible-light" src="img/layout-sign-up-page.jpg" alt="Sign Up Page">
                                 <img class="img-fluid round visible-dark" src="img/layout-sign-up-page-dark.jpg" alt="Sign Up Page Dark">
-                                <span class="inline-block padding-20-v">
+                                <h4 class="inline-block padding-20-v">
                                     Sign Up Page
-                                </span>
+                                </h4>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
@@ -252,9 +252,9 @@
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=landing-page">
                                 <img class="img-fluid round visible-light" src="img/layout-landing-page.jpg" alt="Landing Page">
                                 <img class="img-fluid round visible-dark" src="img/layout-landing-page-dark.jpg" alt="Landing Page Dark">
-                                <span class="inline-block padding-20-v">
+                                <h4 class="inline-block padding-20-v">
                                     Landing Page
-                                </span>
+                                </h4>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
@@ -270,45 +270,45 @@
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=weather-app">
                                 <img class="img-fluid round visible-light" src="img/layout-weather-app.jpg" alt="Weather App">
                                 <img class="img-fluid round visible-dark" src="img/layout-weather-app-dark.jpg" alt="Weather App Dark">
-                                <span class="inline-block padding-20-v">
+                                <h4 class="inline-block padding-20-v">
                                     Weather App
-                                </span>
+                                </h4>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=admin-panel">
                                 <img class="img-fluid round visible-light" src="img/layout-admin-panel.jpg" alt="Admin Panel">
                                 <img class="img-fluid round visible-dark" src="img/layout-admin-panel-dark.jpg" alt="Admin Panel Dark">
-                                <span class="inline-block padding-20-v">
+                                <h4 class="inline-block padding-20-v">
                                     Admin Panel
-                                </span>
+                                </h4>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=product-listing">
                                 <img class="img-fluid round visible-light" src="img/layout-product-listing.jpg" alt="Product Listing">
                                 <img class="img-fluid round visible-dark" src="img/layout-product-listing-dark.jpg" alt="Product Listing Dark">
-                                <span class="inline-block padding-20-v">
+                                <h4 class="inline-block padding-20-v">
                                     Product Listing
-                                </span>
+                                </h4>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=real-estate-details">
                                 <img class="img-fluid round visible-light" src="img/layout-real-estate-details.jpg" alt="Real Estate Details">
                                 <img class="img-fluid round visible-dark" src="img/layout-real-estate-details-dark.jpg" alt="Real Estate Details Dark">
-                                <span class="inline-block padding-20-v">
+                                <h4 class="inline-block padding-20-v">
                                     Real Estate Details
-                                </span>
+                                </h4>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=photo-albums">
                                 <img class="img-fluid round visible-light" src="img/layout-photo-albums.jpg" alt="Photo Albums">
                                 <img class="img-fluid round visible-dark" src="img/layout-photo-albums-dark.jpg" alt="Photo Albums Dark">
-                                <span class="inline-block padding-20-v">
+                                <h4 class="inline-block padding-20-v">
                                     Photo Albums
-                                </span>
+                                </h4>
                             </a>
                         </div>
                     </div>

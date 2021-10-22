@@ -4,15 +4,15 @@
 <main class="container">
     <div class="row">
         <div class="col-12">
-            <div class="padding-30-v sm-no-padding tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-b ui-border-lg ui-stroke">
+            <div class="padding-30-v sm-no-padding tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke">
 
                 <div class="row ui-border-b margin-15-b">
 
                     <div class="col-4 offset-4 no-padding-b">
                         <div class="ui-btn-holder form-lg ui-ease-1st-btn">
                             <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke active">CSS</button>
-                            <button class="tab ui-btn ui-btn-ghost round-t">JS</button>
-                            <button class="tab ui-btn ui-btn-ghost round-t">Icons</button>
+                            <button class="tab ui-btn ui-btn-ghost round-t ui-border-b">JS</button>
+                            <button class="tab ui-btn ui-btn-ghost round-t ui-border-b">Icons</button>
                         </div>
                     </div>
 
@@ -33,7 +33,7 @@
                     <div class="generate-list row row-gap-sm-v">
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="font-bold">Core</h5>
+                            <h4>Core</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -53,7 +53,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="font-bold">Grid System</h5>
+                            <h4>Grid System</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -73,7 +73,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="font-bold">Utilities</h5>
+                            <h4>Utilities</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -114,7 +114,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="font-bold">Typography</h5>
+                            <h4>Typography</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -144,7 +144,7 @@
                         </div>
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="font-bold">Buttons</h5>
+                            <h4>Buttons</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -185,7 +185,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="font-bold">Forms</h5>
+                            <h4>Forms</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -219,7 +219,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="font-bold">Icons</h5>
+                            <h4>Icons</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -242,7 +242,7 @@
                         </div>
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="font-bold">Layout</h5>
+                            <h4>Layout</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -345,7 +345,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="font-bold">Charts</h5>
+                            <h4>Charts</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -389,7 +389,7 @@
                         </div>
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="font-bold">Components</h5>
+                            <h4>Components</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -479,7 +479,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="font-bold">Themes</h5>
+                            <h4>Themes</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -550,7 +550,7 @@
                     <div class="generate-list row row-gap-sm-v">
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="font-bold">Core</h5>
+                            <h4>Core</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -570,7 +570,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="font-bold">Grid System</h5>
+                            <h4>Grid System</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -590,7 +590,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="font-bold">Buttons</h5>
+                            <h4>Buttons</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -627,7 +627,7 @@
                         </div>
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="font-bold">Forms</h5>
+                            <h4>Forms</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -689,7 +689,7 @@
                                 </label>
                             </div>
 
-                            <h5 class="font-bold">Layout</h5>
+                            <h4>Layout</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -719,7 +719,7 @@
                         </div>
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="font-bold">Components</h5>
+                            <h4>Components</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">
@@ -826,7 +826,7 @@
                         </div>
                         <div class="col-3 col-md-4 col-sm-6">
 
-                            <h5 class="font-bold">Charts</h5>
+                            <h4>Charts</h4>
 
                             <div class="generate-forms margin-20-b block-1st">
                                 <label class="custom margin-5-b opacity ui-ease-opacity">

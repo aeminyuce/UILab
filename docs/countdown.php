@@ -3,7 +3,7 @@
         <div class="row sm-fluid align-c">
             <div class="col-6 offset-3 padding-30-v">
 
-                <h4>Countdown Examples</h4>
+                <h3>Countdown Examples</h3>
 
                 <div class="countdown row row-gap-sm-h no-fluid">
                     <div class="col-3">
