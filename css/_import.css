@@ -8740,13 +8740,13 @@ button.ui-dialog-custom:focus {
     width: 20%;
   }
   .ui-photo-gallery > li .ui-img {
-    height: 180px;
+    height: 208px;
   }
   .ui-photo-gallery.ui-has-cover > li:first-child {
     width: 40%;
   }
   .ui-photo-gallery.ui-has-cover > li:first-child .ui-img {
-    height: 360px;
+    height: 416px;
   }
   .ui-photo-preview > img:not(.ui-img-v):not(.ui-preview-zoom) {
     max-width: 1400px;
@@ -8792,7 +8792,7 @@ button.ui-dialog-custom:focus {
 }
 @media (min-width: 621px) and (max-width: 959px) {
   .ui-photo-gallery > li .ui-img {
-    height: 180px;
+    height: 208px;
   }
 }
 @media (max-width: 620px) {
@@ -8801,7 +8801,7 @@ button.ui-dialog-custom:focus {
     font-size: 14px !important;
   }
   .ui-photo-gallery > li .ui-img {
-    height: 130px;
+    height: 158px;
   }
 }
 @media (min-width: 481px) {
@@ -8812,7 +8812,7 @@ button.ui-dialog-custom:focus {
 }
 @media (max-width: 480px) {
   .ui-photo-gallery > li .ui-img {
-    height: 120px;
+    height: 148px;
   }
   .ui-photo-preview > img.ui-img-v:not(.ui-preview-zoom) {
     width: auto;
