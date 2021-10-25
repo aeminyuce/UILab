@@ -4758,7 +4758,7 @@ dt {
 }
 @media (min-width: 768px) {
   .dropdown .dropdown-menu {
-    min-width: 260px;
+    min-width: 100%;
   }
   .dropdown .dropdown-menu.list-column-2 {
     min-width: 420px;
