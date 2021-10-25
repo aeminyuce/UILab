@@ -116,7 +116,7 @@
 
                         <div class="ui-card full-h round shadow-lg">
                             <div class="ui-card-side padding-15 ui-border-b">
-                                <a href="#" class="ui-btn right circle ui-ease-btn hidden-xs">
+                                <a href="#" class="ui-btn ui-btn-ghost right circle ui-ease-btn hidden-xs">
                                     Details
                                     <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
                                 </a>
