@@ -403,7 +403,7 @@
 <!-- mobile menu -->
 <div class="mobile-menu show-l ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
     <div class="mobile-menu-title padding-20-v x-large ui-border-b">
-        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost round ui-ease-btn close-mobile-menu">
+        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost circle ui-ease-btn close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>
         Categories

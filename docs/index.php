@@ -319,7 +319,7 @@
     <!-- mobile menu -->
     <div class="mobile-menu show-r ui-theme-base ui-ease-layout ui-ease-in-out">
         <div class="mobile-menu-title padding-15-v ui-fill-dark-100">
-            <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost round ui-ease-btn close-mobile-menu">
+            <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost circle ui-ease-btn close-mobile-menu">
                 <svg class="icon no-opacity"><use href="#remove"/></svg>
             </button>
             <img src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">
