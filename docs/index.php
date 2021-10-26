@@ -124,7 +124,7 @@
     <header class="container header form-lg invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-static no-fluid">
-                <div class="col-250 col-xs-150 padding-15">
+                <div class="col-250 col-xs-100 padding-15 no-padding-r">
                     <img class="margin-3-t" src="img/uilab-logo.png" alt="UI lab" srcset="img/uilab-logo@2x.png 2x">
                 </div>
                 <div class="row">
@@ -133,8 +133,11 @@
                             <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
                             <svg class="icon visible-light"><use href="#sun-fill"/></svg>
                         </button>
-                        <a title="GitHub" href="https://github.com/aeminyuce/UILab/" class="ui-btn ui-btn-square ui-btn-ghost circle" target="_blank">
+                        <a title="GitHub" href="https://github.com/aeminyuce/UILab" class="ui-btn ui-btn-square ui-btn-ghost circle" target="_blank">
                             <svg class="icon"><use href="#github"/></svg>
+                        </a>
+                        <a title="GitHub" href="https://dribbble.com/aeminyuce" class="ui-btn ui-btn-square ui-btn-ghost circle" target="_blank">
+                            <svg class="icon"><use href="#dribbble"/></svg>
                         </a>
                         <button class="ui-btn ui-btn-square ui-btn-ghost circle show-mobile-menu-r visible-md">
                             <svg class="icon"><use href="#bars-right"/></svg>

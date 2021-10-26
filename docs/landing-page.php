@@ -904,31 +904,6 @@
 </footer>
 <!-- footer: end -->
 
-<!-- social icons -->
-<div class="set-fixed set-cy set-l icons-lg icons-no-opacity form-lg visible-lg block-1st ui-ease-1st-btn">
-    <a class="ui-btn ui-btn-square margin-1-b" href="#" target="_blank" title="Facebook">
-        <svg class="icon"><use href="#facebook"/></svg>
-    </a>
-    <a class="ui-btn ui-btn-square margin-1-b" href="#" target="_blank" title="Twitter">
-        <svg class="icon"><use href="#twitter"/></svg>
-    </a>
-    <a class="ui-btn ui-btn-square margin-1-b" href="#" target="_blank" title="Instagram">
-        <svg class="icon"><use href="#instagram"/></svg>
-    </a>
-    <a class="ui-btn ui-btn-square margin-1-b" href="#" target="_blank" title="Linkedin">
-        <svg class="icon"><use href="#linkedin"/></svg>
-    </a>
-    <a class="ui-btn ui-btn-square margin-1-b" href="#" target="_blank" title="Google">
-        <svg class="icon"><use href="#google"/></svg>
-    </a>
-    <a class="ui-btn ui-btn-square margin-1-b" href="#" target="_blank" title="Whatsapp">
-        <svg class="icon"><use href="#whatsapp"/></svg>
-    </a>
-    <a class="ui-btn ui-btn-square margin-1-b" href="#" target="_blank" title="Youtube">
-        <svg class="icon"><use href="#youtube"/></svg>
-    </a>
-</div>
-
 <!-- mobile menu -->
 <div class="mobile-menu show-r ui-ease-layout ui-ease-in-out">
     <div class="mobile-menu-title ui-border-b">
