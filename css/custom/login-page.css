@@ -13,10 +13,6 @@
   --ui-login-page-login-btn-bg: linear-gradient(130deg, hsl(135, 62%, 46%), hsl(135, 77%, 31%));
   --ui-login-page-signup-btn-bg: linear-gradient(130deg, hsl(262, 100%, 72%), hsl(331, 60%, 39%));
 }
-html,
-.login-page {
-  height: 100%;
-}
 .login-holder {
   background-image: linear-gradient(110deg, hsl(263, 37%, 42%), hsl(242, 88%, 17%), hsl(331, 73%, 25%));
   background-image: var(--ui-login-page-holder-bg);

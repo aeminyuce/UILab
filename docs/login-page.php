@@ -1,7 +1,7 @@
 <!-- custom CSS -->
 <link rel="stylesheet" href="../css/custom/login-page.css?v=<?php echo filemtime('../css/custom/login-page.css'); ?>"/>
 
-<main class="login-page container full-h no-gutter">
+<main class="container full-h no-gutter set-fixed set-all scroll-v">
 
     <div class="row no-row-gap sm-fluid full-h">
         <div class="login-forms-container col-lg-5 col-6">

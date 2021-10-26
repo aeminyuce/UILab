@@ -4,7 +4,7 @@
 <main class="container no-gutter">
     <div class="col-static no-fluid">
         <div class="col-200 set-relative hidden-md">
-            <div class="sidebar col-200 full-h set-fixed set-l padding-5 ui-fill-dark-100 hidden-md scroll-v">
+            <div class="sidebar col-200 full-h set-fixed set-l padding-5 ui-fill-dark-100 hidden-md scroll-v scrollbar-faded">
 
                 <div class="align-l padding-10 icons-no-opacity icons-margin-10-r form-lg add-mobile-menu-l">
                     <h5 class="font-color-white-50 padding-15 margin-5-b">LIBRARY</h5>
