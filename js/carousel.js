@@ -534,7 +534,9 @@ ui.carousel = {
                     if (contents.length === 0) { return; }
 
                     nav = ui.find('.' + ui.carousel.targetNav, that)[0];
-                    if (nav === undefined) { return; }
+                    navDots = ui.find('.' + ui.carousel.nameDots, nav)[0];
+
+                    if (nav === undefined || navDots === undefined) { return; }
 
                     ui.addClass(that, ui.carousel.nameActive);
                     carouselModifier(j, that, 'static');
@@ -546,8 +548,6 @@ ui.carousel = {
                         nav.style.display = 'none';
 
                     } else { nav.style.display = ''; }
-
-                    navDots = ui.find('.' + ui.carousel.nameDots, nav)[0];
 
                     navDotsHtml = '';
                     navDots.innerHTML = '';
