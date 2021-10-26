@@ -210,21 +210,12 @@
 
                     <div class="row large align-c hover-shadow-2nd hover-t-2nd">
                         <div class="col-4 col-md-6">
-                            <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=dashboard-app">
-                                <img class="img-fluid round-t visible-light" src="img/layout-dashboard-app.jpg" alt="Dashboard App">
-                                <img class="img-fluid round-t visible-dark" src="img/layout-dashboard-app-dark.jpg" alt="Dashboard App Dark">
-                                <h4 class="inline-block padding-20-v">
-                                    Dashboard App
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="col-4 col-md-6">
-                            <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=dashboard">
-                                <img class="img-fluid round-t visible-light" src="img/layout-dashboard.jpg" alt="Dashboard">
-                                <img class="img-fluid round-t visible-dark" src="img/layout-dashboard-dark.jpg" alt="Dashboard Dark">
-                                <h4 class="inline-block padding-20-v">
-                                    Dashboard
-                                </h4>
+                            <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=login-page">
+                                <img class="img-fluid round-t visible-light" src="img/layout-login-page.jpg" alt="Login Page">
+                                <img class="img-fluid round-t visible-dark" src="img/layout-login-page-dark.jpg" alt="Login Page Dark">
+                                <span class="inline-block padding-20-v">
+                                    Login Page
+                                </span>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
@@ -237,12 +228,12 @@
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
-                            <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=login-page">
-                                <img class="img-fluid round-t visible-light" src="img/layout-login-page.jpg" alt="Login Page">
-                                <img class="img-fluid round-t visible-dark" src="img/layout-login-page-dark.jpg" alt="Login Page Dark">
-                                <span class="inline-block padding-20-v">
-                                    Login Page
-                                </span>
+                            <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=dashboard">
+                                <img class="img-fluid round-t visible-light" src="img/layout-dashboard.jpg" alt="Dashboard">
+                                <img class="img-fluid round-t visible-dark" src="img/layout-dashboard-dark.jpg" alt="Dashboard Dark">
+                                <h4 class="inline-block padding-20-v">
+                                    Dashboard
+                                </h4>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
@@ -261,24 +252,6 @@
                                 <span class="inline-block padding-20-v">
                                     Movie App
                                 </span>
-                            </a>
-                        </div>
-                        <div class="col-4 col-md-6">
-                            <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=weather-app">
-                                <img class="img-fluid round-t visible-light" src="img/layout-weather-app.jpg" alt="Weather App">
-                                <img class="img-fluid round-t visible-dark" src="img/layout-weather-app-dark.jpg" alt="Weather App Dark">
-                                <h4 class="inline-block padding-20-v">
-                                    Weather App
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="col-4 col-md-6">
-                            <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=admin-panel">
-                                <img class="img-fluid round-t visible-light" src="img/layout-admin-panel.jpg" alt="Admin Panel">
-                                <img class="img-fluid round-t visible-dark" src="img/layout-admin-panel-dark.jpg" alt="Admin Panel Dark">
-                                <h4 class="inline-block padding-20-v">
-                                    Admin Panel
-                                </h4>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
