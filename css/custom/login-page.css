@@ -97,7 +97,7 @@ html,
   background-image: linear-gradient(130deg, hsl(261, 37%, 56%), hsl(331, 73%, 25%));
   background-image: var(--ui-login-page-signup-btn-bg);
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .login-forms-container {
     padding: 8% 0 8% 14% !important;
   }
@@ -105,7 +105,7 @@ html,
     padding: 8% 14% 8% 0 !important;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1399px) {
   .login-forms-container {
     padding: 50px 0 10px 10px !important;
   }

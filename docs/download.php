@@ -282,13 +282,6 @@
                                 </label>
                                 <label class="custom">
                                     <span class="switch-custom round ui-border-dual ui-ease-form">
-                                        <input type="checkbox" name="page social" value="../css/page-social">
-                                        <i class="state ui-fill-dark-100"></i>
-                                    </span>
-                                    Page Social
-                                </label>
-                                <label class="custom">
-                                    <span class="switch-custom round ui-border-dual ui-ease-form">
                                         <input type="checkbox" name="loading mask" value="../css/loading-mask">
                                         <i class="state ui-fill-dark-100"></i>
                                     </span>

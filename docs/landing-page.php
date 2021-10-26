@@ -904,27 +904,27 @@
 </footer>
 <!-- footer: end -->
 
-<!-- page social -->
-<div class="page-social icons-lg icons-no-opacity form-lg ui-ease-1st-btn">
-    <a class="ui-btn ui-btn-square ui-btn-facebook" href="#" target="_blank" data-ui-tooltip="r" title="Facebook">
+<!-- social icons -->
+<div class="set-fixed set-cy set-l icons-lg icons-no-opacity form-lg visible-lg block-1st ui-ease-1st-btn">
+    <a class="ui-btn ui-btn-square margin-1-b" href="#" target="_blank" title="Facebook">
         <svg class="icon"><use href="#facebook"/></svg>
     </a>
-    <a class="ui-btn ui-btn-square ui-btn-twitter" href="#" target="_blank" data-ui-tooltip="r" title="Twitter">
+    <a class="ui-btn ui-btn-square margin-1-b" href="#" target="_blank" title="Twitter">
         <svg class="icon"><use href="#twitter"/></svg>
     </a>
-    <a class="ui-btn ui-btn-square ui-btn-instagram" href="#" target="_blank" data-ui-tooltip="r" title="Instagram">
+    <a class="ui-btn ui-btn-square margin-1-b" href="#" target="_blank" title="Instagram">
         <svg class="icon"><use href="#instagram"/></svg>
     </a>
-    <a class="ui-btn ui-btn-square ui-btn-linkedin" href="#" target="_blank" data-ui-tooltip="r" title="Linkedin">
+    <a class="ui-btn ui-btn-square margin-1-b" href="#" target="_blank" title="Linkedin">
         <svg class="icon"><use href="#linkedin"/></svg>
     </a>
-    <a class="ui-btn ui-btn-square ui-btn-google" href="#" target="_blank" data-ui-tooltip="r" title="Google">
+    <a class="ui-btn ui-btn-square margin-1-b" href="#" target="_blank" title="Google">
         <svg class="icon"><use href="#google"/></svg>
     </a>
-    <a class="ui-btn ui-btn-square ui-btn-whatsapp" href="#" target="_blank" data-ui-tooltip="r" title="Whatsapp">
+    <a class="ui-btn ui-btn-square margin-1-b" href="#" target="_blank" title="Whatsapp">
         <svg class="icon"><use href="#whatsapp"/></svg>
     </a>
-    <a class="ui-btn ui-btn-square ui-btn-youtube" href="#" target="_blank" data-ui-tooltip="r" title="Youtube">
+    <a class="ui-btn ui-btn-square margin-1-b" href="#" target="_blank" title="Youtube">
         <svg class="icon"><use href="#youtube"/></svg>
     </a>
 </div>

@@ -167,7 +167,7 @@ header {
     max-width: 1480px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   header.ui-sticky.sidebar-opened {
     width: calc(100% - 250px);
     left: 250px;
