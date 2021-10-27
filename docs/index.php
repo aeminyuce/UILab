@@ -216,9 +216,9 @@
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=login-page">
                                 <img class="img-fluid round-t visible-light" src="img/layout-login-page.jpg" alt="Login Page">
                                 <img class="img-fluid round-t visible-dark" src="img/layout-login-page-dark.jpg" alt="Login Page Dark">
-                                <span class="inline-block padding-20-v">
+                                <h4 class="inline-block padding-20-v">
                                     Login Page
-                                </span>
+                                </h4>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
@@ -252,9 +252,9 @@
                             <a class="ui-card padding-2 round shadow-lg ui-ease-layout" href="?l=movie-app">
                                 <img class="img-fluid round-t visible-light" src="img/layout-movie-app.jpg" alt="Movie App">
                                 <img class="img-fluid round-t visible-dark" src="img/layout-movie-app-dark.jpg" alt="Movie App Dark">
-                                <span class="inline-block padding-20-v">
+                                <h4 class="inline-block padding-20-v">
                                     Movie App
-                                </span>
+                                </h4>
                             </a>
                         </div>
                         <div class="col-4 col-md-6">
