@@ -1367,7 +1367,7 @@
                             <button type="button" title="Toggle Password" class="show-pass">
                                 <svg class="icon"><use href="#eye-fill"/></svg>
                             </button>
-                            <input type="password" placeholder="Toggle Password Example" autocomplete="current-password">
+                            <input type="password" placeholder="Toggle Password Example">
                         </div>
                     </div>
                 </div>
@@ -1433,7 +1433,7 @@
                             </div>
                             <div class="col-9">
                                 <div class="text round ui-border-dual ui-ease-form">
-                                    <input class="required" type="password" minlength="8" autocomplete="current-password">
+                                    <input class="required" type="password" minlength="8">
                                 </div>
                                 <p class="required-msg">Minimum length is 8 characters.</p>
                                 <i class="hint font-color-black-muted">* Required</i>

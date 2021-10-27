@@ -8,133 +8,152 @@
 
                     <h5 class="font-bold">HTML Content Carousel</h5>
 
-                    <div class="ui-carousel" data-ui-col="1" data-ui-slide="4000">
-                        <div class="ui-carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
+                    <div class="ui-carousel padding-10 round shadow-in-sm ui-theme-gray ui-fill-light-100" data-ui-col="1" data-ui-slide="4000">
+                        <div class="ui-carousel-slider form-lg ui-ease-2nd-layout ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
-                            <div class="ui-slide-content padding-15 padding-30-b" data-ui-animate="10">
-                                <div class="ui-card padding-15 shadow-lg">
-                                    <div class="row row-gap-lg ui-theme-gray ui-fill-light-100 full-h">
-                                        <div class="col-4">
-                                            <div class="row row-gap-xs ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
-                                                <div class="col-6 no-fluid">
+                            <div class="ui-slide-content padding-10-h" data-ui-animate="10">
+
+                                    <div class="row sm-fluid">
+                                        <div class="col-4 col-md-6">
+
+                                            <div class="row row-gap-xs no-fluid ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
+                                                <div class="col-6">
                                                     <img class="ui-carousel-animate ui-bring-back img-fluid" src="img/image_09.jpg" alt="">
                                                 </div>
-                                                <div class="col-6 no-fluid">
+                                                <div class="col-6">
                                                     <img class="ui-carousel-animate ui-bring-front img-fluid" src="img/image_05.jpg" alt="">
                                                 </div>
                                                 <div class="col-4">
                                                     <img class="ui-carousel-animate ui-bring-l img-fluid" src="img/image_02.jpg" alt="">
                                                 </div>
-                                                <div class="col-4 col-md-6">
+                                                <div class="col-4">
                                                     <img class="ui-carousel-animate ui-bring-b img-fluid" src="img/image_03.jpg" alt="">
                                                 </div>
-                                                <div class="col-4 col-md-6">
+                                                <div class="col-4">
                                                     <img class="ui-carousel-animate ui-bring-r img-fluid" src="img/image_01.jpg" alt="">
                                                 </div>
                                             </div>
+
                                         </div>
-                                        <div class="col-8 ui-carousel-animate ui-bring-r ui-ease-layout ui-ease-slow">
-                                            <h3 class="margin-15-v">Carousel Html Title</h3>
-                                            <p class="large">
-                                                Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
-                                                <span class="sp-10"></span>
-                                                Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
-                                                <span class="sp-15"></span>
-                                                <a href="#" class="ui-btn ui-btn-xs-fluid ui-btn-lg padding-20-h ui-ease-btn">
-                                                    Continue
-                                                    <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
-                                                </a>
-                                            </p>
+                                        <div class="col-8 col-md-6">
+
+                                            <div class="ui-carousel-animate ui-bring-r ui-ease-layout ui-ease-slow">
+                                                <h3>1- Carousel Html Title</h3>
+                                                <p class="large">
+                                                    Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
+                                                    <br><br>
+                                                    Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
+                                                    <br><br>
+
+                                                    <a href="#" class="ui-btn ui-btn-xs-fluid padding-30-h ui-theme-sub ui-fill-dark-100 circle ui-ease-btn">
+                                                        Continue
+                                                        <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
+                                                    </a>
+                                                </p>
+                                            </div>
+
                                         </div>
                                     </div>
-                                </div>
+
                             </div>
+                            <div class="ui-slide-content padding-10-h" data-ui-animate="10">
 
-                            <div class="ui-slide-content padding-15 padding-30-b" data-ui-animate="10">
-                                <div class="ui-card padding-15 shadow-lg">
-                                    <div class="row row-gap-lg ui-theme-gray ui-fill-light-100 full-h">
-                                        <div class="col-4">
-                                            <div class="row row-gap-xs ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
-                                                <div class="col-6 no-fluid">
+                                    <div class="row sm-fluid">
+                                        <div class="col-4 col-md-6">
+
+                                            <div class="row row-gap-xs no-fluid ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
+                                                <div class="col-6">
                                                     <img class="ui-carousel-animate ui-bring-back img-fluid" src="img/image_09.jpg" alt="">
                                                 </div>
-                                                <div class="col-6 no-fluid">
+                                                <div class="col-6">
                                                     <img class="ui-carousel-animate ui-bring-front img-fluid" src="img/image_05.jpg" alt="">
                                                 </div>
                                                 <div class="col-4">
                                                     <img class="ui-carousel-animate ui-bring-l img-fluid" src="img/image_02.jpg" alt="">
                                                 </div>
-                                                <div class="col-4 col-md-6">
+                                                <div class="col-4">
                                                     <img class="ui-carousel-animate ui-bring-b img-fluid" src="img/image_03.jpg" alt="">
                                                 </div>
-                                                <div class="col-4 col-md-6">
+                                                <div class="col-4">
                                                     <img class="ui-carousel-animate ui-bring-r img-fluid" src="img/image_01.jpg" alt="">
                                                 </div>
                                             </div>
+
                                         </div>
-                                        <div class="col-8 ui-carousel-animate ui-bring-r ui-ease-layout ui-ease-slow">
-                                            <h3 class="margin-15-v">Carousel Html Title</h3>
-                                            <p class="large">
-                                                Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
-                                                <span class="sp-10"></span>
-                                                Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
-                                                <span class="sp-15"></span>
-                                                <a href="#" class="ui-btn ui-btn-xs-fluid ui-btn-lg padding-20-h ui-ease-btn">
-                                                    Continue
-                                                    <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
-                                                </a>
-                                            </p>
+                                        <div class="col-8 col-md-6">
+
+                                            <div class="ui-carousel-animate ui-bring-r ui-ease-layout ui-ease-slow">
+                                                <h3>2- Carousel Html Title</h3>
+                                                <p class="large">
+                                                    Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
+                                                    <br><br>
+                                                    Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
+                                                    <br><br>
+
+                                                    <a href="#" class="ui-btn ui-btn-xs-fluid padding-30-h ui-theme-sub ui-fill-dark-100 circle ui-ease-btn">
+                                                        Continue
+                                                        <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
+                                                    </a>
+                                                </p>
+                                            </div>
+
                                         </div>
                                     </div>
-                                </div>
+
                             </div>
+                            <div class="ui-slide-content padding-10-h" data-ui-animate="10">
 
-                            <div class="ui-slide-content padding-15 padding-30-b" data-ui-animate="10">
-                                <div class="ui-card padding-15 shadow-lg">
-                                    <div class="row row-gap-lg ui-theme-gray ui-fill-light-100 full-h">
-                                        <div class="col-4 col-md-3">
-                                            <div class="row row-gap-xs ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
-                                                <div class="col-6 no-fluid">
+                                    <div class="row sm-fluid">
+                                        <div class="col-4 col-md-6">
+
+                                            <div class="row row-gap-xs no-fluid ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
+                                                <div class="col-6">
                                                     <img class="ui-carousel-animate ui-bring-back img-fluid" src="img/image_09.jpg" alt="">
                                                 </div>
-                                                <div class="col-6 no-fluid">
+                                                <div class="col-6">
                                                     <img class="ui-carousel-animate ui-bring-front img-fluid" src="img/image_05.jpg" alt="">
                                                 </div>
                                                 <div class="col-4">
                                                     <img class="ui-carousel-animate ui-bring-l img-fluid" src="img/image_02.jpg" alt="">
                                                 </div>
-                                                <div class="col-4 col-md-6">
+                                                <div class="col-4">
                                                     <img class="ui-carousel-animate ui-bring-b img-fluid" src="img/image_03.jpg" alt="">
                                                 </div>
-                                                <div class="col-4 col-md-6">
+                                                <div class="col-4">
                                                     <img class="ui-carousel-animate ui-bring-r img-fluid" src="img/image_01.jpg" alt="">
                                                 </div>
                                             </div>
+
                                         </div>
-                                        <div class="col-8 col-md-9 ui-carousel-animate ui-bring-r ui-ease-layout ui-ease-slow">
-                                            <h3 class="margin-15-v">Carousel Html Title</h3>
-                                            <p class="large">
-                                                Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
-                                                <span class="sp-10"></span>
-                                                Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
-                                                <span class="sp-15"></span>
-                                                <a href="#" class="ui-btn ui-btn-xs-fluid ui-btn-lg padding-20-h ui-ease-btn">
-                                                    Continue
-                                                    <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
-                                                </a>
-                                            </p>
+                                        <div class="col-8 col-md-6">
+
+                                            <div class="ui-carousel-animate ui-bring-r ui-ease-layout ui-ease-slow">
+                                                <h3>3- Carousel Html Title</h3>
+                                                <p class="large">
+                                                    Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
+                                                    <br><br>
+                                                    Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
+                                                    <br><br>
+
+                                                    <a href="#" class="ui-btn ui-btn-xs-fluid padding-30-h ui-theme-sub ui-fill-dark-100 circle ui-ease-btn">
+                                                        Continue
+                                                        <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
+                                                    </a>
+                                                </p>
+                                            </div>
+
                                         </div>
                                     </div>
-                                </div>
+
                             </div>
 
                         </div>
-                        <div class="ui-carousel-nav ui-ease-1st-btn">
-                            <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square">
+                        <div class="ui-carousel-nav form-lg margin-10-b ui-ease-1st-btn">
+                            <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
                                 <svg class="icon"><use href="#angle-left"/></svg>
                             </button>
                             <span class="ui-dots font-color-black-muted"></span>
-                            <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square">
+                            <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square round">
                                 <svg class="icon"><use href="#angle-right"/></svg>
                             </button>
                         </div>

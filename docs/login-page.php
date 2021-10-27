@@ -15,7 +15,7 @@
                     <label class="form-label font-color-black-50">User Name</label>
                     <div class="text text-icon round ui-border-dual ui-ease-form">
                         <svg class="icon"><use href="#user"/></svg>
-                        <input class="required" type="text" placeholder="Enter user name" minlength="3" autocomplete="username">
+                        <input class="required" type="text" placeholder="Enter user name" minlength="3" autofocus>
                     </div>
                     <p class="required-msg">Enter user name.</p>
 
@@ -26,7 +26,7 @@
                         <button type="button" title="Toggle Password" class="show-pass">
                             <svg class="icon"><use href="#eye-fill"/></svg>
                         </button>
-                        <input class="required" type="password" placeholder="Enter password" minlength="8" autocomplete="current-password">
+                        <input class="required" type="password" placeholder="Enter password" minlength="8">
                     </div>
                     <p class="required-msg">Minimum length is 8 characters.</p>
 
