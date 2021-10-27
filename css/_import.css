@@ -8043,6 +8043,10 @@ button.ui-dialog-custom:focus {
 .ui-carousel-animate:not(.ui-show) {
   opacity: 0;
 }
+.ui-carousel.ui-pause-animates .ui-carousel-animate {
+  transition-property: none !important;
+  animation-play-state: paused !important;
+}
 .ui-carousel-gallery .ui-detail {
   min-height: 210px;
   position: relative;

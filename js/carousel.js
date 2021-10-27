@@ -13,10 +13,11 @@ ui.carousel = {
     targetNav: 'ui-carousel-nav',
 
     // main classnames
-    nameAnimate: 'ui-carousel-animate',
     nameTouchMove: 'ui-carousel-touchmove',
-
     nameHalfSize: 'ui-half-sized',
+
+    nameAnimate: 'ui-carousel-animate',
+    namePauseAnimates: 'ui-pause-animates',
 
     nameContent: 'ui-slide-content',
 
@@ -153,6 +154,10 @@ ui.carousel = {
 
             if (elems.length === 0) { return; }
 
+            if (ui.closest(content, '.' + ui.carousel.namePauseAnimates)[0] !== undefined) { // detect carousel is resizing
+                return;
+            }
+
             if (type === 'static') {
                 ui.removeClass(elems, ui.carousel.nameShow);
             }
@@ -165,6 +170,7 @@ ui.carousel = {
 
                         ui.addClass(elems[i], ui.carousel.nameShow);
                         i += 1;
+
                         if (i < elems.length) { show(); }
 
                     }, time);
@@ -273,6 +279,101 @@ ui.carousel = {
 
     }
 
+    // get carousel slide speed
+    function getSlideSpeed(slider, ease, i) {
+
+        ease = ui.globals.ease;
+
+        if (ui.hasClass(slider, ui.carousel.nameEaseFast)) {
+            ease = ui.globals.fast;
+
+        } else if (ui.hasClass(slider, ui.carousel.nameEaseSlow)) {
+            ease = ui.globals.slow;
+
+        } else if (ui.hasClass(slider, ui.carousel.nameEaseSlow2x)) {
+            ease = ui.globals.slow2x;
+
+        } else if (ui.hasClass(slider, ui.carousel.nameEaseSlow3x)) {
+            ease = ui.globals.slow3x;
+
+        } else if (ui.hasClass(slider, ui.carousel.nameEaseSlow4x)) {
+            ease = ui.globals.slow4x;
+
+        } else if (ui.hasClass(slider, ui.carousel.nameEaseSlow5x)) {
+            ease = ui.globals.slow5x;
+        }
+
+        contentsEase[i] = ease;
+
+    }
+
+    carouselNav = function (that, direction) {
+
+        var col, slider, nav, contents, i, navDots, navDotsEl, slide, halfSized;
+
+        nav = ui.find('.' + ui.carousel.targetNav, that)[0];
+        if (nav === undefined) { return; }
+
+        slider = ui.find('.' + ui.carousel.targetSlider, that);
+        contents = ui.find('.' + ui.carousel.nameContent, slider[0]);
+
+        if (contents.length === 0) { return; }
+
+        i = Array.prototype.slice.call(ui.find('.' + ui.carousel.target)).indexOf(that);
+
+        navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that);
+        navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
+
+        col = getCols(i); // get responsive cols
+
+        if (direction === 'next') {
+
+            counts[i] += 1;
+
+            if (counts[i] > contents.length - col) {
+                counts[i] = 0;
+            }
+
+        } else if (direction === 'prev') {
+
+            counts[i] -= 1;
+
+            if (counts[i] < 0) {
+                counts[i] = 0;
+            }
+
+        }
+
+        that.setAttribute(ui.carousel.dataContent, (counts[i] + 1));
+
+        ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
+        ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
+
+        filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
+        slide = counts[i] * contents[0].offsetWidth;
+
+        halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
+
+        if (halfSized && (counts[i] === contents.length - col)) {
+            slide += contents[0].offsetWidth * ui.carousel.halfSize;
+        }
+
+        slider[0].style.transform = 'translateX(-' + slide + 'px)';
+        getSlideSpeed(slider, contentsEase[i], i); // get carousel slide speed
+
+        // detect carousel animates
+        if (contents.length > 1 && contents.length !== col) { // stop reloading animates when content length is not enough
+
+            ui.each(contents,
+
+                function () {
+                    carouselAnimate(this, contentsEase[i], 'static');
+                });
+
+        }
+
+    };
+
     function carouselResizer(e) {
 
         var that, slider;
@@ -286,9 +387,10 @@ ui.carousel = {
 
                 function (i) {
 
-                    slider = ui.find('.' + ui.carousel.targetSlider, this)[0];
-
+                    ui.addClass(this, ui.carousel.namePauseAnimates);
                     carouselModifier(i, this, 'resize');
+
+                    slider = ui.find('.' + ui.carousel.targetSlider, this)[0];
 
                     this.style.transitionDuration = '0s';
                     slider.style.transitionDuration = '0s';
@@ -305,7 +407,9 @@ ui.carousel = {
 
                 function (i) {
 
-                    if (autoTimer[i] !== null) {
+                    ui.removeClass(this, ui.carousel.namePauseAnimates);
+
+                    if (autoTimer[i] !== null && autoTimer[i] !== undefined) {
 
                         clearInterval(autoSlider[i]);
 
@@ -330,103 +434,8 @@ ui.carousel = {
 
         var carousels, carouselStart, carouselStop;
 
-        // get carousel slide speed
-        function getSlideSpeed(slider, ease, i) {
-
-            ease = ui.globals.ease;
-
-            if (ui.hasClass(slider, ui.carousel.nameEaseFast)) {
-                ease = ui.globals.fast;
-
-            } else if (ui.hasClass(slider, ui.carousel.nameEaseSlow)) {
-                ease = ui.globals.slow;
-
-            } else if (ui.hasClass(slider, ui.carousel.nameEaseSlow2x)) {
-                ease = ui.globals.slow2x;
-
-            } else if (ui.hasClass(slider, ui.carousel.nameEaseSlow3x)) {
-                ease = ui.globals.slow3x;
-
-            } else if (ui.hasClass(slider, ui.carousel.nameEaseSlow4x)) {
-                ease = ui.globals.slow4x;
-
-            } else if (ui.hasClass(slider, ui.carousel.nameEaseSlow5x)) {
-                ease = ui.globals.slow5x;
-            }
-
-            contentsEase[i] = ease;
-
-        }
-
         carousels = ui.find('.' + ui.carousel.target);
         if (carousels.length > 0) {
-
-            carouselNav = function (that, direction) {
-
-                var col, slider, nav, contents, i, navDots, navDotsEl, slide, halfSized;
-
-                nav = ui.find('.' + ui.carousel.targetNav, that)[0];
-                if (nav === undefined) { return; }
-
-                slider = ui.find('.' + ui.carousel.targetSlider, that);
-                contents = ui.find('.' + ui.carousel.nameContent, slider[0]);
-
-                if (contents.length === 0) { return; }
-
-                i = Array.prototype.slice.call(ui.find('.' + ui.carousel.target)).indexOf(that);
-
-                navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that);
-                navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
-
-                col = getCols(i); // get responsive cols
-
-                if (direction === 'next') {
-
-                    counts[i] += 1;
-
-                    if (counts[i] > contents.length - col) {
-                        counts[i] = 0;
-                    }
-
-                } else if (direction === 'prev') {
-
-                    counts[i] -= 1;
-
-                    if (counts[i] < 0) {
-                        counts[i] = 0;
-                    }
-
-                }
-
-                that.setAttribute(ui.carousel.dataContent, (counts[i] + 1));
-
-                ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
-                ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
-
-                filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
-                slide = counts[i] * contents[0].offsetWidth;
-
-                halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
-
-                if (halfSized && (counts[i] === contents.length - col)) {
-                    slide += contents[0].offsetWidth * ui.carousel.halfSize;
-                }
-
-                slider[0].style.transform = 'translateX(-' + slide + 'px)';
-                getSlideSpeed(slider, contentsEase[i], i); // get carousel slide speed
-
-                // detect carousel animates
-                if (contents.length > 1 && contents.length !== col) { // stop reloading animates when content length is not enough
-
-                    ui.each(contents,
-
-                        function () {
-                            carouselAnimate(this, contentsEase[i], 'static');
-                        });
-
-                }
-
-            };
 
             // load carousels
             ui.each(carousels,
@@ -635,7 +644,6 @@ ui.carousel = {
                 clearInterval(autoSlider[i]);
 
             };
-
 
             ui.on(document,
                 'mouseenter',

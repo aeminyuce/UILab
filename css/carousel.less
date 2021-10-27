@@ -74,6 +74,9 @@
 	}
 
 	&-animate:not(.ui-show) { opacity: 0; }
+	&.ui-pause-animates {
+		.ui-carousel-animate { transition-property: none !important; animation-play-state: paused !important; }
+	}
 
 	&-gallery {
 		.ui-detail {
@@ -114,7 +117,7 @@
 	}
 }
 
-._create-bring-animations(@size: bring-) {
+._create-bring-animates(@size: bring-) {
 	.ui-@{size} {
 		&front:not(.ui-show) { transform: scale(@carousel-bring-front-size); }
 		&back:not(.ui-show) { transform: scale(@carousel-bring-back-size); }
@@ -126,14 +129,14 @@
 	}
 }
 
-._create-bring-animations();
+._create-bring-animates();
 
 @media (@md-finish) {
-	._create-bring-animations(md-bring-);
+	._create-bring-animates(md-bring-);
 }
 @media (@sm-finish) {
-	._create-bring-animations(sm-bring-);
+	._create-bring-animates(sm-bring-);
 }
 @media (@xs-finish) {
-	._create-bring-animations(xs-bring-);
+	._create-bring-animates(xs-bring-);
 }
