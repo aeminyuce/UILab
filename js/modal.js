@@ -239,6 +239,8 @@ ui.modal = {
 
                 }, ui.globals.ease);
 
+                ui.trigger(document, ui.globals.eventDomChange); // set custom event
+
             }, ui.globals.ease);
 
         };
