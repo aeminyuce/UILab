@@ -256,7 +256,7 @@ ui.carousel = {
         if (contents.length / col === 1) { // check nav is active
             counts[i] = 0;
 
-        } else if (counts[i] > col) { // check current count larger than current col size
+        } else if (col !== 1 && counts[i] > col) { // check current count larger than current col size
             counts[i] = col;
         }
 
