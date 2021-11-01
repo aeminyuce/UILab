@@ -388,7 +388,10 @@ ui.carousel = {
             that = ui.find('.' + ui.carousel.target);
             ui.each(that,
 
-                function (i) {
+                function () {
+
+                    var i = Number(this.getAttribute(ui.carousel.dataID));
+                    if (i === null) { return; }
 
                     ui.addClass(this, ui.carousel.namePauseAnimates);
                     carouselModifier(i, this, 'resize');
@@ -408,7 +411,10 @@ ui.carousel = {
             that = ui.find('.' + ui.carousel.target);
             ui.each(that,
 
-                function (i) {
+                function () {
+
+                    var i = Number(this.getAttribute(ui.carousel.dataID));
+                    if (i === null) { return; }
 
                     ui.removeClass(this, ui.carousel.namePauseAnimates);
 
