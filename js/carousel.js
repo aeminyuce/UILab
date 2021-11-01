@@ -93,6 +93,8 @@ ui.carousel = {
     /*globals window, document, ui, Image, setTimeout, clearTimeout, setInterval, clearInterval */
 
     var
+        idCount = 0,
+
         cols = [],
 
         colsXL = [],
@@ -108,14 +110,11 @@ ui.carousel = {
         autoTimer = [],
 
         resizeTimer,
-        carouselNav,
 
         isScrollingTimer,
         isScrolling = false,
 
-        touchStarted = false,
-
-        idCounter = 0;
+        touchStarted = false;
 
     function getCols(i) {
 
@@ -283,7 +282,6 @@ ui.carousel = {
 
     }
 
-    // get carousel slide speed
     function getSlideSpeed(slider, ease, i) {
 
         ease = ui.globals.ease;
@@ -311,7 +309,7 @@ ui.carousel = {
 
     }
 
-    carouselNav = function (that, direction) {
+    function carouselNav(that, direction) {
 
         var col, slider, nav, contents, i, navDots, navDotsEl, slide, halfSized;
 
@@ -377,7 +375,7 @@ ui.carousel = {
 
         }
 
-    };
+    }
 
     function carouselResizer(e) {
 
@@ -435,25 +433,26 @@ ui.carousel = {
 
     }
 
-    ui.carousel.Start = function () {
+    function loadCarousels() {
 
-        var carousels, carouselStart, carouselStop;
+        var carousels = ui.find('.' + ui.carousel.target + ':not(.' + ui.carousel.nameActive + ')');
 
-        carousels = ui.find('.' + ui.carousel.target + ':not(.' + ui.carousel.nameActive + ')');
         if (carousels.length > 0) {
 
             // load carousels
             ui.each(carousels,
 
-                function (j) {
+                function () {
 
-                    var k, that, contents, col, nav, navDots, navDotsHtml, navDotsEl;
+                    var j, k, that, contents, col, nav, navDots, navDotsHtml, navDotsEl;
 
                     that = this;
 
                     // id
-                    that.setAttribute(ui.carousel.dataID, idCounter);
-                    idCounter += 1;
+                    that.setAttribute(ui.carousel.dataID, idCount);
+
+                    j = idCount;
+                    idCount += 1;
 
                     // cols
                     cols[j] = that.getAttribute(ui.carousel.dataCols);
@@ -608,358 +607,7 @@ ui.carousel = {
 
                 });
 
-            // Event Listeners
-            ui.on(document,
-                'click',
-
-                '.' + ui.carousel.namePrev + ',.' + ui.carousel.nameNext,
-
-                function () {
-
-                    var i, that, direction;
-
-                    if (ui.hasClass(this, ui.carousel.nameNext)) {
-                        direction = 'next';
-
-                    } else {
-                        direction = 'prev';
-                    }
-
-                    that = ui.closest(this, '.' + ui.carousel.target)[0];
-
-                    i = Number(that.getAttribute(ui.carousel.dataID));
-                    if (i === null) { return; }
-
-                    carouselNav(that, direction);
-
-                    // wait auto slider when navigating
-                    if (autoTimer[i] !== null) {
-                        clearInterval(autoSlider[i]);
-                    }
-
-                });
-
-            carouselStart = function (that) {
-
-                var i = Number(that.getAttribute(ui.carousel.dataID));
-                if (i === null) { return; }
-
-                clearInterval(autoSlider[i]);
-
-                autoSlider[i] = setInterval(function () {
-                    carouselNav(that, 'next');
-                }, autoTimer[i]);
-
-            };
-
-            carouselStop = function (that) {
-
-                var i = Number(that.getAttribute(ui.carousel.dataID));
-                if (i === null) { return; }
-
-                clearInterval(autoSlider[i]);
-
-            };
-
-            ui.on(document,
-                'mouseenter',
-
-                '.' + ui.carousel.target + '[' + ui.carousel.dataSlide + ']',
-
-                function () {
-                    carouselStop(this);
-                });
-
-            ui.on(document,
-                'mouseleave', '.' + ui.carousel.target + '[' + ui.carousel.dataSlide + ']',
-
-                function () {
-                    carouselStart(this);
-                });
-
-            ui.on(window,
-                'visibilitychange',
-
-                function () {
-
-                    var callCarousels = ui.find('.' + ui.carousel.target + '[' + ui.carousel.dataSlide + ']');
-
-                    if (document.hidden) { // stop all carousels when browser windows is not active
-
-                        ui.each(callCarousels,
-
-                            function () {
-                                carouselStop(this);
-                            });
-
-                    } else {
-
-                        ui.each(callCarousels,
-
-                            function () {
-                                carouselStart(this);
-                            });
-
-                    }
-
-                });
-
-            // prevent touch event listeners when inline scrolling
-            ui.on(document,
-                 'scroll',
-
-                 '.' + ui.carousel.target + ' .' + ui.carousel.nameScroll + ',' +
-                 '.' + ui.carousel.target + ' .' + ui.carousel.nameScrollV + ',' +
-                 '.' + ui.carousel.target + ' .' + ui.carousel.nameScrollH,
-
-                function (e) {
-
-                    e.preventDefault();
-                    e.stopPropagation();
-
-                    isScrolling = true;
-                    clearTimeout(isScrollingTimer);
-
-                    isScrollingTimer = setTimeout(function () {
-                        isScrolling = false;
-                    }, ui.globals.ease);
-
-                });
-
-            // touchmove event listeners
-            ui.on(document,
-                'touchstart',
-
-                '.' + ui.carousel.target,
-
-                function (e) {
-
-                    var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, halfSized, touchEndTimer, contents;
-
-                    if (isScrolling) { return; }
-
-                    touchMove = false;
-                    touchStarted = true;
-
-                    startx = e.targetTouches[0].pageX;
-                    starty = e.targetTouches[0].pageY;
-
-                    that = this;
-
-                    slider = ui.find('.' + ui.carousel.targetSlider, that)[0];
-
-                    contents = ui.find('.' + ui.carousel.nameContent, that);
-                    navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
-
-                    halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
-
-                    i = Number(that.getAttribute(ui.carousel.dataID));
-                    if (i === null) { return; }
-
-                    col = getCols(i); // get responsive cols
-
-                    startMove = window.getComputedStyle(slider).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
-                    startMove = startMove.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|'); // select only numbers
-
-                    startMove = startMove.split('|')[4];
-
-                    ui.off(document, 'touchmove');
-
-                    ui.on(document,
-                        'touchmove',
-
-                        function (e) {
-
-                            if (ui.hasClass(document, ui.photoGallery.namePreviewOpened)) { return; } // stop if photo gallery is opened
-                            if (isScrolling) { return; }
-
-                            if (e.cancelable && e.defaultPrevented) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
-                                e.preventDefault();
-                            }
-
-                            currentx = e.targetTouches[0].pageX;
-                            currenty = e.targetTouches[0].pageY;
-
-                            if (Math.abs(startx - currentx) > ui.carousel.touchMoveToleranceX && Math.abs(starty - currenty) < ui.carousel.touchMoveToleranceY) {
-
-                                touchMove = true;
-
-                                that.style.transitionDuration = '0s';
-                                slider.style.transitionDuration = '0s';
-
-                                clearTimeout(touchEndTimer);
-                                sliderMax = -((contents.length - col) * contents[0].offsetWidth);
-
-                                if (halfSized) {
-                                    sliderMax -= contents[0].offsetWidth * ui.carousel.halfSize;
-                                }
-
-                                move = (startMove - (startx - currentx));
-
-                                if (move > 0) {
-                                    move = 0;
-
-                                } else if (move < sliderMax) {
-                                    move = sliderMax;
-                                }
-
-                                slider.style.transform = 'translateX(' + move + 'px)';
-
-                                // wait auto slider when touchmove
-                                if (autoTimer[i] !== null) {
-                                    clearInterval(autoSlider[i]);
-                                }
-
-                                ui.addClass(document, ui.carousel.nameTouchMove);
-
-                            }
-
-                        });
-
-                    ui.off(document, 'touchend.' + ui.carousel.eventTouchEnd + ' touchcancel.' + ui.carousel.eventTouchCancel);
-
-                    ui.on(document,
-                        'touchend.' + ui.carousel.eventTouchEnd + ' touchcancel.' + ui.carousel.eventTouchCancel,
-
-                        function () {
-
-                            if (touchMove) {
-
-                                that.style.transitionDuration = '';
-                                slider.style.transitionDuration = '';
-
-                                setTimeout(function () {
-
-                                    var beforeCount, navDots;
-                                    navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that[i])[0];
-
-                                    beforeCount = counts[i];
-                                    counts[i] = Math.abs(move) / contents[0].offsetWidth;
-
-                                    if (currentx > startx) { // slide to right
-
-                                        if (counts[i].toFixed(2).split('.')[1] > ui.carousel.touchMoveToleranceX) {
-                                            counts[i] = Math.floor(counts[i]);
-
-                                        } else {
-
-                                            if (beforeCount <= 0) {
-                                                counts[i] = 0;
-
-                                            } else {
-                                                counts[i] = beforeCount - 1;
-                                            }
-
-                                        }
-
-                                    } else { // slide to left
-
-                                        if (counts[i].toFixed(2).split('.')[1] > ui.carousel.touchMoveToleranceX) {
-                                            counts[i] = Math.ceil(counts[i]);
-
-                                        } else {
-
-                                            if (beforeCount >= (contents.length - 1)) {
-                                                beforeCount = (contents.length - 1);
-
-                                            } else {
-                                                counts[i] = beforeCount + 1;
-                                            }
-
-                                        }
-
-                                    }
-
-                                    move = -Math.ceil(counts[i] * contents[0].offsetWidth);
-
-                                    if (halfSized && (counts[i] === contents.length - col)) {
-                                        move -= contents[0].offsetWidth * ui.carousel.halfSize;
-                                    }
-
-                                    slider.style.transform = 'translateX(' + move + 'px)';
-                                    that.setAttribute(ui.carousel.dataContent, (counts[i] + 1));
-
-                                    ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
-                                    ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
-
-                                    filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
-
-                                    clearTimeout(touchEndTimer);
-                                    touchEndTimer = setTimeout(function () {
-
-                                        getSlideSpeed(slider, contentsEase[i], i); // get carousel slide speed
-
-                                        // wait auto slider until touchmove ends
-                                        if (autoTimer[i] !== null) {
-
-                                            clearInterval(autoSlider[i]);
-
-                                            autoSlider[i] = setInterval(function () {
-                                                carouselNav(that, 'next');
-                                            }, autoTimer[i]);
-
-                                        }
-
-                                        // detect carousel animates
-                                        ui.each(contents,
-
-                                            function () {
-                                                carouselAnimate(this, contentsEase[i], 'touch');
-                                            });
-
-                                        ui.removeClass(document, ui.carousel.nameTouchMove);
-                                        touchStarted = false;
-
-                                    }, ui.globals.fast);
-
-                                }, 0);
-
-                            }
-
-                            touchMove = false;
-
-                            ui.off(that, 'touchmove');
-                            ui.off(document, 'touchend.' + ui.carousel.eventTouchEnd + ' touchcancel.' + ui.carousel.eventTouchCancel);
-
-                        });
-
-                });
-
-            // carousel gallery
-            ui.on('.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.nameGalleryImg,
-                'click',
-
-                function () {
-
-                    var parent, detail, target, thumbs, index, newImg;
-
-                    parent = ui.closest(this, '.' + ui.carousel.targetGallery);
-
-                    detail = ui.find('.' + ui.carousel.nameGalleryDetail, parent[0]);
-                    target = ui.find('img', detail);
-
-                    thumbs = ui.find('.' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.nameGalleryImg, parent[0]);
-
-                    index = Array.prototype.slice.call(thumbs).indexOf(this);
-                    target.setAttribute(ui.carousel.dataCount, index);
-
-                    ui.addClass(detail, ui.carousel.nameGalleryDetailLoader);
-
-                    newImg = new Image();
-                    newImg.src = this.getAttribute(ui.carousel.dataHref);
-
-                    newImg.onload = function () {
-
-                        target.src = newImg.src;
-                        ui.removeClass(detail, ui.carousel.nameGalleryDetailLoader);
-
-                    };
-
-                    ui.removeClass(thumbs, ui.carousel.nameGallerySelected);
-                    ui.addClass(this, ui.carousel.nameGallerySelected);
-
-                });
-
+            // carousel gallery loader
             ui.each('.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs,
 
                 function () {
@@ -974,6 +622,366 @@ ui.carousel = {
 
         }
 
+    }
+
+    ui.carousel.Start = function () {
+
+        loadCarousels();
+
+        // Event Listeners
+        ui.on(document,
+            'click',
+
+            '.' + ui.carousel.namePrev + ',.' + ui.carousel.nameNext,
+
+            function () {
+
+                var i, that, direction;
+
+                if (ui.hasClass(this, ui.carousel.nameNext)) {
+                    direction = 'next';
+
+                } else {
+                    direction = 'prev';
+                }
+
+                that = ui.closest(this, '.' + ui.carousel.target)[0];
+
+                i = Number(that.getAttribute(ui.carousel.dataID));
+                if (i === null) { return; }
+
+                carouselNav(that, direction);
+
+                // wait auto slider when navigating
+                if (autoTimer[i] !== null) {
+                    clearInterval(autoSlider[i]);
+                }
+
+            });
+
+        function carouselStart(that) {
+
+            var i = Number(that.getAttribute(ui.carousel.dataID));
+            if (i === null) { return; }
+
+            clearInterval(autoSlider[i]);
+
+            autoSlider[i] = setInterval(function () {
+                carouselNav(that, 'next');
+            }, autoTimer[i]);
+
+        }
+
+        function carouselStop(that) {
+
+            var i = Number(that.getAttribute(ui.carousel.dataID));
+            if (i === null) { return; }
+
+            clearInterval(autoSlider[i]);
+
+        }
+
+        ui.on(document,
+            'mouseenter',
+
+            '.' + ui.carousel.target + '[' + ui.carousel.dataSlide + ']',
+
+            function () {
+                carouselStop(this);
+            });
+
+        ui.on(document,
+            'mouseleave', '.' + ui.carousel.target + '[' + ui.carousel.dataSlide + ']',
+
+            function () {
+                carouselStart(this);
+            });
+
+        ui.on(window,
+            'visibilitychange',
+
+            function () {
+
+                var callCarousels = ui.find('.' + ui.carousel.target + '[' + ui.carousel.dataSlide + ']');
+
+                if (document.hidden) { // stop all carousels when browser windows is not active
+
+                    ui.each(callCarousels,
+
+                        function () {
+                            carouselStop(this);
+                        });
+
+                } else {
+
+                    ui.each(callCarousels,
+
+                        function () {
+                            carouselStart(this);
+                        });
+
+                }
+
+            });
+
+        // prevent touch event listeners when inline scrolling
+        ui.on(document,
+             'scroll',
+
+             '.' + ui.carousel.target + ' .' + ui.carousel.nameScroll + ',' +
+             '.' + ui.carousel.target + ' .' + ui.carousel.nameScrollV + ',' +
+             '.' + ui.carousel.target + ' .' + ui.carousel.nameScrollH,
+
+            function (e) {
+
+                e.preventDefault();
+                e.stopPropagation();
+
+                isScrolling = true;
+                clearTimeout(isScrollingTimer);
+
+                isScrollingTimer = setTimeout(function () {
+                    isScrolling = false;
+                }, ui.globals.ease);
+
+            });
+
+        // touchmove event listeners
+        ui.on(document,
+            'touchstart',
+
+            '.' + ui.carousel.target,
+
+            function (e) {
+
+                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, halfSized, touchEndTimer, contents;
+
+                if (isScrolling) { return; }
+
+                touchMove = false;
+                touchStarted = true;
+
+                startx = e.targetTouches[0].pageX;
+                starty = e.targetTouches[0].pageY;
+
+                that = this;
+
+                slider = ui.find('.' + ui.carousel.targetSlider, that)[0];
+
+                contents = ui.find('.' + ui.carousel.nameContent, that);
+                navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
+
+                halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
+
+                i = Number(that.getAttribute(ui.carousel.dataID));
+                if (i === null) { return; }
+
+                col = getCols(i); // get responsive cols
+
+                startMove = window.getComputedStyle(slider).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
+                startMove = startMove.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|'); // select only numbers
+
+                startMove = startMove.split('|')[4];
+
+                ui.off(document, 'touchmove');
+
+                ui.on(document,
+                    'touchmove',
+
+                    function (e) {
+
+                        if (ui.hasClass(document, ui.photoGallery.namePreviewOpened)) { return; } // stop if photo gallery is opened
+                        if (isScrolling) { return; }
+
+                        if (e.cancelable && e.defaultPrevented) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
+                            e.preventDefault();
+                        }
+
+                        currentx = e.targetTouches[0].pageX;
+                        currenty = e.targetTouches[0].pageY;
+
+                        if (Math.abs(startx - currentx) > ui.carousel.touchMoveToleranceX && Math.abs(starty - currenty) < ui.carousel.touchMoveToleranceY) {
+
+                            touchMove = true;
+
+                            that.style.transitionDuration = '0s';
+                            slider.style.transitionDuration = '0s';
+
+                            clearTimeout(touchEndTimer);
+                            sliderMax = -((contents.length - col) * contents[0].offsetWidth);
+
+                            if (halfSized) {
+                                sliderMax -= contents[0].offsetWidth * ui.carousel.halfSize;
+                            }
+
+                            move = (startMove - (startx - currentx));
+
+                            if (move > 0) {
+                                move = 0;
+
+                            } else if (move < sliderMax) {
+                                move = sliderMax;
+                            }
+
+                            slider.style.transform = 'translateX(' + move + 'px)';
+
+                            // wait auto slider when touchmove
+                            if (autoTimer[i] !== null) {
+                                clearInterval(autoSlider[i]);
+                            }
+
+                            ui.addClass(document, ui.carousel.nameTouchMove);
+
+                        }
+
+                    });
+
+                ui.off(document, 'touchend.' + ui.carousel.eventTouchEnd + ' touchcancel.' + ui.carousel.eventTouchCancel);
+
+                ui.on(document,
+                    'touchend.' + ui.carousel.eventTouchEnd + ' touchcancel.' + ui.carousel.eventTouchCancel,
+
+                    function () {
+
+                        if (touchMove) {
+
+                            that.style.transitionDuration = '';
+                            slider.style.transitionDuration = '';
+
+                            setTimeout(function () {
+
+                                var beforeCount, navDots;
+                                navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that[i])[0];
+
+                                beforeCount = counts[i];
+                                counts[i] = Math.abs(move) / contents[0].offsetWidth;
+
+                                if (currentx > startx) { // slide to right
+
+                                    if (counts[i].toFixed(2).split('.')[1] > ui.carousel.touchMoveToleranceX) {
+                                        counts[i] = Math.floor(counts[i]);
+
+                                    } else {
+
+                                        if (beforeCount <= 0) {
+                                            counts[i] = 0;
+
+                                        } else {
+                                            counts[i] = beforeCount - 1;
+                                        }
+
+                                    }
+
+                                } else { // slide to left
+
+                                    if (counts[i].toFixed(2).split('.')[1] > ui.carousel.touchMoveToleranceX) {
+                                        counts[i] = Math.ceil(counts[i]);
+
+                                    } else {
+
+                                        if (beforeCount >= (contents.length - 1)) {
+                                            beforeCount = (contents.length - 1);
+
+                                        } else {
+                                            counts[i] = beforeCount + 1;
+                                        }
+
+                                    }
+
+                                }
+
+                                move = -Math.ceil(counts[i] * contents[0].offsetWidth);
+
+                                if (halfSized && (counts[i] === contents.length - col)) {
+                                    move -= contents[0].offsetWidth * ui.carousel.halfSize;
+                                }
+
+                                slider.style.transform = 'translateX(' + move + 'px)';
+                                that.setAttribute(ui.carousel.dataContent, (counts[i] + 1));
+
+                                ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
+                                ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
+
+                                filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
+
+                                clearTimeout(touchEndTimer);
+                                touchEndTimer = setTimeout(function () {
+
+                                    getSlideSpeed(slider, contentsEase[i], i); // get carousel slide speed
+
+                                    // wait auto slider until touchmove ends
+                                    if (autoTimer[i] !== null) {
+
+                                        clearInterval(autoSlider[i]);
+
+                                        autoSlider[i] = setInterval(function () {
+                                            carouselNav(that, 'next');
+                                        }, autoTimer[i]);
+
+                                    }
+
+                                    // detect carousel animates
+                                    ui.each(contents,
+
+                                        function () {
+                                            carouselAnimate(this, contentsEase[i], 'touch');
+                                        });
+
+                                    ui.removeClass(document, ui.carousel.nameTouchMove);
+                                    touchStarted = false;
+
+                                }, ui.globals.fast);
+
+                            }, 0);
+
+                        }
+
+                        touchMove = false;
+
+                        ui.off(that, 'touchmove');
+                        ui.off(document, 'touchend.' + ui.carousel.eventTouchEnd + ' touchcancel.' + ui.carousel.eventTouchCancel);
+
+                    });
+
+            });
+
+        // carousel gallery thumbs
+        ui.on(document,
+            'click',
+
+            '.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.nameGalleryImg,
+
+            function () {
+
+                var parent, detail, target, thumbs, index, newImg;
+
+                parent = ui.closest(this, '.' + ui.carousel.targetGallery);
+
+                detail = ui.find('.' + ui.carousel.nameGalleryDetail, parent[0]);
+                target = ui.find('img', detail);
+
+                thumbs = ui.find('.' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.nameGalleryImg, parent[0]);
+
+                index = Array.prototype.slice.call(thumbs).indexOf(this);
+                target.setAttribute(ui.carousel.dataCount, index);
+
+                ui.addClass(detail, ui.carousel.nameGalleryDetailLoader);
+
+                newImg = new Image();
+                newImg.src = this.getAttribute(ui.carousel.dataHref);
+
+                newImg.onload = function () {
+
+                    target.src = newImg.src;
+                    ui.removeClass(detail, ui.carousel.nameGalleryDetailLoader);
+
+                };
+
+                ui.removeClass(thumbs, ui.carousel.nameGallerySelected);
+                ui.addClass(this, ui.carousel.nameGallerySelected);
+
+            });
+
     };
 
     // Loaders
@@ -981,5 +989,17 @@ ui.carousel = {
 
     ui.on(window, 'resize', carouselResizer);
     ui.on(document, ui.globals.eventDomChange, function () { carouselResizer('resize'); });
+
+    // ajax callback loader
+    ui.on(document,
+        ui.globals.eventAjaxCallback,
+
+        function () {
+
+            if (ui.ajax.classNames.indexOf(ui.carousel.target) > -1) {
+                loadCarousels();
+            }
+
+        });
 
 }());
