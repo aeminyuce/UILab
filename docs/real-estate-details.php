@@ -91,7 +91,7 @@
                                     </div>
                                 </div>
                                 <div class="col-5x col-sm-4 col-xs-6">
-                                    <div class="donut-chart ui-ease-donut-chart">
+                                    <div class="ui-donut-chart ui-ease-donut-chart">
                                         <strong>
                                             <span class="large font-color-black-muted">Interior</span>
                                             <span class="sp-2"></span>4,9/5
@@ -103,7 +103,7 @@
                                     </div>
                                 </div>
                                 <div class="col-5x col-sm-4 col-xs-6">
-                                    <div class="donut-chart ui-ease-donut-chart">
+                                    <div class="ui-donut-chart ui-ease-donut-chart">
                                         <strong>
                                             <span class="large font-color-black-muted">Exterior</span>
                                             <span class="sp-2"></span>4/5
@@ -115,7 +115,7 @@
                                     </div>
                                 </div>
                                 <div class="col-5x col-sm-4 col-xs-6">
-                                    <div class="donut-chart ui-ease-donut-chart">
+                                    <div class="ui-donut-chart ui-ease-donut-chart">
                                         <strong>
                                             <span class="large font-color-black-muted">Quality</span>
                                             <span class="sp-2"></span>4/5
@@ -127,7 +127,7 @@
                                     </div>
                                 </div>
                                 <div class="col-5x col-sm-4 col-xs-6">
-                                    <div class="donut-chart ui-ease-donut-chart">
+                                    <div class="ui-donut-chart ui-ease-donut-chart">
                                         <strong>
                                             <span class="large font-color-black-muted">Savings</span>
                                             <span class="sp-2"></span>3.9/5

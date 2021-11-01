@@ -332,7 +332,7 @@
 
                 <div class="row row-gap-lg-v">
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -341,7 +341,7 @@
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -350,7 +350,7 @@
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>JS</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -359,7 +359,7 @@
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>PHP</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -371,7 +371,7 @@
 
                 <div class="row row-gap-lg-v">
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -381,7 +381,7 @@
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -392,7 +392,7 @@
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -404,7 +404,7 @@
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -424,7 +424,7 @@
 
                 <div class="row row-gap-lg-v">
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -433,7 +433,7 @@
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -442,7 +442,7 @@
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -452,7 +452,7 @@
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -466,7 +466,7 @@
 
                 <div class="row row-gap-lg-v ui-theme-base ui-fill-dark-100 round">
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -475,7 +475,7 @@
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -484,7 +484,7 @@
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
@@ -494,7 +494,7 @@
                         </div>
                     </div>
                     <div class="col-3 col-xs-6">
-                        <div class="donut-chart ui-ease-donut-chart">
+                        <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
                                 <circle r="69.85699" cy="80" cx="80" class="donut-bg" />

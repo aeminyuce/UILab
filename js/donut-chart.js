@@ -6,12 +6,12 @@
 ui.donutChart = {
 
     // targets
-    target: 'donut-chart',
-    targetBg: 'donut-bg',
+    target: 'ui-donut-chart',
+    targetBg: 'ui-donut-bg',
 
     // helper classnames
-    nameLoaded: 'loaded',
-    nameSelected: 'selected',
+    nameLoaded: 'ui-loaded',
+    nameSelected: 'ui-selected',
 
     // tags
     tagMsg: 'strong',
