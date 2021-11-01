@@ -428,7 +428,10 @@ ui.modal = {
                             ui.removeClass(win, ui.modal.nameActive);
 
                             modalResizer();
-                            ui.trigger(document, ui.globals.eventDomChange); // set custom event
+
+                            setTimeout(function () { // wait for modal dom is ready
+                                ui.trigger(document, ui.globals.eventDomChange); // set custom event
+                            }, ui.globals.ease);
 
                             // callback
                             if (props.callback !== undefined) {
