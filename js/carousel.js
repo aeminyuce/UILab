@@ -73,6 +73,8 @@ ui.carousel = {
     dataColsSM: 'data-ui-col-sm',
     dataColsXS: 'data-ui-col-xs',
 
+    dataID: 'data-ui-id',
+
     dataAnimate: 'data-ui-animate',
     dataContent: 'data-ui-content',
     dataCount: 'data-ui-count',
@@ -111,7 +113,9 @@ ui.carousel = {
         isScrollingTimer,
         isScrolling = false,
 
-        touchStarted = false;
+        touchStarted = false,
+
+        idCounter = 0;
 
     function getCols(i) {
 
@@ -319,7 +323,8 @@ ui.carousel = {
 
         if (contents.length === 0) { return; }
 
-        i = Array.prototype.slice.call(ui.find('.' + ui.carousel.target)).indexOf(that);
+        i = Number(that.getAttribute(ui.carousel.dataID));
+        if (i === null) { return; }
 
         navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that);
         navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
@@ -434,7 +439,7 @@ ui.carousel = {
 
         var carousels, carouselStart, carouselStop;
 
-        carousels = ui.find('.' + ui.carousel.target);
+        carousels = ui.find('.' + ui.carousel.target + ':not(.' + ui.carousel.nameActive + ')');
         if (carousels.length > 0) {
 
             // load carousels
@@ -445,6 +450,12 @@ ui.carousel = {
                     var k, that, contents, col, nav, navDots, navDotsHtml, navDotsEl;
 
                     that = this;
+
+                    // id
+                    that.setAttribute(ui.carousel.dataID, idCounter);
+                    idCounter += 1;
+
+                    // cols
                     cols[j] = that.getAttribute(ui.carousel.dataCols);
 
                     colsXL[j] = that.getAttribute(ui.carousel.dataColsXL);
@@ -615,7 +626,9 @@ ui.carousel = {
                     }
 
                     that = ui.closest(this, '.' + ui.carousel.target)[0];
-                    i = Array.prototype.slice.call(ui.find('.' + ui.carousel.target)).indexOf(that);
+
+                    i = Number(that.getAttribute(ui.carousel.dataID));
+                    if (i === null) { return; }
 
                     carouselNav(that, direction);
 
@@ -628,7 +641,8 @@ ui.carousel = {
 
             carouselStart = function (that) {
 
-                var i = Array.prototype.slice.call(ui.find('.' + ui.carousel.target)).indexOf(that);
+                var i = Number(that.getAttribute(ui.carousel.dataID));
+                if (i === null) { return; }
 
                 clearInterval(autoSlider[i]);
 
@@ -640,7 +654,9 @@ ui.carousel = {
 
             carouselStop = function (that) {
 
-                var i = Array.prototype.slice.call(ui.find('.' + ui.carousel.target)).indexOf(that);
+                var i = Number(that.getAttribute(ui.carousel.dataID));
+                if (i === null) { return; }
+
                 clearInterval(autoSlider[i]);
 
             };
@@ -737,7 +753,9 @@ ui.carousel = {
 
                     halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
 
-                    i = Array.prototype.slice.call(ui.find('.' + ui.carousel.target)).indexOf(that);
+                    i = Number(that.getAttribute(ui.carousel.dataID));
+                    if (i === null) { return; }
+
                     col = getCols(i); // get responsive cols
 
                     startMove = window.getComputedStyle(slider).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
