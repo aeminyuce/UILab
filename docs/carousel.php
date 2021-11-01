@@ -230,32 +230,32 @@
                     <div class="ui-carousel ui-half-sized padding-15-b ui-photo-gallery ui-ease-photo-gallery shadow-in-sm round ui-theme-gray ui-fill-light-100" data-ui-col="4" data-ui-col-md="3" data-ui-col-sm="2" data-ui-col-xs="2">
                         <div class="ui-carousel-slider hover-scale-2nd hover-shadow-2nd ui-ease-layout ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                             <div class="ui-slide-content padding-15 no-padding-b">
-                                <a class="img shadow ui-ease-default" href="img/image_09.jpg">
+                                <a class="ui-img shadow ui-ease-default" href="img/image_09.jpg">
                                     <img class="ui-img" src="img/image_09.jpg" alt="">
                                 </a>
                             </div>
                             <div class="ui-slide-content padding-15 no-padding-b">
-                                <a class="img shadow ui-ease-default" href="img/image_07.jpg">
+                                <a class="ui-img shadow ui-ease-default" href="img/image_07.jpg">
                                     <img class="ui-img" src="img/image_07.jpg" alt="">
                                 </a>
                             </div>
                             <div class="ui-slide-content padding-15 no-padding-b">
-                                <a class="img shadow ui-ease-default" href="img/image_08.jpg">
+                                <a class="ui-img shadow ui-ease-default" href="img/image_08.jpg">
                                     <img class="ui-img" src="img/image_05.jpg" alt="">
                                 </a>
                             </div>
                             <div class="ui-slide-content padding-15 no-padding-b">
-                                <a class="img shadow ui-ease-default" href="img/image_04.jpg">
+                                <a class="ui-img shadow ui-ease-default" href="img/image_04.jpg">
                                     <img class="ui-img" src="img/image_04.jpg" alt="">
                                 </a>
                             </div>
                             <div class="ui-slide-content padding-15 no-padding-b">
-                                <a class="img shadow ui-ease-default" href="img/image_01.jpg">
+                                <a class="ui-img shadow ui-ease-default" href="img/image_01.jpg">
                                     <img class="ui-img" src="img/image_01.jpg" alt="">
                                 </a>
                             </div>
                             <div class="ui-slide-content padding-15 no-padding-b">
-                                <a class="img shadow ui-ease-default" href="img/image_06.jpg">
+                                <a class="ui-img shadow ui-ease-default" href="img/image_06.jpg">
                                     <img class="ui-img" src="img/image_06.jpg" alt="">
                                 </a>
                             </div>
