@@ -6,22 +6,24 @@
 ui.lineCharts = {
 
     // targets
-    target: 'line-charts',
+    target: 'ui-line-charts',
 
     // main classnames
-    nameLines: 'lines',
+    nameLines: 'ui-lines',
 
-    nameGridRoot: 'root-grid',
-    nameGridX: 'x-grid',
-    nameGridY: 'y-grid',
+    nameGridRoot: 'ui-root-grid',
+    nameGridX: 'ui-x-grid',
+    nameGridY: 'ui-y-grid',
 
-    nameInfo: 'chart-info',
+    nameInfo: 'ui-chart-info',
+
+    nameTypePrefix: 'ui-',
 
     // helper classnames
-    nameLoaded: 'loaded',
-    nameNotLoaded: 'not-loaded',
+    nameLoaded: 'ui-loaded',
+    nameNotLoaded: 'ui-not-loaded',
 
-    nameResized: 'resized',
+    nameResized: 'ui-resized',
 
     // ids
     idGradient: 'ui-gradient',
@@ -439,10 +441,10 @@ ui.lineCharts = {
 
                             // create paths
                             if (type.indexOf(ui.lineCharts.dashed) > -1) { // dashed
-                                html += '<path class="' + ui.lineCharts.dashed + '" ';
+                                html += '<path class="' + ui.lineCharts.nameTypePrefix + ui.lineCharts.dashed + '" ';
 
                             } else if (type.indexOf(ui.lineCharts.dotted) > -1) { // dotted
-                                html += '<path class="' + ui.lineCharts.dotted + '" ';
+                                html += '<path class="' + ui.lineCharts.nameTypePrefix + ui.lineCharts.dotted + '" ';
 
                             } else {
                                 html += '<path ';
@@ -475,7 +477,7 @@ ui.lineCharts = {
                                             'stroke="0" ' +
                                             'fill="url(#' + ui.lineCharts.idGradient + data.id + ')" ' +
                                             'stroke-width="' + ui.lineCharts.lineStroke + '" ' +
-                                            'class="' + ui.lineCharts.filled + '" ' +
+                                            'class="' + ui.lineCharts.nameTypePrefix + ui.lineCharts.filled + '" ' +
 
                                         '/>';
 

@@ -176,14 +176,14 @@
                                 </h4>
                             </div>
                             <div class="col-8">
-                                <div class="line-charts ui-ease-line-charts" data-ui-x="1st Week,2nd Week,3rd Week,4th Week">
-                                    <ul class="lines" data-ui-type="curved dashed">
+                                <div class="ui-line-charts ui-ease-line-charts" data-ui-x="1st Week,2nd Week,3rd Week,4th Week">
+                                    <ul class="ui-lines" data-ui-type="curved dashed">
                                         <li data-ui-y="156"></li>
                                         <li data-ui-y="180"></li>
                                         <li data-ui-y="144"></li>
                                         <li data-ui-y="157"></li>
                                     </ul>
-                                    <ul class="lines" data-ui-type="curved filled">
+                                    <ul class="ui-lines" data-ui-type="curved filled">
                                         <li data-ui-y="134"></li>
                                         <li data-ui-y="199"></li>
                                         <li data-ui-y="120"></li>

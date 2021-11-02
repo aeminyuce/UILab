@@ -7,8 +7,8 @@
                 <div class="row row-gap-lg-v">
                     <div class="col-6">
                         <h5 class="font-bold align-c">Line Chart</h5>
-                        <div class="line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="lines">
+                        <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-lines">
                                 <li data-ui-y="84"></li>
                                 <li data-ui-y="56"></li>
                                 <li data-ui-y="112"></li>
@@ -21,8 +21,8 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold align-c">Curved Line Chart</h5>
-                        <div class="line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="lines" data-ui-type="curved">
+                        <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-lines" data-ui-type="curved">
                                 <li data-ui-y="0"></li>
                                 <li data-ui-y="-56"></li>
                                 <li data-ui-y="-112"></li>
@@ -35,8 +35,8 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold align-c">Dotted Line Chart</h5>
-                        <div class="line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="lines" data-ui-type="dotted">
+                        <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-lines" data-ui-type="dotted">
                                 <li data-ui-y="0"></li>
                                 <li data-ui-y="-56"></li>
                                 <li data-ui-y="-112"></li>
@@ -49,8 +49,8 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold align-c">Dashed Line Chart</h5>
-                        <div class="line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="lines" data-ui-type="dashed">
+                        <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-lines" data-ui-type="dashed">
                                 <li data-ui-y="0"></li>
                                 <li data-ui-y="-56"></li>
                                 <li data-ui-y="-112"></li>
@@ -63,8 +63,8 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold align-c">Line Charts</h5>
-                        <div class="line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="lines" data-ui-name="1st">
+                        <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-lines" data-ui-name="1st">
                                 <li data-ui-y="-34" data-ui-link="#1"></li>
                                 <li data-ui-y="-56" data-ui-link="#2"></li>
                                 <li data-ui-y="-112" data-ui-link="#3"></li>
@@ -73,7 +73,7 @@
                                 <li data-ui-y="-20" data-ui-link="#6"></li>
                                 <li data-ui-y="-28" data-ui-link="#7"></li>
                             </ul>
-                            <ul class="lines" data-ui-name="2nd">
+                            <ul class="ui-lines" data-ui-name="2nd">
                                 <li data-ui-y="120" data-ui-link="#1"></li>
                                 <li data-ui-y="20" data-ui-link="#2"></li>
                                 <li data-ui-y="159" data-ui-link="#3"></li>
@@ -86,8 +86,8 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold align-c">Curved Line Charts</h5>
-                        <div class="line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="lines" data-ui-name="1st" data-ui-type="curved dotted">
+                        <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-lines" data-ui-name="1st" data-ui-type="curved dotted">
                                 <li data-ui-y="55" data-ui-link="#1"></li>
                                 <li data-ui-y="70" data-ui-link="#2"></li>
                                 <li data-ui-y="92" data-ui-link="#3"></li>
@@ -96,7 +96,7 @@
                                 <li data-ui-y="98" data-ui-link="#6"></li>
                                 <li data-ui-y="116" data-ui-link="#7"></li>
                             </ul>
-                            <ul class="lines" data-ui-name="2nd" data-ui-type="curved">
+                            <ul class="ui-lines" data-ui-name="2nd" data-ui-type="curved">
                                 <li data-ui-y="120" data-ui-link="#1"></li>
                                 <li data-ui-y="20" data-ui-link="#2"></li>
                                 <li data-ui-y="159" data-ui-link="#3"></li>
@@ -105,7 +105,7 @@
                                 <li data-ui-y="0" data-ui-link="#6"></li>
                                 <li data-ui-y="20" data-ui-link="#7"></li>
                             </ul>
-                            <ul class="lines" data-ui-name="3rd" data-ui-type="curved">
+                            <ul class="ui-lines" data-ui-name="3rd" data-ui-type="curved">
                                 <li data-ui-y="32" data-ui-link="#1"></li>
                                 <li data-ui-y="52" data-ui-link="#2"></li>
                                 <li data-ui-y="117" data-ui-link="#3"></li>
@@ -118,8 +118,8 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold align-c">Filled Line Charts</h5>
-                        <div class="line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="lines" data-ui-name="1st" data-ui-type="filled">
+                        <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-lines" data-ui-name="1st" data-ui-type="filled">
                                 <li data-ui-y="-34" data-ui-link="#1"></li>
                                 <li data-ui-y="-56" data-ui-link="#2"></li>
                                 <li data-ui-y="-112" data-ui-link="#3"></li>
@@ -128,7 +128,7 @@
                                 <li data-ui-y="-20" data-ui-link="#6"></li>
                                 <li data-ui-y="-28" data-ui-link="#7"></li>
                             </ul>
-                            <ul class="lines" data-ui-name="2nd" data-ui-type="filled">
+                            <ul class="ui-lines" data-ui-name="2nd" data-ui-type="filled">
                                 <li data-ui-y="120" data-ui-link="#1"></li>
                                 <li data-ui-y="20" data-ui-link="#2"></li>
                                 <li data-ui-y="159" data-ui-link="#3"></li>
@@ -141,8 +141,8 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold align-c">Filled &amp; Curved Line Charts</h5>
-                        <div class="line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="lines" data-ui-name="1st" data-ui-type="curved dotted">
+                        <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-lines" data-ui-name="1st" data-ui-type="curved dotted">
                                 <li data-ui-y="-34" data-ui-link="#1"></li>
                                 <li data-ui-y="-56" data-ui-link="#2"></li>
                                 <li data-ui-y="-112" data-ui-link="#3"></li>
@@ -151,7 +151,7 @@
                                 <li data-ui-y="-20" data-ui-link="#6"></li>
                                 <li data-ui-y="-28" data-ui-link="#7"></li>
                             </ul>
-                            <ul class="lines" data-ui-name="2nd" data-ui-type="curved filled">
+                            <ul class="ui-lines" data-ui-name="2nd" data-ui-type="curved filled">
                                 <li data-ui-y="120" data-ui-link="#1"></li>
                                 <li data-ui-y="20" data-ui-link="#2"></li>
                                 <li data-ui-y="159" data-ui-link="#3"></li>
@@ -160,7 +160,7 @@
                                 <li data-ui-y="0" data-ui-link="#6"></li>
                                 <li data-ui-y="20" data-ui-link="#7"></li>
                             </ul>
-                            <ul class="lines" data-ui-name="3rd" data-ui-type="curved filled">
+                            <ul class="ui-lines" data-ui-name="3rd" data-ui-type="curved filled">
                                 <li data-ui-y="32" data-ui-link="#1"></li>
                                 <li data-ui-y="52" data-ui-link="#2"></li>
                                 <li data-ui-y="117" data-ui-link="#3"></li>
@@ -175,8 +175,8 @@
                         <div class="row">
                             <div class="col-6">
                                 <h5 class="font-bold align-c">Filled Line Charts</h5>
-                                <div class="line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="lines" data-ui-name="1st" data-ui-type="filled">
+                                <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                    <ul class="ui-lines" data-ui-name="1st" data-ui-type="filled">
                                         <li data-ui-y="-34" data-ui-link="#1"></li>
                                         <li data-ui-y="-56" data-ui-link="#2"></li>
                                         <li data-ui-y="-112" data-ui-link="#3"></li>
@@ -185,7 +185,7 @@
                                         <li data-ui-y="-20" data-ui-link="#6"></li>
                                         <li data-ui-y="-28" data-ui-link="#7"></li>
                                     </ul>
-                                    <ul class="lines" data-ui-name="2nd" data-ui-type="filled">
+                                    <ul class="ui-lines" data-ui-name="2nd" data-ui-type="filled">
                                         <li data-ui-y="120" data-ui-link="#1"></li>
                                         <li data-ui-y="20" data-ui-link="#2"></li>
                                         <li data-ui-y="159" data-ui-link="#3"></li>
@@ -198,8 +198,8 @@
                             </div>
                             <div class="col-6">
                                 <h5 class="font-bold align-c">Filled &amp; Curved Line Charts</h5>
-                                <div class="line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="lines" data-ui-name="1st" data-ui-type="curved dotted">
+                                <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                    <ul class="ui-lines" data-ui-name="1st" data-ui-type="curved dotted">
                                         <li data-ui-y="-34" data-ui-link="#1"></li>
                                         <li data-ui-y="-56" data-ui-link="#2"></li>
                                         <li data-ui-y="-112" data-ui-link="#3"></li>
@@ -208,7 +208,7 @@
                                         <li data-ui-y="-20" data-ui-link="#6"></li>
                                         <li data-ui-y="-28" data-ui-link="#7"></li>
                                     </ul>
-                                    <ul class="lines" data-ui-name="2nd" data-ui-type="curved filled">
+                                    <ul class="ui-lines" data-ui-name="2nd" data-ui-type="curved filled">
                                         <li data-ui-y="120" data-ui-link="#1"></li>
                                         <li data-ui-y="20" data-ui-link="#2"></li>
                                         <li data-ui-y="159" data-ui-link="#3"></li>
@@ -217,7 +217,7 @@
                                         <li data-ui-y="0" data-ui-link="#6"></li>
                                         <li data-ui-y="20" data-ui-link="#7"></li>
                                     </ul>
-                                    <ul class="lines" data-ui-name="3rd" data-ui-type="curved filled">
+                                    <ul class="ui-lines" data-ui-name="3rd" data-ui-type="curved filled">
                                         <li data-ui-y="32" data-ui-link="#1"></li>
                                         <li data-ui-y="52" data-ui-link="#2"></li>
                                         <li data-ui-y="117" data-ui-link="#3"></li>
@@ -251,8 +251,8 @@
 
                                 <div class="tab-content open open-ease">
                                     <h5 class="font-bold align-c">First Chart</h5>
-                                    <div class="line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                        <ul class="lines" data-ui-name="Sales" data-ui-type="curved filled">
+                                    <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                        <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
                                             <li data-ui-y="10" data-ui-link="#"></li>
                                             <li data-ui-y="30" data-ui-link="#"></li>
                                             <li data-ui-y="70" data-ui-link="#"></li>
@@ -260,7 +260,7 @@
                                             <li data-ui-y="100" data-ui-link="#"></li>
                                             <li data-ui-y="150" data-ui-link="#"></li>
                                         </ul>
-                                        <ul class="lines" data-ui-name="Orders" data-ui-type="dashed">
+                                        <ul class="ui-lines" data-ui-name="Orders" data-ui-type="dashed">
                                             <li data-ui-y="50" data-ui-link="#"></li>
                                             <li data-ui-y="10" data-ui-link="#"></li>
                                             <li data-ui-y="50" data-ui-link="#"></li>
@@ -272,8 +272,8 @@
                                 </div>
                                 <div class="tab-content">
                                     <h5 class="font-bold align-c">Second Chart</h5>
-                                    <div class="line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                        <ul class="lines" data-ui-name="Sales" data-ui-type="curved filled">
+                                    <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                        <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
                                             <li data-ui-y="10" data-ui-link="#"></li>
                                             <li data-ui-y="60" data-ui-link="#"></li>
                                             <li data-ui-y="20" data-ui-link="#"></li>
@@ -281,7 +281,7 @@
                                             <li data-ui-y="10" data-ui-link="#"></li>
                                             <li data-ui-y="100" data-ui-link="#"></li>
                                         </ul>
-                                        <ul class="lines" data-ui-name="Orders" data-ui-type="dashed">
+                                        <ul class="ui-lines" data-ui-name="Orders" data-ui-type="dashed">
                                             <li data-ui-y="0" data-ui-link="#"></li>
                                             <li data-ui-y="20" data-ui-link="#"></li>
                                             <li data-ui-y="50" data-ui-link="#"></li>
@@ -296,9 +296,9 @@
                     </div>
                     <div class="col-12">
                         <h5 class="font-bold align-c">Column Stepping Chart</h5>
-                        <div class="line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-step="6"
+                        <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-step="6"
                             data-ui-x="01.12.2019,02.12.2019,03.12.2019,04.12.2019,05.12.2019,06.12.2019,07.12.2019,08.12.2019,09.12.2019,10.12.2019,11.12.2019,12.12.2019,13.12.2019,14.12.2019,15.12.2019,16.12.2019,17.12.2019,18.12.2019,19.12.2019,20.12.2019,21.12.2019">
-                            <ul class="lines" data-ui-type="filled dotted">
+                            <ul class="ui-lines" data-ui-type="filled dotted">
                                 <li data-ui-y="84"></li>
                                 <li data-ui-y="56"></li>
                                 <li data-ui-y="112"></li>

@@ -1000,8 +1000,8 @@
                                         </div>
                                         <h4 class="align-l margin-5-t">Statistics</h4>
                                         <div class="tab-content open open-ease">
-                                            <div class="line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                                <ul class="lines" data-ui-name="Sales" data-ui-type="curved filled">
+                                            <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                                <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
                                                     <li data-ui-y="10" data-ui-link="#"></li>
                                                     <li data-ui-y="30" data-ui-link="#"></li>
                                                     <li data-ui-y="70" data-ui-link="#"></li>
@@ -1009,7 +1009,7 @@
                                                     <li data-ui-y="100" data-ui-link="#"></li>
                                                     <li data-ui-y="150" data-ui-link="#"></li>
                                                 </ul>
-                                                <ul class="lines" data-ui-name="Orders" data-ui-type="dashed">
+                                                <ul class="ui-lines" data-ui-name="Orders" data-ui-type="dashed">
                                                     <li data-ui-y="50" data-ui-link="#"></li>
                                                     <li data-ui-y="10" data-ui-link="#"></li>
                                                     <li data-ui-y="50" data-ui-link="#"></li>
@@ -1020,8 +1020,8 @@
                                             </div>
                                         </div>
                                         <div class="tab-content">
-                                            <div class="line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                                <ul class="lines" data-ui-name="Sales" data-ui-type="curved filled">
+                                            <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                                <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
                                                     <li data-ui-y="10" data-ui-link="#"></li>
                                                     <li data-ui-y="60" data-ui-link="#"></li>
                                                     <li data-ui-y="20" data-ui-link="#"></li>
@@ -1029,7 +1029,7 @@
                                                     <li data-ui-y="10" data-ui-link="#"></li>
                                                     <li data-ui-y="100" data-ui-link="#"></li>
                                                 </ul>
-                                                <ul class="lines" data-ui-name="Orders" data-ui-type="dashed">
+                                                <ul class="ui-lines" data-ui-name="Orders" data-ui-type="dashed">
                                                     <li data-ui-y="0" data-ui-link="#"></li>
                                                     <li data-ui-y="20" data-ui-link="#"></li>
                                                     <li data-ui-y="50" data-ui-link="#"></li>

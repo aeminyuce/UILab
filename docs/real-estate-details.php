@@ -196,15 +196,15 @@
                 <div class="ui-card margin-20-b round shadow-lg">
                     <div class="padding-30-h padding-10-v">
                         <b>Previous Offers / <span style="color: hsl(30, 100%, 63%);">Averages</span></b>
-                        <div class="line-charts ui-ease-line-charts" data-ui-size="5,20" data-ui-x="1,2,3,4,5">
-                            <ul class="lines" data-ui-type="curved dotted">
+                        <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,20" data-ui-x="1,2,3,4,5">
+                            <ul class="ui-lines" data-ui-type="curved dotted">
                                 <li data-ui-y="820000"></li>
                                 <li data-ui-y="380000"></li>
                                 <li data-ui-y="140000"></li>
                                 <li data-ui-y="490000"></li>
                                 <li data-ui-y="560000"></li>
                             </ul>
-                            <ul class="lines" data-ui-type="curved filled">
+                            <ul class="ui-lines" data-ui-type="curved filled">
                                 <li data-ui-y="510000"></li>
                                 <li data-ui-y="860000"></li>
                                 <li data-ui-y="360000"></li>

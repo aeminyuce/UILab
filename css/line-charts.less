@@ -31,10 +31,10 @@
     circle { transition-property: stroke-width; transition-duration: @ease-default; }
 }
 
-.line-charts {
+.ui-line-charts {
     @no-user-select();
 
-    .lines { display: none !important; }
+    .ui-lines { display: none !important; }
 
     svg {
         width: 100%;
@@ -43,27 +43,27 @@
         path {
             stroke-linecap: round;
 
-            &:not(.dashed):not(.dotted):not(.filled) { stroke-dashoffset: @line-chart-default-size; stroke-dasharray: @line-chart-default-size; }
+            &:not(.ui-dashed):not(.ui-dotted):not(.ui-filled) { stroke-dashoffset: @line-chart-default-size; stroke-dasharray: @line-chart-default-size; }
             &:not([fill]) { fill: @no-color; }
 
-            &.dashed { stroke-dasharray: @line-chart-dashed-size round((@line-chart-dashed-size / 2)); }
-            &.dotted { stroke-dasharray: @line-chart-dotted-size round((@line-chart-dashed-size / 2)); }
+            &.ui-dashed { stroke-dasharray: @line-chart-dashed-size round((@line-chart-dashed-size / 2)); }
+            &.ui-dotted { stroke-dasharray: @line-chart-dotted-size round((@line-chart-dashed-size / 2)); }
 
             .ui-no-effects &,.ui-ie & {
-                &:not(.dashed):not(.dotted):not(.filled) {
+                &:not(.ui-dashed):not(.ui-dotted):not(.ui-filled) {
                 	stroke-dashoffset: 0;
                 }
 
-                &.dashed,&.dotted { opacity: 1; }
-                &.filled { transform: translateY(0); opacity: @line-chart-filled-opacity; }
+                &.ui-dashed,&.ui-dotted { opacity: 1; }
+                &.ui-filled { transform: translateY(0); opacity: @line-chart-filled-opacity; }
             }
         }
         line {
             stroke: currentColor;
             html:not(.ui-firefox) & { shape-rendering: crispEdges; }
 
-            &.root-grid { opacity: @line-chart-stroke-opacity; }
-            &:not(.root-grid) { stroke-width: @line-chart-bg-grid-stroke-size; opacity: @line-chart-bg-grid-opacity; }
+            &.ui-root-grid { opacity: @line-chart-stroke-opacity; }
+            &:not(.ui-root-grid) { stroke-width: @line-chart-bg-grid-stroke-size; opacity: @line-chart-bg-grid-opacity; }
         }
         circle {
             &[onclick] { cursor: pointer; }
@@ -73,44 +73,44 @@
         }
 
         text { fill: currentColor; font-size: @line-chart-text-size; opacity: @line-chart-grid-text-opacity; }
-        .x-grid { text-anchor: @line-chart-grid-text-anchor-x; }
-        .y-grid { text-anchor: @line-chart-grid-text-anchor-y; }
+        .ui-x-grid { text-anchor: @line-chart-grid-text-anchor-x; }
+        .ui-y-grid { text-anchor: @line-chart-grid-text-anchor-y; }
     }
 
-    &.resized {
+    &.ui-resized {
         svg {
             path {
-                &.filled { opacity: 0; }
-                &.dashed,&.dotted { stroke-dashoffset: 0; opacity: 0; }
+                &.ui-filled { opacity: 0; }
+                &.ui-dashed,&.ui-dotted { stroke-dashoffset: 0; opacity: 0; }
             }
         }
     }
-    &:not(.resized) {
+    &:not(.ui-resized) {
         svg {
             html:not(.ui-ie) & {
                 path {
-                    &.dashed,&.dotted { stroke-dashoffset: 0; opacity: 0; }
-                    &.filled { transform: translateY(@line-chart-filled-slide-size); opacity: 0; }
+                    &.ui-dashed,&.ui-dotted { stroke-dashoffset: 0; opacity: 0; }
+                    &.ui-filled { transform: translateY(@line-chart-filled-slide-size); opacity: 0; }
                 }
                 circle { transform: translateY((@line-chart-filled-slide-size * 2)); opacity: 0; }
             }
         }
     }
 
-    &.loaded {
+    &.ui-loaded {
         svg {
             html:not(.ui-ie) & {
                 path {
-                    &:not(.dashed):not(.dotted):not(.filled) { animation: ui-line-draw 2s .6s ease-in forwards; }
-                    &.dashed,&.dotted { animation: ui-line-dashed-dotted 1s .6s ease-in forwards; }
-                    &.filled { animation: ui-line-filled .6s forwards; }
+                    &:not(.ui-dashed):not(.ui-dotted):not(.ui-filled) { animation: ui-line-draw 2s .6s ease-in forwards; }
+                    &.ui-dashed,&.ui-dotted { animation: ui-line-dashed-dotted 1s .6s ease-in forwards; }
+                    &.ui-filled { animation: ui-line-filled .6s forwards; }
                 }
                 circle { animation: ui-line-circles .6s forwards; }
             }
         }
     }
 
-    .chart-info {
+    .ui-chart-info {
         list-style: none; text-align: center; display: block;
 
         li {
