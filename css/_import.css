@@ -6184,14 +6184,14 @@ label.custom {
 }
 /* cards */
 .ui-card,
-[class*="card-"]:not(.ui-card-side) {
+[class*="ui-card-"]:not(.ui-card-side) {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-card-bg);
   display: block;
   position: relative;
 }
 .ui-card:not(:last-child),
-[class*="card-"]:not(.ui-card-side):not(:last-child) {
+[class*="ui-card-"]:not(.ui-card-side):not(:last-child) {
   margin-bottom: 20px;
 }
 .ui-card:before,
@@ -8819,7 +8819,7 @@ button.ui-dialog-custom:focus {
   background-color: hsl(0, 0%, 98%);
   background-color: var(--ui-body-bg);
 }
-.card .photo-slider:not(.loaded) {
+.ui-card .photo-slider:not(.loaded) {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-card-bg);
 }
@@ -9633,48 +9633,48 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.icon) {
   animation: ui-pie-spin-r 1.6s ease-in forwards;
 }
 /* svg map */
-.svg-map {
+.ui-svg-map {
   position: relative;
 }
-.svg-map svg {
+.ui-svg-map svg {
   width: 100%;
   height: auto;
   margin-right: auto;
   margin-left: auto;
   display: block;
 }
-html:not(.ui-ie) .svg-map svg {
+html:not(.ui-ie) .ui-svg-map svg {
   height: auto;
 }
-.ui-ie .svg-map svg {
+.ui-ie .ui-svg-map svg {
   height: 360px;
 }
-.svg-map svg path {
+.ui-svg-map svg path {
   stroke-width: 1.5;
 }
-.svg-map svg path:not([fill]) {
+.ui-svg-map svg path:not([fill]) {
   fill: hsla(0, 0%, 0%, 0.08);
   fill: var(--ui-svg-map-path-fill);
 }
-.svg-map svg path:not([fill]):hover {
+.ui-svg-map svg path:not([fill]):hover {
   fill: hsla(0, 0%, 0%, 0.15);
   fill: var(--ui-svg-map-path-fill-hover);
 }
-.svg-map svg path:not([stroke]) {
+.ui-svg-map svg path:not([stroke]) {
   stroke: hsl(0, 0%, 98%);
   stroke: var(--ui-body-bg);
 }
-.card .svg-map svg path:not([stroke]) {
+.ui-card .ui-svg-map svg path:not([stroke]) {
   stroke: hsl(0, 0%, 100%);
   stroke: var(--ui-card-bg);
 }
-.svg-map svg path.active:not([fill]) {
+.ui-svg-map svg path.ui-active:not([fill]) {
   fill: currentColor;
 }
-.svg-map svg path.active:hover {
+.ui-svg-map svg path.ui-active:hover {
   opacity: 1 !important;
 }
-.svg-map svg path[data-ui-href] {
+.ui-svg-map svg path[data-ui-href] {
   cursor: pointer;
 }
 /* themes */
