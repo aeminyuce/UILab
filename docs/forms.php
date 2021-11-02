@@ -826,12 +826,12 @@
                             <label class="form-label">Label</label>
                         </div>
                         <div class="col-6 align-r">
-                            <div class="dropdown menu-l ui-ease-dropdown">
+                            <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                                 <button class="ui-btn ui-btn-xs ui-btn-ghost font-color-black-muted round">
                                     Dropdown Button
-                                    <svg class="toggle-icon icon margin-3-l"><use href="#angle-down"/></svg>
+                                    <svg class="ui-toggle-icon icon margin-3-l"><use href="#angle-down"/></svg>
                                 </button>
-                                <ul class="dropdown-menu round shadow-lg">
+                                <ul class="ui-dropdown-menu round shadow-lg">
                                     <li><a href="#">Dropdown Link</a></li>
                                     <li><a href="#">Dropdown Link</a></li>
                                     <li><a href="#">Dropdown Link</a></li>

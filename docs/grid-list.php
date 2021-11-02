@@ -34,13 +34,13 @@
                                 </div>
                             </div>
                             <div class="col-lg-3 col-6 no-fluid">
-                                <div class="dropdown menu-l block ui-ease-dropdown">
+                                <div class="ui-dropdown ui-menu-l block ui-ease-dropdown">
                                     <button class="ui-btn align-l round ui-fill-light-100">
                                         <span>
                                             <svg class="icon"><use href="#sort"></svg> Sort
                                         </span>
                                     </button>
-                                    <ul class="dropdown-menu round shadow-lg">
+                                    <ul class="ui-dropdown-menu round shadow-lg">
                                         <li>
                                             <label class="radio" data-ui-sort="1">
                                                 <svg class="icon"><use href="#sort"></svg>

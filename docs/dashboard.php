@@ -62,16 +62,16 @@
 
                     <button class="tab tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block ui-color">
                         <svg class="icon margin-15-r"><use href="#users"/></svg>
-                        <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon icon right"><use href="#angle-down"/></svg>
                         Employees
                     </button>
 
                     <div class="tab-content">
                         <div class="padding-15-v padding-3-l">
-                            <ul class="tabs list-spacer-15 padding-20-l ui-ease-2nd-btn" data-ui-classes="ui-color">
+                            <ul class="tabs list-spacer-15 padding-30-l ui-ease-2nd-btn" data-ui-classes="ui-color">
                                 <li>
                                     <a class="tab tab-toggle opacity" href="#">
-                                        <svg class="toggle-icon icon margin-10-r right"><use href="#arrow-down"/></svg>
+                                        <svg class="ui-toggle-icon icon margin-10-r right"><use href="#arrow-down"/></svg>
                                         Managers
                                     </a>
                                     <div class="tab-content">
@@ -84,7 +84,7 @@
                                 </li>
                                 <li>
                                     <a class="tab tab-toggle opacity" href="#">
-                                        <svg class="toggle-icon icon margin-10-r right"><use href="#arrow-down"/></svg>
+                                        <svg class="ui-toggle-icon icon margin-10-r right"><use href="#arrow-down"/></svg>
                                         Team Leaders
                                     </a>
                                     <div class="tab-content">
@@ -104,12 +104,12 @@
 
                     <button class="tab tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#moneys"/></svg>
-                        <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon icon right"><use href="#angle-down"/></svg>
                         Payments
                     </button>
                     <div class="tab-content">
                         <div class="padding-15-v padding-3-l">
-                            <ul class="list-spacer-15 padding-20-l ui-ease-2nd-btn">
+                            <ul class="list-spacer-15 padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">New Payment</a></li>
                                 <li><a class="opacity" href="#">Recent Payments</a></li>
                                 <li><a class="opacity" href="#">Last Month</a></li>
@@ -121,12 +121,12 @@
 
                     <button class="tab tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#calendar-check"/></svg>
-                        <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon icon right"><use href="#angle-down"/></svg>
                         Events
                     </button>
                     <div class="tab-content">
                         <div class="padding-15-v padding-3-l">
-                            <ul class="list-spacer-15 padding-20-l ui-ease-2nd-btn">
+                            <ul class="list-spacer-15 padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">New Event</a></li>
                                 <li><a class="opacity" href="#">Recent Activities</a></li>
                                 <li><a class="opacity" href="#">This Week</a></li>
@@ -137,12 +137,12 @@
 
                     <button class="tab tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#files"/></svg>
-                        <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon icon right"><use href="#angle-down"/></svg>
                         Documents
                     </button>
                     <div class="tab-content">
                         <div class="padding-15-v padding-3-l">
-                            <ul class="list-spacer-15 padding-20-l ui-ease-2nd-btn">
+                            <ul class="list-spacer-15 padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">New Document</a></li>
                                 <li><a class="opacity" href="#">Members</a></li>
                                 <li><a class="opacity" href="#">Groups</a></li>
@@ -155,12 +155,12 @@
 
                     <button class="tab tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#chart-line"/></svg>
-                        <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon icon right"><use href="#angle-down"/></svg>
                         Statistics
                     </button>
                     <div class="tab-content">
                         <div class="padding-15-v padding-3-l">
-                            <ul class="list-spacer-15 padding-20-l ui-ease-2nd-btn">
+                            <ul class="list-spacer-15 padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">Sales</a></li>
                                 <li><a class="opacity" href="#">Profit</a></li>
                                 <li><a class="opacity" href="#">Registrations</a></li>
@@ -171,12 +171,12 @@
 
                     <button class="tab tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#doc"/></svg>
-                        <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon icon right"><use href="#angle-down"/></svg>
                         Reports
                     </button>
                     <div class="tab-content">
                         <div class="padding-15-v padding-3-l">
-                            <ul class="list-spacer-15 padding-20-l ui-ease-2nd-btn">
+                            <ul class="list-spacer-15 padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">New Report</a></li>
                                 <li><a class="opacity" href="#">Market Research</a></li>
                                 <li><a class="opacity" href="#">Industry Data</a></li>
@@ -189,12 +189,12 @@
 
                     <button class="tab tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
                         <svg class="icon margin-15-r"><use href="#truck"/></svg>
-                        <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon icon right"><use href="#angle-down"/></svg>
                         Orders
                     </button>
                     <div class="tab-content">
                         <div class="padding-15-v padding-3-l">
-                            <ul class="list-spacer-15 padding-20-l ui-ease-2nd-btn">
+                            <ul class="list-spacer-15 padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">New Order</a></li>
                                 <li><a class="opacity" href="#">Activity</a></li>
                                 <li><a class="opacity" href="#">Delivered</a></li>
@@ -240,33 +240,33 @@
                     <button class="ui-btn font-color-black-muted ui-btn-ghost padding-10 circle" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
                         <svg class="icon"><use href="#search"/></svg>
                     </button>
-                    <div class="dropdown nav ui-ease-dropdown">
+                    <div class="ui-dropdown ui-nav ui-ease-dropdown">
                         <button class="ui-btn font-color-black-muted ui-btn-ghost padding-10 circle hidden-sm">
                             My Jobs
-                            <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
+                            <svg class="ui-toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                         </button>
                         <button class="ui-btn font-color-black-muted ui-btn-ghost padding-10 circle visible-sm">
                             <svg class="icon"><use href="#angle-down"/></svg>
                         </button>
-                        <ul class="dropdown-menu list-column-2 has-icon round shadow-lg">
-                            <li><a href="#"><b class="list-icon">23</b> Waiting</a></li>
-                            <li><a href="#"><b class="list-icon">258</b> Expert</a></li>
-                            <li><a href="#"><b class="list-icon">49</b> On Audit</a></li>
-                            <li><a href="#"><b class="list-icon">68</b> Delayed</a></li>
-                            <li><a href="#"><b class="list-icon">23</b> Waiting</a></li>
-                            <li><a href="#"><b class="list-icon">258</b> Expert</a></li>
-                            <li><a href="#"><b class="list-icon">49</b> On Audit</a></li>
-                            <li><a href="#"><b class="list-icon">68</b> Delayed</a></li>
+                        <ul class="ui-dropdown-menu list-column-2 ui-has-icon round shadow-lg">
+                            <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
+                            <li><a href="#"><b class="ui-list-icon">258</b> Expert</a></li>
+                            <li><a href="#"><b class="ui-list-icon">49</b> On Audit</a></li>
+                            <li><a href="#"><b class="ui-list-icon">68</b> Delayed</a></li>
+                            <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
+                            <li><a href="#"><b class="ui-list-icon">258</b> Expert</a></li>
+                            <li><a href="#"><b class="ui-list-icon">49</b> On Audit</a></li>
+                            <li><a href="#"><b class="ui-list-icon">68</b> Delayed</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="inline">
-                    <div class="dropdown menu-l ui-ease-dropdown">
+                    <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                         <button class="ui-btn font-color-black-muted ui-btn-square ui-btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Personal Logs">
                             <svg class="icon"><use href="#grid-column"/></svg>
                         </button>
-                        <div class="dropdown-menu round shadow-lg no-scroll">
+                        <div class="ui-dropdown-menu round shadow-lg no-scroll">
                             <div class="tabs xs-full-width ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color" style="min-width: 300px;">
 
                                 <div class="ui-btn-holder font-color-black-muted align-c ui-border-b ui-ease-1st-btn">
@@ -338,11 +338,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="dropdown menu-l ui-ease-dropdown">
+                    <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                         <button class="ui-btn font-color-black-muted ui-btn-square ui-btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Notification Center">
                             <svg class="icon"><use href="#bars-right"/></svg>
                         </button>
-                        <div class="dropdown-menu round shadow-lg no-scroll">
+                        <div class="ui-dropdown-menu round shadow-lg no-scroll">
                             <div class="tabs xs-full-width ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color" style="min-width: 300px;">
 
                                 <div class="ui-btn-holder font-color-black-muted align-c ui-border-b ui-ease-1st-btn">
@@ -414,11 +414,11 @@
                 </div>
 
                 <div class="right margin-10-l xs-no-margin">
-                    <span class="dropdown menu-l margin-5-l right ui-ease-dropdown">
+                    <span class="ui-dropdown ui-menu-l margin-5-l right ui-ease-dropdown">
                         <button class="ui-btn no-padding circle hover-scale-more">
                             <img class="img-photo img-photo-sm circle" src="img/profile-image.jpg" alt="">
                         </button>
-                        <ul class="dropdown-menu has-grid align-c icons-lg round shadow-lg">
+                        <ul class="ui-dropdown-menu ui-has-grid align-c icons-lg round shadow-lg">
                             <li>
                                 <a href="#">
                                     <svg class="icon"><use href="#user"/></svg>
@@ -499,25 +499,25 @@
                                                 </div>
                                                 <div class="col-42 padding-5-v">
 
-                                                    <div class="dropdown menu-l ui-ease-dropdown">
+                                                    <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                                                         <button type="button" class="ui-btn ui-btn-lg ui-btn-ghost ui-btn-square round">
                                                             <svg class="icon default-icon"><use href="#ellipsis-h"/></svg>
                                                         </button>
-                                                        <ul class="dropdown-menu has-icon round shadow-lg">
+                                                        <ul class="ui-dropdown-menu ui-has-icon round shadow-lg">
                                                             <li><a href="#">
-                                                                <svg class="list-icon icon"><use href="#check"/></svg>
+                                                                <svg class="ui-list-icon icon"><use href="#check"/></svg>
                                                                 Save &amp; Continue</a>
                                                             </li>
                                                             <li><a href="#">
-                                                                <svg class="list-icon icon"><use href="#sign-out"/></svg>
+                                                                <svg class="ui-list-icon icon"><use href="#sign-out"/></svg>
                                                                 Save &amp; Exit</a>
                                                             </li>
                                                             <li><a href="#">
-                                                                <svg class="list-icon icon"><use href="#pencil"/></svg>
+                                                                <svg class="ui-list-icon icon"><use href="#pencil"/></svg>
                                                                 Save &amp; Edit</a>
                                                             </li>
                                                             <li><a href="#">
-                                                                <svg class="list-icon icon"><use href="#plus"/></svg>
+                                                                <svg class="ui-list-icon icon"><use href="#plus"/></svg>
                                                                 Save &amp; Add New</a>
                                                             </li>
                                                         </ul>
@@ -793,14 +793,14 @@
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
                                 <div class="ui-card full-h padding-15 round shadow-lg">
-                                    <div class="dropdown menu-l right ui-ease-dropdown">
+                                    <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost round">
                                             <svg class="icon"><use href="#ellipsis-h"/></svg>
                                         </button>
-                                        <ul class="dropdown-menu has-icon round shadow-lg">
-                                            <li><a href="#"><svg class="list-icon icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
-                                            <li><a href="#"><svg class="list-icon icon"><use href="#file-xls"/></svg>Download Excel</a></li>
-                                            <li><a href="#"><svg class="list-icon icon"><use href="#eye"/></svg>See Detailed Activity</a></li>
+                                        <ul class="ui-dropdown-menu ui-has-icon round shadow-lg">
+                                            <li><a href="#"><svg class="ui-list-icon icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
+                                            <li><a href="#"><svg class="ui-list-icon icon"><use href="#file-xls"/></svg>Download Excel</a></li>
+                                            <li><a href="#"><svg class="ui-list-icon icon"><use href="#eye"/></svg>See Detailed Activity</a></li>
                                         </ul>
                                     </div>
                                     <h4 class="align-l margin-5-t">Activity</h4>
@@ -993,22 +993,22 @@
                             <div class="col-xl-6 col-lg-6 col-12 col-md-6">
                                 <div class="ui-card full-h padding-15 round shadow-lg tabs" data-ui-classes="font-bold">
                                     <div class="ui-ease-tabs">
-                                        <div class="dropdown menu-l right ui-ease-dropdown">
+                                        <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
                                             <button class="ui-btn ui-btn-square ui-btn-ghost round">
                                                 <svg class="icon"><use href="#ellipsis-h"/></svg>
                                             </button>
-                                            <ul class="dropdown-menu has-icon round shadow-lg">
-                                                <li><a href="#"><svg class="list-icon icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
-                                                <li><a href="#"><svg class="list-icon icon"><use href="#file-xls"/></svg>Download Excel</a></li>
-                                                <li><a href="#"><svg class="list-icon icon"><use href="#eye"/></svg>See Detailed Statistics</a></li>
+                                            <ul class="ui-dropdown-menu ui-has-icon round shadow-lg">
+                                                <li><a href="#"><svg class="ui-list-icon icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
+                                                <li><a href="#"><svg class="ui-list-icon icon"><use href="#file-xls"/></svg>Download Excel</a></li>
+                                                <li><a href="#"><svg class="ui-list-icon icon"><use href="#eye"/></svg>See Detailed Statistics</a></li>
                                             </ul>
                                         </div>
-                                        <div class="dropdown menu-l margin-5-r right ui-ease-dropdown">
+                                        <div class="ui-dropdown ui-menu-l margin-5-r right ui-ease-dropdown">
                                             <button class="ui-btn ui-btn-ghost round">
                                                 <span>Last year</span>
-                                                <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
+                                                <svg class="ui-toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                                             </button>
-                                            <ul class="dropdown-menu round shadow-lg">
+                                            <ul class="ui-dropdown-menu round shadow-lg">
                                                 <li><label class="tab active font-bold selected">Last year</label></li>
                                                 <li><label class="tab">Past year</label></li>
                                             </ul>
@@ -1131,13 +1131,13 @@
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
                                 <div class="ui-card full-h padding-15 round shadow-lg">
-                                    <div class="dropdown menu-l right ui-ease-dropdown">
+                                    <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost round">
                                             <svg class="icon"><use href="#ellipsis-h"/></svg>
                                         </button>
-                                        <ul class="dropdown-menu has-icon round shadow-lg">
-                                            <li><a href="#"><svg class="list-icon icon"><use href="#calendar-plus"/></svg>Add to Your Calendar</a></li>
-                                            <li><a href="#"><svg class="list-icon icon"><use href="#eye"/></svg>See All Events</a></li>
+                                        <ul class="ui-dropdown-menu ui-has-icon round shadow-lg">
+                                            <li><a href="#"><svg class="ui-list-icon icon"><use href="#calendar-plus"/></svg>Add to Your Calendar</a></li>
+                                            <li><a href="#"><svg class="ui-list-icon icon"><use href="#eye"/></svg>See All Events</a></li>
                                         </ul>
                                     </div>
                                     <h4 class="align-l margin-5-t">Events</h4>
@@ -1147,14 +1147,14 @@
 
                             <div class="col-xl-6 col-lg-6 col-12 col-md-6">
                                 <div class="ui-card full-h padding-15 round shadow-lg">
-                                    <div class="dropdown menu-l right ui-ease-dropdown">
+                                    <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost round">
                                             <svg class="icon"><use href="#ellipsis-h"/></svg>
                                         </button>
-                                        <ul class="dropdown-menu has-icon round shadow-lg">
-                                            <li><a href="#"><svg class="list-icon icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
-                                            <li><a href="#"><svg class="list-icon icon"><use href="#file-xls"/></svg>Download Excel</a></li>
-                                            <li><a href="#"><svg class="list-icon icon"><use href="#eye"/></svg>See All Experts</a></li>
+                                        <ul class="ui-dropdown-menu ui-has-icon round shadow-lg">
+                                            <li><a href="#"><svg class="ui-list-icon icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
+                                            <li><a href="#"><svg class="ui-list-icon icon"><use href="#file-xls"/></svg>Download Excel</a></li>
+                                            <li><a href="#"><svg class="ui-list-icon icon"><use href="#eye"/></svg>See All Experts</a></li>
                                         </ul>
                                     </div>
                                     <h4 class="align-l margin-5-t">Experts</h4>
@@ -1187,13 +1187,13 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-3 col-6 no-fluid">
-                                                <div class="dropdown menu-l block ui-ease-dropdown">
+                                                <div class="ui-dropdown ui-menu-l block ui-ease-dropdown">
                                                     <button class="ui-btn align-l round">
                                                         <span>
                                                             <svg class="icon"><use href="#sort"/></svg> Sort
                                                         </span>
                                                     </button>
-                                                    <ul class="dropdown-menu round shadow-lg">
+                                                    <ul class="ui-dropdown-menu round shadow-lg">
                                                         <li>
                                                             <label class="radio" data-ui-sort="1">
                                                                 <svg class="icon"><use href="#sort"/></svg>

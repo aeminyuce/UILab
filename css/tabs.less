@@ -7,21 +7,21 @@
 
 .ui-ease-tabs {
     .tab {
-        .toggle-icon { transition-property: opacity, transform; transition-duration: (@ease-default * 2); }
+        .ui-toggle-icon { transition-property: opacity, transform; transition-duration: (@ease-default * 2); }
         &-content { transition-property: height, opacity; transition-duration: (@ease-default * 2); }
     }
 }
 
 .tabs {
     .tab {
-        .toggle-icon {
+        .ui-toggle-icon {
             ._icon(@tabs-toggle-icon-size) !important; margin-top: -2px;
 
             &.right { margin-top: @tabs-toggle-right-icon-margins; margin-bottom: @tabs-toggle-right-icon-margins; }
         }
 
         &.active {
-            & > .toggle-icon { transform: rotate(-180deg); opacity: 1; }
+            & > .ui-toggle-icon { transform: rotate(-180deg); opacity: 1; }
         }
 
         &-content {

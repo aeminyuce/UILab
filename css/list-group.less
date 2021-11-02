@@ -26,7 +26,7 @@
     li {
         &,& > a:not(.list-link) { transition-property: background-color; transition-duration: @ease-default; }
     }
-    .list-icon {
+    .ui-list-icon {
         &:not([class*="ui-ease-"]) { transition-property: opacity; transition-duration: @ease-default; }
     }
 }
@@ -45,7 +45,7 @@
                 margin: -@list-group-list-padding; display: block;
 
                 .ui-desktop & {
-                    &:hover .list-icon { opacity: @list-group-list-icon-opacity-hover; }
+                    &:hover .ui-list-icon { opacity: @list-group-list-icon-opacity-hover; }
                 }
             }
         }
@@ -68,7 +68,7 @@
         }
     }
 
-    .list-icon { ._icon(@list-group-default-icon-size); position: absolute; top: 50%; right: @list-group-list-padding; transform: translateY(-50%); opacity: @list-group-list-icon-opacity; }
+    .ui-list-icon { ._icon(@list-group-default-icon-size); position: absolute; top: 50%; right: @list-group-list-padding; transform: translateY(-50%); opacity: @list-group-list-icon-opacity; }
 
     .has-icon {
         each(@icon-sizes, {
@@ -77,7 +77,7 @@
                     &,& > a:not(.list-link) { padding-right: (@value + @list-group-list-padding * 2); }
                     & > a:not(.list-link) { margin-right: -(@value + @list-group-list-padding * 2); }
                 }
-                .list-icon { ._icon(@value); }
+                .ui-list-icon { ._icon(@value); }
             }
         });
     }

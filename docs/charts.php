@@ -234,12 +234,12 @@
                         <div class="ui-card round shadow-lg tabs ui-ease-tabs" data-ui-classes="font-bold">
                             <div class="ui-card-side padding-10 ui-border-b">
 
-                                <div class="dropdown menu-l right ui-ease-dropdown">
+                                <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
                                     <button class="ui-btn ui-btn-ghost round">
                                         <span>First Chart</span>
-                                        <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
+                                        <svg class="ui-toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                                     </button>
-                                    <ul class="dropdown-menu round shadow-lg">
+                                    <ul class="ui-dropdown-menu round shadow-lg">
                                         <li><label class="tab active bold selected">First chart</label></li>
                                         <li><label class="tab">Second chart</label></li>
                                     </ul>

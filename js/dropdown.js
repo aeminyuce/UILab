@@ -6,22 +6,22 @@
 ui.dropdown = {
 
     // targets
-    target: 'dropdown',
+    target: 'ui-dropdown',
 
     // main classnames
-    nameMenu: 'dropdown-menu',
+    nameMenu: 'ui-dropdown-menu',
 
-    nameHover: 'menu-hover',
-    nameMenuTop: 'menu-t',
-    nameMenuLeft: 'menu-l',
-    nameMenuCenter: 'menu-c',
+    nameHover: 'ui-menu-hover',
+    nameMenuTop: 'ui-menu-t',
+    nameMenuLeft: 'ui-menu-l',
+    nameMenuCenter: 'ui-menu-c',
 
-    nameNav: 'nav',
-    nameNavFullHor: 'nav-full-h',
+    nameNav: 'ui-nav',
+    nameNavFullHor: 'ui-nav-full-h',
 
     // helper classnames
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
+    nameOpen: 'ui-open',
+    nameOpenEase: 'ui-open-ease',
 
     // outer classnames
     nameBtn: 'ui-btn',

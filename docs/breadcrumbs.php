@@ -139,7 +139,7 @@
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn round ui-ease-btn" href="#" itemprop="item" title="Search Results">
                                     <span itemprop="name">
-                                        <svg class="icon margin-5-r"><use href="#angle-left"/></svg> Search Results
+                                        <svg class="icon icon-xxs inline-block margin-5-r"><use href="#angle-left"/></svg> Search Results
                                     </span>
                                 <meta itemprop="position" content="2" />
                             </a>
@@ -163,11 +163,11 @@
                             <meta itemprop="position" content="1" />
                         </li>
                         <li>
-                            <span class="dropdown ui-ease-dropdown">
+                            <span class="ui-dropdown ui-ease-dropdown">
                                 <button class="ui-btn round ui-fill-dark-100">
                                     <svg class="icon"><use href="#ellipsis-h"/></svg>
                                 </button>
-                                <ul class="dropdown-menu round shadow-lg">
+                                <ul class="ui-dropdown-menu round shadow-lg">
                                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                                         <a href="#" itemprop="item">
                                             <span itemprop="name">
@@ -214,11 +214,11 @@
                             <meta itemprop="position" content="1" />
                         </li>
                         <li>
-                            <span class="dropdown ui-ease-dropdown">
+                            <span class="ui-dropdown ui-ease-dropdown">
                                 <button class="ui-btn round ui-fill-dark-100">
                                     <svg class="icon"><use href="#ellipsis-h"/></svg>
                                 </button>
-                                <ul class="dropdown-menu round shadow-lg">
+                                <ul class="ui-dropdown-menu round shadow-lg">
                                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                                         <a href="#" itemprop="item">
                                             <span itemprop="name">

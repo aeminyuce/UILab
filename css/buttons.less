@@ -28,7 +28,7 @@
 }
 
 .ui-btn {
-    ._color-var(black); text-align: center; vertical-align: middle; line-height: (@btn-default - @btn-default-padding * 2); height: @btn-default; ._bg-var(btn-bg); padding-top: @btn-default-padding; padding-bottom: @btn-default-padding; display: inline-block; position: relative; cursor: pointer; @no-appearance();
+    ._color-var(black); font-size: @font-size; text-align: center; vertical-align: middle; line-height: (@btn-default - @btn-default-padding * 2); height: @btn-default; ._bg-var(btn-bg); padding-top: @btn-default-padding; padding-bottom: @btn-default-padding; display: inline-block; position: relative; cursor: pointer; @no-appearance();
 
     &:not(.ui-border):not([class*="ui-border-"]) { border-width: 0; }
     &:not(.ui-btn-multi) { white-space: nowrap; }
@@ -80,7 +80,7 @@
     }
 
     .icon {
-        &:not(.toggle-icon) { vertical-align: bottom; ._icon(@btn-default-icon); }
+        &:not(.ui-toggle-icon) { vertical-align: bottom; ._icon(@btn-default-icon); }
         &:not(.no-opacity) { opacity: .45; }
     }
     &[class*="ui-fill-dark-"] {
@@ -109,7 +109,7 @@
         &-dual { padding-top: (@btn-lg-padding - @border-dual); padding-bottom: (@btn-lg-padding - @border-dual); }
     }
 
-    .icon:not(.toggle-icon) { ._icon(@btn-lg-icon); }
+    .icon:not(.ui-toggle-icon) { ._icon(@btn-lg-icon); }
 }
 
 .ui-btn-sm {
@@ -127,7 +127,7 @@
         &-dual { padding-top: (@btn-sm-padding - @border-dual); padding-bottom: (@btn-sm-padding - @border-dual); }
     }
 
-    .icon:not(.toggle-icon) { ._icon(@btn-sm-icon); }
+    .icon:not(.ui-toggle-icon) { ._icon(@btn-sm-icon); }
 }
 
 .ui-btn-xs {
@@ -145,7 +145,7 @@
         &-dual { padding-top: (@btn-xs-padding - @border-dual); padding-bottom: (@btn-xs-padding - @border-dual); }
     }
 
-    .icon:not(.toggle-icon) { ._icon(@btn-xs-icon); }
+    .icon:not(.ui-toggle-icon) { ._icon(@btn-xs-icon); }
 }
 
 .ui-btn-xxs {
@@ -163,7 +163,7 @@
         &-dual { padding-top: (@btn-xxs-padding - @border-dual); padding-bottom: (@btn-xxs-padding - @border-dual); }
     }
 
-    .icon:not(.toggle-icon) { ._icon(@btn-xxs-icon); }
+    .icon:not(.ui-toggle-icon) { ._icon(@btn-xxs-icon); }
 }
 
 .mobile-menu {

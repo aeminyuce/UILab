@@ -95,11 +95,11 @@
                     <div class="margin-10-b md-align-c ui-border-b ui-theme-sub form-lg ui-ease-1st-btn">
                         <button class="tab tab-toggle ui-btn ui-btn-ghost ui-border-b">
                             Tab Button
-                            <svg class="icon toggle-icon margin-3-l"><use href="#angle-down"></use></svg>
+                            <svg class="icon ui-toggle-icon margin-3-l"><use href="#angle-down"></use></svg>
                         </button>
                         <button class="tab tab-toggle ui-btn ui-btn-ghost ui-border-b">
                             Tab Button
-                            <svg class="icon toggle-icon margin-3-l"><use href="#angle-down"></use></svg>
+                            <svg class="icon ui-toggle-icon margin-3-l"><use href="#angle-down"></use></svg>
                         </button>
                     </div>
 
@@ -318,7 +318,7 @@
                 <div class="tabs padding-30-b form-lg ui-theme-sub ui-ease-tabs" data-ui-classes="ui-fill-dark-100">
 
                     <button class="tab tab-toggle ui-btn block align-l margin-1-b round ui-ease-btn">
-                        <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
                     <div class="tab-content round ui-fill-light-100">
@@ -328,7 +328,7 @@
                     </div>
 
                     <button class="tab tab-toggle ui-btn block align-l margin-1-b round ui-ease-btn">
-                        <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
                     <div class="tab-content round ui-fill-light-100">
@@ -340,7 +340,7 @@
                     </div>
 
                     <button class="tab tab-toggle ui-btn block align-l margin-1-b round ui-ease-btn">
-                        <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
                     <div class="tab-content round ui-fill-light-100">
@@ -357,14 +357,14 @@
                 <div class="tabs padding-30-b form-lg ui-theme-sub ui-ease-tabs" data-ui-classes="ui-fill-dark-100">
 
                     <button class="tab tab-toggle ui-btn block align-l margin-1-b ui-ease-btn">
-                        <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
                     <div class="tab-content">
 
                         <div class="tabs icons-xs" data-ui-classes="ui-color">
                             <button class="tab tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
-                                <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
+                                <svg class="ui-toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
                             <div class="tab-content">
@@ -374,7 +374,7 @@
                             </div>
 
                             <button class="tab tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
-                                <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
+                                <svg class="ui-toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
                             <div class="tab-content">
@@ -387,14 +387,14 @@
                     </div>
 
                     <button class="tab tab-toggle ui-btn block align-l margin-1-b ui-ease-btn">
-                        <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
                     <div class="tab-content">
 
                         <div class="tabs icons-xs" data-ui-classes="ui-color">
                             <button class="tab tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
-                                <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
+                                <svg class="ui-toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
                             <div class="tab-content">
@@ -404,7 +404,7 @@
                             </div>
 
                             <button class="tab tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
-                                <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
+                                <svg class="ui-toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
                             <div class="tab-content">
@@ -417,14 +417,14 @@
                     </div>
 
                     <button class="tab tab-toggle ui-btn block align-l margin-1-b ui-ease-btn">
-                        <svg class="toggle-icon icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon icon right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
                     <div class="tab-content">
 
                         <div class="tabs icons-xs" data-ui-classes="ui-color">
                             <button class="tab tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
-                                <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
+                                <svg class="ui-toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
                             <div class="tab-content">
@@ -434,7 +434,7 @@
                             </div>
 
                             <button class="tab tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
-                                <svg class="toggle-icon icon right"><use href="#arrow-down"/></svg>
+                                <svg class="ui-toggle-icon icon right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
                             <div class="tab-content">

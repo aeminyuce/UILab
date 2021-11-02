@@ -19,17 +19,17 @@
 
                             <div class="hidden-sm">
                                 <div class="ui-ease-1st-btn icons-no-opacity form-lg add-mobile-menu-r">
-                                    <a class="ui-btn ui-btn-sm-fluid ui-btn-ghost" href="#">
+                                    <button class="ui-btn ui-btn-sm-fluid ui-btn-ghost">
                                         <svg class="icon margin-5-r visible-sm"><use href="#home"/></svg>
                                         <b>Home</b>
-                                    </a>
-                                    <div class="dropdown ui-ease-dropdown">
+                                    </button>
+                                    <div class="ui-dropdown ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-sm-fluid ui-btn-ghost">
                                             <svg class="icon margin-5-r visible-sm"><use href="#box"/></svg>
                                             <b>Products</b>
-                                            <svg class="toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
+                                            <svg class="ui-toggle-icon icon margin-5-l"><use href="#angle-down"/></svg>
                                         </button>
-                                        <ul class="dropdown-menu shadow-lg">
+                                        <ul class="ui-dropdown-menu shadow-lg">
                                             <li><a href="#">Gardening</a></li>
                                             <li><a href="#">Planting</a></li>
                                             <li><a href="#">Irrigation Systems</a></li>
