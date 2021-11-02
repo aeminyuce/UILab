@@ -6593,24 +6593,24 @@ label.custom {
   background-color: hsla(0, 0%, 100%, 0.25);
 }
 /* steps */
-.steps-bar {
+.ui-steps-bar {
   list-style: none;
   display: flex;
 }
-.steps-bar:not([class*="ui-color"]) {
+.ui-steps-bar:not([class*="ui-color"]) {
   color: hsl(142, 82%, 42%);
 }
-.steps-bar li {
+.ui-steps-bar li {
   font-size: 11px;
   line-height: normal;
   text-align: center;
   position: relative;
   flex-grow: 1;
 }
-html:not(.ui-ie) .steps-bar li {
+html:not(.ui-ie) .ui-steps-bar li {
   flex-basis: 100%;
 }
-.steps-bar li:before {
+.ui-steps-bar li:before {
   content: "";
   font-weight: 700;
   font-size: 11px;
@@ -6626,11 +6626,11 @@ html:not(.ui-ie) .steps-bar li {
   position: relative;
   z-index: 1;
 }
-.ui-card .steps-bar li:before {
+.ui-card .ui-steps-bar li:before {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-card-bg);
 }
-.steps-bar li:after {
+.ui-steps-bar li:after {
   content: "";
   width: 100%;
   height: 2px;
@@ -6640,21 +6640,21 @@ html:not(.ui-ie) .steps-bar li {
   left: -50%;
   opacity: 0.45;
 }
-.steps-bar li:first-child:after {
+.ui-steps-bar li:first-child:after {
   content: none;
 }
-.steps-bar li.active:before {
+.ui-steps-bar li.ui-active:before {
   border-color: currentColor;
 }
-.ui-card .steps-bar li.active:before {
+.ui-card .ui-steps-bar li.ui-active:before {
   background-color: hsl(0, 0%, 100%) !important;
   background-color: var(--ui-card-bg) !important;
 }
-.steps-bar li.active ~ li {
+.ui-steps-bar li.ui-active ~ li {
   color: hsla(0, 0%, 0%, 0.32);
   color: var(--ui-steps-inactive-color);
 }
-.steps-bar li.active ~ li:before {
+.ui-steps-bar li.ui-active ~ li:before {
   width: 10px;
   height: 10px;
   background-color: hsl(0, 0%, 98%);
@@ -6663,19 +6663,18 @@ html:not(.ui-ie) .steps-bar li {
   border-color: hsla(0, 0%, 0%, 0.12);
   border-color: var(--ui-steps-border);
 }
-.ui-card .steps-bar li.active ~ li:before {
+.ui-card .ui-steps-bar li.ui-active ~ li:before {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-card-bg);
   border-color: hsla(0, 0%, 0%, 0.12);
   border-color: var(--ui-steps-border);
 }
-.steps-bar li.active ~ li:after {
+.ui-steps-bar li.ui-active ~ li:after {
   background-color: hsla(0, 0%, 0%, 0.12);
   background-color: var(--ui-steps-border);
   left: -50%;
 }
-.steps-bar li > span,
-.steps-bar.steps-icon li > .icon {
+.ui-steps-bar li > span {
   width: 18px;
   height: 18px;
   display: block;
@@ -6685,36 +6684,36 @@ html:not(.ui-ie) .steps-bar li {
   z-index: 2;
   transform: translateX(-50%);
 }
-.steps-bar:not(.steps-icon) li:before {
+.ui-steps-bar:not(.ui-steps-icon) li:before {
   background-color: hsl(142, 82%, 42%);
 }
-.steps-bar:not(.steps-icon) li.active:before {
+.ui-steps-bar:not(.ui-steps-icon) li.ui-active:before {
   background-color: hsl(0, 0%, 98%);
   background-color: var(--ui-body-bg);
 }
-.steps-bar[class*="ui-color"] li:before {
+.ui-steps-bar[class*="ui-color"] li:before {
   background-color: currentColor;
   border-color: currentColor;
 }
-.steps-bar[class*="ui-color"] li:after {
+.ui-steps-bar[class*="ui-color"] li:after {
   background-color: currentColor;
 }
-.steps-bar.steps-icon li:before {
+.ui-steps-bar.ui-steps-icon li:before {
   background-color: hsl(0, 0%, 98%);
   background-color: var(--ui-body-bg);
   border-color: hsl(0, 0%, 98%);
   border-color: var(--ui-body-bg);
 }
-.ui-card .steps-bar.steps-icon li:before {
+.ui-card .ui-steps-bar.ui-steps-icon li:before {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-card-bg);
   border-color: hsla(0, 0%, 0%, 0.12);
   border-color: var(--ui-steps-border);
 }
-.steps-bar.steps-icon li > .icon {
+.ui-steps-bar.ui-steps-icon li > .icon {
   color: currentColor;
 }
-.steps-bar.steps-icon li.active ~ li > .icon {
+.ui-steps-bar.ui-steps-icon li.ui-active ~ li > .icon {
   opacity: 0;
 }
 /* sticky header */

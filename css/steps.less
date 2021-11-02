@@ -21,7 +21,7 @@
     --ui-steps-border: @steps-border-dark;
 }
 
-.steps-bar {
+.ui-steps-bar {
     list-style: none; display: flex;
 
     &:not([class*="ui-color"]) { color: @green; }
@@ -39,7 +39,7 @@
             &:after { content: none; }
         }
 
-        &.active {
+        &.ui-active {
             &:before {
                 border-color: currentColor;
 
@@ -59,10 +59,10 @@
 
         & > span { width: @steps-active-size; height: @steps-active-size; display: block; position: absolute; top: @steps-margin-v; left: 50%; z-index: 2; transform: translateX(-50%); }
     }
-    &:not(.steps-icon) {
+    &:not(.ui-steps-icon) {
         li {
             &:before { background-color: @green; }
-            &.active {
+            &.ui-active {
                 &:before { ._bg-var(body-bg); }
             }
         }
@@ -74,7 +74,7 @@
         }
     }
 
-    &.steps-icon {
+    &.ui-steps-icon {
         li {
             &:before {
                 ._bg-var(body-bg); ._border-color-var(body-bg);
@@ -87,7 +87,7 @@
 
                 &:extend(.steps-bar li > span);
             }
-            &.active ~ li {
+            &.ui-active ~ li {
                 & > .icon { opacity: 0; }
             }
         }
