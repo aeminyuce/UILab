@@ -271,10 +271,10 @@
 
                                 <div class="ui-btn-holder font-color-black-muted align-c ui-border-b ui-ease-1st-btn">
                                     <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Favorites">
-                                        <svg class="icon ui-no"><use href="#star"/></svg>
+                                        <svg class="icon"><use href="#star"/></svg>
                                     </button>
                                     <button class="tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="History">
-                                        <svg class="icon ui-no"><use href="#history"/></svg>
+                                        <svg class="icon"><use href="#history"/></svg>
                                     </button>
                                 </div>
                                 <div class="tab-content align-l scroll-v open open-ease" style="max-height: 420px;">
@@ -347,16 +347,16 @@
 
                                 <div class="ui-btn-holder font-color-black-muted align-c ui-border-b ui-ease-1st-btn">
                                     <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Notifications">
-                                        <svg class="icon ui-no"><use href="#bell"/></svg>
+                                        <svg class="icon"><use href="#bell"/></svg>
                                     </button>
                                     <button class="tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="Notes">
-                                        <svg class="icon ui-no"><use href="#pencil-write"/></svg>
+                                        <svg class="icon"><use href="#pencil-write"/></svg>
                                     </button>
                                     <button class="tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="Started Jobs">
-                                        <svg class="icon ui-no"><use href="#hourglass-start"/></svg>
+                                        <svg class="icon"><use href="#hourglass-start"/></svg>
                                     </button>
                                     <button class="tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="Completed Jobs">
-                                        <svg class="icon ui-no"><use href="#hourglass-end"/></svg>
+                                        <svg class="icon"><use href="#hourglass-end"/></svg>
                                     </button>
                                 </div>
                                 <div class="tab-content align-l scroll-v open open-ease" style="max-height: 420px;">
@@ -847,11 +847,11 @@
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
                                 <div class="ui-card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
-                                    <div class="tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-b ui-border-lg ui-stroke ui-color">
+                                    <div class="tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                                         <div class="ui-btn-holder font-color-black-muted align-c margin-10-b ui-border-b form-lg ui-ease-1st-btn">
                                             <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active">Delayed</button>
-                                            <button class="tab ui-btn ui-btn-ghost round-t">Paused</button>
+                                            <button class="tab ui-btn ui-btn-ghost round-t ui-border-b">Paused</button>
                                         </div>
                                         <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
                                             <div class="list-group margin-15-h">

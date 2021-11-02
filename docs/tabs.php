@@ -453,28 +453,28 @@
 
                     <div class="font-color-black-muted margin-30-b align-c icons-xxl xs-align-l ui-theme-sub">
                         <button class="tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn ui-color icons-default active">
-                            <svg class="icon ui-no hidden-md"><use href="#user-check"/></svg>
+                            <svg class="icon hidden-md"><use href="#user-check"/></svg>
                             <span class="block margin-10-t md-no-margin">1. User Details</span>
                         </button>
 
                         <svg class="icon margin-15-h font-color-black-50 hidden-md"><use href="#long-arrow-right"/></svg>
 
                         <button class="tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn">
-                            <svg class="icon ui-no hidden-md"><use href="#map"/></svg>
+                            <svg class="icon hidden-md"><use href="#map"/></svg>
                             <span class="block margin-10-t md-no-margin">2. Address Details</span>
                         </button>
 
                         <svg class="icon margin-15-h font-color-black-50 hidden-md"><use href="#long-arrow-right"/></svg>
 
                         <button class="tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn">
-                            <svg class="icon ui-no hidden-md"><use href="#credit-card"/></svg>
+                            <svg class="icon hidden-md"><use href="#credit-card"/></svg>
                             <span class="block margin-10-t md-no-margin">3. Payment Details</span>
                         </button>
 
                         <svg class="icon margin-15-h font-color-black-50 hidden-md"><use href="#long-arrow-right"/></svg>
 
                         <button class="tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn">
-                            <svg class="icon ui-no hidden-md"><use href="#truck-fill"/></svg>
+                            <svg class="icon hidden-md"><use href="#truck-fill"/></svg>
                             <span class="block margin-10-t md-no-margin">4. Shipping</span>
                         </button>
                     </div>

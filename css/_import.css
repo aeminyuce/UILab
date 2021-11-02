@@ -9746,6 +9746,14 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-gray .ui-color:not([class*="ui-theme-"]) {
   color: hsl(0, 0%, 70%);
 }
+.ui-theme-gray.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-gray .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-gray.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-gray .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-gray.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-gray .ui-color:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+  color: hsl(0, 0%, 70%) !important;
+}
 .ui-theme-gray.ui-stroke,
 .ui-theme-gray .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(0, 0%, 70%);
@@ -9813,6 +9821,14 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-green.ui-color,
 .ui-theme-green .ui-color:not([class*="ui-theme-"]) {
   color: hsl(142, 82%, 42%);
+}
+.ui-theme-green.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-green .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-green.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-green .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-green.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-green .ui-color:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+  color: hsl(142, 82%, 42%) !important;
 }
 .ui-theme-green.ui-stroke,
 .ui-theme-green .ui-stroke:not([class*="ui-theme-"]) {
@@ -9882,6 +9898,14 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-yellow .ui-color:not([class*="ui-theme-"]) {
   color: hsl(42, 100%, 45%);
 }
+.ui-theme-yellow.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-yellow .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-yellow.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-yellow .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-yellow.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-yellow .ui-color:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+  color: hsl(42, 100%, 45%) !important;
+}
 .ui-theme-yellow.ui-stroke,
 .ui-theme-yellow .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(42, 100%, 45%);
@@ -9949,6 +9973,14 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-orange.ui-color,
 .ui-theme-orange .ui-color:not([class*="ui-theme-"]) {
   color: hsl(30, 100%, 50%);
+}
+.ui-theme-orange.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-orange .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-orange.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-orange .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-orange.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-orange .ui-color:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+  color: hsl(30, 100%, 50%) !important;
 }
 .ui-theme-orange.ui-stroke,
 .ui-theme-orange .ui-stroke:not([class*="ui-theme-"]) {
@@ -10018,6 +10050,14 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-red .ui-color:not([class*="ui-theme-"]) {
   color: hsl(0, 74%, 55%);
 }
+.ui-theme-red.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-red .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-red.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-red .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-red.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-red .ui-color:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+  color: hsl(0, 74%, 55%) !important;
+}
 .ui-theme-red.ui-stroke,
 .ui-theme-red .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(0, 74%, 55%);
@@ -10086,6 +10126,14 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-base .ui-color:not([class*="ui-theme-"]) {
   color: hsl(226, 52%, 50%);
 }
+.ui-theme-base.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-base .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-base.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-base .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-base.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-base .ui-color:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+  color: hsl(226, 52%, 50%) !important;
+}
 .ui-theme-base.ui-stroke,
 .ui-theme-base .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(226, 52%, 50%);
@@ -10153,6 +10201,14 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-sub.ui-color,
 .ui-theme-sub .ui-color:not([class*="ui-theme-"]) {
   color: hsl(206, 87%, 50%);
+}
+.ui-theme-sub.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-sub .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-sub.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-sub .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-sub.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-sub .ui-color:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+  color: hsl(206, 87%, 50%) !important;
 }
 .ui-theme-sub.ui-stroke,
 .ui-theme-sub .ui-stroke:not([class*="ui-theme-"]) {

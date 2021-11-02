@@ -52,7 +52,14 @@
           }
     });
 
-    .ui-theme-@{name}.ui-color,.ui-theme-@{name} .ui-color:not([class*="ui-theme-"]) { color: @color; }
+    .ui-theme-@{name}.ui-color,.ui-theme-@{name} .ui-color:not([class*="ui-theme-"]) {
+        color: @color;
+
+        .icon,a,button {
+            &:not([class*="ui-fill-"]):not([class*="font-color-"]) { color: @color !important; }
+        }
+    }
+
     .ui-theme-@{name}.ui-stroke,.ui-theme-@{name} .ui-stroke:not([class*="ui-theme-"]) { border-color: @color; }
 }
 
