@@ -19,7 +19,7 @@
                     </button>
                 </div>
 
-                <div class="tabs align-l icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn scroll-v scrollbar-faded add-mobile-menu-l" data-ui-classes="ui-color">
+                <div class="tabs align-l icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn scroll-v ui-scrollbar-faded add-mobile-menu-l" data-ui-classes="ui-color">
 
                     <div class="padding-10">
                         <div class="small margin-10-b font-color-white-muted">Personal Activity</div>
@@ -1773,7 +1773,7 @@
         </button>
         <img src="img/logo-udashboard.png" height="66" alt="">
     </div>
-    <div class="mobile-menu-content no-padding scroll-v scrollbar-faded"></div>
+    <div class="mobile-menu-content no-padding scroll-v ui-scrollbar-faded"></div>
 </div>
 
 <!-- modal search -->

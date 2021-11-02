@@ -1686,7 +1686,7 @@
 
                     <label class="form-label">Multi Select Example</label>
                     <div class="select-multi form-light round ui-border-dual ui-ease-form">
-                        <select class="scrollbar-faded" multiple size="6">
+                        <select class="ui-scrollbar-faded" multiple size="6">
                             <option value="">Value 1</option>
                             <option>Value 2</option>
                             <option>Value 3</option>
@@ -1817,7 +1817,7 @@
                     <span class="sp-10"></span>
 
                     <div class="textarea round ui-border-dual form-light ui-ease-form" data-ui-counter="255">
-                        <textarea class="required scrollbar-faded" rows="4" placeholder="Required example with counter textarea" minlength="10"></textarea>
+                        <textarea class="required ui-scrollbar-faded" rows="4" placeholder="Required example with counter textarea" minlength="10"></textarea>
                     </div>
                     <p class="required-msg">Please, write your comments more than 10 characters.</p>
                     <i class="hint font-color-white-muted">* Required</i>

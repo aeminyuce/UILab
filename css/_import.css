@@ -6563,7 +6563,7 @@ label.custom {
   background-color: hsl(0, 0%, 92%);
   background-color: var(--ui-scrollbar-scroll-bg);
 }
-.ui-desktop .scrollbar-faded::-webkit-scrollbar {
+.ui-desktop .ui-scrollbar-faded::-webkit-scrollbar {
   background-color: hsla(0, 0%, 0%, 0.045);
   background-color: var(--ui-scrollbar-scroll-faded-bg);
 }
