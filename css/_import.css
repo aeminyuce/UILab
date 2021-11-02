@@ -8802,28 +8802,28 @@ button.ui-dialog-custom:focus {
     transform: rotate(360deg);
   }
 }
-.photo-slider {
+.ui-photo-slider {
   white-space: nowrap;
   overflow: hidden;
   display: block;
   position: relative;
 }
-.photo-slider:not(.loaded) {
+.ui-photo-slider:not(.ui-loaded) {
   background-color: hsl(0, 0%, 98%);
   background-color: var(--ui-body-bg);
 }
-.ui-card .photo-slider:not(.loaded) {
+.ui-card .ui-photo-slider:not(.ui-loaded) {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-card-bg);
 }
-.photo-slider:not(.loaded) .slider-loader {
+.ui-photo-slider:not(.ui-loaded) .ui-slider-loader {
   opacity: 0.45;
   animation: ui-photo-slider-loader 1.15s linear infinite;
 }
-.photo-slider:not(.loaded) img {
+.ui-photo-slider:not(.ui-loaded) img {
   opacity: 0;
 }
-.photo-slider .slider-loader {
+.ui-photo-slider .ui-slider-loader {
   width: 42px;
   height: 42px;
   stroke-width: 12px;
@@ -8835,28 +8835,28 @@ button.ui-dialog-custom:focus {
   opacity: 0;
   z-index: 1;
 }
-.photo-slider img {
+.ui-photo-slider img {
   width: 100%;
   display: inline-block;
   position: relative;
   z-index: 2;
 }
-.photo-slider .ui-btn {
+.ui-photo-slider .ui-btn {
   position: absolute;
   top: 50%;
   z-index: 10;
   transform: translateY(-50%);
 }
-.photo-slider .ui-btn:not(.show) {
+.ui-photo-slider .ui-btn:not(.ui-show) {
   display: none;
 }
-.photo-slider .ui-btn.prev {
+.ui-photo-slider .ui-btn.ui-prev {
   left: 0;
 }
-.photo-slider .ui-btn.next {
+.ui-photo-slider .ui-btn.ui-next {
   right: 0;
 }
-.photo-slider .photo-slider-nav {
+.ui-photo-slider .ui-photo-slider-nav {
   white-space: nowrap;
   text-align: center;
   line-height: 7px;
@@ -8869,10 +8869,10 @@ button.ui-dialog-custom:focus {
   cursor: default;
   transform: translateX(-50%);
 }
-.photo-slider .photo-slider-nav:not(.show) {
+.ui-photo-slider .ui-photo-slider-nav:not(.ui-show) {
   display: none;
 }
-.photo-slider .photo-slider-nav i {
+.ui-photo-slider .ui-photo-slider-nav i {
   width: 7px;
   height: 7px;
   background-color: hsla(0, 0%, 0%, 0.2);
@@ -8881,7 +8881,7 @@ button.ui-dialog-custom:focus {
   display: inline-block;
   border-radius: 50%;
 }
-.photo-slider .photo-slider-nav i.selected {
+.ui-photo-slider .ui-photo-slider-nav i.ui-selected {
   background-color: hsla(0, 0%, 0%, 0.35);
   background-color: var(--ui-photo-slider-dot-selected-bg);
   transform: scale(1.5);

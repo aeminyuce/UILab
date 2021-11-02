@@ -30,36 +30,36 @@
     to { transform: rotate(360deg); }
 }
 
-.photo-slider {
+.ui-photo-slider {
     white-space: nowrap; overflow: hidden; display: block; position: relative;
 
-    &:not(.loaded) {
+    &:not(.ui-loaded) {
         ._bg-var(body-bg);
 
         .ui-card & { ._bg-var(card-bg); }
-        .slider-loader { opacity: @photo-slider-loader-opacity; animation: ui-photo-slider-loader 1.15s linear infinite; }
+        .ui-slider-loader { opacity: @photo-slider-loader-opacity; animation: ui-photo-slider-loader 1.15s linear infinite; }
         img { opacity: 0; }
     }
 
-    .slider-loader { ._icon(@photo-slider-loader-icon-size); margin: -(@photo-slider-loader-icon-size / 2) 0 0 -(@photo-slider-loader-icon-size / 2); position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); opacity: 0; z-index: 1; }
+    .ui-slider-loader { ._icon(@photo-slider-loader-icon-size); margin: -(@photo-slider-loader-icon-size / 2) 0 0 -(@photo-slider-loader-icon-size / 2); position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); opacity: 0; z-index: 1; }
     img { width: 100%; display: inline-block; position: relative; z-index: 2; }
 
     .ui-btn {
         position: absolute; top: 50%; z-index: @photo-slider-btn-z-index; transform: translateY(-50%);
 
-        &:not(.show) { display: none; }
-        &.prev { left: 0; }
-        &.next { right: 0; }
+        &:not(.ui-show) { display: none; }
+        &.ui-prev { left: 0; }
+        &.ui-next { right: 0; }
     }
 
-    .photo-slider-nav {
+    .ui-photo-slider-nav {
         white-space: nowrap; text-align: center; line-height: @photo-slider-dot-size; padding: @photo-slider-dot-margin-v @photo-slider-dot-margin-v; display: block; position: absolute; bottom: 0; left: 50%; z-index: 3; cursor: default; transform: translateX(-50%);
 
-        &:not(.show) { display: none; }
+        &:not(.ui-show) { display: none; }
         i {
             width: @photo-slider-dot-size; height: @photo-slider-dot-size; ._bg-var(photo-slider-dot-bg); margin: 0 @photo-slider-dot-margin-h; display: inline-block; border-radius: 50%;
 
-            &.selected { ._bg-var(photo-slider-dot-selected-bg); transform: scale(@photo-slider-dot-selected-scale); }
+            &.ui-selected { ._bg-var(photo-slider-dot-selected-bg); transform: scale(@photo-slider-dot-selected-scale); }
         }
     }
 }

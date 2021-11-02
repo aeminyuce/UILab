@@ -6,18 +6,18 @@
 ui.photoSlider = {
 
     // targets
-    target: 'photo-slider',
+    target: 'ui-photo-slider',
 
     // main classnames
-    nameNav: 'photo-slider-nav',
+    nameNav: 'ui-photo-slider-nav',
 
     // helper classNames
-    namePrev: 'prev',
-    nameNext: 'next',
+    namePrev: 'ui-prev',
+    nameNext: 'ui-next',
 
-    nameShow: 'show',
-    nameSelected: 'selected',
-    nameLoaded: 'loaded',
+    nameShow: 'ui-show',
+    nameSelected: 'ui-selected',
+    nameLoaded: 'ui-loaded',
 
     // outer classnames
     nameBtn: 'ui-btn',
