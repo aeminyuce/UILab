@@ -4505,6 +4505,9 @@ dt {
 .tabs .tab-content:not(.open-ease) {
   opacity: 0;
 }
+.ui-dropdown .tabs {
+  min-width: 300px;
+}
 /* dropdown */
 .ui-ease-dropdown li {
   transition-property: background-color;

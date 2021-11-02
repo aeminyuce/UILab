@@ -267,7 +267,7 @@
                             <svg class="icon"><use href="#grid-column"/></svg>
                         </button>
                         <div class="ui-dropdown-menu round shadow-lg no-scroll">
-                            <div class="tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color" style="min-width: 300px;">
+                            <div class="tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                                 <div class="ui-btn-holder font-color-black-muted align-c ui-border-b ui-ease-1st-btn">
                                     <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Favorites">
@@ -343,7 +343,7 @@
                             <svg class="icon"><use href="#bars-right"/></svg>
                         </button>
                         <div class="ui-dropdown-menu round shadow-lg no-scroll">
-                            <div class="tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color" style="min-width: 300px;">
+                            <div class="tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                                 <div class="ui-btn-holder font-color-black-muted align-c ui-border-b ui-ease-1st-btn">
                                     <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Notifications">
@@ -355,23 +355,8 @@
                                     <button class="tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="Started Jobs">
                                         <svg class="icon"><use href="#hourglass-start"/></svg>
                                     </button>
-                                    <button class="tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="Completed Jobs">
-                                        <svg class="icon"><use href="#hourglass-end"/></svg>
-                                    </button>
                                 </div>
                                 <div class="tab-content align-l scroll-v open open-ease" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
-                                        <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
-                                        <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
-                                        <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                        <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
-                                        <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                        <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
-                                        <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
-                                        <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                    </ul>
-                                </div>
-                                <div class="tab-content align-l scroll-v" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
