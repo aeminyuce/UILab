@@ -19,7 +19,7 @@
     --ui-svg-map-path-fill-hover: @svg-map-path-fill-hover-dark;
 }
 
-.svg-map {
+.ui-svg-map {
     position: relative;
 
     svg {
@@ -39,10 +39,10 @@
             &:not([stroke]) {
                 ._stroke-var(body-bg);
 
-                .card & { ._stroke-var(card-bg); }
+                .ui-card & { ._stroke-var(card-bg); }
             }
 
-            &.active {
+            &.ui-active {
                 &:not([fill]) { fill: currentColor; }
                 &:hover { opacity: 1 !important; }
             }

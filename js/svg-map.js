@@ -6,10 +6,10 @@
 ui.svgMap = {
 
     // targets
-    target: '.svg-map',
+    target: 'ui-svg-map',
 
     // helper classnames
-    nameActive: 'active',
+    nameActive: 'ui-active',
 
     // tags
     tagTarget: 'path',
@@ -33,7 +33,7 @@ ui.svgMap = {
 
         var map, arr, data, items, opacity;
 
-        map = ui.find(ui.svgMap.target);
+        map = ui.find('.' + ui.svgMap.target);
         if (map.length === 0) { return; }
 
         arr = [];
