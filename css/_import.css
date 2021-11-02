@@ -9746,7 +9746,7 @@ html:not(.ui-ie) .ui-svg-map svg {
 }
 .ui-theme-gray.ui-color,
 .ui-theme-gray .ui-color:not([class*="ui-theme-"]) {
-  color: hsl(0, 0%, 70%);
+  color: hsl(0, 0%, 70%) !important;
 }
 .ui-theme-gray.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-gray .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
@@ -9822,7 +9822,7 @@ html:not(.ui-ie) .ui-svg-map svg {
 }
 .ui-theme-green.ui-color,
 .ui-theme-green .ui-color:not([class*="ui-theme-"]) {
-  color: hsl(142, 82%, 42%);
+  color: hsl(142, 82%, 42%) !important;
 }
 .ui-theme-green.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-green .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
@@ -9898,7 +9898,7 @@ html:not(.ui-ie) .ui-svg-map svg {
 }
 .ui-theme-yellow.ui-color,
 .ui-theme-yellow .ui-color:not([class*="ui-theme-"]) {
-  color: hsl(42, 100%, 45%);
+  color: hsl(42, 100%, 45%) !important;
 }
 .ui-theme-yellow.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-yellow .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
@@ -9974,7 +9974,7 @@ html:not(.ui-ie) .ui-svg-map svg {
 }
 .ui-theme-orange.ui-color,
 .ui-theme-orange .ui-color:not([class*="ui-theme-"]) {
-  color: hsl(30, 100%, 50%);
+  color: hsl(30, 100%, 50%) !important;
 }
 .ui-theme-orange.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-orange .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
@@ -10050,7 +10050,7 @@ html:not(.ui-ie) .ui-svg-map svg {
 }
 .ui-theme-red.ui-color,
 .ui-theme-red .ui-color:not([class*="ui-theme-"]) {
-  color: hsl(0, 74%, 55%);
+  color: hsl(0, 74%, 55%) !important;
 }
 .ui-theme-red.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-red .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
@@ -10126,7 +10126,7 @@ html:not(.ui-ie) .ui-svg-map svg {
 }
 .ui-theme-base.ui-color,
 .ui-theme-base .ui-color:not([class*="ui-theme-"]) {
-  color: hsl(226, 52%, 50%);
+  color: hsl(226, 52%, 50%) !important;
 }
 .ui-theme-base.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-base .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
@@ -10202,7 +10202,7 @@ html:not(.ui-ie) .ui-svg-map svg {
 }
 .ui-theme-sub.ui-color,
 .ui-theme-sub .ui-color:not([class*="ui-theme-"]) {
-  color: hsl(206, 87%, 50%);
+  color: hsl(206, 87%, 50%) !important;
 }
 .ui-theme-sub.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-sub .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
