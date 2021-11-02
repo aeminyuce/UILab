@@ -4070,7 +4070,7 @@ dt {
 .ui-btn-lg,
 .form-lg .ui-btn {
   font-size: 15px;
-  line-height: 22px;
+  line-height: 20px;
   height: 42px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -4169,7 +4169,7 @@ dt {
 }
 .ui-btn-xxs {
   font-size: 10px;
-  line-height: 12px;
+  line-height: 13px;
   height: 18px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -4475,15 +4475,34 @@ dt {
   transition-property: height, opacity;
   transition-duration: 0.3s;
 }
-.tabs .tab .ui-toggle-icon {
+.tabs .tab:not(.ui-btn-xs):not(.ui-btn-xxs) .ui-toggle-icon {
   width: 12px !important;
   height: 12px !important;
   stroke-width: 38px !important;
   margin-top: -2px;
 }
-.tabs .tab .ui-toggle-icon.right {
+.tabs .tab:not(.ui-btn-xs):not(.ui-btn-xxs) .ui-toggle-icon.right {
   margin-top: 3px;
   margin-bottom: 3px;
+}
+.tabs .tab.ui-btn-xs .ui-toggle-icon {
+  width: 10px !important;
+  height: 10px !important;
+  stroke-width: 38px !important;
+  margin-top: -2px;
+}
+.tabs .tab.ui-btn-xs .ui-toggle-icon.right {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.tabs .tab.ui-btn-xxs .ui-toggle-icon {
+  width: 9px !important;
+  height: 9px !important;
+  stroke-width: 38px !important;
+}
+.tabs .tab.ui-btn-xxs .ui-toggle-icon.right {
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 .tabs .tab.active > .ui-toggle-icon {
   transform: rotate(-180deg);
@@ -4537,15 +4556,34 @@ dt {
 .ui-dropdown > .ui-btn:not(.ui-btn-square) {
   width: 100%;
 }
-.ui-dropdown > .ui-btn .ui-toggle-icon {
+.ui-dropdown > .ui-btn:not(.ui-btn-xs):not(.ui-btn-xxs) .ui-toggle-icon {
   width: 12px !important;
   height: 12px !important;
   stroke-width: 38px !important;
   margin-top: -2px;
 }
-.ui-dropdown > .ui-btn .ui-toggle-icon.right {
+.ui-dropdown > .ui-btn:not(.ui-btn-xs):not(.ui-btn-xxs) .ui-toggle-icon.right {
   margin-top: 4px;
   margin-bottom: 4px;
+}
+.ui-dropdown > .ui-btn.ui-btn-xs .ui-toggle-icon {
+  width: 10px !important;
+  height: 10px !important;
+  stroke-width: 38px !important;
+  margin-top: -2px;
+}
+.ui-dropdown > .ui-btn.ui-btn-xs .ui-toggle-icon.right {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.ui-dropdown > .ui-btn.ui-btn-xxs .ui-toggle-icon {
+  width: 8px !important;
+  height: 8px !important;
+  stroke-width: 38px !important;
+}
+.ui-dropdown > .ui-btn.ui-btn-xxs .ui-toggle-icon.right {
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 .ui-dropdown .ui-dropdown-menu {
   background-color: hsl(0, 0%, 100%);

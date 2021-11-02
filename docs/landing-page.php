@@ -19,10 +19,10 @@
 
                             <div class="hidden-sm">
                                 <div class="ui-ease-1st-btn icons-no-opacity form-lg add-mobile-menu-r">
-                                    <button class="ui-btn ui-btn-sm-fluid ui-btn-ghost">
+                                    <a href="#" class="ui-btn ui-btn-sm-fluid ui-btn-ghost">
                                         <svg class="icon margin-5-r visible-sm"><use href="#home"/></svg>
                                         <b>Home</b>
-                                    </button>
+                                    </a>
                                     <div class="ui-dropdown ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-sm-fluid ui-btn-ghost">
                                             <svg class="icon margin-5-r visible-sm"><use href="#box"/></svg>

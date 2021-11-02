@@ -3,7 +3,12 @@
 
 
 @tabs-toggle-icon-size:                 12px;
+@tabs-toggle-icon-xs-size:              10px;
+@tabs-toggle-icon-xxs-size:             9px;
+
 @tabs-toggle-right-icon-margins:        3px;
+@tabs-toggle-right-icon-xs-margins:     2px;
+@tabs-toggle-right-icon-xxs-margins:    1px;
 
 .ui-ease-tabs {
     .tab {
@@ -14,10 +19,26 @@
 
 .tabs {
     .tab {
-        .ui-toggle-icon {
-            ._icon(@tabs-toggle-icon-size) !important; margin-top: -2px;
+        &:not(.ui-btn-xs):not(.ui-btn-xxs) {
+            .ui-toggle-icon {
+                ._icon(@tabs-toggle-icon-size) !important; margin-top: -2px;
 
-            &.right { margin-top: @tabs-toggle-right-icon-margins; margin-bottom: @tabs-toggle-right-icon-margins; }
+                &.right { margin-top: @tabs-toggle-right-icon-margins; margin-bottom: @tabs-toggle-right-icon-margins; }
+            }
+        }
+        &.ui-btn-xs {
+            .ui-toggle-icon {
+                ._icon(@tabs-toggle-icon-xs-size) !important; margin-top: -2px;
+
+                &.right { margin-top: @tabs-toggle-right-icon-xs-margins; margin-bottom: @tabs-toggle-right-icon-xs-margins; }
+            }
+        }
+        &.ui-btn-xxs {
+            .ui-toggle-icon {
+                ._icon(@tabs-toggle-icon-xxs-size) !important;
+
+                &.right { margin-top: @tabs-toggle-right-icon-xxs-margins; margin-bottom: @tabs-toggle-right-icon-xxs-margins; }
+            }
         }
 
         &.active {
