@@ -29,7 +29,7 @@
 
                                 <span class="xx-large">13</span>
                                 <span class="small font-color-white-muted margin-5-b block">Waiting</span>
-                                <span class="progress-bar round ui-border-dual">
+                                <span class="ui-progress-bar round ui-border-dual">
                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 65%;"></span>
                                 </span>
 
@@ -38,7 +38,7 @@
 
                                 <span class="xx-large">3</span>
                                 <span class="small font-color-white-muted margin-5-b block">Paused</span>
-                                <span class="progress-bar round ui-border-dual">
+                                <span class="ui-progress-bar round ui-border-dual">
                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 35%;"></span>
                                 </span>
 
@@ -47,7 +47,7 @@
 
                                 <span class="xx-large">16</span>
                                 <span class="small font-color-white-muted margin-5-b block">Delayed</span>
-                                <span class="progress-bar round ui-border-dual">
+                                <span class="ui-progress-bar round ui-border-dual">
                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 75%;"></span>
                                 </span>
 
@@ -683,7 +683,7 @@
                                                         <span class="x-largest ui-color">157</span>
                                                     </div>
                                                 </div>
-                                                <div class="progress-bar margin-15-t progress round">
+                                                <div class="ui-progress-bar margin-15-t progress round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 45%;"></span>
                                                 </div>
                                                 <p class="font-color-black-muted large margin-5-b">Pending for the transaction.</p>
@@ -706,7 +706,7 @@
                                                         <span class="x-largest ui-color">23</span>
                                                     </div>
                                                 </div>
-                                                <div class="progress-bar margin-15-t progress round">
+                                                <div class="ui-progress-bar margin-15-t progress round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 5%;"></span>
                                                 </div>
                                                 <p class="font-color-black-muted large margin-5-b">Paused for the some reasons.</p>
@@ -729,7 +729,7 @@
                                                         <span class="x-largest ui-color">256</span>
                                                     </div>
                                                 </div>
-                                                <div class="progress-bar margin-15-t progress round">
+                                                <div class="ui-progress-bar margin-15-t progress round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 80%;"></span>
                                                 </div>
                                                 <p class="font-color-black-muted large margin-5-b">Reached for the expert.</p>
@@ -752,7 +752,7 @@
                                                         <span class="x-largest ui-color">256</span>
                                                     </div>
                                                 </div>
-                                                <div class="progress-bar margin-15-t progress round">
+                                                <div class="ui-progress-bar margin-15-t progress round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 67%;"></span>
                                                 </div>
                                                 <p class="font-color-black-muted large margin-5-b">Confirmed for payment.</p>
