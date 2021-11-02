@@ -26,7 +26,6 @@ ui.dropdown = {
     // outer classnames
     nameBtn: 'ui-btn',
     nameMobileMenu: 'mobile-menu',
-    nameNoScrolling: 'no-scroll',
 
     // tags
     tagMenuItems: 'li',
@@ -166,10 +165,6 @@ ui.dropdown = {
                 }
 
                 setMaxH = function (pos) { // set max-height of list
-
-                    if (ui.hasClass(list, ui.dropdown.nameNoScrolling)) {
-                        return;
-                    }
 
                     if (pos === 'top') {
                         list.style.maxHeight = window.innerHeight - (ui.dropdown.scrollbarSize + ui.dropdown.menuTopMargin) + 'px';

@@ -267,7 +267,7 @@
                             <svg class="icon"><use href="#grid-column"/></svg>
                         </button>
                         <div class="ui-dropdown-menu round shadow-lg no-scroll">
-                            <div class="tabs xs-full-width ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color" style="min-width: 300px;">
+                            <div class="tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color" style="min-width: 300px;">
 
                                 <div class="ui-btn-holder font-color-black-muted align-c ui-border-b ui-ease-1st-btn">
                                     <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Favorites">
@@ -278,7 +278,7 @@
                                     </button>
                                 </div>
                                 <div class="tab-content align-l scroll-v open open-ease" style="max-height: 420px;">
-                                    <ul class="timeline side-l margin-15-h hide-h-lines">
+                                    <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                         <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                         <li>
                                             Lorem ipsum dolor sit amet.
@@ -323,7 +323,7 @@
                                     </ul>
                                 </div>
                                 <div class="tab-content align-l scroll-v" style="max-height: 420px;">
-                                    <ul class="timeline side-l margin-15-h hide-h-lines">
+                                    <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -343,7 +343,7 @@
                             <svg class="icon"><use href="#bars-right"/></svg>
                         </button>
                         <div class="ui-dropdown-menu round shadow-lg no-scroll">
-                            <div class="tabs xs-full-width ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color" style="min-width: 300px;">
+                            <div class="tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color" style="min-width: 300px;">
 
                                 <div class="ui-btn-holder font-color-black-muted align-c ui-border-b ui-ease-1st-btn">
                                     <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Notifications">
@@ -360,7 +360,7 @@
                                     </button>
                                 </div>
                                 <div class="tab-content align-l scroll-v open open-ease" style="max-height: 420px;">
-                                    <ul class="timeline side-l margin-15-h hide-h-lines">
+                                    <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -372,7 +372,7 @@
                                     </ul>
                                 </div>
                                 <div class="tab-content align-l scroll-v" style="max-height: 420px;">
-                                    <ul class="timeline side-l margin-15-h hide-h-lines">
+                                    <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -384,7 +384,7 @@
                                     </ul>
                                 </div>
                                 <div class="tab-content align-l scroll-v" style="max-height: 420px;">
-                                    <ul class="timeline side-l margin-15-h hide-h-lines">
+                                    <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -396,7 +396,7 @@
                                     </ul>
                                 </div>
                                 <div class="tab-content align-l scroll-v" style="max-height: 420px;">
-                                    <ul class="timeline side-l margin-15-h hide-h-lines">
+                                    <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -1067,7 +1067,7 @@
                                             <button class="tab ui-btn ui-btn-ghost round-t ui-border-b">Announcements</button>
                                         </div>
                                         <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
-                                            <ul class="timeline side-l margin-15-h hide-h-lines">
+                                            <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                                 <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                                 <li>
                                                     Lorem ipsum dolor sit amet.
@@ -1113,7 +1113,7 @@
                                             </ul>
                                         </div>
                                         <div class="tab-content set-absolute set-h scroll-v" style="top: 62px; bottom: 15px;">
-                                            <ul class="timeline side-l margin-15-h hide-h-lines">
+                                            <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                                 <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                                 <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                                 <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
