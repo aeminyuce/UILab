@@ -414,7 +414,7 @@
                     <div class="textarea margin-10-b round ui-border-dual ui-ease-form">
                         <textarea placeholder="Placeholder Text"></textarea>
                     </div>
-                    <div class="textarea toggle-textarea margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="textarea ui-toggle-textarea margin-10-b round ui-border-dual ui-ease-form">
                         <textarea placeholder="Toggle textarea example"></textarea>
                     </div>
                     <div class="textarea round ui-border-dual ui-ease-form" data-ui-counter="255">
@@ -696,7 +696,7 @@
                             <option>Second</option>
                         </select>
                     </div>
-                    <div class="textarea toggle-textarea margin-10-b round ui-border-dual form-inline ui-ease-form">
+                    <div class="textarea ui-toggle-textarea margin-10-b round ui-border-dual form-inline ui-ease-form">
                         <textarea placeholder="Textarea"></textarea>
                     </div>
 
@@ -714,7 +714,7 @@
                             <option>Second</option>
                         </select>
                     </div>
-                    <div class="textarea toggle-textarea margin-10-b round ui-border-dual form-inline-xs ui-ease-form">
+                    <div class="textarea ui-toggle-textarea margin-10-b round ui-border-dual form-inline-xs ui-ease-form">
                         <textarea placeholder="Textarea"></textarea>
                     </div>
                 </div>
@@ -1852,7 +1852,7 @@
                         <div class="textarea margin-10-b">
                             <textarea placeholder="Textarea"></textarea>
                         </div>
-                        <div class="textarea toggle-textarea margin-10-b">
+                        <div class="textarea ui-toggle-textarea margin-10-b">
                             <textarea placeholder="Toggle Textarea"></textarea>
                         </div>
 
@@ -1906,7 +1906,7 @@
                         <div class="textarea margin-10-b shadow-in ui-no-border">
                             <textarea placeholder="Textarea"></textarea>
                         </div>
-                        <div class="textarea toggle-textarea margin-10-b shadow-in ui-no-border">
+                        <div class="textarea ui-toggle-textarea margin-10-b shadow-in ui-no-border">
                             <textarea placeholder="Toggle Textarea"></textarea>
                         </div>
 
@@ -1960,7 +1960,7 @@
                         <div class="textarea margin-10-b round ui-no-border ui-fill-light-100">
                             <textarea placeholder="Textarea"></textarea>
                         </div>
-                        <div class="textarea toggle-textarea margin-10-b round ui-no-border ui-fill-light-100">
+                        <div class="textarea ui-toggle-textarea margin-10-b round ui-no-border ui-fill-light-100">
                             <textarea placeholder="Toggle Textarea"></textarea>
                         </div>
 

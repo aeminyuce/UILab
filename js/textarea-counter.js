@@ -12,7 +12,7 @@ ui.textareaCounter = {
     nameToggle: 'toggle-textarea',
 
     // helper classnames
-    nameChange: 'change',
+    nameChange: 'ui-change',
 
     // data attributes
     dataCounter: 'data-ui-counter',

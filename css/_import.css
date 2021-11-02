@@ -4998,15 +4998,15 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
 .textarea textarea:not([rows]) {
   height: 3em;
 }
-.toggle-textarea:not(.form-focus) textarea {
+.ui-toggle-textarea:not(.form-focus) textarea {
   line-height: 22px;
   height: 30px;
 }
-.toggle-textarea:not(.form-focus).ui-border-dual textarea {
+.ui-toggle-textarea:not(.form-focus).ui-border-dual textarea {
   line-height: 18px;
   height: 28px;
 }
-.toggle-textarea:not(.form-focus).ui-no-border textarea {
+.ui-toggle-textarea:not(.form-focus).ui-no-border textarea {
   height: 32px;
 }
 .check,
@@ -5750,7 +5750,7 @@ label.custom {
   }
 }
 /* textarea counter */
-.textarea:not(.toggle-textarea)[data-ui-counter]:before {
+.textarea:not(.ui-toggle-textarea)[data-ui-counter]:before {
   content: attr(data-ui-counter);
   font-size: 9px;
   text-align: right;
@@ -5764,17 +5764,17 @@ label.custom {
   left: 0;
   z-index: 1;
 }
-.textarea:not(.toggle-textarea)[data-ui-counter]:not(.form-light):before,
-.textarea:not(.toggle-textarea)[data-ui-counter].form-focus:before {
+.textarea:not(.ui-toggle-textarea)[data-ui-counter]:not(.form-light):before,
+.textarea:not(.ui-toggle-textarea)[data-ui-counter].form-focus:before {
   color: hsla(0, 0%, 0%, 0.45);
   color: var(--ui-textarea-counter-color);
   background-color: hsla(0, 0%, 0%, 0.035);
   background-color: var(--ui-textarea-counter-bg);
 }
-.textarea:not(.toggle-textarea)[data-ui-counter].change:before {
+.textarea:not(.ui-toggle-textarea)[data-ui-counter].ui-change:before {
   content: attr(data-ui-change);
 }
-.textarea:not(.toggle-textarea)[data-ui-counter] textarea {
+.textarea:not(.ui-toggle-textarea)[data-ui-counter] textarea {
   margin-bottom: 13px;
 }
 [data-ui-counter].error:before {
