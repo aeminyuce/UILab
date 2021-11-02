@@ -9494,14 +9494,14 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.icon) {
   transition-property: opacity;
   transition-duration: 0.3s;
 }
-.pie-chart {
+.ui-pie-chart {
   position: relative;
   -ms-user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
-.pie-chart[data-ui-text]:before {
+.ui-pie-chart[data-ui-text]:before {
   content: attr(data-ui-text);
   color: hsl(0, 0%, 0%);
   font-weight: 700;
@@ -9520,7 +9520,7 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.icon) {
   z-index: 2;
   transform: translate(-50%, -50%);
 }
-.pie-chart > div span {
+.ui-pie-chart > div span {
   display: block;
   position: absolute;
   top: 50%;
@@ -9529,7 +9529,7 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.icon) {
   z-index: 1;
   transform-origin: left top;
 }
-.pie-chart > div span i {
+.ui-pie-chart > div span i {
   color: hsla(0, 0%, 0%, 0.5);
   font-size: 11px;
   font-style: normal;
@@ -9541,10 +9541,10 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.icon) {
   border-radius: 1000px;
   float: right;
 }
-.pie-chart:not(.open-ease) > div span {
+.ui-pie-chart:not(.ui-open-ease) > div span {
   opacity: 0;
 }
-.pie-chart ul {
+.ui-pie-chart ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -9553,7 +9553,7 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.icon) {
   border-radius: 50%;
   position: relative;
 }
-.pie-chart ul:after {
+.ui-pie-chart ul:after {
   content: "";
   background-color: currentColor;
   display: block;
@@ -9565,47 +9565,47 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.icon) {
   left: 5px;
   opacity: 0.05;
 }
-.pie-chart li {
+.ui-pie-chart li {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   z-index: 1;
 }
-.pie-chart li:first-child {
+.ui-pie-chart li:first-child {
   position: relative;
 }
-.pie-chart li:not(:first-child) {
+.ui-pie-chart li:not(:first-child) {
   position: absolute;
   top: 0;
   left: 0;
 }
-.pie-chart li span {
+.ui-pie-chart li span {
   width: 50%;
   height: 100%;
   display: block;
   position: absolute;
   top: 0;
 }
-.pie-chart li span b {
+.ui-pie-chart li span b {
   background-color: currentColor;
   width: 100%;
   height: 100%;
   position: absolute;
 }
-.pie-chart li .pie-l {
+.ui-pie-chart li .ui-pie-l {
   left: 0;
 }
-.pie-chart li .pie-l b {
+.ui-pie-chart li .ui-pie-l b {
   left: 100%;
   border-radius: 0 1000px 1000px 0;
   -ms-transform-origin: left;
   transform-origin: left;
 }
-.pie-chart li .pie-r {
+.ui-pie-chart li .ui-pie-r {
   overflow: hidden;
   left: 50%;
 }
-.pie-chart li .pie-r b {
+.ui-pie-chart li .ui-pie-r b {
   left: -100%;
   border-radius: 1000px 0 0 1000px;
   -ms-transform: rotate(180deg);
@@ -9613,16 +9613,16 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.icon) {
   -ms-transform-origin: right;
   transform-origin: right;
 }
-.pie-chart:not(.open) li {
+.ui-pie-chart:not(.ui-open) li {
   opacity: 0;
 }
-.pie-chart.open li .pie-l b {
+.ui-pie-chart.ui-open li .ui-pie-l b {
   animation: ui-pie-spin-l 1.6s ease-out forwards;
 }
-.pie-chart.open li .pie-l + .pie-r b {
+.ui-pie-chart.ui-open li .ui-pie-l + .ui-pie-r b {
   animation: ui-pie-spin-r 0.8s ease-in forwards;
 }
-.pie-chart.open li .pie-r b {
+.ui-pie-chart.ui-open li .ui-pie-r b {
   animation: ui-pie-spin-r 1.6s ease-in forwards;
 }
 /* svg map */

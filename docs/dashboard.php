@@ -814,7 +814,7 @@
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            <div class="pie-chart automargin ui-ease-pie-chart" data-ui-text="Profit" style="max-width: 150px;">
+                                            <div class="ui-pie-chart automargin ui-ease-pie-chart" data-ui-text="Profit" style="max-width: 150px;">
                                                 <ul>
                                                     <li data-ui-percent="70" data-ui-fill="hsl(97, 70%, 70%)"></li>
                                                 </ul>

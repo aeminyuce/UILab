@@ -6,15 +6,15 @@
 ui.pieChart = {
 
     // targets
-    target: 'pie-chart',
+    target: 'ui-pie-chart',
 
     // main classnames
-    namePieLeft: 'pie-l',
-    namePieRight: 'pie-r',
+    namePieLeft: 'ui-pie-l',
+    namePieRight: 'ui-pie-r',
 
     // helper classnames
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
+    nameOpen: 'ui-open',
+    nameOpenEase: 'ui-open-ease',
 
     // outer classnames
     nameNoEffects: 'ui-no-effects',

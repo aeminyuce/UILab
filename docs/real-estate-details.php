@@ -84,7 +84,7 @@
                         <div class="padding-15-b padding-30-h">
                             <div class="row row-gap-lg">
                                 <div class="col-5x col-sm-4 col-xs-6">
-                                    <div class="pie-chart ui-ease-pie-chart" data-ui-text="Total">
+                                    <div class="ui-pie-chart ui-ease-pie-chart" data-ui-text="Total">
                                         <ul>
                                             <li data-ui-percent="78" data-ui-fill="hsl(97, 70%, 70%)"></li>
                                         </ul>

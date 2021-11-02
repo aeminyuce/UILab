@@ -23,7 +23,7 @@
     li,& > div span { transition-property: opacity; transition-duration: (@ease-default * 2); }
 }
 
-.pie-chart {
+.ui-pie-chart {
     position: relative; @no-user-select();
 
     &[data-ui-text] {
@@ -36,7 +36,7 @@
             i { color: @black-50; font-size: @pie-chart-info-text-size; font-style: normal; font-weight: @font-bold; line-height: @pie-chart-info-text-size; background: @white; padding: @pie-chart-info-padding (@pie-chart-info-padding * 2); margin-right: @pie-chart-info-inner-space; border-radius: @circle; float: right; }
         }
     }
-    &:not(.open-ease) {
+    &:not(.ui-open-ease) {
         & > div {
             span { opacity: 0; }
         }
@@ -59,27 +59,27 @@
 
             b { background-color: currentColor; width: 100%; height: 100%; position: absolute; }
         }
-        .pie-l {
+        .ui-pie-l {
             left: 0;
 
             b { left: 100%; border-radius: 0 @circle @circle 0; -ms-transform-origin: left; transform-origin: left; }
         }
-        .pie-r {
+        .ui-pie-r {
             overflow: hidden; left: 50%;
 
             b { left: -100%; border-radius: @circle 0 0 @circle; -ms-transform: rotate(180deg); transform: rotate(180deg); -ms-transform-origin: right; transform-origin: right; }
         }
     }
-    &:not(.open) {
+    &:not(.ui-open) {
         li { opacity: 0; }
     }
-    &.open {
+    &.ui-open {
         li {
-            .pie-l {
+            .ui-pie-l {
                 b { animation: ui-pie-spin-l 1.6s ease-out forwards; }
-                & + .pie-r b { animation: ui-pie-spin-r .8s ease-in forwards; }
+                & + .ui-pie-r b { animation: ui-pie-spin-r .8s ease-in forwards; }
             }
-            .pie-r b { animation: ui-pie-spin-r 1.6s ease-in forwards; }
+            .ui-pie-r b { animation: ui-pie-spin-r 1.6s ease-in forwards; }
         }
     }
 }
