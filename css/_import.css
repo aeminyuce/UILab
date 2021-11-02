@@ -8452,12 +8452,12 @@ button.ui-dialog-custom:focus {
     transform: rotate(360deg);
   }
 }
-.loading-mask {
+.ui-loading-mask {
   overflow: hidden !important;
   position: relative !important;
   cursor: default !important;
 }
-.loading-mask-loader {
+.ui-loading-mask-loader {
   height: 100%;
   background-color: hsla(0, 0%, 0%, 0.46);
   position: absolute;
@@ -8465,22 +8465,22 @@ button.ui-dialog-custom:focus {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 10;
+  z-index: 90;
 }
-.loading-mask-loader:not(.open) {
+.ui-loading-mask-loader:not(.ui-open) {
   display: none;
 }
-.loading-mask-loader:not(.open-ease) {
+.ui-loading-mask-loader:not(.ui-open-ease) {
   opacity: 0;
 }
-.loading-mask-loader span {
+.ui-loading-mask-loader span {
   display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.loading-mask-loader span svg {
+.ui-loading-mask-loader span svg {
   max-height: 76px !important;
   display: block;
   fill: none;
@@ -8490,7 +8490,7 @@ button.ui-dialog-custom:focus {
   stroke-linejoin: round;
   animation: ui-loading-spin 1.15s linear infinite;
 }
-.loading-mask-sticky > .loading-mask-loader {
+.ui-loading-mask-sticky > .ui-loading-mask-loader {
   position: fixed;
 }
 /* photo gallery */

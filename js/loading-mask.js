@@ -6,15 +6,15 @@
 ui.loadingMask = {
 
     // targets
-    target: 'loading-mask',
+    target: 'ui-loading-mask',
 
     // main classnames
-    nameSticky: 'loading-mask-sticky',
-    nameLoader: 'loading-mask-loader',
+    nameSticky: 'ui-loading-mask-sticky',
+    nameLoader: 'ui-loading-mask-loader',
 
     // helper classnames
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
+    nameOpen: 'ui-open',
+    nameOpenEase: 'ui-open-ease',
 
     // styling classnames
     stylesLoader: 'ui-ease-layout',
