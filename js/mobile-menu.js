@@ -6,27 +6,26 @@
 ui.mobileMenu = {
 
     // targets
-    target: 'mobile-menu',
-    targetBg: 'mobile-menu-bg',
+    target: 'ui-mobile-menu',
+    targetBg: 'ui-mobile-menu-bg',
 
     // main classnames
-    nameOpened: 'mobile-menu-opened',
-    nameClose: 'close-mobile-menu',
-    nameContent: 'mobile-menu-content',
+    nameOpened: 'ui-mobile-menu-opened',
+    nameClose: 'ui-close-mobile-menu',
+    nameContent: 'ui-mobile-menu-content',
 
     nameDataTarget: 'ui-mm',
 
-    nameShowingMenu: 'show-mobile-menu-', // adding suffixes
-    nameAddContent: 'add-mobile-menu-', // adding suffixes
+    nameShowingMenu: 'ui-show-mobile-menu-',
+    nameAddContent: 'ui-add-mobile-menu-',
 
     // helper classnames
-    nameShow: 'show-', // adding suffixes
+    nameShow: 'ui-show-',
+    nameLeft: 'l', // using with prefix
+    nameRight: 'r', // using with prefix
 
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
-
-    nameLeft: 'l',
-    nameRight: 'r',
+    nameOpen: 'ui-open',
+    nameOpenEase: 'ui-open-ease',
 
     // styling classnames
     stylesBg: 'ui-ease-slow ui-ease-layout',

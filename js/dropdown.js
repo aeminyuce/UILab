@@ -25,7 +25,7 @@ ui.dropdown = {
 
     // outer classnames
     nameBtn: 'ui-btn',
-    nameMobileMenu: 'mobile-menu',
+    nameMobileMenu: 'ui-mobile-menu',
 
     // tags
     tagMenuItems: 'li',

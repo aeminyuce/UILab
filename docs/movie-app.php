@@ -6,7 +6,7 @@
         <div class="col-200 set-relative hidden-md">
             <div class="sidebar col-200 full-h set-fixed set-l padding-5 ui-fill-dark-100 hidden-md scroll-v ui-scrollbar-faded">
 
-                <div class="align-l padding-10 icons-no-opacity icons-margin-10-r form-lg add-mobile-menu-l">
+                <div class="align-l padding-10 icons-no-opacity icons-margin-10-r form-lg ui-add-mobile-menu-l">
                     <h5 class="font-color-white-50 padding-15 margin-5-b">LIBRARY</h5>
                     <ul class="list-unstyled list-spacer-15 large font-bold block-2nd ui-ease-2nd-btn">
                         <li>
@@ -91,7 +91,7 @@
                         </div>
                         <div class="col-6 align-r">
                             <span class="align-c font-color-black-50 margin-20-r sm-no-margin ui-ease-1st-btn">
-                                <button class="ui-btn ui-btn-square ui-btn-ghost margin-10-l circle left show-mobile-menu-l visible-md">
+                                <button class="ui-btn ui-btn-square ui-btn-ghost margin-10-l circle left ui-show-mobile-menu-l visible-md">
                                     <svg class="icon"><use href="#bars-left"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square ui-btn-ghost circle ui-ease-btn visible-md" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
@@ -401,14 +401,14 @@
 </main>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-l ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
-    <div class="mobile-menu-title padding-20-v x-large ui-border-b">
-        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost circle ui-ease-btn close-mobile-menu">
+<div class="ui-mobile-menu ui-show-l ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
+    <div class="ui-mobile-menu-title padding-20-v x-large ui-border-b">
+        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost circle ui-ease-btn ui-close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>
         Categories
     </div>
-    <div class="mobile-menu-content no-padding scroll-v"></div>
+    <div class="ui-mobile-menu-content no-padding scroll-v"></div>
 </div>
 
 <!-- modal search -->

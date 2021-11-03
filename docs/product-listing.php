@@ -9,7 +9,7 @@
         <div class="col-static no-fluid padding-30-v padding-15-h md-no-padding-h">
 
             <div class="col-250 padding-10 hidden-md">
-                <div class="add-mobile-menu-r">
+                <div class="ui-add-mobile-menu-r">
 
                     <div class="ui-card padding-15 round shadow-lg">
                         <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete text text-icon-both round ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form has-clear">
@@ -252,7 +252,7 @@
                                 <button class="ui-btn ui-btn-square round">
                                     <svg class="icon"><use href="#grid-row"/></svg>
                                 </button>
-                                <button class="ui-btn ui-btn-square round show-mobile-menu-r visible-md">
+                                <button class="ui-btn ui-btn-square round ui-show-mobile-menu-r visible-md">
                                     <svg class="icon"><use href="#bars-right"/></svg>
                                 </button>
                             </span>
@@ -479,12 +479,12 @@
 </main>
 
 <!-- mobile menu -->
-<div class="mobile-menu show-r ui-ease-layout ui-ease-in-out">
-    <div class="mobile-menu-title padding-20-v x-large ui-border-b">
-        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost circle ui-ease-btn close-mobile-menu">
+<div class="ui-mobile-menu ui-show-r ui-ease-layout ui-ease-in-out">
+    <div class="ui-mobile-menu-title padding-20-v x-large ui-border-b">
+        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost circle ui-ease-btn ui-close-mobile-menu">
             <svg class="icon no-opacity"><use href="#remove"/></svg>
         </button>
         Filters
     </div>
-    <div class="mobile-menu-content padding-10 scroll-v"></div>
+    <div class="ui-mobile-menu-content padding-10 scroll-v"></div>
 </div>

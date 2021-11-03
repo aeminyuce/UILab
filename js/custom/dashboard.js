@@ -15,7 +15,7 @@ function sidebarToggler(onload) {
         ui.toggleClass(sidebar, 'hidden visible-lg');
         ui.toggleClass('header', 'sidebar-opened');
 
-        ui.toggleClass('.show-mobile-menu-l', 'hidden-lg');
+        ui.toggleClass('.ui-show-mobile-menu-l', 'hidden-lg');
         ui.toggleClass('.sidebar-show', 'hidden');
 
     };
