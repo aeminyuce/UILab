@@ -25,12 +25,12 @@
 
 [data-ui-tooltip] { display: inline-block; }
 
-.tooltip {
+.ui-tooltip {
     min-width: @tooltip-min-width; max-width: @tooltip-max-width; position: absolute; z-index: @tooltip-z-index;
 
     &:not([class*="ui-fill-"]) { color: @white; ._bg-var(tooltip-bg); }
-    &:not(.open) { display: none; }
-    &:not(.open-ease) { opacity: 0; }
+    &:not(.ui-open) { display: none; }
+    &:not(.ui-open-ease) { opacity: 0; }
 
     &-content { line-height: @tooltip-content-line-height; min-height: @tooltip-min-height; padding: @tooltip-content-padding (@tooltip-content-padding * 2); position: relative; }
 
@@ -40,7 +40,7 @@
 
             i { border-top-color: @no-color; border-left-color: @no-color; }
         }
-        .tooltip-content { text-align: center; }
+        .ui-tooltip-content { text-align: center; }
     }
     &[data-ui-pos="b"] {
         & > span {
@@ -48,7 +48,7 @@
 
             i { border-bottom-color: @no-color; border-right-color: @no-color; }
         }
-        .tooltip-content { &:extend(.tooltip[data-ui-pos="t"] .tooltip-content); }
+        .ui-tooltip-content { &:extend(.ui-tooltip[data-ui-pos="t"] .ui-tooltip-content); }
     }
     &[data-ui-pos="r"] {
         & > span {
@@ -63,14 +63,14 @@
 
             i { border-bottom-color: @no-color; border-left-color: @no-color; }
         }
-        .tooltip-content { text-align: right; }
+        .ui-tooltip-content { text-align: right; }
     }
 
     &[data-ui-pos="tr"] {
         & > span {
             top: 100%; left: (@tooltip-arrow-size * 2);
 
-            i { &:extend(.tooltip[data-ui-pos="t"] > span i); }
+            i { &:extend(.ui-tooltip[data-ui-pos="t"] > span i); }
         }
     }
     &[data-ui-pos="tl"] {
@@ -79,22 +79,22 @@
 
             i { &:extend(.tooltip[data-ui-pos="t"] > span i); }
         }
-        .tooltip-content { &:extend(.tooltip[data-ui-pos="l"] .tooltip-content); }
+        .ui-tooltip-content { &:extend(.ui-tooltip[data-ui-pos="l"] .ui-tooltip-content); }
     }
     &[data-ui-pos="br"] {
         & > span {
             bottom: 100%; left: (@tooltip-arrow-size * 2);
 
-            i { &:extend(.tooltip[data-ui-pos="b"] > span i); }
+            i { &:extend(.ui-tooltip[data-ui-pos="b"] > span i); }
         }
     }
     &[data-ui-pos="bl"] {
         & > span {
             bottom: 100%; right: (@tooltip-arrow-size * 2);
 
-            i { &:extend(.tooltip[data-ui-pos="b"] > span i); }
+            i { &:extend(.ui-tooltip[data-ui-pos="b"] > span i); }
         }
-        .tooltip-content { &:extend(.tooltip[data-ui-pos="l"] .tooltip-content); }
+        .ui-tooltip-content { &:extend(.ui-tooltip[data-ui-pos="l"] .ui-tooltip-content); }
     }
 
     & > span {

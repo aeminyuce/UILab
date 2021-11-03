@@ -6,16 +6,16 @@
 ui.tooltip = {
 
     // targets
-    target: 'tooltip',
+    target: 'ui-tooltip',
 
     // main classnames
-    nameActive: 'tooltip-active',
-    nameContent: 'tooltip-content',
+    nameActive: 'ui-tooltip-active',
+    nameContent: 'ui-tooltip-content',
 
     // helper classnames
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
-    nameClose: 'close',
+    nameOpen: 'ui-open',
+    nameOpenEase: 'ui-open-ease',
+    nameClose: 'ui-close',
 
     // styling classnames
     stylesTarget: 'round ui-theme-red ui-fill-dark-100 ui-ease-tooltip',

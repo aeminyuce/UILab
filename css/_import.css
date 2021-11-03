@@ -7246,96 +7246,95 @@ header.ui-sticky-static {
 [data-ui-tooltip] {
   display: inline-block;
 }
-.tooltip {
+.ui-tooltip {
   min-width: 32px;
   max-width: 680px;
   position: absolute;
   z-index: 99;
 }
-.tooltip:not([class*="ui-fill-"]) {
+.ui-tooltip:not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 100%);
   background-color: hsl(220, 14%, 21%);
   background-color: var(--ui-tooltip-bg);
 }
-.tooltip:not(.open) {
+.ui-tooltip:not(.ui-open) {
   display: none;
 }
-.tooltip:not(.open-ease) {
+.ui-tooltip:not(.ui-open-ease) {
   opacity: 0;
 }
-.tooltip-content {
+.ui-tooltip-content {
   line-height: 1.2em;
   min-height: 26px;
   padding: 5px 10px;
   position: relative;
 }
-.tooltip[data-ui-pos="t"] > span {
+.ui-tooltip[data-ui-pos="t"] > span {
   top: 100%;
   left: 50%;
 }
-.tooltip[data-ui-pos="t"] > span i,
-.tooltip[data-ui-pos="tr"] > span i,
-.tooltip[data-ui-pos="tl"] > span i {
+.ui-tooltip[data-ui-pos="t"] > span i,
+.ui-tooltip[data-ui-pos="tr"] > span i {
   border-top-color: transparent;
   border-left-color: transparent;
 }
-.tooltip[data-ui-pos="t"] .tooltip-content,
-.tooltip[data-ui-pos="b"] .tooltip-content {
+.ui-tooltip[data-ui-pos="t"] .ui-tooltip-content,
+.ui-tooltip[data-ui-pos="b"] .ui-tooltip-content {
   text-align: center;
 }
-.tooltip[data-ui-pos="b"] > span {
+.ui-tooltip[data-ui-pos="b"] > span {
   bottom: 100%;
   left: 50%;
 }
-.tooltip[data-ui-pos="b"] > span i,
-.tooltip[data-ui-pos="br"] > span i,
-.tooltip[data-ui-pos="bl"] > span i {
+.ui-tooltip[data-ui-pos="b"] > span i,
+.ui-tooltip[data-ui-pos="br"] > span i,
+.ui-tooltip[data-ui-pos="bl"] > span i {
   border-bottom-color: transparent;
   border-right-color: transparent;
 }
-.tooltip[data-ui-pos="r"] > span {
+.ui-tooltip[data-ui-pos="r"] > span {
   right: 100%;
   top: 50%;
 }
-.tooltip[data-ui-pos="r"] > span i {
+.ui-tooltip[data-ui-pos="r"] > span i {
   border-top-color: transparent;
   border-right-color: transparent;
 }
-.tooltip[data-ui-pos="l"] > span {
+.ui-tooltip[data-ui-pos="l"] > span {
   left: 100%;
   top: 50%;
 }
-.tooltip[data-ui-pos="l"] > span i {
+.ui-tooltip[data-ui-pos="l"] > span i {
   border-bottom-color: transparent;
   border-left-color: transparent;
 }
-.tooltip[data-ui-pos="l"] .tooltip-content,
-.tooltip[data-ui-pos="tl"] .tooltip-content,
-.tooltip[data-ui-pos="bl"] .tooltip-content {
+.ui-tooltip[data-ui-pos="l"] .ui-tooltip-content,
+.ui-tooltip[data-ui-pos="tl"] .ui-tooltip-content,
+.ui-tooltip[data-ui-pos="bl"] .ui-tooltip-content {
   text-align: right;
 }
-.tooltip[data-ui-pos="tr"] > span {
+.ui-tooltip[data-ui-pos="tr"] > span {
   top: 100%;
   left: 20px;
 }
-.tooltip[data-ui-pos="tl"] > span {
+.ui-tooltip[data-ui-pos="tl"] > span {
   top: 100%;
   right: 20px;
 }
-.tooltip[data-ui-pos="br"] > span {
+.ui-tooltip[data-ui-pos="br"] > span {
   bottom: 100%;
   left: 20px;
 }
-.tooltip[data-ui-pos="bl"] > span {
+.ui-tooltip[data-ui-pos="bl"] > span {
   bottom: 100%;
   right: 20px;
 }
-.tooltip > span {
+.ui-tooltip > span {
   display: block;
   position: absolute;
   transform: rotate(45deg);
 }
-.tooltip > span i {
+.ui-tooltip > span i {
   box-sizing: content-box;
   width: 10px;
   height: 10px;
@@ -7345,7 +7344,7 @@ header.ui-sticky-static {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.tooltip > span i:not([class*="ui-fill-"]) {
+.ui-tooltip > span i:not([class*="ui-fill-"]) {
   background-color: hsl(220, 14%, 21%);
   background-color: var(--ui-tooltip-bg);
 }
