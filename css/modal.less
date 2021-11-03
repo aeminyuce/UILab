@@ -31,7 +31,7 @@
 @modal-content-md-min-height:           240px;
 @modal-content-sm-min-height:           120px;
 
-.modal {
+.ui-modal {
     display: none;
 
     &-opened {
@@ -41,61 +41,61 @@
     &-bg {
         width: 100%; min-width: @layout-min; height: 100%; background-color: @modal-bg; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: @modal-z-index;
 
-        &:not(.open) { display: none; }
-        &:not(.open-ease) { opacity: 0; }
+        &:not(.ui-open) { display: none; }
+        &:not(.ui-open-ease) { opacity: 0; }
     }
 
     &-win {
-        &.show { position: fixed; z-index: (@modal-z-index + 1); }
-        &:not(.show) { display: none; }
+        &.ui-show { position: fixed; z-index: (@modal-z-index + 1); }
+        &:not(.ui-show) { display: none; }
 
-        &.modal-no-bg {
+        &.ui-modal-no-bg {
             &,.text input,.select select,.select-multi select,.textarea textarea,.text .icon,.select .icon { color: @white; }
 
             ::placeholder { color: fade(@white, 40%); }
             ::-ms-input-placeholder { color: fade(@white, 40%); }
 
-            .modal-content { background: none !important; box-shadow: none !important; }
+            .ui-modal-content { background: none !important; box-shadow: none !important; }
 
             .error {
                 &:not(.form-holder) { background-color: @red !important; }
                 .icon { color: @white !important; }
             }
         }
-        &:not(.show-ease) {
-            .modal-content { opacity: 0; transform: translateY(@modal-content-open-slide); }
+        &:not(.ui-show-ease) {
+            .ui-modal-content { opacity: 0; transform: translateY(@modal-content-open-slide); }
         }
 
-        .modal { height: 100%; display: block; }
+        .ui-modal { height: 100%; display: block; }
     }
 
     &-content {
         min-width: @modal-content-min-width; ._bg-var(body-bg); position: fixed;
 
-        &:not(.modal-fullscreen) {
+        &:not(.ui-modal-fullscreen) {
             max-height: calc(100% - (@modal-content-margin * 2));
 
             &.round {
-                .modal {
+                .ui-modal {
                     &-header { border-radius: (@round - 1) (@round - 1) 0 0; }
                     &-footer { border-radius: 0 0 (@round - 1) (@round - 1); }
                     &-iframe { border-radius: (@round - 1); }
                 }
             }
-            .close-modal {
+            .ui-close-modal {
                 background-color: @modal-close-bg; top: -(@btn-default / 2); right: -(@btn-default / 2);
 
                 .ui-desktop &:hover { background-color: @modal-close-hover-bg; }
             }
         }
-        &.modal-{
+        &.ui-modal- {
             &fullscreen {
                 width: 100%; height: 100%; border-radius: 0 !important;
 
-                .modal-header {
-                    .modal-buttons { padding-right: @btn-lg; }
+                .ui-modal-header {
+                    .ui-modal-buttons { padding-right: @btn-lg; }
                 }
-                .close-modal {
+                .ui-close-modal {
                     background-color: @modal-close-fullscreen-bg; top: @modal-padding; right: @modal-padding;
 
                     .ui-desktop &:hover { background-color: @modal-close-fullscreen-hover-bg; }
@@ -110,18 +110,18 @@
         }
 
         &.round {
-            .modal { border-radius: (@round - 1); }
+            .ui-modal { border-radius: (@round - 1); }
         }
-        &.has {
+        &.ui-has {
             &-header {
-                .modal { padding-top: @modal-header-height !important; }
+                .ui-modal { padding-top: @modal-header-height !important; }
             }
             &-footer {
-                .modal { padding-bottom: @modal-footer-height !important; }
+                .ui-modal { padding-bottom: @modal-footer-height !important; }
             }
         }
 
-        .close-modal {
+        .ui-close-modal {
             color: @white !important; text-align: center; width: @btn-default; height: @btn-default; border: 0; border-radius: 100%; position: absolute; z-index: @modal-close-z-index; cursor: pointer;
 
             .icon { ._icon(@modal-close-icon-size); }
@@ -174,12 +174,12 @@
 }
 
 @media (@md-start) {
-    .modal-content {
-        &.inline-modal { max-width: @md-breakpoint; }
+    .ui-modal-content {
+        &.ui-modal-inline { max-width: @md-breakpoint; }
     }
 }
 @media (@sm-finish) {
-    .modal-content {
-        &.inline-modal { max-width: @modal-inline-mobile-width; }
+    .ui-modal-content {
+        &.ui-modal-inline { max-width: @modal-inline-mobile-width; }
     }
 }

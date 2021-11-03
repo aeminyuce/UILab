@@ -412,8 +412,8 @@
 </div>
 
 <!-- modal search -->
-<div class="search modal form-lg">
-    <div class="modal-container xs-no-padding">
+<div class="search ui-modal form-lg">
+    <div class="ui-modal-container xs-no-padding">
 
         <form action="#successful">
             <h2>Search</h2>

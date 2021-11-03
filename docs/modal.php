@@ -200,22 +200,22 @@
 </main>
 
 <!-- modal sources -->
-<div id="myModalId01" class="modal myModal ui-theme-base">
-    <div class="modal-header ui-fill-dark-100">
+<div id="myModalId01" class="ui-modal myModal ui-theme-base">
+    <div class="ui-modal-header ui-fill-dark-100">
         <h4>Modal Header</h4>
-        <div class="modal-buttons ui-ease-1st-btn">
+        <div class="ui-modal-buttons ui-ease-1st-btn">
             <button class="ui-btn circle ui-fill-dark-300">Header Button</button>
         </div>
     </div>
-    <div class="modal-container large padding-30">
+    <div class="ui-modal-container large padding-30">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tincidunt eros. Vivamus a est id dui ultricies congue vel et tellus. Nam ac velit mi. Donec vitae suscipit enim, nec consectetur nisl. Quisque ac posuere lectus. Morbi quam diam, cursus et metus at, lobortis iaculis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lectus nibh, non elementum justo facilisis a. Aliquam erat volutpat. Vestibulum auctor et diam eget eleifend. Donec blandit ligula aliquam mi lacinia lacinia. Cras ac bibendum urna. Suspendisse posuere ullamcorper enim, non varius diam mattis vehicula. Donec nec lacinia diam.
         <img class="img-fluid margin-30-v round automargin block shadow-lg" src="img/image_05.jpg" style="max-width: 700px" alt="">
         Pellentesque congue eget elit vitae rutrum. Morbi bibendum dignissim convallis. Etiam lacinia quam et ipsum convallis, a congue metus sagittis. Nunc posuere iaculis nulla, nec rutrum neque condimentum at. Donec nec elementum sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor libero sem, sed bibendum elit viverra vitae.
         <br><br>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tincidunt eros. Vivamus a est id dui ultricies congue vel et tellus. Nam ac velit mi. Donec vitae suscipit enim, nec consectetur nisl. Quisque ac posuere lectus. Morbi quam diam, cursus et metus at, lobortis iaculis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lectus nibh, non elementum justo facilisis a. Aliquam erat volutpat. Vestibulum auctor et diam eget eleifend. Donec blandit ligula aliquam mi lacinia lacinia. Cras ac bibendum urna. Suspendisse posuere ullamcorper enim, non varius diam mattis vehicula. Donec nec lacinia diam.
     </div>
-    <div class="modal-footer">
-        <div class="modal-buttons ui-ease-1st-btn">
+    <div class="ui-modal-footer">
+        <div class="ui-modal-buttons ui-ease-1st-btn">
             <button type="button" class="ui-btn ui-btn-ghost ui-border-dual circle" onclick="ui.modal.close(function () { alert('Modal closed!'); });">Callback</button>
             <button type="button" class="ui-btn ui-btn-ghost ui-border-dual circle" onclick="ui.modal.close();">Cancel</button>
             <button type="submit" class="ui-btn circle ui-theme-green ui-fill-dark-100" onclick="ui.modal.close();">Accept</button>
@@ -223,23 +223,23 @@
     </div>
 </div>
 
-<div id="myModalId02" class="modal">
-    <div class="modal-header">
+<div id="myModalId02" class="ui-modal">
+    <div class="ui-modal-header">
         <h4>Modal Header</h4>
     </div>
-    <div class="modal-container">
+    <div class="ui-modal-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927" frameborder="0" allowfullscreen></iframe>
     </div>
-    <div class="modal-footer">
-        <div class="modal-buttons ui-ease-1st-btn">
+    <div class="ui-modal-footer">
+        <div class="ui-modal-buttons ui-ease-1st-btn">
             <button type="submit" class="ui-btn padding-30-h circle ui-theme-green ui-fill-dark-100" onclick="ui.modal.close();">Save</button>
         </div>
     </div>
 </div>
 
 <!-- modal search -->
-<div class="search modal form-lg">
-    <div class="modal-container xs-no-padding">
+<div class="search ui-modal form-lg">
+    <div class="ui-modal-container xs-no-padding">
 
         <form action="#successful">
             <h2>Search</h2>

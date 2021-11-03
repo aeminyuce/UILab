@@ -6,44 +6,44 @@
 ui.modal = {
 
     // targets
-    target: 'modal',
-    targetWin: 'modal-win',
-    targetBg: 'modal-bg',
+    target: 'ui-modal',
+    targetWin: 'ui-modal-win',
+    targetBg: 'ui-modal-bg',
 
     // main classnames
-    nameModalOpened: 'modal-opened',
-    nameWinNoBG: 'modal-no-bg',
+    nameModalOpened: 'ui-modal-opened',
+    nameWinNoBG: 'ui-modal-no-bg',
 
-    nameContent: 'modal-content',
-    nameHasHeader: 'has-header',
-    nameHasFooter: 'has-footer',
+    nameContent: 'ui-modal-content',
+    nameHasHeader: 'ui-has-header',
+    nameHasFooter: 'ui-has-footer',
 
-    nameHeader: 'modal-header',
-    nameContainer: 'modal-container',
-    nameFooter: 'modal-footer',
+    nameHeader: 'ui-modal-header',
+    nameContainer: 'ui-modal-container',
+    nameFooter: 'ui-modal-footer',
 
-    nameClosable: 'modal-closable',
-    nameRemovable: 'modal-removable',
-    nameIframe: 'modal-iframe',
+    nameClosable: 'ui-modal-closable',
+    nameRemovable: 'ui-modal-removable',
+    nameIframe: 'ui-modal-iframe',
 
-    nameModalClose: 'close-modal',
+    nameModalClose: 'ui-close-modal',
 
-    nameSizePrefix: 'modal-', // using when converting sizes to classnames
-    nameLG: 'modal-lg',
-    nameMD: 'modal-md',
-    nameSM: 'modal-sm',
+    nameSizePrefix: 'ui-modal-',
+    nameLG: 'ui-modal-lg',
+    nameMD: 'ui-modal-md',
+    nameSM: 'ui-modal-sm',
 
-    nameInline: 'modal-inline',
-    nameFullscreen: 'modal-fullscreen',
+    nameInline: 'ui-modal-inline',
+    nameFullscreen: 'ui-modal-fullscreen',
 
     // helper classnames
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
+    nameOpen: 'ui-open',
+    nameOpenEase: 'ui-open-ease',
 
-    nameShow: 'show',
-    nameShowEase: 'show-ease',
+    nameShow: 'ui-show',
+    nameShowEase: 'ui-show-ease',
 
-    nameActive: 'active',
+    nameActive: 'ui-active',
 
     // outer classnames
     nameIcon: 'icon',

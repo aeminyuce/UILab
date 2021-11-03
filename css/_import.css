@@ -6975,14 +6975,14 @@ header.ui-sticky-static {
   z-index: 10;
 }
 /* modal */
-.modal {
+.ui-modal {
   display: none;
 }
-.modal-opened,
-.modal-opened > body {
+.ui-modal-opened,
+.ui-modal-opened > body {
   overflow: hidden;
 }
-.modal-bg {
+.ui-modal-bg {
   width: 100%;
   min-width: 320px;
   height: 100%;
@@ -6994,119 +6994,119 @@ header.ui-sticky-static {
   left: 0;
   z-index: 89;
 }
-.modal-bg:not(.open) {
+.ui-modal-bg:not(.ui-open) {
   display: none;
 }
-.modal-bg:not(.open-ease) {
+.ui-modal-bg:not(.ui-open-ease) {
   opacity: 0;
 }
-.modal-win.show {
+.ui-modal-win.ui-show {
   position: fixed;
   z-index: 90;
 }
-.modal-win:not(.show) {
+.ui-modal-win:not(.ui-show) {
   display: none;
 }
-.modal-win.modal-no-bg,
-.modal-win.modal-no-bg .text input,
-.modal-win.modal-no-bg .select select,
-.modal-win.modal-no-bg .select-multi select,
-.modal-win.modal-no-bg .textarea textarea,
-.modal-win.modal-no-bg .text .icon,
-.modal-win.modal-no-bg .select .icon {
+.ui-modal-win.ui-modal-no-bg,
+.ui-modal-win.ui-modal-no-bg .text input,
+.ui-modal-win.ui-modal-no-bg .select select,
+.ui-modal-win.ui-modal-no-bg .select-multi select,
+.ui-modal-win.ui-modal-no-bg .textarea textarea,
+.ui-modal-win.ui-modal-no-bg .text .icon,
+.ui-modal-win.ui-modal-no-bg .select .icon {
   color: hsl(0, 0%, 100%);
 }
-.modal-win.modal-no-bg ::placeholder {
+.ui-modal-win.ui-modal-no-bg ::placeholder {
   color: hsla(0, 0%, 100%, 0.4);
 }
-.modal-win.modal-no-bg ::-ms-input-placeholder {
+.ui-modal-win.ui-modal-no-bg ::-ms-input-placeholder {
   color: hsla(0, 0%, 100%, 0.4);
 }
-.modal-win.modal-no-bg .modal-content {
+.ui-modal-win.ui-modal-no-bg .ui-modal-content {
   background: none !important;
   box-shadow: none !important;
 }
-.modal-win.modal-no-bg .error:not(.form-holder) {
+.ui-modal-win.ui-modal-no-bg .error:not(.form-holder) {
   background-color: hsl(0, 74%, 55%) !important;
 }
-.modal-win.modal-no-bg .error .icon {
+.ui-modal-win.ui-modal-no-bg .error .icon {
   color: hsl(0, 0%, 100%) !important;
 }
-.modal-win:not(.show-ease) .modal-content {
+.ui-modal-win:not(.ui-show-ease) .ui-modal-content {
   opacity: 0;
   transform: translateY(10px);
 }
-.modal-win .modal {
+.ui-modal-win .ui-modal {
   height: 100%;
   display: block;
 }
-.modal-content {
+.ui-modal-content {
   min-width: 280px;
   background-color: hsl(0, 0%, 98%);
   background-color: var(--ui-body-bg);
   position: fixed;
 }
-.modal-content:not(.modal-fullscreen) {
+.ui-modal-content:not(.ui-modal-fullscreen) {
   max-height: calc(100% - (15px * 2));
 }
-.modal-content:not(.modal-fullscreen).round .modal-header {
+.ui-modal-content:not(.ui-modal-fullscreen).round .ui-modal-header {
   border-radius: 5px 5px 0 0;
 }
-.modal-content:not(.modal-fullscreen).round .modal-footer {
+.ui-modal-content:not(.ui-modal-fullscreen).round .ui-modal-footer {
   border-radius: 0 0 5px 5px;
 }
-.modal-content:not(.modal-fullscreen).round .modal-iframe {
+.ui-modal-content:not(.ui-modal-fullscreen).round .ui-modal-iframe {
   border-radius: 5px;
 }
-.modal-content:not(.modal-fullscreen) .close-modal {
+.ui-modal-content:not(.ui-modal-fullscreen) .ui-close-modal {
   background-color: hsla(0, 0%, 0%, 0.65);
   top: -16px;
   right: -16px;
 }
-.ui-desktop .modal-content:not(.modal-fullscreen) .close-modal:hover {
+.ui-desktop .ui-modal-content:not(.ui-modal-fullscreen) .ui-close-modal:hover {
   background-color: hsl(0, 0%, 20%);
 }
-.modal-content.modal-fullscreen {
+.ui-modal-content.ui-modal-fullscreen {
   width: 100%;
   height: 100%;
   border-radius: 0 !important;
 }
-.modal-content.modal-fullscreen .modal-header .modal-buttons {
+.ui-modal-content.ui-modal-fullscreen .ui-modal-header .ui-modal-buttons {
   padding-right: 42px;
 }
-.modal-content.modal-fullscreen .close-modal {
+.ui-modal-content.ui-modal-fullscreen .ui-close-modal {
   background-color: hsla(0, 0%, 0%, 0.2);
   top: 10px;
   right: 10px;
 }
-.ui-desktop .modal-content.modal-fullscreen .close-modal:hover {
+.ui-desktop .ui-modal-content.ui-modal-fullscreen .ui-close-modal:hover {
   background-color: hsla(0, 0%, 0%, 0.35);
 }
-.modal-content.modal-lg {
+.ui-modal-content.ui-modal-lg {
   max-width: 1400px;
   min-height: 300px;
 }
-.modal-content.modal-md {
+.ui-modal-content.ui-modal-md {
   max-width: 960px;
   min-height: 240px;
 }
-.modal-content.modal-sm {
+.ui-modal-content.ui-modal-sm {
   max-width: 480px;
   min-height: 120px;
 }
-.modal-content.modal-inline {
+.ui-modal-content.ui-modal-inline {
   width: auto;
 }
-.modal-content.round .modal {
+.ui-modal-content.round .ui-modal {
   border-radius: 5px;
 }
-.modal-content.has-header .modal {
+.ui-modal-content.ui-has-header .ui-modal {
   padding-top: 52px !important;
 }
-.modal-content.has-footer .modal {
+.ui-modal-content.ui-has-footer .ui-modal {
   padding-bottom: 52px !important;
 }
-.modal-content .close-modal {
+.ui-modal-content .ui-close-modal {
   color: hsl(0, 0%, 100%) !important;
   text-align: center;
   width: 32px;
@@ -7117,42 +7117,42 @@ header.ui-sticky-static {
   z-index: 10;
   cursor: pointer;
 }
-.modal-content .close-modal .icon {
+.ui-modal-content .ui-close-modal .icon {
   width: 14px;
   height: 14px;
   stroke-width: 36px;
 }
-.modal-buttons {
+.ui-modal-buttons {
   float: right;
 }
-.modal-iframe {
+.ui-modal-iframe {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.modal-header,
-.modal-container,
-.modal-footer {
+.ui-modal-header,
+.ui-modal-container,
+.ui-modal-footer {
   min-width: 280px;
 }
-.modal-header > .row,
-.modal-container > .row,
-.modal-footer > .row {
+.ui-modal-header > .row,
+.ui-modal-container > .row,
+.ui-modal-footer > .row {
   margin-top: -10px;
   margin-right: inherit;
   margin-bottom: -10px;
   margin-left: inherit;
 }
-.modal-header > .fixed,
-.modal-container > .fixed,
-.modal-footer > .fixed {
+.ui-modal-header > .fixed,
+.ui-modal-container > .fixed,
+.ui-modal-footer > .fixed {
   padding-right: 0;
   padding-left: 0;
   margin-top: -10px;
   margin-bottom: -10px;
 }
-.modal-header,
-.modal-footer {
+.ui-modal-header,
+.ui-modal-footer {
   text-overflow: ellipsis;
   white-space: nowrap;
   background-color: hsla(0, 0%, 0%, 0.04);
@@ -7162,35 +7162,35 @@ header.ui-sticky-static {
   right: 0;
   left: 0;
 }
-.modal-header .ui-btn-lg,
-.modal-footer .ui-btn-lg,
-.modal-header.form-lg .ui-btn,
-.modal-footer.form-lg .ui-btn {
+.ui-modal-header .ui-btn-lg,
+.ui-modal-footer .ui-btn-lg,
+.ui-modal-header.form-lg .ui-btn,
+.ui-modal-footer.form-lg .ui-btn {
   margin: -5px 0;
 }
-.modal-header .ui-btn-sm,
-.modal-footer .ui-btn-sm {
+.ui-modal-header .ui-btn-sm,
+.ui-modal-footer .ui-btn-sm {
   margin: 3px 0;
 }
-.modal-header .ui-btn-xs,
-.modal-footer .ui-btn-xs {
+.ui-modal-header .ui-btn-xs,
+.ui-modal-footer .ui-btn-xs {
   margin: 5px 0;
 }
-.modal-header .ui-btn-xxs,
-.modal-footer .ui-btn-xxs {
+.ui-modal-header .ui-btn-xxs,
+.ui-modal-footer .ui-btn-xxs {
   margin: 7px 0;
 }
-.modal-header {
+.ui-modal-header {
   height: 52px;
   top: 0;
   z-index: 9;
 }
-.modal-header h1,
-.modal-header h2,
-.modal-header h3,
-.modal-header h4,
-.modal-header h5,
-.modal-header h6 {
+.ui-modal-header h1,
+.ui-modal-header h2,
+.ui-modal-header h3,
+.ui-modal-header h4,
+.ui-modal-header h5,
+.ui-modal-header h6 {
   font-size: 18px !important;
   text-overflow: ellipsis;
   line-height: 32px;
@@ -7198,7 +7198,7 @@ header.ui-sticky-static {
   overflow: hidden;
   float: left;
 }
-.modal-container {
+.ui-modal-container {
   min-height: 20px;
   height: 100%;
   max-height: 100%;
@@ -7206,10 +7206,10 @@ header.ui-sticky-static {
   overflow: auto;
   position: relative;
 }
-.ui-mobile .modal-container {
+.ui-mobile .ui-modal-container {
   -webkit-overflow-scrolling: touch;
 }
-.modal-container > iframe {
+.ui-modal-container > iframe {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -7219,24 +7219,24 @@ header.ui-sticky-static {
   bottom: 0;
   left: 0;
 }
-.modal-container [type="submit"]:focus {
+.ui-modal-container [type="submit"]:focus {
   box-shadow: 0 0 0 3px hsla(0, 0%, 0%, 0.15);
 }
-.modal-footer {
+.ui-modal-footer {
   height: 52px;
   bottom: 0;
   z-index: 9;
 }
-.modal-footer .ui-btn:focus {
+.ui-modal-footer .ui-btn:focus {
   box-shadow: 0 0 0 3px hsla(0, 0%, 0%, 0.15);
 }
 @media (min-width: 768px) {
-  .modal-content.inline-modal {
+  .ui-modal-content.ui-modal-inline {
     max-width: 960px;
   }
 }
 @media (max-width: 767px) {
-  .modal-content.inline-modal {
+  .ui-modal-content.ui-modal-inline {
     max-width: 90%;
   }
 }
