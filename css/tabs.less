@@ -20,7 +20,7 @@
 
 .ui-tabs {
     .ui-tab {
-        &:not(.ui-btn-xs):not(.ui-btn-xxs) {
+        &:not(.ui-btn-xs) {
             .ui-toggle-icon {
                 ._icon(@tabs-toggle-icon-size) !important; margin-top: -2px;
 
@@ -32,13 +32,6 @@
                 ._icon(@tabs-toggle-icon-xs-size) !important; margin-top: -2px;
 
                 &.right { margin-top: @tabs-toggle-right-icon-xs-margins; margin-bottom: @tabs-toggle-right-icon-xs-margins; }
-            }
-        }
-        &.ui-btn-xxs {
-            .ui-toggle-icon {
-                ._icon(@tabs-toggle-icon-xxs-size) !important;
-
-                &.right { margin-top: @tabs-toggle-right-icon-xxs-margins; margin-bottom: @tabs-toggle-right-icon-xxs-margins; }
             }
         }
 

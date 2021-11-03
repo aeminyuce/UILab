@@ -4032,9 +4032,6 @@ dt {
 .ui-btn-multi.ui-btn-xs {
   min-height: 22px;
 }
-.ui-btn-multi.ui-btn-xxs {
-  min-height: 18px;
-}
 .ui-btn .ui-icon:not(.ui-toggle-icon) {
   vertical-align: bottom;
   width: 18px;
@@ -4158,40 +4155,6 @@ dt {
   height: 14px;
   stroke-width: 36px;
 }
-.ui-btn-xxs {
-  font-size: 10px;
-  line-height: 13px;
-  height: 18px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-.ui-btn-xxs:not(.circle) {
-  padding-right: 3px;
-  padding-left: 3px;
-}
-.ui-btn-xxs.circle {
-  padding-right: 9px;
-  padding-left: 9px;
-}
-.ui-btn-xxs.round {
-  border-radius: 2px;
-}
-.ui-btn-xxs.ui-btn-square {
-  width: 18px;
-}
-.ui-btn-xxs.ui-border {
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-.ui-btn-xxs.ui-border-dual {
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-.ui-btn-xxs .ui-icon:not(.ui-toggle-icon) {
-  width: 12px;
-  height: 12px;
-  stroke-width: 38px;
-}
 .ui-mobile-menu .ui-btn-xs-fluid,
 .ui-mobile-menu .ui-btn-sm-fluid,
 .ui-mobile-menu .ui-btn-md-fluid {
@@ -4219,9 +4182,6 @@ dt {
 }
 .ui-pagination .ui-btn-xs {
   min-width: 22px;
-}
-.ui-pagination .ui-btn-xxs {
-  min-width: 18px;
 }
 .ui-btn-list {
   display: block;
@@ -4466,13 +4426,13 @@ dt {
   transition-property: height, opacity;
   transition-duration: 0.3s;
 }
-.ui-tabs .ui-tab:not(.ui-btn-xs):not(.ui-btn-xxs) .ui-toggle-icon {
+.ui-tabs .ui-tab:not(.ui-btn-xs) .ui-toggle-icon {
   width: 12px !important;
   height: 12px !important;
   stroke-width: 38px !important;
   margin-top: -2px;
 }
-.ui-tabs .ui-tab:not(.ui-btn-xs):not(.ui-btn-xxs) .ui-toggle-icon.right {
+.ui-tabs .ui-tab:not(.ui-btn-xs) .ui-toggle-icon.right {
   margin-top: 3px;
   margin-bottom: 3px;
 }
@@ -4485,15 +4445,6 @@ dt {
 .ui-tabs .ui-tab.ui-btn-xs .ui-toggle-icon.right {
   margin-top: 2px;
   margin-bottom: 2px;
-}
-.ui-tabs .ui-tab.ui-btn-xxs .ui-toggle-icon {
-  width: 9px !important;
-  height: 9px !important;
-  stroke-width: 38px !important;
-}
-.ui-tabs .ui-tab.ui-btn-xxs .ui-toggle-icon.right {
-  margin-top: 1px;
-  margin-bottom: 1px;
 }
 .ui-tabs .ui-tab.ui-active > .ui-toggle-icon {
   transform: rotate(-180deg);
@@ -4550,13 +4501,13 @@ dt {
 .ui-dropdown > .ui-btn:not(.ui-btn-square) {
   width: 100%;
 }
-.ui-dropdown > .ui-btn:not(.ui-btn-xs):not(.ui-btn-xxs) .ui-toggle-icon {
+.ui-dropdown > .ui-btn:not(.ui-btn-xs) .ui-toggle-icon {
   width: 12px !important;
   height: 12px !important;
   stroke-width: 38px !important;
   margin-top: -2px;
 }
-.ui-dropdown > .ui-btn:not(.ui-btn-xs):not(.ui-btn-xxs) .ui-toggle-icon.right {
+.ui-dropdown > .ui-btn:not(.ui-btn-xs) .ui-toggle-icon.right {
   margin-top: 4px;
   margin-bottom: 4px;
 }
@@ -4569,15 +4520,6 @@ dt {
 .ui-dropdown > .ui-btn.ui-btn-xs .ui-toggle-icon.right {
   margin-top: 2px;
   margin-bottom: 2px;
-}
-.ui-dropdown > .ui-btn.ui-btn-xxs .ui-toggle-icon {
-  width: 8px !important;
-  height: 8px !important;
-  stroke-width: 38px !important;
-}
-.ui-dropdown > .ui-btn.ui-btn-xxs .ui-toggle-icon.right {
-  margin-top: 1px;
-  margin-bottom: 1px;
 }
 .ui-dropdown .ui-dropdown-menu {
   background-color: hsl(0, 0%, 100%);
@@ -7175,10 +7117,6 @@ header.ui-sticky-static {
 .ui-modal-header .ui-btn-xs,
 .ui-modal-footer .ui-btn-xs {
   margin: 5px 0;
-}
-.ui-modal-header .ui-btn-xxs,
-.ui-modal-footer .ui-btn-xxs {
-  margin: 7px 0;
 }
 .ui-modal-header {
   height: 52px;

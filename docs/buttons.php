@@ -110,11 +110,9 @@
                             Extra Small Button <svg class="ui-icon right"><use href="#settings"/></svg>
                         </a>
                     </div>
-                    <div class="col-6">
-                        <a class="ui-btn ui-btn-ghost ui-btn-xxs circle ui-border" href="#">
-                            2x Extra Small Button <svg class="ui-icon right"><use href="#settings"/></svg>
-                        </a>
-                    </div>
+
+                    <span class="sp-15"></span>
+
                     <div class="col-6">
                         <a class="ui-btn ui-btn-lg circle" href="#">
                             Large Button <svg class="ui-icon right"><use href="#comment"/></svg>
@@ -140,18 +138,10 @@
                             Extra Small Button <svg class="ui-icon right"><use href="#comment"/></svg>
                         </a>
                     </div>
-                    <div class="col-6">
-                        <a class="ui-btn ui-btn-xxs circle" href="#">
-                            2x Extra Small Button <svg class="ui-icon right"><use href="#comment"/></svg>
-                        </a>
-                    </div>
                 </div>
 
                 <h3>Square Buttons</h3>
                 <div class="ui-padding-30-b align-c ui-theme-sub ui-ease-1st-btn">
-                    <a class="ui-btn ui-btn-square ui-btn-xxs round ui-fill-dark-100" href="#">
-                        <svg class="ui-icon"><use href="#trash"/></svg>
-                    </a>
                     <a class="ui-btn ui-btn-square ui-btn-xs round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#trash"/></svg>
                     </a>
@@ -171,9 +161,6 @@
 
                     <div class="row ui-ease-2nd-btn">
                         <div class="col-6">
-                            <a href="#" class="ui-btn ui-btn-square ui-btn-xxs round" data-ui-notifier="">
-                                <svg class="ui-icon"><use href="#user"/></svg>
-                            </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-xs round" data-ui-notifier="">
                                 <svg class="ui-icon"><use href="#user"/></svg>
                             </a>
@@ -188,9 +175,6 @@
                             </a>
                         </div>
                         <div class="col-6">
-                            <a href="#" class="ui-btn ui-btn-square ui-btn-xxs circle" data-ui-notifier="">
-                                <svg class="ui-icon"><use href="#user"/></svg>
-                            </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-xs circle" data-ui-notifier="">
                                 <svg class="ui-icon"><use href="#user"/></svg>
                             </a>
@@ -205,9 +189,6 @@
                             </a>
                         </div>
                         <div class="col-6">
-                            <a href="#" class="ui-btn ui-btn-square ui-btn-xxs round" data-ui-notifier="1">
-                                <svg class="ui-icon"><use href="#setting"/></svg>
-                            </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-xs round" data-ui-notifier="2">
                                 <svg class="ui-icon"><use href="#setting"/></svg>
                             </a>
@@ -228,9 +209,6 @@
                             </a>
                         </div>
                         <div class="col-6">
-                            <a href="#" class="ui-btn ui-btn-square ui-btn-xxs circle" data-ui-notifier="1">
-                                <svg class="ui-icon"><use href="#setting"/></svg>
-                            </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-xs circle" data-ui-notifier="2">
                                 <svg class="ui-icon"><use href="#setting"/></svg>
                             </a>
