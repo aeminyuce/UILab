@@ -152,7 +152,7 @@
 
                 <span class="sp-15"></span>
 
-                <div class="ui-breadcrumbs no-separated ui-theme-base">
+                <div class="ui-breadcrumbs ui-no-separated ui-theme-base">
                     <ul class="list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
@@ -203,7 +203,7 @@
 
                 <span class="sp-15"></span>
 
-                <div class="ui-breadcrumbs no-separated ui-theme-sub">
+                <div class="ui-breadcrumbs ui-no-separated ui-theme-sub">
                     <ul class="list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
