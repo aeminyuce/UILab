@@ -4652,7 +4652,7 @@ dt {
 .ui-dropdown ul.ui-dropdown-menu > li,
 .ui-dropdown ul.ui-dropdown-menu > li a,
 .ui-dropdown ul.ui-dropdown-menu > li > label {
-  font-size: 15px;
+  font-size: 16px;
 }
 .ui-dropdown ul.ui-dropdown-menu > li:not(.ui-holder) {
   padding: 10px;

@@ -16,7 +16,6 @@
 @dropdown-menu-min-width:                 100%;
 @dropdown-menu-max-width:                 (@sm-breakpoint - @highlight-space - (@border-dual * 2));
 
-@dropdown-list-font-size:                 (@large - 1);
 @dropdown-list-line-height:               20px;
 @dropdown-list-min-height:                30px;
 @dropdown-list-padding:                   10px;
@@ -153,7 +152,7 @@
         & > li {
             line-height: @dropdown-list-line-height; min-height: @dropdown-list-min-height;
 
-            &,a,& > label { font-size: @dropdown-list-font-size; }
+            &,a,& > label { font-size: @large; }
 
             &:not(.ui-holder) {
                 padding: @dropdown-list-padding;
