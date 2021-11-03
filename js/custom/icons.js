@@ -29,7 +29,7 @@ ui.onload(function () {
             size = this.getAttribute('data-ui-size');
             if (size !== null) {
 
-                ui.removeClass(list, 'ui-icons-xxl ui-icons-xl ui-icons-lg ui-icons-sm ui-icons-xs ui-icons-xxs');
+                ui.removeClass(list, 'ui-icons-xxl ui-icons-xl ui-icons-lg ui-icons-sm ui-icons-xs');
 
                 if (size !== '') {
                     ui.addClass(list, 'ui-icons-' + size);

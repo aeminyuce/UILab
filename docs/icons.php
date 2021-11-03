@@ -44,7 +44,6 @@
                             <button data-ui-size="" class="ui-btn round">-</button>
                             <button data-ui-size="sm" class="ui-btn round">SM</button>
                             <button data-ui-size="xs" class="ui-btn round">XS</button>
-                            <button data-ui-size="xxs" class="ui-btn round">XXS</button>
                         </div>
                     </div>
                 </div>

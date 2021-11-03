@@ -5875,15 +5875,6 @@ label.custom {
 .ui-icons-xs .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 36px !important;
 }
-.ui-icon-xxs,
-.ui-icons-xxs .ui-icon {
-  width: 12px !important;
-  height: 12px !important;
-}
-.ui-icon-xxs,
-.ui-icons-xxs .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 38px !important;
-}
 .ui-icon-thin,
 .ui-icons-thin .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 12px !important;
@@ -5903,10 +5894,6 @@ label.custom {
 .ui-icon-bold,
 .ui-icons-bold .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 36px !important;
-}
-.ui-icon-black,
-.ui-icons-black .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 38px !important;
 }
 .ui-icons-no-opacity .ui-icon:not(.ui-default-icon) {
   opacity: 1 !important;
@@ -6068,18 +6055,6 @@ label.custom {
   width: 14px;
   height: 14px;
   stroke-width: 36px;
-}
-.ui-list-group .ui-has-icon-xxs > li,
-.ui-list-group .ui-has-icon-xxs > li > a:not(.ui-list-link) {
-  padding-right: 32px;
-}
-.ui-list-group .ui-has-icon-xxs > li > a:not(.ui-list-link) {
-  margin-right: -32px;
-}
-.ui-list-group .ui-has-icon-xxs .ui-list-icon {
-  width: 12px;
-  height: 12px;
-  stroke-width: 38px;
 }
 .ui-list-group [class*="ui-has-photo"] [class*="ui-img-photo"] {
   position: absolute;
