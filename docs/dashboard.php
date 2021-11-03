@@ -839,7 +839,7 @@
                                             <button class="tab ui-btn ui-btn-ghost round-t ui-border-b">Paused</button>
                                         </div>
                                         <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
-                                            <div class="list-group margin-15-h">
+                                            <div class="ui-list-group margin-15-h">
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart col-42 right ui-ease-donut-chart">
@@ -905,7 +905,7 @@
                                             </div>
                                         </div>
                                         <div class="tab-content set-absolute set-h scroll-v" style="top: 62px; bottom: 15px;">
-                                            <div class="list-group margin-15-h">
+                                            <div class="ui-list-group margin-15-h">
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart col-42 right ui-ease-donut-chart">
