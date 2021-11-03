@@ -200,25 +200,25 @@
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <div class="ui-dropdown-menu tabs round align-l shadow-lg block-1st no-scroll" data-ui-classes="ui-fill-dark-100 ui-btn-visible">
+                            <div class="ui-dropdown-menu ui-tabs round align-l shadow-lg block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-visible">
 
                                 <button class="ui-btn ui-btn-ghost ui-ease-btn">Waiting</button>
 
-                                <button class="tab tab-toggle ui-btn ui-btn-ghost ui-ease-btn">
+                                <button class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-ease-btn">
                                     <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
                                     On Audit
                                 </button>
-                                <div class="tab-content block-1st ui-theme-gray ui-fill-light-300 ui-ease-1st-btn">
+                                <div class="ui-tab-content block-1st ui-theme-gray ui-fill-light-100 ui-ease-1st-btn">
                                     <button class="ui-btn ui-btn-ghost padding-20-l">Inner Link</button>
                                     <button class="ui-btn ui-btn-ghost padding-20-l">Inner Link</button>
                                     <button class="ui-btn ui-btn-ghost padding-20-l">Inner Link</button>
                                 </div>
 
-                                <button class="tab tab-toggle ui-btn ui-btn-ghost ui-ease-btn">
+                                <button class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-ease-btn">
                                     <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
                                     Expert
                                 </button>
-                                <div class="tab-content block-1st ui-theme-gray ui-fill-light-300 ui-ease-1st-btn">
+                                <div class="ui-tab-content block-1st ui-theme-gray ui-fill-light-100 ui-ease-1st-btn">
                                     <button class="ui-btn ui-btn-ghost padding-20-l">Inner Link</button>
                                     <button class="ui-btn ui-btn-ghost padding-20-l">Inner Link</button>
                                     <button class="ui-btn ui-btn-ghost padding-20-l">Inner Link</button>
@@ -238,25 +238,25 @@
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <div class="ui-dropdown-menu tabs round align-l shadow-lg block-1st no-scroll" data-ui-classes="ui-fill-dark-100 ui-btn-visible">
+                            <div class="ui-dropdown-menu ui-tabs round align-l shadow-lg block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-visible">
 
                                 <button class="ui-btn ui-btn-ghost ui-ease-btn">Waiting</button>
 
-                                <button class="tab tab-toggle ui-btn ui-btn-ghost ui-ease-btn">
+                                <button class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-ease-btn">
                                     <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
                                     On Audit
                                 </button>
-                                <div class="tab-content block-1st ui-theme-gray ui-fill-light-300 ui-ease-1st-btn">
+                                <div class="ui-tab-content block-1st ui-theme-gray ui-fill-light-100 ui-ease-1st-btn">
                                     <button class="ui-btn ui-btn-ghost padding-20-l">Inner Link</button>
                                     <button class="ui-btn ui-btn-ghost padding-20-l">Inner Link</button>
                                     <button class="ui-btn ui-btn-ghost padding-20-l">Inner Link</button>
                                 </div>
 
-                                <button class="tab tab-toggle ui-btn ui-btn-ghost ui-ease-btn">
+                                <button class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-ease-btn">
                                     <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
                                     Expert
                                 </button>
-                                <div class="tab-content block-1st ui-theme-gray ui-fill-light-300 ui-ease-1st-btn">
+                                <div class="ui-tab-content block-1st ui-theme-gray ui-fill-light-100 ui-ease-1st-btn">
                                     <button class="ui-btn ui-btn-ghost padding-20-l">Inner Link</button>
                                     <button class="ui-btn ui-btn-ghost padding-20-l">Inner Link</button>
                                     <button class="ui-btn ui-btn-ghost padding-20-l">Inner Link</button>
@@ -345,11 +345,13 @@
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn align-l circle">
-                                <span>Select Value</span>
+                                <span>Value 01</span>
                                 <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu round shadow-lg">
-                                <li><label class="radio"><input type="radio" name="s" value="value01">Value 01</label></li>
+                                <li class="ui-selected">
+                                    <label class="radio"><input type="radio" name="s" value="value01" checked>Value 01</label>
+                                </li>
                                 <li><label class="radio"><input type="radio" name="s" value="value02">Value 02</label></li>
                                 <li><label class="radio"><input type="radio" name="s" value="value03">Value 03</label></li>
                                 <li><label class="radio"><input type="radio" name="s" value="value04">Value 04</label></li>

@@ -231,7 +231,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="ui-card round shadow-lg tabs ui-ease-tabs" data-ui-classes="font-bold">
+                        <div class="ui-card round shadow-lg ui-tabs ui-ease-tabs" data-ui-classes="font-bold">
                             <div class="ui-card-side padding-10 ui-border-b">
 
                                 <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
@@ -240,8 +240,12 @@
                                         <svg class="ui-toggle-icon ui-icon margin-5-l"><use href="#angle-down"/></svg>
                                     </button>
                                     <ul class="ui-dropdown-menu round shadow-lg">
-                                        <li><label class="tab active bold selected">First chart</label></li>
-                                        <li><label class="tab">Second chart</label></li>
+                                        <li class="ui-selected">
+                                            <label class="ui-tab active font-bold">First chart</label>
+                                        </li>
+                                        <li>
+                                            <label class="ui-tab">Second chart</label>
+                                        </li>
                                     </ul>
                                 </div>
                                 <h4 class="align-l margin-5-v">Multiple Line Charts</h4>
@@ -249,7 +253,7 @@
                             </div>
                             <div class="ui-card-side padding-15">
 
-                                <div class="tab-content open open-ease">
+                                <div class="ui-tab-content ui-open ui-open-ease">
                                     <h5 class="font-bold align-c">First Chart</h5>
                                     <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                         <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
@@ -270,7 +274,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="tab-content">
+                                <div class="ui-tab-content">
                                     <h5 class="font-bold align-c">Second Chart</h5>
                                     <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                         <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">

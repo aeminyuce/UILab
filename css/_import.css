@@ -4458,54 +4458,54 @@ dt {
   }
 }
 /* tabs */
-.ui-ease-tabs .tab .ui-toggle-icon {
+.ui-ease-tabs .ui-tab .ui-toggle-icon {
   transition-property: opacity, transform;
   transition-duration: 0.3s;
 }
-.ui-ease-tabs .tab-content {
+.ui-ease-tabs .ui-tab-content {
   transition-property: height, opacity;
   transition-duration: 0.3s;
 }
-.tabs .tab:not(.ui-btn-xs):not(.ui-btn-xxs) .ui-toggle-icon {
+.ui-tabs .ui-tab:not(.ui-btn-xs):not(.ui-btn-xxs) .ui-toggle-icon {
   width: 12px !important;
   height: 12px !important;
   stroke-width: 38px !important;
   margin-top: -2px;
 }
-.tabs .tab:not(.ui-btn-xs):not(.ui-btn-xxs) .ui-toggle-icon.right {
+.ui-tabs .ui-tab:not(.ui-btn-xs):not(.ui-btn-xxs) .ui-toggle-icon.right {
   margin-top: 3px;
   margin-bottom: 3px;
 }
-.tabs .tab.ui-btn-xs .ui-toggle-icon {
+.ui-tabs .ui-tab.ui-btn-xs .ui-toggle-icon {
   width: 10px !important;
   height: 10px !important;
   stroke-width: 38px !important;
   margin-top: -2px;
 }
-.tabs .tab.ui-btn-xs .ui-toggle-icon.right {
+.ui-tabs .ui-tab.ui-btn-xs .ui-toggle-icon.right {
   margin-top: 2px;
   margin-bottom: 2px;
 }
-.tabs .tab.ui-btn-xxs .ui-toggle-icon {
+.ui-tabs .ui-tab.ui-btn-xxs .ui-toggle-icon {
   width: 9px !important;
   height: 9px !important;
   stroke-width: 38px !important;
 }
-.tabs .tab.ui-btn-xxs .ui-toggle-icon.right {
+.ui-tabs .ui-tab.ui-btn-xxs .ui-toggle-icon.right {
   margin-top: 1px;
   margin-bottom: 1px;
 }
-.tabs .tab.active > .ui-toggle-icon {
+.ui-tabs .ui-tab.ui-active > .ui-toggle-icon {
   transform: rotate(-180deg);
   opacity: 1;
 }
-.tabs .tab-content:not(.open) {
+.ui-tabs .ui-tab-content:not(.ui-open) {
   display: none !important;
 }
-.tabs .tab-content:not(.open-ease) {
+.ui-tabs .ui-tab-content:not(.ui-open-ease) {
   opacity: 0;
 }
-.ui-dropdown .tabs {
+.ui-dropdown .ui-tabs {
   min-width: 300px;
 }
 /* dropdown */

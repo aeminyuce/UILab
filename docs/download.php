@@ -4,21 +4,21 @@
 <main class="container">
     <div class="row">
         <div class="col-12">
-            <div class="padding-30-v sm-no-padding tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke">
+            <div class="padding-30-v sm-no-padding ui-tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke">
 
                 <div class="row ui-border-b margin-15-b">
 
                     <div class="col-4 offset-4 no-padding-b">
                         <div class="ui-btn-holder form-lg ui-ease-1st-btn">
-                            <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke active">CSS</button>
-                            <button class="tab ui-btn ui-btn-ghost round-t ui-border-b">JS</button>
-                            <button class="tab ui-btn ui-btn-ghost round-t ui-border-b">Icons</button>
+                            <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke active">CSS</button>
+                            <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">JS</button>
+                            <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">Icons</button>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="generate-holder tab-content form-lg padding-30 open open-ease">
+                <div class="generate-holder ui-tab-content form-lg padding-30 ui-open ui-open-ease">
 
                     <div class="align-c margin-30-b">
                         <div class="file ui-no-border round circle ui-no-border ui-ease-form form-inline-xs">
@@ -528,7 +528,7 @@
 
                 </div>
 
-                <div class="generate-holder tab-content form-lg padding-30">
+                <div class="generate-holder ui-tab-content form-lg padding-30">
 
                     <div class="align-c margin-30-b">
                         <div class="file ui-no-border round circle ui-no-border ui-ease-form form-inline-xs">
@@ -895,7 +895,7 @@
 
                 </div>
 
-                <div class="generate-holder tab-content form-lg padding-30">
+                <div class="generate-holder ui-tab-content form-lg padding-30">
 
                     <div class="generate-list row row-gap-sm-v">
                         <div class="col-12">

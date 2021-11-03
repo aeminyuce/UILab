@@ -19,7 +19,7 @@
                     </button>
                 </div>
 
-                <div class="tabs align-l ui-icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn scroll-v ui-scrollbar-faded ui-add-mobile-menu-l" data-ui-classes="ui-color">
+                <div class="ui-tabs align-l ui-icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn scroll-v ui-scrollbar-faded ui-add-mobile-menu-l" data-ui-classes="ui-color">
 
                     <div class="padding-10">
                         <div class="small margin-10-b font-color-white-muted">Personal Activity</div>
@@ -60,21 +60,21 @@
                         Dashboard
                     </a>
 
-                    <button class="tab tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block ui-color">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block ui-color">
                         <svg class="ui-icon margin-15-r"><use href="#users"/></svg>
                         <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
                         Employees
                     </button>
 
-                    <div class="tab-content">
+                    <div class="ui-tab-content">
                         <div class="padding-15-v padding-3-l">
-                            <ul class="tabs list-spacer-15 padding-30-l ui-ease-2nd-btn" data-ui-classes="ui-color">
+                            <ul class="ui-tabs list-spacer-15 padding-30-l ui-ease-2nd-btn" data-ui-classes="ui-color">
                                 <li>
-                                    <a class="tab tab-toggle opacity" href="#">
+                                    <a class="ui-tab ui-tab-toggle opacity" href="#">
                                         <svg class="ui-toggle-icon ui-icon margin-10-r right"><use href="#arrow-down"/></svg>
                                         Managers
                                     </a>
-                                    <div class="tab-content">
+                                    <div class="ui-tab-content">
                                         <ul class="list-spacer-15 padding-20 no-padding-r no-margin ui-ease-2nd-btn">
                                             <li><a class="opacity" href="#">Search</a></li>
                                             <li><a class="opacity" href="#">Change Group</a></li>
@@ -83,11 +83,11 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <a class="tab tab-toggle opacity" href="#">
+                                    <a class="ui-tab ui-tab-toggle opacity" href="#">
                                         <svg class="ui-toggle-icon ui-icon margin-10-r right"><use href="#arrow-down"/></svg>
                                         Team Leaders
                                     </a>
-                                    <div class="tab-content">
+                                    <div class="ui-tab-content">
                                         <ul class="list-spacer-15 padding-20 no-padding-r no-margin ui-ease-2nd-btn">
                                             <li><a class="opacity" href="#">Search</a></li>
                                             <li><a class="opacity" href="#">Change Team</a></li>
@@ -102,12 +102,12 @@
                         </div>
                     </div>
 
-                    <button class="tab tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
                         <svg class="ui-icon margin-15-r"><use href="#moneys"/></svg>
                         <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
                         Payments
                     </button>
-                    <div class="tab-content">
+                    <div class="ui-tab-content">
                         <div class="padding-15-v padding-3-l">
                             <ul class="list-spacer-15 padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">New Payment</a></li>
@@ -119,12 +119,12 @@
                         </div>
                     </div>
 
-                    <button class="tab tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
                         <svg class="ui-icon margin-15-r"><use href="#calendar-check"/></svg>
                         <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
                         Events
                     </button>
-                    <div class="tab-content">
+                    <div class="ui-tab-content">
                         <div class="padding-15-v padding-3-l">
                             <ul class="list-spacer-15 padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">New Event</a></li>
@@ -135,12 +135,12 @@
                         </div>
                     </div>
 
-                    <button class="tab tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
                         <svg class="ui-icon margin-15-r"><use href="#files"/></svg>
                         <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
                         Documents
                     </button>
-                    <div class="tab-content">
+                    <div class="ui-tab-content">
                         <div class="padding-15-v padding-3-l">
                             <ul class="list-spacer-15 padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">New Document</a></li>
@@ -153,12 +153,12 @@
                         </div>
                     </div>
 
-                    <button class="tab tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
                         <svg class="ui-icon margin-15-r"><use href="#chart-line"/></svg>
                         <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
                         Statistics
                     </button>
-                    <div class="tab-content">
+                    <div class="ui-tab-content">
                         <div class="padding-15-v padding-3-l">
                             <ul class="list-spacer-15 padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">Sales</a></li>
@@ -169,12 +169,12 @@
                         </div>
                     </div>
 
-                    <button class="tab tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
                         <svg class="ui-icon margin-15-r"><use href="#doc"/></svg>
                         <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
                         Reports
                     </button>
-                    <div class="tab-content">
+                    <div class="ui-tab-content">
                         <div class="padding-15-v padding-3-l">
                             <ul class="list-spacer-15 padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">New Report</a></li>
@@ -187,12 +187,12 @@
                         </div>
                     </div>
 
-                    <button class="tab tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost padding-10-r block">
                         <svg class="ui-icon margin-15-r"><use href="#truck"/></svg>
                         <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
                         Orders
                     </button>
-                    <div class="tab-content">
+                    <div class="ui-tab-content">
                         <div class="padding-15-v padding-3-l">
                             <ul class="list-spacer-15 padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">New Order</a></li>
@@ -267,17 +267,17 @@
                             <svg class="ui-icon"><use href="#grid-column"/></svg>
                         </button>
                         <div class="ui-dropdown-menu round shadow-lg no-scroll">
-                            <div class="tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
+                            <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                                 <div class="ui-btn-holder font-color-black-muted align-c ui-border-b ui-ease-1st-btn">
-                                    <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Favorites">
+                                    <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color ui-active" data-ui-tooltip data-ui-only="desktop" title="Favorites">
                                         <svg class="ui-icon"><use href="#star"/></svg>
                                     </button>
-                                    <button class="tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="History">
+                                    <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="History">
                                         <svg class="ui-icon"><use href="#history"/></svg>
                                     </button>
                                 </div>
-                                <div class="tab-content align-l scroll-v open open-ease" style="max-height: 420px;">
+                                <div class="ui-tab-content align-l scroll-v ui-open ui-open-ease" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                         <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                         <li>
@@ -322,7 +322,7 @@
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                     </ul>
                                 </div>
-                                <div class="tab-content align-l scroll-v" style="max-height: 420px;">
+                                <div class="ui-tab-content align-l scroll-v" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -343,20 +343,20 @@
                             <svg class="ui-icon"><use href="#bars-right"/></svg>
                         </button>
                         <div class="ui-dropdown-menu round shadow-lg no-scroll">
-                            <div class="tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
+                            <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                                 <div class="ui-btn-holder font-color-black-muted align-c ui-border-b ui-ease-1st-btn">
-                                    <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active" data-ui-tooltip data-ui-only="desktop" title="Notifications">
+                                    <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color ui-active" data-ui-tooltip data-ui-only="desktop" title="Notifications">
                                         <svg class="ui-icon"><use href="#bell"/></svg>
                                     </button>
-                                    <button class="tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="Notes">
+                                    <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="Notes">
                                         <svg class="ui-icon"><use href="#pencil-write"/></svg>
                                     </button>
-                                    <button class="tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="Started Jobs">
+                                    <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="Started Jobs">
                                         <svg class="ui-icon"><use href="#hourglass-start"/></svg>
                                     </button>
                                 </div>
-                                <div class="tab-content align-l scroll-v open open-ease" style="max-height: 420px;">
+                                <div class="ui-tab-content align-l scroll-v ui-open ui-open-ease" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -368,7 +368,7 @@
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                     </ul>
                                 </div>
-                                <div class="tab-content align-l scroll-v" style="max-height: 420px;">
+                                <div class="ui-tab-content align-l scroll-v" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -380,7 +380,7 @@
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                     </ul>
                                 </div>
-                                <div class="tab-content align-l scroll-v" style="max-height: 420px;">
+                                <div class="ui-tab-content align-l scroll-v" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -450,22 +450,22 @@
             <!-- header: end -->
 
             <!-- layouts: start -->
-            <div class="tabs ui-ease-tabs padding-15-b" data-ui-classes="ui-border-lg ui-stroke ui-color">
+            <div class="ui-tabs ui-ease-tabs padding-15-b" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                 <div class="container">
                     <div class="row ui-border-b margin-15-b ui-theme-panel2">
                         <div class="col-4 offset-4 no-padding-b">
 
                             <div class="ui-btn-holder font-color-black-muted form-lg ui-ease-1st-btn">
-                                <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active">Forms</button>
-                                <button class="tab ui-btn ui-btn-ghost round-t ui-border-b">Dashboard</button>
+                                <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color ui-active">Forms</button>
+                                <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">Dashboard</button>
                             </div>
 
                         </div>
                     </div>
                 </div>
 
-                <div class="tab-content open open-ease">
+                <div class="ui-tab-content ui-open ui-open-ease">
 
                     <!-- forms: start -->
                     <div class="fixed fixed-inner">
@@ -660,7 +660,7 @@
 
                 </div>
 
-                <div class="tab-content">
+                <div class="ui-tab-content">
 
                     <!-- dashboard: start -->
                     <div class="fixed fixed-inner">
@@ -832,13 +832,13 @@
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
                                 <div class="ui-card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
-                                    <div class="tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
+                                    <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                                         <div class="ui-btn-holder font-color-black-muted align-c margin-10-b ui-border-b form-lg ui-ease-1st-btn">
-                                            <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active">Delayed</button>
-                                            <button class="tab ui-btn ui-btn-ghost round-t ui-border-b">Paused</button>
+                                            <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color ui-active">Delayed</button>
+                                            <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">Paused</button>
                                         </div>
-                                        <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content set-absolute set-h scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
                                             <div class="ui-list-group margin-15-h">
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
@@ -904,7 +904,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="tab-content set-absolute set-h scroll-v" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content set-absolute set-h scroll-v" style="top: 62px; bottom: 15px;">
                                             <div class="ui-list-group margin-15-h">
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
@@ -976,7 +976,7 @@
                             </div>
 
                             <div class="col-xl-6 col-lg-6 col-12 col-md-6">
-                                <div class="ui-card full-h padding-15 round shadow-lg tabs" data-ui-classes="font-bold">
+                                <div class="ui-tabs ui-card full-h padding-15 round shadow-lg" data-ui-classes="font-bold">
                                     <div class="ui-ease-tabs">
                                         <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
                                             <button class="ui-btn ui-btn-square ui-btn-ghost round">
@@ -994,12 +994,16 @@
                                                 <svg class="ui-toggle-icon ui-icon margin-5-l"><use href="#angle-down"/></svg>
                                             </button>
                                             <ul class="ui-dropdown-menu round shadow-lg">
-                                                <li><label class="tab active font-bold selected">Last year</label></li>
-                                                <li><label class="tab">Past year</label></li>
+                                                <li class="ui-selected">
+                                                    <label class="ui-tab ui-active font-bold">Last year</label>
+                                                </li>
+                                                <li>
+                                                    <label class="ui-tab">Past year</label>
+                                                </li>
                                             </ul>
                                         </div>
                                         <h4 class="align-l margin-5-t">Statistics</h4>
-                                        <div class="tab-content open open-ease">
+                                        <div class="ui-tab-content ui-open ui-open-ease">
                                             <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                                 <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
                                                     <li data-ui-y="10" data-ui-link="#"></li>
@@ -1019,7 +1023,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="tab-content">
+                                        <div class="ui-tab-content">
                                             <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                                 <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
                                                     <li data-ui-y="10" data-ui-link="#"></li>
@@ -1045,13 +1049,13 @@
 
                             <div class="col-xl-3 col-lg-6 col-12 col-md-6">
                                 <div class="ui-card full-h padding-15 padding-10-t round shadow-lg" style="min-height: 350px;">
-                                    <div class="tabs form-lg ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
+                                    <div class="ui-tabs form-lg ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                                         <div class="ui-btn-holder font-color-black-muted align-c margin-10-b ui-border-b ui-ease-1st-btn">
-                                            <button class="tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color active">News</button>
-                                            <button class="tab ui-btn ui-btn-ghost round-t ui-border-b">Announcements</button>
+                                            <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color ui-active">News</button>
+                                            <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">Announcements</button>
                                         </div>
-                                        <div class="tab-content set-absolute set-h scroll-v open open-ease" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content set-absolute set-h scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
                                             <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                                 <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                                 <li>
@@ -1097,7 +1101,7 @@
                                                 <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                             </ul>
                                         </div>
-                                        <div class="tab-content set-absolute set-h scroll-v" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content set-absolute set-h scroll-v" style="top: 62px; bottom: 15px;">
                                             <ul class="ui-timeline ui-side-l margin-15-h ui-hide-h-lines">
                                                 <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                                 <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>

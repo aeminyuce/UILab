@@ -6,8 +6,8 @@
     <div class="row no-row-gap sm-fluid full-h">
         <div class="login-forms-container col-lg-5 col-6">
 
-            <div class="forms-holder ui-card form-lg tabs shadow-lg ui-ease-tabs">
-                <form id="login" class="tab-content open open-ease" action="#">
+            <div class="forms-holder ui-card form-lg ui-tabs shadow-lg ui-ease-tabs">
+                <form id="login" class="ui-tab-content ui-open ui-open-ease" action="#">
 
                     <h3 class="margin-30-b">Login to continue</h3>
                     <p class="highlight font-color-black-muted large">Sign in to create, discover and connect with the global community.</p>
@@ -46,13 +46,13 @@
                         <b>LOGIN</b>
                     </button>
                     <span class="sp-15"></span>
-                    <button class="tab ui-btn ui-btn-ghost font-color-black-50 round block ui-ease-btn" data-ui-id="lost-password">
+                    <button class="ui-tab ui-btn ui-btn-ghost font-color-black-50 round block ui-ease-btn" data-ui-id="lost-password">
                         <svg class="ui-icon margin-5-r no-opacity"><use href="#lock"/></svg> Forgot password?
                     </button>
 
                 </form>
 
-                <form id="lost-password" class="tab-content" action="#">
+                <form id="lost-password" class="ui-tab-content" action="#">
 
                     <h3 class="margin-30-b">Forgot password?</h3>
                     <p class="highlight font-color-black-muted large">Please enter your email address. You will receive a link to create a new password via email.</p>
@@ -70,7 +70,7 @@
                         <b>Reset Password</b>
                     </button>
                     <span class="sp-15"></span>
-                    <button class="tab ui-btn ui-btn-ghost font-color-black-50 round block ui-ease-btn" data-ui-id="login">
+                    <button class="ui-tab ui-btn ui-btn-ghost font-color-black-50 round block ui-ease-btn" data-ui-id="login">
                         <svg class="ui-icon margin-5-r no-opacity"><use href="#long-arrow-left"/></svg> Back to login
                     </button>
 

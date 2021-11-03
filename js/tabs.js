@@ -6,17 +6,17 @@
 ui.tabs = {
 
     // targets
-    targetParent: 'tabs',
-    targetTab: 'tab',
+    targetParent: 'ui-tabs',
+    targetTab: 'ui-tab',
 
     // main classnames
-    nameContent: 'tab-content',
-    nameToggle: 'tab-toggle',
+    nameContent: 'ui-tab-content',
+    nameToggle: 'ui-tab-toggle',
 
     // helper classnames
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
-    nameActive: 'active',
+    nameOpen: 'ui-open',
+    nameOpenEase: 'ui-open-ease',
+    nameActive: 'ui-active',
 
     // data attributes
     dataID: 'data-ui-id',
@@ -157,7 +157,7 @@ ui.tabs = {
 
                                 if (this !== currentContent) {
 
-                                    if (ui.hasClass(this, 'open')) {
+                                    if (ui.hasClass(this, ui.tabs.nameOpen)) {
                                         lastOpened = this; // find last opened content
                                     }
 

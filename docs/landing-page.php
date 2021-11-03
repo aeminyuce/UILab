@@ -80,20 +80,20 @@
 <main class="container no-gutter">
 
     <!-- tab banner: start -->
-    <div class="tabs form-lg ui-ease-tabs" data-ui-classes="ui-color ui-border-lg ui-stroke">
+    <div class="ui-tabs form-lg ui-ease-tabs" data-ui-classes="ui-color ui-border-lg ui-stroke">
 
         <div class="fixed padding-10-t ui-theme-farmer2">
             <div class="row no-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
                 <div class="col-12 font-color-black-50 xs-align-l align-c ui-ease-1st-btn">
-                    <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b ui-color ui-border-lg ui-stroke active">
+                    <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b ui-color ui-border-lg ui-stroke active">
                         <svg class="ui-icon"><use href="#factory"/></svg>
                         Long Term Investment
                     </button>
-                    <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b">
+                    <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b">
                         <svg class="ui-icon"><use href="#network"/></svg>
                         Connect with Our Farmers
                     </button>
-                    <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b">
+                    <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b">
                         <svg class="ui-icon"><use href="#user-circle"/></svg>
                         Social Impact Investment
                     </button>
@@ -102,7 +102,7 @@
             <span class="sp-10 visible-sm"></span>
         </div>
 
-        <div class="banner-content banner-tab01 tab-content padding-30-v set-relative ui-theme-farmer ui-fill-dark-100 open open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
+        <div class="banner-content banner-tab01 ui-tab-content padding-30-v set-relative ui-theme-farmer ui-fill-dark-100 ui-open ui-open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
             <div class="fixed padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
@@ -140,7 +140,7 @@
             </div>
             <span class="sp-30 margin-10-v"></span>
         </div>
-        <div class="banner-content banner-tab02 tab-content padding-30-v set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
+        <div class="banner-content banner-tab02 ui-tab-content padding-30-v set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
             <div class="fixed padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
@@ -178,7 +178,7 @@
             </div>
             <span class="sp-30 margin-10-v"></span>
         </div>
-        <div class="banner-content banner-tab03 tab-content padding-30-v set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
+        <div class="banner-content banner-tab03 ui-tab-content padding-30-v set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
             <div class="fixed padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
@@ -338,20 +338,20 @@
                 </div>
             </div>
         </div>
-        <div class="tabs form-lg ui-border-t padding-10-t ui-ease-tabs" data-ui-classes="ui-color ui-border-lg ui-stroke">
+        <div class="ui-tabs form-lg ui-border-t padding-10-t ui-ease-tabs" data-ui-classes="ui-color ui-border-lg ui-stroke">
 
             <div class="fixed">
                 <div class="row no-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
                     <div class="col-12 font-color-black-50 xs-align-l align-c ui-ease-1st-btn">
-                        <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b ui-color ui-border-lg ui-stroke active">
+                        <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b ui-color ui-border-lg ui-stroke active">
                             <svg class="ui-icon"><use href="#building"/></svg>
                             Company
                         </button>
-                        <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b">
+                        <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b">
                             <svg class="ui-icon"><use href="#comments"/></svg>
                             Social
                         </button>
-                        <button class="tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b">
+                        <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost margin-1-b ui-border-b">
                             <svg class="ui-icon"><use href="#users"/></svg>
                             Customers
                         </button>
@@ -360,7 +360,7 @@
                 <span class="sp-10 visible-sm"></span>
             </div>
 
-            <div class="tab-content padding-10 open open-ease">
+            <div class="ui-tab-content padding-10 ui-open ui-open-ease">
                 <div class="row sm-fluid ui-icons-sm hover-shadow-2nd hover-t-2nd">
                     <div class="col-3 col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
@@ -465,7 +465,7 @@
                     </a>
                 </div>
             </div>
-            <div class="tab-content padding-10">
+            <div class="ui-tab-content padding-10">
                 <div class="row sm-fluid">
                     <div class="col-3 col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
@@ -570,7 +570,7 @@
                     </a>
                 </div>
             </div>
-            <div class="tab-content padding-10">
+            <div class="ui-tab-content padding-10">
                 <div class="row sm-fluid">
                     <div class="col-3 col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">

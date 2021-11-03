@@ -12,14 +12,14 @@
 @tabs-in-dropdown-min-width:            (@layout-min - 20px);
 
 .ui-ease-tabs {
-    .tab {
+    .ui-tab {
         .ui-toggle-icon { transition-property: opacity, transform; transition-duration: (@ease-default * 2); }
         &-content { transition-property: height, opacity; transition-duration: (@ease-default * 2); }
     }
 }
 
-.tabs {
-    .tab {
+.ui-tabs {
+    .ui-tab {
         &:not(.ui-btn-xs):not(.ui-btn-xxs) {
             .ui-toggle-icon {
                 ._icon(@tabs-toggle-icon-size) !important; margin-top: -2px;
@@ -42,13 +42,13 @@
             }
         }
 
-        &.active {
+        &.ui-active {
             & > .ui-toggle-icon { transform: rotate(-180deg); opacity: 1; }
         }
 
         &-content {
-            &:not(.open) { display: none !important; }
-            &:not(.open-ease) { opacity: 0; }
+            &:not(.ui-open) { display: none !important; }
+            &:not(.ui-open-ease) { opacity: 0; }
         }
     }
 

@@ -23,6 +23,8 @@ ui.dropdown = {
     nameOpen: 'ui-open',
     nameOpenEase: 'ui-open-ease',
 
+    nameSelected: 'ui-selected',
+
     // outer classnames
     nameBtn: 'ui-btn',
     nameMobileMenu: 'ui-mobile-menu',
@@ -32,7 +34,6 @@ ui.dropdown = {
 
     tagValue: 'span',
     tagValueItems: 'label',
-    tagValueSelected: 'selected',
 
     // values
     scrollbarSize: 20,
@@ -296,8 +297,8 @@ ui.dropdown = {
                     input.parentNode.removeChild(input);
                 }
 
-                ui.removeClass(ui.find('.' + ui.dropdown.tagValueSelected, p), ui.dropdown.tagValueSelected);
-                ui.addClass(this.parentNode, ui.dropdown.tagValueSelected);
+                ui.removeClass(ui.find('.' + ui.dropdown.nameSelected, p), ui.dropdown.nameSelected);
+                ui.addClass(this.parentNode, ui.dropdown.nameSelected);
 
             });
 
