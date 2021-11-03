@@ -14,12 +14,12 @@
                             <div class="file ui-no-border inline-block round ui-ease-form">
                                 <input class="bg-white cursor-pointer" type="file" name="images[]" multiple>
                                 <span class="ui-btn ui-btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
-                                    <svg class="icon no-opacity"><use href="#plus"/></svg>
+                                    <svg class="ui-icon no-opacity"><use href="#plus"/></svg>
                                 </span>
                             </div>
 
                             <button title="Send Images" type="submit" name="send" class="ui-btn ui-btn-square round ui-theme-base ui-fill-dark-100 ui-ease-btn">
-                                <svg class="icon"><use href="#send"/></svg>
+                                <svg class="ui-icon"><use href="#send"/></svg>
                             </button>
 
                         </div>
@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="ui-uploader-list">
-                    <svg class="icon icon-xxl"><use href="#images-plus"/></svg>
+                    <svg class="ui-icon ui-icon-xxl"><use href="#images-plus"/></svg>
                     <ul>
                         <li data-ui-img="img/house_01.jpg" data-ui-id="1" data-ui-tag="Exterior"></li>
                         <li data-ui-img="img/house_02.jpg" data-ui-id="2" data-ui-tag=""></li>

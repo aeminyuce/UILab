@@ -4,7 +4,7 @@
 @icon-weights:                          thin light default semibold bold black;
 @icons-margin-sizes:                    5px 10px;
 
-.icon {
+.ui-icon {
     vertical-align: middle; display: inline-block; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round;
 
     ._icon(@icon-default-size);
@@ -15,7 +15,7 @@
     }
 }
 
-.svg- {
+.ui-svg- {
     &f { fill: currentColor !important; } // fill
     &l { fill: none !important; } // line
     &sd { fill: currentColor !important; stroke: none !important; } // solid
@@ -24,23 +24,23 @@
 }
 
 each(@icon-sizes, { // do not merge
-    .icon-@{key},.icons-@{key} .icon { ._icon-size(@value) !important; }
-    .icon-@{key},.icons-@{key} .icon:not([class*="icon-"]) { ._icon-weight(@value) !important; }
+    .ui-icon-@{key},.ui-icons-@{key} .ui-icon { ._icon-size(@value) !important; }
+    .ui-icon-@{key},.ui-icons-@{key} .ui-icon:not([class*="ui-icon-"]) { ._icon-weight(@value) !important; }
 });
 
 each(@icon-sizes, { // do not merge
     @weight: extract(@icon-weights, @index);
-    .icon-@{weight},.icons-@{weight} .icon:not([class*="icon-"]) { ._icon-weight(@value) !important; }
+    .ui-icon-@{weight},.ui-icons-@{weight} .ui-icon:not([class*="ui-icon-"]) { ._icon-weight(@value) !important; }
 });
 
-.icons-no-opacity {
-    .icon:not(.default-icon) { opacity: 1 !important; }
+.ui-icons-no-opacity {
+    .ui-icon:not(.ui-default-icon) { opacity: 1 !important; }
 }
 each(@icons-margin-sizes, {
     @size: unit(@value);
 
-    .icons-margin-@{size}-l .icon { margin-left: @value !important; }
-    .icons-margin-@{size}-r .icon { margin-right: @value !important; }
-    .icons-margin-@{size}-v .icon { margin-top: @value !important; margin-bottom: @value !important; }
-    .icons-margin-@{size}-h .icon { margin-right: @value !important; margin-left: @value !important; }
+    .ui-icons-margin-@{size}-l .ui-icon { margin-left: @value !important; }
+    .ui-icons-margin-@{size}-r .ui-icon { margin-right: @value !important; }
+    .ui-icons-margin-@{size}-v .ui-icon { margin-top: @value !important; margin-bottom: @value !important; }
+    .ui-icons-margin-@{size}-h .ui-icon { margin-right: @value !important; margin-left: @value !important; }
 });

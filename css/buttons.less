@@ -23,7 +23,7 @@
     &btn,&1st-btn > *,&2nd-btn > * > * {
         transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow;
 
-        .icon { transition-property: color, transform, opacity, stroke-width; transition-duration: @ease-default; }
+        .ui-icon { transition-property: color, transform, opacity, stroke-width; transition-duration: @ease-default; }
     }
 }
 
@@ -63,10 +63,10 @@
 
         &[class*="ui-fill-dark-"] {
             &:not(.ui-color) {
-                &,.icon:not(.ui-color) { ._color-var(black); }
+                &,.ui-icon:not(.ui-color) { ._color-var(black); }
             }
 
-            &:hover,&:hover .icon { color: @white !important; }
+            &:hover,&:hover .ui-icon { color: @white !important; }
         }
     }
 
@@ -79,17 +79,17 @@
         &.ui-btn-xxs { min-height: @btn-xxs; }
     }
 
-    .icon {
+    .ui-icon {
         &:not(.ui-toggle-icon) { vertical-align: bottom; ._icon(@btn-default-icon); }
         &:not(.no-opacity) { opacity: .45; }
     }
     &[class*="ui-fill-dark-"] {
-        .icon { opacity: 1; }
+        .ui-icon { opacity: 1; }
     }
 
     .ui-desktop & {
         &[class*="ui-fill-dark-"] {
-            &:hover .icon { opacity: 1 !important; }
+            &:hover .ui-icon { opacity: 1 !important; }
         }
 
         &:not([class*="ui-fill-"]):not(.ui-btn-passive):hover { ._bg-var(btn-hover-bg); }
@@ -109,7 +109,7 @@
         &-dual { padding-top: (@btn-lg-padding - @border-dual); padding-bottom: (@btn-lg-padding - @border-dual); }
     }
 
-    .icon:not(.ui-toggle-icon) { ._icon(@btn-lg-icon); }
+    .ui-icon:not(.ui-toggle-icon) { ._icon(@btn-lg-icon); }
 }
 
 .ui-btn-sm {
@@ -127,7 +127,7 @@
         &-dual { padding-top: (@btn-sm-padding - @border-dual); padding-bottom: (@btn-sm-padding - @border-dual); }
     }
 
-    .icon:not(.ui-toggle-icon) { ._icon(@btn-sm-icon); }
+    .ui-icon:not(.ui-toggle-icon) { ._icon(@btn-sm-icon); }
 }
 
 .ui-btn-xs {
@@ -145,7 +145,7 @@
         &-dual { padding-top: (@btn-xs-padding - @border-dual); padding-bottom: (@btn-xs-padding - @border-dual); }
     }
 
-    .icon:not(.ui-toggle-icon) { ._icon(@btn-xs-icon); }
+    .ui-icon:not(.ui-toggle-icon) { ._icon(@btn-xs-icon); }
 }
 
 .ui-btn-xxs {
@@ -163,7 +163,7 @@
         &-dual { padding-top: (@btn-xxs-padding - @border-dual); padding-bottom: (@btn-xxs-padding - @border-dual); }
     }
 
-    .icon:not(.ui-toggle-icon) { ._icon(@btn-xxs-icon); }
+    .ui-icon:not(.ui-toggle-icon) { ._icon(@btn-xxs-icon); }
 }
 
 .ui-mobile-menu {

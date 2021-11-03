@@ -48,7 +48,7 @@
 
                     <div class="form-lg">
                         <div class="loadingText2 text text-icon-l margin-10-b round ui-border-dual form-inline ui-ease-form">
-                            <svg class="icon"><use href="#search"/></svg>
+                            <svg class="ui-icon"><use href="#search"/></svg>
                             <input type="text" placeholder="Left icon">
                         </div>
                     </div>
@@ -59,7 +59,7 @@
 
                     <div class="form-lg">
                         <div class="loadingSelect select round ui-border-dual form-inline ui-ease-form">
-                            <svg class="icon"><use href="#angle-down"/></svg>
+                            <svg class="ui-icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select your age</option>
                                 <option>Under 20</option>

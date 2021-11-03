@@ -3415,70 +3415,70 @@ a {
   color: var(--ui-black);
 }
 .font-color-white,
-.font-color-white .icon:not([class*="ui-color-"]):not([class*="ui-fill-"]),
+.font-color-white .ui-icon:not([class*="ui-color-"]):not([class*="ui-fill-"]),
 .font-color-white a:not([class*="ui-color-"]):not([class*="ui-fill-"]),
 .font-color-white button:not([class*="ui-color-"]):not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 100%) !important;
 }
 .font-color-white-50,
-.font-color-white-50 .icon:not([class*="ui-color-"]):not([class*="ui-fill-"]),
+.font-color-white-50 .ui-icon:not([class*="ui-color-"]):not([class*="ui-fill-"]),
 .font-color-white-50 a:not([class*="ui-color-"]):not([class*="ui-fill-"]),
 .font-color-white-50 button:not([class*="ui-color-"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 100%, 0.87) !important;
 }
 .font-color-white-muted,
-.font-color-white-muted .icon:not([class*="ui-color-"]):not([class*="ui-fill-"]),
+.font-color-white-muted .ui-icon:not([class*="ui-color-"]):not([class*="ui-fill-"]),
 .font-color-white-muted a:not([class*="ui-color-"]):not([class*="ui-fill-"]),
 .font-color-white-muted button:not([class*="ui-color-"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 100%, 0.72) !important;
 }
 .font-color-black,
-.font-color-black .icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
+.font-color-black .ui-icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-black a:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-black button:not([class*="ui-color"]):not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 0%) !important;
   color: var(--ui-black) !important;
 }
 .font-color-black-50,
-.font-color-black-50 .icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
+.font-color-black-50 .ui-icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-black-50 a:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-black-50 button:not([class*="ui-color"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 0%, 0.5) !important;
   color: var(--ui-black-50) !important;
 }
 .font-color-black-muted,
-.font-color-black-muted .icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
+.font-color-black-muted .ui-icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-black-muted a:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-black-muted button:not([class*="ui-color"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 0%, 0.4) !important;
   color: var(--ui-black-muted) !important;
 }
 .font-color-green,
-.font-color-green .icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
+.font-color-green .ui-icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-green a:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-green button:not([class*="ui-color"]):not([class*="ui-fill-"]) {
   color: hsl(142, 82%, 42%) !important;
 }
 .font-color-yellow,
-.font-color-yellow .icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
+.font-color-yellow .ui-icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-yellow a:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-yellow button:not([class*="ui-color"]):not([class*="ui-fill-"]) {
   color: hsl(42, 100%, 45%) !important;
 }
 .font-color-orange,
-.font-color-orange .icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
+.font-color-orange .ui-icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-orange a:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-orange button:not([class*="ui-color"]):not([class*="ui-fill-"]) {
   color: hsl(30, 100%, 50%) !important;
 }
 .font-color-red,
-.font-color-red .icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
+.font-color-red .ui-icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-red a:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-red button:not([class*="ui-color"]):not([class*="ui-fill-"]) {
   color: hsl(0, 74%, 55%) !important;
 }
 .font-color-blue,
-.font-color-blue .icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
+.font-color-blue .ui-icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-blue a:not([class*="ui-color"]):not([class*="ui-fill-"]),
 .font-color-blue button:not([class*="ui-color"]):not([class*="ui-fill-"]) {
   color: hsl(212, 64%, 38%) !important;
@@ -3583,20 +3583,20 @@ h5 > small,
 h6 > small {
   font-size: 14px !important;
 }
-h1 .icon:not(.right),
-h2 .icon:not(.right),
-h3 .icon:not(.right),
-h4 .icon:not(.right),
-h5 .icon:not(.right),
-h6 .icon:not(.right) {
+h1 .ui-icon:not(.right),
+h2 .ui-icon:not(.right),
+h3 .ui-icon:not(.right),
+h4 .ui-icon:not(.right),
+h5 .ui-icon:not(.right),
+h6 .ui-icon:not(.right) {
   margin-right: 5px;
 }
-h1 .icon-lg:not(.right),
-h2 .icon-lg:not(.right),
-h3 .icon-lg:not(.right),
-h4 .icon-lg:not(.right),
-h5 .icon-lg:not(.right),
-h6 .icon-lg:not(.right) {
+h1 .ui-icon-lg:not(.right),
+h2 .ui-icon-lg:not(.right),
+h3 .ui-icon-lg:not(.right),
+h4 .ui-icon-lg:not(.right),
+h5 .ui-icon-lg:not(.right),
+h6 .ui-icon-lg:not(.right) {
   margin-right: 10px;
 }
 h1,
@@ -3924,9 +3924,9 @@ dt {
 .ui-ease-2nd-btn > * > * {
   transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow;
 }
-.ui-ease-btn .icon,
-.ui-ease-1st-btn > * .icon,
-.ui-ease-2nd-btn > * > * .icon {
+.ui-ease-btn .ui-icon,
+.ui-ease-1st-btn > * .ui-icon,
+.ui-ease-2nd-btn > * > * .ui-icon {
   transition-property: color, transform, opacity, stroke-width;
   transition-duration: 0.15s;
 }
@@ -4011,12 +4011,12 @@ dt {
   background-color: transparent !important;
 }
 .ui-btn-ghost:not(.ui-btn-visible)[class*="ui-fill-dark-"]:not(.ui-color),
-.ui-btn-ghost:not(.ui-btn-visible)[class*="ui-fill-dark-"]:not(.ui-color) .icon:not(.ui-color) {
+.ui-btn-ghost:not(.ui-btn-visible)[class*="ui-fill-dark-"]:not(.ui-color) .ui-icon:not(.ui-color) {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
 }
 .ui-btn-ghost:not(.ui-btn-visible)[class*="ui-fill-dark-"]:hover,
-.ui-btn-ghost:not(.ui-btn-visible)[class*="ui-fill-dark-"]:hover .icon {
+.ui-btn-ghost:not(.ui-btn-visible)[class*="ui-fill-dark-"]:hover .ui-icon {
   color: hsl(0, 0%, 100%) !important;
 }
 .ui-btn-multi {
@@ -4035,19 +4035,19 @@ dt {
 .ui-btn-multi.ui-btn-xxs {
   min-height: 18px;
 }
-.ui-btn .icon:not(.ui-toggle-icon) {
+.ui-btn .ui-icon:not(.ui-toggle-icon) {
   vertical-align: bottom;
   width: 18px;
   height: 18px;
   stroke-width: 32px;
 }
-.ui-btn .icon:not(.no-opacity) {
+.ui-btn .ui-icon:not(.no-opacity) {
   opacity: 0.45;
 }
-.ui-btn[class*="ui-fill-dark-"] .icon {
+.ui-btn[class*="ui-fill-dark-"] .ui-icon {
   opacity: 1;
 }
-.ui-desktop .ui-btn[class*="ui-fill-dark-"]:hover .icon {
+.ui-desktop .ui-btn[class*="ui-fill-dark-"]:hover .ui-icon {
   opacity: 1 !important;
 }
 .ui-desktop .ui-btn:not([class*="ui-fill-"]):not(.ui-btn-passive):hover {
@@ -4084,8 +4084,8 @@ dt {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-.ui-btn-lg .icon:not(.ui-toggle-icon),
-.form-lg .ui-btn .icon:not(.ui-toggle-icon) {
+.ui-btn-lg .ui-icon:not(.ui-toggle-icon),
+.form-lg .ui-btn .ui-icon:not(.ui-toggle-icon) {
   width: 22px;
   height: 22px;
   stroke-width: 28px;
@@ -4119,7 +4119,7 @@ dt {
   padding-top: 3px;
   padding-bottom: 3px;
 }
-.ui-btn-sm .icon:not(.ui-toggle-icon) {
+.ui-btn-sm .ui-icon:not(.ui-toggle-icon) {
   width: 16px;
   height: 16px;
   stroke-width: 34px;
@@ -4153,7 +4153,7 @@ dt {
   padding-top: 2px;
   padding-bottom: 2px;
 }
-.ui-btn-xs .icon:not(.ui-toggle-icon) {
+.ui-btn-xs .ui-icon:not(.ui-toggle-icon) {
   width: 14px;
   height: 14px;
   stroke-width: 36px;
@@ -4187,7 +4187,7 @@ dt {
   padding-top: 1px;
   padding-bottom: 1px;
 }
-.ui-btn-xxs .icon:not(.ui-toggle-icon) {
+.ui-btn-xxs .ui-icon:not(.ui-toggle-icon) {
   width: 12px;
   height: 12px;
   stroke-width: 38px;
@@ -4442,14 +4442,14 @@ dt {
   opacity: 0.45;
   transform: translateY(30px);
 }
-.ui-top-button .icon {
+.ui-top-button .ui-icon {
   color: hsl(0, 0%, 100%);
   opacity: 1 !important;
 }
 .ui-desktop .ui-top-button:hover {
   opacity: 0.75;
 }
-.ui-desktop .ui-top-button:hover .icon {
+.ui-desktop .ui-top-button:hover .ui-icon {
   transform: translateY(-3px);
 }
 @media (max-width: 320px) {
@@ -4522,7 +4522,7 @@ dt {
   transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow;
   transition-duration: 0.15s;
 }
-.ui-ease-dropdown > .ui-btn .icon {
+.ui-ease-dropdown > .ui-btn .ui-icon {
   transition-property: color, transform, opacity;
   transition-duration: 0.15s;
 }
@@ -4541,7 +4541,7 @@ dt {
 .ui-dropdown.ui-open-ease > .ui-btn .ui-toggle-icon {
   transform: rotate(-180deg);
 }
-.ui-dropdown.ui-open-ease > .ui-btn .icon {
+.ui-dropdown.ui-open-ease > .ui-btn .ui-icon {
   opacity: 1;
 }
 .ui-dropdown > .ui-btn {
@@ -4704,7 +4704,7 @@ dt {
 .ui-dropdown ul.ui-dropdown-menu.ui-has-grid > li a {
   text-align: center;
 }
-.ui-dropdown ul.ui-dropdown-menu.ui-has-grid > li .icon,
+.ui-dropdown ul.ui-dropdown-menu.ui-has-grid > li .ui-icon,
 .ui-dropdown ul.ui-dropdown-menu.ui-has-grid > li img {
   margin: 5px auto 10px auto;
   display: block;
@@ -4814,9 +4814,9 @@ dt {
 .ui-ease-2nd-form > * > * {
   transition-property: color, background-color, border-color;
 }
-.ui-ease-form .icon,
-.ui-ease-1st-form > * .icon,
-.ui-ease-2nd-form > * > * .icon {
+.ui-ease-form .ui-icon,
+.ui-ease-1st-form > * .ui-icon,
+.ui-ease-2nd-form > * > * .ui-icon {
   transition-property: color, transform, opacity;
   transition-duration: 0.3s;
 }
@@ -4950,7 +4950,7 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-highlighted);
 }
-.select .icon {
+.select .ui-icon {
   width: 12px;
   height: 12px;
   stroke-width: 38px;
@@ -5054,7 +5054,7 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
   overflow: hidden;
   float: left;
 }
-.file .ui-btn .icon {
+.file .ui-btn .ui-icon {
   width: 16px;
   height: 16px;
   stroke-width: 34px;
@@ -5353,7 +5353,7 @@ label.custom {
 .form-light > input,
 .form-light > select:not(:focus),
 .form-light > textarea,
-.form-light .icon {
+.form-light .ui-icon {
   color: hsl(0, 0%, 100%);
 }
 .form-light > input:-webkit-autofill:not(:focus) {
@@ -5430,21 +5430,21 @@ label.custom {
 .form-focus > select,
 .form-focus.form-light > select option,
 .form-focus > textarea,
-.form-focus .icon:not([class*="ui-color"]) {
+.form-focus .ui-icon:not([class*="ui-color"]) {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
 }
 .form-focus.form-light > input,
 .form-focus.form-light > select,
 .form-focus.form-light > textarea,
-.form-focus.form-light .icon:not([class*="ui-color"]) {
+.form-focus.form-light .ui-icon:not([class*="ui-color"]) {
   color: hsl(0, 0%, 100%) !important;
 }
-.form-focus[class*="text-icon"] .icon,
-.form-focus.select .icon {
+.form-focus[class*="text-icon"] .ui-icon,
+.form-focus.select .ui-icon {
   opacity: 1;
 }
-.form-focus.select .icon {
+.form-focus.select .ui-icon {
   transform: translateY(-50%) rotate(-180deg);
 }
 ::placeholder {
@@ -5478,25 +5478,25 @@ label.custom {
 ::-moz-placeholder {
   opacity: 1;
 }
-[class*="text-icon"] .icon,
+[class*="text-icon"] .ui-icon,
 [class*="text-icon"] > button {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
   cursor: default;
 }
-[class*="text-icon"] > .icon,
+[class*="text-icon"] > .ui-icon,
 [class*="text-icon"] > button {
   position: absolute;
   top: 50%;
   right: 5px;
   transform: translateY(-50%);
 }
-[class*="text-icon"] .icon {
+[class*="text-icon"] .ui-icon {
   width: 16px;
   height: 16px;
   stroke-width: 34px;
 }
-[class*="text-icon"] .icon {
+[class*="text-icon"] .ui-icon {
   opacity: 0.45;
 }
 [class*="text-icon"]:not(.text-icon-l) > input {
@@ -5507,13 +5507,13 @@ label.custom {
   border: 0;
 }
 [class*="text-icon"] > button,
-[class*="text-icon"] > button .icon {
+[class*="text-icon"] > button .ui-icon {
   cursor: pointer;
 }
-[class*="text-icon"] > button:hover .icon {
+[class*="text-icon"] > button:hover .ui-icon {
   opacity: 1;
 }
-.text-icon-l > .icon,
+.text-icon-l > .ui-icon,
 .text-icon-both > .text-icon-l {
   right: inherit;
   left: 5px;
@@ -5536,7 +5536,7 @@ label.custom {
 .clear-form:not(.open-ease) {
   opacity: 0;
 }
-.text .clear-form .icon {
+.text .clear-form .ui-icon {
   width: 12px;
   height: 12px;
   stroke-width: 38px;
@@ -5614,14 +5614,14 @@ label.custom {
 .form-lg .select select {
   padding-right: 40px;
 }
-.form-lg .select .icon,
-.form-lg [class*="text-icon"] > .icon {
+.form-lg .select .ui-icon,
+.form-lg [class*="text-icon"] > .ui-icon {
   width: 20px;
   height: 20px;
   stroke-width: 30px;
   right: 10px;
 }
-.form-lg [class*="text-icon"] .icon {
+.form-lg [class*="text-icon"] .ui-icon {
   width: 20px;
   height: 20px;
   stroke-width: 30px;
@@ -5633,7 +5633,7 @@ label.custom {
 .form-lg .text-icon-both > input {
   padding-right: 40px !important;
 }
-.form-lg .text-icon-l > .icon,
+.form-lg .text-icon-l > .ui-icon,
 .form-lg .text-icon-both > .text-icon-l {
   left: 10px;
 }
@@ -5641,7 +5641,7 @@ label.custom {
 .form-lg .text-icon-both > input {
   padding-left: 40px !important;
 }
-.form-lg .clear-form .icon {
+.form-lg .clear-form .ui-icon {
   width: 20px;
   height: 20px;
   stroke-width: 30px;
@@ -5656,7 +5656,7 @@ label.custom {
 .form-lg .file .ui-btn {
   line-height: 20px;
 }
-.form-lg .file .ui-btn .icon {
+.form-lg .file .ui-btn .ui-icon {
   width: 20px;
   height: 20px;
   stroke-width: 30px;
@@ -5855,7 +5855,7 @@ label.custom {
   cursor: default;
 }
 /* icons */
-.icon {
+.ui-icon {
   vertical-align: middle;
   display: inline-block;
   fill: none;
@@ -5866,134 +5866,134 @@ label.custom {
   height: 20px;
   stroke-width: 30px;
 }
-.icon-mirror-v {
+.ui-icon-mirror-v {
   transform: scaleY(-1);
 }
-.icon-mirror-h {
+.ui-icon-mirror-h {
   transform: scaleX(-1);
 }
-.svg-f {
+.ui-svg-f {
   fill: currentColor !important;
 }
-.svg-l {
+.ui-svg-l {
   fill: none !important;
 }
-.svg-sd {
+.ui-svg-sd {
   fill: currentColor !important;
   stroke: none !important;
 }
-.svg-s {
+.ui-svg-s {
   opacity: 0.45;
 }
-.svg-fr {
+.ui-svg-fr {
   fill-rule: evenodd;
 }
-.icon-xxl,
-.icons-xxl .icon {
+.ui-icon-xxl,
+.ui-icons-xxl .ui-icon {
   width: 50px !important;
   height: 50px !important;
 }
-.icon-xxl,
-.icons-xxl .icon:not([class*="icon-"]) {
+.ui-icon-xxl,
+.ui-icons-xxl .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 12px !important;
 }
-.icon-xl,
-.icons-xl .icon {
+.ui-icon-xl,
+.ui-icons-xl .ui-icon {
   width: 34px !important;
   height: 34px !important;
 }
-.icon-xl,
-.icons-xl .icon:not([class*="icon-"]) {
+.ui-icon-xl,
+.ui-icons-xl .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 16px !important;
 }
-.icon-lg,
-.icons-lg .icon {
+.ui-icon-lg,
+.ui-icons-lg .ui-icon {
   width: 26px !important;
   height: 26px !important;
 }
-.icon-lg,
-.icons-lg .icon:not([class*="icon-"]) {
+.ui-icon-lg,
+.ui-icons-lg .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 24px !important;
 }
-.icon-sm,
-.icons-sm .icon {
+.ui-icon-sm,
+.ui-icons-sm .ui-icon {
   width: 18px !important;
   height: 18px !important;
 }
-.icon-sm,
-.icons-sm .icon:not([class*="icon-"]) {
+.ui-icon-sm,
+.ui-icons-sm .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 32px !important;
 }
-.icon-xs,
-.icons-xs .icon {
+.ui-icon-xs,
+.ui-icons-xs .ui-icon {
   width: 14px !important;
   height: 14px !important;
 }
-.icon-xs,
-.icons-xs .icon:not([class*="icon-"]) {
+.ui-icon-xs,
+.ui-icons-xs .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 36px !important;
 }
-.icon-xxs,
-.icons-xxs .icon {
+.ui-icon-xxs,
+.ui-icons-xxs .ui-icon {
   width: 12px !important;
   height: 12px !important;
 }
-.icon-xxs,
-.icons-xxs .icon:not([class*="icon-"]) {
+.ui-icon-xxs,
+.ui-icons-xxs .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 38px !important;
 }
-.icon-thin,
-.icons-thin .icon:not([class*="icon-"]) {
+.ui-icon-thin,
+.ui-icons-thin .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 12px !important;
 }
-.icon-light,
-.icons-light .icon:not([class*="icon-"]) {
+.ui-icon-light,
+.ui-icons-light .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 16px !important;
 }
-.icon-default,
-.icons-default .icon:not([class*="icon-"]) {
+.ui-icon-default,
+.ui-icons-default .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 24px !important;
 }
-.icon-semibold,
-.icons-semibold .icon:not([class*="icon-"]) {
+.ui-icon-semibold,
+.ui-icons-semibold .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 32px !important;
 }
-.icon-bold,
-.icons-bold .icon:not([class*="icon-"]) {
+.ui-icon-bold,
+.ui-icons-bold .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 36px !important;
 }
-.icon-black,
-.icons-black .icon:not([class*="icon-"]) {
+.ui-icon-black,
+.ui-icons-black .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 38px !important;
 }
-.icons-no-opacity .icon:not(.default-icon) {
+.ui-icons-no-opacity .ui-icon:not(.ui-default-icon) {
   opacity: 1 !important;
 }
-.icons-margin-5-l .icon {
+.ui-icons-margin-5-l .ui-icon {
   margin-left: 5px !important;
 }
-.icons-margin-5-r .icon {
+.ui-icons-margin-5-r .ui-icon {
   margin-right: 5px !important;
 }
-.icons-margin-5-v .icon {
+.ui-icons-margin-5-v .ui-icon {
   margin-top: 5px !important;
   margin-bottom: 5px !important;
 }
-.icons-margin-5-h .icon {
+.ui-icons-margin-5-h .ui-icon {
   margin-right: 5px !important;
   margin-left: 5px !important;
 }
-.icons-margin-10-l .icon {
+.ui-icons-margin-10-l .ui-icon {
   margin-left: 10px !important;
 }
-.icons-margin-10-r .icon {
+.ui-icons-margin-10-r .ui-icon {
   margin-right: 10px !important;
 }
-.icons-margin-10-v .icon {
+.ui-icons-margin-10-v .ui-icon {
   margin-top: 10px !important;
   margin-bottom: 10px !important;
 }
-.icons-margin-10-h .icon {
+.ui-icons-margin-10-h .ui-icon {
   margin-right: 10px !important;
   margin-left: 10px !important;
 }
@@ -6243,7 +6243,7 @@ label.custom {
   opacity: 0.45;
   cursor: pointer;
 }
-.ui-close-card .icon {
+.ui-close-card .ui-icon {
   width: 12px;
   height: 12px;
   stroke-width: 38px;
@@ -6466,7 +6466,7 @@ label.custom {
   width: 80px;
   height: 80px;
 }
-.ui-img-photo-lg .icon {
+.ui-img-photo-lg .ui-icon {
   width: 34px;
   height: 34px;
   stroke-width: 16px;
@@ -6476,7 +6476,7 @@ label.custom {
   width: 42px;
   height: 42px;
 }
-.ui-img-photo-sm .icon {
+.ui-img-photo-sm .ui-icon {
   width: 18px;
   height: 18px;
   stroke-width: 32px;
@@ -6486,7 +6486,7 @@ label.custom {
   width: 32px;
   height: 32px;
 }
-.ui-img-photo-xs .icon {
+.ui-img-photo-xs .ui-icon {
   width: 14px;
   height: 14px;
   stroke-width: 36px;
@@ -6675,7 +6675,7 @@ html:not(.ui-ie) .ui-steps-bar li {
   left: -50%;
 }
 .ui-steps-bar li > span,
-.ui-steps-bar.ui-steps-icon li > .icon {
+.ui-steps-bar.ui-steps-icon li > .ui-icon {
   width: 18px;
   height: 18px;
   display: block;
@@ -6711,10 +6711,10 @@ html:not(.ui-ie) .ui-steps-bar li {
   border-color: hsla(0, 0%, 0%, 0.12);
   border-color: var(--ui-steps-border);
 }
-.ui-steps-bar.ui-steps-icon li > .icon {
+.ui-steps-bar.ui-steps-icon li > .ui-icon {
   color: currentColor;
 }
-.ui-steps-bar.ui-steps-icon li.ui-active ~ li > .icon {
+.ui-steps-bar.ui-steps-icon li.ui-active ~ li > .ui-icon {
   opacity: 0;
 }
 /* sticky header */
@@ -7012,8 +7012,8 @@ header.ui-sticky-static {
 .ui-modal-win.ui-modal-no-bg .select select,
 .ui-modal-win.ui-modal-no-bg .select-multi select,
 .ui-modal-win.ui-modal-no-bg .textarea textarea,
-.ui-modal-win.ui-modal-no-bg .text .icon,
-.ui-modal-win.ui-modal-no-bg .select .icon {
+.ui-modal-win.ui-modal-no-bg .text .ui-icon,
+.ui-modal-win.ui-modal-no-bg .select .ui-icon {
   color: hsl(0, 0%, 100%);
 }
 .ui-modal-win.ui-modal-no-bg ::placeholder {
@@ -7029,7 +7029,7 @@ header.ui-sticky-static {
 .ui-modal-win.ui-modal-no-bg .error:not(.form-holder) {
   background-color: hsl(0, 74%, 55%) !important;
 }
-.ui-modal-win.ui-modal-no-bg .error .icon {
+.ui-modal-win.ui-modal-no-bg .error .ui-icon {
   color: hsl(0, 0%, 100%) !important;
 }
 .ui-modal-win:not(.ui-show-ease) .ui-modal-content {
@@ -7117,10 +7117,10 @@ header.ui-sticky-static {
   z-index: 10;
   cursor: pointer;
 }
-.ui-modal-content .ui-close-modal .icon {
-  width: 14px;
-  height: 14px;
-  stroke-width: 36px;
+.ui-modal-content .ui-close-modal .ui-icon {
+  width: 12px;
+  height: 12px;
+  stroke-width: 38px;
 }
 .ui-modal-buttons {
   float: right;
@@ -7526,7 +7526,7 @@ button.ui-dialog-custom:focus {
   opacity: 0.45;
   cursor: pointer;
 }
-.ui-close-alert .icon {
+.ui-close-alert .ui-icon {
   width: 12px;
   height: 12px;
   stroke-width: 38px;
@@ -7685,7 +7685,7 @@ button.ui-dialog-custom:focus {
   padding: 10px;
   display: block;
 }
-.ui-calendar caption > button .icon {
+.ui-calendar caption > button .ui-icon {
   width: 20px;
   height: 20px;
   stroke-width: 30px;
@@ -7788,7 +7788,7 @@ button.ui-dialog-custom:focus {
   left: 0;
   cursor: pointer;
 }
-.ui-calendar-details > button .icon {
+.ui-calendar-details > button .ui-icon {
   width: 20px;
   height: 20px;
   stroke-width: 30px;
@@ -8099,7 +8099,7 @@ button.ui-dialog-custom:focus {
 .ui-desktop .ui-carousel-gallery .ui-detail:not(.ui-detail-loader) img:hover {
   opacity: 0.45;
 }
-.ui-carousel-gallery .ui-detail .icon {
+.ui-carousel-gallery .ui-detail .ui-icon {
   width: 80px;
   height: 80px;
   stroke-width: 12px;
@@ -8286,7 +8286,7 @@ button.ui-dialog-custom:focus {
   transition-property: margin;
   transition-duration: 0.15s;
 }
-.ui-ease-image-uploader .ui-uploader-list > .icon {
+.ui-ease-image-uploader .ui-uploader-list > .ui-icon {
   transition-property: opacity;
   transition-duration: 0.15s;
 }
@@ -8312,7 +8312,7 @@ button.ui-dialog-custom:focus {
   background-color: hsl(0, 0%, 93%);
   background-color: var(--ui-image-uploader-drop-bg);
 }
-.ui-image-uploader.ui-drop-highlight .ui-uploader-list > .icon {
+.ui-image-uploader.ui-drop-highlight .ui-uploader-list > .ui-icon {
   display: block;
 }
 .ui-image-uploader.ui-drop-highlight .ui-uploader-list li {
@@ -8322,14 +8322,14 @@ button.ui-dialog-custom:focus {
   min-height: 220px;
   position: relative;
 }
-.ui-image-uploader .ui-uploader-list > .icon {
+.ui-image-uploader .ui-uploader-list > .ui-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 1;
   transform: translate(-50%, -50%);
 }
-.ui-image-uploader .ui-uploader-list.ui-open > .icon {
+.ui-image-uploader .ui-uploader-list.ui-open > .ui-icon {
   display: none;
 }
 .ui-image-uploader .ui-uploader-list ul {
@@ -8626,8 +8626,8 @@ button.ui-dialog-custom:focus {
   transform: translateY(-50%);
   cursor: pointer;
 }
-.ui-photo-preview .ui-prev .icon,
-.ui-photo-preview .ui-next .icon {
+.ui-photo-preview .ui-prev .ui-icon,
+.ui-photo-preview .ui-next .ui-icon {
   width: 40px;
   height: 40px;
   stroke-width: 14px;
@@ -8700,7 +8700,7 @@ button.ui-dialog-custom:focus {
   position: fixed;
   z-index: 10;
 }
-.ui-close-photo-preview .icon {
+.ui-close-photo-preview .ui-icon {
   color: hsl(0, 0%, 100%);
   opacity: 1 !important;
 }
@@ -8952,7 +8952,7 @@ button.ui-dialog-custom:focus {
   width: 20.65%;
   display: inline-block;
 }
-.ui-weather .ui-days li .icon {
+.ui-weather .ui-days li .ui-icon {
   margin: 15px auto;
   display: block;
 }
@@ -9212,8 +9212,8 @@ button.ui-dialog-custom:focus {
 .ui-weather.ui-night .ui-days,
 .ui-weather.ui-night .ui-now a,
 .ui-weather.ui-night .ui-days a,
-.ui-weather.ui-night .ui-now .icons,
-.ui-weather.ui-night .ui-days .icons {
+.ui-weather.ui-night .ui-now .ui-icons,
+.ui-weather.ui-night .ui-days .ui-icons {
   color: hsl(0, 0%, 100%);
 }
 .ui-weather.ui-night .ui-graphs {
@@ -9436,16 +9436,16 @@ html:not(.ui-ie) .ui-line-charts.ui-loaded svg circle {
   z-index: 1;
   transform: translateY(-50%);
 }
-.ui-donut-chart svg:not(.icon) {
+.ui-donut-chart svg:not(.ui-icon) {
   width: 100%;
   height: auto;
   margin: 0 auto;
 }
-html:not(.ui-edge) .ui-donut-chart svg:not(.icon) {
+html:not(.ui-edge) .ui-donut-chart svg:not(.ui-icon) {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-.ui-edge .ui-donut-chart svg:not(.icon) {
+.ui-edge .ui-donut-chart svg:not(.ui-icon) {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
@@ -9672,14 +9672,14 @@ html:not(.ui-ie) .ui-svg-map svg {
 }
 /* themes */
 [class*="ui-fill-light-"],
-[class*="ui-fill-light-"] .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+[class*="ui-fill-light-"] .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 [class*="ui-fill-light-"] a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 [class*="ui-fill-light-"] button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
 }
 [class*="ui-fill-dark-"],
-[class*="ui-fill-dark-"] .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+[class*="ui-fill-dark-"] .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 [class*="ui-fill-dark-"] a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 [class*="ui-fill-dark-"] button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
   color: hsl(0, 0%, 100%);
@@ -9748,8 +9748,8 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-gray .ui-color:not([class*="ui-theme-"]) {
   color: hsl(0, 0%, 70%) !important;
 }
-.ui-theme-gray.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-gray .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-gray.ui-color .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-gray .ui-color:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-gray.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-gray .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-gray.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
@@ -9824,8 +9824,8 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-green .ui-color:not([class*="ui-theme-"]) {
   color: hsl(142, 82%, 42%) !important;
 }
-.ui-theme-green.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-green .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-green.ui-color .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-green .ui-color:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-green.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-green .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-green.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
@@ -9900,8 +9900,8 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-yellow .ui-color:not([class*="ui-theme-"]) {
   color: hsl(42, 100%, 45%) !important;
 }
-.ui-theme-yellow.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-yellow .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-yellow.ui-color .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-yellow .ui-color:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-yellow.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-yellow .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-yellow.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
@@ -9976,8 +9976,8 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-orange .ui-color:not([class*="ui-theme-"]) {
   color: hsl(30, 100%, 50%) !important;
 }
-.ui-theme-orange.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-orange .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-orange.ui-color .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-orange .ui-color:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-orange.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-orange .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-orange.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
@@ -10052,8 +10052,8 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-red .ui-color:not([class*="ui-theme-"]) {
   color: hsl(0, 74%, 55%) !important;
 }
-.ui-theme-red.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-red .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-red.ui-color .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-red .ui-color:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-red.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-red .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-red.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
@@ -10128,8 +10128,8 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-base .ui-color:not([class*="ui-theme-"]) {
   color: hsl(226, 52%, 50%) !important;
 }
-.ui-theme-base.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-base .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-base.ui-color .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-base .ui-color:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-base.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-base .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-base.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
@@ -10204,8 +10204,8 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-sub .ui-color:not([class*="ui-theme-"]) {
   color: hsl(206, 87%, 50%) !important;
 }
-.ui-theme-sub.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-sub .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-sub.ui-color .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-sub .ui-color:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-sub.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-sub .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-sub.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),

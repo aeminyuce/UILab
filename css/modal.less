@@ -17,7 +17,7 @@
 @modal-btn-focus-size:                  3px;
 @modal-btn-focus-shadow:                fade(@black, 15%);
 
-@modal-close-icon-size:                 @font-size;
+@modal-close-icon-size:                 12px;
 @modal-close-z-index:                   10;
 @modal-close-bg:                        fade(@black, 65%);
 @modal-close-hover-bg:                  lighten(@black, 20%);
@@ -50,7 +50,7 @@
         &:not(.ui-show) { display: none; }
 
         &.ui-modal-no-bg {
-            &,.text input,.select select,.select-multi select,.textarea textarea,.text .icon,.select .icon { color: @white; }
+            &,.text input,.select select,.select-multi select,.textarea textarea,.text .ui-icon,.select .ui-icon { color: @white; }
 
             ::placeholder { color: fade(@white, 40%); }
             ::-ms-input-placeholder { color: fade(@white, 40%); }
@@ -59,7 +59,7 @@
 
             .error {
                 &:not(.form-holder) { background-color: @red !important; }
-                .icon { color: @white !important; }
+                .ui-icon { color: @white !important; }
             }
         }
         &:not(.ui-show-ease) {
@@ -124,7 +124,7 @@
         .ui-close-modal {
             color: @white !important; text-align: center; width: @btn-default; height: @btn-default; border: 0; border-radius: 100%; position: absolute; z-index: @modal-close-z-index; cursor: pointer;
 
-            .icon { ._icon(@modal-close-icon-size); }
+            .ui-icon { ._icon(@modal-close-icon-size); }
         }
     }
 

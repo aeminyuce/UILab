@@ -46,7 +46,7 @@ ui.modal = {
     nameActive: 'ui-active',
 
     // outer classnames
-    nameIcon: 'icon',
+    nameIcon: 'ui-icon',
 
     // styling classnames
     stylesContent: 'shadow-lg ui-ease-layout',

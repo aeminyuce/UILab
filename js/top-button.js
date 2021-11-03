@@ -15,7 +15,7 @@ ui.topButton = {
 
     // styling classnames
     stylesTarget: 'circle ui-ease-layout',
-    stylesIcon: 'icon ui-ease-layout',
+    stylesIcon: 'ui-icon ui-ease-layout',
 
     // icons
     icon: 'arrow-to-top',

@@ -52,7 +52,7 @@
     & > .ui-btn {
         transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow; transition-duration: @ease-default;
 
-        .icon { transition-property: color, transform, opacity; transition-duration: @ease-default; }
+        .ui-icon { transition-property: color, transform, opacity; transition-duration: @ease-default; }
     }
 }
 
@@ -67,7 +67,7 @@
     &.ui-open-ease {
         & > .ui-btn {
             .ui-toggle-icon { transform: rotate(-180deg); }
-            .icon { opacity: 1; }
+            .ui-icon { opacity: 1; }
         }
     }
 
@@ -181,7 +181,7 @@
                 text-align: center; width: percentage(((100 / @dropdown-grids-col) / 100%)); flex-grow: 1;
 
                 a { text-align: center; }
-                .icon,img { margin: (@dropdown-list-padding / 2) auto @dropdown-list-padding auto; display: block; }
+                .ui-icon,img { margin: (@dropdown-list-padding / 2) auto @dropdown-list-padding auto; display: block; }
             }
         }
         &.ui-has-icon {

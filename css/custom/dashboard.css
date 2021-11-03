@@ -69,8 +69,8 @@
 .ui-theme-panel .ui-color:not([class*="ui-theme-"]) {
   color: hsl(231, 55%, 47%) !important;
 }
-.ui-theme-panel.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-panel.ui-color .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-panel .ui-color:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-panel.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-panel .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-panel.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
@@ -145,8 +145,8 @@
 .ui-theme-panel2 .ui-color:not([class*="ui-theme-"]) {
   color: hsl(189, 95%, 40%) !important;
 }
-.ui-theme-panel2.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel2 .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-panel2.ui-color .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-panel2 .ui-color:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-panel2.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-panel2 .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-panel2.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),

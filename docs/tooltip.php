@@ -33,22 +33,22 @@
                 </div>
 
                 <h3>Using with Icons</h3>
-                <div class="ui-theme-sub icons-xl ui-color padding-30-b hover-t-more-1st ui-ease-1st-layout">
-                    <svg class="icon" data-ui-tooltip title="Like!"><use href="#heart"/></svg>
-                    <svg class="icon" data-ui-tooltip title="Somewhere on Earth!"><use href="#marker"/></svg>
-                    <svg class="icon" data-ui-tooltip title="Call us now 555 55 55"><use href="#phone"/></svg>
-                    <svg class="icon" data-ui-tooltip title="Add favorites!"><use href="#star"/></svg>
+                <div class="ui-theme-sub ui-icons-xl ui-color padding-30-b hover-t-more-1st ui-ease-1st-layout">
+                    <svg class="ui-icon" data-ui-tooltip title="Like!"><use href="#heart"/></svg>
+                    <svg class="ui-icon" data-ui-tooltip title="Somewhere on Earth!"><use href="#marker"/></svg>
+                    <svg class="ui-icon" data-ui-tooltip title="Call us now 555 55 55"><use href="#phone"/></svg>
+                    <svg class="ui-icon" data-ui-tooltip title="Add favorites!"><use href="#star"/></svg>
                 </div>
 
                 <h3>Using with Forms</h3>
                 <div class="ui-ease-1st-form padding-30-b form-lg ui-ease-1st-form">
                     <div class="text text-icon round ui-border-dual ui-ease-form">
-                        <svg class="icon" data-ui-tooltip="tl" title="Your message here!"><use href="#question-circle-fill"/></svg>
+                        <svg class="ui-icon" data-ui-tooltip="tl" title="Your message here!"><use href="#question-circle-fill"/></svg>
                         <input type="text" placeholder="Placeholder Text">
                     </div>
                     <span class="sp-15"></span>
                     <div class="text text-icon-l round ui-border-dual ui-ease-form">
-                        <svg class="icon" data-ui-tooltip="tr" title="Your message here!"><use href="#question-circle-fill"/></svg>
+                        <svg class="ui-icon" data-ui-tooltip="tr" title="Your message here!"><use href="#question-circle-fill"/></svg>
                         <input type="text" placeholder="Placeholder Text">
                     </div>
                 </div>

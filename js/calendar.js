@@ -46,7 +46,7 @@ ui.calendar = {
     nameSelected: 'ui-selected',
 
     // outer classnames
-    nameIcon: 'icon',
+    nameIcon: 'ui-icon',
     nameHover: 'hover',
     nameRound: 'round',
 

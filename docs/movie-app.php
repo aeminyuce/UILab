@@ -6,42 +6,42 @@
         <div class="col-200 set-relative hidden-md">
             <div class="sidebar col-200 full-h set-fixed set-l padding-5 ui-fill-dark-100 hidden-md scroll-v ui-scrollbar-faded">
 
-                <div class="align-l padding-10 icons-no-opacity icons-margin-10-r form-lg ui-add-mobile-menu-l">
+                <div class="align-l padding-10 ui-icons-no-opacity ui-icons-margin-10-r form-lg ui-add-mobile-menu-l">
                     <h5 class="font-color-white-50 padding-15 margin-5-b">LIBRARY</h5>
                     <ul class="list-unstyled list-spacer-15 large font-bold block-2nd ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-btn-ghost circle" href="#">
-                                <svg class="icon"><use href="#tv"/></svg>
+                                <svg class="ui-icon"><use href="#tv"/></svg>
                                 TV Shows
                             </a>
                         </li>
                         <li>
                             <a class="ui-btn circle selected" href="#">
-                                <svg class="icon"><use href="#film"/></svg>
+                                <svg class="ui-icon"><use href="#film"/></svg>
                                 Films
                             </a>
                         </li>
                         <li>
                             <a class="ui-btn ui-btn-ghost circle" href="#">
-                                <svg class="icon"><use href="#trophy-star"/></svg>
+                                <svg class="ui-icon"><use href="#trophy-star"/></svg>
                                 Sports
                             </a>
                         </li>
                         <li>
                             <a class="ui-btn ui-btn-ghost circle" href="#">
-                                <svg class="icon"><use href="#music"/></svg>
+                                <svg class="ui-icon"><use href="#music"/></svg>
                                 Concerts
                             </a>
                         </li>
                         <li>
                             <a class="ui-btn ui-btn-ghost circle" href="#">
-                                <svg class="icon"><use href="#face-smile"/></svg>
+                                <svg class="ui-icon"><use href="#face-smile"/></svg>
                                 Comedy
                             </a>
                         </li>
                         <li>
                             <a class="ui-btn ui-btn-ghost circle" href="#">
-                                <svg class="icon"><use href="#video"/></svg>
+                                <svg class="ui-icon"><use href="#video"/></svg>
                                 Others
                             </a>
                         </li>
@@ -53,19 +53,19 @@
                     <ul class="list-unstyled list-spacer-15 font-color-white-50 large block-2nd ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-btn-ghost circle" href="#">
-                                <svg class="icon"><use href="#news"/></svg>
+                                <svg class="ui-icon"><use href="#news"/></svg>
                                 News
                             </a>
                         </li>
                         <li>
                             <a class="ui-btn ui-btn-ghost circle" href="#">
-                                <svg class="icon"><use href="#network"/></svg>
+                                <svg class="ui-icon"><use href="#network"/></svg>
                                 Community
                             </a>
                         </li>
                         <li>
                             <a class="ui-btn ui-btn-ghost circle" href="#">
-                                <svg class="icon"><use href="#calendar-days"/></svg>
+                                <svg class="ui-icon"><use href="#calendar-days"/></svg>
                                 Events
                             </a>
                         </li>
@@ -79,12 +79,12 @@
 
                 <div class="padding-30 no-padding-b md-no-padding">
 
-                    <header class="row no-row-gap-t ui-sticky-md icons-no-opacity form-lg" data-ui-classes="shadow-lg">
+                    <header class="row no-row-gap-t ui-sticky-md ui-icons-no-opacity form-lg" data-ui-classes="shadow-lg">
                         <div class="col-6 hidden-md ui-ease-1st-form">
                             <div class="text text-icon-both margin-15-b circle ui-no-border ui-theme-gray ui-fill-light-300 has-clear">
-                                <svg class="icon text-icon-l"><use href="#search"/></svg>
+                                <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
                                 <button type="button" class="clear-form">
-                                    <svg class="icon"><use href="#remove"/></svg>
+                                    <svg class="ui-icon"><use href="#remove"/></svg>
                                 </button>
                                 <input type="text" placeholder="Search for movies, TV shows...">
                             </div>
@@ -92,22 +92,22 @@
                         <div class="col-6 align-r">
                             <span class="align-c font-color-black-50 margin-20-r sm-no-margin ui-ease-1st-btn">
                                 <button class="ui-btn ui-btn-square ui-btn-ghost margin-10-l circle left ui-show-mobile-menu-l visible-md">
-                                    <svg class="icon"><use href="#bars-left"/></svg>
+                                    <svg class="ui-icon"><use href="#bars-left"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square ui-btn-ghost circle ui-ease-btn visible-md" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
-                                    <svg class="icon"><use href="#search"/></svg>
+                                    <svg class="ui-icon"><use href="#search"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square ui-btn-ghost circle">
-                                    <svg class="icon"><use href="#user"/></svg>
+                                    <svg class="ui-icon"><use href="#user"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square ui-btn-ghost circle" data-ui-notifier>
-                                    <svg class="icon"><use href="#bell"/></svg>
+                                    <svg class="ui-icon"><use href="#bell"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square ui-btn-ghost circle">
-                                    <svg class="icon"><use href="#setting"/></svg>
+                                    <svg class="ui-icon"><use href="#setting"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square ui-btn-ghost circle">
-                                    <svg class="icon"><use href="#help"/></svg>
+                                    <svg class="ui-icon"><use href="#help"/></svg>
                                 </button>
                             </span>
                             <span class="inline-block right no-float-sm">
@@ -127,7 +127,7 @@
                                 <div class="col-350">
                                     <div class="round set-relative">
                                         <button class="ui-btn full-w full-h set-absolute opacity-more ui-ease-layout" onclick="ui.modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
-                                            <svg class="icon icon-xxl icon-default font-color-white set-absolute set-c"><use href="#video"/></svg>
+                                            <svg class="ui-icon ui-icon-xxl ui-icon-default font-color-white set-absolute set-c"><use href="#video"/></svg>
                                         </button>
                                         <img class="img-fluid round shadow-lg" src="img/video-poster.jpg" alt="">
                                     </div>
@@ -162,7 +162,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_01.jpg" alt="">
                                 <b class="large">Captain Marvel</b>
                                 <span class="font-color-black-50 margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
-                                <svg class="icon icon-xs font-color-yellow"><use href="#star-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xs font-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     7,0 <span class="font-color-black-muted">/10</span> &nbsp; 7+
                                 </span>
@@ -173,7 +173,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_02.jpg" alt="">
                                 <b class="large">Avengers: Endgame</b>
                                 <span class="font-color-black-50 margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
-                                <svg class="icon icon-xs font-color-yellow"><use href="#star-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xs font-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     8,7 <span class="font-color-black-muted">/10</span> &nbsp; 8+
                                 </span>
@@ -184,7 +184,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_03.jpg" alt="">
                                 <b class="large">Captain America</b>
                                 <span class="font-color-black-50 margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
-                                <svg class="icon icon-xs font-color-yellow"><use href="#star-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xs font-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     7,8 <span class="font-color-black-muted">/10</span> &nbsp; 13+
                                 </span>
@@ -195,7 +195,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_04.jpg" alt="">
                                 <b class="large">Ant-Man</b>
                                 <span class="font-color-black-50 margin-5-b block">2015 &nbsp; Action, Comedy</span>
-                                <svg class="icon icon-xs font-color-yellow"><use href="#star-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xs font-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     7,3 <span class="font-color-black-muted">/10</span> &nbsp; 13+
                                 </span>
@@ -206,7 +206,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_05.jpg" alt="">
                                 <b class="large">Venom</b>
                                 <span class="font-color-black-50 margin-5-b block">2018 &nbsp; Action, Thriller</span>
-                                <svg class="icon icon-xs font-color-yellow"><use href="#star-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xs font-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     6,7 <span class="font-color-black-muted">/10</span> &nbsp; 15+
                                 </span>
@@ -217,7 +217,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_06.jpg" alt="">
                                 <b class="large">Justice League</b>
                                 <span class="font-color-black-50 margin-5-b block">2017 &nbsp; Action, Fantasy</span>
-                                <svg class="icon icon-xs font-color-yellow"><use href="#star-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xs font-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     6,4 <span class="font-color-black-muted">/10</span> &nbsp; 13+
                                 </span>
@@ -228,7 +228,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_01.jpg" alt="">
                                 <b class="large">Captain Marvel</b>
                                 <span class="font-color-black-50 margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
-                                <svg class="icon icon-xs font-color-yellow"><use href="#star-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xs font-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     7,0 <span class="font-color-black-muted">/10</span> &nbsp; 7+
                                 </span>
@@ -239,7 +239,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_02.jpg" alt="">
                                 <b class="large">Avengers: Endgame</b>
                                 <span class="font-color-black-50 margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
-                                <svg class="icon icon-xs font-color-yellow"><use href="#star-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xs font-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     8,7 <span class="font-color-black-muted">/10</span> &nbsp; 8+
                                 </span>
@@ -250,7 +250,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_03.jpg" alt="">
                                 <b class="large">Captain America</b>
                                 <span class="font-color-black-50 margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
-                                <svg class="icon icon-xs font-color-yellow"><use href="#star-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xs font-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     7,8 <span class="font-color-black-muted">/10</span> &nbsp; 13+
                                 </span>
@@ -261,7 +261,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_04.jpg" alt="">
                                 <b class="large">Ant-Man</b>
                                 <span class="font-color-black-50 margin-5-b block">2015 &nbsp; Action, Comedy</span>
-                                <svg class="icon icon-xs font-color-yellow"><use href="#star-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xs font-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     7,3 <span class="font-color-black-muted">/10</span> &nbsp; 13+
                                 </span>
@@ -272,7 +272,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_05.jpg" alt="">
                                 <b class="large">Venom</b>
                                 <span class="font-color-black-50 margin-5-b block">2018 &nbsp; Action, Thriller</span>
-                                <svg class="icon icon-xs font-color-yellow"><use href="#star-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xs font-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     6,7 <span class="font-color-black-muted">/10</span> &nbsp; 15+
                                 </span>
@@ -283,7 +283,7 @@
                                 <img class="img-fluid round block margin-15-b shadow" src="img/movie_06.jpg" alt="">
                                 <b class="large">Justice League</b>
                                 <span class="font-color-black-50 margin-5-b block">2017 &nbsp; Action, Fantasy</span>
-                                <svg class="icon icon-xs font-color-yellow"><use href="#star-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xs font-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block margin-2-l margin-10-r">
                                     6,4 <span class="font-color-black-muted">/10</span> &nbsp; 13+
                                 </span>
@@ -292,11 +292,11 @@
                     </div>
                     <div class="ui-carousel-nav ui-ease-1st-btn">
                         <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
-                            <svg class="icon"><use href="#angle-left"/></svg>
+                            <svg class="ui-icon"><use href="#angle-left"/></svg>
                         </button>
                         <span class="ui-dots font-color-black-muted"></span>
                         <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square round">
-                            <svg class="icon"><use href="#angle-right"/></svg>
+                            <svg class="ui-icon"><use href="#angle-right"/></svg>
                         </button>
                     </div>
                 </div>
@@ -384,11 +384,11 @@
                     </div>
                     <div class="ui-carousel-nav ui-ease-1st-btn">
                         <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
-                            <svg class="icon"><use href="#angle-left"/></svg>
+                            <svg class="ui-icon"><use href="#angle-left"/></svg>
                         </button>
                         <span class="ui-dots font-color-black-muted"></span>
                         <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square round">
-                            <svg class="icon"><use href="#angle-right"/></svg>
+                            <svg class="ui-icon"><use href="#angle-right"/></svg>
                         </button>
                     </div>
                 </div>
@@ -404,7 +404,7 @@
 <div class="ui-mobile-menu ui-show-l ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
     <div class="ui-mobile-menu-title padding-20-v x-large ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost circle ui-ease-btn ui-close-mobile-menu">
-            <svg class="icon no-opacity"><use href="#remove"/></svg>
+            <svg class="ui-icon no-opacity"><use href="#remove"/></svg>
         </button>
         Categories
     </div>
@@ -424,7 +424,7 @@
                     <div class="col-12 ui-ease-1st-form">
                         <div class="text text-icon has-clear round-l ui-no-border shadow-in-sm ui-theme-gray ui-fill-light-300 ui-ease-form">
                             <button type="button" class="clear-form">
-                                <svg class="icon"><use href="#remove"/></svg>
+                                <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                             <input class="required" type="text" placeholder="Search">
                         </div>
@@ -433,50 +433,50 @@
                 </div>
                 <div class="col-100 col-xs-50 padding-10-v">
                     <button class="ui-btn block round-r ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
-                        <svg class="icon"><use href="#search"/></svg>
+                        <svg class="ui-icon"><use href="#search"/></svg>
                     </button>
                 </div>
             </div>
 
-            <div class="row no-fluid icons-xxl block-2nd icons-no-opacity icons-margin-5-v hover-t-more-2nd ui-theme-base ui-ease-2nd-btn">
+            <div class="row no-fluid ui-icons-xxl block-2nd ui-icons-no-opacity ui-icons-margin-5-v hover-t-more-2nd ui-theme-base ui-ease-2nd-btn">
                 <div class="col-4 padding-10-b">
                     <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
-                        <svg class="icon"><use href="#tv"/></svg>
+                        <svg class="ui-icon"><use href="#tv"/></svg>
                         <span class="x-large block margin-5-t">TV Shows</span>
                         <span class="font-color-black-muted">1024</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
-                        <svg class="icon"><use href="#film"/></svg>
+                        <svg class="ui-icon"><use href="#film"/></svg>
                         <span class="x-large block margin-5-t">Films</span>
                         <span class="font-color-black-muted">775</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
-                        <svg class="icon"><use href="#trophy-star"/></svg>
+                        <svg class="ui-icon"><use href="#trophy-star"/></svg>
                         <span class="x-large block margin-5-t">Sports</span>
                         <span class="font-color-black-muted">316</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
-                        <svg class="icon"><use href="#music"/></svg>
+                        <svg class="ui-icon"><use href="#music"/></svg>
                         <span class="x-large block margin-5-t">Concerts</span>
                         <span class="font-color-black-muted">589</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
-                        <svg class="icon"><use href="#face-smile"/></svg>
+                        <svg class="ui-icon"><use href="#face-smile"/></svg>
                         <span class="x-large block margin-5-t">Comedy</span>
                         <span class="font-color-black-muted">219</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
-                        <svg class="icon"><use href="#video"/></svg>
+                        <svg class="ui-icon"><use href="#video"/></svg>
                         <span class="x-large block margin-5-t">Others</span>
                         <span class="font-color-black-muted">701</span>
                     </a>

@@ -16,10 +16,10 @@
   background-image: linear-gradient(110deg, hsl(263, 37%, 42%), hsl(242, 88%, 17%), hsl(331, 73%, 25%));
   background-image: var(--ui-sign-up-holder-bg);
 }
-.signup-icons .icon {
+.signup-icons .ui-icon {
   position: absolute;
 }
-.signup-icons .icon:nth-child(1) {
+.signup-icons .ui-icon:nth-child(1) {
   width: 52px;
   height: 52px;
   bottom: 70px;
@@ -27,7 +27,7 @@
   opacity: 0.15;
   transform: rotate(12deg);
 }
-.signup-icons .icon:nth-child(2) {
+.signup-icons .ui-icon:nth-child(2) {
   width: 28px;
   height: 28px;
   bottom: 2px;
@@ -35,7 +35,7 @@
   opacity: 0.1;
   transform: rotate(-12deg);
 }
-.signup-icons .icon:nth-child(3) {
+.signup-icons .ui-icon:nth-child(3) {
   width: 64px;
   height: 64px;
   top: 22px;
@@ -43,7 +43,7 @@
   opacity: 0.5;
   transform: rotate(-12deg);
 }
-.signup-icons .icon:nth-child(4) {
+.signup-icons .ui-icon:nth-child(4) {
   width: 64px;
   height: 64px;
   bottom: 42px;
@@ -51,7 +51,7 @@
   opacity: 0.3;
   transform: rotate(-12deg);
 }
-.signup-icons .icon:nth-child(5) {
+.signup-icons .ui-icon:nth-child(5) {
   width: 206px;
   height: 206px;
   top: -42px;

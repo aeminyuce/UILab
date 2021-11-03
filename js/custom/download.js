@@ -111,7 +111,7 @@ function readFiles(that) {
     }
 
     btn = that.parentElement;
-    btn = ui.find('.btn', btn)[0];
+    btn = ui.find('.ui-btn', btn)[0];
 
     ui.loadingMask.toggle(btn); // show loading
 

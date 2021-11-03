@@ -47,7 +47,7 @@
 
                                                     <a href="#" class="ui-btn ui-btn-xs-fluid padding-30-h ui-theme-sub ui-fill-dark-100 circle ui-ease-btn">
                                                         Continue
-                                                        <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
+                                                        <svg class="ui-icon margin-5-l"><use href="#arrow-right"/></svg>
                                                     </a>
                                                 </p>
                                             </div>
@@ -92,7 +92,7 @@
 
                                                     <a href="#" class="ui-btn ui-btn-xs-fluid padding-30-h ui-theme-sub ui-fill-dark-100 circle ui-ease-btn">
                                                         Continue
-                                                        <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
+                                                        <svg class="ui-icon margin-5-l"><use href="#arrow-right"/></svg>
                                                     </a>
                                                 </p>
                                             </div>
@@ -137,7 +137,7 @@
 
                                                     <a href="#" class="ui-btn ui-btn-xs-fluid padding-30-h ui-theme-sub ui-fill-dark-100 circle ui-ease-btn">
                                                         Continue
-                                                        <svg class="icon margin-5-l"><use href="#arrow-right"/></svg>
+                                                        <svg class="ui-icon margin-5-l"><use href="#arrow-right"/></svg>
                                                     </a>
                                                 </p>
                                             </div>
@@ -150,11 +150,11 @@
                         </div>
                         <div class="ui-carousel-nav form-lg margin-10-b ui-ease-1st-btn">
                             <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
-                                <svg class="icon"><use href="#angle-left"/></svg>
+                                <svg class="ui-icon"><use href="#angle-left"/></svg>
                             </button>
                             <span class="ui-dots font-color-black-muted"></span>
                             <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square round">
-                                <svg class="icon"><use href="#angle-right"/></svg>
+                                <svg class="ui-icon"><use href="#angle-right"/></svg>
                             </button>
                         </div>
                     </div>
@@ -215,11 +215,11 @@
                         </div>
                         <div class="ui-carousel-nav ui-ease-1st-btn">
                             <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
-                                <svg class="icon"><use href="#angle-left"/></svg>
+                                <svg class="ui-icon"><use href="#angle-left"/></svg>
                             </button>
                             <span class="ui-dots font-color-black-muted"></span>
                             <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square round">
-                                <svg class="icon"><use href="#angle-right"/></svg>
+                                <svg class="ui-icon"><use href="#angle-right"/></svg>
                             </button>
                         </div>
                     </div>
@@ -262,11 +262,11 @@
                         </div>
                         <div class="ui-carousel-nav margin-10-t ui-ease-1st-btn">
                             <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
-                                <svg class="icon"><use href="#angle-left"/></svg>
+                                <svg class="ui-icon"><use href="#angle-left"/></svg>
                             </button>
                             <span class="ui-dots font-color-black-muted"></span>
                             <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square round">
-                                <svg class="icon"><use href="#angle-right"/></svg>
+                                <svg class="ui-icon"><use href="#angle-right"/></svg>
                             </button>
                         </div>
                     </div>
@@ -278,8 +278,8 @@
                         <div class="row">
                             <div class="ui-detail col-8 col-md-6 push-2 push-md-3 sm-fluid">
                                 <img src="img/house_01.jpg" class="ui-photo-gallery-call cursor-pointer img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel" data-ui-count="0" alt="">
-                                <svg class="ui-zoom-icon icon"><use href="#expand-wide"/></svg>
-                                <svg class="ui-loader-icon icon"><use href="#loader-line"/></svg>
+                                <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
+                                <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
                             </div>
                         </div>
                         <div id="ui-detail-carousel" class="ui-carousel ui-half-sized ui-thumbs margin-10 md-no-margin-h" data-ui-col="8" data-ui-col-md="6" data-ui-col-sm="5" data-ui-col-xs="3">
@@ -314,11 +314,11 @@
                             </div>
                             <div class="ui-carousel-nav ui-ease-1st-btn">
                                 <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
-                                    <svg class="icon"><use href="#angle-left"/></svg>
+                                    <svg class="ui-icon"><use href="#angle-left"/></svg>
                                 </button>
                                 <span class="ui-dots font-color-black-muted"></span>
                                 <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square round">
-                                    <svg class="icon"><use href="#angle-right"/></svg>
+                                    <svg class="ui-icon"><use href="#angle-right"/></svg>
                                 </button>
                             </div>
                         </div>
@@ -331,8 +331,8 @@
                         <div class="row">
                             <div class="ui-detail col-8 col-md-6 push-2 push-md-3 sm-fluid">
                                 <img src="img/image_01.jpg" class="ui-photo-gallery-call cursor-pointer img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel2" data-ui-count="0" alt="">
-                                <svg class="ui-zoom-icon icon"><use href="#expand-wide"/></svg>
-                                <svg class="ui-loader-icon icon"><use href="#loader-line"/></svg>
+                                <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
+                                <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
                             </div>
                         </div>
                         <div id="ui-detail-carousel2" class="ui-thumbs">

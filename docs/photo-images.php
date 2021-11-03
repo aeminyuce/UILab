@@ -9,13 +9,13 @@
                     <img class="ui-img-photo-xs circle" src="img/profile-image.jpg" alt="">
                     <img class="ui-img-photo-xs circle" src="img/profile-image2.jpg" alt="">
                     <span class="ui-img-photo-xs circle">
-                        <svg class="icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
 
                     <span class="sp-5 visible-sm"></span>
 
                     <span class="ui-img-photo-xs circle ui-theme-orange ui-fill-dark-100">
-                        <svg class="icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
                     <span class="ui-img-photo-xs circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
                     <span class="ui-img-photo-xs circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>
@@ -25,13 +25,13 @@
                     <img class="ui-img-photo-sm circle" src="img/profile-image.jpg" alt="">
                     <img class="ui-img-photo-sm circle" src="img/profile-image2.jpg" alt="">
                     <span class="ui-img-photo-sm circle">
-                        <svg class="icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
 
                     <span class="sp-5 visible-sm"></span>
 
                     <span class="ui-img-photo-sm circle ui-theme-orange ui-fill-dark-100">
-                        <svg class="icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
                     <span class="ui-img-photo-sm circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
                     <span class="ui-img-photo-sm circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>
@@ -41,13 +41,13 @@
                     <img class="ui-img-photo circle" src="img/profile-image.jpg" alt="">
                     <img class="ui-img-photo circle" src="img/profile-image2.jpg" alt="">
                     <span class="ui-img-photo circle">
-                        <svg class="icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
 
                     <span class="sp-5 visible-sm"></span>
 
                     <span class="ui-img-photo circle ui-theme-orange ui-fill-dark-100">
-                        <svg class="icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
                     <span class="ui-img-photo circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
                     <span class="ui-img-photo circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>
@@ -57,13 +57,13 @@
                     <img class="ui-img-photo-lg circle" src="img/profile-image.jpg" alt="">
                     <img class="ui-img-photo-lg circle" src="img/profile-image2.jpg" alt="">
                     <span class="ui-img-photo-lg circle">
-                        <svg class="icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
 
                     <span class="sp-5 visible-sm"></span>
 
                     <span class="ui-img-photo-lg circle ui-theme-orange ui-fill-dark-100">
-                        <svg class="icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
                     <span class="ui-img-photo-lg circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
                     <span class="ui-img-photo-lg circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>

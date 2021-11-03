@@ -33,7 +33,7 @@ ui.alerts = {
     nameShowEase: 'ui-show-ease',
 
     // outer classnames
-    nameIcon: 'icon',
+    nameIcon: 'ui-icon',
 
     // styling classnames
     stylesDialog: 'round shadow-lg ui-ease-layout ui-ease-in-out',

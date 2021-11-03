@@ -63,8 +63,8 @@
 .ui-theme-farmer .ui-color:not([class*="ui-theme-"]) {
   color: hsl(43, 100%, 52%) !important;
 }
-.ui-theme-farmer.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-farmer .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-farmer.ui-color .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-farmer .ui-color:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-farmer.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-farmer .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-farmer.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
@@ -139,8 +139,8 @@
 .ui-theme-farmer2 .ui-color:not([class*="ui-theme-"]) {
   color: hsl(140, 86%, 46%) !important;
 }
-.ui-theme-farmer2.ui-color .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-farmer2 .ui-color:not([class*="ui-theme-"]) .icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-farmer2.ui-color .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-farmer2 .ui-color:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-farmer2.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-farmer2 .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
 .ui-theme-farmer2.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),

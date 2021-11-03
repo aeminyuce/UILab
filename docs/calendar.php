@@ -49,19 +49,19 @@
             <div class="row sm-fluid padding-30-b ui-ease-2nd-form">
                 <div class="col-12">
                     <div class="ui-calendar-picker text text-icon-l round ui-border-dual form-inline-xs">
-                        <svg class="icon"><use href="#calendar"/></svg>
+                        <svg class="ui-icon"><use href="#calendar"/></svg>
                         <input type="text">
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="ui-calendar-picker text text-icon-l round ui-border-dual">
-                        <svg class="icon"><use href="#calendar"/></svg>
+                        <svg class="ui-icon"><use href="#calendar"/></svg>
                         <input type="text">
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="ui-calendar-picker text text-icon-l round ui-border-dual">
-                        <svg class="icon"><use href="#calendar"/></svg>
+                        <svg class="ui-icon"><use href="#calendar"/></svg>
                         <input type="text">
                     </div>
                 </div>
@@ -71,13 +71,13 @@
             <div class="row sm-fluid padding-30-b form-lg ui-ease-2nd-form">
                 <div class="col-6">
                     <div class="ui-calendar-picker text text-icon-l round ui-border-dual">
-                        <svg class="icon"><use href="#calendar"/></svg>
+                        <svg class="ui-icon"><use href="#calendar"/></svg>
                         <input type="text" value="2/5/2016">
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="ui-calendar-picker text text-icon-l round ui-border-dual">
-                        <svg class="icon"><use href="#calendar"/></svg>
+                        <svg class="ui-icon"><use href="#calendar"/></svg>
                         <input type="text" value="02/05/2016">
                     </div>
                 </div>

@@ -5,7 +5,7 @@
                 <div class="col-250 padding-30 order-sm-last sm-align-c ui-theme-sub">
                     <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid align-l block circle ui-fill-dark-100 ui-ease-btn">
                         Create New
-                        <svg class="icon right"><use href="#plus"/></svg>
+                        <svg class="ui-icon right"><use href="#plus"/></svg>
                     </a>
                     <span class="sp-30"></span>
                     <ul class="list-unstyled hover-r-more-2nd inline-block-2nd large font-bold list-spacer-30 padding-10 ui-ease-2nd-layout">
@@ -17,22 +17,22 @@
                         <li><a href="#">Hobbies</a></li>
                     </ul>
                     <span class="sp-30"></span>
-                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd list-spacer-15 large font-color-black-50 adding-10 icons-sm icons-margin-10-r ui-ease-2nd-layout">
+                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd list-spacer-15 large font-color-black-50 adding-10 ui-icons-sm ui-icons-margin-10-r ui-ease-2nd-layout">
                         <li>
                             <a href="#">
-                                <svg class="icon"><use href="#marker"/></svg>
+                                <svg class="ui-icon"><use href="#marker"/></svg>
                                 Locations
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <svg class="icon"><use href="#users"/></svg>
+                                <svg class="ui-icon"><use href="#users"/></svg>
                                 Friends
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <svg class="icon"><use href="#settings"/></svg>
+                                <svg class="ui-icon"><use href="#settings"/></svg>
                                 Settings
                             </a>
                         </li>

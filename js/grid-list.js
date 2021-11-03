@@ -41,7 +41,7 @@ ui.gridList = {
     nameNext: 'ui-next',
 
     // outer classnames
-    nameIcon: 'icon',
+    nameIcon: 'ui-icon',
 
     nameBtnActive: 'ui-btn-active',
     nameBtnPassive: 'ui-btn-passive',

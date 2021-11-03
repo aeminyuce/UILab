@@ -250,7 +250,7 @@
                     <div class="col-12 ui-ease-1st-form">
                         <div class="text text-icon has-clear round-l ui-no-border shadow-in-sm ui-theme-gray ui-fill-light-300 ui-ease-form">
                             <button type="button" class="clear-form">
-                                <svg class="icon"><use href="#remove"/></svg>
+                                <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                             <input class="required" type="text" placeholder="Search">
                         </div>
@@ -259,29 +259,29 @@
                 </div>
                 <div class="col-100 col-xs-50 padding-10-v">
                     <button class="ui-btn block round-r ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
-                        <svg class="icon"><use href="#search"/></svg>
+                        <svg class="ui-icon"><use href="#search"/></svg>
                     </button>
                 </div>
             </div>
 
-            <div class="row xs-fluid icons-xxl block-2nd icons-no-opacity hover-t-more-2nd icons-margin-5-v ui-theme-base form-lg ui-ease-2nd-btn">
+            <div class="row xs-fluid ui-icons-xxl block-2nd ui-icons-no-opacity hover-t-more-2nd ui-icons-margin-5-v ui-theme-base form-lg ui-ease-2nd-btn">
                 <div class="col-4 padding-10-b">
                     <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
-                        <svg class="icon"><use href="#news"/></svg>
+                        <svg class="ui-icon"><use href="#news"/></svg>
                         <span class="x-large block margin-5-t">News</span>
                         <span class="font-color-white-50">589</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
-                        <svg class="icon"><use href="#calendar-check"/></svg>
+                        <svg class="ui-icon"><use href="#calendar-check"/></svg>
                         <span class="x-large block margin-5-t">Events</span>
                         <span class="font-color-white-50">219</span>
                     </a>
                 </div>
                 <div class="col-4 padding-10-b">
                     <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
-                        <svg class="icon"><use href="#files"/></svg>
+                        <svg class="ui-icon"><use href="#files"/></svg>
                         <span class="x-large block margin-5-t">Documents</span>
                         <span class="font-color-white-50">701</span>
                     </a>

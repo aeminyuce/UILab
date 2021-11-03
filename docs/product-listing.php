@@ -13,9 +13,9 @@
 
                     <div class="ui-card padding-15 round shadow-lg">
                         <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete text text-icon-both round ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form has-clear">
-                            <svg class="icon text-icon-l"><use href="#search"/></svg>
+                            <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
                             <button type="button" class="clear-form">
-                                <svg class="icon"><use href="#remove"/></svg>
+                                <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                             <input type="text" placeholder="Search" autocomplete="off">
                         </div>
@@ -99,7 +99,7 @@
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
-                                <svg class="icon margin-5-r"><use href="#truck"/></svg>
+                                <svg class="ui-icon margin-5-r"><use href="#truck"/></svg>
                                 Fast Delivery
                             </label>
                             <span class="sp-5"></span>
@@ -108,7 +108,7 @@
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
-                                <svg class="icon margin-5-r"><use href="#check-badge"/></svg>
+                                <svg class="ui-icon margin-5-r"><use href="#check-badge"/></svg>
                                 Deals
                             </label>
 
@@ -149,7 +149,7 @@
                             <span class="sp-10"></span>
                             <button class="ui-btn ui-btn-sm circle ui-ease-btn">
                                 See All
-                                <svg class="icon margin-5-l"><use href="#angle-down"/></svg>
+                                <svg class="ui-icon margin-5-l"><use href="#angle-down"/></svg>
                             </button>
 
                         </div>
@@ -169,7 +169,7 @@
                         <div class="row row-gap-lg sm-fluid">
                             <div class="col-12 ui-border-b">
                                 <h4>
-                                    <svg class="icon icon-lg"><use href="#history"/></svg>
+                                    <svg class="ui-icon ui-icon-lg"><use href="#history"/></svg>
                                     <span class="inline-block">
                                         Price History, <span class="font-color-black-muted">Over-Ear Headphones</span>
                                     </span>
@@ -205,7 +205,7 @@
                                         <span class="largest block">$120</span>
                                     </div>
                                 </div>
-                                <svg class="icon icon-sm margin-5-r margin-2-b"><use href="#chart-line"/></svg>
+                                <svg class="ui-icon ui-icon-sm margin-5-r margin-2-b"><use href="#chart-line"/></svg>
                                 <span class="large">Current prices <b>12% lower</b> than, average prices!</span>
                                 <ul class="list-unstyled font-color-black-muted margin-15-t inline-block-2nd">
                                     <li>
@@ -228,7 +228,7 @@
                         </div>
                         <div class="col-6 align-r sm-no-padding-t">
                             <div class="select align-l round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
-                                <svg class="icon"><use href="#angle-down"/></svg>
+                                <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="1" checked>Sort by</option>
                                     <option value="2">Top Rated</option>
@@ -237,7 +237,7 @@
                                 </select>
                             </div>
                             <div class="select align-l round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
-                                <svg class="icon"><use href="#angle-down"/></svg>
+                                <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="12" checked>Show 9</option>
                                     <option value="24">Show 18</option>
@@ -247,13 +247,13 @@
                             <span class="sp-10 visible-xs"></span>
                             <span class="align-c ui-theme-sub ui-ease-1st-btn">
                                 <button class="ui-btn ui-btn-square round ui-fill-dark-100">
-                                    <svg class="icon"><use href="#grid-column"/></svg>
+                                    <svg class="ui-icon"><use href="#grid-column"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square round">
-                                    <svg class="icon"><use href="#grid-row"/></svg>
+                                    <svg class="ui-icon"><use href="#grid-row"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square round ui-show-mobile-menu-r visible-md">
-                                    <svg class="icon"><use href="#bars-right"/></svg>
+                                    <svg class="ui-icon"><use href="#bars-right"/></svg>
                                 </button>
                             </span>
                         </div>
@@ -263,16 +263,16 @@
                         <div class="col-4 col-sm-6">
                             <a class="full-h padding-15 no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider margin-20-b">
-                                    <svg class="ui-slider-loader icon"><use href="#loader-line"/></svg>
+                                    <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
                                         src="img/product_01.png" alt=""
                                         data-ui-src="img/product_01.png,img/product_02.png,img/product_03.png"
                                     >
-                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
-                                        <svg class="icon"><use href="#angle-left"/></svg>
+                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                        <svg class="ui-icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
-                                        <svg class="icon"><use href="#angle-right"/></svg>
+                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                        <svg class="ui-icon"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
@@ -280,18 +280,18 @@
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
                                 <b class="xx-large">$164.98</b>
                                 <span class="block">
-                                    <svg class="icon icon-sm margin-5-r"><use href="#truck"/></svg> Fast Delivery
+                                    <svg class="ui-icon ui-icon-sm margin-5-r"><use href="#truck"/></svg> Fast Delivery
                                 </span>
                                 <ul class="list-inline margin-15-v right">
                                     <li class="circle padding-5 ui-border-dual ui-product-red"></li>
                                     <li class="circle padding-5 ui-border-dual ui-product-pink"></li>
                                     <li class="circle padding-5 ui-border-dual ui-product-blue"></li>
                                 </ul>
-                                <span class="left padding-15-v icons-xs">
-                                    <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
+                                <span class="left padding-15-v ui-icons-xs">
+                                    <svg class="ui-icon font-color-yellow"><use href="#star-fill"/></svg>
                                     <b class="font-color-black-50">4.8</b>
                                     <span class="font-color-black-muted">
-                                        <svg class="icon margin-5-l"><use href="#comment"/></svg> 24
+                                        <svg class="ui-icon margin-5-l"><use href="#comment"/></svg> 24
                                     </span>
                                 </span>
                             </a>
@@ -299,16 +299,16 @@
                         <div class="col-4 col-sm-6">
                             <a class="full-h padding-15 no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider margin-20-b">
-                                    <svg class="ui-slider-loader icon"><use href="#loader-line"/></svg>
+                                    <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
                                         src="img/product_02.png" alt=""
                                         data-ui-src="img/product_02.png,img/product_04.png"
                                     >
-                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
-                                        <svg class="icon"><use href="#angle-left"/></svg>
+                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                        <svg class="ui-icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
-                                        <svg class="icon"><use href="#angle-right"/></svg>
+                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                        <svg class="ui-icon"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
@@ -316,17 +316,17 @@
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
                                 <b class="xx-large">$79.95</b> <b class="font-color-black-50 font-overline">$99.99</b>
                                 <span class="block">
-                                    <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
+                                    <svg class="ui-icon ui-icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
                                     <li class="circle padding-5 ui-border-dual ui-product-pink"></li>
                                     <li class="circle padding-5 ui-border-dual ui-product-white"></li>
                                 </ul>
-                                <span class="left padding-15-v icons-xs">
-                                    <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
+                                <span class="left padding-15-v ui-icons-xs">
+                                    <svg class="ui-icon font-color-yellow"><use href="#star-fill"/></svg>
                                     <b class="font-color-black-50">3.9</b>
                                     <span class="font-color-black-muted">
-                                        <svg class="icon margin-5-l"><use href="#comment"/></svg> 9
+                                        <svg class="ui-icon margin-5-l"><use href="#comment"/></svg> 9
                                     </span>
                                 </span>
                             </a>
@@ -334,16 +334,16 @@
                         <div class="col-4 col-sm-6">
                             <a class="full-h padding-15 no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider margin-20-b">
-                                    <svg class="ui-slider-loader icon"><use href="#loader-line"/></svg>
+                                    <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
                                         src="img/product_03.png" alt=""
                                         data-ui-src="img/product_03.png,img/product_05.png"
                                     >
-                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
-                                        <svg class="icon"><use href="#angle-left"/></svg>
+                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                        <svg class="ui-icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
-                                        <svg class="icon"><use href="#angle-right"/></svg>
+                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                        <svg class="ui-icon"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
@@ -351,17 +351,17 @@
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
                                 <b class="xx-large">$149.99</b>
                                 <span class="block">
-                                    <svg class="icon icon-sm margin-5-r"><use href="#truck"/></svg> Fast Delivery
+                                    <svg class="ui-icon ui-icon-sm margin-5-r"><use href="#truck"/></svg> Fast Delivery
                                 </span>
                                 <ul class="list-inline margin-15-v right">
                                     <li class="circle padding-5 ui-border-dual ui-product-blue"></li>
                                     <li class="circle padding-5 ui-border-dual ui-product-black"></li>
                                 </ul>
-                                <span class="left padding-15-v icons-xs">
-                                    <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
+                                <span class="left padding-15-v ui-icons-xs">
+                                    <svg class="ui-icon font-color-yellow"><use href="#star-fill"/></svg>
                                     <b class="font-color-black-50">4.3</b>
                                     <span class="font-color-black-muted">
-                                        <svg class="icon margin-5-l"><use href="#comment"/></svg> 11
+                                        <svg class="ui-icon margin-5-l"><use href="#comment"/></svg> 11
                                     </span>
                                 </span>
                             </a>
@@ -369,13 +369,13 @@
                         <div class="col-4 col-sm-6">
                             <a class="full-h padding-15 no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider margin-20-b">
-                                    <svg class="ui-slider-loader icon"><use href="#loader-line"/></svg>
+                                    <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img src="img/product_04.png" alt="" >
-                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
-                                        <svg class="icon"><use href="#angle-left"/></svg>
+                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                        <svg class="ui-icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
-                                        <svg class="icon"><use href="#angle-right"/></svg>
+                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                        <svg class="ui-icon"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
@@ -383,16 +383,16 @@
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
                                 <b class="xx-large">$89.95</b> <b class="font-color-black-50 font-overline">$119.99</b>
                                 <span class="block">
-                                    <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
+                                    <svg class="ui-icon ui-icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
                                     <li class="circle padding-5 ui-border-dual ui-product-white"></li>
                                 </ul>
-                                <span class="left padding-15-v icons-xs">
-                                    <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
+                                <span class="left padding-15-v ui-icons-xs">
+                                    <svg class="ui-icon font-color-yellow"><use href="#star-fill"/></svg>
                                     <b class="font-color-black-50">4.9</b>
                                     <span class="font-color-black-muted">
-                                        <svg class="icon margin-5-l"><use href="#comment"/></svg> 32
+                                        <svg class="ui-icon margin-5-l"><use href="#comment"/></svg> 32
                                     </span>
                                 </span>
                             </a>
@@ -400,13 +400,13 @@
                         <div class="col-4 col-sm-6">
                             <a class="full-h padding-15 no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider margin-20-b">
-                                    <svg class="ui-slider-loader icon"><use href="#loader-line"/></svg>
+                                    <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img src="img/product_05.png" alt="" >
-                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
-                                        <svg class="icon"><use href="#angle-left"/></svg>
+                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                        <svg class="ui-icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
-                                        <svg class="icon"><use href="#angle-right"/></svg>
+                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                        <svg class="ui-icon"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
@@ -414,16 +414,16 @@
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
                                 <b class="xx-large">$89.95</b> <b class="font-color-black-50 font-overline">$119.99</b>
                                 <span class="block">
-                                    <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
+                                    <svg class="ui-icon ui-icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
                                     <li class="circle padding-5 ui-border-dual ui-product-black"></li>
                                 </ul>
-                                <span class="left padding-15-v icons-xs">
-                                    <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
+                                <span class="left padding-15-v ui-icons-xs">
+                                    <svg class="ui-icon font-color-yellow"><use href="#star-fill"/></svg>
                                     <b class="font-color-black-50">4.6</b>
                                     <span class="font-color-black-muted">
-                                        <svg class="icon margin-5-l"><use href="#comment"/></svg> 44
+                                        <svg class="ui-icon margin-5-l"><use href="#comment"/></svg> 44
                                     </span>
                                 </span>
                             </a>
@@ -431,16 +431,16 @@
                         <div class="col-4 col-sm-6">
                             <a class="full-h padding-15 no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider margin-20-b">
-                                    <svg class="ui-slider-loader icon"><use href="#loader-line"/></svg>
+                                    <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
                                         src="img/product_02.png" alt=""
                                         data-ui-src="img/product_02.png,img/product_04.png"
                                     >
-                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
-                                        <svg class="icon"><use href="#angle-left"/></svg>
+                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                        <svg class="ui-icon"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square round ui-ease-btn">
-                                        <svg class="icon"><use href="#angle-right"/></svg>
+                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                        <svg class="ui-icon"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
@@ -448,17 +448,17 @@
                                 <span class="font-color-black-50 block margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
                                 <b class="xx-large">$79.95</b> <b class="font-color-black-50 font-overline">$99.99</b>
                                 <span class="block">
-                                    <svg class="icon icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
+                                    <svg class="ui-icon ui-icon-sm margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline margin-15-v right">
                                     <li class="circle padding-5 ui-border-dual ui-product-pink"></li>
                                     <li class="circle padding-5 ui-border-dual ui-product-white"></li>
                                 </ul>
-                                <span class="left padding-15-v icons-xs">
-                                    <svg class="icon font-color-yellow"><use href="#star-fill"/></svg>
+                                <span class="left padding-15-v ui-icons-xs">
+                                    <svg class="ui-icon font-color-yellow"><use href="#star-fill"/></svg>
                                     <b class="font-color-black-50">3.9</b>
                                     <span class="font-color-black-muted">
-                                        <svg class="icon margin-5-l"><use href="#comment"/></svg> 9
+                                        <svg class="ui-icon margin-5-l"><use href="#comment"/></svg> 9
                                     </span>
                                 </span>
                             </a>
@@ -482,7 +482,7 @@
 <div class="ui-mobile-menu ui-show-r ui-ease-layout ui-ease-in-out">
     <div class="ui-mobile-menu-title padding-20-v x-large ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost circle ui-ease-btn ui-close-mobile-menu">
-            <svg class="icon no-opacity"><use href="#remove"/></svg>
+            <svg class="ui-icon no-opacity"><use href="#remove"/></svg>
         </button>
         Filters
     </div>

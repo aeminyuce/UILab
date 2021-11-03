@@ -32,7 +32,7 @@ ui.forms = {
     nameOpenEase: 'open-ease',
 
     // outer classnames
-    nameIcon: 'icon',
+    nameIcon: 'ui-icon',
 
     nameRequired: 'required',
     nameRequiredMsg: 'required-msg',

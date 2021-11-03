@@ -49,21 +49,21 @@
                 </div>
 
                 <div class="padding-30-v">
-                    <ul class="ui-steps-bar icons-sm">
+                    <ul class="ui-steps-bar ui-icons-sm">
                         <li>
-                            <svg class="icon margin-3-r"><use href="#check-circle"/></svg>
+                            <svg class="ui-icon margin-3-r"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                         <li class="active">
-                            <svg class="icon margin-3-r"><use href="#check-circle"/></svg>
+                            <svg class="ui-icon margin-3-r"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="icon margin-3-r"><use href="#check-circle"/></svg>
+                            <svg class="ui-icon margin-3-r"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="icon margin-3-r"><use href="#check-circle"/></svg>
+                            <svg class="ui-icon margin-3-r"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                     </ul>
@@ -73,19 +73,19 @@
                 <div class="padding-30-b">
                     <ul class="ui-steps-bar ui-steps-icon">
                         <li>
-                            <svg class="icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                            <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                             Step Name Here
                         </li>
                         <li class="active">
-                            <svg class="icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                            <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                            <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                            <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                             Step Name Here
                         </li>
                     </ul>
@@ -157,21 +157,21 @@
                     </div>
 
                     <div class="padding-30-v">
-                        <ul class="ui-steps-bar icons-sm">
+                        <ul class="ui-steps-bar ui-icons-sm">
                             <li>
-                                <svg class="icon margin-3-r"><use href="#check-circle"/></svg>
+                                <svg class="ui-icon margin-3-r"><use href="#check-circle"/></svg>
                                 Step Name Here
                             </li>
                             <li class="active">
-                                <svg class="icon margin-3-r"><use href="#check-circle"/></svg>
+                                <svg class="ui-icon margin-3-r"><use href="#check-circle"/></svg>
                                 Step Name Here
                             </li>
                             <li>
-                                <svg class="icon margin-3-r"><use href="#check-circle"/></svg>
+                                <svg class="ui-icon margin-3-r"><use href="#check-circle"/></svg>
                                 Step Name Here
                             </li>
                             <li>
-                                <svg class="icon margin-3-r"><use href="#check-circle"/></svg>
+                                <svg class="ui-icon margin-3-r"><use href="#check-circle"/></svg>
                                 Step Name Here
                             </li>
                         </ul>
@@ -181,19 +181,19 @@
                     <div class="padding-30-b">
                         <ul class="ui-steps-bar ui-steps-icon">
                             <li>
-                                <svg class="icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                                <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                                 Step Name Here
                             </li>
                             <li class="active">
-                                <svg class="icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                                <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                                 Step Name Here
                             </li>
                             <li>
-                                <svg class="icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                                <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                                 Step Name Here
                             </li>
                             <li>
-                                <svg class="icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                                <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                                 Step Name Here
                             </li>
                         </ul>

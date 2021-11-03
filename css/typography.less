@@ -46,19 +46,19 @@ body,a { ._color-var(black); }
 .font-color {
     &-white {
         &,
-        .icon:not([class*="ui-color-"]):not([class*="ui-fill-"]),
+        .ui-icon:not([class*="ui-color-"]):not([class*="ui-fill-"]),
         a:not([class*="ui-color-"]):not([class*="ui-fill-"]),
         button:not([class*="ui-color-"]):not([class*="ui-fill-"]) { color: @white !important; }
 
         &-50 {
             &,
-            .icon:not([class*="ui-color-"]):not([class*="ui-fill-"]),
+            .ui-icon:not([class*="ui-color-"]):not([class*="ui-fill-"]),
             a:not([class*="ui-color-"]):not([class*="ui-fill-"]),
             button:not([class*="ui-color-"]):not([class*="ui-fill-"]) { color: @white-50 !important; }
         }
         &-muted {
             &,
-            .icon:not([class*="ui-color-"]):not([class*="ui-fill-"]),
+            .ui-icon:not([class*="ui-color-"]):not([class*="ui-fill-"]),
             a:not([class*="ui-color-"]):not([class*="ui-fill-"]),
             button:not([class*="ui-color-"]):not([class*="ui-fill-"]) { color: @white-muted !important; }
         }
@@ -66,19 +66,19 @@ body,a { ._color-var(black); }
 
     &-black {
         &,
-        .icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
+        .ui-icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
         a:not([class*="ui-color"]):not([class*="ui-fill-"]),
         button:not([class*="ui-color"]):not([class*="ui-fill-"]) { ._color-var(black) !important; }
 
         &-50 {
             &,
-            .icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
+            .ui-icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
             a:not([class*="ui-color"]):not([class*="ui-fill-"]),
             button:not([class*="ui-color"]):not([class*="ui-fill-"]) { ._color-var(black-50) !important; }
         }
         &-muted {
             &,
-            .icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
+            .ui-icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
             a:not([class*="ui-color"]):not([class*="ui-fill-"]),
             button:not([class*="ui-color"]):not([class*="ui-fill-"]) { ._color-var(black-muted) !important; }
         }
@@ -87,7 +87,7 @@ body,a { ._color-var(black); }
     each(@font-colors, {
         &-@{value} {
             &,
-            .icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
+            .ui-icon:not([class*="ui-color"]):not([class*="ui-fill-"]),
             a:not([class*="ui-color"]):not([class*="ui-fill-"]),
             button:not([class*="ui-color"]):not([class*="ui-fill-"]) { color: @@value !important; }
         }
@@ -125,8 +125,8 @@ h1,h2,h3,h4,h5,h6 {
 
     &:not(:last-child) { margin-bottom: @highlight-space; }
     & > small { font-size: @font-size !important; }
-    .icon:not(.right) { margin-right: @heading-icon-right; }
-    .icon-lg:not(.right) { margin-right: (@heading-icon-right * 2); }
+    .ui-icon:not(.right) { margin-right: @heading-icon-right; }
+    .ui-icon-lg:not(.right) { margin-right: (@heading-icon-right * 2); }
 }
 
 h1,h2,h3 { line-height: 1; }

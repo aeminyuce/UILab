@@ -93,7 +93,7 @@
         li {
             text-align: center; width: @weather-days-width; display: inline-block;
 
-            .icon { margin: @weather-padding auto; display: block; }
+            .ui-icon { margin: @weather-padding auto; display: block; }
             & > span { font-size: @weather-days-numerics-size; line-height: @weather-days-numerics-size; display: inline-block; position: relative; opacity: @weather-days-numerics-opacity; }
             & span {
                 &:after { &:extend(.ui-weather .ui-deg:after); }
@@ -202,7 +202,7 @@
 
     &.ui-night {
         .ui-now,.ui-days {
-            &,a,.icons { color: @white; }
+            &,a,.ui-icons { color: @white; }
         }
 
         .ui-graphs { background-image: @weather-night-bg !important; }

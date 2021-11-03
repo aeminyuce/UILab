@@ -22,7 +22,7 @@
     <meta http-equiv="Expires" content="0" />
 
     <!-- favicon -->
-    <link rel="icon" href="img/favicon.ico?v=<?php echo filemtime('img/favicon.ico'); ?>" />
+    <link rel="ui-icon" href="img/favicon.ico?v=<?php echo filemtime('img/favicon.ico'); ?>" />
 
     <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
     <!--[if lt IE 10]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
@@ -92,12 +92,12 @@
     <header class="container header form-lg ui-theme-base invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-12 padding-15">
-                <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost circle icons-no-opacity right ui-ease-btn hidden-ie">
-                    <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
-                    <svg class="icon visible-light"><use href="#sun-fill"/></svg>
+                <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost circle ui-icons-no-opacity right ui-ease-btn hidden-ie">
+                    <svg class="ui-icon visible-dark"><use href="#moon-fill"/></svg>
+                    <svg class="ui-icon visible-light"><use href="#sun-fill"/></svg>
                 </button>
                 <a href="index.php" class="ui-btn ui-btn-square ui-btn-ghost circle margin-10-r ui-ease-btn">
-                    <svg class="icon icon-hybrid no-opacity"><use href="#long-arrow-left"/></svg>
+                    <svg class="ui-icon ui-icon-hybrid no-opacity"><use href="#long-arrow-left"/></svg>
                 </a>
                 <h1 class="x-large inline-block"><span class="capitalize"><?php echo str_replace("-", " ", $page); ?></span></h1>
             </div>
@@ -113,9 +113,9 @@
         include ($page.'.php');
 ?>
 
-<button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-lg ui-btn-square round-l icons-no-opacity ui-ease-btn set-fixed set-r hidden-ie" style="top: 30%;">
-    <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
-    <svg class="icon visible-light"><use href="#sun-fill"/></svg>
+<button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-lg ui-btn-square round-l ui-icons-no-opacity ui-ease-btn set-fixed set-r hidden-ie" style="top: 30%;">
+    <svg class="ui-icon visible-dark"><use href="#moon-fill"/></svg>
+    <svg class="ui-icon visible-light"><use href="#sun-fill"/></svg>
 </button>
 <?php
     } else {
@@ -128,19 +128,19 @@
                     <img class="margin-3-t" src="img/uilab-logo.png" alt="UI lab" srcset="img/uilab-logo@2x.png 2x">
                 </div>
                 <div class="row">
-                    <div class="col-12 align-r padding-15 icons-no-opacity ui-ease-1st-btn">
+                    <div class="col-12 align-r padding-15 ui-icons-no-opacity ui-ease-1st-btn">
                         <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost circle hidden-ie">
-                            <svg class="icon visible-dark"><use href="#moon-fill"/></svg>
-                            <svg class="icon visible-light"><use href="#sun-fill"/></svg>
+                            <svg class="ui-icon visible-dark"><use href="#moon-fill"/></svg>
+                            <svg class="ui-icon visible-light"><use href="#sun-fill"/></svg>
                         </button>
                         <a title="GitHub" href="https://github.com/aeminyuce/UILab" class="ui-btn ui-btn-square ui-btn-ghost circle" target="_blank">
-                            <svg class="icon"><use href="#github"/></svg>
+                            <svg class="ui-icon"><use href="#github"/></svg>
                         </a>
                         <a title="GitHub" href="https://dribbble.com/aeminyuce" class="ui-btn ui-btn-square ui-btn-ghost circle" target="_blank">
-                            <svg class="icon"><use href="#dribbble"/></svg>
+                            <svg class="ui-icon"><use href="#dribbble"/></svg>
                         </a>
                         <button class="ui-btn ui-btn-square ui-btn-ghost circle ui-show-mobile-menu-r visible-md">
-                            <svg class="icon"><use href="#bars-right"/></svg>
+                            <svg class="ui-icon"><use href="#bars-right"/></svg>
                         </button>
                     </div>
                 </div>
@@ -203,12 +203,12 @@
                         <span class="sp-15"></span>
                         <div class="form-lg ui-ease-1st-btn">
                             <a href="?p=icons" class="ui-btn ui-btn-xs-fluid padding-30-h margin-5-h xs-no-margin-h circle ui-fill-dark-300">
-                                <svg class="icon margin-5-r"><use href="#draw"/></svg>
+                                <svg class="ui-icon margin-5-r"><use href="#draw"/></svg>
                                 See Icons
                             </a>
                             <a href="?p=download" class="ui-btn ui-btn-xs-fluid padding-30-h margin-5-h xs-no-margin-h circle ui-fill-dark-100">
                                 Download
-                                <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
+                                <svg class="ui-icon margin-5-l"><use href="#long-arrow-right"/></svg>
                             </a>
                         </div>
                     </div>
@@ -298,7 +298,7 @@
     <div class="ui-mobile-menu ui-show-r ui-theme-base ui-ease-layout ui-ease-in-out">
         <div class="ui-mobile-menu-title padding-15-v ui-fill-dark-100">
             <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost circle ui-ease-btn ui-close-mobile-menu">
-                <svg class="icon no-opacity"><use href="#remove"/></svg>
+                <svg class="ui-icon no-opacity"><use href="#remove"/></svg>
             </button>
             <img src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">
         </div>

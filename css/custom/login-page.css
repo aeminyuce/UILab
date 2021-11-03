@@ -38,7 +38,7 @@
   background-color: hsl(261, 100%, 91%);
   background-color: var(--ui-login-page-container-bg);
 }
-.login-container > .icon {
+.login-container > .ui-icon {
   width: 160px;
   height: 160px;
   position: absolute;
@@ -46,10 +46,10 @@
   right: 22%;
   transform: rotate(-12deg);
 }
-.login-icons .icon {
+.login-icons .ui-icon {
   position: absolute;
 }
-.login-icons .icon:nth-child(1) {
+.login-icons .ui-icon:nth-child(1) {
   width: 52px;
   height: 52px;
   bottom: 112px;
@@ -57,7 +57,7 @@
   opacity: 0.65;
   transform: rotate(12deg);
 }
-.login-icons .icon:nth-child(2) {
+.login-icons .ui-icon:nth-child(2) {
   width: 28px;
   height: 28px;
   bottom: 32px;
@@ -65,7 +65,7 @@
   opacity: 0.15;
   transform: rotate(-12deg);
 }
-.login-icons .icon:nth-child(3) {
+.login-icons .ui-icon:nth-child(3) {
   width: 84px;
   height: 84px;
   top: 20%;
@@ -73,7 +73,7 @@
   opacity: 0.15;
   transform: rotate(-12deg);
 }
-.login-icons .icon:nth-child(4) {
+.login-icons .ui-icon:nth-child(4) {
   width: 106px;
   height: 106px;
   bottom: 18px;
@@ -81,7 +81,7 @@
   opacity: 0.3;
   transform: rotate(-12deg);
 }
-.login-icons .icon:nth-child(5) {
+.login-icons .ui-icon:nth-child(5) {
   width: 38px;
   height: 38px;
   top: 72px;
