@@ -1,7 +1,7 @@
 <main class="container no-gutter">
     <div class="fixed">
         <div class="row">
-            <div class="col-12 padding-30">
+            <div class="col-12 ui-padding-30">
 
                 <h3 class="align-c">SVG Map Example 1</h3>
                 <div class="ui-svg-map">
@@ -333,7 +333,7 @@
                     </svg>
                 </div>
 
-                <span class="sp-30 margin-30-v"></span>
+                <span class="sp-30 ui-margin-30-v"></span>
 
                 <h3 class="align-c">SVG Map Example 2</h3>
                 <div class="ui-svg-map">

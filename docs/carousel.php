@@ -1,17 +1,17 @@
 <main class="container no-gutter">
     <div class="fixed">
         <div class="row">
-            <div class="col-12 padding-30-v">
+            <div class="col-12 ui-padding-30-v">
 
                 <h3>Carousel Examples</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
 
                     <h5 class="font-bold">HTML Content Carousel</h5>
 
-                    <div class="ui-carousel padding-10 round shadow-in-sm ui-theme-gray ui-fill-light-100" data-ui-col="1" data-ui-slide="4000">
+                    <div class="ui-carousel ui-padding-10 round shadow-in-sm ui-theme-gray ui-fill-light-100" data-ui-col="1" data-ui-slide="4000">
                         <div class="ui-carousel-slider form-lg ui-ease-2nd-layout ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
-                            <div class="ui-slide-content padding-10-h" data-ui-animate="10">
+                            <div class="ui-slide-content ui-padding-10-h" data-ui-animate="10">
 
                                     <div class="row sm-fluid">
                                         <div class="col-4 col-md-6">
@@ -45,9 +45,9 @@
                                                     Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
                                                     <br><br>
 
-                                                    <a href="#" class="ui-btn ui-btn-xs-fluid padding-30-h ui-theme-sub ui-fill-dark-100 circle ui-ease-btn">
+                                                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-theme-sub ui-fill-dark-100 circle ui-ease-btn">
                                                         Continue
-                                                        <svg class="ui-icon margin-5-l"><use href="#arrow-right"/></svg>
+                                                        <svg class="ui-icon ui-margin-5-l"><use href="#arrow-right"/></svg>
                                                     </a>
                                                 </p>
                                             </div>
@@ -56,7 +56,7 @@
                                     </div>
 
                             </div>
-                            <div class="ui-slide-content padding-10-h" data-ui-animate="10">
+                            <div class="ui-slide-content ui-padding-10-h" data-ui-animate="10">
 
                                     <div class="row sm-fluid">
                                         <div class="col-4 col-md-6">
@@ -90,9 +90,9 @@
                                                     Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
                                                     <br><br>
 
-                                                    <a href="#" class="ui-btn ui-btn-xs-fluid padding-30-h ui-theme-sub ui-fill-dark-100 circle ui-ease-btn">
+                                                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-theme-sub ui-fill-dark-100 circle ui-ease-btn">
                                                         Continue
-                                                        <svg class="ui-icon margin-5-l"><use href="#arrow-right"/></svg>
+                                                        <svg class="ui-icon ui-margin-5-l"><use href="#arrow-right"/></svg>
                                                     </a>
                                                 </p>
                                             </div>
@@ -101,7 +101,7 @@
                                     </div>
 
                             </div>
-                            <div class="ui-slide-content padding-10-h" data-ui-animate="10">
+                            <div class="ui-slide-content ui-padding-10-h" data-ui-animate="10">
 
                                     <div class="row sm-fluid">
                                         <div class="col-4 col-md-6">
@@ -135,9 +135,9 @@
                                                     Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
                                                     <br><br>
 
-                                                    <a href="#" class="ui-btn ui-btn-xs-fluid padding-30-h ui-theme-sub ui-fill-dark-100 circle ui-ease-btn">
+                                                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-theme-sub ui-fill-dark-100 circle ui-ease-btn">
                                                         Continue
-                                                        <svg class="ui-icon margin-5-l"><use href="#arrow-right"/></svg>
+                                                        <svg class="ui-icon ui-margin-5-l"><use href="#arrow-right"/></svg>
                                                     </a>
                                                 </p>
                                             </div>
@@ -148,7 +148,7 @@
                             </div>
 
                         </div>
-                        <div class="ui-carousel-nav form-lg margin-10-b ui-ease-1st-btn">
+                        <div class="ui-carousel-nav form-lg ui-margin-10-b ui-ease-1st-btn">
                             <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
                                 <svg class="ui-icon"><use href="#angle-left"/></svg>
                             </button>
@@ -161,7 +161,7 @@
                 </div>
 
                 <h5 class="font-bold">Image Carousel</h5>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <div class="ui-carousel" data-ui-col="8" data-ui-col-md="4" data-ui-col-sm="3" data-ui-col-xs="1" data-ui-slide="2000">
                         <div class="ui-carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow ui-ease-in-out">
                             <div class="ui-slide-content">
@@ -227,40 +227,40 @@
                     <span class="sp-30"></span>
 
                     <h5 class="font-bold">Half Sized Image Carousel</h5>
-                    <div class="ui-carousel ui-half-sized padding-15-b ui-photo-gallery ui-ease-photo-gallery shadow-in-sm round ui-theme-gray ui-fill-light-100" data-ui-col="4" data-ui-col-md="3" data-ui-col-sm="2" data-ui-col-xs="2">
+                    <div class="ui-carousel ui-half-sized ui-padding-15-b ui-photo-gallery ui-ease-photo-gallery shadow-in-sm round ui-theme-gray ui-fill-light-100" data-ui-col="4" data-ui-col-md="3" data-ui-col-sm="2" data-ui-col-xs="2">
                         <div class="ui-carousel-slider hover-scale-2nd hover-shadow-2nd ui-ease-layout ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
-                            <div class="ui-slide-content padding-15 no-padding-b">
+                            <div class="ui-slide-content ui-padding-15 ui-no-padding-b">
                                 <a class="ui-img shadow ui-ease-default" href="img/image_09.jpg">
                                     <img class="ui-img" src="img/image_09.jpg" alt="">
                                 </a>
                             </div>
-                            <div class="ui-slide-content padding-15 no-padding-b">
+                            <div class="ui-slide-content ui-padding-15 ui-no-padding-b">
                                 <a class="ui-img shadow ui-ease-default" href="img/image_07.jpg">
                                     <img class="ui-img" src="img/image_07.jpg" alt="">
                                 </a>
                             </div>
-                            <div class="ui-slide-content padding-15 no-padding-b">
+                            <div class="ui-slide-content ui-padding-15 ui-no-padding-b">
                                 <a class="ui-img shadow ui-ease-default" href="img/image_08.jpg">
                                     <img class="ui-img" src="img/image_05.jpg" alt="">
                                 </a>
                             </div>
-                            <div class="ui-slide-content padding-15 no-padding-b">
+                            <div class="ui-slide-content ui-padding-15 ui-no-padding-b">
                                 <a class="ui-img shadow ui-ease-default" href="img/image_04.jpg">
                                     <img class="ui-img" src="img/image_04.jpg" alt="">
                                 </a>
                             </div>
-                            <div class="ui-slide-content padding-15 no-padding-b">
+                            <div class="ui-slide-content ui-padding-15 ui-no-padding-b">
                                 <a class="ui-img shadow ui-ease-default" href="img/image_01.jpg">
                                     <img class="ui-img" src="img/image_01.jpg" alt="">
                                 </a>
                             </div>
-                            <div class="ui-slide-content padding-15 no-padding-b">
+                            <div class="ui-slide-content ui-padding-15 ui-no-padding-b">
                                 <a class="ui-img shadow ui-ease-default" href="img/image_06.jpg">
                                     <img class="ui-img" src="img/image_06.jpg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="ui-carousel-nav margin-10-t ui-ease-1st-btn">
+                        <div class="ui-carousel-nav ui-margin-10-t ui-ease-1st-btn">
                             <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
                                 <svg class="ui-icon"><use href="#angle-left"/></svg>
                             </button>
@@ -273,8 +273,8 @@
                 </div>
 
                 <h5 class="font-bold">Carousel Gallery</h5>
-                <div class="padding-30-b">
-                    <div class="ui-carousel-gallery ui-card padding-15 round shadow-lg">
+                <div class="ui-padding-30-b">
+                    <div class="ui-carousel-gallery ui-card ui-padding-15 round shadow-lg">
                         <div class="row">
                             <div class="ui-detail col-8 col-md-6 push-2 push-md-3 sm-fluid">
                                 <img src="img/house_01.jpg" class="ui-photo-gallery-call cursor-pointer img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel" data-ui-count="0" alt="">
@@ -282,7 +282,7 @@
                                 <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
                             </div>
                         </div>
-                        <div id="ui-detail-carousel" class="ui-carousel ui-half-sized ui-thumbs margin-10 md-no-margin-h" data-ui-col="8" data-ui-col-md="6" data-ui-col-sm="5" data-ui-col-xs="3">
+                        <div id="ui-detail-carousel" class="ui-carousel ui-half-sized ui-thumbs ui-margin-10 ui-md-no-margin-h" data-ui-col="8" data-ui-col-md="6" data-ui-col-sm="5" data-ui-col-xs="3">
                             <div class="ui-carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow ui-photo-gallery-passive">
                                 <div class="ui-slide-content">
                                     <img class="ui-img ui-ease-default ui-selected" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
@@ -326,8 +326,8 @@
                 </div>
 
                 <h5 class="font-bold">Gallery Without Carousel</h5>
-                <div class="padding-30-b">
-                    <div class="ui-carousel-gallery ui-card padding-15 round shadow-lg">
+                <div class="ui-padding-30-b">
+                    <div class="ui-carousel-gallery ui-card ui-padding-15 round shadow-lg">
                         <div class="row">
                             <div class="ui-detail col-8 col-md-6 push-2 push-md-3 sm-fluid">
                                 <img src="img/image_01.jpg" class="ui-photo-gallery-call cursor-pointer img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel2" data-ui-count="0" alt="">

@@ -1,10 +1,10 @@
 <main class="container no-gutter">
     <div class="fixed">
         <div class="row">
-            <div class="col-12 padding-30">
+            <div class="col-12 ui-padding-30">
 
                 <h3>Button Styles</h3>
-                <div class="row padding-30-b block-2nd form-lg ui-ease-2nd-btn">
+                <div class="row ui-padding-30-b block-2nd form-lg ui-ease-2nd-btn">
                     <div class="col-3 col-sm-6">
                         <a class="ui-btn" href="#">Button</a>
                     </div>
@@ -44,7 +44,7 @@
                 </div>
 
                 <h3>Button Themes</h3>
-                <div class="row padding-30-b block-2nd form-lg ui-ease-2nd-btn">
+                <div class="row ui-padding-30-b block-2nd form-lg ui-ease-2nd-btn">
                     <div class="col-3 col-sm-6">
                         <a class="ui-btn ui-theme-red ui-fill-dark-100" href="#">Button</a>
                     </div>
@@ -84,7 +84,7 @@
                 </div>
 
                 <h3>Button Sizes</h3>
-                <div class="row xs-fluid align-l padding-30-b ui-icons-margin-5-l block-2nd ui-ease-2nd-btn">
+                <div class="row xs-fluid align-l ui-padding-30-b ui-icons-margin-5-l block-2nd ui-ease-2nd-btn">
                     <div class="col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-lg circle ui-border" href="#">
                             Large Button <svg class="ui-icon right"><use href="#settings"/></svg>
@@ -148,7 +148,7 @@
                 </div>
 
                 <h3>Square Buttons</h3>
-                <div class="padding-30-b align-c ui-theme-sub ui-ease-1st-btn">
+                <div class="ui-padding-30-b align-c ui-theme-sub ui-ease-1st-btn">
                     <a class="ui-btn ui-btn-square ui-btn-xxs round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#trash"/></svg>
                     </a>
@@ -167,7 +167,7 @@
                 </div>
 
                 <h3>Button Notifiers</h3>
-                <div class="padding-30-b align-c ui-icons-no-opacity">
+                <div class="ui-padding-30-b align-c ui-icons-no-opacity">
 
                     <div class="row ui-ease-2nd-btn">
                         <div class="col-6">
@@ -255,7 +255,7 @@
                 </div>
 
                 <h3>Responsive Buttons</h3>
-                <div class="padding-30-b form-lg ui-ease-1st-btn">
+                <div class="ui-padding-30-b form-lg ui-ease-1st-btn">
                     <a class="ui-btn ui-btn-square round ui-btn-xs-fluid" href="#">
                         <svg class="ui-icon"><use href="#filter"/></svg>
                     </a>
@@ -265,7 +265,7 @@
                 </div>
 
                 <h3>Block Level Buttons</h3>
-                <div class="row padding-30-b form-lg ui-ease-2nd-btn">
+                <div class="row ui-padding-30-b form-lg ui-ease-2nd-btn">
                     <div class="col-6 align-c">
                         <a class="ui-btn ui-btn-xs-fluid round ui-theme-yellow ui-fill-dark-100" href="#">Responsive Button</a>
                     </div>
@@ -275,7 +275,7 @@
                 </div>
 
                 <h3>Active &amp; Passive Buttons</h3>
-                <div class="row padding-30-b block-2nd ui-ease-2nd-btn">
+                <div class="row ui-padding-30-b block-2nd ui-ease-2nd-btn">
                     <div class="col-3 col-sm-6">
                         <a class="ui-btn ui-btn-active circle" href="#">Active Link</a>
                     </div>
@@ -303,7 +303,7 @@
                 </div>
 
                 <h3>Multi Buttons</h3>
-                <div class="row padding-30-b block-2nd ui-theme-green ui-ease-2nd-btn">
+                <div class="row ui-padding-30-b block-2nd ui-theme-green ui-ease-2nd-btn">
                     <div class="col-3 col-sm-6">
                         <a href="#" class="ui-btn ui-btn-lg ui-btn-multi round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
                     </div>
@@ -319,7 +319,7 @@
                 </div>
 
                 <h3>ui-pagination Buttons</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
 
                     <div class="ui-pagination align-c ui-theme-sub ui-ease-1st-btn">
                         <a class="ui-btn ui-btn-xs prev round" href="#">
@@ -408,7 +408,7 @@
                 </div>
 
                 <h3>Button List</h3>
-                <div class="row padding-30-b">
+                <div class="row ui-padding-30-b">
                     <div class="col-6">
                         <div class="ui-btn-list align-l ui-icons-margin-10-r form-lg ui-icons-no-opacity ui-theme-green ui-ease-1st-btn">
                             <button class="ui-btn">
@@ -464,7 +464,7 @@
                 </div>
 
                 <h3>Button Holder</h3>
-                <div class="row padding-30-b">
+                <div class="row ui-padding-30-b">
                     <div class="col-6">
                         <div class="ui-btn-holder form-lg ui-theme-base ui-ease-1st-btn">
                             <button class="ui-btn ui-fill-dark-100">1</button>

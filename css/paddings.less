@@ -15,26 +15,26 @@
 
 each(@increases, {
     @j: unit(@value);
-    ._paddings (@name: ~'padding-@{j}'; @size: @value);
+    ._paddings (@name: ~'ui-padding-@{j}'; @size: @value);
 });
 
-._paddings (@name: no-padding; @size: 0);
+._paddings (@name: ui-no-padding; @size: 0);
 
 @media (@lg-start) {
-    ._paddings (@name: lg-no-padding; @size: 0);
+    ._paddings (@name: ui-lg-no-padding; @size: 0);
 }
 @media (@md-start) and (@md-finish) {
-    ._paddings (@name: md-no-padding; @size: 0);
+    ._paddings (@name: ui-md-no-padding; @size: 0);
 }
 @media (@sm-start) and (@sm-finish) {
-    ._paddings (@name: md-no-padding; @size: 0);
-    ._paddings (@name: sm-no-padding; @size: 0);
+    ._paddings (@name: ui-md-no-padding; @size: 0);
+    ._paddings (@name: ui-sm-no-padding; @size: 0);
 }
 @media (@xs-finish) {
-    ._paddings (@name: md-no-padding; @size: 0);
-    ._paddings (@name: sm-no-padding; @size: 0);
-    ._paddings (@name: xs-no-padding; @size: 0);
+    ._paddings (@name: ui-md-no-padding; @size: 0);
+    ._paddings (@name: ui-sm-no-padding; @size: 0);
+    ._paddings (@name: ui-xs-no-padding; @size: 0);
 }
 @media (@xl-start) {
-    ._paddings (@name: xl-no-padding; @size: 0);
+    ._paddings (@name: ui-xl-no-padding; @size: 0);
 }

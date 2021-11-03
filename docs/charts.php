@@ -1,7 +1,7 @@
 <main class="container no-gutter">
     <div class="fixed">
         <div class="row">
-            <div class="col-12 padding-30-v">
+            <div class="col-12 ui-padding-30-v">
 
                 <h3>Line Charts Examples</h3>
                 <div class="row row-gap-lg-v">
@@ -232,12 +232,12 @@
                     </div>
                     <div class="col-12">
                         <div class="ui-card round shadow-lg ui-tabs ui-ease-tabs" data-ui-classes="font-bold">
-                            <div class="ui-card-side padding-10 ui-border-b">
+                            <div class="ui-card-side ui-padding-10 ui-border-b">
 
                                 <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
                                     <button class="ui-btn ui-btn-ghost round">
                                         <span>First Chart</span>
-                                        <svg class="ui-toggle-icon ui-icon margin-5-l"><use href="#angle-down"/></svg>
+                                        <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                                     </button>
                                     <ul class="ui-dropdown-menu round shadow-lg">
                                         <li class="ui-selected">
@@ -248,10 +248,10 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <h4 class="align-l margin-5-v">Multiple Line Charts</h4>
+                                <h4 class="align-l ui-margin-5-v">Multiple Line Charts</h4>
 
                             </div>
-                            <div class="ui-card-side padding-15">
+                            <div class="ui-card-side ui-padding-15">
 
                                 <div class="ui-tab-content ui-open ui-open-ease">
                                     <h5 class="font-bold align-c">First Chart</h5>
@@ -330,7 +330,7 @@
                 </div>
 
             </div>
-            <div class="col-lg-8 push-lg-2 col-12 padding-30-v">
+            <div class="col-lg-8 push-lg-2 col-12 ui-padding-30-v">
 
                 <h3>Donut Chart Examples</h3>
 
@@ -422,7 +422,7 @@
                     </div>
                 </div>
 
-                <div class="padding-10-v align-c lg-align-l xs-align-c">
+                <div class="ui-padding-10-v align-c lg-align-l xs-align-c">
                     <b>Show Title Examples:</b>
                 </div>
 
@@ -511,7 +511,7 @@
                 </div>
 
             </div>
-            <div class="col-lg-8 push-lg-2 col-12 padding-30-v">
+            <div class="col-lg-8 push-lg-2 col-12 ui-padding-30-v">
 
                 <h3>Pie Chart Examples</h3>
 
@@ -589,7 +589,7 @@
                     </div>
                 </div>
 
-                <div class="padding-10-v align-c lg-align-l xs-align-c">
+                <div class="ui-padding-10-v align-c lg-align-l xs-align-c">
                     <b>Show Title Examples:</b>
                 </div>
 

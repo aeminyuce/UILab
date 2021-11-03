@@ -1,10 +1,10 @@
 <main class="container no-gutter">
     <div class="fixed">
         <div class="row">
-            <div class="col-6 padding-30">
+            <div class="col-6 ui-padding-30">
 
                 <h3>Headings</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <h1>H1 Heading <small class="font-color-black-muted">Secondary text</small></h1>
                     <h2>H2 Heading <small class="font-color-black-muted">Secondary text</small></h2>
                     <h3>H3 Heading <small class="font-color-black-muted">Secondary text</small></h3>
@@ -14,7 +14,7 @@
                 </div>
 
                 <h3>Font Colors</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <div class="ui-theme-gray ui-fill-dark-100">
                         <span class="font-color-white">.font-color-white</span>
                         <span class="font-color-white">.font-color-white-50</span>
@@ -32,7 +32,7 @@
                 </div>
 
                 <h3>Font Sizes</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <span class="xx-largest">.xx-largest</span>
                     <span class="x-largest">.x-largest</span>
                     <span class="largest">.largest</span>
@@ -53,7 +53,7 @@
                 </div>
 
                 <h3>Unordered Lists</h4>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <ul>
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -74,7 +74,7 @@
                 </div>
 
                 <h3>Ordered Lists</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <ol>
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -88,7 +88,7 @@
                 </div>
 
                 <h3>Unstyled Lists</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <ul class="list-unstyled">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -109,7 +109,7 @@
                 </div>
 
                 <h3>List Columns</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <h5 class="font-bold">2 Columns</h5>
                     <ul class="list-unstyled list-column-2">
                         <li>Lorem ipsum dolor sit amet</li>
@@ -172,7 +172,7 @@
                 </div>
 
                 <h3>List Gaps (only inline lists)</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <ul class="list-inline list-gap-less">
                         <li>Lorem ipsum</li>
                         <li>dolor sit amet</li>
@@ -195,7 +195,7 @@
                 </div>
 
                 <h3>List Spacers</h3>
-                <div class="row padding-30-b">
+                <div class="row ui-padding-30-b">
                     <div class="col-12">
                         <h5 class="font-bold">With Inline Lists</h5>
                         <ul class="list-inline list-spacer-5">
@@ -289,7 +289,7 @@
 
             </div>
 
-            <div class="col-6 padding-30">
+            <div class="col-6 ui-padding-30">
 
                 <h3>Lead Text</h3>
                 <p class="font-lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
@@ -297,7 +297,7 @@
                 <span class="sp-10"></span>
 
                 <h3>Quotes</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q>
                     <span class="sp-5"></span>
                     <q class="large">Proin tellus justo, blandit non ultrices in, consequat a sem.</q>
@@ -306,7 +306,7 @@
                 </div>
 
                 <h3>Text Elements</h3>
-                <div class="row padding-30-b">
+                <div class="row ui-padding-30-b">
                     <div class="col-6">
                         <mark>Marked Text</mark>
                         <br>
@@ -344,7 +344,7 @@
                 </div>
 
                 <h3>Alignment Classes</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <div class="align-l">.align-l</div>
                     <br>
                     <div class="align-c">.align-c</div>
@@ -358,7 +358,7 @@
                 </div>
 
                 <h3>Text Transformation Classes</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <span class="lowercase">lowercase</span>
                     <br>
                     <span class="uppercase">uppercase</span>
@@ -369,7 +369,7 @@
                 </div>
 
                 <h3>Addresses</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <address>
                         <strong>Twitter, Inc.</strong><br>
                         1355 Market Street, Suite 900<br>
@@ -383,7 +383,7 @@
                 </div>
 
                 <h3>Blockquotes</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <blockquote>
                         <p class="highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                         <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
@@ -399,40 +399,40 @@
                 </div>
 
                 <h3>&lsaquo;hr&rsaquo; Tag</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     Lorem ipsum dolor sit amet.
                     <hr class="hr">
                     Lorem ipsum dolor sit amet.
                 </div>
 
                 <h3>Inline Code</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     For example, <code>&lt;section&gt;</code> should be wrapped as inline.
                 </div>
 
                 <h3>User Input Code</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
                     To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
                 </div>
 
                 <h3>Basic Block Code</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
                 </div>
 
                 <h3>Variables</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
                 </div>
 
                 <h3>Sample Output</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <samp>This text is meant to be treated as sample output from a computer program.</samp>
                 </div>
 
                 <h3>Description Lists</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <dl>
                         <dt>Description lists</dt>
                         <dd>A description list is perfect for defining terms.</dd>
@@ -445,7 +445,7 @@
                 </div>
 
                 <h3>Horizontal Description Lists</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <dl class="dl-horizontal">
                         <dt>Description lists</dt>
                         <dd>A description list is perfect for defining terms.</dd>

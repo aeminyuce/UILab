@@ -9,7 +9,7 @@
             <div class="forms-holder ui-card form-lg ui-tabs shadow-lg ui-ease-tabs">
                 <form id="login" class="ui-tab-content ui-open ui-open-ease" action="#">
 
-                    <h3 class="margin-30-b">Login to continue</h3>
+                    <h3 class="ui-margin-30-b">Login to continue</h3>
                     <p class="highlight font-color-black-muted large">Sign in to create, discover and connect with the global community.</p>
 
                     <label class="form-label font-color-black-50">User Name</label>
@@ -47,14 +47,14 @@
                     </button>
                     <span class="sp-15"></span>
                     <button class="ui-tab ui-btn ui-btn-ghost font-color-black-50 round block ui-ease-btn" data-ui-id="lost-password">
-                        <svg class="ui-icon margin-5-r no-opacity"><use href="#lock"/></svg> Forgot password?
+                        <svg class="ui-icon ui-margin-5-r no-opacity"><use href="#lock"/></svg> Forgot password?
                     </button>
 
                 </form>
 
                 <form id="lost-password" class="ui-tab-content" action="#">
 
-                    <h3 class="margin-30-b">Forgot password?</h3>
+                    <h3 class="ui-margin-30-b">Forgot password?</h3>
                     <p class="highlight font-color-black-muted large">Please enter your email address. You will receive a link to create a new password via email.</p>
 
                     <label class="form-label font-color-black-50">Your email</label>
@@ -71,7 +71,7 @@
                     </button>
                     <span class="sp-15"></span>
                     <button class="ui-tab ui-btn ui-btn-ghost font-color-black-50 round block ui-ease-btn" data-ui-id="login">
-                        <svg class="ui-icon margin-5-r no-opacity"><use href="#long-arrow-left"/></svg> Back to login
+                        <svg class="ui-icon ui-margin-5-r no-opacity"><use href="#long-arrow-left"/></svg> Back to login
                     </button>
 
                 </form>
@@ -85,8 +85,8 @@
                 <div class="full-w set-absolute set-c">
                     <h1 class="hidden-md">Create your account</h1>
                     <p class="x-large font-color-white-muted">Sign up to create, discover and connect with the global community.</p>
-                    <span class="sp-30 margin-10-v"></span>
-                    <a href="?l=sign-up-page" class="login-btn ui-btn ui-btn-lg ui-btn-sm-fluid padding-30-h circle hover-scale hover-shadow ui-ease-btn"><b>SIGN UP NOW</b></a>
+                    <span class="sp-30 ui-margin-10-v"></span>
+                    <a href="?l=sign-up-page" class="login-btn ui-btn ui-btn-lg ui-btn-sm-fluid ui-padding-30-h circle hover-scale hover-shadow ui-ease-btn"><b>SIGN UP NOW</b></a>
                 </div>
 
                 <div class="login-icons ui-icons-black">

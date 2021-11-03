@@ -1,52 +1,52 @@
 <main class="container no-gutter">
     <div class="fixed">
         <div class="row">
-            <div class="col-12 padding-30">
+            <div class="col-12 ui-padding-30">
 
                 <h43Card Example</h4>
-                <div class="padding-30-b">
-                    <div class="ui-card padding-15 round shadow">
-                        <h4 class="margin-15-b">Title</h4>
+                <div class="ui-padding-30-b">
+                    <div class="ui-card ui-padding-15 round shadow">
+                        <h4 class="ui-margin-15-b">Title</h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                     </div>
                 </div>
 
                 <h3>Card Sides</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
 
                     <div class="ui-card round shadow">
-                        <div class="ui-card-side padding-15 ui-border-b">
+                        <div class="ui-card-side ui-padding-15 ui-border-b">
                             <h4><svg class="ui-icon ui-icon-lg"><use href="#user"/></svg>Card Title</h4>
                         </div>
-                        <div class="ui-card-side padding-15">
+                        <div class="ui-card-side ui-padding-15">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.<br>
                             Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus.<br>
                             In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                         </div>
-                        <div class="ui-card-side padding-15 ui-theme-gray ui-fill-light-100">
+                        <div class="ui-card-side ui-padding-15 ui-theme-gray ui-fill-light-100">
                             <h5>Title</h5>
                         </div>
-                        <div class="ui-card-side padding-15">
+                        <div class="ui-card-side ui-padding-15">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.<br>
                             In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                         </div>
-                        <div class="ui-card-side padding-15 ui-theme-gray ui-fill-light-100">
+                        <div class="ui-card-side ui-padding-15 ui-theme-gray ui-fill-light-100">
                             Card Footer
                         </div>
                     </div>
 
                     <div class="ui-card round shadow">
-                        <div class="ui-card-side padding-15 ui-border-b">
+                        <div class="ui-card-side ui-padding-15 ui-border-b">
                             <h4><svg class="ui-icon ui-icon-lg"><use href="#lab"/></svg>Card Title</h4>
                         </div>
-                        <div class="ui-card-side padding-15">
+                        <div class="ui-card-side ui-padding-15">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                         </div>
-                        <div class="ui-card-side padding-15 align-r sm-align-c ui-border-t ui-ease-2nd-btn">
+                        <div class="ui-card-side ui-padding-15 align-r sm-align-c ui-border-t ui-ease-2nd-btn">
                             <form action="#">
-                                <button type="button" class="ui-btn padding-30-h ui-btn-ghost ui-border-dual circle">Cancel</button>
-                                <button type="submit" class="ui-btn padding-30-h circle ui-theme-yellow ui-fill-dark-100">Show Later</button>
-                                <button type="submit" class="ui-btn padding-30-h circle ui-theme-green ui-fill-dark-100">Accept</button>
+                                <button type="button" class="ui-btn ui-padding-30-h ui-btn-ghost ui-border-dual circle">Cancel</button>
+                                <button type="submit" class="ui-btn ui-padding-30-h circle ui-theme-yellow ui-fill-dark-100">Show Later</button>
+                                <button type="submit" class="ui-btn ui-padding-30-h circle ui-theme-green ui-fill-dark-100">Accept</button>
                             </form>
                         </div>
                     </div>
@@ -54,14 +54,14 @@
                 </div>
 
                 <h3>Card Alerts</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
 
-                    <div class="ui-card ui-theme-gray padding-15 round ui-fill-light-300">
+                    <div class="ui-card ui-theme-gray ui-padding-15 round ui-fill-light-300">
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
-                            <div class="col-42 align-c padding-4-v">
+                            <div class="col-42 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl ui-theme-sub ui-color"><use href="#info-circle-fill"/></svg>
                             </div>
                             <div class="row">
@@ -73,17 +73,17 @@
                     </div>
 
                     <div class="ui-card round shadow">
-                        <div class="ui-card-side padding-15 ui-border-b">
+                        <div class="ui-card-side ui-padding-15 ui-border-b">
                             <h4><svg class="ui-icon ui-icon-lg"><use href="#check-badge"/></svg>Card Title</h4>
                         </div>
-                        <div class="ui-card-side padding-15 ui-border-b">
+                        <div class="ui-card-side ui-padding-15 ui-border-b">
 
-                            <div class="ui-card ui-theme-gray padding-15 round ui-fill-light-300">
+                            <div class="ui-card ui-theme-gray ui-padding-15 round ui-fill-light-300">
                             <button class="ui-close-card ui-ease-btn">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                                 <div class="col-static sm-fluid">
-                                    <div class="col-42 padding-4-v align-c">
+                                    <div class="col-42 ui-padding-4-v align-c">
                                         <svg class="ui-icon ui-icon-xl ui-theme-sub ui-color"><use href="#info-circle-fill"/></svg>
                                     </div>
                                     <div class="row">
@@ -98,12 +98,12 @@
                         </div>
                     </div>
 
-                    <div class="ui-card ui-theme-base padding-15 round ui-fill-dark-100">
+                    <div class="ui-card ui-theme-base ui-padding-15 round ui-fill-dark-100">
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
-                            <div class="col-42 align-c padding-4-v">
+                            <div class="col-42 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="row">
@@ -114,12 +114,12 @@
                         </div>
                     </div>
 
-                    <div class="ui-card ui-theme-sub padding-15 round ui-fill-dark-100">
+                    <div class="ui-card ui-theme-sub ui-padding-15 round ui-fill-dark-100">
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
-                            <div class="col-42 align-c padding-4-v">
+                            <div class="col-42 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="row">
@@ -130,12 +130,12 @@
                         </div>
                     </div>
 
-                    <div class="ui-card ui-theme-green padding-15 round ui-fill-dark-100">
+                    <div class="ui-card ui-theme-green ui-padding-15 round ui-fill-dark-100">
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
-                            <div class="col-42 align-c padding-4-v">
+                            <div class="col-42 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="row">
@@ -146,12 +146,12 @@
                         </div>
                     </div>
 
-                    <div class="ui-card ui-theme-yellow padding-15 round ui-fill-dark-100">
+                    <div class="ui-card ui-theme-yellow ui-padding-15 round ui-fill-dark-100">
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
-                            <div class="col-42 align-c padding-4-v">
+                            <div class="col-42 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="row">
@@ -162,12 +162,12 @@
                         </div>
                     </div>
 
-                    <div class="ui-card ui-theme-orange padding-15 round ui-fill-dark-100">
+                    <div class="ui-card ui-theme-orange ui-padding-15 round ui-fill-dark-100">
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
-                            <div class="col-42 align-c padding-4-v">
+                            <div class="col-42 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="row">
@@ -178,12 +178,12 @@
                         </div>
                     </div>
 
-                    <div class="ui-card ui-theme-red padding-15 round ui-fill-dark-100">
+                    <div class="ui-card ui-theme-red ui-padding-15 round ui-fill-dark-100">
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
-                            <div class="col-42 align-c padding-4-v">
+                            <div class="col-42 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="row">
@@ -197,9 +197,9 @@
                 </div>
 
                 <h3>Card Messages</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
 
-                    <div class="ui-card-success padding-15 round shadow">
+                    <div class="ui-card-success ui-padding-15 round shadow">
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
@@ -210,7 +210,7 @@
                         <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
-                    <div class="ui-card-danger padding-15 round shadow">
+                    <div class="ui-card-danger ui-padding-15 round shadow">
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
@@ -221,7 +221,7 @@
                         <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
-                    <div class="ui-card-warning padding-15 round">
+                    <div class="ui-card-warning ui-padding-15 round">
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
@@ -232,7 +232,7 @@
                         <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
-                    <div class="ui-card-info padding-15 round shadow">
+                    <div class="ui-card-info ui-padding-15 round shadow">
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
@@ -247,7 +247,7 @@
 
                 <h4>Cards with Themes</h4>
                 <div class="ui-card round ui-theme-sub ui-fill-light-100 ui-stroke">
-                    <div class="ui-card-side padding-30">
+                    <div class="ui-card-side ui-padding-30">
                         <h4>
                             <svg class="ui-icon ui-icon-xl ui-color"><use href="#help-fill"/></svg>
                             Card Title
@@ -256,16 +256,16 @@
                         <span class="sp-15"></span>
                         <a href="#" class="ui-btn ui-btn-xs-fluid circle ui-fill-dark-100 ui-ease-btn">
                             Outgoing Link
-                            <svg class="ui-icon margin-5-l"><use href="#link"/></svg>
+                            <svg class="ui-icon ui-margin-5-l"><use href="#link"/></svg>
                         </a>
                     </div>
-                    <div class="ui-card-side padding-30-h padding-15-v ui-fill-light-300 align-r xs-align-c">
+                    <div class="ui-card-side ui-padding-30-h ui-padding-15-v ui-fill-light-300 align-r xs-align-c">
                         <a href="#" class="ui-color underline">Card Footer Link</a>
                     </div>
                 </div>
 
                 <div class="ui-card round ui-theme-base ui-fill-light-100 ui-stroke">
-                    <div class="ui-card-side padding-30">
+                    <div class="ui-card-side ui-padding-30">
                         <h4>
                             <svg class="ui-icon ui-icon-xl ui-color"><use href="#help"/></svg>
                             Card Title
@@ -274,15 +274,15 @@
                         <span class="sp-15"></span>
                         <a href="#" class="ui-btn ui-btn-xs-fluid circle ui-fill-dark-100 ui-ease-btn">
                             Outgoing Link
-                            <svg class="ui-icon margin-5-l"><use href="#link"/></svg>
+                            <svg class="ui-icon ui-margin-5-l"><use href="#link"/></svg>
                         </a>
                     </div>
-                    <div class="ui-card-side padding-30-h padding-15-v ui-fill-light-300 align-r xs-align-c">
+                    <div class="ui-card-side ui-padding-30-h ui-padding-15-v ui-fill-light-300 align-r xs-align-c">
                         <a href="#" class="ui-color underline">Card Footer Link</a>
                     </div>
                 </div>
 
-                <div class="ui-card-warning padding-30 round ui-theme-base ui-fill-light-100 ui-stroke">
+                <div class="ui-card-warning ui-padding-30 round ui-theme-base ui-fill-light-100 ui-stroke">
                     <h4>
                         <svg class="ui-icon ui-icon-xl ui-color"><use href="#help-fill"/></svg>
                         Message Title
@@ -291,11 +291,11 @@
                     <span class="sp-15"></span>
                     <a href="#" class="ui-btn ui-btn-xs-fluid circle ui-fill-dark-100 ui-ease-btn">
                         Outgoing Link
-                        <svg class="ui-icon margin-5-l"><use href="#link"/></svg>
+                        <svg class="ui-icon ui-margin-5-l"><use href="#link"/></svg>
                     </a>
                 </div>
 
-                <div class="ui-card-warning padding-30 round ui-theme-green ui-fill-light-100 ui-stroke">
+                <div class="ui-card-warning ui-padding-30 round ui-theme-green ui-fill-light-100 ui-stroke">
                     <h4>
                         <svg class="ui-icon ui-icon-xl ui-color"><use href="#help"/></svg>
                         Message Title
@@ -304,11 +304,11 @@
                     <span class="sp-15"></span>
                     <a href="#" class="ui-btn ui-btn-xs-fluid circle ui-fill-dark-100 ui-ease-btn">
                         Outgoing Link
-                        <svg class="ui-icon margin-5-l"><use href="#link"/></svg>
+                        <svg class="ui-icon ui-margin-5-l"><use href="#link"/></svg>
                     </a>
                 </div>
 
-                <div class="ui-card-warning padding-30 round ui-theme-yellow ui-fill-light-100 ui-stroke">
+                <div class="ui-card-warning ui-padding-30 round ui-theme-yellow ui-fill-light-100 ui-stroke">
                     <h4>
                         <svg class="ui-icon ui-icon-xl ui-color"><use href="#help-fill"/></svg>
                         Message Title
@@ -317,7 +317,7 @@
                     <span class="sp-15"></span>
                     <a href="#" class="ui-btn ui-btn-xs-fluid circle ui-fill-dark-100 ui-ease-btn">
                         Outgoing Link
-                        <svg class="ui-icon margin-5-l"><use href="#link"/></svg>
+                        <svg class="ui-icon ui-margin-5-l"><use href="#link"/></svg>
                     </a>
                 </div>
 

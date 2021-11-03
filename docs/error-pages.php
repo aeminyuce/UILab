@@ -4,9 +4,9 @@
 <main class="container no-gutter">
     <div class="fixed">
         <div class="row">
-            <div class="col-12 padding-30-v">
+            <div class="col-12 ui-padding-30-v">
 
-                <span class="sp-30 margin-30-v"></span>
+                <span class="sp-30 ui-margin-30-v"></span>
 
                 <div class="align-c form-lg">
                     <p class="highlight font-color-red largest font-bold">Error: 404 Page Not Found</p>
@@ -23,7 +23,7 @@
                     </ul>
                 </div>
 
-                <span class="sp-30 margin-30-v padding-30-v"></span>
+                <span class="sp-30 ui-margin-30-v ui-padding-30-v"></span>
 
                 <div class="align-c form-lg">
                     <p class="highlight font-color-yellow largest font-bold">Error: 403 Forbidden</p>
@@ -33,13 +33,13 @@
                         <span class="inline-block">3</span>
                     </p>
                     <p class="highlight x-large">You don't have access to this page.<br>Please contact support if this wasn't supposed to happen.</p>
-                    <a class="font-color-yellow ui-btn ui-btn-ghost ui-border-dual padding-30-h circle ui-ease-btn" href="#">
-                        <svg class="ui-icon margin-5-r no-opacity"><use href="#long-arrow-left"/></svg>
+                    <a class="font-color-yellow ui-btn ui-btn-ghost ui-border-dual ui-padding-30-h circle ui-ease-btn" href="#">
+                        <svg class="ui-icon ui-margin-5-r no-opacity"><use href="#long-arrow-left"/></svg>
                         Go Back
                     </a>
                 </div>
 
-                <span class="sp-30 margin-30-v padding-30-v"></span>
+                <span class="sp-30 ui-margin-30-v ui-padding-30-v"></span>
 
                 <div class="align-c form-lg">
                     <p class="highlight font-color-orange largest font-bold">Error: 500 Unexpected Error</p>
@@ -49,13 +49,13 @@
                         <svg class="ui-icon"><use href="#face-blank"/></svg>
                     </p>
                     <p class="highlight x-large">We are having some issues at the moment.<br>We will have it fixed in no time!</p>
-                    <a class="font-color-orange ui-btn ui-btn-ghost ui-border-dual padding-30-h circle ui-ease-btn" href="#">
-                        <svg class="ui-icon margin-5-r no-opacity"><use href="#long-arrow-left"/></svg>
+                    <a class="font-color-orange ui-btn ui-btn-ghost ui-border-dual ui-padding-30-h circle ui-ease-btn" href="#">
+                        <svg class="ui-icon ui-margin-5-r no-opacity"><use href="#long-arrow-left"/></svg>
                         Go Back
                     </a>
                 </div>
 
-                <span class="sp-30 margin-30-v"></span>
+                <span class="sp-30 ui-margin-30-v"></span>
 
             </div>
         </div>

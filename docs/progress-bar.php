@@ -1,7 +1,7 @@
 <main class="container no-gutter">
     <div class="fixed">
         <div class="row">
-            <div class="col-12 padding-30">
+            <div class="col-12 ui-padding-30">
 
                 <h3>Progress Bar Examples</h3>
 
@@ -18,7 +18,7 @@
                 </div>
 
                 <span class="sp-30"></span>
-                <h5 class="font-bold margin-15-b">Separated Progress Bars:</h5>
+                <h5 class="font-bold ui-margin-15-b">Separated Progress Bars:</h5>
 
                 <div class="ui-progress-bar ui-progress-sm round">
                     <span class="ui-theme-green ui-fill-dark-100" style="width: 45%;"></span>
@@ -36,7 +36,7 @@
                 </div>
 
                 <span class="sp-30"></span>
-                <h5 class="font-bold margin-15-b">Striped Progress Bars:</h5>
+                <h5 class="font-bold ui-margin-15-b">Striped Progress Bars:</h5>
 
                 <div class="ui-progress-bar ui-progress-lg round">
                     <span class="ui-theme-yellow ui-fill-light-300 ui-stripe-light ui-stripe-sm" style="width: 75%;"></span>
@@ -64,7 +64,7 @@
                 </div>
 
                 <span class="sp-30"></span>
-                <h5 class="font-bold margin-15-b">Striped &amp; Animated Progress Bars:</h5>
+                <h5 class="font-bold ui-margin-15-b">Striped &amp; Animated Progress Bars:</h5>
 
                 <div class="ui-progress-bar ui-progress-lg round">
                     <span class="ui-theme-sub ui-fill-light-300 ui-stripe-light ui-animate-progress" style="width: 80%;"></span>

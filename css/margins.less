@@ -15,26 +15,26 @@
 
 each(@increases, {
     @j: unit(@value);
-    ._margins (@name: ~'margin-@{j}'; @size: @value);
+    ._margins (@name: ~'ui-margin-@{j}'; @size: @value);
 });
 
-._margins (@name: no-margin; @size: 0);
+._margins (@name: ui-no-margin; @size: 0);
 
 @media (@lg-start) {
-    ._margins (@name: lg-no-margin; @size: 0);
+    ._margins (@name: ui-lg-no-margin; @size: 0);
 }
 @media (@md-start) and (@md-finish) {
-    ._margins (@name: md-no-margin; @size: 0);
+    ._margins (@name: ui-md-no-margin; @size: 0);
 }
 @media (@sm-start) and (@sm-finish) {
-    ._margins (@name: md-no-margin; @size: 0);
-    ._margins (@name: sm-no-margin; @size: 0);
+    ._margins (@name: ui-md-no-margin; @size: 0);
+    ._margins (@name: ui-sm-no-margin; @size: 0);
 }
 @media (@xs-finish) {
-    ._margins (@name: md-no-margin; @size: 0);
-    ._margins (@name: sm-no-margin; @size: 0);
-    ._margins (@name: xs-no-margin; @size: 0);
+    ._margins (@name: ui-md-no-margin; @size: 0);
+    ._margins (@name: ui-sm-no-margin; @size: 0);
+    ._margins (@name: ui-xs-no-margin; @size: 0);
 }
 @media (@xl-start) {
-    ._margins (@name: xl-no-margin; @size: 0);
+    ._margins (@name: ui-xl-no-margin; @size: 0);
 }

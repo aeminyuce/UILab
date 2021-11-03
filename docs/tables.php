@@ -1,10 +1,10 @@
 <main class="container no-gutter">
     <div class="fixed">
         <div class="row">
-            <div class="col-12 padding-30">
+            <div class="col-12 ui-padding-30">
 
                 <h3>Tables</h3>
-                <table class="ui-table padding-30-b">
+                <table class="ui-table ui-padding-30-b">
                     <caption>Table Caption</caption>
                     <thead>
                         <tr>
@@ -39,7 +39,7 @@
                 <span class="sp-20"></span>
 
                 <h3>No Separated Rows</h3>
-                <table class="ui-table padding-30-b ui-no-separated">
+                <table class="ui-table ui-padding-30-b ui-no-separated">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -73,7 +73,7 @@
                 <span class="sp-20"></span>
 
                 <h3>Striped Rows</h3>
-                <table class="ui-table padding-30-b ui-table-striped">
+                <table class="ui-table ui-padding-30-b ui-table-striped">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -109,7 +109,7 @@
                 <h3>Border Table</h3>
                 <div class="row">
                     <div class="col-6">
-                        <table class="ui-table padding-30-b ui-border ui-border-lg">
+                        <table class="ui-table ui-padding-30-b ui-border ui-border-lg">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -129,7 +129,7 @@
                         </table>
                     </div>
                     <div class="col-6">
-                        <table class="ui-table padding-30-b ui-table-border">
+                        <table class="ui-table ui-padding-30-b ui-table-border">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -149,7 +149,7 @@
                         </table>
                     </div>
                     <div class="col-6">
-                        <table class="ui-table padding-30-b ui-table-border ui-border-dual">
+                        <table class="ui-table ui-padding-30-b ui-table-border ui-border-dual">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -169,7 +169,7 @@
                         </table>
                     </div>
                     <div class="col-6">
-                        <table class="ui-table padding-30-b ui-table-border ui-border-lg">
+                        <table class="ui-table ui-padding-30-b ui-table-border ui-border-lg">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -193,7 +193,7 @@
                 <span class="sp-20"></span>
 
                 <h3>Hover Rows</h3>
-                <table class="ui-table padding-30-b ui-table-hover ui-table-striped ui-ease-table">
+                <table class="ui-table ui-padding-30-b ui-table-hover ui-table-striped ui-ease-table">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -233,7 +233,7 @@
                 <span class="sp-20"></span>
 
                 <h3>Condensed Table</h3>
-                <table class="ui-table padding-30-b ui-table-condensed">
+                <table class="ui-table ui-padding-30-b ui-table-condensed">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -273,7 +273,7 @@
                 <span class="sp-20"></span>
 
                 <h3>Ultra Condensed Table</h3>
-                <table class="ui-table padding-30-b ui-table-ultra-condensed">
+                <table class="ui-table ui-padding-30-b ui-table-ultra-condensed">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -313,7 +313,7 @@
                 <span class="sp-20"></span>
 
                 <h3>Rows Themes</h3>
-                <table class="ui-table padding-30-b ui-table-hover ui-ease-table">
+                <table class="ui-table ui-padding-30-b ui-table-hover ui-ease-table">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -368,7 +368,7 @@
                     </tbody>
                 </table>
 
-                <table class="ui-table padding-30-b ui-table-hover ui-theme-red ui-ease-table">
+                <table class="ui-table ui-padding-30-b ui-table-hover ui-theme-red ui-ease-table">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -399,7 +399,7 @@
                     </tbody>
                 </table>
 
-                <table class="ui-table padding-30-b ui-table-hover ui-theme-sub ui-ease-table">
+                <table class="ui-table ui-padding-30-b ui-table-hover ui-theme-sub ui-ease-table">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -433,7 +433,7 @@
                 <span class="sp-20"></span>
 
                 <h3>Table Sidebar</h3>
-                <table class="ui-table padding-30-b ui-table-sidebar">
+                <table class="ui-table ui-padding-30-b ui-table-sidebar">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -461,7 +461,7 @@
                 <span class="sp-20"></span>
 
                 <h3>Fluid Table</h3>
-                <div class="ui-table-fluid margin-30-b">
+                <div class="ui-table-fluid ui-margin-30-b">
                     <table class="ui-table ui-table-striped">
                         <thead>
                             <tr>
@@ -521,7 +521,7 @@
                 <span class="sp-20"></span>
 
                 <h3>Scroll Table</h3>
-                <div class="ui-table-scroll margin-30-b">
+                <div class="ui-table-scroll ui-margin-30-b">
                     <table class="ui-table ui-table-striped">
                         <thead>
                             <tr>

@@ -4,10 +4,10 @@
 <main class="container no-gutter">
     <div class="fixed">
         <div class="row">
-            <div class="col-12 padding-30">
+            <div class="col-12 ui-padding-30">
 
                 <h3>Forms in Grid System</h3>
-                <div class="row padding-30-b">
+                <div class="row ui-padding-30-b">
                     <div class="col-3">
                         <label class="form-grid">Label</label>
                     </div>
@@ -119,7 +119,7 @@
                 </div>
 
                 <h3>Large Forms</h3>
-                <div class="form-lg padding-30-b">
+                <div class="form-lg ui-padding-30-b">
                     <div class="row">
                         <div class="col-3">
                             <label class="form-grid">Full Name</label>
@@ -196,7 +196,7 @@
 
                 <h3>Autocomplete Forms</h3>
                 <form action="#succesful">
-                    <div class="row padding-30-b">
+                    <div class="row ui-padding-30-b">
 
                         <div class="col-12">
                             <div data-ui-src="json/countries.json" data-ui-val="code" class="ui-autocomplete text text-icon round ui-border-dual ui-ease-form form-inline-xs">
@@ -219,7 +219,7 @@
 
 
                 <h3>Select Forms</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <div class="row">
                         <div class="col-6">
                             <div class="select round ui-border-dual ui-ease-form">
@@ -250,7 +250,7 @@
                         </div>
                     </div>
 
-                    <div class="select-multi margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="select-multi ui-margin-10-b round ui-border-dual ui-ease-form">
                         <select multiple size="6">
                             <option value="">Value 1</option>
                             <option>Value 2</option>
@@ -264,7 +264,7 @@
                             <option>Value 10</option>
                         </select>
                     </div>
-                    <div class="select-multi margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="select-multi ui-margin-10-b round ui-border-dual ui-ease-form">
                         <select multiple size="6">
                             <optgroup label="Title">
                                 <option value="">Select</option>
@@ -281,7 +281,7 @@
                 </div>
 
                 <h3>Dual Multi Selects</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
 
                     <form action="#succesful">
 
@@ -308,7 +308,7 @@
                                 </div>
                                 <div class="col-50 font-color-black-muted align-c ui-icons-lg set-relative">
                                     <div class="set-absolute set-all hidden-md">
-                                        <div class="set-absolute set-c padding-20-h">
+                                        <div class="set-absolute set-c ui-padding-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
                                         </div>
                                     </div>
@@ -346,7 +346,7 @@
                                 </div>
                                 <div class="col-50 font-color-black-muted align-c ui-icons-lg set-relative">
                                     <div class="set-absolute set-all hidden-md">
-                                        <div class="set-absolute set-c padding-20-h">
+                                        <div class="set-absolute set-c ui-padding-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
                                         </div>
                                     </div>
@@ -384,7 +384,7 @@
                                 </div>
                                 <div class="col-50 font-color-black-muted align-c set-relative">
                                     <div class="set-absolute set-all hidden-md">
-                                        <div class="set-absolute set-c ui-icons-lg padding-20-h">
+                                        <div class="set-absolute set-c ui-icons-lg ui-padding-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
                                         </div>
                                     </div>
@@ -410,11 +410,11 @@
                 </div>
 
                 <h3>Textarea Forms</h3>
-                <div class="padding-30-b">
-                    <div class="textarea margin-10-b round ui-border-dual ui-ease-form">
+                <div class="ui-padding-30-b">
+                    <div class="textarea ui-margin-10-b round ui-border-dual ui-ease-form">
                         <textarea placeholder="Placeholder Text"></textarea>
                     </div>
-                    <div class="textarea ui-toggle-textarea margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="textarea ui-toggle-textarea ui-margin-10-b round ui-border-dual ui-ease-form">
                         <textarea placeholder="Toggle textarea example"></textarea>
                     </div>
                     <div class="textarea round ui-border-dual ui-ease-form" data-ui-counter="255">
@@ -423,7 +423,7 @@
                 </div>
 
                 <h3>File Input</h3>
-                <div class="padding-30-b ui-theme-gray">
+                <div class="ui-padding-30-b ui-theme-gray">
                     <div class="file round ui-no-border ui-fill-light-100 ui-ease-form">
                         <input type="file">
                         <span class="ui-btn ui-ease-btn">Browse</span>
@@ -448,7 +448,7 @@
 
                     <span class="sp-10"></span>
 
-                    <label class="form-label padding-10-b">File Input with Large Forms</label>
+                    <label class="form-label ui-padding-10-b">File Input with Large Forms</label>
                     <div class="form-lg ui-ease-1st-form">
                         <div class="file round ui-no-border ui-fill-light-100">
                             <input type="file">
@@ -475,7 +475,7 @@
 
                     <span class="sp-10"></span>
 
-                    <label class="form-label padding-10-b">File Input Like Buttons</label>
+                    <label class="form-label ui-padding-10-b">File Input Like Buttons</label>
                     <div>
                         <div class="file ui-no-border inline-block round ui-ease-form">
                             <input class="cursor-pointer" type="file">
@@ -546,7 +546,7 @@
                 </div>
 
                 <h3>Checkboxes and Radios</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <ul class="list-inline list-gap">
                         <li>
                             <label class="check">
@@ -667,7 +667,7 @@
                 </div>
 
                 <h3>Range Forms</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <input class="range ui-ease-range" type="range" min="0" max="10" value="0">
                     <span class="sp-10"></span>
                     <input class="range ui-theme-base ui-color ui-ease-range" type="range" min="0" max="10" value="2">
@@ -684,11 +684,11 @@
                 </div>
 
                 <h3>Inline Forms</h3>
-                <div class="padding-30-b">
-                    <div class="text margin-10-b round ui-border-dual form-inline ui-ease-form">
+                <div class="ui-padding-30-b">
+                    <div class="text ui-margin-10-b round ui-border-dual form-inline ui-ease-form">
                         <input type="text">
                     </div>
-                    <div class="select margin-10-b round ui-border-dual form-inline ui-ease-form">
+                    <div class="select ui-margin-10-b round ui-border-dual form-inline ui-ease-form">
                         <svg class="ui-icon"><use href="#angle-down"/></svg>
                         <select>
                             <option value="">Select</option>
@@ -696,17 +696,17 @@
                             <option>Second</option>
                         </select>
                     </div>
-                    <div class="textarea ui-toggle-textarea margin-10-b round ui-border-dual form-inline ui-ease-form">
+                    <div class="textarea ui-toggle-textarea ui-margin-10-b round ui-border-dual form-inline ui-ease-form">
                         <textarea placeholder="Textarea"></textarea>
                     </div>
 
                     <span class="sp-15"></span>
 
                     <h5 class="font-color-black-muted">Responsive Inline Forms</h5>
-                    <div class="text margin-10-b round ui-border-dual form-inline-xs ui-ease-form">
+                    <div class="text ui-margin-10-b round ui-border-dual form-inline-xs ui-ease-form">
                         <input type="text">
                     </div>
-                    <div class="select margin-10-b round ui-border-dual form-inline-xs ui-ease-form">
+                    <div class="select ui-margin-10-b round ui-border-dual form-inline-xs ui-ease-form">
                         <svg class="ui-icon"><use href="#angle-down"/></svg>
                         <select>
                             <option value="">Select</option>
@@ -714,18 +714,18 @@
                             <option>Second</option>
                         </select>
                     </div>
-                    <div class="textarea ui-toggle-textarea margin-10-b round ui-border-dual form-inline-xs ui-ease-form">
+                    <div class="textarea ui-toggle-textarea ui-margin-10-b round ui-border-dual form-inline-xs ui-ease-form">
                         <textarea placeholder="Textarea"></textarea>
                     </div>
                 </div>
 
                 <h3>Form Icons</h3>
-                <div class="padding-30-b">
-                    <div class="text text-icon-l margin-10-b round ui-border-dual ui-ease-form">
+                <div class="ui-padding-30-b">
+                    <div class="text text-icon-l ui-margin-10-b round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#search"/></svg>
                         <input type="text" placeholder="Left icon">
                     </div>
-                    <div class="text text-icon margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text text-icon ui-margin-10-b round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
                         <input type="text" placeholder="Right icon">
                     </div>
@@ -737,13 +737,13 @@
 
                     <span class="sp-30"></span>
 
-                    <label class="form-label padding-10-b">Form Icons with Large Forms</label>
+                    <label class="form-label ui-padding-10-b">Form Icons with Large Forms</label>
                     <div class="form-lg">
-                        <div class="text text-icon-l margin-10-b round ui-border-dual ui-ease-form">
+                        <div class="text text-icon-l ui-margin-10-b round ui-border-dual ui-ease-form">
                             <svg class="ui-icon"><use href="#search"/></svg>
                             <input type="text" placeholder="Left icon">
                         </div>
-                        <div class="text text-icon margin-10-b round ui-border-dual ui-ease-form">
+                        <div class="text text-icon ui-margin-10-b round ui-border-dual ui-ease-form">
                             <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
                             <input type="text" placeholder="Right icon">
                         </div>
@@ -756,22 +756,22 @@
                 </div>
 
                 <h3>Clear with Form Icons</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <form action="#succesful">
-                        <div class="text text-icon margin-10-b round ui-border-dual has-clear ui-ease-form">
+                        <div class="text text-icon ui-margin-10-b round ui-border-dual has-clear ui-ease-form">
                             <button type="button" class="clear-form">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                             <input type="text" value="Defined value example">
                         </div>
-                        <div class="text text-icon margin-10-b round ui-border-dual has-clear ui-ease-form">
+                        <div class="text text-icon ui-margin-10-b round ui-border-dual has-clear ui-ease-form">
                             <button type="button" class="clear-form">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                             <input type="text">
                         </div>
-                        <label class="form-label padding-10-b">Clear with Large Forms</label>
-                        <div class="form-lg margin-10-b ui-ease-1st-form">
+                        <label class="form-label ui-padding-10-b">Clear with Large Forms</label>
+                        <div class="form-lg ui-margin-10-b ui-ease-1st-form">
                             <div class="text text-icon round ui-border-dual has-clear">
                                 <button type="button" class="clear-form">
                                     <svg class="ui-icon"><use href="#remove"/></svg>
@@ -784,7 +784,7 @@
                 </div>
 
                 <h3>Submit with Form Icons</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <form action="#succesful">
                         <div class="text text-icon round ui-border-dual ui-ease-form">
                             <button type="submit">
@@ -796,7 +796,7 @@
                 </div>
 
                 <h3>Forms with Actions</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <div class="row row-gap-sm-v no-fluid">
                         <div class="col-6">
                             <label class="form-label">Label</label>
@@ -805,7 +805,7 @@
                             <a class="small font-color-black-muted underline" href="#">Top Right Link</a>
                         </div>
                     </div>
-                    <div class="text margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text ui-margin-10-b round ui-border-dual ui-ease-form">
                         <input type="text">
                     </div>
 
@@ -817,7 +817,7 @@
                             <a class="ui-btn ui-btn-xs font-color-black-muted round ui-ease-btn">Button</a>
                         </div>
                     </div>
-                    <div class="text margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text ui-margin-10-b round ui-border-dual ui-ease-form">
                         <input type="text">
                     </div>
 
@@ -829,7 +829,7 @@
                             <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                                 <button class="ui-btn ui-btn-xs ui-btn-ghost font-color-black-muted round">
                                     Dropdown Button
-                                    <svg class="ui-toggle-icon ui-icon margin-3-l"><use href="#angle-down"/></svg>
+                                    <svg class="ui-toggle-icon ui-icon ui-margin-3-l"><use href="#angle-down"/></svg>
                                 </button>
                                 <ul class="ui-dropdown-menu round shadow-lg">
                                     <li><a href="#">Dropdown Link</a></li>
@@ -845,11 +845,11 @@
                 </div>
 
                 <h3>Form Holders</h3>
-                <div class="row padding-30-b">
+                <div class="row ui-padding-30-b">
                     <div class="col-12">
                         <label class="form-label">Form Holder with Grid System</label>
                         <span class="sp-10"></span>
-                        <div class="form-holder row no-row-gap margin-10-b">
+                        <div class="form-holder row no-row-gap ui-margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text round ui-ease-form">
@@ -873,7 +873,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder row no-row-gap margin-10-b">
+                        <div class="form-holder row no-row-gap ui-margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text round ui-border-dual ui-ease-form">
@@ -897,7 +897,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder row no-row-gap margin-10-b">
+                        <div class="form-holder row no-row-gap ui-margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text circle ui-ease-form">
@@ -921,7 +921,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder row no-row-gap margin-10-b">
+                        <div class="form-holder row no-row-gap ui-margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text circle ui-border-dual ui-ease-form">
@@ -947,8 +947,8 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <label class="form-label padding-10-b">Form Holder with Large Forms</label>
-                        <div class="form-holder form-lg row no-row-gap margin-10-b">
+                        <label class="form-label ui-padding-10-b">Form Holder with Large Forms</label>
+                        <div class="form-holder form-lg row no-row-gap ui-margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text round ui-ease-form">
@@ -972,7 +972,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder form-lg row no-row-gap margin-10-b">
+                        <div class="form-holder form-lg row no-row-gap ui-margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text round ui-border-dual ui-ease-form">
@@ -996,7 +996,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder form-lg row no-row-gap margin-10-b">
+                        <div class="form-holder form-lg row no-row-gap ui-margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text circle ui-ease-form">
@@ -1020,7 +1020,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder form-lg row no-row-gap margin-10-b">
+                        <div class="form-holder form-lg row no-row-gap ui-margin-10-b">
 
                             <div class="col-5 col-xs-4">
                                 <div class="text circle ui-border-dual ui-ease-form">
@@ -1046,7 +1046,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 no-padding-v">
+                    <div class="col-12 ui-no-padding-v">
                         <label class="form-label">Form Holders with Static Grid</label>
                     </div>
                     <div class="col-6">
@@ -1295,7 +1295,7 @@
                 </div>
 
                 <h3>Special Forms</h3>
-                <div class="row padding-30-b">
+                <div class="row ui-padding-30-b">
                     <div class="col-3">
                         <label class="form-grid" >Number Form</label>
                     </div>
@@ -1373,7 +1373,7 @@
                 </div>
 
                 <h3>Required Forms</h3>
-                <div class="padding-30-b">
+                <div class="ui-padding-30-b">
                     <form action="#succesful" onsubmit="return ui.alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
                         <div class="row">
                             <div class="col-3">
@@ -1505,7 +1505,7 @@
                                 <label class="form-grid">Required with textarea forms and min length.</label>
                             </div>
                             <div class="col-9">
-                                <div class="textarea margin-10-b round ui-border-dual ui-ease-form">
+                                <div class="textarea ui-margin-10-b round ui-border-dual ui-ease-form">
                                     <textarea class="required" placeholder="Write your comments." minlength="10"></textarea>
                                 </div>
                                 <p class="required-msg">Please, write your comments more than 10 characters.</p>
@@ -1644,22 +1644,22 @@
                 </div>
 
                 <h3>Forms in Dark Themes</h3>
-                <div class="padding-15 margin-30-b round ui-theme-base ui-fill-dark-100">
+                <div class="ui-padding-15 ui-margin-30-b round ui-theme-base ui-fill-dark-100">
 
-                    <div class="text form-light margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text form-light ui-margin-10-b round ui-border-dual ui-ease-form">
                         <input type="text" placeholder="Placeholder">
                     </div>
-                    <div class="text text-icon form-light margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text text-icon form-light ui-margin-10-b round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#search"/></svg>
                         <input type="text" placeholder="With text icon">
                     </div>
-                    <div class="text error form-light margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text error form-light ui-margin-10-b round ui-border-dual ui-ease-form">
                         <input type="text" placeholder="Error Form">
                     </div>
-                    <div class="text error form-light margin-10-b round ui-no-border ui-ease-form">
+                    <div class="text error form-light ui-margin-10-b round ui-no-border ui-ease-form">
                         <input type="text" placeholder="Error Form">
                     </div>
-                    <div class="text warning form-light margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text warning form-light ui-margin-10-b round ui-border-dual ui-ease-form">
                         <input type="text" placeholder="Warning Form">
                     </div>
                     <div class="text warning form-light round ui-no-border ui-ease-form">
@@ -1668,14 +1668,14 @@
 
                     <span class="sp-30"></span>
 
-                    <div class="text form-disabled form-light margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text form-disabled form-light ui-margin-10-b round ui-border-dual ui-ease-form">
                         <input type="text" disabled value="Disabled Input">
                     </div>
-                    <div class="textarea form-disabled form-light margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="textarea form-disabled form-light ui-margin-10-b round ui-border-dual ui-ease-form">
                         <textarea disabled>Disabled Textarea</textarea>
                     </div>
 
-                    <div class="text form-readonly form-light margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text form-readonly form-light ui-margin-10-b round ui-border-dual ui-ease-form">
                         <input type="text" readonly value="Readonly Input">
                     </div>
                     <div class="textarea form-readonly form-light round ui-border-dual ui-ease-form">
@@ -1702,7 +1702,7 @@
                     <span class="sp-30"></span>
 
                     <label class="form-label">Form Holder Example</label>
-                    <div class="form-holder row no-row-gap no-fluid margin-10-b">
+                    <div class="form-holder row no-row-gap no-fluid ui-margin-10-b">
 
                         <div class="col-5">
                             <div class="text round ui-border-dual form-light ui-ease-form">
@@ -1726,7 +1726,7 @@
                         </div>
 
                     </div>
-                    <div class="form-holder row no-row-gap no-fluid margin-10-b error">
+                    <div class="form-holder row no-row-gap no-fluid ui-margin-10-b error">
 
                         <div class="col-5">
                             <div class="text round ui-border-dual form-light ui-ease-form">
@@ -1750,7 +1750,7 @@
                         </div>
 
                     </div>
-                    <div class="form-holder row no-row-gap no-fluid margin-10-b warning">
+                    <div class="form-holder row no-row-gap no-fluid ui-margin-10-b warning">
 
                         <div class="col-5">
                             <div class="text round ui-border-dual form-light ui-ease-form">
@@ -1803,7 +1803,7 @@
 
                     <form action="#successful">
 
-                        <div class="text text-icon form-light margin-10-b round ui-border-dual ui-ease-form">
+                        <div class="text text-icon form-light ui-margin-10-b round ui-border-dual ui-ease-form">
                             <button type="submit">
                                 <svg class="ui-icon"><use href="#search"/></svg>
                             </button>
@@ -1831,16 +1831,16 @@
                     </div>
                     <div class="col-9 ui-ease-1st-form">
 
-                        <div class="text margin-10-b">
+                        <div class="text ui-margin-10-b">
                             <input type="text">
                         </div>
-                        <div class="text error margin-10-b">
+                        <div class="text error ui-margin-10-b">
                             <input type="text" placeholder="Error Form">
                         </div>
-                        <div class="text warning margin-10-b">
+                        <div class="text warning ui-margin-10-b">
                             <input type="text" placeholder="Warning Form">
                         </div>
-                        <div class="select margin-10-b">
+                        <div class="select ui-margin-10-b">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select</option>
@@ -1849,10 +1849,10 @@
                             </select>
                         </div>
 
-                        <div class="textarea margin-10-b">
+                        <div class="textarea ui-margin-10-b">
                             <textarea placeholder="Textarea"></textarea>
                         </div>
-                        <div class="textarea ui-toggle-textarea margin-10-b">
+                        <div class="textarea ui-toggle-textarea ui-margin-10-b">
                             <textarea placeholder="Toggle Textarea"></textarea>
                         </div>
 
@@ -1885,16 +1885,16 @@
                     </div>
                     <div class="col-9 ui-ease-1st-form">
 
-                        <div class="text margin-10-b shadow-in ui-no-border">
+                        <div class="text ui-margin-10-b shadow-in ui-no-border">
                             <input type="text">
                         </div>
-                        <div class="text error margin-10-b shadow-in ui-no-border">
+                        <div class="text error ui-margin-10-b shadow-in ui-no-border">
                             <input type="text" placeholder="Error Form">
                         </div>
-                        <div class="text warning margin-10-b shadow-in ui-no-border">
+                        <div class="text warning ui-margin-10-b shadow-in ui-no-border">
                             <input type="text" placeholder="Warning Form">
                         </div>
-                        <div class="select margin-10-b shadow-in ui-no-border">
+                        <div class="select ui-margin-10-b shadow-in ui-no-border">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select</option>
@@ -1903,10 +1903,10 @@
                             </select>
                         </div>
 
-                        <div class="textarea margin-10-b shadow-in ui-no-border">
+                        <div class="textarea ui-margin-10-b shadow-in ui-no-border">
                             <textarea placeholder="Textarea"></textarea>
                         </div>
-                        <div class="textarea ui-toggle-textarea margin-10-b shadow-in ui-no-border">
+                        <div class="textarea ui-toggle-textarea ui-margin-10-b shadow-in ui-no-border">
                             <textarea placeholder="Toggle Textarea"></textarea>
                         </div>
 
@@ -1939,16 +1939,16 @@
                     </div>
                     <div class="col-9 ui-ease-1st-form ui-theme-gray">
 
-                        <div class="text margin-10-b round ui-no-border ui-fill-light-100">
+                        <div class="text ui-margin-10-b round ui-no-border ui-fill-light-100">
                             <input type="text">
                         </div>
-                        <div class="text error margin-10-b round ui-no-border ui-fill-light-100">
+                        <div class="text error ui-margin-10-b round ui-no-border ui-fill-light-100">
                             <input type="text" placeholder="Error Form">
                         </div>
-                        <div class="text warning margin-10-b round ui-no-border ui-fill-light-100">
+                        <div class="text warning ui-margin-10-b round ui-no-border ui-fill-light-100">
                             <input type="text" placeholder="Warning Form">
                         </div>
-                        <div class="select margin-10-b round ui-no-border ui-fill-light-100">
+                        <div class="select ui-margin-10-b round ui-no-border ui-fill-light-100">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select</option>
@@ -1957,10 +1957,10 @@
                             </select>
                         </div>
 
-                        <div class="textarea margin-10-b round ui-no-border ui-fill-light-100">
+                        <div class="textarea ui-margin-10-b round ui-no-border ui-fill-light-100">
                             <textarea placeholder="Textarea"></textarea>
                         </div>
-                        <div class="textarea ui-toggle-textarea margin-10-b round ui-no-border ui-fill-light-100">
+                        <div class="textarea ui-toggle-textarea ui-margin-10-b round ui-no-border ui-fill-light-100">
                             <textarea placeholder="Toggle Textarea"></textarea>
                         </div>
 

@@ -7,14 +7,14 @@
 <main class="container">
     <div class="row">
         <div class="col-12">
-            <div class="padding-30 sm-no-padding align-c">
+            <div class="ui-padding-30 ui-sm-no-padding align-c">
 
-                <h1>SVG Icons<small class="ui-total margin-5-v block opacity-half"></small></h1>
+                <h1>SVG Icons<small class="ui-total ui-margin-5-v block opacity-half"></small></h1>
 
                 <div class="row">
                     <div class="col-4">
-                        <h4 class="align-c margin-10-b">Change Weight</h4>
-                        <div class="ui-icon-modifiers ui-btn-holder form-lg margin-20-b ui-theme-sub form-lg ui-ease-1st-btn">
+                        <h4 class="align-c ui-margin-10-b">Change Weight</h4>
+                        <div class="ui-icon-modifiers ui-btn-holder form-lg ui-margin-20-b ui-theme-sub form-lg ui-ease-1st-btn">
                             <button data-ui-tooltip="b" data-ui-only="desktop" title="Black" data-ui-weight="black" class="ui-btn round">
                                 <svg class="ui-icon ui-icon-black no-opacity"><use href="#remove"/></svg>
                             </button>
@@ -36,8 +36,8 @@
                         </div>
                     </div>
                     <div class="col-8">
-                        <h4 class="align-c margin-10-b">Change Size</h4>
-                        <div class="ui-icon-modifiers ui-btn-holder form-lg margin-20-b ui-theme-sub form-lg ui-ease-1st-btn">
+                        <h4 class="align-c ui-margin-10-b">Change Size</h4>
+                        <div class="ui-icon-modifiers ui-btn-holder form-lg ui-margin-20-b ui-theme-sub form-lg ui-ease-1st-btn">
                             <button data-ui-size="xxl" class="ui-btn round ui-fill-dark-100">XXL</button>
                             <button data-ui-size="xl" class="ui-btn round">XL</button>
                             <button data-ui-size="lg" class="ui-btn round">L</button>

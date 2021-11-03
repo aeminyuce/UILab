@@ -1,7 +1,7 @@
 <main class="container no-gutter">
     <div class="fixed">
         <div class="row">
-            <div class="col-12 padding-30-v">
+            <div class="col-12 ui-padding-30-v">
 
                 <h3 class="align-c">2018</h3>
                 <ul class="ui-timeline large ui-theme-base ui-color">
@@ -81,7 +81,7 @@
                     <li class="ui-color"><span class="ui-card font-color-black align-r">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="sp-30 margin-15-v"></span>
+                <span class="sp-30 ui-margin-15-v"></span>
 
                 <h3 class="align-c">All Time</h3>
                 <ul class="ui-timeline ui-hide-h-lines large ui-theme-sub">
@@ -93,7 +93,7 @@
                     <li><span class="ui-card round ui-fill-dark-100 shadow-lg">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="sp-30 margin-15-v"></span>
+                <span class="sp-30 ui-margin-15-v"></span>
 
                 <h3>Activity</h3>
                 <ul class="ui-timeline ui-side-l large ui-theme-base ui-color">
@@ -113,7 +113,7 @@
                     </li>
                 </ul>
 
-                <span class="sp-30 margin-15-v"></span>
+                <span class="sp-30 ui-margin-15-v"></span>
 
                 <h3>Activity</h3>
                 <ul class="ui-timeline ui-side-l large">
@@ -125,7 +125,7 @@
                     <li class="ui-theme-green ui-color"><span class="ui-card font-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="sp-30 margin-15-v"></span>
+                <span class="sp-30 ui-margin-15-v"></span>
 
                 <h3>Activity</h3>
                 <ul class="ui-timeline ui-side-l ui-hide-h-lines large">
@@ -137,7 +137,7 @@
                     <li class="ui-theme-green ui-color"><span class="ui-card font-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="sp-30 margin-15-v"></span>
+                <span class="sp-30 ui-margin-15-v"></span>
 
                 <h3>Activity</h3>
                 <ul class="ui-timeline ui-side-l ui-hide-h-lines large">
@@ -149,7 +149,7 @@
                     <li>Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                 </ul>
 
-                <span class="sp-30 margin-15-v"></span>
+                <span class="sp-30 ui-margin-15-v"></span>
 
                 <h3>Activity</h3>
                 <ul class="ui-timeline ui-side-l ui-hide-lines large">

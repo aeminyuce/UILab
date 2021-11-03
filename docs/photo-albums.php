@@ -1,14 +1,14 @@
 <main class="container no-gutter">
     <div class="fixed">
         <div class="row">
-            <div class="col-static sm-fluid padding-30-v">
-                <div class="col-250 padding-30 order-sm-last sm-align-c ui-theme-sub">
+            <div class="col-static sm-fluid ui-padding-30-v">
+                <div class="col-250 ui-padding-30 order-sm-last sm-align-c ui-theme-sub">
                     <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid align-l block circle ui-fill-dark-100 ui-ease-btn">
                         Create New
                         <svg class="ui-icon right"><use href="#plus"/></svg>
                     </a>
                     <span class="sp-30"></span>
-                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd large font-bold list-spacer-30 padding-10 ui-ease-2nd-layout">
+                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd large font-bold list-spacer-30 ui-padding-10 ui-ease-2nd-layout">
                         <li><a class="ui-color" href="#">Summer Holiday</a></li>
                         <li><a href="#">Autumn Comes</a></li>
                         <li><a href="#">Travelling</a></li>
@@ -39,16 +39,16 @@
                     </ul>
                 </div>
                 <div class="row">
-                    <div class="col-12 padding-30">
+                    <div class="col-12 ui-padding-30">
 
                         <h2 class="no-margin-b">Photo Albums</h2>
                         <div class="row">
                             <div class="col-6">
-                                <h4 class="margin-10-t">Summer Holiday</h4>
+                                <h4 class="ui-margin-10-t">Summer Holiday</h4>
                             </div>
                             <div class="col-6 align-r xs-align-c">
                                 <span class="font-color-black-muted large inline-block">23 Jun - 18 Aug, 2019</span>
-                                <img class="ui-img-photo ui-img-photo-sm circle margin-15-l" src="img/profile-image.jpg" alt="">
+                                <img class="ui-img-photo ui-img-photo-sm circle ui-margin-15-l" src="img/profile-image.jpg" alt="">
                             </div>
                         </div>
 
