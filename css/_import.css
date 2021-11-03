@@ -8220,51 +8220,51 @@ button.ui-dialog-custom:focus {
   }
 }
 /* grid list */
-.ui-ease-grid-list .grid-list-content {
+.ui-ease-grid-list .ui-grid-list-content {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
-.grid-list-content:not([class*="col-"]) {
+.ui-grid-list-content:not([class*="col-"]) {
   padding: 10px;
   border-bottom: solid 1px hsl(0, 0%, 86.7%);
   border-bottom: solid 1px var(--ui-grid-list-border);
 }
-.grid-list-content:before,
-.grid-list-content:after {
+.ui-grid-list-content:before,
+.ui-grid-list-content:after {
   content: "";
   display: table;
 }
-.grid-list-content:after {
+.ui-grid-list-content:after {
   clear: both;
 }
-.grid-list-content.even {
+.ui-grid-list-content.ui-even {
   background-color: hsla(0, 0%, 0%, 0.035);
   background-color: var(--ui-grid-list-stripe-bg);
 }
-.grid-list-content.checked {
+.ui-grid-list-content.ui-checked {
   background-color: hsla(42, 100%, 45%, 0.15) !important;
 }
-.grid-list > .row,
-.grid-list .grid-list-content > .row {
+.ui-grid-list > .row,
+.ui-grid-list .ui-grid-list-content > .row {
   margin-left: inherit;
   margin-right: inherit;
 }
-.grid-list:not(.grid-list-showed-all) .grid-list-content:not(.showed) {
+.ui-grid-list:not(.ui-grid-list-showed-all) .ui-grid-list-content:not(.ui-showed) {
   display: none;
 }
-.grid-list.grid-list-showed-all.grid-list-filtered .grid-list-content:not(.filtered) {
+.ui-grid-list.ui-grid-list-showed-all.ui-grid-list-filtered .ui-grid-list-content:not(.ui-filtered) {
   display: none;
 }
-.grid-list.grid-hover .grid-list-content.even:not([class*="ui-fill-"]) {
+.ui-grid-list.ui-grid-hover .ui-grid-list-content.ui-even:not([class*="ui-fill-"]) {
   background-color: hsla(0, 0%, 0%, 0.035);
   background-color: var(--ui-grid-list-stripe-bg);
 }
-.ui-desktop .grid-list.grid-hover .grid-list-content:not([class*="ui-fill-"]):hover,
-.ui-desktop .grid-list.grid-hover .grid-list-content:not([class*="ui-fill-"]):nth-child(odd):hover {
+.ui-desktop .ui-grid-list.ui-grid-hover .ui-grid-list-content:not([class*="ui-fill-"]):hover,
+.ui-desktop .ui-grid-list.ui-grid-hover .ui-grid-list-content:not([class*="ui-fill-"]):nth-child(odd):hover {
   background-color: hsla(0, 0%, 0%, 0.06);
   background-color: var(--ui-grid-list-hover-bg);
 }
-.grid-list .grid-list-paging button:not(.ui-btn) {
+.ui-grid-list .ui-grid-list-paging button:not(.ui-btn) {
   color: inherit;
   background-color: transparent;
   border: 0;

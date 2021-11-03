@@ -6,39 +6,39 @@
 ui.gridList = {
 
     // targets
-    target: 'grid-list',
-    targetLoaded: 'grid-list-loaded',
+    target: 'ui-grid-list',
+    targetLoaded: 'ui-grid-list-loaded',
 
     // main classnames
-    nameContainer: 'grid-list-container',
+    nameContainer: 'ui-grid-list-container',
 
-    nameListContent: 'grid-list-content',
-    nameListStriped: 'grid-list-striped',
-    nameListShowAll: 'grid-list-showed-all',
-    nameListFiltered: 'grid-list-filtered',
+    nameListContent: 'ui-grid-list-content',
+    nameListStriped: 'ui-grid-list-striped',
+    nameListShowAll: 'ui-grid-list-showed-all',
+    nameListFiltered: 'ui-grid-list-filtered',
 
-    nameFilter: 'grid-list-filter',
-    nameListShow: 'grid-list-show',
+    nameFilter: 'ui-grid-list-filter',
+    nameListShow: 'ui-grid-list-show',
 
-    nameCheckAll: 'grid-list-check-all',
-    nameCheck: 'grid-list-check',
+    nameCheckAll: 'ui-grid-list-check-all',
+    nameCheck: 'ui-grid-list-check',
 
-    nameTotal: 'grid-list-total',
-    namePaging: 'grid-list-paging',
+    nameTotal: 'ui-grid-list-total',
+    namePaging: 'ui-grid-list-paging',
 
     // helper classnames
-    nameActive: 'active',
-    nameEven: 'even',
+    nameActive: 'ui-active',
+    nameEven: 'ui-even',
 
-    nameShow: 'showed',
-    nameFiltered: 'filtered',
-    nameChecked: 'checked',
+    nameShow: 'ui-showed',
+    nameFiltered: 'ui-filtered',
+    nameChecked: 'ui-checked',
 
-    nameAsc: 'asc',
-    nameDesc: 'desc',
+    nameAsc: 'ui-asc',
+    nameDesc: 'ui-desc',
 
-    namePrev: 'prev',
-    nameNext: 'next',
+    namePrev: 'ui-prev',
+    nameNext: 'ui-next',
 
     // outer classnames
     nameIcon: 'icon',
@@ -57,8 +57,9 @@ ui.gridList = {
     // values
     valueSplit : '|',
     customLetters : { "İ": "i", "I": "ı", "Ş": "ş", "Ğ": "ğ", "Ü": "ü", "Ö": "ö", "Ç": "ç" },
-    listIdNaming: 'ui-gridList-',
+
     sortTypeNumber: 'number',
+    listIdNaming: 'ui-gridList-',
 
     // storages
     storageTest: 'ui-gridList-test',
