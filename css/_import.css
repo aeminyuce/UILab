@@ -6674,7 +6674,8 @@ html:not(.ui-ie) .ui-steps-bar li {
   background-color: var(--ui-steps-border);
   left: -50%;
 }
-.ui-steps-bar li > span {
+.ui-steps-bar li > span,
+.ui-steps-bar.ui-steps-icon li > .icon {
   width: 18px;
   height: 18px;
   display: block;
