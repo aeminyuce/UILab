@@ -56,13 +56,13 @@
             &:after { &:extend(.ui-timeline.ui-color > li:after); }
         }
 
-        & > [class*="img-photo"] { margin-left: @timeline-card-padding; position: relative; z-index: 1; transform: translateY(50%); }
+        & > [class*="ui-img-photo"] { margin-left: @timeline-card-padding; position: relative; z-index: 1; transform: translateY(50%); }
         & > .ui-card {
             ._bg-var(body-bg); padding: @timeline-card-padding; display: block; position: relative;
 
             &:not([class*="ui-fill"]),a,button { ._color-var(black); }
         }
-        & > .img-photo {
+        & > .ui-img-photo {
             & + .ui-card { padding-top: ((@photo-img-default / 2) + round((@timeline-card-padding / 2))); }
             &-lg + .ui-card { padding-top: ((@photo-img-lg / 2) + round((@timeline-card-padding / 2))); }
             &-sm + .ui-card { padding-top: ((@photo-img-sm / 2) + round((@timeline-card-padding / 2))); }

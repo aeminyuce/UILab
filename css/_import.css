@@ -6139,7 +6139,7 @@ label.custom {
   height: 12px;
   stroke-width: 38px;
 }
-.list-group [class*="has-photo"] [class*="img-photo"] {
+.list-group [class*="has-photo"] [class*="ui-img-photo"] {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -6420,73 +6420,73 @@ label.custom {
   }
 }
 /* photo images */
-.photos-holder {
+.ui-photos-holder {
   vertical-align: middle;
   display: inline-block;
 }
-.photos-holder > *:not(.ui-btn):not(:first-child) {
+.ui-photos-holder > *:not(.ui-btn):not(:first-child) {
   margin-left: -15px;
 }
-.photos-holder [class*="img-photo"] {
+.ui-photos-holder [class*="ui-img-photo"] {
   border-color: hsl(0, 0%, 98%);
   border-color: var(--ui-body-bg);
 }
-.ui-dropdown .photos-holder [class*="img-photo"] {
+.ui-dropdown .ui-photos-holder [class*="ui-img-photo"] {
   border-color: hsl(0, 0%, 100%);
   border-color: var(--ui-highlighted);
 }
-.ui-card .photos-holder [class*="img-photo"] {
+.ui-card .ui-photos-holder [class*="ui-img-photo"] {
   border-color: hsl(0, 0%, 100%);
   border-color: var(--ui-card-bg);
 }
-[class*="img-photo"] {
+[class*="ui-img-photo"] {
   text-align: center;
   vertical-align: middle;
   position: relative;
 }
-[class*="img-photo"]:not(img) {
+[class*="ui-img-photo"]:not(img) {
   background-color: hsla(0, 0%, 0%, 0.08);
   background-color: var(--ui-img-photo-bg);
   display: inline-block;
 }
-[class*="img-photo"]:not(img) > span,
-[class*="img-photo"]:not(img) > svg {
+[class*="ui-img-photo"]:not(img) > span,
+[class*="ui-img-photo"]:not(img) > svg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.img-photo {
+.ui-img-photo {
   font-size: 16px;
   width: 50px;
   height: 50px;
 }
-.img-photo-lg {
+.ui-img-photo-lg {
   font-size: 24px;
   width: 80px;
   height: 80px;
 }
-.img-photo-lg .icon {
+.ui-img-photo-lg .icon {
   width: 34px;
   height: 34px;
   stroke-width: 16px;
 }
-.img-photo-sm {
+.ui-img-photo-sm {
   font-size: 14px;
   width: 42px;
   height: 42px;
 }
-.img-photo-sm .icon {
+.ui-img-photo-sm .icon {
   width: 18px;
   height: 18px;
   stroke-width: 32px;
 }
-.img-photo-xs {
+.ui-img-photo-xs {
   font-size: 12px;
   width: 32px;
   height: 32px;
 }
-.img-photo-xs .icon {
+.ui-img-photo-xs .icon {
   width: 14px;
   height: 14px;
   stroke-width: 36px;
@@ -6813,7 +6813,7 @@ header.ui-sticky-static {
   border: solid 2px var(--ui-timeline-line-bg);
   border-radius: 50%;
 }
-.ui-timeline > li > [class*="img-photo"] {
+.ui-timeline > li > [class*="ui-img-photo"] {
   margin-left: 15px;
   position: relative;
   z-index: 1;
@@ -6832,16 +6832,16 @@ header.ui-sticky-static {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
 }
-.ui-timeline > li > .img-photo + .ui-card {
+.ui-timeline > li > .ui-img-photo + .ui-card {
   padding-top: 33px;
 }
-.ui-timeline > li > .img-photo-lg + .ui-card {
+.ui-timeline > li > .ui-img-photo-lg + .ui-card {
   padding-top: 48px;
 }
-.ui-timeline > li > .img-photo-sm + .ui-card {
+.ui-timeline > li > .ui-img-photo-sm + .ui-card {
   padding-top: 29px;
 }
-.ui-timeline > li > .img-photo-xs + .ui-card {
+.ui-timeline > li > .ui-img-photo-xs + .ui-card {
   padding-top: 24px;
 }
 .ui-timeline:not(.ui-hide-h-lines) > li:before,

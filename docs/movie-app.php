@@ -111,7 +111,7 @@
                                 </button>
                             </span>
                             <span class="inline-block right no-float-sm">
-                                <img class="img-photo img-photo-sm circle margin-10-l sm-no-margin right" src="img/profile-image.jpg" alt="">
+                                <img class="ui-img-photo ui-img-photo-sm circle margin-10-l sm-no-margin right" src="img/profile-image.jpg" alt="">
                                 <span class="margin-3-t inline-block hidden-sm">aeminyuce</span>
                                 <span class="small font-color-black-50 block hidden-sm">Premium</span>
                             </span>
@@ -138,10 +138,10 @@
                                         <h2 class="font-bold">Related Video</h2>
                                         <b class="large">Captain Marvel (2019)</b>
                                         <p class="margin-10-v">After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.</p>
-                                        <div class="photos-holder padding-15-h hover-scale-more-2nd ui-ease-2nd-layout">
-                                            <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image.jpg" alt=""></a>
-                                            <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image2.jpg" alt=""></a>
-                                            <a href="#"><img class="img-photo ui-border-lg circle" src="img/profile-image3.jpg" alt=""></a>
+                                        <div class="ui-photos-holder padding-15-h hover-scale-more-2nd ui-ease-2nd-layout">
+                                            <a href="#"><img class="ui-img-photo ui-border-lg circle" src="img/profile-image.jpg" alt=""></a>
+                                            <a href="#"><img class="ui-img-photo ui-border-lg circle" src="img/profile-image2.jpg" alt=""></a>
+                                            <a href="#"><img class="ui-img-photo ui-border-lg circle" src="img/profile-image3.jpg" alt=""></a>
                                             <a class="ui-btn ui-btn-lg circle ui-ease-btn" href="#">+38</a>
                                         </div>
                                     </div>

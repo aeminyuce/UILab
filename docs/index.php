@@ -203,10 +203,12 @@
                         <span class="sp-15"></span>
                         <div class="form-lg ui-ease-1st-btn">
                             <a href="?p=icons" class="ui-btn ui-btn-xs-fluid padding-30-h margin-5-h xs-no-margin-h circle ui-fill-dark-300">
-                                <svg class="icon margin-5-r ui-color"><use href="#draw"/></svg> See Icons
+                                <svg class="icon margin-5-r"><use href="#draw"/></svg>
+                                See Icons
                             </a>
                             <a href="?p=download" class="ui-btn ui-btn-xs-fluid padding-30-h margin-5-h xs-no-margin-h circle ui-fill-dark-100">
-                                Download <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
+                                Download
+                                <svg class="icon margin-5-l"><use href="#long-arrow-right"/></svg>
                             </a>
                         </div>
                     </div>

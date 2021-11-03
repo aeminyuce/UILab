@@ -48,7 +48,7 @@
                             </div>
                             <div class="col-6 align-r xs-align-c">
                                 <span class="font-color-black-muted large inline-block">23 Jun - 18 Aug, 2019</span>
-                                <img class="img-photo img-photo-sm circle margin-15-l" src="img/profile-image.jpg" alt="">
+                                <img class="ui-img-photo ui-img-photo-sm circle margin-15-l" src="img/profile-image.jpg" alt="">
                             </div>
                         </div>
 

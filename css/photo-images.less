@@ -17,13 +17,13 @@
     --ui-img-photo-bg: @img-photo-bg-dark;
 }
 
-.photos-holder {
+.ui-photos-holder {
     vertical-align: middle; display: inline-block;
 
     & > * {
         &:not(.ui-btn):not(:first-child) { margin-left: -@img-photo-over-size; }
     }
-    [class*="img-photo"] {
+    [class*="ui-img-photo"] {
         ._border-color-var(body-bg);
 
         .ui-dropdown & { ._border-color-var(highlighted); }
@@ -31,7 +31,7 @@
     }
 }
 
-[class*="img-photo"] {
+[class*="ui-img-photo"] {
     text-align: center; vertical-align: middle; position: relative;
 
     &:not(img) {
@@ -41,7 +41,7 @@
     }
 }
 
-.img-photo {
+.ui-img-photo {
     font-size: @large; width: @photo-img-default; height: @photo-img-default;
 
     &-lg {
