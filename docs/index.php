@@ -139,7 +139,7 @@
                         <a title="GitHub" href="https://dribbble.com/aeminyuce" class="ui-btn ui-btn-square ui-btn-ghost circle" target="_blank">
                             <svg class="icon"><use href="#dribbble"/></svg>
                         </a>
-                        <button class="ui-btn ui-btn-square ui-btn-ghost circle show-mobile-menu-r visible-md">
+                        <button class="ui-btn ui-btn-square ui-btn-ghost circle ui-show-mobile-menu-r visible-md">
                             <svg class="icon"><use href="#bars-right"/></svg>
                         </button>
                     </div>
@@ -153,7 +153,7 @@
 
             <!-- sidebar -->
             <div class="col-250 ui-theme-gray ui-fill-light-200 hidden-md">
-                <div class="align-l sm-align-c form-lg add-mobile-menu-r">
+                <div class="align-l sm-align-c form-lg ui-add-mobile-menu-r">
                     <h3 class="margin-15">Components</h3>
                     <ul class="list-unstyled block-2nd ui-ease-2nd-button">
                         <li><a class="ui-btn ui-btn-ghost padding-15-h" href="?p=alerts">Alerts</a></li>
@@ -295,14 +295,14 @@
     </main>
 
     <!-- mobile menu -->
-    <div class="mobile-menu show-r ui-theme-base ui-ease-layout ui-ease-in-out">
-        <div class="mobile-menu-title padding-15-v ui-fill-dark-100">
-            <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost circle ui-ease-btn close-mobile-menu">
+    <div class="ui-mobile-menu ui-show-r ui-theme-base ui-ease-layout ui-ease-in-out">
+        <div class="ui-mobile-menu-title padding-15-v ui-fill-dark-100">
+            <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost circle ui-ease-btn ui-close-mobile-menu">
                 <svg class="icon no-opacity"><use href="#remove"/></svg>
             </button>
             <img src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">
         </div>
-        <div class="mobile-menu-content no-padding ui-theme-gray ui-fill-light-100 scroll-v"></div>
+        <div class="ui-mobile-menu-content no-padding ui-theme-gray ui-fill-light-100 scroll-v"></div>
     </div>
 <?php
     }
