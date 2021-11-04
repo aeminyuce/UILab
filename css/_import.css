@@ -8414,42 +8414,42 @@ button.ui-dialog-custom:focus {
   transition-property: opacity;
   transition-duration: 0.15s;
 }
-.ui-photo-gallery {
+ul.ui-photo-gallery {
   list-style: none;
   display: block;
 }
-.ui-photo-gallery:before,
-.ui-photo-gallery:after {
+ul.ui-photo-gallery:before,
+ul.ui-photo-gallery:after {
   content: "";
   display: table;
 }
-.ui-photo-gallery:after {
+ul.ui-photo-gallery:after {
   clear: both;
 }
 .ui-photo-gallery > li {
   overflow: hidden;
   float: left;
 }
-.ui-photo-gallery > li .ui-img img {
+.ui-photo-gallery > li img {
   width: auto;
   height: 100%;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
 }
-.ui-photo-gallery > li .ui-img img.ui-img-v {
+.ui-photo-gallery > li img.ui-img-v {
   width: 100%;
   height: auto;
   top: 50%;
   left: 0;
   transform: translate(0, -50%);
 }
-.ui-photo-gallery .ui-img {
+.ui-photo-gallery a.ui-img {
   display: inline-block;
   overflow: hidden;
   position: relative;
 }
-.ui-photo-gallery .ui-img:after {
+.ui-photo-gallery a.ui-img:after {
   content: "";
   display: block;
   position: absolute;
@@ -8460,18 +8460,18 @@ button.ui-dialog-custom:focus {
   z-index: 1;
   opacity: 0;
 }
-.ui-photo-gallery .ui-img:not(.ui-has-info) {
+.ui-photo-gallery a.ui-img:not(.ui-has-info) {
   background: hsla(0, 0%, 0%, 0.25);
 }
-.ui-photo-gallery .ui-img:not(.ui-has-info):after {
+.ui-photo-gallery a.ui-img:not(.ui-has-info):after {
   background-color: hsla(0, 0%, 100%, 0.25);
 }
-.ui-photo-gallery .ui-img.ui-has-info:after,
-.ui-photo-gallery .ui-img.ui-has-info.ui-touch-info:after {
+.ui-photo-gallery a.ui-img.ui-has-info:after,
+.ui-photo-gallery a.ui-img.ui-has-info.ui-touch-info:after {
   background-color: hsla(0, 0%, 0%, 0.65);
 }
-.ui-photo-gallery .ui-img.ui-has-info > span,
-.ui-photo-gallery .ui-img.ui-has-info.ui-touch-info > span {
+.ui-photo-gallery a.ui-img.ui-has-info > span,
+.ui-photo-gallery a.ui-img.ui-has-info.ui-touch-info > span {
   color: hsl(0, 0%, 100%);
   text-align: left;
   overflow: hidden;
@@ -8484,16 +8484,16 @@ button.ui-dialog-custom:focus {
   z-index: 2;
   opacity: 0;
 }
-.ui-desktop .ui-photo-gallery .ui-img.ui-has-info:hover > span,
-.ui-photo-gallery .ui-img.ui-has-info.ui-touch-info > span {
+.ui-desktop .ui-photo-gallery a.ui-img.ui-has-info:hover > span,
+.ui-photo-gallery a.ui-img.ui-has-info.ui-touch-info > span {
   opacity: 1;
 }
-.ui-photo-gallery .ui-img.ui-show-info:after,
-.ui-photo-gallery .ui-img.ui-show-info > span {
+.ui-photo-gallery a.ui-img.ui-show-info:after,
+.ui-photo-gallery a.ui-img.ui-show-info > span {
   opacity: 1;
 }
-.ui-desktop .ui-photo-gallery .ui-img:hover:after,
-.ui-photo-gallery .ui-img.ui-touch-info:after {
+.ui-desktop .ui-photo-gallery a.ui-img:hover:after,
+.ui-photo-gallery a.ui-img.ui-touch-info:after {
   opacity: 1;
 }
 .ui-photo-preview {
@@ -8622,13 +8622,13 @@ button.ui-dialog-custom:focus {
   .ui-photo-gallery > li {
     width: 20%;
   }
-  .ui-photo-gallery > li .ui-img {
+  .ui-photo-gallery > li a.ui-img {
     height: 208px;
   }
   .ui-photo-gallery.ui-has-cover > li:first-child {
     width: 40%;
   }
-  .ui-photo-gallery.ui-has-cover > li:first-child .ui-img {
+  .ui-photo-gallery.ui-has-cover > li:first-child a.ui-img {
     height: 416px;
   }
   .ui-photo-preview > img:not(.ui-img-v):not(.ui-preview-zoom) {
@@ -8645,8 +8645,8 @@ button.ui-dialog-custom:focus {
   }
 }
 @media (min-width: 768px) {
-  .ui-photo-gallery .ui-img.ui-has-info > span,
-  .ui-photo-gallery .ui-img.ui-has-info.ui-touch-info > span {
+  .ui-photo-gallery a.ui-img.ui-has-info > span,
+  .ui-photo-gallery a.ui-img.ui-has-info.ui-touch-info > span {
     padding: 20px;
   }
   .ui-preview-info {
@@ -8658,8 +8658,8 @@ button.ui-dialog-custom:focus {
   }
 }
 @media (max-width: 767px) {
-  .ui-photo-gallery .ui-img.ui-has-info > span,
-  .ui-photo-gallery .ui-img.ui-has-info.ui-touch-info > span {
+  .ui-photo-gallery a.ui-img.ui-has-info > span,
+  .ui-photo-gallery a.ui-img.ui-has-info.ui-touch-info > span {
     padding: 10px;
   }
   .ui-photo-gallery > li {
@@ -8679,8 +8679,8 @@ button.ui-dialog-custom:focus {
   }
 }
 @media (max-width: 620px) {
-  .ui-photo-gallery .ui-img.ui-has-info > span,
-  .ui-photo-gallery .ui-img.ui-has-info.ui-touch-info > span {
+  .ui-photo-gallery a.ui-img.ui-has-info > span,
+  .ui-photo-gallery a.ui-img.ui-has-info.ui-touch-info > span {
     font-size: 14px !important;
   }
   .ui-photo-gallery > li .ui-img {
@@ -8694,7 +8694,7 @@ button.ui-dialog-custom:focus {
   }
 }
 @media (max-width: 480px) {
-  .ui-photo-gallery > li .ui-img {
+  .ui-photo-gallery > li a.ui-img {
     height: 121.33333333px;
   }
   .ui-photo-preview > img.ui-img-v:not(.ui-preview-zoom) {
