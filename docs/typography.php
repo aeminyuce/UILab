@@ -301,6 +301,13 @@
                     Aliquam eros ante, dignissim eget hendrerit eu, volutpat in mauris. Nam dapibus varius ultrices. Aliquam erat volutpat. Nullam sit amet nunc et tellus fermentum pretium id a arcu. Sed vel lacus lacinia, lobortis massa congue, porta neque.
                 </p>
 
+                <h3>Condensed Text</h3>
+                <p class="font-condensed highlight">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat gravida posuere. Etiam luctus ex vitae diam tempor, a egestas magna posuere. Vestibulum faucibus ex dolor, at tempor ante iaculis vel. Nulla facilisi. Ut non nisl eget orci placerat lobortis.
+                    <br><br>
+                    Aliquam eros ante, dignissim eget hendrerit eu, volutpat in mauris. Nam dapibus varius ultrices. Aliquam erat volutpat. Nullam sit amet nunc et tellus fermentum pretium id a arcu. Sed vel lacus lacinia, lobortis massa congue, porta neque.
+                </p>
+
                 <span class="sp-10"></span>
 
                 <h3>Quotes</h3>

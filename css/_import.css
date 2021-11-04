@@ -3525,6 +3525,9 @@ a {
 .font-readable {
   line-height: 1.66em;
 }
+.font-condensed {
+  line-height: 1.2em !important;
+}
 .xx-smallest {
   font-size: 7px !important;
 }
@@ -3669,9 +3672,6 @@ h6 {
 .initialism {
   font-size: 90%;
   text-transform: uppercase;
-}
-.no-line-height {
-  line-height: normal !important;
 }
 .word-break-all {
   word-break: break-all;

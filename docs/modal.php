@@ -266,21 +266,21 @@
 
             <div class="row xs-fluid ui-icons-xxl block-2nd ui-icons-no-opacity hover-t-more-2nd ui-icons-margin-5-v ui-theme-base form-lg ui-ease-2nd-btn">
                 <div class="col-4 ui-padding-10-b">
-                    <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#news"/></svg>
                         <span class="x-large block ui-margin-5-t">News</span>
                         <span class="font-color-white-50">589</span>
                     </a>
                 </div>
                 <div class="col-4 ui-padding-10-b">
-                    <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#calendar-check"/></svg>
                         <span class="x-large block ui-margin-5-t">Events</span>
                         <span class="font-color-white-50">219</span>
                     </a>
                 </div>
                 <div class="col-4 ui-padding-10-b">
-                    <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#files"/></svg>
                         <span class="x-large block ui-margin-5-t">Documents</span>
                         <span class="font-color-white-50">701</span>

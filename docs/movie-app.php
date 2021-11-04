@@ -440,42 +440,42 @@
 
             <div class="row no-fluid ui-icons-xxl block-2nd ui-icons-no-opacity ui-icons-margin-5-v hover-t-more-2nd ui-theme-base ui-ease-2nd-btn">
                 <div class="col-4 ui-padding-10-b">
-                    <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#tv"/></svg>
                         <span class="x-large block ui-margin-5-t">TV Shows</span>
                         <span class="font-color-black-muted">1024</span>
                     </a>
                 </div>
                 <div class="col-4 ui-padding-10-b">
-                    <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#film"/></svg>
                         <span class="x-large block ui-margin-5-t">Films</span>
                         <span class="font-color-black-muted">775</span>
                     </a>
                 </div>
                 <div class="col-4 ui-padding-10-b">
-                    <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#trophy-star"/></svg>
                         <span class="x-large block ui-margin-5-t">Sports</span>
                         <span class="font-color-black-muted">316</span>
                     </a>
                 </div>
                 <div class="col-4 ui-padding-10-b">
-                    <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#music"/></svg>
                         <span class="x-large block ui-margin-5-t">Concerts</span>
                         <span class="font-color-black-muted">589</span>
                     </a>
                 </div>
                 <div class="col-4 ui-padding-10-b">
-                    <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#face-smile"/></svg>
                         <span class="x-large block ui-margin-5-t">Comedy</span>
                         <span class="font-color-black-muted">219</span>
                     </a>
                 </div>
                 <div class="col-4 ui-padding-10-b">
-                    <a class="ui-btn ui-btn-multi no-line-height round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#video"/></svg>
                         <span class="x-large block ui-margin-5-t">Others</span>
                         <span class="font-color-black-muted">701</span>
