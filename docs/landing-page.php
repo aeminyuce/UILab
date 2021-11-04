@@ -120,7 +120,7 @@
 
                             </div>
                         </div>
-                        <div class="col-450 ui-padding-15-v ui-padding-10-h">
+                        <div class="col-500 ui-padding-15-v ui-padding-10-h">
 
                             <div class="banner-slogan ui-padding-15 set-relative">
                                 <div class="align-c ui-padding-15 set-relative shadow-lg">
@@ -158,7 +158,7 @@
 
                             </div>
                         </div>
-                        <div class="col-450 ui-padding-15-v ui-padding-10-h">
+                        <div class="col-500 ui-padding-15-v ui-padding-10-h">
 
                             <div class="banner-slogan ui-padding-15 set-relative">
                                 <div class="align-c ui-padding-15 set-relative shadow-lg">
@@ -196,7 +196,7 @@
 
                             </div>
                         </div>
-                        <div class="col-450 ui-padding-15-v ui-padding-10-h">
+                        <div class="col-500 ui-padding-15-v ui-padding-10-h">
 
                             <div class="banner-slogan ui-padding-15 set-relative">
                                 <div class="align-c ui-padding-15 set-relative shadow-lg">
@@ -698,10 +698,12 @@
                         <a class="ui-img ui-has-info ui-show-info" href="img/agriculture/md01.jpg">
                             <img src="img/agriculture/md01.jpg" alt="">
                             <span class="x-large">
-                                <svg class="ui-icon ui-icon-xxl left ui-margin-20-r hidden-md ui-color"><use href="#trees"/></svg>
-                                <b>Sed nunc mauris, auctor tristique libero non tristique.</b>
-                                <span class="font-color-white-muted ui-margin-15-t block hidden-md">
-                                    Nullam mollis molestie magna nec tincidunt. Phasellus mattis aliquet ex, vel gravida dui elementum ut. Ut euismod nisi in tellus luctus dictum et ut nulla. Sed scelerisque rutrum dui, et suscipit diam sagittis quis. Quisque dapibus varius ornare.
+                                <span class="scroll-v ui-margin-20 set-absolute set-all">
+                                    <svg class="ui-icon ui-icon-xxl left ui-margin-20-r hidden-md ui-color"><use href="#trees"/></svg>
+                                    <b>Sed nunc mauris, auctor tristique libero non tristique.</b>
+                                    <span class="font-color-white-muted ui-margin-15-t block">
+                                        Nullam mollis molestie magna nec tincidunt. Phasellus mattis aliquet ex, vel gravida dui elementum ut. Ut euismod nisi in tellus luctus dictum et ut nulla. Sed scelerisque rutrum dui, et suscipit diam sagittis quis. Quisque dapibus varius ornare.
+                                    </span>
                                 </span>
                             </span>
                         </a>
@@ -782,7 +784,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-450 ui-padding-10 xs-align-c">
+                    <div class="col-500 ui-padding-10 xs-align-c">
                         <p class="font-color-black-50 x-large ui-margin-30-b">
                             <span class="sp-15"></span>
                             <b class="font-color-black">Cras non sagittis arcu, eget viverra nunc.</b>
@@ -809,8 +811,8 @@
     <div class="fixed ui-padding-30-v sm-align-c">
         <div class="row">
             <div class="col-static">
-                <div class="row">
-                    <div class="col-4 sm-fluid">
+                <div class="row sm-fluid">
+                    <div class="col-4">
                         <h4 class="font-color-white-50 ui-margin-30-b">Customer Service</h4>
                         <ul class="list-unstyled list-spacer-10 hoverline-2nd x-large">
                             <li><a href="#">Order Status</a></li>
@@ -822,7 +824,7 @@
                             <li><a href="#">Tax Notice</a></li>
                         </ul>
                     </div>
-                    <div class="col-4 sm-fluid">
+                    <div class="col-4">
                         <h4 class="font-color-white-50 ui-margin-30-b">Who We Are</h4>
                         <ul class="list-unstyled list-spacer-10 hoverline-2nd x-large">
                             <li><a href="#">Good Works</a></li>
@@ -833,7 +835,7 @@
                             <li><a href="#">Careers</a></li>
                         </ul>
                     </div>
-                    <div class="col-4 sm-fluid">
+                    <div class="col-4">
                         <h4 class="font-color-white-50 ui-margin-30-b">Quick Links</h4>
                         <ul class="list-unstyled list-spacer-10 hoverline-2nd x-large">
                             <li><a href="#">Educater &amp; Landscaper</a></li>
@@ -844,12 +846,12 @@
                         <span class="sp-20 visible-sm"></span>
                     </div>
                 </div>
-                <div class="col-450 ui-padding-10">
+                <div class="col-500 ui-padding-10">
 
                     <div class="footer-social ui-padding-15 ui-icons-no-opacity">
                         <div class="ui-card ui-padding-30 shadow-lg ui-theme-farmer ui-fill-dark-100">
                             <h4 class="ui-margin-15-b">Social</h4>
-                            <div class="font-color-black form-lg ui-ease-1st-btn">
+                            <div class="align-c form-lg ui-ease-1st-btn">
                                 <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
                                     <svg class="ui-icon"><use href="#facebook"/></svg>
                                 </a>

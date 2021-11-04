@@ -57,9 +57,11 @@
                                     <a class="ui-img ui-has-info ui-show-info" href="img/image_01.jpg">
                                         <img src="img/image_01.jpg" alt="">
                                         <span>
-                                            <span class="x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                                            <br><br>
-                                            Sed nec erat vel libero malesuada accumsan. Nam efficitur augue eu turpis maximus commodo. Sed posuere lacus non ipsum pretium consequat.
+                                            <span class="scroll-v ui-margin-15 set-absolute set-all">
+                                                <span class="x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                <br><br>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat gravida posuere. Etiam luctus ex vitae diam tempor, a egestas magna posuere. Vestibulum faucibus ex dolor, at tempor ante iaculis vel. Nulla facilisi. Ut non nisl eget orci placerat lobortis. Aliquam eros ante, dignissim eget hendrerit eu, volutpat in mauris. Nam dapibus varius ultrices. Aliquam erat volutpat. Nullam sit amet nunc et tellus fermentum pretium id a arcu. Sed vel lacus lacinia, lobortis massa congue, porta neque. Vestibulum bibendum scelerisque mauris, ut tristique metus luctus in. Donec ultrices odio sem, ac tincidunt massa eleifend in.
+                                            </span>
                                         </span>
                                     </a>
                                 </li>
