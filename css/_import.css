@@ -3493,7 +3493,7 @@ a {
 }
 .font-lead {
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.66em;
   margin-bottom: 20px;
 }
 .font-bold {
@@ -3521,6 +3521,9 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+.font-readable {
+  line-height: 1.66em;
 }
 .xx-smallest {
   font-size: 7px !important;
@@ -3729,6 +3732,7 @@ kbd {
 pre,
 xmp {
   color: hsl(0, 0%, 100%);
+  line-height: 1.66em;
   min-height: 42px;
   background-color: hsl(220, 8%, 22%);
   padding: 10px !important;
@@ -4941,6 +4945,7 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
   border-bottom: solid 1px hsla(0, 0%, 100%, 0.045);
 }
 .textarea textarea {
+  line-height: 1.66em;
   vertical-align: top;
   width: 100%;
   overflow: auto;

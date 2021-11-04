@@ -94,7 +94,7 @@ body,a { ._color-var(black); }
 }
 
 .font- {
-    &lead { font-size: @lead-size; line-height: 1.4; margin-bottom: @highlight-space; }
+    &lead { font-size: @lead-size; line-height: @line-height-readable; margin-bottom: @highlight-space; }
     &bold { font-weight: @font-bold !important; }
     &semibold { font-weight: @font-semibold !important; }
     &regular { font-weight: @font-normal !important; }
@@ -103,6 +103,7 @@ body,a { ._color-var(black); }
     &italic { font-style: italic !important; }
     &overline { text-decoration: line-through; }
     &ellipsis { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+    &readable { line-height: @line-height-readable;}
 }
 
 .xx-smallest { font-size: @xx-smallest !important; }
@@ -181,7 +182,7 @@ code { ._color-var(code-color); font-size: 90%; padding: 2px 4px !important; ._b
 kbd { color: @white; font-size: 90%; background-color: @pre-bg; padding: 2px 4px !important; border-radius: 3px; }
 
 pre,xmp {
-    color: @white; min-height: @btn-default; background-color: @pre-bg; padding: 10px !important; overflow-x: auto !important; overflow-y: auto !important; display: block;
+    color: @white; line-height: @line-height-readable; min-height: @btn-default; background-color: @pre-bg; padding: 10px !important; overflow-x: auto !important; overflow-y: auto !important; display: block;
 
     &:not(:last-child) { margin-bottom: @highlight-space; }
     &.scroll-v { max-height: @pre-max-height; }
