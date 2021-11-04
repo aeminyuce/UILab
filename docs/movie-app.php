@@ -133,11 +133,11 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-12 ui-padding-30-l ui-no-padding-v ui-md-no-padding">
+                                    <div class="col-12 col-lg-8 ui-padding-30-l ui-no-padding-v ui-md-no-padding">
                                         <span class="sp-15 visible-md"></span>
                                         <h2 class="font-bold">Related Video</h2>
                                         <b class="large">Captain Marvel (2019)</b>
-                                        <p class="ui-margin-10-v">After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.</p>
+                                        <p class="ui-margin-10-v font-readable">After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.</p>
                                         <div class="ui-photos-holder ui-padding-15-h hover-scale-more-2nd ui-ease-2nd-layout">
                                             <a href="#"><img class="ui-img-photo ui-border-lg circle" src="img/profile-image.jpg" alt=""></a>
                                             <a href="#"><img class="ui-img-photo ui-border-lg circle" src="img/profile-image2.jpg" alt=""></a>
@@ -417,7 +417,7 @@
 
         <form action="#successful">
             <h2>Search</h2>
-            <p class="highlight large font-color-white-50 xs-align-c">Search for movies, TV shows...</p>
+            <p class="highlight large font-color-white-50 xs-align-c font-readable">Search for movies, TV shows...</p>
 
             <div class="col-static no-fluid">
                 <div class="row no-row-gap-h">

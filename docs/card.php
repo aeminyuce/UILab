@@ -7,7 +7,9 @@
                 <div class="ui-padding-30-b">
                     <div class="ui-card ui-padding-15 round shadow">
                         <h4 class="ui-margin-15-b">Title</h4>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
+                        <p class="font-readable">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
+                        </p>
                     </div>
                 </div>
 
@@ -18,15 +20,15 @@
                         <div class="ui-card-side ui-padding-15 ui-border-b">
                             <h4><svg class="ui-icon ui-icon-lg"><use href="#user"/></svg>Card Title</h4>
                         </div>
-                        <div class="ui-card-side ui-padding-15">
+                        <div class="ui-card-side ui-padding-15 font-readable">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.<br>
                             Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus.<br>
                             In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                         </div>
                         <div class="ui-card-side ui-padding-15 ui-theme-gray ui-fill-light-100">
-                            <h5>Title</h5>
+                            <h4>Separated Title</h4>
                         </div>
-                        <div class="ui-card-side ui-padding-15">
+                        <div class="ui-card-side ui-padding-15 font-readable">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.<br>
                             In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                         </div>
@@ -39,7 +41,7 @@
                         <div class="ui-card-side ui-padding-15 ui-border-b">
                             <h4><svg class="ui-icon ui-icon-lg"><use href="#lab"/></svg>Card Title</h4>
                         </div>
-                        <div class="ui-card-side ui-padding-15">
+                        <div class="ui-card-side ui-padding-15 font-readable">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                         </div>
                         <div class="ui-card-side ui-padding-15 align-r sm-align-c ui-border-t ui-ease-2nd-btn">
@@ -93,7 +95,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.</p>
+                            <p class="font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.</p>
 
                         </div>
                     </div>

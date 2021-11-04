@@ -112,7 +112,7 @@
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
-                                <p class="highlight xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                                <p class="highlight xx-large font-color-white-50 font-readable">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-fill-dark-100 ui-ease-btn">
                                     <svg class="ui-icon ui-margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
@@ -128,7 +128,7 @@
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#factory"/></svg>
                                     <span class="sp-30 hidden-md"></span>
                                     <h3 class="font-bold xx-large">Long term investment</h3>
-                                    <p class="highlight x-large">Consider terms that have long term investment program.</p>
+                                    <p class="highlight x-large">Our consider terms that have long term investment program nowZ.</p>
                                     <a href="#" class="ui-btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
                                         <svg class="ui-icon ui-margin-5-l"><use href="#long-arrow-right"/></svg>
@@ -150,7 +150,7 @@
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
-                                <p class="highlight xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                                <p class="highlight xx-large font-color-white-50 font-readable">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-fill-dark-100 ui-ease-btn">
                                     <svg class="ui-icon ui-margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
@@ -166,7 +166,7 @@
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#network"/></svg>
                                     <span class="sp-30"></span>
                                     <h3 class="font-bold xx-large">Connect with Our Farmers</h3>
-                                    <p class="highlight x-large">Consider terms that connect with our farmers program.</p>
+                                    <p class="highlight x-large">Our consider terms that have long term investment program now.</p>
                                     <a href="#" class="ui-btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
                                         <svg class="ui-icon ui-margin-5-l"><use href="#long-arrow-right"/></svg>
@@ -188,7 +188,7 @@
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
-                                <p class="highlight xx-large font-color-white-50">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
+                                <p class="highlight xx-large font-color-white-50 font-readable">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-fill-dark-100 ui-ease-btn">
                                     <svg class="ui-icon ui-margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
@@ -204,7 +204,7 @@
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#user-circle"/></svg>
                                     <span class="sp-30"></span>
                                     <h3 class="font-bold xx-large">Social Impact Investment</h3>
-                                    <p class="highlight x-large">Consider terms that have social impact investment program.</p>
+                                    <p class="highlight x-large">Our consider terms that have long term investment program now.</p>
                                     <a href="#" class="ui-btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
                                         <svg class="ui-icon ui-margin-5-l"><use href="#long-arrow-right"/></svg>
@@ -372,7 +372,7 @@
                                 <b class="font-color-black-muted ui-margin-15-b block">Company</b>
 
                                 <img class="img-fluid ui-margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
-                                <span class="font-color-black-50 large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
+                                <span class="font-color-black-50 font-readable">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
                             <span class="small font-color-black-muted ui-border-t ui-padding-10 block inline-block-1st">
@@ -396,7 +396,7 @@
                                 <b class="font-color-black-muted ui-margin-15-b block">Company</b>
 
                                 <img class="img-fluid ui-margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
-                                <span class="font-color-black-50 large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
+                                <span class="font-color-black-50 font-readable">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
                             <span class="small font-color-black-muted ui-border-t ui-padding-10 block inline-block-1st">
@@ -420,7 +420,7 @@
                                 <b class="font-color-black-muted ui-margin-15-b block">Company</b>
 
                                 <img class="img-fluid ui-margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
-                                <span class="font-color-black-50 large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
+                                <span class="font-color-black-50 font-readable">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
                             <span class="small font-color-black-muted ui-border-t ui-padding-10 block inline-block-1st">
@@ -444,7 +444,7 @@
                                 <b class="font-color-black-muted ui-margin-15-b block">Company</b>
 
                                 <img class="img-fluid ui-margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
-                                <span class="font-color-black-50 large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
+                                <span class="font-color-black-50 font-readable">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
                             <span class="small font-color-black-muted ui-border-t ui-padding-10 block inline-block-1st">
@@ -477,7 +477,7 @@
                                 <b class="font-color-black-muted ui-margin-15-b block">Social</b>
 
                                 <img class="img-fluid ui-margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
-                                <span class="font-color-black-50 large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
+                                <span class="font-color-black-50 font-readable">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
                             <span class="small font-color-black-muted ui-border-t ui-padding-10 block inline-block-1st">
@@ -501,7 +501,7 @@
                                 <b class="font-color-black-muted ui-margin-15-b block">Social</b>
 
                                 <img class="img-fluid ui-margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
-                                <span class="font-color-black-50 large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
+                                <span class="font-color-black-50 font-readable">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
                             <span class="small font-color-black-muted ui-border-t ui-padding-10 block inline-block-1st">
@@ -525,7 +525,7 @@
                                 <b class="font-color-black-muted ui-margin-15-b block">Social</b>
 
                                 <img class="img-fluid ui-margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
-                                <span class="font-color-black-50 large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
+                                <span class="font-color-black-50 font-readable">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
                             <span class="small font-color-black-muted ui-border-t ui-padding-10 block inline-block-1st">
@@ -549,7 +549,7 @@
                                 <b class="font-color-black-muted ui-margin-15-b block">Social</b>
 
                                 <img class="img-fluid ui-margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
-                                <span class="font-color-black-50 large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
+                                <span class="font-color-black-50 font-readable">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
                             <span class="small font-color-black-muted ui-border-t ui-padding-10 block inline-block-1st">
@@ -582,7 +582,7 @@
                                 <b class="font-color-black-muted ui-margin-15-b block">Customers</b>
 
                                 <img class="img-fluid ui-margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
-                                <span class="font-color-black-50 large">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
+                                <span class="font-color-black-50 font-readable">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
                             <span class="small font-color-black-muted ui-border-t ui-padding-10 block inline-block-1st">
@@ -606,7 +606,7 @@
                                 <b class="font-color-black-muted ui-margin-15-b block">Customers</b>
 
                                 <img class="img-fluid ui-margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
-                                <span class="font-color-black-50 large">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
+                                <span class="font-color-black-50 font-readable">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
                             <span class="small font-color-black-muted ui-border-t ui-padding-10 block inline-block-1st">
@@ -630,7 +630,7 @@
                                 <b class="font-color-black-muted ui-margin-15-b block">Customers</b>
 
                                 <img class="img-fluid ui-margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
-                                <span class="font-color-black-50 large">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
+                                <span class="font-color-black-50 font-readable">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
                             <span class="small font-color-black-muted ui-border-t ui-padding-10 block inline-block-1st">
@@ -654,7 +654,7 @@
                                 <b class="font-color-black-muted ui-margin-15-b block">Customers</b>
 
                                 <img class="img-fluid ui-margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
-                                <span class="font-color-black-50 large">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
+                                <span class="font-color-black-50 font-readable">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
                             <span class="small font-color-black-muted ui-border-t ui-padding-10 block inline-block-1st">
@@ -689,7 +689,7 @@
                 <h2 class="font-bold ui-margin-10-b">Our Projects</h2>
                 <h3 class="ui-color ui-margin-25-b">What we are doing?</h3>
 
-                <p class="font-color-black-50 x-large xs-align-c">Aliquam leo quam, laoreet quis luctus non, vulputate vitae elit. Pellentesque consequat eu mauris ac imperdiet. In dolor velit, pellentesque eu dignissim in, dignissim ac turpis. Sed lobortis diam ante, et posuere ligula convallis suscipit. Maecenas varius ultrices eros, eu vestibulum sem aliquet et.</p>
+                <p class="font-color-black-50 font-readable x-large xs-align-c">Aliquam leo quam, laoreet quis luctus non, vulputate vitae elit. Pellentesque consequat eu mauris ac imperdiet. In dolor velit, pellentesque eu dignissim in, dignissim ac turpis. Sed lobortis diam ante, et posuere ligula convallis suscipit. Maecenas varius ultrices eros, eu vestibulum sem aliquet et.</p>
 
                 <span class="sp-30 ui-margin-10-v"></span>
 
@@ -697,7 +697,7 @@
                     <li>
                         <a class="ui-img ui-has-info ui-show-info" href="img/agriculture/md01.jpg">
                             <img src="img/agriculture/md01.jpg" alt="">
-                            <span class="x-large">
+                            <span class="x-large font-readable">
                                 <span class="scroll-v ui-margin-20 set-absolute set-all">
                                     <svg class="ui-icon ui-icon-xxl left ui-margin-20-r hidden-md ui-color"><use href="#trees"/></svg>
                                     <b>Sed nunc mauris, auctor tristique libero non tristique.</b>
@@ -785,7 +785,7 @@
                         </div>
                     </div>
                     <div class="col-500 ui-padding-10 xs-align-c">
-                        <p class="font-color-black-50 x-large ui-margin-30-b">
+                        <p class="font-color-black-50 font-readable x-large ui-margin-30-b">
                             <span class="sp-15"></span>
                             <b class="font-color-black">Cras non sagittis arcu, eget viverra nunc.</b>
                             <span class="sp-15"></span>

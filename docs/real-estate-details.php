@@ -61,7 +61,7 @@
                     </div>
 
                     <div class="ui-card round shadow-lg">
-                        <div class="ui-padding-30 large">
+                        <div class="ui-padding-30 large font-readable">
                             <h4>Details</h4>
                             Each villa has been meticulously designed to meet all the demands that a luxury villa has to provide as well as offer a contemporary image of great beauty.
                             <span class="sp-20"></span>

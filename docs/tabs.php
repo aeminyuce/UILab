@@ -19,10 +19,14 @@
 
                         <div class="col-12">
                             <div class="ui-tab-content ui-open ui-open-ease">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                <p class="font-readable">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                </p>
                             </div>
                             <div class="ui-tab-content">
-                                Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                <p class="font-readable">
+                                    Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                </p>
                             </div>
                         </div>
 
@@ -38,13 +42,21 @@
                     </div>
 
                     <div class="ui-tab-content ui-open ui-open-ease">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        <p class="font-readable">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        </p>
+                        <p class="font-readable">
                     </div>
                     <div class="ui-tab-content">
-                        Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                        <p class="font-readable">
+                        <p class="font-readable">
+                            Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                        </p>
                     </div>
                     <div class="ui-tab-content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        <p class="font-readable">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        </p>
                     </div>
 
                 </div>
@@ -64,25 +76,39 @@
                             </div>
 
                             <div class="ui-tab-content ui-open ui-open-ease">
-                                <b>Monday:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                <p class="font-readable">
+                                    <b>Monday:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                </p>
                             </div>
                             <div class="ui-tab-content">
-                                <b>Tuesday:</b> Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                <p class="font-readable">
+                                    <b>Tuesday:</b> Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                </p>
                             </div>
                             <div class="ui-tab-content">
-                                <b>Wednesday:</b> Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                <p class="font-readable">
+                                    <b>Wednesday:</b> Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                </p>
                             </div>
                             <div class="ui-tab-content">
-                                <b>Thursday:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                <p class="font-readable">
+                                    <b>Thursday:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                </p>
                             </div>
                             <div class="ui-tab-content">
-                                <b>Friday:</b> Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                <p class="font-readable">
+                                    <b>Friday:</b> Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                </p>
                             </div>
                             <div class="ui-tab-content">
-                                <b>Saturday:</b> Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                <p class="font-readable">
+                                    <b>Saturday:</b> Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                </p>
                             </div>
                             <div class="ui-tab-content">
-                                <b>Sunday:</b> Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                <p class="font-readable">
+                                    <b>Sunday:</b> Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                </p>
                             </div>
 
                         </div>
@@ -104,12 +130,16 @@
                     </div>
 
                     <div class="ui-tab-content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        <p class="font-readable">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        </p>
                     </div>
                     <div class="ui-tab-content">
-                        Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
-                        <br><br>
-                        Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                        <p class="font-readable">
+                            Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                            <br><br>
+                            Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                        </p>
                     </div>
 
                 </div>
@@ -142,16 +172,24 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="ui-tab-content ui-open ui-open-ease">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                <p class="font-readable">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                </p>
                             </div>
                             <div class="ui-tab-content">
-                                Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                <p class="font-readable">
+                                    Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                </p>
                             </div>
                             <div class="ui-tab-content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                <p class="font-readable">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                </p>
                             </div>
                             <div class="ui-tab-content">
-                                Proin sagittis velit urna, a elementum purus dictum vitae. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                <p class="font-readable">
+                                    Proin sagittis velit urna, a elementum purus dictum vitae. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -163,16 +201,24 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="ui-tab-content ui-open ui-open-ease">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                <p class="font-readable">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                </p>
                             </div>
                             <div class="ui-tab-content">
-                                Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                <p class="font-readable">
+                                    Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                </p>
                             </div>
                             <div class="ui-tab-content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                <p class="font-readable">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                </p>
                             </div>
                             <div class="ui-tab-content">
-                                Proin sagittis velit urna, a elementum purus dictum vitae. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                <p class="font-readable">
+                                    Proin sagittis velit urna, a elementum purus dictum vitae. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -236,16 +282,24 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="ui-tab-content ui-open ui-open-ease">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                    <p class="font-readable">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                    </p>
                                 </div>
                                 <div class="ui-tab-content">
-                                    Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                    <p class="font-readable">
+                                        Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                    </p>
                                 </div>
                                 <div class="ui-tab-content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                    <p class="font-readable">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                    </p>
                                 </div>
                                 <div class="ui-tab-content">
-                                    Proin sagittis velit urna, a elementum purus dictum vitae. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                    <p class="font-readable">
+                                        Proin sagittis velit urna, a elementum purus dictum vitae. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -278,16 +332,24 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="ui-tab-content ui-open ui-open-ease">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                    <p class="font-readable">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                    </p>
                                 </div>
                                 <div class="ui-tab-content">
-                                    Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                    <p class="font-readable">
+                                        Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                    </p>
                                 </div>
                                 <div class="ui-tab-content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                    <p class="font-readable">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                                    </p>
                                 </div>
                                 <div class="ui-tab-content">
-                                    Proin sagittis velit urna, a elementum purus dictum vitae. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                    <p class="font-readable">
+                                        Proin sagittis velit urna, a elementum purus dictum vitae. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -302,14 +364,16 @@
                     <div id="tabID01" class="ui-tab-content ui-open ui-open-ease">
                         <button class="ui-tab ui-btn round ui-fill-dark-100 ui-ease-btn" data-ui-id="tabID02">Show Second</button>
                         <span class="sp-10"></span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        <p class="font-readable">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        </p>
                     </div>
                     <div id="tabID02" class="ui-tab-content">
                         <button class="ui-tab ui-btn round ui-fill-dark-100 ui-ease-btn" data-ui-id="tabID01">Show First</button>
                         <span class="sp-10"></span>
-                        Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
-                        <br><br>
-                        Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                        <p class="font-readable">
+                            Proin sagittis velit urna, a elementum purus dictum vitae. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
+                        </p>
                     </div>
 
                 </div>
@@ -322,7 +386,7 @@
                         Tab Button
                     </button>
                     <div class="ui-tab-content round ui-fill-light-100">
-                        <div class="ui-padding-10 ui-margin-4-b">
+                        <div class="font-readable ui-padding-10 ui-margin-4-b">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                         </div>
                     </div>
@@ -332,7 +396,7 @@
                         Tab Button
                     </button>
                     <div class="ui-tab-content round ui-fill-light-100">
-                        <div class="ui-padding-10 ui-margin-4-b">
+                        <div class="font-readable ui-padding-10 ui-margin-4-b">
                             Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
                             <br><br>
                             Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
@@ -344,7 +408,7 @@
                         Tab Button
                     </button>
                     <div class="ui-tab-content round ui-fill-light-100">
-                        <div class="ui-padding-10 ui-margin-4-b">
+                        <div class="font-readable ui-padding-10 ui-margin-4-b">
                             Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
                             <br><br>
                             Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
@@ -368,7 +432,7 @@
                                 Inner Tab Button
                             </button>
                             <div class="ui-tab-content">
-                                <div class="ui-padding-10">
+                                <div class="font-readable ui-padding-10">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                                 </div>
                             </div>
@@ -378,7 +442,7 @@
                                 Inner Tab Button
                             </button>
                             <div class="ui-tab-content">
-                                <div class="ui-padding-10">
+                                <div class="font-readable ui-padding-10">
                                     Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
                                 </div>
                             </div>
@@ -398,7 +462,7 @@
                                 Inner Tab Button
                             </button>
                             <div class="ui-tab-content">
-                                <div class="ui-padding-10">
+                                <div class="font-readable ui-padding-10">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                                 </div>
                             </div>
@@ -408,7 +472,7 @@
                                 Inner Tab Button
                             </button>
                             <div class="ui-tab-content">
-                                <div class="ui-padding-10">
+                                <div class="font-readable ui-padding-10">
                                     Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
                                 </div>
                             </div>
@@ -428,7 +492,7 @@
                                 Inner Tab Button
                             </button>
                             <div class="ui-tab-content">
-                                <div class="ui-padding-10">
+                                <div class="font-readable ui-padding-10">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                                 </div>
                             </div>
@@ -438,7 +502,7 @@
                                 Inner Tab Button
                             </button>
                             <div class="ui-tab-content">
-                                <div class="ui-padding-10">
+                                <div class="font-readable ui-padding-10">
                                     Proin sagittis velit urna, a elementum purus dictum vitae. Quisque eu pharetra lacus. Nulla id ultricies dui. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
                                 </div>
                             </div>
@@ -480,16 +544,24 @@
                     </div>
 
                     <div class="ui-tab-content ui-open ui-open-ease">
-                        <b>1. User Details:</b> Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        <p class="font-readable">
+                            <b>1. User Details:</b> Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        </p>
                     </div>
                     <div class="ui-tab-content">
-                        <b>2. Address Details:</b> Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        <p class="font-readable">
+                            <b>2. Address Details:</b> Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        </p>
                     </div>
                     <div class="ui-tab-content">
-                        <b>3. Payment Details:</b> Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        <p class="font-readable">
+                            <b>3. Payment Details:</b> Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        </p>
                     </div>
                     <div class="ui-tab-content">
-                        <b>4. Shipping:</b> Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        <p class="font-readable">
+                            <b>4. Shipping:</b> Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
+                        </p>
                     </div>
 
                 </div>

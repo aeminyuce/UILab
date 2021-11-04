@@ -292,7 +292,14 @@
             <div class="col-6 ui-padding-30">
 
                 <h3>Lead Text</h3>
-                <p class="font-lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+                <p class="font-lead highlight">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+
+                <h3>Readable Text</h3>
+                <p class="font-readable highlight">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat gravida posuere. Etiam luctus ex vitae diam tempor, a egestas magna posuere. Vestibulum faucibus ex dolor, at tempor ante iaculis vel. Nulla facilisi. Ut non nisl eget orci placerat lobortis.
+                    <br><br>
+                    Aliquam eros ante, dignissim eget hendrerit eu, volutpat in mauris. Nam dapibus varius ultrices. Aliquam erat volutpat. Nullam sit amet nunc et tellus fermentum pretium id a arcu. Sed vel lacus lacinia, lobortis massa congue, porta neque.
+                </p>
 
                 <span class="sp-10"></span>
 

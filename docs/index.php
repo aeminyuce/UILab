@@ -154,7 +154,7 @@
             <!-- sidebar -->
             <div class="col-250 ui-theme-gray ui-fill-light-200 hidden-md">
 
-                <div class="align-l sm-align-c form-lg ui-add-mobile-menu-r">
+                <div class="align-l sm-align-c ui-add-mobile-menu-r">
                     <h3 class="ui-margin-15">Components</h3>
                     <ul class="list-unstyled block-2nd ui-ease-2nd-button">
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=alerts">Alerts</a></li>
@@ -200,7 +200,7 @@
             <div class="row">
                 <div class="col-12 ui-padding-15">
 
-                    <div class="fixed ui-padding-15 ui-sm-no-padding">
+                    <div class="fixed ui-padding-15 ui-margin-30-v ui-sm-no-padding">
                         <div class="card highlight align-c ui-padding-30 ui-xs-no-padding round ui-theme-base">
                             <h1 class="font-light">UI lab is a modular design system.</h2>
                             <h4 class="font-bold">For developing web interfaces fastly!</h4>
@@ -216,6 +216,8 @@
                                 </a>
                             </div>
                         </div>
+
+                        <span class="sp-30"></span>
 
                         <div class="row row-gap-lg align-c hover-shadow-2nd hover-t-2nd">
                             <div class="col-4 col-md-6">
