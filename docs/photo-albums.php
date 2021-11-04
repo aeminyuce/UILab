@@ -61,9 +61,12 @@
                                                 <span class="x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                                 <br><br>
                                                 <span class="font-color-white-muted large">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat gravida posuere. Etiam luctus ex vitae diam tempor, a egestas magna posuere. Vestibulum faucibus ex dolor, at tempor ante iaculis vel. Nulla facilisi. Ut non nisl eget orci placerat lobortis.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Curabitur consequat gravida posuere.
+                                                    Etiam luctus ex vitae diam tempor, a egestas magna posuere.
                                                     <br><br>
-                                                    Aliquam eros ante, dignissim eget hendrerit eu, volutpat in mauris. Nam dapibus varius ultrices. Aliquam erat volutpat. Nullam sit amet nunc et tellus fermentum pretium id a arcu. Sed vel lacus lacinia, lobortis massa congue, porta neque.
+                                                    Vestibulum faucibus ex dolor, at tempor ante iaculis vel.
+                                                    Nulla facilisi. Ut non nisl eget orci placerat lobortis.
                                                 </span>
                                             </span>
                                         </span>
