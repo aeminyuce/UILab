@@ -4,7 +4,7 @@
             <div class="col-12 ui-padding-30">
 
                 <h3>Dropdowns</h3>
-                <div class="row ui-padding-30-b block-2nd form-lg ui-theme-sub">
+                <div class="row ui-padding-30-b block-2nd ui-theme-sub">
                     <div class="col-3 col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn circle ui-fill-dark-100">
@@ -81,7 +81,7 @@
                 </div>
 
                 <h5 class="font-bold">Dropdown Navs with List Columns</h5>
-                <div class="row ui-padding-30-b form-lg ui-theme-base">
+                <div class="row ui-padding-30-b ui-theme-base">
                     <div class="col-12">
 
                         <div class="ui-dropdown ui-nav ui-menu-hover ui-btn-xs-fluid ui-ease-dropdown">
@@ -151,7 +151,7 @@
                 </div>
 
                 <h5 class="font-bold">Full Horizontal Dropdown Navs</h5>
-                <div class="row ui-padding-30-b form-lg ui-theme-base">
+                <div class="row ui-padding-30-b ui-theme-base">
                     <div class="col-12">
 
                         <div class="ui-dropdown ui-nav ui-nav-full-h ui-btn-xs-fluid ui-ease-dropdown">

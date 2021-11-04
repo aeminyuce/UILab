@@ -36,7 +36,6 @@
 @alerts-msg-text-align:                center;
 @alerts-msg-width:                     (@layout-min - 40px);
 @alerts-msg-hover-opacity:             .9;
-@alerts-msg-min-height:                30px;
 @alerts-msg-padding:                   10px;
 @alerts-msg-window-space:              20px;
 @alerts-msg-slide-size:                40px;
@@ -83,7 +82,7 @@
     }
 
     &-msg {
-        text-align: @alerts-msg-text-align; width: @alerts-msg-width; min-height: @alerts-msg-min-height; padding: @alerts-msg-padding; position: fixed; z-index: (@alerts-z-index + 2); cursor: pointer;
+        text-align: @alerts-msg-text-align; width: @alerts-msg-width; min-height: @btn-default; padding: @alerts-msg-padding; position: fixed; z-index: (@alerts-z-index + 2); cursor: pointer;
 
         .ui-desktop &:hover { opacity: @alerts-msg-hover-opacity; }
 

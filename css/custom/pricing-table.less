@@ -1,6 +1,8 @@
 /* pricing table */ @import (reference) '../ui.less';
 
-.ui-icon-72 { width: 72px; height: 72px; }
+@pricing-icon-size:                                 72px;
+
+.ui-icon-72 { ._icon(@pricing-icon-size); }
 .ui-card {
     &.round { border-radius: 16px; }
 }

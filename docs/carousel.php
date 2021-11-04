@@ -149,12 +149,12 @@
 
                         </div>
                         <div class="ui-carousel-nav form-lg ui-margin-10-b ui-ease-1st-btn">
-                            <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
-                                <svg class="ui-icon"><use href="#angle-left"/></svg>
+                            <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square circle">
+                                <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                             </button>
                             <span class="ui-dots font-color-black-muted"></span>
-                            <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square round">
-                                <svg class="ui-icon"><use href="#angle-right"/></svg>
+                            <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square circle">
+                                <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                             </button>
                         </div>
                     </div>
@@ -214,12 +214,12 @@
                             </div>
                         </div>
                         <div class="ui-carousel-nav ui-ease-1st-btn">
-                            <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
-                                <svg class="ui-icon"><use href="#angle-left"/></svg>
+                            <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square circle">
+                                <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                             </button>
                             <span class="ui-dots font-color-black-muted"></span>
-                            <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square round">
-                                <svg class="ui-icon"><use href="#angle-right"/></svg>
+                            <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square circle">
+                                <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                             </button>
                         </div>
                     </div>
@@ -261,12 +261,12 @@
                             </div>
                         </div>
                         <div class="ui-carousel-nav ui-margin-10-t ui-ease-1st-btn">
-                            <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
-                                <svg class="ui-icon"><use href="#angle-left"/></svg>
+                            <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square circle">
+                                <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                             </button>
                             <span class="ui-dots font-color-black-muted"></span>
-                            <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square round">
-                                <svg class="ui-icon"><use href="#angle-right"/></svg>
+                            <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square circle">
+                                <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                             </button>
                         </div>
                     </div>
@@ -313,12 +313,12 @@
                                 </div>
                             </div>
                             <div class="ui-carousel-nav ui-ease-1st-btn">
-                                <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square round">
-                                    <svg class="ui-icon"><use href="#angle-left"/></svg>
+                                <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square circle">
+                                    <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                 </button>
                                 <span class="ui-dots font-color-black-muted"></span>
-                                <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square round">
-                                    <svg class="ui-icon"><use href="#angle-right"/></svg>
+                                <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square circle">
+                                    <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                 </button>
                             </div>
                         </div>

@@ -12,7 +12,9 @@
             <div class="row">
                 <div class="col-static no-fluid">
                     <div class="col-220 ui-padding-10">
-                        <a href="#"><img src="img/agriculture/logo.png" alt="Agriculture Logo" srcset="img/agriculture/logo@2x.png 2x"></a>
+                        <a class="ui-margin-2-v inline-block" href="#">
+                            <img src="img/agriculture/logo.png" alt="Agriculture Logo" srcset="img/agriculture/logo@2x.png 2x">
+                        </a>
                     </div>
                     <div class="row">
                         <div class="col-12 align-r">
@@ -21,12 +23,12 @@
                                 <div class="ui-ease-1st-btn ui-icons-no-opacity form-lg ui-add-mobile-menu-r">
                                     <a href="#" class="ui-btn ui-btn-sm-fluid ui-btn-ghost">
                                         <svg class="ui-icon ui-margin-5-r visible-sm"><use href="#home"/></svg>
-                                        <b>Home</b>
+                                        Home
                                     </a>
                                     <div class="ui-dropdown ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-sm-fluid ui-btn-ghost">
                                             <svg class="ui-icon ui-margin-5-r visible-sm"><use href="#box"/></svg>
-                                            <b>Products</b>
+                                            Products
                                             <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                                         </button>
                                         <ul class="ui-dropdown-menu shadow-lg">
@@ -40,25 +42,25 @@
                                     </div>
                                     <a class="ui-btn ui-btn-sm-fluid ui-btn-ghost" href="#">
                                         <svg class="ui-icon ui-margin-5-r visible-sm"><use href="#users"/></svg>
-                                        <b>Team</b>
+                                        Team
                                     </a>
                                     <a class="ui-btn ui-btn-sm-fluid ui-btn-ghost" href="#">
                                         <svg class="ui-icon ui-margin-5-r visible-sm"><use href="#coins"/></svg>
-                                        <b>Pricing</b>
+                                        Pricing
                                     </a>
                                     <a class="ui-btn ui-btn-sm-fluid ui-btn-ghost" href="#">
                                         <svg class="ui-icon ui-margin-5-r visible-sm"><use href="#envelope-open"/></svg>
-                                        <b>Contact</b>
+                                        Contact
                                     </a>
                                     <span class="inline-block ui-margin-10-h hidden-md"></span>
                                     <span class="sp-10 visible-sm"></span>
                                     <a class="ui-btn ui-btn-sm-fluid ui-fill-dark-100" href="#">
                                         <svg class="ui-icon ui-margin-5-r visible-sm"><use href="#sign-in"/></svg>
-                                        <b>Login</b>
+                                        Login
                                     </a>
                                     <a class="ui-btn ui-btn-sm-fluid ui-theme-farmer ui-fill-dark-100" href="#">
                                         <svg class="ui-icon ui-margin-5-r visible-sm"><use href="#user-plus"/></svg>
-                                        <b>Sign Up</b>
+                                        Sign Up
                                     </a>
                                 </div>
                             </div>
@@ -885,7 +887,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-42">
+                                    <div class="col-48">
                                         <button class="ui-btn ui-btn-square ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                             <svg class="ui-icon"><use href="#send"/></svg>
                                         </button>

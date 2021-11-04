@@ -17,7 +17,6 @@
 @h3-size:                               (@largest - 4);
 
 @pre-bg:                                hsl(220, 8%, 22%);
-@pre-min-height:                        40px;
 @pre-max-height:                        350px;
 
 @code-color:                            hsl(345, 69%, 46%);
@@ -182,7 +181,7 @@ code { ._color-var(code-color); font-size: 90%; padding: 2px 4px !important; ._b
 kbd { color: @white; font-size: 90%; background-color: @pre-bg; padding: 2px 4px !important; border-radius: 3px; }
 
 pre,xmp {
-    color: @white; min-height: @pre-min-height; background-color: @pre-bg; padding: 10px !important; overflow-x: auto !important; overflow-y: auto !important; display: block;
+    color: @white; min-height: @btn-default; background-color: @pre-bg; padding: 10px !important; overflow-x: auto !important; overflow-y: auto !important; display: block;
 
     &:not(:last-child) { margin-bottom: @highlight-space; }
     &.scroll-v { max-height: @pre-max-height; }

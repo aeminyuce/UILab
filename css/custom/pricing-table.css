@@ -2,6 +2,7 @@
 .ui-icon-72 {
   width: 72px;
   height: 72px;
+  stroke-width: 12px;
 }
 .ui-card.round {
   border-radius: 16px;

@@ -61,7 +61,7 @@
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
-                            <div class="col-42 align-c ui-padding-4-v">
+                            <div class="col-48 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl ui-theme-sub ui-color"><use href="#info-circle-fill"/></svg>
                             </div>
                             <div class="row">
@@ -83,7 +83,7 @@
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                                 <div class="col-static sm-fluid">
-                                    <div class="col-42 ui-padding-4-v align-c">
+                                    <div class="col-48 ui-padding-4-v align-c">
                                         <svg class="ui-icon ui-icon-xl ui-theme-sub ui-color"><use href="#info-circle-fill"/></svg>
                                     </div>
                                     <div class="row">
@@ -103,7 +103,7 @@
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
-                            <div class="col-42 align-c ui-padding-4-v">
+                            <div class="col-48 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="row">
@@ -119,7 +119,7 @@
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
-                            <div class="col-42 align-c ui-padding-4-v">
+                            <div class="col-48 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="row">
@@ -135,7 +135,7 @@
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
-                            <div class="col-42 align-c ui-padding-4-v">
+                            <div class="col-48 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="row">
@@ -151,7 +151,7 @@
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
-                            <div class="col-42 align-c ui-padding-4-v">
+                            <div class="col-48 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="row">
@@ -167,7 +167,7 @@
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
-                            <div class="col-42 align-c ui-padding-4-v">
+                            <div class="col-48 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="row">
@@ -183,7 +183,7 @@
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="col-static sm-fluid">
-                            <div class="col-42 align-c ui-padding-4-v">
+                            <div class="col-48 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="row">

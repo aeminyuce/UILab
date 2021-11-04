@@ -125,10 +125,10 @@
         <div class="row">
             <div class="col-static no-fluid">
                 <div class="col-250 col-xs-100 ui-padding-15 ui-no-padding-r">
-                    <img class="ui-margin-3-t" src="img/uilab-logo.png" alt="UI lab" srcset="img/uilab-logo@2x.png 2x">
+                    <img class="ui-margin-5-t" src="img/uilab-logo.png" alt="UI lab" srcset="img/uilab-logo@2x.png 2x">
                 </div>
                 <div class="row">
-                    <div class="col-12 align-r ui-padding-15 ui-icons-no-opacity ui-ease-1st-btn">
+                    <div class="col-12 align-r ui-padding-15 ui-no-padding-l ui-icons-no-opacity ui-ease-1st-btn">
                         <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost circle hidden-ie">
                             <svg class="ui-icon visible-dark"><use href="#moon-fill"/></svg>
                             <svg class="ui-icon visible-light"><use href="#sun-fill"/></svg>

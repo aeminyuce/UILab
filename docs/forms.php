@@ -79,10 +79,10 @@
                     <div class="col-9">
                         <div class="form-holder col-static no-fluid">
 
-                            <div class="col-76">
+                            <div class="col-105">
                                 <img class="img-fluid ui-border-dual round ui-ease-border" src="img/captcha.jpg" alt="">
                             </div>
-                            <div class="col-32">
+                            <div class="col-42">
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-ease-btn">
                                     <!-- for loading toggle "ui-animate-spin" -->
                                     <svg class="ui-icon no-opacity ui-animate-spin"><use href="#sync"/></svg>
@@ -151,10 +151,10 @@
                         <div class="col-9">
                             <div class="form-holder col-static no-fluid">
 
-                                <div class="col-100">
-                                    <img class="ui-border-dual round ui-ease-border" src="img/captcha.jpg" alt="">
+                                <div class="col-115">
+                                    <img class="img-fluid ui-border-dual round ui-ease-border" src="img/captcha.jpg" alt="">
                                 </div>
-                                <div class="col-42">
+                                <div class="col-48">
                                     <button class="ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-ease-btn">
                                         <!-- for loading toggle "ui-animate-spin" -->
                                         <svg class="ui-icon no-opacity ui-animate-spin"><use href="#sync" /></svg>
@@ -579,7 +579,7 @@
                         </li>
                     </ul>
 
-                    <span class="sp-10"></span>
+                    <span class="sp-15"></span>
 
                     <ul class="list-inline list-gap">
                         <li>
@@ -632,7 +632,7 @@
                         </li>
                     </ul>
 
-                    <span class="sp-10"></span>
+                    <span class="sp-15"></span>
 
                     <ul class="list-inline list-gap">
                         <li>
@@ -663,6 +663,33 @@
                             </label>
                         </li>
                     </ul>
+
+                    <span class="sp-15"></span>
+
+                    <div class="text round ui-border-dual ui-ease-form form-inline">
+                        <input type="text" value="Inline form">
+                    </div>
+                    <label class="custom">
+                        <span class="switch-custom round ui-border-dual ui-ease-form">
+                            <input type="checkbox" checked>
+                            <i class="state"></i>
+                        </span>
+                        Custom Switch
+                    </label>
+                    <label class="custom">
+                        <span class="check-custom round ui-border-dual ui-ease-form">
+                            <input type="checkbox" checked>
+                            <i class="state"></i>
+                        </span>
+                        Custom Checkbox
+                    </label>
+                    <label class="custom">
+                        <span class="radio-custom ui-border-dual ui-ease-form">
+                            <input type="radio" name="radiotest2" checked>
+                            <i class="state"></i>
+                        </span>
+                        Custom Radio1
+                    </label>
 
                 </div>
 
@@ -1318,12 +1345,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-32">
+                            <div class="col-42">
                                 <button class="spinner-down ui-btn ui-btn-square ui-btn-ghost ui-border-dual round ui-ease-btn">
                                     <svg class="ui-icon"><use href="#minus"/></svg>
                                 </button>
                             </div>
-                            <div class="col-32">
+                            <div class="col-42">
                                 <button class="spinner-up ui-btn ui-btn-square ui-btn-ghost ui-border-dual round ui-ease-btn">
                                     <svg class="ui-icon"><use href="#plus"/></svg>
                                 </button>
@@ -1338,7 +1365,7 @@
                     <div class="col-9">
                         <div class="currency-spinner form-holder col-static no-fluid">
 
-                            <div class="col-32">
+                            <div class="col-42">
                                 <button class="currency-down ui-btn ui-btn-square ui-btn-ghost ui-border-dual round ui-ease-btn">
                                     <svg class="ui-icon"><use href="#minus"/></svg>
                                 </button>
@@ -1350,7 +1377,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-32">
+                            <div class="col-42">
                                 <button class="currency-up ui-btn ui-btn-square ui-btn-ghost ui-border-dual round ui-ease-btn">
                                     <svg class="ui-icon"><use href="#plus"/></svg>
                                 </button>
@@ -1780,10 +1807,10 @@
                     <label class="form-label">Captcha</label>
                     <div class="form-holder col-static no-fluid">
 
-                        <div class="col-76">
+                        <div class="col-105">
                             <img class="img-fluid ui-border-dual ui-border-light round ui-ease-border" src="img/captcha.jpg" alt="">
                         </div>
-                        <div class="col-32">
+                        <div class="col-42">
                             <button class="ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-border-light ui-ease-btn">
                                 <!-- for loading toggle "ui-animate-spin" -->
                                 <svg class="ui-icon no-opacity ui-animate-spin"><use href="#sync"/></svg>

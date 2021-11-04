@@ -269,10 +269,10 @@
                                         data-ui-src="img/product_01.png,img/product_02.png,img/product_03.png"
                                     >
                                     <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
-                                        <svg class="ui-icon"><use href="#angle-left"/></svg>
+                                        <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                     </button>
                                     <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
-                                        <svg class="ui-icon"><use href="#angle-right"/></svg>
+                                        <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
@@ -305,10 +305,10 @@
                                         data-ui-src="img/product_02.png,img/product_04.png"
                                     >
                                     <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
-                                        <svg class="ui-icon"><use href="#angle-left"/></svg>
+                                        <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                     </button>
                                     <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
-                                        <svg class="ui-icon"><use href="#angle-right"/></svg>
+                                        <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
@@ -340,10 +340,10 @@
                                         data-ui-src="img/product_03.png,img/product_05.png"
                                     >
                                     <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
-                                        <svg class="ui-icon"><use href="#angle-left"/></svg>
+                                        <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                     </button>
                                     <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
-                                        <svg class="ui-icon"><use href="#angle-right"/></svg>
+                                        <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
@@ -372,10 +372,10 @@
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img src="img/product_04.png" alt="" >
                                     <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
-                                        <svg class="ui-icon"><use href="#angle-left"/></svg>
+                                        <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                     </button>
                                     <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
-                                        <svg class="ui-icon"><use href="#angle-right"/></svg>
+                                        <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
@@ -403,10 +403,10 @@
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img src="img/product_05.png" alt="" >
                                     <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
-                                        <svg class="ui-icon"><use href="#angle-left"/></svg>
+                                        <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                     </button>
                                     <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
-                                        <svg class="ui-icon"><use href="#angle-right"/></svg>
+                                        <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
@@ -437,10 +437,10 @@
                                         data-ui-src="img/product_02.png,img/product_04.png"
                                     >
                                     <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
-                                        <svg class="ui-icon"><use href="#angle-left"/></svg>
+                                        <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                     </button>
                                     <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
-                                        <svg class="ui-icon"><use href="#angle-right"/></svg>
+                                        <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
