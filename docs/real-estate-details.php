@@ -61,7 +61,7 @@
                     </div>
 
                     <div class="ui-card round shadow-lg">
-                        <div class="ui-padding-30 large align-justify">
+                        <div class="ui-padding-30 large">
                             <h4>Details</h4>
                             Each villa has been meticulously designed to meet all the demands that a luxury villa has to provide as well as offer a contemporary image of great beauty.
                             <span class="sp-20"></span>
@@ -70,6 +70,8 @@
                             In addition, all three have a large solarium where you can enjoy both the views and the surrounding environment.
                             <span class="sp-20"></span>
                             A unique opportunity in a highly sought after location that begins to be considered as the New Golden Mile.
+                            <span class="sp-20"></span>
+                            Villas, although of different size, have 4 bedrooms and 5 bathrooms located on ground floor and first. A large basement will locate another bedroom service, bathroom and common areas that can be allocated to gym, cinema, game room.
                             <span class="sp-20"></span>
                             The development of 3 luxury villas is planned in the residential neighborhood.
                         </div>
