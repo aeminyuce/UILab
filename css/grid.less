@@ -110,6 +110,9 @@ each(@custom-grid-columns, {
     & > .row {
         width: 100%; margin-left: inherit; margin-right: inherit; table-layout: fixed;
 
+        &:before,&:after { content: "" !important; display: table !important; }
+        &:after { clear: both !important; }
+
         & > [class*="col-"]:not(.col-static):not(.col-12) { float: left; }
     }
 
