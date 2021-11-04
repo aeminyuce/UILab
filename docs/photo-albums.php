@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-static sm-fluid ui-padding-30-v">
                 <div class="col-250 ui-padding-30 order-sm-last sm-align-c ui-theme-sub">
-                    <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid align-l block circle ui-theme-green ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid align-l block circle ui-fill-dark-100 ui-ease-btn">
                         Create New
                         <svg class="ui-icon right"><use href="#plus"/></svg>
                     </a>
