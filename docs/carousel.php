@@ -13,10 +13,10 @@
 
                             <div class="ui-slide-content ui-padding-10-h" data-ui-animate="10">
 
-                                    <div class="ui-row sm-fluid">
+                                    <div class="ui-row ui-sm-fluid">
                                         <div class="ui-col-4 ui-col-md-6">
 
-                                            <div class="ui-row ui-row-gap-xs no-fluid ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
+                                            <div class="ui-row ui-row-gap-xs ui-no-fluid ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                                                 <div class="ui-col-6">
                                                     <img class="ui-carousel-animate ui-bring-back img-fluid" src="img/image_09.jpg" alt="">
                                                 </div>
@@ -58,10 +58,10 @@
                             </div>
                             <div class="ui-slide-content ui-padding-10-h" data-ui-animate="10">
 
-                                    <div class="ui-row sm-fluid">
+                                    <div class="ui-row ui-sm-fluid">
                                         <div class="ui-col-4 ui-col-md-6">
 
-                                            <div class="ui-row ui-row-gap-xs no-fluid ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
+                                            <div class="ui-row ui-row-gap-xs ui-no-fluid ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                                                 <div class="ui-col-6">
                                                     <img class="ui-carousel-animate ui-bring-back img-fluid" src="img/image_09.jpg" alt="">
                                                 </div>
@@ -103,10 +103,10 @@
                             </div>
                             <div class="ui-slide-content ui-padding-10-h" data-ui-animate="10">
 
-                                    <div class="ui-row sm-fluid">
+                                    <div class="ui-row ui-sm-fluid">
                                         <div class="ui-col-4 ui-col-md-6">
 
-                                            <div class="ui-row ui-row-gap-xs no-fluid ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
+                                            <div class="ui-row ui-row-gap-xs ui-no-fluid ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                                                 <div class="ui-col-6">
                                                     <img class="ui-carousel-animate ui-bring-back img-fluid" src="img/image_09.jpg" alt="">
                                                 </div>

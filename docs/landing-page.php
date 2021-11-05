@@ -10,7 +10,7 @@
     <div class="ui-border-b ui-theme-farmer2">
         <div class="ui-fixed ui-padding-10-v ui-sm-no-padding-v">
             <div class="ui-row">
-                <div class="ui-col-static no-fluid">
+                <div class="ui-col-static ui-no-fluid">
                     <div class="ui-col-220 ui-padding-10">
                         <a class="ui-margin-2-v inline-block" href="#">
                             <img src="img/agriculture/logo.png" alt="Agriculture Logo" srcset="img/agriculture/logo@2x.png 2x">
@@ -363,7 +363,7 @@
             </div>
 
             <div class="ui-tab-content ui-padding-10 ui-open ui-open-ease">
-                <div class="ui-row sm-fluid ui-icons-sm hover-shadow-2nd hover-t-2nd">
+                <div class="ui-row ui-sm-fluid ui-icons-sm hover-shadow-2nd hover-t-2nd">
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
@@ -468,7 +468,7 @@
                 </div>
             </div>
             <div class="ui-tab-content ui-padding-10">
-                <div class="ui-row sm-fluid">
+                <div class="ui-row ui-sm-fluid">
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
@@ -573,7 +573,7 @@
                 </div>
             </div>
             <div class="ui-tab-content ui-padding-10">
-                <div class="ui-row sm-fluid">
+                <div class="ui-row ui-sm-fluid">
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
@@ -811,7 +811,7 @@
     <div class="ui-fixed ui-padding-30-v sm-align-c">
         <div class="ui-row">
             <div class="ui-col-static">
-                <div class="ui-row sm-fluid">
+                <div class="ui-row ui-sm-fluid">
                     <div class="ui-col-4">
                         <h4 class="font-color-white-50 ui-margin-30-b">Customer Service</h4>
                         <ul class="list-unstyled ui-list-spacer-10 hoverline-2nd x-large">
@@ -881,7 +881,7 @@
                             <p class="highlight">Get in on the best deals, new products and gardening tips.</p>
                             <form action="#">
 
-                                <div class="form-holder ui-col-static no-fluid form-lg">
+                                <div class="form-holder ui-col-static ui-no-fluid form-lg">
                                     <div class="ui-row ui-no-row-gap">
                                         <div class="ui-col-12">
                                             <div class="text ui-no-border bg-white invert-bg ui-ease-form">

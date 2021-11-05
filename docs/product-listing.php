@@ -6,7 +6,7 @@
 
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="ui-col-static no-fluid ui-padding-30-v ui-padding-15-h ui-md-no-padding-h">
+        <div class="ui-col-static ui-no-fluid ui-padding-30-v ui-padding-15-h ui-md-no-padding-h">
 
             <div class="ui-col-250 ui-padding-10 hidden-md">
                 <div class="ui-add-mobile-menu-r">
@@ -166,7 +166,7 @@
                 <div class="ui-col-12 ui-sm-no-padding-t">
 
                     <div class="ui-card ui-margin-10-b round shadow-lg">
-                        <div class="ui-row ui-row-gap-lg sm-fluid">
+                        <div class="ui-row ui-row-gap-lg ui-sm-fluid">
                             <div class="ui-col-12 ui-border-b">
                                 <h4>
                                     <svg class="ui-icon ui-icon-lg"><use href="#history"/></svg>
@@ -195,7 +195,7 @@
                                 </div>
                             </div>
                             <div class="ui-col-4">
-                                <div class="ui-row no-fluid ui-margin-10-b">
+                                <div class="ui-row ui-no-fluid ui-margin-10-b">
                                     <div class="ui-col-6">
                                         <span class="font-color-black-muted">Highest:</span>
                                         <span class="largest block">$199</span>
@@ -221,7 +221,7 @@
                         </div>
                     </div>
 
-                    <div class="ui-row sm-fluid sm-align-c">
+                    <div class="ui-row ui-sm-fluid sm-align-c">
                         <div class="ui-col-6">
                             <span class="sp-5 hidden-sm"></span>
                             <span class="large">Found <b>47</b> and displaying <b>9</b> products.</span>

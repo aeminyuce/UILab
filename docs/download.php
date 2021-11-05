@@ -911,7 +911,7 @@
                                         <span class="font-color-black-50">Select/Deselect All</span>
                                     </label>
 
-                                    <div class="ui-row ui-no-ui-row-gap-v xs-fluid">
+                                    <div class="ui-row ui-no-ui-row-gap-v ui-xs-fluid">
                                         <div class="ui-col-3 ui-col-md-4 ui-col-sm-6 block-1st">
                                             <label class="custom">
                                                 <span class="switch-custom round ui-border-dual ui-ease-form">

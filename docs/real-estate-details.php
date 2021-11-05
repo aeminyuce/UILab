@@ -224,7 +224,7 @@
                             <span class="font-color-black-50">Automatic 5% deposit required.</span>
                         </div>
                         <form action="#">
-                            <div class="ui-col-static no-fluid currency-spinner form-lg">
+                            <div class="ui-col-static ui-no-fluid currency-spinner form-lg">
                                 <div class="ui-col-50">
                                     <button class="currency-down ui-btn ui-no-padding-h block round-l ui-ease-btn" type="button">
                                         <svg class="ui-icon"><use href="#minus"/></svg>

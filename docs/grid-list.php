@@ -8,7 +8,7 @@
                     <div class="ui-grid-list ui-grid-list-striped grid-hover ui-theme-gray ui-ease-ui-grid-list">
 
                         <div class="ui-row ui-no-ui-row-gap-v ui-row-gap-sm-h ui-margin-2-v">
-                            <div class="ui-col-6 lg-fluid">
+                            <div class="ui-col-6 ui-lg-fluid">
                                 <div class="text text-icon-both round ui-no-border ui-fill-light-100 has-clear ui-ease-form">
                                     <svg class="ui-icon text-icon-l"><use href="#search"></svg>
                                     <button class="clear-form">
@@ -18,7 +18,7 @@
                                 </div>
                                 <span class="sp-5 hidden-lg"></span>
                             </div>
-                            <div class="ui-col-lg-3 ui-col-6 no-fluid">
+                            <div class="ui-col-lg-3 ui-col-6 ui-no-fluid">
                                 <div class="select round ui-no-border ui-fill-light-100 ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"></svg>
                                     <select class="ui-grid-list-filter" data-ui-index="2">
@@ -33,7 +33,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="ui-col-lg-3 ui-col-6 no-fluid">
+                            <div class="ui-col-lg-3 ui-col-6 ui-no-fluid">
                                 <div class="ui-dropdown ui-menu-l block ui-ease-dropdown">
                                     <button class="ui-btn align-l round ui-fill-light-100">
                                         <span>
@@ -66,7 +66,7 @@
                         <div class="ui-grid-list-container">
 
                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
-                                <div class="ui-row ui-no-row-gap no-fluid">
+                                <div class="ui-row ui-no-row-gap ui-no-fluid">
                                     <div class="ui-col-5">
                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                     </div>
@@ -98,7 +98,7 @@
                                 </div>
                             </div>
                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
-                                <div class="ui-row ui-no-row-gap no-fluid">
+                                <div class="ui-row ui-no-row-gap ui-no-fluid">
                                     <div class="ui-col-5">
                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                     </div>
@@ -130,7 +130,7 @@
                                 </div>
                             </div>
                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
-                                <div class="ui-row ui-no-row-gap no-fluid">
+                                <div class="ui-row ui-no-row-gap ui-no-fluid">
                                     <div class="ui-col-5">
                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                     </div>
@@ -162,7 +162,7 @@
                                 </div>
                             </div>
                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
-                                <div class="ui-row ui-no-row-gap no-fluid">
+                                <div class="ui-row ui-no-row-gap ui-no-fluid">
                                     <div class="ui-col-5">
                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                     </div>
@@ -194,7 +194,7 @@
                                 </div>
                             </div>
                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
-                                <div class="ui-row ui-no-row-gap no-fluid">
+                                <div class="ui-row ui-no-row-gap ui-no-fluid">
                                     <div class="ui-col-5">
                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                     </div>
@@ -226,7 +226,7 @@
                                 </div>
                             </div>
                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
-                                <div class="ui-row ui-no-row-gap no-fluid">
+                                <div class="ui-row ui-no-row-gap ui-no-fluid">
                                     <div class="ui-col-5">
                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                     </div>
@@ -258,7 +258,7 @@
                                 </div>
                             </div>
                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
-                                <div class="ui-row ui-no-row-gap no-fluid">
+                                <div class="ui-row ui-no-row-gap ui-no-fluid">
                                     <div class="ui-col-5">
                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                     </div>
@@ -290,7 +290,7 @@
                                 </div>
                             </div>
                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
-                                <div class="ui-row ui-no-row-gap no-fluid">
+                                <div class="ui-row ui-no-row-gap ui-no-fluid">
                                     <div class="ui-col-5">
                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                     </div>
@@ -322,7 +322,7 @@
                                 </div>
                             </div>
                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
-                                <div class="ui-row ui-no-row-gap no-fluid">
+                                <div class="ui-row ui-no-row-gap ui-no-fluid">
                                     <div class="ui-col-5">
                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                     </div>
@@ -354,7 +354,7 @@
                                 </div>
                             </div>
                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
-                                <div class="ui-row ui-no-row-gap no-fluid">
+                                <div class="ui-row ui-no-row-gap ui-no-fluid">
                                     <div class="ui-col-5">
                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                     </div>
@@ -386,7 +386,7 @@
                                 </div>
                             </div>
                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
-                                <div class="ui-row ui-no-row-gap no-fluid">
+                                <div class="ui-row ui-no-row-gap ui-no-fluid">
                                     <div class="ui-col-5">
                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                     </div>
@@ -418,7 +418,7 @@
                                 </div>
                             </div>
                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
-                                <div class="ui-row ui-no-row-gap no-fluid">
+                                <div class="ui-row ui-no-row-gap ui-no-fluid">
                                     <div class="ui-col-5">
                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                     </div>
@@ -453,13 +453,13 @@
 
                         <span class="sp-10"></span>
 
-                        <div class="ui-row ui-no-row-gap no-fluid">
+                        <div class="ui-row ui-no-row-gap ui-no-fluid">
                             <div class="ui-col-4">
                                 <div class="ui-padding-5-v">
                                     Total <b class="ui-grid-list-total"></b>
                                 </div>
                             </div>
-                            <div class="ui-col-8 no-fluid align-r">
+                            <div class="ui-col-8 ui-no-fluid align-r">
                                 <div class="ui-grid-list-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn round" data-ui-active="ui-border-dual ui-theme-sub ui-stroke ui-color"></div>
                             </div>
                         </div>
@@ -471,7 +471,7 @@
 
                 <div class="ui-grid-list ui-grid-list-striped grid-hover ui-border ui-ease-ui-grid-list round">
 
-                    <div class="ui-row sm-fluid">
+                    <div class="ui-row ui-sm-fluid">
                         <div class="ui-col-5 ui-sm-no-padding-b">
                             <div class="text text-icon-both round ui-border-dual has-clear ui-ease-form">
                                 <svg class="ui-icon text-icon-l"><use href="#search"></svg>
@@ -524,7 +524,7 @@
                         </div>
                     </div>
 
-                    <div class="ui-row ui-row-gap-xs align-l block-2nd ui-ease-2nd-btn no-fluid">
+                    <div class="ui-row ui-row-gap-xs align-l block-2nd ui-ease-2nd-btn ui-no-fluid">
                         <div class="ui-col-5">
                             <button class="ui-btn" data-ui-sort="1"><svg class="ui-icon"><use href="#sort"></svg> Name</button>
                         </div>
@@ -539,7 +539,7 @@
                     <div class="ui-grid-list-container">
 
                         <div class="ui-grid-list-content" data-ui-val="John Doe|25|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -556,7 +556,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -573,7 +573,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -590,7 +590,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -607,7 +607,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|24|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -624,7 +624,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -641,7 +641,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -658,7 +658,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -675,7 +675,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|25|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -692,7 +692,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -709,7 +709,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -726,7 +726,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -743,7 +743,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -760,7 +760,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -777,7 +777,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -794,7 +794,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -811,7 +811,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|24|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -828,7 +828,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -845,7 +845,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -862,7 +862,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -879,7 +879,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -896,7 +896,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -913,7 +913,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -930,7 +930,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -947,7 +947,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -964,7 +964,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -981,7 +981,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -998,7 +998,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -1015,7 +1015,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|25|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -1032,7 +1032,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -1049,7 +1049,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -1066,7 +1066,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -1083,7 +1083,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|25|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -1100,7 +1100,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -1117,7 +1117,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -1134,7 +1134,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -1151,7 +1151,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|24|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -1168,7 +1168,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -1185,7 +1185,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -1202,7 +1202,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
@@ -1221,7 +1221,7 @@
 
                     </div>
 
-                    <div class="ui-row no-fluid">
+                    <div class="ui-row ui-no-fluid">
                         <div class="ui-col-6">
                             <div class="ui-padding-5-v">
                                 Total <b class="ui-grid-list-total"></b>
@@ -1238,7 +1238,7 @@
 
                 <div class="ui-grid-list grid-hover ui-border ui-ease-ui-grid-list round">
 
-                    <div class="ui-row sm-fluid">
+                    <div class="ui-row ui-sm-fluid">
                         <div class="ui-col-5 ui-sm-no-padding-b">
                             <div class="text text-icon-both round ui-border-dual has-clear ui-ease-form">
                                 <svg class="ui-icon text-icon-l"><use href="#search"></svg>
@@ -1269,7 +1269,7 @@
                         </div>
                     </div>
 
-                    <div class="ui-row ui-row-gap-xs align-l ui-border-v block-2nd ui-ease-2nd-btn no-fluid">
+                    <div class="ui-row ui-row-gap-xs align-l ui-border-v block-2nd ui-ease-2nd-btn ui-no-fluid">
                         <div class="ui-col-5">
                             <button class="ui-btn ui-btn-ghost" data-ui-sort="1"><svg class="ui-icon"><use href="#sort"></svg> Name</button>
                         </div>
@@ -1284,7 +1284,7 @@
                     <div class="ui-grid-list-container">
 
                         <div class="ui-grid-list-content" data-ui-val="John Doe|25|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     John Doe
                                 </div>
@@ -1297,7 +1297,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mary Doe
                                 </div>
@@ -1310,7 +1310,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mike Taylor
                                 </div>
@@ -1323,7 +1323,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Anna May
                                 </div>
@@ -1336,7 +1336,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|24|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     John Doe
                                 </div>
@@ -1349,7 +1349,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mary Doe
                                 </div>
@@ -1362,7 +1362,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mike Taylor
                                 </div>
@@ -1375,7 +1375,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Anna May
                                 </div>
@@ -1388,7 +1388,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|25|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     John Doe
                                 </div>
@@ -1401,7 +1401,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mary Doe
                                 </div>
@@ -1414,7 +1414,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mike Taylor
                                 </div>
@@ -1427,7 +1427,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Anna May
                                 </div>
@@ -1440,7 +1440,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     John Doe
                                 </div>
@@ -1453,7 +1453,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mary Doe
                                 </div>
@@ -1466,7 +1466,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mike Taylor
                                 </div>
@@ -1479,7 +1479,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Anna May
                                 </div>
@@ -1492,7 +1492,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|24|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     John Doe
                                 </div>
@@ -1505,7 +1505,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mary Doe
                                 </div>
@@ -1518,7 +1518,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mike Taylor
                                 </div>
@@ -1531,7 +1531,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Anna May
                                 </div>
@@ -1544,7 +1544,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     John Doe
                                 </div>
@@ -1557,7 +1557,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mary Doe
                                 </div>
@@ -1570,7 +1570,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mike Taylor
                                 </div>
@@ -1583,7 +1583,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Anna May
                                 </div>
@@ -1596,7 +1596,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     John Doe
                                 </div>
@@ -1609,7 +1609,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mary Doe
                                 </div>
@@ -1622,7 +1622,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mike Taylor
                                 </div>
@@ -1635,7 +1635,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Anna May
                                 </div>
@@ -1648,7 +1648,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|25|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     John Doe
                                 </div>
@@ -1661,7 +1661,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mary Doe
                                 </div>
@@ -1674,7 +1674,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mike Taylor
                                 </div>
@@ -1687,7 +1687,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Anna May
                                 </div>
@@ -1700,7 +1700,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|25|Designer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     John Doe
                                 </div>
@@ -1713,7 +1713,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mary Doe
                                 </div>
@@ -1726,7 +1726,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mike Taylor
                                 </div>
@@ -1739,7 +1739,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Anna May
                                 </div>
@@ -1752,7 +1752,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="John Doe|24|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     John Doe
                                 </div>
@@ -1765,7 +1765,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mary Doe|24|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mary Doe
                                 </div>
@@ -1778,7 +1778,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Mike Taylor|29|Developer">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Mike Taylor
                                 </div>
@@ -1791,7 +1791,7 @@
                             </div>
                         </div>
                         <div class="ui-grid-list-content" data-ui-val="Anna May|25|Researcher">
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-5">
                                     Anna May
                                 </div>
@@ -1806,7 +1806,7 @@
 
                     </div>
 
-                    <div class="ui-row no-fluid">
+                    <div class="ui-row ui-no-fluid">
                         <div class="ui-col-6">
                             <div class="ui-padding-5-v">
                                 Total <b class="ui-grid-list-total"></b>

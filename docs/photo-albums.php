@@ -1,7 +1,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="ui-col-static sm-fluid ui-padding-30-v">
+            <div class="ui-col-static ui-sm-fluid ui-padding-30-v">
                 <div class="ui-col-250 ui-padding-30 ui-order-sm-last sm-align-c ui-theme-sub">
                     <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid align-l block circle ui-fill-dark-100 ui-ease-btn">
                         Create New

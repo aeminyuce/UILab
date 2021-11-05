@@ -7,7 +7,7 @@
 
                 <h5 class="font-bold">Default Photo Gallery</h5>
                 <div class="ui-padding-30-b">
-                    <div class="ui-row no-fluid ui-photo-gallery ui-ease-photo-gallery">
+                    <div class="ui-row ui-no-fluid ui-photo-gallery ui-ease-photo-gallery">
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_01.jpg">
                                 <img class="img-fluid" src="img/image_01.jpg" alt="">
@@ -55,7 +55,7 @@
 
                 <h5 class="font-bold">Default Photo Gallery</h5>
                 <div class="ui-padding-30-b">
-                    <div class="ui-row no-fluid ui-photo-gallery ui-ease-photo-gallery">
+                    <div class="ui-row ui-no-fluid ui-photo-gallery ui-ease-photo-gallery">
                         <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
                             <a class="ui-img ui-margin-1-h round" href="img/movie_01.jpg">
                                 <img class="img-fluid" src="img/movie_01.jpg" alt="">
@@ -296,7 +296,7 @@
                 <div class="ui-padding-30-b">
                     <div class="ui-carousel-gallery ui-card ui-padding-15 round shadow-lg">
                         <div class="ui-row">
-                            <div class="ui-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 sm-fluid">
+                            <div class="ui-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 ui-sm-fluid">
                                 <img src="img/house_01.jpg" class="ui-photo-gallery-call cursor-pointer img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel" data-ui-count="0" alt="">
                                 <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
                                 <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
@@ -349,14 +349,14 @@
                 <div class="ui-padding-30-b">
                     <div class="ui-carousel-gallery ui-card ui-padding-15 round shadow-lg">
                         <div class="ui-row">
-                            <div class="ui-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 sm-fluid">
+                            <div class="ui-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 ui-sm-fluid">
                                 <img src="img/image_01.jpg" class="ui-photo-gallery-call cursor-pointer img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel2" data-ui-count="0" alt="">
                                 <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
                                 <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
                             </div>
                         </div>
                         <div id="ui-detail-carousel2" class="ui-thumbs">
-                            <div class="ui-row ui-row-gap-xs no-fluid ui-ease-2nd-layout">
+                            <div class="ui-row ui-row-gap-xs ui-no-fluid ui-ease-2nd-layout">
                                 <div class="ui-col-5x">
                                     <img class="ui-img ui-ease-default selected" src="img/image_01.jpg" data-ui-href="img/image_01.jpg" alt="">
                                 </div>

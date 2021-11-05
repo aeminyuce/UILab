@@ -74,7 +74,7 @@
                         <label class="form-grid">Captcha</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="form-holder ui-col-static no-fluid">
+                        <div class="form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-100">
                                 <img class="ui-border-dual round ui-ease-border"
@@ -151,7 +151,7 @@
                             <label class="form-grid">Captcha</label>
                         </div>
                         <div class="ui-col-9">
-                            <div class="form-holder ui-col-static no-fluid">
+                            <div class="form-holder ui-col-static ui-no-fluid">
 
                                 <div class="ui-col-100">
                                     <img class="ui-border-dual round ui-ease-border"
@@ -831,7 +831,7 @@
 
                 <h3>Forms with Actions</h3>
                 <div class="ui-padding-30-b">
-                    <div class="ui-row ui-row-gap-sm-v no-fluid">
+                    <div class="ui-row ui-row-gap-sm-v ui-no-fluid">
                         <div class="ui-col-6">
                             <label class="form-label">Label</label>
                         </div>
@@ -843,7 +843,7 @@
                         <input type="text">
                     </div>
 
-                    <div class="ui-row ui-row-gap-sm-v no-fluid">
+                    <div class="ui-row ui-row-gap-sm-v ui-no-fluid">
                         <div class="ui-col-6">
                             <label class="form-label">Label</label>
                         </div>
@@ -855,7 +855,7 @@
                         <input type="text">
                     </div>
 
-                    <div class="ui-row ui-row-gap-sm-v no-fluid">
+                    <div class="ui-row ui-row-gap-sm-v ui-no-fluid">
                         <div class="ui-col-6">
                             <label class="form-label">Label</label>
                         </div>
@@ -1084,7 +1084,7 @@
                         <label class="form-label">Form Holders with Static Grid</label>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static no-fluid">
+                        <div class="form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-100">
                                 <div class="select round ui-ease-form">
@@ -1096,7 +1096,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-6">
                                     <div class="text round ui-ease-form">
                                         <input type="text">
@@ -1112,7 +1112,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static no-fluid">
+                        <div class="form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
@@ -1142,7 +1142,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static no-fluid">
+                        <div class="form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-100">
                                 <div class="select round ui-ease-form">
@@ -1175,7 +1175,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static no-fluid">
+                        <div class="form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-100">
                                 <div class="select round ui-border-dual ui-ease-form">
@@ -1187,7 +1187,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-6">
                                     <div class="text round ui-border-dual ui-ease-form">
                                         <input type="text">
@@ -1203,7 +1203,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static no-fluid">
+                        <div class="form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
@@ -1233,9 +1233,9 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static no-fluid">
+                        <div class="form-holder ui-col-static ui-no-fluid">
 
-                            <div class="ui-row ui-no-row-gap no-fluid">
+                            <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-6">
                                     <div class="text circle ui-border-dual ui-ease-form">
                                         <input type="text">
@@ -1261,7 +1261,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static no-fluid">
+                        <div class="form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
@@ -1294,7 +1294,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static no-fluid">
+                        <div class="form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-100">
                                 <div class="select circle ui-border-dual ui-ease-form">
@@ -1343,7 +1343,7 @@
                         <label class="form-grid">Spinner Form</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="form-spinner form-holder ui-col-static no-fluid">
+                        <div class="form-spinner form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
@@ -1370,7 +1370,7 @@
                         <label class="form-grid">Currency Spinner</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="currency-spinner form-holder ui-col-static no-fluid">
+                        <div class="currency-spinner form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-42">
                                 <button class="currency-down ui-btn ui-btn-square ui-btn-ghost ui-border-dual round ui-ease-btn">
@@ -1504,7 +1504,7 @@
                                 <label class="form-grid">Required with form holders</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="form-holder ui-col-static no-fluid">
+                                <div class="form-holder ui-col-static ui-no-fluid">
 
                                     <div class="ui-row ui-no-row-gap">
                                         <div class="ui-col-12">
@@ -1736,7 +1736,7 @@
                     <span class="sp-30"></span>
 
                     <label class="form-label">Form Holder Example</label>
-                    <div class="form-holder ui-row ui-no-row-gap no-fluid ui-margin-10-b">
+                    <div class="form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b">
 
                         <div class="ui-col-5">
                             <div class="text round ui-border-dual form-light ui-ease-form">
@@ -1760,7 +1760,7 @@
                         </div>
 
                     </div>
-                    <div class="form-holder ui-row ui-no-row-gap no-fluid ui-margin-10-b error">
+                    <div class="form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b error">
 
                         <div class="ui-col-5">
                             <div class="text round ui-border-dual form-light ui-ease-form">
@@ -1784,7 +1784,7 @@
                         </div>
 
                     </div>
-                    <div class="form-holder ui-row ui-no-row-gap no-fluid ui-margin-10-b warning">
+                    <div class="form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b warning">
 
                         <div class="ui-col-5">
                             <div class="text round ui-border-dual form-light ui-ease-form">
@@ -1812,7 +1812,7 @@
                     <span class="sp-20"></span>
 
                     <label class="form-label">Captcha</label>
-                    <div class="form-holder ui-col-static no-fluid">
+                    <div class="form-holder ui-col-static ui-no-fluid">
 
                         <div class="ui-col-100">
                             <img class="ui-border-dual ui-border-light round ui-ease-border"

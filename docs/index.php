@@ -123,7 +123,7 @@
     <!-- header -->
     <header class="ui-container form-lg invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout" data-ui-classes="shadow-lg">
         <div class="ui-row">
-            <div class="ui-col-static no-fluid">
+            <div class="ui-col-static ui-no-fluid">
                 <div class="ui-col-250 ui-col-xs-100 ui-padding-15 ui-no-padding-r">
                     <img class="ui-margin-5-t" src="img/uilab-logo.png" alt="UI lab" srcset="img/uilab-logo@2x.png 2x">
                 </div>
@@ -149,7 +149,7 @@
     </header>
 
     <main class="ui-container ui-no-gutter">
-        <div class="ui-col-static no-fluid">
+        <div class="ui-col-static ui-no-fluid">
 
             <!-- sidebar -->
             <div class="ui-col-250 ui-theme-gray ui-fill-light-200 hidden-md">

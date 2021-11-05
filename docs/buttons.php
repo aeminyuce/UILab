@@ -84,7 +84,7 @@
                 </div>
 
                 <h3>Button Sizes</h3>
-                <div class="ui-row xs-fluid align-l ui-padding-30-b ui-icons-margin-5-l block-2nd ui-ease-2nd-btn">
+                <div class="ui-row ui-xs-fluid align-l ui-padding-30-b ui-icons-margin-5-l block-2nd ui-ease-2nd-btn">
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-lg circle ui-border" href="#">
                             Large Button <svg class="ui-icon right"><use href="#settings"/></svg>

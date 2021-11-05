@@ -635,46 +635,46 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
     .form-grid {
         display: block;
 
-        .ui-row [class*="ui-col-"]:not(.sm-fluid) & { margin-bottom: -(@form-spacing * 3); }
+        .ui-row [class*="ui-col-"]:not(.ui-sm-fluid) & { margin-bottom: -(@form-spacing * 3); }
     }
 
     .ui-row-gap- {
         &md {
             &,&-v {
-                [class*="ui-col-"]:not(.sm-fluid) {
+                [class*="ui-col-"]:not(.ui-sm-fluid) {
                     .form-grid { margin-bottom: -@form-spacing; }
                 }
             }
         }
         &sm {
             &,&-v {
-                [class*="ui-col-"]:not(.sm-fluid) {
+                [class*="ui-col-"]:not(.ui-sm-fluid) {
                     .form-grid { margin-bottom: 0; }
                 }
             }
         }
         &xs {
             &,&-v {
-                [class*="ui-col-"]:not(.sm-fluid) {
+                [class*="ui-col-"]:not(.ui-sm-fluid) {
                     .form-grid { margin-bottom: (@form-spacing - 2); }
                 }
             }
         }
     }
     .ui-no-row-gap {
-        [class*="ui-col-"]:not(.sm-fluid) {
+        [class*="ui-col-"]:not(.ui-sm-fluid) {
             .form-grid { margin-top: (@form-spacing * 2); margin-bottom: @form-spacing; }
         }
     }
 
 }
 @media (@md-start) and (@md-finish) {
-    .sm-fluid {
+    .ui-sm-fluid {
         .form-grid { line-height: @btn-default; display: inline-block; }
     }
 }
 @media (@sm-finish) {
-    .sm-fluid {
+    .ui-sm-fluid {
         .form-grid {
             display: block;
 
@@ -685,28 +685,28 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
     .ui-row-gap- {
         &md {
             &,&-v {
-                [class*="ui-col-"].sm-fluid {
+                [class*="ui-col-"].ui-sm-fluid {
                     .form-grid { margin-bottom: -@form-spacing; }
                 }
             }
         }
         &sm {
             &,&-v {
-                [class*="ui-col-"].sm-fluid {
+                [class*="ui-col-"].ui-sm-fluid {
                     .form-grid { margin-bottom: 0; }
                 }
             }
         }
         &xs {
             &,&-v {
-                [class*="ui-col-"].sm-fluid {
+                [class*="ui-col-"].ui-sm-fluid {
                     .form-grid { margin-bottom: (@form-spacing - 2); }
                 }
             }
         }
     }
     .ui-no-row-gap {
-        [class*="ui-col-"].sm-fluid {
+        [class*="ui-col-"].ui-sm-fluid {
             .form-grid { margin-top: (@form-spacing * 2); margin-bottom: @form-spacing; }
         }
     }

@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="../css/custom/movie-app.css?v=<?php echo filemtime('../css/custom/movie-app.css'); ?>"/>
 
 <main class="ui-container ui-no-gutter">
-    <div class="ui-col-static no-fluid">
+    <div class="ui-col-static ui-no-fluid">
         <div class="ui-col-200 set-relative hidden-md">
             <div class="sidebar ui-col-200 full-h set-fixed set-l ui-padding-5 ui-fill-dark-100 hidden-md scroll-v ui-scrollbar-faded">
 
@@ -419,7 +419,7 @@
             <h2>Search</h2>
             <p class="highlight large font-color-white-50 xs-align-c font-readable">Search for movies, TV shows...</p>
 
-            <div class="ui-col-static no-fluid">
+            <div class="ui-col-static ui-no-fluid">
                 <div class="ui-row ui-no-ui-row-gap-h">
                     <div class="ui-col-12 ui-ease-1st-form">
                         <div class="text text-icon has-clear round-l ui-no-border shadow-in-sm ui-theme-gray ui-fill-light-300 ui-ease-form">
@@ -438,7 +438,7 @@
                 </div>
             </div>
 
-            <div class="ui-row no-fluid ui-icons-xxl block-2nd ui-icons-no-opacity ui-icons-margin-5-v hover-t-more-2nd ui-theme-base ui-ease-2nd-btn">
+            <div class="ui-row ui-no-fluid ui-icons-xxl block-2nd ui-icons-no-opacity ui-icons-margin-5-v hover-t-more-2nd ui-theme-base ui-ease-2nd-btn">
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#tv"/></svg>

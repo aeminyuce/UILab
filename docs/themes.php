@@ -5,7 +5,7 @@
 
                 <h3>Theme Font Colors</h3>
 
-                <div class="ui-row ui-row-gap-md highlight xs-fluid">
+                <div class="ui-row ui-row-gap-md highlight ui-xs-fluid">
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
                         <div class="ui-theme-gray ui-color">
                             .ui-theme-gray<br>
@@ -55,7 +55,7 @@
 
                 <h3>Theme Stroke Colors</h3>
 
-                <div class="ui-row ui-row-gap-md highlight xs-fluid">
+                <div class="ui-row ui-row-gap-md highlight ui-xs-fluid">
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
                         <div class="ui-padding-15 round ui-border ui-border-dual ui-theme-gray ui-stroke">
                             .ui-theme-gray<br>
@@ -106,7 +106,7 @@
                 <h3>Theme Background Colors</h3>
 
                 <b class="ui-margin-5-b block">.ui-theme-gray</b>
-                <div class="ui-row ui-row-gap-xs highlight xs-fluid ui-theme-gray">
+                <div class="ui-row ui-row-gap-xs highlight ui-xs-fluid ui-theme-gray">
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-100">
                             <h4>.ui-fill-light-100</h4>
@@ -212,7 +212,7 @@
                 </div>
 
                 <b class="ui-margin-5-b block">.ui-theme-green</b>
-                <div class="ui-row ui-row-gap-xs highlight xs-fluid ui-theme-green">
+                <div class="ui-row ui-row-gap-xs highlight ui-xs-fluid ui-theme-green">
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-100">
                             <h4>.ui-fill-light-100</h4>
@@ -318,7 +318,7 @@
                 </div>
 
                 <b class="ui-margin-5-b block">.ui-theme-yellow</b>
-                <div class="ui-row ui-row-gap-xs highlight xs-fluid ui-theme-yellow">
+                <div class="ui-row ui-row-gap-xs highlight ui-xs-fluid ui-theme-yellow">
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-100">
                             <h4>.ui-fill-light-100</h4>
@@ -424,7 +424,7 @@
                 </div>
 
                 <b class="ui-margin-5-b block">.ui-theme-orange</b>
-                <div class="ui-row ui-row-gap-xs highlight xs-fluid ui-theme-orange">
+                <div class="ui-row ui-row-gap-xs highlight ui-xs-fluid ui-theme-orange">
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-100">
                             <h4>.ui-fill-light-100</h4>
@@ -530,7 +530,7 @@
                 </div>
 
                 <b class="ui-margin-5-b block">.ui-theme-red</b>
-                <div class="ui-row ui-row-gap-xs highlight xs-fluid ui-theme-red">
+                <div class="ui-row ui-row-gap-xs highlight ui-xs-fluid ui-theme-red">
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-100">
                             <h4>.ui-fill-light-100</h4>
@@ -636,7 +636,7 @@
                 </div>
 
                 <b class="ui-margin-5-b block">.ui-theme-base</b>
-                <div class="ui-row ui-row-gap-xs highlight xs-fluid ui-theme-base">
+                <div class="ui-row ui-row-gap-xs highlight ui-xs-fluid ui-theme-base">
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-100">
                             <h4>.ui-fill-light-100</h4>
@@ -742,7 +742,7 @@
                 </div>
 
                 <b class="ui-margin-5-b block">.ui-theme-sub</b>
-                <div class="ui-row ui-row-gap-xs highlight xs-fluid ui-theme-sub">
+                <div class="ui-row ui-row-gap-xs highlight ui-xs-fluid ui-theme-sub">
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-100">
                             <h4>.ui-fill-light-100</h4>

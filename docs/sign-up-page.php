@@ -41,7 +41,7 @@
 
                     <div class="ui-card ui-margin-30-b shadow-lg">
 
-                        <div class="ui-col-static sm-fluid">
+                        <div class="ui-col-static ui-sm-fluid">
                             <div class="ui-row ui-padding-20 form-lg">
                                 <div class="ui-col-12">
                                     <h3 class="ui-margin-30-b">Create your account</h3>

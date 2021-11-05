@@ -3,7 +3,7 @@
 
 <main class="ui-container full-h ui-no-gutter set-fixed set-all scroll-v">
 
-    <div class="ui-row ui-no-row-gap sm-fluid full-h">
+    <div class="ui-row ui-no-row-gap ui-sm-fluid full-h">
         <div class="login-forms-container ui-col-lg-5 ui-col-6">
 
             <div class="forms-holder ui-card form-lg ui-tabs shadow-lg ui-ease-tabs">
