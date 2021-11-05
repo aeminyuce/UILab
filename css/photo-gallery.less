@@ -1,13 +1,18 @@
 // out: false
 /* photo gallery */ @import (reference) 'ui.less';
 
+@photo-gallery-img-height:              210px;
+@photo-gallery-img-oversize:            125%;
+@photo-gallery-img-bg:                  fade(@black, 25%);
+@photo-gallery-img-hover-bg:            fade(@white, 25%);
+
 @photo-gallery-custom-breakpoint:       620px;
 @photo-gallery-info-padding:            20px;
 @photo-gallery-info-bg:                 fade(@black, 65%);
 
-@photo-gallery-img-height:              208px;
-@photo-gallery-img-bg:                  fade(@black, 25%);
-@photo-gallery-img-hover-bg:            fade(@white, 25%);
+@photo-preview-img-max-size:            90%;
+@photo-preview-img-shadow-size:         5px 30px;
+@photo-preview-img-shadow:              fade(@black, 75%);
 
 @photo-preview-bg:                      fade(@black, 86%);
 @photo-preview-loader-icon-size:        50px;
@@ -29,8 +34,6 @@
 @photo-preview-info-max-height:         132px;
 @photo-preview-info-padding:            10px;
 @photo-preview-info-bg:                 fade(@black, 75%);
-@photo-preview-img-shadow-size:         5px 30px;
-@photo-preview-img-shadow:              fade(@black, 75%);
 
 @keyframes ui-preview-loader {
     from { transform: rotate(0deg); }
@@ -185,7 +188,7 @@
 @media (@md-start) {
     .ui-photo-gallery {
         & > li {
-            img { width: auto; height: 120%; }
+            img { width: auto; height: @photo-gallery-img-oversize; }
 
             a.ui-img { height: @photo-gallery-img-height; }
         }
@@ -215,7 +218,7 @@
         & > li {
             width: 50%;
 
-            img { width: 120%; height: auto; }
+            img { width: @photo-gallery-img-oversize; height: auto; }
         }
 
         a.ui-img {
@@ -255,14 +258,14 @@
 @media (@sm-start) {
     .ui-photo-preview {
         & > img {
-            &.ui-img-v:not(.ui-preview-zoom) { width: auto; height: 96%; }
+            &.ui-img-v:not(.ui-preview-zoom) { width: auto; height: @photo-preview-img-max-size; }
         }
     }
 }
 @media (@xs-finish) {
     .ui-photo-gallery {
         & > li {
-            a.ui-img { height: (@photo-gallery-img-height - (@photo-gallery-img-height / 4)); }
+            a.ui-img { height: (@photo-gallery-img-height - (@photo-gallery-img-height / 3)); }
         }
     }
     .ui-photo-preview {

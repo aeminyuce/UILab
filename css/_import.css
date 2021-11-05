@@ -8663,13 +8663,13 @@ button.ui-dialog-custom:focus {
 @media (min-width: 768px) {
   .ui-photo-gallery > li img {
     width: auto;
-    height: 120%;
+    height: 125%;
   }
   .ui-photo-gallery > li a.ui-img {
-    height: 208px;
+    height: 210px;
   }
   .ui-photo-gallery.ui-has-cover > li:first-child a.ui-img {
-    height: 416px;
+    height: 420px;
   }
   .ui-photo-gallery a.ui-img.ui-has-info > span,
   .ui-photo-gallery a.ui-img.ui-has-info.ui-touch-info > span {
@@ -8688,7 +8688,7 @@ button.ui-dialog-custom:focus {
     width: 50%;
   }
   .ui-photo-gallery > li img {
-    width: 120%;
+    width: 125%;
     height: auto;
   }
   .ui-photo-gallery a.ui-img.ui-has-info > span,
@@ -8705,7 +8705,7 @@ button.ui-dialog-custom:focus {
 }
 @media (min-width: 621px) and (max-width: 959px) {
   .ui-photo-gallery > li .ui-img {
-    height: 208px;
+    height: 210px;
   }
 }
 @media (max-width: 620px) {
@@ -8714,18 +8714,18 @@ button.ui-dialog-custom:focus {
     font-size: 14px !important;
   }
   .ui-photo-gallery > li .ui-img {
-    height: 166.4px;
+    height: 168px;
   }
 }
 @media (min-width: 481px) {
   .ui-photo-preview > img.ui-img-v:not(.ui-preview-zoom) {
     width: auto;
-    height: 96%;
+    height: 90%;
   }
 }
 @media (max-width: 480px) {
   .ui-photo-gallery > li a.ui-img {
-    height: 156px;
+    height: 140px;
   }
   .ui-photo-preview > img.ui-img-v:not(.ui-preview-zoom) {
     width: auto;
