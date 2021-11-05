@@ -175,6 +175,7 @@
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=loading-mask">Loading Mask</a></li>
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=modal">Modal</a></li>
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=photo-images">Photo Images</a></li>
+                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=photo-gallery">Photo Gallery</a></li>
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=pricing-tables">Pricing Tables</a></li>
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=progress-bar">Progress Bar</a></li>
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=steps">Steps</a></li>
