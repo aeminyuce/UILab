@@ -549,14 +549,14 @@
                         <div class="ui-col-4">
                             <div class="ui-fill-dark-100 ui-padding-10-v ui-padding-5-h round no-scroll">ui-col-4</div>
                         </div>
-                        <div class="ui-col-4 offset-4">
-                            <div class="ui-fill-dark-100 ui-padding-10-v ui-padding-5-h round no-scroll">ui-col-4 .offset-4</div>
+                        <div class="ui-col-4 ui-offset-4">
+                            <div class="ui-fill-dark-100 ui-padding-10-v ui-padding-5-h round no-scroll">ui-col-4 .ui-offset-4</div>
                         </div>
-                        <div class="ui-col-3 offset-3">
-                            <div class="ui-fill-dark-100 ui-padding-10-v ui-padding-5-h round no-scroll">ui-col-3 .offset-3</div>
+                        <div class="ui-col-3 ui-offset-3">
+                            <div class="ui-fill-dark-100 ui-padding-10-v ui-padding-5-h round no-scroll">ui-col-3 .ui-offset-3</div>
                         </div>
-                        <div class="ui-col-3 offset-3">
-                            <div class="ui-fill-dark-100 ui-padding-10-v ui-padding-5-h round no-scroll">ui-col-3 .offset-3</div>
+                        <div class="ui-col-3 ui-offset-3">
+                            <div class="ui-fill-dark-100 ui-padding-10-v ui-padding-5-h round no-scroll">ui-col-3 .ui-offset-3</div>
                         </div>
                     </div>
                 </div>
@@ -564,11 +564,11 @@
                 <h3>Column Ordering</h3>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row">
-                        <div class="ui-col-9 push-3">
-                            <div class="ui-fill-dark-100 ui-padding-10-v ui-padding-5-h round no-scroll">ui-col-9 push-3</div>
+                        <div class="ui-col-9 ui-push-3">
+                            <div class="ui-fill-dark-100 ui-padding-10-v ui-padding-5-h round no-scroll">ui-col-9 ui-push-3</div>
                         </div>
-                        <div class="ui-col-3 pull-9">
-                            <div class="ui-fill-dark-100 ui-padding-10-v ui-padding-5-h round no-scroll">ui-col-3 pull-9</div>
+                        <div class="ui-col-3 ui-pull-9">
+                            <div class="ui-fill-dark-100 ui-padding-10-v ui-padding-5-h round no-scroll">ui-col-3 ui-pull-9</div>
                         </div>
                     </div>
                 </div>

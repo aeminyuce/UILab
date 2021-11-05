@@ -296,7 +296,7 @@
                 <div class="ui-padding-30-b">
                     <div class="ui-carousel-gallery ui-card ui-padding-15 round shadow-lg">
                         <div class="ui-row">
-                            <div class="ui-detail ui-col-8 ui-col-md-6 push-2 push-md-3 sm-fluid">
+                            <div class="ui-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 sm-fluid">
                                 <img src="img/house_01.jpg" class="ui-photo-gallery-call cursor-pointer img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel" data-ui-count="0" alt="">
                                 <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
                                 <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
@@ -349,7 +349,7 @@
                 <div class="ui-padding-30-b">
                     <div class="ui-carousel-gallery ui-card ui-padding-15 round shadow-lg">
                         <div class="ui-row">
-                            <div class="ui-detail ui-col-8 ui-col-md-6 push-2 push-md-3 sm-fluid">
+                            <div class="ui-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 sm-fluid">
                                 <img src="img/image_01.jpg" class="ui-photo-gallery-call cursor-pointer img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel2" data-ui-count="0" alt="">
                                 <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
                                 <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>

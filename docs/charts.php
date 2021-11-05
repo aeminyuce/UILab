@@ -330,7 +330,7 @@
                 </div>
 
             </div>
-            <div class="ui-col-lg-8 push-lg-2 ui-col-12 ui-padding-30-v">
+            <div class="ui-col-lg-8 ui-push-lg-2 ui-col-12 ui-padding-30-v">
 
                 <h3>Donut Chart Examples</h3>
 
@@ -511,7 +511,7 @@
                 </div>
 
             </div>
-            <div class="ui-col-lg-8 push-lg-2 ui-col-12 ui-padding-30-v">
+            <div class="ui-col-lg-8 ui-push-lg-2 ui-col-12 ui-padding-30-v">
 
                 <h3>Pie Chart Examples</h3>
 

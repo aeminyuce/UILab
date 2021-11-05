@@ -79,15 +79,15 @@ html {
 }
 
 [class*="ui-col-"] { min-height: 1px; display: block; }
-[class*="push-"],[class*="pull-"] { position: relative; }
+[class*="ui-push-"],[class*="ui-pull-"] { position: relative; }
 
 ._create-cols(@name; @i) {
     @size:  (@i / max(@grid-columns));
 
     .ui-col@{name}@{i} { width: percentage(@size); }
-    .offset@{name}@{i} { margin-left: percentage(@size); }
-  	.push@{name}@{i} { left: percentage(@size); }
-  	.pull@{name}@{i} { right: percentage(@size); }
+    .ui-offset@{name}@{i} { margin-left: percentage(@size); }
+  	.ui-push@{name}@{i} { left: percentage(@size); }
+  	.ui-pull@{name}@{i} { right: percentage(@size); }
 };
 
 each(@grid-columns, {
@@ -144,7 +144,7 @@ each(@custom-static-grid-columns, {
     }
 
     .ui-no-gutter-lg { padding-right: 0 !important; padding-left: 0 !important; }
-    .offset-lg-0 { margin-left: 0; }
+    .ui-offset-lg-0 { margin-left: 0; }
 
     each(@grid-columns, {
         ._create-cols(~'-lg-'; @value);
@@ -165,7 +165,7 @@ each(@custom-static-grid-columns, {
 }
 @media (@md-start) and (@md-finish) {
     .ui-no-gutter-md { padding-right: 0 !important; padding-left: 0 !important; }
-    .offset-md-0 { margin-left: 0; }
+    .ui-offset-md-0 { margin-left: 0; }
 
     each(@grid-columns, {
         ._create-cols(~'-md-'; @value);
@@ -188,13 +188,13 @@ each(@custom-static-grid-columns, {
             & > [class*="ui-col-"]:not([class*="ui-col-md-"]):not([class*="ui-col-sm-"]):not([class*="ui-col-xs-"]) {
                 &:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) { width: 100%; clear: both; }
             }
-            & > [class*="offset-"]:not([class*="offset-md-"]):not([class*="offset-sm-"]):not([class*="offset-xs-"]) {
+            & > [class*="ui-offset-"]:not([class*="ui-offset-md-"]):not([class*="ui-offset-sm-"]):not([class*="ui-offset-xs-"]) {
                 &:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) { margin-left: 0; }
             }
-            & > [class*="push-"]:not([class*="push-md-"]):not([class*="push-sm-"]):not([class*="push-xs-"]) {
+            & > [class*="ui-push-"]:not([class*="ui-push-md-"]):not([class*="ui-push-sm-"]):not([class*="ui-push-xs-"]) {
                 &:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) { left: 0; }
             }
-            & > [class*="pull-"]:not([class*="pull-md-"]):not([class*="pull-sm-"]):not([class*="pull-xs-"]) {
+            & > [class*="ui-pull-"]:not([class*="ui-pull-md-"]):not([class*="ui-pull-sm-"]):not([class*="ui-pull-xs-"]) {
                 &:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) { right: 0; }
             }
         }
@@ -211,7 +211,7 @@ each(@custom-static-grid-columns, {
         &-md,&-sm { padding-right: 0 !important; padding-left: 0 !important; }
     }
 
-    .offset-sm-0 { margin-left: 0; }
+    .ui-offset-sm-0 { margin-left: 0; }
 
     each(@grid-columns, {
         ._create-cols(~'-sm-'; @value);
@@ -235,13 +235,13 @@ each(@custom-static-grid-columns, {
             & > [class*="ui-col-"]:not([class*="ui-col-sm-"]):not([class*="ui-col-xs-"]) {
                 &:not(.no-fluid):not(.xs-fluid) { &:extend(.ui-row.sm-fluid > [class*="ui-col-"]); }
             }
-            & > [class*="offset-"]:not([class*="offset-sm-"]):not([class*="offset-xs-"]) {
+            & > [class*="ui-offset-"]:not([class*="ui-offset-sm-"]):not([class*="ui-offset-xs-"]) {
                 &:not(.no-fluid):not(.xs-fluid) { margin-left: 0; }
             }
-            & > [class*="push-"]:not([class*="push-sm-"]):not([class*="push-xs-"]) {
+            & > [class*="ui-push-"]:not([class*="ui-push-sm-"]):not([class*="ui-push-xs-"]) {
                 &:not(.no-fluid):not(.xs-fluid) { left: 0; }
             }
-            & > [class*="pull-"]:not([class*="pull-sm-"]):not([class*="pull-xs-"]) {
+            & > [class*="ui-pull-"]:not([class*="ui-pull-sm-"]):not([class*="ui-pull-xs-"]) {
                 &:not(.no-fluid):not(.xs-fluid) { right: 0; }
             }
         }
@@ -258,7 +258,7 @@ each(@custom-static-grid-columns, {
     }
 
     .ui-container { min-width: @layout-min; }
-    .offset-xs-0 { margin-left: 0; }
+    .ui-offset-xs-0 { margin-left: 0; }
 
     each(@grid-columns, {
         ._create-cols(~'-xs-'; @value);
@@ -282,13 +282,13 @@ each(@custom-static-grid-columns, {
             & > [class*="ui-col-"]:not([class*="ui-col-xs-"]) {
                 &:not(.no-fluid) { &:extend(.ui-row.xs-fluid > [class*="ui-col-"]); }
             }
-            & > [class*="offset-"]:not([class*="offset-xs-"]) {
+            & > [class*="ui-offset-"]:not([class*="ui-offset-xs-"]) {
                 &:not(.no-fluid) { margin-left: 0; }
             }
-            & > [class*="push-"]:not([class*="push-xs-"]) {
+            & > [class*="ui-push-"]:not([class*="ui-push-xs-"]) {
                 &:not(.no-fluid) { left: 0; }
             }
-            & > [class*="pull-"]:not([class*="pull-xs-"]) {
+            & > [class*="ui-pull-"]:not([class*="ui-pull-xs-"]) {
                 &:not(.no-fluid) { right: 0; }
             }
         }
@@ -306,9 +306,9 @@ each(@custom-static-grid-columns, {
             & > .ui-row,& > [class*="ui-col-"] { width: 100%; display: block; }
         }
 
-        [class*="offset-"]& { margin-left: 0; }
-        [class*="push-"]& { left: 0; }
-        [class*="pull-"]& { right: 0; }
+        [class*="ui-offset-"]& { margin-left: 0; }
+        [class*="ui-push-"]& { left: 0; }
+        [class*="ui-pull-"]& { right: 0; }
     }
 }
 @media (@lg-finish) {
@@ -318,14 +318,14 @@ each(@custom-static-grid-columns, {
             & > .ui-row,& > [class*="ui-col-"] { width: 100%; display: block; }
         }
 
-        [class*="offset-"]& { margin-left: 0; }
-        [class*="push-"]& { left: 0; }
-        [class*="pull-"]& { right: 0; }
+        [class*="ui-offset-"]& { margin-left: 0; }
+        [class*="ui-push-"]& { left: 0; }
+        [class*="ui-pull-"]& { right: 0; }
     }
 }
 @media (@xl-start) {
     .ui-no-gutter-xl { padding-right: 0 !important; padding-left: 0 !important; }
-    .offset-xl-0 { margin-left: 0; }
+    .ui-offset-xl-0 { margin-left: 0; }
 
     each(@grid-columns, {
         ._create-cols(~'-xl-'; @value);

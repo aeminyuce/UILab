@@ -454,7 +454,7 @@
 
                 <div class="ui-container">
                     <div class="ui-row ui-border-b ui-margin-15-b ui-theme-panel2">
-                        <div class="ui-col-4 offset-4 ui-no-padding-b">
+                        <div class="ui-col-4 ui-offset-4 ui-no-padding-b">
 
                             <div class="ui-btn-holder font-color-black-muted form-lg ui-ease-1st-btn">
                                 <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color ui-active">Forms</button>
@@ -514,11 +514,11 @@
                                         <div class="ui-card-side ui-padding-15 form-lg">
                                             <div class="ui-row">
 
-                                                <div class="ui-col-8 offset-2">
+                                                <div class="ui-col-8 ui-offset-2">
                                                     <h3>Customer Info</h3>
                                                 </div>
 
-                                                <div class="ui-col-3 offset-2">
+                                                <div class="ui-col-3 ui-offset-2">
                                                     <label class="form-grid">First Name</label>
                                                 </div>
                                                 <div class="ui-col-5">
@@ -528,7 +528,7 @@
                                                     <p class="required-msg">Enter your first name.</p>
                                                 </div>
 
-                                                <div class="ui-col-3 offset-2">
+                                                <div class="ui-col-3 ui-offset-2">
                                                     <label class="form-grid">Last Name</label>
                                                 </div>
                                                 <div class="ui-col-5">
@@ -538,7 +538,7 @@
                                                     <p class="required-msg">Enter your last name.</p>
                                                 </div>
 
-                                                <div class="ui-col-3 offset-2">
+                                                <div class="ui-col-3 ui-offset-2">
                                                     <label class="form-grid">Contact Phone</label>
                                                 </div>
                                                 <div class="ui-col-5">
@@ -549,7 +549,7 @@
                                                     <p class="required-msg">Enter your phone.</p>
                                                 </div>
 
-                                                <div class="ui-col-3 offset-2">
+                                                <div class="ui-col-3 ui-offset-2">
                                                     <label class="form-grid">Age</label>
                                                 </div>
                                                 <div class="ui-col-5">
@@ -565,7 +565,7 @@
                                                     <p class="required-msg">Enter your age.</p>
                                                 </div>
 
-                                                <div class="ui-col-3 offset-2">
+                                                <div class="ui-col-3 ui-offset-2">
                                                     <label class="form-grid">Email Address</label>
                                                 </div>
                                                 <div class="ui-col-5">
@@ -576,7 +576,7 @@
                                                     <p class="required-msg">Enter a valid email.</p>
                                                 </div>
 
-                                                <div class="ui-col-3 offset-2">
+                                                <div class="ui-col-3 ui-offset-2">
                                                     <label class="form-grid">Company Site</label>
                                                 </div>
                                                 <div class="ui-col-5">
@@ -607,11 +607,11 @@
 
                                                 <div class="sp-1 ui-margin-20 ui-border-b ui-border-dashed"></div>
 
-                                                <div class="ui-col-8 offset-2">
+                                                <div class="ui-col-8 ui-offset-2">
                                                     <h3>Address Details</h3>
                                                 </div>
 
-                                                <div class="ui-col-3 offset-2">
+                                                <div class="ui-col-3 ui-offset-2">
                                                     <label class="form-grid">Country</label>
                                                 </div>
                                                 <div class="ui-col-5">
@@ -622,7 +622,7 @@
                                                     <p class="required-msg">Type/Select your country.</p>
                                                 </div>
 
-                                                <div class="ui-col-3 offset-2">
+                                                <div class="ui-col-3 ui-offset-2">
                                                     <label class="form-grid">Address</label>
                                                 </div>
                                                 <div class="ui-col-5">

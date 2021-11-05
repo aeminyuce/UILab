@@ -8,7 +8,7 @@
 
                 <div class="ui-row ui-border-b ui-margin-15-b">
 
-                    <div class="ui-col-4 offset-4 ui-no-padding-b">
+                    <div class="ui-col-4 ui-offset-4 ui-no-padding-b">
                         <div class="ui-btn-holder form-lg ui-ease-1st-btn">
                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke active">CSS</button>
                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">JS</button>

@@ -7,7 +7,7 @@
                 <div class="ui-tabs ui-padding-30-b ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
                     <div class="ui-row ui-border-b ui-margin-15-b">
 
-                        <div class="ui-col-4 offset-4 ui-no-padding-b">
+                        <div class="ui-col-4 ui-offset-4 ui-no-padding-b">
                             <div class="ui-btn-holder font-color-black-muted form-lg ui-ease-1st-btn">
                                 <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color ui-active">Tab Button</button>
                                 <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">Tab Button</button>

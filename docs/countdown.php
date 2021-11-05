@@ -1,7 +1,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row sm-fluid align-c">
-            <div class="ui-col-6 offset-3 ui-padding-30-v">
+            <div class="ui-col-6 ui-offset-3 ui-padding-30-v">
 
                 <h3>Countdown Examples</h3>
 

@@ -177,7 +177,7 @@
 
                             </div>
                         </div>
-                        <div class="ui-col-9 offset-3">
+                        <div class="ui-col-9 ui-offset-3">
                             <button type="reset" class="ui-btn ui-btn-xs-fluid round ui-ease-btn">Reset Form</button>
                         </div>
                         <div class="ui-col-6">
@@ -1669,7 +1669,7 @@
                                 <i class="hint font-color-black-muted">* Required for accepting <a href="#" class="underline">Terms and Conditions.</a></i>
                             </div>
 
-                            <div class="ui-col-9 push-3 ui-ease-1st-btn">
+                            <div class="ui-col-9 ui-push-3 ui-ease-1st-btn">
                                 <button type="reset" class="ui-btn ui-btn-xs-fluid round">Reset Form</button>
                                 <button type="submit" class="ui-btn ui-btn-xs-fluid round ui-theme-sub ui-fill-dark-100">Submit Form</button>
                             </div>
