@@ -296,6 +296,22 @@
                     </div>
                 </div>
 
+                <h5 class="font-bold">Multi Buttons with Condensed Text</h5>
+                <div class="row ui-padding-30-b block-2nd ui-theme-base ui-ease-2nd-btn">
+                    <div class="col-3 col-sm-6">
+                        <a href="#" class="ui-btn ui-btn-lg ui-btn-multi font-condensed round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
+                    </div>
+                    <div class="col-3 col-sm-6">
+                        <a href="#" class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
+                    </div>
+                    <div class="col-3 col-sm-6">
+                        <a href="#" class="ui-btn ui-btn-sm ui-btn-multi font-condensed round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
+                    </div>
+                    <div class="col-3 col-sm-6">
+                        <a href="#" class="ui-btn ui-btn-xs ui-btn-multi font-condensed round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
+                    </div>
+                </div>
+
                 <h3>ui-pagination Buttons</h3>
                 <div class="ui-padding-30-b">
 

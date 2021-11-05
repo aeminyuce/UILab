@@ -44,7 +44,7 @@
                         <div class="ui-padding-15 ui-sm-no-padding">
                             <div class="row highlight">
                                 <div class="col-6">
-                                    <h3>Summer Holiday Photos</h3>
+                                    <h3 class="ui-margin-15-v">Summer Holiday Photos</h3>
                                 </div>
                                 <div class="col-6 align-r xs-align-c">
                                     <span class="font-color-black-muted large inline-block">23 Jun - 18 Aug, 2019</span>
@@ -54,19 +54,112 @@
 
                             <ul class="ui-photo-gallery ui-has-cover block-2nd ui-ease-photo-gallery ui-theme-sub">
                                 <li>
-                                    <a class="ui-img ui-has-info ui-show-info" href="img/image_03.jpg">
+                                    <a class="ui-img ui-has-info" href="img/image_03.jpg">
                                         <img src="img/image_03.jpg" alt="">
                                         <span class="font-readable">
-                                            <span class="scroll-v ui-margin-15 set-absolute set-all">
+                                            <span class="scroll-v ui-margin-30 set-absolute set-all">
                                                 <span class="x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                                 <br><br>
                                                 <span class="font-color-white-muted large">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                     Curabitur consequat gravida posuere.
                                                     Etiam luctus ex vitae diam tempor, a egestas magna posuere.
-                                                    <br><br>
-                                                    Vestibulum faucibus ex dolor, at tempor ante iaculis vel.
-                                                    Nulla facilisi. Ut non nisl eget orci placerat lobortis.
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ui-img ui-has-info" href="img/image_01.jpg">
+                                        <img src="img/image_01.jpg" alt="">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ui-img ui-has-info" href="img/image_03.jpg">
+                                        <img src="img/image_03.jpg" alt="">
+                                        <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ui-img ui-has-info" href="img/image_04.jpg">
+                                        <img src="img/image_04.jpg" alt="">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ui-img ui-has-info" href="img/image_05.jpg">
+                                        <img src="img/image_05.jpg" alt="">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ui-img ui-has-info" href="img/image_06.jpg">
+                                        <img src="img/image_06.jpg" alt="">
+                                        <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ui-img ui-has-info" href="img/image_07.jpg">
+                                        <img src="img/image_07.jpg" alt="">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ui-img ui-has-info" href="img/image_08.jpg">
+                                        <img src="img/image_08.jpg" alt="">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ui-img ui-has-info" href="img/image_09.jpg">
+                                        <img src="img/image_09.jpg" alt="">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ui-img ui-has-info" href="img/image_10.jpg">
+                                        <img src="img/image_10.jpg" alt="">
+                                        <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ui-img ui-has-info" href="img/image_01.jpg">
+                                        <img src="img/image_01.jpg" alt="">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ui-img ui-has-info" href="img/image_02.jpg">
+                                        <img src="img/image_02.jpg" alt="">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ui-padding-15 ui-sm-no-padding">
+                            <div class="row highlight">
+                                <div class="col-6">
+                                    <h3 class="ui-margin-15-v">Autumn School Photos</h3>
+                                </div>
+                                <div class="col-6 align-r xs-align-c">
+                                    <span class="font-color-black-muted large inline-block">23 Jun - 18 Aug, 2019</span>
+                                    <img class="ui-img-photo ui-img-photo-sm circle ui-margin-15-l" src="img/profile-image3.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <ul class="ui-photo-gallery ui-has-cover block-2nd ui-ease-photo-gallery ui-theme-sub">
+                                <li>
+                                    <a class="ui-img ui-has-info" href="img/image_06.jpg">
+                                        <img src="img/image_06.jpg" alt="">
+                                        <span class="font-readable">
+                                            <span class="scroll-v ui-margin-30 set-absolute set-all">
+                                                <span class="x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                <br><br>
+                                                <span class="font-color-white-muted large">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Curabitur consequat gravida posuere.
+                                                    Etiam luctus ex vitae diam tempor, a egestas magna posuere.
                                                 </span>
                                             </span>
                                         </span>
@@ -139,6 +232,12 @@
                                     </a>
                                 </li>
                             </ul>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 align-c">
+                                <button class="load-more ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h circle ui-ease-btn">Load more</button>
+                            </div>
                         </div>
 
                     </div>
