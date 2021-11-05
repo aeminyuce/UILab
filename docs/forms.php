@@ -1,6 +1,3 @@
-<!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/forms.css?v=<?php echo filemtime('../css/custom/forms.css'); ?>"/>
-
 <main class="container no-gutter">
     <div class="fixed">
         <div class="row">
@@ -79,8 +76,13 @@
                     <div class="col-9">
                         <div class="form-holder col-static no-fluid">
 
-                            <div class="col-105">
-                                <img class="img-fluid ui-border-dual round ui-ease-border" src="img/captcha.jpg" alt="">
+                            <div class="col-100">
+                                <img class="ui-border-dual round ui-ease-border"
+                                    src="img/captcha.jpg"
+                                    width="100"
+                                    height="42"
+                                    alt=""
+                                >
                             </div>
                             <div class="col-42">
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-ease-btn">
@@ -151,8 +153,13 @@
                         <div class="col-9">
                             <div class="form-holder col-static no-fluid">
 
-                                <div class="col-115">
-                                    <img class="img-fluid ui-border-dual round ui-ease-border" src="img/captcha.jpg" alt="">
+                                <div class="col-100">
+                                    <img class="ui-border-dual round ui-ease-border"
+                                        src="img/captcha.jpg"
+                                        width="100"
+                                        height="48"
+                                        alt=""
+                                    >
                                 </div>
                                 <div class="col-48">
                                     <button class="ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-ease-btn">
@@ -1807,8 +1814,13 @@
                     <label class="form-label">Captcha</label>
                     <div class="form-holder col-static no-fluid">
 
-                        <div class="col-105">
-                            <img class="img-fluid ui-border-dual ui-border-light round ui-ease-border" src="img/captcha.jpg" alt="">
+                        <div class="col-100">
+                            <img class="ui-border-dual ui-border-light round ui-ease-border"
+                                src="img/captcha.jpg"
+                                width="100"
+                                height="42"
+                                alt=""
+                            >
                         </div>
                         <div class="col-42">
                             <button class="ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-border-light ui-ease-btn">
