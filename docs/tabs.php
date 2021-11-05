@@ -1,11 +1,11 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="row">
+        <div class="ui-row">
             <div class="col-12 ui-padding-30">
 
                 <h3>Horizontal ui-tabs</h3>
                 <div class="ui-tabs ui-padding-30-b ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
-                    <div class="row ui-border-b ui-margin-15-b">
+                    <div class="ui-row ui-border-b ui-margin-15-b">
 
                         <div class="col-4 offset-4 ui-no-padding-b">
                             <div class="ui-btn-holder font-color-black-muted form-lg ui-ease-1st-btn">
@@ -15,7 +15,7 @@
                         </div>
 
                     </div>
-                    <div class="row">
+                    <div class="ui-row">
 
                         <div class="col-12">
                             <div class="ui-tab-content ui-open ui-open-ease">
@@ -61,7 +61,7 @@
 
                 </div>
 
-                <div class="row ui-padding-30-b">
+                <div class="ui-row ui-padding-30-b">
                     <div class="col-12">
                         <div class="ui-tabs ui-ease-tabs" data-ui-classes="ui-fill-dark-100">
 
@@ -169,7 +169,7 @@
                         </div>
 
                     </div>
-                    <div class="row">
+                    <div class="ui-row">
                         <div class="col-12">
                             <div class="ui-tab-content ui-open ui-open-ease">
                                 <p class="font-readable">
@@ -198,7 +198,7 @@
 
                 <div class="ui-tabs col-static ui-border-dual ui-margin-30-b ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
-                    <div class="row">
+                    <div class="ui-row">
                         <div class="col-12">
                             <div class="ui-tab-content ui-open ui-open-ease">
                                 <p class="font-readable">
@@ -279,7 +279,7 @@
                             </div>
 
                         </div>
-                        <div class="row">
+                        <div class="ui-row">
                             <div class="col-12">
                                 <div class="ui-tab-content ui-open ui-open-ease">
                                     <p class="font-readable">
@@ -329,7 +329,7 @@
                             </div>
 
                         </div>
-                        <div class="row">
+                        <div class="ui-row">
                             <div class="col-12">
                                 <div class="ui-tab-content ui-open ui-open-ease">
                                     <p class="font-readable">

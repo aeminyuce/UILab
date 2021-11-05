@@ -1,13 +1,13 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="row">
+        <div class="ui-row">
             <div class="col-12 ui-padding-30-v">
 
                 <h3>Photo Gallery Examples</h3>
 
                 <h5 class="font-bold">Default Photo Gallery</h5>
                 <div class="ui-padding-30-b">
-                    <div class="row no-fluid ui-photo-gallery ui-ease-photo-gallery">
+                    <div class="ui-row no-fluid ui-photo-gallery ui-ease-photo-gallery">
                         <div class="col-3 col-sm-4 col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_01.jpg">
                                 <img class="img-fluid" src="img/image_01.jpg" alt="">
@@ -55,7 +55,7 @@
 
                 <h5 class="font-bold">Default Photo Gallery</h5>
                 <div class="ui-padding-30-b">
-                    <div class="row no-fluid ui-photo-gallery ui-ease-photo-gallery">
+                    <div class="ui-row no-fluid ui-photo-gallery ui-ease-photo-gallery">
                         <div class="col-2 col-sm-4 col-xs-4">
                             <a class="ui-img ui-margin-1-h round" href="img/movie_01.jpg">
                                 <img class="img-fluid" src="img/movie_01.jpg" alt="">
@@ -295,7 +295,7 @@
                 <h5 class="font-bold">Product Gallery with Carousel</h5>
                 <div class="ui-padding-30-b">
                     <div class="ui-carousel-gallery ui-card ui-padding-15 round shadow-lg">
-                        <div class="row">
+                        <div class="ui-row">
                             <div class="ui-detail col-8 col-md-6 push-2 push-md-3 sm-fluid">
                                 <img src="img/house_01.jpg" class="ui-photo-gallery-call cursor-pointer img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel" data-ui-count="0" alt="">
                                 <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
@@ -348,7 +348,7 @@
                 <h5 class="font-bold">Product Gallery Without Carousel</h5>
                 <div class="ui-padding-30-b">
                     <div class="ui-carousel-gallery ui-card ui-padding-15 round shadow-lg">
-                        <div class="row">
+                        <div class="ui-row">
                             <div class="ui-detail col-8 col-md-6 push-2 push-md-3 sm-fluid">
                                 <img src="img/image_01.jpg" class="ui-photo-gallery-call cursor-pointer img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel2" data-ui-count="0" alt="">
                                 <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
@@ -356,7 +356,7 @@
                             </div>
                         </div>
                         <div id="ui-detail-carousel2" class="ui-thumbs">
-                            <div class="row row-gap-xs no-fluid ui-ease-2nd-layout">
+                            <div class="ui-row ui-row-gap-xs no-fluid ui-ease-2nd-layout">
                                 <div class="col-5x">
                                     <img class="ui-img ui-ease-default selected" src="img/image_01.jpg" data-ui-href="img/image_01.jpg" alt="">
                                 </div>

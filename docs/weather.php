@@ -2,7 +2,7 @@
     <div class="ui-fixed ui-padding-30-v">
 
         <h3>Weather Examples</h3>
-        <div class="row ui-padding-30-b">
+        <div class="ui-row ui-padding-30-b">
             <div class="col-3 col-md-6">
 
                 <div class="ui-weather round ui-ease-weather">

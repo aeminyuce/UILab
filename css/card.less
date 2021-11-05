@@ -18,14 +18,14 @@
 .ui-card,.ui-card-side {
     &:before,&:after { content: ""; display: table; }
     &:after { clear: both; }
-    & > .row { margin-left: inherit; margin-right: inherit; }
+    & > .ui-row { margin-left: inherit; margin-right: inherit; }
 }
 
 [class*="ui-card-"]:not(.ui-card-side) {
     border-left-style: solid; border-left-width: @cards-message-left-border;
 
     &.round { border-radius: 0 @round @round 0; }
-    & > .row { &:extend(.ui-card > .row); }
+    & > .ui-row { &:extend(.ui-card > .ui-row); }
 }
 
 .ui-card- {

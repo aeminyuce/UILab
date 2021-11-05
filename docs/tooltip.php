@@ -1,6 +1,6 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="row ui-padding-30-v">
+        <div class="ui-row ui-padding-30-v">
 
             <div class="col-12">
 

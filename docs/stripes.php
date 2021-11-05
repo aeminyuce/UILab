@@ -1,12 +1,12 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="row">
+        <div class="ui-row">
             <div class="col-12 ui-padding-30">
 
                 <h3>Stripes Examples</h3>
 
                 <h5 class="font-bold ui-margin-15-b">Stripe Modes:</h5>
-                <div class="row no-fluid ui-padding-30-b">
+                <div class="ui-row no-fluid ui-padding-30-b">
                     <div class="col-6">
 
                         <b class="ui-margin-5-b block">.ui-stripe-light</b>
@@ -22,7 +22,7 @@
                 </div>
 
                 <h5 class="font-bold ui-margin-15-b">Stripe Sizes:</h5>
-                <div class="row no-fluid ui-padding-30-b">
+                <div class="ui-row no-fluid ui-padding-30-b">
                     <div class="col-6">
 
                         <b class="ui-margin-5-b block">.ui-stripe-xs</b>
@@ -50,7 +50,7 @@
                 </div>
 
                 <h5 class="font-bold ui-margin-15-b">Stripes with Themes:</h5>
-                <div class="row no-fluid ui-padding-30-b">
+                <div class="ui-row no-fluid ui-padding-30-b">
                     <div class="col-6">
 
                         <b class="ui-margin-5-b block">.ui-theme-yellow</b>
@@ -114,7 +114,7 @@
                 </div>
 
                 <h5 class="font-bold ui-margin-15-b">Animated Stripes:</h5>
-                <div class="row no-fluid ui-padding-30-b">
+                <div class="ui-row no-fluid ui-padding-30-b">
                     <div class="col-6">
 
                         <b class="ui-margin-5-b block">.ui-theme-yellow ui-animate-progress</b>

@@ -1,6 +1,6 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="row">
+        <div class="ui-row">
             <div class="col-6 ui-padding-30">
 
                 <h3>Headings</h3>
@@ -195,7 +195,7 @@
                 </div>
 
                 <h3>List Spacers</h3>
-                <div class="row ui-padding-30-b">
+                <div class="ui-row ui-padding-30-b">
                     <div class="col-12">
                         <h5 class="font-bold">With Inline Lists</h5>
                         <ul class="list-inline ui-list-spacer-5">
@@ -320,7 +320,7 @@
                 </div>
 
                 <h3>Text Elements</h3>
-                <div class="row ui-padding-30-b">
+                <div class="ui-row ui-padding-30-b">
                     <div class="col-6">
                         <mark>Marked Text</mark>
                         <br>

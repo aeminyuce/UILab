@@ -1,11 +1,11 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="row sm-fluid align-c">
+        <div class="ui-row sm-fluid align-c">
             <div class="col-6 offset-3 ui-padding-30-v">
 
                 <h3>Countdown Examples</h3>
 
-                <div class="countdown row row-gap-sm-h no-fluid">
+                <div class="countdown ui-row ui-row-gap-sm-h no-fluid">
                     <div class="col-3">
                         <b class="d x-large">02</b>
                         <span class="clearfix visible-xs"></span>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
 
-                <div class="countdown row row-gap-sm-h no-fluid">
+                <div class="countdown ui-row ui-row-gap-sm-h no-fluid">
                     <div class="col-3">
                         <b class="d largest block">06</b>
                         <span class="font-color-black-muted">days</span>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
 
-                <div class="countdown row row-gap-sm-h no-fluid">
+                <div class="countdown ui-row ui-row-gap-sm-h no-fluid">
                     <div class="col-3">
                         <div class="ui-border-dual round ui-padding-10">
                             <b class="d largest block">29</b>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
 
-                <div class="countdown row row-gap-sm-h no-fluid ui-theme-sub">
+                <div class="countdown ui-row ui-row-gap-sm-h no-fluid ui-theme-sub">
                     <div class="col-3">
                         <div class="ui-border ui-stroke round ui-padding-10">
                             <b class="d ui-color largest block">05</b>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
 
-                <div class="countdown row row-gap-sm-h no-fluid ui-theme-gray">
+                <div class="countdown ui-row ui-row-gap-sm-h no-fluid ui-theme-gray">
                     <div class="col-3">
                         <div class="ui-fill-light-300 round ui-padding-10">
                             <b class="d largest block">00</b>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="countdown row row-gap-sm-h no-fluid ui-theme-sub">
+                <div class="countdown ui-row ui-row-gap-sm-h no-fluid ui-theme-sub">
                     <div class="col-3">
                         <div class="ui-fill-dark-100 round ui-padding-10">
                             <b class="d largest block">00</b>

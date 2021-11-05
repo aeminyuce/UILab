@@ -74,12 +74,12 @@
 
             </div>
         </div>
-        <div class="row no-row-gap">
+        <div class="ui-row ui-no-row-gap">
             <div class="col-12">
 
                 <div class="ui-padding-30 ui-no-padding-b ui-md-no-padding">
 
-                    <header class="row no-row-gap-t ui-sticky-md ui-icons-no-opacity form-lg" data-ui-classes="shadow-lg">
+                    <header class="ui-row ui-no-ui-row-gap-t ui-sticky-md ui-icons-no-opacity form-lg" data-ui-classes="shadow-lg">
                         <div class="col-6 hidden-md ui-ease-1st-form">
                             <div class="text text-icon-both ui-margin-15-b circle ui-no-border ui-theme-gray ui-fill-light-300 has-clear">
                                 <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
@@ -132,7 +132,7 @@
                                         <img class="img-fluid round shadow-lg" src="img/video-poster.jpg" alt="">
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="ui-row">
                                     <div class="col-12 col-lg-8 ui-padding-30-l ui-no-padding-v ui-md-no-padding">
                                         <span class="sp-15 visible-md"></span>
                                         <h2 class="font-bold">Related Video</h2>
@@ -420,7 +420,7 @@
             <p class="highlight large font-color-white-50 xs-align-c font-readable">Search for movies, TV shows...</p>
 
             <div class="col-static no-fluid">
-                <div class="row no-row-gap-h">
+                <div class="ui-row ui-no-ui-row-gap-h">
                     <div class="col-12 ui-ease-1st-form">
                         <div class="text text-icon has-clear round-l ui-no-border shadow-in-sm ui-theme-gray ui-fill-light-300 ui-ease-form">
                             <button type="button" class="clear-form">
@@ -438,7 +438,7 @@
                 </div>
             </div>
 
-            <div class="row no-fluid ui-icons-xxl block-2nd ui-icons-no-opacity ui-icons-margin-5-v hover-t-more-2nd ui-theme-base ui-ease-2nd-btn">
+            <div class="ui-row no-fluid ui-icons-xxl block-2nd ui-icons-no-opacity ui-icons-margin-5-v hover-t-more-2nd ui-theme-base ui-ease-2nd-btn">
                 <div class="col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#tv"/></svg>

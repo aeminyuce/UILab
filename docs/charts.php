@@ -1,10 +1,10 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="row">
+        <div class="ui-row">
             <div class="col-12 ui-padding-30-v">
 
                 <h3>Line Charts Examples</h3>
-                <div class="row row-gap-lg-v">
+                <div class="ui-row ui-row-gap-lg-v">
                     <div class="col-6">
                         <h5 class="font-bold align-c">Line Chart</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
@@ -172,7 +172,7 @@
                         </div>
                     </div>
                     <div class="col-12 ui-theme-base ui-fill-dark-100 round">
-                        <div class="row">
+                        <div class="ui-row">
                             <div class="col-6">
                                 <h5 class="font-bold align-c">Filled Line Charts</h5>
                                 <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
@@ -334,7 +334,7 @@
 
                 <h3>Donut Chart Examples</h3>
 
-                <div class="row row-gap-lg-v">
+                <div class="ui-row ui-row-gap-lg-v">
                     <div class="col-3 col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>HTML</strong>
@@ -373,7 +373,7 @@
                     </div>
                 </div>
 
-                <div class="row row-gap-lg-v">
+                <div class="ui-row ui-row-gap-lg-v">
                     <div class="col-3 col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
@@ -426,7 +426,7 @@
                     <b>Show Title Examples:</b>
                 </div>
 
-                <div class="row row-gap-lg-v">
+                <div class="ui-row ui-row-gap-lg-v">
                     <div class="col-3 col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>HTML</strong>
@@ -468,7 +468,7 @@
                     </div>
                 </div>
 
-                <div class="row row-gap-lg-v ui-theme-base ui-fill-dark-100 round">
+                <div class="ui-row ui-row-gap-lg-v ui-theme-base ui-fill-dark-100 round">
                     <div class="col-3 col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>HTML</strong>
@@ -515,7 +515,7 @@
 
                 <h3>Pie Chart Examples</h3>
 
-                <div class="row row-gap-lg-v">
+                <div class="ui-row ui-row-gap-lg-v">
                     <div class="col-3 col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>
@@ -593,7 +593,7 @@
                     <b>Show Title Examples:</b>
                 </div>
 
-                <div class="row row-gap-lg-v">
+                <div class="ui-row ui-row-gap-lg-v">
                     <div class="col-3 col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>
@@ -626,7 +626,7 @@
                     </div>
                 </div>
 
-                <div class="row row-gap-lg-v ui-theme-base ui-fill-dark-100 round">
+                <div class="ui-row ui-row-gap-lg-v ui-theme-base ui-fill-dark-100 round">
                     <div class="col-3 col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>

@@ -516,7 +516,7 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
             & > * { border-right: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; }
         }
     }
-    .row {
+    .ui-row {
         &:not(:last-child) {
             & > [class*="col-"]:last-child {
                 & > * { border-right: 0; }
@@ -635,10 +635,10 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
     .form-grid {
         display: block;
 
-        .row [class*="col-"]:not(.sm-fluid) & { margin-bottom: -(@form-spacing * 3); }
+        .ui-row [class*="col-"]:not(.sm-fluid) & { margin-bottom: -(@form-spacing * 3); }
     }
 
-    .row-gap- {
+    .ui-row-gap- {
         &md {
             &,&-v {
                 [class*="col-"]:not(.sm-fluid) {
@@ -661,7 +661,7 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
             }
         }
     }
-    .no-row-gap {
+    .ui-no-row-gap {
         [class*="col-"]:not(.sm-fluid) {
             .form-grid { margin-top: (@form-spacing * 2); margin-bottom: @form-spacing; }
         }
@@ -678,11 +678,11 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
         .form-grid {
             display: block;
 
-            .row [class*="col-"] & { margin-bottom: -(@form-spacing * 3); }
+            .ui-row [class*="col-"] & { margin-bottom: -(@form-spacing * 3); }
         }
     }
 
-    .row-gap- {
+    .ui-row-gap- {
         &md {
             &,&-v {
                 [class*="col-"].sm-fluid {
@@ -705,7 +705,7 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
             }
         }
     }
-    .no-row-gap {
+    .ui-no-row-gap {
         [class*="col-"].sm-fluid {
             .form-grid { margin-top: (@form-spacing * 2); margin-bottom: @form-spacing; }
         }

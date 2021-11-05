@@ -2,7 +2,7 @@
 
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="row">
+        <div class="ui-row">
             <div class="col-12 ui-padding-30">
 
                 <div class="ui-card-warning ui-padding-30 round ui-theme-sub ui-fill-light-100 ui-stroke">

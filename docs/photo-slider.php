@@ -1,12 +1,12 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="row">
+        <div class="ui-row">
             <div class="col-12 ui-padding-30-v">
 
                 <h3>Photo Slider Examples</h3>
                 <div class="ui-padding-30-b">
 
-                    <div class="row row-gap-lg xs-fluid form-lg">
+                    <div class="ui-row ui-row-gap-lg xs-fluid form-lg">
                         <div class="col-4 col-sm-6">
 
                             <div class="ui-card ui-padding-30 round shadow-lg">

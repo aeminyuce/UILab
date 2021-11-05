@@ -4,7 +4,7 @@
 <!-- custom JS -->
 <script src="../js/custom/dashboard.js?v=<?php echo filemtime('../js/custom/dashboard.js'); ?>"></script>
 
-<main class="ui-container ui-ui-no-gutter">
+<main class="ui-container ui-no-gutter">
 
     <div class="col-static sm-fluid">
 
@@ -225,7 +225,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="ui-row">
 
             <!-- header: start -->
             <header class="col-12 align-r ui-icons-no-opacity shadow-sm form-lg ui-ease-layout sidebar-opened" data-ui-classes="shadow-lg">
@@ -453,7 +453,7 @@
             <div class="ui-tabs ui-ease-tabs ui-padding-15-b" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                 <div class="ui-container">
-                    <div class="row ui-border-b ui-margin-15-b ui-theme-panel2">
+                    <div class="ui-row ui-border-b ui-margin-15-b ui-theme-panel2">
                         <div class="col-4 offset-4 ui-no-padding-b">
 
                             <div class="ui-btn-holder font-color-black-muted form-lg ui-ease-1st-btn">
@@ -469,7 +469,7 @@
 
                     <!-- forms: start -->
                     <div class="ui-fixed ui-fixed-xl">
-                        <div class="row">
+                        <div class="ui-row">
                             <div class="col-12">
 
                                 <div class="ui-card round shadow-lg">
@@ -477,7 +477,7 @@
                                     <form action="#succesful">
                                         <div class="ui-card-side ui-padding-5-h ui-border-b">
                                             <div class="col-static no-fluid">
-                                                <div class="row">
+                                                <div class="ui-row">
                                                     <div class="col-12">
                                                         <h4 class="align-l ui-margin-4-t ui-margin-3-b">Forms</h4>
                                                     </div>
@@ -512,7 +512,7 @@
                                             </div>
                                         </div>
                                         <div class="ui-card-side ui-padding-15 form-lg">
-                                            <div class="row">
+                                            <div class="ui-row">
 
                                                 <div class="col-8 offset-2">
                                                     <h3>Customer Info</h3>
@@ -582,7 +582,7 @@
                                                 <div class="col-5">
                                                     <div class="form-holder col-static no-fluid">
 
-                                                        <div class="row no-row-gap">
+                                                        <div class="ui-row ui-no-row-gap">
                                                             <div class="col-12">
                                                                 <div class="text text-icon-l round ui-border-dual ui-ease-form">
                                                                     <svg class="ui-icon"><use href="#browser"/></svg>
@@ -635,7 +635,7 @@
                                             </div>
                                         </div>
                                         <div class="ui-card-side ui-padding-5-h ui-border-t">
-                                            <div class="row">
+                                            <div class="ui-row">
                                                 <div class="col-12 align-r xs-align-c ui-ease-1st-btn">
 
                                                     <button type="reset" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-15-h round">
@@ -664,7 +664,7 @@
 
                     <!-- dashboard: start -->
                     <div class="ui-fixed ui-fixed-xl">
-                        <div class="row">
+                        <div class="ui-row">
 
                             <div class="col-12 ui-no-padding">
                                 <div class="ui-dashboard-carousel ui-carousel" data-ui-col-xl="4" data-ui-col-lg="2" data-ui-col="2" data-ui-col-md="2" data-ui-col-sm="1" data-ui-col-xs="1">
@@ -673,7 +673,7 @@
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-yellow">
                                             <div class="ui-card full-h ui-padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
-                                                    <div class="row no-row-gap-h row-gap-md-v">
+                                                    <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="col-12">
                                                             <div class="x-large">Pending</div>
                                                             <span class="font-color-black-muted large">Total: 45%</span>
@@ -696,7 +696,7 @@
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-yellow">
                                             <div class="ui-card full-h ui-padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
-                                                    <div class="row no-row-gap-h row-gap-md-v">
+                                                    <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="col-12">
                                                             <div class="x-large">Paused</div>
                                                             <span class="font-color-black-muted large">Total: 5%</span>
@@ -719,7 +719,7 @@
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-green">
                                             <div class="ui-card full-h ui-padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
-                                                    <div class="row no-row-gap-h row-gap-md-v">
+                                                    <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="col-12">
                                                             <div class="x-large">Completed</div>
                                                             <span class="font-color-black-muted large">Total: 80%</span>
@@ -742,7 +742,7 @@
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-panel2">
                                             <div class="ui-card full-h ui-padding-15 round shadow-lg">
                                                 <div class="col-static no-fluid">
-                                                    <div class="row no-row-gap-h row-gap-md-v">
+                                                    <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="col-12">
                                                             <div class="align-l x-large">On Payment</div>
                                                             <span class="font-color-black-muted large">Total: 67%</span>
@@ -790,7 +790,7 @@
                                     </div>
                                     <h4 class="align-l ui-margin-10-t">Activity</h4>
                                     <div class="col-static no-fluid">
-                                        <div class="row row no-row-gap-h row-gap-md-v">
+                                        <div class="ui-row ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                             <div class="col-12 large">
                                                 <div class="large font-bold">Total Progress</div>
                                                 <span class="font-color-black-muted">23% Change</span>
@@ -800,7 +800,7 @@
                                             <span class="x-largest inline-block">436</span>
                                         </div>
                                     </div>
-                                    <div class="row row-gap-lg-h no-fluid">
+                                    <div class="ui-row ui-row-gap-lg-h no-fluid">
                                         <div class="col-6">
                                             <div class="ui-donut-chart automargin ui-ease-donut-chart" style="max-width: 150px;">
                                                 <strong>
@@ -1149,7 +1149,7 @@
                                     <h4 class="align-l ui-margin-10-t">Experts</h4>
                                     <div class="ui-grid-list ui-grid-list-striped grid-hover ui-theme-gray ui-ease-ui-grid-list">
 
-                                        <div class="row no-row-gap-v row-gap-sm-h">
+                                        <div class="ui-row ui-no-ui-row-gap-v ui-row-gap-sm-h">
                                             <div class="col-6 lg-fluid">
                                                 <div class="text text-icon-both round ui-no-border ui-fill-light-100 has-clear ui-ease-form">
                                                     <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
@@ -1208,7 +1208,7 @@
                                         <div class="ui-grid-list-container">
 
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
@@ -1240,7 +1240,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
@@ -1272,7 +1272,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
@@ -1304,7 +1304,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
@@ -1337,7 +1337,7 @@
                                             </div>
 
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
@@ -1369,7 +1369,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
@@ -1401,7 +1401,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
@@ -1433,7 +1433,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
@@ -1465,7 +1465,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
@@ -1497,7 +1497,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
@@ -1529,7 +1529,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
@@ -1561,7 +1561,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
@@ -1593,7 +1593,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
@@ -1625,7 +1625,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
@@ -1657,7 +1657,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
@@ -1689,7 +1689,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
-                                                <div class="row no-row-gap no-fluid">
+                                                <div class="ui-row ui-no-row-gap no-fluid">
                                                     <div class="col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
@@ -1725,7 +1725,7 @@
 
                                         <span class="sp-10"></span>
 
-                                        <div class="row no-row-gap no-fluid">
+                                        <div class="ui-row ui-no-row-gap no-fluid">
                                             <div class="col-4">
                                                 <div class="ui-padding-5-v">
                                                     Total <b class="ui-grid-list-total"></b>
@@ -1774,7 +1774,7 @@
             <p class="highlight large font-color-white-50 xs-align-c font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
             <div class="col-static no-fluid">
-                <div class="row no-row-gap-h">
+                <div class="ui-row ui-no-ui-row-gap-h">
                     <div class="col-12 ui-ease-1st-form">
                         <div class="text text-icon has-clear round-l ui-no-border shadow-in-sm ui-theme-gray ui-fill-light-300">
                             <button type="button" class="clear-form">
@@ -1792,7 +1792,7 @@
                 </div>
             </div>
 
-            <div class="row xs-fluid ui-icons-xxl block-2nd ui-icons-no-opacity hover-t-more-2nd ui-icons-margin-5-v ui-theme-panel ui-ease-2nd-btn">
+            <div class="ui-row xs-fluid ui-icons-xxl block-2nd ui-icons-no-opacity hover-t-more-2nd ui-icons-margin-5-v ui-theme-panel ui-ease-2nd-btn">
                 <div class="col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#news"/></svg>

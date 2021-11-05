@@ -1,10 +1,10 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="row">
+        <div class="ui-row">
             <div class="col-12 ui-padding-30">
 
                 <h3>Dropdowns</h3>
-                <div class="row ui-padding-30-b block-2nd ui-theme-sub">
+                <div class="ui-row ui-padding-30-b block-2nd ui-theme-sub">
                     <div class="col-3 col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn circle ui-fill-dark-100">
@@ -81,7 +81,7 @@
                 </div>
 
                 <h5 class="font-bold">Dropdown Navs with List Columns</h5>
-                <div class="row ui-padding-30-b ui-theme-base">
+                <div class="ui-row ui-padding-30-b ui-theme-base">
                     <div class="col-12">
 
                         <div class="ui-dropdown ui-nav ui-menu-hover ui-btn-xs-fluid ui-ease-dropdown">
@@ -151,7 +151,7 @@
                 </div>
 
                 <h5 class="font-bold">Full Horizontal Dropdown Navs</h5>
-                <div class="row ui-padding-30-b ui-theme-base">
+                <div class="ui-row ui-padding-30-b ui-theme-base">
                     <div class="col-12">
 
                         <div class="ui-dropdown ui-nav ui-nav-full-h ui-btn-xs-fluid ui-ease-dropdown">
@@ -192,7 +192,7 @@
                 </div>
 
                 <h5 class="font-bold">Dropdowns with Accordion Tabs</h5>
-                <div class="row ui-padding-30-b block-2nd form-lg ui-theme-sub">
+                <div class="ui-row ui-padding-30-b block-2nd form-lg ui-theme-sub">
                     <div class="col-3 col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
@@ -272,7 +272,7 @@
                 </div>
 
                 <h5 class="font-bold">Dropdowns with Holder Content</h5>
-                <div class="row ui-padding-30-b block-2nd form-lg ui-theme-sub">
+                <div class="ui-row ui-padding-30-b block-2nd form-lg ui-theme-sub">
                     <div class="col-3 col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
@@ -340,7 +340,7 @@
                 </div>
 
                 <h5 class="font-bold">Dropdowns Selects</h5>
-                <div class="row ui-padding-30-b block-2nd form-lg">
+                <div class="ui-row ui-padding-30-b block-2nd form-lg">
                     <div class="col-3 col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
@@ -426,7 +426,7 @@
                 </div>
 
                 <h5 class="font-bold">Dropdowns with List Icons</h5>
-                <div class="row ui-padding-30-b block-2nd form-lg">
+                <div class="ui-row ui-padding-30-b block-2nd form-lg">
                     <div class="col-3 col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn align-l circle">
@@ -486,7 +486,7 @@
                 </div>
 
                 <h5 class="font-bold">Dropdowns with Grid List</h5>
-                <div class="row ui-padding-30-b block-2nd form-lg">
+                <div class="ui-row ui-padding-30-b block-2nd form-lg">
                     <div class="col-3 col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost circle ui-border-dual">

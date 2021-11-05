@@ -3,12 +3,12 @@
 
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="row">
+        <div class="ui-row">
             <div class="col-12 ui-padding-30-v">
 
                 <h3>Simple Pricing Table</h3>
 
-                <div class="row row-gap-lg align-c">
+                <div class="ui-row ui-row-gap-lg align-c">
                     <div class="col-4">
 
                         <div class="ui-card full-h ui-padding-30 round shadow">
@@ -67,7 +67,7 @@
 
                 <h3>Detailed Pricing Table</h3>
 
-                <div class="row row-gap-lg align-c">
+                <div class="ui-row ui-row-gap-lg align-c">
                     <div class="col-4">
 
                         <div class="ui-card full-h round shadow">

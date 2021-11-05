@@ -3,7 +3,7 @@
 
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="row">
+        <div class="ui-row">
             <div class="col-12 ui-padding-30-v">
 
                 <span class="sp-30 ui-margin-30-v"></span>

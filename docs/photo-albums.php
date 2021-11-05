@@ -1,6 +1,6 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="row">
+        <div class="ui-row">
             <div class="col-static sm-fluid ui-padding-30-v">
                 <div class="col-250 ui-padding-30 order-sm-last sm-align-c ui-theme-sub">
                     <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid align-l block circle ui-fill-dark-100 ui-ease-btn">
@@ -38,11 +38,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="row">
+                <div class="ui-row">
                     <div class="col-12 ui-padding-15">
 
                         <div class="ui-padding-15 ui-sm-no-padding">
-                            <div class="row highlight">
+                            <div class="ui-row highlight">
                                 <div class="col-6">
                                     <h3 class="ui-margin-15-v">Summer Holiday Photos</h3>
                                 </div>
@@ -138,7 +138,7 @@
                             </ul>
                         </div>
                         <div class="ui-padding-15 ui-sm-no-padding">
-                            <div class="row highlight">
+                            <div class="ui-row highlight">
                                 <div class="col-6">
                                     <h3 class="ui-margin-15-v">Autumn Comes Photos</h3>
                                 </div>
@@ -234,7 +234,7 @@
                             </ul>
                         </div>
 
-                        <div class="row">
+                        <div class="ui-row">
                             <div class="col-12 align-c">
                                 <button class="load-more ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h circle ui-ease-btn">Load more</button>
                             </div>

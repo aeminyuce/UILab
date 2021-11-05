@@ -6,7 +6,7 @@
 
         <div class="col-static">
 
-            <div class="row">
+            <div class="ui-row">
                 <div class="col-12">
 
                     <div class="ui-carousel-gallery">
@@ -84,7 +84,7 @@
                             </ul>
                         </div>
                         <div class="ui-padding-15-b ui-padding-30-h">
-                            <div class="row row-gap-lg">
+                            <div class="ui-row ui-row-gap-lg">
                                 <div class="col-5x col-sm-4 col-xs-6">
                                     <div class="ui-pie-chart ui-ease-pie-chart" data-ui-text="Total">
                                         <ul>
@@ -230,7 +230,7 @@
                                         <svg class="ui-icon"><use href="#minus"/></svg>
                                     </button>
                                 </div>
-                                <div class="row">
+                                <div class="ui-row">
                                     <div class="col-12 ui-no-padding">
                                         <div class="text ui-no-border ui-theme-gray ui-fill-light-100 ui-ease-form">
                                             <input class="font-bold align-c x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">

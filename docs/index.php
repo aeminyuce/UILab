@@ -90,7 +90,7 @@
 
     <!-- header -->
     <header class="ui-container form-lg ui-theme-base invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="shadow-lg">
-        <div class="row">
+        <div class="ui-row">
             <div class="col-12 ui-padding-15">
                 <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost circle ui-icons-no-opacity right ui-ease-btn hidden-ie">
                     <svg class="ui-icon visible-dark"><use href="#moon-fill"/></svg>
@@ -122,12 +122,12 @@
 ?>
     <!-- header -->
     <header class="ui-container form-lg invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout" data-ui-classes="shadow-lg">
-        <div class="row">
+        <div class="ui-row">
             <div class="col-static no-fluid">
                 <div class="col-250 col-xs-100 ui-padding-15 ui-no-padding-r">
                     <img class="ui-margin-5-t" src="img/uilab-logo.png" alt="UI lab" srcset="img/uilab-logo@2x.png 2x">
                 </div>
-                <div class="row">
+                <div class="ui-row">
                     <div class="col-12 align-r ui-padding-15 ui-no-padding-l ui-icons-no-opacity ui-ease-1st-btn">
                         <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost circle hidden-ie">
                             <svg class="ui-icon visible-dark"><use href="#moon-fill"/></svg>
@@ -199,7 +199,7 @@
             </div>
 
             <!-- thumbnails -->
-            <div class="row">
+            <div class="ui-row">
                 <div class="col-12 ui-padding-15">
 
                     <div class="ui-fixed ui-fixed-xl ui-padding-15 ui-margin-30-v ui-sm-no-padding">
@@ -221,7 +221,7 @@
 
                         <span class="sp-30"></span>
 
-                        <div class="row row-gap-lg align-c hover-shadow-2nd hover-t-2nd">
+                        <div class="ui-row ui-row-gap-lg align-c hover-shadow-2nd hover-t-2nd">
                             <div class="col-4 col-md-6">
                                 <a class="ui-card ui-padding-2 round shadow-lg ui-ease-layout" href="?l=login-page">
                                     <img class="img-fluid round-t visible-light" src="img/layout-login-page.jpg" alt="Login Page">

@@ -32,9 +32,9 @@
 .ui-no-gutter { padding-right: 0 !important; padding-left: 0 !important; }
 
 html {
-    .row { display: flex; } // safari flex bug
+    .ui-row { display: flex; } // safari flex bug
 }
-.row {
+.ui-row {
     margin-right: -@row-gap; margin-left: -@row-gap; flex-wrap: wrap;
 
     &:before,&:after { content: normal !important; } // safari flex bug
@@ -63,7 +63,7 @@ html {
         });
     }
 }
-.no-row-gap {
+.ui-no-row-gap {
     &,&-h { margin-right: inherit; margin-left: inherit; }
 
     & when (@static-grids = false) {
@@ -106,8 +106,8 @@ each(@custom-grid-columns, {
 .col-static when (@static-grids = true) {
     width: 100%; display: table; table-layout: fixed;
 
-    & > .row,& > [class*="col-"] { vertical-align: top; display: table-cell; }
-    & > .row {
+    & > .ui-row,& > [class*="col-"] { vertical-align: top; display: table-cell; }
+    & > .ui-row {
         width: 100%; margin-left: inherit; margin-right: inherit; table-layout: fixed;
 
         &:before,&:after { content: "" !important; display: table !important; }
@@ -183,7 +183,7 @@ each(@custom-static-grid-columns, {
         ._create-custom-static-cols(~'-md-'; @value);
     });
 
-    .row {
+    .ui-row {
         &:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) {
             & > [class*="col-"]:not([class*="col-md-"]):not([class*="col-sm-"]):not([class*="col-xs-"]) {
                 &:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) { width: 100%; clear: both; }
@@ -201,7 +201,7 @@ each(@custom-static-grid-columns, {
     }
     .col-static when (@static-grids = true) {
         &:not(.no-fluid):not(.sm-fluid):not(.xs-fluid) {
-            & > .row,& > [class*="col-"] { width: 100%; display: block; }
+            & > .ui-row,& > [class*="col-"] { width: 100%; display: block; }
         }
     }
 
@@ -229,11 +229,11 @@ each(@custom-static-grid-columns, {
         ._create-custom-static-cols(~'-sm-'; @value);
     });
 
-    .row.sm-fluid > [class*="col-"] { width: 100%; clear: both; }
-    .row {
+    .ui-row.sm-fluid > [class*="col-"] { width: 100%; clear: both; }
+    .ui-row {
         &:not(.no-fluid):not(.xs-fluid) {
             & > [class*="col-"]:not([class*="col-sm-"]):not([class*="col-xs-"]) {
-                &:not(.no-fluid):not(.xs-fluid) { &:extend(.row.sm-fluid > [class*="col-"]); }
+                &:not(.no-fluid):not(.xs-fluid) { &:extend(.ui-row.sm-fluid > [class*="col-"]); }
             }
             & > [class*="offset-"]:not([class*="offset-sm-"]):not([class*="offset-xs-"]) {
                 &:not(.no-fluid):not(.xs-fluid) { margin-left: 0; }
@@ -248,7 +248,7 @@ each(@custom-static-grid-columns, {
     }
     .col-static when (@static-grids = true) {
         &:not(.no-fluid):not(.xs-fluid) {
-            & > .row,& > [class*="col-"] { width: 100%; display: block; }
+            & > .ui-row,& > [class*="col-"] { width: 100%; display: block; }
         }
     }
 }
@@ -276,11 +276,11 @@ each(@custom-static-grid-columns, {
         ._create-custom-static-cols(~'-xs-'; @value);
     });
 
-    .row.xs-fluid > [class*="col-"] { width: 100%; clear: both; }
-    .row {
+    .ui-row.xs-fluid > [class*="col-"] { width: 100%; clear: both; }
+    .ui-row {
         &:not(.no-fluid) {
             & > [class*="col-"]:not([class*="col-xs-"]) {
-                &:not(.no-fluid) { &:extend(.row.xs-fluid > [class*="col-"]); }
+                &:not(.no-fluid) { &:extend(.ui-row.xs-fluid > [class*="col-"]); }
             }
             & > [class*="offset-"]:not([class*="offset-xs-"]) {
                 &:not(.no-fluid) { margin-left: 0; }
@@ -295,15 +295,15 @@ each(@custom-static-grid-columns, {
     }
     .col-static when (@static-grids = true) {
         &:not(.no-fluid) {
-            & > .row,& > [class*="col-"] { width: 100%; display: block; }
+            & > .ui-row,& > [class*="col-"] { width: 100%; display: block; }
         }
     }
 }
 @media (@default-finish) {
     .lg-fluid {
-        &.row > [class*="col-"],[class*="col-"]& { width: 100%; clear: both; }
+        &.ui-row > [class*="col-"],[class*="col-"]& { width: 100%; clear: both; }
         &.col-static when (@static-grids = true) {
-            & > .row,& > [class*="col-"] { width: 100%; display: block; }
+            & > .ui-row,& > [class*="col-"] { width: 100%; display: block; }
         }
 
         [class*="offset-"]& { margin-left: 0; }
@@ -313,9 +313,9 @@ each(@custom-static-grid-columns, {
 }
 @media (@lg-finish) {
     .xl-fluid {
-        &.row > [class*="col-"],[class*="col-"]& { width: 100%; clear: both; }
+        &.ui-row > [class*="col-"],[class*="col-"]& { width: 100%; clear: both; }
         &.col-static when (@static-grids = true) {
-            & > .row,& > [class*="col-"] { width: 100%; display: block; }
+            & > .ui-row,& > [class*="col-"] { width: 100%; display: block; }
         }
 
         [class*="offset-"]& { margin-left: 0; }

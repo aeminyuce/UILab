@@ -2,7 +2,7 @@
     <div class="ui-fixed ui-padding-30-v">
 
         <h3>Calendar Styles</h3>
-        <div class="row ui-padding-30-b">
+        <div class="ui-row ui-padding-30-b">
             <div class="col-4 col-md-6">
                 <div class="ui-calendar ui-ease-calendar"></div>
             </div>
@@ -24,7 +24,7 @@
         </div>
 
         <h3>Calendars with Defined Dates</h3>
-        <div class="row sm-fluid ui-padding-30-b block-2nd">
+        <div class="ui-row sm-fluid ui-padding-30-b block-2nd">
             <div class="col-6">
                 <b class="ui-margin-5-b">Previous Month: data-ui-date="prev"</b>
                 <div class="ui-calendar ui-ease-calendar round shadow" data-ui-date="prev"></div>
@@ -46,7 +46,7 @@
         <form action="#succesful">
 
             <h3>Calendar Pickers</h3>
-            <div class="row sm-fluid ui-padding-30-b ui-ease-2nd-form">
+            <div class="ui-row sm-fluid ui-padding-30-b ui-ease-2nd-form">
                 <div class="col-12">
                     <div class="ui-calendar-picker text text-icon-l round ui-border-dual form-inline-xs">
                         <svg class="ui-icon"><use href="#calendar"/></svg>
@@ -68,7 +68,7 @@
             </div>
 
             <h3>Calendar Pickers with Filled Forms</h3>
-            <div class="row sm-fluid ui-padding-30-b form-lg ui-ease-2nd-form">
+            <div class="ui-row sm-fluid ui-padding-30-b form-lg ui-ease-2nd-form">
                 <div class="col-6">
                     <div class="ui-calendar-picker text text-icon-l round ui-border-dual">
                         <svg class="ui-icon"><use href="#calendar"/></svg>
@@ -86,7 +86,7 @@
         </form>
 
         <h3>Calendar Details</h4>
-        <div class="row sm-fluid ui-padding-30-b">
+        <div class="ui-row sm-fluid ui-padding-30-b">
             <div class="col-6">
                 <div class="ui-calendar ui-ease-calendar round" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>
             </div>

@@ -9,14 +9,14 @@
 
     <div class="ui-border-b ui-theme-farmer2">
         <div class="ui-fixed ui-padding-10-v ui-sm-no-padding-v">
-            <div class="row">
+            <div class="ui-row">
                 <div class="col-static no-fluid">
                     <div class="col-220 ui-padding-10">
                         <a class="ui-margin-2-v inline-block" href="#">
                             <img src="img/agriculture/logo.png" alt="Agriculture Logo" srcset="img/agriculture/logo@2x.png 2x">
                         </a>
                     </div>
-                    <div class="row">
+                    <div class="ui-row">
                         <div class="col-12 align-r">
 
                             <div class="hidden-sm">
@@ -85,7 +85,7 @@
     <div class="ui-tabs form-lg ui-ease-tabs" data-ui-classes="ui-color ui-border-lg ui-stroke">
 
         <div class="ui-fixed ui-padding-10-t ui-theme-farmer2">
-            <div class="row no-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
+            <div class="ui-row ui-no-ui-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
                 <div class="col-12 font-color-black-50 xs-align-l align-c ui-ease-1st-btn">
                     <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-margin-1-b ui-border-b ui-color ui-border-lg ui-stroke active">
                         <svg class="ui-icon"><use href="#factory"/></svg>
@@ -106,9 +106,9 @@
 
         <div class="banner-content banner-tab01 ui-tab-content ui-padding-30-v set-relative ui-theme-farmer ui-fill-dark-100 ui-open ui-open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
             <div class="ui-fixed ui-padding-30-v set-relative">
-                <div class="row">
+                <div class="ui-row">
                     <div class="col-static">
-                        <div class="row row-gap-lg-v">
+                        <div class="ui-row ui-row-gap-lg-v">
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
@@ -144,9 +144,9 @@
         </div>
         <div class="banner-content banner-tab02 ui-tab-content ui-padding-30-v set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
             <div class="ui-fixed ui-padding-30-v set-relative">
-                <div class="row">
+                <div class="ui-row">
                     <div class="col-static">
-                        <div class="row row-gap-lg-v">
+                        <div class="ui-row ui-row-gap-lg-v">
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
@@ -182,9 +182,9 @@
         </div>
         <div class="banner-content banner-tab03 ui-tab-content ui-padding-30-v set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
             <div class="ui-fixed ui-padding-30-v set-relative">
-                <div class="row">
+                <div class="ui-row">
                     <div class="col-static">
-                        <div class="row row-gap-lg-v">
+                        <div class="ui-row ui-row-gap-lg-v">
                             <div class="col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
@@ -333,7 +333,7 @@
     <!-- news: start -->
     <div class="ui-padding-30-v ui-theme-farmer ui-fill-light-100">
         <div class="ui-fixed ui-margin-30-b">
-            <div class="row">
+            <div class="ui-row">
                 <div class="col-12">
                     <h2 class="font-bold ui-margin-10-b">News</h2>
                     <h3 class="ui-color">Follow our activities.</h3>
@@ -343,7 +343,7 @@
         <div class="ui-tabs form-lg ui-border-t ui-padding-10-t ui-ease-tabs" data-ui-classes="ui-color ui-border-lg ui-stroke">
 
             <div class="ui-fixed">
-                <div class="row no-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
+                <div class="ui-row ui-no-ui-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
                     <div class="col-12 font-color-black-50 xs-align-l align-c ui-ease-1st-btn">
                         <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-margin-1-b ui-border-b ui-color ui-border-lg ui-stroke active">
                             <svg class="ui-icon"><use href="#building"/></svg>
@@ -363,7 +363,7 @@
             </div>
 
             <div class="ui-tab-content ui-padding-10 ui-open ui-open-ease">
-                <div class="row sm-fluid ui-icons-sm hover-shadow-2nd hover-t-2nd">
+                <div class="ui-row sm-fluid ui-icons-sm hover-shadow-2nd hover-t-2nd">
                     <div class="col-3 col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
@@ -468,7 +468,7 @@
                 </div>
             </div>
             <div class="ui-tab-content ui-padding-10">
-                <div class="row sm-fluid">
+                <div class="ui-row sm-fluid">
                     <div class="col-3 col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
@@ -573,7 +573,7 @@
                 </div>
             </div>
             <div class="ui-tab-content ui-padding-10">
-                <div class="row sm-fluid">
+                <div class="ui-row sm-fluid">
                     <div class="col-3 col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
@@ -684,7 +684,7 @@
 
     <!-- gallery: start -->
     <div class="ui-fixed ui-theme-farmer2">
-        <div class="row">
+        <div class="ui-row">
             <div class="col-12">
                 <h2 class="font-bold ui-margin-10-b">Our Projects</h2>
                 <h3 class="ui-color ui-margin-25-b">What we are doing?</h3>
@@ -754,13 +754,13 @@
     <!-- statistics: start -->
     <div class="ui-padding-15-t ui-padding-30-b ui-theme-farmer ui-fill-light-100">
         <div class="ui-fixed ui-padding-30-v">
-            <div class="row">
+            <div class="ui-row">
                 <div class="col-12">
                     <h2 class="font-bold ui-margin-10-b">Why Choose Us</h2>
                     <h3 class="ui-color ui-margin-25-b">See detailed statistics.</h3>
                 </div>
                 <div class="col-static">
-                    <div class="row">
+                    <div class="ui-row">
                         <div class="col-12">
                             <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,30" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                                 <ul class="ui-lines" data-ui-name="Last year" data-ui-type="filled">
@@ -809,9 +809,9 @@
 <!-- footer: start -->
 <footer class="ui-container ui-no-gutter ui-padding-30-v invert-bg ui-theme-farmer2 ui-fill-dark-100">
     <div class="ui-fixed ui-padding-30-v sm-align-c">
-        <div class="row">
+        <div class="ui-row">
             <div class="col-static">
-                <div class="row sm-fluid">
+                <div class="ui-row sm-fluid">
                     <div class="col-4">
                         <h4 class="font-color-white-50 ui-margin-30-b">Customer Service</h4>
                         <ul class="list-unstyled ui-list-spacer-10 hoverline-2nd x-large">
@@ -882,7 +882,7 @@
                             <form action="#">
 
                                 <div class="form-holder col-static no-fluid form-lg">
-                                    <div class="row no-row-gap">
+                                    <div class="ui-row ui-no-row-gap">
                                         <div class="col-12">
                                             <div class="text ui-no-border bg-white invert-bg ui-ease-form">
                                                 <input class="required" type="email" maxlength="4" placeholder="your@email.com">

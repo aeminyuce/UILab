@@ -162,11 +162,11 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="ui-row">
                 <div class="col-12 ui-sm-no-padding-t">
 
                     <div class="ui-card ui-margin-10-b round shadow-lg">
-                        <div class="row row-gap-lg sm-fluid">
+                        <div class="ui-row ui-row-gap-lg sm-fluid">
                             <div class="col-12 ui-border-b">
                                 <h4>
                                     <svg class="ui-icon ui-icon-lg"><use href="#history"/></svg>
@@ -195,7 +195,7 @@
                                 </div>
                             </div>
                             <div class="col-4">
-                                <div class="row no-fluid ui-margin-10-b">
+                                <div class="ui-row no-fluid ui-margin-10-b">
                                     <div class="col-6">
                                         <span class="font-color-black-muted">Highest:</span>
                                         <span class="largest block">$199</span>
@@ -221,7 +221,7 @@
                         </div>
                     </div>
 
-                    <div class="row sm-fluid sm-align-c">
+                    <div class="ui-row sm-fluid sm-align-c">
                         <div class="col-6">
                             <span class="sp-5 hidden-sm"></span>
                             <span class="large">Found <b>47</b> and displaying <b>9</b> products.</span>
@@ -259,7 +259,7 @@
                         </div>
                     </div>
 
-                    <div class="products-list row form-lg hover-shadow-2nd ui-ease-2nd-layout hover-t-2nd">
+                    <div class="products-list ui-row form-lg hover-shadow-2nd ui-ease-2nd-layout hover-t-2nd">
                         <div class="col-4 col-sm-6">
                             <a class="full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
@@ -465,7 +465,7 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="ui-row">
                         <div class="col-12 align-c">
                             <button class="load-more ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h circle ui-ease-btn">Load more</button>
                         </div>

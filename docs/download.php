@@ -2,11 +2,11 @@
 <script src="../js/custom/download.js?v=<?php echo filemtime('../js/custom/download.js'); ?>"></script>
 
 <main class="ui-container">
-    <div class="row">
+    <div class="ui-row">
         <div class="col-12">
             <div class="ui-padding-30-b ui-sm-no-padding ui-tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke">
 
-                <div class="row ui-border-b ui-margin-15-b">
+                <div class="ui-row ui-border-b ui-margin-15-b">
 
                     <div class="col-4 offset-4 ui-no-padding-b">
                         <div class="ui-btn-holder form-lg ui-ease-1st-btn">
@@ -32,7 +32,7 @@
                             </div>
                         </div>
 
-                        <div class="generate-list row row-gap-sm-v">
+                        <div class="generate-list ui-row ui-row-gap-sm-v">
                             <div class="col-3 col-md-4 col-sm-6">
 
                                 <h4>Core</h4>
@@ -497,7 +497,7 @@
                             </div>
                         </div>
 
-                        <div class="row">
+                        <div class="ui-row">
                             <div class="col-12 ui-no-padding-t">
 
                                 <div class="textarea ui-margin-15-b round ui-border-dual ui-ease-form">
@@ -542,7 +542,7 @@
                             </div>
                         </div>
 
-                        <div class="generate-list row row-gap-sm-v">
+                        <div class="generate-list ui-row ui-row-gap-sm-v">
                             <div class="col-3 col-md-4 col-sm-6">
 
                                 <h4>Core</h4>
@@ -865,7 +865,7 @@
                             </div>
                         </div>
 
-                        <div class="row">
+                        <div class="ui-row">
                             <div class="col-12 ui-no-padding-t">
 
                                 <div class="textarea ui-margin-15-b round ui-border-dual ui-ease-form">
@@ -899,7 +899,7 @@
 
                     <div class="generate-holder ui-tab-content form-lg ui-padding-15">
 
-                        <div class="generate-list row row-gap-sm-v">
+                        <div class="generate-list ui-row ui-row-gap-sm-v">
                             <div class="col-12">
 
                                 <div class="generate-forms ui-margin-20-b">
@@ -911,7 +911,7 @@
                                         <span class="font-color-black-50">Select/Deselect All</span>
                                     </label>
 
-                                    <div class="row no-row-gap-v xs-fluid">
+                                    <div class="ui-row ui-no-ui-row-gap-v xs-fluid">
                                         <div class="col-3 col-md-4 col-sm-6 block-1st">
                                             <label class="custom">
                                                 <span class="switch-custom round ui-border-dual ui-ease-form">
@@ -996,7 +996,7 @@
                             </div>
                         </div>
 
-                        <div class="row">
+                        <div class="ui-row">
                             <div class="col-12 ui-no-padding-t">
 
                                 <div class="textarea ui-margin-15-b round ui-border-dual ui-ease-form">

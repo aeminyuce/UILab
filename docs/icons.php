@@ -7,13 +7,13 @@
 <main class="ui-container">
     <div class="ui-fixed ui-fixed-xl">
 
-        <div class="row">
+        <div class="ui-row">
             <div class="col-12">
                 <div class="ui-sm-no-padding align-c ui-padding-30-v">
 
                     <h1>SVG Icons<small class="ui-total ui-margin-5-v block opacity-half"></small></h1>
 
-                    <div class="row">
+                    <div class="ui-row">
                         <div class="col-4">
                             <h4 class="align-c ui-margin-10-b">Change Weight</h4>
                             <div class="ui-icon-modifiers ui-btn-holder form-lg ui-margin-20-b ui-theme-sub form-lg ui-ease-1st-btn">
