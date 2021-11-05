@@ -292,14 +292,14 @@
                                         <li>
                                             Lorem ipsum dolor sit amet.
                                             <span class="ui-photo-gallery ui-margin-5-t ui-ease-photo-gallery">
-                                                <a class="ui-img ui-margin-1-h round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="38" alt=""></a>
-                                                <a class="ui-img ui-margin-1-h round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="38" alt=""></a>
-                                                <a class="ui-img ui-margin-1-h round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="38" alt=""></a>
-                                                <a class="ui-img ui-margin-1-h round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="38" alt=""></a>
-                                                <a class="ui-img ui-margin-1-h round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="38" alt=""></a>
-                                                <a class="ui-img ui-margin-1-h round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="38" alt=""></a>
-                                                <a class="ui-img ui-margin-1-h round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="38" alt=""></a>
-                                                <a class="ui-img ui-margin-1-h round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="38" alt=""></a>
+                                                <a class="ui-img ui-margin-1-h round" href="img/image_01.jpg"><img src="img/image_01.jpg" height="38" alt=""></a>
+                                                <a class="ui-img ui-margin-1-h round" href="img/image_02.jpg"><img src="img/image_02.jpg" height="38" alt=""></a>
+                                                <a class="ui-img ui-margin-1-h round" href="img/image_03.jpg"><img src="img/image_03.jpg" height="38" alt=""></a>
+                                                <a class="ui-img ui-margin-1-h round" href="img/image_04.jpg"><img src="img/image_04.jpg" height="38" alt=""></a>
+                                                <a class="ui-img ui-margin-1-h round" href="img/image_05.jpg"><img src="img/image_05.jpg" height="38" alt=""></a>
+                                                <a class="ui-img ui-margin-1-h round" href="img/image_06.jpg"><img src="img/image_06.jpg" height="38" alt=""></a>
+                                                <a class="ui-img ui-margin-1-h round" href="img/image_07.jpg"><img src="img/image_07.jpg" height="38" alt=""></a>
+                                                <a class="ui-img ui-margin-1-h round" href="img/image_08.jpg"><img src="img/image_08.jpg" height="38" alt=""></a>
                                             </span>
                                         </li>
                                         <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
@@ -1070,15 +1070,15 @@
                                                 <li>
                                                     Lorem ipsum dolor sit amet.
                                                     <span class="ui-photo-gallery ui-margin-5-t ui-ease-photo-gallery">
-                                                        <a class="ui-img ui-margin-1-h round" href="img/image_01.jpg"><img src="img/thumb_01.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h round" href="img/image_02.jpg"><img src="img/thumb_02.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h round" href="img/image_03.jpg"><img src="img/thumb_03.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h round" href="img/image_04.jpg"><img src="img/thumb_04.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h round" href="img/image_05.jpg"><img src="img/thumb_05.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h round" href="img/image_06.jpg"><img src="img/thumb_06.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h round" href="img/image_07.jpg"><img src="img/thumb_07.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h round" href="img/image_08.jpg"><img src="img/thumb_08.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h round" href="img/image_09.jpg"><img src="img/thumb_09.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img ui-margin-1-h round" href="img/image_01.jpg"><img src="img/image_01.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img ui-margin-1-h round" href="img/image_02.jpg"><img src="img/image_02.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img ui-margin-1-h round" href="img/image_03.jpg"><img src="img/image_03.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img ui-margin-1-h round" href="img/image_04.jpg"><img src="img/image_04.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img ui-margin-1-h round" href="img/image_05.jpg"><img src="img/image_05.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img ui-margin-1-h round" href="img/image_06.jpg"><img src="img/image_06.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img ui-margin-1-h round" href="img/image_07.jpg"><img src="img/image_07.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img ui-margin-1-h round" href="img/image_08.jpg"><img src="img/image_08.jpg" height="38" alt=""></a>
+                                                        <a class="ui-img ui-margin-1-h round" href="img/image_09.jpg"><img src="img/image_09.jpg" height="38" alt=""></a>
                                                     </span>
                                                 </li>
                                                 <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
