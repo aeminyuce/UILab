@@ -1,7 +1,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="col-12 ui-padding-30">
+            <div class="ui-col-12 ui-padding-30">
 
                 <h3>Progress Bar Examples</h3>
 

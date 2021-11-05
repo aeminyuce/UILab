@@ -3,7 +3,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="col-12 ui-padding-30">
+            <div class="ui-col-12 ui-padding-30">
 
                 <div class="ui-card-warning ui-padding-30 round ui-theme-sub ui-fill-light-100 ui-stroke">
                     UI JS is a simple javascript for creating, removing and triggering javascript event listeners and finding HTML elements.

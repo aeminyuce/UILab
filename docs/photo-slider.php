@@ -1,13 +1,13 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="col-12 ui-padding-30-v">
+            <div class="ui-col-12 ui-padding-30-v">
 
                 <h3>Photo Slider Examples</h3>
                 <div class="ui-padding-30-b">
 
                     <div class="ui-row ui-row-gap-lg xs-fluid form-lg">
-                        <div class="col-4 col-sm-6">
+                        <div class="ui-col-4 ui-col-sm-6">
 
                             <div class="ui-card ui-padding-30 round shadow-lg">
                                 <span class="ui-photo-slider ui-margin-15-b">
@@ -31,7 +31,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 col-sm-6">
+                        <div class="ui-col-4 ui-col-sm-6">
 
                             <div class="ui-card ui-padding-30 round shadow-lg">
                                 <span class="ui-photo-slider ui-margin-15-b">
@@ -55,7 +55,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 col-sm-6">
+                        <div class="ui-col-4 ui-col-sm-6">
 
                             <div class="ui-card ui-padding-30 round shadow-lg">
                                 <span class="ui-photo-slider ui-margin-15-b">
@@ -79,7 +79,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 col-sm-6">
+                        <div class="ui-col-4 ui-col-sm-6">
 
                             <div class="ui-card ui-padding-30 round shadow-lg">
                                 <span class="ui-photo-slider ui-margin-15-b">
@@ -103,7 +103,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 col-sm-6">
+                        <div class="ui-col-4 ui-col-sm-6">
 
                             <div class="ui-card ui-padding-30 round shadow-lg">
                                 <span class="ui-photo-slider ui-margin-15-b">
@@ -127,7 +127,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 col-sm-6">
+                        <div class="ui-col-4 ui-col-sm-6">
 
                             <div class="ui-card ui-padding-30 round shadow-lg">
                                 <span class="ui-photo-slider ui-margin-15-b">

@@ -2,7 +2,7 @@
     <div class="ui-fixed ui-padding-30-v ui-theme-base">
         <div class="ui-row">
 
-            <div class="col-12">
+            <div class="ui-col-12">
 
                 <h3>Open Modal</h3>
                 <pre class="round">ui.modal.open({ source, size, type, closable, callback });</pre>
@@ -50,17 +50,17 @@
 
             </div>
 
-            <div class="col-12 ui-no-padding-b">
+            <div class="ui-col-12 ui-no-padding-b">
                 <b class="ui-margin-5-b block">Examples:</b>
             </div>
-            <div class="col-6 ui-no-padding-v">
+            <div class="ui-col-6 ui-no-padding-v">
 
                 <i class="font-color-black-50 ui-margin-5-b block">Open modal window with id.</i>
                 <pre class="round ui-margin-5-b">ui.modal.open({<br>    source: '#myModalId01'<br>});</pre>
                 <button class="ui-btn ui-btn-sm round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#myModalId01'});">Run Code</button>
 
             </div>
-            <div class="col-6 ui-no-padding-t">
+            <div class="ui-col-6 ui-no-padding-t">
 
                 <i class="font-color-black-50 ui-margin-5-b block">Open modal window with class name.</i>
                 <pre class="round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal'<br>});</pre>
@@ -68,45 +68,45 @@
 
             </div>
 
-            <div class="col-12 ui-no-padding-b">
+            <div class="ui-col-12 ui-no-padding-b">
                 <b class="ui-margin-5-b block">Size:</b>
             </div>
-            <div class="col-6 ui-no-padding-v">
+            <div class="ui-col-6 ui-no-padding-v">
 
                 <i class="font-color-black-50 ui-margin-5-b block">Open large size modal window.</i>
                 <pre class="round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'lg'<br>});</pre>
                 <button class="ui-btn ui-btn-sm round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'lg'});">Run Code</button>
 
             </div>
-            <div class="col-6 ui-no-padding-t">
+            <div class="ui-col-6 ui-no-padding-t">
 
                 <i class="font-color-black-50 ui-margin-5-b block">Open default (medium) size modal window.</i>
                 <pre class="round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'md'<br>});</pre>
                 <button class="ui-btn ui-btn-sm round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'md'});">Run Code</button>
 
             </div>
-            <div class="col-6 ui-no-padding-t">
+            <div class="ui-col-6 ui-no-padding-t">
 
                 <i class="font-color-black-50 ui-margin-5-b block">Open small size modal window.</i>
                 <pre class="round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'sm'<br>});</pre>
                 <button class="ui-btn ui-btn-sm round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'sm'});">Run Code</button>
 
             </div>
-            <div class="col-6 ui-no-padding-t">
+            <div class="ui-col-6 ui-no-padding-t">
 
                 <i class="font-color-black-50 ui-margin-5-b block">Open fullscreen modal window.</i>
                 <pre class="round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'fullscreen'<br>});</pre>
                 <button class="ui-btn ui-btn-sm round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'fullscreen'});">Run Code</button>
 
             </div>
-            <div class="col-6 ui-no-padding-t">
+            <div class="ui-col-6 ui-no-padding-t">
 
                 <i class="font-color-black-50 ui-margin-5-b block">Open inline modal window.</i>
                 <pre class="round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'inline'<br>});</pre>
                 <button class="ui-btn ui-btn-sm round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'inline'});">Run Code</button>
 
             </div>
-            <div class="col-6 ui-no-padding-t">
+            <div class="ui-col-6 ui-no-padding-t">
 
                 <i class="font-color-black-50 ui-margin-5-b block">Open fixed size modal window.</i>
                 <pre class="round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: '560x315'<br>});</pre>
@@ -114,7 +114,7 @@
 
             </div>
 
-            <div class="col-12">
+            <div class="ui-col-12">
 
                 <b>Type:</b>
                 <i class="font-color-black-50 ui-margin-5-b block">Open links with ajax modal.</i>
@@ -144,7 +144,7 @@
 
             </div>
 
-            <div class="col-12">
+            <div class="ui-col-12">
 
                 <b>Bg:</b>
                 <i class="font-color-black-50 ui-margin-5-b block">Enable/Disable modal window background color.</i>
@@ -153,7 +153,7 @@
 
             </div>
 
-            <div class="col-12">
+            <div class="ui-col-12">
 
                 <b>Closable:</b>
                 <i class="font-color-black-50 ui-margin-5-b block">Close modal window with footer buttons.</i>
@@ -162,7 +162,7 @@
 
             </div>
 
-            <div class="col-12">
+            <div class="ui-col-12">
 
                 <b>Callback:</b>
                 <i class="font-color-black-50 ui-margin-5-b block">Callback call after open modal.</i>
@@ -171,7 +171,7 @@
 
             </div>
 
-            <div class="col-12">
+            <div class="ui-col-12">
 
                 <h3>Close Modal</h3>
                 <pre class="round">ui.modal.close(callback);</pre>
@@ -186,7 +186,7 @@
 
             </div>
 
-            <div class="col-12 ui-no-padding-b">
+            <div class="ui-col-12 ui-no-padding-b">
                 <pre class="round ui-margin-5-b">ui.modal.close();</pre>
 
                 <span class="sp-15"></span>
@@ -245,9 +245,9 @@
             <h2>Search</h2>
             <p class="highlight large font-color-white-50 xs-align-c font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
-            <div class="col-static no-fluid">
+            <div class="ui-col-static no-fluid">
                 <div class="ui-row ui-no-ui-row-gap-h">
-                    <div class="col-12 ui-ease-1st-form">
+                    <div class="ui-col-12 ui-ease-1st-form">
                         <div class="text text-icon has-clear round-l ui-no-border shadow-in-sm ui-theme-gray ui-fill-light-300 ui-ease-form">
                             <button type="button" class="clear-form">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
@@ -257,7 +257,7 @@
                         <p class="required-msg large">Please, enter a keyword.</p>
                     </div>
                 </div>
-                <div class="col-100 col-xs-50 ui-padding-10-v">
+                <div class="ui-col-100 ui-col-xs-50 ui-padding-10-v">
                     <button class="ui-btn block round-r ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
                         <svg class="ui-icon"><use href="#search"/></svg>
                     </button>
@@ -265,21 +265,21 @@
             </div>
 
             <div class="ui-row xs-fluid ui-icons-xxl block-2nd ui-icons-no-opacity hover-t-more-2nd ui-icons-margin-5-v ui-theme-base form-lg ui-ease-2nd-btn">
-                <div class="col-4 ui-padding-10-b">
+                <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#news"/></svg>
                         <span class="x-large block ui-margin-5-t">News</span>
                         <span class="font-color-white-50">589</span>
                     </a>
                 </div>
-                <div class="col-4 ui-padding-10-b">
+                <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#calendar-check"/></svg>
                         <span class="x-large block ui-margin-5-t">Events</span>
                         <span class="font-color-white-50">219</span>
                     </a>
                 </div>
-                <div class="col-4 ui-padding-10-b">
+                <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#files"/></svg>
                         <span class="x-large block ui-margin-5-t">Documents</span>

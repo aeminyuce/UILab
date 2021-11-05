@@ -4,10 +4,10 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed ui-padding-30-v">
 
-        <div class="col-static">
+        <div class="ui-col-static">
 
             <div class="ui-row">
-                <div class="col-12">
+                <div class="ui-col-12">
 
                     <div class="ui-carousel-gallery">
                         <div class="ui-detail shadow-lg">
@@ -85,14 +85,14 @@
                         </div>
                         <div class="ui-padding-15-b ui-padding-30-h">
                             <div class="ui-row ui-row-gap-lg">
-                                <div class="col-5x col-sm-4 col-xs-6">
+                                <div class="ui-col-5x ui-col-sm-4 ui-col-xs-6">
                                     <div class="ui-pie-chart ui-ease-pie-chart" data-ui-text="Total">
                                         <ul>
                                             <li data-ui-percent="78" data-ui-fill="hsl(97, 70%, 70%)"></li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-5x col-sm-4 col-xs-6">
+                                <div class="ui-col-5x ui-col-sm-4 ui-col-xs-6">
                                     <div class="ui-donut-chart ui-ease-donut-chart">
                                         <strong>
                                             <span class="large font-color-black-muted">Interior</span>
@@ -104,7 +104,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <div class="col-5x col-sm-4 col-xs-6">
+                                <div class="ui-col-5x ui-col-sm-4 ui-col-xs-6">
                                     <div class="ui-donut-chart ui-ease-donut-chart">
                                         <strong>
                                             <span class="large font-color-black-muted">Exterior</span>
@@ -116,7 +116,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <div class="col-5x col-sm-4 col-xs-6">
+                                <div class="ui-col-5x ui-col-sm-4 ui-col-xs-6">
                                     <div class="ui-donut-chart ui-ease-donut-chart">
                                         <strong>
                                             <span class="large font-color-black-muted">Quality</span>
@@ -128,7 +128,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <div class="col-5x col-sm-4 col-xs-6">
+                                <div class="ui-col-5x ui-col-sm-4 ui-col-xs-6">
                                     <div class="ui-donut-chart ui-ease-donut-chart">
                                         <strong>
                                             <span class="large font-color-black-muted">Savings</span>
@@ -150,7 +150,7 @@
                 </div>
             </div>
 
-            <div class="col-400 ui-padding-10">
+            <div class="ui-col-400 ui-padding-10">
 
                 <div class="ui-card align-c round shadow-lg ui-theme-sub">
                     <div class="ui-card-side ui-padding-10-v ui-fill-dark-300">
@@ -224,20 +224,20 @@
                             <span class="font-color-black-50">Automatic 5% deposit required.</span>
                         </div>
                         <form action="#">
-                            <div class="col-static no-fluid currency-spinner form-lg">
-                                <div class="col-50">
+                            <div class="ui-col-static no-fluid currency-spinner form-lg">
+                                <div class="ui-col-50">
                                     <button class="currency-down ui-btn ui-no-padding-h block round-l ui-ease-btn" type="button">
                                         <svg class="ui-icon"><use href="#minus"/></svg>
                                     </button>
                                 </div>
                                 <div class="ui-row">
-                                    <div class="col-12 ui-no-padding">
+                                    <div class="ui-col-12 ui-no-padding">
                                         <div class="text ui-no-border ui-theme-gray ui-fill-light-100 ui-ease-form">
                                             <input class="font-bold align-c x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-50">
+                                <div class="ui-col-50">
                                     <button class="currency-up ui-btn ui-no-padding-h block round-r ui-ease-btn" type="button">
                                         <svg class="ui-icon"><use href="#plus"/></svg>
                                     </button>

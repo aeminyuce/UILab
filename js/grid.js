@@ -6,8 +6,8 @@
 ui.grid = {
 
     // targets
-    targetCols: 'col-',
-    targetOrders: 'order-',
+    targetCols: 'ui-col-',
+    targetOrders: 'ui-order-',
 
     // helper classnames
     nameFirst: '-first',

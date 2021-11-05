@@ -3,12 +3,12 @@
 
 <main class="ui-container">
     <div class="ui-row">
-        <div class="col-12">
+        <div class="ui-col-12">
             <div class="ui-padding-30-b ui-sm-no-padding ui-tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke">
 
                 <div class="ui-row ui-border-b ui-margin-15-b">
 
-                    <div class="col-4 offset-4 ui-no-padding-b">
+                    <div class="ui-col-4 offset-4 ui-no-padding-b">
                         <div class="ui-btn-holder form-lg ui-ease-1st-btn">
                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke active">CSS</button>
                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">JS</button>
@@ -33,7 +33,7 @@
                         </div>
 
                         <div class="generate-list ui-row ui-row-gap-sm-v">
-                            <div class="col-3 col-md-4 col-sm-6">
+                            <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
                                 <h4>Core</h4>
 
@@ -144,7 +144,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3 col-md-4 col-sm-6">
+                            <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
                                 <h4>Buttons</h4>
 
@@ -242,7 +242,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3 col-md-4 col-sm-6">
+                            <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
                                 <h4>Layout</h4>
 
@@ -382,7 +382,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3 col-md-4 col-sm-6">
+                            <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
                                 <h4>Components</h4>
 
@@ -498,7 +498,7 @@
                         </div>
 
                         <div class="ui-row">
-                            <div class="col-12 ui-no-padding-t">
+                            <div class="ui-col-12 ui-no-padding-t">
 
                                 <div class="textarea ui-margin-15-b round ui-border-dual ui-ease-form">
                                     <textarea class="font-color-black-50 large ui-padding-10" rows="12" placeholder="Generated CSS will be here!"></textarea>
@@ -543,7 +543,7 @@
                         </div>
 
                         <div class="generate-list ui-row ui-row-gap-sm-v">
-                            <div class="col-3 col-md-4 col-sm-6">
+                            <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
                                 <h4>Core</h4>
 
@@ -620,7 +620,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3 col-md-4 col-sm-6">
+                            <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
                                 <h4>Forms</h4>
 
@@ -712,7 +712,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3 col-md-4 col-sm-6">
+                            <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
                                 <h4>Components</h4>
 
@@ -819,7 +819,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3 col-md-4 col-sm-6">
+                            <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
                                 <h4>Charts</h4>
 
@@ -866,7 +866,7 @@
                         </div>
 
                         <div class="ui-row">
-                            <div class="col-12 ui-no-padding-t">
+                            <div class="ui-col-12 ui-no-padding-t">
 
                                 <div class="textarea ui-margin-15-b round ui-border-dual ui-ease-form">
                                     <textarea class="font-color-black-50 large ui-padding-10" rows="12" placeholder="Generated JS will be here!"></textarea>
@@ -900,7 +900,7 @@
                     <div class="generate-holder ui-tab-content form-lg ui-padding-15">
 
                         <div class="generate-list ui-row ui-row-gap-sm-v">
-                            <div class="col-12">
+                            <div class="ui-col-12">
 
                                 <div class="generate-forms ui-margin-20-b">
                                     <label class="custom ui-margin-5-b opacity ui-ease-opacity">
@@ -912,7 +912,7 @@
                                     </label>
 
                                     <div class="ui-row ui-no-ui-row-gap-v xs-fluid">
-                                        <div class="col-3 col-md-4 col-sm-6 block-1st">
+                                        <div class="ui-col-3 ui-col-md-4 ui-col-sm-6 block-1st">
                                             <label class="custom">
                                                 <span class="switch-custom round ui-border-dual ui-ease-form">
                                                     <input type="checkbox" value="../icons/general" checked>
@@ -935,7 +935,7 @@
                                                 Media
                                             </label>
                                         </div>
-                                        <div class="col-3 col-md-4 col-sm-6 block-1st">
+                                        <div class="ui-col-3 ui-col-md-4 ui-col-sm-6 block-1st">
                                             <label class="custom">
                                                 <span class="switch-custom round ui-border-dual ui-ease-form">
                                                     <input type="checkbox" value="../icons/real-estate">
@@ -958,7 +958,7 @@
                                                 Kitchen
                                             </label>
                                         </div>
-                                        <div class="col-3 col-md-4 col-sm-6 block-1st">
+                                        <div class="ui-col-3 ui-col-md-4 ui-col-sm-6 block-1st">
                                             <label class="custom">
                                                 <span class="switch-custom round ui-border-dual ui-ease-form">
                                                     <input type="checkbox" value="../icons/commerce">
@@ -981,7 +981,7 @@
                                                 Social
                                             </label>
                                         </div>
-                                        <div class="col-3 col-md-4 col-sm-6 block-1st">
+                                        <div class="ui-col-3 ui-col-md-4 ui-col-sm-6 block-1st">
                                             <label class="custom">
                                                 <span class="switch-custom round ui-border-dual ui-ease-form">
                                                     <input type="checkbox" value="../icons/brands">
@@ -997,7 +997,7 @@
                         </div>
 
                         <div class="ui-row">
-                            <div class="col-12 ui-no-padding-t">
+                            <div class="ui-col-12 ui-no-padding-t">
 
                                 <div class="textarea ui-margin-15-b round ui-border-dual ui-ease-form">
                                     <textarea class="font-color-black-50 large ui-padding-10" rows="12" placeholder="Generated icons will be here!"></textarea>

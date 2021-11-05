@@ -151,7 +151,7 @@
 .ui-theme-farmer2 .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(140, 87%, 39%);
 }
-.col-220 {
+.ui-col-220 {
   width: 220px;
 }
 .banner-content {

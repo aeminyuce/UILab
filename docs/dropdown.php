@@ -1,11 +1,11 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="col-12 ui-padding-30">
+            <div class="ui-col-12 ui-padding-30">
 
                 <h3>Dropdowns</h3>
                 <div class="ui-row ui-padding-30-b block-2nd ui-theme-sub">
-                    <div class="col-3 col-sm-6">
+                    <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn circle ui-fill-dark-100">
                                 Dropdown (Long Listed)
@@ -39,7 +39,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-sm-6">
+                    <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-menu-hover ui-ease-dropdown">
                             <button class="ui-btn circle ui-fill-dark-100">
                                 Hover Dropdown
@@ -52,7 +52,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-sm-6">
+                    <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-menu-c ui-ease-dropdown">
                             <button class="ui-btn circle ui-fill-dark-100">
                                 Center Menu
@@ -65,7 +65,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-sm-6">
+                    <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                             <button class="ui-btn circle ui-fill-dark-100">
                                 Left Menu
@@ -82,7 +82,7 @@
 
                 <h5 class="font-bold">Dropdown Navs with List Columns</h5>
                 <div class="ui-row ui-padding-30-b ui-theme-base">
-                    <div class="col-12">
+                    <div class="ui-col-12">
 
                         <div class="ui-dropdown ui-nav ui-menu-hover ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn circle ui-fill-dark-100">
@@ -152,7 +152,7 @@
 
                 <h5 class="font-bold">Full Horizontal Dropdown Navs</h5>
                 <div class="ui-row ui-padding-30-b ui-theme-base">
-                    <div class="col-12">
+                    <div class="ui-col-12">
 
                         <div class="ui-dropdown ui-nav ui-nav-full-h ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn circle ui-fill-dark-100">
@@ -193,7 +193,7 @@
 
                 <h5 class="font-bold">Dropdowns with Accordion Tabs</h5>
                 <div class="ui-row ui-padding-30-b block-2nd form-lg ui-theme-sub">
-                    <div class="col-3 col-sm-6">
+                    <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost circle ui-border-dual ui-stroke ui-color ui-fill-light-200">
@@ -231,7 +231,7 @@
                         </div>
 
                     </div>
-                    <div class="col-3 col-sm-6">
+                    <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost circle ui-border-dual ui-stroke ui-color ui-fill-light-200">
@@ -273,7 +273,7 @@
 
                 <h5 class="font-bold">Dropdowns with Holder Content</h5>
                 <div class="ui-row ui-padding-30-b block-2nd form-lg ui-theme-sub">
-                    <div class="col-3 col-sm-6">
+                    <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost circle ui-border-dual ui-stroke ui-color ui-fill-light-200">
@@ -305,7 +305,7 @@
                         </div>
 
                     </div>
-                    <div class="col-3 col-sm-6">
+                    <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost circle ui-border-dual ui-stroke ui-color ui-fill-light-200">
@@ -341,7 +341,7 @@
 
                 <h5 class="font-bold">Dropdowns Selects</h5>
                 <div class="ui-row ui-padding-30-b block-2nd form-lg">
-                    <div class="col-3 col-sm-6">
+                    <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn align-l circle">
@@ -363,7 +363,7 @@
                         </div>
 
                     </div>
-                    <div class="col-3 col-sm-6">
+                    <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn align-l circle">
@@ -427,7 +427,7 @@
 
                 <h5 class="font-bold">Dropdowns with List Icons</h5>
                 <div class="ui-row ui-padding-30-b block-2nd form-lg">
-                    <div class="col-3 col-sm-6">
+                    <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn align-l circle">
                                 Dropdown
@@ -455,7 +455,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-sm-6">
+                    <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn align-l circle">
                                 Dropdown
@@ -487,7 +487,7 @@
 
                 <h5 class="font-bold">Dropdowns with Grid List</h5>
                 <div class="ui-row ui-padding-30-b block-2nd form-lg">
-                    <div class="col-3 col-sm-6">
+                    <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost circle ui-border-dual">
                                 Dropdown
@@ -527,7 +527,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-sm-6">
+                    <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost circle ui-border-dual">
                                 Dropdown
@@ -573,7 +573,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-sm-6">
+                    <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost circle ui-border-dual">
                                 Dropdown

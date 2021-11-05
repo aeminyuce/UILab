@@ -1,11 +1,11 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="col-12 ui-padding-30-v">
+            <div class="ui-col-12 ui-padding-30-v">
 
                 <h3>Line Charts Examples</h3>
                 <div class="ui-row ui-row-gap-lg-v">
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold align-c">Line Chart</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines">
@@ -19,7 +19,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold align-c">Curved Line Chart</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-type="curved">
@@ -33,7 +33,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold align-c">Dotted Line Chart</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-type="dotted">
@@ -47,7 +47,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold align-c">Dashed Line Chart</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-type="dashed">
@@ -61,7 +61,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold align-c">Line Charts</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-name="1st">
@@ -84,7 +84,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold align-c">Curved Line Charts</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-name="1st" data-ui-type="curved dotted">
@@ -116,7 +116,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold align-c">Filled Line Charts</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-name="1st" data-ui-type="filled">
@@ -139,7 +139,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold align-c">Filled &amp; Curved Line Charts</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-name="1st" data-ui-type="curved dotted">
@@ -171,9 +171,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 ui-theme-base ui-fill-dark-100 round">
+                    <div class="ui-col-12 ui-theme-base ui-fill-dark-100 round">
                         <div class="ui-row">
-                            <div class="col-6">
+                            <div class="ui-col-6">
                                 <h5 class="font-bold align-c">Filled Line Charts</h5>
                                 <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                                     <ul class="ui-lines" data-ui-name="1st" data-ui-type="filled">
@@ -196,7 +196,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="ui-col-6">
                                 <h5 class="font-bold align-c">Filled &amp; Curved Line Charts</h5>
                                 <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                                     <ul class="ui-lines" data-ui-name="1st" data-ui-type="curved dotted">
@@ -230,7 +230,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="ui-col-12">
                         <div class="ui-card round shadow-lg ui-tabs ui-ease-tabs" data-ui-classes="font-bold">
                             <div class="ui-card-side ui-padding-10 ui-border-b">
 
@@ -298,7 +298,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="ui-col-12">
                         <h5 class="font-bold align-c">Column Stepping Chart</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-step="6"
                             data-ui-x="01.12.2019,02.12.2019,03.12.2019,04.12.2019,05.12.2019,06.12.2019,07.12.2019,08.12.2019,09.12.2019,10.12.2019,11.12.2019,12.12.2019,13.12.2019,14.12.2019,15.12.2019,16.12.2019,17.12.2019,18.12.2019,19.12.2019,20.12.2019,21.12.2019">
@@ -330,12 +330,12 @@
                 </div>
 
             </div>
-            <div class="col-lg-8 push-lg-2 col-12 ui-padding-30-v">
+            <div class="ui-col-lg-8 push-lg-2 ui-col-12 ui-padding-30-v">
 
                 <h3>Donut Chart Examples</h3>
 
                 <div class="ui-row ui-row-gap-lg-v">
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
@@ -344,7 +344,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
@@ -353,7 +353,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>JS</strong>
                             <svg viewBox="0 0 160 160">
@@ -362,7 +362,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>PHP</strong>
                             <svg viewBox="0 0 160 160">
@@ -374,7 +374,7 @@
                 </div>
 
                 <div class="ui-row ui-row-gap-lg-v">
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
@@ -384,7 +384,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
@@ -395,7 +395,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
@@ -407,7 +407,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
@@ -427,7 +427,7 @@
                 </div>
 
                 <div class="ui-row ui-row-gap-lg-v">
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
@@ -436,7 +436,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
@@ -445,7 +445,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
@@ -455,7 +455,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
@@ -469,7 +469,7 @@
                 </div>
 
                 <div class="ui-row ui-row-gap-lg-v ui-theme-base ui-fill-dark-100 round">
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
@@ -478,7 +478,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
@@ -487,7 +487,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
@@ -497,7 +497,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
@@ -511,26 +511,26 @@
                 </div>
 
             </div>
-            <div class="col-lg-8 push-lg-2 col-12 ui-padding-30-v">
+            <div class="ui-col-lg-8 push-lg-2 ui-col-12 ui-padding-30-v">
 
                 <h3>Pie Chart Examples</h3>
 
                 <div class="ui-row ui-row-gap-lg-v">
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>
                                 <li data-ui-percent="37" data-ui-fill="hsl(210, 86%, 68%)"></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>
                                 <li data-ui-percent="66" data-ui-fill="hsl(27, 77%, 59%)"></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>
                                 <li data-ui-percent="14" data-ui-fill="hsl(285, 70%, 70%)"></li>
@@ -538,7 +538,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart" data-ui-text="Text">
                             <ul>
                                 <li data-ui-percent="57" data-ui-fill="hsl(186, 70%, 68%)"></li>
@@ -546,7 +546,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>
                                 <li data-ui-percent="20" data-ui-fill="hsl(210, 86%, 68%)"></li>
@@ -555,7 +555,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>
                                 <li data-ui-percent="15" data-ui-fill="hsl(97, 70%, 70%)"></li>
@@ -565,7 +565,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>
                                 <li data-ui-percent="49" data-ui-fill="hsl(285, 70%, 70%)"></li>
@@ -576,7 +576,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart" data-ui-text="Text">
                             <ul>
                                 <li data-ui-percent="20" data-ui-fill="hsl(210, 86%, 68%)"></li>
@@ -594,21 +594,21 @@
                 </div>
 
                 <div class="ui-row ui-row-gap-lg-v">
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>
                                 <li data-ui-percent="37" data-ui-fill="hsl(210, 86%, 68%)" data-ui-title="37% HTML"></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>
                                 <li data-ui-percent="66" data-ui-fill="hsl(27, 77%, 59%)" data-ui-title="66% PHP"></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>
                                 <li data-ui-percent="14" data-ui-fill="hsl(285, 70%, 70%)" data-ui-title="14% JS"></li>
@@ -616,7 +616,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart" data-ui-text="Text">
                             <ul>
                                 <li data-ui-percent="57" data-ui-fill="hsl(186, 70%, 68%)" data-ui-title="57% HTML"></li>
@@ -627,21 +627,21 @@
                 </div>
 
                 <div class="ui-row ui-row-gap-lg-v ui-theme-base ui-fill-dark-100 round">
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>
                                 <li data-ui-percent="37" data-ui-fill="hsl(210, 86%, 68%)" data-ui-title="37% HTML"></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>
                                 <li data-ui-percent="66" data-ui-fill="hsl(27, 77%, 59%)" data-ui-title="66% PHP"></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>
                                 <li data-ui-percent="14" data-ui-fill="hsl(285, 70%, 70%)" data-ui-title="14% JS"></li>
@@ -649,7 +649,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-6">
+                    <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart" data-ui-text="Text">
                             <ul>
                                 <li data-ui-percent="57" data-ui-fill="hsl(186, 70%, 68%)" data-ui-title="57% HTML"></li>

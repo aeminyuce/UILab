@@ -1,4 +1,4 @@
-<div class="col-4 col-sm-6">
+<div class="ui-col-4 ui-col-sm-6">
     <a class="full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
         <span class="ui-photo-slider ui-margin-20-b">
             <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
@@ -34,7 +34,7 @@
         </span>
     </a>
 </div>
-<div class="col-4 col-sm-6">
+<div class="ui-col-4 ui-col-sm-6">
     <a class="full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
         <span class="ui-photo-slider ui-margin-20-b">
             <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
@@ -69,7 +69,7 @@
         </span>
     </a>
 </div>
-<div class="col-4 col-sm-6">
+<div class="ui-col-4 ui-col-sm-6">
     <a class="full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
         <span class="ui-photo-slider ui-margin-20-b">
             <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
@@ -104,7 +104,7 @@
         </span>
     </a>
 </div>
-<div class="col-4 col-sm-6">
+<div class="ui-col-4 ui-col-sm-6">
     <a class="full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
         <span class="ui-photo-slider ui-margin-20-b">
             <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
@@ -135,7 +135,7 @@
         </span>
     </a>
 </div>
-<div class="col-4 col-sm-6">
+<div class="ui-col-4 ui-col-sm-6">
     <a class="full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
         <span class="ui-photo-slider ui-margin-20-b">
             <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
@@ -166,7 +166,7 @@
         </span>
     </a>
 </div>
-<div class="col-4 col-sm-6">
+<div class="ui-col-4 ui-col-sm-6">
     <a class="full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
         <span class="ui-photo-slider ui-margin-20-b">
             <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>

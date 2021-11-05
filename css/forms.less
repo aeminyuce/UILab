@@ -502,13 +502,13 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
     .text,.select { min-width: inherit !important; }
 
     &-focus {
-        [class*="col-"] {
+        [class*="ui-col-"] {
             & > * { ._border-color-var(form-focus-border); }
             & > .form-light,& > .ui-border-light { border-color: @form-focus-border-dark !important; }
         }
     }
 
-    [class*="col-"] {
+    [class*="ui-col-"] {
         &:not(:first-child) {
             & > * { border-top-left-radius: 0; border-bottom-left-radius: 0; }
         }
@@ -518,21 +518,21 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
     }
     .ui-row {
         &:not(:last-child) {
-            & > [class*="col-"]:last-child {
+            & > [class*="ui-col-"]:last-child {
                 & > * { border-right: 0; }
             }
         }
         &:not(:first-child):not(:last-child) {
-            & > [class*="col-"] {
+            & > [class*="ui-col-"] {
                 & > * { border-radius: 0; }
             }        }
         &:last-child {
-            & > [class*="col-"]:first-child {
+            & > [class*="ui-col-"]:first-child {
                 & > * { border-top-left-radius: 0; border-bottom-left-radius: 0; }
             }
         }
         &:first-child {
-            & > [class*="col-"]:last-child {
+            & > [class*="ui-col-"]:last-child {
                 & > * { border-top-right-radius: 0; border-bottom-right-radius: 0; }
             }
         }
@@ -635,34 +635,34 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
     .form-grid {
         display: block;
 
-        .ui-row [class*="col-"]:not(.sm-fluid) & { margin-bottom: -(@form-spacing * 3); }
+        .ui-row [class*="ui-col-"]:not(.sm-fluid) & { margin-bottom: -(@form-spacing * 3); }
     }
 
     .ui-row-gap- {
         &md {
             &,&-v {
-                [class*="col-"]:not(.sm-fluid) {
+                [class*="ui-col-"]:not(.sm-fluid) {
                     .form-grid { margin-bottom: -@form-spacing; }
                 }
             }
         }
         &sm {
             &,&-v {
-                [class*="col-"]:not(.sm-fluid) {
+                [class*="ui-col-"]:not(.sm-fluid) {
                     .form-grid { margin-bottom: 0; }
                 }
             }
         }
         &xs {
             &,&-v {
-                [class*="col-"]:not(.sm-fluid) {
+                [class*="ui-col-"]:not(.sm-fluid) {
                     .form-grid { margin-bottom: (@form-spacing - 2); }
                 }
             }
         }
     }
     .ui-no-row-gap {
-        [class*="col-"]:not(.sm-fluid) {
+        [class*="ui-col-"]:not(.sm-fluid) {
             .form-grid { margin-top: (@form-spacing * 2); margin-bottom: @form-spacing; }
         }
     }
@@ -678,35 +678,35 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
         .form-grid {
             display: block;
 
-            .ui-row [class*="col-"] & { margin-bottom: -(@form-spacing * 3); }
+            .ui-row [class*="ui-col-"] & { margin-bottom: -(@form-spacing * 3); }
         }
     }
 
     .ui-row-gap- {
         &md {
             &,&-v {
-                [class*="col-"].sm-fluid {
+                [class*="ui-col-"].sm-fluid {
                     .form-grid { margin-bottom: -@form-spacing; }
                 }
             }
         }
         &sm {
             &,&-v {
-                [class*="col-"].sm-fluid {
+                [class*="ui-col-"].sm-fluid {
                     .form-grid { margin-bottom: 0; }
                 }
             }
         }
         &xs {
             &,&-v {
-                [class*="col-"].sm-fluid {
+                [class*="ui-col-"].sm-fluid {
                     .form-grid { margin-bottom: (@form-spacing - 2); }
                 }
             }
         }
     }
     .ui-no-row-gap {
-        [class*="col-"].sm-fluid {
+        [class*="ui-col-"].sm-fluid {
             .form-grid { margin-top: (@form-spacing * 2); margin-bottom: @form-spacing; }
         }
     }

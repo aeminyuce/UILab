@@ -1,7 +1,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="col-6 ui-padding-30">
+            <div class="ui-col-6 ui-padding-30">
 
                 <h3>Headings</h3>
                 <div class="ui-padding-30-b">
@@ -196,7 +196,7 @@
 
                 <h3>List Spacers</h3>
                 <div class="ui-row ui-padding-30-b">
-                    <div class="col-12">
+                    <div class="ui-col-12">
                         <h5 class="font-bold">With Inline Lists</h5>
                         <ul class="list-inline ui-list-spacer-5">
                             <li>Lorem ipsum</li>
@@ -205,7 +205,7 @@
                             <li>adipiscing elit</li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold">1px</h5>
                         <ul class="list-unstyled ui-list-spacer-1">
                             <li>Lorem ipsum dolor sit amet</li>
@@ -213,7 +213,7 @@
                             <li>Integer molestie lorem at massa</li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold">2px</h5>
                         <ul class="list-unstyled ui-list-spacer-2">
                             <li>Lorem ipsum dolor sit amet</li>
@@ -221,7 +221,7 @@
                             <li>Integer molestie lorem at massa</li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold">3px</h5>
                         <ul class="list-unstyled ui-list-spacer-3">
                             <li>Lorem ipsum dolor sit amet</li>
@@ -229,7 +229,7 @@
                             <li>Integer molestie lorem at massa</li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold">4px</h5>
                         <ul class="list-unstyled ui-list-spacer-4">
                             <li>Lorem ipsum dolor sit amet</li>
@@ -237,7 +237,7 @@
                             <li>Integer molestie lorem at massa</li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold">5px</h5>
                         <ul class="list-unstyled ui-list-spacer-5">
                             <li>Lorem ipsum dolor sit amet</li>
@@ -245,7 +245,7 @@
                             <li>Integer molestie lorem at massa</li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold">10px</h5>
                         <ul class="list-unstyled ui-list-spacer-10">
                             <li>Lorem ipsum dolor sit amet</li>
@@ -253,7 +253,7 @@
                             <li>Integer molestie lorem at massa</li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold">15px</h5>
                         <ul class="list-unstyled ui-list-spacer-15">
                             <li>Lorem ipsum dolor sit amet</li>
@@ -261,7 +261,7 @@
                             <li>Integer molestie lorem at massa</li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold">20px</h5>
                         <ul class="list-unstyled ui-list-spacer-20">
                             <li>Lorem ipsum dolor sit amet</li>
@@ -269,7 +269,7 @@
                             <li>Integer molestie lorem at massa</li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold">25px</h5>
                         <ul class="list-unstyled ui-list-spacer-25">
                             <li>Lorem ipsum dolor sit amet</li>
@@ -277,7 +277,7 @@
                             <li>Integer molestie lorem at massa</li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <h5 class="font-bold">30px</h5>
                         <ul class="list-unstyled ui-list-spacer-30">
                             <li>Lorem ipsum dolor sit amet</li>
@@ -289,7 +289,7 @@
 
             </div>
 
-            <div class="col-6 ui-padding-30">
+            <div class="ui-col-6 ui-padding-30">
 
                 <h3>Lead Text</h3>
                 <p class="font-lead highlight">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
@@ -321,7 +321,7 @@
 
                 <h3>Text Elements</h3>
                 <div class="ui-row ui-padding-30-b">
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <mark>Marked Text</mark>
                         <br>
                         <del>Deleted Text</del>
@@ -340,7 +340,7 @@
                         <br>
                         <abbr title="attribute">attr</abbr>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <span class="font-bold">.bold</span>
                         <br>
                         <span class="font-semibold">.semibold</span>
@@ -353,7 +353,7 @@
                         <br>
                         <span class="font-overline">.overline</span>
                         <br>
-                        <div class="font-ellipsis col-100">.ellipisis: Ellipsis Text</div>
+                        <div class="font-ellipsis ui-col-100">.ellipisis: Ellipsis Text</div>
                     </div>
                 </div>
 

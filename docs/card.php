@@ -1,7 +1,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="col-12 ui-padding-30">
+            <div class="ui-col-12 ui-padding-30">
 
                 <h43Card Example</h4>
                 <div class="ui-padding-30-b">
@@ -62,12 +62,12 @@
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
-                        <div class="col-static sm-fluid">
-                            <div class="col-48 align-c ui-padding-4-v">
+                        <div class="ui-col-static sm-fluid">
+                            <div class="ui-col-48 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl ui-theme-sub ui-color"><use href="#info-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="col-12 sm-align-c large">
+                                <div class="ui-col-12 sm-align-c large">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -84,12 +84,12 @@
                             <button class="ui-close-card ui-ease-btn">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
-                                <div class="col-static sm-fluid">
-                                    <div class="col-48 ui-padding-4-v align-c">
+                                <div class="ui-col-static sm-fluid">
+                                    <div class="ui-col-48 ui-padding-4-v align-c">
                                         <svg class="ui-icon ui-icon-xl ui-theme-sub ui-color"><use href="#info-circle-fill"/></svg>
                                     </div>
                                     <div class="ui-row">
-                                        <div class="col-12 sm-align-c large">
+                                        <div class="ui-col-12 sm-align-c large">
                                             Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                         </div>
                                     </div>
@@ -104,12 +104,12 @@
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
-                        <div class="col-static sm-fluid">
-                            <div class="col-48 align-c ui-padding-4-v">
+                        <div class="ui-col-static sm-fluid">
+                            <div class="ui-col-48 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="col-12 sm-align-c large">
+                                <div class="ui-col-12 sm-align-c large">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -120,12 +120,12 @@
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
-                        <div class="col-static sm-fluid">
-                            <div class="col-48 align-c ui-padding-4-v">
+                        <div class="ui-col-static sm-fluid">
+                            <div class="ui-col-48 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="col-12 sm-align-c large">
+                                <div class="ui-col-12 sm-align-c large">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -136,12 +136,12 @@
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
-                        <div class="col-static sm-fluid">
-                            <div class="col-48 align-c ui-padding-4-v">
+                        <div class="ui-col-static sm-fluid">
+                            <div class="ui-col-48 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="col-12 sm-align-c large">
+                                <div class="ui-col-12 sm-align-c large">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -152,12 +152,12 @@
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
-                        <div class="col-static sm-fluid">
-                            <div class="col-48 align-c ui-padding-4-v">
+                        <div class="ui-col-static sm-fluid">
+                            <div class="ui-col-48 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="col-12 sm-align-c large">
+                                <div class="ui-col-12 sm-align-c large">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -168,12 +168,12 @@
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
-                        <div class="col-static sm-fluid">
-                            <div class="col-48 align-c ui-padding-4-v">
+                        <div class="ui-col-static sm-fluid">
+                            <div class="ui-col-48 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="col-12 sm-align-c large">
+                                <div class="ui-col-12 sm-align-c large">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -184,12 +184,12 @@
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
-                        <div class="col-static sm-fluid">
-                            <div class="col-48 align-c ui-padding-4-v">
+                        <div class="ui-col-static sm-fluid">
+                            <div class="ui-col-48 align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="col-12 sm-align-c large">
+                                <div class="ui-col-12 sm-align-c large">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>

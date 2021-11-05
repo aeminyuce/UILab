@@ -6,11 +6,11 @@
 
 <main class="ui-container ui-no-gutter">
 
-    <div class="col-static sm-fluid">
+    <div class="ui-col-static sm-fluid">
 
         <!-- sidebar -->
-        <div class="sidebar col-250 set-relative visible-lg ui-theme-panel ui-ease-width ui-ease-in-out">
-            <div class="col-250 full-h set-fixed set-l invert-bg ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
+        <div class="sidebar ui-col-250 set-relative visible-lg ui-theme-panel ui-ease-width ui-ease-in-out">
+            <div class="ui-col-250 full-h set-fixed set-l invert-bg ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
 
                 <div class="set-relative">
                     <img src="img/logo-udashboard.png" width="194" height="62" alt="">
@@ -228,7 +228,7 @@
         <div class="ui-row">
 
             <!-- header: start -->
-            <header class="col-12 align-r ui-icons-no-opacity shadow-sm form-lg ui-ease-layout sidebar-opened" data-ui-classes="shadow-lg">
+            <header class="ui-col-12 align-r ui-icons-no-opacity shadow-sm form-lg ui-ease-layout sidebar-opened" data-ui-classes="shadow-lg">
 
                 <div class="align-c left ui-ease-1st-btn">
                     <button class="sidebar-show ui-btn font-color-black-muted ui-btn-ghost ui-padding-10 circle visible-lg hidden" data-ui-tooltip title="Toggle Sidebar">
@@ -454,7 +454,7 @@
 
                 <div class="ui-container">
                     <div class="ui-row ui-border-b ui-margin-15-b ui-theme-panel2">
-                        <div class="col-4 offset-4 ui-no-padding-b">
+                        <div class="ui-col-4 offset-4 ui-no-padding-b">
 
                             <div class="ui-btn-holder font-color-black-muted form-lg ui-ease-1st-btn">
                                 <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color ui-active">Forms</button>
@@ -470,19 +470,19 @@
                     <!-- forms: start -->
                     <div class="ui-fixed ui-fixed-xl">
                         <div class="ui-row">
-                            <div class="col-12">
+                            <div class="ui-col-12">
 
                                 <div class="ui-card round shadow-lg">
 
                                     <form action="#succesful">
                                         <div class="ui-card-side ui-padding-5-h ui-border-b">
-                                            <div class="col-static no-fluid">
+                                            <div class="ui-col-static no-fluid">
                                                 <div class="ui-row">
-                                                    <div class="col-12">
+                                                    <div class="ui-col-12">
                                                         <h4 class="align-l ui-margin-4-t ui-margin-3-b">Forms</h4>
                                                     </div>
                                                 </div>
-                                                <div class="col-48 ui-padding-5-v">
+                                                <div class="ui-col-48 ui-padding-5-v">
 
                                                     <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                                                         <button type="button" class="ui-btn ui-btn-lg ui-btn-ghost ui-btn-square round">
@@ -514,34 +514,34 @@
                                         <div class="ui-card-side ui-padding-15 form-lg">
                                             <div class="ui-row">
 
-                                                <div class="col-8 offset-2">
+                                                <div class="ui-col-8 offset-2">
                                                     <h3>Customer Info</h3>
                                                 </div>
 
-                                                <div class="col-3 offset-2">
+                                                <div class="ui-col-3 offset-2">
                                                     <label class="form-grid">First Name</label>
                                                 </div>
-                                                <div class="col-5">
+                                                <div class="ui-col-5">
                                                     <div class="text round ui-border-dual ui-ease-form">
                                                         <input class="required" type="text" placeholder="Enter first name" minlength="3">
                                                     </div>
                                                     <p class="required-msg">Enter your first name.</p>
                                                 </div>
 
-                                                <div class="col-3 offset-2">
+                                                <div class="ui-col-3 offset-2">
                                                     <label class="form-grid">Last Name</label>
                                                 </div>
-                                                <div class="col-5">
+                                                <div class="ui-col-5">
                                                     <div class="text round ui-border-dual ui-ease-form">
                                                         <input class="required" type="text" placeholder="Enter last name" minlength="3">
                                                     </div>
                                                     <p class="required-msg">Enter your last name.</p>
                                                 </div>
 
-                                                <div class="col-3 offset-2">
+                                                <div class="ui-col-3 offset-2">
                                                     <label class="form-grid">Contact Phone</label>
                                                 </div>
-                                                <div class="col-5">
+                                                <div class="ui-col-5">
                                                     <div class="text text-icon-l round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#phone"/></svg>
                                                         <input class="required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
@@ -549,10 +549,10 @@
                                                     <p class="required-msg">Enter your phone.</p>
                                                 </div>
 
-                                                <div class="col-3 offset-2">
+                                                <div class="ui-col-3 offset-2">
                                                     <label class="form-grid">Age</label>
                                                 </div>
-                                                <div class="col-5">
+                                                <div class="ui-col-5">
                                                     <div class="select round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#angle-down"/></svg>
                                                         <select class="required">
@@ -565,10 +565,10 @@
                                                     <p class="required-msg">Enter your age.</p>
                                                 </div>
 
-                                                <div class="col-3 offset-2">
+                                                <div class="ui-col-3 offset-2">
                                                     <label class="form-grid">Email Address</label>
                                                 </div>
-                                                <div class="col-5">
+                                                <div class="ui-col-5">
                                                     <div class="text text-icon-l round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#at"/></svg>
                                                         <input class="required email" type="email">
@@ -576,21 +576,21 @@
                                                     <p class="required-msg">Enter a valid email.</p>
                                                 </div>
 
-                                                <div class="col-3 offset-2">
+                                                <div class="ui-col-3 offset-2">
                                                     <label class="form-grid">Company Site</label>
                                                 </div>
-                                                <div class="col-5">
-                                                    <div class="form-holder col-static no-fluid">
+                                                <div class="ui-col-5">
+                                                    <div class="form-holder ui-col-static no-fluid">
 
                                                         <div class="ui-row ui-no-row-gap">
-                                                            <div class="col-12">
+                                                            <div class="ui-col-12">
                                                                 <div class="text text-icon-l round ui-border-dual ui-ease-form">
                                                                     <svg class="ui-icon"><use href="#browser"/></svg>
                                                                     <input class="required" type="text" placeholder="Site name">
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-200">
+                                                        <div class="ui-col-200">
                                                             <div class="select round ui-border-dual ui-ease-form">
                                                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                                                 <select>
@@ -607,14 +607,14 @@
 
                                                 <div class="sp-1 ui-margin-20 ui-border-b ui-border-dashed"></div>
 
-                                                <div class="col-8 offset-2">
+                                                <div class="ui-col-8 offset-2">
                                                     <h3>Address Details</h3>
                                                 </div>
 
-                                                <div class="col-3 offset-2">
+                                                <div class="ui-col-3 offset-2">
                                                     <label class="form-grid">Country</label>
                                                 </div>
-                                                <div class="col-5">
+                                                <div class="ui-col-5">
                                                     <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete text text-icon-l round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#keyboard"/></svg>
                                                         <input class="required" type="text" placeholder="Type/Select your country" autocomplete="off" minlength="3">
@@ -622,10 +622,10 @@
                                                     <p class="required-msg">Type/Select your country.</p>
                                                 </div>
 
-                                                <div class="col-3 offset-2">
+                                                <div class="ui-col-3 offset-2">
                                                     <label class="form-grid">Address</label>
                                                 </div>
-                                                <div class="col-5">
+                                                <div class="ui-col-5">
                                                     <div class="textarea round ui-border-dual ui-ease-form" data-ui-counter="1000">
                                                         <textarea class="required" rows="3"></textarea>
                                                     </div>
@@ -636,7 +636,7 @@
                                         </div>
                                         <div class="ui-card-side ui-padding-5-h ui-border-t">
                                             <div class="ui-row">
-                                                <div class="col-12 align-r xs-align-c ui-ease-1st-btn">
+                                                <div class="ui-col-12 align-r xs-align-c ui-ease-1st-btn">
 
                                                     <button type="reset" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-15-h round">
                                                         Cancel
@@ -666,20 +666,20 @@
                     <div class="ui-fixed ui-fixed-xl">
                         <div class="ui-row">
 
-                            <div class="col-12 ui-no-padding">
+                            <div class="ui-col-12 ui-no-padding">
                                 <div class="ui-dashboard-carousel ui-carousel" data-ui-col-xl="4" data-ui-col-lg="2" data-ui-col="2" data-ui-col-md="2" data-ui-col-sm="1" data-ui-col-xs="1">
                                     <div class="ui-carousel-slider ui-icons-margin-5-r ui-ease-layout ui-ease-slow ui-ease-in-out">
 
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-yellow">
                                             <div class="ui-card full-h ui-padding-15 round shadow-lg">
-                                                <div class="col-static no-fluid">
+                                                <div class="ui-col-static no-fluid">
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
-                                                        <div class="col-12">
+                                                        <div class="ui-col-12">
                                                             <div class="x-large">Pending</div>
                                                             <span class="font-color-black-muted large">Total: 45%</span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-100 align-r">
+                                                    <div class="ui-col-100 align-r">
                                                         <span class="x-largest ui-color">157</span>
                                                     </div>
                                                 </div>
@@ -695,14 +695,14 @@
                                         </div>
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-yellow">
                                             <div class="ui-card full-h ui-padding-15 round shadow-lg">
-                                                <div class="col-static no-fluid">
+                                                <div class="ui-col-static no-fluid">
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
-                                                        <div class="col-12">
+                                                        <div class="ui-col-12">
                                                             <div class="x-large">Paused</div>
                                                             <span class="font-color-black-muted large">Total: 5%</span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-100 align-r">
+                                                    <div class="ui-col-100 align-r">
                                                         <span class="x-largest ui-color">23</span>
                                                     </div>
                                                 </div>
@@ -718,14 +718,14 @@
                                         </div>
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-green">
                                             <div class="ui-card full-h ui-padding-15 round shadow-lg">
-                                                <div class="col-static no-fluid">
+                                                <div class="ui-col-static no-fluid">
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
-                                                        <div class="col-12">
+                                                        <div class="ui-col-12">
                                                             <div class="x-large">Completed</div>
                                                             <span class="font-color-black-muted large">Total: 80%</span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-100 align-r">
+                                                    <div class="ui-col-100 align-r">
                                                         <span class="x-largest ui-color">256</span>
                                                     </div>
                                                 </div>
@@ -741,14 +741,14 @@
                                         </div>
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-panel2">
                                             <div class="ui-card full-h ui-padding-15 round shadow-lg">
-                                                <div class="col-static no-fluid">
+                                                <div class="ui-col-static no-fluid">
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
-                                                        <div class="col-12">
+                                                        <div class="ui-col-12">
                                                             <div class="align-l x-large">On Payment</div>
                                                             <span class="font-color-black-muted large">Total: 67%</span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-100 align-r">
+                                                    <div class="ui-col-100 align-r">
                                                         <span class="x-largest ui-color">256</span>
                                                     </div>
                                                 </div>
@@ -776,7 +776,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-3 col-lg-6 col-12 col-md-6">
+                            <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
                                 <div class="ui-card full-h ui-padding-15 round shadow-lg">
                                     <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost round">
@@ -789,19 +789,19 @@
                                         </ul>
                                     </div>
                                     <h4 class="align-l ui-margin-10-t">Activity</h4>
-                                    <div class="col-static no-fluid">
+                                    <div class="ui-col-static no-fluid">
                                         <div class="ui-row ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
-                                            <div class="col-12 large">
+                                            <div class="ui-col-12 large">
                                                 <div class="large font-bold">Total Progress</div>
                                                 <span class="font-color-black-muted">23% Change</span>
                                             </div>
                                         </div>
-                                        <div class="col-150 align-r">
+                                        <div class="ui-col-150 align-r">
                                             <span class="x-largest inline-block">436</span>
                                         </div>
                                     </div>
                                     <div class="ui-row ui-row-gap-lg-h no-fluid">
-                                        <div class="col-6">
+                                        <div class="ui-col-6">
                                             <div class="ui-donut-chart automargin ui-ease-donut-chart" style="max-width: 150px;">
                                                 <strong>
                                                     <b class="font-color-black-50 ui-margin-2-b block">69%</b>
@@ -813,7 +813,7 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="ui-col-6">
                                             <div class="ui-pie-chart automargin ui-ease-pie-chart" data-ui-text="Profit" style="max-width: 150px;">
                                                 <ul>
                                                     <li data-ui-percent="70" data-ui-fill="hsl(97, 70%, 70%)"></li>
@@ -830,7 +830,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-3 col-lg-6 col-12 col-md-6">
+                            <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
                                 <div class="ui-card full-h ui-padding-15 ui-padding-10-t round shadow-lg" style="min-height: 350px;">
                                     <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
@@ -842,7 +842,7 @@
                                             <div class="ui-list-group ui-margin-15-h">
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
@@ -852,7 +852,7 @@
                                                         <span class="font-color-black-50 small">3814 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
@@ -862,7 +862,7 @@
                                                         <span class="font-color-black-50 small">2613 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
@@ -872,7 +872,7 @@
                                                         <span class="font-color-black-50 small">1890 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
@@ -882,7 +882,7 @@
                                                         <span class="font-color-black-50 small">1605 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
@@ -892,7 +892,7 @@
                                                         <span class="font-color-black-50 small">812 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
@@ -908,7 +908,7 @@
                                             <div class="ui-list-group ui-margin-15-h">
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
@@ -918,7 +918,7 @@
                                                         <span class="font-color-black-50 small">3814 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
@@ -928,7 +928,7 @@
                                                         <span class="font-color-black-50 small">2613 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
@@ -938,7 +938,7 @@
                                                         <span class="font-color-black-50 small">1890 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
@@ -948,7 +948,7 @@
                                                         <span class="font-color-black-50 small">1605 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
@@ -958,7 +958,7 @@
                                                         <span class="font-color-black-50 small">812 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
                                                             <strong class="font-color-black-muted x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
@@ -975,7 +975,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-6 col-lg-6 col-12 col-md-6">
+                            <div class="ui-col-xl-6 ui-col-lg-6 ui-col-12 ui-col-md-6">
                                 <div class="ui-tabs ui-card full-h ui-padding-15 round shadow-lg" data-ui-classes="font-bold">
                                     <div class="ui-ease-tabs">
                                         <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
@@ -1047,7 +1047,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-3 col-lg-6 col-12 col-md-6">
+                            <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
                                 <div class="ui-card full-h ui-padding-15 ui-padding-10-t round shadow-lg" style="min-height: 350px;">
                                     <div class="ui-tabs form-lg ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
@@ -1118,7 +1118,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-3 col-lg-6 col-12 col-md-6">
+                            <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
                                 <div class="ui-card full-h ui-padding-15 round shadow-lg">
                                     <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost round">
@@ -1134,7 +1134,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-6 col-lg-6 col-12 col-md-6">
+                            <div class="ui-col-xl-6 ui-col-lg-6 ui-col-12 ui-col-md-6">
                                 <div class="ui-card full-h ui-padding-15 round shadow-lg">
                                     <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost round">
@@ -1150,7 +1150,7 @@
                                     <div class="ui-grid-list ui-grid-list-striped grid-hover ui-theme-gray ui-ease-ui-grid-list">
 
                                         <div class="ui-row ui-no-ui-row-gap-v ui-row-gap-sm-h">
-                                            <div class="col-6 lg-fluid">
+                                            <div class="ui-col-6 lg-fluid">
                                                 <div class="text text-icon-both round ui-no-border ui-fill-light-100 has-clear ui-ease-form">
                                                     <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
                                                     <button class="clear-form">
@@ -1160,7 +1160,7 @@
                                                 </div>
                                                 <span class="sp-5 hidden-lg"></span>
                                             </div>
-                                            <div class="col-lg-3 col-6 no-fluid">
+                                            <div class="ui-col-lg-3 ui-col-6 no-fluid">
                                                 <div class="select round ui-no-border ui-fill-light-100 ui-ease-form">
                                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                                     <select class="ui-grid-list-filter" data-ui-index="2">
@@ -1175,7 +1175,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3 col-6 no-fluid">
+                                            <div class="ui-col-lg-3 ui-col-6 no-fluid">
                                                 <div class="ui-dropdown ui-menu-l block ui-ease-dropdown">
                                                     <button class="ui-btn align-l round">
                                                         <span>
@@ -1209,10 +1209,10 @@
 
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1241,10 +1241,10 @@
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon ui-theme-yellow ui-color">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1273,10 +1273,10 @@
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1305,10 +1305,10 @@
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1338,10 +1338,10 @@
 
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1370,10 +1370,10 @@
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon ui-theme-yellow ui-color">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1402,10 +1402,10 @@
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1434,10 +1434,10 @@
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1466,10 +1466,10 @@
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1498,10 +1498,10 @@
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon ui-theme-yellow ui-color">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1530,10 +1530,10 @@
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1562,10 +1562,10 @@
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1594,10 +1594,10 @@
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="John Atkinson|Paused">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1626,10 +1626,10 @@
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon ui-theme-yellow ui-color">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1658,10 +1658,10 @@
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1690,10 +1690,10 @@
                                             </div>
                                             <div class="ui-grid-list-content ui-no-border round" data-ui-val="Tony Starky|Paused">
                                                 <div class="ui-row ui-no-row-gap no-fluid">
-                                                    <div class="col-5">
+                                                    <div class="ui-col-5">
                                                         <img class="ui-img-photo-sm ui-margin-10-r hidden-xs circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
-                                                    <div class="col-7">
+                                                    <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
@@ -1726,12 +1726,12 @@
                                         <span class="sp-10"></span>
 
                                         <div class="ui-row ui-no-row-gap no-fluid">
-                                            <div class="col-4">
+                                            <div class="ui-col-4">
                                                 <div class="ui-padding-5-v">
                                                     Total <b class="ui-grid-list-total"></b>
                                                 </div>
                                             </div>
-                                            <div class="col-8 align-r">
+                                            <div class="ui-col-8 align-r">
                                                 <div class="ui-grid-list-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn round" data-ui-active="ui-theme-panel2 ui-fill-dark-100"></div>
                                             </div>
                                         </div>
@@ -1773,9 +1773,9 @@
             <h2>Search</h2>
             <p class="highlight large font-color-white-50 xs-align-c font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
-            <div class="col-static no-fluid">
+            <div class="ui-col-static no-fluid">
                 <div class="ui-row ui-no-ui-row-gap-h">
-                    <div class="col-12 ui-ease-1st-form">
+                    <div class="ui-col-12 ui-ease-1st-form">
                         <div class="text text-icon has-clear round-l ui-no-border shadow-in-sm ui-theme-gray ui-fill-light-300">
                             <button type="button" class="clear-form">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
@@ -1785,7 +1785,7 @@
                         <p class="required-msg large">Please, enter a keyword.</p>
                     </div>
                 </div>
-                <div class="col-100 col-xs-50 ui-padding-10-v">
+                <div class="ui-col-100 ui-col-xs-50 ui-padding-10-v">
                     <button class="ui-btn block round-r ui-theme-panel2 ui-fill-dark-100 ui-ease-btn" type="submit">
                         <svg class="ui-icon"><use href="#search"/></svg>
                     </button>
@@ -1793,21 +1793,21 @@
             </div>
 
             <div class="ui-row xs-fluid ui-icons-xxl block-2nd ui-icons-no-opacity hover-t-more-2nd ui-icons-margin-5-v ui-theme-panel ui-ease-2nd-btn">
-                <div class="col-4 ui-padding-10-b">
+                <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#news"/></svg>
                         <span class="x-large block ui-margin-5-t">News</span>
                         <span class="font-color-white-50">589</span>
                     </a>
                 </div>
-                <div class="col-4 ui-padding-10-b">
+                <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#calendar-check"/></svg>
                         <span class="x-large block ui-margin-5-t">Events</span>
                         <span class="font-color-white-50">219</span>
                     </a>
                 </div>
-                <div class="col-4 ui-padding-10-b">
+                <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#files"/></svg>
                         <span class="x-large block ui-margin-5-t">Documents</span>

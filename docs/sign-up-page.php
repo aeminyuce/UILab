@@ -4,7 +4,7 @@
 <main class="ui-container ui-no-gutter">
 
     <div class="ui-row ui-no-row-gap">
-        <div class="col-12">
+        <div class="ui-col-12">
 
             <div class="signup-holder no-scroll set-relative ui-fill-dark-100">
 
@@ -18,7 +18,7 @@
 
                 <div class="ui-fixed ui-theme-green">
                     <div class="ui-row">
-                        <div class="col-12 ui-padding-15-v align-c">
+                        <div class="ui-col-12 ui-padding-15-v align-c">
                             <span class="sp-30"></span>
                             <a href="?l=login-page" class="ui-btn font-color-white ui-btn-lg ui-btn-ghost ui-btn-ghost-border ui-btn-sm-fluid ui-padding-30-h circle ui-border-dual ui-stroke ui-ease-btn">
                                 <span class="font-color-white">Have you already an account?</span>
@@ -37,17 +37,17 @@
     <form action="#">
         <div class="ui-fixed signup-container">
             <div class="ui-row">
-                <div class="col-12">
+                <div class="ui-col-12">
 
                     <div class="ui-card ui-margin-30-b shadow-lg">
 
-                        <div class="col-static sm-fluid">
+                        <div class="ui-col-static sm-fluid">
                             <div class="ui-row ui-padding-20 form-lg">
-                                <div class="col-12">
+                                <div class="ui-col-12">
                                     <h3 class="ui-margin-30-b">Create your account</h3>
                                     <p class="font-color-black-muted large">Sign up to create, discover and connect with the global community.</p>
                                 </div>
-                                <div class="col-6">
+                                <div class="ui-col-6">
 
                                     <label class="form-label font-color-black-50">First Name</label>
                                     <div class="text round ui-border-dual ui-ease-form">
@@ -72,7 +72,7 @@
                                     <p class="required-msg">Enter your phone.</p>
 
                                 </div>
-                                <div class="col-6">
+                                <div class="ui-col-6">
 
                                     <label class="form-label font-color-black-50">Email</label>
                                     <div class="text round ui-border-dual ui-ease-form">
@@ -103,7 +103,7 @@
                                     <p class="required-msg">Please confirm your password.</p>
 
                                 </div>
-                                <div class="col-12 ui-theme-sub">
+                                <div class="ui-col-12 ui-theme-sub">
 
                                     <span class="sp-15"></span>
                                     <label class="custom">
@@ -138,7 +138,7 @@
 
                                 </div>
                             </div>
-                            <div class="why-join col-lg-500 col-400 col-md-350 order-sm-first sm-align-c ui-padding-30">
+                            <div class="why-join ui-col-lg-500 ui-col-400 ui-col-md-350 ui-order-sm-first sm-align-c ui-padding-30">
 
                                 <img class="automargin" src="img/sign-up.png" alt="Join Us" width="280">
                                 <span class="sp-30"></span>

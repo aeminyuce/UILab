@@ -4,12 +4,12 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="col-12 ui-padding-30-v">
+            <div class="ui-col-12 ui-padding-30-v">
 
                 <h3>Simple Pricing Table</h3>
 
                 <div class="ui-row ui-row-gap-lg align-c">
-                    <div class="col-4">
+                    <div class="ui-col-4">
 
                         <div class="ui-card full-h ui-padding-30 round shadow">
                             <div class="ui-margin-30-v">
@@ -25,7 +25,7 @@
                         </div>
 
                     </div>
-                    <div class="col-4 ui-no-padding-v">
+                    <div class="ui-col-4 ui-no-padding-v">
 
                         <div class="ui-card full-h ui-padding-30 round shadow-lg ui-theme-sub ui-fill-dark-100">
                             <div class="ui-margin-30-v">
@@ -45,7 +45,7 @@
                         </div>
 
                     </div>
-                    <div class="col-4">
+                    <div class="ui-col-4">
 
                         <div class="ui-card full-h ui-padding-30 round shadow">
                             <div class="ui-margin-30-v">
@@ -68,7 +68,7 @@
                 <h3>Detailed Pricing Table</h3>
 
                 <div class="ui-row ui-row-gap-lg align-c">
-                    <div class="col-4">
+                    <div class="ui-col-4">
 
                         <div class="ui-card full-h round shadow">
                             <div class="ui-card-side ui-padding-30 ui-border-b">
@@ -106,7 +106,7 @@
                         </div>
 
                     </div>
-                    <div class="col-4 ui-no-padding-v">
+                    <div class="ui-col-4 ui-no-padding-v">
 
                         <div class="ui-card full-h round shadow-lg ui-theme-sub ui-fill-dark-100">
                             <div class="ui-card-side ui-padding-30 ui-border-b ui-border-light">
@@ -145,7 +145,7 @@
                         </div>
 
                     </div>
-                    <div class="col-4">
+                    <div class="ui-col-4">
 
                         <div class="ui-card full-h round shadow">
                             <div class="ui-card-side ui-padding-30 ui-border-b">

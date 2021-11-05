@@ -6,9 +6,9 @@
 
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="col-static no-fluid ui-padding-30-v ui-padding-15-h ui-md-no-padding-h">
+        <div class="ui-col-static no-fluid ui-padding-30-v ui-padding-15-h ui-md-no-padding-h">
 
-            <div class="col-250 ui-padding-10 hidden-md">
+            <div class="ui-col-250 ui-padding-10 hidden-md">
                 <div class="ui-add-mobile-menu-r">
 
                     <div class="ui-card ui-padding-15 round shadow-lg">
@@ -163,11 +163,11 @@
             </div>
 
             <div class="ui-row">
-                <div class="col-12 ui-sm-no-padding-t">
+                <div class="ui-col-12 ui-sm-no-padding-t">
 
                     <div class="ui-card ui-margin-10-b round shadow-lg">
                         <div class="ui-row ui-row-gap-lg sm-fluid">
-                            <div class="col-12 ui-border-b">
+                            <div class="ui-col-12 ui-border-b">
                                 <h4>
                                     <svg class="ui-icon ui-icon-lg"><use href="#history"/></svg>
                                     <span class="inline-block">
@@ -175,7 +175,7 @@
                                     </span>
                                 </h4>
                             </div>
-                            <div class="col-8">
+                            <div class="ui-col-8">
                                 <div class="ui-line-charts ui-ease-line-charts" data-ui-x="1st Week,2nd Week,3rd Week,4th Week">
                                     <ul class="ui-lines" data-ui-type="curved dashed">
                                         <li data-ui-y="156"></li>
@@ -194,13 +194,13 @@
                                     Last 4 Weeks
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="ui-col-4">
                                 <div class="ui-row no-fluid ui-margin-10-b">
-                                    <div class="col-6">
+                                    <div class="ui-col-6">
                                         <span class="font-color-black-muted">Highest:</span>
                                         <span class="largest block">$199</span>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="ui-col-6">
                                         <span class="font-color-black-muted">Lowest:</span>
                                         <span class="largest block">$120</span>
                                     </div>
@@ -222,11 +222,11 @@
                     </div>
 
                     <div class="ui-row sm-fluid sm-align-c">
-                        <div class="col-6">
+                        <div class="ui-col-6">
                             <span class="sp-5 hidden-sm"></span>
                             <span class="large">Found <b>47</b> and displaying <b>9</b> products.</span>
                         </div>
-                        <div class="col-6 align-r ui-sm-no-padding-t">
+                        <div class="ui-col-6 align-r ui-sm-no-padding-t">
                             <div class="select align-l round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
@@ -260,7 +260,7 @@
                     </div>
 
                     <div class="products-list ui-row form-lg hover-shadow-2nd ui-ease-2nd-layout hover-t-2nd">
-                        <div class="col-4 col-sm-6">
+                        <div class="ui-col-4 ui-col-sm-6">
                             <a class="full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
@@ -296,7 +296,7 @@
                                 </span>
                             </a>
                         </div>
-                        <div class="col-4 col-sm-6">
+                        <div class="ui-col-4 ui-col-sm-6">
                             <a class="full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
@@ -331,7 +331,7 @@
                                 </span>
                             </a>
                         </div>
-                        <div class="col-4 col-sm-6">
+                        <div class="ui-col-4 ui-col-sm-6">
                             <a class="full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
@@ -366,7 +366,7 @@
                                 </span>
                             </a>
                         </div>
-                        <div class="col-4 col-sm-6">
+                        <div class="ui-col-4 ui-col-sm-6">
                             <a class="full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
@@ -397,7 +397,7 @@
                                 </span>
                             </a>
                         </div>
-                        <div class="col-4 col-sm-6">
+                        <div class="ui-col-4 ui-col-sm-6">
                             <a class="full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
@@ -428,7 +428,7 @@
                                 </span>
                             </a>
                         </div>
-                        <div class="col-4 col-sm-6">
+                        <div class="ui-col-4 ui-col-sm-6">
                             <a class="full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
@@ -466,7 +466,7 @@
                     </div>
 
                     <div class="ui-row">
-                        <div class="col-12 align-c">
+                        <div class="ui-col-12 align-c">
                             <button class="load-more ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h circle ui-ease-btn">Load more</button>
                         </div>
                     </div>

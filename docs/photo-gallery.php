@@ -1,49 +1,49 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="col-12 ui-padding-30-v">
+            <div class="ui-col-12 ui-padding-30-v">
 
                 <h3>Photo Gallery Examples</h3>
 
                 <h5 class="font-bold">Default Photo Gallery</h5>
                 <div class="ui-padding-30-b">
                     <div class="ui-row no-fluid ui-photo-gallery ui-ease-photo-gallery">
-                        <div class="col-3 col-sm-4 col-xs-6">
+                        <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_01.jpg">
                                 <img class="img-fluid" src="img/image_01.jpg" alt="">
                             </a>
                         </div>
-                        <div class="col-3 col-sm-4 col-xs-6">
+                        <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_02.jpg">
                                 <img class="img-fluid" src="img/image_02.jpg" alt="">
                             </a>
                         </div>
-                        <div class="col-3 col-sm-4 col-xs-6">
+                        <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_03.jpg">
                                 <img class="img-fluid" src="img/image_03.jpg" alt="">
                             </a>
                         </div>
-                        <div class="col-3 col-sm-4 col-xs-6">
+                        <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_04.jpg">
                                 <img class="img-fluid" src="img/image_04.jpg" alt="">
                             </a>
                         </div>
-                        <div class="col-3 col-sm-4 col-xs-6">
+                        <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_05.jpg">
                                 <img class="img-fluid" src="img/image_05.jpg" alt="">
                             </a>
                         </div>
-                        <div class="col-3 col-sm-4 col-xs-6">
+                        <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_06.jpg">
                                 <img class="img-fluid" src="img/image_06.jpg" alt="">
                             </a>
                         </div>
-                        <div class="col-3 col-sm-4 col-xs-6">
+                        <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_07.jpg">
                                 <img class="img-fluid" src="img/image_07.jpg" alt="">
                             </a>
                         </div>
-                        <div class="col-3 col-sm-4 col-xs-6">
+                        <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_08.jpg">
                                 <img class="img-fluid" src="img/image_08.jpg" alt="">
                             </a>
@@ -56,32 +56,32 @@
                 <h5 class="font-bold">Default Photo Gallery</h5>
                 <div class="ui-padding-30-b">
                     <div class="ui-row no-fluid ui-photo-gallery ui-ease-photo-gallery">
-                        <div class="col-2 col-sm-4 col-xs-4">
+                        <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
                             <a class="ui-img ui-margin-1-h round" href="img/movie_01.jpg">
                                 <img class="img-fluid" src="img/movie_01.jpg" alt="">
                             </a>
                         </div>
-                        <div class="col-2 col-sm-4 col-xs-4">
+                        <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
                             <a class="ui-img ui-margin-1-h round" href="img/movie_02.jpg">
                                 <img class="img-fluid" src="img/movie_02.jpg" alt="">
                             </a>
                         </div>
-                        <div class="col-2 col-sm-4 col-xs-4">
+                        <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
                             <a class="ui-img ui-margin-1-h round" href="img/movie_03.jpg">
                                 <img class="img-fluid" src="img/movie_03.jpg" alt="">
                             </a>
                         </div>
-                        <div class="col-2 col-sm-4 col-xs-4">
+                        <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
                             <a class="ui-img ui-margin-1-h round" href="img/movie_04.jpg">
                                 <img class="img-fluid" src="img/movie_04.jpg" alt="">
                             </a>
                         </div>
-                        <div class="col-2 col-sm-4 col-xs-4">
+                        <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
                             <a class="ui-img ui-margin-1-h round" href="img/movie_05.jpg">
                                 <img class="img-fluid" src="img/movie_05.jpg" alt="">
                             </a>
                         </div>
-                        <div class="col-2 col-sm-4 col-xs-4">
+                        <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
                             <a class="ui-img ui-margin-1-h round" href="img/movie_06.jpg">
                                 <img class="img-fluid" src="img/movie_06.jpg" alt="">
                             </a>
@@ -296,7 +296,7 @@
                 <div class="ui-padding-30-b">
                     <div class="ui-carousel-gallery ui-card ui-padding-15 round shadow-lg">
                         <div class="ui-row">
-                            <div class="ui-detail col-8 col-md-6 push-2 push-md-3 sm-fluid">
+                            <div class="ui-detail ui-col-8 ui-col-md-6 push-2 push-md-3 sm-fluid">
                                 <img src="img/house_01.jpg" class="ui-photo-gallery-call cursor-pointer img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel" data-ui-count="0" alt="">
                                 <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
                                 <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
@@ -349,7 +349,7 @@
                 <div class="ui-padding-30-b">
                     <div class="ui-carousel-gallery ui-card ui-padding-15 round shadow-lg">
                         <div class="ui-row">
-                            <div class="ui-detail col-8 col-md-6 push-2 push-md-3 sm-fluid">
+                            <div class="ui-detail ui-col-8 ui-col-md-6 push-2 push-md-3 sm-fluid">
                                 <img src="img/image_01.jpg" class="ui-photo-gallery-call cursor-pointer img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel2" data-ui-count="0" alt="">
                                 <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
                                 <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
@@ -357,19 +357,19 @@
                         </div>
                         <div id="ui-detail-carousel2" class="ui-thumbs">
                             <div class="ui-row ui-row-gap-xs no-fluid ui-ease-2nd-layout">
-                                <div class="col-5x">
+                                <div class="ui-col-5x">
                                     <img class="ui-img ui-ease-default selected" src="img/image_01.jpg" data-ui-href="img/image_01.jpg" alt="">
                                 </div>
-                                <div class="col-5x">
+                                <div class="ui-col-5x">
                                     <img class="ui-img ui-ease-default" src="img/image_02.jpg" data-ui-href="img/image_02.jpg" alt="">
                                 </div>
-                                <div class="col-5x">
+                                <div class="ui-col-5x">
                                     <img class="ui-img ui-ease-default" src="img/image_03.jpg" data-ui-href="img/image_03.jpg" alt="">
                                 </div>
-                                <div class="col-5x">
+                                <div class="ui-col-5x">
                                     <img class="ui-img ui-ease-default" src="img/image_04.jpg" data-ui-href="img/image_04.jpg" alt="">
                                 </div>
-                                <div class="col-5x">
+                                <div class="ui-col-5x">
                                     <img class="ui-img ui-ease-default" src="img/image_05.jpg" data-ui-href="img/image_05.jpg" alt="">
                                 </div>
                             </div>

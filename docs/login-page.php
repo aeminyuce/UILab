@@ -4,7 +4,7 @@
 <main class="ui-container full-h ui-no-gutter set-fixed set-all scroll-v">
 
     <div class="ui-row ui-no-row-gap sm-fluid full-h">
-        <div class="login-forms-container col-lg-5 col-6">
+        <div class="login-forms-container ui-col-lg-5 ui-col-6">
 
             <div class="forms-holder ui-card form-lg ui-tabs shadow-lg ui-ease-tabs">
                 <form id="login" class="ui-tab-content ui-open ui-open-ease" action="#">
@@ -78,7 +78,7 @@
             </div>
 
         </div>
-        <div class="login-container col-lg-7 col-6 set-relative">
+        <div class="login-container ui-col-lg-7 ui-col-6 set-relative">
 
             <div class="login-holder align-c no-scroll set-relative ui-fill-dark-100 shadow-lg">
 

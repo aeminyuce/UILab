@@ -1,13 +1,13 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="col-12 ui-padding-30">
+            <div class="ui-col-12 ui-padding-30">
 
                 <h3>Horizontal ui-tabs</h3>
                 <div class="ui-tabs ui-padding-30-b ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
                     <div class="ui-row ui-border-b ui-margin-15-b">
 
-                        <div class="col-4 offset-4 ui-no-padding-b">
+                        <div class="ui-col-4 offset-4 ui-no-padding-b">
                             <div class="ui-btn-holder font-color-black-muted form-lg ui-ease-1st-btn">
                                 <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-color ui-active">Tab Button</button>
                                 <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">Tab Button</button>
@@ -17,7 +17,7 @@
                     </div>
                     <div class="ui-row">
 
-                        <div class="col-12">
+                        <div class="ui-col-12">
                             <div class="ui-tab-content ui-open ui-open-ease">
                                 <p class="font-readable">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
@@ -62,7 +62,7 @@
                 </div>
 
                 <div class="ui-row ui-padding-30-b">
-                    <div class="col-12">
+                    <div class="ui-col-12">
                         <div class="ui-tabs ui-ease-tabs" data-ui-classes="ui-fill-dark-100">
 
                             <div class="ui-btn-holder ui-margin-10-b ui-btn-xs-fluid ui-theme-sub form-lg ui-ease-1st-btn">
@@ -145,9 +145,9 @@
                 </div>
 
                 <h3>Side Navigated ui-tabs</h3>
-                <div class="ui-tabs col-static ui-border-dual ui-margin-30-b ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
+                <div class="ui-tabs ui-col-static ui-border-dual ui-margin-30-b ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
-                    <div class="col-200 ui-padding-1 ui-theme-sub">
+                    <div class="ui-col-200 ui-padding-1 ui-theme-sub">
 
                         <div class="ui-btn-list align-l ui-icons-margin-10-r ui-icons-no-opacity form-lg ui-ease-1st-btn">
                             <button class="ui-tab ui-btn ui-border-r ui-border-lg ui-stroke ui-border-r ui-color ui-active">
@@ -170,7 +170,7 @@
 
                     </div>
                     <div class="ui-row">
-                        <div class="col-12">
+                        <div class="ui-col-12">
                             <div class="ui-tab-content ui-open ui-open-ease">
                                 <p class="font-readable">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
@@ -196,10 +196,10 @@
 
                 </div>
 
-                <div class="ui-tabs col-static ui-border-dual ui-margin-30-b ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
+                <div class="ui-tabs ui-col-static ui-border-dual ui-margin-30-b ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                     <div class="ui-row">
-                        <div class="col-12">
+                        <div class="ui-col-12">
                             <div class="ui-tab-content ui-open ui-open-ease">
                                 <p class="font-readable">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
@@ -222,7 +222,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-200 ui-padding-1 ui-theme-sub">
+                    <div class="ui-col-200 ui-padding-1 ui-theme-sub">
 
                         <div class="ui-btn-list align-l ui-icons-no-opacity form-lg ui-ease-1st-btn">
                             <button class="ui-tab ui-btn ui-border-l ui-border-l ui-border-lg ui-stroke ui-color ui-active">
@@ -255,9 +255,9 @@
                         <button class="ui-tab ui-btn ui-btn-ghost ui-border-b">Tab Button</button>
                     </div>
 
-                    <div class="ui-tab-content ui-tabs col-static ui-border-dual ui-margin-30-b ui-ease-tabs open open-ease" data-ui-classes="ui-border-lg ui-stroke ui-color">
+                    <div class="ui-tab-content ui-tabs ui-col-static ui-border-dual ui-margin-30-b ui-ease-tabs open open-ease" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
-                        <div class="col-200 ui-padding-1 ui-theme-sub">
+                        <div class="ui-col-200 ui-padding-1 ui-theme-sub">
 
                             <div class="ui-btn-list align-l ui-icons-margin-10-r ui-icons-no-opacity form-lg ui-ease-1st-btn">
                                 <button class="ui-tab ui-btn ui-border-r ui-border-lg ui-stroke ui-color ui-active">
@@ -280,7 +280,7 @@
 
                         </div>
                         <div class="ui-row">
-                            <div class="col-12">
+                            <div class="ui-col-12">
                                 <div class="ui-tab-content ui-open ui-open-ease">
                                     <p class="font-readable">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
@@ -305,9 +305,9 @@
                         </div>
 
                     </div>
-                    <div class="ui-tab-content ui-tabs col-static ui-border-dual ui-margin-30-b ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
+                    <div class="ui-tab-content ui-tabs ui-col-static ui-border-dual ui-margin-30-b ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
-                        <div class="col-200 ui-padding-1 ui-theme-sub">
+                        <div class="ui-col-200 ui-padding-1 ui-theme-sub">
 
                             <div class="ui-btn-list align-l ui-icons-margin-10-r ui-icons-no-opacity form-lg ui-ease-1st-btn">
                                 <button class="ui-tab ui-btn ui-border-r ui-border-lg ui-stroke ui-color ui-active">
@@ -330,7 +330,7 @@
 
                         </div>
                         <div class="ui-row">
-                            <div class="col-12">
+                            <div class="ui-col-12">
                                 <div class="ui-tab-content ui-open ui-open-ease">
                                     <p class="font-readable">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.

@@ -10,14 +10,14 @@
     <div class="ui-border-b ui-theme-farmer2">
         <div class="ui-fixed ui-padding-10-v ui-sm-no-padding-v">
             <div class="ui-row">
-                <div class="col-static no-fluid">
-                    <div class="col-220 ui-padding-10">
+                <div class="ui-col-static no-fluid">
+                    <div class="ui-col-220 ui-padding-10">
                         <a class="ui-margin-2-v inline-block" href="#">
                             <img src="img/agriculture/logo.png" alt="Agriculture Logo" srcset="img/agriculture/logo@2x.png 2x">
                         </a>
                     </div>
                     <div class="ui-row">
-                        <div class="col-12 align-r">
+                        <div class="ui-col-12 align-r">
 
                             <div class="hidden-sm">
                                 <div class="ui-ease-1st-btn ui-icons-no-opacity form-lg ui-add-mobile-menu-r">
@@ -86,7 +86,7 @@
 
         <div class="ui-fixed ui-padding-10-t ui-theme-farmer2">
             <div class="ui-row ui-no-ui-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
-                <div class="col-12 font-color-black-50 xs-align-l align-c ui-ease-1st-btn">
+                <div class="ui-col-12 font-color-black-50 xs-align-l align-c ui-ease-1st-btn">
                     <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-margin-1-b ui-border-b ui-color ui-border-lg ui-stroke active">
                         <svg class="ui-icon"><use href="#factory"/></svg>
                         Long Term Investment
@@ -107,9 +107,9 @@
         <div class="banner-content banner-tab01 ui-tab-content ui-padding-30-v set-relative ui-theme-farmer ui-fill-dark-100 ui-open ui-open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
             <div class="ui-fixed ui-padding-30-v set-relative">
                 <div class="ui-row">
-                    <div class="col-static">
+                    <div class="ui-col-static">
                         <div class="ui-row ui-row-gap-lg-v">
-                            <div class="col-12 md-align-c">
+                            <div class="ui-col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="highlight xx-large font-color-white-50 font-readable">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
@@ -120,7 +120,7 @@
 
                             </div>
                         </div>
-                        <div class="col-500 ui-padding-15-v ui-padding-10-h">
+                        <div class="ui-col-500 ui-padding-15-v ui-padding-10-h">
 
                             <div class="banner-slogan ui-padding-15 set-relative">
                                 <div class="align-c ui-padding-15 set-relative shadow-lg">
@@ -145,9 +145,9 @@
         <div class="banner-content banner-tab02 ui-tab-content ui-padding-30-v set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
             <div class="ui-fixed ui-padding-30-v set-relative">
                 <div class="ui-row">
-                    <div class="col-static">
+                    <div class="ui-col-static">
                         <div class="ui-row ui-row-gap-lg-v">
-                            <div class="col-12 md-align-c">
+                            <div class="ui-col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="highlight xx-large font-color-white-50 font-readable">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
@@ -158,7 +158,7 @@
 
                             </div>
                         </div>
-                        <div class="col-500 ui-padding-15-v ui-padding-10-h">
+                        <div class="ui-col-500 ui-padding-15-v ui-padding-10-h">
 
                             <div class="banner-slogan ui-padding-15 set-relative">
                                 <div class="align-c ui-padding-15 set-relative shadow-lg">
@@ -183,9 +183,9 @@
         <div class="banner-content banner-tab03 ui-tab-content ui-padding-30-v set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
             <div class="ui-fixed ui-padding-30-v set-relative">
                 <div class="ui-row">
-                    <div class="col-static">
+                    <div class="ui-col-static">
                         <div class="ui-row ui-row-gap-lg-v">
-                            <div class="col-12 md-align-c">
+                            <div class="ui-col-12 md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="highlight xx-large font-color-white-50 font-readable">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
@@ -196,7 +196,7 @@
 
                             </div>
                         </div>
-                        <div class="col-500 ui-padding-15-v ui-padding-10-h">
+                        <div class="ui-col-500 ui-padding-15-v ui-padding-10-h">
 
                             <div class="banner-slogan ui-padding-15 set-relative">
                                 <div class="align-c ui-padding-15 set-relative shadow-lg">
@@ -334,7 +334,7 @@
     <div class="ui-padding-30-v ui-theme-farmer ui-fill-light-100">
         <div class="ui-fixed ui-margin-30-b">
             <div class="ui-row">
-                <div class="col-12">
+                <div class="ui-col-12">
                     <h2 class="font-bold ui-margin-10-b">News</h2>
                     <h3 class="ui-color">Follow our activities.</h3>
                 </div>
@@ -344,7 +344,7 @@
 
             <div class="ui-fixed">
                 <div class="ui-row ui-no-ui-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
-                    <div class="col-12 font-color-black-50 xs-align-l align-c ui-ease-1st-btn">
+                    <div class="ui-col-12 font-color-black-50 xs-align-l align-c ui-ease-1st-btn">
                         <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-margin-1-b ui-border-b ui-color ui-border-lg ui-stroke active">
                             <svg class="ui-icon"><use href="#building"/></svg>
                             Company
@@ -364,7 +364,7 @@
 
             <div class="ui-tab-content ui-padding-10 ui-open ui-open-ease">
                 <div class="ui-row sm-fluid ui-icons-sm hover-shadow-2nd hover-t-2nd">
-                    <div class="col-3 col-md-6">
+                    <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
@@ -388,7 +388,7 @@
 
                         </a>
                     </div>
-                    <div class="col-3 col-md-6">
+                    <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
@@ -412,7 +412,7 @@
 
                         </a>
                     </div>
-                    <div class="col-3 col-md-6">
+                    <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
@@ -436,7 +436,7 @@
 
                         </a>
                     </div>
-                    <div class="col-3 col-md-6">
+                    <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
@@ -469,7 +469,7 @@
             </div>
             <div class="ui-tab-content ui-padding-10">
                 <div class="ui-row sm-fluid">
-                    <div class="col-3 col-md-6">
+                    <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
@@ -493,7 +493,7 @@
 
                         </a>
                     </div>
-                    <div class="col-3 col-md-6">
+                    <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
@@ -517,7 +517,7 @@
 
                         </a>
                     </div>
-                    <div class="col-3 col-md-6">
+                    <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
@@ -541,7 +541,7 @@
 
                         </a>
                     </div>
-                    <div class="col-3 col-md-6">
+                    <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
@@ -574,7 +574,7 @@
             </div>
             <div class="ui-tab-content ui-padding-10">
                 <div class="ui-row sm-fluid">
-                    <div class="col-3 col-md-6">
+                    <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
@@ -598,7 +598,7 @@
 
                         </a>
                     </div>
-                    <div class="col-3 col-md-6">
+                    <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
@@ -622,7 +622,7 @@
 
                         </a>
                     </div>
-                    <div class="col-3 col-md-6">
+                    <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
@@ -646,7 +646,7 @@
 
                         </a>
                     </div>
-                    <div class="col-3 col-md-6">
+                    <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
@@ -685,7 +685,7 @@
     <!-- gallery: start -->
     <div class="ui-fixed ui-theme-farmer2">
         <div class="ui-row">
-            <div class="col-12">
+            <div class="ui-col-12">
                 <h2 class="font-bold ui-margin-10-b">Our Projects</h2>
                 <h3 class="ui-color ui-margin-25-b">What we are doing?</h3>
 
@@ -755,13 +755,13 @@
     <div class="ui-padding-15-t ui-padding-30-b ui-theme-farmer ui-fill-light-100">
         <div class="ui-fixed ui-padding-30-v">
             <div class="ui-row">
-                <div class="col-12">
+                <div class="ui-col-12">
                     <h2 class="font-bold ui-margin-10-b">Why Choose Us</h2>
                     <h3 class="ui-color ui-margin-25-b">See detailed statistics.</h3>
                 </div>
-                <div class="col-static">
+                <div class="ui-col-static">
                     <div class="ui-row">
-                        <div class="col-12">
+                        <div class="ui-col-12">
                             <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,30" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                                 <ul class="ui-lines" data-ui-name="Last year" data-ui-type="filled">
                                     <li data-ui-y="30" data-ui-link="#1"></li>
@@ -784,7 +784,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-500 ui-padding-10 xs-align-c">
+                    <div class="ui-col-500 ui-padding-10 xs-align-c">
                         <p class="font-color-black-50 font-readable x-large ui-margin-30-b">
                             <span class="sp-15"></span>
                             <b class="font-color-black">Cras non sagittis arcu, eget viverra nunc.</b>
@@ -810,9 +810,9 @@
 <footer class="ui-container ui-no-gutter ui-padding-30-v invert-bg ui-theme-farmer2 ui-fill-dark-100">
     <div class="ui-fixed ui-padding-30-v sm-align-c">
         <div class="ui-row">
-            <div class="col-static">
+            <div class="ui-col-static">
                 <div class="ui-row sm-fluid">
-                    <div class="col-4">
+                    <div class="ui-col-4">
                         <h4 class="font-color-white-50 ui-margin-30-b">Customer Service</h4>
                         <ul class="list-unstyled ui-list-spacer-10 hoverline-2nd x-large">
                             <li><a href="#">Order Status</a></li>
@@ -824,7 +824,7 @@
                             <li><a href="#">Tax Notice</a></li>
                         </ul>
                     </div>
-                    <div class="col-4">
+                    <div class="ui-col-4">
                         <h4 class="font-color-white-50 ui-margin-30-b">Who We Are</h4>
                         <ul class="list-unstyled ui-list-spacer-10 hoverline-2nd x-large">
                             <li><a href="#">Good Works</a></li>
@@ -835,7 +835,7 @@
                             <li><a href="#">Careers</a></li>
                         </ul>
                     </div>
-                    <div class="col-4">
+                    <div class="ui-col-4">
                         <h4 class="font-color-white-50 ui-margin-30-b">Quick Links</h4>
                         <ul class="list-unstyled ui-list-spacer-10 hoverline-2nd x-large">
                             <li><a href="#">Educater &amp; Landscaper</a></li>
@@ -846,7 +846,7 @@
                         <span class="sp-20 visible-sm"></span>
                     </div>
                 </div>
-                <div class="col-500 ui-padding-10">
+                <div class="ui-col-500 ui-padding-10">
 
                     <div class="footer-social ui-padding-15 ui-icons-no-opacity">
                         <div class="ui-card ui-padding-30 shadow-lg ui-theme-farmer ui-fill-dark-100">
@@ -881,15 +881,15 @@
                             <p class="highlight">Get in on the best deals, new products and gardening tips.</p>
                             <form action="#">
 
-                                <div class="form-holder col-static no-fluid form-lg">
+                                <div class="form-holder ui-col-static no-fluid form-lg">
                                     <div class="ui-row ui-no-row-gap">
-                                        <div class="col-12">
+                                        <div class="ui-col-12">
                                             <div class="text ui-no-border bg-white invert-bg ui-ease-form">
                                                 <input class="required" type="email" maxlength="4" placeholder="your@email.com">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-48">
+                                    <div class="ui-col-48">
                                         <button class="ui-btn ui-btn-square ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                             <svg class="ui-icon"><use href="#send"/></svg>
                                         </button>

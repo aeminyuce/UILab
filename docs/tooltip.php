@@ -2,7 +2,7 @@
     <div class="ui-fixed">
         <div class="ui-row ui-padding-30-v">
 
-            <div class="col-12">
+            <div class="ui-col-12">
 
                 <h3>Positioning</h3>
                 <div class="ui-ease-1st-btn ui-theme-base ui-padding-30-b">

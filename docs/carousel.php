@@ -1,7 +1,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="col-12 ui-padding-30-v">
+            <div class="ui-col-12 ui-padding-30-v">
 
                 <h3>Carousel Examples</h3>
                 <div class="ui-padding-30-b">
@@ -14,28 +14,28 @@
                             <div class="ui-slide-content ui-padding-10-h" data-ui-animate="10">
 
                                     <div class="ui-row sm-fluid">
-                                        <div class="col-4 col-md-6">
+                                        <div class="ui-col-4 ui-col-md-6">
 
                                             <div class="ui-row ui-row-gap-xs no-fluid ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
-                                                <div class="col-6">
+                                                <div class="ui-col-6">
                                                     <img class="ui-carousel-animate ui-bring-back img-fluid" src="img/image_09.jpg" alt="">
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="ui-col-6">
                                                     <img class="ui-carousel-animate ui-bring-front img-fluid" src="img/image_05.jpg" alt="">
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="ui-col-4">
                                                     <img class="ui-carousel-animate ui-bring-l img-fluid" src="img/image_02.jpg" alt="">
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="ui-col-4">
                                                     <img class="ui-carousel-animate ui-bring-b img-fluid" src="img/image_03.jpg" alt="">
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="ui-col-4">
                                                     <img class="ui-carousel-animate ui-bring-r img-fluid" src="img/image_01.jpg" alt="">
                                                 </div>
                                             </div>
 
                                         </div>
-                                        <div class="col-8 col-md-6">
+                                        <div class="ui-col-8 ui-col-md-6">
 
                                             <div class="ui-carousel-animate ui-bring-r ui-ease-layout ui-ease-slow">
                                                 <h3>1- Carousel Html Title</h3>
@@ -59,28 +59,28 @@
                             <div class="ui-slide-content ui-padding-10-h" data-ui-animate="10">
 
                                     <div class="ui-row sm-fluid">
-                                        <div class="col-4 col-md-6">
+                                        <div class="ui-col-4 ui-col-md-6">
 
                                             <div class="ui-row ui-row-gap-xs no-fluid ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
-                                                <div class="col-6">
+                                                <div class="ui-col-6">
                                                     <img class="ui-carousel-animate ui-bring-back img-fluid" src="img/image_09.jpg" alt="">
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="ui-col-6">
                                                     <img class="ui-carousel-animate ui-bring-front img-fluid" src="img/image_05.jpg" alt="">
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="ui-col-4">
                                                     <img class="ui-carousel-animate ui-bring-l img-fluid" src="img/image_02.jpg" alt="">
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="ui-col-4">
                                                     <img class="ui-carousel-animate ui-bring-b img-fluid" src="img/image_03.jpg" alt="">
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="ui-col-4">
                                                     <img class="ui-carousel-animate ui-bring-r img-fluid" src="img/image_01.jpg" alt="">
                                                 </div>
                                             </div>
 
                                         </div>
-                                        <div class="col-8 col-md-6">
+                                        <div class="ui-col-8 ui-col-md-6">
 
                                             <div class="ui-carousel-animate ui-bring-r ui-ease-layout ui-ease-slow">
                                                 <h3>2- Carousel Html Title</h3>
@@ -104,28 +104,28 @@
                             <div class="ui-slide-content ui-padding-10-h" data-ui-animate="10">
 
                                     <div class="ui-row sm-fluid">
-                                        <div class="col-4 col-md-6">
+                                        <div class="ui-col-4 ui-col-md-6">
 
                                             <div class="ui-row ui-row-gap-xs no-fluid ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
-                                                <div class="col-6">
+                                                <div class="ui-col-6">
                                                     <img class="ui-carousel-animate ui-bring-back img-fluid" src="img/image_09.jpg" alt="">
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="ui-col-6">
                                                     <img class="ui-carousel-animate ui-bring-front img-fluid" src="img/image_05.jpg" alt="">
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="ui-col-4">
                                                     <img class="ui-carousel-animate ui-bring-l img-fluid" src="img/image_02.jpg" alt="">
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="ui-col-4">
                                                     <img class="ui-carousel-animate ui-bring-b img-fluid" src="img/image_03.jpg" alt="">
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="ui-col-4">
                                                     <img class="ui-carousel-animate ui-bring-r img-fluid" src="img/image_01.jpg" alt="">
                                                 </div>
                                             </div>
 
                                         </div>
-                                        <div class="col-8 col-md-6">
+                                        <div class="ui-col-8 ui-col-md-6">
 
                                             <div class="ui-carousel-animate ui-bring-r ui-ease-layout ui-ease-slow">
                                                 <h3>3- Carousel Html Title</h3>

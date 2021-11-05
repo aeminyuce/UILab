@@ -2,9 +2,9 @@
 <link rel="stylesheet" href="../css/custom/movie-app.css?v=<?php echo filemtime('../css/custom/movie-app.css'); ?>"/>
 
 <main class="ui-container ui-no-gutter">
-    <div class="col-static no-fluid">
-        <div class="col-200 set-relative hidden-md">
-            <div class="sidebar col-200 full-h set-fixed set-l ui-padding-5 ui-fill-dark-100 hidden-md scroll-v ui-scrollbar-faded">
+    <div class="ui-col-static no-fluid">
+        <div class="ui-col-200 set-relative hidden-md">
+            <div class="sidebar ui-col-200 full-h set-fixed set-l ui-padding-5 ui-fill-dark-100 hidden-md scroll-v ui-scrollbar-faded">
 
                 <div class="align-l ui-padding-10 ui-icons-no-opacity ui-icons-margin-10-r form-lg ui-add-mobile-menu-l">
                     <h5 class="font-color-white-50 ui-padding-15 ui-margin-5-b">LIBRARY</h5>
@@ -75,12 +75,12 @@
             </div>
         </div>
         <div class="ui-row ui-no-row-gap">
-            <div class="col-12">
+            <div class="ui-col-12">
 
                 <div class="ui-padding-30 ui-no-padding-b ui-md-no-padding">
 
                     <header class="ui-row ui-no-ui-row-gap-t ui-sticky-md ui-icons-no-opacity form-lg" data-ui-classes="shadow-lg">
-                        <div class="col-6 hidden-md ui-ease-1st-form">
+                        <div class="ui-col-6 hidden-md ui-ease-1st-form">
                             <div class="text text-icon-both ui-margin-15-b circle ui-no-border ui-theme-gray ui-fill-light-300 has-clear">
                                 <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
                                 <button type="button" class="clear-form">
@@ -89,7 +89,7 @@
                                 <input type="text" placeholder="Search for movies, TV shows...">
                             </div>
                         </div>
-                        <div class="col-6 align-r">
+                        <div class="ui-col-6 align-r">
                             <span class="align-c font-color-black-50 ui-margin-20-r ui-sm-no-margin ui-ease-1st-btn">
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-margin-10-l circle left ui-show-mobile-menu-l visible-md">
                                     <svg class="ui-icon"><use href="#bars-left"/></svg>
@@ -123,8 +123,8 @@
                     <div class="ui-padding-10 ui-md-no-padding-h">
                         <div class="ui-padding-10 ui-md-no-padding-h">
 
-                            <div class="col-static">
-                                <div class="col-350">
+                            <div class="ui-col-static">
+                                <div class="ui-col-350">
                                     <div class="round set-relative">
                                         <button class="ui-btn full-w full-h set-absolute opacity-more ui-ease-layout" onclick="ui.modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
                                             <svg class="ui-icon ui-icon-xxl ui-icon-default font-color-white set-absolute set-c"><use href="#video"/></svg>
@@ -133,7 +133,7 @@
                                     </div>
                                 </div>
                                 <div class="ui-row">
-                                    <div class="col-12 col-lg-8 ui-padding-30-l ui-no-padding-v ui-md-no-padding">
+                                    <div class="ui-col-12 ui-col-lg-8 ui-padding-30-l ui-no-padding-v ui-md-no-padding">
                                         <span class="sp-15 visible-md"></span>
                                         <h2 class="font-bold">Related Video</h2>
                                         <b class="large">Captain Marvel (2019)</b>
@@ -419,9 +419,9 @@
             <h2>Search</h2>
             <p class="highlight large font-color-white-50 xs-align-c font-readable">Search for movies, TV shows...</p>
 
-            <div class="col-static no-fluid">
+            <div class="ui-col-static no-fluid">
                 <div class="ui-row ui-no-ui-row-gap-h">
-                    <div class="col-12 ui-ease-1st-form">
+                    <div class="ui-col-12 ui-ease-1st-form">
                         <div class="text text-icon has-clear round-l ui-no-border shadow-in-sm ui-theme-gray ui-fill-light-300 ui-ease-form">
                             <button type="button" class="clear-form">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
@@ -431,7 +431,7 @@
                         <p class="required-msg large">Please, enter a keyword.</p>
                     </div>
                 </div>
-                <div class="col-100 col-xs-50 ui-padding-10-v">
+                <div class="ui-col-100 ui-col-xs-50 ui-padding-10-v">
                     <button class="ui-btn block round-r ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
                         <svg class="ui-icon"><use href="#search"/></svg>
                     </button>
@@ -439,42 +439,42 @@
             </div>
 
             <div class="ui-row no-fluid ui-icons-xxl block-2nd ui-icons-no-opacity ui-icons-margin-5-v hover-t-more-2nd ui-theme-base ui-ease-2nd-btn">
-                <div class="col-4 ui-padding-10-b">
+                <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#tv"/></svg>
                         <span class="x-large block ui-margin-5-t">TV Shows</span>
                         <span class="font-color-black-muted">1024</span>
                     </a>
                 </div>
-                <div class="col-4 ui-padding-10-b">
+                <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#film"/></svg>
                         <span class="x-large block ui-margin-5-t">Films</span>
                         <span class="font-color-black-muted">775</span>
                     </a>
                 </div>
-                <div class="col-4 ui-padding-10-b">
+                <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#trophy-star"/></svg>
                         <span class="x-large block ui-margin-5-t">Sports</span>
                         <span class="font-color-black-muted">316</span>
                     </a>
                 </div>
-                <div class="col-4 ui-padding-10-b">
+                <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#music"/></svg>
                         <span class="x-large block ui-margin-5-t">Concerts</span>
                         <span class="font-color-black-muted">589</span>
                     </a>
                 </div>
-                <div class="col-4 ui-padding-10-b">
+                <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#face-smile"/></svg>
                         <span class="x-large block ui-margin-5-t">Comedy</span>
                         <span class="font-color-black-muted">219</span>
                     </a>
                 </div>
-                <div class="col-4 ui-padding-10-b">
+                <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#video"/></svg>
                         <span class="x-large block ui-margin-5-t">Others</span>

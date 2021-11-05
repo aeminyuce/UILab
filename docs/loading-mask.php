@@ -1,7 +1,7 @@
 <main class="ui-container ui-no-gutter loadingPage">
     <div class="ui-fixed ui-padding-30-t">
         <div class="ui-row">
-            <div class="col-12">
+            <div class="ui-col-12">
 
                 <h3>Showing/Hiding Loading Masks</h3>
                 <div class="ui-padding-30-b ui-theme-base">

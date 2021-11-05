@@ -2,7 +2,7 @@
     <div class="ui-fixed ui-padding-30-v ui-theme-base">
         <div class="ui-row">
 
-            <div class="col-12">
+            <div class="ui-col-12">
 
                 <h3>Showing Dialogues</h3>
                 <pre class="round">ui.alerts.dialog({ msg: '', success: '', error: '', custom: { value: 'button text', value: 'button text' }, callback });</pre>
@@ -36,7 +36,7 @@
                 </dl>
 
             </div>
-            <div class="col-12 ui-padding-30-b">
+            <div class="ui-col-12 ui-padding-30-b">
 
                 <b class="ui-margin-5-b block">Examples:</b>
                 <pre class="round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text'<br>});</pre>
@@ -70,7 +70,7 @@
                 </form>
 
             </div>
-            <div class="col-12">
+            <div class="ui-col-12">
 
                 <h3>Showing Messages</h3>
                 <pre class="round">ui.alerts.message({ msg: '', pos: '', theme: '' });</pre>
@@ -93,10 +93,10 @@
                 </dl>
 
             </div>
-            <div class="col-12">
+            <div class="ui-col-12">
                 <b class="no-margin block">Show Positions:</b>
             </div>
-            <div class="col-6">
+            <div class="ui-col-6">
 
                 <pre class="round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Top left message',<br>    pos: 'tl'<br>});</pre>
                 <button class="ui-btn ui-btn-sm round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.message({msg: 'Top left message', pos: 'tl'});">Run Code</button>
@@ -107,7 +107,7 @@
                 <button class="ui-btn ui-btn-sm round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.message({msg: 'Bottom left message', pos: 'bl'});">Run Code</button>
 
             </div>
-            <div class="col-6">
+            <div class="ui-col-6">
 
                 <pre class="round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Top right message',<br>    pos: 'tr'<br>});</pre>
                 <button class="ui-btn ui-btn-sm round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.message({msg: 'Top right message', pos: 'tr'});">Run Code</button>
@@ -118,10 +118,10 @@
                 <button class="ui-btn ui-btn-sm round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.message({msg: 'Bottom right message', pos: 'br'});">Run Code</button>
 
             </div>
-            <div class="col-12">
+            <div class="ui-col-12">
 
                 <b class="ui-margin-5-b block">Show Default:</b>
-                <div class="font-color-white align-c col-250 ui-padding-10 round shadow-lg" style="background: hsl(220, 14%, 21%);">
+                <div class="font-color-white align-c ui-col-250 ui-padding-10 round shadow-lg" style="background: hsl(220, 14%, 21%);">
                     Default message
                 </div>
                 <span class="sp-15"></span>
@@ -132,7 +132,7 @@
                 <span class="sp-30"></span>
 
                 <b class="ui-margin-5-b block">Show Success:</b>
-                <div class="align-c col-250 ui-padding-10 round shadow-lg ui-theme-green ui-fill-dark-100">
+                <div class="align-c ui-col-250 ui-padding-10 round shadow-lg ui-theme-green ui-fill-dark-100">
                     Success message
                 </div>
                 <span class="sp-15"></span>
@@ -143,7 +143,7 @@
                 <span class="sp-30"></span>
 
                 <b class="ui-margin-5-b block">Show Warning:</b>
-                <div class="align-c col-250 ui-padding-10 round shadow-lg ui-theme-yellow ui-fill-dark-100">
+                <div class="align-c ui-col-250 ui-padding-10 round shadow-lg ui-theme-yellow ui-fill-dark-100">
                     Warning message
                 </div>
                 <span class="sp-15"></span>
@@ -154,7 +154,7 @@
                 <span class="sp-30"></span>
 
                 <b class="ui-margin-5-b block">Show Danger:</b>
-                <div class="align-c col-250 ui-padding-10 round shadow-lg ui-theme-red ui-fill-dark-100">
+                <div class="align-c ui-col-250 ui-padding-10 round shadow-lg ui-theme-red ui-fill-dark-100">
                     Danger message
                 </div>
                 <span class="sp-15"></span>

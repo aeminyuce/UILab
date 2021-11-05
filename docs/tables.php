@@ -1,7 +1,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="col-12 ui-padding-30">
+            <div class="ui-col-12 ui-padding-30">
 
                 <h3>Tables</h3>
                 <table class="ui-table ui-padding-30-b">
@@ -108,7 +108,7 @@
 
                 <h3>Border Table</h3>
                 <div class="ui-row">
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <table class="ui-table ui-padding-30-b ui-border ui-border-lg">
                             <thead>
                                 <tr>
@@ -128,7 +128,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <table class="ui-table ui-padding-30-b ui-table-border">
                             <thead>
                                 <tr>
@@ -148,7 +148,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <table class="ui-table ui-padding-30-b ui-table-border ui-border-dual">
                             <thead>
                                 <tr>
@@ -168,7 +168,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="col-6">
+                    <div class="ui-col-6">
                         <table class="ui-table ui-padding-30-b ui-table-border ui-border-lg">
                             <thead>
                                 <tr>
