@@ -1952,8 +1952,11 @@ html .row {
 .round {
   border-radius: 6px;
 }
-.round > .round {
-  border-radius: 5px;
+.round > .round,
+.round > * > .round,
+.round > [class*="round-"],
+.round > * > [class*="round-"] {
+  border-radius: 5px !important;
 }
 .round-t {
   border-radius: 6px 6px 0 0;
