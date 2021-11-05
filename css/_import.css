@@ -8663,7 +8663,7 @@ button.ui-dialog-custom:focus {
 @media (min-width: 768px) {
   .ui-photo-gallery > li img {
     width: auto;
-    height: 125%;
+    height: 130%;
   }
   .ui-photo-gallery > li a.ui-img {
     height: 210px;
@@ -8688,7 +8688,7 @@ button.ui-dialog-custom:focus {
     width: 50%;
   }
   .ui-photo-gallery > li img {
-    width: 125%;
+    width: 130%;
     height: auto;
   }
   .ui-photo-gallery a.ui-img.ui-has-info > span,
