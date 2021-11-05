@@ -1,8 +1,8 @@
 <!-- custom CSS -->
 <link rel="stylesheet" href="../css/custom/pricing-table.css?v=<?php echo filemtime('../css/custom/pricing-table.css'); ?>"/>
 
-<main class="container no-gutter">
-    <div class="fixed">
+<main class="ui-container ui-no-gutter">
+    <div class="ui-fixed">
         <div class="row">
             <div class="col-12 ui-padding-30-v">
 

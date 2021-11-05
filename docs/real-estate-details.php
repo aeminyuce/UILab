@@ -1,8 +1,8 @@
 <!-- custom JS -->
 <script src="../js/custom/real-estate-details.js?v=<?php echo filemtime('../js/custom/real-estate-details.js'); ?>"></script>
 
-<main class="container no-gutter">
-    <div class="fixed ui-padding-30-v">
+<main class="ui-container ui-no-gutter">
+    <div class="ui-fixed ui-padding-30-v">
 
         <div class="col-static">
 

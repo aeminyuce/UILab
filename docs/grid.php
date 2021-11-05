@@ -1,5 +1,5 @@
-<main class="container no-gutter">
-    <div class="fixed fixed-xl">
+<main class="ui-container ui-no-gutter">
+    <div class="ui-fixed ui-fixed-xl">
         <div class="row">
             <div class="col-12 ui-padding-30">
 

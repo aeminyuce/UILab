@@ -1,5 +1,5 @@
-<main class="container no-gutter">
-    <div class="fixed ui-padding-30-v">
+<main class="ui-container ui-no-gutter">
+    <div class="ui-fixed ui-padding-30-v">
 
         <h3>Weather Examples</h3>
         <div class="row ui-padding-30-b">

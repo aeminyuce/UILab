@@ -1,5 +1,5 @@
-<main class="container no-gutter">
-    <div class="fixed">
+<main class="ui-container ui-no-gutter">
+    <div class="ui-fixed">
         <div class="row sm-fluid align-c">
             <div class="col-6 offset-3 ui-padding-30-v">
 

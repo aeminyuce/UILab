@@ -1,7 +1,7 @@
 <!-- custom CSS -->
 <link rel="stylesheet" href="../css/custom/movie-app.css?v=<?php echo filemtime('../css/custom/movie-app.css'); ?>"/>
 
-<main class="container no-gutter">
+<main class="ui-container ui-no-gutter">
     <div class="col-static no-fluid">
         <div class="col-200 set-relative hidden-md">
             <div class="sidebar col-200 full-h set-fixed set-l ui-padding-5 ui-fill-dark-100 hidden-md scroll-v ui-scrollbar-faded">

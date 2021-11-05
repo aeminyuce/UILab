@@ -1,5 +1,5 @@
-<main class="container no-gutter loadingPage">
-    <div class="fixed ui-padding-30-t">
+<main class="ui-container ui-no-gutter loadingPage">
+    <div class="ui-fixed ui-padding-30-t">
         <div class="row">
             <div class="col-12">
 

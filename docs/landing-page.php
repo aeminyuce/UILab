@@ -5,10 +5,10 @@
 <script src="../js/custom/landing-page.js?v=<?php echo filemtime('../js/custom/landing-page.js'); ?>"></script>
 
 <!-- header: start -->
-<header class="container no-gutter bg-white invert-bg" data-ui-classes="shadow-lg">
+<header class="ui-container ui-no-gutter bg-white invert-bg" data-ui-classes="shadow-lg">
 
     <div class="ui-border-b ui-theme-farmer2">
-        <div class="fixed ui-padding-10-v ui-sm-no-padding-v">
+        <div class="ui-fixed ui-padding-10-v ui-sm-no-padding-v">
             <div class="row">
                 <div class="col-static no-fluid">
                     <div class="col-220 ui-padding-10">
@@ -79,12 +79,12 @@
 </header>
 <!-- header: end -->
 
-<main class="container no-gutter">
+<main class="ui-container ui-no-gutter">
 
     <!-- tab banner: start -->
     <div class="ui-tabs form-lg ui-ease-tabs" data-ui-classes="ui-color ui-border-lg ui-stroke">
 
-        <div class="fixed ui-padding-10-t ui-theme-farmer2">
+        <div class="ui-fixed ui-padding-10-t ui-theme-farmer2">
             <div class="row no-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
                 <div class="col-12 font-color-black-50 xs-align-l align-c ui-ease-1st-btn">
                     <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-margin-1-b ui-border-b ui-color ui-border-lg ui-stroke active">
@@ -105,7 +105,7 @@
         </div>
 
         <div class="banner-content banner-tab01 ui-tab-content ui-padding-30-v set-relative ui-theme-farmer ui-fill-dark-100 ui-open ui-open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
-            <div class="fixed ui-padding-30-v set-relative">
+            <div class="ui-fixed ui-padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
                         <div class="row row-gap-lg-v">
@@ -143,7 +143,7 @@
             <span class="sp-30 ui-margin-10-v"></span>
         </div>
         <div class="banner-content banner-tab02 ui-tab-content ui-padding-30-v set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
-            <div class="fixed ui-padding-30-v set-relative">
+            <div class="ui-fixed ui-padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
                         <div class="row row-gap-lg-v">
@@ -181,7 +181,7 @@
             <span class="sp-30 ui-margin-10-v"></span>
         </div>
         <div class="banner-content banner-tab03 ui-tab-content ui-padding-30-v set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
-            <div class="fixed ui-padding-30-v set-relative">
+            <div class="ui-fixed ui-padding-30-v set-relative">
                 <div class="row">
                     <div class="col-static">
                         <div class="row row-gap-lg-v">
@@ -223,7 +223,7 @@
     <!-- tab banner: end -->
 
     <!-- home links: start -->
-    <div class="home-links fixed align-c form-lg ui-theme-farmer2 set-relative">
+    <div class="ui-fixed home-links align-c form-lg ui-theme-farmer2 set-relative">
         <div class="ui-carousel" data-ui-col="4" data-ui-col-md="2" data-ui-col-sm="2" data-ui-col-xs="1" data-ui-slide="4000">
             <div class="ui-carousel-slider ui-icons-xxl hover-shadow-2nd hover-scale-2nd ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
@@ -332,7 +332,7 @@
 
     <!-- news: start -->
     <div class="ui-padding-30-v ui-theme-farmer ui-fill-light-100">
-        <div class="fixed ui-margin-30-b">
+        <div class="ui-fixed ui-margin-30-b">
             <div class="row">
                 <div class="col-12">
                     <h2 class="font-bold ui-margin-10-b">News</h2>
@@ -342,7 +342,7 @@
         </div>
         <div class="ui-tabs form-lg ui-border-t ui-padding-10-t ui-ease-tabs" data-ui-classes="ui-color ui-border-lg ui-stroke">
 
-            <div class="fixed">
+            <div class="ui-fixed">
                 <div class="row no-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
                     <div class="col-12 font-color-black-50 xs-align-l align-c ui-ease-1st-btn">
                         <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-margin-1-b ui-border-b ui-color ui-border-lg ui-stroke active">
@@ -683,7 +683,7 @@
     <!-- news: end -->
 
     <!-- gallery: start -->
-    <div class="fixed ui-theme-farmer2">
+    <div class="ui-fixed ui-theme-farmer2">
         <div class="row">
             <div class="col-12">
                 <h2 class="font-bold ui-margin-10-b">Our Projects</h2>
@@ -753,7 +753,7 @@
 
     <!-- statistics: start -->
     <div class="ui-padding-15-t ui-padding-30-b ui-theme-farmer ui-fill-light-100">
-        <div class="fixed ui-padding-30-v">
+        <div class="ui-fixed ui-padding-30-v">
             <div class="row">
                 <div class="col-12">
                     <h2 class="font-bold ui-margin-10-b">Why Choose Us</h2>
@@ -807,8 +807,8 @@
 </main>
 
 <!-- footer: start -->
-<footer class="container no-gutter ui-padding-30-v invert-bg ui-theme-farmer2 ui-fill-dark-100">
-    <div class="fixed ui-padding-30-v sm-align-c">
+<footer class="ui-container ui-no-gutter ui-padding-30-v invert-bg ui-theme-farmer2 ui-fill-dark-100">
+    <div class="ui-fixed ui-padding-30-v sm-align-c">
         <div class="row">
             <div class="col-static">
                 <div class="row sm-fluid">

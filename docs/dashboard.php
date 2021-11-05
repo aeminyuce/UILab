@@ -4,7 +4,7 @@
 <!-- custom JS -->
 <script src="../js/custom/dashboard.js?v=<?php echo filemtime('../js/custom/dashboard.js'); ?>"></script>
 
-<main class="container no-gutter">
+<main class="ui-container ui-ui-no-gutter">
 
     <div class="col-static sm-fluid">
 
@@ -452,7 +452,7 @@
             <!-- layouts: start -->
             <div class="ui-tabs ui-ease-tabs ui-padding-15-b" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
-                <div class="container">
+                <div class="ui-container">
                     <div class="row ui-border-b ui-margin-15-b ui-theme-panel2">
                         <div class="col-4 offset-4 ui-no-padding-b">
 
@@ -468,7 +468,7 @@
                 <div class="ui-tab-content ui-open ui-open-ease">
 
                     <!-- forms: start -->
-                    <div class="fixed fixed-inner">
+                    <div class="ui-fixed ui-fixed-xl">
                         <div class="row">
                             <div class="col-12">
 
@@ -663,7 +663,7 @@
                 <div class="ui-tab-content">
 
                     <!-- dashboard: start -->
-                    <div class="fixed fixed-inner">
+                    <div class="ui-fixed ui-fixed-xl">
                         <div class="row">
 
                             <div class="col-12 ui-no-padding">

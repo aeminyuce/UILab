@@ -89,7 +89,7 @@
 ?>
 
     <!-- header -->
-    <header class="container header form-lg ui-theme-base invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="shadow-lg">
+    <header class="ui-container form-lg ui-theme-base invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-12 ui-padding-15">
                 <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost circle ui-icons-no-opacity right ui-ease-btn hidden-ie">
@@ -121,7 +121,7 @@
     } else {
 ?>
     <!-- header -->
-    <header class="container header form-lg invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout" data-ui-classes="shadow-lg">
+    <header class="ui-container form-lg invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout" data-ui-classes="shadow-lg">
         <div class="row">
             <div class="col-static no-fluid">
                 <div class="col-250 col-xs-100 ui-padding-15 ui-no-padding-r">
@@ -148,7 +148,7 @@
         </div>
     </header>
 
-    <main class="container no-gutter">
+    <main class="ui-container ui-no-gutter">
         <div class="col-static no-fluid">
 
             <!-- sidebar -->
@@ -202,7 +202,7 @@
             <div class="row">
                 <div class="col-12 ui-padding-15">
 
-                    <div class="fixed ui-padding-15 ui-margin-30-v ui-sm-no-padding">
+                    <div class="ui-fixed ui-fixed-xl ui-padding-15 ui-margin-30-v ui-sm-no-padding">
                         <div class="card highlight align-c ui-padding-30 ui-xs-no-padding round ui-theme-base">
                             <h1 class="font-light">UI lab is a modular design system.</h2>
                             <h4 class="font-bold">For developing web interfaces fastly!</h4>

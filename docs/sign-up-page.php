@@ -1,7 +1,7 @@
 <!-- custom CSS -->
 <link rel="stylesheet" href="../css/custom/sign-up-page.css?v=<?php echo filemtime('../css/custom/sign-up-page.css'); ?>"/>
 
-<main class="container no-gutter">
+<main class="ui-container ui-no-gutter">
 
     <div class="row no-row-gap">
         <div class="col-12">
@@ -16,7 +16,7 @@
                     <svg class="ui-icon"><use href="#plus"/></svg>
                 </div>
 
-                <div class="fixed ui-theme-green">
+                <div class="ui-fixed ui-theme-green">
                     <div class="row">
                         <div class="col-12 ui-padding-15-v align-c">
                             <span class="sp-30"></span>
@@ -35,7 +35,7 @@
     </div>
 
     <form action="#">
-        <div class="signup-container fixed">
+        <div class="ui-fixed signup-container">
             <div class="row">
                 <div class="col-12">
 

@@ -1,5 +1,5 @@
-<main class="container no-gutter">
-    <div class="fixed ui-padding-30-v ui-theme-base">
+<main class="ui-container ui-no-gutter">
+    <div class="ui-fixed ui-padding-30-v ui-theme-base">
         <div class="row">
 
             <div class="col-12">

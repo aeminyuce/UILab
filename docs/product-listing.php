@@ -4,8 +4,8 @@
 <!-- custom JS -->
 <script src="../js/custom/product-listing.js?v=<?php echo filemtime('../js/custom/product-listing.js'); ?>"></script>
 
-<main class="container no-gutter">
-    <div class="fixed">
+<main class="ui-container ui-no-gutter">
+    <div class="ui-fixed">
         <div class="col-static no-fluid ui-padding-30-v ui-padding-15-h ui-md-no-padding-h">
 
             <div class="col-250 ui-padding-10 hidden-md">

@@ -167,7 +167,7 @@
   bottom: 0;
   left: 0;
 }
-.banner-content > .fixed {
+.banner-content > .ui-fixed {
   z-index: 1;
 }
 .banner-slogan,
