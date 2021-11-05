@@ -6,11 +6,11 @@
 @list-gap-more:                         (@list-gap * 3);
 
 @horizontal-list-side:                  170px;
-@horizontal-list-space:                 5x;
+@horizontal-list-space:                 10px;
 
 @list-column-size:                      range(2, 6, 1); // start, end, step
 
-[class*="list-column-"] {
+[class*="ui-list-column-"] {
     display: flex; flex-wrap: wrap;
 
     & > li { break-inside: avoid; }
@@ -19,19 +19,19 @@
 each(@increases, {
     @name: unit(@value);
 
-    .list-spacer-@{name} {
+    .ui-list-spacer-@{name} {
         li { margin-bottom: @value; }
         ul,ol { margin-top: @value; }
     }
 });
 
-[class*="list-spacer-"] {
-    &:not([class*="list-column-"]):not(.list-inline) {
+[class*="ui-list-spacer-"] {
+    &:not([class*="ui-list-column-"]):not(.list-inline) {
         li:last-child { margin-bottom: 0 !important; }
     }
 }
 
-.list-gap {
+.ui-list-gap {
     &-less.list-inline {
         li:not(:last-child) { padding-right: @list-gap-less; }
     }
@@ -45,13 +45,18 @@ each(@increases, {
 
 dl {
     &:not(:last-child) { margin-bottom: @highlight-space; }
+
     &:before,&:after { content: ""; display: table; }
     &:after { clear: both; }
 }
-dt { font-weight: @font-bold; }
+dt {
+    font-weight: @font-bold;
+
+    & + dd:not(:last-child) { margin-bottom: @horizontal-list-space; }
+}
 
 @media (@md-start) {
-    .dl-horizontal {
+    .ui-dl-h {
         dt {
             white-space: nowrap; text-overflow: ellipsis; width: @horizontal-list-side; float: left; overflow: hidden; clear: left; position: relative;
 
@@ -61,25 +66,25 @@ dt { font-weight: @font-bold; }
     }
 }
 @media (@sm-finish) {
-    .dl-horizontal {
+    .ui-dl-h {
         dd { margin-bottom: @horizontal-list-space; }
     }
 }
 @media (@sm-start) {
     each(@list-column-size, {
-        .list-column- {
+        .ui-list-column- {
             &@{value} > li { width: percentage(((100 / @value) / 100%)); }
         }
     });
 
     .ui-mobile-menu {
-        [class*="list-column-"] {
+        [class*="ui-list-column-"] {
             & > li { width: 100%; }
         }
     }
 }
 @media (@xs-finish) {
-    [class*="list-column-"] {
+    [class*="ui-list-column-"] {
         & > li { width: 100%; }
     }
 }
