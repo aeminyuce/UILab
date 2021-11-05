@@ -6,13 +6,13 @@
 ui.countdown = {
 
     // targets
-    target: 'countdown',
+    target: 'ui-countdown',
 
     // main classnames
-    nameDay: 'd',
-    nameHour: 'h',
-    nameMinute: 'm',
-    nameSecond: 's'
+    nameDay: 'ui-d',
+    nameHour: 'ui-h',
+    nameMinute: 'ui-m',
+    nameSecond: 'ui-s'
 };
 
 (function () {
