@@ -172,7 +172,7 @@
                 </div>
 
                 <div class="ui-card align-c round shadow-lg ui-theme-sub">
-                    <ul class="list-inline list-gap ui-padding-30 ui-padding-15-b ui-icons-lg ui-icons-margin-5-r ui-theme-gray inline-block-1st">
+                    <ul class="list-inline ui-list-gap ui-padding-30 ui-padding-15-b ui-icons-lg ui-icons-margin-5-r ui-theme-gray inline-block-1st">
                         <li>
                             <svg class="ui-icon"><use href="#floor-plan"/></svg>
                             <span class="large">7+1</span>
@@ -254,7 +254,7 @@
 
                 <div class="ui-card ui-padding-30 round shadow-lg">
                     <h4>Other Details</h4>
-                    <ul class="list-unstyled list-spacer-15 ui-icons-lg ui-icons-margin-5-r">
+                    <ul class="list-unstyled ui-list-spacer-15 ui-icons-lg ui-icons-margin-5-r">
                         <li>
                             <span class="font-color-black-muted block ui-margin-5-b">House Type</span>
                             <svg class="ui-icon ui-color"><use href="#house"/></svg>

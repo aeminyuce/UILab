@@ -8,7 +8,7 @@
                         <svg class="ui-icon right"><use href="#plus"/></svg>
                     </a>
                     <span class="sp-30"></span>
-                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd large list-spacer-30 ui-padding-10 ui-ease-2nd-layout">
+                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd large ui-list-spacer-30 ui-padding-10 ui-ease-2nd-layout">
                         <li><a class="ui-color" href="#">Summer Holiday</a></li>
                         <li><a href="#">Autumn Comes</a></li>
                         <li><a href="#">Travelling</a></li>
@@ -17,7 +17,7 @@
                         <li><a href="#">Hobbies</a></li>
                     </ul>
                     <span class="sp-30"></span>
-                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd list-spacer-15 large font-color-black-50 adding-10 ui-icons-sm ui-icons-margin-10-r ui-ease-2nd-layout">
+                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd ui-list-spacer-15 large font-color-black-50 adding-10 ui-icons-sm ui-icons-margin-10-r ui-ease-2nd-layout">
                         <li>
                             <a href="#">
                                 <svg class="ui-icon"><use href="#marker"/></svg>
@@ -47,7 +47,7 @@
                                     <h3 class="ui-margin-15-v">Summer Holiday Photos</h3>
                                 </div>
                                 <div class="col-6 align-r xs-align-c">
-                                    <span class="font-color-black-muted large inline-block">23 Jun - 18 Aug, 2019</span>
+                                    <span class="font-color-black-muted large inline-block">23 Jun - 18 Aug, 2012</span>
                                     <img class="ui-img-photo ui-img-photo-sm circle ui-margin-15-l" src="img/profile-image.jpg" alt="">
                                 </div>
                             </div>
@@ -140,10 +140,10 @@
                         <div class="ui-padding-15 ui-sm-no-padding">
                             <div class="row highlight">
                                 <div class="col-6">
-                                    <h3 class="ui-margin-15-v">Autumn School Photos</h3>
+                                    <h3 class="ui-margin-15-v">Autumn Comes Photos</h3>
                                 </div>
                                 <div class="col-6 align-r xs-align-c">
-                                    <span class="font-color-black-muted large inline-block">23 Jun - 18 Aug, 2019</span>
+                                    <span class="font-color-black-muted large inline-block">3 Sep - 18 Nov, 2021</span>
                                     <img class="ui-img-photo ui-img-photo-sm circle ui-margin-15-l" src="img/profile-image3.jpg" alt="">
                                 </div>
                             </div>

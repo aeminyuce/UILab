@@ -60,7 +60,7 @@
                         Dashboard
                     </a>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block ui-color">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block">
                         <svg class="ui-icon ui-margin-15-r"><use href="#users"/></svg>
                         <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
                         Employees
@@ -68,14 +68,14 @@
 
                     <div class="ui-tab-content">
                         <div class="ui-padding-15-v ui-padding-3-l">
-                            <ul class="ui-tabs list-spacer-15 ui-padding-30-l ui-ease-2nd-btn" data-ui-classes="ui-color">
+                            <ul class="ui-tabs ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn" data-ui-classes="ui-color">
                                 <li>
                                     <a class="ui-tab ui-tab-toggle opacity" href="#">
                                         <svg class="ui-toggle-icon ui-icon ui-margin-10-r right"><use href="#arrow-down"/></svg>
                                         Managers
                                     </a>
                                     <div class="ui-tab-content">
-                                        <ul class="list-spacer-15 ui-padding-20 ui-no-padding-r ui-no-margin ui-ease-2nd-btn">
+                                        <ul class="ui-list-spacer-15 ui-padding-20 ui-no-padding-r ui-no-margin ui-ease-2nd-btn">
                                             <li><a class="opacity" href="#">Search</a></li>
                                             <li><a class="opacity" href="#">Change Group</a></li>
                                             <li><a class="opacity" href="#">Add/Remove Managers</a></li>
@@ -88,7 +88,7 @@
                                         Team Leaders
                                     </a>
                                     <div class="ui-tab-content">
-                                        <ul class="list-spacer-15 ui-padding-20 ui-no-padding-r ui-no-margin ui-ease-2nd-btn">
+                                        <ul class="ui-list-spacer-15 ui-padding-20 ui-no-padding-r ui-no-margin ui-ease-2nd-btn">
                                             <li><a class="opacity" href="#">Search</a></li>
                                             <li><a class="opacity" href="#">Change Team</a></li>
                                             <li><a class="opacity" href="#">Add/Remove Team Leaders</a></li>
@@ -109,7 +109,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <div class="ui-padding-15-v ui-padding-3-l">
-                            <ul class="list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
+                            <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">New Payment</a></li>
                                 <li><a class="opacity" href="#">Recent Payments</a></li>
                                 <li><a class="opacity" href="#">Last Month</a></li>
@@ -126,7 +126,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <div class="ui-padding-15-v ui-padding-3-l">
-                            <ul class="list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
+                            <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">New Event</a></li>
                                 <li><a class="opacity" href="#">Recent Activities</a></li>
                                 <li><a class="opacity" href="#">This Week</a></li>
@@ -142,7 +142,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <div class="ui-padding-15-v ui-padding-3-l">
-                            <ul class="list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
+                            <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">New Document</a></li>
                                 <li><a class="opacity" href="#">Members</a></li>
                                 <li><a class="opacity" href="#">Groups</a></li>
@@ -160,7 +160,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <div class="ui-padding-15-v ui-padding-3-l">
-                            <ul class="list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
+                            <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">Sales</a></li>
                                 <li><a class="opacity" href="#">Profit</a></li>
                                 <li><a class="opacity" href="#">Registrations</a></li>
@@ -176,7 +176,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <div class="ui-padding-15-v ui-padding-3-l">
-                            <ul class="list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
+                            <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">New Report</a></li>
                                 <li><a class="opacity" href="#">Market Research</a></li>
                                 <li><a class="opacity" href="#">Industry Data</a></li>
@@ -194,7 +194,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <div class="ui-padding-15-v ui-padding-3-l">
-                            <ul class="list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
+                            <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
                                 <li><a class="opacity" href="#">New Order</a></li>
                                 <li><a class="opacity" href="#">Activity</a></li>
                                 <li><a class="opacity" href="#">Delivered</a></li>
@@ -248,7 +248,7 @@
                         <button class="ui-btn font-color-black-muted ui-btn-ghost ui-padding-10 circle visible-sm">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                         </button>
-                        <ul class="ui-dropdown-menu list-column-2 ui-has-icon round shadow-lg">
+                        <ul class="ui-dropdown-menu ui-list-column-2 ui-has-icon round shadow-lg">
                             <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
                             <li><a href="#"><b class="ui-list-icon">258</b> Expert</a></li>
                             <li><a href="#"><b class="ui-list-icon">49</b> On Audit</a></li>

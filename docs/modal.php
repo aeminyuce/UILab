@@ -7,35 +7,35 @@
                 <h3>Open Modal</h3>
                 <pre class="round">ui.modal.open({ source, size, type, closable, callback });</pre>
 
-                <dl class="dl-horizontal ui-padding-15 round ui-border">
+                <dl class="ui-dl-h ui-padding-15 round ui-border">
                     <dt>source</dt>
-                    <dd class="ui-margin-15-b">
+                    <dd>
                         Required. Set the source of modal.<br>
                         Available values: <code>id or classname</code>
                     </dd>
 
                     <dt>size</dt>
-                    <dd class="ui-margin-15-b">
+                    <dd>
                         Optional. Set the size of modal.<br>
                         Default value: <code>'md'</code><br>
                         Available values: <code>'lg', 'md', 'sm', 'fullscreen', inline, {'width', 'height'}</code>
                     </dd>
 
                     <dt>type</dt>
-                    <dd class="ui-margin-15-b">
+                    <dd>
                         Optional. Set the different source type of modal.<br>
                         Available values: <code>'ajax', 'iframe'</code>
                     </dd>
 
                     <dt>bg</dt>
-                    <dd class="ui-margin-15-b">
+                    <dd>
                         Optional. Set the background visibility of modal.<br>
                         Default value: <code>true</code><br>
                         Available values: <code>true, false</code>
                     </dd>
 
                     <dt>closable</dt>
-                    <dd class="ui-margin-15-b">
+                    <dd>
                         Optional. Set the visibility of close controls of modal.<br>
                         Default value: <code>true</code><br>
                         Available values: <code>true, false</code>
@@ -176,7 +176,7 @@
                 <h3>Close Modal</h3>
                 <pre class="round">ui.modal.close(callback);</pre>
 
-                <dl class="dl-horizontal ui-padding-15 round ui-border">
+                <dl class="ui-dl-h ui-padding-15 round ui-border">
                     <dt>callback</dt>
                     <dd>
                         Optional. Set a callback function after modal closes.<br>

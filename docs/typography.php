@@ -111,7 +111,7 @@
                 <h3>List Columns</h3>
                 <div class="ui-padding-30-b">
                     <h5 class="font-bold">2 Columns</h5>
-                    <ul class="list-unstyled list-column-2">
+                    <ul class="list-unstyled ui-list-column-2">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
                         <li>Integer molestie lorem at massa</li>
@@ -123,7 +123,7 @@
                     </ul>
 
                     <h5 class="font-bold">3 Columns</h5>
-                    <ul class="list-unstyled list-column-3">
+                    <ul class="list-unstyled ui-list-column-3">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
                         <li>Integer molestie lorem at massa</li>
@@ -135,7 +135,7 @@
                     </ul>
 
                     <h5 class="font-bold">4 Columns</h5>
-                    <ul class="list-unstyled list-column-4">
+                    <ul class="list-unstyled ui-list-column-4">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
                         <li>Integer molestie lorem at massa</li>
@@ -147,7 +147,7 @@
                     </ul>
 
                     <h5 class="font-bold">5 Columns</h5>
-                    <ul class="list-unstyled list-column-5">
+                    <ul class="list-unstyled ui-list-column-5">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
                         <li>Integer molestie lorem at massa</li>
@@ -159,7 +159,7 @@
                     </ul>
 
                     <h5 class="font-bold">6 Columns</h5>
-                    <ul class="list-unstyled list-column-6">
+                    <ul class="list-unstyled ui-list-column-6">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
                         <li>Integer molestie lorem at massa</li>
@@ -173,19 +173,19 @@
 
                 <h3>List Gaps (only inline lists)</h3>
                 <div class="ui-padding-30-b">
-                    <ul class="list-inline list-gap-less">
+                    <ul class="list-inline ui-list-gap-less">
                         <li>Lorem ipsum</li>
                         <li>dolor sit amet</li>
                         <li>Consectetur</li>
                         <li>adipiscing elit</li>
                     </ul>
-                    <ul class="list-inline list-gap">
+                    <ul class="list-inline ui-list-gap">
                         <li>Lorem ipsum</li>
                         <li>dolor sit amet</li>
                         <li>Consectetur</li>
                         <li>adipiscing elit</li>
                     </ul>
-                    <ul class="list-inline list-gap-more">
+                    <ul class="list-inline ui-list-gap-more">
                         <li>Lorem ipsum</li>
                         <li>dolor sit amet</li>
                         <li>Consectetur</li>
@@ -198,7 +198,7 @@
                 <div class="row ui-padding-30-b">
                     <div class="col-12">
                         <h5 class="font-bold">With Inline Lists</h5>
-                        <ul class="list-inline list-spacer-5">
+                        <ul class="list-inline ui-list-spacer-5">
                             <li>Lorem ipsum</li>
                             <li>dolor sit amet</li>
                             <li>Consectetur</li>
@@ -207,7 +207,7 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold">1px</h5>
-                        <ul class="list-unstyled list-spacer-1">
+                        <ul class="list-unstyled ui-list-spacer-1">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -215,7 +215,7 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold">2px</h5>
-                        <ul class="list-unstyled list-spacer-2">
+                        <ul class="list-unstyled ui-list-spacer-2">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -223,7 +223,7 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold">3px</h5>
-                        <ul class="list-unstyled list-spacer-3">
+                        <ul class="list-unstyled ui-list-spacer-3">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -231,7 +231,7 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold">4px</h5>
-                        <ul class="list-unstyled list-spacer-4">
+                        <ul class="list-unstyled ui-list-spacer-4">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -239,7 +239,7 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold">5px</h5>
-                        <ul class="list-unstyled list-spacer-5">
+                        <ul class="list-unstyled ui-list-spacer-5">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -247,7 +247,7 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold">10px</h5>
-                        <ul class="list-unstyled list-spacer-10">
+                        <ul class="list-unstyled ui-list-spacer-10">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -255,7 +255,7 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold">15px</h5>
-                        <ul class="list-unstyled list-spacer-15">
+                        <ul class="list-unstyled ui-list-spacer-15">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -263,7 +263,7 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold">20px</h5>
-                        <ul class="list-unstyled list-spacer-20">
+                        <ul class="list-unstyled ui-list-spacer-20">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -271,7 +271,7 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold">25px</h5>
-                        <ul class="list-unstyled list-spacer-25">
+                        <ul class="list-unstyled ui-list-spacer-25">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -279,7 +279,7 @@
                     </div>
                     <div class="col-6">
                         <h5 class="font-bold">30px</h5>
-                        <ul class="list-unstyled list-spacer-30">
+                        <ul class="list-unstyled ui-list-spacer-30">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -460,7 +460,7 @@
 
                 <h3>Horizontal Description Lists</h3>
                 <div class="ui-padding-30-b">
-                    <dl class="dl-horizontal">
+                    <dl class="ui-dl-h">
                         <dt>Description lists</dt>
                         <dd>A description list is perfect for defining terms.</dd>
                         <dt>Euismod</dt>

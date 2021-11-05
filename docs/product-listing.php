@@ -23,7 +23,7 @@
                         <span class="sp-25"></span>
 
                         <h5 class="ui-margin-15-b font-color-black-50">CATEGORIES</h5>
-                        <ul class="list-unstyled list-spacer-10">
+                        <ul class="list-unstyled ui-list-spacer-10">
                             <li><a href="#">Headphones</a></li>
                             <li>
                                 <a href="#"><b>Over-Ear Headphones</b></a>

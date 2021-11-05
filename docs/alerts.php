@@ -6,9 +6,9 @@
 
                 <h3>Showing Dialogues</h3>
                 <pre class="round">ui.alerts.dialog({ msg: '', success: '', error: '', custom: { value: 'button text', value: 'button text' }, callback });</pre>
-                <dl class="dl-horizontal ui-padding-15 round ui-border">
+                <dl class="ui-dl-h ui-padding-15 round ui-border">
                     <dt>msg</dt>
-                    <dd class="ui-margin-15-b">
+                    <dd>
                         Required. Your dialog text.<br>
                         success<br>
                         Optional. Set success button text.<br>
@@ -16,13 +16,13 @@
                     </dd>
 
                     <dt>error</dt>
-                    <dd class="ui-margin-15-b">
+                    <dd>
                         Optional. Set error button text.<br>
                         Error button returns a value: <code>'error'</code>
                     </dd>
 
                     <dt>custom</dt>
-                    <dd class="ui-margin-15-b">
+                    <dd>
                         Optional. Set custom buttons.<br>
                         Custom buttons returns defined own value.<br>
                         Example usage: <code>{value: 'button text', value: 'button text'}</code>
@@ -74,7 +74,7 @@
 
                 <h3>Showing Messages</h3>
                 <pre class="round">ui.alerts.message({ msg: '', pos: '', theme: '' });</pre>
-                <dl class="dl-horizontal ui-padding-15 round ui-border">
+                <dl class="ui-dl-h ui-padding-15 round ui-border">
                     <dt>msg</dt>
                     <dd class="ui-margin-15-b">Required. Your alert message.</dd>
 

@@ -554,7 +554,7 @@
 
                 <h3>Checkboxes and Radios</h3>
                 <div class="ui-padding-30-b">
-                    <ul class="list-inline list-gap">
+                    <ul class="list-inline ui-list-gap">
                         <li>
                             <label class="check">
                                 <input type="checkbox" checked> Checkbox
@@ -568,7 +568,7 @@
                     </ul>
 
                     <span class="sp-5"></span>
-                    <ul class="list-inline list-gap">
+                    <ul class="list-inline ui-list-gap">
                         <li>
                             <label class="radio">
                                 <input type="radio" name="radiotest1"> Radio1
@@ -588,7 +588,7 @@
 
                     <span class="sp-15"></span>
 
-                    <ul class="list-inline list-gap">
+                    <ul class="list-inline ui-list-gap">
                         <li>
                             <label class="custom">
                                 <span class="check-custom round ui-border-dual ui-ease-form">
@@ -609,7 +609,7 @@
                         </li>
                     </ul>
 
-                    <ul class="list-inline list-gap">
+                    <ul class="list-inline ui-list-gap">
                         <li>
                             <label class="custom">
                                 <span class="radio-custom ui-border-dual ui-ease-form">
@@ -641,7 +641,7 @@
 
                     <span class="sp-15"></span>
 
-                    <ul class="list-inline list-gap">
+                    <ul class="list-inline ui-list-gap">
                         <li>
                             <label class="custom">
                                 <span class="switch-custom round ui-border-dual ui-ease-form">

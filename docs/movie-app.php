@@ -8,7 +8,7 @@
 
                 <div class="align-l ui-padding-10 ui-icons-no-opacity ui-icons-margin-10-r form-lg ui-add-mobile-menu-l">
                     <h5 class="font-color-white-50 ui-padding-15 ui-margin-5-b">LIBRARY</h5>
-                    <ul class="list-unstyled list-spacer-15 large font-bold block-2nd ui-ease-2nd-btn">
+                    <ul class="list-unstyled ui-list-spacer-15 large font-bold block-2nd ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-btn-ghost circle" href="#">
                                 <svg class="ui-icon"><use href="#tv"/></svg>
@@ -50,7 +50,7 @@
                     <span class="sp-30"></span>
 
                     <h5 class="font-color-white-50 ui-padding-15 ui-margin-5-b">NEWS &amp; EVENTS</h5>
-                    <ul class="list-unstyled list-spacer-15 font-color-white-50 large block-2nd ui-ease-2nd-btn">
+                    <ul class="list-unstyled ui-list-spacer-15 font-color-white-50 large block-2nd ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-btn-ghost circle" href="#">
                                 <svg class="ui-icon"><use href="#news"/></svg>
