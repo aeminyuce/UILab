@@ -139,7 +139,7 @@
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn round ui-ease-btn" href="#" itemprop="item" title="Search Results">
                                     <span itemprop="name">
-                                        <svg class="ui-icon ui-icon-xs inline-block ui-margin-3-r"><use href="#angle-left"/></svg> Search Results
+                                        <svg class="ui-icon ui-icon-xs ui-inline-block ui-margin-3-r"><use href="#angle-left"/></svg> Search Results
                                     </span>
                                 <meta itemprop="position" content="2" />
                             </a>

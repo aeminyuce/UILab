@@ -99,7 +99,7 @@
                 <a href="index.php" class="ui-btn ui-btn-square ui-btn-ghost circle ui-margin-10-r ui-ease-btn">
                     <svg class="ui-icon ui-icon-hybrid no-opacity"><use href="#long-arrow-left"/></svg>
                 </a>
-                <h1 class="x-large inline-block"><span class="capitalize"><?php echo str_replace("-", " ", $page); ?></span></h1>
+                <h1 class="x-large ui-inline-block"><span class="capitalize"><?php echo str_replace("-", " ", $page); ?></span></h1>
             </div>
         </div>
     </header>
@@ -226,7 +226,7 @@
                                 <a class="ui-card ui-padding-2 round shadow-lg ui-ease-layout" href="?l=login-page">
                                     <img class="ui-img-fluid round-t ui-visible-light" src="img/layout-login-page.jpg" alt="Login Page">
                                     <img class="ui-img-fluid round-t ui-visible-dark" src="img/layout-login-page-dark.jpg" alt="Login Page Dark">
-                                    <h4 class="inline-block ui-padding-10-v">
+                                    <h4 class="ui-inline-block ui-padding-10-v">
                                         Login Page
                                     </h4>
                                 </a>
@@ -235,7 +235,7 @@
                                 <a class="ui-card ui-padding-2 round shadow-lg ui-ease-layout" href="?l=sign-up-page">
                                     <img class="ui-img-fluid round-t ui-visible-light" src="img/layout-sign-up-page.jpg" alt="Sign Up Page">
                                     <img class="ui-img-fluid round-t ui-visible-dark" src="img/layout-sign-up-page-dark.jpg" alt="Sign Up Page Dark">
-                                    <h4 class="inline-block ui-padding-10-v">
+                                    <h4 class="ui-inline-block ui-padding-10-v">
                                         Sign Up Page
                                     </h4>
                                 </a>
@@ -244,7 +244,7 @@
                                 <a class="ui-card ui-padding-2 round shadow-lg ui-ease-layout" href="?l=dashboard">
                                     <img class="ui-img-fluid round-t ui-visible-light" src="img/layout-dashboard.jpg" alt="Dashboard">
                                     <img class="ui-img-fluid round-t ui-visible-dark" src="img/layout-dashboard-dark.jpg" alt="Dashboard Dark">
-                                    <h4 class="inline-block ui-padding-10-v">
+                                    <h4 class="ui-inline-block ui-padding-10-v">
                                         Dashboard
                                     </h4>
                                 </a>
@@ -253,7 +253,7 @@
                                 <a class="ui-card ui-padding-2 round shadow-lg ui-ease-layout" href="?l=landing-page">
                                     <img class="ui-img-fluid round-t ui-visible-light" src="img/layout-landing-page.jpg" alt="Landing Page">
                                     <img class="ui-img-fluid round-t ui-visible-dark" src="img/layout-landing-page-dark.jpg" alt="Landing Page Dark">
-                                    <h4 class="inline-block ui-padding-10-v">
+                                    <h4 class="ui-inline-block ui-padding-10-v">
                                         Landing Page
                                     </h4>
                                 </a>
@@ -262,7 +262,7 @@
                                 <a class="ui-card ui-padding-2 round shadow-lg ui-ease-layout" href="?l=movie-app">
                                     <img class="ui-img-fluid round-t ui-visible-light" src="img/layout-movie-app.jpg" alt="Movie App">
                                     <img class="ui-img-fluid round-t ui-visible-dark" src="img/layout-movie-app-dark.jpg" alt="Movie App Dark">
-                                    <h4 class="inline-block ui-padding-10-v">
+                                    <h4 class="ui-inline-block ui-padding-10-v">
                                         Movie App
                                     </h4>
                                 </a>
@@ -271,7 +271,7 @@
                                 <a class="ui-card ui-padding-2 round shadow-lg ui-ease-layout" href="?l=product-listing">
                                     <img class="ui-img-fluid round-t ui-visible-light" src="img/layout-product-listing.jpg" alt="Product Listing">
                                     <img class="ui-img-fluid round-t ui-visible-dark" src="img/layout-product-listing-dark.jpg" alt="Product Listing Dark">
-                                    <h4 class="inline-block ui-padding-10-v">
+                                    <h4 class="ui-inline-block ui-padding-10-v">
                                         Product Listing
                                     </h4>
                                 </a>
@@ -280,7 +280,7 @@
                                 <a class="ui-card ui-padding-2 round shadow-lg ui-ease-layout" href="?l=real-estate-details">
                                     <img class="ui-img-fluid round-t ui-visible-light" src="img/layout-real-estate-details.jpg" alt="Real Estate Details">
                                     <img class="ui-img-fluid round-t ui-visible-dark" src="img/layout-real-estate-details-dark.jpg" alt="Real Estate Details Dark">
-                                    <h4 class="inline-block ui-padding-10-v">
+                                    <h4 class="ui-inline-block ui-padding-10-v">
                                         Real Estate Details
                                     </h4>
                                 </a>
@@ -289,7 +289,7 @@
                                 <a class="ui-card ui-padding-2 round shadow-lg ui-ease-layout" href="?l=photo-albums">
                                     <img class="ui-img-fluid round-t ui-visible-light" src="img/layout-photo-albums.jpg" alt="Photo Albums">
                                     <img class="ui-img-fluid round-t ui-visible-dark" src="img/layout-photo-albums-dark.jpg" alt="Photo Albums Dark">
-                                    <h4 class="inline-block ui-padding-10-v">
+                                    <h4 class="ui-inline-block ui-padding-10-v">
                                         Photo Albums
                                     </h4>
                                 </a>

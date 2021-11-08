@@ -47,7 +47,7 @@
                                     <h3 class="ui-margin-15-v">Summer Holiday Photos</h3>
                                 </div>
                                 <div class="ui-col-6 align-r xs-align-c">
-                                    <span class="ui-color-black-25 large inline-block">23 Jun - 18 Aug, 2012</span>
+                                    <span class="ui-color-black-25 large ui-inline-block">23 Jun - 18 Aug, 2012</span>
                                     <img class="ui-img-photo ui-img-photo-sm circle ui-margin-15-l" src="img/profile-image.jpg" alt="">
                                 </div>
                             </div>
@@ -143,7 +143,7 @@
                                     <h3 class="ui-margin-15-v">Autumn Comes Photos</h3>
                                 </div>
                                 <div class="ui-col-6 align-r xs-align-c">
-                                    <span class="ui-color-black-25 large inline-block">3 Sep - 18 Nov, 2021</span>
+                                    <span class="ui-color-black-25 large ui-inline-block">3 Sep - 18 Nov, 2021</span>
                                     <img class="ui-img-photo ui-img-photo-sm circle ui-margin-15-l" src="img/profile-image3.jpg" alt="">
                                 </div>
                             </div>

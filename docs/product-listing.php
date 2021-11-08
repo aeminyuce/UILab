@@ -170,7 +170,7 @@
                             <div class="ui-col-12 ui-border-b">
                                 <h4>
                                     <svg class="ui-icon ui-icon-lg"><use href="#history"/></svg>
-                                    <span class="inline-block">
+                                    <span class="ui-inline-block">
                                         Price History, <span class="ui-color-black-25">Over-Ear Headphones</span>
                                     </span>
                                 </h4>

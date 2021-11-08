@@ -1920,14 +1920,14 @@ html .ui-row {
   width: 100%;
   display: block !important;
 }
-.inline,
-.inline-1st > *:not(.ui-row):not([class*="ui-hidden-"]),
-.inline-2nd > * > *:not(.ui-row):not([class*="ui-hidden-"]) {
+.ui-inline,
+.ui-inline-1st > *:not(.ui-row):not([class*="ui-hidden-"]),
+.ui-inline-2nd > * > *:not(.ui-row):not([class*="ui-hidden-"]) {
   display: inline !important;
 }
-.inline-block,
-.inline-block-1st > *:not(.ui-row):not([class*="ui-hidden-"]),
-.inline-block-2nd > * > *:not(.ui-row):not([class*="ui-hidden-"]) {
+.ui-inline-block,
+.ui-inline-block-1st > *:not(.ui-row):not([class*="ui-hidden-"]),
+.ui-inline-block-2nd > * > *:not(.ui-row):not([class*="ui-hidden-"]) {
   vertical-align: middle !important;
   display: inline-block !important;
 }

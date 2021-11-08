@@ -76,18 +76,18 @@
     }
 
 }
-.inline {
+.ui-inline {
     display: inline !important;
 
     &-1st > *,&-2nd > * > * {
-        &:not(.ui-row):not([class*="ui-hidden-"]) { &:extend(.inline); }
+        &:not(.ui-row):not([class*="ui-hidden-"]) { &:extend(.ui-inline); }
     }
 }
-.inline-block {
+.ui-inline-block {
     vertical-align: middle !important; display: inline-block !important;
 
     &-1st > *,&-2nd > * > * {
-        &:not(.ui-row):not([class*="ui-hidden-"]) { &:extend(.inline-block); }
+        &:not(.ui-row):not([class*="ui-hidden-"]) { &:extend(.ui-inline-block); }
     }
 
 }

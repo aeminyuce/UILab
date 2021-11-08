@@ -26,7 +26,7 @@
                             <div class="file ui-no-border round circle ui-no-border ui-ease-form form-inline-xs">
                                 <input class="ui-cursor-pointer" name="less" class="generate-import" type="file">
                                 <span class="ui-btn ui-padding-30-h circle ui-block ui-ease-btn">
-                                    <span class="inline-block">Import LESS File</span>
+                                    <span class="ui-inline-block">Import LESS File</span>
                                     <svg class="ui-icon ui-margin-5-l"><use href="#import"/></svg>
                                 </span>
                             </div>
@@ -503,7 +503,7 @@
                                 <div class="textarea ui-margin-15-b round ui-border-dual ui-ease-form">
                                     <textarea class="ui-color-black-50 large ui-padding-10" rows="12" placeholder="Generated CSS will be here!"></textarea>
                                     <div class="ui-border-t ui-border-dual">
-                                        <div class="inline-block ui-padding-5-r">
+                                        <div class="ui-inline-block ui-padding-5-r">
                                             <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-left ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
                                             </button>
@@ -536,7 +536,7 @@
                             <div class="file ui-no-border round circle ui-no-border ui-ease-form form-inline-xs">
                                 <input class="ui-cursor-pointer" name="js" class="generate-import" type="file">
                                 <span class="ui-btn ui-padding-30-h circle ui-block ui-ease-btn">
-                                    <span class="inline-block">Import JS File</span>
+                                    <span class="ui-inline-block">Import JS File</span>
                                     <svg class="ui-icon ui-margin-5-l"><use href="#import"/></svg>
                                 </span>
                             </div>
@@ -871,7 +871,7 @@
                                 <div class="textarea ui-margin-15-b round ui-border-dual ui-ease-form">
                                     <textarea class="ui-color-black-50 large ui-padding-10" rows="12" placeholder="Generated JS will be here!"></textarea>
                                     <div class="ui-border-t ui-border-dual">
-                                        <div class="inline-block ui-padding-5-r">
+                                        <div class="ui-inline-block ui-padding-5-r">
                                             <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-left ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
                                             </button>
@@ -1002,7 +1002,7 @@
                                 <div class="textarea ui-margin-15-b round ui-border-dual ui-ease-form">
                                     <textarea class="ui-color-black-50 large ui-padding-10" rows="12" placeholder="Generated icons will be here!"></textarea>
                                     <div class="ui-border-t ui-border-dual">
-                                        <div class="inline-block ui-padding-5-r">
+                                        <div class="ui-inline-block ui-padding-5-r">
                                             <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-left ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
                                             </button>

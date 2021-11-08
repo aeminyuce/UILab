@@ -12,7 +12,7 @@
             <div class="ui-row">
                 <div class="ui-col-static ui-no-fluid">
                     <div class="ui-col-220 ui-padding-10">
-                        <a class="ui-margin-2-v inline-block" href="#">
+                        <a class="ui-margin-2-v ui-inline-block" href="#">
                             <img src="img/agriculture/logo.png" alt="Agriculture Logo" srcset="img/agriculture/logo@2x.png 2x">
                         </a>
                     </div>
@@ -52,7 +52,7 @@
                                         <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#envelope-open"/></svg>
                                         Contact
                                     </a>
-                                    <span class="inline-block ui-margin-10-h ui-hidden-md"></span>
+                                    <span class="ui-inline-block ui-margin-10-h ui-hidden-md"></span>
                                     <span class="sp-10 ui-visible-sm"></span>
                                     <a class="ui-btn ui-btn-sm-fluid ui-fill-dark-100" href="#">
                                         <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#sign-in"/></svg>

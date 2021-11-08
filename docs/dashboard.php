@@ -261,7 +261,7 @@
                     </div>
                 </div>
 
-                <div class="inline">
+                <div class="ui-inline">
                     <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                         <button class="ui-btn ui-color-black-25 ui-btn-square ui-btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Personal Logs">
                             <svg class="ui-icon"><use href="#grid-column"/></svg>
@@ -442,7 +442,7 @@
                             </li>
                         </ul>
                     </span>
-                    <span class="ui-margin-3-t inline-block ui-hidden-xs">aeminyuce</span>
+                    <span class="ui-margin-3-t ui-inline-block ui-hidden-xs">aeminyuce</span>
                     <span class="small ui-color-black-50 ui-block ui-hidden-xs">Premium</span>
                 </div>
 
@@ -689,7 +689,7 @@
                                                 <p class="ui-color-black-25 large ui-margin-5-b">Pending for the transaction.</p>
                                                 <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
-                                                    <span class="inline-block">Last updated: 15:12</span>
+                                                    <span class="ui-inline-block">Last updated: 15:12</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -712,7 +712,7 @@
                                                 <p class="ui-color-black-25 large ui-margin-5-b">Paused for the some reasons.</p>
                                                 <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
-                                                    <span class="inline-block">Last updated: 15:12</span>
+                                                    <span class="ui-inline-block">Last updated: 15:12</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -735,7 +735,7 @@
                                                 <p class="ui-color-black-25 large ui-margin-5-b">Reached for the expert.</p>
                                                 <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
-                                                    <span class="inline-block">Last updated: 15:12</span>
+                                                    <span class="ui-inline-block">Last updated: 15:12</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -758,7 +758,7 @@
                                                 <p class="ui-color-black-25 large ui-margin-5-b">Confirmed for payment.</p>
                                                 <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
-                                                    <span class="inline-block">Last updated: 15:12</span>
+                                                    <span class="ui-inline-block">Last updated: 15:12</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -797,7 +797,7 @@
                                             </div>
                                         </div>
                                         <div class="ui-col-150 align-r">
-                                            <span class="x-largest inline-block">436</span>
+                                            <span class="x-largest ui-inline-block">436</span>
                                         </div>
                                     </div>
                                     <div class="ui-row ui-row-gap-lg-h ui-no-fluid">
@@ -825,7 +825,7 @@
                                     <p class="ui-color-black-50 large ui-margin-5-b">Daily reports that all received.</p>
                                     <p class="ui-color-black-25">
                                         <svg class="ui-icon ui-icon-xs ui-margin-5-r"><use href="#clock"/></svg>
-                                        <span class="inline-block">Last updated: 15:12</span>
+                                        <span class="ui-inline-block">Last updated: 15:12</span>
                                     </p>
                                 </div>
                             </div>

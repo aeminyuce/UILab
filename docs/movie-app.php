@@ -110,9 +110,9 @@
                                     <svg class="ui-icon"><use href="#help"/></svg>
                                 </button>
                             </span>
-                            <span class="inline-block ui-right ui-no-float-sm">
+                            <span class="ui-inline-block ui-right ui-no-float-sm">
                                 <img class="ui-img-photo ui-img-photo-sm circle ui-margin-10-l ui-sm-no-margin ui-right" src="img/profile-image.jpg" alt="">
-                                <span class="ui-margin-3-t inline-block ui-hidden-sm">aeminyuce</span>
+                                <span class="ui-margin-3-t ui-inline-block ui-hidden-sm">aeminyuce</span>
                                 <span class="small ui-color-black-50 ui-block ui-hidden-sm">Premium</span>
                             </span>
                         </div>
@@ -163,7 +163,7 @@
                                 <b class="large">Captain Marvel</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
-                                <span class="inline-block ui-margin-2-l ui-margin-10-r">
+                                <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
                                     7,0 <span class="ui-color-black-25">/10</span> &nbsp; 7+
                                 </span>
                             </a>
@@ -174,7 +174,7 @@
                                 <b class="large">Avengers: Endgame</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
-                                <span class="inline-block ui-margin-2-l ui-margin-10-r">
+                                <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
                                     8,7 <span class="ui-color-black-25">/10</span> &nbsp; 8+
                                 </span>
                             </a>
@@ -185,7 +185,7 @@
                                 <b class="large">Captain America</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2014 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
-                                <span class="inline-block ui-margin-2-l ui-margin-10-r">
+                                <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
                                     7,8 <span class="ui-color-black-25">/10</span> &nbsp; 13+
                                 </span>
                             </a>
@@ -196,7 +196,7 @@
                                 <b class="large">Ant-Man</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2015 &nbsp; Action, Comedy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
-                                <span class="inline-block ui-margin-2-l ui-margin-10-r">
+                                <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
                                     7,3 <span class="ui-color-black-25">/10</span> &nbsp; 13+
                                 </span>
                             </a>
@@ -207,7 +207,7 @@
                                 <b class="large">Venom</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2018 &nbsp; Action, Thriller</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
-                                <span class="inline-block ui-margin-2-l ui-margin-10-r">
+                                <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
                                     6,7 <span class="ui-color-black-25">/10</span> &nbsp; 15+
                                 </span>
                             </a>
@@ -218,7 +218,7 @@
                                 <b class="large">Justice League</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2017 &nbsp; Action, Fantasy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
-                                <span class="inline-block ui-margin-2-l ui-margin-10-r">
+                                <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
                                     6,4 <span class="ui-color-black-25">/10</span> &nbsp; 13+
                                 </span>
                             </a>
@@ -229,7 +229,7 @@
                                 <b class="large">Captain Marvel</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
-                                <span class="inline-block ui-margin-2-l ui-margin-10-r">
+                                <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
                                     7,0 <span class="ui-color-black-25">/10</span> &nbsp; 7+
                                 </span>
                             </a>
@@ -240,7 +240,7 @@
                                 <b class="large">Avengers: Endgame</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
-                                <span class="inline-block ui-margin-2-l ui-margin-10-r">
+                                <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
                                     8,7 <span class="ui-color-black-25">/10</span> &nbsp; 8+
                                 </span>
                             </a>
@@ -251,7 +251,7 @@
                                 <b class="large">Captain America</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2014 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
-                                <span class="inline-block ui-margin-2-l ui-margin-10-r">
+                                <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
                                     7,8 <span class="ui-color-black-25">/10</span> &nbsp; 13+
                                 </span>
                             </a>
@@ -262,7 +262,7 @@
                                 <b class="large">Ant-Man</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2015 &nbsp; Action, Comedy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
-                                <span class="inline-block ui-margin-2-l ui-margin-10-r">
+                                <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
                                     7,3 <span class="ui-color-black-25">/10</span> &nbsp; 13+
                                 </span>
                             </a>
@@ -273,7 +273,7 @@
                                 <b class="large">Venom</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2018 &nbsp; Action, Thriller</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
-                                <span class="inline-block ui-margin-2-l ui-margin-10-r">
+                                <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
                                     6,7 <span class="ui-color-black-25">/10</span> &nbsp; 15+
                                 </span>
                             </a>
@@ -284,7 +284,7 @@
                                 <b class="large">Justice League</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2017 &nbsp; Action, Fantasy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
-                                <span class="inline-block ui-margin-2-l ui-margin-10-r">
+                                <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
                                     6,4 <span class="ui-color-black-25">/10</span> &nbsp; 13+
                                 </span>
                             </a>
