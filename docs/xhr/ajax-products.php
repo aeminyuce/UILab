@@ -28,7 +28,7 @@
         <span class="left ui-padding-15-v ui-icons-xs">
             <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
             <b class="ui-color-black-50">4.8</b>
-            <span class="ui-color-black-muted">
+            <span class="ui-color-black-25">
                 <svg class="ui-icon ui-margin-5-l"><use href="#comment"/></svg> 24
             </span>
         </span>
@@ -63,7 +63,7 @@
         <span class="left ui-padding-15-v ui-icons-xs">
             <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
             <b class="ui-color-black-50">3.9</b>
-            <span class="ui-color-black-muted">
+            <span class="ui-color-black-25">
                 <svg class="ui-icon ui-margin-5-l"><use href="#comment"/></svg> 9
             </span>
         </span>
@@ -98,7 +98,7 @@
         <span class="left ui-padding-15-v ui-icons-xs">
             <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
             <b class="ui-color-black-50">4.3</b>
-            <span class="ui-color-black-muted">
+            <span class="ui-color-black-25">
                 <svg class="ui-icon ui-margin-5-l"><use href="#comment"/></svg> 11
             </span>
         </span>
@@ -129,7 +129,7 @@
         <span class="left ui-padding-15-v ui-icons-xs">
             <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
             <b class="ui-color-black-50">4.9</b>
-            <span class="ui-color-black-muted">
+            <span class="ui-color-black-25">
                 <svg class="ui-icon ui-margin-5-l"><use href="#comment"/></svg> 32
             </span>
         </span>
@@ -160,7 +160,7 @@
         <span class="left ui-padding-15-v ui-icons-xs">
             <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
             <b class="ui-color-black-50">4.6</b>
-            <span class="ui-color-black-muted">
+            <span class="ui-color-black-25">
                 <svg class="ui-icon ui-margin-5-l"><use href="#comment"/></svg> 44
             </span>
         </span>
@@ -195,7 +195,7 @@
         <span class="left ui-padding-15-v ui-icons-xs">
             <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
             <b class="ui-color-black-50">3.9</b>
-            <span class="ui-color-black-muted">
+            <span class="ui-color-black-25">
                 <svg class="ui-icon ui-margin-5-l"><use href="#comment"/></svg> 9
             </span>
         </span>

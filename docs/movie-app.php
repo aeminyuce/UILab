@@ -164,7 +164,7 @@
                                 <span class="ui-color-black-50 ui-margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block ui-margin-2-l ui-margin-10-r">
-                                    7,0 <span class="ui-color-black-muted">/10</span> &nbsp; 7+
+                                    7,0 <span class="ui-color-black-25">/10</span> &nbsp; 7+
                                 </span>
                             </a>
                         </div>
@@ -175,7 +175,7 @@
                                 <span class="ui-color-black-50 ui-margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block ui-margin-2-l ui-margin-10-r">
-                                    8,7 <span class="ui-color-black-muted">/10</span> &nbsp; 8+
+                                    8,7 <span class="ui-color-black-25">/10</span> &nbsp; 8+
                                 </span>
                             </a>
                         </div>
@@ -186,7 +186,7 @@
                                 <span class="ui-color-black-50 ui-margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block ui-margin-2-l ui-margin-10-r">
-                                    7,8 <span class="ui-color-black-muted">/10</span> &nbsp; 13+
+                                    7,8 <span class="ui-color-black-25">/10</span> &nbsp; 13+
                                 </span>
                             </a>
                         </div>
@@ -197,7 +197,7 @@
                                 <span class="ui-color-black-50 ui-margin-5-b block">2015 &nbsp; Action, Comedy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block ui-margin-2-l ui-margin-10-r">
-                                    7,3 <span class="ui-color-black-muted">/10</span> &nbsp; 13+
+                                    7,3 <span class="ui-color-black-25">/10</span> &nbsp; 13+
                                 </span>
                             </a>
                         </div>
@@ -208,7 +208,7 @@
                                 <span class="ui-color-black-50 ui-margin-5-b block">2018 &nbsp; Action, Thriller</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block ui-margin-2-l ui-margin-10-r">
-                                    6,7 <span class="ui-color-black-muted">/10</span> &nbsp; 15+
+                                    6,7 <span class="ui-color-black-25">/10</span> &nbsp; 15+
                                 </span>
                             </a>
                         </div>
@@ -219,7 +219,7 @@
                                 <span class="ui-color-black-50 ui-margin-5-b block">2017 &nbsp; Action, Fantasy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block ui-margin-2-l ui-margin-10-r">
-                                    6,4 <span class="ui-color-black-muted">/10</span> &nbsp; 13+
+                                    6,4 <span class="ui-color-black-25">/10</span> &nbsp; 13+
                                 </span>
                             </a>
                         </div>
@@ -230,7 +230,7 @@
                                 <span class="ui-color-black-50 ui-margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block ui-margin-2-l ui-margin-10-r">
-                                    7,0 <span class="ui-color-black-muted">/10</span> &nbsp; 7+
+                                    7,0 <span class="ui-color-black-25">/10</span> &nbsp; 7+
                                 </span>
                             </a>
                         </div>
@@ -241,7 +241,7 @@
                                 <span class="ui-color-black-50 ui-margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block ui-margin-2-l ui-margin-10-r">
-                                    8,7 <span class="ui-color-black-muted">/10</span> &nbsp; 8+
+                                    8,7 <span class="ui-color-black-25">/10</span> &nbsp; 8+
                                 </span>
                             </a>
                         </div>
@@ -252,7 +252,7 @@
                                 <span class="ui-color-black-50 ui-margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block ui-margin-2-l ui-margin-10-r">
-                                    7,8 <span class="ui-color-black-muted">/10</span> &nbsp; 13+
+                                    7,8 <span class="ui-color-black-25">/10</span> &nbsp; 13+
                                 </span>
                             </a>
                         </div>
@@ -263,7 +263,7 @@
                                 <span class="ui-color-black-50 ui-margin-5-b block">2015 &nbsp; Action, Comedy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block ui-margin-2-l ui-margin-10-r">
-                                    7,3 <span class="ui-color-black-muted">/10</span> &nbsp; 13+
+                                    7,3 <span class="ui-color-black-25">/10</span> &nbsp; 13+
                                 </span>
                             </a>
                         </div>
@@ -274,7 +274,7 @@
                                 <span class="ui-color-black-50 ui-margin-5-b block">2018 &nbsp; Action, Thriller</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block ui-margin-2-l ui-margin-10-r">
-                                    6,7 <span class="ui-color-black-muted">/10</span> &nbsp; 15+
+                                    6,7 <span class="ui-color-black-25">/10</span> &nbsp; 15+
                                 </span>
                             </a>
                         </div>
@@ -285,7 +285,7 @@
                                 <span class="ui-color-black-50 ui-margin-5-b block">2017 &nbsp; Action, Fantasy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="inline-block ui-margin-2-l ui-margin-10-r">
-                                    6,4 <span class="ui-color-black-muted">/10</span> &nbsp; 13+
+                                    6,4 <span class="ui-color-black-25">/10</span> &nbsp; 13+
                                 </span>
                             </a>
                         </div>
@@ -294,7 +294,7 @@
                         <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square circle">
                             <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                         </button>
-                        <span class="ui-dots ui-color-black-muted"></span>
+                        <span class="ui-dots ui-color-black-25"></span>
                         <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square circle">
                             <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                         </button>
@@ -386,7 +386,7 @@
                         <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square circle">
                             <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                         </button>
-                        <span class="ui-dots ui-color-black-muted"></span>
+                        <span class="ui-dots ui-color-black-25"></span>
                         <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square circle">
                             <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                         </button>
@@ -443,42 +443,42 @@
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#tv"/></svg>
                         <span class="x-large block ui-margin-5-t">TV Shows</span>
-                        <span class="ui-color-black-muted">1024</span>
+                        <span class="ui-color-black-25">1024</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#film"/></svg>
                         <span class="x-large block ui-margin-5-t">Films</span>
-                        <span class="ui-color-black-muted">775</span>
+                        <span class="ui-color-black-25">775</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#trophy-star"/></svg>
                         <span class="x-large block ui-margin-5-t">Sports</span>
-                        <span class="ui-color-black-muted">316</span>
+                        <span class="ui-color-black-25">316</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#music"/></svg>
                         <span class="x-large block ui-margin-5-t">Concerts</span>
-                        <span class="ui-color-black-muted">589</span>
+                        <span class="ui-color-black-25">589</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#face-smile"/></svg>
                         <span class="x-large block ui-margin-5-t">Comedy</span>
-                        <span class="ui-color-black-muted">219</span>
+                        <span class="ui-color-black-25">219</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#video"/></svg>
                         <span class="x-large block ui-margin-5-t">Others</span>
-                        <span class="ui-color-black-muted">701</span>
+                        <span class="ui-color-black-25">701</span>
                     </a>
                 </div>
             </div>

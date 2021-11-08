@@ -26,14 +26,14 @@
 @blockquote-footer-color:               hsl(0, 0%, 47%);
 
 ._global-vars () {
-    --ui-black-muted: @black-muted;
+    --ui-black-25: @black-25;
     --ui-black-50: @black-50;
 
     --ui-code-color: @code-color;
     --ui-code-bg: @code-bg;
 }
 ._global-vars-dark () {
-    --ui-black-muted: @white-muted;
+    --ui-black-25: @white-25;
     --ui-black-50: @white-50;
 
     --ui-code-color: @white;
@@ -55,11 +55,11 @@ body,a { ._color-var(black); }
             a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
             button:not([class*="ui-current-"]):not([class*="ui-fill-"]) { color: @white-50 !important; }
         }
-        &-muted {
+        &-25 {
             &,
             .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
             a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-            button:not([class*="ui-current-"]):not([class*="ui-fill-"]) { color: @white-muted !important; }
+            button:not([class*="ui-current-"]):not([class*="ui-fill-"]) { color: @white-25 !important; }
         }
     }
 
@@ -75,11 +75,11 @@ body,a { ._color-var(black); }
             a:not([class*="ui-current"]):not([class*="ui-fill-"]),
             button:not([class*="ui-current"]):not([class*="ui-fill-"]) { ._color-var(black-50) !important; }
         }
-        &-muted {
+        &-25 {
             &,
             .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
             a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-            button:not([class*="ui-current"]):not([class*="ui-fill-"]) { ._color-var(black-muted) !important; }
+            button:not([class*="ui-current"]):not([class*="ui-fill-"]) { ._color-var(black-25) !important; }
         }
     }
 

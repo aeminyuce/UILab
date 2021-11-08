@@ -5,12 +5,12 @@
 
                 <h3>Headings</h3>
                 <div class="ui-padding-30-b">
-                    <h1>H1 Heading <small class="ui-color-black-muted">Secondary text</small></h1>
-                    <h2>H2 Heading <small class="ui-color-black-muted">Secondary text</small></h2>
-                    <h3>H3 Heading <small class="ui-color-black-muted">Secondary text</small></h3>
-                    <h4>H4 Heading <small class="ui-color-black-muted">Secondary text</small></h4>
-                    <h5>H5 Heading <small class="ui-color-black-muted">Secondary text</small></h5>
-                    <h6>H6 Heading <small class="ui-color-black-muted">Secondary text</small></h6>
+                    <h1>H1 Heading <small class="ui-color-black-25">Secondary text</small></h1>
+                    <h2>H2 Heading <small class="ui-color-black-25">Secondary text</small></h2>
+                    <h3>H3 Heading <small class="ui-color-black-25">Secondary text</small></h3>
+                    <h4>H4 Heading <small class="ui-color-black-25">Secondary text</small></h4>
+                    <h5>H5 Heading <small class="ui-color-black-25">Secondary text</small></h5>
+                    <h6>H6 Heading <small class="ui-color-black-25">Secondary text</small></h6>
                 </div>
 
                 <h3>Font Colors</h3>
@@ -18,9 +18,9 @@
                     <div class="ui-theme-gray ui-fill-dark-100">
                         <span class="ui-color-white">ui-color-white</span>
                         <span class="ui-color-white">ui-color-white-50</span>
-                        <span class="ui-color-white-muted">ui-color-white-muted</span>
+                        <span class="ui-color-white-25">ui-color-white-25</span>
                     </div>
-                    <span class="ui-color-black-muted">ui-color-black-muted</span>
+                    <span class="ui-color-black-25">ui-color-black-25</span>
                     <span class="ui-color-black-50">ui-color-black-50</span>
                     <span class="ui-color-black">ui-color-black</span>
                     <span class="clearfix"></span>

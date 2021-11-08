@@ -12,7 +12,7 @@
   --ui-btn-ghost-hover-bg: hsla(0, 0%, 0%, 0.075);
   --ui-border-light-color: hsla(0, 0%, 0%, 0.045);
   --ui-border-dark-color: hsla(0, 0%, 0%, 0.35);
-  --ui-black-muted: hsla(0, 0%, 0%, 0.4);
+  --ui-black-25: hsla(0, 0%, 0%, 0.4);
   --ui-black-50: hsla(0, 0%, 0%, 0.5);
   --ui-code-color: hsl(345, 69%, 46%);
   --ui-code-bg: hsl(343, 37%, 96%);
@@ -86,7 +86,7 @@
   --ui-btn-ghost-hover-bg: hsla(0, 0%, 100%, 0.075);
   --ui-border-light-color: hsla(0, 0%, 100%, 0.065);
   --ui-border-dark-color: hsla(0, 0%, 100%, 0.25);
-  --ui-black-muted: hsla(0, 0%, 100%, 0.72);
+  --ui-black-25: hsla(0, 0%, 100%, 0.72);
   --ui-black-50: hsla(0, 0%, 100%, 0.87);
   --ui-code-color: hsl(0, 0%, 100%);
   --ui-code-bg: hsl(345, 69%, 46%);
@@ -3437,10 +3437,10 @@ a {
 .ui-color-white-50 button:not([class*="ui-current-"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 100%, 0.87) !important;
 }
-.ui-color-white-muted,
-.ui-color-white-muted .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-.ui-color-white-muted a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-.ui-color-white-muted button:not([class*="ui-current-"]):not([class*="ui-fill-"]) {
+.ui-color-white-25,
+.ui-color-white-25 .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
+.ui-color-white-25 a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
+.ui-color-white-25 button:not([class*="ui-current-"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 100%, 0.72) !important;
 }
 .ui-color-black,
@@ -3457,12 +3457,12 @@ a {
   color: hsla(0, 0%, 0%, 0.5) !important;
   color: var(--ui-black-50) !important;
 }
-.ui-color-black-muted,
-.ui-color-black-muted .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-black-muted a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-black-muted button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-black-25,
+.ui-color-black-25 .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-black-25 a:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-black-25 button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 0%, 0.4) !important;
-  color: var(--ui-black-muted) !important;
+  color: var(--ui-black-25) !important;
 }
 .ui-color-green,
 .ui-color-green .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),

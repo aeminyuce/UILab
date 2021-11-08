@@ -31,19 +31,19 @@
                 <div class="ui-countdown ui-row ui-row-gap-sm-h ui-no-fluid">
                     <div class="ui-col-3">
                         <b class="ui-d largest block">06</b>
-                        <span class="ui-color-black-muted">days</span>
+                        <span class="ui-color-black-25">days</span>
                     </div>
                     <div class="ui-col-3">
                         <b class="ui-h largest block">08</b>
-                        <span class="ui-color-black-muted">hours</span>
+                        <span class="ui-color-black-25">hours</span>
                     </div>
                     <div class="ui-col-3">
                         <b class="ui-m largest block">23</b>
-                        <span class="ui-color-black-muted">minutes</span>
+                        <span class="ui-color-black-25">minutes</span>
                     </div>
                     <div class="ui-col-3">
                         <b class="ui-s largest block">36</b>
-                        <span class="ui-color-black-muted">seconds</span>
+                        <span class="ui-color-black-25">seconds</span>
                     </div>
                 </div>
 
@@ -51,25 +51,25 @@
                     <div class="ui-col-3">
                         <div class="ui-border-dual round ui-padding-10">
                             <b class="ui-d largest block">29</b>
-                            <span class="ui-color-black-muted">days</span>
+                            <span class="ui-color-black-25">days</span>
                         </div>
                     </div>
                     <div class="ui-col-3">
                         <div class="ui-border-dual round ui-padding-10">
                             <b class="ui-h largest block">12</b>
-                            <span class="ui-color-black-muted">hours</span>
+                            <span class="ui-color-black-25">hours</span>
                         </div>
                     </div>
                     <div class="ui-col-3">
                         <div class="ui-border-dual round ui-padding-10">
                             <b class="ui-m largest block">41</b>
-                            <span class="ui-color-black-muted">minutes</span>
+                            <span class="ui-color-black-25">minutes</span>
                         </div>
                     </div>
                     <div class="ui-col-3">
                         <div class="ui-border-dual round ui-padding-10">
                             <b class="ui-s largest block">59</b>
-                            <span class="ui-color-black-muted">seconds</span>
+                            <span class="ui-color-black-25">seconds</span>
                         </div>
                     </div>
                 </div>
@@ -78,25 +78,25 @@
                     <div class="ui-col-3">
                         <div class="ui-border ui-stroke round ui-padding-10">
                             <b class="ui-d ui-current largest block">05</b>
-                            <span class="ui-color-black-muted">days</span>
+                            <span class="ui-color-black-25">days</span>
                         </div>
                     </div>
                     <div class="ui-col-3">
                         <div class="ui-border ui-stroke round ui-padding-10">
                             <b class="ui-h ui-current largest block">24</b>
-                            <span class="ui-color-black-muted">hours</span>
+                            <span class="ui-color-black-25">hours</span>
                         </div>
                     </div>
                     <div class="ui-col-3">
                         <div class="ui-border ui-stroke round ui-padding-10">
                             <b class="ui-m ui-current largest block">24</b>
-                            <span class="ui-color-black-muted">minutes</span>
+                            <span class="ui-color-black-25">minutes</span>
                         </div>
                     </div>
                     <div class="ui-col-3">
                         <div class="ui-border ui-stroke round ui-padding-10">
                             <b class="ui-s ui-current largest block">10</b>
-                            <span class="ui-color-black-muted">seconds</span>
+                            <span class="ui-color-black-25">seconds</span>
                         </div>
                     </div>
                 </div>

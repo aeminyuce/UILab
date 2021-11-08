@@ -164,7 +164,7 @@
                                     <span class="scroll-v ui-margin-15 set-absolute set-all">
                                         <span class="x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                         <br><br>
-                                        <span class="ui-color-white-muted large">
+                                        <span class="ui-color-white-25 large">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                             Curabitur consequat gravida posuere.
                                             Etiam luctus ex vitae diam tempor, a egestas magna posuere.
@@ -284,7 +284,7 @@
                             <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square circle">
                                 <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                             </button>
-                            <span class="ui-dots ui-color-black-muted"></span>
+                            <span class="ui-dots ui-color-black-25"></span>
                             <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square circle">
                                 <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                             </button>
@@ -336,7 +336,7 @@
                                 <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square circle">
                                     <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                 </button>
-                                <span class="ui-dots ui-color-black-muted"></span>
+                                <span class="ui-dots ui-color-black-25"></span>
                                 <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square circle">
                                     <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                 </button>

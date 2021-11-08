@@ -3,7 +3,7 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-30">
 
-                <h3>Theme Font Colors</h3>
+                <h3>Theme Current Font Colors</h3>
 
                 <div class="ui-row ui-row-gap-md highlight ui-xs-fluid">
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
@@ -110,15 +110,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-100">
                             <h4>ui-fill-light-100</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -127,15 +127,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-200">
                             <h4>ui-fill-light-200</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -144,15 +144,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-300">
                             <h4>ui-fill-light-300</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -161,15 +161,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-100">
                             <h4>ui-fill-dark-100</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -178,15 +178,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-200">
                             <h4>ui-fill-dark-200</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -195,15 +195,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-300">
                             <h4>ui-fill-dark-300</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -216,15 +216,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-100">
                             <h4>ui-fill-light-100</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -233,15 +233,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-200">
                             <h4>ui-fill-light-200</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -250,15 +250,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-300">
                             <h4>ui-fill-light-300</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -267,15 +267,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-100">
                             <h4>ui-fill-dark-100</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -284,15 +284,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-200">
                             <h4>ui-fill-dark-200</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -301,15 +301,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-300">
                             <h4>ui-fill-dark-300</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -322,15 +322,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-100">
                             <h4>ui-fill-light-100</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -339,15 +339,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-200">
                             <h4>ui-fill-light-200</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -356,15 +356,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-300">
                             <h4>ui-fill-light-300</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -373,15 +373,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-100">
                             <h4>ui-fill-dark-100</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -390,15 +390,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-200">
                             <h4>ui-fill-dark-200</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -407,15 +407,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-300">
                             <h4>ui-fill-dark-300</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -428,15 +428,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-100">
                             <h4>ui-fill-light-100</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -445,15 +445,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-200">
                             <h4>ui-fill-light-200</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -462,15 +462,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-300">
                             <h4>ui-fill-light-300</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -479,15 +479,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-100">
                             <h4>ui-fill-dark-100</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -496,15 +496,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-200">
                             <h4>ui-fill-dark-200</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -513,15 +513,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-300">
                             <h4>ui-fill-dark-300</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -534,15 +534,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-100">
                             <h4>ui-fill-light-100</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -551,15 +551,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-200">
                             <h4>ui-fill-light-200</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -568,15 +568,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-300">
                             <h4>ui-fill-light-300</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -585,15 +585,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-100">
                             <h4>ui-fill-dark-100</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -602,15 +602,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-200">
                             <h4>ui-fill-dark-200</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -619,15 +619,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-300">
                             <h4>ui-fill-dark-300</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -640,15 +640,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-100">
                             <h4>ui-fill-light-100</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -657,15 +657,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-200">
                             <h4>ui-fill-light-200</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -674,15 +674,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-300">
                             <h4>ui-fill-light-300</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -691,15 +691,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-100">
                             <h4>ui-fill-dark-100</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -708,15 +708,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-200">
                             <h4>ui-fill-dark-200</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -725,15 +725,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-300">
                             <h4>ui-fill-dark-300</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -746,15 +746,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-100">
                             <h4>ui-fill-light-100</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -763,15 +763,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-200">
                             <h4>ui-fill-light-200</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -780,15 +780,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-light-300">
                             <h4>ui-fill-light-300</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-dark-200">fill-dark-200</a>
                             </div>
@@ -797,15 +797,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-100">
                             <h4>ui-fill-dark-100</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -814,15 +814,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-200">
                             <h4>ui-fill-dark-200</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>
@@ -831,15 +831,15 @@
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 round ui-fill-dark-300">
                             <h4>ui-fill-dark-300</h4>
-                            <div class="ui-color-white-muted ui-margin-5-b">
-                                <b>white-muted</b>
+                            <div class="ui-color-white-25 ui-margin-5-b">
+                                <b>white-25</b>
                             </div>
-                            <a href="#" class="ui-color-white-muted ui-btn block round ui-ease-btn">white-muted</a>
-                            <div class="ui-color-black-muted ui-margin-5-b ui-margin-15-t">
-                                <b>black-muted</b>
+                            <a href="#" class="ui-color-white-25 ui-btn block round ui-ease-btn">white-25</a>
+                            <div class="ui-color-black-25 ui-margin-5-b ui-margin-15-t">
+                                <b>black-25</b>
                             </div>
                             <div class="block-1st ui-ease-1st-btn">
-                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-muted">black-muted</a>
+                                <a href="#" class="ui-btn round ui-margin-15-b ui-color-black-25">black-25</a>
                                 <a href="#" class="ui-btn round ui-margin-5-b">fill-dark-200</a>
                                 <a href="#" class="ui-btn round ui-fill-light-200">fill-light-200</a>
                             </div>

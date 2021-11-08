@@ -17,7 +17,7 @@
                             </div>
                             <h2 class="font-bold ui-margin-15-v">Free</h2>
                             <h4 class="ui-color-black-50">1 End Product License</h4>
-                            <p class="ui-color-black-muted large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
+                            <p class="ui-color-black-25 large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                             <a class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-margin-30-b round ui-theme-green ui-fill-dark-100 ui-ease-btn" href="#">
                                 <b>GET FOR FREE</b>
                                 <svg class="ui-icon ui-margin-5-l"><use href="#heart"/></svg>
@@ -53,7 +53,7 @@
                             </div>
                             <h2 class="font-bold ui-margin-15-v">$49</h2>
                             <h4 class="ui-color-black-50">Enterprise License</h4>
-                            <p class="ui-color-black-muted large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
+                            <p class="ui-color-black-25 large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                             <a class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-margin-30-b round ui-theme-base ui-fill-dark-100 ui-ease-btn" href="#">
                                 <b>PURCHASE</b>
                                 <svg class="ui-icon ui-margin-5-l"><use href="#shopping-basket"/></svg>
@@ -77,7 +77,7 @@
                                 </div>
                                 <h2 class="font-bold ui-margin-15-v">Free</h2>
                                 <h4 class="ui-color-black-50">1 End Product License</h4>
-                                <p class="ui-color-black-muted large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
+                                <p class="ui-color-black-25 large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                                 <a class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-margin-30-b round ui-theme-green ui-fill-dark-100 ui-ease-btn" href="#">
                                     <b>GET FOR FREE</b>
                                     <svg class="ui-icon ui-margin-5-l"><use href="#heart"/></svg>
@@ -85,20 +85,20 @@
                             </div>
                             <div class="ui-card-side ui-padding-30">
                                 <ul class="list-unstyled ui-list-spacer-15 ui-margin-15-v large block-2nd">
-                                    <li><span class="ui-color-black-muted default">Number of Users</span>1 User</li>
-                                    <li><span class="ui-color-black-muted default">Domains</span>1 Domain</li>
-                                    <li><span class="ui-color-black-muted default">Projects</span>1 Project</li>
+                                    <li><span class="ui-color-black-25 default">Number of Users</span>1 User</li>
+                                    <li><span class="ui-color-black-25 default">Domains</span>1 Domain</li>
+                                    <li><span class="ui-color-black-25 default">Projects</span>1 Project</li>
                                     <li>
-                                        <span class="ui-color-black-muted default">Support</span>
+                                        <span class="ui-color-black-25 default">Support</span>
                                         <svg class="ui-icon"><use href="#check"/></svg>
                                     </li>
                                     <li>
-                                        <span class="ui-color-black-muted default">Tutorials</span>
+                                        <span class="ui-color-black-25 default">Tutorials</span>
                                         <svg class="ui-icon"><use href="#ban"/></svg>
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="ui-color-black-muted default">Cancellation</span>
+                                        <span class="ui-color-black-25 default">Cancellation</span>
                                         <svg class="ui-icon"><use href="#ban"/></svg>
                                     </li>
                                 </ul>
@@ -154,7 +154,7 @@
                                 </div>
                                 <h2 class="font-bold ui-margin-15-v">$49</h2>
                                 <h4 class="ui-color-black-50">Enterprise License</h4>
-                                <p class="ui-color-black-muted large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
+                                <p class="ui-color-black-25 large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                                 <a class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-margin-30-b round ui-theme-base ui-fill-dark-100 ui-ease-btn" href="#">
                                     <b>PURCHASE</b>
                                     <svg class="ui-icon ui-margin-5-l"><use href="#shopping-basket"/></svg>
@@ -162,20 +162,20 @@
                             </div>
                             <div class="ui-card-side ui-padding-30">
                                 <ul class="list-unstyled ui-list-spacer-15 ui-margin-15-v large block-2nd">
-                                    <li><span class="ui-color-black-muted default">Number of Users</span>100 Users</li>
-                                    <li><span class="ui-color-black-muted default">Domains</span>1000 Domains</li>
-                                    <li><span class="ui-color-black-muted default">Projects</span>Unlimited Projects</li>
+                                    <li><span class="ui-color-black-25 default">Number of Users</span>100 Users</li>
+                                    <li><span class="ui-color-black-25 default">Domains</span>1000 Domains</li>
+                                    <li><span class="ui-color-black-25 default">Projects</span>Unlimited Projects</li>
                                     <li>
-                                        <span class="ui-color-black-muted default">Support</span>
+                                        <span class="ui-color-black-25 default">Support</span>
                                         <svg class="ui-icon"><use href="#check"/></svg>
                                     </li>
                                     <li>
-                                        <span class="ui-color-black-muted default">Tutorials</span>
+                                        <span class="ui-color-black-25 default">Tutorials</span>
                                         <svg class="ui-icon"><use href="#ban"/></svg>
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="ui-color-black-muted default">Cancellation</span>
+                                        <span class="ui-color-black-25 default">Cancellation</span>
                                         <svg class="ui-icon"><use href="#ban"/></svg>
                                     </li>
                                 </ul>

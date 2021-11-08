@@ -22,13 +22,13 @@
                 <div class="ui-tabs align-l ui-icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn scroll-v ui-scrollbar-faded ui-add-mobile-menu-l" data-ui-classes="ui-current">
 
                     <div class="ui-padding-10">
-                        <div class="small ui-margin-10-b ui-color-white-muted">Personal Activity</div>
+                        <div class="small ui-margin-10-b ui-color-white-25">Personal Activity</div>
 
                         <div class="ui-btn-holder align-c round ui-ease-1st-btn">
                             <button class="ui-btn ui-btn-multi ui-padding-10-v round">
 
                                 <span class="xx-large">13</span>
-                                <span class="small ui-color-white-muted ui-margin-5-b block">Waiting</span>
+                                <span class="small ui-color-white-25 ui-margin-5-b block">Waiting</span>
                                 <span class="ui-progress-bar round ui-border-dual">
                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 65%;"></span>
                                 </span>
@@ -37,7 +37,7 @@
                             <button class="ui-btn ui-btn-multi ui-padding-10-v round">
 
                                 <span class="xx-large">3</span>
-                                <span class="small ui-color-white-muted ui-margin-5-b block">Paused</span>
+                                <span class="small ui-color-white-25 ui-margin-5-b block">Paused</span>
                                 <span class="ui-progress-bar round ui-border-dual">
                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 35%;"></span>
                                 </span>
@@ -46,7 +46,7 @@
                             <button class="ui-btn ui-btn-multi ui-padding-10-v round">
 
                                 <span class="xx-large">16</span>
-                                <span class="small ui-color-white-muted ui-margin-5-b block">Delayed</span>
+                                <span class="small ui-color-white-25 ui-margin-5-b block">Delayed</span>
                                 <span class="ui-progress-bar round ui-border-dual">
                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 75%;"></span>
                                 </span>
@@ -231,21 +231,21 @@
             <header class="ui-col-12 align-r ui-icons-no-opacity shadow-sm form-lg ui-ease-layout sidebar-opened" data-ui-classes="shadow-lg">
 
                 <div class="align-c left ui-ease-1st-btn">
-                    <button class="sidebar-show ui-btn ui-color-black-muted ui-btn-ghost ui-padding-10 circle ui-visible-lg ui-hidden" data-ui-tooltip title="Toggle Sidebar">
+                    <button class="sidebar-show ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 circle ui-visible-lg ui-hidden" data-ui-tooltip title="Toggle Sidebar">
                         <svg class="ui-icon"><use href="#angle-right"/></svg>
                     </button>
-                    <button class="ui-btn ui-color-black-muted ui-btn-ghost ui-padding-10 circle ui-show-mobile-menu-l ui-hidden-lg" data-ui-tooltip title="Show Sidebar" data-ui-only="desktop">
+                    <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 circle ui-show-mobile-menu-l ui-hidden-lg" data-ui-tooltip title="Show Sidebar" data-ui-only="desktop">
                         <svg class="ui-icon"><use href="#bars-left"/></svg>
                     </button>
-                    <button class="ui-btn ui-color-black-muted ui-btn-ghost ui-padding-10 circle" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
+                    <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 circle" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
                         <svg class="ui-icon"><use href="#search"/></svg>
                     </button>
                     <div class="ui-dropdown ui-nav ui-ease-dropdown">
-                        <button class="ui-btn ui-color-black-muted ui-btn-ghost ui-padding-10 circle ui-hidden-sm">
+                        <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 circle ui-hidden-sm">
                             My Jobs
                             <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                         </button>
-                        <button class="ui-btn ui-color-black-muted ui-btn-ghost ui-padding-10 circle ui-visible-sm">
+                        <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 circle ui-visible-sm">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                         </button>
                         <ul class="ui-dropdown-menu ui-list-column-2 ui-has-icon round shadow-lg">
@@ -263,13 +263,13 @@
 
                 <div class="inline">
                     <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
-                        <button class="ui-btn ui-color-black-muted ui-btn-square ui-btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Personal Logs">
+                        <button class="ui-btn ui-color-black-25 ui-btn-square ui-btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Personal Logs">
                             <svg class="ui-icon"><use href="#grid-column"/></svg>
                         </button>
                         <div class="ui-dropdown-menu round shadow-lg no-scroll">
                             <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
-                                <div class="ui-btn-holder ui-color-black-muted align-c ui-border-b ui-ease-1st-btn">
+                                <div class="ui-btn-holder ui-color-black-25 align-c ui-border-b ui-ease-1st-btn">
                                     <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active" data-ui-tooltip data-ui-only="desktop" title="Favorites">
                                         <svg class="ui-icon"><use href="#star"/></svg>
                                     </button>
@@ -339,13 +339,13 @@
                         </div>
                     </div>
                     <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
-                        <button class="ui-btn ui-color-black-muted ui-btn-square ui-btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Notification Center">
+                        <button class="ui-btn ui-color-black-25 ui-btn-square ui-btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Notification Center">
                             <svg class="ui-icon"><use href="#bars-right"/></svg>
                         </button>
                         <div class="ui-dropdown-menu round shadow-lg no-scroll">
                             <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
-                                <div class="ui-btn-holder ui-color-black-muted align-c ui-border-b ui-ease-1st-btn">
+                                <div class="ui-btn-holder ui-color-black-25 align-c ui-border-b ui-ease-1st-btn">
                                     <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active" data-ui-tooltip data-ui-only="desktop" title="Notifications">
                                         <svg class="ui-icon"><use href="#bell"/></svg>
                                     </button>
@@ -456,7 +456,7 @@
                     <div class="ui-row ui-border-b ui-margin-15-b ui-theme-panel2">
                         <div class="ui-col-4 ui-offset-4 ui-no-padding-b">
 
-                            <div class="ui-btn-holder ui-color-black-muted form-lg ui-ease-1st-btn">
+                            <div class="ui-btn-holder ui-color-black-25 form-lg ui-ease-1st-btn">
                                 <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active">Forms</button>
                                 <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">Dashboard</button>
                             </div>
@@ -676,7 +676,7 @@
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
                                                             <div class="x-large">Pending</div>
-                                                            <span class="ui-color-black-muted large">Total: 45%</span>
+                                                            <span class="ui-color-black-25 large">Total: 45%</span>
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 align-r">
@@ -686,8 +686,8 @@
                                                 <div class="ui-progress-bar ui-margin-15-t progress round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 45%;"></span>
                                                 </div>
-                                                <p class="ui-color-black-muted large ui-margin-5-b">Pending for the transaction.</p>
-                                                <p class="ui-color-black-muted">
+                                                <p class="ui-color-black-25 large ui-margin-5-b">Pending for the transaction.</p>
+                                                <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
@@ -699,7 +699,7 @@
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
                                                             <div class="x-large">Paused</div>
-                                                            <span class="ui-color-black-muted large">Total: 5%</span>
+                                                            <span class="ui-color-black-25 large">Total: 5%</span>
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 align-r">
@@ -709,8 +709,8 @@
                                                 <div class="ui-progress-bar ui-margin-15-t progress round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 5%;"></span>
                                                 </div>
-                                                <p class="ui-color-black-muted large ui-margin-5-b">Paused for the some reasons.</p>
-                                                <p class="ui-color-black-muted">
+                                                <p class="ui-color-black-25 large ui-margin-5-b">Paused for the some reasons.</p>
+                                                <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
@@ -722,7 +722,7 @@
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
                                                             <div class="x-large">Completed</div>
-                                                            <span class="ui-color-black-muted large">Total: 80%</span>
+                                                            <span class="ui-color-black-25 large">Total: 80%</span>
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 align-r">
@@ -732,8 +732,8 @@
                                                 <div class="ui-progress-bar ui-margin-15-t progress round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 80%;"></span>
                                                 </div>
-                                                <p class="ui-color-black-muted large ui-margin-5-b">Reached for the expert.</p>
-                                                <p class="ui-color-black-muted">
+                                                <p class="ui-color-black-25 large ui-margin-5-b">Reached for the expert.</p>
+                                                <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
@@ -745,7 +745,7 @@
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
                                                             <div class="align-l x-large">On Payment</div>
-                                                            <span class="ui-color-black-muted large">Total: 67%</span>
+                                                            <span class="ui-color-black-25 large">Total: 67%</span>
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 align-r">
@@ -755,8 +755,8 @@
                                                 <div class="ui-progress-bar ui-margin-15-t progress round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 67%;"></span>
                                                 </div>
-                                                <p class="ui-color-black-muted large ui-margin-5-b">Confirmed for payment.</p>
-                                                <p class="ui-color-black-muted">
+                                                <p class="ui-color-black-25 large ui-margin-5-b">Confirmed for payment.</p>
+                                                <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
                                                     <span class="inline-block">Last updated: 15:12</span>
                                                 </p>
@@ -768,7 +768,7 @@
                                         <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square circle">
                                             <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                         </button>
-                                        <span class="ui-dots ui-color-black-muted"></span>
+                                        <span class="ui-dots ui-color-black-25"></span>
                                         <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square circle">
                                             <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                         </button>
@@ -793,7 +793,7 @@
                                         <div class="ui-row ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                             <div class="ui-col-12 large">
                                                 <div class="large font-bold">Total Progress</div>
-                                                <span class="ui-color-black-muted">23% Change</span>
+                                                <span class="ui-color-black-25">23% Change</span>
                                             </div>
                                         </div>
                                         <div class="ui-col-150 align-r">
@@ -823,7 +823,7 @@
                                     </div>
                                     <span class="sp-3"></span>
                                     <p class="ui-color-black-50 large ui-margin-5-b">Daily reports that all received.</p>
-                                    <p class="ui-color-black-muted">
+                                    <p class="ui-color-black-25">
                                         <svg class="ui-icon ui-icon-xs ui-margin-5-r"><use href="#clock"/></svg>
                                         <span class="inline-block">Last updated: 15:12</span>
                                     </p>
@@ -834,7 +834,7 @@
                                 <div class="ui-card ui-full-h ui-padding-15 ui-padding-10-t round shadow-lg" style="min-height: 350px;">
                                     <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
-                                        <div class="ui-btn-holder ui-color-black-muted align-c ui-margin-10-b ui-border-b form-lg ui-ease-1st-btn">
+                                        <div class="ui-btn-holder ui-color-black-25 align-c ui-margin-10-b ui-border-b form-lg ui-ease-1st-btn">
                                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active">Delayed</button>
                                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">Paused</button>
                                         </div>
@@ -843,7 +843,7 @@
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-muted x-small">88%</strong>
+                                                            <strong class="ui-color-black-25 x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
                                                             </svg>
@@ -853,7 +853,7 @@
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-muted x-small">76%</strong>
+                                                            <strong class="ui-color-black-25 x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
                                                             </svg>
@@ -863,7 +863,7 @@
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-muted x-small">69%</strong>
+                                                            <strong class="ui-color-black-25 x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
                                                             </svg>
@@ -873,7 +873,7 @@
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-muted x-small">52%</strong>
+                                                            <strong class="ui-color-black-25 x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
                                                             </svg>
@@ -883,7 +883,7 @@
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-muted x-small">36%</strong>
+                                                            <strong class="ui-color-black-25 x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
@@ -893,7 +893,7 @@
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-muted x-small">36%</strong>
+                                                            <strong class="ui-color-black-25 x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
@@ -909,7 +909,7 @@
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-muted x-small">88%</strong>
+                                                            <strong class="ui-color-black-25 x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
                                                             </svg>
@@ -919,7 +919,7 @@
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-muted x-small">76%</strong>
+                                                            <strong class="ui-color-black-25 x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
                                                             </svg>
@@ -929,7 +929,7 @@
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-muted x-small">69%</strong>
+                                                            <strong class="ui-color-black-25 x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
                                                             </svg>
@@ -939,7 +939,7 @@
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-muted x-small">52%</strong>
+                                                            <strong class="ui-color-black-25 x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
                                                             </svg>
@@ -949,7 +949,7 @@
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-muted x-small">36%</strong>
+                                                            <strong class="ui-color-black-25 x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
@@ -959,7 +959,7 @@
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-muted x-small">36%</strong>
+                                                            <strong class="ui-color-black-25 x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
@@ -1051,7 +1051,7 @@
                                 <div class="ui-card ui-full-h ui-padding-15 ui-padding-10-t round shadow-lg" style="min-height: 350px;">
                                     <div class="ui-tabs form-lg ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
-                                        <div class="ui-btn-holder ui-color-black-muted align-c ui-margin-10-b ui-border-b ui-ease-1st-btn">
+                                        <div class="ui-btn-holder ui-color-black-25 align-c ui-margin-10-b ui-border-b ui-ease-1st-btn">
                                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active">News</button>
                                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">Announcements</button>
                                         </div>

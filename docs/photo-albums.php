@@ -47,7 +47,7 @@
                                     <h3 class="ui-margin-15-v">Summer Holiday Photos</h3>
                                 </div>
                                 <div class="ui-col-6 align-r xs-align-c">
-                                    <span class="ui-color-black-muted large inline-block">23 Jun - 18 Aug, 2012</span>
+                                    <span class="ui-color-black-25 large inline-block">23 Jun - 18 Aug, 2012</span>
                                     <img class="ui-img-photo ui-img-photo-sm circle ui-margin-15-l" src="img/profile-image.jpg" alt="">
                                 </div>
                             </div>
@@ -60,7 +60,7 @@
                                             <span class="scroll-v ui-margin-30 set-absolute set-all">
                                                 <span class="x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                                 <br><br>
-                                                <span class="ui-color-white-muted large">
+                                                <span class="ui-color-white-25 large">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                     Curabitur consequat gravida posuere.
                                                     Etiam luctus ex vitae diam tempor, a egestas magna posuere.
@@ -143,7 +143,7 @@
                                     <h3 class="ui-margin-15-v">Autumn Comes Photos</h3>
                                 </div>
                                 <div class="ui-col-6 align-r xs-align-c">
-                                    <span class="ui-color-black-muted large inline-block">3 Sep - 18 Nov, 2021</span>
+                                    <span class="ui-color-black-25 large inline-block">3 Sep - 18 Nov, 2021</span>
                                     <img class="ui-img-photo ui-img-photo-sm circle ui-margin-15-l" src="img/profile-image3.jpg" alt="">
                                 </div>
                             </div>
@@ -156,7 +156,7 @@
                                             <span class="scroll-v ui-margin-30 set-absolute set-all">
                                                 <span class="x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                                 <br><br>
-                                                <span class="ui-color-white-muted large">
+                                                <span class="ui-color-white-25 large">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                     Curabitur consequat gravida posuere.
                                                     Etiam luctus ex vitae diam tempor, a egestas magna posuere.
