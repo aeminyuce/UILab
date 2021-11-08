@@ -84,7 +84,7 @@
                                 </a>
                             </div>
                             <div class="ui-card-side ui-padding-30">
-                                <ul class="list-unstyled ui-list-spacer-15 ui-margin-15-v large block-2nd">
+                                <ul class="list-unstyled ui-list-spacer-15 ui-margin-15-v large ui-block-2nd">
                                     <li><span class="ui-color-black-25 default">Number of Users</span>1 User</li>
                                     <li><span class="ui-color-black-25 default">Domains</span>1 Domain</li>
                                     <li><span class="ui-color-black-25 default">Projects</span>1 Project</li>
@@ -123,7 +123,7 @@
                                 </a>
                             </div>
                             <div class="ui-card-side ui-padding-30">
-                                <ul class="list-unstyled ui-list-spacer-15 ui-margin-15-v large block-2nd">
+                                <ul class="list-unstyled ui-list-spacer-15 ui-margin-15-v large ui-block-2nd">
                                     <li><span class="ui-color-white-50 default">Number of Users</span>5 Users</li>
                                     <li><span class="ui-color-white-50 default">Domains</span>10 Domains</li>
                                     <li><span class="ui-color-white-50 default">Projects</span>100 Projects</li>
@@ -161,7 +161,7 @@
                                 </a>
                             </div>
                             <div class="ui-card-side ui-padding-30">
-                                <ul class="list-unstyled ui-list-spacer-15 ui-margin-15-v large block-2nd">
+                                <ul class="list-unstyled ui-list-spacer-15 ui-margin-15-v large ui-block-2nd">
                                     <li><span class="ui-color-black-25 default">Number of Users</span>100 Users</li>
                                     <li><span class="ui-color-black-25 default">Domains</span>1000 Domains</li>
                                     <li><span class="ui-color-black-25 default">Projects</span>Unlimited Projects</li>

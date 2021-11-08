@@ -91,7 +91,7 @@
 
                 <h5 class="font-bold">Photo Gallery with Custom Grids</h5>
                 <div class="ui-padding-30-b">
-                    <ul class="ui-photo-gallery block-2nd ui-ease-photo-gallery ui-theme-sub">
+                    <ul class="ui-photo-gallery ui-block-2nd ui-ease-photo-gallery ui-theme-sub">
                         <li>
                             <a class="ui-img ui-has-info" href="img/image_01.jpg">
                                 <img src="img/image_01.jpg" alt="">
@@ -156,7 +156,7 @@
 
                     <span class="sp-30 ui-margin-10-v"></span>
 
-                    <ul class="ui-photo-gallery ui-has-cover block-2nd ui-ease-photo-gallery ui-theme-sub">
+                    <ul class="ui-photo-gallery ui-has-cover ui-block-2nd ui-ease-photo-gallery ui-theme-sub">
                         <li>
                             <a class="ui-img ui-has-info ui-show-info" href="img/image_03.jpg">
                                 <img src="img/image_03.jpg" alt="">

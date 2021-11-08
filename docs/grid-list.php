@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                             <div class="ui-col-lg-3 ui-col-6 ui-no-fluid">
-                                <div class="ui-dropdown ui-menu-l block ui-ease-dropdown">
+                                <div class="ui-dropdown ui-menu-l ui-block ui-ease-dropdown">
                                     <button class="ui-btn align-l round ui-fill-light-100">
                                         <span>
                                             <svg class="ui-icon"><use href="#sort"></svg> Sort
@@ -524,7 +524,7 @@
                         </div>
                     </div>
 
-                    <div class="ui-row ui-row-gap-xs align-l block-2nd ui-ease-2nd-btn ui-no-fluid">
+                    <div class="ui-row ui-row-gap-xs align-l ui-block-2nd ui-ease-2nd-btn ui-no-fluid">
                         <div class="ui-col-5">
                             <button class="ui-btn" data-ui-sort="1"><svg class="ui-icon"><use href="#sort"></svg> Name</button>
                         </div>
@@ -1269,7 +1269,7 @@
                         </div>
                     </div>
 
-                    <div class="ui-row ui-row-gap-xs align-l ui-border-v block-2nd ui-ease-2nd-btn ui-no-fluid">
+                    <div class="ui-row ui-row-gap-xs align-l ui-border-v ui-block-2nd ui-ease-2nd-btn ui-no-fluid">
                         <div class="ui-col-5">
                             <button class="ui-btn ui-btn-ghost" data-ui-sort="1"><svg class="ui-icon"><use href="#sort"></svg> Name</button>
                         </div>

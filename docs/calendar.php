@@ -24,7 +24,7 @@
         </div>
 
         <h3>Calendars with Defined Dates</h3>
-        <div class="ui-row ui-sm-fluid ui-padding-30-b block-2nd">
+        <div class="ui-row ui-sm-fluid ui-padding-30-b ui-block-2nd">
             <div class="ui-col-6">
                 <b class="ui-margin-5-b">Previous Month: data-ui-date="prev"</b>
                 <div class="ui-calendar ui-ease-calendar round shadow" data-ui-date="prev"></div>

@@ -15,9 +15,9 @@
             <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
         </span>
         <span class="x-large">Red</span>
-        <span class="ui-color-black-50 block ui-margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+        <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
         <b class="xx-large">$164.98</b>
-        <span class="block">
+        <span class="ui-block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#truck"/></svg> Fast Delivery
         </span>
         <ul class="list-inline ui-margin-15-v ui-right">
@@ -51,9 +51,9 @@
             <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
         </span>
         <span class="x-large">Purple</span>
-        <span class="ui-color-black-50 block ui-margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
+        <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
         <b class="xx-large">$79.95</b> <b class="ui-color-black-50 font-overline">$99.99</b>
-        <span class="block">
+        <span class="ui-block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
         <ul class="list-inline ui-margin-15-v ui-right">
@@ -86,9 +86,9 @@
             <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
         </span>
         <span class="x-large">Blue</span>
-        <span class="ui-color-black-50 block ui-margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+        <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
         <b class="xx-large">$149.99</b>
-        <span class="block">
+        <span class="ui-block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#truck"/></svg> Fast Delivery
         </span>
         <ul class="list-inline ui-margin-15-v ui-right">
@@ -118,9 +118,9 @@
             <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
         </span>
         <span class="x-large">White</span>
-        <span class="ui-color-black-50 block ui-margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
+        <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
         <b class="xx-large">$89.95</b> <b class="ui-color-black-50 font-overline">$119.99</b>
-        <span class="block">
+        <span class="ui-block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
         <ul class="list-inline ui-margin-15-v ui-right">
@@ -149,9 +149,9 @@
             <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
         </span>
         <span class="x-large">Black</span>
-        <span class="ui-color-black-50 block ui-margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
+        <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
         <b class="xx-large">$89.95</b> <b class="ui-color-black-50 font-overline">$119.99</b>
-        <span class="block">
+        <span class="ui-block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
         <ul class="list-inline ui-margin-15-v ui-right">
@@ -183,9 +183,9 @@
             <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
         </span>
         <span class="x-large">Purple</span>
-        <span class="ui-color-black-50 block ui-margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
+        <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
         <b class="xx-large">$79.95</b> <b class="ui-color-black-50 font-overline">$99.99</b>
-        <span class="block">
+        <span class="ui-block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
         <ul class="list-inline ui-margin-15-v ui-right">

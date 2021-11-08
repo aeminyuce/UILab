@@ -9,7 +9,7 @@
                     UI JS is a simple javascript for creating, removing and triggering javascript event listeners and finding HTML elements.
                 </div>
 
-                <div class="ui-padding-30-v block-1st ui-theme-base">
+                <div class="ui-padding-30-v ui-block-1st ui-theme-base">
 
                     <b class="ui-margin-5-b">Page load event listener:</b>
                     <pre class="round ui-margin-5-b">ui.onload(function)</pre>
@@ -86,71 +86,71 @@
 
                     <span class="sp-30"></span>
 
-                    <b class="ui-margin-5-b block">ui.find() is a simple javascript finder to find HTML elements:</b>
+                    <b class="ui-margin-5-b ui-block">ui.find() is a simple javascript finder to find HTML elements:</b>
                     <pre class="round ui-margin-5-b">ui.find('element');</pre>
 
                     <span class="sp-30"></span>
 
-                    <b class="ui-margin-5-b block">Find multiple elements:</b>
+                    <b class="ui-margin-5-b ui-block">Find multiple elements:</b>
                     <pre class="round ui-margin-5-b">ui.find('element, element');</pre>
 
                     <span class="sp-30"></span>
 
-                    <b class="ui-margin-5-b block">Find first of elements:</b>
+                    <b class="ui-margin-5-b ui-block">Find first of elements:</b>
                     <pre class="round ui-margin-5-b">ui.find('element')[0];</pre>
 
                     <span class="sp-30"></span>
 
-                    <b class="ui-margin-5-b block">Find CSS3 last-child of elements:</b>
+                    <b class="ui-margin-5-b ui-block">Find CSS3 last-child of elements:</b>
                     <pre class="round ui-margin-5-b">ui.find(':last-child');</pre>
 
                     <span class="sp-30"></span>
 
-                    <b class="ui-margin-5-b block">Find classname:</b>
+                    <b class="ui-margin-5-b ui-block">Find classname:</b>
                     <pre class="round ui-margin-5-b">ui.find('.class');</pre>
 
                     <span class="sp-30"></span>
-                    <b class="ui-margin-5-b block">Find ID:</b>
+                    <b class="ui-margin-5-b ui-block">Find ID:</b>
                     <pre class="round ui-margin-5-b">ui.find('#id');</pre>
 
                     <span class="sp-30"></span>
 
-                    <b class="ui-margin-5-b block">Find with attribute:</b>
+                    <b class="ui-margin-5-b ui-block">Find with attribute:</b>
                     <pre class="round ui-margin-5-b">ui.find('[attribute]');</pre>
 
                     <span class="sp-30"></span>
 
-                    <b class="ui-margin-5-b block">Find document:</b>
+                    <b class="ui-margin-5-b ui-block">Find document:</b>
                     <pre class="round ui-margin-5-b">ui.find(document);</pre>
 
                     <span class="sp-30"></span>
 
-                    <b class="ui-margin-5-b block">Find window:</b>
+                    <b class="ui-margin-5-b ui-block">Find window:</b>
                     <pre class="round ui-margin-5-b">ui.find(window);</pre>
 
                     <span class="sp-30"></span>
 
-                    <b class="ui-margin-5-b block">Find this element:</b>
+                    <b class="ui-margin-5-b ui-block">Find this element:</b>
                     <pre class="round ui-margin-5-b">ui.find(this);</pre>
 
                     <span class="sp-30"></span>
 
-                    <b class="ui-margin-5-b block">Find an element in this element:</b>
+                    <b class="ui-margin-5-b ui-block">Find an element in this element:</b>
                     <pre class="round ui-margin-5-b">ui.find('element', this);</pre>
 
                     <span class="sp-30"></span>
 
-                    <b class="ui-margin-5-b block">Find classname in parent classname:</b>
+                    <b class="ui-margin-5-b ui-block">Find classname in parent classname:</b>
                     <pre class="round ui-margin-5-b">ui.find('.class', '.parentClass');</pre>
 
                     <span class="sp-30"></span>
 
-                    <b class="ui-margin-5-b block">Find ID in selected classname:</b>
+                    <b class="ui-margin-5-b ui-block">Find ID in selected classname:</b>
                     <pre class="round ui-margin-5-b">ui.find('#id', '.class');</pre>
 
                     <span class="sp-30"></span>
 
-                    <b class="ui-margin-5-b block">ui.ajax() is a simple javascript to making XHR requests:</b>
+                    <b class="ui-margin-5-b ui-block">ui.ajax() is a simple javascript to making XHR requests:</b>
                     <pre class="round scroll-v">ajax({
 
     type : 'GET',
@@ -225,13 +225,13 @@ ajax({
 
                     <span class="sp-15"></span>
 
-                    <b class="ui-margin-5-b block">ui.userAgents() is a simple javascript for detecting browsers, devices and operating systems.</b>
-                    <span class="ui-margin-5-b block">Adding classnames to the html element, dynamically:</span>
+                    <b class="ui-margin-5-b ui-block">ui.userAgents() is a simple javascript for detecting browsers, devices and operating systems.</b>
+                    <span class="ui-margin-5-b ui-block">Adding classnames to the html element, dynamically:</span>
                     <pre class="round results"></pre>
 
                     <span class="sp-15"></span>
 
-                    <span class="ui-margin-5-b block">Global variables:</span>
+                    <span class="ui-margin-5-b ui-block">Global variables:</span>
                     <pre class="round variables"></pre>
 
                 </div>

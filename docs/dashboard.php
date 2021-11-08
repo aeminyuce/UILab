@@ -28,7 +28,7 @@
                             <button class="ui-btn ui-btn-multi ui-padding-10-v round">
 
                                 <span class="xx-large">13</span>
-                                <span class="small ui-color-white-25 ui-margin-5-b block">Waiting</span>
+                                <span class="small ui-color-white-25 ui-margin-5-b ui-block">Waiting</span>
                                 <span class="ui-progress-bar round ui-border-dual">
                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 65%;"></span>
                                 </span>
@@ -37,7 +37,7 @@
                             <button class="ui-btn ui-btn-multi ui-padding-10-v round">
 
                                 <span class="xx-large">3</span>
-                                <span class="small ui-color-white-25 ui-margin-5-b block">Paused</span>
+                                <span class="small ui-color-white-25 ui-margin-5-b ui-block">Paused</span>
                                 <span class="ui-progress-bar round ui-border-dual">
                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 35%;"></span>
                                 </span>
@@ -46,7 +46,7 @@
                             <button class="ui-btn ui-btn-multi ui-padding-10-v round">
 
                                 <span class="xx-large">16</span>
-                                <span class="small ui-color-white-25 ui-margin-5-b block">Delayed</span>
+                                <span class="small ui-color-white-25 ui-margin-5-b ui-block">Delayed</span>
                                 <span class="ui-progress-bar round ui-border-dual">
                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 75%;"></span>
                                 </span>
@@ -55,12 +55,12 @@
                         </div>
                     </div>
 
-                    <a href="#" class="ui-btn ui-btn-lg ui-btn-ghost block ui-margin-10-v">
+                    <a href="#" class="ui-btn ui-btn-lg ui-btn-ghost ui-block ui-margin-10-v">
                         <svg class="ui-icon ui-margin-15-r"><use href="#grid-masonry"/></svg>
                         Dashboard
                     </a>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r ui-block">
                         <svg class="ui-icon ui-margin-15-r"><use href="#users"/></svg>
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Employees
@@ -102,7 +102,7 @@
                         </div>
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r ui-block">
                         <svg class="ui-icon ui-margin-15-r"><use href="#moneys"/></svg>
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Payments
@@ -119,7 +119,7 @@
                         </div>
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r ui-block">
                         <svg class="ui-icon ui-margin-15-r"><use href="#calendar-check"/></svg>
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Events
@@ -135,7 +135,7 @@
                         </div>
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r ui-block">
                         <svg class="ui-icon ui-margin-15-r"><use href="#files"/></svg>
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Documents
@@ -153,7 +153,7 @@
                         </div>
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r ui-block">
                         <svg class="ui-icon ui-margin-15-r"><use href="#chart-line"/></svg>
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Statistics
@@ -169,7 +169,7 @@
                         </div>
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r ui-block">
                         <svg class="ui-icon ui-margin-15-r"><use href="#doc"/></svg>
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Reports
@@ -187,7 +187,7 @@
                         </div>
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r ui-block">
                         <svg class="ui-icon ui-margin-15-r"><use href="#truck"/></svg>
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Orders
@@ -306,7 +306,7 @@
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                         <li>
                                             Nullam sit amet sagittis nisi.
-                                            <span class="ui-icons-xl ui-margin-5-t block ui-ease-1st-btn">
+                                            <span class="ui-icons-xl ui-margin-5-t ui-block ui-ease-1st-btn">
                                                 <a class="ui-btn ui-btn-square ui-padding-4-v round" href="#">
                                                     <svg class="ui-icon"><use href="#file-pdf"/></svg>
                                                 </a>
@@ -443,7 +443,7 @@
                         </ul>
                     </span>
                     <span class="ui-margin-3-t inline-block ui-hidden-xs">aeminyuce</span>
-                    <span class="small ui-color-black-50 block ui-hidden-xs">Premium</span>
+                    <span class="small ui-color-black-50 ui-block ui-hidden-xs">Premium</span>
                 </div>
 
             </header>
@@ -804,7 +804,7 @@
                                         <div class="ui-col-6">
                                             <div class="ui-donut-chart ui-auto-margin ui-ease-donut-chart" style="max-width: 150px;">
                                                 <strong>
-                                                    <b class="ui-color-black-50 ui-margin-2-b block">69%</b>
+                                                    <b class="ui-color-black-50 ui-margin-2-b ui-block">69%</b>
                                                     Payments
                                                 </strong>
                                                 <svg viewBox="0 0 160 160">
@@ -848,7 +848,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t block">AAC-2019-013:AGF</b>
+                                                        <b class="ui-margin-5-t ui-block">AAC-2019-013:AGF</b>
                                                         <span class="ui-color-black-50 small">3814 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -858,7 +858,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t block">BDA-2019-642</b>
+                                                        <b class="ui-margin-5-t ui-block">BDA-2019-642</b>
                                                         <span class="ui-color-black-50 small">2613 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -868,7 +868,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t block">DDG-2019-505:AG</b>
+                                                        <b class="ui-margin-5-t ui-block">DDG-2019-505:AG</b>
                                                         <span class="ui-color-black-50 small">1890 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -878,7 +878,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t block">OOC-2019-781:F</b>
+                                                        <b class="ui-margin-5-t ui-block">OOC-2019-781:F</b>
                                                         <span class="ui-color-black-50 small">1605 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -888,7 +888,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t block">BDD-2019-047:G</b>
+                                                        <b class="ui-margin-5-t ui-block">BDD-2019-047:G</b>
                                                         <span class="ui-color-black-50 small">812 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -898,7 +898,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t block">RAC-2019-973</b>
+                                                        <b class="ui-margin-5-t ui-block">RAC-2019-973</b>
                                                         <span class="ui-color-black-50 small">616 Reports</span>
                                                     </li>
                                                 </ul>
@@ -914,7 +914,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t block">AAC-2019-013:AGF</b>
+                                                        <b class="ui-margin-5-t ui-block">AAC-2019-013:AGF</b>
                                                         <span class="ui-color-black-50 small">3814 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -924,7 +924,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t block">BDA-2019-642</b>
+                                                        <b class="ui-margin-5-t ui-block">BDA-2019-642</b>
                                                         <span class="ui-color-black-50 small">2613 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -934,7 +934,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t block">DDG-2019-505:AG</b>
+                                                        <b class="ui-margin-5-t ui-block">DDG-2019-505:AG</b>
                                                         <span class="ui-color-black-50 small">1890 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -944,7 +944,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t block">OOC-2019-781:F</b>
+                                                        <b class="ui-margin-5-t ui-block">OOC-2019-781:F</b>
                                                         <span class="ui-color-black-50 small">1605 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -954,7 +954,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t block">BDD-2019-047:G</b>
+                                                        <b class="ui-margin-5-t ui-block">BDD-2019-047:G</b>
                                                         <span class="ui-color-black-50 small">812 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -964,7 +964,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t block">RAC-2019-973</b>
+                                                        <b class="ui-margin-5-t ui-block">RAC-2019-973</b>
                                                         <span class="ui-color-black-50 small">616 Reports</span>
                                                     </li>
                                                 </ul>
@@ -1085,7 +1085,7 @@
                                                 <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                                 <li>
                                                     Nullam sit amet sagittis nisi.
-                                                    <span class="ui-icons-xl ui-margin-5-t block ui-ease-1st-btn">
+                                                    <span class="ui-icons-xl ui-margin-5-t ui-block ui-ease-1st-btn">
                                                         <a class="ui-btn ui-btn-square ui-padding-3-v round" href="#">
                                                             <svg class="ui-icon"><use href="#file-pdf"/></svg>
                                                         </a>
@@ -1176,7 +1176,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-col-lg-3 ui-col-6 ui-no-fluid">
-                                                <div class="ui-dropdown ui-menu-l block ui-ease-dropdown">
+                                                <div class="ui-dropdown ui-menu-l ui-block ui-ease-dropdown">
                                                     <button class="ui-btn align-l round">
                                                         <span>
                                                             <svg class="ui-icon"><use href="#sort"/></svg> Sort
@@ -1786,31 +1786,31 @@
                     </div>
                 </div>
                 <div class="ui-col-100 ui-col-xs-50 ui-padding-10-v">
-                    <button class="ui-btn block round-r ui-theme-panel2 ui-fill-dark-100 ui-ease-btn" type="submit">
+                    <button class="ui-btn ui-block round-r ui-theme-panel2 ui-fill-dark-100 ui-ease-btn" type="submit">
                         <svg class="ui-icon"><use href="#search"/></svg>
                     </button>
                 </div>
             </div>
 
-            <div class="ui-row ui-xs-fluid ui-icons-xxl block-2nd ui-icons-no-opacity hover-t-more-2nd ui-icons-margin-5-v ui-theme-panel ui-ease-2nd-btn">
+            <div class="ui-row ui-xs-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity hover-t-more-2nd ui-icons-margin-5-v ui-theme-panel ui-ease-2nd-btn">
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#news"/></svg>
-                        <span class="x-large block ui-margin-5-t">News</span>
+                        <span class="x-large ui-block ui-margin-5-t">News</span>
                         <span class="ui-color-white-50">589</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#calendar-check"/></svg>
-                        <span class="x-large block ui-margin-5-t">Events</span>
+                        <span class="x-large ui-block ui-margin-5-t">Events</span>
                         <span class="ui-color-white-50">219</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#files"/></svg>
-                        <span class="x-large block ui-margin-5-t">Documents</span>
+                        <span class="x-large ui-block ui-margin-5-t">Documents</span>
                         <span class="ui-color-white-50">701</span>
                     </a>
                 </div>

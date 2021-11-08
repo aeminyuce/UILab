@@ -94,7 +94,7 @@
                         <div class="ui-padding-15 ui-border-b">
 
                             <h5 class="ui-margin-10-b ui-color-black-50">PROMOTIONS</h5>
-                            <label class="custom block">
+                            <label class="custom ui-block">
                                 <span class="switch-custom ui-right round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
@@ -103,7 +103,7 @@
                                 Fast Delivery
                             </label>
                             <span class="sp-5"></span>
-                            <label class="custom block">
+                            <label class="custom ui-block">
                                 <span class="switch-custom ui-right round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
@@ -117,28 +117,28 @@
                         <div class="ui-padding-15 ui-border-b">
 
                             <h5 class="ui-margin-10-b ui-color-black-50">CONNECTIONS</h5>
-                            <label class="custom block">
+                            <label class="custom ui-block">
                                 <span class="check-custom round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
                                 Wireless <span class="ui-color-black-25">4</span>
                             </label>
-                            <label class="custom block">
+                            <label class="custom ui-block">
                                 <span class="check-custom round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
                                 Bluetooth <span class="ui-color-black-25">11</span>
                             </label>
-                            <label class="custom block">
+                            <label class="custom ui-block">
                                 <span class="check-custom round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
                                 Wired <span class="ui-color-black-25">9</span>
                             </label>
-                            <label class="custom block">
+                            <label class="custom ui-block">
                                 <span class="check-custom round ui-ease-form">
                                     <input type="checkbox">
                                     <i class="state ui-fill-dark-100"></i>
@@ -155,7 +155,7 @@
                         </div>
 
                         <div class="ui-padding-15">
-                            <button type="submit" class="ui-btn ui-btn-lg block round ui-fill-dark-100 ui-ease-btn"><b>SEARCH</b></button>
+                            <button type="submit" class="ui-btn ui-btn-lg ui-block round ui-fill-dark-100 ui-ease-btn"><b>SEARCH</b></button>
                         </div>
 
                     </div>
@@ -198,16 +198,16 @@
                                 <div class="ui-row ui-no-fluid ui-margin-10-b">
                                     <div class="ui-col-6">
                                         <span class="ui-color-black-25">Highest:</span>
-                                        <span class="largest block">$199</span>
+                                        <span class="largest ui-block">$199</span>
                                     </div>
                                     <div class="ui-col-6">
                                         <span class="ui-color-black-25">Lowest:</span>
-                                        <span class="largest block">$120</span>
+                                        <span class="largest ui-block">$120</span>
                                     </div>
                                 </div>
                                 <svg class="ui-icon ui-icon-sm ui-margin-5-r ui-margin-2-b"><use href="#chart-line"/></svg>
                                 <span class="large">Current prices <b>12% lower</b> than, average prices!</span>
-                                <ul class="list-unstyled ui-color-black-25 ui-margin-15-t inline-block-2nd">
+                                <ul class="list-unstyled ui-color-black-25 ui-margin-15-t inline-ui-block-2nd">
                                     <li>
                                         <b class="circle ui-padding-5 ui-margin-4-l ui-margin-5-r" style="background: hsl(30, 100%, 63%);"></b>
                                         <span>Headphones Averages</span>
@@ -277,9 +277,9 @@
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Red</span>
-                                <span class="ui-color-black-50 block ui-margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+                                <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
                                 <b class="xx-large">$164.98</b>
-                                <span class="block">
+                                <span class="ui-block">
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#truck"/></svg> Fast Delivery
                                 </span>
                                 <ul class="list-inline ui-margin-15-v ui-right">
@@ -313,9 +313,9 @@
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Purple</span>
-                                <span class="ui-color-black-50 block ui-margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
+                                <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
                                 <b class="xx-large">$79.95</b> <b class="ui-color-black-50 font-overline">$99.99</b>
-                                <span class="block">
+                                <span class="ui-block">
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline ui-margin-15-v ui-right">
@@ -348,9 +348,9 @@
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Blue</span>
-                                <span class="ui-color-black-50 block ui-margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
+                                <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Wireless Headphones</span>
                                 <b class="xx-large">$149.99</b>
-                                <span class="block">
+                                <span class="ui-block">
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#truck"/></svg> Fast Delivery
                                 </span>
                                 <ul class="list-inline ui-margin-15-v ui-right">
@@ -380,9 +380,9 @@
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">White</span>
-                                <span class="ui-color-black-50 block ui-margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
+                                <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
                                 <b class="xx-large">$89.95</b> <b class="ui-color-black-50 font-overline">$119.99</b>
-                                <span class="block">
+                                <span class="ui-block">
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline ui-margin-15-v ui-right">
@@ -411,9 +411,9 @@
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Black</span>
-                                <span class="ui-color-black-50 block ui-margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
+                                <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
                                 <b class="xx-large">$89.95</b> <b class="ui-color-black-50 font-overline">$119.99</b>
-                                <span class="block">
+                                <span class="ui-block">
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline ui-margin-15-v ui-right">
@@ -445,9 +445,9 @@
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Purple</span>
-                                <span class="ui-color-black-50 block ui-margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
+                                <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
                                 <b class="xx-large">$79.95</b> <b class="ui-color-black-50 font-overline">$99.99</b>
-                                <span class="block">
+                                <span class="ui-block">
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline ui-margin-15-v ui-right">

@@ -42,11 +42,11 @@
 
                     <span class="sp-30"></span>
 
-                    <button type="submit" class="go-signup-btn ui-btn ui-color-white block round hover-scale hover-shadow ui-ease-btn">
+                    <button type="submit" class="go-signup-btn ui-btn ui-color-white ui-block round hover-scale hover-shadow ui-ease-btn">
                         <b>LOGIN</b>
                     </button>
                     <span class="sp-15"></span>
-                    <button class="ui-tab ui-btn ui-btn-ghost ui-color-black-50 round block ui-ease-btn" data-ui-id="lost-password">
+                    <button class="ui-tab ui-btn ui-btn-ghost ui-color-black-50 round ui-block ui-ease-btn" data-ui-id="lost-password">
                         <svg class="ui-icon ui-margin-5-r no-opacity"><use href="#lock"/></svg> Forgot password?
                     </button>
 
@@ -66,11 +66,11 @@
 
                     <span class="sp-30"></span>
 
-                    <button type="submit" class="go-signup-btn ui-btn ui-color-white block round hover-scale hover-shadow ui-ease-btn">
+                    <button type="submit" class="go-signup-btn ui-btn ui-color-white ui-block round hover-scale hover-shadow ui-ease-btn">
                         <b>Reset Password</b>
                     </button>
                     <span class="sp-15"></span>
-                    <button class="ui-tab ui-btn ui-btn-ghost ui-color-black-50 round block ui-ease-btn" data-ui-id="login">
+                    <button class="ui-tab ui-btn ui-btn-ghost ui-color-black-50 round ui-block ui-ease-btn" data-ui-id="login">
                         <svg class="ui-icon ui-margin-5-r no-opacity"><use href="#long-arrow-left"/></svg> Back to login
                     </button>
 

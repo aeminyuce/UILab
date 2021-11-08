@@ -158,10 +158,10 @@
                             <li class="ui-padding-10-v ui-padding-15-h ui-hidden-xs">
                                 <svg class="ui-icon ui-icon-xxl"><use href="#history"/></svg>
                             </li>
-                            <li class="ui-padding-5"><b class="ui-d xx-large block">12</b>Days</li>
-                            <li class="ui-padding-5"><b class="ui-h xx-large block">22</b>Hours</li>
-                            <li class="ui-padding-5"><b class="ui-m xx-large block">01</b>Minutes</li>
-                            <li class="ui-padding-5"><b class="ui-s xx-large block">17</b>Seconds</li>
+                            <li class="ui-padding-5"><b class="ui-d xx-large ui-block">12</b>Days</li>
+                            <li class="ui-padding-5"><b class="ui-h xx-large ui-block">22</b>Hours</li>
+                            <li class="ui-padding-5"><b class="ui-m xx-large ui-block">01</b>Minutes</li>
+                            <li class="ui-padding-5"><b class="ui-s xx-large ui-block">17</b>Seconds</li>
                         </ul>
                     </div>
                     <div class="ui-padding-3 ui-fill-dark-100 ui-stripe-light ui-animate-progress">
@@ -172,7 +172,7 @@
                 </div>
 
                 <div class="ui-card align-c round shadow-lg ui-theme-sub">
-                    <ul class="list-inline ui-list-gap ui-padding-30 ui-padding-15-b ui-icons-lg ui-icons-margin-5-r ui-theme-gray inline-block-1st">
+                    <ul class="list-inline ui-list-gap ui-padding-30 ui-padding-15-b ui-icons-lg ui-icons-margin-5-r ui-theme-gray inline-ui-block-1st">
                         <li>
                             <svg class="ui-icon"><use href="#floor-plan"/></svg>
                             <span class="large">7+1</span>
@@ -226,7 +226,7 @@
                         <form action="#">
                             <div class="ui-col-static ui-no-fluid currency-spinner form-lg">
                                 <div class="ui-col-50">
-                                    <button class="currency-down ui-btn ui-no-padding-h block round-l ui-ease-btn" type="button">
+                                    <button class="currency-down ui-btn ui-no-padding-h ui-block round-l ui-ease-btn" type="button">
                                         <svg class="ui-icon"><use href="#minus"/></svg>
                                     </button>
                                 </div>
@@ -238,13 +238,13 @@
                                     </div>
                                 </div>
                                 <div class="ui-col-50">
-                                    <button class="currency-up ui-btn ui-no-padding-h block round-r ui-ease-btn" type="button">
+                                    <button class="currency-up ui-btn ui-no-padding-h ui-block round-r ui-ease-btn" type="button">
                                         <svg class="ui-icon"><use href="#plus"/></svg>
                                     </button>
                                 </div>
                             </div>
                             <span class="sp-15"></span>
-                            <button class="ui-btn ui-btn-lg block round ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
+                            <button class="ui-btn ui-btn-lg ui-block round ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
                                 <b>MAKE OFFER</b>
                             </button>
                             <span class="sp-5"></span>
@@ -256,49 +256,49 @@
                     <h4>Other Details</h4>
                     <ul class="list-unstyled ui-list-spacer-15 ui-icons-lg ui-icons-margin-5-r">
                         <li>
-                            <span class="ui-color-black-25 block ui-margin-5-b">House Type</span>
+                            <span class="ui-color-black-25 ui-block ui-margin-5-b">House Type</span>
                             <svg class="ui-icon ui-current"><use href="#house"/></svg>
                             <b>Single Family</b>
                         </li>
                         <li>
-                            <span class="ui-color-black-25 block ui-margin-5-b">Build Surface</span>
+                            <span class="ui-color-black-25 ui-block ui-margin-5-b">Build Surface</span>
                             <svg class="ui-icon ui-current"><use href="#house-surface"/></svg>
                             <b>628m<sup>2</sup></b>
                         </li>
                         <li>
-                            <span class="ui-color-black-25 block ui-margin-5-b">Heating/Cooling System</span>
+                            <span class="ui-color-black-25 ui-block ui-margin-5-b">Heating/Cooling System</span>
                             <svg class="ui-icon ui-current"><use href="#house-heat"/></svg>
                             <b>Air Cooling</b>
                         </li>
                         <li>
-                            <span class="ui-color-black-25 block ui-margin-5-b">Bedrooms</span>
+                            <span class="ui-color-black-25 ui-block ui-margin-5-b">Bedrooms</span>
                             <svg class="ui-icon ui-current"><use href="#bed"/></svg>
                             <b>4</b>
                         </li>
                         <li>
-                            <span class="ui-color-black-25 block ui-margin-5-b">Bathrooms/Guest toilets</span>
+                            <span class="ui-color-black-25 ui-block ui-margin-5-b">Bathrooms/Guest toilets</span>
                             <svg class="ui-icon ui-current"><use href="#wc"/></svg>
                             <b>3</b>
                         </li>
                         <li>
-                            <span class="ui-color-black-25 block ui-margin-5-b">Parking</span>
+                            <span class="ui-color-black-25 ui-block ui-margin-5-b">Parking</span>
                             <svg class="ui-icon ui-current"><use href="#garage"/></svg>
                             <b>2 Spaces</b>
                         </li>
                         <li>
-                            <span class="ui-color-black-25 block ui-margin-5-b">Year of Build</span>
+                            <span class="ui-color-black-25 ui-block ui-margin-5-b">Year of Build</span>
                             <svg class="ui-icon ui-current"><use href="#calendar-day"/></svg>
                             <b>2019</b>
                         </li>
                     </ul>
                     <span class="sp-5"></span>
                     <div class="align-l ui-icons-no-opacity form-lg ui-ease-1st-btn">
-                        <a class="ui-btn block ui-btn-multi round-t" href="#">
+                        <a class="ui-btn ui-block ui-btn-multi round-t" href="#">
                             <svg class="ui-icon ui-right"><use href="#images"/></svg>
                             Show All HD Images
                         </a>
                         <span class="sp-1"></span>
-                        <a class="ui-btn block ui-btn-multi round-b" href="#">
+                        <a class="ui-btn ui-block ui-btn-multi round-b" href="#">
                             <svg class="ui-icon ui-right"><use href="#file-pdf"/></svg>
                             Download PDF Brochure
                         </a>

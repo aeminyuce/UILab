@@ -1914,9 +1914,9 @@ html .ui-row {
 .ui-highlight:not(:last-child) {
   margin-bottom: 20px !important;
 }
-.block,
-.block-1st > *:not(.ui-row):not([class*="ui-hidden-"]),
-.block-2nd > * > *:not(.ui-row):not([class*="ui-hidden-"]) {
+.ui-block,
+.ui-block-1st > *:not(.ui-row):not([class*="ui-hidden-"]),
+.ui-block-2nd > * > *:not(.ui-row):not([class*="ui-hidden-"]) {
   width: 100%;
   display: block !important;
 }

@@ -68,11 +68,11 @@
     &:not(:last-child) { margin-bottom: @highlight-space !important; }
 }
 
-.block {
+.ui-block {
     width: 100%; .ui-visible();
 
     &-1st > *,&-2nd > * > * {
-        &:not(.ui-row):not([class*="ui-hidden-"]) { &:extend(.block); }
+        &:not(.ui-row):not([class*="ui-hidden-"]) { &:extend(.ui-block); }
     }
 
 }

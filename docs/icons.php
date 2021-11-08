@@ -11,7 +11,7 @@
             <div class="ui-col-12">
                 <div class="ui-sm-no-padding align-c ui-padding-30-v">
 
-                    <h1>SVG Icons<small class="ui-total ui-margin-5-v block opacity-half"></small></h1>
+                    <h1>SVG Icons<small class="ui-total ui-margin-5-v ui-block opacity-half"></small></h1>
 
                     <div class="ui-row">
                         <div class="ui-col-4">

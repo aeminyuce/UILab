@@ -129,7 +129,7 @@
                                     <span class="sp-30 ui-hidden-md"></span>
                                     <h3 class="font-bold xx-large">Long term investment</h3>
                                     <p class="ui-highlight x-large">Our consider terms that have long term investment program nowZ.</p>
-                                    <a href="#" class="ui-btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                                    <a href="#" class="ui-btn ui-block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
                                         <svg class="ui-icon ui-margin-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -167,7 +167,7 @@
                                     <span class="sp-30"></span>
                                     <h3 class="font-bold xx-large">Connect with Our Farmers</h3>
                                     <p class="ui-highlight x-large">Our consider terms that have long term investment program now.</p>
-                                    <a href="#" class="ui-btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                                    <a href="#" class="ui-btn ui-block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
                                         <svg class="ui-icon ui-margin-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -205,7 +205,7 @@
                                     <span class="sp-30"></span>
                                     <h3 class="font-bold xx-large">Social Impact Investment</h3>
                                     <p class="ui-highlight x-large">Our consider terms that have long term investment program now.</p>
-                                    <a href="#" class="ui-btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                                    <a href="#" class="ui-btn ui-block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
                                         <svg class="ui-icon ui-margin-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -234,7 +234,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Planting</h3>
                         <p class="ui-highlight large ui-color-black-50">Complete range of lands caping services.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -245,7 +245,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Garden Care</h3>
                         <p class="ui-highlight large ui-color-black-50">Resolving environmental problems with best results.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -256,7 +256,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Irrigation System</h3>
                         <p class="ui-highlight large ui-color-black-50">Idea of denouncing pleasure and praising.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -267,7 +267,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Hardscaping</h3>
                         <p class="ui-highlight large ui-color-black-50">Placing int the landscape with great pleasure.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -278,7 +278,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Planting</h3>
                         <p class="ui-highlight large ui-color-black-50">Complete range of lands caping services.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -289,7 +289,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Garden Care</h3>
                         <p class="ui-highlight large ui-color-black-50">Resolving environmental problems with best results.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -300,7 +300,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Irrigation System</h3>
                         <p class="ui-highlight large ui-color-black-50">Idea of denouncing pleasure and praising.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -311,7 +311,7 @@
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Hardscaping</h3>
                         <p class="ui-highlight large ui-color-black-50">Placing int the landscape with great pleasure.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
@@ -367,15 +367,15 @@
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
-                            <span class="ui-padding-15 block">
-                                <span class="xx-large block">Ready to modern agriculture.</span>
-                                <b class="ui-color-black-25 ui-margin-15-b block">Company</b>
+                            <span class="ui-padding-15 ui-block">
+                                <span class="xx-large ui-block">Ready to modern agriculture.</span>
+                                <b class="ui-color-black-25 ui-margin-15-b ui-block">Company</b>
 
                                 <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
-                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 block inline-block-1st">
+                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 30, 2019</b>
 
@@ -391,15 +391,15 @@
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
-                            <span class="ui-padding-15 block">
-                                <span class="xx-large block">Farmers happy now.</span>
-                                <b class="ui-color-black-25 ui-margin-15-b block">Company</b>
+                            <span class="ui-padding-15 ui-block">
+                                <span class="xx-large ui-block">Farmers happy now.</span>
+                                <b class="ui-color-black-25 ui-margin-15-b ui-block">Company</b>
 
                                 <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
-                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 block inline-block-1st">
+                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 21, 2019</b>
 
@@ -415,15 +415,15 @@
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
-                            <span class="ui-padding-15 block">
-                                <span class="xx-large block">New market prospects.</span>
-                                <b class="ui-color-black-25 ui-margin-15-b block">Company</b>
+                            <span class="ui-padding-15 ui-block">
+                                <span class="xx-large ui-block">New market prospects.</span>
+                                <b class="ui-color-black-25 ui-margin-15-b ui-block">Company</b>
 
                                 <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
-                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 block inline-block-1st">
+                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 09, 2019</b>
 
@@ -439,15 +439,15 @@
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
-                            <span class="ui-padding-15 block">
-                                <span class="xx-large block">About product breeding</span>
-                                <b class="ui-color-black-25 ui-margin-15-b block">Company</b>
+                            <span class="ui-padding-15 ui-block">
+                                <span class="xx-large ui-block">About product breeding</span>
+                                <b class="ui-color-black-25 ui-margin-15-b ui-block">Company</b>
 
                                 <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
-                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 block inline-block-1st">
+                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 01, 2019</b>
 
@@ -472,15 +472,15 @@
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
-                            <span class="ui-padding-15 block">
-                                <span class="xx-large block">Farmers happy now.</span>
-                                <b class="ui-color-black-25 ui-margin-15-b block">Social</b>
+                            <span class="ui-padding-15 ui-block">
+                                <span class="xx-large ui-block">Farmers happy now.</span>
+                                <b class="ui-color-black-25 ui-margin-15-b ui-block">Social</b>
 
                                 <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
-                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 block inline-block-1st">
+                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 21, 2019</b>
 
@@ -496,15 +496,15 @@
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
-                            <span class="ui-padding-15 block">
-                                <span class="xx-large block">New market prospects.</span>
-                                <b class="ui-color-black-25 ui-margin-15-b block">Social</b>
+                            <span class="ui-padding-15 ui-block">
+                                <span class="xx-large ui-block">New market prospects.</span>
+                                <b class="ui-color-black-25 ui-margin-15-b ui-block">Social</b>
 
                                 <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
-                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 block inline-block-1st">
+                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 09, 2019</b>
 
@@ -520,15 +520,15 @@
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
-                            <span class="ui-padding-15 block">
-                                <span class="xx-large block">About product breeding</span>
-                                <b class="ui-color-black-25 ui-margin-15-b block">Social</b>
+                            <span class="ui-padding-15 ui-block">
+                                <span class="xx-large ui-block">About product breeding</span>
+                                <b class="ui-color-black-25 ui-margin-15-b ui-block">Social</b>
 
                                 <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
-                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 block inline-block-1st">
+                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 01, 2019</b>
 
@@ -544,15 +544,15 @@
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
-                            <span class="ui-padding-15 block">
-                                <span class="xx-large block">Ready to modern agriculture.</span>
-                                <b class="ui-color-black-25 ui-margin-15-b block">Social</b>
+                            <span class="ui-padding-15 ui-block">
+                                <span class="xx-large ui-block">Ready to modern agriculture.</span>
+                                <b class="ui-color-black-25 ui-margin-15-b ui-block">Social</b>
 
                                 <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
-                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 block inline-block-1st">
+                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 30, 2019</b>
 
@@ -577,15 +577,15 @@
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
-                            <span class="ui-padding-15 block">
-                                <span class="xx-large block">Farmers happy now.</span>
-                                <b class="ui-color-black-25 ui-margin-15-b block">Customers</b>
+                            <span class="ui-padding-15 ui-block">
+                                <span class="xx-large ui-block">Farmers happy now.</span>
+                                <b class="ui-color-black-25 ui-margin-15-b ui-block">Customers</b>
 
                                 <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
-                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 block inline-block-1st">
+                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 21, 2019</b>
 
@@ -601,15 +601,15 @@
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
-                            <span class="ui-padding-15 block">
-                                <span class="xx-large block">Ready to modern agriculture.</span>
-                                <b class="ui-color-black-25 ui-margin-15-b block">Customers</b>
+                            <span class="ui-padding-15 ui-block">
+                                <span class="xx-large ui-block">Ready to modern agriculture.</span>
+                                <b class="ui-color-black-25 ui-margin-15-b ui-block">Customers</b>
 
                                 <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
-                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 block inline-block-1st">
+                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 30, 2019</b>
 
@@ -625,15 +625,15 @@
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
-                            <span class="ui-padding-15 block">
-                                <span class="xx-large block">About product breeding</span>
-                                <b class="ui-color-black-25 ui-margin-15-b block">Customers</b>
+                            <span class="ui-padding-15 ui-block">
+                                <span class="xx-large ui-block">About product breeding</span>
+                                <b class="ui-color-black-25 ui-margin-15-b ui-block">Customers</b>
 
                                 <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
-                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 block inline-block-1st">
+                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 01, 2019</b>
 
@@ -649,15 +649,15 @@
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
-                            <span class="ui-padding-15 block">
-                                <span class="xx-large block">New market prospects.</span>
-                                <b class="ui-color-black-25 ui-margin-15-b block">Customers</b>
+                            <span class="ui-padding-15 ui-block">
+                                <span class="xx-large ui-block">New market prospects.</span>
+                                <b class="ui-color-black-25 ui-margin-15-b ui-block">Customers</b>
 
                                 <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
-                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 block inline-block-1st">
+                            <span class="small ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 09, 2019</b>
 
@@ -693,7 +693,7 @@
 
                 <span class="sp-30 ui-margin-10-v"></span>
 
-                <ul class="ui-photo-gallery block-2nd ui-has-cover ui-ease-photo-gallery">
+                <ul class="ui-photo-gallery ui-block-2nd ui-has-cover ui-ease-photo-gallery">
                     <li>
                         <a class="ui-img ui-has-info ui-show-info" href="img/agriculture/md01.jpg">
                             <img src="img/agriculture/md01.jpg" alt="">
@@ -701,7 +701,7 @@
                                 <span class="scroll-v ui-margin-20 ui-set-absolute ui-set-all">
                                     <svg class="ui-icon ui-icon-xxl ui-left ui-margin-20-r ui-hidden-md ui-current"><use href="#trees"/></svg>
                                     <b>Sed nunc mauris, auctor tristique libero non tristique.</b>
-                                    <span class="ui-color-white-25 ui-margin-15-t block">
+                                    <span class="ui-color-white-25 ui-margin-15-t ui-block">
                                         Nullam mollis molestie magna nec tincidunt. Phasellus mattis aliquet ex, vel gravida dui elementum ut. Ut euismod nisi in tellus luctus dictum et ut nulla. Sed scelerisque rutrum dui, et suscipit diam sagittis quis. Quisque dapibus varius ornare.
                                     </span>
                                 </span>

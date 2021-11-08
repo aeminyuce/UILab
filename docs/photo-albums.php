@@ -3,12 +3,12 @@
         <div class="ui-row">
             <div class="ui-col-static ui-sm-fluid ui-padding-30-v">
                 <div class="ui-col-250 ui-padding-30 ui-order-sm-last sm-align-c ui-theme-sub">
-                    <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid align-l block circle ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid align-l ui-block circle ui-fill-dark-100 ui-ease-btn">
                         Create New
                         <svg class="ui-icon ui-right"><use href="#plus"/></svg>
                     </a>
                     <span class="sp-30"></span>
-                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd large ui-list-spacer-30 ui-padding-10 ui-ease-2nd-layout">
+                    <ul class="list-unstyled hover-r-more-2nd inline-ui-block-2nd large ui-list-spacer-30 ui-padding-10 ui-ease-2nd-layout">
                         <li><a class="ui-current" href="#">Summer Holiday</a></li>
                         <li><a href="#">Autumn Comes</a></li>
                         <li><a href="#">Travelling</a></li>
@@ -17,7 +17,7 @@
                         <li><a href="#">Hobbies</a></li>
                     </ul>
                     <span class="sp-30"></span>
-                    <ul class="list-unstyled hover-r-more-2nd inline-block-2nd ui-list-spacer-15 large ui-color-black-50 adding-10 ui-icons-sm ui-icons-margin-10-r ui-ease-2nd-layout">
+                    <ul class="list-unstyled hover-r-more-2nd inline-ui-block-2nd ui-list-spacer-15 large ui-color-black-50 adding-10 ui-icons-sm ui-icons-margin-10-r ui-ease-2nd-layout">
                         <li>
                             <a href="#">
                                 <svg class="ui-icon"><use href="#marker"/></svg>
@@ -52,7 +52,7 @@
                                 </div>
                             </div>
 
-                            <ul class="ui-photo-gallery ui-has-cover block-2nd ui-ease-photo-gallery ui-theme-sub">
+                            <ul class="ui-photo-gallery ui-has-cover ui-block-2nd ui-ease-photo-gallery ui-theme-sub">
                                 <li>
                                     <a class="ui-img ui-has-info" href="img/image_03.jpg">
                                         <img src="img/image_03.jpg" alt="">
@@ -148,7 +148,7 @@
                                 </div>
                             </div>
 
-                            <ul class="ui-photo-gallery ui-has-cover block-2nd ui-ease-photo-gallery ui-theme-sub">
+                            <ul class="ui-photo-gallery ui-has-cover ui-block-2nd ui-ease-photo-gallery ui-theme-sub">
                                 <li>
                                     <a class="ui-img ui-has-info" href="img/image_06.jpg">
                                         <img src="img/image_06.jpg" alt="">

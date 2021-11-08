@@ -4,7 +4,7 @@
             <div class="ui-col-12 ui-padding-30">
 
                 <h3>Button Styles</h3>
-                <div class="ui-row ui-padding-30-b block-2nd form-lg ui-ease-2nd-btn">
+                <div class="ui-row ui-padding-30-b ui-block-2nd form-lg ui-ease-2nd-btn">
                     <div class="ui-col-3 ui-col-sm-6">
                         <a class="ui-btn" href="#">Button</a>
                     </div>
@@ -44,7 +44,7 @@
                 </div>
 
                 <h3>Button Themes</h3>
-                <div class="ui-row ui-padding-30-b block-2nd form-lg ui-ease-2nd-btn">
+                <div class="ui-row ui-padding-30-b ui-block-2nd form-lg ui-ease-2nd-btn">
                     <div class="ui-col-3 ui-col-sm-6">
                         <a class="ui-btn ui-theme-red ui-fill-dark-100" href="#">Button</a>
                     </div>
@@ -84,7 +84,7 @@
                 </div>
 
                 <h3>Button Sizes</h3>
-                <div class="ui-row ui-xs-fluid align-l ui-padding-30-b ui-icons-margin-5-l block-2nd ui-ease-2nd-btn">
+                <div class="ui-row ui-xs-fluid align-l ui-padding-30-b ui-icons-margin-5-l ui-block-2nd ui-ease-2nd-btn">
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-lg circle ui-border" href="#">
                             Large Button <svg class="ui-icon ui-right"><use href="#settings"/></svg>
@@ -248,12 +248,12 @@
                         <a class="ui-btn ui-btn-xs-fluid round ui-theme-yellow ui-fill-dark-100" href="#">Responsive Button</a>
                     </div>
                     <div class="ui-col-6">
-                        <a class="ui-btn block round ui-theme-orange ui-fill-dark-100" href="#">Block Level Button</a>
+                        <a class="ui-btn ui-block round ui-theme-orange ui-fill-dark-100" href="#">Block Level Button</a>
                     </div>
                 </div>
 
                 <h3>Active &amp; Passive Buttons</h3>
-                <div class="ui-row ui-padding-30-b block-2nd ui-ease-2nd-btn">
+                <div class="ui-row ui-padding-30-b ui-block-2nd ui-ease-2nd-btn">
                     <div class="ui-col-3 ui-col-sm-6">
                         <a class="ui-btn ui-btn-active circle" href="#">Active Link</a>
                     </div>
@@ -281,7 +281,7 @@
                 </div>
 
                 <h3>Multi Buttons</h3>
-                <div class="ui-row ui-padding-30-b block-2nd ui-theme-green ui-ease-2nd-btn">
+                <div class="ui-row ui-padding-30-b ui-block-2nd ui-theme-green ui-ease-2nd-btn">
                     <div class="ui-col-3 ui-col-sm-6">
                         <a href="#" class="ui-btn ui-btn-lg ui-btn-multi round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
                     </div>
@@ -297,7 +297,7 @@
                 </div>
 
                 <h5 class="font-bold">Multi Buttons with Condensed Text</h5>
-                <div class="ui-row ui-padding-30-b block-2nd ui-theme-base ui-ease-2nd-btn">
+                <div class="ui-row ui-padding-30-b ui-block-2nd ui-theme-base ui-ease-2nd-btn">
                     <div class="ui-col-3 ui-col-sm-6">
                         <a href="#" class="ui-btn ui-btn-lg ui-btn-multi font-condensed round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
                     </div>

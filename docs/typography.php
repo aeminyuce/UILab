@@ -436,7 +436,7 @@
                     To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
                 </div>
 
-                <h3>Basic Block Code</h3>
+                <h3>Basic ui-block Code</h3>
                 <div class="ui-padding-30-b">
                     <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
                 </div>

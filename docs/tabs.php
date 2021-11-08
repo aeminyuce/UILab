@@ -381,7 +381,7 @@
                 <h3>Accordion ui-tabs</h3>
                 <div class="ui-tabs ui-padding-30-b form-lg ui-theme-sub ui-ease-tabs" data-ui-classes="ui-fill-dark-100">
 
-                    <button class="ui-tab ui-tab-toggle ui-btn block align-l ui-margin-1-b round ui-ease-btn">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-block align-l ui-margin-1-b round ui-ease-btn">
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
@@ -391,7 +391,7 @@
                         </div>
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn block align-l ui-margin-1-b round ui-ease-btn">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-block align-l ui-margin-1-b round ui-ease-btn">
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
@@ -403,7 +403,7 @@
                         </div>
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn block align-l ui-margin-1-b round ui-ease-btn">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-block align-l ui-margin-1-b round ui-ease-btn">
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
@@ -420,14 +420,14 @@
                 <h3>Inner Accordion ui-tabs</h3>
                 <div class="ui-tabs ui-padding-30-b form-lg ui-theme-sub ui-ease-tabs" data-ui-classes="ui-fill-dark-100">
 
-                    <button class="ui-tab ui-tab-toggle ui-btn block align-l ui-margin-1-b ui-ease-btn">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-block align-l ui-margin-1-b ui-ease-btn">
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
                     <div class="ui-tab-content">
 
                         <div class="ui-tabs ui-icons-xs" data-ui-classes="ui-current">
-                            <button class="ui-tab ui-tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
+                            <button class="ui-tab ui-tab-toggle ui-btn-ghost ui-btn align-l ui-block ui-ease-btn">
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -437,7 +437,7 @@
                                 </div>
                             </div>
 
-                            <button class="ui-tab ui-tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
+                            <button class="ui-tab ui-tab-toggle ui-btn-ghost ui-btn align-l ui-block ui-ease-btn">
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -450,14 +450,14 @@
 
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn block align-l ui-margin-1-b ui-ease-btn">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-block align-l ui-margin-1-b ui-ease-btn">
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
                     <div class="ui-tab-content">
 
                         <div class="ui-tabs ui-icons-xs" data-ui-classes="ui-current">
-                            <button class="ui-tab ui-tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
+                            <button class="ui-tab ui-tab-toggle ui-btn-ghost ui-btn align-l ui-block ui-ease-btn">
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -467,7 +467,7 @@
                                 </div>
                             </div>
 
-                            <button class="ui-tab ui-tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
+                            <button class="ui-tab ui-tab-toggle ui-btn-ghost ui-btn align-l ui-block ui-ease-btn">
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -480,14 +480,14 @@
 
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn block align-l ui-margin-1-b ui-ease-btn">
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-block align-l ui-margin-1-b ui-ease-btn">
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Tab Button
                     </button>
                     <div class="ui-tab-content">
 
                         <div class="ui-tabs ui-icons-xs" data-ui-classes="ui-current">
-                            <button class="ui-tab ui-tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
+                            <button class="ui-tab ui-tab-toggle ui-btn-ghost ui-btn align-l ui-block ui-ease-btn">
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -497,7 +497,7 @@
                                 </div>
                             </div>
 
-                            <button class="ui-tab ui-tab-toggle ui-btn-ghost ui-btn align-l block ui-ease-btn">
+                            <button class="ui-tab ui-tab-toggle ui-btn-ghost ui-btn align-l ui-block ui-ease-btn">
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#arrow-down"/></svg>
                                 Inner Tab Button
                             </button>
@@ -518,28 +518,28 @@
                     <div class="ui-color-black-25 ui-margin-30-b align-c ui-icons-xxl xs-align-l ui-theme-sub">
                         <button class="ui-tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn ui-current ui-icons-default ui-active">
                             <svg class="ui-icon ui-hidden-md"><use href="#user-check"/></svg>
-                            <span class="block ui-margin-10-t ui-md-no-margin">1. User Details</span>
+                            <span class="ui-block ui-margin-10-t ui-md-no-margin">1. User Details</span>
                         </button>
 
                         <svg class="ui-icon ui-margin-15-h ui-color-black-50 ui-hidden-md"><use href="#long-arrow-right"/></svg>
 
                         <button class="ui-tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn">
                             <svg class="ui-icon ui-hidden-md"><use href="#map"/></svg>
-                            <span class="block ui-margin-10-t ui-md-no-margin">2. Address Details</span>
+                            <span class="ui-block ui-margin-10-t ui-md-no-margin">2. Address Details</span>
                         </button>
 
                         <svg class="ui-icon ui-margin-15-h ui-color-black-50 ui-hidden-md"><use href="#long-arrow-right"/></svg>
 
                         <button class="ui-tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn">
                             <svg class="ui-icon ui-hidden-md"><use href="#credit-card"/></svg>
-                            <span class="block ui-margin-10-t ui-md-no-margin">3. Payment Details</span>
+                            <span class="ui-block ui-margin-10-t ui-md-no-margin">3. Payment Details</span>
                         </button>
 
                         <svg class="ui-icon ui-margin-15-h ui-color-black-50 ui-hidden-md"><use href="#long-arrow-right"/></svg>
 
                         <button class="ui-tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn">
                             <svg class="ui-icon ui-hidden-md"><use href="#truck-fill"/></svg>
-                            <span class="block ui-margin-10-t ui-md-no-margin">4. Shipping</span>
+                            <span class="ui-block ui-margin-10-t ui-md-no-margin">4. Shipping</span>
                         </button>
                     </div>
 

@@ -156,7 +156,7 @@
 
                 <div class="align-l sm-align-c ui-add-mobile-menu-r">
                     <h3 class="ui-margin-15">Components</h3>
-                    <ul class="list-unstyled block-2nd ui-ease-2nd-button">
+                    <ul class="list-unstyled ui-block-2nd ui-ease-2nd-button">
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=alerts">Alerts</a></li>
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=breadcrumbs">Breadcrumbs</a></li>
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=buttons">Buttons</a></li>
@@ -191,7 +191,7 @@
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=weather">Weather</a></li>
                     </ul>
                     <h3 class="ui-margin-15">Javascript</h3>
-                    <ul class="list-unstyled block-2nd ui-ease-2nd-button">
+                    <ul class="list-unstyled ui-block-2nd ui-ease-2nd-button">
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=ui">UI JS</a></li>
                     </ul>
                 </div>

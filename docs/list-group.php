@@ -343,31 +343,31 @@
                 <div class="ui-list-group ui-border round">
                     <ul class="ui-ease-list-group ui-icons-margin-5-r">
                         <li>
-                            <span class="x-large block">11 November, Event Name Here</span>
+                            <span class="x-large ui-block">11 November, Event Name Here</span>
                             <b>İstanbul: </b>
                             <a class="ui-list-link underline" href="#">
                                 Show Directions
                                 <svg class="ui-icon ui-icon-xs ui-margin-3-l"><use href="#long-arrow-right"></use></svg>
                             </a>
-                            <i class="ui-color-black-50 block">Event Number: 001</i>
+                            <i class="ui-color-black-50 ui-block">Event Number: 001</i>
                         </li>
                         <li>
-                            <span class="x-large block">11 November, Event Name Here</span>
+                            <span class="x-large ui-block">11 November, Event Name Here</span>
                             <b>Ankara: </b>
                             <a class="ui-list-link underline" href="#">
                                 Show Directions
                                 <svg class="ui-icon ui-icon-xs ui-margin-3-l"><use href="#long-arrow-right"></use></svg>
                             </a>
-                            <i class="ui-color-black-50 block">Event Number: 002</i>
+                            <i class="ui-color-black-50 ui-block">Event Number: 002</i>
                         </li>
                         <li>
-                            <span class="x-large block">11 November, Event Name Here</span>
+                            <span class="x-large ui-block">11 November, Event Name Here</span>
                             <b>Antalya: </b>
                             <a class="ui-list-link underline" href="#">
                                 Show Directions
                                 <svg class="ui-icon ui-icon-xs ui-margin-3-l"><use href="#long-arrow-right"></use></svg>
                             </a>
-                            <i class="ui-color-black-50 block">Event Number: 003</i>
+                            <i class="ui-color-black-50 ui-block">Event Number: 003</i>
                         </li>
                     </ul>
                 </div>
@@ -382,7 +382,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <img class="ui-img-photo-xs circle" src="img/profile-image.jpg" alt="">
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -391,7 +391,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo-xs circle"><svg class="ui-icon"><use href="#user"/></svg></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -400,7 +400,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo-xs circle ui-theme-orange ui-fill-dark-100"><svg class="ui-icon"><use href="#user"/></svg></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -409,7 +409,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo-xs circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -418,7 +418,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo-xs circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -434,7 +434,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <img class="ui-img-photo-sm circle" src="img/profile-image.jpg" alt="">
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -443,7 +443,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo-sm circle"><svg class="ui-icon"><use href="#user"/></svg></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -452,7 +452,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo-sm circle ui-theme-orange ui-fill-dark-100"><svg class="ui-icon"><use href="#user"/></svg></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -461,7 +461,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo-sm circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -470,7 +470,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo-sm circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -486,7 +486,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <img class="ui-img-photo circle" src="img/profile-image.jpg" alt="">
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -495,7 +495,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo circle"><svg class="ui-icon"><use href="#user"/></svg></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -504,7 +504,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo circle ui-theme-orange ui-fill-dark-100"><svg class="ui-icon"><use href="#user"/></svg></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -513,7 +513,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -522,7 +522,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -538,7 +538,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <img class="ui-img-photo-lg circle" src="img/profile-image.jpg" alt="">
-                                <b class="xx-large block">Title</b>
+                                <b class="xx-large ui-block">Title</b>
                                 <span class="ui-color-black-25 large">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -547,7 +547,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo-lg circle"><svg class="ui-icon"><use href="#user"/></svg></span>
-                                <b class="xx-large block">Title</b>
+                                <b class="xx-large ui-block">Title</b>
                                 <span class="ui-color-black-25 large">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -556,7 +556,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo-lg circle ui-theme-orange ui-fill-dark-100"><svg class="ui-icon"><use href="#user"/></svg></span>
-                                <b class="xx-large block">Title</b>
+                                <b class="xx-large ui-block">Title</b>
                                 <span class="ui-color-black-25 large">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -565,7 +565,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo-lg circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
-                                <b class="xx-large block">Title</b>
+                                <b class="xx-large ui-block">Title</b>
                                 <span class="ui-color-black-25 large">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -574,7 +574,7 @@
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo-lg circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>
-                                <b class="xx-large block">Title</b>
+                                <b class="xx-large ui-block">Title</b>
                                 <span class="ui-color-black-25 large">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -590,7 +590,7 @@
                             <a href="#" class="ui-theme-red ui-fill-light-100">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <img class="ui-img-photo circle" src="img/profile-image.jpg" alt="">
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -599,7 +599,7 @@
                             <a href="#" class="ui-theme-orange ui-fill-light-100">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo circle ui-fill-dark-100"><svg class="ui-icon"><use href="#user"/></svg></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -608,7 +608,7 @@
                             <a href="#" class="ui-theme-yellow ui-fill-light-100">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo circle ui-fill-dark-100"><span>HY</span></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -617,7 +617,7 @@
                             <a href="#" class="ui-theme-sub ui-fill-light-100">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo circle ui-fill-dark-100"><span>EKY</span></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -635,7 +635,7 @@
                             <a href="#" class="ui-fill-light-100">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <img class="ui-img-photo circle" src="img/profile-image.jpg" alt="">
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -644,7 +644,7 @@
                             <a href="#" class="ui-fill-light-100">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo circle ui-fill-dark-100"><svg class="ui-icon"><use href="#user"/></svg></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -653,7 +653,7 @@
                             <a href="#" class="ui-fill-light-100">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo circle ui-fill-dark-100"><span>HY</span></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -662,7 +662,7 @@
                             <a href="#" class="ui-fill-light-100">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo circle ui-fill-dark-100"><span>EKY</span></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -678,7 +678,7 @@
                             <a href="#" class="ui-fill-light-100">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <img class="ui-img-photo circle" src="img/profile-image.jpg" alt="">
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -687,7 +687,7 @@
                             <a href="#" class="ui-fill-light-100">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo circle ui-fill-dark-100"><svg class="ui-icon"><use href="#user"/></svg></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -696,7 +696,7 @@
                             <a href="#" class="ui-fill-light-100">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo circle ui-fill-dark-100"><span>HY</span></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>
@@ -705,7 +705,7 @@
                             <a href="#" class="ui-fill-light-100">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
                                 <span class="ui-img-photo circle ui-fill-dark-100"><span>EKY</span></span>
-                                <b class="large block">Title</b>
+                                <b class="large ui-block">Title</b>
                                 <span class="ui-color-black-25">Sub text here</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </a>

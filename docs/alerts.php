@@ -38,7 +38,7 @@
             </div>
             <div class="ui-col-12 ui-padding-30-b">
 
-                <b class="ui-margin-5-b block">Examples:</b>
+                <b class="ui-margin-5-b ui-block">Examples:</b>
                 <pre class="round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text'<br>});</pre>
                 <button class="ui-btn ui-btn-sm round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog text'});">Run Code</button>
 
@@ -63,7 +63,7 @@
 
                 <span class="sp-30"></span>
 
-                <b class="ui-margin-5-b block">Submit form example:</b>
+                <b class="ui-margin-5-b ui-block">Submit form example:</b>
                 <pre class="round ui-margin-5-b">return ui.alerts.dialog({<br>    msg: 'Submit this form?',<br>    success: 'Yes',<br>    error: 'No',<br>    callback: function (value) {<br>        if (value === 'success') {<br>            document.getElementById('submitForm').submit();<br>        }<br>    }<br>});</pre>
                 <form id="submitForm" action="#succesful" onsubmit="return ui.alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
                     <button type="submit" class="ui-btn round ui-theme-sub ui-fill-dark-100 ui-ease-btn">Submit Form</button>
@@ -94,7 +94,7 @@
 
             </div>
             <div class="ui-col-12">
-                <b class="no-margin block">Show Positions:</b>
+                <b class="no-margin ui-block">Show Positions:</b>
             </div>
             <div class="ui-col-6">
 
@@ -120,7 +120,7 @@
             </div>
             <div class="ui-col-12">
 
-                <b class="ui-margin-5-b block">Show Default:</b>
+                <b class="ui-margin-5-b ui-block">Show Default:</b>
                 <div class="ui-color-white align-c ui-col-250 ui-padding-10 round shadow-lg" style="background: hsl(220, 14%, 21%);">
                     Default message
                 </div>
@@ -131,7 +131,7 @@
 
                 <span class="sp-30"></span>
 
-                <b class="ui-margin-5-b block">Show Success:</b>
+                <b class="ui-margin-5-b ui-block">Show Success:</b>
                 <div class="align-c ui-col-250 ui-padding-10 round shadow-lg ui-theme-green ui-fill-dark-100">
                     Success message
                 </div>
@@ -142,7 +142,7 @@
 
                 <span class="sp-30"></span>
 
-                <b class="ui-margin-5-b block">Show Warning:</b>
+                <b class="ui-margin-5-b ui-block">Show Warning:</b>
                 <div class="align-c ui-col-250 ui-padding-10 round shadow-lg ui-theme-yellow ui-fill-dark-100">
                     Warning message
                 </div>
@@ -153,7 +153,7 @@
 
                 <span class="sp-30"></span>
 
-                <b class="ui-margin-5-b block">Show Danger:</b>
+                <b class="ui-margin-5-b ui-block">Show Danger:</b>
                 <div class="align-c ui-col-250 ui-padding-10 round shadow-lg ui-theme-red ui-fill-dark-100">
                     Danger message
                 </div>
