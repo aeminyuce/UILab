@@ -47,31 +47,31 @@
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-red">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-circle bg-white invert-bg"></i>
+                                    <i class="state ui-circle ui-bg-white invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-pink">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-circle bg-white invert-bg"></i>
+                                    <i class="state ui-circle ui-bg-white invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-blue">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-circle bg-white invert-bg"></i>
+                                    <i class="state ui-circle ui-bg-white invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-orange">
                                     <input type="checkbox">
-                                    <i class="state ui-circle bg-white invert-bg"></i>
+                                    <i class="state ui-circle ui-bg-white invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-yellow">
                                     <input type="checkbox">
-                                    <i class="state ui-circle bg-white invert-bg"></i>
+                                    <i class="state ui-circle ui-bg-white invert-bg"></i>
                                 </span>
                             </label>
 
@@ -80,13 +80,13 @@
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-black">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-circle bg-white invert-bg"></i>
+                                    <i class="state ui-circle ui-bg-white invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-white">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-circle bg-white invert-bg"></i>
+                                    <i class="state ui-circle ui-bg-white invert-bg"></i>
                                 </span>
                             </label>
                         </div>

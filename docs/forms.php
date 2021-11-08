@@ -503,13 +503,13 @@
                             </span>
                         </div>
                         <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
-                            <input class="bg-white ui-cursor-pointer" type="file">
+                            <input class="ui-bg-white ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-theme-base ui-fill-dark-100 ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
                         <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
-                            <input class="bg-white ui-cursor-pointer" type="file">
+                            <input class="ui-bg-white ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
@@ -538,13 +538,13 @@
                             </span>
                         </div>
                         <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
-                            <input class="bg-white ui-cursor-pointer" type="file">
+                            <input class="ui-bg-white ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-theme-base ui-fill-dark-100 ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
                         <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
-                            <input class="bg-white ui-cursor-pointer" type="file">
+                            <input class="ui-bg-white ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>

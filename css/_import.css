@@ -2148,10 +2148,10 @@ html .ui-row {
 .ui-align-c * {
   text-align: center !important;
 }
-.bg-white:not([class*="ui-fill-"]) {
+.ui-bg-white:not([class*="ui-fill-"]) {
   background-color: hsl(0, 0%, 100%) !important;
 }
-.bg-black:not([class*="ui-fill-"]) {
+.ui-bg-black:not([class*="ui-fill-"]) {
   background-color: hsl(0, 0%, 0%) !important;
 }
 @media print {
