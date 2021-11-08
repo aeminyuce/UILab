@@ -206,7 +206,7 @@
                         <div class="card ui-highlight align-c ui-padding-30 ui-xs-no-padding ui-round ui-theme-base">
                             <h1 class="font-light">UI lab is a modular design system.</h2>
                             <h4 class="font-bold">For developing web interfaces fastly!</h4>
-                            <span class="sp-15"></span>
+                            <span class="ui-sp-15"></span>
                             <div class="form-lg ui-ease-1st-btn">
                                 <a href="?p=icons" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-margin-5-h ui-xs-no-margin-h ui-circle ui-fill-dark-300">
                                     <svg class="ui-icon ui-margin-5-r"><use href="#draw"/></svg>
@@ -219,7 +219,7 @@
                             </div>
                         </div>
 
-                        <span class="sp-30"></span>
+                        <span class="ui-sp-30"></span>
 
                         <div class="ui-row ui-row-gap-lg align-c ui-hover-shadow-2nd ui-hover-t-2nd">
                             <div class="ui-col-4 ui-col-md-6">

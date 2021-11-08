@@ -47,7 +47,7 @@
                         </li>
                     </ul>
 
-                    <span class="sp-30"></span>
+                    <span class="ui-sp-30"></span>
 
                     <h5 class="ui-color-white-50 ui-padding-15 ui-margin-5-b">NEWS &amp; EVENTS</h5>
                     <ul class="ui-list-unstyled ui-list-spacer-15 ui-color-white-50 large ui-block-2nd ui-ease-2nd-btn">
@@ -134,7 +134,7 @@
                                 </div>
                                 <div class="ui-row">
                                     <div class="ui-col-12 ui-col-lg-8 ui-padding-30-l ui-no-padding-v ui-md-no-padding">
-                                        <span class="sp-15 ui-visible-md"></span>
+                                        <span class="ui-sp-15 ui-visible-md"></span>
                                         <h2 class="font-bold">Related Video</h2>
                                         <b class="large">Captain Marvel (2019)</b>
                                         <p class="ui-margin-10-v font-readable">After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.</p>
@@ -301,7 +301,7 @@
                     </div>
                 </div>
 
-                <span class="sp-15"></span>
+                <span class="ui-sp-15"></span>
 
                 <div class="ui-padding-15">
                     <h2 class="font-bold ui-padding-15-h ui-md-no-padding">Categories</h2>
@@ -393,7 +393,7 @@
                     </div>
                 </div>
 
-                <span class="sp-30"></span>
+                <span class="ui-sp-30"></span>
 
             </div>
         </div>

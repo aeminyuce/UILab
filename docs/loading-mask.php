@@ -21,7 +21,7 @@
                     <pre class="ui-round ui-margin-10-t ui-margin-5-b">ui.loadingMask.toggle('#loadingBtn');</pre>
                     <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.loadingMask.toggle('#loadingBtn');">Run Code</button>
 
-                    <span class="sp-30"></span>
+                    <span class="ui-sp-30"></span>
 
                     <div class="form-lg ui-ease-1st-btn">
                         <a href="#" class="loadingBtn ui-btn ui-btn-xs-fluid ui-padding-25-h ui-round ui-theme-sub ui-fill-dark-100">Link</a>
@@ -44,7 +44,7 @@
                     <pre class="ui-round ui-margin-10-t ui-margin-5-b">ui.loadingMask.toggle('.loadingText1');</pre>
                     <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.loadingMask.toggle('.loadingText1');">Run Code</button>
 
-                    <span class="sp-30"></span>
+                    <span class="ui-sp-30"></span>
 
                     <div class="form-lg">
                         <div class="loadingText2 text text-icon-l ui-margin-10-b ui-round ui-border-dual form-inline ui-ease-form">
@@ -55,7 +55,7 @@
                     <pre class="ui-round ui-margin-10-t ui-margin-5-b">ui.loadingMask.toggle('.loadingText2');</pre>
                     <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.loadingMask.toggle('.loadingText2');">Run Code</button>
 
-                    <span class="sp-30"></span>
+                    <span class="ui-sp-30"></span>
 
                     <div class="form-lg">
                         <div class="loadingSelect select ui-round ui-border-dual form-inline ui-ease-form">
@@ -71,7 +71,7 @@
                     <pre class="ui-round ui-margin-10-t ui-margin-5-b">ui.loadingMask.toggle('.loadingSelect');</pre>
                     <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.loadingMask.toggle('.loadingSelect');">Run Code</button>
 
-                    <span class="sp-30"></span>
+                    <span class="ui-sp-30"></span>
 
                     <div class="loadingTextarea textarea ui-round ui-border-dual ui-ease-form">
                         <textarea rows="4" placeholder="Placeholder Text"></textarea>

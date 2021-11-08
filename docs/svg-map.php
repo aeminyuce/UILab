@@ -333,7 +333,7 @@
                     </svg>
                 </div>
 
-                <span class="sp-30 ui-margin-30-v"></span>
+                <span class="ui-sp-30 ui-margin-30-v"></span>
 
                 <h3 class="align-c">SVG Map Example 2</h3>
                 <div class="ui-svg-map">

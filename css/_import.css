@@ -2095,39 +2095,39 @@ html .ui-row {
   vertical-align: middle;
   display: inline-block;
 }
-[class*="sp-"] {
+[class*="ui-sp-"] {
   width: 100%;
   display: block !important;
   clear: both !important;
 }
-.sp-1 {
+.ui-sp-1 {
   height: 1px;
 }
-.sp-2 {
+.ui-sp-2 {
   height: 2px;
 }
-.sp-3 {
+.ui-sp-3 {
   height: 3px;
 }
-.sp-4 {
+.ui-sp-4 {
   height: 4px;
 }
-.sp-5 {
+.ui-sp-5 {
   height: 5px;
 }
-.sp-10 {
+.ui-sp-10 {
   height: 10px;
 }
-.sp-15 {
+.ui-sp-15 {
   height: 15px;
 }
-.sp-20 {
+.ui-sp-20 {
   height: 20px;
 }
-.sp-25 {
+.ui-sp-25 {
   height: 25px;
 }
-.sp-30 {
+.ui-sp-30 {
   height: 30px;
 }
 .align-justify {

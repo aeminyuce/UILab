@@ -330,7 +330,7 @@
                                 </div>
                             </div>
 
-                            <span class="sp-30"></span>
+                            <span class="ui-sp-30"></span>
 
                             <div class="dual-multi-select ui-col-static">
                                 <div class="ui-row">
@@ -368,7 +368,7 @@
                                 </div>
                             </div>
 
-                            <span class="sp-30"></span>
+                            <span class="ui-sp-30"></span>
 
                             <div class="dual-multi-select ui-col-static">
                                 <div class="ui-row">
@@ -437,7 +437,7 @@
                         <i>Choose file.</i>
                     </div>
 
-                    <span class="sp-10"></span>
+                    <span class="ui-sp-10"></span>
 
                     <div class="file ui-round ui-ease-form">
                         <input type="file">
@@ -445,7 +445,7 @@
                         <i>Choose file.</i>
                     </div>
 
-                    <span class="sp-10"></span>
+                    <span class="ui-sp-10"></span>
 
                     <div class="file ui-round ui-border-dual ui-ease-form">
                         <input type="file">
@@ -453,7 +453,7 @@
                         <i>Choose file.</i>
                     </div>
 
-                    <span class="sp-10"></span>
+                    <span class="ui-sp-10"></span>
 
                     <label class="form-label ui-padding-10-b">File Input with Large Forms</label>
                     <div class="form-lg ui-ease-1st-form">
@@ -463,7 +463,7 @@
                             <i>Choose file.</i>
                         </div>
 
-                        <span class="sp-10"></span>
+                        <span class="ui-sp-10"></span>
 
                         <div class="file ui-round">
                             <input type="file">
@@ -471,7 +471,7 @@
                             <i>Choose file.</i>
                         </div>
 
-                        <span class="sp-10"></span>
+                        <span class="ui-sp-10"></span>
 
                         <div class="file ui-round ui-border-dual">
                             <input type="file">
@@ -480,7 +480,7 @@
                         </div>
                     </div>
 
-                    <span class="sp-10"></span>
+                    <span class="ui-sp-10"></span>
 
                     <label class="form-label ui-padding-10-b">File Input Like Buttons</label>
                     <div>
@@ -516,7 +516,7 @@
                         </div>
                     </div>
 
-                    <span class="sp-10"></span>
+                    <span class="ui-sp-10"></span>
 
                     <div class="form-lg">
                         <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
@@ -567,7 +567,7 @@
                         </li>
                     </ul>
 
-                    <span class="sp-5"></span>
+                    <span class="ui-sp-5"></span>
                     <ul class="ui-list-inline ui-list-gap">
                         <li>
                             <label class="radio">
@@ -586,7 +586,7 @@
                         </li>
                     </ul>
 
-                    <span class="sp-15"></span>
+                    <span class="ui-sp-15"></span>
 
                     <ul class="ui-list-inline ui-list-gap">
                         <li>
@@ -639,7 +639,7 @@
                         </li>
                     </ul>
 
-                    <span class="sp-15"></span>
+                    <span class="ui-sp-15"></span>
 
                     <ul class="ui-list-inline ui-list-gap">
                         <li>
@@ -671,7 +671,7 @@
                         </li>
                     </ul>
 
-                    <span class="sp-15"></span>
+                    <span class="ui-sp-15"></span>
 
                     <div class="text ui-round ui-border-dual ui-ease-form form-inline">
                         <input type="text" value="Inline form">
@@ -703,17 +703,17 @@
                 <h3>Range Forms</h3>
                 <div class="ui-padding-30-b">
                     <input class="range ui-ease-range" type="range" min="0" max="10" value="0">
-                    <span class="sp-10"></span>
+                    <span class="ui-sp-10"></span>
                     <input class="range ui-theme-base ui-current ui-ease-range" type="range" min="0" max="10" value="2">
-                    <span class="sp-10"></span>
+                    <span class="ui-sp-10"></span>
                     <input class="range ui-theme-sub ui-current ui-ease-range" type="range" min="0" max="10" value="4">
-                    <span class="sp-10"></span>
+                    <span class="ui-sp-10"></span>
                     <input class="range ui-theme-yellow ui-current ui-ease-range" type="range" min="0" max="10" value="6">
-                    <span class="sp-10"></span>
+                    <span class="ui-sp-10"></span>
                     <input class="range ui-theme-orange ui-current ui-ease-range" type="range" min="0" max="10" value="8">
-                    <span class="sp-10"></span>
+                    <span class="ui-sp-10"></span>
                     <input class="range ui-theme-red ui-current ui-ease-range" type="range" min="0" max="10" value="10">
-                    <span class="sp-10"></span>
+                    <span class="ui-sp-10"></span>
                     <input class="range ui-ease-range" disabled type="range" min="0" max="10" value="5">
                 </div>
 
@@ -734,7 +734,7 @@
                         <textarea placeholder="Textarea"></textarea>
                     </div>
 
-                    <span class="sp-15"></span>
+                    <span class="ui-sp-15"></span>
 
                     <h5 class="ui-color-black-25">Responsive Inline Forms</h5>
                     <div class="text ui-margin-10-b ui-round ui-border-dual form-inline-xs ui-ease-form">
@@ -769,7 +769,7 @@
                         <input type="text" placeholder="Both icon">
                     </div>
 
-                    <span class="sp-30"></span>
+                    <span class="ui-sp-30"></span>
 
                     <label class="form-label ui-padding-10-b">Form Icons with Large Forms</label>
                     <div class="form-lg">
@@ -882,7 +882,7 @@
                 <div class="ui-row ui-padding-30-b">
                     <div class="ui-col-12">
                         <label class="form-label">Form Holder with Grid System</label>
-                        <span class="sp-10"></span>
+                        <span class="ui-sp-10"></span>
                         <div class="form-holder ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
@@ -1700,7 +1700,7 @@
                         <input type="text" placeholder="Warning Form">
                     </div>
 
-                    <span class="sp-30"></span>
+                    <span class="ui-sp-30"></span>
 
                     <div class="text form-disabled form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <input type="text" disabled value="Disabled Input">
@@ -1716,7 +1716,7 @@
                         <textarea readonly>Readonly Textarea</textarea>
                     </div>
 
-                    <span class="sp-30"></span>
+                    <span class="ui-sp-30"></span>
 
                     <label class="form-label">Multi Select Example</label>
                     <div class="select-multi form-light ui-round ui-border-dual ui-ease-form">
@@ -1733,7 +1733,7 @@
                             <option>Value 10</option>
                         </select>
                     </div>
-                    <span class="sp-30"></span>
+                    <span class="ui-sp-30"></span>
 
                     <label class="form-label">Form Holder Example</label>
                     <div class="form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b">
@@ -1809,7 +1809,7 @@
 
                     </div>
 
-                    <span class="sp-20"></span>
+                    <span class="ui-sp-20"></span>
 
                     <label class="form-label">Captcha</label>
                     <div class="form-holder ui-col-static ui-no-fluid">
@@ -1838,7 +1838,7 @@
 
                     </div>
 
-                    <span class="sp-30"></span>
+                    <span class="ui-sp-30"></span>
 
                     <form action="#successful">
 
@@ -1853,7 +1853,7 @@
 
                     </form>
 
-                    <span class="sp-10"></span>
+                    <span class="ui-sp-10"></span>
 
                     <div class="textarea ui-round ui-border-dual form-light ui-ease-form" data-ui-counter="255">
                         <textarea class="required ui-scrollbar-faded" rows="4" placeholder="Required example with counter textarea" minlength="10"></textarea>

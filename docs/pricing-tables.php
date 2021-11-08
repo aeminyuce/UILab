@@ -34,7 +34,7 @@
                             <h2 class="font-bold ui-margin-15-v">$19</h2>
                             <h4>Business License</h4>
                             <p class="ui-color-white-50 large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
-                            <span class="sp-10"></span>
+                            <span class="ui-sp-10"></span>
                             <a class="ui-btn ui-btn-multi ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-padding-15-v ui-round ui-theme-base ui-fill-dark-100 ui-ease-btn" href="#">
                                 <b>PURCHASE</b>
                                 <svg class="ui-icon ui-margin-5-l"><use href="#shopping-cart"/></svg>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
 
-                <span class="sp-30"></span>
+                <span class="ui-sp-30"></span>
 
                 <h3>Detailed Pricing Table</h3>
 
@@ -116,7 +116,7 @@
                                 <h2 class="font-bold ui-margin-15-v">$19</h2>
                                 <h4>Business License</h4>
                                 <p class="ui-color-white-50 large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
-                                <span class="sp-10"></span>
+                                <span class="ui-sp-10"></span>
                                 <a class="ui-btn ui-btn-multi ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-padding-15-v ui-margin-25-b ui-round ui-theme-base ui-fill-dark-100 ui-ease-btn" href="#">
                                     <b>PURCHASE</b>
                                     <svg class="ui-icon ui-margin-5-l"><use href="#shopping-cart"/></svg>

@@ -20,7 +20,7 @@
                             <input type="text" placeholder="Search" autocomplete="off">
                         </div>
 
-                        <span class="sp-25"></span>
+                        <span class="ui-sp-25"></span>
 
                         <h5 class="ui-margin-15-b ui-color-black-50">CATEGORIES</h5>
                         <ul class="ui-list-unstyled ui-list-spacer-10">
@@ -102,7 +102,7 @@
                                 <svg class="ui-icon ui-margin-5-r"><use href="#truck"/></svg>
                                 Fast Delivery
                             </label>
-                            <span class="sp-5"></span>
+                            <span class="ui-sp-5"></span>
                             <label class="custom ui-block">
                                 <span class="switch-custom ui-right ui-round ui-ease-form">
                                     <input type="checkbox" checked>
@@ -146,7 +146,7 @@
                                 Radio Channel <span class="ui-color-black-25">17</span>
                             </label>
 
-                            <span class="sp-10"></span>
+                            <span class="ui-sp-10"></span>
                             <button class="ui-btn ui-btn-sm ui-circle ui-ease-btn">
                                 See All
                                 <svg class="ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
@@ -223,7 +223,7 @@
 
                     <div class="ui-row ui-sm-fluid sm-align-c">
                         <div class="ui-col-6">
-                            <span class="sp-5 ui-hidden-sm"></span>
+                            <span class="ui-sp-5 ui-hidden-sm"></span>
                             <span class="large">Found <b>47</b> and displaying <b>9</b> products.</span>
                         </div>
                         <div class="ui-col-6 align-r ui-sm-no-padding-t">
@@ -244,7 +244,7 @@
                                     <option value="36">Show 27</option>
                                 </select>
                             </div>
-                            <span class="sp-10 ui-visible-xs"></span>
+                            <span class="ui-sp-10 ui-visible-xs"></span>
                             <span class="align-c ui-theme-sub ui-ease-1st-btn">
                                 <button class="ui-btn ui-btn-square ui-round ui-fill-dark-100">
                                     <svg class="ui-icon"><use href="#grid-column"/></svg>

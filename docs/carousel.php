@@ -224,7 +224,7 @@
                         </div>
                     </div>
 
-                    <span class="sp-30"></span>
+                    <span class="ui-sp-30"></span>
 
                     <h5 class="font-bold">Half Sized Image Carousel</h5>
                     <div class="ui-carousel ui-half-sized" data-ui-col="4" data-ui-col-md="3" data-ui-col-sm="2" data-ui-col-xs="2">

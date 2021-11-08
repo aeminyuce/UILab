@@ -154,7 +154,7 @@
                         </li>
                     </ul>
 
-                    <span class="sp-30 ui-margin-10-v"></span>
+                    <span class="ui-sp-30 ui-margin-10-v"></span>
 
                     <ul class="ui-photo-gallery ui-has-cover ui-block-2nd ui-ease-photo-gallery ui-theme-sub">
                         <li>

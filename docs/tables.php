@@ -36,7 +36,7 @@
                     </tbody>
                 </table>
 
-                <span class="sp-20"></span>
+                <span class="ui-sp-20"></span>
 
                 <h3>No Separated Rows</h3>
                 <table class="ui-table ui-padding-30-b ui-no-separated">
@@ -70,7 +70,7 @@
                     </tbody>
                 </table>
 
-                <span class="sp-20"></span>
+                <span class="ui-sp-20"></span>
 
                 <h3>Striped Rows</h3>
                 <table class="ui-table ui-padding-30-b ui-table-striped">
@@ -104,7 +104,7 @@
                     </tbody>
                 </table>
 
-                <span class="sp-20"></span>
+                <span class="ui-sp-20"></span>
 
                 <h3>Border Table</h3>
                 <div class="ui-row">
@@ -190,7 +190,7 @@
                     </div>
                 </div>
 
-                <span class="sp-20"></span>
+                <span class="ui-sp-20"></span>
 
                 <h3>Hover Rows</h3>
                 <table class="ui-table ui-padding-30-b ui-table-hover ui-table-striped ui-ease-table">
@@ -230,7 +230,7 @@
                     </tbody>
                 </table>
 
-                <span class="sp-20"></span>
+                <span class="ui-sp-20"></span>
 
                 <h3>Condensed Table</h3>
                 <table class="ui-table ui-padding-30-b ui-table-condensed">
@@ -270,7 +270,7 @@
                     </tbody>
                 </table>
 
-                <span class="sp-20"></span>
+                <span class="ui-sp-20"></span>
 
                 <h3>Ultra Condensed Table</h3>
                 <table class="ui-table ui-padding-30-b ui-table-ultra-condensed">
@@ -310,7 +310,7 @@
                     </tbody>
                 </table>
 
-                <span class="sp-20"></span>
+                <span class="ui-sp-20"></span>
 
                 <h3>Rows Themes</h3>
                 <table class="ui-table ui-padding-30-b ui-table-hover ui-ease-table">
@@ -430,7 +430,7 @@
                     </tbody>
                 </table>
 
-                <span class="sp-20"></span>
+                <span class="ui-sp-20"></span>
 
                 <h3>Table Sidebar</h3>
                 <table class="ui-table ui-padding-30-b ui-table-sidebar">
@@ -458,7 +458,7 @@
                     </tbody>
                 </table>
 
-                <span class="sp-20"></span>
+                <span class="ui-sp-20"></span>
 
                 <h3>Fluid Table</h3>
                 <div class="ui-table-fluid ui-margin-30-b">
@@ -518,7 +518,7 @@
                     </table>
                 </div>
 
-                <span class="sp-20"></span>
+                <span class="ui-sp-20"></span>
 
                 <h3>Scroll Table</h3>
                 <div class="ui-table-scroll ui-margin-30-b">

@@ -239,11 +239,11 @@
     ul,ol,li { vertical-align: middle; display: inline-block; }
 }
 
-[class*="sp-"] { width: 100%; .ui-visible(); clear: both !important; }
+[class*="ui-sp-"] { width: 100%; .ui-visible(); clear: both !important; }
 
 each(@increases, {
     @name: unit(@value);
-    .sp-@{name} { height: @value; }
+    .ui-sp-@{name} { height: @value; }
 });
 
 .align- {

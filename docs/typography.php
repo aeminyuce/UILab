@@ -36,17 +36,17 @@
                     <span class="xx-largest">.xx-largest</span>
                     <span class="x-largest">.x-largest</span>
                     <span class="largest">.largest</span>
-                    <span class="sp-5"></span>
+                    <span class="ui-sp-5"></span>
                     <span class="xx-large">.xx-large</span>
                     <span class="x-large">.x-large</span>
                     <span class="large">.large</span>
-                    <span class="sp-5"></span>
+                    <span class="ui-sp-5"></span>
                     <span class="default">.default</span>
                     <br>
                     <span class="small">.small</span>
                     <span class="x-small">.x-small</span>
                     <span class="xx-small">.xx-small</span>
-                    <span class="sp-5"></span>
+                    <span class="ui-sp-5"></span>
                     <span class="smallest">.smallest</span>
                     <span class="x-smallest">.x-smallest</span>
                     <span class="xx-smallest">.xx-smallest</span>
@@ -314,14 +314,14 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat gravida posuere. Etiam luctus ex vitae diam tempor, a egestas magna posuere. Vestibulum faucibus ex dolor, at tempor ante iaculis vel. Nulla facilisi.
                 </p>
 
-                <span class="sp-10"></span>
+                <span class="ui-sp-10"></span>
 
                 <h3>Quotes</h3>
                 <div class="ui-padding-30-b">
                     <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q>
-                    <span class="sp-5"></span>
+                    <span class="ui-sp-5"></span>
                     <q class="large">Proin tellus justo, blandit non ultrices in, consequat a sem.</q>
-                    <span class="sp-5"></span>
+                    <span class="ui-sp-5"></span>
                     <q class="xx-large">Integer pellentesque sed sapien at euismod.</q>
                 </div>
 

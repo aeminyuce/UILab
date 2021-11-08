@@ -95,7 +95,7 @@
                         </div>
                     </div>
 
-                    <span class="sp-20">
+                    <span class="ui-sp-20">
 
                     </span>
                     <div class="ui-row">
@@ -126,7 +126,7 @@
                         </div>
                     </div>
 
-                    <span class="sp-20"></span>
+                    <span class="ui-sp-20"></span>
 
                     <div class="ui-row">
                         <div class="ui-col-xl-6 ui-col-lg-7 ui-col-8 ui-col-md-9 ui-col-sm-6 ui-col-xs-6">
@@ -141,7 +141,7 @@
                         </div>
                     </div>
 
-                    <span class="sp-20"></span>
+                    <span class="ui-sp-20"></span>
 
                     <h5 class="font-bold ui-margin-5-b">Ordered Grids:</h5>
                     <div class="ui-row ui-no-fluid">
@@ -172,7 +172,7 @@
                         </div>
                     </div>
 
-                    <span class="sp-20"></span>
+                    <span class="ui-sp-20"></span>
 
                     <h5 class="font-bold ui-margin-5-b">Custom Grids:</h5>
                     <div class="ui-row ui-no-fluid">
@@ -291,7 +291,7 @@
                         </div>
                     </div>
 
-                    <span class="sp-30"></span>
+                    <span class="ui-sp-30"></span>
 
                     <h5 class="font-bold ui-margin-5-b">Ordered Static Grids:</h5>
 

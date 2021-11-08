@@ -6,7 +6,7 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-30-v">
 
-                <span class="sp-30 ui-margin-30-v"></span>
+                <span class="ui-sp-30 ui-margin-30-v"></span>
 
                 <div class="align-c form-lg">
                     <p class="ui-highlight ui-color-red largest font-bold">Error: 404 Page Not Found</p>
@@ -23,7 +23,7 @@
                     </ul>
                 </div>
 
-                <span class="sp-30 ui-margin-30-v ui-padding-30-v"></span>
+                <span class="ui-sp-30 ui-margin-30-v ui-padding-30-v"></span>
 
                 <div class="align-c form-lg">
                     <p class="ui-highlight ui-color-yellow largest font-bold">Error: 403 Forbidden</p>
@@ -39,7 +39,7 @@
                     </a>
                 </div>
 
-                <span class="sp-30 ui-margin-30-v ui-padding-30-v"></span>
+                <span class="ui-sp-30 ui-margin-30-v ui-padding-30-v"></span>
 
                 <div class="align-c form-lg">
                     <p class="ui-highlight ui-color-orange largest font-bold">Error: 500 Unexpected Error</p>
@@ -55,7 +55,7 @@
                     </a>
                 </div>
 
-                <span class="sp-30 ui-margin-30-v"></span>
+                <span class="ui-sp-30 ui-margin-30-v"></span>
 
             </div>
         </div>

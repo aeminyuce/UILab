@@ -121,7 +121,7 @@
                 <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: 'xhr/ajax-modal.php'<br>    size: 'lg',<br>    type: 'ajax'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: 'xhr/ajax-modal.php', size: 'lg', type: 'ajax'});">Run Code</button>
 
-                <span class="sp-15"></span>
+                <span class="ui-sp-15"></span>
 
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">
                     Open links with iframe modal.<br>
@@ -130,13 +130,13 @@
                 <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: 'https://www.youtube.com/embed/Ct6BUPvE2sM',<br>    size: '640x360',<br>    type: 'iframe'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: 'https://www.youtube.com/embed/Ct6BUPvE2sM', size: '640x360', type: 'iframe'});">Run Code</button>
 
-                <span class="sp-15"></span>
+                <span class="ui-sp-15"></span>
 
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Google map embed link example:</i>
                 <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927',<br>    size: 'fullscreen',<br>    type: 'iframe'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927', size: 'fullscreen', type: 'iframe'});">Run Code</button>
 
-                <span class="sp-15"></span>
+                <span class="ui-sp-15"></span>
 
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Google map embed link with header and footer:</i>
                 <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: '#myModal02'<br>    size: 'fullscreen'<br>});</pre>
@@ -189,7 +189,7 @@
             <div class="ui-col-12 ui-no-padding-b">
                 <pre class="ui-round ui-margin-5-b">ui.modal.close();</pre>
 
-                <span class="sp-15"></span>
+                <span class="ui-sp-15"></span>
 
                 <pre class="ui-round ui-margin-5-b">ui.modal.close({<br>    function () {<br>        alert('Modal closed!');<br>    }<br>});</pre>
 

@@ -16,7 +16,7 @@
                                     </button>
                                     <input class="ui-grid-list-filter" type="text" placeholder="Search">
                                 </div>
-                                <span class="sp-5 ui-hidden-lg"></span>
+                                <span class="ui-sp-5 ui-hidden-lg"></span>
                             </div>
                             <div class="ui-col-lg-3 ui-col-6 ui-no-fluid">
                                 <div class="select ui-round ui-no-border ui-fill-light-100 ui-ease-form">
@@ -61,7 +61,7 @@
                             </div>
                         </div>
 
-                        <span class="sp-15"></span>
+                        <span class="ui-sp-15"></span>
 
                         <div class="ui-grid-list-container">
 
@@ -451,7 +451,7 @@
                             </div>
                         </div>
 
-                        <span class="sp-10"></span>
+                        <span class="ui-sp-10"></span>
 
                         <div class="ui-row ui-no-row-gap ui-no-fluid">
                             <div class="ui-col-4">
@@ -467,7 +467,7 @@
                     </div>
                 </div>
 
-                <span class="sp-30"></span>
+                <span class="ui-sp-30"></span>
 
                 <div class="ui-grid-list ui-grid-list-striped grid-hover ui-border ui-ease-ui-grid-list ui-round">
 
@@ -490,7 +490,7 @@
                                 Check All
                             </label>
 
-                            <span class="sp-10 ui-visible-sm"></span>
+                            <span class="ui-sp-10 ui-visible-sm"></span>
 
                             <div class="select form-inline-xs ui-round ui-border-dual ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"></svg>
@@ -1234,7 +1234,7 @@
 
                 </div>
 
-                <span class="sp-30"></span>
+                <span class="ui-sp-30"></span>
 
                 <div class="ui-grid-list grid-hover ui-border ui-ease-ui-grid-list ui-round">
 

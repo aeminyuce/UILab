@@ -53,7 +53,7 @@
                                         Contact
                                     </a>
                                     <span class="ui-inline-block ui-margin-10-h ui-hidden-md"></span>
-                                    <span class="sp-10 ui-visible-sm"></span>
+                                    <span class="ui-sp-10 ui-visible-sm"></span>
                                     <a class="ui-btn ui-btn-sm-fluid ui-fill-dark-100" href="#">
                                         <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#sign-in"/></svg>
                                         Login
@@ -101,7 +101,7 @@
                     </button>
                 </div>
             </div>
-            <span class="sp-10 ui-visible-sm"></span>
+            <span class="ui-sp-10 ui-visible-sm"></span>
         </div>
 
         <div class="banner-content banner-tab01 ui-tab-content ui-padding-30-v ui-set-relative ui-theme-farmer ui-fill-dark-100 ui-open ui-open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
@@ -124,9 +124,9 @@
 
                             <div class="banner-slogan ui-padding-15 ui-set-relative">
                                 <div class="align-c ui-padding-15 ui-set-relative ui-shadow-lg">
-                                    <span class="sp-15"></span>
+                                    <span class="ui-sp-15"></span>
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#factory"/></svg>
-                                    <span class="sp-30 ui-hidden-md"></span>
+                                    <span class="ui-sp-30 ui-hidden-md"></span>
                                     <h3 class="font-bold xx-large">Long term investment</h3>
                                     <p class="ui-highlight x-large">Our consider terms that have long term investment program nowZ.</p>
                                     <a href="#" class="ui-btn ui-block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
@@ -140,7 +140,7 @@
                     </div>
                 </div>
             </div>
-            <span class="sp-30 ui-margin-10-v"></span>
+            <span class="ui-sp-30 ui-margin-10-v"></span>
         </div>
         <div class="banner-content banner-tab02 ui-tab-content ui-padding-30-v ui-set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
             <div class="ui-fixed ui-padding-30-v ui-set-relative">
@@ -162,9 +162,9 @@
 
                             <div class="banner-slogan ui-padding-15 ui-set-relative">
                                 <div class="align-c ui-padding-15 ui-set-relative ui-shadow-lg">
-                                    <span class="sp-15"></span>
+                                    <span class="ui-sp-15"></span>
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#network"/></svg>
-                                    <span class="sp-30"></span>
+                                    <span class="ui-sp-30"></span>
                                     <h3 class="font-bold xx-large">Connect with Our Farmers</h3>
                                     <p class="ui-highlight x-large">Our consider terms that have long term investment program now.</p>
                                     <a href="#" class="ui-btn ui-block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
@@ -178,7 +178,7 @@
                     </div>
                 </div>
             </div>
-            <span class="sp-30 ui-margin-10-v"></span>
+            <span class="ui-sp-30 ui-margin-10-v"></span>
         </div>
         <div class="banner-content banner-tab03 ui-tab-content ui-padding-30-v ui-set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
             <div class="ui-fixed ui-padding-30-v ui-set-relative">
@@ -200,9 +200,9 @@
 
                             <div class="banner-slogan ui-padding-15 ui-set-relative">
                                 <div class="align-c ui-padding-15 ui-set-relative ui-shadow-lg">
-                                    <span class="sp-15"></span>
+                                    <span class="ui-sp-15"></span>
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#user-circle"/></svg>
-                                    <span class="sp-30"></span>
+                                    <span class="ui-sp-30"></span>
                                     <h3 class="font-bold xx-large">Social Impact Investment</h3>
                                     <p class="ui-highlight x-large">Our consider terms that have long term investment program now.</p>
                                     <a href="#" class="ui-btn ui-block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
@@ -216,7 +216,7 @@
                     </div>
                 </div>
             </div>
-            <span class="sp-30 ui-margin-10-v"></span>
+            <span class="ui-sp-30 ui-margin-10-v"></span>
         </div>
 
     </div>
@@ -229,9 +229,9 @@
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h ui-shadow-lg ui-ease-layout">
-                        <span class="sp-15"></span>
+                        <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-current"><use href="#leaf"/></svg>
-                        <span class="sp-20"></span>
+                        <span class="ui-sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Planting</h3>
                         <p class="ui-highlight large ui-color-black-50">Complete range of lands caping services.</p>
                         <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
@@ -240,9 +240,9 @@
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h ui-shadow-lg ui-ease-layout">
-                        <span class="sp-15"></span>
+                        <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-current"><use href="#wind-sock"/></svg>
-                        <span class="sp-20"></span>
+                        <span class="ui-sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Garden Care</h3>
                         <p class="ui-highlight large ui-color-black-50">Resolving environmental problems with best results.</p>
                         <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
@@ -251,9 +251,9 @@
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h ui-shadow-lg ui-ease-layout">
-                        <span class="sp-15"></span>
+                        <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-current"><use href="#water"/></svg>
-                        <span class="sp-20"></span>
+                        <span class="ui-sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Irrigation System</h3>
                         <p class="ui-highlight large ui-color-black-50">Idea of denouncing pleasure and praising.</p>
                         <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
@@ -262,9 +262,9 @@
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h ui-shadow-lg ui-ease-layout">
-                        <span class="sp-15"></span>
+                        <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-current"><use href="#land"/></svg>
-                        <span class="sp-20"></span>
+                        <span class="ui-sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Hardscaping</h3>
                         <p class="ui-highlight large ui-color-black-50">Placing int the landscape with great pleasure.</p>
                         <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
@@ -273,9 +273,9 @@
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h ui-shadow-lg ui-ease-layout">
-                        <span class="sp-15"></span>
+                        <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-current"><use href="#leaf"/></svg>
-                        <span class="sp-20"></span>
+                        <span class="ui-sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Planting</h3>
                         <p class="ui-highlight large ui-color-black-50">Complete range of lands caping services.</p>
                         <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
@@ -284,9 +284,9 @@
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h ui-shadow-lg ui-ease-layout">
-                        <span class="sp-15"></span>
+                        <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-current"><use href="#wind-sock"/></svg>
-                        <span class="sp-20"></span>
+                        <span class="ui-sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Garden Care</h3>
                         <p class="ui-highlight large ui-color-black-50">Resolving environmental problems with best results.</p>
                         <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
@@ -295,9 +295,9 @@
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h ui-shadow-lg ui-ease-layout">
-                        <span class="sp-15"></span>
+                        <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-current"><use href="#water"/></svg>
-                        <span class="sp-20"></span>
+                        <span class="ui-sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Irrigation System</h3>
                         <p class="ui-highlight large ui-color-black-50">Idea of denouncing pleasure and praising.</p>
                         <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
@@ -306,9 +306,9 @@
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h ui-shadow-lg ui-ease-layout">
-                        <span class="sp-15"></span>
+                        <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-current"><use href="#land"/></svg>
-                        <span class="sp-20"></span>
+                        <span class="ui-sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Hardscaping</h3>
                         <p class="ui-highlight large ui-color-black-50">Placing int the landscape with great pleasure.</p>
                         <a href="#" class="ui-btn ui-btn-ghost ui-block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
@@ -327,7 +327,7 @@
             </div>
         </div>
     </div>
-    <span class="sp-30 ui-margin-15-v"></span>
+    <span class="ui-sp-30 ui-margin-15-v"></span>
     <!-- home links: end -->
 
     <!-- news: start -->
@@ -359,7 +359,7 @@
                         </button>
                     </div>
                 </div>
-                <span class="sp-10 ui-visible-sm"></span>
+                <span class="ui-sp-10 ui-visible-sm"></span>
             </div>
 
             <div class="ui-tab-content ui-padding-10 ui-open ui-open-ease">
@@ -679,7 +679,7 @@
             </div>
         </div>
     </div>
-    <span class="sp-30 ui-margin-15-v"></span>
+    <span class="ui-sp-30 ui-margin-15-v"></span>
     <!-- news: end -->
 
     <!-- gallery: start -->
@@ -691,7 +691,7 @@
 
                 <p class="ui-color-black-50 font-readable x-large xs-align-c">Aliquam leo quam, laoreet quis luctus non, vulputate vitae elit. Pellentesque consequat eu mauris ac imperdiet. In dolor velit, pellentesque eu dignissim in, dignissim ac turpis. Sed lobortis diam ante, et posuere ligula convallis suscipit. Maecenas varius ultrices eros, eu vestibulum sem aliquet et.</p>
 
-                <span class="sp-30 ui-margin-10-v"></span>
+                <span class="ui-sp-30 ui-margin-10-v"></span>
 
                 <ul class="ui-photo-gallery ui-block-2nd ui-has-cover ui-ease-photo-gallery">
                     <li>
@@ -748,7 +748,7 @@
             </div>
         </div>
     </div>
-    <span class="sp-30 ui-margin-15-v"></span>
+    <span class="ui-sp-30 ui-margin-15-v"></span>
     <!-- gallery: end -->
 
     <!-- statistics: start -->
@@ -786,11 +786,11 @@
                     </div>
                     <div class="ui-col-500 ui-padding-10 xs-align-c">
                         <p class="ui-color-black-50 font-readable x-large ui-margin-30-b">
-                            <span class="sp-15"></span>
+                            <span class="ui-sp-15"></span>
                             <b class="ui-color-black">Cras non sagittis arcu, eget viverra nunc.</b>
-                            <span class="sp-15"></span>
+                            <span class="ui-sp-15"></span>
                             Suspendisse ut est mi. Nunc hendrerit suscipit ornare. Cras luctus nibh in metus semper lacinia ultricies non nulla.
-                            <span class="sp-15"></span>
+                            <span class="ui-sp-15"></span>
                             Pellentesque mattis sed diam a rutrum. Sed fermentum accumsan egestas.
                         </p>
                         <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-20-h ui-margin-30-b ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
@@ -843,7 +843,7 @@
                             <li><a href="#">Become an Affiliate</a></li>
                             <li><a href="#">Email Unsubscribe</a></li>
                         </ul>
-                        <span class="sp-20 ui-visible-sm"></span>
+                        <span class="ui-sp-20 ui-visible-sm"></span>
                     </div>
                 </div>
                 <div class="ui-col-500 ui-padding-10">
@@ -875,7 +875,7 @@
                                 </a>
                             </div>
 
-                            <span class="sp-30"></span>
+                            <span class="ui-sp-30"></span>
 
                             <h4 class="ui-margin-15-b">Sign Up for Email</h4>
                             <p class="ui-highlight">Get in on the best deals, new products and gardening tips.</p>

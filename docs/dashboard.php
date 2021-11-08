@@ -203,7 +203,7 @@
                         </div>
                     </div>
 
-                    <span class="sp-15"></span>
+                    <span class="ui-sp-15"></span>
 
                     <div class="ui-btn-list ui-margin-10 ui-icons-margin-10-r form-lg ui-ease-1st-btn">
                         <button class="ui-btn ui-round">
@@ -605,7 +605,7 @@
                                                     <p class="required-msg">Enter your site name.</p>
                                                 </div>
 
-                                                <div class="sp-1 ui-margin-20 ui-border-b ui-border-dashed"></div>
+                                                <div class="ui-sp-1 ui-margin-20 ui-border-b ui-border-dashed"></div>
 
                                                 <div class="ui-col-8 ui-offset-2">
                                                     <h3>Address Details</h3>
@@ -821,7 +821,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <span class="sp-3"></span>
+                                    <span class="ui-sp-3"></span>
                                     <p class="ui-color-black-50 large ui-margin-5-b">Daily reports that all received.</p>
                                     <p class="ui-color-black-25">
                                         <svg class="ui-icon ui-icon-xs ui-margin-5-r"><use href="#clock"/></svg>
@@ -1158,7 +1158,7 @@
                                                     </button>
                                                     <input class="ui-grid-list-filter" type="text" placeholder="Search">
                                                 </div>
-                                                <span class="sp-5 ui-hidden-lg"></span>
+                                                <span class="ui-sp-5 ui-hidden-lg"></span>
                                             </div>
                                             <div class="ui-col-lg-3 ui-col-6 ui-no-fluid">
                                                 <div class="select ui-round ui-no-border ui-fill-light-100 ui-ease-form">
@@ -1203,7 +1203,7 @@
                                             </div>
                                         </div>
 
-                                        <span class="sp-15"></span>
+                                        <span class="ui-sp-15"></span>
 
                                         <div class="ui-grid-list-container">
 
@@ -1723,7 +1723,7 @@
 
                                         </div>
 
-                                        <span class="sp-10"></span>
+                                        <span class="ui-sp-10"></span>
 
                                         <div class="ui-row ui-no-row-gap ui-no-fluid">
                                             <div class="ui-col-4">

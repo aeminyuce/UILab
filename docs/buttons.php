@@ -111,7 +111,7 @@
                         </a>
                     </div>
 
-                    <span class="sp-15"></span>
+                    <span class="ui-sp-15"></span>
 
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-lg ui-circle" href="#">

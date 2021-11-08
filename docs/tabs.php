@@ -363,14 +363,14 @@
 
                     <div id="tabID01" class="ui-tab-content ui-open ui-open-ease">
                         <button class="ui-tab ui-btn ui-round ui-fill-dark-100 ui-ease-btn" data-ui-id="tabID02">Show Second</button>
-                        <span class="sp-10"></span>
+                        <span class="ui-sp-10"></span>
                         <p class="font-readable">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                         </p>
                     </div>
                     <div id="tabID02" class="ui-tab-content">
                         <button class="ui-tab ui-btn ui-round ui-fill-dark-100 ui-ease-btn" data-ui-id="tabID01">Show First</button>
-                        <span class="sp-10"></span>
+                        <span class="ui-sp-10"></span>
                         <p class="font-readable">
                             Proin sagittis velit urna, a elementum purus dictum vitae. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
                         </p>
