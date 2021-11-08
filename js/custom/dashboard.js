@@ -12,15 +12,15 @@ function sidebarToggler(onload) {
 
     toggleClasses = function () { // toggle classnames
 
-        ui.toggleClass(sidebar, 'hidden visible-lg');
+        ui.toggleClass(sidebar, 'ui-hidden ui-visible-lg');
         ui.toggleClass('header', 'sidebar-opened');
 
-        ui.toggleClass('.ui-show-mobile-menu-l', 'hidden-lg');
-        ui.toggleClass('.sidebar-show', 'hidden');
+        ui.toggleClass('.ui-show-mobile-menu-l', 'ui-hidden-lg');
+        ui.toggleClass('.sidebar-show', 'ui-hidden');
 
     };
 
-    if (ui.hasClass(sidebar, 'hidden')) { // show
+    if (ui.hasClass(sidebar, 'ui-hidden')) { // show
 
         state = 'opened';
         toggleClasses(); // toggle classnames

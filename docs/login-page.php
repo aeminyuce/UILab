@@ -83,14 +83,14 @@
             <div class="login-holder align-c no-scroll set-relative ui-fill-dark-100 shadow-lg">
 
                 <div class="full-w set-absolute set-c">
-                    <h1 class="hidden-md">Create your account</h1>
+                    <h1 class="ui-hidden-md">Create your account</h1>
                     <p class="x-large font-color-white-muted">Sign up to create, discover and connect with the global community.</p>
                     <span class="sp-30 ui-margin-10-v"></span>
                     <a href="?l=sign-up-page" class="login-btn ui-btn ui-btn-lg ui-btn-sm-fluid ui-padding-30-h circle hover-scale hover-shadow ui-ease-btn"><b>SIGN UP NOW</b></a>
                 </div>
 
                 <div class="login-icons ui-icons-black">
-                    <svg class="ui-icon hidden-sm"><use href="#plus"/></svg>
+                    <svg class="ui-icon ui-hidden-sm"><use href="#plus"/></svg>
                     <svg class="ui-icon"><use href="#plus"/></svg>
                     <svg class="ui-icon"><use href="#plus"/></svg>
                     <svg class="ui-icon"><use href="#plus"/></svg>
@@ -99,7 +99,7 @@
 
             </div>
 
-            <svg class="ui-icon font-color-white visible-lg"><use href="#users"/></svg>
+            <svg class="ui-icon font-color-white ui-visible-lg"><use href="#users"/></svg>
 
         </div>
     </div>

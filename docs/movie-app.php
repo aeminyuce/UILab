@@ -3,8 +3,8 @@
 
 <main class="ui-container ui-no-gutter">
     <div class="ui-col-static ui-no-fluid">
-        <div class="ui-col-200 set-relative hidden-md">
-            <div class="sidebar ui-col-200 full-h set-fixed set-l ui-padding-5 ui-fill-dark-100 hidden-md scroll-v ui-scrollbar-faded">
+        <div class="ui-col-200 set-relative ui-hidden-md">
+            <div class="sidebar ui-col-200 full-h set-fixed set-l ui-padding-5 ui-fill-dark-100 ui-hidden-md scroll-v ui-scrollbar-faded">
 
                 <div class="align-l ui-padding-10 ui-icons-no-opacity ui-icons-margin-10-r form-lg ui-add-mobile-menu-l">
                     <h5 class="font-color-white-50 ui-padding-15 ui-margin-5-b">LIBRARY</h5>
@@ -80,7 +80,7 @@
                 <div class="ui-padding-30 ui-no-padding-b ui-md-no-padding">
 
                     <header class="ui-row ui-no-ui-row-gap-t ui-sticky-md ui-icons-no-opacity form-lg" data-ui-classes="shadow-lg">
-                        <div class="ui-col-6 hidden-md ui-ease-1st-form">
+                        <div class="ui-col-6 ui-hidden-md ui-ease-1st-form">
                             <div class="text text-icon-both ui-margin-15-b circle ui-no-border ui-theme-gray ui-fill-light-300 has-clear">
                                 <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
                                 <button type="button" class="clear-form">
@@ -91,10 +91,10 @@
                         </div>
                         <div class="ui-col-6 align-r">
                             <span class="align-c font-color-black-50 ui-margin-20-r ui-sm-no-margin ui-ease-1st-btn">
-                                <button class="ui-btn ui-btn-square ui-btn-ghost ui-margin-10-l circle left ui-show-mobile-menu-l visible-md">
+                                <button class="ui-btn ui-btn-square ui-btn-ghost ui-margin-10-l circle left ui-show-mobile-menu-l ui-visible-md">
                                     <svg class="ui-icon"><use href="#bars-left"/></svg>
                                 </button>
-                                <button class="ui-btn ui-btn-square ui-btn-ghost circle ui-ease-btn visible-md" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
+                                <button class="ui-btn ui-btn-square ui-btn-ghost circle ui-ease-btn ui-visible-md" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
                                     <svg class="ui-icon"><use href="#search"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square ui-btn-ghost circle">
@@ -112,8 +112,8 @@
                             </span>
                             <span class="inline-block right no-float-sm">
                                 <img class="ui-img-photo ui-img-photo-sm circle ui-margin-10-l ui-sm-no-margin right" src="img/profile-image.jpg" alt="">
-                                <span class="ui-margin-3-t inline-block hidden-sm">aeminyuce</span>
-                                <span class="small font-color-black-50 block hidden-sm">Premium</span>
+                                <span class="ui-margin-3-t inline-block ui-hidden-sm">aeminyuce</span>
+                                <span class="small font-color-black-50 block ui-hidden-sm">Premium</span>
                             </span>
                         </div>
                     </header>
@@ -134,7 +134,7 @@
                                 </div>
                                 <div class="ui-row">
                                     <div class="ui-col-12 ui-col-lg-8 ui-padding-30-l ui-no-padding-v ui-md-no-padding">
-                                        <span class="sp-15 visible-md"></span>
+                                        <span class="sp-15 ui-visible-md"></span>
                                         <h2 class="font-bold">Related Video</h2>
                                         <b class="large">Captain Marvel (2019)</b>
                                         <p class="ui-margin-10-v font-readable">After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.</p>

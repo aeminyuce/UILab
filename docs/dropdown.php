@@ -200,7 +200,7 @@
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <div class="ui-dropdown-menu ui-tabs round align-l shadow-lg block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-visible">
+                            <div class="ui-dropdown-menu ui-tabs round align-l shadow-lg block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-ui-visible">
 
                                 <button class="ui-btn ui-btn-ghost ui-ease-btn">Waiting</button>
 
@@ -238,7 +238,7 @@
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <div class="ui-dropdown-menu ui-tabs round align-l shadow-lg block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-visible">
+                            <div class="ui-dropdown-menu ui-tabs round align-l shadow-lg block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-ui-visible">
 
                                 <button class="ui-btn ui-btn-ghost ui-ease-btn">Waiting</button>
 

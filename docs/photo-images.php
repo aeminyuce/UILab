@@ -12,7 +12,7 @@
                         <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
 
-                    <span class="sp-5 visible-sm"></span>
+                    <span class="sp-5 ui-visible-sm"></span>
 
                     <span class="ui-img-photo-xs circle ui-theme-orange ui-fill-dark-100">
                         <svg class="ui-icon"><use href="#user"/></svg>
@@ -28,7 +28,7 @@
                         <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
 
-                    <span class="sp-5 visible-sm"></span>
+                    <span class="sp-5 ui-visible-sm"></span>
 
                     <span class="ui-img-photo-sm circle ui-theme-orange ui-fill-dark-100">
                         <svg class="ui-icon"><use href="#user"/></svg>
@@ -44,7 +44,7 @@
                         <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
 
-                    <span class="sp-5 visible-sm"></span>
+                    <span class="sp-5 ui-visible-sm"></span>
 
                     <span class="ui-img-photo circle ui-theme-orange ui-fill-dark-100">
                         <svg class="ui-icon"><use href="#user"/></svg>
@@ -60,7 +60,7 @@
                         <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
 
-                    <span class="sp-5 visible-sm"></span>
+                    <span class="sp-5 ui-visible-sm"></span>
 
                     <span class="ui-img-photo-lg circle ui-theme-orange ui-fill-dark-100">
                         <svg class="ui-icon"><use href="#user"/></svg>
@@ -106,7 +106,7 @@
                         <a class="ui-btn ui-margin-5-r circle ui-ease-btn" href="#">+177</a>
                     </div>
 
-                    <span class="sp-5 visible-sm"></span>
+                    <span class="sp-5 ui-visible-sm"></span>
 
                     <div class="ui-photos-holder circle hover-scale-more-2nd ui-ease-2nd-layout ui-theme-sub ui-fill-dark-100">
                         <a href="#"><img class="ui-img-photo ui-border-lg ui-stroke circle" src="img/profile-image.jpg" alt=""></a>
@@ -125,7 +125,7 @@
                         <a class="ui-btn ui-btn-lg ui-margin-2-r circle ui-ease-btn" href="#">+177</a>
                     </div>
 
-                    <span class="sp-5 visible-sm"></span>
+                    <span class="sp-5 ui-visible-sm"></span>
 
                     <div class="ui-photos-holder ui-padding-5 circle hover-scale-more-2nd ui-ease-2nd-layout ui-theme-sub ui-fill-dark-100">
                         <a href="#"><img class="ui-img-photo ui-border-lg ui-stroke circle" src="img/profile-image.jpg" alt=""></a>

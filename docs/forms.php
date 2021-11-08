@@ -314,12 +314,12 @@
                                     </div>
                                 </div>
                                 <div class="ui-col-50 font-color-black-muted align-c ui-icons-lg set-relative">
-                                    <div class="set-absolute set-all hidden-md">
+                                    <div class="set-absolute set-all ui-hidden-md">
                                         <div class="set-absolute set-c ui-padding-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
                                         </div>
                                     </div>
-                                    <svg class="ui-icon visible-md"><use href="#exchange-v"/></svg>
+                                    <svg class="ui-icon ui-visible-md"><use href="#exchange-v"/></svg>
                                 </div>
                                 <div class="ui-row">
                                     <div class="ui-col-12 full-height">
@@ -352,12 +352,12 @@
                                     </div>
                                 </div>
                                 <div class="ui-col-50 font-color-black-muted align-c ui-icons-lg set-relative">
-                                    <div class="set-absolute set-all hidden-md">
+                                    <div class="set-absolute set-all ui-hidden-md">
                                         <div class="set-absolute set-c ui-padding-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
                                         </div>
                                     </div>
-                                    <svg class="ui-icon visible-md"><use href="#exchange-v"/></svg>
+                                    <svg class="ui-icon ui-visible-md"><use href="#exchange-v"/></svg>
                                 </div>
                                 <div class="ui-row">
                                     <div class="ui-col-12 full-height">
@@ -390,12 +390,12 @@
                                     </div>
                                 </div>
                                 <div class="ui-col-50 font-color-black-muted align-c set-relative">
-                                    <div class="set-absolute set-all hidden-md">
+                                    <div class="set-absolute set-all ui-hidden-md">
                                         <div class="set-absolute set-c ui-icons-lg ui-padding-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
                                         </div>
                                     </div>
-                                    <svg class="ui-icon visible-md"><use href="#exchange-v"/></svg>
+                                    <svg class="ui-icon ui-visible-md"><use href="#exchange-v"/></svg>
                                 </div>
                                 <div class="ui-row">
                                     <div class="ui-col-12 full-height">

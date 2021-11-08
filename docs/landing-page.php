@@ -19,15 +19,15 @@
                     <div class="ui-row">
                         <div class="ui-col-12 align-r">
 
-                            <div class="hidden-sm">
+                            <div class="ui-hidden-sm">
                                 <div class="ui-ease-1st-btn ui-icons-no-opacity form-lg ui-add-mobile-menu-r">
                                     <a href="#" class="ui-btn ui-btn-sm-fluid ui-btn-ghost">
-                                        <svg class="ui-icon ui-margin-5-r visible-sm"><use href="#home"/></svg>
+                                        <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#home"/></svg>
                                         Home
                                     </a>
                                     <div class="ui-dropdown ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-sm-fluid ui-btn-ghost">
-                                            <svg class="ui-icon ui-margin-5-r visible-sm"><use href="#box"/></svg>
+                                            <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#box"/></svg>
                                             Products
                                             <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                                         </button>
@@ -41,31 +41,31 @@
                                         </ul>
                                     </div>
                                     <a class="ui-btn ui-btn-sm-fluid ui-btn-ghost" href="#">
-                                        <svg class="ui-icon ui-margin-5-r visible-sm"><use href="#users"/></svg>
+                                        <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#users"/></svg>
                                         Team
                                     </a>
                                     <a class="ui-btn ui-btn-sm-fluid ui-btn-ghost" href="#">
-                                        <svg class="ui-icon ui-margin-5-r visible-sm"><use href="#coins"/></svg>
+                                        <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#coins"/></svg>
                                         Pricing
                                     </a>
                                     <a class="ui-btn ui-btn-sm-fluid ui-btn-ghost" href="#">
-                                        <svg class="ui-icon ui-margin-5-r visible-sm"><use href="#envelope-open"/></svg>
+                                        <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#envelope-open"/></svg>
                                         Contact
                                     </a>
-                                    <span class="inline-block ui-margin-10-h hidden-md"></span>
-                                    <span class="sp-10 visible-sm"></span>
+                                    <span class="inline-block ui-margin-10-h ui-hidden-md"></span>
+                                    <span class="sp-10 ui-visible-sm"></span>
                                     <a class="ui-btn ui-btn-sm-fluid ui-fill-dark-100" href="#">
-                                        <svg class="ui-icon ui-margin-5-r visible-sm"><use href="#sign-in"/></svg>
+                                        <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#sign-in"/></svg>
                                         Login
                                     </a>
                                     <a class="ui-btn ui-btn-sm-fluid ui-theme-farmer ui-fill-dark-100" href="#">
-                                        <svg class="ui-icon ui-margin-5-r visible-sm"><use href="#user-plus"/></svg>
+                                        <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#user-plus"/></svg>
                                         Sign Up
                                     </a>
                                 </div>
                             </div>
 
-                            <button class="ui-btn ui-btn-lg ui-btn-square ui-btn-ghost ui-color ui-ease-btn ui-show-mobile-menu-r visible-sm">
+                            <button class="ui-btn ui-btn-lg ui-btn-square ui-btn-ghost ui-color ui-ease-btn ui-show-mobile-menu-r ui-visible-sm">
                                 <svg class="ui-icon no-opacity"><use href="#bars"/></svg>
                             </button>
 
@@ -101,7 +101,7 @@
                     </button>
                 </div>
             </div>
-            <span class="sp-10 visible-sm"></span>
+            <span class="sp-10 ui-visible-sm"></span>
         </div>
 
         <div class="banner-content banner-tab01 ui-tab-content ui-padding-30-v set-relative ui-theme-farmer ui-fill-dark-100 ui-open ui-open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
@@ -126,7 +126,7 @@
                                 <div class="align-c ui-padding-15 set-relative shadow-lg">
                                     <span class="sp-15"></span>
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#factory"/></svg>
-                                    <span class="sp-30 hidden-md"></span>
+                                    <span class="sp-30 ui-hidden-md"></span>
                                     <h3 class="font-bold xx-large">Long term investment</h3>
                                     <p class="highlight x-large">Our consider terms that have long term investment program nowZ.</p>
                                     <a href="#" class="ui-btn block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
@@ -359,7 +359,7 @@
                         </button>
                     </div>
                 </div>
-                <span class="sp-10 visible-sm"></span>
+                <span class="sp-10 ui-visible-sm"></span>
             </div>
 
             <div class="ui-tab-content ui-padding-10 ui-open ui-open-ease">
@@ -699,7 +699,7 @@
                             <img src="img/agriculture/md01.jpg" alt="">
                             <span class="x-large font-readable">
                                 <span class="scroll-v ui-margin-20 set-absolute set-all">
-                                    <svg class="ui-icon ui-icon-xxl left ui-margin-20-r hidden-md ui-color"><use href="#trees"/></svg>
+                                    <svg class="ui-icon ui-icon-xxl left ui-margin-20-r ui-hidden-md ui-color"><use href="#trees"/></svg>
                                     <b>Sed nunc mauris, auctor tristique libero non tristique.</b>
                                     <span class="font-color-white-muted ui-margin-15-t block">
                                         Nullam mollis molestie magna nec tincidunt. Phasellus mattis aliquet ex, vel gravida dui elementum ut. Ut euismod nisi in tellus luctus dictum et ut nulla. Sed scelerisque rutrum dui, et suscipit diam sagittis quis. Quisque dapibus varius ornare.
@@ -843,7 +843,7 @@
                             <li><a href="#">Become an Affiliate</a></li>
                             <li><a href="#">Email Unsubscribe</a></li>
                         </ul>
-                        <span class="sp-20 visible-sm"></span>
+                        <span class="sp-20 ui-visible-sm"></span>
                     </div>
                 </div>
                 <div class="ui-col-500 ui-padding-10">

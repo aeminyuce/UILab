@@ -517,9 +517,9 @@
                                 </div>
 
                                 <div class="align-r align-c ui-ease-1st-btn">
-                                    <span class="sp-15 visible-xs"></span>
+                                    <span class="sp-15 ui-visible-xs"></span>
                                     <button name="less" class="generate-btn ui-btn ui-btn-xs-fluid round ui-fill-dark-100">Generate LESS</button>
-                                    <span class="sp-5 visible-sm"></span>
+                                    <span class="sp-5 ui-visible-sm"></span>
                                     <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid round">
                                         <svg class="ui-icon ui-color ui-margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard
                                     </button>
@@ -885,7 +885,7 @@
                                 </div>
 
                                 <div class="align-r align-c ui-ease-1st-btn">
-                                    <span class="sp-15 visible-xs"></span>
+                                    <span class="sp-15 ui-visible-xs"></span>
                                     <button name="js" class="generate-btn ui-btn ui-btn-xs-fluid round ui-fill-dark-100">Generate JS</button>
                                     <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid round">
                                         <svg class="ui-icon ui-color ui-margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard
@@ -1016,7 +1016,7 @@
                                 </div>
 
                                 <div class="align-r align-c ui-ease-1st-btn">
-                                    <span class="sp-15 visible-xs"></span>
+                                    <span class="sp-15 ui-visible-xs"></span>
                                     <button name="php" class="generate-btn ui-btn ui-btn-xs-fluid round ui-fill-dark-100" data-ui-type="icons">Generate Icons</button>
                                     <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid round">
                                         <svg class="ui-icon ui-color ui-margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard

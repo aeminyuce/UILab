@@ -8,7 +8,7 @@
     <div class="ui-fixed">
         <div class="ui-col-static ui-no-fluid ui-padding-30-v ui-padding-15-h ui-md-no-padding-h">
 
-            <div class="ui-col-250 ui-padding-10 hidden-md">
+            <div class="ui-col-250 ui-padding-10 ui-hidden-md">
                 <div class="ui-add-mobile-menu-r">
 
                     <div class="ui-card ui-padding-15 round shadow-lg">
@@ -75,7 +75,7 @@
                                 </span>
                             </label>
 
-                            <span class="clearfix hidden-md"></span>
+                            <span class="clearfix ui-hidden-md"></span>
 
                             <label class="custom">
                                 <span class="check-custom ui-no-border circle ui-ease-form ui-product-select-black">
@@ -223,7 +223,7 @@
 
                     <div class="ui-row ui-sm-fluid sm-align-c">
                         <div class="ui-col-6">
-                            <span class="sp-5 hidden-sm"></span>
+                            <span class="sp-5 ui-hidden-sm"></span>
                             <span class="large">Found <b>47</b> and displaying <b>9</b> products.</span>
                         </div>
                         <div class="ui-col-6 align-r ui-sm-no-padding-t">
@@ -244,7 +244,7 @@
                                     <option value="36">Show 27</option>
                                 </select>
                             </div>
-                            <span class="sp-10 visible-xs"></span>
+                            <span class="sp-10 ui-visible-xs"></span>
                             <span class="align-c ui-theme-sub ui-ease-1st-btn">
                                 <button class="ui-btn ui-btn-square round ui-fill-dark-100">
                                     <svg class="ui-icon"><use href="#grid-column"/></svg>
@@ -252,7 +252,7 @@
                                 <button class="ui-btn ui-btn-square round">
                                     <svg class="ui-icon"><use href="#grid-row"/></svg>
                                 </button>
-                                <button class="ui-btn ui-btn-square round ui-show-mobile-menu-r visible-md">
+                                <button class="ui-btn ui-btn-square round ui-show-mobile-menu-r ui-visible-md">
                                     <svg class="ui-icon"><use href="#bars-right"/></svg>
                                 </button>
                             </span>

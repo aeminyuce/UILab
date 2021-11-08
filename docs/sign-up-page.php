@@ -22,7 +22,7 @@
                             <span class="sp-30"></span>
                             <a href="?l=login-page" class="ui-btn font-color-white ui-btn-lg ui-btn-ghost ui-btn-ghost-border ui-btn-sm-fluid ui-padding-30-h circle ui-border-dual ui-stroke ui-ease-btn">
                                 <span class="font-color-white">Have you already an account?</span>
-                                <span class="ui-color hidden-sm">Click here to login.</span>
+                                <span class="ui-color ui-hidden-sm">Click here to login.</span>
                             </a>
                             <span class="sp-30 ui-margin-20-v"></span>
                         </div>
@@ -144,24 +144,24 @@
                                 <span class="sp-30"></span>
 
                                 <h3 class="largest">
-                                    Join our<br class="hidden-sm">huge platform<br class="hidden-sm">
+                                    Join our<br class="ui-hidden-sm">huge platform<br class="ui-hidden-sm">
                                     <span class="font-bold x-largest">today!</span>
                                 </h3>
                                 <ul class="list-unstyled ui-list-spacer-10 font-color-black-muted x-large ui-icons-sm ui-icons-margin-5-r ui-theme-sub">
                                     <li>
-                                        <svg class="ui-icon ui-color hidden-sm"><use href="#check-circle-fill"/></svg>
+                                        <svg class="ui-icon ui-color ui-hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Work and build around your team.
                                     </li>
                                     <li>
-                                        <svg class="ui-icon ui-color hidden-sm"><use href="#check-circle-fill"/></svg>
+                                        <svg class="ui-icon ui-color ui-hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Whatever work you do, wherever you do it.
                                     </li>
                                     <li>
-                                        <svg class="ui-icon ui-color hidden-sm"><use href="#check-circle-fill"/></svg>
+                                        <svg class="ui-icon ui-color ui-hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Where humans connect.
                                     </li>
                                     <li>
-                                        <svg class="ui-icon ui-color hidden-sm"><use href="#check-circle-fill"/></svg>
+                                        <svg class="ui-icon ui-color ui-hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Expanding your environment.
                                     </li>
                                 </ul>

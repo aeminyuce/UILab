@@ -517,28 +517,28 @@
 
                     <div class="font-color-black-muted ui-margin-30-b align-c ui-icons-xxl xs-align-l ui-theme-sub">
                         <button class="ui-tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn ui-color ui-icons-default ui-active">
-                            <svg class="ui-icon hidden-md"><use href="#user-check"/></svg>
+                            <svg class="ui-icon ui-hidden-md"><use href="#user-check"/></svg>
                             <span class="block ui-margin-10-t ui-md-no-margin">1. User Details</span>
                         </button>
 
-                        <svg class="ui-icon ui-margin-15-h font-color-black-50 hidden-md"><use href="#long-arrow-right"/></svg>
+                        <svg class="ui-icon ui-margin-15-h font-color-black-50 ui-hidden-md"><use href="#long-arrow-right"/></svg>
 
                         <button class="ui-tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn">
-                            <svg class="ui-icon hidden-md"><use href="#map"/></svg>
+                            <svg class="ui-icon ui-hidden-md"><use href="#map"/></svg>
                             <span class="block ui-margin-10-t ui-md-no-margin">2. Address Details</span>
                         </button>
 
-                        <svg class="ui-icon ui-margin-15-h font-color-black-50 hidden-md"><use href="#long-arrow-right"/></svg>
+                        <svg class="ui-icon ui-margin-15-h font-color-black-50 ui-hidden-md"><use href="#long-arrow-right"/></svg>
 
                         <button class="ui-tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn">
-                            <svg class="ui-icon hidden-md"><use href="#credit-card"/></svg>
+                            <svg class="ui-icon ui-hidden-md"><use href="#credit-card"/></svg>
                             <span class="block ui-margin-10-t ui-md-no-margin">3. Payment Details</span>
                         </button>
 
-                        <svg class="ui-icon ui-margin-15-h font-color-black-50 hidden-md"><use href="#long-arrow-right"/></svg>
+                        <svg class="ui-icon ui-margin-15-h font-color-black-50 ui-hidden-md"><use href="#long-arrow-right"/></svg>
 
                         <button class="ui-tab ui-btn ui-btn-ghost ui-btn-multi ui-btn-sm-fluid round ui-ease-btn">
-                            <svg class="ui-icon hidden-md"><use href="#truck-fill"/></svg>
+                            <svg class="ui-icon ui-hidden-md"><use href="#truck-fill"/></svg>
                             <span class="block ui-margin-10-t ui-md-no-margin">4. Shipping</span>
                         </button>
                     </div>
