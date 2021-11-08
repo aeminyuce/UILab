@@ -100,36 +100,24 @@
 }
 .ui-no-scroll { overflow: hidden !important; }
 
-[class*="round-"],[class*="circle-"] { background-clip: padding-box; }
+[class*="ui-round-"],[class*="ui-circle-"] { background-clip: padding-box; }
 
-.round {
+.ui-round {
     border-radius: @round;
-    &:extend([class*="round-"]);
+    &:extend([class*="ui-round-"]);
 
-    & > .round,& > * > .round,
-    & > [class*="round-"],& > * > [class*="round-"] { border-radius: (@round - 1) !important; }
+    & > .ui-round,& > * > .ui-round,
+    & > [class*="ui-round-"],& > * > [class*="ui-round-"] { border-radius: (@round - 1) !important; }
 
     &-t { border-radius: @round @round 0 0; }
     &-r { border-radius: 0 @round @round 0; }
     &-b { border-radius: 0 0 @round @round; }
     &-l { border-radius: @round 0 0 @round; }
-
-    &-tl { border-radius: @round 0 0 0; }
-    &-tr { border-radius: 0 @round 0 0; }
-    &-bl { border-radius: 0 0 0 @round; }
-    &-br { border-radius: 0 0 @round 0; }
-
 }
 
-.circle {
+.ui-circle {
     border-radius: @circle;
-    &:extend([class*="circle-"]);
-
-    &-t { border-radius: @circle @circle 0 0; }
-    &-r { border-radius: 0 @circle @circle 0; }
-    &-b { border-radius: 0 0 @circle @circle; }
-    &-l { border-radius: @circle 0 0 @circle; }
-
+    &:extend([class*="ui-circle-"]);
 }
 
 .shadow {

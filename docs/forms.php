@@ -9,7 +9,7 @@
                         <label class="form-grid">Label</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="text round ui-border-dual ui-ease-form">
+                        <div class="text ui-round ui-border-dual ui-ease-form">
                             <input type="text" value="123456">
                         </div>
                         <p class="hint ui-color-black-25">Form hint</p>
@@ -19,7 +19,7 @@
                         <label class="form-grid">Label</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="text form-disabled round ui-border-dual ui-ease-form">
+                        <div class="text form-disabled ui-round ui-border-dual ui-ease-form">
                             <input type="text" disabled value="Disabled Input">
                         </div>
                     </div>
@@ -28,7 +28,7 @@
                         <label class="form-grid">Label</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="textarea form-disabled round ui-border-dual ui-ease-form">
+                        <div class="textarea form-disabled ui-round ui-border-dual ui-ease-form">
                             <textarea disabled>Disabled Textarea</textarea>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                         <label class="form-grid">Label</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="text form-readonly round ui-border-dual ui-ease-form">
+                        <div class="text form-readonly ui-round ui-border-dual ui-ease-form">
                             <input type="text" readonly value="Readonly Input">
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                         <label class="form-grid">Label</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="textarea form-readonly round ui-border-dual ui-ease-form">
+                        <div class="textarea form-readonly ui-round ui-border-dual ui-ease-form">
                             <textarea readonly>Readonly Textarea</textarea>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                         <label class="form-grid">Error Form</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="text round ui-border-dual ui-ease-form error">
+                        <div class="text ui-round ui-border-dual ui-ease-form error">
                             <input type="text" value="123456">
                         </div>
                         <p class="hint error">Your message is here.</p>
@@ -65,7 +65,7 @@
                         <label class="form-grid">Warning Form</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="text round ui-border-dual ui-ease-form warning">
+                        <div class="text ui-round ui-border-dual ui-ease-form warning">
                             <input type="text" value="123456">
                         </div>
                         <p class="hint warning">Your message is here.</p>
@@ -77,7 +77,7 @@
                         <div class="form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-100">
-                                <img class="ui-border-dual round ui-ease-border"
+                                <img class="ui-border-dual ui-round ui-ease-border"
                                     src="img/captcha.jpg"
                                     width="100"
                                     height="42"
@@ -92,7 +92,7 @@
                             </div>
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
-                                    <div class="text ui-border-dual round ui-ease-form">
+                                    <div class="text ui-border-dual ui-round ui-ease-form">
                                         <input type="text" maxlength="4" placeholder="Please enter code">
                                     </div>
                                 </div>
@@ -102,13 +102,13 @@
                     </div>
                     <div class="ui-col-6">
                         <label class="form-label">Full Name</label>
-                        <div class="text ui-border-dual round ui-ease-form">
+                        <div class="text ui-border-dual ui-round ui-ease-form">
                             <input type="text" placeholder="Enter name">
                         </div>
                     </div>
                     <div class="ui-col-6">
                         <label class="form-label">Your Age</label>
-                        <div class="select round ui-border-dual ui-ease-form">
+                        <div class="select ui-round ui-border-dual ui-ease-form">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select your age</option>
@@ -127,7 +127,7 @@
                             <label class="form-grid">Full Name</label>
                         </div>
                         <div class="ui-col-9">
-                            <div class="text ui-border-dual round ui-ease-form">
+                            <div class="text ui-border-dual ui-round ui-ease-form">
                                 <input type="text" placeholder="Enter name">
                             </div>
                             <p class="hint ui-color-black-25">Form hint</p>
@@ -136,7 +136,7 @@
                             <label class="form-grid">Your Age</label>
                         </div>
                         <div class="ui-col-9">
-                            <div class="select round ui-border-dual ui-ease-form">
+                            <div class="select ui-round ui-border-dual ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="">Select your age</option>
@@ -154,7 +154,7 @@
                             <div class="form-holder ui-col-static ui-no-fluid">
 
                                 <div class="ui-col-100">
-                                    <img class="ui-border-dual round ui-ease-border"
+                                    <img class="ui-border-dual ui-round ui-ease-border"
                                         src="img/captcha.jpg"
                                         width="100"
                                         height="48"
@@ -169,7 +169,7 @@
                                 </div>
                                 <div class="ui-row ui-no-row-gap">
                                     <div class="ui-col-12">
-                                        <div class="text ui-border-dual round ui-ease-form">
+                                        <div class="text ui-border-dual ui-round ui-ease-form">
                                             <input type="text" maxlength="4" placeholder="Please enter code">
                                         </div>
                                     </div>
@@ -178,17 +178,17 @@
                             </div>
                         </div>
                         <div class="ui-col-9 ui-offset-3">
-                            <button type="reset" class="ui-btn ui-btn-xs-fluid round ui-ease-btn">Reset Form</button>
+                            <button type="reset" class="ui-btn ui-btn-xs-fluid ui-round ui-ease-btn">Reset Form</button>
                         </div>
                         <div class="ui-col-6">
                             <label class="form-label">Full Name</label>
-                            <div class="text ui-border-dual round ui-ease-form">
+                            <div class="text ui-border-dual ui-round ui-ease-form">
                                 <input type="text" placeholder="Enter name">
                             </div>
                         </div>
                         <div class="ui-col-6">
                             <label class="form-label">Your Age</label>
-                            <div class="select round ui-border-dual ui-ease-form">
+                            <div class="select ui-round ui-border-dual ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="">Select your age</option>
@@ -206,19 +206,19 @@
                     <div class="ui-row ui-padding-30-b">
 
                         <div class="ui-col-12">
-                            <div data-ui-src="json/countries.json" data-ui-val="code" class="ui-autocomplete text text-icon round ui-border-dual ui-ease-form form-inline-xs">
+                            <div data-ui-src="json/countries.json" data-ui-val="code" class="ui-autocomplete text text-icon ui-round ui-border-dual ui-ease-form form-inline-xs">
                                 <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
                                 <input type="text" placeholder="Country Code" autocomplete="off">
                             </div>
-                            <div data-ui-src="json/countries.json" data-ui-val="name" class="ui-autocomplete text text-icon round ui-border-dual ui-ease-form form-inline-xs">
+                            <div data-ui-src="json/countries.json" data-ui-val="name" class="ui-autocomplete text text-icon ui-round ui-border-dual ui-ease-form form-inline-xs">
                                 <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
                                 <input type="text" placeholder="Country" autocomplete="off">
                             </div>
                         </div>
 
                         <div class="ui-col-12 ui-ease-1st-btn">
-                            <button type="reset" class="ui-btn ui-btn-xs-fluid round">Reset Form</button>
-                            <button type="submit" class="ui-btn ui-btn-xs-fluid round ui-theme-sub ui-fill-dark-100">Submit Form</button>
+                            <button type="reset" class="ui-btn ui-btn-xs-fluid ui-round">Reset Form</button>
+                            <button type="submit" class="ui-btn ui-btn-xs-fluid ui-round ui-theme-sub ui-fill-dark-100">Submit Form</button>
                         </div>
 
                     </div>
@@ -229,7 +229,7 @@
                 <div class="ui-padding-30-b">
                     <div class="ui-row">
                         <div class="ui-col-6">
-                            <div class="select round ui-border-dual ui-ease-form">
+                            <div class="select ui-round ui-border-dual ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="">Select</option>
@@ -239,7 +239,7 @@
                             </div>
                         </div>
                         <div class="ui-col-6">
-                            <div class="select round ui-border-dual ui-ease-form">
+                            <div class="select ui-round ui-border-dual ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <optgroup label="Title">
@@ -257,7 +257,7 @@
                         </div>
                     </div>
 
-                    <div class="select-multi ui-margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="select-multi ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <select multiple size="6">
                             <option value="">Value 1</option>
                             <option>Value 2</option>
@@ -271,7 +271,7 @@
                             <option>Value 10</option>
                         </select>
                     </div>
-                    <div class="select-multi ui-margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="select-multi ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <select multiple size="6">
                             <optgroup label="Title">
                                 <option value="">Select</option>
@@ -297,7 +297,7 @@
                             <div class="dual-multi-select ui-col-static">
                                 <div class="ui-row">
                                     <div class="ui-col-12">
-                                        <div class="select-multi round ui-border-dual ui-ease-form">
+                                        <div class="select-multi ui-round ui-border-dual ui-ease-form">
                                             <select style="height: 156px;" multiple size="6" name="a">
                                                 <option value="1" data-ui-index="3">Value 1</option>
                                                 <option value="2">Value 2</option>
@@ -323,7 +323,7 @@
                                 </div>
                                 <div class="ui-row">
                                     <div class="ui-col-12">
-                                        <div class="select-multi round ui-border-dual ui-ease-form">
+                                        <div class="select-multi ui-round ui-border-dual ui-ease-form">
                                             <select style="height: 156px;" multiple size="6"></select>
                                         </div>
                                     </div>
@@ -335,7 +335,7 @@
                             <div class="dual-multi-select ui-col-static">
                                 <div class="ui-row">
                                     <div class="ui-col-12">
-                                        <div class="select-multi round ui-border-dual ui-ease-form">
+                                        <div class="select-multi ui-round ui-border-dual ui-ease-form">
                                             <select style="height: 156px;" multiple size="6" name="b">
                                                 <option value="1" data-ui-index="3" selected>Value 1</option>
                                                 <option value="2">Value 2</option>
@@ -361,7 +361,7 @@
                                 </div>
                                 <div class="ui-row">
                                     <div class="ui-col-12">
-                                        <div class="select-multi round ui-border-dual ui-ease-form">
+                                        <div class="select-multi ui-round ui-border-dual ui-ease-form">
                                             <select style="height: 156px;" multiple size="6"></select>
                                         </div>
                                     </div>
@@ -373,7 +373,7 @@
                             <div class="dual-multi-select ui-col-static">
                                 <div class="ui-row">
                                     <div class="ui-col-12">
-                                        <div class="select-multi round ui-border-dual ui-ease-form">
+                                        <div class="select-multi ui-round ui-border-dual ui-ease-form">
                                             <select style="height: 156px;" multiple size="6" name="c">
                                                 <option value="1" selected>Value 1</option>
                                                 <option value="2">Value 2</option>
@@ -399,7 +399,7 @@
                                 </div>
                                 <div class="ui-row">
                                     <div class="ui-col-12">
-                                        <div class="select-multi round ui-border-dual ui-ease-form">
+                                        <div class="select-multi ui-round ui-border-dual ui-ease-form">
                                             <select style="height: 156px;" multiple size="6"></select>
                                         </div>
                                     </div>
@@ -407,8 +407,8 @@
                             </div>
 
                             <div class="ui-col-12 ui-ease-1st-btn">
-                                <button type="reset" class="ui-btn ui-btn-xs-fluid round">Reset Form</button>
-                                <button type="submit" class="ui-btn ui-btn-xs-fluid round ui-theme-sub ui-fill-dark-100">Submit Form</button>
+                                <button type="reset" class="ui-btn ui-btn-xs-fluid ui-round">Reset Form</button>
+                                <button type="submit" class="ui-btn ui-btn-xs-fluid ui-round ui-theme-sub ui-fill-dark-100">Submit Form</button>
                             </div>
                         </div>
 
@@ -418,20 +418,20 @@
 
                 <h3>Textarea Forms</h3>
                 <div class="ui-padding-30-b">
-                    <div class="textarea ui-margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="textarea ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <textarea placeholder="Placeholder Text"></textarea>
                     </div>
-                    <div class="textarea ui-toggle-textarea ui-margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="textarea ui-toggle-textarea ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <textarea placeholder="Toggle textarea example"></textarea>
                     </div>
-                    <div class="textarea round ui-border-dual ui-ease-form" data-ui-counter="255">
+                    <div class="textarea ui-round ui-border-dual ui-ease-form" data-ui-counter="255">
                         <textarea rows="4">Textarea with counter.</textarea>
                     </div>
                 </div>
 
                 <h3>File Input</h3>
                 <div class="ui-padding-30-b ui-theme-gray">
-                    <div class="file round ui-no-border ui-fill-light-100 ui-ease-form">
+                    <div class="file ui-round ui-no-border ui-fill-light-100 ui-ease-form">
                         <input type="file">
                         <span class="ui-btn ui-ease-btn">Browse</span>
                         <i>Choose file.</i>
@@ -439,7 +439,7 @@
 
                     <span class="sp-10"></span>
 
-                    <div class="file round ui-ease-form">
+                    <div class="file ui-round ui-ease-form">
                         <input type="file">
                         <span class="ui-btn ui-ease-btn">Browse</span>
                         <i>Choose file.</i>
@@ -447,7 +447,7 @@
 
                     <span class="sp-10"></span>
 
-                    <div class="file round ui-border-dual ui-ease-form">
+                    <div class="file ui-round ui-border-dual ui-ease-form">
                         <input type="file">
                         <span class="ui-btn ui-ease-btn">Browse</span>
                         <i>Choose file.</i>
@@ -457,7 +457,7 @@
 
                     <label class="form-label ui-padding-10-b">File Input with Large Forms</label>
                     <div class="form-lg ui-ease-1st-form">
-                        <div class="file round ui-no-border ui-fill-light-100">
+                        <div class="file ui-round ui-no-border ui-fill-light-100">
                             <input type="file">
                             <span class="ui-btn ui-ease-btn">Browse</span>
                             <i>Choose file.</i>
@@ -465,7 +465,7 @@
 
                         <span class="sp-10"></span>
 
-                        <div class="file round">
+                        <div class="file ui-round">
                             <input type="file">
                             <span class="ui-btn ui-ease-btn">Browse</span>
                             <i>Choose file.</i>
@@ -473,7 +473,7 @@
 
                         <span class="sp-10"></span>
 
-                        <div class="file round ui-border-dual">
+                        <div class="file ui-round ui-border-dual">
                             <input type="file">
                             <span class="ui-btn ui-ease-btn">Browse</span>
                             <i>Choose file.</i>
@@ -484,31 +484,31 @@
 
                     <label class="form-label ui-padding-10-b">File Input Like Buttons</label>
                     <div>
-                        <div class="file ui-no-border ui-inline-block round ui-ease-form">
+                        <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
                             <input class="ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-inline-block round ui-ease-form">
+                        <div class="file ui-inline-block ui-round ui-ease-form">
                             <input class="ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-border-dual ui-inline-block round ui-ease-form">
+                        <div class="file ui-border-dual ui-inline-block ui-round ui-ease-form">
                             <input class="ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-no-border ui-inline-block round ui-ease-form">
+                        <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
                             <input class="bg-white ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-theme-base ui-fill-dark-100 ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-no-border ui-inline-block round ui-ease-form">
+                        <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
                             <input class="bg-white ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
@@ -519,31 +519,31 @@
                     <span class="sp-10"></span>
 
                     <div class="form-lg">
-                        <div class="file ui-no-border ui-inline-block round ui-ease-form">
+                        <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
                             <input class="ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-inline-block round ui-ease-form">
+                        <div class="file ui-inline-block ui-round ui-ease-form">
                             <input class="ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-border-dual ui-inline-block round ui-ease-form">
+                        <div class="file ui-border-dual ui-inline-block ui-round ui-ease-form">
                             <input class="ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-no-border ui-inline-block round ui-ease-form">
+                        <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
                             <input class="bg-white ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-theme-base ui-fill-dark-100 ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-no-border ui-inline-block round ui-ease-form">
+                        <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
                             <input class="bg-white ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
@@ -591,7 +591,7 @@
                     <ul class="list-inline ui-list-gap">
                         <li>
                             <label class="custom">
-                                <span class="check-custom round ui-border-dual ui-ease-form">
+                                <span class="check-custom ui-round ui-border-dual ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state"></i>
                                 </span>
@@ -600,7 +600,7 @@
                         </li>
                         <li>
                             <label class="custom">
-                                <div class="check-custom round ui-border-dual ui-ease-form">
+                                <div class="check-custom ui-round ui-border-dual ui-ease-form">
                                     <input type="checkbox" class="indeterminate">
                                     <i class="state"></i>
                                 </div>
@@ -644,7 +644,7 @@
                     <ul class="list-inline ui-list-gap">
                         <li>
                             <label class="custom">
-                                <span class="switch-custom round ui-border-dual ui-ease-form">
+                                <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state"></i>
                                 </span>
@@ -653,7 +653,7 @@
                         </li>
                         <li>
                             <label class="custom">
-                                <span class="switch-custom round ui-border-dual ui-ease-form">
+                                <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                         <input type="checkbox" checked>
                                         <i class="state ui-theme-sub ui-fill-dark-100"></i>
                                 </span>
@@ -662,7 +662,7 @@
                         </li>
                         <li>
                             <label class="custom">
-                                <span class="switch-custom round ui-border-dual ui-ease-form">
+                                <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                         <input type="checkbox" class="indeterminate">
                                         <i class="state"></i>
                                 </span>
@@ -673,18 +673,18 @@
 
                     <span class="sp-15"></span>
 
-                    <div class="text round ui-border-dual ui-ease-form form-inline">
+                    <div class="text ui-round ui-border-dual ui-ease-form form-inline">
                         <input type="text" value="Inline form">
                     </div>
                     <label class="custom">
-                        <span class="switch-custom round ui-border-dual ui-ease-form">
+                        <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                             <input type="checkbox" checked>
                             <i class="state"></i>
                         </span>
                         Custom Switch
                     </label>
                     <label class="custom">
-                        <span class="check-custom round ui-border-dual ui-ease-form">
+                        <span class="check-custom ui-round ui-border-dual ui-ease-form">
                             <input type="checkbox" checked>
                             <i class="state"></i>
                         </span>
@@ -719,10 +719,10 @@
 
                 <h3>Inline Forms</h3>
                 <div class="ui-padding-30-b">
-                    <div class="text ui-margin-10-b round ui-border-dual form-inline ui-ease-form">
+                    <div class="text ui-margin-10-b ui-round ui-border-dual form-inline ui-ease-form">
                         <input type="text">
                     </div>
-                    <div class="select ui-margin-10-b round ui-border-dual form-inline ui-ease-form">
+                    <div class="select ui-margin-10-b ui-round ui-border-dual form-inline ui-ease-form">
                         <svg class="ui-icon"><use href="#angle-down"/></svg>
                         <select>
                             <option value="">Select</option>
@@ -730,17 +730,17 @@
                             <option>Second</option>
                         </select>
                     </div>
-                    <div class="textarea ui-toggle-textarea ui-margin-10-b round ui-border-dual form-inline ui-ease-form">
+                    <div class="textarea ui-toggle-textarea ui-margin-10-b ui-round ui-border-dual form-inline ui-ease-form">
                         <textarea placeholder="Textarea"></textarea>
                     </div>
 
                     <span class="sp-15"></span>
 
                     <h5 class="ui-color-black-25">Responsive Inline Forms</h5>
-                    <div class="text ui-margin-10-b round ui-border-dual form-inline-xs ui-ease-form">
+                    <div class="text ui-margin-10-b ui-round ui-border-dual form-inline-xs ui-ease-form">
                         <input type="text">
                     </div>
-                    <div class="select ui-margin-10-b round ui-border-dual form-inline-xs ui-ease-form">
+                    <div class="select ui-margin-10-b ui-round ui-border-dual form-inline-xs ui-ease-form">
                         <svg class="ui-icon"><use href="#angle-down"/></svg>
                         <select>
                             <option value="">Select</option>
@@ -748,22 +748,22 @@
                             <option>Second</option>
                         </select>
                     </div>
-                    <div class="textarea ui-toggle-textarea ui-margin-10-b round ui-border-dual form-inline-xs ui-ease-form">
+                    <div class="textarea ui-toggle-textarea ui-margin-10-b ui-round ui-border-dual form-inline-xs ui-ease-form">
                         <textarea placeholder="Textarea"></textarea>
                     </div>
                 </div>
 
                 <h3>Form Icons</h3>
                 <div class="ui-padding-30-b">
-                    <div class="text text-icon-l ui-margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text text-icon-l ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#search"/></svg>
                         <input type="text" placeholder="Left icon">
                     </div>
-                    <div class="text text-icon ui-margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text text-icon ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
                         <input type="text" placeholder="Right icon">
                     </div>
-                    <div class="text text-icon-both round ui-border-dual ui-ease-form">
+                    <div class="text text-icon-both ui-round ui-border-dual ui-ease-form">
                         <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
                         <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
                         <input type="text" placeholder="Both icon">
@@ -773,15 +773,15 @@
 
                     <label class="form-label ui-padding-10-b">Form Icons with Large Forms</label>
                     <div class="form-lg">
-                        <div class="text text-icon-l ui-margin-10-b round ui-border-dual ui-ease-form">
+                        <div class="text text-icon-l ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                             <svg class="ui-icon"><use href="#search"/></svg>
                             <input type="text" placeholder="Left icon">
                         </div>
-                        <div class="text text-icon ui-margin-10-b round ui-border-dual ui-ease-form">
+                        <div class="text text-icon ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                             <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
                             <input type="text" placeholder="Right icon">
                         </div>
-                        <div class="text text-icon-both round ui-border-dual ui-ease-form">
+                        <div class="text text-icon-both ui-round ui-border-dual ui-ease-form">
                             <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
                             <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
                             <input type="text" placeholder="Both icon">
@@ -792,13 +792,13 @@
                 <h3>Clear with Form Icons</h3>
                 <div class="ui-padding-30-b">
                     <form action="#succesful">
-                        <div class="text text-icon ui-margin-10-b round ui-border-dual has-clear ui-ease-form">
+                        <div class="text text-icon ui-margin-10-b ui-round ui-border-dual has-clear ui-ease-form">
                             <button type="button" class="clear-form">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                             <input type="text" value="Defined value example">
                         </div>
-                        <div class="text text-icon ui-margin-10-b round ui-border-dual has-clear ui-ease-form">
+                        <div class="text text-icon ui-margin-10-b ui-round ui-border-dual has-clear ui-ease-form">
                             <button type="button" class="clear-form">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
@@ -806,21 +806,21 @@
                         </div>
                         <label class="form-label ui-padding-10-b">Clear with Large Forms</label>
                         <div class="form-lg ui-margin-10-b ui-ease-1st-form">
-                            <div class="text text-icon round ui-border-dual has-clear">
+                            <div class="text text-icon ui-round ui-border-dual has-clear">
                                 <button type="button" class="clear-form">
                                     <svg class="ui-icon"><use href="#remove"/></svg>
                                 </button>
                                 <input type="text">
                             </div>
                         </div>
-                        <button type="reset" class="ui-btn ui-btn-xs-fluid round ui-ease-btn">Reset Form</button>
+                        <button type="reset" class="ui-btn ui-btn-xs-fluid ui-round ui-ease-btn">Reset Form</button>
                     </form>
                 </div>
 
                 <h3>Submit with Form Icons</h3>
                 <div class="ui-padding-30-b">
                     <form action="#succesful">
-                        <div class="text text-icon round ui-border-dual ui-ease-form">
+                        <div class="text text-icon ui-round ui-border-dual ui-ease-form">
                             <button type="submit">
                                 <svg class="ui-icon"><use href="#search"/></svg>
                             </button>
@@ -839,7 +839,7 @@
                             <a class="small ui-color-black-25 underline" href="#">Top Right Link</a>
                         </div>
                     </div>
-                    <div class="text ui-margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <input type="text">
                     </div>
 
@@ -848,10 +848,10 @@
                             <label class="form-label">Label</label>
                         </div>
                         <div class="ui-col-6 align-r">
-                            <a class="ui-btn ui-btn-xs ui-color-black-25 round ui-ease-btn">Button</a>
+                            <a class="ui-btn ui-btn-xs ui-color-black-25 ui-round ui-ease-btn">Button</a>
                         </div>
                     </div>
-                    <div class="text ui-margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <input type="text">
                     </div>
 
@@ -861,11 +861,11 @@
                         </div>
                         <div class="ui-col-6 align-r">
                             <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
-                                <button class="ui-btn ui-btn-xs ui-btn-ghost ui-color-black-25 round">
+                                <button class="ui-btn ui-btn-xs ui-btn-ghost ui-color-black-25 ui-round">
                                     Dropdown Button
                                     <svg class="ui-toggle-icon ui-icon ui-margin-3-l"><use href="#angle-down"/></svg>
                                 </button>
-                                <ul class="ui-dropdown-menu round shadow-lg">
+                                <ul class="ui-dropdown-menu ui-round shadow-lg">
                                     <li><a href="#">Dropdown Link</a></li>
                                     <li><a href="#">Dropdown Link</a></li>
                                     <li><a href="#">Dropdown Link</a></li>
@@ -873,7 +873,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text round ui-border-dual ui-ease-form">
+                    <div class="text ui-round ui-border-dual ui-ease-form">
                         <input type="text">
                     </div>
                 </div>
@@ -886,12 +886,12 @@
                         <div class="form-holder ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text round ui-ease-form">
+                                <div class="text ui-round ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
                             <div class="ui-col-2 ui-col-xs-4">
-                                <div class="select round ui-ease-form">
+                                <div class="select ui-round ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -901,7 +901,7 @@
                                 </div>
                             </div>
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text round ui-ease-form">
+                                <div class="text ui-round ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
@@ -910,12 +910,12 @@
                         <div class="form-holder ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text round ui-border-dual ui-ease-form">
+                                <div class="text ui-round ui-border-dual ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
                             <div class="ui-col-2 ui-col-xs-4">
-                                <div class="select round ui-border-dual ui-ease-form">
+                                <div class="select ui-round ui-border-dual ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -925,7 +925,7 @@
                                 </div>
                             </div>
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text round ui-border-dual ui-ease-form">
+                                <div class="text ui-round ui-border-dual ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
@@ -934,12 +934,12 @@
                         <div class="form-holder ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text circle ui-ease-form">
+                                <div class="text ui-circle ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
                             <div class="ui-col-2 ui-col-xs-4">
-                                <div class="select circle ui-ease-form">
+                                <div class="select ui-circle ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -949,7 +949,7 @@
                                 </div>
                             </div>
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text circle ui-ease-form">
+                                <div class="text ui-circle ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
@@ -958,12 +958,12 @@
                         <div class="form-holder ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text circle ui-border-dual ui-ease-form">
+                                <div class="text ui-circle ui-border-dual ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
                             <div class="ui-col-2 ui-col-xs-4">
-                                <div class="select circle ui-border-dual ui-ease-form">
+                                <div class="select ui-circle ui-border-dual ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -973,7 +973,7 @@
                                 </div>
                             </div>
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text circle ui-border-dual ui-ease-form">
+                                <div class="text ui-circle ui-border-dual ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
@@ -985,12 +985,12 @@
                         <div class="form-holder form-lg ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text round ui-ease-form">
+                                <div class="text ui-round ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
                             <div class="ui-col-2 ui-col-xs-4">
-                                <div class="select round ui-ease-form">
+                                <div class="select ui-round ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -1000,7 +1000,7 @@
                                 </div>
                             </div>
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text round ui-ease-form">
+                                <div class="text ui-round ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
@@ -1009,12 +1009,12 @@
                         <div class="form-holder form-lg ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text round ui-border-dual ui-ease-form">
+                                <div class="text ui-round ui-border-dual ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
                             <div class="ui-col-2 ui-col-xs-4">
-                                <div class="select round ui-border-dual ui-ease-form">
+                                <div class="select ui-round ui-border-dual ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -1024,7 +1024,7 @@
                                 </div>
                             </div>
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text round ui-border-dual ui-ease-form">
+                                <div class="text ui-round ui-border-dual ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
@@ -1033,12 +1033,12 @@
                         <div class="form-holder form-lg ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text circle ui-ease-form">
+                                <div class="text ui-circle ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
                             <div class="ui-col-2 ui-col-xs-4">
-                                <div class="select circle ui-ease-form">
+                                <div class="select ui-circle ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -1048,7 +1048,7 @@
                                 </div>
                             </div>
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text circle ui-ease-form">
+                                <div class="text ui-circle ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
@@ -1057,12 +1057,12 @@
                         <div class="form-holder form-lg ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text circle ui-border-dual ui-ease-form">
+                                <div class="text ui-circle ui-border-dual ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
                             <div class="ui-col-2 ui-col-xs-4">
-                                <div class="select circle ui-border-dual ui-ease-form">
+                                <div class="select ui-circle ui-border-dual ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -1072,7 +1072,7 @@
                                 </div>
                             </div>
                             <div class="ui-col-5 ui-col-xs-4">
-                                <div class="text circle ui-border-dual ui-ease-form">
+                                <div class="text ui-circle ui-border-dual ui-ease-form">
                                     <input type="text">
                                 </div>
                             </div>
@@ -1087,7 +1087,7 @@
                         <div class="form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-100">
-                                <div class="select round ui-ease-form">
+                                <div class="select ui-round ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -1098,12 +1098,12 @@
                             </div>
                             <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-6">
-                                    <div class="text round ui-ease-form">
+                                    <div class="text ui-round ui-ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
                                 <div class="ui-col-6">
-                                    <div class="text round ui-ease-form">
+                                    <div class="text ui-round ui-ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
@@ -1116,13 +1116,13 @@
 
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
-                                    <div class="text round ui-ease-form">
+                                    <div class="text ui-round ui-ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
                             </div>
                             <div class="ui-col-100">
-                                <div class="select round ui-ease-form">
+                                <div class="select ui-round ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -1133,7 +1133,7 @@
                             </div>
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
-                                    <div class="text round ui-ease-form">
+                                    <div class="text ui-round ui-ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
@@ -1145,7 +1145,7 @@
                         <div class="form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-100">
-                                <div class="select round ui-ease-form">
+                                <div class="select ui-round ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -1156,13 +1156,13 @@
                             </div>
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
-                                    <div class="text round ui-ease-form">
+                                    <div class="text ui-round ui-ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
                             </div>
                             <div class="ui-col-100">
-                                <div class="select round ui-ease-form">
+                                <div class="select ui-round ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -1178,7 +1178,7 @@
                         <div class="form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-100">
-                                <div class="select round ui-border-dual ui-ease-form">
+                                <div class="select ui-round ui-border-dual ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -1189,12 +1189,12 @@
                             </div>
                             <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-6">
-                                    <div class="text round ui-border-dual ui-ease-form">
+                                    <div class="text ui-round ui-border-dual ui-ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
                                 <div class="ui-col-6">
-                                    <div class="text round ui-border-dual ui-ease-form">
+                                    <div class="text ui-round ui-border-dual ui-ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
@@ -1207,13 +1207,13 @@
 
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
-                                    <div class="text round ui-border-dual ui-ease-form">
+                                    <div class="text ui-round ui-border-dual ui-ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
                             </div>
                             <div class="ui-col-100">
-                                <div class="select round ui-border-dual ui-ease-form">
+                                <div class="select ui-round ui-border-dual ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -1224,7 +1224,7 @@
                             </div>
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
-                                    <div class="text round ui-border-dual ui-ease-form">
+                                    <div class="text ui-round ui-border-dual ui-ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
@@ -1237,18 +1237,18 @@
 
                             <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-6">
-                                    <div class="text circle ui-border-dual ui-ease-form">
+                                    <div class="text ui-circle ui-border-dual ui-ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
                                 <div class="ui-col-6">
-                                    <div class="text circle ui-border-dual ui-ease-form">
+                                    <div class="text ui-circle ui-border-dual ui-ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
                             </div>
                             <div class="ui-col-100">
-                                <div class="select circle ui-border-dual ui-ease-form">
+                                <div class="select ui-circle ui-border-dual ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -1265,13 +1265,13 @@
 
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
-                                    <div class="text circle ui-border-dual ui-ease-form">
+                                    <div class="text ui-circle ui-border-dual ui-ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
                             </div>
                             <div class="ui-col-100">
-                                <div class="select circle ui-border-dual ui-ease-form">
+                                <div class="select ui-circle ui-border-dual ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -1281,7 +1281,7 @@
                                 </div>
                             </div>
                             <div class="ui-col-100">
-                                <div class="select circle ui-border-dual ui-ease-form">
+                                <div class="select ui-circle ui-border-dual ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -1297,7 +1297,7 @@
                         <div class="form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-100">
-                                <div class="select circle ui-border-dual ui-ease-form">
+                                <div class="select ui-circle ui-border-dual ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -1308,13 +1308,13 @@
                             </div>
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
-                                    <div class="text circle ui-border-dual ui-ease-form">
+                                    <div class="text ui-circle ui-border-dual ui-ease-form">
                                         <input type="text">
                                     </div>
                                 </div>
                             </div>
                             <div class="ui-col-100">
-                                <div class="select circle ui-border-dual ui-ease-form">
+                                <div class="select ui-circle ui-border-dual ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select>
                                         <option value="">Select</option>
@@ -1334,7 +1334,7 @@
                         <label class="form-grid" >Number Form</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="text round ui-border-dual ui-ease-form">
+                        <div class="text ui-round ui-border-dual ui-ease-form">
                             <input class="number" type="text" placeholder="Number">
                         </div>
                     </div>
@@ -1347,18 +1347,18 @@
 
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
-                                    <div class="text round ui-border-dual ui-ease-form">
+                                    <div class="text ui-round ui-border-dual ui-ease-form">
                                         <input type="text" value="3" min="2" max="5" class="number align-r">
                                     </div>
                                 </div>
                             </div>
                             <div class="ui-col-42">
-                                <button class="spinner-down ui-btn ui-btn-square ui-btn-ghost ui-border-dual round ui-ease-btn">
+                                <button class="spinner-down ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-round ui-ease-btn">
                                     <svg class="ui-icon"><use href="#minus"/></svg>
                                 </button>
                             </div>
                             <div class="ui-col-42">
-                                <button class="spinner-up ui-btn ui-btn-square ui-btn-ghost ui-border-dual round ui-ease-btn">
+                                <button class="spinner-up ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-round ui-ease-btn">
                                     <svg class="ui-icon"><use href="#plus"/></svg>
                                 </button>
                             </div>
@@ -1373,19 +1373,19 @@
                         <div class="currency-spinner form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-42">
-                                <button class="currency-down ui-btn ui-btn-square ui-btn-ghost ui-border-dual round ui-ease-btn">
+                                <button class="currency-down ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-round ui-ease-btn">
                                     <svg class="ui-icon"><use href="#minus"/></svg>
                                 </button>
                             </div>
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
-                                    <div class="text round ui-border-dual ui-ease-form">
+                                    <div class="text ui-round ui-border-dual ui-ease-form">
                                         <input type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
                                     </div>
                                 </div>
                             </div>
                             <div class="ui-col-42">
-                                <button class="currency-up ui-btn ui-btn-square ui-btn-ghost ui-border-dual round ui-ease-btn">
+                                <button class="currency-up ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-round ui-ease-btn">
                                     <svg class="ui-icon"><use href="#plus"/></svg>
                                 </button>
                             </div>
@@ -1397,7 +1397,7 @@
                         <label class="form-grid">Toggle Password</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="text text-icon round ui-border-dual ui-ease-form">
+                        <div class="text text-icon ui-round ui-border-dual ui-ease-form">
                             <button type="button" title="Toggle Password" class="show-pass">
                                 <svg class="ui-icon"><use href="#eye-fill"/></svg>
                             </button>
@@ -1414,7 +1414,7 @@
                                 <label class="form-grid">Required with disabled forms</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="text round ui-border-dual form-disabled ui-ease-form">
+                                <div class="text ui-round ui-border-dual form-disabled ui-ease-form">
                                     <input class="required" type="text" placeholder="Disabled required forms are inherited!" disabled>
                                 </div>
                             </div>
@@ -1423,7 +1423,7 @@
                                 <label class="form-grid">Required with message</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="text round ui-border-dual ui-ease-form">
+                                <div class="text ui-round ui-border-dual ui-ease-form">
                                     <input class="required" type="text" placeholder="Type your name">
                                 </div>
                                 <p class="required-msg">Please, type your name.</p>
@@ -1434,7 +1434,7 @@
                                 <label class="form-grid">Required with no message</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="text round ui-border-dual ui-ease-form">
+                                <div class="text ui-round ui-border-dual ui-ease-form">
                                     <input class="required" type="text">
                                 </div>
                                 <i class="hint ui-color-black-25">* Required</i>
@@ -1444,7 +1444,7 @@
                                 <label class="form-grid">Required with min and max length</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="text round ui-border-dual ui-ease-form">
+                                <div class="text ui-round ui-border-dual ui-ease-form">
                                     <input class="required" type="text" minlength="3" maxlength="10">
                                 </div>
                                 <p class="required-msg">Minimum length is 3 characters.</p>
@@ -1455,7 +1455,7 @@
                                 <label class="form-grid">Required with min and max number</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="text round ui-border-dual ui-ease-form">
+                                <div class="text ui-round ui-border-dual ui-ease-form">
                                     <input class="required" type="text" minnumber="-5" maxnumber="10">
                                 </div>
                                 <p class="required-msg">Minimum number is -5 and maximum number is 10.</p>
@@ -1466,7 +1466,7 @@
                                 <label class="form-grid">Required with password and min length</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="text round ui-border-dual ui-ease-form">
+                                <div class="text ui-round ui-border-dual ui-ease-form">
                                     <input class="required" type="password" minlength="8">
                                 </div>
                                 <p class="required-msg">Minimum length is 8 characters.</p>
@@ -1477,7 +1477,7 @@
                                 <label class="form-grid">Required with email</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="text round ui-border-dual ui-ease-form">
+                                <div class="text ui-round ui-border-dual ui-ease-form">
                                     <input class="required" type="email">
                                 </div>
                                 <p class="required-msg">Enter a valid email.</p>
@@ -1488,7 +1488,7 @@
                                 <label class="form-grid">Required with select forms.</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="select round ui-border-dual ui-ease-form">
+                                <div class="select ui-round ui-border-dual ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                     <select class="required">
                                         <option value="">Select</option>
@@ -1508,13 +1508,13 @@
 
                                     <div class="ui-row ui-no-row-gap">
                                         <div class="ui-col-12">
-                                            <div class="text round ui-border-dual ui-ease-form">
+                                            <div class="text ui-round ui-border-dual ui-ease-form">
                                                 <input class="required" type="text" placeholder="Keyword">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="ui-col-200">
-                                        <div class="select round ui-border-dual ui-ease-form">
+                                        <div class="select ui-round ui-border-dual ui-ease-form">
                                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                                             <select class="required">
                                                 <option value="">Category</option>
@@ -1539,7 +1539,7 @@
                                 <label class="form-grid">Required with textarea forms and min length.</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="textarea ui-margin-10-b round ui-border-dual ui-ease-form">
+                                <div class="textarea ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                                     <textarea class="required" placeholder="Write your comments." minlength="10"></textarea>
                                 </div>
                                 <p class="required-msg">Please, write your comments more than 10 characters.</p>
@@ -1550,7 +1550,7 @@
                                 <label class="form-grid">Required with textarea forms and min length.</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="file round ui-border-dual ui-ease-form">
+                                <div class="file ui-round ui-border-dual ui-ease-form">
                                     <input class="required" type="file">
                                     <span class="ui-btn ui-ease-btn">Browse</span>
                                     <i>Choose file.</i>
@@ -1591,7 +1591,7 @@
                             <div class="ui-col-9">
                                 <div class="required-accept">
                                     <label class="custom">
-                                        <span class="check-custom round ui-border-dual">
+                                        <span class="check-custom ui-round ui-border-dual">
                                             <input class="required" type="checkbox">
                                             <i class="state"></i>
                                         </span>
@@ -1658,7 +1658,7 @@
                             <div class="ui-col-9">
                                 <div class="required-accept">
                                     <label class="custom">
-                                        <span class="switch-custom round ui-border-dual ui-ease-form">
+                                        <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="required" type="checkbox">
                                             <i class="state"></i>
                                         </span>
@@ -1670,56 +1670,56 @@
                             </div>
 
                             <div class="ui-col-9 ui-push-3 ui-ease-1st-btn">
-                                <button type="reset" class="ui-btn ui-btn-xs-fluid round">Reset Form</button>
-                                <button type="submit" class="ui-btn ui-btn-xs-fluid round ui-theme-sub ui-fill-dark-100">Submit Form</button>
+                                <button type="reset" class="ui-btn ui-btn-xs-fluid ui-round">Reset Form</button>
+                                <button type="submit" class="ui-btn ui-btn-xs-fluid ui-round ui-theme-sub ui-fill-dark-100">Submit Form</button>
                             </div>
                         </div>
                     </form>
                 </div>
 
                 <h3>Forms in Dark Themes</h3>
-                <div class="ui-padding-15 ui-margin-30-b round ui-theme-base ui-fill-dark-100">
+                <div class="ui-padding-15 ui-margin-30-b ui-round ui-theme-base ui-fill-dark-100">
 
-                    <div class="text form-light ui-margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <input type="text" placeholder="Placeholder">
                     </div>
-                    <div class="text text-icon form-light ui-margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text text-icon form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#search"/></svg>
                         <input type="text" placeholder="With text icon">
                     </div>
-                    <div class="text error form-light ui-margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text error form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <input type="text" placeholder="Error Form">
                     </div>
-                    <div class="text error form-light ui-margin-10-b round ui-no-border ui-ease-form">
+                    <div class="text error form-light ui-margin-10-b ui-round ui-no-border ui-ease-form">
                         <input type="text" placeholder="Error Form">
                     </div>
-                    <div class="text warning form-light ui-margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text warning form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <input type="text" placeholder="Warning Form">
                     </div>
-                    <div class="text warning form-light round ui-no-border ui-ease-form">
+                    <div class="text warning form-light ui-round ui-no-border ui-ease-form">
                         <input type="text" placeholder="Warning Form">
                     </div>
 
                     <span class="sp-30"></span>
 
-                    <div class="text form-disabled form-light ui-margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text form-disabled form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <input type="text" disabled value="Disabled Input">
                     </div>
-                    <div class="textarea form-disabled form-light ui-margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="textarea form-disabled form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <textarea disabled>Disabled Textarea</textarea>
                     </div>
 
-                    <div class="text form-readonly form-light ui-margin-10-b round ui-border-dual ui-ease-form">
+                    <div class="text form-readonly form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <input type="text" readonly value="Readonly Input">
                     </div>
-                    <div class="textarea form-readonly form-light round ui-border-dual ui-ease-form">
+                    <div class="textarea form-readonly form-light ui-round ui-border-dual ui-ease-form">
                         <textarea readonly>Readonly Textarea</textarea>
                     </div>
 
                     <span class="sp-30"></span>
 
                     <label class="form-label">Multi Select Example</label>
-                    <div class="select-multi form-light round ui-border-dual ui-ease-form">
+                    <div class="select-multi form-light ui-round ui-border-dual ui-ease-form">
                         <select class="ui-scrollbar-faded" multiple size="6">
                             <option value="">Value 1</option>
                             <option>Value 2</option>
@@ -1739,12 +1739,12 @@
                     <div class="form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b">
 
                         <div class="ui-col-5">
-                            <div class="text round ui-border-dual form-light ui-ease-form">
+                            <div class="text ui-round ui-border-dual form-light ui-ease-form">
                                 <input type="text">
                             </div>
                         </div>
                         <div class="ui-col-2">
-                            <div class="select round ui-border-dual form-light ui-ease-form">
+                            <div class="select ui-round ui-border-dual form-light ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="">Select</option>
@@ -1754,7 +1754,7 @@
                             </div>
                         </div>
                         <div class="ui-col-5">
-                            <div class="text round ui-border-dual form-light ui-ease-form">
+                            <div class="text ui-round ui-border-dual form-light ui-ease-form">
                                 <input type="text">
                             </div>
                         </div>
@@ -1763,12 +1763,12 @@
                     <div class="form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b error">
 
                         <div class="ui-col-5">
-                            <div class="text round ui-border-dual form-light ui-ease-form">
+                            <div class="text ui-round ui-border-dual form-light ui-ease-form">
                                 <input type="text">
                             </div>
                         </div>
                         <div class="ui-col-2">
-                            <div class="select round ui-border-dual form-light ui-ease-form">
+                            <div class="select ui-round ui-border-dual form-light ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="">Select</option>
@@ -1778,7 +1778,7 @@
                             </div>
                         </div>
                         <div class="ui-col-5">
-                            <div class="text round ui-border-dual form-light ui-ease-form">
+                            <div class="text ui-round ui-border-dual form-light ui-ease-form">
                                 <input type="text">
                             </div>
                         </div>
@@ -1787,12 +1787,12 @@
                     <div class="form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b warning">
 
                         <div class="ui-col-5">
-                            <div class="text round ui-border-dual form-light ui-ease-form">
+                            <div class="text ui-round ui-border-dual form-light ui-ease-form">
                                 <input type="text">
                             </div>
                         </div>
                         <div class="ui-col-2">
-                            <div class="select round ui-border-dual form-light ui-ease-form">
+                            <div class="select ui-round ui-border-dual form-light ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="">Select</option>
@@ -1802,7 +1802,7 @@
                             </div>
                         </div>
                         <div class="ui-col-5">
-                            <div class="text round ui-border-dual form-light ui-ease-form">
+                            <div class="text ui-round ui-border-dual form-light ui-ease-form">
                                 <input type="text">
                             </div>
                         </div>
@@ -1815,7 +1815,7 @@
                     <div class="form-holder ui-col-static ui-no-fluid">
 
                         <div class="ui-col-100">
-                            <img class="ui-border-dual ui-border-light round ui-ease-border"
+                            <img class="ui-border-dual ui-border-light ui-round ui-ease-border"
                                 src="img/captcha.jpg"
                                 width="100"
                                 height="42"
@@ -1830,7 +1830,7 @@
                         </div>
                         <div class="ui-row ui-no-row-gap">
                             <div class="ui-col-12">
-                                <div class="text ui-border-dual round ui-ease-form form-light">
+                                <div class="text ui-border-dual ui-round ui-ease-form form-light">
                                     <input type="text" maxlength="4" placeholder="Please enter code">
                                 </div>
                             </div>
@@ -1842,7 +1842,7 @@
 
                     <form action="#successful">
 
-                        <div class="text text-icon form-light ui-margin-10-b round ui-border-dual ui-ease-form">
+                        <div class="text text-icon form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                             <button type="submit">
                                 <svg class="ui-icon"><use href="#search"/></svg>
                             </button>
@@ -1855,7 +1855,7 @@
 
                     <span class="sp-10"></span>
 
-                    <div class="textarea round ui-border-dual form-light ui-ease-form" data-ui-counter="255">
+                    <div class="textarea ui-round ui-border-dual form-light ui-ease-form" data-ui-counter="255">
                         <textarea class="required ui-scrollbar-faded" rows="4" placeholder="Required example with counter textarea" minlength="10"></textarea>
                     </div>
                     <p class="required-msg">Please, write your comments more than 10 characters.</p>
@@ -1978,16 +1978,16 @@
                     </div>
                     <div class="ui-col-9 ui-ease-1st-form ui-theme-gray">
 
-                        <div class="text ui-margin-10-b round ui-no-border ui-fill-light-100">
+                        <div class="text ui-margin-10-b ui-round ui-no-border ui-fill-light-100">
                             <input type="text">
                         </div>
-                        <div class="text error ui-margin-10-b round ui-no-border ui-fill-light-100">
+                        <div class="text error ui-margin-10-b ui-round ui-no-border ui-fill-light-100">
                             <input type="text" placeholder="Error Form">
                         </div>
-                        <div class="text warning ui-margin-10-b round ui-no-border ui-fill-light-100">
+                        <div class="text warning ui-margin-10-b ui-round ui-no-border ui-fill-light-100">
                             <input type="text" placeholder="Warning Form">
                         </div>
-                        <div class="select ui-margin-10-b round ui-no-border ui-fill-light-100">
+                        <div class="select ui-margin-10-b ui-round ui-no-border ui-fill-light-100">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select</option>
@@ -1996,10 +1996,10 @@
                             </select>
                         </div>
 
-                        <div class="textarea ui-margin-10-b round ui-no-border ui-fill-light-100">
+                        <div class="textarea ui-margin-10-b ui-round ui-no-border ui-fill-light-100">
                             <textarea placeholder="Textarea"></textarea>
                         </div>
-                        <div class="textarea ui-toggle-textarea ui-margin-10-b round ui-no-border ui-fill-light-100">
+                        <div class="textarea ui-toggle-textarea ui-margin-10-b ui-round ui-no-border ui-fill-light-100">
                             <textarea placeholder="Toggle Textarea"></textarea>
                         </div>
 

@@ -31,8 +31,8 @@
     &:not(.ui-border):not([class*="ui-border-"]) { border-width: 0; }
     &:not(.ui-btn-multi) { white-space: nowrap; }
 
-    &:not(.circle) { padding-right: @btn-default-padding; padding-left: @btn-default-padding; }
-    &.circle { padding-right: (@btn-default-padding + @btn-circle-extra-padding); padding-left: (@btn-default-padding + @btn-circle-extra-padding); }
+    &:not(.ui-circle) { padding-right: @btn-default-padding; padding-left: @btn-default-padding; }
+    &.ui-circle { padding-right: (@btn-default-padding + @btn-circle-extra-padding); padding-left: (@btn-default-padding + @btn-circle-extra-padding); }
 
     &[data-ui-notifier] {
         &:after { content: attr(data-ui-notifier); color: @white; font-size: @small; text-align: center !important; line-height: 1; min-width: (@btn-notifier-size * 2); min-height: (@btn-notifier-size * 2); background-color: @red; padding: (@btn-notifier-size / 4) (@btn-notifier-size / 2); border-radius: 200px; position: absolute; top: 0; left: 100%; z-index: 1; transform: translateX(-75%); }
@@ -97,7 +97,7 @@
 .ui-btn-lg,.form-lg .ui-btn {
     font-size: @large; line-height: (@btn-lg - (@btn-lg-padding * 2) - 1); height: @btn-lg; padding-top: @btn-lg-padding; padding-bottom: @btn-lg-padding;
 
-    &.round { border-radius: (@round * 1.3333333333); }
+    &.ui-round { border-radius: (@round * 1.3333333333); }
     &.ui-btn-square { width: @btn-lg; }
 
     &.ui-border {
@@ -112,10 +112,10 @@
 .ui-btn-sm {
     font-size: @small; line-height: (@btn-sm - (@btn-sm-padding * 2)); height: @btn-sm; padding-top: @btn-sm-padding; padding-bottom: @btn-sm-padding;
 
-    &:not(.circle) { padding-right: @btn-sm-padding; padding-left: @btn-sm-padding; }
-    &.circle { padding-right: (@btn-sm-padding + @btn-circle-extra-padding); padding-left: (@btn-sm-padding + @btn-circle-extra-padding); }
+    &:not(.ui-circle) { padding-right: @btn-sm-padding; padding-left: @btn-sm-padding; }
+    &.ui-circle { padding-right: (@btn-sm-padding + @btn-circle-extra-padding); padding-left: (@btn-sm-padding + @btn-circle-extra-padding); }
 
-    &.round { border-radius: (@round - @round * 0.3333333333); }
+    &.ui-round { border-radius: (@round - @round * 0.3333333333); }
     &.ui-btn-square { width: @btn-sm; }
 
     &.ui-border {
@@ -130,10 +130,10 @@
 .ui-btn-xs {
     font-size: @x-small; line-height: (@btn-xs - (@btn-xs-padding * 2)); height: @btn-xs; padding-top: @btn-xs-padding; padding-bottom: @btn-xs-padding;
 
-    &:not(.circle) { padding-right: @btn-xs-padding; padding-left: @btn-xs-padding; }
-    &.circle { padding-right: (@btn-xs-padding + @btn-circle-extra-padding); padding-left: (@btn-xs-padding + @btn-circle-extra-padding); }
+    &:not(.ui-circle) { padding-right: @btn-xs-padding; padding-left: @btn-xs-padding; }
+    &.ui-circle { padding-right: (@btn-xs-padding + @btn-circle-extra-padding); padding-left: (@btn-xs-padding + @btn-circle-extra-padding); }
 
-    &.round { border-radius: (@round / 2); }
+    &.ui-round { border-radius: (@round / 2); }
     &.ui-btn-square { width: @btn-xs; }
 
     &.ui-border {

@@ -1943,59 +1943,35 @@ html .ui-row {
 .ui-no-scroll {
   overflow: hidden !important;
 }
-[class*="round-"],
-[class*="circle-"],
-.round,
-.circle {
+[class*="ui-round-"],
+[class*="ui-circle-"],
+.ui-round,
+.ui-circle {
   background-clip: padding-box;
 }
-.round {
+.ui-round {
   border-radius: 6px;
 }
-.round > .round,
-.round > * > .round,
-.round > [class*="round-"],
-.round > * > [class*="round-"] {
+.ui-round > .ui-round,
+.ui-round > * > .ui-round,
+.ui-round > [class*="ui-round-"],
+.ui-round > * > [class*="ui-round-"] {
   border-radius: 5px !important;
 }
-.round-t {
+.ui-round-t {
   border-radius: 6px 6px 0 0;
 }
-.round-r {
+.ui-round-r {
   border-radius: 0 6px 6px 0;
 }
-.round-b {
+.ui-round-b {
   border-radius: 0 0 6px 6px;
 }
-.round-l {
+.ui-round-l {
   border-radius: 6px 0 0 6px;
 }
-.round-tl {
-  border-radius: 6px 0 0 0;
-}
-.round-tr {
-  border-radius: 0 6px 0 0;
-}
-.round-bl {
-  border-radius: 0 0 0 6px;
-}
-.round-br {
-  border-radius: 0 0 6px 0;
-}
-.circle {
+.ui-circle {
   border-radius: 1000px;
-}
-.circle-t {
-  border-radius: 1000px 1000px 0 0;
-}
-.circle-r {
-  border-radius: 0 1000px 1000px 0;
-}
-.circle-b {
-  border-radius: 0 0 1000px 1000px;
-}
-.circle-l {
-  border-radius: 1000px 0 0 1000px;
 }
 .shadow {
   box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.1);
@@ -3973,11 +3949,11 @@ dt + dd:not(:last-child) {
 .ui-btn:not(.ui-btn-multi) {
   white-space: nowrap;
 }
-.ui-btn:not(.circle) {
+.ui-btn:not(.ui-circle) {
   padding-right: 10px;
   padding-left: 10px;
 }
-.ui-btn.circle {
+.ui-btn.ui-circle {
   padding-right: 16px;
   padding-left: 16px;
 }
@@ -4082,8 +4058,8 @@ dt + dd:not(:last-child) {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-.ui-btn-lg.round,
-.form-lg .ui-btn.round {
+.ui-btn-lg.ui-round,
+.form-lg .ui-btn.ui-round {
   border-radius: 8px;
 }
 .ui-btn-lg.ui-btn-square,
@@ -4113,15 +4089,15 @@ dt + dd:not(:last-child) {
   padding-top: 7px;
   padding-bottom: 7px;
 }
-.ui-btn-sm:not(.circle) {
+.ui-btn-sm:not(.ui-circle) {
   padding-right: 7px;
   padding-left: 7px;
 }
-.ui-btn-sm.circle {
+.ui-btn-sm.ui-circle {
   padding-right: 13px;
   padding-left: 13px;
 }
-.ui-btn-sm.round {
+.ui-btn-sm.ui-round {
   border-radius: 4px;
 }
 .ui-btn-sm.ui-btn-square {
@@ -4147,15 +4123,15 @@ dt + dd:not(:last-child) {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.ui-btn-xs:not(.circle) {
+.ui-btn-xs:not(.ui-circle) {
   padding-right: 5px;
   padding-left: 5px;
 }
-.ui-btn-xs.circle {
+.ui-btn-xs.ui-circle {
   padding-right: 11px;
   padding-left: 11px;
 }
-.ui-btn-xs.round {
+.ui-btn-xs.ui-round {
   border-radius: 3px;
 }
 .ui-btn-xs.ui-btn-square {
@@ -4740,8 +4716,8 @@ dt + dd:not(:last-child) {
 .ui-mobile-menu .ui-dropdown ul.ui-dropdown-menu > li:not(:last-child) {
   border-bottom: 0;
 }
-.ui-mobile-menu .ui-dropdown ul.ui-dropdown-menu.round > li,
-.ui-mobile-menu .ui-dropdown ul.ui-dropdown-menu.round > li a {
+.ui-mobile-menu .ui-dropdown ul.ui-dropdown-menu.ui-round > li,
+.ui-mobile-menu .ui-dropdown ul.ui-dropdown-menu.ui-round > li a {
   border-radius: 6px;
 }
 .ui-mobile-menu .ui-dropdown:not(:last-child) .ui-dropdown-menu {
@@ -5021,7 +4997,7 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
   height: 20px;
   stroke-width: 30px;
 }
-.file.round .ui-btn:not(.ui-btn-square) {
+.file.ui-round .ui-btn:not(.ui-btn-square) {
   border-radius: 3px 0 0 3px;
 }
 .ui-desktop .file:hover input[class] {
@@ -5096,17 +5072,17 @@ label.custom {
   opacity: 0;
 }
 .radio-custom,
-.switch-custom.round {
+.switch-custom.ui-round {
   border-radius: 14px !important;
 }
 .radio-custom .state,
-.switch-custom.round .state {
+.switch-custom.ui-round .state {
   border-radius: 7px;
 }
 .radio-custom input:checked + .state {
   opacity: 1;
 }
-.check-custom.round .state {
+.check-custom.ui-round .state {
   border-radius: 3px;
 }
 .check-custom input:checked + i,
@@ -5996,13 +5972,13 @@ label.custom {
   background-color: hsla(0, 0%, 0%, 0.06);
   background-color: var(--ui-list-group-hover-bg);
 }
-.ui-list-group.round > ul:not([class*="ui-list-column-"]) > li:first-child,
-.ui-list-group.round > ul:not([class*="ui-list-column-"]) > li:first-child > a:not(.ui-list-link) {
+.ui-list-group.ui-round > ul:not([class*="ui-list-column-"]) > li:first-child,
+.ui-list-group.ui-round > ul:not([class*="ui-list-column-"]) > li:first-child > a:not(.ui-list-link) {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
-.ui-list-group.round > ul:not([class*="ui-list-column-"]) > li:last-child,
-.ui-list-group.round > ul:not([class*="ui-list-column-"]) > li:last-child > a:not(.ui-list-link) {
+.ui-list-group.ui-round > ul:not([class*="ui-list-column-"]) > li:last-child,
+.ui-list-group.ui-round > ul:not([class*="ui-list-column-"]) > li:last-child > a:not(.ui-list-link) {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
@@ -6146,13 +6122,13 @@ label.custom {
   border-left-style: solid;
   border-left-width: 5px;
 }
-[class*="ui-card-"]:not(.ui-card-side).round {
+[class*="ui-card-"]:not(.ui-card-side).ui-round {
   border-radius: 0 6px 6px 0;
 }
-.round > .ui-card-side:first-child {
+.ui-round > .ui-card-side:first-child {
   border-radius: 6px 6px 0 0;
 }
-.round > .ui-card-side:last-child {
+.ui-round > .ui-card-side:last-child {
   border-radius: 0 0 6px 6px;
 }
 .ui-card-info {
@@ -6461,11 +6437,11 @@ label.custom {
 .ui-progress-bar.ui-border-dual > span {
   height: 6px;
 }
-.ui-progress-bar.round > span:first-child {
+.ui-progress-bar.ui-round > span:first-child {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-.ui-progress-bar.round > span:last-child {
+.ui-progress-bar.ui-round > span:last-child {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -6514,7 +6490,7 @@ label.custom {
   background-color: hsla(0, 0%, 0%, 0.25);
   background-color: var(--ui-scrollbar-thumb-bg-active);
 }
-.ui-desktop .round::-webkit-scrollbar-thumb {
+.ui-desktop .ui-round::-webkit-scrollbar-thumb {
   border-radius: 6px;
 }
 .ui-desktop [class*="ui-fill-dark-"]::-webkit-scrollbar-thumb,
@@ -6986,13 +6962,13 @@ header.ui-sticky-static {
 .ui-modal-content:not(.ui-modal-fullscreen) {
   max-height: calc(100% - (15px * 2));
 }
-.ui-modal-content:not(.ui-modal-fullscreen).round .ui-modal-header {
+.ui-modal-content:not(.ui-modal-fullscreen).ui-round .ui-modal-header {
   border-radius: 5px 5px 0 0;
 }
-.ui-modal-content:not(.ui-modal-fullscreen).round .ui-modal-footer {
+.ui-modal-content:not(.ui-modal-fullscreen).ui-round .ui-modal-footer {
   border-radius: 0 0 5px 5px;
 }
-.ui-modal-content:not(.ui-modal-fullscreen).round .ui-modal-iframe {
+.ui-modal-content:not(.ui-modal-fullscreen).ui-round .ui-modal-iframe {
   border-radius: 5px;
 }
 .ui-modal-content:not(.ui-modal-fullscreen) .ui-close-modal {
@@ -7034,7 +7010,7 @@ header.ui-sticky-static {
 .ui-modal-content.ui-modal-inline {
   width: auto;
 }
-.ui-modal-content.round .ui-modal {
+.ui-modal-content.ui-round .ui-modal {
   border-radius: 5px;
 }
 .ui-modal-content.ui-has-header .ui-modal {
@@ -7324,10 +7300,10 @@ header.ui-sticky-static {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.8);
 }
-.ui-alerts-dialog.round .ui-dialog-buttons {
+.ui-alerts-dialog.ui-round .ui-dialog-buttons {
   border-radius: 0 0 6px 6px;
 }
-.ui-alerts-dialog.round button {
+.ui-alerts-dialog.ui-round button {
   border-radius: 6px;
 }
 .ui-alerts-msg {
@@ -7648,41 +7624,41 @@ button.ui-dialog-custom:focus {
   font-weight: 700;
   padding: 10px 10px 10px 5px;
 }
-.ui-calendar.round caption,
-.ui-calendar.round caption button {
+.ui-calendar.ui-round caption,
+.ui-calendar.ui-round caption button {
   border-radius: 6px;
 }
-.ui-calendar.round .ui-calendar-panel {
+.ui-calendar.ui-round .ui-calendar-panel {
   border-radius: 6px;
 }
-.ui-calendar.round .ui-calendar-panel .ui-panel-call {
+.ui-calendar.ui-round .ui-calendar-panel .ui-panel-call {
   border-radius: 6px;
 }
-.ui-calendar.round .ui-calendar-month {
+.ui-calendar.ui-round .ui-calendar-month {
   border-radius: 6px 0 0 6px;
 }
-.ui-calendar.round .ui-calendar-year {
+.ui-calendar.ui-round .ui-calendar-year {
   border-radius: 0 6px 6px 0;
 }
-.ui-calendar.round .ui-calendar-details > button {
+.ui-calendar.ui-round .ui-calendar-details > button {
   border-radius: 6px;
 }
-.ui-calendar.round .ui-calendar-details li {
+.ui-calendar.ui-round .ui-calendar-details li {
   border-radius: 6px;
 }
-.ui-calendar.round table.ui-fill-weekends th:nth-child(6) {
+.ui-calendar.ui-round table.ui-fill-weekends th:nth-child(6) {
   border-radius: 6px 0 0 0;
 }
-.ui-calendar.round table.ui-fill-weekends th:nth-child(7) {
+.ui-calendar.ui-round table.ui-fill-weekends th:nth-child(7) {
   border-radius: 0 6px 0 0;
 }
-.ui-calendar.round table.ui-fill-weekends tr:last-child td:nth-child(6) {
+.ui-calendar.ui-round table.ui-fill-weekends tr:last-child td:nth-child(6) {
   border-radius: 0 0 0 6px;
 }
-.ui-calendar.round table.ui-fill-weekends tr:last-child td:nth-child(7) {
+.ui-calendar.ui-round table.ui-fill-weekends tr:last-child td:nth-child(7) {
   border-radius: 0 0 6px 0;
 }
-.ui-calendar.round td button {
+.ui-calendar.ui-round td button {
   border-radius: 6px;
 }
 .ui-calendar:not(.ui-show-details) .ui-calendar-details {
@@ -9150,7 +9126,7 @@ button.ui-dialog-custom:focus {
 .ui-weather .ui-graphs > div {
   position: absolute;
 }
-.ui-weather.round .ui-graphs {
+.ui-weather.ui-round .ui-graphs {
   border-radius: 6px;
 }
 .ui-weather.ui-night .ui-now,

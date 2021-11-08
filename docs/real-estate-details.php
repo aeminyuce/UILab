@@ -11,56 +11,56 @@
 
                     <div class="ui-carousel-gallery">
                         <div class="ui-detail shadow-lg">
-                            <img src="img/house_01.jpg" class="ui-photo-gallery-call ui-cursor-pointer ui-img-fluid round ui-ease-layout" data-ui-target="#ui-real-estate-carousel" data-ui-count="0" alt="">
+                            <img src="img/house_01.jpg" class="ui-photo-gallery-call ui-cursor-pointer ui-img-fluid ui-round ui-ease-layout" data-ui-target="#ui-real-estate-carousel" data-ui-count="0" alt="">
                             <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
                             <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
                         </div>
                         <div id="ui-real-estate-carousel" class="ui-carousel ui-thumbs ui-half-sized" data-ui-col="6" data-ui-col-md="5" data-ui-col-sm="4" data-ui-col-xs="3">
                             <div class="ui-carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow ui-photo-gallery-passive">
                                 <div class="ui-slide-content">
-                                    <img class="ui-img round ui-ease-default ui-selected" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
+                                    <img class="ui-img ui-round ui-ease-default ui-selected" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img round ui-ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
+                                    <img class="ui-img ui-round ui-ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img round ui-ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
+                                    <img class="ui-img ui-round ui-ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img round ui-ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
+                                    <img class="ui-img ui-round ui-ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img round ui-ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
+                                    <img class="ui-img ui-round ui-ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img round ui-ease-default" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
+                                    <img class="ui-img ui-round ui-ease-default" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img round ui-ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
+                                    <img class="ui-img ui-round ui-ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img round ui-ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
+                                    <img class="ui-img ui-round ui-ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img round ui-ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
+                                    <img class="ui-img ui-round ui-ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img round ui-ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
+                                    <img class="ui-img ui-round ui-ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
                                 </div>
                             </div>
                             <div class="ui-carousel-nav ui-ease-1st-btn">
-                                <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square circle">
+                                <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square ui-circle">
                                     <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                 </button>
                                 <span class="ui-dots ui-color-black-25"></span>
-                                <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square circle">
+                                <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square ui-circle">
                                     <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="ui-card round shadow-lg">
+                    <div class="ui-card ui-round shadow-lg">
                         <div class="ui-padding-30 large font-readable">
                             <h4>Details</h4>
                             Each villa has been meticulously designed to meet all the demands that a luxury villa has to provide as well as offer a contemporary image of great beauty.
@@ -152,7 +152,7 @@
 
             <div class="ui-col-400 ui-padding-10">
 
-                <div class="ui-card align-c round shadow-lg ui-theme-sub">
+                <div class="ui-card align-c ui-round shadow-lg ui-theme-sub">
                     <div class="ui-card-side ui-padding-10-v ui-fill-dark-300">
                         <ul class="list-inline ui-countdown ui-no-user-select">
                             <li class="ui-padding-10-v ui-padding-15-h ui-hidden-xs">
@@ -171,7 +171,7 @@
                     </div>
                 </div>
 
-                <div class="ui-card align-c round shadow-lg ui-theme-sub">
+                <div class="ui-card align-c ui-round shadow-lg ui-theme-sub">
                     <ul class="list-inline ui-list-gap ui-padding-30 ui-padding-15-b ui-icons-lg ui-icons-margin-5-r ui-theme-gray inline-ui-block-1st">
                         <li>
                             <svg class="ui-icon"><use href="#floor-plan"/></svg>
@@ -195,7 +195,7 @@
                     </div>
                 </div>
 
-                <div class="ui-card ui-margin-20-b round shadow-lg">
+                <div class="ui-card ui-margin-20-b ui-round shadow-lg">
                     <div class="ui-padding-30-h ui-padding-10-v">
                         <b>Previous Offers / <span style="color: hsl(30, 100%, 63%);">Averages</span></b>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,20" data-ui-x="1,2,3,4,5">
@@ -226,7 +226,7 @@
                         <form action="#">
                             <div class="ui-col-static ui-no-fluid currency-spinner form-lg">
                                 <div class="ui-col-50">
-                                    <button class="currency-down ui-btn ui-no-padding-h ui-block round-l ui-ease-btn" type="button">
+                                    <button class="currency-down ui-btn ui-no-padding-h ui-block ui-round-l ui-ease-btn" type="button">
                                         <svg class="ui-icon"><use href="#minus"/></svg>
                                     </button>
                                 </div>
@@ -238,13 +238,13 @@
                                     </div>
                                 </div>
                                 <div class="ui-col-50">
-                                    <button class="currency-up ui-btn ui-no-padding-h ui-block round-r ui-ease-btn" type="button">
+                                    <button class="currency-up ui-btn ui-no-padding-h ui-block ui-round-r ui-ease-btn" type="button">
                                         <svg class="ui-icon"><use href="#plus"/></svg>
                                     </button>
                                 </div>
                             </div>
                             <span class="sp-15"></span>
-                            <button class="ui-btn ui-btn-lg ui-block round ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
+                            <button class="ui-btn ui-btn-lg ui-block ui-round ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
                                 <b>MAKE OFFER</b>
                             </button>
                             <span class="sp-5"></span>
@@ -252,7 +252,7 @@
                     </div>
                 </div>
 
-                <div class="ui-card ui-padding-30 round shadow-lg">
+                <div class="ui-card ui-padding-30 ui-round shadow-lg">
                     <h4>Other Details</h4>
                     <ul class="list-unstyled ui-list-spacer-15 ui-icons-lg ui-icons-margin-5-r">
                         <li>
@@ -293,12 +293,12 @@
                     </ul>
                     <span class="sp-5"></span>
                     <div class="align-l ui-icons-no-opacity form-lg ui-ease-1st-btn">
-                        <a class="ui-btn ui-block ui-btn-multi round-t" href="#">
+                        <a class="ui-btn ui-block ui-btn-multi ui-round-t" href="#">
                             <svg class="ui-icon ui-right"><use href="#images"/></svg>
                             Show All HD Images
                         </a>
                         <span class="sp-1"></span>
-                        <a class="ui-btn ui-block ui-btn-multi round-b" href="#">
+                        <a class="ui-btn ui-block ui-btn-multi ui-round-b" href="#">
                             <svg class="ui-icon ui-right"><use href="#file-pdf"/></svg>
                             Download PDF Brochure
                         </a>

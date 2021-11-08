@@ -11,8 +11,8 @@
             <div class="ui-col-250 ui-padding-10 ui-hidden-md">
                 <div class="ui-add-mobile-menu-r">
 
-                    <div class="ui-card ui-padding-15 round shadow-lg">
-                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete text text-icon-both round ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form has-clear">
+                    <div class="ui-card ui-padding-15 ui-round shadow-lg">
+                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete text text-icon-both ui-round ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form has-clear">
                             <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
                             <button type="button" class="clear-form">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
@@ -40,53 +40,53 @@
                         </ul>
                     </div>
 
-                    <div class="ui-card round shadow-lg ui-theme-sub">
+                    <div class="ui-card ui-round shadow-lg ui-theme-sub">
 
                         <div class="ui-padding-15 md-align-c ui-border-b">
                             <h5 class="ui-margin-10-b ui-color-black-50">COLORS</h5>
                             <label class="custom">
-                                <span class="check-custom ui-no-border circle ui-ease-form ui-product-select-red">
+                                <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-red">
                                     <input type="checkbox" checked>
-                                    <i class="state circle bg-white invert-bg"></i>
+                                    <i class="state ui-circle bg-white invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom ui-no-border circle ui-ease-form ui-product-select-pink">
+                                <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-pink">
                                     <input type="checkbox" checked>
-                                    <i class="state circle bg-white invert-bg"></i>
+                                    <i class="state ui-circle bg-white invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom ui-no-border circle ui-ease-form ui-product-select-blue">
+                                <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-blue">
                                     <input type="checkbox" checked>
-                                    <i class="state circle bg-white invert-bg"></i>
+                                    <i class="state ui-circle bg-white invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom ui-no-border circle ui-ease-form ui-product-select-orange">
+                                <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-orange">
                                     <input type="checkbox">
-                                    <i class="state circle bg-white invert-bg"></i>
+                                    <i class="state ui-circle bg-white invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom ui-no-border circle ui-ease-form ui-product-select-yellow">
+                                <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-yellow">
                                     <input type="checkbox">
-                                    <i class="state circle bg-white invert-bg"></i>
+                                    <i class="state ui-circle bg-white invert-bg"></i>
                                 </span>
                             </label>
 
                             <span class="ui-clear ui-hidden-md"></span>
 
                             <label class="custom">
-                                <span class="check-custom ui-no-border circle ui-ease-form ui-product-select-black">
+                                <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-black">
                                     <input type="checkbox" checked>
-                                    <i class="state circle bg-white invert-bg"></i>
+                                    <i class="state ui-circle bg-white invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
-                                <span class="check-custom ui-no-border circle ui-ease-form ui-product-select-white">
+                                <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-white">
                                     <input type="checkbox" checked>
-                                    <i class="state circle bg-white invert-bg"></i>
+                                    <i class="state ui-circle bg-white invert-bg"></i>
                                 </span>
                             </label>
                         </div>
@@ -95,7 +95,7 @@
 
                             <h5 class="ui-margin-10-b ui-color-black-50">PROMOTIONS</h5>
                             <label class="custom ui-block">
-                                <span class="switch-custom ui-right round ui-ease-form">
+                                <span class="switch-custom ui-right ui-round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
@@ -104,7 +104,7 @@
                             </label>
                             <span class="sp-5"></span>
                             <label class="custom ui-block">
-                                <span class="switch-custom ui-right round ui-ease-form">
+                                <span class="switch-custom ui-right ui-round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
@@ -118,28 +118,28 @@
 
                             <h5 class="ui-margin-10-b ui-color-black-50">CONNECTIONS</h5>
                             <label class="custom ui-block">
-                                <span class="check-custom round ui-ease-form">
+                                <span class="check-custom ui-round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
                                 Wireless <span class="ui-color-black-25">4</span>
                             </label>
                             <label class="custom ui-block">
-                                <span class="check-custom round ui-ease-form">
+                                <span class="check-custom ui-round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
                                 Bluetooth <span class="ui-color-black-25">11</span>
                             </label>
                             <label class="custom ui-block">
-                                <span class="check-custom round ui-ease-form">
+                                <span class="check-custom ui-round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
                                 Wired <span class="ui-color-black-25">9</span>
                             </label>
                             <label class="custom ui-block">
-                                <span class="check-custom round ui-ease-form">
+                                <span class="check-custom ui-round ui-ease-form">
                                     <input type="checkbox">
                                     <i class="state ui-fill-dark-100"></i>
                                 </span>
@@ -147,7 +147,7 @@
                             </label>
 
                             <span class="sp-10"></span>
-                            <button class="ui-btn ui-btn-sm circle ui-ease-btn">
+                            <button class="ui-btn ui-btn-sm ui-circle ui-ease-btn">
                                 See All
                                 <svg class="ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
@@ -155,7 +155,7 @@
                         </div>
 
                         <div class="ui-padding-15">
-                            <button type="submit" class="ui-btn ui-btn-lg ui-block round ui-fill-dark-100 ui-ease-btn"><b>SEARCH</b></button>
+                            <button type="submit" class="ui-btn ui-btn-lg ui-block ui-round ui-fill-dark-100 ui-ease-btn"><b>SEARCH</b></button>
                         </div>
 
                     </div>
@@ -165,7 +165,7 @@
             <div class="ui-row">
                 <div class="ui-col-12 ui-sm-no-padding-t">
 
-                    <div class="ui-card ui-margin-10-b round shadow-lg">
+                    <div class="ui-card ui-margin-10-b ui-round shadow-lg">
                         <div class="ui-row ui-row-gap-lg ui-sm-fluid">
                             <div class="ui-col-12 ui-border-b">
                                 <h4>
@@ -209,11 +209,11 @@
                                 <span class="large">Current prices <b>12% lower</b> than, average prices!</span>
                                 <ul class="list-unstyled ui-color-black-25 ui-margin-15-t inline-ui-block-2nd">
                                     <li>
-                                        <b class="circle ui-padding-5 ui-margin-4-l ui-margin-5-r" style="background: hsl(30, 100%, 63%);"></b>
+                                        <b class="ui-circle ui-padding-5 ui-margin-4-l ui-margin-5-r" style="background: hsl(30, 100%, 63%);"></b>
                                         <span>Headphones Averages</span>
                                     </li>
                                     <li>
-                                        <b class="circle ui-padding-5 ui-margin-4-l ui-margin-5-r" style="background: hsl(204, 82%, 57%);"></b>
+                                        <b class="ui-circle ui-padding-5 ui-margin-4-l ui-margin-5-r" style="background: hsl(204, 82%, 57%);"></b>
                                         <span>Over-Ear Headphones Averages</span>
                                     </li>
                                 </ul>
@@ -227,7 +227,7 @@
                             <span class="large">Found <b>47</b> and displaying <b>9</b> products.</span>
                         </div>
                         <div class="ui-col-6 align-r ui-sm-no-padding-t">
-                            <div class="select align-l round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
+                            <div class="select align-l ui-round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="1" checked>Sort by</option>
@@ -236,7 +236,7 @@
                                     <option value="4">Price (High to Low)</option>
                                 </select>
                             </div>
-                            <div class="select align-l round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
+                            <div class="select align-l ui-round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="12" checked>Show 9</option>
@@ -246,13 +246,13 @@
                             </div>
                             <span class="sp-10 ui-visible-xs"></span>
                             <span class="align-c ui-theme-sub ui-ease-1st-btn">
-                                <button class="ui-btn ui-btn-square round ui-fill-dark-100">
+                                <button class="ui-btn ui-btn-square ui-round ui-fill-dark-100">
                                     <svg class="ui-icon"><use href="#grid-column"/></svg>
                                 </button>
-                                <button class="ui-btn ui-btn-square round">
+                                <button class="ui-btn ui-btn-square ui-round">
                                     <svg class="ui-icon"><use href="#grid-row"/></svg>
                                 </button>
-                                <button class="ui-btn ui-btn-square round ui-show-mobile-menu-r ui-visible-md">
+                                <button class="ui-btn ui-btn-square ui-round ui-show-mobile-menu-r ui-visible-md">
                                     <svg class="ui-icon"><use href="#bars-right"/></svg>
                                 </button>
                             </span>
@@ -261,17 +261,17 @@
 
                     <div class="products-list ui-row form-lg hover-shadow-2nd ui-ease-2nd-layout hover-t-2nd">
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
                                         src="img/product_01.png" alt=""
                                         data-ui-src="img/product_01.png,img/product_02.png,img/product_03.png"
                                     >
-                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
@@ -283,9 +283,9 @@
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#truck"/></svg> Fast Delivery
                                 </span>
                                 <ul class="list-inline ui-margin-15-v ui-right">
-                                    <li class="circle ui-padding-5 ui-border-dual ui-product-red"></li>
-                                    <li class="circle ui-padding-5 ui-border-dual ui-product-pink"></li>
-                                    <li class="circle ui-padding-5 ui-border-dual ui-product-blue"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-red"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-pink"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-blue"></li>
                                 </ul>
                                 <span class="ui-left ui-padding-15-v ui-icons-xs">
                                     <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
@@ -297,17 +297,17 @@
                             </a>
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
                                         src="img/product_02.png" alt=""
                                         data-ui-src="img/product_02.png,img/product_04.png"
                                     >
-                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
@@ -319,8 +319,8 @@
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline ui-margin-15-v ui-right">
-                                    <li class="circle ui-padding-5 ui-border-dual ui-product-pink"></li>
-                                    <li class="circle ui-padding-5 ui-border-dual ui-product-white"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-pink"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-white"></li>
                                 </ul>
                                 <span class="ui-left ui-padding-15-v ui-icons-xs">
                                     <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
@@ -332,17 +332,17 @@
                             </a>
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
                                         src="img/product_03.png" alt=""
                                         data-ui-src="img/product_03.png,img/product_05.png"
                                     >
-                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
@@ -354,8 +354,8 @@
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#truck"/></svg> Fast Delivery
                                 </span>
                                 <ul class="list-inline ui-margin-15-v ui-right">
-                                    <li class="circle ui-padding-5 ui-border-dual ui-product-blue"></li>
-                                    <li class="circle ui-padding-5 ui-border-dual ui-product-black"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-blue"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-black"></li>
                                 </ul>
                                 <span class="ui-left ui-padding-15-v ui-icons-xs">
                                     <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
@@ -367,14 +367,14 @@
                             </a>
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img src="img/product_04.png" alt="" >
-                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
@@ -386,7 +386,7 @@
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline ui-margin-15-v ui-right">
-                                    <li class="circle ui-padding-5 ui-border-dual ui-product-white"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-white"></li>
                                 </ul>
                                 <span class="ui-left ui-padding-15-v ui-icons-xs">
                                     <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
@@ -398,14 +398,14 @@
                             </a>
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img src="img/product_05.png" alt="" >
-                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
@@ -417,7 +417,7 @@
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline ui-margin-15-v ui-right">
-                                    <li class="circle ui-padding-5 ui-border-dual ui-product-black"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-black"></li>
                                 </ul>
                                 <span class="ui-left ui-padding-15-v ui-icons-xs">
                                     <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
@@ -429,17 +429,17 @@
                             </a>
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card round shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
                                         src="img/product_02.png" alt=""
                                         data-ui-src="img/product_02.png,img/product_04.png"
                                     >
-                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                    <button title="Prev" class="ui-prev ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                                     </button>
-                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square circle ui-ease-btn">
+                                    <button title="Next" class="ui-next ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photo-slider-nav ui-ease-1st-layout"></span>
@@ -451,8 +451,8 @@
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="list-inline ui-margin-15-v ui-right">
-                                    <li class="circle ui-padding-5 ui-border-dual ui-product-pink"></li>
-                                    <li class="circle ui-padding-5 ui-border-dual ui-product-white"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-pink"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-white"></li>
                                 </ul>
                                 <span class="ui-left ui-padding-15-v ui-icons-xs">
                                     <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
@@ -467,7 +467,7 @@
 
                     <div class="ui-row">
                         <div class="ui-col-12 align-c">
-                            <button class="load-more ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h circle ui-ease-btn">Load more</button>
+                            <button class="load-more ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-circle ui-ease-btn">Load more</button>
                         </div>
                     </div>
 
@@ -481,7 +481,7 @@
 <!-- mobile menu -->
 <div class="ui-mobile-menu ui-show-r ui-ease-layout ui-ease-in-out">
     <div class="ui-mobile-menu-title ui-padding-20-v x-large ui-border-b">
-        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost circle ui-ease-btn ui-close-mobile-menu">
+        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-mobile-menu">
             <svg class="ui-icon no-opacity"><use href="#remove"/></svg>
         </button>
         Filters

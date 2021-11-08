@@ -18,7 +18,7 @@ ui.tooltip = {
     nameClose: 'ui-close',
 
     // styling classnames
-    stylesTarget: 'round ui-theme-red ui-fill-dark-100 ui-ease-tooltip',
+    stylesTarget: 'ui-round ui-theme-red ui-fill-dark-100 ui-ease-tooltip',
     stylesArrow: 'ui-fill-dark-100',
 
     // values

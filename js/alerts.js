@@ -36,11 +36,11 @@ ui.alerts = {
     nameIcon: 'ui-icon',
 
     // styling classnames
-    stylesDialog: 'round shadow-lg ui-ease-layout ui-ease-in-out',
+    stylesDialog: 'ui-round shadow-lg ui-ease-layout ui-ease-in-out',
     stylesCloseDialog: 'ui-ease-layout',
     stylesDialogBtnHolder: 'ui-ease-1st-btn',
 
-    stylesMsg: 'round shadow-lg ui-ease-layout ui-ease-in-out',
+    stylesMsg: 'ui-round shadow-lg ui-ease-layout ui-ease-in-out',
     stylesMsgTheme: '',
 
     stylesBg: 'ui-ease-layout',

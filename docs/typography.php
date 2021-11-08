@@ -310,7 +310,7 @@
 
                 <h3>Rtl Content</h3>
                 <p class="font-readable ui-rtl ui-highlight">
-                    <img class="ui-right ui-margin-15-l round" src="img/image_01.jpg" width="120" alt="">
+                    <img class="ui-right ui-margin-15-l ui-round" src="img/image_01.jpg" width="120" alt="">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat gravida posuere. Etiam luctus ex vitae diam tempor, a egestas magna posuere. Vestibulum faucibus ex dolor, at tempor ante iaculis vel. Nulla facilisi.
                 </p>
 

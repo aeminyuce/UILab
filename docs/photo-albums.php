@@ -3,7 +3,7 @@
         <div class="ui-row">
             <div class="ui-col-static ui-sm-fluid ui-padding-30-v">
                 <div class="ui-col-250 ui-padding-30 ui-order-sm-last sm-align-c ui-theme-sub">
-                    <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid align-l ui-block circle ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid align-l ui-block ui-circle ui-fill-dark-100 ui-ease-btn">
                         Create New
                         <svg class="ui-icon ui-right"><use href="#plus"/></svg>
                     </a>
@@ -48,7 +48,7 @@
                                 </div>
                                 <div class="ui-col-6 align-r xs-align-c">
                                     <span class="ui-color-black-25 large ui-inline-block">23 Jun - 18 Aug, 2012</span>
-                                    <img class="ui-img-photo ui-img-photo-sm circle ui-margin-15-l" src="img/profile-image.jpg" alt="">
+                                    <img class="ui-img-photo ui-img-photo-sm ui-circle ui-margin-15-l" src="img/profile-image.jpg" alt="">
                                 </div>
                             </div>
 
@@ -144,7 +144,7 @@
                                 </div>
                                 <div class="ui-col-6 align-r xs-align-c">
                                     <span class="ui-color-black-25 large ui-inline-block">3 Sep - 18 Nov, 2021</span>
-                                    <img class="ui-img-photo ui-img-photo-sm circle ui-margin-15-l" src="img/profile-image3.jpg" alt="">
+                                    <img class="ui-img-photo ui-img-photo-sm ui-circle ui-margin-15-l" src="img/profile-image3.jpg" alt="">
                                 </div>
                             </div>
 
@@ -236,7 +236,7 @@
 
                         <div class="ui-row">
                             <div class="ui-col-12 align-c">
-                                <button class="load-more ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h circle ui-ease-btn">Load more</button>
+                                <button class="load-more ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-circle ui-ease-btn">Load more</button>
                             </div>
                         </div>
 

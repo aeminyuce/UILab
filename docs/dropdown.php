@@ -7,11 +7,11 @@
                 <div class="ui-row ui-padding-30-b ui-block-2nd ui-theme-sub">
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
-                            <button class="ui-btn circle ui-fill-dark-100">
+                            <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Dropdown (Long Listed)
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu round shadow-lg">
+                            <ul class="ui-dropdown-menu ui-round shadow-lg">
                                 <li>Dropdown Item</li>
                                 <li>Dropdown Item</li>
                                 <li>Dropdown Item</li>
@@ -41,11 +41,11 @@
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-menu-hover ui-ease-dropdown">
-                            <button class="ui-btn circle ui-fill-dark-100">
+                            <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Hover Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu round shadow-lg">
+                            <ul class="ui-dropdown-menu ui-round shadow-lg">
                                 <li><a href="#">Dropdown Link</a></li>
                                 <li><a href="#">Dropdown Link</a></li>
                                 <li><a href="#">Dropdown Link</a></li>
@@ -54,11 +54,11 @@
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-menu-c ui-ease-dropdown">
-                            <button class="ui-btn circle ui-fill-dark-100">
+                            <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Center Menu
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu round shadow-lg">
+                            <ul class="ui-dropdown-menu ui-round shadow-lg">
                                 <li><a href="#">Dropdown with ui-menu-c align center to your drop down list.</a></li>
                                 <li><a href="#">Dropdown with ui-menu-c align center to your drop down list.</a></li>
                                 <li><a href="#">Dropdown with ui-menu-c align center to your drop down list.</a></li>
@@ -67,11 +67,11 @@
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
-                            <button class="ui-btn circle ui-fill-dark-100">
+                            <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Left Menu
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu round shadow-lg">
+                            <ul class="ui-dropdown-menu ui-round shadow-lg">
                                 <li><a href="#">Dropdown with ui-menu-l align left your drop down list.</a></li>
                                 <li><a href="#">Dropdown with ui-menu-l align left your drop down list.</a></li>
                                 <li><a href="#">Dropdown with ui-menu-l align left your drop down list.</a></li>
@@ -85,11 +85,11 @@
                     <div class="ui-col-12">
 
                         <div class="ui-dropdown ui-nav ui-menu-hover ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn circle ui-fill-dark-100">
+                            <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Nav Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu ui-list-column-2 ui-has-icon round shadow-lg">
+                            <ul class="ui-dropdown-menu ui-list-column-2 ui-has-icon ui-round shadow-lg">
                                 <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#hourglass-start"/></svg> Waiting</a></li>
                                 <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#user-circle"/></svg> Expert</a></li>
                                 <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#shield"/></svg> On Audit</a></li>
@@ -100,11 +100,11 @@
                         </div>
 
                         <div class="ui-dropdown ui-nav ui-menu-hover ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn circle ui-fill-dark-100">
+                            <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Nav Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu ui-list-column-2 ui-has-icon round shadow-lg">
+                            <ul class="ui-dropdown-menu ui-list-column-2 ui-has-icon ui-round shadow-lg">
                                 <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#hourglass-start"/></svg> Waiting</a></li>
                                 <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#user-circle"/></svg> Expert</a></li>
                                 <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#shield"/></svg> On Audit</a></li>
@@ -114,11 +114,11 @@
                         </div>
 
                         <div class="ui-dropdown ui-nav ui-menu-hover ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn circle ui-fill-dark-100">
+                            <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Nav Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu ui-list-column-3 ui-has-icon round shadow-lg">
+                            <ul class="ui-dropdown-menu ui-list-column-3 ui-has-icon ui-round shadow-lg">
                                 <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
                                 <li><a href="#"><b class="ui-list-icon">258</b> Expert</a></li>
                                 <li><a href="#"><b class="ui-list-icon">49</b> On Audit</a></li>
@@ -132,11 +132,11 @@
                         </div>
 
                         <div class="ui-dropdown ui-nav ui-menu-hover ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn circle ui-fill-dark-100">
+                            <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Nav Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu ui-list-column-3 ui-has-icon round shadow-lg">
+                            <ul class="ui-dropdown-menu ui-list-column-3 ui-has-icon ui-round shadow-lg">
                                 <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
                                 <li><a href="#"><b class="ui-list-icon">258</b> Expert</a></li>
                                 <li><a href="#"><b class="ui-list-icon">49</b> On Audit</a></li>
@@ -155,7 +155,7 @@
                     <div class="ui-col-12">
 
                         <div class="ui-dropdown ui-nav ui-nav-full-h ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn circle ui-fill-dark-100">
+                            <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Nav Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
@@ -173,7 +173,7 @@
                         </div>
 
                         <div class="ui-dropdown ui-nav ui-nav-full-h ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn circle ui-fill-dark-100">
+                            <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Nav Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
@@ -196,11 +196,11 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost circle ui-border-dual ui-stroke ui-current ui-fill-light-200">
+                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-current ui-fill-light-200">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <div class="ui-dropdown-menu ui-tabs round align-l shadow-lg ui-block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-ui-visible">
+                            <div class="ui-dropdown-menu ui-tabs ui-round align-l shadow-lg ui-block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-ui-visible">
 
                                 <button class="ui-btn ui-btn-ghost ui-ease-btn">Waiting</button>
 
@@ -234,11 +234,11 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost circle ui-border-dual ui-stroke ui-current ui-fill-light-200">
+                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-current ui-fill-light-200">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <div class="ui-dropdown-menu ui-tabs round align-l shadow-lg ui-block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-ui-visible">
+                            <div class="ui-dropdown-menu ui-tabs ui-round align-l shadow-lg ui-block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-ui-visible">
 
                                 <button class="ui-btn ui-btn-ghost ui-ease-btn">Waiting</button>
 
@@ -276,11 +276,11 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost circle ui-border-dual ui-stroke ui-current ui-fill-light-200">
+                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-current ui-fill-light-200">
                                 List Example with Links
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu ui-list-column-2 round shadow-lg">
+                            <ul class="ui-dropdown-menu ui-list-column-2 ui-round shadow-lg">
                                 <li class="holder">
                                     <b class="ui-padding-10 ui-block ui-border-b ui-border-light">Title</b>
                                     <ul class="list-unstyled ui-list-spacer-10 hoverline-2nd ui-padding-10">
@@ -308,11 +308,11 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost circle ui-border-dual ui-stroke ui-current ui-fill-light-200">
+                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-current ui-fill-light-200">
                                 List Example with Buttons
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu ui-list-column-2 round shadow-lg">
+                            <ul class="ui-dropdown-menu ui-list-column-2 ui-round shadow-lg">
                                 <li class="holder">
                                     <b class="ui-padding-10 ui-block ui-border-b ui-border-light">Title</b>
                                     <span class="ui-btn-list form-lg ui-ease-1st-btn">
@@ -344,11 +344,11 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn align-l circle">
+                            <button class="ui-btn align-l ui-circle">
                                 <span>Value 01</span>
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu round shadow-lg">
+                            <ul class="ui-dropdown-menu ui-round shadow-lg">
                                 <li class="ui-selected">
                                     <label class="radio"><input type="radio" name="s" value="value01" checked>Value 01</label>
                                 </li>
@@ -366,11 +366,11 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn align-l circle">
+                            <button class="ui-btn align-l ui-circle">
                                 <span>Select Value with Icons</span>
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu ui-icons-margin-5-r round shadow-lg">
+                            <ul class="ui-dropdown-menu ui-icons-margin-5-r ui-round shadow-lg">
                                 <li>
                                     <label>
                                         <svg class="ui-icon"><use href="#check-circle-fill"/></svg>
@@ -429,11 +429,11 @@
                 <div class="ui-row ui-padding-30-b ui-block-2nd form-lg">
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
-                            <button class="ui-btn align-l circle">
+                            <button class="ui-btn align-l ui-circle">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu ui-has-icon round shadow-lg">
+                            <ul class="ui-dropdown-menu ui-has-icon ui-round shadow-lg">
                                 <li>
                                     <a href="#">
                                         <svg class="ui-list-icon ui-icon"><use href="#user"/></svg>
@@ -457,11 +457,11 @@
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
-                            <button class="ui-btn align-l circle">
+                            <button class="ui-btn align-l ui-circle">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu ui-has-icon round shadow-lg">
+                            <ul class="ui-dropdown-menu ui-has-icon ui-round shadow-lg">
                                 <li>
                                     <a href="#">
                                         <svg class="ui-list-icon ui-icon"><use href="#user"/></svg>
@@ -489,11 +489,11 @@
                 <div class="ui-row ui-padding-30-b ui-block-2nd form-lg">
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost circle ui-border-dual">
+                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu ui-has-grid round ui-icons-lg shadow-lg">
+                            <ul class="ui-dropdown-menu ui-has-grid ui-round ui-icons-lg shadow-lg">
                                 <li>
                                     <a href="#">
                                         <svg class="ui-list-icon ui-icon"><use href="#home"/></svg>
@@ -529,11 +529,11 @@
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost circle ui-border-dual">
+                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu ui-has-grid round ui-icons-lg shadow-lg">
+                            <ul class="ui-dropdown-menu ui-has-grid ui-round ui-icons-lg shadow-lg">
                                 <li>
                                     <a href="#">
                                         <svg class="ui-list-icon ui-icon"><use href="#home"/></svg>
@@ -575,11 +575,11 @@
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost circle ui-border-dual">
+                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                             </button>
-                            <ul class="ui-dropdown-menu ui-has-grid round shadow-lg">
+                            <ul class="ui-dropdown-menu ui-has-grid ui-round shadow-lg">
                                 <li>Home</li>
                                 <li>Profile</li>
                                 <li>Notifications</li>

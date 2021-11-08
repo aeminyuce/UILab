@@ -171,7 +171,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="ui-col-12 ui-theme-base ui-fill-dark-100 round">
+                    <div class="ui-col-12 ui-theme-base ui-fill-dark-100 ui-round">
                         <div class="ui-row">
                             <div class="ui-col-6">
                                 <h5 class="font-bold align-c">Filled Line Charts</h5>
@@ -231,15 +231,15 @@
                         </div>
                     </div>
                     <div class="ui-col-12">
-                        <div class="ui-card round shadow-lg ui-tabs ui-ease-tabs" data-ui-classes="font-bold">
+                        <div class="ui-card ui-round shadow-lg ui-tabs ui-ease-tabs" data-ui-classes="font-bold">
                             <div class="ui-card-side ui-padding-10 ui-border-b">
 
                                 <div class="ui-dropdown ui-menu-l ui-right ui-ease-dropdown">
-                                    <button class="ui-btn ui-btn-ghost round">
+                                    <button class="ui-btn ui-btn-ghost ui-round">
                                         <span>First Chart</span>
                                         <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                                     </button>
-                                    <ul class="ui-dropdown-menu round shadow-lg">
+                                    <ul class="ui-dropdown-menu ui-round shadow-lg">
                                         <li class="ui-selected">
                                             <label class="ui-tab active font-bold">First chart</label>
                                         </li>
@@ -468,7 +468,7 @@
                     </div>
                 </div>
 
-                <div class="ui-row ui-row-gap-lg-v ui-theme-base ui-fill-dark-100 round">
+                <div class="ui-row ui-row-gap-lg-v ui-theme-base ui-fill-dark-100 ui-round">
                     <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>HTML</strong>
@@ -626,7 +626,7 @@
                     </div>
                 </div>
 
-                <div class="ui-row ui-row-gap-lg-v ui-theme-base ui-fill-dark-100 round">
+                <div class="ui-row ui-row-gap-lg-v ui-theme-base ui-fill-dark-100 ui-round">
                     <div class="ui-col-3 ui-col-xs-6">
                         <div class="ui-pie-chart ui-ease-pie-chart">
                             <ul>

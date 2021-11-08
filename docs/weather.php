@@ -5,7 +5,7 @@
         <div class="ui-row ui-padding-30-b">
             <div class="ui-col-3 ui-col-md-6">
 
-                <div class="ui-weather round ui-ease-weather">
+                <div class="ui-weather ui-round ui-ease-weather">
                     <div class="ui-details">
                         <div class="ui-now">
                             <b class="ui-w-degree">33</b>
@@ -14,7 +14,7 @@
                             </span>
                             <span class="ui-w-clock"></span>
                         </div>
-                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded round">
+                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded ui-round">
                             <li><b>Now</b><svg class="ui-icon"><use href="#temperature"/></svg><span>36</span></li>
                             <li>14<svg class="ui-icon"><use href="#sun"/></svg><span>32</span></li>
                             <li>15<svg class="ui-icon"><use href="#sun"/></svg><span>31</span></li>
@@ -35,7 +35,7 @@
             </div>
             <div class="ui-col-3 ui-col-md-6">
 
-                <div class="ui-weather round ui-ease-weather">
+                <div class="ui-weather ui-round ui-ease-weather">
                     <div class="ui-details">
                         <div class="ui-now">
                             <b class="ui-w-degree">12</b>
@@ -44,7 +44,7 @@
                             </span>
                             <span class="ui-w-clock"></span>
                         </div>
-                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded round">
+                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded ui-round">
                             <li><b>Now</b><svg class="ui-icon"><use href="#cloud-sun"/></svg><span>12</span></li>
                             <li>14<svg class="ui-icon"><use href="#cloud"/></svg><span>11</span></li>
                             <li>15<svg class="ui-icon"><use href="#clouds"/></svg><span>10</span></li>
@@ -65,7 +65,7 @@
             </div>
             <div class="ui-col-3 ui-col-md-6">
 
-                <div class="ui-weather round ui-ease-weather">
+                <div class="ui-weather ui-round ui-ease-weather">
                     <div class="ui-details">
                         <div class="ui-now">
                             <b class="ui-w-degree">2</b>
@@ -74,7 +74,7 @@
                             </span>
                             <span class="ui-w-clock"></span>
                         </div>
-                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded round">
+                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded ui-round">
                             <li><b>Now</b><svg class="ui-icon"><use href="#fog"/></svg><span>3</span></li>
                             <li>14<svg class="ui-icon"><use href="#rain"/></svg><span>2</span></li>
                             <li>15<svg class="ui-icon"><use href="#rain-heavy"/></svg><span>1</span></li>
@@ -95,7 +95,7 @@
             </div>
             <div class="ui-col-3 ui-col-md-6">
 
-                <div class="ui-weather round ui-ease-weather">
+                <div class="ui-weather ui-round ui-ease-weather">
                     <div class="ui-details">
                         <div class="ui-now">
                             <b class="ui-w-degree">11</b>
@@ -104,7 +104,7 @@
                             </span>
                             <span class="ui-w-clock"></span>
                         </div>
-                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded round">
+                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded ui-round">
                             <li><b>Now</b><svg class="ui-icon"><use href="#cloud"/></svg><span>12</span></li>
                             <li>14<svg class="ui-icon"><use href="#cloud"/></svg><span>11</span></li>
                             <li>15<svg class="ui-icon"><use href="#clouds"/></svg><span>10</span></li>
@@ -125,7 +125,7 @@
             </div>
             <div class="ui-col-3 ui-col-md-6">
 
-                <div class="ui-weather round ui-ease-weather">
+                <div class="ui-weather ui-round ui-ease-weather">
                     <div class="ui-details">
                         <div class="ui-now">
                             <b class="ui-w-degree">28</b>
@@ -134,7 +134,7 @@
                             </span>
                             <span class="ui-w-clock"></span>
                         </div>
-                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded round">
+                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded ui-round">
                             <li><b>Now</b><svg class="ui-icon"><use href="#rain"/></svg><span>36</span></li>
                             <li>14<svg class="ui-icon"><use href="#rain"/></svg><span>32</span></li>
                             <li>15<svg class="ui-icon"><use href="#cloud"/></svg><span>31</span></li>
@@ -155,7 +155,7 @@
             </div>
             <div class="ui-col-3 ui-col-md-6">
 
-                <div class="ui-weather round ui-ease-weather">
+                <div class="ui-weather ui-round ui-ease-weather">
                     <div class="ui-details">
                         <div class="ui-now">
                             <b class="ui-w-degree">10</b>
@@ -164,7 +164,7 @@
                             </span>
                             <span class="ui-w-clock"></span>
                         </div>
-                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded round">
+                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded ui-round">
                             <li><b>Now</b><svg class="ui-icon"><use href="#bolt"/></svg><span>12</span></li>
                             <li>14<svg class="ui-icon"><use href="#rain-heavy"/></svg><span>11</span></li>
                             <li>15<svg class="ui-icon"><use href="#rain-heavy"/></svg><span>10</span></li>
@@ -185,7 +185,7 @@
             </div>
             <div class="ui-col-3 ui-col-md-6">
 
-                <div class="ui-weather round ui-ease-weather">
+                <div class="ui-weather ui-round ui-ease-weather">
                     <div class="ui-details">
                         <div class="ui-now">
                             <b class="ui-w-degree">0</b>
@@ -194,7 +194,7 @@
                             </span>
                             <span class="ui-w-clock"></span>
                         </div>
-                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded round">
+                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded ui-round">
                             <li><b>Now</b><svg class="ui-icon"><use href="#rain-snow"/></svg><span>3</span></li>
                             <li>14<svg class="ui-icon"><use href="#snow"/></svg><span>2</span></li>
                             <li>15<svg class="ui-icon"><use href="#snow"/></svg><span>1</span></li>
@@ -215,7 +215,7 @@
             </div>
             <div class="ui-col-3 ui-col-md-6">
 
-                <div class="ui-weather round ui-ease-weather">
+                <div class="ui-weather ui-round ui-ease-weather">
                     <div class="ui-details">
                         <div class="ui-now">
                             <b class="ui-w-degree">33</b>
@@ -224,7 +224,7 @@
                             </span>
                             <span class="ui-w-clock"></span>
                         </div>
-                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded round">
+                        <ul class="ui-days ui-icons-lg ui-scrollbar-faded ui-round">
                             <li><b>Now</b><svg class="ui-icon"><use href="#moon"/></svg><span>32</span></li>
                             <li>22<svg class="ui-icon"><use href="#moon"/></svg><span>32</span></li>
                             <li>23<svg class="ui-icon"><use href="#moon"/></svg><span>31</span></li>

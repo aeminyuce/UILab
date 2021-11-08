@@ -5,153 +5,153 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-30">
 
-                <div class="ui-card-warning ui-padding-30 round ui-theme-sub ui-fill-light-100 ui-stroke">
+                <div class="ui-card-warning ui-padding-30 ui-round ui-theme-sub ui-fill-light-100 ui-stroke">
                     UI JS is a simple javascript for creating, removing and triggering javascript event listeners and finding HTML elements.
                 </div>
 
                 <div class="ui-padding-30-v ui-block-1st ui-theme-base">
 
                     <b class="ui-margin-5-b">Page load event listener:</b>
-                    <pre class="round ui-margin-5-b">ui.onload(function)</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.onload(function)</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b">Add event listeners:</b>
-                    <pre class="round ui-margin-5-b">ui.on(element, event, function);<br>ui.on(element, event event ..., function);</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.on(element, event, function);<br>ui.on(element, event event ..., function);</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b">Remove event listeners:</b>
-                    <pre class="round ui-margin-5-b">ui.off(element, event);<br>ui.off(element, event event ...);</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.off(element, event);<br>ui.off(element, event event ...);</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b">Add delegate event listeners:</b>
-                    <pre class="round ui-margin-5-b">ui.on(parentElement, event, element, function);</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.on(parentElement, event, element, function);</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b">Remove delegated event listeners:</b>
-                    <pre class="round ui-margin-5-b">ui.off(parentElement, event);</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.off(parentElement, event);</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b">Event naming:</b>
-                    <pre class="round ui-margin-5-b">ui.on(element, event.eventname, function);<br>ui.on(element, event.eventname event.eventname ..., function);<br>ui.on(document, event.eventname, function);</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.on(element, event.eventname, function);<br>ui.on(element, event.eventname event.eventname ..., function);<br>ui.on(document, event.eventname, function);</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b">Trigger event listeners:</b>
-                    <pre class="round ui-margin-5-b">ui.trigger(element, event);<br>ui.trigger(element, event event ...);</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.trigger(element, event);<br>ui.trigger(element, event event ...);</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b">Check classname:</b>
-                    <pre class="round ui-margin-5-b">ui.hasClass(element, '.class');<br>ui.hasClass(element, '.class .class ...');</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.hasClass(element, '.class');<br>ui.hasClass(element, '.class .class ...');</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b">Add classname:</b>
-                    <pre class="round ui-margin-5-b">ui.addClass(element, '.class');<br>ui.addClass(element, '.class .class ...');</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.addClass(element, '.class');<br>ui.addClass(element, '.class .class ...');</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b">Remove classname:</b>
-                    <pre class="round ui-margin-5-b">ui.removeClass(element, '.class');<br>ui.removeClass(element, '.class .class ...');</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.removeClass(element, '.class');<br>ui.removeClass(element, '.class .class ...');</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b">Toggle classname:</b>
-                    <pre class="round ui-margin-5-b">ui.toggleClass(element, '.class');<br>ui.toggleClass(element, '.class .class ...');</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.toggleClass(element, '.class');<br>ui.toggleClass(element, '.class .class ...');</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b">Show element:</b>
-                    <pre class="round ui-margin-5-b">ui.show(element);</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.show(element);</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b">Hide element:</b>
-                    <pre class="round ui-margin-5-b">ui.hide(element);</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.hide(element);</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b">.each() Run for each matched element:</b>
-                    <pre class="round ui-margin-5-b">ui.each(element, function);</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.each(element, function);</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b">.closest() Returns the first ancestor:</b>
-                    <pre class="round ui-margin-5-b">ui.closest(element, parentElement);</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.closest(element, parentElement);</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b ui-block">ui.find() is a simple javascript finder to find HTML elements:</b>
-                    <pre class="round ui-margin-5-b">ui.find('element');</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.find('element');</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b ui-block">Find multiple elements:</b>
-                    <pre class="round ui-margin-5-b">ui.find('element, element');</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.find('element, element');</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b ui-block">Find first of elements:</b>
-                    <pre class="round ui-margin-5-b">ui.find('element')[0];</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.find('element')[0];</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b ui-block">Find CSS3 last-child of elements:</b>
-                    <pre class="round ui-margin-5-b">ui.find(':last-child');</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.find(':last-child');</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b ui-block">Find classname:</b>
-                    <pre class="round ui-margin-5-b">ui.find('.class');</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.find('.class');</pre>
 
                     <span class="sp-30"></span>
                     <b class="ui-margin-5-b ui-block">Find ID:</b>
-                    <pre class="round ui-margin-5-b">ui.find('#id');</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.find('#id');</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b ui-block">Find with attribute:</b>
-                    <pre class="round ui-margin-5-b">ui.find('[attribute]');</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.find('[attribute]');</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b ui-block">Find document:</b>
-                    <pre class="round ui-margin-5-b">ui.find(document);</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.find(document);</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b ui-block">Find window:</b>
-                    <pre class="round ui-margin-5-b">ui.find(window);</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.find(window);</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b ui-block">Find this element:</b>
-                    <pre class="round ui-margin-5-b">ui.find(this);</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.find(this);</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b ui-block">Find an element in this element:</b>
-                    <pre class="round ui-margin-5-b">ui.find('element', this);</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.find('element', this);</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b ui-block">Find classname in parent classname:</b>
-                    <pre class="round ui-margin-5-b">ui.find('.class', '.parentClass');</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.find('.class', '.parentClass');</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b ui-block">Find ID in selected classname:</b>
-                    <pre class="round ui-margin-5-b">ui.find('#id', '.class');</pre>
+                    <pre class="ui-round ui-margin-5-b">ui.find('#id', '.class');</pre>
 
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b ui-block">ui.ajax() is a simple javascript to making XHR requests:</b>
-                    <pre class="round ui-scroll-v">ajax({
+                    <pre class="ui-round ui-scroll-v">ajax({
 
     type : 'GET',
     url : 'yourfile.php',
@@ -227,12 +227,12 @@ ajax({
 
                     <b class="ui-margin-5-b ui-block">ui.userAgents() is a simple javascript for detecting browsers, devices and operating systems.</b>
                     <span class="ui-margin-5-b ui-block">Adding classnames to the html element, dynamically:</span>
-                    <pre class="round results"></pre>
+                    <pre class="ui-round results"></pre>
 
                     <span class="sp-15"></span>
 
                     <span class="ui-margin-5-b ui-block">Global variables:</span>
-                    <pre class="round variables"></pre>
+                    <pre class="ui-round variables"></pre>
 
                 </div>
 

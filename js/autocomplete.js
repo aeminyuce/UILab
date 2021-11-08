@@ -19,7 +19,7 @@ ui.autocomplete = {
     nameSelected: 'ui-selected',
 
     // outer classnames
-    nameRound: 'round',
+    nameRound: 'ui-round',
     nameText: 'text',
 
     // styling classnames

@@ -114,7 +114,7 @@
                     </ul>
                 </div>
 
-                <div class="ui-card ui-padding-30 round shadow-lg">
+                <div class="ui-card ui-padding-30 ui-round shadow-lg">
 
                     <h5 class="font-bold align-c ui-margin-15-b">Steps in Card</h5>
 

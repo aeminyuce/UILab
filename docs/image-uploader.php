@@ -1,7 +1,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed ui-padding-30-v">
 
-        <div class="ui-image-uploader round shadow-lg ui-ease-image-uploader">
+        <div class="ui-image-uploader ui-round shadow-lg ui-ease-image-uploader">
             <form action="xhr/image-uploader.php" method="post" enctype="multipart/form-data"> <!-- error testing: image-uploader-error.php-->
 
                 <div class="ui-padding-10-h ui-border-b ui-border-light">
@@ -11,14 +11,14 @@
                         </div>
                         <div class="ui-col-6 align-r ui-sm-no-padding-t form-lg">
 
-                            <div class="file ui-no-border ui-inline-block round ui-ease-form">
+                            <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
                                 <input class="bg-white ui-cursor-pointer" type="file" name="images[]" multiple>
                                 <span class="ui-btn ui-btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
                                     <svg class="ui-icon no-opacity"><use href="#plus"/></svg>
                                 </span>
                             </div>
 
-                            <button title="Send Images" type="submit" name="send" class="ui-btn ui-btn-square round ui-theme-base ui-fill-dark-100 ui-ease-btn">
+                            <button title="Send Images" type="submit" name="send" class="ui-btn ui-btn-square ui-round ui-theme-base ui-fill-dark-100 ui-ease-btn">
                                 <svg class="ui-icon"><use href="#send"/></svg>
                             </button>
 
