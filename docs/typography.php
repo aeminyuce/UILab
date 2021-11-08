@@ -16,19 +16,20 @@
                 <h3>Font Colors</h3>
                 <div class="ui-padding-30-b">
                     <div class="ui-theme-gray ui-fill-dark-100">
-                        <span class="font-color-white">.font-color-white</span>
-                        <span class="font-color-white">.font-color-white-50</span>
-                        <span class="font-color-white-muted">.font-color-white-muted</span>
+                        <span class="font-color-white">font-color-white</span>
+                        <span class="font-color-white">font-color-white-50</span>
+                        <span class="font-color-white-muted">font-color-white-muted</span>
                     </div>
-                    <span class="font-color-black-muted">.font-color-black-muted</span>
-                    <span class="font-color-black-50">.font-color-black-50</span>
-                    <span class="font-color-black">.font-color-black</span>
+                    <div class="font-color-current">font-color-current</div>
+                    <span class="font-color-black-muted">font-color-black-muted</span>
+                    <span class="font-color-black-50">font-color-black-50</span>
+                    <span class="font-color-black">font-color-black</span>
                     <span class="clearfix"></span>
-                    <span class="font-color-green">.font-color-green</span>
-                    <span class="font-color-yellow">.font-color-yellow</span>
-                    <span class="font-color-red">.font-color-red</span>
-                    <span class="font-color-orange">.font-color-orange</span>
-                    <span class="clearfix"></span>
+                    <span class="font-color-green">font-color-green</span>
+                    <span class="font-color-yellow">font-color-yellow</span>
+                    <span class="font-color-orange">font-color-orange</span>
+                    <span class="font-color-red">font-color-red</span>
+                    <span class="font-color-blue">font-color-blue</span>
                 </div>
 
                 <h3>Font Sizes</h3>
