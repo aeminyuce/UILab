@@ -65,16 +65,16 @@
 .ui-desktop .ui-theme-panel .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(231, 55%, 72%);
 }
-.ui-theme-panel.ui-color,
-.ui-theme-panel .ui-color:not([class*="ui-theme-"]) {
+.ui-theme-panel.ui-current,
+.ui-theme-panel .ui-current:not([class*="ui-theme-"]) {
   color: hsl(231, 55%, 47%) !important;
 }
-.ui-theme-panel.ui-color .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel .ui-color:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel .ui-color:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+.ui-theme-panel.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-panel .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-panel.ui-current a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-panel .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-panel.ui-current button:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-panel .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
   color: hsl(231, 55%, 47%) !important;
 }
 .ui-theme-panel.ui-stroke,
@@ -141,16 +141,16 @@
 .ui-desktop .ui-theme-panel2 .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.opacity):not(.opacity-more):hover {
   background-color: hsl(189, 95%, 65%);
 }
-.ui-theme-panel2.ui-color,
-.ui-theme-panel2 .ui-color:not([class*="ui-theme-"]) {
+.ui-theme-panel2.ui-current,
+.ui-theme-panel2 .ui-current:not([class*="ui-theme-"]) {
   color: hsl(189, 95%, 40%) !important;
 }
-.ui-theme-panel2.ui-color .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel2 .ui-color:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel2.ui-color a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel2 .ui-color:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel2.ui-color button:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel2 .ui-color:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+.ui-theme-panel2.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-panel2 .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-panel2.ui-current a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-panel2 .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-panel2.ui-current button:not([class*="ui-fill-"]):not([class*="font-color-"]),
+.ui-theme-panel2 .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
   color: hsl(189, 95%, 40%) !important;
 }
 .ui-theme-panel2.ui-stroke,

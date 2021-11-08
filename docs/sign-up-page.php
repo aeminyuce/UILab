@@ -22,7 +22,7 @@
                             <span class="sp-30"></span>
                             <a href="?l=login-page" class="ui-btn font-color-white ui-btn-lg ui-btn-ghost ui-btn-ghost-border ui-btn-sm-fluid ui-padding-30-h circle ui-border-dual ui-stroke ui-ease-btn">
                                 <span class="font-color-white">Have you already an account?</span>
-                                <span class="ui-color ui-hidden-sm">Click here to login.</span>
+                                <span class="ui-current ui-hidden-sm">Click here to login.</span>
                             </a>
                             <span class="sp-30 ui-margin-20-v"></span>
                         </div>
@@ -122,10 +122,10 @@
                                             <i class="state"></i>
                                         </span>
                                         <span class="font-color-black-muted">I agree to the</span>
-                                        <a class="font-bold hoverline ui-color" href="#">Terms</a>,
-                                        <a class="font-bold hoverline ui-color" href="#">Privacy Policy</a>
+                                        <a class="font-bold hoverline ui-current" href="#">Terms</a>,
+                                        <a class="font-bold hoverline ui-current" href="#">Privacy Policy</a>
                                         <span class="font-color-black-muted">and</span>
-                                        <a class="font-bold ui-color" href="#">Fees.</a>
+                                        <a class="font-bold ui-current" href="#">Fees.</a>
                                     </label>
 
                                     <span class="sp-30 ui-margin-15-v"></span>
@@ -134,7 +134,7 @@
                                         <b>SIGN UP NOW</b>
                                     </button>
                                     <span class="sp-30"></span>
-                                    <span class="font-color-black-muted">Have you any questions?<br>Please,</span> <a class="font-bold hoverline ui-color" href="#">click here</a> <span class="font-color-black-muted">to access Help Center.</span>
+                                    <span class="font-color-black-muted">Have you any questions?<br>Please,</span> <a class="font-bold hoverline ui-current" href="#">click here</a> <span class="font-color-black-muted">to access Help Center.</span>
 
                                 </div>
                             </div>
@@ -149,19 +149,19 @@
                                 </h3>
                                 <ul class="list-unstyled ui-list-spacer-10 font-color-black-muted x-large ui-icons-sm ui-icons-margin-5-r ui-theme-sub">
                                     <li>
-                                        <svg class="ui-icon ui-color ui-hidden-sm"><use href="#check-circle-fill"/></svg>
+                                        <svg class="ui-icon ui-current ui-hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Work and build around your team.
                                     </li>
                                     <li>
-                                        <svg class="ui-icon ui-color ui-hidden-sm"><use href="#check-circle-fill"/></svg>
+                                        <svg class="ui-icon ui-current ui-hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Whatever work you do, wherever you do it.
                                     </li>
                                     <li>
-                                        <svg class="ui-icon ui-color ui-hidden-sm"><use href="#check-circle-fill"/></svg>
+                                        <svg class="ui-icon ui-current ui-hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Where humans connect.
                                     </li>
                                     <li>
-                                        <svg class="ui-icon ui-color ui-hidden-sm"><use href="#check-circle-fill"/></svg>
+                                        <svg class="ui-icon ui-current ui-hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Expanding your environment.
                                     </li>
                                 </ul>

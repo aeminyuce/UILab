@@ -65,7 +65,7 @@
                                 </div>
                             </div>
 
-                            <button class="ui-btn ui-btn-lg ui-btn-square ui-btn-ghost ui-color ui-ease-btn ui-show-mobile-menu-r ui-visible-sm">
+                            <button class="ui-btn ui-btn-lg ui-btn-square ui-btn-ghost ui-current ui-ease-btn ui-show-mobile-menu-r ui-visible-sm">
                                 <svg class="ui-icon no-opacity"><use href="#bars"/></svg>
                             </button>
 
@@ -82,12 +82,12 @@
 <main class="ui-container ui-no-gutter">
 
     <!-- tab banner: start -->
-    <div class="ui-tabs form-lg ui-ease-tabs" data-ui-classes="ui-color ui-border-lg ui-stroke">
+    <div class="ui-tabs form-lg ui-ease-tabs" data-ui-classes="ui-current ui-border-lg ui-stroke">
 
         <div class="ui-fixed ui-padding-10-t ui-theme-farmer2">
             <div class="ui-row ui-no-ui-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
                 <div class="ui-col-12 font-color-black-50 xs-align-l align-c ui-ease-1st-btn">
-                    <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-margin-1-b ui-border-b ui-color ui-border-lg ui-stroke active">
+                    <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-margin-1-b ui-border-b ui-current ui-border-lg ui-stroke active">
                         <svg class="ui-icon"><use href="#factory"/></svg>
                         Long Term Investment
                     </button>
@@ -230,99 +230,99 @@
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
-                        <svg class="ui-icon ui-color"><use href="#leaf"/></svg>
+                        <svg class="ui-icon ui-current"><use href="#leaf"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Planting</h3>
                         <p class="highlight large font-color-black-50">Complete range of lands caping services.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
-                        <svg class="ui-icon ui-color"><use href="#wind-sock"/></svg>
+                        <svg class="ui-icon ui-current"><use href="#wind-sock"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Garden Care</h3>
                         <p class="highlight large font-color-black-50">Resolving environmental problems with best results.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
-                        <svg class="ui-icon ui-color"><use href="#water"/></svg>
+                        <svg class="ui-icon ui-current"><use href="#water"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Irrigation System</h3>
                         <p class="highlight large font-color-black-50">Idea of denouncing pleasure and praising.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
-                        <svg class="ui-icon ui-color"><use href="#land"/></svg>
+                        <svg class="ui-icon ui-current"><use href="#land"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Hardscaping</h3>
                         <p class="highlight large font-color-black-50">Placing int the landscape with great pleasure.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
-                        <svg class="ui-icon ui-color"><use href="#leaf"/></svg>
+                        <svg class="ui-icon ui-current"><use href="#leaf"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Planting</h3>
                         <p class="highlight large font-color-black-50">Complete range of lands caping services.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
-                        <svg class="ui-icon ui-color"><use href="#wind-sock"/></svg>
+                        <svg class="ui-icon ui-current"><use href="#wind-sock"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Garden Care</h3>
                         <p class="highlight large font-color-black-50">Resolving environmental problems with best results.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
-                        <svg class="ui-icon ui-color"><use href="#water"/></svg>
+                        <svg class="ui-icon ui-current"><use href="#water"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Irrigation System</h3>
                         <p class="highlight large font-color-black-50">Idea of denouncing pleasure and praising.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
-                        <svg class="ui-icon ui-color"><use href="#land"/></svg>
+                        <svg class="ui-icon ui-current"><use href="#land"/></svg>
                         <span class="sp-20"></span>
                         <h3 class="xx-large ui-margin-10-b">Hardscaping</h3>
                         <p class="highlight large font-color-black-50">Placing int the landscape with great pleasure.</p>
-                        <a href="#" class="ui-btn ui-btn-ghost block ui-color ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
+                        <a href="#" class="ui-btn ui-btn-ghost block ui-current ui-fill-dark-100 ui-ease-btn"><b>Learn more</b></a>
                     </div>
                 </div>
 
             </div>
             <div class="ui-carousel-nav ui-margin-10-t ui-icons-no-opacity ui-ease-1st-btn">
                 <button class="ui-carousel-prev ui-btn ui-btn-square ui-btn-ghost ui-fill-dark-100">
-                    <svg class="ui-icon ui-color"><use href="#angle-left"/></svg>
+                    <svg class="ui-icon ui-current"><use href="#angle-left"/></svg>
                 </button>
-                <span class="ui-dots ui-color"></span>
+                <span class="ui-dots ui-current"></span>
                 <button class="ui-carousel-next ui-btn ui-btn-square ui-btn-ghost ui-fill-dark-100">
-                    <svg class="ui-icon ui-color"><use href="#angle-right"/></svg>
+                    <svg class="ui-icon ui-current"><use href="#angle-right"/></svg>
                 </button>
             </div>
         </div>
@@ -336,16 +336,16 @@
             <div class="ui-row">
                 <div class="ui-col-12">
                     <h2 class="font-bold ui-margin-10-b">News</h2>
-                    <h3 class="ui-color">Follow our activities.</h3>
+                    <h3 class="ui-current">Follow our activities.</h3>
                 </div>
             </div>
         </div>
-        <div class="ui-tabs form-lg ui-border-t ui-padding-10-t ui-ease-tabs" data-ui-classes="ui-color ui-border-lg ui-stroke">
+        <div class="ui-tabs form-lg ui-border-t ui-padding-10-t ui-ease-tabs" data-ui-classes="ui-current ui-border-lg ui-stroke">
 
             <div class="ui-fixed">
                 <div class="ui-row ui-no-ui-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
                     <div class="ui-col-12 font-color-black-50 xs-align-l align-c ui-ease-1st-btn">
-                        <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-margin-1-b ui-border-b ui-color ui-border-lg ui-stroke active">
+                        <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-margin-1-b ui-border-b ui-current ui-border-lg ui-stroke active">
                             <svg class="ui-icon"><use href="#building"/></svg>
                             Company
                         </button>
@@ -687,7 +687,7 @@
         <div class="ui-row">
             <div class="ui-col-12">
                 <h2 class="font-bold ui-margin-10-b">Our Projects</h2>
-                <h3 class="ui-color ui-margin-25-b">What we are doing?</h3>
+                <h3 class="ui-current ui-margin-25-b">What we are doing?</h3>
 
                 <p class="font-color-black-50 font-readable x-large xs-align-c">Aliquam leo quam, laoreet quis luctus non, vulputate vitae elit. Pellentesque consequat eu mauris ac imperdiet. In dolor velit, pellentesque eu dignissim in, dignissim ac turpis. Sed lobortis diam ante, et posuere ligula convallis suscipit. Maecenas varius ultrices eros, eu vestibulum sem aliquet et.</p>
 
@@ -699,7 +699,7 @@
                             <img src="img/agriculture/md01.jpg" alt="">
                             <span class="x-large font-readable">
                                 <span class="scroll-v ui-margin-20 set-absolute set-all">
-                                    <svg class="ui-icon ui-icon-xxl left ui-margin-20-r ui-hidden-md ui-color"><use href="#trees"/></svg>
+                                    <svg class="ui-icon ui-icon-xxl left ui-margin-20-r ui-hidden-md ui-current"><use href="#trees"/></svg>
                                     <b>Sed nunc mauris, auctor tristique libero non tristique.</b>
                                     <span class="font-color-white-muted ui-margin-15-t block">
                                         Nullam mollis molestie magna nec tincidunt. Phasellus mattis aliquet ex, vel gravida dui elementum ut. Ut euismod nisi in tellus luctus dictum et ut nulla. Sed scelerisque rutrum dui, et suscipit diam sagittis quis. Quisque dapibus varius ornare.
@@ -757,7 +757,7 @@
             <div class="ui-row">
                 <div class="ui-col-12">
                     <h2 class="font-bold ui-margin-10-b">Why Choose Us</h2>
-                    <h3 class="ui-color ui-margin-25-b">See detailed statistics.</h3>
+                    <h3 class="ui-current ui-margin-25-b">See detailed statistics.</h3>
                 </div>
                 <div class="ui-col-static">
                     <div class="ui-row">

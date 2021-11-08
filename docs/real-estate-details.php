@@ -257,37 +257,37 @@
                     <ul class="list-unstyled ui-list-spacer-15 ui-icons-lg ui-icons-margin-5-r">
                         <li>
                             <span class="font-color-black-muted block ui-margin-5-b">House Type</span>
-                            <svg class="ui-icon ui-color"><use href="#house"/></svg>
+                            <svg class="ui-icon ui-current"><use href="#house"/></svg>
                             <b>Single Family</b>
                         </li>
                         <li>
                             <span class="font-color-black-muted block ui-margin-5-b">Build Surface</span>
-                            <svg class="ui-icon ui-color"><use href="#house-surface"/></svg>
+                            <svg class="ui-icon ui-current"><use href="#house-surface"/></svg>
                             <b>628m<sup>2</sup></b>
                         </li>
                         <li>
                             <span class="font-color-black-muted block ui-margin-5-b">Heating/Cooling System</span>
-                            <svg class="ui-icon ui-color"><use href="#house-heat"/></svg>
+                            <svg class="ui-icon ui-current"><use href="#house-heat"/></svg>
                             <b>Air Cooling</b>
                         </li>
                         <li>
                             <span class="font-color-black-muted block ui-margin-5-b">Bedrooms</span>
-                            <svg class="ui-icon ui-color"><use href="#bed"/></svg>
+                            <svg class="ui-icon ui-current"><use href="#bed"/></svg>
                             <b>4</b>
                         </li>
                         <li>
                             <span class="font-color-black-muted block ui-margin-5-b">Bathrooms/Guest toilets</span>
-                            <svg class="ui-icon ui-color"><use href="#wc"/></svg>
+                            <svg class="ui-icon ui-current"><use href="#wc"/></svg>
                             <b>3</b>
                         </li>
                         <li>
                             <span class="font-color-black-muted block ui-margin-5-b">Parking</span>
-                            <svg class="ui-icon ui-color"><use href="#garage"/></svg>
+                            <svg class="ui-icon ui-current"><use href="#garage"/></svg>
                             <b>2 Spaces</b>
                         </li>
                         <li>
                             <span class="font-color-black-muted block ui-margin-5-b">Year of Build</span>
-                            <svg class="ui-icon ui-color"><use href="#calendar-day"/></svg>
+                            <svg class="ui-icon ui-current"><use href="#calendar-day"/></svg>
                             <b>2019</b>
                         </li>
                     </ul>

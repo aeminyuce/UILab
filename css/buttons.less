@@ -60,8 +60,8 @@
         &:not(:hover) { background-color: @no-color !important; }
 
         &[class*="ui-fill-dark-"] {
-            &:not(.ui-color) {
-                &,.ui-icon:not(.ui-color) { ._color-var(black); }
+            &:not(.ui-current) {
+                &,.ui-icon:not(.ui-current) { ._color-var(black); }
             }
 
             &:hover,&:hover .ui-icon { color: @white !important; }

@@ -53,7 +53,7 @@
                 <div class="ui-breadcrumbs ui-theme-sub">
                     <ul class="list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="opacity ui-color ui-ease-btn" href="#" itemprop="item" title="Home">
+                            <a class="opacity ui-current ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
                                     <svg class="ui-icon ui-icon-xs"><use href="#home"/></svg>
                                 </span>
@@ -61,7 +61,7 @@
                             <meta itemprop="position" content="1" />
                         </li>
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="hoverline ui-color" href="#" itemprop="item" title="Search Results">
+                            <a class="hoverline ui-current" href="#" itemprop="item" title="Search Results">
                                 <span itemprop="name">
                                     Search Results
                                 </span>

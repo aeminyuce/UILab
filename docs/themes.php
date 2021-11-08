@@ -7,45 +7,45 @@
 
                 <div class="ui-row ui-row-gap-md highlight ui-xs-fluid">
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
-                        <div class="ui-theme-gray ui-color">
+                        <div class="ui-theme-gray ui-current">
                             .ui-theme-gray<br>
-                            .ui-color
+                            .ui-current
                         </div>
                     </div>
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
-                        <div class="ui-theme-green ui-color">
+                        <div class="ui-theme-green ui-current">
                             .ui-theme-green<br>
-                            .ui-color
+                            .ui-current
                         </div>
                     </div>
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
-                        <div class="ui-theme-yellow ui-color">
+                        <div class="ui-theme-yellow ui-current">
                             .ui-theme-yellow<br>
-                            .ui-color
+                            .ui-current
                         </div>
                     </div>
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
-                        <div class="ui-theme-orange ui-color">
+                        <div class="ui-theme-orange ui-current">
                             .ui-theme-orange<br>
-                            .ui-color
+                            .ui-current
                         </div>
                     </div>
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
-                        <div class="ui-theme-red ui-color">
+                        <div class="ui-theme-red ui-current">
                             .ui-theme-red<br>
-                            .ui-color
+                            .ui-current
                         </div>
                     </div>
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
-                        <div class="ui-theme-base ui-color">
+                        <div class="ui-theme-base ui-current">
                             .ui-theme-base<br>
-                            .ui-color
+                            .ui-current
                         </div>
                     </div>
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
-                        <div class="ui-theme-sub ui-color">
+                        <div class="ui-theme-sub ui-current">
                             .ui-theme-sub<br>
-                            .ui-color
+                            .ui-current
                         </div>
                     </div>
                 </div>

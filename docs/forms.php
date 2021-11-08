@@ -704,15 +704,15 @@
                 <div class="ui-padding-30-b">
                     <input class="range ui-ease-range" type="range" min="0" max="10" value="0">
                     <span class="sp-10"></span>
-                    <input class="range ui-theme-base ui-color ui-ease-range" type="range" min="0" max="10" value="2">
+                    <input class="range ui-theme-base ui-current ui-ease-range" type="range" min="0" max="10" value="2">
                     <span class="sp-10"></span>
-                    <input class="range ui-theme-sub ui-color ui-ease-range" type="range" min="0" max="10" value="4">
+                    <input class="range ui-theme-sub ui-current ui-ease-range" type="range" min="0" max="10" value="4">
                     <span class="sp-10"></span>
-                    <input class="range ui-theme-yellow ui-color ui-ease-range" type="range" min="0" max="10" value="6">
+                    <input class="range ui-theme-yellow ui-current ui-ease-range" type="range" min="0" max="10" value="6">
                     <span class="sp-10"></span>
-                    <input class="range ui-theme-orange ui-color ui-ease-range" type="range" min="0" max="10" value="8">
+                    <input class="range ui-theme-orange ui-current ui-ease-range" type="range" min="0" max="10" value="8">
                     <span class="sp-10"></span>
-                    <input class="range ui-theme-red ui-color ui-ease-range" type="range" min="0" max="10" value="10">
+                    <input class="range ui-theme-red ui-current ui-ease-range" type="range" min="0" max="10" value="10">
                     <span class="sp-10"></span>
                     <input class="range ui-ease-range" disabled type="range" min="0" max="10" value="5">
                 </div>

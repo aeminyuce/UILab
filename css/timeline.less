@@ -19,7 +19,7 @@
 .ui-timeline {
     list-style: none; position: relative;
 
-    &.ui-color {
+    &.ui-current {
         &:after { background-color: currentColor; }
         & > li {
             &:after { border-color: currentColor; }
@@ -37,7 +37,7 @@
                 .ui-card & { ._bg-var(card-bg); }
             }
         }
-        &.ui-color {
+        &.ui-current {
             & > li:before { background-color: currentColor; }
         }
     }
@@ -52,8 +52,8 @@
 
             &:extend(.ui-timeline:not(.ui-hide-h-lines) > li:before);
         }
-        &.ui-color {
-            &:after { &:extend(.ui-timeline.ui-color > li:after); }
+        &.ui-current {
+            &:after { &:extend(.ui-timeline.ui-current > li:after); }
         }
 
         & > [class*="ui-img-photo"] { margin-left: @timeline-card-padding; position: relative; z-index: 1; transform: translateY(50%); }

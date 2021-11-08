@@ -24,7 +24,7 @@
 .ui-steps-bar {
     list-style: none; display: flex;
 
-    &:not([class*="ui-color"]) { color: @green; }
+    &:not([class*="ui-current"]) { color: @green; }
     li {
         font-size: @x-small; line-height: normal; text-align: center; position: relative; flex-grow: 1;
 
@@ -67,7 +67,7 @@
             }
         }
     }
-    &[class*="ui-color"] {
+    &[class*="ui-current"] {
         li {
             &:before { background-color: currentColor; border-color: currentColor; }
             &:after { background-color: currentColor; }
