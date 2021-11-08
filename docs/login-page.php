@@ -1,9 +1,9 @@
 <!-- custom CSS -->
 <link rel="stylesheet" href="../css/custom/login-page.css?v=<?php echo filemtime('../css/custom/login-page.css'); ?>"/>
 
-<main class="ui-container full-h ui-no-gutter set-fixed set-all scroll-v">
+<main class="ui-container ui-full-h ui-no-gutter set-fixed set-all scroll-v">
 
-    <div class="ui-row ui-no-row-gap ui-sm-fluid full-h">
+    <div class="ui-row ui-no-row-gap ui-sm-fluid ui-full-h">
         <div class="login-forms-container ui-col-lg-5 ui-col-6">
 
             <div class="forms-holder ui-card form-lg ui-tabs shadow-lg ui-ease-tabs">
@@ -82,7 +82,7 @@
 
             <div class="login-holder align-c no-scroll set-relative ui-fill-dark-100 shadow-lg">
 
-                <div class="full-w set-absolute set-c">
+                <div class="ui-full-w set-absolute set-c">
                     <h1 class="ui-hidden-md">Create your account</h1>
                     <p class="x-large font-color-white-muted">Sign up to create, discover and connect with the global community.</p>
                     <span class="sp-30 ui-margin-10-v"></span>

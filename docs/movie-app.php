@@ -4,7 +4,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-col-static ui-no-fluid">
         <div class="ui-col-200 set-relative ui-hidden-md">
-            <div class="sidebar ui-col-200 full-h set-fixed set-l ui-padding-5 ui-fill-dark-100 ui-hidden-md scroll-v ui-scrollbar-faded">
+            <div class="sidebar ui-col-200 ui-full-h set-fixed set-l ui-padding-5 ui-fill-dark-100 ui-hidden-md scroll-v ui-scrollbar-faded">
 
                 <div class="align-l ui-padding-10 ui-icons-no-opacity ui-icons-margin-10-r form-lg ui-add-mobile-menu-l">
                     <h5 class="font-color-white-50 ui-padding-15 ui-margin-5-b">LIBRARY</h5>
@@ -126,7 +126,7 @@
                             <div class="ui-col-static">
                                 <div class="ui-col-350">
                                     <div class="round set-relative">
-                                        <button class="ui-btn full-w full-h set-absolute opacity-more ui-ease-layout" onclick="ui.modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
+                                        <button class="ui-btn ui-full-w ui-full-h set-absolute opacity-more ui-ease-layout" onclick="ui.modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
                                             <svg class="ui-icon ui-icon-xxl ui-icon-default font-color-white set-absolute set-c"><use href="#video"/></svg>
                                         </button>
                                         <img class="img-fluid round shadow-lg" src="img/video-poster.jpg" alt="">

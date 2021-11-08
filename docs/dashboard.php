@@ -10,7 +10,7 @@
 
         <!-- sidebar -->
         <div class="sidebar ui-col-250 set-relative ui-visible-lg ui-theme-panel ui-ease-width ui-ease-in-out">
-            <div class="ui-col-250 full-h set-fixed set-l invert-bg ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
+            <div class="ui-col-250 ui-full-h set-fixed set-l invert-bg ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
 
                 <div class="set-relative">
                     <img src="img/logo-udashboard.png" width="194" height="62" alt="">
@@ -671,7 +671,7 @@
                                     <div class="ui-carousel-slider ui-icons-margin-5-r ui-ease-layout ui-ease-slow ui-ease-in-out">
 
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-yellow">
-                                            <div class="ui-card full-h ui-padding-15 round shadow-lg">
+                                            <div class="ui-card ui-full-h ui-padding-15 round shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
@@ -694,7 +694,7 @@
                                             </div>
                                         </div>
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-yellow">
-                                            <div class="ui-card full-h ui-padding-15 round shadow-lg">
+                                            <div class="ui-card ui-full-h ui-padding-15 round shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
@@ -717,7 +717,7 @@
                                             </div>
                                         </div>
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-green">
-                                            <div class="ui-card full-h ui-padding-15 round shadow-lg">
+                                            <div class="ui-card ui-full-h ui-padding-15 round shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
@@ -740,7 +740,7 @@
                                             </div>
                                         </div>
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-panel2">
-                                            <div class="ui-card full-h ui-padding-15 round shadow-lg">
+                                            <div class="ui-card ui-full-h ui-padding-15 round shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
@@ -777,7 +777,7 @@
                             </div>
 
                             <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
-                                <div class="ui-card full-h ui-padding-15 round shadow-lg">
+                                <div class="ui-card ui-full-h ui-padding-15 round shadow-lg">
                                     <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost round">
                                             <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
@@ -831,7 +831,7 @@
                             </div>
 
                             <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
-                                <div class="ui-card full-h ui-padding-15 ui-padding-10-t round shadow-lg" style="min-height: 350px;">
+                                <div class="ui-card ui-full-h ui-padding-15 ui-padding-10-t round shadow-lg" style="min-height: 350px;">
                                     <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                                         <div class="ui-btn-holder font-color-black-muted align-c ui-margin-10-b ui-border-b form-lg ui-ease-1st-btn">
@@ -976,7 +976,7 @@
                             </div>
 
                             <div class="ui-col-xl-6 ui-col-lg-6 ui-col-12 ui-col-md-6">
-                                <div class="ui-tabs ui-card full-h ui-padding-15 round shadow-lg" data-ui-classes="font-bold">
+                                <div class="ui-tabs ui-card ui-full-h ui-padding-15 round shadow-lg" data-ui-classes="font-bold">
                                     <div class="ui-ease-tabs">
                                         <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
                                             <button class="ui-btn ui-btn-square ui-btn-ghost round">
@@ -1048,7 +1048,7 @@
                             </div>
 
                             <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
-                                <div class="ui-card full-h ui-padding-15 ui-padding-10-t round shadow-lg" style="min-height: 350px;">
+                                <div class="ui-card ui-full-h ui-padding-15 ui-padding-10-t round shadow-lg" style="min-height: 350px;">
                                     <div class="ui-tabs form-lg ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-color">
 
                                         <div class="ui-btn-holder font-color-black-muted align-c ui-margin-10-b ui-border-b ui-ease-1st-btn">
@@ -1119,7 +1119,7 @@
                             </div>
 
                             <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
-                                <div class="ui-card full-h ui-padding-15 round shadow-lg">
+                                <div class="ui-card ui-full-h ui-padding-15 round shadow-lg">
                                     <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost round">
                                             <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
@@ -1135,7 +1135,7 @@
                             </div>
 
                             <div class="ui-col-xl-6 ui-col-lg-6 ui-col-12 ui-col-md-6">
-                                <div class="ui-card full-h ui-padding-15 round shadow-lg">
+                                <div class="ui-card ui-full-h ui-padding-15 round shadow-lg">
                                     <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost round">
                                             <svg class="ui-icon"><use href="#ellipsis-h"/></svg>

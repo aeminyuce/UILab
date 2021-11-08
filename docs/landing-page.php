@@ -228,7 +228,7 @@
             <div class="ui-carousel-slider ui-icons-xxl hover-shadow-2nd hover-scale-2nd ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
                 <div class="ui-slide-content ui-padding-15">
-                    <div class="ui-card ui-padding-15 full-h shadow-lg ui-ease-layout">
+                    <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="ui-icon ui-color"><use href="#leaf"/></svg>
                         <span class="sp-20"></span>
@@ -239,7 +239,7 @@
                 </div>
 
                 <div class="ui-slide-content ui-padding-15">
-                    <div class="ui-card ui-padding-15 full-h shadow-lg ui-ease-layout">
+                    <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="ui-icon ui-color"><use href="#wind-sock"/></svg>
                         <span class="sp-20"></span>
@@ -250,7 +250,7 @@
                 </div>
 
                 <div class="ui-slide-content ui-padding-15">
-                    <div class="ui-card ui-padding-15 full-h shadow-lg ui-ease-layout">
+                    <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="ui-icon ui-color"><use href="#water"/></svg>
                         <span class="sp-20"></span>
@@ -261,7 +261,7 @@
                 </div>
 
                 <div class="ui-slide-content ui-padding-15">
-                    <div class="ui-card ui-padding-15 full-h shadow-lg ui-ease-layout">
+                    <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="ui-icon ui-color"><use href="#land"/></svg>
                         <span class="sp-20"></span>
@@ -272,7 +272,7 @@
                 </div>
 
                 <div class="ui-slide-content ui-padding-15">
-                    <div class="ui-card ui-padding-15 full-h shadow-lg ui-ease-layout">
+                    <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="ui-icon ui-color"><use href="#leaf"/></svg>
                         <span class="sp-20"></span>
@@ -283,7 +283,7 @@
                 </div>
 
                 <div class="ui-slide-content ui-padding-15">
-                    <div class="ui-card ui-padding-15 full-h shadow-lg ui-ease-layout">
+                    <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="ui-icon ui-color"><use href="#wind-sock"/></svg>
                         <span class="sp-20"></span>
@@ -294,7 +294,7 @@
                 </div>
 
                 <div class="ui-slide-content ui-padding-15">
-                    <div class="ui-card ui-padding-15 full-h shadow-lg ui-ease-layout">
+                    <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="ui-icon ui-color"><use href="#water"/></svg>
                         <span class="sp-20"></span>
@@ -305,7 +305,7 @@
                 </div>
 
                 <div class="ui-slide-content ui-padding-15">
-                    <div class="ui-card ui-padding-15 full-h shadow-lg ui-ease-layout">
+                    <div class="ui-card ui-padding-15 ui-full-h shadow-lg ui-ease-layout">
                         <span class="sp-15"></span>
                         <svg class="ui-icon ui-color"><use href="#land"/></svg>
                         <span class="sp-20"></span>
@@ -365,7 +365,7 @@
             <div class="ui-tab-content ui-padding-10 ui-open ui-open-ease">
                 <div class="ui-row ui-sm-fluid ui-icons-sm hover-shadow-2nd hover-t-2nd">
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card full-h shadow ui-ease-layout" href="#">
+                        <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
                                 <span class="xx-large block">Ready to modern agriculture.</span>
@@ -389,7 +389,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card full-h shadow ui-ease-layout" href="#">
+                        <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
                                 <span class="xx-large block">Farmers happy now.</span>
@@ -413,7 +413,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card full-h shadow ui-ease-layout" href="#">
+                        <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
                                 <span class="xx-large block">New market prospects.</span>
@@ -437,7 +437,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card full-h shadow ui-ease-layout" href="#">
+                        <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
                                 <span class="xx-large block">About product breeding</span>
@@ -470,7 +470,7 @@
             <div class="ui-tab-content ui-padding-10">
                 <div class="ui-row ui-sm-fluid">
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card full-h shadow ui-ease-layout" href="#">
+                        <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
                                 <span class="xx-large block">Farmers happy now.</span>
@@ -494,7 +494,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card full-h shadow ui-ease-layout" href="#">
+                        <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
                                 <span class="xx-large block">New market prospects.</span>
@@ -518,7 +518,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card full-h shadow ui-ease-layout" href="#">
+                        <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
                                 <span class="xx-large block">About product breeding</span>
@@ -542,7 +542,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card full-h shadow ui-ease-layout" href="#">
+                        <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
                                 <span class="xx-large block">Ready to modern agriculture.</span>
@@ -575,7 +575,7 @@
             <div class="ui-tab-content ui-padding-10">
                 <div class="ui-row ui-sm-fluid">
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card full-h shadow ui-ease-layout" href="#">
+                        <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
                                 <span class="xx-large block">Farmers happy now.</span>
@@ -599,7 +599,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card full-h shadow ui-ease-layout" href="#">
+                        <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
                                 <span class="xx-large block">Ready to modern agriculture.</span>
@@ -623,7 +623,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card full-h shadow ui-ease-layout" href="#">
+                        <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
                                 <span class="xx-large block">About product breeding</span>
@@ -647,7 +647,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card full-h shadow ui-ease-layout" href="#">
+                        <a class="ui-card ui-full-h shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 block">
                                 <span class="xx-large block">New market prospects.</span>

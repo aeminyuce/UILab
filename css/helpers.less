@@ -20,8 +20,8 @@
 .ui-hidden { display: none !important; }
 
 .ui-rtl { direction: rtl; }
-.full-w { width: 100% !important; }
-.full-h { height: 100% !important; }
+.ui-full-w { width: 100% !important; }
+.ui-full-h { height: 100% !important; }
 .auto-h { height: auto !important; }
 .left { float: left; }
 .right { float: right; }
@@ -51,11 +51,11 @@
 
 .clearfix {
     clear: both !important; display: block;
-    &:extend(.full-w);
+    &:extend(.ui-full-w);
 }
 .img-fluid {
     .auto-h();
-    &:extend(.full-w);
+    &:extend(.ui-full-w);
 }
 .highlight {
     display: block;
@@ -291,7 +291,7 @@ each(@increases, {
     .ui-visible-sm { .ui-hidden(); }
 }
 @media (@md-start) and (@md-finish) {
-    .img-md-fluid { .full-w(); .auto-h(); }
+    .img-md-fluid { .ui-full-w(); .auto-h(); }
     .no-float-md { .no-float(); }
     .clearfix-md { .clearfix(); }
 
@@ -315,7 +315,7 @@ each(@increases, {
 }
 @media (@sm-start) and (@sm-finish) {
     .img- {
-        &md-fluid,&sm-fluid { .full-w(); .auto-h(); }
+        &md-fluid,&sm-fluid { .ui-full-w(); .auto-h(); }
     }
     .no-float {
         &-md,&-sm { .no-float(); }
@@ -341,7 +341,7 @@ each(@increases, {
     .ui-hidden-xs { .ui-hidden(); }
 
     .img- {
-        &md-fluid,&sm-fluid,&xs-fluid { .full-w(); .auto-h(); }
+        &md-fluid,&sm-fluid,&xs-fluid { .ui-full-w(); .auto-h(); }
     }
     .no-float {
         &-md,&-sm,&-xs { .no-float(); }

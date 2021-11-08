@@ -294,11 +294,11 @@
 
                         <div class="ui-row">
 
-                            <div class="dual-multi-select ui-col-static full-height">
+                            <div class="dual-multi-select ui-col-static">
                                 <div class="ui-row">
-                                    <div class="ui-col-12 full-height">
-                                        <div class="select-multi full-height round ui-border-dual ui-ease-form">
-                                            <select multiple size="6" name="a">
+                                    <div class="ui-col-12">
+                                        <div class="select-multi round ui-border-dual ui-ease-form">
+                                            <select style="height: 156px;" multiple size="6" name="a">
                                                 <option value="1" data-ui-index="3">Value 1</option>
                                                 <option value="2">Value 2</option>
                                                 <option value="3">Value 3</option>
@@ -322,9 +322,9 @@
                                     <svg class="ui-icon ui-visible-md"><use href="#exchange-v"/></svg>
                                 </div>
                                 <div class="ui-row">
-                                    <div class="ui-col-12 full-height">
-                                        <div class="select-multi full-height round ui-border-dual ui-ease-form">
-                                            <select multiple size="6"></select>
+                                    <div class="ui-col-12">
+                                        <div class="select-multi round ui-border-dual ui-ease-form">
+                                            <select style="height: 156px;" multiple size="6"></select>
                                         </div>
                                     </div>
                                 </div>
@@ -332,11 +332,11 @@
 
                             <span class="sp-30"></span>
 
-                            <div class="dual-multi-select ui-col-static full-height">
+                            <div class="dual-multi-select ui-col-static">
                                 <div class="ui-row">
-                                    <div class="ui-col-12 full-height">
-                                        <div class="select-multi full-height round ui-border-dual ui-ease-form">
-                                            <select multiple size="6" name="b">
+                                    <div class="ui-col-12">
+                                        <div class="select-multi round ui-border-dual ui-ease-form">
+                                            <select style="height: 156px;" multiple size="6" name="b">
                                                 <option value="1" data-ui-index="3" selected>Value 1</option>
                                                 <option value="2">Value 2</option>
                                                 <option value="3">Value 3</option>
@@ -360,9 +360,9 @@
                                     <svg class="ui-icon ui-visible-md"><use href="#exchange-v"/></svg>
                                 </div>
                                 <div class="ui-row">
-                                    <div class="ui-col-12 full-height">
-                                        <div class="select-multi full-height round ui-border-dual ui-ease-form">
-                                            <select multiple size="6"></select>
+                                    <div class="ui-col-12">
+                                        <div class="select-multi round ui-border-dual ui-ease-form">
+                                            <select style="height: 156px;" multiple size="6"></select>
                                         </div>
                                     </div>
                                 </div>
@@ -370,11 +370,11 @@
 
                             <span class="sp-30"></span>
 
-                            <div class="dual-multi-select ui-col-static full-height">
+                            <div class="dual-multi-select ui-col-static">
                                 <div class="ui-row">
-                                    <div class="ui-col-12 full-height">
-                                        <div class="select-multi full-height round ui-border-dual ui-ease-form">
-                                            <select multiple size="6" name="c">
+                                    <div class="ui-col-12">
+                                        <div class="select-multi round ui-border-dual ui-ease-form">
+                                            <select style="height: 156px;" multiple size="6" name="c">
                                                 <option value="1" selected>Value 1</option>
                                                 <option value="2">Value 2</option>
                                                 <option value="3">Value 3</option>
@@ -398,9 +398,9 @@
                                     <svg class="ui-icon ui-visible-md"><use href="#exchange-v"/></svg>
                                 </div>
                                 <div class="ui-row">
-                                    <div class="ui-col-12 full-height">
-                                        <div class="select-multi full-height round ui-border-dual ui-ease-form">
-                                            <select multiple size="6"></select>
+                                    <div class="ui-col-12">
+                                        <div class="select-multi round ui-border-dual ui-ease-form">
+                                            <select style="height: 156px;" multiple size="6"></select>
                                         </div>
                                     </div>
                                 </div>

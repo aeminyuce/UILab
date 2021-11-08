@@ -1816,12 +1816,12 @@ html .ui-row {
 .ui-rtl {
   direction: rtl;
 }
-.full-w,
+.ui-full-w,
 .clearfix,
 .img-fluid {
   width: 100% !important;
 }
-.full-h {
+.ui-full-h {
   height: 100% !important;
 }
 .auto-h {
@@ -4041,7 +4041,7 @@ dt + dd:not(:last-child) {
   word-wrap: break-word;
   min-height: 42px;
 }
-.ui-btn-multi:not(.full-h) {
+.ui-btn-multi:not(.ui-full-h) {
   height: auto !important;
 }
 .ui-btn-multi.ui-btn-sm {
