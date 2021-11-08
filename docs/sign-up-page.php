@@ -122,10 +122,10 @@
                                             <i class="state"></i>
                                         </span>
                                         <span class="ui-color-black-25">I agree to the</span>
-                                        <a class="font-bold hoverline ui-current" href="#">Terms</a>,
-                                        <a class="font-bold hoverline ui-current" href="#">Privacy Policy</a>
+                                        <a class="ui-font-bold hoverline ui-current" href="#">Terms</a>,
+                                        <a class="ui-font-bold hoverline ui-current" href="#">Privacy Policy</a>
                                         <span class="ui-color-black-25">and</span>
-                                        <a class="font-bold ui-current" href="#">Fees.</a>
+                                        <a class="ui-font-bold ui-current" href="#">Fees.</a>
                                     </label>
 
                                     <span class="ui-sp-30 ui-margin-15-v"></span>
@@ -134,7 +134,7 @@
                                         <b>SIGN UP NOW</b>
                                     </button>
                                     <span class="ui-sp-30"></span>
-                                    <span class="ui-color-black-25">Have you any questions?<br>Please,</span> <a class="font-bold hoverline ui-current" href="#">click here</a> <span class="ui-color-black-25">to access Help Center.</span>
+                                    <span class="ui-color-black-25">Have you any questions?<br>Please,</span> <a class="ui-font-bold hoverline ui-current" href="#">click here</a> <span class="ui-color-black-25">to access Help Center.</span>
 
                                 </div>
                             </div>
@@ -145,7 +145,7 @@
 
                                 <h3 class="largest">
                                     Join our<br class="ui-hidden-sm">huge platform<br class="ui-hidden-sm">
-                                    <span class="font-bold x-largest">today!</span>
+                                    <span class="ui-font-bold x-largest">today!</span>
                                 </h3>
                                 <ul class="ui-list-unstyled ui-list-spacer-10 ui-color-black-25 x-large ui-icons-sm ui-icons-margin-5-r ui-theme-sub">
                                     <li>

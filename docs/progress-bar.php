@@ -18,7 +18,7 @@
                 </div>
 
                 <span class="ui-sp-30"></span>
-                <h5 class="font-bold ui-margin-15-b">Separated Progress Bars:</h5>
+                <h5 class="ui-font-bold ui-margin-15-b">Separated Progress Bars:</h5>
 
                 <div class="ui-progress-bar ui-progress-sm ui-round">
                     <span class="ui-theme-green ui-fill-dark-100" style="width: 45%;"></span>
@@ -36,7 +36,7 @@
                 </div>
 
                 <span class="ui-sp-30"></span>
-                <h5 class="font-bold ui-margin-15-b">Striped Progress Bars:</h5>
+                <h5 class="ui-font-bold ui-margin-15-b">Striped Progress Bars:</h5>
 
                 <div class="ui-progress-bar ui-progress-lg ui-round">
                     <span class="ui-theme-yellow ui-fill-light-300 ui-stripe-light ui-stripe-sm" style="width: 75%;"></span>
@@ -64,7 +64,7 @@
                 </div>
 
                 <span class="ui-sp-30"></span>
-                <h5 class="font-bold ui-margin-15-b">Striped &amp; Animated Progress Bars:</h5>
+                <h5 class="ui-font-bold ui-margin-15-b">Striped &amp; Animated Progress Bars:</h5>
 
                 <div class="ui-progress-bar ui-progress-lg ui-round">
                     <span class="ui-theme-sub ui-fill-light-300 ui-stripe-light ui-animate-progress" style="width: 80%;"></span>

@@ -61,7 +61,7 @@
                     </div>
 
                     <div class="ui-card ui-round ui-shadow-lg">
-                        <div class="ui-padding-30 large font-readable">
+                        <div class="ui-padding-30 large ui-font-readable">
                             <h4>Details</h4>
                             Each villa has been meticulously designed to meet all the demands that a luxury villa has to provide as well as offer a contemporary image of great beauty.
                             <span class="ui-sp-20"></span>
@@ -216,7 +216,7 @@
                         </div>
                     </div>
                     <div class="ui-padding-20-t ui-padding-30-h ui-border-t">
-                        <div class="largest font-bold">$640.000</div>
+                        <div class="largest ui-font-bold">$640.000</div>
                         <span class="ui-color-black-25">LATEST OFFER</span>
                     </div>
                     <div class="ui-padding-30 ui-padding-15-t">
@@ -233,7 +233,7 @@
                                 <div class="ui-row">
                                     <div class="ui-col-12 ui-no-padding">
                                         <div class="text ui-no-border ui-theme-gray ui-fill-light-100 ui-ease-form">
-                                            <input class="font-bold ui-align-c x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
+                                            <input class="ui-font-bold ui-align-c x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
                                         </div>
                                     </div>
                                 </div>

@@ -5,7 +5,7 @@
 
                 <h3>Stripes Examples</h3>
 
-                <h5 class="font-bold ui-margin-15-b">Stripe Modes:</h5>
+                <h5 class="ui-font-bold ui-margin-15-b">Stripe Modes:</h5>
                 <div class="ui-row ui-no-fluid ui-padding-30-b">
                     <div class="ui-col-6">
 
@@ -21,7 +21,7 @@
                     </div>
                 </div>
 
-                <h5 class="font-bold ui-margin-15-b">Stripe Sizes:</h5>
+                <h5 class="ui-font-bold ui-margin-15-b">Stripe Sizes:</h5>
                 <div class="ui-row ui-no-fluid ui-padding-30-b">
                     <div class="ui-col-6">
 
@@ -49,7 +49,7 @@
                     </div>
                 </div>
 
-                <h5 class="font-bold ui-margin-15-b">Stripes with Themes:</h5>
+                <h5 class="ui-font-bold ui-margin-15-b">Stripes with Themes:</h5>
                 <div class="ui-row ui-no-fluid ui-padding-30-b">
                     <div class="ui-col-6">
 
@@ -113,7 +113,7 @@
                     </div>
                 </div>
 
-                <h5 class="font-bold ui-margin-15-b">Animated Stripes:</h5>
+                <h5 class="ui-font-bold ui-margin-15-b">Animated Stripes:</h5>
                 <div class="ui-row ui-no-fluid ui-padding-30-b">
                     <div class="ui-col-6">
 

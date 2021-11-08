@@ -296,19 +296,19 @@
                     </div>
                 </div>
 
-                <h5 class="font-bold">Multi Buttons with Condensed Text</h5>
+                <h5 class="ui-font-bold">Multi Buttons with Condensed Text</h5>
                 <div class="ui-row ui-padding-30-b ui-block-2nd ui-theme-base ui-ease-2nd-btn">
                     <div class="ui-col-3 ui-col-sm-6">
-                        <a href="#" class="ui-btn ui-btn-lg ui-btn-multi font-condensed ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
+                        <a href="#" class="ui-btn ui-btn-lg ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
-                        <a href="#" class="ui-btn ui-btn-multi font-condensed ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
+                        <a href="#" class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
-                        <a href="#" class="ui-btn ui-btn-sm ui-btn-multi font-condensed ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
+                        <a href="#" class="ui-btn ui-btn-sm ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
-                        <a href="#" class="ui-btn ui-btn-xs ui-btn-multi font-condensed ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
+                        <a href="#" class="ui-btn ui-btn-xs ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
                     </div>
                 </div>
 

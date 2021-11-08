@@ -110,7 +110,7 @@
 
                 <h3>List Columns</h3>
                 <div class="ui-padding-30-b">
-                    <h5 class="font-bold">2 Columns</h5>
+                    <h5 class="ui-font-bold">2 Columns</h5>
                     <ul class="ui-list-unstyled ui-list-column-2">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -122,7 +122,7 @@
                         <li>Eget porttitor lorem</li>
                     </ul>
 
-                    <h5 class="font-bold">3 Columns</h5>
+                    <h5 class="ui-font-bold">3 Columns</h5>
                     <ul class="ui-list-unstyled ui-list-column-3">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -134,7 +134,7 @@
                         <li>Eget porttitor lorem</li>
                     </ul>
 
-                    <h5 class="font-bold">4 Columns</h5>
+                    <h5 class="ui-font-bold">4 Columns</h5>
                     <ul class="ui-list-unstyled ui-list-column-4">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -146,7 +146,7 @@
                         <li>Eget porttitor lorem</li>
                     </ul>
 
-                    <h5 class="font-bold">5 Columns</h5>
+                    <h5 class="ui-font-bold">5 Columns</h5>
                     <ul class="ui-list-unstyled ui-list-column-5">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -158,7 +158,7 @@
                         <li>Eget porttitor lorem</li>
                     </ul>
 
-                    <h5 class="font-bold">6 Columns</h5>
+                    <h5 class="ui-font-bold">6 Columns</h5>
                     <ul class="ui-list-unstyled ui-list-column-6">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -197,7 +197,7 @@
                 <h3>List Spacers</h3>
                 <div class="ui-row ui-padding-30-b">
                     <div class="ui-col-12">
-                        <h5 class="font-bold">With Inline Lists</h5>
+                        <h5 class="ui-font-bold">With Inline Lists</h5>
                         <ul class="ui-list-inline ui-list-spacer-5">
                             <li>Lorem ipsum</li>
                             <li>dolor sit amet</li>
@@ -206,7 +206,7 @@
                         </ul>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="font-bold">1px</h5>
+                        <h5 class="ui-font-bold">1px</h5>
                         <ul class="ui-list-unstyled ui-list-spacer-1">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -214,7 +214,7 @@
                         </ul>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="font-bold">2px</h5>
+                        <h5 class="ui-font-bold">2px</h5>
                         <ul class="ui-list-unstyled ui-list-spacer-2">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -222,7 +222,7 @@
                         </ul>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="font-bold">3px</h5>
+                        <h5 class="ui-font-bold">3px</h5>
                         <ul class="ui-list-unstyled ui-list-spacer-3">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -230,7 +230,7 @@
                         </ul>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="font-bold">4px</h5>
+                        <h5 class="ui-font-bold">4px</h5>
                         <ul class="ui-list-unstyled ui-list-spacer-4">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -238,7 +238,7 @@
                         </ul>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="font-bold">5px</h5>
+                        <h5 class="ui-font-bold">5px</h5>
                         <ul class="ui-list-unstyled ui-list-spacer-5">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -246,7 +246,7 @@
                         </ul>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="font-bold">10px</h5>
+                        <h5 class="ui-font-bold">10px</h5>
                         <ul class="ui-list-unstyled ui-list-spacer-10">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -254,7 +254,7 @@
                         </ul>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="font-bold">15px</h5>
+                        <h5 class="ui-font-bold">15px</h5>
                         <ul class="ui-list-unstyled ui-list-spacer-15">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -262,7 +262,7 @@
                         </ul>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="font-bold">20px</h5>
+                        <h5 class="ui-font-bold">20px</h5>
                         <ul class="ui-list-unstyled ui-list-spacer-20">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -270,7 +270,7 @@
                         </ul>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="font-bold">25px</h5>
+                        <h5 class="ui-font-bold">25px</h5>
                         <ul class="ui-list-unstyled ui-list-spacer-25">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -278,7 +278,7 @@
                         </ul>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="font-bold">30px</h5>
+                        <h5 class="ui-font-bold">30px</h5>
                         <ul class="ui-list-unstyled ui-list-spacer-30">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
@@ -292,24 +292,24 @@
             <div class="ui-col-6 ui-padding-30">
 
                 <h3>Lead Text</h3>
-                <p class="font-lead ui-highlight">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+                <p class="ui-font-lead ui-highlight">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
 
                 <h3>Readable Text</h3>
-                <p class="font-readable ui-highlight">
+                <p class="ui-font-readable ui-highlight">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat gravida posuere. Etiam luctus ex vitae diam tempor, a egestas magna posuere. Vestibulum faucibus ex dolor, at tempor ante iaculis vel. Nulla facilisi. Ut non nisl eget orci placerat lobortis.
                     <br><br>
                     Aliquam eros ante, dignissim eget hendrerit eu, volutpat in mauris. Nam dapibus varius ultrices. Aliquam erat volutpat. Nullam sit amet nunc et tellus fermentum pretium id a arcu. Sed vel lacus lacinia, lobortis massa congue, porta neque.
                 </p>
 
                 <h3>Condensed Text</h3>
-                <p class="font-condensed ui-highlight">
+                <p class="ui-font-condensed ui-highlight">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat gravida posuere. Etiam luctus ex vitae diam tempor, a egestas magna posuere. Vestibulum faucibus ex dolor, at tempor ante iaculis vel. Nulla facilisi. Ut non nisl eget orci placerat lobortis.
                     <br><br>
                     Aliquam eros ante, dignissim eget hendrerit eu, volutpat in mauris. Nam dapibus varius ultrices. Aliquam erat volutpat. Nullam sit amet nunc et tellus fermentum pretium id a arcu. Sed vel lacus lacinia, lobortis massa congue, porta neque.
                 </p>
 
                 <h3>Rtl Content</h3>
-                <p class="font-readable ui-rtl ui-highlight">
+                <p class="ui-font-readable ui-rtl ui-highlight">
                     <img class="ui-right ui-margin-15-l ui-round" src="img/image_01.jpg" width="120" alt="">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat gravida posuere. Etiam luctus ex vitae diam tempor, a egestas magna posuere. Vestibulum faucibus ex dolor, at tempor ante iaculis vel. Nulla facilisi.
                 </p>
@@ -347,19 +347,19 @@
                         <abbr title="attribute">attr</abbr>
                     </div>
                     <div class="ui-col-6">
-                        <span class="font-bold">.bold</span>
+                        <span class="ui-font-bold">.bold</span>
                         <br>
-                        <span class="font-semibold">.semibold</span>
+                        <span class="ui-font-semibold">.semibold</span>
                         <br>
-                        <span class="font-regular">.regular</span>
+                        <span class="ui-font-regular">.regular</span>
                         <br>
-                        <span class="font-light">.light</span>
+                        <span class="ui-font-light">.light</span>
                         <br>
-                        <span class="font-thin">.thin</span>
+                        <span class="ui-font-thin">.thin</span>
                         <br>
-                        <span class="font-overline">.overline</span>
+                        <span class="ui-font-overline">.overline</span>
                         <br>
-                        <div class="font-ellipsis ui-col-100">.ellipisis: Ellipsis Text</div>
+                        <div class="ui-font-ellipsis ui-col-100">.ellipisis: Ellipsis Text</div>
                     </div>
                 </div>
 

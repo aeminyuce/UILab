@@ -52,7 +52,7 @@
         </span>
         <span class="x-large">Purple</span>
         <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
-        <b class="xx-large">$79.95</b> <b class="ui-color-black-50 font-overline">$99.99</b>
+        <b class="xx-large">$79.95</b> <b class="ui-color-black-50 ui-font-overline">$99.99</b>
         <span class="ui-block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
@@ -119,7 +119,7 @@
         </span>
         <span class="x-large">White</span>
         <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
-        <b class="xx-large">$89.95</b> <b class="ui-color-black-50 font-overline">$119.99</b>
+        <b class="xx-large">$89.95</b> <b class="ui-color-black-50 ui-font-overline">$119.99</b>
         <span class="ui-block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
@@ -150,7 +150,7 @@
         </span>
         <span class="x-large">Black</span>
         <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Wired Headphones</span>
-        <b class="xx-large">$89.95</b> <b class="ui-color-black-50 font-overline">$119.99</b>
+        <b class="xx-large">$89.95</b> <b class="ui-color-black-50 ui-font-overline">$119.99</b>
         <span class="ui-block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
@@ -184,7 +184,7 @@
         </span>
         <span class="x-large">Purple</span>
         <span class="ui-color-black-50 ui-block ui-margin-10-v">beats by dr. dre Studio 3 Bluetooth Headphones</span>
-        <b class="xx-large">$79.95</b> <b class="ui-color-black-50 font-overline">$99.99</b>
+        <b class="xx-large">$79.95</b> <b class="ui-color-black-50 ui-font-overline">$99.99</b>
         <span class="ui-block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>

@@ -6,7 +6,7 @@
                 <h3>Carousel Examples</h3>
                 <div class="ui-padding-30-b">
 
-                    <h5 class="font-bold">HTML Content Carousel</h5>
+                    <h5 class="ui-font-bold">HTML Content Carousel</h5>
 
                     <div class="ui-carousel ui-padding-10 ui-round ui-shadow-in-sm ui-theme-gray ui-fill-light-100" data-ui-col="1" data-ui-slide="4000">
                         <div class="ui-carousel-slider form-lg ui-ease-2nd-layout ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
@@ -39,7 +39,7 @@
 
                                             <div class="ui-carousel-animate ui-bring-r ui-ease-layout ui-ease-slow">
                                                 <h3>1- Carousel Html Title</h3>
-                                                <p class="large font-readable">
+                                                <p class="large ui-font-readable">
                                                     Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
                                                     <br><br>
                                                     Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
@@ -84,7 +84,7 @@
 
                                             <div class="ui-carousel-animate ui-bring-r ui-ease-layout ui-ease-slow">
                                                 <h3>2- Carousel Html Title</h3>
-                                                <p class="large font-readable">
+                                                <p class="large ui-font-readable">
                                                     Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
                                                     <br><br>
                                                     Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
@@ -129,7 +129,7 @@
 
                                             <div class="ui-carousel-animate ui-bring-r ui-ease-layout ui-ease-slow">
                                                 <h3>3- Carousel Html Title</h3>
-                                                <p class="large font-readable">
+                                                <p class="large ui-font-readable">
                                                     Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
                                                     <br><br>
                                                     Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
@@ -160,7 +160,7 @@
                     </div>
                 </div>
 
-                <h5 class="font-bold">Image Carousel</h5>
+                <h5 class="ui-font-bold">Image Carousel</h5>
                 <div class="ui-padding-30-b">
                     <div class="ui-carousel" data-ui-col="8" data-ui-col-md="4" data-ui-col-sm="3" data-ui-col-xs="1" data-ui-slide="2000">
                         <div class="ui-carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow ui-ease-in-out">
@@ -226,7 +226,7 @@
 
                     <span class="ui-sp-30"></span>
 
-                    <h5 class="font-bold">Half Sized Image Carousel</h5>
+                    <h5 class="ui-font-bold">Half Sized Image Carousel</h5>
                     <div class="ui-carousel ui-half-sized" data-ui-col="4" data-ui-col-md="3" data-ui-col-sm="2" data-ui-col-xs="2">
                         <div class="ui-carousel-slider ui-ease-layout ui-ease-slow ui-ease-in-out">
                             <div class="ui-slide-content">

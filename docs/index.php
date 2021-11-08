@@ -204,8 +204,8 @@
 
                     <div class="ui-fixed ui-fixed-xl ui-padding-15 ui-margin-30-v ui-sm-no-padding">
                         <div class="card ui-highlight ui-align-c ui-padding-30 ui-xs-no-padding ui-round ui-theme-base">
-                            <h1 class="font-light">UI lab is a modular design system.</h2>
-                            <h4 class="font-bold">For developing web interfaces fastly!</h4>
+                            <h1 class="ui-font-light">UI lab is a modular design system.</h2>
+                            <h4 class="ui-font-bold">For developing web interfaces fastly!</h4>
                             <span class="ui-sp-15"></span>
                             <div class="form-lg ui-ease-1st-btn">
                                 <a href="?p=icons" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-margin-5-h ui-xs-no-margin-h ui-circle ui-fill-dark-300">

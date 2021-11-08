@@ -792,7 +792,7 @@
                                     <div class="ui-col-static ui-no-fluid">
                                         <div class="ui-row ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                             <div class="ui-col-12 large">
-                                                <div class="large font-bold">Total Progress</div>
+                                                <div class="large ui-font-bold">Total Progress</div>
                                                 <span class="ui-color-black-25">23% Change</span>
                                             </div>
                                         </div>
@@ -976,7 +976,7 @@
                             </div>
 
                             <div class="ui-col-xl-6 ui-col-lg-6 ui-col-12 ui-col-md-6">
-                                <div class="ui-tabs ui-card ui-full-h ui-padding-15 ui-round ui-shadow-lg" data-ui-classes="font-bold">
+                                <div class="ui-tabs ui-card ui-full-h ui-padding-15 ui-round ui-shadow-lg" data-ui-classes="ui-font-bold">
                                     <div class="ui-ease-tabs">
                                         <div class="ui-dropdown ui-menu-l ui-right ui-ease-dropdown">
                                             <button class="ui-btn ui-btn-square ui-btn-ghost ui-round">
@@ -995,7 +995,7 @@
                                             </button>
                                             <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                                 <li class="ui-selected">
-                                                    <label class="ui-tab ui-active font-bold">Last year</label>
+                                                    <label class="ui-tab ui-active ui-font-bold">Last year</label>
                                                 </li>
                                                 <li>
                                                     <label class="ui-tab">Past year</label>
@@ -1771,7 +1771,7 @@
 
         <form action="#successful">
             <h2>Search</h2>
-            <p class="ui-highlight large ui-color-white-50 ui-xs-align-c font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
+            <p class="ui-highlight large ui-color-white-50 ui-xs-align-c ui-font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-row ui-no-ui-row-gap-h">
@@ -1794,21 +1794,21 @@
 
             <div class="ui-row ui-xs-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity ui-hover-t-more-2nd ui-icons-margin-5-v ui-theme-panel ui-ease-2nd-btn">
                 <div class="ui-col-4 ui-padding-10-b">
-                    <a class="ui-btn ui-btn-multi font-condensed ui-round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#news"/></svg>
                         <span class="x-large ui-block ui-margin-5-t">News</span>
                         <span class="ui-color-white-50">589</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
-                    <a class="ui-btn ui-btn-multi font-condensed ui-round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#calendar-check"/></svg>
                         <span class="x-large ui-block ui-margin-5-t">Events</span>
                         <span class="ui-color-white-50">219</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
-                    <a class="ui-btn ui-btn-multi font-condensed ui-round ui-fill-dark-100" href="#">
+                    <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#files"/></svg>
                         <span class="x-large ui-block ui-margin-5-t">Documents</span>
                         <span class="ui-color-white-50">701</span>

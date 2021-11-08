@@ -3470,41 +3470,41 @@ a {
 .ui-color-blue button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
   color: hsl(212, 64%, 38%) !important;
 }
-.font-lead {
+.ui-font-lead {
   font-size: 18px;
   line-height: 1.66em;
   margin-bottom: 20px;
 }
-.font-bold {
+.ui-font-bold {
   font-weight: 700 !important;
 }
-.font-semibold {
+.ui-font-semibold {
   font-weight: 500 !important;
 }
-.font-regular {
+.ui-font-regular {
   font-weight: 400 !important;
 }
-.font-light {
+.ui-font-light {
   font-weight: 300 !important;
 }
-.font-thin {
+.ui-font-thin {
   font-weight: 200 !important;
 }
-.font-italic {
+.ui-font-italic {
   font-style: italic !important;
 }
-.font-overline {
+.ui-font-overline {
   text-decoration: line-through;
 }
-.font-ellipsis {
+.ui-font-ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-.font-readable {
+.ui-font-readable {
   line-height: 1.66em;
 }
-.font-condensed {
+.ui-font-condensed {
   line-height: 1.2em !important;
 }
 .xx-smallest {

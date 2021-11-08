@@ -15,9 +15,9 @@
                             <div class="ui-margin-30-v">
                                 <svg class="ui-icon ui-icon-72 ui-theme-sub ui-current"><use href="#box"/></svg>
                             </div>
-                            <h2 class="font-bold ui-margin-15-v">Free</h2>
+                            <h2 class="ui-font-bold ui-margin-15-v">Free</h2>
                             <h4 class="ui-color-black-50">1 End Product License</h4>
-                            <p class="ui-color-black-25 large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
+                            <p class="ui-color-black-25 large ui-font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                             <a class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-margin-30-b ui-round ui-theme-green ui-fill-dark-100 ui-ease-btn" href="#">
                                 <b>GET FOR FREE</b>
                                 <svg class="ui-icon ui-margin-5-l"><use href="#heart"/></svg>
@@ -31,9 +31,9 @@
                             <div class="ui-margin-30-v">
                                 <svg class="ui-icon ui-icon-72"><use href="#gift"/></svg>
                             </div>
-                            <h2 class="font-bold ui-margin-15-v">$19</h2>
+                            <h2 class="ui-font-bold ui-margin-15-v">$19</h2>
                             <h4>Business License</h4>
-                            <p class="ui-color-white-50 large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
+                            <p class="ui-color-white-50 large ui-font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                             <span class="ui-sp-10"></span>
                             <a class="ui-btn ui-btn-multi ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-padding-15-v ui-round ui-theme-base ui-fill-dark-100 ui-ease-btn" href="#">
                                 <b>PURCHASE</b>
@@ -51,9 +51,9 @@
                             <div class="ui-margin-30-v">
                                 <svg class="ui-icon ui-icon-72 ui-theme-sub ui-current"><use href="#wallet"/></svg>
                             </div>
-                            <h2 class="font-bold ui-margin-15-v">$49</h2>
+                            <h2 class="ui-font-bold ui-margin-15-v">$49</h2>
                             <h4 class="ui-color-black-50">Enterprise License</h4>
-                            <p class="ui-color-black-25 large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
+                            <p class="ui-color-black-25 large ui-font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                             <a class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-margin-30-b ui-round ui-theme-base ui-fill-dark-100 ui-ease-btn" href="#">
                                 <b>PURCHASE</b>
                                 <svg class="ui-icon ui-margin-5-l"><use href="#shopping-basket"/></svg>
@@ -75,9 +75,9 @@
                                 <div class="ui-margin-30-v">
                                     <svg class="ui-icon ui-icon-72 ui-theme-sub ui-current"><use href="#box"/></svg>
                                 </div>
-                                <h2 class="font-bold ui-margin-15-v">Free</h2>
+                                <h2 class="ui-font-bold ui-margin-15-v">Free</h2>
                                 <h4 class="ui-color-black-50">1 End Product License</h4>
-                                <p class="ui-color-black-25 large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
+                                <p class="ui-color-black-25 large ui-font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                                 <a class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-margin-30-b ui-round ui-theme-green ui-fill-dark-100 ui-ease-btn" href="#">
                                     <b>GET FOR FREE</b>
                                     <svg class="ui-icon ui-margin-5-l"><use href="#heart"/></svg>
@@ -113,9 +113,9 @@
                                 <div class="ui-margin-30-v">
                                     <svg class="ui-icon ui-icon-72"><use href="#gift"/></svg>
                                 </div>
-                                <h2 class="font-bold ui-margin-15-v">$19</h2>
+                                <h2 class="ui-font-bold ui-margin-15-v">$19</h2>
                                 <h4>Business License</h4>
-                                <p class="ui-color-white-50 large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
+                                <p class="ui-color-white-50 large ui-font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                                 <span class="ui-sp-10"></span>
                                 <a class="ui-btn ui-btn-multi ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-padding-15-v ui-margin-25-b ui-round ui-theme-base ui-fill-dark-100 ui-ease-btn" href="#">
                                     <b>PURCHASE</b>
@@ -152,9 +152,9 @@
                                 <div class="ui-margin-30-v">
                                     <svg class="ui-icon ui-icon-72 ui-theme-sub ui-current"><use href="#wallet"/></svg>
                                 </div>
-                                <h2 class="font-bold ui-margin-15-v">$49</h2>
+                                <h2 class="ui-font-bold ui-margin-15-v">$49</h2>
                                 <h4 class="ui-color-black-50">Enterprise License</h4>
-                                <p class="ui-color-black-25 large font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
+                                <p class="ui-color-black-25 large ui-font-readable ui-margin-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                                 <a class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-margin-30-b ui-round ui-theme-base ui-fill-dark-100 ui-ease-btn" href="#">
                                     <b>PURCHASE</b>
                                     <svg class="ui-icon ui-margin-5-l"><use href="#shopping-basket"/></svg>

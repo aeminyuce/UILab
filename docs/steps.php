@@ -69,7 +69,7 @@
                     </ul>
                 </div>
 
-                <h5 class="font-bold ui-align-c ui-margin-15-b">Steps with Tooltip</h5>
+                <h5 class="ui-font-bold ui-align-c ui-margin-15-b">Steps with Tooltip</h5>
                 <div class="ui-padding-30-b">
                     <ul class="ui-steps-bar ui-steps-icon">
                         <li>
@@ -116,7 +116,7 @@
 
                 <div class="ui-card ui-padding-30 ui-round ui-shadow-lg">
 
-                    <h5 class="font-bold ui-align-c ui-margin-15-b">Steps in Card</h5>
+                    <h5 class="ui-font-bold ui-align-c ui-margin-15-b">Steps in Card</h5>
 
                     <div class="ui-padding-30-b">
                         <ul class="ui-steps-bar">
@@ -177,7 +177,7 @@
                         </ul>
                     </div>
 
-                    <h5 class="font-bold ui-align-c ui-margin-15-b">Steps with Tooltip</h5>
+                    <h5 class="ui-font-bold ui-align-c ui-margin-15-b">Steps with Tooltip</h5>
                     <div class="ui-padding-30-b">
                         <ul class="ui-steps-bar ui-steps-icon">
                             <li>
