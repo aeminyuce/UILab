@@ -63,12 +63,12 @@
 .ui-theme-farmer .ui-current:not([class*="ui-theme-"]) {
   color: hsl(40, 93%, 54%) !important;
 }
-.ui-theme-farmer.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-farmer .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-farmer.ui-current a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-farmer .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-farmer.ui-current button:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-farmer .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+.ui-theme-farmer.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-farmer .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-farmer.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-farmer .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-farmer.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-farmer .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(40, 93%, 54%) !important;
 }
 .ui-theme-farmer.ui-stroke,
@@ -139,12 +139,12 @@
 .ui-theme-farmer2 .ui-current:not([class*="ui-theme-"]) {
   color: hsl(140, 87%, 39%) !important;
 }
-.ui-theme-farmer2.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-farmer2 .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-farmer2.ui-current a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-farmer2 .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-farmer2.ui-current button:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-farmer2 .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+.ui-theme-farmer2.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-farmer2 .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-farmer2.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-farmer2 .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-farmer2.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-farmer2 .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(140, 87%, 39%) !important;
 }
 .ui-theme-farmer2.ui-stroke,

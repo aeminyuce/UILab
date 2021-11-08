@@ -10,9 +10,9 @@
                 <form id="login" class="ui-tab-content ui-open ui-open-ease" action="#">
 
                     <h3 class="ui-margin-30-b">Login to continue</h3>
-                    <p class="highlight font-color-black-muted large">Sign in to create, discover and connect with the global community.</p>
+                    <p class="highlight ui-color-black-muted large">Sign in to create, discover and connect with the global community.</p>
 
-                    <label class="form-label font-color-black-50">User Name</label>
+                    <label class="form-label ui-color-black-50">User Name</label>
                     <div class="text text-icon round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#user"/></svg>
                         <input class="required" type="text" placeholder="Enter user name" minlength="3" autofocus>
@@ -21,7 +21,7 @@
 
                     <span class="sp-15"></span>
 
-                    <label class="form-label font-color-black-50">Password</label>
+                    <label class="form-label ui-color-black-50">Password</label>
                     <div class="text text-icon round ui-border-dual ui-ease-form">
                         <button type="button" title="Toggle Password" class="show-pass">
                             <svg class="ui-icon"><use href="#eye-fill"/></svg>
@@ -42,11 +42,11 @@
 
                     <span class="sp-30"></span>
 
-                    <button type="submit" class="go-signup-btn ui-btn font-color-white block round hover-scale hover-shadow ui-ease-btn">
+                    <button type="submit" class="go-signup-btn ui-btn ui-color-white block round hover-scale hover-shadow ui-ease-btn">
                         <b>LOGIN</b>
                     </button>
                     <span class="sp-15"></span>
-                    <button class="ui-tab ui-btn ui-btn-ghost font-color-black-50 round block ui-ease-btn" data-ui-id="lost-password">
+                    <button class="ui-tab ui-btn ui-btn-ghost ui-color-black-50 round block ui-ease-btn" data-ui-id="lost-password">
                         <svg class="ui-icon ui-margin-5-r no-opacity"><use href="#lock"/></svg> Forgot password?
                     </button>
 
@@ -55,9 +55,9 @@
                 <form id="lost-password" class="ui-tab-content" action="#">
 
                     <h3 class="ui-margin-30-b">Forgot password?</h3>
-                    <p class="highlight font-color-black-muted large">Please enter your email address. You will receive a link to create a new password via email.</p>
+                    <p class="highlight ui-color-black-muted large">Please enter your email address. You will receive a link to create a new password via email.</p>
 
-                    <label class="form-label font-color-black-50">Your email</label>
+                    <label class="form-label ui-color-black-50">Your email</label>
                     <div class="text text-icon round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#at"/></svg>
                         <input class="required" type="email" placeholder="Enter email" minlength="3">
@@ -66,11 +66,11 @@
 
                     <span class="sp-30"></span>
 
-                    <button type="submit" class="go-signup-btn ui-btn font-color-white block round hover-scale hover-shadow ui-ease-btn">
+                    <button type="submit" class="go-signup-btn ui-btn ui-color-white block round hover-scale hover-shadow ui-ease-btn">
                         <b>Reset Password</b>
                     </button>
                     <span class="sp-15"></span>
-                    <button class="ui-tab ui-btn ui-btn-ghost font-color-black-50 round block ui-ease-btn" data-ui-id="login">
+                    <button class="ui-tab ui-btn ui-btn-ghost ui-color-black-50 round block ui-ease-btn" data-ui-id="login">
                         <svg class="ui-icon ui-margin-5-r no-opacity"><use href="#long-arrow-left"/></svg> Back to login
                     </button>
 
@@ -84,7 +84,7 @@
 
                 <div class="ui-full-w set-absolute set-c">
                     <h1 class="ui-hidden-md">Create your account</h1>
-                    <p class="x-large font-color-white-muted">Sign up to create, discover and connect with the global community.</p>
+                    <p class="x-large ui-color-white-muted">Sign up to create, discover and connect with the global community.</p>
                     <span class="sp-30 ui-margin-10-v"></span>
                     <a href="?l=sign-up-page" class="login-btn ui-btn ui-btn-lg ui-btn-sm-fluid ui-padding-30-h circle hover-scale hover-shadow ui-ease-btn"><b>SIGN UP NOW</b></a>
                 </div>
@@ -99,7 +99,7 @@
 
             </div>
 
-            <svg class="ui-icon font-color-white ui-visible-lg"><use href="#users"/></svg>
+            <svg class="ui-icon ui-color-white ui-visible-lg"><use href="#users"/></svg>
 
         </div>
     </div>

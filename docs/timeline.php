@@ -11,7 +11,7 @@
                     </li>
                     <li>
                         <span class="ui-img-photo circle shadow-lg ui-theme-orange ui-fill-dark-100">
-                            <svg class="ui-icon font-color-white"><use href="#calendar"/></svg>
+                            <svg class="ui-icon ui-color-white"><use href="#calendar"/></svg>
                         </span>
                         <span class="ui-card font-readable round ui-fill-dark-100">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span>
                     </li>
@@ -25,19 +25,19 @@
                 <ul class="ui-timeline large ui-theme-sub ui-current">
                     <li>
                         <span class="ui-img-photo-sm circle ui-fill-dark-100">
-                            <svg class="ui-icon font-color-white"><use href="#user"/></svg>
+                            <svg class="ui-icon ui-color-white"><use href="#user"/></svg>
                         </span>
                         <span class="ui-card font-readable ui-border-dual round ui-stroke shadow-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span>
                     </li>
                     <li>
                         <span class="ui-img-photo-sm circle ui-fill-dark-100">
-                            <svg class="ui-icon font-color-white"><use href="#heart"/></svg>
+                            <svg class="ui-icon ui-color-white"><use href="#heart"/></svg>
                         </span>
                         <span class="ui-card font-readable ui-border-dual round ui-stroke shadow-lg">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span>
                     </li>
                     <li>
                         <span class="ui-img-photo-sm circle ui-fill-dark-100">
-                            <svg class="ui-icon font-color-white"><use href="#flag"/></svg>
+                            <svg class="ui-icon ui-color-white"><use href="#flag"/></svg>
                         </span>
                         <span class="ui-card font-readable ui-border-dual round ui-stroke shadow-lg">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span>
                     </li>
@@ -76,9 +76,9 @@
 
                 <h3 class="align-c">2011</h3>
                 <ul class="ui-timeline ui-hide-lines large ui-theme-yellow">
-                    <li class="ui-current"><span class="ui-card font-readable font-color-black align-r">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
-                    <li class="ui-current"><span class="ui-card font-readable font-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
-                    <li class="ui-current"><span class="ui-card font-readable font-color-black align-r">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
+                    <li class="ui-current"><span class="ui-card font-readable ui-color-black align-r">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
+                    <li class="ui-current"><span class="ui-card font-readable ui-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
+                    <li class="ui-current"><span class="ui-card font-readable ui-color-black align-r">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
                 <span class="sp-30 ui-margin-15-v"></span>
@@ -103,7 +103,7 @@
                     </li>
                     <li>
                         <span class="ui-img-photo circle shadow-lg ui-theme-orange ui-fill-dark-100">
-                            <svg class="ui-icon font-color-white"><use href="#calendar"/></svg>
+                            <svg class="ui-icon ui-color-white"><use href="#calendar"/></svg>
                         </span>
                         <span class="ui-card font-readable round ui-fill-dark-100">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span>
                     </li>
@@ -117,24 +117,24 @@
 
                 <h3>Activity</h3>
                 <ul class="ui-timeline ui-side-l large">
-                    <li class="ui-theme-yellow ui-current"><span class="ui-card font-readable font-color-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
-                    <li class="ui-theme-orange ui-current"><span class="ui-card font-readable font-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
-                    <li class="ui-theme-red ui-current"><span class="ui-card font-readable font-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
-                    <li class="ui-theme-base ui-current"><span class="ui-card font-readable font-color-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
-                    <li class="ui-theme-sub ui-current"><span class="ui-card font-readable font-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
-                    <li class="ui-theme-green ui-current"><span class="ui-card font-readable font-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
+                    <li class="ui-theme-yellow ui-current"><span class="ui-card font-readable ui-color-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
+                    <li class="ui-theme-orange ui-current"><span class="ui-card font-readable ui-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
+                    <li class="ui-theme-red ui-current"><span class="ui-card font-readable ui-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
+                    <li class="ui-theme-base ui-current"><span class="ui-card font-readable ui-color-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
+                    <li class="ui-theme-sub ui-current"><span class="ui-card font-readable ui-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
+                    <li class="ui-theme-green ui-current"><span class="ui-card font-readable ui-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
                 <span class="sp-30 ui-margin-15-v"></span>
 
                 <h3>Activity</h3>
                 <ul class="ui-timeline ui-side-l ui-hide-h-lines large">
-                    <li class="ui-theme-yellow ui-current"><span class="ui-card font-readable font-color-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
-                    <li class="ui-theme-orange ui-current"><span class="ui-card font-readable font-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
-                    <li class="ui-theme-red ui-current"><span class="ui-card font-readable font-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
-                    <li class="ui-theme-base ui-current"><span class="ui-card font-readable font-color-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
-                    <li class="ui-theme-sub ui-current"><span class="ui-card font-readable font-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
-                    <li class="ui-theme-green ui-current"><span class="ui-card font-readable font-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
+                    <li class="ui-theme-yellow ui-current"><span class="ui-card font-readable ui-color-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
+                    <li class="ui-theme-orange ui-current"><span class="ui-card font-readable ui-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
+                    <li class="ui-theme-red ui-current"><span class="ui-card font-readable ui-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
+                    <li class="ui-theme-base ui-current"><span class="ui-card font-readable ui-color-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
+                    <li class="ui-theme-sub ui-current"><span class="ui-card font-readable ui-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
+                    <li class="ui-theme-green ui-current"><span class="ui-card font-readable ui-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
                 <span class="sp-30 ui-margin-15-v"></span>
@@ -153,12 +153,12 @@
 
                 <h3>Activity</h3>
                 <ul class="ui-timeline ui-side-l ui-hide-lines large">
-                    <li class="ui-theme-yellow ui-current"><span class="ui-card font-readable font-color-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
-                    <li class="ui-theme-orange ui-current"><span class="ui-card font-readable font-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
-                    <li class="ui-theme-red ui-current"><span class="ui-card font-readable font-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
-                    <li class="ui-theme-base ui-current"><span class="ui-card font-readable font-color-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
-                    <li class="ui-theme-sub ui-current"><span class="ui-card font-readable font-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
-                    <li class="ui-theme-green ui-current"><span class="ui-card font-readable font-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
+                    <li class="ui-theme-yellow ui-current"><span class="ui-card font-readable ui-color-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
+                    <li class="ui-theme-orange ui-current"><span class="ui-card font-readable ui-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
+                    <li class="ui-theme-red ui-current"><span class="ui-card font-readable ui-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
+                    <li class="ui-theme-base ui-current"><span class="ui-card font-readable ui-color-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
+                    <li class="ui-theme-sub ui-current"><span class="ui-card font-readable ui-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
+                    <li class="ui-theme-green ui-current"><span class="ui-card font-readable ui-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
             </div>

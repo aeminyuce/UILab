@@ -69,12 +69,12 @@
 .ui-theme-panel .ui-current:not([class*="ui-theme-"]) {
   color: hsl(231, 55%, 47%) !important;
 }
-.ui-theme-panel.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel.ui-current a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel.ui-current button:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+.ui-theme-panel.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-panel .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-panel.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-panel .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-panel.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-panel .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(231, 55%, 47%) !important;
 }
 .ui-theme-panel.ui-stroke,
@@ -145,12 +145,12 @@
 .ui-theme-panel2 .ui-current:not([class*="ui-theme-"]) {
   color: hsl(189, 95%, 40%) !important;
 }
-.ui-theme-panel2.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel2 .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel2.ui-current a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel2 .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel2.ui-current button:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-panel2 .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+.ui-theme-panel2.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-panel2 .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-panel2.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-panel2 .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-panel2.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-panel2 .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(189, 95%, 40%) !important;
 }
 .ui-theme-panel2.ui-stroke,

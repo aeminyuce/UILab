@@ -12,7 +12,7 @@
                         <div class="text round ui-border-dual ui-ease-form">
                             <input type="text" value="123456">
                         </div>
-                        <p class="hint font-color-black-muted">Form hint</p>
+                        <p class="hint ui-color-black-muted">Form hint</p>
                     </div>
 
                     <div class="ui-col-3">
@@ -130,7 +130,7 @@
                             <div class="text ui-border-dual round ui-ease-form">
                                 <input type="text" placeholder="Enter name">
                             </div>
-                            <p class="hint font-color-black-muted">Form hint</p>
+                            <p class="hint ui-color-black-muted">Form hint</p>
                         </div>
                         <div class="ui-col-3">
                             <label class="form-grid">Your Age</label>
@@ -145,7 +145,7 @@
                                     <option>31 - 40</option>
                                 </select>
                             </div>
-                            <p class="hint font-color-black-muted">Form hint</p>
+                            <p class="hint ui-color-black-muted">Form hint</p>
                         </div>
                         <div class="ui-col-3">
                             <label class="form-grid">Captcha</label>
@@ -313,7 +313,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="ui-col-50 font-color-black-muted align-c ui-icons-lg set-relative">
+                                <div class="ui-col-50 ui-color-black-muted align-c ui-icons-lg set-relative">
                                     <div class="set-absolute set-all ui-hidden-md">
                                         <div class="set-absolute set-c ui-padding-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
@@ -351,7 +351,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="ui-col-50 font-color-black-muted align-c ui-icons-lg set-relative">
+                                <div class="ui-col-50 ui-color-black-muted align-c ui-icons-lg set-relative">
                                     <div class="set-absolute set-all ui-hidden-md">
                                         <div class="set-absolute set-c ui-padding-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
@@ -389,7 +389,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="ui-col-50 font-color-black-muted align-c set-relative">
+                                <div class="ui-col-50 ui-color-black-muted align-c set-relative">
                                     <div class="set-absolute set-all ui-hidden-md">
                                         <div class="set-absolute set-c ui-icons-lg ui-padding-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
@@ -736,7 +736,7 @@
 
                     <span class="sp-15"></span>
 
-                    <h5 class="font-color-black-muted">Responsive Inline Forms</h5>
+                    <h5 class="ui-color-black-muted">Responsive Inline Forms</h5>
                     <div class="text ui-margin-10-b round ui-border-dual form-inline-xs ui-ease-form">
                         <input type="text">
                     </div>
@@ -836,7 +836,7 @@
                             <label class="form-label">Label</label>
                         </div>
                         <div class="ui-col-6 align-r">
-                            <a class="small font-color-black-muted underline" href="#">Top Right Link</a>
+                            <a class="small ui-color-black-muted underline" href="#">Top Right Link</a>
                         </div>
                     </div>
                     <div class="text ui-margin-10-b round ui-border-dual ui-ease-form">
@@ -848,7 +848,7 @@
                             <label class="form-label">Label</label>
                         </div>
                         <div class="ui-col-6 align-r">
-                            <a class="ui-btn ui-btn-xs font-color-black-muted round ui-ease-btn">Button</a>
+                            <a class="ui-btn ui-btn-xs ui-color-black-muted round ui-ease-btn">Button</a>
                         </div>
                     </div>
                     <div class="text ui-margin-10-b round ui-border-dual ui-ease-form">
@@ -861,7 +861,7 @@
                         </div>
                         <div class="ui-col-6 align-r">
                             <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
-                                <button class="ui-btn ui-btn-xs ui-btn-ghost font-color-black-muted round">
+                                <button class="ui-btn ui-btn-xs ui-btn-ghost ui-color-black-muted round">
                                     Dropdown Button
                                     <svg class="ui-toggle-icon ui-icon ui-margin-3-l"><use href="#angle-down"/></svg>
                                 </button>
@@ -1427,7 +1427,7 @@
                                     <input class="required" type="text" placeholder="Type your name">
                                 </div>
                                 <p class="required-msg">Please, type your name.</p>
-                                <i class="hint font-color-black-muted">* Required</i>
+                                <i class="hint ui-color-black-muted">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1437,7 +1437,7 @@
                                 <div class="text round ui-border-dual ui-ease-form">
                                     <input class="required" type="text">
                                 </div>
-                                <i class="hint font-color-black-muted">* Required</i>
+                                <i class="hint ui-color-black-muted">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1448,7 +1448,7 @@
                                     <input class="required" type="text" minlength="3" maxlength="10">
                                 </div>
                                 <p class="required-msg">Minimum length is 3 characters.</p>
-                                <i class="hint font-color-black-muted">* Required</i>
+                                <i class="hint ui-color-black-muted">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1459,7 +1459,7 @@
                                     <input class="required" type="text" minnumber="-5" maxnumber="10">
                                 </div>
                                 <p class="required-msg">Minimum number is -5 and maximum number is 10.</p>
-                                <i class="hint font-color-black-muted">* Required</i>
+                                <i class="hint ui-color-black-muted">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1470,7 +1470,7 @@
                                     <input class="required" type="password" minlength="8">
                                 </div>
                                 <p class="required-msg">Minimum length is 8 characters.</p>
-                                <i class="hint font-color-black-muted">* Required</i>
+                                <i class="hint ui-color-black-muted">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1481,7 +1481,7 @@
                                     <input class="required" type="email">
                                 </div>
                                 <p class="required-msg">Enter a valid email.</p>
-                                <i class="hint font-color-black-muted">* Required</i>
+                                <i class="hint ui-color-black-muted">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1497,7 +1497,7 @@
                                     </select>
                                 </div>
                                 <p class="required-msg">Please, select any option.</p>
-                                <i class="hint font-color-black-muted">* Required</i>
+                                <i class="hint ui-color-black-muted">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1532,7 +1532,7 @@
                                         <li>Select a category.</li>
                                     </ul>
                                 </div>
-                                <i class="hint font-color-black-muted">* Required</i>
+                                <i class="hint ui-color-black-muted">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1543,7 +1543,7 @@
                                     <textarea class="required" placeholder="Write your comments." minlength="10"></textarea>
                                 </div>
                                 <p class="required-msg">Please, write your comments more than 10 characters.</p>
-                                <i class="hint font-color-black-muted">* Required</i>
+                                <i class="hint ui-color-black-muted">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1556,7 +1556,7 @@
                                     <i>Choose file.</i>
                                 </div>
                                 <p class="required-msg">Please, select a file.</p>
-                                <i class="hint font-color-black-muted">* Required</i>
+                                <i class="hint ui-color-black-muted">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1569,7 +1569,7 @@
                                     </label>
                                 </div>
                                 <p class="required-msg">Please, read and accept Terms and Conditions.</p>
-                                <i class="hint font-color-black-muted">* Required for accepting <a href="#" class="underline">Terms and Conditions.</a></i>
+                                <i class="hint ui-color-black-muted">* Required for accepting <a href="#" class="underline">Terms and Conditions.</a></i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1582,7 +1582,7 @@
                                     </label>
                                 </div>
                                 <p class="required-msg">Please, read and accept Terms and Conditions.</p>
-                                <i class="hint font-color-black-muted">* Required for accepting <a href="#" class="underline">Terms and Conditions.</a></i>
+                                <i class="hint ui-color-black-muted">* Required for accepting <a href="#" class="underline">Terms and Conditions.</a></i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1599,7 +1599,7 @@
                                     </label>
                                 </div>
                                 <p class="required-msg">Please, check this checkbox.</p>
-                                <i class="hint font-color-black-muted">* Required</i>
+                                <i class="hint ui-color-black-muted">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1618,7 +1618,7 @@
                                     </label>
                                 </div>
                                 <p class="required-msg">Please, select any option.</p>
-                                <i class="hint font-color-black-muted">* Required</i>
+                                <i class="hint ui-color-black-muted">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1649,7 +1649,7 @@
                                     </label>
                                 </div>
                                 <p class="required-msg">Please, select any option.</p>
-                                <i class="hint font-color-black-muted">* Required</i>
+                                <i class="hint ui-color-black-muted">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1666,7 +1666,7 @@
                                     </label>
                                 </div>
                                 <p class="required-msg">Please, read and accept Terms and Conditions.</p>
-                                <i class="hint font-color-black-muted">* Required for accepting <a href="#" class="underline">Terms and Conditions.</a></i>
+                                <i class="hint ui-color-black-muted">* Required for accepting <a href="#" class="underline">Terms and Conditions.</a></i>
                             </div>
 
                             <div class="ui-col-9 ui-push-3 ui-ease-1st-btn">
@@ -1849,7 +1849,7 @@
                             <input class="required" type="text" placeholder="Required example with text icon post">
                         </div>
                         <p class="required-msg">Please, enter any keywords.</p>
-                        <i class="hint font-color-white-muted">* Required</i>
+                        <i class="hint ui-color-white-muted">* Required</i>
 
                     </form>
 
@@ -1859,7 +1859,7 @@
                         <textarea class="required ui-scrollbar-faded" rows="4" placeholder="Required example with counter textarea" minlength="10"></textarea>
                     </div>
                     <p class="required-msg">Please, write your comments more than 10 characters.</p>
-                    <i class="hint font-color-white-muted">* Required</i>
+                    <i class="hint ui-color-white-muted">* Required</i>
 
                 </div>
 

@@ -20,8 +20,8 @@
                     <div class="ui-row">
                         <div class="ui-col-12 ui-padding-15-v align-c">
                             <span class="sp-30"></span>
-                            <a href="?l=login-page" class="ui-btn font-color-white ui-btn-lg ui-btn-ghost ui-btn-ghost-border ui-btn-sm-fluid ui-padding-30-h circle ui-border-dual ui-stroke ui-ease-btn">
-                                <span class="font-color-white">Have you already an account?</span>
+                            <a href="?l=login-page" class="ui-btn ui-color-white ui-btn-lg ui-btn-ghost ui-btn-ghost-border ui-btn-sm-fluid ui-padding-30-h circle ui-border-dual ui-stroke ui-ease-btn">
+                                <span class="ui-color-white">Have you already an account?</span>
                                 <span class="ui-current ui-hidden-sm">Click here to login.</span>
                             </a>
                             <span class="sp-30 ui-margin-20-v"></span>
@@ -45,11 +45,11 @@
                             <div class="ui-row ui-padding-20 form-lg">
                                 <div class="ui-col-12">
                                     <h3 class="ui-margin-30-b">Create your account</h3>
-                                    <p class="font-color-black-muted large">Sign up to create, discover and connect with the global community.</p>
+                                    <p class="ui-color-black-muted large">Sign up to create, discover and connect with the global community.</p>
                                 </div>
                                 <div class="ui-col-6">
 
-                                    <label class="form-label font-color-black-50">First Name</label>
+                                    <label class="form-label ui-color-black-50">First Name</label>
                                     <div class="text round ui-border-dual ui-ease-form">
                                         <input class="required" type="text" placeholder="Enter first name" minlength="3">
                                     </div>
@@ -57,7 +57,7 @@
 
                                     <span class="sp-20"></span>
 
-                                    <label class="form-label font-color-black-50">Last Name</label>
+                                    <label class="form-label ui-color-black-50">Last Name</label>
                                     <div class="text round ui-border-dual ui-ease-form">
                                         <input class="required" type="text" placeholder="Enter last name" minlength="3">
                                     </div>
@@ -65,7 +65,7 @@
 
                                     <span class="sp-20"></span>
 
-                                    <label class="form-label font-color-black-50">Phone</label>
+                                    <label class="form-label ui-color-black-50">Phone</label>
                                     <div class="text round ui-border-dual ui-ease-form">
                                         <input class="required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
                                     </div>
@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="ui-col-6">
 
-                                    <label class="form-label font-color-black-50">Email</label>
+                                    <label class="form-label ui-color-black-50">Email</label>
                                     <div class="text round ui-border-dual ui-ease-form">
                                         <input class="required" type="email" placeholder="Enter your email">
                                     </div>
@@ -82,7 +82,7 @@
 
                                     <span class="sp-20"></span>
 
-                                    <label class="form-label font-color-black-50">Password</label>
+                                    <label class="form-label ui-color-black-50">Password</label>
                                     <div class="text text-icon round ui-border-dual ui-ease-form">
                                         <button type="button" title="Toggle Password" class="show-pass">
                                             <svg class="ui-icon"><use href="#eye-fill"/></svg>
@@ -93,7 +93,7 @@
 
                                     <span class="sp-20"></span>
 
-                                    <label class="form-label font-color-black-50">Confirm Password</label>
+                                    <label class="form-label ui-color-black-50">Confirm Password</label>
                                     <div class="text text-icon round ui-border-dual ui-ease-form">
                                         <button type="button" title="Toggle Password" class="show-pass">
                                             <svg class="ui-icon"><use href="#eye-fill"/></svg>
@@ -111,7 +111,7 @@
                                             <input type="checkbox" checked>
                                             <i class="state"></i>
                                         </span>
-                                        <span class="font-color-black-muted">Yes, I want to receive emails from this platform.</span>
+                                        <span class="ui-color-black-muted">Yes, I want to receive emails from this platform.</span>
                                     </label>
 
                                     <span class="clearfix"></span>
@@ -121,20 +121,20 @@
                                             <input type="checkbox" checked>
                                             <i class="state"></i>
                                         </span>
-                                        <span class="font-color-black-muted">I agree to the</span>
+                                        <span class="ui-color-black-muted">I agree to the</span>
                                         <a class="font-bold hoverline ui-current" href="#">Terms</a>,
                                         <a class="font-bold hoverline ui-current" href="#">Privacy Policy</a>
-                                        <span class="font-color-black-muted">and</span>
+                                        <span class="ui-color-black-muted">and</span>
                                         <a class="font-bold ui-current" href="#">Fees.</a>
                                     </label>
 
                                     <span class="sp-30 ui-margin-15-v"></span>
 
-                                    <button type="submit" class="signup-btn ui-btn ui-btn-md-fluid font-color-white circle hover-scale hover-shadow ui-ease-btn">
+                                    <button type="submit" class="signup-btn ui-btn ui-btn-md-fluid ui-color-white circle hover-scale hover-shadow ui-ease-btn">
                                         <b>SIGN UP NOW</b>
                                     </button>
                                     <span class="sp-30"></span>
-                                    <span class="font-color-black-muted">Have you any questions?<br>Please,</span> <a class="font-bold hoverline ui-current" href="#">click here</a> <span class="font-color-black-muted">to access Help Center.</span>
+                                    <span class="ui-color-black-muted">Have you any questions?<br>Please,</span> <a class="font-bold hoverline ui-current" href="#">click here</a> <span class="ui-color-black-muted">to access Help Center.</span>
 
                                 </div>
                             </div>
@@ -147,7 +147,7 @@
                                     Join our<br class="ui-hidden-sm">huge platform<br class="ui-hidden-sm">
                                     <span class="font-bold x-largest">today!</span>
                                 </h3>
-                                <ul class="list-unstyled ui-list-spacer-10 font-color-black-muted x-large ui-icons-sm ui-icons-margin-5-r ui-theme-sub">
+                                <ul class="list-unstyled ui-list-spacer-10 ui-color-black-muted x-large ui-icons-sm ui-icons-margin-5-r ui-theme-sub">
                                     <li>
                                         <svg class="ui-icon ui-current ui-hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Work and build around your team.

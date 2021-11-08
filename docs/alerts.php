@@ -121,7 +121,7 @@
             <div class="ui-col-12">
 
                 <b class="ui-margin-5-b block">Show Default:</b>
-                <div class="font-color-white align-c ui-col-250 ui-padding-10 round shadow-lg" style="background: hsl(220, 14%, 21%);">
+                <div class="ui-color-white align-c ui-col-250 ui-padding-10 round shadow-lg" style="background: hsl(220, 14%, 21%);">
                     Default message
                 </div>
                 <span class="sp-15"></span>

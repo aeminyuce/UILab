@@ -7,7 +7,7 @@
     ._color-var(black);
 
     .ui-icon,a,button {
-        &:not([class*="ui-fill-"]):not([class*="font-color-"]) { &:extend([class*="ui-fill-light-"] ); }
+        &:not([class*="ui-fill-"]):not([class*="ui-color-"]) { &:extend([class*="ui-fill-light-"] ); }
     }
 }
 
@@ -15,7 +15,7 @@
     color: @white;
 
     .ui-icon,a,button {
-        &:not([class*="ui-fill-"]):not([class*="font-color-"]) { &:extend([class*="ui-fill-dark-"]); }
+        &:not([class*="ui-fill-"]):not([class*="ui-color-"]) { &:extend([class*="ui-fill-dark-"]); }
     }
 }
 
@@ -56,7 +56,7 @@
         color: @color !important;
 
         .ui-icon,a,button {
-            &:not([class*="ui-fill-"]):not([class*="font-color-"]) { color: @color !important; }
+            &:not([class*="ui-fill-"]):not([class*="ui-color-"]) { color: @color !important; }
         }
     }
 

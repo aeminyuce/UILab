@@ -26,7 +26,7 @@
                                     <span class="ui-photo-slider-nav ui-margin-15-b ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Canvas Photo Series #101</span>
-                                <span class="font-color-black-50 block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
+                                <span class="ui-color-black-50 block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
                                 <b class="xx-large">$164.98</b>
                             </div>
 
@@ -50,7 +50,7 @@
                                     <span class="ui-photo-slider-nav ui-margin-15-b ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Canvas Photo Series #101</span>
-                                <span class="font-color-black-50 block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
+                                <span class="ui-color-black-50 block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
                                 <b class="xx-large">$1211.13</b>
                             </div>
 
@@ -74,7 +74,7 @@
                                     <span class="ui-photo-slider-nav ui-margin-15-b ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Canvas Photo Series #101</span>
-                                <span class="font-color-black-50 block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
+                                <span class="ui-color-black-50 block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
                                 <b class="xx-large">$198.00</b>
                             </div>
 
@@ -98,7 +98,7 @@
                                     <span class="ui-photo-slider-nav ui-margin-15-b ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Canvas Photo Series #101</span>
-                                <span class="font-color-black-50 block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
+                                <span class="ui-color-black-50 block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
                                 <b class="xx-large">$164.98</b>
                             </div>
 
@@ -122,7 +122,7 @@
                                     <span class="ui-photo-slider-nav ui-margin-15-b ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Canvas Photo Series #101</span>
-                                <span class="font-color-black-50 block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
+                                <span class="ui-color-black-50 block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
                                 <b class="xx-large">$1211.13</b>
                             </div>
 
@@ -146,7 +146,7 @@
                                     <span class="ui-photo-slider-nav ui-margin-15-b ui-ease-1st-layout"></span>
                                 </span>
                                 <span class="x-large">Canvas Photo Series #101</span>
-                                <span class="font-color-black-50 block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
+                                <span class="ui-color-black-50 block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
                                 <b class="xx-large">$198.00</b>
                             </div>
 

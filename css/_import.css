@@ -3425,76 +3425,76 @@ a {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
 }
-.font-color-current {
+.ui-color-current {
   color: currentColor;
 }
-.font-color-white,
-.font-color-white .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-.font-color-white a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-.font-color-white button:not([class*="ui-current-"]):not([class*="ui-fill-"]) {
+.ui-color-white,
+.ui-color-white .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
+.ui-color-white a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
+.ui-color-white button:not([class*="ui-current-"]):not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 100%) !important;
 }
-.font-color-white-50,
-.font-color-white-50 .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-.font-color-white-50 a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-.font-color-white-50 button:not([class*="ui-current-"]):not([class*="ui-fill-"]) {
+.ui-color-white-50,
+.ui-color-white-50 .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
+.ui-color-white-50 a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
+.ui-color-white-50 button:not([class*="ui-current-"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 100%, 0.87) !important;
 }
-.font-color-white-muted,
-.font-color-white-muted .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-.font-color-white-muted a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-.font-color-white-muted button:not([class*="ui-current-"]):not([class*="ui-fill-"]) {
+.ui-color-white-muted,
+.ui-color-white-muted .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
+.ui-color-white-muted a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
+.ui-color-white-muted button:not([class*="ui-current-"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 100%, 0.72) !important;
 }
-.font-color-black,
-.font-color-black .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-black a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-black button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-black,
+.ui-color-black .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-black a:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-black button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 0%) !important;
   color: var(--ui-black) !important;
 }
-.font-color-black-50,
-.font-color-black-50 .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-black-50 a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-black-50 button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-black-50,
+.ui-color-black-50 .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-black-50 a:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-black-50 button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 0%, 0.5) !important;
   color: var(--ui-black-50) !important;
 }
-.font-color-black-muted,
-.font-color-black-muted .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-black-muted a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-black-muted button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-black-muted,
+.ui-color-black-muted .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-black-muted a:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-black-muted button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 0%, 0.4) !important;
   color: var(--ui-black-muted) !important;
 }
-.font-color-green,
-.font-color-green .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-green a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-green button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-green,
+.ui-color-green .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-green a:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-green button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
   color: hsl(142, 82%, 42%) !important;
 }
-.font-color-yellow,
-.font-color-yellow .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-yellow a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-yellow button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-yellow,
+.ui-color-yellow .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-yellow a:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-yellow button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
   color: hsl(42, 100%, 45%) !important;
 }
-.font-color-orange,
-.font-color-orange .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-orange a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-orange button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-orange,
+.ui-color-orange .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-orange a:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-orange button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
   color: hsl(30, 100%, 50%) !important;
 }
-.font-color-red,
-.font-color-red .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-red a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-red button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-red,
+.ui-color-red .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-red a:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-red button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
   color: hsl(0, 74%, 55%) !important;
 }
-.font-color-blue,
-.font-color-blue .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-blue a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.font-color-blue button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-blue,
+.ui-color-blue .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-blue a:not([class*="ui-current"]):not([class*="ui-fill-"]),
+.ui-color-blue button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
   color: hsl(212, 64%, 38%) !important;
 }
 .font-lead {
@@ -9620,16 +9620,16 @@ html:not(.ui-ie) .ui-svg-map svg {
 }
 /* themes */
 [class*="ui-fill-light-"],
-[class*="ui-fill-light-"] .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-[class*="ui-fill-light-"] a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-[class*="ui-fill-light-"] button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+[class*="ui-fill-light-"] .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+[class*="ui-fill-light-"] a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+[class*="ui-fill-light-"] button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
 }
 [class*="ui-fill-dark-"],
-[class*="ui-fill-dark-"] .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-[class*="ui-fill-dark-"] a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-[class*="ui-fill-dark-"] button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+[class*="ui-fill-dark-"] .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+[class*="ui-fill-dark-"] a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+[class*="ui-fill-dark-"] button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(0, 0%, 100%);
 }
 .ui-theme-gray.ui-fill-light-100,
@@ -9696,12 +9696,12 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-gray .ui-current:not([class*="ui-theme-"]) {
   color: hsl(0, 0%, 70%) !important;
 }
-.ui-theme-gray.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-gray .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-gray.ui-current a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-gray .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-gray.ui-current button:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-gray .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+.ui-theme-gray.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-gray .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-gray.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-gray .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-gray.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-gray .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(0, 0%, 70%) !important;
 }
 .ui-theme-gray.ui-stroke,
@@ -9772,12 +9772,12 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-green .ui-current:not([class*="ui-theme-"]) {
   color: hsl(142, 82%, 42%) !important;
 }
-.ui-theme-green.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-green .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-green.ui-current a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-green .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-green.ui-current button:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-green .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+.ui-theme-green.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-green .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-green.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-green .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-green.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-green .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(142, 82%, 42%) !important;
 }
 .ui-theme-green.ui-stroke,
@@ -9848,12 +9848,12 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-yellow .ui-current:not([class*="ui-theme-"]) {
   color: hsl(42, 100%, 45%) !important;
 }
-.ui-theme-yellow.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-yellow .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-yellow.ui-current a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-yellow .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-yellow.ui-current button:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-yellow .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+.ui-theme-yellow.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-yellow .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-yellow.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-yellow .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-yellow.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-yellow .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(42, 100%, 45%) !important;
 }
 .ui-theme-yellow.ui-stroke,
@@ -9924,12 +9924,12 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-orange .ui-current:not([class*="ui-theme-"]) {
   color: hsl(30, 100%, 50%) !important;
 }
-.ui-theme-orange.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-orange .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-orange.ui-current a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-orange .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-orange.ui-current button:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-orange .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+.ui-theme-orange.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-orange .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-orange.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-orange .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-orange.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-orange .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(30, 100%, 50%) !important;
 }
 .ui-theme-orange.ui-stroke,
@@ -10000,12 +10000,12 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-red .ui-current:not([class*="ui-theme-"]) {
   color: hsl(0, 74%, 55%) !important;
 }
-.ui-theme-red.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-red .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-red.ui-current a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-red .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-red.ui-current button:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-red .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+.ui-theme-red.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-red .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-red.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-red .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-red.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-red .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(0, 74%, 55%) !important;
 }
 .ui-theme-red.ui-stroke,
@@ -10076,12 +10076,12 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-base .ui-current:not([class*="ui-theme-"]) {
   color: hsl(226, 52%, 50%) !important;
 }
-.ui-theme-base.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-base .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-base.ui-current a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-base .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-base.ui-current button:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-base .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+.ui-theme-base.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-base .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-base.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-base .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-base.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-base .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(226, 52%, 50%) !important;
 }
 .ui-theme-base.ui-stroke,
@@ -10152,12 +10152,12 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-sub .ui-current:not([class*="ui-theme-"]) {
   color: hsl(206, 87%, 50%) !important;
 }
-.ui-theme-sub.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-sub .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-sub.ui-current a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-sub .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-sub.ui-current button:not([class*="ui-fill-"]):not([class*="font-color-"]),
-.ui-theme-sub .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="font-color-"]) {
+.ui-theme-sub.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-sub .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-sub.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-sub .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-sub.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-sub .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(206, 87%, 50%) !important;
 }
 .ui-theme-sub.ui-stroke,
