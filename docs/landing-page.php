@@ -66,7 +66,7 @@
                             </div>
 
                             <button class="ui-btn ui-btn-lg ui-btn-square ui-btn-ghost ui-current ui-ease-btn ui-show-mobile-menu-r ui-visible-sm">
-                                <svg class="ui-icon no-opacity"><use href="#bars"/></svg>
+                                <svg class="ui-icon ui-no-opacity"><use href="#bars"/></svg>
                             </button>
 
                         </div>
@@ -912,7 +912,7 @@
 <div class="ui-mobile-menu ui-show-r ui-ease-layout ui-ease-in-out">
     <div class="ui-mobile-menu-title ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-ease-btn ui-close-mobile-menu">
-            <svg class="ui-icon no-opacity"><use href="#remove"/></svg>
+            <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
         </button>
         <a href="#"><img src="img/agriculture/logo.png" alt="" srcset="img/agriculture/logo@2x.png 2x"></a>
     </div>

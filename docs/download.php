@@ -38,7 +38,7 @@
                                 <h4>Core</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form form-disabled">
                                             <input class="generate-toggle" type="checkbox" checked disabled>
                                             <i class="state"></i>
@@ -58,7 +58,7 @@
                                 <h4>Grid System</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="state"></i>
@@ -78,7 +78,7 @@
                                 <h4>Utilities</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="state"></i>
@@ -119,7 +119,7 @@
                                 <h4>Typography</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="state"></i>
@@ -149,7 +149,7 @@
                                 <h4>Buttons</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="state"></i>
@@ -190,7 +190,7 @@
                                 <h4>Forms</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="state"></i>
@@ -224,7 +224,7 @@
                                 <h4>Icons</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="state"></i>
@@ -247,7 +247,7 @@
                                 <h4>Layout</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="state"></i>
@@ -343,7 +343,7 @@
                                 <h4>Charts</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="state"></i>
@@ -387,7 +387,7 @@
                                 <h4>Components</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="state"></i>
@@ -477,7 +477,7 @@
                                 <h4>Themes</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="state"></i>
@@ -521,7 +521,7 @@
                                     <button name="less" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">Generate LESS</button>
                                     <span class="sp-5 ui-visible-sm"></span>
                                     <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid ui-round">
-                                        <svg class="ui-icon ui-current ui-margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard
+                                        <svg class="ui-icon ui-current ui-margin-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
                                     </button>
                                 </div>
 
@@ -548,7 +548,7 @@
                                 <h4>Core</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="state"></i>
@@ -568,7 +568,7 @@
                                 <h4>Grid System</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="state"></i>
@@ -588,7 +588,7 @@
                                 <h4>Buttons</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="state"></i>
@@ -625,7 +625,7 @@
                                 <h4>Forms</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="state"></i>
@@ -687,7 +687,7 @@
                                 <h4>Layout</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="state"></i>
@@ -717,7 +717,7 @@
                                 <h4>Components</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="state"></i>
@@ -824,7 +824,7 @@
                                 <h4>Charts</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="state"></i>
@@ -888,7 +888,7 @@
                                     <span class="sp-15 ui-visible-xs"></span>
                                     <button name="js" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">Generate JS</button>
                                     <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid ui-round">
-                                        <svg class="ui-icon ui-current ui-margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard
+                                        <svg class="ui-icon ui-current ui-margin-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
                                     </button>
                                 </div>
 
@@ -903,7 +903,7 @@
                             <div class="ui-col-12">
 
                                 <div class="generate-forms ui-margin-20-b">
-                                    <label class="custom ui-margin-5-b opacity ui-ease-opacity">
+                                    <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="state"></i>
@@ -1019,7 +1019,7 @@
                                     <span class="sp-15 ui-visible-xs"></span>
                                     <button name="php" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100" data-ui-type="icons">Generate Icons</button>
                                     <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid ui-round">
-                                        <svg class="ui-icon ui-current ui-margin-5-r no-opacity"><use href="#files"/></svg>Copy to clipboard
+                                        <svg class="ui-icon ui-current ui-margin-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
                                     </button>
                                 </div>
 

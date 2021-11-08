@@ -11,29 +11,29 @@
             <div class="ui-col-12">
                 <div class="ui-sm-no-padding align-c ui-padding-30-v">
 
-                    <h1>SVG Icons<small class="ui-total ui-margin-5-v ui-block opacity-half"></small></h1>
+                    <h1>SVG Icons<small class="ui-total ui-margin-5-v ui-block ui-opacity-half"></small></h1>
 
                     <div class="ui-row">
                         <div class="ui-col-4">
                             <h4 class="align-c ui-margin-10-b">Change Weight</h4>
                             <div class="ui-icon-modifiers ui-btn-holder form-lg ui-margin-20-b ui-theme-sub form-lg ui-ease-1st-btn">
                                 <button data-ui-tooltip="b" data-ui-only="desktop" title="Black" data-ui-weight="black" class="ui-btn ui-round">
-                                    <svg class="ui-icon ui-icon-black no-opacity"><use href="#remove"/></svg>
+                                    <svg class="ui-icon ui-icon-black ui-no-opacity"><use href="#remove"/></svg>
                                 </button>
                                 <button data-ui-tooltip="b" data-ui-only="desktop" title="Bold" data-ui-weight="bold" class="ui-btn ui-round">
-                                    <svg class="ui-icon ui-icon-bold no-opacity"><use href="#remove"/></svg>
+                                    <svg class="ui-icon ui-icon-bold ui-no-opacity"><use href="#remove"/></svg>
                                 </button>
                                 <button data-ui-tooltip="b" data-ui-only="desktop" title="Semibold" data-ui-weight="semibold" class="ui-btn ui-round">
-                                    <svg class="ui-icon ui-icon-bold no-opacity"><use href="#remove"/></svg>
+                                    <svg class="ui-icon ui-icon-bold ui-no-opacity"><use href="#remove"/></svg>
                                 </button>
                                 <button data-ui-tooltip="b" data-ui-only="desktop" title="Auto Weight" data-ui-weight="" class="ui-btn ui-round ui-fill-dark-100">
                                     Auto
                                 </button>
                                 <button data-ui-tooltip="b" data-ui-only="desktop" title="Light" data-ui-weight="light" class="ui-btn ui-round">
-                                    <svg class="ui-icon ui-icon-light no-opacity"><use href="#remove"/></svg>
+                                    <svg class="ui-icon ui-icon-light ui-no-opacity"><use href="#remove"/></svg>
                                 </button>
                                 <button data-ui-tooltip="b" data-ui-only="desktop" title="Thin" data-ui-weight="thin" class="ui-btn ui-round">
-                                    <svg class="ui-icon ui-icon-thin no-opacity"><use href="#remove"/></svg>
+                                    <svg class="ui-icon ui-icon-thin ui-no-opacity"><use href="#remove"/></svg>
                                 </button>
                             </div>
                         </div>

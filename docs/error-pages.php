@@ -34,7 +34,7 @@
                     </p>
                     <p class="ui-highlight x-large font-readable">You don't have access to this page.<br>Please contact support if this wasn't supposed to happen.</p>
                     <a class="ui-color-yellow ui-btn ui-btn-ghost ui-border-dual ui-padding-30-h ui-circle ui-ease-btn" href="#">
-                        <svg class="ui-icon ui-margin-5-r no-opacity"><use href="#long-arrow-left"/></svg>
+                        <svg class="ui-icon ui-margin-5-r ui-no-opacity"><use href="#long-arrow-left"/></svg>
                         Go Back
                     </a>
                 </div>
@@ -50,7 +50,7 @@
                     </p>
                     <p class="ui-highlight x-large font-readable">We are having some issues at the moment.<br>We will have it fixed in no time!</p>
                     <a class="ui-color-orange ui-btn ui-btn-ghost ui-border-dual ui-padding-30-h ui-circle ui-ease-btn" href="#">
-                        <svg class="ui-icon ui-margin-5-r no-opacity"><use href="#long-arrow-left"/></svg>
+                        <svg class="ui-icon ui-margin-5-r ui-no-opacity"><use href="#long-arrow-left"/></svg>
                         Go Back
                     </a>
                 </div>

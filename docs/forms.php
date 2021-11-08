@@ -87,7 +87,7 @@
                             <div class="ui-col-42">
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-ease-btn">
                                     <!-- for loading toggle "ui-animate-spin" -->
-                                    <svg class="ui-icon no-opacity ui-animate-spin"><use href="#sync"/></svg>
+                                    <svg class="ui-icon ui-no-opacity ui-animate-spin"><use href="#sync"/></svg>
                                 </button>
                             </div>
                             <div class="ui-row ui-no-row-gap">
@@ -164,7 +164,7 @@
                                 <div class="ui-col-48">
                                     <button class="ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-ease-btn">
                                         <!-- for loading toggle "ui-animate-spin" -->
-                                        <svg class="ui-icon no-opacity ui-animate-spin"><use href="#sync" /></svg>
+                                        <svg class="ui-icon ui-no-opacity ui-animate-spin"><use href="#sync" /></svg>
                                     </button>
                                 </div>
                                 <div class="ui-row ui-no-row-gap">
@@ -1825,7 +1825,7 @@
                         <div class="ui-col-42">
                             <button class="ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-border-light ui-ease-btn">
                                 <!-- for loading toggle "ui-animate-spin" -->
-                                <svg class="ui-icon no-opacity ui-animate-spin"><use href="#sync"/></svg>
+                                <svg class="ui-icon ui-no-opacity ui-animate-spin"><use href="#sync"/></svg>
                             </button>
                         </div>
                         <div class="ui-row ui-no-row-gap">

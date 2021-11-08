@@ -136,8 +136,8 @@
 
 }
 
-.no-opacity { opacity: 1 !important; }
-.opacity {
+.ui-no-opacity { opacity: 1 !important; }
+.ui-opacity {
     opacity: @opacity !important;
 
     &-more { opacity: @opacity-more !important; }
@@ -147,8 +147,8 @@
 }
 
 .ui-desktop {
-    .opacity {
-        &:hover,&-more:hover { &:extend(.no-opacity); }
+    .ui-opacity {
+        &:hover,&-more:hover { &:extend(.ui-no-opacity); }
     }
 
     .hover-opacity {

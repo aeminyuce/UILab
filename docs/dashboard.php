@@ -14,7 +14,7 @@
 
                 <div class="ui-set-relative ui-padding-5-t">
                     <img class="ui-margin-1-t" src="img/logo-udashboard.png" height="62" alt="">
-                    <button class="sidebar-hide opacity-more ui-padding-10-h ui-ease-btn ui-set-absolute ui-set-cy ui-set-r" data-ui-tooltip title="Toggle Sidebar">
+                    <button class="sidebar-hide ui-opacity-more ui-padding-10-h ui-ease-btn ui-set-absolute ui-set-cy ui-set-r" data-ui-tooltip title="Toggle Sidebar">
                         <svg class="ui-icon"><use href="#angle-left"/></svg>
                     </button>
                 </div>
@@ -70,34 +70,34 @@
                         <div class="ui-padding-15-v ui-padding-3-l">
                             <ul class="ui-tabs ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn" data-ui-classes="ui-current">
                                 <li>
-                                    <a class="ui-tab ui-tab-toggle opacity" href="#">
+                                    <a class="ui-tab ui-tab-toggle ui-opacity" href="#">
                                         <svg class="ui-toggle-icon ui-icon ui-margin-10-r ui-right"><use href="#arrow-down"/></svg>
                                         Managers
                                     </a>
                                     <div class="ui-tab-content">
                                         <ul class="ui-list-spacer-15 ui-padding-20 ui-no-padding-r ui-no-margin ui-ease-2nd-btn">
-                                            <li><a class="opacity" href="#">Search</a></li>
-                                            <li><a class="opacity" href="#">Change Group</a></li>
-                                            <li><a class="opacity" href="#">Add/Remove Managers</a></li>
+                                            <li><a class="ui-opacity" href="#">Search</a></li>
+                                            <li><a class="ui-opacity" href="#">Change Group</a></li>
+                                            <li><a class="ui-opacity" href="#">Add/Remove Managers</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li>
-                                    <a class="ui-tab ui-tab-toggle opacity" href="#">
+                                    <a class="ui-tab ui-tab-toggle ui-opacity" href="#">
                                         <svg class="ui-toggle-icon ui-icon ui-margin-10-r ui-right"><use href="#arrow-down"/></svg>
                                         Team Leaders
                                     </a>
                                     <div class="ui-tab-content">
                                         <ul class="ui-list-spacer-15 ui-padding-20 ui-no-padding-r ui-no-margin ui-ease-2nd-btn">
-                                            <li><a class="opacity" href="#">Search</a></li>
-                                            <li><a class="opacity" href="#">Change Team</a></li>
-                                            <li><a class="opacity" href="#">Add/Remove Team Leaders</a></li>
+                                            <li><a class="ui-opacity" href="#">Search</a></li>
+                                            <li><a class="ui-opacity" href="#">Change Team</a></li>
+                                            <li><a class="ui-opacity" href="#">Add/Remove Team Leaders</a></li>
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a class="opacity" href="#">Teams</a></li>
-                                <li><a class="opacity" href="#">Human Resources</a></li>
-                                <li><a class="opacity" href="#">Annual Leaves</a></li>
+                                <li><a class="ui-opacity" href="#">Teams</a></li>
+                                <li><a class="ui-opacity" href="#">Human Resources</a></li>
+                                <li><a class="ui-opacity" href="#">Annual Leaves</a></li>
                             </ul>
                         </div>
                     </div>
@@ -110,11 +110,11 @@
                     <div class="ui-tab-content">
                         <div class="ui-padding-15-v ui-padding-3-l">
                             <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
-                                <li><a class="opacity" href="#">New Payment</a></li>
-                                <li><a class="opacity" href="#">Recent Payments</a></li>
-                                <li><a class="opacity" href="#">Last Month</a></li>
-                                <li><a class="opacity" href="#">Last Year</a></li>
-                                <li><a class="opacity" href="#">Annual Profits</a></li>
+                                <li><a class="ui-opacity" href="#">New Payment</a></li>
+                                <li><a class="ui-opacity" href="#">Recent Payments</a></li>
+                                <li><a class="ui-opacity" href="#">Last Month</a></li>
+                                <li><a class="ui-opacity" href="#">Last Year</a></li>
+                                <li><a class="ui-opacity" href="#">Annual Profits</a></li>
                             </ul>
                         </div>
                     </div>
@@ -127,10 +127,10 @@
                     <div class="ui-tab-content">
                         <div class="ui-padding-15-v ui-padding-3-l">
                             <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
-                                <li><a class="opacity" href="#">New Event</a></li>
-                                <li><a class="opacity" href="#">Recent Activities</a></li>
-                                <li><a class="opacity" href="#">This Week</a></li>
-                                <li><a class="opacity" href="#">Statistics</a></li>
+                                <li><a class="ui-opacity" href="#">New Event</a></li>
+                                <li><a class="ui-opacity" href="#">Recent Activities</a></li>
+                                <li><a class="ui-opacity" href="#">This Week</a></li>
+                                <li><a class="ui-opacity" href="#">Statistics</a></li>
                             </ul>
                         </div>
                     </div>
@@ -143,12 +143,12 @@
                     <div class="ui-tab-content">
                         <div class="ui-padding-15-v ui-padding-3-l">
                             <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
-                                <li><a class="opacity" href="#">New Document</a></li>
-                                <li><a class="opacity" href="#">Members</a></li>
-                                <li><a class="opacity" href="#">Groups</a></li>
-                                <li><a class="opacity" href="#">Projects</a></li>
-                                <li><a class="opacity" href="#">Other Files</a></li>
-                                <li><a class="opacity" href="#">Archive</a></li>
+                                <li><a class="ui-opacity" href="#">New Document</a></li>
+                                <li><a class="ui-opacity" href="#">Members</a></li>
+                                <li><a class="ui-opacity" href="#">Groups</a></li>
+                                <li><a class="ui-opacity" href="#">Projects</a></li>
+                                <li><a class="ui-opacity" href="#">Other Files</a></li>
+                                <li><a class="ui-opacity" href="#">Archive</a></li>
                             </ul>
                         </div>
                     </div>
@@ -161,10 +161,10 @@
                     <div class="ui-tab-content">
                         <div class="ui-padding-15-v ui-padding-3-l">
                             <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
-                                <li><a class="opacity" href="#">Sales</a></li>
-                                <li><a class="opacity" href="#">Profit</a></li>
-                                <li><a class="opacity" href="#">Registrations</a></li>
-                                <li><a class="opacity" href="#">Sponsors</a></li>
+                                <li><a class="ui-opacity" href="#">Sales</a></li>
+                                <li><a class="ui-opacity" href="#">Profit</a></li>
+                                <li><a class="ui-opacity" href="#">Registrations</a></li>
+                                <li><a class="ui-opacity" href="#">Sponsors</a></li>
                             </ul>
                         </div>
                     </div>
@@ -177,12 +177,12 @@
                     <div class="ui-tab-content">
                         <div class="ui-padding-15-v ui-padding-3-l">
                             <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
-                                <li><a class="opacity" href="#">New Report</a></li>
-                                <li><a class="opacity" href="#">Market Research</a></li>
-                                <li><a class="opacity" href="#">Industry Data</a></li>
-                                <li><a class="opacity" href="#">Finance Report</a></li>
-                                <li><a class="opacity" href="#">Gross Profit</a></li>
-                                <li><a class="opacity" href="#">Cumulative Losses</a></li>
+                                <li><a class="ui-opacity" href="#">New Report</a></li>
+                                <li><a class="ui-opacity" href="#">Market Research</a></li>
+                                <li><a class="ui-opacity" href="#">Industry Data</a></li>
+                                <li><a class="ui-opacity" href="#">Finance Report</a></li>
+                                <li><a class="ui-opacity" href="#">Gross Profit</a></li>
+                                <li><a class="ui-opacity" href="#">Cumulative Losses</a></li>
                             </ul>
                         </div>
                     </div>
@@ -195,10 +195,10 @@
                     <div class="ui-tab-content">
                         <div class="ui-padding-15-v ui-padding-3-l">
                             <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
-                                <li><a class="opacity" href="#">New Order</a></li>
-                                <li><a class="opacity" href="#">Activity</a></li>
-                                <li><a class="opacity" href="#">Delivered</a></li>
-                                <li><a class="opacity" href="#">Dispatched</a></li>
+                                <li><a class="ui-opacity" href="#">New Order</a></li>
+                                <li><a class="ui-opacity" href="#">Activity</a></li>
+                                <li><a class="ui-opacity" href="#">Delivered</a></li>
+                                <li><a class="ui-opacity" href="#">Dispatched</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1758,7 +1758,7 @@
 <div class="ui-mobile-menu ui-show-l invert-bg ui-theme-panel ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
     <div class="ui-mobile-menu-title ui-no-padding ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-mobile-menu">
-            <svg class="ui-icon no-opacity"><use href="#remove"/></svg>
+            <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
         </button>
         <img src="img/logo-udashboard.png" height="66" alt="">
     </div>

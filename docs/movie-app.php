@@ -126,7 +126,7 @@
                             <div class="ui-col-static">
                                 <div class="ui-col-350">
                                     <div class="ui-round ui-set-relative">
-                                        <button class="ui-btn ui-full-w ui-full-h ui-set-absolute opacity-more ui-ease-layout" onclick="ui.modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
+                                        <button class="ui-btn ui-full-w ui-full-h ui-set-absolute ui-opacity-more ui-ease-layout" onclick="ui.modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
                                             <svg class="ui-icon ui-icon-xxl ui-icon-default ui-color-white ui-set-absolute ui-set-c"><use href="#video"/></svg>
                                         </button>
                                         <img class="ui-img-fluid ui-round ui-shadow-lg" src="img/video-poster.jpg" alt="">
@@ -404,7 +404,7 @@
 <div class="ui-mobile-menu ui-show-l ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
     <div class="ui-mobile-menu-title ui-padding-20-v x-large ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-mobile-menu">
-            <svg class="ui-icon no-opacity"><use href="#remove"/></svg>
+            <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
         </button>
         Categories
     </div>

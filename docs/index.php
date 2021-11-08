@@ -97,7 +97,7 @@
                     <svg class="ui-icon ui-visible-light"><use href="#sun-fill"/></svg>
                 </button>
                 <a href="index.php" class="ui-btn ui-btn-square ui-btn-ghost ui-circle ui-margin-10-r ui-ease-btn">
-                    <svg class="ui-icon ui-icon-hybrid no-opacity"><use href="#long-arrow-left"/></svg>
+                    <svg class="ui-icon ui-icon-hybrid ui-no-opacity"><use href="#long-arrow-left"/></svg>
                 </a>
                 <h1 class="x-large ui-inline-block"><span class="capitalize"><?php echo str_replace("-", " ", $page); ?></span></h1>
             </div>
@@ -307,7 +307,7 @@
     <div class="ui-mobile-menu ui-show-r ui-theme-base ui-ease-layout ui-ease-in-out">
         <div class="ui-mobile-menu-title ui-padding-15-v ui-fill-dark-100">
             <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-mobile-menu">
-                <svg class="ui-icon no-opacity"><use href="#remove"/></svg>
+                <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
             </button>
             <img src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">
         </div>

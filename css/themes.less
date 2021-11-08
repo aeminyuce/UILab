@@ -47,7 +47,7 @@
     each(@theme-bg-hover-vars, {
         .ui-theme-@{name}.ui-fill-@{key},.ui-theme-@{name} .ui-fill-@{key}:not([class*="ui-theme-"]) {
             .ui-desktop & {
-                &.hover:hover,&.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.opacity):not(.opacity-more):hover { background-color: @value; }
+                &.hover:hover,&.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover { background-color: @value; }
             }
           }
     });

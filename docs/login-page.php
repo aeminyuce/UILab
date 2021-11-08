@@ -47,7 +47,7 @@
                     </button>
                     <span class="sp-15"></span>
                     <button class="ui-tab ui-btn ui-btn-ghost ui-color-black-50 ui-round ui-block ui-ease-btn" data-ui-id="lost-password">
-                        <svg class="ui-icon ui-margin-5-r no-opacity"><use href="#lock"/></svg> Forgot password?
+                        <svg class="ui-icon ui-margin-5-r ui-no-opacity"><use href="#lock"/></svg> Forgot password?
                     </button>
 
                 </form>
@@ -71,7 +71,7 @@
                     </button>
                     <span class="sp-15"></span>
                     <button class="ui-tab ui-btn ui-btn-ghost ui-color-black-50 ui-round ui-block ui-ease-btn" data-ui-id="login">
-                        <svg class="ui-icon ui-margin-5-r no-opacity"><use href="#long-arrow-left"/></svg> Back to login
+                        <svg class="ui-icon ui-margin-5-r ui-no-opacity"><use href="#long-arrow-left"/></svg> Back to login
                     </button>
 
                 </form>

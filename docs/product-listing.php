@@ -482,7 +482,7 @@
 <div class="ui-mobile-menu ui-show-r ui-ease-layout ui-ease-in-out">
     <div class="ui-mobile-menu-title ui-padding-20-v x-large ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-mobile-menu">
-            <svg class="ui-icon no-opacity"><use href="#remove"/></svg>
+            <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
         </button>
         Filters
     </div>
