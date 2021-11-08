@@ -17,7 +17,7 @@
                         </a>
                     </div>
                     <div class="ui-row">
-                        <div class="ui-col-12 align-r">
+                        <div class="ui-col-12 ui-align-r">
 
                             <div class="ui-hidden-sm">
                                 <div class="ui-ease-1st-btn ui-icons-no-opacity form-lg ui-add-mobile-menu-r">
@@ -86,7 +86,7 @@
 
         <div class="ui-fixed ui-padding-10-t ui-theme-farmer2">
             <div class="ui-row ui-no-ui-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
-                <div class="ui-col-12 ui-color-black-50 xs-align-l align-c ui-ease-1st-btn">
+                <div class="ui-col-12 ui-color-black-50 ui-xs-align-l ui-align-c ui-ease-1st-btn">
                     <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-margin-1-b ui-border-b ui-current ui-border-lg ui-stroke active">
                         <svg class="ui-icon"><use href="#factory"/></svg>
                         Long Term Investment
@@ -109,7 +109,7 @@
                 <div class="ui-row">
                     <div class="ui-col-static">
                         <div class="ui-row ui-row-gap-lg-v">
-                            <div class="ui-col-12 md-align-c">
+                            <div class="ui-col-12 ui-md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="ui-highlight xx-large ui-color-white-50 font-readable">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
@@ -123,7 +123,7 @@
                         <div class="ui-col-500 ui-padding-15-v ui-padding-10-h">
 
                             <div class="banner-slogan ui-padding-15 ui-set-relative">
-                                <div class="align-c ui-padding-15 ui-set-relative ui-shadow-lg">
+                                <div class="ui-align-c ui-padding-15 ui-set-relative ui-shadow-lg">
                                     <span class="ui-sp-15"></span>
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#factory"/></svg>
                                     <span class="ui-sp-30 ui-hidden-md"></span>
@@ -147,7 +147,7 @@
                 <div class="ui-row">
                     <div class="ui-col-static">
                         <div class="ui-row ui-row-gap-lg-v">
-                            <div class="ui-col-12 md-align-c">
+                            <div class="ui-col-12 ui-md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="ui-highlight xx-large ui-color-white-50 font-readable">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
@@ -161,7 +161,7 @@
                         <div class="ui-col-500 ui-padding-15-v ui-padding-10-h">
 
                             <div class="banner-slogan ui-padding-15 ui-set-relative">
-                                <div class="align-c ui-padding-15 ui-set-relative ui-shadow-lg">
+                                <div class="ui-align-c ui-padding-15 ui-set-relative ui-shadow-lg">
                                     <span class="ui-sp-15"></span>
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#network"/></svg>
                                     <span class="ui-sp-30"></span>
@@ -185,7 +185,7 @@
                 <div class="ui-row">
                     <div class="ui-col-static">
                         <div class="ui-row ui-row-gap-lg-v">
-                            <div class="ui-col-12 md-align-c">
+                            <div class="ui-col-12 ui-md-align-c">
 
                                 <h2 class="xx-largest font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="ui-highlight xx-large ui-color-white-50 font-readable">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
@@ -199,7 +199,7 @@
                         <div class="ui-col-500 ui-padding-15-v ui-padding-10-h">
 
                             <div class="banner-slogan ui-padding-15 ui-set-relative">
-                                <div class="align-c ui-padding-15 ui-set-relative ui-shadow-lg">
+                                <div class="ui-align-c ui-padding-15 ui-set-relative ui-shadow-lg">
                                     <span class="ui-sp-15"></span>
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#user-circle"/></svg>
                                     <span class="ui-sp-30"></span>
@@ -223,7 +223,7 @@
     <!-- tab banner: end -->
 
     <!-- home links: start -->
-    <div class="ui-fixed home-links align-c form-lg ui-theme-farmer2 ui-set-relative">
+    <div class="ui-fixed home-links ui-align-c form-lg ui-theme-farmer2 ui-set-relative">
         <div class="ui-carousel" data-ui-col="4" data-ui-col-md="2" data-ui-col-sm="2" data-ui-col-xs="1" data-ui-slide="4000">
             <div class="ui-carousel-slider ui-icons-xxl ui-hover-shadow-2nd ui-hover-scale-2nd ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
@@ -344,7 +344,7 @@
 
             <div class="ui-fixed">
                 <div class="ui-row ui-no-ui-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
-                    <div class="ui-col-12 ui-color-black-50 xs-align-l align-c ui-ease-1st-btn">
+                    <div class="ui-col-12 ui-color-black-50 ui-xs-align-l ui-align-c ui-ease-1st-btn">
                         <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-margin-1-b ui-border-b ui-current ui-border-lg ui-stroke active">
                             <svg class="ui-icon"><use href="#building"/></svg>
                             Company
@@ -461,7 +461,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="align-c ui-padding-30-t ui-padding-10-b">
+                <div class="ui-align-c ui-padding-30-t ui-padding-10-b">
                     <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                         <b>View all company news</b> <svg class="ui-icon ui-margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
@@ -566,7 +566,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="align-c ui-padding-30-t ui-padding-10-b">
+                <div class="ui-align-c ui-padding-30-t ui-padding-10-b">
                     <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                         <b>View all social news</b> <svg class="ui-icon ui-margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
@@ -671,7 +671,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="align-c ui-padding-30-t ui-padding-10-b">
+                <div class="ui-align-c ui-padding-30-t ui-padding-10-b">
                     <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                         <b>View all customer news</b> <svg class="ui-icon ui-margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
@@ -689,7 +689,7 @@
                 <h2 class="font-bold ui-margin-10-b">Our Projects</h2>
                 <h3 class="ui-current ui-margin-25-b">What we are doing?</h3>
 
-                <p class="ui-color-black-50 font-readable x-large xs-align-c">Aliquam leo quam, laoreet quis luctus non, vulputate vitae elit. Pellentesque consequat eu mauris ac imperdiet. In dolor velit, pellentesque eu dignissim in, dignissim ac turpis. Sed lobortis diam ante, et posuere ligula convallis suscipit. Maecenas varius ultrices eros, eu vestibulum sem aliquet et.</p>
+                <p class="ui-color-black-50 font-readable x-large ui-xs-align-c">Aliquam leo quam, laoreet quis luctus non, vulputate vitae elit. Pellentesque consequat eu mauris ac imperdiet. In dolor velit, pellentesque eu dignissim in, dignissim ac turpis. Sed lobortis diam ante, et posuere ligula convallis suscipit. Maecenas varius ultrices eros, eu vestibulum sem aliquet et.</p>
 
                 <span class="ui-sp-30 ui-margin-10-v"></span>
 
@@ -784,7 +784,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ui-col-500 ui-padding-10 xs-align-c">
+                    <div class="ui-col-500 ui-padding-10 ui-xs-align-c">
                         <p class="ui-color-black-50 font-readable x-large ui-margin-30-b">
                             <span class="ui-sp-15"></span>
                             <b class="ui-color-black">Cras non sagittis arcu, eget viverra nunc.</b>
@@ -808,7 +808,7 @@
 
 <!-- footer: start -->
 <footer class="ui-container ui-no-gutter ui-padding-30-v invert-bg ui-theme-farmer2 ui-fill-dark-100">
-    <div class="ui-fixed ui-padding-30-v sm-align-c">
+    <div class="ui-fixed ui-padding-30-v ui-sm-align-c">
         <div class="ui-row">
             <div class="ui-col-static">
                 <div class="ui-row ui-sm-fluid">
@@ -851,7 +851,7 @@
                     <div class="footer-social ui-padding-15 ui-icons-no-opacity">
                         <div class="ui-card ui-padding-30 ui-shadow-lg ui-theme-farmer ui-fill-dark-100">
                             <h4 class="ui-margin-15-b">Social</h4>
-                            <div class="align-c form-lg ui-ease-1st-btn">
+                            <div class="ui-align-c form-lg ui-ease-1st-btn">
                                 <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
                                     <svg class="ui-icon"><use href="#facebook"/></svg>
                                 </a>
@@ -916,5 +916,5 @@
         </button>
         <a href="#"><img src="img/agriculture/logo.png" alt="" srcset="img/agriculture/logo@2x.png 2x"></a>
     </div>
-    <div class="ui-mobile-menu-content align-l ui-theme-farmer2 ui-scroll-v"></div>
+    <div class="ui-mobile-menu-content ui-align-l ui-theme-farmer2 ui-scroll-v"></div>
 </div>

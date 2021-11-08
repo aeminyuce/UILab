@@ -22,7 +22,7 @@
 
                     <div class="generate-holder ui-tab-content form-lg ui-padding-15 ui-open ui-open-ease">
 
-                        <div class="align-c ui-margin-30-b">
+                        <div class="ui-align-c ui-margin-30-b">
                             <div class="file ui-no-border ui-round ui-circle ui-no-border ui-ease-form form-inline-xs">
                                 <input class="ui-cursor-pointer" name="less" class="generate-import" type="file">
                                 <span class="ui-btn ui-padding-30-h ui-circle ui-block ui-ease-btn">
@@ -516,7 +516,7 @@
                                     </div>
                                 </div>
 
-                                <div class="align-r align-c ui-ease-1st-btn">
+                                <div class="ui-align-r ui-align-c ui-ease-1st-btn">
                                     <span class="ui-sp-15 ui-visible-xs"></span>
                                     <button name="less" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">Generate LESS</button>
                                     <span class="ui-sp-5 ui-visible-sm"></span>
@@ -532,7 +532,7 @@
 
                     <div class="generate-holder ui-tab-content form-lg ui-padding-15">
 
-                        <div class="align-c ui-margin-30-b">
+                        <div class="ui-align-c ui-margin-30-b">
                             <div class="file ui-no-border ui-round ui-circle ui-no-border ui-ease-form form-inline-xs">
                                 <input class="ui-cursor-pointer" name="js" class="generate-import" type="file">
                                 <span class="ui-btn ui-padding-30-h ui-circle ui-block ui-ease-btn">
@@ -884,7 +884,7 @@
                                     </div>
                                 </div>
 
-                                <div class="align-r align-c ui-ease-1st-btn">
+                                <div class="ui-align-r ui-align-c ui-ease-1st-btn">
                                     <span class="ui-sp-15 ui-visible-xs"></span>
                                     <button name="js" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">Generate JS</button>
                                     <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid ui-round">
@@ -1015,7 +1015,7 @@
                                     </div>
                                 </div>
 
-                                <div class="align-r align-c ui-ease-1st-btn">
+                                <div class="ui-align-r ui-align-c ui-ease-1st-btn">
                                     <span class="ui-sp-15 ui-visible-xs"></span>
                                     <button name="php" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100" data-ui-type="icons">Generate Icons</button>
                                     <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid ui-round">

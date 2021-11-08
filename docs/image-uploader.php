@@ -5,11 +5,11 @@
             <form action="xhr/image-uploader.php" method="post" enctype="multipart/form-data"> <!-- error testing: image-uploader-error.php-->
 
                 <div class="ui-padding-10-h ui-border-b ui-border-light">
-                    <div class="ui-row sm-align-c ui-sm-fluid">
+                    <div class="ui-row ui-sm-align-c ui-sm-fluid">
                         <div class="ui-col-6">
                             <h3 class="ui-margin-10-v ui-sm-no-margin">Image Uploader</h3>
                         </div>
-                        <div class="ui-col-6 align-r ui-sm-no-padding-t form-lg">
+                        <div class="ui-col-6 ui-align-r ui-sm-no-padding-t form-lg">
 
                             <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
                                 <input class="bg-white ui-cursor-pointer" type="file" name="images[]" multiple>

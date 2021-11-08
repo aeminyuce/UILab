@@ -121,7 +121,7 @@
             <div class="ui-col-12">
 
                 <b class="ui-margin-5-b ui-block">Show Default:</b>
-                <div class="ui-color-white align-c ui-col-250 ui-padding-10 ui-round ui-shadow-lg" style="background: hsl(220, 14%, 21%);">
+                <div class="ui-color-white ui-align-c ui-col-250 ui-padding-10 ui-round ui-shadow-lg" style="background: hsl(220, 14%, 21%);">
                     Default message
                 </div>
                 <span class="ui-sp-15"></span>
@@ -132,7 +132,7 @@
                 <span class="ui-sp-30"></span>
 
                 <b class="ui-margin-5-b ui-block">Show Success:</b>
-                <div class="align-c ui-col-250 ui-padding-10 ui-round ui-shadow-lg ui-theme-green ui-fill-dark-100">
+                <div class="ui-align-c ui-col-250 ui-padding-10 ui-round ui-shadow-lg ui-theme-green ui-fill-dark-100">
                     Success message
                 </div>
                 <span class="ui-sp-15"></span>
@@ -143,7 +143,7 @@
                 <span class="ui-sp-30"></span>
 
                 <b class="ui-margin-5-b ui-block">Show Warning:</b>
-                <div class="align-c ui-col-250 ui-padding-10 ui-round ui-shadow-lg ui-theme-yellow ui-fill-dark-100">
+                <div class="ui-align-c ui-col-250 ui-padding-10 ui-round ui-shadow-lg ui-theme-yellow ui-fill-dark-100">
                     Warning message
                 </div>
                 <span class="ui-sp-15"></span>
@@ -154,7 +154,7 @@
                 <span class="ui-sp-30"></span>
 
                 <b class="ui-margin-5-b ui-block">Show Danger:</b>
-                <div class="align-c ui-col-250 ui-padding-10 ui-round ui-shadow-lg ui-theme-red ui-fill-dark-100">
+                <div class="ui-align-c ui-col-250 ui-padding-10 ui-round ui-shadow-lg ui-theme-red ui-fill-dark-100">
                     Danger message
                 </div>
                 <span class="ui-sp-15"></span>

@@ -80,7 +80,7 @@
         </div>
         <div class="login-container ui-col-lg-7 ui-col-6 ui-set-relative">
 
-            <div class="login-holder align-c ui-no-scroll ui-set-relative ui-fill-dark-100 ui-shadow-lg">
+            <div class="login-holder ui-align-c ui-no-scroll ui-set-relative ui-fill-dark-100 ui-shadow-lg">
 
                 <div class="ui-full-w ui-set-absolute ui-set-c">
                     <h1 class="ui-hidden-md">Create your account</h1>

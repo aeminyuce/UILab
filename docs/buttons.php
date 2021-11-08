@@ -84,7 +84,7 @@
                 </div>
 
                 <h3>Button Sizes</h3>
-                <div class="ui-row ui-xs-fluid align-l ui-padding-30-b ui-icons-margin-5-l ui-block-2nd ui-ease-2nd-btn">
+                <div class="ui-row ui-xs-fluid ui-align-l ui-padding-30-b ui-icons-margin-5-l ui-block-2nd ui-ease-2nd-btn">
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-lg ui-circle ui-border" href="#">
                             Large Button <svg class="ui-icon ui-right"><use href="#settings"/></svg>
@@ -141,7 +141,7 @@
                 </div>
 
                 <h3>Square Buttons</h3>
-                <div class="ui-padding-30-b align-c ui-theme-sub ui-ease-1st-btn">
+                <div class="ui-padding-30-b ui-align-c ui-theme-sub ui-ease-1st-btn">
                     <a class="ui-btn ui-btn-square ui-btn-xs ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#trash"/></svg>
                     </a>
@@ -157,7 +157,7 @@
                 </div>
 
                 <h3>Button Notifiers</h3>
-                <div class="ui-padding-30-b align-c ui-icons-no-opacity">
+                <div class="ui-padding-30-b ui-align-c ui-icons-no-opacity">
 
                     <div class="ui-row ui-ease-2nd-btn">
                         <div class="ui-col-6">
@@ -244,7 +244,7 @@
 
                 <h3>Block Level Buttons</h3>
                 <div class="ui-row ui-padding-30-b form-lg ui-ease-2nd-btn">
-                    <div class="ui-col-6 align-c">
+                    <div class="ui-col-6 ui-align-c">
                         <a class="ui-btn ui-btn-xs-fluid ui-round ui-theme-yellow ui-fill-dark-100" href="#">Responsive Button</a>
                     </div>
                     <div class="ui-col-6">
@@ -315,7 +315,7 @@
                 <h3>ui-pagination Buttons</h3>
                 <div class="ui-padding-30-b">
 
-                    <div class="ui-pagination align-c ui-theme-sub ui-ease-1st-btn">
+                    <div class="ui-pagination ui-align-c ui-theme-sub ui-ease-1st-btn">
                         <a class="ui-btn ui-btn-xs prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-left"/></svg>
                         </a>
@@ -336,7 +336,7 @@
                         </a>
                     </div>
 
-                    <div class="ui-pagination align-c ui-theme-sub ui-ease-1st-btn">
+                    <div class="ui-pagination ui-align-c ui-theme-sub ui-ease-1st-btn">
                         <a class="ui-btn ui-btn-sm prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-left"/></svg>
                         </a>
@@ -357,7 +357,7 @@
                         </a>
                     </div>
 
-                    <div class="ui-pagination align-c ui-theme-sub ui-ease-1st-btn">
+                    <div class="ui-pagination ui-align-c ui-theme-sub ui-ease-1st-btn">
                         <a class="ui-btn prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-left"/></svg>
                         </a>
@@ -378,7 +378,7 @@
                         </a>
                     </div>
 
-                    <div class="ui-pagination form-lg align-c ui-theme-sub ui-ease-1st-btn">
+                    <div class="ui-pagination form-lg ui-align-c ui-theme-sub ui-ease-1st-btn">
                         <a class="ui-btn prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-left"/></svg>
                         </a>
@@ -404,7 +404,7 @@
                 <h3>Button List</h3>
                 <div class="ui-row ui-padding-30-b">
                     <div class="ui-col-6">
-                        <div class="ui-btn-list align-l ui-icons-margin-10-r form-lg ui-icons-no-opacity ui-theme-green ui-ease-1st-btn">
+                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r form-lg ui-icons-no-opacity ui-theme-green ui-ease-1st-btn">
                             <button class="ui-btn">
                                 <svg class="ui-icon ui-current"><use href="#shield"/></svg>Administration
                             </button>
@@ -417,7 +417,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-list align-l ui-icons-margin-10-r form-lg ui-icons-no-opacity ui-theme-red ui-ease-1st-btn">
+                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r form-lg ui-icons-no-opacity ui-theme-red ui-ease-1st-btn">
                             <button class="ui-btn ui-round">
                                 <svg class="ui-icon ui-current"><use href="#shield"/></svg>Administration
                             </button>
@@ -430,7 +430,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-list align-l ui-icons-margin-10-r form-lg ui-icons-no-opacity ui-theme-orange ui-ease-1st-btn">
+                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r form-lg ui-icons-no-opacity ui-theme-orange ui-ease-1st-btn">
                             <button class="ui-btn ui-btn-ghost ui-round ui-border ui-stroke">
                                 <svg class="ui-icon ui-current"><use href="#shield"/></svg>Administration
                             </button>
@@ -443,7 +443,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-list align-l ui-icons-margin-10-r form-lg ui-icons-no-opacity ui-theme-yellow ui-ease-1st-btn">
+                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r form-lg ui-icons-no-opacity ui-theme-yellow ui-ease-1st-btn">
                             <button class="ui-btn ui-btn-ghost ui-round ui-border-dual ui-stroke">
                                 <svg class="ui-icon ui-current"><use href="#shield"/></svg>Administration
                             </button>

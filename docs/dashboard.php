@@ -19,12 +19,12 @@
                     </button>
                 </div>
 
-                <div class="ui-tabs align-l ui-icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn ui-scroll-v ui-scrollbar-faded ui-add-mobile-menu-l" data-ui-classes="ui-current">
+                <div class="ui-tabs ui-align-l ui-icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn ui-scroll-v ui-scrollbar-faded ui-add-mobile-menu-l" data-ui-classes="ui-current">
 
                     <div class="ui-padding-10">
                         <div class="small ui-margin-10-b ui-color-white-25">Personal Activity</div>
 
-                        <div class="ui-btn-holder align-c ui-round ui-ease-1st-btn">
+                        <div class="ui-btn-holder ui-align-c ui-round ui-ease-1st-btn">
                             <button class="ui-btn ui-btn-multi ui-padding-10-v ui-round">
 
                                 <span class="xx-large">13</span>
@@ -228,9 +228,9 @@
         <div class="ui-row">
 
             <!-- header: start -->
-            <header class="ui-col-12 align-r ui-icons-no-opacity ui-shadow-sm form-lg ui-ease-layout sidebar-opened" data-ui-classes="ui-shadow-lg">
+            <header class="ui-col-12 ui-align-r ui-icons-no-opacity ui-shadow-sm form-lg ui-ease-layout sidebar-opened" data-ui-classes="ui-shadow-lg">
 
-                <div class="align-c ui-left ui-ease-1st-btn">
+                <div class="ui-align-c ui-left ui-ease-1st-btn">
                     <button class="sidebar-show ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle ui-visible-lg ui-hidden" data-ui-tooltip title="Toggle Sidebar">
                         <svg class="ui-icon"><use href="#angle-right"/></svg>
                     </button>
@@ -269,7 +269,7 @@
                         <div class="ui-dropdown-menu ui-round ui-shadow-lg ui-no-scroll">
                             <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
-                                <div class="ui-btn-holder ui-color-black-25 align-c ui-border-b ui-ease-1st-btn">
+                                <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-border-b ui-ease-1st-btn">
                                     <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active" data-ui-tooltip data-ui-only="desktop" title="Favorites">
                                         <svg class="ui-icon"><use href="#star"/></svg>
                                     </button>
@@ -277,7 +277,7 @@
                                         <svg class="ui-icon"><use href="#history"/></svg>
                                     </button>
                                 </div>
-                                <div class="ui-tab-content align-l ui-scroll-v ui-open ui-open-ease" style="max-height: 420px;">
+                                <div class="ui-tab-content ui-align-l ui-scroll-v ui-open ui-open-ease" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
                                         <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                         <li>
@@ -322,7 +322,7 @@
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                     </ul>
                                 </div>
-                                <div class="ui-tab-content align-l ui-scroll-v" style="max-height: 420px;">
+                                <div class="ui-tab-content ui-align-l ui-scroll-v" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -345,7 +345,7 @@
                         <div class="ui-dropdown-menu ui-round ui-shadow-lg ui-no-scroll">
                             <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
-                                <div class="ui-btn-holder ui-color-black-25 align-c ui-border-b ui-ease-1st-btn">
+                                <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-border-b ui-ease-1st-btn">
                                     <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active" data-ui-tooltip data-ui-only="desktop" title="Notifications">
                                         <svg class="ui-icon"><use href="#bell"/></svg>
                                     </button>
@@ -356,7 +356,7 @@
                                         <svg class="ui-icon"><use href="#hourglass-start"/></svg>
                                     </button>
                                 </div>
-                                <div class="ui-tab-content align-l ui-scroll-v ui-open ui-open-ease" style="max-height: 420px;">
+                                <div class="ui-tab-content ui-align-l ui-scroll-v ui-open ui-open-ease" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -368,7 +368,7 @@
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                     </ul>
                                 </div>
-                                <div class="ui-tab-content align-l ui-scroll-v" style="max-height: 420px;">
+                                <div class="ui-tab-content ui-align-l ui-scroll-v" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -380,7 +380,7 @@
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                     </ul>
                                 </div>
-                                <div class="ui-tab-content align-l ui-scroll-v" style="max-height: 420px;">
+                                <div class="ui-tab-content ui-align-l ui-scroll-v" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -403,7 +403,7 @@
                         <button class="ui-btn ui-no-padding ui-circle ui-hover-scale-more">
                             <img class="ui-img-photo ui-img-photo-sm ui-circle" src="img/profile-image.jpg" alt="">
                         </button>
-                        <ul class="ui-dropdown-menu ui-has-grid align-c ui-icons-lg ui-round ui-shadow-lg">
+                        <ul class="ui-dropdown-menu ui-has-grid ui-align-c ui-icons-lg ui-round ui-shadow-lg">
                             <li>
                                 <a href="#">
                                     <svg class="ui-icon"><use href="#user"/></svg>
@@ -479,7 +479,7 @@
                                             <div class="ui-col-static ui-no-fluid">
                                                 <div class="ui-row">
                                                     <div class="ui-col-12">
-                                                        <h4 class="align-l ui-margin-4-t ui-margin-3-b">Forms</h4>
+                                                        <h4 class="ui-align-l ui-margin-4-t ui-margin-3-b">Forms</h4>
                                                     </div>
                                                 </div>
                                                 <div class="ui-col-48 ui-padding-5-v">
@@ -636,7 +636,7 @@
                                         </div>
                                         <div class="ui-card-side ui-padding-5-h ui-border-t">
                                             <div class="ui-row">
-                                                <div class="ui-col-12 align-r xs-align-c ui-ease-1st-btn">
+                                                <div class="ui-col-12 ui-align-r ui-xs-align-c ui-ease-1st-btn">
 
                                                     <button type="reset" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-15-h ui-round">
                                                         Cancel
@@ -679,7 +679,7 @@
                                                             <span class="ui-color-black-25 large">Total: 45%</span>
                                                         </div>
                                                     </div>
-                                                    <div class="ui-col-100 align-r">
+                                                    <div class="ui-col-100 ui-align-r">
                                                         <span class="x-largest ui-current">157</span>
                                                     </div>
                                                 </div>
@@ -702,7 +702,7 @@
                                                             <span class="ui-color-black-25 large">Total: 5%</span>
                                                         </div>
                                                     </div>
-                                                    <div class="ui-col-100 align-r">
+                                                    <div class="ui-col-100 ui-align-r">
                                                         <span class="x-largest ui-current">23</span>
                                                     </div>
                                                 </div>
@@ -725,7 +725,7 @@
                                                             <span class="ui-color-black-25 large">Total: 80%</span>
                                                         </div>
                                                     </div>
-                                                    <div class="ui-col-100 align-r">
+                                                    <div class="ui-col-100 ui-align-r">
                                                         <span class="x-largest ui-current">256</span>
                                                     </div>
                                                 </div>
@@ -744,11 +744,11 @@
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
-                                                            <div class="align-l x-large">On Payment</div>
+                                                            <div class="ui-align-l x-large">On Payment</div>
                                                             <span class="ui-color-black-25 large">Total: 67%</span>
                                                         </div>
                                                     </div>
-                                                    <div class="ui-col-100 align-r">
+                                                    <div class="ui-col-100 ui-align-r">
                                                         <span class="x-largest ui-current">256</span>
                                                     </div>
                                                 </div>
@@ -788,7 +788,7 @@
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See Detailed Activity</a></li>
                                         </ul>
                                     </div>
-                                    <h4 class="align-l ui-margin-10-t">Activity</h4>
+                                    <h4 class="ui-align-l ui-margin-10-t">Activity</h4>
                                     <div class="ui-col-static ui-no-fluid">
                                         <div class="ui-row ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                             <div class="ui-col-12 large">
@@ -796,7 +796,7 @@
                                                 <span class="ui-color-black-25">23% Change</span>
                                             </div>
                                         </div>
-                                        <div class="ui-col-150 align-r">
+                                        <div class="ui-col-150 ui-align-r">
                                             <span class="x-largest ui-inline-block">436</span>
                                         </div>
                                     </div>
@@ -834,7 +834,7 @@
                                 <div class="ui-card ui-full-h ui-padding-15 ui-padding-10-t ui-round ui-shadow-lg" style="min-height: 350px;">
                                     <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
-                                        <div class="ui-btn-holder ui-color-black-25 align-c ui-margin-10-b ui-border-b form-lg ui-ease-1st-btn">
+                                        <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-margin-10-b ui-border-b form-lg ui-ease-1st-btn">
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active">Delayed</button>
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">Paused</button>
                                         </div>
@@ -1002,7 +1002,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <h4 class="align-l ui-margin-10-t">Statistics</h4>
+                                        <h4 class="ui-align-l ui-margin-10-t">Statistics</h4>
                                         <div class="ui-tab-content ui-open ui-open-ease">
                                             <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                                 <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
@@ -1051,7 +1051,7 @@
                                 <div class="ui-card ui-full-h ui-padding-15 ui-padding-10-t ui-round ui-shadow-lg" style="min-height: 350px;">
                                     <div class="ui-tabs form-lg ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
-                                        <div class="ui-btn-holder ui-color-black-25 align-c ui-margin-10-b ui-border-b ui-ease-1st-btn">
+                                        <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-margin-10-b ui-border-b ui-ease-1st-btn">
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active">News</button>
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">Announcements</button>
                                         </div>
@@ -1129,7 +1129,7 @@
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See All Events</a></li>
                                         </ul>
                                     </div>
-                                    <h4 class="align-l ui-margin-10-t">Events</h4>
+                                    <h4 class="ui-align-l ui-margin-10-t">Events</h4>
                                     <div class="ui-calendar ui-ease-calendar ui-round ui-no-padding" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>
                                 </div>
                             </div>
@@ -1146,7 +1146,7 @@
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See All Experts</a></li>
                                         </ul>
                                     </div>
-                                    <h4 class="align-l ui-margin-10-t">Experts</h4>
+                                    <h4 class="ui-align-l ui-margin-10-t">Experts</h4>
                                     <div class="ui-grid-list ui-grid-list-striped grid-hover ui-theme-gray ui-ease-ui-grid-list">
 
                                         <div class="ui-row ui-no-ui-row-gap-v ui-row-gap-sm-h">
@@ -1177,7 +1177,7 @@
                                             </div>
                                             <div class="ui-col-lg-3 ui-col-6 ui-no-fluid">
                                                 <div class="ui-dropdown ui-menu-l ui-block ui-ease-dropdown">
-                                                    <button class="ui-btn align-l ui-round">
+                                                    <button class="ui-btn ui-align-l ui-round">
                                                         <span>
                                                             <svg class="ui-icon"><use href="#sort"/></svg> Sort
                                                         </span>
@@ -1731,7 +1731,7 @@
                                                     Total <b class="ui-grid-list-total"></b>
                                                 </div>
                                             </div>
-                                            <div class="ui-col-8 align-r">
+                                            <div class="ui-col-8 ui-align-r">
                                                 <div class="ui-grid-list-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-theme-panel2 ui-fill-dark-100"></div>
                                             </div>
                                         </div>
@@ -1771,7 +1771,7 @@
 
         <form action="#successful">
             <h2>Search</h2>
-            <p class="ui-highlight large ui-color-white-50 xs-align-c font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
+            <p class="ui-highlight large ui-color-white-50 ui-xs-align-c font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-row ui-no-ui-row-gap-h">

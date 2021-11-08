@@ -6,7 +6,7 @@
         <div class="ui-col-200 ui-set-relative ui-hidden-md">
             <div class="sidebar ui-col-200 ui-full-h ui-set-fixed ui-set-l ui-padding-5 ui-fill-dark-100 ui-hidden-md ui-scroll-v ui-scrollbar-faded">
 
-                <div class="align-l ui-padding-10 ui-icons-no-opacity ui-icons-margin-10-r form-lg ui-add-mobile-menu-l">
+                <div class="ui-align-l ui-padding-10 ui-icons-no-opacity ui-icons-margin-10-r form-lg ui-add-mobile-menu-l">
                     <h5 class="ui-color-white-50 ui-padding-15 ui-margin-5-b">LIBRARY</h5>
                     <ul class="ui-list-unstyled ui-list-spacer-15 large font-bold ui-block-2nd ui-ease-2nd-btn">
                         <li>
@@ -89,8 +89,8 @@
                                 <input type="text" placeholder="Search for movies, TV shows...">
                             </div>
                         </div>
-                        <div class="ui-col-6 align-r">
-                            <span class="align-c ui-color-black-50 ui-margin-20-r ui-sm-no-margin ui-ease-1st-btn">
+                        <div class="ui-col-6 ui-align-r">
+                            <span class="ui-align-c ui-color-black-50 ui-margin-20-r ui-sm-no-margin ui-ease-1st-btn">
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-margin-10-l ui-circle ui-left ui-show-mobile-menu-l ui-visible-md">
                                     <svg class="ui-icon"><use href="#bars-left"/></svg>
                                 </button>
@@ -417,7 +417,7 @@
 
         <form action="#successful">
             <h2>Search</h2>
-            <p class="ui-highlight large ui-color-white-50 xs-align-c font-readable">Search for movies, TV shows...</p>
+            <p class="ui-highlight large ui-color-white-50 ui-xs-align-c font-readable">Search for movies, TV shows...</p>
 
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-row ui-no-ui-row-gap-h">

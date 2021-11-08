@@ -35,7 +35,7 @@
                             </div>
                             <div class="ui-col-lg-3 ui-col-6 ui-no-fluid">
                                 <div class="ui-dropdown ui-menu-l ui-block ui-ease-dropdown">
-                                    <button class="ui-btn align-l ui-round ui-fill-light-100">
+                                    <button class="ui-btn ui-align-l ui-round ui-fill-light-100">
                                         <span>
                                             <svg class="ui-icon"><use href="#sort"></svg> Sort
                                         </span>
@@ -459,7 +459,7 @@
                                     Total <b class="ui-grid-list-total"></b>
                                 </div>
                             </div>
-                            <div class="ui-col-8 ui-no-fluid align-r">
+                            <div class="ui-col-8 ui-no-fluid ui-align-r">
                                 <div class="ui-grid-list-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-border-dual ui-theme-sub ui-stroke ui-current"></div>
                             </div>
                         </div>
@@ -481,7 +481,7 @@
                                 <input class="ui-grid-list-filter" type="text" placeholder="Search">
                             </div>
                         </div>
-                        <div class="ui-col-7 align-r sm-align-l">
+                        <div class="ui-col-7 ui-align-r ui-sm-align-l">
                             <label class="custom ui-margin-5-r">
                                 <span class="check-custom ui-round ui-border-dual ui-sm-no-margin-t ui-ease-form">
                                     <input class="ui-grid-list-check-all" type="checkbox">
@@ -524,7 +524,7 @@
                         </div>
                     </div>
 
-                    <div class="ui-row ui-row-gap-xs align-l ui-block-2nd ui-ease-2nd-btn ui-no-fluid">
+                    <div class="ui-row ui-row-gap-xs ui-align-l ui-block-2nd ui-ease-2nd-btn ui-no-fluid">
                         <div class="ui-col-5">
                             <button class="ui-btn" data-ui-sort="1"><svg class="ui-icon"><use href="#sort"></svg> Name</button>
                         </div>
@@ -1227,7 +1227,7 @@
                                 Total <b class="ui-grid-list-total"></b>
                             </div>
                         </div>
-                        <div class="ui-col-6 align-r">
+                        <div class="ui-col-6 ui-align-r">
                             <div class="ui-grid-list-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
                         </div>
                     </div>
@@ -1248,7 +1248,7 @@
                                 <input class="ui-grid-list-filter" type="text" placeholder="Search">
                             </div>
                         </div>
-                        <div class="ui-col-7 align-r sm-align-l">
+                        <div class="ui-col-7 ui-align-r ui-sm-align-l">
                             <label class="custom ui-margin-5-r">
                                 <span class="check-custom ui-round ui-border-dual ui-sm-no-margin-t ui-ease-form">
                                     <input class="ui-grid-list-filter" data-ui-index="2" type="checkbox" value="25">
@@ -1269,7 +1269,7 @@
                         </div>
                     </div>
 
-                    <div class="ui-row ui-row-gap-xs align-l ui-border-v ui-block-2nd ui-ease-2nd-btn ui-no-fluid">
+                    <div class="ui-row ui-row-gap-xs ui-align-l ui-border-v ui-block-2nd ui-ease-2nd-btn ui-no-fluid">
                         <div class="ui-col-5">
                             <button class="ui-btn ui-btn-ghost" data-ui-sort="1"><svg class="ui-icon"><use href="#sort"></svg> Name</button>
                         </div>
@@ -1812,7 +1812,7 @@
                                 Total <b class="ui-grid-list-total"></b>
                             </div>
                         </div>
-                        <div class="ui-col-6 align-r">
+                        <div class="ui-col-6 ui-align-r">
                             <div class="ui-grid-list-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
                         </div>
                     </div>

@@ -246,18 +246,18 @@ each(@increases, {
     .ui-sp-@{name} { height: @value; }
 });
 
-.align- {
+.ui-align- {
     &justify { text-align: justify !important; }
     &nowrap { white-space: nowrap !important; }
 }
 
-.align-r {
+.ui-align-r {
     &,* { text-align: right !important; }
 }
-.align-l {
+.ui-align-l {
     &,* { text-align: left !important; }
 }
-.align-c {
+.ui-align-c {
     &,* { text-align: center !important; }
 }
 
@@ -290,15 +290,15 @@ each(@increases, {
     .ui-no-float-md { .ui-no-float(); }
     .ui-clear-md { .ui-clear(); }
 
-    .md-align- {
+    .ui-md-align- {
         &c {
-            &,* { .align-c(); }
+            &,* { .ui-align-c(); }
         }
         &l {
-            &,* { .align-l(); }
+            &,* { .ui-align-l(); }
         }
         &r {
-            &,* { .align-r(); }
+            &,* { .ui-align-r(); }
         }
     }
 }
@@ -319,15 +319,15 @@ each(@increases, {
         &-md,&-sm { .ui-clear(); }
     }
 
-    .md-align-,.sm-align- {
+    .ui-md-align-,.ui-sm-align- {
         &c {
-            &,* { .align-c(); }
+            &,* { .ui-align-c(); }
         }
         &l {
-            &,* { .align-l(); }
+            &,* { .ui-align-l(); }
         }
         &r {
-            &,* { .align-r(); }
+            &,* { .ui-align-r(); }
         }
     }
 
@@ -345,15 +345,15 @@ each(@increases, {
         &-md,&-sm,&-xs { .ui-clear(); }
     }
 
-    .md-align-,.sm-align-,.xs-align- {
+    .ui-md-align-,.ui-sm-align-,.ui-xs-align- {
         &c {
-            &,* { .align-c(); }
+            &,* { .ui-align-c(); }
         }
         &l {
-            &,* { .align-l(); }
+            &,* { .ui-align-l(); }
         }
         &r {
-            &,* { .align-r(); }
+            &,* { .ui-align-r(); }
         }
     }
 }
@@ -361,15 +361,15 @@ each(@increases, {
     .ui-visible-lg { .ui-hidden(); }
     .ui-clear-lg { .ui-clear(); }
 
-    .lg-align- {
+    .ui-lg-align- {
         &c {
-            &,* { .align-c(); }
+            &,* { .ui-align-c(); }
         }
         &l {
-            &,* { .align-l(); }
+            &,* { .ui-align-l(); }
         }
         &r {
-            &,* { .align-r(); }
+            &,* { .ui-align-r(); }
         }
     }
 }
@@ -380,15 +380,15 @@ each(@increases, {
     .ui-hidden-xl { .ui-hidden(); }
     .ui-no-float-xl { .ui-no-float(); }
 
-    .xl-align- {
+    .ui-xl-align- {
         &c {
-            &,* { .align-c(); }
+            &,* { .ui-align-c(); }
         }
         &l {
-            &,* { .align-l(); }
+            &,* { .ui-align-l(); }
         }
         &r {
-            &,* { .align-r(); }
+            &,* { .ui-align-r(); }
         }
     }
 }

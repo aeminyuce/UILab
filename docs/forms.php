@@ -313,7 +313,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="ui-col-50 ui-color-black-25 align-c ui-icons-lg ui-set-relative">
+                                <div class="ui-col-50 ui-color-black-25 ui-align-c ui-icons-lg ui-set-relative">
                                     <div class="ui-set-absolute ui-set-all ui-hidden-md">
                                         <div class="ui-set-absolute ui-set-c ui-padding-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
@@ -351,7 +351,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="ui-col-50 ui-color-black-25 align-c ui-icons-lg ui-set-relative">
+                                <div class="ui-col-50 ui-color-black-25 ui-align-c ui-icons-lg ui-set-relative">
                                     <div class="ui-set-absolute ui-set-all ui-hidden-md">
                                         <div class="ui-set-absolute ui-set-c ui-padding-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
@@ -389,7 +389,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="ui-col-50 ui-color-black-25 align-c ui-set-relative">
+                                <div class="ui-col-50 ui-color-black-25 ui-align-c ui-set-relative">
                                     <div class="ui-set-absolute ui-set-all ui-hidden-md">
                                         <div class="ui-set-absolute ui-set-c ui-icons-lg ui-padding-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
@@ -835,7 +835,7 @@
                         <div class="ui-col-6">
                             <label class="form-label">Label</label>
                         </div>
-                        <div class="ui-col-6 align-r">
+                        <div class="ui-col-6 ui-align-r">
                             <a class="small ui-color-black-25 underline" href="#">Top Right Link</a>
                         </div>
                     </div>
@@ -847,7 +847,7 @@
                         <div class="ui-col-6">
                             <label class="form-label">Label</label>
                         </div>
-                        <div class="ui-col-6 align-r">
+                        <div class="ui-col-6 ui-align-r">
                             <a class="ui-btn ui-btn-xs ui-color-black-25 ui-round ui-ease-btn">Button</a>
                         </div>
                     </div>
@@ -859,7 +859,7 @@
                         <div class="ui-col-6">
                             <label class="form-label">Label</label>
                         </div>
-                        <div class="ui-col-6 align-r">
+                        <div class="ui-col-6 ui-align-r">
                             <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                                 <button class="ui-btn ui-btn-xs ui-btn-ghost ui-color-black-25 ui-round">
                                     Dropdown Button
@@ -1348,7 +1348,7 @@
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
                                     <div class="text ui-round ui-border-dual ui-ease-form">
-                                        <input type="text" value="3" min="2" max="5" class="number align-r">
+                                        <input type="text" value="3" min="2" max="5" class="number ui-align-r">
                                     </div>
                                 </div>
                             </div>

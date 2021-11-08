@@ -67,8 +67,8 @@
                 font-weight: @font-bold; ._border-var(@dir: border-right; @var: table-border-color);
             }
         }
-        &.align-c {
-            td:not(:first-child) { &:extend(.ui-table:not(.ui-table-sidebar).align-c td); }
+        &.ui-align-c {
+            td:not(:first-child) { &:extend(.ui-table:not(.ui-table-sidebar).ui-align-c td); }
         }
     }
 
@@ -85,7 +85,7 @@
         }
     }
 
-    &:not(.ui-table-sidebar).align-c {
+    &:not(.ui-table-sidebar).ui-align-c {
         td,th { text-align: center; }
     }
 

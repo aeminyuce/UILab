@@ -44,7 +44,7 @@
                         <div class="ui-card-side ui-padding-15 font-readable">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                         </div>
-                        <div class="ui-card-side ui-padding-15 align-r sm-align-c ui-border-t ui-ease-2nd-btn">
+                        <div class="ui-card-side ui-padding-15 ui-align-r ui-sm-align-c ui-border-t ui-ease-2nd-btn">
                             <form action="#">
                                 <button type="button" class="ui-btn ui-padding-30-h ui-btn-ghost ui-border-dual ui-circle">Cancel</button>
                                 <button type="submit" class="ui-btn ui-padding-30-h ui-circle ui-theme-yellow ui-fill-dark-100">Show Later</button>
@@ -63,11 +63,11 @@
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
-                            <div class="ui-col-48 align-c ui-padding-4-v">
+                            <div class="ui-col-48 ui-align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl ui-theme-sub ui-current"><use href="#info-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="ui-col-12 sm-align-c large">
+                                <div class="ui-col-12 ui-sm-align-c large">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -85,11 +85,11 @@
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                                 <div class="ui-col-static ui-sm-fluid">
-                                    <div class="ui-col-48 ui-padding-4-v align-c">
+                                    <div class="ui-col-48 ui-padding-4-v ui-align-c">
                                         <svg class="ui-icon ui-icon-xl ui-theme-sub ui-current"><use href="#info-circle-fill"/></svg>
                                     </div>
                                     <div class="ui-row">
-                                        <div class="ui-col-12 sm-align-c large">
+                                        <div class="ui-col-12 ui-sm-align-c large">
                                             Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                         </div>
                                     </div>
@@ -105,11 +105,11 @@
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
-                            <div class="ui-col-48 align-c ui-padding-4-v">
+                            <div class="ui-col-48 ui-align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="ui-col-12 sm-align-c large">
+                                <div class="ui-col-12 ui-sm-align-c large">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -121,11 +121,11 @@
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
-                            <div class="ui-col-48 align-c ui-padding-4-v">
+                            <div class="ui-col-48 ui-align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="ui-col-12 sm-align-c large">
+                                <div class="ui-col-12 ui-sm-align-c large">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -137,11 +137,11 @@
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
-                            <div class="ui-col-48 align-c ui-padding-4-v">
+                            <div class="ui-col-48 ui-align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="ui-col-12 sm-align-c large">
+                                <div class="ui-col-12 ui-sm-align-c large">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -153,11 +153,11 @@
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
-                            <div class="ui-col-48 align-c ui-padding-4-v">
+                            <div class="ui-col-48 ui-align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="ui-col-12 sm-align-c large">
+                                <div class="ui-col-12 ui-sm-align-c large">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -169,11 +169,11 @@
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
-                            <div class="ui-col-48 align-c ui-padding-4-v">
+                            <div class="ui-col-48 ui-align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="ui-col-12 sm-align-c large">
+                                <div class="ui-col-12 ui-sm-align-c large">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -185,11 +185,11 @@
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
-                            <div class="ui-col-48 align-c ui-padding-4-v">
+                            <div class="ui-col-48 ui-align-c ui-padding-4-v">
                                 <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="ui-col-12 sm-align-c large">
+                                <div class="ui-col-12 ui-sm-align-c large">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -261,7 +261,7 @@
                             <svg class="ui-icon ui-margin-5-l"><use href="#link"/></svg>
                         </a>
                     </div>
-                    <div class="ui-card-side ui-padding-30-h ui-padding-15-v ui-fill-light-300 align-r xs-align-c">
+                    <div class="ui-card-side ui-padding-30-h ui-padding-15-v ui-fill-light-300 ui-align-r ui-xs-align-c">
                         <a href="#" class="ui-current underline">Card Footer Link</a>
                     </div>
                 </div>
@@ -279,7 +279,7 @@
                             <svg class="ui-icon ui-margin-5-l"><use href="#link"/></svg>
                         </a>
                     </div>
-                    <div class="ui-card-side ui-padding-30-h ui-padding-15-v ui-fill-light-300 align-r xs-align-c">
+                    <div class="ui-card-side ui-padding-30-h ui-padding-15-v ui-fill-light-300 ui-align-r ui-xs-align-c">
                         <a href="#" class="ui-current underline">Card Footer Link</a>
                     </div>
                 </div>

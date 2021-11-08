@@ -365,16 +365,16 @@
 
                 <h3>Alignment Classes</h3>
                 <div class="ui-padding-30-b">
-                    <div class="align-l">.align-l</div>
+                    <div class="ui-align-l">.align-l</div>
                     <br>
-                    <div class="align-c">.align-c</div>
+                    <div class="ui-align-c">.align-c</div>
                     <br>
-                    <div class="align-r">.align-r</div>
+                    <div class="ui-align-r">.align-r</div>
                     <br>
-                    <div class="align-r">.align-r</div>
+                    <div class="ui-align-r">.align-r</div>
                     <br>
-                    <p class="align-justify"><strong>.align-justify:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae faucibus orci. Etiam bibendum arcu sodales velit iaculis, a semper arcu gravida.</p>
-                    <p class="align-nowrap"><strong>.align-nowrap:</strong> Lorem ipsum dolor sit amet.</p>
+                    <p class="ui-align-justify"><strong>.ui-align-justify:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae faucibus orci. Etiam bibendum arcu sodales velit iaculis, a semper arcu gravida.</p>
+                    <p class="ui-align-nowrap"><strong>.ui-align-nowrap:</strong> Lorem ipsum dolor sit amet.</p>
                 </div>
 
                 <h3>Text Transformation Classes</h3>

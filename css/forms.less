@@ -129,7 +129,7 @@ html:not(.ui-no-effects) {
 .text input,.select select { height: (@btn-default - 2); overflow: hidden; }
 
 .text {
-    &:not([class*="align-"]) {
+    &:not([class*="ui-align-"]) {
         input { text-align: left !important; }
     }
 }
@@ -177,8 +177,8 @@ html:not(.ui-no-effects) {
 }
 
 .select,.select-multi {
-    &:not([class*="align-"]) {
-        select { &:extend(.text:not([class*="align-"]) input); }
+    &:not([class*="ui-align-"]) {
+        select { &:extend(.text:not([class*="ui-align-"]) input); }
     }
 }
 
@@ -216,8 +216,8 @@ html:not(.ui-no-effects) {
         &:not([rows]) { height: 3em; }
     }
 
-    &:not([class*="align-"]) {
-        textarea { &:extend(.text:not([class*="align-"]) input); }
+    &:not([class*="ui-align-"]) {
+        textarea { &:extend(.text:not([class*="ui-align-"]) input); }
     }
 }
 

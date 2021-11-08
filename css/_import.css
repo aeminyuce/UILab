@@ -2130,22 +2130,22 @@ html .ui-row {
 .ui-sp-30 {
   height: 30px;
 }
-.align-justify {
+.ui-align-justify {
   text-align: justify !important;
 }
-.align-nowrap {
+.ui-align-nowrap {
   white-space: nowrap !important;
 }
-.align-r,
-.align-r * {
+.ui-align-r,
+.ui-align-r * {
   text-align: right !important;
 }
-.align-l,
-.align-l * {
+.ui-align-l,
+.ui-align-l * {
   text-align: left !important;
 }
-.align-c,
-.align-c * {
+.ui-align-c,
+.ui-align-c * {
   text-align: center !important;
 }
 .bg-white:not([class*="ui-fill-"]) {
@@ -2194,22 +2194,22 @@ html .ui-row {
     clear: both !important;
     display: block;
   }
-  .md-align-c,
-  .md-align-c *,
-  .md-align-c *,
-  .md-align-c * * {
+  .ui-md-align-c,
+  .ui-md-align-c *,
+  .ui-md-align-c *,
+  .ui-md-align-c * * {
     text-align: center !important;
   }
-  .md-align-l,
-  .md-align-l *,
-  .md-align-l *,
-  .md-align-l * * {
+  .ui-md-align-l,
+  .ui-md-align-l *,
+  .ui-md-align-l *,
+  .ui-md-align-l * * {
     text-align: left !important;
   }
-  .md-align-r,
-  .md-align-r *,
-  .md-align-r *,
-  .md-align-r * * {
+  .ui-md-align-r,
+  .ui-md-align-r *,
+  .ui-md-align-r *,
+  .ui-md-align-r * * {
     text-align: right !important;
   }
 }
@@ -2238,34 +2238,34 @@ html .ui-row {
     clear: both !important;
     display: block;
   }
-  .md-align-c,
-  .sm-align-c,
-  .md-align-c *,
-  .sm-align-c *,
-  .md-align-c *,
-  .sm-align-c *,
-  .md-align-c * *,
-  .sm-align-c * * {
+  .ui-md-align-c,
+  .ui-sm-align-c,
+  .ui-md-align-c *,
+  .ui-sm-align-c *,
+  .ui-md-align-c *,
+  .ui-sm-align-c *,
+  .ui-md-align-c * *,
+  .ui-sm-align-c * * {
     text-align: center !important;
   }
-  .md-align-l,
-  .sm-align-l,
-  .md-align-l *,
-  .sm-align-l *,
-  .md-align-l *,
-  .sm-align-l *,
-  .md-align-l * *,
-  .sm-align-l * * {
+  .ui-md-align-l,
+  .ui-sm-align-l,
+  .ui-md-align-l *,
+  .ui-sm-align-l *,
+  .ui-md-align-l *,
+  .ui-sm-align-l *,
+  .ui-md-align-l * *,
+  .ui-sm-align-l * * {
     text-align: left !important;
   }
-  .md-align-r,
-  .sm-align-r,
-  .md-align-r *,
-  .sm-align-r *,
-  .md-align-r *,
-  .sm-align-r *,
-  .md-align-r * *,
-  .sm-align-r * * {
+  .ui-md-align-r,
+  .ui-sm-align-r,
+  .ui-md-align-r *,
+  .ui-sm-align-r *,
+  .ui-md-align-r *,
+  .ui-sm-align-r *,
+  .ui-md-align-r * *,
+  .ui-sm-align-r * * {
     text-align: right !important;
   }
 }
@@ -2290,46 +2290,46 @@ html .ui-row {
     clear: both !important;
     display: block;
   }
-  .md-align-c,
-  .sm-align-c,
-  .xs-align-c,
-  .md-align-c *,
-  .sm-align-c *,
-  .xs-align-c *,
-  .md-align-c *,
-  .sm-align-c *,
-  .xs-align-c *,
-  .md-align-c * *,
-  .sm-align-c * *,
-  .xs-align-c * * {
+  .ui-md-align-c,
+  .ui-sm-align-c,
+  .ui-xs-align-c,
+  .ui-md-align-c *,
+  .ui-sm-align-c *,
+  .ui-xs-align-c *,
+  .ui-md-align-c *,
+  .ui-sm-align-c *,
+  .ui-xs-align-c *,
+  .ui-md-align-c * *,
+  .ui-sm-align-c * *,
+  .ui-xs-align-c * * {
     text-align: center !important;
   }
-  .md-align-l,
-  .sm-align-l,
-  .xs-align-l,
-  .md-align-l *,
-  .sm-align-l *,
-  .xs-align-l *,
-  .md-align-l *,
-  .sm-align-l *,
-  .xs-align-l *,
-  .md-align-l * *,
-  .sm-align-l * *,
-  .xs-align-l * * {
+  .ui-md-align-l,
+  .ui-sm-align-l,
+  .ui-xs-align-l,
+  .ui-md-align-l *,
+  .ui-sm-align-l *,
+  .ui-xs-align-l *,
+  .ui-md-align-l *,
+  .ui-sm-align-l *,
+  .ui-xs-align-l *,
+  .ui-md-align-l * *,
+  .ui-sm-align-l * *,
+  .ui-xs-align-l * * {
     text-align: left !important;
   }
-  .md-align-r,
-  .sm-align-r,
-  .xs-align-r,
-  .md-align-r *,
-  .sm-align-r *,
-  .xs-align-r *,
-  .md-align-r *,
-  .sm-align-r *,
-  .xs-align-r *,
-  .md-align-r * *,
-  .sm-align-r * *,
-  .xs-align-r * * {
+  .ui-md-align-r,
+  .ui-sm-align-r,
+  .ui-xs-align-r,
+  .ui-md-align-r *,
+  .ui-sm-align-r *,
+  .ui-xs-align-r *,
+  .ui-md-align-r *,
+  .ui-sm-align-r *,
+  .ui-xs-align-r *,
+  .ui-md-align-r * *,
+  .ui-sm-align-r * *,
+  .ui-xs-align-r * * {
     text-align: right !important;
   }
 }
@@ -2341,22 +2341,22 @@ html .ui-row {
     clear: both !important;
     display: block;
   }
-  .lg-align-c,
-  .lg-align-c *,
-  .lg-align-c *,
-  .lg-align-c * * {
+  .ui-lg-align-c,
+  .ui-lg-align-c *,
+  .ui-lg-align-c *,
+  .ui-lg-align-c * * {
     text-align: center !important;
   }
-  .lg-align-l,
-  .lg-align-l *,
-  .lg-align-l *,
-  .lg-align-l * * {
+  .ui-lg-align-l,
+  .ui-lg-align-l *,
+  .ui-lg-align-l *,
+  .ui-lg-align-l * * {
     text-align: left !important;
   }
-  .lg-align-r,
-  .lg-align-r *,
-  .lg-align-r *,
-  .lg-align-r * * {
+  .ui-lg-align-r,
+  .ui-lg-align-r *,
+  .ui-lg-align-r *,
+  .ui-lg-align-r * * {
     text-align: right !important;
   }
 }
@@ -2372,22 +2372,22 @@ html .ui-row {
   .ui-no-float-xl {
     float: none !important;
   }
-  .xl-align-c,
-  .xl-align-c *,
-  .xl-align-c *,
-  .xl-align-c * * {
+  .ui-xl-align-c,
+  .ui-xl-align-c *,
+  .ui-xl-align-c *,
+  .ui-xl-align-c * * {
     text-align: center !important;
   }
-  .xl-align-l,
-  .xl-align-l *,
-  .xl-align-l *,
-  .xl-align-l * * {
+  .ui-xl-align-l,
+  .ui-xl-align-l *,
+  .ui-xl-align-l *,
+  .ui-xl-align-l * * {
     text-align: left !important;
   }
-  .xl-align-r,
-  .xl-align-r *,
-  .xl-align-r *,
-  .xl-align-r * * {
+  .ui-xl-align-r,
+  .ui-xl-align-r *,
+  .ui-xl-align-r *,
+  .ui-xl-align-r * * {
     text-align: right !important;
   }
 }
@@ -3672,7 +3672,7 @@ blockquote {
 blockquote:not(:last-child) {
   margin-bottom: 20px;
 }
-blockquote.align-r,
+blockquote.ui-align-r,
 blockquote.ui-right {
   text-align: right;
   border-right: 5px solid hsl(0, 0%, 93%);
@@ -3998,7 +3998,7 @@ dt + dd:not(:last-child) {
   width: 42px;
   max-width: none !important;
 }
-.ui-btn-square:not([class*="align-"]) {
+.ui-btn-square:not([class*="ui-align-"]) {
   text-align: center !important;
 }
 .ui-btn-ghost:not(.ui-btn-visible):not(:hover) {
@@ -4845,10 +4845,10 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
   height: 40px;
   overflow: hidden;
 }
-.text:not([class*="align-"]) input,
-.select:not([class*="align-"]) select,
-.select-multi:not([class*="align-"]) select,
-.textarea:not([class*="align-"]) textarea {
+.text:not([class*="ui-align-"]) input,
+.select:not([class*="ui-align-"]) select,
+.select-multi:not([class*="ui-align-"]) select,
+.textarea:not([class*="ui-align-"]) textarea {
   text-align: left !important;
 }
 .ui-chrome .text input:-webkit-autofill {
@@ -6244,9 +6244,9 @@ label.custom {
 .ui-table tr:last-child:not(:first-child) td {
   border-bottom: 0;
 }
-.ui-table:not(.ui-table-sidebar).align-c td,
-.ui-table:not(.ui-table-sidebar).align-c th,
-.ui-table-sidebar.align-c td:not(:first-child) {
+.ui-table:not(.ui-table-sidebar).ui-align-c td,
+.ui-table:not(.ui-table-sidebar).ui-align-c th,
+.ui-table-sidebar.ui-align-c td:not(:first-child) {
   text-align: center;
 }
 .ui-table[class*="ui-border-"],

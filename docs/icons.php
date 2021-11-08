@@ -9,13 +9,13 @@
 
         <div class="ui-row">
             <div class="ui-col-12">
-                <div class="ui-sm-no-padding align-c ui-padding-30-v">
+                <div class="ui-sm-no-padding ui-align-c ui-padding-30-v">
 
                     <h1>SVG Icons<small class="ui-total ui-margin-5-v ui-block ui-opacity-half"></small></h1>
 
                     <div class="ui-row">
                         <div class="ui-col-4">
-                            <h4 class="align-c ui-margin-10-b">Change Weight</h4>
+                            <h4 class="ui-align-c ui-margin-10-b">Change Weight</h4>
                             <div class="ui-icon-modifiers ui-btn-holder form-lg ui-margin-20-b ui-theme-sub form-lg ui-ease-1st-btn">
                                 <button data-ui-tooltip="b" data-ui-only="desktop" title="Black" data-ui-weight="black" class="ui-btn ui-round">
                                     <svg class="ui-icon ui-icon-black ui-no-opacity"><use href="#remove"/></svg>
@@ -38,7 +38,7 @@
                             </div>
                         </div>
                         <div class="ui-col-8">
-                            <h4 class="align-c ui-margin-10-b">Change Size</h4>
+                            <h4 class="ui-align-c ui-margin-10-b">Change Size</h4>
                             <div class="ui-icon-modifiers ui-btn-holder form-lg ui-margin-20-b ui-theme-sub form-lg ui-ease-1st-btn">
                                 <button data-ui-size="xxl" class="ui-btn ui-round ui-fill-dark-100">XXL</button>
                                 <button data-ui-size="xl" class="ui-btn ui-round">XL</button>

@@ -128,7 +128,7 @@
                     <img class="ui-margin-5-t" src="img/uilab-logo.png" alt="UI lab" srcset="img/uilab-logo@2x.png 2x">
                 </div>
                 <div class="ui-row">
-                    <div class="ui-col-12 align-r ui-padding-15 ui-no-padding-l ui-icons-no-opacity ui-ease-1st-btn">
+                    <div class="ui-col-12 ui-align-r ui-padding-15 ui-no-padding-l ui-icons-no-opacity ui-ease-1st-btn">
                         <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost ui-circle ui-hidden-ie">
                             <svg class="ui-icon ui-visible-dark"><use href="#moon-fill"/></svg>
                             <svg class="ui-icon ui-visible-light"><use href="#sun-fill"/></svg>
@@ -154,7 +154,7 @@
             <!-- sidebar -->
             <div class="ui-col-250 ui-theme-gray ui-fill-light-200 ui-hidden-md">
 
-                <div class="align-l sm-align-c ui-add-mobile-menu-r">
+                <div class="ui-align-l ui-sm-align-c ui-add-mobile-menu-r">
                     <h3 class="ui-margin-15">Components</h3>
                     <ul class="ui-list-unstyled ui-block-2nd ui-ease-2nd-button">
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=alerts">Alerts</a></li>
@@ -203,7 +203,7 @@
                 <div class="ui-col-12 ui-padding-15">
 
                     <div class="ui-fixed ui-fixed-xl ui-padding-15 ui-margin-30-v ui-sm-no-padding">
-                        <div class="card ui-highlight align-c ui-padding-30 ui-xs-no-padding ui-round ui-theme-base">
+                        <div class="card ui-highlight ui-align-c ui-padding-30 ui-xs-no-padding ui-round ui-theme-base">
                             <h1 class="font-light">UI lab is a modular design system.</h2>
                             <h4 class="font-bold">For developing web interfaces fastly!</h4>
                             <span class="ui-sp-15"></span>
@@ -221,7 +221,7 @@
 
                         <span class="ui-sp-30"></span>
 
-                        <div class="ui-row ui-row-gap-lg align-c ui-hover-shadow-2nd ui-hover-t-2nd">
+                        <div class="ui-row ui-row-gap-lg ui-align-c ui-hover-shadow-2nd ui-hover-t-2nd">
                             <div class="ui-col-4 ui-col-md-6">
                                 <a class="ui-card ui-padding-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=login-page">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-login-page.jpg" alt="Login Page">

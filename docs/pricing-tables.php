@@ -8,7 +8,7 @@
 
                 <h3>Simple Pricing Table</h3>
 
-                <div class="ui-row ui-row-gap-lg align-c">
+                <div class="ui-row ui-row-gap-lg ui-align-c">
                     <div class="ui-col-4">
 
                         <div class="ui-card ui-full-h ui-padding-30 ui-round ui-shadow">
@@ -67,7 +67,7 @@
 
                 <h3>Detailed Pricing Table</h3>
 
-                <div class="ui-row ui-row-gap-lg align-c">
+                <div class="ui-row ui-row-gap-lg ui-align-c">
                     <div class="ui-col-4">
 
                         <div class="ui-card ui-full-h ui-round ui-shadow">

@@ -42,7 +42,7 @@
 
                     <div class="ui-card ui-round ui-shadow-lg ui-theme-sub">
 
-                        <div class="ui-padding-15 md-align-c ui-border-b">
+                        <div class="ui-padding-15 ui-md-align-c ui-border-b">
                             <h5 class="ui-margin-10-b ui-color-black-50">COLORS</h5>
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-red">
@@ -190,7 +190,7 @@
                                         <li data-ui-y="174"></li>
                                     </ul>
                                 </div>
-                                <div class="align-c">
+                                <div class="ui-align-c">
                                     Last 4 Weeks
                                 </div>
                             </div>
@@ -221,13 +221,13 @@
                         </div>
                     </div>
 
-                    <div class="ui-row ui-sm-fluid sm-align-c">
+                    <div class="ui-row ui-sm-fluid ui-sm-align-c">
                         <div class="ui-col-6">
                             <span class="ui-sp-5 ui-hidden-sm"></span>
                             <span class="large">Found <b>47</b> and displaying <b>9</b> products.</span>
                         </div>
-                        <div class="ui-col-6 align-r ui-sm-no-padding-t">
-                            <div class="select align-l ui-round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
+                        <div class="ui-col-6 ui-align-r ui-sm-no-padding-t">
+                            <div class="select ui-align-l ui-round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="1" checked>Sort by</option>
@@ -236,7 +236,7 @@
                                     <option value="4">Price (High to Low)</option>
                                 </select>
                             </div>
-                            <div class="select align-l ui-round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
+                            <div class="select ui-align-l ui-round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="12" checked>Show 9</option>
@@ -245,7 +245,7 @@
                                 </select>
                             </div>
                             <span class="ui-sp-10 ui-visible-xs"></span>
-                            <span class="align-c ui-theme-sub ui-ease-1st-btn">
+                            <span class="ui-align-c ui-theme-sub ui-ease-1st-btn">
                                 <button class="ui-btn ui-btn-square ui-round ui-fill-dark-100">
                                     <svg class="ui-icon"><use href="#grid-column"/></svg>
                                 </button>
@@ -466,7 +466,7 @@
                     </div>
 
                     <div class="ui-row">
-                        <div class="ui-col-12 align-c">
+                        <div class="ui-col-12 ui-align-c">
                             <button class="load-more ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-circle ui-ease-btn">Load more</button>
                         </div>
                     </div>

@@ -141,7 +141,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="ui-color-black-25 small align-c ui-padding-10">
+                            <div class="ui-color-black-25 small ui-align-c ui-padding-10">
                                 <b>Yearly Savings Costs: $18.970</b>
                             </div>
                         </div>
@@ -152,7 +152,7 @@
 
             <div class="ui-col-400 ui-padding-10">
 
-                <div class="ui-card align-c ui-round ui-shadow-lg ui-theme-sub">
+                <div class="ui-card ui-align-c ui-round ui-shadow-lg ui-theme-sub">
                     <div class="ui-card-side ui-padding-10-v ui-fill-dark-300">
                         <ul class="ui-list-inline ui-countdown ui-no-user-select">
                             <li class="ui-padding-10-v ui-padding-15-h ui-hidden-xs">
@@ -171,7 +171,7 @@
                     </div>
                 </div>
 
-                <div class="ui-card align-c ui-round ui-shadow-lg ui-theme-sub">
+                <div class="ui-card ui-align-c ui-round ui-shadow-lg ui-theme-sub">
                     <ul class="ui-list-inline ui-list-gap ui-padding-30 ui-padding-15-b ui-icons-lg ui-icons-margin-5-r ui-theme-gray inline-ui-block-1st">
                         <li>
                             <svg class="ui-icon"><use href="#floor-plan"/></svg>
@@ -233,7 +233,7 @@
                                 <div class="ui-row">
                                     <div class="ui-col-12 ui-no-padding">
                                         <div class="text ui-no-border ui-theme-gray ui-fill-light-100 ui-ease-form">
-                                            <input class="font-bold align-c x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
+                                            <input class="font-bold ui-align-c x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
                                         </div>
                                     </div>
                                 </div>
@@ -292,7 +292,7 @@
                         </li>
                     </ul>
                     <span class="ui-sp-5"></span>
-                    <div class="align-l ui-icons-no-opacity form-lg ui-ease-1st-btn">
+                    <div class="ui-align-l ui-icons-no-opacity form-lg ui-ease-1st-btn">
                         <a class="ui-btn ui-block ui-btn-multi ui-round-t" href="#">
                             <svg class="ui-icon ui-right"><use href="#images"/></svg>
                             Show All HD Images

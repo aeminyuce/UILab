@@ -1,7 +1,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="ui-col-12 align-c ui-padding-30">
+            <div class="ui-col-12 ui-align-c ui-padding-30">
 
                 <h3>Photo Images</h3>
                 <div class="ui-padding-30-b">

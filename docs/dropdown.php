@@ -200,7 +200,7 @@
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <div class="ui-dropdown-menu ui-tabs ui-round align-l ui-shadow-lg ui-block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-ui-visible">
+                            <div class="ui-dropdown-menu ui-tabs ui-round ui-align-l ui-shadow-lg ui-block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-ui-visible">
 
                                 <button class="ui-btn ui-btn-ghost ui-ease-btn">Waiting</button>
 
@@ -238,7 +238,7 @@
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
-                            <div class="ui-dropdown-menu ui-tabs ui-round align-l ui-shadow-lg ui-block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-ui-visible">
+                            <div class="ui-dropdown-menu ui-tabs ui-round ui-align-l ui-shadow-lg ui-block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-ui-visible">
 
                                 <button class="ui-btn ui-btn-ghost ui-ease-btn">Waiting</button>
 
@@ -344,7 +344,7 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn align-l ui-circle">
+                            <button class="ui-btn ui-align-l ui-circle">
                                 <span>Value 01</span>
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                             </button>
@@ -366,7 +366,7 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn align-l ui-circle">
+                            <button class="ui-btn ui-align-l ui-circle">
                                 <span>Select Value with Icons</span>
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                             </button>
@@ -429,7 +429,7 @@
                 <div class="ui-row ui-padding-30-b ui-block-2nd form-lg">
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
-                            <button class="ui-btn align-l ui-circle">
+                            <button class="ui-btn ui-align-l ui-circle">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                             </button>
@@ -457,7 +457,7 @@
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
-                            <button class="ui-btn align-l ui-circle">
+                            <button class="ui-btn ui-align-l ui-circle">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                             </button>
