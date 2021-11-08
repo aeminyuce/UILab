@@ -1895,10 +1895,10 @@ html .ui-row {
   transform: translateX(-50%) translateY(-50%);
   top: 50%;
 }
-.cursor-default {
+.ui-cursor-default {
   cursor: default !important;
 }
-.cursor-pointer {
+.ui-cursor-pointer {
   cursor: pointer !important;
 }
 .clearfix {

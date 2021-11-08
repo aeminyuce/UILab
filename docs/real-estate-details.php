@@ -11,7 +11,7 @@
 
                     <div class="ui-carousel-gallery">
                         <div class="ui-detail shadow-lg">
-                            <img src="img/house_01.jpg" class="ui-photo-gallery-call cursor-pointer img-fluid round ui-ease-layout" data-ui-target="#ui-real-estate-carousel" data-ui-count="0" alt="">
+                            <img src="img/house_01.jpg" class="ui-photo-gallery-call ui-cursor-pointer img-fluid round ui-ease-layout" data-ui-target="#ui-real-estate-carousel" data-ui-count="0" alt="">
                             <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
                             <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
                         </div>

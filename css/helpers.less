@@ -50,8 +50,10 @@
 .ui-set-cy { top: 50%; transform+_: translateY(-50%); }
 .ui-set-c { .ui-set-cx(); .ui-set-cy(); }
 
-.cursor-default { cursor: default !important; }
-.cursor-pointer { cursor: pointer !important; }
+.ui-cursor- {
+    &default { cursor: default !important; }
+    &pointer { cursor: pointer !important; }
+}
 
 .clearfix {
     clear: both !important; display: block;
