@@ -20,9 +20,9 @@
                         <span class="ui-color-white">ui-color-white-50</span>
                         <span class="ui-color-white-25">ui-color-white-25</span>
                     </div>
-                    <span class="ui-color-black-25">ui-color-black-25</span>
-                    <span class="ui-color-black-50">ui-color-black-50</span>
                     <span class="ui-color-black">ui-color-black</span>
+                    <span class="ui-color-black-50">ui-color-black-50</span>
+                    <span class="ui-color-black-25">ui-color-black-25</span>
                     <span class="ui-clear"></span>
                     <span class="ui-color-green">ui-color-green</span>
                     <span class="ui-color-yellow">ui-color-yellow</span>
