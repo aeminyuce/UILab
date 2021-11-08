@@ -89,7 +89,7 @@
 ?>
 
     <!-- header -->
-    <header class="ui-container form-lg ui-theme-base invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
+    <header class="ui-container form-lg ui-theme-base ui-invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-15">
                 <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost ui-circle ui-icons-no-opacity ui-right ui-ease-btn ui-hidden-ie">
@@ -121,7 +121,7 @@
     } else {
 ?>
     <!-- header -->
-    <header class="ui-container form-lg invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
+    <header class="ui-container form-lg ui-invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
         <div class="ui-row">
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-col-250 ui-col-xs-100 ui-padding-15 ui-no-padding-r">

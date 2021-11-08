@@ -2183,7 +2183,7 @@ html .ui-row {
   }
 }
 @media (min-width: 768px) and (max-width: 959px) {
-  .img-md-fluid {
+  .ui-img-md-fluid {
     width: 100% !important;
     height: auto !important;
   }
@@ -2224,8 +2224,8 @@ html .ui-row {
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  .img-md-fluid,
-  .img-sm-fluid {
+  .ui-img-md-fluid,
+  .ui-img-sm-fluid {
     width: 100% !important;
     height: auto !important;
   }
@@ -2273,9 +2273,9 @@ html .ui-row {
   .ui-hidden-xs {
     display: none !important;
   }
-  .img-md-fluid,
-  .img-sm-fluid,
-  .img-xs-fluid {
+  .ui-img-md-fluid,
+  .ui-img-sm-fluid,
+  .ui-img-xs-fluid {
     width: 100% !important;
     height: auto !important;
   }
@@ -2404,10 +2404,10 @@ html .ui-row {
 [data-ui-mode="dark"] .ui-hidden-dark {
   display: none !important;
 }
-[data-ui-mode="dark"] .invert-img {
+[data-ui-mode="dark"] .ui-invert-img {
   filter: invert(1) hue-rotate(180deg) !important;
 }
-[data-ui-mode="dark"] .invert-bg {
+[data-ui-mode="dark"] .ui-invert-bg {
   background-color: hsl(0, 0%, 100%) !important;
   background-color: var(--ui-card-bg) !important;
 }

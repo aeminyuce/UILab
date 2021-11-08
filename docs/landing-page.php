@@ -5,7 +5,7 @@
 <script src="../js/custom/landing-page.js?v=<?php echo filemtime('../js/custom/landing-page.js'); ?>"></script>
 
 <!-- header: start -->
-<header class="ui-container ui-no-gutter ui-bg-white invert-bg" data-ui-classes="ui-shadow-lg">
+<header class="ui-container ui-no-gutter ui-bg-white ui-invert-bg" data-ui-classes="ui-shadow-lg">
 
     <div class="ui-border-b ui-theme-farmer2">
         <div class="ui-fixed ui-padding-10-v ui-sm-no-padding-v">
@@ -740,7 +740,7 @@
                     </li>
                     <li>
                         <a class="ui-img ui-has-info" href="img/agriculture/md07.jpg">
-                            <img class="invert-img" src="img/agriculture/md07.jpg" alt="">
+                            <img class="ui-invert-img" src="img/agriculture/md07.jpg" alt="">
                             <span class="x-large ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
@@ -807,7 +807,7 @@
 </main>
 
 <!-- footer: start -->
-<footer class="ui-container ui-no-gutter ui-padding-30-v invert-bg ui-theme-farmer2 ui-fill-dark-100">
+<footer class="ui-container ui-no-gutter ui-padding-30-v ui-invert-bg ui-theme-farmer2 ui-fill-dark-100">
     <div class="ui-fixed ui-padding-30-v ui-sm-align-c">
         <div class="ui-row">
             <div class="ui-col-static">
@@ -884,7 +884,7 @@
                                 <div class="form-holder ui-col-static ui-no-fluid form-lg">
                                     <div class="ui-row ui-no-row-gap">
                                         <div class="ui-col-12">
-                                            <div class="text ui-no-border ui-bg-white invert-bg ui-ease-form">
+                                            <div class="text ui-no-border ui-bg-white ui-invert-bg ui-ease-form">
                                                 <input class="required" type="email" maxlength="4" placeholder="your@email.com">
                                             </div>
                                         </div>

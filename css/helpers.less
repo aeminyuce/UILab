@@ -288,7 +288,7 @@ each(@increases, {
     .ui-visible-sm { .ui-hidden(); }
 }
 @media (@md-start) and (@md-finish) {
-    .img-md-fluid { .ui-full-w(); .ui-auto-h(); }
+    .ui-img-md-fluid { .ui-full-w(); .ui-auto-h(); }
     .ui-no-float-md { .ui-no-float(); }
     .ui-clear-md { .ui-clear(); }
 
@@ -311,7 +311,7 @@ each(@increases, {
     .ui-visible-xs { .ui-hidden(); }
 }
 @media (@sm-start) and (@sm-finish) {
-    .img- {
+    .ui-img- {
         &md-fluid,&sm-fluid { .ui-full-w(); .ui-auto-h(); }
     }
     .ui-no-float {
@@ -337,7 +337,7 @@ each(@increases, {
 @media (@xs-finish) {
     .ui-hidden-xs { .ui-hidden(); }
 
-    .img- {
+    .ui-img- {
         &md-fluid,&sm-fluid,&xs-fluid { .ui-full-w(); .ui-auto-h(); }
     }
     .ui-no-float {
@@ -407,7 +407,7 @@ each(@increases, {
         @media (prefers-color-scheme: dark) {
             .ui-visible-light,.ui-hidden-dark { .ui-hidden(); }
 
-            .invert {
+            .ui-invert {
                 &-img { filter: invert(1) hue-rotate(180deg) !important; }
                 &-bg { ._bg-var(card-bg) !important; }
             }
@@ -420,7 +420,7 @@ each(@increases, {
         [data-ui-mode="dark"] {
             .ui-visible-light,.ui-hidden-dark { .ui-hidden(); }
 
-            .invert {
+            .ui-invert {
                 &-img { filter: invert(1) hue-rotate(180deg) !important; }
                 &-bg { ._bg-var(card-bg) !important; }
             }

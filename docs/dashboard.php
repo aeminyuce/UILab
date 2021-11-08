@@ -10,7 +10,7 @@
 
         <!-- sidebar -->
         <div class="sidebar ui-col-250 ui-set-relative ui-visible-lg ui-theme-panel ui-ease-width ui-ease-in-out">
-            <div class="ui-col-250 ui-full-h ui-set-fixed ui-set-l ui-set-t invert-bg ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
+            <div class="ui-col-250 ui-full-h ui-set-fixed ui-set-l ui-set-t ui-invert-bg ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
 
                 <div class="ui-set-relative ui-padding-5-t">
                     <img class="ui-margin-1-t" src="img/logo-udashboard.png" height="62" alt="">
@@ -1755,7 +1755,7 @@
 </main>
 
 <!-- mobile menu -->
-<div class="ui-mobile-menu ui-show-l invert-bg ui-theme-panel ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
+<div class="ui-mobile-menu ui-show-l ui-invert-bg ui-theme-panel ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
     <div class="ui-mobile-menu-title ui-no-padding ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-mobile-menu">
             <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
