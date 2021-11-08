@@ -3425,9 +3425,6 @@ a {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
 }
-.ui-color-current {
-  color: currentColor;
-}
 .ui-color-white,
 .ui-color-white .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
 .ui-color-white a:not([class*="ui-current-"]):not([class*="ui-fill-"]),

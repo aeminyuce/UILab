@@ -20,7 +20,6 @@
                         <span class="ui-color-white">ui-color-white-50</span>
                         <span class="ui-color-white-muted">ui-color-white-muted</span>
                     </div>
-                    <div class="ui-color-current">ui-color-current</div>
                     <span class="ui-color-black-muted">ui-color-black-muted</span>
                     <span class="ui-color-black-50">ui-color-black-50</span>
                     <span class="ui-color-black">ui-color-black</span>
