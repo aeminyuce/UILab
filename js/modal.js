@@ -49,7 +49,7 @@ ui.modal = {
     nameIcon: 'ui-icon',
 
     // styling classnames
-    stylesContent: 'shadow-lg ui-ease-layout',
+    stylesContent: 'ui-shadow-lg ui-ease-layout',
     stylesCloseBtn: 'ui-ease-btn',
     stylesModalBg: 'ui-ease-layout',
 

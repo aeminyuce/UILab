@@ -1,7 +1,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed ui-padding-30-v">
 
-        <div class="ui-image-uploader ui-round shadow-lg ui-ease-image-uploader">
+        <div class="ui-image-uploader ui-round ui-shadow-lg ui-ease-image-uploader">
             <form action="xhr/image-uploader.php" method="post" enctype="multipart/form-data"> <!-- error testing: image-uploader-error.php-->
 
                 <div class="ui-padding-10-h ui-border-b ui-border-light">

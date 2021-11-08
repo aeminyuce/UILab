@@ -23,7 +23,7 @@ ui.autocomplete = {
     nameText: 'text',
 
     // styling classnames
-    stylesList : 'shadow-lg ui-ease-autocomplete',
+    stylesList : 'ui-shadow-lg ui-ease-autocomplete',
 
     // tags
     tagHighlight: 'b',

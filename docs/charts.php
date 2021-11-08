@@ -231,7 +231,7 @@
                         </div>
                     </div>
                     <div class="ui-col-12">
-                        <div class="ui-card ui-round shadow-lg ui-tabs ui-ease-tabs" data-ui-classes="font-bold">
+                        <div class="ui-card ui-round ui-shadow-lg ui-tabs ui-ease-tabs" data-ui-classes="font-bold">
                             <div class="ui-card-side ui-padding-10 ui-border-b">
 
                                 <div class="ui-dropdown ui-menu-l ui-right ui-ease-dropdown">
@@ -239,7 +239,7 @@
                                         <span>First Chart</span>
                                         <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                                     </button>
-                                    <ul class="ui-dropdown-menu ui-round shadow-lg">
+                                    <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                         <li class="ui-selected">
                                             <label class="ui-tab active font-bold">First chart</label>
                                         </li>

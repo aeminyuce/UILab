@@ -11,7 +11,7 @@
                 <div class="ui-row ui-row-gap-lg align-c">
                     <div class="ui-col-4">
 
-                        <div class="ui-card ui-full-h ui-padding-30 ui-round shadow">
+                        <div class="ui-card ui-full-h ui-padding-30 ui-round ui-shadow">
                             <div class="ui-margin-30-v">
                                 <svg class="ui-icon ui-icon-72 ui-theme-sub ui-current"><use href="#box"/></svg>
                             </div>
@@ -27,7 +27,7 @@
                     </div>
                     <div class="ui-col-4 ui-no-padding-v">
 
-                        <div class="ui-card ui-full-h ui-padding-30 ui-round shadow-lg ui-theme-sub ui-fill-dark-100">
+                        <div class="ui-card ui-full-h ui-padding-30 ui-round ui-shadow-lg ui-theme-sub ui-fill-dark-100">
                             <div class="ui-margin-30-v">
                                 <svg class="ui-icon ui-icon-72"><use href="#gift"/></svg>
                             </div>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="ui-col-4">
 
-                        <div class="ui-card ui-full-h ui-padding-30 ui-round shadow">
+                        <div class="ui-card ui-full-h ui-padding-30 ui-round ui-shadow">
                             <div class="ui-margin-30-v">
                                 <svg class="ui-icon ui-icon-72 ui-theme-sub ui-current"><use href="#wallet"/></svg>
                             </div>
@@ -70,7 +70,7 @@
                 <div class="ui-row ui-row-gap-lg align-c">
                     <div class="ui-col-4">
 
-                        <div class="ui-card ui-full-h ui-round shadow">
+                        <div class="ui-card ui-full-h ui-round ui-shadow">
                             <div class="ui-card-side ui-padding-30 ui-border-b">
                                 <div class="ui-margin-30-v">
                                     <svg class="ui-icon ui-icon-72 ui-theme-sub ui-current"><use href="#box"/></svg>
@@ -108,7 +108,7 @@
                     </div>
                     <div class="ui-col-4 ui-no-padding-v">
 
-                        <div class="ui-card ui-full-h ui-round shadow-lg ui-theme-sub ui-fill-dark-100">
+                        <div class="ui-card ui-full-h ui-round ui-shadow-lg ui-theme-sub ui-fill-dark-100">
                             <div class="ui-card-side ui-padding-30 ui-border-b ui-border-light">
                                 <div class="ui-margin-30-v">
                                     <svg class="ui-icon ui-icon-72"><use href="#gift"/></svg>
@@ -147,7 +147,7 @@
                     </div>
                     <div class="ui-col-4">
 
-                        <div class="ui-card ui-full-h ui-round shadow">
+                        <div class="ui-card ui-full-h ui-round ui-shadow">
                             <div class="ui-card-side ui-padding-30 ui-border-b">
                                 <div class="ui-margin-30-v">
                                     <svg class="ui-icon ui-icon-72 ui-theme-sub ui-current"><use href="#wallet"/></svg>

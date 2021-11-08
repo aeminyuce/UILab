@@ -865,7 +865,7 @@
                                     Dropdown Button
                                     <svg class="ui-toggle-icon ui-icon ui-margin-3-l"><use href="#angle-down"/></svg>
                                 </button>
-                                <ul class="ui-dropdown-menu ui-round shadow-lg">
+                                <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                     <li><a href="#">Dropdown Link</a></li>
                                     <li><a href="#">Dropdown Link</a></li>
                                     <li><a href="#">Dropdown Link</a></li>
@@ -1920,20 +1920,20 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="form-grid">Inner shadow with no radius and no ui-border style:</label>
+                        <label class="form-grid">Inner ui-shadow with no radius and no ui-border style:</label>
                     </div>
                     <div class="ui-col-9 ui-ease-1st-form">
 
-                        <div class="text ui-margin-10-b shadow-in ui-no-border">
+                        <div class="text ui-margin-10-b ui-shadow-in ui-no-border">
                             <input type="text">
                         </div>
-                        <div class="text error ui-margin-10-b shadow-in ui-no-border">
+                        <div class="text error ui-margin-10-b ui-shadow-in ui-no-border">
                             <input type="text" placeholder="Error Form">
                         </div>
-                        <div class="text warning ui-margin-10-b shadow-in ui-no-border">
+                        <div class="text warning ui-margin-10-b ui-shadow-in ui-no-border">
                             <input type="text" placeholder="Warning Form">
                         </div>
-                        <div class="select ui-margin-10-b shadow-in ui-no-border">
+                        <div class="select ui-margin-10-b ui-shadow-in ui-no-border">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select</option>
@@ -1942,29 +1942,29 @@
                             </select>
                         </div>
 
-                        <div class="textarea ui-margin-10-b shadow-in ui-no-border">
+                        <div class="textarea ui-margin-10-b ui-shadow-in ui-no-border">
                             <textarea placeholder="Textarea"></textarea>
                         </div>
-                        <div class="textarea ui-toggle-textarea ui-margin-10-b shadow-in ui-no-border">
+                        <div class="textarea ui-toggle-textarea ui-margin-10-b ui-shadow-in ui-no-border">
                             <textarea placeholder="Toggle Textarea"></textarea>
                         </div>
 
                         <label class="custom">
-                            <span class="check-custom shadow-in ui-no-border">
+                            <span class="check-custom ui-shadow-in ui-no-border">
                                 <input type="checkbox" checked>
                                 <i class="state"></i>
                             </span>
                             <b>Custom Checkbox</b>
                         </label>
                         <label class="custom">
-                            <span class="radio-custom shadow-in ui-no-border">
+                            <span class="radio-custom ui-shadow-in ui-no-border">
                                 <input type="radio" checked>
                                 <i class="state"></i>
                             </span>
                             <b>Custom Radio</b>
                         </label>
                         <label class="custom">
-                            <span class="switch-custom shadow-in ui-no-border">
+                            <span class="switch-custom ui-shadow-in ui-no-border">
                                 <input type="checkbox" checked>
                                 <i class="state"></i>
                             </span>

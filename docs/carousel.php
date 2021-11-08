@@ -8,7 +8,7 @@
 
                     <h5 class="font-bold">HTML Content Carousel</h5>
 
-                    <div class="ui-carousel ui-padding-10 ui-round shadow-in-sm ui-theme-gray ui-fill-light-100" data-ui-col="1" data-ui-slide="4000">
+                    <div class="ui-carousel ui-padding-10 ui-round ui-shadow-in-sm ui-theme-gray ui-fill-light-100" data-ui-col="1" data-ui-slide="4000">
                         <div class="ui-carousel-slider form-lg ui-ease-2nd-layout ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
                             <div class="ui-slide-content ui-padding-10-h" data-ui-animate="10">

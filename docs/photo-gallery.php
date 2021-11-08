@@ -250,32 +250,32 @@
                     <div class="ui-carousel ui-photo-gallery ui-ease-photo-gallery" data-ui-col="4" data-ui-col-md="3" data-ui-col-sm="2" data-ui-col-xs="2">
                         <div class="ui-carousel-slider ui-ease-layout ui-ease-slow ui-ease-in-out">
                             <div class="ui-slide-content">
-                                <a class="ui-img shadow ui-ease-default" href="img/image_09.jpg">
+                                <a class="ui-img ui-shadow ui-ease-default" href="img/image_09.jpg">
                                     <img class="ui-img" src="img/image_09.jpg" alt="">
                                 </a>
                             </div>
                             <div class="ui-slide-content">
-                                <a class="ui-img shadow ui-ease-default" href="img/image_07.jpg">
+                                <a class="ui-img ui-shadow ui-ease-default" href="img/image_07.jpg">
                                     <img class="ui-img" src="img/image_07.jpg" alt="">
                                 </a>
                             </div>
                             <div class="ui-slide-content">
-                                <a class="ui-img shadow ui-ease-default" href="img/image_08.jpg">
+                                <a class="ui-img ui-shadow ui-ease-default" href="img/image_08.jpg">
                                     <img class="ui-img" src="img/image_05.jpg" alt="">
                                 </a>
                             </div>
                             <div class="ui-slide-content">
-                                <a class="ui-img shadow ui-ease-default" href="img/image_04.jpg">
+                                <a class="ui-img ui-shadow ui-ease-default" href="img/image_04.jpg">
                                     <img class="ui-img" src="img/image_04.jpg" alt="">
                                 </a>
                             </div>
                             <div class="ui-slide-content">
-                                <a class="ui-img shadow ui-ease-default" href="img/image_01.jpg">
+                                <a class="ui-img ui-shadow ui-ease-default" href="img/image_01.jpg">
                                     <img class="ui-img" src="img/image_01.jpg" alt="">
                                 </a>
                             </div>
                             <div class="ui-slide-content">
-                                <a class="ui-img shadow ui-ease-default" href="img/image_06.jpg">
+                                <a class="ui-img ui-shadow ui-ease-default" href="img/image_06.jpg">
                                     <img class="ui-img" src="img/image_06.jpg" alt="">
                                 </a>
                             </div>
@@ -294,7 +294,7 @@
 
                 <h5 class="font-bold">Product Gallery with Carousel</h5>
                 <div class="ui-padding-30-b">
-                    <div class="ui-carousel-gallery ui-card ui-padding-15 ui-round shadow-lg">
+                    <div class="ui-carousel-gallery ui-card ui-padding-15 ui-round ui-shadow-lg">
                         <div class="ui-row">
                             <div class="ui-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 ui-sm-fluid">
                                 <img src="img/house_01.jpg" class="ui-photo-gallery-call ui-cursor-pointer ui-img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel" data-ui-count="0" alt="">
@@ -347,7 +347,7 @@
 
                 <h5 class="font-bold">Product Gallery Without Carousel</h5>
                 <div class="ui-padding-30-b">
-                    <div class="ui-carousel-gallery ui-card ui-padding-15 ui-round shadow-lg">
+                    <div class="ui-carousel-gallery ui-card ui-padding-15 ui-round ui-shadow-lg">
                         <div class="ui-row">
                             <div class="ui-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 ui-sm-fluid">
                                 <img src="img/image_01.jpg" class="ui-photo-gallery-call ui-cursor-pointer ui-img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel2" data-ui-count="0" alt="">

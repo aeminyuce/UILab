@@ -9,7 +9,7 @@
                     <div class="ui-row ui-row-gap-lg ui-xs-fluid form-lg">
                         <div class="ui-col-4 ui-col-sm-6">
 
-                            <div class="ui-card ui-padding-30 ui-round shadow-lg">
+                            <div class="ui-card ui-padding-30 ui-round ui-shadow-lg">
                                 <span class="ui-photo-slider ui-margin-15-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
@@ -33,7 +33,7 @@
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
 
-                            <div class="ui-card ui-padding-30 ui-round shadow-lg">
+                            <div class="ui-card ui-padding-30 ui-round ui-shadow-lg">
                                 <span class="ui-photo-slider ui-margin-15-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
@@ -57,7 +57,7 @@
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
 
-                            <div class="ui-card ui-padding-30 ui-round shadow-lg">
+                            <div class="ui-card ui-padding-30 ui-round ui-shadow-lg">
                                 <span class="ui-photo-slider ui-margin-15-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
@@ -81,7 +81,7 @@
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
 
-                            <div class="ui-card ui-padding-30 ui-round shadow-lg">
+                            <div class="ui-card ui-padding-30 ui-round ui-shadow-lg">
                                 <span class="ui-photo-slider ui-margin-15-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
@@ -105,7 +105,7 @@
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
 
-                            <div class="ui-card ui-padding-30 ui-round shadow-lg">
+                            <div class="ui-card ui-padding-30 ui-round ui-shadow-lg">
                                 <span class="ui-photo-slider ui-margin-15-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
@@ -129,7 +129,7 @@
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
 
-                            <div class="ui-card ui-padding-30 ui-round shadow-lg">
+                            <div class="ui-card ui-padding-30 ui-round ui-shadow-lg">
                                 <span class="ui-photo-slider ui-margin-15-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img

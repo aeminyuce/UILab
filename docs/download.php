@@ -18,7 +18,7 @@
 
                 </div>
 
-                <div class="ui-fixed ui-fixed-xl ui-padding-15 ui-sm-no-padding shadow-in-sm ui-round ui-theme-gray ui-fill-light-100">
+                <div class="ui-fixed ui-fixed-xl ui-padding-15 ui-sm-no-padding ui-shadow-in-sm ui-round ui-theme-gray ui-fill-light-100">
 
                     <div class="generate-holder ui-tab-content form-lg ui-padding-15 ui-open ui-open-ease">
 

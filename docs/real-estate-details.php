@@ -10,7 +10,7 @@
                 <div class="ui-col-12">
 
                     <div class="ui-carousel-gallery">
-                        <div class="ui-detail shadow-lg">
+                        <div class="ui-detail ui-shadow-lg">
                             <img src="img/house_01.jpg" class="ui-photo-gallery-call ui-cursor-pointer ui-img-fluid ui-round ui-ease-layout" data-ui-target="#ui-real-estate-carousel" data-ui-count="0" alt="">
                             <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
                             <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
@@ -60,7 +60,7 @@
                         </div>
                     </div>
 
-                    <div class="ui-card ui-round shadow-lg">
+                    <div class="ui-card ui-round ui-shadow-lg">
                         <div class="ui-padding-30 large font-readable">
                             <h4>Details</h4>
                             Each villa has been meticulously designed to meet all the demands that a luxury villa has to provide as well as offer a contemporary image of great beauty.
@@ -152,7 +152,7 @@
 
             <div class="ui-col-400 ui-padding-10">
 
-                <div class="ui-card align-c ui-round shadow-lg ui-theme-sub">
+                <div class="ui-card align-c ui-round ui-shadow-lg ui-theme-sub">
                     <div class="ui-card-side ui-padding-10-v ui-fill-dark-300">
                         <ul class="list-inline ui-countdown ui-no-user-select">
                             <li class="ui-padding-10-v ui-padding-15-h ui-hidden-xs">
@@ -171,7 +171,7 @@
                     </div>
                 </div>
 
-                <div class="ui-card align-c ui-round shadow-lg ui-theme-sub">
+                <div class="ui-card align-c ui-round ui-shadow-lg ui-theme-sub">
                     <ul class="list-inline ui-list-gap ui-padding-30 ui-padding-15-b ui-icons-lg ui-icons-margin-5-r ui-theme-gray inline-ui-block-1st">
                         <li>
                             <svg class="ui-icon"><use href="#floor-plan"/></svg>
@@ -195,7 +195,7 @@
                     </div>
                 </div>
 
-                <div class="ui-card ui-margin-20-b ui-round shadow-lg">
+                <div class="ui-card ui-margin-20-b ui-round ui-shadow-lg">
                     <div class="ui-padding-30-h ui-padding-10-v">
                         <b>Previous Offers / <span style="color: hsl(30, 100%, 63%);">Averages</span></b>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,20" data-ui-x="1,2,3,4,5">
@@ -252,7 +252,7 @@
                     </div>
                 </div>
 
-                <div class="ui-card ui-padding-30 ui-round shadow-lg">
+                <div class="ui-card ui-padding-30 ui-round ui-shadow-lg">
                     <h4>Other Details</h4>
                     <ul class="list-unstyled ui-list-spacer-15 ui-icons-lg ui-icons-margin-5-r">
                         <li>

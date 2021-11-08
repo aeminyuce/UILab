@@ -1973,22 +1973,22 @@ html .ui-row {
 .ui-circle {
   border-radius: 1000px;
 }
-.shadow {
+.ui-shadow {
   box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.1);
 }
-.shadow-sm {
+.ui-shadow-sm {
   box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.05);
 }
-.shadow-lg {
+.ui-shadow-lg {
   box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.1);
 }
-.shadow-in {
+.ui-shadow-in {
   box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.1);
 }
-.shadow-in-sm {
+.ui-shadow-in-sm {
   box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.05);
 }
-.shadow-in-lg {
+.ui-shadow-in-lg {
   box-shadow: inset 0 5px 15px hsla(0, 0%, 0%, 0.1);
 }
 .no-opacity,

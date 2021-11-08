@@ -10,16 +10,16 @@
                 <div class="ui-calendar ui-ease-calendar ui-round"></div>
             </div>
             <div class="ui-col-4 ui-col-md-6">
-                <div class="ui-calendar ui-ease-calendar ui-round shadow"></div>
+                <div class="ui-calendar ui-ease-calendar ui-round ui-shadow"></div>
             </div>
             <div class="ui-col-4 ui-col-md-6">
-                <div class="ui-calendar ui-ease-calendar ui-no-padding ui-margin-5 shadow-lg ui-theme-sub ui-fill-dark-200"></div>
+                <div class="ui-calendar ui-ease-calendar ui-no-padding ui-margin-5 ui-shadow-lg ui-theme-sub ui-fill-dark-200"></div>
             </div>
             <div class="ui-col-4 ui-col-md-6">
                 <div class="ui-calendar ui-ease-calendar ui-round ui-theme-sub ui-fill-dark-100"></div>
             </div>
             <div class="ui-col-4 ui-col-md-6">
-                <div class="ui-calendar ui-ease-calendar ui-round shadow-lg ui-theme-base ui-fill-dark-100"></div>
+                <div class="ui-calendar ui-ease-calendar ui-round ui-shadow-lg ui-theme-base ui-fill-dark-100"></div>
             </div>
         </div>
 
@@ -27,19 +27,19 @@
         <div class="ui-row ui-sm-fluid ui-padding-30-b ui-block-2nd">
             <div class="ui-col-6">
                 <b class="ui-margin-5-b">Previous Month: data-ui-date="prev"</b>
-                <div class="ui-calendar ui-ease-calendar ui-round shadow" data-ui-date="prev"></div>
+                <div class="ui-calendar ui-ease-calendar ui-round ui-shadow" data-ui-date="prev"></div>
             </div>
             <div class="ui-col-6">
                 <b class="ui-margin-5-b">Next Month: data-ui-date="next"</b>
-                <div class="ui-calendar ui-ease-calendar ui-round shadow" data-ui-date="next"></div>
+                <div class="ui-calendar ui-ease-calendar ui-round ui-shadow" data-ui-date="next"></div>
             </div>
             <div class="ui-col-6">
                 <b class="ui-margin-5-b">Show Defined Month: data-ui-date="10"</b>
-                <div class="ui-calendar ui-ease-calendar ui-round shadow" data-ui-date="10"></div>
+                <div class="ui-calendar ui-ease-calendar ui-round ui-shadow" data-ui-date="10"></div>
             </div>
             <div class="ui-col-6">
                 <b class="ui-margin-5-b">Show Defined Year and Month: data-ui-date="2012,1"</b>
-                <div class="ui-calendar ui-ease-calendar ui-round shadow" data-ui-date="2012,1"></div>
+                <div class="ui-calendar ui-ease-calendar ui-round ui-shadow" data-ui-date="2012,1"></div>
             </div>
         </div>
 

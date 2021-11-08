@@ -4,7 +4,7 @@
             <div class="ui-col-12 ui-padding-30-v">
 
                 <h3>Grid List Examples</h3>
-                <div class="ui-card ui-padding-10 ui-round shadow-lg">
+                <div class="ui-card ui-padding-10 ui-round ui-shadow-lg">
                     <div class="ui-grid-list ui-grid-list-striped grid-hover ui-theme-gray ui-ease-ui-grid-list">
 
                         <div class="ui-row ui-no-ui-row-gap-v ui-row-gap-sm-h ui-margin-2-v">
@@ -40,7 +40,7 @@
                                             <svg class="ui-icon"><use href="#sort"></svg> Sort
                                         </span>
                                     </button>
-                                    <ul class="ui-dropdown-menu ui-round shadow-lg">
+                                    <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                         <li>
                                             <label class="radio" data-ui-sort="1">
                                                 <svg class="ui-icon"><use href="#sort"></svg>

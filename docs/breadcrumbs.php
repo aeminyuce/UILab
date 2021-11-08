@@ -167,7 +167,7 @@
                                 <button class="ui-btn ui-round ui-fill-dark-100">
                                     <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                 </button>
-                                <ul class="ui-dropdown-menu ui-round shadow-lg">
+                                <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                                         <a href="#" itemprop="item">
                                             <span itemprop="name">
@@ -218,7 +218,7 @@
                                 <button class="ui-btn ui-round ui-fill-dark-100">
                                     <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                 </button>
-                                <ul class="ui-dropdown-menu ui-round shadow-lg">
+                                <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                                         <a href="#" itemprop="item">
                                             <span itemprop="name">

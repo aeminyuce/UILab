@@ -6,7 +6,7 @@
     <div class="ui-row ui-no-row-gap ui-sm-fluid ui-full-h">
         <div class="login-forms-container ui-col-lg-5 ui-col-6">
 
-            <div class="forms-holder ui-card form-lg ui-tabs shadow-lg ui-ease-tabs">
+            <div class="forms-holder ui-card form-lg ui-tabs ui-shadow-lg ui-ease-tabs">
                 <form id="login" class="ui-tab-content ui-open ui-open-ease" action="#">
 
                     <h3 class="ui-margin-30-b">Login to continue</h3>
@@ -80,7 +80,7 @@
         </div>
         <div class="login-container ui-col-lg-7 ui-col-6 ui-set-relative">
 
-            <div class="login-holder align-c ui-no-scroll ui-set-relative ui-fill-dark-100 shadow-lg">
+            <div class="login-holder align-c ui-no-scroll ui-set-relative ui-fill-dark-100 ui-shadow-lg">
 
                 <div class="ui-full-w ui-set-absolute ui-set-c">
                     <h1 class="ui-hidden-md">Create your account</h1>

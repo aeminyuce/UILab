@@ -11,7 +11,7 @@
             <div class="ui-col-250 ui-padding-10 ui-hidden-md">
                 <div class="ui-add-mobile-menu-r">
 
-                    <div class="ui-card ui-padding-15 ui-round shadow-lg">
+                    <div class="ui-card ui-padding-15 ui-round ui-shadow-lg">
                         <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete text text-icon-both ui-round ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form has-clear">
                             <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
                             <button type="button" class="clear-form">
@@ -40,7 +40,7 @@
                         </ul>
                     </div>
 
-                    <div class="ui-card ui-round shadow-lg ui-theme-sub">
+                    <div class="ui-card ui-round ui-shadow-lg ui-theme-sub">
 
                         <div class="ui-padding-15 md-align-c ui-border-b">
                             <h5 class="ui-margin-10-b ui-color-black-50">COLORS</h5>
@@ -165,7 +165,7 @@
             <div class="ui-row">
                 <div class="ui-col-12 ui-sm-no-padding-t">
 
-                    <div class="ui-card ui-margin-10-b ui-round shadow-lg">
+                    <div class="ui-card ui-margin-10-b ui-round ui-shadow-lg">
                         <div class="ui-row ui-row-gap-lg ui-sm-fluid">
                             <div class="ui-col-12 ui-border-b">
                                 <h4>
@@ -261,7 +261,7 @@
 
                     <div class="products-list ui-row form-lg hover-shadow-2nd ui-ease-2nd-layout hover-t-2nd">
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
@@ -297,7 +297,7 @@
                             </a>
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
@@ -332,7 +332,7 @@
                             </a>
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
@@ -367,7 +367,7 @@
                             </a>
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img src="img/product_04.png" alt="" >
@@ -398,7 +398,7 @@
                             </a>
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img src="img/product_05.png" alt="" >
@@ -429,7 +429,7 @@
                             </a>
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
