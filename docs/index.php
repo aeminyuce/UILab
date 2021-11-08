@@ -113,7 +113,7 @@
         include ($page.'.php');
 ?>
 
-<button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-lg ui-btn-square round-l ui-icons-no-opacity ui-ease-btn set-fixed set-r ui-hidden-ie" style="top: 30%;">
+<button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-lg ui-btn-square round-l ui-icons-no-opacity ui-ease-btn ui-set-fixed ui-set-r ui-hidden-ie" style="top: 30%;">
     <svg class="ui-icon ui-visible-dark"><use href="#moon-fill"/></svg>
     <svg class="ui-icon ui-visible-light"><use href="#sun-fill"/></svg>
 </button>

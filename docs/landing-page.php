@@ -104,8 +104,8 @@
             <span class="sp-10 ui-visible-sm"></span>
         </div>
 
-        <div class="banner-content banner-tab01 ui-tab-content ui-padding-30-v set-relative ui-theme-farmer ui-fill-dark-100 ui-open ui-open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
-            <div class="ui-fixed ui-padding-30-v set-relative">
+        <div class="banner-content banner-tab01 ui-tab-content ui-padding-30-v ui-set-relative ui-theme-farmer ui-fill-dark-100 ui-open ui-open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
+            <div class="ui-fixed ui-padding-30-v ui-set-relative">
                 <div class="ui-row">
                     <div class="ui-col-static">
                         <div class="ui-row ui-row-gap-lg-v">
@@ -122,8 +122,8 @@
                         </div>
                         <div class="ui-col-500 ui-padding-15-v ui-padding-10-h">
 
-                            <div class="banner-slogan ui-padding-15 set-relative">
-                                <div class="align-c ui-padding-15 set-relative shadow-lg">
+                            <div class="banner-slogan ui-padding-15 ui-set-relative">
+                                <div class="align-c ui-padding-15 ui-set-relative shadow-lg">
                                     <span class="sp-15"></span>
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#factory"/></svg>
                                     <span class="sp-30 ui-hidden-md"></span>
@@ -142,8 +142,8 @@
             </div>
             <span class="sp-30 ui-margin-10-v"></span>
         </div>
-        <div class="banner-content banner-tab02 ui-tab-content ui-padding-30-v set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
-            <div class="ui-fixed ui-padding-30-v set-relative">
+        <div class="banner-content banner-tab02 ui-tab-content ui-padding-30-v ui-set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
+            <div class="ui-fixed ui-padding-30-v ui-set-relative">
                 <div class="ui-row">
                     <div class="ui-col-static">
                         <div class="ui-row ui-row-gap-lg-v">
@@ -160,8 +160,8 @@
                         </div>
                         <div class="ui-col-500 ui-padding-15-v ui-padding-10-h">
 
-                            <div class="banner-slogan ui-padding-15 set-relative">
-                                <div class="align-c ui-padding-15 set-relative shadow-lg">
+                            <div class="banner-slogan ui-padding-15 ui-set-relative">
+                                <div class="align-c ui-padding-15 ui-set-relative shadow-lg">
                                     <span class="sp-15"></span>
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#network"/></svg>
                                     <span class="sp-30"></span>
@@ -180,8 +180,8 @@
             </div>
             <span class="sp-30 ui-margin-10-v"></span>
         </div>
-        <div class="banner-content banner-tab03 ui-tab-content ui-padding-30-v set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
-            <div class="ui-fixed ui-padding-30-v set-relative">
+        <div class="banner-content banner-tab03 ui-tab-content ui-padding-30-v ui-set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
+            <div class="ui-fixed ui-padding-30-v ui-set-relative">
                 <div class="ui-row">
                     <div class="ui-col-static">
                         <div class="ui-row ui-row-gap-lg-v">
@@ -198,8 +198,8 @@
                         </div>
                         <div class="ui-col-500 ui-padding-15-v ui-padding-10-h">
 
-                            <div class="banner-slogan ui-padding-15 set-relative">
-                                <div class="align-c ui-padding-15 set-relative shadow-lg">
+                            <div class="banner-slogan ui-padding-15 ui-set-relative">
+                                <div class="align-c ui-padding-15 ui-set-relative shadow-lg">
                                     <span class="sp-15"></span>
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#user-circle"/></svg>
                                     <span class="sp-30"></span>
@@ -223,7 +223,7 @@
     <!-- tab banner: end -->
 
     <!-- home links: start -->
-    <div class="ui-fixed home-links align-c form-lg ui-theme-farmer2 set-relative">
+    <div class="ui-fixed home-links align-c form-lg ui-theme-farmer2 ui-set-relative">
         <div class="ui-carousel" data-ui-col="4" data-ui-col-md="2" data-ui-col-sm="2" data-ui-col-xs="1" data-ui-slide="4000">
             <div class="ui-carousel-slider ui-icons-xxl hover-shadow-2nd hover-scale-2nd ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
@@ -698,7 +698,7 @@
                         <a class="ui-img ui-has-info ui-show-info" href="img/agriculture/md01.jpg">
                             <img src="img/agriculture/md01.jpg" alt="">
                             <span class="x-large font-readable">
-                                <span class="scroll-v ui-margin-20 set-absolute set-all">
+                                <span class="scroll-v ui-margin-20 ui-set-absolute ui-set-all">
                                     <svg class="ui-icon ui-icon-xxl ui-left ui-margin-20-r ui-hidden-md ui-current"><use href="#trees"/></svg>
                                     <b>Sed nunc mauris, auctor tristique libero non tristique.</b>
                                     <span class="ui-color-white-25 ui-margin-15-t block">

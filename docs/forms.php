@@ -313,9 +313,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="ui-col-50 ui-color-black-25 align-c ui-icons-lg set-relative">
-                                    <div class="set-absolute set-all ui-hidden-md">
-                                        <div class="set-absolute set-c ui-padding-20-h">
+                                <div class="ui-col-50 ui-color-black-25 align-c ui-icons-lg ui-set-relative">
+                                    <div class="ui-set-absolute ui-set-all ui-hidden-md">
+                                        <div class="ui-set-absolute ui-set-c ui-padding-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
                                         </div>
                                     </div>
@@ -351,9 +351,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="ui-col-50 ui-color-black-25 align-c ui-icons-lg set-relative">
-                                    <div class="set-absolute set-all ui-hidden-md">
-                                        <div class="set-absolute set-c ui-padding-20-h">
+                                <div class="ui-col-50 ui-color-black-25 align-c ui-icons-lg ui-set-relative">
+                                    <div class="ui-set-absolute ui-set-all ui-hidden-md">
+                                        <div class="ui-set-absolute ui-set-c ui-padding-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
                                         </div>
                                     </div>
@@ -389,9 +389,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="ui-col-50 ui-color-black-25 align-c set-relative">
-                                    <div class="set-absolute set-all ui-hidden-md">
-                                        <div class="set-absolute set-c ui-icons-lg ui-padding-20-h">
+                                <div class="ui-col-50 ui-color-black-25 align-c ui-set-relative">
+                                    <div class="ui-set-absolute ui-set-all ui-hidden-md">
+                                        <div class="ui-set-absolute ui-set-c ui-icons-lg ui-padding-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
                                         </div>
                                     </div>

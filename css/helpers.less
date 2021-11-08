@@ -33,22 +33,22 @@
 .no-user-select { @no-user-select(); }
 .no-float { float: none !important; }
 
-.set {
-    &-fixed { position: fixed !important; }
-    &-relative { position: relative !important; }
-    &-absolute { position: absolute !important; }
+.ui-set- {
+    &fixed { position: fixed !important; }
+    &relative { position: relative !important; }
+    &absolute { position: absolute !important; }
 }
 
-.set-t { top: 0; }
-.set-r { right: 0; }
-.set-b { bottom: 0; }
-.set-l { left: 0; }
-.set-h { .set-r(); .set-l(); }
-.set-v { .set-t(); .set-b(); }
-.set-all { .set-v(); .set-h(); }
-.set-cx { left: 50%; transform+_: translateX(-50%); }
-.set-cy { top: 50%; transform+_: translateY(-50%); }
-.set-c { .set-cx(); .set-cy(); }
+.ui-set-t { top: 0; }
+.ui-set-r { right: 0; }
+.ui-set-b { bottom: 0; }
+.ui-set-l { left: 0; }
+.ui-set-h { .ui-set-r(); .ui-set-l(); }
+.ui-set-v { .ui-set-t(); .ui-set-b(); }
+.ui-set-all { .ui-set-v(); .ui-set-h(); }
+.ui-set-cx { left: 50%; transform+_: translateX(-50%); }
+.ui-set-cy { top: 50%; transform+_: translateY(-50%); }
+.ui-set-c { .ui-set-cx(); .ui-set-cy(); }
 
 .cursor-default { cursor: default !important; }
 .cursor-pointer { cursor: pointer !important; }

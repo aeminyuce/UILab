@@ -6,7 +6,7 @@
     <div class="ui-row ui-no-row-gap">
         <div class="ui-col-12">
 
-            <div class="signup-holder no-scroll set-relative ui-fill-dark-100">
+            <div class="signup-holder no-scroll ui-set-relative ui-fill-dark-100">
 
                 <div class="signup-icons ui-icons-black">
                     <svg class="ui-icon"><use href="#plus"/></svg>

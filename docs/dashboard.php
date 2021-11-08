@@ -9,12 +9,12 @@
     <div class="ui-col-static ui-sm-fluid">
 
         <!-- sidebar -->
-        <div class="sidebar ui-col-250 set-relative ui-visible-lg ui-theme-panel ui-ease-width ui-ease-in-out">
-            <div class="ui-col-250 ui-full-h set-fixed set-l invert-bg ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
+        <div class="sidebar ui-col-250 ui-set-relative ui-visible-lg ui-theme-panel ui-ease-width ui-ease-in-out">
+            <div class="ui-col-250 ui-full-h ui-set-fixed ui-set-l ui-set-t invert-bg ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
 
-                <div class="set-relative">
-                    <img src="img/logo-udashboard.png" width="194" height="62" alt="">
-                    <button class="sidebar-hide opacity-more ui-padding-10-h ui-ease-btn set-absolute set-cy set-r" data-ui-tooltip title="Toggle Sidebar">
+                <div class="ui-set-relative ui-padding-5-t">
+                    <img class="ui-margin-1-t" src="img/logo-udashboard.png" height="62" alt="">
+                    <button class="sidebar-hide opacity-more ui-padding-10-h ui-ease-btn ui-set-absolute ui-set-cy ui-set-r" data-ui-tooltip title="Toggle Sidebar">
                         <svg class="ui-icon"><use href="#angle-left"/></svg>
                     </button>
                 </div>
@@ -838,7 +838,7 @@
                                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active">Delayed</button>
                                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">Paused</button>
                                         </div>
-                                        <div class="ui-tab-content set-absolute set-h scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content ui-set-absolute ui-set-h scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
                                             <div class="ui-list-group ui-margin-15-h">
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
@@ -904,7 +904,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="ui-tab-content set-absolute set-h scroll-v" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content ui-set-absolute ui-set-h scroll-v" style="top: 62px; bottom: 15px;">
                                             <div class="ui-list-group ui-margin-15-h">
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
@@ -1055,7 +1055,7 @@
                                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active">News</button>
                                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">Announcements</button>
                                         </div>
-                                        <div class="ui-tab-content set-absolute set-h scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content ui-set-absolute ui-set-h scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
                                             <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
                                                 <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                                 <li>
@@ -1101,7 +1101,7 @@
                                                 <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                             </ul>
                                         </div>
-                                        <div class="ui-tab-content set-absolute set-h scroll-v" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content ui-set-absolute ui-set-h scroll-v" style="top: 62px; bottom: 15px;">
                                             <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
                                                 <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                                 <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>

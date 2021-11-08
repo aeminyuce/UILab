@@ -17,7 +17,7 @@
   background-image: linear-gradient(110deg, hsl(263, 37%, 42%), hsl(242, 88%, 17%), hsl(331, 73%, 25%));
   background-image: var(--ui-login-page-holder-bg);
 }
-.login-holder > .set-absolute {
+.login-holder > .ui-set-absolute {
   z-index: 1;
 }
 .login-holder .highlight-icon {
@@ -116,7 +116,7 @@
     height: 100%;
   }
   .forms-holder,
-  .login-holder > .set-absolute {
+  .login-holder > .ui-set-absolute {
     padding: 10%;
   }
 }
@@ -125,7 +125,7 @@
     min-height: 320px;
   }
   .forms-holder,
-  .login-holder > .set-absolute {
+  .login-holder > .ui-set-absolute {
     padding: 30px;
   }
   .login-forms-container {

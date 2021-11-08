@@ -161,7 +161,7 @@
                             <a class="ui-img ui-has-info ui-show-info" href="img/image_03.jpg">
                                 <img src="img/image_03.jpg" alt="">
                                 <span class="font-readable">
-                                    <span class="scroll-v ui-margin-15 set-absolute set-all">
+                                    <span class="scroll-v ui-margin-15 ui-set-absolute ui-set-all">
                                         <span class="x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                         <br><br>
                                         <span class="ui-color-white-25 large">

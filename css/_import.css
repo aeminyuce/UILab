@@ -1847,50 +1847,50 @@ html .ui-row {
 .no-float {
   float: none !important;
 }
-.set-fixed {
+.ui-set-fixed {
   position: fixed !important;
 }
-.set-relative {
+.ui-set-relative {
   position: relative !important;
 }
-.set-absolute {
+.ui-set-absolute {
   position: absolute !important;
 }
-.set-t {
+.ui-set-t {
   top: 0;
 }
-.set-r {
+.ui-set-r {
   right: 0;
 }
-.set-b {
+.ui-set-b {
   bottom: 0;
 }
-.set-l {
+.ui-set-l {
   left: 0;
 }
-.set-h {
-  right: 0;
-  left: 0;
-}
-.set-v {
-  top: 0;
-  bottom: 0;
-}
-.set-all {
-  top: 0;
-  bottom: 0;
+.ui-set-h {
   right: 0;
   left: 0;
 }
-.set-cx {
+.ui-set-v {
+  top: 0;
+  bottom: 0;
+}
+.ui-set-all {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.ui-set-cx {
   left: 50%;
   transform: translateX(-50%);
 }
-.set-cy {
+.ui-set-cy {
   top: 50%;
   transform: translateY(-50%);
 }
-.set-c {
+.ui-set-c {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   top: 50%;
@@ -3600,20 +3600,20 @@ h5 > small,
 h6 > small {
   font-size: 14px !important;
 }
-h1 .ui-icon:not(.right),
-h2 .ui-icon:not(.right),
-h3 .ui-icon:not(.right),
-h4 .ui-icon:not(.right),
-h5 .ui-icon:not(.right),
-h6 .ui-icon:not(.right) {
+h1 .ui-icon:not(.ui-right),
+h2 .ui-icon:not(.ui-right),
+h3 .ui-icon:not(.ui-right),
+h4 .ui-icon:not(.ui-right),
+h5 .ui-icon:not(.ui-right),
+h6 .ui-icon:not(.ui-right) {
   margin-right: 5px;
 }
-h1 .ui-icon-lg:not(.right),
-h2 .ui-icon-lg:not(.right),
-h3 .ui-icon-lg:not(.right),
-h4 .ui-icon-lg:not(.right),
-h5 .ui-icon-lg:not(.right),
-h6 .ui-icon-lg:not(.right) {
+h1 .ui-icon-lg:not(.ui-right),
+h2 .ui-icon-lg:not(.ui-right),
+h3 .ui-icon-lg:not(.ui-right),
+h4 .ui-icon-lg:not(.ui-right),
+h5 .ui-icon-lg:not(.ui-right),
+h6 .ui-icon-lg:not(.ui-right) {
   margin-right: 10px;
 }
 h1,
@@ -3697,7 +3697,7 @@ blockquote:not(:last-child) {
   margin-bottom: 20px;
 }
 blockquote.align-r,
-blockquote.right {
+blockquote.ui-right {
   text-align: right;
   border-right: 5px solid hsl(0, 0%, 93%);
   border-left: 0;
@@ -4451,7 +4451,7 @@ dt + dd:not(:last-child) {
   stroke-width: 36px !important;
   margin-top: -2px;
 }
-.ui-tabs .ui-tab:not(.ui-btn-xs) .ui-toggle-icon.right {
+.ui-tabs .ui-tab:not(.ui-btn-xs) .ui-toggle-icon.ui-right {
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -4461,7 +4461,7 @@ dt + dd:not(:last-child) {
   stroke-width: 38px !important;
   margin-top: -2px;
 }
-.ui-tabs .ui-tab.ui-btn-xs .ui-toggle-icon.right {
+.ui-tabs .ui-tab.ui-btn-xs .ui-toggle-icon.ui-right {
   margin-top: 3px;
   margin-bottom: 3px;
 }
@@ -4526,7 +4526,7 @@ dt + dd:not(:last-child) {
   stroke-width: 38px !important;
   margin-top: -2px;
 }
-.ui-dropdown > .ui-btn:not(.ui-btn-xs) .ui-toggle-icon.right {
+.ui-dropdown > .ui-btn:not(.ui-btn-xs) .ui-toggle-icon.ui-right {
   margin-top: 4px;
   margin-bottom: 4px;
 }
@@ -4536,7 +4536,7 @@ dt + dd:not(:last-child) {
   stroke-width: 38px !important;
   margin-top: -2px;
 }
-.ui-dropdown > .ui-btn.ui-btn-xs .ui-toggle-icon.right {
+.ui-dropdown > .ui-btn.ui-btn-xs .ui-toggle-icon.ui-right {
   margin-top: 2px;
   margin-bottom: 2px;
 }
