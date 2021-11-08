@@ -1931,16 +1931,16 @@ html .ui-row {
   vertical-align: middle !important;
   display: inline-block !important;
 }
-.scroll {
+.ui-scroll {
   overflow: auto !important;
 }
-.scroll-v {
+.ui-scroll-v {
   overflow-y: auto !important;
 }
-.scroll-h {
+.ui-scroll-h {
   overflow-x: auto !important;
 }
-.no-scroll {
+.ui-no-scroll {
   overflow: hidden !important;
 }
 [class*="round-"],
@@ -2092,9 +2092,9 @@ html .ui-row {
 .ui-desktop .hover-l-more-2nd > * > *:hover {
   transform: translateX(-5%);
 }
-.ui-mobile .scroll,
-.ui-mobile .scroll-v,
-.ui-mobile .scroll-h {
+.ui-mobile .ui-scroll,
+.ui-mobile .ui-scroll-v,
+.ui-mobile .ui-scroll-h {
   -webkit-overflow-scrolling: touch;
 }
 .list-custom,
@@ -3747,8 +3747,8 @@ pre:not(:last-child),
 xmp:not(:last-child) {
   margin-bottom: 20px;
 }
-pre.scroll-v,
-xmp.scroll-v {
+pre.ui-scroll-v,
+xmp.ui-scroll-v {
   max-height: 350px;
 }
 hr.hr {
@@ -7963,9 +7963,9 @@ button.ui-dialog-custom:focus {
   width: 100%;
   height: auto;
 }
-.ui-carousel .scroll > *,
-.ui-carousel .scroll-v > *,
-.ui-carousel .scroll-h > * {
+.ui-carousel .ui-scroll > *,
+.ui-carousel .ui-scroll-v > *,
+.ui-carousel .ui-scroll-h > * {
   transform: translateZ(0);
 }
 .ui-carousel-nav {

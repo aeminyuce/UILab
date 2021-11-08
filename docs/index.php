@@ -311,7 +311,7 @@
             </button>
             <img src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">
         </div>
-        <div class="ui-mobile-menu-content ui-no-padding ui-theme-gray ui-fill-light-100 scroll-v"></div>
+        <div class="ui-mobile-menu-content ui-no-padding ui-theme-gray ui-fill-light-100 ui-scroll-v"></div>
     </div>
 <?php
     }

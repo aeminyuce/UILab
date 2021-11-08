@@ -19,7 +19,7 @@
                     </button>
                 </div>
 
-                <div class="ui-tabs align-l ui-icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn scroll-v ui-scrollbar-faded ui-add-mobile-menu-l" data-ui-classes="ui-current">
+                <div class="ui-tabs align-l ui-icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn ui-scroll-v ui-scrollbar-faded ui-add-mobile-menu-l" data-ui-classes="ui-current">
 
                     <div class="ui-padding-10">
                         <div class="small ui-margin-10-b ui-color-white-25">Personal Activity</div>
@@ -266,7 +266,7 @@
                         <button class="ui-btn ui-color-black-25 ui-btn-square ui-btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Personal Logs">
                             <svg class="ui-icon"><use href="#grid-column"/></svg>
                         </button>
-                        <div class="ui-dropdown-menu round shadow-lg no-scroll">
+                        <div class="ui-dropdown-menu round shadow-lg ui-no-scroll">
                             <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
                                 <div class="ui-btn-holder ui-color-black-25 align-c ui-border-b ui-ease-1st-btn">
@@ -277,7 +277,7 @@
                                         <svg class="ui-icon"><use href="#history"/></svg>
                                     </button>
                                 </div>
-                                <div class="ui-tab-content align-l scroll-v ui-open ui-open-ease" style="max-height: 420px;">
+                                <div class="ui-tab-content align-l ui-scroll-v ui-open ui-open-ease" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
                                         <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                         <li>
@@ -322,7 +322,7 @@
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                     </ul>
                                 </div>
-                                <div class="ui-tab-content align-l scroll-v" style="max-height: 420px;">
+                                <div class="ui-tab-content align-l ui-scroll-v" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -342,7 +342,7 @@
                         <button class="ui-btn ui-color-black-25 ui-btn-square ui-btn-ghost circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Notification Center">
                             <svg class="ui-icon"><use href="#bars-right"/></svg>
                         </button>
-                        <div class="ui-dropdown-menu round shadow-lg no-scroll">
+                        <div class="ui-dropdown-menu round shadow-lg ui-no-scroll">
                             <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
                                 <div class="ui-btn-holder ui-color-black-25 align-c ui-border-b ui-ease-1st-btn">
@@ -356,7 +356,7 @@
                                         <svg class="ui-icon"><use href="#hourglass-start"/></svg>
                                     </button>
                                 </div>
-                                <div class="ui-tab-content align-l scroll-v ui-open ui-open-ease" style="max-height: 420px;">
+                                <div class="ui-tab-content align-l ui-scroll-v ui-open ui-open-ease" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -368,7 +368,7 @@
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                     </ul>
                                 </div>
-                                <div class="ui-tab-content align-l scroll-v" style="max-height: 420px;">
+                                <div class="ui-tab-content align-l ui-scroll-v" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -380,7 +380,7 @@
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                     </ul>
                                 </div>
-                                <div class="ui-tab-content align-l scroll-v" style="max-height: 420px;">
+                                <div class="ui-tab-content align-l ui-scroll-v" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -838,7 +838,7 @@
                                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active">Delayed</button>
                                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">Paused</button>
                                         </div>
-                                        <div class="ui-tab-content ui-set-absolute ui-set-h scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
                                             <div class="ui-list-group ui-margin-15-h">
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
@@ -904,7 +904,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="ui-tab-content ui-set-absolute ui-set-h scroll-v" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v" style="top: 62px; bottom: 15px;">
                                             <div class="ui-list-group ui-margin-15-h">
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
@@ -1055,7 +1055,7 @@
                                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active">News</button>
                                             <button class="ui-tab ui-btn ui-btn-ghost round-t ui-border-b">Announcements</button>
                                         </div>
-                                        <div class="ui-tab-content ui-set-absolute ui-set-h scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
                                             <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
                                                 <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                                 <li>
@@ -1101,7 +1101,7 @@
                                                 <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                             </ul>
                                         </div>
-                                        <div class="ui-tab-content ui-set-absolute ui-set-h scroll-v" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v" style="top: 62px; bottom: 15px;">
                                             <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
                                                 <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                                 <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
@@ -1762,7 +1762,7 @@
         </button>
         <img src="img/logo-udashboard.png" height="66" alt="">
     </div>
-    <div class="ui-mobile-menu-content ui-no-padding scroll-v ui-scrollbar-faded"></div>
+    <div class="ui-mobile-menu-content ui-no-padding ui-scroll-v ui-scrollbar-faded"></div>
 </div>
 
 <!-- modal search -->

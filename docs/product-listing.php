@@ -486,5 +486,5 @@
         </button>
         Filters
     </div>
-    <div class="ui-mobile-menu-content ui-padding-10 scroll-v"></div>
+    <div class="ui-mobile-menu-content ui-padding-10 ui-scroll-v"></div>
 </div>

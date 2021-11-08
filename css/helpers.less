@@ -92,14 +92,13 @@
 
 }
 
-.scroll {
+.ui-scroll {
     overflow: auto !important;
 
     &-v { overflow-y: auto !important; }
     &-h { overflow-x: auto !important; }
-
 }
-.no-scroll { overflow: hidden !important; }
+.ui-no-scroll { overflow: hidden !important; }
 
 [class*="round-"],[class*="circle-"] { background-clip: padding-box; }
 
@@ -232,7 +231,9 @@
 .ui-mobile {
     .ui-visible-desktop { &:extend(.ui-hidden); }
     .ui-hidden-mobile { &:extend(.ui-hidden); }
-    .scroll,.scroll-v,.scroll-h { -webkit-overflow-scrolling: touch; }
+    .ui-scroll {
+        &,&-v,&-h { -webkit-overflow-scrolling: touch; }
+    }
 }
 
 .list-custom,.list-inline {

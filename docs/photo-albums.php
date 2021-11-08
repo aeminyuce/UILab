@@ -57,7 +57,7 @@
                                     <a class="ui-img ui-has-info" href="img/image_03.jpg">
                                         <img src="img/image_03.jpg" alt="">
                                         <span class="font-readable">
-                                            <span class="scroll-v ui-margin-30 ui-set-absolute ui-set-all">
+                                            <span class="ui-scroll-v ui-margin-30 ui-set-absolute ui-set-all">
                                                 <span class="x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                                 <br><br>
                                                 <span class="ui-color-white-25 large">
@@ -153,7 +153,7 @@
                                     <a class="ui-img ui-has-info" href="img/image_06.jpg">
                                         <img src="img/image_06.jpg" alt="">
                                         <span class="font-readable">
-                                            <span class="scroll-v ui-margin-30 ui-set-absolute ui-set-all">
+                                            <span class="ui-scroll-v ui-margin-30 ui-set-absolute ui-set-all">
                                                 <span class="x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                                 <br><br>
                                                 <span class="ui-color-white-25 large">

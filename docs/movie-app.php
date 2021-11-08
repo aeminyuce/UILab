@@ -4,7 +4,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-col-static ui-no-fluid">
         <div class="ui-col-200 ui-set-relative ui-hidden-md">
-            <div class="sidebar ui-col-200 ui-full-h ui-set-fixed ui-set-l ui-padding-5 ui-fill-dark-100 ui-hidden-md scroll-v ui-scrollbar-faded">
+            <div class="sidebar ui-col-200 ui-full-h ui-set-fixed ui-set-l ui-padding-5 ui-fill-dark-100 ui-hidden-md ui-scroll-v ui-scrollbar-faded">
 
                 <div class="align-l ui-padding-10 ui-icons-no-opacity ui-icons-margin-10-r form-lg ui-add-mobile-menu-l">
                     <h5 class="ui-color-white-50 ui-padding-15 ui-margin-5-b">LIBRARY</h5>
@@ -408,7 +408,7 @@
         </button>
         Categories
     </div>
-    <div class="ui-mobile-menu-content ui-no-padding scroll-v"></div>
+    <div class="ui-mobile-menu-content ui-no-padding ui-scroll-v"></div>
 </div>
 
 <!-- modal search -->

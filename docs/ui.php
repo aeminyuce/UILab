@@ -151,7 +151,7 @@
                     <span class="sp-30"></span>
 
                     <b class="ui-margin-5-b ui-block">ui.ajax() is a simple javascript to making XHR requests:</b>
-                    <pre class="round scroll-v">ajax({
+                    <pre class="round ui-scroll-v">ajax({
 
     type : 'GET',
     url : 'yourfile.php',

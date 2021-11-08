@@ -184,7 +184,7 @@ ui.photoGallery = {
             }
 
             if (ui.userAgents.mobile) {
-                pageYPos = window.pageYOffset; // get current scroll-y position
+                pageYPos = window.pageYOffset; // get current y scroll position
             }
 
             // get images and titles

@@ -41,9 +41,9 @@ ui.carousel = {
     nameGallerySelected: 'ui-selected',
 
     // outer classnames
-    nameScroll: 'scroll',
-    nameScrollV: 'scroll-v',
-    nameScrollH: 'scroll-h',
+    nameScroll: 'ui-scroll',
+    nameScrollV: 'ui-scroll-v',
+    nameScrollH: 'ui-scroll-h',
 
     nameEaseFast: 'ui-ease-fast',
     nameEaseSlow: 'ui-ease-slow',
