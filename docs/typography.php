@@ -23,7 +23,7 @@
                     <span class="ui-color-black-25">ui-color-black-25</span>
                     <span class="ui-color-black-50">ui-color-black-50</span>
                     <span class="ui-color-black">ui-color-black</span>
-                    <span class="clearfix"></span>
+                    <span class="ui-clear"></span>
                     <span class="ui-color-green">ui-color-green</span>
                     <span class="ui-color-yellow">ui-color-yellow</span>
                     <span class="ui-color-orange">ui-color-orange</span>

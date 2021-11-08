@@ -8,22 +8,22 @@
                 <div class="ui-countdown ui-row ui-row-gap-sm-h ui-no-fluid">
                     <div class="ui-col-3">
                         <b class="ui-d x-large">02</b>
-                        <span class="clearfix ui-visible-xs"></span>
+                        <span class="ui-clear ui-visible-xs"></span>
                         days
                     </div>
                     <div class="ui-col-3">
                         <b class="ui-h x-large">00</b>
-                        <span class="clearfix ui-visible-xs"></span>
+                        <span class="ui-clear ui-visible-xs"></span>
                         hours
                     </div>
                     <div class="ui-col-3">
                         <b class="ui-m x-large">00</b>
-                        <span class="clearfix ui-visible-xs"></span>
+                        <span class="ui-clear ui-visible-xs"></span>
                         minutes
                     </div>
                     <div class="ui-col-3">
                         <b class="ui-s x-large">00</b>
-                        <span class="clearfix ui-visible-xs"></span>
+                        <span class="ui-clear ui-visible-xs"></span>
                         seconds
                     </div>
                 </div>

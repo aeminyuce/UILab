@@ -1817,7 +1817,7 @@ html .ui-row {
   direction: rtl;
 }
 .ui-full-w,
-.clearfix,
+.ui-clear,
 .img-fluid {
   width: 100% !important;
 }
@@ -1901,7 +1901,7 @@ html .ui-row {
 .ui-cursor-pointer {
   cursor: pointer !important;
 }
-.clearfix {
+.ui-clear {
   clear: both !important;
   display: block;
 }
@@ -2214,7 +2214,7 @@ html .ui-row {
   .no-float-md {
     float: none !important;
   }
-  .clearfix-md {
+  .ui-clear-md {
     clear: both !important;
     display: block;
   }
@@ -2257,8 +2257,8 @@ html .ui-row {
   .no-float-sm {
     float: none !important;
   }
-  .clearfix-md,
-  .clearfix-sm {
+  .ui-clear-md,
+  .ui-clear-sm {
     clear: both !important;
     display: block;
   }
@@ -2308,9 +2308,9 @@ html .ui-row {
   .no-float-xs {
     float: none !important;
   }
-  .clearfix-md,
-  .clearfix-sm,
-  .clearfix-xs {
+  .ui-clear-md,
+  .ui-clear-sm,
+  .ui-clear-xs {
     clear: both !important;
     display: block;
   }
@@ -2361,7 +2361,7 @@ html .ui-row {
   .ui-visible-lg {
     display: none !important;
   }
-  .clearfix-lg {
+  .ui-clear-lg {
     clear: both !important;
     display: block;
   }

@@ -114,7 +114,7 @@
                                         <span class="ui-color-black-25">Yes, I want to receive emails from this platform.</span>
                                     </label>
 
-                                    <span class="clearfix"></span>
+                                    <span class="ui-clear"></span>
 
                                     <label class="custom">
                                         <span class="check-custom round ui-border-dual ui-ease-form">
