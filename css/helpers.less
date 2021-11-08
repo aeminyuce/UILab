@@ -224,18 +224,18 @@
     }
 }
 
-.list-custom,.list-inline {
+.ui-list-custom,.ui-list-inline {
     list-style: none;
 
     ul,ol { list-style: none; padding: 0; margin: 0; }
 }
 
-.list-unstyled {
-    &:extend(.list-custom);
+.ui-list-unstyled {
+    &:extend(.ui-list-custom);
     &:not(:last-child) { margin-bottom: @highlight-space; }
 }
 
-.list-inline {
+.ui-list-inline {
     ul,ol,li { vertical-align: middle; display: inline-block; }
 }
 

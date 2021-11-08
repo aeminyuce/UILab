@@ -26,19 +26,19 @@ each(@increases, {
 });
 
 [class*="ui-list-spacer-"] {
-    &:not([class*="ui-list-column-"]):not(.list-inline) {
+    &:not([class*="ui-list-column-"]):not(.ui-list-inline) {
         li:last-child { margin-bottom: 0 !important; }
     }
 }
 
 .ui-list-gap {
-    &-less.list-inline {
+    &-less.ui-list-inline {
         li:not(:last-child) { padding-right: @list-gap-less; }
     }
-    &.list-inline {
+    &.ui-list-inline {
         li:not(:last-child) { padding-right: @list-gap; }
     }
-    &-more.list-inline {
+    &-more.ui-list-inline {
         li:not(:last-child) { padding-right: @list-gap-more; }
     }
 }

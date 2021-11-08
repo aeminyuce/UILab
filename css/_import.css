@@ -2073,25 +2073,25 @@ html .ui-row {
 .ui-mobile .ui-scroll-h {
   -webkit-overflow-scrolling: touch;
 }
-.list-custom,
-.list-inline,
-.list-unstyled {
+.ui-list-custom,
+.ui-list-inline,
+.ui-list-unstyled {
   list-style: none;
 }
-.list-custom ul,
-.list-inline ul,
-.list-custom ol,
-.list-inline ol {
+.ui-list-custom ul,
+.ui-list-inline ul,
+.ui-list-custom ol,
+.ui-list-inline ol {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.list-unstyled:not(:last-child) {
+.ui-list-unstyled:not(:last-child) {
   margin-bottom: 20px;
 }
-.list-inline ul,
-.list-inline ol,
-.list-inline li {
+.ui-list-inline ul,
+.ui-list-inline ol,
+.ui-list-inline li {
   vertical-align: middle;
   display: inline-block;
 }
@@ -3834,16 +3834,16 @@ hr.hr {
 .ui-list-spacer-30 ol {
   margin-top: 30px;
 }
-[class*="ui-list-spacer-"]:not([class*="ui-list-column-"]):not(.list-inline) li:last-child {
+[class*="ui-list-spacer-"]:not([class*="ui-list-column-"]):not(.ui-list-inline) li:last-child {
   margin-bottom: 0 !important;
 }
-.ui-list-gap-less.list-inline li:not(:last-child) {
+.ui-list-gap-less.ui-list-inline li:not(:last-child) {
   padding-right: 2px;
 }
-.ui-list-gap.list-inline li:not(:last-child) {
+.ui-list-gap.ui-list-inline li:not(:last-child) {
   padding-right: 10px;
 }
-.ui-list-gap-more.list-inline li:not(:last-child) {
+.ui-list-gap-more.ui-list-inline li:not(:last-child) {
   padding-right: 30px;
 }
 dl:not(:last-child) {

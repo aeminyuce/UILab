@@ -8,7 +8,7 @@
                         <svg class="ui-icon ui-right"><use href="#plus"/></svg>
                     </a>
                     <span class="sp-30"></span>
-                    <ul class="list-unstyled ui-hover-r-more-2nd inline-ui-block-2nd large ui-list-spacer-30 ui-padding-10 ui-ease-2nd-layout">
+                    <ul class="ui-list-unstyled ui-hover-r-more-2nd inline-ui-block-2nd large ui-list-spacer-30 ui-padding-10 ui-ease-2nd-layout">
                         <li><a class="ui-current" href="#">Summer Holiday</a></li>
                         <li><a href="#">Autumn Comes</a></li>
                         <li><a href="#">Travelling</a></li>
@@ -17,7 +17,7 @@
                         <li><a href="#">Hobbies</a></li>
                     </ul>
                     <span class="sp-30"></span>
-                    <ul class="list-unstyled ui-hover-r-more-2nd inline-ui-block-2nd ui-list-spacer-15 large ui-color-black-50 adding-10 ui-icons-sm ui-icons-margin-10-r ui-ease-2nd-layout">
+                    <ul class="ui-list-unstyled ui-hover-r-more-2nd inline-ui-block-2nd ui-list-spacer-15 large ui-color-black-50 adding-10 ui-icons-sm ui-icons-margin-10-r ui-ease-2nd-layout">
                         <li>
                             <a href="#">
                                 <svg class="ui-icon"><use href="#marker"/></svg>

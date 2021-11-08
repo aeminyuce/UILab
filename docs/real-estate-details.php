@@ -78,7 +78,7 @@
                         <div class="ui-padding-30 ui-border-t">
                             <h4 class="ui-margin-15-b">Power Saving Statistics</h4>
                             <svg class="ui-icon ui-icon-xl ui-left ui-margin-5-t ui-margin-10-r"><use href="#bolt"/></svg>
-                            <ul class="list-unstyled ui-padding-2-t">
+                            <ul class="ui-list-unstyled ui-padding-2-t">
                                 <li><b>Power per Month:</b> 4,86 kWp</li>
                                 <li><b>Yearly Output:</b> 4900 kWp</li>
                             </ul>
@@ -154,7 +154,7 @@
 
                 <div class="ui-card align-c ui-round ui-shadow-lg ui-theme-sub">
                     <div class="ui-card-side ui-padding-10-v ui-fill-dark-300">
-                        <ul class="list-inline ui-countdown ui-no-user-select">
+                        <ul class="ui-list-inline ui-countdown ui-no-user-select">
                             <li class="ui-padding-10-v ui-padding-15-h ui-hidden-xs">
                                 <svg class="ui-icon ui-icon-xxl"><use href="#history"/></svg>
                             </li>
@@ -172,7 +172,7 @@
                 </div>
 
                 <div class="ui-card align-c ui-round ui-shadow-lg ui-theme-sub">
-                    <ul class="list-inline ui-list-gap ui-padding-30 ui-padding-15-b ui-icons-lg ui-icons-margin-5-r ui-theme-gray inline-ui-block-1st">
+                    <ul class="ui-list-inline ui-list-gap ui-padding-30 ui-padding-15-b ui-icons-lg ui-icons-margin-5-r ui-theme-gray inline-ui-block-1st">
                         <li>
                             <svg class="ui-icon"><use href="#floor-plan"/></svg>
                             <span class="large">7+1</span>
@@ -254,7 +254,7 @@
 
                 <div class="ui-card ui-padding-30 ui-round ui-shadow-lg">
                     <h4>Other Details</h4>
-                    <ul class="list-unstyled ui-list-spacer-15 ui-icons-lg ui-icons-margin-5-r">
+                    <ul class="ui-list-unstyled ui-list-spacer-15 ui-icons-lg ui-icons-margin-5-r">
                         <li>
                             <span class="ui-color-black-25 ui-block ui-margin-5-b">House Type</span>
                             <svg class="ui-icon ui-current"><use href="#house"/></svg>

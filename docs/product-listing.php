@@ -23,11 +23,11 @@
                         <span class="sp-25"></span>
 
                         <h5 class="ui-margin-15-b ui-color-black-50">CATEGORIES</h5>
-                        <ul class="list-unstyled ui-list-spacer-10">
+                        <ul class="ui-list-unstyled ui-list-spacer-10">
                             <li><a href="#">Headphones</a></li>
                             <li>
                                 <a href="#"><b>Over-Ear Headphones</b></a>
-                                <ul class="list-unstyled hoverline-2nd ui-padding-15-l">
+                                <ul class="ui-list-unstyled hoverline-2nd ui-padding-15-l">
                                     <li><a href="#">Sony</a></li>
                                     <li><a href="#">Logitech</a></li>
                                     <li><a href="#">JBL</a></li>
@@ -207,7 +207,7 @@
                                 </div>
                                 <svg class="ui-icon ui-icon-sm ui-margin-5-r ui-margin-2-b"><use href="#chart-line"/></svg>
                                 <span class="large">Current prices <b>12% lower</b> than, average prices!</span>
-                                <ul class="list-unstyled ui-color-black-25 ui-margin-15-t inline-ui-block-2nd">
+                                <ul class="ui-list-unstyled ui-color-black-25 ui-margin-15-t inline-ui-block-2nd">
                                     <li>
                                         <b class="ui-circle ui-padding-5 ui-margin-4-l ui-margin-5-r" style="background: hsl(30, 100%, 63%);"></b>
                                         <span>Headphones Averages</span>
@@ -282,7 +282,7 @@
                                 <span class="ui-block">
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#truck"/></svg> Fast Delivery
                                 </span>
-                                <ul class="list-inline ui-margin-15-v ui-right">
+                                <ul class="ui-list-inline ui-margin-15-v ui-right">
                                     <li class="ui-circle ui-padding-5 ui-border-dual ui-product-red"></li>
                                     <li class="ui-circle ui-padding-5 ui-border-dual ui-product-pink"></li>
                                     <li class="ui-circle ui-padding-5 ui-border-dual ui-product-blue"></li>
@@ -318,7 +318,7 @@
                                 <span class="ui-block">
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
-                                <ul class="list-inline ui-margin-15-v ui-right">
+                                <ul class="ui-list-inline ui-margin-15-v ui-right">
                                     <li class="ui-circle ui-padding-5 ui-border-dual ui-product-pink"></li>
                                     <li class="ui-circle ui-padding-5 ui-border-dual ui-product-white"></li>
                                 </ul>
@@ -353,7 +353,7 @@
                                 <span class="ui-block">
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#truck"/></svg> Fast Delivery
                                 </span>
-                                <ul class="list-inline ui-margin-15-v ui-right">
+                                <ul class="ui-list-inline ui-margin-15-v ui-right">
                                     <li class="ui-circle ui-padding-5 ui-border-dual ui-product-blue"></li>
                                     <li class="ui-circle ui-padding-5 ui-border-dual ui-product-black"></li>
                                 </ul>
@@ -385,7 +385,7 @@
                                 <span class="ui-block">
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
-                                <ul class="list-inline ui-margin-15-v ui-right">
+                                <ul class="ui-list-inline ui-margin-15-v ui-right">
                                     <li class="ui-circle ui-padding-5 ui-border-dual ui-product-white"></li>
                                 </ul>
                                 <span class="ui-left ui-padding-15-v ui-icons-xs">
@@ -416,7 +416,7 @@
                                 <span class="ui-block">
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
-                                <ul class="list-inline ui-margin-15-v ui-right">
+                                <ul class="ui-list-inline ui-margin-15-v ui-right">
                                     <li class="ui-circle ui-padding-5 ui-border-dual ui-product-black"></li>
                                 </ul>
                                 <span class="ui-left ui-padding-15-v ui-icons-xs">
@@ -450,7 +450,7 @@
                                 <span class="ui-block">
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
-                                <ul class="list-inline ui-margin-15-v ui-right">
+                                <ul class="ui-list-inline ui-margin-15-v ui-right">
                                     <li class="ui-circle ui-padding-5 ui-border-dual ui-product-pink"></li>
                                     <li class="ui-circle ui-padding-5 ui-border-dual ui-product-white"></li>
                                 </ul>

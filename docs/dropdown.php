@@ -283,7 +283,7 @@
                             <ul class="ui-dropdown-menu ui-list-column-2 ui-round ui-shadow-lg">
                                 <li class="holder">
                                     <b class="ui-padding-10 ui-block ui-border-b ui-border-light">Title</b>
-                                    <ul class="list-unstyled ui-list-spacer-10 hoverline-2nd ui-padding-10">
+                                    <ul class="ui-list-unstyled ui-list-spacer-10 hoverline-2nd ui-padding-10">
                                         <li><a href="#">Dropdown Item</a></li>
                                         <li><a href="#">Dropdown Item</a></li>
                                         <li><a href="#">Dropdown Item</a></li>
@@ -293,7 +293,7 @@
                                 </li>
                                 <li class="holder">
                                     <b class="ui-padding-10 ui-block ui-border-b ui-border-light">Title</b>
-                                    <ul class="list-unstyled ui-list-spacer-10 hoverline-2nd ui-padding-10">
+                                    <ul class="ui-list-unstyled ui-list-spacer-10 hoverline-2nd ui-padding-10">
                                         <li><a href="#">Dropdown Item</a></li>
                                         <li><a href="#">Dropdown Item</a></li>
                                         <li><a href="#">Dropdown Item</a></li>

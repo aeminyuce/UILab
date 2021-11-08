@@ -5,7 +5,7 @@
 
                 <h3>Breadcrumbs Examples</h3>
                 <div class="ui-breadcrumbs ui-color-black-25">
-                    <ul class="list-inline">
+                    <ul class="ui-list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="hoverline" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">Home</span>
@@ -27,7 +27,7 @@
                 <span class="sp-15"></span>
 
                 <div class="ui-breadcrumbs">
-                    <ul class="list-inline">
+                    <ul class="ui-list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-opacity ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
@@ -51,7 +51,7 @@
                 <span class="sp-15"></span>
 
                 <div class="ui-breadcrumbs ui-theme-sub">
-                    <ul class="list-inline">
+                    <ul class="ui-list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-opacity ui-current ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
@@ -75,7 +75,7 @@
                 <span class="sp-15"></span>
 
                 <div class="ui-breadcrumbs ui-icons-no-opacity">
-                    <ul class="list-inline">
+                    <ul class="ui-list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn ui-round ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
@@ -101,7 +101,7 @@
                 <span class="sp-15"></span>
 
                 <div class="ui-breadcrumbs ui-theme-sub">
-                    <ul class="list-inline">
+                    <ul class="ui-list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
@@ -127,7 +127,7 @@
                 <span class="sp-15"></span>
 
                 <div class="ui-breadcrumbs ui-no-separated ui-icons-no-opacity">
-                    <ul class="list-inline">
+                    <ul class="ui-list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn ui-round ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
@@ -153,7 +153,7 @@
                 <span class="sp-15"></span>
 
                 <div class="ui-breadcrumbs ui-no-separated ui-theme-base">
-                    <ul class="list-inline">
+                    <ul class="ui-list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
@@ -204,7 +204,7 @@
                 <span class="sp-15"></span>
 
                 <div class="ui-breadcrumbs ui-no-separated ui-theme-sub">
-                    <ul class="list-inline">
+                    <ul class="ui-list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
