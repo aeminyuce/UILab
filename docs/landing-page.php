@@ -371,7 +371,7 @@
                                 <span class="xx-large block">Ready to modern agriculture.</span>
                                 <b class="ui-color-black-25 ui-margin-15-b block">Company</b>
 
-                                <img class="img-fluid ui-margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
@@ -395,7 +395,7 @@
                                 <span class="xx-large block">Farmers happy now.</span>
                                 <b class="ui-color-black-25 ui-margin-15-b block">Company</b>
 
-                                <img class="img-fluid ui-margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
@@ -419,7 +419,7 @@
                                 <span class="xx-large block">New market prospects.</span>
                                 <b class="ui-color-black-25 ui-margin-15-b block">Company</b>
 
-                                <img class="img-fluid ui-margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
@@ -443,7 +443,7 @@
                                 <span class="xx-large block">About product breeding</span>
                                 <b class="ui-color-black-25 ui-margin-15-b block">Company</b>
 
-                                <img class="img-fluid ui-margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
@@ -476,7 +476,7 @@
                                 <span class="xx-large block">Farmers happy now.</span>
                                 <b class="ui-color-black-25 ui-margin-15-b block">Social</b>
 
-                                <img class="img-fluid ui-margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
@@ -500,7 +500,7 @@
                                 <span class="xx-large block">New market prospects.</span>
                                 <b class="ui-color-black-25 ui-margin-15-b block">Social</b>
 
-                                <img class="img-fluid ui-margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
@@ -524,7 +524,7 @@
                                 <span class="xx-large block">About product breeding</span>
                                 <b class="ui-color-black-25 ui-margin-15-b block">Social</b>
 
-                                <img class="img-fluid ui-margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
@@ -548,7 +548,7 @@
                                 <span class="xx-large block">Ready to modern agriculture.</span>
                                 <b class="ui-color-black-25 ui-margin-15-b block">Social</b>
 
-                                <img class="img-fluid ui-margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
@@ -581,7 +581,7 @@
                                 <span class="xx-large block">Farmers happy now.</span>
                                 <b class="ui-color-black-25 ui-margin-15-b block">Customers</b>
 
-                                <img class="img-fluid ui-margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
@@ -605,7 +605,7 @@
                                 <span class="xx-large block">Ready to modern agriculture.</span>
                                 <b class="ui-color-black-25 ui-margin-15-b block">Customers</b>
 
-                                <img class="img-fluid ui-margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
@@ -629,7 +629,7 @@
                                 <span class="xx-large block">About product breeding</span>
                                 <b class="ui-color-black-25 ui-margin-15-b block">Customers</b>
 
-                                <img class="img-fluid ui-margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
@@ -653,7 +653,7 @@
                                 <span class="xx-large block">New market prospects.</span>
                                 <b class="ui-color-black-25 ui-margin-15-b block">Customers</b>
 
-                                <img class="img-fluid ui-margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-margin-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 font-readable">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 

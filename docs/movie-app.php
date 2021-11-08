@@ -129,7 +129,7 @@
                                         <button class="ui-btn ui-full-w ui-full-h ui-set-absolute opacity-more ui-ease-layout" onclick="ui.modal.open({source: 'https://www.imdb.com/videoembed/vi4235180569', size: '722x300', type: 'iframe'});">
                                             <svg class="ui-icon ui-icon-xxl ui-icon-default ui-color-white ui-set-absolute ui-set-c"><use href="#video"/></svg>
                                         </button>
-                                        <img class="img-fluid round shadow-lg" src="img/video-poster.jpg" alt="">
+                                        <img class="ui-img-fluid round shadow-lg" src="img/video-poster.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="ui-row">
@@ -159,7 +159,7 @@
                     <div class="ui-carousel-slider block-2nd hover-scale-2nd ui-ease-layout ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_01.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_01.jpg" alt="">
                                 <b class="large">Captain Marvel</b>
                                 <span class="ui-color-black-50 ui-margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
@@ -170,7 +170,7 @@
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_02.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_02.jpg" alt="">
                                 <b class="large">Avengers: Endgame</b>
                                 <span class="ui-color-black-50 ui-margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
@@ -181,7 +181,7 @@
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_03.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_03.jpg" alt="">
                                 <b class="large">Captain America</b>
                                 <span class="ui-color-black-50 ui-margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
@@ -192,7 +192,7 @@
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_04.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_04.jpg" alt="">
                                 <b class="large">Ant-Man</b>
                                 <span class="ui-color-black-50 ui-margin-5-b block">2015 &nbsp; Action, Comedy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
@@ -203,7 +203,7 @@
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_05.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_05.jpg" alt="">
                                 <b class="large">Venom</b>
                                 <span class="ui-color-black-50 ui-margin-5-b block">2018 &nbsp; Action, Thriller</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
@@ -214,7 +214,7 @@
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_06.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_06.jpg" alt="">
                                 <b class="large">Justice League</b>
                                 <span class="ui-color-black-50 ui-margin-5-b block">2017 &nbsp; Action, Fantasy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
@@ -225,7 +225,7 @@
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_01.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_01.jpg" alt="">
                                 <b class="large">Captain Marvel</b>
                                 <span class="ui-color-black-50 ui-margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
@@ -236,7 +236,7 @@
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_02.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_02.jpg" alt="">
                                 <b class="large">Avengers: Endgame</b>
                                 <span class="ui-color-black-50 ui-margin-5-b block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
@@ -247,7 +247,7 @@
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_03.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_03.jpg" alt="">
                                 <b class="large">Captain America</b>
                                 <span class="ui-color-black-50 ui-margin-5-b block">2014 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
@@ -258,7 +258,7 @@
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_04.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_04.jpg" alt="">
                                 <b class="large">Ant-Man</b>
                                 <span class="ui-color-black-50 ui-margin-5-b block">2015 &nbsp; Action, Comedy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
@@ -269,7 +269,7 @@
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_05.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_05.jpg" alt="">
                                 <b class="large">Venom</b>
                                 <span class="ui-color-black-50 ui-margin-5-b block">2018 &nbsp; Action, Thriller</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
@@ -280,7 +280,7 @@
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_06.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_06.jpg" alt="">
                                 <b class="large">Justice League</b>
                                 <span class="ui-color-black-50 ui-margin-5-b block">2017 &nbsp; Action, Fantasy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
@@ -311,73 +311,73 @@
                     <div class="ui-carousel-slider block-2nd hover-scale-2nd ui-ease-layout ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_category_01.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_category_01.jpg" alt="">
                                 <b class="large">Action</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_category_02.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_category_02.jpg" alt="">
                                 <b class="large">Adventure</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_category_03.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_category_03.jpg" alt="">
                                 <b class="large">Comedy</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_category_04.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_category_04.jpg" alt="">
                                 <b class="large">Sci-Fi</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_category_05.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_category_05.jpg" alt="">
                                 <b class="large">Animation</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_category_06.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_category_06.jpg" alt="">
                                 <b class="large">Horror</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_category_01.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_category_01.jpg" alt="">
                                 <b class="large">Action</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_category_02.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_category_02.jpg" alt="">
                                 <b class="large">Adventure</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_category_03.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_category_03.jpg" alt="">
                                 <b class="large">Comedy</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_category_04.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_category_04.jpg" alt="">
                                 <b class="large">Sci-Fi</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_category_05.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_category_05.jpg" alt="">
                                 <b class="large">Animation</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
-                                <img class="img-fluid round block ui-margin-15-b shadow" src="img/movie_category_06.jpg" alt="">
+                                <img class="ui-img-fluid round block ui-margin-15-b shadow" src="img/movie_category_06.jpg" alt="">
                                 <b class="large">Horror</b>
                             </a>
                         </div>

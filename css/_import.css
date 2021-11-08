@@ -1818,7 +1818,7 @@ html .ui-row {
 }
 .ui-full-w,
 .ui-clear,
-.img-fluid {
+.ui-img-fluid {
   width: 100% !important;
 }
 .ui-full-h {
@@ -1905,7 +1905,7 @@ html .ui-row {
   clear: both !important;
   display: block;
 }
-.img-fluid {
+.ui-img-fluid {
   height: auto !important;
 }
 .highlight {

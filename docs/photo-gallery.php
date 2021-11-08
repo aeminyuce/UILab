@@ -10,42 +10,42 @@
                     <div class="ui-row ui-no-fluid ui-photo-gallery ui-ease-photo-gallery">
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_01.jpg">
-                                <img class="img-fluid" src="img/image_01.jpg" alt="">
+                                <img class="ui-img-fluid" src="img/image_01.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_02.jpg">
-                                <img class="img-fluid" src="img/image_02.jpg" alt="">
+                                <img class="ui-img-fluid" src="img/image_02.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_03.jpg">
-                                <img class="img-fluid" src="img/image_03.jpg" alt="">
+                                <img class="ui-img-fluid" src="img/image_03.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_04.jpg">
-                                <img class="img-fluid" src="img/image_04.jpg" alt="">
+                                <img class="ui-img-fluid" src="img/image_04.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_05.jpg">
-                                <img class="img-fluid" src="img/image_05.jpg" alt="">
+                                <img class="ui-img-fluid" src="img/image_05.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_06.jpg">
-                                <img class="img-fluid" src="img/image_06.jpg" alt="">
+                                <img class="ui-img-fluid" src="img/image_06.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_07.jpg">
-                                <img class="img-fluid" src="img/image_07.jpg" alt="">
+                                <img class="ui-img-fluid" src="img/image_07.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
                             <a class="ui-img ui-margin-1-h round" href="img/image_08.jpg">
-                                <img class="img-fluid" src="img/image_08.jpg" alt="">
+                                <img class="ui-img-fluid" src="img/image_08.jpg" alt="">
                             </a>
                         </div>
                     </div>
@@ -58,32 +58,32 @@
                     <div class="ui-row ui-no-fluid ui-photo-gallery ui-ease-photo-gallery">
                         <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
                             <a class="ui-img ui-margin-1-h round" href="img/movie_01.jpg">
-                                <img class="img-fluid" src="img/movie_01.jpg" alt="">
+                                <img class="ui-img-fluid" src="img/movie_01.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
                             <a class="ui-img ui-margin-1-h round" href="img/movie_02.jpg">
-                                <img class="img-fluid" src="img/movie_02.jpg" alt="">
+                                <img class="ui-img-fluid" src="img/movie_02.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
                             <a class="ui-img ui-margin-1-h round" href="img/movie_03.jpg">
-                                <img class="img-fluid" src="img/movie_03.jpg" alt="">
+                                <img class="ui-img-fluid" src="img/movie_03.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
                             <a class="ui-img ui-margin-1-h round" href="img/movie_04.jpg">
-                                <img class="img-fluid" src="img/movie_04.jpg" alt="">
+                                <img class="ui-img-fluid" src="img/movie_04.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
                             <a class="ui-img ui-margin-1-h round" href="img/movie_05.jpg">
-                                <img class="img-fluid" src="img/movie_05.jpg" alt="">
+                                <img class="ui-img-fluid" src="img/movie_05.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
                             <a class="ui-img ui-margin-1-h round" href="img/movie_06.jpg">
-                                <img class="img-fluid" src="img/movie_06.jpg" alt="">
+                                <img class="ui-img-fluid" src="img/movie_06.jpg" alt="">
                             </a>
                         </div>
                     </div>
@@ -297,7 +297,7 @@
                     <div class="ui-carousel-gallery ui-card ui-padding-15 round shadow-lg">
                         <div class="ui-row">
                             <div class="ui-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 ui-sm-fluid">
-                                <img src="img/house_01.jpg" class="ui-photo-gallery-call ui-cursor-pointer img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel" data-ui-count="0" alt="">
+                                <img src="img/house_01.jpg" class="ui-photo-gallery-call ui-cursor-pointer ui-img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel" data-ui-count="0" alt="">
                                 <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
                                 <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
                             </div>
@@ -350,7 +350,7 @@
                     <div class="ui-carousel-gallery ui-card ui-padding-15 round shadow-lg">
                         <div class="ui-row">
                             <div class="ui-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 ui-sm-fluid">
-                                <img src="img/image_01.jpg" class="ui-photo-gallery-call ui-cursor-pointer img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel2" data-ui-count="0" alt="">
+                                <img src="img/image_01.jpg" class="ui-photo-gallery-call ui-cursor-pointer ui-img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel2" data-ui-count="0" alt="">
                                 <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
                                 <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
                             </div>
