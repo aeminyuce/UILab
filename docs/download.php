@@ -6,7 +6,7 @@
         <div class="ui-col-12">
             <div class="ui-padding-30-b ui-sm-no-padding ui-tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke">
 
-                <div class="ui-row ui-border-b ui-margin-15-b">
+                <div class="ui-row ui-border-b ui-margin-30-b">
 
                     <div class="ui-col-4 ui-offset-4 ui-no-padding-b">
                         <div class="ui-btn-holder form-lg ui-ease-1st-btn">
