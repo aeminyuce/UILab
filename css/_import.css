@@ -1838,13 +1838,13 @@ html .ui-row {
 .ui-right {
   float: right;
 }
-.no-user-select {
+.ui-no-user-select {
   -ms-user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
-.no-float {
+.ui-no-float {
   float: none !important;
 }
 .ui-set-fixed {
@@ -2187,7 +2187,7 @@ html .ui-row {
   .ui-hidden-lg {
     display: none !important;
   }
-  .no-float-lg {
+  .ui-no-float-lg {
     float: none !important;
   }
 }
@@ -2211,7 +2211,7 @@ html .ui-row {
     width: 100% !important;
     height: auto !important;
   }
-  .no-float-md {
+  .ui-no-float-md {
     float: none !important;
   }
   .ui-clear-md {
@@ -2253,8 +2253,8 @@ html .ui-row {
     width: 100% !important;
     height: auto !important;
   }
-  .no-float-md,
-  .no-float-sm {
+  .ui-no-float-md,
+  .ui-no-float-sm {
     float: none !important;
   }
   .ui-clear-md,
@@ -2303,9 +2303,9 @@ html .ui-row {
     width: 100% !important;
     height: auto !important;
   }
-  .no-float-md,
-  .no-float-sm,
-  .no-float-xs {
+  .ui-no-float-md,
+  .ui-no-float-sm,
+  .ui-no-float-xs {
     float: none !important;
   }
   .ui-clear-md,
@@ -2393,7 +2393,7 @@ html .ui-row {
   .ui-hidden-xl {
     display: none !important;
   }
-  .no-float-xl {
+  .ui-no-float-xl {
     float: none !important;
   }
   .xl-align-c,

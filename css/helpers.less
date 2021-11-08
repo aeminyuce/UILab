@@ -30,8 +30,8 @@
 .ui-left { float: left; }
 .ui-right { float: right; }
 
-.no-user-select { @no-user-select(); }
-.no-float { float: none !important; }
+.ui-no-user-select { @no-user-select(); }
+.ui-no-float { float: none !important; }
 
 .ui-set- {
     &fixed { position: fixed !important; }
@@ -285,7 +285,7 @@ each(@increases, {
 
 @media (@lg-start) {
     .ui-hidden-lg { .ui-hidden(); }
-    .no-float-lg { .no-float(); }
+    .ui-no-float-lg { .ui-no-float(); }
 }
 @media (@default-start) {
     .ui-visible-md { .ui-hidden(); }
@@ -298,7 +298,7 @@ each(@increases, {
 }
 @media (@md-start) and (@md-finish) {
     .img-md-fluid { .ui-full-w(); .ui-auto-h(); }
-    .no-float-md { .no-float(); }
+    .ui-no-float-md { .ui-no-float(); }
     .ui-clear-md { .ui-clear(); }
 
     .md-align- {
@@ -323,8 +323,8 @@ each(@increases, {
     .img- {
         &md-fluid,&sm-fluid { .ui-full-w(); .ui-auto-h(); }
     }
-    .no-float {
-        &-md,&-sm { .no-float(); }
+    .ui-no-float {
+        &-md,&-sm { .ui-no-float(); }
     }
     .ui-clear {
         &-md,&-sm { .ui-clear(); }
@@ -349,8 +349,8 @@ each(@increases, {
     .img- {
         &md-fluid,&sm-fluid,&xs-fluid { .ui-full-w(); .ui-auto-h(); }
     }
-    .no-float {
-        &-md,&-sm,&-xs { .no-float(); }
+    .ui-no-float {
+        &-md,&-sm,&-xs { .ui-no-float(); }
     }
     .ui-clear {
         &-md,&-sm,&-xs { .ui-clear(); }
@@ -389,7 +389,7 @@ each(@increases, {
 }
 @media (@xl-start) {
     .ui-hidden-xl { .ui-hidden(); }
-    .no-float-xl { .no-float(); }
+    .ui-no-float-xl { .ui-no-float(); }
 
     .xl-align- {
         &c {

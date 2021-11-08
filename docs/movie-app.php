@@ -110,7 +110,7 @@
                                     <svg class="ui-icon"><use href="#help"/></svg>
                                 </button>
                             </span>
-                            <span class="inline-block ui-right no-float-sm">
+                            <span class="inline-block ui-right ui-no-float-sm">
                                 <img class="ui-img-photo ui-img-photo-sm circle ui-margin-10-l ui-sm-no-margin ui-right" src="img/profile-image.jpg" alt="">
                                 <span class="ui-margin-3-t inline-block ui-hidden-sm">aeminyuce</span>
                                 <span class="small ui-color-black-50 block ui-hidden-sm">Premium</span>
