@@ -20,10 +20,6 @@
 .login-holder > .ui-set-absolute {
   z-index: 1;
 }
-.login-holder .highlight-icon {
-  width: 96px;
-  height: 96px;
-}
 .login-btn {
   min-width: 26%;
   background-image: linear-gradient(130deg, hsl(135, 72%, 60%), hsl(135, 62%, 46%));

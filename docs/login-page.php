@@ -10,7 +10,7 @@
                 <form id="login" class="ui-tab-content ui-open ui-open-ease" action="#">
 
                     <h3 class="ui-margin-30-b">Login to continue</h3>
-                    <p class="highlight ui-color-black-25 large">Sign in to create, discover and connect with the global community.</p>
+                    <p class="ui-highlight ui-color-black-25 large">Sign in to create, discover and connect with the global community.</p>
 
                     <label class="form-label ui-color-black-50">User Name</label>
                     <div class="text text-icon round ui-border-dual ui-ease-form">
@@ -55,7 +55,7 @@
                 <form id="lost-password" class="ui-tab-content" action="#">
 
                     <h3 class="ui-margin-30-b">Forgot password?</h3>
-                    <p class="highlight ui-color-black-25 large">Please enter your email address. You will receive a link to create a new password via email.</p>
+                    <p class="ui-highlight ui-color-black-25 large">Please enter your email address. You will receive a link to create a new password via email.</p>
 
                     <label class="form-label ui-color-black-50">Your email</label>
                     <div class="text text-icon round ui-border-dual ui-ease-form">

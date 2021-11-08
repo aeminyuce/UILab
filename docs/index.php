@@ -203,7 +203,7 @@
                 <div class="ui-col-12 ui-padding-15">
 
                     <div class="ui-fixed ui-fixed-xl ui-padding-15 ui-margin-30-v ui-sm-no-padding">
-                        <div class="card highlight align-c ui-padding-30 ui-xs-no-padding round ui-theme-base">
+                        <div class="card ui-highlight align-c ui-padding-30 ui-xs-no-padding round ui-theme-base">
                             <h1 class="font-light">UI lab is a modular design system.</h2>
                             <h4 class="font-bold">For developing web interfaces fastly!</h4>
                             <span class="sp-15"></span>

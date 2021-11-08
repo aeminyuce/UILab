@@ -417,7 +417,7 @@
 
         <form action="#successful">
             <h2>Search</h2>
-            <p class="highlight large ui-color-white-50 xs-align-c font-readable">Search for movies, TV shows...</p>
+            <p class="ui-highlight large ui-color-white-50 xs-align-c font-readable">Search for movies, TV shows...</p>
 
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-row ui-no-ui-row-gap-h">

@@ -42,7 +42,7 @@
                     <div class="ui-col-12 ui-padding-15">
 
                         <div class="ui-padding-15 ui-sm-no-padding">
-                            <div class="ui-row highlight">
+                            <div class="ui-row ui-highlight">
                                 <div class="ui-col-6">
                                     <h3 class="ui-margin-15-v">Summer Holiday Photos</h3>
                                 </div>
@@ -138,7 +138,7 @@
                             </ul>
                         </div>
                         <div class="ui-padding-15 ui-sm-no-padding">
-                            <div class="ui-row highlight">
+                            <div class="ui-row ui-highlight">
                                 <div class="ui-col-6">
                                     <h3 class="ui-margin-15-v">Autumn Comes Photos</h3>
                                 </div>

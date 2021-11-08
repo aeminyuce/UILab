@@ -243,7 +243,7 @@
 
         <form action="#successful">
             <h2>Search</h2>
-            <p class="highlight large ui-color-white-50 xs-align-c font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
+            <p class="ui-highlight large ui-color-white-50 xs-align-c font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-row ui-no-ui-row-gap-h">

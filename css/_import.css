@@ -1908,10 +1908,10 @@ html .ui-row {
 .ui-img-fluid {
   height: auto !important;
 }
-.highlight {
+.ui-highlight {
   display: block;
 }
-.highlight:not(:last-child) {
+.ui-highlight:not(:last-child) {
   margin-bottom: 20px !important;
 }
 .block,
@@ -5704,7 +5704,7 @@ label.custom {
     width: 100% !important;
     display: block !important;
   }
-  .form-inline-xs:not(:last-child):not(.highlight) {
+  .form-inline-xs:not(:last-child):not(.ui-highlight) {
     margin-bottom: 5px;
   }
   label.custom + label.custom {

@@ -292,24 +292,24 @@
             <div class="ui-col-6 ui-padding-30">
 
                 <h3>Lead Text</h3>
-                <p class="font-lead highlight">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+                <p class="font-lead ui-highlight">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
 
                 <h3>Readable Text</h3>
-                <p class="font-readable highlight">
+                <p class="font-readable ui-highlight">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat gravida posuere. Etiam luctus ex vitae diam tempor, a egestas magna posuere. Vestibulum faucibus ex dolor, at tempor ante iaculis vel. Nulla facilisi. Ut non nisl eget orci placerat lobortis.
                     <br><br>
                     Aliquam eros ante, dignissim eget hendrerit eu, volutpat in mauris. Nam dapibus varius ultrices. Aliquam erat volutpat. Nullam sit amet nunc et tellus fermentum pretium id a arcu. Sed vel lacus lacinia, lobortis massa congue, porta neque.
                 </p>
 
                 <h3>Condensed Text</h3>
-                <p class="font-condensed highlight">
+                <p class="font-condensed ui-highlight">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat gravida posuere. Etiam luctus ex vitae diam tempor, a egestas magna posuere. Vestibulum faucibus ex dolor, at tempor ante iaculis vel. Nulla facilisi. Ut non nisl eget orci placerat lobortis.
                     <br><br>
                     Aliquam eros ante, dignissim eget hendrerit eu, volutpat in mauris. Nam dapibus varius ultrices. Aliquam erat volutpat. Nullam sit amet nunc et tellus fermentum pretium id a arcu. Sed vel lacus lacinia, lobortis massa congue, porta neque.
                 </p>
 
                 <h3>Rtl Content</h3>
-                <p class="font-readable ui-rtl highlight">
+                <p class="font-readable ui-rtl ui-highlight">
                     <img class="ui-right ui-margin-15-l round" src="img/image_01.jpg" width="120" alt="">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat gravida posuere. Etiam luctus ex vitae diam tempor, a egestas magna posuere. Vestibulum faucibus ex dolor, at tempor ante iaculis vel. Nulla facilisi.
                 </p>
@@ -405,15 +405,15 @@
                 <h3>Blockquotes</h3>
                 <div class="ui-padding-30-b">
                     <blockquote>
-                        <p class="highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <p class="ui-highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                         <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
                     </blockquote>
                     <blockquote>
-                        <p class="highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <p class="ui-highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                         <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
                     </blockquote>
                     <blockquote class="reverse">
-                        <p class="highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <p class="ui-highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                         <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
                     </blockquote>
                 </div>
