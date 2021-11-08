@@ -162,7 +162,7 @@
                                 <img src="img/image_03.jpg" alt="">
                                 <span class="ui-font-readable">
                                     <span class="ui-scroll-v ui-margin-15 ui-set-absolute ui-set-all">
-                                        <span class="x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                        <span class="ui-x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                         <br><br>
                                         <span class="ui-color-white-25 large">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.

@@ -169,6 +169,11 @@ html {
   background-color: hsl(0, 0%, 98%);
   background-color: var(--ui-body-bg);
 }
+body,
+a {
+  color: hsl(0, 0%, 0%);
+  color: var(--ui-black);
+}
 a,
 a:active,
 a:hover {
@@ -3396,11 +3401,6 @@ html .ui-row {
   }
 }
 /* typography */
-body,
-a {
-  color: hsl(0, 0%, 0%);
-  color: var(--ui-black);
-}
 .ui-color-white,
 .ui-color-white .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
 .ui-color-white a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
@@ -3507,45 +3507,39 @@ a {
 .ui-font-condensed {
   line-height: 1.2em !important;
 }
-.xx-smallest {
-  font-size: 7px !important;
-}
-.x-smallest {
-  font-size: 8px !important;
-}
-.smallest {
+.ui-smallest {
   font-size: 9px !important;
 }
-.xx-small {
+.ui-xx-small {
   font-size: 10px !important;
 }
-.x-small {
+.ui-x-small {
   font-size: 11px !important;
 }
-.small {
+.ui-small {
   font-size: 12px !important;
 }
-.default {
+.ui-default {
   font-size: 14px !important;
 }
-.large {
+.ui-large {
   font-size: 16px !important;
 }
-.x-large {
+.ui-x-large {
   font-size: 18px !important;
 }
-.xx-large {
+.ui-xx-large {
   font-size: 22px !important;
 }
-.largest {
+.ui-largest {
   font-size: 28px !important;
   font-size: clamp(14px, 28px, 6vw) !important;
 }
-.x-largest {
+.ui-x-largest {
   font-size: 38px !important;
   font-size: clamp(19px, 38px, 8vw) !important;
 }
-.xx-largest {
+.ui-xx-largest {
   font-size: 48px !important;
   font-size: clamp(24px, 48px, 10vw) !important;
 }

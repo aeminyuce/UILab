@@ -836,7 +836,7 @@
                             <label class="form-label">Label</label>
                         </div>
                         <div class="ui-col-6 ui-align-r">
-                            <a class="small ui-color-black-25 underline" href="#">Top Right Link</a>
+                            <a class="ui-small ui-color-black-25 underline" href="#">Top Right Link</a>
                         </div>
                     </div>
                     <div class="text ui-margin-10-b ui-round ui-border-dual ui-ease-form">

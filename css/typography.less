@@ -40,8 +40,6 @@
     --ui-code-bg: @code-color;
 }
 
-body,a { ._color-var(black); }
-
 .ui-color {
     &-white {
         &,
@@ -108,19 +106,17 @@ body,a { ._color-var(black); }
 
 }
 
-.xx-smallest { font-size: @xx-smallest !important; }
-.x-smallest { font-size: @x-smallest !important; }
-.smallest { font-size: @smallest !important; }
-.xx-small { font-size: @xx-small !important; }
-.x-small { font-size: @x-small !important; }
-.small { font-size: @small !important; }
-.default { font-size: @font-size !important; }
-.large { font-size: @large !important; }
-.x-large { font-size: @x-large !important; }
-.xx-large { font-size: @xx-large !important; }
-.largest { ._font-scale(@largest) !important; }
-.x-largest { ._font-scale(@x-largest) !important; }
-.xx-largest { ._font-scale(@xx-largest) !important; }
+.ui-smallest { font-size: @smallest !important; }
+.ui-xx-small { font-size: @xx-small !important; }
+.ui-x-small { font-size: @x-small !important; }
+.ui-small { font-size: @small !important; }
+.ui-default { font-size: @font-size !important; }
+.ui-large { font-size: @large !important; }
+.ui-x-large { font-size: @x-large !important; }
+.ui-xx-large { font-size: @xx-large !important; }
+.ui-largest { ._font-scale(@largest) !important; }
+.ui-x-largest { ._font-scale(@x-largest) !important; }
+.ui-xx-largest { ._font-scale(@xx-largest) !important; }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: @headings-font-family; font-weight: @font-normal; letter-spacing: @headings-letter-spacing; margin-bottom: 0;

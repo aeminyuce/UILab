@@ -14,7 +14,7 @@
                 </div>
 
                 <h3>Font Colors</h3>
-                <div class="ui-padding-30-b">
+                <div class="ui-padding-30-b ui-large">
                     <div class="ui-theme-gray ui-fill-dark-100">
                         <span class="ui-color-white">ui-color-white</span>
                         <span class="ui-color-white">ui-color-white-50</span>
@@ -33,23 +33,29 @@
 
                 <h3>Font Sizes</h3>
                 <div class="ui-padding-30-b">
-                    <span class="xx-largest">.xx-largest</span>
-                    <span class="x-largest">.x-largest</span>
-                    <span class="largest">.largest</span>
+                    <span class="ui-xx-largest">ui-xx-largest</span>
                     <span class="ui-sp-5"></span>
-                    <span class="xx-large">.xx-large</span>
-                    <span class="x-large">.x-large</span>
-                    <span class="large">.large</span>
+                    <span class="ui-x-largest">ui-x-largest</span>
                     <span class="ui-sp-5"></span>
-                    <span class="default">.default</span>
-                    <br>
-                    <span class="small">.small</span>
-                    <span class="x-small">.x-small</span>
-                    <span class="xx-small">.xx-small</span>
+                    <span class="ui-largest">ui-largest</span>
                     <span class="ui-sp-5"></span>
-                    <span class="smallest">.smallest</span>
-                    <span class="x-smallest">.x-smallest</span>
-                    <span class="xx-smallest">.xx-smallest</span>
+                    <span class="ui-xx-large">ui-xx-large</span>
+                    <span class="ui-sp-5"></span>
+                    <span class="ui-x-large">ui-x-large</span>
+                    <span class="ui-sp-5"></span>
+                    <span class="ui-large">ui-large</span>
+
+                    <span class="ui-sp-15"></span>
+                    <span class="ui-default">ui-default</span>
+                    <span class="ui-sp-15"></span>
+
+                    <span class="ui-small">ui-small</span>
+                    <span class="ui-sp-5"></span>
+                    <span class="ui-x-small">ui-x-small</span>
+                    <span class="ui-sp-5"></span>
+                    <span class="ui-xx-small">ui-xx-small</span>
+                    <span class="ui-sp-5"></span>
+                    <span class="ui-smallest">ui-smallest</span>
                 </div>
 
                 <h3>Unordered Lists</h4>
@@ -320,9 +326,9 @@
                 <div class="ui-padding-30-b">
                     <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q>
                     <span class="ui-sp-5"></span>
-                    <q class="large">Proin tellus justo, blandit non ultrices in, consequat a sem.</q>
+                    <q class="ui-large">Proin tellus justo, blandit non ultrices in, consequat a sem.</q>
                     <span class="ui-sp-5"></span>
-                    <q class="xx-large">Integer pellentesque sed sapien at euismod.</q>
+                    <q class="ui-xx-large">Integer pellentesque sed sapien at euismod.</q>
                 </div>
 
                 <h3>Text Elements</h3>

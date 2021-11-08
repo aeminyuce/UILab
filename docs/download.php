@@ -501,7 +501,7 @@
                             <div class="ui-col-12 ui-no-padding-t">
 
                                 <div class="textarea ui-margin-15-b ui-round ui-border-dual ui-ease-form">
-                                    <textarea class="ui-color-black-50 large ui-padding-10" rows="12" placeholder="Generated CSS will be here!"></textarea>
+                                    <textarea class="ui-color-black-50 ui-large ui-padding-10" rows="12" placeholder="Generated CSS will be here!"></textarea>
                                     <div class="ui-border-t ui-border-dual">
                                         <div class="ui-inline-block ui-padding-5-r">
                                             <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-left ui-ease-btn">
@@ -869,7 +869,7 @@
                             <div class="ui-col-12 ui-no-padding-t">
 
                                 <div class="textarea ui-margin-15-b ui-round ui-border-dual ui-ease-form">
-                                    <textarea class="ui-color-black-50 large ui-padding-10" rows="12" placeholder="Generated JS will be here!"></textarea>
+                                    <textarea class="ui-color-black-50 ui-large ui-padding-10" rows="12" placeholder="Generated JS will be here!"></textarea>
                                     <div class="ui-border-t ui-border-dual">
                                         <div class="ui-inline-block ui-padding-5-r">
                                             <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-left ui-ease-btn">
@@ -1000,7 +1000,7 @@
                             <div class="ui-col-12 ui-no-padding-t">
 
                                 <div class="textarea ui-margin-15-b ui-round ui-border-dual ui-ease-form">
-                                    <textarea class="ui-color-black-50 large ui-padding-10" rows="12" placeholder="Generated icons will be here!"></textarea>
+                                    <textarea class="ui-color-black-50 ui-large ui-padding-10" rows="12" placeholder="Generated icons will be here!"></textarea>
                                     <div class="ui-border-t ui-border-dual">
                                         <div class="ui-inline-block ui-padding-5-r">
                                             <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-left ui-ease-btn">

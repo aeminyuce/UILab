@@ -8,7 +8,7 @@
 
                 <div class="ui-align-l ui-padding-10 ui-icons-no-opacity ui-icons-margin-10-r form-lg ui-add-mobile-menu-l">
                     <h5 class="ui-color-white-50 ui-padding-15 ui-margin-5-b">LIBRARY</h5>
-                    <ul class="ui-list-unstyled ui-list-spacer-15 large ui-font-bold ui-block-2nd ui-ease-2nd-btn">
+                    <ul class="ui-list-unstyled ui-list-spacer-15 ui-large ui-font-bold ui-block-2nd ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-btn-ghost ui-circle" href="#">
                                 <svg class="ui-icon"><use href="#tv"/></svg>
@@ -50,7 +50,7 @@
                     <span class="ui-sp-30"></span>
 
                     <h5 class="ui-color-white-50 ui-padding-15 ui-margin-5-b">NEWS &amp; EVENTS</h5>
-                    <ul class="ui-list-unstyled ui-list-spacer-15 ui-color-white-50 large ui-block-2nd ui-ease-2nd-btn">
+                    <ul class="ui-list-unstyled ui-list-spacer-15 ui-color-white-50 ui-large ui-block-2nd ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-btn-ghost ui-circle" href="#">
                                 <svg class="ui-icon"><use href="#news"/></svg>
@@ -113,7 +113,7 @@
                             <span class="ui-inline-block ui-right ui-no-float-sm">
                                 <img class="ui-img-photo ui-img-photo-sm ui-circle ui-margin-10-l ui-sm-no-margin ui-right" src="img/profile-image.jpg" alt="">
                                 <span class="ui-margin-3-t ui-inline-block ui-hidden-sm">aeminyuce</span>
-                                <span class="small ui-color-black-50 ui-block ui-hidden-sm">Premium</span>
+                                <span class="ui-small ui-color-black-50 ui-block ui-hidden-sm">Premium</span>
                             </span>
                         </div>
                     </header>
@@ -136,7 +136,7 @@
                                     <div class="ui-col-12 ui-col-lg-8 ui-padding-30-l ui-no-padding-v ui-md-no-padding">
                                         <span class="ui-sp-15 ui-visible-md"></span>
                                         <h2 class="ui-font-bold">Related Video</h2>
-                                        <b class="large">Captain Marvel (2019)</b>
+                                        <b class="ui-large">Captain Marvel (2019)</b>
                                         <p class="ui-margin-10-v ui-font-readable">After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.</p>
                                         <div class="ui-photos-holder ui-padding-15-h ui-hover-scale-more-2nd ui-ease-2nd-layout">
                                             <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image.jpg" alt=""></a>
@@ -160,7 +160,7 @@
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_01.jpg" alt="">
-                                <b class="large">Captain Marvel</b>
+                                <b class="ui-large">Captain Marvel</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
@@ -171,7 +171,7 @@
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_02.jpg" alt="">
-                                <b class="large">Avengers: Endgame</b>
+                                <b class="ui-large">Avengers: Endgame</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
@@ -182,7 +182,7 @@
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_03.jpg" alt="">
-                                <b class="large">Captain America</b>
+                                <b class="ui-large">Captain America</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2014 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
@@ -193,7 +193,7 @@
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_04.jpg" alt="">
-                                <b class="large">Ant-Man</b>
+                                <b class="ui-large">Ant-Man</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2015 &nbsp; Action, Comedy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
@@ -204,7 +204,7 @@
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_05.jpg" alt="">
-                                <b class="large">Venom</b>
+                                <b class="ui-large">Venom</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2018 &nbsp; Action, Thriller</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
@@ -215,7 +215,7 @@
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_06.jpg" alt="">
-                                <b class="large">Justice League</b>
+                                <b class="ui-large">Justice League</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2017 &nbsp; Action, Fantasy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
@@ -226,7 +226,7 @@
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_01.jpg" alt="">
-                                <b class="large">Captain Marvel</b>
+                                <b class="ui-large">Captain Marvel</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
@@ -237,7 +237,7 @@
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_02.jpg" alt="">
-                                <b class="large">Avengers: Endgame</b>
+                                <b class="ui-large">Avengers: Endgame</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2019 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
@@ -248,7 +248,7 @@
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_03.jpg" alt="">
-                                <b class="large">Captain America</b>
+                                <b class="ui-large">Captain America</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2014 &nbsp; Action, Sci-Fi</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
@@ -259,7 +259,7 @@
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_04.jpg" alt="">
-                                <b class="large">Ant-Man</b>
+                                <b class="ui-large">Ant-Man</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2015 &nbsp; Action, Comedy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
@@ -270,7 +270,7 @@
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_05.jpg" alt="">
-                                <b class="large">Venom</b>
+                                <b class="ui-large">Venom</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2018 &nbsp; Action, Thriller</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
@@ -281,7 +281,7 @@
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_06.jpg" alt="">
-                                <b class="large">Justice League</b>
+                                <b class="ui-large">Justice League</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2017 &nbsp; Action, Fantasy</span>
                                 <svg class="ui-icon ui-icon-xs ui-color-yellow"><use href="#star-fill"/></svg>
                                 <span class="ui-inline-block ui-margin-2-l ui-margin-10-r">
@@ -312,73 +312,73 @@
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_01.jpg" alt="">
-                                <b class="large">Action</b>
+                                <b class="ui-large">Action</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_02.jpg" alt="">
-                                <b class="large">Adventure</b>
+                                <b class="ui-large">Adventure</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_03.jpg" alt="">
-                                <b class="large">Comedy</b>
+                                <b class="ui-large">Comedy</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_04.jpg" alt="">
-                                <b class="large">Sci-Fi</b>
+                                <b class="ui-large">Sci-Fi</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_05.jpg" alt="">
-                                <b class="large">Animation</b>
+                                <b class="ui-large">Animation</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_06.jpg" alt="">
-                                <b class="large">Horror</b>
+                                <b class="ui-large">Horror</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_01.jpg" alt="">
-                                <b class="large">Action</b>
+                                <b class="ui-large">Action</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_02.jpg" alt="">
-                                <b class="large">Adventure</b>
+                                <b class="ui-large">Adventure</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_03.jpg" alt="">
-                                <b class="large">Comedy</b>
+                                <b class="ui-large">Comedy</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_04.jpg" alt="">
-                                <b class="large">Sci-Fi</b>
+                                <b class="ui-large">Sci-Fi</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_05.jpg" alt="">
-                                <b class="large">Animation</b>
+                                <b class="ui-large">Animation</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_06.jpg" alt="">
-                                <b class="large">Horror</b>
+                                <b class="ui-large">Horror</b>
                             </a>
                         </div>
                     </div>
@@ -402,7 +402,7 @@
 
 <!-- mobile menu -->
 <div class="ui-mobile-menu ui-show-l ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
-    <div class="ui-mobile-menu-title ui-padding-20-v x-large ui-border-b">
+    <div class="ui-mobile-menu-title ui-padding-20-v ui-x-large ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-mobile-menu">
             <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
         </button>
@@ -417,7 +417,7 @@
 
         <form action="#successful">
             <h2>Search</h2>
-            <p class="ui-highlight large ui-color-white-50 ui-xs-align-c ui-font-readable">Search for movies, TV shows...</p>
+            <p class="ui-highlight ui-large ui-color-white-50 ui-xs-align-c ui-font-readable">Search for movies, TV shows...</p>
 
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-row ui-no-ui-row-gap-h">
@@ -442,42 +442,42 @@
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#tv"/></svg>
-                        <span class="x-large ui-block ui-margin-5-t">TV Shows</span>
+                        <span class="ui-x-large ui-block ui-margin-5-t">TV Shows</span>
                         <span class="ui-color-black-25">1024</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#film"/></svg>
-                        <span class="x-large ui-block ui-margin-5-t">Films</span>
+                        <span class="ui-x-large ui-block ui-margin-5-t">Films</span>
                         <span class="ui-color-black-25">775</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#trophy-star"/></svg>
-                        <span class="x-large ui-block ui-margin-5-t">Sports</span>
+                        <span class="ui-x-large ui-block ui-margin-5-t">Sports</span>
                         <span class="ui-color-black-25">316</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#music"/></svg>
-                        <span class="x-large ui-block ui-margin-5-t">Concerts</span>
+                        <span class="ui-x-large ui-block ui-margin-5-t">Concerts</span>
                         <span class="ui-color-black-25">589</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#face-smile"/></svg>
-                        <span class="x-large ui-block ui-margin-5-t">Comedy</span>
+                        <span class="ui-x-large ui-block ui-margin-5-t">Comedy</span>
                         <span class="ui-color-black-25">219</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#video"/></svg>
-                        <span class="x-large ui-block ui-margin-5-t">Others</span>
+                        <span class="ui-x-large ui-block ui-margin-5-t">Others</span>
                         <span class="ui-color-black-25">701</span>
                     </a>
                 </div>

@@ -61,7 +61,7 @@
                     </div>
 
                     <div class="ui-card ui-round ui-shadow-lg">
-                        <div class="ui-padding-30 large ui-font-readable">
+                        <div class="ui-padding-30 ui-large ui-font-readable">
                             <h4>Details</h4>
                             Each villa has been meticulously designed to meet all the demands that a luxury villa has to provide as well as offer a contemporary image of great beauty.
                             <span class="ui-sp-20"></span>
@@ -141,7 +141,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="ui-color-black-25 small ui-align-c ui-padding-10">
+                            <div class="ui-color-black-25 ui-small ui-align-c ui-padding-10">
                                 <b>Yearly Savings Costs: $18.970</b>
                             </div>
                         </div>
@@ -158,16 +158,16 @@
                             <li class="ui-padding-10-v ui-padding-15-h ui-hidden-xs">
                                 <svg class="ui-icon ui-icon-xxl"><use href="#history"/></svg>
                             </li>
-                            <li class="ui-padding-5"><b class="ui-d xx-large ui-block">12</b>Days</li>
-                            <li class="ui-padding-5"><b class="ui-h xx-large ui-block">22</b>Hours</li>
-                            <li class="ui-padding-5"><b class="ui-m xx-large ui-block">01</b>Minutes</li>
-                            <li class="ui-padding-5"><b class="ui-s xx-large ui-block">17</b>Seconds</li>
+                            <li class="ui-padding-5"><b class="ui-d ui-xx-large ui-block">12</b>Days</li>
+                            <li class="ui-padding-5"><b class="ui-h ui-xx-large ui-block">22</b>Hours</li>
+                            <li class="ui-padding-5"><b class="ui-m ui-xx-large ui-block">01</b>Minutes</li>
+                            <li class="ui-padding-5"><b class="ui-s ui-xx-large ui-block">17</b>Seconds</li>
                         </ul>
                     </div>
                     <div class="ui-padding-3 ui-fill-dark-100 ui-stripe-light ui-animate-progress">
                     </div>
                     <div class="ui-card-side ui-padding-5 ui-fill-dark-100">
-                        <b class="small ui-color-white">Closing: 10 August, 2018, Friday</b>
+                        <b class="ui-small ui-color-white">Closing: 10 August, 2018, Friday</b>
                     </div>
                 </div>
 
@@ -175,11 +175,11 @@
                     <ul class="ui-list-inline ui-list-gap ui-padding-30 ui-padding-15-b ui-icons-lg ui-icons-margin-5-r ui-theme-gray inline-ui-block-1st">
                         <li>
                             <svg class="ui-icon"><use href="#floor-plan"/></svg>
-                            <span class="large">7+1</span>
+                            <span class="ui-large">7+1</span>
                         </li>
                         <li>
                             <svg class="ui-icon"><use href="#house-surface"/></svg>
-                            <span class="large">628m<sup>2</sup></span>
+                            <span class="ui-large">628m<sup>2</sup></span>
                         </li>
                         <li>
                             <svg class="ui-icon"><use href="#house-floor"/></svg>
@@ -233,7 +233,7 @@
                                 <div class="ui-row">
                                     <div class="ui-col-12 ui-no-padding">
                                         <div class="text ui-no-border ui-theme-gray ui-fill-light-100 ui-ease-form">
-                                            <input class="ui-font-bold ui-align-c x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
+                                            <input class="ui-font-bold ui-align-c ui-x-large" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
                                         </div>
                                     </div>
                                 </div>

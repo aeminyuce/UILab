@@ -209,7 +209,7 @@
                             <svg class="ui-icon ui-icon-lg ui-color-green"><use href="#comment"/></svg>
                             Message Title
                         </h4>
-                        <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="ui-large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                     <div class="ui-card-danger ui-padding-15 ui-round ui-shadow">
@@ -220,7 +220,7 @@
                             <svg class="ui-icon ui-icon-lg ui-color-red"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
-                        <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="ui-large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                     <div class="ui-card-warning ui-padding-15 ui-round">
@@ -231,7 +231,7 @@
                             <svg class="ui-icon ui-icon-lg ui-color-yellow"><use href="#comment"/></svg>
                             Message Title
                         </h4>
-                        <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="ui-large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                     <div class="ui-card-info ui-padding-15 ui-round ui-shadow">
@@ -242,7 +242,7 @@
                             <svg class="ui-icon ui-icon-lg ui-color-black-50"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
-                        <p class="large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="ui-large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                 </div>

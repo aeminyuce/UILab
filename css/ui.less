@@ -18,8 +18,6 @@
 @font-light:                            300;
 @font-thin:                             200;
 
-@xx-smallest:                           7px;
-@x-smallest:                            8px;
 @smallest:                              9px;
 @xx-small:                              10px;
 @x-small:                               11px;
@@ -293,6 +291,8 @@ html {
     font-family: @font-family; font-size: @font-size; font-weight: @font-normal; line-height: @line-height; letter-spacing: @letter-spacing;
     ._bg-var(body-bg);
 }
+
+body,a { ._color-var(black); }
 
 a {
     &,&:active,&:hover { word-wrap: break-word; text-decoration: none; }
