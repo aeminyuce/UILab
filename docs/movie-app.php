@@ -91,7 +91,7 @@
                         </div>
                         <div class="ui-col-6 align-r">
                             <span class="align-c ui-color-black-50 ui-margin-20-r ui-sm-no-margin ui-ease-1st-btn">
-                                <button class="ui-btn ui-btn-square ui-btn-ghost ui-margin-10-l circle left ui-show-mobile-menu-l ui-visible-md">
+                                <button class="ui-btn ui-btn-square ui-btn-ghost ui-margin-10-l circle ui-left ui-show-mobile-menu-l ui-visible-md">
                                     <svg class="ui-icon"><use href="#bars-left"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square ui-btn-ghost circle ui-ease-btn ui-visible-md" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
@@ -110,8 +110,8 @@
                                     <svg class="ui-icon"><use href="#help"/></svg>
                                 </button>
                             </span>
-                            <span class="inline-block right no-float-sm">
-                                <img class="ui-img-photo ui-img-photo-sm circle ui-margin-10-l ui-sm-no-margin right" src="img/profile-image.jpg" alt="">
+                            <span class="inline-block ui-right no-float-sm">
+                                <img class="ui-img-photo ui-img-photo-sm circle ui-margin-10-l ui-sm-no-margin ui-right" src="img/profile-image.jpg" alt="">
                                 <span class="ui-margin-3-t inline-block ui-hidden-sm">aeminyuce</span>
                                 <span class="small ui-color-black-50 block ui-hidden-sm">Premium</span>
                             </span>

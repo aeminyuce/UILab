@@ -234,7 +234,7 @@
                         <div class="ui-card round shadow-lg ui-tabs ui-ease-tabs" data-ui-classes="font-bold">
                             <div class="ui-card-side ui-padding-10 ui-border-b">
 
-                                <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
+                                <div class="ui-dropdown ui-menu-l ui-right ui-ease-dropdown">
                                     <button class="ui-btn ui-btn-ghost round">
                                         <span>First Chart</span>
                                         <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>

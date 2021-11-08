@@ -1832,10 +1832,10 @@ html .ui-row {
   margin-left: auto;
   display: block;
 }
-.left {
+.ui-left {
   float: left;
 }
-.right {
+.ui-right {
   float: right;
 }
 .no-user-select {

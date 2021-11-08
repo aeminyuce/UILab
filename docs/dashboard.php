@@ -62,7 +62,7 @@
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block">
                         <svg class="ui-icon ui-margin-15-r"><use href="#users"/></svg>
-                        <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Employees
                     </button>
 
@@ -71,7 +71,7 @@
                             <ul class="ui-tabs ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn" data-ui-classes="ui-current">
                                 <li>
                                     <a class="ui-tab ui-tab-toggle opacity" href="#">
-                                        <svg class="ui-toggle-icon ui-icon ui-margin-10-r right"><use href="#arrow-down"/></svg>
+                                        <svg class="ui-toggle-icon ui-icon ui-margin-10-r ui-right"><use href="#arrow-down"/></svg>
                                         Managers
                                     </a>
                                     <div class="ui-tab-content">
@@ -84,7 +84,7 @@
                                 </li>
                                 <li>
                                     <a class="ui-tab ui-tab-toggle opacity" href="#">
-                                        <svg class="ui-toggle-icon ui-icon ui-margin-10-r right"><use href="#arrow-down"/></svg>
+                                        <svg class="ui-toggle-icon ui-icon ui-margin-10-r ui-right"><use href="#arrow-down"/></svg>
                                         Team Leaders
                                     </a>
                                     <div class="ui-tab-content">
@@ -104,7 +104,7 @@
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block">
                         <svg class="ui-icon ui-margin-15-r"><use href="#moneys"/></svg>
-                        <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Payments
                     </button>
                     <div class="ui-tab-content">
@@ -121,7 +121,7 @@
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block">
                         <svg class="ui-icon ui-margin-15-r"><use href="#calendar-check"/></svg>
-                        <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Events
                     </button>
                     <div class="ui-tab-content">
@@ -137,7 +137,7 @@
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block">
                         <svg class="ui-icon ui-margin-15-r"><use href="#files"/></svg>
-                        <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Documents
                     </button>
                     <div class="ui-tab-content">
@@ -155,7 +155,7 @@
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block">
                         <svg class="ui-icon ui-margin-15-r"><use href="#chart-line"/></svg>
-                        <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Statistics
                     </button>
                     <div class="ui-tab-content">
@@ -171,7 +171,7 @@
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block">
                         <svg class="ui-icon ui-margin-15-r"><use href="#doc"/></svg>
-                        <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Reports
                     </button>
                     <div class="ui-tab-content">
@@ -189,7 +189,7 @@
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r block">
                         <svg class="ui-icon ui-margin-15-r"><use href="#truck"/></svg>
-                        <svg class="ui-toggle-icon ui-icon right"><use href="#angle-down"/></svg>
+                        <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Orders
                     </button>
                     <div class="ui-tab-content">
@@ -230,7 +230,7 @@
             <!-- header: start -->
             <header class="ui-col-12 align-r ui-icons-no-opacity shadow-sm form-lg ui-ease-layout sidebar-opened" data-ui-classes="shadow-lg">
 
-                <div class="align-c left ui-ease-1st-btn">
+                <div class="align-c ui-left ui-ease-1st-btn">
                     <button class="sidebar-show ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 circle ui-visible-lg ui-hidden" data-ui-tooltip title="Toggle Sidebar">
                         <svg class="ui-icon"><use href="#angle-right"/></svg>
                     </button>
@@ -398,8 +398,8 @@
                     </div>
                 </div>
 
-                <div class="right ui-margin-10-l ui-xs-no-margin">
-                    <span class="ui-dropdown ui-menu-l ui-margin-5-l right ui-ease-dropdown">
+                <div class="ui-right ui-margin-10-l ui-xs-no-margin">
+                    <span class="ui-dropdown ui-menu-l ui-margin-5-l ui-right ui-ease-dropdown">
                         <button class="ui-btn ui-no-padding circle hover-scale-more">
                             <img class="ui-img-photo ui-img-photo-sm circle" src="img/profile-image.jpg" alt="">
                         </button>
@@ -778,7 +778,7 @@
 
                             <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
                                 <div class="ui-card ui-full-h ui-padding-15 round shadow-lg">
-                                    <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
+                                    <div class="ui-dropdown ui-menu-l ui-right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost round">
                                             <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                         </button>
@@ -842,7 +842,7 @@
                                             <div class="ui-list-group ui-margin-15-h">
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
                                                             <strong class="ui-color-black-25 x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
@@ -852,7 +852,7 @@
                                                         <span class="ui-color-black-50 small">3814 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
                                                             <strong class="ui-color-black-25 x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
@@ -862,7 +862,7 @@
                                                         <span class="ui-color-black-50 small">2613 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
                                                             <strong class="ui-color-black-25 x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
@@ -872,7 +872,7 @@
                                                         <span class="ui-color-black-50 small">1890 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
                                                             <strong class="ui-color-black-25 x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
@@ -882,7 +882,7 @@
                                                         <span class="ui-color-black-50 small">1605 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
                                                             <strong class="ui-color-black-25 x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
@@ -892,7 +892,7 @@
                                                         <span class="ui-color-black-50 small">812 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
                                                             <strong class="ui-color-black-25 x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
@@ -908,7 +908,7 @@
                                             <div class="ui-list-group ui-margin-15-h">
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
                                                             <strong class="ui-color-black-25 x-small">88%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
@@ -918,7 +918,7 @@
                                                         <span class="ui-color-black-50 small">3814 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
                                                             <strong class="ui-color-black-25 x-small">76%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
@@ -928,7 +928,7 @@
                                                         <span class="ui-color-black-50 small">2613 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
                                                             <strong class="ui-color-black-25 x-small">69%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
@@ -938,7 +938,7 @@
                                                         <span class="ui-color-black-50 small">1890 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
                                                             <strong class="ui-color-black-25 x-small">52%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
@@ -948,7 +948,7 @@
                                                         <span class="ui-color-black-50 small">1605 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
                                                             <strong class="ui-color-black-25 x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
@@ -958,7 +958,7 @@
                                                         <span class="ui-color-black-50 small">812 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
-                                                        <span class="ui-donut-chart ui-col-48 right ui-ease-donut-chart">
+                                                        <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
                                                             <strong class="ui-color-black-25 x-small">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
@@ -978,7 +978,7 @@
                             <div class="ui-col-xl-6 ui-col-lg-6 ui-col-12 ui-col-md-6">
                                 <div class="ui-tabs ui-card ui-full-h ui-padding-15 round shadow-lg" data-ui-classes="font-bold">
                                     <div class="ui-ease-tabs">
-                                        <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
+                                        <div class="ui-dropdown ui-menu-l ui-right ui-ease-dropdown">
                                             <button class="ui-btn ui-btn-square ui-btn-ghost round">
                                                 <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                             </button>
@@ -988,7 +988,7 @@
                                                 <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See Detailed Statistics</a></li>
                                             </ul>
                                         </div>
-                                        <div class="ui-dropdown ui-menu-l ui-margin-5-r right ui-ease-dropdown">
+                                        <div class="ui-dropdown ui-menu-l ui-margin-5-r ui-right ui-ease-dropdown">
                                             <button class="ui-btn ui-btn-ghost round">
                                                 <span>Last year</span>
                                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
@@ -1120,7 +1120,7 @@
 
                             <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
                                 <div class="ui-card ui-full-h ui-padding-15 round shadow-lg">
-                                    <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
+                                    <div class="ui-dropdown ui-menu-l ui-right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost round">
                                             <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                         </button>
@@ -1136,7 +1136,7 @@
 
                             <div class="ui-col-xl-6 ui-col-lg-6 ui-col-12 ui-col-md-6">
                                 <div class="ui-card ui-full-h ui-padding-15 round shadow-lg">
-                                    <div class="ui-dropdown ui-menu-l right ui-ease-dropdown">
+                                    <div class="ui-dropdown ui-menu-l ui-right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost round">
                                             <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                         </button>

@@ -20,12 +20,12 @@
         <span class="block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#truck"/></svg> Fast Delivery
         </span>
-        <ul class="list-inline ui-margin-15-v right">
+        <ul class="list-inline ui-margin-15-v ui-right">
             <li class="circle ui-padding-5 ui-border-dual ui-product-red"></li>
             <li class="circle ui-padding-5 ui-border-dual ui-product-pink"></li>
             <li class="circle ui-padding-5 ui-border-dual ui-product-blue"></li>
         </ul>
-        <span class="left ui-padding-15-v ui-icons-xs">
+        <span class="ui-left ui-padding-15-v ui-icons-xs">
             <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
             <b class="ui-color-black-50">4.8</b>
             <span class="ui-color-black-25">
@@ -56,11 +56,11 @@
         <span class="block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
-        <ul class="list-inline ui-margin-15-v right">
+        <ul class="list-inline ui-margin-15-v ui-right">
             <li class="circle ui-padding-5 ui-border-dual ui-product-pink"></li>
             <li class="circle ui-padding-5 ui-border-dual ui-product-white"></li>
         </ul>
-        <span class="left ui-padding-15-v ui-icons-xs">
+        <span class="ui-left ui-padding-15-v ui-icons-xs">
             <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
             <b class="ui-color-black-50">3.9</b>
             <span class="ui-color-black-25">
@@ -91,11 +91,11 @@
         <span class="block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#truck"/></svg> Fast Delivery
         </span>
-        <ul class="list-inline ui-margin-15-v right">
+        <ul class="list-inline ui-margin-15-v ui-right">
             <li class="circle ui-padding-5 ui-border-dual ui-product-blue"></li>
             <li class="circle ui-padding-5 ui-border-dual ui-product-black"></li>
         </ul>
-        <span class="left ui-padding-15-v ui-icons-xs">
+        <span class="ui-left ui-padding-15-v ui-icons-xs">
             <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
             <b class="ui-color-black-50">4.3</b>
             <span class="ui-color-black-25">
@@ -123,10 +123,10 @@
         <span class="block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
-        <ul class="list-inline ui-margin-15-v right">
+        <ul class="list-inline ui-margin-15-v ui-right">
             <li class="circle ui-padding-5 ui-border-dual ui-product-white"></li>
         </ul>
-        <span class="left ui-padding-15-v ui-icons-xs">
+        <span class="ui-left ui-padding-15-v ui-icons-xs">
             <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
             <b class="ui-color-black-50">4.9</b>
             <span class="ui-color-black-25">
@@ -154,10 +154,10 @@
         <span class="block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
-        <ul class="list-inline ui-margin-15-v right">
+        <ul class="list-inline ui-margin-15-v ui-right">
             <li class="circle ui-padding-5 ui-border-dual ui-product-black"></li>
         </ul>
-        <span class="left ui-padding-15-v ui-icons-xs">
+        <span class="ui-left ui-padding-15-v ui-icons-xs">
             <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
             <b class="ui-color-black-50">4.6</b>
             <span class="ui-color-black-25">
@@ -188,11 +188,11 @@
         <span class="block">
             <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
         </span>
-        <ul class="list-inline ui-margin-15-v right">
+        <ul class="list-inline ui-margin-15-v ui-right">
             <li class="circle ui-padding-5 ui-border-dual ui-product-pink"></li>
             <li class="circle ui-padding-5 ui-border-dual ui-product-white"></li>
         </ul>
-        <span class="left ui-padding-15-v ui-icons-xs">
+        <span class="ui-left ui-padding-15-v ui-icons-xs">
             <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
             <b class="ui-color-black-50">3.9</b>
             <span class="ui-color-black-25">

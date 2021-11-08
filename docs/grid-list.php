@@ -1257,7 +1257,7 @@
                                 Show only 25 ages.
                             </label>
 
-                            <div class="select form-inline round ui-border-dual ui-ease-form right">
+                            <div class="select form-inline round ui-border-dual ui-ease-form ui-right">
                                 <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="#angle-down"></svg>
                                 <select class="ui-grid-list-show">
                                     <option>10</option>

@@ -92,7 +92,7 @@
     <header class="ui-container form-lg ui-theme-base invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="shadow-lg">
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-15">
-                <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost circle ui-icons-no-opacity right ui-ease-btn ui-hidden-ie">
+                <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost circle ui-icons-no-opacity ui-right ui-ease-btn ui-hidden-ie">
                     <svg class="ui-icon ui-visible-dark"><use href="#moon-fill"/></svg>
                     <svg class="ui-icon ui-visible-light"><use href="#sun-fill"/></svg>
                 </button>

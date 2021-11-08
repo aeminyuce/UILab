@@ -504,7 +504,7 @@
                                     <textarea class="ui-color-black-50 large ui-padding-10" rows="12" placeholder="Generated CSS will be here!"></textarea>
                                     <div class="ui-border-t ui-border-dual">
                                         <div class="inline-block ui-padding-5-r">
-                                            <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost left ui-ease-btn">
+                                            <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-left ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
                                             </button>
                                             <button title="Minify code" name="css" class="generate-min ui-btn ui-btn-square ui-btn-ghost ui-ease-btn">
@@ -872,7 +872,7 @@
                                     <textarea class="ui-color-black-50 large ui-padding-10" rows="12" placeholder="Generated JS will be here!"></textarea>
                                     <div class="ui-border-t ui-border-dual">
                                         <div class="inline-block ui-padding-5-r">
-                                            <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost left ui-ease-btn">
+                                            <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-left ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
                                             </button>
                                             <button title="Minify code" name="js" class="generate-min ui-btn ui-btn-square ui-btn-ghost ui-ease-btn">
@@ -1003,7 +1003,7 @@
                                     <textarea class="ui-color-black-50 large ui-padding-10" rows="12" placeholder="Generated icons will be here!"></textarea>
                                     <div class="ui-border-t ui-border-dual">
                                         <div class="inline-block ui-padding-5-r">
-                                            <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost left ui-ease-btn">
+                                            <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-left ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
                                             </button>
                                             <button title="Minify code" name="ui-icon" class="generate-min ui-btn ui-btn-square ui-btn-ghost ui-ease-btn">

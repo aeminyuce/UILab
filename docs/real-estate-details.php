@@ -77,7 +77,7 @@
                         </div>
                         <div class="ui-padding-30 ui-border-t">
                             <h4 class="ui-margin-15-b">Power Saving Statistics</h4>
-                            <svg class="ui-icon ui-icon-xl left ui-margin-5-t ui-margin-10-r"><use href="#bolt"/></svg>
+                            <svg class="ui-icon ui-icon-xl ui-left ui-margin-5-t ui-margin-10-r"><use href="#bolt"/></svg>
                             <ul class="list-unstyled ui-padding-2-t">
                                 <li><b>Power per Month:</b> 4,86 kWp</li>
                                 <li><b>Yearly Output:</b> 4900 kWp</li>
@@ -294,12 +294,12 @@
                     <span class="sp-5"></span>
                     <div class="align-l ui-icons-no-opacity form-lg ui-ease-1st-btn">
                         <a class="ui-btn block ui-btn-multi round-t" href="#">
-                            <svg class="ui-icon right"><use href="#images"/></svg>
+                            <svg class="ui-icon ui-right"><use href="#images"/></svg>
                             Show All HD Images
                         </a>
                         <span class="sp-1"></span>
                         <a class="ui-btn block ui-btn-multi round-b" href="#">
-                            <svg class="ui-icon right"><use href="#file-pdf"/></svg>
+                            <svg class="ui-icon ui-right"><use href="#file-pdf"/></svg>
                             Download PDF Brochure
                         </a>
                     </div>

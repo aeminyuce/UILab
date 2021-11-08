@@ -699,7 +699,7 @@
                             <img src="img/agriculture/md01.jpg" alt="">
                             <span class="x-large font-readable">
                                 <span class="scroll-v ui-margin-20 set-absolute set-all">
-                                    <svg class="ui-icon ui-icon-xxl left ui-margin-20-r ui-hidden-md ui-current"><use href="#trees"/></svg>
+                                    <svg class="ui-icon ui-icon-xxl ui-left ui-margin-20-r ui-hidden-md ui-current"><use href="#trees"/></svg>
                                     <b>Sed nunc mauris, auctor tristique libero non tristique.</b>
                                     <span class="ui-color-white-25 ui-margin-15-t block">
                                         Nullam mollis molestie magna nec tincidunt. Phasellus mattis aliquet ex, vel gravida dui elementum ut. Ut euismod nisi in tellus luctus dictum et ut nulla. Sed scelerisque rutrum dui, et suscipit diam sagittis quis. Quisque dapibus varius ornare.

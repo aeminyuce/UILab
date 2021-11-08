@@ -87,27 +87,27 @@
                 <div class="ui-row ui-xs-fluid align-l ui-padding-30-b ui-icons-margin-5-l block-2nd ui-ease-2nd-btn">
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-lg circle ui-border" href="#">
-                            Large Button <svg class="ui-icon right"><use href="#settings"/></svg>
+                            Large Button <svg class="ui-icon ui-right"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-lg circle ui-border" href="#">
-                            Large Button <svg class="ui-icon right"><use href="#settings"/></svg>
+                            Large Button <svg class="ui-icon ui-right"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost circle ui-border" href="#">
-                            Default Button <svg class="ui-icon right"><use href="#settings"/></svg>
+                            Default Button <svg class="ui-icon ui-right"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-sm circle ui-border" href="#">
-                            Small Button <svg class="ui-icon right"><use href="#settings"/></svg>
+                            Small Button <svg class="ui-icon ui-right"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-xs circle ui-border" href="#">
-                            Extra Small Button <svg class="ui-icon right"><use href="#settings"/></svg>
+                            Extra Small Button <svg class="ui-icon ui-right"><use href="#settings"/></svg>
                         </a>
                     </div>
 
@@ -115,27 +115,27 @@
 
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-lg circle" href="#">
-                            Large Button <svg class="ui-icon right"><use href="#comment"/></svg>
+                            Large Button <svg class="ui-icon ui-right"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-lg circle" href="#">
-                            Large Button <svg class="ui-icon right"><use href="#comment"/></svg>
+                            Large Button <svg class="ui-icon ui-right"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn circle" href="#">
-                            Default Button <svg class="ui-icon right"><use href="#comment"/></svg>
+                            Default Button <svg class="ui-icon ui-right"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-sm circle" href="#">
-                            Small Button <svg class="ui-icon right"><use href="#comment"/></svg>
+                            Small Button <svg class="ui-icon ui-right"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-xs circle" href="#">
-                            Extra Small Button <svg class="ui-icon right"><use href="#comment"/></svg>
+                            Extra Small Button <svg class="ui-icon ui-right"><use href="#comment"/></svg>
                         </a>
                     </div>
                 </div>

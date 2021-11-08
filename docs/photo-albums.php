@@ -5,7 +5,7 @@
                 <div class="ui-col-250 ui-padding-30 ui-order-sm-last sm-align-c ui-theme-sub">
                     <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid align-l block circle ui-fill-dark-100 ui-ease-btn">
                         Create New
-                        <svg class="ui-icon right"><use href="#plus"/></svg>
+                        <svg class="ui-icon ui-right"><use href="#plus"/></svg>
                     </a>
                     <span class="sp-30"></span>
                     <ul class="list-unstyled hover-r-more-2nd inline-block-2nd large ui-list-spacer-30 ui-padding-10 ui-ease-2nd-layout">
