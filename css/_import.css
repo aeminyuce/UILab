@@ -1813,7 +1813,7 @@ html .ui-row {
 .ui-mobile .ui-hidden-mobile {
   display: none !important;
 }
-.rtl {
+.ui-rtl {
   direction: rtl;
 }
 .full-w,
