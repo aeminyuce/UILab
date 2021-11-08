@@ -225,7 +225,7 @@
     <!-- home links: start -->
     <div class="ui-fixed home-links align-c form-lg ui-theme-farmer2 ui-set-relative">
         <div class="ui-carousel" data-ui-col="4" data-ui-col-md="2" data-ui-col-sm="2" data-ui-col-xs="1" data-ui-slide="4000">
-            <div class="ui-carousel-slider ui-icons-xxl hover-shadow-2nd hover-scale-2nd ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
+            <div class="ui-carousel-slider ui-icons-xxl ui-hover-shadow-2nd ui-hover-scale-2nd ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
                 <div class="ui-slide-content ui-padding-15">
                     <div class="ui-card ui-padding-15 ui-full-h ui-shadow-lg ui-ease-layout">
@@ -363,7 +363,7 @@
             </div>
 
             <div class="ui-tab-content ui-padding-10 ui-open ui-open-ease">
-                <div class="ui-row ui-sm-fluid ui-icons-sm hover-shadow-2nd hover-t-2nd">
+                <div class="ui-row ui-sm-fluid ui-icons-sm ui-hover-shadow-2nd ui-hover-t-2nd">
                     <div class="ui-col-3 ui-col-md-6">
                         <a class="ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
 

@@ -47,7 +47,7 @@ ui.calendar = {
 
     // outer classnames
     nameIcon: 'ui-icon',
-    nameHover: 'hover',
+    nameHover: 'ui-hover',
     nameRound: 'ui-round',
 
     // styling classnames

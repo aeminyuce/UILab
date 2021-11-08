@@ -221,7 +221,7 @@
 
                         <span class="sp-30"></span>
 
-                        <div class="ui-row ui-row-gap-lg align-c hover-shadow-2nd hover-t-2nd">
+                        <div class="ui-row ui-row-gap-lg align-c ui-hover-shadow-2nd ui-hover-t-2nd">
                             <div class="ui-col-4 ui-col-md-6">
                                 <a class="ui-card ui-padding-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=login-page">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-login-page.jpg" alt="Login Page">

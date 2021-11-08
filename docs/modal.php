@@ -264,7 +264,7 @@
                 </div>
             </div>
 
-            <div class="ui-row ui-xs-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity hover-t-more-2nd ui-icons-margin-5-v ui-theme-base form-lg ui-ease-2nd-btn">
+            <div class="ui-row ui-xs-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity ui-hover-t-more-2nd ui-icons-margin-5-v ui-theme-base form-lg ui-ease-2nd-btn">
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#news"/></svg>

@@ -259,7 +259,7 @@
                         </div>
                     </div>
 
-                    <div class="products-list ui-row form-lg hover-shadow-2nd ui-ease-2nd-layout hover-t-2nd">
+                    <div class="products-list ui-row form-lg ui-hover-shadow-2nd ui-ease-2nd-layout ui-hover-t-2nd">
                         <div class="ui-col-4 ui-col-sm-6">
                             <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">

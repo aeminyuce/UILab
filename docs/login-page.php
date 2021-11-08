@@ -42,7 +42,7 @@
 
                     <span class="sp-30"></span>
 
-                    <button type="submit" class="go-signup-btn ui-btn ui-color-white ui-block ui-round hover-scale hover-shadow ui-ease-btn">
+                    <button type="submit" class="go-signup-btn ui-btn ui-color-white ui-block ui-round ui-hover-scale ui-hover-shadow ui-ease-btn">
                         <b>LOGIN</b>
                     </button>
                     <span class="sp-15"></span>
@@ -66,7 +66,7 @@
 
                     <span class="sp-30"></span>
 
-                    <button type="submit" class="go-signup-btn ui-btn ui-color-white ui-block ui-round hover-scale hover-shadow ui-ease-btn">
+                    <button type="submit" class="go-signup-btn ui-btn ui-color-white ui-block ui-round ui-hover-scale ui-hover-shadow ui-ease-btn">
                         <b>Reset Password</b>
                     </button>
                     <span class="sp-15"></span>
@@ -86,7 +86,7 @@
                     <h1 class="ui-hidden-md">Create your account</h1>
                     <p class="x-large ui-color-white-25">Sign up to create, discover and connect with the global community.</p>
                     <span class="sp-30 ui-margin-10-v"></span>
-                    <a href="?l=sign-up-page" class="login-btn ui-btn ui-btn-lg ui-btn-sm-fluid ui-padding-30-h ui-circle hover-scale hover-shadow ui-ease-btn"><b>SIGN UP NOW</b></a>
+                    <a href="?l=sign-up-page" class="login-btn ui-btn ui-btn-lg ui-btn-sm-fluid ui-padding-30-h ui-circle ui-hover-scale ui-hover-shadow ui-ease-btn"><b>SIGN UP NOW</b></a>
                 </div>
 
                 <div class="login-icons ui-icons-black">

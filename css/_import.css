@@ -2008,64 +2008,64 @@ html .ui-row {
 .ui-opacity-full {
   opacity: 0 !important;
 }
-.ui-desktop .hover-opacity:hover,
-.ui-desktop .hover-opacity-1st > *:hover,
-.ui-desktop .hover-opacity-2nd > * > *:hover {
+.ui-desktop .ui-hover-opacity:hover,
+.ui-desktop .ui-hover-opacity-1st > *:hover,
+.ui-desktop .ui-hover-opacity-2nd > * > *:hover {
   opacity: 0.75;
 }
-.ui-desktop .hover-shadow:hover,
-.ui-desktop .hover-shadow-1st > *:hover,
-.ui-desktop .hover-shadow-2nd > * > *:hover {
+.ui-desktop .ui-hover-shadow:hover,
+.ui-desktop .ui-hover-shadow-1st > *:hover,
+.ui-desktop .ui-hover-shadow-2nd > * > *:hover {
   box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
 }
-.ui-desktop .hover-scale:hover,
-.ui-desktop .hover-scale-1st > *:hover,
-.ui-desktop .hover-scale-2nd > * > *:hover {
+.ui-desktop .ui-hover-scale:hover,
+.ui-desktop .ui-hover-scale-1st > *:hover,
+.ui-desktop .ui-hover-scale-2nd > * > *:hover {
   transform: scale(1.06);
 }
-.ui-desktop .hover-scale-more:hover,
-.ui-desktop .hover-scale-more-1st > *:hover,
-.ui-desktop .hover-scale-more-2nd > * > *:hover {
+.ui-desktop .ui-hover-scale-more:hover,
+.ui-desktop .ui-hover-scale-more-1st > *:hover,
+.ui-desktop .ui-hover-scale-more-2nd > * > *:hover {
   transform: scale(1.2);
 }
-.ui-desktop .hover-t:hover,
-.ui-desktop .hover-t-1st > *:hover,
-.ui-desktop .hover-t-2nd > * > *:hover {
+.ui-desktop .ui-hover-t:hover,
+.ui-desktop .ui-hover-t-1st > *:hover,
+.ui-desktop .ui-hover-t-2nd > * > *:hover {
   transform: translateY(-1%);
 }
-.ui-desktop .hover-t-more:hover,
-.ui-desktop .hover-t-more-1st > *:hover,
-.ui-desktop .hover-t-more-2nd > * > *:hover {
+.ui-desktop .ui-hover-t-more:hover,
+.ui-desktop .ui-hover-t-more-1st > *:hover,
+.ui-desktop .ui-hover-t-more-2nd > * > *:hover {
   transform: translateY(-5%);
 }
-.ui-desktop .hover-r:hover,
-.ui-desktop .hover-r-1st > *:hover,
-.ui-desktop .hover-r-2nd > * > *:hover {
+.ui-desktop .ui-hover-r:hover,
+.ui-desktop .ui-hover-r-1st > *:hover,
+.ui-desktop .ui-hover-r-2nd > * > *:hover {
   transform: translateX(1%);
 }
-.ui-desktop .hover-r-more:hover,
-.ui-desktop .hover-r-more-1st > *:hover,
-.ui-desktop .hover-r-more-2nd > * > *:hover {
+.ui-desktop .ui-hover-r-more:hover,
+.ui-desktop .ui-hover-r-more-1st > *:hover,
+.ui-desktop .ui-hover-r-more-2nd > * > *:hover {
   transform: translateX(5%);
 }
-.ui-desktop .hover-b:hover,
-.ui-desktop .hover-b-1st > *:hover,
-.ui-desktop .hover-b-2nd > * > *:hover {
+.ui-desktop .ui-hover-b:hover,
+.ui-desktop .ui-hover-b-1st > *:hover,
+.ui-desktop .ui-hover-b-2nd > * > *:hover {
   transform: translateY(1%);
 }
-.ui-desktop .hover-b-more:hover,
-.ui-desktop .hover-b-more-1st > *:hover,
-.ui-desktop .hover-b-more-2nd > * > *:hover {
+.ui-desktop .ui-hover-b-more:hover,
+.ui-desktop .ui-hover-b-more-1st > *:hover,
+.ui-desktop .ui-hover-b-more-2nd > * > *:hover {
   transform: translateY(5%);
 }
-.ui-desktop .hover-l:hover,
-.ui-desktop .hover-l-1st > *:hover,
-.ui-desktop .hover-l-2nd > * > *:hover {
+.ui-desktop .ui-hover-l:hover,
+.ui-desktop .ui-hover-l-1st > *:hover,
+.ui-desktop .ui-hover-l-2nd > * > *:hover {
   transform: translateX(-1%);
 }
-.ui-desktop .hover-l-more:hover,
-.ui-desktop .hover-l-more-1st > *:hover,
-.ui-desktop .hover-l-more-2nd > * > *:hover {
+.ui-desktop .ui-hover-l-more:hover,
+.ui-desktop .ui-hover-l-more-1st > *:hover,
+.ui-desktop .ui-hover-l-more-2nd > * > *:hover {
   transform: translateX(-5%);
 }
 .ui-mobile .ui-scroll,
@@ -9629,38 +9629,38 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-gray .ui-fill-dark-300:not([class*="ui-theme-"]) {
   background-color: hsl(0, 0%, 45%);
 }
-.ui-desktop .ui-theme-gray.ui-fill-light-100.hover:hover,
-.ui-desktop .ui-theme-gray .ui-fill-light-100:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-gray.ui-fill-light-100.ui-hover:hover,
+.ui-desktop .ui-theme-gray .ui-fill-light-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-gray.ui-fill-light-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-gray .ui-fill-light-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(0, 0%, 80%, 0.3);
 }
-.ui-desktop .ui-theme-gray.ui-fill-light-200.hover:hover,
-.ui-desktop .ui-theme-gray .ui-fill-light-200:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-gray.ui-fill-light-200.ui-hover:hover,
+.ui-desktop .ui-theme-gray .ui-fill-light-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-gray.ui-fill-light-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-gray .ui-fill-light-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(0, 0%, 85%, 0.5);
 }
-.ui-desktop .ui-theme-gray.ui-fill-light-300.hover:hover,
-.ui-desktop .ui-theme-gray .ui-fill-light-300:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-gray.ui-fill-light-300.ui-hover:hover,
+.ui-desktop .ui-theme-gray .ui-fill-light-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-gray.ui-fill-light-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-gray .ui-fill-light-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(0, 0%, 90%, 0.7);
 }
-.ui-desktop .ui-theme-gray.ui-fill-dark-100.hover:hover,
-.ui-desktop .ui-theme-gray .ui-fill-dark-100:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-gray.ui-fill-dark-100.ui-hover:hover,
+.ui-desktop .ui-theme-gray .ui-fill-dark-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-gray.ui-fill-dark-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-gray .ui-fill-dark-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(0, 0%, 85%);
 }
-.ui-desktop .ui-theme-gray.ui-fill-dark-200.hover:hover,
-.ui-desktop .ui-theme-gray .ui-fill-dark-200:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-gray.ui-fill-dark-200.ui-hover:hover,
+.ui-desktop .ui-theme-gray .ui-fill-dark-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-gray.ui-fill-dark-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-gray .ui-fill-dark-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(0, 0%, 90%);
 }
-.ui-desktop .ui-theme-gray.ui-fill-dark-300.hover:hover,
-.ui-desktop .ui-theme-gray .ui-fill-dark-300:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-gray.ui-fill-dark-300.ui-hover:hover,
+.ui-desktop .ui-theme-gray .ui-fill-dark-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-gray.ui-fill-dark-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-gray .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(0, 0%, 95%);
@@ -9705,38 +9705,38 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-green .ui-fill-dark-300:not([class*="ui-theme-"]) {
   background-color: hsl(142, 82%, 17%);
 }
-.ui-desktop .ui-theme-green.ui-fill-light-100.hover:hover,
-.ui-desktop .ui-theme-green .ui-fill-light-100:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-green.ui-fill-light-100.ui-hover:hover,
+.ui-desktop .ui-theme-green .ui-fill-light-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-green.ui-fill-light-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-green .ui-fill-light-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(142, 82%, 52%, 0.3);
 }
-.ui-desktop .ui-theme-green.ui-fill-light-200.hover:hover,
-.ui-desktop .ui-theme-green .ui-fill-light-200:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-green.ui-fill-light-200.ui-hover:hover,
+.ui-desktop .ui-theme-green .ui-fill-light-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-green.ui-fill-light-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-green .ui-fill-light-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(142, 82%, 57%, 0.5);
 }
-.ui-desktop .ui-theme-green.ui-fill-light-300.hover:hover,
-.ui-desktop .ui-theme-green .ui-fill-light-300:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-green.ui-fill-light-300.ui-hover:hover,
+.ui-desktop .ui-theme-green .ui-fill-light-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-green.ui-fill-light-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-green .ui-fill-light-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(142, 82%, 62%, 0.7);
 }
-.ui-desktop .ui-theme-green.ui-fill-dark-100.hover:hover,
-.ui-desktop .ui-theme-green .ui-fill-dark-100:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-green.ui-fill-dark-100.ui-hover:hover,
+.ui-desktop .ui-theme-green .ui-fill-dark-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-green.ui-fill-dark-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-green .ui-fill-dark-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(142, 82%, 57%);
 }
-.ui-desktop .ui-theme-green.ui-fill-dark-200.hover:hover,
-.ui-desktop .ui-theme-green .ui-fill-dark-200:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-green.ui-fill-dark-200.ui-hover:hover,
+.ui-desktop .ui-theme-green .ui-fill-dark-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-green.ui-fill-dark-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-green .ui-fill-dark-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(142, 82%, 62%);
 }
-.ui-desktop .ui-theme-green.ui-fill-dark-300.hover:hover,
-.ui-desktop .ui-theme-green .ui-fill-dark-300:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-green.ui-fill-dark-300.ui-hover:hover,
+.ui-desktop .ui-theme-green .ui-fill-dark-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-green.ui-fill-dark-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-green .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(142, 82%, 67%);
@@ -9781,38 +9781,38 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-yellow .ui-fill-dark-300:not([class*="ui-theme-"]) {
   background-color: hsl(42, 100%, 20%);
 }
-.ui-desktop .ui-theme-yellow.ui-fill-light-100.hover:hover,
-.ui-desktop .ui-theme-yellow .ui-fill-light-100:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-yellow.ui-fill-light-100.ui-hover:hover,
+.ui-desktop .ui-theme-yellow .ui-fill-light-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-yellow.ui-fill-light-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-yellow .ui-fill-light-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(42, 100%, 55%, 0.3);
 }
-.ui-desktop .ui-theme-yellow.ui-fill-light-200.hover:hover,
-.ui-desktop .ui-theme-yellow .ui-fill-light-200:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-yellow.ui-fill-light-200.ui-hover:hover,
+.ui-desktop .ui-theme-yellow .ui-fill-light-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-yellow.ui-fill-light-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-yellow .ui-fill-light-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(42, 100%, 60%, 0.5);
 }
-.ui-desktop .ui-theme-yellow.ui-fill-light-300.hover:hover,
-.ui-desktop .ui-theme-yellow .ui-fill-light-300:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-yellow.ui-fill-light-300.ui-hover:hover,
+.ui-desktop .ui-theme-yellow .ui-fill-light-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-yellow.ui-fill-light-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-yellow .ui-fill-light-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(42, 100%, 65%, 0.7);
 }
-.ui-desktop .ui-theme-yellow.ui-fill-dark-100.hover:hover,
-.ui-desktop .ui-theme-yellow .ui-fill-dark-100:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-yellow.ui-fill-dark-100.ui-hover:hover,
+.ui-desktop .ui-theme-yellow .ui-fill-dark-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-yellow.ui-fill-dark-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-yellow .ui-fill-dark-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(42, 100%, 60%);
 }
-.ui-desktop .ui-theme-yellow.ui-fill-dark-200.hover:hover,
-.ui-desktop .ui-theme-yellow .ui-fill-dark-200:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-yellow.ui-fill-dark-200.ui-hover:hover,
+.ui-desktop .ui-theme-yellow .ui-fill-dark-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-yellow.ui-fill-dark-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-yellow .ui-fill-dark-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(42, 100%, 65%);
 }
-.ui-desktop .ui-theme-yellow.ui-fill-dark-300.hover:hover,
-.ui-desktop .ui-theme-yellow .ui-fill-dark-300:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-yellow.ui-fill-dark-300.ui-hover:hover,
+.ui-desktop .ui-theme-yellow .ui-fill-dark-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-yellow.ui-fill-dark-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-yellow .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(42, 100%, 70%);
@@ -9857,38 +9857,38 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-orange .ui-fill-dark-300:not([class*="ui-theme-"]) {
   background-color: hsl(30, 100%, 25%);
 }
-.ui-desktop .ui-theme-orange.ui-fill-light-100.hover:hover,
-.ui-desktop .ui-theme-orange .ui-fill-light-100:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-orange.ui-fill-light-100.ui-hover:hover,
+.ui-desktop .ui-theme-orange .ui-fill-light-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-orange.ui-fill-light-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-orange .ui-fill-light-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(30, 100%, 60%, 0.3);
 }
-.ui-desktop .ui-theme-orange.ui-fill-light-200.hover:hover,
-.ui-desktop .ui-theme-orange .ui-fill-light-200:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-orange.ui-fill-light-200.ui-hover:hover,
+.ui-desktop .ui-theme-orange .ui-fill-light-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-orange.ui-fill-light-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-orange .ui-fill-light-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(30, 100%, 65%, 0.5);
 }
-.ui-desktop .ui-theme-orange.ui-fill-light-300.hover:hover,
-.ui-desktop .ui-theme-orange .ui-fill-light-300:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-orange.ui-fill-light-300.ui-hover:hover,
+.ui-desktop .ui-theme-orange .ui-fill-light-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-orange.ui-fill-light-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-orange .ui-fill-light-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(30, 100%, 70%, 0.7);
 }
-.ui-desktop .ui-theme-orange.ui-fill-dark-100.hover:hover,
-.ui-desktop .ui-theme-orange .ui-fill-dark-100:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-orange.ui-fill-dark-100.ui-hover:hover,
+.ui-desktop .ui-theme-orange .ui-fill-dark-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-orange.ui-fill-dark-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-orange .ui-fill-dark-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(30, 100%, 65%);
 }
-.ui-desktop .ui-theme-orange.ui-fill-dark-200.hover:hover,
-.ui-desktop .ui-theme-orange .ui-fill-dark-200:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-orange.ui-fill-dark-200.ui-hover:hover,
+.ui-desktop .ui-theme-orange .ui-fill-dark-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-orange.ui-fill-dark-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-orange .ui-fill-dark-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(30, 100%, 70%);
 }
-.ui-desktop .ui-theme-orange.ui-fill-dark-300.hover:hover,
-.ui-desktop .ui-theme-orange .ui-fill-dark-300:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-orange.ui-fill-dark-300.ui-hover:hover,
+.ui-desktop .ui-theme-orange .ui-fill-dark-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-orange.ui-fill-dark-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-orange .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(30, 100%, 75%);
@@ -9933,38 +9933,38 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-red .ui-fill-dark-300:not([class*="ui-theme-"]) {
   background-color: hsl(0, 74%, 30%);
 }
-.ui-desktop .ui-theme-red.ui-fill-light-100.hover:hover,
-.ui-desktop .ui-theme-red .ui-fill-light-100:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-red.ui-fill-light-100.ui-hover:hover,
+.ui-desktop .ui-theme-red .ui-fill-light-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-red.ui-fill-light-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-red .ui-fill-light-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(0, 74%, 65%, 0.3);
 }
-.ui-desktop .ui-theme-red.ui-fill-light-200.hover:hover,
-.ui-desktop .ui-theme-red .ui-fill-light-200:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-red.ui-fill-light-200.ui-hover:hover,
+.ui-desktop .ui-theme-red .ui-fill-light-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-red.ui-fill-light-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-red .ui-fill-light-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(0, 74%, 70%, 0.5);
 }
-.ui-desktop .ui-theme-red.ui-fill-light-300.hover:hover,
-.ui-desktop .ui-theme-red .ui-fill-light-300:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-red.ui-fill-light-300.ui-hover:hover,
+.ui-desktop .ui-theme-red .ui-fill-light-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-red.ui-fill-light-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-red .ui-fill-light-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(0, 74%, 75%, 0.7);
 }
-.ui-desktop .ui-theme-red.ui-fill-dark-100.hover:hover,
-.ui-desktop .ui-theme-red .ui-fill-dark-100:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-red.ui-fill-dark-100.ui-hover:hover,
+.ui-desktop .ui-theme-red .ui-fill-dark-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-red.ui-fill-dark-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-red .ui-fill-dark-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(0, 74%, 70%);
 }
-.ui-desktop .ui-theme-red.ui-fill-dark-200.hover:hover,
-.ui-desktop .ui-theme-red .ui-fill-dark-200:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-red.ui-fill-dark-200.ui-hover:hover,
+.ui-desktop .ui-theme-red .ui-fill-dark-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-red.ui-fill-dark-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-red .ui-fill-dark-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(0, 74%, 75%);
 }
-.ui-desktop .ui-theme-red.ui-fill-dark-300.hover:hover,
-.ui-desktop .ui-theme-red .ui-fill-dark-300:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-red.ui-fill-dark-300.ui-hover:hover,
+.ui-desktop .ui-theme-red .ui-fill-dark-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-red.ui-fill-dark-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-red .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(0, 74%, 80%);
@@ -10009,38 +10009,38 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-base .ui-fill-dark-300:not([class*="ui-theme-"]) {
   background-color: hsl(226, 52%, 25%);
 }
-.ui-desktop .ui-theme-base.ui-fill-light-100.hover:hover,
-.ui-desktop .ui-theme-base .ui-fill-light-100:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-base.ui-fill-light-100.ui-hover:hover,
+.ui-desktop .ui-theme-base .ui-fill-light-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-base.ui-fill-light-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-base .ui-fill-light-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(226, 52%, 60%, 0.3);
 }
-.ui-desktop .ui-theme-base.ui-fill-light-200.hover:hover,
-.ui-desktop .ui-theme-base .ui-fill-light-200:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-base.ui-fill-light-200.ui-hover:hover,
+.ui-desktop .ui-theme-base .ui-fill-light-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-base.ui-fill-light-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-base .ui-fill-light-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(226, 52%, 65%, 0.5);
 }
-.ui-desktop .ui-theme-base.ui-fill-light-300.hover:hover,
-.ui-desktop .ui-theme-base .ui-fill-light-300:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-base.ui-fill-light-300.ui-hover:hover,
+.ui-desktop .ui-theme-base .ui-fill-light-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-base.ui-fill-light-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-base .ui-fill-light-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(226, 52%, 70%, 0.7);
 }
-.ui-desktop .ui-theme-base.ui-fill-dark-100.hover:hover,
-.ui-desktop .ui-theme-base .ui-fill-dark-100:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-base.ui-fill-dark-100.ui-hover:hover,
+.ui-desktop .ui-theme-base .ui-fill-dark-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-base.ui-fill-dark-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-base .ui-fill-dark-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(226, 52%, 65%);
 }
-.ui-desktop .ui-theme-base.ui-fill-dark-200.hover:hover,
-.ui-desktop .ui-theme-base .ui-fill-dark-200:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-base.ui-fill-dark-200.ui-hover:hover,
+.ui-desktop .ui-theme-base .ui-fill-dark-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-base.ui-fill-dark-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-base .ui-fill-dark-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(226, 52%, 70%);
 }
-.ui-desktop .ui-theme-base.ui-fill-dark-300.hover:hover,
-.ui-desktop .ui-theme-base .ui-fill-dark-300:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-base.ui-fill-dark-300.ui-hover:hover,
+.ui-desktop .ui-theme-base .ui-fill-dark-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-base.ui-fill-dark-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-base .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(226, 52%, 75%);
@@ -10085,38 +10085,38 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-theme-sub .ui-fill-dark-300:not([class*="ui-theme-"]) {
   background-color: hsl(206, 87%, 25%);
 }
-.ui-desktop .ui-theme-sub.ui-fill-light-100.hover:hover,
-.ui-desktop .ui-theme-sub .ui-fill-light-100:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-sub.ui-fill-light-100.ui-hover:hover,
+.ui-desktop .ui-theme-sub .ui-fill-light-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-sub.ui-fill-light-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-sub .ui-fill-light-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(206, 87%, 60%, 0.3);
 }
-.ui-desktop .ui-theme-sub.ui-fill-light-200.hover:hover,
-.ui-desktop .ui-theme-sub .ui-fill-light-200:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-sub.ui-fill-light-200.ui-hover:hover,
+.ui-desktop .ui-theme-sub .ui-fill-light-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-sub.ui-fill-light-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-sub .ui-fill-light-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(206, 87%, 65%, 0.5);
 }
-.ui-desktop .ui-theme-sub.ui-fill-light-300.hover:hover,
-.ui-desktop .ui-theme-sub .ui-fill-light-300:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-sub.ui-fill-light-300.ui-hover:hover,
+.ui-desktop .ui-theme-sub .ui-fill-light-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-sub.ui-fill-light-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-sub .ui-fill-light-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsla(206, 87%, 70%, 0.7);
 }
-.ui-desktop .ui-theme-sub.ui-fill-dark-100.hover:hover,
-.ui-desktop .ui-theme-sub .ui-fill-dark-100:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-sub.ui-fill-dark-100.ui-hover:hover,
+.ui-desktop .ui-theme-sub .ui-fill-dark-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-sub.ui-fill-dark-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-sub .ui-fill-dark-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(206, 87%, 65%);
 }
-.ui-desktop .ui-theme-sub.ui-fill-dark-200.hover:hover,
-.ui-desktop .ui-theme-sub .ui-fill-dark-200:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-sub.ui-fill-dark-200.ui-hover:hover,
+.ui-desktop .ui-theme-sub .ui-fill-dark-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-sub.ui-fill-dark-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-sub .ui-fill-dark-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(206, 87%, 70%);
 }
-.ui-desktop .ui-theme-sub.ui-fill-dark-300.hover:hover,
-.ui-desktop .ui-theme-sub .ui-fill-dark-300:not([class*="ui-theme-"]).hover:hover,
+.ui-desktop .ui-theme-sub.ui-fill-dark-300.ui-hover:hover,
+.ui-desktop .ui-theme-sub .ui-fill-dark-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-sub.ui-fill-dark-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-sub .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(206, 87%, 75%);

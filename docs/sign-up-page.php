@@ -130,7 +130,7 @@
 
                                     <span class="sp-30 ui-margin-15-v"></span>
 
-                                    <button type="submit" class="signup-btn ui-btn ui-btn-md-fluid ui-color-white ui-circle hover-scale hover-shadow ui-ease-btn">
+                                    <button type="submit" class="signup-btn ui-btn ui-btn-md-fluid ui-color-white ui-circle ui-hover-scale ui-hover-shadow ui-ease-btn">
                                         <b>SIGN UP NOW</b>
                                     </button>
                                     <span class="sp-30"></span>

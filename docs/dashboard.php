@@ -282,7 +282,7 @@
                                         <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                         <li>
                                             Lorem ipsum dolor sit amet.
-                                            <span class="ui-photos-holder ui-margin-5-t hover-scale-more-2nd ui-ease-2nd-layout">
+                                            <span class="ui-photos-holder ui-margin-5-t ui-hover-scale-more-2nd ui-ease-2nd-layout">
                                                 <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image.jpg" alt=""></a>
                                                 <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image2.jpg" alt=""></a>
                                                 <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image3.jpg" alt=""></a>
@@ -400,7 +400,7 @@
 
                 <div class="ui-right ui-margin-10-l ui-xs-no-margin">
                     <span class="ui-dropdown ui-menu-l ui-margin-5-l ui-right ui-ease-dropdown">
-                        <button class="ui-btn ui-no-padding ui-circle hover-scale-more">
+                        <button class="ui-btn ui-no-padding ui-circle ui-hover-scale-more">
                             <img class="ui-img-photo ui-img-photo-sm ui-circle" src="img/profile-image.jpg" alt="">
                         </button>
                         <ul class="ui-dropdown-menu ui-has-grid align-c ui-icons-lg ui-round ui-shadow-lg">
@@ -1060,7 +1060,7 @@
                                                 <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                                 <li>
                                                     Lorem ipsum dolor sit amet.
-                                                    <span class="ui-photos-holder ui-margin-5-t hover-scale-more-2nd ui-ease-2nd-layout">
+                                                    <span class="ui-photos-holder ui-margin-5-t ui-hover-scale-more-2nd ui-ease-2nd-layout">
                                                         <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image.jpg" alt=""></a>
                                                         <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image2.jpg" alt=""></a>
                                                         <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image3.jpg" alt=""></a>
@@ -1792,7 +1792,7 @@
                 </div>
             </div>
 
-            <div class="ui-row ui-xs-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity hover-t-more-2nd ui-icons-margin-5-v ui-theme-panel ui-ease-2nd-btn">
+            <div class="ui-row ui-xs-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity ui-hover-t-more-2nd ui-icons-margin-5-v ui-theme-panel ui-ease-2nd-btn">
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#news"/></svg>

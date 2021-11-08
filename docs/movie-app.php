@@ -138,7 +138,7 @@
                                         <h2 class="font-bold">Related Video</h2>
                                         <b class="large">Captain Marvel (2019)</b>
                                         <p class="ui-margin-10-v font-readable">After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.</p>
-                                        <div class="ui-photos-holder ui-padding-15-h hover-scale-more-2nd ui-ease-2nd-layout">
+                                        <div class="ui-photos-holder ui-padding-15-h ui-hover-scale-more-2nd ui-ease-2nd-layout">
                                             <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image.jpg" alt=""></a>
                                             <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image2.jpg" alt=""></a>
                                             <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image3.jpg" alt=""></a>
@@ -156,7 +156,7 @@
                 </div>
 
                 <div class="ui-carousel ui-half-sized ui-margin-15-h ui-md-no-margin" data-ui-col-xl="8" data-ui-col-lg="6" data-ui-col="3" data-ui-col-md="4" data-ui-col-sm="4" data-ui-col-xs="2">
-                    <div class="ui-carousel-slider ui-block-2nd hover-scale-2nd ui-ease-layout ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
+                    <div class="ui-carousel-slider ui-block-2nd ui-hover-scale-2nd ui-ease-layout ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_01.jpg" alt="">
@@ -308,7 +308,7 @@
                 </div>
 
                 <div class="ui-carousel ui-half-sized ui-margin-15-h ui-md-no-margin" data-ui-col-xl="6" data-ui-col-lg="6" data-ui-col="3" data-ui-col-md="4" data-ui-col-sm="4" data-ui-col-xs="2">
-                    <div class="ui-carousel-slider ui-block-2nd hover-scale-2nd ui-ease-layout ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
+                    <div class="ui-carousel-slider ui-block-2nd ui-hover-scale-2nd ui-ease-layout ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                         <div class="ui-slide-content ui-padding-15">
                             <a class="ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_01.jpg" alt="">
@@ -438,7 +438,7 @@
                 </div>
             </div>
 
-            <div class="ui-row ui-no-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity ui-icons-margin-5-v hover-t-more-2nd ui-theme-base ui-ease-2nd-btn">
+            <div class="ui-row ui-no-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity ui-icons-margin-5-v ui-hover-t-more-2nd ui-theme-base ui-ease-2nd-btn">
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#tv"/></svg>

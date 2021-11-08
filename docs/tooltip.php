@@ -33,7 +33,7 @@
                 </div>
 
                 <h3>Using with Icons</h3>
-                <div class="ui-theme-sub ui-icons-xl ui-current ui-padding-30-b hover-t-more-1st ui-ease-1st-layout">
+                <div class="ui-theme-sub ui-icons-xl ui-current ui-padding-30-b ui-hover-t-more-1st ui-ease-1st-layout">
                     <svg class="ui-icon" data-ui-tooltip title="Like!"><use href="#heart"/></svg>
                     <svg class="ui-icon" data-ui-tooltip title="Somewhere on Earth!"><use href="#marker"/></svg>
                     <svg class="ui-icon" data-ui-tooltip title="Call us now 555 55 55"><use href="#phone"/></svg>
