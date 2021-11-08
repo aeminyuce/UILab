@@ -140,7 +140,7 @@
                             </div>
                             <div class="why-join ui-col-lg-500 ui-col-400 ui-col-md-350 ui-order-sm-first sm-align-c ui-padding-30">
 
-                                <img class="automargin" src="img/sign-up.png" alt="Join Us" width="280">
+                                <img class="ui-auto-margin" src="img/sign-up.png" alt="Join Us" width="280">
                                 <span class="sp-30"></span>
 
                                 <h3 class="largest">

@@ -802,7 +802,7 @@
                                     </div>
                                     <div class="ui-row ui-row-gap-lg-h ui-no-fluid">
                                         <div class="ui-col-6">
-                                            <div class="ui-donut-chart automargin ui-ease-donut-chart" style="max-width: 150px;">
+                                            <div class="ui-donut-chart ui-auto-margin ui-ease-donut-chart" style="max-width: 150px;">
                                                 <strong>
                                                     <b class="font-color-black-50 ui-margin-2-b block">69%</b>
                                                     Payments
@@ -814,7 +814,7 @@
                                             </div>
                                         </div>
                                         <div class="ui-col-6">
-                                            <div class="ui-pie-chart automargin ui-ease-pie-chart" data-ui-text="Profit" style="max-width: 150px;">
+                                            <div class="ui-pie-chart ui-auto-margin ui-ease-pie-chart" data-ui-text="Profit" style="max-width: 150px;">
                                                 <ul>
                                                     <li data-ui-percent="70" data-ui-fill="hsl(97, 70%, 70%)"></li>
                                                 </ul>

@@ -22,10 +22,10 @@
 .ui-rtl { direction: rtl; }
 .ui-full-w { width: 100% !important; }
 .ui-full-h { height: 100% !important; }
-.auto-h { height: auto !important; }
+.ui-auto-h { height: auto !important; }
+.ui-auto-margin { margin-right: auto; margin-left: auto; display: block; }
 .left { float: left; }
 .right { float: right; }
-.automargin { margin-right: auto; margin-left: auto; display: block; }
 .no-user-select { @no-user-select(); }
 .no-float { float: none !important; }
 
@@ -54,7 +54,7 @@
     &:extend(.ui-full-w);
 }
 .img-fluid {
-    .auto-h();
+    .ui-auto-h();
     &:extend(.ui-full-w);
 }
 .highlight {
@@ -291,7 +291,7 @@ each(@increases, {
     .ui-visible-sm { .ui-hidden(); }
 }
 @media (@md-start) and (@md-finish) {
-    .img-md-fluid { .ui-full-w(); .auto-h(); }
+    .img-md-fluid { .ui-full-w(); .ui-auto-h(); }
     .no-float-md { .no-float(); }
     .clearfix-md { .clearfix(); }
 
@@ -315,7 +315,7 @@ each(@increases, {
 }
 @media (@sm-start) and (@sm-finish) {
     .img- {
-        &md-fluid,&sm-fluid { .ui-full-w(); .auto-h(); }
+        &md-fluid,&sm-fluid { .ui-full-w(); .ui-auto-h(); }
     }
     .no-float {
         &-md,&-sm { .no-float(); }
@@ -341,7 +341,7 @@ each(@increases, {
     .ui-hidden-xs { .ui-hidden(); }
 
     .img- {
-        &md-fluid,&sm-fluid,&xs-fluid { .ui-full-w(); .auto-h(); }
+        &md-fluid,&sm-fluid,&xs-fluid { .ui-full-w(); .ui-auto-h(); }
     }
     .no-float {
         &-md,&-sm,&-xs { .no-float(); }

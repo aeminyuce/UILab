@@ -1824,19 +1824,19 @@ html .ui-row {
 .ui-full-h {
   height: 100% !important;
 }
-.auto-h {
+.ui-auto-h {
   height: auto !important;
+}
+.ui-auto-margin {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }
 .left {
   float: left;
 }
 .right {
   float: right;
-}
-.automargin {
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
 }
 .no-user-select {
   -ms-user-select: none;
