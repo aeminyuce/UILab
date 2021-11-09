@@ -62,7 +62,7 @@
 
                     <div class="ui-card ui-round ui-shadow-lg">
                         <div class="ui-padding-30 ui-font-16 ui-font-readable">
-                            <h4>Details</h4>
+                            <h4 class="ui-h4">Details</h4>
                             Each villa has been meticulously designed to meet all the demands that a luxury villa has to provide as well as offer a contemporary image of great beauty.
                             <span class="ui-sp-20"></span>
                             Villas, although of different size, have 4 bedrooms and 5 bathrooms located on ground floor and first. A large basement will locate another bedroom service, bathroom and common areas that can be allocated to gym, cinema, game room.
@@ -76,7 +76,7 @@
                             The development of 3 luxury villas is planned in the residential neighborhood.
                         </div>
                         <div class="ui-padding-30 ui-border-t">
-                            <h4 class="ui-margin-15-b">Power Saving Statistics</h4>
+                            <h4 class="ui-h4 ui-margin-15-b">Power Saving Statistics</h4>
                             <svg class="ui-icon ui-icon-xl ui-left ui-margin-5-t ui-margin-10-r"><use href="#bolt"/></svg>
                             <ul class="ui-list-unstyled ui-padding-2-t">
                                 <li><b>Power per Month:</b> 4,86 kWp</li>
@@ -253,7 +253,7 @@
                 </div>
 
                 <div class="ui-card ui-padding-30 ui-round ui-shadow-lg">
-                    <h4>Other Details</h4>
+                    <h4 class="ui-h4">Other Details</h4>
                     <ul class="ui-list-unstyled ui-list-spacer-15 ui-icons-lg ui-icons-margin-5-r">
                         <li>
                             <span class="ui-color-black-25 ui-block ui-margin-5-b">House Type</span>

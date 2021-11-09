@@ -3,7 +3,7 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-30">
 
-                <h3>Responsive Grid</h3>
+                <h3 class="ui-h3">Responsive Grid</h3>
                 <div class="ui-padding-30-b ui-font-ellipsis ui-theme-sub">
 
                     <div class="ui-row ui-no-fluid">
@@ -143,7 +143,7 @@
 
                     <span class="ui-sp-20"></span>
 
-                    <h5 class="ui-font-bold ui-margin-5-b">Ordered Grids:</h5>
+                    <h5 class="ui-h5 ui-font-bold ui-margin-5-b">Ordered Grids:</h5>
                     <div class="ui-row ui-no-fluid">
                         <div class="ui-col-9">
                             <div class="ui-fill-dark-100 ui-padding-10-v ui-padding-5-h ui-round ui-no-scroll">ui-col-10</div>
@@ -174,7 +174,7 @@
 
                     <span class="ui-sp-20"></span>
 
-                    <h5 class="ui-font-bold ui-margin-5-b">Custom Grids:</h5>
+                    <h5 class="ui-h5 ui-font-bold ui-margin-5-b">Custom Grids:</h5>
                     <div class="ui-row ui-no-fluid">
                         <div class="ui-col-5x">
                             <div class="ui-fill-dark-100 ui-padding-10-v ui-padding-5-h ui-round ui-no-scroll">ui-col-5x</div>
@@ -217,7 +217,7 @@
                     </div>
                 </div>
 
-                <h3>Static Grid</h3>
+                <h3 class="ui-h3">Static Grid</h3>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row">
                         <div class="ui-col-static">
@@ -293,7 +293,7 @@
 
                     <span class="ui-sp-30"></span>
 
-                    <h5 class="ui-font-bold ui-margin-5-b">Ordered Static Grids:</h5>
+                    <h5 class="ui-h5 ui-font-bold ui-margin-5-b">Ordered Static Grids:</h5>
 
                     <div class="ui-row">
                         <div class="ui-col-static">
@@ -366,7 +366,7 @@
 
                 </div>
 
-                <h5 class="ui-font-bold ui-margin-5-b">ui-no-fluid Column Reset with Row</h5>
+                <h5 class="ui-h5 ui-font-bold ui-margin-5-b">ui-no-fluid Column Reset with Row</h5>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row ui-no-fluid">
                         <div class="ui-col-8">
@@ -389,7 +389,7 @@
                     </div>
                 </div>
 
-                <h5 class="ui-font-bold ui-margin-5-b">ui-no-fluid Column Reset with Columns</h5>
+                <h5 class="ui-h5 ui-font-bold ui-margin-5-b">ui-no-fluid Column Reset with Columns</h5>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row">
                         <div class="ui-col-8 ui-no-fluid">
@@ -412,7 +412,7 @@
                     </div>
                 </div>
 
-                <h5 class="ui-font-bold ui-margin-5-b">ui-xl-fluid Column Reset with Row</h5>
+                <h5 class="ui-h5 ui-font-bold ui-margin-5-b">ui-xl-fluid Column Reset with Row</h5>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row ui-xl-fluid">
                         <div class="ui-col-8">
@@ -424,7 +424,7 @@
                     </div>
                 </div>
 
-                <h5 class="ui-font-bold ui-margin-5-b">ui-xl-fluid Column Reset with Columns</h5>
+                <h5 class="ui-h5 ui-font-bold ui-margin-5-b">ui-xl-fluid Column Reset with Columns</h5>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row">
                         <div class="ui-col-8 ui-xl-fluid">
@@ -436,7 +436,7 @@
                     </div>
                 </div>
 
-                <h5 class="ui-font-bold ui-margin-5-b">ui-lg-fluid Column Reset with Row</h5>
+                <h5 class="ui-h5 ui-font-bold ui-margin-5-b">ui-lg-fluid Column Reset with Row</h5>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row ui-lg-fluid">
                         <div class="ui-col-8">
@@ -448,7 +448,7 @@
                     </div>
                 </div>
 
-                <h5 class="ui-font-bold ui-margin-5-b">ui-lg-fluid Column Reset with Columns</h5>
+                <h5 class="ui-h5 ui-font-bold ui-margin-5-b">ui-lg-fluid Column Reset with Columns</h5>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row">
                         <div class="ui-col-8 ui-lg-fluid">
@@ -460,7 +460,7 @@
                     </div>
                 </div>
 
-                <h5 class="ui-font-bold ui-margin-5-b">sm-fluid Column Reset with Row</h5>
+                <h5 class="ui-h5 ui-font-bold ui-margin-5-b">sm-fluid Column Reset with Row</h5>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row ui-sm-fluid">
                         <div class="ui-col-8">
@@ -472,7 +472,7 @@
                     </div>
                 </div>
 
-                <h5 class="ui-font-bold ui-margin-5-b">sm-fluid Column Reset with Columns</h5>
+                <h5 class="ui-h5 ui-font-bold ui-margin-5-b">sm-fluid Column Reset with Columns</h5>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row">
                         <div class="ui-col-8 ui-sm-fluid">
@@ -484,7 +484,7 @@
                     </div>
                 </div>
 
-                <h5 class="ui-font-bold ui-margin-5-b">xs-fluid Column Reset with Row</h5>
+                <h5 class="ui-h5 ui-font-bold ui-margin-5-b">xs-fluid Column Reset with Row</h5>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row ui-xs-fluid">
                         <div class="ui-col-8">
@@ -496,7 +496,7 @@
                     </div>
                 </div>
 
-                <h5 class="ui-font-bold ui-margin-5-b">xs-fluid Column Reset with Columns</h5>
+                <h5 class="ui-h5 ui-font-bold ui-margin-5-b">xs-fluid Column Reset with Columns</h5>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row">
                         <div class="ui-col-8 ui-xs-fluid">
@@ -508,7 +508,7 @@
                     </div>
                 </div>
 
-                <h3>Column Wrapping</h3>
+                <h3 class="ui-h3">Column Wrapping</h3>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row">
                         <div class="ui-col-3 break-9">
@@ -526,7 +526,7 @@
                     </div>
                 </div>
 
-                <h3>Nesting Columns</h3>
+                <h3 class="ui-h3">Nesting Columns</h3>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row">
                         <div class="ui-col-9 ui-fill-dark-100 ui-round">
@@ -543,7 +543,7 @@
                     </div>
                 </div>
 
-                <h3>Column Offsetting</h3>
+                <h3 class="ui-h3">Column Offsetting</h3>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row">
                         <div class="ui-col-4">
@@ -561,7 +561,7 @@
                     </div>
                 </div>
 
-                <h3>Column Ordering</h3>
+                <h3 class="ui-h3">Column Ordering</h3>
                 <div class="ui-padding-30-b ui-theme-sub">
                     <div class="ui-row">
                         <div class="ui-col-9 ui-push-3">

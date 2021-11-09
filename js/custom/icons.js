@@ -59,7 +59,7 @@ ui.onload(function () {
 
             this.previousElementSibling.insertAdjacentHTML(
                 'beforeend',
-                ' <small class="ui-margin-5-v ui-block ui-opacity-half">(' + total + ' icons)</small>'
+                ' <span class="ui-font-16 ui-margin-5-v ui-block ui-opacity-half">(' + total + ' icons)</span>'
             );
 
             totalIcons += total;

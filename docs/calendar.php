@@ -1,7 +1,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed ui-padding-30-v">
 
-        <h3>Calendar Styles</h3>
+        <h3 class="ui-h3">Calendar Styles</h3>
         <div class="ui-row ui-padding-30-b">
             <div class="ui-col-4 ui-col-md-6">
                 <div class="ui-calendar ui-ease-calendar"></div>
@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        <h3>Calendars with Defined Dates</h3>
+        <h3 class="ui-h3">Calendars with Defined Dates</h3>
         <div class="ui-row ui-sm-fluid ui-padding-30-b ui-block-2nd">
             <div class="ui-col-6">
                 <b class="ui-margin-5-b">Previous Month: data-ui-date="prev"</b>
@@ -45,7 +45,7 @@
 
         <form action="#succesful">
 
-            <h3>Calendar Pickers</h3>
+            <h3 class="ui-h3">Calendar Pickers</h3>
             <div class="ui-row ui-sm-fluid ui-padding-30-b ui-ease-2nd-form">
                 <div class="ui-col-12">
                     <div class="ui-calendar-picker text text-icon-l ui-round ui-border-dual form-inline-xs">
@@ -67,7 +67,7 @@
                 </div>
             </div>
 
-            <h3>Calendar Pickers with Filled Forms</h3>
+            <h3 class="ui-h3">Calendar Pickers with Filled Forms</h3>
             <div class="ui-row ui-sm-fluid ui-padding-30-b form-lg ui-ease-2nd-form">
                 <div class="ui-col-6">
                     <div class="ui-calendar-picker text text-icon-l ui-round ui-border-dual">
@@ -85,7 +85,7 @@
 
         </form>
 
-        <h3>Calendar Details</h4>
+        <h3 class="ui-h3">Calendar Details</h4>
         <div class="ui-row ui-sm-fluid ui-padding-30-b">
             <div class="ui-col-6">
                 <div class="ui-calendar ui-ease-calendar ui-round" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>

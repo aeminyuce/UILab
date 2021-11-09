@@ -3,7 +3,7 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-30-v">
 
-                <h3>Photo Slider Examples</h3>
+                <h3 class="ui-h3">Photo Slider Examples</h3>
                 <div class="ui-padding-30-b">
 
                     <div class="ui-row ui-row-gap-lg ui-xs-fluid form-lg">

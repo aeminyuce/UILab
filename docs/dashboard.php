@@ -479,7 +479,7 @@
                                             <div class="ui-col-static ui-no-fluid">
                                                 <div class="ui-row">
                                                     <div class="ui-col-12">
-                                                        <h4 class="ui-align-l ui-margin-4-t ui-margin-3-b">Forms</h4>
+                                                        <h4 class="ui-h4 ui-align-l ui-margin-4-t ui-margin-3-b">Forms</h4>
                                                     </div>
                                                 </div>
                                                 <div class="ui-col-48 ui-padding-5-v">
@@ -515,7 +515,7 @@
                                             <div class="ui-row">
 
                                                 <div class="ui-col-8 ui-offset-2">
-                                                    <h3>Customer Info</h3>
+                                                    <h3 class="ui-h3">Customer Info</h3>
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
@@ -608,7 +608,7 @@
                                                 <div class="ui-sp-1 ui-margin-20 ui-border-b ui-border-dashed"></div>
 
                                                 <div class="ui-col-8 ui-offset-2">
-                                                    <h3>Address Details</h3>
+                                                    <h3 class="ui-h3">Address Details</h3>
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
@@ -788,7 +788,7 @@
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See Detailed Activity</a></li>
                                         </ul>
                                     </div>
-                                    <h4 class="ui-align-l ui-margin-10-t">Activity</h4>
+                                    <h4 class="ui-h4 ui-align-l ui-margin-10-t">Activity</h4>
                                     <div class="ui-col-static ui-no-fluid">
                                         <div class="ui-row ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                             <div class="ui-col-12 large">
@@ -1002,7 +1002,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <h4 class="ui-align-l ui-margin-10-t">Statistics</h4>
+                                        <h4 class="ui-h4 ui-align-l ui-margin-10-t">Statistics</h4>
                                         <div class="ui-tab-content ui-open ui-open-ease">
                                             <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                                 <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
@@ -1129,7 +1129,7 @@
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See All Events</a></li>
                                         </ul>
                                     </div>
-                                    <h4 class="ui-align-l ui-margin-10-t">Events</h4>
+                                    <h4 class="ui-h4 ui-align-l ui-margin-10-t">Events</h4>
                                     <div class="ui-calendar ui-ease-calendar ui-round ui-no-padding" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>
                                 </div>
                             </div>
@@ -1146,7 +1146,7 @@
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See All Experts</a></li>
                                         </ul>
                                     </div>
-                                    <h4 class="ui-align-l ui-margin-10-t">Experts</h4>
+                                    <h4 class="ui-h4 ui-align-l ui-margin-10-t">Experts</h4>
                                     <div class="ui-grid-list ui-grid-list-striped grid-hover ui-theme-gray ui-ease-ui-grid-list">
 
                                         <div class="ui-row ui-no-ui-row-gap-v ui-row-gap-sm-h">
@@ -1770,7 +1770,7 @@
     <div class="ui-modal-container ui-xs-no-padding">
 
         <form action="#successful">
-            <h2>Search</h2>
+            <h2 class="ui-h2">Search</h2>
             <p class="ui-highlight ui-font-16 ui-color-white-50 ui-xs-align-c ui-font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
             <div class="ui-col-static ui-no-fluid">

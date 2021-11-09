@@ -3,7 +3,7 @@
         <div class="ui-row ui-sm-fluid ui-align-c">
             <div class="ui-col-6 ui-offset-3 ui-padding-30-v">
 
-                <h3>Countdown Examples</h3>
+                <h3 class="ui-h3">Countdown Examples</h3>
 
                 <div class="ui-countdown ui-no-user-select ui-row ui-row-gap-sm-h ui-no-fluid">
                     <div class="ui-col-3">

@@ -3,10 +3,10 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-30-v">
 
-                <h3>Line Charts Examples</h3>
+                <h3 class="ui-h3">Line Charts Examples</h3>
                 <div class="ui-row ui-row-gap-lg-v">
                     <div class="ui-col-6">
-                        <h5 class="ui-font-bold ui-align-c">Line Chart</h5>
+                        <h5 class="ui-h5 ui-font-bold ui-align-c">Line Chart</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines">
                                 <li data-ui-y="84"></li>
@@ -20,7 +20,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="ui-font-bold ui-align-c">Curved Line Chart</h5>
+                        <h5 class="ui-h5 ui-font-bold ui-align-c">Curved Line Chart</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-type="curved">
                                 <li data-ui-y="0"></li>
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="ui-font-bold ui-align-c">Dotted Line Chart</h5>
+                        <h5 class="ui-h5 ui-font-bold ui-align-c">Dotted Line Chart</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-type="dotted">
                                 <li data-ui-y="0"></li>
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="ui-font-bold ui-align-c">Dashed Line Chart</h5>
+                        <h5 class="ui-h5 ui-font-bold ui-align-c">Dashed Line Chart</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-type="dashed">
                                 <li data-ui-y="0"></li>
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="ui-font-bold ui-align-c">Line Charts</h5>
+                        <h5 class="ui-h5 ui-font-bold ui-align-c">Line Charts</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-name="1st">
                                 <li data-ui-y="-34" data-ui-link="#1"></li>
@@ -85,7 +85,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="ui-font-bold ui-align-c">Curved Line Charts</h5>
+                        <h5 class="ui-h5 ui-font-bold ui-align-c">Curved Line Charts</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-name="1st" data-ui-type="curved dotted">
                                 <li data-ui-y="55" data-ui-link="#1"></li>
@@ -117,7 +117,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="ui-font-bold ui-align-c">Filled Line Charts</h5>
+                        <h5 class="ui-h5 ui-font-bold ui-align-c">Filled Line Charts</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-name="1st" data-ui-type="filled">
                                 <li data-ui-y="-34" data-ui-link="#1"></li>
@@ -140,7 +140,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="ui-font-bold ui-align-c">Filled &amp; Curved Line Charts</h5>
+                        <h5 class="ui-h5 ui-font-bold ui-align-c">Filled &amp; Curved Line Charts</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-name="1st" data-ui-type="curved dotted">
                                 <li data-ui-y="-34" data-ui-link="#1"></li>
@@ -174,7 +174,7 @@
                     <div class="ui-col-12 ui-theme-base ui-fill-dark-100 ui-round">
                         <div class="ui-row">
                             <div class="ui-col-6">
-                                <h5 class="ui-font-bold ui-align-c">Filled Line Charts</h5>
+                                <h5 class="ui-h5 ui-font-bold ui-align-c">Filled Line Charts</h5>
                                 <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                                     <ul class="ui-lines" data-ui-name="1st" data-ui-type="filled">
                                         <li data-ui-y="-34" data-ui-link="#1"></li>
@@ -197,7 +197,7 @@
                                 </div>
                             </div>
                             <div class="ui-col-6">
-                                <h5 class="ui-font-bold ui-align-c">Filled &amp; Curved Line Charts</h5>
+                                <h5 class="ui-h5 ui-font-bold ui-align-c">Filled &amp; Curved Line Charts</h5>
                                 <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                                     <ul class="ui-lines" data-ui-name="1st" data-ui-type="curved dotted">
                                         <li data-ui-y="-34" data-ui-link="#1"></li>
@@ -248,13 +248,13 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <h4 class="ui-align-l ui-margin-5-v">Multiple Line Charts</h4>
+                                <h4 class="ui-h4 ui-align-l ui-margin-5-v">Multiple Line Charts</h4>
 
                             </div>
                             <div class="ui-card-side ui-padding-15">
 
                                 <div class="ui-tab-content ui-open ui-open-ease">
-                                    <h5 class="ui-font-bold ui-align-c">First Chart</h5>
+                                    <h5 class="ui-h5 ui-font-bold ui-align-c">First Chart</h5>
                                     <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                         <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
                                             <li data-ui-y="10" data-ui-link="#"></li>
@@ -275,7 +275,7 @@
                                     </div>
                                 </div>
                                 <div class="ui-tab-content">
-                                    <h5 class="ui-font-bold ui-align-c">Second Chart</h5>
+                                    <h5 class="ui-h5 ui-font-bold ui-align-c">Second Chart</h5>
                                     <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                         <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
                                             <li data-ui-y="10" data-ui-link="#"></li>
@@ -299,7 +299,7 @@
                         </div>
                     </div>
                     <div class="ui-col-12">
-                        <h5 class="ui-font-bold ui-align-c">Column Stepping Chart</h5>
+                        <h5 class="ui-h5 ui-font-bold ui-align-c">Column Stepping Chart</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-step="6"
                             data-ui-x="01.12.2019,02.12.2019,03.12.2019,04.12.2019,05.12.2019,06.12.2019,07.12.2019,08.12.2019,09.12.2019,10.12.2019,11.12.2019,12.12.2019,13.12.2019,14.12.2019,15.12.2019,16.12.2019,17.12.2019,18.12.2019,19.12.2019,20.12.2019,21.12.2019">
                             <ul class="ui-lines" data-ui-type="filled dotted">
@@ -332,7 +332,7 @@
             </div>
             <div class="ui-col-lg-8 ui-push-lg-2 ui-col-12 ui-padding-30-v">
 
-                <h3>Donut Chart Examples</h3>
+                <h3 class="ui-h3">Donut Chart Examples</h3>
 
                 <div class="ui-row ui-row-gap-lg-v">
                     <div class="ui-col-3 ui-col-xs-6">
@@ -513,7 +513,7 @@
             </div>
             <div class="ui-col-lg-8 ui-push-lg-2 ui-col-12 ui-padding-30-v">
 
-                <h3>Pie Chart Examples</h3>
+                <h3 class="ui-h3">Pie Chart Examples</h3>
 
                 <div class="ui-row ui-row-gap-lg-v">
                     <div class="ui-col-3 ui-col-xs-6">

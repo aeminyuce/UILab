@@ -1,5 +1,5 @@
 <div class="ui-modal-header ui-theme-base ui-fill-dark-100">
-    <h4>Modal Header</h4>
+    <h4 class="ui-h4">Modal Header</h4>
     <div class="ui-modal-buttons ui-ease-1st-btn">
         <button class="ui-btn ui-circle ui-fill-dark-300">Header Button</button>
     </div>

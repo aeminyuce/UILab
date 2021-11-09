@@ -22,7 +22,7 @@
 
                         <span class="ui-sp-25"></span>
 
-                        <h5 class="ui-margin-15-b ui-color-black-50">CATEGORIES</h5>
+                        <h5 class="ui-h5 ui-margin-15-b ui-color-black-50">CATEGORIES</h5>
                         <ul class="ui-list-unstyled ui-list-spacer-10">
                             <li><a href="#">Headphones</a></li>
                             <li>
@@ -43,7 +43,7 @@
                     <div class="ui-card ui-round ui-shadow-lg ui-theme-sub">
 
                         <div class="ui-padding-15 ui-md-align-c ui-border-b">
-                            <h5 class="ui-margin-10-b ui-color-black-50">COLORS</h5>
+                            <h5 class="ui-h5 ui-margin-10-b ui-color-black-50">COLORS</h5>
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-red">
                                     <input type="checkbox" checked>
@@ -93,7 +93,7 @@
 
                         <div class="ui-padding-15 ui-border-b">
 
-                            <h5 class="ui-margin-10-b ui-color-black-50">PROMOTIONS</h5>
+                            <h5 class="ui-h5 ui-margin-10-b ui-color-black-50">PROMOTIONS</h5>
                             <label class="custom ui-block">
                                 <span class="switch-custom ui-right ui-round ui-ease-form">
                                     <input type="checkbox" checked>
@@ -116,7 +116,7 @@
 
                         <div class="ui-padding-15 ui-border-b">
 
-                            <h5 class="ui-margin-10-b ui-color-black-50">CONNECTIONS</h5>
+                            <h5 class="ui-h5 ui-margin-10-b ui-color-black-50">CONNECTIONS</h5>
                             <label class="custom ui-block">
                                 <span class="check-custom ui-round ui-ease-form">
                                     <input type="checkbox" checked>
@@ -168,7 +168,7 @@
                     <div class="ui-card ui-margin-10-b ui-round ui-shadow-lg">
                         <div class="ui-row ui-row-gap-lg ui-sm-fluid">
                             <div class="ui-col-12 ui-border-b">
-                                <h4>
+                                <h4 class="ui-h4">
                                     <svg class="ui-icon ui-icon-lg"><use href="#history"/></svg>
                                     <span class="ui-inline-block">
                                         Price History, <span class="ui-color-black-25">Over-Ear Headphones</span>

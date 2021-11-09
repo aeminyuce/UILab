@@ -3,7 +3,7 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-30">
 
-                <h3>List Group Examples</h3>
+                <h3 class="ui-h3">List Group Examples</h3>
 
                 <div class="ui-list-group ui-border ui-round">
                     <ul class="ui-ease-list-group">
@@ -113,7 +113,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <h3>List Groups with List Icons</h3>
+                <h3 class="ui-h3">List Groups with List Icons</h3>
 
                 <div class="ui-list-group ui-border ui-round">
                     <ul class="ui-has-icon-xxl ui-ease-list-group">
@@ -299,7 +299,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <h3>List Groups with Icons</h3>
+                <h3 class="ui-h3">List Groups with Icons</h3>
 
                 <div class="ui-list-group ui-border ui-round">
                     <ul class="ui-ease-list-group ui-icons-margin-5-r">
@@ -338,7 +338,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <h3>List Groups with Inner Links</h3>
+                <h3 class="ui-h3">List Groups with Inner Links</h3>
 
                 <div class="ui-list-group ui-border ui-round">
                     <ul class="ui-ease-list-group ui-icons-margin-5-r">
@@ -374,7 +374,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <h3>List Groups with Photo Images</h3>
+                <h3 class="ui-h3">List Groups with Photo Images</h3>
 
                 <div class="ui-list-group ui-border ui-round">
                     <ul class="ui-has-photo-xs ui-has-icon-xs ui-ease-list-group">
@@ -627,7 +627,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <h3>List Groups with Swatches</h3>
+                <h3 class="ui-h3">List Groups with Swatches</h3>
 
                 <div class="ui-list-group ui-border ui-round ui-theme-red">
                     <ul class="ui-has-photo ui-has-icon-sm ui-ease-list-group">

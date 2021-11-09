@@ -3,22 +3,22 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-30">
 
-                <h43Card Example</h4>
+                <h3 class="ui-h3">Card Example</h4>
                 <div class="ui-padding-30-b">
                     <div class="ui-card ui-padding-15 ui-round ui-shadow">
-                        <h4 class="ui-margin-15-b">Title</h4>
+                        <h4 class="ui-h4 ui-margin-15-b">Title</h4>
                         <p class="ui-font-readable">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                         </p>
                     </div>
                 </div>
 
-                <h3>Card Sides</h3>
+                <h3 class="ui-h3">Card Sides</h3>
                 <div class="ui-padding-30-b">
 
                     <div class="ui-card ui-round ui-shadow">
                         <div class="ui-card-side ui-padding-15 ui-border-b">
-                            <h4><svg class="ui-icon ui-icon-lg"><use href="#user"/></svg>Card Title</h4>
+                            <h4 class="ui-h4"><svg class="ui-icon ui-icon-lg"><use href="#user"/></svg>Card Title</h4>
                         </div>
                         <div class="ui-card-side ui-padding-15 ui-font-readable">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.<br>
@@ -26,7 +26,7 @@
                             In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                         </div>
                         <div class="ui-card-side ui-padding-15 ui-theme-gray ui-fill-light-100">
-                            <h4>Separated Title</h4>
+                            <h4 class="ui-h4">Separated Title</h4>
                         </div>
                         <div class="ui-card-side ui-padding-15 ui-font-readable">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.<br>
@@ -39,7 +39,7 @@
 
                     <div class="ui-card ui-round ui-shadow">
                         <div class="ui-card-side ui-padding-15 ui-border-b">
-                            <h4><svg class="ui-icon ui-icon-lg"><use href="#lab"/></svg>Card Title</h4>
+                            <h4 class="ui-h4"><svg class="ui-icon ui-icon-lg"><use href="#lab"/></svg>Card Title</h4>
                         </div>
                         <div class="ui-card-side ui-padding-15 ui-font-readable">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
@@ -55,7 +55,7 @@
 
                 </div>
 
-                <h3>Card Alerts</h3>
+                <h3 class="ui-h3">Card Alerts</h3>
                 <div class="ui-padding-30-b">
 
                     <div class="ui-card ui-theme-gray ui-padding-15 ui-round ui-fill-light-300">
@@ -76,7 +76,7 @@
 
                     <div class="ui-card ui-round ui-shadow">
                         <div class="ui-card-side ui-padding-15 ui-border-b">
-                            <h4><svg class="ui-icon ui-icon-lg"><use href="#check-badge"/></svg>Card Title</h4>
+                            <h4 class="ui-h4"><svg class="ui-icon ui-icon-lg"><use href="#check-badge"/></svg>Card Title</h4>
                         </div>
                         <div class="ui-card-side ui-padding-15 ui-border-b">
 
@@ -198,59 +198,59 @@
 
                 </div>
 
-                <h3>Card Messages</h3>
+                <h3 class="ui-h3">Card Messages</h3>
                 <div class="ui-padding-30-b">
 
                     <div class="ui-card-success ui-padding-15 ui-round ui-shadow">
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
-                        <h4>
+                        <h4 class="ui-h4">
                             <svg class="ui-icon ui-icon-lg ui-color-green"><use href="#comment"/></svg>
                             Message Title
                         </h4>
-                        <p class="ui-font-16">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="ui-large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                     <div class="ui-card-danger ui-padding-15 ui-round ui-shadow">
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
-                        <h4>
+                        <h4 class="ui-h4">
                             <svg class="ui-icon ui-icon-lg ui-color-red"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
-                        <p class="ui-font-16">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="ui-large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                     <div class="ui-card-warning ui-padding-15 ui-round">
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
-                        <h4>
+                        <h4 class="ui-h4">
                             <svg class="ui-icon ui-icon-lg ui-color-yellow"><use href="#comment"/></svg>
                             Message Title
                         </h4>
-                        <p class="ui-font-16">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="ui-large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                     <div class="ui-card-info ui-padding-15 ui-round ui-shadow">
                         <button class="ui-close-card ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
-                        <h4>
+                        <h4 class="ui-h4">
                             <svg class="ui-icon ui-icon-lg ui-color-black-50"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
-                        <p class="ui-font-16">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="ui-large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                 </div>
 
-                <h4>Cards with Themes</h4>
+                <h4 class="ui-h4">Cards with Themes</h4>
                 <div class="ui-card ui-round ui-theme-sub ui-fill-light-100 ui-stroke">
                     <div class="ui-card-side ui-padding-30">
-                        <h4>
+                        <h4 class="ui-h4">
                             <svg class="ui-icon ui-icon-xl ui-current"><use href="#help-fill"/></svg>
                             Card Title
                         </h4>
@@ -268,7 +268,7 @@
 
                 <div class="ui-card ui-round ui-theme-base ui-fill-light-100 ui-stroke">
                     <div class="ui-card-side ui-padding-30">
-                        <h4>
+                        <h4 class="ui-h4">
                             <svg class="ui-icon ui-icon-xl ui-current"><use href="#help"/></svg>
                             Card Title
                         </h4>
@@ -285,7 +285,7 @@
                 </div>
 
                 <div class="ui-card-warning ui-padding-30 ui-round ui-theme-base ui-fill-light-100 ui-stroke">
-                    <h4>
+                    <h4 class="ui-h4">
                         <svg class="ui-icon ui-icon-xl ui-current"><use href="#help-fill"/></svg>
                         Message Title
                     </h4>
@@ -298,7 +298,7 @@
                 </div>
 
                 <div class="ui-card-warning ui-padding-30 ui-round ui-theme-green ui-fill-light-100 ui-stroke">
-                    <h4>
+                    <h4 class="ui-h4">
                         <svg class="ui-icon ui-icon-xl ui-current"><use href="#help"/></svg>
                         Message Title
                     </h4>
@@ -311,7 +311,7 @@
                 </div>
 
                 <div class="ui-card-warning ui-padding-30 ui-round ui-theme-yellow ui-fill-light-100 ui-stroke">
-                    <h4>
+                    <h4 class="ui-h4">
                         <svg class="ui-icon ui-icon-xl ui-current"><use href="#help-fill"/></svg>
                         Message Title
                     </h4>

@@ -7,7 +7,7 @@
             <div class="sidebar ui-col-200 ui-full-h ui-set-fixed ui-set-l ui-padding-5 ui-fill-dark-100 ui-hidden-md ui-scroll-v ui-scrollbar-faded">
 
                 <div class="ui-align-l ui-padding-10 ui-icons-no-opacity ui-icons-margin-10-r form-lg ui-add-mobile-menu-l">
-                    <h5 class="ui-color-white-50 ui-padding-15 ui-margin-5-b">LIBRARY</h5>
+                    <h5 class="ui-h5 ui-color-white-50 ui-padding-15 ui-margin-5-b">LIBRARY</h5>
                     <ul class="ui-list-unstyled ui-list-spacer-15 ui-font-16 ui-font-bold ui-block-2nd ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-btn-ghost ui-circle" href="#">
@@ -49,7 +49,7 @@
 
                     <span class="ui-sp-30"></span>
 
-                    <h5 class="ui-color-white-50 ui-padding-15 ui-margin-5-b">NEWS &amp; EVENTS</h5>
+                    <h5 class="ui-h5 ui-color-white-50 ui-padding-15 ui-margin-5-b">NEWS &amp; EVENTS</h5>
                     <ul class="ui-list-unstyled ui-list-spacer-15 ui-color-white-50 ui-font-16 ui-block-2nd ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-btn-ghost ui-circle" href="#">
@@ -135,7 +135,7 @@
                                 <div class="ui-row">
                                     <div class="ui-col-12 ui-col-lg-8 ui-padding-30-l ui-no-padding-v ui-md-no-padding">
                                         <span class="ui-sp-15 ui-visible-md"></span>
-                                        <h2 class="ui-font-bold">Related Video</h2>
+                                        <h2 class="ui-h2 ui-font-bold">Related Video</h2>
                                         <b class="ui-font-16">Captain Marvel (2019)</b>
                                         <p class="ui-margin-10-v ui-font-readable">After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.</p>
                                         <div class="ui-photos-holder ui-padding-15-h ui-hover-scale-more-2nd ui-ease-2nd-layout">
@@ -152,7 +152,7 @@
                     </div>
                 </div>
                 <div class="ui-padding-15">
-                    <h2 class="ui-font-bold ui-padding-15-h ui-md-no-padding">Now Showing</h2>
+                    <h2 class="ui-h2 ui-font-bold ui-padding-15-h ui-md-no-padding">Now Showing</h2>
                 </div>
 
                 <div class="ui-carousel ui-half-sized ui-margin-15-h ui-md-no-margin" data-ui-col-xl="8" data-ui-col-lg="6" data-ui-col="3" data-ui-col-md="4" data-ui-col-sm="4" data-ui-col-xs="2">
@@ -304,7 +304,7 @@
                 <span class="ui-sp-15"></span>
 
                 <div class="ui-padding-15">
-                    <h2 class="ui-font-bold ui-padding-15-h ui-md-no-padding">Categories</h2>
+                    <h2 class="ui-h2 ui-font-bold ui-padding-15-h ui-md-no-padding">Categories</h2>
                 </div>
 
                 <div class="ui-carousel ui-half-sized ui-margin-15-h ui-md-no-margin" data-ui-col-xl="6" data-ui-col-lg="6" data-ui-col="3" data-ui-col-md="4" data-ui-col-sm="4" data-ui-col-xs="2">
@@ -416,7 +416,7 @@
     <div class="ui-modal-container ui-xs-no-padding">
 
         <form action="#successful">
-            <h2>Search</h2>
+            <h2 class="ui-h2">Search</h2>
             <p class="ui-highlight ui-font-16 ui-color-white-50 ui-xs-align-c ui-font-readable">Search for movies, TV shows...</p>
 
             <div class="ui-col-static ui-no-fluid">

@@ -3,7 +3,7 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-30">
 
-                <h3>Theme Current Font Colors</h3>
+                <h3 class="ui-h3">Theme Current Font Colors</h3>
 
                 <div class="ui-row ui-row-gap-md ui-highlight ui-xs-fluid">
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
@@ -53,7 +53,7 @@
             </div>
             <div class="ui-col-12 ui-padding-30">
 
-                <h3>Theme Stroke Colors</h3>
+                <h3 class="ui-h3">Theme Stroke Colors</h3>
 
                 <div class="ui-row ui-row-gap-md ui-highlight ui-xs-fluid">
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
@@ -103,13 +103,13 @@
             </div>
             <div class="ui-col-12 ui-padding-30">
 
-                <h3>Theme Background Colors</h3>
+                <h3 class="ui-h3">Theme Background Colors</h3>
 
                 <b class="ui-margin-5-b ui-block">ui-theme-gray</b>
                 <div class="ui-row ui-row-gap-xs ui-highlight ui-xs-fluid ui-theme-gray">
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-100">
-                            <h4>ui-fill-light-100</h4>
+                            <h4 class="ui-h4">ui-fill-light-100</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -126,7 +126,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-200">
-                            <h4>ui-fill-light-200</h4>
+                            <h4 class="ui-h4">ui-fill-light-200</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -143,7 +143,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-300">
-                            <h4>ui-fill-light-300</h4>
+                            <h4 class="ui-h4">ui-fill-light-300</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -160,7 +160,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-100">
-                            <h4>ui-fill-dark-100</h4>
+                            <h4 class="ui-h4">ui-fill-dark-100</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -177,7 +177,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-200">
-                            <h4>ui-fill-dark-200</h4>
+                            <h4 class="ui-h4">ui-fill-dark-200</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -194,7 +194,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-300">
-                            <h4>ui-fill-dark-300</h4>
+                            <h4 class="ui-h4">ui-fill-dark-300</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -215,7 +215,7 @@
                 <div class="ui-row ui-row-gap-xs ui-highlight ui-xs-fluid ui-theme-green">
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-100">
-                            <h4>ui-fill-light-100</h4>
+                            <h4 class="ui-h4">ui-fill-light-100</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -232,7 +232,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-200">
-                            <h4>ui-fill-light-200</h4>
+                            <h4 class="ui-h4">ui-fill-light-200</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -249,7 +249,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-300">
-                            <h4>ui-fill-light-300</h4>
+                            <h4 class="ui-h4">ui-fill-light-300</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -266,7 +266,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-100">
-                            <h4>ui-fill-dark-100</h4>
+                            <h4 class="ui-h4">ui-fill-dark-100</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -283,7 +283,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-200">
-                            <h4>ui-fill-dark-200</h4>
+                            <h4 class="ui-h4">ui-fill-dark-200</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -300,7 +300,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-300">
-                            <h4>ui-fill-dark-300</h4>
+                            <h4 class="ui-h4">ui-fill-dark-300</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -321,7 +321,7 @@
                 <div class="ui-row ui-row-gap-xs ui-highlight ui-xs-fluid ui-theme-yellow">
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-100">
-                            <h4>ui-fill-light-100</h4>
+                            <h4 class="ui-h4">ui-fill-light-100</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -338,7 +338,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-200">
-                            <h4>ui-fill-light-200</h4>
+                            <h4 class="ui-h4">ui-fill-light-200</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -355,7 +355,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-300">
-                            <h4>ui-fill-light-300</h4>
+                            <h4 class="ui-h4">ui-fill-light-300</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -372,7 +372,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-100">
-                            <h4>ui-fill-dark-100</h4>
+                            <h4 class="ui-h4">ui-fill-dark-100</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -389,7 +389,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-200">
-                            <h4>ui-fill-dark-200</h4>
+                            <h4 class="ui-h4">ui-fill-dark-200</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -406,7 +406,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-300">
-                            <h4>ui-fill-dark-300</h4>
+                            <h4 class="ui-h4">ui-fill-dark-300</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -427,7 +427,7 @@
                 <div class="ui-row ui-row-gap-xs ui-highlight ui-xs-fluid ui-theme-orange">
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-100">
-                            <h4>ui-fill-light-100</h4>
+                            <h4 class="ui-h4">ui-fill-light-100</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -444,7 +444,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-200">
-                            <h4>ui-fill-light-200</h4>
+                            <h4 class="ui-h4">ui-fill-light-200</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -461,7 +461,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-300">
-                            <h4>ui-fill-light-300</h4>
+                            <h4 class="ui-h4">ui-fill-light-300</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -478,7 +478,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-100">
-                            <h4>ui-fill-dark-100</h4>
+                            <h4 class="ui-h4">ui-fill-dark-100</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -495,7 +495,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-200">
-                            <h4>ui-fill-dark-200</h4>
+                            <h4 class="ui-h4">ui-fill-dark-200</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -512,7 +512,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-300">
-                            <h4>ui-fill-dark-300</h4>
+                            <h4 class="ui-h4">ui-fill-dark-300</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -533,7 +533,7 @@
                 <div class="ui-row ui-row-gap-xs ui-highlight ui-xs-fluid ui-theme-red">
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-100">
-                            <h4>ui-fill-light-100</h4>
+                            <h4 class="ui-h4">ui-fill-light-100</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -550,7 +550,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-200">
-                            <h4>ui-fill-light-200</h4>
+                            <h4 class="ui-h4">ui-fill-light-200</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -567,7 +567,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-300">
-                            <h4>ui-fill-light-300</h4>
+                            <h4 class="ui-h4">ui-fill-light-300</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -584,7 +584,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-100">
-                            <h4>ui-fill-dark-100</h4>
+                            <h4 class="ui-h4">ui-fill-dark-100</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -601,7 +601,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-200">
-                            <h4>ui-fill-dark-200</h4>
+                            <h4 class="ui-h4">ui-fill-dark-200</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -618,7 +618,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-300">
-                            <h4>ui-fill-dark-300</h4>
+                            <h4 class="ui-h4">ui-fill-dark-300</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -639,7 +639,7 @@
                 <div class="ui-row ui-row-gap-xs ui-highlight ui-xs-fluid ui-theme-base">
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-100">
-                            <h4>ui-fill-light-100</h4>
+                            <h4 class="ui-h4">ui-fill-light-100</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -656,7 +656,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-200">
-                            <h4>ui-fill-light-200</h4>
+                            <h4 class="ui-h4">ui-fill-light-200</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -673,7 +673,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-300">
-                            <h4>ui-fill-light-300</h4>
+                            <h4 class="ui-h4">ui-fill-light-300</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -690,7 +690,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-100">
-                            <h4>ui-fill-dark-100</h4>
+                            <h4 class="ui-h4">ui-fill-dark-100</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -707,7 +707,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-200">
-                            <h4>ui-fill-dark-200</h4>
+                            <h4 class="ui-h4">ui-fill-dark-200</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -724,7 +724,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-300">
-                            <h4>ui-fill-dark-300</h4>
+                            <h4 class="ui-h4">ui-fill-dark-300</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -745,7 +745,7 @@
                 <div class="ui-row ui-row-gap-xs ui-highlight ui-xs-fluid ui-theme-sub">
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-100">
-                            <h4>ui-fill-light-100</h4>
+                            <h4 class="ui-h4">ui-fill-light-100</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -762,7 +762,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-200">
-                            <h4>ui-fill-light-200</h4>
+                            <h4 class="ui-h4">ui-fill-light-200</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -779,7 +779,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-light-300">
-                            <h4>ui-fill-light-300</h4>
+                            <h4 class="ui-h4">ui-fill-light-300</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -796,7 +796,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-100">
-                            <h4>ui-fill-dark-100</h4>
+                            <h4 class="ui-h4">ui-fill-dark-100</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -813,7 +813,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-200">
-                            <h4>ui-fill-dark-200</h4>
+                            <h4 class="ui-h4">ui-fill-dark-200</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>
@@ -830,7 +830,7 @@
                     </div>
                     <div class="ui-col-2 ui-col-md-4 ui-col-sm-6">
                         <div class="ui-padding-10 ui-round ui-fill-dark-300">
-                            <h4>ui-fill-dark-300</h4>
+                            <h4 class="ui-h4">ui-fill-dark-300</h4>
                             <div class="ui-color-white-25 ui-margin-5-b">
                                 <b>white-25</b>
                             </div>

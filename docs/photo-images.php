@@ -3,7 +3,7 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-align-c ui-padding-30">
 
-                <h3>Photo Images</h3>
+                <h3 class="ui-h3">Photo Images</h3>
                 <div class="ui-padding-30-b">
 
                     <img class="ui-img-photo-xs ui-circle" src="img/profile-image.jpg" alt="">
@@ -72,7 +72,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <h3>Photo Holder</h3>
+                <h3 class="ui-h3">Photo Holder</h3>
                 <div class="ui-padding-30-b">
 
                     <div class="ui-photos-holder ui-hover-scale-more-1st ui-ease-1st-layout">

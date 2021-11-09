@@ -4,7 +4,7 @@
 
             <div class="ui-col-12">
 
-                <h3>Open Modal</h3>
+                <h3 class="ui-h3">Open Modal</h3>
                 <pre class="ui-round">ui.modal.open({ source, size, type, closable, callback });</pre>
 
                 <dl class="ui-dl-h ui-padding-15 ui-round ui-border">
@@ -173,7 +173,7 @@
 
             <div class="ui-col-12">
 
-                <h3>Close Modal</h3>
+                <h3 class="ui-h3">Close Modal</h3>
                 <pre class="ui-round">ui.modal.close(callback);</pre>
 
                 <dl class="ui-dl-h ui-padding-15 ui-round ui-border">
@@ -202,7 +202,7 @@
 <!-- modal sources -->
 <div id="myModalId01" class="ui-modal myModal ui-theme-base">
     <div class="ui-modal-header ui-fill-dark-100">
-        <h4>Modal Header</h4>
+        <h4 class="ui-h4">Modal Header</h4>
         <div class="ui-modal-buttons ui-ease-1st-btn">
             <button class="ui-btn ui-circle ui-fill-dark-300">Header Button</button>
         </div>
@@ -225,7 +225,7 @@
 
 <div id="myModalId02" class="ui-modal">
     <div class="ui-modal-header">
-        <h4>Modal Header</h4>
+        <h4 class="ui-h4">Modal Header</h4>
     </div>
     <div class="ui-modal-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927" frameborder="0" allowfullscreen></iframe>
@@ -242,7 +242,7 @@
     <div class="ui-modal-container ui-xs-no-padding">
 
         <form action="#successful">
-            <h2>Search</h2>
+            <h2 class="ui-h2">Search</h2>
             <p class="ui-highlight ui-font-16 ui-color-white-50 ui-xs-align-c ui-font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
             <div class="ui-col-static ui-no-fluid">

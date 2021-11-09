@@ -9,7 +9,7 @@
             <div class="forms-holder ui-card form-lg ui-tabs ui-shadow-lg ui-ease-tabs">
                 <form id="login" class="ui-tab-content ui-open ui-open-ease" action="#">
 
-                    <h3 class="ui-margin-30-b">Login to continue</h3>
+                    <h3 class="ui-h3 ui-margin-30-b">Login to continue</h3>
                     <p class="ui-highlight ui-color-black-25 large">Sign in to create, discover and connect with the global community.</p>
 
                     <label class="form-label ui-color-black-50">User Name</label>
@@ -54,7 +54,7 @@
 
                 <form id="lost-password" class="ui-tab-content" action="#">
 
-                    <h3 class="ui-margin-30-b">Forgot password?</h3>
+                    <h3 class="ui-h3 ui-margin-30-b">Forgot password?</h3>
                     <p class="ui-highlight ui-color-black-25 large">Please enter your email address. You will receive a link to create a new password via email.</p>
 
                     <label class="form-label ui-color-black-50">Your email</label>
@@ -83,7 +83,7 @@
             <div class="login-holder ui-align-c ui-no-scroll ui-set-relative ui-fill-dark-100 ui-shadow-lg">
 
                 <div class="ui-full-w ui-set-absolute ui-set-c">
-                    <h1 class="ui-hidden-md">Create your account</h1>
+                    <h1 class="ui-h1 ui-hidden-md">Create your account</h1>
                     <p class="ui-font-18 ui-color-white-25">Sign up to create, discover and connect with the global community.</p>
                     <span class="ui-sp-30 ui-margin-10-v"></span>
                     <a href="?l=sign-up-page" class="login-btn ui-btn ui-btn-lg ui-btn-sm-fluid ui-padding-30-h ui-circle ui-hover-scale ui-hover-shadow ui-ease-btn"><b>SIGN UP NOW</b></a>

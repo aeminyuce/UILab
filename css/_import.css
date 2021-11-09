@@ -3560,73 +3560,65 @@ html .ui-row {
 .ui-font-condensed {
   line-height: 1.2em !important;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.ui-h1,
+.ui-h2,
+.ui-h3,
+.ui-h4,
+.ui-h5,
+.ui-h6 {
   font-family: "Archivo", "Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   letter-spacing: -0.025em;
   margin-bottom: 0;
 }
-h1:not(:last-child),
-h2:not(:last-child),
-h3:not(:last-child),
-h4:not(:last-child),
-h5:not(:last-child),
-h6:not(:last-child) {
+.ui-h1:not(:last-child),
+.ui-h2:not(:last-child),
+.ui-h3:not(:last-child),
+.ui-h4:not(:last-child),
+.ui-h5:not(:last-child),
+.ui-h6:not(:last-child) {
   margin-bottom: 20px;
 }
-h1 > small,
-h2 > small,
-h3 > small,
-h4 > small,
-h5 > small,
-h6 > small {
-  font-size: 14px !important;
-}
-h1 .ui-icon:not(.ui-right),
-h2 .ui-icon:not(.ui-right),
-h3 .ui-icon:not(.ui-right),
-h4 .ui-icon:not(.ui-right),
-h5 .ui-icon:not(.ui-right),
-h6 .ui-icon:not(.ui-right) {
+.ui-h1 .ui-icon:not(.ui-right),
+.ui-h2 .ui-icon:not(.ui-right),
+.ui-h3 .ui-icon:not(.ui-right),
+.ui-h4 .ui-icon:not(.ui-right),
+.ui-h5 .ui-icon:not(.ui-right),
+.ui-h6 .ui-icon:not(.ui-right) {
   margin-right: 5px;
 }
-h1 .ui-icon-lg:not(.ui-right),
-h2 .ui-icon-lg:not(.ui-right),
-h3 .ui-icon-lg:not(.ui-right),
-h4 .ui-icon-lg:not(.ui-right),
-h5 .ui-icon-lg:not(.ui-right),
-h6 .ui-icon-lg:not(.ui-right) {
+.ui-h1 .ui-icon-lg:not(.ui-right),
+.ui-h2 .ui-icon-lg:not(.ui-right),
+.ui-h3 .ui-icon-lg:not(.ui-right),
+.ui-h4 .ui-icon-lg:not(.ui-right),
+.ui-h5 .ui-icon-lg:not(.ui-right),
+.ui-h6 .ui-icon-lg:not(.ui-right) {
   margin-right: 10px;
 }
-h1,
-h2,
-h3 {
+.ui-h1,
+.ui-h2,
+.ui-h3 {
   line-height: 1;
 }
-h1 {
+.ui-h1 {
   font-size: 36px;
   font-size: clamp(18px, 36px, 7vw);
 }
-h2 {
+.ui-h2 {
   font-size: 30px;
   font-size: clamp(15px, 30px, 6vw);
 }
-h3 {
+.ui-h3 {
   font-size: 24px;
   font-size: clamp(12px, 24px, 5vw);
 }
-h4 {
+.ui-h4 {
   font-size: 18px;
 }
-h5 {
+.ui-h5 {
   font-size: 14px;
 }
-h6 {
+.ui-h6 {
   font-size: 12px;
 }
 .underline,
@@ -3749,20 +3741,20 @@ hr.hr {
   border: 0;
 }
 @media (max-width: 480px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  .ui-h1,
+  .ui-h2,
+  .ui-h3,
+  .ui-h4,
+  .ui-h5,
+  .ui-h6 {
     text-align: center;
   }
-  h1 > small,
-  h2 > small,
-  h3 > small,
-  h4 > small,
-  h5 > small,
-  h6 > small {
+  .ui-h1 > span,
+  .ui-h2 > span,
+  .ui-h3 > span,
+  .ui-h4 > span,
+  .ui-h5 > span,
+  .ui-h6 > span {
     margin-top: 5px;
     display: block;
   }
@@ -7105,12 +7097,12 @@ header.ui-sticky-static {
   top: 0;
   z-index: 9;
 }
-.ui-modal-header h1,
-.ui-modal-header h2,
-.ui-modal-header h3,
-.ui-modal-header h4,
-.ui-modal-header h5,
-.ui-modal-header h6 {
+.ui-modal-header .ui-h1,
+.ui-modal-header .ui-h2,
+.ui-modal-header .ui-h3,
+.ui-modal-header .ui-h4,
+.ui-modal-header .ui-h5,
+.ui-modal-header .ui-h6 {
   font-size: 18px !important;
   text-overflow: ellipsis;
   line-height: 42px;

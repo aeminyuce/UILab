@@ -35,7 +35,7 @@
                         <div class="generate-list ui-row ui-row-gap-sm-v">
                             <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
-                                <h4>Core</h4>
+                                <h4 class="ui-h4">Core</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -55,7 +55,7 @@
                                     </label>
                                 </div>
 
-                                <h4>Grid System</h4>
+                                <h4 class="ui-h4">Grid System</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -75,7 +75,7 @@
                                     </label>
                                 </div>
 
-                                <h4>Utilities</h4>
+                                <h4 class="ui-h4">Utilities</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -116,7 +116,7 @@
                                     </label>
                                 </div>
 
-                                <h4>Typography</h4>
+                                <h4 class="ui-h4">Typography</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -146,7 +146,7 @@
                             </div>
                             <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
-                                <h4>Buttons</h4>
+                                <h4 class="ui-h4">Buttons</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -187,7 +187,7 @@
                                     </label>
                                 </div>
 
-                                <h4>Forms</h4>
+                                <h4 class="ui-h4">Forms</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -221,7 +221,7 @@
                                     </label>
                                 </div>
 
-                                <h4>Icons</h4>
+                                <h4 class="ui-h4">Icons</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -244,7 +244,7 @@
                             </div>
                             <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
-                                <h4>Layout</h4>
+                                <h4 class="ui-h4">Layout</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -340,7 +340,7 @@
                                     </label>
                                 </div>
 
-                                <h4>Charts</h4>
+                                <h4 class="ui-h4">Charts</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -384,7 +384,7 @@
                             </div>
                             <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
-                                <h4>Components</h4>
+                                <h4 class="ui-h4">Components</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -474,7 +474,7 @@
                                     </label>
                                 </div>
 
-                                <h4>Themes</h4>
+                                <h4 class="ui-h4">Themes</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -545,7 +545,7 @@
                         <div class="generate-list ui-row ui-row-gap-sm-v">
                             <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
-                                <h4>Core</h4>
+                                <h4 class="ui-h4">Core</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -565,7 +565,7 @@
                                     </label>
                                 </div>
 
-                                <h4>Grid System</h4>
+                                <h4 class="ui-h4">Grid System</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -585,7 +585,7 @@
                                     </label>
                                 </div>
 
-                                <h4>Buttons</h4>
+                                <h4 class="ui-h4">Buttons</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -622,7 +622,7 @@
                             </div>
                             <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
-                                <h4>Forms</h4>
+                                <h4 class="ui-h4">Forms</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -684,7 +684,7 @@
                                     </label>
                                 </div>
 
-                                <h4>Layout</h4>
+                                <h4 class="ui-h4">Layout</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -714,7 +714,7 @@
                             </div>
                             <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
-                                <h4>Components</h4>
+                                <h4 class="ui-h4">Components</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
@@ -821,7 +821,7 @@
                             </div>
                             <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
-                                <h4>Charts</h4>
+                                <h4 class="ui-h4">Charts</h4>
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">

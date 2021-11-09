@@ -150,7 +150,9 @@
     &-header {
         height: @modal-header-height; top: 0; z-index: @modal-header-z-index;
 
-        h1,h2,h3,h4,h5,h6 { font-size: @font-18 !important; text-overflow: ellipsis; line-height: @btn-default; max-width: 100%; overflow: hidden; float: left; }
+        .ui- {
+            &h1,&h2,&h3,&h4,&h5,&h6 { font-size: @font-18 !important; text-overflow: ellipsis; line-height: @btn-default; max-width: 100%; overflow: hidden; float: left; }
+        }
     }
 
     &-container {

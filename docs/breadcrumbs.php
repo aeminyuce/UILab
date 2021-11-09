@@ -3,7 +3,7 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-30">
 
-                <h3>Breadcrumbs Examples</h3>
+                <h3 class="ui-h3">Breadcrumbs Examples</h3>
                 <div class="ui-breadcrumbs ui-color-black-25">
                     <ul class="ui-list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">

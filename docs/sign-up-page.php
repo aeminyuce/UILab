@@ -44,7 +44,7 @@
                         <div class="ui-col-static ui-sm-fluid">
                             <div class="ui-row ui-padding-20 form-lg">
                                 <div class="ui-col-12">
-                                    <h3 class="ui-margin-30-b">Create your account</h3>
+                                    <h3 class="ui-h3 ui-margin-30-b">Create your account</h3>
                                     <p class="ui-color-black-25 large">Sign up to create, discover and connect with the global community.</p>
                                 </div>
                                 <div class="ui-col-6">
@@ -143,10 +143,10 @@
                                 <img class="ui-auto-margin" src="img/sign-up.png" alt="Join Us" width="280">
                                 <span class="ui-sp-30"></span>
 
-                                <h3 class="largest">
+                                <h1 class="ui-h1">
                                     Join our<br class="ui-hidden-sm">huge platform<br class="ui-hidden-sm">
                                     <span class="ui-font-bold ui-font-38">today!</span>
-                                </h3>
+                                </h1>
                                 <ul class="ui-list-unstyled ui-list-spacer-10 ui-color-black-25 ui-font-18 ui-icons-sm ui-icons-margin-5-r ui-theme-sub">
                                     <li>
                                         <svg class="ui-icon ui-current ui-hidden-sm"><use href="#check-circle-fill"/></svg>

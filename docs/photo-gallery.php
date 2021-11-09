@@ -3,9 +3,9 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-30-v">
 
-                <h3>Photo Gallery Examples</h3>
+                <h3 class="ui-h3">Photo Gallery Examples</h3>
 
-                <h5 class="ui-font-bold">Default Photo Gallery</h5>
+                <h5 class="ui-h5 ui-font-bold">Default Photo Gallery</h5>
                 <div class="ui-padding-30-b">
                     <div class="ui-row ui-no-fluid ui-photo-gallery ui-ease-photo-gallery">
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
@@ -51,9 +51,9 @@
                     </div>
                 </div>
 
-                <h3>Photo Gallery with Vertical Images</h3>
+                <h3 class="ui-h3">Photo Gallery with Vertical Images</h3>
 
-                <h5 class="ui-font-bold">Default Photo Gallery</h5>
+                <h5 class="ui-h5 ui-font-bold">Default Photo Gallery</h5>
                 <div class="ui-padding-30-b">
                     <div class="ui-row ui-no-fluid ui-photo-gallery ui-ease-photo-gallery">
                         <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
@@ -89,7 +89,7 @@
                     </div>
                 </div>
 
-                <h5 class="ui-font-bold">Photo Gallery with Custom Grids</h5>
+                <h5 class="ui-h5 ui-font-bold">Photo Gallery with Custom Grids</h5>
                 <div class="ui-padding-30-b">
                     <ul class="ui-photo-gallery ui-block-2nd ui-ease-photo-gallery ui-theme-sub">
                         <li>
@@ -245,7 +245,7 @@
                     </ul>
                 </div>
 
-                <h5 class="ui-font-bold">Photo Gallery with Carousel</h5>
+                <h5 class="ui-h5 ui-font-bold">Photo Gallery with Carousel</h5>
                 <div class="ui-padding-30-b">
                     <div class="ui-carousel ui-photo-gallery ui-ease-photo-gallery" data-ui-col="4" data-ui-col-md="3" data-ui-col-sm="2" data-ui-col-xs="2">
                         <div class="ui-carousel-slider ui-ease-layout ui-ease-slow ui-ease-in-out">
@@ -292,7 +292,7 @@
                     </div>
                 </div>
 
-                <h5 class="ui-font-bold">Product Gallery with Carousel</h5>
+                <h5 class="ui-h5 ui-font-bold">Product Gallery with Carousel</h5>
                 <div class="ui-padding-30-b">
                     <div class="ui-carousel-gallery ui-card ui-padding-15 ui-round ui-shadow-lg">
                         <div class="ui-row">
@@ -345,7 +345,7 @@
                     </div>
                 </div>
 
-                <h5 class="ui-font-bold">Product Gallery Without Carousel</h5>
+                <h5 class="ui-h5 ui-font-bold">Product Gallery Without Carousel</h5>
                 <div class="ui-padding-30-b">
                     <div class="ui-carousel-gallery ui-card ui-padding-15 ui-round ui-shadow-lg">
                         <div class="ui-row">

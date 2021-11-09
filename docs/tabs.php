@@ -3,7 +3,7 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-30">
 
-                <h3>Horizontal ui-tabs</h3>
+                <h3 class="ui-h3">Horizontal ui-tabs</h3>
                 <div class="ui-tabs ui-padding-30-b ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
                     <div class="ui-row ui-border-b ui-margin-15-b">
 
@@ -115,7 +115,7 @@
                     </div>
                 </div>
 
-                <h3>ui-tabs with Toggle</h3>
+                <h3 class="ui-h3">ui-tabs with Toggle</h3>
                 <div class="ui-tabs ui-padding-30-b ui-ease-tabs" data-ui-classes="ui-stroke ui-current ui-border-lg">
 
                     <div class="ui-margin-10-b ui-md-align-c ui-border-b ui-theme-sub form-lg ui-ease-1st-btn">
@@ -144,7 +144,7 @@
 
                 </div>
 
-                <h3>Side Navigated ui-tabs</h3>
+                <h3 class="ui-h3">Side Navigated ui-tabs</h3>
                 <div class="ui-tabs ui-col-static ui-border-dual ui-margin-30-b ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
                     <div class="ui-col-200 ui-padding-1 ui-theme-sub">
@@ -247,7 +247,7 @@
 
                 </div>
 
-                <h3>Inner ui-tabs</h3>
+                <h3 class="ui-h3">Inner ui-tabs</h3>
                 <div class="ui-tabs ui-padding-30-b ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
                     <div class="ui-md-align-c ui-theme-sub form-lg ui-ease-1st-btn">
@@ -358,7 +358,7 @@
 
                 </div>
 
-                <h3>ui-tabs with ID</h3>
+                <h3 class="ui-h3">ui-tabs with ID</h3>
                 <div class="ui-tabs ui-padding-30-b form-lg ui-theme-sub ui-ease-tabs">
 
                     <div id="tabID01" class="ui-tab-content ui-open ui-open-ease">
@@ -378,7 +378,7 @@
 
                 </div>
 
-                <h3>Accordion ui-tabs</h3>
+                <h3 class="ui-h3">Accordion ui-tabs</h3>
                 <div class="ui-tabs ui-padding-30-b form-lg ui-theme-sub ui-ease-tabs" data-ui-classes="ui-fill-dark-100">
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-block ui-align-l ui-margin-1-b ui-round ui-ease-btn">
@@ -417,7 +417,7 @@
 
                 </div>
 
-                <h3>Inner Accordion ui-tabs</h3>
+                <h3 class="ui-h3">Inner Accordion ui-tabs</h3>
                 <div class="ui-tabs ui-padding-30-b form-lg ui-theme-sub ui-ease-tabs" data-ui-classes="ui-fill-dark-100">
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-block ui-align-l ui-margin-1-b ui-ease-btn">
@@ -512,7 +512,7 @@
 
                 </div>
 
-                <h3>ui-tabs with Large Icons</h3>
+                <h3 class="ui-h3">ui-tabs with Large Icons</h3>
                 <div class="ui-tabs ui-icons-no-opacity ui-padding-30-b ui-ease-tabs" data-ui-classes="ui-current ui-icons-default">
 
                     <div class="ui-color-black-25 ui-margin-30-b ui-align-c ui-icons-xxl ui-xs-align-l ui-theme-sub">

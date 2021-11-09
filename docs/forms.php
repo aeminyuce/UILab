@@ -3,7 +3,7 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-30">
 
-                <h3>Forms in Grid System</h3>
+                <h3 class="ui-h3">Forms in Grid System</h3>
                 <div class="ui-row ui-padding-30-b">
                     <div class="ui-col-3">
                         <label class="form-grid">Label</label>
@@ -120,7 +120,7 @@
                     </div>
                 </div>
 
-                <h3>Large Forms</h3>
+                <h3 class="ui-h3">Large Forms</h3>
                 <div class="form-lg ui-padding-30-b">
                     <div class="ui-row">
                         <div class="ui-col-3">
@@ -201,7 +201,7 @@
                     </div>
                 </div>
 
-                <h3>Autocomplete Forms</h3>
+                <h3 class="ui-h3">Autocomplete Forms</h3>
                 <form action="#succesful">
                     <div class="ui-row ui-padding-30-b">
 
@@ -225,7 +225,7 @@
                 </form>
 
 
-                <h3>Select Forms</h3>
+                <h3 class="ui-h3">Select Forms</h3>
                 <div class="ui-padding-30-b">
                     <div class="ui-row">
                         <div class="ui-col-6">
@@ -287,7 +287,7 @@
                     </div>
                 </div>
 
-                <h3>Dual Multi Selects</h3>
+                <h3 class="ui-h3">Dual Multi Selects</h3>
                 <div class="ui-padding-30-b">
 
                     <form action="#succesful">
@@ -416,7 +416,7 @@
 
                 </div>
 
-                <h3>Textarea Forms</h3>
+                <h3 class="ui-h3">Textarea Forms</h3>
                 <div class="ui-padding-30-b">
                     <div class="textarea ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <textarea placeholder="Placeholder Text"></textarea>
@@ -429,7 +429,7 @@
                     </div>
                 </div>
 
-                <h3>File Input</h3>
+                <h3 class="ui-h3">File Input</h3>
                 <div class="ui-padding-30-b ui-theme-gray">
                     <div class="file ui-round ui-no-border ui-fill-light-100 ui-ease-form">
                         <input type="file">
@@ -552,7 +552,7 @@
                     </div>
                 </div>
 
-                <h3>Checkboxes and Radios</h3>
+                <h3 class="ui-h3">Checkboxes and Radios</h3>
                 <div class="ui-padding-30-b">
                     <ul class="ui-list-inline ui-list-gap">
                         <li>
@@ -700,7 +700,7 @@
 
                 </div>
 
-                <h3>Range Forms</h3>
+                <h3 class="ui-h3">Range Forms</h3>
                 <div class="ui-padding-30-b">
                     <input class="range ui-ease-range" type="range" min="0" max="10" value="0">
                     <span class="ui-sp-10"></span>
@@ -717,7 +717,7 @@
                     <input class="range ui-ease-range" disabled type="range" min="0" max="10" value="5">
                 </div>
 
-                <h3>Inline Forms</h3>
+                <h3 class="ui-h3">Inline Forms</h3>
                 <div class="ui-padding-30-b">
                     <div class="text ui-margin-10-b ui-round ui-border-dual form-inline ui-ease-form">
                         <input type="text">
@@ -736,7 +736,7 @@
 
                     <span class="ui-sp-15"></span>
 
-                    <h5 class="ui-color-black-25">Responsive Inline Forms</h5>
+                    <h5 class="ui-h5 ui-color-black-25">Responsive Inline Forms</h5>
                     <div class="text ui-margin-10-b ui-round ui-border-dual form-inline-xs ui-ease-form">
                         <input type="text">
                     </div>
@@ -753,7 +753,7 @@
                     </div>
                 </div>
 
-                <h3>Form Icons</h3>
+                <h3 class="ui-h3">Form Icons</h3>
                 <div class="ui-padding-30-b">
                     <div class="text text-icon-l ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#search"/></svg>
@@ -789,7 +789,7 @@
                     </div>
                 </div>
 
-                <h3>Clear with Form Icons</h3>
+                <h3 class="ui-h3">Clear with Form Icons</h3>
                 <div class="ui-padding-30-b">
                     <form action="#succesful">
                         <div class="text text-icon ui-margin-10-b ui-round ui-border-dual has-clear ui-ease-form">
@@ -817,7 +817,7 @@
                     </form>
                 </div>
 
-                <h3>Submit with Form Icons</h3>
+                <h3 class="ui-h3">Submit with Form Icons</h3>
                 <div class="ui-padding-30-b">
                     <form action="#succesful">
                         <div class="text text-icon ui-round ui-border-dual ui-ease-form">
@@ -829,7 +829,7 @@
                     </form>
                 </div>
 
-                <h3>Forms with Actions</h3>
+                <h3 class="ui-h3">Forms with Actions</h3>
                 <div class="ui-padding-30-b">
                     <div class="ui-row ui-row-gap-sm-v ui-no-fluid">
                         <div class="ui-col-6">
@@ -878,7 +878,7 @@
                     </div>
                 </div>
 
-                <h3>Form Holders</h3>
+                <h3 class="ui-h3">Form Holders</h3>
                 <div class="ui-row ui-padding-30-b">
                     <div class="ui-col-12">
                         <label class="form-label">Form Holder with Grid System</label>
@@ -1328,7 +1328,7 @@
                     </div>
                 </div>
 
-                <h3>Special Forms</h3>
+                <h3 class="ui-h3">Special Forms</h3>
                 <div class="ui-row ui-padding-30-b">
                     <div class="ui-col-3">
                         <label class="form-grid" >Number Form</label>
@@ -1406,7 +1406,7 @@
                     </div>
                 </div>
 
-                <h3>Required Forms</h3>
+                <h3 class="ui-h3">Required Forms</h3>
                 <div class="ui-padding-30-b">
                     <form action="#succesful" onsubmit="return ui.alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
                         <div class="ui-row">
@@ -1677,7 +1677,7 @@
                     </form>
                 </div>
 
-                <h3>Forms in Dark Themes</h3>
+                <h3 class="ui-h3">Forms in Dark Themes</h3>
                 <div class="ui-padding-15 ui-margin-30-b ui-round ui-theme-base ui-fill-dark-100">
 
                     <div class="text form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
@@ -1863,7 +1863,7 @@
 
                 </div>
 
-                <h3>Different Form Styles</h3>
+                <h3 class="ui-h3">Different Form Styles</h3>
                 <div class="ui-row">
                     <div class="ui-col-3">
                         <label class="form-grid">light ui-border with no radius style:</label>

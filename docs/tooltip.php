@@ -4,7 +4,7 @@
 
             <div class="ui-col-12">
 
-                <h3>Positioning</h3>
+                <h3 class="ui-h3">Positioning</h3>
                 <div class="ui-ease-1st-btn ui-theme-base ui-padding-30-b">
                     <button class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" title="Tooltip <b>Top</b>">Tooltip <b>Top</b></button>
                     <button class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="b" title="Tooltip <u>Bottom</u>">Tooltip <b>Bottom</b></button>
@@ -17,13 +17,13 @@
                     <button class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="bl" title="Tooltip <em>Bottom Left</em>">Tooltip <b>Bottom Left</b></button>
                 </div>
 
-                <h3>Preventing Actions on Touch</h3>
+                <h3 class="ui-h3">Preventing Actions on Touch</h3>
                 <div class="ui-theme-sub ui-ease-1st-btn ui-padding-30-b">
                     <a href="http://www.google.com/" target="_blank" class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" title="Open link now!">Link</a>
                     <button onclick="alert('Test');" class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" title="Run javascript aler now!">Javascript</button>
                 </div>
 
-                <h3>data-ui-only Attributes</h3>
+                <h3 class="ui-h3">data-ui-only Attributes</h3>
                 <div class="ui-theme-base ui-ease-1st-btn ui-padding-30-b">
                     <a href="http://www.google.com/" target="_blank" class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="mobile" title="Open link now!">Link (mobile)</a>
                     <a href="http://www.google.com/" target="_blank" class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="desktop" title="Open link now!">Link (desktop)</a>
@@ -32,7 +32,7 @@
                     <button onclick="alert('Test');" class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="desktop" title="Run javascript aler now!">Javascript (desktop)</button>
                 </div>
 
-                <h3>Using with Icons</h3>
+                <h3 class="ui-h3">Using with Icons</h3>
                 <div class="ui-theme-sub ui-icons-xl ui-current ui-padding-30-b ui-hover-t-more-1st ui-ease-1st-layout">
                     <svg class="ui-icon" data-ui-tooltip title="Like!"><use href="#heart"/></svg>
                     <svg class="ui-icon" data-ui-tooltip title="Somewhere on Earth!"><use href="#marker"/></svg>
@@ -40,7 +40,7 @@
                     <svg class="ui-icon" data-ui-tooltip title="Add favorites!"><use href="#star"/></svg>
                 </div>
 
-                <h3>Using with Forms</h3>
+                <h3 class="ui-h3">Using with Forms</h3>
                 <div class="ui-ease-1st-form ui-padding-30-b form-lg ui-ease-1st-form">
                     <div class="text text-icon ui-round ui-border-dual ui-ease-form">
                         <svg class="ui-icon" data-ui-tooltip="tl" title="Your message here!"><use href="#question-circle-fill"/></svg>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
 
-                <h3>Using with Paragraphs</h3>
+                <h3 class="ui-h3">Using with Paragraphs</h3>
                 <div class="ui-font-readable ui-ease-1st-form">
                     Lorem ipsum dolor sit amet, <b class="ui-theme-red ui-fill-light-100 ui-current" data-ui-tooltip title="<b>Nulla facilisi.</b><br>Sed purus ligula, commodo vel nisi et, lobortis ultrices erat.<br>Maecenas ac venenatis enim.">consectetur adipiscing elit.</b> Integer vitae enim quis ante lacinia tincidunt nec sed metus. Donec vitae diam non mi pharetra venenatis quis id nisl. Nunc auctor efficitur nunc nec porta. Nullam ut interdum nulla. Duis dapibus, lacus sed lacinia aliquam, orci ex congue magna, eget euismod lectus lacus ac turpis. Vestibulum facilisis tempus nunc, nec auctor risus cursus vitae. Nam cursus tristique orci non vehicula.
                     <br><br>
