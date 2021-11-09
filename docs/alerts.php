@@ -5,33 +5,33 @@
             <div class="ui-col-12">
 
                 <h3 class="ui-h3">Showing Dialogues</h3>
-                <pre class="ui-round">ui.alerts.dialog({ msg: '', success: '', error: '', custom: { value: 'button text', value: 'button text' }, callback });</pre>
+                <pre class="ui-pre ui-round">ui.alerts.dialog({ msg: '', success: '', error: '', custom: { value: 'button text', value: 'button text' }, callback });</pre>
                 <dl class="ui-dl-h ui-padding-15 ui-round ui-border">
                     <dt>msg</dt>
                     <dd>
                         Required. Your dialog text.<br>
                         success<br>
                         Optional. Set success button text.<br>
-                        Success button returns a value: <code>'success'</code>
+                        Success button returns a value: <code class="ui-code">'success'</code>
                     </dd>
 
                     <dt>error</dt>
                     <dd>
                         Optional. Set error button text.<br>
-                        Error button returns a value: <code>'error'</code>
+                        Error button returns a value: <code class="ui-code">'error'</code>
                     </dd>
 
                     <dt>custom</dt>
                     <dd>
                         Optional. Set custom buttons.<br>
                         Custom buttons returns defined own value.<br>
-                        Example usage: <code>{value: 'button text', value: 'button text'}</code>
+                        Example usage: <code class="ui-code">{value: 'button text', value: 'button text'}</code>
                     </dd>
 
                     <dt>callback</dt>
                     <dd>
                         Optional. Set a callback function when dialog returns a value.<br>
-                        Example usage: <code>function (value) {}</code>
+                        Example usage: <code class="ui-code">function (value) {}</code>
                     </dd>
                 </dl>
 
@@ -39,32 +39,32 @@
             <div class="ui-col-12 ui-padding-30-b">
 
                 <b class="ui-margin-5-b ui-block">Examples:</b>
-                <pre class="ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog text'});">Run Code</button>
 
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text',<br>    success: 'Got it!'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text',<br>    success: 'Got it!'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog text', success: 'Got it!'});">Run Code</button>
 
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text',<br>    success: 'Got it!',<br>    error: 'No, thanks!'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text',<br>    success: 'Got it!',<br>    error: 'No, thanks!'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog text', success: 'Got it!', error: 'No, thanks!'});">Run Code</button>
 
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text',<br>    success: 'Got it!',<br>    error: 'No, thanks!',<br>    custom: {<br>        maybe: 'Maybe', later: 'Later'<br>    }<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text',<br>    success: 'Got it!',<br>    error: 'No, thanks!',<br>    custom: {<br>        maybe: 'Maybe', later: 'Later'<br>    }<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog text', success: 'Got it!', error: 'No, thanks!', custom: {maybe: 'Maybe', later: 'Later'}});">Run Code</button>
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text',<br>    success: 'Got it!',<br>    error: 'No, thanks!',<br>    custom: {<br>        maybe: 'Maybe', later: 'Later'<br>    },<br>    callback: function (value) {<br>        alert(value);<br>    }<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text',<br>    success: 'Got it!',<br>    error: 'No, thanks!',<br>    custom: {<br>        maybe: 'Maybe', later: 'Later'<br>    },<br>    callback: function (value) {<br>        alert(value);<br>    }<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog text', success: 'Got it!', error: 'No, thanks!', custom: {maybe: 'Maybe', later: 'Later'}, callback: function (value) { alert(value); }});">Run Code</button>
 
                 <span class="ui-sp-30"></span>
 
                 <b class="ui-margin-5-b ui-block">Submit form example:</b>
-                <pre class="ui-round ui-margin-5-b">return ui.alerts.dialog({<br>    msg: 'Submit this form?',<br>    success: 'Yes',<br>    error: 'No',<br>    callback: function (value) {<br>        if (value === 'success') {<br>            document.getElementById('submitForm').submit();<br>        }<br>    }<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">return ui.alerts.dialog({<br>    msg: 'Submit this form?',<br>    success: 'Yes',<br>    error: 'No',<br>    callback: function (value) {<br>        if (value === 'success') {<br>            document.getElementById('submitForm').submit();<br>        }<br>    }<br>});</pre>
                 <form id="submitForm" action="#succesful" onsubmit="return ui.alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
                     <button type="submit" class="ui-btn ui-round ui-theme-sub ui-fill-dark-100 ui-ease-btn">Submit Form</button>
                 </form>
@@ -73,7 +73,7 @@
             <div class="ui-col-12">
 
                 <h3 class="ui-h3">Showing Messages</h3>
-                <pre class="ui-round">ui.alerts.message({ msg: '', pos: '', theme: '' });</pre>
+                <pre class="ui-pre ui-round">ui.alerts.message({ msg: '', pos: '', theme: '' });</pre>
                 <dl class="ui-dl-h ui-padding-15 ui-round ui-border">
                     <dt>msg</dt>
                     <dd class="ui-margin-15-b">Required. Your alert message.</dd>
@@ -81,14 +81,14 @@
                     <dt>pos</dt>
                     <dd class="ui-margin-15-b">
                         Optional. Set message position.<br>
-                        Default value: <code>'tr'</code><br>
-                        Available values: <code>'tr', 'tl', 'br', 'bl'</code>
+                        Default value: <code class="ui-code">'tr'</code><br>
+                        Available values: <code class="ui-code">'tr', 'tl', 'br', 'bl'</code>
                     </dd>
 
                     <dt>theme</dt>
                     <dd>
                         Optional. Set message theme.<br>
-                        Available values: <code>'success', 'warning', 'danger'</code>
+                        Available values: <code class="ui-code">'success', 'warning', 'danger'</code>
                     </dd>
                 </dl>
 
@@ -98,23 +98,23 @@
             </div>
             <div class="ui-col-6">
 
-                <pre class="ui-round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Top left message',<br>    pos: 'tl'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Top left message',<br>    pos: 'tl'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.message({msg: 'Top left message', pos: 'tl'});">Run Code</button>
 
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Bottom left message',<br>    pos: 'bl'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Bottom left message',<br>    pos: 'bl'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.message({msg: 'Bottom left message', pos: 'bl'});">Run Code</button>
 
             </div>
             <div class="ui-col-6">
 
-                <pre class="ui-round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Top right message',<br>    pos: 'tr'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Top right message',<br>    pos: 'tr'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.message({msg: 'Top right message', pos: 'tr'});">Run Code</button>
 
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Bottom right message',<br>    pos: 'br'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Bottom right message',<br>    pos: 'br'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.message({msg: 'Bottom right message', pos: 'br'});">Run Code</button>
 
             </div>
@@ -126,7 +126,7 @@
                 </div>
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Default message'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Default message'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.message({msg: 'Default message'});">Run Code</button>
 
                 <span class="ui-sp-30"></span>
@@ -137,7 +137,7 @@
                 </div>
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Success message',<br>    theme: 'success'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Success message',<br>    theme: 'success'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.message({msg: 'Success message', theme: 'success'});">Run Code</button>
 
                 <span class="ui-sp-30"></span>
@@ -148,7 +148,7 @@
                 </div>
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-round ui-margin-5-b">ui.alerts.message({<br>    msg:'Warning message',<br>    theme: 'warning'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.message({<br>    msg:'Warning message',<br>    theme: 'warning'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.message({msg: 'Warning message', theme: 'warning'});">Run Code</button>
 
                 <span class="ui-sp-30"></span>
@@ -159,7 +159,7 @@
                 </div>
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Danger message',<br>    theme: 'danger'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.message({<br>    msg: 'Danger message',<br>    theme: 'danger'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.message({msg: 'Danger message', theme: 'danger'});">Run Code</button>
 
             </div>

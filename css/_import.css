@@ -3651,46 +3651,41 @@ html .ui-row {
 .ui-h6 {
   font-size: 12px;
 }
-.word-break-all {
-  word-break: break-all;
-}
-abbr[title] {
-  cursor: help;
-}
-address {
-  font-style: normal;
-}
-address:not(:last-child) {
-  margin-bottom: 20px;
-}
-blockquote {
+.ui-blockquote {
   font-size: 16px;
   padding: 10px 20px !important;
   border-left: 5px solid hsl(0, 0%, 93%);
 }
-blockquote:not(:last-child) {
+.ui-blockquote:not(:last-child) {
   margin-bottom: 20px;
 }
-blockquote.ui-align-r,
-blockquote.ui-right {
+.ui-blockquote.ui-align-r,
+.ui-blockquote.ui-right {
   text-align: right;
   border-right: 5px solid hsl(0, 0%, 93%);
   border-left: 0;
 }
-blockquote footer,
-blockquote small {
+.ui-blockquote footer,
+.ui-blockquote small {
   color: hsl(0, 0%, 47%);
   font-size: 80%;
   display: block;
 }
-code,
-kbd,
-pre,
-samp,
-xmp {
+.ui-hr {
+  box-sizing: content-box;
+  width: 100%;
+  height: 1px;
+  background-color: hsla(0, 0%, 0%, 0.15);
+  background-color: var(--ui-border-color);
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  border: 0;
+}
+.ui-code,
+.ui-pre {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-code {
+.ui-code {
   color: hsl(345, 69%, 46%);
   color: var(--ui-code-color);
   font-size: 90%;
@@ -3700,15 +3695,7 @@ code {
   display: inline-block;
   border-radius: 2px;
 }
-kbd {
-  color: hsl(0, 0%, 100%);
-  font-size: 90%;
-  background-color: hsl(220, 8%, 22%);
-  padding: 2px 4px !important;
-  border-radius: 3px;
-}
-pre,
-xmp {
+.ui-pre {
   color: hsl(0, 0%, 100%);
   line-height: 1.66em;
   min-height: 42px;
@@ -3718,23 +3705,11 @@ xmp {
   overflow-y: auto !important;
   display: block;
 }
-pre:not(:last-child),
-xmp:not(:last-child) {
+.ui-pre:not(:last-child) {
   margin-bottom: 20px;
 }
-pre.ui-scroll-v,
-xmp.ui-scroll-v {
+.ui-pre.ui-scroll-v {
   max-height: 350px;
-}
-hr.hr {
-  box-sizing: content-box;
-  width: 100%;
-  height: 1px;
-  background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--ui-border-color);
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
-  border: 0;
 }
 @media (max-width: 480px) {
   .ui-h1,

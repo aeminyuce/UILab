@@ -367,7 +367,7 @@
                     <span class="ui-font-capitalize">ui-font-capitalize</span>
                 </div>
 
-                <h3 class="ui-h3">Alignment Classes</h3>
+                <h3 class="ui-h3">Alignment</h3>
                 <div class="ui-padding-30-b ui-font-16">
                     <div class="ui-align-l">ui-align-l</div>
                     <br>
@@ -382,67 +382,26 @@
                     <p class="ui-align-nowrap"><strong>.ui-align-nowrap:</strong> Lorem ipsum dolor sit amet.</p>
                 </div>
 
-                <h3 class="ui-h3">Addresses</h3>
+                <h3 class="ui-h3">Blockquote</h3>
                 <div class="ui-padding-30-b">
-                    <address>
-                        <strong>Twitter, Inc.</strong><br>
-                        1355 Market Street, Suite 900<br>
-                        San Francisco, CA 94103<br>
-                        <abbr title="Phone">P:</abbr> (123) 456-7890
-                    </address>
-                    <address>
-                        <strong>Full Name</strong><br>
-                        <a class="ui-font-hoverline" href="mailto:#">first.last@example.com</a>
-                    </address>
-                </div>
-
-                <h3 class="ui-h3">Blockquotes</h3>
-                <div class="ui-padding-30-b">
-                    <blockquote>
-                        <p class="ui-highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                    </blockquote>
-                    <blockquote>
-                        <p class="ui-highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                    </blockquote>
-                    <blockquote class="reverse">
-                        <p class="ui-highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    <blockquote class="ui-blockquote">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <footer>A. Emin YUCE</footer>
                     </blockquote>
                 </div>
 
-                <h3 class="ui-h3">&lsaquo;hr&rsaquo; Tag</h3>
+                <h3 class="ui-h3">UI Hr</h3>
                 <div class="ui-padding-30-b">
-                    Lorem ipsum dolor sit amet.
-                    <hr class="hr">
-                    Lorem ipsum dolor sit amet.
+                    Before hr tag.
+                    <hr class="ui-hr">
+                    After hr tag.
                 </div>
 
-                <h3 class="ui-h3">Inline Code</h3>
+                <h3 class="ui-h3">Code</h3>
                 <div class="ui-padding-30-b">
-                    For example, <code>&lt;section&gt;</code> should be wrapped as inline.
-                </div>
+                    <pre class="ui-pre ui-pre ui-round">&lt;p&gt;pre example&lt;/p&gt;</pre>
+                    Inline code example:  <code class="ui-code">&lt;ui-code&gt;</code>
 
-                <h3 class="ui-h3">User Input Code</h3>
-                <div class="ui-padding-30-b">
-                    To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
-                    To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
-                </div>
-
-                <h3 class="ui-h3">Basic ui-block Code</h3>
-                <div class="ui-padding-30-b">
-                    <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
-                </div>
-
-                <h3 class="ui-h3">Variables</h3>
-                <div class="ui-padding-30-b">
-                    <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
-                </div>
-
-                <h3 class="ui-h3">Sample Output</h3>
-                <div class="ui-padding-30-b">
-                    <samp>This text is meant to be treated as sample output from a computer program.</samp>
                 </div>
 
                 <h3 class="ui-h3">Description Lists</h3>

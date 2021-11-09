@@ -5,46 +5,46 @@
             <div class="ui-col-12">
 
                 <h3 class="ui-h3">Open Modal</h3>
-                <pre class="ui-round">ui.modal.open({ source, size, type, closable, callback });</pre>
+                <pre class="ui-pre ui-round">ui.modal.open({ source, size, type, closable, callback });</pre>
 
                 <dl class="ui-dl-h ui-padding-15 ui-round ui-border">
                     <dt>source</dt>
                     <dd>
                         Required. Set the source of modal.<br>
-                        Available values: <code>id or classname</code>
+                        Available values: <code class="ui-code">id or classname</code>
                     </dd>
 
                     <dt>size</dt>
                     <dd>
                         Optional. Set the size of modal.<br>
-                        Default value: <code>'md'</code><br>
-                        Available values: <code>'lg', 'md', 'sm', 'fullscreen', inline, {'width', 'height'}</code>
+                        Default value: <code class="ui-code">'md'</code><br>
+                        Available values: <code class="ui-code">'lg', 'md', 'sm', 'fullscreen', inline, {'width', 'height'}</code>
                     </dd>
 
                     <dt>type</dt>
                     <dd>
                         Optional. Set the different source type of modal.<br>
-                        Available values: <code>'ajax', 'iframe'</code>
+                        Available values: <code class="ui-code">'ajax', 'iframe'</code>
                     </dd>
 
                     <dt>bg</dt>
                     <dd>
                         Optional. Set the background visibility of modal.<br>
-                        Default value: <code>true</code><br>
-                        Available values: <code>true, false</code>
+                        Default value: <code class="ui-code">true</code><br>
+                        Available values: <code class="ui-code">true, false</code>
                     </dd>
 
                     <dt>closable</dt>
                     <dd>
                         Optional. Set the visibility of close controls of modal.<br>
-                        Default value: <code>true</code><br>
-                        Available values: <code>true, false</code>
+                        Default value: <code class="ui-code">true</code><br>
+                        Available values: <code class="ui-code">true, false</code>
                     </dd>
 
                     <dt>callback</dt>
                     <dd>
                         Optional. Set a callback function after modal opens.<br>
-                        Example usage: <code>function () {}</code>
+                        Example usage: <code class="ui-code">function () {}</code>
                     </dd>
                 </dl>
 
@@ -56,14 +56,14 @@
             <div class="ui-col-6 ui-no-padding-v">
 
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Open modal window with id.</i>
-                <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: '#myModalId01'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: '#myModalId01'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#myModalId01'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-padding-t">
 
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Open modal window with class name.</i>
-                <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal'});">Run Code</button>
 
             </div>
@@ -74,42 +74,42 @@
             <div class="ui-col-6 ui-no-padding-v">
 
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Open large size modal window.</i>
-                <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'lg'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'lg'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'lg'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-padding-t">
 
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Open default (medium) size modal window.</i>
-                <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'md'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'md'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'md'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-padding-t">
 
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Open small size modal window.</i>
-                <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'sm'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'sm'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'sm'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-padding-t">
 
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Open fullscreen modal window.</i>
-                <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'fullscreen'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'fullscreen'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'fullscreen'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-padding-t">
 
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Open inline modal window.</i>
-                <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'inline'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'inline'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'inline'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-padding-t">
 
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Open fixed size modal window.</i>
-                <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: '560x315'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: '560x315'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: '560x315'});">Run Code</button>
 
             </div>
@@ -118,7 +118,7 @@
 
                 <b>Type:</b>
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Open links with ajax modal.</i>
-                <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: 'xhr/ajax-modal.php'<br>    size: 'lg',<br>    type: 'ajax'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: 'xhr/ajax-modal.php'<br>    size: 'lg',<br>    type: 'ajax'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: 'xhr/ajax-modal.php', size: 'lg', type: 'ajax'});">Run Code</button>
 
                 <span class="ui-sp-15"></span>
@@ -127,19 +127,19 @@
                     Open links with iframe modal.<br>
                     Youtube embed link example:
                 </i>
-                <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: 'https://www.youtube.com/embed/Ct6BUPvE2sM',<br>    size: '640x360',<br>    type: 'iframe'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: 'https://www.youtube.com/embed/Ct6BUPvE2sM',<br>    size: '640x360',<br>    type: 'iframe'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: 'https://www.youtube.com/embed/Ct6BUPvE2sM', size: '640x360', type: 'iframe'});">Run Code</button>
 
                 <span class="ui-sp-15"></span>
 
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Google map embed link example:</i>
-                <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927',<br>    size: 'fullscreen',<br>    type: 'iframe'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927',<br>    size: 'fullscreen',<br>    type: 'iframe'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927', size: 'fullscreen', type: 'iframe'});">Run Code</button>
 
                 <span class="ui-sp-15"></span>
 
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Google map embed link with header and footer:</i>
-                <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: '#myModal02'<br>    size: 'fullscreen'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: '#myModal02'<br>    size: 'fullscreen'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#myModalId02', size: 'fullscreen'});">Run Code</button>
 
             </div>
@@ -148,7 +148,7 @@
 
                 <b>Bg:</b>
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Enable/Disable modal window background color.</i>
-                <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.search',<br>    bg: 'false'<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.search',<br>    bg: 'false'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.search', bg: 'false'});">Run Code</button>
 
             </div>
@@ -157,7 +157,7 @@
 
                 <b>Closable:</b>
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Close modal window with footer buttons.</i>
-                <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    closable: false<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    closable: false<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', closable: false});">Run Code</button>
 
             </div>
@@ -166,7 +166,7 @@
 
                 <b>Callback:</b>
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Callback call after open modal.</i>
-                <pre class="ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    callback: function () {<br>        alert('Modal opened!');<br>    }<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: '.myModal',<br>    callback: function () {<br>        alert('Modal opened!');<br>    }<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', callback: function () { alert('Modal opened!'); }});">Run Code</button>
 
             </div>
@@ -174,24 +174,24 @@
             <div class="ui-col-12">
 
                 <h3 class="ui-h3">Close Modal</h3>
-                <pre class="ui-round">ui.modal.close(callback);</pre>
+                <pre class="ui-pre ui-round">ui.modal.close(callback);</pre>
 
                 <dl class="ui-dl-h ui-padding-15 ui-round ui-border">
                     <dt>callback</dt>
                     <dd>
                         Optional. Set a callback function after modal closes.<br>
-                        Example usage: <code>function () {}</code>
+                        Example usage: <code class="ui-code">function () {}</code>
                     </dd>
                 </dl>
 
             </div>
 
             <div class="ui-col-12 ui-no-padding-b">
-                <pre class="ui-round ui-margin-5-b">ui.modal.close();</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.close();</pre>
 
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-round ui-margin-5-b">ui.modal.close({<br>    function () {<br>        alert('Modal closed!');<br>    }<br>});</pre>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.close({<br>    function () {<br>        alert('Modal closed!');<br>    }<br>});</pre>
 
             </div>
 
