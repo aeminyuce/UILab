@@ -174,6 +174,7 @@
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=grid-list">Grid List</a></li>
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=image-uploader">Image Uploader</a></li>
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=list-group">List Group</a></li>
+                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=listings">Listings</a></li>
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=loading-mask">Loading Mask</a></li>
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=modal">Modal</a></li>
                         <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=photo-gallery">Photo Gallery</a></li>
