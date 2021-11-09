@@ -157,10 +157,10 @@ html:not(.ui-no-effects) {
         .ui-edge & select { margin-bottom: -@form-padding; }
         option,optgroup { padding: (@form-spacing - 2) @form-padding; }
 
-        &:not(.form-light) {
+        &:not(.ui-form-light) {
             option:not(:last-child) { ._border-var(@dir: border-bottom; @var: select-multi-options-border); }
         }
-        &.form-light {
+        &.ui-form-light {
             option:not(:last-child) { border-bottom: solid 1px @select-multi-options-border-dark; }
         }
     }
@@ -372,7 +372,7 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
     &:not(.form-holder):not(.ui-required-accept):not(.hint),label.check,label.radio { background-color: @form-warning-bg !important; border-color: @yellow !important; }
 }
 
-.form-light {
+.ui-form-light {
     border-color: @border-color-dark !important;
 
     & > input,& > select:not(:focus),& > textarea,.ui-icon { color: @white; }
@@ -400,11 +400,11 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
 .form-disabled {
     ._bg-var(form-disabled-bg); opacity: @form-disabled-opacity;
 
-    &.form-light { background-color: @form-disabled-bg-dark; }
+    &.ui-form-light { background-color: @form-disabled-bg-dark; }
 }
 .form-readonly {
     input,textarea { ._color-var(form-readonly-color); }
-    &.form-light {
+    &.ui-form-light {
         input,textarea { color: @form-readonly-color-dark; }
     }
 }
@@ -416,11 +416,11 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
 .form-focus {
     ._border-color-var(form-focus-border);
 
-    &.form-light { border-color: @form-focus-border-dark !important; }
+    &.ui-form-light { border-color: @form-focus-border-dark !important; }
     &:not(.form-readonly) { ._bg-var(form-focus-bg); box-shadow: @form-focus-shadow; }
 
-    & > input,& > select,&.form-light > select option,& > textarea,.ui-icon:not([class*="ui-current"]) { ._color-var(black); }
-    &.form-light {
+    & > input,& > select,&.ui-form-light > select option,& > textarea,.ui-icon:not([class*="ui-current"]) { ._color-var(black); }
+    &.ui-form-light {
         & > input,& > select,& > textarea,.ui-icon:not([class*="ui-current"]) { color: @white !important; }
     }
 
@@ -436,16 +436,16 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
     ._color-var(placeholder-color);
 
     .form-focus > & { ._color-var(placeholder-focus-color); }
-    .form-light > & { color: @placeholder-color-dark; }
-    .form-light.form-focus > & { color: @placeholder-focus-color-dark; }
+    .ui-form-light > & { color: @placeholder-color-dark; }
+    .ui-form-light.form-focus > & { color: @placeholder-focus-color-dark; }
 
 }
 ::-ms-input-placeholder {
     ._color-var(placeholder-color);
 
     .form-focus > & { ._color-var(placeholder-focus-color); }
-    .form-light > & { color: @placeholder-color-dark; }
-    .form-light.form-focus > & { color: @placeholder-focus-color-dark; }
+    .ui-form-light > & { color: @placeholder-color-dark; }
+    .ui-form-light.form-focus > & { color: @placeholder-focus-color-dark; }
 }
 ::-moz-placeholder { opacity: 1; }
 
@@ -497,7 +497,7 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
     &-focus {
         [class*="ui-col-"] {
             & > * { ._border-color-var(form-focus-border); }
-            & > .form-light,& > .ui-border-light { border-color: @form-focus-border-dark !important; }
+            & > .ui-form-light,& > .ui-border-light { border-color: @form-focus-border-dark !important; }
         }
     }
 

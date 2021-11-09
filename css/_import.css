@@ -4880,11 +4880,11 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-select-multi optgroup {
   padding: 3px 10px;
 }
-.ui-select-multi:not(.form-light) option:not(:last-child) {
+.ui-select-multi:not(.ui-form-light) option:not(:last-child) {
   border-bottom: solid 1px hsla(0, 0%, 0%, 0.045);
   border-bottom: solid 1px var(--ui-select-multi-options-border);
 }
-.ui-select-multi.form-light option:not(:last-child) {
+.ui-select-multi.ui-form-light option:not(:last-child) {
   border-bottom: solid 1px hsla(0, 0%, 100%, 0.045);
 }
 .ui-textarea textarea {
@@ -5269,16 +5269,16 @@ label.custom {
   background-color: hsla(42, 100%, 45%, 0.1) !important;
   border-color: hsl(42, 100%, 45%) !important;
 }
-.form-light {
+.ui-form-light {
   border-color: hsla(0, 0%, 100%, 0.175) !important;
 }
-.form-light > input,
-.form-light > select:not(:focus),
-.form-light > textarea,
-.form-light .ui-icon {
+.ui-form-light > input,
+.ui-form-light > select:not(:focus),
+.ui-form-light > textarea,
+.ui-form-light .ui-icon {
   color: hsl(0, 0%, 100%);
 }
-.form-light > input:-webkit-autofill:not(:focus) {
+.ui-form-light > input:-webkit-autofill:not(:focus) {
   -webkit-text-fill-color: hsl(0, 0%, 100%) !important;
 }
 .hint {
@@ -5312,7 +5312,7 @@ label.custom {
   background-color: var(--ui-form-disabled-bg);
   opacity: 0.65;
 }
-.form-disabled.form-light {
+.form-disabled.ui-form-light {
   background-color: hsla(0, 0%, 100%, 0.075);
 }
 .form-readonly input,
@@ -5320,8 +5320,8 @@ label.custom {
   color: hsla(0, 0%, 0%, 0.5);
   color: var(--ui-form-readonly-color);
 }
-.form-readonly.form-light input,
-.form-readonly.form-light textarea {
+.form-readonly.ui-form-light input,
+.form-readonly.ui-form-light textarea {
   color: hsla(0, 0%, 100%, 0.65);
 }
 .form-label,
@@ -5340,7 +5340,7 @@ label.custom {
   border-color: hsla(0, 0%, 0%, 0.35);
   border-color: var(--ui-form-focus-border);
 }
-.form-focus.form-light {
+.form-focus.ui-form-light {
   border-color: hsla(0, 0%, 100%, 0.65) !important;
 }
 .form-focus:not(.form-readonly) {
@@ -5350,16 +5350,16 @@ label.custom {
 }
 .form-focus > input,
 .form-focus > select,
-.form-focus.form-light > select option,
+.form-focus.ui-form-light > select option,
 .form-focus > textarea,
 .form-focus .ui-icon:not([class*="ui-current"]) {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
 }
-.form-focus.form-light > input,
-.form-focus.form-light > select,
-.form-focus.form-light > textarea,
-.form-focus.form-light .ui-icon:not([class*="ui-current"]) {
+.form-focus.ui-form-light > input,
+.form-focus.ui-form-light > select,
+.form-focus.ui-form-light > textarea,
+.form-focus.ui-form-light .ui-icon:not([class*="ui-current"]) {
   color: hsl(0, 0%, 100%) !important;
 }
 .form-focus[class*="text-icon"] .ui-icon,
@@ -5377,10 +5377,10 @@ label.custom {
   color: hsla(0, 0%, 0%, 0.23);
   color: var(--ui-placeholder-focus-color);
 }
-.form-light > ::placeholder {
+.ui-form-light > ::placeholder {
   color: hsla(0, 0%, 100%, 0.4);
 }
-.form-light.form-focus > ::placeholder {
+.ui-form-light.form-focus > ::placeholder {
   color: hsla(0, 0%, 100%, 0.23);
 }
 ::-ms-input-placeholder {
@@ -5391,10 +5391,10 @@ label.custom {
   color: hsla(0, 0%, 0%, 0.23);
   color: var(--ui-placeholder-focus-color);
 }
-.form-light > ::-ms-input-placeholder {
+.ui-form-light > ::-ms-input-placeholder {
   color: hsla(0, 0%, 100%, 0.4);
 }
-.form-light.form-focus > ::-ms-input-placeholder {
+.ui-form-light.form-focus > ::-ms-input-placeholder {
   color: hsla(0, 0%, 100%, 0.23);
 }
 ::-moz-placeholder {
@@ -5474,7 +5474,7 @@ label.custom {
   border-color: hsla(0, 0%, 0%, 0.35);
   border-color: var(--ui-form-focus-border);
 }
-.form-holder-focus [class*="ui-col-"] > .form-light,
+.form-holder-focus [class*="ui-col-"] > .ui-form-light,
 .form-holder-focus [class*="ui-col-"] > .ui-border-light {
   border-color: hsla(0, 0%, 100%, 0.65) !important;
 }
@@ -5718,7 +5718,7 @@ label.custom {
   left: 0;
   z-index: 1;
 }
-.ui-textarea:not(.ui-toggle-textarea)[data-ui-counter]:not(.form-light):before,
+.ui-textarea:not(.ui-toggle-textarea)[data-ui-counter]:not(.ui-form-light):before,
 .ui-textarea:not(.ui-toggle-textarea)[data-ui-counter].form-focus:before {
   color: hsla(0, 0%, 0%, 0.45);
   color: var(--ui-textarea-counter-color);
