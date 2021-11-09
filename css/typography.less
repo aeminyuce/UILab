@@ -114,6 +114,23 @@
     &ellipsis { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
     &readable { line-height: @line-height-readable; }
     &condensed { line-height: @line-height-condensed !important; }
+
+    &underline {
+        &,&-1st > *,&-2nd > * > * {
+            text-decoration: underline;
+
+            a,button {
+              &:hover { text-decoration: none; }
+            }
+        }
+    }
+    &hoverline {
+        &:hover { text-decoration: underline; }
+
+        &,&-1st > *,&-2nd > * > * {
+            &:hover { text-decoration: underline; }
+        }
+    }
 }
 
 .ui- {
@@ -134,23 +151,6 @@
     &h4 { font-size: @font-18; }
     &h5 { font-size: @font-size; }
     &h6 { font-size: @font-12; }
-}
-
-.underline {
-    &,&-1st > *,&-2nd > * > * {
-        text-decoration: underline;
-
-        a,button {
-          &:hover { text-decoration: none; }
-        }
-    }
-}
-.hoverline {
-    &:hover { text-decoration: underline; }
-
-    &,&-1st > *,&-2nd > * > * {
-        &:hover { text-decoration: underline; }
-    }
 }
 
 .lowercase { text-transform: lowercase; }

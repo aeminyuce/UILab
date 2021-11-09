@@ -27,7 +27,7 @@
                             <li><a href="#">Headphones</a></li>
                             <li>
                                 <a href="#"><b>Over-Ear Headphones</b></a>
-                                <ul class="ui-list-unstyled hoverline-2nd ui-padding-15-l">
+                                <ul class="ui-list-unstyled ui-font-hoverline-2nd ui-padding-15-l">
                                     <li><a href="#">Sony</a></li>
                                     <li><a href="#">Logitech</a></li>
                                     <li><a href="#">JBL</a></li>

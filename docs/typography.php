@@ -342,24 +342,19 @@
                     <q class="ui-font-22">Integer pellentesque sed sapien at euismod.</q>
                 </div>
 
-                <h3 class="ui-h3">Text Styles</h3>
+                <h3 class="ui-h3">Font Styles</h3>
                 <div class="ui-row ui-padding-30-b">
                     <div class="ui-col-12 ui-font-16">
-                        <span class="ui-font-bold">ui-font-bold</span>
-                        <br>
-                        <span class="ui-font-semibold">ui-font-semibold</span>
-                        <br>
-                        <span class="ui-font-regular">ui-font-regular</span>
-                        <br>
-                        <span class="ui-font-light">ui-font-light</span>
-                        <br>
-                        <span class="ui-font-thin">ui-font-thin</span>
-                        <br>
-                        <span class="ui-font-italic">ui-font-italic</span>
-                        <br>
-                        <span class="ui-font-overline">ui-font-overline</span>
-                        <br>
+                        <div class="ui-font-bold">ui-font-bold</div>
+                        <div class="ui-font-semibold">ui-font-semibold</div>
+                        <div class="ui-font-regular">ui-font-regular</div>
+                        <div class="ui-font-light">ui-font-light</div>
+                        <div class="ui-font-thin">ui-font-thin</div>
+                        <div class="ui-font-italic">ui-font-italic</div>
+                        <div class="ui-font-overline">ui-font-overline</div>
                         <div class="ui-font-ellipsis ui-col-100">ui-font-ellipsis: Ellipsis Text</div>
+                        <div class="ui-font-underline">ui-font-underline</div>
+                        <div class="ui-font-hoverline">ui-font-hoverline</div>
                     </div>
                 </div>
 
@@ -399,7 +394,7 @@
                     </address>
                     <address>
                         <strong>Full Name</strong><br>
-                        <a class="hoverline" href="mailto:#">first.last@example.com</a>
+                        <a class="ui-font-hoverline" href="mailto:#">first.last@example.com</a>
                     </address>
                 </div>
 

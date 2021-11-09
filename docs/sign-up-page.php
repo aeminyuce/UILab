@@ -122,8 +122,8 @@
                                             <i class="state"></i>
                                         </span>
                                         <span class="ui-color-black-25">I agree to the</span>
-                                        <a class="ui-font-bold hoverline ui-current" href="#">Terms</a>,
-                                        <a class="ui-font-bold hoverline ui-current" href="#">Privacy Policy</a>
+                                        <a class="ui-font-bold ui-font-hoverline ui-current" href="#">Terms</a>,
+                                        <a class="ui-font-bold ui-font-hoverline ui-current" href="#">Privacy Policy</a>
                                         <span class="ui-color-black-25">and</span>
                                         <a class="ui-font-bold ui-current" href="#">Fees.</a>
                                     </label>
@@ -134,7 +134,7 @@
                                         <b>SIGN UP NOW</b>
                                     </button>
                                     <span class="ui-sp-30"></span>
-                                    <span class="ui-color-black-25">Have you any questions?<br>Please,</span> <a class="ui-font-bold hoverline ui-current" href="#">click here</a> <span class="ui-color-black-25">to access Help Center.</span>
+                                    <span class="ui-color-black-25">Have you any questions?<br>Please,</span> <a class="ui-font-bold ui-font-hoverline ui-current" href="#">click here</a> <span class="ui-color-black-25">to access Help Center.</span>
 
                                 </div>
                             </div>

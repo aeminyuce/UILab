@@ -262,7 +262,7 @@
                         </a>
                     </div>
                     <div class="ui-card-side ui-padding-30-h ui-padding-15-v ui-fill-light-300 ui-align-r ui-xs-align-c">
-                        <a href="#" class="ui-current underline">Card Footer Link</a>
+                        <a href="#" class="ui-current ui-font-underline">Card Footer Link</a>
                     </div>
                 </div>
 
@@ -280,7 +280,7 @@
                         </a>
                     </div>
                     <div class="ui-card-side ui-padding-30-h ui-padding-15-v ui-fill-light-300 ui-align-r ui-xs-align-c">
-                        <a href="#" class="ui-current underline">Card Footer Link</a>
+                        <a href="#" class="ui-current ui-font-underline">Card Footer Link</a>
                     </div>
                 </div>
 

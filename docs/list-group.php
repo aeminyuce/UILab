@@ -345,7 +345,7 @@
                         <li>
                             <span class="ui-font-18 ui-block">11 November, Event Name Here</span>
                             <b>İstanbul: </b>
-                            <a class="ui-list-link underline" href="#">
+                            <a class="ui-list-link ui-font-underline" href="#">
                                 Show Directions
                                 <svg class="ui-icon ui-icon-xs ui-margin-3-l"><use href="#long-arrow-right"></use></svg>
                             </a>
@@ -354,7 +354,7 @@
                         <li>
                             <span class="ui-font-18 ui-block">11 November, Event Name Here</span>
                             <b>Ankara: </b>
-                            <a class="ui-list-link underline" href="#">
+                            <a class="ui-list-link ui-font-underline" href="#">
                                 Show Directions
                                 <svg class="ui-icon ui-icon-xs ui-margin-3-l"><use href="#long-arrow-right"></use></svg>
                             </a>
@@ -363,7 +363,7 @@
                         <li>
                             <span class="ui-font-18 ui-block">11 November, Event Name Here</span>
                             <b>Antalya: </b>
-                            <a class="ui-list-link underline" href="#">
+                            <a class="ui-list-link ui-font-underline" href="#">
                                 Show Directions
                                 <svg class="ui-icon ui-icon-xs ui-margin-3-l"><use href="#long-arrow-right"></use></svg>
                             </a>

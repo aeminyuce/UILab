@@ -7,13 +7,13 @@
                 <div class="ui-breadcrumbs ui-color-black-25">
                     <ul class="ui-list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="hoverline" href="#" itemprop="item" title="Home">
+                            <a class="ui-font-hoverline" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">Home</span>
                             </a>
                             <meta itemprop="position" content="1" />
                         </li>
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="hoverline" href="#" itemprop="item" title="Search Results">
+                            <a class="ui-font-hoverline" href="#" itemprop="item" title="Search Results">
                                     <span itemprop="name">
                                         Search Results
                                 </span>
@@ -37,7 +37,7 @@
                             <meta itemprop="position" content="1" />
                         </li>
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="hoverline" href="#" itemprop="item" title="Search Results">
+                            <a class="ui-font-hoverline" href="#" itemprop="item" title="Search Results">
                                 <span itemprop="name">
                                     Search Results
                                 </span>
@@ -61,7 +61,7 @@
                             <meta itemprop="position" content="1" />
                         </li>
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="hoverline ui-current" href="#" itemprop="item" title="Search Results">
+                            <a class="ui-font-hoverline ui-current" href="#" itemprop="item" title="Search Results">
                                 <span itemprop="name">
                                     Search Results
                                 </span>

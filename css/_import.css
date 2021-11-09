@@ -3560,6 +3560,27 @@ html .ui-row {
 .ui-font-condensed {
   line-height: 1.2em !important;
 }
+.ui-font-underline,
+.ui-font-underline-1st > *,
+.ui-font-underline-2nd > * > * {
+  text-decoration: underline;
+}
+.ui-font-underline a:hover,
+.ui-font-underline-1st > * a:hover,
+.ui-font-underline-2nd > * > * a:hover,
+.ui-font-underline button:hover,
+.ui-font-underline-1st > * button:hover,
+.ui-font-underline-2nd > * > * button:hover {
+  text-decoration: none;
+}
+.ui-font-hoverline:hover {
+  text-decoration: underline;
+}
+.ui-font-hoverline:hover,
+.ui-font-hoverline-1st > *:hover,
+.ui-font-hoverline-2nd > * > *:hover {
+  text-decoration: underline;
+}
 .ui-h1,
 .ui-h2,
 .ui-h3,
@@ -3620,27 +3641,6 @@ html .ui-row {
 }
 .ui-h6 {
   font-size: 12px;
-}
-.underline,
-.underline-1st > *,
-.underline-2nd > * > * {
-  text-decoration: underline;
-}
-.underline a:hover,
-.underline-1st > * a:hover,
-.underline-2nd > * > * a:hover,
-.underline button:hover,
-.underline-1st > * button:hover,
-.underline-2nd > * > * button:hover {
-  text-decoration: none;
-}
-.hoverline:hover {
-  text-decoration: underline;
-}
-.hoverline:hover,
-.hoverline-1st > *:hover,
-.hoverline-2nd > * > *:hover {
-  text-decoration: underline;
 }
 .lowercase {
   text-transform: lowercase;

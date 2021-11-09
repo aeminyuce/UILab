@@ -836,7 +836,7 @@
                             <label class="form-label">Label</label>
                         </div>
                         <div class="ui-col-6 ui-align-r">
-                            <a class="ui-font-12 ui-color-black-25 underline" href="#">Top Right Link</a>
+                            <a class="ui-font-12 ui-color-black-25 ui-font-underline" href="#">Top Right Link</a>
                         </div>
                     </div>
                     <div class="text ui-margin-10-b ui-round ui-border-dual ui-ease-form">
@@ -1569,7 +1569,10 @@
                                     </label>
                                 </div>
                                 <p class="required-msg">Please, read and accept Terms and Conditions.</p>
-                                <i class="hint ui-color-black-25">* Required for accepting <a href="#" class="underline">Terms and Conditions.</a></i>
+                                <i class="hint ui-color-black-25">
+                                    * Required for accepting
+                                    <a href="#" class="ui-font-underline">Terms and Conditions.</a>
+                                </i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1582,7 +1585,10 @@
                                     </label>
                                 </div>
                                 <p class="required-msg">Please, read and accept Terms and Conditions.</p>
-                                <i class="hint ui-color-black-25">* Required for accepting <a href="#" class="underline">Terms and Conditions.</a></i>
+                                <i class="hint ui-color-black-25">
+                                    * Required for accepting
+                                    <a href="#" class="ui-font-underline">Terms and Conditions.</a>
+                                </i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1666,7 +1672,10 @@
                                     </label>
                                 </div>
                                 <p class="required-msg">Please, read and accept Terms and Conditions.</p>
-                                <i class="hint ui-color-black-25">* Required for accepting <a href="#" class="underline">Terms and Conditions.</a></i>
+                                <i class="hint ui-color-black-25">
+                                    * Required for accepting
+                                    <a href="#" class="ui-font-underline">Terms and Conditions.</a>
+                                </i>
                             </div>
 
                             <div class="ui-col-9 ui-push-3 ui-ease-1st-btn">
