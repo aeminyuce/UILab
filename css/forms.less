@@ -114,7 +114,7 @@
 }
 
 html:not(.ui-no-effects) {
-    .ease-range {
+    .ui-ease-range {
         &::-webkit-slider-thumb { transition-property: transform; transition-duration: @ease-default; }
         &::-moz-range-thumb { transition-property: transform; transition-duration: @ease-default; }
         &::-webkit-slider-runnable-track { transition-property: background-color; transition-duration: @ease-default; }
@@ -126,7 +126,7 @@ html:not(.ui-no-effects) {
 .text,.select,.ui-mobile .select-multi { line-height: normal; min-height: @btn-default; }
 
 .text input,.select select,.select-multi select,.textarea textarea { ._color-var(black); font-family: @font-family; font-size: @font-size; width: 100%; background-color: @no-color; border: 0; }
-.text input,.select select,.select-multi select,.range { @no-appearance(); }
+.text input,.select select,.select-multi select,.ui-range { @no-appearance(); }
 .text input,.select select,.textarea textarea { line-height: @form-line-height; padding: @form-padding; border-radius: 0; } // border radius fix for Chrome
 .text input,.select select { height: (@btn-default - 2); overflow: hidden; }
 
@@ -325,7 +325,7 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
     }
 }
 
-.range {
+.ui-range {
     width: 100%; height: 1.4rem; padding: 0; background-color: @no-color;
 
     &::-webkit-slider-thumb { width: 1rem; height: 1rem; margin-top: -.25rem; background-color: @green; border: 0; border-radius: 50%; @no-appearance(); }

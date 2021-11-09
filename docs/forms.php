@@ -702,19 +702,19 @@
 
                 <h3 class="ui-h3">Range Forms</h3>
                 <div class="ui-padding-30-b">
-                    <input class="range ui-ease-range" type="range" min="0" max="10" value="0">
+                    <input class="ui-range ui-ease-range" type="range" min="0" max="10" value="0">
                     <span class="ui-sp-10"></span>
-                    <input class="range ui-theme-base ui-current ui-ease-range" type="range" min="0" max="10" value="2">
+                    <input class="ui-range ui-theme-base ui-current ui-ease-range" type="range" min="0" max="10" value="2">
                     <span class="ui-sp-10"></span>
-                    <input class="range ui-theme-sub ui-current ui-ease-range" type="range" min="0" max="10" value="4">
+                    <input class="ui-range ui-theme-sub ui-current ui-ease-range" type="range" min="0" max="10" value="4">
                     <span class="ui-sp-10"></span>
-                    <input class="range ui-theme-yellow ui-current ui-ease-range" type="range" min="0" max="10" value="6">
+                    <input class="ui-range ui-theme-yellow ui-current ui-ease-range" type="range" min="0" max="10" value="6">
                     <span class="ui-sp-10"></span>
-                    <input class="range ui-theme-orange ui-current ui-ease-range" type="range" min="0" max="10" value="8">
+                    <input class="ui-range ui-theme-orange ui-current ui-ease-range" type="range" min="0" max="10" value="8">
                     <span class="ui-sp-10"></span>
-                    <input class="range ui-theme-red ui-current ui-ease-range" type="range" min="0" max="10" value="10">
+                    <input class="ui-range ui-theme-red ui-current ui-ease-range" type="range" min="0" max="10" value="10">
                     <span class="ui-sp-10"></span>
-                    <input class="range ui-ease-range" disabled type="range" min="0" max="10" value="5">
+                    <input class="ui-range ui-ease-range" disabled type="range" min="0" max="10" value="5">
                 </div>
 
                 <h3 class="ui-h3">Inline Forms</h3>

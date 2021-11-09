@@ -4755,19 +4755,19 @@ dt + dd:not(:last-child) {
   transition-property: opacity;
   transition-duration: 0.15s;
 }
-html:not(.ui-no-effects) .ease-range::-webkit-slider-thumb {
+html:not(.ui-no-effects) .ui-ease-range::-webkit-slider-thumb {
   transition-property: transform;
   transition-duration: 0.15s;
 }
-html:not(.ui-no-effects) .ease-range::-moz-range-thumb {
+html:not(.ui-no-effects) .ui-ease-range::-moz-range-thumb {
   transition-property: transform;
   transition-duration: 0.15s;
 }
-html:not(.ui-no-effects) .ease-range::-webkit-slider-runnable-track {
+html:not(.ui-no-effects) .ui-ease-range::-webkit-slider-runnable-track {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
-html:not(.ui-no-effects) .ease-range::-moz-range-track {
+html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
@@ -4802,7 +4802,7 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
 .text input,
 .select select,
 .select-multi select,
-.range {
+.ui-range {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -5098,13 +5098,13 @@ label.custom {
 .ui-desktop .switch-custom:hover input:indeterminate + .ui-state {
   transform: translate(-50%, -50%);
 }
-.range {
+.ui-range {
   width: 100%;
   height: 1.4rem;
   padding: 0;
   background-color: transparent;
 }
-.range::-webkit-slider-thumb {
+.ui-range::-webkit-slider-thumb {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
@@ -5115,10 +5115,10 @@ label.custom {
   -moz-appearance: none;
   appearance: none;
 }
-.range.ui-current::-webkit-slider-thumb {
+.ui-range.ui-current::-webkit-slider-thumb {
   background-color: currentColor;
 }
-.range::-webkit-slider-runnable-track {
+.ui-range::-webkit-slider-runnable-track {
   width: 100%;
   height: 0.5rem;
   background-color: hsla(0, 0%, 0%, 0.08);
@@ -5127,17 +5127,17 @@ label.custom {
   border-radius: 20px;
   cursor: pointer;
 }
-.range:hover::-webkit-slider-runnable-track {
+.ui-range:hover::-webkit-slider-runnable-track {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--ui-range-track-hover-bg);
 }
-.range:not(:disabled):hover::-webkit-slider-thumb {
+.ui-range:not(:disabled):hover::-webkit-slider-thumb {
   transform: scale(1.2);
 }
-.range:not(:disabled)::-webkit-slider-thumb:active {
+.ui-range:not(:disabled)::-webkit-slider-thumb:active {
   transform: scale(1.4);
 }
-.range::-moz-range-thumb {
+.ui-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
   background-color: hsl(142, 82%, 42%);
@@ -5147,10 +5147,10 @@ label.custom {
   -moz-appearance: none;
   appearance: none;
 }
-.range.ui-current::-moz-range-thumb {
+.ui-range.ui-current::-moz-range-thumb {
   background-color: currentColor;
 }
-.range::-moz-range-track {
+.ui-range::-moz-range-track {
   width: 100%;
   height: 0.5rem;
   background-color: hsla(0, 0%, 0%, 0.08);
@@ -5159,17 +5159,17 @@ label.custom {
   border-radius: 20px;
   cursor: pointer;
 }
-.range:hover::-moz-range-track {
+.ui-range:hover::-moz-range-track {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--ui-range-track-hover-bg);
 }
-.range:not(:disabled):hover::-moz-range-thumb {
+.ui-range:not(:disabled):hover::-moz-range-thumb {
   transform: scale(1.2);
 }
-.range:not(:disabled)::-moz-range-thumb:active {
+.ui-range:not(:disabled)::-moz-range-thumb:active {
   transform: scale(1.4);
 }
-.range::-ms-thumb {
+.ui-range::-ms-thumb {
   width: 1rem;
   height: 1rem;
   background-color: hsl(142, 82%, 42%);
@@ -5182,10 +5182,10 @@ label.custom {
   -moz-appearance: none;
   appearance: none;
 }
-.range.ui-current::-ms-thumb {
+.ui-range.ui-current::-ms-thumb {
   background-color: currentColor;
 }
-.range::-ms-track {
+.ui-range::-ms-track {
   color: transparent;
   width: 100%;
   height: 0.5rem;
@@ -5193,46 +5193,46 @@ label.custom {
   border-color: transparent;
   cursor: pointer;
 }
-.range:not(:disabled):hover::-ms-thumb {
+.ui-range:not(:disabled):hover::-ms-thumb {
   transform: scale(1.2);
 }
-.range:not(:disabled)::-ms-thumb:active {
+.ui-range:not(:disabled)::-ms-thumb:active {
   transform: scale(1.4);
 }
-.range::-ms-fill-lower {
+.ui-range::-ms-fill-lower {
   background-color: hsla(0, 0%, 0%, 0.08);
   background-color: var(--ui-range-track-bg);
   border-radius: 20px;
 }
-.range:hover::-ms-fill-lower {
+.ui-range:hover::-ms-fill-lower {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--ui-range-track-hover-bg);
 }
-.range::-ms-fill-upper {
+.ui-range::-ms-fill-upper {
   background-color: hsla(0, 0%, 0%, 0.08);
   background-color: var(--ui-range-track-bg);
   border-radius: 20px;
 }
-.range:hover::-ms-fill-upper {
+.ui-range:hover::-ms-fill-upper {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--ui-range-track-hover-bg);
 }
-.range:disabled::-webkit-slider-thumb {
+.ui-range:disabled::-webkit-slider-thumb {
   background-color: hsl(220, 3%, 57%);
   background-color: var(--ui-range-thumb-color);
 }
-.range:disabled::-moz-range-thumb {
+.ui-range:disabled::-moz-range-thumb {
   background-color: hsl(220, 3%, 57%);
   background-color: var(--ui-range-thumb-color);
 }
-.range:disabled::-ms-thumb {
+.ui-range:disabled::-ms-thumb {
   background-color: hsl(220, 3%, 57%);
   background-color: var(--ui-range-thumb-color);
 }
-.range:disabled::-webkit-slider-runnable-track {
+.ui-range:disabled::-webkit-slider-runnable-track {
   cursor: default;
 }
-.range:disabled::-moz-range-track {
+.ui-range:disabled::-moz-range-track {
   cursor: default;
 }
 .error .check-custom,
