@@ -4749,9 +4749,9 @@ dt + dd:not(:last-child) {
   transition-property: height;
   transition-duration: 0.15s;
 }
-.ui-ease-form.file input,
-.ui-ease-1st-form > *.file input,
-.ui-ease-2nd-form > * > *.file input {
+.ui-ease-form.ui-file input,
+.ui-ease-1st-form > *.ui-file input,
+.ui-ease-2nd-form > * > *.ui-file input {
   transition-property: opacity;
   transition-duration: 0.15s;
 }
@@ -4926,7 +4926,7 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
   vertical-align: middle;
   display: inline-block;
 }
-.file {
+.ui-file {
   height: 42px;
   border: solid 1px hsla(0, 0%, 0%, 0.15);
   border: solid 1px var(--ui-border-color);
@@ -4934,7 +4934,7 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
   display: block;
   position: relative;
 }
-.file input {
+.ui-file input {
   vertical-align: middle;
   width: 100%;
   overflow: hidden;
@@ -4946,7 +4946,7 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
   z-index: 3;
   opacity: 0;
 }
-.file > i {
+.ui-file > i {
   white-space: nowrap;
   font-style: normal;
   text-overflow: ellipsis;
@@ -4958,7 +4958,7 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
   display: block;
   position: absolute;
 }
-.file .ui-btn {
+.ui-file .ui-btn {
   text-overflow: ellipsis;
   white-space: nowrap;
   min-width: 125px;
@@ -4966,31 +4966,31 @@ html:not(.ui-no-effects) .ease-range::-moz-range-track {
   overflow: hidden;
   float: left;
 }
-.file .ui-btn .ui-icon {
+.ui-file .ui-btn .ui-icon {
   width: 20px;
   height: 20px;
   stroke-width: 30px;
 }
-.file.ui-round .ui-btn:not(.ui-btn-square) {
+.ui-file.ui-round .ui-btn:not(.ui-btn-square) {
   border-radius: 3px 0 0 3px;
 }
-.ui-desktop .file:hover input[class] {
+.ui-desktop .ui-file:hover input[class] {
   opacity: 0.35;
 }
-.ui-desktop .file:hover .ui-btn:not([class*="ui-fill-"]):not(.ui-btn-passive) {
+.ui-desktop .ui-file:hover .ui-btn:not([class*="ui-fill-"]):not(.ui-btn-passive) {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--ui-btn-hover-bg);
 }
-.file.ui-no-border .ui-btn {
+.ui-file.ui-no-border .ui-btn {
   line-height: 22px;
 }
-.file.ui-no-border > i {
+.ui-file.ui-no-border > i {
   line-height: 42px;
 }
-.file.ui-border-dual .ui-btn {
+.ui-file.ui-border-dual .ui-btn {
   line-height: 18px;
 }
-.file.ui-border-dual > i {
+.ui-file.ui-border-dual > i {
   line-height: 38px;
 }
 label.custom {
@@ -5558,31 +5558,31 @@ label.custom {
   height: 20px;
   stroke-width: 30px;
 }
-.form-lg .file {
+.form-lg .ui-file {
   height: 48px;
 }
-.form-lg .file > i {
+.form-lg .ui-file > i {
   font-size: 16px;
   line-height: 46px;
 }
-.form-lg .file .ui-btn {
+.form-lg .ui-file .ui-btn {
   line-height: 18px;
 }
-.form-lg .file .ui-btn .ui-icon {
+.form-lg .ui-file .ui-btn .ui-icon {
   width: 23px;
   height: 23px;
   stroke-width: 27px;
 }
-.form-lg .file.ui-no-border .ui-tn {
+.form-lg .ui-file.ui-no-border .ui-tn {
   line-height: 20px;
 }
-.form-lg .file.ui-no-border > i {
+.form-lg .ui-file.ui-no-border > i {
   line-height: 48px;
 }
-.form-lg .file.ui-border-dual .ui-btn {
+.form-lg .ui-file.ui-border-dual .ui-btn {
   line-height: 16px;
 }
-.form-lg .file.ui-border-dual > i {
+.form-lg .ui-file.ui-border-dual > i {
   line-height: 44px;
 }
 @media (min-width: 960px) {
@@ -8183,8 +8183,8 @@ button.ui-dialog-custom:focus {
   overflow: hidden;
   position: relative;
 }
-.ui-image-uploader.ui-loading .file .ui-btn,
-.ui-image-uploader.ui-uploading .file .ui-btn,
+.ui-image-uploader.ui-loading .ui-file .ui-btn,
+.ui-image-uploader.ui-uploading .ui-file .ui-btn,
 .ui-image-uploader.ui-loading [type="submit"],
 .ui-image-uploader.ui-uploading [type="submit"] {
   background-image: linear-gradient(45deg, transparent 25%, hsla(0, 0%, 100%, 0.25) 25%, hsla(0, 0%, 100%, 0.25) 50%, transparent 50%, transparent 75%, hsla(0, 0%, 100%, 0.25) 75%);

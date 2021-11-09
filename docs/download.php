@@ -23,7 +23,7 @@
                     <div class="generate-holder ui-tab-content form-lg ui-padding-15 ui-open ui-open-ease">
 
                         <div class="ui-align-c ui-margin-30-b">
-                            <div class="file ui-no-border ui-round ui-circle ui-no-border ui-ease-form form-inline-xs">
+                            <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form form-inline-xs">
                                 <input class="ui-cursor-pointer" name="less" class="generate-import" type="file">
                                 <span class="ui-btn ui-padding-30-h ui-circle ui-block ui-ease-btn">
                                     <span class="ui-inline-block">Import LESS File</span>
@@ -533,7 +533,7 @@
                     <div class="generate-holder ui-tab-content form-lg ui-padding-15">
 
                         <div class="ui-align-c ui-margin-30-b">
-                            <div class="file ui-no-border ui-round ui-circle ui-no-border ui-ease-form form-inline-xs">
+                            <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form form-inline-xs">
                                 <input class="ui-cursor-pointer" name="js" class="generate-import" type="file">
                                 <span class="ui-btn ui-padding-30-h ui-circle ui-block ui-ease-btn">
                                     <span class="ui-inline-block">Import JS File</span>

@@ -10,7 +10,7 @@ ui.forms = {
     targetSelect: 'select',
     targetSelectMulti: 'select-multi',
     targetTextarea: 'textarea',
-    targetFile: 'file',
+    targetFile: 'ui-file',
     targetIndeterminate: 'indeterminate',
 
     // main classnames

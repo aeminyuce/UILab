@@ -22,7 +22,7 @@ ui.requiredForms = {
     nameText: 'text',
     nameSelect: 'select',
     nameTextarea: 'textarea',
-    nameFile: 'file',
+    nameFile: 'ui-file',
     nameIndeterminate: 'indeterminate',
 
     nameError: 'error',

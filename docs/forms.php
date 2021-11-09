@@ -431,7 +431,7 @@
 
                 <h3 class="ui-h3">File Input</h3>
                 <div class="ui-padding-30-b ui-theme-gray">
-                    <div class="file ui-round ui-no-border ui-fill-light-100 ui-ease-form">
+                    <div class="ui-file ui-round ui-no-border ui-fill-light-100 ui-ease-form">
                         <input type="file">
                         <span class="ui-btn ui-ease-btn">Browse</span>
                         <i>Choose file.</i>
@@ -439,7 +439,7 @@
 
                     <span class="ui-sp-10"></span>
 
-                    <div class="file ui-round ui-ease-form">
+                    <div class="ui-file ui-round ui-ease-form">
                         <input type="file">
                         <span class="ui-btn ui-ease-btn">Browse</span>
                         <i>Choose file.</i>
@@ -447,7 +447,7 @@
 
                     <span class="ui-sp-10"></span>
 
-                    <div class="file ui-round ui-border-dual ui-ease-form">
+                    <div class="ui-file ui-round ui-border-dual ui-ease-form">
                         <input type="file">
                         <span class="ui-btn ui-ease-btn">Browse</span>
                         <i>Choose file.</i>
@@ -457,7 +457,7 @@
 
                     <label class="form-label ui-padding-10-b">File Input with Large Forms</label>
                     <div class="form-lg ui-ease-1st-form">
-                        <div class="file ui-round ui-no-border ui-fill-light-100">
+                        <div class="ui-file ui-round ui-no-border ui-fill-light-100">
                             <input type="file">
                             <span class="ui-btn ui-ease-btn">Browse</span>
                             <i>Choose file.</i>
@@ -465,7 +465,7 @@
 
                         <span class="ui-sp-10"></span>
 
-                        <div class="file ui-round">
+                        <div class="ui-file ui-round">
                             <input type="file">
                             <span class="ui-btn ui-ease-btn">Browse</span>
                             <i>Choose file.</i>
@@ -473,7 +473,7 @@
 
                         <span class="ui-sp-10"></span>
 
-                        <div class="file ui-round ui-border-dual">
+                        <div class="ui-file ui-round ui-border-dual">
                             <input type="file">
                             <span class="ui-btn ui-ease-btn">Browse</span>
                             <i>Choose file.</i>
@@ -484,31 +484,31 @@
 
                     <label class="form-label ui-padding-10-b">File Input Like Buttons</label>
                     <div>
-                        <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
+                        <div class="ui-file ui-no-border ui-inline-block ui-round ui-ease-form">
                             <input class="ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-inline-block ui-round ui-ease-form">
+                        <div class="ui-file ui-inline-block ui-round ui-ease-form">
                             <input class="ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-border-dual ui-inline-block ui-round ui-ease-form">
+                        <div class="ui-file ui-border-dual ui-inline-block ui-round ui-ease-form">
                             <input class="ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
+                        <div class="ui-file ui-no-border ui-inline-block ui-round ui-ease-form">
                             <input class="ui-bg-white ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-theme-base ui-fill-dark-100 ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
+                        <div class="ui-file ui-no-border ui-inline-block ui-round ui-ease-form">
                             <input class="ui-bg-white ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
@@ -519,31 +519,31 @@
                     <span class="ui-sp-10"></span>
 
                     <div class="form-lg">
-                        <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
+                        <div class="ui-file ui-no-border ui-inline-block ui-round ui-ease-form">
                             <input class="ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-inline-block ui-round ui-ease-form">
+                        <div class="ui-file ui-inline-block ui-round ui-ease-form">
                             <input class="ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-border-dual ui-inline-block ui-round ui-ease-form">
+                        <div class="ui-file ui-border-dual ui-inline-block ui-round ui-ease-form">
                             <input class="ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
+                        <div class="ui-file ui-no-border ui-inline-block ui-round ui-ease-form">
                             <input class="ui-bg-white ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-theme-base ui-fill-dark-100 ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
                             </span>
                         </div>
-                        <div class="file ui-no-border ui-inline-block ui-round ui-ease-form">
+                        <div class="ui-file ui-no-border ui-inline-block ui-round ui-ease-form">
                             <input class="ui-bg-white ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
                                 <svg class="ui-icon"><use href="#plus"/></svg>
@@ -1550,7 +1550,7 @@
                                 <label class="form-grid">Required with textarea forms and min length.</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="file ui-round ui-border-dual ui-ease-form">
+                                <div class="ui-file ui-round ui-border-dual ui-ease-form">
                                     <input class="required" type="file">
                                     <span class="ui-btn ui-ease-btn">Browse</span>
                                     <i>Choose file.</i>
