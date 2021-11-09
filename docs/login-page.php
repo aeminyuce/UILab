@@ -35,7 +35,7 @@
                     <label class="custom">
                         <span class="check-custom ui-round ui-border-dual ui-ease-form">
                             <input type="checkbox" checked>
-                            <i class="state"></i>
+                            <i class="ui-state"></i>
                         </span>
                         Remember me
                     </label>

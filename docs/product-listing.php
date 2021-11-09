@@ -47,31 +47,31 @@
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-red">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-circle ui-bg-white ui-invert-bg"></i>
+                                    <i class="ui-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-pink">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-circle ui-bg-white ui-invert-bg"></i>
+                                    <i class="ui-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-blue">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-circle ui-bg-white ui-invert-bg"></i>
+                                    <i class="ui-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-orange">
                                     <input type="checkbox">
-                                    <i class="state ui-circle ui-bg-white ui-invert-bg"></i>
+                                    <i class="ui-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-yellow">
                                     <input type="checkbox">
-                                    <i class="state ui-circle ui-bg-white ui-invert-bg"></i>
+                                    <i class="ui-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
 
@@ -80,13 +80,13 @@
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-black">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-circle ui-bg-white ui-invert-bg"></i>
+                                    <i class="ui-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
                             <label class="custom">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-white">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-circle ui-bg-white ui-invert-bg"></i>
+                                    <i class="ui-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
                         </div>
@@ -97,7 +97,7 @@
                             <label class="custom ui-block">
                                 <span class="switch-custom ui-right ui-round ui-ease-form">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-fill-dark-100"></i>
+                                    <i class="ui-state ui-fill-dark-100"></i>
                                 </span>
                                 <svg class="ui-icon ui-margin-5-r"><use href="#truck"/></svg>
                                 Fast Delivery
@@ -106,7 +106,7 @@
                             <label class="custom ui-block">
                                 <span class="switch-custom ui-right ui-round ui-ease-form">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-fill-dark-100"></i>
+                                    <i class="ui-state ui-fill-dark-100"></i>
                                 </span>
                                 <svg class="ui-icon ui-margin-5-r"><use href="#check-badge"/></svg>
                                 Deals
@@ -120,28 +120,28 @@
                             <label class="custom ui-block">
                                 <span class="check-custom ui-round ui-ease-form">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-fill-dark-100"></i>
+                                    <i class="ui-state ui-fill-dark-100"></i>
                                 </span>
                                 Wireless <span class="ui-color-black-25">4</span>
                             </label>
                             <label class="custom ui-block">
                                 <span class="check-custom ui-round ui-ease-form">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-fill-dark-100"></i>
+                                    <i class="ui-state ui-fill-dark-100"></i>
                                 </span>
                                 Bluetooth <span class="ui-color-black-25">11</span>
                             </label>
                             <label class="custom ui-block">
                                 <span class="check-custom ui-round ui-ease-form">
                                     <input type="checkbox" checked>
-                                    <i class="state ui-fill-dark-100"></i>
+                                    <i class="ui-state ui-fill-dark-100"></i>
                                 </span>
                                 Wired <span class="ui-color-black-25">9</span>
                             </label>
                             <label class="custom ui-block">
                                 <span class="check-custom ui-round ui-ease-form">
                                     <input type="checkbox">
-                                    <i class="state ui-fill-dark-100"></i>
+                                    <i class="ui-state ui-fill-dark-100"></i>
                                 </span>
                                 Radio Channel <span class="ui-color-black-25">17</span>
                             </label>

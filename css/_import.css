@@ -4731,9 +4731,9 @@ dt + dd:not(:last-child) {
   transition-property: color, transform, opacity;
   transition-duration: 0.3s;
 }
-.ui-ease-form .state,
-.ui-ease-1st-form > * .state,
-.ui-ease-2nd-form > * > * .state {
+.ui-ease-form .ui-state,
+.ui-ease-1st-form > * .ui-state,
+.ui-ease-2nd-form > * > * .ui-state {
   transition-property: width, height, background-color, transform, opacity;
   transition-duration: 0.15s;
 }
@@ -5011,9 +5011,9 @@ label.custom {
   display: inline-block;
   position: relative;
 }
-.check-custom .state,
-.radio-custom .state,
-.switch-custom .state {
+.check-custom .ui-state,
+.radio-custom .ui-state,
+.switch-custom .ui-state {
   content: "";
   width: 14px;
   height: 14px;
@@ -5039,8 +5039,8 @@ label.custom {
 .radio-custom {
   width: 22px;
 }
-.check-custom .state,
-.radio-custom .state {
+.check-custom .ui-state,
+.radio-custom .ui-state {
   background-color: hsla(0, 0%, 0%, 0.65);
   background-color: var(--ui-check-custom-bg);
   opacity: 0;
@@ -5049,53 +5049,53 @@ label.custom {
 .switch-custom.ui-round {
   border-radius: 14px !important;
 }
-.radio-custom .state,
-.switch-custom.ui-round .state {
+.radio-custom .ui-state,
+.switch-custom.ui-round .ui-state {
   border-radius: 7px;
 }
-.radio-custom input:checked + .state {
+.radio-custom input:checked + .ui-state {
   opacity: 1;
 }
-.check-custom.ui-round .state {
+.check-custom.ui-round .ui-state {
   border-radius: 3px;
 }
 .check-custom input:checked + i,
-.check-custom input:indeterminate + .state {
+.check-custom input:indeterminate + .ui-state {
   opacity: 1;
 }
-.check-custom input:indeterminate + .state {
+.check-custom input:indeterminate + .ui-state {
   height: 4px;
 }
 .switch-custom {
   width: 44px;
 }
-.switch-custom input:checked + .state {
+.switch-custom input:checked + .ui-state {
   transform: translate(25%, -50%);
 }
-.switch-custom input:checked + .state:not([class*="ui-fill-"]) {
+.switch-custom input:checked + .ui-state:not([class*="ui-fill-"]) {
   background-color: hsl(142, 82%, 42%);
 }
-.switch-custom input:not(:checked) + .state,
-.switch-custom input:not(:checked) + .state[class*="ui-fill-"] {
+.switch-custom input:not(:checked) + .ui-state,
+.switch-custom input:not(:checked) + .ui-state[class*="ui-fill-"] {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--ui-switch-custom-bg);
 }
-.switch-custom input:not(:indeterminate):not(:checked):not(:indeterminate) + .state {
+.switch-custom input:not(:indeterminate):not(:checked):not(:indeterminate) + .ui-state {
   transform: translate(-125%, -50%);
 }
-.switch-custom input:indeterminate + .state {
+.switch-custom input:indeterminate + .ui-state {
   background-color: hsl(42, 100%, 45%);
 }
-.ui-desktop .switch-custom:hover .state {
+.ui-desktop .switch-custom:hover .ui-state {
   width: 18px;
 }
-.ui-desktop .switch-custom:hover input:checked + .state {
+.ui-desktop .switch-custom:hover input:checked + .ui-state {
   transform: translate(0, -50%);
 }
-.ui-desktop .switch-custom:hover input:not(:checked) + .state {
+.ui-desktop .switch-custom:hover input:not(:checked) + .ui-state {
   transform: translate(-100%, -50%);
 }
-.ui-desktop .switch-custom:hover input:indeterminate + .state {
+.ui-desktop .switch-custom:hover input:indeterminate + .ui-state {
   transform: translate(-50%, -50%);
 }
 .range {

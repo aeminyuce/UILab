@@ -485,7 +485,7 @@
                             <label class="custom ui-margin-5-r">
                                 <span class="check-custom ui-round ui-border-dual ui-sm-no-margin-t ui-ease-form">
                                     <input class="ui-grid-list-check-all" type="checkbox">
-                                    <i class="state"></i>
+                                    <i class="ui-state"></i>
                                 </span>
                                 Check All
                             </label>
@@ -543,7 +543,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     John Doe
                                 </div>
@@ -560,7 +560,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mary Doe
                                 </div>
@@ -577,7 +577,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mike Taylor
                                 </div>
@@ -594,7 +594,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Anna May
                                 </div>
@@ -611,7 +611,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     John Doe
                                 </div>
@@ -628,7 +628,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mary Doe
                                 </div>
@@ -645,7 +645,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mike Taylor
                                 </div>
@@ -662,7 +662,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Anna May
                                 </div>
@@ -679,7 +679,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     John Doe
                                 </div>
@@ -696,7 +696,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mary Doe
                                 </div>
@@ -713,7 +713,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mike Taylor
                                 </div>
@@ -730,7 +730,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Anna May
                                 </div>
@@ -747,7 +747,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     John Doe
                                 </div>
@@ -764,7 +764,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mary Doe
                                 </div>
@@ -781,7 +781,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mike Taylor
                                 </div>
@@ -798,7 +798,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Anna May
                                 </div>
@@ -815,7 +815,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     John Doe
                                 </div>
@@ -832,7 +832,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mary Doe
                                 </div>
@@ -849,7 +849,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mike Taylor
                                 </div>
@@ -866,7 +866,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Anna May
                                 </div>
@@ -883,7 +883,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     John Doe
                                 </div>
@@ -900,7 +900,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mary Doe
                                 </div>
@@ -917,7 +917,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mike Taylor
                                 </div>
@@ -934,7 +934,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Anna May
                                 </div>
@@ -951,7 +951,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     John Doe
                                 </div>
@@ -968,7 +968,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mary Doe
                                 </div>
@@ -985,7 +985,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mike Taylor
                                 </div>
@@ -1002,7 +1002,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Anna May
                                 </div>
@@ -1019,7 +1019,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     John Doe
                                 </div>
@@ -1036,7 +1036,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mary Doe
                                 </div>
@@ -1053,7 +1053,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mike Taylor
                                 </div>
@@ -1070,7 +1070,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Anna May
                                 </div>
@@ -1087,7 +1087,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     John Doe
                                 </div>
@@ -1104,7 +1104,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mary Doe
                                 </div>
@@ -1121,7 +1121,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mike Taylor
                                 </div>
@@ -1138,7 +1138,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Anna May
                                 </div>
@@ -1155,7 +1155,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     John Doe
                                 </div>
@@ -1172,7 +1172,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mary Doe
                                 </div>
@@ -1189,7 +1189,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Mike Taylor
                                 </div>
@@ -1206,7 +1206,7 @@
                                 <div class="ui-col-5">
                                     <span class="check-custom ui-margin-3-r ui-round ui-border-dual ui-ease-form">
                                         <input class="ui-grid-list-check" type="checkbox">
-                                        <i class="state"></i>
+                                        <i class="ui-state"></i>
                                     </span>
                                     Anna May
                                 </div>
@@ -1252,7 +1252,7 @@
                             <label class="custom ui-margin-5-r">
                                 <span class="check-custom ui-round ui-border-dual ui-sm-no-margin-t ui-ease-form">
                                     <input class="ui-grid-list-filter" data-ui-index="2" type="checkbox" value="25">
-                                    <i class="state"></i>
+                                    <i class="ui-state"></i>
                                 </span>
                                 Show only 25 ages.
                             </label>
