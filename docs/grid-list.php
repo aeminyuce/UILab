@@ -7,7 +7,7 @@
                 <div class="ui-card ui-padding-10 ui-round ui-shadow-lg">
                     <div class="ui-grid-list ui-grid-list-striped grid-hover ui-theme-gray ui-ease-ui-grid-list">
 
-                        <div class="ui-row ui-no-ui-row-gap-v ui-row-gap-sm-h ui-margin-2-v">
+                        <div class="ui-row ui-no-row-gap-v ui-row-gap-sm-h ui-margin-2-v">
                             <div class="ui-col-6 ui-lg-fluid">
                                 <div class="ui-input text-icon-both ui-round ui-no-border ui-fill-light-100 has-clear ui-ease-form">
                                     <svg class="ui-icon text-icon-l"><use href="#search"></svg>

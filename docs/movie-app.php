@@ -79,7 +79,7 @@
 
                 <div class="ui-padding-30 ui-no-padding-b ui-md-no-padding">
 
-                    <header class="ui-row ui-no-ui-row-gap-t ui-sticky-md ui-icons-no-opacity form-lg" data-ui-classes="ui-shadow-lg">
+                    <header class="ui-row ui-no-row-gap-t ui-sticky-md ui-icons-no-opacity form-lg" data-ui-classes="ui-shadow-lg">
                         <div class="ui-col-6 ui-hidden-md ui-ease-1st-form">
                             <div class="ui-input text-icon-both ui-margin-15-b ui-circle ui-no-border ui-theme-gray ui-fill-light-300 has-clear">
                                 <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
@@ -420,7 +420,7 @@
             <p class="ui-highlight ui-font-16 ui-color-white-50 ui-xs-align-c ui-font-readable">Search for movies, TV shows...</p>
 
             <div class="ui-col-static ui-no-fluid">
-                <div class="ui-row ui-no-ui-row-gap-h">
+                <div class="ui-row ui-no-row-gap-h">
                     <div class="ui-col-12 ui-ease-1st-form">
                         <div class="ui-input text-icon has-clear ui-round-l ui-no-border ui-shadow-in-sm ui-theme-gray ui-fill-light-300 ui-ease-form">
                             <button type="button" class="clear-form">

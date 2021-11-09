@@ -673,7 +673,7 @@
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-yellow">
                                             <div class="ui-card ui-full-h ui-padding-15 ui-round ui-shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
-                                                    <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
+                                                    <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
                                                             <div class="ui-font-18">Pending</div>
                                                             <span class="ui-color-black-25 large">Total: 45%</span>
@@ -696,7 +696,7 @@
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-yellow">
                                             <div class="ui-card ui-full-h ui-padding-15 ui-round ui-shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
-                                                    <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
+                                                    <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
                                                             <div class="ui-font-18">Paused</div>
                                                             <span class="ui-color-black-25 large">Total: 5%</span>
@@ -719,7 +719,7 @@
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-green">
                                             <div class="ui-card ui-full-h ui-padding-15 ui-round ui-shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
-                                                    <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
+                                                    <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
                                                             <div class="ui-font-18">Completed</div>
                                                             <span class="ui-color-black-25 large">Total: 80%</span>
@@ -742,7 +742,7 @@
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-panel2">
                                             <div class="ui-card ui-full-h ui-padding-15 ui-round ui-shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
-                                                    <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
+                                                    <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
                                                             <div class="ui-align-l ui-font-18">On Payment</div>
                                                             <span class="ui-color-black-25 large">Total: 67%</span>
@@ -790,7 +790,7 @@
                                     </div>
                                     <h4 class="ui-h4 ui-align-l ui-margin-10-t">Activity</h4>
                                     <div class="ui-col-static ui-no-fluid">
-                                        <div class="ui-row ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
+                                        <div class="ui-row ui-row ui-no-row-gap-h ui-row-gap-md-v">
                                             <div class="ui-col-12 large">
                                                 <div class="large ui-font-bold">Total Progress</div>
                                                 <span class="ui-color-black-25">23% Change</span>
@@ -1149,7 +1149,7 @@
                                     <h4 class="ui-h4 ui-align-l ui-margin-10-t">Experts</h4>
                                     <div class="ui-grid-list ui-grid-list-striped grid-hover ui-theme-gray ui-ease-ui-grid-list">
 
-                                        <div class="ui-row ui-no-ui-row-gap-v ui-row-gap-sm-h">
+                                        <div class="ui-row ui-no-row-gap-v ui-row-gap-sm-h">
                                             <div class="ui-col-6 ui-lg-fluid">
                                                 <div class="ui-input text-icon-both ui-round ui-no-border ui-fill-light-100 has-clear ui-ease-form">
                                                     <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
@@ -1774,7 +1774,7 @@
             <p class="ui-highlight ui-font-16 ui-color-white-50 ui-xs-align-c ui-font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
             <div class="ui-col-static ui-no-fluid">
-                <div class="ui-row ui-no-ui-row-gap-h">
+                <div class="ui-row ui-no-row-gap-h">
                     <div class="ui-col-12 ui-ease-1st-form">
                         <div class="ui-input text-icon has-clear ui-round-l ui-no-border ui-shadow-in-sm ui-theme-gray ui-fill-light-300">
                             <button type="button" class="clear-form">

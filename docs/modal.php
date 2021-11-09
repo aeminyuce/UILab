@@ -246,7 +246,7 @@
             <p class="ui-highlight ui-font-16 ui-color-white-50 ui-xs-align-c ui-font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
             <div class="ui-col-static ui-no-fluid">
-                <div class="ui-row ui-no-ui-row-gap-h">
+                <div class="ui-row ui-no-row-gap-h">
                     <div class="ui-col-12 ui-ease-1st-form">
                         <div class="ui-input text-icon has-clear ui-round-l ui-no-border ui-shadow-in-sm ui-theme-gray ui-fill-light-300 ui-ease-form">
                             <button type="button" class="clear-form">
