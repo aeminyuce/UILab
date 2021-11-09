@@ -14,7 +14,7 @@ ui.forms = {
     targetIndeterminate: 'indeterminate',
 
     // main classnames
-    nameFocus: 'form-focus',
+    nameFocus: 'ui-form-focus',
 
     nameHolder: 'form-holder',
     nameHolderFocus: 'form-holder-focus',
