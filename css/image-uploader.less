@@ -87,7 +87,7 @@
         ._bg-var(image-uploader-drop-bg);
 
         .ui-uploader-list {
-            &:extend(.ui-image-uploader .ui-uploader-list:not(.ui-open));
+            ._bg-var(image-uploader-list-bg); margin: @image-uploader-padding; ._border-var(@style: @image-uploader-list-border-style; @width: @image-uploader-list-border-size; @var: image-uploader-list-border); border-radius: @round;
 
             & > .ui-icon { display: block; }
             li { opacity: @image-uploader-drop-opacity; }

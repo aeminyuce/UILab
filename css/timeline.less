@@ -47,13 +47,10 @@
         display: block; position: relative;
 
         &:not(:last-child) { margin-bottom: @highlight-space; }
-        &:after {
-            width: @timeline-steps-size; height: @timeline-steps-size; ._border-var(@width: @timeline-line-size; @var: timeline-line-bg); border-radius: 50%;
+        &:after { content: ""; width: @timeline-steps-size; height: @timeline-steps-size; display: block; ._border-var(@width: @timeline-line-size; @var: timeline-line-bg); border-radius: 50%; position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; }
 
-            &:extend(.ui-timeline:not(.ui-hide-h-lines) > li:before);
-        }
         &.ui-current {
-            &:after { &:extend(.ui-timeline.ui-current > li:after); }
+            &:after { border-color: currentColor; }
         }
 
         & > [class*="ui-img-photo"] { margin-left: @timeline-card-padding; position: relative; z-index: 1; transform: translateY(50%); }

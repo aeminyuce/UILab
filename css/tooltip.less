@@ -48,7 +48,7 @@
 
             i { border-bottom-color: @no-color; border-right-color: @no-color; }
         }
-        .ui-tooltip-content { &:extend(.ui-tooltip[data-ui-pos="t"] .ui-tooltip-content); }
+        .ui-tooltip-content { text-align: center;; }
     }
     &[data-ui-pos="r"] {
         & > span {
@@ -70,31 +70,31 @@
         & > span {
             top: 100%; left: (@tooltip-arrow-size * 2);
 
-            i { &:extend(.ui-tooltip[data-ui-pos="t"] > span i); }
+            i { border-top-color: @no-color; border-left-color: @no-color; }
         }
     }
     &[data-ui-pos="tl"] {
         & > span {
             top: 100%; right: (@tooltip-arrow-size * 2);
 
-            i { &:extend(.tooltip[data-ui-pos="t"] > span i); }
+            i { border-top-color: @no-color; border-left-color: @no-color; }
         }
-        .ui-tooltip-content { &:extend(.ui-tooltip[data-ui-pos="l"] .ui-tooltip-content); }
+        .ui-tooltip-content { text-align: right; }
     }
     &[data-ui-pos="br"] {
         & > span {
             bottom: 100%; left: (@tooltip-arrow-size * 2);
 
-            i { &:extend(.ui-tooltip[data-ui-pos="b"] > span i); }
+            i { border-bottom-color: @no-color; border-right-color: @no-color; }
         }
     }
     &[data-ui-pos="bl"] {
         & > span {
             bottom: 100%; right: (@tooltip-arrow-size * 2);
 
-            i { &:extend(.ui-tooltip[data-ui-pos="b"] > span i); }
+            i { border-bottom-color: @no-color; border-right-color: @no-color; }
         }
-        .ui-tooltip-content { &:extend(.ui-tooltip[data-ui-pos="l"] .ui-tooltip-content); }
+        .ui-tooltip-content { text-align: right; }
     }
 
     & > span {

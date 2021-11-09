@@ -82,11 +82,7 @@
                 .ui-card & { ._bg-var(card-bg); ._border-color-var(steps-border); }
             }
 
-            & > .ui-icon {
-                color: currentColor;
-
-                &:extend(.ui-steps-bar li > span);
-            }
+            & > .ui-icon { color: currentColor; width: @steps-active-size; height: @steps-active-size; display: block; position: absolute; top: @steps-margin-v; left: 50%; z-index: 2; transform: translateX(-50%); }
             &.ui-active ~ li {
                 & > .ui-icon { opacity: 0; }
             }

@@ -96,25 +96,10 @@
             .ui-icon { margin: @weather-padding auto; display: block; }
             & > span { font-size: @weather-days-numerics-size; line-height: @weather-days-numerics-size; display: inline-block; position: relative; opacity: @weather-days-numerics-opacity; }
             & span {
-                &:after { &:extend(.ui-weather .ui-deg:after); }
+                &:after { content: ""; width: (@weather-days-degree-size - 1); height: (@weather-days-degree-size - 1); display: block; border: solid @weather-days-degree-border-size currentColor; border-radius: @weather-days-degree-size; position: absolute; top: @weather-days-degree-top; right: @weather-days-degree-right; }
             }
         }
     }
-
-    .ui-w-degree {
-        font-size: @weather-now-numeric-size; font-weight: @font-light; letter-spacing: @weather-now-numeric-letter-spacing; line-height: (@weather-now-numeric-size - 12); margin-bottom: @weather-padding; display: inline-block; position: relative;
-
-        &:after { content: ""; width: @weather-now-degree-size; height: @weather-now-degree-size; display: block; border: solid @weather-now-degree-border-size currentColor; border-radius: @weather-now-degree-size; position: absolute; top: @weather-now-degree-top; right: @weather-now-degree-right; }
-    }
-    .ui-w-date { font-size: @font-size; font-weight: @font-normal; margin-top: @weather-now-date-margin-t; display: block; opacity: @weather-now-date-opacity; }
-
-    .ui-deg {
-        vertical-align: middle; margin-right: @weather-days-degree-size; display: inline-block; position: relative;
-
-        &:after { content: ""; width: @weather-days-degree-size; height: @weather-days-degree-size; display: block; border: solid @weather-days-degree-border-size currentColor; border-radius: @weather-days-degree-size; position: absolute; top: @weather-days-degree-top; right: @weather-days-degree-right; }
-    }
-
-    .ui-clear { width: @weather-clear-size; height: @weather-clear-size; background: no-repeat; margin: @weather-clear-top 0 0 @weather-clear-left; left: 0; }
 
     @keyframes ui-clock {
         0% { opacity: 1; }
@@ -123,11 +108,23 @@
         100% { opacity: 0; }
     }
 
-    .ui-w-clock {
-        & > span {
-            &:first-child:after { content: ":"; animation: ui-clock 2s linear infinite; }
+    .ui-w- {
+        &degree {
+            font-size: @weather-now-numeric-size; font-weight: @font-light; letter-spacing: @weather-now-numeric-letter-spacing; line-height: (@weather-now-numeric-size - 12); margin-bottom: @weather-padding; display: inline-block; position: relative;
+
+            &:after { content: ""; width: @weather-now-degree-size; height: @weather-now-degree-size; display: block; border: solid @weather-now-degree-border-size currentColor; border-radius: @weather-now-degree-size; position: absolute; top: @weather-now-degree-top; right: @weather-now-degree-right; }
+        }
+
+        &date { font-size: @font-size; font-weight: @font-normal; margin-top: @weather-now-date-margin-t; display: block; opacity: @weather-now-date-opacity; }
+
+        &clock {
+            & > span {
+                &:first-child:after { content: ":"; animation: ui-clock 2s linear infinite; }
+            }
         }
     }
+
+    .ui-clear { width: @weather-clear-size; height: @weather-clear-size; background: no-repeat; margin: @weather-clear-top 0 0 @weather-clear-left; left: 0; }
 
     @keyframes ui-shooting {
         0% { transform: translate(-100%,-35%); }

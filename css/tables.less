@@ -68,7 +68,7 @@
             }
         }
         &.ui-align-c {
-            td:not(:first-child) { &:extend(.ui-table:not(.ui-table-sidebar).ui-align-c td); }
+            td:not(:first-child) { text-align: center;; }
         }
     }
 
@@ -81,7 +81,7 @@
     }
     tr {
         &:last-child:not(:first-child) {
-            td { &:extend(.ui-table tbody:last-child tr:last-child td); }
+            td { border-bottom: 0; }
         }
     }
 
@@ -120,7 +120,6 @@
 
     &-border {
         ._border-var(@var: table-border-color);
-        &:extend(.ui-table[class*="ui-border-"]);
 
         th,td {
             &:not(:last-child) { ._border-var(@dir: border-right; @var: table-border-color); }
