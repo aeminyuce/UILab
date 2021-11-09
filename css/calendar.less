@@ -52,7 +52,7 @@
 @calendar-details-days-font-spacing:    -0.025em;
 @calendar-details-content-radius:       10px;
 
-@calendar-details-time-font-size:       (@font-size - 1);
+@calendar-details-time-font-size:       @font-13;
 @calendar-details-time-padding:         2px;
 
 @calendar-empty-details-bg:             fade(@black, 12%);
@@ -171,7 +171,7 @@
     &-next { margin-right: -(@calendar-caption-buttons-size + @calendar-caption-padding); float: right; }
 
     &-title {
-        font-size: @large; width: 100%; float: left;
+        font-size: @font-16; width: 100%; float: left;
 
         button { display: inline-block; }
     }
@@ -251,7 +251,7 @@
             &:not(:last-child) { margin-bottom: @calendar-details-list-margin; }
 
             & > strong { font-size: @calendar-details-days-font-size; font-weight: @font-light; letter-spacing: @calendar-details-days-font-spacing; text-align: center !important; line-height: (@calendar-details-days-font-size - 5); width: @calendar-details-days-font-size; margin-left: -(@calendar-details-days-font-size + @calendar-details-list-padding * 2); float: left; }
-            & > b { font-size: @large; margin: @calendar-details-list-padding 0 @calendar-details-list-padding 0; display: inline-block; }
+            & > b { font-size: @font-16; margin: @calendar-details-list-padding 0 @calendar-details-list-padding 0; display: inline-block; }
             & > span {
                 display: block;
 

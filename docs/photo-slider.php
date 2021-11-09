@@ -25,9 +25,9 @@
                                     </button>
                                     <span class="ui-photo-slider-nav ui-margin-15-b ui-ease-1st-layout"></span>
                                 </span>
-                                <span class="ui-x-large">Canvas Photo Series #101</span>
+                                <span class="ui-font-18">Canvas Photo Series #101</span>
                                 <span class="ui-color-black-50 ui-block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
-                                <b class="ui-xx-large">$164.98</b>
+                                <b class="ui-font-22">$164.98</b>
                             </div>
 
                         </div>
@@ -49,9 +49,9 @@
                                     </button>
                                     <span class="ui-photo-slider-nav ui-margin-15-b ui-ease-1st-layout"></span>
                                 </span>
-                                <span class="ui-x-large">Canvas Photo Series #101</span>
+                                <span class="ui-font-18">Canvas Photo Series #101</span>
                                 <span class="ui-color-black-50 ui-block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
-                                <b class="ui-xx-large">$1211.13</b>
+                                <b class="ui-font-22">$1211.13</b>
                             </div>
 
                         </div>
@@ -73,9 +73,9 @@
                                     </button>
                                     <span class="ui-photo-slider-nav ui-margin-15-b ui-ease-1st-layout"></span>
                                 </span>
-                                <span class="ui-x-large">Canvas Photo Series #101</span>
+                                <span class="ui-font-18">Canvas Photo Series #101</span>
                                 <span class="ui-color-black-50 ui-block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
-                                <b class="ui-xx-large">$198.00</b>
+                                <b class="ui-font-22">$198.00</b>
                             </div>
 
                         </div>
@@ -97,9 +97,9 @@
                                     </button>
                                     <span class="ui-photo-slider-nav ui-margin-15-b ui-ease-1st-layout"></span>
                                 </span>
-                                <span class="ui-x-large">Canvas Photo Series #101</span>
+                                <span class="ui-font-18">Canvas Photo Series #101</span>
                                 <span class="ui-color-black-50 ui-block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
-                                <b class="ui-xx-large">$164.98</b>
+                                <b class="ui-font-22">$164.98</b>
                             </div>
 
                         </div>
@@ -121,9 +121,9 @@
                                     </button>
                                     <span class="ui-photo-slider-nav ui-margin-15-b ui-ease-1st-layout"></span>
                                 </span>
-                                <span class="ui-x-large">Canvas Photo Series #101</span>
+                                <span class="ui-font-18">Canvas Photo Series #101</span>
                                 <span class="ui-color-black-50 ui-block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
-                                <b class="ui-xx-large">$1211.13</b>
+                                <b class="ui-font-22">$1211.13</b>
                             </div>
 
                         </div>
@@ -145,9 +145,9 @@
                                     </button>
                                     <span class="ui-photo-slider-nav ui-margin-15-b ui-ease-1st-layout"></span>
                                 </span>
-                                <span class="ui-x-large">Canvas Photo Series #101</span>
+                                <span class="ui-font-18">Canvas Photo Series #101</span>
                                 <span class="ui-color-black-50 ui-block ui-margin-10-v">Lorem ipsum dolor sit amet.</span>
-                                <b class="ui-xx-large">$198.00</b>
+                                <b class="ui-font-22">$198.00</b>
                             </div>
 
                         </div>

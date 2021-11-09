@@ -207,7 +207,7 @@
             <button class="ui-btn ui-circle ui-fill-dark-300">Header Button</button>
         </div>
     </div>
-    <div class="ui-modal-container ui-large ui-font-readable ui-padding-30">
+    <div class="ui-modal-container ui-font-16 ui-font-readable ui-padding-30">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tincidunt eros. Vivamus a est id dui ultricies congue vel et tellus. Nam ac velit mi. Donec vitae suscipit enim, nec consectetur nisl. Quisque ac posuere lectus. Morbi quam diam, cursus et metus at, lobortis iaculis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lectus nibh, non elementum justo facilisis a. Aliquam erat volutpat. Vestibulum auctor et diam eget eleifend. Donec blandit ligula aliquam mi lacinia lacinia. Cras ac bibendum urna. Suspendisse posuere ullamcorper enim, non varius diam mattis vehicula. Donec nec lacinia diam.
         <img class="ui-img-fluid ui-margin-30-v ui-round ui-auto-margin ui-block ui-shadow-lg" src="img/image_05.jpg" style="max-width: 700px" alt="">
         Pellentesque congue eget elit vitae rutrum. Morbi bibendum dignissim convallis. Etiam lacinia quam et ipsum convallis, a congue metus sagittis. Nunc posuere iaculis nulla, nec rutrum neque condimentum at. Donec nec elementum sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor libero sem, sed bibendum elit viverra vitae.
@@ -243,7 +243,7 @@
 
         <form action="#successful">
             <h2>Search</h2>
-            <p class="ui-highlight ui-large ui-color-white-50 ui-xs-align-c ui-font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
+            <p class="ui-highlight ui-font-16 ui-color-white-50 ui-xs-align-c ui-font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-row ui-no-ui-row-gap-h">
@@ -268,21 +268,21 @@
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#news"/></svg>
-                        <span class="ui-x-large ui-block ui-margin-5-t">News</span>
+                        <span class="ui-font-18 ui-block ui-margin-5-t">News</span>
                         <span class="ui-color-white-50">589</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#calendar-check"/></svg>
-                        <span class="ui-x-large ui-block ui-margin-5-t">Events</span>
+                        <span class="ui-font-18 ui-block ui-margin-5-t">Events</span>
                         <span class="ui-color-white-50">219</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#files"/></svg>
-                        <span class="ui-x-large ui-block ui-margin-5-t">Documents</span>
+                        <span class="ui-font-18 ui-block ui-margin-5-t">Documents</span>
                         <span class="ui-color-white-50">701</span>
                     </a>
                 </div>

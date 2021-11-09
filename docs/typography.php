@@ -14,7 +14,7 @@
                 </div>
 
                 <h3>Font Colors</h3>
-                <div class="ui-padding-30-b ui-large">
+                <div class="ui-padding-30-b ui-font-16">
                     <div class="ui-theme-gray ui-fill-dark-100">
                         <span class="ui-color-white">ui-color-white</span>
                         <span class="ui-color-white">ui-color-white-50</span>
@@ -33,29 +33,22 @@
 
                 <h3>Font Sizes</h3>
                 <div class="ui-padding-30-b">
-                    <span class="ui-xx-largest">ui-xx-largest</span>
-                    <span class="ui-sp-5"></span>
-                    <span class="ui-x-largest">ui-x-largest</span>
-                    <span class="ui-sp-5"></span>
-                    <span class="ui-largest">ui-largest</span>
-                    <span class="ui-sp-5"></span>
-                    <span class="ui-xx-large">ui-xx-large</span>
-                    <span class="ui-sp-5"></span>
-                    <span class="ui-x-large">ui-x-large</span>
-                    <span class="ui-sp-5"></span>
-                    <span class="ui-large">ui-large</span>
-
-                    <span class="ui-sp-15"></span>
-                    <span class="ui-default">ui-default</span>
-                    <span class="ui-sp-15"></span>
-
-                    <span class="ui-small">ui-small</span>
-                    <span class="ui-sp-5"></span>
-                    <span class="ui-x-small">ui-x-small</span>
-                    <span class="ui-sp-5"></span>
-                    <span class="ui-xx-small">ui-xx-small</span>
-                    <span class="ui-sp-5"></span>
-                    <span class="ui-smallest">ui-smallest</span>
+                    <div class="ui-font-48">ui-font-48</div>
+                    <div class="ui-font-38">ui-font-38</div>
+                    <div class="ui-font-36">ui-font-36</div>
+                    <div class="ui-font-30">ui-font-30</div>
+                    <div class="ui-font-28">ui-font-28</div>
+                    <div class="ui-font-24">ui-font-24</div>
+                    <div class="ui-font-22">ui-font-22</div>
+                    <div class="ui-font-18">ui-font-18</div>
+                    <div class="ui-font-16">ui-font-16</div>
+                    <div class="ui-font-15">ui-font-15</div>
+                    <div class="ui-font-14">ui-font-14</div>
+                    <div class="ui-font-13">ui-font-13</div>
+                    <div class="ui-font-12">ui-font-12</div>
+                    <div class="ui-font-11">ui-font-11</div>
+                    <div class="ui-font-10">ui-font-10</div>
+                    <div class="ui-font-9">ui-font-9</div>
                 </div>
 
                 <h3>Unordered Lists</h4>
@@ -326,9 +319,9 @@
                 <div class="ui-padding-30-b">
                     <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q>
                     <span class="ui-sp-5"></span>
-                    <q class="ui-large">Proin tellus justo, blandit non ultrices in, consequat a sem.</q>
+                    <q class="ui-font-16">Proin tellus justo, blandit non ultrices in, consequat a sem.</q>
                     <span class="ui-sp-5"></span>
-                    <q class="ui-xx-large">Integer pellentesque sed sapien at euismod.</q>
+                    <q class="ui-font-22">Integer pellentesque sed sapien at euismod.</q>
                 </div>
 
                 <h3>Text Elements</h3>

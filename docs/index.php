@@ -99,7 +99,7 @@
                 <a href="index.php" class="ui-btn ui-btn-square ui-btn-ghost ui-circle ui-margin-10-r ui-ease-btn">
                     <svg class="ui-icon ui-icon-hybrid ui-no-opacity"><use href="#long-arrow-left"/></svg>
                 </a>
-                <h1 class="ui-x-large ui-inline-block"><span class="capitalize"><?php echo str_replace("-", " ", $page); ?></span></h1>
+                <h1 class="ui-font-18 ui-inline-block"><span class="capitalize"><?php echo str_replace("-", " ", $page); ?></span></h1>
             </div>
         </div>
     </header>

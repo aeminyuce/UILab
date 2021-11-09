@@ -7,14 +7,12 @@
 @code-font-family:                      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 @font-colors:                           green yellow orange red blue;
 
-@lead-size:                             @x-large;
-
 @heading-icon-right:                    5px;
 @heading-auto-center:                   true;
 
-@h1-size:                               (@x-largest - 2);
-@h2-size:                               (@largest + 2);
-@h3-size:                               (@largest - 4);
+@h1-size:                               @font-36;
+@h2-size:                               @font-30;
+@h3-size:                               @font-24;
 
 @pre-bg:                                hsl(220, 8%, 22%);
 @pre-max-height:                        350px;
@@ -92,7 +90,24 @@
 }
 
 .ui-font- {
-    &lead { font-size: @lead-size; line-height: @line-height-readable; margin-bottom: @highlight-space; }
+    &9 { font-size: @font-9 !important; }
+    &10 { font-size: @font-10 !important; }
+    &11 { font-size: @font-11 !important; }
+    &12 { font-size: @font-12 !important; }
+    &13 { font-size: @font-13 !important; }
+    &14 { font-size: @font-14 !important; }
+    &15 { font-size: @font-15 !important; }
+    &16 { font-size: @font-16 !important; }
+    &18 { font-size: @font-18 !important; }
+    &22 { font-size: @font-22 !important; }
+    &24 { font-size: @font-24 !important; }
+    &28 { ._font-scale(@font-28) !important; }
+    &30 { ._font-scale(@font-30) !important; }
+    &36 { ._font-scale(@font-36) !important; }
+    &38 { ._font-scale(@font-38) !important; }
+    &48 { ._font-scale(@font-48) !important; }
+
+    &lead { font-size: @font-18; line-height: @line-height-readable; margin-bottom: @highlight-space; }
     &bold { font-weight: @font-bold !important; }
     &semibold { font-weight: @font-semibold !important; }
     &regular { font-weight: @font-normal !important; }
@@ -103,20 +118,7 @@
     &ellipsis { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
     &readable { line-height: @line-height-readable; }
     &condensed { line-height: @line-height-condensed !important; }
-
 }
-
-.ui-smallest { font-size: @smallest !important; }
-.ui-xx-small { font-size: @xx-small !important; }
-.ui-x-small { font-size: @x-small !important; }
-.ui-small { font-size: @small !important; }
-.ui-default { font-size: @font-size !important; }
-.ui-large { font-size: @large !important; }
-.ui-x-large { font-size: @x-large !important; }
-.ui-xx-large { font-size: @xx-large !important; }
-.ui-largest { ._font-scale(@largest) !important; }
-.ui-x-largest { ._font-scale(@x-largest) !important; }
-.ui-xx-largest { ._font-scale(@xx-largest) !important; }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: @headings-font-family; font-weight: @font-normal; letter-spacing: @headings-letter-spacing; margin-bottom: 0;
@@ -131,9 +133,9 @@ h1,h2,h3 { line-height: 1; }
 h1 { ._font-scale(@h1-size); }
 h2 { ._font-scale(@h2-size); }
 h3 { ._font-scale(@h3-size); }
-h4 { font-size: @x-large; }
+h4 { font-size: @font-18; }
 h5 { font-size: @font-size; }
-h6 { font-size: @small; }
+h6 { font-size: @font-12; }
 
 .underline {
     &,&-1st > *,&-2nd > * > * {
@@ -166,7 +168,7 @@ address {
     &:not(:last-child) { margin-bottom: @highlight-space; }
 }
 blockquote {
-    font-size: @large; padding: 10px 20px !important; border-left: 5px solid @blockquote-border;
+    font-size: @font-16; padding: 10px 20px !important; border-left: 5px solid @blockquote-border;
 
     &:not(:last-child) { margin-bottom: @highlight-space; }
     &.ui-align-r,&.ui-right { text-align: right; border-right: 5px solid @blockquote-border; border-left: 0; }

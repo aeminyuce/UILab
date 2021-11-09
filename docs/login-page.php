@@ -84,7 +84,7 @@
 
                 <div class="ui-full-w ui-set-absolute ui-set-c">
                     <h1 class="ui-hidden-md">Create your account</h1>
-                    <p class="ui-x-large ui-color-white-25">Sign up to create, discover and connect with the global community.</p>
+                    <p class="ui-font-18 ui-color-white-25">Sign up to create, discover and connect with the global community.</p>
                     <span class="ui-sp-30 ui-margin-10-v"></span>
                     <a href="?l=sign-up-page" class="login-btn ui-btn ui-btn-lg ui-btn-sm-fluid ui-padding-30-h ui-circle ui-hover-scale ui-hover-shadow ui-ease-btn"><b>SIGN UP NOW</b></a>
                 </div>

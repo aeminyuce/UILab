@@ -8,7 +8,7 @@
                         <svg class="ui-icon ui-right"><use href="#plus"/></svg>
                     </a>
                     <span class="ui-sp-30"></span>
-                    <ul class="ui-list-unstyled ui-hover-r-more-2nd inline-ui-block-2nd ui-large ui-list-spacer-30 ui-padding-10 ui-ease-2nd-layout">
+                    <ul class="ui-list-unstyled ui-hover-r-more-2nd inline-ui-block-2nd ui-font-16 ui-list-spacer-30 ui-padding-10 ui-ease-2nd-layout">
                         <li><a class="ui-current" href="#">Summer Holiday</a></li>
                         <li><a href="#">Autumn Comes</a></li>
                         <li><a href="#">Travelling</a></li>
@@ -17,7 +17,7 @@
                         <li><a href="#">Hobbies</a></li>
                     </ul>
                     <span class="ui-sp-30"></span>
-                    <ul class="ui-list-unstyled ui-hover-r-more-2nd inline-ui-block-2nd ui-list-spacer-15 ui-large ui-color-black-50 adding-10 ui-icons-sm ui-icons-margin-10-r ui-ease-2nd-layout">
+                    <ul class="ui-list-unstyled ui-hover-r-more-2nd inline-ui-block-2nd ui-list-spacer-15 ui-font-16 ui-color-black-50 adding-10 ui-icons-sm ui-icons-margin-10-r ui-ease-2nd-layout">
                         <li>
                             <a href="#">
                                 <svg class="ui-icon"><use href="#marker"/></svg>
@@ -47,7 +47,7 @@
                                     <h3 class="ui-margin-15-v">Summer Holiday Photos</h3>
                                 </div>
                                 <div class="ui-col-6 ui-align-r ui-xs-align-c">
-                                    <span class="ui-color-black-25 ui-large ui-inline-block">23 Jun - 18 Aug, 2012</span>
+                                    <span class="ui-color-black-25 ui-font-16 ui-inline-block">23 Jun - 18 Aug, 2012</span>
                                     <img class="ui-img-photo ui-img-photo-sm ui-circle ui-margin-15-l" src="img/profile-image.jpg" alt="">
                                 </div>
                             </div>
@@ -58,7 +58,7 @@
                                         <img src="img/image_03.jpg" alt="">
                                         <span class="ui-font-readable">
                                             <span class="ui-scroll-v ui-margin-30 ui-set-absolute ui-set-all">
-                                                <span class="ui-x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                <span class="ui-font-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                                 <br><br>
                                                 <span class="ui-color-white-25 large">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -143,7 +143,7 @@
                                     <h3 class="ui-margin-15-v">Autumn Comes Photos</h3>
                                 </div>
                                 <div class="ui-col-6 ui-align-r ui-xs-align-c">
-                                    <span class="ui-color-black-25 ui-large ui-inline-block">3 Sep - 18 Nov, 2021</span>
+                                    <span class="ui-color-black-25 ui-font-16 ui-inline-block">3 Sep - 18 Nov, 2021</span>
                                     <img class="ui-img-photo ui-img-photo-sm ui-circle ui-margin-15-l" src="img/profile-image3.jpg" alt="">
                                 </div>
                             </div>
@@ -154,7 +154,7 @@
                                         <img src="img/image_06.jpg" alt="">
                                         <span class="ui-font-readable">
                                             <span class="ui-scroll-v ui-margin-30 ui-set-absolute ui-set-all">
-                                                <span class="ui-x-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                <span class="ui-font-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                                 <br><br>
                                                 <span class="ui-color-white-25 large">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.

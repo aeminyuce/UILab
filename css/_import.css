@@ -3470,6 +3470,59 @@ html .ui-row {
 .ui-color-blue button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
   color: hsl(212, 64%, 38%) !important;
 }
+.ui-font-9 {
+  font-size: 9px !important;
+}
+.ui-font-10 {
+  font-size: 10px !important;
+}
+.ui-font-11 {
+  font-size: 11px !important;
+}
+.ui-font-12 {
+  font-size: 12px !important;
+}
+.ui-font-13 {
+  font-size: 13px !important;
+}
+.ui-font-14 {
+  font-size: 14px !important;
+}
+.ui-font-15 {
+  font-size: 15px !important;
+}
+.ui-font-16 {
+  font-size: 16px !important;
+}
+.ui-font-18 {
+  font-size: 18px !important;
+}
+.ui-font-22 {
+  font-size: 22px !important;
+}
+.ui-font-24 {
+  font-size: 24px !important;
+}
+.ui-font-28 {
+  font-size: 28px !important;
+  font-size: clamp(14px, 28px, 6vw) !important;
+}
+.ui-font-30 {
+  font-size: 30px !important;
+  font-size: clamp(15px, 30px, 6vw) !important;
+}
+.ui-font-36 {
+  font-size: 36px !important;
+  font-size: clamp(18px, 36px, 7vw) !important;
+}
+.ui-font-38 {
+  font-size: 38px !important;
+  font-size: clamp(19px, 38px, 8vw) !important;
+}
+.ui-font-48 {
+  font-size: 48px !important;
+  font-size: clamp(24px, 48px, 10vw) !important;
+}
 .ui-font-lead {
   font-size: 18px;
   line-height: 1.66em;
@@ -3506,42 +3559,6 @@ html .ui-row {
 }
 .ui-font-condensed {
   line-height: 1.2em !important;
-}
-.ui-smallest {
-  font-size: 9px !important;
-}
-.ui-xx-small {
-  font-size: 10px !important;
-}
-.ui-x-small {
-  font-size: 11px !important;
-}
-.ui-small {
-  font-size: 12px !important;
-}
-.ui-default {
-  font-size: 14px !important;
-}
-.ui-large {
-  font-size: 16px !important;
-}
-.ui-x-large {
-  font-size: 18px !important;
-}
-.ui-xx-large {
-  font-size: 22px !important;
-}
-.ui-largest {
-  font-size: 28px !important;
-  font-size: clamp(14px, 28px, 6vw) !important;
-}
-.ui-x-largest {
-  font-size: 38px !important;
-  font-size: clamp(19px, 38px, 8vw) !important;
-}
-.ui-xx-largest {
-  font-size: 48px !important;
-  font-size: clamp(24px, 48px, 10vw) !important;
 }
 h1,
 h2,

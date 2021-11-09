@@ -22,13 +22,13 @@
                 <div class="ui-tabs ui-align-l ui-icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn ui-scroll-v ui-scrollbar-faded ui-add-mobile-menu-l" data-ui-classes="ui-current">
 
                     <div class="ui-padding-10">
-                        <div class="ui-small ui-margin-10-b ui-color-white-25">Personal Activity</div>
+                        <div class="ui-font-12 ui-margin-10-b ui-color-white-25">Personal Activity</div>
 
                         <div class="ui-btn-holder ui-align-c ui-round ui-ease-1st-btn">
                             <button class="ui-btn ui-btn-multi ui-padding-10-v ui-round">
 
-                                <span class="ui-xx-large">13</span>
-                                <span class="ui-small ui-color-white-25 ui-margin-5-b ui-block">Waiting</span>
+                                <span class="ui-font-22">13</span>
+                                <span class="ui-font-12 ui-color-white-25 ui-margin-5-b ui-block">Waiting</span>
                                 <span class="ui-progress-bar ui-round ui-border-dual">
                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 65%;"></span>
                                 </span>
@@ -36,8 +36,8 @@
                             </button>
                             <button class="ui-btn ui-btn-multi ui-padding-10-v ui-round">
 
-                                <span class="ui-xx-large">3</span>
-                                <span class="ui-small ui-color-white-25 ui-margin-5-b ui-block">Paused</span>
+                                <span class="ui-font-22">3</span>
+                                <span class="ui-font-12 ui-color-white-25 ui-margin-5-b ui-block">Paused</span>
                                 <span class="ui-progress-bar ui-round ui-border-dual">
                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 35%;"></span>
                                 </span>
@@ -45,8 +45,8 @@
                             </button>
                             <button class="ui-btn ui-btn-multi ui-padding-10-v ui-round">
 
-                                <span class="ui-xx-large">16</span>
-                                <span class="ui-small ui-color-white-25 ui-margin-5-b ui-block">Delayed</span>
+                                <span class="ui-font-22">16</span>
+                                <span class="ui-font-12 ui-color-white-25 ui-margin-5-b ui-block">Delayed</span>
                                 <span class="ui-progress-bar ui-round ui-border-dual">
                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 75%;"></span>
                                 </span>
@@ -443,7 +443,7 @@
                         </ul>
                     </span>
                     <span class="ui-margin-3-t ui-inline-block ui-hidden-xs">aeminyuce</span>
-                    <span class="ui-small ui-color-black-50 ui-block ui-hidden-xs">Premium</span>
+                    <span class="ui-font-12 ui-color-black-50 ui-block ui-hidden-xs">Premium</span>
                 </div>
 
             </header>
@@ -675,18 +675,18 @@
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
-                                                            <div class="ui-x-large">Pending</div>
+                                                            <div class="ui-font-18">Pending</div>
                                                             <span class="ui-color-black-25 large">Total: 45%</span>
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 ui-align-r">
-                                                        <span class=" ui-x-largest  ui-current">157</span>
+                                                        <span class=" ui-font-38 ui-current">157</span>
                                                     </div>
                                                 </div>
                                                 <div class="ui-progress-bar ui-margin-15-t progress ui-round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 45%;"></span>
                                                 </div>
-                                                <p class="ui-color-black-25 ui-large ui-margin-5-b">Pending for the transaction.</p>
+                                                <p class="ui-color-black-25 ui-font-16 ui-margin-5-b">Pending for the transaction.</p>
                                                 <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
                                                     <span class="ui-inline-block">Last updated: 15:12</span>
@@ -698,18 +698,18 @@
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
-                                                            <div class="ui-x-large">Paused</div>
+                                                            <div class="ui-font-18">Paused</div>
                                                             <span class="ui-color-black-25 large">Total: 5%</span>
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 ui-align-r">
-                                                        <span class=" ui-x-largest  ui-current">23</span>
+                                                        <span class=" ui-font-38 ui-current">23</span>
                                                     </div>
                                                 </div>
                                                 <div class="ui-progress-bar ui-margin-15-t progress ui-round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 5%;"></span>
                                                 </div>
-                                                <p class="ui-color-black-25 ui-large ui-margin-5-b">Paused for the some reasons.</p>
+                                                <p class="ui-color-black-25 ui-font-16 ui-margin-5-b">Paused for the some reasons.</p>
                                                 <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
                                                     <span class="ui-inline-block">Last updated: 15:12</span>
@@ -721,18 +721,18 @@
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
-                                                            <div class="ui-x-large">Completed</div>
+                                                            <div class="ui-font-18">Completed</div>
                                                             <span class="ui-color-black-25 large">Total: 80%</span>
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 ui-align-r">
-                                                        <span class=" ui-x-largest  ui-current">256</span>
+                                                        <span class=" ui-font-38 ui-current">256</span>
                                                     </div>
                                                 </div>
                                                 <div class="ui-progress-bar ui-margin-15-t progress ui-round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 80%;"></span>
                                                 </div>
-                                                <p class="ui-color-black-25 ui-large ui-margin-5-b">Reached for the expert.</p>
+                                                <p class="ui-color-black-25 ui-font-16 ui-margin-5-b">Reached for the expert.</p>
                                                 <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
                                                     <span class="ui-inline-block">Last updated: 15:12</span>
@@ -744,18 +744,18 @@
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-ui-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
-                                                            <div class="ui-align-l ui-x-large">On Payment</div>
+                                                            <div class="ui-align-l ui-font-18">On Payment</div>
                                                             <span class="ui-color-black-25 large">Total: 67%</span>
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 ui-align-r">
-                                                        <span class=" ui-x-largest  ui-current">256</span>
+                                                        <span class=" ui-font-38 ui-current">256</span>
                                                     </div>
                                                 </div>
                                                 <div class="ui-progress-bar ui-margin-15-t progress ui-round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 67%;"></span>
                                                 </div>
-                                                <p class="ui-color-black-25 ui-large ui-margin-5-b">Confirmed for payment.</p>
+                                                <p class="ui-color-black-25 ui-font-16 ui-margin-5-b">Confirmed for payment.</p>
                                                 <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
                                                     <span class="ui-inline-block">Last updated: 15:12</span>
@@ -797,7 +797,7 @@
                                             </div>
                                         </div>
                                         <div class="ui-col-150 ui-align-r">
-                                            <span class=" ui-x-largest  ui-inline-block">436</span>
+                                            <span class=" ui-font-38 ui-inline-block">436</span>
                                         </div>
                                     </div>
                                     <div class="ui-row ui-row-gap-lg-h ui-no-fluid">
@@ -822,7 +822,7 @@
                                         </div>
                                     </div>
                                     <span class="ui-sp-3"></span>
-                                    <p class="ui-color-black-50 ui-large ui-margin-5-b">Daily reports that all received.</p>
+                                    <p class="ui-color-black-50 ui-font-16 ui-margin-5-b">Daily reports that all received.</p>
                                     <p class="ui-color-black-25">
                                         <svg class="ui-icon ui-icon-xs ui-margin-5-r"><use href="#clock"/></svg>
                                         <span class="ui-inline-block">Last updated: 15:12</span>
@@ -843,63 +843,63 @@
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-25 ui-x-small">88%</strong>
+                                                            <strong class="ui-color-black-25 ui-font-11">88%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
                                                             </svg>
                                                         </span>
                                                         <b class="ui-margin-5-t ui-block">AAC-2019-013:AGF</b>
-                                                        <span class="ui-color-black-50 ui-small">3814 Reports</span>
+                                                        <span class="ui-color-black-50 ui-font-12">3814 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-25 ui-x-small">76%</strong>
+                                                            <strong class="ui-color-black-25 ui-font-11">76%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
                                                             </svg>
                                                         </span>
                                                         <b class="ui-margin-5-t ui-block">BDA-2019-642</b>
-                                                        <span class="ui-color-black-50 ui-small">2613 Reports</span>
+                                                        <span class="ui-color-black-50 ui-font-12">2613 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-25 ui-x-small">69%</strong>
+                                                            <strong class="ui-color-black-25 ui-font-11">69%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
                                                             </svg>
                                                         </span>
                                                         <b class="ui-margin-5-t ui-block">DDG-2019-505:AG</b>
-                                                        <span class="ui-color-black-50 ui-small">1890 Reports</span>
+                                                        <span class="ui-color-black-50 ui-font-12">1890 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-25 ui-x-small">52%</strong>
+                                                            <strong class="ui-color-black-25 ui-font-11">52%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
                                                             </svg>
                                                         </span>
                                                         <b class="ui-margin-5-t ui-block">OOC-2019-781:F</b>
-                                                        <span class="ui-color-black-50 ui-small">1605 Reports</span>
+                                                        <span class="ui-color-black-50 ui-font-12">1605 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-25 ui-x-small">36%</strong>
+                                                            <strong class="ui-color-black-25 ui-font-11">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="ui-margin-5-t ui-block">BDD-2019-047:G</b>
-                                                        <span class="ui-color-black-50 ui-small">812 Reports</span>
+                                                        <span class="ui-color-black-50 ui-font-12">812 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-25 ui-x-small">36%</strong>
+                                                            <strong class="ui-color-black-25 ui-font-11">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="ui-margin-5-t ui-block">RAC-2019-973</b>
-                                                        <span class="ui-color-black-50 ui-small">616 Reports</span>
+                                                        <span class="ui-color-black-50 ui-font-12">616 Reports</span>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -909,63 +909,63 @@
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-25 ui-x-small">88%</strong>
+                                                            <strong class="ui-color-black-25 ui-font-11">88%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
                                                             </svg>
                                                         </span>
                                                         <b class="ui-margin-5-t ui-block">AAC-2019-013:AGF</b>
-                                                        <span class="ui-color-black-50 ui-small">3814 Reports</span>
+                                                        <span class="ui-color-black-50 ui-font-12">3814 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-25 ui-x-small">76%</strong>
+                                                            <strong class="ui-color-black-25 ui-font-11">76%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
                                                             </svg>
                                                         </span>
                                                         <b class="ui-margin-5-t ui-block">BDA-2019-642</b>
-                                                        <span class="ui-color-black-50 ui-small">2613 Reports</span>
+                                                        <span class="ui-color-black-50 ui-font-12">2613 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-25 ui-x-small">69%</strong>
+                                                            <strong class="ui-color-black-25 ui-font-11">69%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
                                                             </svg>
                                                         </span>
                                                         <b class="ui-margin-5-t ui-block">DDG-2019-505:AG</b>
-                                                        <span class="ui-color-black-50 ui-small">1890 Reports</span>
+                                                        <span class="ui-color-black-50 ui-font-12">1890 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-25 ui-x-small">52%</strong>
+                                                            <strong class="ui-color-black-25 ui-font-11">52%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
                                                             </svg>
                                                         </span>
                                                         <b class="ui-margin-5-t ui-block">OOC-2019-781:F</b>
-                                                        <span class="ui-color-black-50 ui-small">1605 Reports</span>
+                                                        <span class="ui-color-black-50 ui-font-12">1605 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-25 ui-x-small">36%</strong>
+                                                            <strong class="ui-color-black-25 ui-font-11">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="ui-margin-5-t ui-block">BDD-2019-047:G</b>
-                                                        <span class="ui-color-black-50 ui-small">812 Reports</span>
+                                                        <span class="ui-color-black-50 ui-font-12">812 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
-                                                            <strong class="ui-color-black-25 ui-x-small">36%</strong>
+                                                            <strong class="ui-color-black-25 ui-font-11">36%</strong>
                                                             <svg viewBox="0 0 160 160">
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
                                                         <b class="ui-margin-5-t ui-block">RAC-2019-973</b>
-                                                        <span class="ui-color-black-50 ui-small">616 Reports</span>
+                                                        <span class="ui-color-black-50 ui-font-12">616 Reports</span>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1771,7 +1771,7 @@
 
         <form action="#successful">
             <h2>Search</h2>
-            <p class="ui-highlight ui-large ui-color-white-50 ui-xs-align-c ui-font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
+            <p class="ui-highlight ui-font-16 ui-color-white-50 ui-xs-align-c ui-font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada purus eget enim tempus, sed faucibus ante blandit. Morbi a pharetra sapien.</p>
 
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-row ui-no-ui-row-gap-h">
@@ -1796,21 +1796,21 @@
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#news"/></svg>
-                        <span class="ui-x-large ui-block ui-margin-5-t">News</span>
+                        <span class="ui-font-18 ui-block ui-margin-5-t">News</span>
                         <span class="ui-color-white-50">589</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#calendar-check"/></svg>
-                        <span class="ui-x-large ui-block ui-margin-5-t">Events</span>
+                        <span class="ui-font-18 ui-block ui-margin-5-t">Events</span>
                         <span class="ui-color-white-50">219</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-padding-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#files"/></svg>
-                        <span class="ui-x-large ui-block ui-margin-5-t">Documents</span>
+                        <span class="ui-font-18 ui-block ui-margin-5-t">Documents</span>
                         <span class="ui-color-white-50">701</span>
                     </a>
                 </div>

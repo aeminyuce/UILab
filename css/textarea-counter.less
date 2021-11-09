@@ -23,7 +23,7 @@
 
 .textarea {
     &:not(.ui-toggle-textarea)[data-ui-counter] {
-        &:before { content: attr(data-ui-counter); font-size: @smallest; text-align: @textarea-counter-align; line-height: (@textarea-counter-height - 1); width: 100%; height: @textarea-counter-height; padding: 1px @form-padding; display: block; position: absolute; bottom: 0; left: 0; z-index: 1; }
+        &:before { content: attr(data-ui-counter); font-size: @font-9; text-align: @textarea-counter-align; line-height: (@textarea-counter-height - 1); width: 100%; height: @textarea-counter-height; padding: 1px @form-padding; display: block; position: absolute; bottom: 0; left: 0; z-index: 1; }
         &:not(.form-light),&.form-focus {
             &:before { ._color-var(textarea-counter-color); ._bg-var(textarea-counter-bg); }
         }
