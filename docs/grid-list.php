@@ -9,7 +9,7 @@
 
                         <div class="ui-row ui-no-ui-row-gap-v ui-row-gap-sm-h ui-margin-2-v">
                             <div class="ui-col-6 ui-lg-fluid">
-                                <div class="text text-icon-both ui-round ui-no-border ui-fill-light-100 has-clear ui-ease-form">
+                                <div class="ui-input text-icon-both ui-round ui-no-border ui-fill-light-100 has-clear ui-ease-form">
                                     <svg class="ui-icon text-icon-l"><use href="#search"></svg>
                                     <button class="clear-form">
                                         <svg class="ui-icon"><use href="#remove"/></svg>
@@ -19,7 +19,7 @@
                                 <span class="ui-sp-5 ui-hidden-lg"></span>
                             </div>
                             <div class="ui-col-lg-3 ui-col-6 ui-no-fluid">
-                                <div class="select ui-round ui-no-border ui-fill-light-100 ui-ease-form">
+                                <div class="ui-select ui-round ui-no-border ui-fill-light-100 ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"></svg>
                                     <select class="ui-grid-list-filter" data-ui-index="2">
                                         <option value="">Filter</option>
@@ -473,7 +473,7 @@
 
                     <div class="ui-row ui-sm-fluid">
                         <div class="ui-col-5 ui-sm-no-padding-b">
-                            <div class="text text-icon-both ui-round ui-border-dual has-clear ui-ease-form">
+                            <div class="ui-input text-icon-both ui-round ui-border-dual has-clear ui-ease-form">
                                 <svg class="ui-icon text-icon-l"><use href="#search"></svg>
                                 <button class="clear-form">
                                     <svg class="ui-icon"><use href="#remove"/></svg>
@@ -492,7 +492,7 @@
 
                             <span class="ui-sp-10 ui-visible-sm"></span>
 
-                            <div class="select form-inline-xs ui-round ui-border-dual ui-ease-form">
+                            <div class="ui-select form-inline-xs ui-round ui-border-dual ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"></svg>
                                 <select class="ui-grid-list-filter" data-ui-index="1">
                                     <option value="">Name</option>
@@ -502,7 +502,7 @@
                                     <option>Anna May</option>
                                 </select>
                             </div>
-                            <div class="select form-inline-xs ui-round ui-border-dual ui-ease-form">
+                            <div class="ui-select form-inline-xs ui-round ui-border-dual ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"></svg>
                                 <select class="ui-grid-list-filter" data-ui-index="2" data-ui-type="number">
                                     <option value="">Age</option>
@@ -511,7 +511,7 @@
                                     <option>29</option>
                                 </select>
                             </div>
-                            <div class="select form-inline-xs ui-round ui-border-dual ui-ease-form">
+                            <div class="ui-select form-inline-xs ui-round ui-border-dual ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"></svg>
                                 <select class="ui-grid-list-show">
                                     <option>5</option>
@@ -1240,7 +1240,7 @@
 
                     <div class="ui-row ui-sm-fluid">
                         <div class="ui-col-5 ui-sm-no-padding-b">
-                            <div class="text text-icon-both ui-round ui-border-dual has-clear ui-ease-form">
+                            <div class="ui-input text-icon-both ui-round ui-border-dual has-clear ui-ease-form">
                                 <svg class="ui-icon text-icon-l"><use href="#search"></svg>
                                 <button class="clear-form">
                                     <svg class="ui-icon"><use href="#remove"/></svg>
@@ -1257,7 +1257,7 @@
                                 Show only 25 ages.
                             </label>
 
-                            <div class="select form-inline ui-round ui-border-dual ui-ease-form ui-right">
+                            <div class="ui-select form-inline ui-round ui-border-dual ui-ease-form ui-right">
                                 <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="#angle-down"></svg>
                                 <select class="ui-grid-list-show">
                                     <option>10</option>

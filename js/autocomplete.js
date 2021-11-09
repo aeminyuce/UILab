@@ -20,7 +20,7 @@ ui.autocomplete = {
 
     // outer classnames
     nameRound: 'ui-round',
-    nameText: 'text',
+    nameInput: 'ui-input',
 
     // styling classnames
     stylesList : 'ui-shadow-lg ui-ease-autocomplete',
@@ -86,7 +86,7 @@ ui.autocomplete = {
         }());
 
         // Event Listeners
-        formEventListeners = ui.find('.' + ui.autocomplete.nameText + '.' + ui.autocomplete.target + ' > [type="text"]');
+        formEventListeners = ui.find('.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + ' > [type="text"]');
 
         ui.on(document,
             'keyup',
@@ -421,7 +421,7 @@ ui.autocomplete = {
         ui.on(document,
             'mousedown',
 
-            '.' + ui.autocomplete.nameText + '.' + ui.autocomplete.target + '.' + ui.autocomplete.nameOpen + ' li',
+            '.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + '.' + ui.autocomplete.nameOpen + ' li',
 
             function () { // trigger defined event listeners after autocomplete selected
 

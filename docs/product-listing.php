@@ -12,7 +12,7 @@
                 <div class="ui-add-mobile-menu-r">
 
                     <div class="ui-card ui-padding-15 ui-round ui-shadow-lg">
-                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete text text-icon-both ui-round ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form has-clear">
+                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete ui-input text-icon-both ui-round ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form has-clear">
                             <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
                             <button type="button" class="clear-form">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
@@ -227,7 +227,7 @@
                             <span class="ui-font-16">Found <b>47</b> and displaying <b>9</b> products.</span>
                         </div>
                         <div class="ui-col-6 ui-align-r ui-sm-no-padding-t">
-                            <div class="select ui-align-l ui-round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
+                            <div class="ui-select ui-align-l ui-round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="1" checked>Sort by</option>
@@ -236,7 +236,7 @@
                                     <option value="4">Price (High to Low)</option>
                                 </select>
                             </div>
-                            <div class="select ui-align-l ui-round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
+                            <div class="ui-select ui-align-l ui-round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="12" checked>Show 9</option>

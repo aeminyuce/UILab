@@ -9,8 +9,11 @@ ui.requiredForms = {
     target: 'required',
 
     // main classnames
-    targetAccept: 'required-accept', // required holder for checks, forms and custom switches
-    nameMsg: 'required-msg',
+    targetAccept: 'ui-required-accept', // required holder for checks, forms and custom switches
+    nameMsg: 'ui-required-msg',
+
+    nameTypePrefix: 'ui-',
+
 
     // helper classnames
     nameSuccess: 'success',
@@ -19,9 +22,9 @@ ui.requiredForms = {
     // outer classnames
     nameHolder: 'form-holder',
 
-    nameText: 'text',
-    nameSelect: 'select',
-    nameTextarea: 'textarea',
+    nameInput: 'ui-input',
+    nameSelect: 'ui-select',
+    nameTextarea: 'ui-textarea',
     nameFile: 'ui-file',
     nameIndeterminate: 'indeterminate',
 
@@ -64,7 +67,9 @@ ui.requiredForms = {
 
                 ui.removeClass(p, ui.requiredForms.nameError);
 
-                if (showMsg) { ui.removeClass(next, ui.requiredForms.nameShow); }
+                if (showMsg) {
+                    ui.removeClass(next, ui.requiredForms.nameShow);
+                }
 
             };
 
@@ -127,7 +132,7 @@ ui.requiredForms = {
                 }
 
                 // check min
-                if (type !== 'select') {
+                if (type !== ui.requiredForms.nameSelect) {
 
                     min = t.getAttribute('minlength');
 
@@ -138,7 +143,7 @@ ui.requiredForms = {
                 }
 
                 // check min and max numbers
-                if (type !== 'select') {
+                if (type !== ui.requiredForms.nameSelect) {
 
                     min = t.getAttribute('minnumber');
                     if (min !== null && min !== '' && !isNaN(min)) {
@@ -171,12 +176,12 @@ ui.requiredForms = {
             };
 
             checkHolder = ui.closest(that, '.' + ui.requiredForms.nameHolder)[0];
-            if (checkHolder === undefined) { // single forms
+            if (checkHolder === undefined) { // default forms
 
                 parentType = type;
 
-                if (type !== 'select' && type !== 'textarea' && type !== ui.requiredForms.targetAccept && type !== 'file') {
-                    parentType = 'text';
+                if (type !== ui.requiredForms.nameSelect && type !== ui.requiredForms.nameTextarea && type !== ui.requiredForms.targetAccept && type !== ui.requiredForms.nameFile) {
+                    parentType = ui.requiredForms.nameInput;
                 }
 
                 p = ui.closest(that, '.' + parentType)[0];
@@ -188,7 +193,7 @@ ui.requiredForms = {
 
                 p = checkHolder;
 
-                holderForms = ui.find('.' + ui.requiredForms.nameText + ' input.' + ui.requiredForms.target + ',' +  '.' + ui.requiredForms.nameSelect + ' select.' + ui.requiredForms.target, p);
+                holderForms = ui.find('.' + ui.requiredForms.nameInput + ' input.' + ui.requiredForms.target + ',' +  '.' + ui.requiredForms.nameSelect + ' select.' + ui.requiredForms.target, p);
                 hideErr();
 
                 ui.each(holderForms,
@@ -196,12 +201,19 @@ ui.requiredForms = {
                     function () {
 
                         if (this.tagName === 'SELECT') {
-                            type = 'select';
+                            type = ui.requiredForms.nameSelect;
 
                         } else {
 
                             type = this.getAttribute('type');
                             if (type === null || type === '') { return; }
+
+                            if (type === 'text') {
+                                type = ui.requiredForms.nameInput;
+
+                            } else {
+                                type = ui.requiredForms.nameTypePrefix + type;
+                            }
 
                         }
 
@@ -298,10 +310,10 @@ ui.requiredForms = {
         ui.on(document,
             'keyup',
 
-            '.' + ui.requiredForms.nameText + ' input.' + ui.requiredForms.target,
+            '.' + ui.requiredForms.nameInput + ' input.' + ui.requiredForms.target,
 
             function () {
-                required(this, this.type);
+                required(this, ui.requiredForms.nameTypePrefix + this.type);
             });
 
         ui.on(document,
@@ -310,7 +322,7 @@ ui.requiredForms = {
             '.' + ui.requiredForms.nameSelect + ' select.' + ui.requiredForms.target,
 
             function () {
-                required(this, 'select');
+                required(this, ui.requiredForms.nameSelect);
             });
 
         ui.on(document,
@@ -319,7 +331,7 @@ ui.requiredForms = {
             '.' + ui.requiredForms.nameTextarea + ' textarea.' + ui.requiredForms.target,
 
             function () {
-                required(this, 'textarea');
+                required(this, ui.requiredForms.nameTextarea);
             });
 
         ui.on(document,
@@ -337,7 +349,7 @@ ui.requiredForms = {
             '.' + ui.requiredForms.nameFile + ' input.' + ui.requiredForms.target,
 
             function () {
-                required(this, 'file');
+                required(this, ui.requiredForms.nameFile);
             });
 
     };

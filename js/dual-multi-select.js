@@ -9,7 +9,7 @@ ui.dualMultiSelect = {
     target: 'dual-multi-select',
 
     // outer classnames
-    nameSelectMulti: 'select-multi',
+    nameSelectMulti: 'ui-select-multi',
 
     // data attributes
     dataIndex: 'data-ui-index'

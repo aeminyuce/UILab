@@ -6,10 +6,10 @@
 ui.forms = {
 
     // targets
-    targetText: 'text',
-    targetSelect: 'select',
-    targetSelectMulti: 'select-multi',
-    targetTextarea: 'textarea',
+    targetText: 'ui-input',
+    targetSelect: 'ui-select',
+    targetSelectMulti: 'ui-select-multi',
+    targetTextarea: 'ui-textarea',
     targetFile: 'ui-file',
     targetIndeterminate: 'indeterminate',
 
@@ -25,7 +25,7 @@ ui.forms = {
     nameShowPass: 'show-pass',
     nameNumber: 'number',
 
-    nameTextIcon: 'text-icon',
+    nameInputIcon: 'text-icon',
 
     // helper classnames
     nameOpen: 'open',
@@ -35,7 +35,7 @@ ui.forms = {
     nameIcon: 'ui-icon',
 
     nameRequired: 'required',
-    nameRequiredMsg: 'required-msg',
+    nameRequiredMsg: 'ui-required-msg',
 
     nameError: 'error',
 
@@ -291,8 +291,8 @@ ui.forms = {
             ui.on(document,
                 'mousedown',
 
-                '[class*="' + ui.forms.nameTextIcon + '"] > button.' + ui.forms.nameIcon + ',' +
-                '[class*="' + ui.forms.nameTextIcon + '"] > input.' + ui.forms.nameIcon,
+                '[class*="' + ui.forms.nameInputIcon + '"] > button.' + ui.forms.nameIcon + ',' +
+                '[class*="' + ui.forms.nameInputIcon + '"] > input.' + ui.forms.nameIcon,
 
                 function (e) {
 

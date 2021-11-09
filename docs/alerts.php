@@ -9,7 +9,7 @@
                 <dl class="ui-dl-h ui-padding-15 ui-round ui-border">
                     <dt>msg</dt>
                     <dd>
-                        Required. Your dialog text.<br>
+                        Required. Your dialog example..<br>
                         success<br>
                         Optional. Set success button text.<br>
                         Success button returns a value: <code class="ui-code">'success'</code>
@@ -39,27 +39,27 @@
             <div class="ui-col-12 ui-padding-30-b">
 
                 <b class="ui-margin-5-b ui-block">Examples:</b>
-                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog text'});">Run Code</button>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog example.'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog example.'});">Run Code</button>
 
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text',<br>    success: 'Got it!'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog text', success: 'Got it!'});">Run Code</button>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog example.',<br>    success: 'Got it!'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog example.', success: 'Got it!'});">Run Code</button>
 
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text',<br>    success: 'Got it!',<br>    error: 'No, thanks!'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog text', success: 'Got it!', error: 'No, thanks!'});">Run Code</button>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog example.',<br>    success: 'Got it!',<br>    error: 'No, thanks!'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog example.', success: 'Got it!', error: 'No, thanks!'});">Run Code</button>
 
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text',<br>    success: 'Got it!',<br>    error: 'No, thanks!',<br>    custom: {<br>        maybe: 'Maybe', later: 'Later'<br>    }<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog text', success: 'Got it!', error: 'No, thanks!', custom: {maybe: 'Maybe', later: 'Later'}});">Run Code</button>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog example.',<br>    success: 'Got it!',<br>    error: 'No, thanks!',<br>    custom: {<br>        maybe: 'Maybe', later: 'Later'<br>    }<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog example.', success: 'Got it!', error: 'No, thanks!', custom: {maybe: 'Maybe', later: 'Later'}});">Run Code</button>
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog text',<br>    success: 'Got it!',<br>    error: 'No, thanks!',<br>    custom: {<br>        maybe: 'Maybe', later: 'Later'<br>    },<br>    callback: function (value) {<br>        alert(value);<br>    }<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog text', success: 'Got it!', error: 'No, thanks!', custom: {maybe: 'Maybe', later: 'Later'}, callback: function (value) { alert(value); }});">Run Code</button>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.alerts.dialog({<br>    msg: 'Your dialog example.',<br>    success: 'Got it!',<br>    error: 'No, thanks!',<br>    custom: {<br>        maybe: 'Maybe', later: 'Later'<br>    },<br>    callback: function (value) {<br>        alert(value);<br>    }<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.dialog({msg: 'Your dialog example.', success: 'Got it!', error: 'No, thanks!', custom: {maybe: 'Maybe', later: 'Later'}, callback: function (value) { alert(value); }});">Run Code</button>
 
                 <span class="ui-sp-30"></span>
 

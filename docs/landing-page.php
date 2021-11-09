@@ -884,7 +884,7 @@
                                 <div class="form-holder ui-col-static ui-no-fluid form-lg">
                                     <div class="ui-row ui-no-row-gap">
                                         <div class="ui-col-12">
-                                            <div class="text ui-no-border ui-bg-white ui-invert-bg ui-ease-form">
+                                            <div class="ui-input ui-no-border ui-bg-white ui-invert-bg ui-ease-form">
                                                 <input class="required" type="email" maxlength="4" placeholder="your@email.com">
                                             </div>
                                         </div>
@@ -895,7 +895,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <p class="required-msg">Please, enter a valid email.</p>
+                                <p class="ui-required-msg">Please, enter a valid email.</p>
 
                             </form>
                         </div>

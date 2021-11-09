@@ -37,7 +37,7 @@
                 <div class="ui-padding-30-b ui-theme-base">
 
                     <div class="form-lg">
-                        <div class="loadingText1 text ui-border-dual ui-round form-inline ui-ease-form">
+                        <div class="loadingText1 ui-input ui-border-dual ui-round form-inline ui-ease-form">
                             <input type="text" placeholder="Enter name">
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                     <span class="ui-sp-30"></span>
 
                     <div class="form-lg">
-                        <div class="loadingText2 text text-icon-l ui-margin-10-b ui-round ui-border-dual form-inline ui-ease-form">
+                        <div class="loadingText2 ui-input text-icon-l ui-margin-10-b ui-round ui-border-dual form-inline ui-ease-form">
                             <svg class="ui-icon"><use href="#search"/></svg>
                             <input type="text" placeholder="Left icon">
                         </div>
@@ -58,7 +58,7 @@
                     <span class="ui-sp-30"></span>
 
                     <div class="form-lg">
-                        <div class="loadingSelect select ui-round ui-border-dual form-inline ui-ease-form">
+                        <div class="loadingSelect ui-select ui-round ui-border-dual form-inline ui-ease-form">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select your age</option>
@@ -73,8 +73,8 @@
 
                     <span class="ui-sp-30"></span>
 
-                    <div class="loadingTextarea textarea ui-round ui-border-dual ui-ease-form">
-                        <textarea rows="4" placeholder="Placeholder Text"></textarea>
+                    <div class="loadingTextarea ui-textarea ui-round ui-border-dual ui-ease-form">
+                        <textarea rows="4" placeholder="Placeholder Example"></textarea>
                     </div>
                     <pre class="ui-pre ui-round ui-margin-10-t ui-margin-5-b">ui.loadingMask.toggle('.loadingTextarea');</pre>
                     <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.loadingMask.toggle('.loadingTextarea');">Run Code</button>

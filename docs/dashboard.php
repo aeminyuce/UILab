@@ -522,38 +522,38 @@
                                                     <label class="form-grid">First Name</label>
                                                 </div>
                                                 <div class="ui-col-5">
-                                                    <div class="text ui-round ui-border-dual ui-ease-form">
+                                                    <div class="ui-input ui-round ui-border-dual ui-ease-form">
                                                         <input class="required" type="text" placeholder="Enter first name" minlength="3">
                                                     </div>
-                                                    <p class="required-msg">Enter your first name.</p>
+                                                    <p class="ui-required-msg">Enter your first name.</p>
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
                                                     <label class="form-grid">Last Name</label>
                                                 </div>
                                                 <div class="ui-col-5">
-                                                    <div class="text ui-round ui-border-dual ui-ease-form">
+                                                    <div class="ui-input ui-round ui-border-dual ui-ease-form">
                                                         <input class="required" type="text" placeholder="Enter last name" minlength="3">
                                                     </div>
-                                                    <p class="required-msg">Enter your last name.</p>
+                                                    <p class="ui-required-msg">Enter your last name.</p>
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
                                                     <label class="form-grid">Contact Phone</label>
                                                 </div>
                                                 <div class="ui-col-5">
-                                                    <div class="text text-icon-l ui-round ui-border-dual ui-ease-form">
+                                                    <div class="ui-input text-icon-l ui-round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#phone"/></svg>
                                                         <input class="required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
                                                     </div>
-                                                    <p class="required-msg">Enter your phone.</p>
+                                                    <p class="ui-required-msg">Enter your phone.</p>
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
                                                     <label class="form-grid">Age</label>
                                                 </div>
                                                 <div class="ui-col-5">
-                                                    <div class="select ui-round ui-border-dual ui-ease-form">
+                                                    <div class="ui-select ui-round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#angle-down"/></svg>
                                                         <select class="required">
                                                             <option value="">Select your age</option>
@@ -562,18 +562,18 @@
                                                             <option>31 - 40</option>
                                                         </select>
                                                     </div>
-                                                    <p class="required-msg">Enter your age.</p>
+                                                    <p class="ui-required-msg">Enter your age.</p>
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
                                                     <label class="form-grid">Email Address</label>
                                                 </div>
                                                 <div class="ui-col-5">
-                                                    <div class="text text-icon-l ui-round ui-border-dual ui-ease-form">
+                                                    <div class="ui-input text-icon-l ui-round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#at"/></svg>
                                                         <input class="required email" type="email">
                                                     </div>
-                                                    <p class="required-msg">Enter a valid email.</p>
+                                                    <p class="ui-required-msg">Enter a valid email.</p>
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
@@ -584,14 +584,14 @@
 
                                                         <div class="ui-row ui-no-row-gap">
                                                             <div class="ui-col-12">
-                                                                <div class="text text-icon-l ui-round ui-border-dual ui-ease-form">
+                                                                <div class="ui-input text-icon-l ui-round ui-border-dual ui-ease-form">
                                                                     <svg class="ui-icon"><use href="#browser"/></svg>
                                                                     <input class="required" type="text" placeholder="Site name">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="ui-col-200">
-                                                            <div class="select ui-round ui-border-dual ui-ease-form">
+                                                            <div class="ui-select ui-round ui-border-dual ui-ease-form">
                                                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                                                 <select>
                                                                     <option>.com</option>
@@ -602,7 +602,7 @@
                                                         </div>
 
                                                     </div>
-                                                    <p class="required-msg">Enter your site name.</p>
+                                                    <p class="ui-required-msg">Enter your site name.</p>
                                                 </div>
 
                                                 <div class="ui-sp-1 ui-margin-20 ui-border-b ui-border-dashed"></div>
@@ -615,21 +615,21 @@
                                                     <label class="form-grid">Country</label>
                                                 </div>
                                                 <div class="ui-col-5">
-                                                    <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete text text-icon-l ui-round ui-border-dual ui-ease-form">
+                                                    <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete ui-input text-icon-l ui-round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#keyboard"/></svg>
                                                         <input class="required" type="text" placeholder="Type/Select your country" autocomplete="off" minlength="3">
                                                     </div>
-                                                    <p class="required-msg">Type/Select your country.</p>
+                                                    <p class="ui-required-msg">Type/Select your country.</p>
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
                                                     <label class="form-grid">Address</label>
                                                 </div>
                                                 <div class="ui-col-5">
-                                                    <div class="textarea ui-round ui-border-dual ui-ease-form" data-ui-counter="1000">
+                                                    <div class="ui-textarea ui-round ui-border-dual ui-ease-form" data-ui-counter="1000">
                                                         <textarea class="required" rows="3"></textarea>
                                                     </div>
-                                                    <p class="required-msg">Enter your address details.</p>
+                                                    <p class="ui-required-msg">Enter your address details.</p>
                                                 </div>
 
                                             </div>
@@ -1151,7 +1151,7 @@
 
                                         <div class="ui-row ui-no-ui-row-gap-v ui-row-gap-sm-h">
                                             <div class="ui-col-6 ui-lg-fluid">
-                                                <div class="text text-icon-both ui-round ui-no-border ui-fill-light-100 has-clear ui-ease-form">
+                                                <div class="ui-input text-icon-both ui-round ui-no-border ui-fill-light-100 has-clear ui-ease-form">
                                                     <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
                                                     <button class="clear-form">
                                                         <svg class="ui-icon"><use href="#remove"/></svg>
@@ -1161,7 +1161,7 @@
                                                 <span class="ui-sp-5 ui-hidden-lg"></span>
                                             </div>
                                             <div class="ui-col-lg-3 ui-col-6 ui-no-fluid">
-                                                <div class="select ui-round ui-no-border ui-fill-light-100 ui-ease-form">
+                                                <div class="ui-select ui-round ui-no-border ui-fill-light-100 ui-ease-form">
                                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
                                                     <select class="ui-grid-list-filter" data-ui-index="2">
                                                         <option value="">Filter</option>
@@ -1776,13 +1776,13 @@
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-row ui-no-ui-row-gap-h">
                     <div class="ui-col-12 ui-ease-1st-form">
-                        <div class="text text-icon has-clear ui-round-l ui-no-border ui-shadow-in-sm ui-theme-gray ui-fill-light-300">
+                        <div class="ui-input text-icon has-clear ui-round-l ui-no-border ui-shadow-in-sm ui-theme-gray ui-fill-light-300">
                             <button type="button" class="clear-form">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                             <input class="required" type="text" placeholder="Search">
                         </div>
-                        <p class="required-msg large">Please, enter a keyword.</p>
+                        <p class="ui-required-msg large">Please, enter a keyword.</p>
                     </div>
                 </div>
                 <div class="ui-col-100 ui-col-xs-50 ui-padding-10-v">

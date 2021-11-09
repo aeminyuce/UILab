@@ -13,7 +13,7 @@ ui.currencySpinner = {
     nameDown: 'currency-down',
 
     // outer classnames
-    nameText: 'text',
+    nameInput: 'ui-input',
 
     // values
     decimals: false
@@ -227,7 +227,7 @@ ui.currencySpinner = {
 
                     var input, min;
 
-                    input = ui.find('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameText + ' input')[0];
+                    input = ui.find('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameInput + ' input')[0];
                     min = convert(input.getAttribute('min'));
 
                     if (convert(input.value) < min) { input.value = locales(min); }
@@ -246,7 +246,7 @@ ui.currencySpinner = {
                 if (e.keyCode === 13) {
 
                     e.preventDefault();
-                    ui.trigger('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameText + ' input', 'blur');
+                    ui.trigger('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameInput + ' input', 'blur');
 
                 } else { return; }
 

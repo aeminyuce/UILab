@@ -6,7 +6,7 @@
 ui.textareaCounter = {
 
     // targets
-    target: 'textarea',
+    target: 'ui-textarea',
 
     // main classnames
     nameToggle: 'toggle-textarea',

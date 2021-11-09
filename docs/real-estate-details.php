@@ -232,7 +232,7 @@
                                 </div>
                                 <div class="ui-row">
                                     <div class="ui-col-12 ui-no-padding">
-                                        <div class="text ui-no-border ui-theme-gray ui-fill-light-100 ui-ease-form">
+                                        <div class="ui-input ui-no-border ui-theme-gray ui-fill-light-100 ui-ease-form">
                                             <input class="ui-font-bold ui-align-c ui-font-18" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
                                         </div>
                                     </div>
