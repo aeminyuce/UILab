@@ -6,27 +6,27 @@
                 <h3 class="ui-h3">Headings</h3>
                 <div class="ui-padding-30-b">
                     <h1 class="ui-h1">
-                        H1 Heading
+                        UI H1 Heading
                         <span class="ui-color-black-25 ui-font-18">Secondary text</span>
                     </h1>
                     <h2 class="ui-h2">
-                        H2 Heading
+                        UI H2 Heading
                         <span class="ui-color-black-25 ui-font-18">Secondary text</span>
                     </h2>
                     <h3 class="ui-h3">
-                        H3 Heading
+                        UI H3 Heading
                         <span class="ui-color-black-25 ui-font-16">Secondary text</span>
                     </h3>
                     <h4 class="ui-h4">
-                        H4 Heading
+                        UI H4 Heading
                         <span class="ui-color-black-25 ui-font-15">Secondary text</span>
                     </h4>
                     <h5 class="ui-h5">
-                        H5 Heading
+                        UI H5 Heading
                         <span class="ui-color-black-25 ui-font-14">Secondary text</span>
                     </h5>
                     <h6 class="ui-h6">
-                        H6 Heading
+                        UI H6 Heading
                         <span class="ui-color-black-25 ui-font-14">Secondary text</span>
                     </h6>
                 </div>
@@ -358,15 +358,13 @@
                     </div>
                 </div>
 
-                <h3 class="ui-h3">Text Transformations</h3>
+                <h3 class="ui-h3">Font Transformations</h3>
                 <div class="ui-padding-30-b">
-                    <span class="lowercase">lowercase</span>
+                    <span class="ui-font-lowercase">ui-font-lowercase</span>
                     <br>
-                    <span class="uppercase">uppercase</span>
+                    <span class="ui-font-uppercase">ui-font-uppercase</span>
                     <br>
-                    <span class="capitalize">capitalize</span>
-                    <br>
-                    <span class="initialism">initialism</span>
+                    <span class="ui-font-capitalize">ui-font-capitalize</span>
                 </div>
 
                 <h3 class="ui-h3">Alignment Classes</h3>

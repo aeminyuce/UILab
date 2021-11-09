@@ -3581,6 +3581,15 @@ html .ui-row {
 .ui-font-hoverline-2nd > * > *:hover {
   text-decoration: underline;
 }
+.ui-font-lowercase {
+  text-transform: lowercase;
+}
+.ui-font-uppercase {
+  text-transform: uppercase;
+}
+.ui-font-capitalize {
+  text-transform: capitalize;
+}
 .ui-h1,
 .ui-h2,
 .ui-h3,
@@ -3641,19 +3650,6 @@ html .ui-row {
 }
 .ui-h6 {
   font-size: 12px;
-}
-.lowercase {
-  text-transform: lowercase;
-}
-.uppercase {
-  text-transform: uppercase;
-}
-.capitalize {
-  text-transform: capitalize;
-}
-.initialism {
-  font-size: 90%;
-  text-transform: uppercase;
 }
 .word-break-all {
   word-break: break-all;
