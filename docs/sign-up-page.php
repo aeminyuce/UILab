@@ -109,7 +109,7 @@
                                     <label class="ui-label">
                                         <span class="ui-check ui-round ui-border-dual ui-ease-form">
                                             <input type="checkbox" checked>
-                                            <i class="ui-state"></i>
+                                            <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-25">Yes, I want to receive emails from this platform.</span>
                                     </label>
@@ -119,7 +119,7 @@
                                     <label class="ui-label">
                                         <span class="ui-check ui-round ui-border-dual ui-ease-form">
                                             <input type="checkbox" checked>
-                                            <i class="ui-state"></i>
+                                            <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-25">I agree to the</span>
                                         <a class="ui-font-bold ui-font-hoverline ui-current" href="#">Terms</a>,

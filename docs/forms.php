@@ -559,7 +559,7 @@
                             <label class="ui-label">
                                 <span class="ui-check ui-round ui-border-dual ui-ease-form">
                                     <input type="checkbox" checked>
-                                    <i class="ui-state"></i>
+                                    <i class="ui-form-state"></i>
                                 </span>
                                 Checkbox
                             </label>
@@ -568,7 +568,7 @@
                             <label class="ui-label">
                                 <div class="ui-check ui-round ui-border-dual ui-ease-form">
                                     <input type="checkbox" class="ui-indeterminate">
-                                    <i class="ui-state"></i>
+                                    <i class="ui-form-state"></i>
                                 </div>
                                 Indeterminate
                             </label>
@@ -580,7 +580,7 @@
                             <label class="ui-label">
                                 <span class="ui-radio ui-border-dual ui-ease-form">
                                     <input type="radio" name="radiotest2" checked>
-                                    <i class="ui-state"></i>
+                                    <i class="ui-form-state"></i>
                                 </span>
                                 Radio1
                             </label>
@@ -589,7 +589,7 @@
                             <label class="ui-label">
                                 <span class="ui-radio ui-border-dual ui-ease-form">
                                     <input type="radio" name="radiotest2">
-                                    <i class="ui-state"></i>
+                                    <i class="ui-form-state"></i>
                                 </span>
                                 Radio2
                             </label>
@@ -598,7 +598,7 @@
                             <label class="ui-label">
                                 <span class="ui-radio ui-border-dual ui-ease-form">
                                     <input type="radio" name="radiotest2">
-                                    <i class="ui-state"></i>
+                                    <i class="ui-form-state"></i>
                                 </span>
                                 Radio3
                             </label>
@@ -612,7 +612,7 @@
                             <label class="ui-label">
                                 <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                     <input type="checkbox" checked>
-                                    <i class="ui-state"></i>
+                                    <i class="ui-form-state"></i>
                                 </span>
                                 Switch
                             </label>
@@ -621,7 +621,7 @@
                             <label class="ui-label">
                                 <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                         <input type="checkbox" checked>
-                                        <i class="ui-state ui-theme-sub ui-fill-dark-100"></i>
+                                        <i class="ui-form-state ui-theme-sub ui-fill-dark-100"></i>
                                 </span>
                                 Switch with Themes
                             </label>
@@ -630,7 +630,7 @@
                             <label class="ui-label">
                                 <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                         <input type="checkbox" checked>
-                                        <i class="ui-state ui-theme-base ui-fill-dark-100"></i>
+                                        <i class="ui-form-state ui-theme-base ui-fill-dark-100"></i>
                                 </span>
                                 Switch with Themes
                             </label>
@@ -639,7 +639,7 @@
                             <label class="ui-label">
                                 <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                         <input type="checkbox" class="ui-indeterminate">
-                                        <i class="ui-state"></i>
+                                        <i class="ui-form-state"></i>
                                 </span>
                                 Indeterminate Switch
                             </label>
@@ -1570,7 +1570,7 @@
                                     <label class="ui-label">
                                         <span class="ui-check ui-round ui-border-dual">
                                             <input class="ui-required" type="checkbox">
-                                            <i class="ui-state"></i>
+                                            <i class="ui-form-state"></i>
                                         </span>
                                         <b>Checkbox</b>
                                     </label>
@@ -1587,21 +1587,21 @@
                                     <label class="ui-label">
                                         <span class="ui-radio ui-border-dual ui-ease-form">
                                             <input class="ui-required" type="radio" name="radiotest4">
-                                            <i class="ui-state"></i>
+                                            <i class="ui-form-state"></i>
                                         </span>
                                         <b>Radio1</b>
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-radio ui-border-dual ui-ease-form">
                                             <input class="ui-required" type="radio" name="radiotest4">
-                                            <i class="ui-state"></i>
+                                            <i class="ui-form-state"></i>
                                         </span>
                                         <b>Radio2</b>
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-radio ui-border-dual ui-ease-form">
                                             <input class="ui-required" type="radio" name="radiotest4">
-                                            <i class="ui-state"></i>
+                                            <i class="ui-form-state"></i>
                                         </span>
                                         <b>Radio2</b>
                                     </label>
@@ -1618,7 +1618,7 @@
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="ui-required" type="checkbox">
-                                            <i class="ui-state"></i>
+                                            <i class="ui-form-state"></i>
                                         </span>
                                         <b>Switch</b>
                                     </label>
@@ -1859,21 +1859,21 @@
                         <label class="ui-label">
                             <span class="ui-check">
                                 <input type="checkbox" checked>
-                                <i class="ui-state"></i>
+                                <i class="ui-form-state"></i>
                             </span>
                             <b>Checkbox</b>
                         </label>
                         <label class="ui-label">
                             <span class="ui-radio">
                                 <input type="radio" checked>
-                                <i class="ui-state"></i>
+                                <i class="ui-form-state"></i>
                             </span>
                             <b>Radio</b>
                         </label>
                         <label class="ui-label">
                             <span class="ui-switch">
                                 <input type="checkbox" checked>
-                                <i class="ui-state"></i>
+                                <i class="ui-form-state"></i>
                             </span>
                             <b>Switch</b>
                         </label>
@@ -1913,21 +1913,21 @@
                         <label class="ui-label">
                             <span class="ui-check ui-shadow-in ui-no-border">
                                 <input type="checkbox" checked>
-                                <i class="ui-state"></i>
+                                <i class="ui-form-state"></i>
                             </span>
                             <b>Checkbox</b>
                         </label>
                         <label class="ui-label">
                             <span class="ui-radio ui-shadow-in ui-no-border">
                                 <input type="radio" checked>
-                                <i class="ui-state"></i>
+                                <i class="ui-form-state"></i>
                             </span>
                             <b>Radio</b>
                         </label>
                         <label class="ui-label">
                             <span class="ui-switch ui-shadow-in ui-no-border">
                                 <input type="checkbox" checked>
-                                <i class="ui-state"></i>
+                                <i class="ui-form-state"></i>
                             </span>
                             <b>Switch</b>
                         </label>
@@ -1967,21 +1967,21 @@
                         <label class="ui-label">
                             <span class="ui-check ui-fill-light-100">
                                 <input type="checkbox" checked>
-                                <i class="ui-state ui-fill-dark-100"></i>
+                                <i class="ui-form-state ui-fill-dark-100"></i>
                             </span>
                             <b>Checkbox</b>
                         </label>
                         <label class="ui-label">
                             <span class="ui-radio ui-fill-light-100">
                                 <input type="radio" checked>
-                                <i class="ui-state ui-fill-dark-100"></i>
+                                <i class="ui-form-state ui-fill-dark-100"></i>
                             </span>
                             <b>Radio</b>
                         </label>
                         <label class="ui-label">
                             <span class="ui-switch ui-fill-light-100">
                                 <input type="checkbox" checked>
-                                <i class="ui-state ui-fill-dark-100"></i>
+                                <i class="ui-form-state ui-fill-dark-100"></i>
                             </span>
                             <b>Switch</b>
                         </label>

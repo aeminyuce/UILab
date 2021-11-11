@@ -4741,9 +4741,9 @@ dt + dd:not(:last-child) {
   transition-property: color, transform, opacity;
   transition-duration: 0.3s;
 }
-.ui-ease-form .ui-state,
-.ui-ease-1st-form > * .ui-state,
-.ui-ease-2nd-form > * > * .ui-state {
+.ui-ease-form .ui-form-state,
+.ui-ease-1st-form > * .ui-form-state,
+.ui-ease-2nd-form > * > * .ui-form-state {
   transition-property: width, height, background-color, transform, opacity;
   transition-duration: 0.15s;
 }
@@ -5147,9 +5147,9 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   display: inline-block;
   position: relative;
 }
-.ui-check .ui-state,
-.ui-radio .ui-state,
-.ui-switch .ui-state {
+.ui-check .ui-form-state,
+.ui-radio .ui-form-state,
+.ui-switch .ui-form-state {
   content: "";
   width: 14px;
   height: 14px;
@@ -5175,8 +5175,8 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-radio {
   width: 22px;
 }
-.ui-check .ui-state,
-.ui-radio .ui-state {
+.ui-check .ui-form-state,
+.ui-radio .ui-form-state {
   background-color: hsla(0, 0%, 0%, 0.65);
   background-color: var(--ui-ui-check-bg);
   opacity: 0;
@@ -5185,53 +5185,53 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-switch.ui-round {
   border-radius: 14px !important;
 }
-.ui-radio .ui-state,
-.ui-switch.ui-round .ui-state {
+.ui-radio .ui-form-state,
+.ui-switch.ui-round .ui-form-state {
   border-radius: 7px;
 }
-.ui-radio input:checked + .ui-state {
+.ui-radio input:checked + .ui-form-state {
   opacity: 1;
 }
-.ui-check.ui-round .ui-state {
+.ui-check.ui-round .ui-form-state {
   border-radius: 3px;
 }
 .ui-check input:checked + i,
-.ui-check input:indeterminate + .ui-state {
+.ui-check input:indeterminate + .ui-form-state {
   opacity: 1;
 }
-.ui-check input:indeterminate + .ui-state {
+.ui-check input:indeterminate + .ui-form-state {
   height: 4px;
 }
 .ui-switch {
   width: 44px;
 }
-.ui-switch input:checked + .ui-state {
+.ui-switch input:checked + .ui-form-state {
   transform: translate(25%, -50%);
 }
-.ui-switch input:checked + .ui-state:not([class*="ui-fill-"]) {
+.ui-switch input:checked + .ui-form-state:not([class*="ui-fill-"]) {
   background-color: hsl(142, 82%, 42%);
 }
-.ui-switch input:not(:checked) + .ui-state,
-.ui-switch input:not(:checked) + .ui-state[class*="ui-fill-"] {
+.ui-switch input:not(:checked) + .ui-form-state,
+.ui-switch input:not(:checked) + .ui-form-state[class*="ui-fill-"] {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--ui-ui-switch-bg);
 }
-.ui-switch input:not(:indeterminate):not(:checked):not(:indeterminate) + .ui-state {
+.ui-switch input:not(:indeterminate):not(:checked):not(:indeterminate) + .ui-form-state {
   transform: translate(-125%, -50%);
 }
-.ui-switch input:indeterminate + .ui-state {
+.ui-switch input:indeterminate + .ui-form-state {
   background-color: hsl(42, 100%, 45%);
 }
-.ui-desktop .ui-switch:hover .ui-state {
+.ui-desktop .ui-switch:hover .ui-form-state {
   width: 18px;
 }
-.ui-desktop .ui-switch:hover input:checked + .ui-state {
+.ui-desktop .ui-switch:hover input:checked + .ui-form-state {
   transform: translate(0, -50%);
 }
-.ui-desktop .ui-switch:hover input:not(:checked) + .ui-state {
+.ui-desktop .ui-switch:hover input:not(:checked) + .ui-form-state {
   transform: translate(-100%, -50%);
 }
-.ui-desktop .ui-switch:hover input:indeterminate + .ui-state {
+.ui-desktop .ui-switch:hover input:indeterminate + .ui-form-state {
   transform: translate(-50%, -50%);
 }
 .ui-required-msg {
