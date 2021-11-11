@@ -54,7 +54,6 @@
   --ui-alerts-dialog-error-shadow: hsl(0, 74%, 47%);
   --ui-alerts-dialog-success-shadow: hsl(142, 82%, 34%);
   --ui-alerts-dialog-custom-shadow: hsla(0, 0%, 0%, 0.3);
-  --ui-alerts-msg-bg: hsl(0, 0%, 9%);
   --ui-calendar-highlighted-bg: hsla(0, 0%, 0%, 0.15);
   --ui-calendar-weekend-bg: hsla(0, 0%, 0%, 0.04);
   --ui-calendar-empty-details-bg: hsla(0, 0%, 0%, 0.12);
@@ -128,7 +127,6 @@
   --ui-alerts-dialog-error-shadow: hsl(0, 74%, 71%);
   --ui-alerts-dialog-success-shadow: hsl(142, 82%, 58%);
   --ui-alerts-dialog-custom-shadow: hsla(0, 0%, 100%, 0.3);
-  --ui-alerts-msg-bg: hsl(220, 14%, 21%);
   --ui-calendar-highlighted-bg: hsla(0, 0%, 100%, 0.15);
   --ui-calendar-weekend-bg: hsla(0, 0%, 100%, 0.04);
   --ui-calendar-empty-details-bg: hsla(0, 0%, 100%, 0.18);
@@ -7394,8 +7392,7 @@ header.ui-sticky-static {
 }
 .ui-alerts-msg:not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 100%);
-  background-color: hsl(0, 0%, 9%);
-  background-color: var(--ui-alerts-msg-bg);
+  background-color: hsl(220, 12%, 4%);
 }
 .ui-alerts-msg.ui-msg-success {
   background-color: hsl(142, 82%, 42%) !important;

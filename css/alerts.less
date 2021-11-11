@@ -40,22 +40,17 @@
 @alerts-msg-window-space:              20px;
 @alerts-msg-slide-size:                40px;
 
-@alerts-msg-bg:                        hsl(0, 0%, 9%);
-@alerts-msg-bg-dark:                   @card-bg-dark;
+@alerts-msg-bg:                        hsl(220, 12%, 4%);
 
 ._global-vars () {
     --ui-alerts-dialog-error-shadow: @alerts-dialog-error-shadow;
     --ui-alerts-dialog-success-shadow: @alerts-dialog-success-shadow;
     --ui-alerts-dialog-custom-shadow: @alerts-dialog-custom-shadow;
-
-    --ui-alerts-msg-bg: @alerts-msg-bg;
 }
 ._global-vars-dark () {
     --ui-alerts-dialog-error-shadow: @alerts-dialog-error-shadow-dark;
     --ui-alerts-dialog-success-shadow: @alerts-dialog-success-shadow-dark;
     --ui-alerts-dialog-custom-shadow: @alerts-dialog-custom-shadow-dark;
-
-    --ui-alerts-msg-bg: @alerts-msg-bg-dark;
 }
 
 .ui-alerts {
@@ -88,7 +83,7 @@
 
         &:not(.ui-show) { display: none; }
         &:not(.ui-show-ease) { opacity: 0; }
-        &:not([class*="ui-fill-"]) { color: @white; ._bg-var(alerts-msg-bg); }
+        &:not([class*="ui-fill-"]) { color: @white; background-color: @alerts-msg-bg; }
 
         &.ui-msg- {
             &success { background-color: @green !important; }
