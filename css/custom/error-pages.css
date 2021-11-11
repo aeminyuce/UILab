@@ -1,11 +1,11 @@
 /* error pages */
-.ui-error-icon-size {
+.error-icon-size {
   font-size: 20vw;
   line-height: 20vw;
   margin: -2.35vh 0;
   position: relative;
 }
-.ui-error-icon-size:after {
+.error-icon-size:after {
   content: "";
   width: 32vh;
   height: 32vh;
@@ -19,7 +19,7 @@
   z-index: 0;
   opacity: 0.1;
 }
-.ui-error-icon-size .ui-icon {
+.error-icon-size .ui-icon {
   width: 16vw;
   height: 16vw;
   margin: 0 -4.65vw;

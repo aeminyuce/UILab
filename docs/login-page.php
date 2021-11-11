@@ -89,7 +89,7 @@
                     <a href="?l=sign-up-page" class="login-btn ui-btn ui-btn-lg ui-btn-sm-fluid ui-padding-30-h ui-circle ui-hover-scale ui-hover-shadow ui-ease-btn"><b>SIGN UP NOW</b></a>
                 </div>
 
-                <div class="login-icons ui-icons-black">
+                <div class="login-icons ui-icons-bold">
                     <svg class="ui-icon ui-hidden-sm"><use href="#plus"/></svg>
                     <svg class="ui-icon"><use href="#plus"/></svg>
                     <svg class="ui-icon"><use href="#plus"/></svg>

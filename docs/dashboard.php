@@ -667,7 +667,7 @@
                         <div class="ui-row">
 
                             <div class="ui-col-12 ui-no-padding">
-                                <div class="ui-dashboard-carousel ui-carousel" data-ui-col-xl="4" data-ui-col-lg="2" data-ui-col="2" data-ui-col-md="2" data-ui-col-sm="1" data-ui-col-xs="1">
+                                <div class="dashboard-carousel ui-carousel" data-ui-col-xl="4" data-ui-col-lg="2" data-ui-col="2" data-ui-col-md="2" data-ui-col-sm="1" data-ui-col-xs="1">
                                     <div class="ui-carousel-slider ui-icons-margin-5-r ui-ease-layout ui-ease-slow ui-ease-in-out">
 
                                         <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-yellow">

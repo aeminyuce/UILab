@@ -219,7 +219,7 @@ img {
   transition-duration: 0.15s;
   transition-timing-function: ease-out;
 }
-.ui-animate-pin {
+.ui-animate-spin {
   animation: ui-spin 1.15s linear infinite;
 }
 .ui-animate-progress {
@@ -4015,7 +4015,7 @@ dt + dd:not(:last-child) {
   stroke-width: 28px;
   margin-top: -1px;
 }
-.ui-btn .ui-icon:not(.no-opacity) {
+.ui-btn .ui-icon:not(.ui-no-opacity) {
   opacity: 0.45;
 }
 .ui-btn[class*="ui-fill-dark-"] .ui-icon {
@@ -4278,7 +4278,7 @@ dt + dd:not(:last-child) {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .ui-pagination .ui-btn:not(.prev):not(.next):not(.ui-btn-active) {
+  .ui-pagination .ui-btn:not(.ui-prev):not(.ui-next):not(.ui-btn-active) {
     display: none;
   }
   .ui-btn-holder.ui-btn-sm-fluid > .ui-btn {
@@ -5383,10 +5383,10 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   border: 0;
   cursor: pointer;
 }
-.ui-form-clear:not(.open) {
+.ui-form-clear:not(.ui-open) {
   display: none;
 }
-.ui-form-clear:not(.open-ease) {
+.ui-form-clear:not(.ui-open-ease) {
   opacity: 0;
 }
 .ui-input .ui-form-clear .ui-icon {
@@ -8078,7 +8078,7 @@ button.ui-dialog-custom:focus {
 .ui-carousel-gallery .ui-detail.ui-detail-loader .ui-loader-icon {
   animation: ui-carousel-gallery-loader 1.15s linear infinite;
 }
-.ui-carousel-gallery .ui-detail:not(.detail-loader) .ui-loader-icon {
+.ui-carousel-gallery .ui-detail:not(.ui-detail-loader) .ui-loader-icon {
   display: none;
 }
 .ui-carousel-gallery .ui-thumbs {

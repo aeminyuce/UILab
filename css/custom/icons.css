@@ -11,16 +11,16 @@
   --ui-icons-list-hover-bg: hsl(219, 12%, 27%);
   --ui-icons-name-color: hsl(0, 0%, 82%);
 }
-.ui-icons-list {
+.icons-list {
   margin: -1px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.ui-icons-list:not(:last-child) {
+.icons-list:not(:last-child) {
   margin-bottom: 30px;
 }
-.ui-icons-list li {
+.icons-list li {
   color: hsl(214, 10%, 32%);
   color: var(--ui-icons-list-color);
   max-width: 160px;
@@ -32,11 +32,11 @@
   cursor: pointer;
   flex-grow: 1;
 }
-.ui-desktop .ui-icons-list li:hover {
+.ui-desktop .icons-list li:hover {
   background-color: hsla(0, 0%, 0%, 0.12);
   background-color: var(--ui-icons-list-hover-bg);
 }
-.ui-icons-list li > span {
+.icons-list li > span {
   color: hsla(0, 0%, 0%, 0.5);
   color: var(--ui-icons-name-color);
   font-size: 13px;
@@ -49,6 +49,6 @@
   overflow: hidden;
   display: block;
 }
-.ui-icons-list li .ui-icon:not([class*="animate-"]) {
+.icons-list li .ui-icon:not([class*="ui-animate-"]) {
   box-sizing: content-box;
 }

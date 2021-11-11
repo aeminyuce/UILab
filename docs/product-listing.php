@@ -45,31 +45,31 @@
                         <div class="ui-padding-15 ui-md-align-c ui-border-b">
                             <h5 class="ui-h5 ui-margin-10-b ui-color-black-50">COLORS</h5>
                             <label class="ui-label">
-                                <span class="ui-check ui-no-border ui-circle ui-ease-form ui-product-select-red">
+                                <span class="ui-check ui-no-border ui-circle ui-ease-form product-select-red">
                                     <input type="checkbox" checked>
                                     <i class="ui-form-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
                             <label class="ui-label">
-                                <span class="ui-check ui-no-border ui-circle ui-ease-form ui-product-select-pink">
+                                <span class="ui-check ui-no-border ui-circle ui-ease-form product-select-pink">
                                     <input type="checkbox" checked>
                                     <i class="ui-form-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
                             <label class="ui-label">
-                                <span class="ui-check ui-no-border ui-circle ui-ease-form ui-product-select-blue">
+                                <span class="ui-check ui-no-border ui-circle ui-ease-form product-select-blue">
                                     <input type="checkbox" checked>
                                     <i class="ui-form-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
                             <label class="ui-label">
-                                <span class="ui-check ui-no-border ui-circle ui-ease-form ui-product-select-orange">
+                                <span class="ui-check ui-no-border ui-circle ui-ease-form product-select-orange">
                                     <input type="checkbox">
                                     <i class="ui-form-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
                             <label class="ui-label">
-                                <span class="ui-check ui-no-border ui-circle ui-ease-form ui-product-select-yellow">
+                                <span class="ui-check ui-no-border ui-circle ui-ease-form product-select-yellow">
                                     <input type="checkbox">
                                     <i class="ui-form-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
@@ -78,13 +78,13 @@
                             <span class="ui-clear ui-hidden-md"></span>
 
                             <label class="ui-label">
-                                <span class="ui-check ui-no-border ui-circle ui-ease-form ui-product-select-black">
+                                <span class="ui-check ui-no-border ui-circle ui-ease-form product-select-black">
                                     <input type="checkbox" checked>
                                     <i class="ui-form-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
                             <label class="ui-label">
-                                <span class="ui-check ui-no-border ui-circle ui-ease-form ui-product-select-white">
+                                <span class="ui-check ui-no-border ui-circle ui-ease-form product-select-white">
                                     <input type="checkbox" checked>
                                     <i class="ui-form-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
@@ -283,9 +283,9 @@
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#truck"/></svg> Fast Delivery
                                 </span>
                                 <ul class="ui-list-inline ui-margin-15-v ui-right">
-                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-red"></li>
-                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-pink"></li>
-                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-blue"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual product-red"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual product-pink"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual product-blue"></li>
                                 </ul>
                                 <span class="ui-left ui-padding-15-v ui-icons-xs">
                                     <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
@@ -319,8 +319,8 @@
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="ui-list-inline ui-margin-15-v ui-right">
-                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-pink"></li>
-                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-white"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual product-pink"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual product-white"></li>
                                 </ul>
                                 <span class="ui-left ui-padding-15-v ui-icons-xs">
                                     <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
@@ -354,8 +354,8 @@
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#truck"/></svg> Fast Delivery
                                 </span>
                                 <ul class="ui-list-inline ui-margin-15-v ui-right">
-                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-blue"></li>
-                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-black"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual product-blue"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual product-black"></li>
                                 </ul>
                                 <span class="ui-left ui-padding-15-v ui-icons-xs">
                                     <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
@@ -386,7 +386,7 @@
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="ui-list-inline ui-margin-15-v ui-right">
-                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-white"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual product-white"></li>
                                 </ul>
                                 <span class="ui-left ui-padding-15-v ui-icons-xs">
                                     <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
@@ -417,7 +417,7 @@
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="ui-list-inline ui-margin-15-v ui-right">
-                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-black"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual product-black"></li>
                                 </ul>
                                 <span class="ui-left ui-padding-15-v ui-icons-xs">
                                     <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>
@@ -451,8 +451,8 @@
                                     <svg class="ui-icon ui-icon-sm ui-margin-5-r"><use href="#check-badge"/></svg> 20% off
                                 </span>
                                 <ul class="ui-list-inline ui-margin-15-v ui-right">
-                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-pink"></li>
-                                    <li class="ui-circle ui-padding-5 ui-border-dual ui-product-white"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual product-pink"></li>
+                                    <li class="ui-circle ui-padding-5 ui-border-dual product-white"></li>
                                 </ul>
                                 <span class="ui-left ui-padding-15-v ui-icons-xs">
                                     <svg class="ui-icon ui-color-yellow"><use href="#star-fill"/></svg>

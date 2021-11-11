@@ -13,48 +13,45 @@
 
                     <h1 class="ui-h1">
                         SVG Icons
-                        <span class="ui-total ui-font-18 ui-margin-5-v ui-block ui-opacity-half"></span>
+                        <span class="total ui-font-18 ui-margin-5-v ui-block ui-opacity-half"></span>
                     </h1>
 
                     <div class="ui-row">
                         <div class="ui-col-4">
                             <h4 class="ui-h4 ui-align-c ui-margin-10-b">Change Weight</h4>
-                            <div class="ui-icon-modifiers ui-btn-holder ui-form-lg ui-margin-20-b ui-theme-sub ui-form-lg ui-ease-1st-btn">
-                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Black" data-ui-weight="black" class="ui-btn ui-round">
-                                    <svg class="ui-icon ui-icon-black ui-no-opacity"><use href="#remove"/></svg>
-                                </button>
-                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Bold" data-ui-weight="bold" class="ui-btn ui-round">
+                            <div class="icon-modifiers ui-btn-holder ui-form-lg ui-margin-20-b ui-theme-sub ui-form-lg ui-ease-1st-btn">
+                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Bold" data-weight="bold" class="ui-btn ui-round">
                                     <svg class="ui-icon ui-icon-bold ui-no-opacity"><use href="#remove"/></svg>
                                 </button>
-                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Semibold" data-ui-weight="semibold" class="ui-btn ui-round">
+                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Semibold" daui-weight="semibold" class="ui-btn ui-round">
                                     <svg class="ui-icon ui-icon-bold ui-no-opacity"><use href="#remove"/></svg>
                                 </button>
-                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Auto Weight" data-ui-weight="" class="ui-btn ui-round ui-fill-dark-100">
+                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Auto Weight" daui-weight="" class="ui-btn ui-round ui-fill-dark-100">
                                     Auto
                                 </button>
-                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Light" data-ui-weight="light" class="ui-btn ui-round">
+                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Light" data-weight="light" class="ui-btn ui-round">
                                     <svg class="ui-icon ui-icon-light ui-no-opacity"><use href="#remove"/></svg>
                                 </button>
-                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Thin" data-ui-weight="thin" class="ui-btn ui-round">
+                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Thin" data-weight="thin" class="ui-btn ui-round">
                                     <svg class="ui-icon ui-icon-thin ui-no-opacity"><use href="#remove"/></svg>
                                 </button>
                             </div>
                         </div>
                         <div class="ui-col-8">
                             <h4 class="ui-h4 ui-align-c ui-margin-10-b">Change Size</h4>
-                            <div class="ui-icon-modifiers ui-btn-holder ui-form-lg ui-margin-20-b ui-theme-sub ui-form-lg ui-ease-1st-btn">
-                                <button data-ui-size="xxl" class="ui-btn ui-round ui-fill-dark-100">XXL</button>
-                                <button data-ui-size="xl" class="ui-btn ui-round">XL</button>
-                                <button data-ui-size="lg" class="ui-btn ui-round">L</button>
-                                <button data-ui-size="" class="ui-btn ui-round">-</button>
-                                <button data-ui-size="sm" class="ui-btn ui-round">SM</button>
-                                <button data-ui-size="xs" class="ui-btn ui-round">XS</button>
+                            <div class="icon-modifiers ui-btn-holder ui-form-lg ui-margin-20-b ui-theme-sub ui-form-lg ui-ease-1st-btn">
+                                <button data-size="xxl" class="ui-btn ui-round ui-fill-dark-100">XXL</button>
+                                <button data-size="xl" class="ui-btn ui-round">XL</button>
+                                <button data-size="lg" class="ui-btn ui-round">L</button>
+                                <button data-size="" class="ui-btn ui-round">-</button>
+                                <button data-size="sm" class="ui-btn ui-round">SM</button>
+                                <button data-size="xs" class="ui-btn ui-round">XS</button>
                             </div>
                         </div>
                     </div>
 
                     <h2 class="ui-h2">General Icons</h2>
-                    <ul class="ui-icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
+                    <ul class="icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
                         <li><svg class="ui-icon"><use href="#angle-down"/></svg><span>angle-down</span></li>
                         <li><svg class="ui-icon"><use href="#angle-left"/></svg><span>angle-left</span></li>
                         <li><svg class="ui-icon"><use href="#angle-right"/></svg><span>angle-right</span></li>
@@ -568,7 +565,7 @@
                     </ul>
 
                     <h2 class="ui-h2">Touch Icons</h2>
-                    <ul class="ui-icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
+                    <ul class="icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
                         <li><svg class="ui-icon"><use href="#touch"/></svg><span>touch</span></li>
                         <li><svg class="ui-icon"><use href="#touch-fill"/></svg><span>touch-fill</span></li>
                         <li><svg class="ui-icon"><use href="#touch-dual"/></svg><span>touch-dual</span></li>
@@ -588,7 +585,7 @@
                     </ul>
 
                     <h2 class="ui-h2">Media Icons</h2>
-                    <ul class="ui-icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
+                    <ul class="icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
                         <li><svg class="ui-icon"><use href="#backward"/></svg><span>backward</span></li>
                         <li><svg class="ui-icon"><use href="#backward-fill"/></svg><span>backward-fill</span></li>
                         <li><svg class="ui-icon"><use href="#play"/></svg><span>play</span></li>
@@ -662,7 +659,7 @@
                     </ul>
 
                     <h2 class="ui-h2">Kitchen Icons</h2>
-                    <ul class="ui-icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
+                    <ul class="icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
                         <li><svg class="ui-icon"><use href="#chef"/></svg><span>chef</span></li>
                         <li><svg class="ui-icon"><use href="#chef-fill"/></svg><span>chef-fill</span></li>
                         <li><svg class="ui-icon"><use href="#mitten"/></svg><span>mitten</span></li>
@@ -686,7 +683,7 @@
                     </ul>
 
                     <h2 class="ui-h2">Real Estate Icons</h2>
-                    <ul class="ui-icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
+                    <ul class="icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
                         <li><svg class="ui-icon"><use href="#house"/></svg><span>house</span></li>
                         <li><svg class="ui-icon"><use href="#house-fill"/></svg><span>house-fill</span></li>
                         <li><svg class="ui-icon"><use href="#house-check"/></svg><span>house-check</span></li>
@@ -714,7 +711,7 @@
                     </ul>
 
                     <h2 class="ui-h2">Weather Icons</h2>
-                    <ul class="ui-icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
+                    <ul class="icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
                         <li><svg class="ui-icon"><use href="#cloud"/></svg><span>cloud</span></li>
                         <li><svg class="ui-icon"><use href="#cloud-fill"/></svg><span>cloud-fill</span></li>
                         <li><svg class="ui-icon"><use href="#clouds"/></svg><span>clouds</span></li>
@@ -761,7 +758,7 @@
                     </ul>
 
                     <h2 class="ui-h2">Commerce Icons</h2>
-                    <ul class="ui-icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
+                    <ul class="icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
                         <li><svg class="ui-icon"><use href="#tag"/></svg><span>tag</span></li>
                         <li><svg class="ui-icon"><use href="#tag-fill"/></svg><span>tag-fill</span></li>
                         <li><svg class="ui-icon"><use href="#tags"/></svg><span>tags</span></li>
@@ -802,7 +799,7 @@
                     </ul>
 
                     <h2 class="ui-h2">Files Icons</h2>
-                    <ul class="ui-icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
+                    <ul class="icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
                         <li><svg class="ui-icon"><use href="#file"/></svg><span>file</span></li>
                         <li><svg class="ui-icon"><use href="#file-fill"/></svg><span>file-fill</span></li>
                         <li><svg class="ui-icon"><use href="#files"/></svg><span>files</span></li>
@@ -866,7 +863,7 @@
                     </ul>
 
                     <h2 class="ui-h2">Social Icons</h2>
-                    <ul class="ui-icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
+                    <ul class="icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
                         <li><svg class="ui-icon"><use href="#behance"/></svg><span>behance</span></li>
                         <li><svg class="ui-icon"><use href="#dribbble"/></svg><span>dribbble</span></li>
                         <li><svg class="ui-icon"><use href="#facebook"/></svg><span>facebook</span></li>
@@ -883,7 +880,7 @@
                     </ul>
 
                     <h2 class="ui-h2">Brands Icons</h2>
-                    <ul class="ui-icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
+                    <ul class="icons-list ui-icons-xxl ui-list-custom ui-theme-base ui-ease-1st-bg">
                         <li><svg class="ui-icon"><use href="#android"/></svg><span>android</span></li>
                         <li><svg class="ui-icon"><use href="#apple"/></svg><span>apple</span></li>
                         <li><svg class="ui-icon"><use href="#appstore"/></svg><span>appstore</span></li>

@@ -8,7 +8,7 @@
 
             <div class="signup-holder ui-no-scroll ui-set-relative ui-fill-dark-100">
 
-                <div class="signup-icons ui-icons-black">
+                <div class="signup-icons ui-icons-bold">
                     <svg class="ui-icon"><use href="#plus"/></svg>
                     <svg class="ui-icon"><use href="#plus"/></svg>
                     <svg class="ui-icon"><use href="#plus"/></svg>
