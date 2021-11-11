@@ -42,13 +42,13 @@
                                     </button>
                                     <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                         <li>
-                                            <label class="radio" data-ui-sort="1">
+                                            <label data-ui-sort="1">
                                                 <svg class="ui-icon"><use href="#sort"></svg>
                                                 <input type="radio" name="s">By Name
                                             </label>
                                         </li>
                                         <li>
-                                            <label class="radio" data-ui-sort="2">
+                                            <label data-ui-sort="2">
                                                 <svg class="ui-icon"><use href="#sort"></svg>
                                                 <input type="radio" name="s">By Step
                                             </label>

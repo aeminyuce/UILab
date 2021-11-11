@@ -277,7 +277,6 @@ html:not(.ui-no-effects) {
     }
 }
 
-.check,.radio { vertical-align: middle; display: inline-block; }
 label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @form-spacing; padding-bottom: (@form-spacing - 2); display: inline-block; }
 
 .check-custom,.radio-custom,.switch-custom {
@@ -339,12 +338,12 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
 
 .error {
     .check-custom,.radio-custom,.switch-custom { background-color: @form-error-bg !important; border-color: @red !important; }
-    &:not(.ui-form-holder):not(.ui-required-accept):not(.hint),label.check,label.radio { background-color: @form-error-bg !important; border-color: @red !important; }
+    &:not(.ui-form-holder):not(.ui-required-accept):not(.hint) { background-color: @form-error-bg !important; border-color: @red !important; }
 
 }
 .warning {
     .check-custom,.radio-custom,.switch-custom { background-color: @form-warning-bg !important; border-color: @yellow !important; }
-    &:not(.ui-form-holder):not(.ui-required-accept):not(.hint),label.check,label.radio { background-color: @form-warning-bg !important; border-color: @yellow !important; }
+    &:not(.ui-form-holder):not(.ui-required-accept):not(.hint) { background-color: @form-warning-bg !important; border-color: @yellow !important; }
 }
 
 .hint {

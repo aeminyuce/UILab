@@ -556,40 +556,6 @@
                 <div class="ui-padding-30-b">
                     <ul class="ui-list-inline ui-list-gap">
                         <li>
-                            <label class="check">
-                                <input type="checkbox" checked> Checkbox
-                            </label>
-                        </li>
-                        <li>
-                            <label class="check">
-                                <input class="indeterminate" type="checkbox"> Indeterminate
-                            </label>
-                        </li>
-                    </ul>
-
-                    <span class="ui-sp-5"></span>
-                    <ul class="ui-list-inline ui-list-gap">
-                        <li>
-                            <label class="radio">
-                                <input type="radio" name="radiotest1"> Radio1
-                            </label>
-                        </li>
-                        <li>
-                            <label class="radio">
-                                <input type="radio" name="radiotest1"> Radio2
-                            </label>
-                        </li>
-                        <li>
-                            <label class="radio">
-                                <input type="radio" name="radiotest1"> Radio3
-                            </label>
-                        </li>
-                    </ul>
-
-                    <span class="ui-sp-15"></span>
-
-                    <ul class="ui-list-inline ui-list-gap">
-                        <li>
                             <label class="custom">
                                 <span class="check-custom ui-round ui-border-dual ui-ease-form">
                                     <input type="checkbox" checked>
@@ -1564,7 +1530,7 @@
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-required-accept">
-                                    <label class="check">
+                                    <label>
                                         <input class="required" type="checkbox"> Checkbox
                                     </label>
                                 </div>
@@ -1580,7 +1546,7 @@
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-required-accept">
-                                    <label class="check">
+                                    <label>
                                         <input class="required indeterminate" type="checkbox"> Indeterminate
                                     </label>
                                 </div>
@@ -1613,13 +1579,13 @@
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-required-accept">
-                                    <label class="radio">
+                                    <label>
                                         <input class="required" type="radio" name="radiotest3"> Radio1
                                     </label>
-                                    <label class="radio">
+                                    <label">
                                         <input class="required" type="radio" name="radiotest3"> Radio2
                                     </label>
-                                    <label class="radio">
+                                    <label>
                                         <input class="required" type="radio" name="radiotest3"> Radio3
                                     </label>
                                 </div>

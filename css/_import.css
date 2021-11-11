@@ -5129,11 +5129,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-range:disabled::-moz-range-track {
   cursor: default;
 }
-.check,
-.radio {
-  vertical-align: middle;
-  display: inline-block;
-}
 label.custom {
   min-height: 22px;
   padding-top: 5px;
@@ -5245,9 +5240,7 @@ label.custom {
   background-color: hsla(0, 74%, 55%, 0.1) !important;
   border-color: hsl(0, 74%, 55%) !important;
 }
-.error:not(.ui-form-holder):not(.ui-required-accept):not(.hint),
-.error label.check,
-.error label.radio {
+.error:not(.ui-form-holder):not(.ui-required-accept):not(.hint) {
   background-color: hsla(0, 74%, 55%, 0.1) !important;
   border-color: hsl(0, 74%, 55%) !important;
 }
@@ -5257,9 +5250,7 @@ label.custom {
   background-color: hsla(42, 100%, 45%, 0.1) !important;
   border-color: hsl(42, 100%, 45%) !important;
 }
-.warning:not(.ui-form-holder):not(.ui-required-accept):not(.hint),
-.warning label.check,
-.warning label.radio {
+.warning:not(.ui-form-holder):not(.ui-required-accept):not(.hint) {
   background-color: hsla(42, 100%, 45%, 0.1) !important;
   border-color: hsl(42, 100%, 45%) !important;
 }
