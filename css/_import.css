@@ -7578,6 +7578,7 @@ button.ui-dialog-custom:focus {
   opacity: 0.45;
 }
 .ui-calendar tbody td button {
+  font-size: 16px;
   width: 100%;
   min-height: 42px;
   background: transparent;
@@ -7638,6 +7639,7 @@ button.ui-dialog-custom:focus {
   background-color: var(--ui-btn-hover-bg);
 }
 .ui-calendar caption {
+  box-sizing: border-box;
   height: 58px;
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--ui-calendar-highlighted-bg);
@@ -7645,6 +7647,7 @@ button.ui-dialog-custom:focus {
   margin-bottom: 5px;
 }
 .ui-calendar caption button {
+  font-size: 16px;
   white-space: nowrap;
   text-overflow: ellipsis;
   line-height: 28px;
@@ -7709,6 +7712,7 @@ button.ui-dialog-custom:focus {
   border-radius: 6px;
 }
 .ui-calendar.ui-round .ui-calendar-details li {
+  box-sizing: border-box;
   border-radius: 6px;
 }
 .ui-calendar.ui-round table.ui-fill-weekends th:nth-child(6) {
@@ -7827,6 +7831,8 @@ button.ui-dialog-custom:focus {
   border-radius: 10px;
 }
 .ui-calendar-details li > span > a {
+  color: hsl(0, 0%, 0%);
+  color: var(--ui-black);
   text-decoration: underline;
 }
 .ui-calendar-details li > span > a:hover {
@@ -7890,7 +7896,7 @@ button.ui-dialog-custom:focus {
   flex-grow: 1;
 }
 .ui-calendar-panel .ui-panel-call {
-  font-size: 14px;
+  font-size: 18px;
   white-space: nowrap;
   text-overflow: ellipsis;
   line-height: 100%;

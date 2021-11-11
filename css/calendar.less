@@ -58,7 +58,7 @@
 @calendar-empty-details-bg:             fade(@black, 12%);
 @calendar-empty-details-bg-dark:        fade(@white, 18%);
 
-@calendar-panel-items-font-size:        @font-size;
+@calendar-panel-items-font-size:        @font-18;
 @calendar-panel-items-padding:          8px;
 @calendar-panel-items-gap:              2px;
 
@@ -110,7 +110,7 @@
                 span { min-height: @btn-default; padding: (@calendar-days-padding - (@calendar-days-gap * 2)); display: block; opacity: @calendar-days-passive-opacity; }
             }
 
-            button { width: 100%; min-height: @btn-default; background: @no-color; padding: (@calendar-days-padding - @calendar-days-gap); display: block; border: 0; position: relative; }
+            button { font-size: @font-16; width: 100%; min-height: @btn-default; background: @no-color; padding: (@calendar-days-padding - @calendar-days-gap); display: block; border: 0; position: relative; }
 
             &.ui-toggle-details {
                 button {
@@ -157,9 +157,9 @@
     }
 
     caption {
-        height: (@calendar-caption-buttons-size + @calendar-caption-padding * 2); ._bg-var(calendar-highlighted-bg); padding: @calendar-caption-padding (@calendar-caption-buttons-size + @calendar-caption-padding * 2); margin-bottom: @calendar-caption-padding;
+        box-sizing: border-box; height: (@calendar-caption-buttons-size + @calendar-caption-padding * 2); ._bg-var(calendar-highlighted-bg); padding: @calendar-caption-padding (@calendar-caption-buttons-size + @calendar-caption-padding * 2); margin-bottom: @calendar-caption-padding;
 
-        button { white-space: nowrap; text-overflow: ellipsis; line-height: (@calendar-caption-buttons-size - @calendar-caption-buttons-padding * 2); max-width: @calendar-caption-buttons-max-width; height: @calendar-caption-buttons-size; background-color: @no-color; overflow: hidden; border: 0; }
+        button { font-size: @font-16; white-space: nowrap; text-overflow: ellipsis; line-height: (@calendar-caption-buttons-size - @calendar-caption-buttons-padding * 2); max-width: @calendar-caption-buttons-max-width; height: @calendar-caption-buttons-size; background-color: @no-color; overflow: hidden; border: 0; }
         & > button {
             width: @calendar-caption-buttons-size; padding: @calendar-caption-buttons-padding; display: block;
 
@@ -196,7 +196,7 @@
 
             &-details {
                 & > button { border-radius: @round; }
-                li { border-radius: @round; }
+                li { box-sizing: border-box; border-radius: @round; }
             }
         }
 
@@ -258,7 +258,7 @@
                 &:not(:last-child) { margin-bottom: @calendar-details-list-item-margin; }
                 & > i { font-size: @calendar-details-time-font-size; font-style: normal; line-height: normal; ._bg-var(btn-bg); padding: @calendar-details-time-padding (@calendar-details-time-padding * 2); margin-right: (@calendar-details-list-padding / 2); display: inline-block; border-radius: @calendar-details-content-radius; }
                 & > a {
-                    text-decoration: underline;
+                    ._color-var(black); text-decoration: underline;
 
                     &:hover { text-decoration: none; }
                 }

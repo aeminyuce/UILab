@@ -60,6 +60,8 @@ ui.calendar = {
     stylesToday: 'ui-theme-sub ui-fill-dark-100',
     stylesPickerDay: 'ui-theme-red ui-fill-dark-100',
 
+    stylesDetailScroll: 'ui-scrollbar-faded',
+
     // icons
     prevIcon: 'arrow-left', // header's previous button
     nextIcon: 'arrow-right', // header's next button
@@ -468,7 +470,7 @@ ui.calendar = {
                                                 '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">' +
                                                     '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.backIcon + '"/></svg>' +
                                                 '</button>' +
-                                                '<ul>' + details + '</ul>' +
+                                                '<ul class="' + ui.calendar.stylesDetailScroll + '">' + details + '</ul>' +
                                             '</div>';
 
                                 ui.addClass(container, ui.calendar.nameHasDetails); // enable buttons click event
