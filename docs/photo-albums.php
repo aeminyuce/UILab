@@ -8,30 +8,30 @@
                         <svg class="ui-icon ui-right"><use href="#plus"/></svg>
                     </a>
                     <span class="ui-sp-30"></span>
-                    <ul class="ui-list-unstyled ui-hover-r-more-2nd inline-ui-block-2nd ui-font-16 ui-list-spacer-30 ui-padding-10 ui-ease-2nd-layout">
+                    <ul class="ui-list-unstyled ui-hover-r-more-2nd ui-inline-block-2nd ui-font-16 ui-list-spacer-30 ui-padding-10 ui-ease-2nd-layout">
                         <li><a class="ui-current" href="#">Summer Holiday</a></li>
-                        <li><a href="#">Autumn Comes</a></li>
-                        <li><a href="#">Travelling</a></li>
-                        <li><a href="#">Winter Concerts</a></li>
-                        <li><a href="#">Working Hard</a></li>
-                        <li><a href="#">Hobbies</a></li>
+                        <li><a class="ui-link" href="#">Autumn Comes</a></li>
+                        <li><a class="ui-link" href="#">Travelling</a></li>
+                        <li><a class="ui-link" href="#">Winter Concerts</a></li>
+                        <li><a class="ui-link" href="#">Working Hard</a></li>
+                        <li><a class="ui-link" href="#">Hobbies</a></li>
                     </ul>
                     <span class="ui-sp-30"></span>
-                    <ul class="ui-list-unstyled ui-hover-r-more-2nd inline-ui-block-2nd ui-list-spacer-15 ui-font-16 ui-color-black-50 adding-10 ui-icons-sm ui-icons-margin-10-r ui-ease-2nd-layout">
+                    <ul class="ui-list-unstyled ui-hover-r-more-2nd ui-inline-block-2nd ui-list-spacer-15 ui-font-16 ui-color-black-50 adding-10 ui-icons-sm ui-icons-margin-10-r ui-ease-2nd-layout">
                         <li>
-                            <a href="#">
+                            <a class="ui-link" href="#">
                                 <svg class="ui-icon"><use href="#marker"/></svg>
                                 Locations
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a class="ui-link" href="#">
                                 <svg class="ui-icon"><use href="#users"/></svg>
                                 Friends
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a class="ui-link" href="#">
                                 <svg class="ui-icon"><use href="#settings"/></svg>
                                 Settings
                             </a>
@@ -54,7 +54,7 @@
 
                             <ul class="ui-photo-gallery ui-has-cover ui-block-2nd ui-ease-photo-gallery ui-theme-sub">
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_03.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_03.jpg">
                                         <img src="img/image_03.jpg" alt="">
                                         <span class="ui-font-readable">
                                             <span class="ui-scroll-v ui-margin-30 ui-set-absolute ui-set-all">
@@ -70,67 +70,67 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_01.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_01.jpg">
                                         <img src="img/image_01.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_03.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_03.jpg">
                                         <img src="img/image_03.jpg" alt="">
                                         <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_04.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_04.jpg">
                                         <img src="img/image_04.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_05.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_05.jpg">
                                         <img src="img/image_05.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_06.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_06.jpg">
                                         <img src="img/image_06.jpg" alt="">
                                         <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_07.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_07.jpg">
                                         <img src="img/image_07.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_08.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_08.jpg">
                                         <img src="img/image_08.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_09.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_09.jpg">
                                         <img src="img/image_09.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_10.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_10.jpg">
                                         <img src="img/image_10.jpg" alt="">
                                         <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_01.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_01.jpg">
                                         <img src="img/image_01.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_02.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_02.jpg">
                                         <img src="img/image_02.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                     </a>
@@ -150,7 +150,7 @@
 
                             <ul class="ui-photo-gallery ui-has-cover ui-block-2nd ui-ease-photo-gallery ui-theme-sub">
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_06.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_06.jpg">
                                         <img src="img/image_06.jpg" alt="">
                                         <span class="ui-font-readable">
                                             <span class="ui-scroll-v ui-margin-30 ui-set-absolute ui-set-all">
@@ -166,67 +166,67 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_02.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_02.jpg">
                                         <img src="img/image_02.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_03.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_03.jpg">
                                         <img src="img/image_03.jpg" alt="">
                                         <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_04.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_04.jpg">
                                         <img src="img/image_04.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_05.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_05.jpg">
                                         <img src="img/image_05.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_06.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_06.jpg">
                                         <img src="img/image_06.jpg" alt="">
                                         <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_07.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_07.jpg">
                                         <img src="img/image_07.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_08.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_08.jpg">
                                         <img src="img/image_08.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_09.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_09.jpg">
                                         <img src="img/image_09.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_10.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_10.jpg">
                                         <img src="img/image_10.jpg" alt="">
                                         <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_01.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_01.jpg">
                                         <img src="img/image_01.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="ui-img ui-has-info" href="img/image_02.jpg">
+                                    <a class="ui-photo ui-has-info" href="img/image_02.jpg">
                                         <img src="img/image_02.jpg" alt="">
                                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                     </a>

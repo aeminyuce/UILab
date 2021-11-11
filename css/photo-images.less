@@ -23,8 +23,10 @@
     & > * {
         &:not(.ui-btn):not(:first-child) { margin-left: -@img-photo-over-size; }
     }
+    & > a { text-decoration: none; }
+
     [class*="ui-img-photo"] {
-        ._border-color-var(body-bg);
+        &:not([class*="ui-stroke"]) { ._border-color-var(body-bg); }
 
         .ui-dropdown & { ._border-color-var(highlighted); }
         .ui-card & { ._border-color-var(card-bg); }
@@ -35,7 +37,7 @@
     text-align: center; vertical-align: middle; position: relative;
 
     &:not(img) {
-        ._bg-var(img-photo-bg); display: inline-block;
+        text-decoration: none; ._bg-var(img-photo-bg); display: inline-block;
 
         & > span,& > svg { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
     }

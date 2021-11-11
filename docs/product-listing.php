@@ -24,17 +24,17 @@
 
                         <h5 class="ui-h5 ui-margin-15-b ui-color-black-50">CATEGORIES</h5>
                         <ul class="ui-list-unstyled ui-list-spacer-10">
-                            <li><a href="#">Headphones</a></li>
+                            <li><a class="ui-link" href="#">Headphones</a></li>
                             <li>
-                                <a href="#"><b>Over-Ear Headphones</b></a>
+                                <a class="ui-link" href="#"><b>Over-Ear Headphones</b></a>
                                 <ul class="ui-list-unstyled ui-font-hoverline-2nd ui-padding-15-l">
-                                    <li><a href="#">Sony</a></li>
-                                    <li><a href="#">Logitech</a></li>
-                                    <li><a href="#">JBL</a></li>
-                                    <li><a href="#">Beats</a></li>
-                                    <li><a href="#">Pioneer</a></li>
-                                    <li><a href="#">Philips</a></li>
-                                    <li><a href="#">Sony</a></li>
+                                    <li><a class="ui-link" href="#">Sony</a></li>
+                                    <li><a class="ui-link" href="#">Logitech</a></li>
+                                    <li><a class="ui-link" href="#">JBL</a></li>
+                                    <li><a class="ui-link" href="#">Beats</a></li>
+                                    <li><a class="ui-link" href="#">Pioneer</a></li>
+                                    <li><a class="ui-link" href="#">Philips</a></li>
+                                    <li><a class="ui-link" href="#">Sony</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -207,7 +207,7 @@
                                 </div>
                                 <svg class="ui-icon ui-icon-sm ui-margin-5-r ui-margin-2-b"><use href="#chart-line"/></svg>
                                 <span class="ui-font-16">Current prices <b>12% lower</b> than, average prices!</span>
-                                <ul class="ui-list-unstyled ui-color-black-25 ui-margin-15-t inline-ui-block-2nd">
+                                <ul class="ui-list-unstyled ui-color-black-25 ui-margin-15-t ui-inline-block-2nd">
                                     <li>
                                         <b class="ui-circle ui-padding-5 ui-margin-4-l ui-margin-5-r" style="background: hsl(30, 100%, 63%);"></b>
                                         <span>Headphones Averages</span>

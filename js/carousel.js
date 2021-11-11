@@ -29,7 +29,7 @@ ui.carousel = {
     nameGalleryDetailLoader: 'ui-detail-loader',
 
     nameGalleryThumbs: 'ui-thumbs',
-    nameGalleryImg: 'ui-img',
+    nameGalleryImg: 'ui-photo',
 
     // helper classnames
     nameShow: 'ui-show',

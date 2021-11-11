@@ -29,10 +29,10 @@
                 <div class="ui-uploader-list">
                     <svg class="ui-icon ui-icon-xxl"><use href="#images-plus"/></svg>
                     <ul>
-                        <li data-ui-img="img/house_01.jpg" data-ui-id="1" data-ui-tag="Exterior"></li>
-                        <li data-ui-img="img/house_02.jpg" data-ui-id="2" data-ui-tag=""></li>
-                        <li data-ui-img="img/house_03.jpg" data-ui-id="3" data-ui-tag="Garden"></li>
-                        <li data-ui-img="img/house_04.jpg" data-ui-id="4" data-ui-tag="Exterior"></li>
+                        <li data-ui-photo="img/house_01.jpg" data-ui-id="1" data-ui-tag="Exterior"></li>
+                        <li data-ui-photo="img/house_02.jpg" data-ui-id="2" data-ui-tag=""></li>
+                        <li data-ui-photo="img/house_03.jpg" data-ui-id="3" data-ui-tag="Garden"></li>
+                        <li data-ui-photo="img/house_04.jpg" data-ui-id="4" data-ui-tag="Exterior"></li>
                     </ul>
                 </div>
 

@@ -141,7 +141,7 @@
         list-style: none;
 
         & > li {
-            line-height: @dropdown-list-line-height; min-height: @dropdown-list-min-height;
+            box-sizing: border-box; line-height: @dropdown-list-line-height; min-height: @dropdown-list-min-height;
 
             &,a,& > label { font-size: @font-16; }
 
@@ -151,7 +151,7 @@
                 &:not(:last-child) { ._border-var(@dir: border-bottom; @var: dropdown-list-border); }
 
                 &,a,& > label { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; display: block; }
-                & > a { padding: @dropdown-list-padding; margin: -@dropdown-list-padding; }
+                & > a { ._color-var(black); word-wrap: break-word; text-decoration: none; padding: @dropdown-list-padding; margin: -@dropdown-list-padding; }
                 & > label {
                     padding: @dropdown-list-padding; margin: -@dropdown-list-padding; overflow: hidden; position: relative; cursor: pointer;
 

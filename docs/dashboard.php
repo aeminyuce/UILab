@@ -249,14 +249,30 @@
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                         </button>
                         <ul class="ui-dropdown-menu ui-list-column-2 ui-has-icon ui-round ui-shadow-lg">
-                            <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
-                            <li><a href="#"><b class="ui-list-icon">258</b> Expert</a></li>
-                            <li><a href="#"><b class="ui-list-icon">49</b> On Audit</a></li>
-                            <li><a href="#"><b class="ui-list-icon">68</b> Delayed</a></li>
-                            <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
-                            <li><a href="#"><b class="ui-list-icon">258</b> Expert</a></li>
-                            <li><a href="#"><b class="ui-list-icon">49</b> On Audit</a></li>
-                            <li><a href="#"><b class="ui-list-icon">68</b> Delayed</a></li>
+                            <li>
+                                <a class="ui-link" href="#"><b class="ui-list-icon">23</b> Waiting</a>
+                            </li>
+                            <li>
+                                <a class="ui-link" href="#"><b class="ui-list-icon">258</b> Expert</a>
+                            </li>
+                            <li>
+                                <a class="ui-link" href="#"><b class="ui-list-icon">49</b> On Audit</a>
+                            </li>
+                            <li>
+                                <a class="ui-link" href="#"><b class="ui-list-icon">68</b> Delayed</a>
+                            </li>
+                            <li>
+                                <a class="ui-link" href="#"><b class="ui-list-icon">23</b> Waiting</a>
+                            </li>
+                            <li>
+                                <a class="ui-link" href="#"><b class="ui-list-icon">258</b> Expert</a>
+                            </li>
+                            <li>
+                                <a class="ui-link" href="#"><b class="ui-list-icon">49</b> On Audit</a>
+                            </li>
+                            <li>
+                                <a class="ui-link" href="#"><b class="ui-list-icon">68</b> Delayed</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -270,10 +286,10 @@
                             <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
                                 <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-border-b ui-ease-1st-btn">
-                                    <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active" data-ui-tooltip data-ui-only="desktop" title="Favorites">
+                                    <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active" title="Favorites">
                                         <svg class="ui-icon"><use href="#star"/></svg>
                                     </button>
-                                    <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="History">
+                                    <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b" title="History">
                                         <svg class="ui-icon"><use href="#history"/></svg>
                                     </button>
                                 </div>
@@ -283,23 +299,29 @@
                                         <li>
                                             Lorem ipsum dolor sit amet.
                                             <span class="ui-photos-holder ui-margin-5-t ui-hover-scale-more-2nd ui-ease-2nd-layout">
-                                                <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image.jpg" alt=""></a>
-                                                <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image2.jpg" alt=""></a>
-                                                <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image3.jpg" alt=""></a>
+                                                <a href="#">
+                                                    <img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image.jpg" alt="">
+                                                </a>
+                                                <a href="#">
+                                                    <img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image2.jpg" alt="">
+                                                </a>
+                                                <a href="#">
+                                                    <img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image3.jpg" alt="">
+                                                </a>
                                                 <a class="ui-btn ui-no-margin ui-circle ui-ease-btn" href="#">+12</a>
                                             </span>
                                         </li>
                                         <li>
                                             Lorem ipsum dolor sit amet.
                                             <span class="ui-photo-gallery ui-margin-5-t ui-ease-photo-gallery">
-                                                <a class="ui-img ui-margin-1-h ui-round" href="img/image_01.jpg"><img src="img/image_01.jpg" height="38" alt=""></a>
-                                                <a class="ui-img ui-margin-1-h ui-round" href="img/image_02.jpg"><img src="img/image_02.jpg" height="38" alt=""></a>
-                                                <a class="ui-img ui-margin-1-h ui-round" href="img/image_03.jpg"><img src="img/image_03.jpg" height="38" alt=""></a>
-                                                <a class="ui-img ui-margin-1-h ui-round" href="img/image_04.jpg"><img src="img/image_04.jpg" height="38" alt=""></a>
-                                                <a class="ui-img ui-margin-1-h ui-round" href="img/image_05.jpg"><img src="img/image_05.jpg" height="38" alt=""></a>
-                                                <a class="ui-img ui-margin-1-h ui-round" href="img/image_06.jpg"><img src="img/image_06.jpg" height="38" alt=""></a>
-                                                <a class="ui-img ui-margin-1-h ui-round" href="img/image_07.jpg"><img src="img/image_07.jpg" height="38" alt=""></a>
-                                                <a class="ui-img ui-margin-1-h ui-round" href="img/image_08.jpg"><img src="img/image_08.jpg" height="38" alt=""></a>
+                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_01.jpg"><img src="img/image_01.jpg" height="38" alt=""></a>
+                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_02.jpg"><img src="img/image_02.jpg" height="38" alt=""></a>
+                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_03.jpg"><img src="img/image_03.jpg" height="38" alt=""></a>
+                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_04.jpg"><img src="img/image_04.jpg" height="38" alt=""></a>
+                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_05.jpg"><img src="img/image_05.jpg" height="38" alt=""></a>
+                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_06.jpg"><img src="img/image_06.jpg" height="38" alt=""></a>
+                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_07.jpg"><img src="img/image_07.jpg" height="38" alt=""></a>
+                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_08.jpg"><img src="img/image_08.jpg" height="38" alt=""></a>
                                             </span>
                                         </li>
                                         <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
@@ -346,13 +368,13 @@
                             <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
                                 <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-border-b ui-ease-1st-btn">
-                                    <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active" data-ui-tooltip data-ui-only="desktop" title="Notifications">
+                                    <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active" title="Notifications">
                                         <svg class="ui-icon"><use href="#bell"/></svg>
                                     </button>
-                                    <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="Notes">
+                                    <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b" title="Notes">
                                         <svg class="ui-icon"><use href="#pencil-write"/></svg>
                                     </button>
-                                    <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b" data-ui-tooltip data-ui-only="desktop" title="Started Jobs">
+                                    <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b" title="Started Jobs">
                                         <svg class="ui-icon"><use href="#hourglass-start"/></svg>
                                     </button>
                                 </div>
@@ -1070,15 +1092,15 @@
                                                 <li>
                                                     Lorem ipsum dolor sit amet.
                                                     <span class="ui-photo-gallery ui-margin-5-t ui-ease-photo-gallery">
-                                                        <a class="ui-img ui-margin-1-h ui-round" href="img/image_01.jpg"><img src="img/image_01.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h ui-round" href="img/image_02.jpg"><img src="img/image_02.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h ui-round" href="img/image_03.jpg"><img src="img/image_03.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h ui-round" href="img/image_04.jpg"><img src="img/image_04.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h ui-round" href="img/image_05.jpg"><img src="img/image_05.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h ui-round" href="img/image_06.jpg"><img src="img/image_06.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h ui-round" href="img/image_07.jpg"><img src="img/image_07.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h ui-round" href="img/image_08.jpg"><img src="img/image_08.jpg" height="38" alt=""></a>
-                                                        <a class="ui-img ui-margin-1-h ui-round" href="img/image_09.jpg"><img src="img/image_09.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_01.jpg"><img src="img/image_01.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_02.jpg"><img src="img/image_02.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_03.jpg"><img src="img/image_03.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_04.jpg"><img src="img/image_04.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_05.jpg"><img src="img/image_05.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_06.jpg"><img src="img/image_06.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_07.jpg"><img src="img/image_07.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_08.jpg"><img src="img/image_08.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_09.jpg"><img src="img/image_09.jpg" height="38" alt=""></a>
                                                     </span>
                                                 </li>
                                                 <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>

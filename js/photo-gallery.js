@@ -9,7 +9,7 @@ ui.photoGallery = {
     targetGallery: 'ui-photo-gallery',
     targetPreview: 'ui-photo-preview',
 
-    targetImages: 'ui-img',
+    targetImages: 'ui-photo',
 
     // main classnames
     nameGalleryPassive: 'ui-photo-gallery-passive',
@@ -24,7 +24,7 @@ ui.photoGallery = {
     namePreviewInfo: 'ui-preview-info',
     namePreviewZoom: 'ui-preview-zoom',
 
-    nameImgVer: 'ui-img-v',
+    nameImgVer: 'ui-photo-v',
 
     // helper classnames
     nameOpen: 'ui-open',

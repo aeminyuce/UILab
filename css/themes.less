@@ -60,7 +60,7 @@
         }
     }
 
-    .ui-theme-@{name}.ui-stroke,.ui-theme-@{name} .ui-stroke:not([class*="ui-theme-"]) { border-color: @color; }
+    .ui-theme-@{name}.ui-stroke,.ui-theme-@{name} .ui-stroke:not([class*="ui-theme-"]) { border-color: @color !important; }
 }
 
 & when (@referenceCompiling = false) { // not compiled when reference importing

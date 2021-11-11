@@ -8,7 +8,7 @@ ui.imageUploader = {
     // targets
     target: 'ui-image-uploader',
 
-    targetImages: 'ui-img',
+    targetImages: 'ui-photo',
     targetNames: 'ui-name',
     targetInfos: 'ui-info',
     targetTags: 'ui-tag',
@@ -56,7 +56,7 @@ ui.imageUploader = {
 
     // data attributes
     dataID: 'data-ui-id',
-    dataImg: 'data-ui-img',
+    dataImg: 'data-ui-photo',
     dataTag: 'data-ui-tag',
 
     // formData API names

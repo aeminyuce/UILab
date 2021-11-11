@@ -375,7 +375,7 @@
                                 <span class="ui-color-black-50 ui-font-readable">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
-                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
+                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block ui-inline-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 30, 2019</b>
 
@@ -399,7 +399,7 @@
                                 <span class="ui-color-black-50 ui-font-readable">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
-                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
+                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block ui-inline-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 21, 2019</b>
 
@@ -423,7 +423,7 @@
                                 <span class="ui-color-black-50 ui-font-readable">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
-                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
+                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block ui-inline-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 09, 2019</b>
 
@@ -447,7 +447,7 @@
                                 <span class="ui-color-black-50 ui-font-readable">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
-                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
+                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block ui-inline-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 01, 2019</b>
 
@@ -480,7 +480,7 @@
                                 <span class="ui-color-black-50 ui-font-readable">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
-                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
+                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block ui-inline-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 21, 2019</b>
 
@@ -504,7 +504,7 @@
                                 <span class="ui-color-black-50 ui-font-readable">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
-                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
+                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block ui-inline-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 09, 2019</b>
 
@@ -528,7 +528,7 @@
                                 <span class="ui-color-black-50 ui-font-readable">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
-                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
+                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block ui-inline-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 01, 2019</b>
 
@@ -552,7 +552,7 @@
                                 <span class="ui-color-black-50 ui-font-readable">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
-                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
+                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block ui-inline-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 30, 2019</b>
 
@@ -585,7 +585,7 @@
                                 <span class="ui-color-black-50 ui-font-readable">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
-                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
+                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block ui-inline-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 21, 2019</b>
 
@@ -609,7 +609,7 @@
                                 <span class="ui-color-black-50 ui-font-readable">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
-                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
+                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block ui-inline-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 30, 2019</b>
 
@@ -633,7 +633,7 @@
                                 <span class="ui-color-black-50 ui-font-readable">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
-                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
+                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block ui-inline-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 01, 2019</b>
 
@@ -657,7 +657,7 @@
                                 <span class="ui-color-black-50 ui-font-readable">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
-                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block inline-ui-block-1st">
+                            <span class="ui-font-12 ui-color-black-25 ui-border-t ui-padding-10 ui-block ui-inline-block-1st">
                                 <svg class="ui-icon ui-margin-2-r"><use href="#clock"/></svg>
                                 <b class="ui-margin-10-r">SEPTEMBER 09, 2019</b>
 
@@ -695,7 +695,7 @@
 
                 <ul class="ui-photo-gallery ui-block-2nd ui-has-cover ui-ease-photo-gallery">
                     <li>
-                        <a class="ui-img ui-has-info ui-show-info" href="img/agriculture/md01.jpg">
+                        <a class="ui-photo ui-has-info ui-show-info" href="img/agriculture/md01.jpg">
                             <img src="img/agriculture/md01.jpg" alt="">
                             <span class="ui-font-18 ui-font-readable">
                                 <span class="ui-scroll-v ui-margin-20 ui-set-absolute ui-set-all">
@@ -709,37 +709,37 @@
                         </a>
                     </li>
                     <li>
-                        <a class="ui-img ui-has-info" href="img/agriculture/md02.jpg">
+                        <a class="ui-photo ui-has-info" href="img/agriculture/md02.jpg">
                             <img src="img/agriculture/md02.jpg" alt="">
                             <span class="ui-font-18 ui-theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                         </a>
                     </li>
                     <li>
-                        <a class="ui-img ui-has-info" href="img/agriculture/md03.jpg">
+                        <a class="ui-photo ui-has-info" href="img/agriculture/md03.jpg">
                             <img src="img/agriculture/md03.jpg" alt="">
                             <span class="ui-font-18 ui-fill-dark-100">Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                         </a>
                     </li>
                     <li>
-                        <a class="ui-img ui-has-info" href="img/agriculture/md04.jpg">
+                        <a class="ui-photo ui-has-info" href="img/agriculture/md04.jpg">
                             <img src="img/agriculture/md04.jpg" alt="">
                             <span class="ui-font-18 ui-theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
                     <li>
-                        <a class="ui-img ui-has-info" href="img/agriculture/md05.jpg">
+                        <a class="ui-photo ui-has-info" href="img/agriculture/md05.jpg">
                             <img src="img/agriculture/md05.jpg" alt="">
                             <span class="ui-font-18 ui-fill-dark-100">Consectetur adipiscing elit. Integer eu dignissim libero.</span>
                         </a>
                     </li>
                     <li>
-                        <a class="ui-img ui-has-info" href="img/agriculture/md06.jpg">
+                        <a class="ui-photo ui-has-info" href="img/agriculture/md06.jpg">
                             <img class="" src="img/agriculture/md06.jpg" alt="">
                             <span class="ui-font-18 ui-theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
                     <li>
-                        <a class="ui-img ui-has-info" href="img/agriculture/md07.jpg">
+                        <a class="ui-photo ui-has-info" href="img/agriculture/md07.jpg">
                             <img class="ui-invert-img" src="img/agriculture/md07.jpg" alt="">
                             <span class="ui-font-18 ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>

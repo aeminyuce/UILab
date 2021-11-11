@@ -48,7 +48,7 @@
 		& > .ui-slide-content {
 			flex-grow: 1;
 
-			img.ui-img { width: 100%; height: auto; }
+			img.ui-photo { width: 100%; height: auto; }
 		}
 	}
 
@@ -82,8 +82,9 @@
 		.ui-detail {
 			min-height: @carousel-gallery-detail-min-height; position: relative;
 
-			img { display: block; position: relative; z-index: 2; }
+			img { display: block; border: 0; position: relative; z-index: 2; }
 			img,&.ui-detail-holder img { width: 100%; display: inline-block; position: relative; z-index: 1; cursor: pointer; }
+
 			.ui-desktop &:not(.ui-detail-loader) {
 				img {
 					&:hover { opacity: @carousel-gallery-detail-hover-opacity; }
@@ -107,7 +108,7 @@
 		.ui-thumbs {
 			text-align: center; margin: @carousel-thumbs-margin;
 
-			.ui-img {
+			.ui-photo {
 				width: 100%; height: auto; background-clip: content-box; border: solid @carousel-thumbs-border @no-color; cursor: pointer;
 
 				&.ui-selected { border-color: @carousel-thumbs-selected-color; }

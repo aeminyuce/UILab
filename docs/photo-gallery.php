@@ -9,42 +9,42 @@
                 <div class="ui-padding-30-b">
                     <div class="ui-row ui-no-fluid ui-photo-gallery ui-ease-photo-gallery">
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
-                            <a class="ui-img ui-margin-1-h ui-round" href="img/image_01.jpg">
+                            <a class="ui-photo ui-margin-1-h ui-round" href="img/image_01.jpg">
                                 <img class="ui-img-fluid" src="img/image_01.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
-                            <a class="ui-img ui-margin-1-h ui-round" href="img/image_02.jpg">
+                            <a class="ui-photo ui-margin-1-h ui-round" href="img/image_02.jpg">
                                 <img class="ui-img-fluid" src="img/image_02.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
-                            <a class="ui-img ui-margin-1-h ui-round" href="img/image_03.jpg">
+                            <a class="ui-photo ui-margin-1-h ui-round" href="img/image_03.jpg">
                                 <img class="ui-img-fluid" src="img/image_03.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
-                            <a class="ui-img ui-margin-1-h ui-round" href="img/image_04.jpg">
+                            <a class="ui-photo ui-margin-1-h ui-round" href="img/image_04.jpg">
                                 <img class="ui-img-fluid" src="img/image_04.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
-                            <a class="ui-img ui-margin-1-h ui-round" href="img/image_05.jpg">
+                            <a class="ui-photo ui-margin-1-h ui-round" href="img/image_05.jpg">
                                 <img class="ui-img-fluid" src="img/image_05.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
-                            <a class="ui-img ui-margin-1-h ui-round" href="img/image_06.jpg">
+                            <a class="ui-photo ui-margin-1-h ui-round" href="img/image_06.jpg">
                                 <img class="ui-img-fluid" src="img/image_06.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
-                            <a class="ui-img ui-margin-1-h ui-round" href="img/image_07.jpg">
+                            <a class="ui-photo ui-margin-1-h ui-round" href="img/image_07.jpg">
                                 <img class="ui-img-fluid" src="img/image_07.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-3 ui-col-sm-4 ui-col-xs-6">
-                            <a class="ui-img ui-margin-1-h ui-round" href="img/image_08.jpg">
+                            <a class="ui-photo ui-margin-1-h ui-round" href="img/image_08.jpg">
                                 <img class="ui-img-fluid" src="img/image_08.jpg" alt="">
                             </a>
                         </div>
@@ -57,32 +57,32 @@
                 <div class="ui-padding-30-b">
                     <div class="ui-row ui-no-fluid ui-photo-gallery ui-ease-photo-gallery">
                         <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
-                            <a class="ui-img ui-margin-1-h ui-round" href="img/movie_01.jpg">
+                            <a class="ui-photo ui-margin-1-h ui-round" href="img/movie_01.jpg">
                                 <img class="ui-img-fluid" src="img/movie_01.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
-                            <a class="ui-img ui-margin-1-h ui-round" href="img/movie_02.jpg">
+                            <a class="ui-photo ui-margin-1-h ui-round" href="img/movie_02.jpg">
                                 <img class="ui-img-fluid" src="img/movie_02.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
-                            <a class="ui-img ui-margin-1-h ui-round" href="img/movie_03.jpg">
+                            <a class="ui-photo ui-margin-1-h ui-round" href="img/movie_03.jpg">
                                 <img class="ui-img-fluid" src="img/movie_03.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
-                            <a class="ui-img ui-margin-1-h ui-round" href="img/movie_04.jpg">
+                            <a class="ui-photo ui-margin-1-h ui-round" href="img/movie_04.jpg">
                                 <img class="ui-img-fluid" src="img/movie_04.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
-                            <a class="ui-img ui-margin-1-h ui-round" href="img/movie_05.jpg">
+                            <a class="ui-photo ui-margin-1-h ui-round" href="img/movie_05.jpg">
                                 <img class="ui-img-fluid" src="img/movie_05.jpg" alt="">
                             </a>
                         </div>
                         <div class="ui-col-2 ui-col-sm-4 ui-col-xs-4">
-                            <a class="ui-img ui-margin-1-h ui-round" href="img/movie_06.jpg">
+                            <a class="ui-photo ui-margin-1-h ui-round" href="img/movie_06.jpg">
                                 <img class="ui-img-fluid" src="img/movie_06.jpg" alt="">
                             </a>
                         </div>
@@ -93,61 +93,61 @@
                 <div class="ui-padding-30-b">
                     <ul class="ui-photo-gallery ui-block-2nd ui-ease-photo-gallery ui-theme-sub">
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_01.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_01.jpg">
                                 <img src="img/image_01.jpg" alt="">
                                 <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_02.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_02.jpg">
                                 <img src="img/image_02.jpg" alt="">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_03.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_03.jpg">
                                 <img src="img/image_03.jpg" alt="">
                                 <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_04.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_04.jpg">
                                 <img src="img/image_04.jpg" alt="">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_05.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_05.jpg">
                                 <img src="img/image_05.jpg" alt="">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_06.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_06.jpg">
                                 <img src="img/image_06.jpg" alt="">
                                 <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_07.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_07.jpg">
                                 <img src="img/image_07.jpg" alt="">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_08.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_08.jpg">
                                 <img src="img/image_08.jpg" alt="">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_09.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_09.jpg">
                                 <img src="img/image_09.jpg" alt="">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_10.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_10.jpg">
                                 <img src="img/image_10.jpg" alt="">
                                 <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                             </a>
@@ -158,7 +158,7 @@
 
                     <ul class="ui-photo-gallery ui-has-cover ui-block-2nd ui-ease-photo-gallery ui-theme-sub">
                         <li>
-                            <a class="ui-img ui-has-info ui-show-info" href="img/image_03.jpg">
+                            <a class="ui-photo ui-has-info ui-show-info" href="img/image_03.jpg">
                                 <img src="img/image_03.jpg" alt="">
                                 <span class="ui-font-readable">
                                     <span class="ui-scroll-v ui-margin-15 ui-set-absolute ui-set-all">
@@ -177,67 +177,67 @@
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_02.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_02.jpg">
                                 <img src="img/image_02.jpg" alt="">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_03.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_03.jpg">
                                 <img src="img/image_03.jpg" alt="">
                                 <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_04.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_04.jpg">
                                 <img src="img/image_04.jpg" alt="">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_05.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_05.jpg">
                                 <img src="img/image_05.jpg" alt="">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_06.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_06.jpg">
                                 <img src="img/image_06.jpg" alt="">
                                 <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_07.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_07.jpg">
                                 <img src="img/image_07.jpg" alt="">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_08.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_08.jpg">
                                 <img src="img/image_08.jpg" alt="">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_09.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_09.jpg">
                                 <img src="img/image_09.jpg" alt="">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_10.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_10.jpg">
                                 <img src="img/image_10.jpg" alt="">
                                 <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_01.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_01.jpg">
                                 <img src="img/image_01.jpg" alt="">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                             </a>
                         </li>
                         <li>
-                            <a class="ui-img ui-has-info" href="img/image_02.jpg">
+                            <a class="ui-photo ui-has-info" href="img/image_02.jpg">
                                 <img src="img/image_02.jpg" alt="">
                                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                             </a>
@@ -250,33 +250,33 @@
                     <div class="ui-carousel ui-photo-gallery ui-ease-photo-gallery" data-ui-col="4" data-ui-col-md="3" data-ui-col-sm="2" data-ui-col-xs="2">
                         <div class="ui-carousel-slider ui-ease-layout ui-ease-slow ui-ease-in-out">
                             <div class="ui-slide-content">
-                                <a class="ui-img ui-shadow ui-ease-default" href="img/image_09.jpg">
-                                    <img class="ui-img" src="img/image_09.jpg" alt="">
+                                <a class="ui-photo ui-shadow ui-ease-default" href="img/image_09.jpg">
+                                    <img class="ui-photo" src="img/image_09.jpg" alt="">
                                 </a>
                             </div>
                             <div class="ui-slide-content">
-                                <a class="ui-img ui-shadow ui-ease-default" href="img/image_07.jpg">
-                                    <img class="ui-img" src="img/image_07.jpg" alt="">
+                                <a class="ui-photo ui-shadow ui-ease-default" href="img/image_07.jpg">
+                                    <img class="ui-photo" src="img/image_07.jpg" alt="">
                                 </a>
                             </div>
                             <div class="ui-slide-content">
-                                <a class="ui-img ui-shadow ui-ease-default" href="img/image_08.jpg">
-                                    <img class="ui-img" src="img/image_05.jpg" alt="">
+                                <a class="ui-photo ui-shadow ui-ease-default" href="img/image_08.jpg">
+                                    <img class="ui-photo" src="img/image_05.jpg" alt="">
                                 </a>
                             </div>
                             <div class="ui-slide-content">
-                                <a class="ui-img ui-shadow ui-ease-default" href="img/image_04.jpg">
-                                    <img class="ui-img" src="img/image_04.jpg" alt="">
+                                <a class="ui-photo ui-shadow ui-ease-default" href="img/image_04.jpg">
+                                    <img class="ui-photo" src="img/image_04.jpg" alt="">
                                 </a>
                             </div>
                             <div class="ui-slide-content">
-                                <a class="ui-img ui-shadow ui-ease-default" href="img/image_01.jpg">
-                                    <img class="ui-img" src="img/image_01.jpg" alt="">
+                                <a class="ui-photo ui-shadow ui-ease-default" href="img/image_01.jpg">
+                                    <img class="ui-photo" src="img/image_01.jpg" alt="">
                                 </a>
                             </div>
                             <div class="ui-slide-content">
-                                <a class="ui-img ui-shadow ui-ease-default" href="img/image_06.jpg">
-                                    <img class="ui-img" src="img/image_06.jpg" alt="">
+                                <a class="ui-photo ui-shadow ui-ease-default" href="img/image_06.jpg">
+                                    <img class="ui-photo" src="img/image_06.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -305,31 +305,31 @@
                         <div id="ui-detail-carousel" class="ui-carousel ui-half-sized ui-thumbs ui-margin-10 ui-md-no-margin-h" data-ui-col="8" data-ui-col-md="6" data-ui-col-sm="5" data-ui-col-xs="3">
                             <div class="ui-carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow ui-photo-gallery-passive">
                                 <div class="ui-slide-content">
-                                    <img class="ui-img ui-ease-default ui-selected" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
+                                    <img class="ui-photo ui-ease-default ui-selected" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img ui-ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
+                                    <img class="ui-photo ui-ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img ui-ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
+                                    <img class="ui-photo ui-ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img ui-ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
+                                    <img class="ui-photo ui-ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img ui-ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
+                                    <img class="ui-photo ui-ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img ui-ease-default" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
+                                    <img class="ui-photo ui-ease-default" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img ui-ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
+                                    <img class="ui-photo ui-ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img ui-ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
+                                    <img class="ui-photo ui-ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
                                 </div>
                                 <div class="ui-slide-content">
-                                    <img class="ui-img ui-ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
+                                    <img class="ui-photo ui-ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
                                 </div>
                             </div>
                             <div class="ui-carousel-nav ui-ease-1st-btn">
@@ -358,19 +358,19 @@
                         <div id="ui-detail-carousel2" class="ui-thumbs">
                             <div class="ui-row ui-row-gap-xs ui-no-fluid ui-ease-2nd-layout">
                                 <div class="ui-col-5x">
-                                    <img class="ui-img ui-ease-default selected" src="img/image_01.jpg" data-ui-href="img/image_01.jpg" alt="">
+                                    <img class="ui-photo ui-ease-default selected" src="img/image_01.jpg" data-ui-href="img/image_01.jpg" alt="">
                                 </div>
                                 <div class="ui-col-5x">
-                                    <img class="ui-img ui-ease-default" src="img/image_02.jpg" data-ui-href="img/image_02.jpg" alt="">
+                                    <img class="ui-photo ui-ease-default" src="img/image_02.jpg" data-ui-href="img/image_02.jpg" alt="">
                                 </div>
                                 <div class="ui-col-5x">
-                                    <img class="ui-img ui-ease-default" src="img/image_03.jpg" data-ui-href="img/image_03.jpg" alt="">
+                                    <img class="ui-photo ui-ease-default" src="img/image_03.jpg" data-ui-href="img/image_03.jpg" alt="">
                                 </div>
                                 <div class="ui-col-5x">
-                                    <img class="ui-img ui-ease-default" src="img/image_04.jpg" data-ui-href="img/image_04.jpg" alt="">
+                                    <img class="ui-photo ui-ease-default" src="img/image_04.jpg" data-ui-href="img/image_04.jpg" alt="">
                                 </div>
                                 <div class="ui-col-5x">
-                                    <img class="ui-img ui-ease-default" src="img/image_05.jpg" data-ui-href="img/image_05.jpg" alt="">
+                                    <img class="ui-photo ui-ease-default" src="img/image_05.jpg" data-ui-href="img/image_05.jpg" alt="">
                                 </div>
                             </div>
                         </div>

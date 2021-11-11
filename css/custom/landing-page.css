@@ -190,7 +190,7 @@
   }
 }
 @media (max-width: 620px) {
-  .ui-photo-gallery > li .ui-img {
+  .ui-photo-gallery > li .ui-photo {
     height: 150px;
   }
 }
