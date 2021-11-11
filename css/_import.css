@@ -5244,26 +5244,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-required-msg:not(.ui-show) {
   display: none;
 }
-.error .ui-check,
-.error .ui-radio,
-.error .ui-switch {
-  background-color: hsla(0, 74%, 55%, 0.1) !important;
-  border-color: hsl(0, 74%, 55%) !important;
-}
-.error:not(.ui-form-holder):not(.ui-required-holder):not(.ui-form-hint) {
-  background-color: hsla(0, 74%, 55%, 0.1) !important;
-  border-color: hsl(0, 74%, 55%) !important;
-}
-.warning .ui-check,
-.warning .ui-radio,
-.warning .ui-switch {
-  background-color: hsla(42, 100%, 45%, 0.1) !important;
-  border-color: hsl(42, 100%, 45%) !important;
-}
-.warning:not(.ui-form-holder):not(.ui-required-holder):not(.ui-form-hint) {
-  background-color: hsla(42, 100%, 45%, 0.1) !important;
-  border-color: hsl(42, 100%, 45%) !important;
-}
 .ui-form-light {
   border-color: hsla(0, 0%, 100%, 0.175) !important;
 }
@@ -5378,24 +5358,24 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.ui-form-holder.error .ui-input,
-.ui-form-holder.error .ui-select,
-.ui-form-holder.error .ui-border,
-.ui-form-holder.error [class*="ui-border-"] {
+.ui-form-holder.ui-form-error .ui-input,
+.ui-form-holder.ui-form-error .ui-select,
+.ui-form-holder.ui-form-error .ui-border,
+.ui-form-holder.ui-form-error [class*="ui-border-"] {
   border-color: hsl(0, 74%, 55%) !important;
 }
-.ui-form-holder.error .ui-input,
-.ui-form-holder.error .ui-select {
+.ui-form-holder.ui-form-error .ui-input,
+.ui-form-holder.ui-form-error .ui-select {
   background-color: hsla(0, 74%, 55%, 0.1);
 }
-.ui-form-holder.warning .ui-input,
-.ui-form-holder.warning .ui-select,
-.ui-form-holder.warning .ui-border,
-.ui-form-holder.warning [class*="ui-border-"] {
+.ui-form-holder.ui-form-warning .ui-input,
+.ui-form-holder.ui-form-warning .ui-select,
+.ui-form-holder.ui-form-warning .ui-border,
+.ui-form-holder.ui-form-warning [class*="ui-border-"] {
   border-color: hsl(42, 100%, 45%) !important;
 }
-.ui-form-holder.warning .ui-input,
-.ui-form-holder.warning .ui-select {
+.ui-form-holder.ui-form-warning .ui-input,
+.ui-form-holder.ui-form-warning .ui-select {
   background-color: hsla(42, 100%, 45%, 0.1);
 }
 .ui-form-clear {
@@ -5419,10 +5399,10 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   margin-top: 5px;
   display: block;
 }
-.ui-form-hint.error {
+.ui-form-hint.ui-form-error {
   color: hsl(0, 74%, 55%);
 }
-.ui-form-hint.warning {
+.ui-form-hint.ui-form-warning {
   color: hsl(42, 100%, 45%);
 }
 .ui-form-icon-l > .ui-icon {
@@ -5545,6 +5525,26 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 }
 .ui-form-lg .ui-file.ui-border-dual > i {
   line-height: 44px;
+}
+.ui-form-error .ui-check,
+.ui-form-error .ui-radio,
+.ui-form-error .ui-switch {
+  background-color: hsla(0, 74%, 55%, 0.1) !important;
+  border-color: hsl(0, 74%, 55%) !important;
+}
+.ui-form-error:not(.ui-form-holder):not(.ui-required-holder):not(.ui-form-hint) {
+  background-color: hsla(0, 74%, 55%, 0.1) !important;
+  border-color: hsl(0, 74%, 55%) !important;
+}
+.ui-form-warning .ui-check,
+.ui-form-warning .ui-radio,
+.ui-form-warning .ui-switch {
+  background-color: hsla(42, 100%, 45%, 0.1) !important;
+  border-color: hsl(42, 100%, 45%) !important;
+}
+.ui-form-warning:not(.ui-form-holder):not(.ui-required-holder):not(.ui-form-hint) {
+  background-color: hsla(42, 100%, 45%, 0.1) !important;
+  border-color: hsl(42, 100%, 45%) !important;
 }
 [class*="ui-form-icon"] .ui-icon,
 [class*="ui-form-icon"] > button {
@@ -5722,11 +5722,11 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-textarea:not(.ui-toggle-textarea)[data-ui-counter] textarea {
   margin-bottom: 13px;
 }
-[data-ui-counter].error:before {
+[data-ui-counter].ui-form-error:before {
   color: hsl(0, 0%, 100%) !important;
   background-color: hsla(0, 74%, 71%, 0.65) !important;
 }
-[data-ui-counter].warning:before {
+[data-ui-counter].ui-form-warning:before {
   color: hsl(0, 0%, 100%) !important;
   background-color: hsla(42, 100%, 61%, 0.65) !important;
 }
@@ -6968,10 +6968,10 @@ header.ui-sticky-static {
   background: none !important;
   box-shadow: none !important;
 }
-.ui-modal-win.ui-modal-no-bg .error:not(.ui-form-holder) {
+.ui-modal-win.ui-modal-no-bg .ui-form-error:not(.ui-form-holder) {
   background-color: hsl(0, 74%, 55%) !important;
 }
-.ui-modal-win.ui-modal-no-bg .error .ui-icon {
+.ui-modal-win.ui-modal-no-bg .ui-form-error .ui-icon {
   color: hsl(0, 0%, 100%) !important;
 }
 .ui-modal-win:not(.ui-show-ease) .ui-modal-content {

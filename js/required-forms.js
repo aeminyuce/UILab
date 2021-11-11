@@ -25,9 +25,9 @@ ui.requiredForms = {
     nameSelect: 'ui-select',
     nameTextarea: 'ui-textarea',
     nameFile: 'ui-file',
-    nameIndeterminate: 'indeterminate',
+    nameIndeterminate: 'ui-indeterminate',
 
-    nameError: 'error',
+    nameError: 'ui-form-error',
 
     // values
     scrollingSpeed: 15,

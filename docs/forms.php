@@ -55,20 +55,20 @@
                         <label class="ui-form-info">Error Form</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="ui-input ui-round ui-border-dual ui-ease-form error">
+                        <div class="ui-input ui-round ui-border-dual ui-ease-form ui-form-error">
                             <input type="text" value="123456">
                         </div>
-                        <p class="ui-form-hint error">Your message is here.</p>
+                        <p class="ui-form-hint ui-form-error">Your message is here.</p>
                     </div>
 
                     <div class="ui-col-3">
                         <label class="ui-form-info">Warning Form</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="ui-input ui-round ui-border-dual ui-ease-form warning">
+                        <div class="ui-input ui-round ui-border-dual ui-ease-form ui-form-warning">
                             <input type="text" value="123456">
                         </div>
-                        <p class="ui-form-hint warning">Your message is here.</p>
+                        <p class="ui-form-hint ui-form-warning">Your message is here.</p>
                     </div>
                     <div class="ui-col-3">
                         <label class="ui-form-info">Captcha</label>
@@ -567,7 +567,7 @@
                         <li>
                             <label class="ui-label">
                                 <div class="ui-check ui-round ui-border-dual ui-ease-form">
-                                    <input type="checkbox" class="indeterminate">
+                                    <input type="checkbox" class="ui-indeterminate">
                                     <i class="ui-state"></i>
                                 </div>
                                 Indeterminate
@@ -638,7 +638,7 @@
                         <li>
                             <label class="ui-label">
                                 <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                        <input type="checkbox" class="indeterminate">
+                                        <input type="checkbox" class="ui-indeterminate">
                                         <i class="ui-state"></i>
                                 </span>
                                 Indeterminate Switch
@@ -1282,7 +1282,7 @@
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                            <input class="number" type="text" placeholder="Number">
+                            <input class="ui-number" type="text" placeholder="Number">
                         </div>
                     </div>
 
@@ -1295,7 +1295,7 @@
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                        <input type="text" value="3" min="2" max="5" class="number ui-align-r">
+                                        <input type="text" value="3" min="2" max="5" class="ui-number ui-align-r">
                                     </div>
                                 </div>
                             </div>
@@ -1345,7 +1345,7 @@
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
-                            <button type="button" title="Toggle Password" class="show-pass">
+                            <button type="button" title="Toggle Password" class="ui-show-pass">
                                 <svg class="ui-icon"><use href="#eye-fill"/></svg>
                             </button>
                             <input type="password" placeholder="Toggle Password Example">
@@ -1551,7 +1551,7 @@
                             <div class="ui-col-9">
                                 <div class="ui-required-holder">
                                     <label>
-                                        <input class="ui-required indeterminate" type="checkbox">
+                                        <input class="ui-required ui-indeterminate" type="checkbox">
                                         Indeterminate
                                     </label>
                                 </div>
@@ -1648,16 +1648,16 @@
                         <svg class="ui-icon"><use href="#search"/></svg>
                         <input type="text" placeholder="With text icon">
                     </div>
-                    <div class="ui-input error ui-form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
+                    <div class="ui-input ui-form-error ui-form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <input type="text" placeholder="Error Form">
                     </div>
-                    <div class="ui-input error ui-form-light ui-margin-10-b ui-round ui-no-border ui-ease-form">
+                    <div class="ui-input ui-form-error ui-form-light ui-margin-10-b ui-round ui-no-border ui-ease-form">
                         <input type="text" placeholder="Error Form">
                     </div>
-                    <div class="ui-input warning ui-form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
+                    <div class="ui-input ui-form-warning ui-form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <input type="text" placeholder="Warning Form">
                     </div>
-                    <div class="ui-input warning ui-form-light ui-round ui-no-border ui-ease-form">
+                    <div class="ui-input ui-form-warning ui-form-light ui-round ui-no-border ui-ease-form">
                         <input type="text" placeholder="Warning Form">
                     </div>
 
@@ -1721,7 +1721,7 @@
                         </div>
 
                     </div>
-                    <div class="ui-form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b error">
+                    <div class="ui-form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b ui-form-error">
 
                         <div class="ui-col-5">
                             <div class="ui-input ui-round ui-border-dual ui-form-light ui-ease-form">
@@ -1745,7 +1745,7 @@
                         </div>
 
                     </div>
-                    <div class="ui-form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b warning">
+                    <div class="ui-form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b ui-form-warning">
 
                         <div class="ui-col-5">
                             <div class="ui-input ui-round ui-border-dual ui-form-light ui-ease-form">
@@ -1834,10 +1834,10 @@
                         <div class="ui-input ui-margin-10-b">
                             <input type="text">
                         </div>
-                        <div class="ui-input error ui-margin-10-b">
+                        <div class="ui-input ui-form-error ui-margin-10-b">
                             <input type="text" placeholder="Error Form">
                         </div>
-                        <div class="ui-input warning ui-margin-10-b">
+                        <div class="ui-input ui-form-warning ui-margin-10-b">
                             <input type="text" placeholder="Warning Form">
                         </div>
                         <div class="ui-select ui-margin-10-b">
@@ -1888,10 +1888,10 @@
                         <div class="ui-input ui-margin-10-b ui-shadow-in ui-no-border">
                             <input type="text">
                         </div>
-                        <div class="ui-input error ui-margin-10-b ui-shadow-in ui-no-border">
+                        <div class="ui-input ui-form-error ui-margin-10-b ui-shadow-in ui-no-border">
                             <input type="text" placeholder="Error Form">
                         </div>
-                        <div class="ui-input warning ui-margin-10-b ui-shadow-in ui-no-border">
+                        <div class="ui-input ui-form-warning ui-margin-10-b ui-shadow-in ui-no-border">
                             <input type="text" placeholder="Warning Form">
                         </div>
                         <div class="ui-select ui-margin-10-b ui-shadow-in ui-no-border">
@@ -1942,10 +1942,10 @@
                         <div class="ui-input ui-margin-10-b ui-round ui-no-border ui-fill-light-100">
                             <input type="text">
                         </div>
-                        <div class="ui-input error ui-margin-10-b ui-round ui-no-border ui-fill-light-100">
+                        <div class="ui-input ui-form-error ui-margin-10-b ui-round ui-no-border ui-fill-light-100">
                             <input type="text" placeholder="Error Form">
                         </div>
-                        <div class="ui-input warning ui-margin-10-b ui-round ui-no-border ui-fill-light-100">
+                        <div class="ui-input ui-form-warning ui-margin-10-b ui-round ui-no-border ui-fill-light-100">
                             <input type="text" placeholder="Warning Form">
                         </div>
                         <div class="ui-select ui-margin-10-b ui-round ui-no-border ui-fill-light-100">

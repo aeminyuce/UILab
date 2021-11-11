@@ -544,7 +544,7 @@
                                                 <div class="ui-col-5">
                                                     <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#phone"/></svg>
-                                                        <input class="ui-required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
+                                                        <input class="ui-required ui-number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
                                                     </div>
                                                     <p class="ui-required-msg">Enter your phone.</p>
                                                 </div>

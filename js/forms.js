@@ -11,7 +11,7 @@ ui.forms = {
     targetSelectMulti: 'ui-select-multi',
     targetTextarea: 'ui-textarea',
     targetFile: 'ui-file',
-    targetIndeterminate: 'indeterminate',
+    targetIndeterminate: 'ui-indeterminate',
 
     // main classnames
     nameFocus: 'ui-form-focus',
@@ -22,22 +22,23 @@ ui.forms = {
     nameHasClear: 'ui-has-clear',
     nameClear: 'ui-form-clear',
 
-    nameShowPass: 'show-pass',
-    nameNumber: 'number',
+    nameShowPass: 'ui-show-pass',
+    nameNumber: 'ui-number',
 
     nameFormIcon: 'ui-form-icon',
 
     // helper classnames
-    nameOpen: 'open',
-    nameOpenEase: 'open-ease',
+    nameOpen: 'ui-open',
+    nameOpenEase: 'ui-open-ease',
 
     // outer classnames
     nameIcon: 'ui-icon',
 
-    nameRequired: 'required',
+    nameRequired: 'ui-required',
     nameRequiredMsg: 'ui-required-msg',
+    nameRequiredMsgShow: 'ui-show',
 
-    nameError: 'error',
+    nameError: 'ui-form-error',
 
     // tags
     tagFileInfo: 'i'
@@ -344,10 +345,10 @@ ui.forms = {
                     });
 
                     // remove errors
-                    ui.removeClass(errors, 'error');
+                    ui.removeClass(errors, ui.forms.nameError);
 
                     // remove error messages
-                    ui.removeClass(reqMessages, 'show');
+                    ui.removeClass(reqMessages, ui.forms.nameRequiredMsgShow);
 
                 }, 0);
 

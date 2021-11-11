@@ -343,16 +343,6 @@ html:not(.ui-no-effects) {
     }
 }
 
-.error {
-    .ui-check,.ui-radio,.ui-switch { background-color: @form-error-bg !important; border-color: @red !important; }
-    &:not(.ui-form-holder):not(.ui-required-holder):not(.ui-form-hint) { background-color: @form-error-bg !important; border-color: @red !important; }
-
-}
-.warning {
-    .ui-check,.ui-radio,.ui-switch { background-color: @form-warning-bg !important; border-color: @yellow !important; }
-    &:not(.ui-form-holder):not(.ui-required-holder):not(.ui-form-hint) { background-color: @form-warning-bg !important; border-color: @yellow !important; }
-}
-
 .ui-form- {
     &light {
         border-color: @border-color-dark !important;
@@ -441,11 +431,11 @@ html:not(.ui-no-effects) {
             }
         }
 
-        &.error {
+        &.ui-form-error {
             .ui-input,.ui-select,.ui-border,[class*="ui-border-"] { border-color: @red !important; }
             .ui-input,.ui-select { background-color: @form-error-bg; }
         }
-        &.warning {
+        &.ui-form-warning {
             .ui-input,.ui-select,.ui-border,[class*="ui-border-"] { border-color: @yellow !important; }
             .ui-input,.ui-select { background-color: @form-warning-bg; }
         }
@@ -465,8 +455,8 @@ html:not(.ui-no-effects) {
     &hint {
         font-size: @font-13; margin-top: @form-spacing; display: block;
 
-        &.error { color: @red; }
-        &.warning { color: @yellow; }
+        &.ui-form-error { color: @red; }
+        &.ui-form-warning { color: @yellow; }
     }
 
     &icon- {
@@ -554,6 +544,16 @@ html:not(.ui-no-effects) {
                 & > i { line-height: (@btn-lg - 4); }
             }
         }
+    }
+
+    &error {
+        .ui-check,.ui-radio,.ui-switch { background-color: @form-error-bg !important; border-color: @red !important; }
+        &:not(.ui-form-holder):not(.ui-required-holder):not(.ui-form-hint) { background-color: @form-error-bg !important; border-color: @red !important; }
+
+    }
+    &warning {
+        .ui-check,.ui-radio,.ui-switch { background-color: @form-warning-bg !important; border-color: @yellow !important; }
+        &:not(.ui-form-holder):not(.ui-required-holder):not(.ui-form-hint) { background-color: @form-warning-bg !important; border-color: @yellow !important; }
     }
 }
 

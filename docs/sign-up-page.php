@@ -67,7 +67,7 @@
 
                                     <label class="ui-form-label ui-color-black-50">Phone</label>
                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                        <input class="ui-required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
+                                        <input class="ui-required ui-number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
                                     </div>
                                     <p class="ui-required-msg">Enter your phone.</p>
 
@@ -84,7 +84,7 @@
 
                                     <label class="ui-form-label ui-color-black-50">Password</label>
                                     <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
-                                        <button type="button" title="Toggle Password" class="show-pass">
+                                        <button type="button" title="Toggle Password" class="ui-show-pass">
                                             <svg class="ui-icon"><use href="#eye-fill"/></svg>
                                         </button>
                                         <input class="ui-required" type="password" placeholder="Enter password" minlength="8">
@@ -95,7 +95,7 @@
 
                                     <label class="ui-form-label ui-color-black-50">Confirm Password</label>
                                     <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
-                                        <button type="button" title="Toggle Password" class="show-pass">
+                                        <button type="button" title="Toggle Password" class="ui-show-pass">
                                             <svg class="ui-icon"><use href="#eye-fill"/></svg>
                                         </button>
                                         <input class="ui-required" type="password" placeholder="Enter password again" minlength="8">
