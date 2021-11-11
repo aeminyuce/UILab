@@ -519,7 +519,7 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-grid">First Name</label>
+                                                    <label class="ui-form-info">First Name</label>
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -529,7 +529,7 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-grid">Last Name</label>
+                                                    <label class="ui-form-info">Last Name</label>
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -539,7 +539,7 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-grid">Contact Phone</label>
+                                                    <label class="ui-form-info">Contact Phone</label>
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-input text-icon-l ui-round ui-border-dual ui-ease-form">
@@ -550,7 +550,7 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-grid">Age</label>
+                                                    <label class="ui-form-info">Age</label>
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-select ui-round ui-border-dual ui-ease-form">
@@ -566,7 +566,7 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-grid">Email Address</label>
+                                                    <label class="ui-form-info">Email Address</label>
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-input text-icon-l ui-round ui-border-dual ui-ease-form">
@@ -577,7 +577,7 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-grid">Company Site</label>
+                                                    <label class="ui-form-info">Company Site</label>
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-form-holder ui-col-static ui-no-fluid">
@@ -612,7 +612,7 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-grid">Country</label>
+                                                    <label class="ui-form-info">Country</label>
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete ui-input text-icon-l ui-round ui-border-dual ui-ease-form">
@@ -623,7 +623,7 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-grid">Address</label>
+                                                    <label class="ui-form-info">Address</label>
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-textarea ui-round ui-border-dual ui-ease-form" data-ui-counter="1000">

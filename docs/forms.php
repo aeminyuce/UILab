@@ -6,7 +6,7 @@
                 <h3 class="ui-h3">Forms in Grid System</h3>
                 <div class="ui-row ui-padding-30-b">
                     <div class="ui-col-3">
-                        <label class="ui-form-grid">Label</label>
+                        <label class="ui-form-info">Label</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -16,7 +16,7 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="ui-form-grid">Label</label>
+                        <label class="ui-form-info">Label</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input ui-form-disabled ui-round ui-border-dual ui-ease-form">
@@ -25,7 +25,7 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="ui-form-grid">Label</label>
+                        <label class="ui-form-info">Label</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-textarea ui-form-disabled ui-round ui-border-dual ui-ease-form">
@@ -34,7 +34,7 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="ui-form-grid">Label</label>
+                        <label class="ui-form-info">Label</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input ui-form-readonly ui-round ui-border-dual ui-ease-form">
@@ -43,7 +43,7 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="ui-form-grid">Label</label>
+                        <label class="ui-form-info">Label</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-textarea ui-form-readonly ui-round ui-border-dual ui-ease-form">
@@ -52,7 +52,7 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="ui-form-grid">Error Form</label>
+                        <label class="ui-form-info">Error Form</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input ui-round ui-border-dual ui-ease-form error">
@@ -62,7 +62,7 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="ui-form-grid">Warning Form</label>
+                        <label class="ui-form-info">Warning Form</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input ui-round ui-border-dual ui-ease-form warning">
@@ -71,7 +71,7 @@
                         <p class="hint warning">Your message is here.</p>
                     </div>
                     <div class="ui-col-3">
-                        <label class="ui-form-grid">Captcha</label>
+                        <label class="ui-form-info">Captcha</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-form-holder ui-col-static ui-no-fluid">
@@ -124,7 +124,7 @@
                 <div class="ui-form-lg ui-padding-30-b">
                     <div class="ui-row">
                         <div class="ui-col-3">
-                            <label class="ui-form-grid">Full Name</label>
+                            <label class="ui-form-info">Full Name</label>
                         </div>
                         <div class="ui-col-9">
                             <div class="ui-input ui-border-dual ui-round ui-ease-form">
@@ -133,7 +133,7 @@
                             <p class="hint ui-color-black-25">Form hint</p>
                         </div>
                         <div class="ui-col-3">
-                            <label class="ui-form-grid">Your Age</label>
+                            <label class="ui-form-info">Your Age</label>
                         </div>
                         <div class="ui-col-9">
                             <div class="ui-select ui-round ui-border-dual ui-ease-form">
@@ -148,7 +148,7 @@
                             <p class="hint ui-color-black-25">Form hint</p>
                         </div>
                         <div class="ui-col-3">
-                            <label class="ui-form-grid">Captcha</label>
+                            <label class="ui-form-info">Captcha</label>
                         </div>
                         <div class="ui-col-9">
                             <div class="ui-form-holder ui-col-static ui-no-fluid">
@@ -1331,7 +1331,7 @@
                 <h3 class="ui-h3">Special Forms</h3>
                 <div class="ui-row ui-padding-30-b">
                     <div class="ui-col-3">
-                        <label class="ui-form-grid" >Number Form</label>
+                        <label class="ui-form-info" >Number Form</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -1340,7 +1340,7 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="ui-form-grid">Spinner Form</label>
+                        <label class="ui-form-info">Spinner Form</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-form-spinner ui-form-holder ui-col-static ui-no-fluid">
@@ -1367,7 +1367,7 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="ui-form-grid">Currency Spinner</label>
+                        <label class="ui-form-info">Currency Spinner</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-currency-spinner ui-form-holder ui-col-static ui-no-fluid">
@@ -1394,7 +1394,7 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="ui-form-grid">Toggle Password</label>
+                        <label class="ui-form-info">Toggle Password</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input text-icon ui-round ui-border-dual ui-ease-form">
@@ -1411,7 +1411,7 @@
                     <form action="#succesful" onsubmit="return ui.alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
                         <div class="ui-row">
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with disabled forms</label>
+                                <label class="ui-form-info">Required with disabled forms</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-form-disabled ui-ease-form">
@@ -1420,7 +1420,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with message</label>
+                                <label class="ui-form-info">Required with message</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -1431,7 +1431,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with no message</label>
+                                <label class="ui-form-info">Required with no message</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -1441,7 +1441,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with min and max length</label>
+                                <label class="ui-form-info">Required with min and max length</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -1452,7 +1452,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with min and max number</label>
+                                <label class="ui-form-info">Required with min and max number</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -1463,7 +1463,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with password and min length</label>
+                                <label class="ui-form-info">Required with password and min length</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -1474,7 +1474,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with email</label>
+                                <label class="ui-form-info">Required with email</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -1485,7 +1485,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with select forms.</label>
+                                <label class="ui-form-info">Required with select forms.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-select ui-round ui-border-dual ui-ease-form">
@@ -1501,7 +1501,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with form holders</label>
+                                <label class="ui-form-info">Required with form holders</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-form-holder ui-col-static ui-no-fluid">
@@ -1536,7 +1536,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with textarea forms and min length.</label>
+                                <label class="ui-form-info">Required with textarea forms and min length.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-textarea ui-margin-10-b ui-round ui-border-dual ui-ease-form">
@@ -1547,7 +1547,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with textarea forms and min length.</label>
+                                <label class="ui-form-info">Required with textarea forms and min length.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-file ui-round ui-border-dual ui-ease-form">
@@ -1560,7 +1560,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with checkboxes.</label>
+                                <label class="ui-form-info">Required with checkboxes.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-required-accept">
@@ -1576,7 +1576,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with indeterminate checkboxes.</label>
+                                <label class="ui-form-info">Required with indeterminate checkboxes.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-required-accept">
@@ -1592,7 +1592,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with custom checks.</label>
+                                <label class="ui-form-info">Required with custom checks.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-required-accept">
@@ -1609,7 +1609,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with radios.</label>
+                                <label class="ui-form-info">Required with radios.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-required-accept">
@@ -1628,7 +1628,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with custom radios.</label>
+                                <label class="ui-form-info">Required with custom radios.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-required-accept">
@@ -1659,7 +1659,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-grid">Required with custom checks.</label>
+                                <label class="ui-form-info">Required with custom checks.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-required-accept">
@@ -1875,7 +1875,7 @@
                 <h3 class="ui-h3">Different Form Styles</h3>
                 <div class="ui-row">
                     <div class="ui-col-3">
-                        <label class="ui-form-grid">light ui-border with no radius style:</label>
+                        <label class="ui-form-info">light ui-border with no radius style:</label>
                     </div>
                     <div class="ui-col-9 ui-ease-1st-form">
 
@@ -1929,7 +1929,7 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="ui-form-grid">Inner ui-shadow with no radius and no ui-border style:</label>
+                        <label class="ui-form-info">Inner ui-shadow with no radius and no ui-border style:</label>
                     </div>
                     <div class="ui-col-9 ui-ease-1st-form">
 
@@ -1983,7 +1983,7 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="ui-form-grid">Using themes with no radius and no ui-border style:</label>
+                        <label class="ui-form-info">Using themes with no radius and no ui-border style:</label>
                     </div>
                     <div class="ui-col-9 ui-ease-1st-form ui-theme-gray">
 
