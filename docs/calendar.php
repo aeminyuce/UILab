@@ -48,19 +48,19 @@
             <h3 class="ui-h3">Calendar Pickers</h3>
             <div class="ui-row ui-sm-fluid ui-padding-30-b ui-ease-2nd-form">
                 <div class="ui-col-12">
-                    <div class="ui-calendar-picker ui-input text-icon-l ui-round ui-border-dual ui-form-inline-xs">
+                    <div class="ui-calendar-picker ui-input ui-form-icon-l ui-round ui-border-dual ui-form-inline-xs">
                         <svg class="ui-icon"><use href="#calendar"/></svg>
                         <input type="text">
                     </div>
                 </div>
                 <div class="ui-col-6">
-                    <div class="ui-calendar-picker ui-input text-icon-l ui-round ui-border-dual">
+                    <div class="ui-calendar-picker ui-input ui-form-icon-l ui-round ui-border-dual">
                         <svg class="ui-icon"><use href="#calendar"/></svg>
                         <input type="text">
                     </div>
                 </div>
                 <div class="ui-col-6">
-                    <div class="ui-calendar-picker ui-input text-icon-l ui-round ui-border-dual">
+                    <div class="ui-calendar-picker ui-input ui-form-icon-l ui-round ui-border-dual">
                         <svg class="ui-icon"><use href="#calendar"/></svg>
                         <input type="text">
                     </div>
@@ -70,13 +70,13 @@
             <h3 class="ui-h3">Calendar Pickers with Filled Forms</h3>
             <div class="ui-row ui-sm-fluid ui-padding-30-b ui-form-lg ui-ease-2nd-form">
                 <div class="ui-col-6">
-                    <div class="ui-calendar-picker ui-input text-icon-l ui-round ui-border-dual">
+                    <div class="ui-calendar-picker ui-input ui-form-icon-l ui-round ui-border-dual">
                         <svg class="ui-icon"><use href="#calendar"/></svg>
                         <input type="text" value="2/5/2016">
                     </div>
                 </div>
                 <div class="ui-col-6">
-                    <div class="ui-calendar-picker ui-input text-icon-l ui-round ui-border-dual">
+                    <div class="ui-calendar-picker ui-input ui-form-icon-l ui-round ui-border-dual">
                         <svg class="ui-icon"><use href="#calendar"/></svg>
                         <input type="text" value="02/05/2016">
                     </div>

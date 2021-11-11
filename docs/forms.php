@@ -206,11 +206,11 @@
                     <div class="ui-row ui-padding-30-b">
 
                         <div class="ui-col-12">
-                            <div data-ui-src="json/countries.json" data-ui-val="code" class="ui-autocomplete ui-input text-icon ui-round ui-border-dual ui-ease-form ui-form-inline-xs">
+                            <div data-ui-src="json/countries.json" data-ui-val="code" class="ui-autocomplete ui-input ui-form-icon ui-round ui-border-dual ui-ease-form ui-form-inline-xs">
                                 <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
                                 <input type="text" placeholder="Country Code" autocomplete="off">
                             </div>
-                            <div data-ui-src="json/countries.json" data-ui-val="name" class="ui-autocomplete ui-input text-icon ui-round ui-border-dual ui-ease-form ui-form-inline-xs">
+                            <div data-ui-src="json/countries.json" data-ui-val="name" class="ui-autocomplete ui-input ui-form-icon ui-round ui-border-dual ui-ease-form ui-form-inline-xs">
                                 <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
                                 <input type="text" placeholder="Country" autocomplete="off">
                             </div>
@@ -755,36 +755,36 @@
 
                 <h3 class="ui-h3">Form Icons</h3>
                 <div class="ui-padding-30-b">
-                    <div class="ui-input text-icon-l ui-margin-10-b ui-round ui-border-dual ui-ease-form">
+                    <div class="ui-input ui-form-icon-l ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#search"/></svg>
                         <input type="text" placeholder="Left icon">
                     </div>
-                    <div class="ui-input text-icon ui-margin-10-b ui-round ui-border-dual ui-ease-form">
+                    <div class="ui-input ui-form-icon ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
                         <input type="text" placeholder="Right icon">
                     </div>
-                    <div class="ui-input text-icon-both ui-round ui-border-dual ui-ease-form">
-                        <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
+                    <div class="ui-input ui-form-icon-all ui-round ui-border-dual ui-ease-form">
+                        <svg class="ui-icon ui-form-icon-l"><use href="#search"/></svg>
                         <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
-                        <input type="text" placeholder="Both icon">
+                        <input type="text" placeholder="Left and right icons">
                     </div>
 
                     <span class="ui-sp-30"></span>
 
                     <label class="ui-form-label ui-padding-10-b">Form Icons with Large Forms</label>
                     <div class="ui-form-lg">
-                        <div class="ui-input text-icon-l ui-margin-10-b ui-round ui-border-dual ui-ease-form">
+                        <div class="ui-input ui-form-icon-l ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                             <svg class="ui-icon"><use href="#search"/></svg>
                             <input type="text" placeholder="Left icon">
                         </div>
-                        <div class="ui-input text-icon ui-margin-10-b ui-round ui-border-dual ui-ease-form">
+                        <div class="ui-input ui-form-icon ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                             <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
                             <input type="text" placeholder="Right icon">
                         </div>
-                        <div class="ui-input text-icon-both ui-round ui-border-dual ui-ease-form">
-                            <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
+                        <div class="ui-input ui-form-icon-all ui-round ui-border-dual ui-ease-form">
+                            <svg class="ui-icon ui-form-icon-l"><use href="#search"/></svg>
                             <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
-                            <input type="text" placeholder="Both icon">
+                            <input type="text" placeholder="Left and right icons">
                         </div>
                     </div>
                 </div>
@@ -792,13 +792,13 @@
                 <h3 class="ui-h3">Clear with Form Icons</h3>
                 <div class="ui-padding-30-b">
                     <form action="#succesful">
-                        <div class="ui-input text-icon ui-margin-10-b ui-round ui-border-dual ui-has-clear ui-ease-form">
+                        <div class="ui-input ui-form-icon ui-margin-10-b ui-round ui-border-dual ui-has-clear ui-ease-form">
                             <button type="button" class="ui-form-clear">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                             <input type="text" value="Defined value example">
                         </div>
-                        <div class="ui-input text-icon ui-margin-10-b ui-round ui-border-dual ui-has-clear ui-ease-form">
+                        <div class="ui-input ui-form-icon ui-margin-10-b ui-round ui-border-dual ui-has-clear ui-ease-form">
                             <button type="button" class="ui-form-clear">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
@@ -806,7 +806,7 @@
                         </div>
                         <label class="ui-form-label ui-padding-10-b">Clear with Large Forms</label>
                         <div class="ui-form-lg ui-margin-10-b ui-ease-1st-form">
-                            <div class="ui-input text-icon ui-round ui-border-dual ui-has-clear">
+                            <div class="ui-input ui-form-icon ui-round ui-border-dual ui-has-clear">
                                 <button type="button" class="ui-form-clear">
                                     <svg class="ui-icon"><use href="#remove"/></svg>
                                 </button>
@@ -820,7 +820,7 @@
                 <h3 class="ui-h3">Submit with Form Icons</h3>
                 <div class="ui-padding-30-b">
                     <form action="#succesful">
-                        <div class="ui-input text-icon ui-round ui-border-dual ui-ease-form">
+                        <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
                             <button type="submit">
                                 <svg class="ui-icon"><use href="#search"/></svg>
                             </button>
@@ -1397,7 +1397,7 @@
                         <label class="ui-form-info">Toggle Password</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="ui-input text-icon ui-round ui-border-dual ui-ease-form">
+                        <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
                             <button type="button" title="Toggle Password" class="show-pass">
                                 <svg class="ui-icon"><use href="#eye-fill"/></svg>
                             </button>
@@ -1692,7 +1692,7 @@
                     <div class="ui-input ui-form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <input type="text" placeholder="Placeholder">
                     </div>
-                    <div class="ui-input text-icon ui-form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
+                    <div class="ui-input ui-form-icon ui-form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#search"/></svg>
                         <input type="text" placeholder="With text icon">
                     </div>
@@ -1851,7 +1851,7 @@
 
                     <form action="#successful">
 
-                        <div class="ui-input text-icon ui-form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
+                        <div class="ui-input ui-form-icon ui-form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                             <button type="submit">
                                 <svg class="ui-icon"><use href="#search"/></svg>
                             </button>

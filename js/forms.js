@@ -25,7 +25,7 @@ ui.forms = {
     nameShowPass: 'show-pass',
     nameNumber: 'number',
 
-    nameInputIcon: 'text-icon',
+    nameFormIcon: 'ui-form-icon',
 
     // helper classnames
     nameOpen: 'open',
@@ -291,8 +291,8 @@ ui.forms = {
             ui.on(document,
                 'mousedown',
 
-                '[class*="' + ui.forms.nameInputIcon + '"] > button.' + ui.forms.nameIcon + ',' +
-                '[class*="' + ui.forms.nameInputIcon + '"] > input.' + ui.forms.nameIcon,
+                '[class*="' + ui.forms.nameFormIcon + '"] > button.' + ui.forms.nameIcon + ',' +
+                '[class*="' + ui.forms.nameFormIcon + '"] > input.' + ui.forms.nameIcon,
 
                 function (e) {
 

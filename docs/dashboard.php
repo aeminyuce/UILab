@@ -542,7 +542,7 @@
                                                     <label class="ui-form-info">Contact Phone</label>
                                                 </div>
                                                 <div class="ui-col-5">
-                                                    <div class="ui-input text-icon-l ui-round ui-border-dual ui-ease-form">
+                                                    <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#phone"/></svg>
                                                         <input class="required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
                                                     </div>
@@ -569,7 +569,7 @@
                                                     <label class="ui-form-info">Email Address</label>
                                                 </div>
                                                 <div class="ui-col-5">
-                                                    <div class="ui-input text-icon-l ui-round ui-border-dual ui-ease-form">
+                                                    <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#at"/></svg>
                                                         <input class="required email" type="email">
                                                     </div>
@@ -584,7 +584,7 @@
 
                                                         <div class="ui-row ui-no-row-gap">
                                                             <div class="ui-col-12">
-                                                                <div class="ui-input text-icon-l ui-round ui-border-dual ui-ease-form">
+                                                                <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
                                                                     <svg class="ui-icon"><use href="#browser"/></svg>
                                                                     <input class="required" type="text" placeholder="Site name">
                                                                 </div>
@@ -615,7 +615,7 @@
                                                     <label class="ui-form-info">Country</label>
                                                 </div>
                                                 <div class="ui-col-5">
-                                                    <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete ui-input text-icon-l ui-round ui-border-dual ui-ease-form">
+                                                    <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#keyboard"/></svg>
                                                         <input class="required" type="text" placeholder="Type/Select your country" autocomplete="off" minlength="3">
                                                     </div>
@@ -1151,8 +1151,8 @@
 
                                         <div class="ui-row ui-no-row-gap-v ui-row-gap-sm-h">
                                             <div class="ui-col-6 ui-lg-fluid">
-                                                <div class="ui-input text-icon-both ui-round ui-no-border ui-fill-light-100 ui-has-clear ui-ease-form">
-                                                    <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
+                                                <div class="ui-input ui-form-icon-all ui-round ui-no-border ui-fill-light-100 ui-has-clear ui-ease-form">
+                                                    <svg class="ui-icon ui-form-icon-l"><use href="#search"/></svg>
                                                     <button class="ui-form-clear">
                                                         <svg class="ui-icon"><use href="#remove"/></svg>
                                                     </button>
@@ -1776,7 +1776,7 @@
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-row ui-no-row-gap-h">
                     <div class="ui-col-12 ui-ease-1st-form">
-                        <div class="ui-input text-icon ui-has-clear ui-round-l ui-no-border ui-shadow-in-sm ui-theme-gray ui-fill-light-300">
+                        <div class="ui-input ui-has-clear ui-round-l ui-no-border ui-shadow-in-sm ui-theme-gray ui-fill-light-300">
                             <button type="button" class="ui-form-clear">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>

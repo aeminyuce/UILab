@@ -9,8 +9,8 @@
 
                         <div class="ui-row ui-no-row-gap-v ui-row-gap-sm-h ui-margin-2-v">
                             <div class="ui-col-6 ui-lg-fluid">
-                                <div class="ui-input text-icon-both ui-round ui-no-border ui-fill-light-100 ui-has-clear ui-ease-form">
-                                    <svg class="ui-icon text-icon-l"><use href="#search"></svg>
+                                <div class="ui-input ui-form-icon-all ui-round ui-no-border ui-fill-light-100 ui-has-clear ui-ease-form">
+                                    <svg class="ui-icon ui-form-icon-l"><use href="#search"></svg>
                                     <button class="ui-form-clear">
                                         <svg class="ui-icon"><use href="#remove"/></svg>
                                     </button>
@@ -473,8 +473,8 @@
 
                     <div class="ui-row ui-sm-fluid">
                         <div class="ui-col-5 ui-sm-no-padding-b">
-                            <div class="ui-input text-icon-both ui-round ui-border-dual ui-has-clear ui-ease-form">
-                                <svg class="ui-icon text-icon-l"><use href="#search"></svg>
+                            <div class="ui-input ui-form-icon-all ui-round ui-border-dual ui-has-clear ui-ease-form">
+                                <svg class="ui-icon ui-form-icon-l"><use href="#search"></svg>
                                 <button class="ui-form-clear">
                                     <svg class="ui-icon"><use href="#remove"/></svg>
                                 </button>
@@ -1240,8 +1240,8 @@
 
                     <div class="ui-row ui-sm-fluid">
                         <div class="ui-col-5 ui-sm-no-padding-b">
-                            <div class="ui-input text-icon-both ui-round ui-border-dual ui-has-clear ui-ease-form">
-                                <svg class="ui-icon text-icon-l"><use href="#search"></svg>
+                            <div class="ui-input ui-form-icon-all ui-round ui-border-dual ui-has-clear ui-ease-form">
+                                <svg class="ui-icon ui-form-icon-l"><use href="#search"></svg>
                                 <button class="ui-form-clear">
                                     <svg class="ui-icon"><use href="#remove"/></svg>
                                 </button>

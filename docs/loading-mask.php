@@ -47,7 +47,7 @@
                     <span class="ui-sp-30"></span>
 
                     <div class="ui-form-lg">
-                        <div class="loadingText2 ui-input text-icon-l ui-margin-10-b ui-round ui-border-dual ui-form-inline ui-ease-form">
+                        <div class="loadingText2 ui-input ui-form-icon-l ui-margin-10-b ui-round ui-border-dual ui-form-inline ui-ease-form">
                             <svg class="ui-icon"><use href="#search"/></svg>
                             <input type="text" placeholder="Left icon">
                         </div>

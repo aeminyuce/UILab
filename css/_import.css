@@ -5322,7 +5322,7 @@ label.custom {
 .ui-form-focus.ui-form-light .ui-icon:not([class*="ui-current"]) {
   color: hsl(0, 0%, 100%) !important;
 }
-.ui-form-focus[class*="text-icon"] .ui-icon,
+.ui-form-focus[class*="ui-form-icon"] .ui-icon,
 .ui-form-focus.ui-select .ui-icon {
   opacity: 1;
 }
@@ -5434,6 +5434,21 @@ label.custom {
   height: 16px;
   stroke-width: 34px;
 }
+.ui-form-icon-l > .ui-icon {
+  right: inherit;
+  left: 10px;
+}
+.ui-form-icon-l > input {
+  padding-left: 38px !important;
+}
+.ui-form-icon-all > .ui-form-icon-l {
+  right: inherit;
+  left: 10px;
+}
+.ui-form-icon-all > input {
+  padding-right: 38px !important;
+  padding-left: 38px !important;
+}
 .ui-form-lg .ui-input,
 .ui-form-lg .ui-select {
   min-height: 48px;
@@ -5478,33 +5493,33 @@ label.custom {
   stroke-width: 30px;
   right: 20px;
 }
-.ui-form-lg [class*="text-icon"] > .ui-icon {
+.ui-form-lg [class*="ui-form-icon"] > .ui-icon {
   width: 20px;
   height: 20px;
   stroke-width: 30px;
   right: 20px;
 }
-.ui-form-lg [class*="text-icon"] .ui-icon {
+.ui-form-lg [class*="ui-form-icon"] .ui-icon {
   width: 20px;
   height: 20px;
   stroke-width: 30px;
 }
-.ui-form-lg [class*="text-icon"] > button {
+.ui-form-lg [class*="ui-form-icon"] > button {
   right: 20px;
 }
-.ui-form-lg [class*="text-icon"]:not(.text-icon-l) > input {
+.ui-form-lg [class*="ui-form-icon"]:not(.ui-form-icon-l) > input {
   padding-right: 60px !important;
 }
-.ui-form-lg .text-icon-l > .ui-icon {
+.ui-form-lg .ui-form-icon-l > .ui-icon {
   left: 20px;
 }
-.ui-form-lg .text-icon-l > input {
+.ui-form-lg .ui-form-icon-l > input {
   padding-left: 60px !important;
 }
-.ui-form-lg .text-icon-both > .text-icon-l {
+.ui-form-lg .ui-form-icon-all > .ui-form-icon-l {
   left: 20px;
 }
-.ui-form-lg .text-icon-both > input {
+.ui-form-lg .ui-form-icon-all > input {
   padding-right: 60px !important;
   padding-left: 60px !important;
 }
@@ -5540,55 +5555,40 @@ label.custom {
 .ui-form-lg .ui-file.ui-border-dual > i {
   line-height: 44px;
 }
-[class*="text-icon"] .ui-icon,
-[class*="text-icon"] > button {
+[class*="ui-form-icon"] .ui-icon,
+[class*="ui-form-icon"] > button {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
   cursor: default;
 }
-[class*="text-icon"] > .ui-icon,
-[class*="text-icon"] > button {
+[class*="ui-form-icon"] > .ui-icon,
+[class*="ui-form-icon"] > button {
   position: absolute;
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
 }
-[class*="text-icon"] .ui-icon {
+[class*="ui-form-icon"] .ui-icon {
   width: 18px;
   height: 18px;
   stroke-width: 32px;
 }
-[class*="text-icon"] .ui-icon {
+[class*="ui-form-icon"] .ui-icon {
   opacity: 0.45;
 }
-[class*="text-icon"]:not(.text-icon-l) > input {
+[class*="ui-form-icon"]:not(.ui-form-icon-l) > input {
   padding-right: 38px !important;
 }
-[class*="text-icon"] > button {
+[class*="ui-form-icon"] > button {
   background-color: transparent;
   border: 0;
 }
-[class*="text-icon"] > button,
-[class*="text-icon"] > button .ui-icon {
+[class*="ui-form-icon"] > button,
+[class*="ui-form-icon"] > button .ui-icon {
   cursor: pointer;
 }
-[class*="text-icon"] > button:hover .ui-icon {
+[class*="ui-form-icon"] > button:hover .ui-icon {
   opacity: 1;
-}
-.text-icon-l > .ui-icon {
-  right: inherit;
-  left: 10px;
-}
-.text-icon-l > input {
-  padding-left: 38px !important;
-}
-.text-icon-both > .text-icon-l {
-  right: inherit;
-  left: 10px;
-}
-.text-icon-both > input {
-  padding-right: 38px !important;
-  padding-left: 38px !important;
 }
 ::placeholder {
   color: hsla(0, 0%, 0%, 0.4);

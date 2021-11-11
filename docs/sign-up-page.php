@@ -83,7 +83,7 @@
                                     <span class="ui-sp-20"></span>
 
                                     <label class="ui-form-label ui-color-black-50">Password</label>
-                                    <div class="ui-input text-icon ui-round ui-border-dual ui-ease-form">
+                                    <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
                                         <button type="button" title="Toggle Password" class="show-pass">
                                             <svg class="ui-icon"><use href="#eye-fill"/></svg>
                                         </button>
@@ -94,7 +94,7 @@
                                     <span class="ui-sp-20"></span>
 
                                     <label class="ui-form-label ui-color-black-50">Confirm Password</label>
-                                    <div class="ui-input text-icon ui-round ui-border-dual ui-ease-form">
+                                    <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
                                         <button type="button" title="Toggle Password" class="show-pass">
                                             <svg class="ui-icon"><use href="#eye-fill"/></svg>
                                         </button>
