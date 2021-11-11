@@ -5234,6 +5234,16 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-desktop .ui-switch:hover input:indeterminate + .ui-state {
   transform: translate(-50%, -50%);
 }
+.ui-required-msg {
+  color: hsl(0, 74%, 55%);
+  margin-top: 5px;
+}
+.ui-required-msg.ui-show {
+  display: block;
+}
+.ui-required-msg:not(.ui-show) {
+  display: none;
+}
 .error .ui-check,
 .error .ui-radio,
 .error .ui-switch {
@@ -5264,16 +5274,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 }
 .hint.warning {
   color: hsl(42, 100%, 45%);
-}
-.ui-required-msg {
-  color: hsl(0, 74%, 55%);
-  margin-top: 5px;
-}
-.ui-required-msg.show {
-  display: block;
-}
-.ui-required-msg:not(.show) {
-  display: none;
 }
 .ui-form-light {
   border-color: hsla(0, 0%, 100%, 0.175) !important;

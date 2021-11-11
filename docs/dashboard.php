@@ -523,7 +523,7 @@
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                                        <input class="required" type="text" placeholder="Enter first name" minlength="3">
+                                                        <input class="ui-required" type="text" placeholder="Enter first name" minlength="3">
                                                     </div>
                                                     <p class="ui-required-msg">Enter your first name.</p>
                                                 </div>
@@ -533,7 +533,7 @@
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                                        <input class="required" type="text" placeholder="Enter last name" minlength="3">
+                                                        <input class="ui-required" type="text" placeholder="Enter last name" minlength="3">
                                                     </div>
                                                     <p class="ui-required-msg">Enter your last name.</p>
                                                 </div>
@@ -544,7 +544,7 @@
                                                 <div class="ui-col-5">
                                                     <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#phone"/></svg>
-                                                        <input class="required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
+                                                        <input class="ui-required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
                                                     </div>
                                                     <p class="ui-required-msg">Enter your phone.</p>
                                                 </div>
@@ -555,7 +555,7 @@
                                                 <div class="ui-col-5">
                                                     <div class="ui-select ui-round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#angle-down"/></svg>
-                                                        <select class="required">
+                                                        <select class="ui-required">
                                                             <option value="">Select your age</option>
                                                             <option>Under 20</option>
                                                             <option>21- 30</option>
@@ -571,7 +571,7 @@
                                                 <div class="ui-col-5">
                                                     <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#at"/></svg>
-                                                        <input class="required email" type="email">
+                                                        <input class="ui-required" type="email">
                                                     </div>
                                                     <p class="ui-required-msg">Enter a valid email.</p>
                                                 </div>
@@ -586,7 +586,7 @@
                                                             <div class="ui-col-12">
                                                                 <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
                                                                     <svg class="ui-icon"><use href="#browser"/></svg>
-                                                                    <input class="required" type="text" placeholder="Site name">
+                                                                    <input class="ui-required" type="text" placeholder="Site name">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -617,7 +617,7 @@
                                                 <div class="ui-col-5">
                                                     <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#keyboard"/></svg>
-                                                        <input class="required" type="text" placeholder="Type/Select your country" autocomplete="off" minlength="3">
+                                                        <input class="ui-required" type="text" placeholder="Type/Select your country" autocomplete="off" minlength="3">
                                                     </div>
                                                     <p class="ui-required-msg">Type/Select your country.</p>
                                                 </div>
@@ -627,7 +627,7 @@
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-textarea ui-round ui-border-dual ui-ease-form" data-ui-counter="1000">
-                                                        <textarea class="required" rows="3"></textarea>
+                                                        <textarea class="ui-required" rows="3"></textarea>
                                                     </div>
                                                     <p class="ui-required-msg">Enter your address details.</p>
                                                 </div>
@@ -1780,7 +1780,7 @@
                             <button type="button" class="ui-form-clear">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
-                            <input class="required" type="text" placeholder="Search">
+                            <input class="ui-required" type="text" placeholder="Search">
                         </div>
                         <p class="ui-required-msg large">Please, enter a keyword.</p>
                     </div>

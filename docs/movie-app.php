@@ -426,7 +426,7 @@
                             <button type="button" class="ui-form-clear">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
-                            <input class="required" type="text" placeholder="Search">
+                            <input class="ui-required" type="text" placeholder="Search">
                         </div>
                         <p class="ui-required-msg large">Please, enter a keyword.</p>
                     </div>

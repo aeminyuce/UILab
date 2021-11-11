@@ -51,7 +51,7 @@
 
                                     <label class="ui-form-label ui-color-black-50">First Name</label>
                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                        <input class="required" type="text" placeholder="Enter first name" minlength="3">
+                                        <input class="ui-required" type="text" placeholder="Enter first name" minlength="3">
                                     </div>
                                     <p class="ui-required-msg">Enter your first name.</p>
 
@@ -59,7 +59,7 @@
 
                                     <label class="ui-form-label ui-color-black-50">Last Name</label>
                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                        <input class="required" type="text" placeholder="Enter last name" minlength="3">
+                                        <input class="ui-required" type="text" placeholder="Enter last name" minlength="3">
                                     </div>
                                     <p class="ui-required-msg">Enter your last name.</p>
 
@@ -67,7 +67,7 @@
 
                                     <label class="ui-form-label ui-color-black-50">Phone</label>
                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                        <input class="required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
+                                        <input class="ui-required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
                                     </div>
                                     <p class="ui-required-msg">Enter your phone.</p>
 
@@ -76,7 +76,7 @@
 
                                     <label class="ui-form-label ui-color-black-50">Email</label>
                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                        <input class="required" type="email" placeholder="Enter your email">
+                                        <input class="ui-required" type="email" placeholder="Enter your email">
                                     </div>
                                     <p class="ui-required-msg">Enter your email.</p>
 
@@ -87,7 +87,7 @@
                                         <button type="button" title="Toggle Password" class="show-pass">
                                             <svg class="ui-icon"><use href="#eye-fill"/></svg>
                                         </button>
-                                        <input class="required" type="password" placeholder="Enter password" minlength="8">
+                                        <input class="ui-required" type="password" placeholder="Enter password" minlength="8">
                                     </div>
                                     <p class="ui-required-msg">Minimum length is 8 characters.</p>
 
@@ -98,7 +98,7 @@
                                         <button type="button" title="Toggle Password" class="show-pass">
                                             <svg class="ui-icon"><use href="#eye-fill"/></svg>
                                         </button>
-                                        <input class="required" type="password" placeholder="Enter password again" minlength="8">
+                                        <input class="ui-required" type="password" placeholder="Enter password again" minlength="8">
                                     </div>
                                     <p class="ui-required-msg">Please confirm your password.</p>
 

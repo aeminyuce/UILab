@@ -885,7 +885,7 @@
                                     <div class="ui-row ui-no-row-gap">
                                         <div class="ui-col-12">
                                             <div class="ui-input ui-no-border ui-bg-white ui-invert-bg ui-ease-form">
-                                                <input class="required" type="email" maxlength="4" placeholder="your@email.com">
+                                                <input class="ui-required" type="email" placeholder="your@email.com">
                                             </div>
                                         </div>
                                     </div>

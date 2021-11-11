@@ -6,7 +6,7 @@
 ui.requiredForms = {
 
     // targets
-    target: 'required',
+    target: 'ui-required',
 
     // main classnames
     targetAccept: 'ui-required-holder',
@@ -14,10 +14,9 @@ ui.requiredForms = {
 
     nameTypePrefix: 'ui-',
 
-
     // helper classnames
-    nameSuccess: 'success',
-    nameShow: 'show',
+    nameSuccess: 'ui-success',
+    nameShow: 'ui-show',
 
     // outer classnames
     nameHolder: 'ui-form-holder',
@@ -165,8 +164,8 @@ ui.requiredForms = {
 
                 }
 
-                // check email
-                if (type === 'email') {
+                // check emails
+                if (type === ui.requiredForms.nameTypePrefix + 'email') {
 
                     reMail = new RegExp(ui.requiredForms.rexMail);
                     if (val.match(reMail) === null) { showErr(); }

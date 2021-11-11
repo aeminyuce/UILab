@@ -334,6 +334,13 @@ html:not(.ui-no-effects) {
             }
         }
     }
+
+    &required-msg {
+        color: @red; margin-top: @form-spacing;
+
+        &.ui-show { display: block; }
+        &:not(.ui-show) { display: none; }
+    }
 }
 
 .error {
@@ -351,13 +358,6 @@ html:not(.ui-no-effects) {
 
     &.error { color: @red; }
     &.warning { color: @yellow; }
-}
-
-.ui-required-msg {
-    color: @red; margin-top: @form-spacing;
-
-    &.show { display: block; }
-    &:not(.show) { display: none; }
 }
 
 .ui-form- {

@@ -1362,7 +1362,7 @@
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-form-disabled ui-ease-form">
-                                    <input class="required" type="text" placeholder="Disabled required forms are inherited!" disabled>
+                                    <input class="ui-required" type="text" placeholder="Disabled required forms are inherited!" disabled>
                                 </div>
                             </div>
 
@@ -1371,7 +1371,7 @@
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                    <input class="required" type="text" placeholder="Type your name">
+                                    <input class="ui-required" type="text" placeholder="Type your name">
                                 </div>
                                 <p class="ui-required-msg">Please, type your name.</p>
                                 <i class="hint ui-color-black-25">* Required</i>
@@ -1382,7 +1382,7 @@
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                    <input class="required" type="text">
+                                    <input class="ui-required" type="text">
                                 </div>
                                 <i class="hint ui-color-black-25">* Required</i>
                             </div>
@@ -1392,7 +1392,7 @@
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                    <input class="required" type="text" minlength="3" maxlength="10">
+                                    <input class="ui-required" type="text" minlength="3" maxlength="10">
                                 </div>
                                 <p class="ui-required-msg">Minimum length is 3 characters.</p>
                                 <i class="hint ui-color-black-25">* Required</i>
@@ -1403,7 +1403,7 @@
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                    <input class="required" type="text" minnumber="-5" maxnumber="10">
+                                    <input class="ui-required" type="text" minnumber="-5" maxnumber="10">
                                 </div>
                                 <p class="ui-required-msg">Minimum number is -5 and maximum number is 10.</p>
                                 <i class="hint ui-color-black-25">* Required</i>
@@ -1414,7 +1414,7 @@
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                    <input class="required" type="password" minlength="8">
+                                    <input class="ui-required" type="password" minlength="8">
                                 </div>
                                 <p class="ui-required-msg">Minimum length is 8 characters.</p>
                                 <i class="hint ui-color-black-25">* Required</i>
@@ -1425,7 +1425,7 @@
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                    <input class="required" type="email">
+                                    <input class="ui-required" type="email">
                                 </div>
                                 <p class="ui-required-msg">Enter a valid email.</p>
                                 <i class="hint ui-color-black-25">* Required</i>
@@ -1437,7 +1437,7 @@
                             <div class="ui-col-9">
                                 <div class="ui-select ui-round ui-border-dual ui-ease-form">
                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
-                                    <select class="required">
+                                    <select class="ui-required">
                                         <option value="">Select</option>
                                         <option>First</option>
                                         <option>Second</option>
@@ -1456,14 +1456,14 @@
                                     <div class="ui-row ui-no-row-gap">
                                         <div class="ui-col-12">
                                             <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                                <input class="required" type="text" placeholder="Keyword">
+                                                <input class="ui-required" type="text" placeholder="Keyword">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="ui-col-200">
                                         <div class="ui-select ui-round ui-border-dual ui-ease-form">
                                             <svg class="ui-icon"><use href="#angle-down"/></svg>
-                                            <select class="required">
+                                            <select class="ui-required">
                                                 <option value="">Category</option>
                                                 <option>First</option>
                                                 <option>Second</option>
@@ -1487,7 +1487,7 @@
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-textarea ui-margin-10-b ui-round ui-border-dual ui-ease-form">
-                                    <textarea class="required" placeholder="Write your comments." minlength="10"></textarea>
+                                    <textarea class="ui-required" placeholder="Write your comments." minlength="10"></textarea>
                                 </div>
                                 <p class="ui-required-msg">Please, write your comments more than 10 characters.</p>
                                 <i class="hint ui-color-black-25">* Required</i>
@@ -1498,7 +1498,7 @@
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-file ui-round ui-border-dual ui-ease-form">
-                                    <input class="required" type="file">
+                                    <input class="ui-required" type="file">
                                     <span class="ui-btn ui-ease-btn">Browse</span>
                                     <i>Choose file.</i>
                                 </div>
@@ -1512,7 +1512,7 @@
                             <div class="ui-col-9">
                                 <div class="ui-required-holder">
                                     <label>
-                                        <input class="required" type="checkbox">
+                                        <input class="ui-required" type="checkbox">
                                         Checkbox
                                     </label>
                                 </div>
@@ -1529,15 +1529,15 @@
                             <div class="ui-col-9">
                                 <div class="ui-required-holder">
                                     <label>
-                                        <input class="required" type="radio" name="radiotest3">
+                                        <input class="ui-required" type="radio" name="radiotest3">
                                         Radio1
                                     </label>
                                     <label">
-                                        <input class="required" type="radio" name="radiotest3">
+                                        <input class="ui-required" type="radio" name="radiotest3">
                                         Radio2
                                     </label>
                                     <label>
-                                        <input class="required" type="radio" name="radiotest3">
+                                        <input class="ui-required" type="radio" name="radiotest3">
                                         Radio3
                                     </label>
                                 </div>
@@ -1551,7 +1551,7 @@
                             <div class="ui-col-9">
                                 <div class="ui-required-holder">
                                     <label>
-                                        <input class="required indeterminate" type="checkbox">
+                                        <input class="ui-required indeterminate" type="checkbox">
                                         Indeterminate
                                     </label>
                                 </div>
@@ -1569,7 +1569,7 @@
                                 <div class="ui-required-holder">
                                     <label class="ui-label">
                                         <span class="ui-check ui-round ui-border-dual">
-                                            <input class="required" type="checkbox">
+                                            <input class="ui-required" type="checkbox">
                                             <i class="ui-state"></i>
                                         </span>
                                         <b>Checkbox</b>
@@ -1586,21 +1586,21 @@
                                 <div class="ui-required-holder">
                                     <label class="ui-label">
                                         <span class="ui-radio ui-border-dual ui-ease-form">
-                                            <input class="required" type="radio" name="radiotest4">
+                                            <input class="ui-required" type="radio" name="radiotest4">
                                             <i class="ui-state"></i>
                                         </span>
                                         <b>Radio1</b>
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-radio ui-border-dual ui-ease-form">
-                                            <input class="required" type="radio" name="radiotest4">
+                                            <input class="ui-required" type="radio" name="radiotest4">
                                             <i class="ui-state"></i>
                                         </span>
                                         <b>Radio2</b>
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-radio ui-border-dual ui-ease-form">
-                                            <input class="required" type="radio" name="radiotest4">
+                                            <input class="ui-required" type="radio" name="radiotest4">
                                             <i class="ui-state"></i>
                                         </span>
                                         <b>Radio2</b>
@@ -1617,7 +1617,7 @@
                                 <div class="ui-required-holder">
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="required" type="checkbox">
+                                            <input class="ui-required" type="checkbox">
                                             <i class="ui-state"></i>
                                         </span>
                                         <b>Switch</b>
@@ -1807,7 +1807,7 @@
                             <button type="submit">
                                 <svg class="ui-icon"><use href="#search"/></svg>
                             </button>
-                            <input class="required" type="text" placeholder="Required example with text icon post">
+                            <input class="ui-required" type="text" placeholder="Required example with text icon post">
                         </div>
                         <p class="ui-required-msg">Please, enter any keywords.</p>
                         <i class="hint ui-color-white-25">* Required</i>
@@ -1817,7 +1817,7 @@
                     <span class="ui-sp-10"></span>
 
                     <div class="ui-textarea ui-round ui-border-dual ui-form-light ui-ease-form" data-ui-counter="255">
-                        <textarea class="required ui-scrollbar-faded" rows="4" placeholder="Required example with counter textarea" minlength="10"></textarea>
+                        <textarea class="ui-required ui-scrollbar-faded" rows="4" placeholder="Required example with counter textarea" minlength="10"></textarea>
                     </div>
                     <p class="ui-required-msg">Please, write your comments more than 10 characters.</p>
                     <i class="hint ui-color-white-25">* Required</i>

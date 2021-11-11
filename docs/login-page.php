@@ -15,7 +15,7 @@
                     <label class="ui-form-label ui-color-black-50">User Name</label>
                     <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#user"/></svg>
-                        <input class="required" type="text" placeholder="Enter user name" minlength="3" autofocus>
+                        <input class="ui-required" type="text" placeholder="Enter user name" minlength="3" autofocus>
                     </div>
                     <p class="ui-required-msg">Enter user name.</p>
 
@@ -26,7 +26,7 @@
                         <button type="button" title="Toggle Password" class="show-pass">
                             <svg class="ui-icon"><use href="#eye-fill"/></svg>
                         </button>
-                        <input class="required" type="password" placeholder="Enter password" minlength="8">
+                        <input class="ui-required" type="password" placeholder="Enter password" minlength="8">
                     </div>
                     <p class="ui-required-msg">Minimum length is 8 characters.</p>
 
@@ -60,7 +60,7 @@
                     <label class="ui-form-label ui-color-black-50">Your email</label>
                     <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#at"/></svg>
-                        <input class="required" type="email" placeholder="Enter email" minlength="3">
+                        <input class="ui-required" type="email" placeholder="Enter email">
                     </div>
                     <p class="ui-required-msg">Enter email.</p>
 
