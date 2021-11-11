@@ -345,19 +345,12 @@ html:not(.ui-no-effects) {
 
 .error {
     .ui-check,.ui-radio,.ui-switch { background-color: @form-error-bg !important; border-color: @red !important; }
-    &:not(.ui-form-holder):not(.ui-required-holder):not(.hint) { background-color: @form-error-bg !important; border-color: @red !important; }
+    &:not(.ui-form-holder):not(.ui-required-holder):not(.ui-form-hint) { background-color: @form-error-bg !important; border-color: @red !important; }
 
 }
 .warning {
     .ui-check,.ui-radio,.ui-switch { background-color: @form-warning-bg !important; border-color: @yellow !important; }
-    &:not(.ui-form-holder):not(.ui-required-holder):not(.hint) { background-color: @form-warning-bg !important; border-color: @yellow !important; }
-}
-
-.hint {
-    font-size: @font-13; margin-top: @form-spacing; display: block;
-
-    &.error { color: @red; }
-    &.warning { color: @yellow; }
+    &:not(.ui-form-holder):not(.ui-required-holder):not(.ui-form-hint) { background-color: @form-warning-bg !important; border-color: @yellow !important; }
 }
 
 .ui-form- {
@@ -467,6 +460,13 @@ html:not(.ui-no-effects) {
         .ui-input & {
             .ui-icon { ._icon(@form-clear-icon-size); }
         }
+    }
+
+    &hint {
+        font-size: @font-13; margin-top: @form-spacing; display: block;
+
+        &.error { color: @red; }
+        &.warning { color: @yellow; }
     }
 
     &icon- {

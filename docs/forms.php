@@ -12,7 +12,7 @@
                         <div class="ui-input ui-round ui-border-dual ui-ease-form">
                             <input type="text" value="123456">
                         </div>
-                        <p class="hint ui-color-black-25">Form hint</p>
+                        <p class="ui-form-hint ui-color-black-25">Form hint</p>
                     </div>
 
                     <div class="ui-col-3">
@@ -58,7 +58,7 @@
                         <div class="ui-input ui-round ui-border-dual ui-ease-form error">
                             <input type="text" value="123456">
                         </div>
-                        <p class="hint error">Your message is here.</p>
+                        <p class="ui-form-hint error">Your message is here.</p>
                     </div>
 
                     <div class="ui-col-3">
@@ -68,7 +68,7 @@
                         <div class="ui-input ui-round ui-border-dual ui-ease-form warning">
                             <input type="text" value="123456">
                         </div>
-                        <p class="hint warning">Your message is here.</p>
+                        <p class="ui-form-hint warning">Your message is here.</p>
                     </div>
                     <div class="ui-col-3">
                         <label class="ui-form-info">Captcha</label>
@@ -130,7 +130,7 @@
                             <div class="ui-input ui-border-dual ui-round ui-ease-form">
                                 <input type="text" placeholder="Enter name">
                             </div>
-                            <p class="hint ui-color-black-25">Form hint</p>
+                            <p class="ui-form-hint ui-color-black-25">Form hint</p>
                         </div>
                         <div class="ui-col-3">
                             <label class="ui-form-info">Your Age</label>
@@ -145,7 +145,7 @@
                                     <option>31 - 40</option>
                                 </select>
                             </div>
-                            <p class="hint ui-color-black-25">Form hint</p>
+                            <p class="ui-form-hint ui-color-black-25">Form hint</p>
                         </div>
                         <div class="ui-col-3">
                             <label class="ui-form-info">Captcha</label>
@@ -1374,7 +1374,7 @@
                                     <input class="ui-required" type="text" placeholder="Type your name">
                                 </div>
                                 <p class="ui-required-msg">Please, type your name.</p>
-                                <i class="hint ui-color-black-25">* Required</i>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1384,7 +1384,7 @@
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
                                     <input class="ui-required" type="text">
                                 </div>
-                                <i class="hint ui-color-black-25">* Required</i>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1395,7 +1395,7 @@
                                     <input class="ui-required" type="text" minlength="3" maxlength="10">
                                 </div>
                                 <p class="ui-required-msg">Minimum length is 3 characters.</p>
-                                <i class="hint ui-color-black-25">* Required</i>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1406,7 +1406,7 @@
                                     <input class="ui-required" type="text" minnumber="-5" maxnumber="10">
                                 </div>
                                 <p class="ui-required-msg">Minimum number is -5 and maximum number is 10.</p>
-                                <i class="hint ui-color-black-25">* Required</i>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1417,7 +1417,7 @@
                                     <input class="ui-required" type="password" minlength="8">
                                 </div>
                                 <p class="ui-required-msg">Minimum length is 8 characters.</p>
-                                <i class="hint ui-color-black-25">* Required</i>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1428,7 +1428,7 @@
                                     <input class="ui-required" type="email">
                                 </div>
                                 <p class="ui-required-msg">Enter a valid email.</p>
-                                <i class="hint ui-color-black-25">* Required</i>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1444,7 +1444,7 @@
                                     </select>
                                 </div>
                                 <p class="ui-required-msg">Please, select any option.</p>
-                                <i class="hint ui-color-black-25">* Required</i>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1479,7 +1479,7 @@
                                         <li>Select a category.</li>
                                     </ul>
                                 </div>
-                                <i class="hint ui-color-black-25">* Required</i>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1490,7 +1490,7 @@
                                     <textarea class="ui-required" placeholder="Write your comments." minlength="10"></textarea>
                                 </div>
                                 <p class="ui-required-msg">Please, write your comments more than 10 characters.</p>
-                                <i class="hint ui-color-black-25">* Required</i>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1503,7 +1503,7 @@
                                     <i>Choose file.</i>
                                 </div>
                                 <p class="ui-required-msg">Please, select a file.</p>
-                                <i class="hint ui-color-black-25">* Required</i>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1517,7 +1517,7 @@
                                     </label>
                                 </div>
                                 <p class="ui-required-msg">Please, read and accept Terms and Conditions.</p>
-                                <i class="hint ui-color-black-25">
+                                <i class="ui-form-hint ui-color-black-25">
                                     * Required for accepting
                                     <a href="#" class="ui-font-underline">Terms and Conditions.</a>
                                 </i>
@@ -1542,7 +1542,7 @@
                                     </label>
                                 </div>
                                 <p class="ui-required-msg">Please, select any option.</p>
-                                <i class="hint ui-color-black-25">* Required</i>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1556,7 +1556,7 @@
                                     </label>
                                 </div>
                                 <p class="ui-required-msg">Please, read and accept Terms and Conditions.</p>
-                                <i class="hint ui-color-black-25">
+                                <i class="ui-form-hint ui-color-black-25">
                                     * Required for accepting
                                     <a href="#" class="ui-font-underline">Terms and Conditions.</a>
                                 </i>
@@ -1576,7 +1576,7 @@
                                     </label>
                                 </div>
                                 <p class="ui-required-msg">Please, check this checkbox.</p>
-                                <i class="hint ui-color-black-25">* Required</i>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1607,7 +1607,7 @@
                                     </label>
                                 </div>
                                 <p class="ui-required-msg">Please, select any option.</p>
-                                <i class="hint ui-color-black-25">* Required</i>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
                             </div>
 
                             <div class="ui-col-3">
@@ -1624,7 +1624,7 @@
                                     </label>
                                 </div>
                                 <p class="ui-required-msg">Please, read and accept Terms and Conditions.</p>
-                                <i class="hint ui-color-black-25">
+                                <i class="ui-form-hint ui-color-black-25">
                                     * Required for accepting
                                     <a href="#" class="ui-font-underline">Terms and Conditions.</a>
                                 </i>
@@ -1810,7 +1810,7 @@
                             <input class="ui-required" type="text" placeholder="Required example with text icon post">
                         </div>
                         <p class="ui-required-msg">Please, enter any keywords.</p>
-                        <i class="hint ui-color-white-25">* Required</i>
+                        <i class="ui-form-hint ui-color-white-25">* Required</i>
 
                     </form>
 
@@ -1820,7 +1820,7 @@
                         <textarea class="ui-required ui-scrollbar-faded" rows="4" placeholder="Required example with counter textarea" minlength="10"></textarea>
                     </div>
                     <p class="ui-required-msg">Please, write your comments more than 10 characters.</p>
-                    <i class="hint ui-color-white-25">* Required</i>
+                    <i class="ui-form-hint ui-color-white-25">* Required</i>
 
                 </div>
 

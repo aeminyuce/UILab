@@ -5250,7 +5250,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   background-color: hsla(0, 74%, 55%, 0.1) !important;
   border-color: hsl(0, 74%, 55%) !important;
 }
-.error:not(.ui-form-holder):not(.ui-required-holder):not(.hint) {
+.error:not(.ui-form-holder):not(.ui-required-holder):not(.ui-form-hint) {
   background-color: hsla(0, 74%, 55%, 0.1) !important;
   border-color: hsl(0, 74%, 55%) !important;
 }
@@ -5260,20 +5260,9 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   background-color: hsla(42, 100%, 45%, 0.1) !important;
   border-color: hsl(42, 100%, 45%) !important;
 }
-.warning:not(.ui-form-holder):not(.ui-required-holder):not(.hint) {
+.warning:not(.ui-form-holder):not(.ui-required-holder):not(.ui-form-hint) {
   background-color: hsla(42, 100%, 45%, 0.1) !important;
   border-color: hsl(42, 100%, 45%) !important;
-}
-.hint {
-  font-size: 13px;
-  margin-top: 5px;
-  display: block;
-}
-.hint.error {
-  color: hsl(0, 74%, 55%);
-}
-.hint.warning {
-  color: hsl(42, 100%, 45%);
 }
 .ui-form-light {
   border-color: hsla(0, 0%, 100%, 0.175) !important;
@@ -5424,6 +5413,17 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   width: 16px;
   height: 16px;
   stroke-width: 34px;
+}
+.ui-form-hint {
+  font-size: 13px;
+  margin-top: 5px;
+  display: block;
+}
+.ui-form-hint.error {
+  color: hsl(0, 74%, 55%);
+}
+.ui-form-hint.warning {
+  color: hsl(42, 100%, 45%);
 }
 .ui-form-icon-l > .ui-icon {
   right: inherit;
