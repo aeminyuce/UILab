@@ -192,7 +192,7 @@
                 </div>
 
                 <h5 class="ui-h5 ui-font-bold">Dropdowns with Accordion Tabs</h5>
-                <div class="ui-row ui-padding-30-b ui-block-2nd form-lg ui-theme-sub">
+                <div class="ui-row ui-padding-30-b ui-block-2nd ui-form-lg ui-theme-sub">
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
@@ -272,7 +272,7 @@
                 </div>
 
                 <h5 class="ui-h5 ui-font-bold">Dropdowns with Holder Content</h5>
-                <div class="ui-row ui-padding-30-b ui-block-2nd form-lg ui-theme-sub">
+                <div class="ui-row ui-padding-30-b ui-block-2nd ui-form-lg ui-theme-sub">
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
@@ -315,7 +315,7 @@
                             <ul class="ui-dropdown-menu ui-list-column-2 ui-round ui-shadow-lg">
                                 <li class="holder">
                                     <b class="ui-padding-10 ui-block ui-border-b ui-border-light">Title</b>
-                                    <span class="ui-btn-list form-lg ui-ease-1st-btn">
+                                    <span class="ui-btn-list ui-form-lg ui-ease-1st-btn">
                                         <a class="ui-btn ui-btn-ghost ui-btn-multi" href="#">Dropdown Item</a>
                                         <a class="ui-btn ui-btn-ghost ui-btn-multi" href="#">Dropdown Item</a>
                                         <a class="ui-btn ui-btn-ghost ui-btn-multi" href="#">Dropdown Item</a>
@@ -325,7 +325,7 @@
                                 </li>
                                 <li class="holder">
                                     <b class="ui-padding-10 ui-block ui-border-b ui-border-light">Title</b>
-                                    <span class="ui-btn-list form-lg ui-ease-1st-btn">
+                                    <span class="ui-btn-list ui-form-lg ui-ease-1st-btn">
                                         <a class="ui-btn ui-btn-ghost ui-btn-multi" href="#">Dropdown Item</a>
                                         <a class="ui-btn ui-btn-ghost ui-btn-multi" href="#">Dropdown Item</a>
                                         <a class="ui-btn ui-btn-ghost ui-btn-multi" href="#">Dropdown Item</a>
@@ -340,7 +340,7 @@
                 </div>
 
                 <h5 class="ui-h5 ui-font-bold">Dropdowns Selects</h5>
-                <div class="ui-row ui-padding-30-b ui-block-2nd form-lg">
+                <div class="ui-row ui-padding-30-b ui-block-2nd ui-form-lg">
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
@@ -426,7 +426,7 @@
                 </div>
 
                 <h5 class="ui-h5 ui-font-bold">Dropdowns with List Icons</h5>
-                <div class="ui-row ui-padding-30-b ui-block-2nd form-lg">
+                <div class="ui-row ui-padding-30-b ui-block-2nd ui-form-lg">
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn ui-align-l ui-circle">
@@ -486,7 +486,7 @@
                 </div>
 
                 <h5 class="ui-h5 ui-font-bold">Dropdowns with Grid List</h5>
-                <div class="ui-row ui-padding-30-b ui-block-2nd form-lg">
+                <div class="ui-row ui-padding-30-b ui-block-2nd ui-form-lg">
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual">

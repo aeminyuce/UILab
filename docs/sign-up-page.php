@@ -42,14 +42,14 @@
                     <div class="ui-card ui-margin-30-b ui-shadow-lg">
 
                         <div class="ui-col-static ui-sm-fluid">
-                            <div class="ui-row ui-padding-20 form-lg">
+                            <div class="ui-row ui-padding-20 ui-form-lg">
                                 <div class="ui-col-12">
                                     <h3 class="ui-h3 ui-margin-30-b">Create your account</h3>
                                     <p class="ui-color-black-25 large">Sign up to create, discover and connect with the global community.</p>
                                 </div>
                                 <div class="ui-col-6">
 
-                                    <label class="form-label ui-color-black-50">First Name</label>
+                                    <label class="ui-form-label ui-color-black-50">First Name</label>
                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
                                         <input class="required" type="text" placeholder="Enter first name" minlength="3">
                                     </div>
@@ -57,7 +57,7 @@
 
                                     <span class="ui-sp-20"></span>
 
-                                    <label class="form-label ui-color-black-50">Last Name</label>
+                                    <label class="ui-form-label ui-color-black-50">Last Name</label>
                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
                                         <input class="required" type="text" placeholder="Enter last name" minlength="3">
                                     </div>
@@ -65,7 +65,7 @@
 
                                     <span class="ui-sp-20"></span>
 
-                                    <label class="form-label ui-color-black-50">Phone</label>
+                                    <label class="ui-form-label ui-color-black-50">Phone</label>
                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
                                         <input class="required number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
                                     </div>
@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="ui-col-6">
 
-                                    <label class="form-label ui-color-black-50">Email</label>
+                                    <label class="ui-form-label ui-color-black-50">Email</label>
                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
                                         <input class="required" type="email" placeholder="Enter your email">
                                     </div>
@@ -82,7 +82,7 @@
 
                                     <span class="ui-sp-20"></span>
 
-                                    <label class="form-label ui-color-black-50">Password</label>
+                                    <label class="ui-form-label ui-color-black-50">Password</label>
                                     <div class="ui-input text-icon ui-round ui-border-dual ui-ease-form">
                                         <button type="button" title="Toggle Password" class="show-pass">
                                             <svg class="ui-icon"><use href="#eye-fill"/></svg>
@@ -93,7 +93,7 @@
 
                                     <span class="ui-sp-20"></span>
 
-                                    <label class="form-label ui-color-black-50">Confirm Password</label>
+                                    <label class="ui-form-label ui-color-black-50">Confirm Password</label>
                                     <div class="ui-input text-icon ui-round ui-border-dual ui-ease-form">
                                         <button type="button" title="Toggle Password" class="show-pass">
                                             <svg class="ui-icon"><use href="#eye-fill"/></svg>

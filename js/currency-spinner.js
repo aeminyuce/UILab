@@ -6,11 +6,11 @@
 ui.currencySpinner = {
 
     // targets
-    target: 'currency-spinner',
+    target: 'ui-currency-spinner',
 
     // main classnames
-    nameUp: 'currency-up',
-    nameDown: 'currency-down',
+    nameUp: 'ui-currency-up',
+    nameDown: 'ui-currency-down',
 
     // outer classnames
     nameInput: 'ui-input',

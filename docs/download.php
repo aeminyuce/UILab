@@ -9,7 +9,7 @@
                 <div class="ui-row ui-border-b ui-margin-30-b">
 
                     <div class="ui-col-4 ui-offset-4 ui-no-padding-b">
-                        <div class="ui-btn-holder form-lg ui-ease-1st-btn">
+                        <div class="ui-btn-holder ui-form-lg ui-ease-1st-btn">
                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke active">CSS</button>
                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">JS</button>
                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">Icons</button>
@@ -20,10 +20,10 @@
 
                 <div class="ui-fixed ui-fixed-xl ui-padding-15 ui-sm-no-padding ui-shadow-in-sm ui-round ui-theme-gray ui-fill-light-100">
 
-                    <div class="generate-holder ui-tab-content form-lg ui-padding-15 ui-open ui-open-ease">
+                    <div class="generate-holder ui-tab-content ui-form-lg ui-padding-15 ui-open ui-open-ease">
 
                         <div class="ui-align-c ui-margin-30-b">
-                            <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form form-inline-xs">
+                            <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form ui-form-inline-xs">
                                 <input class="ui-cursor-pointer" name="less" class="generate-import" type="file">
                                 <span class="ui-btn ui-padding-30-h ui-circle ui-block ui-ease-btn">
                                     <span class="ui-inline-block">Import LESS File</span>
@@ -39,7 +39,7 @@
 
                                 <div class="generate-forms ui-margin-20-b ui-block-1st">
                                     <label class="custom ui-margin-5-b ui-opacity ui-ease-opacity">
-                                        <span class="switch-custom ui-round ui-border-dual ui-ease-form form-disabled">
+                                        <span class="switch-custom ui-round ui-border-dual ui-ease-form ui-form-disabled">
                                             <input class="generate-toggle" type="checkbox" checked disabled>
                                             <i class="ui-state"></i>
                                         </span>
@@ -47,7 +47,7 @@
                                     </label>
 
                                     <label class="custom">
-                                        <span class="switch-custom ui-round ui-border-dual ui-ease-form form-disabled">
+                                        <span class="switch-custom ui-round ui-border-dual ui-ease-form ui-form-disabled">
                                             <input type="checkbox" name="ui" value="../css/ui" checked disabled>
                                             <i class="ui-state ui-fill-dark-100"></i>
                                         </span>
@@ -530,10 +530,10 @@
 
                     </div>
 
-                    <div class="generate-holder ui-tab-content form-lg ui-padding-15">
+                    <div class="generate-holder ui-tab-content ui-form-lg ui-padding-15">
 
                         <div class="ui-align-c ui-margin-30-b">
-                            <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form form-inline-xs">
+                            <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form ui-form-inline-xs">
                                 <input class="ui-cursor-pointer" name="js" class="generate-import" type="file">
                                 <span class="ui-btn ui-padding-30-h ui-circle ui-block ui-ease-btn">
                                     <span class="ui-inline-block">Import JS File</span>
@@ -897,7 +897,7 @@
 
                     </div>
 
-                    <div class="generate-holder ui-tab-content form-lg ui-padding-15">
+                    <div class="generate-holder ui-tab-content ui-form-lg ui-padding-15">
 
                         <div class="generate-list ui-row ui-row-gap-sm-v">
                             <div class="ui-col-12">

@@ -41,7 +41,7 @@
                 </div>
 
                 <h3 class="ui-h3">Using with Forms</h3>
-                <div class="ui-ease-1st-form ui-padding-30-b form-lg ui-ease-1st-form">
+                <div class="ui-ease-1st-form ui-padding-30-b ui-form-lg ui-ease-1st-form">
                     <div class="ui-input text-icon ui-round ui-border-dual ui-ease-form">
                         <svg class="ui-icon" data-ui-tooltip="tl" title="Your message here!"><use href="#question-circle-fill"/></svg>
                         <input type="text" placeholder="Placeholder Example">

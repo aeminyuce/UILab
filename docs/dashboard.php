@@ -205,7 +205,7 @@
 
                     <span class="ui-sp-15"></span>
 
-                    <div class="ui-btn-list ui-margin-10 ui-icons-margin-10-r form-lg ui-ease-1st-btn">
+                    <div class="ui-btn-list ui-margin-10 ui-icons-margin-10-r ui-form-lg ui-ease-1st-btn">
                         <button class="ui-btn ui-round">
                             <svg class="ui-icon"><use href="#shield"/></svg>
                             Administration
@@ -228,7 +228,7 @@
         <div class="ui-row">
 
             <!-- header: start -->
-            <header class="ui-col-12 ui-align-r ui-icons-no-opacity ui-shadow-sm form-lg ui-ease-layout sidebar-opened" data-ui-classes="ui-shadow-lg">
+            <header class="ui-col-12 ui-align-r ui-icons-no-opacity ui-shadow-sm ui-form-lg ui-ease-layout sidebar-opened" data-ui-classes="ui-shadow-lg">
 
                 <div class="ui-align-c ui-left ui-ease-1st-btn">
                     <button class="sidebar-show ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle ui-visible-lg ui-hidden" data-ui-tooltip title="Toggle Sidebar">
@@ -456,7 +456,7 @@
                     <div class="ui-row ui-border-b ui-margin-15-b ui-theme-panel2">
                         <div class="ui-col-4 ui-offset-4 ui-no-padding-b">
 
-                            <div class="ui-btn-holder ui-color-black-25 form-lg ui-ease-1st-btn">
+                            <div class="ui-btn-holder ui-color-black-25 ui-form-lg ui-ease-1st-btn">
                                 <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active">Forms</button>
                                 <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">Dashboard</button>
                             </div>
@@ -511,7 +511,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="ui-card-side ui-padding-15 form-lg">
+                                        <div class="ui-card-side ui-padding-15 ui-form-lg">
                                             <div class="ui-row">
 
                                                 <div class="ui-col-8 ui-offset-2">
@@ -519,7 +519,7 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="form-grid">First Name</label>
+                                                    <label class="ui-form-grid">First Name</label>
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -529,7 +529,7 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="form-grid">Last Name</label>
+                                                    <label class="ui-form-grid">Last Name</label>
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -539,7 +539,7 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="form-grid">Contact Phone</label>
+                                                    <label class="ui-form-grid">Contact Phone</label>
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-input text-icon-l ui-round ui-border-dual ui-ease-form">
@@ -550,7 +550,7 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="form-grid">Age</label>
+                                                    <label class="ui-form-grid">Age</label>
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-select ui-round ui-border-dual ui-ease-form">
@@ -566,7 +566,7 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="form-grid">Email Address</label>
+                                                    <label class="ui-form-grid">Email Address</label>
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-input text-icon-l ui-round ui-border-dual ui-ease-form">
@@ -577,10 +577,10 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="form-grid">Company Site</label>
+                                                    <label class="ui-form-grid">Company Site</label>
                                                 </div>
                                                 <div class="ui-col-5">
-                                                    <div class="form-holder ui-col-static ui-no-fluid">
+                                                    <div class="ui-form-holder ui-col-static ui-no-fluid">
 
                                                         <div class="ui-row ui-no-row-gap">
                                                             <div class="ui-col-12">
@@ -612,7 +612,7 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="form-grid">Country</label>
+                                                    <label class="ui-form-grid">Country</label>
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete ui-input text-icon-l ui-round ui-border-dual ui-ease-form">
@@ -623,7 +623,7 @@
                                                 </div>
 
                                                 <div class="ui-col-3 ui-offset-2">
-                                                    <label class="form-grid">Address</label>
+                                                    <label class="ui-form-grid">Address</label>
                                                 </div>
                                                 <div class="ui-col-5">
                                                     <div class="ui-textarea ui-round ui-border-dual ui-ease-form" data-ui-counter="1000">
@@ -834,7 +834,7 @@
                                 <div class="ui-card ui-full-h ui-padding-15 ui-padding-10-t ui-round ui-shadow-lg" style="min-height: 350px;">
                                     <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
-                                        <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-margin-10-b ui-border-b form-lg ui-ease-1st-btn">
+                                        <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-margin-10-b ui-border-b ui-form-lg ui-ease-1st-btn">
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active">Delayed</button>
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">Paused</button>
                                         </div>
@@ -1049,7 +1049,7 @@
 
                             <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
                                 <div class="ui-card ui-full-h ui-padding-15 ui-padding-10-t ui-round ui-shadow-lg" style="min-height: 350px;">
-                                    <div class="ui-tabs form-lg ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
+                                    <div class="ui-tabs ui-form-lg ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-current">
 
                                         <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-margin-10-b ui-border-b ui-ease-1st-btn">
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-current ui-active">News</button>
@@ -1766,7 +1766,7 @@
 </div>
 
 <!-- modal search -->
-<div class="search ui-modal form-lg">
+<div class="search ui-modal ui-form-lg">
     <div class="ui-modal-container ui-xs-no-padding">
 
         <form action="#successful">

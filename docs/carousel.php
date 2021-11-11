@@ -9,7 +9,7 @@
                     <h5 class="ui-h5 ui-font-bold">HTML Content Carousel</h5>
 
                     <div class="ui-carousel ui-padding-10 ui-round ui-shadow-in-sm ui-theme-gray ui-fill-light-100" data-ui-col="1" data-ui-slide="4000">
-                        <div class="ui-carousel-slider form-lg ui-ease-2nd-layout ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
+                        <div class="ui-carousel-slider ui-form-lg ui-ease-2nd-layout ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
                             <div class="ui-slide-content ui-padding-10-h" data-ui-animate="10">
 
@@ -148,7 +148,7 @@
                             </div>
 
                         </div>
-                        <div class="ui-carousel-nav form-lg ui-margin-10-b ui-ease-1st-btn">
+                        <div class="ui-carousel-nav ui-form-lg ui-margin-10-b ui-ease-1st-btn">
                             <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square ui-circle">
                                 <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
                             </button>

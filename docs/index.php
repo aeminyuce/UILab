@@ -89,7 +89,7 @@
 ?>
 
     <!-- header -->
-    <header class="ui-container form-lg ui-theme-base ui-invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
+    <header class="ui-container ui-form-lg ui-theme-base ui-invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-15">
                 <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost ui-circle ui-icons-no-opacity ui-right ui-ease-btn ui-hidden-ie">
@@ -123,7 +123,7 @@
     } else {
 ?>
     <!-- header -->
-    <header class="ui-container form-lg ui-invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
+    <header class="ui-container ui-form-lg ui-invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
         <div class="ui-row">
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-col-250 ui-col-xs-100 ui-padding-15 ui-no-padding-r">
@@ -210,7 +210,7 @@
                             <h1 class="ui-h1 ui-font-light">UI lab is a modular design system.</h2>
                             <h4 class="ui-h4 ui-font-bold">For developing web interfaces fastly!</h4>
                             <span class="ui-sp-15"></span>
-                            <div class="form-lg ui-ease-1st-btn">
+                            <div class="ui-form-lg ui-ease-1st-btn">
                                 <a href="?p=icons" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-margin-5-h ui-xs-no-margin-h ui-circle ui-fill-dark-300">
                                     <svg class="ui-icon ui-margin-5-r"><use href="#draw"/></svg>
                                     See Icons

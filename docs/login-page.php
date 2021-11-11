@@ -6,13 +6,13 @@
     <div class="ui-row ui-no-row-gap ui-sm-fluid ui-full-h">
         <div class="login-forms-container ui-col-lg-5 ui-col-6">
 
-            <div class="forms-holder ui-card form-lg ui-tabs ui-shadow-lg ui-ease-tabs">
+            <div class="forms-holder ui-card ui-form-lg ui-tabs ui-shadow-lg ui-ease-tabs">
                 <form id="login" class="ui-tab-content ui-open ui-open-ease" action="#">
 
                     <h3 class="ui-h3 ui-margin-30-b">Login to continue</h3>
                     <p class="ui-highlight ui-color-black-25 large">Sign in to create, discover and connect with the global community.</p>
 
-                    <label class="form-label ui-color-black-50">User Name</label>
+                    <label class="ui-form-label ui-color-black-50">User Name</label>
                     <div class="ui-input text-icon ui-round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#user"/></svg>
                         <input class="required" type="text" placeholder="Enter user name" minlength="3" autofocus>
@@ -21,7 +21,7 @@
 
                     <span class="ui-sp-15"></span>
 
-                    <label class="form-label ui-color-black-50">Password</label>
+                    <label class="ui-form-label ui-color-black-50">Password</label>
                     <div class="ui-input text-icon ui-round ui-border-dual ui-ease-form">
                         <button type="button" title="Toggle Password" class="show-pass">
                             <svg class="ui-icon"><use href="#eye-fill"/></svg>
@@ -57,7 +57,7 @@
                     <h3 class="ui-h3 ui-margin-30-b">Forgot password?</h3>
                     <p class="ui-highlight ui-color-black-25 large">Please enter your email address. You will receive a link to create a new password via email.</p>
 
-                    <label class="form-label ui-color-black-50">Your email</label>
+                    <label class="ui-form-label ui-color-black-50">Your email</label>
                     <div class="ui-input text-icon ui-round ui-border-dual ui-ease-form">
                         <svg class="ui-icon"><use href="#at"/></svg>
                         <input class="required" type="email" placeholder="Enter email" minlength="3">

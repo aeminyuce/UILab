@@ -20,7 +20,7 @@
                         <div class="ui-col-12 ui-align-r">
 
                             <div class="ui-hidden-sm">
-                                <div class="ui-ease-1st-btn ui-icons-no-opacity form-lg ui-add-mobile-menu-r">
+                                <div class="ui-ease-1st-btn ui-icons-no-opacity ui-form-lg ui-add-mobile-menu-r">
                                     <a href="#" class="ui-btn ui-btn-sm-fluid ui-btn-ghost">
                                         <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#home"/></svg>
                                         Home
@@ -82,7 +82,7 @@
 <main class="ui-container ui-no-gutter">
 
     <!-- tab banner: start -->
-    <div class="ui-tabs form-lg ui-ease-tabs" data-ui-classes="ui-current ui-border-lg ui-stroke">
+    <div class="ui-tabs ui-form-lg ui-ease-tabs" data-ui-classes="ui-current ui-border-lg ui-stroke">
 
         <div class="ui-fixed ui-padding-10-t ui-theme-farmer2">
             <div class="ui-row ui-no-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
@@ -223,7 +223,7 @@
     <!-- tab banner: end -->
 
     <!-- home links: start -->
-    <div class="ui-fixed home-links ui-align-c form-lg ui-theme-farmer2 ui-set-relative">
+    <div class="ui-fixed home-links ui-align-c ui-form-lg ui-theme-farmer2 ui-set-relative">
         <div class="ui-carousel" data-ui-col="4" data-ui-col-md="2" data-ui-col-sm="2" data-ui-col-xs="1" data-ui-slide="4000">
             <div class="ui-carousel-slider ui-icons-xxl ui-hover-shadow-2nd ui-hover-scale-2nd ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
@@ -340,7 +340,7 @@
                 </div>
             </div>
         </div>
-        <div class="ui-tabs form-lg ui-border-t ui-padding-10-t ui-ease-tabs" data-ui-classes="ui-current ui-border-lg ui-stroke">
+        <div class="ui-tabs ui-form-lg ui-border-t ui-padding-10-t ui-ease-tabs" data-ui-classes="ui-current ui-border-lg ui-stroke">
 
             <div class="ui-fixed">
                 <div class="ui-row ui-no-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
@@ -851,7 +851,7 @@
                     <div class="footer-social ui-padding-15 ui-icons-no-opacity">
                         <div class="ui-card ui-padding-30 ui-shadow-lg ui-theme-farmer ui-fill-dark-100">
                             <h4 class="ui-h4 ui-margin-15-b">Social</h4>
-                            <div class="ui-align-c form-lg ui-ease-1st-btn">
+                            <div class="ui-align-c ui-form-lg ui-ease-1st-btn">
                                 <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
                                     <svg class="ui-icon"><use href="#facebook"/></svg>
                                 </a>
@@ -881,7 +881,7 @@
                             <p class="ui-highlight">Get in on the best deals, new products and gardening tips.</p>
                             <form action="#">
 
-                                <div class="form-holder ui-col-static ui-no-fluid form-lg">
+                                <div class="ui-form-holder ui-col-static ui-no-fluid ui-form-lg">
                                     <div class="ui-row ui-no-row-gap">
                                         <div class="ui-col-12">
                                             <div class="ui-input ui-no-border ui-bg-white ui-invert-bg ui-ease-form">

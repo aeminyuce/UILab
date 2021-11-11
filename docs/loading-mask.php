@@ -14,7 +14,7 @@
                 <h3 class="ui-h3">Loading Mask with Buttons</h3>
                 <div class="ui-padding-30-b ui-theme-base">
 
-                    <div class="form-lg ui-ease-1st-btn">
+                    <div class="ui-form-lg ui-ease-1st-btn">
                         <button id="loadingBtn" class="ui-btn ui-btn-xs-fluid ui-padding-25-h ui-round ui-theme-sub ui-fill-dark-100 ui-ease-btn">Button</button>
                     </div>
 
@@ -23,7 +23,7 @@
 
                     <span class="ui-sp-30"></span>
 
-                    <div class="form-lg ui-ease-1st-btn">
+                    <div class="ui-form-lg ui-ease-1st-btn">
                         <a href="#" class="loadingBtn ui-btn ui-btn-xs-fluid ui-padding-25-h ui-round ui-theme-sub ui-fill-dark-100">Link</a>
                         <button class="loadingBtn ui-btn ui-btn-xs-fluid ui-padding-25-h ui-round ui-theme-sub ui-fill-dark-100" onclick="alert('Javascript Alert');">Javascript Alert</button>
                     </div>
@@ -36,8 +36,8 @@
                 <h3 class="ui-h3">Loading Mask with Forms</h3>
                 <div class="ui-padding-30-b ui-theme-base">
 
-                    <div class="form-lg">
-                        <div class="loadingText1 ui-input ui-border-dual ui-round form-inline ui-ease-form">
+                    <div class="ui-form-lg">
+                        <div class="loadingText1 ui-input ui-border-dual ui-round ui-form-inline ui-ease-form">
                             <input type="text" placeholder="Enter name">
                         </div>
                     </div>
@@ -46,8 +46,8 @@
 
                     <span class="ui-sp-30"></span>
 
-                    <div class="form-lg">
-                        <div class="loadingText2 ui-input text-icon-l ui-margin-10-b ui-round ui-border-dual form-inline ui-ease-form">
+                    <div class="ui-form-lg">
+                        <div class="loadingText2 ui-input text-icon-l ui-margin-10-b ui-round ui-border-dual ui-form-inline ui-ease-form">
                             <svg class="ui-icon"><use href="#search"/></svg>
                             <input type="text" placeholder="Left icon">
                         </div>
@@ -57,8 +57,8 @@
 
                     <span class="ui-sp-30"></span>
 
-                    <div class="form-lg">
-                        <div class="loadingSelect ui-select ui-round ui-border-dual form-inline ui-ease-form">
+                    <div class="ui-form-lg">
+                        <div class="loadingSelect ui-select ui-round ui-border-dual ui-form-inline ui-ease-form">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select your age</option>

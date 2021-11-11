@@ -20,7 +20,7 @@ ui.requiredForms = {
     nameShow: 'show',
 
     // outer classnames
-    nameHolder: 'form-holder',
+    nameHolder: 'ui-form-holder',
 
     nameInput: 'ui-input',
     nameSelect: 'ui-select',

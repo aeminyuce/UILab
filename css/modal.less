@@ -59,7 +59,7 @@
             .ui-modal-content { background: none !important; box-shadow: none !important; }
 
             .error {
-                &:not(.form-holder) { background-color: @red !important; }
+                &:not(.ui-form-holder) { background-color: @red !important; }
                 .ui-icon { color: @white !important; }
             }
         }
@@ -141,7 +141,7 @@
     &-header,&-footer {
         text-overflow: ellipsis; white-space: nowrap; background-color: @modal-footer-bg; padding: @modal-padding; overflow: hidden; position: absolute; right: 0; left: 0;
 
-        .ui-btn-lg,&.form-lg .ui-btn { margin: ((@btn-default - @btn-lg) / 2) 0; }
+        .ui-btn-lg,&.ui-form-lg .ui-btn { margin: ((@btn-default - @btn-lg) / 2) 0; }
         .ui-btn {
             &-sm { margin: ((@btn-default - @btn-sm) / 2) 0; }
             &-xs { margin: ((@btn-default - @btn-xs) / 2) 0; }

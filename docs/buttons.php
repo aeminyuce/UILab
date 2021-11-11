@@ -4,7 +4,7 @@
             <div class="ui-col-12 ui-padding-30">
 
                 <h3 class="ui-h3">Button Styles</h3>
-                <div class="ui-row ui-padding-30-b ui-block-2nd form-lg ui-ease-2nd-btn">
+                <div class="ui-row ui-padding-30-b ui-block-2nd ui-form-lg ui-ease-2nd-btn">
                     <div class="ui-col-3 ui-col-sm-6">
                         <a class="ui-btn" href="#">Button</a>
                     </div>
@@ -44,7 +44,7 @@
                 </div>
 
                 <h3 class="ui-h3">Button Themes</h3>
-                <div class="ui-row ui-padding-30-b ui-block-2nd form-lg ui-ease-2nd-btn">
+                <div class="ui-row ui-padding-30-b ui-block-2nd ui-form-lg ui-ease-2nd-btn">
                     <div class="ui-col-3 ui-col-sm-6">
                         <a class="ui-btn ui-theme-red ui-fill-dark-100" href="#">Button</a>
                     </div>
@@ -233,7 +233,7 @@
                 </div>
 
                 <h3 class="ui-h3">Responsive Buttons</h3>
-                <div class="ui-padding-30-b form-lg ui-ease-1st-btn">
+                <div class="ui-padding-30-b ui-form-lg ui-ease-1st-btn">
                     <a class="ui-btn ui-btn-square ui-round ui-btn-xs-fluid" href="#">
                         <svg class="ui-icon"><use href="#filter"/></svg>
                     </a>
@@ -243,7 +243,7 @@
                 </div>
 
                 <h3 class="ui-h3">Block Level Buttons</h3>
-                <div class="ui-row ui-padding-30-b form-lg ui-ease-2nd-btn">
+                <div class="ui-row ui-padding-30-b ui-form-lg ui-ease-2nd-btn">
                     <div class="ui-col-6 ui-align-c">
                         <a class="ui-btn ui-btn-xs-fluid ui-round ui-theme-yellow ui-fill-dark-100" href="#">Responsive Button</a>
                     </div>
@@ -378,7 +378,7 @@
                         </a>
                     </div>
 
-                    <div class="ui-pagination form-lg ui-align-c ui-theme-sub ui-ease-1st-btn">
+                    <div class="ui-pagination ui-form-lg ui-align-c ui-theme-sub ui-ease-1st-btn">
                         <a class="ui-btn prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-left"/></svg>
                         </a>
@@ -404,7 +404,7 @@
                 <h3 class="ui-h3">Button List</h3>
                 <div class="ui-row ui-padding-30-b">
                     <div class="ui-col-6">
-                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r form-lg ui-icons-no-opacity ui-theme-green ui-ease-1st-btn">
+                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r ui-form-lg ui-icons-no-opacity ui-theme-green ui-ease-1st-btn">
                             <button class="ui-btn">
                                 <svg class="ui-icon ui-current"><use href="#shield"/></svg>Administration
                             </button>
@@ -417,7 +417,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r form-lg ui-icons-no-opacity ui-theme-red ui-ease-1st-btn">
+                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r ui-form-lg ui-icons-no-opacity ui-theme-red ui-ease-1st-btn">
                             <button class="ui-btn ui-round">
                                 <svg class="ui-icon ui-current"><use href="#shield"/></svg>Administration
                             </button>
@@ -430,7 +430,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r form-lg ui-icons-no-opacity ui-theme-orange ui-ease-1st-btn">
+                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r ui-form-lg ui-icons-no-opacity ui-theme-orange ui-ease-1st-btn">
                             <button class="ui-btn ui-btn-ghost ui-round ui-border ui-stroke">
                                 <svg class="ui-icon ui-current"><use href="#shield"/></svg>Administration
                             </button>
@@ -443,7 +443,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r form-lg ui-icons-no-opacity ui-theme-yellow ui-ease-1st-btn">
+                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r ui-form-lg ui-icons-no-opacity ui-theme-yellow ui-ease-1st-btn">
                             <button class="ui-btn ui-btn-ghost ui-round ui-border-dual ui-stroke">
                                 <svg class="ui-icon ui-current"><use href="#shield"/></svg>Administration
                             </button>
@@ -460,7 +460,7 @@
                 <h3 class="ui-h3">Button Holder</h3>
                 <div class="ui-row ui-padding-30-b">
                     <div class="ui-col-6">
-                        <div class="ui-btn-holder form-lg ui-theme-base ui-ease-1st-btn">
+                        <div class="ui-btn-holder ui-form-lg ui-theme-base ui-ease-1st-btn">
                             <button class="ui-btn ui-fill-dark-100">1</button>
                             <button class="ui-btn ui-fill-dark-100">2</button>
                             <button class="ui-btn ui-fill-dark-100">3</button>
@@ -469,7 +469,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-holder form-lg ui-theme-sub ui-ease-1st-btn">
+                        <div class="ui-btn-holder ui-form-lg ui-theme-sub ui-ease-1st-btn">
                             <button class="ui-btn ui-round ui-fill-dark-100">1</button>
                             <button class="ui-btn ui-round ui-fill-dark-100">2</button>
                             <button class="ui-btn ui-round ui-fill-dark-100">3</button>
@@ -478,21 +478,21 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-holder ui-btn-sm-fluid form-lg ui-ease-1st-btn">
+                        <div class="ui-btn-holder ui-btn-sm-fluid ui-form-lg ui-ease-1st-btn">
                             <button class="ui-btn ui-round">One</button>
                             <button class="ui-btn ui-round">Two</button>
                             <button class="ui-btn ui-round">Three</button>
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-holder ui-btn-xs-fluid form-lg ui-ease-1st-btn">
+                        <div class="ui-btn-holder ui-btn-xs-fluid ui-form-lg ui-ease-1st-btn">
                             <button class="ui-btn ui-round">One</button>
                             <button class="ui-btn ui-round">Two</button>
                             <button class="ui-btn ui-round">Three</button>
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-holder form-lg ui-ease-1st-btn">
+                        <div class="ui-btn-holder ui-form-lg ui-ease-1st-btn">
                             <button class="ui-btn ui-round ui-border-r">1</button>
                             <button class="ui-btn ui-round ui-border-r">2</button>
                             <button class="ui-btn ui-round ui-border-r">3</button>
@@ -501,7 +501,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-holder form-lg ui-ease-1st-btn">
+                        <div class="ui-btn-holder ui-form-lg ui-ease-1st-btn">
                             <button class="ui-btn ui-round ui-border">1</button>
                             <button class="ui-btn ui-round ui-border">2</button>
                             <button class="ui-btn ui-round ui-border">3</button>
@@ -510,14 +510,14 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-holder ui-btn-sm-fluid form-lg ui-ease-1st-btn">
+                        <div class="ui-btn-holder ui-btn-sm-fluid ui-form-lg ui-ease-1st-btn">
                             <button class="ui-btn ui-round ui-border">One</button>
                             <button class="ui-btn ui-round ui-border">Two</button>
                             <button class="ui-btn ui-round ui-border">Three</button>
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-holder ui-btn-xs-fluid form-lg ui-ease-1st-btn">
+                        <div class="ui-btn-holder ui-btn-xs-fluid ui-form-lg ui-ease-1st-btn">
                             <button class="ui-btn ui-round ui-border-dual">One</button>
                             <button class="ui-btn ui-round ui-border-dual">Two</button>
                             <button class="ui-btn ui-round ui-border-dual">Three</button>

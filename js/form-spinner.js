@@ -6,11 +6,11 @@
 ui.formSpinner = {
 
     // targets
-    target: 'form-spinner',
+    target: 'ui-form-spinner',
 
     // main classnames
-    nameUp: 'spinner-up',
-    nameDown: 'spinner-down'
+    nameUp: 'ui-spinner-up',
+    nameDown: 'ui-spinner-down'
 
 };
 

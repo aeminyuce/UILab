@@ -227,7 +227,7 @@
                             <span class="ui-font-16">Found <b>47</b> and displaying <b>9</b> products.</span>
                         </div>
                         <div class="ui-col-6 ui-align-r ui-sm-no-padding-t">
-                            <div class="ui-select ui-align-l ui-round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
+                            <div class="ui-select ui-align-l ui-round ui-form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="1" checked>Sort by</option>
@@ -236,7 +236,7 @@
                                     <option value="4">Price (High to Low)</option>
                                 </select>
                             </div>
-                            <div class="ui-select ui-align-l ui-round form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
+                            <div class="ui-select ui-align-l ui-round ui-form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="12" checked>Show 9</option>
@@ -259,7 +259,7 @@
                         </div>
                     </div>
 
-                    <div class="products-list ui-row form-lg ui-hover-shadow-2nd ui-ease-2nd-layout ui-hover-t-2nd">
+                    <div class="products-list ui-row ui-form-lg ui-hover-shadow-2nd ui-ease-2nd-layout ui-hover-t-2nd">
                         <div class="ui-col-4 ui-col-sm-6">
                             <a class="ui-full-h ui-padding-15 ui-no-padding-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-margin-20-b">

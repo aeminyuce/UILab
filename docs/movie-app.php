@@ -6,7 +6,7 @@
         <div class="ui-col-200 ui-set-relative ui-hidden-md">
             <div class="sidebar ui-col-200 ui-full-h ui-set-fixed ui-set-l ui-padding-5 ui-fill-dark-100 ui-hidden-md ui-scroll-v ui-scrollbar-faded">
 
-                <div class="ui-align-l ui-padding-10 ui-icons-no-opacity ui-icons-margin-10-r form-lg ui-add-mobile-menu-l">
+                <div class="ui-align-l ui-padding-10 ui-icons-no-opacity ui-icons-margin-10-r ui-form-lg ui-add-mobile-menu-l">
                     <h5 class="ui-h5 ui-color-white-50 ui-padding-15 ui-margin-5-b">LIBRARY</h5>
                     <ul class="ui-list-unstyled ui-list-spacer-15 ui-font-16 ui-font-bold ui-block-2nd ui-ease-2nd-btn">
                         <li>
@@ -79,7 +79,7 @@
 
                 <div class="ui-padding-30 ui-no-padding-b ui-md-no-padding">
 
-                    <header class="ui-row ui-no-row-gap-t ui-sticky-md ui-icons-no-opacity form-lg" data-ui-classes="ui-shadow-lg">
+                    <header class="ui-row ui-no-row-gap-t ui-sticky-md ui-icons-no-opacity ui-form-lg" data-ui-classes="ui-shadow-lg">
                         <div class="ui-col-6 ui-hidden-md ui-ease-1st-form">
                             <div class="ui-input text-icon-both ui-margin-15-b ui-circle ui-no-border ui-theme-gray ui-fill-light-300 ui-has-clear">
                                 <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
@@ -412,7 +412,7 @@
 </div>
 
 <!-- modal search -->
-<div class="search ui-modal form-lg">
+<div class="search ui-modal ui-form-lg">
     <div class="ui-modal-container ui-xs-no-padding">
 
         <form action="#successful">

@@ -9,7 +9,7 @@
                         <div class="ui-col-6">
                             <h3 class="ui-h3 ui-margin-10-v ui-sm-no-margin">Image Uploader</h3>
                         </div>
-                        <div class="ui-col-6 ui-align-r ui-sm-no-padding-t form-lg">
+                        <div class="ui-col-6 ui-align-r ui-sm-no-padding-t ui-form-lg">
 
                             <div class="ui-file ui-no-border ui-inline-block ui-round ui-ease-form">
                                 <input class="ui-bg-white ui-cursor-pointer" type="file" name="images[]" multiple>

@@ -16,8 +16,8 @@ ui.forms = {
     // main classnames
     nameFocus: 'ui-form-focus',
 
-    nameHolder: 'form-holder',
-    nameHolderFocus: 'form-holder-focus',
+    nameHolder: 'ui-form-holder',
+    nameHolderFocus: 'ui-form-holder-focus',
 
     nameHasClear: 'ui-has-clear',
     nameClear: 'ui-form-clear',

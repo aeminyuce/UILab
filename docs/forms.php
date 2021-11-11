@@ -6,7 +6,7 @@
                 <h3 class="ui-h3">Forms in Grid System</h3>
                 <div class="ui-row ui-padding-30-b">
                     <div class="ui-col-3">
-                        <label class="form-grid">Label</label>
+                        <label class="ui-form-grid">Label</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -16,43 +16,43 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="form-grid">Label</label>
+                        <label class="ui-form-grid">Label</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="ui-input form-disabled ui-round ui-border-dual ui-ease-form">
+                        <div class="ui-input ui-form-disabled ui-round ui-border-dual ui-ease-form">
                             <input type="text" disabled value="Disabled Input">
                         </div>
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="form-grid">Label</label>
+                        <label class="ui-form-grid">Label</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="ui-textarea form-disabled ui-round ui-border-dual ui-ease-form">
+                        <div class="ui-textarea ui-form-disabled ui-round ui-border-dual ui-ease-form">
                             <textarea disabled>Disabled Textarea</textarea>
                         </div>
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="form-grid">Label</label>
+                        <label class="ui-form-grid">Label</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="ui-input form-readonly ui-round ui-border-dual ui-ease-form">
+                        <div class="ui-input ui-form-readonly ui-round ui-border-dual ui-ease-form">
                             <input type="text" readonly value="Readonly Input">
                         </div>
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="form-grid">Label</label>
+                        <label class="ui-form-grid">Label</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="ui-textarea form-readonly ui-round ui-border-dual ui-ease-form">
+                        <div class="ui-textarea ui-form-readonly ui-round ui-border-dual ui-ease-form">
                             <textarea readonly>Readonly Textarea</textarea>
                         </div>
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="form-grid">Error Form</label>
+                        <label class="ui-form-grid">Error Form</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input ui-round ui-border-dual ui-ease-form error">
@@ -62,7 +62,7 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="form-grid">Warning Form</label>
+                        <label class="ui-form-grid">Warning Form</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input ui-round ui-border-dual ui-ease-form warning">
@@ -71,10 +71,10 @@
                         <p class="hint warning">Your message is here.</p>
                     </div>
                     <div class="ui-col-3">
-                        <label class="form-grid">Captcha</label>
+                        <label class="ui-form-grid">Captcha</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="form-holder ui-col-static ui-no-fluid">
+                        <div class="ui-form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-100">
                                 <img class="ui-border-dual ui-round ui-ease-border"
@@ -101,13 +101,13 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <label class="form-label">Full Name</label>
+                        <label class="ui-form-label">Full Name</label>
                         <div class="ui-input ui-border-dual ui-round ui-ease-form">
                             <input type="text" placeholder="Enter name">
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <label class="form-label">Your Age</label>
+                        <label class="ui-form-label">Your Age</label>
                         <div class="ui-select ui-round ui-border-dual ui-ease-form">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                             <select>
@@ -121,10 +121,10 @@
                 </div>
 
                 <h3 class="ui-h3">Large Forms</h3>
-                <div class="form-lg ui-padding-30-b">
+                <div class="ui-form-lg ui-padding-30-b">
                     <div class="ui-row">
                         <div class="ui-col-3">
-                            <label class="form-grid">Full Name</label>
+                            <label class="ui-form-grid">Full Name</label>
                         </div>
                         <div class="ui-col-9">
                             <div class="ui-input ui-border-dual ui-round ui-ease-form">
@@ -133,7 +133,7 @@
                             <p class="hint ui-color-black-25">Form hint</p>
                         </div>
                         <div class="ui-col-3">
-                            <label class="form-grid">Your Age</label>
+                            <label class="ui-form-grid">Your Age</label>
                         </div>
                         <div class="ui-col-9">
                             <div class="ui-select ui-round ui-border-dual ui-ease-form">
@@ -148,10 +148,10 @@
                             <p class="hint ui-color-black-25">Form hint</p>
                         </div>
                         <div class="ui-col-3">
-                            <label class="form-grid">Captcha</label>
+                            <label class="ui-form-grid">Captcha</label>
                         </div>
                         <div class="ui-col-9">
-                            <div class="form-holder ui-col-static ui-no-fluid">
+                            <div class="ui-form-holder ui-col-static ui-no-fluid">
 
                                 <div class="ui-col-100">
                                     <img class="ui-border-dual ui-round ui-ease-border"
@@ -181,13 +181,13 @@
                             <button type="reset" class="ui-btn ui-btn-xs-fluid ui-round ui-ease-btn">Reset Form</button>
                         </div>
                         <div class="ui-col-6">
-                            <label class="form-label">Full Name</label>
+                            <label class="ui-form-label">Full Name</label>
                             <div class="ui-input ui-border-dual ui-round ui-ease-form">
                                 <input type="text" placeholder="Enter name">
                             </div>
                         </div>
                         <div class="ui-col-6">
-                            <label class="form-label">Your Age</label>
+                            <label class="ui-form-label">Your Age</label>
                             <div class="ui-select ui-round ui-border-dual ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
@@ -206,11 +206,11 @@
                     <div class="ui-row ui-padding-30-b">
 
                         <div class="ui-col-12">
-                            <div data-ui-src="json/countries.json" data-ui-val="code" class="ui-autocomplete ui-input text-icon ui-round ui-border-dual ui-ease-form form-inline-xs">
+                            <div data-ui-src="json/countries.json" data-ui-val="code" class="ui-autocomplete ui-input text-icon ui-round ui-border-dual ui-ease-form ui-form-inline-xs">
                                 <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
                                 <input type="text" placeholder="Country Code" autocomplete="off">
                             </div>
-                            <div data-ui-src="json/countries.json" data-ui-val="name" class="ui-autocomplete ui-input text-icon ui-round ui-border-dual ui-ease-form form-inline-xs">
+                            <div data-ui-src="json/countries.json" data-ui-val="name" class="ui-autocomplete ui-input text-icon ui-round ui-border-dual ui-ease-form ui-form-inline-xs">
                                 <svg class="ui-icon"><use href="#keyboard-fill"/></svg>
                                 <input type="text" placeholder="Country" autocomplete="off">
                             </div>
@@ -455,8 +455,8 @@
 
                     <span class="ui-sp-10"></span>
 
-                    <label class="form-label ui-padding-10-b">File Input with Large Forms</label>
-                    <div class="form-lg ui-ease-1st-form">
+                    <label class="ui-form-label ui-padding-10-b">File Input with Large Forms</label>
+                    <div class="ui-form-lg ui-ease-1st-form">
                         <div class="ui-file ui-round ui-no-border ui-fill-light-100">
                             <input type="file">
                             <span class="ui-btn ui-ease-btn">Browse</span>
@@ -482,7 +482,7 @@
 
                     <span class="ui-sp-10"></span>
 
-                    <label class="form-label ui-padding-10-b">File Input Like Buttons</label>
+                    <label class="ui-form-label ui-padding-10-b">File Input Like Buttons</label>
                     <div>
                         <div class="ui-file ui-no-border ui-inline-block ui-round ui-ease-form">
                             <input class="ui-cursor-pointer" type="file">
@@ -518,7 +518,7 @@
 
                     <span class="ui-sp-10"></span>
 
-                    <div class="form-lg">
+                    <div class="ui-form-lg">
                         <div class="ui-file ui-no-border ui-inline-block ui-round ui-ease-form">
                             <input class="ui-cursor-pointer" type="file">
                             <span class="ui-btn ui-btn-square ui-ease-btn">
@@ -673,7 +673,7 @@
 
                     <span class="ui-sp-15"></span>
 
-                    <div class="ui-input ui-round ui-border-dual ui-ease-form form-inline">
+                    <div class="ui-input ui-round ui-border-dual ui-ease-form ui-form-inline">
                         <input type="text" value="Inline form">
                     </div>
                     <label class="custom">
@@ -719,10 +719,10 @@
 
                 <h3 class="ui-h3">Inline Forms</h3>
                 <div class="ui-padding-30-b">
-                    <div class="ui-input ui-margin-10-b ui-round ui-border-dual form-inline ui-ease-form">
+                    <div class="ui-input ui-margin-10-b ui-round ui-border-dual ui-form-inline ui-ease-form">
                         <input type="text">
                     </div>
-                    <div class="ui-select ui-margin-10-b ui-round ui-border-dual form-inline ui-ease-form">
+                    <div class="ui-select ui-margin-10-b ui-round ui-border-dual ui-form-inline ui-ease-form">
                         <svg class="ui-icon"><use href="#angle-down"/></svg>
                         <select>
                             <option value="">Select</option>
@@ -730,17 +730,17 @@
                             <option>Second</option>
                         </select>
                     </div>
-                    <div class="ui-textarea ui-toggle-textarea ui-margin-10-b ui-round ui-border-dual form-inline ui-ease-form">
+                    <div class="ui-textarea ui-toggle-textarea ui-margin-10-b ui-round ui-border-dual ui-form-inline ui-ease-form">
                         <textarea placeholder="ui-textarea"></textarea>
                     </div>
 
                     <span class="ui-sp-15"></span>
 
                     <h5 class="ui-h5 ui-color-black-25">Responsive Inline Forms</h5>
-                    <div class="ui-input ui-margin-10-b ui-round ui-border-dual form-inline-xs ui-ease-form">
+                    <div class="ui-input ui-margin-10-b ui-round ui-border-dual ui-form-inline-xs ui-ease-form">
                         <input type="text">
                     </div>
-                    <div class="ui-select ui-margin-10-b ui-round ui-border-dual form-inline-xs ui-ease-form">
+                    <div class="ui-select ui-margin-10-b ui-round ui-border-dual ui-form-inline-xs ui-ease-form">
                         <svg class="ui-icon"><use href="#angle-down"/></svg>
                         <select>
                             <option value="">Select</option>
@@ -748,7 +748,7 @@
                             <option>Second</option>
                         </select>
                     </div>
-                    <div class="ui-textarea ui-toggle-textarea ui-margin-10-b ui-round ui-border-dual form-inline-xs ui-ease-form">
+                    <div class="ui-textarea ui-toggle-textarea ui-margin-10-b ui-round ui-border-dual ui-form-inline-xs ui-ease-form">
                         <textarea placeholder="ui-textarea"></textarea>
                     </div>
                 </div>
@@ -771,8 +771,8 @@
 
                     <span class="ui-sp-30"></span>
 
-                    <label class="form-label ui-padding-10-b">Form Icons with Large Forms</label>
-                    <div class="form-lg">
+                    <label class="ui-form-label ui-padding-10-b">Form Icons with Large Forms</label>
+                    <div class="ui-form-lg">
                         <div class="ui-input text-icon-l ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                             <svg class="ui-icon"><use href="#search"/></svg>
                             <input type="text" placeholder="Left icon">
@@ -804,8 +804,8 @@
                             </button>
                             <input type="text">
                         </div>
-                        <label class="form-label ui-padding-10-b">Clear with Large Forms</label>
-                        <div class="form-lg ui-margin-10-b ui-ease-1st-form">
+                        <label class="ui-form-label ui-padding-10-b">Clear with Large Forms</label>
+                        <div class="ui-form-lg ui-margin-10-b ui-ease-1st-form">
                             <div class="ui-input text-icon ui-round ui-border-dual ui-has-clear">
                                 <button type="button" class="ui-form-clear">
                                     <svg class="ui-icon"><use href="#remove"/></svg>
@@ -833,7 +833,7 @@
                 <div class="ui-padding-30-b">
                     <div class="ui-row ui-row-gap-sm-v ui-no-fluid">
                         <div class="ui-col-6">
-                            <label class="form-label">Label</label>
+                            <label class="ui-form-label">Label</label>
                         </div>
                         <div class="ui-col-6 ui-align-r">
                             <a class="ui-font-12 ui-color-black-25 ui-font-underline" href="#">Top Right Link</a>
@@ -845,7 +845,7 @@
 
                     <div class="ui-row ui-row-gap-sm-v ui-no-fluid">
                         <div class="ui-col-6">
-                            <label class="form-label">Label</label>
+                            <label class="ui-form-label">Label</label>
                         </div>
                         <div class="ui-col-6 ui-align-r">
                             <a class="ui-btn ui-btn-xs ui-color-black-25 ui-round ui-ease-btn">Button</a>
@@ -857,7 +857,7 @@
 
                     <div class="ui-row ui-row-gap-sm-v ui-no-fluid">
                         <div class="ui-col-6">
-                            <label class="form-label">Label</label>
+                            <label class="ui-form-label">Label</label>
                         </div>
                         <div class="ui-col-6 ui-align-r">
                             <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
@@ -881,9 +881,9 @@
                 <h3 class="ui-h3">Form Holders</h3>
                 <div class="ui-row ui-padding-30-b">
                     <div class="ui-col-12">
-                        <label class="form-label">Form Holder with Grid System</label>
+                        <label class="ui-form-label">Form Holder with Grid System</label>
                         <span class="ui-sp-10"></span>
-                        <div class="form-holder ui-row ui-no-row-gap ui-margin-10-b">
+                        <div class="ui-form-holder ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
                                 <div class="ui-input ui-round ui-ease-form">
@@ -907,7 +907,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder ui-row ui-no-row-gap ui-margin-10-b">
+                        <div class="ui-form-holder ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -931,7 +931,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder ui-row ui-no-row-gap ui-margin-10-b">
+                        <div class="ui-form-holder ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
                                 <div class="ui-input ui-circle ui-ease-form">
@@ -955,7 +955,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder ui-row ui-no-row-gap ui-margin-10-b">
+                        <div class="ui-form-holder ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
                                 <div class="ui-input ui-circle ui-border-dual ui-ease-form">
@@ -981,8 +981,8 @@
                         </div>
                     </div>
                     <div class="ui-col-12">
-                        <label class="form-label ui-padding-10-b">Form Holder with Large Forms</label>
-                        <div class="form-holder form-lg ui-row ui-no-row-gap ui-margin-10-b">
+                        <label class="ui-form-label ui-padding-10-b">Form Holder with Large Forms</label>
+                        <div class="ui-form-holder ui-form-lg ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
                                 <div class="ui-input ui-round ui-ease-form">
@@ -1006,7 +1006,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder form-lg ui-row ui-no-row-gap ui-margin-10-b">
+                        <div class="ui-form-holder ui-form-lg ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -1030,7 +1030,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder form-lg ui-row ui-no-row-gap ui-margin-10-b">
+                        <div class="ui-form-holder ui-form-lg ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
                                 <div class="ui-input ui-circle ui-ease-form">
@@ -1054,7 +1054,7 @@
                             </div>
 
                         </div>
-                        <div class="form-holder form-lg ui-row ui-no-row-gap ui-margin-10-b">
+                        <div class="ui-form-holder ui-form-lg ui-row ui-no-row-gap ui-margin-10-b">
 
                             <div class="ui-col-5 ui-col-xs-4">
                                 <div class="ui-input ui-circle ui-border-dual ui-ease-form">
@@ -1081,10 +1081,10 @@
                     </div>
 
                     <div class="ui-col-12 ui-no-padding-v">
-                        <label class="form-label">Form Holders with Static Grid</label>
+                        <label class="ui-form-label">Form Holders with Static Grid</label>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static ui-no-fluid">
+                        <div class="ui-form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-100">
                                 <div class="ui-select ui-round ui-ease-form">
@@ -1112,7 +1112,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static ui-no-fluid">
+                        <div class="ui-form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
@@ -1142,7 +1142,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static ui-no-fluid">
+                        <div class="ui-form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-100">
                                 <div class="ui-select ui-round ui-ease-form">
@@ -1175,7 +1175,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static ui-no-fluid">
+                        <div class="ui-form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-100">
                                 <div class="ui-select ui-round ui-border-dual ui-ease-form">
@@ -1203,7 +1203,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static ui-no-fluid">
+                        <div class="ui-form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
@@ -1233,7 +1233,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static ui-no-fluid">
+                        <div class="ui-form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-row ui-no-row-gap ui-no-fluid">
                                 <div class="ui-col-6">
@@ -1261,7 +1261,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static ui-no-fluid">
+                        <div class="ui-form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
@@ -1294,7 +1294,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="form-holder ui-col-static ui-no-fluid">
+                        <div class="ui-form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-100">
                                 <div class="ui-select ui-circle ui-border-dual ui-ease-form">
@@ -1331,7 +1331,7 @@
                 <h3 class="ui-h3">Special Forms</h3>
                 <div class="ui-row ui-padding-30-b">
                     <div class="ui-col-3">
-                        <label class="form-grid" >Number Form</label>
+                        <label class="ui-form-grid" >Number Form</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -1340,10 +1340,10 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="form-grid">Spinner Form</label>
+                        <label class="ui-form-grid">Spinner Form</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="form-spinner form-holder ui-col-static ui-no-fluid">
+                        <div class="ui-form-spinner ui-form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
@@ -1353,12 +1353,12 @@
                                 </div>
                             </div>
                             <div class="ui-col-42">
-                                <button class="spinner-down ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-round ui-ease-btn">
+                                <button class="ui-spinner-down ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-round ui-ease-btn">
                                     <svg class="ui-icon"><use href="#minus"/></svg>
                                 </button>
                             </div>
                             <div class="ui-col-42">
-                                <button class="spinner-up ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-round ui-ease-btn">
+                                <button class="ui-spinner-up ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-round ui-ease-btn">
                                     <svg class="ui-icon"><use href="#plus"/></svg>
                                 </button>
                             </div>
@@ -1367,13 +1367,13 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="form-grid">Currency Spinner</label>
+                        <label class="ui-form-grid">Currency Spinner</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="currency-spinner form-holder ui-col-static ui-no-fluid">
+                        <div class="ui-currency-spinner ui-form-holder ui-col-static ui-no-fluid">
 
                             <div class="ui-col-42">
-                                <button class="currency-down ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-round ui-ease-btn">
+                                <button class="ui-currency-down ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-round ui-ease-btn">
                                     <svg class="ui-icon"><use href="#minus"/></svg>
                                 </button>
                             </div>
@@ -1385,7 +1385,7 @@
                                 </div>
                             </div>
                             <div class="ui-col-42">
-                                <button class="currency-up ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-round ui-ease-btn">
+                                <button class="ui-currency-up ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-round ui-ease-btn">
                                     <svg class="ui-icon"><use href="#plus"/></svg>
                                 </button>
                             </div>
@@ -1394,7 +1394,7 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="form-grid">Toggle Password</label>
+                        <label class="ui-form-grid">Toggle Password</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input text-icon ui-round ui-border-dual ui-ease-form">
@@ -1411,16 +1411,16 @@
                     <form action="#succesful" onsubmit="return ui.alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
                         <div class="ui-row">
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with disabled forms</label>
+                                <label class="ui-form-grid">Required with disabled forms</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="ui-input ui-round ui-border-dual form-disabled ui-ease-form">
+                                <div class="ui-input ui-round ui-border-dual ui-form-disabled ui-ease-form">
                                     <input class="required" type="text" placeholder="Disabled required forms are inherited!" disabled>
                                 </div>
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with message</label>
+                                <label class="ui-form-grid">Required with message</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -1431,7 +1431,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with no message</label>
+                                <label class="ui-form-grid">Required with no message</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -1441,7 +1441,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with min and max length</label>
+                                <label class="ui-form-grid">Required with min and max length</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -1452,7 +1452,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with min and max number</label>
+                                <label class="ui-form-grid">Required with min and max number</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -1463,7 +1463,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with password and min length</label>
+                                <label class="ui-form-grid">Required with password and min length</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -1474,7 +1474,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with email</label>
+                                <label class="ui-form-grid">Required with email</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
@@ -1485,7 +1485,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with select forms.</label>
+                                <label class="ui-form-grid">Required with select forms.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-select ui-round ui-border-dual ui-ease-form">
@@ -1501,10 +1501,10 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with form holders</label>
+                                <label class="ui-form-grid">Required with form holders</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="form-holder ui-col-static ui-no-fluid">
+                                <div class="ui-form-holder ui-col-static ui-no-fluid">
 
                                     <div class="ui-row ui-no-row-gap">
                                         <div class="ui-col-12">
@@ -1536,7 +1536,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with textarea forms and min length.</label>
+                                <label class="ui-form-grid">Required with textarea forms and min length.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-textarea ui-margin-10-b ui-round ui-border-dual ui-ease-form">
@@ -1547,7 +1547,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with textarea forms and min length.</label>
+                                <label class="ui-form-grid">Required with textarea forms and min length.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-file ui-round ui-border-dual ui-ease-form">
@@ -1560,7 +1560,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with checkboxes.</label>
+                                <label class="ui-form-grid">Required with checkboxes.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-required-accept">
@@ -1576,7 +1576,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with indeterminate checkboxes.</label>
+                                <label class="ui-form-grid">Required with indeterminate checkboxes.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-required-accept">
@@ -1592,7 +1592,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with custom checks.</label>
+                                <label class="ui-form-grid">Required with custom checks.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-required-accept">
@@ -1609,7 +1609,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with radios.</label>
+                                <label class="ui-form-grid">Required with radios.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-required-accept">
@@ -1628,7 +1628,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with custom radios.</label>
+                                <label class="ui-form-grid">Required with custom radios.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-required-accept">
@@ -1659,7 +1659,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="form-grid">Required with custom checks.</label>
+                                <label class="ui-form-grid">Required with custom checks.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-required-accept">
@@ -1711,23 +1711,23 @@
 
                     <span class="ui-sp-30"></span>
 
-                    <div class="ui-input form-disabled ui-form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
+                    <div class="ui-input ui-form-disabled ui-form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <input type="text" disabled value="Disabled Input">
                     </div>
-                    <div class="ui-textarea form-disabled ui-form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
+                    <div class="ui-textarea ui-form-disabled ui-form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <textarea disabled>Disabled Textarea</textarea>
                     </div>
 
-                    <div class="ui-input form-readonly ui-form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
+                    <div class="ui-input ui-form-readonly ui-form-light ui-margin-10-b ui-round ui-border-dual ui-ease-form">
                         <input type="text" readonly value="Readonly Input">
                     </div>
-                    <div class="ui-textarea form-readonly ui-form-light ui-round ui-border-dual ui-ease-form">
+                    <div class="ui-textarea ui-form-readonly ui-form-light ui-round ui-border-dual ui-ease-form">
                         <textarea readonly>Readonly Textarea</textarea>
                     </div>
 
                     <span class="ui-sp-30"></span>
 
-                    <label class="form-label">Multi Select Example</label>
+                    <label class="ui-form-label">Multi Select Example</label>
                     <div class="ui-select-multi ui-form-light ui-round ui-border-dual ui-ease-form">
                         <select class="ui-scrollbar-faded" multiple size="6">
                             <option value="">Value 1</option>
@@ -1744,8 +1744,8 @@
                     </div>
                     <span class="ui-sp-30"></span>
 
-                    <label class="form-label">Form Holder Example</label>
-                    <div class="form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b">
+                    <label class="ui-form-label">Form Holder Example</label>
+                    <div class="ui-form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b">
 
                         <div class="ui-col-5">
                             <div class="ui-input ui-round ui-border-dual ui-form-light ui-ease-form">
@@ -1769,7 +1769,7 @@
                         </div>
 
                     </div>
-                    <div class="form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b error">
+                    <div class="ui-form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b error">
 
                         <div class="ui-col-5">
                             <div class="ui-input ui-round ui-border-dual ui-form-light ui-ease-form">
@@ -1793,7 +1793,7 @@
                         </div>
 
                     </div>
-                    <div class="form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b warning">
+                    <div class="ui-form-holder ui-row ui-no-row-gap ui-no-fluid ui-margin-10-b warning">
 
                         <div class="ui-col-5">
                             <div class="ui-input ui-round ui-border-dual ui-form-light ui-ease-form">
@@ -1820,8 +1820,8 @@
 
                     <span class="ui-sp-20"></span>
 
-                    <label class="form-label">Captcha</label>
-                    <div class="form-holder ui-col-static ui-no-fluid">
+                    <label class="ui-form-label">Captcha</label>
+                    <div class="ui-form-holder ui-col-static ui-no-fluid">
 
                         <div class="ui-col-100">
                             <img class="ui-border-dual ui-border-light ui-round ui-ease-border"
@@ -1875,7 +1875,7 @@
                 <h3 class="ui-h3">Different Form Styles</h3>
                 <div class="ui-row">
                     <div class="ui-col-3">
-                        <label class="form-grid">light ui-border with no radius style:</label>
+                        <label class="ui-form-grid">light ui-border with no radius style:</label>
                     </div>
                     <div class="ui-col-9 ui-ease-1st-form">
 
@@ -1929,7 +1929,7 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="form-grid">Inner ui-shadow with no radius and no ui-border style:</label>
+                        <label class="ui-form-grid">Inner ui-shadow with no radius and no ui-border style:</label>
                     </div>
                     <div class="ui-col-9 ui-ease-1st-form">
 
@@ -1983,7 +1983,7 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="form-grid">Using themes with no radius and no ui-border style:</label>
+                        <label class="ui-form-grid">Using themes with no radius and no ui-border style:</label>
                     </div>
                     <div class="ui-col-9 ui-ease-1st-form ui-theme-gray">
 

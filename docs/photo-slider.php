@@ -6,7 +6,7 @@
                 <h3 class="ui-h3">Photo Slider Examples</h3>
                 <div class="ui-padding-30-b">
 
-                    <div class="ui-row ui-row-gap-lg ui-xs-fluid form-lg">
+                    <div class="ui-row ui-row-gap-lg ui-xs-fluid ui-form-lg">
                         <div class="ui-col-4 ui-col-sm-6">
 
                             <div class="ui-card ui-padding-30 ui-round ui-shadow-lg">

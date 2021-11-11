@@ -224,9 +224,9 @@
                             <span class="ui-color-black-50">Automatic 5% deposit required.</span>
                         </div>
                         <form action="#">
-                            <div class="ui-col-static ui-no-fluid currency-spinner form-lg">
+                            <div class="ui-col-static ui-no-fluid ui-currency-spinner ui-form-lg">
                                 <div class="ui-col-50">
-                                    <button class="currency-down ui-btn ui-no-padding-h ui-block ui-round-l ui-ease-btn" type="button">
+                                    <button class="ui-currency-down ui-btn ui-no-padding-h ui-block ui-round-l ui-ease-btn" type="button">
                                         <svg class="ui-icon"><use href="#minus"/></svg>
                                     </button>
                                 </div>
@@ -238,7 +238,7 @@
                                     </div>
                                 </div>
                                 <div class="ui-col-50">
-                                    <button class="currency-up ui-btn ui-no-padding-h ui-block ui-round-r ui-ease-btn" type="button">
+                                    <button class="ui-currency-up ui-btn ui-no-padding-h ui-block ui-round-r ui-ease-btn" type="button">
                                         <svg class="ui-icon"><use href="#plus"/></svg>
                                     </button>
                                 </div>
@@ -292,7 +292,7 @@
                         </li>
                     </ul>
                     <span class="ui-sp-5"></span>
-                    <div class="ui-align-l ui-icons-no-opacity form-lg ui-ease-1st-btn">
+                    <div class="ui-align-l ui-icons-no-opacity ui-form-lg ui-ease-1st-btn">
                         <a class="ui-btn ui-block ui-btn-multi ui-round-t" href="#">
                             <svg class="ui-icon ui-right"><use href="#images"/></svg>
                             Show All HD Images
