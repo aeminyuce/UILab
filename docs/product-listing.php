@@ -44,31 +44,31 @@
 
                         <div class="ui-padding-15 ui-md-align-c ui-border-b">
                             <h5 class="ui-h5 ui-margin-10-b ui-color-black-50">COLORS</h5>
-                            <label class="custom">
+                            <label class="ui-label">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-red">
                                     <input type="checkbox" checked>
                                     <i class="ui-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
-                            <label class="custom">
+                            <label class="ui-label">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-pink">
                                     <input type="checkbox" checked>
                                     <i class="ui-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
-                            <label class="custom">
+                            <label class="ui-label">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-blue">
                                     <input type="checkbox" checked>
                                     <i class="ui-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
-                            <label class="custom">
+                            <label class="ui-label">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-orange">
                                     <input type="checkbox">
                                     <i class="ui-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
-                            <label class="custom">
+                            <label class="ui-label">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-yellow">
                                     <input type="checkbox">
                                     <i class="ui-state ui-circle ui-bg-white ui-invert-bg"></i>
@@ -77,13 +77,13 @@
 
                             <span class="ui-clear ui-hidden-md"></span>
 
-                            <label class="custom">
+                            <label class="ui-label">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-black">
                                     <input type="checkbox" checked>
                                     <i class="ui-state ui-circle ui-bg-white ui-invert-bg"></i>
                                 </span>
                             </label>
-                            <label class="custom">
+                            <label class="ui-label">
                                 <span class="check-custom ui-no-border ui-circle ui-ease-form ui-product-select-white">
                                     <input type="checkbox" checked>
                                     <i class="ui-state ui-circle ui-bg-white ui-invert-bg"></i>
@@ -94,7 +94,7 @@
                         <div class="ui-padding-15 ui-border-b">
 
                             <h5 class="ui-h5 ui-margin-10-b ui-color-black-50">PROMOTIONS</h5>
-                            <label class="custom ui-block">
+                            <label class="ui-label ui-block">
                                 <span class="switch-custom ui-right ui-round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="ui-state ui-fill-dark-100"></i>
@@ -103,7 +103,7 @@
                                 Fast Delivery
                             </label>
                             <span class="ui-sp-5"></span>
-                            <label class="custom ui-block">
+                            <label class="ui-label ui-block">
                                 <span class="switch-custom ui-right ui-round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="ui-state ui-fill-dark-100"></i>
@@ -117,28 +117,28 @@
                         <div class="ui-padding-15 ui-border-b">
 
                             <h5 class="ui-h5 ui-margin-10-b ui-color-black-50">CONNECTIONS</h5>
-                            <label class="custom ui-block">
+                            <label class="ui-label ui-block">
                                 <span class="check-custom ui-round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="ui-state ui-fill-dark-100"></i>
                                 </span>
                                 Wireless <span class="ui-color-black-25">4</span>
                             </label>
-                            <label class="custom ui-block">
+                            <label class="ui-label ui-block">
                                 <span class="check-custom ui-round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="ui-state ui-fill-dark-100"></i>
                                 </span>
                                 Bluetooth <span class="ui-color-black-25">11</span>
                             </label>
-                            <label class="custom ui-block">
+                            <label class="ui-label ui-block">
                                 <span class="check-custom ui-round ui-ease-form">
                                     <input type="checkbox" checked>
                                     <i class="ui-state ui-fill-dark-100"></i>
                                 </span>
                                 Wired <span class="ui-color-black-25">9</span>
                             </label>
-                            <label class="custom ui-block">
+                            <label class="ui-label ui-block">
                                 <span class="check-custom ui-round ui-ease-form">
                                     <input type="checkbox">
                                     <i class="ui-state ui-fill-dark-100"></i>

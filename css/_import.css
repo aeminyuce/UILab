@@ -5129,7 +5129,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-range:disabled::-moz-range-track {
   cursor: default;
 }
-label.custom {
+.ui-label {
   min-height: 22px;
   padding-top: 5px;
   padding-bottom: 3px;
@@ -5690,7 +5690,7 @@ label.custom {
   .ui-form-inline-xs:not(:last-child):not(.ui-highlight) {
     margin-bottom: 5px;
   }
-  label.custom + label.custom {
+  .ui-label + .ui-label {
     display: block;
   }
 }

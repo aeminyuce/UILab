@@ -275,9 +275,10 @@ html:not(.ui-no-effects) {
             &::-moz-range-track { cursor: default; }
         }
     }
+
+    &label { min-height: (@btn-default - @form-padding * 2); padding-top: @form-spacing; padding-bottom: (@form-spacing - 2); display: inline-block; }
 }
 
-label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @form-spacing; padding-bottom: (@form-spacing - 2); display: inline-block; }
 
 .check-custom,.radio-custom,.switch-custom {
     vertical-align: middle; height: (@btn-default - @form-padding * 2); margin-bottom: (@form-spacing - 3); ._border-var(); overflow: hidden; display: inline-block; position: relative;
@@ -716,7 +717,7 @@ label.custom { min-height: (@btn-default - @form-padding * 2); padding-top: @for
         &:not(:last-child):not(.ui-highlight) { margin-bottom: @form-spacing; }
     }
 
-    label.custom {
+    .ui-label {
         & + & { display: block; }
     }
 }

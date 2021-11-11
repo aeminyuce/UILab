@@ -106,7 +106,7 @@
                                 <div class="ui-col-12 ui-theme-sub">
 
                                     <span class="ui-sp-15"></span>
-                                    <label class="custom">
+                                    <label class="ui-label">
                                         <span class="check-custom ui-round ui-border-dual ui-ease-form">
                                             <input type="checkbox" checked>
                                             <i class="ui-state"></i>
@@ -116,7 +116,7 @@
 
                                     <span class="ui-clear"></span>
 
-                                    <label class="custom">
+                                    <label class="ui-label">
                                         <span class="check-custom ui-round ui-border-dual ui-ease-form">
                                             <input type="checkbox" checked>
                                             <i class="ui-state"></i>

@@ -482,7 +482,7 @@
                             </div>
                         </div>
                         <div class="ui-col-7 ui-align-r ui-sm-align-l">
-                            <label class="custom ui-margin-5-r">
+                            <label class="ui-label ui-margin-5-r">
                                 <span class="check-custom ui-round ui-border-dual ui-sm-no-margin-t ui-ease-form">
                                     <input class="ui-grid-list-check-all" type="checkbox">
                                     <i class="ui-state"></i>
@@ -1249,7 +1249,7 @@
                             </div>
                         </div>
                         <div class="ui-col-7 ui-align-r ui-sm-align-l">
-                            <label class="custom ui-margin-5-r">
+                            <label class="ui-label ui-margin-5-r">
                                 <span class="check-custom ui-round ui-border-dual ui-sm-no-margin-t ui-ease-form">
                                     <input class="ui-grid-list-filter" data-ui-index="2" type="checkbox" value="25">
                                     <i class="ui-state"></i>
