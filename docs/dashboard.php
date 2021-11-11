@@ -1151,9 +1151,9 @@
 
                                         <div class="ui-row ui-no-row-gap-v ui-row-gap-sm-h">
                                             <div class="ui-col-6 ui-lg-fluid">
-                                                <div class="ui-input text-icon-both ui-round ui-no-border ui-fill-light-100 has-clear ui-ease-form">
+                                                <div class="ui-input text-icon-both ui-round ui-no-border ui-fill-light-100 ui-has-clear ui-ease-form">
                                                     <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
-                                                    <button class="clear-form">
+                                                    <button class="ui-form-clear">
                                                         <svg class="ui-icon"><use href="#remove"/></svg>
                                                     </button>
                                                     <input class="ui-grid-list-filter" type="text" placeholder="Search">
@@ -1776,8 +1776,8 @@
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-row ui-no-row-gap-h">
                     <div class="ui-col-12 ui-ease-1st-form">
-                        <div class="ui-input text-icon has-clear ui-round-l ui-no-border ui-shadow-in-sm ui-theme-gray ui-fill-light-300">
-                            <button type="button" class="clear-form">
+                        <div class="ui-input text-icon ui-has-clear ui-round-l ui-no-border ui-shadow-in-sm ui-theme-gray ui-fill-light-300">
+                            <button type="button" class="ui-form-clear">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                             <input class="required" type="text" placeholder="Search">

@@ -792,22 +792,22 @@
                 <h3 class="ui-h3">Clear with Form Icons</h3>
                 <div class="ui-padding-30-b">
                     <form action="#succesful">
-                        <div class="ui-input text-icon ui-margin-10-b ui-round ui-border-dual has-clear ui-ease-form">
-                            <button type="button" class="clear-form">
+                        <div class="ui-input text-icon ui-margin-10-b ui-round ui-border-dual ui-has-clear ui-ease-form">
+                            <button type="button" class="ui-form-clear">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                             <input type="text" value="Defined value example">
                         </div>
-                        <div class="ui-input text-icon ui-margin-10-b ui-round ui-border-dual has-clear ui-ease-form">
-                            <button type="button" class="clear-form">
+                        <div class="ui-input text-icon ui-margin-10-b ui-round ui-border-dual ui-has-clear ui-ease-form">
+                            <button type="button" class="ui-form-clear">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                             <input type="text">
                         </div>
                         <label class="form-label ui-padding-10-b">Clear with Large Forms</label>
                         <div class="form-lg ui-margin-10-b ui-ease-1st-form">
-                            <div class="ui-input text-icon ui-round ui-border-dual has-clear">
-                                <button type="button" class="clear-form">
+                            <div class="ui-input text-icon ui-round ui-border-dual ui-has-clear">
+                                <button type="button" class="ui-form-clear">
                                     <svg class="ui-icon"><use href="#remove"/></svg>
                                 </button>
                                 <input type="text">

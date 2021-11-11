@@ -12,9 +12,9 @@
                 <div class="ui-add-mobile-menu-r">
 
                     <div class="ui-card ui-padding-15 ui-round ui-shadow-lg">
-                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete ui-input text-icon-both ui-round ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form has-clear">
+                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete ui-input text-icon-both ui-round ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form ui-has-clear">
                             <svg class="ui-icon text-icon-l"><use href="#search"/></svg>
-                            <button type="button" class="clear-form">
+                            <button type="button" class="ui-form-clear">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                             <input type="text" placeholder="Search" autocomplete="off">

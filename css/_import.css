@@ -5352,7 +5352,7 @@ label.custom {
   color: hsla(0, 0%, 100%, 0.65);
 }
 .form-label,
-.form- .form-grid {
+.form-grid {
   line-height: normal;
   opacity: 0.6;
 }
@@ -5417,6 +5417,22 @@ label.custom {
 .form-holder.warning .ui-input,
 .form-holder.warning .ui-select {
   background-color: hsla(42, 100%, 45%, 0.1);
+}
+.form-clear {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.form-clear:not(.open) {
+  display: none;
+}
+.form-clear:not(.open-ease) {
+  opacity: 0;
+}
+.ui-input .form-clear .ui-icon {
+  width: 16px;
+  height: 16px;
+  stroke-width: 34px;
 }
 .form-lg .ui-input,
 .form-lg .ui-select {
@@ -5492,7 +5508,7 @@ label.custom {
   padding-right: 60px !important;
   padding-left: 60px !important;
 }
-.form-lg .clear-form .ui-icon {
+.form-lg .form-clear .ui-icon {
   width: 20px;
   height: 20px;
   stroke-width: 30px;
@@ -5523,22 +5539,6 @@ label.custom {
 }
 .form-lg .ui-file.ui-border-dual > i {
   line-height: 44px;
-}
-.clear-form {
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-}
-.clear-form:not(.open) {
-  display: none;
-}
-.clear-form:not(.open-ease) {
-  opacity: 0;
-}
-.ui-input .clear-form .ui-icon {
-  width: 16px;
-  height: 16px;
-  stroke-width: 34px;
 }
 [class*="text-icon"] .ui-icon,
 [class*="text-icon"] > button {
