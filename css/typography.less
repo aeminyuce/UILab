@@ -162,7 +162,11 @@
         &:not(:last-child) { margin-bottom: @highlight-space; }
         &.ui-align-r,&.ui-right { text-align: right; border-right: 5px solid @blockquote-border; border-left: 0; }
 
-        footer,small { color: @blockquote-footer-color; font-size: 80%; display: block; }
+        p {
+            &:not(:last-child) { margin-top: 0; }
+        }
+
+        footer { color: @blockquote-footer-color; font-size: @font-12; display: block; }
     }
 
     &hr { box-sizing: content-box; width: 100%; height: 1px; ._bg-var(border-color); margin-top: @highlight-space !important; margin-bottom: @highlight-space !important; border: 0; }

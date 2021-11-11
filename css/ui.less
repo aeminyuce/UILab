@@ -176,18 +176,26 @@
     --ui-btn-ghost-hover-bg: @btn-ghost-hover-bg-dark;
 }
 
+& when (@dark-mode = false) {
+    .ui-darkmode-toggle { display: none !important; }
+}
 & when (@dark-mode = true) {
     & when (@dark-mode-auto-switcher = true) {
+        .ui-darkmode-toggle { display: none !important; }
+
         @media (prefers-color-scheme: light) {
             :root { ._global-vars(); }
         }
         @media (prefers-color-scheme: dark) {
             :root { ._global-vars-dark(); }
+            html { ._color-var(black); }
         }
     }
     & when (@dark-mode-auto-switcher = false) {
         [data-ui-mode="light"] { ._global-vars(); }
         [data-ui-mode="dark"] { ._global-vars-dark(); }
+
+        [data-ui-mode="dark"] { ._color-var(black); }
     }
 }
 
@@ -286,7 +294,7 @@
 }
 
 // reset
-* {
+[class*="ui-"] {
     padding: 0; margin: 0;
 
     &,&:before,&:after { box-sizing: border-box; }
@@ -297,13 +305,10 @@ html {
     font-family: @font-family; font-size: @font-size; font-weight: @font-normal; line-height: @line-height; letter-spacing: @letter-spacing;
     ._bg-var(body-bg);
 }
-
-body,a { ._color-var(black); }
-
+body { margin: 0; }
 a {
     &,&:active,&:hover { word-wrap: break-word; text-decoration: none; }
 }
-
 img { vertical-align: middle; display: inline-block; border: 0; }
 
 // user agents

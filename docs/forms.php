@@ -294,7 +294,7 @@
 
                         <div class="ui-row">
 
-                            <div class="dual-multi-select ui-col-static">
+                            <div class="ui-dual-multi-select ui-col-static">
                                 <div class="ui-row">
                                     <div class="ui-col-12">
                                         <div class="ui-select-multi ui-round ui-border-dual ui-ease-form">
@@ -332,7 +332,7 @@
 
                             <span class="ui-sp-30"></span>
 
-                            <div class="dual-multi-select ui-col-static">
+                            <div class="ui-dual-multi-select ui-col-static">
                                 <div class="ui-row">
                                     <div class="ui-col-12">
                                         <div class="ui-select-multi ui-round ui-border-dual ui-ease-form">
@@ -370,7 +370,7 @@
 
                             <span class="ui-sp-30"></span>
 
-                            <div class="dual-multi-select ui-col-static">
+                            <div class="ui-dual-multi-select ui-col-static">
                                 <div class="ui-row">
                                     <div class="ui-col-12">
                                         <div class="ui-select-multi ui-round ui-border-dual ui-ease-form">

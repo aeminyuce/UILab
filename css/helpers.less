@@ -400,10 +400,17 @@ each(@increases, {
 }
 
 .ui-ie {
-    .ui-hidden-ie,.ui-hidden-light,.ui-visible-dark { .ui-hidden(); }
+    .ui-hidden-ie,.ui-darkmode-toggle { .ui-hidden(); }
 }
 
+& when (@dark-mode = false) {
+    .ui-hidden-light,.ui-visible-dark { .ui-hidden(); }
+}
 & when (@dark-mode = true) {
+    .ui-ie {
+        .ui-hidden-light,.ui-visible-dark { .ui-hidden(); }
+    }
+
     & when (@dark-mode-auto-switcher = true) {
         @media (prefers-color-scheme: light) {
             .ui-hidden-light,.ui-visible-dark { .ui-hidden(); }

@@ -92,7 +92,7 @@
     <header class="ui-container ui-form-lg ui-theme-base ui-invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-15">
-                <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost ui-circle ui-icons-no-opacity ui-right ui-ease-btn ui-hidden-ie">
+                <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost ui-circle ui-icons-no-opacity ui-right ui-ease-btn">
                     <svg class="ui-icon ui-visible-dark"><use href="#moon-fill"/></svg>
                     <svg class="ui-icon ui-visible-light"><use href="#sun-fill"/></svg>
                 </button>
@@ -115,7 +115,7 @@
         include ($page.'.php');
 ?>
 
-<button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-lg ui-btn-square ui-round-l ui-icons-no-opacity ui-ease-btn ui-set-fixed ui-set-r ui-hidden-ie" style="top: 30%;">
+<button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-lg ui-btn-square ui-round-l ui-icons-no-opacity ui-ease-btn ui-set-fixed ui-set-r" style="top: 30%;">
     <svg class="ui-icon ui-visible-dark"><use href="#moon-fill"/></svg>
     <svg class="ui-icon ui-visible-light"><use href="#sun-fill"/></svg>
 </button>
@@ -131,7 +131,7 @@
                 </div>
                 <div class="ui-row">
                     <div class="ui-col-12 ui-align-r ui-padding-15 ui-no-padding-l ui-icons-no-opacity ui-ease-1st-btn">
-                        <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost ui-circle ui-hidden-ie">
+                        <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost ui-circle">
                             <svg class="ui-icon ui-visible-dark"><use href="#moon-fill"/></svg>
                             <svg class="ui-icon ui-visible-light"><use href="#sun-fill"/></svg>
                         </button>

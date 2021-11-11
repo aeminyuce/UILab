@@ -6,7 +6,7 @@
 ui.dualMultiSelect = {
 
     // targets
-    target: 'dual-multi-select',
+    target: 'ui-dual-multi-select',
 
     // outer classnames
     nameSelectMulti: 'ui-select-multi',
