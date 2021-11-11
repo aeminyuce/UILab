@@ -4021,7 +4021,7 @@ dt + dd:not(:last-child) {
   width: 22px;
   height: 22px;
   stroke-width: 28px;
-  margin-top: -1px;
+  margin-top: -2px;
 }
 .ui-btn .ui-icon:not(.ui-no-opacity) {
   opacity: 0.45;
@@ -4043,7 +4043,7 @@ dt + dd:not(:last-child) {
 .ui-btn-lg,
 .ui-form-lg .ui-btn {
   font-size: 16px;
-  line-height: 23px;
+  line-height: 22px;
   height: 48px;
   padding-top: 12px;
   padding-bottom: 12px;

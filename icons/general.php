@@ -584,7 +584,7 @@
 <symbol id="address-card-fill" viewBox="0 0 288 288">
     <use class="ui-svg-f" href="#address-card"/>
 </symbol>
-<symbol id="home" viewBox="-8 -20 288 288">
+<symbol id="home" viewBox="-8 -8 288 288">
     <path d="M16.9 112l120-100 120 100 M232.9 92v144h-64v-80h-64v80h-64V92l96-80z"/>
 </symbol>
 <symbol id="home-fill" viewBox="0 0 288 288">
