@@ -27,8 +27,8 @@
   --ui-range-track-hover-bg: hsla(0, 0%, 0%, 0.15);
   --ui-placeholder-color: hsla(0, 0%, 0%, 0.4);
   --ui-placeholder-focus-color: hsla(0, 0%, 0%, 0.23);
-  --ui-check-custom-bg: hsla(0, 0%, 0%, 0.65);
-  --ui-switch-custom-bg: hsla(0, 0%, 0%, 0.15);
+  --ui-ui-check-bg: hsla(0, 0%, 0%, 0.65);
+  --ui-ui-switch-bg: hsla(0, 0%, 0%, 0.15);
   --ui-form-disabled-bg: hsla(0, 0%, 0%, 0.075);
   --ui-form-readonly-color: hsla(0, 0%, 0%, 0.5);
   --ui-textarea-counter-color: hsla(0, 0%, 0%, 0.45);
@@ -101,8 +101,8 @@
   --ui-form-focus-border: hsla(0, 0%, 100%, 0.65);
   --ui-placeholder-color: hsla(0, 0%, 100%, 0.4);
   --ui-placeholder-focus-color: hsla(0, 0%, 100%, 0.23);
-  --ui-check-custom-bg: hsla(0, 0%, 100%, 0.65);
-  --ui-switch-custom-bg: hsla(0, 0%, 100%, 0.15);
+  --ui-ui-check-bg: hsla(0, 0%, 100%, 0.65);
+  --ui-ui-switch-bg: hsla(0, 0%, 100%, 0.15);
   --ui-form-disabled-bg: hsla(0, 0%, 100%, 0.075);
   --ui-form-readonly-color: hsla(0, 0%, 100%, 0.65);
   --ui-textarea-counter-color: hsl(0, 0%, 100%);
@@ -5135,9 +5135,9 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   padding-bottom: 3px;
   display: inline-block;
 }
-.check-custom,
-.radio-custom,
-.switch-custom {
+.ui-check,
+.ui-radio,
+.ui-switch {
   vertical-align: middle;
   height: 22px;
   margin-bottom: 2px;
@@ -5147,9 +5147,9 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   display: inline-block;
   position: relative;
 }
-.check-custom .ui-state,
-.radio-custom .ui-state,
-.switch-custom .ui-state {
+.ui-check .ui-state,
+.ui-radio .ui-state,
+.ui-switch .ui-state {
   content: "";
   width: 14px;
   height: 14px;
@@ -5159,9 +5159,9 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.check-custom input,
-.radio-custom input,
-.switch-custom input {
+.ui-check input,
+.ui-radio input,
+.ui-switch input {
   width: 140%;
   height: 140%;
   display: block;
@@ -5171,72 +5171,72 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   z-index: 1;
   opacity: 0;
 }
-.check-custom,
-.radio-custom {
+.ui-check,
+.ui-radio {
   width: 22px;
 }
-.check-custom .ui-state,
-.radio-custom .ui-state {
+.ui-check .ui-state,
+.ui-radio .ui-state {
   background-color: hsla(0, 0%, 0%, 0.65);
-  background-color: var(--ui-check-custom-bg);
+  background-color: var(--ui-ui-check-bg);
   opacity: 0;
 }
-.radio-custom,
-.switch-custom.ui-round {
+.ui-radio,
+.ui-switch.ui-round {
   border-radius: 14px !important;
 }
-.radio-custom .ui-state,
-.switch-custom.ui-round .ui-state {
+.ui-radio .ui-state,
+.ui-switch.ui-round .ui-state {
   border-radius: 7px;
 }
-.radio-custom input:checked + .ui-state {
+.ui-radio input:checked + .ui-state {
   opacity: 1;
 }
-.check-custom.ui-round .ui-state {
+.ui-check.ui-round .ui-state {
   border-radius: 3px;
 }
-.check-custom input:checked + i,
-.check-custom input:indeterminate + .ui-state {
+.ui-check input:checked + i,
+.ui-check input:indeterminate + .ui-state {
   opacity: 1;
 }
-.check-custom input:indeterminate + .ui-state {
+.ui-check input:indeterminate + .ui-state {
   height: 4px;
 }
-.switch-custom {
+.ui-switch {
   width: 44px;
 }
-.switch-custom input:checked + .ui-state {
+.ui-switch input:checked + .ui-state {
   transform: translate(25%, -50%);
 }
-.switch-custom input:checked + .ui-state:not([class*="ui-fill-"]) {
+.ui-switch input:checked + .ui-state:not([class*="ui-fill-"]) {
   background-color: hsl(142, 82%, 42%);
 }
-.switch-custom input:not(:checked) + .ui-state,
-.switch-custom input:not(:checked) + .ui-state[class*="ui-fill-"] {
+.ui-switch input:not(:checked) + .ui-state,
+.ui-switch input:not(:checked) + .ui-state[class*="ui-fill-"] {
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--ui-switch-custom-bg);
+  background-color: var(--ui-ui-switch-bg);
 }
-.switch-custom input:not(:indeterminate):not(:checked):not(:indeterminate) + .ui-state {
+.ui-switch input:not(:indeterminate):not(:checked):not(:indeterminate) + .ui-state {
   transform: translate(-125%, -50%);
 }
-.switch-custom input:indeterminate + .ui-state {
+.ui-switch input:indeterminate + .ui-state {
   background-color: hsl(42, 100%, 45%);
 }
-.ui-desktop .switch-custom:hover .ui-state {
+.ui-desktop .ui-switch:hover .ui-state {
   width: 18px;
 }
-.ui-desktop .switch-custom:hover input:checked + .ui-state {
+.ui-desktop .ui-switch:hover input:checked + .ui-state {
   transform: translate(0, -50%);
 }
-.ui-desktop .switch-custom:hover input:not(:checked) + .ui-state {
+.ui-desktop .ui-switch:hover input:not(:checked) + .ui-state {
   transform: translate(-100%, -50%);
 }
-.ui-desktop .switch-custom:hover input:indeterminate + .ui-state {
+.ui-desktop .ui-switch:hover input:indeterminate + .ui-state {
   transform: translate(-50%, -50%);
 }
-.error .check-custom,
-.error .radio-custom,
-.error .switch-custom {
+.error .ui-check,
+.error .ui-radio,
+.error .ui-switch {
   background-color: hsla(0, 74%, 55%, 0.1) !important;
   border-color: hsl(0, 74%, 55%) !important;
 }
@@ -5244,9 +5244,9 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   background-color: hsla(0, 74%, 55%, 0.1) !important;
   border-color: hsl(0, 74%, 55%) !important;
 }
-.warning .check-custom,
-.warning .radio-custom,
-.warning .switch-custom {
+.warning .ui-check,
+.warning .ui-radio,
+.warning .ui-switch {
   background-color: hsla(42, 100%, 45%, 0.1) !important;
   border-color: hsl(42, 100%, 45%) !important;
 }

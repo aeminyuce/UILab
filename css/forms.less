@@ -44,12 +44,12 @@
 
 @form-custom-state-size:               14px;
 @indeterminate-state-size:             4px;
-@switch-custom-size:                   44px;
+@ui-switch-size:                   44px;
 
-@check-custom-bg:                      fade(@black, 65%);
-@check-custom-bg-dark:                 fade(@white, 65%);
-@switch-custom-bg:                     fade(@black, 15%);
-@switch-custom-bg-dark:                fade(@white, 15%);
+@ui-check-bg:                      fade(@black, 65%);
+@ui-check-bg-dark:                 fade(@white, 65%);
+@ui-switch-bg:                     fade(@black, 15%);
+@ui-switch-bg-dark:                fade(@white, 15%);
 
 @form-disabled-opacity:                .65;
 @form-disabled-bg:                     fade(@black, 7.5%);
@@ -70,8 +70,8 @@
     --ui-placeholder-color: @placeholder-color;
     --ui-placeholder-focus-color: @placeholder-focus-color;
 
-    --ui-check-custom-bg: @check-custom-bg;
-    --ui-switch-custom-bg: @switch-custom-bg;
+    --ui-ui-check-bg: @ui-check-bg;
+    --ui-ui-switch-bg: @ui-switch-bg;
 
     --ui-form-disabled-bg: @form-disabled-bg;
     --ui-form-readonly-color: @form-readonly-color;
@@ -89,8 +89,8 @@
     --ui-placeholder-color: @placeholder-color-dark;
     --ui-placeholder-focus-color: @placeholder-focus-color-dark;
 
-    --ui-check-custom-bg: @check-custom-bg-dark;
-    --ui-switch-custom-bg: @switch-custom-bg-dark;
+    --ui-ui-check-bg: @ui-check-bg-dark;
+    --ui-ui-switch-bg: @ui-switch-bg-dark;
 
     --ui-form-disabled-bg: @form-disabled-bg-dark;
     --ui-form-readonly-color: @form-readonly-color-dark;
@@ -277,73 +277,72 @@ html:not(.ui-no-effects) {
     }
 
     &label { min-height: (@btn-default - @form-padding * 2); padding-top: @form-spacing; padding-bottom: (@form-spacing - 2); display: inline-block; }
-}
 
+    &check,&radio,&switch {
+        vertical-align: middle; height: (@btn-default - @form-padding * 2); margin-bottom: (@form-spacing - 3); ._border-var(); overflow: hidden; display: inline-block; position: relative;
 
-.check-custom,.radio-custom,.switch-custom {
-    vertical-align: middle; height: (@btn-default - @form-padding * 2); margin-bottom: (@form-spacing - 3); ._border-var(); overflow: hidden; display: inline-block; position: relative;
+        .ui-state { content: ""; width: @form-custom-state-size; height: @form-custom-state-size; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+        input { width: 140%; height: 140%; display: block; position: absolute; top: -20%; left: -20%; z-index: 1; opacity: 0; }
 
-    .ui-state { content: ""; width: @form-custom-state-size; height: @form-custom-state-size; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
-    input { width: 140%; height: 140%; display: block; position: absolute; top: -20%; left: -20%; z-index: 1; opacity: 0; }
-
-}
-.check-custom,.radio-custom {
-    width: (@btn-default - @form-padding * 2);
-
-    .ui-state { ._bg-var(check-custom-bg); opacity: 0; }
-
-}
-.radio-custom,.switch-custom.ui-round {
-    border-radius: @form-custom-state-size !important;
-
-    .ui-state { border-radius: (@form-custom-state-size / 2); }
-}
-
-.radio-custom {
-    input:checked + .ui-state { opacity: 1; }
-}
-
-.check-custom {
-    &.ui-round .ui-state { border-radius: (@round / 2); }
-    input {
-        &:checked + i,&:indeterminate + .ui-state { opacity: 1; }
-        &:indeterminate + .ui-state { height: @indeterminate-state-size; }
     }
-}
+    &check,&radio {
+        width: (@btn-default - @form-padding * 2);
 
-.switch-custom {
-    width: @switch-custom-size;
+        .ui-state { ._bg-var(ui-check-bg); opacity: 0; }
 
-    input {
-        &:checked + .ui-state {
-            transform: translate(25%,-50%);
+    }
+    &radio,&switch&round {
+        border-radius: @form-custom-state-size !important;
 
-            &:not([class*="ui-fill-"]) { background-color: @green; }
-        }
-        &:not(:checked) + .ui-state {
-            &,&[class*="ui-fill-"] { ._bg-var(switch-custom-bg); }
-        }
-        &:not(:indeterminate):not(:checked):not(:indeterminate) + .ui-state { transform: translate(-125%,-50%); }
-        &:indeterminate + .ui-state { background-color: @yellow; }
+        .ui-state { border-radius: (@form-custom-state-size / 2); }
     }
 
-    .ui-desktop &:hover {
-        .ui-state { width: (@form-custom-state-size + 4); }
+    &radio {
+        input:checked + .ui-state { opacity: 1; }
+    }
+
+    &check {
+        &.ui-round .ui-state { border-radius: (@round / 2); }
         input {
-            &:checked + .ui-state { transform: translate(0,-50%); }
-            &:not(:checked) + .ui-state { transform: translate(-100%,-50%); }
-            &:indeterminate + .ui-state { transform: translate(-50%,-50%); }
+            &:checked + i,&:indeterminate + .ui-state { opacity: 1; }
+            &:indeterminate + .ui-state { height: @indeterminate-state-size; }
+        }
+    }
+
+    &switch {
+        width: @ui-switch-size;
+
+        input {
+            &:checked + .ui-state {
+                transform: translate(25%,-50%);
+
+                &:not([class*="ui-fill-"]) { background-color: @green; }
+            }
+            &:not(:checked) + .ui-state {
+                &,&[class*="ui-fill-"] { ._bg-var(ui-switch-bg); }
+            }
+            &:not(:indeterminate):not(:checked):not(:indeterminate) + .ui-state { transform: translate(-125%,-50%); }
+            &:indeterminate + .ui-state { background-color: @yellow; }
+        }
+
+        .ui-desktop &:hover {
+            .ui-state { width: (@form-custom-state-size + 4); }
+            input {
+                &:checked + .ui-state { transform: translate(0,-50%); }
+                &:not(:checked) + .ui-state { transform: translate(-100%,-50%); }
+                &:indeterminate + .ui-state { transform: translate(-50%,-50%); }
+            }
         }
     }
 }
 
 .error {
-    .check-custom,.radio-custom,.switch-custom { background-color: @form-error-bg !important; border-color: @red !important; }
+    .ui-check,.ui-radio,.ui-switch { background-color: @form-error-bg !important; border-color: @red !important; }
     &:not(.ui-form-holder):not(.ui-required-holder):not(.hint) { background-color: @form-error-bg !important; border-color: @red !important; }
 
 }
 .warning {
-    .check-custom,.radio-custom,.switch-custom { background-color: @form-warning-bg !important; border-color: @yellow !important; }
+    .ui-check,.ui-radio,.ui-switch { background-color: @form-warning-bg !important; border-color: @yellow !important; }
     &:not(.ui-form-holder):not(.ui-required-holder):not(.hint) { background-color: @form-warning-bg !important; border-color: @yellow !important; }
 }
 
