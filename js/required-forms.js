@@ -9,7 +9,7 @@ ui.requiredForms = {
     target: 'required',
 
     // main classnames
-    targetAccept: 'ui-required-accept', // required holder for checks, forms and custom switches
+    targetAccept: 'ui-required-holder',
     nameMsg: 'ui-required-msg',
 
     nameTypePrefix: 'ui-',

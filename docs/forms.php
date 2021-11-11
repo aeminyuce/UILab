@@ -561,7 +561,7 @@
                                     <input type="checkbox" checked>
                                     <i class="ui-state"></i>
                                 </span>
-                                Custom Checkbox
+                                Checkbox
                             </label>
                         </li>
                         <li>
@@ -570,7 +570,7 @@
                                     <input type="checkbox" class="indeterminate">
                                     <i class="ui-state"></i>
                                 </div>
-                                Custom Indeterminate
+                                Indeterminate
                             </label>
                         </li>
                     </ul>
@@ -582,7 +582,7 @@
                                     <input type="radio" name="radiotest2" checked>
                                     <i class="ui-state"></i>
                                 </span>
-                                Custom Radio1
+                                Radio1
                             </label>
                         </li>
                         <li>
@@ -591,7 +591,7 @@
                                     <input type="radio" name="radiotest2">
                                     <i class="ui-state"></i>
                                 </span>
-                                Custom Radio2
+                                Radio2
                             </label>
                         </li>
                         <li>
@@ -600,7 +600,7 @@
                                     <input type="radio" name="radiotest2">
                                     <i class="ui-state"></i>
                                 </span>
-                                Custom Radio3
+                                Radio3
                             </label>
                         </li>
                     </ul>
@@ -614,7 +614,7 @@
                                     <input type="checkbox" checked>
                                     <i class="ui-state"></i>
                                 </span>
-                                Custom Switch
+                                Switch
                             </label>
                         </li>
                         <li>
@@ -623,7 +623,16 @@
                                         <input type="checkbox" checked>
                                         <i class="ui-state ui-theme-sub ui-fill-dark-100"></i>
                                 </span>
-                                Custom Switch with Themes
+                                Switch with Themes
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom">
+                                <span class="switch-custom ui-round ui-border-dual ui-ease-form">
+                                        <input type="checkbox" checked>
+                                        <i class="ui-state ui-theme-base ui-fill-dark-100"></i>
+                                </span>
+                                Switch with Themes
                             </label>
                         </li>
                         <li>
@@ -636,34 +645,6 @@
                             </label>
                         </li>
                     </ul>
-
-                    <span class="ui-sp-15"></span>
-
-                    <div class="ui-input ui-round ui-border-dual ui-ease-form ui-form-inline">
-                        <input type="text" value="Inline form">
-                    </div>
-                    <label class="custom">
-                        <span class="switch-custom ui-round ui-border-dual ui-ease-form">
-                            <input type="checkbox" checked>
-                            <i class="ui-state"></i>
-                        </span>
-                        Custom Switch
-                    </label>
-                    <label class="custom">
-                        <span class="check-custom ui-round ui-border-dual ui-ease-form">
-                            <input type="checkbox" checked>
-                            <i class="ui-state"></i>
-                        </span>
-                        Custom Checkbox
-                    </label>
-                    <label class="custom">
-                        <span class="radio-custom ui-border-dual ui-ease-form">
-                            <input type="radio" name="radiotest2" checked>
-                            <i class="ui-state"></i>
-                        </span>
-                        Custom Radio1
-                    </label>
-
                 </div>
 
                 <h3 class="ui-h3">Range Forms</h3>
@@ -1526,48 +1507,72 @@
                             </div>
 
                             <div class="ui-col-3">
+                                <label class="ui-form-info">Required with native checkboxes.</label>
+                            </div>
+                            <div class="ui-col-9">
+                                <div class="ui-required-holder">
+                                    <label>
+                                        <input class="required" type="checkbox">
+                                        Checkbox
+                                    </label>
+                                </div>
+                                <p class="ui-required-msg">Please, read and accept Terms and Conditions.</p>
+                                <i class="hint ui-color-black-25">
+                                    * Required for accepting
+                                    <a href="#" class="ui-font-underline">Terms and Conditions.</a>
+                                </i>
+                            </div>
+
+                            <div class="ui-col-3">
+                                <label class="ui-form-info">Required with native radios.</label>
+                            </div>
+                            <div class="ui-col-9">
+                                <div class="ui-required-holder">
+                                    <label>
+                                        <input class="required" type="radio" name="radiotest3">
+                                        Radio1
+                                    </label>
+                                    <label">
+                                        <input class="required" type="radio" name="radiotest3">
+                                        Radio2
+                                    </label>
+                                    <label>
+                                        <input class="required" type="radio" name="radiotest3">
+                                        Radio3
+                                    </label>
+                                </div>
+                                <p class="ui-required-msg">Please, select any option.</p>
+                                <i class="hint ui-color-black-25">* Required</i>
+                            </div>
+
+                            <div class="ui-col-3">
+                                <label class="ui-form-info">Required with native indeterminate checkboxes.</label>
+                            </div>
+                            <div class="ui-col-9">
+                                <div class="ui-required-holder">
+                                    <label>
+                                        <input class="required indeterminate" type="checkbox">
+                                        Indeterminate
+                                    </label>
+                                </div>
+                                <p class="ui-required-msg">Please, read and accept Terms and Conditions.</p>
+                                <i class="hint ui-color-black-25">
+                                    * Required for accepting
+                                    <a href="#" class="ui-font-underline">Terms and Conditions.</a>
+                                </i>
+                            </div>
+
+                            <div class="ui-col-3">
                                 <label class="ui-form-info">Required with checkboxes.</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="ui-required-accept">
-                                    <label>
-                                        <input class="required" type="checkbox"> Checkbox
-                                    </label>
-                                </div>
-                                <p class="ui-required-msg">Please, read and accept Terms and Conditions.</p>
-                                <i class="hint ui-color-black-25">
-                                    * Required for accepting
-                                    <a href="#" class="ui-font-underline">Terms and Conditions.</a>
-                                </i>
-                            </div>
-
-                            <div class="ui-col-3">
-                                <label class="ui-form-info">Required with indeterminate checkboxes.</label>
-                            </div>
-                            <div class="ui-col-9">
-                                <div class="ui-required-accept">
-                                    <label>
-                                        <input class="required indeterminate" type="checkbox"> Indeterminate
-                                    </label>
-                                </div>
-                                <p class="ui-required-msg">Please, read and accept Terms and Conditions.</p>
-                                <i class="hint ui-color-black-25">
-                                    * Required for accepting
-                                    <a href="#" class="ui-font-underline">Terms and Conditions.</a>
-                                </i>
-                            </div>
-
-                            <div class="ui-col-3">
-                                <label class="ui-form-info">Required with custom checks.</label>
-                            </div>
-                            <div class="ui-col-9">
-                                <div class="ui-required-accept">
+                                <div class="ui-required-holder">
                                     <label class="custom">
                                         <span class="check-custom ui-round ui-border-dual">
                                             <input class="required" type="checkbox">
                                             <i class="ui-state"></i>
                                         </span>
-                                        <b>Custom Checkbox</b>
+                                        <b>Checkbox</b>
                                     </label>
                                 </div>
                                 <p class="ui-required-msg">Please, check this checkbox.</p>
@@ -1578,15 +1583,27 @@
                                 <label class="ui-form-info">Required with radios.</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="ui-required-accept">
-                                    <label>
-                                        <input class="required" type="radio" name="radiotest3"> Radio1
+                                <div class="ui-required-holder">
+                                    <label class="custom">
+                                        <span class="radio-custom ui-border-dual ui-ease-form">
+                                            <input class="required" type="radio" name="radiotest4">
+                                            <i class="ui-state"></i>
+                                        </span>
+                                        <b>Radio1</b>
                                     </label>
-                                    <label">
-                                        <input class="required" type="radio" name="radiotest3"> Radio2
+                                    <label class="custom">
+                                        <span class="radio-custom ui-border-dual ui-ease-form">
+                                            <input class="required" type="radio" name="radiotest4">
+                                            <i class="ui-state"></i>
+                                        </span>
+                                        <b>Radio2</b>
                                     </label>
-                                    <label>
-                                        <input class="required" type="radio" name="radiotest3"> Radio3
+                                    <label class="custom">
+                                        <span class="radio-custom ui-border-dual ui-ease-form">
+                                            <input class="required" type="radio" name="radiotest4">
+                                            <i class="ui-state"></i>
+                                        </span>
+                                        <b>Radio2</b>
                                     </label>
                                 </div>
                                 <p class="ui-required-msg">Please, select any option.</p>
@@ -1594,47 +1611,16 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-info">Required with custom radios.</label>
+                                <label class="ui-form-info">Required with switches.</label>
                             </div>
                             <div class="ui-col-9">
-                                <div class="ui-required-accept">
-                                    <label class="custom">
-                                        <span class="radio-custom ui-border-dual ui-ease-form">
-                                            <input class="required" type="radio" name="radiotest4">
-                                            <i class="ui-state"></i>
-                                        </span>
-                                        <b>Custom Radio1</b>
-                                    </label>
-                                    <label class="custom">
-                                        <span class="radio-custom ui-border-dual ui-ease-form">
-                                            <input class="required" type="radio" name="radiotest4">
-                                            <i class="ui-state"></i>
-                                        </span>
-                                        <b>Custom Radio2</b>
-                                    </label>
-                                    <label class="custom">
-                                        <span class="radio-custom ui-border-dual ui-ease-form">
-                                            <input class="required" type="radio" name="radiotest4">
-                                            <i class="ui-state"></i>
-                                        </span>
-                                        <b>Custom Radio2</b>
-                                    </label>
-                                </div>
-                                <p class="ui-required-msg">Please, select any option.</p>
-                                <i class="hint ui-color-black-25">* Required</i>
-                            </div>
-
-                            <div class="ui-col-3">
-                                <label class="ui-form-info">Required with custom checks.</label>
-                            </div>
-                            <div class="ui-col-9">
-                                <div class="ui-required-accept">
+                                <div class="ui-required-holder">
                                     <label class="custom">
                                         <span class="switch-custom ui-round ui-border-dual ui-ease-form">
                                             <input class="required" type="checkbox">
                                             <i class="ui-state"></i>
                                         </span>
-                                        <b>Custom Switch</b>
+                                        <b>Switch</b>
                                     </label>
                                 </div>
                                 <p class="ui-required-msg">Please, read and accept Terms and Conditions.</p>
@@ -1875,21 +1861,21 @@
                                 <input type="checkbox" checked>
                                 <i class="ui-state"></i>
                             </span>
-                            <b>Custom Checkbox</b>
+                            <b>Checkbox</b>
                         </label>
                         <label class="custom">
                             <span class="radio-custom">
                                 <input type="radio" checked>
                                 <i class="ui-state"></i>
                             </span>
-                            <b>Custom Radio</b>
+                            <b>Radio</b>
                         </label>
                         <label class="custom">
                             <span class="switch-custom">
                                 <input type="checkbox" checked>
                                 <i class="ui-state"></i>
                             </span>
-                            <b>Custom Switch</b>
+                            <b>Switch</b>
                         </label>
 
                     </div>
@@ -1929,21 +1915,21 @@
                                 <input type="checkbox" checked>
                                 <i class="ui-state"></i>
                             </span>
-                            <b>Custom Checkbox</b>
+                            <b>Checkbox</b>
                         </label>
                         <label class="custom">
                             <span class="radio-custom ui-shadow-in ui-no-border">
                                 <input type="radio" checked>
                                 <i class="ui-state"></i>
                             </span>
-                            <b>Custom Radio</b>
+                            <b>Radio</b>
                         </label>
                         <label class="custom">
                             <span class="switch-custom ui-shadow-in ui-no-border">
                                 <input type="checkbox" checked>
                                 <i class="ui-state"></i>
                             </span>
-                            <b>Custom Switch</b>
+                            <b>Switch</b>
                         </label>
 
                     </div>
@@ -1983,21 +1969,21 @@
                                 <input type="checkbox" checked>
                                 <i class="ui-state ui-fill-dark-100"></i>
                             </span>
-                            <b>Custom Checkbox</b>
+                            <b>Checkbox</b>
                         </label>
                         <label class="custom">
                             <span class="radio-custom ui-fill-light-100">
                                 <input type="radio" checked>
                                 <i class="ui-state ui-fill-dark-100"></i>
                             </span>
-                            <b>Custom Radio</b>
+                            <b>Radio</b>
                         </label>
                         <label class="custom">
                             <span class="switch-custom ui-fill-light-100">
                                 <input type="checkbox" checked>
                                 <i class="ui-state ui-fill-dark-100"></i>
                             </span>
-                            <b>Custom Switch</b>
+                            <b>Switch</b>
                         </label>
 
                     </div>

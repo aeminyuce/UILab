@@ -5240,7 +5240,7 @@ label.custom {
   background-color: hsla(0, 74%, 55%, 0.1) !important;
   border-color: hsl(0, 74%, 55%) !important;
 }
-.error:not(.ui-form-holder):not(.ui-required-accept):not(.hint) {
+.error:not(.ui-form-holder):not(.ui-required-holder):not(.hint) {
   background-color: hsla(0, 74%, 55%, 0.1) !important;
   border-color: hsl(0, 74%, 55%) !important;
 }
@@ -5250,7 +5250,7 @@ label.custom {
   background-color: hsla(42, 100%, 45%, 0.1) !important;
   border-color: hsl(42, 100%, 45%) !important;
 }
-.warning:not(.ui-form-holder):not(.ui-required-accept):not(.hint) {
+.warning:not(.ui-form-holder):not(.ui-required-holder):not(.hint) {
   background-color: hsla(42, 100%, 45%, 0.1) !important;
   border-color: hsl(42, 100%, 45%) !important;
 }

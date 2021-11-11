@@ -352,13 +352,27 @@
                                 <li class="ui-selected">
                                     <label><input type="radio" name="s" value="value01" checked>Value 01</label>
                                 </li>
-                                <li><label><input type="radio" name="s" value="value02">Value 02</label></li>
-                                <li><label><input type="radio" name="s" value="value03">Value 03</label></li>
-                                <li><label><input type="radio" name="s" value="value04">Value 04</label></li>
-                                <li><label><input type="radio" name="s" value="value05">Value 05</label></li>
-                                <li><label><input type="radio" name="s" value="value06">Value 06</label></li>
-                                <li><label><input type="radio" name="s" value="value07">Value 07</label></li>
-                                <li><label><input type="radio" name="s" value="value08">Value 08</label></li>
+                                <li>
+                                    <label><input type="radio" name="s" value="value02">Value 02</label>
+                                </li>
+                                <li>
+                                    <label><input type="radio" name="s" value="value03">Value 03</label>
+                                </li>
+                                <li>
+                                    <label><input type="radio" name="s" value="value04">Value 04</label>
+                                </li>
+                                <li>
+                                    <label><input type="radio" name="s" value="value05">Value 05</label>
+                                </li>
+                                <li>
+                                    <label><input type="radio" name="s" value="value06">Value 06</label>
+                                </li>
+                                <li>
+                                    <label><input type="radio" name="s" value="value07">Value 07</label>
+                                </li>
+                                <li>
+                                    <label><input type="radio" name="s" value="value08">Value 08</label>
+                                </li>
                             </ul>
                         </div>
 
