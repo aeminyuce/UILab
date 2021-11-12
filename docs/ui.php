@@ -151,7 +151,7 @@
                     <span class="ui-sp-30"></span>
 
                     <b class="ui-margin-5-b ui-block">ui.ajax() is a simple javascript to making XHR requests:</b>
-                    <pre class="ui-pre ui-round ui-scroll-v">ajax({
+                    <pre class="ui-pre ui-round ui-scroll-v">ui.ajax({
 
     type : 'GET',
     url : 'yourfile.php',
@@ -175,7 +175,7 @@
 // JSON Example:
 var myJSONRequests = [];
 
-ajax({
+ui.ajax({
 
     type : 'GET',
     url : 'yourfile.php',
