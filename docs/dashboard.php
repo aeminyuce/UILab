@@ -1169,7 +1169,7 @@
                                         </ul>
                                     </div>
                                     <h4 class="ui-h4 ui-align-l ui-m-10-t">Experts</h4>
-                                    <div class="ui-grid-list ui-grid-list-striped grid-hover ui-theme-gray ui-ease-ui-grid-list">
+                                    <div class="ui-grid-list ui-grid-list-striped ui-grid-hover ui-theme-gray ui-ease-grid-list">
 
                                         <div class="ui-row ui-no-row-gap-v ui-row-gap-sm-h">
                                             <div class="ui-col-6 ui-lg-fluid">

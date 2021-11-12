@@ -83,7 +83,7 @@
         /* check class names *
         ui.onload(function () {
             ui.ajax({
-                url : 'countdown.php',
+                url : 'listings.php',
                 callback: function (status, response) {}
             });
         });
@@ -92,7 +92,33 @@
             ui.globals.eventAjaxCallback,
 
             function () {
-                console.log(ui.ajax.classNames);
+                ui.each(ui.ajax.classNames, function () {
+
+                    var str, strStart, strlength;
+
+                    str = this.toString();
+
+                    strStart = str.match(/ui-/g);
+
+                    if (strStart === null) {
+                        console.warn(str);
+
+                    } else {
+                        console.log(str);
+                    }
+
+                    strLength = str.match(/(ui-)|(-ui)/g);
+                    if (strLength !== null) {
+
+                        strLength = Number(str.match(/(ui-)|(-ui)/g).length);
+
+                        if (strLength > 1) {
+                            console.error(str);
+                        }
+
+                    }
+
+                });
             });
         **/
     </script>

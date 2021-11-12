@@ -511,11 +511,11 @@
                 <h3 class="ui-h3">Column Wrapping</h3>
                 <div class="ui-p-30-b ui-theme-sub">
                     <div class="ui-row">
-                        <div class="ui-col-3 break-9">
-                            <div class="ui-fill-dark-100 ui-p-10-v ui-p-5-h ui-round ui-no-scroll">ui-col-3 break-9</div>
+                        <div class="ui-col-3">
+                            <div class="ui-fill-dark-100 ui-p-10-v ui-p-5-h ui-round ui-no-scroll">ui-col-3</div>
                         </div>
-                        <div class="ui-col-9">
-                            <div class="ui-fill-dark-100 ui-p-10-v ui-p-5-h ui-round ui-no-scroll">ui-col-9</div>
+                        <div class="ui-col-5">
+                            <div class="ui-fill-dark-100 ui-p-10-v ui-p-5-h ui-round ui-no-scroll">ui-col-5</div>
                         </div>
                         <div class="ui-col-4">
                             <div class="ui-fill-dark-100 ui-p-10-v ui-p-5-h ui-round ui-no-scroll">ui-col-4</div>

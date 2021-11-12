@@ -281,7 +281,7 @@
                                 <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-list-column-2 ui-round ui-shadow-lg">
-                                <li class="holder">
+                                <li class="ui-holder">
                                     <b class="ui-p-10 ui-block ui-border-b ui-border-light">Title</b>
                                     <ul class="ui-list-unstyled ui-list-spacer-10 ui-font-hoverline-2nd ui-p-10">
                                         <li><a href="#">Dropdown Item</a></li>
@@ -291,7 +291,7 @@
                                         <li><a href="#">Dropdown Item</a></li>
                                     </ul>
                                 </li>
-                                <li class="holder">
+                                <li class="ui-holder">
                                     <b class="ui-p-10 ui-block ui-border-b ui-border-light">Title</b>
                                     <ul class="ui-list-unstyled ui-list-spacer-10 ui-font-hoverline-2nd ui-p-10">
                                         <li><a href="#">Dropdown Item</a></li>
@@ -313,7 +313,7 @@
                                 <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-list-column-2 ui-round ui-shadow-lg">
-                                <li class="holder">
+                                <li class="ui-holder">
                                     <b class="ui-p-10 ui-block ui-border-b ui-border-light">Title</b>
                                     <span class="ui-btn-list ui-form-lg ui-ease-1st-btn">
                                         <a class="ui-btn ui-btn-ghost ui-btn-multi" href="#">Dropdown Item</a>
@@ -323,7 +323,7 @@
                                         <a class="ui-btn ui-btn-ghost ui-btn-multi" href="#">Dropdown Item</a>
                                     </span>
                                 </li>
-                                <li class="holder">
+                                <li class="ui-holder">
                                     <b class="ui-p-10 ui-block ui-border-b ui-border-light">Title</b>
                                     <span class="ui-btn-list ui-form-lg ui-ease-1st-btn">
                                         <a class="ui-btn ui-btn-ghost ui-btn-multi" href="#">Dropdown Item</a>

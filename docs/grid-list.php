@@ -5,7 +5,7 @@
 
                 <h3 class="ui-h3">Grid List Examples</h3>
                 <div class="ui-card ui-p-10 ui-round ui-shadow-lg">
-                    <div class="ui-grid-list ui-grid-list-striped grid-hover ui-theme-gray ui-ease-ui-grid-list">
+                    <div class="ui-grid-list ui-grid-list-striped ui-grid-hover ui-theme-gray ui-ease-grid-list">
 
                         <div class="ui-row ui-no-row-gap-v ui-row-gap-sm-h ui-m-2-v">
                             <div class="ui-col-6 ui-lg-fluid">
@@ -469,7 +469,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-grid-list ui-grid-list-striped grid-hover ui-border ui-ease-ui-grid-list ui-round">
+                <div class="ui-grid-list ui-grid-list-striped ui-grid-hover ui-border ui-ease-grid-list ui-round">
 
                     <div class="ui-row ui-sm-fluid">
                         <div class="ui-col-5 ui-sm-no-p-b">
@@ -1236,7 +1236,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-grid-list grid-hover ui-border ui-ease-ui-grid-list ui-round">
+                <div class="ui-grid-list ui-grid-hover ui-border ui-ease-grid-list ui-round">
 
                     <div class="ui-row ui-sm-fluid">
                         <div class="ui-col-5 ui-sm-no-p-b">
