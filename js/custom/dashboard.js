@@ -15,7 +15,7 @@ function dashboardMenuToggler(onload) {
         ui.toggleClass(menu, 'ui-hidden ui-visible-lg');
         ui.toggleClass('header', 'dashboard-menu-opened');
 
-        ui.toggleClass('.ui-show-mobile-menu-l', 'ui-hidden-lg');
+        ui.toggleClass('.ui-show-sidebar-l', 'ui-hidden-lg');
         ui.toggleClass('.dashboard-menu-show', 'ui-hidden');
 
     };

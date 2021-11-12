@@ -7,7 +7,7 @@
 
             <div class="movie-library ui-full-h ui-set-fixed ui-set-l ui-padding-5 ui-fill-dark-100 ui-hidden-md ui-scroll-v ui-scrollbar-faded">
 
-                <div class="ui-align-l ui-padding-10 ui-icons-no-opacity ui-icons-margin-10-r ui-form-lg ui-add-mobile-menu-l">
+                <div class="ui-align-l ui-padding-10 ui-icons-no-opacity ui-icons-margin-10-r ui-form-lg ui-add-sidebar-l">
                     <h5 class="ui-h5 ui-color-white-50 ui-padding-15 ui-margin-5-b">LIBRARY</h5>
                     <ul class="ui-list-unstyled ui-list-spacer-15 ui-font-16 ui-font-bold ui-block-2nd ui-ease-2nd-btn">
                         <li>
@@ -93,7 +93,7 @@
                         </div>
                         <div class="ui-col-6 ui-align-r">
                             <span class="ui-align-c ui-color-black-50 ui-margin-20-r ui-sm-no-margin ui-ease-1st-btn">
-                                <button class="ui-btn ui-btn-square ui-btn-ghost ui-margin-10-l ui-circle ui-left ui-show-mobile-menu-l ui-visible-md">
+                                <button class="ui-btn ui-btn-square ui-btn-ghost ui-margin-10-l ui-circle ui-left ui-show-sidebar-l ui-visible-md">
                                     <svg class="ui-icon"><use href="#bars-left"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-circle ui-ease-btn ui-visible-md" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
@@ -403,14 +403,14 @@
 </main>
 
 <!-- mobile menu -->
-<div class="ui-mobile-menu ui-show-l ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
-    <div class="ui-mobile-menu-title ui-padding-20-v ui-font-18 ui-border-b">
-        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-mobile-menu">
+<div class="ui-sidebar ui-show-l ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
+    <div class="ui-sidebar-title ui-padding-20-v ui-font-18 ui-border-b">
+        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-sidebar">
             <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
         </button>
         Categories
     </div>
-    <div class="ui-mobile-menu-content ui-no-padding ui-scroll-v"></div>
+    <div class="ui-sidebar-content ui-no-padding ui-scroll-v"></div>
 </div>
 
 <!-- modal search -->

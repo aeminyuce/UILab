@@ -397,10 +397,10 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="mobile menu" value="../css/mobile-menu" checked>
+                                            <input type="checkbox" name="sidebar" value="../css/sidebar" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Mobile Menu
+                                        Sidebar
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
@@ -727,10 +727,10 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="mobile menu js" value="../js/mobile-menu" checked>
+                                            <input type="checkbox" name="sidebar js" value="../js/sidebar" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Mobile Menu
+                                        Sidebar
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">

@@ -19,7 +19,7 @@
                     </button>
                 </div>
 
-                <div class="ui-tabs ui-align-l ui-icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn ui-scroll-v ui-scrollbar-faded ui-add-mobile-menu-l" data-ui-classes="ui-text">
+                <div class="ui-tabs ui-align-l ui-icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn ui-scroll-v ui-scrollbar-faded ui-add-sidebar-l" data-ui-classes="ui-text">
 
                     <div class="ui-padding-10">
                         <div class="ui-font-12 ui-margin-10-b ui-color-white-25">Personal Activity</div>
@@ -234,7 +234,7 @@
                     <button class="dashboard-menu-show ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle ui-visible-lg ui-hidden" data-ui-tooltip title="Toggle Menu">
                         <svg class="ui-icon"><use href="#angle-right"/></svg>
                     </button>
-                    <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle ui-show-mobile-menu-l ui-hidden-lg" data-ui-tooltip title="Show Menu" data-ui-only="desktop">
+                    <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle ui-show-sidebar-l ui-hidden-lg" data-ui-tooltip title="Show Menu" data-ui-only="desktop">
                         <svg class="ui-icon"><use href="#bars-left"/></svg>
                     </button>
                     <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
@@ -1777,14 +1777,14 @@
 </main>
 
 <!-- mobile menu -->
-<div class="ui-mobile-menu ui-show-l ui-invert-bg ui-theme-panel ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
-    <div class="ui-mobile-menu-title ui-no-padding ui-border-b">
-        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-mobile-menu">
+<div class="ui-sidebar ui-show-l ui-invert-bg ui-theme-panel ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
+    <div class="ui-sidebar-title ui-no-padding ui-border-b">
+        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-sidebar">
             <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
         </button>
         <img src="img/logo-udashboard.png" height="66" alt="">
     </div>
-    <div class="ui-mobile-menu-content ui-no-padding ui-scroll-v ui-scrollbar-faded"></div>
+    <div class="ui-sidebar-content ui-no-padding ui-scroll-v ui-scrollbar-faded"></div>
 </div>
 
 <!-- modal search -->

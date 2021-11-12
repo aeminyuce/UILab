@@ -27,7 +27,7 @@ ui.dropdown = {
 
     // outer classnames
     nameBtn: 'ui-btn',
-    nameMobileMenu: 'ui-mobile-menu',
+    nameSidebar: 'ui-sidebar',
 
     // tags
     tagMenuItems: 'li',
@@ -129,7 +129,7 @@ ui.dropdown = {
                 offset = parent.getBoundingClientRect();
                 list = ui.find('.' + ui.dropdown.nameMenu, parent)[0];
 
-                if (ui.closest(that, '.' + ui.dropdown.nameMobileMenu)[0] === undefined && !ui.hasClass(parent, ui.dropdown.nameNavFullHor)) { // diable all positionings on mobile menus and full horizontal navigations
+                if (ui.closest(that, '.' + ui.dropdown.nameSidebar)[0] === undefined && !ui.hasClass(parent, ui.dropdown.nameNavFullHor)) { // diable all positionings on mobile menus and full horizontal navigations
 
                     listStyles = list.style.length;
 

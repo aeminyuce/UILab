@@ -20,7 +20,7 @@
                         <div class="ui-col-12 ui-align-r">
 
                             <div class="ui-hidden-sm">
-                                <div class="ui-ease-1st-btn ui-icons-no-opacity ui-form-lg ui-add-mobile-menu-r">
+                                <div class="ui-ease-1st-btn ui-icons-no-opacity ui-form-lg ui-add-sidebar-r">
                                     <a href="#" class="ui-btn ui-btn-sm-fluid ui-btn-ghost">
                                         <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#home"/></svg>
                                         Home
@@ -60,7 +60,7 @@
                                 </div>
                             </div>
 
-                            <button class="ui-btn ui-btn-lg ui-btn-square ui-btn-ghost ui-text ui-ease-btn ui-show-mobile-menu-r ui-visible-sm">
+                            <button class="ui-btn ui-btn-lg ui-btn-square ui-btn-ghost ui-text ui-ease-btn ui-show-sidebar-r ui-visible-sm">
                                 <svg class="ui-icon ui-no-opacity"><use href="#bars"/></svg>
                             </button>
 
@@ -904,12 +904,12 @@
 <!-- footer: end -->
 
 <!-- mobile menu -->
-<div class="ui-mobile-menu ui-show-r ui-ease-layout ui-ease-in-out">
-    <div class="ui-mobile-menu-title ui-border-b">
-        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-ease-btn ui-close-mobile-menu">
+<div class="ui-sidebar ui-show-r ui-ease-layout ui-ease-in-out">
+    <div class="ui-sidebar-title ui-border-b">
+        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-ease-btn ui-close-sidebar">
             <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
         </button>
         <a href="#"><img src="img/agriculture/logo.png" alt="" srcset="img/agriculture/logo@2x.png 2x"></a>
     </div>
-    <div class="ui-mobile-menu-content ui-align-l ui-theme-farmer2 ui-scroll-v"></div>
+    <div class="ui-sidebar-content ui-align-l ui-theme-farmer2 ui-scroll-v"></div>
 </div>

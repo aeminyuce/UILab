@@ -1,23 +1,23 @@
 /*
- UI Mobile Menu JS
+ UI Sidebar JS
  Requires UI JS
 */
 
-ui.mobileMenu = {
+ui.sidebar = {
 
     // targets
-    target: 'ui-mobile-menu',
-    targetBg: 'ui-mobile-menu-bg',
+    target: 'ui-sidebar',
+    targetBg: 'ui-sidebar-bg',
 
     // main classnames
-    nameOpened: 'ui-mobile-menu-opened',
-    nameClose: 'ui-close-mobile-menu',
-    nameContent: 'ui-mobile-menu-content',
+    nameOpened: 'ui-sidebar-opened',
+    nameClose: 'ui-close-sidebar',
+    nameContent: 'ui-sidebar-content',
 
-    nameDataTarget: 'ui-mm',
+    nameDataTarget: 'ui-sbid',
 
-    nameShowingMenu: 'ui-show-mobile-menu-',
-    nameAddContent: 'ui-add-mobile-menu-',
+    nameShowingMenu: 'ui-show-sidebar-',
+    nameAddContent: 'ui-add-sidebar-',
 
     // helper classnames
     nameShow: 'ui-show-',
@@ -34,11 +34,11 @@ ui.mobileMenu = {
     tagDataTarget: 'i',
 
     // data attributes
-    dataMM: 'data-ui-mm',
+    dataID: 'data-ui-sbid',
     dataImport: 'data-ui-import',
 
     // custom events
-    eventMenuOpen: 'ui:mobileMenuOpen'
+    eventMenuOpen: 'ui:sidebarOpen'
 
 };
 
@@ -47,32 +47,32 @@ ui.mobileMenu = {
     'use strict';
     /*globals window, document, ui, setTimeout */
 
-    ui.mobileMenu.close = function (panel) {
+    ui.sidebar.close = function (panel) {
 
         var i, id, el, contents, bg;
 
-        bg = ui.find('.' + ui.mobileMenu.targetBg)[0];
+        bg = ui.find('.' + ui.sidebar.targetBg)[0];
 
-        ui.removeClass(panel, ui.mobileMenu.nameOpenEase);
-        ui.removeClass(bg, ui.mobileMenu.nameOpenEase);
+        ui.removeClass(panel, ui.sidebar.nameOpenEase);
+        ui.removeClass(bg, ui.sidebar.nameOpenEase);
 
-        ui.removeClass(document, ui.mobileMenu.nameOpened);
+        ui.removeClass(document, ui.sidebar.nameOpened);
 
         setTimeout(function () {
 
-            ui.removeClass(panel, ui.mobileMenu.nameOpen);
-            ui.removeClass(bg, ui.mobileMenu.nameOpen);
+            ui.removeClass(panel, ui.sidebar.nameOpen);
+            ui.removeClass(bg, ui.sidebar.nameOpen);
 
         }, ui.globals.slow);
 
-        contents = ui.find('[' + ui.mobileMenu.dataMM + ']');
+        contents = ui.find('[' + ui.sidebar.dataID + ']');
 
         for (i = 0; i < contents.length; i++) {
 
-            id = '.' + ui.mobileMenu.nameDataTarget + '-' + contents[i].getAttribute(ui.mobileMenu.dataMM);
+            id = '.' + ui.sidebar.nameDataTarget + '-' + contents[i].getAttribute(ui.sidebar.dataID);
             el = ui.find(id)[0];
 
-            contents[i].removeAttribute(ui.mobileMenu.dataMM);
+            contents[i].removeAttribute(ui.sidebar.dataID);
 
             el.appendChild(contents[i]);
             el.parentNode.insertBefore(el.firstChild, el);
@@ -81,27 +81,27 @@ ui.mobileMenu = {
 
         }
 
-        ui.off('.' + ui.mobileMenu.nameClose, 'click');
+        ui.off('.' + ui.sidebar.nameClose, 'click');
 
     };
 
-    ui.mobileMenu.Start = function () {
+    ui.sidebar.Start = function () {
 
         // Event Listeners
         ui.on(document,
             'click',
 
-            '[class*="' + ui.mobileMenu.nameShowingMenu + '"]',
+            '[class*="' + ui.sidebar.nameShowingMenu + '"]',
 
             function () {
 
                 var html, importers, moveFnc, id, i, j, index, indexArr, position, bg, panel, filtered, content;
 
                 html = [];
-                position = ui.mobileMenu.nameLeft;
+                position = ui.sidebar.nameLeft;
 
-                if (ui.hasClass(this, ui.mobileMenu.nameShowingMenu + ui.mobileMenu.nameRight)) {
-                    position = ui.mobileMenu.nameRight;
+                if (ui.hasClass(this, ui.sidebar.nameShowingMenu + ui.sidebar.nameRight)) {
+                    position = ui.sidebar.nameRight;
                 }
 
                 moveFnc = function (that, j) {
@@ -113,18 +113,18 @@ ui.mobileMenu = {
                     that.insertAdjacentHTML(
                         'beforebegin',
 
-                        '<' + ui.mobileMenu.tagDataTarget + ' class="' + ui.mobileMenu.nameDataTarget + '-' + id + '" style="display: none;">' +
-                        '</' + ui.mobileMenu.tagDataTarget + '>'
+                        '<' + ui.sidebar.tagDataTarget + ' class="' + ui.sidebar.nameDataTarget + '-' + id + '" style="display: none;">' +
+                        '</' + ui.sidebar.tagDataTarget + '>'
                     );
 
-                    that.setAttribute(ui.mobileMenu.dataMM, id);
+                    that.setAttribute(ui.sidebar.dataID, id);
 
                     html[j] = document.createDocumentFragment();
                     html[j].appendChild(that);
 
                 };
 
-                importers = ui.find('.' + ui.mobileMenu.nameAddContent + position);
+                importers = ui.find('.' + ui.sidebar.nameAddContent + position);
 
                 if (importers.length === 1) {
                     moveFnc(importers[0], 0);
@@ -135,7 +135,7 @@ ui.mobileMenu = {
 
                     for (i = 0; i < importers.length; i++) {
 
-                        index = importers[i].getAttribute(ui.mobileMenu.dataImport);
+                        index = importers[i].getAttribute(ui.sidebar.dataImport);
 
                         if (index !== null && index !== '') {
                             indexArr.push(Number(index));
@@ -152,8 +152,8 @@ ui.mobileMenu = {
 
                 } else { return; }
 
-                panel = ui.find('.' + ui.mobileMenu.target + '.' + ui.mobileMenu.nameShow + position);
-                content = ui.find('.' + ui.mobileMenu.nameContent, panel);
+                panel = ui.find('.' + ui.sidebar.target + '.' + ui.sidebar.nameShow + position);
+                content = ui.find('.' + ui.sidebar.nameContent, panel);
 
                 filtered = html.filter(function (el) {
                     return el != null;
@@ -163,39 +163,39 @@ ui.mobileMenu = {
                     content.appendChild(filtered[j]);
                 }
 
-                bg = ui.find('.' + ui.mobileMenu.targetBg)[0];
+                bg = ui.find('.' + ui.sidebar.targetBg)[0];
                 if (bg === undefined) {
 
                     ui.find('body')[0].insertAdjacentHTML(
                         'beforeend',
-                        '<div class="' + ui.mobileMenu.targetBg + ' ' + ui.mobileMenu.stylesBg + '"></div>'
+                        '<div class="' + ui.sidebar.targetBg + ' ' + ui.sidebar.stylesBg + '"></div>'
                     );
 
-                    bg = ui.find('.' + ui.mobileMenu.targetBg)[0];
+                    bg = ui.find('.' + ui.sidebar.targetBg)[0];
 
                 }
 
-                ui.addClass(document, ui.mobileMenu.nameOpened);
+                ui.addClass(document, ui.sidebar.nameOpened);
 
-                ui.addClass(panel, ui.mobileMenu.nameOpen);
-                ui.addClass(bg, ui.mobileMenu.nameOpen);
+                ui.addClass(panel, ui.sidebar.nameOpen);
+                ui.addClass(bg, ui.sidebar.nameOpen);
 
                 setTimeout(function () {
 
-                    ui.addClass(panel, ui.mobileMenu.nameOpenEase);
-                    ui.addClass(bg, ui.mobileMenu.nameOpenEase);
+                    ui.addClass(panel, ui.sidebar.nameOpenEase);
+                    ui.addClass(bg, ui.sidebar.nameOpenEase);
 
                     setTimeout(function () {
-                        ui.trigger(document, ui.mobileMenu.eventMenuOpen + ' ' + ui.globals.eventDomChange); // set custom event
+                        ui.trigger(document, ui.sidebar.eventMenuOpen + ' ' + ui.globals.eventDomChange); // set custom event
                     }, ui.globals.slow);
 
                 }, 10);
 
-                ui.on('.' + ui.mobileMenu.nameClose,
+                ui.on('.' + ui.sidebar.nameClose,
                     'click',
 
                     function () {
-                        ui.mobileMenu.close(panel);
+                        ui.sidebar.close(panel);
                     });
 
             });
@@ -203,29 +203,29 @@ ui.mobileMenu = {
         ui.on(document,
             'click',
 
-            '.' + ui.mobileMenu.targetBg,
+            '.' + ui.sidebar.targetBg,
 
             function () {
 
-                var panel = ui.find('.' + ui.mobileMenu.target + '.' + ui.mobileMenu.nameOpen);
-                ui.mobileMenu.close(panel);
+                var panel = ui.find('.' + ui.sidebar.target + '.' + ui.sidebar.nameOpen);
+                ui.sidebar.close(panel);
 
             });
 
     };
 
     // Loaders
-    ui.onload(ui.mobileMenu.Start);
+    ui.onload(ui.sidebar.Start);
 
     ui.on(window,
         'resize',
 
         function () {
 
-            var panel = ui.find('.' + ui.mobileMenu.target + '.' + ui.mobileMenu.nameOpen);
+            var panel = ui.find('.' + ui.sidebar.target + '.' + ui.sidebar.nameOpen);
 
             if (panel.length > 0) {
-                ui.mobileMenu.close(panel);
+                ui.sidebar.close(panel);
             }
 
         });

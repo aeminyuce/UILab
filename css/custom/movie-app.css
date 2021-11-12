@@ -14,12 +14,12 @@
   width: 200px;
 }
 .movie-library,
-.ui-mobile-menu {
+.ui-sidebar {
   background-image: linear-gradient(135deg, hsl(227, 72%, 76%), hsl(261, 72%, 73%));
   background-image: var(--ui-movie-app-library-bg);
 }
 .movie-library .selected,
-.ui-mobile-menu .selected {
+.ui-sidebar .selected {
   background-image: linear-gradient(135deg, hsl(0, 100%, 72%), hsl(296, 70%, 65%));
 }
 @media (max-width: 959px) {

@@ -51,7 +51,7 @@
     <script src="../js/card.js?v=<?php echo filemtime('../js/card.js'); ?>"></script>
     <script src="../js/sticky-header.js?v=<?php echo filemtime('../js/sticky-header.js'); ?>"></script>
 
-    <script src="../js/mobile-menu.js?v=<?php echo filemtime('../js/mobile-menu.js'); ?>"></script>
+    <script src="../js/sidebar.js?v=<?php echo filemtime('../js/sidebar.js'); ?>"></script>
     <script src="../js/modal.js?v=<?php echo filemtime('../js/modal.js'); ?>"></script>
     <script src="../js/tooltip.js?v=<?php echo filemtime('../js/tooltip.js'); ?>"></script>
     <script src="../js/alerts.js?v=<?php echo filemtime('../js/alerts.js'); ?>"></script>
@@ -159,7 +159,7 @@
                         <a title="GitHub" href="https://dribbble.com/aeminyuce" class="ui-btn ui-btn-square ui-btn-ghost ui-circle" target="_blank">
                             <svg class="ui-icon"><use href="#dribbble"/></svg>
                         </a>
-                        <button class="ui-btn ui-btn-square ui-btn-ghost ui-circle ui-show-mobile-menu-r ui-visible-md">
+                        <button class="ui-btn ui-btn-square ui-btn-ghost ui-circle ui-show-sidebar-r ui-visible-md">
                             <svg class="ui-icon"><use href="#bars-right"/></svg>
                         </button>
                     </div>
@@ -174,7 +174,7 @@
             <!-- menu -->
             <div class="ui-col-250 ui-theme-gray ui-fill-light-200 ui-hidden-md">
 
-                <div class="ui-align-l ui-sm-align-c ui-add-mobile-menu-r">
+                <div class="ui-align-l ui-sm-align-c ui-add-sidebar-r">
                     <h3 class="ui-h3 ui-margin-15">Components</h3>
                     <ul class="ui-list-unstyled ui-block-2nd ui-ease-2nd-button">
                         <li><a class="ui-btn ui-btn-ghost" href="?p=alerts">Alerts</a></li>
@@ -325,14 +325,14 @@
     </main>
 
     <!-- mobile menu -->
-    <div class="ui-mobile-menu ui-show-r ui-theme-base ui-ease-layout ui-ease-in-out">
-        <div class="ui-mobile-menu-title ui-padding-15-v ui-fill-dark-100">
-            <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-mobile-menu">
+    <div class="ui-sidebar ui-show-r ui-theme-base ui-ease-layout ui-ease-in-out">
+        <div class="ui-sidebar-title ui-padding-15-v ui-fill-dark-100">
+            <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-sidebar">
                 <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
             </button>
             <img src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">
         </div>
-        <div class="ui-mobile-menu-content ui-no-padding ui-theme-gray ui-fill-light-100 ui-scroll-v"></div>
+        <div class="ui-sidebar-content ui-no-padding ui-theme-gray ui-fill-light-100 ui-scroll-v"></div>
     </div>
 <?php
     }
