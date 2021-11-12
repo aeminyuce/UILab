@@ -1,39 +1,39 @@
 /*globals document, ui, setTimeout, sessionStorage */
 
-// Toggle Sidebar
+// Toggle Menu
 var testStorage;
 
-function sidebarToggler(onload) {
+function dashboardMenuToggler(onload) {
 
-    var sidebar, sidebarInner, toggleClasses, state;
+    var menu, menuInner, toggleClasses, state;
 
-    sidebar = ui.find('.sidebar')[0];
-    sidebarInner = ui.find('.sidebar > div')[0];
+    menu = ui.find('.dashboard-menu')[0];
+    menuInner = ui.find('.dashboard-menu > div')[0];
 
     toggleClasses = function () { // toggle classnames
 
-        ui.toggleClass(sidebar, 'ui-hidden ui-visible-lg');
-        ui.toggleClass('header', 'sidebar-opened');
+        ui.toggleClass(menu, 'ui-hidden ui-visible-lg');
+        ui.toggleClass('header', 'dashboard-menu-opened');
 
         ui.toggleClass('.ui-show-mobile-menu-l', 'ui-hidden-lg');
-        ui.toggleClass('.sidebar-show', 'ui-hidden');
+        ui.toggleClass('.dashboard-menu-show', 'ui-hidden');
 
     };
 
-    if (ui.hasClass(sidebar, 'ui-hidden')) { // show
+    if (ui.hasClass(menu, 'ui-hidden')) { // show
 
         state = 'opened';
         toggleClasses(); // toggle classnames
 
         setTimeout(function () {
 
-            sidebar.style.width = '250px';
-            sidebarInner.style.transform = 'translateX(0)';
+            menu.style.width = '250px';
+            menuInner.style.transform = 'translateX(0)';
 
                 setTimeout(function () {
 
-                    sidebar.style.removeProperty('width');
-                    sidebar.style.removeProperty('transform');
+                    menu.style.removeProperty('width');
+                    menu.style.removeProperty('transform');
 
                 }, 0);
 
@@ -43,8 +43,8 @@ function sidebarToggler(onload) {
 
         state = 'closed';
 
-        sidebar.style.width = '0';
-        sidebarInner.style.transform = 'translateX(-100%)';
+        menu.style.width = '0';
+        menuInner.style.transform = 'translateX(-100%)';
 
         // toggle classnames
         if (onload) {
@@ -58,32 +58,33 @@ function sidebarToggler(onload) {
         ui.trigger(document, ui.globals.eventDomChange); // set custom event
     }, ui.globals.slow);
 
-    // set sidebar state
+    // set menu state
     if (testStorage && sessionStorage !== undefined) {
-        sessionStorage.setItem('dashboard-left-sidebar', state);
+        sessionStorage.setItem('dashboard-left-menu', state);
     }
 
 }
 
-ui.on(document, 'click', '.sidebar-show,.sidebar-hide', sidebarToggler);
+ui.on(document, 'click', '.dashboard-menu-show,.dashboard-menu-hide', dashboardMenuToggler);
 
-ui.onload(function () { // check stored sidebar position
+ui.onload(
+    function () { // check stored menu position
 
-    testStorage = true;
+        testStorage = true;
 
-    // test for storage is supported?
-    try {
-        sessionStorage.setItem('dashboard-left-sidebar-test', 0);
+        // test for storage is supported?
+        try {
+            sessionStorage.setItem('dashboard-left-menu-test', 0);
 
-    } catch (e) {
-        testStorage = false;
-    }
+        } catch (e) {
+            testStorage = false;
+        }
 
-    if (testStorage && sessionStorage !== undefined) {
+        if (testStorage && sessionStorage !== undefined) {
 
-        var state = sessionStorage.getItem('dashboard-left-sidebar');
-        if (state !== null && state === 'closed') { sidebarToggler(true); }
+            var state = sessionStorage.getItem('dashboard-left-menu');
+            if (state !== null && state === 'closed') { dashboardMenuToggler(true); }
 
-    }
+        }
 
-});
+    });

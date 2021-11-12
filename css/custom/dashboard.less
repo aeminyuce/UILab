@@ -35,7 +35,7 @@
 body { overflow-x: hidden; }
 header { ._bg-var(header-bg); }
 
-.sidebar {
+.dashboard-menu {
     &-hide { background-color: @no-color; border: 0; cursor: pointer; }
     .ui-sticky-header & { top: -@header-height; }
 
@@ -47,7 +47,7 @@ header { ._bg-var(header-bg); }
 @media (@lg-start) {
     header {
         &.ui-sticky {
-            &.sidebar-opened { width: calc(100% - 250px); left: 250px; }
+            &.dashboard-menu-opened { width: calc(100% - 250px); left: 250px; }
         }
     }
 }

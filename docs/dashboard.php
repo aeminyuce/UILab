@@ -8,13 +8,13 @@
 
     <div class="ui-col-static ui-sm-fluid">
 
-        <!-- sidebar -->
-        <div class="sidebar ui-col-250 ui-set-relative ui-visible-lg ui-theme-panel ui-ease-width ui-ease-in-out">
+        <!-- dashboard-menu -->
+        <div class="dashboard-menu ui-col-250 ui-set-relative ui-visible-lg ui-theme-panel ui-ease-width ui-ease-in-out">
             <div class="ui-col-250 ui-full-h ui-set-fixed ui-set-l ui-set-t ui-invert-bg ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
 
                 <div class="ui-set-relative ui-padding-5-t">
                     <img class="ui-margin-1-t" src="img/logo-udashboard.png" height="62" alt="">
-                    <button class="sidebar-hide ui-opacity-more ui-padding-10-h ui-ease-btn ui-set-absolute ui-set-cy ui-set-r" data-ui-tooltip title="Toggle Sidebar">
+                    <button class="dashboard-menu-hide ui-opacity-more ui-padding-10-h ui-ease-btn ui-set-absolute ui-set-cy ui-set-r" data-ui-tooltip title="Toggle Menu">
                         <svg class="ui-icon"><use href="#angle-left"/></svg>
                     </button>
                 </div>
@@ -228,13 +228,13 @@
         <div class="ui-row">
 
             <!-- header: start -->
-            <header class="ui-col-12 ui-align-r ui-icons-no-opacity ui-shadow-sm ui-form-lg ui-ease-layout sidebar-opened" data-ui-classes="ui-shadow-lg">
+            <header class="ui-col-12 ui-align-r ui-icons-no-opacity ui-shadow-sm ui-form-lg ui-ease-layout dashboard-menu-opened" data-ui-classes="ui-shadow-lg">
 
                 <div class="ui-align-c ui-left ui-ease-1st-btn">
-                    <button class="sidebar-show ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle ui-visible-lg ui-hidden" data-ui-tooltip title="Toggle Sidebar">
+                    <button class="dashboard-menu-show ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle ui-visible-lg ui-hidden" data-ui-tooltip title="Toggle Menu">
                         <svg class="ui-icon"><use href="#angle-right"/></svg>
                     </button>
-                    <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle ui-show-mobile-menu-l ui-hidden-lg" data-ui-tooltip title="Show Sidebar" data-ui-only="desktop">
+                    <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle ui-show-mobile-menu-l ui-hidden-lg" data-ui-tooltip title="Show Menu" data-ui-only="desktop">
                         <svg class="ui-icon"><use href="#bars-left"/></svg>
                     </button>
                     <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">

@@ -5,7 +5,7 @@
     <div class="ui-col-static ui-no-fluid">
         <div class="ui-col-200 ui-set-relative ui-hidden-md">
 
-            <div class="sidebar ui-full-h ui-set-fixed ui-set-l ui-padding-5 ui-fill-dark-100 ui-hidden-md ui-scroll-v ui-scrollbar-faded">
+            <div class="movie-library ui-full-h ui-set-fixed ui-set-l ui-padding-5 ui-fill-dark-100 ui-hidden-md ui-scroll-v ui-scrollbar-faded">
 
                 <div class="ui-align-l ui-padding-10 ui-icons-no-opacity ui-icons-margin-10-r ui-form-lg ui-add-mobile-menu-l">
                     <h5 class="ui-h5 ui-color-white-50 ui-padding-15 ui-margin-5-b">LIBRARY</h5>

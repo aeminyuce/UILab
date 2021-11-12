@@ -16,19 +16,19 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">2</th>
+                            <th>2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">3</th>
+                            <th>3</th>
                             <td>Larry</td>
                             <td>the Bird</td>
                             <td>@twitter</td>
@@ -50,19 +50,19 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">2</th>
+                            <th>2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">3</th>
+                            <th>3</th>
                             <td>Larry</td>
                             <td>the Bird</td>
                             <td>@twitter</td>
@@ -84,19 +84,19 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">2</th>
+                            <th>2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">3</th>
+                            <th>3</th>
                             <td>Larry</td>
                             <td>the Bird</td>
                             <td>@twitter</td>
@@ -120,7 +120,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="ui-row">1</th>
+                                    <th>1</th>
                                     <td>Mark</td>
                                     <td>Otto</td>
                                     <td>@mdo</td>
@@ -140,7 +140,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="ui-row">1</th>
+                                    <th>1</th>
                                     <td>Mark</td>
                                     <td>Otto</td>
                                     <td>@mdo</td>
@@ -160,7 +160,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="ui-row">1</th>
+                                    <th>1</th>
                                     <td>Mark</td>
                                     <td>Otto</td>
                                     <td>@mdo</td>
@@ -180,7 +180,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="ui-row">1</th>
+                                    <th>1</th>
                                     <td>Mark</td>
                                     <td>Otto</td>
                                     <td>@mdo</td>
@@ -204,25 +204,25 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">2</th>
+                            <th>2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">2</th>
+                            <th>2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
@@ -244,25 +244,25 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">2</th>
+                            <th>2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">2</th>
+                            <th>2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
@@ -272,8 +272,8 @@
 
                 <span class="ui-sp-20"></span>
 
-                <h3 class="ui-h3">Ultra Condensed Table</h3>
-                <table class="ui-table ui-padding-30-b ui-table-ultra-condensed">
+                <h3 class="ui-h3">More Condensed Table</h3>
+                <table class="ui-table ui-padding-30-b ui-table-condensed-more">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -284,25 +284,25 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">2</th>
+                            <th>2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">2</th>
+                            <th>2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
@@ -324,43 +324,43 @@
                     </thead>
                     <tbody>
                         <tr class="ui-theme-gray ui-fill-light-100 ui-hover">
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr class="ui-theme-orange ui-fill-light-100 ui-hover">
-                            <th scope="ui-row">2</th>
+                            <th>2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
                         </tr>
                         <tr class="ui-theme-red ui-fill-light-100 ui-hover">
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr class="ui-theme-yellow ui-fill-light-100 ui-hover">
-                            <th scope="ui-row">2</th>
+                            <th>2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
                         </tr>
                         <tr class="ui-theme-green ui-fill-light-100 ui-hover">
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr class="ui-theme-base ui-fill-light-100 ui-hover">
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr class="ui-theme-sub ui-fill-light-100 ui-hover">
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
@@ -379,19 +379,19 @@
                     </thead>
                     <tbody>
                         <tr class="ui-fill-light-100 ui-hover">
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr class="ui-fill-light-100 ui-hover">
-                            <th scope="ui-row">2</th>
+                            <th>2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
                         </tr>
                         <tr class="ui-fill-light-100 ui-hover">
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
@@ -410,19 +410,19 @@
                     </thead>
                     <tbody>
                         <tr class="ui-fill-light-100 ui-hover">
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr class="ui-fill-light-100 ui-hover">
-                            <th scope="ui-row">2</th>
+                            <th>2</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
                         </tr>
                         <tr class="ui-fill-light-100 ui-hover">
-                            <th scope="ui-row">1</th>
+                            <th>1</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
@@ -433,10 +433,10 @@
                 <span class="ui-sp-20"></span>
 
                 <h3 class="ui-h3">Table Sidebar</h3>
-                <table class="ui-table ui-padding-30-b ui-table-sidebar">
+                <table class="ui-table ui-table-sidebar ui-table-hover ui-tabe-striped ui-padding-30-b ui-border ui-ease-table">
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th width="20">#</th>
                             <th>First Name</th>
                             <th>Last Name</th>
                             <th>Username</th>
@@ -444,13 +444,13 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="ui-row">1</th>
+                            <td>1</td>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr>
-                            <th scope="ui-row">2</th>
+                            <td>2</td>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
@@ -483,7 +483,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="ui-row">1</th>
+                                <th>1</th>
                                 <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
@@ -499,7 +499,7 @@
                                 <td>Mark</td>
                             </tr>
                             <tr>
-                                <th scope="ui-row">2</th>
+                                <th>2</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>
@@ -548,7 +548,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="ui-row">1</th>
+                                <th>1</th>
                                 <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
@@ -569,7 +569,7 @@
                                 <td>@mdo</td>
                             </tr>
                             <tr>
-                                <th scope="ui-row">2</th>
+                                <th>2</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>

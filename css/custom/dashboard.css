@@ -164,22 +164,22 @@ header {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-header-bg);
 }
-.sidebar-hide {
+.dashboard-menu-hide {
   background-color: transparent;
   border: 0;
   cursor: pointer;
 }
-.ui-sticky-header .sidebar {
+.ui-sticky-header .dashboard-menu {
   top: -62px;
 }
-.sidebar .ui-tabs {
+.dashboard-menu .ui-tabs {
   height: calc(100% - 62px);
 }
 .dashboard-carousel {
   margin-bottom: -5px;
 }
 @media (min-width: 1400px) {
-  header.ui-sticky.sidebar-opened {
+  header.ui-sticky.dashboard-menu-opened {
     width: calc(100% - 250px);
     left: 250px;
   }

@@ -171,7 +171,7 @@
     <main class="ui-container ui-no-gutter">
         <div class="ui-col-static ui-no-fluid">
 
-            <!-- sidebar -->
+            <!-- menu -->
             <div class="ui-col-250 ui-theme-gray ui-fill-light-200 ui-hidden-md">
 
                 <div class="ui-align-l ui-sm-align-c ui-add-mobile-menu-r">

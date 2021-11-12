@@ -3,18 +3,18 @@
 @movie-app-header-bg:                   hsl(0, 0%, 100%);
 @movie-app-header-bg-dark:              @body-bg-dark;
 
-@movie-app-sidebar-bg:                  linear-gradient(135deg, hsl(227, 72%, 76%), hsl(261, 72%, 73%));
-@movie-app-sidebar-bg-dark:             linear-gradient(135deg, hsl(227, 32%, 45%), hsl(261, 56%, 15%));
+@movie-app-library-bg:                  linear-gradient(135deg, hsl(227, 72%, 76%), hsl(261, 72%, 73%));
+@movie-app-library-bg-dark:             linear-gradient(135deg, hsl(227, 32%, 45%), hsl(261, 56%, 15%));
 
-@movie-app-sidebar-selected-bg:         linear-gradient(135deg, hsl(0, 100%, 72%), hsl(296, 70%, 65%));
+@movie-app-library-selected-bg:         linear-gradient(135deg, hsl(0, 100%, 72%), hsl(296, 70%, 65%));
 
 ._movie-app-vars () {
     --ui-movie-app-header-bg: @movie-app-header-bg;
-    --ui-movie-app-sidebar-bg: @movie-app-sidebar-bg;
+    --ui-movie-app-library-bg: @movie-app-library-bg;
 }
 ._movie-app-vars-dark () {
     --ui-movie-app-header-bg: @movie-app-header-bg-dark;
-    --ui-movie-app-sidebar-bg: @movie-app-sidebar-bg-dark;
+    --ui-movie-app-library-bg: @movie-app-library-bg-dark;
 }
 
 & when (@dark-mode = true) {
@@ -34,12 +34,12 @@
 
 .ui-round:not(.ui-btn) { border-radius: (@round * 2); }
 
-.sidebar { width: 200px; }
+.movie-library { width: 200px; }
 
-.sidebar,.ui-mobile-menu {
-    ._gradient-var(movie-app-sidebar-bg);
+.movie-library,.ui-mobile-menu {
+    ._gradient-var(movie-app-library-bg);
 
-    .selected { background-image: @movie-app-sidebar-selected-bg; }
+    .selected { background-image: @movie-app-library-selected-bg; }
 }
 
 @media (@md-finish) {

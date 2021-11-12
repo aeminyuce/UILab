@@ -1,24 +1,24 @@
 /* movie app */
 [data-ui-mode="light"] {
   --ui-movie-app-header-bg: hsl(0, 0%, 100%);
-  --ui-movie-app-sidebar-bg: linear-gradient(135deg, hsl(227, 72%, 76%), hsl(261, 72%, 73%));
+  --ui-movie-app-library-bg: linear-gradient(135deg, hsl(227, 72%, 76%), hsl(261, 72%, 73%));
 }
 [data-ui-mode="dark"] {
   --ui-movie-app-header-bg: hsl(218, 16%, 10%);
-  --ui-movie-app-sidebar-bg: linear-gradient(135deg, hsl(227, 32%, 45%), hsl(261, 56%, 15%));
+  --ui-movie-app-library-bg: linear-gradient(135deg, hsl(227, 32%, 45%), hsl(261, 56%, 15%));
 }
 .ui-round:not(.ui-btn) {
   border-radius: 12px;
 }
-.sidebar {
+.movie-library {
   width: 200px;
 }
-.sidebar,
+.movie-library,
 .ui-mobile-menu {
   background-image: linear-gradient(135deg, hsl(227, 72%, 76%), hsl(261, 72%, 73%));
-  background-image: var(--ui-movie-app-sidebar-bg);
+  background-image: var(--ui-movie-app-library-bg);
 }
-.sidebar .selected,
+.movie-library .selected,
 .ui-mobile-menu .selected {
   background-image: linear-gradient(135deg, hsl(0, 100%, 72%), hsl(296, 70%, 65%));
 }

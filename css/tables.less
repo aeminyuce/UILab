@@ -13,15 +13,22 @@
 @table-hover-bg:                        fade(@black, 10%);
 @table-hover-bg-dark:                   fade(@white, 8%);
 
+@table-sidebar-bg:                      fade(@black, 2.5%);
+@table-sidebar-bg-dark:                 fade(@white, 2.5%);
+
 ._global-vars () {
     --ui-table-caption-bg: @table-caption-bg;
     --ui-table-stripe-bg: @table-stripe-bg;
+
     --ui-table-hover-bg: @table-hover-bg;
+    --ui-table-sidebar-bg: @table-sidebar-bg;
 }
 ._global-vars-dark () {
     --ui-table-caption-bg: @table-caption-bg-dark;
     --ui-table-stripe-bg: @table-stripe-bg-dark;
+
     --ui-table-hover-bg: @table-hover-bg-dark;
+    --ui-table-sidebar-bg: @table-sidebar-bg-dark;
 }
 
 .ui-ease-table {
@@ -36,18 +43,18 @@
     caption { font-size: @font-16; text-align: center; ._bg-var(table-caption-bg); padding: @table-padding; }
 
     th,td { font-weight: @font-normal; vertical-align: top; text-align: left; }
-    &:not(.ui-table-ultra-condensed) {
-        th,td { padding-right: (@table-padding / 2); padding-left: (@table-padding / 2); }
+
+    &:not([class*="ui-table-condensed"]) {
+        th,td { padding: @table-padding; }
     }
+    &.ui-table-condensed:not(.ui-table-condensed-more) {
+        th,td { padding-top: (@table-padding / 2); padding-bottom: (@table-padding / 2); }
+    }
+
     &:not(.ui-no-separated) {
         th,td { ._border-var(@dir: border-bottom; @var: table-border-color); }
     }
-    &:not(.ui-table-condensed):not(.ui-table-ultra-condensed) {
-        th,td { padding-top: @table-padding; padding-bottom: @table-padding; }
-    }
-    &.ui-table-condensed:not(.ui-table-ultra-condensed) {
-        th,td { padding-top: (@table-padding / 2); padding-bottom: (@table-padding / 2); }
-    }
+
     .ui-table-nowrap {
         th,td { white-space: nowrap; text-overflow: ''; overflow: hidden; }
     }
@@ -63,9 +70,7 @@
 
     &-sidebar {
         td {
-            &:first-of-type {
-                font-weight: @font-bold; ._border-var(@dir: border-right; @var: table-border-color);
-            }
+            &:first-of-type { font-weight: @font-bold; ._bg-var(table-sidebar-bg); ._border-var(@dir: border-right; @var: table-border-color); }
         }
         &.ui-align-c {
             td:not(:first-child) { text-align: center;; }
