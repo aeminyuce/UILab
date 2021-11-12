@@ -18,13 +18,13 @@
 
                 <div class="ui-fixed ui-theme-green">
                     <div class="ui-row">
-                        <div class="ui-col-12 ui-padding-15-v ui-align-c">
+                        <div class="ui-col-12 ui-p-15-v ui-align-c">
                             <span class="ui-sp-30"></span>
                             <a href="?l=login-page" class="ui-btn ui-color-white ui-btn-lg ui-btn-ghost ui-btn-ghost-border ui-btn-sm-fluid ui-circle ui-border-dual ui-stroke ui-ease-btn">
                                 <span class="ui-color-white">Have you already an account?</span>
                                 <span class="ui-text ui-hidden-sm">Click here to login.</span>
                             </a>
-                            <span class="ui-sp-30 ui-margin-20-v"></span>
+                            <span class="ui-sp-30 ui-m-20-v"></span>
                         </div>
                     </div>
                 </div>
@@ -39,12 +39,12 @@
             <div class="ui-row">
                 <div class="ui-col-12">
 
-                    <div class="ui-card ui-margin-30-b ui-shadow-lg">
+                    <div class="ui-card ui-m-30-b ui-shadow-lg">
 
                         <div class="ui-col-static ui-sm-fluid">
-                            <div class="ui-row ui-padding-20 ui-form-lg">
+                            <div class="ui-row ui-p-20 ui-form-lg">
                                 <div class="ui-col-12">
-                                    <h3 class="ui-h3 ui-margin-30-b">Create your account</h3>
+                                    <h3 class="ui-h3 ui-m-30-b">Create your account</h3>
                                     <p class="ui-color-black-25 large">Sign up to create, discover and connect with the global community.</p>
                                 </div>
                                 <div class="ui-col-6">
@@ -128,7 +128,7 @@
                                         <a class="ui-font-bold ui-text" href="#">Fees.</a>
                                     </label>
 
-                                    <span class="ui-sp-30 ui-margin-15-v"></span>
+                                    <span class="ui-sp-30 ui-m-15-v"></span>
 
                                     <button type="submit" class="signup-btn ui-btn ui-btn-md-fluid ui-color-white ui-circle ui-hover-scale ui-hover-shadow ui-ease-btn">
                                         <b>SIGN UP NOW</b>
@@ -138,7 +138,7 @@
 
                                 </div>
                             </div>
-                            <div class="why-join ui-col-lg-500 ui-col-400 ui-col-md-350 ui-order-sm-first ui-sm-align-c ui-padding-30">
+                            <div class="why-join ui-col-lg-500 ui-col-400 ui-col-md-350 ui-order-sm-first ui-sm-align-c ui-p-30">
 
                                 <img class="ui-auto-margin" src="img/sign-up.png" alt="Join Us" width="280">
                                 <span class="ui-sp-30"></span>

@@ -1,10 +1,10 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="ui-col-12 ui-padding-30">
+            <div class="ui-col-12 ui-p-30">
 
                 <h3 class="ui-h3">Button Styles</h3>
-                <div class="ui-row ui-padding-30-b ui-block-2nd ui-form-lg ui-ease-2nd-btn">
+                <div class="ui-row ui-p-30-b ui-block-2nd ui-form-lg ui-ease-2nd-btn">
                     <div class="ui-col-3 ui-col-sm-6">
                         <a class="ui-btn" href="#">Button</a>
                     </div>
@@ -44,7 +44,7 @@
                 </div>
 
                 <h3 class="ui-h3">Button Themes</h3>
-                <div class="ui-row ui-padding-30-b ui-block-2nd ui-form-lg ui-ease-2nd-btn">
+                <div class="ui-row ui-p-30-b ui-block-2nd ui-form-lg ui-ease-2nd-btn">
                     <div class="ui-col-3 ui-col-sm-6">
                         <a class="ui-btn ui-theme-red ui-fill-dark-100" href="#">Button</a>
                     </div>
@@ -84,7 +84,7 @@
                 </div>
 
                 <h3 class="ui-h3">Button Sizes</h3>
-                <div class="ui-row ui-xs-fluid ui-align-l ui-padding-30-b ui-icons-margin-5-l ui-block-2nd ui-ease-2nd-btn">
+                <div class="ui-row ui-xs-fluid ui-align-l ui-p-30-b ui-icons-margin-5-l ui-block-2nd ui-ease-2nd-btn">
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-lg ui-circle ui-border" href="#">
                             Large Button <svg class="ui-icon ui-right"><use href="#settings"/></svg>
@@ -141,7 +141,7 @@
                 </div>
 
                 <h3 class="ui-h3">Square Buttons</h3>
-                <div class="ui-padding-30-b ui-align-c ui-theme-sub ui-ease-1st-btn">
+                <div class="ui-p-30-b ui-align-c ui-theme-sub ui-ease-1st-btn">
                     <a class="ui-btn ui-btn-square ui-btn-xs ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#trash"/></svg>
                     </a>
@@ -157,7 +157,7 @@
                 </div>
 
                 <h3 class="ui-h3">Button Notifiers</h3>
-                <div class="ui-padding-30-b ui-align-c ui-icons-no-opacity">
+                <div class="ui-p-30-b ui-align-c ui-icons-no-opacity">
 
                     <div class="ui-row ui-ease-2nd-btn">
                         <div class="ui-col-6">
@@ -233,7 +233,7 @@
                 </div>
 
                 <h3 class="ui-h3">Responsive Buttons</h3>
-                <div class="ui-padding-30-b ui-form-lg ui-ease-1st-btn">
+                <div class="ui-p-30-b ui-form-lg ui-ease-1st-btn">
                     <a class="ui-btn ui-btn-square ui-round ui-btn-xs-fluid" href="#">
                         <svg class="ui-icon"><use href="#filter"/></svg>
                     </a>
@@ -243,7 +243,7 @@
                 </div>
 
                 <h3 class="ui-h3">Block Level Buttons</h3>
-                <div class="ui-row ui-padding-30-b ui-form-lg ui-ease-2nd-btn">
+                <div class="ui-row ui-p-30-b ui-form-lg ui-ease-2nd-btn">
                     <div class="ui-col-6 ui-align-c">
                         <a class="ui-btn ui-btn-xs-fluid ui-round ui-theme-yellow ui-fill-dark-100" href="#">Responsive Button</a>
                     </div>
@@ -253,7 +253,7 @@
                 </div>
 
                 <h3 class="ui-h3">Active &amp; Passive Buttons</h3>
-                <div class="ui-row ui-padding-30-b ui-block-2nd ui-ease-2nd-btn">
+                <div class="ui-row ui-p-30-b ui-block-2nd ui-ease-2nd-btn">
                     <div class="ui-col-3 ui-col-sm-6">
                         <a class="ui-btn ui-btn-active ui-circle" href="#">Active Link</a>
                     </div>
@@ -281,7 +281,7 @@
                 </div>
 
                 <h3 class="ui-h3">Multi Buttons</h3>
-                <div class="ui-row ui-padding-30-b ui-block-2nd ui-theme-green ui-ease-2nd-btn">
+                <div class="ui-row ui-p-30-b ui-block-2nd ui-theme-green ui-ease-2nd-btn">
                     <div class="ui-col-3 ui-col-sm-6">
                         <a href="#" class="ui-btn ui-btn-lg ui-btn-multi ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
                     </div>
@@ -297,7 +297,7 @@
                 </div>
 
                 <h5 class="ui-h5 ui-font-bold">Multi Buttons with Condensed Text</h5>
-                <div class="ui-row ui-padding-30-b ui-block-2nd ui-theme-base ui-ease-2nd-btn">
+                <div class="ui-row ui-p-30-b ui-block-2nd ui-theme-base ui-ease-2nd-btn">
                     <div class="ui-col-3 ui-col-sm-6">
                         <a href="#" class="ui-btn ui-btn-lg ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus.</a>
                     </div>
@@ -313,7 +313,7 @@
                 </div>
 
                 <h3 class="ui-h3">ui-pagination Buttons</h3>
-                <div class="ui-padding-30-b">
+                <div class="ui-p-30-b">
 
                     <div class="ui-pagination ui-align-c ui-theme-sub ui-ease-1st-btn">
                         <a class="ui-btn ui-btn-xs ui-prev ui-round" href="#">
@@ -402,7 +402,7 @@
                 </div>
 
                 <h3 class="ui-h3">Button List</h3>
-                <div class="ui-row ui-padding-30-b">
+                <div class="ui-row ui-p-30-b">
                     <div class="ui-col-6">
                         <div class="ui-btn-list ui-align-l ui-icons-margin-10-r ui-form-lg ui-icons-no-opacity ui-theme-green ui-ease-1st-btn">
                             <button class="ui-btn">
@@ -458,7 +458,7 @@
                 </div>
 
                 <h3 class="ui-h3">Button Holder</h3>
-                <div class="ui-row ui-padding-30-b">
+                <div class="ui-row ui-p-30-b">
                     <div class="ui-col-6">
                         <div class="ui-btn-holder ui-form-lg ui-theme-base ui-ease-1st-btn">
                             <button class="ui-btn ui-fill-dark-100">1</button>

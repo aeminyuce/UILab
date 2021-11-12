@@ -1,7 +1,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="ui-col-12 ui-padding-30">
+            <div class="ui-col-12 ui-p-30">
 
                 <h3 class="ui-h3">Breadcrumbs Examples</h3>
                 <div class="ui-breadcrumbs ui-color-black-25">
@@ -79,7 +79,7 @@
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn ui-round ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
-                                    <svg class="ui-icon ui-margin-5-r"><use href="#home"/></svg> Home
+                                    <svg class="ui-icon ui-m-5-r"><use href="#home"/></svg> Home
                                 </span>
                             </a>
                             <meta itemprop="position" content="1" />
@@ -105,7 +105,7 @@
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
-                                    <svg class="ui-icon ui-margin-5-r"><use href="#home"/></svg> Home
+                                    <svg class="ui-icon ui-m-5-r"><use href="#home"/></svg> Home
                                 </span>
                             </a>
                             <meta itemprop="position" content="1" />
@@ -131,7 +131,7 @@
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn ui-round ui-ease-btn" href="#" itemprop="item" title="Home">
                                 <span itemprop="name">
-                                    <svg class="ui-icon ui-margin-5-r"><use href="#home"/></svg> Home
+                                    <svg class="ui-icon ui-m-5-r"><use href="#home"/></svg> Home
                                 </span>
                             </a>
                             <meta itemprop="position" content="1" />
@@ -139,7 +139,7 @@
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn ui-round ui-ease-btn" href="#" itemprop="item" title="Search Results">
                                     <span itemprop="name">
-                                        <svg class="ui-icon ui-icon-xs ui-inline-block ui-margin-3-r"><use href="#angle-left"/></svg> Search Results
+                                        <svg class="ui-icon ui-icon-xs ui-inline-block ui-m-3-r"><use href="#angle-left"/></svg> Search Results
                                     </span>
                                 <meta itemprop="position" content="2" />
                             </a>

@@ -109,12 +109,12 @@
     <!-- header -->
     <header class="ui-container ui-form-lg ui-theme-base ui-invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
         <div class="ui-row">
-            <div class="ui-col-12 ui-padding-15">
+            <div class="ui-col-12 ui-p-15">
                 <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost ui-circle ui-icons-no-opacity ui-right ui-ease-btn">
                     <svg class="ui-icon ui-visible-dark"><use href="#moon-fill"/></svg>
                     <svg class="ui-icon ui-visible-light"><use href="#sun-fill"/></svg>
                 </button>
-                <a href="index.php" class="ui-btn ui-btn-square ui-btn-ghost ui-circle ui-margin-10-r ui-ease-btn">
+                <a href="index.php" class="ui-btn ui-btn-square ui-btn-ghost ui-circle ui-m-10-r ui-ease-btn">
                     <svg class="ui-icon ui-icon-hybrid ui-no-opacity"><use href="#long-arrow-left"/></svg>
                 </a>
                 <h1 class="ui-h1 ui-font-18 ui-inline-block">
@@ -144,11 +144,11 @@
     <header class="ui-container ui-form-lg ui-invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
         <div class="ui-row">
             <div class="ui-col-static ui-no-fluid">
-                <div class="ui-col-250 ui-col-xs-100 ui-padding-15 ui-no-padding-r">
-                    <img class="ui-margin-5-t" src="img/uilab-logo.png" alt="UI lab" srcset="img/uilab-logo@2x.png 2x">
+                <div class="ui-col-250 ui-col-xs-100 ui-p-15 ui-no-p-r">
+                    <img class="ui-m-5-t" src="img/uilab-logo.png" alt="UI lab" srcset="img/uilab-logo@2x.png 2x">
                 </div>
                 <div class="ui-row">
-                    <div class="ui-col-12 ui-align-r ui-padding-15 ui-no-padding-l ui-icons-no-opacity ui-ease-1st-btn">
+                    <div class="ui-col-12 ui-align-r ui-p-15 ui-no-p-l ui-icons-no-opacity ui-ease-1st-btn">
                         <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost ui-circle">
                             <svg class="ui-icon ui-visible-dark"><use href="#moon-fill"/></svg>
                             <svg class="ui-icon ui-visible-light"><use href="#sun-fill"/></svg>
@@ -175,7 +175,7 @@
             <div class="ui-col-250 ui-theme-gray ui-fill-light-200 ui-hidden-md">
 
                 <div class="ui-align-l ui-sm-align-c ui-add-sidebar-r">
-                    <h3 class="ui-h3 ui-margin-15">Components</h3>
+                    <h3 class="ui-h3 ui-m-15">Components</h3>
                     <ul class="ui-list-unstyled ui-block-2nd ui-ease-2nd-button">
                         <li><a class="ui-btn ui-btn-ghost" href="?p=alerts">Alerts</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=avatars">Avatars</a></li>
@@ -211,7 +211,7 @@
                         <li><a class="ui-btn ui-btn-ghost" href="?p=typography">Typography</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=weather">Weather</a></li>
                     </ul>
-                    <h3 class="ui-h3 ui-margin-15">Javascript</h3>
+                    <h3 class="ui-h3 ui-m-15">Javascript</h3>
                     <ul class="ui-list-unstyled ui-block-2nd ui-ease-2nd-button">
                         <li><a class="ui-btn ui-btn-ghost" href="?p=ui">UI JS</a></li>
                     </ul>
@@ -221,21 +221,21 @@
 
             <!-- thumbnails -->
             <div class="ui-row">
-                <div class="ui-col-12 ui-padding-15">
+                <div class="ui-col-12 ui-p-15">
 
-                    <div class="ui-fixed ui-fixed-xl ui-padding-15 ui-margin-30-v ui-sm-no-padding">
-                        <div class="card ui-highlight ui-align-c ui-padding-30 ui-xs-no-padding ui-round ui-theme-base">
+                    <div class="ui-fixed ui-fixed-xl ui-p-15 ui-m-30-v ui-sm-no-p">
+                        <div class="card ui-highlight ui-align-c ui-p-30 ui-xs-no-p ui-round ui-theme-base">
                             <h1 class="ui-h1 ui-font-light">UI lab is a modular design system.</h2>
                             <h4 class="ui-h4 ui-font-bold">For developing web interfaces fastly!</h4>
                             <span class="ui-sp-15"></span>
                             <div class="ui-form-lg ui-ease-1st-btn">
-                                <a href="?p=icons" class="ui-btn ui-btn-xs-fluid ui-margin-5-h ui-xs-no-margin-h ui-circle ui-fill-dark-300">
-                                    <svg class="ui-icon ui-margin-5-r"><use href="#draw"/></svg>
+                                <a href="?p=icons" class="ui-btn ui-btn-xs-fluid ui-m-5-h ui-xs-no-m-h ui-circle ui-fill-dark-300">
+                                    <svg class="ui-icon ui-m-5-r"><use href="#draw"/></svg>
                                     See Icons
                                 </a>
-                                <a href="?p=download" class="ui-btn ui-btn-xs-fluid ui-margin-5-h ui-xs-no-margin-h ui-circle ui-fill-dark-100">
+                                <a href="?p=download" class="ui-btn ui-btn-xs-fluid ui-m-5-h ui-xs-no-m-h ui-circle ui-fill-dark-100">
                                     Download
-                                    <svg class="ui-icon ui-margin-5-l"><use href="#long-arrow-right"/></svg>
+                                    <svg class="ui-icon ui-m-5-l"><use href="#long-arrow-right"/></svg>
                                 </a>
                             </div>
                         </div>
@@ -244,73 +244,73 @@
 
                         <div class="ui-row ui-row-gap-lg ui-align-c ui-hover-shadow-2nd ui-hover-t-2nd">
                             <div class="ui-col-4 ui-col-md-6">
-                                <a class="ui-link ui-card ui-padding-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=login-page">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=login-page">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-login-page.jpg" alt="Login Page">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-login-page-dark.jpg" alt="Login Page Dark">
-                                    <h4 class="ui-h4 ui-inline-block ui-padding-10-v">
+                                    <h4 class="ui-h4 ui-inline-block ui-p-10-v">
                                         Login Page
                                     </h4>
                                 </a>
                             </div>
                             <div class="ui-col-4 ui-col-md-6">
-                                <a class="ui-link ui-card ui-padding-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=sign-up-page">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=sign-up-page">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-sign-up-page.jpg" alt="Sign Up Page">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-sign-up-page-dark.jpg" alt="Sign Up Page Dark">
-                                    <h4 class="ui-h4 ui-inline-block ui-padding-10-v">
+                                    <h4 class="ui-h4 ui-inline-block ui-p-10-v">
                                         Sign Up Page
                                     </h4>
                                 </a>
                             </div>
                             <div class="ui-col-4 ui-col-md-6">
-                                <a class="ui-link ui-card ui-padding-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=dashboard">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=dashboard">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-dashboard.jpg" alt="Dashboard">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-dashboard-dark.jpg" alt="Dashboard Dark">
-                                    <h4 class="ui-h4 ui-inline-block ui-padding-10-v">
+                                    <h4 class="ui-h4 ui-inline-block ui-p-10-v">
                                         Dashboard
                                     </h4>
                                 </a>
                             </div>
                             <div class="ui-col-4 ui-col-md-6">
-                                <a class="ui-link ui-card ui-padding-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=landing-page">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=landing-page">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-landing-page.jpg" alt="Landing Page">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-landing-page-dark.jpg" alt="Landing Page Dark">
-                                    <h4 class="ui-h4 ui-inline-block ui-padding-10-v">
+                                    <h4 class="ui-h4 ui-inline-block ui-p-10-v">
                                         Landing Page
                                     </h4>
                                 </a>
                             </div>
                             <div class="ui-col-4 ui-col-md-6">
-                                <a class="ui-link ui-card ui-padding-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=movie-app">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=movie-app">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-movie-app.jpg" alt="Movie App">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-movie-app-dark.jpg" alt="Movie App Dark">
-                                    <h4 class="ui-h4 ui-inline-block ui-padding-10-v">
+                                    <h4 class="ui-h4 ui-inline-block ui-p-10-v">
                                         Movie App
                                     </h4>
                                 </a>
                             </div>
                             <div class="ui-col-4 ui-col-md-6">
-                                <a class="ui-link ui-card ui-padding-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=product-listing">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=product-listing">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-product-listing.jpg" alt="Product Listing">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-product-listing-dark.jpg" alt="Product Listing Dark">
-                                    <h4 class="ui-h4 ui-inline-block ui-padding-10-v">
+                                    <h4 class="ui-h4 ui-inline-block ui-p-10-v">
                                         Product Listing
                                     </h4>
                                 </a>
                             </div>
                             <div class="ui-col-4 ui-col-md-6">
-                                <a class="ui-link ui-card ui-padding-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=real-estate-details">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=real-estate-details">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-real-estate-details.jpg" alt="Real Estate Details">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-real-estate-details-dark.jpg" alt="Real Estate Details Dark">
-                                    <h4 class="ui-h4 ui-inline-block ui-padding-10-v">
+                                    <h4 class="ui-h4 ui-inline-block ui-p-10-v">
                                         Real Estate Details
                                     </h4>
                                 </a>
                             </div>
                             <div class="ui-col-4 ui-col-md-6">
-                                <a class="ui-link ui-card ui-padding-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=photo-albums">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=photo-albums">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-photo-albums.jpg" alt="Photo Albums">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-photo-albums-dark.jpg" alt="Photo Albums Dark">
-                                    <h4 class="ui-h4 ui-inline-block ui-padding-10-v">
+                                    <h4 class="ui-h4 ui-inline-block ui-p-10-v">
                                         Photo Albums
                                     </h4>
                                 </a>
@@ -326,13 +326,13 @@
 
     <!-- mobile menu -->
     <div class="ui-sidebar ui-show-r ui-theme-base ui-ease-layout ui-ease-in-out">
-        <div class="ui-sidebar-title ui-padding-15-v ui-fill-dark-100">
+        <div class="ui-sidebar-title ui-p-15-v ui-fill-dark-100">
             <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-sidebar">
                 <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
             </button>
             <img src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">
         </div>
-        <div class="ui-sidebar-content ui-no-padding ui-theme-gray ui-fill-light-100 ui-scroll-v"></div>
+        <div class="ui-sidebar-content ui-no-p ui-theme-gray ui-fill-light-100 ui-scroll-v"></div>
     </div>
 <?php
     }

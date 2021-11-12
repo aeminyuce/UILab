@@ -1,39 +1,39 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
-        <div class="ui-row ui-padding-30-v">
+        <div class="ui-row ui-p-30-v">
 
             <div class="ui-col-12">
 
                 <h3 class="ui-h3">Positioning</h3>
-                <div class="ui-ease-1st-btn ui-theme-base ui-padding-30-b">
-                    <button class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" title="Tooltip <b>Top</b>">Tooltip <b>Top</b></button>
-                    <button class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="b" title="Tooltip <u>Bottom</u>">Tooltip <b>Bottom</b></button>
-                    <button class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="r" title="Tooltip <i>Right</i>">Tooltip <b>Right</b></button>
-                    <button class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="l" title="Tooltip <em>Left</em>">Tooltip <b>Left</b></button>
+                <div class="ui-ease-1st-btn ui-theme-base ui-p-30-b">
+                    <button class="ui-btn ui-m-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" title="Tooltip <b>Top</b>">Tooltip <b>Top</b></button>
+                    <button class="ui-btn ui-m-5-b ui-round ui-fill-dark-100" data-ui-tooltip="b" title="Tooltip <u>Bottom</u>">Tooltip <b>Bottom</b></button>
+                    <button class="ui-btn ui-m-5-b ui-round ui-fill-dark-100" data-ui-tooltip="r" title="Tooltip <i>Right</i>">Tooltip <b>Right</b></button>
+                    <button class="ui-btn ui-m-5-b ui-round ui-fill-dark-100" data-ui-tooltip="l" title="Tooltip <em>Left</em>">Tooltip <b>Left</b></button>
                     <span class="ui-sp-30"></span>
-                    <button class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="tr" title="Tooltip <b>Top Right</b>">Tooltip <b>Top Right</b></button>
-                    <button class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="tl" title="Tooltip <u>Top Left</u>">Tooltip <b>Top Left</b></button>
-                    <button class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="br" title="Tooltip <i>Bottom Right</i>">Tooltip <b>Bottom Right</b></button>
-                    <button class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="bl" title="Tooltip <em>Bottom Left</em>">Tooltip <b>Bottom Left</b></button>
+                    <button class="ui-btn ui-m-5-b ui-round ui-fill-dark-100" data-ui-tooltip="tr" title="Tooltip <b>Top Right</b>">Tooltip <b>Top Right</b></button>
+                    <button class="ui-btn ui-m-5-b ui-round ui-fill-dark-100" data-ui-tooltip="tl" title="Tooltip <u>Top Left</u>">Tooltip <b>Top Left</b></button>
+                    <button class="ui-btn ui-m-5-b ui-round ui-fill-dark-100" data-ui-tooltip="br" title="Tooltip <i>Bottom Right</i>">Tooltip <b>Bottom Right</b></button>
+                    <button class="ui-btn ui-m-5-b ui-round ui-fill-dark-100" data-ui-tooltip="bl" title="Tooltip <em>Bottom Left</em>">Tooltip <b>Bottom Left</b></button>
                 </div>
 
                 <h3 class="ui-h3">Preventing Actions on Touch</h3>
-                <div class="ui-theme-sub ui-ease-1st-btn ui-padding-30-b">
-                    <a href="http://www.google.com/" target="_blank" class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" title="Open link now!">Link</a>
-                    <button onclick="alert('Test');" class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" title="Run javascript aler now!">Javascript</button>
+                <div class="ui-theme-sub ui-ease-1st-btn ui-p-30-b">
+                    <a href="http://www.google.com/" target="_blank" class="ui-btn ui-m-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" title="Open link now!">Link</a>
+                    <button onclick="alert('Test');" class="ui-btn ui-m-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" title="Run javascript aler now!">Javascript</button>
                 </div>
 
                 <h3 class="ui-h3">data-ui-only Attributes</h3>
-                <div class="ui-theme-base ui-ease-1st-btn ui-padding-30-b">
-                    <a href="http://www.google.com/" target="_blank" class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="mobile" title="Open link now!">Link (mobile)</a>
-                    <a href="http://www.google.com/" target="_blank" class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="desktop" title="Open link now!">Link (desktop)</a>
+                <div class="ui-theme-base ui-ease-1st-btn ui-p-30-b">
+                    <a href="http://www.google.com/" target="_blank" class="ui-btn ui-m-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="mobile" title="Open link now!">Link (mobile)</a>
+                    <a href="http://www.google.com/" target="_blank" class="ui-btn ui-m-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="desktop" title="Open link now!">Link (desktop)</a>
                     <span class="ui-sp-10"></span>
-                    <button onclick="alert('Test');" class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="mobile" title="Run javascript aler now!">Javascript (mobile)</button>
-                    <button onclick="alert('Test');" class="ui-btn ui-margin-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="desktop" title="Run javascript aler now!">Javascript (desktop)</button>
+                    <button onclick="alert('Test');" class="ui-btn ui-m-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="mobile" title="Run javascript aler now!">Javascript (mobile)</button>
+                    <button onclick="alert('Test');" class="ui-btn ui-m-5-b ui-round ui-fill-dark-100" data-ui-tooltip="t" data-ui-only="desktop" title="Run javascript aler now!">Javascript (desktop)</button>
                 </div>
 
                 <h3 class="ui-h3">Using with Icons</h3>
-                <div class="ui-theme-sub ui-icons-xl ui-text ui-padding-30-b ui-hover-t-more-1st ui-ease-1st-layout">
+                <div class="ui-theme-sub ui-icons-xl ui-text ui-p-30-b ui-hover-t-more-1st ui-ease-1st-layout">
                     <svg class="ui-icon" data-ui-tooltip title="Like!"><use href="#heart"/></svg>
                     <svg class="ui-icon" data-ui-tooltip title="Somewhere on Earth!"><use href="#marker"/></svg>
                     <svg class="ui-icon" data-ui-tooltip title="Call us now 555 55 55"><use href="#phone"/></svg>
@@ -41,7 +41,7 @@
                 </div>
 
                 <h3 class="ui-h3">Using with Forms</h3>
-                <div class="ui-ease-1st-form ui-padding-30-b ui-form-lg ui-ease-1st-form">
+                <div class="ui-ease-1st-form ui-p-30-b ui-form-lg ui-ease-1st-form">
                     <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
                         <svg class="ui-icon" data-ui-tooltip="tl" title="Your message here!"><use href="#question-circle-fill"/></svg>
                         <input type="text" placeholder="Placeholder Example">

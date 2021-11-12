@@ -9,17 +9,17 @@
 
         <div class="ui-row">
             <div class="ui-col-12">
-                <div class="ui-sm-no-padding ui-align-c ui-padding-30-v">
+                <div class="ui-sm-no-p ui-align-c ui-p-30-v">
 
                     <h1 class="ui-h1">
                         SVG Icons
-                        <span class="total ui-font-18 ui-margin-5-v ui-block ui-opacity-half"></span>
+                        <span class="total ui-font-18 ui-m-5-v ui-block ui-opacity-half"></span>
                     </h1>
 
                     <div class="ui-row">
                         <div class="ui-col-4">
-                            <h4 class="ui-h4 ui-align-c ui-margin-10-b">Change Weight</h4>
-                            <div class="icon-modifiers ui-btn-holder ui-form-lg ui-margin-20-b ui-theme-sub ui-form-lg ui-ease-1st-btn">
+                            <h4 class="ui-h4 ui-align-c ui-m-10-b">Change Weight</h4>
+                            <div class="icon-modifiers ui-btn-holder ui-form-lg ui-m-20-b ui-theme-sub ui-form-lg ui-ease-1st-btn">
                                 <button data-ui-tooltip="b" data-ui-only="desktop" title="Bold" data-weight="bold" class="ui-btn ui-round">
                                     <svg class="ui-icon ui-icon-bold ui-no-opacity"><use href="#remove"/></svg>
                                 </button>
@@ -38,8 +38,8 @@
                             </div>
                         </div>
                         <div class="ui-col-8">
-                            <h4 class="ui-h4 ui-align-c ui-margin-10-b">Change Size</h4>
-                            <div class="icon-modifiers ui-btn-holder ui-form-lg ui-margin-20-b ui-theme-sub ui-form-lg ui-ease-1st-btn">
+                            <h4 class="ui-h4 ui-align-c ui-m-10-b">Change Size</h4>
+                            <div class="icon-modifiers ui-btn-holder ui-form-lg ui-m-20-b ui-theme-sub ui-form-lg ui-ease-1st-btn">
                                 <button data-size="xxl" class="ui-btn ui-round ui-fill-dark-100">XXL</button>
                                 <button data-size="xl" class="ui-btn ui-round">XL</button>
                                 <button data-size="lg" class="ui-btn ui-round">L</button>

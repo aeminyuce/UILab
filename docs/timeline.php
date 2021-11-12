@@ -1,7 +1,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="ui-col-12 ui-padding-30-v">
+            <div class="ui-col-12 ui-p-30-v">
 
                 <h3 class="ui-h3 ui-align-c">2018</h3>
                 <ul class="ui-timeline ui-font-16 ui-theme-base ui-text">
@@ -81,7 +81,7 @@
                     <li class="ui-text"><span class="ui-card ui-font-readable ui-color-black ui-align-r">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="ui-sp-30 ui-margin-15-v"></span>
+                <span class="ui-sp-30 ui-m-15-v"></span>
 
                 <h3 class="ui-h3 ui-align-c">All Time</h3>
                 <ul class="ui-timeline ui-hide-h-lines ui-font-16 ui-theme-sub">
@@ -93,7 +93,7 @@
                     <li><span class="ui-card ui-font-readable ui-round ui-fill-dark-100 ui-shadow-lg">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="ui-sp-30 ui-margin-15-v"></span>
+                <span class="ui-sp-30 ui-m-15-v"></span>
 
                 <h3 class="ui-h3">Activity</h3>
                 <ul class="ui-timeline ui-side-l ui-font-16 ui-theme-base ui-text">
@@ -113,7 +113,7 @@
                     </li>
                 </ul>
 
-                <span class="ui-sp-30 ui-margin-15-v"></span>
+                <span class="ui-sp-30 ui-m-15-v"></span>
 
                 <h3 class="ui-h3">Activity</h3>
                 <ul class="ui-timeline ui-side-l large">
@@ -125,7 +125,7 @@
                     <li class="ui-theme-green ui-text"><span class="ui-card ui-font-readable ui-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="ui-sp-30 ui-margin-15-v"></span>
+                <span class="ui-sp-30 ui-m-15-v"></span>
 
                 <h3 class="ui-h3">Activity</h3>
                 <ul class="ui-timeline ui-side-l ui-hide-h-lines large">
@@ -137,7 +137,7 @@
                     <li class="ui-theme-green ui-text"><span class="ui-card ui-font-readable ui-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
                 </ul>
 
-                <span class="ui-sp-30 ui-margin-15-v"></span>
+                <span class="ui-sp-30 ui-m-15-v"></span>
 
                 <h3 class="ui-h3">Activity</h3>
                 <ul class="ui-timeline ui-side-l ui-hide-h-lines large">
@@ -149,7 +149,7 @@
                     <li class="ui-font-readable">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                 </ul>
 
-                <span class="ui-sp-30 ui-margin-15-v"></span>
+                <span class="ui-sp-30 ui-m-15-v"></span>
 
                 <h3 class="ui-h3">Activity</h3>
                 <ul class="ui-timeline ui-side-l ui-hide-lines large">

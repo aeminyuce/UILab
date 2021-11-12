@@ -1,7 +1,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="ui-col-12 ui-padding-30">
+            <div class="ui-col-12 ui-p-30">
 
                 <h3 class="ui-h3">List Group Examples</h3>
 
@@ -347,7 +347,7 @@
                             <b>İstanbul: </b>
                             <a class="ui-list-url ui-font-underline" href="#">
                                 Show Directions
-                                <svg class="ui-icon ui-icon-xs ui-margin-3-l"><use href="#long-arrow-right"></use></svg>
+                                <svg class="ui-icon ui-icon-xs ui-m-3-l"><use href="#long-arrow-right"></use></svg>
                             </a>
                             <i class="ui-color-black-50 ui-block">Event Number: 001</i>
                         </li>
@@ -356,7 +356,7 @@
                             <b>Ankara: </b>
                             <a class="ui-list-url ui-font-underline" href="#">
                                 Show Directions
-                                <svg class="ui-icon ui-icon-xs ui-margin-3-l"><use href="#long-arrow-right"></use></svg>
+                                <svg class="ui-icon ui-icon-xs ui-m-3-l"><use href="#long-arrow-right"></use></svg>
                             </a>
                             <i class="ui-color-black-50 ui-block">Event Number: 002</i>
                         </li>
@@ -365,7 +365,7 @@
                             <b>Antalya: </b>
                             <a class="ui-list-url ui-font-underline" href="#">
                                 Show Directions
-                                <svg class="ui-icon ui-icon-xs ui-margin-3-l"><use href="#long-arrow-right"></use></svg>
+                                <svg class="ui-icon ui-icon-xs ui-m-3-l"><use href="#long-arrow-right"></use></svg>
                             </a>
                             <i class="ui-color-black-50 ui-block">Event Number: 003</i>
                         </li>

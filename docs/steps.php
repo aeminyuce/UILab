@@ -1,11 +1,11 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="ui-col-12 ui-padding-30">
+            <div class="ui-col-12 ui-p-30">
 
                 <h3 class="ui-h3 ui-align-c">Steps Examples</h3>
 
-                <div class="ui-padding-30-b">
+                <div class="ui-p-30-b">
                     <ul class="ui-steps-bar">
                         <li class="active"></li>
                         <li></li>
@@ -19,7 +19,7 @@
                     </ul>
                 </div>
 
-                <div class="ui-padding-30-v">
+                <div class="ui-p-30-v">
                     <ul class="ui-steps-bar">
                         <li class="active">Step Name Here</li>
                         <li>Step Name Here</li>
@@ -38,7 +38,7 @@
                     </ul>
                 </div>
 
-                <div class="ui-padding-30-v">
+                <div class="ui-p-30-v">
                     <ul class="ui-steps-bar">
                         <li>Step Name Here</li>
                         <li>Step Name Here</li>
@@ -48,29 +48,29 @@
                     </ul>
                 </div>
 
-                <div class="ui-padding-30-v">
+                <div class="ui-p-30-v">
                     <ul class="ui-steps-bar ui-icons-sm">
                         <li>
-                            <svg class="ui-icon ui-margin-3-r"><use href="#check-circle"/></svg>
+                            <svg class="ui-icon ui-m-3-r"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                         <li class="active">
-                            <svg class="ui-icon ui-margin-3-r"><use href="#check-circle"/></svg>
+                            <svg class="ui-icon ui-m-3-r"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="ui-icon ui-margin-3-r"><use href="#check-circle"/></svg>
+                            <svg class="ui-icon ui-m-3-r"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="ui-icon ui-margin-3-r"><use href="#check-circle"/></svg>
+                            <svg class="ui-icon ui-m-3-r"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                     </ul>
                 </div>
 
-                <h5 class="ui-h5 ui-font-bold ui-align-c ui-margin-15-b">Steps with Tooltip</h5>
-                <div class="ui-padding-30-b">
+                <h5 class="ui-h5 ui-font-bold ui-align-c ui-m-15-b">Steps with Tooltip</h5>
+                <div class="ui-p-30-b">
                     <ul class="ui-steps-bar ui-steps-icon">
                         <li>
                             <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
@@ -114,11 +114,11 @@
                     </ul>
                 </div>
 
-                <div class="ui-card ui-padding-30 ui-round ui-shadow-lg">
+                <div class="ui-card ui-p-30 ui-round ui-shadow-lg">
 
-                    <h5 class="ui-h5 ui-font-bold ui-align-c ui-margin-15-b">Steps in Card</h5>
+                    <h5 class="ui-h5 ui-font-bold ui-align-c ui-m-15-b">Steps in Card</h5>
 
-                    <div class="ui-padding-30-b">
+                    <div class="ui-p-30-b">
                         <ul class="ui-steps-bar">
                             <li class="active"></li>
                             <li></li>
@@ -132,7 +132,7 @@
                         </ul>
                     </div>
 
-                    <div class="ui-padding-30-v">
+                    <div class="ui-p-30-v">
                         <ul class="ui-steps-bar">
                             <li class="active">Step Name Here</li>
                             <li>Step Name Here</li>
@@ -146,7 +146,7 @@
                         </ul>
                     </div>
 
-                    <div class="ui-padding-30-v">
+                    <div class="ui-p-30-v">
                         <ul class="ui-steps-bar">
                             <li>Step Name Here</li>
                             <li>Step Name Here</li>
@@ -156,29 +156,29 @@
                         </ul>
                     </div>
 
-                    <div class="ui-padding-30-v">
+                    <div class="ui-p-30-v">
                         <ul class="ui-steps-bar ui-icons-sm">
                             <li>
-                                <svg class="ui-icon ui-margin-3-r"><use href="#check-circle"/></svg>
+                                <svg class="ui-icon ui-m-3-r"><use href="#check-circle"/></svg>
                                 Step Name Here
                             </li>
                             <li class="active">
-                                <svg class="ui-icon ui-margin-3-r"><use href="#check-circle"/></svg>
+                                <svg class="ui-icon ui-m-3-r"><use href="#check-circle"/></svg>
                                 Step Name Here
                             </li>
                             <li>
-                                <svg class="ui-icon ui-margin-3-r"><use href="#check-circle"/></svg>
+                                <svg class="ui-icon ui-m-3-r"><use href="#check-circle"/></svg>
                                 Step Name Here
                             </li>
                             <li>
-                                <svg class="ui-icon ui-margin-3-r"><use href="#check-circle"/></svg>
+                                <svg class="ui-icon ui-m-3-r"><use href="#check-circle"/></svg>
                                 Step Name Here
                             </li>
                         </ul>
                     </div>
 
-                    <h5 class="ui-h5 ui-font-bold ui-align-c ui-margin-15-b">Steps with Tooltip</h5>
-                    <div class="ui-padding-30-b">
+                    <h5 class="ui-h5 ui-font-bold ui-align-c ui-m-15-b">Steps with Tooltip</h5>
+                    <div class="ui-p-30-b">
                         <ul class="ui-steps-bar ui-steps-icon">
                             <li>
                                 <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>

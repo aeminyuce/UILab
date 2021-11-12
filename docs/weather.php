@@ -1,8 +1,8 @@
 <main class="ui-container ui-no-gutter">
-    <div class="ui-fixed ui-padding-30-v">
+    <div class="ui-fixed ui-p-30-v">
 
         <h3 class="ui-h3">Weather Examples</h3>
-        <div class="ui-row ui-padding-30-b">
+        <div class="ui-row ui-p-30-b">
             <div class="ui-col-3 ui-col-md-6">
 
                 <div class="ui-weather ui-round ui-ease-weather">

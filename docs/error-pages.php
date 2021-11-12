@@ -4,9 +4,9 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
         <div class="ui-row">
-            <div class="ui-col-12 ui-padding-30-v">
+            <div class="ui-col-12 ui-p-30-v">
 
-                <span class="ui-sp-30 ui-margin-30-v"></span>
+                <span class="ui-sp-30 ui-m-30-v"></span>
 
                 <div class="ui-align-c ui-form-lg">
                     <p class="ui-highlight ui-color-red ui-font-28 ui-font-bold">Error: 404 Page Not Found</p>
@@ -23,7 +23,7 @@
                     </ul>
                 </div>
 
-                <span class="ui-sp-30 ui-margin-30-v ui-padding-30-v"></span>
+                <span class="ui-sp-30 ui-m-30-v ui-p-30-v"></span>
 
                 <div class="ui-align-c ui-form-lg">
                     <p class="ui-highlight ui-color-yellow ui-font-28 ui-font-bold">Error: 403 Forbidden</p>
@@ -34,12 +34,12 @@
                     </p>
                     <p class="ui-highlight ui-font-18 ui-font-readable">You don't have access to this page.<br>Please contact support if this wasn't supposed to happen.</p>
                     <a class="ui-color-yellow ui-btn ui-btn-ghost ui-border-dual ui-circle ui-ease-btn" href="#">
-                        <svg class="ui-icon ui-margin-5-r ui-no-opacity"><use href="#long-arrow-left"/></svg>
+                        <svg class="ui-icon ui-m-5-r ui-no-opacity"><use href="#long-arrow-left"/></svg>
                         Go Back
                     </a>
                 </div>
 
-                <span class="ui-sp-30 ui-margin-30-v ui-padding-30-v"></span>
+                <span class="ui-sp-30 ui-m-30-v ui-p-30-v"></span>
 
                 <div class="ui-align-c ui-form-lg">
                     <p class="ui-highlight ui-color-orange ui-font-28 ui-font-bold">Error: 500 Unexpected Error</p>
@@ -50,12 +50,12 @@
                     </p>
                     <p class="ui-highlight ui-font-18 ui-font-readable">We are having some issues at the moment.<br>We will have it fixed in no time!</p>
                     <a class="ui-color-orange ui-btn ui-btn-ghost ui-border-dual ui-circle ui-ease-btn" href="#">
-                        <svg class="ui-icon ui-margin-5-r ui-no-opacity"><use href="#long-arrow-left"/></svg>
+                        <svg class="ui-icon ui-m-5-r ui-no-opacity"><use href="#long-arrow-left"/></svg>
                         Go Back
                     </a>
                 </div>
 
-                <span class="ui-sp-30 ui-margin-30-v"></span>
+                <span class="ui-sp-30 ui-m-30-v"></span>
 
             </div>
         </div>

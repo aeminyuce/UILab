@@ -12,41 +12,41 @@
         <div class="dashboard-menu ui-col-250 ui-set-relative ui-visible-lg ui-theme-panel ui-ease-width ui-ease-in-out">
             <div class="ui-col-250 ui-full-h ui-set-fixed ui-set-l ui-set-t ui-invert-bg ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
 
-                <div class="ui-set-relative ui-padding-5-t">
-                    <img class="ui-margin-1-t" src="img/logo-udashboard.png" height="62" alt="">
-                    <button class="dashboard-menu-hide ui-opacity-more ui-padding-10-h ui-ease-btn ui-set-absolute ui-set-cy ui-set-r" data-ui-tooltip title="Toggle Menu">
+                <div class="ui-set-relative ui-p-5-t">
+                    <img class="ui-m-1-t" src="img/logo-udashboard.png" height="62" alt="">
+                    <button class="dashboard-menu-hide ui-opacity-more ui-p-10-h ui-ease-btn ui-set-absolute ui-set-cy ui-set-r" data-ui-tooltip title="Toggle Menu">
                         <svg class="ui-icon"><use href="#angle-left"/></svg>
                     </button>
                 </div>
 
                 <div class="ui-tabs ui-align-l ui-icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn ui-scroll-v ui-scrollbar-faded ui-add-sidebar-l" data-ui-classes="ui-text">
 
-                    <div class="ui-padding-10">
-                        <div class="ui-font-12 ui-margin-10-b ui-color-white-25">Personal Activity</div>
+                    <div class="ui-p-10">
+                        <div class="ui-font-12 ui-m-10-b ui-color-white-25">Personal Activity</div>
 
                         <div class="ui-btn-holder ui-align-c ui-round ui-ease-1st-btn">
-                            <button class="ui-btn ui-btn-multi ui-padding-10-v ui-round">
+                            <button class="ui-btn ui-btn-multi ui-p-10-v ui-round">
 
                                 <span class="ui-font-22">13</span>
-                                <span class="ui-font-12 ui-color-white-25 ui-margin-5-b ui-block">Waiting</span>
+                                <span class="ui-font-12 ui-color-white-25 ui-m-5-b ui-block">Waiting</span>
                                 <span class="ui-progress-bar ui-round ui-border-dual">
                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 65%;"></span>
                                 </span>
 
                             </button>
-                            <button class="ui-btn ui-btn-multi ui-padding-10-v ui-round">
+                            <button class="ui-btn ui-btn-multi ui-p-10-v ui-round">
 
                                 <span class="ui-font-22">3</span>
-                                <span class="ui-font-12 ui-color-white-25 ui-margin-5-b ui-block">Paused</span>
+                                <span class="ui-font-12 ui-color-white-25 ui-m-5-b ui-block">Paused</span>
                                 <span class="ui-progress-bar ui-round ui-border-dual">
                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 35%;"></span>
                                 </span>
 
                             </button>
-                            <button class="ui-btn ui-btn-multi ui-padding-10-v ui-round">
+                            <button class="ui-btn ui-btn-multi ui-p-10-v ui-round">
 
                                 <span class="ui-font-22">16</span>
-                                <span class="ui-font-12 ui-color-white-25 ui-margin-5-b ui-block">Delayed</span>
+                                <span class="ui-font-12 ui-color-white-25 ui-m-5-b ui-block">Delayed</span>
                                 <span class="ui-progress-bar ui-round ui-border-dual">
                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 75%;"></span>
                                 </span>
@@ -55,27 +55,27 @@
                         </div>
                     </div>
 
-                    <a href="#" class="ui-btn ui-btn-lg ui-btn-ghost ui-block ui-margin-10-v">
-                        <svg class="ui-icon ui-margin-15-r"><use href="#grid-masonry"/></svg>
+                    <a href="#" class="ui-btn ui-btn-lg ui-btn-ghost ui-block ui-m-10-v">
+                        <svg class="ui-icon ui-m-15-r"><use href="#grid-masonry"/></svg>
                         Dashboard
                     </a>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r ui-block">
-                        <svg class="ui-icon ui-margin-15-r"><use href="#users"/></svg>
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-p-10-r ui-block">
+                        <svg class="ui-icon ui-m-15-r"><use href="#users"/></svg>
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Employees
                     </button>
 
                     <div class="ui-tab-content">
-                        <div class="ui-padding-15-v ui-padding-3-l">
-                            <ul class="ui-tabs ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn" data-ui-classes="ui-text">
+                        <div class="ui-p-15-v ui-p-3-l">
+                            <ul class="ui-tabs ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn" data-ui-classes="ui-text">
                                 <li>
                                     <a class="ui-tab ui-tab-toggle ui-opacity" href="#">
-                                        <svg class="ui-toggle-icon ui-icon ui-margin-10-r ui-right"><use href="#arrow-down"/></svg>
+                                        <svg class="ui-toggle-icon ui-icon ui-m-10-r ui-right"><use href="#arrow-down"/></svg>
                                         Managers
                                     </a>
                                     <div class="ui-tab-content">
-                                        <ul class="ui-list-spacer-15 ui-padding-20 ui-no-padding-r ui-no-margin ui-ease-2nd-btn">
+                                        <ul class="ui-list-spacer-15 ui-p-20 ui-no-p-r ui-no-m ui-ease-2nd-btn">
                                             <li><a class="ui-opacity" href="#">Search</a></li>
                                             <li><a class="ui-opacity" href="#">Change Group</a></li>
                                             <li><a class="ui-opacity" href="#">Add/Remove Managers</a></li>
@@ -84,11 +84,11 @@
                                 </li>
                                 <li>
                                     <a class="ui-tab ui-tab-toggle ui-opacity" href="#">
-                                        <svg class="ui-toggle-icon ui-icon ui-margin-10-r ui-right"><use href="#arrow-down"/></svg>
+                                        <svg class="ui-toggle-icon ui-icon ui-m-10-r ui-right"><use href="#arrow-down"/></svg>
                                         Team Leaders
                                     </a>
                                     <div class="ui-tab-content">
-                                        <ul class="ui-list-spacer-15 ui-padding-20 ui-no-padding-r ui-no-margin ui-ease-2nd-btn">
+                                        <ul class="ui-list-spacer-15 ui-p-20 ui-no-p-r ui-no-m ui-ease-2nd-btn">
                                             <li><a class="ui-opacity" href="#">Search</a></li>
                                             <li><a class="ui-opacity" href="#">Change Team</a></li>
                                             <li><a class="ui-opacity" href="#">Add/Remove Team Leaders</a></li>
@@ -102,14 +102,14 @@
                         </div>
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r ui-block">
-                        <svg class="ui-icon ui-margin-15-r"><use href="#moneys"/></svg>
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-p-10-r ui-block">
+                        <svg class="ui-icon ui-m-15-r"><use href="#moneys"/></svg>
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Payments
                     </button>
                     <div class="ui-tab-content">
-                        <div class="ui-padding-15-v ui-padding-3-l">
-                            <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
+                        <div class="ui-p-15-v ui-p-3-l">
+                            <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">New Payment</a></li>
                                 <li><a class="ui-opacity" href="#">Recent Payments</a></li>
                                 <li><a class="ui-opacity" href="#">Last Month</a></li>
@@ -119,14 +119,14 @@
                         </div>
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r ui-block">
-                        <svg class="ui-icon ui-margin-15-r"><use href="#calendar-check"/></svg>
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-p-10-r ui-block">
+                        <svg class="ui-icon ui-m-15-r"><use href="#calendar-check"/></svg>
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Events
                     </button>
                     <div class="ui-tab-content">
-                        <div class="ui-padding-15-v ui-padding-3-l">
-                            <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
+                        <div class="ui-p-15-v ui-p-3-l">
+                            <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">New Event</a></li>
                                 <li><a class="ui-opacity" href="#">Recent Activities</a></li>
                                 <li><a class="ui-opacity" href="#">This Week</a></li>
@@ -135,14 +135,14 @@
                         </div>
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r ui-block">
-                        <svg class="ui-icon ui-margin-15-r"><use href="#files"/></svg>
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-p-10-r ui-block">
+                        <svg class="ui-icon ui-m-15-r"><use href="#files"/></svg>
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Documents
                     </button>
                     <div class="ui-tab-content">
-                        <div class="ui-padding-15-v ui-padding-3-l">
-                            <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
+                        <div class="ui-p-15-v ui-p-3-l">
+                            <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">New Document</a></li>
                                 <li><a class="ui-opacity" href="#">Members</a></li>
                                 <li><a class="ui-opacity" href="#">Groups</a></li>
@@ -153,14 +153,14 @@
                         </div>
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r ui-block">
-                        <svg class="ui-icon ui-margin-15-r"><use href="#chart-line"/></svg>
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-p-10-r ui-block">
+                        <svg class="ui-icon ui-m-15-r"><use href="#chart-line"/></svg>
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Statistics
                     </button>
                     <div class="ui-tab-content">
-                        <div class="ui-padding-15-v ui-padding-3-l">
-                            <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
+                        <div class="ui-p-15-v ui-p-3-l">
+                            <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">Sales</a></li>
                                 <li><a class="ui-opacity" href="#">Profit</a></li>
                                 <li><a class="ui-opacity" href="#">Registrations</a></li>
@@ -169,14 +169,14 @@
                         </div>
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r ui-block">
-                        <svg class="ui-icon ui-margin-15-r"><use href="#doc"/></svg>
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-p-10-r ui-block">
+                        <svg class="ui-icon ui-m-15-r"><use href="#doc"/></svg>
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Reports
                     </button>
                     <div class="ui-tab-content">
-                        <div class="ui-padding-15-v ui-padding-3-l">
-                            <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
+                        <div class="ui-p-15-v ui-p-3-l">
+                            <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">New Report</a></li>
                                 <li><a class="ui-opacity" href="#">Market Research</a></li>
                                 <li><a class="ui-opacity" href="#">Industry Data</a></li>
@@ -187,14 +187,14 @@
                         </div>
                     </div>
 
-                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-padding-10-r ui-block">
-                        <svg class="ui-icon ui-margin-15-r"><use href="#truck"/></svg>
+                    <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-p-10-r ui-block">
+                        <svg class="ui-icon ui-m-15-r"><use href="#truck"/></svg>
                         <svg class="ui-toggle-icon ui-icon ui-right"><use href="#angle-down"/></svg>
                         Orders
                     </button>
                     <div class="ui-tab-content">
-                        <div class="ui-padding-15-v ui-padding-3-l">
-                            <ul class="ui-list-spacer-15 ui-padding-30-l ui-ease-2nd-btn">
+                        <div class="ui-p-15-v ui-p-3-l">
+                            <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">New Order</a></li>
                                 <li><a class="ui-opacity" href="#">Activity</a></li>
                                 <li><a class="ui-opacity" href="#">Delivered</a></li>
@@ -205,7 +205,7 @@
 
                     <span class="ui-sp-15"></span>
 
-                    <div class="ui-btn-list ui-margin-10 ui-icons-margin-10-r ui-form-lg ui-ease-1st-btn">
+                    <div class="ui-btn-list ui-m-10 ui-icons-margin-10-r ui-form-lg ui-ease-1st-btn">
                         <button class="ui-btn ui-round">
                             <svg class="ui-icon"><use href="#shield"/></svg>
                             Administration
@@ -231,21 +231,21 @@
             <header class="ui-col-12 ui-align-r ui-icons-no-opacity ui-shadow-sm ui-form-lg ui-ease-layout dashboard-menu-opened" data-ui-classes="ui-shadow-lg">
 
                 <div class="ui-align-c ui-left ui-ease-1st-btn">
-                    <button class="dashboard-menu-show ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle ui-visible-lg ui-hidden" data-ui-tooltip title="Toggle Menu">
+                    <button class="dashboard-menu-show ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle ui-visible-lg ui-hidden" data-ui-tooltip title="Toggle Menu">
                         <svg class="ui-icon"><use href="#angle-right"/></svg>
                     </button>
-                    <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle ui-show-sidebar-l ui-hidden-lg" data-ui-tooltip title="Show Menu" data-ui-only="desktop">
+                    <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle ui-show-sidebar-l ui-hidden-lg" data-ui-tooltip title="Show Menu" data-ui-only="desktop">
                         <svg class="ui-icon"><use href="#bars-left"/></svg>
                     </button>
-                    <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
+                    <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
                         <svg class="ui-icon"><use href="#search"/></svg>
                     </button>
                     <div class="ui-dropdown ui-nav ui-ease-dropdown">
-                        <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle ui-hidden-sm">
+                        <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle ui-hidden-sm">
                             My Jobs
-                            <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
+                            <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                         </button>
-                        <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-padding-10 ui-circle ui-visible-sm">
+                        <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle ui-visible-sm">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                         </button>
                         <ul class="ui-dropdown-menu ui-list-column-2 ui-has-icon ui-round ui-shadow-lg">
@@ -294,11 +294,11 @@
                                     </button>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v ui-open ui-open-ease" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
+                                    <ul class="ui-timeline ui-side-l ui-m-15-h ui-hide-h-lines">
                                         <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                         <li>
                                             Lorem ipsum dolor sit amet.
-                                            <span class="ui-avatar-holder ui-margin-5-t ui-hover-scale-more-2nd ui-ease-2nd-layout">
+                                            <span class="ui-avatar-holder ui-m-5-t ui-hover-scale-more-2nd ui-ease-2nd-layout">
                                                 <a href="#">
                                                     <img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image.jpg" alt="">
                                                 </a>
@@ -308,34 +308,34 @@
                                                 <a href="#">
                                                     <img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image3.jpg" alt="">
                                                 </a>
-                                                <a class="ui-btn ui-no-margin ui-circle ui-ease-btn" href="#">+12</a>
+                                                <a class="ui-btn ui-no-m ui-circle ui-ease-btn" href="#">+12</a>
                                             </span>
                                         </li>
                                         <li>
                                             Lorem ipsum dolor sit amet.
-                                            <span class="ui-photo-gallery ui-margin-5-t ui-ease-photo-gallery">
-                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_01.jpg"><img src="img/image_01.jpg" height="38" alt=""></a>
-                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_02.jpg"><img src="img/image_02.jpg" height="38" alt=""></a>
-                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_03.jpg"><img src="img/image_03.jpg" height="38" alt=""></a>
-                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_04.jpg"><img src="img/image_04.jpg" height="38" alt=""></a>
-                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_05.jpg"><img src="img/image_05.jpg" height="38" alt=""></a>
-                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_06.jpg"><img src="img/image_06.jpg" height="38" alt=""></a>
-                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_07.jpg"><img src="img/image_07.jpg" height="38" alt=""></a>
-                                                <a class="ui-photo ui-margin-1-h ui-round" href="img/image_08.jpg"><img src="img/image_08.jpg" height="38" alt=""></a>
+                                            <span class="ui-photo-gallery ui-m-5-t ui-ease-photo-gallery">
+                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_01.jpg"><img src="img/image_01.jpg" height="38" alt=""></a>
+                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_02.jpg"><img src="img/image_02.jpg" height="38" alt=""></a>
+                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_03.jpg"><img src="img/image_03.jpg" height="38" alt=""></a>
+                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_04.jpg"><img src="img/image_04.jpg" height="38" alt=""></a>
+                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_05.jpg"><img src="img/image_05.jpg" height="38" alt=""></a>
+                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_06.jpg"><img src="img/image_06.jpg" height="38" alt=""></a>
+                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_07.jpg"><img src="img/image_07.jpg" height="38" alt=""></a>
+                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_08.jpg"><img src="img/image_08.jpg" height="38" alt=""></a>
                                             </span>
                                         </li>
                                         <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                         <li>
                                             Nullam sit amet sagittis nisi.
-                                            <span class="ui-icons-xl ui-margin-5-t ui-block ui-ease-1st-btn">
-                                                <a class="ui-btn ui-btn-square ui-padding-4-v ui-round" href="#">
+                                            <span class="ui-icons-xl ui-m-5-t ui-block ui-ease-1st-btn">
+                                                <a class="ui-btn ui-btn-square ui-p-4-v ui-round" href="#">
                                                     <svg class="ui-icon"><use href="#file-pdf"/></svg>
                                                 </a>
-                                                <a class="ui-btn ui-btn-square ui-padding-4-v ui-round" href="#">
+                                                <a class="ui-btn ui-btn-square ui-p-4-v ui-round" href="#">
                                                     <svg class="ui-icon"><use href="#file-xls"/></svg>
                                                 </a>
-                                                <a class="ui-btn ui-btn-square ui-padding-4-v ui-round" href="#">
+                                                <a class="ui-btn ui-btn-square ui-p-4-v ui-round" href="#">
                                                     <svg class="ui-icon"><use href="#file-zip"/></svg>
                                                 </a>
                                             </span>
@@ -345,7 +345,7 @@
                                     </ul>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
+                                    <ul class="ui-timeline ui-side-l ui-m-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -379,7 +379,7 @@
                                     </button>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v ui-open ui-open-ease" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
+                                    <ul class="ui-timeline ui-side-l ui-m-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -391,7 +391,7 @@
                                     </ul>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
+                                    <ul class="ui-timeline ui-side-l ui-m-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -403,7 +403,7 @@
                                     </ul>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
+                                    <ul class="ui-timeline ui-side-l ui-m-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -420,9 +420,9 @@
                     </div>
                 </div>
 
-                <div class="ui-right ui-margin-10-l ui-xs-no-margin">
-                    <span class="ui-dropdown ui-menu-l ui-margin-5-l ui-right ui-ease-dropdown">
-                        <button class="ui-btn ui-no-padding ui-circle ui-hover-scale-more">
+                <div class="ui-right ui-m-10-l ui-xs-no-m">
+                    <span class="ui-dropdown ui-menu-l ui-m-5-l ui-right ui-ease-dropdown">
+                        <button class="ui-btn ui-no-p ui-circle ui-hover-scale-more">
                             <img class="ui-avatar ui-avatar-sm ui-circle" src="img/profile-image.jpg" alt="">
                         </button>
                         <ul class="ui-dropdown-menu ui-has-grid ui-align-c ui-icons-lg ui-round ui-shadow-lg">
@@ -464,7 +464,7 @@
                             </li>
                         </ul>
                     </span>
-                    <span class="ui-margin-3-t ui-inline-block ui-hidden-xs">aeminyuce</span>
+                    <span class="ui-m-3-t ui-inline-block ui-hidden-xs">aeminyuce</span>
                     <span class="ui-font-12 ui-color-black-50 ui-block ui-hidden-xs">Premium</span>
                 </div>
 
@@ -472,11 +472,11 @@
             <!-- header: end -->
 
             <!-- layouts: start -->
-            <div class="ui-tabs ui-ease-tabs ui-padding-15-b" data-ui-classes="ui-border-lg ui-stroke ui-text">
+            <div class="ui-tabs ui-ease-tabs ui-p-15-b" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
                 <div class="ui-container">
-                    <div class="ui-row ui-border-b ui-margin-15-b ui-theme-panel2">
-                        <div class="ui-col-4 ui-offset-4 ui-no-padding-b">
+                    <div class="ui-row ui-border-b ui-m-15-b ui-theme-panel2">
+                        <div class="ui-col-4 ui-offset-4 ui-no-p-b">
 
                             <div class="ui-btn-holder ui-color-black-25 ui-form-lg ui-ease-1st-btn">
                                 <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-text ui-active">Forms</button>
@@ -497,14 +497,14 @@
                                 <div class="ui-card ui-round ui-shadow-lg">
 
                                     <form action="#succesful">
-                                        <div class="ui-card-side ui-padding-5-h ui-border-b">
+                                        <div class="ui-card-side ui-p-5-h ui-border-b">
                                             <div class="ui-col-static ui-no-fluid">
                                                 <div class="ui-row">
                                                     <div class="ui-col-12">
-                                                        <h4 class="ui-h4 ui-align-l ui-margin-4-t ui-margin-3-b">Forms</h4>
+                                                        <h4 class="ui-h4 ui-align-l ui-m-4-t ui-m-3-b">Forms</h4>
                                                     </div>
                                                 </div>
-                                                <div class="ui-col-48 ui-padding-5-v">
+                                                <div class="ui-col-48 ui-p-5-v">
 
                                                     <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                                                         <button type="button" class="ui-btn ui-btn-lg ui-btn-ghost ui-btn-square ui-round">
@@ -533,7 +533,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="ui-card-side ui-padding-15 ui-form-lg">
+                                        <div class="ui-card-side ui-p-15 ui-form-lg">
                                             <div class="ui-row">
 
                                                 <div class="ui-col-8 ui-offset-2">
@@ -627,7 +627,7 @@
                                                     <p class="ui-required-msg">Enter your site name.</p>
                                                 </div>
 
-                                                <div class="ui-sp-1 ui-margin-20 ui-border-b ui-border-dashed"></div>
+                                                <div class="ui-sp-1 ui-m-20 ui-border-b ui-border-dashed"></div>
 
                                                 <div class="ui-col-8 ui-offset-2">
                                                     <h3 class="ui-h3">Address Details</h3>
@@ -656,7 +656,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="ui-card-side ui-padding-5-h ui-border-t">
+                                        <div class="ui-card-side ui-p-5-h ui-border-t">
                                             <div class="ui-row">
                                                 <div class="ui-col-12 ui-align-r ui-xs-align-c ui-ease-1st-btn">
 
@@ -665,7 +665,7 @@
                                                     </button>
 
                                                     <button type="submit" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-round ui-theme-green ui-fill-dark-100">
-                                                        <svg class="ui-icon ui-margin-5-r"><use href="#save"/></svg> Save
+                                                        <svg class="ui-icon ui-m-5-r"><use href="#save"/></svg> Save
                                                     </button>
 
                                                 </div>
@@ -688,12 +688,12 @@
                     <div class="ui-fixed ui-fixed-xl">
                         <div class="ui-row">
 
-                            <div class="ui-col-12 ui-no-padding">
+                            <div class="ui-col-12 ui-no-p">
                                 <div class="dashboard-carousel ui-carousel" data-ui-col-xl="4" data-ui-col-lg="2" data-ui-col="2" data-ui-col-md="2" data-ui-col-sm="1" data-ui-col-xs="1">
                                     <div class="ui-carousel-slider ui-icons-margin-5-r ui-ease-layout ui-ease-slow ui-ease-in-out">
 
-                                        <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-yellow">
-                                            <div class="ui-card ui-full-h ui-padding-15 ui-round ui-shadow-lg">
+                                        <div class="ui-slide-content ui-p-10-h ui-p-10-t ui-p-15-b ui-theme-yellow">
+                                            <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
@@ -705,18 +705,18 @@
                                                         <span class=" ui-font-38 ui-text">157</span>
                                                     </div>
                                                 </div>
-                                                <div class="ui-progress-bar ui-margin-15-t progress ui-round">
+                                                <div class="ui-progress-bar ui-m-15-t progress ui-round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 45%;"></span>
                                                 </div>
-                                                <p class="ui-color-black-25 ui-font-16 ui-margin-5-b">Pending for the transaction.</p>
+                                                <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Pending for the transaction.</p>
                                                 <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
                                                     <span class="ui-inline-block">Last updated: 15:12</span>
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-yellow">
-                                            <div class="ui-card ui-full-h ui-padding-15 ui-round ui-shadow-lg">
+                                        <div class="ui-slide-content ui-p-10-h ui-p-10-t ui-p-15-b ui-theme-yellow">
+                                            <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
@@ -728,18 +728,18 @@
                                                         <span class=" ui-font-38 ui-text">23</span>
                                                     </div>
                                                 </div>
-                                                <div class="ui-progress-bar ui-margin-15-t progress ui-round">
+                                                <div class="ui-progress-bar ui-m-15-t progress ui-round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 5%;"></span>
                                                 </div>
-                                                <p class="ui-color-black-25 ui-font-16 ui-margin-5-b">Paused for the some reasons.</p>
+                                                <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Paused for the some reasons.</p>
                                                 <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
                                                     <span class="ui-inline-block">Last updated: 15:12</span>
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-green">
-                                            <div class="ui-card ui-full-h ui-padding-15 ui-round ui-shadow-lg">
+                                        <div class="ui-slide-content ui-p-10-h ui-p-10-t ui-p-15-b ui-theme-green">
+                                            <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
@@ -751,18 +751,18 @@
                                                         <span class=" ui-font-38 ui-text">256</span>
                                                     </div>
                                                 </div>
-                                                <div class="ui-progress-bar ui-margin-15-t progress ui-round">
+                                                <div class="ui-progress-bar ui-m-15-t progress ui-round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 80%;"></span>
                                                 </div>
-                                                <p class="ui-color-black-25 ui-font-16 ui-margin-5-b">Reached for the expert.</p>
+                                                <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Reached for the expert.</p>
                                                 <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
                                                     <span class="ui-inline-block">Last updated: 15:12</span>
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="ui-slide-content ui-padding-10-h ui-padding-10-t ui-padding-15-b ui-theme-panel2">
-                                            <div class="ui-card ui-full-h ui-padding-15 ui-round ui-shadow-lg">
+                                        <div class="ui-slide-content ui-p-10-h ui-p-10-t ui-p-15-b ui-theme-panel2">
+                                            <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
@@ -774,10 +774,10 @@
                                                         <span class=" ui-font-38 ui-text">256</span>
                                                     </div>
                                                 </div>
-                                                <div class="ui-progress-bar ui-margin-15-t progress ui-round">
+                                                <div class="ui-progress-bar ui-m-15-t progress ui-round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 67%;"></span>
                                                 </div>
-                                                <p class="ui-color-black-25 ui-font-16 ui-margin-5-b">Confirmed for payment.</p>
+                                                <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Confirmed for payment.</p>
                                                 <p class="ui-color-black-25">
                                                     <svg class="ui-icon ui-icon-xs"><use href="#clock"/></svg>
                                                     <span class="ui-inline-block">Last updated: 15:12</span>
@@ -786,20 +786,20 @@
                                         </div>
 
                                     </div>
-                                    <div class="ui-carousel-nav ui-no-margin-t ui-margin-10-b ui-ease-1st-btn">
+                                    <div class="ui-carousel-nav ui-no-m-t ui-m-10-b ui-ease-1st-btn">
                                         <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square ui-circle">
-                                            <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
+                                            <svg class="ui-icon ui-m-3-r"><use href="#angle-left"/></svg>
                                         </button>
                                         <span class="ui-dots ui-color-black-25"></span>
                                         <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square ui-circle">
-                                            <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
+                                            <svg class="ui-icon ui-m-3-l"><use href="#angle-right"/></svg>
                                         </button>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
-                                <div class="ui-card ui-full-h ui-padding-15 ui-round ui-shadow-lg">
+                                <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                                     <div class="ui-dropdown ui-menu-l ui-right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost ui-round">
                                             <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
@@ -810,7 +810,7 @@
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See Detailed Activity</a></li>
                                         </ul>
                                     </div>
-                                    <h4 class="ui-h4 ui-align-l ui-margin-10-t">Activity</h4>
+                                    <h4 class="ui-h4 ui-align-l ui-m-10-t">Activity</h4>
                                     <div class="ui-col-static ui-no-fluid">
                                         <div class="ui-row ui-row ui-no-row-gap-h ui-row-gap-md-v">
                                             <div class="ui-col-12 large">
@@ -826,7 +826,7 @@
                                         <div class="ui-col-6">
                                             <div class="ui-donut-chart ui-auto-margin ui-ease-donut-chart" style="max-width: 150px;">
                                                 <strong>
-                                                    <b class="ui-color-black-50 ui-margin-2-b ui-block">69%</b>
+                                                    <b class="ui-color-black-50 ui-m-2-b ui-block">69%</b>
                                                     Payments
                                                 </strong>
                                                 <svg viewBox="0 0 160 160">
@@ -844,24 +844,24 @@
                                         </div>
                                     </div>
                                     <span class="ui-sp-3"></span>
-                                    <p class="ui-color-black-50 ui-font-16 ui-margin-5-b">Daily reports that all received.</p>
+                                    <p class="ui-color-black-50 ui-font-16 ui-m-5-b">Daily reports that all received.</p>
                                     <p class="ui-color-black-25">
-                                        <svg class="ui-icon ui-icon-xs ui-margin-5-r"><use href="#clock"/></svg>
+                                        <svg class="ui-icon ui-icon-xs ui-m-5-r"><use href="#clock"/></svg>
                                         <span class="ui-inline-block">Last updated: 15:12</span>
                                     </p>
                                 </div>
                             </div>
 
                             <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
-                                <div class="ui-card ui-full-h ui-padding-15 ui-padding-10-t ui-round ui-shadow-lg" style="min-height: 350px;">
+                                <div class="ui-card ui-full-h ui-p-15 ui-p-10-t ui-round ui-shadow-lg" style="min-height: 350px;">
                                     <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
-                                        <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-margin-10-b ui-border-b ui-form-lg ui-ease-1st-btn">
+                                        <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-m-10-b ui-border-b ui-form-lg ui-ease-1st-btn">
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-text ui-active">Delayed</button>
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">Paused</button>
                                         </div>
                                         <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
-                                            <div class="ui-list-group ui-margin-15-h">
+                                            <div class="ui-list-group ui-m-15-h">
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
@@ -870,7 +870,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t ui-block">AAC-2019-013:AGF</b>
+                                                        <b class="ui-m-5-t ui-block">AAC-2019-013:AGF</b>
                                                         <span class="ui-color-black-50 ui-font-12">3814 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -880,7 +880,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t ui-block">BDA-2019-642</b>
+                                                        <b class="ui-m-5-t ui-block">BDA-2019-642</b>
                                                         <span class="ui-color-black-50 ui-font-12">2613 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -890,7 +890,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t ui-block">DDG-2019-505:AG</b>
+                                                        <b class="ui-m-5-t ui-block">DDG-2019-505:AG</b>
                                                         <span class="ui-color-black-50 ui-font-12">1890 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -900,7 +900,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t ui-block">OOC-2019-781:F</b>
+                                                        <b class="ui-m-5-t ui-block">OOC-2019-781:F</b>
                                                         <span class="ui-color-black-50 ui-font-12">1605 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -910,7 +910,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t ui-block">BDD-2019-047:G</b>
+                                                        <b class="ui-m-5-t ui-block">BDD-2019-047:G</b>
                                                         <span class="ui-color-black-50 ui-font-12">812 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -920,14 +920,14 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t ui-block">RAC-2019-973</b>
+                                                        <b class="ui-m-5-t ui-block">RAC-2019-973</b>
                                                         <span class="ui-color-black-50 ui-font-12">616 Reports</span>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v" style="top: 62px; bottom: 15px;">
-                                            <div class="ui-list-group ui-margin-15-h">
+                                            <div class="ui-list-group ui-m-15-h">
                                                 <ul class="ui-ease-list-group">
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-right ui-ease-donut-chart">
@@ -936,7 +936,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t ui-block">AAC-2019-013:AGF</b>
+                                                        <b class="ui-m-5-t ui-block">AAC-2019-013:AGF</b>
                                                         <span class="ui-color-black-50 ui-font-12">3814 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -946,7 +946,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t ui-block">BDA-2019-642</b>
+                                                        <b class="ui-m-5-t ui-block">BDA-2019-642</b>
                                                         <span class="ui-color-black-50 ui-font-12">2613 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -956,7 +956,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t ui-block">DDG-2019-505:AG</b>
+                                                        <b class="ui-m-5-t ui-block">DDG-2019-505:AG</b>
                                                         <span class="ui-color-black-50 ui-font-12">1890 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -966,7 +966,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t ui-block">OOC-2019-781:F</b>
+                                                        <b class="ui-m-5-t ui-block">OOC-2019-781:F</b>
                                                         <span class="ui-color-black-50 ui-font-12">1605 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -976,7 +976,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t ui-block">BDD-2019-047:G</b>
+                                                        <b class="ui-m-5-t ui-block">BDD-2019-047:G</b>
                                                         <span class="ui-color-black-50 ui-font-12">812 Reports</span>
                                                     </li>
                                                     <li class="ui-no-border">
@@ -986,7 +986,7 @@
                                                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
                                                             </svg>
                                                         </span>
-                                                        <b class="ui-margin-5-t ui-block">RAC-2019-973</b>
+                                                        <b class="ui-m-5-t ui-block">RAC-2019-973</b>
                                                         <span class="ui-color-black-50 ui-font-12">616 Reports</span>
                                                     </li>
                                                 </ul>
@@ -998,7 +998,7 @@
                             </div>
 
                             <div class="ui-col-xl-6 ui-col-lg-6 ui-col-12 ui-col-md-6">
-                                <div class="ui-tabs ui-card ui-full-h ui-padding-15 ui-round ui-shadow-lg" data-ui-classes="ui-font-bold">
+                                <div class="ui-tabs ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg" data-ui-classes="ui-font-bold">
                                     <div class="ui-ease-tabs">
                                         <div class="ui-dropdown ui-menu-l ui-right ui-ease-dropdown">
                                             <button class="ui-btn ui-btn-square ui-btn-ghost ui-round">
@@ -1010,10 +1010,10 @@
                                                 <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See Detailed Statistics</a></li>
                                             </ul>
                                         </div>
-                                        <div class="ui-dropdown ui-menu-l ui-margin-5-r ui-right ui-ease-dropdown">
+                                        <div class="ui-dropdown ui-menu-l ui-m-5-r ui-right ui-ease-dropdown">
                                             <button class="ui-btn ui-btn-ghost ui-round">
                                                 <span>Last year</span>
-                                                <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
+                                                <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                                             </button>
                                             <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                                 <li class="ui-selected">
@@ -1024,7 +1024,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <h4 class="ui-h4 ui-align-l ui-margin-10-t">Statistics</h4>
+                                        <h4 class="ui-h4 ui-align-l ui-m-10-t">Statistics</h4>
                                         <div class="ui-tab-content ui-open ui-open-ease">
                                             <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                                 <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
@@ -1070,51 +1070,51 @@
                             </div>
 
                             <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
-                                <div class="ui-card ui-full-h ui-padding-15 ui-padding-10-t ui-round ui-shadow-lg" style="min-height: 350px;">
+                                <div class="ui-card ui-full-h ui-p-15 ui-p-10-t ui-round ui-shadow-lg" style="min-height: 350px;">
                                     <div class="ui-tabs ui-form-lg ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
-                                        <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-margin-10-b ui-border-b ui-ease-1st-btn">
+                                        <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-m-10-b ui-border-b ui-ease-1st-btn">
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-text ui-active">News</button>
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">Announcements</button>
                                         </div>
                                         <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
-                                            <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
+                                            <ul class="ui-timeline ui-side-l ui-m-15-h ui-hide-h-lines">
                                                 <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                                 <li>
                                                     Lorem ipsum dolor sit amet.
-                                                    <span class="ui-avatar-holder ui-margin-5-t ui-hover-scale-more-2nd ui-ease-2nd-layout">
+                                                    <span class="ui-avatar-holder ui-m-5-t ui-hover-scale-more-2nd ui-ease-2nd-layout">
                                                         <a href="#"><img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image.jpg" alt=""></a>
                                                         <a href="#"><img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image2.jpg" alt=""></a>
                                                         <a href="#"><img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image3.jpg" alt=""></a>
-                                                        <a class="ui-btn ui-btn-lg ui-no-margin ui-circle ui-ease-btn" href="#">+12</a>
+                                                        <a class="ui-btn ui-btn-lg ui-no-m ui-circle ui-ease-btn" href="#">+12</a>
                                                     </span>
                                                 </li>
                                                 <li>
                                                     Lorem ipsum dolor sit amet.
-                                                    <span class="ui-photo-gallery ui-margin-5-t ui-ease-photo-gallery">
-                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_01.jpg"><img src="img/image_01.jpg" height="38" alt=""></a>
-                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_02.jpg"><img src="img/image_02.jpg" height="38" alt=""></a>
-                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_03.jpg"><img src="img/image_03.jpg" height="38" alt=""></a>
-                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_04.jpg"><img src="img/image_04.jpg" height="38" alt=""></a>
-                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_05.jpg"><img src="img/image_05.jpg" height="38" alt=""></a>
-                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_06.jpg"><img src="img/image_06.jpg" height="38" alt=""></a>
-                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_07.jpg"><img src="img/image_07.jpg" height="38" alt=""></a>
-                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_08.jpg"><img src="img/image_08.jpg" height="38" alt=""></a>
-                                                        <a class="ui-photo ui-margin-1-h ui-round" href="img/image_09.jpg"><img src="img/image_09.jpg" height="38" alt=""></a>
+                                                    <span class="ui-photo-gallery ui-m-5-t ui-ease-photo-gallery">
+                                                        <a class="ui-photo ui-m-1-h ui-round" href="img/image_01.jpg"><img src="img/image_01.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-m-1-h ui-round" href="img/image_02.jpg"><img src="img/image_02.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-m-1-h ui-round" href="img/image_03.jpg"><img src="img/image_03.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-m-1-h ui-round" href="img/image_04.jpg"><img src="img/image_04.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-m-1-h ui-round" href="img/image_05.jpg"><img src="img/image_05.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-m-1-h ui-round" href="img/image_06.jpg"><img src="img/image_06.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-m-1-h ui-round" href="img/image_07.jpg"><img src="img/image_07.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-m-1-h ui-round" href="img/image_08.jpg"><img src="img/image_08.jpg" height="38" alt=""></a>
+                                                        <a class="ui-photo ui-m-1-h ui-round" href="img/image_09.jpg"><img src="img/image_09.jpg" height="38" alt=""></a>
                                                     </span>
                                                 </li>
                                                 <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
                                                 <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                                 <li>
                                                     Nullam sit amet sagittis nisi.
-                                                    <span class="ui-icons-xl ui-margin-5-t ui-block ui-ease-1st-btn">
-                                                        <a class="ui-btn ui-btn-square ui-padding-3-v ui-round" href="#">
+                                                    <span class="ui-icons-xl ui-m-5-t ui-block ui-ease-1st-btn">
+                                                        <a class="ui-btn ui-btn-square ui-p-3-v ui-round" href="#">
                                                             <svg class="ui-icon"><use href="#file-pdf"/></svg>
                                                         </a>
-                                                        <a class="ui-btn ui-btn-square ui-padding-3-v ui-round" href="#">
+                                                        <a class="ui-btn ui-btn-square ui-p-3-v ui-round" href="#">
                                                             <svg class="ui-icon"><use href="#file-xls"/></svg>
                                                         </a>
-                                                        <a class="ui-btn ui-btn-square ui-padding-3-v ui-round" href="#">
+                                                        <a class="ui-btn ui-btn-square ui-p-3-v ui-round" href="#">
                                                             <svg class="ui-icon"><use href="#file-zip"/></svg>
                                                         </a>
                                                     </span>
@@ -1124,7 +1124,7 @@
                                             </ul>
                                         </div>
                                         <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v" style="top: 62px; bottom: 15px;">
-                                            <ul class="ui-timeline ui-side-l ui-margin-15-h ui-hide-h-lines">
+                                            <ul class="ui-timeline ui-side-l ui-m-15-h ui-hide-h-lines">
                                                 <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                                 <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                                 <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -1141,7 +1141,7 @@
                             </div>
 
                             <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
-                                <div class="ui-card ui-full-h ui-padding-15 ui-round ui-shadow-lg">
+                                <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                                     <div class="ui-dropdown ui-menu-l ui-right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost ui-round">
                                             <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
@@ -1151,13 +1151,13 @@
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See All Events</a></li>
                                         </ul>
                                     </div>
-                                    <h4 class="ui-h4 ui-align-l ui-margin-10-t">Events</h4>
-                                    <div class="ui-calendar ui-ease-calendar ui-round ui-no-padding" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>
+                                    <h4 class="ui-h4 ui-align-l ui-m-10-t">Events</h4>
+                                    <div class="ui-calendar ui-ease-calendar ui-round ui-no-p" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>
                                 </div>
                             </div>
 
                             <div class="ui-col-xl-6 ui-col-lg-6 ui-col-12 ui-col-md-6">
-                                <div class="ui-card ui-full-h ui-padding-15 ui-round ui-shadow-lg">
+                                <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                                     <div class="ui-dropdown ui-menu-l ui-right ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-square ui-btn-ghost ui-round">
                                             <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
@@ -1168,7 +1168,7 @@
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See All Experts</a></li>
                                         </ul>
                                     </div>
-                                    <h4 class="ui-h4 ui-align-l ui-margin-10-t">Experts</h4>
+                                    <h4 class="ui-h4 ui-align-l ui-m-10-t">Experts</h4>
                                     <div class="ui-grid-list ui-grid-list-striped grid-hover ui-theme-gray ui-ease-ui-grid-list">
 
                                         <div class="ui-row ui-no-row-gap-v ui-row-gap-sm-h">
@@ -1232,7 +1232,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="John Atkinson|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">John Atkinson
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
@@ -1264,7 +1264,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image2.jpg" alt="">Mary Doe
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon ui-theme-yellow ui-text">
@@ -1296,7 +1296,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image3.jpg" alt="">Mike Taylor
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
@@ -1328,7 +1328,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Tony Starky|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">Tony Starky
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
@@ -1361,7 +1361,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="John Atkinson|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">John Atkinson
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
@@ -1393,7 +1393,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image2.jpg" alt="">Mary Doe
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon ui-theme-yellow ui-text">
@@ -1425,7 +1425,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image3.jpg" alt="">Mike Taylor
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
@@ -1457,7 +1457,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Tony Starky|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">Tony Starky
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
@@ -1489,7 +1489,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="John Atkinson|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">John Atkinson
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
@@ -1521,7 +1521,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image2.jpg" alt="">Mary Doe
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon ui-theme-yellow ui-text">
@@ -1553,7 +1553,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image3.jpg" alt="">Mike Taylor
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
@@ -1585,7 +1585,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Tony Starky|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">Tony Starky
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
@@ -1617,7 +1617,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="John Atkinson|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">John Atkinson
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">John Atkinson
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
@@ -1649,7 +1649,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image2.jpg" alt="">Mary Doe
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon ui-theme-yellow ui-text">
@@ -1681,7 +1681,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image3.jpg" alt="">Mike Taylor
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
@@ -1713,7 +1713,7 @@
                                             <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Tony Starky|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
-                                                        <img class="ui-avatar-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">Tony Starky
+                                                        <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">Tony Starky
                                                     </div>
                                                     <div class="ui-col-7">
                                                         <ul class="ui-steps-bar ui-steps-icon">
@@ -1749,7 +1749,7 @@
 
                                         <div class="ui-row ui-no-row-gap ui-no-fluid">
                                             <div class="ui-col-4">
-                                                <div class="ui-padding-5-v">
+                                                <div class="ui-p-5-v">
                                                     Total <b class="ui-grid-list-total"></b>
                                                 </div>
                                             </div>
@@ -1778,18 +1778,18 @@
 
 <!-- mobile menu -->
 <div class="ui-sidebar ui-show-l ui-invert-bg ui-theme-panel ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
-    <div class="ui-sidebar-title ui-no-padding ui-border-b">
+    <div class="ui-sidebar-title ui-no-p ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-sidebar">
             <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
         </button>
         <img src="img/logo-udashboard.png" height="66" alt="">
     </div>
-    <div class="ui-sidebar-content ui-no-padding ui-scroll-v ui-scrollbar-faded"></div>
+    <div class="ui-sidebar-content ui-no-p ui-scroll-v ui-scrollbar-faded"></div>
 </div>
 
 <!-- modal search -->
 <div class="search ui-modal ui-form-lg">
-    <div class="ui-modal-container ui-xs-no-padding">
+    <div class="ui-modal-container ui-xs-no-p">
 
         <form action="#successful">
             <h2 class="ui-h2">Search</h2>
@@ -1807,7 +1807,7 @@
                         <p class="ui-required-msg large">Please, enter a keyword.</p>
                     </div>
                 </div>
-                <div class="ui-col-100 ui-col-xs-50 ui-padding-10-v">
+                <div class="ui-col-100 ui-col-xs-50 ui-p-10-v">
                     <button class="ui-btn ui-block ui-round-r ui-theme-panel2 ui-fill-dark-100 ui-ease-btn" type="submit">
                         <svg class="ui-icon"><use href="#search"/></svg>
                     </button>
@@ -1815,24 +1815,24 @@
             </div>
 
             <div class="ui-row ui-xs-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity ui-hover-t-more-2nd ui-icons-margin-5-v ui-theme-panel ui-ease-2nd-btn">
-                <div class="ui-col-4 ui-padding-10-b">
+                <div class="ui-col-4 ui-p-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#news"/></svg>
-                        <span class="ui-font-18 ui-block ui-margin-5-t">News</span>
+                        <span class="ui-font-18 ui-block ui-m-5-t">News</span>
                         <span class="ui-color-white-50">589</span>
                     </a>
                 </div>
-                <div class="ui-col-4 ui-padding-10-b">
+                <div class="ui-col-4 ui-p-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#calendar-check"/></svg>
-                        <span class="ui-font-18 ui-block ui-margin-5-t">Events</span>
+                        <span class="ui-font-18 ui-block ui-m-5-t">Events</span>
                         <span class="ui-color-white-50">219</span>
                     </a>
                 </div>
-                <div class="ui-col-4 ui-padding-10-b">
+                <div class="ui-col-4 ui-p-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#files"/></svg>
-                        <span class="ui-font-18 ui-block ui-margin-5-t">Documents</span>
+                        <span class="ui-font-18 ui-block ui-m-5-t">Documents</span>
                         <span class="ui-color-white-50">701</span>
                     </a>
                 </div>

@@ -2,10 +2,10 @@
     <div class="ui-fixed">
 
         <div class="ui-row">
-            <div class="ui-col-8 ui-offset-2 ui-padding-30">
+            <div class="ui-col-8 ui-offset-2 ui-p-30">
 
                 <h3 class="ui-h3">Headings</h3>
-                <div class="ui-padding-30-b">
+                <div class="ui-p-30-b">
                     <h1 class="ui-h1">
                         H1 Heading
                         <span class="ui-color-black-25 ui-font-18">Secondary text</span>
@@ -33,8 +33,8 @@
                 </div>
 
                 <h3 class="ui-h3">Font Colors</h3>
-                <div class="ui-padding-30-b ui-font-18">
-                    <div class="ui-padding-5 ui-theme-gray ui-fill-dark-100">
+                <div class="ui-p-30-b ui-font-18">
+                    <div class="ui-p-5 ui-theme-gray ui-fill-dark-100">
                         <span class="ui-color-white">ui-color-white</span>
                         <span class="ui-color-white">ui-color-white-50</span>
                         <span class="ui-color-white-25">ui-color-white-25</span>
@@ -54,7 +54,7 @@
                 </div>
 
                 <h3 class="ui-h3">Font Sizes</h3>
-                <div class="ui-padding-30-b">
+                <div class="ui-p-30-b">
                     <div class="ui-font-48">ui-font-48</div>
                     <div class="ui-font-38">ui-font-38</div>
                     <div class="ui-font-36">ui-font-36</div>
@@ -92,15 +92,15 @@
                 </p>
 
                 <h3 class="ui-h3">Rtl Content</h3>
-                <p class="ui-font-readable ui-rtl ui-highlight ui-card ui-padding-15 ui-round ui-shadow-lg">
-                    <img class="ui-right ui-margin-15-l ui-round" src="img/image_01.jpg" width="120" alt="">
+                <p class="ui-font-readable ui-rtl ui-highlight ui-card ui-p-15 ui-round ui-shadow-lg">
+                    <img class="ui-right ui-m-15-l ui-round" src="img/image_01.jpg" width="120" alt="">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat gravida posuere. Etiam luctus ex vitae diam tempor, a egestas magna posuere. Vestibulum faucibus ex dolor, at tempor ante iaculis vel. Nulla facilisi.
                 </p>
 
                 <span class="ui-sp-10"></span>
 
                 <h3 class="ui-h3">Quotes</h3>
-                <div class="ui-padding-30-b">
+                <div class="ui-p-30-b">
                     <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q>
                     <span class="ui-sp-5"></span>
                     <q class="ui-font-16">Proin tellus justo, blandit non ultrices in, consequat a sem.</q>
@@ -109,7 +109,7 @@
                 </div>
 
                 <h3 class="ui-h3">Font Styles</h3>
-                <div class="ui-row ui-padding-30-b">
+                <div class="ui-row ui-p-30-b">
                     <div class="ui-col-12 ui-font-16">
                         <div class="ui-font-bold">ui-font-bold</div>
                         <div class="ui-font-semibold">ui-font-semibold</div>
@@ -125,7 +125,7 @@
                 </div>
 
                 <h3 class="ui-h3">Font Transformations</h3>
-                <div class="ui-padding-30-b">
+                <div class="ui-p-30-b">
                     <span class="ui-font-lowercase">ui-font-lowercase</span>
                     <br>
                     <span class="ui-font-uppercase">ui-font-uppercase</span>
@@ -134,7 +134,7 @@
                 </div>
 
                 <h3 class="ui-h3">Alignment</h3>
-                <div class="ui-padding-30-b ui-font-16 ui-card ui-round ui-padding-15 ui-shadow-lg">
+                <div class="ui-p-30-b ui-font-16 ui-card ui-round ui-p-15 ui-shadow-lg">
                     <div class="ui-align-l">ui-align-l</div>
                     <br>
                     <div class="ui-align-c">ui-align-c</div>
@@ -149,7 +149,7 @@
                 </div>
 
                 <h3 class="ui-h3">Blockquote</h3>
-                <div class="ui-padding-30-b">
+                <div class="ui-p-30-b">
                     <blockquote class="ui-blockquote">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <footer>A. Emin YUCE</footer>
@@ -157,14 +157,14 @@
                 </div>
 
                 <h3 class="ui-h3">Hr</h3>
-                <div class="ui-padding-30-b">
+                <div class="ui-p-30-b">
                     Before hr tag.
                     <hr class="ui-hr">
                     After hr tag.
                 </div>
 
                 <h3 class="ui-h3">Code</h3>
-                <div class="ui-padding-30-b">
+                <div class="ui-p-30-b">
                     <pre class="ui-pre ui-pre ui-round">&lt;p&gt;pre example&lt;/p&gt;</pre>
                     Inline code example:  <code class="ui-code">&lt;ui-code&gt;</code>
 

@@ -2,10 +2,10 @@
     <div class="ui-fixed">
 
         <div class="ui-row">
-            <div class="ui-col-8 ui-offset-2 ui-padding-30">
+            <div class="ui-col-8 ui-offset-2 ui-p-30">
 
                 <h3 class="ui-h3">List Columns</h3>
-                <div class="ui-padding-30-b">
+                <div class="ui-p-30-b">
                     <h5 class="ui-h5 ui-font-bold">2 Columns</h5>
                     <ul class="ui-list-unstyled ui-list-column-2">
                         <li>Lorem ipsum dolor sit amet</li>
@@ -68,7 +68,7 @@
                 </div>
 
                 <h3 class="ui-h3">List Gaps (only inline lists)</h3>
-                <div class="ui-padding-30-b">
+                <div class="ui-p-30-b">
                     <ul class="ui-list-inline ui-list-gap-lg">
                         <li>Lorem ipsum</li>
                         <li>dolor sit amet</li>
@@ -91,7 +91,7 @@
                 </div>
 
                 <h3 class="ui-h3">List Spacers</h3>
-                <div class="ui-row ui-padding-30-b">
+                <div class="ui-row ui-p-30-b">
                     <div class="ui-col-12">
                         <h5 class="ui-h5 ui-font-bold">With Inline Lists</h5>
                         <ul class="ui-list-inline ui-list-spacer-5">
@@ -184,7 +184,7 @@
                 </div>
 
                 <h3 class="ui-h3">Description Lists</h3>
-                <div class="ui-padding-30-b">
+                <div class="ui-p-30-b">
                     <dl>
                         <dt class="padding-10">Description lists</dt>
                         <dd class="padding-10">A description list is perfect for defining terms.</dd>
@@ -197,7 +197,7 @@
                 </div>
 
                 <h3 class="ui-h3">Horizontal Description Lists</h3>
-                <div class="ui-padding-30-b">
+                <div class="ui-p-30-b">
                     <dl class="ui-dl-h">
                         <dt>Description lists</dt>
                         <dd>A description list is perfect for defining terms.</dd>
@@ -213,7 +213,7 @@
                     <div class="ui-col-6">
 
                         <h3 class="ui-h3">Unordered Lists</h4>
-                        <div class="ui-padding-30-b">
+                        <div class="ui-p-30-b">
                             <ul>
                                 <li>Lorem ipsum dolor sit amet</li>
                                 <li>Consectetur adipiscing elit</li>
@@ -237,7 +237,7 @@
                     <div class="ui-col-6">
 
                         <h3 class="ui-h3">Ordered Lists</h3>
-                        <div class="ui-padding-30-b">
+                        <div class="ui-p-30-b">
                             <ol>
                                 <li>Lorem ipsum dolor sit amet</li>
                                 <li>Consectetur adipiscing elit</li>
@@ -254,7 +254,7 @@
                 </div>
 
                 <h3 class="ui-h3">Unstyled Lists</h3>
-                <div class="ui-padding-30-b">
+                <div class="ui-p-30-b">
                     <ul class="ui-list-unstyled">
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla tellus a egestas fermentum. Integer tempor.</li>
                         <li>Integer molestie lorem at massa facilisis in pretium nisl aliquet</li>

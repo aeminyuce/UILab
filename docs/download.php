@@ -4,11 +4,11 @@
 <main class="ui-container">
     <div class="ui-row">
         <div class="ui-col-12">
-            <div class="ui-padding-30-b ui-sm-no-padding ui-tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke">
+            <div class="ui-p-30-b ui-sm-no-p ui-tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke">
 
-                <div class="ui-row ui-border-b ui-margin-30-b">
+                <div class="ui-row ui-border-b ui-m-30-b">
 
-                    <div class="ui-col-4 ui-offset-4 ui-no-padding-b">
+                    <div class="ui-col-4 ui-offset-4 ui-no-p-b">
                         <div class="ui-btn-holder ui-form-lg ui-ease-1st-btn">
                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-active">CSS</button>
                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">JS</button>
@@ -18,16 +18,16 @@
 
                 </div>
 
-                <div class="ui-fixed ui-fixed-xl ui-padding-15 ui-sm-no-padding ui-shadow-in-sm ui-round ui-theme-gray ui-fill-light-100">
+                <div class="ui-fixed ui-fixed-xl ui-p-15 ui-sm-no-p ui-shadow-in-sm ui-round ui-theme-gray ui-fill-light-100">
 
-                    <div class="generate-holder ui-tab-content ui-form-lg ui-padding-15 ui-open ui-open-ease">
+                    <div class="generate-holder ui-tab-content ui-form-lg ui-p-15 ui-open ui-open-ease">
 
-                        <div class="ui-align-c ui-margin-30-b">
+                        <div class="ui-align-c ui-m-30-b">
                             <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form ui-form-inline-xs">
                                 <input class="ui-cursor-pointer" name="less" class="generate-import" type="file">
                                 <span class="ui-btn ui-circle ui-block ui-ease-btn">
                                     <span class="ui-inline-block">Import LESS File</span>
-                                    <svg class="ui-icon ui-margin-5-l"><use href="#import"/></svg>
+                                    <svg class="ui-icon ui-m-5-l"><use href="#import"/></svg>
                                 </span>
                             </div>
                         </div>
@@ -37,8 +37,8 @@
 
                                 <h4 class="ui-h4">Core</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form ui-form-disabled">
                                             <input class="generate-toggle" type="checkbox" checked disabled>
                                             <i class="ui-form-state"></i>
@@ -57,8 +57,8 @@
 
                                 <h4 class="ui-h4">Grid System</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
@@ -77,8 +77,8 @@
 
                                 <h4 class="ui-h4">Utilities</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
@@ -118,8 +118,8 @@
 
                                 <h4 class="ui-h4">Typography</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
@@ -148,8 +148,8 @@
 
                                 <h4 class="ui-h4">Buttons</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
@@ -189,8 +189,8 @@
 
                                 <h4 class="ui-h4">Forms</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
@@ -223,8 +223,8 @@
 
                                 <h4 class="ui-h4">Icons</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
@@ -246,8 +246,8 @@
 
                                 <h4 class="ui-h4">Layout</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
@@ -342,8 +342,8 @@
 
                                 <h4 class="ui-h4">Charts</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
@@ -386,8 +386,8 @@
 
                                 <h4 class="ui-h4">Components</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
@@ -476,8 +476,8 @@
 
                                 <h4 class="ui-h4">Themes</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
@@ -498,12 +498,12 @@
                         </div>
 
                         <div class="ui-row">
-                            <div class="ui-col-12 ui-no-padding-t">
+                            <div class="ui-col-12 ui-no-p-t">
 
-                                <div class="ui-textarea ui-margin-15-b ui-round ui-border-dual ui-ease-form">
-                                    <textarea class="ui-color-black-50 ui-font-16 ui-padding-10" rows="12" placeholder="Generated CSS will be here!"></textarea>
+                                <div class="ui-textarea ui-m-15-b ui-round ui-border-dual ui-ease-form">
+                                    <textarea class="ui-color-black-50 ui-font-16 ui-p-10" rows="12" placeholder="Generated CSS will be here!"></textarea>
                                     <div class="ui-border-t ui-border-dual">
-                                        <div class="ui-inline-block ui-padding-5-r">
+                                        <div class="ui-inline-block ui-p-5-r">
                                             <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-left ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
                                             </button>
@@ -521,7 +521,7 @@
                                     <button name="less" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">Generate LESS</button>
                                     <span class="ui-sp-5 ui-visible-sm"></span>
                                     <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid ui-round">
-                                        <svg class="ui-icon ui-text ui-margin-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
+                                        <svg class="ui-icon ui-text ui-m-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
                                     </button>
                                 </div>
 
@@ -530,14 +530,14 @@
 
                     </div>
 
-                    <div class="generate-holder ui-tab-content ui-form-lg ui-padding-15">
+                    <div class="generate-holder ui-tab-content ui-form-lg ui-p-15">
 
-                        <div class="ui-align-c ui-margin-30-b">
+                        <div class="ui-align-c ui-m-30-b">
                             <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form ui-form-inline-xs">
                                 <input class="ui-cursor-pointer" name="js" class="generate-import" type="file">
                                 <span class="ui-btn ui-circle ui-block ui-ease-btn">
                                     <span class="ui-inline-block">Import JS File</span>
-                                    <svg class="ui-icon ui-margin-5-l"><use href="#import"/></svg>
+                                    <svg class="ui-icon ui-m-5-l"><use href="#import"/></svg>
                                 </span>
                             </div>
                         </div>
@@ -547,8 +547,8 @@
 
                                 <h4 class="ui-h4">Core</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
@@ -567,8 +567,8 @@
 
                                 <h4 class="ui-h4">Grid System</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
@@ -587,8 +587,8 @@
 
                                 <h4 class="ui-h4">Buttons</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
@@ -624,8 +624,8 @@
 
                                 <h4 class="ui-h4">Forms</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
@@ -686,8 +686,8 @@
 
                                 <h4 class="ui-h4">Layout</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
@@ -716,8 +716,8 @@
 
                                 <h4 class="ui-h4">Components</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
@@ -823,8 +823,8 @@
 
                                 <h4 class="ui-h4">Charts</h4>
 
-                                <div class="generate-forms ui-margin-20-b ui-block-1st">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
@@ -866,12 +866,12 @@
                         </div>
 
                         <div class="ui-row">
-                            <div class="ui-col-12 ui-no-padding-t">
+                            <div class="ui-col-12 ui-no-p-t">
 
-                                <div class="ui-textarea ui-margin-15-b ui-round ui-border-dual ui-ease-form">
-                                    <textarea class="ui-color-black-50 ui-font-16 ui-padding-10" rows="12" placeholder="Generated JS will be here!"></textarea>
+                                <div class="ui-textarea ui-m-15-b ui-round ui-border-dual ui-ease-form">
+                                    <textarea class="ui-color-black-50 ui-font-16 ui-p-10" rows="12" placeholder="Generated JS will be here!"></textarea>
                                     <div class="ui-border-t ui-border-dual">
-                                        <div class="ui-inline-block ui-padding-5-r">
+                                        <div class="ui-inline-block ui-p-5-r">
                                             <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-left ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
                                             </button>
@@ -888,7 +888,7 @@
                                     <span class="ui-sp-15 ui-visible-xs"></span>
                                     <button name="js" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">Generate JS</button>
                                     <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid ui-round">
-                                        <svg class="ui-icon ui-text ui-margin-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
+                                        <svg class="ui-icon ui-text ui-m-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
                                     </button>
                                 </div>
 
@@ -897,13 +897,13 @@
 
                     </div>
 
-                    <div class="generate-holder ui-tab-content ui-form-lg ui-padding-15">
+                    <div class="generate-holder ui-tab-content ui-form-lg ui-p-15">
 
                         <div class="generate-list ui-row ui-row-gap-sm-v">
                             <div class="ui-col-12">
 
-                                <div class="generate-forms ui-margin-20-b">
-                                    <label class="ui-label ui-margin-5-b ui-opacity ui-ease-opacity">
+                                <div class="generate-forms ui-m-20-b">
+                                    <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
@@ -997,12 +997,12 @@
                         </div>
 
                         <div class="ui-row">
-                            <div class="ui-col-12 ui-no-padding-t">
+                            <div class="ui-col-12 ui-no-p-t">
 
-                                <div class="ui-textarea ui-margin-15-b ui-round ui-border-dual ui-ease-form">
-                                    <textarea class="ui-color-black-50 ui-font-16 ui-padding-10" rows="12" placeholder="Generated icons will be here!"></textarea>
+                                <div class="ui-textarea ui-m-15-b ui-round ui-border-dual ui-ease-form">
+                                    <textarea class="ui-color-black-50 ui-font-16 ui-p-10" rows="12" placeholder="Generated icons will be here!"></textarea>
                                     <div class="ui-border-t ui-border-dual">
-                                        <div class="ui-inline-block ui-padding-5-r">
+                                        <div class="ui-inline-block ui-p-5-r">
                                             <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-left ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
                                             </button>
@@ -1019,7 +1019,7 @@
                                     <span class="ui-sp-15 ui-visible-xs"></span>
                                     <button name="php" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100" data-ui-type="icons">Generate Icons</button>
                                     <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid ui-round">
-                                        <svg class="ui-icon ui-text ui-margin-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
+                                        <svg class="ui-icon ui-text ui-m-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
                                     </button>
                                 </div>
 

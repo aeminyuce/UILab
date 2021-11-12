@@ -2,7 +2,7 @@
 <script src="../js/custom/real-estate-details.js?v=<?php echo filemtime('../js/custom/real-estate-details.js'); ?>"></script>
 
 <main class="ui-container ui-no-gutter">
-    <div class="ui-fixed ui-padding-30-v">
+    <div class="ui-fixed ui-p-30-v">
 
         <div class="ui-col-static">
 
@@ -50,18 +50,18 @@
                             </div>
                             <div class="ui-carousel-nav ui-ease-1st-btn">
                                 <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square ui-circle">
-                                    <svg class="ui-icon ui-margin-3-r"><use href="#angle-left"/></svg>
+                                    <svg class="ui-icon ui-m-3-r"><use href="#angle-left"/></svg>
                                 </button>
                                 <span class="ui-dots ui-color-black-25"></span>
                                 <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square ui-circle">
-                                    <svg class="ui-icon ui-margin-3-l"><use href="#angle-right"/></svg>
+                                    <svg class="ui-icon ui-m-3-l"><use href="#angle-right"/></svg>
                                 </button>
                             </div>
                         </div>
                     </div>
 
                     <div class="ui-card ui-round ui-shadow-lg">
-                        <div class="ui-padding-30 ui-font-16 ui-font-readable">
+                        <div class="ui-p-30 ui-font-16 ui-font-readable">
                             <h4 class="ui-h4">Details</h4>
                             Each villa has been meticulously designed to meet all the demands that a luxury villa has to provide as well as offer a contemporary image of great beauty.
                             <span class="ui-sp-20"></span>
@@ -75,15 +75,15 @@
                             <span class="ui-sp-20"></span>
                             The development of 3 luxury villas is planned in the residential neighborhood.
                         </div>
-                        <div class="ui-padding-30 ui-border-t">
-                            <h4 class="ui-h4 ui-margin-15-b">Power Saving Statistics</h4>
-                            <svg class="ui-icon ui-icon-xl ui-left ui-margin-5-t ui-margin-10-r"><use href="#bolt"/></svg>
-                            <ul class="ui-list-unstyled ui-padding-2-t">
+                        <div class="ui-p-30 ui-border-t">
+                            <h4 class="ui-h4 ui-m-15-b">Power Saving Statistics</h4>
+                            <svg class="ui-icon ui-icon-xl ui-left ui-m-5-t ui-m-10-r"><use href="#bolt"/></svg>
+                            <ul class="ui-list-unstyled ui-p-2-t">
                                 <li><b>Power per Month:</b> 4,86 kWp</li>
                                 <li><b>Yearly Output:</b> 4900 kWp</li>
                             </ul>
                         </div>
-                        <div class="ui-padding-15-b ui-padding-30-h">
+                        <div class="ui-p-15-b ui-p-30-h">
                             <div class="ui-row ui-row-gap-lg">
                                 <div class="ui-col-5x ui-col-sm-4 ui-col-xs-6">
                                     <div class="ui-pie-chart ui-ease-pie-chart" data-ui-info="Total">
@@ -141,7 +141,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="ui-color-black-25 ui-font-12 ui-align-c ui-padding-10">
+                            <div class="ui-color-black-25 ui-font-12 ui-align-c ui-p-10">
                                 <b>Yearly Savings Costs: $18.970</b>
                             </div>
                         </div>
@@ -150,29 +150,29 @@
                 </div>
             </div>
 
-            <div class="ui-col-400 ui-padding-10">
+            <div class="ui-col-400 ui-p-10">
 
                 <div class="ui-card ui-align-c ui-round ui-shadow-lg ui-theme-sub">
-                    <div class="ui-card-side ui-padding-10-v ui-fill-dark-300">
+                    <div class="ui-card-side ui-p-10-v ui-fill-dark-300">
                         <ul class="ui-list-inline ui-countdown ui-no-user-select">
-                            <li class="ui-padding-10-v ui-padding-15-h ui-hidden-xs">
+                            <li class="ui-p-10-v ui-p-15-h ui-hidden-xs">
                                 <svg class="ui-icon ui-icon-xxl"><use href="#history"/></svg>
                             </li>
-                            <li class="ui-padding-5"><b class="ui-d ui-font-22 ui-block">12</b>Days</li>
-                            <li class="ui-padding-5"><b class="ui-h ui-font-22 ui-block">22</b>Hours</li>
-                            <li class="ui-padding-5"><b class="ui-m ui-font-22 ui-block">01</b>Minutes</li>
-                            <li class="ui-padding-5"><b class="ui-s ui-font-22 ui-block">17</b>Seconds</li>
+                            <li class="ui-p-5"><b class="ui-d ui-font-22 ui-block">12</b>Days</li>
+                            <li class="ui-p-5"><b class="ui-h ui-font-22 ui-block">22</b>Hours</li>
+                            <li class="ui-p-5"><b class="ui-m ui-font-22 ui-block">01</b>Minutes</li>
+                            <li class="ui-p-5"><b class="ui-s ui-font-22 ui-block">17</b>Seconds</li>
                         </ul>
                     </div>
-                    <div class="ui-padding-3 ui-fill-dark-100 ui-stripe-light ui-animate-progress">
+                    <div class="ui-p-3 ui-fill-dark-100 ui-stripe-light ui-animate-progress">
                     </div>
-                    <div class="ui-card-side ui-padding-5 ui-fill-dark-100">
+                    <div class="ui-card-side ui-p-5 ui-fill-dark-100">
                         <b class="ui-font-12 ui-color-white">Closing: 10 August, 2018, Friday</b>
                     </div>
                 </div>
 
                 <div class="ui-card ui-align-c ui-round ui-shadow-lg ui-theme-sub">
-                    <ul class="ui-list-inline ui-list-gap ui-padding-30 ui-padding-15-b ui-icons-lg ui-icons-margin-5-r ui-theme-gray ui-inline-block-1st">
+                    <ul class="ui-list-inline ui-list-gap ui-p-30 ui-p-15-b ui-icons-lg ui-icons-margin-5-r ui-theme-gray ui-inline-block-1st">
                         <li>
                             <svg class="ui-icon"><use href="#floor-plan"/></svg>
                             <span class="ui-font-16">7+1</span>
@@ -186,17 +186,17 @@
                             Ground Floor
                         </li>
                     </ul>
-                    <div class="ui-padding-15-b">
+                    <div class="ui-p-15-b">
                         <svg class="ui-icon ui-color-black-25"><use href="#marker"/></svg>
                         <span class="ui-color-black-25">Location: <b>New York</b></span>
                     </div>
-                    <div class="ui-padding-10 ui-border-t">
+                    <div class="ui-p-10 ui-border-t">
                         Real Estate ID: <b>RE-616</b>
                     </div>
                 </div>
 
-                <div class="ui-card ui-margin-20-b ui-round ui-shadow-lg">
-                    <div class="ui-padding-30-h ui-padding-10-v">
+                <div class="ui-card ui-m-20-b ui-round ui-shadow-lg">
+                    <div class="ui-p-30-h ui-p-10-v">
                         <b>Previous Offers / <span style="color: hsl(30, 100%, 63%);">Averages</span></b>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,20" data-ui-x="1,2,3,4,5">
                             <ul class="ui-lines" data-ui-type="curved dotted">
@@ -215,30 +215,30 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="ui-padding-20-t ui-padding-30-h ui-border-t">
+                    <div class="ui-p-20-t ui-p-30-h ui-border-t">
                         <div class="ui-font-28 ui-font-bold">$640.000</div>
                         <span class="ui-color-black-25">LATEST OFFER</span>
                     </div>
-                    <div class="ui-padding-30 ui-padding-15-t">
-                        <div class="ui-margin-15-b"><b>Min. Offer Amount: $5000</b><br>
+                    <div class="ui-p-30 ui-p-15-t">
+                        <div class="ui-m-15-b"><b>Min. Offer Amount: $5000</b><br>
                             <span class="ui-color-black-50">Automatic 5% deposit required.</span>
                         </div>
                         <form action="#">
                             <div class="ui-col-static ui-no-fluid ui-currency-spinner ui-form-lg">
                                 <div class="ui-col-50">
-                                    <button class="ui-currency-down ui-btn ui-no-padding-h ui-block ui-round-l ui-ease-btn" type="button">
+                                    <button class="ui-currency-down ui-btn ui-no-p-h ui-block ui-round-l ui-ease-btn" type="button">
                                         <svg class="ui-icon"><use href="#minus"/></svg>
                                     </button>
                                 </div>
                                 <div class="ui-row">
-                                    <div class="ui-col-12 ui-no-padding">
+                                    <div class="ui-col-12 ui-no-p">
                                         <div class="ui-input ui-no-border ui-theme-gray ui-fill-light-100 ui-ease-form">
                                             <input class="ui-font-bold ui-align-c ui-font-18" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="ui-col-50">
-                                    <button class="ui-currency-up ui-btn ui-no-padding-h ui-block ui-round-r ui-ease-btn" type="button">
+                                    <button class="ui-currency-up ui-btn ui-no-p-h ui-block ui-round-r ui-ease-btn" type="button">
                                         <svg class="ui-icon"><use href="#plus"/></svg>
                                     </button>
                                 </div>
@@ -252,41 +252,41 @@
                     </div>
                 </div>
 
-                <div class="ui-card ui-padding-30 ui-round ui-shadow-lg">
+                <div class="ui-card ui-p-30 ui-round ui-shadow-lg">
                     <h4 class="ui-h4">Other Details</h4>
                     <ul class="ui-list-unstyled ui-list-spacer-15 ui-icons-lg ui-icons-margin-5-r">
                         <li>
-                            <span class="ui-color-black-25 ui-block ui-margin-5-b">House Type</span>
+                            <span class="ui-color-black-25 ui-block ui-m-5-b">House Type</span>
                             <svg class="ui-icon ui-text"><use href="#house"/></svg>
                             <b>Single Family</b>
                         </li>
                         <li>
-                            <span class="ui-color-black-25 ui-block ui-margin-5-b">Build Surface</span>
+                            <span class="ui-color-black-25 ui-block ui-m-5-b">Build Surface</span>
                             <svg class="ui-icon ui-text"><use href="#house-surface"/></svg>
                             <b>628m<sup>2</sup></b>
                         </li>
                         <li>
-                            <span class="ui-color-black-25 ui-block ui-margin-5-b">Heating/Cooling System</span>
+                            <span class="ui-color-black-25 ui-block ui-m-5-b">Heating/Cooling System</span>
                             <svg class="ui-icon ui-text"><use href="#house-heat"/></svg>
                             <b>Air Cooling</b>
                         </li>
                         <li>
-                            <span class="ui-color-black-25 ui-block ui-margin-5-b">Bedrooms</span>
+                            <span class="ui-color-black-25 ui-block ui-m-5-b">Bedrooms</span>
                             <svg class="ui-icon ui-text"><use href="#bed"/></svg>
                             <b>4</b>
                         </li>
                         <li>
-                            <span class="ui-color-black-25 ui-block ui-margin-5-b">Bathrooms/Guest toilets</span>
+                            <span class="ui-color-black-25 ui-block ui-m-5-b">Bathrooms/Guest toilets</span>
                             <svg class="ui-icon ui-text"><use href="#wc"/></svg>
                             <b>3</b>
                         </li>
                         <li>
-                            <span class="ui-color-black-25 ui-block ui-margin-5-b">Parking</span>
+                            <span class="ui-color-black-25 ui-block ui-m-5-b">Parking</span>
                             <svg class="ui-icon ui-text"><use href="#garage"/></svg>
                             <b>2 Spaces</b>
                         </li>
                         <li>
-                            <span class="ui-color-black-25 ui-block ui-margin-5-b">Year of Build</span>
+                            <span class="ui-color-black-25 ui-block ui-m-5-b">Year of Build</span>
                             <svg class="ui-icon ui-text"><use href="#calendar-day"/></svg>
                             <b>2019</b>
                         </li>
