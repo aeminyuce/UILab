@@ -198,11 +198,11 @@
                                 <div class="ui-row ui-no-fluid ui-margin-10-b">
                                     <div class="ui-col-6">
                                         <span class="ui-color-black-25">Highest:</span>
-                                        <span class="largest ui-block">$199</span>
+                                        <span class="ui-font-28 ui-block">$199</span>
                                     </div>
                                     <div class="ui-col-6">
                                         <span class="ui-color-black-25">Lowest:</span>
-                                        <span class="largest ui-block">$120</span>
+                                        <span class="ui-font-28 ui-block">$120</span>
                                     </div>
                                 </div>
                                 <svg class="ui-icon ui-icon-sm ui-margin-5-r ui-margin-2-b"><use href="#chart-line"/></svg>

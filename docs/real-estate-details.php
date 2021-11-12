@@ -216,7 +216,7 @@
                         </div>
                     </div>
                     <div class="ui-padding-20-t ui-padding-30-h ui-border-t">
-                        <div class="largest ui-font-bold">$640.000</div>
+                        <div class="ui-font-28 ui-font-bold">$640.000</div>
                         <span class="ui-color-black-25">LATEST OFFER</span>
                     </div>
                     <div class="ui-padding-30 ui-padding-15-t">
