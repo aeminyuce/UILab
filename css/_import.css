@@ -27,8 +27,8 @@
   --ui-range-track-hover-bg: hsla(0, 0%, 0%, 0.15);
   --ui-placeholder-color: hsla(0, 0%, 0%, 0.4);
   --ui-placeholder-focus-color: hsla(0, 0%, 0%, 0.23);
-  --ui-ui-check-bg: hsla(0, 0%, 0%, 0.65);
-  --ui-ui-switch-bg: hsla(0, 0%, 0%, 0.15);
+  --ui-check-bg: hsla(0, 0%, 0%, 0.65);
+  --ui-switch-bg: hsla(0, 0%, 0%, 0.15);
   --ui-form-disabled-bg: hsla(0, 0%, 0%, 0.075);
   --ui-form-readonly-color: hsla(0, 0%, 0%, 0.5);
   --ui-textarea-counter-color: hsla(0, 0%, 0%, 0.45);
@@ -101,8 +101,8 @@
   --ui-form-focus-border: hsla(0, 0%, 100%, 0.65);
   --ui-placeholder-color: hsla(0, 0%, 100%, 0.4);
   --ui-placeholder-focus-color: hsla(0, 0%, 100%, 0.23);
-  --ui-ui-check-bg: hsla(0, 0%, 100%, 0.65);
-  --ui-ui-switch-bg: hsla(0, 0%, 100%, 0.15);
+  --ui-check-bg: hsla(0, 0%, 100%, 0.65);
+  --ui-switch-bg: hsla(0, 0%, 100%, 0.15);
   --ui-form-disabled-bg: hsla(0, 0%, 100%, 0.075);
   --ui-form-readonly-color: hsla(0, 0%, 100%, 0.65);
   --ui-textarea-counter-color: hsl(0, 0%, 100%);
@@ -5214,7 +5214,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-check .ui-form-state,
 .ui-radio .ui-form-state {
   background-color: hsla(0, 0%, 0%, 0.65);
-  background-color: var(--ui-ui-check-bg);
+  background-color: var(--ui-check-bg);
   opacity: 0;
 }
 .ui-radio,
@@ -5250,7 +5250,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-switch input:not(:checked) + .ui-form-state,
 .ui-switch input:not(:checked) + .ui-form-state[class*="ui-fill-"] {
   background-color: hsla(0, 0%, 0%, 0.15);
-  background-color: var(--ui-ui-switch-bg);
+  background-color: var(--ui-switch-bg);
 }
 .ui-switch input:not(:indeterminate):not(:checked):not(:indeterminate) + .ui-form-state {
   transform: translate(-125%, -50%);
