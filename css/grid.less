@@ -1,7 +1,7 @@
 // out: false
 /* grid */ @import (reference) 'ui.less';
 
-@grid-columns:                          range(12);
+@grid-sizes:                            range(12);
 @container-gutter:                      (@highlight-space / 2);
 
 @fixed-width:                           @lg-breakpoint;
@@ -15,11 +15,11 @@
 @row-gap-xs:                            1px;
 
 @static-grids:                          true;
-@static-grid-columns:                   range(50px, 500px, 50); // start, end, step
+@static-grid-sizes:                     range(50px, 500px, 50); // start, end, step
 
 @custom-grids:                          true;
-@custom-grid-columns:                   5x 7x 8x 9x; // 5x 7x 8x 9x 10x 11x recommended
-@custom-static-grid-columns:            @btn-default, @btn-lg;
+@custom-grid-sizes:                     5x 7x 8x 9x; // 5x 7x 8x 9x 10x 11x recommended
+@custom-static-grid-sizes:              @btn-default, @btn-lg;
 
 .ui-container,.ui-fixed {
     width: 100%; display: block;
@@ -82,7 +82,7 @@ html {
 [class*="ui-push-"],[class*="ui-pull-"] { position: relative; }
 
 ._create-cols(@name; @i) {
-    @size:  (@i / max(@grid-columns));
+    @size:  (@i / max(@grid-sizes));
 
     .ui-col@{name}@{i} { width: percentage(@size); }
     .ui-offset@{name}@{i} { margin-left: percentage(@size); }
@@ -90,7 +90,7 @@ html {
   	.ui-pull@{name}@{i} { right: percentage(@size); }
 };
 
-each(@grid-columns, {
+each(@grid-sizes, {
     ._create-cols(~'-'; @value);
 });
 
@@ -99,7 +99,7 @@ each(@grid-columns, {
     .ui-col@{name}@{size} { width: percentage(@width); }
 };
 
-each(@custom-grid-columns, {
+each(@custom-grid-sizes, {
     ._create-custom-cols(~'-'; @value);
 });
 
@@ -123,7 +123,7 @@ each(@custom-grid-columns, {
     .ui-col@{name}@{number} { width: @value; }
 };
 
-each(@static-grid-columns, {
+each(@static-grid-sizes, {
     ._create-static-cols(~'-'; @value);
 });
 
@@ -132,7 +132,7 @@ each(@static-grid-columns, {
     .ui-col@{name}@{number} { width: @size; }
 };
 
-each(@custom-static-grid-columns, {
+each(@custom-static-grid-sizes, {
     ._create-custom-static-cols(~'-'; @value);
 });
 
@@ -146,19 +146,19 @@ each(@custom-static-grid-columns, {
     .ui-no-gutter-lg { padding-right: 0 !important; padding-left: 0 !important; }
     .ui-offset-lg-0 { margin-left: 0; }
 
-    each(@grid-columns, {
+    each(@grid-sizes, {
         ._create-cols(~'-lg-'; @value);
     });
 
-    each(@custom-grid-columns, {
+    each(@custom-grid-sizes, {
         ._create-custom-cols(~'-lg-'; @value);
     });
 
-    each(@static-grid-columns, {
+    each(@static-grid-sizes, {
         ._create-static-cols(~'-lg-'; @value);
     });
 
-    each(@custom-static-grid-columns, {
+    each(@custom-static-grid-sizes, {
         ._create-custom-static-cols(~'-lg-'; @value);
     });
 
@@ -167,19 +167,19 @@ each(@custom-static-grid-columns, {
     .ui-no-gutter-md { padding-right: 0 !important; padding-left: 0 !important; }
     .ui-offset-md-0 { margin-left: 0; }
 
-    each(@grid-columns, {
+    each(@grid-sizes, {
         ._create-cols(~'-md-'; @value);
     });
 
-    each(@custom-grid-columns, {
+    each(@custom-grid-sizes, {
         ._create-custom-cols(~'-md-'; @value);
     });
 
-    each(@static-grid-columns, {
+    each(@static-grid-sizes, {
         ._create-static-cols(~'-md-'; @value);
     });
 
-    each(@custom-static-grid-columns, {
+    each(@custom-static-grid-sizes, {
         ._create-custom-static-cols(~'-md-'; @value);
     });
 
@@ -213,19 +213,19 @@ each(@custom-static-grid-columns, {
 
     .ui-offset-sm-0 { margin-left: 0; }
 
-    each(@grid-columns, {
+    each(@grid-sizes, {
         ._create-cols(~'-sm-'; @value);
     });
 
-    each(@custom-grid-columns, {
+    each(@custom-grid-sizes, {
         ._create-custom-cols(~'-sm-'; @value);
     });
 
-    each(@static-grid-columns, {
+    each(@static-grid-sizes, {
         ._create-static-cols(~'-sm-'; @value);
     });
 
-    each(@custom-static-grid-columns, {
+    each(@custom-static-grid-sizes, {
         ._create-custom-static-cols(~'-sm-'; @value);
     });
 
@@ -261,19 +261,19 @@ each(@custom-static-grid-columns, {
     .ui-container { min-width: @layout-min; }
     .ui-offset-xs-0 { margin-left: 0; }
 
-    each(@grid-columns, {
+    each(@grid-sizes, {
         ._create-cols(~'-xs-'; @value);
     });
 
-    each(@custom-grid-columns, {
+    each(@custom-grid-sizes, {
         ._create-custom-cols(~'-xs-'; @value);
     });
 
-    each(@static-grid-columns, {
+    each(@static-grid-sizes, {
         ._create-static-cols(~'-xs-'; @value);
     });
 
-    each(@custom-static-grid-columns, {
+    each(@custom-static-grid-sizes, {
         ._create-custom-static-cols(~'-xs-'; @value);
     });
 
@@ -329,19 +329,19 @@ each(@custom-static-grid-columns, {
     .ui-no-gutter-xl { padding-right: 0 !important; padding-left: 0 !important; }
     .ui-offset-xl-0 { margin-left: 0; }
 
-    each(@grid-columns, {
+    each(@grid-sizes, {
         ._create-cols(~'-xl-'; @value);
     });
 
-    each(@custom-grid-columns, {
+    each(@custom-grid-sizes, {
         ._create-custom-cols(~'-xl-'; @value);
     });
 
-    each(@static-grid-columns, {
+    each(@static-grid-sizes, {
         ._create-static-cols(~'-xl-'; @value);
     });
 
-    each(@custom-static-grid-columns, {
+    each(@custom-static-grid-sizes, {
         ._create-custom-static-cols(~'-xl-'; @value);
     });
 }

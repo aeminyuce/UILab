@@ -254,7 +254,7 @@
 
                 <div class="ui-card ui-p-30 ui-round ui-shadow-lg">
                     <h4 class="ui-h4">Other Details</h4>
-                    <ul class="ui-list-unstyled ui-list-spacer-15 ui-icons-lg ui-icons-margin-5-r">
+                    <ul class="ui-list-unstyled ui-list-sp-15 ui-icons-lg ui-icons-margin-5-r">
                         <li>
                             <span class="ui-color-black-25 ui-block ui-m-5-b">House Type</span>
                             <svg class="ui-icon ui-text"><use href="#house"/></svg>

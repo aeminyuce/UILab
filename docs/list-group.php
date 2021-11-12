@@ -17,7 +17,7 @@
                 <span class="ui-sp-30"></span>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-list-column-2 ui-ease-list-group">
+                    <ul class="ui-list-col-2 ui-ease-list-group">
                         <li>Lorem ipsum dolor sit amet.</li>
                         <li>Sed finibus rhoncus.</li>
                         <li>Lorem ipsum dolor sit amet.</li>
@@ -30,7 +30,7 @@
                 <span class="ui-sp-30"></span>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-list-column-3 ui-ease-list-group">
+                    <ul class="ui-list-col-3 ui-ease-list-group">
                         <li>Lorem ipsum dolor sit amet.</li>
                         <li>Sed finibus rhoncus.</li>
                         <li>Lorem ipsum dolor sit amet.</li>
@@ -52,7 +52,7 @@
                 <span class="ui-sp-30"></span>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-list-column-4 ui-ease-list-group">
+                    <ul class="ui-list-col-4 ui-ease-list-group">
                         <li>Lorem ipsum dolor sit amet.</li>
                         <li>Sed finibus rhoncus.</li>
                         <li>Lorem ipsum dolor sit amet.</li>

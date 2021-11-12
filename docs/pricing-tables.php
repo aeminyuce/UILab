@@ -84,7 +84,7 @@
                                 </a>
                             </div>
                             <div class="ui-card-side ui-p-30">
-                                <ul class="ui-list-unstyled ui-list-spacer-15 ui-m-15-v ui-font-16 ui-block-2nd">
+                                <ul class="ui-list-unstyled ui-list-sp-15 ui-m-15-v ui-font-16 ui-block-2nd">
                                     <li><span class="ui-color-black-25 ui-font-14">Number of Users</span>1 User</li>
                                     <li><span class="ui-color-black-25 ui-font-14">Domains</span>1 Domain</li>
                                     <li><span class="ui-color-black-25 ui-font-14">Projects</span>1 Project</li>
@@ -123,7 +123,7 @@
                                 </a>
                             </div>
                             <div class="ui-card-side ui-p-30">
-                                <ul class="ui-list-unstyled ui-list-spacer-15 ui-m-15-v ui-font-16 ui-block-2nd">
+                                <ul class="ui-list-unstyled ui-list-sp-15 ui-m-15-v ui-font-16 ui-block-2nd">
                                     <li><span class="ui-color-white-50 ui-font-14">Number of Users</span>5 Users</li>
                                     <li><span class="ui-color-white-50 ui-font-14">Domains</span>10 Domains</li>
                                     <li><span class="ui-color-white-50 ui-font-14">Projects</span>100 Projects</li>
@@ -161,7 +161,7 @@
                                 </a>
                             </div>
                             <div class="ui-card-side ui-p-30">
-                                <ul class="ui-list-unstyled ui-list-spacer-15 ui-m-15-v ui-font-16 ui-block-2nd">
+                                <ul class="ui-list-unstyled ui-list-sp-15 ui-m-15-v ui-font-16 ui-block-2nd">
                                     <li><span class="ui-color-black-25 ui-font-14">Number of Users</span>100 Users</li>
                                     <li><span class="ui-color-black-25 ui-font-14">Domains</span>1000 Domains</li>
                                     <li><span class="ui-color-black-25 ui-font-14">Projects</span>Unlimited Projects</li>

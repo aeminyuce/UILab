@@ -809,7 +809,7 @@
                 <div class="ui-row ui-sm-fluid">
                     <div class="ui-col-4">
                         <h4 class="ui-h4 ui-color-white-50 ui-m-30-b">Customer Service</h4>
-                        <ul class="ui-list-unstyled ui-list-spacer-10 ui-font-hoverline-2nd ui-font-18">
+                        <ul class="ui-list-unstyled ui-list-sp-10 ui-font-hoverline-2nd ui-font-18">
                             <li><a href="#">Order Status</a></li>
                             <li><a href="#">Shipping</a></li>
                             <li><a href="#">Contact References</a></li>
@@ -821,7 +821,7 @@
                     </div>
                     <div class="ui-col-4">
                         <h4 class="ui-h4 ui-color-white-50 ui-m-30-b">Who We Are</h4>
-                        <ul class="ui-list-unstyled ui-list-spacer-10 ui-font-hoverline-2nd ui-font-18">
+                        <ul class="ui-list-unstyled ui-list-sp-10 ui-font-hoverline-2nd ui-font-18">
                             <li><a href="#">Good Works</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Environmental</a></li>
@@ -832,7 +832,7 @@
                     </div>
                     <div class="ui-col-4">
                         <h4 class="ui-h4 ui-color-white-50 ui-m-30-b">Quick Links</h4>
-                        <ul class="ui-list-unstyled ui-list-spacer-10 ui-font-hoverline-2nd ui-font-18">
+                        <ul class="ui-list-unstyled ui-list-sp-10 ui-font-hoverline-2nd ui-font-18">
                             <li><a href="#">Educater &amp; Landscaper</a></li>
                             <li><a href="#">Discounts</a></li>
                             <li><a href="#">Become an Affiliate</a></li>

@@ -9,7 +9,7 @@
 
                 <div class="ui-align-l ui-p-10 ui-icons-no-opacity ui-icons-margin-10-r ui-form-lg ui-add-sidebar-l">
                     <h5 class="ui-h5 ui-color-white-50 ui-p-15 ui-m-5-b">LIBRARY</h5>
-                    <ul class="ui-list-unstyled ui-list-spacer-15 ui-font-16 ui-font-bold ui-block-2nd ui-ease-2nd-btn">
+                    <ul class="ui-list-unstyled ui-list-sp-15 ui-font-16 ui-font-bold ui-block-2nd ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-btn-ghost ui-p-15-h ui-circle" href="#">
                                 <svg class="ui-icon"><use href="#tv"/></svg>
@@ -51,7 +51,7 @@
                     <span class="ui-sp-30"></span>
 
                     <h5 class="ui-h5 ui-color-white-50 ui-p-15 ui-m-5-b">NEWS &amp; EVENTS</h5>
-                    <ul class="ui-list-unstyled ui-list-spacer-15 ui-color-white-50 ui-font-16 ui-block-2nd ui-ease-2nd-btn">
+                    <ul class="ui-list-unstyled ui-list-sp-15 ui-color-white-50 ui-font-16 ui-block-2nd ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-btn-ghost ui-p-15-h ui-circle" href="#">
                                 <svg class="ui-icon"><use href="#news"/></svg>

@@ -68,14 +68,14 @@
 
                     <div class="ui-tab-content">
                         <div class="ui-p-15-v ui-p-20-l">
-                            <ul class="ui-tabs ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn" data-ui-classes="ui-text">
+                            <ul class="ui-tabs ui-list-sp-15 ui-p-30-l ui-ease-2nd-btn" data-ui-classes="ui-text">
                                 <li>
                                     <a class="ui-tab ui-tab-toggle ui-opacity" href="#">
                                         <svg class="ui-toggle-icon ui-icon ui-m-10-r ui-right"><use href="#arrow-down"/></svg>
                                         Managers
                                     </a>
                                     <div class="ui-tab-content">
-                                        <ul class="ui-list-spacer-15 ui-p-20 ui-no-p-r ui-no-m ui-ease-2nd-btn">
+                                        <ul class="ui-list-sp-15 ui-p-20 ui-no-p-r ui-no-m ui-ease-2nd-btn">
                                             <li><a class="ui-opacity" href="#">Search</a></li>
                                             <li><a class="ui-opacity" href="#">Change Group</a></li>
                                             <li><a class="ui-opacity" href="#">Add/Remove Managers</a></li>
@@ -88,7 +88,7 @@
                                         Team Leaders
                                     </a>
                                     <div class="ui-tab-content">
-                                        <ul class="ui-list-spacer-15 ui-p-20 ui-no-p-r ui-no-m ui-ease-2nd-btn">
+                                        <ul class="ui-list-sp-15 ui-p-20 ui-no-p-r ui-no-m ui-ease-2nd-btn">
                                             <li><a class="ui-opacity" href="#">Search</a></li>
                                             <li><a class="ui-opacity" href="#">Change Team</a></li>
                                             <li><a class="ui-opacity" href="#">Add/Remove Team Leaders</a></li>
@@ -109,7 +109,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <div class="ui-p-15-v ui-p-20-l">
-                            <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
+                            <ul class="ui-list-sp-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">New Payment</a></li>
                                 <li><a class="ui-opacity" href="#">Recent Payments</a></li>
                                 <li><a class="ui-opacity" href="#">Last Month</a></li>
@@ -126,7 +126,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <div class="ui-p-15-v ui-p-20-l">
-                            <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
+                            <ul class="ui-list-sp-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">New Event</a></li>
                                 <li><a class="ui-opacity" href="#">Recent Activities</a></li>
                                 <li><a class="ui-opacity" href="#">This Week</a></li>
@@ -142,7 +142,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <div class="ui-p-15-v ui-p-20-l">
-                            <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
+                            <ul class="ui-list-sp-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">New Document</a></li>
                                 <li><a class="ui-opacity" href="#">Members</a></li>
                                 <li><a class="ui-opacity" href="#">Groups</a></li>
@@ -160,7 +160,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <div class="ui-p-15-v ui-p-20-l">
-                            <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
+                            <ul class="ui-list-sp-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">Sales</a></li>
                                 <li><a class="ui-opacity" href="#">Profit</a></li>
                                 <li><a class="ui-opacity" href="#">Registrations</a></li>
@@ -176,7 +176,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <div class="ui-p-15-v ui-p-20-l">
-                            <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
+                            <ul class="ui-list-sp-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">New Report</a></li>
                                 <li><a class="ui-opacity" href="#">Market Research</a></li>
                                 <li><a class="ui-opacity" href="#">Industry Data</a></li>
@@ -194,7 +194,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <div class="ui-p-15-v ui-p-20-l">
-                            <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
+                            <ul class="ui-list-sp-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">New Order</a></li>
                                 <li><a class="ui-opacity" href="#">Activity</a></li>
                                 <li><a class="ui-opacity" href="#">Delivered</a></li>
@@ -248,7 +248,7 @@
                         <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle ui-visible-sm">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                         </button>
-                        <ul class="ui-dropdown-menu ui-list-column-2 ui-has-icon ui-round ui-shadow-lg">
+                        <ul class="ui-dropdown-menu ui-list-col-2 ui-has-icon ui-round ui-shadow-lg">
                             <li>
                                 <a href="#"><b class="ui-list-icon">23</b> Waiting</a>
                             </li>

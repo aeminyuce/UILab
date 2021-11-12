@@ -147,7 +147,7 @@
                                     Join our<br class="ui-hidden-sm">huge platform<br class="ui-hidden-sm">
                                     <span class="ui-font-bold ui-font-38">today!</span>
                                 </h1>
-                                <ul class="ui-list-unstyled ui-list-spacer-10 ui-color-black-25 ui-font-18 ui-icons-sm ui-icons-margin-5-r ui-theme-sub">
+                                <ul class="ui-list-unstyled ui-list-sp-10 ui-color-black-25 ui-font-18 ui-icons-sm ui-icons-margin-5-r ui-theme-sub">
                                     <li>
                                         <svg class="ui-icon ui-text ui-hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Work and build around your team.

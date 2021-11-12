@@ -7,7 +7,7 @@
                 <h3 class="ui-h3">List Columns</h3>
                 <div class="ui-p-30-b">
                     <h5 class="ui-h5 ui-font-bold">2 Columns</h5>
-                    <ul class="ui-list-unstyled ui-list-column-2">
+                    <ul class="ui-list-unstyled ui-list-col-2">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
                         <li>Integer molestie lorem at massa</li>
@@ -19,7 +19,7 @@
                     </ul>
 
                     <h5 class="ui-h5 ui-font-bold">3 Columns</h5>
-                    <ul class="ui-list-unstyled ui-list-column-3">
+                    <ul class="ui-list-unstyled ui-list-col-3">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
                         <li>Integer molestie lorem at massa</li>
@@ -31,7 +31,7 @@
                     </ul>
 
                     <h5 class="ui-h5 ui-font-bold">4 Columns</h5>
-                    <ul class="ui-list-unstyled ui-list-column-4">
+                    <ul class="ui-list-unstyled ui-list-col-4">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
                         <li>Integer molestie lorem at massa</li>
@@ -43,7 +43,7 @@
                     </ul>
 
                     <h5 class="ui-h5 ui-font-bold">5 Columns</h5>
-                    <ul class="ui-list-unstyled ui-list-column-5">
+                    <ul class="ui-list-unstyled ui-list-col-5">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
                         <li>Integer molestie lorem at massa</li>
@@ -55,7 +55,7 @@
                     </ul>
 
                     <h5 class="ui-h5 ui-font-bold">6 Columns</h5>
-                    <ul class="ui-list-unstyled ui-list-column-6">
+                    <ul class="ui-list-unstyled ui-list-col-6">
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
                         <li>Integer molestie lorem at massa</li>
@@ -94,7 +94,7 @@
                 <div class="ui-row ui-p-30-b">
                     <div class="ui-col-12">
                         <h5 class="ui-h5 ui-font-bold">With Inline Lists</h5>
-                        <ul class="ui-list-inline ui-list-spacer-5">
+                        <ul class="ui-list-inline ui-list-sp-5">
                             <li>Lorem ipsum</li>
                             <li>dolor sit amet</li>
                             <li>Consectetur</li>
@@ -103,7 +103,7 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold">1px</h5>
-                        <ul class="ui-list-unstyled ui-list-spacer-1">
+                        <ul class="ui-list-unstyled ui-list-sp-1">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -111,7 +111,7 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold">2px</h5>
-                        <ul class="ui-list-unstyled ui-list-spacer-2">
+                        <ul class="ui-list-unstyled ui-list-sp-2">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -119,7 +119,7 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold">3px</h5>
-                        <ul class="ui-list-unstyled ui-list-spacer-3">
+                        <ul class="ui-list-unstyled ui-list-sp-3">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -127,7 +127,7 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold">4px</h5>
-                        <ul class="ui-list-unstyled ui-list-spacer-4">
+                        <ul class="ui-list-unstyled ui-list-sp-4">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -135,7 +135,7 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold">5px</h5>
-                        <ul class="ui-list-unstyled ui-list-spacer-5">
+                        <ul class="ui-list-unstyled ui-list-sp-5">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -143,7 +143,7 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold">10px</h5>
-                        <ul class="ui-list-unstyled ui-list-spacer-10">
+                        <ul class="ui-list-unstyled ui-list-sp-10">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -151,7 +151,7 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold">15px</h5>
-                        <ul class="ui-list-unstyled ui-list-spacer-15">
+                        <ul class="ui-list-unstyled ui-list-sp-15">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -159,7 +159,7 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold">20px</h5>
-                        <ul class="ui-list-unstyled ui-list-spacer-20">
+                        <ul class="ui-list-unstyled ui-list-sp-20">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -167,7 +167,7 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold">25px</h5>
-                        <ul class="ui-list-unstyled ui-list-spacer-25">
+                        <ul class="ui-list-unstyled ui-list-sp-25">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
@@ -175,7 +175,7 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold">30px</h5>
-                        <ul class="ui-list-unstyled ui-list-spacer-30">
+                        <ul class="ui-list-unstyled ui-list-sp-30">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Consectetur adipiscing elit</li>
                             <li>Integer molestie lorem at massa</li>
