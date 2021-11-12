@@ -3,7 +3,7 @@
 
 <main class="ui-container ui-no-gutter">
     <div class="ui-col-static ui-no-fluid">
-        <div class="ui-col-250 ui-set-relative ui-hidden-md">
+        <div class="ui-col-200 ui-set-relative ui-hidden-md">
 
             <div class="sidebar ui-full-h ui-set-fixed ui-set-l ui-padding-5 ui-fill-dark-100 ui-hidden-md ui-scroll-v ui-scrollbar-faded">
 
@@ -11,37 +11,37 @@
                     <h5 class="ui-h5 ui-color-white-50 ui-padding-15 ui-margin-5-b">LIBRARY</h5>
                     <ul class="ui-list-unstyled ui-list-spacer-15 ui-font-16 ui-font-bold ui-block-2nd ui-ease-2nd-btn">
                         <li>
-                            <a class="ui-btn ui-btn-ghost ui-circle" href="#">
+                            <a class="ui-btn ui-btn-ghost ui-padding-15-h ui-circle" href="#">
                                 <svg class="ui-icon"><use href="#tv"/></svg>
                                 TV Shows
                             </a>
                         </li>
                         <li>
-                            <a class="ui-btn ui-circle selected" href="#">
+                            <a class="ui-btn ui-padding-15-h ui-circle selected" href="#">
                                 <svg class="ui-icon"><use href="#film"/></svg>
                                 Films
                             </a>
                         </li>
                         <li>
-                            <a class="ui-btn ui-btn-ghost ui-circle" href="#">
+                            <a class="ui-btn ui-btn-ghost ui-padding-15-h ui-circle" href="#">
                                 <svg class="ui-icon"><use href="#trophy-star"/></svg>
                                 Sports
                             </a>
                         </li>
                         <li>
-                            <a class="ui-btn ui-btn-ghost ui-circle" href="#">
+                            <a class="ui-btn ui-btn-ghost ui-padding-15-h ui-circle" href="#">
                                 <svg class="ui-icon"><use href="#music"/></svg>
                                 Concerts
                             </a>
                         </li>
                         <li>
-                            <a class="ui-btn ui-btn-ghost ui-circle" href="#">
+                            <a class="ui-btn ui-btn-ghost ui-padding-15-h ui-circle" href="#">
                                 <svg class="ui-icon"><use href="#face-smile"/></svg>
                                 Comedy
                             </a>
                         </li>
                         <li>
-                            <a class="ui-btn ui-btn-ghost ui-circle" href="#">
+                            <a class="ui-btn ui-btn-ghost ui-padding-15-h ui-circle" href="#">
                                 <svg class="ui-icon"><use href="#video"/></svg>
                                 Others
                             </a>
@@ -53,19 +53,19 @@
                     <h5 class="ui-h5 ui-color-white-50 ui-padding-15 ui-margin-5-b">NEWS &amp; EVENTS</h5>
                     <ul class="ui-list-unstyled ui-list-spacer-15 ui-color-white-50 ui-font-16 ui-block-2nd ui-ease-2nd-btn">
                         <li>
-                            <a class="ui-btn ui-btn-ghost ui-circle" href="#">
+                            <a class="ui-btn ui-btn-ghost ui-padding-15-h ui-circle" href="#">
                                 <svg class="ui-icon"><use href="#news"/></svg>
                                 News
                             </a>
                         </li>
                         <li>
-                            <a class="ui-btn ui-btn-ghost ui-circle" href="#">
+                            <a class="ui-btn ui-btn-ghost ui-padding-15-h ui-circle" href="#">
                                 <svg class="ui-icon"><use href="#network"/></svg>
                                 Community
                             </a>
                         </li>
                         <li>
-                            <a class="ui-btn ui-btn-ghost ui-circle" href="#">
+                            <a class="ui-btn ui-btn-ghost ui-padding-15-h ui-circle" href="#">
                                 <svg class="ui-icon"><use href="#calendar-days"/></svg>
                                 Events
                             </a>
