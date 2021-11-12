@@ -6594,6 +6594,7 @@ html:not(.ui-ie) .ui-steps-bar li {
 }
 .ui-steps-bar li:before {
   content: "";
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 11px;
   text-align: center;

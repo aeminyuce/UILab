@@ -82,7 +82,7 @@
         <div class="ui-fixed ui-p-10-t ui-theme-farmer2">
             <div class="ui-row ui-no-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
                 <div class="ui-col-12 ui-color-black-50 ui-xs-align-l ui-align-c ui-ease-1st-btn">
-                    <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-m-1-b ui-border-b ui-text ui-border-lg ui-stroke active">
+                    <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-m-1-b ui-border-b ui-text ui-border-lg ui-stroke ui-active">
                         <svg class="ui-icon"><use href="#factory"/></svg>
                         Long Term Investment
                     </button>
@@ -340,7 +340,7 @@
             <div class="ui-fixed">
                 <div class="ui-row ui-no-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
                     <div class="ui-col-12 ui-color-black-50 ui-xs-align-l ui-align-c ui-ease-1st-btn">
-                        <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-m-1-b ui-border-b ui-text ui-border-lg ui-stroke active">
+                        <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-m-1-b ui-border-b ui-text ui-border-lg ui-stroke ui-active">
                             <svg class="ui-icon"><use href="#building"/></svg>
                             Company
                         </button>

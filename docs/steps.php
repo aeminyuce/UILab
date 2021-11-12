@@ -7,21 +7,21 @@
 
                 <div class="ui-p-30-b">
                     <ul class="ui-steps-bar">
-                        <li class="active"></li>
+                        <li class="ui-active"></li>
                         <li></li>
                         <li></li>
                     </ul>
                     <span class="ui-sp-15"></span>
                     <ul class="ui-steps-bar ui-theme-yellow ui-text">
                         <li></li>
-                        <li class="active"></li>
+                        <li class="ui-active"></li>
                         <li></li>
                     </ul>
                 </div>
 
                 <div class="ui-p-30-v">
                     <ul class="ui-steps-bar">
-                        <li class="active">Step Name Here</li>
+                        <li class="ui-active">Step Name Here</li>
                         <li>Step Name Here</li>
                         <li>Step Name Here</li>
                     </ul>
@@ -29,7 +29,7 @@
                     <ul class="ui-steps-bar ui-theme-yellow ui-text">
                         <li>Step Name Here</li>
                         <li>Step Name Here</li>
-                        <li class="active">Step Name Here</li>
+                        <li class="ui-active">Step Name Here</li>
                     </ul>
                     <span class="ui-sp-15"></span>
                     <ul class="ui-steps-bar ui-theme-yellow ui-text">
@@ -42,7 +42,7 @@
                     <ul class="ui-steps-bar">
                         <li>Step Name Here</li>
                         <li>Step Name Here</li>
-                        <li class="active">Step Name Here</li>
+                        <li class="ui-active">Step Name Here</li>
                         <li>Step Name Here</li>
                         <li>Step Name Here</li>
                     </ul>
@@ -54,7 +54,7 @@
                             <svg class="ui-icon ui-m-3-r"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
-                        <li class="active">
+                        <li class="ui-active">
                             <svg class="ui-icon ui-m-3-r"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
@@ -76,7 +76,7 @@
                             <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                             Step Name Here
                         </li>
-                        <li class="active">
+                        <li class="ui-active">
                             <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                             Step Name Here
                         </li>
@@ -103,7 +103,7 @@
                             <span data-ui-tooltip title="Completed"></span>
                             Step Name Here
                         </li>
-                        <li class="active">
+                        <li class="ui-active">
                             <span data-ui-tooltip title="Completed"></span>
                             Step Name Here
                         </li>
@@ -120,28 +120,28 @@
 
                     <div class="ui-p-30-b">
                         <ul class="ui-steps-bar">
-                            <li class="active"></li>
+                            <li class="ui-active"></li>
                             <li></li>
                             <li></li>
                         </ul>
                         <span class="ui-sp-15"></span>
                         <ul class="ui-steps-bar ui-theme-yellow ui-text">
                             <li></li>
-                            <li class="active"></li>
+                            <li class="ui-active"></li>
                             <li></li>
                         </ul>
                     </div>
 
                     <div class="ui-p-30-v">
                         <ul class="ui-steps-bar">
-                            <li class="active">Step Name Here</li>
+                            <li class="ui-active">Step Name Here</li>
                             <li>Step Name Here</li>
                             <li>Step Name Here</li>
                         </ul>
                         <span class="ui-sp-15"></span>
                         <ul class="ui-steps-bar ui-theme-yellow ui-text">
                             <li>Step Name Here</li>
-                            <li class="active">Step Name Here</li>
+                            <li class="ui-active">Step Name Here</li>
                             <li>Step Name Here</li>
                         </ul>
                     </div>
@@ -150,7 +150,7 @@
                         <ul class="ui-steps-bar">
                             <li>Step Name Here</li>
                             <li>Step Name Here</li>
-                            <li class="active">Step Name Here</li>
+                            <li class="ui-active">Step Name Here</li>
                             <li>Step Name Here</li>
                             <li>Step Name Here</li>
                         </ul>
@@ -162,7 +162,7 @@
                                 <svg class="ui-icon ui-m-3-r"><use href="#check-circle"/></svg>
                                 Step Name Here
                             </li>
-                            <li class="active">
+                            <li class="ui-active">
                                 <svg class="ui-icon ui-m-3-r"><use href="#check-circle"/></svg>
                                 Step Name Here
                             </li>
@@ -184,7 +184,7 @@
                                 <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                                 Step Name Here
                             </li>
-                            <li class="active">
+                            <li class="ui-active">
                                 <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
                                 Step Name Here
                             </li>
@@ -211,7 +211,7 @@
                                 <span data-ui-tooltip title="Completed"></span>
                                 Step Name Here
                             </li>
-                            <li class="active">
+                            <li class="ui-active">
                                 <span data-ui-tooltip title="Completed"></span>
                                 Step Name Here
                             </li>

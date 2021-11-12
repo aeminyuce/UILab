@@ -45,7 +45,7 @@
                             <div class="ui-row ui-p-20 ui-form-lg">
                                 <div class="ui-col-12">
                                     <h3 class="ui-h3 ui-m-30-b">Create your account</h3>
-                                    <p class="ui-color-black-25 large">Sign up to create, discover and connect with the global community.</p>
+                                    <p class="ui-color-black-25 ui-font-16">Sign up to create, discover and connect with the global community.</p>
                                 </div>
                                 <div class="ui-col-6">
 

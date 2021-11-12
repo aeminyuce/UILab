@@ -30,7 +30,7 @@
 
         html:not(.ui-ie) & { flex-basis: 100%; }
         &:before {
-            content: ""; font-weight: @font-bold; font-size: @font-11; text-align: center; ._bg-var(body-bg); width: @steps-active-size; height: @steps-active-size; margin: @steps-margin-v auto; display: block; border: @steps-line-size solid @no-color; border-radius: 50%; position: relative; z-index: 1;
+            content: ""; box-sizing: border-box; font-weight: @font-bold; font-size: @font-11; text-align: center; ._bg-var(body-bg); width: @steps-active-size; height: @steps-active-size; margin: @steps-margin-v auto; display: block; border: @steps-line-size solid @no-color; border-radius: 50%; position: relative; z-index: 1;
 
             .ui-card & { ._bg-var(card-bg); }
         }

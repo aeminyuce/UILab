@@ -67,7 +67,7 @@
                     </button>
 
                     <div class="ui-tab-content">
-                        <div class="ui-p-15-v ui-p-3-l">
+                        <div class="ui-p-15-v ui-p-20-l">
                             <ul class="ui-tabs ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn" data-ui-classes="ui-text">
                                 <li>
                                     <a class="ui-tab ui-tab-toggle ui-opacity" href="#">
@@ -108,7 +108,7 @@
                         Payments
                     </button>
                     <div class="ui-tab-content">
-                        <div class="ui-p-15-v ui-p-3-l">
+                        <div class="ui-p-15-v ui-p-20-l">
                             <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">New Payment</a></li>
                                 <li><a class="ui-opacity" href="#">Recent Payments</a></li>
@@ -125,7 +125,7 @@
                         Events
                     </button>
                     <div class="ui-tab-content">
-                        <div class="ui-p-15-v ui-p-3-l">
+                        <div class="ui-p-15-v ui-p-20-l">
                             <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">New Event</a></li>
                                 <li><a class="ui-opacity" href="#">Recent Activities</a></li>
@@ -141,7 +141,7 @@
                         Documents
                     </button>
                     <div class="ui-tab-content">
-                        <div class="ui-p-15-v ui-p-3-l">
+                        <div class="ui-p-15-v ui-p-20-l">
                             <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">New Document</a></li>
                                 <li><a class="ui-opacity" href="#">Members</a></li>
@@ -159,7 +159,7 @@
                         Statistics
                     </button>
                     <div class="ui-tab-content">
-                        <div class="ui-p-15-v ui-p-3-l">
+                        <div class="ui-p-15-v ui-p-20-l">
                             <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">Sales</a></li>
                                 <li><a class="ui-opacity" href="#">Profit</a></li>
@@ -175,7 +175,7 @@
                         Reports
                     </button>
                     <div class="ui-tab-content">
-                        <div class="ui-p-15-v ui-p-3-l">
+                        <div class="ui-p-15-v ui-p-20-l">
                             <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">New Report</a></li>
                                 <li><a class="ui-opacity" href="#">Market Research</a></li>
@@ -193,7 +193,7 @@
                         Orders
                     </button>
                     <div class="ui-tab-content">
-                        <div class="ui-p-15-v ui-p-3-l">
+                        <div class="ui-p-15-v ui-p-20-l">
                             <ul class="ui-list-spacer-15 ui-p-30-l ui-ease-2nd-btn">
                                 <li><a class="ui-opacity" href="#">New Order</a></li>
                                 <li><a class="ui-opacity" href="#">Activity</a></li>
@@ -698,7 +698,7 @@
                                                     <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
                                                             <div class="ui-font-18">Pending</div>
-                                                            <span class="ui-color-black-25 large">Total: 45%</span>
+                                                            <span class="ui-color-black-25 ui-font-16">Total: 45%</span>
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 ui-align-r">
@@ -721,7 +721,7 @@
                                                     <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
                                                             <div class="ui-font-18">Paused</div>
-                                                            <span class="ui-color-black-25 large">Total: 5%</span>
+                                                            <span class="ui-color-black-25 ui-font-16">Total: 5%</span>
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 ui-align-r">
@@ -744,7 +744,7 @@
                                                     <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
                                                             <div class="ui-font-18">Completed</div>
-                                                            <span class="ui-color-black-25 large">Total: 80%</span>
+                                                            <span class="ui-color-black-25 ui-font-16">Total: 80%</span>
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 ui-align-r">
@@ -767,7 +767,7 @@
                                                     <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
                                                         <div class="ui-col-12">
                                                             <div class="ui-align-l ui-font-18">On Payment</div>
-                                                            <span class="ui-color-black-25 large">Total: 67%</span>
+                                                            <span class="ui-color-black-25 ui-font-16">Total: 67%</span>
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 ui-align-r">
@@ -813,8 +813,8 @@
                                     <h4 class="ui-h4 ui-align-l ui-m-10-t">Activity</h4>
                                     <div class="ui-col-static ui-no-fluid">
                                         <div class="ui-row ui-row ui-no-row-gap-h ui-row-gap-md-v">
-                                            <div class="ui-col-12 large">
-                                                <div class="large ui-font-bold">Total Progress</div>
+                                            <div class="ui-col-12 ui-font-16">
+                                                <div class="ui-font-16 ui-font-bold">Total Progress</div>
                                                 <span class="ui-color-black-25">23% Change</span>
                                             </div>
                                         </div>
@@ -830,7 +830,7 @@
                                                     Payments
                                                 </strong>
                                                 <svg viewBox="0 0 160 160">
-                                                    <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
+                                                    <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
                                                     <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-ui-percent="69" />
                                                 </svg>
                                             </div>
@@ -1251,7 +1251,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"/></svg>5:S
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#clock"/></svg>6:P
                                                             </li>
                                                             <li>
@@ -1271,7 +1271,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="#alert-circle"/></svg>2:W
                                                             </li>
                                                             <li>
@@ -1318,7 +1318,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#check-circle"/></svg>6:P
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="#clock"/></svg>7:C
                                                             </li>
                                                         </ul>
@@ -1347,7 +1347,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"/></svg>5:S
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#clock"/></svg>>6:P
                                                             </li>
                                                             <li>
@@ -1380,7 +1380,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"/></svg>5:S
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#clock"/></svg>6:P
                                                             </li>
                                                             <li>
@@ -1400,7 +1400,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="#alert-circle"/></svg>2:W
                                                             </li>
                                                             <li>
@@ -1447,7 +1447,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#check-circle"/></svg>6:P
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="#clock"/></svg>7:C
                                                             </li>
                                                         </ul>
@@ -1476,7 +1476,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"/></svg>5:S
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#clock"/></svg>>6:P
                                                             </li>
                                                             <li>
@@ -1508,7 +1508,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"/></svg>5:S
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#clock"/></svg>6:P
                                                             </li>
                                                             <li>
@@ -1528,7 +1528,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="#alert-circle"/></svg>2:W
                                                             </li>
                                                             <li>
@@ -1575,7 +1575,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#check-circle"/></svg>6:P
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="#clock"/></svg>7:C
                                                             </li>
                                                         </ul>
@@ -1604,7 +1604,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"/></svg>5:S
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#clock"/></svg>>6:P
                                                             </li>
                                                             <li>
@@ -1636,7 +1636,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"/></svg>5:S
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#clock"/></svg>6:P
                                                             </li>
                                                             <li>
@@ -1656,7 +1656,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"/></svg>1:S
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="#alert-circle"/></svg>2:W
                                                             </li>
                                                             <li>
@@ -1703,7 +1703,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#check-circle"/></svg>6:P
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="#clock"/></svg>7:C
                                                             </li>
                                                         </ul>
@@ -1732,7 +1732,7 @@
                                                             <li>
                                                                 <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"/></svg>5:S
                                                             </li>
-                                                            <li class="active">
+                                                            <li class="ui-active">
                                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#clock"/></svg>>6:P
                                                             </li>
                                                             <li>
@@ -1804,7 +1804,7 @@
                             </button>
                             <input class="ui-required" type="text" placeholder="Search">
                         </div>
-                        <p class="ui-required-msg large">Please, enter a keyword.</p>
+                        <p class="ui-required-msg ui-font-16">Please, enter a keyword.</p>
                     </div>
                 </div>
                 <div class="ui-col-100 ui-col-xs-50 ui-p-10-v">

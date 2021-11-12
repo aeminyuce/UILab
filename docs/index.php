@@ -83,7 +83,7 @@
         /* check class names *
         ui.onload(function () {
             ui.ajax({
-                url : 'alerts.php',
+                url : 'countdown.php',
                 callback: function (status, response) {}
             });
         });
@@ -94,7 +94,7 @@
             function () {
                 console.log(ui.ajax.classNames);
             });
-        */
+        **/
     </script>
 
 </head>

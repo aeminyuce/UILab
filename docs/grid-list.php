@@ -87,7 +87,7 @@
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
-                                            <li class="active">
+                                            <li class="ui-active">
                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#clock"></svg>6:P
                                             </li>
                                             <li>
@@ -107,7 +107,7 @@
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
-                                            <li class="active">
+                                            <li class="ui-active">
                                                 <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="#clock"></svg>2:W
                                             </li>
                                             <li>
@@ -154,7 +154,7 @@
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#check-circle"></svg>6:P
                                             </li>
-                                            <li class="active">
+                                            <li class="ui-active">
                                                 <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="#clock"></svg>7:C
                                             </li>
                                         </ul>
@@ -183,7 +183,7 @@
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
-                                            <li class="active">
+                                            <li class="ui-active">
                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#clock"></svg>6:P
                                             </li>
                                             <li>
@@ -215,7 +215,7 @@
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
-                                            <li class="active">
+                                            <li class="ui-active">
                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#clock"></svg>6:P
                                             </li>
                                             <li>
@@ -235,7 +235,7 @@
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
-                                            <li class="active">
+                                            <li class="ui-active">
                                                 <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="#clock"></svg>2:W
                                             </li>
                                             <li>
@@ -282,7 +282,7 @@
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#check-circle"></svg>6:P
                                             </li>
-                                            <li class="active">
+                                            <li class="ui-active">
                                                 <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="#clock"></svg>7:C
                                             </li>
                                         </ul>
@@ -311,7 +311,7 @@
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
-                                            <li class="active">
+                                            <li class="ui-active">
                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#clock"></svg>6:P
                                             </li>
                                             <li>
@@ -343,7 +343,7 @@
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
-                                            <li class="active">
+                                            <li class="ui-active">
                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#clock"></svg>6:P
                                             </li>
                                             <li>
@@ -363,7 +363,7 @@
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
-                                            <li class="active">
+                                            <li class="ui-active">
                                                 <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="#clock"></svg>2:W
                                             </li>
                                             <li>
@@ -410,7 +410,7 @@
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#check-circle"></svg>6:P
                                             </li>
-                                            <li class="active">
+                                            <li class="ui-active">
                                                 <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="#clock"></svg>7:C
                                             </li>
                                         </ul>
@@ -439,7 +439,7 @@
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="#check-circle"></svg>5:S
                                             </li>
-                                            <li class="active">
+                                            <li class="ui-active">
                                                 <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="#clock"></svg>6:P
                                             </li>
                                             <li>

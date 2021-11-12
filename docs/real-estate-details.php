@@ -95,11 +95,11 @@
                                 <div class="ui-col-5x ui-col-sm-4 ui-col-xs-6">
                                     <div class="ui-donut-chart ui-ease-donut-chart">
                                         <strong>
-                                            <span class="large ui-color-black-25">Interior</span>
+                                            <span class="ui-font-16 ui-color-black-25">Interior</span>
                                             <span class="ui-sp-2"></span>4,9/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
-                                            <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
+                                            <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
                                             <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-ui-percent="96" />
                                         </svg>
                                     </div>
@@ -107,11 +107,11 @@
                                 <div class="ui-col-5x ui-col-sm-4 ui-col-xs-6">
                                     <div class="ui-donut-chart ui-ease-donut-chart">
                                         <strong>
-                                            <span class="large ui-color-black-25">Exterior</span>
+                                            <span class="ui-font-16 ui-color-black-25">Exterior</span>
                                             <span class="ui-sp-2"></span>4/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
-                                            <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
+                                            <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
                                             <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="88" />
                                         </svg>
                                     </div>
@@ -119,11 +119,11 @@
                                 <div class="ui-col-5x ui-col-sm-4 ui-col-xs-6">
                                     <div class="ui-donut-chart ui-ease-donut-chart">
                                         <strong>
-                                            <span class="large ui-color-black-25">Quality</span>
+                                            <span class="ui-font-16 ui-color-black-25">Quality</span>
                                             <span class="ui-sp-2"></span>4/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
-                                            <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
+                                            <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
                                             <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="86" />
                                         </svg>
                                     </div>
@@ -131,11 +131,11 @@
                                 <div class="ui-col-5x ui-col-sm-4 ui-col-xs-6">
                                     <div class="ui-donut-chart ui-ease-donut-chart">
                                         <strong>
-                                            <span class="large ui-color-black-25">Savings</span>
+                                            <span class="ui-font-16 ui-color-black-25">Savings</span>
                                             <span class="ui-sp-2"></span>3.9/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
-                                            <circle r="69.85699" cy="80" cx="80" class="donut-bg" />
+                                            <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
                                             <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="80" />
                                         </svg>
                                     </div>

@@ -67,7 +67,7 @@
                                 <svg class="ui-icon ui-icon-xl ui-theme-sub ui-text"><use href="#info-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="ui-col-12 ui-sm-align-c large">
+                                <div class="ui-col-12 ui-sm-align-c ui-font-16">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -89,7 +89,7 @@
                                         <svg class="ui-icon ui-icon-xl ui-theme-sub ui-text"><use href="#info-circle-fill"/></svg>
                                     </div>
                                     <div class="ui-row">
-                                        <div class="ui-col-12 ui-sm-align-c large">
+                                        <div class="ui-col-12 ui-sm-align-c ui-font-16">
                                             Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                         </div>
                                     </div>
@@ -109,7 +109,7 @@
                                 <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="ui-col-12 ui-sm-align-c large">
+                                <div class="ui-col-12 ui-sm-align-c ui-font-16">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -125,7 +125,7 @@
                                 <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="ui-col-12 ui-sm-align-c large">
+                                <div class="ui-col-12 ui-sm-align-c ui-font-16">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -141,7 +141,7 @@
                                 <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="ui-col-12 ui-sm-align-c large">
+                                <div class="ui-col-12 ui-sm-align-c ui-font-16">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -157,7 +157,7 @@
                                 <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="ui-col-12 ui-sm-align-c large">
+                                <div class="ui-col-12 ui-sm-align-c ui-font-16">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -173,7 +173,7 @@
                                 <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="ui-col-12 ui-sm-align-c large">
+                                <div class="ui-col-12 ui-sm-align-c ui-font-16">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -189,7 +189,7 @@
                                 <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
-                                <div class="ui-col-12 ui-sm-align-c large">
+                                <div class="ui-col-12 ui-sm-align-c ui-font-16">
                                     Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.
                                 </div>
                             </div>
@@ -209,7 +209,7 @@
                             <svg class="ui-icon ui-icon-lg ui-color-green"><use href="#comment"/></svg>
                             Message Title
                         </h4>
-                        <p class="ui-large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="ui-font-16">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                     <div class="ui-card-danger ui-p-15 ui-round ui-shadow">
@@ -220,7 +220,7 @@
                             <svg class="ui-icon ui-icon-lg ui-color-red"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
-                        <p class="ui-large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="ui-font-16">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                     <div class="ui-card-warning ui-p-15 ui-round">
@@ -231,7 +231,7 @@
                             <svg class="ui-icon ui-icon-lg ui-color-yellow"><use href="#comment"/></svg>
                             Message Title
                         </h4>
-                        <p class="ui-large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="ui-font-16">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                     <div class="ui-card-info ui-p-15 ui-round ui-shadow">
@@ -242,7 +242,7 @@
                             <svg class="ui-icon ui-icon-lg ui-color-black-50"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
-                        <p class="ui-large">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
+                        <p class="ui-font-16">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
                     </div>
 
                 </div>

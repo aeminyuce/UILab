@@ -430,7 +430,7 @@
                             </button>
                             <input class="ui-required" type="text" placeholder="Search">
                         </div>
-                        <p class="ui-required-msg large">Please, enter a keyword.</p>
+                        <p class="ui-required-msg ui-font-16">Please, enter a keyword.</p>
                     </div>
                 </div>
                 <div class="ui-col-100 ui-col-xs-50 ui-p-10-v">

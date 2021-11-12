@@ -60,7 +60,7 @@
                                             <span class="ui-scroll-v ui-m-30 ui-set-absolute ui-set-all">
                                                 <span class="ui-font-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                                 <br><br>
-                                                <span class="ui-color-white-25 large">
+                                                <span class="ui-color-white-25 ui-font-16">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                     Curabitur consequat gravida posuere.
                                                     Etiam luctus ex vitae diam tempor, a egestas magna posuere.
@@ -156,7 +156,7 @@
                                             <span class="ui-scroll-v ui-m-30 ui-set-absolute ui-set-all">
                                                 <span class="ui-font-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                                 <br><br>
-                                                <span class="ui-color-white-25 large">
+                                                <span class="ui-color-white-25 ui-font-16">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                     Curabitur consequat gravida posuere.
                                                     Etiam luctus ex vitae diam tempor, a egestas magna posuere.

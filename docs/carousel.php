@@ -39,7 +39,7 @@
 
                                             <div class="ui-carousel-animate ui-bring-r ui-ease-layout ui-ease-slow">
                                                 <h3 class="ui-h3">1- Carousel Html Title</h3>
-                                                <p class="large ui-font-readable">
+                                                <p class="ui-font-16 ui-font-readable">
                                                     Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
                                                     <br><br>
                                                     Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
@@ -84,7 +84,7 @@
 
                                             <div class="ui-carousel-animate ui-bring-r ui-ease-layout ui-ease-slow">
                                                 <h3 class="ui-h3">2- Carousel Html Title</h3>
-                                                <p class="large ui-font-readable">
+                                                <p class="ui-font-16 ui-font-readable">
                                                     Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
                                                     <br><br>
                                                     Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
@@ -129,7 +129,7 @@
 
                                             <div class="ui-carousel-animate ui-bring-r ui-ease-layout ui-ease-slow">
                                                 <h3 class="ui-h3">3- Carousel Html Title</h3>
-                                                <p class="large ui-font-readable">
+                                                <p class="ui-font-16 ui-font-readable">
                                                     Maecenas blandit est ultrices eleifend commodo. Integer eget eros a orci ornare tincidunt et at dolor. Suspendisse nec augue vel mauris malesuada aliquet. Quisque id tincidunt libero.
                                                     <br><br>
                                                     Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
