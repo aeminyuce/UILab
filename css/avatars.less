@@ -1,0 +1,65 @@
+// out: false
+/* avatars */ @import (reference) 'ui.less';
+
+@avatar-lg-icon-size:                34px;
+@avatar-sm-icon-size:                18px;
+@avatar-xs-icon-size:                14px;
+
+@avatar-over-size:                   15px;
+
+@avatar-bg:                          fade(@black, 8%);
+@avatar-bg-dark:                     fade(@white, 8%);
+
+._global-vars () {
+    --ui-avatar-bg: @avatar-bg;
+}
+._global-vars-dark () {
+    --ui-avatar-bg: @avatar-bg-dark;
+}
+
+.ui-avatar {
+    font-size: @font-16; width: @photo-img-default; height: @photo-img-default;
+
+    &,&-lg,&-sm,&-xs { text-align: center; vertical-align: middle; position: relative; }
+
+    &-lg,&-sm,&-xs {
+        &:not(img) {
+            text-decoration: none; ._bg-var(avatar-bg); display: inline-block;
+
+            & > span,& > svg { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+        }
+    }
+
+    &-lg {
+        font-size: @font-24; width: @photo-img-lg; height: @photo-img-lg;
+
+        .ui-icon { ._icon(@avatar-lg-icon-size); }
+    }
+    &-sm {
+        font-size: @font-size; width: @photo-img-sm; height: @photo-img-sm;
+
+        .ui-icon { ._icon(@avatar-sm-icon-size); }
+    }
+    &-xs {
+        font-size: @font-12; width: @photo-img-xs; height: @photo-img-xs;
+
+        .ui-icon { ._icon(@avatar-xs-icon-size); }
+    }
+
+    &-holder {
+        vertical-align: middle; display: inline-block;
+
+        & > * {
+            &:not(.ui-btn):not(:first-child) { margin-left: -@avatar-over-size; }
+        }
+
+        & > a { text-decoration: none; }
+
+        [class*="ui-avatar"] {
+            &:not([class*="ui-stroke"]) { ._border-color-var(body-bg); }
+
+            .ui-dropdown & { ._border-color-var(highlighted); }
+            .ui-card & { ._border-color-var(card-bg); }
+        }
+    }
+}

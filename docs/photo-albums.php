@@ -48,7 +48,7 @@
                                 </div>
                                 <div class="ui-col-6 ui-align-r ui-xs-align-c">
                                     <span class="ui-color-black-25 ui-font-16 ui-inline-block">23 Jun - 18 Aug, 2012</span>
-                                    <img class="ui-img-photo ui-img-photo-sm ui-circle ui-margin-15-l" src="img/profile-image.jpg" alt="">
+                                    <img class="ui-avatar ui-avatar-sm ui-circle ui-margin-15-l" src="img/profile-image.jpg" alt="">
                                 </div>
                             </div>
 
@@ -144,7 +144,7 @@
                                 </div>
                                 <div class="ui-col-6 ui-align-r ui-xs-align-c">
                                     <span class="ui-color-black-25 ui-font-16 ui-inline-block">3 Sep - 18 Nov, 2021</span>
-                                    <img class="ui-img-photo ui-img-photo-sm ui-circle ui-margin-15-l" src="img/profile-image3.jpg" alt="">
+                                    <img class="ui-avatar ui-avatar-sm ui-circle ui-margin-15-l" src="img/profile-image3.jpg" alt="">
                                 </div>
                             </div>
 

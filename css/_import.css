@@ -39,7 +39,7 @@
   --ui-table-stripe-bg: hsla(0, 0%, 0%, 0.045);
   --ui-table-hover-bg: hsla(0, 0%, 0%, 0.1);
   --ui-breadcrumbs-sep-color: hsla(0, 0%, 0%, 0.25);
-  --ui-img-photo-bg: hsla(0, 0%, 0%, 0.08);
+  --ui-avatar-bg: hsla(0, 0%, 0%, 0.08);
   --ui-progress-bar-bg: hsla(0, 0%, 0%, 0.075);
   --ui-progress-bar-inner-bg: hsla(0, 0%, 0%, 0.15);
   --ui-scrollbar-scroll-bg: hsl(0, 0%, 92%);
@@ -112,7 +112,7 @@
   --ui-table-stripe-bg: hsla(0, 0%, 100%, 0.035);
   --ui-table-hover-bg: hsla(0, 0%, 100%, 0.08);
   --ui-breadcrumbs-sep-color: hsla(0, 0%, 100%, 0.25);
-  --ui-img-photo-bg: hsla(0, 0%, 100%, 0.08);
+  --ui-avatar-bg: hsla(0, 0%, 100%, 0.08);
   --ui-progress-bar-bg: hsla(0, 0%, 0%, 0.45);
   --ui-progress-bar-inner-bg: hsla(0, 0%, 100%, 0.15);
   --ui-scrollbar-scroll-bg: hsl(218, 16%, 18%);
@@ -6099,41 +6099,41 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   height: 14px;
   stroke-width: 36px;
 }
-.ui-list-group [class*="ui-has-photo"] [class*="ui-img-photo"] {
+.ui-list-group [class*="ui-has-avatar"] [class*="ui-avatar"] {
   position: absolute;
   top: 10px;
   left: 10px;
 }
-.ui-list-group .ui-has-photo-lg li,
-.ui-list-group .ui-has-photo-lg li > a:not(.ui-list-url) {
+.ui-list-group .ui-has-avatar-lg li,
+.ui-list-group .ui-has-avatar-lg li > a:not(.ui-list-url) {
   min-height: 100px;
   padding-left: 100px;
 }
-.ui-list-group .ui-has-photo-lg li > a:not(.ui-list-url) {
+.ui-list-group .ui-has-avatar-lg li > a:not(.ui-list-url) {
   margin-left: -100px;
 }
-.ui-list-group .ui-has-photo li,
-.ui-list-group .ui-has-photo li > a:not(.ui-list-url) {
+.ui-list-group .ui-has-avatar li,
+.ui-list-group .ui-has-avatar li > a:not(.ui-list-url) {
   min-height: 70px;
   padding-left: 70px;
 }
-.ui-list-group .ui-has-photo li > a:not(.ui-list-url) {
+.ui-list-group .ui-has-avatar li > a:not(.ui-list-url) {
   margin-left: -70px;
 }
-.ui-list-group .ui-has-photo-sm li,
-.ui-list-group .ui-has-photo-sm li > a:not(.ui-list-url) {
+.ui-list-group .ui-has-avatar-sm li,
+.ui-list-group .ui-has-avatar-sm li > a:not(.ui-list-url) {
   min-height: 68px;
   padding-left: 68px;
 }
-.ui-list-group .ui-has-photo-sm li > a:not(.ui-list-url) {
+.ui-list-group .ui-has-avatar-sm li > a:not(.ui-list-url) {
   margin-left: -68px;
 }
-.ui-list-group .ui-has-photo-xs li,
-.ui-list-group .ui-has-photo-xs li > a:not(.ui-list-url) {
+.ui-list-group .ui-has-avatar-xs li,
+.ui-list-group .ui-has-avatar-xs li > a:not(.ui-list-url) {
   min-height: 62px;
   padding-left: 62px;
 }
-.ui-list-group .ui-has-photo-xs li > a:not(.ui-list-url) {
+.ui-list-group .ui-has-avatar-xs li > a:not(.ui-list-url) {
   margin-left: -62px;
 }
 /* cards */
@@ -6390,81 +6390,90 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
     margin-bottom: 5px;
   }
 }
-/* photo images */
-.ui-photos-holder {
-  vertical-align: middle;
-  display: inline-block;
+/* avatars */
+.ui-avatar {
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
 }
-.ui-photos-holder > *:not(.ui-btn):not(:first-child) {
-  margin-left: -15px;
-}
-.ui-photos-holder > a {
-  text-decoration: none;
-}
-.ui-photos-holder [class*="ui-img-photo"]:not([class*="ui-stroke"]) {
-  border-color: hsl(0, 0%, 98%);
-  border-color: var(--ui-body-bg);
-}
-.ui-dropdown .ui-photos-holder [class*="ui-img-photo"] {
-  border-color: hsl(0, 0%, 100%);
-  border-color: var(--ui-highlighted);
-}
-.ui-card .ui-photos-holder [class*="ui-img-photo"] {
-  border-color: hsl(0, 0%, 100%);
-  border-color: var(--ui-card-bg);
-}
-[class*="ui-img-photo"] {
+.ui-avatar,
+.ui-avatar-lg,
+.ui-avatar-sm,
+.ui-avatar-xs {
   text-align: center;
   vertical-align: middle;
   position: relative;
 }
-[class*="ui-img-photo"]:not(img) {
+.ui-avatar-lg:not(img),
+.ui-avatar-sm:not(img),
+.ui-avatar-xs:not(img) {
   text-decoration: none;
   background-color: hsla(0, 0%, 0%, 0.08);
-  background-color: var(--ui-img-photo-bg);
+  background-color: var(--ui-avatar-bg);
   display: inline-block;
 }
-[class*="ui-img-photo"]:not(img) > span,
-[class*="ui-img-photo"]:not(img) > svg {
+.ui-avatar-lg:not(img) > span,
+.ui-avatar-sm:not(img) > span,
+.ui-avatar-xs:not(img) > span,
+.ui-avatar-lg:not(img) > svg,
+.ui-avatar-sm:not(img) > svg,
+.ui-avatar-xs:not(img) > svg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.ui-img-photo {
-  font-size: 16px;
-  width: 50px;
-  height: 50px;
-}
-.ui-img-photo-lg {
+.ui-avatar-lg {
   font-size: 24px;
   width: 80px;
   height: 80px;
 }
-.ui-img-photo-lg .ui-icon {
+.ui-avatar-lg .ui-icon {
   width: 34px;
   height: 34px;
   stroke-width: 16px;
 }
-.ui-img-photo-sm {
+.ui-avatar-sm {
   font-size: 14px;
   width: 48px;
   height: 48px;
 }
-.ui-img-photo-sm .ui-icon {
+.ui-avatar-sm .ui-icon {
   width: 18px;
   height: 18px;
   stroke-width: 32px;
 }
-.ui-img-photo-xs {
+.ui-avatar-xs {
   font-size: 12px;
   width: 42px;
   height: 42px;
 }
-.ui-img-photo-xs .ui-icon {
+.ui-avatar-xs .ui-icon {
   width: 14px;
   height: 14px;
   stroke-width: 36px;
+}
+.ui-avatar-holder {
+  vertical-align: middle;
+  display: inline-block;
+}
+.ui-avatar-holder > *:not(.ui-btn):not(:first-child) {
+  margin-left: -15px;
+}
+.ui-avatar-holder > a {
+  text-decoration: none;
+}
+.ui-avatar-holder [class*="ui-avatar"]:not([class*="ui-stroke"]) {
+  border-color: hsl(0, 0%, 98%);
+  border-color: var(--ui-body-bg);
+}
+.ui-dropdown .ui-avatar-holder [class*="ui-avatar"] {
+  border-color: hsl(0, 0%, 100%);
+  border-color: var(--ui-highlighted);
+}
+.ui-card .ui-avatar-holder [class*="ui-avatar"] {
+  border-color: hsl(0, 0%, 100%);
+  border-color: var(--ui-card-bg);
 }
 /* progress bar */
 @keyframes ui-progress-fill {
@@ -6805,7 +6814,7 @@ header.ui-sticky-static {
 .ui-timeline > li.ui-text:after {
   border-color: currentColor;
 }
-.ui-timeline > li > [class*="ui-img-photo"] {
+.ui-timeline > li > [class*="ui-avatar"] {
   margin-left: 15px;
   position: relative;
   z-index: 1;
@@ -6824,16 +6833,16 @@ header.ui-sticky-static {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
 }
-.ui-timeline > li > .ui-img-photo + .ui-card {
+.ui-timeline > li > .ui-avatar + .ui-card {
   padding-top: 33px;
 }
-.ui-timeline > li > .ui-img-photo-lg + .ui-card {
+.ui-timeline > li > .ui-avatar-lg + .ui-card {
   padding-top: 48px;
 }
-.ui-timeline > li > .ui-img-photo-sm + .ui-card {
+.ui-timeline > li > .ui-avatar-sm + .ui-card {
   padding-top: 32px;
 }
-.ui-timeline > li > .ui-img-photo-xs + .ui-card {
+.ui-timeline > li > .ui-avatar-xs + .ui-card {
   padding-top: 29px;
 }
 .ui-timeline:not(.ui-hide-h-lines) > li:before {

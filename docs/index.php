@@ -160,6 +160,7 @@
                     <h3 class="ui-h3 ui-margin-15">Components</h3>
                     <ul class="ui-list-unstyled ui-block-2nd ui-ease-2nd-button">
                         <li><a class="ui-btn ui-btn-ghost" href="?p=alerts">Alerts</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=avatars">Avatars</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=breadcrumbs">Breadcrumbs</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=buttons">Buttons</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=calendar">Calendar</a></li>
@@ -178,7 +179,6 @@
                         <li><a class="ui-btn ui-btn-ghost" href="?p=loading-mask">Loading Mask</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=modal">Modal</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=photo-gallery">Photo Gallery</a></li>
-                        <li><a class="ui-btn ui-btn-ghost" href="?p=photo-images">Photo Images</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=photo-slider">Photo Slider</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=pricing-tables">Pricing Tables</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=progress-bar">Progress Bar</a></li>

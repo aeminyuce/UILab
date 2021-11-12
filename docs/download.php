@@ -291,10 +291,10 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="photo images" value="../css/photo-images">
+                                            <input type="checkbox" name="avatars" value="../css/avatars">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Photo Images
+                                        Avatars
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">

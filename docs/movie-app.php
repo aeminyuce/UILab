@@ -113,7 +113,7 @@
                                 </button>
                             </span>
                             <span class="ui-inline-block ui-right ui-no-float-sm">
-                                <img class="ui-img-photo ui-img-photo-sm ui-circle ui-margin-10-l ui-sm-no-margin ui-right" src="img/profile-image.jpg" alt="">
+                                <img class="ui-avatar ui-avatar-sm ui-circle ui-margin-10-l ui-sm-no-margin ui-right" src="img/profile-image.jpg" alt="">
                                 <span class="ui-margin-3-t ui-inline-block ui-hidden-sm">aeminyuce</span>
                                 <span class="ui-font-12 ui-color-black-50 ui-block ui-hidden-sm">Premium</span>
                             </span>
@@ -140,10 +140,10 @@
                                         <h2 class="ui-h2 ui-font-bold">Related Video</h2>
                                         <b class="ui-font-16">Captain Marvel (2019)</b>
                                         <p class="ui-margin-10-v ui-font-readable">After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.</p>
-                                        <div class="ui-photos-holder ui-hover-scale-more-2nd ui-ease-2nd-layout">
-                                            <a href="#"><img class="ui-img-photo ui-border-dual ui-circle" src="img/profile-image.jpg" alt=""></a>
-                                            <a href="#"><img class="ui-img-photo ui-border-dual ui-circle" src="img/profile-image2.jpg" alt=""></a>
-                                            <a href="#"><img class="ui-img-photo ui-border-dual ui-circle" src="img/profile-image3.jpg" alt=""></a>
+                                        <div class="ui-avatar-holder ui-hover-scale-more-2nd ui-ease-2nd-layout">
+                                            <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image.jpg" alt=""></a>
+                                            <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image2.jpg" alt=""></a>
+                                            <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image3.jpg" alt=""></a>
                                             <a class="ui-btn ui-btn-lg ui-btn-square ui-btn-ghost ui-circle ui-ease-btn" href="#">+38</a>
                                         </div>
                                     </div>
