@@ -10,7 +10,7 @@
 
                     <div class="ui-col-4 ui-offset-4 ui-no-padding-b">
                         <div class="ui-btn-holder ui-form-lg ui-ease-1st-btn">
-                            <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke active">CSS</button>
+                            <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-active">CSS</button>
                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">JS</button>
                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">Icons</button>
                         </div>

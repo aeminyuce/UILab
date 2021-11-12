@@ -79,6 +79,24 @@
     <!-- headings -->
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;700&display=swap" rel="stylesheet">
 
+    <script>
+        /* check class names *
+        ui.onload(function () {
+            ui.ajax({
+                url : 'alerts.php',
+                callback: function (status, response) {}
+            });
+        });
+
+        ui.on(document,
+            ui.globals.eventAjaxCallback,
+
+            function () {
+                console.log(ui.ajax.classNames);
+            });
+        */
+    </script>
+
 </head>
 
 <body>
