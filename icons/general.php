@@ -584,7 +584,7 @@
 <symbol id="address-card-fill" viewBox="0 0 288 288">
     <use class="ui-svg-f" href="#address-card"/>
 </symbol>
-<symbol id="home" viewBox="-8 -8 288 288">
+<symbol id="home" viewBox="-8 0 288 288">
     <path d="M16.9 112l120-100 120 100 M232.9 92v144h-64v-80h-64v80h-64V92l96-80z"/>
 </symbol>
 <symbol id="home-fill" viewBox="0 0 288 288">
@@ -1281,7 +1281,7 @@
 <symbol id="globe-fill" viewBox="0 0 288 288">
     <use class="ui-svg-f" href="#globe"/>
 </symbol>
-<symbol id="filter" viewBox="-12 -12 288 288">
+<symbol id="filter" viewBox="-12 -24 288 288">
     <path d="M12 12h240l-92 92v112l-56 36V104z"/>
 </symbol>
 <symbol id="filter-fill" viewBox="0 0 288 288">

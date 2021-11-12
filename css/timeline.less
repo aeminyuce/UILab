@@ -19,7 +19,7 @@
 .ui-timeline {
     list-style: none; position: relative;
 
-    &.ui-current {
+    &.ui-text {
         &:after { background-color: currentColor; }
         & > li {
             &:after { border-color: currentColor; }
@@ -37,7 +37,7 @@
                 .ui-card & { ._bg-var(card-bg); }
             }
         }
-        &.ui-current {
+        &.ui-text {
             & > li:before { background-color: currentColor; }
         }
     }
@@ -49,7 +49,7 @@
         &:not(:last-child) { margin-bottom: @highlight-space; }
         &:after { content: ""; width: @timeline-steps-size; height: @timeline-steps-size; display: block; ._border-var(@width: @timeline-line-size; @var: timeline-line-bg); border-radius: 50%; position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; }
 
-        &.ui-current {
+        &.ui-text {
             &:after { border-color: currentColor; }
         }
 

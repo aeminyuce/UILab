@@ -64,7 +64,7 @@
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
                             <div class="ui-col-48 ui-align-c ui-padding-4-v">
-                                <svg class="ui-icon ui-icon-xl ui-theme-sub ui-current"><use href="#info-circle-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xl ui-theme-sub ui-text"><use href="#info-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
                                 <div class="ui-col-12 ui-sm-align-c large">
@@ -86,7 +86,7 @@
                             </button>
                                 <div class="ui-col-static ui-sm-fluid">
                                     <div class="ui-col-48 ui-padding-4-v ui-align-c">
-                                        <svg class="ui-icon ui-icon-xl ui-theme-sub ui-current"><use href="#info-circle-fill"/></svg>
+                                        <svg class="ui-icon ui-icon-xl ui-theme-sub ui-text"><use href="#info-circle-fill"/></svg>
                                     </div>
                                     <div class="ui-row">
                                         <div class="ui-col-12 ui-sm-align-c large">
@@ -251,7 +251,7 @@
                 <div class="ui-card ui-round ui-theme-sub ui-fill-light-100 ui-stroke">
                     <div class="ui-card-side ui-padding-30">
                         <h4 class="ui-h4">
-                            <svg class="ui-icon ui-icon-xl ui-current"><use href="#help-fill"/></svg>
+                            <svg class="ui-icon ui-icon-xl ui-text"><use href="#help-fill"/></svg>
                             Card Title
                         </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
@@ -262,14 +262,14 @@
                         </a>
                     </div>
                     <div class="ui-card-side ui-padding-30-h ui-padding-15-v ui-fill-light-300 ui-align-r ui-xs-align-c">
-                        <a href="#" class="ui-current ui-font-underline">Card Footer Link</a>
+                        <a href="#" class="ui-text ui-font-underline">Card Footer Link</a>
                     </div>
                 </div>
 
                 <div class="ui-card ui-round ui-theme-base ui-fill-light-100 ui-stroke">
                     <div class="ui-card-side ui-padding-30">
                         <h4 class="ui-h4">
-                            <svg class="ui-icon ui-icon-xl ui-current"><use href="#help"/></svg>
+                            <svg class="ui-icon ui-icon-xl ui-text"><use href="#help"/></svg>
                             Card Title
                         </h4>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
@@ -280,13 +280,13 @@
                         </a>
                     </div>
                     <div class="ui-card-side ui-padding-30-h ui-padding-15-v ui-fill-light-300 ui-align-r ui-xs-align-c">
-                        <a href="#" class="ui-current ui-font-underline">Card Footer Link</a>
+                        <a href="#" class="ui-text ui-font-underline">Card Footer Link</a>
                     </div>
                 </div>
 
                 <div class="ui-card-warning ui-padding-30 ui-round ui-theme-base ui-fill-light-100 ui-stroke">
                     <h4 class="ui-h4">
-                        <svg class="ui-icon ui-icon-xl ui-current"><use href="#help-fill"/></svg>
+                        <svg class="ui-icon ui-icon-xl ui-text"><use href="#help-fill"/></svg>
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
@@ -299,7 +299,7 @@
 
                 <div class="ui-card-warning ui-padding-30 ui-round ui-theme-green ui-fill-light-100 ui-stroke">
                     <h4 class="ui-h4">
-                        <svg class="ui-icon ui-icon-xl ui-current"><use href="#help"/></svg>
+                        <svg class="ui-icon ui-icon-xl ui-text"><use href="#help"/></svg>
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
@@ -312,7 +312,7 @@
 
                 <div class="ui-card-warning ui-padding-30 ui-round ui-theme-yellow ui-fill-light-100 ui-stroke">
                     <h4 class="ui-h4">
-                        <svg class="ui-icon ui-icon-xl ui-current"><use href="#help-fill"/></svg>
+                        <svg class="ui-icon ui-icon-xl ui-text"><use href="#help-fill"/></svg>
                         Message Title
                     </h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.

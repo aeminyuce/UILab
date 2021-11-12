@@ -539,7 +539,7 @@
                         </div>
                     </div>
                     <div class="ui-col-3 ui-col-xs-6">
-                        <div class="ui-pie-chart ui-ease-pie-chart" data-ui-text="Example">
+                        <div class="ui-pie-chart ui-ease-pie-chart" data-ui-info="Example">
                             <ul>
                                 <li data-ui-percent="57" data-ui-fill="hsl(186, 70%, 68%)"></li>
                                 <li data-ui-percent="22" data-ui-fill="hsl(210, 86%, 68%)"></li>
@@ -577,7 +577,7 @@
                         </div>
                     </div>
                     <div class="ui-col-3 ui-col-xs-6">
-                        <div class="ui-pie-chart ui-ease-pie-chart" data-ui-text="Example">
+                        <div class="ui-pie-chart ui-ease-pie-chart" data-ui-info="Example">
                             <ul>
                                 <li data-ui-percent="20" data-ui-fill="hsl(210, 86%, 68%)"></li>
                                 <li data-ui-percent="15" data-ui-fill="hsl(27, 77%, 59%)"></li>
@@ -617,7 +617,7 @@
                         </div>
                     </div>
                     <div class="ui-col-3 ui-col-xs-6">
-                        <div class="ui-pie-chart ui-ease-pie-chart" data-ui-text="Example">
+                        <div class="ui-pie-chart ui-ease-pie-chart" data-ui-info="Example">
                             <ul>
                                 <li data-ui-percent="57" data-ui-fill="hsl(186, 70%, 68%)" data-ui-title="57% HTML"></li>
                                 <li data-ui-percent="22" data-ui-fill="hsl(210, 86%, 68%)" data-ui-title="22% ASP"></li>
@@ -650,7 +650,7 @@
                         </div>
                     </div>
                     <div class="ui-col-3 ui-col-xs-6">
-                        <div class="ui-pie-chart ui-ease-pie-chart" data-ui-text="Example">
+                        <div class="ui-pie-chart ui-ease-pie-chart" data-ui-info="Example">
                             <ul>
                                 <li data-ui-percent="57" data-ui-fill="hsl(186, 70%, 68%)" data-ui-title="57% HTML"></li>
                                 <li data-ui-percent="22" data-ui-fill="hsl(210, 86%, 68%)" data-ui-title="22% ASP"></li>

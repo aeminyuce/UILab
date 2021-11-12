@@ -521,7 +521,7 @@
                                     <button name="less" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">Generate LESS</button>
                                     <span class="ui-sp-5 ui-visible-sm"></span>
                                     <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid ui-round">
-                                        <svg class="ui-icon ui-current ui-margin-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
+                                        <svg class="ui-icon ui-text ui-margin-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
                                     </button>
                                 </div>
 
@@ -888,7 +888,7 @@
                                     <span class="ui-sp-15 ui-visible-xs"></span>
                                     <button name="js" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">Generate JS</button>
                                     <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid ui-round">
-                                        <svg class="ui-icon ui-current ui-margin-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
+                                        <svg class="ui-icon ui-text ui-margin-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
                                     </button>
                                 </div>
 
@@ -1019,7 +1019,7 @@
                                     <span class="ui-sp-15 ui-visible-xs"></span>
                                     <button name="php" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100" data-ui-type="icons">Generate Icons</button>
                                     <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid ui-round">
-                                        <svg class="ui-icon ui-current ui-margin-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
+                                        <svg class="ui-icon ui-text ui-margin-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
                                     </button>
                                 </div>
 

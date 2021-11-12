@@ -71,7 +71,7 @@
                                         <img class="ui-img-photo-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">John Atkinson
                                     </div>
                                     <div class="ui-col-7">
-                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-sub ui-current">
+                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-sub ui-text">
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -103,7 +103,7 @@
                                         <img class="ui-img-photo-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                     </div>
                                     <div class="ui-col-7">
-                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-red ui-current">
+                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-red ui-text">
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -135,7 +135,7 @@
                                         <img class="ui-img-photo-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                     </div>
                                     <div class="ui-col-7">
-                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-green ui-current">
+                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-green ui-text">
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -167,7 +167,7 @@
                                         <img class="ui-img-photo-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">Tony Starky
                                     </div>
                                     <div class="ui-col-7">
-                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-sub ui-current">
+                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-sub ui-text">
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -199,7 +199,7 @@
                                         <img class="ui-img-photo-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">John Atkinson
                                     </div>
                                     <div class="ui-col-7">
-                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-sub ui-current">
+                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-sub ui-text">
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -231,7 +231,7 @@
                                         <img class="ui-img-photo-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                     </div>
                                     <div class="ui-col-7">
-                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-red ui-current">
+                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-red ui-text">
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -263,7 +263,7 @@
                                         <img class="ui-img-photo-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                     </div>
                                     <div class="ui-col-7">
-                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-green ui-current">
+                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-green ui-text">
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -295,7 +295,7 @@
                                         <img class="ui-img-photo-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">Tony Starky
                                     </div>
                                     <div class="ui-col-7">
-                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-sub ui-current">
+                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-sub ui-text">
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -327,7 +327,7 @@
                                         <img class="ui-img-photo-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">John Atkinson
                                     </div>
                                     <div class="ui-col-7">
-                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-sub ui-current">
+                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-sub ui-text">
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -359,7 +359,7 @@
                                         <img class="ui-img-photo-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image2.jpg" alt="">Mary Doe
                                     </div>
                                     <div class="ui-col-7">
-                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-red ui-current">
+                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-red ui-text">
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -391,7 +391,7 @@
                                         <img class="ui-img-photo-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image3.jpg" alt="">Mike Taylor
                                     </div>
                                     <div class="ui-col-7">
-                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-green ui-current">
+                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-green ui-text">
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -423,7 +423,7 @@
                                         <img class="ui-img-photo-sm ui-margin-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">Tony Starky
                                     </div>
                                     <div class="ui-col-7">
-                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-sub ui-current">
+                                        <ul class="ui-steps-bar ui-steps-icon ui-theme-sub ui-text">
                                             <li>
                                                 <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="#check-circle"></svg>1:S
                                             </li>
@@ -460,7 +460,7 @@
                                 </div>
                             </div>
                             <div class="ui-col-8 ui-no-fluid ui-align-r">
-                                <div class="ui-grid-list-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-border-dual ui-theme-sub ui-stroke ui-current"></div>
+                                <div class="ui-grid-list-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-border-dual ui-theme-sub ui-stroke ui-text"></div>
                             </div>
                         </div>
 

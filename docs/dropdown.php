@@ -196,7 +196,7 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-current ui-fill-light-200">
+                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-text ui-fill-light-200">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
@@ -234,7 +234,7 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-current ui-fill-light-200">
+                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-text ui-fill-light-200">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
@@ -276,7 +276,7 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-current ui-fill-light-200">
+                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-text ui-fill-light-200">
                                 List Example with Links
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>
@@ -308,7 +308,7 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-current ui-fill-light-200">
+                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-text ui-fill-light-200">
                                 List Example with Buttons
                                 <svg class="ui-toggle-icon ui-icon ui-margin-5-l"><use href="#angle-down"/></svg>
                             </button>

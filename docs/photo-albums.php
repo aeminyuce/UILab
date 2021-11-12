@@ -9,7 +9,7 @@
                     </a>
                     <span class="ui-sp-30"></span>
                     <ul class="ui-list-unstyled ui-hover-r-more-2nd ui-inline-block-2nd ui-font-16 ui-list-spacer-30 ui-padding-10 ui-ease-2nd-layout">
-                        <li><a class="ui-current" href="#">Summer Holiday</a></li>
+                        <li><a class="ui-text" href="#">Summer Holiday</a></li>
                         <li><a href="#">Autumn Comes</a></li>
                         <li><a href="#">Travelling</a></li>
                         <li><a href="#">Winter Concerts</a></li>

@@ -37,50 +37,50 @@
 .ui-color- {
     &white {
         &,
-        .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-        a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-        button:not([class*="ui-current-"]):not([class*="ui-fill-"]) { color: @white !important; }
+        .ui-icon:not([class*="ui-text-"]):not([class*="ui-fill-"]),
+        a:not([class*="ui-text-"]):not([class*="ui-fill-"]),
+        button:not([class*="ui-text-"]):not([class*="ui-fill-"]) { color: @white !important; }
 
         &-50 {
             &,
-            .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-            a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-            button:not([class*="ui-current-"]):not([class*="ui-fill-"]) { color: @white-50 !important; }
+            .ui-icon:not([class*="ui-text-"]):not([class*="ui-fill-"]),
+            a:not([class*="ui-text-"]):not([class*="ui-fill-"]),
+            button:not([class*="ui-text-"]):not([class*="ui-fill-"]) { color: @white-50 !important; }
         }
         &-25 {
             &,
-            .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-            a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-            button:not([class*="ui-current-"]):not([class*="ui-fill-"]) { color: @white-25 !important; }
+            .ui-icon:not([class*="ui-text-"]):not([class*="ui-fill-"]),
+            a:not([class*="ui-text-"]):not([class*="ui-fill-"]),
+            button:not([class*="ui-text-"]):not([class*="ui-fill-"]) { color: @white-25 !important; }
         }
     }
 
     &black {
         &,
-        .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-        a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-        button:not([class*="ui-current"]):not([class*="ui-fill-"]) { ._color-var(black) !important; }
+        .ui-icon:not([class*="ui-text"]):not([class*="ui-fill-"]),
+        a:not([class*="ui-text"]):not([class*="ui-fill-"]),
+        button:not([class*="ui-text"]):not([class*="ui-fill-"]) { ._color-var(black) !important; }
 
         &-50 {
             &,
-            .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-            a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-            button:not([class*="ui-current"]):not([class*="ui-fill-"]) { ._color-var(black-50) !important; }
+            .ui-icon:not([class*="ui-text"]):not([class*="ui-fill-"]),
+            a:not([class*="ui-text"]):not([class*="ui-fill-"]),
+            button:not([class*="ui-text"]):not([class*="ui-fill-"]) { ._color-var(black-50) !important; }
         }
         &-25 {
             &,
-            .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-            a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-            button:not([class*="ui-current"]):not([class*="ui-fill-"]) { ._color-var(black-25) !important; }
+            .ui-icon:not([class*="ui-text"]):not([class*="ui-fill-"]),
+            a:not([class*="ui-text"]):not([class*="ui-fill-"]),
+            button:not([class*="ui-text"]):not([class*="ui-fill-"]) { ._color-var(black-25) !important; }
         }
     }
 
     each(@font-colors, {
         &@{value} {
             &,
-            .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-            a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-            button:not([class*="ui-current"]):not([class*="ui-fill-"]) { color: @@value !important; }
+            .ui-icon:not([class*="ui-text"]):not([class*="ui-fill-"]),
+            a:not([class*="ui-text"]):not([class*="ui-fill-"]),
+            button:not([class*="ui-text"]):not([class*="ui-fill-"]) { color: @@value !important; }
         }
     });
 }

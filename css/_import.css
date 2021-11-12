@@ -3391,72 +3391,72 @@ html .ui-row {
 }
 /* typography */
 .ui-color-white,
-.ui-color-white .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-.ui-color-white a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-.ui-color-white button:not([class*="ui-current-"]):not([class*="ui-fill-"]) {
+.ui-color-white .ui-icon:not([class*="ui-text-"]):not([class*="ui-fill-"]),
+.ui-color-white a:not([class*="ui-text-"]):not([class*="ui-fill-"]),
+.ui-color-white button:not([class*="ui-text-"]):not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 100%) !important;
 }
 .ui-color-white-50,
-.ui-color-white-50 .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-.ui-color-white-50 a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-.ui-color-white-50 button:not([class*="ui-current-"]):not([class*="ui-fill-"]) {
+.ui-color-white-50 .ui-icon:not([class*="ui-text-"]):not([class*="ui-fill-"]),
+.ui-color-white-50 a:not([class*="ui-text-"]):not([class*="ui-fill-"]),
+.ui-color-white-50 button:not([class*="ui-text-"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 100%, 0.87) !important;
 }
 .ui-color-white-25,
-.ui-color-white-25 .ui-icon:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-.ui-color-white-25 a:not([class*="ui-current-"]):not([class*="ui-fill-"]),
-.ui-color-white-25 button:not([class*="ui-current-"]):not([class*="ui-fill-"]) {
+.ui-color-white-25 .ui-icon:not([class*="ui-text-"]):not([class*="ui-fill-"]),
+.ui-color-white-25 a:not([class*="ui-text-"]):not([class*="ui-fill-"]),
+.ui-color-white-25 button:not([class*="ui-text-"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 100%, 0.72) !important;
 }
 .ui-color-black,
-.ui-color-black .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-black a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-black button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-black .ui-icon:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-black a:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-black button:not([class*="ui-text"]):not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 0%) !important;
   color: var(--ui-black) !important;
 }
 .ui-color-black-50,
-.ui-color-black-50 .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-black-50 a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-black-50 button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-black-50 .ui-icon:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-black-50 a:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-black-50 button:not([class*="ui-text"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 0%, 0.5) !important;
   color: var(--ui-black-50) !important;
 }
 .ui-color-black-25,
-.ui-color-black-25 .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-black-25 a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-black-25 button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-black-25 .ui-icon:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-black-25 a:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-black-25 button:not([class*="ui-text"]):not([class*="ui-fill-"]) {
   color: hsla(0, 0%, 0%, 0.4) !important;
   color: var(--ui-black-25) !important;
 }
 .ui-color-green,
-.ui-color-green .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-green a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-green button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-green .ui-icon:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-green a:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-green button:not([class*="ui-text"]):not([class*="ui-fill-"]) {
   color: hsl(142, 82%, 42%) !important;
 }
 .ui-color-yellow,
-.ui-color-yellow .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-yellow a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-yellow button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-yellow .ui-icon:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-yellow a:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-yellow button:not([class*="ui-text"]):not([class*="ui-fill-"]) {
   color: hsl(42, 100%, 45%) !important;
 }
 .ui-color-orange,
-.ui-color-orange .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-orange a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-orange button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-orange .ui-icon:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-orange a:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-orange button:not([class*="ui-text"]):not([class*="ui-fill-"]) {
   color: hsl(30, 100%, 50%) !important;
 }
 .ui-color-red,
-.ui-color-red .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-red a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-red button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-red .ui-icon:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-red a:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-red button:not([class*="ui-text"]):not([class*="ui-fill-"]) {
   color: hsl(0, 74%, 55%) !important;
 }
 .ui-color-blue,
-.ui-color-blue .ui-icon:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-blue a:not([class*="ui-current"]):not([class*="ui-fill-"]),
-.ui-color-blue button:not([class*="ui-current"]):not([class*="ui-fill-"]) {
+.ui-color-blue .ui-icon:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-blue a:not([class*="ui-text"]):not([class*="ui-fill-"]),
+.ui-color-blue button:not([class*="ui-text"]):not([class*="ui-fill-"]) {
   color: hsl(212, 64%, 38%) !important;
 }
 .ui-font-9 {
@@ -4004,8 +4004,8 @@ dt + dd:not(:last-child) {
 .ui-btn-ghost:not(.ui-btn-visible):not(:hover) {
   background-color: transparent !important;
 }
-.ui-btn-ghost:not(.ui-btn-visible)[class*="ui-fill-dark-"]:not(.ui-current),
-.ui-btn-ghost:not(.ui-btn-visible)[class*="ui-fill-dark-"]:not(.ui-current) .ui-icon:not(.ui-current) {
+.ui-btn-ghost:not(.ui-btn-visible)[class*="ui-fill-dark-"]:not(.ui-text),
+.ui-btn-ghost:not(.ui-btn-visible)[class*="ui-fill-dark-"]:not(.ui-text) .ui-icon:not(.ui-text) {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
 }
@@ -5033,7 +5033,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   -moz-appearance: none;
   appearance: none;
 }
-.ui-range.ui-current::-webkit-slider-thumb {
+.ui-range.ui-text::-webkit-slider-thumb {
   background-color: currentColor;
 }
 .ui-range::-webkit-slider-runnable-track {
@@ -5065,7 +5065,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   -moz-appearance: none;
   appearance: none;
 }
-.ui-range.ui-current::-moz-range-thumb {
+.ui-range.ui-text::-moz-range-thumb {
   background-color: currentColor;
 }
 .ui-range::-moz-range-track {
@@ -5100,7 +5100,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   -moz-appearance: none;
   appearance: none;
 }
-.ui-range.ui-current::-ms-thumb {
+.ui-range.ui-text::-ms-thumb {
   background-color: currentColor;
 }
 .ui-range::-ms-track {
@@ -5296,14 +5296,14 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-form-focus > select,
 .ui-form-focus.ui-form-light > select option,
 .ui-form-focus > textarea,
-.ui-form-focus .ui-icon:not([class*="ui-current"]) {
+.ui-form-focus .ui-icon:not([class*="ui-text"]) {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
 }
 .ui-form-focus.ui-form-light > input,
 .ui-form-focus.ui-form-light > select,
 .ui-form-focus.ui-form-light > textarea,
-.ui-form-focus.ui-form-light .ui-icon:not([class*="ui-current"]) {
+.ui-form-focus.ui-form-light .ui-icon:not([class*="ui-text"]) {
   color: hsl(0, 0%, 100%) !important;
 }
 .ui-form-focus[class*="ui-form-icon"] .ui-icon,
@@ -6562,7 +6562,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   list-style: none;
   display: flex;
 }
-.ui-steps-bar:not([class*="ui-current"]) {
+.ui-steps-bar:not([class*="ui-text"]) {
   color: hsl(142, 82%, 42%);
 }
 .ui-steps-bar li {
@@ -6656,11 +6656,11 @@ html:not(.ui-ie) .ui-steps-bar li {
   background-color: hsl(0, 0%, 98%);
   background-color: var(--ui-body-bg);
 }
-.ui-steps-bar[class*="ui-current"] li:before {
+.ui-steps-bar[class*="ui-text"] li:before {
   background-color: currentColor;
   border-color: currentColor;
 }
-.ui-steps-bar[class*="ui-current"] li:after {
+.ui-steps-bar[class*="ui-text"] li:after {
   background-color: currentColor;
 }
 .ui-steps-bar.ui-steps-icon li:before {
@@ -6732,10 +6732,10 @@ header.ui-sticky-static {
   list-style: none;
   position: relative;
 }
-.ui-timeline.ui-current:after {
+.ui-timeline.ui-text:after {
   background-color: currentColor;
 }
-.ui-timeline.ui-current > li:after {
+.ui-timeline.ui-text > li:after {
   border-color: currentColor;
 }
 .ui-timeline:not(.ui-hide-lines):after {
@@ -6766,7 +6766,7 @@ header.ui-sticky-static {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-card-bg);
 }
-.ui-timeline:not(.ui-hide-lines).ui-current > li:before {
+.ui-timeline:not(.ui-hide-lines).ui-text > li:before {
   background-color: currentColor;
 }
 .ui-timeline:not(:last-child) {
@@ -6792,7 +6792,7 @@ header.ui-sticky-static {
   transform: translateY(-50%);
   z-index: 1;
 }
-.ui-timeline > li.ui-current:after {
+.ui-timeline > li.ui-text:after {
   border-color: currentColor;
 }
 .ui-timeline > li > [class*="ui-img-photo"] {
@@ -9532,8 +9532,8 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.ui-icon) {
   -moz-user-select: none;
   user-select: none;
 }
-.ui-pie-chart[data-ui-text]:before {
-  content: attr(data-ui-text);
+.ui-pie-chart[data-ui-info]:before {
+  content: attr(data-ui-info);
   color: hsl(0, 0%, 0%);
   font-weight: 700;
   font-size: 14px;
@@ -9775,16 +9775,16 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-desktop .ui-theme-gray .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(0, 0%, 95%);
 }
-.ui-theme-gray.ui-current,
-.ui-theme-gray .ui-current:not([class*="ui-theme-"]) {
+.ui-theme-gray.ui-text,
+.ui-theme-gray .ui-text:not([class*="ui-theme-"]) {
   color: hsl(0, 0%, 70%) !important;
 }
-.ui-theme-gray.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-gray .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-gray.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-gray .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-gray.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-gray .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
+.ui-theme-gray.ui-text .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-gray .ui-text:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-gray.ui-text a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-gray .ui-text:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-gray.ui-text button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-gray .ui-text:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(0, 0%, 70%) !important;
 }
 .ui-theme-gray.ui-stroke,
@@ -9851,16 +9851,16 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-desktop .ui-theme-green .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(142, 82%, 67%);
 }
-.ui-theme-green.ui-current,
-.ui-theme-green .ui-current:not([class*="ui-theme-"]) {
+.ui-theme-green.ui-text,
+.ui-theme-green .ui-text:not([class*="ui-theme-"]) {
   color: hsl(142, 82%, 42%) !important;
 }
-.ui-theme-green.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-green .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-green.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-green .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-green.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-green .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
+.ui-theme-green.ui-text .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-green .ui-text:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-green.ui-text a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-green .ui-text:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-green.ui-text button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-green .ui-text:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(142, 82%, 42%) !important;
 }
 .ui-theme-green.ui-stroke,
@@ -9927,16 +9927,16 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-desktop .ui-theme-yellow .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(42, 100%, 70%);
 }
-.ui-theme-yellow.ui-current,
-.ui-theme-yellow .ui-current:not([class*="ui-theme-"]) {
+.ui-theme-yellow.ui-text,
+.ui-theme-yellow .ui-text:not([class*="ui-theme-"]) {
   color: hsl(42, 100%, 45%) !important;
 }
-.ui-theme-yellow.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-yellow .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-yellow.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-yellow .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-yellow.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-yellow .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
+.ui-theme-yellow.ui-text .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-yellow .ui-text:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-yellow.ui-text a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-yellow .ui-text:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-yellow.ui-text button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-yellow .ui-text:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(42, 100%, 45%) !important;
 }
 .ui-theme-yellow.ui-stroke,
@@ -10003,16 +10003,16 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-desktop .ui-theme-orange .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(30, 100%, 75%);
 }
-.ui-theme-orange.ui-current,
-.ui-theme-orange .ui-current:not([class*="ui-theme-"]) {
+.ui-theme-orange.ui-text,
+.ui-theme-orange .ui-text:not([class*="ui-theme-"]) {
   color: hsl(30, 100%, 50%) !important;
 }
-.ui-theme-orange.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-orange .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-orange.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-orange .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-orange.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-orange .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
+.ui-theme-orange.ui-text .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-orange .ui-text:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-orange.ui-text a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-orange .ui-text:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-orange.ui-text button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-orange .ui-text:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(30, 100%, 50%) !important;
 }
 .ui-theme-orange.ui-stroke,
@@ -10079,16 +10079,16 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-desktop .ui-theme-red .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(0, 74%, 80%);
 }
-.ui-theme-red.ui-current,
-.ui-theme-red .ui-current:not([class*="ui-theme-"]) {
+.ui-theme-red.ui-text,
+.ui-theme-red .ui-text:not([class*="ui-theme-"]) {
   color: hsl(0, 74%, 55%) !important;
 }
-.ui-theme-red.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-red .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-red.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-red .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-red.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-red .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
+.ui-theme-red.ui-text .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-red .ui-text:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-red.ui-text a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-red .ui-text:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-red.ui-text button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-red .ui-text:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(0, 74%, 55%) !important;
 }
 .ui-theme-red.ui-stroke,
@@ -10155,16 +10155,16 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-desktop .ui-theme-base .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(226, 52%, 75%);
 }
-.ui-theme-base.ui-current,
-.ui-theme-base .ui-current:not([class*="ui-theme-"]) {
+.ui-theme-base.ui-text,
+.ui-theme-base .ui-text:not([class*="ui-theme-"]) {
   color: hsl(226, 52%, 50%) !important;
 }
-.ui-theme-base.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-base .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-base.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-base .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-base.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-base .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
+.ui-theme-base.ui-text .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-base .ui-text:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-base.ui-text a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-base .ui-text:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-base.ui-text button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-base .ui-text:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(226, 52%, 50%) !important;
 }
 .ui-theme-base.ui-stroke,
@@ -10231,16 +10231,16 @@ html:not(.ui-ie) .ui-svg-map svg {
 .ui-desktop .ui-theme-sub .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
   background-color: hsl(206, 87%, 75%);
 }
-.ui-theme-sub.ui-current,
-.ui-theme-sub .ui-current:not([class*="ui-theme-"]) {
+.ui-theme-sub.ui-text,
+.ui-theme-sub .ui-text:not([class*="ui-theme-"]) {
   color: hsl(206, 87%, 50%) !important;
 }
-.ui-theme-sub.ui-current .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-sub .ui-current:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-sub.ui-current a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-sub .ui-current:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-sub.ui-current button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
-.ui-theme-sub .ui-current:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
+.ui-theme-sub.ui-text .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-sub .ui-text:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-sub.ui-text a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-sub .ui-text:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-sub.ui-text button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
+.ui-theme-sub .ui-text:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(206, 87%, 50%) !important;
 }
 .ui-theme-sub.ui-stroke,

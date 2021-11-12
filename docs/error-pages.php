@@ -17,7 +17,7 @@
                     </p>
                     <p class="ui-highlight ui-font-18 ui-font-readable">Sorry, the page you're looking for cannot be reached.<br>Here are few links that may be helpful.</p>
                     <ul class="ui-color-red ui-list-inline ui-ease-2nd-btn">
-                        <li><a class="ui-btn ui-btn-ghost ui-circle ui-border-dual" href="#">Home</a class="ui-current"></li>
+                        <li><a class="ui-btn ui-btn-ghost ui-circle ui-border-dual" href="#">Home</a class="ui-text"></li>
                         <li><a class="ui-btn ui-btn-ghost ui-circle ui-border-dual" href="#">Help Center</a></li>
                         <li><a class="ui-btn ui-btn-ghost ui-circle ui-border-dual" href="#">Sign In</a></li>
                     </ul>

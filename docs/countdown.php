@@ -77,25 +77,25 @@
                 <div class="ui-countdown ui-no-user-select ui-row ui-row-gap-sm-h ui-no-fluid ui-theme-sub">
                     <div class="ui-col-3">
                         <div class="ui-border ui-stroke ui-round ui-padding-10">
-                            <b class="ui-d ui-current largest ui-block">05</b>
+                            <b class="ui-d ui-text largest ui-block">05</b>
                             <span class="ui-color-black-25">days</span>
                         </div>
                     </div>
                     <div class="ui-col-3">
                         <div class="ui-border ui-stroke ui-round ui-padding-10">
-                            <b class="ui-h ui-current largest ui-block">24</b>
+                            <b class="ui-h ui-text largest ui-block">24</b>
                             <span class="ui-color-black-25">hours</span>
                         </div>
                     </div>
                     <div class="ui-col-3">
                         <div class="ui-border ui-stroke ui-round ui-padding-10">
-                            <b class="ui-m ui-current largest ui-block">24</b>
+                            <b class="ui-m ui-text largest ui-block">24</b>
                             <span class="ui-color-black-25">minutes</span>
                         </div>
                     </div>
                     <div class="ui-col-3">
                         <div class="ui-border ui-stroke ui-round ui-padding-10">
-                            <b class="ui-s ui-current largest ui-block">10</b>
+                            <b class="ui-s ui-text largest ui-block">10</b>
                             <span class="ui-color-black-25">seconds</span>
                         </div>
                     </div>

@@ -3,49 +3,49 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-padding-30">
 
-                <h3 class="ui-h3">Theme Current Font Colors</h3>
+                <h3 class="ui-h3">Theme Text Colors</h3>
 
                 <div class="ui-row ui-row-gap-md ui-highlight ui-xs-fluid">
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
-                        <div class="ui-theme-gray ui-current">
+                        <div class="ui-theme-gray ui-text">
                             ui-theme-gray<br>
-                            ui-current
+                            ui-text
                         </div>
                     </div>
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
-                        <div class="ui-theme-green ui-current">
+                        <div class="ui-theme-green ui-text">
                             ui-theme-green<br>
-                            ui-current
+                            ui-text
                         </div>
                     </div>
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
-                        <div class="ui-theme-yellow ui-current">
+                        <div class="ui-theme-yellow ui-text">
                             ui-theme-yellow<br>
-                            ui-current
+                            ui-text
                         </div>
                     </div>
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
-                        <div class="ui-theme-orange ui-current">
+                        <div class="ui-theme-orange ui-text">
                             ui-theme-orange<br>
-                            ui-current
+                            ui-text
                         </div>
                     </div>
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
-                        <div class="ui-theme-red ui-current">
+                        <div class="ui-theme-red ui-text">
                             ui-theme-red<br>
-                            ui-current
+                            ui-text
                         </div>
                     </div>
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
-                        <div class="ui-theme-base ui-current">
+                        <div class="ui-theme-base ui-text">
                             ui-theme-base<br>
-                            ui-current
+                            ui-text
                         </div>
                     </div>
                     <div class="ui-col-5x ui-col-md-6 ui-col-sm-6">
-                        <div class="ui-theme-sub ui-current">
+                        <div class="ui-theme-sub ui-text">
                             ui-theme-sub<br>
-                            ui-current
+                            ui-text
                         </div>
                     </div>
                 </div>

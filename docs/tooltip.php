@@ -33,7 +33,7 @@
                 </div>
 
                 <h3 class="ui-h3">Using with Icons</h3>
-                <div class="ui-theme-sub ui-icons-xl ui-current ui-padding-30-b ui-hover-t-more-1st ui-ease-1st-layout">
+                <div class="ui-theme-sub ui-icons-xl ui-text ui-padding-30-b ui-hover-t-more-1st ui-ease-1st-layout">
                     <svg class="ui-icon" data-ui-tooltip title="Like!"><use href="#heart"/></svg>
                     <svg class="ui-icon" data-ui-tooltip title="Somewhere on Earth!"><use href="#marker"/></svg>
                     <svg class="ui-icon" data-ui-tooltip title="Call us now 555 55 55"><use href="#phone"/></svg>
@@ -55,9 +55,9 @@
 
                 <h3 class="ui-h3">Using with Paragraphs</h3>
                 <div class="ui-font-readable ui-ease-1st-form">
-                    Lorem ipsum dolor sit amet, <b class="ui-theme-red ui-fill-light-100 ui-current" data-ui-tooltip title="<b>Nulla facilisi.</b><br>Sed purus ligula, commodo vel nisi et, lobortis ultrices erat.<br>Maecenas ac venenatis enim.">consectetur adipiscing elit.</b> Integer vitae enim quis ante lacinia tincidunt nec sed metus. Donec vitae diam non mi pharetra venenatis quis id nisl. Nunc auctor efficitur nunc nec porta. Nullam ut interdum nulla. Duis dapibus, lacus sed lacinia aliquam, orci ex congue magna, eget euismod lectus lacus ac turpis. Vestibulum facilisis tempus nunc, nec auctor risus cursus vitae. Nam cursus tristique orci non vehicula.
+                    Lorem ipsum dolor sit amet, <b class="ui-theme-red ui-fill-light-100 ui-text" data-ui-tooltip title="<b>Nulla facilisi.</b><br>Sed purus ligula, commodo vel nisi et, lobortis ultrices erat.<br>Maecenas ac venenatis enim.">consectetur adipiscing elit.</b> Integer vitae enim quis ante lacinia tincidunt nec sed metus. Donec vitae diam non mi pharetra venenatis quis id nisl. Nunc auctor efficitur nunc nec porta. Nullam ut interdum nulla. Duis dapibus, lacus sed lacinia aliquam, orci ex congue magna, eget euismod lectus lacus ac turpis. Vestibulum facilisis tempus nunc, nec auctor risus cursus vitae. Nam cursus tristique orci non vehicula.
                     <br><br>
-                    Proin ultrices metus non ligula ultrices venenatis. <a href="#" class="ui-theme-orange ui-fill-light-100 ui-current" data-ui-tooltip title="Please, click following link for details."><b>Etiam id dapibus sapien.</b></a> Sed ac enim tristique, cursus quam id, vehicula dui. Duis vestibulum, velit sit amet auctor tristique, massa elit commodo dui, eu ultricies felis arcu non enim. Cras id semper risus, eu ultrices enim. Aenean ullamcorper eleifend pharetra. Vestibulum varius, libero a congue aliquet, tortor erat suscipit lectus, id consequat nisl tellus vitae risus. Phasellus vestibulum porttitor leo. Maecenas scelerisque tempor lorem a facilisis. Fusce eu dictum eros. Aenean consequat quam est, sit amet cursus enim ultricies et.
+                    Proin ultrices metus non ligula ultrices venenatis. <a href="#" class="ui-theme-orange ui-fill-light-100 ui-text" data-ui-tooltip title="Please, click following link for details."><b>Etiam id dapibus sapien.</b></a> Sed ac enim tristique, cursus quam id, vehicula dui. Duis vestibulum, velit sit amet auctor tristique, massa elit commodo dui, eu ultricies felis arcu non enim. Cras id semper risus, eu ultrices enim. Aenean ullamcorper eleifend pharetra. Vestibulum varius, libero a congue aliquet, tortor erat suscipit lectus, id consequat nisl tellus vitae risus. Phasellus vestibulum porttitor leo. Maecenas scelerisque tempor lorem a facilisis. Fusce eu dictum eros. Aenean consequat quam est, sit amet cursus enim ultricies et.
                 </div>
 
         </div>
