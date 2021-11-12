@@ -236,7 +236,7 @@
 
                         <div class="ui-row">
                             <div class="ui-col-12 ui-align-c">
-                                <button class="load-more ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-30-h ui-circle ui-ease-btn">Load more</button>
+                                <button class="load-more ui-btn ui-btn-lg ui-btn-xs-fluid ui-circle ui-ease-btn">Load more</button>
                             </div>
                         </div>
 

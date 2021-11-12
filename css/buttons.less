@@ -11,9 +11,12 @@
 @btn-sm-icon:                           18px;
 @btn-xs-icon:                           16px;
 
-@btn-notifier-size:                     8px;
-@btn-circle-extra-padding:              6px;
+@btn-default-extra-padding:             8px;
 
+@btn-circle-lg-extra-padding:           24px;
+@btn-circle-extra-padding:              20px;
+
+@btn-notifier-size:                     8px;
 @btn-list-space:                        1px;
 @btn-breakpoint-space:                  2px;
 
@@ -31,7 +34,7 @@
     &:not(.ui-border):not([class*="ui-border-"]) { border-width: 0; }
     &:not(.ui-btn-multi) { white-space: nowrap; }
 
-    &:not(.ui-circle) { padding-right: @btn-default-padding; padding-left: @btn-default-padding; }
+    &:not(.ui-circle) { padding-right: (@btn-default-padding + @btn-default-extra-padding); padding-left: (@btn-default-padding + @btn-default-extra-padding); }
     &.ui-circle { padding-right: (@btn-default-padding + @btn-circle-extra-padding); padding-left: (@btn-default-padding + @btn-circle-extra-padding); }
 
     &[data-ui-notifier] {
@@ -97,6 +100,9 @@
 .ui-btn-lg,.ui-form-lg .ui-btn {
     font-size: @font-16; line-height: (@btn-lg - (@btn-lg-padding * 2) - 2); height: @btn-lg; padding-top: @btn-lg-padding; padding-bottom: @btn-lg-padding;
 
+    &:not(.ui-circle) { padding-right: (@btn-lg-padding + @btn-default-extra-padding); padding-left: (@btn-lg-padding + @btn-default-extra-padding); }
+    &.ui-circle { padding-right: (@btn-lg-padding + @btn-circle-lg-extra-padding); padding-left: (@btn-lg-padding + @btn-circle-lg-extra-padding); }
+
     &.ui-round { border-radius: (@round * 1.3333333333); }
     &.ui-btn-square { width: @btn-lg; }
 
@@ -112,7 +118,7 @@
 .ui-btn-sm {
     font-size: @font-12; line-height: (@btn-sm - (@btn-sm-padding * 2)); height: @btn-sm; padding-top: @btn-sm-padding; padding-bottom: @btn-sm-padding;
 
-    &:not(.ui-circle) { padding-right: @btn-sm-padding; padding-left: @btn-sm-padding; }
+    &:not(.ui-circle) { padding-right: (@btn-sm-padding + @btn-default-extra-padding); padding-left: (@btn-sm-padding + @btn-default-extra-padding); }
     &.ui-circle { padding-right: (@btn-sm-padding + @btn-circle-extra-padding); padding-left: (@btn-sm-padding + @btn-circle-extra-padding); }
 
     &.ui-round { border-radius: (@round - @round * 0.3333333333); }
@@ -130,7 +136,7 @@
 .ui-btn-xs {
     font-size: @font-11; line-height: (@btn-xs - (@btn-xs-padding * 2)); height: @btn-xs; padding-top: @btn-xs-padding; padding-bottom: @btn-xs-padding;
 
-    &:not(.ui-circle) { padding-right: @btn-xs-padding; padding-left: @btn-xs-padding; }
+    &:not(.ui-circle) { padding-right: (@btn-xs-padding + @btn-default-extra-padding); padding-left: (@btn-xs-padding + @btn-default-extra-padding); }
     &.ui-circle { padding-right: (@btn-xs-padding + @btn-circle-extra-padding); padding-left: (@btn-xs-padding + @btn-circle-extra-padding); }
 
     &.ui-round { border-radius: (@round / 2); }

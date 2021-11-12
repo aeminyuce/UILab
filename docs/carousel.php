@@ -45,7 +45,7 @@
                                                     Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
                                                     <br><br>
 
-                                                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-theme-sub ui-fill-dark-100 ui-circle ui-ease-btn">
+                                                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-theme-sub ui-fill-dark-100 ui-circle ui-ease-btn">
                                                         Continue
                                                         <svg class="ui-icon ui-margin-5-l"><use href="#arrow-right"/></svg>
                                                     </a>
@@ -90,7 +90,7 @@
                                                     Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
                                                     <br><br>
 
-                                                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-theme-sub ui-fill-dark-100 ui-circle ui-ease-btn">
+                                                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-theme-sub ui-fill-dark-100 ui-circle ui-ease-btn">
                                                         Continue
                                                         <svg class="ui-icon ui-margin-5-l"><use href="#arrow-right"/></svg>
                                                     </a>
@@ -135,7 +135,7 @@
                                                     Aenean vel justo sit amet velit dapibus ultrices nec at purus. In non finibus nisi. Vestibulum porta lectus dolor, a ullamcorper lorem feugiat varius.
                                                     <br><br>
 
-                                                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-theme-sub ui-fill-dark-100 ui-circle ui-ease-btn">
+                                                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-theme-sub ui-fill-dark-100 ui-circle ui-ease-btn">
                                                         Continue
                                                         <svg class="ui-icon ui-margin-5-l"><use href="#arrow-right"/></svg>
                                                     </a>

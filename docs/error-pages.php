@@ -33,7 +33,7 @@
                         <span class="ui-inline-block">3</span>
                     </p>
                     <p class="ui-highlight ui-font-18 ui-font-readable">You don't have access to this page.<br>Please contact support if this wasn't supposed to happen.</p>
-                    <a class="ui-color-yellow ui-btn ui-btn-ghost ui-border-dual ui-padding-30-h ui-circle ui-ease-btn" href="#">
+                    <a class="ui-color-yellow ui-btn ui-btn-ghost ui-border-dual ui-circle ui-ease-btn" href="#">
                         <svg class="ui-icon ui-margin-5-r ui-no-opacity"><use href="#long-arrow-left"/></svg>
                         Go Back
                     </a>
@@ -49,7 +49,7 @@
                         <svg class="ui-icon"><use href="#face-blank"/></svg>
                     </p>
                     <p class="ui-highlight ui-font-18 ui-font-readable">We are having some issues at the moment.<br>We will have it fixed in no time!</p>
-                    <a class="ui-color-orange ui-btn ui-btn-ghost ui-border-dual ui-padding-30-h ui-circle ui-ease-btn" href="#">
+                    <a class="ui-color-orange ui-btn ui-btn-ghost ui-border-dual ui-circle ui-ease-btn" href="#">
                         <svg class="ui-icon ui-margin-5-r ui-no-opacity"><use href="#long-arrow-left"/></svg>
                         Go Back
                     </a>

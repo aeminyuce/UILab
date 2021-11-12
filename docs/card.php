@@ -46,9 +46,9 @@
                         </div>
                         <div class="ui-card-side ui-padding-15 ui-align-r ui-sm-align-c ui-border-t ui-ease-2nd-btn">
                             <form action="#">
-                                <button type="button" class="ui-btn ui-padding-30-h ui-btn-ghost ui-border-dual ui-circle">Cancel</button>
-                                <button type="submit" class="ui-btn ui-padding-30-h ui-circle ui-theme-yellow ui-fill-dark-100">Show Later</button>
-                                <button type="submit" class="ui-btn ui-padding-30-h ui-circle ui-theme-green ui-fill-dark-100">Accept</button>
+                                <button type="button" class="ui-btn ui-btn-ghost ui-border-dual ui-circle">Cancel</button>
+                                <button type="submit" class="ui-btn ui-circle ui-theme-yellow ui-fill-dark-100">Show Later</button>
+                                <button type="submit" class="ui-btn ui-circle ui-theme-green ui-fill-dark-100">Accept</button>
                             </form>
                         </div>
                     </div>
@@ -262,7 +262,7 @@
                         </a>
                     </div>
                     <div class="ui-card-side ui-padding-30-h ui-padding-15-v ui-fill-light-300 ui-align-r ui-xs-align-c">
-                        <a href="#" class="ui-text ui-font-underline">Card Footer Link</a>
+                        <a href="#" class="ui-link ui-font-hoverline">Card Footer Link</a>
                     </div>
                 </div>
 
@@ -280,7 +280,7 @@
                         </a>
                     </div>
                     <div class="ui-card-side ui-padding-30-h ui-padding-15-v ui-fill-light-300 ui-align-r ui-xs-align-c">
-                        <a href="#" class="ui-text ui-font-underline">Card Footer Link</a>
+                        <a href="#" class="ui-link ui-font-hoverline">Card Footer Link</a>
                     </div>
                 </div>
 

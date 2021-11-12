@@ -19,6 +19,8 @@
     }
 }
 
+.ui-text:not(.ui-link) { word-wrap: break-word; text-decoration: none; }
+
 ._theme(@name; @color) {
     @theme-bg-vars: {
         light-100: fade(lighten(@color, 10%), 15%);

@@ -41,10 +41,6 @@
                                         </ul>
                                     </div>
                                     <a class="ui-btn ui-btn-sm-fluid ui-btn-ghost" href="#">
-                                        <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#users"/></svg>
-                                        Team
-                                    </a>
-                                    <a class="ui-btn ui-btn-sm-fluid ui-btn-ghost" href="#">
                                         <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#coins"/></svg>
                                         Pricing
                                     </a>
@@ -52,15 +48,14 @@
                                         <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#envelope-open"/></svg>
                                         Contact
                                     </a>
-                                    <span class="ui-inline-block ui-margin-10-h ui-hidden-md"></span>
-                                    <span class="ui-sp-10 ui-visible-sm"></span>
-                                    <a class="ui-btn ui-btn-sm-fluid ui-fill-dark-100" href="#">
-                                        <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#sign-in"/></svg>
-                                        Login
+
+                                    <span class="ui-sp-15 ui-visible-md"></span>
+
+                                    <a title="Login" class="ui-btn ui-btn-square ui-fill-dark-100" href="#">
+                                        <svg class="ui-icon"><use href="#sign-in"/></svg>
                                     </a>
-                                    <a class="ui-btn ui-btn-sm-fluid ui-theme-farmer ui-fill-dark-100" href="#">
-                                        <svg class="ui-icon ui-margin-5-r ui-visible-sm"><use href="#user-plus"/></svg>
-                                        Sign Up
+                                    <a title="Sign Up" class="ui-btn ui-btn-square ui-theme-farmer ui-fill-dark-100" href="#">
+                                        <svg class="ui-icon"><use href="#user-plus"/></svg>
                                     </a>
                                 </div>
                             </div>
@@ -113,7 +108,7 @@
 
                                 <h2 class="ui-h2 ui-font-48 ui-font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="ui-highlight ui-font-22 ui-color-white-50 ui-font-readable">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
-                                <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-fill-dark-100 ui-ease-btn">
+                                <a href="#" class="ui-btn ui-btn-xs-fluid ui-fill-dark-100 ui-ease-btn">
                                     <svg class="ui-icon ui-margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
                                 </a>
@@ -151,7 +146,7 @@
 
                                 <h2 class="ui-h2 ui-font-48 ui-font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="ui-highlight ui-font-22 ui-color-white-50 ui-font-readable">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
-                                <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-fill-dark-100 ui-ease-btn">
+                                <a href="#" class="ui-btn ui-btn-xs-fluid ui-fill-dark-100 ui-ease-btn">
                                     <svg class="ui-icon ui-margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
                                 </a>
@@ -189,7 +184,7 @@
 
                                 <h2 class="ui-h2 ui-font-48 ui-font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="ui-highlight ui-font-22 ui-color-white-50 ui-font-readable">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
-                                <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-fill-dark-100 ui-ease-btn">
+                                <a href="#" class="ui-btn ui-btn-xs-fluid ui-fill-dark-100 ui-ease-btn">
                                     <svg class="ui-icon ui-margin-5-r"><use href="#moneys"/></svg>
                                     <b>Invest Now</b>
                                 </a>
@@ -365,7 +360,7 @@
             <div class="ui-tab-content ui-padding-10 ui-open ui-open-ease">
                 <div class="ui-row ui-sm-fluid ui-icons-sm ui-hover-shadow-2nd ui-hover-t-2nd">
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 ui-block">
                                 <span class="ui-font-22 ui-block">Ready to modern agriculture.</span>
@@ -389,7 +384,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 ui-block">
                                 <span class="ui-font-22 ui-block">Farmers happy now.</span>
@@ -413,7 +408,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 ui-block">
                                 <span class="ui-font-22 ui-block">New market prospects.</span>
@@ -437,7 +432,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 ui-block">
                                 <span class="ui-font-22 ui-block">About product breeding</span>
@@ -462,7 +457,7 @@
                     </div>
                 </div>
                 <div class="ui-align-c ui-padding-30-t ui-padding-10-b">
-                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                         <b>View all company news</b> <svg class="ui-icon ui-margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -470,7 +465,7 @@
             <div class="ui-tab-content ui-padding-10">
                 <div class="ui-row ui-sm-fluid">
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 ui-block">
                                 <span class="ui-font-22 ui-block">Farmers happy now.</span>
@@ -494,7 +489,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 ui-block">
                                 <span class="ui-font-22 ui-block">New market prospects.</span>
@@ -518,7 +513,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 ui-block">
                                 <span class="ui-font-22 ui-block">About product breeding</span>
@@ -542,7 +537,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 ui-block">
                                 <span class="ui-font-22 ui-block">Ready to modern agriculture.</span>
@@ -567,7 +562,7 @@
                     </div>
                 </div>
                 <div class="ui-align-c ui-padding-30-t ui-padding-10-b">
-                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                         <b>View all social news</b> <svg class="ui-icon ui-margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -575,7 +570,7 @@
             <div class="ui-tab-content ui-padding-10">
                 <div class="ui-row ui-sm-fluid">
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 ui-block">
                                 <span class="ui-font-22 ui-block">Farmers happy now.</span>
@@ -599,7 +594,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 ui-block">
                                 <span class="ui-font-22 ui-block">Ready to modern agriculture.</span>
@@ -623,7 +618,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 ui-block">
                                 <span class="ui-font-22 ui-block">About product breeding</span>
@@ -647,7 +642,7 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
 
                             <span class="ui-padding-15 ui-block">
                                 <span class="ui-font-22 ui-block">New market prospects.</span>
@@ -672,7 +667,7 @@
                     </div>
                 </div>
                 <div class="ui-align-c ui-padding-30-t ui-padding-10-b">
-                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                         <b>View all customer news</b> <svg class="ui-icon ui-margin-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -793,7 +788,7 @@
                             <span class="ui-sp-15"></span>
                             Pellentesque mattis sed diam a rutrum. Sed fermentum accumsan egestas.
                         </p>
-                        <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-20-h ui-margin-30-b ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                        <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
                             <b>View all statistics</b>
                             <svg class="ui-icon ui-margin-5-l"><use href="#long-arrow-right"/></svg>
                         </a>

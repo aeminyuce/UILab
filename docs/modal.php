@@ -56,8 +56,8 @@
             <div class="ui-col-6 ui-no-padding-v">
 
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Open modal window with id.</i>
-                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: '#myModalId01'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#myModalId01'});">Run Code</button>
+                <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: '#myModalID'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#myModalID'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-padding-t">
@@ -140,7 +140,7 @@
 
                 <i class="ui-color-black-50 ui-margin-5-b ui-block">Google map embed link with header and footer:</i>
                 <pre class="ui-pre ui-round ui-margin-5-b">ui.modal.open({<br>    source: '#myModal02'<br>    size: 'fullscreen'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#myModalId02', size: 'fullscreen'});">Run Code</button>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#myModalID02', size: 'fullscreen'});">Run Code</button>
 
             </div>
 
@@ -200,7 +200,7 @@
 </main>
 
 <!-- modal sources -->
-<div id="myModalId01" class="ui-modal myModal ui-theme-base">
+<div id="myModalID" class="ui-modal myModal ui-theme-base">
     <div class="ui-modal-header ui-fill-dark-100">
         <h4 class="ui-h4">Modal Header</h4>
         <div class="ui-modal-buttons ui-ease-1st-btn">
@@ -219,20 +219,6 @@
             <button type="button" class="ui-btn ui-btn-ghost ui-border-dual ui-circle" onclick="ui.modal.close(function () { alert('Modal closed!'); });">Callback</button>
             <button type="button" class="ui-btn ui-btn-ghost ui-border-dual ui-circle" onclick="ui.modal.close();">Cancel</button>
             <button type="submit" class="ui-btn ui-circle ui-theme-green ui-fill-dark-100" onclick="ui.modal.close();">Accept</button>
-        </div>
-    </div>
-</div>
-
-<div id="myModalId02" class="ui-modal">
-    <div class="ui-modal-header">
-        <h4 class="ui-h4">Modal Header</h4>
-    </div>
-    <div class="ui-modal-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="ui-modal-footer">
-        <div class="ui-modal-buttons ui-ease-1st-btn">
-            <button type="submit" class="ui-btn ui-padding-30-h ui-circle ui-theme-green ui-fill-dark-100" onclick="ui.modal.close();">Save</button>
         </div>
     </div>
 </div>

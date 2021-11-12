@@ -159,43 +159,43 @@
                 <div class="ui-align-l ui-sm-align-c ui-add-mobile-menu-r">
                     <h3 class="ui-h3 ui-margin-15">Components</h3>
                     <ul class="ui-list-unstyled ui-block-2nd ui-ease-2nd-button">
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=alerts">Alerts</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=breadcrumbs">Breadcrumbs</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=buttons">Buttons</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=calendar">Calendar</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=card">Card</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=carousel">Carousel</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=charts">Charts</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=countdown">Countdown</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=dropdown">Dropdown</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=error-pages">Error Pages</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=forms">Forms</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=grid">Grid</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=grid-list">Grid List</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=image-uploader">Image Uploader</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=list-group">List Group</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=listings">Listings</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=loading-mask">Loading Mask</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=modal">Modal</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=photo-gallery">Photo Gallery</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=photo-images">Photo Images</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=photo-slider">Photo Slider</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=pricing-tables">Pricing Tables</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=progress-bar">Progress Bar</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=steps">Steps</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=stripes">Stripes</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=svg-map">SVG Map</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=tables">Tables</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=tabs">Tabs</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=themes">Themes</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=timeline">Timeline</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=tooltip">Tooltip</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=typography">Typography</a></li>
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=weather">Weather</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=alerts">Alerts</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=breadcrumbs">Breadcrumbs</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=buttons">Buttons</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=calendar">Calendar</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=card">Card</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=carousel">Carousel</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=charts">Charts</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=countdown">Countdown</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=dropdown">Dropdown</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=error-pages">Error Pages</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=forms">Forms</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=grid">Grid</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=grid-list">Grid List</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=image-uploader">Image Uploader</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=list-group">List Group</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=listings">Listings</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=loading-mask">Loading Mask</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=modal">Modal</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=photo-gallery">Photo Gallery</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=photo-images">Photo Images</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=photo-slider">Photo Slider</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=pricing-tables">Pricing Tables</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=progress-bar">Progress Bar</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=steps">Steps</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=stripes">Stripes</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=svg-map">SVG Map</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=tables">Tables</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=tabs">Tabs</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=themes">Themes</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=timeline">Timeline</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=tooltip">Tooltip</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=typography">Typography</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=weather">Weather</a></li>
                     </ul>
                     <h3 class="ui-h3 ui-margin-15">Javascript</h3>
                     <ul class="ui-list-unstyled ui-block-2nd ui-ease-2nd-button">
-                        <li><a class="ui-btn ui-btn-ghost ui-padding-15-h" href="?p=ui">UI JS</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=ui">UI JS</a></li>
                     </ul>
                 </div>
 
@@ -211,11 +211,11 @@
                             <h4 class="ui-h4 ui-font-bold">For developing web interfaces fastly!</h4>
                             <span class="ui-sp-15"></span>
                             <div class="ui-form-lg ui-ease-1st-btn">
-                                <a href="?p=icons" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-margin-5-h ui-xs-no-margin-h ui-circle ui-fill-dark-300">
+                                <a href="?p=icons" class="ui-btn ui-btn-xs-fluid ui-margin-5-h ui-xs-no-margin-h ui-circle ui-fill-dark-300">
                                     <svg class="ui-icon ui-margin-5-r"><use href="#draw"/></svg>
                                     See Icons
                                 </a>
-                                <a href="?p=download" class="ui-btn ui-btn-xs-fluid ui-padding-30-h ui-margin-5-h ui-xs-no-margin-h ui-circle ui-fill-dark-100">
+                                <a href="?p=download" class="ui-btn ui-btn-xs-fluid ui-margin-5-h ui-xs-no-margin-h ui-circle ui-fill-dark-100">
                                     Download
                                     <svg class="ui-icon ui-margin-5-l"><use href="#long-arrow-right"/></svg>
                                 </a>

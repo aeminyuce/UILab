@@ -3568,7 +3568,7 @@ html .ui-row {
 .ui-font-hoverline:hover,
 .ui-font-hoverline-1st > *:hover,
 .ui-font-hoverline-2nd > * > *:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 .ui-font-lowercase {
   text-transform: lowercase;
@@ -3950,12 +3950,12 @@ dt + dd:not(:last-child) {
   white-space: nowrap;
 }
 .ui-btn:not(.ui-circle) {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 18px;
+  padding-left: 18px;
 }
 .ui-btn.ui-circle {
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .ui-btn[data-ui-notifier]:after {
   content: attr(data-ui-notifier);
@@ -4058,6 +4058,16 @@ dt + dd:not(:last-child) {
   padding-top: 12px;
   padding-bottom: 12px;
 }
+.ui-btn-lg:not(.ui-circle),
+.ui-form-lg .ui-btn:not(.ui-circle) {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.ui-btn-lg.ui-circle,
+.ui-form-lg .ui-btn.ui-circle {
+  padding-right: 36px;
+  padding-left: 36px;
+}
 .ui-btn-lg.ui-round,
 .ui-form-lg .ui-btn.ui-round {
   border-radius: 8px;
@@ -4090,12 +4100,12 @@ dt + dd:not(:last-child) {
   padding-bottom: 7px;
 }
 .ui-btn-sm:not(.ui-circle) {
-  padding-right: 7px;
-  padding-left: 7px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .ui-btn-sm.ui-circle {
-  padding-right: 13px;
-  padding-left: 13px;
+  padding-right: 27px;
+  padding-left: 27px;
 }
 .ui-btn-sm.ui-round {
   border-radius: 4px;
@@ -4124,12 +4134,12 @@ dt + dd:not(:last-child) {
   padding-bottom: 5px;
 }
 .ui-btn-xs:not(.ui-circle) {
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 13px;
+  padding-left: 13px;
 }
 .ui-btn-xs.ui-circle {
-  padding-right: 11px;
-  padding-left: 11px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 .ui-btn-xs.ui-round {
   border-radius: 3px;
@@ -7587,14 +7597,16 @@ button.ui-dialog-custom:focus {
 .ui-calendar th {
   font-weight: 700;
   vertical-align: bottom !important;
-  padding: 10px;
+  padding: 14px;
 }
 .ui-calendar tbody td {
   padding: 2px;
 }
 .ui-calendar tbody td.ui-passive span {
+  box-sizing: border-box;
+  font-size: 16px;
   min-height: 42px;
-  padding: 6px;
+  padding: 10px;
   display: block;
   opacity: 0.45;
 }
@@ -7603,7 +7615,7 @@ button.ui-dialog-custom:focus {
   width: 100%;
   min-height: 42px;
   background: transparent;
-  padding: 8px;
+  padding: 12px;
   display: block;
   border: 0;
   position: relative;
@@ -9714,6 +9726,10 @@ html:not(.ui-ie) .ui-svg-map svg {
 [class*="ui-fill-dark-"] a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
 [class*="ui-fill-dark-"] button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
   color: hsl(0, 0%, 100%);
+}
+.ui-text:not(.ui-link) {
+  word-wrap: break-word;
+  text-decoration: none;
 }
 .ui-theme-gray.ui-fill-light-100,
 .ui-theme-gray .ui-fill-light-100:not([class*="ui-theme-"]) {

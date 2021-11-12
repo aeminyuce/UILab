@@ -7,7 +7,7 @@
 @calendar-min-width-mobile:             (@layout-min - 55px);
 @calendar-shadow-size:                  5px 15px;
 
-@calendar-days-padding:                 10px;
+@calendar-days-padding:                 14px;
 @calendar-days-gap:                     2px;
 @calendar-days-passive-opacity:         .45;
 @calendar-icons-opacity:                .65;
@@ -107,7 +107,7 @@
             padding: @calendar-days-gap;
 
             &.ui-passive {
-                span { min-height: @btn-default; padding: (@calendar-days-padding - (@calendar-days-gap * 2)); display: block; opacity: @calendar-days-passive-opacity; }
+                span { box-sizing: border-box; font-size: @font-16; min-height: @btn-default; padding: (@calendar-days-padding - (@calendar-days-gap * 2)); display: block; opacity: @calendar-days-passive-opacity; }
             }
 
             button { font-size: @font-16; width: 100%; min-height: @btn-default; background: @no-color; padding: (@calendar-days-padding - @calendar-days-gap); display: block; border: 0; position: relative; }
@@ -256,6 +256,7 @@
                 display: block;
 
                 &:not(:last-child) { margin-bottom: @calendar-details-list-item-margin; }
+
                 & > i { font-size: @calendar-details-time-font-size; font-style: normal; line-height: normal; ._bg-var(btn-bg); padding: @calendar-details-time-padding (@calendar-details-time-padding * 2); margin-right: (@calendar-details-list-padding / 2); display: inline-block; border-radius: @calendar-details-content-radius; }
                 & > a {
                     ._color-var(black); text-decoration: underline;

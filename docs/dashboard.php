@@ -660,11 +660,11 @@
                                             <div class="ui-row">
                                                 <div class="ui-col-12 ui-align-r ui-xs-align-c ui-ease-1st-btn">
 
-                                                    <button type="reset" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-15-h ui-round">
+                                                    <button type="reset" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-round">
                                                         Cancel
                                                     </button>
 
-                                                    <button type="submit" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-padding-15-h ui-round ui-theme-green ui-fill-dark-100">
+                                                    <button type="submit" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-round ui-theme-green ui-fill-dark-100">
                                                         <svg class="ui-icon ui-margin-5-r"><use href="#save"/></svg> Save
                                                     </button>
 

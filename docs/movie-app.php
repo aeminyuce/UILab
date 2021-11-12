@@ -3,8 +3,9 @@
 
 <main class="ui-container ui-no-gutter">
     <div class="ui-col-static ui-no-fluid">
-        <div class="ui-col-200 ui-set-relative ui-hidden-md">
-            <div class="sidebar ui-col-200 ui-full-h ui-set-fixed ui-set-l ui-padding-5 ui-fill-dark-100 ui-hidden-md ui-scroll-v ui-scrollbar-faded">
+        <div class="ui-col-250 ui-set-relative ui-hidden-md">
+
+            <div class="sidebar ui-full-h ui-set-fixed ui-set-l ui-padding-5 ui-fill-dark-100 ui-hidden-md ui-scroll-v ui-scrollbar-faded">
 
                 <div class="ui-align-l ui-padding-10 ui-icons-no-opacity ui-icons-margin-10-r ui-form-lg ui-add-mobile-menu-l">
                     <h5 class="ui-h5 ui-color-white-50 ui-padding-15 ui-margin-5-b">LIBRARY</h5>
@@ -73,6 +74,7 @@
                 </div>
 
             </div>
+
         </div>
         <div class="ui-row ui-no-row-gap">
             <div class="ui-col-12">
@@ -138,11 +140,11 @@
                                         <h2 class="ui-h2 ui-font-bold">Related Video</h2>
                                         <b class="ui-font-16">Captain Marvel (2019)</b>
                                         <p class="ui-margin-10-v ui-font-readable">After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.</p>
-                                        <div class="ui-photos-holder ui-padding-15-h ui-hover-scale-more-2nd ui-ease-2nd-layout">
-                                            <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image.jpg" alt=""></a>
-                                            <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image2.jpg" alt=""></a>
-                                            <a href="#"><img class="ui-img-photo ui-border-lg ui-circle" src="img/profile-image3.jpg" alt=""></a>
-                                            <a class="ui-btn ui-circle ui-ease-btn" href="#">+38</a>
+                                        <div class="ui-photos-holder ui-hover-scale-more-2nd ui-ease-2nd-layout">
+                                            <a href="#"><img class="ui-img-photo ui-border-dual ui-circle" src="img/profile-image.jpg" alt=""></a>
+                                            <a href="#"><img class="ui-img-photo ui-border-dual ui-circle" src="img/profile-image2.jpg" alt=""></a>
+                                            <a href="#"><img class="ui-img-photo ui-border-dual ui-circle" src="img/profile-image3.jpg" alt=""></a>
+                                            <a class="ui-btn ui-btn-lg ui-btn-square ui-btn-ghost ui-circle ui-ease-btn" href="#">+38</a>
                                         </div>
                                     </div>
                                 </div>
@@ -158,7 +160,7 @@
                 <div class="ui-carousel ui-half-sized ui-margin-15-h ui-md-no-margin" data-ui-col-xl="8" data-ui-col-lg="6" data-ui-col="3" data-ui-col-md="4" data-ui-col-sm="4" data-ui-col-xs="2">
                     <div class="ui-carousel-slider ui-block-2nd ui-hover-scale-2nd ui-ease-layout ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_01.jpg" alt="">
                                 <b class="ui-font-16">Captain Marvel</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2019 &nbsp; Action, Sci-Fi</span>
@@ -169,7 +171,7 @@
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_02.jpg" alt="">
                                 <b class="ui-font-16">Avengers: Endgame</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2019 &nbsp; Action, Sci-Fi</span>
@@ -180,7 +182,7 @@
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_03.jpg" alt="">
                                 <b class="ui-font-16">Captain America</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2014 &nbsp; Action, Sci-Fi</span>
@@ -191,7 +193,7 @@
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_04.jpg" alt="">
                                 <b class="ui-font-16">Ant-Man</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2015 &nbsp; Action, Comedy</span>
@@ -202,7 +204,7 @@
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_05.jpg" alt="">
                                 <b class="ui-font-16">Venom</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2018 &nbsp; Action, Thriller</span>
@@ -213,7 +215,7 @@
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_06.jpg" alt="">
                                 <b class="ui-font-16">Justice League</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2017 &nbsp; Action, Fantasy</span>
@@ -224,7 +226,7 @@
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_01.jpg" alt="">
                                 <b class="ui-font-16">Captain Marvel</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2019 &nbsp; Action, Sci-Fi</span>
@@ -235,7 +237,7 @@
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_02.jpg" alt="">
                                 <b class="ui-font-16">Avengers: Endgame</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2019 &nbsp; Action, Sci-Fi</span>
@@ -246,7 +248,7 @@
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_03.jpg" alt="">
                                 <b class="ui-font-16">Captain America</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2014 &nbsp; Action, Sci-Fi</span>
@@ -257,7 +259,7 @@
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_04.jpg" alt="">
                                 <b class="ui-font-16">Ant-Man</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2015 &nbsp; Action, Comedy</span>
@@ -268,7 +270,7 @@
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_05.jpg" alt="">
                                 <b class="ui-font-16">Venom</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2018 &nbsp; Action, Thriller</span>
@@ -279,7 +281,7 @@
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_06.jpg" alt="">
                                 <b class="ui-font-16">Justice League</b>
                                 <span class="ui-color-black-50 ui-margin-5-b ui-block">2017 &nbsp; Action, Fantasy</span>
@@ -310,73 +312,73 @@
                 <div class="ui-carousel ui-half-sized ui-margin-15-h ui-md-no-margin" data-ui-col-xl="6" data-ui-col-lg="6" data-ui-col="3" data-ui-col-md="4" data-ui-col-sm="4" data-ui-col-xs="2">
                     <div class="ui-carousel-slider ui-block-2nd ui-hover-scale-2nd ui-ease-layout ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_01.jpg" alt="">
                                 <b class="ui-font-16">Action</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_02.jpg" alt="">
                                 <b class="ui-font-16">Adventure</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_03.jpg" alt="">
                                 <b class="ui-font-16">Comedy</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_04.jpg" alt="">
                                 <b class="ui-font-16">Sci-Fi</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_05.jpg" alt="">
                                 <b class="ui-font-16">Animation</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_06.jpg" alt="">
                                 <b class="ui-font-16">Horror</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_01.jpg" alt="">
                                 <b class="ui-font-16">Action</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_02.jpg" alt="">
                                 <b class="ui-font-16">Adventure</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_03.jpg" alt="">
                                 <b class="ui-font-16">Comedy</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_04.jpg" alt="">
                                 <b class="ui-font-16">Sci-Fi</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_05.jpg" alt="">
                                 <b class="ui-font-16">Animation</b>
                             </a>
                         </div>
                         <div class="ui-slide-content ui-padding-15">
-                            <a class="ui-ease-default" href="#">
+                            <a class="ui-link ui-ease-default" href="#">
                                 <img class="ui-img-fluid ui-round ui-block ui-margin-15-b ui-shadow" src="img/movie_category_06.jpg" alt="">
                                 <b class="ui-font-16">Horror</b>
                             </a>

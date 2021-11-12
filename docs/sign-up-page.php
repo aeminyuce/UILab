@@ -20,7 +20,7 @@
                     <div class="ui-row">
                         <div class="ui-col-12 ui-padding-15-v ui-align-c">
                             <span class="ui-sp-30"></span>
-                            <a href="?l=login-page" class="ui-btn ui-color-white ui-btn-lg ui-btn-ghost ui-btn-ghost-border ui-btn-sm-fluid ui-padding-30-h ui-circle ui-border-dual ui-stroke ui-ease-btn">
+                            <a href="?l=login-page" class="ui-btn ui-color-white ui-btn-lg ui-btn-ghost ui-btn-ghost-border ui-btn-sm-fluid ui-circle ui-border-dual ui-stroke ui-ease-btn">
                                 <span class="ui-color-white">Have you already an account?</span>
                                 <span class="ui-text ui-hidden-sm">Click here to login.</span>
                             </a>
