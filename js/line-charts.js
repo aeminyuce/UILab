@@ -77,7 +77,7 @@ ui.lineCharts = {
     dataY: 'data-ui-y',
 
     dataSize: 'data-ui-size',
-    dataLink: 'data-ui-link',
+    dataLink: 'data-ui-url',
     dataType: 'data-ui-type',
     dataName: 'data-ui-name',
     dataStep: 'data-ui-step'

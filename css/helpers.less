@@ -225,24 +225,6 @@
     }
 }
 
-.ui-list- {
-    &custom,&inline {
-        list-style: none;
-
-        ul,ol { list-style: none; padding: 0; margin: 0; }
-    }
-
-    &unstyled {
-        list-style: none;
-
-        &:not(:last-child) { margin-bottom: @highlight-space; }
-    }
-
-    &inline {
-        ul,ol,li { vertical-align: middle; display: inline-block; }
-    }
-}
-
 [class*="ui-sp-"] { width: 100%; .ui-visible(); clear: both !important; }
 
 each(@increases, {

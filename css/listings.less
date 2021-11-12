@@ -1,29 +1,58 @@
 // out: false
 /* listings */ @import (reference) 'ui.less';
 
-@list-gap-less:                         2px;
+@list-gap-sm:                           2px;
 @list-gap:                              (@highlight-space / 2);
-@list-gap-more:                         (@list-gap * 3);
+@list-gap-lg:                           (@list-gap * 3);
 
 @horizontal-list-side:                  170px;
 @horizontal-list-space:                 10px;
 
 @list-column-size:                      range(2, 6, 1); // start, end, step
 
-[class*="ui-list-column-"] {
-    display: flex; flex-wrap: wrap;
+.ui-list- {
+    & {
+        &custom,&inline,&unstyled {
+            li > a:not(.ui-btn) { ._color-var(black); word-wrap: break-word; text-decoration: none; }
+        }
+        &custom,&inline {
+            list-style: none;
 
-    & > li { break-inside: avoid; }
-}
+            ul,ol { list-style: none; padding: 0; margin: 0; }
+        }
 
-each(@increases, {
-    @name: unit(@value);
+        &unstyled {
+            list-style: none;
 
-    .ui-list-spacer-@{name} {
-        li { margin-bottom: @value; }
-        ul,ol { margin-top: @value; }
+            &:not(:last-child) { margin-bottom: @highlight-space; }
+        }
+
+        &inline {
+            ul,ol,li { vertical-align: middle; display: inline-block; }
+        }
     }
-});
+
+    &gap {
+        &-sm.ui-list-inline {
+            li:not(:last-child) { padding-right: @list-gap-sm; }
+        }
+        &.ui-list-inline {
+            li:not(:last-child) { padding-right: @list-gap; }
+        }
+        &-lg.ui-list-inline {
+            li:not(:last-child) { padding-right: @list-gap-lg; }
+        }
+    }
+
+    each(@increases, {
+        @name: unit(@value);
+
+        &spacer-@{name} {
+            li { margin-bottom: @value; }
+            ul,ol { margin-top: @value; }
+        }
+    });
+}
 
 [class*="ui-list-spacer-"] {
     &:not([class*="ui-list-column-"]):not(.ui-list-inline) {
@@ -31,16 +60,10 @@ each(@increases, {
     }
 }
 
-.ui-list-gap {
-    &-less.ui-list-inline {
-        li:not(:last-child) { padding-right: @list-gap-less; }
-    }
-    &.ui-list-inline {
-        li:not(:last-child) { padding-right: @list-gap; }
-    }
-    &-more.ui-list-inline {
-        li:not(:last-child) { padding-right: @list-gap-more; }
-    }
+[class*="ui-list-column-"] {
+    display: flex; flex-wrap: wrap;
+
+    & > li { break-inside: avoid; }
 }
 
 dl {
@@ -49,6 +72,7 @@ dl {
     &:before,&:after { content: ""; display: table; }
     &:after { clear: both; }
 }
+dd { margin-left: 0; }
 dt {
     font-weight: @font-bold;
 

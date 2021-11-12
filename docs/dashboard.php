@@ -250,28 +250,28 @@
                         </button>
                         <ul class="ui-dropdown-menu ui-list-column-2 ui-has-icon ui-round ui-shadow-lg">
                             <li>
-                                <a class="ui-link" href="#"><b class="ui-list-icon">23</b> Waiting</a>
+                                <a href="#"><b class="ui-list-icon">23</b> Waiting</a>
                             </li>
                             <li>
-                                <a class="ui-link" href="#"><b class="ui-list-icon">258</b> Expert</a>
+                                <a href="#"><b class="ui-list-icon">258</b> Expert</a>
                             </li>
                             <li>
-                                <a class="ui-link" href="#"><b class="ui-list-icon">49</b> On Audit</a>
+                                <a href="#"><b class="ui-list-icon">49</b> On Audit</a>
                             </li>
                             <li>
-                                <a class="ui-link" href="#"><b class="ui-list-icon">68</b> Delayed</a>
+                                <a href="#"><b class="ui-list-icon">68</b> Delayed</a>
                             </li>
                             <li>
-                                <a class="ui-link" href="#"><b class="ui-list-icon">23</b> Waiting</a>
+                                <a href="#"><b class="ui-list-icon">23</b> Waiting</a>
                             </li>
                             <li>
-                                <a class="ui-link" href="#"><b class="ui-list-icon">258</b> Expert</a>
+                                <a href="#"><b class="ui-list-icon">258</b> Expert</a>
                             </li>
                             <li>
-                                <a class="ui-link" href="#"><b class="ui-list-icon">49</b> On Audit</a>
+                                <a href="#"><b class="ui-list-icon">49</b> On Audit</a>
                             </li>
                             <li>
-                                <a class="ui-link" href="#"><b class="ui-list-icon">68</b> Delayed</a>
+                                <a href="#"><b class="ui-list-icon">68</b> Delayed</a>
                             </li>
                         </ul>
                     </div>
@@ -1028,40 +1028,40 @@
                                         <div class="ui-tab-content ui-open ui-open-ease">
                                             <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                                 <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
-                                                    <li data-ui-y="10" data-ui-link="#"></li>
-                                                    <li data-ui-y="30" data-ui-link="#"></li>
-                                                    <li data-ui-y="70" data-ui-link="#"></li>
-                                                    <li data-ui-y="120" data-ui-link="#"></li>
-                                                    <li data-ui-y="100" data-ui-link="#"></li>
-                                                    <li data-ui-y="150" data-ui-link="#"></li>
+                                                    <li data-ui-y="10" data-ui-url="#"></li>
+                                                    <li data-ui-y="30" data-ui-url="#"></li>
+                                                    <li data-ui-y="70" data-ui-url="#"></li>
+                                                    <li data-ui-y="120" data-ui-url="#"></li>
+                                                    <li data-ui-y="100" data-ui-url="#"></li>
+                                                    <li data-ui-y="150" data-ui-url="#"></li>
                                                 </ul>
                                                 <ul class="ui-lines" data-ui-name="Orders" data-ui-type="dashed">
-                                                    <li data-ui-y="50" data-ui-link="#"></li>
-                                                    <li data-ui-y="10" data-ui-link="#"></li>
-                                                    <li data-ui-y="50" data-ui-link="#"></li>
-                                                    <li data-ui-y="40" data-ui-link="#"></li>
-                                                    <li data-ui-y="80" data-ui-link="#"></li>
-                                                    <li data-ui-y="50" data-ui-link="#"></li>
+                                                    <li data-ui-y="50" data-ui-url="#"></li>
+                                                    <li data-ui-y="10" data-ui-url="#"></li>
+                                                    <li data-ui-y="50" data-ui-url="#"></li>
+                                                    <li data-ui-y="40" data-ui-url="#"></li>
+                                                    <li data-ui-y="80" data-ui-url="#"></li>
+                                                    <li data-ui-y="50" data-ui-url="#"></li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="ui-tab-content">
                                             <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                                 <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
-                                                    <li data-ui-y="10" data-ui-link="#"></li>
-                                                    <li data-ui-y="60" data-ui-link="#"></li>
-                                                    <li data-ui-y="20" data-ui-link="#"></li>
-                                                    <li data-ui-y="120" data-ui-link="#"></li>
-                                                    <li data-ui-y="10" data-ui-link="#"></li>
-                                                    <li data-ui-y="100" data-ui-link="#"></li>
+                                                    <li data-ui-y="10" data-ui-url="#"></li>
+                                                    <li data-ui-y="60" data-ui-url="#"></li>
+                                                    <li data-ui-y="20" data-ui-url="#"></li>
+                                                    <li data-ui-y="120" data-ui-url="#"></li>
+                                                    <li data-ui-y="10" data-ui-url="#"></li>
+                                                    <li data-ui-y="100" data-ui-url="#"></li>
                                                 </ul>
                                                 <ul class="ui-lines" data-ui-name="Orders" data-ui-type="dashed">
-                                                    <li data-ui-y="0" data-ui-link="#"></li>
-                                                    <li data-ui-y="20" data-ui-link="#"></li>
-                                                    <li data-ui-y="50" data-ui-link="#"></li>
-                                                    <li data-ui-y="40" data-ui-link="#"></li>
-                                                    <li data-ui-y="70" data-ui-link="#"></li>
-                                                    <li data-ui-y="50" data-ui-link="#"></li>
+                                                    <li data-ui-y="0" data-ui-url="#"></li>
+                                                    <li data-ui-y="20" data-ui-url="#"></li>
+                                                    <li data-ui-y="50" data-ui-url="#"></li>
+                                                    <li data-ui-y="40" data-ui-url="#"></li>
+                                                    <li data-ui-y="70" data-ui-url="#"></li>
+                                                    <li data-ui-y="50" data-ui-url="#"></li>
                                                 </ul>
                                             </div>
                                         </div>

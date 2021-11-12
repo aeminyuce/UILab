@@ -69,7 +69,7 @@
 
                 <h3 class="ui-h3">List Gaps (only inline lists)</h3>
                 <div class="ui-padding-30-b">
-                    <ul class="ui-list-inline ui-list-gap-less">
+                    <ul class="ui-list-inline ui-list-gap-lg">
                         <li>Lorem ipsum</li>
                         <li>dolor sit amet</li>
                         <li>Consectetur</li>
@@ -81,7 +81,7 @@
                         <li>Consectetur</li>
                         <li>adipiscing elit</li>
                     </ul>
-                    <ul class="ui-list-inline ui-list-gap-more">
+                    <ul class="ui-list-inline ui-list-gap-sm">
                         <li>Lorem ipsum</li>
                         <li>dolor sit amet</li>
                         <li>Consectetur</li>
@@ -186,8 +186,8 @@
                 <h3 class="ui-h3">Description Lists</h3>
                 <div class="ui-padding-30-b">
                     <dl>
-                        <dt>Description lists</dt>
-                        <dd>A description list is perfect for defining terms.</dd>
+                        <dt class="padding-10">Description lists</dt>
+                        <dd class="padding-10">A description list is perfect for defining terms.</dd>
                         <dt>Euismod</dt>
                         <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
                         <dd>Donec id elit non mi porta gravida at eget metus.</dd>

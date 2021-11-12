@@ -24,17 +24,17 @@
 
                         <h5 class="ui-h5 ui-margin-15-b ui-color-black-50">CATEGORIES</h5>
                         <ul class="ui-list-unstyled ui-list-spacer-10">
-                            <li><a class="ui-link" href="#">Headphones</a></li>
+                            <li><a href="#">Headphones</a></li>
                             <li>
-                                <a class="ui-link" href="#"><b>Over-Ear Headphones</b></a>
+                                <a href="#"><b>Over-Ear Headphones</b></a>
                                 <ul class="ui-list-unstyled ui-font-hoverline-2nd ui-padding-15-l">
-                                    <li><a class="ui-link" href="#">Sony</a></li>
-                                    <li><a class="ui-link" href="#">Logitech</a></li>
-                                    <li><a class="ui-link" href="#">JBL</a></li>
-                                    <li><a class="ui-link" href="#">Beats</a></li>
-                                    <li><a class="ui-link" href="#">Pioneer</a></li>
-                                    <li><a class="ui-link" href="#">Philips</a></li>
-                                    <li><a class="ui-link" href="#">Sony</a></li>
+                                    <li><a href="#">Sony</a></li>
+                                    <li><a href="#">Logitech</a></li>
+                                    <li><a href="#">JBL</a></li>
+                                    <li><a href="#">Beats</a></li>
+                                    <li><a href="#">Pioneer</a></li>
+                                    <li><a href="#">Philips</a></li>
+                                    <li><a href="#">Sony</a></li>
                                 </ul>
                             </li>
                         </ul>

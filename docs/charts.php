@@ -65,22 +65,22 @@
                         <h5 class="ui-h5 ui-font-bold ui-align-c">Line Charts</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-name="1st">
-                                <li data-ui-y="-34" data-ui-link="#1"></li>
-                                <li data-ui-y="-56" data-ui-link="#2"></li>
-                                <li data-ui-y="-112" data-ui-link="#3"></li>
-                                <li data-ui-y="-140" data-ui-link="#4"></li>
-                                <li data-ui-y="-28" data-ui-link="#5"></li>
-                                <li data-ui-y="-20" data-ui-link="#6"></li>
-                                <li data-ui-y="-28" data-ui-link="#7"></li>
+                                <li data-ui-y="-34" data-ui-url="#1"></li>
+                                <li data-ui-y="-56" data-ui-url="#2"></li>
+                                <li data-ui-y="-112" data-ui-url="#3"></li>
+                                <li data-ui-y="-140" data-ui-url="#4"></li>
+                                <li data-ui-y="-28" data-ui-url="#5"></li>
+                                <li data-ui-y="-20" data-ui-url="#6"></li>
+                                <li data-ui-y="-28" data-ui-url="#7"></li>
                             </ul>
                             <ul class="ui-lines" data-ui-name="2nd">
-                                <li data-ui-y="120" data-ui-link="#1"></li>
-                                <li data-ui-y="20" data-ui-link="#2"></li>
-                                <li data-ui-y="159" data-ui-link="#3"></li>
-                                <li data-ui-y="120" data-ui-link="#4"></li>
-                                <li data-ui-y="80" data-ui-link="#5"></li>
-                                <li data-ui-y="0" data-ui-link="#6"></li>
-                                <li data-ui-y="20" data-ui-link="#7"></li>
+                                <li data-ui-y="120" data-ui-url="#1"></li>
+                                <li data-ui-y="20" data-ui-url="#2"></li>
+                                <li data-ui-y="159" data-ui-url="#3"></li>
+                                <li data-ui-y="120" data-ui-url="#4"></li>
+                                <li data-ui-y="80" data-ui-url="#5"></li>
+                                <li data-ui-y="0" data-ui-url="#6"></li>
+                                <li data-ui-y="20" data-ui-url="#7"></li>
                             </ul>
                         </div>
                     </div>
@@ -88,31 +88,31 @@
                         <h5 class="ui-h5 ui-font-bold ui-align-c">Curved Line Charts</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-name="1st" data-ui-type="curved dotted">
-                                <li data-ui-y="55" data-ui-link="#1"></li>
-                                <li data-ui-y="70" data-ui-link="#2"></li>
-                                <li data-ui-y="92" data-ui-link="#3"></li>
-                                <li data-ui-y="55" data-ui-link="#4"></li>
-                                <li data-ui-y="89" data-ui-link="#5"></li>
-                                <li data-ui-y="98" data-ui-link="#6"></li>
-                                <li data-ui-y="116" data-ui-link="#7"></li>
+                                <li data-ui-y="55" data-ui-url="#1"></li>
+                                <li data-ui-y="70" data-ui-url="#2"></li>
+                                <li data-ui-y="92" data-ui-url="#3"></li>
+                                <li data-ui-y="55" data-ui-url="#4"></li>
+                                <li data-ui-y="89" data-ui-url="#5"></li>
+                                <li data-ui-y="98" data-ui-url="#6"></li>
+                                <li data-ui-y="116" data-ui-url="#7"></li>
                             </ul>
                             <ul class="ui-lines" data-ui-name="2nd" data-ui-type="curved">
-                                <li data-ui-y="120" data-ui-link="#1"></li>
-                                <li data-ui-y="20" data-ui-link="#2"></li>
-                                <li data-ui-y="159" data-ui-link="#3"></li>
-                                <li data-ui-y="120" data-ui-link="#4"></li>
-                                <li data-ui-y="60" data-ui-link="#5"></li>
-                                <li data-ui-y="0" data-ui-link="#6"></li>
-                                <li data-ui-y="20" data-ui-link="#7"></li>
+                                <li data-ui-y="120" data-ui-url="#1"></li>
+                                <li data-ui-y="20" data-ui-url="#2"></li>
+                                <li data-ui-y="159" data-ui-url="#3"></li>
+                                <li data-ui-y="120" data-ui-url="#4"></li>
+                                <li data-ui-y="60" data-ui-url="#5"></li>
+                                <li data-ui-y="0" data-ui-url="#6"></li>
+                                <li data-ui-y="20" data-ui-url="#7"></li>
                             </ul>
                             <ul class="ui-lines" data-ui-name="3rd" data-ui-type="curved">
-                                <li data-ui-y="32" data-ui-link="#1"></li>
-                                <li data-ui-y="52" data-ui-link="#2"></li>
-                                <li data-ui-y="117" data-ui-link="#3"></li>
-                                <li data-ui-y="85" data-ui-link="#4"></li>
-                                <li data-ui-y="137" data-ui-link="#5"></li>
-                                <li data-ui-y="144" data-ui-link="#6"></li>
-                                <li data-ui-y="59" data-ui-link="#7"></li>
+                                <li data-ui-y="32" data-ui-url="#1"></li>
+                                <li data-ui-y="52" data-ui-url="#2"></li>
+                                <li data-ui-y="117" data-ui-url="#3"></li>
+                                <li data-ui-y="85" data-ui-url="#4"></li>
+                                <li data-ui-y="137" data-ui-url="#5"></li>
+                                <li data-ui-y="144" data-ui-url="#6"></li>
+                                <li data-ui-y="59" data-ui-url="#7"></li>
                             </ul>
                         </div>
                     </div>
@@ -120,22 +120,22 @@
                         <h5 class="ui-h5 ui-font-bold ui-align-c">Filled Line Charts</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-name="1st" data-ui-type="filled">
-                                <li data-ui-y="-34" data-ui-link="#1"></li>
-                                <li data-ui-y="-56" data-ui-link="#2"></li>
-                                <li data-ui-y="-112" data-ui-link="#3"></li>
-                                <li data-ui-y="-140" data-ui-link="#4"></li>
-                                <li data-ui-y="-28" data-ui-link="#5"></li>
-                                <li data-ui-y="-20" data-ui-link="#6"></li>
-                                <li data-ui-y="-28" data-ui-link="#7"></li>
+                                <li data-ui-y="-34" data-ui-url="#1"></li>
+                                <li data-ui-y="-56" data-ui-url="#2"></li>
+                                <li data-ui-y="-112" data-ui-url="#3"></li>
+                                <li data-ui-y="-140" data-ui-url="#4"></li>
+                                <li data-ui-y="-28" data-ui-url="#5"></li>
+                                <li data-ui-y="-20" data-ui-url="#6"></li>
+                                <li data-ui-y="-28" data-ui-url="#7"></li>
                             </ul>
                             <ul class="ui-lines" data-ui-name="2nd" data-ui-type="filled">
-                                <li data-ui-y="120" data-ui-link="#1"></li>
-                                <li data-ui-y="20" data-ui-link="#2"></li>
-                                <li data-ui-y="159" data-ui-link="#3"></li>
-                                <li data-ui-y="120" data-ui-link="#4"></li>
-                                <li data-ui-y="80" data-ui-link="#5"></li>
-                                <li data-ui-y="0" data-ui-link="#6"></li>
-                                <li data-ui-y="20" data-ui-link="#7"></li>
+                                <li data-ui-y="120" data-ui-url="#1"></li>
+                                <li data-ui-y="20" data-ui-url="#2"></li>
+                                <li data-ui-y="159" data-ui-url="#3"></li>
+                                <li data-ui-y="120" data-ui-url="#4"></li>
+                                <li data-ui-y="80" data-ui-url="#5"></li>
+                                <li data-ui-y="0" data-ui-url="#6"></li>
+                                <li data-ui-y="20" data-ui-url="#7"></li>
                             </ul>
                         </div>
                     </div>
@@ -143,31 +143,31 @@
                         <h5 class="ui-h5 ui-font-bold ui-align-c">Filled &amp; Curved Line Charts</h5>
                         <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-lines" data-ui-name="1st" data-ui-type="curved dotted">
-                                <li data-ui-y="-34" data-ui-link="#1"></li>
-                                <li data-ui-y="-56" data-ui-link="#2"></li>
-                                <li data-ui-y="-112" data-ui-link="#3"></li>
-                                <li data-ui-y="-140" data-ui-link="#4"></li>
-                                <li data-ui-y="-28" data-ui-link="#5"></li>
-                                <li data-ui-y="-20" data-ui-link="#6"></li>
-                                <li data-ui-y="-28" data-ui-link="#7"></li>
+                                <li data-ui-y="-34" data-ui-url="#1"></li>
+                                <li data-ui-y="-56" data-ui-url="#2"></li>
+                                <li data-ui-y="-112" data-ui-url="#3"></li>
+                                <li data-ui-y="-140" data-ui-url="#4"></li>
+                                <li data-ui-y="-28" data-ui-url="#5"></li>
+                                <li data-ui-y="-20" data-ui-url="#6"></li>
+                                <li data-ui-y="-28" data-ui-url="#7"></li>
                             </ul>
                             <ul class="ui-lines" data-ui-name="2nd" data-ui-type="curved filled">
-                                <li data-ui-y="120" data-ui-link="#1"></li>
-                                <li data-ui-y="20" data-ui-link="#2"></li>
-                                <li data-ui-y="159" data-ui-link="#3"></li>
-                                <li data-ui-y="120" data-ui-link="#4"></li>
-                                <li data-ui-y="80" data-ui-link="#5"></li>
-                                <li data-ui-y="0" data-ui-link="#6"></li>
-                                <li data-ui-y="20" data-ui-link="#7"></li>
+                                <li data-ui-y="120" data-ui-url="#1"></li>
+                                <li data-ui-y="20" data-ui-url="#2"></li>
+                                <li data-ui-y="159" data-ui-url="#3"></li>
+                                <li data-ui-y="120" data-ui-url="#4"></li>
+                                <li data-ui-y="80" data-ui-url="#5"></li>
+                                <li data-ui-y="0" data-ui-url="#6"></li>
+                                <li data-ui-y="20" data-ui-url="#7"></li>
                             </ul>
                             <ul class="ui-lines" data-ui-name="3rd" data-ui-type="curved filled">
-                                <li data-ui-y="32" data-ui-link="#1"></li>
-                                <li data-ui-y="52" data-ui-link="#2"></li>
-                                <li data-ui-y="117" data-ui-link="#3"></li>
-                                <li data-ui-y="85" data-ui-link="#4"></li>
-                                <li data-ui-y="137" data-ui-link="#5"></li>
-                                <li data-ui-y="144" data-ui-link="#6"></li>
-                                <li data-ui-y="59" data-ui-link="#7"></li>
+                                <li data-ui-y="32" data-ui-url="#1"></li>
+                                <li data-ui-y="52" data-ui-url="#2"></li>
+                                <li data-ui-y="117" data-ui-url="#3"></li>
+                                <li data-ui-y="85" data-ui-url="#4"></li>
+                                <li data-ui-y="137" data-ui-url="#5"></li>
+                                <li data-ui-y="144" data-ui-url="#6"></li>
+                                <li data-ui-y="59" data-ui-url="#7"></li>
                             </ul>
                         </div>
                     </div>
@@ -177,22 +177,22 @@
                                 <h5 class="ui-h5 ui-font-bold ui-align-c">Filled Line Charts</h5>
                                 <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                                     <ul class="ui-lines" data-ui-name="1st" data-ui-type="filled">
-                                        <li data-ui-y="-34" data-ui-link="#1"></li>
-                                        <li data-ui-y="-56" data-ui-link="#2"></li>
-                                        <li data-ui-y="-112" data-ui-link="#3"></li>
-                                        <li data-ui-y="-140" data-ui-link="#4"></li>
-                                        <li data-ui-y="-28" data-ui-link="#5"></li>
-                                        <li data-ui-y="-20" data-ui-link="#6"></li>
-                                        <li data-ui-y="-28" data-ui-link="#7"></li>
+                                        <li data-ui-y="-34" data-ui-url="#1"></li>
+                                        <li data-ui-y="-56" data-ui-url="#2"></li>
+                                        <li data-ui-y="-112" data-ui-url="#3"></li>
+                                        <li data-ui-y="-140" data-ui-url="#4"></li>
+                                        <li data-ui-y="-28" data-ui-url="#5"></li>
+                                        <li data-ui-y="-20" data-ui-url="#6"></li>
+                                        <li data-ui-y="-28" data-ui-url="#7"></li>
                                     </ul>
                                     <ul class="ui-lines" data-ui-name="2nd" data-ui-type="filled">
-                                        <li data-ui-y="120" data-ui-link="#1"></li>
-                                        <li data-ui-y="20" data-ui-link="#2"></li>
-                                        <li data-ui-y="159" data-ui-link="#3"></li>
-                                        <li data-ui-y="120" data-ui-link="#4"></li>
-                                        <li data-ui-y="80" data-ui-link="#5"></li>
-                                        <li data-ui-y="0" data-ui-link="#6"></li>
-                                        <li data-ui-y="20" data-ui-link="#7"></li>
+                                        <li data-ui-y="120" data-ui-url="#1"></li>
+                                        <li data-ui-y="20" data-ui-url="#2"></li>
+                                        <li data-ui-y="159" data-ui-url="#3"></li>
+                                        <li data-ui-y="120" data-ui-url="#4"></li>
+                                        <li data-ui-y="80" data-ui-url="#5"></li>
+                                        <li data-ui-y="0" data-ui-url="#6"></li>
+                                        <li data-ui-y="20" data-ui-url="#7"></li>
                                     </ul>
                                 </div>
                             </div>
@@ -200,31 +200,31 @@
                                 <h5 class="ui-h5 ui-font-bold ui-align-c">Filled &amp; Curved Line Charts</h5>
                                 <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                                     <ul class="ui-lines" data-ui-name="1st" data-ui-type="curved dotted">
-                                        <li data-ui-y="-34" data-ui-link="#1"></li>
-                                        <li data-ui-y="-56" data-ui-link="#2"></li>
-                                        <li data-ui-y="-112" data-ui-link="#3"></li>
-                                        <li data-ui-y="-140" data-ui-link="#4"></li>
-                                        <li data-ui-y="-28" data-ui-link="#5"></li>
-                                        <li data-ui-y="-20" data-ui-link="#6"></li>
-                                        <li data-ui-y="-28" data-ui-link="#7"></li>
+                                        <li data-ui-y="-34" data-ui-url="#1"></li>
+                                        <li data-ui-y="-56" data-ui-url="#2"></li>
+                                        <li data-ui-y="-112" data-ui-url="#3"></li>
+                                        <li data-ui-y="-140" data-ui-url="#4"></li>
+                                        <li data-ui-y="-28" data-ui-url="#5"></li>
+                                        <li data-ui-y="-20" data-ui-url="#6"></li>
+                                        <li data-ui-y="-28" data-ui-url="#7"></li>
                                     </ul>
                                     <ul class="ui-lines" data-ui-name="2nd" data-ui-type="curved filled">
-                                        <li data-ui-y="120" data-ui-link="#1"></li>
-                                        <li data-ui-y="20" data-ui-link="#2"></li>
-                                        <li data-ui-y="159" data-ui-link="#3"></li>
-                                        <li data-ui-y="120" data-ui-link="#4"></li>
-                                        <li data-ui-y="80" data-ui-link="#5"></li>
-                                        <li data-ui-y="0" data-ui-link="#6"></li>
-                                        <li data-ui-y="20" data-ui-link="#7"></li>
+                                        <li data-ui-y="120" data-ui-url="#1"></li>
+                                        <li data-ui-y="20" data-ui-url="#2"></li>
+                                        <li data-ui-y="159" data-ui-url="#3"></li>
+                                        <li data-ui-y="120" data-ui-url="#4"></li>
+                                        <li data-ui-y="80" data-ui-url="#5"></li>
+                                        <li data-ui-y="0" data-ui-url="#6"></li>
+                                        <li data-ui-y="20" data-ui-url="#7"></li>
                                     </ul>
                                     <ul class="ui-lines" data-ui-name="3rd" data-ui-type="curved filled">
-                                        <li data-ui-y="32" data-ui-link="#1"></li>
-                                        <li data-ui-y="52" data-ui-link="#2"></li>
-                                        <li data-ui-y="117" data-ui-link="#3"></li>
-                                        <li data-ui-y="85" data-ui-link="#4"></li>
-                                        <li data-ui-y="137" data-ui-link="#5"></li>
-                                        <li data-ui-y="144" data-ui-link="#6"></li>
-                                        <li data-ui-y="59" data-ui-link="#7"></li>
+                                        <li data-ui-y="32" data-ui-url="#1"></li>
+                                        <li data-ui-y="52" data-ui-url="#2"></li>
+                                        <li data-ui-y="117" data-ui-url="#3"></li>
+                                        <li data-ui-y="85" data-ui-url="#4"></li>
+                                        <li data-ui-y="137" data-ui-url="#5"></li>
+                                        <li data-ui-y="144" data-ui-url="#6"></li>
+                                        <li data-ui-y="59" data-ui-url="#7"></li>
                                     </ul>
                                 </div>
                             </div>
@@ -257,20 +257,20 @@
                                     <h5 class="ui-h5 ui-font-bold ui-align-c">First Chart</h5>
                                     <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                         <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
-                                            <li data-ui-y="10" data-ui-link="#"></li>
-                                            <li data-ui-y="30" data-ui-link="#"></li>
-                                            <li data-ui-y="70" data-ui-link="#"></li>
-                                            <li data-ui-y="120" data-ui-link="#"></li>
-                                            <li data-ui-y="100" data-ui-link="#"></li>
-                                            <li data-ui-y="150" data-ui-link="#"></li>
+                                            <li data-ui-y="10" data-ui-url="#"></li>
+                                            <li data-ui-y="30" data-ui-url="#"></li>
+                                            <li data-ui-y="70" data-ui-url="#"></li>
+                                            <li data-ui-y="120" data-ui-url="#"></li>
+                                            <li data-ui-y="100" data-ui-url="#"></li>
+                                            <li data-ui-y="150" data-ui-url="#"></li>
                                         </ul>
                                         <ul class="ui-lines" data-ui-name="Orders" data-ui-type="dashed">
-                                            <li data-ui-y="50" data-ui-link="#"></li>
-                                            <li data-ui-y="10" data-ui-link="#"></li>
-                                            <li data-ui-y="50" data-ui-link="#"></li>
-                                            <li data-ui-y="40" data-ui-link="#"></li>
-                                            <li data-ui-y="80" data-ui-link="#"></li>
-                                            <li data-ui-y="50" data-ui-link="#"></li>
+                                            <li data-ui-y="50" data-ui-url="#"></li>
+                                            <li data-ui-y="10" data-ui-url="#"></li>
+                                            <li data-ui-y="50" data-ui-url="#"></li>
+                                            <li data-ui-y="40" data-ui-url="#"></li>
+                                            <li data-ui-y="80" data-ui-url="#"></li>
+                                            <li data-ui-y="50" data-ui-url="#"></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -278,20 +278,20 @@
                                     <h5 class="ui-h5 ui-font-bold ui-align-c">Second Chart</h5>
                                     <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                         <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
-                                            <li data-ui-y="10" data-ui-link="#"></li>
-                                            <li data-ui-y="60" data-ui-link="#"></li>
-                                            <li data-ui-y="20" data-ui-link="#"></li>
-                                            <li data-ui-y="120" data-ui-link="#"></li>
-                                            <li data-ui-y="10" data-ui-link="#"></li>
-                                            <li data-ui-y="100" data-ui-link="#"></li>
+                                            <li data-ui-y="10" data-ui-url="#"></li>
+                                            <li data-ui-y="60" data-ui-url="#"></li>
+                                            <li data-ui-y="20" data-ui-url="#"></li>
+                                            <li data-ui-y="120" data-ui-url="#"></li>
+                                            <li data-ui-y="10" data-ui-url="#"></li>
+                                            <li data-ui-y="100" data-ui-url="#"></li>
                                         </ul>
                                         <ul class="ui-lines" data-ui-name="Orders" data-ui-type="dashed">
-                                            <li data-ui-y="0" data-ui-link="#"></li>
-                                            <li data-ui-y="20" data-ui-link="#"></li>
-                                            <li data-ui-y="50" data-ui-link="#"></li>
-                                            <li data-ui-y="40" data-ui-link="#"></li>
-                                            <li data-ui-y="70" data-ui-link="#"></li>
-                                            <li data-ui-y="50" data-ui-link="#"></li>
+                                            <li data-ui-y="0" data-ui-url="#"></li>
+                                            <li data-ui-y="20" data-ui-url="#"></li>
+                                            <li data-ui-y="50" data-ui-url="#"></li>
+                                            <li data-ui-y="40" data-ui-url="#"></li>
+                                            <li data-ui-y="70" data-ui-url="#"></li>
+                                            <li data-ui-y="50" data-ui-url="#"></li>
                                         </ul>
                                     </div>
                                 </div>
