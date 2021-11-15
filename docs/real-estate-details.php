@@ -158,10 +158,10 @@
                             <li class="ui-p-10-v ui-p-15-h ui-hidden-xs">
                                 <svg class="ui-icon ui-icon-xxl"><use href="#history"/></svg>
                             </li>
-                            <li class="ui-p-5"><b class="ui-d ui-font-22 ui-block">12</b>Days</li>
-                            <li class="ui-p-5"><b class="ui-h ui-font-22 ui-block">22</b>Hours</li>
-                            <li class="ui-p-5"><b class="ui-m ui-font-22 ui-block">01</b>Minutes</li>
-                            <li class="ui-p-5"><b class="ui-s ui-font-22 ui-block">17</b>Seconds</li>
+                            <li class="ui-p-5"><b class="ui-countdown-day ui-font-22 ui-block">12</b>Days</li>
+                            <li class="ui-p-5"><b class="ui-countdown-hour ui-font-22 ui-block">22</b>Hours</li>
+                            <li class="ui-p-5"><b class="ui-countdown-min ui-font-22 ui-block">01</b>Minutes</li>
+                            <li class="ui-p-5"><b class="ui-countdown-sec ui-font-22 ui-block">17</b>Seconds</li>
                         </ul>
                     </div>
                     <div class="ui-p-3 ui-fill-dark-100 ui-stripe-light ui-animate-progress">

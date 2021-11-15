@@ -10,12 +10,24 @@ ui.classnames = {
     targetAlerts: 'classnames-alerts',
 
     // styling classnames
+    stylesListSep: 'ui-font-22 ui-font-capitalize ui-m-20-t ui-opacity-half',
+
+    stylesNoErrors: 'ui-opacity-half',
+    stylesWarningSep: 'ui-font-18 ui-font-capitalize ui-m-20-t',
+
     stylesError: 'ui-color-red',
     stylesWarning: 'ui-color-yellow',
 
     // values
     filePath: 'xhr/ajax-pages.php',
-    prefix: 'ui'
+    prefix: 'ui',
+
+    // messages
+    msgErrors: 'Errors',
+    msgNoErrors: '* No errors detected *',
+
+    msgEmpty: 'Empty Classname!',
+    msgDuplicate: 'Prefix Duplicated'
 
 };
 
@@ -26,13 +38,16 @@ ui.classnames = {
 
     ui.classnames.Start = function () {
 
-        var arr, list, alerts;
+        var arr, list, alerts, lastAddedList, lastAddedWarning;
 
         arr = [];
 
         arr.list = [];
         arr.error = [];
         arr.warning = [];
+
+        lastAddedList = '';
+        lastAddedWarning = '';
 
         list = ui.find('.' + ui.classnames.targetList)[0];
         alerts = ui.find('.' + ui.classnames.targetAlerts)[0];
@@ -64,8 +79,8 @@ ui.classnames = {
 
                         if (str === '') {
 
-                            // error
-                            arr.error.push('* Empty classname!');
+                            // error: empty
+                            arr.error.push(ui.classnames.msgEmpty);
 
                         } else {
 
@@ -87,8 +102,8 @@ ui.classnames = {
                         strLength = Number(str.match(reDuplicate).length);
                         if (strLength > 1) {
 
-                            // error
-                            arr.error.push(str);
+                            // error: duplicate
+                            arr.error.push(ui.classnames.msgDuplicate + ': ' + str);
 
                         }
 
@@ -98,14 +113,27 @@ ui.classnames = {
 
                 // list
                 arr.list = arr.list.sort();
-
                 ui.each(arr.list,
 
                     function () {
+
+                        if (lastAddedList === '' || lastAddedList.split('-')[1] !== this.split('-')[1]) {
+                            list.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesListSep + '">' + this.split('-')[1] + '</li>');
+                        }
+
                         list.insertAdjacentHTML('beforeend', '<li>' + this + '</li>');
+                        lastAddedList = this;
+
                     });
 
                 // error
+                if (arr.error.length === 0) {
+                    alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesNoErrors + '">' + ui.classnames.msgNoErrors + '</li>');
+
+                } else {
+                    alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + ui.classnames.msgErrors + '</li>');
+                }
+
                 ui.each(arr.error,
 
                     function () {
@@ -113,10 +141,18 @@ ui.classnames = {
                     });
 
                 // warning
+                arr.warning = arr.warning.sort();
                 ui.each(arr.warning,
 
                     function () {
+
+                        if (lastAddedWarning === '' || lastAddedWarning.split('-')[0] !== this.split('-')[0]) {
+                            alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + this.split('-')[0] + '</li>');
+                        }
+
                         alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarning + '">' + this + '</li>');
+                        lastAddedWarning = this;
+
                     });
 
                 // empty variables
