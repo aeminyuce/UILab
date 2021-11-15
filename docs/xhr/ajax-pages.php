@@ -12,6 +12,7 @@
     include ('../card.php');
     include ('../carousel.php');
     include ('../charts.php');
+    include ('../classnames.php');
     include ('../countdown.php');
     include ('../dropdown.php');
     include ('../error-pages.php');

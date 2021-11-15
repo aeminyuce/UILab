@@ -6,9 +6,15 @@
 ui.classnames = {
 
     // targets
-    target: 'xhr/ajax-pages.php',
+    targetList: 'classnames-list',
+    targetAlerts: 'classnames-alerts',
+
+    // styling classnames
+    stylesError: 'ui-color-red',
+    stylesWarning: 'ui-color-yellow',
 
     // values
+    filePath: 'xhr/ajax-pages.php',
     prefix: 'ui'
 
 };
@@ -16,13 +22,23 @@ ui.classnames = {
 (function () {
 
     'use strict';
-    /*globals document, ui, console */
-    /*eslint no-console: ["error", { allow: ["warn", "error"] }] */
+    /*globals document, ui */
 
     ui.classnames.Start = function () {
 
+        var arr, list, alerts;
+
+        arr = [];
+
+        arr.list = [];
+        arr.error = [];
+        arr.warning = [];
+
+        list = ui.find('.' + ui.classnames.targetList)[0];
+        alerts = ui.find('.' + ui.classnames.targetAlerts)[0];
+
         ui.ajax({
-            url : ui.classnames.target,
+            url : ui.classnames.filePath,
             callback: function () { }
         });
 
@@ -30,6 +46,7 @@ ui.classnames = {
             ui.globals.eventAjaxCallback,
 
             function () {
+
                 ui.each(ui.ajax.classNames, function () {
 
                     var reStart, reDuplicate, str, strStart, strLength;
@@ -46,28 +63,67 @@ ui.classnames = {
                     if (strStart === null) {
 
                         if (str === '') {
-                            console.error(str); // empty class names
+
+                            // error
+                            arr.error.push('* Empty classname!');
 
                         } else {
-                            console.warn(str);
+
+                            // warning
+                            arr.warning.push(str);
+
                         }
 
                     } else {
-                        //console.log(str);
+
+                        // list
+                        arr.list.push(str);
+
                     }
 
                     strLength = str.match(reDuplicate);
                     if (strLength !== null) {
 
                         strLength = Number(str.match(reDuplicate).length);
-
                         if (strLength > 1) {
-                            console.error(str);
+
+                            // error
+                            arr.error.push(str);
+
                         }
 
                     }
 
                 });
+
+                // list
+                arr.list = arr.list.sort();
+
+                ui.each(arr.list,
+
+                    function () {
+                        list.insertAdjacentHTML('beforeend', '<li>' + this + '</li>');
+                    });
+
+                // error
+                ui.each(arr.error,
+
+                    function () {
+                        alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesError + '">' + this + '</li>');
+                    });
+
+                // warning
+                ui.each(arr.warning,
+
+                    function () {
+                        alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarning + '">' + this + '</li>');
+                    });
+
+                // empty variables
+                arr.list = [];
+                arr.error = [];
+                arr.warning = [];
+
             });
 
     };
