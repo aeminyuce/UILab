@@ -148,8 +148,8 @@
 
                 <b>Bg:</b>
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Enable/Disable modal window background color.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.search',<br>    bg: 'false'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.search', bg: 'false'});">Run Code</button>
+                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-search',<br>    bg: 'false'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-search', bg: 'false'});">Run Code</button>
 
             </div>
 
@@ -209,7 +209,7 @@
     </div>
     <div class="ui-modal-container ui-font-16 ui-font-readable ui-p-30">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tincidunt eros. Vivamus a est id dui ultricies congue vel et tellus. Nam ac velit mi. Donec vitae suscipit enim, nec consectetur nisl. Quisque ac posuere lectus. Morbi quam diam, cursus et metus at, lobortis iaculis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lectus nibh, non elementum justo facilisis a. Aliquam erat volutpat. Vestibulum auctor et diam eget eleifend. Donec blandit ligula aliquam mi lacinia lacinia. Cras ac bibendum urna. Suspendisse posuere ullamcorper enim, non varius diam mattis vehicula. Donec nec lacinia diam.
-        <img class="ui-img-fluid ui-m-30-v ui-round ui-auto-margin ui-block ui-shadow-lg" src="img/image_05.jpg" style="max-width: 700px" alt="">
+        <img class="ui-img-fluid ui-m-30-v ui-round ui-auto-m ui-block ui-shadow-lg" src="img/image_05.jpg" style="max-width: 700px" alt="">
         Pellentesque congue eget elit vitae rutrum. Morbi bibendum dignissim convallis. Etiam lacinia quam et ipsum convallis, a congue metus sagittis. Nunc posuere iaculis nulla, nec rutrum neque condimentum at. Donec nec elementum sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor libero sem, sed bibendum elit viverra vitae.
         <br><br>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tincidunt eros. Vivamus a est id dui ultricies congue vel et tellus. Nam ac velit mi. Donec vitae suscipit enim, nec consectetur nisl. Quisque ac posuere lectus. Morbi quam diam, cursus et metus at, lobortis iaculis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lectus nibh, non elementum justo facilisis a. Aliquam erat volutpat. Vestibulum auctor et diam eget eleifend. Donec blandit ligula aliquam mi lacinia lacinia. Cras ac bibendum urna. Suspendisse posuere ullamcorper enim, non varius diam mattis vehicula. Donec nec lacinia diam.
@@ -224,7 +224,7 @@
 </div>
 
 <!-- modal search -->
-<div class="search ui-modal ui-form-lg">
+<div class="modal-search ui-modal ui-form-lg">
     <div class="ui-modal-container ui-xs-no-p">
 
         <form action="#successful">
@@ -250,7 +250,7 @@
                 </div>
             </div>
 
-            <div class="ui-row ui-xs-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity ui-hover-t-more-2nd ui-icons-margin-5-v ui-theme-base ui-form-lg ui-ease-2nd-btn">
+            <div class="ui-row ui-xs-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity ui-hover-t-more-2nd ui-icons-m-5-v ui-theme-base ui-form-lg ui-ease-2nd-btn">
                 <div class="ui-col-4 ui-p-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#news"/></svg>

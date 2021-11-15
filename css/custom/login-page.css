@@ -106,12 +106,12 @@
   }
 }
 @media (min-width: 768px) {
-  .forms-holder,
+  .login-forms-holder,
   .login-holder {
     min-height: 560px;
     height: 100%;
   }
-  .forms-holder,
+  .login-forms-holder,
   .login-holder > .ui-set-absolute {
     padding: 10%;
   }
@@ -120,7 +120,7 @@
   .login-holder {
     min-height: 320px;
   }
-  .forms-holder,
+  .login-forms-holder,
   .login-holder > .ui-set-absolute {
     padding: 30px;
   }

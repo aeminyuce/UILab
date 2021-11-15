@@ -140,14 +140,14 @@
                             </div>
                             <div class="why-join ui-col-lg-500 ui-col-400 ui-col-md-350 ui-order-sm-first ui-sm-align-c ui-p-30">
 
-                                <img class="ui-auto-margin" src="img/sign-up.png" alt="Join Us" width="280">
+                                <img class="ui-auto-m" src="img/sign-up.png" alt="Join Us" width="280">
                                 <span class="ui-sp-30"></span>
 
                                 <h1 class="ui-h1">
                                     Join our<br class="ui-hidden-sm">huge platform<br class="ui-hidden-sm">
                                     <span class="ui-font-bold ui-font-38">today!</span>
                                 </h1>
-                                <ul class="ui-list-unstyled ui-list-sp-10 ui-color-black-25 ui-font-18 ui-icons-sm ui-icons-margin-5-r ui-theme-sub">
+                                <ul class="ui-list-unstyled ui-list-sp-10 ui-color-black-25 ui-font-18 ui-icons-sm ui-icons-m-5-r ui-theme-sub">
                                     <li>
                                         <svg class="ui-icon ui-text ui-hidden-sm"><use href="#check-circle-fill"/></svg>
                                         Work and build around your team.

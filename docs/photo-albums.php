@@ -5,7 +5,7 @@
                 <div class="ui-col-250 ui-p-30 ui-order-sm-last ui-sm-align-c ui-theme-sub">
                     <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-align-l ui-block ui-circle ui-fill-dark-100 ui-ease-btn">
                         Create New
-                        <svg class="ui-icon ui-right"><use href="#plus"/></svg>
+                        <svg class="ui-icon ui-float-r"><use href="#plus"/></svg>
                     </a>
                     <span class="ui-sp-30"></span>
                     <ul class="ui-list-unstyled ui-hover-r-more-2nd ui-inline-block-2nd ui-font-16 ui-list-sp-30 ui-p-10 ui-ease-2nd-layout">
@@ -17,7 +17,7 @@
                         <li><a href="#">Hobbies</a></li>
                     </ul>
                     <span class="ui-sp-30"></span>
-                    <ul class="ui-list-unstyled ui-hover-r-more-2nd ui-inline-block-2nd ui-list-sp-15 ui-font-16 ui-color-black-50 adding-10 ui-icons-sm ui-icons-margin-10-r ui-ease-2nd-layout">
+                    <ul class="ui-list-unstyled ui-hover-r-more-2nd ui-inline-block-2nd ui-list-sp-15 ui-font-16 ui-color-black-50 ui-p-10 ui-icons-sm ui-icons-m-10-r ui-ease-2nd-layout">
                         <li>
                             <a href="#">
                                 <svg class="ui-icon"><use href="#marker"/></svg>

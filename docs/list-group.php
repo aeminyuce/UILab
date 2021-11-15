@@ -302,7 +302,7 @@
                 <h3 class="ui-h3">List Groups with Icons</h3>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-ease-list-group ui-icons-margin-5-r">
+                    <ul class="ui-ease-list-group ui-icons-m-5-r">
                         <li>
                             <a href="#">
                                 <svg class="ui-icon"><use href="#user"/></svg>
@@ -341,7 +341,7 @@
                 <h3 class="ui-h3">List Groups with Inner Links</h3>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-ease-list-group ui-icons-margin-5-r">
+                    <ul class="ui-ease-list-group ui-icons-m-5-r">
                         <li>
                             <span class="ui-font-18 ui-block">11 November, Event Name Here</span>
                             <b>İstanbul: </b>

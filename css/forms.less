@@ -220,11 +220,11 @@ html:not(.ui-no-effects) {
         }
 
         &.ui-no-border {
-            .ui-btn { line-height: (@btn-default - @file-btn-padding * 2); }
+            .ui-btn { line-height: (@btn-default - @file-btn-padding * 2) !important; }
             & > i { line-height: @btn-default; }
         }
         &.ui-border-dual {
-            .ui-btn { line-height: (@btn-default - (@file-btn-padding * 2 + @border-dual * 2)); }
+            .ui-btn { line-height: (@btn-default - (@file-btn-padding * 2 + @border-dual * 2)) !important; }
             & > i { line-height: (@btn-default - 4); }
         }
     }

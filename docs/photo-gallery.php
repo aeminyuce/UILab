@@ -358,7 +358,7 @@
                         <div id="ui-detail-carousel2" class="ui-thumbs">
                             <div class="ui-row ui-row-gap-xs ui-no-fluid ui-ease-2nd-layout">
                                 <div class="ui-col-5x">
-                                    <img class="ui-photo ui-ease-default selected" src="img/image_01.jpg" data-ui-href="img/image_01.jpg" alt="">
+                                    <img class="ui-photo ui-ease-default ui-selected" src="img/image_01.jpg" data-ui-href="img/image_01.jpg" alt="">
                                 </div>
                                 <div class="ui-col-5x">
                                     <img class="ui-photo ui-ease-default" src="img/image_02.jpg" data-ui-href="img/image_02.jpg" alt="">

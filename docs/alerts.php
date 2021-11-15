@@ -93,8 +93,8 @@
                 </dl>
 
             </div>
-            <div class="ui-col-12">
-                <b class="no-margin ui-block">Show Positions:</b>
+            <div class="ui-col-12 ui-no-p-b">
+                <b>Show Positions:</b>
             </div>
             <div class="ui-col-6">
 

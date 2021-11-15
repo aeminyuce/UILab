@@ -80,7 +80,7 @@
     <div class="ui-tabs ui-form-lg ui-ease-tabs" data-ui-classes="ui-text ui-border-lg ui-stroke">
 
         <div class="ui-fixed ui-p-10-t ui-theme-farmer2">
-            <div class="ui-row ui-no-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
+            <div class="ui-row ui-no-row-gap-v ui-icons-no-opacity ui-icons-m-5-r">
                 <div class="ui-col-12 ui-color-black-50 ui-xs-align-l ui-align-c ui-ease-1st-btn">
                     <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-m-1-b ui-border-b ui-text ui-border-lg ui-stroke ui-active">
                         <svg class="ui-icon"><use href="#factory"/></svg>
@@ -338,7 +338,7 @@
         <div class="ui-tabs ui-form-lg ui-border-t ui-p-10-t ui-ease-tabs" data-ui-classes="ui-text ui-border-lg ui-stroke">
 
             <div class="ui-fixed">
-                <div class="ui-row ui-no-row-gap-v ui-icons-no-opacity ui-icons-margin-5-r">
+                <div class="ui-row ui-no-row-gap-v ui-icons-no-opacity ui-icons-m-5-r">
                     <div class="ui-col-12 ui-color-black-50 ui-xs-align-l ui-align-c ui-ease-1st-btn">
                         <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-m-1-b ui-border-b ui-text ui-border-lg ui-stroke ui-active">
                             <svg class="ui-icon"><use href="#building"/></svg>
@@ -694,7 +694,7 @@
                             <img src="img/agriculture/md01.jpg" alt="">
                             <span class="ui-font-18 ui-font-readable">
                                 <span class="ui-scroll-v ui-m-20 ui-set-absolute ui-set-all">
-                                    <svg class="ui-icon ui-icon-xxl ui-left ui-m-20-r ui-hidden-md ui-text"><use href="#trees"/></svg>
+                                    <svg class="ui-icon ui-icon-xxl ui-float-l ui-m-20-r ui-hidden-md ui-text"><use href="#trees"/></svg>
                                     <b>Sed nunc mauris, auctor tristique libero non tristique.</b>
                                     <span class="ui-color-white-25 ui-m-15-t ui-block">
                                         Nullam mollis molestie magna nec tincidunt. Phasellus mattis aliquet ex, vel gravida dui elementum ut. Ut euismod nisi in tellus luctus dictum et ut nulla. Sed scelerisque rutrum dui, et suscipit diam sagittis quis. Quisque dapibus varius ornare.

@@ -143,8 +143,8 @@
 
         &:not(:last-child) { margin-bottom: @highlight-space; }
 
-        .ui-icon:not(.ui-right) { margin-right: @heading-icon-right; }
-        .ui-icon-lg:not(.ui-right) { margin-right: (@heading-icon-right * 2); }
+        .ui-icon:not(.ui-float-r) { margin-right: @heading-icon-right; }
+        .ui-icon-lg:not(.ui-float-r) { margin-right: (@heading-icon-right * 2); }
     }
 
     &h1,&h2,&h3 { line-height: 1; }
@@ -160,7 +160,7 @@
         font-size: @font-16; padding: 10px 20px !important; border-left: 5px solid @blockquote-border;
 
         &:not(:last-child) { margin-bottom: @highlight-space; }
-        &.ui-align-r,&.ui-right { text-align: right; border-right: 5px solid @blockquote-border; border-left: 0; }
+        &.ui-align-r,&.ui-float-r { text-align: right; border-right: 5px solid @blockquote-border; border-left: 0; }
 
         p {
             &:not(:last-child) { margin-top: 0; }

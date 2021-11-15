@@ -84,30 +84,30 @@
                 </div>
 
                 <h3 class="ui-h3">Button Sizes</h3>
-                <div class="ui-row ui-xs-fluid ui-align-l ui-p-30-b ui-icons-margin-5-l ui-block-2nd ui-ease-2nd-btn">
+                <div class="ui-row ui-xs-fluid ui-align-l ui-p-30-b ui-block-2nd ui-ease-2nd-btn">
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-lg ui-circle ui-border" href="#">
-                            Large Button <svg class="ui-icon ui-right"><use href="#settings"/></svg>
+                            Large Button <svg class="ui-icon ui-float-r"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-lg ui-circle ui-border" href="#">
-                            Large Button <svg class="ui-icon ui-right"><use href="#settings"/></svg>
+                            Large Button <svg class="ui-icon ui-float-r"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-circle ui-border" href="#">
-                            Default Button <svg class="ui-icon ui-right"><use href="#settings"/></svg>
+                            Default Button <svg class="ui-icon ui-float-r"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-sm ui-circle ui-border" href="#">
-                            Small Button <svg class="ui-icon ui-right"><use href="#settings"/></svg>
+                            Small Button <svg class="ui-icon ui-float-r"><use href="#settings"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-xs ui-circle ui-border" href="#">
-                            Extra Small Button <svg class="ui-icon ui-right"><use href="#settings"/></svg>
+                            Extra Small Button <svg class="ui-icon ui-float-r"><use href="#settings"/></svg>
                         </a>
                     </div>
 
@@ -115,27 +115,27 @@
 
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-lg ui-circle" href="#">
-                            Large Button <svg class="ui-icon ui-right"><use href="#comment"/></svg>
+                            Large Button <svg class="ui-icon ui-float-r"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-lg ui-circle" href="#">
-                            Large Button <svg class="ui-icon ui-right"><use href="#comment"/></svg>
+                            Large Button <svg class="ui-icon ui-float-r"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-circle" href="#">
-                            Default Button <svg class="ui-icon ui-right"><use href="#comment"/></svg>
+                            Default Button <svg class="ui-icon ui-float-r"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-sm ui-circle" href="#">
-                            Small Button <svg class="ui-icon ui-right"><use href="#comment"/></svg>
+                            Small Button <svg class="ui-icon ui-float-r"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-xs ui-circle" href="#">
-                            Extra Small Button <svg class="ui-icon ui-right"><use href="#comment"/></svg>
+                            Extra Small Button <svg class="ui-icon ui-float-r"><use href="#comment"/></svg>
                         </a>
                     </div>
                 </div>
@@ -404,7 +404,7 @@
                 <h3 class="ui-h3">Button List</h3>
                 <div class="ui-row ui-p-30-b">
                     <div class="ui-col-6">
-                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r ui-form-lg ui-icons-no-opacity ui-theme-green ui-ease-1st-btn">
+                        <div class="ui-btn-list ui-align-l ui-icons-m-10-r ui-form-lg ui-icons-no-opacity ui-theme-green ui-ease-1st-btn">
                             <button class="ui-btn">
                                 <svg class="ui-icon ui-text"><use href="#shield"/></svg>Administration
                             </button>
@@ -417,7 +417,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r ui-form-lg ui-icons-no-opacity ui-theme-red ui-ease-1st-btn">
+                        <div class="ui-btn-list ui-align-l ui-icons-m-10-r ui-form-lg ui-icons-no-opacity ui-theme-red ui-ease-1st-btn">
                             <button class="ui-btn ui-round">
                                 <svg class="ui-icon ui-text"><use href="#shield"/></svg>Administration
                             </button>
@@ -430,7 +430,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r ui-form-lg ui-icons-no-opacity ui-theme-orange ui-ease-1st-btn">
+                        <div class="ui-btn-list ui-align-l ui-icons-m-10-r ui-form-lg ui-icons-no-opacity ui-theme-orange ui-ease-1st-btn">
                             <button class="ui-btn ui-btn-ghost ui-round ui-border ui-stroke">
                                 <svg class="ui-icon ui-text"><use href="#shield"/></svg>Administration
                             </button>
@@ -443,7 +443,7 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <div class="ui-btn-list ui-align-l ui-icons-margin-10-r ui-form-lg ui-icons-no-opacity ui-theme-yellow ui-ease-1st-btn">
+                        <div class="ui-btn-list ui-align-l ui-icons-m-10-r ui-form-lg ui-icons-no-opacity ui-theme-yellow ui-ease-1st-btn">
                             <button class="ui-btn ui-btn-ghost ui-round ui-border-dual ui-stroke">
                                 <svg class="ui-icon ui-text"><use href="#shield"/></svg>Administration
                             </button>

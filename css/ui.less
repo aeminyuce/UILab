@@ -316,7 +316,7 @@
 .ui-ios { -webkit-text-size-adjust: 100%; }
 
 .ui-ie {
-    .ui-hidden-ie { .ui-hidden(); }
+    .ui-hidden-ie { display: none !important; }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
@@ -327,23 +327,23 @@
 
 // dark mode
 & when (@dark-mode = false) {
-    .ui-hidden-light,.ui-visible-dark { .ui-hidden(); }
+    .ui-hidden-light,.ui-visible-dark { display: none !important; }
 
     .ui-darkmode-toggle { display: none !important; }
 }
 & when (@dark-mode = true) {
     .ui-ie {
-        .ui-hidden-light,.ui-visible-dark { .ui-hidden(); }
+        .ui-hidden-light,.ui-visible-dark { display: none !important; }
     }
 
     & when (@dark-mode-auto-switcher = true) {
         @media (prefers-color-scheme: light) {
-            .ui-hidden-light,.ui-visible-dark { .ui-hidden(); }
+            .ui-hidden-light,.ui-visible-dark { display: none !important; }
         }
         @media (prefers-color-scheme: dark) {
             .ui-html { ._color-var(black); }
 
-            .ui-visible-light,.ui-hidden-dark { .ui-hidden(); }
+            .ui-visible-light,.ui-hidden-dark { display: none !important; }
 
             .ui-invert {
                 &-img { filter: invert(1) hue-rotate(180deg) !important; }
@@ -355,12 +355,12 @@
     }
     & when (@dark-mode-auto-switcher = false) {
         [data-ui-mode="light"] {
-            .ui-hidden-light,.ui-visible-dark { .ui-hidden(); }
+            .ui-hidden-light,.ui-visible-dark { display: none !important; }
         }
         [data-ui-mode="dark"] {
             ._color-var(black);
 
-            .ui-visible-light,.ui-hidden-dark { .ui-hidden(); }
+            .ui-visible-light,.ui-hidden-dark { display: none !important; }
 
             .ui-invert {
                 &-img { filter: invert(1) hue-rotate(180deg) !important; }

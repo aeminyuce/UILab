@@ -77,7 +77,7 @@
                         </div>
                         <div class="ui-p-30 ui-border-t">
                             <h4 class="ui-h4 ui-m-15-b">Power Saving Statistics</h4>
-                            <svg class="ui-icon ui-icon-xl ui-left ui-m-5-t ui-m-10-r"><use href="#bolt"/></svg>
+                            <svg class="ui-icon ui-icon-xl ui-float-l ui-m-5-t ui-m-10-r"><use href="#bolt"/></svg>
                             <ul class="ui-list-unstyled ui-p-2-t">
                                 <li><b>Power per Month:</b> 4,86 kWp</li>
                                 <li><b>Yearly Output:</b> 4900 kWp</li>
@@ -172,7 +172,7 @@
                 </div>
 
                 <div class="ui-card ui-align-c ui-round ui-shadow-lg ui-theme-sub">
-                    <ul class="ui-list-inline ui-list-gap ui-p-30 ui-p-15-b ui-icons-lg ui-icons-margin-5-r ui-theme-gray ui-inline-block-1st">
+                    <ul class="ui-list-inline ui-list-gap ui-p-30 ui-p-15-b ui-icons-lg ui-icons-m-5-r ui-theme-gray ui-inline-block-1st">
                         <li>
                             <svg class="ui-icon"><use href="#floor-plan"/></svg>
                             <span class="ui-font-16">7+1</span>
@@ -254,7 +254,7 @@
 
                 <div class="ui-card ui-p-30 ui-round ui-shadow-lg">
                     <h4 class="ui-h4">Other Details</h4>
-                    <ul class="ui-list-unstyled ui-list-sp-15 ui-icons-lg ui-icons-margin-5-r">
+                    <ul class="ui-list-unstyled ui-list-sp-15 ui-icons-lg ui-icons-m-5-r">
                         <li>
                             <span class="ui-color-black-25 ui-block ui-m-5-b">House Type</span>
                             <svg class="ui-icon ui-text"><use href="#house"/></svg>
@@ -294,12 +294,12 @@
                     <span class="ui-sp-5"></span>
                     <div class="ui-align-l ui-icons-no-opacity ui-form-lg ui-ease-1st-btn">
                         <a class="ui-btn ui-block ui-btn-multi ui-round-t" href="#">
-                            <svg class="ui-icon ui-right"><use href="#images"/></svg>
+                            <svg class="ui-icon ui-float-r"><use href="#images"/></svg>
                             Show All HD Images
                         </a>
                         <span class="ui-sp-1"></span>
                         <a class="ui-btn ui-block ui-btn-multi ui-round-b" href="#">
-                            <svg class="ui-icon ui-right"><use href="#file-pdf"/></svg>
+                            <svg class="ui-icon ui-float-r"><use href="#file-pdf"/></svg>
                             Download PDF Brochure
                         </a>
                     </div>

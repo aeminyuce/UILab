@@ -92,7 +92,7 @@
     <header class="ui-container ui-form-lg ui-theme-base ui-invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
         <div class="ui-row">
             <div class="ui-col-12 ui-p-15">
-                <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost ui-circle ui-icons-no-opacity ui-right ui-ease-btn">
+                <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost ui-circle ui-icons-no-opacity ui-float-r ui-ease-btn">
                     <svg class="ui-icon ui-visible-dark"><use href="#moon-fill"/></svg>
                     <svg class="ui-icon ui-visible-light"><use href="#sun-fill"/></svg>
                 </button>
@@ -206,7 +206,7 @@
                 <div class="ui-col-12 ui-p-15">
 
                     <div class="ui-fixed ui-fixed-xl ui-p-15 ui-m-30-v ui-sm-no-p">
-                        <div class="card ui-highlight ui-align-c ui-p-30 ui-xs-no-p ui-round ui-theme-base">
+                        <div class="ui-highlight ui-align-c ui-p-30 ui-xs-no-p ui-round ui-theme-base">
                             <h1 class="ui-h1 ui-font-light">UI lab is a modular design system.</h2>
                             <h4 class="ui-h4 ui-font-bold">For developing web interfaces fastly!</h4>
 

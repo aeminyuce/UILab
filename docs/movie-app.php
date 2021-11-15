@@ -7,7 +7,7 @@
 
             <div class="movie-library ui-full-h ui-set-fixed ui-set-l ui-p-5 ui-fill-dark-100 ui-hidden-md ui-scroll-v ui-scrollbar-faded">
 
-                <div class="ui-align-l ui-p-10 ui-icons-no-opacity ui-icons-margin-10-r ui-form-lg ui-add-sidebar-l">
+                <div class="ui-align-l ui-p-10 ui-icons-no-opacity ui-icons-m-10-r ui-form-lg ui-add-sidebar-l">
                     <h5 class="ui-h5 ui-color-white-50 ui-p-15 ui-m-5-b">LIBRARY</h5>
                     <ul class="ui-list-unstyled ui-list-sp-15 ui-font-16 ui-font-bold ui-block-2nd ui-ease-2nd-btn">
                         <li>
@@ -17,7 +17,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="ui-btn ui-p-15-h ui-circle selected" href="#">
+                            <a class="ui-btn ui-p-15-h ui-circle app-library-selected" href="#">
                                 <svg class="ui-icon"><use href="#film"/></svg>
                                 Films
                             </a>
@@ -93,10 +93,10 @@
                         </div>
                         <div class="ui-col-6 ui-align-r">
                             <span class="ui-align-c ui-color-black-50 ui-m-20-r ui-sm-no-m ui-ease-1st-btn">
-                                <button class="ui-btn ui-btn-square ui-btn-ghost ui-m-10-l ui-circle ui-left ui-show-sidebar-l ui-visible-md">
+                                <button class="ui-btn ui-btn-square ui-btn-ghost ui-m-10-l ui-circle ui-float-l ui-show-sidebar-l ui-visible-md">
                                     <svg class="ui-icon"><use href="#bars-left"/></svg>
                                 </button>
-                                <button class="ui-btn ui-btn-square ui-btn-ghost ui-circle ui-ease-btn ui-visible-md" onclick="ui.modal.open({source: '.search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
+                                <button class="ui-btn ui-btn-square ui-btn-ghost ui-circle ui-ease-btn ui-visible-md" onclick="ui.modal.open({source: '.modal-search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
                                     <svg class="ui-icon"><use href="#search"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-circle">
@@ -112,8 +112,8 @@
                                     <svg class="ui-icon"><use href="#help"/></svg>
                                 </button>
                             </span>
-                            <span class="ui-inline-block ui-right ui-no-float-sm">
-                                <img class="ui-avatar ui-avatar-sm ui-circle ui-m-10-l ui-sm-no-m ui-right" src="img/profile-image.jpg" alt="">
+                            <span class="ui-inline-block ui-float-r ui-no-float-sm">
+                                <img class="ui-avatar ui-avatar-sm ui-circle ui-m-10-l ui-sm-no-m ui-float-r" src="img/profile-image.jpg" alt="">
                                 <span class="ui-m-3-t ui-inline-block ui-hidden-sm">aeminyuce</span>
                                 <span class="ui-font-12 ui-color-black-50 ui-block ui-hidden-sm">Premium</span>
                             </span>
@@ -137,9 +137,12 @@
                                 <div class="ui-row">
                                     <div class="ui-col-12 ui-col-lg-8 ui-p-30-l ui-no-p-v ui-md-no-p">
                                         <span class="ui-sp-15 ui-visible-md"></span>
+
                                         <h2 class="ui-h2 ui-font-bold">Related Video</h2>
                                         <b class="ui-font-16">Captain Marvel (2019)</b>
+
                                         <p class="ui-m-10-v ui-font-readable">After crashing an experimental aircraft, Air Force pilot Carol Danvers is discovered by the Kree and trained as a member of the elite Starforce Military under the command of her mentor Yon-Rogg. Six years later, after escaping to Earth while under attack by the Skrulls.</p>
+
                                         <div class="ui-avatar-holder ui-hover-scale-more-2nd ui-ease-2nd-layout">
                                             <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image.jpg" alt=""></a>
                                             <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image2.jpg" alt=""></a>
@@ -414,7 +417,7 @@
 </div>
 
 <!-- modal search -->
-<div class="search ui-modal ui-form-lg">
+<div class="modal-search ui-modal ui-form-lg">
     <div class="ui-modal-container ui-xs-no-p">
 
         <form action="#successful">
@@ -440,7 +443,7 @@
                 </div>
             </div>
 
-            <div class="ui-row ui-no-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity ui-icons-margin-5-v ui-hover-t-more-2nd ui-theme-base ui-ease-2nd-btn">
+            <div class="ui-row ui-no-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity ui-icons-m-5-v ui-hover-t-more-2nd ui-theme-base ui-ease-2nd-btn">
                 <div class="ui-col-4 ui-p-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#tv"/></svg>
