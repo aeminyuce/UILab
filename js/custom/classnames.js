@@ -62,7 +62,7 @@ ui.classnames = {
 
             function () {
 
-                var reStart, reDuplicate, str, strStart, strLength, title;
+                var reStart, reDuplicate, str, strStart, strLength, title, titleCreated, newListItem;
 
                 ui.each(ui.ajax.classNames,
 
@@ -121,23 +121,41 @@ ui.classnames = {
 
                         title = this.split('-')[1];
 
-                        if (title === 'xl' || title === 'lg' || title === 'md' || title === 'sm' || title === 'xs') {
+                        if (title === 'no' || title === 'xl' || title === 'lg' || title === 'md' || title === 'sm' || title === 'xs') {
                             title = this.split('-')[2];
-
                         }
 
-                        if (lastAddedList.split('-')[1] !== title) {
+                        if (title === 'no') {
+                            title = this.split('-')[3];
+                        }
+
+                        if (lastAddedList === title) {
+                            list.insertAdjacentHTML('beforeend', '<li>' + this + '</li>');
+
+                        } else {
 
                             if (title === 'm') { title = 'margin'; }
                             if (title === 'p') { title = 'padding'; }
                             if (title === 'sp') { title = 'spacer'; }
 
-                            list.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesListSep + '">' + title + '</li>');
+                            titleCreated = ui.find('li.' + title);
+                            if (titleCreated.length === 0) {
+
+                                list.insertAdjacentHTML('beforeend', '<li class="' + title + ' ' + ui.classnames.stylesListSep + '">' + title + '</li>');
+                                list.insertAdjacentHTML('beforeend', '<li>' + this + '</li>');
+
+                            } else { // catch title duplicate!
+
+                                newListItem = document.createElement("LI");
+                                newListItem.innerHTML = '<li>' + this + '</li>';
+
+                                list.insertBefore(newListItem, titleCreated[0]);
+
+                            }
 
                         }
 
-                        list.insertAdjacentHTML('beforeend', '<li>' + this + '</li>');
-                        lastAddedList = this;
+                        lastAddedList = title;
 
                     });
 
