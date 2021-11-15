@@ -11,13 +11,13 @@ ui.sidebar = {
 
     // main classnames
     nameOpened: 'ui-sidebar-opened',
-    nameClose: 'ui-close-sidebar',
+    nameClose: 'ui-sidebar-close',
     nameContent: 'ui-sidebar-content',
 
     nameDataTarget: 'ui-sbid',
 
-    nameShowingMenu: 'ui-show-sidebar-',
-    nameAddContent: 'ui-add-sidebar-',
+    nameShowingMenu: 'ui-sidebar-show-',
+    nameAddContent: 'ui-sidebar-add-',
 
     // helper classnames
     nameShow: 'ui-show-',

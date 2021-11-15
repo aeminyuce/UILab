@@ -9,7 +9,7 @@
         <div class="ui-col-static ui-no-fluid ui-p-30-v ui-p-15-h ui-md-no-p-h">
 
             <div class="ui-col-250 ui-p-10 ui-hidden-md">
-                <div class="ui-add-sidebar-r">
+                <div class="ui-sidebar-add-r">
 
                     <div class="ui-card ui-p-15 ui-round ui-shadow-lg">
                         <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete ui-input ui-form-icon-all ui-round ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form ui-has-clear">
@@ -252,7 +252,7 @@
                                 <button class="ui-btn ui-btn-square ui-round">
                                     <svg class="ui-icon"><use href="#grid-row"/></svg>
                                 </button>
-                                <button class="ui-btn ui-btn-square ui-round ui-show-sidebar-r ui-visible-md">
+                                <button class="ui-btn ui-btn-square ui-round ui-sidebar-show-r ui-visible-md">
                                     <svg class="ui-icon"><use href="#bars-right"/></svg>
                                 </button>
                             </span>
@@ -481,7 +481,7 @@
 <!-- mobile menu -->
 <div class="ui-sidebar ui-show-r ui-ease-layout ui-ease-in-out">
     <div class="ui-sidebar-title ui-p-20-v ui-font-18 ui-border-b">
-        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-sidebar">
+        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-sidebar-close">
             <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
         </button>
         Filters

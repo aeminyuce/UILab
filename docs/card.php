@@ -59,7 +59,7 @@
                 <div class="ui-p-30-b">
 
                     <div class="ui-card ui-theme-gray ui-p-15 ui-round ui-fill-light-300">
-                        <button class="ui-close-card ui-ease-btn">
+                        <button class="ui-card-close ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
@@ -81,7 +81,7 @@
                         <div class="ui-card-side ui-p-15 ui-border-b">
 
                             <div class="ui-card ui-theme-gray ui-p-15 ui-round ui-fill-light-300">
-                            <button class="ui-close-card ui-ease-btn">
+                            <button class="ui-card-close ui-ease-btn">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>
                                 <div class="ui-col-static ui-sm-fluid">
@@ -101,7 +101,7 @@
                     </div>
 
                     <div class="ui-card ui-theme-base ui-p-15 ui-round ui-fill-dark-100">
-                        <button class="ui-close-card ui-ease-btn">
+                        <button class="ui-card-close ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
@@ -117,7 +117,7 @@
                     </div>
 
                     <div class="ui-card ui-theme-sub ui-p-15 ui-round ui-fill-dark-100">
-                        <button class="ui-close-card ui-ease-btn">
+                        <button class="ui-card-close ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
@@ -133,7 +133,7 @@
                     </div>
 
                     <div class="ui-card ui-theme-green ui-p-15 ui-round ui-fill-dark-100">
-                        <button class="ui-close-card ui-ease-btn">
+                        <button class="ui-card-close ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
@@ -149,7 +149,7 @@
                     </div>
 
                     <div class="ui-card ui-theme-yellow ui-p-15 ui-round ui-fill-dark-100">
-                        <button class="ui-close-card ui-ease-btn">
+                        <button class="ui-card-close ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
@@ -165,7 +165,7 @@
                     </div>
 
                     <div class="ui-card ui-theme-orange ui-p-15 ui-round ui-fill-dark-100">
-                        <button class="ui-close-card ui-ease-btn">
+                        <button class="ui-card-close ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
@@ -181,7 +181,7 @@
                     </div>
 
                     <div class="ui-card ui-theme-red ui-p-15 ui-round ui-fill-dark-100">
-                        <button class="ui-close-card ui-ease-btn">
+                        <button class="ui-card-close ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
@@ -202,7 +202,7 @@
                 <div class="ui-p-30-b">
 
                     <div class="ui-card-success ui-p-15 ui-round ui-shadow">
-                        <button class="ui-close-card ui-ease-btn">
+                        <button class="ui-card-close ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <h4 class="ui-h4">
@@ -213,7 +213,7 @@
                     </div>
 
                     <div class="ui-card-danger ui-p-15 ui-round ui-shadow">
-                        <button class="ui-close-card ui-ease-btn">
+                        <button class="ui-card-close ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <h4 class="ui-h4">
@@ -224,7 +224,7 @@
                     </div>
 
                     <div class="ui-card-warning ui-p-15 ui-round">
-                        <button class="ui-close-card ui-ease-btn">
+                        <button class="ui-card-close ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <h4 class="ui-h4">
@@ -235,7 +235,7 @@
                     </div>
 
                     <div class="ui-card-info ui-p-15 ui-round ui-shadow">
-                        <button class="ui-close-card ui-ease-btn">
+                        <button class="ui-card-close ui-ease-btn">
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <h4 class="ui-h4">

@@ -6,10 +6,10 @@
 ui.card = {
 
     // targets
-    targetClose: 'ui-close-card',
+    targetClose: 'ui-card-close',
 
     // styling classnames
-    stylesClosing: 'ui-closing-card ui-ease-layout',
+    stylesClosing: 'ui-card-close-waiting ui-ease-layout',
 
 };
 

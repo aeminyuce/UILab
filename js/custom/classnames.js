@@ -62,54 +62,56 @@ ui.classnames = {
 
             function () {
 
-                ui.each(ui.ajax.classNames, function () {
+                var reStart, reDuplicate, str, strStart, strLength, title;
 
-                    var reStart, reDuplicate, str, strStart, strLength;
+                ui.each(ui.ajax.classNames,
 
-                    reStart = ui.classnames.prefix + '-';
-                    reStart = new RegExp(reStart, 'g');
+                    function () {
 
-                    reDuplicate = '(' + ui.classnames.prefix + '-)|(-' + ui.classnames.prefix + ')';
-                    reDuplicate = new RegExp(reDuplicate, 'g');
+                        reStart = ui.classnames.prefix + '-';
+                        reStart = new RegExp(reStart, 'g');
 
-                    str = this.toString();
-                    strStart = str.match(reStart);
+                        reDuplicate = '(' + ui.classnames.prefix + '-)|(-' + ui.classnames.prefix + ')';
+                        reDuplicate = new RegExp(reDuplicate, 'g');
 
-                    if (strStart === null) {
+                        str = this.toString();
+                        strStart = str.match(reStart);
 
-                        if (str === '') {
+                        if (strStart === null) {
 
-                            // error: empty
-                            arr.error.push(ui.classnames.msgEmpty);
+                            if (str === '') {
+
+                                // error: empty
+                                arr.error.push(ui.classnames.msgEmpty);
+
+                            } else {
+
+                                // warning
+                                arr.warning.push(str);
+
+                            }
 
                         } else {
 
-                            // warning
-                            arr.warning.push(str);
+                            // list
+                            arr.list.push(str);
 
                         }
 
-                    } else {
+                        strLength = str.match(reDuplicate);
+                        if (strLength !== null) {
 
-                        // list
-                        arr.list.push(str);
+                            strLength = Number(str.match(reDuplicate).length);
+                            if (strLength > 1) {
 
-                    }
+                                // error: duplicate
+                                arr.error.push(ui.classnames.msgDuplicate + ': ' + str);
 
-                    strLength = str.match(reDuplicate);
-                    if (strLength !== null) {
-
-                        strLength = Number(str.match(reDuplicate).length);
-                        if (strLength > 1) {
-
-                            // error: duplicate
-                            arr.error.push(ui.classnames.msgDuplicate + ': ' + str);
+                            }
 
                         }
 
-                    }
-
-                });
+                    });
 
                 // list
                 arr.list = arr.list.sort();
@@ -117,8 +119,21 @@ ui.classnames = {
 
                     function () {
 
-                        if (lastAddedList === '' || lastAddedList.split('-')[1] !== this.split('-')[1]) {
-                            list.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesListSep + '">' + this.split('-')[1] + '</li>');
+                        title = this.split('-')[1];
+
+                        if (title === 'xl' || title === 'lg' || title === 'md' || title === 'sm' || title === 'xs') {
+                            title = this.split('-')[2];
+
+                        }
+
+                        if (lastAddedList.split('-')[1] !== title) {
+
+                            if (title === 'm') { title = 'margin'; }
+                            if (title === 'p') { title = 'padding'; }
+                            if (title === 'sp') { title = 'spacer'; }
+
+                            list.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesListSep + '">' + title + '</li>');
+
                         }
 
                         list.insertAdjacentHTML('beforeend', '<li>' + this + '</li>');

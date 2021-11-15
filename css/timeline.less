@@ -44,10 +44,10 @@
     &:not(:last-child) { margin-bottom: @highlight-space; }
 
     & > li {
-        display: block; position: relative;
+        box-sizing: border-box; display: block; position: relative;
 
         &:not(:last-child) { margin-bottom: @highlight-space; }
-        &:after { content: ""; width: @timeline-steps-size; height: @timeline-steps-size; display: block; ._border-var(@width: @timeline-line-size; @var: timeline-line-bg); border-radius: 50%; position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; }
+        &:after { content: ""; box-sizing: border-box; width: @timeline-steps-size; height: @timeline-steps-size; display: block; ._border-var(@width: @timeline-line-size; @var: timeline-line-bg); border-radius: 50%; position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; }
 
         &.ui-text {
             &:after { border-color: currentColor; }
@@ -60,10 +60,10 @@
             &:not([class*="ui-fill"]),a,button { ._color-var(black); }
         }
         & > .ui-avatar {
-            & + .ui-card { padding-top: ((@photo-img-default / 2) + round((@timeline-card-padding / 2))); }
-            &-lg + .ui-card { padding-top: ((@photo-img-lg / 2) + round((@timeline-card-padding / 2))); }
-            &-sm + .ui-card { padding-top: ((@photo-img-sm / 2) + round((@timeline-card-padding / 2))); }
-            &-xs + .ui-card { padding-top: ((@photo-img-xs / 2) + round((@timeline-card-padding / 2))); }
+            & + .ui-card { padding-top: ((@avatar-default / 2) + round((@timeline-card-padding / 2))); }
+            &-lg + .ui-card { padding-top: ((@avatar-lg / 2) + round((@timeline-card-padding / 2))); }
+            &-sm + .ui-card { padding-top: ((@avatar-sm / 2) + round((@timeline-card-padding / 2))); }
+            &-xs + .ui-card { padding-top: ((@avatar-xs / 2) + round((@timeline-card-padding / 2))); }
         }
     }
 
@@ -73,7 +73,7 @@
         }
     }
 
-    &.ui-side-l {
+    &.ui-timeline-l {
         &:after { left: ((@timeline-steps-size - @timeline-line-size) / 2); }
         & > li {
             padding-left: @timeline-line-gap;
@@ -85,7 +85,7 @@
 
 @media (@md-start) {
     .ui-timeline {
-        &:not(.ui-side-l) {
+        &:not(.ui-timeline-l) {
             &:after { margin-left: -(@timeline-line-size / 2); left: 50%; }
             & > li {
                 width: 50%;

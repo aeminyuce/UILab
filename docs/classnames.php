@@ -4,7 +4,7 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed ui-p-30-v">
 
-        <h3 class="ui-h3">UI Classnames List</h3>
+        <h3 class="ui-h3">UI Classnames</h3>
 
         <div class="ui-row ui-row-gap-lg">
             <div class="ui-col-7">

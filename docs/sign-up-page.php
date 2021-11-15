@@ -140,7 +140,7 @@
                             </div>
                             <div class="signup-why-join ui-col-lg-500 ui-col-400 ui-col-md-350 ui-order-sm-first ui-sm-align-c ui-p-30">
 
-                                <img class="ui-auto-m" src="img/sign-up.png" alt="Join Us" width="280">
+                                <img class="ui-m-auto" src="img/sign-up.png" alt="Join Us" width="280">
                                 <span class="ui-sp-30"></span>
 
                                 <h1 class="ui-h1">

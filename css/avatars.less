@@ -18,11 +18,11 @@
 }
 
 .ui-avatar {
-    font-size: @font-16; width: @photo-img-default; height: @photo-img-default;
+    font-size: @font-16; width: @avatar-default; height: @avatar-default;
 
-    &,&-lg,&-sm,&-xs { text-align: center; vertical-align: middle; position: relative; }
+    &,&-lg,&-sm,&-xs {
+        text-align: center; vertical-align: middle; position: relative;
 
-    &-lg,&-sm,&-xs {
         &:not(img) {
             text-decoration: none; ._bg-var(avatar-bg); display: inline-block;
 
@@ -31,17 +31,17 @@
     }
 
     &-lg {
-        font-size: @font-24; width: @photo-img-lg; height: @photo-img-lg;
+        font-size: @font-24; width: @avatar-lg; height: @avatar-lg;
 
         .ui-icon { ._icon(@avatar-lg-icon-size); }
     }
     &-sm {
-        font-size: @font-size; width: @photo-img-sm; height: @photo-img-sm;
+        font-size: @font-size; width: @avatar-sm; height: @avatar-sm;
 
         .ui-icon { ._icon(@avatar-sm-icon-size); }
     }
     &-xs {
-        font-size: @font-12; width: @photo-img-xs; height: @photo-img-xs;
+        font-size: @font-12; width: @avatar-xs; height: @avatar-xs;
 
         .ui-icon { ._icon(@avatar-xs-icon-size); }
     }

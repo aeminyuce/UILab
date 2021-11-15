@@ -9,45 +9,45 @@
 @cards-close-icon-opacity:              .45;
 @cards-close-icon-opacity-hover:        .75;
 
-.ui-card,[class*="ui-card-"]:not(.ui-card-side) {
+.ui-card,[class*="ui-card-"]:not(.ui-card-side):not(.ui-card-close) {
     ._bg-var(card-bg); display: block; position: relative;
 
     &:not(:last-child) { margin-bottom: @highlight-space; }
 }
 
-.ui-card,.ui-card-side {
-    &:before,&:after { content: ""; display: table; }
-    &:after { clear: both; }
-
-    & > .ui-row { margin-left: inherit; margin-right: inherit; }
-}
-
-[class*="ui-card-"]:not(.ui-card-side) {
+[class*="ui-card-"]:not(.ui-card-side):not(.ui-card-close) {
     border-left-style: solid; border-left-width: @cards-message-left-border;
 
     &.ui-round { border-radius: 0 @round @round 0; }
     & > .ui-row { margin-left: inherit; margin-right: inherit; }
 }
 
-.ui-card- {
-    &side {
+.ui-card {
+    &,&-side {
+        &:before,&:after { content: ""; display: table; }
+        &:after { clear: both; }
+
+        & > .ui-row { margin-left: inherit; margin-right: inherit; }
+    }
+    &-side {
         .ui-round > &:first-child { border-radius: @round @round 0 0; }
         .ui-round > &:last-child { border-radius: 0 0 @round @round; }
     }
 
-    &info { border-color: @gray; }
-    &success { border-color: @green; }
-    &warning { border-color: @yellow; }
-    &danger { border-color: @orange; }
-}
+    &-close {
+        ._color-var(black); line-height: @cards-close-icon-size; background-color: @no-color; border: 0; position: absolute; top: @cards-close-icon-position; right: @cards-close-icon-position; z-index: 1; opacity: @cards-close-icon-opacity; cursor: pointer;
 
-.ui-close-card {
-    ._color-var(black); line-height: @cards-close-icon-size; background-color: @no-color; border: 0; position: absolute; top: @cards-close-icon-position; right: @cards-close-icon-position; z-index: 1; opacity: @cards-close-icon-opacity; cursor: pointer;
+        .ui-icon { ._icon(@cards-close-icon-size); }
+        .ui-desktop &:hover { opacity: @cards-close-icon-opacity-hover; }
 
-    .ui-icon { ._icon(@cards-close-icon-size); }
-    .ui-desktop &:hover { opacity: @cards-close-icon-opacity-hover; }
+        &-waiting { transform: @cards-closing-effect; opacity: 0; }
+    }
+
+    &-info { border-color: @gray; }
+    &-success { border-color: @green; }
+    &-warning { border-color: @yellow; }
+    &-danger { border-color: @orange; }
 }
-.ui-closing-card { transform: @cards-closing-effect; opacity: 0; }
 
 @media (@sm-finish) {
     [class*="ui-card-"]:not(.ui-card-side) {

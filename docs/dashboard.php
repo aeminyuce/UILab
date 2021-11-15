@@ -19,7 +19,7 @@
                     </button>
                 </div>
 
-                <div class="ui-tabs ui-align-l ui-icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn ui-scroll-v ui-scrollbar-faded ui-add-sidebar-l" data-ui-classes="ui-text">
+                <div class="ui-tabs ui-align-l ui-icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn ui-scroll-v ui-scrollbar-faded ui-sidebar-add-l" data-ui-classes="ui-text">
 
                     <div class="ui-p-10">
                         <div class="ui-font-12 ui-m-10-b ui-color-white-25">Personal Activity</div>
@@ -234,7 +234,7 @@
                     <button class="dashboard-menu-show ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle ui-visible-lg ui-hidden" data-ui-tooltip title="Toggle Menu">
                         <svg class="ui-icon"><use href="#angle-right"/></svg>
                     </button>
-                    <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle ui-show-sidebar-l ui-hidden-lg" data-ui-tooltip title="Show Menu" data-ui-only="desktop">
+                    <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle ui-sidebar-show-l ui-hidden-lg" data-ui-tooltip title="Show Menu" data-ui-only="desktop">
                         <svg class="ui-icon"><use href="#bars-left"/></svg>
                     </button>
                     <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle" onclick="ui.modal.open({source: '.modal-search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
@@ -294,7 +294,7 @@
                                     </button>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v ui-open ui-open-ease" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-side-l ui-m-15-h ui-hide-h-lines">
+                                    <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
                                         <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                         <li>
                                             Lorem ipsum dolor sit amet.
@@ -345,7 +345,7 @@
                                     </ul>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-side-l ui-m-15-h ui-hide-h-lines">
+                                    <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -379,7 +379,7 @@
                                     </button>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v ui-open ui-open-ease" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-side-l ui-m-15-h ui-hide-h-lines">
+                                    <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -391,7 +391,7 @@
                                     </ul>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-side-l ui-m-15-h ui-hide-h-lines">
+                                    <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -403,7 +403,7 @@
                                     </ul>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-side-l ui-m-15-h ui-hide-h-lines">
+                                    <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -479,8 +479,8 @@
                         <div class="ui-col-4 ui-offset-4 ui-no-p-b">
 
                             <div class="ui-btn-holder ui-color-black-25 ui-form-lg ui-ease-1st-btn">
-                                <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-text ui-active">Forms</button>
-                                <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">Dashboard</button>
+                                <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-text ui-active">Dashboard</button>
+                                <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">Forms</button>
                             </div>
 
                         </div>
@@ -488,201 +488,6 @@
                 </div>
 
                 <div class="ui-tab-content ui-open ui-open-ease">
-
-                    <!-- forms: start -->
-                    <div class="ui-fixed ui-fixed-xl">
-                        <div class="ui-row">
-                            <div class="ui-col-12">
-
-                                <div class="ui-card ui-round ui-shadow-lg">
-
-                                    <form action="#succesful">
-                                        <div class="ui-card-side ui-p-5-h ui-border-b">
-                                            <div class="ui-col-static ui-no-fluid">
-                                                <div class="ui-row">
-                                                    <div class="ui-col-12">
-                                                        <h4 class="ui-h4 ui-align-l ui-m-4-t ui-m-3-b">Forms</h4>
-                                                    </div>
-                                                </div>
-                                                <div class="ui-col-48 ui-p-5-v">
-
-                                                    <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
-                                                        <button type="button" class="ui-btn ui-btn-lg ui-btn-ghost ui-btn-square ui-round">
-                                                            <svg class="ui-icon ui-default-icon"><use href="#ellipsis-h"/></svg>
-                                                        </button>
-                                                        <ul class="ui-dropdown-menu ui-has-icon ui-round ui-shadow-lg">
-                                                            <li><a href="#">
-                                                                <svg class="ui-list-icon ui-icon"><use href="#check"/></svg>
-                                                                Save &amp; Continue</a>
-                                                            </li>
-                                                            <li><a href="#">
-                                                                <svg class="ui-list-icon ui-icon"><use href="#sign-out"/></svg>
-                                                                Save &amp; Exit</a>
-                                                            </li>
-                                                            <li><a href="#">
-                                                                <svg class="ui-list-icon ui-icon"><use href="#pencil"/></svg>
-                                                                Save &amp; Edit</a>
-                                                            </li>
-                                                            <li><a href="#">
-                                                                <svg class="ui-list-icon ui-icon"><use href="#plus"/></svg>
-                                                                Save &amp; Add New</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ui-card-side ui-p-15 ui-form-lg">
-                                            <div class="ui-row">
-
-                                                <div class="ui-col-8 ui-offset-2">
-                                                    <h3 class="ui-h3">Customer Info</h3>
-                                                </div>
-
-                                                <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-info">First Name</label>
-                                                </div>
-                                                <div class="ui-col-5">
-                                                    <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                                        <input class="ui-required" type="text" placeholder="Enter first name" minlength="3">
-                                                    </div>
-                                                    <p class="ui-required-msg">Enter your first name.</p>
-                                                </div>
-
-                                                <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-info">Last Name</label>
-                                                </div>
-                                                <div class="ui-col-5">
-                                                    <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                                        <input class="ui-required" type="text" placeholder="Enter last name" minlength="3">
-                                                    </div>
-                                                    <p class="ui-required-msg">Enter your last name.</p>
-                                                </div>
-
-                                                <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-info">Contact Phone</label>
-                                                </div>
-                                                <div class="ui-col-5">
-                                                    <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
-                                                        <svg class="ui-icon"><use href="#phone"/></svg>
-                                                        <input class="ui-required ui-number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
-                                                    </div>
-                                                    <p class="ui-required-msg">Enter your phone.</p>
-                                                </div>
-
-                                                <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-info">Age</label>
-                                                </div>
-                                                <div class="ui-col-5">
-                                                    <div class="ui-select ui-round ui-border-dual ui-ease-form">
-                                                        <svg class="ui-icon"><use href="#angle-down"/></svg>
-                                                        <select class="ui-required">
-                                                            <option value="">Select your age</option>
-                                                            <option>Under 20</option>
-                                                            <option>21- 30</option>
-                                                            <option>31 - 40</option>
-                                                        </select>
-                                                    </div>
-                                                    <p class="ui-required-msg">Enter your age.</p>
-                                                </div>
-
-                                                <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-info">Email Address</label>
-                                                </div>
-                                                <div class="ui-col-5">
-                                                    <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
-                                                        <svg class="ui-icon"><use href="#at"/></svg>
-                                                        <input class="ui-required" type="email">
-                                                    </div>
-                                                    <p class="ui-required-msg">Enter a valid email.</p>
-                                                </div>
-
-                                                <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-info">Company Site</label>
-                                                </div>
-                                                <div class="ui-col-5">
-                                                    <div class="ui-form-holder ui-col-static ui-no-fluid">
-
-                                                        <div class="ui-row ui-no-row-gap">
-                                                            <div class="ui-col-12">
-                                                                <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
-                                                                    <svg class="ui-icon"><use href="#browser"/></svg>
-                                                                    <input class="ui-required" type="text" placeholder="Site name">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="ui-col-200">
-                                                            <div class="ui-select ui-round ui-border-dual ui-ease-form">
-                                                                <svg class="ui-icon"><use href="#angle-down"/></svg>
-                                                                <select>
-                                                                    <option>.com</option>
-                                                                    <option>.net</option>
-                                                                    <option>.org</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                    <p class="ui-required-msg">Enter your site name.</p>
-                                                </div>
-
-                                                <div class="ui-sp-1 ui-m-20 ui-border-b ui-border-dashed"></div>
-
-                                                <div class="ui-col-8 ui-offset-2">
-                                                    <h3 class="ui-h3">Address Details</h3>
-                                                </div>
-
-                                                <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-info">Country</label>
-                                                </div>
-                                                <div class="ui-col-5">
-                                                    <div data-ui-src="json/countries.json" data-ui-val="name" class="ui-autocomplete ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
-                                                        <svg class="ui-icon"><use href="#keyboard"/></svg>
-                                                        <input class="ui-required" type="text" placeholder="Type/Select your country" autocomplete="off" minlength="3">
-                                                    </div>
-                                                    <p class="ui-required-msg">Type/Select your country.</p>
-                                                </div>
-
-                                                <div class="ui-col-3 ui-offset-2">
-                                                    <label class="ui-form-info">Address</label>
-                                                </div>
-                                                <div class="ui-col-5">
-                                                    <div class="ui-textarea ui-round ui-border-dual ui-ease-form" data-ui-counter="1000">
-                                                        <textarea class="ui-required" rows="3"></textarea>
-                                                    </div>
-                                                    <p class="ui-required-msg">Enter your address details.</p>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="ui-card-side ui-p-5-h ui-border-t">
-                                            <div class="ui-row">
-                                                <div class="ui-col-12 ui-align-r ui-xs-align-c ui-ease-1st-btn">
-
-                                                    <button type="reset" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-round">
-                                                        Cancel
-                                                    </button>
-
-                                                    <button type="submit" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-round ui-theme-green ui-fill-dark-100">
-                                                        <svg class="ui-icon ui-m-5-r"><use href="#save"/></svg> Save
-                                                    </button>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- forms: end -->
-
-                </div>
-
-                <div class="ui-tab-content">
 
                     <!-- dashboard: start -->
                     <div class="ui-fixed ui-fixed-xl">
@@ -824,7 +629,7 @@
                                     </div>
                                     <div class="ui-row ui-row-gap-lg-h ui-no-fluid">
                                         <div class="ui-col-6">
-                                            <div class="ui-donut-chart ui-auto-m ui-ease-donut-chart" style="max-width: 150px;">
+                                            <div class="ui-donut-chart ui-m-auto ui-ease-donut-chart" style="max-width: 150px;">
                                                 <strong>
                                                     <b class="ui-color-black-50 ui-m-2-b ui-block">69%</b>
                                                     Payments
@@ -836,7 +641,7 @@
                                             </div>
                                         </div>
                                         <div class="ui-col-6">
-                                            <div class="ui-pie-chart ui-auto-m ui-ease-pie-chart" data-ui-info="Profit" style="max-width: 150px;">
+                                            <div class="ui-pie-chart ui-m-auto ui-ease-pie-chart" data-ui-info="Profit" style="max-width: 150px;">
                                                 <ul>
                                                     <li data-ui-percent="70" data-ui-fill="hsl(97, 70%, 70%)"></li>
                                                 </ul>
@@ -1078,7 +883,7 @@
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">Announcements</button>
                                         </div>
                                         <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
-                                            <ul class="ui-timeline ui-side-l ui-m-15-h ui-hide-h-lines">
+                                            <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
                                                 <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                                 <li>
                                                     Lorem ipsum dolor sit amet.
@@ -1124,7 +929,7 @@
                                             </ul>
                                         </div>
                                         <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v" style="top: 62px; bottom: 15px;">
-                                            <ul class="ui-timeline ui-side-l ui-m-15-h ui-hide-h-lines">
+                                            <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
                                                 <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                                 <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                                 <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -1768,6 +1573,201 @@
 
                 </div>
 
+                <div class="ui-tab-content">
+
+                    <!-- forms: start -->
+                    <div class="ui-fixed ui-fixed-xl">
+                        <div class="ui-row">
+                            <div class="ui-col-12">
+
+                                <div class="ui-card ui-round ui-shadow-lg">
+
+                                    <form action="#succesful">
+                                        <div class="ui-card-side ui-p-5-h ui-border-b">
+                                            <div class="ui-col-static ui-no-fluid">
+                                                <div class="ui-row">
+                                                    <div class="ui-col-12">
+                                                        <h4 class="ui-h4 ui-align-l ui-m-4-t ui-m-3-b">Forms</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="ui-col-48 ui-p-5-v">
+
+                                                    <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
+                                                        <button type="button" class="ui-btn ui-btn-lg ui-btn-ghost ui-btn-square ui-round">
+                                                            <svg class="ui-icon ui-default-icon"><use href="#ellipsis-h"/></svg>
+                                                        </button>
+                                                        <ul class="ui-dropdown-menu ui-has-icon ui-round ui-shadow-lg">
+                                                            <li><a href="#">
+                                                                <svg class="ui-list-icon ui-icon"><use href="#check"/></svg>
+                                                                Save &amp; Continue</a>
+                                                            </li>
+                                                            <li><a href="#">
+                                                                <svg class="ui-list-icon ui-icon"><use href="#sign-out"/></svg>
+                                                                Save &amp; Exit</a>
+                                                            </li>
+                                                            <li><a href="#">
+                                                                <svg class="ui-list-icon ui-icon"><use href="#pencil"/></svg>
+                                                                Save &amp; Edit</a>
+                                                            </li>
+                                                            <li><a href="#">
+                                                                <svg class="ui-list-icon ui-icon"><use href="#plus"/></svg>
+                                                                Save &amp; Add New</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ui-card-side ui-p-15 ui-form-lg">
+                                            <div class="ui-row">
+
+                                                <div class="ui-col-8 ui-offset-2">
+                                                    <h3 class="ui-h3">Customer Info</h3>
+                                                </div>
+
+                                                <div class="ui-col-3 ui-offset-2">
+                                                    <label class="ui-form-info">First Name</label>
+                                                </div>
+                                                <div class="ui-col-5">
+                                                    <div class="ui-input ui-round ui-border-dual ui-ease-form">
+                                                        <input class="ui-required" type="text" placeholder="Enter first name" minlength="3">
+                                                    </div>
+                                                    <p class="ui-required-msg">Enter your first name.</p>
+                                                </div>
+
+                                                <div class="ui-col-3 ui-offset-2">
+                                                    <label class="ui-form-info">Last Name</label>
+                                                </div>
+                                                <div class="ui-col-5">
+                                                    <div class="ui-input ui-round ui-border-dual ui-ease-form">
+                                                        <input class="ui-required" type="text" placeholder="Enter last name" minlength="3">
+                                                    </div>
+                                                    <p class="ui-required-msg">Enter your last name.</p>
+                                                </div>
+
+                                                <div class="ui-col-3 ui-offset-2">
+                                                    <label class="ui-form-info">Contact Phone</label>
+                                                </div>
+                                                <div class="ui-col-5">
+                                                    <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
+                                                        <svg class="ui-icon"><use href="#phone"/></svg>
+                                                        <input class="ui-required ui-number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
+                                                    </div>
+                                                    <p class="ui-required-msg">Enter your phone.</p>
+                                                </div>
+
+                                                <div class="ui-col-3 ui-offset-2">
+                                                    <label class="ui-form-info">Age</label>
+                                                </div>
+                                                <div class="ui-col-5">
+                                                    <div class="ui-select ui-round ui-border-dual ui-ease-form">
+                                                        <svg class="ui-icon"><use href="#angle-down"/></svg>
+                                                        <select class="ui-required">
+                                                            <option value="">Select your age</option>
+                                                            <option>Under 20</option>
+                                                            <option>21- 30</option>
+                                                            <option>31 - 40</option>
+                                                        </select>
+                                                    </div>
+                                                    <p class="ui-required-msg">Enter your age.</p>
+                                                </div>
+
+                                                <div class="ui-col-3 ui-offset-2">
+                                                    <label class="ui-form-info">Email Address</label>
+                                                </div>
+                                                <div class="ui-col-5">
+                                                    <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
+                                                        <svg class="ui-icon"><use href="#at"/></svg>
+                                                        <input class="ui-required" type="email">
+                                                    </div>
+                                                    <p class="ui-required-msg">Enter a valid email.</p>
+                                                </div>
+
+                                                <div class="ui-col-3 ui-offset-2">
+                                                    <label class="ui-form-info">Company Site</label>
+                                                </div>
+                                                <div class="ui-col-5">
+                                                    <div class="ui-form-holder ui-col-static ui-no-fluid">
+
+                                                        <div class="ui-row ui-no-row-gap">
+                                                            <div class="ui-col-12">
+                                                                <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
+                                                                    <svg class="ui-icon"><use href="#browser"/></svg>
+                                                                    <input class="ui-required" type="text" placeholder="Site name">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ui-col-200">
+                                                            <div class="ui-select ui-round ui-border-dual ui-ease-form">
+                                                                <svg class="ui-icon"><use href="#angle-down"/></svg>
+                                                                <select>
+                                                                    <option>.com</option>
+                                                                    <option>.net</option>
+                                                                    <option>.org</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <p class="ui-required-msg">Enter your site name.</p>
+                                                </div>
+
+                                                <div class="ui-sp-1 ui-m-20 ui-border-b ui-border-dashed"></div>
+
+                                                <div class="ui-col-8 ui-offset-2">
+                                                    <h3 class="ui-h3">Address Details</h3>
+                                                </div>
+
+                                                <div class="ui-col-3 ui-offset-2">
+                                                    <label class="ui-form-info">Country</label>
+                                                </div>
+                                                <div class="ui-col-5">
+                                                    <div data-ui-src="json/countries.json" data-ui-val="name" class="ui-autocomplete ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
+                                                        <svg class="ui-icon"><use href="#keyboard"/></svg>
+                                                        <input class="ui-required" type="text" placeholder="Type/Select your country" autocomplete="off" minlength="3">
+                                                    </div>
+                                                    <p class="ui-required-msg">Type/Select your country.</p>
+                                                </div>
+
+                                                <div class="ui-col-3 ui-offset-2">
+                                                    <label class="ui-form-info">Address</label>
+                                                </div>
+                                                <div class="ui-col-5">
+                                                    <div class="ui-textarea ui-round ui-border-dual ui-ease-form" data-ui-counter="1000">
+                                                        <textarea class="ui-required" rows="3"></textarea>
+                                                    </div>
+                                                    <p class="ui-required-msg">Enter your address details.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="ui-card-side ui-p-5-h ui-border-t">
+                                            <div class="ui-row">
+                                                <div class="ui-col-12 ui-align-r ui-xs-align-c ui-ease-1st-btn">
+
+                                                    <button type="reset" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-round">
+                                                        Cancel
+                                                    </button>
+
+                                                    <button type="submit" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-round ui-theme-green ui-fill-dark-100">
+                                                        <svg class="ui-icon ui-m-5-r"><use href="#save"/></svg> Save
+                                                    </button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- forms: end -->
+
+                </div>
+
             </div>
             <!-- layouts: end -->
 
@@ -1779,7 +1779,7 @@
 <!-- mobile menu -->
 <div class="ui-sidebar ui-show-l ui-invert-bg ui-theme-panel ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
     <div class="ui-sidebar-title ui-no-p ui-border-b">
-        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-sidebar">
+        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-sidebar-close">
             <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
         </button>
         <img src="img/logo-udashboard.png" height="66" alt="">

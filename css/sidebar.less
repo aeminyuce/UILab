@@ -32,6 +32,7 @@
     &:not(.ui-open) { display: none; }
     &.ui-open-ease { transform: translateX(0); }
 
+    &-close{ position: fixed; top: @sidebar-padding; right: @sidebar-padding; z-index: 10; }
     &-title {
         height: @sidebar-title-height; padding: @sidebar-padding ((@sidebar-padding * 2) + @sidebar-close-btn-size) @sidebar-padding @sidebar-padding; position: relative; z-index: 1;
 
@@ -40,5 +41,3 @@
 
     &-content { padding: @sidebar-padding; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 }
-
-.ui-close-sidebar { position: fixed; top: @sidebar-padding; right: @sidebar-padding; z-index: 10; }

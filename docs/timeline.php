@@ -96,7 +96,7 @@
                 <span class="ui-sp-30 ui-m-15-v"></span>
 
                 <h3 class="ui-h3">Activity</h3>
-                <ul class="ui-timeline ui-side-l ui-font-16 ui-theme-base ui-text">
+                <ul class="ui-timeline ui-timeline-l ui-font-16 ui-theme-base ui-text">
                     <li>
                         <img class="ui-avatar ui-circle ui-shadow-lg" src="img/profile-image.jpg" alt="">
                         <span class="ui-card ui-font-readable ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque.</span>
@@ -116,7 +116,7 @@
                 <span class="ui-sp-30 ui-m-15-v"></span>
 
                 <h3 class="ui-h3">Activity</h3>
-                <ul class="ui-timeline ui-side-l ui-font-16">
+                <ul class="ui-timeline ui-timeline-l ui-font-16">
                     <li class="ui-theme-yellow ui-text"><span class="ui-card ui-font-readable ui-color-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
                     <li class="ui-theme-orange ui-text"><span class="ui-card ui-font-readable ui-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
                     <li class="ui-theme-red ui-text"><span class="ui-card ui-font-readable ui-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
@@ -128,7 +128,7 @@
                 <span class="ui-sp-30 ui-m-15-v"></span>
 
                 <h3 class="ui-h3">Activity</h3>
-                <ul class="ui-timeline ui-side-l ui-hide-h-lines ui-font-16">
+                <ul class="ui-timeline ui-timeline-l ui-hide-h-lines ui-font-16">
                     <li class="ui-theme-yellow ui-text"><span class="ui-card ui-font-readable ui-color-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
                     <li class="ui-theme-orange ui-text"><span class="ui-card ui-font-readable ui-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
                     <li class="ui-theme-red ui-text"><span class="ui-card ui-font-readable ui-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>
@@ -140,7 +140,7 @@
                 <span class="ui-sp-30 ui-m-15-v"></span>
 
                 <h3 class="ui-h3">Activity</h3>
-                <ul class="ui-timeline ui-side-l ui-hide-h-lines ui-font-16">
+                <ul class="ui-timeline ui-timeline-l ui-hide-h-lines ui-font-16">
                     <li class="ui-font-readable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </li>
                     <li class="ui-font-readable">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
                     <li class="ui-font-readable">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -152,7 +152,7 @@
                 <span class="ui-sp-30 ui-m-15-v"></span>
 
                 <h3 class="ui-h3">Activity</h3>
-                <ul class="ui-timeline ui-side-l ui-hide-lines ui-font-16">
+                <ul class="ui-timeline ui-timeline-l ui-hide-lines ui-font-16">
                     <li class="ui-theme-yellow ui-text"><span class="ui-card ui-font-readable ui-color-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span></li>
                     <li class="ui-theme-orange ui-text"><span class="ui-card ui-font-readable ui-color-black">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span></li>
                     <li class="ui-theme-red ui-text"><span class="ui-card ui-font-readable ui-color-black">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span></li>

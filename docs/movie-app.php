@@ -7,7 +7,7 @@
 
             <div class="movie-library ui-full-h ui-set-fixed ui-set-l ui-p-5 ui-fill-dark-100 ui-hidden-md ui-scroll-v ui-scrollbar-faded">
 
-                <div class="ui-align-l ui-p-10 ui-icons-no-opacity ui-icons-m-10-r ui-form-lg ui-add-sidebar-l">
+                <div class="ui-align-l ui-p-10 ui-icons-no-opacity ui-icons-m-10-r ui-form-lg ui-sidebar-add-l">
                     <h5 class="ui-h5 ui-color-white-50 ui-p-15 ui-m-5-b">LIBRARY</h5>
                     <ul class="ui-list-unstyled ui-list-sp-15 ui-font-16 ui-font-bold ui-block-2nd ui-ease-2nd-btn">
                         <li>
@@ -93,7 +93,7 @@
                         </div>
                         <div class="ui-col-6 ui-align-r">
                             <span class="ui-align-c ui-color-black-50 ui-m-20-r ui-sm-no-m ui-ease-1st-btn">
-                                <button class="ui-btn ui-btn-square ui-btn-ghost ui-m-10-l ui-circle ui-float-l ui-show-sidebar-l ui-visible-md">
+                                <button class="ui-btn ui-btn-square ui-btn-ghost ui-m-10-l ui-circle ui-float-l ui-sidebar-show-l ui-visible-md">
                                     <svg class="ui-icon"><use href="#bars-left"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-circle ui-ease-btn ui-visible-md" onclick="ui.modal.open({source: '.modal-search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
@@ -408,7 +408,7 @@
 <!-- mobile menu -->
 <div class="ui-sidebar ui-show-l ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
     <div class="ui-sidebar-title ui-p-20-v ui-font-18 ui-border-b">
-        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-close-sidebar">
+        <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-sidebar-close">
             <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
         </button>
         Categories
