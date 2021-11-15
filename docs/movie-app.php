@@ -17,7 +17,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="ui-btn ui-p-15-h ui-circle app-library-selected" href="#">
+                            <a class="ui-btn ui-p-15-h ui-circle movie-library-selected" href="#">
                                 <svg class="ui-icon"><use href="#film"/></svg>
                                 Films
                             </a>

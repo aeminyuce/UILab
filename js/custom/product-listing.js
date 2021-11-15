@@ -13,7 +13,7 @@ ui.lineCharts.showInfo = false;
 ui.alerts.stylesMsgTheme = 'ui-theme-sub ui-fill-dark-100';
 
 ui.onload(function () {
-    ui.on('.load-more',
+    ui.on('.product-list-load-more',
         'click',
 
         function () {
@@ -29,7 +29,7 @@ ui.onload(function () {
                 url : 'xhr/ajax-products.php',
                 callback: function (status, response) {
 
-                    target = ui.find('.products-list');
+                    target = ui.find('.product-list');
                     if (target.length > 0) {
 
                         if (status === 'success') {

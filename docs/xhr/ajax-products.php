@@ -1,5 +1,5 @@
 <div class="ui-col-4 ui-col-sm-6">
-    <a class="ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
+    <a class="ui-link ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
         <span class="ui-photo-slider ui-m-20-b">
             <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
             <img
@@ -35,7 +35,7 @@
     </a>
 </div>
 <div class="ui-col-4 ui-col-sm-6">
-    <a class="ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
+    <a class="ui-link ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
         <span class="ui-photo-slider ui-m-20-b">
             <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
             <img
@@ -70,7 +70,7 @@
     </a>
 </div>
 <div class="ui-col-4 ui-col-sm-6">
-    <a class="ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
+    <a class="ui-link ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
         <span class="ui-photo-slider ui-m-20-b">
             <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
             <img
@@ -105,7 +105,7 @@
     </a>
 </div>
 <div class="ui-col-4 ui-col-sm-6">
-    <a class="ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
+    <a class="ui-link ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
         <span class="ui-photo-slider ui-m-20-b">
             <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
             <img src="img/product_04.png" alt="" >
@@ -136,7 +136,7 @@
     </a>
 </div>
 <div class="ui-col-4 ui-col-sm-6">
-    <a class="ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
+    <a class="ui-link ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
         <span class="ui-photo-slider ui-m-20-b">
             <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
             <img src="img/product_05.png" alt="" >
@@ -167,7 +167,7 @@
     </a>
 </div>
 <div class="ui-col-4 ui-col-sm-6">
-    <a class="ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
+    <a class="ui-link ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
         <span class="ui-photo-slider ui-m-20-b">
             <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
             <img

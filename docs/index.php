@@ -213,10 +213,13 @@
                             <span class="ui-sp-15"></span>
 
                             <div class="ui-form-lg ui-ease-1st-btn">
-                                <a href="?p=classnames" class="ui-btn ui-btn-xs-fluid ui-m-5-h ui-xs-no-m-h ui-circle">
+                                <a href="?p=classnames" class="ui-btn ui-btn-ghost ui-btn-xs-fluid ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle">
                                     Classnames
                                     <svg class="ui-icon ui-m-5-l"><use href="#brackets-curly"/></svg>
                                 </a>
+
+                                <span class="ui-sp-10 ui-visible-sm ui-hidden-xs"></span>
+
                                 <a href="?p=icons" class="ui-btn ui-btn-xs-fluid ui-m-5-h ui-xs-no-m-h ui-circle ui-fill-dark-300">
                                     <svg class="ui-icon ui-m-5-r"><use href="#draw"/></svg>
                                     See Icons

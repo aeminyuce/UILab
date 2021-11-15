@@ -12,7 +12,7 @@
 
 .ui-col-220 { width: 220px; }
 
-.banner {
+.landing-page-banner {
     &-content {
         background: no-repeat center center; background-size: cover;
 
@@ -20,20 +20,20 @@
         & > .ui-fixed { z-index: 1; }
     }
 
-    &-slogan,.footer-social { background-color: @landing-page-banner-border-bg; }
+    &-slogan,.landing-page-social { background-color: @landing-page-banner-border-bg; }
     &-slogan {
         & > div { background-color: @landing-page-banner-slogan-bg; }
     }
 }
 
-.home-links {
+.landing-page-links {
     margin-top: -80px; z-index: 1;
 
     .ui-carousel { margin: 0 -15px; }
 }
 
 @media (@md-finish) {
-    .home-links { padding: 0 15px; }
+    .landing-page-links { padding: 0 15px; }
 }
 @media (max-width: 620px) {
     .ui-photo-gallery {

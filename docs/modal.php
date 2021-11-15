@@ -56,15 +56,15 @@
             <div class="ui-col-6 ui-no-p-v">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open modal window with id.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '#myModalID'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#myModalID'});">Run Code</button>
+                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '#modal-example-id'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#modal-example-id'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-p-t">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open modal window with class name.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.myModal'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal'});">Run Code</button>
+                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example'});">Run Code</button>
 
             </div>
 
@@ -74,43 +74,43 @@
             <div class="ui-col-6 ui-no-p-v">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open large size modal window.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'lg'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'lg'});">Run Code</button>
+                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: 'lg'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', size: 'lg'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-p-t">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open default (medium) size modal window.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'md'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'md'});">Run Code</button>
+                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: 'md'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', size: 'md'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-p-t">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open small size modal window.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'sm'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'sm'});">Run Code</button>
+                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: 'sm'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', size: 'sm'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-p-t">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open fullscreen modal window.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'fullscreen'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'fullscreen'});">Run Code</button>
+                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: 'fullscreen'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', size: 'fullscreen'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-p-t">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open inline modal window.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: 'inline'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: 'inline'});">Run Code</button>
+                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: 'inline'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', size: 'inline'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-p-t">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open fixed size modal window.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.myModal',<br>    size: '560x315'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', size: '560x315'});">Run Code</button>
+                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: '560x315'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', size: '560x315'});">Run Code</button>
 
             </div>
 
@@ -139,8 +139,8 @@
                 <span class="ui-sp-15"></span>
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Google map embed link with header and footer:</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '#myModal02'<br>    size: 'fullscreen'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#myModalID02', size: 'fullscreen'});">Run Code</button>
+                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '#modal-example02'<br>    size: 'fullscreen'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#modal-example-id02', size: 'fullscreen'});">Run Code</button>
 
             </div>
 
@@ -157,8 +157,8 @@
 
                 <b>Closable:</b>
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Close modal window with footer buttons.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.myModal',<br>    closable: false<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', closable: false});">Run Code</button>
+                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    closable: false<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', closable: false});">Run Code</button>
 
             </div>
 
@@ -166,8 +166,8 @@
 
                 <b>Callback:</b>
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Callback call after open modal.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.myModal',<br>    callback: function () {<br>        alert('Modal opened!');<br>    }<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.myModal', callback: function () { alert('Modal opened!'); }});">Run Code</button>
+                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    callback: function () {<br>        alert('Modal opened!');<br>    }<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', callback: function () { alert('Modal opened!'); }});">Run Code</button>
 
             </div>
 
@@ -200,7 +200,7 @@
 </main>
 
 <!-- modal sources -->
-<div id="myModalID" class="ui-modal myModal ui-theme-base">
+<div id="modal-example-id" class="ui-modal modal-example ui-theme-base">
     <div class="ui-modal-header ui-fill-dark-100">
         <h4 class="ui-h4">Modal Header</h4>
         <div class="ui-modal-buttons ui-ease-1st-btn">

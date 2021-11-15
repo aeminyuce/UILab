@@ -2165,10 +2165,10 @@ html .ui-row {
   text-align: center !important;
 }
 .ui-bg-white:not([class*="ui-fill-"]) {
-  background-color: hsl(0, 0%, 100%) !important;
+  background-color: hsl(0, 0%, 100%);
 }
 .ui-bg-black:not([class*="ui-fill-"]) {
-  background-color: hsl(0, 0%, 0%) !important;
+  background-color: hsl(0, 0%, 0%);
 }
 @media print {
   .ui-hidden-print {
@@ -5825,7 +5825,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   white-space: nowrap;
   text-overflow: ellipsis;
   text-align: left;
-  line-height: 20px;
+  line-height: 30px;
   height: 30px;
   padding: 5px 10px;
   overflow: hidden;

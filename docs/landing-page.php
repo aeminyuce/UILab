@@ -99,7 +99,7 @@
             <span class="ui-sp-10 ui-visible-sm"></span>
         </div>
 
-        <div class="banner-content banner-tab01 ui-tab-content ui-p-30-v ui-set-relative ui-theme-farmer ui-fill-dark-100 ui-open ui-open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
+        <div class="landing-page-banner-content ui-tab-content ui-p-30-v ui-set-relative ui-theme-farmer ui-fill-dark-100 ui-open ui-open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
             <div class="ui-fixed ui-p-30-v ui-set-relative">
                 <div class="ui-row">
                     <div class="ui-col-static">
@@ -117,7 +117,7 @@
                         </div>
                         <div class="ui-col-500 ui-p-15-v ui-p-10-h">
 
-                            <div class="banner-slogan ui-p-15 ui-set-relative">
+                            <div class="landing-page-banner-slogan ui-p-15 ui-set-relative">
                                 <div class="ui-align-c ui-p-15 ui-set-relative ui-shadow-lg">
                                     <span class="ui-sp-15"></span>
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#factory"/></svg>
@@ -137,7 +137,7 @@
             </div>
             <span class="ui-sp-30 ui-m-10-v"></span>
         </div>
-        <div class="banner-content banner-tab02 ui-tab-content ui-p-30-v ui-set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
+        <div class="landing-page-banner-content ui-tab-content ui-p-30-v ui-set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
             <div class="ui-fixed ui-p-30-v ui-set-relative">
                 <div class="ui-row">
                     <div class="ui-col-static">
@@ -155,7 +155,7 @@
                         </div>
                         <div class="ui-col-500 ui-p-15-v ui-p-10-h">
 
-                            <div class="banner-slogan ui-p-15 ui-set-relative">
+                            <div class="landing-page-banner-slogan ui-p-15 ui-set-relative">
                                 <div class="ui-align-c ui-p-15 ui-set-relative ui-shadow-lg">
                                     <span class="ui-sp-15"></span>
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#network"/></svg>
@@ -175,7 +175,7 @@
             </div>
             <span class="ui-sp-30 ui-m-10-v"></span>
         </div>
-        <div class="banner-content banner-tab03 ui-tab-content ui-p-30-v ui-set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
+        <div class="landing-page-content ui-tab-content ui-p-30-v ui-set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
             <div class="ui-fixed ui-p-30-v ui-set-relative">
                 <div class="ui-row">
                     <div class="ui-col-static">
@@ -193,7 +193,7 @@
                         </div>
                         <div class="ui-col-500 ui-p-15-v ui-p-10-h">
 
-                            <div class="banner-slogan ui-p-15 ui-set-relative">
+                            <div class="landing-page-banner-slogan ui-p-15 ui-set-relative">
                                 <div class="ui-align-c ui-p-15 ui-set-relative ui-shadow-lg">
                                     <span class="ui-sp-15"></span>
                                     <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="#user-circle"/></svg>
@@ -218,7 +218,7 @@
     <!-- tab banner: end -->
 
     <!-- home links: start -->
-    <div class="ui-fixed home-links ui-align-c ui-form-lg ui-theme-farmer2 ui-set-relative">
+    <div class="landing-page-links ui-fixed ui-align-c ui-form-lg ui-theme-farmer2 ui-set-relative">
         <div class="ui-carousel" data-ui-col="4" data-ui-col-md="2" data-ui-col-sm="2" data-ui-col-xs="1" data-ui-slide="4000">
             <div class="ui-carousel-slider ui-icons-xxl ui-hover-shadow-2nd ui-hover-scale-2nd ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
@@ -808,8 +808,8 @@
             <div class="ui-col-static">
                 <div class="ui-row ui-sm-fluid">
                     <div class="ui-col-4">
-                        <h4 class="ui-h4 ui-color-white-50 ui-m-30-b">Customer Service</h4>
-                        <ul class="ui-list-unstyled ui-list-sp-10 ui-font-hoverline-2nd ui-font-18">
+                        <h3 class="ui-h3 ui-color-white-50 ui-m-30-b">Customer Service</h3>
+                        <ul class="ui-list-unstyled ui-list-sp-10 ui-font-hoverline-2nd ui-font-16">
                             <li><a href="#">Order Status</a></li>
                             <li><a href="#">Shipping</a></li>
                             <li><a href="#">Contact References</a></li>
@@ -820,8 +820,8 @@
                         </ul>
                     </div>
                     <div class="ui-col-4">
-                        <h4 class="ui-h4 ui-color-white-50 ui-m-30-b">Who We Are</h4>
-                        <ul class="ui-list-unstyled ui-list-sp-10 ui-font-hoverline-2nd ui-font-18">
+                        <h3 class="ui-h3 ui-color-white-50 ui-m-30-b">Who We Are</h3>
+                        <ul class="ui-list-unstyled ui-list-sp-10 ui-font-hoverline-2nd ui-font-16">
                             <li><a href="#">Good Works</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Environmental</a></li>
@@ -831,8 +831,8 @@
                         </ul>
                     </div>
                     <div class="ui-col-4">
-                        <h4 class="ui-h4 ui-color-white-50 ui-m-30-b">Quick Links</h4>
-                        <ul class="ui-list-unstyled ui-list-sp-10 ui-font-hoverline-2nd ui-font-18">
+                        <h3 class="ui-h3 ui-color-white-50 ui-m-30-b">Quick Links</h3>
+                        <ul class="ui-list-unstyled ui-list-sp-10 ui-font-hoverline-2nd ui-font-16">
                             <li><a href="#">Educater &amp; Landscaper</a></li>
                             <li><a href="#">Discounts</a></li>
                             <li><a href="#">Become an Affiliate</a></li>
@@ -843,7 +843,7 @@
                 </div>
                 <div class="ui-col-500 ui-p-10">
 
-                    <div class="footer-social ui-p-15 ui-icons-no-opacity">
+                    <div class="landing-page-social ui-p-15 ui-icons-no-opacity">
                         <div class="ui-card ui-p-30 ui-shadow-lg ui-theme-farmer ui-fill-dark-100">
                             <h4 class="ui-h4 ui-m-15-b">Social</h4>
                             <div class="ui-align-c ui-form-lg ui-ease-1st-btn">

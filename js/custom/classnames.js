@@ -44,7 +44,13 @@ ui.classnames = {
                     strStart = str.match(reStart);
 
                     if (strStart === null) {
-                        console.warn(str);
+
+                        if (str === '') {
+                            console.error(str); // empty class names
+
+                        } else {
+                            console.warn(str);
+                        }
 
                     } else {
                         //console.log(str);

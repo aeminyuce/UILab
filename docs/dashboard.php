@@ -637,7 +637,7 @@
                                                     <label class="ui-form-info">Country</label>
                                                 </div>
                                                 <div class="ui-col-5">
-                                                    <div data-ui-src="json/countries.json" data-ui-val="name" class="autocomplete ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
+                                                    <div data-ui-src="json/countries.json" data-ui-val="name" class="ui-autocomplete ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
                                                         <svg class="ui-icon"><use href="#keyboard"/></svg>
                                                         <input class="ui-required" type="text" placeholder="Type/Select your country" autocomplete="off" minlength="3">
                                                     </div>
@@ -702,10 +702,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 ui-align-r">
-                                                        <span class=" ui-font-38 ui-text">157</span>
+                                                        <span class="ui-font-38 ui-text">157</span>
                                                     </div>
                                                 </div>
-                                                <div class="ui-progress-bar ui-m-15-t progress ui-round">
+                                                <div class="ui-progress-bar ui-m-15-t ui-round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 45%;"></span>
                                                 </div>
                                                 <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Pending for the transaction.</p>
@@ -725,10 +725,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 ui-align-r">
-                                                        <span class=" ui-font-38 ui-text">23</span>
+                                                        <span class="ui-font-38 ui-text">23</span>
                                                     </div>
                                                 </div>
-                                                <div class="ui-progress-bar ui-m-15-t progress ui-round">
+                                                <div class="ui-progress-bar ui-m-15-t ui-round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 5%;"></span>
                                                 </div>
                                                 <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Paused for the some reasons.</p>
@@ -748,10 +748,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 ui-align-r">
-                                                        <span class=" ui-font-38 ui-text">256</span>
+                                                        <span class="ui-font-38 ui-text">256</span>
                                                     </div>
                                                 </div>
-                                                <div class="ui-progress-bar ui-m-15-t progress ui-round">
+                                                <div class="ui-progress-bar ui-m-15-t ui-round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 80%;"></span>
                                                 </div>
                                                 <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Reached for the expert.</p>
@@ -771,10 +771,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="ui-col-100 ui-align-r">
-                                                        <span class=" ui-font-38 ui-text">256</span>
+                                                        <span class="ui-font-38 ui-text">256</span>
                                                     </div>
                                                 </div>
-                                                <div class="ui-progress-bar ui-m-15-t progress ui-round">
+                                                <div class="ui-progress-bar ui-m-15-t ui-round">
                                                     <span class="ui-fill-dark-100 ui-stripe-light" style="width: 67%;"></span>
                                                 </div>
                                                 <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Confirmed for payment.</p>
@@ -819,7 +819,7 @@
                                             </div>
                                         </div>
                                         <div class="ui-col-150 ui-align-r">
-                                            <span class=" ui-font-38 ui-inline-block">436</span>
+                                            <span class="ui-font-38 ui-inline-block">436</span>
                                         </div>
                                     </div>
                                     <div class="ui-row ui-row-gap-lg-h ui-no-fluid">

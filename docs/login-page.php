@@ -42,7 +42,7 @@
 
                     <span class="ui-sp-30"></span>
 
-                    <button type="submit" class="go-signup-btn ui-btn ui-color-white ui-block ui-round ui-hover-scale ui-hover-shadow ui-ease-btn">
+                    <button type="submit" class="login-signup-btn ui-btn ui-color-white ui-block ui-round ui-hover-scale ui-hover-shadow ui-ease-btn">
                         <b>LOGIN</b>
                     </button>
                     <span class="ui-sp-15"></span>
@@ -66,7 +66,7 @@
 
                     <span class="ui-sp-30"></span>
 
-                    <button type="submit" class="go-signup-btn ui-btn ui-color-white ui-block ui-round ui-hover-scale ui-hover-shadow ui-ease-btn">
+                    <button type="submit" class="ui-btn ui-color-white ui-block ui-round ui-hover-scale ui-hover-shadow ui-ease-btn">
                         <b>Reset Password</b>
                     </button>
                     <span class="ui-sp-15"></span>

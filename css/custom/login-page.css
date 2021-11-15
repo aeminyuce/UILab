@@ -85,7 +85,7 @@
   opacity: 0.15;
   transform: rotate(12deg);
 }
-.go-signup-btn {
+.login-signup-btn {
   background-image: linear-gradient(130deg, hsl(261, 37%, 56%), hsl(331, 73%, 25%));
   background-image: var(--ui-login-page-signup-btn-bg);
 }

@@ -259,9 +259,9 @@
                         </div>
                     </div>
 
-                    <div class="products-list ui-row ui-form-lg ui-hover-shadow-2nd ui-ease-2nd-layout ui-hover-t-2nd">
+                    <div class="product-list ui-row ui-form-lg ui-hover-shadow-2nd ui-ease-2nd-layout ui-hover-t-2nd">
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-link ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-m-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
@@ -297,7 +297,7 @@
                             </a>
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-link ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-m-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
@@ -332,7 +332,7 @@
                             </a>
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-link ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-m-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
@@ -367,7 +367,7 @@
                             </a>
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-link ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-m-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img src="img/product_04.png" alt="" >
@@ -398,7 +398,7 @@
                             </a>
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-link ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-m-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img src="img/product_05.png" alt="" >
@@ -429,7 +429,7 @@
                             </a>
                         </div>
                         <div class="ui-col-4 ui-col-sm-6">
-                            <a class="ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
+                            <a class="ui-link ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photo-slider ui-m-20-b">
                                     <svg class="ui-slider-loader ui-icon"><use href="#loader-line"/></svg>
                                     <img
@@ -467,7 +467,7 @@
 
                     <div class="ui-row">
                         <div class="ui-col-12 ui-align-c">
-                            <button class="load-more ui-btn ui-btn-lg ui-btn-xs-fluid ui-circle ui-ease-btn">Load more</button>
+                            <button class="product-list-load-more ui-btn ui-btn-lg ui-btn-xs-fluid ui-circle ui-ease-btn">Load more</button>
                         </div>
                     </div>
 
