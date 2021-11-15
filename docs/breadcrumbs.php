@@ -1,7 +1,8 @@
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
+
         <div class="ui-row">
-            <div class="ui-col-12 ui-p-30">
+            <div class="ui-col-12 ui-p-30-v">
 
                 <h3 class="ui-h3">Breadcrumbs Examples</h3>
                 <div class="ui-breadcrumbs ui-color-black-25">
@@ -254,5 +255,6 @@
 
             </div>
         </div>
+
     </div>
 </main>
