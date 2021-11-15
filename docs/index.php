@@ -79,50 +79,6 @@
     <!-- headings -->
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;700&display=swap" rel="stylesheet">
 
-    <script>
-        /* check class names *
-        ui.onload(function () {
-            ui.ajax({
-                url : 'listings.php',
-                callback: function (status, response) {}
-            });
-        });
-
-        ui.on(document,
-            ui.globals.eventAjaxCallback,
-
-            function () {
-                ui.each(ui.ajax.classNames, function () {
-
-                    var str, strStart, strlength;
-
-                    str = this.toString();
-
-                    strStart = str.match(/ui-/g);
-
-                    if (strStart === null) {
-                        console.warn(str);
-
-                    } else {
-                        console.log(str);
-                    }
-
-                    strLength = str.match(/(ui-)|(-ui)/g);
-                    if (strLength !== null) {
-
-                        strLength = Number(str.match(/(ui-)|(-ui)/g).length);
-
-                        if (strLength > 1) {
-                            console.error(str);
-                        }
-
-                    }
-
-                });
-            });
-        **/
-    </script>
-
 </head>
 
 <body>
@@ -253,8 +209,14 @@
                         <div class="card ui-highlight ui-align-c ui-p-30 ui-xs-no-p ui-round ui-theme-base">
                             <h1 class="ui-h1 ui-font-light">UI lab is a modular design system.</h2>
                             <h4 class="ui-h4 ui-font-bold">For developing web interfaces fastly!</h4>
+
                             <span class="ui-sp-15"></span>
+
                             <div class="ui-form-lg ui-ease-1st-btn">
+                                <a href="?p=classnames" class="ui-btn ui-btn-xs-fluid ui-m-5-h ui-xs-no-m-h ui-circle">
+                                    Classnames
+                                    <svg class="ui-icon ui-m-5-l"><use href="#brackets-curly"/></svg>
+                                </a>
                                 <a href="?p=icons" class="ui-btn ui-btn-xs-fluid ui-m-5-h ui-xs-no-m-h ui-circle ui-fill-dark-300">
                                     <svg class="ui-icon ui-m-5-r"><use href="#draw"/></svg>
                                     See Icons
