@@ -6,7 +6,10 @@
 ui.classnames = {
 
     // targets
-    target: 'xhr/ajax-pages.php'
+    target: 'xhr/ajax-pages.php',
+
+    // values
+    prefix: 'ui'
 
 };
 
@@ -14,6 +17,7 @@ ui.classnames = {
 
     'use strict';
     /*globals document, ui, console */
+    /*eslint no-console: ["error", { allow: ["warn", "error"] }] */
 
     ui.classnames.Start = function () {
 
@@ -28,11 +32,16 @@ ui.classnames = {
             function () {
                 ui.each(ui.ajax.classNames, function () {
 
-                    var str, strStart, strLength;
+                    var reStart, reDuplicate, str, strStart, strLength;
+
+                    reStart = ui.classnames.prefix + '-';
+                    reStart = new RegExp(reStart, 'g');
+
+                    reDuplicate = '(' + ui.classnames.prefix + '-)|(-' + ui.classnames.prefix + ')';
+                    reDuplicate = new RegExp(reDuplicate, 'g');
 
                     str = this.toString();
-
-                    strStart = str.match(/ui-/g);
+                    strStart = str.match(reStart);
 
                     if (strStart === null) {
                         console.warn(str);
@@ -41,10 +50,10 @@ ui.classnames = {
                         //console.log(str);
                     }
 
-                    strLength = str.match(/(ui-)|(-ui)/g);
+                    strLength = str.match(reDuplicate);
                     if (strLength !== null) {
 
-                        strLength = Number(str.match(/(ui-)|(-ui)/g).length);
+                        strLength = Number(str.match(reDuplicate).length);
 
                         if (strLength > 1) {
                             console.error(str);

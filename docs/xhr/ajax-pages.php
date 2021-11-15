@@ -1,5 +1,8 @@
 <?php
 
+    // home
+    include ('../index.php');
+
     // menu pages
     include ('../alerts.php');
     include ('../avatars.php');
@@ -44,5 +47,9 @@
     include ('../product-listing.php');
     include ('../real-estate-details.php');
     include ('../photo-albums.php');
+
+    // xhr pages
+    include ('../ajax-modal.php');
+    include ('../ajax-products.php');
 
 ?>

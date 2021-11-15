@@ -7,7 +7,7 @@
             <div class="ui-col-12 ui-p-30">
 
                 <h3 class="ui-h3">Classnames</h3>
-                <div>Check console logs!</div>
+                <div>Please, check console logs.</div>
 
             </div>
         </div>
