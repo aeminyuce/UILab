@@ -605,6 +605,10 @@ var ui = {
                     ui.ajax.text = ui.ajax.requests[i].responseText;
                     ui.trigger(document, ui.globals.eventAjaxCallback); // set custom event
 
+                    // empty variables
+                    ui.ajax.classNames = '';
+                    ui.ajax.text = '';
+
                 }
 
             } else { // error
