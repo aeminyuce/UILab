@@ -54,7 +54,7 @@
     &pointer { cursor: pointer !important; }
 }
 
-.ui-clear {
+.ui-clearfix {
     clear: both !important; display: block;
     &:extend(.ui-full-w);
 }
@@ -276,7 +276,7 @@ each(@increases, {
 @media (@md-start) and (@md-finish) {
     .ui-img-md-fluid { .ui-full-w(); height: auto !important; }
     .ui-no-float-md { .ui-no-float(); }
-    .ui-clear-md { .ui-clear(); }
+    .ui-clearfix-md { .ui-clearfix(); }
 
     .ui-md-align- {
         &c {
@@ -303,8 +303,8 @@ each(@increases, {
     .ui-no-float {
         &-md,&-sm { .ui-no-float(); }
     }
-    .ui-clear {
-        &-md,&-sm { .ui-clear(); }
+    .ui-clearfix {
+        &-md,&-sm { .ui-clearfix(); }
     }
 
     .ui-md-align-,.ui-sm-align- {
@@ -329,8 +329,8 @@ each(@increases, {
     .ui-no-float {
         &-md,&-sm,&-xs { .ui-no-float(); }
     }
-    .ui-clear {
-        &-md,&-sm,&-xs { .ui-clear(); }
+    .ui-clearfix {
+        &-md,&-sm,&-xs { .ui-clearfix(); }
     }
 
     .ui-md-align-,.ui-sm-align-,.ui-xs-align- {
@@ -347,7 +347,7 @@ each(@increases, {
 }
 @media (@default-finish) {
     .ui-visible-lg { .ui-hidden(); }
-    .ui-clear-lg { .ui-clear(); }
+    .ui-clearfix-lg { .ui-clearfix(); }
 
     .ui-lg-align- {
         &c {

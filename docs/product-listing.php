@@ -75,7 +75,7 @@
                                 </span>
                             </label>
 
-                            <span class="ui-clear ui-hidden-md"></span>
+                            <span class="ui-clearfix ui-hidden-md"></span>
 
                             <label class="ui-label">
                                 <span class="ui-check ui-no-border ui-circle ui-ease-form product-select-black">

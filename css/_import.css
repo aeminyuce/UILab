@@ -1855,7 +1855,7 @@ html .ui-row {
   direction: rtl;
 }
 .ui-full-w,
-.ui-clear,
+.ui-clearfix,
 .ui-img-fluid {
   width: 100% !important;
 }
@@ -1936,7 +1936,7 @@ html .ui-row {
 .ui-cursor-pointer {
   cursor: pointer !important;
 }
-.ui-clear {
+.ui-clearfix {
   clear: both !important;
   display: block;
 }
@@ -2203,7 +2203,7 @@ html .ui-row {
   .ui-no-float-md {
     float: none !important;
   }
-  .ui-clear-md {
+  .ui-clearfix-md {
     clear: both !important;
     display: block;
   }
@@ -2246,8 +2246,8 @@ html .ui-row {
   .ui-no-float-sm {
     float: none !important;
   }
-  .ui-clear-md,
-  .ui-clear-sm {
+  .ui-clearfix-md,
+  .ui-clearfix-sm {
     clear: both !important;
     display: block;
   }
@@ -2297,9 +2297,9 @@ html .ui-row {
   .ui-no-float-xs {
     float: none !important;
   }
-  .ui-clear-md,
-  .ui-clear-sm,
-  .ui-clear-xs {
+  .ui-clearfix-md,
+  .ui-clearfix-sm,
+  .ui-clearfix-xs {
     clear: both !important;
     display: block;
   }
@@ -2350,7 +2350,7 @@ html .ui-row {
   .ui-visible-lg {
     display: none !important;
   }
-  .ui-clear-lg {
+  .ui-clearfix-lg {
     clear: both !important;
     display: block;
   }
