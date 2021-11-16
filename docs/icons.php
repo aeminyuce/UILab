@@ -11,10 +11,10 @@
             <div class="ui-col-12">
                 <div class="ui-sm-no-p ui-align-c ui-p-30-v">
 
-                    <h1 class="ui-h1">
+                    <h2 class="ui-h2">
                         SVG Icons
                         <span class="total ui-font-18 ui-m-5-v ui-block ui-opacity-half"></span>
-                    </h1>
+                    </h2>
 
                     <div class="ui-row">
                         <div class="ui-col-4">

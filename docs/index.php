@@ -206,27 +206,24 @@
                 <div class="ui-col-12 ui-p-15">
 
                     <div class="ui-fixed ui-fixed-xl ui-p-15 ui-m-30-v ui-sm-no-p">
-                        <div class="ui-highlight ui-align-c ui-p-30 ui-xs-no-p ui-round ui-theme-base">
+                        <div class="ui-highlight ui-align-c ui-p-30 ui-xs-no-p ui-round ui-theme-sub">
                             <h1 class="ui-h1 ui-font-light">UI lab is a modular design system.</h2>
-                            <h4 class="ui-h4 ui-font-bold">For developing web interfaces fastly!</h4>
+                            <h4 class="ui-h4 ui-font-bold ui-text">For developing web interfaces fastly!</h4>
 
                             <span class="ui-sp-15"></span>
 
                             <div class="ui-form-lg ui-ease-1st-btn">
-                                <a href="?p=classnames" class="ui-btn ui-btn-ghost ui-btn-xs-fluid ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle">
+                                <a href="?p=code" class="ui-btn ui-btn-ghost ui-btn-sm-fluid ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle">
+                                    <svg class="ui-icon ui-m-5-r"><use href="#code"/></svg>
+                                    Code
+                                </a>
+                                <a href="?p=classnames" class="ui-btn ui-btn-ghost ui-btn-sm-fluid ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle">
                                     Classnames
                                     <svg class="ui-icon ui-m-5-l"><use href="#brackets-curly"/></svg>
                                 </a>
-
-                                <span class="ui-sp-10 ui-visible-sm ui-hidden-xs"></span>
-
-                                <a href="?p=icons" class="ui-btn ui-btn-xs-fluid ui-m-5-h ui-xs-no-m-h ui-circle ui-fill-dark-300">
+                                <a href="?p=icons" class="ui-btn ui-btn-ghost ui-btn-sm-fluid ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle">
                                     <svg class="ui-icon ui-m-5-r"><use href="#draw"/></svg>
-                                    See Icons
-                                </a>
-                                <a href="?p=download" class="ui-btn ui-btn-xs-fluid ui-m-5-h ui-xs-no-m-h ui-circle ui-fill-dark-100">
-                                    Download
-                                    <svg class="ui-icon ui-m-5-l"><use href="#long-arrow-right"/></svg>
+                                    SVG Icons
                                 </a>
                             </div>
                         </div>

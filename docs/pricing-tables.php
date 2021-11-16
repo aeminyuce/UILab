@@ -13,7 +13,7 @@
 
                         <div class="ui-card ui-full-h ui-p-30 ui-round ui-shadow">
                             <div class="ui-m-30-v">
-                                <svg class="ui-icon ui-icon-72 ui-theme-sub ui-text"><use href="#box"/></svg>
+                                <svg class="ui-icon pricing-table-icon ui-theme-sub ui-text"><use href="#box"/></svg>
                             </div>
                             <h2 class="ui-h2 ui-font-bold ui-m-15-v">Free</h2>
                             <h4 class="ui-h4 ui-color-black-50">1 End Product License</h4>
@@ -29,7 +29,7 @@
 
                         <div class="ui-card ui-full-h ui-p-30 ui-round ui-shadow-lg ui-theme-sub ui-fill-dark-100">
                             <div class="ui-m-30-v">
-                                <svg class="ui-icon ui-icon-72"><use href="#gift"/></svg>
+                                <svg class="ui-icon pricing-table-icon"><use href="#gift"/></svg>
                             </div>
                             <h2 class="ui-h2 ui-font-bold ui-m-15-v">$19</h2>
                             <h4 class="ui-h4">Business License</h4>
@@ -49,7 +49,7 @@
 
                         <div class="ui-card ui-full-h ui-p-30 ui-round ui-shadow">
                             <div class="ui-m-30-v">
-                                <svg class="ui-icon ui-icon-72 ui-theme-sub ui-text"><use href="#wallet"/></svg>
+                                <svg class="ui-icon pricing-table-icon ui-theme-sub ui-text"><use href="#wallet"/></svg>
                             </div>
                             <h2 class="ui-h2 ui-font-bold ui-m-15-v">$49</h2>
                             <h4 class="ui-h4 ui-color-black-50">Enterprise License</h4>
@@ -73,7 +73,7 @@
                         <div class="ui-card ui-full-h ui-round ui-shadow">
                             <div class="ui-card-side ui-p-30 ui-border-b">
                                 <div class="ui-m-30-v">
-                                    <svg class="ui-icon ui-icon-72 ui-theme-sub ui-text"><use href="#box"/></svg>
+                                    <svg class="ui-icon pricing-table-icon ui-theme-sub ui-text"><use href="#box"/></svg>
                                 </div>
                                 <h2 class="ui-h2 ui-font-bold ui-m-15-v">Free</h2>
                                 <h4 class="ui-h4 ui-color-black-50">1 End Product License</h4>
@@ -111,7 +111,7 @@
                         <div class="ui-card ui-full-h ui-round ui-shadow-lg ui-theme-sub ui-fill-dark-100">
                             <div class="ui-card-side ui-p-30 ui-border-b ui-border-light">
                                 <div class="ui-m-30-v">
-                                    <svg class="ui-icon ui-icon-72"><use href="#gift"/></svg>
+                                    <svg class="ui-icon pricing-table-icon"><use href="#gift"/></svg>
                                 </div>
                                 <h2 class="ui-h2 ui-font-bold ui-m-15-v">$19</h2>
                                 <h4 class="ui-h4">Business License</h4>
@@ -150,7 +150,7 @@
                         <div class="ui-card ui-full-h ui-round ui-shadow">
                             <div class="ui-card-side ui-p-30 ui-border-b">
                                 <div class="ui-m-30-v">
-                                    <svg class="ui-icon ui-icon-72 ui-theme-sub ui-text"><use href="#wallet"/></svg>
+                                    <svg class="ui-icon pricing-table-icon ui-theme-sub ui-text"><use href="#wallet"/></svg>
                                 </div>
                                 <h2 class="ui-h2 ui-font-bold ui-m-15-v">$49</h2>
                                 <h4 class="ui-h4 ui-color-black-50">Enterprise License</h4>

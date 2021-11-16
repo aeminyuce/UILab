@@ -9,6 +9,9 @@ ui.classnames = {
     targetList: 'classnames-list',
     targetAlerts: 'classnames-alerts',
 
+    // main classnames
+    nameTotal: 'classnames-total',
+
     // styling classnames
     stylesNoErrors: 'ui-opacity-half',
     stylesWarningSep: 'ui-font-18 ui-font-capitalize ui-m-20-t',
@@ -37,11 +40,11 @@ ui.classnames = {
 (function () {
 
     'use strict';
-    /*globals document, ui */
+    /*globals document, ui, Intl */
 
     ui.classnames.Start = function () {
 
-        var arr, list, alerts, lastAddedWarning;
+        var arr, total, created, list, alerts, lastAddedWarning;
 
         // create arrays
         arr = [];
@@ -55,7 +58,9 @@ ui.classnames = {
 
         lastAddedWarning = '';
 
-        // get lists
+        // get elements
+        total = ui.find('.' + ui.classnames.nameTotal)[0];
+
         list = ui.find('.' + ui.classnames.targetList)[0];
         alerts = ui.find('.' + ui.classnames.targetAlerts)[0];
 
@@ -71,7 +76,7 @@ ui.classnames = {
 
             function () {
 
-                var i, reStart, reDuplicate, str, strStart, strLength, html, title, items;
+                var i, reStart, reDuplicate, str, strStart, strLength, html, title, items, collator;
 
                 // check all class names
                 ui.each(ui.ajax.classNames,
@@ -169,10 +174,19 @@ ui.classnames = {
                         title = that.split('-')[3];
                     }
 
-                    // convert shorhands to words
-                    if (title === 'm') { title = 'margin'; }
-                    if (title === 'p') { title = 'padding'; }
-                    if (title === 'sp') { title = 'spacer'; }
+                    // rules
+                    if (title === 'container' || title === 'fixed' || title === 'row' || title === 'gutter' || title === 'col') {
+                        title = 'grid system';
+                    }
+
+                    if (title === 'h1' || title === 'h2' || title === 'h3' || title === 'h4' || title === 'h5' || title === 'h6') {
+                        title = 'headings';
+                    }
+
+                    if (title === 'm') { title = 'margins'; }
+                    if (title === 'p') { title = 'paddings'; }
+
+                    if (title === 'sp') { title = 'spacers'; }
 
                     return title;
 
@@ -212,6 +226,12 @@ ui.classnames = {
                     });
 
                 // create categories
+                created = 0;
+
+                if (!ui.userAgents.ie) {
+                    collator = new Intl.Collator('en', {numeric: true, sensitivity: 'base'});
+                }
+
                 arr.filtered = arr.filtered.sort();
                 ui.each(arr.filtered,
 
@@ -223,7 +243,13 @@ ui.classnames = {
                                     '<ul class="' + ui.classnames.stylesCatList;
 
                         items = arr.groups[this].split(',');
-                        items = items.sort();
+
+                        if (ui.userAgents.ie) {
+                            items = items.sort(); // default sorting for IE
+
+                        } else {
+                            items = items.sort(collator.compare); // sort with collactor for modern browsers
+                        }
 
                         if (items.length > 5) {
                             html += ' ' + ui.classnames.stylesCatCols;
@@ -232,7 +258,12 @@ ui.classnames = {
                         html += '">';
 
                         for (i = 0; i < items.length; i++) {
+
+                            items[i] = items[i].replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+
                             html += '<li>' + items[i] + '</li>';
+                            created += 1;
+
                         }
 
                         html += '</ul></div>';
@@ -240,6 +271,8 @@ ui.classnames = {
                         list.insertAdjacentHTML('beforeend', html);
 
                     });
+
+                total.textContent = arr.filtered.length + ' / ' + created;
 
                 // empty variables
                 arr = [];
