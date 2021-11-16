@@ -10,13 +10,16 @@ ui.classnames = {
     targetAlerts: 'classnames-alerts',
 
     // styling classnames
-    stylesListSep: 'ui-font-22 ui-font-capitalize ui-m-20-t ui-opacity-half',
-
     stylesNoErrors: 'ui-opacity-half',
     stylesWarningSep: 'ui-font-18 ui-font-capitalize ui-m-20-t',
 
     stylesError: 'ui-color-red',
     stylesWarning: 'ui-color-yellow',
+
+    stylesCatTite: 'ui-h4 ui-font-capitalize ui-m-10-b',
+    stylesCatCard: 'ui-card ui-font-16 ui-round ui-p-10 ui-shadow-lg',
+    stylesCatList: 'ui-list-unstyled ui-list-sp-5 ui-m-10 ui-sm-no-m',
+    stylesCatCols: 'ui-list-col-3',
 
     // values
     filePath: 'xhr/ajax-pages.php',
@@ -38,39 +41,48 @@ ui.classnames = {
 
     ui.classnames.Start = function () {
 
-        var arr, list, alerts, lastAddedList, lastAddedWarning;
+        var arr, list, alerts, lastAddedWarning;
 
+        // create arrays
         arr = [];
 
         arr.list = [];
         arr.error = [];
         arr.warning = [];
 
-        lastAddedList = '';
+        arr.filtered = [];
+        arr.groups = [];
+
         lastAddedWarning = '';
 
+        // get lists
         list = ui.find('.' + ui.classnames.targetList)[0];
         alerts = ui.find('.' + ui.classnames.targetAlerts)[0];
 
+        // check all pages with xhr
         ui.ajax({
             url : ui.classnames.filePath,
             callback: function () { }
         });
 
+        // get real classnames list with xhr triggered callback event
         ui.on(document,
             ui.globals.eventAjaxCallback,
 
             function () {
 
-                var reStart, reDuplicate, str, strStart, strLength, title, titleCreated, newListItem;
+                var i, reStart, reDuplicate, str, strStart, strLength, html, title, items;
 
+                // check all class names
                 ui.each(ui.ajax.classNames,
 
                     function () {
 
+                        // check prefix
                         reStart = ui.classnames.prefix + '-';
                         reStart = new RegExp(reStart, 'g');
 
+                        // check duplicates
                         reDuplicate = '(' + ui.classnames.prefix + '-)|(-' + ui.classnames.prefix + ')';
                         reDuplicate = new RegExp(reDuplicate, 'g');
 
@@ -113,53 +125,7 @@ ui.classnames = {
 
                     });
 
-                // list
-                arr.list = arr.list.sort();
-                ui.each(arr.list,
-
-                    function () {
-
-                        title = this.split('-')[1];
-
-                        if (title === 'no' || title === 'xl' || title === 'lg' || title === 'md' || title === 'sm' || title === 'xs') {
-                            title = this.split('-')[2];
-                        }
-
-                        if (title === 'no') {
-                            title = this.split('-')[3];
-                        }
-
-                        if (lastAddedList === title) {
-                            list.insertAdjacentHTML('beforeend', '<li>' + this + '</li>');
-
-                        } else {
-
-                            if (title === 'm') { title = 'margin'; }
-                            if (title === 'p') { title = 'padding'; }
-                            if (title === 'sp') { title = 'spacer'; }
-
-                            titleCreated = ui.find('li.' + title);
-                            if (titleCreated.length === 0) {
-
-                                list.insertAdjacentHTML('beforeend', '<li class="' + title + ' ' + ui.classnames.stylesListSep + '">' + title + '</li>');
-                                list.insertAdjacentHTML('beforeend', '<li>' + this + '</li>');
-
-                            } else { // catch title duplicate!
-
-                                newListItem = document.createElement("LI");
-                                newListItem.innerHTML = '<li>' + this + '</li>';
-
-                                list.insertBefore(newListItem, titleCreated[0]);
-
-                            }
-
-                        }
-
-                        lastAddedList = title;
-
-                    });
-
-                // error
+                // create errors
                 if (arr.error.length === 0) {
                     alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesNoErrors + '">' + ui.classnames.msgNoErrors + '</li>');
 
@@ -173,7 +139,7 @@ ui.classnames = {
                         alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesError + '">' + this + '</li>');
                     });
 
-                // warning
+                // create warnings
                 arr.warning = arr.warning.sort();
                 ui.each(arr.warning,
 
@@ -188,10 +154,98 @@ ui.classnames = {
 
                     });
 
+                // filter list of classnames
+                function filterClassnames(that) {
+
+                    title = that.split('-')[1];
+
+                    // Ex: ui-no-*, ui-sm-*
+                    if (title === 'no' || title === 'xl' || title === 'lg' || title === 'md' || title === 'sm' || title === 'xs') {
+                        title = that.split('-')[2];
+                    }
+
+                    // Ex: ui-sm-no-*
+                    if (title === 'no') {
+                        title = that.split('-')[3];
+                    }
+
+                    // convert shorhands to words
+                    if (title === 'm') { title = 'margin'; }
+                    if (title === 'p') { title = 'padding'; }
+                    if (title === 'sp') { title = 'spacer'; }
+
+                    return title;
+
+                }
+
+                // create group names
+                ui.each(arr.list,
+
+                    function () {
+
+                        filterClassnames(this); // returns title
+
+                        if (arr.filtered.indexOf(title) === -1) {
+                            arr.filtered.push(title);
+                        }
+
+                    });
+
+                // copy classnames to filtered groups
+                ui.each(arr.list,
+
+                    function () {
+
+                        filterClassnames(this); // returns title
+
+                        if (arr.filtered.indexOf(title) > -1) {
+
+                            if (arr.groups[title] === undefined) {
+                                arr.groups[title] = this;
+
+                            } else {
+                                arr.groups[title] += ', ' + this;
+                            }
+
+                        }
+
+                    });
+
+                // create categories
+                arr.filtered = arr.filtered.sort();
+                ui.each(arr.filtered,
+
+                    function () {
+
+                        html = '<h4 class="' + ui.classnames.stylesCatTite + '">' + this + '</h4>' +
+
+                                '<div class="' + ui.classnames.stylesCatCard + '">' +
+                                    '<ul class="' + ui.classnames.stylesCatList;
+
+                        items = arr.groups[this].split(',');
+                        items = items.sort();
+
+                        if (items.length > 5) {
+                            html += ' ' + ui.classnames.stylesCatCols;
+                        }
+
+                        html += '">';
+
+                        for (i = 0; i < items.length; i++) {
+                            html += '<li>' + items[i] + '</li>';
+                        }
+
+                        html += '</ul></div>';
+
+                        list.insertAdjacentHTML('beforeend', html);
+
+                    });
+
                 // empty variables
-                arr.list = [];
-                arr.error = [];
-                arr.warning = [];
+                arr = [];
+
+                html = "";
+                items = "";
 
             });
 

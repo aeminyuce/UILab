@@ -7,18 +7,15 @@
         <h3 class="ui-h3">UI Classnames</h3>
 
         <div class="ui-row ui-row-gap-lg">
-            <div class="ui-col-7">
+            <div class="ui-col-9">
 
-                <div class="ui-card ui-font-16 ui-round ui-p-15 ui-shadow-lg">
-                    <ul class="classnames-list ui-list-unstyled ui-list-sp-5 ui-m-15 ui-sm-no-m">
-                    </ul>
-                </div>
+                <div class="classnames-list"></div>
 
             </div>
-            <div class="ui-col-5">
+            <div class="ui-col-3">
 
-                <div class="ui-border ui-round ui-p-15">
-                    <ul class="classnames-alerts ui-list-unstyled ui-list-sp-10 ui-m-15 ui-sm-no-m">
+                <div class="ui-border ui-round ui-p-10">
+                    <ul class="classnames-alerts ui-list-unstyled ui-list-sp-5 ui-m-10 ui-sm-no-m">
                     </ul>
                 </div>
 
