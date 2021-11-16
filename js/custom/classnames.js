@@ -78,6 +78,10 @@ ui.classnames = {
 
                 var i, reStart, reDuplicate, str, strStart, strLength, html, title, items, collator;
 
+                if (!ui.userAgents.ie) {
+                    collator = new Intl.Collator('en', {numeric: true, sensitivity: 'base'});
+                }
+
                 // check all class names
                 ui.each(ui.ajax.classNames,
 
@@ -174,19 +178,58 @@ ui.classnames = {
                         title = that.split('-')[3];
                     }
 
-                    // rules
-                    if (title === 'container' || title === 'fixed' || title === 'row' || title === 'gutter' || title === 'col') {
+                    // filter rules
+                    if (['container','fluid','fixed','row','gutter','col','push','pull','offset','order'].indexOf(title) >= 0) {
                         title = 'grid system';
-                    }
 
-                    if (title === 'h1' || title === 'h2' || title === 'h3' || title === 'h4' || title === 'h5' || title === 'h6') {
+                    } else if (['h1','h2','h3','h4','h5','h6'].indexOf(title) >= 0) {
                         title = 'headings';
+
+                    } else if (['form','input','select','dual','textarea','indeterminate','check','radio','autocomplete','currency','file','number'].indexOf(title) >= 0) {
+                        title = 'forms';
+
+                    } else if (['open','open-ease','active','selected','show','round','circle','clearfix','cursor','float','full'].indexOf(title) >= 0) {
+                        title = 'helpers';
+
+                    } else if (['fill','stroke','text'].indexOf(title) >= 0) {
+                        title = 'themes';
+
+                    } else if (['code','dl'].indexOf(title) >= 0) {
+                        title = 'typography';
+
+                    } else if (['w','weather','days','graphs'].indexOf(title) >= 0) {
+                        title = 'weather';
+
+                    } else if (title === 'icon' || title === 'icons') {
+                        title = 'icons';
+
+                    } else if (title === 'darkmode' || title === 'invert') {
+                        title = 'dark Mode';
+
+                    } else if (title === 'ease' || title === 'animate') {
+                        title = 'effects';
+
+                    } else if (title === 'block' || title === 'inline') {
+                        title = 'displaying types';
+
+                    } else if (title === 'list' || title === 'blockquote') {
+                        title = 'listings';
+
+                    } else if (title === 'carousel' || title === 'bring') {
+                        title = 'carousel';
+
+                    } else if (title === 'm') {
+                        title = 'margins';
+
+                    } if (title === 'p') {
+                        title = 'paddings';
+
+                    } if (title === 'sp') {
+                        title = 'spacers';
+
+                    } if (title === 'btn') {
+                        title = 'buttons';
                     }
-
-                    if (title === 'm') { title = 'margins'; }
-                    if (title === 'p') { title = 'paddings'; }
-
-                    if (title === 'sp') { title = 'spacers'; }
 
                     return title;
 
@@ -228,11 +271,13 @@ ui.classnames = {
                 // create categories
                 created = 0;
 
-                if (!ui.userAgents.ie) {
-                    collator = new Intl.Collator('en', {numeric: true, sensitivity: 'base'});
+                if (ui.userAgents.ie) {
+                    arr.filtered = arr.filtered.sort(); // default sort for IE
+
+                } else {
+                    arr.filtered = arr.filtered.sort(collator.compare); // sort with collator
                 }
 
-                arr.filtered = arr.filtered.sort();
                 ui.each(arr.filtered,
 
                     function () {
@@ -245,10 +290,10 @@ ui.classnames = {
                         items = arr.groups[this].split(',');
 
                         if (ui.userAgents.ie) {
-                            items = items.sort(); // default sorting for IE
+                            items = items.sort(); // default sort for IE
 
                         } else {
-                            items = items.sort(collator.compare); // sort with collactor for modern browsers
+                            items = items.sort(collator.compare); // sort with collator
                         }
 
                         if (items.length > 5) {
