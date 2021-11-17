@@ -195,7 +195,7 @@ ui.classnames = {
                     } else if (['open','open-ease','active','selected','show'].indexOf(title) >= 0) {
                         title = 'helpers';
 
-                    } else if (['w','weather','days','graphs','reports'].indexOf(title) >= 0) {
+                    } else if (['w','weather','days','graphs','reports','now'].indexOf(title) >= 0) {
                         title = 'weather';
 
                     } else if (['theme','fill','stroke','text'].indexOf(title) >= 0) {
@@ -204,7 +204,7 @@ ui.classnames = {
                     } else if (['code','dl','rtl','pre','hr'].indexOf(title) >= 0) {
                         title = 'typography';
 
-                    } else if (['line','donut','pie'].indexOf(title) >= 0) {
+                    } else if (['line','lines','donut','pie'].indexOf(title) >= 0) {
                         title = 'charts';
 
                     } else if (['paging','prev','next'].indexOf(title) >= 0) {
@@ -215,6 +215,9 @@ ui.classnames = {
 
                     } else if (['border','round','circle'].indexOf(title) >= 0) {
                         title = 'borders';
+
+                    } else if (['dropdown','nav','menu'].indexOf(title) >= 0) {
+                        title = 'dropdowns';
 
                     } else if (title === 'darkmode' || title === 'invert') {
                         title = 'dark Mode';
