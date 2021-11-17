@@ -406,7 +406,7 @@
 </main>
 
 <!-- mobile menu -->
-<div class="ui-sidebar ui-show-l ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
+<div class="ui-sidebar ui-sidebar-l ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
     <div class="ui-sidebar-title ui-p-20-v ui-font-18 ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-sidebar-close">
             <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>

@@ -904,7 +904,7 @@
 <!-- footer: end -->
 
 <!-- mobile menu -->
-<div class="ui-sidebar ui-show-r ui-ease-layout ui-ease-in-out">
+<div class="ui-sidebar ui-sidebar-r ui-ease-layout ui-ease-in-out">
     <div class="ui-sidebar-title ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-ease-btn ui-sidebar-close">
             <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>

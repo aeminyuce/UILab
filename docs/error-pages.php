@@ -10,7 +10,7 @@
 
                 <div class="ui-align-c ui-form-lg">
                     <p class="ui-highlight ui-color-red ui-font-28 ui-font-bold">Error: 404 Page Not Found</p>
-                    <p class="ui-highlight ui-color-red error-pages-icon ui-no-user-select">
+                    <p class="ui-highlight ui-color-red error-pages-icon ui-no-selection">
                         <span class="ui-inline-block">4</span>
                         <svg class="ui-icon"><use href="#undo"/></svg>
                         <span class="ui-inline-block">4</span>
@@ -27,7 +27,7 @@
 
                 <div class="ui-align-c ui-form-lg">
                     <p class="ui-highlight ui-color-yellow ui-font-28 ui-font-bold">Error: 403 Forbidden</p>
-                    <p class="ui-highlight ui-color-yellow error-pages-icon ui-no-user-select">
+                    <p class="ui-highlight ui-color-yellow error-pages-icon ui-no-selection">
                         <span class="ui-inline-block">4</span>
                         <svg class="ui-icon"><use href="#ban"/></svg>
                         <span class="ui-inline-block">3</span>
@@ -43,7 +43,7 @@
 
                 <div class="ui-align-c ui-form-lg">
                     <p class="ui-highlight ui-color-orange ui-font-28 ui-font-bold">Error: 500 Unexpected Error</p>
-                    <p class="ui-highlight ui-color-orange error-pages-icon ui-no-user-select">
+                    <p class="ui-highlight ui-color-orange error-pages-icon ui-no-selection">
                         <span class="ui-inline-block">5</span>
                         <svg class="ui-icon"><use href="#face-blank"/></svg>
                         <svg class="ui-icon"><use href="#face-blank"/></svg>

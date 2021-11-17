@@ -188,7 +188,7 @@ ui.classnames = {
                     } else if (['form','input','select','dual','textarea','indeterminate','check','radio','autocomplete','currency','file','number','required','label'].indexOf(title) >= 0) {
                         title = 'forms';
 
-                    } else if (['open','open-ease','active','selected','show','round','circle','clearfix','cursor','float','full'].indexOf(title) >= 0) {
+                    } else if (['open','open-ease','active','selected','show'].indexOf(title) >= 0) {
                         title = 'helpers';
 
                     } else if (['fill','stroke','text'].indexOf(title) >= 0) {

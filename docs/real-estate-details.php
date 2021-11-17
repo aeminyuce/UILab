@@ -154,7 +154,7 @@
 
                 <div class="ui-card ui-align-c ui-round ui-shadow-lg ui-theme-sub">
                     <div class="ui-card-side ui-p-10-v ui-fill-dark-300">
-                        <ul class="ui-list-inline ui-countdown ui-no-user-select">
+                        <ul class="ui-list-inline ui-countdown ui-no-selection">
                             <li class="ui-p-10-v ui-p-15-h ui-hidden-xs">
                                 <svg class="ui-icon ui-icon-xxl"><use href="#history"/></svg>
                             </li>

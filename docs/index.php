@@ -313,7 +313,7 @@
     </main>
 
     <!-- mobile menu -->
-    <div class="ui-sidebar ui-show-r ui-theme-base ui-ease-layout ui-ease-in-out">
+    <div class="ui-sidebar ui-sidebar-r ui-theme-base ui-ease-layout ui-ease-in-out">
         <div class="ui-sidebar-title ui-p-15-v ui-fill-dark-100">
             <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-sidebar-close">
                 <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>

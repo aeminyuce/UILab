@@ -1868,7 +1868,7 @@ html .ui-row {
 .ui-float-r {
   float: right;
 }
-.ui-no-user-select {
+.ui-no-selection {
   -ms-user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -6945,11 +6945,11 @@ header.ui-sticky-static {
 .ui-sidebar-bg:not(.ui-open-ease) {
   opacity: 0;
 }
-.ui-sidebar.ui-show-r {
+.ui-sidebar-r {
   right: 0;
   transform: translateX(100%);
 }
-.ui-sidebar.ui-show-l {
+.ui-sidebar-l {
   left: 0;
   transform: translateX(-100%);
 }

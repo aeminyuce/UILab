@@ -16,14 +16,14 @@ ui.sidebar = {
 
     nameDataTarget: 'ui-sbid',
 
+    nameShow: 'ui-sidebar-',
     nameShowingMenu: 'ui-sidebar-show-',
     nameAddContent: 'ui-sidebar-add-',
 
-    // helper classnames
-    nameShow: 'ui-show-',
-    nameLeft: 'l', // using with prefix
-    nameRight: 'r', // using with prefix
+    nameLeft: 'l', // using with prefixes
+    nameRight: 'r', // using with prefixes
 
+    // helper classnames
     nameOpen: 'ui-open',
     nameOpenEase: 'ui-open-ease',
 
