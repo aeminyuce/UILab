@@ -60,9 +60,9 @@
   --ui-calendar-empty-details-bg: hsla(0, 0%, 0%, 0.12);
   --ui-calendar-today-btn-bg: hsla(0, 0%, 0%, 0.15);
   --ui-calendar-today-btn-hover-bg: hsla(0, 0%, 0%, 0.2);
-  --ui-grid-list-stripe-bg: hsla(0, 0%, 0%, 0.035);
-  --ui-grid-list-hover-bg: hsla(0, 0%, 0%, 0.06);
-  --ui-grid-list-border: hsl(0, 0%, 86.7%);
+  --ui-datatable-stripe-bg: hsla(0, 0%, 0%, 0.035);
+  --ui-datatable-hover-bg: hsla(0, 0%, 0%, 0.06);
+  --ui-datatable-border: hsl(0, 0%, 86.7%);
   --ui-image-uploader-drop-bg: hsl(0, 0%, 93%);
   --ui-image-uploader-list-bg: hsla(0, 0%, 100%, 0.45);
   --ui-image-uploader-list-border: hsla(0, 0%, 0%, 0.15);
@@ -134,9 +134,9 @@
   --ui-calendar-empty-details-bg: hsla(0, 0%, 100%, 0.18);
   --ui-calendar-today-btn-bg: hsla(0, 0%, 100%, 0.15);
   --ui-calendar-today-btn-hover-bg: hsla(0, 0%, 100%, 0.2);
-  --ui-grid-list-stripe-bg: hsla(0, 0%, 100%, 0.035);
-  --ui-grid-list-hover-bg: hsla(0, 0%, 100%, 0.06);
-  --ui-grid-list-border: hsl(220, 8%, 28%);
+  --ui-datatable-stripe-bg: hsla(0, 0%, 100%, 0.035);
+  --ui-datatable-hover-bg: hsla(0, 0%, 100%, 0.06);
+  --ui-datatable-border: hsl(220, 8%, 28%);
   --ui-image-uploader-drop-bg: hsl(222, 13%, 15%);
   --ui-image-uploader-list-bg: hsla(0, 0%, 100%, 0.035);
   --ui-image-uploader-list-border: hsla(0, 0%, 100%, 0.15);
@@ -8249,52 +8249,52 @@ button.ui-dialog-custom:focus {
     transform: translateX(-15px);
   }
 }
-/* grid list */
-.ui-ease-grid-list .ui-grid-list-content {
+/* datatable */
+.ui-ease-datatable .ui-datatable-content {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
-.ui-grid-list-content:not([class*="ui-col-"]) {
+.ui-datatable-content:not([class*="ui-col-"]) {
   padding: 10px;
   border-bottom: solid 1px hsl(0, 0%, 86.7%);
-  border-bottom: solid 1px var(--ui-grid-list-border);
+  border-bottom: solid 1px var(--ui-datatable-border);
 }
-.ui-grid-list-content:before,
-.ui-grid-list-content:after {
+.ui-datatable-content:before,
+.ui-datatable-content:after {
   content: "";
   display: table;
 }
-.ui-grid-list-content:after {
+.ui-datatable-content:after {
   clear: both;
 }
-.ui-grid-list-content.ui-even {
+.ui-datatable-content.ui-even {
   background-color: hsla(0, 0%, 0%, 0.035);
-  background-color: var(--ui-grid-list-stripe-bg);
+  background-color: var(--ui-datatable-stripe-bg);
 }
-.ui-grid-list-content.ui-checked {
+.ui-datatable-content.ui-checked {
   background-color: hsla(42, 100%, 45%, 0.15) !important;
 }
-.ui-grid-list > .ui-row,
-.ui-grid-list .ui-grid-list-content > .ui-row {
+.ui-datatable > .ui-row,
+.ui-datatable .ui-datatable-content > .ui-row {
   margin-left: inherit;
   margin-right: inherit;
 }
-.ui-grid-list:not(.ui-grid-list-showed-all) .ui-grid-list-content:not(.ui-showed) {
+.ui-datatable:not(.ui-datatable-showed-all) .ui-datatable-content:not(.ui-showed) {
   display: none;
 }
-.ui-grid-list.ui-grid-list-showed-all.ui-grid-list-filtered .ui-grid-list-content:not(.ui-filtered) {
+.ui-datatable.ui-datatable-showed-all.ui-datatable-filtered .ui-datatable-content:not(.ui-filtered) {
   display: none;
 }
-.ui-grid-list.ui-grid-hover .ui-grid-list-content.ui-even:not([class*="ui-fill-"]) {
+.ui-datatable.ui-datatable-hover .ui-datatable-content.ui-even:not([class*="ui-fill-"]) {
   background-color: hsla(0, 0%, 0%, 0.035);
-  background-color: var(--ui-grid-list-stripe-bg);
+  background-color: var(--ui-datatable-stripe-bg);
 }
-.ui-desktop .ui-grid-list.ui-grid-hover .ui-grid-list-content:not([class*="ui-fill-"]):hover,
-.ui-desktop .ui-grid-list.ui-grid-hover .ui-grid-list-content:not([class*="ui-fill-"]):nth-child(odd):hover {
+.ui-desktop .ui-datatable.ui-datatable-hover .ui-datatable-content:not([class*="ui-fill-"]):hover,
+.ui-desktop .ui-datatable.ui-datatable-hover .ui-datatable-content:not([class*="ui-fill-"]):nth-child(odd):hover {
   background-color: hsla(0, 0%, 0%, 0.06);
-  background-color: var(--ui-grid-list-hover-bg);
+  background-color: var(--ui-datatable-hover-bg);
 }
-.ui-grid-list .ui-grid-list-paging button:not(.ui-btn) {
+.ui-datatable .ui-datatable-paging button:not(.ui-btn) {
   color: inherit;
   background-color: transparent;
   border: 0;

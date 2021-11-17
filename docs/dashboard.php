@@ -932,7 +932,7 @@
                                         </ul>
                                     </div>
                                     <h4 class="ui-h4 ui-align-l ui-m-10-t">Experts</h4>
-                                    <div class="ui-grid-list ui-grid-list-striped ui-grid-hover ui-theme-gray ui-ease-grid-list">
+                                    <div class="ui-datatable ui-datatable-hover ui-theme-gray ui-ease-datatable">
 
                                         <div class="ui-row ui-no-row-gap-v ui-row-gap-sm-h">
                                             <div class="ui-col-6 ui-lg-fluid">
@@ -941,14 +941,14 @@
                                                     <button class="ui-form-clear">
                                                         <svg class="ui-icon"><use href="#remove"/></svg>
                                                     </button>
-                                                    <input class="ui-grid-list-filter" type="text" placeholder="Search">
+                                                    <input class="ui-datatable-filter" type="text" placeholder="Search">
                                                 </div>
                                                 <span class="ui-sp-5 ui-hidden-lg"></span>
                                             </div>
                                             <div class="ui-col-lg-3 ui-col-6 ui-no-fluid">
                                                 <div class="ui-select ui-round ui-no-border ui-fill-light-100 ui-ease-form">
                                                     <svg class="ui-icon"><use href="#angle-down"/></svg>
-                                                    <select class="ui-grid-list-filter" data-ui-index="2">
+                                                    <select class="ui-datatable-filter" data-ui-index="2">
                                                         <option value="">Filter</option>
                                                         <option>Starting</option>
                                                         <option>Waiting</option>
@@ -982,7 +982,7 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <select class="ui-grid-list-show ui-hidden">
+                                                <select class="ui-datatable-show ui-hidden">
                                                     <option>4</option>
                                                 </select>
                                             </div>
@@ -990,9 +990,9 @@
 
                                         <span class="ui-sp-15"></span>
 
-                                        <div class="ui-grid-list-container">
+                                        <div class="ui-datatable-container">
 
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="John Atkinson|Paused">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="John Atkinson|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -1024,7 +1024,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mary Doe|Waiting">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -1056,7 +1056,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mike Taylor|Completed">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -1088,7 +1088,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Tony Starky|Paused">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="Tony Starky|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -1121,7 +1121,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="John Atkinson|Paused">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="John Atkinson|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -1153,7 +1153,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mary Doe|Waiting">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -1185,7 +1185,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mike Taylor|Completed">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -1217,7 +1217,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Tony Starky|Paused">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="Tony Starky|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -1249,7 +1249,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="John Atkinson|Paused">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="John Atkinson|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -1281,7 +1281,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mary Doe|Waiting">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -1313,7 +1313,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mike Taylor|Completed">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -1345,7 +1345,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Tony Starky|Paused">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="Tony Starky|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -1377,7 +1377,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="John Atkinson|Paused">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="John Atkinson|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">John Atkinson
@@ -1409,7 +1409,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mary Doe|Waiting">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="Mary Doe|Waiting">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image2.jpg" alt="">Mary Doe
@@ -1441,7 +1441,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Mike Taylor|Completed">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="Mike Taylor|Completed">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image3.jpg" alt="">Mike Taylor
@@ -1473,7 +1473,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ui-grid-list-content ui-no-border ui-round" data-ui-val="Tony Starky|Paused">
+                                            <div class="ui-datatable-content ui-no-border ui-round" data-ui-val="Tony Starky|Paused">
                                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                                     <div class="ui-col-5">
                                                         <img class="ui-avatar-sm ui-m-10-r ui-hidden-xs ui-circle" src="img/profile-image.jpg" alt="">Tony Starky
@@ -1513,11 +1513,11 @@
                                         <div class="ui-row ui-no-row-gap ui-no-fluid">
                                             <div class="ui-col-4">
                                                 <div class="ui-p-5-v">
-                                                    Total <b class="ui-grid-list-total"></b>
+                                                    Total <b class="ui-datatable-total"></b>
                                                 </div>
                                             </div>
                                             <div class="ui-col-8 ui-align-r">
-                                                <div class="ui-grid-list-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-theme-panel2 ui-fill-dark-100"></div>
+                                                <div class="ui-datatable-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-theme-panel2 ui-fill-dark-100"></div>
                                             </div>
                                         </div>
 

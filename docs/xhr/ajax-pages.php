@@ -18,7 +18,7 @@
     include ('../error-pages.php');
     include ('../forms.php');
     include ('../grid.php');
-    include ('../grid-list.php');
+    include ('../datatable.php');
     include ('../image-uploader.php');
     include ('../list-group.php');
     include ('../listings.php');

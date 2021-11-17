@@ -1,30 +1,30 @@
 /*
- UI Grid List JS
+ UI Datatable JS
  Requires UI JS
 */
 
-ui.gridList = {
+ui.datatable = {
 
     // targets
-    target: 'ui-grid-list',
-    targetLoaded: 'ui-grid-list-loaded',
+    target: 'ui-datatable',
+    targetLoaded: 'ui-datatable-loaded',
 
     // main classnames
-    nameContainer: 'ui-grid-list-container',
+    nameContainer: 'ui-datatable-container',
 
-    nameListContent: 'ui-grid-list-content',
-    nameListStriped: 'ui-grid-list-striped',
-    nameListShowAll: 'ui-grid-list-showed-all',
-    nameListFiltered: 'ui-grid-list-filtered',
+    nameListContent: 'ui-datatable-content',
+    nameListStriped: 'ui-datatable-striped',
+    nameListShowAll: 'ui-datatable-showed-all',
+    nameListFiltered: 'ui-datatable-filtered',
 
-    nameFilter: 'ui-grid-list-filter',
-    nameListShow: 'ui-grid-list-show',
+    nameFilter: 'ui-datatable-filter',
+    nameListShow: 'ui-datatable-show',
 
-    nameCheckAll: 'ui-grid-list-check-all',
-    nameCheck: 'ui-grid-list-check',
+    nameCheckAll: 'ui-datatable-check-all',
+    nameCheck: 'ui-datatable-check',
 
-    nameTotal: 'ui-grid-list-total',
-    namePaging: 'ui-grid-list-paging',
+    nameTotal: 'ui-datatable-total',
+    namePaging: 'ui-datatable-paging',
 
     // helper classnames
     nameActive: 'ui-active',
@@ -37,14 +37,14 @@ ui.gridList = {
     nameAsc: 'ui-asc',
     nameDesc: 'ui-desc',
 
-    namePrev: 'ui-prev',
-    nameNext: 'ui-next',
-
     // outer classnames
     nameIcon: 'ui-icon',
 
     nameBtnActive: 'ui-btn-active',
     nameBtnPassive: 'ui-btn-passive',
+
+    namePrev: 'ui-prev',
+    nameNext: 'ui-next',
 
     // icons
     sortIcon : 'sort-fill',
@@ -96,7 +96,7 @@ ui.gridList = {
 
     // test for storage is supported?
     try {
-        sessionStorage.setItem(ui.gridList.storageTest, 0);
+        sessionStorage.setItem(ui.datatable.storageTest, 0);
 
     } catch (e) {
         testStorage = false;
@@ -106,7 +106,7 @@ ui.gridList = {
     (function () {
 
         var k, re, chars, keys;
-        keys = Object.keys(ui.gridList.customLetters); // returns array
+        keys = Object.keys(ui.datatable.customLetters); // returns array
 
         chars = '(([';
         for (k = 0; k < keys.length; k++) { chars += keys[k]; }
@@ -117,7 +117,7 @@ ui.gridList = {
         customLowerCase = function (string) {
 
             string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
-                return ui.gridList.customLetters[l];
+                return ui.datatable.customLetters[l];
             });
 
             return string.toLowerCase();
@@ -134,10 +134,10 @@ ui.gridList = {
         re = new RegExp('\\s+\\s');
         rex = new RegExp('\\s+$');
 
-        defaultClass = paging[0].getAttribute(ui.gridList.dataDefault);
+        defaultClass = paging[0].getAttribute(ui.datatable.dataDefault);
         if (defaultClass === null) { defaultClass = ''; }
 
-        activeClass = paging[0].getAttribute(ui.gridList.dataActive);
+        activeClass = paging[0].getAttribute(ui.datatable.dataActive);
         if (activeClass === null) { activeClass = ''; }
 
         if (showCount[id] === undefined || showCount[id] === 0) {
@@ -171,19 +171,19 @@ ui.gridList = {
 
         if (max > total) { max = total; }
 
-        classes = ui.gridList.namePrev + ' ' + defaultClass;
-        if (pagingCount[id] === 1) { classes += ' ' + ui.gridList.nameBtnPassive; }
+        classes = ui.datatable.namePrev + ' ' + defaultClass;
+        if (pagingCount[id] === 1) { classes += ' ' + ui.datatable.nameBtnPassive; }
 
         classes = classes.replace(re, ' ').replace(rex, '');
         html = '<button class="' + classes + '">' +
-                '<svg class="' + ui.gridList.nameIcon + '"><use href="#' + ui.gridList.prevIcon + '"/></svg>' +
+                '<svg class="' + ui.datatable.nameIcon + '"><use href="#' + ui.datatable.prevIcon + '"/></svg>' +
             '</button>\n';
 
         for (i = min; i <= max; i++) {
 
             if (i === pagingCount[id]) {
 
-                classes = ui.gridList.nameBtnActive + ' ' + defaultClass + ' ' + activeClass;
+                classes = ui.datatable.nameBtnActive + ' ' + defaultClass + ' ' + activeClass;
                 classes = classes.replace(re, ' ').replace(rex, '');
 
                 html += '<button class="' + classes + '">' + pagingCount[id] + '</button>\n';
@@ -194,12 +194,12 @@ ui.gridList = {
 
         }
 
-        classes = ui.gridList.nameNext + ' ' + defaultClass;
-        if (pagingCount[id] === total) { classes += ' ' + ui.gridList.nameBtnPassive; }
+        classes = ui.datatable.nameNext + ' ' + defaultClass;
+        if (pagingCount[id] === total) { classes += ' ' + ui.datatable.nameBtnPassive; }
 
         classes = classes.replace(re, ' ').replace(rex, '');
         html += '<button class="' + classes + '">' +
-                '<svg class="' + ui.gridList.nameIcon + '"><use href="#' + ui.gridList.nextIcon + '"/></svg>' +
+                '<svg class="' + ui.datatable.nameIcon + '"><use href="#' + ui.datatable.nextIcon + '"/></svg>' +
             '</button>\n';
 
         paging[0].innerHTML = '';
@@ -207,7 +207,7 @@ ui.gridList = {
 
         // set paging to storage
         if (testStorage && sessionStorage !== undefined) {
-            sessionStorage.setItem(ui.gridList.storagePaging + id, pagingCount[id]);
+            sessionStorage.setItem(ui.datatable.storagePaging + id, pagingCount[id]);
         }
 
         // empty variables
@@ -221,15 +221,15 @@ ui.gridList = {
 
         var i, list, paging, gridTotal, isEven, gridStriped;
 
-        if (ui.hasClass(that, ui.gridList.nameListFiltered)) {
-            list = ui.find('.' + ui.gridList.nameListContent + '.' + ui.gridList.nameFiltered, that);
+        if (ui.hasClass(that, ui.datatable.nameListFiltered)) {
+            list = ui.find('.' + ui.datatable.nameListContent + '.' + ui.datatable.nameFiltered, that);
 
         } else {
-            list = ui.find('.' + ui.gridList.nameListContent, that);
+            list = ui.find('.' + ui.datatable.nameListContent, that);
         }
 
         // paging
-        paging = ui.find('.' + ui.gridList.namePaging, that);
+        paging = ui.find('.' + ui.datatable.namePaging, that);
         if (paging.length > 0) {
 
             if (pagingCount[id] === undefined || pagingCount[id] === 0) {
@@ -244,12 +244,12 @@ ui.gridList = {
         } else {
 
             pagingCount[id] = 0; // paging not available
-            ui.addClass(that, ui.gridList.nameListShowAll);
+            ui.addClass(that, ui.datatable.nameListShowAll);
 
         }
 
         // total grids
-        gridTotal = ui.find('.' + ui.gridList.nameTotal, that);
+        gridTotal = ui.find('.' + ui.datatable.nameTotal, that);
 
         if (gridTotal.length > 0) {
             gridTotal[0].textContent = list.length;
@@ -257,9 +257,9 @@ ui.gridList = {
 
         // define even elements and visible grids
         isEven = false;
-        gridStriped = ui.hasClass(that, ui.gridList.nameListStriped);
+        gridStriped = ui.hasClass(that, ui.datatable.nameListStriped);
 
-        ui.removeClass(ui.find('.' + ui.gridList.nameListContent + '.' + ui.gridList.nameShow, that), ui.gridList.nameShow);
+        ui.removeClass(ui.find('.' + ui.datatable.nameListContent + '.' + ui.datatable.nameShow, that), ui.datatable.nameShow);
 
         function evenList(t) {
 
@@ -267,19 +267,19 @@ ui.gridList = {
 
                 if (isEven) {
 
-                    ui.addClass(t, ui.gridList.nameEven);
+                    ui.addClass(t, ui.datatable.nameEven);
                     isEven = false;
 
                 } else {
 
-                    ui.removeClass(t, ui.gridList.nameEven);
+                    ui.removeClass(t, ui.datatable.nameEven);
                     isEven = true;
 
                 }
 
             }
 
-            ui.addClass(t, ui.gridList.nameShow);
+            ui.addClass(t, ui.datatable.nameShow);
 
         }
 
@@ -307,19 +307,19 @@ ui.gridList = {
     ui.on(document,
         'click',
 
-        '.' + ui.gridList.target + ' .' + ui.gridList.namePaging + ' button',
+        '.' + ui.datatable.target + ' .' + ui.datatable.namePaging + ' button',
 
         function () {
 
             var that, id;
 
-            that = ui.closest(this, '.' + ui.gridList.target)[0];
-            id = that.getAttribute(ui.gridList.dataID);
+            that = ui.closest(this, '.' + ui.datatable.target)[0];
+            id = that.getAttribute(ui.datatable.dataID);
 
-            if (ui.hasClass(this, ui.gridList.nameNext)) {
+            if (ui.hasClass(this, ui.datatable.nameNext)) {
                 pagingCount[id] += 1;
 
-            } else if (ui.hasClass(this, ui.gridList.namePrev)) {
+            } else if (ui.hasClass(this, ui.datatable.namePrev)) {
                 pagingCount[id] -= 1;
 
             } else {
@@ -334,32 +334,32 @@ ui.gridList = {
     ui.on(document,
         'change',
 
-        '.' + ui.gridList.target + ' select.' + ui.gridList.nameListShow,
+        '.' + ui.datatable.target + ' select.' + ui.datatable.nameListShow,
 
         function () {
 
             var that, id;
 
-            that = ui.closest(this, '.' + ui.gridList.target)[0];
-            id = that.getAttribute(ui.gridList.dataID);
+            that = ui.closest(this, '.' + ui.datatable.target)[0];
+            id = that.getAttribute(ui.datatable.dataID);
 
             if (isNaN(Number(this.value))) {
 
                 showCount[id] = 0;
                 pagingCount[id] = 1;
 
-                ui.addClass(that, ui.gridList.nameListShowAll);
+                ui.addClass(that, ui.datatable.nameListShowAll);
 
             } else {
 
                 showCount[id] = this.value;
-                ui.removeClass(that, ui.gridList.nameListShowAll);
+                ui.removeClass(that, ui.datatable.nameListShowAll);
 
             }
 
             // set show count to storage
             if (testStorage && sessionStorage !== undefined) {
-                sessionStorage.setItem(ui.gridList.storageShow + id, showCount[id]);
+                sessionStorage.setItem(ui.datatable.storageShow + id, showCount[id]);
             }
 
             loadGrid(that, id);
@@ -370,56 +370,56 @@ ui.gridList = {
     ui.on(document,
         'mousedown',
 
-        '.' + ui.gridList.target + ' [' + ui.gridList.dataSort + ']',
+        '.' + ui.datatable.target + ' [' + ui.datatable.dataSort + ']',
 
         function () {
 
             var that, id, buttons, isAsc, gridContainer, list, sortIndex, sortType, arr, arrSorted;
 
-            that = ui.closest(this, '.' + ui.gridList.target)[0];
-            id = that.getAttribute(ui.gridList.dataID);
+            that = ui.closest(this, '.' + ui.datatable.target)[0];
+            id = that.getAttribute(ui.datatable.dataID);
 
             // modify buttons
-            buttons = ui.find('[' + ui.gridList.dataSort + ']', that);
+            buttons = ui.find('[' + ui.datatable.dataSort + ']', that);
 
-            ui.removeClass(buttons, ui.gridList.nameActive);
-            ui.addClass(this, ui.gridList.nameActive);
+            ui.removeClass(buttons, ui.datatable.nameActive);
+            ui.addClass(this, ui.datatable.nameActive);
 
             ui.each(buttons,
 
                 function () {
 
-                    if (!ui.hasClass(this, ui.gridList.nameActive)) {
+                    if (!ui.hasClass(this, ui.datatable.nameActive)) {
 
-                        ui.removeClass(this, ui.gridList.nameAsc + ' ' + ui.gridList.nameDesc);
-                        ui.find('.' + ui.gridList.nameIcon + ' use', this)[0].setAttribute('href', '#' + ui.gridList.sortIcon);
+                        ui.removeClass(this, ui.datatable.nameAsc + ' ' + ui.datatable.nameDesc);
+                        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', '#' + ui.datatable.sortIcon);
 
                     }
 
                 });
 
-            isAsc = ui.hasClass(this, ui.gridList.nameAsc);
+            isAsc = ui.hasClass(this, ui.datatable.nameAsc);
 
             if (isAsc) {
 
-                ui.removeClass(this, ui.gridList.nameAsc);
-                ui.addClass(this, ui.gridList.nameDesc);
+                ui.removeClass(this, ui.datatable.nameAsc);
+                ui.addClass(this, ui.datatable.nameDesc);
 
-                ui.find('.' + ui.gridList.nameIcon + ' use', this)[0].setAttribute('href', '#' + ui.gridList.descIcon);
+                ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', '#' + ui.datatable.descIcon);
 
             } else {
 
-                ui.removeClass(this, ui.gridList.nameDesc);
-                ui.addClass(this, ui.gridList.nameAsc);
+                ui.removeClass(this, ui.datatable.nameDesc);
+                ui.addClass(this, ui.datatable.nameAsc);
 
-                ui.find('.' + ui.gridList.nameIcon + ' use', this)[0].setAttribute('href', '#' + ui.gridList.ascIcon);
+                ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', '#' + ui.datatable.ascIcon);
 
             }
 
             // sort
-            gridContainer = ui.find('.' + ui.gridList.nameContainer, that)[0];
+            gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
 
-            list = ui.find('.' + ui.gridList.nameListContent, gridContainer);
+            list = ui.find('.' + ui.datatable.nameListContent, gridContainer);
             ui.each(list,
 
                 function () {
@@ -429,28 +429,28 @@ ui.gridList = {
             arr = [];
             arrSorted = [];
 
-            sortIndex = this.getAttribute(ui.gridList.dataSort);
+            sortIndex = this.getAttribute(ui.datatable.dataSort);
 
             if (sortIndex === null || sortIndex === '' || sortIndex === '0') {
                 sortIndex = 0;
 
             } else { sortIndex = Number(sortIndex) - 1; }
 
-            sortType = this.getAttribute(ui.gridList.dataType);
+            sortType = this.getAttribute(ui.datatable.dataType);
             if (sortType === null) { sortType = ''; }
 
-            list = ui.find('.' + ui.gridList.nameListContent, temp);
+            list = ui.find('.' + ui.datatable.nameListContent, temp);
             ui.each(list,
 
                 function () {
 
-                    var val = this.getAttribute(ui.gridList.dataVal);
+                    var val = this.getAttribute(ui.datatable.dataVal);
 
                     if (val !== null && val !== '') {
 
-                        val = val.split(ui.gridList.valueSplit)[sortIndex];
+                        val = val.split(ui.datatable.valueSplit)[sortIndex];
 
-                        if (sortType !== ui.gridList.sortTypeNumber) {
+                        if (sortType !== ui.datatable.sortTypeNumber) {
                             val = customLowerCase(val);
                         }
 
@@ -463,7 +463,7 @@ ui.gridList = {
 
             if (isAsc) {
 
-                if (sortType === ui.gridList.sortTypeNumber) {
+                if (sortType === ui.datatable.sortTypeNumber) {
                     arrSorted.sort(function (a, b) { return b - a; });
 
                 } else {
@@ -472,7 +472,7 @@ ui.gridList = {
 
             } else {
 
-                if (sortType === ui.gridList.sortTypeNumber) {
+                if (sortType === ui.datatable.sortTypeNumber) {
                     arrSorted.sort(function (a, b) { return a - b; });
 
                 } else {
@@ -510,13 +510,13 @@ ui.gridList = {
 
         var id, filters, val, vals, index, sortType, sortIndex, indexes, list, gridContainer, j, contentVal, contentArr, activeFilters, passed, checkAll;
 
-        id = that.getAttribute(ui.gridList.dataID);
+        id = that.getAttribute(ui.datatable.dataID);
 
         vals = [];
         indexes = [];
 
         // read all filter values
-        filters = ui.find('.' + ui.gridList.nameFilter, that);
+        filters = ui.find('.' + ui.datatable.nameFilter, that);
         ui.each(filters,
 
             function (i) {
@@ -557,10 +557,10 @@ ui.gridList = {
 
                     val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
 
-                    sortType = this.getAttribute(ui.gridList.dataType);
+                    sortType = this.getAttribute(ui.datatable.dataType);
                     if (sortType === null) { sortType = ''; }
 
-                    if (sortType === ui.gridList.sortTypeNumber) {
+                    if (sortType === ui.datatable.sortTypeNumber) {
                         vals.push(val);
 
                     } else {
@@ -569,7 +569,7 @@ ui.gridList = {
 
                 }
 
-                sortIndex = this.getAttribute(ui.gridList.dataIndex);
+                sortIndex = this.getAttribute(ui.datatable.dataIndex);
                 if (sortIndex !== null) {
 
                     if (sortIndex === '' || sortIndex === '0') {
@@ -592,19 +592,19 @@ ui.gridList = {
                 return filterVal !== '';
             });
 
-            gridContainer = ui.find('.' + ui.gridList.nameContainer, that)[0];
+            gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
 
-            list = ui.find('.' + ui.gridList.nameListContent, gridContainer);
+            list = ui.find('.' + ui.datatable.nameListContent, gridContainer);
             ui.each(list,
 
                 function () {
                     temp.appendChild(this);
                 });
 
-            list = ui.find('.' + ui.gridList.nameListContent, temp);
+            list = ui.find('.' + ui.datatable.nameListContent, temp);
 
             // remove checked
-            checkAll = ui.find('.' + ui.gridList.nameCheckAll, that);
+            checkAll = ui.find('.' + ui.datatable.nameCheckAll, that);
 
             if (checkAll.length > 0) {
 
@@ -620,10 +620,10 @@ ui.gridList = {
 
                 function () {
 
-                    if (ui.hasClass(this, ui.gridList.nameChecked)) {
+                    if (ui.hasClass(this, ui.datatable.nameChecked)) {
 
-                        ui.removeClass(this, ui.gridList.nameChecked);
-                        ui.find('.' + ui.gridList.nameCheck, this)[0].checked = false;
+                        ui.removeClass(this, ui.datatable.nameChecked);
+                        ui.find('.' + ui.datatable.nameCheck, this)[0].checked = false;
 
                     }
 
@@ -631,19 +631,19 @@ ui.gridList = {
 
             if (activeFilters.length > 0) {
 
-                ui.addClass(that, ui.gridList.nameListFiltered);
+                ui.addClass(that, ui.datatable.nameListFiltered);
                 ui.each(list,
 
                     function () {
 
                         passed = [];
 
-                        contentVal = this.getAttribute(ui.gridList.dataVal);
+                        contentVal = this.getAttribute(ui.datatable.dataVal);
 
                         if (contentVal !== null && contentVal !== '') {
 
                             contentVal = customLowerCase(contentVal);
-                            contentArr = contentVal.split(ui.gridList.valueSplit);
+                            contentArr = contentVal.split(ui.datatable.valueSplit);
 
                             for (j = 0; j < vals.length; j++) {
 
@@ -670,24 +670,24 @@ ui.gridList = {
                         }
 
                         if (activeFilters.length === passed.length) {
-                            ui.addClass(this, ui.gridList.nameFiltered);
+                            ui.addClass(this, ui.datatable.nameFiltered);
 
                         } else {
-                            ui.removeClass(this, ui.gridList.nameFiltered);
+                            ui.removeClass(this, ui.datatable.nameFiltered);
                         }
 
                     });
 
             } else {
 
-                ui.removeClass(that, ui.gridList.nameListFiltered);
-                ui.removeClass(list, ui.gridList.nameFiltered);
+                ui.removeClass(that, ui.datatable.nameListFiltered);
+                ui.removeClass(list, ui.datatable.nameFiltered);
 
             }
 
             // set filters to storage
             if (testStorage && sessionStorage !== undefined) {
-                sessionStorage.setItem(ui.gridList.storageVals + id, vals.toString());
+                sessionStorage.setItem(ui.datatable.storageVals + id, vals.toString());
             }
 
             // load filtered grids
@@ -712,11 +712,11 @@ ui.gridList = {
     ui.on(document,
         'keyup',
 
-        '.' + ui.gridList.target + ' .' + ui.gridList.nameFilter + '[type="text"]',
+        '.' + ui.datatable.target + ' .' + ui.datatable.nameFilter + '[type="text"]',
 
         function () {
 
-            var that = ui.closest(this, '.' + ui.gridList.target)[0];
+            var that = ui.closest(this, '.' + ui.datatable.target)[0];
             gridFilter(that, false);
 
         });
@@ -724,11 +724,11 @@ ui.gridList = {
     ui.on(document,
         'change',
 
-        '.' + ui.gridList.target + ' .' + ui.gridList.nameFilter + ':not([type="text"])',
+        '.' + ui.datatable.target + ' .' + ui.datatable.nameFilter + ':not([type="text"])',
 
         function () {
 
-            var that = ui.closest(this, '.' + ui.gridList.target)[0];
+            var that = ui.closest(this, '.' + ui.datatable.target)[0];
             gridFilter(that, false);
 
         });
@@ -737,25 +737,25 @@ ui.gridList = {
     ui.on(document,
         'change',
 
-        '.' + ui.gridList.target + ' .' + ui.gridList.nameCheckAll,
+        '.' + ui.datatable.target + ' .' + ui.datatable.nameCheckAll,
 
         function () {
 
             var that, list, form, checked, checkFnc, uncheckFnc;
 
-            that = ui.closest(this, '.' + ui.gridList.target)[0];
-            list = ui.find('.' + ui.gridList.nameListContent, that);
+            that = ui.closest(this, '.' + ui.datatable.target)[0];
+            list = ui.find('.' + ui.datatable.nameListContent, that);
 
             checked = this.checked;
 
             checkFnc = function (t) {
 
-                if (!ui.hasClass(t, ui.gridList.nameChecked)) {
+                if (!ui.hasClass(t, ui.datatable.nameChecked)) {
 
-                    form = ui.find('.' + ui.gridList.nameCheck, t)[0];
+                    form = ui.find('.' + ui.datatable.nameCheck, t)[0];
                     if (form !== undefined) {
 
-                        ui.addClass(t, ui.gridList.nameChecked);
+                        ui.addClass(t, ui.datatable.nameChecked);
                         form.checked = true;
 
                     }
@@ -766,12 +766,12 @@ ui.gridList = {
 
             uncheckFnc = function (t) {
 
-                if (ui.hasClass(t, ui.gridList.nameChecked)) {
+                if (ui.hasClass(t, ui.datatable.nameChecked)) {
 
-                    form = ui.find('.' + ui.gridList.nameCheck, t)[0];
+                    form = ui.find('.' + ui.datatable.nameCheck, t)[0];
                     if (form !== undefined) {
 
-                        ui.removeClass(t, ui.gridList.nameChecked);
+                        ui.removeClass(t, ui.datatable.nameChecked);
                         form.checked = false;
 
                     }
@@ -786,9 +786,9 @@ ui.gridList = {
 
                     if (checked) {
 
-                        if (ui.hasClass(that, ui.gridList.nameListFiltered)) {
+                        if (ui.hasClass(that, ui.datatable.nameListFiltered)) {
 
-                            if (ui.hasClass(this, ui.gridList.nameFiltered)) {
+                            if (ui.hasClass(this, ui.datatable.nameFiltered)) {
                                 checkFnc(this);
 
                             } else { uncheckFnc(this); }
@@ -804,24 +804,24 @@ ui.gridList = {
     ui.on(document,
         'change',
 
-        '.' + ui.gridList.target + ' .' + ui.gridList.nameCheck,
+        '.' + ui.datatable.target + ' .' + ui.datatable.nameCheck,
 
         function () {
 
             var that, list, checkAll;
 
-            that = ui.closest(that, '.' + ui.gridList.target)[0];
-            list = ui.closest(this, '.' + ui.gridList.nameListContent)[0];
+            that = ui.closest(that, '.' + ui.datatable.target)[0];
+            list = ui.closest(this, '.' + ui.datatable.nameListContent)[0];
 
             if (this.checked) {
-                ui.addClass(list, ui.gridList.nameChecked);
+                ui.addClass(list, ui.datatable.nameChecked);
 
             } else {
 
-                ui.removeClass(list, ui.gridList.nameChecked);
-                checkAll = ui.find('.' + ui.gridList.nameCheckAll, that)[0];
+                ui.removeClass(list, ui.datatable.nameChecked);
+                checkAll = ui.find('.' + ui.datatable.nameCheckAll, that)[0];
 
-                if (ui.find('.' + ui.gridList.nameCheckAll, that)[0] !== undefined) {
+                if (ui.find('.' + ui.datatable.nameCheckAll, that)[0] !== undefined) {
                     checkAll.checked = false;
                 }
 
@@ -830,9 +830,9 @@ ui.gridList = {
         });
 
     // first loading
-    ui.gridList.Start = function () {
+    ui.datatable.Start = function () {
 
-        ui.each('.' + ui.gridList.target + ':not(.' + ui.gridList.targetLoaded + ')',
+        ui.each('.' + ui.datatable.target + ':not(.' + ui.datatable.targetLoaded + ')',
 
             function () {
 
@@ -840,21 +840,21 @@ ui.gridList = {
 
                 // define id
                 startListID += 1;
-                id = ui.gridList.listIdNaming + startListID;
+                id = ui.datatable.listIdNaming + startListID;
 
-                this.setAttribute(ui.gridList.dataID, id);
+                this.setAttribute(ui.datatable.dataID, id);
 
                 // check stored variables
                 if (testStorage && sessionStorage !== undefined) {
 
-                    loadedVals[id] = sessionStorage.getItem(ui.gridList.storageVals + id);
-                    showCount[id] = Number(sessionStorage.getItem(ui.gridList.storageShow + id));
-                    pagingCount[id] = Number(sessionStorage.getItem(ui.gridList.storagePaging + id));
+                    loadedVals[id] = sessionStorage.getItem(ui.datatable.storageVals + id);
+                    showCount[id] = Number(sessionStorage.getItem(ui.datatable.storageShow + id));
+                    pagingCount[id] = Number(sessionStorage.getItem(ui.datatable.storagePaging + id));
 
                 }
 
                 // calculate show
-                gridShow = ui.find('select.' + ui.gridList.nameListShow, this)[0];
+                gridShow = ui.find('select.' + ui.datatable.nameListShow, this)[0];
                 if (showCount[id] === 0) {
 
                     if (gridShow !== undefined) {
@@ -866,7 +866,7 @@ ui.gridList = {
                                 showCount[id] = 0;
                                 pagingCount[id] = 1;
 
-                                ui.addClass(this, ui.gridList.nameListShowAll);
+                                ui.addClass(this, ui.datatable.nameListShowAll);
 
                             } else {
                                 showCount[id] = gridShow.value;
@@ -901,7 +901,7 @@ ui.gridList = {
                 }
 
                 // load grids
-                ui.addClass(this, ui.gridList.targetLoaded);
+                ui.addClass(this, ui.datatable.targetLoaded);
                 loadGrid(this, id);
 
             });
@@ -920,17 +920,17 @@ ui.gridList = {
                     if (performance.navigation.type !== 1) { // The Navigation Timing API: if === 1 means page refreshed
 
                         var gridLists, id;
-                        gridLists = ui.find('.' + ui.gridList.target);
+                        gridLists = ui.find('.' + ui.datatable.target);
 
                         ui.each(gridLists,
 
                             function () {
 
-                                id = this.getAttribute(ui.gridList.dataID);
+                                id = this.getAttribute(ui.datatable.dataID);
 
-                                sessionStorage.setItem(ui.gridList.storageVals + id, '');
-                                sessionStorage.setItem(ui.gridList.storageShow + id, 0);
-                                sessionStorage.setItem(ui.gridList.storagePaging + id, 0);
+                                sessionStorage.setItem(ui.datatable.storageVals + id, '');
+                                sessionStorage.setItem(ui.datatable.storageShow + id, 0);
+                                sessionStorage.setItem(ui.datatable.storagePaging + id, 0);
 
                             });
 
@@ -942,7 +942,7 @@ ui.gridList = {
         });
 
     // Loaders
-    ui.onload(ui.gridList.Start);
+    ui.onload(ui.datatable.Start);
 
     // ajax callback loader
     ui.on(document,
@@ -950,8 +950,8 @@ ui.gridList = {
 
         function () {
 
-            if (ui.ajax.classNames.indexOf(ui.gridList.target) > -1) {
-                ui.gridList.Start();
+            if (ui.ajax.classNames.indexOf(ui.datatable.target) > -1) {
+                ui.datatable.Start();
             }
 
         });

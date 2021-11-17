@@ -499,7 +499,7 @@
                     </div>
                 </div>
 
-                <h5 class="ui-h5 ui-font-bold">Dropdowns with Grid List</h5>
+                <h5 class="ui-h5 ui-font-bold">Dropdowns with Grid</h5>
                 <div class="ui-row ui-p-30-b ui-block-2nd ui-form-lg">
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">

@@ -439,10 +439,10 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="grid list" value="../css/grid-list">
+                                            <input type="checkbox" name="datatable" value="../css/gdatatable">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Grid List
+                                        Datatable
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
@@ -776,10 +776,10 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="grid list js" value="../js/grid-list">
+                                            <input type="checkbox" name="datatable js" value="../js/datatable">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Grid List
+                                        Datatable
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">

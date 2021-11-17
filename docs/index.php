@@ -58,7 +58,7 @@
     <script src="../js/calendar.js?v=<?php echo filemtime('../js/calendar.js'); ?>"></script>
     <script src="../js/carousel.js?v=<?php echo filemtime('../js/carousel.js'); ?>"></script>
     <script src="../js/countdown.js?v=<?php echo filemtime('../js/countdown.js'); ?>"></script>
-    <script src="../js/grid-list.js?v=<?php echo filemtime('../js/grid-list.js'); ?>"></script>
+    <script src="../js/datatable.js?v=<?php echo filemtime('../js/datatable.js'); ?>"></script>
     <script src="../js/image-uploader.js?v=<?php echo filemtime('../js/image-uploader.js'); ?>"></script>
     <script src="../js/gallery.js?v=<?php echo filemtime('../js/gallery.js'); ?>"></script>
     <script src="../js/photo-slider.js?v=<?php echo filemtime('../js/photo-slider.js'); ?>"></script>
@@ -168,12 +168,12 @@
                         <li><a class="ui-btn ui-btn-ghost" href="?p=carousel">Carousel</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=charts">Charts</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=countdown">Countdown</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=datatable">Datatable</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=dropdown">Dropdown</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=error-pages">Error Pages</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=forms">Forms</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=gallery">Gallery</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=grid">Grid</a></li>
-                        <li><a class="ui-btn ui-btn-ghost" href="?p=grid-list">Grid List</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=image-uploader">Image Uploader</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=list-group">List Group</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=listings">Listings</a></li>
