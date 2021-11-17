@@ -4,7 +4,7 @@
             <div class="ui-col-12 ui-p-30">
 
                 <h3 class="ui-h3 ui-align-c">SVG Map Example 1</h3>
-                <div class="ui-svg-map">
+                <div class="ui-map">
                     <svg viewBox="0 0 940 405" class="ui-theme-sub ui-text ui-ease-1st-svg">
                         <path
                             data-ui-href="#" data-ui-size="0" data-ui-tooltip title="Kırklareli: 0"
@@ -336,7 +336,7 @@
                 <span class="ui-sp-30 ui-m-30-v"></span>
 
                 <h3 class="ui-h3 ui-align-c">SVG Map Example 2</h3>
-                <div class="ui-svg-map">
+                <div class="ui-map">
                     <svg viewBox="0 0 940 405" class="ui-theme-base ui-text ui-ease-1st-svg">
                         <path
                             data-ui-href="#" data-ui-size="0" data-ui-tooltip title="Kırklareli: 0"

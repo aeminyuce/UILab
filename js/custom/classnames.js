@@ -189,26 +189,32 @@ ui.classnames = {
                     } else if (['h1','h2','h3','h4','h5','h6'].indexOf(title) >= 0) {
                         title = 'headings';
 
-                    } else if (['form','input','select','dual','textarea','indeterminate','check','radio','autocomplete','currency','file','number','required','label','pass'].indexOf(title) >= 0) {
+                    } else if (['form','input','select','dual','textarea','indeterminate','range','check','radio','switch','autocomplete','currency','spinner','file','number','required','label','pass'].indexOf(title) >= 0) {
                         title = 'forms';
 
                     } else if (['open','open-ease','active','selected','show'].indexOf(title) >= 0) {
                         title = 'helpers';
 
+                    } else if (['w','weather','days','graphs','reports'].indexOf(title) >= 0) {
+                        title = 'weather';
+
                     } else if (['theme','fill','stroke','text'].indexOf(title) >= 0) {
                         title = 'themes';
 
-                    } else if (['code','dl'].indexOf(title) >= 0) {
+                    } else if (['code','dl','rtl','pre'].indexOf(title) >= 0) {
                         title = 'typography';
 
-                    } else if (['w','weather','days','graphs','reports'].indexOf(title) >= 0) {
-                        title = 'weather';
+                    } else if (['line','donut','pie'].indexOf(title) >= 0) {
+                        title = 'charts';
 
                     } else if (['paging','prev','next'].indexOf(title) >= 0) {
                         title = 'paging';
 
                     } else if (['icon','icons','toggle'].indexOf(title) >= 0) {
                         title = 'icons';
+
+                    } else if (['border','round','circle'].indexOf(title) >= 0) {
+                        title = 'borders';
 
                     } else if (title === 'darkmode' || title === 'invert') {
                         title = 'dark Mode';
@@ -242,8 +248,12 @@ ui.classnames = {
 
                     } if (title === 'btn') {
                         title = 'buttons';
+
                     } if (title === 'img') {
                         title = 'responsive images';
+
+                    } if (title === 'sticky') {
+                        title = 'sticky header';
                     }
 
                     return title;
@@ -322,6 +332,7 @@ ui.classnames = {
                             }
 
                             items[i] = items[i].replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+                            items[i] = items[i].replace(/(function )|(\(\) { \[native code\] })/g, ''); // remove native code error
 
                             html += '<li>' + items[i] + '</li>'; // create rows
                             created += 1;

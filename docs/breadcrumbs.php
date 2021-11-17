@@ -127,7 +127,7 @@
 
                 <span class="ui-sp-15"></span>
 
-                <div class="ui-breadcrumbs ui-no-separated ui-icons-no-opacity">
+                <div class="ui-breadcrumbs ui-breadcrumbs-no-sep ui-icons-no-opacity">
                     <ul class="ui-list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn ui-round ui-ease-btn" href="#" itemprop="item" title="Home">
@@ -153,7 +153,7 @@
 
                 <span class="ui-sp-15"></span>
 
-                <div class="ui-breadcrumbs ui-no-separated ui-theme-base">
+                <div class="ui-breadcrumbs ui-breadcrumbs-no-sep ui-theme-base">
                     <ul class="ui-list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
@@ -204,7 +204,7 @@
 
                 <span class="ui-sp-15"></span>
 
-                <div class="ui-breadcrumbs ui-no-separated ui-theme-sub">
+                <div class="ui-breadcrumbs ui-breadcrumbs-no-sep ui-theme-sub">
                     <ul class="ui-list-inline">
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">

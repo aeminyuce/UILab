@@ -2,8 +2,8 @@
 
 @header-height:                         62px;
 
-@theme-panel:                           hsl(231, 55%, 47%);
-@theme-panel2:                          hsl(189, 95%, 40%);
+@base:                                  hsl(231, 55%, 47%);
+@sub:                                   hsl(189, 95%, 40%);
 
 @header-bg:                             hsl(0, 0%, 100%);
 @header-bg-dark:                        hsl(220, 15%, 16%);
@@ -29,8 +29,9 @@
         [data-ui-mode="dark"] { ._dashboard-vars-dark(); }
     }
 }
-._theme(panel, @theme-panel);
-._theme(panel2, @theme-panel2);
+
+._theme(base, @base);
+._theme(sub, @sub);
 
 body { overflow-x: hidden; }
 header { ._bg-var(header-bg); }

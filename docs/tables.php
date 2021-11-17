@@ -39,7 +39,7 @@
                 <span class="ui-sp-20"></span>
 
                 <h3 class="ui-h3">No Separated Rows</h3>
-                <table class="ui-table ui-p-30-b ui-no-separated">
+                <table class="ui-table ui-p-30-b ui-table-no-sep">
                     <thead>
                         <tr>
                             <th>#</th>

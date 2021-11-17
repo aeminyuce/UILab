@@ -9,7 +9,7 @@
     <div class="ui-col-static ui-sm-fluid">
 
         <!-- dashboard-menu -->
-        <div class="dashboard-menu ui-col-250 ui-set-relative ui-visible-lg ui-theme-panel ui-ease-width ui-ease-in-out">
+        <div class="dashboard-menu ui-col-250 ui-set-relative ui-visible-lg ui-theme-base ui-ease-width ui-ease-in-out">
             <div class="ui-col-250 ui-full-h ui-set-fixed ui-set-l ui-set-t ui-invert-bg ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
 
                 <div class="ui-set-relative ui-p-5-t">
@@ -19,7 +19,7 @@
                     </button>
                 </div>
 
-                <div class="ui-tabs ui-align-l ui-icons-no-opacity ui-theme-panel2 ui-ease-tabs ui-ease-1st-btn ui-scroll-v ui-scrollbar-faded ui-sidebar-add-l" data-ui-classes="ui-text">
+                <div class="ui-tabs ui-align-l ui-icons-no-opacity ui-theme-sub ui-ease-tabs ui-ease-1st-btn ui-scroll-v ui-scrollbar-faded ui-sidebar-add-l" data-ui-classes="ui-text">
 
                     <div class="ui-p-10">
                         <div class="ui-font-12 ui-m-10-b ui-color-white-25">Personal Activity</div>
@@ -283,7 +283,7 @@
                             <svg class="ui-icon"><use href="#grid-column"/></svg>
                         </button>
                         <div class="ui-dropdown-menu ui-round ui-shadow-lg ui-no-scroll">
-                            <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
+                            <div class="ui-tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
                                 <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-border-b ui-ease-1st-btn">
                                     <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-text ui-active" title="Favorites">
@@ -326,7 +326,7 @@
                             <svg class="ui-icon"><use href="#bars-right"/></svg>
                         </button>
                         <div class="ui-dropdown-menu ui-round ui-shadow-lg ui-no-scroll">
-                            <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
+                            <div class="ui-tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
                                 <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-border-b ui-ease-1st-btn">
                                     <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-text ui-active" title="Notifications">
@@ -436,7 +436,7 @@
             <div class="ui-tabs ui-ease-tabs ui-p-15-b" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
                 <div class="ui-container">
-                    <div class="ui-row ui-border-b ui-m-15-b ui-theme-panel2">
+                    <div class="ui-row ui-border-b ui-m-15-b ui-theme-sub">
                         <div class="ui-col-4 ui-offset-4 ui-no-p-b">
 
                             <div class="ui-btn-holder ui-color-black-25 ui-form-lg ui-ease-1st-btn">
@@ -527,7 +527,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="ui-carousel-content ui-p-10-h ui-p-10-t ui-p-15-b ui-theme-panel2">
+                                        <div class="ui-carousel-content ui-p-10-h ui-p-10-t ui-p-15-b ui-theme-sub">
                                             <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
@@ -620,7 +620,7 @@
 
                             <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
                                 <div class="ui-card ui-full-h ui-p-15 ui-p-10-t ui-round ui-shadow-lg" style="min-height: 350px;">
-                                    <div class="ui-tabs ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
+                                    <div class="ui-tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
                                         <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-m-10-b ui-border-b ui-form-lg ui-ease-1st-btn">
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-text ui-active">Delayed</button>
@@ -837,7 +837,7 @@
 
                             <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
                                 <div class="ui-card ui-full-h ui-p-15 ui-p-10-t ui-round ui-shadow-lg" style="min-height: 350px;">
-                                    <div class="ui-tabs ui-form-lg ui-theme-panel2 ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
+                                    <div class="ui-tabs ui-form-lg ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
                                         <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-m-10-b ui-border-b ui-ease-1st-btn">
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-text ui-active">News</button>
@@ -1517,7 +1517,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-col-8 ui-align-r">
-                                                <div class="ui-datatable-paging ui-paging ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-theme-panel2 ui-fill-dark-100"></div>
+                                                <div class="ui-datatable-paging ui-paging ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
                                             </div>
                                         </div>
 
@@ -1552,7 +1552,7 @@
 
                                                     <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                                                         <button type="button" class="ui-btn ui-btn-lg ui-btn-ghost ui-btn-square ui-round">
-                                                            <svg class="ui-icon ui-default-icon"><use href="#ellipsis-h"/></svg>
+                                                            <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                                         </button>
                                                         <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
                                                             <li><a href="#">
@@ -1735,7 +1735,7 @@
 </main>
 
 <!-- mobile menu -->
-<div class="ui-sidebar ui-sidebar-l ui-invert-bg ui-theme-panel ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
+<div class="ui-sidebar ui-sidebar-l ui-invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
     <div class="ui-sidebar-title ui-no-p ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-sidebar-close">
             <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
@@ -1766,13 +1766,13 @@
                     </div>
                 </div>
                 <div class="ui-col-100 ui-col-xs-50 ui-p-10-v">
-                    <button class="ui-btn ui-block ui-round-r ui-theme-panel2 ui-fill-dark-100 ui-ease-btn" type="submit">
+                    <button class="ui-btn ui-block ui-round-r ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
                         <svg class="ui-icon"><use href="#search"/></svg>
                     </button>
                 </div>
             </div>
 
-            <div class="ui-row ui-xs-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity ui-hover-t-more-2nd ui-icons-m-5-v ui-theme-panel ui-ease-2nd-btn">
+            <div class="ui-row ui-xs-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity ui-hover-t-more-2nd ui-icons-m-5-v ui-theme-base ui-ease-2nd-btn">
                 <div class="ui-col-4 ui-p-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#news"/></svg>

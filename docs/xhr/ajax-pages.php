@@ -30,7 +30,7 @@
     include ('../progress-bar.php');
     include ('../steps.php');
     include ('../stripes.php');
-    include ('../svg-map.php');
+    include ('../map.php');
     include ('../tables.php');
     include ('../tabs.php');
     include ('../themes.php');

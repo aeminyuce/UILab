@@ -7,7 +7,7 @@
 <!-- header: start -->
 <header class="ui-container ui-no-gutter ui-bg-white ui-invert-bg" data-ui-classes="ui-shadow-lg">
 
-    <div class="ui-border-b ui-theme-farmer2">
+    <div class="ui-border-b ui-theme-sub">
         <div class="ui-fixed ui-p-10-v ui-sm-no-p-v">
             <div class="ui-row">
                 <div class="ui-col-static ui-no-fluid">
@@ -49,12 +49,12 @@
                                         Contact
                                     </a>
 
-                                    <span class="ui-sp-15 ui-visible-md"></span>
+                                    <span class="ui-sp-15 ui-visible-sm"></span>
 
                                     <a title="Login" class="ui-btn ui-btn-square ui-fill-dark-100" href="#">
                                         <svg class="ui-icon"><use href="#sign-in"/></svg>
                                     </a>
-                                    <a title="Sign Up" class="ui-btn ui-btn-square ui-theme-farmer ui-fill-dark-100" href="#">
+                                    <a title="Sign Up" class="ui-btn ui-btn-square ui-theme-base ui-fill-dark-100" href="#">
                                         <svg class="ui-icon"><use href="#user-plus"/></svg>
                                     </a>
                                 </div>
@@ -79,7 +79,7 @@
     <!-- tab banner: start -->
     <div class="ui-tabs ui-form-lg ui-ease-tabs" data-ui-classes="ui-text ui-border-lg ui-stroke">
 
-        <div class="ui-fixed ui-p-10-t ui-theme-farmer2">
+        <div class="ui-fixed ui-p-10-t ui-theme-sub">
             <div class="ui-row ui-no-row-gap-v ui-icons-no-opacity ui-icons-m-5-r">
                 <div class="ui-col-12 ui-color-black-50 ui-xs-align-l ui-align-c ui-ease-1st-btn">
                     <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-m-1-b ui-border-b ui-text ui-border-lg ui-stroke ui-active">
@@ -99,7 +99,7 @@
             <span class="ui-sp-10 ui-visible-sm"></span>
         </div>
 
-        <div class="landing-page-banner-content ui-tab-content ui-p-30-v ui-set-relative ui-theme-farmer ui-fill-dark-100 ui-open ui-open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
+        <div class="landing-page-banner-content ui-tab-content ui-p-30-v ui-set-relative ui-theme-base ui-fill-dark-100 ui-open ui-open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
             <div class="ui-fixed ui-p-30-v ui-set-relative">
                 <div class="ui-row">
                     <div class="ui-col-static">
@@ -124,7 +124,7 @@
                                     <span class="ui-sp-30 ui-hidden-md"></span>
                                     <h3 class="ui-h3 ui-font-bold">Long term investment</h3>
                                     <p class="ui-highlight ui-font-18">Our consider terms that have long term investment program nowZ.</p>
-                                    <a href="#" class="ui-btn ui-block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                                    <a href="#" class="ui-btn ui-block ui-theme-sub ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
                                         <svg class="ui-icon ui-m-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -137,7 +137,7 @@
             </div>
             <span class="ui-sp-30 ui-m-10-v"></span>
         </div>
-        <div class="landing-page-banner-content ui-tab-content ui-p-30-v ui-set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
+        <div class="landing-page-banner-content ui-tab-content ui-p-30-v ui-set-relative ui-theme-base ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
             <div class="ui-fixed ui-p-30-v ui-set-relative">
                 <div class="ui-row">
                     <div class="ui-col-static">
@@ -162,7 +162,7 @@
                                     <span class="ui-sp-30"></span>
                                     <h3 class="ui-h3 ui-font-bold">Connect with Our Farmers</h3>
                                     <p class="ui-highlight ui-font-18">Our consider terms that have long term investment program now.</p>
-                                    <a href="#" class="ui-btn ui-block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                                    <a href="#" class="ui-btn ui-block ui-theme-sub ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
                                         <svg class="ui-icon ui-m-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -175,7 +175,7 @@
             </div>
             <span class="ui-sp-30 ui-m-10-v"></span>
         </div>
-        <div class="landing-page-content ui-tab-content ui-p-30-v ui-set-relative ui-theme-farmer ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
+        <div class="landing-page-content ui-tab-content ui-p-30-v ui-set-relative ui-theme-base ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
             <div class="ui-fixed ui-p-30-v ui-set-relative">
                 <div class="ui-row">
                     <div class="ui-col-static">
@@ -200,7 +200,7 @@
                                     <span class="ui-sp-30"></span>
                                     <h3 class="ui-h3 ui-font-bold">Social Impact Investment</h3>
                                     <p class="ui-highlight ui-font-18">Our consider terms that have long term investment program now.</p>
-                                    <a href="#" class="ui-btn ui-block ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                                    <a href="#" class="ui-btn ui-block ui-theme-sub ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
                                         <svg class="ui-icon ui-m-5-l"><use href="#long-arrow-right"/></svg>
                                     </a>
@@ -218,7 +218,7 @@
     <!-- tab banner: end -->
 
     <!-- home links: start -->
-    <div class="landing-page-links ui-fixed ui-align-c ui-form-lg ui-theme-farmer2 ui-set-relative">
+    <div class="landing-page-links ui-fixed ui-align-c ui-form-lg ui-theme-sub ui-set-relative">
         <div class="ui-carousel" data-ui-col="4" data-ui-col-md="2" data-ui-col-sm="2" data-ui-col-xs="1" data-ui-slide="4000">
             <div class="ui-carousel-slider ui-icons-xxl ui-hover-shadow-2nd ui-hover-scale-2nd ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
@@ -326,7 +326,7 @@
     <!-- home links: end -->
 
     <!-- news: start -->
-    <div class="ui-p-30-v ui-theme-farmer ui-fill-light-100">
+    <div class="ui-p-30-v ui-theme-base ui-fill-light-100">
         <div class="ui-fixed ui-m-30-b">
             <div class="ui-row">
                 <div class="ui-col-12">
@@ -457,7 +457,7 @@
                     </div>
                 </div>
                 <div class="ui-align-c ui-p-30-t ui-p-10-b">
-                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-theme-sub ui-fill-dark-100 ui-ease-btn">
                         <b>View all company news</b> <svg class="ui-icon ui-m-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -562,7 +562,7 @@
                     </div>
                 </div>
                 <div class="ui-align-c ui-p-30-t ui-p-10-b">
-                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-theme-sub ui-fill-dark-100 ui-ease-btn">
                         <b>View all social news</b> <svg class="ui-icon ui-m-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -667,7 +667,7 @@
                     </div>
                 </div>
                 <div class="ui-align-c ui-p-30-t ui-p-10-b">
-                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-theme-sub ui-fill-dark-100 ui-ease-btn">
                         <b>View all customer news</b> <svg class="ui-icon ui-m-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
@@ -678,7 +678,7 @@
     <!-- news: end -->
 
     <!-- gallery: start -->
-    <div class="ui-fixed ui-theme-farmer2">
+    <div class="ui-fixed ui-theme-sub">
         <div class="ui-row">
             <div class="ui-col-12">
                 <h2 class="ui-h2 ui-font-bold ui-m-10-b">Our Projects</h2>
@@ -706,7 +706,7 @@
                     <li>
                         <a class="ui-photo ui-gallery-has-info" href="img/agriculture/md02.jpg">
                             <img src="img/agriculture/md02.jpg" alt="">
-                            <span class="ui-font-18 ui-theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
+                            <span class="ui-font-18 ui-theme-base ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                         </a>
                     </li>
                     <li>
@@ -718,7 +718,7 @@
                     <li>
                         <a class="ui-photo ui-gallery-has-info" href="img/agriculture/md04.jpg">
                             <img src="img/agriculture/md04.jpg" alt="">
-                            <span class="ui-font-18 ui-theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            <span class="ui-font-18 ui-theme-base ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
                     <li>
@@ -730,7 +730,7 @@
                     <li>
                         <a class="ui-photo ui-gallery-has-info" href="img/agriculture/md06.jpg">
                             <img class="" src="img/agriculture/md06.jpg" alt="">
-                            <span class="ui-font-18 ui-theme-farmer ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            <span class="ui-font-18 ui-theme-base ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
                     <li>
@@ -747,7 +747,7 @@
     <!-- gallery: end -->
 
     <!-- statistics: start -->
-    <div class="ui-p-15-t ui-p-30-b ui-theme-farmer ui-fill-light-100">
+    <div class="ui-p-15-t ui-p-30-b ui-theme-base ui-fill-light-100">
         <div class="ui-fixed ui-p-30-v">
             <div class="ui-row">
                 <div class="ui-col-12">
@@ -788,7 +788,7 @@
                             <span class="ui-sp-15"></span>
                             Pellentesque mattis sed diam a rutrum. Sed fermentum accumsan egestas.
                         </p>
-                        <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                        <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-theme-sub ui-fill-dark-100 ui-ease-btn">
                             <b>View all statistics</b>
                             <svg class="ui-icon ui-m-5-l"><use href="#long-arrow-right"/></svg>
                         </a>
@@ -802,7 +802,7 @@
 </main>
 
 <!-- footer: start -->
-<footer class="ui-container ui-no-gutter ui-p-30-v ui-invert-bg ui-theme-farmer2 ui-fill-dark-100">
+<footer class="ui-container ui-no-gutter ui-p-30-v ui-invert-bg ui-theme-sub ui-fill-dark-100">
     <div class="ui-fixed ui-p-30-v ui-sm-align-c">
         <div class="ui-row">
             <div class="ui-col-static">
@@ -844,7 +844,7 @@
                 <div class="ui-col-500 ui-p-10">
 
                     <div class="landing-page-social ui-p-15 ui-icons-no-opacity">
-                        <div class="ui-card ui-p-30 ui-shadow-lg ui-theme-farmer ui-fill-dark-100">
+                        <div class="ui-card ui-p-30 ui-shadow-lg ui-theme-base ui-fill-dark-100">
                             <h4 class="ui-h4 ui-m-15-b">Social</h4>
                             <div class="ui-align-c ui-form-lg ui-ease-1st-btn">
                                 <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
@@ -885,7 +885,7 @@
                                         </div>
                                     </div>
                                     <div class="ui-col-48">
-                                        <button class="ui-btn ui-btn-square ui-theme-farmer2 ui-fill-dark-100 ui-ease-btn">
+                                        <button class="ui-btn ui-btn-square ui-theme-sub ui-fill-dark-100 ui-ease-btn">
                                             <svg class="ui-icon"><use href="#send"/></svg>
                                         </button>
                                     </div>
@@ -911,5 +911,5 @@
         </button>
         <a href="#"><img src="img/agriculture/logo.png" alt="" srcset="img/agriculture/logo@2x.png 2x"></a>
     </div>
-    <div class="ui-sidebar-content ui-align-l ui-theme-farmer2 ui-scroll-v"></div>
+    <div class="ui-sidebar-content ui-align-l ui-theme-sub ui-scroll-v"></div>
 </div>

@@ -1,14 +1,14 @@
 /* landing page */ @import (reference) '../ui.less'; @import (reference) '../themes.less';
 
-@theme-farmer:                          hsl(40, 93%, 54%);
-@theme-farmer2:                         hsl(140, 87%, 39%);
+@base:                                 hsl(40, 93%, 54%);
+@sub:                                  hsl(140, 87%, 39%);
 
-@landing-page-banner-bg:                fade(darken(@theme-farmer2, 15%), 40%);
+@landing-page-banner-bg:                fade(darken(@sub, 15%), 40%);
 @landing-page-banner-border-bg:         fade(@white, 45%);
-@landing-page-banner-slogan-bg:         fade(@theme-farmer, 80%);
+@landing-page-banner-slogan-bg:         fade(@base, 80%);
 
-._theme(farmer, @theme-farmer);
-._theme(farmer2, @theme-farmer2);
+._theme(base, @base);
+._theme(sub, @sub);
 
 .ui-col-220 { width: 220px; }
 

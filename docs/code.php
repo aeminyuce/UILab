@@ -374,10 +374,10 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="svg map" value="../css/svg-map">
+                                            <input type="checkbox" name="map" value="../css/map">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        SVG Map
+                                        Map
                                     </label>
                                 </div>
 
@@ -855,10 +855,10 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="svg map js" value="../js/svg-map">
+                                            <input type="checkbox" name="map js" value="../js/map">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        SVG Map
+                                        Map
                                     </label>
                                 </div>
 

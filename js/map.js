@@ -1,12 +1,12 @@
 /*
- UI SVG Map JS
+ UI Map JS
  Requires UI JS
 */
 
-ui.svgMap = {
+ui.map = {
 
     // targets
-    target: 'ui-svg-map',
+    target: 'ui-map',
 
     // helper classnames
     nameActive: 'ui-active',
@@ -29,11 +29,11 @@ ui.svgMap = {
     'use strict';
     /*globals window, ui */
 
-    ui.svgMap.Start = function () {
+    ui.map.Start = function () {
 
         var map, arr, data, items, opacity;
 
-        map = ui.find('.' + ui.svgMap.target);
+        map = ui.find('.' + ui.map.target);
         if (map.length === 0) { return; }
 
         arr = [];
@@ -43,13 +43,13 @@ ui.svgMap = {
             function (i) {
 
                 arr[i] = [];
-                items = ui.find(ui.svgMap.tagTarget + '[' + ui.svgMap.dataSize + ']', this);
+                items = ui.find(ui.map.tagTarget + '[' + ui.map.dataSize + ']', this);
 
                 ui.each(items,
 
                     function () {
 
-                        data = this.getAttribute(ui.svgMap.dataSize);
+                        data = this.getAttribute(ui.map.dataSize);
                         if (data > 0) { arr[i].push(data); }
 
                     });
@@ -60,20 +60,20 @@ ui.svgMap = {
 
                     function () {
 
-                        data = this.getAttribute(ui.svgMap.dataSize);
+                        data = this.getAttribute(ui.map.dataSize);
                         if (data > 0) {
 
-                            ui.addClass(this, ui.svgMap.nameActive);
+                            ui.addClass(this, ui.map.nameActive);
 
                             opacity = Math.sqrt(data) / Math.sqrt(arr[i][0]);
                             opacity = opacity.toFixed(2);
 
-                            if (opacity > ui.svgMap.opacityMax) {
-                                opacity = ui.svgMap.opacityMax;
+                            if (opacity > ui.map.opacityMax) {
+                                opacity = ui.map.opacityMax;
                             }
 
-                            if (opacity < ui.svgMap.opacityMin) {
-                                opacity = ui.svgMap.opacityMin;
+                            if (opacity < ui.map.opacityMin) {
+                                opacity = ui.map.opacityMin;
                             }
 
                             this.setAttribute('style', 'opacity: ' + opacity + ';');
@@ -87,12 +87,12 @@ ui.svgMap = {
             });
 
         // Event Listeners
-        ui.on(ui.svgMap.tagTarget,
+        ui.on(ui.map.tagTarget,
             'click',
 
             function () {
 
-                var href = this.getAttribute(ui.svgMap.dataHref);
+                var href = this.getAttribute(ui.map.dataHref);
 
                 if (href !== null) {
                     window.location = href;
@@ -103,6 +103,6 @@ ui.svgMap = {
     };
 
     // Loaders
-    ui.onload(ui.svgMap.Start);
+    ui.onload(ui.map.Start);
 
 }());

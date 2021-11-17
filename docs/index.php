@@ -67,7 +67,7 @@
     <script src="../js/line-charts.js?v=<?php echo filemtime('../js/line-charts.js'); ?>"></script>
     <script src="../js/donut-chart.js?v=<?php echo filemtime('../js/donut-chart.js'); ?>"></script>
     <script src="../js/pie-chart.js?v=<?php echo filemtime('../js/pie-chart.js'); ?>"></script>
-    <script src="../js/svg-map.js?v=<?php echo filemtime('../js/svg-map.js'); ?>"></script>
+    <script src="../js/map.js?v=<?php echo filemtime('../js/map.js'); ?>"></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -178,13 +178,13 @@
                         <li><a class="ui-btn ui-btn-ghost" href="?p=list-group">List Group</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=listings">Listings</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=loading-mask">Loading Mask</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=map">Map</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=modal">Modal</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=photoslide">Photoslide</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=pricing-tables">Pricing Tables</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=progress-bar">Progress Bar</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=steps">Steps</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=stripes">Stripes</a></li>
-                        <li><a class="ui-btn ui-btn-ghost" href="?p=svg-map">SVG Map</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=tables">Tables</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=tabs">Tabs</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=themes">Themes</a></li>
