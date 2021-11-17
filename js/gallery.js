@@ -27,6 +27,9 @@ ui.photoGallery = {
     namePreviewInfo: 'ui-gallery-preview-info',
     namePreviewZoom: 'ui-gallery-preview-zoom',
 
+    namePreviewPrev: 'ui-gallery-preview-prev',
+    namePreviewNext: 'ui-gallery-preview-next',
+
     nameImgVer: 'ui-photo-v',
 
     // helper classnames
@@ -35,9 +38,6 @@ ui.photoGallery = {
 
     namePause: 'ui-pause',
     namePauseEase: 'ui-pause-ease',
-
-    namePrev: 'ui-prev',
-    nameNext: 'ui-next',
 
     // styling classnames
     stylesCloseIcon: 'ui-btn ui-btn-lg ui-btn-square ui-btn-ghost ui-circle ui-ease-btn',
@@ -233,10 +233,10 @@ ui.photoGallery = {
                             '<svg class="' + ui.photoGallery.nameIcon + '"><use href="#' + ui.photoGallery.closeIcon + '"/></svg>' +
                         '</button>' +
 
-                        '<button type="button" class="' + ui.photoGallery.namePrev + ' ' + ui.photoGallery.stylesPreviewBtn + '">' +
+                        '<button type="button" class="' + ui.photoGallery.namePreviewPrev + ' ' + ui.photoGallery.stylesPreviewBtn + '">' +
                             '<svg class="' + ui.photoGallery.nameIcon + '"><use href="#' + ui.photoGallery.prevIcon + '"/></svg>' +
                         '</button>' +
-                        '<button type="button" class="' + ui.photoGallery.nameNext + ' ' + ui.photoGallery.stylesPreviewBtn + '">' +
+                        '<button type="button" class="' + ui.photoGallery.namePreviewNext + ' ' + ui.photoGallery.stylesPreviewBtn + '">' +
                             '<svg class="' + ui.photoGallery.nameIcon + '"><use href="#' + ui.photoGallery.nextIcon + '"/></svg>' +
                         '</button>' +
 
@@ -294,17 +294,17 @@ ui.photoGallery = {
 
                 // show/hide nav buttons
                 if (index < 1) {
-                    ui.hide('.' + ui.photoGallery.namePrev);
+                    ui.hide('.' + ui.photoGallery.namePreviewPrev);
 
                 } else {
-                    ui.show('.' + ui.photoGallery.namePrev);
+                    ui.show('.' + ui.photoGallery.namePreviewPrev);
                 }
 
                 if (index >= (loadedImages.length - 1)) {
-                    ui.hide('.' + ui.photoGallery.nameNext);
+                    ui.hide('.' + ui.photoGallery.namePreviewNext);
 
                 } else {
-                    ui.show('.' + ui.photoGallery.nameNext);
+                    ui.show('.' + ui.photoGallery.namePreviewNext);
                 }
 
                 // show/hide info window
@@ -431,12 +431,12 @@ ui.photoGallery = {
             }
 
             // Event Listeners
-            ui.on('.' + ui.photoGallery.targetPreview + ' .' + ui.photoGallery.namePrev + ',.' + ui.photoGallery.targetPreview + ' .' + ui.photoGallery.nameNext,
+            ui.on('.' + ui.photoGallery.targetPreview + ' .' + ui.photoGallery.namePreviewPrev + ',.' + ui.photoGallery.targetPreview + ' .' + ui.photoGallery.namePreviewNext,
                 'click',
 
                 function () {
 
-                    if (ui.hasClass(this, ui.photoGallery.nameNext)) {
+                    if (ui.hasClass(this, ui.photoGallery.namePreviewNext)) {
                         navigateGallery(this, 'next');
 
                     } else {

@@ -11,10 +11,10 @@ ui.photoSlider = {
     // main classnames
     nameNav: 'ui-photo-slider-nav',
 
-    // helper classNames
     namePrev: 'ui-prev',
     nameNext: 'ui-next',
 
+    // helper classNames
     nameShow: 'ui-show',
     nameSelected: 'ui-selected',
     nameLoaded: 'ui-loaded',

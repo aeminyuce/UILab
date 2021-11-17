@@ -8661,8 +8661,8 @@ button.ui-dialog-custom:focus {
   bottom: 0;
   left: 0;
 }
-.ui-gallery-preview .ui-prev,
-.ui-gallery-preview .ui-next {
+.ui-gallery-preview-prev,
+.ui-gallery-preview-next {
   color: hsl(0, 0%, 100%);
   text-align: center;
   width: 68px;
@@ -8677,20 +8677,20 @@ button.ui-dialog-custom:focus {
   transform: translateY(-50%);
   cursor: pointer;
 }
-.ui-gallery-preview .ui-prev .ui-icon,
-.ui-gallery-preview .ui-next .ui-icon {
+.ui-gallery-preview-prev .ui-icon,
+.ui-gallery-preview-next .ui-icon {
   width: 40px;
   height: 40px;
   stroke-width: 14px;
 }
-.ui-desktop .ui-gallery-preview .ui-prev:hover,
-.ui-desktop .ui-gallery-preview .ui-next:hover {
+.ui-desktop .ui-gallery-preview-prev:hover,
+.ui-desktop .ui-gallery-preview-next:hover {
   background-color: hsla(0, 0%, 100%, 0.08);
 }
-.ui-gallery-preview .ui-prev {
+.ui-gallery-preview-prev {
   left: 10px;
 }
-.ui-gallery-preview .ui-next {
+.ui-gallery-preview-next {
   right: 10px;
 }
 .ui-gallery-preview-loader {

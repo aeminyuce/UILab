@@ -106,15 +106,15 @@
 
         &-bg { background-color: @gallery-preview-bg; position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
 
-        .ui-prev,.ui-next {
+        &-prev,&-next {
             color: @white; text-align: center; width: @gallery-preview-btn-size; height: @gallery-preview-btn-size; background-color: @no-color; padding: @gallery-preview-btn-padding; display: none; border: 0; position: absolute; z-index: 2; top: 50%; transform: translateY(-50%); cursor: pointer;
 
             .ui-icon { width: @gallery-preview-icon-size; height: @gallery-preview-icon-size; stroke-width: @gallery-preview-icon-stroke-size; }
             .ui-desktop &:hover { background-color: @gallery-preview-btn-hover-bg; }
 
         }
-        .ui-prev { left: @gallery-preview-btn-position; }
-        .ui-next { right: @gallery-preview-btn-position; }
+        &-prev { left: @gallery-preview-btn-position; }
+        &-next { right: @gallery-preview-btn-position; }
 
         &-loader {
             color: @white; ._icon(@gallery-preview-loader-icon-size); margin: -(@gallery-preview-loader-icon-size / 2) 0 0 -(@gallery-preview-loader-icon-size / 2); position: absolute; top: 50%; left: 50%; z-index: 3; transform: translate(-50%,-50%); animation: ui-gallery-preview-loader 1.15s linear infinite;
