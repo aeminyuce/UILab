@@ -23,7 +23,7 @@
 
                     <label class="ui-form-label ui-color-black-50">Password</label>
                     <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
-                        <button type="button" title="Toggle Password" class="ui-show-pass">
+                        <button type="button" title="Toggle Password" class="ui-pass-toggle">
                             <svg class="ui-icon"><use href="#eye-fill"/></svg>
                         </button>
                         <input class="ui-required" type="password" placeholder="Enter password" minlength="8">

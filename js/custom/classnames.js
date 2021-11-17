@@ -185,7 +185,7 @@ ui.classnames = {
                     } else if (['h1','h2','h3','h4','h5','h6'].indexOf(title) >= 0) {
                         title = 'headings';
 
-                    } else if (['form','input','select','dual','textarea','indeterminate','check','radio','autocomplete','currency','file','number','required','label'].indexOf(title) >= 0) {
+                    } else if (['form','input','select','dual','textarea','indeterminate','check','radio','autocomplete','currency','file','number','required','label','pass'].indexOf(title) >= 0) {
                         title = 'forms';
 
                     } else if (['open','open-ease','active','selected','show'].indexOf(title) >= 0) {

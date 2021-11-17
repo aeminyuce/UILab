@@ -22,7 +22,7 @@ ui.forms = {
     nameHasClear: 'ui-has-clear',
     nameClear: 'ui-form-clear',
 
-    nameShowPass: 'ui-show-pass',
+    nameShowPass: 'ui-pass-toggle',
     nameNumber: 'ui-number',
 
     nameFormIcon: 'ui-form-icon',
