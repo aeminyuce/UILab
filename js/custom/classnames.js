@@ -25,6 +25,7 @@ ui.classnames = {
     stylesCatCols: 'ui-list-col-3',
 
     // values
+    listLength: 5,
     filePath: 'xhr/ajax-pages.php',
     prefix: 'ui',
 
@@ -301,7 +302,7 @@ ui.classnames = {
                             items = items.sort(collator.compare); // sort with collator
                         }
 
-                        if (items.length > 5) {
+                        if (items.length > ui.classnames.listLength) {
                             html += ' ' + ui.classnames.stylesCatCols;
                         }
 
