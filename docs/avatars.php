@@ -92,9 +92,9 @@
                     <span class="ui-sp-30"></span>
 
                     <div class="ui-avatar-holder ui-hover-scale-more-2nd ui-ease-2nd-layout">
-                        <a href="#"><img class="ui-avatar-lg ui-border-lg ui-circle" src="img/profile-image.jpg" alt=""></a>
-                        <a href="#"><img class="ui-avatar-lg ui-border-lg ui-circle" src="img/profile-image2.jpg" alt=""></a>
-                        <a href="#"><img class="ui-avatar-lg ui-border-lg ui-circle" src="img/profile-image3.jpg" alt=""></a>
+                        <a href="#"><img class="ui-avatar-lg ui-border-dual ui-circle" src="img/profile-image.jpg" alt=""></a>
+                        <a href="#"><img class="ui-avatar-lg ui-border-dual ui-circle" src="img/profile-image2.jpg" alt=""></a>
+                        <a href="#"><img class="ui-avatar-lg ui-border-dual ui-circle" src="img/profile-image3.jpg" alt=""></a>
                     </div>
 
                     <span class="ui-sp-30"></span>
@@ -111,48 +111,48 @@
                         <span class="ui-sp-30"></span>
 
                         <div class="ui-avatar-holder ui-hover-scale-more-2nd ui-ease-2nd-layout">
-                            <a href="#"><img class="ui-avatar-lg ui-border-lg ui-circle" src="img/profile-image.jpg" alt=""></a>
-                            <a href="#"><img class="ui-avatar-lg ui-border-lg ui-circle" src="img/profile-image2.jpg" alt=""></a>
-                            <a href="#"><img class="ui-avatar-lg ui-border-lg ui-circle" src="img/profile-image3.jpg" alt=""></a>
+                            <a href="#"><img class="ui-avatar-lg ui-border-dual ui-circle" src="img/profile-image.jpg" alt=""></a>
+                            <a href="#"><img class="ui-avatar-lg ui-border-dual ui-circle" src="img/profile-image2.jpg" alt=""></a>
+                            <a href="#"><img class="ui-avatar-lg ui-border-dual ui-circle" src="img/profile-image3.jpg" alt=""></a>
                         </div>
                     </div>
 
                     <span class="ui-sp-30"></span>
 
                     <div class="ui-avatar-holder ui-circle ui-border-dual ui-hover-r-more-2nd ui-ease-2nd-layout">
-                        <a href="#"><img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image.jpg" alt=""></a>
-                        <a href="#"><img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image2.jpg" alt=""></a>
-                        <a href="#"><img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image3.jpg" alt=""></a>
-                        <a class="ui-btn ui-m-4-r ui-circle ui-ease-btn" href="#">+177</a>
+                        <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image.jpg" alt=""></a>
+                        <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image2.jpg" alt=""></a>
+                        <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image3.jpg" alt=""></a>
+                        <a class="ui-btn ui-btn-square ui-btn-ghost ui-m-5-r ui-circle ui-ease-btn" href="#">+3</a>
                     </div>
 
                     <span class="ui-sp-5 ui-visible-sm"></span>
 
                     <div class="ui-avatar-holder ui-circle ui-hover-scale-more-2nd ui-ease-2nd-layout ui-theme-sub ui-fill-dark-100">
-                        <a href="#"><img class="ui-avatar ui-border-lg ui-stroke ui-circle" src="img/profile-image.jpg" alt=""></a>
-                        <a href="#"><img class="ui-avatar ui-border-lg ui-stroke ui-circle" src="img/profile-image2.jpg" alt=""></a>
-                        <a href="#"><img class="ui-avatar ui-border-lg ui-stroke ui-circle" src="img/profile-image3.jpg" alt=""></a>
-                        <a href="#"><img class="ui-avatar ui-border-lg ui-stroke ui-circle" src="img/profile-image.jpg" alt=""></a>
-                        <a class="ui-btn ui-m-4-r ui-circle ui-fill-dark-300 ui-ease-btn" href="#">+177</a>
+                        <a href="#"><img class="ui-avatar ui-border-dual ui-stroke ui-circle" src="img/profile-image.jpg" alt=""></a>
+                        <a href="#"><img class="ui-avatar ui-border-dual ui-stroke ui-circle" src="img/profile-image2.jpg" alt=""></a>
+                        <a href="#"><img class="ui-avatar ui-border-dual ui-stroke ui-circle" src="img/profile-image3.jpg" alt=""></a>
+                        <a href="#"><img class="ui-avatar ui-border-dual ui-stroke ui-circle" src="img/profile-image.jpg" alt=""></a>
+                        <a class="ui-btn ui-btn-square ui-btn-ghost ui-m-5-r ui-circle ui-fill-dark-300 ui-ease-btn" href="#">+8</a>
                     </div>
 
                     <span class="ui-sp-30"></span>
 
                     <div class="ui-avatar-holder ui-p-5 ui-circle ui-border-dual ui-hover-scale-more-2nd ui-ease-2nd-layout">
-                        <a href="#"><img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image.jpg" alt=""></a>
-                        <a href="#"><img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image2.jpg" alt=""></a>
-                        <a href="#"><img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image3.jpg" alt=""></a>
-                        <a class="ui-btn ui-btn-lg ui-m-2-r ui-circle ui-ease-btn" href="#">+177</a>
+                        <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image.jpg" alt=""></a>
+                        <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image2.jpg" alt=""></a>
+                        <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image3.jpg" alt=""></a>
+                        <a class="ui-btn ui-btn-square ui-btn-ghost ui-btn-lg ui-m-2-r ui-circle ui-ease-btn" href="#">+12</a>
                     </div>
 
                     <span class="ui-sp-5 ui-visible-sm"></span>
 
                     <div class="ui-avatar-holder ui-p-5 ui-circle ui-hover-scale-more-2nd ui-ease-2nd-layout ui-theme-sub ui-fill-dark-100">
-                        <a href="#"><img class="ui-avatar ui-border-lg ui-stroke ui-circle" src="img/profile-image.jpg" alt=""></a>
-                        <a href="#"><img class="ui-avatar ui-border-lg ui-stroke ui-circle" src="img/profile-image2.jpg" alt=""></a>
-                        <a href="#"><img class="ui-avatar ui-border-lg ui-stroke ui-circle" src="img/profile-image3.jpg" alt=""></a>
-                        <a href="#"><img class="ui-avatar ui-border-lg ui-stroke ui-circle" src="img/profile-image.jpg" alt=""></a>
-                        <a class="ui-btn ui-btn-lg ui-m-2-r ui-circle ui-fill-dark-300 ui-ease-btn" href="#">+177</a>
+                        <a href="#"><img class="ui-avatar ui-border-dual ui-stroke ui-circle" src="img/profile-image.jpg" alt=""></a>
+                        <a href="#"><img class="ui-avatar ui-border-dual ui-stroke ui-circle" src="img/profile-image2.jpg" alt=""></a>
+                        <a href="#"><img class="ui-avatar ui-border-dual ui-stroke ui-circle" src="img/profile-image3.jpg" alt=""></a>
+                        <a href="#"><img class="ui-avatar ui-border-dual ui-stroke ui-circle" src="img/profile-image.jpg" alt=""></a>
+                        <a class="ui-btn ui-btn-square ui-btn-ghost ui-btn-lg ui-m-2-r ui-circle ui-fill-dark-300 ui-ease-btn" href="#">+26</a>
                     </div>
 
                 </div>

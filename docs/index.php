@@ -60,7 +60,7 @@
     <script src="../js/countdown.js?v=<?php echo filemtime('../js/countdown.js'); ?>"></script>
     <script src="../js/grid-list.js?v=<?php echo filemtime('../js/grid-list.js'); ?>"></script>
     <script src="../js/image-uploader.js?v=<?php echo filemtime('../js/image-uploader.js'); ?>"></script>
-    <script src="../js/photo-gallery.js?v=<?php echo filemtime('../js/photo-gallery.js'); ?>"></script>
+    <script src="../js/gallery.js?v=<?php echo filemtime('../js/gallery.js'); ?>"></script>
     <script src="../js/photo-slider.js?v=<?php echo filemtime('../js/photo-slider.js'); ?>"></script>
     <script src="../js/weather.js?v=<?php echo filemtime('../js/weather.js'); ?>"></script>
 
@@ -171,6 +171,7 @@
                         <li><a class="ui-btn ui-btn-ghost" href="?p=dropdown">Dropdown</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=error-pages">Error Pages</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=forms">Forms</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=gallery">Gallery</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=grid">Grid</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=grid-list">Grid List</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=image-uploader">Image Uploader</a></li>
@@ -178,7 +179,6 @@
                         <li><a class="ui-btn ui-btn-ghost" href="?p=listings">Listings</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=loading-mask">Loading Mask</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=modal">Modal</a></li>
-                        <li><a class="ui-btn ui-btn-ghost" href="?p=photo-gallery">Photo Gallery</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=photo-slider">Photo Slider</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=pricing-tables">Pricing Tables</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=progress-bar">Progress Bar</a></li>

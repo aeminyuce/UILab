@@ -49,6 +49,9 @@
 .ui-set-cy { top: 50%; transform+_: translateY(-50%); }
 .ui-set-c { .ui-set-cx(); .ui-set-cy(); }
 
+[class*="ui-img-"] { vertical-align: middle; display: inline-block; border: 0; }
+.ui-img-fluid { width: 100% !important; height: auto !important; }
+
 .ui-cursor- {
     &default { cursor: default !important; }
     &pointer { cursor: pointer !important; }
@@ -58,11 +61,7 @@
     clear: both !important; display: block;
     &:extend(.ui-full-w);
 }
-.ui-img-fluid {
-    height: auto !important;
 
-    &:extend(.ui-full-w);
-}
 .ui-highlight {
     display: block;
     &:not(:last-child) { margin-bottom: @highlight-space !important; }
@@ -274,7 +273,7 @@ each(@increases, {
     .ui-visible-sm { .ui-hidden(); }
 }
 @media (@md-start) and (@md-finish) {
-    .ui-img-md-fluid { .ui-full-w(); height: auto !important; }
+    .ui-img-md-fluid { .ui-img-fluid(); }
     .ui-no-float-md { .ui-no-float(); }
     .ui-clearfix-md { .ui-clearfix(); }
 
@@ -298,7 +297,7 @@ each(@increases, {
 }
 @media (@sm-start) and (@sm-finish) {
     .ui-img- {
-        &md-fluid,&sm-fluid { .ui-full-w(); height: auto !important; }
+        &md-fluid,&sm-fluid { .ui-img-fluid(); }
     }
     .ui-no-float {
         &-md,&-sm { .ui-no-float(); }
@@ -324,7 +323,7 @@ each(@increases, {
     .ui-hidden-xs { .ui-hidden(); }
 
     .ui-img- {
-        &md-fluid,&sm-fluid,&xs-fluid { .ui-full-w(); height: auto !important; }
+        &md-fluid,&sm-fluid,&xs-fluid { .ui-img-fluid(); }
     }
     .ui-no-float {
         &-md,&-sm,&-xs { .ui-no-float(); }

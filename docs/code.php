@@ -453,10 +453,10 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="photo gallery" value="../css/photo-gallery">
+                                            <input type="checkbox" name="gallery" value="../css/gallery">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Photo Gallery
+                                        Gallery
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
@@ -797,10 +797,10 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="photo gallery js" value="../js/photo-gallery">
+                                            <input type="checkbox" name="gallery js" value="../js/gallery">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Photo Gallery
+                                        Gallery
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">

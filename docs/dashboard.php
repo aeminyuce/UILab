@@ -297,23 +297,16 @@
                                     <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
                                         <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                         <li>
-                                            Lorem ipsum dolor sit amet.
-                                            <span class="ui-avatar-holder ui-m-5-t ui-hover-scale-more-2nd ui-ease-2nd-layout">
-                                                <a href="#">
-                                                    <img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image.jpg" alt="">
-                                                </a>
-                                                <a href="#">
-                                                    <img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image2.jpg" alt="">
-                                                </a>
-                                                <a href="#">
-                                                    <img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image3.jpg" alt="">
-                                                </a>
-                                                <a class="ui-btn ui-no-m ui-circle ui-ease-btn" href="#">+12</a>
+                                            <span class="ui-avatar-holder ui-circle ui-hover-r-more-2nd ui-ease-2nd-layout">
+                                                <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image.jpg" alt=""></a>
+                                                <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image2.jpg" alt=""></a>
+                                                <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image3.jpg" alt=""></a>
+                                                <a class="ui-btn ui-btn-square ui-btn-ghost ui-m-5-r ui-circle ui-ease-btn" href="#">+3</a>
                                             </span>
                                         </li>
                                         <li>
                                             Lorem ipsum dolor sit amet.
-                                            <span class="ui-photo-gallery ui-m-5-t ui-ease-photo-gallery">
+                                            <span class="ui-gallery ui-m-5-t ui-ease-gallery">
                                                 <a class="ui-photo ui-m-1-h ui-round" href="img/image_01.jpg"><img src="img/image_01.jpg" height="38" alt=""></a>
                                                 <a class="ui-photo ui-m-1-h ui-round" href="img/image_02.jpg"><img src="img/image_02.jpg" height="38" alt=""></a>
                                                 <a class="ui-photo ui-m-1-h ui-round" href="img/image_03.jpg"><img src="img/image_03.jpg" height="38" alt=""></a>
@@ -886,17 +879,16 @@
                                             <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
                                                 <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                                 <li>
-                                                    Lorem ipsum dolor sit amet.
-                                                    <span class="ui-avatar-holder ui-m-5-t ui-hover-scale-more-2nd ui-ease-2nd-layout">
-                                                        <a href="#"><img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image.jpg" alt=""></a>
-                                                        <a href="#"><img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image2.jpg" alt=""></a>
-                                                        <a href="#"><img class="ui-avatar ui-border-lg ui-circle" src="img/profile-image3.jpg" alt=""></a>
-                                                        <a class="ui-btn ui-btn-lg ui-no-m ui-circle ui-ease-btn" href="#">+12</a>
+                                                    <span class="ui-avatar-holder ui-circle ui-hover-r-more-2nd ui-ease-2nd-layout">
+                                                        <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image.jpg" alt=""></a>
+                                                        <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image2.jpg" alt=""></a>
+                                                        <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image3.jpg" alt=""></a>
+                                                        <a class="ui-btn ui-btn-square ui-btn-ghost ui-m-5-r ui-circle ui-ease-btn" href="#">+3</a>
                                                     </span>
                                                 </li>
                                                 <li>
                                                     Lorem ipsum dolor sit amet.
-                                                    <span class="ui-photo-gallery ui-m-5-t ui-ease-photo-gallery">
+                                                    <span class="ui-gallery ui-m-5-t ui-ease-gallery">
                                                         <a class="ui-photo ui-m-1-h ui-round" href="img/image_01.jpg"><img src="img/image_01.jpg" height="38" alt=""></a>
                                                         <a class="ui-photo ui-m-1-h ui-round" href="img/image_02.jpg"><img src="img/image_02.jpg" height="38" alt=""></a>
                                                         <a class="ui-photo ui-m-1-h ui-round" href="img/image_03.jpg"><img src="img/image_03.jpg" height="38" alt=""></a>

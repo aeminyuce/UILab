@@ -86,7 +86,9 @@
     }
 
     [class*="ui-has-avatar"] {
-        [class*="ui-avatar"] { position: absolute; top: @list-group-list-padding; left: @list-group-list-padding; }
+        .ui-avatar {
+            &,&-lg,&-sm,&-xs { position: absolute; top: @list-group-list-padding; left: @list-group-list-padding; }
+        }
     }
 
     .ui-has-avatar {

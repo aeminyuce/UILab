@@ -6,23 +6,26 @@
 ui.photoGallery = {
 
     // targets
-    targetGallery: 'ui-photo-gallery',
-    targetPreview: 'ui-photo-preview',
+    targetGallery: 'ui-gallery',
+    targetPreview: 'ui-gallery-preview',
 
     targetImages: 'ui-photo',
 
     // main classnames
-    nameGalleryPassive: 'ui-photo-gallery-passive',
-    nameGalleryCall: 'ui-photo-gallery-call',
-    nameGalleryInfo: 'ui-has-info',
-    nameGalleryTouchInfo: 'ui-touch-info',
+    nameGalleryPassive: 'ui-gallery-passive',
+    nameGalleryCall: 'ui-gallery-call',
 
-    namePreviewOpened: 'ui-photo-preview-opened',
-    namePreviewClose: 'ui-close-photo-preview',
-    namePreviewBg: 'ui-photo-preview-bg',
+    nameGalleryInfo: 'ui-gallery-has-info',
+    nameGalleryTouch: 'ui-gallery-touch',
+
+    namePreviewOpened: 'ui-gallery-preview-opened',
+    namePreviewClose: 'ui-gallery-preview-close',
+
+    namePreviewBg: 'ui-gallery-preview-bg',
+
     namePreviewLoader: 'ui-preview-loader',
-    namePreviewInfo: 'ui-preview-info',
-    namePreviewZoom: 'ui-preview-zoom',
+    namePreviewInfo: 'ui-gallery-preview-info',
+    namePreviewZoom: 'ui-gallery-preview-zoom',
 
     nameImgVer: 'ui-photo-v',
 
@@ -147,7 +150,6 @@ ui.photoGallery = {
 
         function galleryFnc(e, that, call) {
 
-            e.preventDefault();
             var i, parent, images, preview, html, index, loader, newImg, img, imgPosX, imgPosY, info, imgZoom, lastTouchEnd, waitPinchZoom;
 
             parent = ui.closest(that, '.' + ui.photoGallery.targetGallery)[0];
@@ -168,18 +170,18 @@ ui.photoGallery = {
 
                 if (ui.hasClass(that, ui.photoGallery.nameGalleryInfo)) {
 
-                    if (!ui.hasClass(that, ui.photoGallery.nameGalleryTouchInfo)) {
+                    if (!ui.hasClass(that, ui.photoGallery.nameGalleryTouch)) {
 
-                        ui.removeClass(images, ui.photoGallery.nameGalleryTouchInfo);
-                        ui.addClass(that, ui.photoGallery.nameGalleryTouchInfo);
+                        ui.removeClass(images, ui.photoGallery.nameGalleryTouch);
+                        ui.addClass(that, ui.photoGallery.nameGalleryTouch);
 
                         return;
 
                     }
 
-                    ui.removeClass(images, ui.photoGallery.nameGalleryTouchInfo);
+                    ui.removeClass(images, ui.photoGallery.nameGalleryTouch);
 
-                } else { ui.removeClass(images, ui.photoGallery.nameGalleryTouchInfo); }
+                } else { ui.removeClass(images, ui.photoGallery.nameGalleryTouch); }
 
             }
 
@@ -722,7 +724,7 @@ ui.photoGallery = {
 
                             if (ui.hasClass(this, ui.photoGallery.nameGalleryInfo)) {
 
-                                if (ui.userAgents.mobile && ui.hasClass(this, ui.photoGallery.nameGalleryTouchInfo)) {
+                                if (ui.userAgents.mobile && ui.hasClass(this, ui.photoGallery.nameGalleryTouch)) {
                                     galleryFnc(e, that);
 
                                 } else { return; }
@@ -748,9 +750,9 @@ ui.photoGallery = {
 
             function (e) {
 
-                if (ui.userAgents.desktop) {
+                e.preventDefault();
 
-                    e.preventDefault();
+                if (ui.userAgents.desktop) {
                     galleryFnc(e, this);
                 }
 
@@ -763,6 +765,7 @@ ui.photoGallery = {
 
             function (e) {
 
+                e.preventDefault();
                 var target, count;
 
                 target = this.getAttribute(ui.photoGallery.dataTarget);

@@ -11,12 +11,12 @@
 
                     <div class="ui-carousel-gallery">
                         <div class="ui-detail ui-shadow-lg">
-                            <img src="img/house_01.jpg" class="ui-photo-gallery-call ui-cursor-pointer ui-img-fluid ui-round ui-ease-layout" data-ui-target="#ui-real-estate-carousel" data-ui-count="0" alt="">
+                            <img src="img/house_01.jpg" class="ui-gallery-call ui-cursor-pointer ui-img-fluid ui-round ui-ease-layout" data-ui-target="#ui-real-estate-carousel" data-ui-count="0" alt="">
                             <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
                             <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
                         </div>
                         <div id="ui-real-estate-carousel" class="ui-carousel ui-thumbs ui-half-sized" data-ui-col="6" data-ui-col-md="5" data-ui-col-sm="4" data-ui-col-xs="3">
-                            <div class="ui-carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow ui-photo-gallery-passive">
+                            <div class="ui-carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow ui-gallery-passive">
                                 <div class="ui-slide-content">
                                     <img class="ui-photo ui-round ui-ease-default ui-selected" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
                                 </div>
