@@ -20,12 +20,15 @@ ui.classnames = {
     stylesWarning: 'ui-color-yellow',
 
     stylesCatTite: 'ui-h4 ui-font-capitalize ui-m-10-b',
+
     stylesCatCard: 'ui-card ui-font-16 ui-round ui-p-10 ui-shadow-lg',
-    stylesCatList: 'ui-list-unstyled ui-list-sp-5 ui-m-10 ui-sm-no-m',
-    stylesCatCols: 'ui-list-col-3',
+    stylesCatList: 'ui-list-unstyled ui-list-sp-5',
+
+    stylesCatRow: 'ui-row ui-xs-fluid',
+    stylesCatCol: 'ui-col-lg-3 ui-col-4 ui-col-sm-6',
 
     // values
-    listLength: 5,
+    listColLength: 5,
 
     filePath: 'xhr/ajax-pages.php',
     prefix: 'ui',
@@ -42,7 +45,7 @@ ui.classnames = {
 (function () {
 
     'use strict';
-    /*globals document, ui, Intl */
+    /*globals document, ui */
 
     ui.classnames.Start = function () {
 
@@ -78,11 +81,7 @@ ui.classnames = {
 
             function () {
 
-                var i, reStart, reDuplicate, str, strStart, strLength, html, title, items, collator;
-
-                if (!ui.userAgents.ie) {
-                    collator = new Intl.Collator('en', {numeric: true, sensitivity: 'base'});
-                }
+                var i, reStart, reDuplicate, str, strStart, strLength, html, title, items;
 
                 // check all class names
                 ui.each(ui.ajax.classNames,
@@ -278,53 +277,50 @@ ui.classnames = {
                 // create categories
                 created = 0;
 
-                if (ui.userAgents.ie) {
-                    arr.filtered = arr.filtered.sort(); // default sort for IE
-
-                } else {
-                    arr.filtered = arr.filtered.sort(collator.compare); // sort with collator
-                }
+                arr.filtered = arr.filtered.sort(function (a, b) {
+                    return a.localeCompare(b);
+                });
 
                 ui.each(arr.filtered,
 
                     function () {
 
                         items = arr.groups[this].split(',');
-
                         items = items.sort(function (a, b) {
-                            return a.length - b.length; // sort by length
+
+                            return a.length - b.length || a.localeCompare(b, undefined, {
+                                numeric: true,
+                                sensitivity: 'base'
+                              });
+
                         });
 
-                        function createRows() {
+                        html = '<h4 class="' + ui.classnames.stylesCatTite + '">' + this + '</h4>' +
+                                '<div class="' + ui.classnames.stylesCatCard + '">' +
+                                    '<div class="' + ui.classnames.stylesCatRow + '">';
 
-                            for (i = 0; i < items.length; i++) {
+                        for (i = 0; i < items.length; i++) {
 
-                                items[i] = items[i].replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+                            if (parseInt(i / ui.classnames.listColLength) === i / ui.classnames.listColLength) { // create cols
 
-                                html += '<li>' + items[i] + '</li>';
-                                created += 1;
+                                if (i !== 0) {
+                                    html += '</ul></div>'; // close tags
+                                }
+
+                                html += '<div class="' + ui.classnames.stylesCatCol + '">' +
+                                            '<ul class="' + ui.classnames.stylesCatList + '">';
 
                             }
 
+                            items[i] = items[i].replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+
+                            html += '<li>' + items[i] + '</li>'; // create rows
+                            created += 1;
+
                         }
 
-                        html = '<h4 class="' + ui.classnames.stylesCatTite + '">' + this + '</h4>' +
-                                '<div class="' + ui.classnames.stylesCatCard + '">';
+                        html += '</ul></div></div></div>'; // close tags
 
-                        if (items.length > ui.classnames.listLength) {
-
-                            html += '<ul class="' + ui.classnames.stylesCatList + ' ' + ui.classnames.stylesCatCols + '">';
-                            createRows();
-                            html += '</ul>';
-
-                        } else {
-
-                            html += '<ul class="' + ui.classnames.stylesCatList + '">';
-                            createRows();
-                            html += '</ul>';
-                        }
-
-                        html += '</div>';
                         list.insertAdjacentHTML('beforeend', html);
 
                     });
