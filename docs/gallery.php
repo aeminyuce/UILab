@@ -302,7 +302,7 @@
                                 <svg class="ui-carousel-gallery-loader ui-icon"><use href="#loader-line"/></svg>
                             </div>
                         </div>
-                        <div id="productGallery" class="ui-carousel ui-half-sized ui-carousel-gallery-thumbs ui-m-10 ui-md-no-m-h" data-ui-col="8" data-ui-col-md="6" data-ui-col-sm="5" data-ui-col-xs="3">
+                        <div id="productGallery" class="ui-carousel ui-carousel-half ui-carousel-gallery-thumbs ui-m-10 ui-md-no-m-h" data-ui-col="8" data-ui-col-md="6" data-ui-col-sm="5" data-ui-col-xs="3">
                             <div class="ui-carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow ui-gallery-passive">
                                 <div class="ui-carousel-content">
                                     <img class="ui-photo ui-ease-default ui-selected" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">

@@ -145,7 +145,7 @@
 
             &,a,& > label { font-size: @font-16; }
 
-            &:not(.ui-holder) {
+            &:not(.ui-dropdown-holder) {
                 padding: @dropdown-list-padding;
 
                 &:not(:last-child) { ._border-var(@dir: border-bottom; @var: dropdown-list-border); }
@@ -204,7 +204,7 @@
     .ui-desktop & {
         ul.ui-dropdown-menu {
             & > li {
-                &:not(.ui-holder):hover { ._bg-var(dropdown-list-hover-bg); background-clip: padding-box; }
+                &:not(.ui-dropdown-holder):hover { ._bg-var(dropdown-list-hover-bg); background-clip: padding-box; }
             }
         }
     }

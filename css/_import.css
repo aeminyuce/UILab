@@ -4593,22 +4593,22 @@ dt + dd:not(:last-child) {
 .ui-dropdown ul.ui-dropdown-menu > li > label {
   font-size: 16px;
 }
-.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-holder) {
+.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-dropdown-holder) {
   padding: 10px;
 }
-.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-holder):not(:last-child) {
+.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-dropdown-holder):not(:last-child) {
   border-bottom: solid 1px hsla(0, 0%, 0%, 0.045);
   border-bottom: solid 1px var(--ui-dropdown-list-border);
 }
-.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-holder),
-.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-holder) a,
-.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-holder) > label {
+.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-dropdown-holder),
+.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-dropdown-holder) a,
+.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-dropdown-holder) > label {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   display: block;
 }
-.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-holder) > a {
+.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-dropdown-holder) > a {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
   word-wrap: break-word;
@@ -4616,18 +4616,18 @@ dt + dd:not(:last-child) {
   padding: 10px;
   margin: -10px;
 }
-.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-holder) > label {
+.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-dropdown-holder) > label {
   padding: 10px;
   margin: -10px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
 }
-.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-holder) > label input {
+.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-dropdown-holder) > label input {
   position: absolute;
   left: -20000px;
 }
-.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-holder).ui-selected > label {
+.ui-dropdown ul.ui-dropdown-menu > li:not(.ui-dropdown-holder).ui-selected > label {
   background-color: hsla(0, 0%, 0%, 0.075);
   background-color: var(--ui-dropdown-list-selected-bg);
 }
@@ -4691,7 +4691,7 @@ dt + dd:not(:last-child) {
 .ui-dropdown .ui-list-col-6 > li:nth-child(6n) {
   border-right: none;
 }
-.ui-desktop .ui-dropdown ul.ui-dropdown-menu > li:not(.ui-holder):hover {
+.ui-desktop .ui-dropdown ul.ui-dropdown-menu > li:not(.ui-dropdown-holder):hover {
   background-color: hsla(0, 0%, 0%, 0.05);
   background-color: var(--ui-dropdown-list-hover-bg);
   background-clip: padding-box;
@@ -6747,7 +6747,7 @@ header.ui-sticky-static {
 .ui-timeline.ui-text > li:after {
   border-color: currentColor;
 }
-.ui-timeline:not(.ui-hide-lines):after {
+.ui-timeline:not(.ui-timeline-no-lines):after {
   content: "";
   width: 2px;
   background-color: hsla(0, 0%, 0%, 0.15);
@@ -6757,25 +6757,25 @@ header.ui-sticky-static {
   top: 0;
   bottom: 0;
 }
-.ui-timeline:not(.ui-hide-lines) > li:before {
+.ui-timeline:not(.ui-timeline-no-lines) > li:before {
   width: 30px;
   height: 2px;
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--ui-timeline-line-bg);
 }
-.ui-timeline:not(.ui-hide-lines) > li:after {
+.ui-timeline:not(.ui-timeline-no-lines) > li:after {
   background-color: hsl(0, 0%, 98%);
   background-color: var(--ui-body-bg);
 }
-.ui-dropdown .ui-timeline:not(.ui-hide-lines) > li:after {
+.ui-dropdown .ui-timeline:not(.ui-timeline-no-lines) > li:after {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-highlighted);
 }
-.ui-card .ui-timeline:not(.ui-hide-lines) > li:after {
+.ui-card .ui-timeline:not(.ui-timeline-no-lines) > li:after {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-card-bg);
 }
-.ui-timeline:not(.ui-hide-lines).ui-text > li:before {
+.ui-timeline:not(.ui-timeline-no-lines).ui-text > li:before {
   background-color: currentColor;
 }
 .ui-timeline:not(:last-child) {
@@ -6840,7 +6840,7 @@ header.ui-sticky-static {
 .ui-timeline > li > .ui-avatar-xs + .ui-card {
   padding-top: 29px;
 }
-.ui-timeline:not(.ui-hide-h-lines) > li:before {
+.ui-timeline:not(.ui-timeline-no-h-lines) > li:before {
   content: "";
   display: block;
   position: absolute;

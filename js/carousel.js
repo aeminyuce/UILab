@@ -14,7 +14,7 @@ ui.carousel = {
 
     // main classnames
     nameTouchMove: 'ui-carousel-touchmove',
-    nameHalfSize: 'ui-half-sized',
+    nameHalfSize: 'ui-carousel-half',
 
     nameAnimate: 'ui-carousel-animate',
     namePauseAnimates: 'ui-pause-animates',

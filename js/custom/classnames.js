@@ -201,7 +201,7 @@ ui.classnames = {
                     } else if (['theme','fill','stroke','text'].indexOf(title) >= 0) {
                         title = 'themes';
 
-                    } else if (['code','dl','rtl','pre'].indexOf(title) >= 0) {
+                    } else if (['code','dl','rtl','pre','hr'].indexOf(title) >= 0) {
                         title = 'typography';
 
                     } else if (['line','donut','pie'].indexOf(title) >= 0) {
@@ -254,6 +254,9 @@ ui.classnames = {
 
                     } if (title === 'sticky') {
                         title = 'sticky header';
+
+                    } if (title === 'imgupload') {
+                        title = 'image upload';
                     }
 
                     return title;

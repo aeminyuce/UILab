@@ -227,7 +227,7 @@
                     <span class="ui-sp-30"></span>
 
                     <h5 class="ui-h5 ui-font-bold">Half Sized Image Carousel</h5>
-                    <div class="ui-carousel ui-half-sized" data-ui-col="4" data-ui-col-md="3" data-ui-col-sm="2" data-ui-col-xs="2">
+                    <div class="ui-carousel ui-carousel-half" data-ui-col="4" data-ui-col-md="3" data-ui-col-sm="2" data-ui-col-xs="2">
                         <div class="ui-carousel-slider ui-ease-layout ui-ease-slow ui-ease-in-out">
                             <div class="ui-carousel-content">
                                 <img class="ui-photo" src="img/image_09.jpg" alt="">

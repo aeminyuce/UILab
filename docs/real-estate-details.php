@@ -15,7 +15,7 @@
                             <svg class="ui-carousel-gallery-zoom ui-icon"><use href="#expand-wide"/></svg>
                             <svg class="ui-carousel-gallery-loader ui-icon"><use href="#loader-line"/></svg>
                         </div>
-                        <div id="realEstateGallery" class="ui-carousel ui-carousel-gallery-thumbs ui-half-sized" data-ui-col="6" data-ui-col-md="5" data-ui-col-sm="4" data-ui-col-xs="3">
+                        <div id="realEstateGallery" class="ui-carousel ui-carousel-gallery-thumbs ui-carousel-half" data-ui-col="6" data-ui-col-md="5" data-ui-col-sm="4" data-ui-col-xs="3">
                             <div class="ui-carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow ui-gallery-passive">
                                 <div class="ui-carousel-content">
                                     <img class="ui-photo ui-round ui-ease-default ui-selected" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">

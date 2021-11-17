@@ -294,7 +294,7 @@
                                     </button>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v ui-open ui-open-ease" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
+                                    <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-timeline-no-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -306,7 +306,7 @@
                                     </ul>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
+                                    <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-timeline-no-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -340,7 +340,7 @@
                                     </button>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v ui-open ui-open-ease" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
+                                    <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-timeline-no-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -352,7 +352,7 @@
                                     </ul>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
+                                    <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-timeline-no-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -364,7 +364,7 @@
                                     </ul>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v" style="max-height: 420px;">
-                                    <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
+                                    <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-timeline-no-h-lines">
                                         <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
@@ -844,7 +844,7 @@
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">Announcements</button>
                                         </div>
                                         <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
-                                            <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
+                                            <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-timeline-no-h-lines">
                                                 <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                                 <li>
                                                     <span class="ui-avatar-holder ui-circle ui-hover-r-more-2nd ui-ease-2nd-layout">
@@ -887,7 +887,7 @@
                                             </ul>
                                         </div>
                                         <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v" style="top: 62px; bottom: 15px;">
-                                            <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
+                                            <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-timeline-no-h-lines">
                                                 <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                                 <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
                                                 <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>

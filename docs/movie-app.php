@@ -160,7 +160,7 @@
                     <h2 class="ui-h2 ui-font-bold ui-p-15-h ui-md-no-p">Now Showing</h2>
                 </div>
 
-                <div class="ui-carousel ui-half-sized ui-m-15-h ui-md-no-m" data-ui-col-xl="8" data-ui-col-lg="6" data-ui-col="3" data-ui-col-md="4" data-ui-col-sm="4" data-ui-col-xs="2">
+                <div class="ui-carousel ui-carousel-half ui-m-15-h ui-md-no-m" data-ui-col-xl="8" data-ui-col-lg="6" data-ui-col="3" data-ui-col-md="4" data-ui-col-sm="4" data-ui-col-xs="2">
                     <div class="ui-carousel-slider ui-block-2nd ui-hover-scale-2nd ui-ease-layout ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                         <div class="ui-carousel-content ui-p-15">
                             <a class="ui-link ui-ease-default" href="#">
@@ -312,7 +312,7 @@
                     <h2 class="ui-h2 ui-font-bold ui-p-15-h ui-md-no-p">Categories</h2>
                 </div>
 
-                <div class="ui-carousel ui-half-sized ui-m-15-h ui-md-no-m" data-ui-col-xl="6" data-ui-col-lg="6" data-ui-col="3" data-ui-col-md="4" data-ui-col-sm="4" data-ui-col-xs="2">
+                <div class="ui-carousel ui-carousel-half ui-m-15-h ui-md-no-m" data-ui-col-xl="6" data-ui-col-lg="6" data-ui-col="3" data-ui-col-md="4" data-ui-col-sm="4" data-ui-col-xs="2">
                     <div class="ui-carousel-slider ui-block-2nd ui-hover-scale-2nd ui-ease-layout ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                         <div class="ui-carousel-content ui-p-15">
                             <a class="ui-link ui-ease-default" href="#">

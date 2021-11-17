@@ -25,7 +25,7 @@
             &:after { border-color: currentColor; }
         }
     }
-    &:not(.ui-hide-lines) {
+    &:not(.ui-timeline-no-lines) {
         &:after { content: ""; width: @timeline-line-size; ._bg-var(timeline-line-bg); border-radius: (@timeline-line-size / 2); position: absolute; top: 0; bottom: 0; }
 
         & > li {
@@ -69,7 +69,7 @@
         }
     }
 
-    &:not(.ui-hide-h-lines) {
+    &:not(.ui-timeline-no-h-lines) {
         & > li {
             &:before { content: ""; display: block; position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; }
         }
