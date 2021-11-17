@@ -132,7 +132,7 @@ html:not(.ui-no-effects) {
 
     &input,&select,.ui-mobile &select-multi { line-height: normal; min-height: @btn-default; }
 
-    &input input,&select select,&select-multi select,&textarea textarea { box-sizing: border-box; ._color-var(black); font-family: @font-family; font-size: @font-15; width: 100%; background-color: @no-color; border: 0; }
+    &input input,&select select,&select-multi select,&textarea textarea { outline: 0; box-sizing: border-box; ._color-var(black); font-family: @font-family; font-size: @font-15; width: 100%; background-color: @no-color; border: 0; }
     &input input,&select select,&select-multi select,&range { @no-appearance(); }
     &input input,&select select,&textarea textarea { line-height: @form-line-height; padding: @form-padding; border-radius: 0; } // border radius fix for Chrome
     &input input,&select select { height: (@btn-default - 2); overflow: hidden; }

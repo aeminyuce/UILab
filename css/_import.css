@@ -52,9 +52,6 @@
   --ui-steps-border: hsla(0, 0%, 0%, 0.12);
   --ui-timeline-line-bg: hsla(0, 0%, 0%, 0.15);
   --ui-tooltip-bg: hsl(220, 14%, 21%);
-  --ui-alerts-dialog-error-shadow: hsl(0, 74%, 47%);
-  --ui-alerts-dialog-success-shadow: hsl(142, 82%, 34%);
-  --ui-alerts-dialog-custom-shadow: hsla(0, 0%, 0%, 0.3);
   --ui-calendar-highlighted-bg: hsla(0, 0%, 0%, 0.15);
   --ui-calendar-weekend-bg: hsla(0, 0%, 0%, 0.04);
   --ui-calendar-empty-details-bg: hsla(0, 0%, 0%, 0.12);
@@ -126,9 +123,6 @@
   --ui-steps-border: hsla(0, 0%, 100%, 0.12);
   --ui-timeline-line-bg: hsla(0, 0%, 100%, 0.175);
   --ui-tooltip-bg: hsl(0, 0%, 0%);
-  --ui-alerts-dialog-error-shadow: hsl(0, 74%, 71%);
-  --ui-alerts-dialog-success-shadow: hsl(142, 82%, 58%);
-  --ui-alerts-dialog-custom-shadow: hsla(0, 0%, 100%, 0.3);
   --ui-calendar-highlighted-bg: hsla(0, 0%, 100%, 0.15);
   --ui-calendar-weekend-bg: hsla(0, 0%, 100%, 0.04);
   --ui-calendar-empty-details-bg: hsla(0, 0%, 100%, 0.18);
@@ -155,11 +149,6 @@
 [class*="ui-"]:before,
 [class*="ui-"]:after {
   box-sizing: border-box;
-}
-[class*="ui-"]:focus,
-[class*="ui-"] > input {
-  outline-style: none;
-  outline: 0;
 }
 .ui-html {
   font-family: "Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -4840,6 +4829,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-select select,
 .ui-select-multi select,
 .ui-textarea textarea {
+  outline: 0;
   box-sizing: border-box;
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
@@ -5862,7 +5852,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   stroke: none !important;
 }
 .ui-svg-s {
-  opacity: 0.32;
+  opacity: 0.42;
 }
 .ui-svg-fr {
   fill-rule: evenodd;
@@ -6625,7 +6615,7 @@ html:not(.ui-ie) .ui-steps-bar li {
   position: absolute;
   top: 13px;
   left: -50%;
-  opacity: 0.32;
+  opacity: 0.42;
 }
 .ui-steps-bar li:first-child:after {
   content: none;
@@ -7223,16 +7213,10 @@ header.ui-sticky-static {
   bottom: 0;
   left: 0;
 }
-.ui-modal-container [type="submit"]:focus {
-  box-shadow: 0 0 0 3px hsla(0, 0%, 0%, 0.15);
-}
 .ui-modal-footer {
   height: 62px;
   bottom: 0;
   z-index: 9;
-}
-.ui-modal-footer .ui-btn:focus {
-  box-shadow: 0 0 0 3px hsla(0, 0%, 0%, 0.15);
 }
 @media (min-width: 768px) {
   .ui-modal-content.ui-modal-inline {
@@ -7503,20 +7487,12 @@ button.ui-dialog-success {
   color: hsl(0, 0%, 100%) !important;
   background-color: hsl(142, 82%, 42%);
 }
-button.ui-dialog-success:focus {
-  box-shadow: 0 0 0 2px hsl(142, 82%, 34%);
-  box-shadow: 0 0 0 2px var(--ui-alerts-dialog-success-shadow);
-}
 .ui-desktop button.ui-dialog-success:hover {
   background-color: hsl(142, 82%, 48%);
 }
 button.ui-dialog-error {
   color: hsl(0, 0%, 100%) !important;
   background-color: hsl(0, 74%, 55%);
-}
-button.ui-dialog-error:focus {
-  box-shadow: 0 0 0 2px hsl(0, 74%, 47%);
-  box-shadow: 0 0 0 2px var(--ui-alerts-dialog-error-shadow);
 }
 .ui-desktop button.ui-dialog-error:hover {
   background-color: hsl(0, 74%, 61%);
@@ -7526,10 +7502,6 @@ button.ui-dialog-custom {
   color: var(--ui-black);
   background-color: hsla(0, 0%, 0%, 0.08);
   background-color: var(--ui-btn-bg);
-}
-button.ui-dialog-custom:focus {
-  box-shadow: 0 0 0 2px hsla(0, 0%, 0%, 0.3);
-  box-shadow: 0 0 0 2px var(--ui-alerts-dialog-custom-shadow);
 }
 .ui-desktop button.ui-dialog-custom:hover {
   background-color: hsla(0, 0%, 0%, 0.15);
