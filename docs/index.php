@@ -59,7 +59,7 @@
     <script src="../js/carousel.js?v=<?php echo filemtime('../js/carousel.js'); ?>"></script>
     <script src="../js/countdown.js?v=<?php echo filemtime('../js/countdown.js'); ?>"></script>
     <script src="../js/datatable.js?v=<?php echo filemtime('../js/datatable.js'); ?>"></script>
-    <script src="../js/image-uploader.js?v=<?php echo filemtime('../js/image-uploader.js'); ?>"></script>
+    <script src="../js/imgupload.js?v=<?php echo filemtime('../js/imgupload.js'); ?>"></script>
     <script src="../js/gallery.js?v=<?php echo filemtime('../js/gallery.js'); ?>"></script>
     <script src="../js/photoslide.js?v=<?php echo filemtime('../js/photoslide.js'); ?>"></script>
     <script src="../js/weather.js?v=<?php echo filemtime('../js/weather.js'); ?>"></script>
@@ -174,7 +174,7 @@
                         <li><a class="ui-btn ui-btn-ghost" href="?p=forms">Forms</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=gallery">Gallery</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=grid">Grid</a></li>
-                        <li><a class="ui-btn ui-btn-ghost" href="?p=image-uploader">Image Uploader</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=imgupload">Image Upload</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=list-group">List Group</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=listings">Listings</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=loading-mask">Loading Mask</a></li>

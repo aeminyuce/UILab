@@ -6,7 +6,7 @@
 ui.imageUploader = {
 
     // targets
-    target: 'ui-image-uploader',
+    target: 'ui-imgupload',
 
     targetImages: 'ui-photo',
     targetNames: 'ui-name',
@@ -14,7 +14,7 @@ ui.imageUploader = {
     targetTags: 'ui-tag',
 
     // main classnames
-    nameList: 'ui-uploader-list',
+    nameList: 'ui-imgupload-list',
     nameDrop: 'ui-drop-highlight',
 
     // helper classnames
@@ -311,7 +311,7 @@ ui.imageUploader = {
 
                                 });
 
-                            list.insertAdjacentHTML('beforeend', html);
+                            list.insertAdjacentHTML('afterbegin', html);
 
                         }, 0);
 

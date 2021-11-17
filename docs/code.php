@@ -446,10 +446,10 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="image uploader" value="../css/image-uploader">
+                                            <input type="checkbox" name="imgupload" value="../css/imgupload">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Image Uploader
+                                        Imag Upload
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
@@ -783,10 +783,10 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="image uploader js" value="../js/image-uploader">
+                                            <input type="checkbox" name="imgupload js" value="../js/imgupload">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Image Uploader
+                                        Image Upload
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">

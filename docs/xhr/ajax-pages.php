@@ -19,7 +19,7 @@
     include ('../forms.php');
     include ('../grid.php');
     include ('../datatable.php');
-    include ('../image-uploader.php');
+    include ('../imgupload.php');
     include ('../list-group.php');
     include ('../listings.php');
     include ('../loading-mask.php');

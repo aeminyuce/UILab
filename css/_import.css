@@ -63,11 +63,11 @@
   --ui-datatable-stripe-bg: hsla(0, 0%, 0%, 0.035);
   --ui-datatable-hover-bg: hsla(0, 0%, 0%, 0.06);
   --ui-datatable-border: hsl(0, 0%, 86.7%);
-  --ui-image-uploader-drop-bg: hsl(0, 0%, 93%);
-  --ui-image-uploader-list-bg: hsla(0, 0%, 100%, 0.45);
-  --ui-image-uploader-list-border: hsla(0, 0%, 0%, 0.15);
-  --ui-image-uploader-list-tag-color: hsla(0, 0%, 0%, 0.5);
-  --ui-image-uploader-list-tag-bg: hsla(0, 0%, 0%, 0.08);
+  --ui-imgupload-drop-bg: hsl(0, 0%, 93%);
+  --ui-imgupload-list-bg: hsla(0, 0%, 100%, 0.45);
+  --ui-imgupload-list-border: hsla(0, 0%, 0%, 0.15);
+  --ui-imgupload-list-tag-color: hsla(0, 0%, 0%, 0.5);
+  --ui-imgupload-list-tag-bg: hsla(0, 0%, 0%, 0.08);
   --ui-photoslide-dot-bg: hsla(0, 0%, 0%, 0.4);
   --ui-photoslide-dot-selected-bg: hsla(0, 0%, 0%, 0.65);
   --ui-svg-map-path-fill: hsla(0, 0%, 0%, 0.08);
@@ -137,11 +137,11 @@
   --ui-datatable-stripe-bg: hsla(0, 0%, 100%, 0.035);
   --ui-datatable-hover-bg: hsla(0, 0%, 100%, 0.06);
   --ui-datatable-border: hsl(220, 8%, 28%);
-  --ui-image-uploader-drop-bg: hsl(222, 13%, 15%);
-  --ui-image-uploader-list-bg: hsla(0, 0%, 100%, 0.035);
-  --ui-image-uploader-list-border: hsla(0, 0%, 100%, 0.15);
-  --ui-image-uploader-list-tag-color: hsl(0, 0%, 73%);
-  --ui-image-uploader-list-tag-bg: hsla(0, 0%, 100%, 0.08);
+  --ui-imgupload-drop-bg: hsl(222, 13%, 15%);
+  --ui-imgupload-list-bg: hsla(0, 0%, 100%, 0.035);
+  --ui-imgupload-list-border: hsla(0, 0%, 100%, 0.15);
+  --ui-imgupload-list-tag-color: hsl(0, 0%, 73%);
+  --ui-imgupload-list-tag-bg: hsla(0, 0%, 100%, 0.08);
   --ui-photoslide-dot-bg: hsla(0, 0%, 100%, 0.4);
   --ui-photoslide-dot-selected-bg: hsla(0, 0%, 100%, 0.65);
   --ui-svg-map-path-fill: hsla(0, 0%, 100%, 0.08);
@@ -8300,8 +8300,8 @@ button.ui-dialog-custom:focus {
   background-color: transparent;
   border: 0;
 }
-/* image uploader */
-@keyframes ui-uploader-loader {
+/* imgupload */
+@keyframes ui-imgupload-loader {
   from {
     background-position: 40px 0;
   }
@@ -8309,94 +8309,94 @@ button.ui-dialog-custom:focus {
     background-position: 0 0;
   }
 }
-.ui-ease-image-uploader {
+.ui-ease-imgupload {
   transition-property: background-color;
   transition-duration: 0.15s;
 }
-.ui-ease-image-uploader .ui-uploader-list {
+.ui-ease-imgupload .ui-imgupload-list {
   transition-property: margin;
   transition-duration: 0.15s;
 }
-.ui-ease-image-uploader .ui-uploader-list > .ui-icon {
+.ui-ease-imgupload .ui-imgupload-list > .ui-icon {
   transition-property: opacity;
   transition-duration: 0.15s;
 }
-.ui-ease-image-uploader .ui-uploader-list li {
+.ui-ease-imgupload .ui-imgupload-list li {
   transition-property: opacity;
   transition-duration: 0.3s;
 }
-.ui-image-uploader {
+.ui-imgupload {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-card-bg);
   overflow: hidden;
   position: relative;
 }
-.ui-image-uploader.ui-loading .ui-file .ui-btn,
-.ui-image-uploader.ui-uploading .ui-file .ui-btn,
-.ui-image-uploader.ui-loading [type="submit"],
-.ui-image-uploader.ui-uploading [type="submit"] {
+.ui-imgupload.ui-loading .ui-file .ui-btn,
+.ui-imgupload.ui-uploading .ui-file .ui-btn,
+.ui-imgupload.ui-loading [type="submit"],
+.ui-imgupload.ui-uploading [type="submit"] {
   background-image: linear-gradient(45deg, transparent 25%, hsla(0, 0%, 100%, 0.25) 25%, hsla(0, 0%, 100%, 0.25) 50%, transparent 50%, transparent 75%, hsla(0, 0%, 100%, 0.25) 75%);
   background-size: 20px 20px;
-  animation: ui-uploader-loader 1s linear infinite;
+  animation: ui-imgupload-loader 1s linear infinite;
 }
-.ui-image-uploader.ui-drop-highlight {
+.ui-imgupload.ui-drop-highlight {
   background-color: hsl(0, 0%, 93%);
-  background-color: var(--ui-image-uploader-drop-bg);
+  background-color: var(--ui-imgupload-drop-bg);
 }
-.ui-image-uploader.ui-drop-highlight .ui-uploader-list {
+.ui-imgupload.ui-drop-highlight .ui-imgupload-list {
   background-color: hsla(0, 0%, 100%, 0.45);
-  background-color: var(--ui-image-uploader-list-bg);
+  background-color: var(--ui-imgupload-list-bg);
   margin: 30px;
   border: dashed 2px hsla(0, 0%, 0%, 0.15);
-  border: dashed 2px var(--ui-image-uploader-list-border);
+  border: dashed 2px var(--ui-imgupload-list-border);
   border-radius: 6px;
 }
-.ui-image-uploader.ui-drop-highlight .ui-uploader-list > .ui-icon {
+.ui-imgupload.ui-drop-highlight .ui-imgupload-list > .ui-icon {
   display: block;
 }
-.ui-image-uploader.ui-drop-highlight .ui-uploader-list li {
+.ui-imgupload.ui-drop-highlight .ui-imgupload-list li {
   opacity: 0.15;
 }
-.ui-image-uploader .ui-uploader-list {
+.ui-imgupload-list {
   min-height: 220px;
   position: relative;
 }
-.ui-image-uploader .ui-uploader-list > .ui-icon {
+.ui-imgupload-list > .ui-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 1;
   transform: translate(-50%, -50%);
 }
-.ui-image-uploader .ui-uploader-list.ui-open > .ui-icon {
+.ui-imgupload-list.ui-open > .ui-icon {
   display: none;
 }
-.ui-image-uploader .ui-uploader-list ul {
+.ui-imgupload-list ul {
   list-style: none;
   padding: 15px;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
 }
-.ui-image-uploader .ui-uploader-list ul li {
+.ui-imgupload-list ul li {
   box-sizing: border-box;
   padding: 15px;
 }
-.ui-image-uploader .ui-uploader-list ul li.ui-open-ease {
+.ui-imgupload-list ul li.ui-open-ease {
   opacity: 0;
 }
-.ui-image-uploader .ui-uploader-list ul li .ui-photo {
+.ui-imgupload-list ul li .ui-photo {
   display: block;
   clear: both;
   position: relative;
 }
-.ui-image-uploader .ui-uploader-list ul li .ui-photo:not(:first-child) {
+.ui-imgupload-list ul li .ui-photo:not(:first-child) {
   margin-top: 15px;
 }
-.ui-image-uploader .ui-uploader-list ul li .ui-photo:not(:last-child) {
+.ui-imgupload-list ul li .ui-photo:not(:last-child) {
   margin-bottom: 15px;
 }
-.ui-image-uploader .ui-uploader-list ul li .ui-photo img {
+.ui-imgupload-list ul li .ui-photo img {
   vertical-align: middle;
   width: auto;
   max-width: 100%;
@@ -8410,7 +8410,7 @@ button.ui-dialog-custom:focus {
   box-shadow: 0 1px 6px hsla(0, 0%, 0%, 0.25);
   transform: translate(-50%, -50%);
 }
-.ui-image-uploader .ui-uploader-list ul li .ui-name {
+.ui-imgupload-list ul li .ui-name {
   white-space: nowrap;
   text-overflow: ellipsis;
   line-height: 22px;
@@ -8418,63 +8418,63 @@ button.ui-dialog-custom:focus {
   overflow: hidden;
   display: block;
 }
-.ui-image-uploader .ui-uploader-list ul li .ui-info,
-.ui-image-uploader .ui-uploader-list ul li .ui-tag {
+.ui-imgupload-list ul li .ui-info,
+.ui-imgupload-list ul li .ui-tag {
   vertical-align: middle;
   display: inline-block;
 }
-.ui-image-uploader .ui-uploader-list ul li .ui-info {
+.ui-imgupload-list ul li .ui-info {
   color: hsl(0, 0%, 49%);
   padding: 1px 6px 1px 0;
 }
-.ui-image-uploader .ui-uploader-list ul li .ui-tag {
+.ui-imgupload-list ul li .ui-tag {
   color: hsla(0, 0%, 0%, 0.5);
-  color: var(--ui-image-uploader-list-tag-color);
+  color: var(--ui-imgupload-list-tag-color);
   font-size: 13px;
   white-space: nowrap;
   padding: 1px 6px;
   background-color: hsla(0, 0%, 0%, 0.08);
-  background-color: var(--ui-image-uploader-list-tag-bg);
+  background-color: var(--ui-imgupload-list-tag-bg);
   border-radius: 20px;
 }
-.ui-image-uploader .ui-uploader-list:not(.ui-open) {
+.ui-imgupload-list:not(.ui-open) {
   background-color: hsla(0, 0%, 100%, 0.45);
-  background-color: var(--ui-image-uploader-list-bg);
+  background-color: var(--ui-imgupload-list-bg);
   margin: 30px;
   border: dashed 2px hsla(0, 0%, 0%, 0.15);
-  border: dashed 2px var(--ui-image-uploader-list-border);
+  border: dashed 2px var(--ui-imgupload-list-border);
   border-radius: 6px;
 }
-.ui-image-uploader .ui-uploader-list:not(.ui-open) li {
+.ui-imgupload-list:not(.ui-open) li {
   display: none;
 }
 @media (min-width: 960px) {
-  .ui-uploader-list li {
+  .ui-imgupload-list li {
     width: 20%;
   }
 }
 @media (max-width: 959px) {
-  .ui-uploader-list li {
+  .ui-imgupload-list li {
     width: 25%;
   }
 }
 @media (max-width: 767px) {
-  .ui-uploader-list li {
+  .ui-imgupload-list li {
     width: 33.333332%;
   }
 }
 @media (min-width: 481px) {
-  .ui-uploader-list li .ui-photo {
+  .ui-imgupload-list li .ui-photo {
     min-height: 164px;
   }
 }
 @media (max-width: 480px) {
-  .ui-uploader-list li .ui-photo {
+  .ui-imgupload-list li .ui-photo {
     min-height: 98px;
   }
 }
 @media (max-width: 380px) {
-  .ui-uploader-list li {
+  .ui-imgupload-list li {
     width: 50%;
   }
 }
