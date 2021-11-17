@@ -249,32 +249,32 @@
                 <div class="ui-p-30-b">
                     <div class="ui-carousel ui-gallery ui-ease-gallery" data-ui-col="4" data-ui-col-md="3" data-ui-col-sm="2" data-ui-col-xs="2">
                         <div class="ui-carousel-slider ui-ease-layout ui-ease-slow ui-ease-in-out">
-                            <div class="ui-slide-content">
+                            <div class="ui-carousel-content">
                                 <a class="ui-photo ui-shadow ui-ease-default" href="img/image_09.jpg">
                                     <img class="ui-photo" src="img/image_09.jpg" alt="">
                                 </a>
                             </div>
-                            <div class="ui-slide-content">
+                            <div class="ui-carousel-content">
                                 <a class="ui-photo ui-shadow ui-ease-default" href="img/image_07.jpg">
                                     <img class="ui-photo" src="img/image_07.jpg" alt="">
                                 </a>
                             </div>
-                            <div class="ui-slide-content">
+                            <div class="ui-carousel-content">
                                 <a class="ui-photo ui-shadow ui-ease-default" href="img/image_08.jpg">
                                     <img class="ui-photo" src="img/image_05.jpg" alt="">
                                 </a>
                             </div>
-                            <div class="ui-slide-content">
+                            <div class="ui-carousel-content">
                                 <a class="ui-photo ui-shadow ui-ease-default" href="img/image_04.jpg">
                                     <img class="ui-photo" src="img/image_04.jpg" alt="">
                                 </a>
                             </div>
-                            <div class="ui-slide-content">
+                            <div class="ui-carousel-content">
                                 <a class="ui-photo ui-shadow ui-ease-default" href="img/image_01.jpg">
                                     <img class="ui-photo" src="img/image_01.jpg" alt="">
                                 </a>
                             </div>
-                            <div class="ui-slide-content">
+                            <div class="ui-carousel-content">
                                 <a class="ui-photo ui-shadow ui-ease-default" href="img/image_06.jpg">
                                     <img class="ui-photo" src="img/image_06.jpg" alt="">
                                 </a>
@@ -284,7 +284,7 @@
                             <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square ui-circle">
                                 <svg class="ui-icon ui-m-3-r"><use href="#angle-left"/></svg>
                             </button>
-                            <span class="ui-dots ui-color-black-25"></span>
+                            <span class="ui-carousel-dots ui-color-black-25"></span>
                             <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square ui-circle">
                                 <svg class="ui-icon ui-m-3-l"><use href="#angle-right"/></svg>
                             </button>
@@ -296,39 +296,39 @@
                 <div class="ui-p-30-b">
                     <div class="ui-carousel-gallery ui-card ui-p-15 ui-round ui-shadow-lg">
                         <div class="ui-row">
-                            <div class="ui-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 ui-sm-fluid">
-                                <img src="img/house_01.jpg" class="ui-gallery-call ui-cursor-pointer ui-img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel" data-ui-count="0" alt="">
-                                <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
-                                <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
+                            <div class="ui-carousel-gallery-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 ui-sm-fluid">
+                                <img src="img/house_01.jpg" class="ui-gallery-call ui-ease-layout" data-ui-target="#productGallery" data-ui-count="0" alt="">
+                                <svg class="ui-carousel-gallery-zoom ui-icon"><use href="#expand-wide"/></svg>
+                                <svg class="ui-carousel-gallery-loader ui-icon"><use href="#loader-line"/></svg>
                             </div>
                         </div>
-                        <div id="ui-detail-carousel" class="ui-carousel ui-half-sized ui-thumbs ui-m-10 ui-md-no-m-h" data-ui-col="8" data-ui-col-md="6" data-ui-col-sm="5" data-ui-col-xs="3">
+                        <div id="productGallery" class="ui-carousel ui-half-sized ui-carousel-gallery-thumbs ui-m-10 ui-md-no-m-h" data-ui-col="8" data-ui-col-md="6" data-ui-col-sm="5" data-ui-col-xs="3">
                             <div class="ui-carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow ui-gallery-passive">
-                                <div class="ui-slide-content">
+                                <div class="ui-carousel-content">
                                     <img class="ui-photo ui-ease-default ui-selected" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
                                 </div>
-                                <div class="ui-slide-content">
+                                <div class="ui-carousel-content">
                                     <img class="ui-photo ui-ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
                                 </div>
-                                <div class="ui-slide-content">
+                                <div class="ui-carousel-content">
                                     <img class="ui-photo ui-ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
                                 </div>
-                                <div class="ui-slide-content">
+                                <div class="ui-carousel-content">
                                     <img class="ui-photo ui-ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
                                 </div>
-                                <div class="ui-slide-content">
+                                <div class="ui-carousel-content">
                                     <img class="ui-photo ui-ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
                                 </div>
-                                <div class="ui-slide-content">
+                                <div class="ui-carousel-content">
                                     <img class="ui-photo ui-ease-default" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
                                 </div>
-                                <div class="ui-slide-content">
+                                <div class="ui-carousel-content">
                                     <img class="ui-photo ui-ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
                                 </div>
-                                <div class="ui-slide-content">
+                                <div class="ui-carousel-content">
                                     <img class="ui-photo ui-ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
                                 </div>
-                                <div class="ui-slide-content">
+                                <div class="ui-carousel-content">
                                     <img class="ui-photo ui-ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
                                 </div>
                             </div>
@@ -336,7 +336,7 @@
                                 <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square ui-circle">
                                     <svg class="ui-icon ui-m-3-r"><use href="#angle-left"/></svg>
                                 </button>
-                                <span class="ui-dots ui-color-black-25"></span>
+                                <span class="ui-carousel-dots ui-color-black-25"></span>
                                 <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square ui-circle">
                                     <svg class="ui-icon ui-m-3-l"><use href="#angle-right"/></svg>
                                 </button>
@@ -349,13 +349,13 @@
                 <div class="ui-p-30-b">
                     <div class="ui-carousel-gallery ui-card ui-p-15 ui-round ui-shadow-lg">
                         <div class="ui-row">
-                            <div class="ui-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 ui-sm-fluid">
-                                <img src="img/image_01.jpg" class="ui-gallery-call ui-cursor-pointer ui-img-fluid ui-ease-layout" data-ui-target="#ui-detail-carousel2" data-ui-count="0" alt="">
-                                <svg class="ui-zoom-icon ui-icon"><use href="#expand-wide"/></svg>
-                                <svg class="ui-loader-icon ui-icon"><use href="#loader-line"/></svg>
+                            <div class="ui-carousel-gallery-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 ui-sm-fluid">
+                                <img src="img/image_01.jpg" class="ui-gallery-call ui-ease-layout" data-ui-target="#productGallery2" data-ui-count="0" alt="">
+                                <svg class="ui-carousel-gallery-zoom ui-icon"><use href="#expand-wide"/></svg>
+                                <svg class="ui-carousel-gallery-loader ui-icon"><use href="#loader-line"/></svg>
                             </div>
                         </div>
-                        <div id="ui-detail-carousel2" class="ui-thumbs">
+                        <div id="productGallery2" class="ui-carousel-gallery-thumbs">
                             <div class="ui-row ui-row-gap-xs ui-no-fluid ui-ease-2nd-layout">
                                 <div class="ui-col-5x">
                                     <img class="ui-photo ui-ease-default ui-selected" src="img/image_01.jpg" data-ui-href="img/image_01.jpg" alt="">

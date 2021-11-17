@@ -64,8 +64,8 @@
                 <span class="ui-sp-30"></span>
 
                 <b class="ui-m-5-b ui-block">Submit form example:</b>
-                <pre class="ui-pre ui-round ui-m-5-b">return ui.alerts.dialog({<br>    msg: 'Submit this form?',<br>    success: 'Yes',<br>    error: 'No',<br>    callback: function (value) {<br>        if (value === 'success') {<br>            document.getElementById('submitForm').submit();<br>        }<br>    }<br>});</pre>
-                <form id="submitForm" action="#succesful" onsubmit="return ui.alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('submitForm').submit(); } }});">
+                <pre class="ui-pre ui-round ui-m-5-b">return ui.alerts.dialog({<br>    msg: 'Submit this form?',<br>    success: 'Yes',<br>    error: 'No',<br>    callback: function (value) {<br>        if (value === 'success') {<br>            document.getElementById('exampleForm').submit();<br>        }<br>    }<br>});</pre>
+                <form id="exampleForm" action="#succesful" onsubmit="return ui.alerts.dialog({msg: 'Submit this form?', success: 'Yes', error: 'No', callback: function (value) { if (value === 'success') { document.getElementById('exampleForm').submit(); } }});">
                     <button type="submit" class="ui-btn ui-round ui-theme-sub ui-fill-dark-100 ui-ease-btn">Submit Form</button>
                 </form>
 

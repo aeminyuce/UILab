@@ -216,13 +216,13 @@
                             <td>@fat</td>
                         </tr>
                         <tr>
-                            <th>1</th>
+                            <th>3</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr>
-                            <th>2</th>
+                            <th>4</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
@@ -256,13 +256,13 @@
                             <td>@fat</td>
                         </tr>
                         <tr>
-                            <th>1</th>
+                            <th>3</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr>
-                            <th>2</th>
+                            <th>4</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
@@ -296,13 +296,13 @@
                             <td>@fat</td>
                         </tr>
                         <tr>
-                            <th>1</th>
+                            <th>3</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr>
-                            <th>2</th>
+                            <th>4</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
@@ -336,31 +336,31 @@
                             <td>@fat</td>
                         </tr>
                         <tr class="ui-theme-red ui-fill-light-100 ui-hover">
-                            <th>1</th>
+                            <th>3</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr class="ui-theme-yellow ui-fill-light-100 ui-hover">
-                            <th>2</th>
+                            <th>4</th>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
                         </tr>
                         <tr class="ui-theme-green ui-fill-light-100 ui-hover">
-                            <th>1</th>
+                            <th>5</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr class="ui-theme-base ui-fill-light-100 ui-hover">
-                            <th>1</th>
+                            <th>6</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
                         </tr>
                         <tr class="ui-theme-sub ui-fill-light-100 ui-hover">
-                            <th>1</th>
+                            <th>7</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
@@ -391,7 +391,7 @@
                             <td>@fat</td>
                         </tr>
                         <tr class="ui-fill-light-100 ui-hover">
-                            <th>1</th>
+                            <th>3</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
@@ -422,7 +422,7 @@
                             <td>@fat</td>
                         </tr>
                         <tr class="ui-fill-light-100 ui-hover">
-                            <th>1</th>
+                            <th>3</th>
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
@@ -433,7 +433,7 @@
                 <span class="ui-sp-20"></span>
 
                 <h3 class="ui-h3">Table Sidebar</h3>
-                <table class="ui-table ui-table-sidebar ui-table-hover ui-tabe-striped ui-p-30-b ui-border ui-ease-table">
+                <table class="ui-table ui-table-sidebar ui-table-hover ui-table-striped ui-p-30-b ui-border ui-ease-table">
                     <thead>
                         <tr>
                             <th width="20">#</th>
@@ -451,6 +451,18 @@
                         </tr>
                         <tr>
                             <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
                             <td>Jacob</td>
                             <td>Thornton</td>
                             <td>@fat</td>
@@ -500,6 +512,38 @@
                             </tr>
                             <tr>
                                 <th>2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>Jacob</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>
@@ -570,6 +614,48 @@
                             </tr>
                             <tr>
                                 <th>2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>

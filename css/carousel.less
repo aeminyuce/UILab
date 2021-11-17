@@ -34,7 +34,7 @@
 		display: none;
 
 		.ui-carousel-slider {
-			& > .ui-slide-content { width: 0 !important; }
+			& > .ui-carousel-content { width: 0 !important; }
 		}
 	}
 
@@ -45,7 +45,7 @@
 	&-slider {
 		display: flex !important; flex-wrap: wrap;
 
-		& > .ui-slide-content {
+		& > .ui-carousel-content {
 			flex-grow: 1;
 
 			img.ui-photo { width: 100%; height: auto; }
@@ -59,7 +59,7 @@
 	&-nav {
 		white-space: nowrap; text-align: center; margin-top: @carousel-nav-dot-margin-v; overflow: hidden; display: block; cursor: default;
 
-		.ui-dots {
+		.ui-carousel-dots {
 			vertical-align: middle; min-width: ((@carousel-nav-dot-size + @carousel-nav-dot-margin-h * 2) * 5); display: inline-block;
 
 			i {
@@ -79,13 +79,12 @@
 	}
 
 	&-gallery {
-		.ui-detail {
+		&-detail {
 			min-height: @carousel-gallery-detail-min-height; position: relative;
 
-			img { display: block; border: 0; position: relative; z-index: 2; }
-			img,&.ui-detail-holder img { width: 100%; display: inline-block; position: relative; z-index: 1; cursor: pointer; }
+			img { width: 100%; height: auto; display: inline-block; border: 0; position: relative; z-index: 2; cursor: pointer; }
 
-			.ui-desktop &:not(.ui-detail-loader) {
+			.ui-desktop &:not(.ui-carousel-gallery-detail-loader) {
 				img {
 					&:hover { opacity: @carousel-gallery-detail-hover-opacity; }
 				}
@@ -93,19 +92,20 @@
 
 			.ui-icon { ._icon(@carousel-gallery-detail-icons-size); position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); opacity: 1 !important; }
 
-			&.ui-detail-loader {
+			&.ui-carousel-gallery-detail-loader {
 				background-color: @carousel-gallery-detail-loader-bg;
 
 				img { opacity: 0; }
-				.ui-zoom-icon { display: none; }
-				.ui-loader-icon { animation: ui-carousel-gallery-loader 1.15s linear infinite; }
+
+				.ui-carousel-gallery-zoom { display: none; }
+				.ui-carousel-gallery-loader { animation: ui-carousel-gallery-loader 1.15s linear infinite; }
 			}
-			&:not(.ui-detail-loader) {
-				.ui-loader-icon { display: none; }
+			&:not(.ui-carousel-gallery-detail-loader) {
+				.ui-carousel-gallery-loader { display: none; }
 			}
 		}
 
-		.ui-thumbs {
+		&-thumbs {
 			text-align: center; margin: @carousel-thumbs-margin;
 
 			.ui-photo {

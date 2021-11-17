@@ -6,7 +6,7 @@
             <div class="ui-col-3 ui-col-md-6">
 
                 <div class="ui-weather ui-round ui-ease-weather">
-                    <div class="ui-details">
+                    <div class="ui-reports">
                         <div class="ui-now">
                             <b class="ui-w-degree">33</b>
                             <span>
@@ -36,7 +36,7 @@
             <div class="ui-col-3 ui-col-md-6">
 
                 <div class="ui-weather ui-round ui-ease-weather">
-                    <div class="ui-details">
+                    <div class="ui-reports">
                         <div class="ui-now">
                             <b class="ui-w-degree">12</b>
                             <span>
@@ -66,7 +66,7 @@
             <div class="ui-col-3 ui-col-md-6">
 
                 <div class="ui-weather ui-round ui-ease-weather">
-                    <div class="ui-details">
+                    <div class="ui-reports">
                         <div class="ui-now">
                             <b class="ui-w-degree">2</b>
                             <span>
@@ -96,7 +96,7 @@
             <div class="ui-col-3 ui-col-md-6">
 
                 <div class="ui-weather ui-round ui-ease-weather">
-                    <div class="ui-details">
+                    <div class="ui-reports">
                         <div class="ui-now">
                             <b class="ui-w-degree">11</b>
                             <span>
@@ -126,7 +126,7 @@
             <div class="ui-col-3 ui-col-md-6">
 
                 <div class="ui-weather ui-round ui-ease-weather">
-                    <div class="ui-details">
+                    <div class="ui-reports">
                         <div class="ui-now">
                             <b class="ui-w-degree">28</b>
                             <span>
@@ -156,7 +156,7 @@
             <div class="ui-col-3 ui-col-md-6">
 
                 <div class="ui-weather ui-round ui-ease-weather">
-                    <div class="ui-details">
+                    <div class="ui-reports">
                         <div class="ui-now">
                             <b class="ui-w-degree">10</b>
                             <span>
@@ -186,7 +186,7 @@
             <div class="ui-col-3 ui-col-md-6">
 
                 <div class="ui-weather ui-round ui-ease-weather">
-                    <div class="ui-details">
+                    <div class="ui-reports">
                         <div class="ui-now">
                             <b class="ui-w-degree">0</b>
                             <span>
@@ -216,7 +216,7 @@
             <div class="ui-col-3 ui-col-md-6">
 
                 <div class="ui-weather ui-round ui-ease-weather">
-                    <div class="ui-details">
+                    <div class="ui-reports">
                         <div class="ui-now">
                             <b class="ui-w-degree">33</b>
                             <span>

@@ -458,7 +458,7 @@
                                 <div class="dashboard-carousel ui-carousel" data-ui-col-xl="4" data-ui-col-lg="2" data-ui-col="2" data-ui-col-md="2" data-ui-col-sm="1" data-ui-col-xs="1">
                                     <div class="ui-carousel-slider ui-icons-m-5-r ui-ease-layout ui-ease-slow ui-ease-in-out">
 
-                                        <div class="ui-slide-content ui-p-10-h ui-p-10-t ui-p-15-b ui-theme-yellow">
+                                        <div class="ui-carousel-content ui-p-10-h ui-p-10-t ui-p-15-b ui-theme-yellow">
                                             <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
@@ -481,7 +481,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="ui-slide-content ui-p-10-h ui-p-10-t ui-p-15-b ui-theme-yellow">
+                                        <div class="ui-carousel-content ui-p-10-h ui-p-10-t ui-p-15-b ui-theme-yellow">
                                             <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
@@ -504,7 +504,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="ui-slide-content ui-p-10-h ui-p-10-t ui-p-15-b ui-theme-green">
+                                        <div class="ui-carousel-content ui-p-10-h ui-p-10-t ui-p-15-b ui-theme-green">
                                             <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
@@ -527,7 +527,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="ui-slide-content ui-p-10-h ui-p-10-t ui-p-15-b ui-theme-panel2">
+                                        <div class="ui-carousel-content ui-p-10-h ui-p-10-t ui-p-15-b ui-theme-panel2">
                                             <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                                                 <div class="ui-col-static ui-no-fluid">
                                                     <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
@@ -556,7 +556,7 @@
                                         <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square ui-circle">
                                             <svg class="ui-icon ui-m-3-r"><use href="#angle-left"/></svg>
                                         </button>
-                                        <span class="ui-dots ui-color-black-25"></span>
+                                        <span class="ui-carousel-dots ui-color-black-25"></span>
                                         <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square ui-circle">
                                             <svg class="ui-icon ui-m-3-l"><use href="#angle-right"/></svg>
                                         </button>

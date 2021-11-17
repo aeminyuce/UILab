@@ -7,7 +7,7 @@
         <div class="login-forms-container ui-col-lg-5 ui-col-6">
 
             <div class="login-forms-holder ui-card ui-form-lg ui-tabs ui-shadow-lg ui-ease-tabs">
-                <form id="login" class="ui-tab-content ui-open ui-open-ease" action="#">
+                <form id="loginExample" class="ui-tab-content ui-open ui-open-ease" action="#">
 
                     <h3 class="ui-h3 ui-m-30-b">Login to continue</h3>
                     <p class="ui-highlight ui-color-black-25 ui-font-16">Sign in to create, discover and connect with the global community.</p>
@@ -46,13 +46,13 @@
                         <b>LOGIN</b>
                     </button>
                     <span class="ui-sp-15"></span>
-                    <button class="ui-tab ui-btn ui-btn-ghost ui-color-black-50 ui-round ui-block ui-ease-btn" data-ui-id="lost-password">
+                    <button class="ui-tab ui-btn ui-btn-ghost ui-color-black-50 ui-round ui-block ui-ease-btn" data-ui-id="lostPasswordExample">
                         <svg class="ui-icon ui-m-5-r ui-no-opacity"><use href="#lock"/></svg> Forgot password?
                     </button>
 
                 </form>
 
-                <form id="lost-password" class="ui-tab-content" action="#">
+                <form id="lostPasswordExample" class="ui-tab-content" action="#">
 
                     <h3 class="ui-h3 ui-m-30-b">Forgot password?</h3>
                     <p class="ui-highlight ui-color-black-25 ui-font-16">Please enter your email address. You will receive a link to create a new password via email.</p>
@@ -70,7 +70,7 @@
                         <b>Reset Password</b>
                     </button>
                     <span class="ui-sp-15"></span>
-                    <button class="ui-tab ui-btn ui-btn-ghost ui-color-black-50 ui-round ui-block ui-ease-btn" data-ui-id="login">
+                    <button class="ui-tab ui-btn ui-btn-ghost ui-color-black-50 ui-round ui-block ui-ease-btn" data-ui-id="loginExample">
                         <svg class="ui-icon ui-m-5-r ui-no-opacity"><use href="#long-arrow-left"/></svg> Back to login
                     </button>
 

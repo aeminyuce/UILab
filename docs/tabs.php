@@ -3,7 +3,7 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-p-30">
 
-                <h3 class="ui-h3">Horizontal ui-tabs</h3>
+                <h3 class="ui-h3">Horizontal Tabs</h3>
                 <div class="ui-tabs ui-p-30-b ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
                     <div class="ui-row ui-border-b ui-m-15-b">
 
@@ -115,7 +115,7 @@
                     </div>
                 </div>
 
-                <h3 class="ui-h3">ui-tabs with Toggle</h3>
+                <h3 class="ui-h3">Tabs with Toggle</h3>
                 <div class="ui-tabs ui-p-30-b ui-ease-tabs" data-ui-classes="ui-stroke ui-text ui-border-lg">
 
                     <div class="ui-m-10-b ui-md-align-c ui-border-b ui-theme-sub ui-form-lg ui-ease-1st-btn">
@@ -144,7 +144,7 @@
 
                 </div>
 
-                <h3 class="ui-h3">Side Navigated ui-tabs</h3>
+                <h3 class="ui-h3">Side Navigated Tabs</h3>
                 <div class="ui-tabs ui-col-static ui-border-dual ui-m-30-b ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
                     <div class="ui-col-200 ui-p-1 ui-theme-sub">
@@ -247,7 +247,7 @@
 
                 </div>
 
-                <h3 class="ui-h3">Inner ui-tabs</h3>
+                <h3 class="ui-h3">Inner Tabs</h3>
                 <div class="ui-tabs ui-p-30-b ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
                     <div class="ui-md-align-c ui-theme-sub ui-form-lg ui-ease-1st-btn">
@@ -358,18 +358,18 @@
 
                 </div>
 
-                <h3 class="ui-h3">ui-tabs with ID</h3>
+                <h3 class="ui-h3">Tabs with ID</h3>
                 <div class="ui-tabs ui-p-30-b ui-form-lg ui-theme-sub ui-ease-tabs">
 
-                    <div id="tabID01" class="ui-tab-content ui-open ui-open-ease">
-                        <button class="ui-tab ui-btn ui-round ui-fill-dark-100 ui-ease-btn" data-ui-id="tabID02">Show Second</button>
+                    <div id="tabExample01" class="ui-tab-content ui-open ui-open-ease">
+                        <button class="ui-tab ui-btn ui-round ui-fill-dark-100 ui-ease-btn" data-ui-id="tabExample02">Show Second</button>
                         <span class="ui-sp-10"></span>
                         <p class="ui-font-readable">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et quam nec augue accumsan cursus. Nam sagittis purus at sagittis tincidunt. Sed imperdiet lobortis purus quis gravida. Cras sit amet vestibulum ante. In pulvinar nisi sed luctus dignissim. Cras mauris purus, fringilla dictum dolor vitae, placerat dignissim nibh. Proin nec turpis vitae nibh sodales posuere pulvinar sed ante.
                         </p>
                     </div>
-                    <div id="tabID02" class="ui-tab-content">
-                        <button class="ui-tab ui-btn ui-round ui-fill-dark-100 ui-ease-btn" data-ui-id="tabID01">Show First</button>
+                    <div id="tabExample02" class="ui-tab-content">
+                        <button class="ui-tab ui-btn ui-round ui-fill-dark-100 ui-ease-btn" data-ui-id="tabExample01">Show First</button>
                         <span class="ui-sp-10"></span>
                         <p class="ui-font-readable">
                             Proin sagittis velit urna, a elementum purus dictum vitae. Praesent sed aliquet diam. Aenean eu velit rhoncus libero fringilla rutrum. Morbi posuere, sem sit amet ultrices laoreet, velit quam euismod libero, sed volutpat dolor felis eget lorem. Sed massa justo, porttitor id gravida eget, hendrerit vestibulum urna. Aliquam iaculis quam et sapien malesuada tincidunt. Integer fermentum ante eget turpis sagittis volutpat. Nam efficitur arcu at eros venenatis semper pharetra sit amet nunc. Sed quam libero, mattis eu sem eu, aliquam dignissim nisl. Quisque auctor ipsum nec posuere auctor.
@@ -378,7 +378,7 @@
 
                 </div>
 
-                <h3 class="ui-h3">Accordion ui-tabs</h3>
+                <h3 class="ui-h3">Accordion Tabs</h3>
                 <div class="ui-tabs ui-p-30-b ui-form-lg ui-theme-sub ui-ease-tabs" data-ui-classes="ui-fill-dark-100">
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-block ui-align-l ui-m-1-b ui-round ui-ease-btn">
@@ -417,7 +417,7 @@
 
                 </div>
 
-                <h3 class="ui-h3">Inner Accordion ui-tabs</h3>
+                <h3 class="ui-h3">Inner Accordion Tabs</h3>
                 <div class="ui-tabs ui-p-30-b ui-form-lg ui-theme-sub ui-ease-tabs" data-ui-classes="ui-fill-dark-100">
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-block ui-align-l ui-m-1-b ui-ease-btn">
@@ -512,7 +512,7 @@
 
                 </div>
 
-                <h3 class="ui-h3">ui-tabs with Large Icons</h3>
+                <h3 class="ui-h3">Tabs with Large Icons</h3>
                 <div class="ui-tabs ui-icons-no-opacity ui-p-30-b ui-ease-tabs" data-ui-classes="ui-text ui-icons-default">
 
                     <div class="ui-color-black-25 ui-m-30-b ui-align-c ui-icons-xxl ui-xs-align-l ui-theme-sub">

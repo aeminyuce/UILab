@@ -9,7 +9,7 @@ ui.textareaCounter = {
     target: 'ui-textarea',
 
     // main classnames
-    nameToggle: 'toggle-textarea',
+    nameToggle: 'ui-textarea-toggle',
 
     // helper classnames
     nameChange: 'ui-change',

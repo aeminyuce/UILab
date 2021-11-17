@@ -180,7 +180,10 @@ ui.classnames = {
                     }
 
                     // filter rules
-                    if (['container','fluid','fixed','row','gutter','col','push','pull','offset','order'].indexOf(title) >= 0) {
+                    if (['html','link'].indexOf(title) >= 0) {
+                        title = 'core';
+
+                    } else if (['container','fluid','fixed','row','gutter','col','push','pull','offset','order'].indexOf(title) >= 0) {
                         title = 'grid system';
 
                     } else if (['h1','h2','h3','h4','h5','h6'].indexOf(title) >= 0) {
@@ -192,19 +195,19 @@ ui.classnames = {
                     } else if (['open','open-ease','active','selected','show'].indexOf(title) >= 0) {
                         title = 'helpers';
 
-                    } else if (['fill','stroke','text'].indexOf(title) >= 0) {
+                    } else if (['theme','fill','stroke','text'].indexOf(title) >= 0) {
                         title = 'themes';
 
                     } else if (['code','dl'].indexOf(title) >= 0) {
                         title = 'typography';
 
-                    } else if (['w','weather','days','graphs'].indexOf(title) >= 0) {
+                    } else if (['w','weather','days','graphs','reports'].indexOf(title) >= 0) {
                         title = 'weather';
 
                     } else if (['paging','prev','next'].indexOf(title) >= 0) {
                         title = 'paging';
 
-                    } else if (title === 'icon' || title === 'icons') {
+                    } else if (['icon','icons','toggle'].indexOf(title) >= 0) {
                         title = 'icons';
 
                     } else if (title === 'darkmode' || title === 'invert') {
@@ -219,8 +222,14 @@ ui.classnames = {
                     } else if (title === 'list' || title === 'blockquote') {
                         title = 'listings';
 
+                    } else if (title === 'tab' || title === 'tabs') {
+                        title = 'tabs';
+
                     } else if (title === 'carousel' || title === 'bring') {
                         title = 'carousel';
+
+                    } else if (title === 'visible' || title === 'hidden') {
+                        title = 'show &amp; hide';
 
                     } else if (title === 'm') {
                         title = 'margins';

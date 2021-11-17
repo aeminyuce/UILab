@@ -222,7 +222,7 @@
         <div class="ui-carousel" data-ui-col="4" data-ui-col-md="2" data-ui-col-sm="2" data-ui-col-xs="1" data-ui-slide="4000">
             <div class="ui-carousel-slider ui-icons-xxl ui-hover-shadow-2nd ui-hover-scale-2nd ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
-                <div class="ui-slide-content ui-p-15">
+                <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-text"><use href="#leaf"/></svg>
@@ -233,7 +233,7 @@
                     </div>
                 </div>
 
-                <div class="ui-slide-content ui-p-15">
+                <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-text"><use href="#wind-sock"/></svg>
@@ -244,7 +244,7 @@
                     </div>
                 </div>
 
-                <div class="ui-slide-content ui-p-15">
+                <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-text"><use href="#water"/></svg>
@@ -255,7 +255,7 @@
                     </div>
                 </div>
 
-                <div class="ui-slide-content ui-p-15">
+                <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-text"><use href="#land"/></svg>
@@ -266,7 +266,7 @@
                     </div>
                 </div>
 
-                <div class="ui-slide-content ui-p-15">
+                <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-text"><use href="#leaf"/></svg>
@@ -277,7 +277,7 @@
                     </div>
                 </div>
 
-                <div class="ui-slide-content ui-p-15">
+                <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-text"><use href="#wind-sock"/></svg>
@@ -288,7 +288,7 @@
                     </div>
                 </div>
 
-                <div class="ui-slide-content ui-p-15">
+                <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-text"><use href="#water"/></svg>
@@ -299,7 +299,7 @@
                     </div>
                 </div>
 
-                <div class="ui-slide-content ui-p-15">
+                <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
                         <svg class="ui-icon ui-text"><use href="#land"/></svg>
@@ -315,7 +315,7 @@
                 <button class="ui-carousel-prev ui-btn ui-btn-square ui-btn-ghost ui-fill-dark-100">
                     <svg class="ui-icon ui-text"><use href="#angle-left"/></svg>
                 </button>
-                <span class="ui-dots ui-text"></span>
+                <span class="ui-carousel-dots ui-text"></span>
                 <button class="ui-carousel-next ui-btn ui-btn-square ui-btn-ghost ui-fill-dark-100">
                     <svg class="ui-icon ui-text"><use href="#angle-right"/></svg>
                 </button>

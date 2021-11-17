@@ -71,43 +71,46 @@
         }
     }
 
-    .ui-list- {
-        &has-icon {
-            each(@icon-sizes, {
-                &-@{key} {
-                    & > li {
-                        &,& > a:not(.ui-list-url) { padding-right: (@value + @list-group-list-padding * 2); }
-                        & > a:not(.ui-list-url) { margin-right: -(@value + @list-group-list-padding * 2); }
-                    }
-                    .ui-list-icon { ._icon(@value); }
-                }
-            });
-        }
-        &icon { ._icon(@list-group-default-icon-size); position: absolute; top: 50%; right: @list-group-list-padding; transform: translateY(-50%); opacity: @list-group-list-icon-opacity; }
-    }
-
-    [class*="ui-has-avatar"] {
+    [class*="ui-list-has-avatar"] {
         .ui-avatar {
             &,&-lg,&-sm,&-xs { position: absolute; top: @list-group-list-padding; left: @list-group-list-padding; }
         }
     }
 
-    .ui-has-avatar {
-        &-lg li {
-            &,& > a:not(.ui-list-url) { min-height: (@avatar-lg + @list-group-list-padding * 2); padding-left: (@avatar-lg + @list-group-list-padding * 2); }
-            & > a:not(.ui-list-url) { margin-left: -(@avatar-lg + @list-group-list-padding * 2); }
-        }
-        li {
-            &,& > a:not(.ui-list-url) { min-height: (@avatar-default + @list-group-list-padding * 2); padding-left: (@avatar-default + @list-group-list-padding * 2); }
-            & > a:not(.ui-list-url) { margin-left: -(@avatar-default + @list-group-list-padding * 2); }
-        }
-        &-sm li {
-            &,& > a:not(.ui-list-url) { min-height: (@avatar-sm + @list-group-list-padding * 2); padding-left: (@avatar-sm + @list-group-list-padding * 2); }
-            & > a:not(.ui-list-url) { margin-left: -(@avatar-sm + @list-group-list-padding * 2); }
-        }
-        &-xs li {
-            &,& > a:not(.ui-list-url) { min-height: (@avatar-xs + @list-group-list-padding * 2); padding-left: (@avatar-xs + @list-group-list-padding * 2); }
-            & > a:not(.ui-list-url) { margin-left: -(@avatar-xs + @list-group-list-padding * 2); }
+    .ui-list- {
+        &icon { ._icon(@list-group-default-icon-size); position: absolute; top: 50%; right: @list-group-list-padding; transform: translateY(-50%); opacity: @list-group-list-icon-opacity; }
+
+        &has- {
+            &icon {
+                each(@icon-sizes, {
+                    &-@{key} {
+                        & > li {
+                            &,& > a:not(.ui-list-url) { padding-right: (@value + @list-group-list-padding * 2); }
+                            & > a:not(.ui-list-url) { margin-right: -(@value + @list-group-list-padding * 2); }
+                        }
+                        .ui-list-icon { ._icon(@value); }
+                    }
+                });
+            }
+            &avatar {
+                &-lg li {
+                    &,& > a:not(.ui-list-url) { min-height: (@avatar-lg + @list-group-list-padding * 2); padding-left: (@avatar-lg + @list-group-list-padding * 2); }
+                    & > a:not(.ui-list-url) { margin-left: -(@avatar-lg + @list-group-list-padding * 2); }
+                }
+                li {
+                    &,& > a:not(.ui-list-url) { min-height: (@avatar-default + @list-group-list-padding * 2); padding-left: (@avatar-default + @list-group-list-padding * 2); }
+                    & > a:not(.ui-list-url) { margin-left: -(@avatar-default + @list-group-list-padding * 2); }
+                }
+                &-sm li {
+                    &,& > a:not(.ui-list-url) { min-height: (@avatar-sm + @list-group-list-padding * 2); padding-left: (@avatar-sm + @list-group-list-padding * 2); }
+                    & > a:not(.ui-list-url) { margin-left: -(@avatar-sm + @list-group-list-padding * 2); }
+                }
+                &-xs li {
+                    &,& > a:not(.ui-list-url) { min-height: (@avatar-xs + @list-group-list-padding * 2); padding-left: (@avatar-xs + @list-group-list-padding * 2); }
+                    & > a:not(.ui-list-url) { margin-left: -(@avatar-xs + @list-group-list-padding * 2); }
+                }
+            }
         }
     }
+
 }

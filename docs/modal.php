@@ -56,8 +56,8 @@
             <div class="ui-col-6 ui-no-p-v">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open modal window with id.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '#modal-example-id'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#modal-example-id'});">Run Code</button>
+                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '#modalExample'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#modalExample'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-p-t">
@@ -140,7 +140,7 @@
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Google map embed link with header and footer:</i>
                 <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '#modal-example02'<br>    size: 'fullscreen'<br>});</pre>
-                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#modal-example-id02', size: 'fullscreen'});">Run Code</button>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#modalExample02', size: 'fullscreen'});">Run Code</button>
 
             </div>
 
@@ -200,7 +200,7 @@
 </main>
 
 <!-- modal sources -->
-<div id="modal-example-id" class="ui-modal modal-example ui-theme-base">
+<div id="modalExample" class="ui-modal modal-example ui-theme-base">
     <div class="ui-modal-header ui-fill-dark-100">
         <h4 class="ui-h4">Modal Header</h4>
         <div class="ui-modal-buttons ui-ease-1st-btn">

@@ -19,16 +19,16 @@ ui.carousel = {
     nameAnimate: 'ui-carousel-animate',
     namePauseAnimates: 'ui-pause-animates',
 
-    nameContent: 'ui-slide-content',
+    nameContent: 'ui-carousel-content',
 
     namePrev: 'ui-carousel-prev',
     nameNext: 'ui-carousel-next',
-    nameDots: 'ui-dots',
+    nameDots: 'ui-carousel-dots',
 
-    nameGalleryDetail: 'ui-detail',
-    nameGalleryDetailLoader: 'ui-detail-loader',
+    nameGalleryDetail: 'ui-carousel-gallery-detail',
+    nameGalleryDetailLoader: 'ui-carousel-gallery-detail-loader',
 
-    nameGalleryThumbs: 'ui-thumbs',
+    nameGalleryThumbs: 'ui-carousel-gallery-thumbs',
     nameGalleryImg: 'ui-photo',
 
     // helper classnames
