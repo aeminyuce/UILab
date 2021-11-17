@@ -1986,25 +1986,25 @@ html .ui-row {
   background-clip: padding-box;
 }
 .ui-round {
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .ui-round > .ui-round,
 .ui-round > * > .ui-round,
 .ui-round > [class*="ui-round-"],
 .ui-round > * > [class*="ui-round-"] {
-  border-radius: 5px !important;
+  border-radius: 7px !important;
 }
 .ui-round-t {
-  border-radius: 6px 6px 0 0;
+  border-radius: 8px 8px 0 0;
 }
 .ui-round-r {
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 8px 8px 0;
 }
 .ui-round-b {
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 8px 8px;
 }
 .ui-round-l {
-  border-radius: 6px 0 0 6px;
+  border-radius: 8px 0 0 8px;
 }
 .ui-circle {
   border-radius: 1000px;
@@ -4070,7 +4070,7 @@ dt + dd:not(:last-child) {
 }
 .ui-btn-lg.ui-round,
 .ui-form-lg .ui-btn.ui-round {
-  border-radius: 8px;
+  border-radius: 10.66666667px;
 }
 .ui-btn-lg.ui-btn-square,
 .ui-form-lg .ui-btn.ui-btn-square {
@@ -4108,7 +4108,7 @@ dt + dd:not(:last-child) {
   padding-left: 27px;
 }
 .ui-btn-sm.ui-round {
-  border-radius: 4px;
+  border-radius: 5.33333333px;
 }
 .ui-btn-sm.ui-btn-square {
   width: 32px;
@@ -4142,7 +4142,7 @@ dt + dd:not(:last-child) {
   padding-left: 25px;
 }
 .ui-btn-xs.ui-round {
-  border-radius: 3px;
+  border-radius: 4px;
 }
 .ui-btn-xs.ui-btn-square {
   width: 26px;
@@ -4735,7 +4735,7 @@ dt + dd:not(:last-child) {
 }
 .ui-sidebar .ui-dropdown ul.ui-dropdown-menu.ui-round > li,
 .ui-sidebar .ui-dropdown ul.ui-dropdown-menu.ui-round > li a {
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .ui-sidebar .ui-dropdown:not(:last-child) .ui-dropdown-menu {
   margin-bottom: 10px !important;
@@ -5005,7 +5005,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   stroke-width: 30px;
 }
 .ui-file.ui-round .ui-btn:not(.ui-btn-square) {
-  border-radius: 3px 0 0 3px;
+  border-radius: 4px 0 0 4px;
 }
 .ui-desktop .ui-file:hover input[class] {
   opacity: 0.35;
@@ -5227,7 +5227,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   opacity: 1;
 }
 .ui-check.ui-round .ui-form-state {
-  border-radius: 3px;
+  border-radius: 4px;
 }
 .ui-check input:checked + i,
 .ui-check input:indeterminate + .ui-form-state {
@@ -6021,13 +6021,13 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 }
 .ui-list-group.ui-round > ul:not([class*="ui-list-col-"]) > li:first-child,
 .ui-list-group.ui-round > ul:not([class*="ui-list-col-"]) > li:first-child > a:not(.ui-list-url) {
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .ui-list-group.ui-round > ul:not([class*="ui-list-col-"]) > li:last-child,
 .ui-list-group.ui-round > ul:not([class*="ui-list-col-"]) > li:last-child > a:not(.ui-list-url) {
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .ui-list-group .ui-list-icon {
   width: 14px;
@@ -6156,7 +6156,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   border-left-width: 5px;
 }
 [class*="ui-card-"]:not(.ui-card-side):not(.ui-card-close).ui-round {
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 8px 8px 0;
 }
 [class*="ui-card-"]:not(.ui-card-side):not(.ui-card-close) > .ui-row {
   margin-left: inherit;
@@ -6179,10 +6179,10 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   margin-right: inherit;
 }
 .ui-round > .ui-card-side:first-child {
-  border-radius: 6px 6px 0 0;
+  border-radius: 8px 8px 0 0;
 }
 .ui-round > .ui-card-side:last-child {
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 8px 8px;
 }
 .ui-card-close {
   color: hsl(0, 0%, 0%);
@@ -6511,12 +6511,12 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   height: 6px;
 }
 .ui-progress-bar.ui-round > span:first-child {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-top-left-radius: 5.33333333px;
+  border-bottom-left-radius: 5.33333333px;
 }
 .ui-progress-bar.ui-round > span:last-child {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-top-right-radius: 5.33333333px;
+  border-bottom-right-radius: 5.33333333px;
 }
 .ui-progress-lg {
   height: 20px;
@@ -6564,7 +6564,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   background-color: var(--ui-scrollbar-thumb-bg-active);
 }
 .ui-desktop .ui-round::-webkit-scrollbar-thumb {
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .ui-desktop [class*="ui-fill-dark-"]::-webkit-scrollbar-thumb,
 .ui-desktop [class*="ui-fill-dark-"] ::-webkit-scrollbar-thumb {
@@ -7058,13 +7058,13 @@ header.ui-sticky-static {
   max-height: calc(100% - (15px * 2));
 }
 .ui-modal-content:not(.ui-modal-fullscreen).ui-round .ui-modal-header {
-  border-radius: 5px 5px 0 0;
+  border-radius: 7px 7px 0 0;
 }
 .ui-modal-content:not(.ui-modal-fullscreen).ui-round .ui-modal-footer {
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 7px 7px;
 }
 .ui-modal-content:not(.ui-modal-fullscreen).ui-round .ui-modal-iframe {
-  border-radius: 5px;
+  border-radius: 7px;
 }
 .ui-modal-content:not(.ui-modal-fullscreen) .ui-close-modal {
   background-color: hsla(0, 0%, 0%, 0.65);
@@ -7106,7 +7106,7 @@ header.ui-sticky-static {
   width: auto;
 }
 .ui-modal-content.ui-round .ui-modal {
-  border-radius: 5px;
+  border-radius: 7px;
 }
 .ui-modal-content.ui-has-header .ui-modal {
   padding-top: 62px !important;
@@ -7415,10 +7415,10 @@ header.ui-sticky-static {
   transform: translate(-50%, -50%) scale(0.8);
 }
 .ui-alerts-dialog.ui-round .ui-dialog-buttons {
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 8px 8px;
 }
 .ui-alerts-dialog.ui-round button {
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .ui-alerts-msg {
   text-align: center;
@@ -7744,41 +7744,41 @@ button.ui-dialog-custom:focus {
 }
 .ui-calendar.ui-round caption,
 .ui-calendar.ui-round caption button {
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .ui-calendar.ui-round .ui-calendar-panel {
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .ui-calendar.ui-round .ui-calendar-panel .ui-panel-call {
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .ui-calendar.ui-round .ui-calendar-month {
-  border-radius: 6px 0 0 6px;
+  border-radius: 8px 0 0 8px;
 }
 .ui-calendar.ui-round .ui-calendar-year {
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 8px 8px 0;
 }
 .ui-calendar.ui-round .ui-calendar-details > button {
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .ui-calendar.ui-round .ui-calendar-details li {
   box-sizing: border-box;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .ui-calendar.ui-round table.ui-fill-weekends th:nth-child(6) {
-  border-radius: 6px 0 0 0;
+  border-radius: 8px 0 0 0;
 }
 .ui-calendar.ui-round table.ui-fill-weekends th:nth-child(7) {
-  border-radius: 0 6px 0 0;
+  border-radius: 0 8px 0 0;
 }
 .ui-calendar.ui-round table.ui-fill-weekends tr:last-child td:nth-child(6) {
-  border-radius: 0 0 0 6px;
+  border-radius: 0 0 0 8px;
 }
 .ui-calendar.ui-round table.ui-fill-weekends tr:last-child td:nth-child(7) {
-  border-radius: 0 0 6px 0;
+  border-radius: 0 0 8px 0;
 }
 .ui-calendar.ui-round td button {
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .ui-calendar:not(.ui-show-details) .ui-calendar-details {
   opacity: 0;
@@ -8349,7 +8349,7 @@ button.ui-dialog-custom:focus {
   margin: 30px;
   border: dashed 2px hsla(0, 0%, 0%, 0.15);
   border: dashed 2px var(--ui-imgupload-list-border);
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .ui-imgupload.ui-drop-highlight .ui-imgupload-list > .ui-icon {
   display: block;
@@ -8443,7 +8443,7 @@ button.ui-dialog-custom:focus {
   margin: 30px;
   border: dashed 2px hsla(0, 0%, 0%, 0.15);
   border: dashed 2px var(--ui-imgupload-list-border);
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .ui-imgupload-list:not(.ui-open) li {
   display: none;
@@ -8719,7 +8719,7 @@ button.ui-dialog-custom:focus {
   background-color: hsla(0, 0%, 0%, 0.75);
   padding: 15px;
   display: block;
-  border-radius: 6px 6px 0 0;
+  border-radius: 8px 8px 0 0;
   position: absolute;
   bottom: 0;
   z-index: 1;
@@ -9276,7 +9276,7 @@ button.ui-dialog-custom:focus {
   position: absolute;
 }
 .ui-weather.ui-round .ui-graphs {
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .ui-weather.ui-night .ui-now,
 .ui-weather.ui-night .ui-days,

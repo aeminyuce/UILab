@@ -28,7 +28,7 @@
   background-color: var(--ui-icons-list-bg);
   padding: 15px 10px;
   margin: 1px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   flex-grow: 1;
 }
