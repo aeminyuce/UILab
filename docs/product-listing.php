@@ -12,7 +12,7 @@
                 <div class="ui-sidebar-add-r">
 
                     <div class="ui-card ui-p-15 ui-round ui-shadow-lg">
-                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete ui-input ui-form-icon-all ui-round ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form ui-has-clear">
+                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete ui-input ui-form-icon-all ui-round ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form ui-form-has-clear">
                             <svg class="ui-icon ui-form-icon-l"><use href="#search"/></svg>
                             <button type="button" class="ui-form-clear">
                                 <svg class="ui-icon"><use href="#remove"/></svg>

@@ -116,7 +116,7 @@
                 <h3 class="ui-h3">List Groups with List Icons</h3>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-has-icon-xxl ui-ease-list-group">
+                    <ul class="ui-list-has-icon-xxl ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
@@ -147,7 +147,7 @@
                 <span class="ui-sp-30"></span>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-has-icon-xl ui-ease-list-group">
+                    <ul class="ui-list-has-icon-xl ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
@@ -175,7 +175,7 @@
                 <span class="ui-sp-30"></span>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-has-icon-lg ui-ease-list-group">
+                    <ul class="ui-list-has-icon-lg ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
@@ -200,7 +200,7 @@
                 <span class="ui-sp-30"></span>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-has-icon ui-ease-list-group">
+                    <ul class="ui-list-has-icon ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
@@ -225,7 +225,7 @@
                 <span class="ui-sp-30"></span>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-has-icon-sm ui-ease-list-group">
+                    <ul class="ui-list-has-icon-sm ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
@@ -250,7 +250,7 @@
                 <span class="ui-sp-30"></span>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-has-icon-xs ui-ease-list-group">
+                    <ul class="ui-list-has-icon-xs ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
@@ -275,7 +275,7 @@
                 <span class="ui-sp-30"></span>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-has-icon-xss ui-ease-list-group">
+                    <ul class="ui-list-has-icon-xss ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
@@ -377,7 +377,7 @@
                 <h3 class="ui-h3">List Groups with Photo Images</h3>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-has-avatar-xs ui-has-icon-xs ui-ease-list-group">
+                    <ul class="ui-has-avatar-xs ui-list-has-icon-xs ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
@@ -429,7 +429,7 @@
                 <span class="ui-sp-30"></span>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-has-avatar-sm ui-has-icon-sm ui-ease-list-group">
+                    <ul class="ui-has-avatar-sm ui-list-has-icon-sm ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
@@ -481,7 +481,7 @@
                 <span class="ui-sp-30"></span>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-has-avatar ui-has-icon ui-ease-list-group">
+                    <ul class="ui-has-avatar ui-list-has-icon ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
@@ -533,7 +533,7 @@
                 <span class="ui-sp-30"></span>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-has-avatar-lg ui-has-icon-lg ui-ease-list-group">
+                    <ul class="ui-has-avatar-lg ui-list-has-icon-lg ui-ease-list-group">
                         <li>
                             <a href="#">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
@@ -585,7 +585,7 @@
                 <span class="ui-sp-30"></span>
 
                 <div class="ui-list-group ui-border ui-round">
-                    <ul class="ui-has-avatar ui-has-icon-sm ui-ease-list-group">
+                    <ul class="ui-has-avatar ui-list-has-icon-sm ui-ease-list-group">
                         <li>
                             <a href="#" class="ui-theme-red ui-fill-light-100">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
@@ -630,7 +630,7 @@
                 <h3 class="ui-h3">List Groups with Swatches</h3>
 
                 <div class="ui-list-group ui-border ui-round ui-theme-red">
-                    <ul class="ui-has-avatar ui-has-icon-sm ui-ease-list-group">
+                    <ul class="ui-has-avatar ui-list-has-icon-sm ui-ease-list-group">
                         <li>
                             <a href="#" class="ui-fill-light-100">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>
@@ -673,7 +673,7 @@
                 <span class="ui-sp-30"></span>
 
                 <div class="ui-list-group ui-border ui-round ui-theme-sub">
-                    <ul class="ui-has-avatar ui-has-icon-sm ui-ease-list-group">
+                    <ul class="ui-has-avatar ui-list-has-icon-sm ui-ease-list-group">
                         <li>
                             <a href="#" class="ui-fill-light-100">
                                 <svg class="ui-list-icon ui-icon"><use href="#angle-right"/></svg>

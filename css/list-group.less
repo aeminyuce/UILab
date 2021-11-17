@@ -71,18 +71,19 @@
         }
     }
 
-    .ui-list-icon { ._icon(@list-group-default-icon-size); position: absolute; top: 50%; right: @list-group-list-padding; transform: translateY(-50%); opacity: @list-group-list-icon-opacity; }
-
-    .ui-has-icon {
-        each(@icon-sizes, {
-            &-@{key} {
-                & > li {
-                    &,& > a:not(.ui-list-url) { padding-right: (@value + @list-group-list-padding * 2); }
-                    & > a:not(.ui-list-url) { margin-right: -(@value + @list-group-list-padding * 2); }
+    .ui-list- {
+        &has-icon {
+            each(@icon-sizes, {
+                &-@{key} {
+                    & > li {
+                        &,& > a:not(.ui-list-url) { padding-right: (@value + @list-group-list-padding * 2); }
+                        & > a:not(.ui-list-url) { margin-right: -(@value + @list-group-list-padding * 2); }
+                    }
+                    .ui-list-icon { ._icon(@value); }
                 }
-                .ui-list-icon { ._icon(@value); }
-            }
-        });
+            });
+        }
+        &icon { ._icon(@list-group-default-icon-size); position: absolute; top: 50%; right: @list-group-list-padding; transform: translateY(-50%); opacity: @list-group-list-icon-opacity; }
     }
 
     [class*="ui-has-avatar"] {

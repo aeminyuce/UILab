@@ -248,7 +248,7 @@
                         <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle ui-visible-sm">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                         </button>
-                        <ul class="ui-dropdown-menu ui-list-col-2 ui-has-icon ui-round ui-shadow-lg">
+                        <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-2 ui-round ui-shadow-lg">
                             <li>
                                 <a href="#"><b class="ui-list-icon">23</b> Waiting</a>
                             </li>
@@ -386,7 +386,7 @@
                         <button class="ui-btn ui-no-p ui-circle ui-hover-scale-more">
                             <img class="ui-avatar ui-avatar-sm ui-circle" src="img/profile-image.jpg" alt="">
                         </button>
-                        <ul class="ui-dropdown-menu ui-has-grid ui-align-c ui-icons-lg ui-round ui-shadow-lg">
+                        <ul class="ui-dropdown-menu ui-dropdown-has-grid ui-align-c ui-icons-lg ui-round ui-shadow-lg">
                             <li>
                                 <a href="#">
                                     <svg class="ui-icon"><use href="#user"/></svg>
@@ -570,7 +570,7 @@
                                         <button class="ui-btn ui-btn-square ui-btn-ghost ui-round">
                                             <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                         </button>
-                                        <ul class="ui-dropdown-menu ui-has-icon ui-round ui-shadow-lg">
+                                        <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#file-xls"/></svg>Download Excel</a></li>
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See Detailed Activity</a></li>
@@ -770,7 +770,7 @@
                                             <button class="ui-btn ui-btn-square ui-btn-ghost ui-round">
                                                 <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                             </button>
-                                            <ul class="ui-dropdown-menu ui-has-icon ui-round ui-shadow-lg">
+                                            <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
                                                 <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
                                                 <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#file-xls"/></svg>Download Excel</a></li>
                                                 <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See Detailed Statistics</a></li>
@@ -909,7 +909,7 @@
                                         <button class="ui-btn ui-btn-square ui-btn-ghost ui-round">
                                             <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                         </button>
-                                        <ul class="ui-dropdown-menu ui-has-icon ui-round ui-shadow-lg">
+                                        <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#calendar-plus"/></svg>Add to Your Calendar</a></li>
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See All Events</a></li>
                                         </ul>
@@ -925,7 +925,7 @@
                                         <button class="ui-btn ui-btn-square ui-btn-ghost ui-round">
                                             <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                         </button>
-                                        <ul class="ui-dropdown-menu ui-has-icon ui-round ui-shadow-lg">
+                                        <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#file-xls"/></svg>Download Excel</a></li>
                                             <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See All Experts</a></li>
@@ -936,7 +936,7 @@
 
                                         <div class="ui-row ui-no-row-gap-v ui-row-gap-sm-h">
                                             <div class="ui-col-6 ui-lg-fluid">
-                                                <div class="ui-input ui-form-icon-all ui-round ui-no-border ui-fill-light-100 ui-has-clear ui-ease-form">
+                                                <div class="ui-input ui-form-icon-all ui-round ui-no-border ui-fill-light-100 ui-form-has-clear ui-ease-form">
                                                     <svg class="ui-icon ui-form-icon-l"><use href="#search"/></svg>
                                                     <button class="ui-form-clear">
                                                         <svg class="ui-icon"><use href="#remove"/></svg>
@@ -1554,7 +1554,7 @@
                                                         <button type="button" class="ui-btn ui-btn-lg ui-btn-ghost ui-btn-square ui-round">
                                                             <svg class="ui-icon ui-default-icon"><use href="#ellipsis-h"/></svg>
                                                         </button>
-                                                        <ul class="ui-dropdown-menu ui-has-icon ui-round ui-shadow-lg">
+                                                        <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
                                                             <li><a href="#">
                                                                 <svg class="ui-list-icon ui-icon"><use href="#check"/></svg>
                                                                 Save &amp; Continue</a>
@@ -1756,7 +1756,7 @@
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-row ui-no-row-gap-h">
                     <div class="ui-col-12 ui-ease-1st-form">
-                        <div class="ui-input ui-has-clear ui-round-l ui-no-border ui-shadow-in-sm ui-theme-gray ui-fill-light-300">
+                        <div class="ui-input ui-form-has-clear ui-round-l ui-no-border ui-shadow-in-sm ui-theme-gray ui-fill-light-300">
                             <button type="button" class="ui-form-clear">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>

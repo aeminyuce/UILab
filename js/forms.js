@@ -19,7 +19,7 @@ ui.forms = {
     nameHolder: 'ui-form-holder',
     nameHolderFocus: 'ui-form-holder-focus',
 
-    nameHasClear: 'ui-has-clear',
+    nameHasClear: 'ui-form-has-clear',
     nameClear: 'ui-form-clear',
 
     nameShowPass: 'ui-pass-toggle',
