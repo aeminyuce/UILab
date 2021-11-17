@@ -460,7 +460,7 @@
                                 </div>
                             </div>
                             <div class="ui-col-8 ui-no-fluid ui-align-r">
-                                <div class="ui-datatable-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-border-dual ui-theme-sub ui-stroke ui-text"></div>
+                                <div class="ui-datatable-paging ui-paging ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
                             </div>
                         </div>
 
@@ -1228,7 +1228,7 @@
                             </div>
                         </div>
                         <div class="ui-col-6 ui-align-r">
-                            <div class="ui-datatable-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
+                            <div class="ui-datatable-paging ui-paging ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
                         </div>
                     </div>
 
@@ -1813,7 +1813,7 @@
                             </div>
                         </div>
                         <div class="ui-col-6 ui-align-r">
-                            <div class="ui-datatable-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
+                            <div class="ui-datatable-paging ui-paging ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-theme-sub ui-fill-dark-100"></div>
                         </div>
                     </div>
 

@@ -4170,23 +4170,23 @@ dt + dd:not(:last-child) {
 .ui-sidebar .ui-btn-md-fluid:not(:last-child) {
   margin-bottom: 2px;
 }
-.ui-pagination:not(:last-child) {
+.ui-paging:not(:last-child) {
   margin-bottom: 20px;
 }
-.ui-pagination.ui-form-lg .ui-btn {
+.ui-paging.ui-form-lg .ui-btn {
   min-width: 48px;
 }
-.ui-pagination .ui-btn {
+.ui-paging .ui-btn {
   text-align: center !important;
   min-width: 42px;
 }
-.ui-pagination .ui-btn-lg {
+.ui-paging .ui-btn-lg {
   min-width: 48px;
 }
-.ui-pagination .ui-btn-sm {
+.ui-paging .ui-btn-sm {
   min-width: 32px;
 }
-.ui-pagination .ui-btn-xs {
+.ui-paging .ui-btn-xs {
   min-width: 26px;
 }
 .ui-btn-list {
@@ -4305,7 +4305,7 @@ dt + dd:not(:last-child) {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .ui-pagination .ui-btn:not(.ui-prev):not(.ui-next):not(.ui-btn-active) {
+  .ui-paging .ui-btn:not(.ui-prev):not(.ui-next):not(.ui-btn-active) {
     display: none;
   }
   .ui-btn-holder.ui-btn-sm-fluid > .ui-btn {

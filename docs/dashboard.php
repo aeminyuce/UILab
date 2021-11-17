@@ -1517,7 +1517,7 @@
                                                 </div>
                                             </div>
                                             <div class="ui-col-8 ui-align-r">
-                                                <div class="ui-datatable-paging ui-pagination ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-theme-panel2 ui-fill-dark-100"></div>
+                                                <div class="ui-datatable-paging ui-paging ui-ease-1st-btn" data-ui-default="ui-btn ui-round" data-ui-active="ui-theme-panel2 ui-fill-dark-100"></div>
                                             </div>
                                         </div>
 

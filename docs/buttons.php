@@ -312,10 +312,10 @@
                     </div>
                 </div>
 
-                <h3 class="ui-h3">ui-pagination Buttons</h3>
+                <h3 class="ui-h3">Paging Buttons</h3>
                 <div class="ui-p-30-b">
 
-                    <div class="ui-pagination ui-align-c ui-theme-sub ui-ease-1st-btn">
+                    <div class="ui-paging ui-align-c ui-theme-sub ui-ease-1st-btn">
                         <a class="ui-btn ui-btn-xs ui-prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-left"/></svg>
                         </a>
@@ -336,7 +336,7 @@
                         </a>
                     </div>
 
-                    <div class="ui-pagination ui-align-c ui-theme-sub ui-ease-1st-btn">
+                    <div class="ui-paging ui-align-c ui-theme-sub ui-ease-1st-btn">
                         <a class="ui-btn ui-btn-sm ui-prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-left"/></svg>
                         </a>
@@ -357,7 +357,7 @@
                         </a>
                     </div>
 
-                    <div class="ui-pagination ui-align-c ui-theme-sub ui-ease-1st-btn">
+                    <div class="ui-paging ui-align-c ui-theme-sub ui-ease-1st-btn">
                         <a class="ui-btn ui-prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-left"/></svg>
                         </a>
@@ -378,7 +378,7 @@
                         </a>
                     </div>
 
-                    <div class="ui-pagination ui-form-lg ui-align-c ui-theme-sub ui-ease-1st-btn">
+                    <div class="ui-paging ui-form-lg ui-align-c ui-theme-sub ui-ease-1st-btn">
                         <a class="ui-btn ui-prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-left"/></svg>
                         </a>

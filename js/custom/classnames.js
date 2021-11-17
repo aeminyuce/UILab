@@ -200,6 +200,9 @@ ui.classnames = {
                     } else if (['w','weather','days','graphs'].indexOf(title) >= 0) {
                         title = 'weather';
 
+                    } else if (['paging','prev','next'].indexOf(title) >= 0) {
+                        title = 'paging';
+
                     } else if (title === 'icon' || title === 'icons') {
                         title = 'icons';
 
