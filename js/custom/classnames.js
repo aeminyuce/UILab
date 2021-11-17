@@ -26,6 +26,7 @@ ui.classnames = {
 
     // values
     listLength: 5,
+
     filePath: 'xhr/ajax-pages.php',
     prefix: 'ui',
 
@@ -288,37 +289,42 @@ ui.classnames = {
 
                     function () {
 
-                        html = '<h4 class="' + ui.classnames.stylesCatTite + '">' + this + '</h4>' +
-
-                                '<div class="' + ui.classnames.stylesCatCard + '">' +
-                                    '<ul class="' + ui.classnames.stylesCatList;
-
                         items = arr.groups[this].split(',');
 
-                        if (ui.userAgents.ie) {
-                            items = items.sort(); // default sort for IE
+                        items = items.sort(function (a, b) {
+                            return a.length - b.length; // sort by length
+                        });
 
-                        } else {
-                            items = items.sort(collator.compare); // sort with collator
+                        function createRows() {
+
+                            for (i = 0; i < items.length; i++) {
+
+                                items[i] = items[i].replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+
+                                html += '<li>' + items[i] + '</li>';
+                                created += 1;
+
+                            }
+
                         }
+
+                        html = '<h4 class="' + ui.classnames.stylesCatTite + '">' + this + '</h4>' +
+                                '<div class="' + ui.classnames.stylesCatCard + '">';
 
                         if (items.length > ui.classnames.listLength) {
-                            html += ' ' + ui.classnames.stylesCatCols;
+
+                            html += '<ul class="' + ui.classnames.stylesCatList + ' ' + ui.classnames.stylesCatCols + '">';
+                            createRows();
+                            html += '</ul>';
+
+                        } else {
+
+                            html += '<ul class="' + ui.classnames.stylesCatList + '">';
+                            createRows();
+                            html += '</ul>';
                         }
 
-                        html += '">';
-
-                        for (i = 0; i < items.length; i++) {
-
-                            items[i] = items[i].replace(/^\s+|\s+$/g, ''); // remove first and last spaces
-
-                            html += '<li>' + items[i] + '</li>';
-                            created += 1;
-
-                        }
-
-                        html += '</ul></div>';
-
+                        html += '</div>';
                         list.insertAdjacentHTML('beforeend', html);
 
                     });
