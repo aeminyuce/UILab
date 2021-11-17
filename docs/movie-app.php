@@ -147,7 +147,7 @@
                                             <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image.jpg" alt=""></a>
                                             <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image2.jpg" alt=""></a>
                                             <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image3.jpg" alt=""></a>
-                                            <a class="ui-btn ui-btn-lg ui-btn-square ui-btn-ghost ui-circle ui-ease-btn" href="#">+38</a>
+                                            <a class="ui-btn ui-btn-lg ui-btn-square ui-circle ui-ease-btn" href="#">+38</a>
                                         </div>
                                     </div>
                                 </div>
