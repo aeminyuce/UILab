@@ -295,45 +295,13 @@
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v ui-open ui-open-ease" style="max-height: 420px;">
                                     <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-hide-h-lines">
-                                        <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
-                                        <li>
-                                            <span class="ui-avatar-holder ui-circle ui-hover-r-more-2nd ui-ease-2nd-layout">
-                                                <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image.jpg" alt=""></a>
-                                                <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image2.jpg" alt=""></a>
-                                                <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image3.jpg" alt=""></a>
-                                                <a class="ui-btn ui-btn-square ui-btn-ghost ui-m-5-r ui-circle ui-ease-btn" href="#">+3</a>
-                                            </span>
-                                        </li>
-                                        <li>
-                                            Lorem ipsum dolor sit amet.
-                                            <span class="ui-gallery ui-m-5-t ui-ease-gallery">
-                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_01.jpg"><img src="img/image_01.jpg" height="38" alt=""></a>
-                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_02.jpg"><img src="img/image_02.jpg" height="38" alt=""></a>
-                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_03.jpg"><img src="img/image_03.jpg" height="38" alt=""></a>
-                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_04.jpg"><img src="img/image_04.jpg" height="38" alt=""></a>
-                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_05.jpg"><img src="img/image_05.jpg" height="38" alt=""></a>
-                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_06.jpg"><img src="img/image_06.jpg" height="38" alt=""></a>
-                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_07.jpg"><img src="img/image_07.jpg" height="38" alt=""></a>
-                                                <a class="ui-photo ui-m-1-h ui-round" href="img/image_08.jpg"><img src="img/image_08.jpg" height="38" alt=""></a>
-                                            </span>
-                                        </li>
-                                        <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
-                                        <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
-                                        <li>
-                                            Nullam sit amet sagittis nisi.
-                                            <span class="ui-icons-xl ui-m-5-t ui-block ui-ease-1st-btn">
-                                                <a class="ui-btn ui-btn-square ui-p-4-v ui-round" href="#">
-                                                    <svg class="ui-icon"><use href="#file-pdf"/></svg>
-                                                </a>
-                                                <a class="ui-btn ui-btn-square ui-p-4-v ui-round" href="#">
-                                                    <svg class="ui-icon"><use href="#file-xls"/></svg>
-                                                </a>
-                                                <a class="ui-btn ui-btn-square ui-p-4-v ui-round" href="#">
-                                                    <svg class="ui-icon"><use href="#file-zip"/></svg>
-                                                </a>
-                                            </span>
-                                        </li>
+                                        <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                         <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
+                                        <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                        <li>Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien.</li>
+                                        <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
+                                        <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
+                                        <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
                                         <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                     </ul>
                                 </div>
@@ -883,11 +851,10 @@
                                                         <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image.jpg" alt=""></a>
                                                         <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image2.jpg" alt=""></a>
                                                         <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image3.jpg" alt=""></a>
-                                                        <a class="ui-btn ui-btn-square ui-btn-ghost ui-m-5-r ui-circle ui-ease-btn" href="#">+3</a>
+                                                        <a class="ui-btn ui-btn-square ui-m-5-r ui-circle ui-ease-btn" href="#">+3</a>
                                                     </span>
                                                 </li>
                                                 <li>
-                                                    Lorem ipsum dolor sit amet.
                                                     <span class="ui-gallery ui-m-5-t ui-ease-gallery">
                                                         <a class="ui-photo ui-m-1-h ui-round" href="img/image_01.jpg"><img src="img/image_01.jpg" height="38" alt=""></a>
                                                         <a class="ui-photo ui-m-1-h ui-round" href="img/image_02.jpg"><img src="img/image_02.jpg" height="38" alt=""></a>
@@ -903,16 +870,15 @@
                                                 <li>Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</li>
                                                 <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                                 <li>
-                                                    Nullam sit amet sagittis nisi.
-                                                    <span class="ui-icons-xl ui-m-5-t ui-block ui-ease-1st-btn">
-                                                        <a class="ui-btn ui-btn-square ui-p-3-v ui-round" href="#">
-                                                            <svg class="ui-icon"><use href="#file-pdf"/></svg>
+                                                    <span class="ui-icons-xl ui-icons-no-opacity ui-ease-1st-btn">
+                                                        <a class="ui-btn ui-btn-square ui-p-5-v ui-round" href="#">
+                                                            <svg class="ui-icon ui-m-2-v"><use href="#file-pdf-fill"/></svg>
                                                         </a>
-                                                        <a class="ui-btn ui-btn-square ui-p-3-v ui-round" href="#">
-                                                            <svg class="ui-icon"><use href="#file-xls"/></svg>
+                                                        <a class="ui-btn ui-btn-square ui-p-5-v ui-round" href="#">
+                                                            <svg class="ui-icon ui-m-2-v"><use href="#file-xls-fill"/></svg>
                                                         </a>
-                                                        <a class="ui-btn ui-btn-square ui-p-3-v ui-round" href="#">
-                                                            <svg class="ui-icon"><use href="#file-zip"/></svg>
+                                                        <a class="ui-btn ui-btn-square ui-p-5-v ui-round" href="#">
+                                                            <svg class="ui-icon ui-m-2-v"><use href="#file-zip-fill"/></svg>
                                                         </a>
                                                     </span>
                                                 </li>

@@ -64,7 +64,7 @@
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
                             <div class="ui-col-48 ui-align-c ui-p-4-v">
-                                <svg class="ui-icon ui-icon-xl ui-theme-sub ui-text"><use href="#info-circle-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xl"><use href="#info-circle"/></svg>
                             </div>
                             <div class="ui-row">
                                 <div class="ui-col-12 ui-sm-align-c ui-font-16">
@@ -86,7 +86,7 @@
                             </button>
                                 <div class="ui-col-static ui-sm-fluid">
                                     <div class="ui-col-48 ui-p-4-v ui-align-c">
-                                        <svg class="ui-icon ui-icon-xl ui-theme-sub ui-text"><use href="#info-circle-fill"/></svg>
+                                        <svg class="ui-icon ui-icon-xl"><use href="#info-circle"/></svg>
                                     </div>
                                     <div class="ui-row">
                                         <div class="ui-col-12 ui-sm-align-c ui-font-16">
@@ -217,7 +217,7 @@
                             <svg class="ui-icon"><use href="#remove"/></svg>
                         </button>
                         <h4 class="ui-h4">
-                            <svg class="ui-icon ui-icon-lg ui-color-red"><use href="#comment-lines-fill"/></svg>
+                            <svg class="ui-icon ui-icon-lg ui-color-orange"><use href="#comment-lines-fill"/></svg>
                             Message Title
                         </h4>
                         <p class="ui-font-16">Lorem ipsum dolor sit amet. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor.</p>
@@ -258,33 +258,15 @@
                         <span class="ui-sp-15"></span>
                         <a href="#" class="ui-btn ui-btn-xs-fluid ui-circle ui-fill-dark-100 ui-ease-btn">
                             Outgoing Link
-                            <svg class="ui-icon ui-m-5-l"><use href="#link"/></svg>
+                            <svg class="ui-icon ui-m-5-l"><use href="#long-arrow-right"/></svg>
                         </a>
                     </div>
                     <div class="ui-card-side ui-p-30-h ui-p-15-v ui-fill-light-300 ui-align-r ui-xs-align-c">
-                        <a href="#" class="ui-link ui-font-hoverline">Card Footer Link</a>
+                        <a href="#" class="ui-link ui-opacity ui-ease-opacity">Card Footer Link</a>
                     </div>
                 </div>
 
-                <div class="ui-card ui-round ui-theme-base ui-fill-light-100 ui-stroke">
-                    <div class="ui-card-side ui-p-30">
-                        <h4 class="ui-h4">
-                            <svg class="ui-icon ui-icon-xl ui-text"><use href="#help"/></svg>
-                            Card Title
-                        </h4>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
-                        <span class="ui-sp-15"></span>
-                        <a href="#" class="ui-btn ui-btn-xs-fluid ui-circle ui-fill-dark-100 ui-ease-btn">
-                            Outgoing Link
-                            <svg class="ui-icon ui-m-5-l"><use href="#link"/></svg>
-                        </a>
-                    </div>
-                    <div class="ui-card-side ui-p-30-h ui-p-15-v ui-fill-light-300 ui-align-r ui-xs-align-c">
-                        <a href="#" class="ui-link ui-font-hoverline">Card Footer Link</a>
-                    </div>
-                </div>
-
-                <div class="ui-card-warning ui-p-30 ui-round ui-theme-base ui-fill-light-100 ui-stroke">
+                <div class="ui-card-warning ui-p-30 ui-round ui-theme-green ui-fill-light-100 ui-stroke">
                     <h4 class="ui-h4">
                         <svg class="ui-icon ui-icon-xl ui-text"><use href="#help-fill"/></svg>
                         Message Title
@@ -293,20 +275,7 @@
                     <span class="ui-sp-15"></span>
                     <a href="#" class="ui-btn ui-btn-xs-fluid ui-circle ui-fill-dark-100 ui-ease-btn">
                         Outgoing Link
-                        <svg class="ui-icon ui-m-5-l"><use href="#link"/></svg>
-                    </a>
-                </div>
-
-                <div class="ui-card-warning ui-p-30 ui-round ui-theme-green ui-fill-light-100 ui-stroke">
-                    <h4 class="ui-h4">
-                        <svg class="ui-icon ui-icon-xl ui-text"><use href="#help"/></svg>
-                        Message Title
-                    </h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
-                    <span class="ui-sp-15"></span>
-                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-circle ui-fill-dark-100 ui-ease-btn">
-                        Outgoing Link
-                        <svg class="ui-icon ui-m-5-l"><use href="#link"/></svg>
+                        <svg class="ui-icon ui-m-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
 
@@ -319,7 +288,20 @@
                     <span class="ui-sp-15"></span>
                     <a href="#" class="ui-btn ui-btn-xs-fluid ui-circle ui-fill-dark-100 ui-ease-btn">
                         Outgoing Link
-                        <svg class="ui-icon ui-m-5-l"><use href="#link"/></svg>
+                        <svg class="ui-icon ui-m-5-l"><use href="#long-arrow-right"/></svg>
+                    </a>
+                </div>
+
+                <div class="ui-card-warning ui-p-30 ui-round ui-theme-red ui-fill-light-100 ui-stroke">
+                    <h4 class="ui-h4">
+                        <svg class="ui-icon ui-icon-xl ui-text"><use href="#help-fill"/></svg>
+                        Message Title
+                    </h4>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.
+                    <span class="ui-sp-15"></span>
+                    <a href="#" class="ui-btn ui-btn-xs-fluid ui-circle ui-fill-dark-100 ui-ease-btn">
+                        Outgoing Link
+                        <svg class="ui-icon ui-m-5-l"><use href="#long-arrow-right"/></svg>
                     </a>
                 </div>
 

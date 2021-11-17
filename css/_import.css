@@ -5861,7 +5861,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   stroke: none !important;
 }
 .ui-svg-s {
-  opacity: 0.45;
+  opacity: 0.32;
 }
 .ui-svg-fr {
   fill-rule: evenodd;
@@ -6624,7 +6624,7 @@ html:not(.ui-ie) .ui-steps-bar li {
   position: absolute;
   top: 13px;
   left: -50%;
-  opacity: 0.45;
+  opacity: 0.32;
 }
 .ui-steps-bar li:first-child:after {
   content: none;
