@@ -25,7 +25,7 @@
     include ('../loading-mask.php');
     include ('../modal.php');
     include ('../gallery.php');
-    include ('../photo-slider.php');
+    include ('../photoslide.php');
     include ('../pricing-tables.php');
     include ('../progress-bar.php');
     include ('../steps.php');

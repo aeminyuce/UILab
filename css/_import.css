@@ -68,8 +68,8 @@
   --ui-image-uploader-list-border: hsla(0, 0%, 0%, 0.15);
   --ui-image-uploader-list-tag-color: hsla(0, 0%, 0%, 0.5);
   --ui-image-uploader-list-tag-bg: hsla(0, 0%, 0%, 0.08);
-  --ui-photo-slider-dot-bg: hsla(0, 0%, 0%, 0.2);
-  --ui-photo-slider-dot-selected-bg: hsla(0, 0%, 0%, 0.35);
+  --ui-photoslide-dot-bg: hsla(0, 0%, 0%, 0.4);
+  --ui-photoslide-dot-selected-bg: hsla(0, 0%, 0%, 0.65);
   --ui-svg-map-path-fill: hsla(0, 0%, 0%, 0.08);
   --ui-svg-map-path-fill-hover: hsla(0, 0%, 0%, 0.15);
 }
@@ -142,8 +142,8 @@
   --ui-image-uploader-list-border: hsla(0, 0%, 100%, 0.15);
   --ui-image-uploader-list-tag-color: hsl(0, 0%, 73%);
   --ui-image-uploader-list-tag-bg: hsla(0, 0%, 100%, 0.08);
-  --ui-photo-slider-dot-bg: hsla(0, 0%, 100%, 0.2);
-  --ui-photo-slider-dot-selected-bg: hsla(0, 0%, 100%, 0.35);
+  --ui-photoslide-dot-bg: hsla(0, 0%, 100%, 0.4);
+  --ui-photoslide-dot-selected-bg: hsla(0, 0%, 100%, 0.65);
   --ui-svg-map-path-fill: hsla(0, 0%, 100%, 0.08);
   --ui-svg-map-path-fill-hover: hsla(0, 0%, 100%, 0.15);
 }
@@ -156,7 +156,8 @@
 [class*="ui-"]:after {
   box-sizing: border-box;
 }
-[class*="ui-"]:focus {
+[class*="ui-"]:focus,
+[class*="ui-"] > input {
   outline-style: none;
   outline: 0;
 }
@@ -8865,8 +8866,8 @@ button.ui-dialog-custom:focus {
     max-width: 100%;
   }
 }
-/* photo slider */
-@keyframes ui-photo-slider-loader {
+/* photoslide */
+@keyframes ui-photoslide-loader {
   from {
     transform: rotate(0deg);
   }
@@ -8874,28 +8875,28 @@ button.ui-dialog-custom:focus {
     transform: rotate(360deg);
   }
 }
-.ui-photo-slider {
+.ui-photoslide {
   white-space: nowrap;
   overflow: hidden;
   display: block;
   position: relative;
 }
-.ui-photo-slider:not(.ui-loaded) {
+.ui-photoslide:not(.ui-loaded) {
   background-color: hsl(0, 0%, 98%);
   background-color: var(--ui-body-bg);
 }
-.ui-card .ui-photo-slider:not(.ui-loaded) {
+.ui-card .ui-photoslide:not(.ui-loaded) {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-card-bg);
 }
-.ui-photo-slider:not(.ui-loaded) .ui-slider-loader {
+.ui-photoslide:not(.ui-loaded) .ui-photoslide-loader {
   opacity: 0.45;
-  animation: ui-photo-slider-loader 1.15s linear infinite;
+  animation: ui-photoslide-loader 1.15s linear infinite;
 }
-.ui-photo-slider:not(.ui-loaded) img {
+.ui-photoslide:not(.ui-loaded) img {
   opacity: 0;
 }
-.ui-photo-slider .ui-slider-loader {
+.ui-photoslide-loader {
   width: 42px;
   height: 42px;
   stroke-width: 12px;
@@ -8907,7 +8908,7 @@ button.ui-dialog-custom:focus {
   opacity: 0;
   z-index: 1;
 }
-.ui-photo-slider img {
+.ui-photoslide img {
   vertical-align: middle;
   width: 100%;
   display: inline-block;
@@ -8915,22 +8916,24 @@ button.ui-dialog-custom:focus {
   position: relative;
   z-index: 2;
 }
-.ui-photo-slider .ui-btn {
+.ui-photoslide-prev,
+.ui-photoslide-next {
   position: absolute;
   top: 50%;
   z-index: 10;
   transform: translateY(-50%);
 }
-.ui-photo-slider .ui-btn:not(.ui-show) {
+.ui-photoslide-prev:not(.ui-show),
+.ui-photoslide-next:not(.ui-show) {
   display: none;
 }
-.ui-photo-slider .ui-btn.ui-prev {
+.ui-photoslide-prev {
   left: 0;
 }
-.ui-photo-slider .ui-btn.ui-next {
+.ui-photoslide-next {
   right: 0;
 }
-.ui-photo-slider .ui-photo-slider-nav {
+.ui-photoslide .ui-photoslide-nav {
   white-space: nowrap;
   text-align: center;
   line-height: 7px;
@@ -8943,21 +8946,21 @@ button.ui-dialog-custom:focus {
   cursor: default;
   transform: translateX(-50%);
 }
-.ui-photo-slider .ui-photo-slider-nav:not(.ui-show) {
+.ui-photoslide .ui-photoslide-nav:not(.ui-show) {
   display: none;
 }
-.ui-photo-slider .ui-photo-slider-nav i {
+.ui-photoslide .ui-photoslide-nav i {
   width: 7px;
   height: 7px;
-  background-color: hsla(0, 0%, 0%, 0.2);
-  background-color: var(--ui-photo-slider-dot-bg);
+  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: var(--ui-photoslide-dot-bg);
   margin: 0 3px;
   display: inline-block;
   border-radius: 50%;
 }
-.ui-photo-slider .ui-photo-slider-nav i.ui-selected {
-  background-color: hsla(0, 0%, 0%, 0.35);
-  background-color: var(--ui-photo-slider-dot-selected-bg);
+.ui-photoslide .ui-photoslide-nav i.ui-selected {
+  background-color: hsla(0, 0%, 0%, 0.65);
+  background-color: var(--ui-photoslide-dot-selected-bg);
   transform: scale(1.5);
 }
 /* weather */

@@ -61,7 +61,7 @@
     <script src="../js/datatable.js?v=<?php echo filemtime('../js/datatable.js'); ?>"></script>
     <script src="../js/image-uploader.js?v=<?php echo filemtime('../js/image-uploader.js'); ?>"></script>
     <script src="../js/gallery.js?v=<?php echo filemtime('../js/gallery.js'); ?>"></script>
-    <script src="../js/photo-slider.js?v=<?php echo filemtime('../js/photo-slider.js'); ?>"></script>
+    <script src="../js/photoslide.js?v=<?php echo filemtime('../js/photoslide.js'); ?>"></script>
     <script src="../js/weather.js?v=<?php echo filemtime('../js/weather.js'); ?>"></script>
 
     <script src="../js/line-charts.js?v=<?php echo filemtime('../js/line-charts.js'); ?>"></script>
@@ -179,7 +179,7 @@
                         <li><a class="ui-btn ui-btn-ghost" href="?p=listings">Listings</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=loading-mask">Loading Mask</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=modal">Modal</a></li>
-                        <li><a class="ui-btn ui-btn-ghost" href="?p=photo-slider">Photo Slider</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=photoslide">Photoslide</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=pricing-tables">Pricing Tables</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=progress-bar">Progress Bar</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=steps">Steps</a></li>

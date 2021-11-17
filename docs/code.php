@@ -460,10 +460,10 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="photo slider" value="../css/photo-slider">
+                                            <input type="checkbox" name="photoslide" value="../css/photoslide">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Photo Slider
+                                        Photoslide
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
@@ -804,10 +804,10 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="photo slider js" value="../js/photo-slider">
+                                            <input type="checkbox" name="photoslide js" value="../js/photoslide">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Photo Slider
+                                        photoslide
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
