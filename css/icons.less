@@ -33,6 +33,10 @@ each(@icon-sizes, { // do not merge
     .ui-icon-@{weight},.ui-icons-@{weight} .ui-icon:not([class*="ui-icon-"]) { ._icon-weight(@value) !important; }
 });
 
+.ui-icons-no-opacity {
+    .ui-icon:not(.ui-opacity-half) { opacity: 1 !important; }
+}
+
 each(@icons-margin-sizes, {
     @size: unit(@value);
 

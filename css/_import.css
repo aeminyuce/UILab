@@ -5922,6 +5922,9 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-icons-bold .ui-icon:not([class*="ui-icon-"]) {
   stroke-width: 36px !important;
 }
+.ui-icons-no-opacity .ui-icon:not(.ui-opacity-half) {
+  opacity: 1 !important;
+}
 .ui-icons-m-5-l .ui-icon {
   margin-left: 5px !important;
 }
