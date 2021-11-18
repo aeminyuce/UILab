@@ -180,10 +180,7 @@ ui.classnames = {
                     }
 
                     // filter rules
-                    if (['html','link'].indexOf(title) >= 0) {
-                        title = 'core';
-
-                    } else if (['container','fluid','fixed','row','gutter','col','push','pull','offset','order'].indexOf(title) >= 0) {
+                    if (['container','fluid','fixed','row','gutter','col','push','pull','offset','order'].indexOf(title) >= 0) {
                         title = 'grid system';
 
                     } else if (['h1','h2','h3','h4','h5','h6'].indexOf(title) >= 0) {

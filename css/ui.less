@@ -1,8 +1,13 @@
 // out: false
 /* ui */
 
+// reset
+@body-font-reset:                       true;
+@body-bg-reset:                         true;
+@body-margin-reset:                     true;
+
 // fonts
-@font-scaling:                          true; // responsive scaling for largest font sizes
+@large-fonts-scaling:                   true;
 
 @font-family:                           "Poppins", Roboto, "Helvetica Neue", Arial, sans-serif;
 @font-size:                             @font-14;
@@ -256,11 +261,11 @@
 }
 
 // font mixins
-._font-scale (@size) when (@font-scaling = false) {
+._font-scale (@size) when (@large-fonts-scaling = false) {
     font-size: @size; // fallback
 }
-._font-scale (@size) when (@font-scaling = true) {
-    @unit: (@size / 5);
+._font-scale (@size) when (@large-fonts-scaling = true) {
+    @unit: (@size / 4);
     @scale: unit(@unit);
 
     @number: round(@scale);
@@ -285,23 +290,26 @@
 }
 
 // reset
+html {
+    & when (@body-font-reset = true) {
+        font-family: @font-family; font-size: @font-size; font-weight: @font-normal; letter-spacing: @letter-spacing;
+    }
+    & when (@body-bg-reset = true) {
+        ._bg-var(body-bg);
+    }
+}
+& when (@body-margin-reset = true) {
+    body { margin: 0; }
+}
+
 [class*="ui-"] {
     padding: 0; margin: 0;
 
     &,&:before,&:after { box-sizing: border-box; }
 }
 
-.ui- {
-    &html {
-        font-family: @font-family; font-size: @font-size; font-weight: @font-normal; letter-spacing: @letter-spacing;
-        ._bg-var(body-bg);
-
-        body { margin: 0; }
-    }
-
-    &link {
-        &,&:active,&:hover { ._color-var(black); word-wrap: break-word; text-decoration: none; }
-    }
+.ui-link {
+    &,&:active,&:hover { ._color-var(black); word-wrap: break-word; text-decoration: none; }
 }
 
 // user agents
@@ -337,7 +345,7 @@
             .ui-hidden-light,.ui-visible-dark { display: none !important; }
         }
         @media (prefers-color-scheme: dark) {
-            .ui-html { ._color-var(black); }
+            html { ._color-var(black); }
 
             .ui-visible-light,.ui-hidden-dark { display: none !important; }
 

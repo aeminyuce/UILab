@@ -141,6 +141,17 @@
   --ui-map-path-fill: hsla(0, 0%, 100%, 0.08);
   --ui-map-path-fill-hover: hsla(0, 0%, 100%, 0.15);
 }
+html {
+  font-family: "Poppins", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  background-color: hsl(0, 0%, 98%);
+  background-color: var(--ui-body-bg);
+}
+body {
+  margin: 0;
+}
 [class*="ui-"] {
   padding: 0;
   margin: 0;
@@ -149,17 +160,6 @@
 [class*="ui-"]:before,
 [class*="ui-"]:after {
   box-sizing: border-box;
-}
-.ui-html {
-  font-family: "Poppins", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: -0.015em;
-  background-color: hsl(0, 0%, 98%);
-  background-color: var(--ui-body-bg);
-}
-.ui-html body {
-  margin: 0;
 }
 .ui-link,
 .ui-link:active,
@@ -3487,29 +3487,31 @@ html .ui-row {
 }
 .ui-font-22 {
   font-size: 22px !important;
+  font-size: clamp(11px, 22px, 6vw) !important;
 }
 .ui-font-24 {
   font-size: 24px !important;
+  font-size: clamp(12px, 24px, 6vw) !important;
 }
 .ui-font-28 {
   font-size: 28px !important;
-  font-size: clamp(14px, 28px, 6vw) !important;
+  font-size: clamp(14px, 28px, 7vw) !important;
 }
 .ui-font-30 {
   font-size: 30px !important;
-  font-size: clamp(15px, 30px, 6vw) !important;
+  font-size: clamp(15px, 30px, 8vw) !important;
 }
 .ui-font-36 {
   font-size: 36px !important;
-  font-size: clamp(18px, 36px, 7vw) !important;
+  font-size: clamp(18px, 36px, 9vw) !important;
 }
 .ui-font-38 {
   font-size: 38px !important;
-  font-size: clamp(19px, 38px, 8vw) !important;
+  font-size: clamp(19px, 38px, 10vw) !important;
 }
 .ui-font-48 {
   font-size: 48px !important;
-  font-size: clamp(24px, 48px, 10vw) !important;
+  font-size: clamp(24px, 48px, 12vw) !important;
 }
 .ui-font-lead {
   font-size: 18px;
@@ -3620,15 +3622,15 @@ html .ui-row {
 }
 .ui-h1 {
   font-size: 36px;
-  font-size: clamp(18px, 36px, 7vw);
+  font-size: clamp(18px, 36px, 9vw);
 }
 .ui-h2 {
   font-size: 30px;
-  font-size: clamp(15px, 30px, 6vw);
+  font-size: clamp(15px, 30px, 8vw);
 }
 .ui-h3 {
   font-size: 24px;
-  font-size: clamp(12px, 24px, 5vw);
+  font-size: clamp(12px, 24px, 6vw);
 }
 .ui-h4 {
   font-size: 18px;
