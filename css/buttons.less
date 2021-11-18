@@ -31,6 +31,8 @@
 .ui-btn {
     ._color-var(black); font-size: @font-15; text-decoration: none; text-align: center; vertical-align: middle; line-height: (@btn-default - (@btn-default-padding * 2)); height: @btn-default; ._bg-var(btn-bg); padding-top: @btn-default-padding; padding-bottom: @btn-default-padding; display: inline-block; position: relative; cursor: pointer; @no-appearance();
 
+    &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
+
     &:not(.ui-border):not([class*="ui-border-"]) { border-width: 0; }
     &:not(.ui-btn-multi) { white-space: nowrap; }
 
@@ -80,7 +82,7 @@
     }
 
     .ui-icon {
-        &:not(.ui-toggle-icon) { vertical-align: middle; ._icon(@btn-default-icon); margin-top: -2px; }
+        &:not(.ui-toggle-icon) { vertical-align: middle; ._icon(@btn-default-icon); }
         &:not(.ui-no-opacity) { opacity: .45; }
     }
     &[class*="ui-fill-dark-"] {
@@ -98,12 +100,11 @@
 }
 
 .ui-btn-lg,.ui-form-lg .ui-btn {
-    font-size: @font-16; line-height: (@btn-lg - (@btn-lg-padding * 2) - 2); height: @btn-lg; padding-top: @btn-lg-padding; padding-bottom: @btn-lg-padding;
+    font-size: @font-16; line-height: (@btn-lg - (@btn-lg-padding * 2)); height: @btn-lg; padding-top: @btn-lg-padding; padding-bottom: @btn-lg-padding;
 
     &:not(.ui-circle) { padding-right: (@btn-lg-padding + @btn-default-extra-padding); padding-left: (@btn-lg-padding + @btn-default-extra-padding); }
     &.ui-circle { padding-right: (@btn-lg-padding + @btn-circle-lg-extra-padding); padding-left: (@btn-lg-padding + @btn-circle-lg-extra-padding); }
 
-    &.ui-round { border-radius: (@round * 1.3333333333); }
     &.ui-btn-square { width: @btn-lg; }
 
     &.ui-border {
@@ -121,7 +122,6 @@
     &:not(.ui-circle) { padding-right: (@btn-sm-padding + @btn-default-extra-padding); padding-left: (@btn-sm-padding + @btn-default-extra-padding); }
     &.ui-circle { padding-right: (@btn-sm-padding + @btn-circle-extra-padding); padding-left: (@btn-sm-padding + @btn-circle-extra-padding); }
 
-    &.ui-round { border-radius: (@round - @round * 0.3333333333); }
     &.ui-btn-square { width: @btn-sm; }
 
     &.ui-border {
@@ -139,7 +139,6 @@
     &:not(.ui-circle) { padding-right: (@btn-xs-padding + @btn-default-extra-padding); padding-left: (@btn-xs-padding + @btn-default-extra-padding); }
     &.ui-circle { padding-right: (@btn-xs-padding + @btn-circle-extra-padding); padding-left: (@btn-xs-padding + @btn-circle-extra-padding); }
 
-    &.ui-round { border-radius: (@round / 2); }
     &.ui-btn-square { width: @btn-xs; }
 
     &.ui-border {

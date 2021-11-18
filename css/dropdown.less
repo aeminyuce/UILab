@@ -5,10 +5,12 @@
 @dropdown-menu-open-scale:                .95;
 
 @dropdown-toggle-icon-size:               12px;
+@dropdown-toggle-icon-sm-size:            12px;
 @dropdown-toggle-icon-xs-size:            10px;
 
-@dropdown-toggle-right-icon-margins:      4px;
-@dropdown-toggle-right-icon-xs-margins:   2px;
+@dropdown-toggle-right-icon-margins:      6px;
+@dropdown-toggle-right-icon-sm-margins:   4px;
+@dropdown-toggle-right-icon-xs-margins:   3px;
 
 @dropdown-menu-space:                     1px;
 @dropdown-menu-min-width:                 100%;
@@ -74,11 +76,18 @@
 
         &:not(.ui-btn-square) { width: 100%; }
 
-        &:not(.ui-btn-xs) {
+        &:not(.ui-btn-sm):not(.ui-btn-xs) {
             .ui-toggle-icon {
                 ._icon(@dropdown-toggle-icon-size) !important; margin-top: -2px;
 
                 &.ui-float-r { margin-top: @dropdown-toggle-right-icon-margins; margin-bottom: @dropdown-toggle-right-icon-margins; }
+            }
+        }
+        &.ui-btn-sm {
+            .ui-toggle-icon {
+                ._icon(@dropdown-toggle-icon-sm-size) !important; margin-top: -2px;
+
+                &.ui-float-r { margin-top: @dropdown-toggle-right-icon-sm-margins; margin-bottom: @dropdown-toggle-right-icon-sm-margins; }
             }
         }
         &.ui-btn-xs {

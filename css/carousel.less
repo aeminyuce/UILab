@@ -111,6 +111,8 @@
 			.ui-photo {
 				width: 100%; height: auto; background-clip: content-box; border: solid @carousel-thumbs-border @no-color; cursor: pointer;
 
+				&.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
+
 				&.ui-selected { border-color: @carousel-thumbs-selected-color; }
 				.ui-desktop &:not(.ui-selected):not(:hover) { opacity: @carousel-thumbs-not-selected-opacity; }
 			}

@@ -103,13 +103,17 @@
     border-radius: @round;
     &:extend([class*="ui-round-"]);
 
-    & > .ui-round,& > * > .ui-round,
-    & > [class*="ui-round-"],& > * > [class*="ui-round-"] { border-radius: (@round - 1) !important; }
+    & > .ui-round,& > * > .ui-round { border-radius: (@round - 1) !important; }
 
     &-t { border-radius: @round @round 0 0; }
     &-r { border-radius: 0 @round @round 0; }
     &-b { border-radius: 0 0 @round @round; }
     &-l { border-radius: @round 0 0 @round; }
+
+    & > .ui-round-t,& > * > .ui-round-t { border-radius: (@round - 1) (@round - 1) 0 0 !important; }
+    & > .ui-round-r,& > * > .ui-round-r { border-radius: 0 (@round - 1) (@round - 1) 0 !important; }
+    & > .ui-round-b,& > * > .ui-round-b { border-radius: 0 0 (@round - 1) (@round - 1) !important; }
+    & > .ui-round-l,& > * > .ui-round-l { border-radius: (@round - 1) 0 0 (@round - 1) !important; }
 }
 
 .ui-circle {

@@ -4,13 +4,12 @@
 // fonts
 @font-scaling:                          true; // responsive scaling for largest font sizes
 
-@font-family:                           "Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif;
+@font-family:                           "Poppins", Roboto, "Helvetica Neue", Arial, sans-serif;
 @font-size:                             @font-14;
 @letter-spacing:                        -0.015em;
 
-@line-height:                           1.42857143;
-@line-height-readable:                  1.66em;
-@line-height-condensed:                 1.2em;
+@line-height-readable:                  170%;
+@line-height-condensed:                 120%;
 
 @font-bold:                             700;
 @font-semibold:                         500;
@@ -47,7 +46,7 @@
 // metrics
 @increases:                             1px 2px 3px 4px 5px 10px 15px 20px 25px 30px;
 
-@round:                                 8px;
+@round:                                 10px;
 @circle:                                1000px;
 
 @border-dual:                           2px;
@@ -294,7 +293,7 @@
 
 .ui- {
     &html {
-        font-family: @font-family; font-size: @font-size; font-weight: @font-normal; line-height: @line-height; letter-spacing: @letter-spacing;
+        font-family: @font-family; font-size: @font-size; font-weight: @font-normal; letter-spacing: @letter-spacing;
         ._bg-var(body-bg);
 
         body { margin: 0; }
