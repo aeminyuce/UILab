@@ -2002,7 +2002,7 @@ html .ui-row {
   box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.05);
 }
 .ui-shadow-lg {
-  box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.05), 0 1px 15px hsla(0, 0%, 0%, 0.15);
 }
 .ui-shadow-in {
   box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.1);
@@ -2011,7 +2011,7 @@ html .ui-row {
   box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.05);
 }
 .ui-shadow-in-lg {
-  box-shadow: inset 0 5px 15px hsla(0, 0%, 0%, 0.1);
+  box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.05), 0 1px 15px hsla(0, 0%, 0%, 0.15);
 }
 .ui-no-opacity,
 .ui-desktop .ui-opacity:hover,
@@ -2038,7 +2038,7 @@ html .ui-row {
 .ui-desktop .ui-hover-shadow:hover,
 .ui-desktop .ui-hover-shadow-1st > *:hover,
 .ui-desktop .ui-hover-shadow-2nd > * > *:hover {
-  box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 1px 5px hsla(0, 0%, 0%, 0.05), 0 15px 20px hsla(0, 0%, 0%, 0.15);
 }
 .ui-desktop .ui-hover-scale:hover,
 .ui-desktop .ui-hover-scale-1st > *:hover,
