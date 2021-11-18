@@ -1975,7 +1975,7 @@ html .ui-row {
 }
 .ui-round > .ui-round,
 .ui-round > * > .ui-round {
-  border-radius: 9px !important;
+  border-radius: 9px;
 }
 .ui-round-t {
   border-radius: 10px 10px 0 0;
@@ -1991,19 +1991,19 @@ html .ui-row {
 }
 .ui-round > .ui-round-t,
 .ui-round > * > .ui-round-t {
-  border-radius: 9px 9px 0 0 !important;
+  border-radius: 9px 9px 0 0;
 }
 .ui-round > .ui-round-r,
 .ui-round > * > .ui-round-r {
-  border-radius: 0 9px 9px 0 !important;
+  border-radius: 0 9px 9px 0;
 }
 .ui-round > .ui-round-b,
 .ui-round > * > .ui-round-b {
-  border-radius: 0 0 9px 9px !important;
+  border-radius: 0 0 9px 9px;
 }
 .ui-round > .ui-round-l,
 .ui-round > * > .ui-round-l {
-  border-radius: 9px 0 0 9px !important;
+  border-radius: 9px 0 0 9px;
 }
 .ui-circle {
   border-radius: 1000px;
@@ -4457,6 +4457,10 @@ dt + dd:not(:last-child) {
 .ui-tabs .ui-tab-content:not(.ui-open-ease) {
   opacity: 0;
 }
+.ui-tabs .ui-tab-content li > a:not(.ui-btn) {
+  word-wrap: break-word;
+  text-decoration: none;
+}
 .ui-dropdown .ui-tabs {
   min-width: 300px;
 }
@@ -5015,8 +5019,11 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   height: 20px;
   stroke-width: 30px;
 }
+.ui-file.ui-round.ui-round {
+  border-radius: 6.66666667px;
+}
 .ui-file.ui-round .ui-btn:not(.ui-btn-square) {
-  border-radius: 5px 0 0 5px;
+  border-radius: 5.66666667px 0 0 5.66666667px;
 }
 .ui-desktop .ui-file:hover input[class] {
   opacity: 0.35;
@@ -5237,8 +5244,11 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-radio input:checked + .ui-form-state {
   opacity: 1;
 }
+.ui-check.ui-round {
+  border-radius: 6.66666667px;
+}
 .ui-check.ui-round .ui-form-state {
-  border-radius: 5px;
+  border-radius: 3.33333333px;
 }
 .ui-check input:checked + i,
 .ui-check input:indeterminate + .ui-form-state {
@@ -5371,6 +5381,9 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-form-holder .ui-input,
 .ui-form-holder .ui-select {
   min-width: inherit !important;
+}
+.ui-form-holder .ui-round {
+  border-radius: 5.66666667px;
 }
 .ui-form-holder-focus [class*="ui-col-"] > * {
   border-color: hsla(0, 0%, 0%, 0.35);

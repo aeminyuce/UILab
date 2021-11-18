@@ -1639,7 +1639,7 @@
                 </div>
 
                 <h3 class="ui-h3">Forms in Dark Themes</h3>
-                <div class="ui-p-15 ui-m-30-b ui-round ui-theme-base ui-fill-dark-100">
+                <div class="ui-p-15 ui-m-30-b ui-round ui-theme-base ui-fill-dark-200">
 
                     <div class="ui-input ui-form-light ui-m-10-b ui-round ui-border-dual ui-ease-form">
                         <input type="text" placeholder="Placeholder">

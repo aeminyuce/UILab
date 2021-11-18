@@ -40,6 +40,10 @@
         &-content {
             &:not(.ui-open) { display: none !important; }
             &:not(.ui-open-ease) { opacity: 0; }
+
+            li > a {
+                &:not(.ui-btn) { word-wrap: break-word; text-decoration: none; }
+            }
         }
     }
 

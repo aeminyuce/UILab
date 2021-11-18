@@ -214,7 +214,9 @@ html:not(.ui-no-effects) {
             .ui-icon { ._icon((@btn-default-icon - 2)); }
         }
         &.ui-round {
-            .ui-btn:not(.ui-btn-square) { border-radius: (@round / 2) 0 0 (@round / 2); }
+            &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
+
+            .ui-btn:not(.ui-btn-square) { border-radius: (@round - (@round * 0.3333333333) - 1) 0 0 (@round - (@round * 0.3333333333) - 1); }
         }
         .ui-desktop &:hover {
             input[class] { opacity: @file-input-hover-opacity; }
@@ -304,7 +306,11 @@ html:not(.ui-no-effects) {
     }
 
     &check {
-        &.ui-round .ui-form-state { border-radius: (@round / 2); }
+        &.ui-round {
+            border-radius: (@round - (@round * 0.3333333333));
+
+            .ui-form-state { border-radius: ((@round - (@round * 0.3333333333)) / 2); }
+        }
         input {
             &:checked + i,&:indeterminate + .ui-form-state { opacity: 1; }
             &:indeterminate + .ui-form-state { height: @indeterminate-state-size; }
@@ -395,6 +401,8 @@ html:not(.ui-no-effects) {
 
     &holder {
         .ui-input,.ui-select { min-width: inherit !important; }
+
+        .ui-round { border-radius: (@round - (@round * 0.3333333333) - 1); }
 
         &-focus {
             [class*="ui-col-"] {
