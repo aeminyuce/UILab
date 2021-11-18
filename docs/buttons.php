@@ -114,27 +114,27 @@
                     <span class="ui-sp-15"></span>
 
                     <div class="ui-col-6">
-                        <a class="ui-btn ui-btn-lg ui-circle" href="#">
+                        <a class="ui-btn ui-btn-lg ui-round" href="#">
                             Large Button <svg class="ui-icon ui-float-r"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
-                        <a class="ui-btn ui-btn-lg ui-circle" href="#">
+                        <a class="ui-btn ui-btn-lg ui-round" href="#">
                             Large Button <svg class="ui-icon ui-float-r"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
-                        <a class="ui-btn ui-circle" href="#">
+                        <a class="ui-btn ui-round" href="#">
                             Default Button <svg class="ui-icon ui-float-r"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
-                        <a class="ui-btn ui-btn-sm ui-circle" href="#">
+                        <a class="ui-btn ui-btn-sm ui-round" href="#">
                             Small Button <svg class="ui-icon ui-float-r"><use href="#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
-                        <a class="ui-btn ui-btn-xs ui-circle" href="#">
+                        <a class="ui-btn ui-btn-xs ui-round" href="#">
                             Extra Small Button <svg class="ui-icon ui-float-r"><use href="#comment"/></svg>
                         </a>
                     </div>
