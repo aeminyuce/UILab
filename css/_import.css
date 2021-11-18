@@ -6004,6 +6004,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   margin: 0;
 }
 .ui-list-group > ul > li {
+  box-sizing: border-box;
   position: relative;
 }
 .ui-list-group > ul > li,
