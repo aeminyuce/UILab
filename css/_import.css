@@ -8103,12 +8103,12 @@ button.ui-dialog-custom {
   animation-play-state: paused !important;
 }
 .ui-carousel-gallery-detail {
-  min-height: 210px;
   position: relative;
 }
 .ui-carousel-gallery-detail img {
   width: 100%;
   height: auto;
+  vertical-align: middle;
   display: inline-block;
   border: 0;
   position: relative;
@@ -8180,6 +8180,11 @@ button.ui-dialog-custom {
 }
 .ui-bring-l:not(.ui-show) {
   transform: translateX(-15px);
+}
+@media (min-width: 960px) {
+  .ui-carousel-gallery-detail {
+    min-height: 210px;
+  }
 }
 @media (max-width: 959px) {
   .ui-md-bring-front:not(.ui-show) {

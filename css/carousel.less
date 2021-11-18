@@ -80,9 +80,9 @@
 
 	&-gallery {
 		&-detail {
-			min-height: @carousel-gallery-detail-min-height; position: relative;
+			position: relative;
 
-			img { width: 100%; height: auto; display: inline-block; border: 0; position: relative; z-index: 2; cursor: pointer; }
+			img { width: 100%; height: auto; vertical-align: middle; display: inline-block; border: 0; position: relative; z-index: 2; cursor: pointer; }
 
 			.ui-desktop &:not(.ui-carousel-gallery-detail-loader) {
 				img {
@@ -134,6 +134,9 @@
 
 ._create-bring-animates();
 
+@media (@default-start) {
+	.ui-carousel-gallery-detail { min-height: @carousel-gallery-detail-min-height; }
+}
 @media (@md-finish) {
 	._create-bring-animates(md-bring-);
 }

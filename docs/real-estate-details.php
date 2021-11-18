@@ -10,8 +10,8 @@
                 <div class="ui-col-12">
 
                     <div class="ui-carousel-gallery">
-                        <div class="ui-carousel-gallery-detail ui-shadow-lg">
-                            <img src="img/house_01.jpg" class="ui-gallery-call ui-round ui-ease-layout" data-ui-target="#realEstateGallery" data-ui-count="0" alt="">
+                        <div class="ui-carousel-gallery-detail">
+                            <img src="img/house_01.jpg" class="ui-gallery-call ui-round ui-shadow-lg ui-ease-layout" data-ui-target="#realEstateGallery" data-ui-count="0" alt="">
                             <svg class="ui-carousel-gallery-zoom ui-icon"><use href="#expand-wide"/></svg>
                             <svg class="ui-carousel-gallery-loader ui-icon"><use href="#loader-line"/></svg>
                         </div>
