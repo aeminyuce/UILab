@@ -226,7 +226,7 @@ ui.classnames = {
                         title = 'displaying types';
 
                     } else if (title === 'list' || title === 'blockquote') {
-                        title = 'listings';
+                        title = 'listings &amp; list groups';
 
                     } else if (title === 'tab' || title === 'tabs') {
                         title = 'tabs';
