@@ -81,9 +81,10 @@
 
                 <div class="ui-p-30 ui-no-p-b ui-md-no-p">
 
-                    <header class="ui-row ui-no-row-gap-t ui-sticky-md ui-icons-no-opacity ui-form-lg" data-ui-classes="ui-shadow-lg">
+                    <header class="ui-row ui-no-row-gap-t ui-sticky-md ui-form-lg" data-ui-classes="ui-shadow-lg">
+
                         <div class="ui-col-6 ui-hidden-md ui-ease-1st-form">
-                            <div class="ui-input ui-form-icon-all ui-m-15-b ui-circle ui-no-border ui-theme-gray ui-fill-light-300 ui-form-has-clear">
+                            <div class="ui-input ui-form-icon-all ui-m-15-b ui-circle ui-form-has-clear">
                                 <svg class="ui-icon ui-form-icon-l"><use href="#search"/></svg>
                                 <button type="button" class="ui-form-clear">
                                     <svg class="ui-icon"><use href="#remove"/></svg>
@@ -91,7 +92,8 @@
                                 <input type="text" placeholder="Search for movies, TV shows...">
                             </div>
                         </div>
-                        <div class="ui-col-6 ui-align-r">
+
+                        <div class="ui-col-6 ui-align-r ui-icons-no-opacity">
                             <span class="ui-align-c ui-color-black-50 ui-m-20-r ui-sm-no-m ui-ease-1st-btn">
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-m-10-l ui-circle ui-float-l ui-sidebar-show-l ui-visible-md">
                                     <svg class="ui-icon"><use href="#bars-left"/></svg>
@@ -444,46 +446,46 @@
             </div>
 
             <div class="ui-row ui-no-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity ui-icons-m-5-v ui-hover-t-more-2nd ui-theme-base ui-ease-2nd-btn">
-                <div class="ui-col-4 ui-p-10-b">
+                <div class="ui-col-4 ui-col-sm-6 ui-col-xs-6">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#tv"/></svg>
                         <span class="ui-font-18 ui-block ui-m-5-t">TV Shows</span>
-                        <span class="ui-color-black-25">1024</span>
+                        <span class="ui-opacity-half">1024</span>
                     </a>
                 </div>
-                <div class="ui-col-4 ui-p-10-b">
+                <div class="ui-col-4 ui-col-sm-6 ui-col-xs-6">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#film"/></svg>
                         <span class="ui-font-18 ui-block ui-m-5-t">Films</span>
-                        <span class="ui-color-black-25">775</span>
+                        <span class="ui-opacity-half">775</span>
                     </a>
                 </div>
-                <div class="ui-col-4 ui-p-10-b">
+                <div class="ui-col-4 ui-col-sm-6 ui-col-xs-6">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#trophy-star"/></svg>
                         <span class="ui-font-18 ui-block ui-m-5-t">Sports</span>
-                        <span class="ui-color-black-25">316</span>
+                        <span class="ui-opacity-half">316</span>
                     </a>
                 </div>
-                <div class="ui-col-4 ui-p-10-b">
+                <div class="ui-col-4 ui-col-sm-6 ui-col-xs-6">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#music"/></svg>
                         <span class="ui-font-18 ui-block ui-m-5-t">Concerts</span>
-                        <span class="ui-color-black-25">589</span>
+                        <span class="ui-opacity-half">589</span>
                     </a>
                 </div>
-                <div class="ui-col-4 ui-p-10-b">
+                <div class="ui-col-4 ui-col-sm-6 ui-col-xs-6">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#face-smile"/></svg>
                         <span class="ui-font-18 ui-block ui-m-5-t">Comedy</span>
-                        <span class="ui-color-black-25">219</span>
+                        <span class="ui-opacity-half">219</span>
                     </a>
                 </div>
-                <div class="ui-col-4 ui-p-10-b">
+                <div class="ui-col-4 ui-col-sm-6 ui-col-xs-6">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#video"/></svg>
                         <span class="ui-font-18 ui-block ui-m-5-t">Others</span>
-                        <span class="ui-color-black-25">701</span>
+                        <span class="ui-opacity-half">701</span>
                     </a>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 <!-- custom JS -->
-<script src="../js/custom/download.js?v=<?php echo filemtime('../js/custom/download.js'); ?>"></script>
+<script src="../js/custom/code.js?v=<?php echo filemtime('../js/custom/code.js'); ?>"></script>
 
 <main class="ui-container">
     <div class="ui-row">
@@ -24,7 +24,7 @@
 
                         <div class="ui-align-c ui-m-30-b">
                             <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form ui-form-inline-xs">
-                                <input class="ui-cursor-pointer" name="less" class="generate-import" type="file">
+                                <input class="generate-import ui-cursor-pointer" name="less" type="file">
                                 <span class="ui-btn ui-circle ui-block ui-ease-btn">
                                     <span class="ui-inline-block">Import LESS File</span>
                                     <svg class="ui-icon ui-m-5-l"><use href="#import"/></svg>
@@ -449,7 +449,7 @@
                                             <input type="checkbox" name="imgupload" value="../css/imgupload">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Imag Upload
+                                        Image Upload
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
@@ -501,15 +501,17 @@
                             <div class="ui-col-12 ui-no-p-t">
 
                                 <div class="ui-textarea ui-m-15-b ui-round ui-border-dual ui-ease-form">
-                                    <textarea class="ui-color-black-50 ui-font-16 ui-p-10" rows="12" placeholder="Generated CSS will be here!"></textarea>
+                                    <textarea class="ui-color-black-50 ui-font-16 ui-p-10" rows="6"></textarea>
                                     <div class="ui-border-t ui-border-dual">
                                         <div class="ui-inline-block ui-p-5-r">
                                             <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
                                             </button>
+                                            <!--
                                             <button title="Minify code" name="css" class="generate-min ui-btn ui-btn-square ui-btn-ghost ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#code"/></svg>
                                             </button>
+                                            -->
                                         </div>
                                         File size:
                                         <b class="generate-size">0 Kb</b>
@@ -534,7 +536,7 @@
 
                         <div class="ui-align-c ui-m-30-b">
                             <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form ui-form-inline-xs">
-                                <input class="ui-cursor-pointer" name="js" class="generate-import" type="file">
+                                <input class="generate-import ui-cursor-pointer" name="js" type="file">
                                 <span class="ui-btn ui-circle ui-block ui-ease-btn">
                                     <span class="ui-inline-block">Import JS File</span>
                                     <svg class="ui-icon ui-m-5-l"><use href="#import"/></svg>
@@ -869,7 +871,7 @@
                             <div class="ui-col-12 ui-no-p-t">
 
                                 <div class="ui-textarea ui-m-15-b ui-round ui-border-dual ui-ease-form">
-                                    <textarea class="ui-color-black-50 ui-font-16 ui-p-10" rows="12" placeholder="Generated JS will be here!"></textarea>
+                                    <textarea class="ui-color-black-50 ui-font-16 ui-p-10" rows="6"></textarea>
                                     <div class="ui-border-t ui-border-dual">
                                         <div class="ui-inline-block ui-p-5-r">
                                             <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
@@ -1000,7 +1002,7 @@
                             <div class="ui-col-12 ui-no-p-t">
 
                                 <div class="ui-textarea ui-m-15-b ui-round ui-border-dual ui-ease-form">
-                                    <textarea class="ui-color-black-50 ui-font-16 ui-p-10" rows="12" placeholder="Generated icons will be here!"></textarea>
+                                    <textarea class="ui-color-black-50 ui-font-16 ui-p-10" rows="6"></textarea>
                                     <div class="ui-border-t ui-border-dual">
                                         <div class="ui-inline-block ui-p-5-r">
                                             <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">

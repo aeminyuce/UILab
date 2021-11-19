@@ -57,6 +57,7 @@ function pullFiles(that) {
 
                         result.value = pullResults;
                         result.scrollTop = 0; // IE, EDGE: scrollTo() not supported for textarea element
+                        result.rows = 24;
 
                         fileSize(holder, pullResults);
 
@@ -235,12 +236,14 @@ function generator() {
 
         function () {
 
-            var holder, form;
+            var holder, result;
 
             holder = ui.closest(this, '.generate-holder')[0];
-            form = ui.find('textarea', holder)[0];
+            result = ui.find('textarea', holder)[0];
 
-            form.value = '';
+            result.value = '';
+            result.rows = 6;
+
             ui.find('.generate-size', holder)[0].innerHTML = '0 kb';
 
         });
@@ -282,6 +285,7 @@ function generator() {
 
             result.value = code;
             result.scrollTop = 0; // IE, EDGE: scrollTo() not supported for textarea element
+            result.rows = 12;
 
             fileSize(holder, code);
 

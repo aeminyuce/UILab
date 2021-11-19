@@ -12,11 +12,14 @@
 
 @form-clear-icon-size:                 16px;
 
-@form-focus-bg:                        fade(@black, 1.5%);
+@form-bg:                              fade(@black, 1.75%);
+@form-bg-dark:                         fade(@white, 2.75%);
+
+@form-focus-bg:                        fade(@black, 3%);
 @form-focus-bg-dark:                   fade(@white, 7.5%);
 @form-focus-border:                    fade(@black, 35%);
 @form-focus-border-dark:               fade(@white, 65%);
-@form-focus-shadow:                    inset 0 0 2px fade(@black, 7.5%);
+@form-focus-shadow:                    inset 0 1px 2px fade(@black, 15%);
 
 @select-multi-options-border:          fade(@black, 4.5%);
 @select-multi-options-border-dark:     fade(@white, 4.5%);
@@ -58,6 +61,8 @@
 @form-readonly-color-dark:             fade(@white, 65%);
 
 ._global-vars () {
+    --ui-form-bg: @form-bg;
+
     --ui-form-focus-bg: @form-focus-bg;
     --ui-form-focus-border: @form-focus-border;
 
@@ -77,14 +82,16 @@
     --ui-form-readonly-color: @form-readonly-color;
 }
 ._global-vars-dark () {
+    --ui-form-bg: @form-bg-dark;
+
+    --ui-form-focus-bg: @form-focus-bg-dark;
+    --ui-form-focus-border: @form-focus-border-dark;
+
     --ui-select-multi-options-border: @select-multi-options-border-dark;
 
     --ui-range-thumb-color: @range-thumb-color-dark;
     --ui-range-track-bg: @range-track-bg-dark;
     --ui-range-track-hover-bg: @range-track-hover-bg-dark;
-
-    --ui-form-focus-bg: @form-focus-bg-dark;
-    --ui-form-focus-border: @form-focus-border-dark;
 
     --ui-placeholder-color: @placeholder-color-dark;
     --ui-placeholder-focus-color: @placeholder-focus-color-dark;
@@ -123,7 +130,7 @@ html:not(.ui-no-effects) {
 
 .ui- {
     &input,&select,&select-multi,&textarea {
-        ._border-var(); overflow: hidden; display: block; position: relative;
+        ._bg-var(form-bg); ._border-var(); overflow: hidden; display: block; position: relative;
 
         &:not([class*="ui-align-"]) {
             select { text-align: left !important; }
