@@ -5,7 +5,7 @@
 
                 <h3 class="ui-h3">List Group Examples</h3>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-ease-listgroup">
                         <li>Lorem ipsum dolor sit amet.</li>
                         <li>Sed finibus rhoncus.</li>
@@ -16,7 +16,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-list-col-2 ui-ease-listgroup">
                         <li>Lorem ipsum dolor sit amet.</li>
                         <li>Sed finibus rhoncus.</li>
@@ -29,7 +29,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-list-col-3 ui-ease-listgroup">
                         <li>Lorem ipsum dolor sit amet.</li>
                         <li>Sed finibus rhoncus.</li>
@@ -51,7 +51,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-list-col-4 ui-ease-listgroup">
                         <li>Lorem ipsum dolor sit amet.</li>
                         <li>Sed finibus rhoncus.</li>
@@ -70,7 +70,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-ease-listgroup">
                         <li>
                             <a href="#">
@@ -101,7 +101,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-ease-listgroup">
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                         <li>Sed finibus rhoncus erat, vitae porttitor sem gravida et.</li>
@@ -115,7 +115,7 @@
 
                 <h3 class="ui-h3">List Groups with List Icons</h3>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-listgroup-has-icon-xxl ui-ease-listgroup">
                         <li>
                             <a href="#">
@@ -146,7 +146,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-listgroup-has-icon-xl ui-ease-listgroup">
                         <li>
                             <a href="#">
@@ -174,7 +174,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-listgroup-has-icon-lg ui-ease-listgroup">
                         <li>
                             <a href="#">
@@ -199,7 +199,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-listgroup-has-icon ui-ease-listgroup">
                         <li>
                             <a href="#">
@@ -224,7 +224,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-listgroup-has-icon-sm ui-ease-listgroup">
                         <li>
                             <a href="#">
@@ -249,7 +249,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-listgroup-has-icon-xs ui-ease-listgroup">
                         <li>
                             <a href="#">
@@ -274,7 +274,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-listgroup-has-icon-xss ui-ease-listgroup">
                         <li>
                             <a href="#">
@@ -301,7 +301,7 @@
 
                 <h3 class="ui-h3">List Groups with Icons</h3>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-ease-listgroup ui-icons-m-5-r">
                         <li>
                             <a href="#">
@@ -340,7 +340,7 @@
 
                 <h3 class="ui-h3">List Groups with Inner Links</h3>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-ease-listgroup ui-icons-m-5-r">
                         <li>
                             <span class="ui-font-18 ui-block">11 November, Event Name Here</span>
@@ -376,7 +376,7 @@
 
                 <h3 class="ui-h3">List Groups with Photo Images</h3>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-listgroup-has-avatar-xs ui-listgroup-has-icon-xs ui-ease-listgroup">
                         <li>
                             <a href="#">
@@ -428,7 +428,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-listgroup-has-avatar-sm ui-listgroup-has-icon-sm ui-ease-listgroup">
                         <li>
                             <a href="#">
@@ -480,7 +480,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-listgroup-has-avatar ui-listgroup-has-icon ui-ease-listgroup">
                         <li>
                             <a href="#">
@@ -532,7 +532,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-listgroup-has-avatar-lg ui-listgroup-has-icon-lg ui-ease-listgroup">
                         <li>
                             <a href="#">
@@ -584,7 +584,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
                     <ul class="ui-listgroup-has-avatar ui-listgroup-has-icon-sm ui-ease-listgroup">
                         <li>
                             <a href="#" class="ui-theme-red ui-fill-light-100">
@@ -629,7 +629,7 @@
 
                 <h3 class="ui-h3">List Groups with Swatches</h3>
 
-                <div class="ui-listgroup ui-border ui-round ui-theme-red">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg ui-theme-red">
                     <ul class="ui-listgroup-has-avatar ui-listgroup-has-icon-sm ui-ease-listgroup">
                         <li>
                             <a href="#" class="ui-fill-light-100">
@@ -672,7 +672,7 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round ui-theme-sub">
+                <div class="ui-listgroup ui-border ui-round ui-shadow-lg ui-theme-sub">
                     <ul class="ui-listgroup-has-avatar ui-listgroup-has-icon-sm ui-ease-listgroup">
                         <li>
                             <a href="#" class="ui-fill-light-100">

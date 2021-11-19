@@ -143,9 +143,9 @@
                     <br>
                     <div class="ui-align-r">ui-align-r</div>
                     <br>
-                    <p class="ui-align-justify"><strong>.ui-align-justify:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae faucibus orci. Etiam bibendum arcu sodales velit iaculis, a semper arcu gravida.</p>
+                    <p class="ui-align-justify"><strong>ui-align-justify:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae faucibus orci. Etiam bibendum arcu sodales velit iaculis, a semper arcu gravida.</p>
                     <span class="ui-sp-10"></span>
-                    <p class="ui-align-nowrap"><strong>.ui-align-nowrap:</strong> Lorem ipsum dolor sit amet.</p>
+                    <p class="ui-align-nowrap"><strong>ui-align-nowrap:</strong> Lorem ipsum dolor sit amet.</p>
                 </div>
 
                 <h3 class="ui-h3">Blockquote</h3>

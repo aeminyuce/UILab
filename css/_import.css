@@ -43,7 +43,7 @@
   --ui-breadcrumbs-sep-color: hsla(0, 0%, 0%, 0.25);
   --ui-avatar-bg: hsla(0, 0%, 0%, 0.08);
   --ui-progress-bar-bg: hsla(0, 0%, 0%, 0.075);
-  --ui-progress-bar-inner-bg: hsla(0, 0%, 0%, 0.15);
+  --ui-progress-bar-inner-bg: hsla(0, 0%, 0%, 0.3);
   --ui-scrollbar-scroll-bg: hsl(0, 0%, 92%);
   --ui-scrollbar-scroll-fadedbg: hsla(0, 0%, 0%, 0.045);
   --ui-scrollbar-thumb-bg: hsla(0, 0%, 0%, 0.15);
@@ -116,7 +116,7 @@
   --ui-breadcrumbs-sep-color: hsla(0, 0%, 100%, 0.25);
   --ui-avatar-bg: hsla(0, 0%, 100%, 0.08);
   --ui-progress-bar-bg: hsla(0, 0%, 0%, 0.45);
-  --ui-progress-bar-inner-bg: hsla(0, 0%, 100%, 0.15);
+  --ui-progress-bar-inner-bg: hsla(0, 0%, 100%, 0.3);
   --ui-scrollbar-scroll-bg: hsl(218, 16%, 18%);
   --ui-scrollbar-scroll-faded-bg: hsla(0, 0%, 100%, 0.045);
   --ui-scrollbar-thumb-bg: hsla(0, 0%, 100%, 0.2);
@@ -3699,6 +3699,9 @@ button.ui-font-underline:hover {
 .ui-pre:not(:last-child) {
   margin-bottom: 20px;
 }
+.ui-pre.ui-round {
+  border-radius: 6.66666667px;
+}
 .ui-pre.ui-scroll-v {
   max-height: 350px;
 }
@@ -4943,7 +4946,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   resize: none;
 }
 .ui-textarea textarea:not([rows]) {
-  height: 3em;
+  height: 4em;
 }
 .ui-chrome .ui-input input:-webkit-autofill {
   -webkit-background-clip: text;
@@ -4999,6 +5002,8 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   text-overflow: ellipsis;
   line-height: 40px;
   width: 100%;
+  background-color: hsla(0, 0%, 0%, 0.0175);
+  background-color: var(--ui-form-bg);
   padding-right: 20px;
   padding-left: 145px;
   overflow: hidden;
@@ -5677,12 +5682,13 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 }
 @media (min-width: 960px) {
   .ui-form-info {
-    line-height: 42px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     display: inline-block;
   }
   .ui-form-lg .ui-form-info {
-    font-size: 14px;
-    line-height: 48px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }
 @media (max-width: 959px) {
@@ -6516,12 +6522,12 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   overflow: hidden;
 }
 .ui-progress-bar:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .ui-progress-bar > span {
   width: 0;
   height: 10px;
-  background-color: hsla(0, 0%, 0%, 0.15);
+  background-color: hsla(0, 0%, 0%, 0.3);
   background-color: var(--ui-progress-bar-inner-bg);
   float: left;
 }

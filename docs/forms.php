@@ -430,8 +430,8 @@
                 </div>
 
                 <h3 class="ui-h3">File Input</h3>
-                <div class="ui-p-30-b ui-theme-gray">
-                    <div class="ui-file ui-round ui-no-border ui-fill-light-100 ui-ease-form">
+                <div class="ui-p-30-b">
+                    <div class="ui-file ui-round ui-no-border ui-ease-form">
                         <input type="file">
                         <span class="ui-btn ui-ease-btn">Browse</span>
                         <i>Choose file.</i>
@@ -457,7 +457,7 @@
 
                     <label class="ui-form-label ui-p-10-b">File Input with Large Forms</label>
                     <div class="ui-form-lg ui-ease-1st-form">
-                        <div class="ui-file ui-round ui-no-border ui-fill-light-100">
+                        <div class="ui-file ui-round ui-no-border">
                             <input type="file">
                             <span class="ui-btn ui-ease-btn">Browse</span>
                             <i>Choose file.</i>
@@ -678,7 +678,7 @@
                         </select>
                     </div>
                     <div class="ui-textarea ui-textarea-toggle ui-m-10-b ui-round ui-border-dual ui-form-inline ui-ease-form">
-                        <textarea placeholder="ui-textarea"></textarea>
+                        <textarea placeholder="textarea"></textarea>
                     </div>
 
                     <span class="ui-sp-15"></span>
@@ -696,7 +696,7 @@
                         </select>
                     </div>
                     <div class="ui-textarea ui-textarea-toggle ui-m-10-b ui-round ui-border-dual ui-form-inline-xs ui-ease-form">
-                        <textarea placeholder="ui-textarea"></textarea>
+                        <textarea placeholder="textarea"></textarea>
                     </div>
                 </div>
 
@@ -771,7 +771,7 @@
                             <button type="submit">
                                 <svg class="ui-icon"><use href="#search"/></svg>
                             </button>
-                            <input type="text" placeholder="Submit with ui-icon or press enter key">
+                            <input type="text" placeholder="Submit with icon or press enter key">
                         </div>
                     </form>
                 </div>
@@ -1826,10 +1826,10 @@
 
                 <h3 class="ui-h3">Different Form Styles</h3>
                 <div class="ui-row">
-                    <div class="ui-col-3">
-                        <label class="ui-form-info">light ui-border with no radius style:</label>
+                    <div class="ui-col-2">
+                        <label class="ui-form-info">light border with no radius style:</label>
                     </div>
-                    <div class="ui-col-9 ui-ease-1st-form">
+                    <div class="ui-col-10 ui-ease-1st-form">
 
                         <div class="ui-input ui-m-10-b">
                             <input type="text">
@@ -1850,7 +1850,7 @@
                         </div>
 
                         <div class="ui-textarea ui-m-10-b">
-                            <textarea placeholder="ui-textarea"></textarea>
+                            <textarea placeholder="textarea"></textarea>
                         </div>
                         <div class="ui-textarea ui-textarea-toggle ui-m-10-b">
                             <textarea placeholder="Toggle Textarea"></textarea>
@@ -1880,10 +1880,10 @@
 
                     </div>
 
-                    <div class="ui-col-3">
-                        <label class="ui-form-info">Inner ui-shadow with no radius and no ui-border style:</label>
+                    <div class="ui-col-2">
+                        <label class="ui-form-info">Inner shadow with no radius and no border style:</label>
                     </div>
-                    <div class="ui-col-9 ui-ease-1st-form">
+                    <div class="ui-col-10 ui-ease-1st-form">
 
                         <div class="ui-input ui-m-10-b ui-shadow-in ui-no-border">
                             <input type="text">
@@ -1904,7 +1904,7 @@
                         </div>
 
                         <div class="ui-textarea ui-m-10-b ui-shadow-in ui-no-border">
-                            <textarea placeholder="ui-textarea"></textarea>
+                            <textarea placeholder="textarea"></textarea>
                         </div>
                         <div class="ui-textarea ui-textarea-toggle ui-m-10-b ui-shadow-in ui-no-border">
                             <textarea placeholder="Toggle Textarea"></textarea>
@@ -1934,21 +1934,21 @@
 
                     </div>
 
-                    <div class="ui-col-3">
-                        <label class="ui-form-info">Using themes with no radius and no ui-border style:</label>
+                    <div class="ui-col-2">
+                        <label class="ui-form-info">Using themes with no radius and no border style:</label>
                     </div>
-                    <div class="ui-col-9 ui-ease-1st-form ui-theme-gray">
+                    <div class="ui-col-10 ui-ease-1st-form">
 
-                        <div class="ui-input ui-m-10-b ui-round ui-no-border ui-fill-light-100">
+                        <div class="ui-input ui-m-10-b ui-round ui-no-border">
                             <input type="text">
                         </div>
-                        <div class="ui-input ui-form-error ui-m-10-b ui-round ui-no-border ui-fill-light-100">
+                        <div class="ui-input ui-form-error ui-m-10-b ui-round ui-no-border">
                             <input type="text" placeholder="Error Form">
                         </div>
-                        <div class="ui-input ui-form-warning ui-m-10-b ui-round ui-no-border ui-fill-light-100">
+                        <div class="ui-input ui-form-warning ui-m-10-b ui-round ui-no-border">
                             <input type="text" placeholder="Warning Form">
                         </div>
-                        <div class="ui-select ui-m-10-b ui-round ui-no-border ui-fill-light-100">
+                        <div class="ui-select ui-m-10-b ui-round ui-no-border">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                             <select>
                                 <option value="">Select</option>
@@ -1957,31 +1957,31 @@
                             </select>
                         </div>
 
-                        <div class="ui-textarea ui-m-10-b ui-round ui-no-border ui-fill-light-100">
-                            <textarea placeholder="ui-textarea"></textarea>
+                        <div class="ui-textarea ui-m-10-b ui-round ui-no-border">
+                            <textarea placeholder="textarea"></textarea>
                         </div>
-                        <div class="ui-textarea ui-textarea-toggle ui-m-10-b ui-round ui-no-border ui-fill-light-100">
+                        <div class="ui-textarea ui-textarea-toggle ui-m-10-b ui-round ui-no-border">
                             <textarea placeholder="Toggle Textarea"></textarea>
                         </div>
 
                         <label class="ui-label">
-                            <span class="ui-check ui-fill-light-100">
+                            <span class="ui-check">
                                 <input type="checkbox" checked>
-                                <i class="ui-form-state ui-fill-dark-100"></i>
+                                <i class="ui-form-state"></i>
                             </span>
                             <b>Checkbox</b>
                         </label>
                         <label class="ui-label">
-                            <span class="ui-radio ui-fill-light-100">
+                            <span class="ui-radio">
                                 <input type="radio" checked>
-                                <i class="ui-form-state ui-fill-dark-100"></i>
+                                <i class="ui-form-state"></i>
                             </span>
                             <b>Radio</b>
                         </label>
                         <label class="ui-label">
-                            <span class="ui-switch ui-fill-light-100">
+                            <span class="ui-switch">
                                 <input type="checkbox" checked>
-                                <i class="ui-form-state ui-fill-dark-100"></i>
+                                <i class="ui-form-state"></i>
                             </span>
                             <b>Switch</b>
                         </label>

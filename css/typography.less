@@ -178,6 +178,8 @@
         color: @white; line-height: @line-height-readable; min-height: @btn-default; background-color: @pre-bg; padding: 10px !important; overflow-x: auto !important; overflow-y: auto !important; display: block;
 
         &:not(:last-child) { margin-bottom: @highlight-space; }
+
+        &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
         &.ui-scroll-v { max-height: @pre-max-height; }
     }
 }

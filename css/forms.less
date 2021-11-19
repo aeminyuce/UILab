@@ -1,14 +1,21 @@
 // out: false
 /* forms */ @import (reference) 'ui.less';
 
-@form-icon-size:                       18px;
 @form-line-height:                     18px;
-@form-icon-opacity:                    .45;
 @form-label-opacity:                   .6;
+
+@form-info-padding:                    11px;
+@form-lg-info-padding:                 14px;
+
 @form-spacing:                         5px;
+
+@form-icon-size:                       18px;
+@form-icon-opacity:                    .45;
 
 @select-icon-size:                     16px;
 @select-opacity:                       .45;
+
+@textarea-default-size:                4em;
 
 @form-clear-icon-size:                 16px;
 
@@ -178,7 +185,7 @@ html:not(.ui-no-effects) {
         textarea {
             line-height: @line-height-readable; vertical-align: top; width: 100%; overflow: auto; resize: none;
 
-            &:not([rows]) { height: 3em; }
+            &:not([rows]) { height: @textarea-default-size; }
         }
     }
 
@@ -213,7 +220,7 @@ html:not(.ui-no-effects) {
         height: @btn-default; ._border-var(); overflow: hidden; display: block; position: relative;
 
         input { vertical-align: middle; width: 100%; overflow: hidden; position: absolute; top: -30px; right: 0; bottom: 0; left: 0; z-index: 3; opacity: 0; } // don't change z-index!
-        & > i { white-space: nowrap; font-style: normal; text-overflow: ellipsis; line-height: (@btn-default - 2); width: 100%; padding-right: (@form-padding * 2); padding-left: (@file-btn-width + @form-padding * 2); overflow: hidden; display: block; position: absolute; }
+        & > i { white-space: nowrap; font-style: normal; text-overflow: ellipsis; line-height: (@btn-default - 2); width: 100%; ._bg-var(form-bg); padding-right: (@form-padding * 2); padding-left: (@file-btn-width + @form-padding * 2); overflow: hidden; display: block; position: absolute; }
 
         .ui-btn {
             text-overflow: ellipsis; white-space: nowrap; min-width: @file-btn-width; line-height: (@btn-default - (@file-btn-padding * 2 + 2)); overflow: hidden; float: left;
@@ -641,9 +648,9 @@ html:not(.ui-no-effects) {
 
 @media (@default-start) {
     .ui-form-info {
-        line-height: @btn-default; display: inline-block;
+        padding-top: @form-info-padding; padding-bottom: @form-info-padding; display: inline-block;
 
-        .ui-form-lg & { font-size: @font-size; line-height: @btn-lg; }
+        .ui-form-lg & { padding-top: @form-lg-info-padding; padding-bottom: @form-lg-info-padding; }
     }
 }
 @media (@md-finish) {

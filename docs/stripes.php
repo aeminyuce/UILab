@@ -9,13 +9,13 @@
                 <div class="ui-row ui-no-fluid ui-p-30-b">
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-stripe-light</b>
+                        <b class="ui-m-5-b ui-block">ui-stripe-light</b>
                         <div class="ui-theme-yellow ui-p-30 ui-fill-light-100 ui-stripe-light ui-round"></div>
 
                     </div>
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-stripe-dark</b>
+                        <b class="ui-m-5-b ui-block">ui-stripe-dark</b>
                         <div class="ui-theme-yellow ui-p-30 ui-fill-light-100 ui-stripe-dark ui-round"></div>
 
                     </div>
@@ -25,13 +25,13 @@
                 <div class="ui-row ui-no-fluid ui-p-30-b">
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-stripe-xs</b>
+                        <b class="ui-m-5-b ui-block">ui-stripe-xs</b>
                         <div class="ui-theme-yellow ui-p-30 ui-fill-light-100 ui-stripe-light ui-stripe-xs ui-round"></div>
 
                     </div>
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-stripe-sm</b>
+                        <b class="ui-m-5-b ui-block">ui-stripe-sm</b>
                         <div class="ui-theme-yellow ui-p-30 ui-fill-light-100 ui-stripe-light ui-stripe-sm ui-round"></div>
 
                     </div>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-stripe-lg</b>
+                        <b class="ui-m-5-b ui-block">ui-stripe-lg</b>
                         <div class="ui-theme-yellow ui-p-30 ui-fill-light-100 ui-stripe-light ui-stripe-lg ui-round"></div>
 
                     </div>
@@ -53,61 +53,61 @@
                 <div class="ui-row ui-no-fluid ui-p-30-b">
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-theme-yellow</b>
+                        <b class="ui-m-5-b ui-block">ui-theme-yellow</b>
                         <div class="ui-theme-yellow ui-p-30 ui-fill-light-100 ui-stripe-light ui-round"></div>
 
                     </div>
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-theme-green</b>
+                        <b class="ui-m-5-b ui-block">ui-theme-green</b>
                         <div class="ui-theme-green ui-p-30 ui-fill-light-100 ui-stripe-light ui-round"></div>
 
                     </div>
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-theme-red</b>
+                        <b class="ui-m-5-b ui-block">ui-theme-red</b>
                         <div class="ui-theme-red ui-p-30 ui-fill-light-100 ui-stripe-light ui-round"></div>
 
                     </div>
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-theme-orange</b>
+                        <b class="ui-m-5-b ui-block">ui-theme-orange</b>
                         <div class="ui-theme-orange ui-p-30 ui-fill-light-100 ui-stripe-light ui-round"></div>
 
                     </div>
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-theme-base .ui-fill-dark-100</b>
+                        <b class="ui-m-5-b ui-block">ui-theme-base ui-fill-dark-100</b>
                         <div class="ui-theme-base ui-p-30 ui-fill-dark-100 ui-stripe-light ui-round"></div>
 
                     </div>
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-theme-sub .ui-fill-dark-100</b>
+                        <b class="ui-m-5-b ui-block">ui-theme-sub ui-fill-dark-100</b>
                         <div class="ui-theme-sub ui-p-30 ui-fill-dark-100 ui-stripe-light ui-round"></div>
 
                     </div>
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-theme-base .ui-fill-dark-200</b>
+                        <b class="ui-m-5-b ui-block">ui-theme-base ui-fill-dark-200</b>
                         <div class="ui-theme-base ui-p-30 ui-fill-dark-200 ui-stripe-light ui-round"></div>
 
                     </div>
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-theme-sub .ui-fill-dark-200</b>
+                        <b class="ui-m-5-b ui-block">ui-theme-sub ui-fill-dark-200</b>
                         <div class="ui-theme-sub ui-p-30 ui-fill-dark-200 ui-stripe-light ui-round"></div>
 
                     </div>
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-theme-base .ui-fill-dark-300</b>
+                        <b class="ui-m-5-b ui-block">ui-theme-base ui-fill-dark-300</b>
                         <div class="ui-theme-base ui-p-30 ui-fill-dark-300 ui-stripe-light ui-round"></div>
 
                     </div>
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-theme-sub .ui-fill-dark-300</b>
+                        <b class="ui-m-5-b ui-block">ui-theme-sub ui-fill-dark-300</b>
                         <div class="ui-theme-sub ui-p-30 ui-fill-dark-300 ui-stripe-light ui-round"></div>
 
                     </div>
@@ -117,25 +117,25 @@
                 <div class="ui-row ui-no-fluid ui-p-30-b">
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-theme-yellow ui-animate-progress</b>
+                        <b class="ui-m-5-b ui-block">ui-theme-yellow ui-animate-progress</b>
                         <div class="ui-theme-yellow ui-p-30 ui-fill-light-100 ui-stripe-light ui-round ui-animate-progress"></div>
 
                         </div>
                         <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-theme-green ui-animate-progress</b>
+                        <b class="ui-m-5-b ui-block">ui-theme-green ui-animate-progress</b>
                         <div class="ui-theme-green ui-p-30 ui-fill-light-100 ui-stripe-light ui-round ui-animate-progress"></div>
 
                     </div>
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-theme-yellow .ui-fill-dark-100 .ui-animate-progress</b>
+                        <b class="ui-m-5-b ui-block">ui-theme-yellow ui-fill-dark-100 ui-animate-progress</b>
                         <div class="ui-theme-yellow ui-p-30 ui-fill-dark-100 ui-stripe-light ui-round ui-animate-progress"></div>
 
                     </div>
                     <div class="ui-col-6">
 
-                        <b class="ui-m-5-b ui-block">.ui-theme-red .ui-fill-dark-100 .ui-animate-progress</b>
+                        <b class="ui-m-5-b ui-block">ui-theme-red ui-fill-dark-100 ui-animate-progress</b>
                         <div class="ui-theme-red ui-p-30 ui-fill-dark-100 ui-stripe-light ui-round ui-animate-progress"></div>
 
                     </div>
