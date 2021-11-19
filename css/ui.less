@@ -112,7 +112,7 @@
 @black-50:                              hsla(0, 0%, 0%, 0.50);
 @black-25:                              hsla(0, 0%, 0%, 0.40);
 
-@gray:                                  hsl(0, 0%, 70%);
+@gray:                                  hsl(220, 8%, 65%);
 @green:                                 hsl(142, 82%, 42%);
 @yellow:                                hsl(42, 100%, 45%);
 @orange:                                hsl(30, 100%, 50%);
@@ -128,9 +128,11 @@
 @table-border-color-dark:               @highlighted-dark;
 
 @card-bg:                               @white;
-@card-bg-dark:                          hsl(220, 14%, 21%);
+@card-bg-dark:                          hsl(220, 8%, 21%);
 @highlighted:                           @white;
 @highlighted-dark:                      hsl(220, 8%, 28%);
+
+@invert-bg:                             hsl(220, 8%, 32%);
 
 @btn-bg:                                fade(@black, 8%);
 @btn-bg-dark:                           fade(@white, 12.5%);
@@ -174,6 +176,8 @@
 
     --ui-card-bg: @card-bg-dark;
     --ui-highlighted: @highlighted-dark;
+
+    --ui-invert-bg: @invert-bg;
 
     --ui-btn-bg: @btn-bg-dark;
     --ui-btn-hover-bg: @btn-hover-bg-dark;
@@ -351,7 +355,7 @@ html {
 
             .ui-invert- {
                 &img { filter: invert(1) hue-rotate(180deg) !important; }
-                &bg { ._bg-var(card-bg) !important; }
+                &bg { ._bg-var(invert-bg) !important; }
             }
         }
 
@@ -368,7 +372,7 @@ html {
 
             .ui-invert- {
                 &img { filter: invert(1) hue-rotate(180deg) !important; }
-                &bg { ._bg-var(card-bg) !important; }
+                &bg { ._bg-var(invert-bg) !important; }
             }
         }
     }

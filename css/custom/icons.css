@@ -7,7 +7,7 @@
 }
 [data-ui-mode="dark"] {
   --ui-icons-list-color: hsl(0, 0%, 100%);
-  --ui-icons-list-bg: hsl(220, 14%, 21%);
+  --ui-icons-list-bg: hsl(220, 8%, 21%);
   --ui-icons-list-hover-bg: hsl(219, 12%, 27%);
   --ui-icons-name-color: hsl(0, 0%, 82%);
 }
@@ -28,7 +28,7 @@
   background-color: var(--ui-icons-list-bg);
   padding: 15px 10px;
   margin: 1px;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   flex-grow: 1;
 }

@@ -32,7 +32,7 @@
     include ('../stripes.php');
     include ('../map.php');
     include ('../tables.php');
-    include ('../tabs.php');
+    include ('../tab.php');
     include ('../themes.php');
     include ('../timeline.php');
     include ('../tooltip.php');

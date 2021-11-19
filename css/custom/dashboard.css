@@ -172,7 +172,7 @@ header {
 .ui-sticky-header .dashboard-menu {
   top: -62px;
 }
-.dashboard-menu .ui-tabs {
+.dashboard-menu .ui-tab-holder {
   height: calc(100% - 62px);
 }
 .dashboard-carousel {

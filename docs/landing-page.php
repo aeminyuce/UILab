@@ -77,7 +77,7 @@
 <main class="ui-container ui-no-gutter">
 
     <!-- tab banner: start -->
-    <div class="ui-tabs ui-form-lg ui-ease-tabs" data-ui-classes="ui-text ui-border-lg ui-stroke">
+    <div class="ui-tab-holder ui-form-lg ui-ease-tab" data-ui-classes="ui-text ui-border-lg ui-stroke">
 
         <div class="ui-fixed ui-p-10-t ui-theme-sub">
             <div class="ui-row ui-no-row-gap-v ui-icons-no-opacity ui-icons-m-5-r">
@@ -335,7 +335,7 @@
                 </div>
             </div>
         </div>
-        <div class="ui-tabs ui-form-lg ui-border-t ui-p-10-t ui-ease-tabs" data-ui-classes="ui-text ui-border-lg ui-stroke">
+        <div class="ui-tab-holder ui-form-lg ui-border-t ui-p-10-t ui-ease-tab" data-ui-classes="ui-text ui-border-lg ui-stroke">
 
             <div class="ui-fixed">
                 <div class="ui-row ui-no-row-gap-v ui-icons-no-opacity ui-icons-m-5-r">

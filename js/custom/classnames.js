@@ -195,11 +195,11 @@ ui.classnames = {
                     } else if (['w','weather','days','graphs','reports','now'].indexOf(title) >= 0) {
                         title = 'weather';
 
-                    } else if (['theme','fill','stroke','text'].indexOf(title) >= 0) {
-                        title = 'themes';
-
                     } else if (['code','dl','rtl','pre','hr','blockquote'].indexOf(title) >= 0) {
                         title = 'typography';
+
+                    } else if (['theme','fill','stroke','text'].indexOf(title) >= 0) {
+                        title = 'themes';
 
                     } else if (['line','donut','pie'].indexOf(title) >= 0) {
                         title = 'charts';
@@ -216,32 +216,29 @@ ui.classnames = {
                     } else if (title === 'list') {
                         title = 'listings';
 
-                    } else if (title === 'tab' || title === 'tabs') {
-                        title = 'tabs';
-
                     } else if (title === 'carousel' || title === 'bring') {
                         title = 'carousel';
 
                     } else if (title === 'm') {
-                        title = 'margins';
+                        title = 'margin';
 
                     } if (title === 'p') {
-                        title = 'paddings';
+                        title = 'padding';
 
                     } if (title === 'sp') {
-                        title = 'spacers';
+                        title = 'spacer';
 
                     } if (title === 'btn') {
-                        title = 'buttons';
+                        title = 'button';
 
                     } if (title === 'ease') {
                         title = 'effects';
 
                     } if (title === 'animate') {
-                        title = 'animations';
+                        title = 'animation';
 
                     } if (title === 'img') {
-                        title = 'responsive images';
+                        title = 'image';
 
                     } if (title === 'sticky') {
                         title = 'sticky header';

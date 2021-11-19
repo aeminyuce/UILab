@@ -1,12 +1,12 @@
 /*
- UI Tabs JS
+ UI Tab JS
  Requires UI JS
 */
 
-ui.tabs = {
+ui.tab = {
 
     // targets
-    targetParent: 'ui-tabs',
+    targetParent: 'ui-tab-holder',
     targetTab: 'ui-tab',
 
     // main classnames
@@ -33,13 +33,13 @@ ui.tabs = {
     'use strict';
     /*globals document, ui, setTimeout */
 
-    ui.tabs.Start = function () {
+    ui.tab.Start = function () {
 
         // Event Listeners
         ui.on(document,
             'click',
 
-            '.' + ui.tabs.targetParent + ' .' + ui.tabs.targetTab,
+            '.' + ui.tab.targetParent + ' .' + ui.tab.targetTab,
 
             function (e) {
 
@@ -50,11 +50,11 @@ ui.tabs = {
                 outerTabs = [];
                 outerContent = [];
 
-                parent = ui.closest(this, '.' + ui.tabs.targetParent)[0];
-                tabs = ui.find('.' + ui.tabs.targetTab, parent);
+                parent = ui.closest(this, '.' + ui.tab.targetParent)[0];
+                tabs = ui.find('.' + ui.tab.targetTab, parent);
 
                 // check inner tabs
-                innerTabs = ui.find('.' + ui.tabs.targetParent + ' .' + ui.tabs.targetParent + ' .' + ui.tabs.targetTab, parent);
+                innerTabs = ui.find('.' + ui.tab.targetParent + ' .' + ui.tab.targetParent + ' .' + ui.tab.targetTab, parent);
                 innerTabs = Array.prototype.slice.call(innerTabs);
 
                 ui.each(tabs,
@@ -70,10 +70,10 @@ ui.tabs = {
                 if (outerTabs.length !== 0) { tabs = outerTabs; }
                 index = Array.prototype.slice.call(tabs).indexOf(this);
 
-                content = ui.find('.' + ui.tabs.nameContent, parent);
+                content = ui.find('.' + ui.tab.nameContent, parent);
 
                 // check inner contents
-                innerContent = ui.find('.' + ui.tabs.targetParent + ' .' + ui.tabs.targetParent + ' .' + ui.tabs.nameContent, parent);
+                innerContent = ui.find('.' + ui.tab.targetParent + ' .' + ui.tab.targetParent + ' .' + ui.tab.nameContent, parent);
                 innerContent = Array.prototype.slice.call(innerContent);
 
                 ui.each(content,
@@ -89,7 +89,7 @@ ui.tabs = {
                 if (outerContent.length !== 0) { content = outerContent; }
 
                 // check ids
-                id = this.getAttribute(ui.tabs.dataID);
+                id = this.getAttribute(ui.tab.dataID);
 
                 if (id !== null & id !== '') {
                     currentContent = ui.find('#' + id, parent)[0];
@@ -99,13 +99,13 @@ ui.tabs = {
                 }
 
                 toggle = false;
-                classes = parent.getAttribute(ui.tabs.dataClasses);
+                classes = parent.getAttribute(ui.tab.dataClasses);
 
-                if (ui.hasClass(this, ui.tabs.nameToggle)) {
+                if (ui.hasClass(this, ui.tab.nameToggle)) {
                     toggle = true;
                 }
 
-                if (ui.hasClass(this, ui.tabs.nameActive)) {
+                if (ui.hasClass(this, ui.tab.nameActive)) {
 
                     if (toggle) {
 
@@ -121,13 +121,13 @@ ui.tabs = {
                                     ui.toggleClass(tabs[index], classes);
                                 }
 
-                                ui.removeClass(tabs[index], ui.tabs.nameActive);
-                                ui.removeClass(currentContent, ui.tabs.nameOpenEase);
+                                ui.removeClass(tabs[index], ui.tab.nameActive);
+                                ui.removeClass(currentContent, ui.tab.nameOpenEase);
 
                                 currentContent.style.removeProperty('height');
                                 currentContent.style.removeProperty('overflow');
 
-                                ui.removeClass(currentContent, ui.tabs.nameOpen);
+                                ui.removeClass(currentContent, ui.tab.nameOpen);
 
                             }, ui.globals.ease * 2);
 
@@ -144,8 +144,8 @@ ui.tabs = {
 
                     }
 
-                    ui.removeClass(tabs, ui.tabs.nameActive);
-                    ui.addClass(tabs[index], ui.tabs.nameActive);
+                    ui.removeClass(tabs, ui.tab.nameActive);
+                    ui.addClass(tabs[index], ui.tab.nameActive);
 
                     if (toggle) {
 
@@ -157,7 +157,7 @@ ui.tabs = {
 
                                 if (this !== currentContent) {
 
-                                    if (ui.hasClass(this, ui.tabs.nameOpen)) {
+                                    if (ui.hasClass(this, ui.tab.nameOpen)) {
                                         lastOpened = this; // find last opened content
                                     }
 
@@ -175,12 +175,12 @@ ui.tabs = {
                                     lastOpened.style.height = '0';
                                     setTimeout(function () {
 
-                                        ui.removeClass(lastOpened, ui.tabs.nameOpenEase);
+                                        ui.removeClass(lastOpened, ui.tab.nameOpenEase);
 
                                         lastOpened.style.removeProperty('height');
                                         lastOpened.style.removeProperty('overflow');
 
-                                        ui.removeClass(lastOpened, ui.tabs.nameOpen);
+                                        ui.removeClass(lastOpened, ui.tab.nameOpen);
 
                                     }, ui.globals.ease * 2);
 
@@ -190,7 +190,7 @@ ui.tabs = {
 
                         setTimeout(function () { // open current clicked content
 
-                            ui.addClass(currentContent, ui.tabs.nameOpen);
+                            ui.addClass(currentContent, ui.tab.nameOpen);
 
                             currentHeight = currentContent.offsetHeight;
 
@@ -199,7 +199,7 @@ ui.tabs = {
 
                             setTimeout(function () {
 
-                                ui.addClass(currentContent, ui.tabs.nameOpenEase);
+                                ui.addClass(currentContent, ui.tab.nameOpenEase);
                                 currentContent.style.height = currentHeight + 'px';
 
                                 ui.trigger(document, ui.globals.eventDomChange); // set custom event
@@ -217,7 +217,7 @@ ui.tabs = {
 
                         // close opened toggle tabs when outside the tabs
                         ui.on(document,
-                            'mouseup.' + ui.tabs.eventCloseToggleTabs,
+                            'mouseup.' + ui.tab.eventCloseToggleTabs,
 
                             function (ev) {
 
@@ -225,11 +225,11 @@ ui.tabs = {
 
                                 if (ev.button !== 2) { // inherited right clicks
 
-                                    if (ev.target.className.split(' ').indexOf(ui.tabs.nameToggle) !== -1 && ui.closest(ev.target, '.' + ui.tabs.targetParent)[0] === parent) { // controlling same toggled tab buttons
+                                    if (ev.target.className.split(' ').indexOf(ui.tab.nameToggle) !== -1 && ui.closest(ev.target, '.' + ui.tab.targetParent)[0] === parent) { // controlling same toggled tab buttons
                                         return;
                                     }
 
-                                    if (ev.target.className.split(' ').indexOf(ui.tabs.nameContent) === -1 && ui.closest(ev.target, '.' + ui.tabs.nameContent)[0] === undefined) { // controlling inside of the opened tab content
+                                    if (ev.target.className.split(' ').indexOf(ui.tab.nameContent) === -1 && ui.closest(ev.target, '.' + ui.tab.nameContent)[0] === undefined) { // controlling inside of the opened tab content
 
                                         currentContent.style.height = currentContent.offsetHeight + 'px';
                                         currentContent.style.overflow = 'hidden';
@@ -243,20 +243,20 @@ ui.tabs = {
                                                     ui.removeClass(tabs, classes);
                                                 }
 
-                                                ui.removeClass(tabs, ui.tabs.nameActive);
-                                                ui.removeClass(content, ui.tabs.nameOpenEase);
+                                                ui.removeClass(tabs, ui.tab.nameActive);
+                                                ui.removeClass(content, ui.tab.nameOpenEase);
 
                                                 currentContent.style.removeProperty('height');
                                                 currentContent.style.removeProperty('overflow');
 
-                                                ui.removeClass(content, ui.tabs.nameOpen);
+                                                ui.removeClass(content, ui.tab.nameOpen);
 
                                             }, ui.globals.ease * 2);
 
                                         }, 0);
 
-                                        ui.trigger(document, ui.tabs.eventToggleTabsClosed); // set custom event
-                                        ui.off(document, 'mouseup.' + ui.tabs.eventCloseToggleTabs);
+                                        ui.trigger(document, ui.tab.eventToggleTabsClosed); // set custom event
+                                        ui.off(document, 'mouseup.' + ui.tab.eventCloseToggleTabs);
 
                                     }
 
@@ -266,15 +266,15 @@ ui.tabs = {
 
                     } else {
 
-                        ui.removeClass(content, ui.tabs.nameOpenEase);
+                        ui.removeClass(content, ui.tab.nameOpenEase);
                         setTimeout(function () {
 
-                            ui.removeClass(content, ui.tabs.nameOpen);
-                            ui.addClass(currentContent, ui.tabs.nameOpen);
+                            ui.removeClass(content, ui.tab.nameOpen);
+                            ui.addClass(currentContent, ui.tab.nameOpen);
 
                             setTimeout(function () {
 
-                                ui.addClass(currentContent, ui.tabs.nameOpenEase);
+                                ui.addClass(currentContent, ui.tab.nameOpenEase);
                                 ui.trigger(document, ui.globals.eventDomChange); // set custom event
 
                             }, ui.globals.fast / 2);
@@ -290,6 +290,6 @@ ui.tabs = {
     };
 
     // Loaders
-    ui.onload(ui.tabs.Start);
+    ui.onload(ui.tab.Start);
 
 }());

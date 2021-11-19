@@ -7,7 +7,7 @@
 [data-ui-mode="dark"] {
   --ui-sign-up-holder-bg: linear-gradient(110deg, hsl(262, 100%, 72%), hsl(242, 46%, 31%), hsl(331, 60%, 39%));
   --ui-sign-up-btn-bg: linear-gradient(130deg, hsl(135, 62%, 46%), hsl(135, 77%, 31%));
-  --ui-sign-up-why-bg: linear-gradient(130deg, hsl(220, 14%, 21%), hsl(256, 19%, 20%), hsl(220, 14%, 21%));
+  --ui-sign-up-why-bg: linear-gradient(130deg, hsl(220, 8%, 21%), hsl(256, 19%, 20%), hsl(220, 8%, 21%));
 }
 .signup-container {
   margin-top: -50px;

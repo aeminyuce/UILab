@@ -38,7 +38,7 @@
     <script src="../js/top-button.js?v=<?php echo filemtime('../js/top-button.js'); ?>"></script>
     <script src="../js/dropdown.js?v=<?php echo filemtime('../js/dropdown.js'); ?>"></script>
     <script src="../js/loading-mask.js?v=<?php echo filemtime('../js/loading-mask.js'); ?>"></script>
-    <script src="../js/tabs.js?v=<?php echo filemtime('../js/tabs.js'); ?>"></script>
+    <script src="../js/tab.js?v=<?php echo filemtime('../js/tab.js'); ?>"></script>
 
     <script src="../js/forms.js?v=<?php echo filemtime('../js/forms.js'); ?>"></script>
     <script src="../js/autocomplete.js?v=<?php echo filemtime('../js/autocomplete.js'); ?>"></script>
@@ -186,7 +186,7 @@
                         <li><a class="ui-btn ui-btn-ghost" href="?p=steps">Steps</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=stripes">Stripes</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=tables">Tables</a></li>
-                        <li><a class="ui-btn ui-btn-ghost" href="?p=tabs">Tabs</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=tab">Tab</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=themes">Themes</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=timeline">Timeline</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=tooltip">Tooltip</a></li>

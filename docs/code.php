@@ -4,7 +4,7 @@
 <main class="ui-container">
     <div class="ui-row">
         <div class="ui-col-12">
-            <div class="ui-p-30-b ui-sm-no-p ui-tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke">
+            <div class="ui-p-30-b ui-sm-no-p ui-tab-holder ui-theme-sub ui-ease-tab" data-ui-classes="ui-border-lg ui-stroke">
 
                 <div class="ui-row ui-border-b ui-m-30-b">
 
@@ -173,10 +173,10 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="tabs" value="../css/tabs">
+                                            <input type="checkbox" name="tab" value="../css/tab">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Tabs
+                                        Tab
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
@@ -612,10 +612,10 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="tabs js" value="../js/tabs">
+                                            <input type="checkbox" name="tab js" value="../js/tab">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Tabs
+                                        Tab
                                     </label>
                                 </div>
 

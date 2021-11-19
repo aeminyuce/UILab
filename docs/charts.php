@@ -231,7 +231,7 @@
                         </div>
                     </div>
                     <div class="ui-col-12">
-                        <div class="ui-card ui-round ui-shadow-lg ui-tabs ui-ease-tabs" data-ui-classes="ui-font-bold">
+                        <div class="ui-card ui-round ui-shadow-lg ui-tab-holder ui-ease-tab" data-ui-classes="ui-font-bold">
                             <div class="ui-card-side ui-p-10 ui-border-b">
 
                                 <div class="ui-dropdown ui-menu-l ui-float-r ui-ease-dropdown">

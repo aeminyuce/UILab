@@ -19,7 +19,7 @@
                     </button>
                 </div>
 
-                <div class="ui-tabs ui-align-l ui-icons-no-opacity ui-theme-sub ui-ease-tabs ui-ease-1st-btn ui-scroll-v ui-scrollbar-faded ui-sidebar-add-l" data-ui-classes="ui-text">
+                <div class="ui-tab-holder ui-align-l ui-icons-no-opacity ui-theme-sub ui-ease-tab ui-ease-1st-btn ui-scroll-v ui-scrollbar-faded ui-sidebar-add-l" data-ui-classes="ui-text">
 
                     <div class="ui-p-10">
                         <div class="ui-font-12 ui-m-10-b ui-color-white-25">Personal Activity</div>
@@ -68,7 +68,7 @@
 
                     <div class="ui-tab-content">
                         <div class="ui-p-15-v ui-p-20-l">
-                            <ul class="ui-tabs ui-list-sp-15 ui-p-30-l ui-ease-2nd-btn" data-ui-classes="ui-text">
+                            <ul class="ui-tab-holder ui-list-sp-15 ui-p-30-l ui-ease-2nd-btn" data-ui-classes="ui-text">
                                 <li>
                                     <a class="ui-tab ui-tab-toggle ui-opacity" href="#">
                                         <svg class="ui-toggle-icon ui-icon ui-m-10-r ui-float-r"><use href="#arrow-down"/></svg>
@@ -283,7 +283,7 @@
                             <svg class="ui-icon"><use href="#grid-column"/></svg>
                         </button>
                         <div class="ui-dropdown-menu ui-round ui-shadow-lg ui-no-scroll">
-                            <div class="ui-tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
+                            <div class="ui-tab-holder ui-theme-sub ui-ease-tab" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
                                 <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-border-b ui-ease-1st-btn">
                                     <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-text ui-active" title="Favorites">
@@ -326,7 +326,7 @@
                             <svg class="ui-icon"><use href="#bars-right"/></svg>
                         </button>
                         <div class="ui-dropdown-menu ui-round ui-shadow-lg ui-no-scroll">
-                            <div class="ui-tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
+                            <div class="ui-tab-holder ui-theme-sub ui-ease-tab" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
                                 <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-border-b ui-ease-1st-btn">
                                     <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-text ui-active" title="Notifications">
@@ -433,7 +433,7 @@
             <!-- header: end -->
 
             <!-- layouts: start -->
-            <div class="ui-tabs ui-ease-tabs ui-p-15-b" data-ui-classes="ui-border-lg ui-stroke ui-text">
+            <div class="ui-tab-holder ui-ease-tab ui-p-15-b" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
                 <div class="ui-container">
                     <div class="ui-row ui-border-b ui-m-15-b ui-theme-sub">
@@ -620,13 +620,13 @@
 
                             <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
                                 <div class="ui-card ui-full-h ui-p-15 ui-p-10-t ui-round ui-shadow-lg" style="min-height: 350px;">
-                                    <div class="ui-tabs ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
+                                    <div class="ui-tab-holder ui-theme-sub ui-ease-tab" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
                                         <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-m-10-b ui-border-b ui-form-lg ui-ease-1st-btn">
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-text ui-active">Delayed</button>
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">Paused</button>
                                         </div>
-                                        <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v ui-open ui-open-ease" style="top: 64px; bottom: 15px;">
                                             <div class="ui-listgroup ui-m-15-h">
                                                 <ul class="ui-ease-listgroup">
                                                     <li class="ui-no-border">
@@ -692,7 +692,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v" style="top: 64px; bottom: 15px;">
                                             <div class="ui-listgroup ui-m-15-h">
                                                 <ul class="ui-ease-listgroup">
                                                     <li class="ui-no-border">
@@ -764,8 +764,8 @@
                             </div>
 
                             <div class="ui-col-xl-6 ui-col-lg-6 ui-col-12 ui-col-md-6">
-                                <div class="ui-tabs ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg" data-ui-classes="ui-font-bold">
-                                    <div class="ui-ease-tabs">
+                                <div class="ui-tab-holder ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg" data-ui-classes="ui-font-bold">
+                                    <div class="ui-ease-tab">
                                         <div class="ui-dropdown ui-menu-l ui-float-r ui-ease-dropdown">
                                             <button class="ui-btn ui-btn-square ui-btn-ghost ui-round">
                                                 <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
@@ -837,13 +837,13 @@
 
                             <div class="ui-col-xl-3 ui-col-lg-6 ui-col-12 ui-col-md-6">
                                 <div class="ui-card ui-full-h ui-p-15 ui-p-10-t ui-round ui-shadow-lg" style="min-height: 350px;">
-                                    <div class="ui-tabs ui-form-lg ui-theme-sub ui-ease-tabs" data-ui-classes="ui-border-lg ui-stroke ui-text">
+                                    <div class="ui-tab-holder ui-form-lg ui-theme-sub ui-ease-tab" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
-                                        <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-m-10-b ui-border-b ui-ease-1st-btn">
+                                        <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-border-b ui-ease-1st-btn">
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-text ui-active">News</button>
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">Announcements</button>
                                         </div>
-                                        <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v ui-open ui-open-ease" style="top: 64px; bottom: 15px;">
                                             <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-timeline-no-h-lines">
                                                 <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                                 <li>
@@ -886,7 +886,7 @@
                                                 <li>Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</li>
                                             </ul>
                                         </div>
-                                        <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v" style="top: 62px; bottom: 15px;">
+                                        <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v" style="top: 64px; bottom: 15px;">
                                             <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-timeline-no-h-lines">
                                                 <li>Nullam sit amet sagittis nisi. Phasellus libero dolor, aliquam eu erat sed.</li>
                                                 <li>Aenean id tellus eu felis fermentum semper. Morbi et erat tincidunt, molestie leo a, accumsan dui</li>
