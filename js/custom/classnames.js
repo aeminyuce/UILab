@@ -181,7 +181,7 @@ ui.classnames = {
 
                     // filter rules
                     if (['container','fluid','fixed','row','gutter','col','push','pull','offset','order'].indexOf(title) >= 0) {
-                        title = 'grid system';
+                        title = 'grids';
 
                     } else if (['h1','h2','h3','h4','h5','h6'].indexOf(title) >= 0) {
                         title = 'headings';
@@ -204,9 +204,6 @@ ui.classnames = {
                     } else if (['line','donut','pie'].indexOf(title) >= 0) {
                         title = 'charts';
 
-                    } else if (['paging','prev','next'].indexOf(title) >= 0) {
-                        title = 'paging';
-
                     } else if (['icon','icons','toggle'].indexOf(title) >= 0) {
                         title = 'icons';
 
@@ -216,12 +213,6 @@ ui.classnames = {
                     } else if (title === 'darkmode' || title === 'invert') {
                         title = 'dark Mode';
 
-                    } else if (title === 'ease' || title === 'animate') {
-                        title = 'effects';
-
-                    } else if (title === 'block' || title === 'inline') {
-                        title = 'displaying types';
-
                     } else if (title === 'list') {
                         title = 'listings';
 
@@ -230,9 +221,6 @@ ui.classnames = {
 
                     } else if (title === 'carousel' || title === 'bring') {
                         title = 'carousel';
-
-                    } else if (title === 'visible' || title === 'hidden') {
-                        title = 'show &amp; hide';
 
                     } else if (title === 'm') {
                         title = 'margins';
@@ -245,6 +233,12 @@ ui.classnames = {
 
                     } if (title === 'btn') {
                         title = 'buttons';
+
+                    } if (title === 'ease') {
+                        title = 'effects';
+
+                    } if (title === 'animate') {
+                        title = 'animations';
 
                     } if (title === 'img') {
                         title = 'responsive images';

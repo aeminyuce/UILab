@@ -122,8 +122,10 @@
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-25">I agree to the</span>
-                                        <a class="ui-font-bold ui-font-hoverline ui-text" href="#">Terms</a>,
-                                        <a class="ui-font-bold ui-font-hoverline ui-text" href="#">Privacy Policy</a>
+                                        <span class="ui-font-hoverline-1st">
+                                            <a class="ui-font-bold ui-text" href="#">Terms</a>,
+                                            <a class="ui-font-bold ui-text" href="#">Privacy Policy</a>
+                                        </span>
                                         <span class="ui-color-black-25">and</span>
                                         <a class="ui-font-bold ui-text" href="#">Fees.</a>
                                     </label>

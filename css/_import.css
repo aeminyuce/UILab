@@ -3550,21 +3550,15 @@ html .ui-row {
 .ui-font-condensed {
   line-height: 120% !important;
 }
-.ui-font-underline,
-.ui-font-underline-1st > *,
-.ui-font-underline-2nd > * > * {
-  text-decoration: underline;
+.ui-font-underline {
+  text-decoration: underline !important;
 }
-.ui-font-underline a:hover,
-.ui-font-underline-1st > * a:hover,
-.ui-font-underline-2nd > * > * a:hover,
-.ui-font-underline button:hover,
-.ui-font-underline-1st > * button:hover,
-.ui-font-underline-2nd > * > * button:hover {
-  text-decoration: none;
+a.ui-font-underline:hover,
+button.ui-font-underline:hover {
+  text-decoration: none !important;
 }
 .ui-font-hoverline:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 .ui-font-hoverline:hover,
 .ui-font-hoverline-1st > *:hover,
@@ -4302,7 +4296,7 @@ dt + dd:not(:last-child) {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .ui-paging .ui-btn:not(.ui-prev):not(.ui-next):not(.ui-btn-active) {
+  .ui-paging .ui-btn:not(.ui-paging-prev):not(.ui-paging-next):not(.ui-btn-active) {
     display: none;
   }
   .ui-btn-holder.ui-btn-sm-fluid > .ui-btn {

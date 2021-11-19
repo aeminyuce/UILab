@@ -316,10 +316,10 @@
                 <div class="ui-p-30-b">
 
                     <div class="ui-paging ui-align-c ui-theme-sub ui-ease-1st-btn">
-                        <a class="ui-btn ui-btn-xs ui-prev ui-round" href="#">
+                        <a class="ui-btn ui-btn-xs ui-paging-prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-left"/></svg>
                         </a>
-                        <a class="ui-btn ui-btn-xs ui-prev ui-round" href="#">
+                        <a class="ui-btn ui-btn-xs ui-paging-prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-left"/></svg>
                         </a>
                         <a class="ui-btn ui-btn-xs ui-round" href="#">1</a>
@@ -328,19 +328,19 @@
                         <a class="ui-btn ui-btn-xs ui-round" href="#">4</a>
                         <a class="ui-btn ui-btn-xs ui-btn-passive ui-round" href="#">...</a>
                         <a class="ui-btn ui-btn-xs ui-round" href="#">10</a>
-                        <a class="ui-btn ui-btn-xs ui-next ui-round" href="#">
+                        <a class="ui-btn ui-btn-xs ui-paging-next ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-right"/></svg>
                         </a>
-                        <a class="ui-btn ui-btn-xs ui-next ui-round" href="#">
+                        <a class="ui-btn ui-btn-xs ui-paging-next ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-right"/></svg>
                         </a>
                     </div>
 
                     <div class="ui-paging ui-align-c ui-theme-sub ui-ease-1st-btn">
-                        <a class="ui-btn ui-btn-sm ui-prev ui-round" href="#">
+                        <a class="ui-btn ui-btn-sm ui-paging-prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-left"/></svg>
                         </a>
-                        <a class="ui-btn ui-btn-sm ui-prev ui-round" href="#">
+                        <a class="ui-btn ui-btn-sm ui-paging-prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-left"/></svg>
                         </a>
                         <a class="ui-btn ui-btn-sm ui-round" href="#">1</a>
@@ -349,19 +349,19 @@
                         <a class="ui-btn ui-btn-sm ui-round" href="#">4</a>
                         <a class="ui-btn ui-btn-sm ui-btn-passive ui-round" href="#">...</a>
                         <a class="ui-btn ui-btn-sm ui-round" href="#">10</a>
-                        <a class="ui-btn ui-btn-sm ui-next ui-round" href="#">
+                        <a class="ui-btn ui-btn-sm ui-paging-next ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-right"/></svg>
                         </a>
-                        <a class="ui-btn ui-btn-sm ui-next ui-round" href="#">
+                        <a class="ui-btn ui-btn-sm ui-paging-next ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-right"/></svg>
                         </a>
                     </div>
 
                     <div class="ui-paging ui-align-c ui-theme-sub ui-ease-1st-btn">
-                        <a class="ui-btn ui-prev ui-round" href="#">
+                        <a class="ui-btn ui-paging-prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-left"/></svg>
                         </a>
-                        <a class="ui-btn ui-prev ui-round" href="#">
+                        <a class="ui-btn ui-paging-prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-left"/></svg>
                         </a>
                         <a class="ui-btn ui-round" href="#">1</a>
@@ -370,19 +370,19 @@
                         <a class="ui-btn ui-round" href="#">4</a>
                         <a class="ui-btn ui-btn-passive ui-round" href="#">...</a>
                         <a class="ui-btn ui-round" href="#">10</a>
-                        <a class="ui-btn ui-next ui-round" href="#">
+                        <a class="ui-btn ui-paging-next ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-right"/></svg>
                         </a>
-                        <a class="ui-btn ui-next ui-round" href="#">
+                        <a class="ui-btn ui-paging-next ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-right"/></svg>
                         </a>
                     </div>
 
                     <div class="ui-paging ui-form-lg ui-align-c ui-theme-sub ui-ease-1st-btn">
-                        <a class="ui-btn ui-prev ui-round" href="#">
+                        <a class="ui-btn ui-paging-prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-left"/></svg>
                         </a>
-                        <a class="ui-btn ui-prev ui-round" href="#">
+                        <a class="ui-btn ui-paging-prev ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-left"/></svg>
                         </a>
                         <a class="ui-btn ui-round" href="#">1</a>
@@ -391,10 +391,10 @@
                         <a class="ui-btn ui-round" href="#">4</a>
                         <a class="ui-btn ui-btn-passive ui-round" href="#">...</a>
                         <a class="ui-btn ui-round" href="#">10</a>
-                        <a class="ui-btn ui-next ui-round" href="#">
+                        <a class="ui-btn ui-paging-next ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-right"/></svg>
                         </a>
-                        <a class="ui-btn ui-next ui-round" href="#">
+                        <a class="ui-btn ui-paging-next ui-round" href="#">
                             <svg class="ui-icon"><use href="#angle-dual-right"/></svg>
                         </a>
                     </div>

@@ -43,8 +43,8 @@ ui.datatable = {
     nameBtnActive: 'ui-btn-active',
     nameBtnPassive: 'ui-btn-passive',
 
-    namePrev: 'ui-prev',
-    nameNext: 'ui-next',
+    namePrev: 'ui-paging-prev',
+    nameNext: 'ui-paging-next',
 
     // icons
     sortIcon : 'sort-fill',

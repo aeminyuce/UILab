@@ -116,16 +116,14 @@
     &condensed { line-height: @line-height-condensed !important; }
 
     &underline {
-        &,&-1st > *,&-2nd > * > * {
-            text-decoration: underline;
+        text-decoration: underline !important;
 
-            a,button {
-              &:hover { text-decoration: none; }
-            }
+        a&,button& {
+            &:hover { text-decoration: none !important; }
         }
     }
     &hoverline {
-        &:hover { text-decoration: underline; }
+        &:hover { text-decoration: underline !important; }
 
         &,&-1st > *,&-2nd > * > * {
             &:hover { text-decoration: underline !important; }
