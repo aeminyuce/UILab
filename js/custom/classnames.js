@@ -198,7 +198,7 @@ ui.classnames = {
                     } else if (['theme','fill','stroke','text'].indexOf(title) >= 0) {
                         title = 'themes';
 
-                    } else if (['code','dl','rtl','pre','hr'].indexOf(title) >= 0) {
+                    } else if (['code','dl','rtl','pre','hr','blockquote'].indexOf(title) >= 0) {
                         title = 'typography';
 
                     } else if (['line','lines','donut','pie'].indexOf(title) >= 0) {
@@ -209,9 +209,6 @@ ui.classnames = {
 
                     } else if (['icon','icons','toggle'].indexOf(title) >= 0) {
                         title = 'icons';
-
-                    } else if (['border','round','circle'].indexOf(title) >= 0) {
-                        title = 'borders';
 
                     } else if (['dropdown','nav','menu'].indexOf(title) >= 0) {
                         title = 'dropdowns';
@@ -225,8 +222,8 @@ ui.classnames = {
                     } else if (title === 'block' || title === 'inline') {
                         title = 'displaying types';
 
-                    } else if (title === 'list' || title === 'blockquote') {
-                        title = 'listings &amp; list groups';
+                    } else if (title === 'list') {
+                        title = 'listings';
 
                     } else if (title === 'tab' || title === 'tabs') {
                         title = 'tabs';
@@ -334,11 +331,14 @@ ui.classnames = {
 
                             }
 
-                            items[i] = items[i].replace(/^\s+|\s+$/g, ''); // remove first and last spaces
-                            items[i] = items[i].replace(/(function )|(\(\) { \[native code\] })/g, ''); // remove native code error
+                            if (items[i].indexOf('[native code]') === -1) { // catch native code error
 
-                            html += '<li>' + items[i] + '</li>'; // create rows
-                            created += 1;
+                                items[i] = items[i].replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+
+                                html += '<li>' + items[i] + '</li>'; // create rows
+                                created += 1;
+
+                            }
 
                         }
 

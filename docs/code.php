@@ -257,7 +257,7 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="list group" value="../css/list-group" checked>
+                                            <input type="checkbox" name="listgroup" value="../css/listgroup" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         List Group

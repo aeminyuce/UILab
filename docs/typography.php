@@ -134,7 +134,7 @@
                 </div>
 
                 <h3 class="ui-h3">Alignment</h3>
-                <div class="ui-p-30-b ui-font-16 ui-card ui-round ui-p-15 ui-shadow-lg">
+                <div class="ui-m-30-b ui-font-16 ui-card ui-round ui-p-15 ui-shadow-lg">
                     <div class="ui-align-l">ui-align-l</div>
                     <br>
                     <div class="ui-align-c">ui-align-c</div>

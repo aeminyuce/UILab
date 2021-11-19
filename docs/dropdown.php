@@ -90,12 +90,12 @@
                                 <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-2 ui-round ui-shadow-lg">
-                                <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#hourglass-start"/></svg> Waiting</a></li>
-                                <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#user-circle"/></svg> Expert</a></li>
-                                <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#shield"/></svg> On Audit</a></li>
-                                <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#hourglass"/></svg> Delayed</a></li>
-                                <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#hourglass-end"/></svg> Waiting</a></li>
-                                <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#user"/></svg> Expert</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#hourglass-start"/></svg> Waiting</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#user-circle"/></svg> Expert</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#shield"/></svg> On Audit</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#hourglass"/></svg> Delayed</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#hourglass-end"/></svg> Waiting</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#user"/></svg> Expert</a></li>
                             </ul>
                         </div>
 
@@ -105,11 +105,11 @@
                                 <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-2 ui-round ui-shadow-lg">
-                                <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#hourglass-start"/></svg> Waiting</a></li>
-                                <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#user-circle"/></svg> Expert</a></li>
-                                <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#shield"/></svg> On Audit</a></li>
-                                <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#hourglass"/></svg> Delayed</a></li>
-                                <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#hourglass-end"/></svg> Waiting</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#hourglass-start"/></svg> Waiting</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#user-circle"/></svg> Expert</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#shield"/></svg> On Audit</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#hourglass"/></svg> Delayed</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#hourglass-end"/></svg> Waiting</a></li>
                             </ul>
                         </div>
 
@@ -119,15 +119,15 @@
                                 <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-3 ui-round ui-shadow-lg">
-                                <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
-                                <li><a href="#"><b class="ui-list-icon">258</b> Expert</a></li>
-                                <li><a href="#"><b class="ui-list-icon">49</b> On Audit</a></li>
-                                <li><a href="#"><b class="ui-list-icon">68</b> Delayed</a></li>
-                                <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
-                                <li><a href="#"><b class="ui-list-icon">258</b> Expert</a></li>
-                                <li><a href="#"><b class="ui-list-icon">49</b> On Audit</a></li>
-                                <li><a href="#"><b class="ui-list-icon">68</b> Delayed</a></li>
-                                <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">258</b> Expert</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">49</b> On Audit</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">68</b> Delayed</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">258</b> Expert</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">49</b> On Audit</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">68</b> Delayed</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">23</b> Waiting</a></li>
                             </ul>
                         </div>
 
@@ -137,13 +137,13 @@
                                 <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-3 ui-round ui-shadow-lg">
-                                <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
-                                <li><a href="#"><b class="ui-list-icon">258</b> Expert</a></li>
-                                <li><a href="#"><b class="ui-list-icon">49</b> On Audit</a></li>
-                                <li><a href="#"><b class="ui-list-icon">68</b> Delayed</a></li>
-                                <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
-                                <li><a href="#"><b class="ui-list-icon">258</b> Expert</a></li>
-                                <li><a href="#"><b class="ui-list-icon">49</b> On Audit</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">258</b> Expert</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">49</b> On Audit</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">68</b> Delayed</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">258</b> Expert</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">49</b> On Audit</a></li>
                             </ul>
                         </div>
 
@@ -160,15 +160,15 @@
                                 <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-3 ui-shadow-lg">
-                                <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
-                                <li><a href="#"><b class="ui-list-icon">258</b> Expert</a></li>
-                                <li><a href="#"><b class="ui-list-icon">49</b> On Audit</a></li>
-                                <li><a href="#"><b class="ui-list-icon">68</b> Delayed</a></li>
-                                <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
-                                <li><a href="#"><b class="ui-list-icon">258</b> Expert</a></li>
-                                <li><a href="#"><b class="ui-list-icon">49</b> On Audit</a></li>
-                                <li><a href="#"><b class="ui-list-icon">68</b> Delayed</a></li>
-                                <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">258</b> Expert</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">49</b> On Audit</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">68</b> Delayed</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">258</b> Expert</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">49</b> On Audit</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">68</b> Delayed</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">23</b> Waiting</a></li>
                             </ul>
                         </div>
 
@@ -178,13 +178,13 @@
                                 <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-3 ui-shadow-lg">
-                                <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
-                                <li><a href="#"><b class="ui-list-icon">258</b> Expert</a></li>
-                                <li><a href="#"><b class="ui-list-icon">49</b> On Audit</a></li>
-                                <li><a href="#"><b class="ui-list-icon">68</b> Delayed</a></li>
-                                <li><a href="#"><b class="ui-list-icon">23</b> Waiting</a></li>
-                                <li><a href="#"><b class="ui-list-icon">258</b> Expert</a></li>
-                                <li><a href="#"><b class="ui-list-icon">49</b> On Audit</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">258</b> Expert</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">49</b> On Audit</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">68</b> Delayed</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">23</b> Waiting</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">258</b> Expert</a></li>
+                                <li><a href="#"><b class="ui-menu-icon">49</b> On Audit</a></li>
                             </ul>
                         </div>
 
@@ -450,19 +450,19 @@
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#user"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#user"/></svg>
                                         Profile
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#key"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#key"/></svg>
                                         Change Password
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#sign-out"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#sign-out"/></svg>
                                         Logout
                                     </a>
                                 </li>
@@ -478,19 +478,19 @@
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#user"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#user"/></svg>
                                         Profile
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#key"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#key"/></svg>
                                         Change Password
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#sign-out"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#sign-out"/></svg>
                                         Logout
                                     </a>
                                 </li>
@@ -510,31 +510,31 @@
                             <ul class="ui-dropdown-menu ui-dropdown-has-grid ui-round ui-icons-lg ui-shadow-lg">
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#home"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#home"/></svg>
                                         Home
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#user"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#user"/></svg>
                                         Profile
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#bell"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#bell"/></svg>
                                         Notifications
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#calendar"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#calendar"/></svg>
                                         Calendar
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#sign-out"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#sign-out"/></svg>
                                         Logout
                                     </a>
                                 </li>
@@ -550,37 +550,37 @@
                             <ul class="ui-dropdown-menu ui-dropdown-has-grid ui-round ui-icons-lg ui-shadow-lg">
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#home"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#home"/></svg>
                                         Home
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#user"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#user"/></svg>
                                         Profile
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#bell"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#bell"/></svg>
                                         Notifications
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#calendar"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#calendar"/></svg>
                                         Calendar
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#settings"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#settings"/></svg>
                                         Settings
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-list-icon ui-icon"><use href="#sign-out"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="#sign-out"/></svg>
                                         Logout
                                     </a>
                                 </li>

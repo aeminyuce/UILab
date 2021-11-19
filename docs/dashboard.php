@@ -250,28 +250,28 @@
                         </button>
                         <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-2 ui-round ui-shadow-lg">
                             <li>
-                                <a href="#"><b class="ui-list-icon">23</b> Waiting</a>
+                                <a href="#"><b class="ui-menu-icon">23</b> Waiting</a>
                             </li>
                             <li>
-                                <a href="#"><b class="ui-list-icon">258</b> Expert</a>
+                                <a href="#"><b class="ui-menu-icon">258</b> Expert</a>
                             </li>
                             <li>
-                                <a href="#"><b class="ui-list-icon">49</b> On Audit</a>
+                                <a href="#"><b class="ui-menu-icon">49</b> On Audit</a>
                             </li>
                             <li>
-                                <a href="#"><b class="ui-list-icon">68</b> Delayed</a>
+                                <a href="#"><b class="ui-menu-icon">68</b> Delayed</a>
                             </li>
                             <li>
-                                <a href="#"><b class="ui-list-icon">23</b> Waiting</a>
+                                <a href="#"><b class="ui-menu-icon">23</b> Waiting</a>
                             </li>
                             <li>
-                                <a href="#"><b class="ui-list-icon">258</b> Expert</a>
+                                <a href="#"><b class="ui-menu-icon">258</b> Expert</a>
                             </li>
                             <li>
-                                <a href="#"><b class="ui-list-icon">49</b> On Audit</a>
+                                <a href="#"><b class="ui-menu-icon">49</b> On Audit</a>
                             </li>
                             <li>
-                                <a href="#"><b class="ui-list-icon">68</b> Delayed</a>
+                                <a href="#"><b class="ui-menu-icon">68</b> Delayed</a>
                             </li>
                         </ul>
                     </div>
@@ -571,9 +571,9 @@
                                             <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                         </button>
                                         <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
-                                            <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
-                                            <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#file-xls"/></svg>Download Excel</a></li>
-                                            <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See Detailed Activity</a></li>
+                                            <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
+                                            <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#file-xls"/></svg>Download Excel</a></li>
+                                            <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#eye"/></svg>See Detailed Activity</a></li>
                                         </ul>
                                     </div>
                                     <h4 class="ui-h4 ui-align-l ui-m-10-t">Activity</h4>
@@ -627,8 +627,8 @@
                                             <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b">Paused</button>
                                         </div>
                                         <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v ui-open ui-open-ease" style="top: 62px; bottom: 15px;">
-                                            <div class="ui-list-group ui-m-15-h">
-                                                <ul class="ui-ease-list-group">
+                                            <div class="ui-listgroup ui-m-15-h">
+                                                <ul class="ui-ease-listgroup">
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-float-r ui-ease-donut-chart">
                                                             <strong class="ui-color-black-25 ui-font-11">88%</strong>
@@ -693,8 +693,8 @@
                                             </div>
                                         </div>
                                         <div class="ui-tab-content ui-set-absolute ui-set-h ui-scroll-v" style="top: 62px; bottom: 15px;">
-                                            <div class="ui-list-group ui-m-15-h">
-                                                <ul class="ui-ease-list-group">
+                                            <div class="ui-listgroup ui-m-15-h">
+                                                <ul class="ui-ease-listgroup">
                                                     <li class="ui-no-border">
                                                         <span class="ui-donut-chart ui-col-48 ui-float-r ui-ease-donut-chart">
                                                             <strong class="ui-color-black-25 ui-font-11">88%</strong>
@@ -771,9 +771,9 @@
                                                 <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                             </button>
                                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
-                                                <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
-                                                <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#file-xls"/></svg>Download Excel</a></li>
-                                                <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See Detailed Statistics</a></li>
+                                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
+                                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#file-xls"/></svg>Download Excel</a></li>
+                                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#eye"/></svg>See Detailed Statistics</a></li>
                                             </ul>
                                         </div>
                                         <div class="ui-dropdown ui-menu-l ui-m-5-r ui-float-r ui-ease-dropdown">
@@ -910,8 +910,8 @@
                                             <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                         </button>
                                         <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
-                                            <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#calendar-plus"/></svg>Add to Your Calendar</a></li>
-                                            <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See All Events</a></li>
+                                            <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#calendar-plus"/></svg>Add to Your Calendar</a></li>
+                                            <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#eye"/></svg>See All Events</a></li>
                                         </ul>
                                     </div>
                                     <h4 class="ui-h4 ui-align-l ui-m-10-t">Events</h4>
@@ -926,9 +926,9 @@
                                             <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                         </button>
                                         <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
-                                            <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
-                                            <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#file-xls"/></svg>Download Excel</a></li>
-                                            <li><a href="#"><svg class="ui-list-icon ui-icon"><use href="#eye"/></svg>See All Experts</a></li>
+                                            <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#file-pdf"/></svg>Download PDF</a></li>
+                                            <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#file-xls"/></svg>Download Excel</a></li>
+                                            <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="#eye"/></svg>See All Experts</a></li>
                                         </ul>
                                     </div>
                                     <h4 class="ui-h4 ui-align-l ui-m-10-t">Experts</h4>
@@ -1556,19 +1556,19 @@
                                                         </button>
                                                         <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
                                                             <li><a href="#">
-                                                                <svg class="ui-list-icon ui-icon"><use href="#check"/></svg>
+                                                                <svg class="ui-menu-icon ui-icon"><use href="#check"/></svg>
                                                                 Save &amp; Continue</a>
                                                             </li>
                                                             <li><a href="#">
-                                                                <svg class="ui-list-icon ui-icon"><use href="#sign-out"/></svg>
+                                                                <svg class="ui-menu-icon ui-icon"><use href="#sign-out"/></svg>
                                                                 Save &amp; Exit</a>
                                                             </li>
                                                             <li><a href="#">
-                                                                <svg class="ui-list-icon ui-icon"><use href="#pencil"/></svg>
+                                                                <svg class="ui-menu-icon ui-icon"><use href="#pencil"/></svg>
                                                                 Save &amp; Edit</a>
                                                             </li>
                                                             <li><a href="#">
-                                                                <svg class="ui-list-icon ui-icon"><use href="#plus"/></svg>
+                                                                <svg class="ui-menu-icon ui-icon"><use href="#plus"/></svg>
                                                                 Save &amp; Add New</a>
                                                             </li>
                                                         </ul>

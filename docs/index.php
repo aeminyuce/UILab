@@ -175,7 +175,7 @@
                         <li><a class="ui-btn ui-btn-ghost" href="?p=gallery">Gallery</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=grid">Grid</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=imgupload">Image Upload</a></li>
-                        <li><a class="ui-btn ui-btn-ghost" href="?p=list-group">List Group</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=listgroup">List Group</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=listings">Listings</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=loading-mask">Loading Mask</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=map">Map</a></li>
