@@ -7,7 +7,7 @@ ui.donutChart = {
 
     // targets
     target: 'ui-donut-chart',
-    targetBg: 'ui-donut-bg',
+    targetBg: 'ui-donut-chart-bg',
 
     // helper classnames
     nameLoaded: 'ui-loaded',

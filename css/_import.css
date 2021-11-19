@@ -9330,7 +9330,7 @@ button.ui-dialog-custom {
 .ui-weather:not(.ui-night) .ui-graphs .ui-shooting-star {
   display: none;
 }
-/* line charts */
+/* line chart */
 @keyframes ui-line-draw {
   to {
     stroke-dashoffset: 0;
@@ -9353,135 +9353,135 @@ button.ui-dialog-custom {
     opacity: 1;
   }
 }
-.ui-ease-line-charts circle {
+.ui-ease-line-chart circle {
   transition-property: stroke-width;
   transition-duration: 0.15s;
 }
-.ui-line-charts {
+.ui-line-chart-holder {
   -ms-user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
-.ui-line-charts .ui-lines {
+.ui-line-chart-holder .ui-line-chart {
   display: none !important;
 }
-.ui-line-charts svg {
+.ui-line-chart-holder svg {
   width: 100%;
 }
-.ui-line-charts svg g {
+.ui-line-chart-holder svg g {
   display: block;
 }
-.ui-line-charts svg path {
+.ui-line-chart-holder svg path {
   stroke-linecap: round;
 }
-.ui-line-charts svg path:not(.ui-dashed):not(.ui-dotted):not(.ui-filled) {
+.ui-line-chart-holder svg path:not(.ui-dashed):not(.ui-dotted):not(.ui-filled) {
   stroke-dashoffset: 3000;
   stroke-dasharray: 3000;
 }
-.ui-line-charts svg path:not([fill]) {
+.ui-line-chart-holder svg path:not([fill]) {
   fill: transparent;
 }
-.ui-line-charts svg path.ui-dashed {
+.ui-line-chart-holder svg path.ui-dashed {
   stroke-dasharray: 10 5;
 }
-.ui-line-charts svg path.ui-dotted {
+.ui-line-chart-holder svg path.ui-dotted {
   stroke-dasharray: 1 5;
 }
-.ui-no-effects .ui-line-charts svg path:not(.ui-dashed):not(.ui-dotted):not(.ui-filled),
-.ui-ie .ui-line-charts svg path:not(.ui-dashed):not(.ui-dotted):not(.ui-filled) {
+.ui-no-effects .ui-line-chart-holder svg path:not(.ui-dashed):not(.ui-dotted):not(.ui-filled),
+.ui-ie .ui-line-chart-holder svg path:not(.ui-dashed):not(.ui-dotted):not(.ui-filled) {
   stroke-dashoffset: 0;
 }
-.ui-no-effects .ui-line-charts svg path.ui-dashed,
-.ui-ie .ui-line-charts svg path.ui-dashed,
-.ui-no-effects .ui-line-charts svg path.ui-dotted,
-.ui-ie .ui-line-charts svg path.ui-dotted {
+.ui-no-effects .ui-line-chart-holder svg path.ui-dashed,
+.ui-ie .ui-line-chart-holder svg path.ui-dashed,
+.ui-no-effects .ui-line-chart-holder svg path.ui-dotted,
+.ui-ie .ui-line-chart-holder svg path.ui-dotted {
   opacity: 1;
 }
-.ui-no-effects .ui-line-charts svg path.ui-filled,
-.ui-ie .ui-line-charts svg path.ui-filled {
+.ui-no-effects .ui-line-chart-holder svg path.ui-filled,
+.ui-ie .ui-line-chart-holder svg path.ui-filled {
   transform: translateY(0);
   opacity: 0.15;
 }
-.ui-line-charts svg line {
+.ui-line-chart-holder svg line {
   stroke: currentColor;
 }
-html:not(.ui-firefox) .ui-line-charts svg line {
+html:not(.ui-firefox) .ui-line-chart-holder svg line {
   shape-rendering: crispEdges;
 }
-.ui-line-charts svg line.ui-root-grid {
+.ui-line-chart-holder svg line.ui-root-grid {
   opacity: 0.35;
 }
-.ui-line-charts svg line:not(.ui-root-grid) {
+.ui-line-chart-holder svg line:not(.ui-root-grid) {
   stroke-width: 1;
   opacity: 0.12;
 }
-.ui-line-charts svg circle[onclick] {
+.ui-line-chart-holder svg circle[onclick] {
   cursor: pointer;
 }
-.ui-desktop .ui-line-charts svg circle:hover {
+.ui-desktop .ui-line-chart-holder svg circle:hover {
   stroke-width: 4;
 }
-.ui-no-effects .ui-line-charts svg circle,
-.ui-ie .ui-line-charts svg circle {
+.ui-no-effects .ui-line-chart-holder svg circle,
+.ui-ie .ui-line-chart-holder svg circle {
   transform: translateY(0);
   opacity: 1;
 }
-.ui-line-charts svg text {
+.ui-line-chart-holder svg text {
   fill: currentColor;
   font-size: 12px;
   opacity: 0.65;
 }
-.ui-line-charts svg .ui-x-grid {
+.ui-line-chart-holder svg .ui-x-grid {
   text-anchor: middle;
 }
-.ui-line-charts svg .ui-y-grid {
+.ui-line-chart-holder svg .ui-y-grid {
   text-anchor: end;
 }
-.ui-line-charts.ui-resized svg path.ui-filled {
+.ui-line-chart-holder.ui-resized svg path.ui-filled {
   opacity: 0;
 }
-.ui-line-charts.ui-resized svg path.ui-dashed,
-.ui-line-charts.ui-resized svg path.ui-dotted {
+.ui-line-chart-holder.ui-resized svg path.ui-dashed,
+.ui-line-chart-holder.ui-resized svg path.ui-dotted {
   stroke-dashoffset: 0;
   opacity: 0;
 }
-html:not(.ui-ie) .ui-line-charts:not(.ui-resized) svg path.ui-dashed,
-html:not(.ui-ie) .ui-line-charts:not(.ui-resized) svg path.ui-dotted {
+html:not(.ui-ie) .ui-line-chart-holder:not(.ui-resized) svg path.ui-dashed,
+html:not(.ui-ie) .ui-line-chart-holder:not(.ui-resized) svg path.ui-dotted {
   stroke-dashoffset: 0;
   opacity: 0;
 }
-html:not(.ui-ie) .ui-line-charts:not(.ui-resized) svg path.ui-filled {
+html:not(.ui-ie) .ui-line-chart-holder:not(.ui-resized) svg path.ui-filled {
   transform: translateY(15px);
   opacity: 0;
 }
-html:not(.ui-ie) .ui-line-charts:not(.ui-resized) svg circle {
+html:not(.ui-ie) .ui-line-chart-holder:not(.ui-resized) svg circle {
   transform: translateY(30px);
   opacity: 0;
 }
-html:not(.ui-ie) .ui-line-charts.ui-loaded svg path:not(.ui-dashed):not(.ui-dotted):not(.ui-filled) {
+html:not(.ui-ie) .ui-line-chart-holder.ui-loaded svg path:not(.ui-dashed):not(.ui-dotted):not(.ui-filled) {
   animation: ui-line-draw 2s 0.6s ease-in forwards;
 }
-html:not(.ui-ie) .ui-line-charts.ui-loaded svg path.ui-dashed,
-html:not(.ui-ie) .ui-line-charts.ui-loaded svg path.ui-dotted {
+html:not(.ui-ie) .ui-line-chart-holder.ui-loaded svg path.ui-dashed,
+html:not(.ui-ie) .ui-line-chart-holder.ui-loaded svg path.ui-dotted {
   animation: ui-line-dashed-dotted 1s 0.6s ease-in forwards;
 }
-html:not(.ui-ie) .ui-line-charts.ui-loaded svg path.ui-filled {
+html:not(.ui-ie) .ui-line-chart-holder.ui-loaded svg path.ui-filled {
   animation: ui-line-filled 0.6s forwards;
 }
-html:not(.ui-ie) .ui-line-charts.ui-loaded svg circle {
+html:not(.ui-ie) .ui-line-chart-holder.ui-loaded svg circle {
   animation: ui-line-circles 0.6s forwards;
 }
-.ui-line-charts .ui-chart-info {
+.ui-line-chart-holder .ui-chart-info {
   list-style: none;
   text-align: center;
   display: block;
 }
-.ui-line-charts .ui-chart-info li {
+.ui-line-chart-holder .ui-chart-info li {
   margin: 0 5px 3px 5px;
   display: inline-block;
 }
-.ui-line-charts .ui-chart-info li span {
+.ui-line-chart-holder .ui-chart-info li span {
   vertical-align: middle;
   width: 13px;
   height: 13px;
@@ -9495,7 +9495,7 @@ html:not(.ui-ie) .ui-line-charts.ui-loaded svg circle {
     stroke-dasharray: 0 440;
   }
 }
-.ui-ease-donut-chart circle:not(.ui-donut-bg) {
+.ui-ease-donut-chart circle:not(.ui-donut-chart-bg) {
   transition-property: opacity stroke;
   transition-duration: 0.15s;
   transition-timing-function: ease-in-out;
@@ -9536,14 +9536,14 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.ui-icon) {
   fill: none;
   stroke-width: 10;
 }
-.ui-donut-chart circle.ui-loaded:not(.ui-donut-bg) {
+.ui-donut-chart circle.ui-loaded:not(.ui-donut-chart-bg) {
   animation: ui-donut-draw 1.6s ease-in reverse;
 }
 .ui-donut-chart circle.ui-selected {
   stroke-width: 16;
   transition-duration: 0.15s;
 }
-.ui-donut-chart circle.ui-donut-bg {
+.ui-donut-chart circle.ui-donut-chart-bg {
   stroke: currentColor;
   stroke-width: 6;
   stroke-dashoffset: 0;

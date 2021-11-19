@@ -6,10 +6,10 @@
 ui.lineCharts = {
 
     // targets
-    target: 'ui-line-charts',
+    target: 'ui-line-chart-holder',
 
     // main classnames
-    nameLines: 'ui-lines',
+    nameLines: 'ui-line-chart',
 
     nameGridRoot: 'ui-root-grid',
     nameGridX: 'ui-x-grid',

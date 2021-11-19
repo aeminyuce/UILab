@@ -3,12 +3,12 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-p-30-v">
 
-                <h3 class="ui-h3">Line Charts Examples</h3>
+                <h3 class="ui-h3">Line Chart Examples</h3>
                 <div class="ui-row ui-row-gap-lg-v">
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold ui-align-c">Line Chart</h5>
-                        <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="ui-lines">
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-line-chart">
                                 <li data-ui-y="84"></li>
                                 <li data-ui-y="56"></li>
                                 <li data-ui-y="112"></li>
@@ -21,8 +21,8 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold ui-align-c">Curved Line Chart</h5>
-                        <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="ui-lines" data-ui-type="curved">
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-line-chart" data-ui-type="curved">
                                 <li data-ui-y="0"></li>
                                 <li data-ui-y="-56"></li>
                                 <li data-ui-y="-112"></li>
@@ -35,8 +35,8 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold ui-align-c">Dotted Line Chart</h5>
-                        <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="ui-lines" data-ui-type="dotted">
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-line-chart" data-ui-type="dotted">
                                 <li data-ui-y="0"></li>
                                 <li data-ui-y="-56"></li>
                                 <li data-ui-y="-112"></li>
@@ -49,8 +49,8 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold ui-align-c">Dashed Line Chart</h5>
-                        <div class="ui-line-charts ui-ease-line-charts" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="ui-lines" data-ui-type="dashed">
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-line-chart" data-ui-type="dashed">
                                 <li data-ui-y="0"></li>
                                 <li data-ui-y="-56"></li>
                                 <li data-ui-y="-112"></li>
@@ -63,8 +63,8 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold ui-align-c">Line Charts</h5>
-                        <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="ui-lines" data-ui-name="1st">
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-line-chart" data-ui-name="1st">
                                 <li data-ui-y="-34" data-ui-url="#1"></li>
                                 <li data-ui-y="-56" data-ui-url="#2"></li>
                                 <li data-ui-y="-112" data-ui-url="#3"></li>
@@ -73,7 +73,7 @@
                                 <li data-ui-y="-20" data-ui-url="#6"></li>
                                 <li data-ui-y="-28" data-ui-url="#7"></li>
                             </ul>
-                            <ul class="ui-lines" data-ui-name="2nd">
+                            <ul class="ui-line-chart" data-ui-name="2nd">
                                 <li data-ui-y="120" data-ui-url="#1"></li>
                                 <li data-ui-y="20" data-ui-url="#2"></li>
                                 <li data-ui-y="159" data-ui-url="#3"></li>
@@ -86,8 +86,8 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold ui-align-c">Curved Line Charts</h5>
-                        <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="ui-lines" data-ui-name="1st" data-ui-type="curved dotted">
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-line-chart" data-ui-name="1st" data-ui-type="curved dotted">
                                 <li data-ui-y="55" data-ui-url="#1"></li>
                                 <li data-ui-y="70" data-ui-url="#2"></li>
                                 <li data-ui-y="92" data-ui-url="#3"></li>
@@ -96,7 +96,7 @@
                                 <li data-ui-y="98" data-ui-url="#6"></li>
                                 <li data-ui-y="116" data-ui-url="#7"></li>
                             </ul>
-                            <ul class="ui-lines" data-ui-name="2nd" data-ui-type="curved">
+                            <ul class="ui-line-chart" data-ui-name="2nd" data-ui-type="curved">
                                 <li data-ui-y="120" data-ui-url="#1"></li>
                                 <li data-ui-y="20" data-ui-url="#2"></li>
                                 <li data-ui-y="159" data-ui-url="#3"></li>
@@ -105,7 +105,7 @@
                                 <li data-ui-y="0" data-ui-url="#6"></li>
                                 <li data-ui-y="20" data-ui-url="#7"></li>
                             </ul>
-                            <ul class="ui-lines" data-ui-name="3rd" data-ui-type="curved">
+                            <ul class="ui-line-chart" data-ui-name="3rd" data-ui-type="curved">
                                 <li data-ui-y="32" data-ui-url="#1"></li>
                                 <li data-ui-y="52" data-ui-url="#2"></li>
                                 <li data-ui-y="117" data-ui-url="#3"></li>
@@ -118,8 +118,8 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold ui-align-c">Filled Line Charts</h5>
-                        <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="ui-lines" data-ui-name="1st" data-ui-type="filled">
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-line-chart" data-ui-name="1st" data-ui-type="filled">
                                 <li data-ui-y="-34" data-ui-url="#1"></li>
                                 <li data-ui-y="-56" data-ui-url="#2"></li>
                                 <li data-ui-y="-112" data-ui-url="#3"></li>
@@ -128,7 +128,7 @@
                                 <li data-ui-y="-20" data-ui-url="#6"></li>
                                 <li data-ui-y="-28" data-ui-url="#7"></li>
                             </ul>
-                            <ul class="ui-lines" data-ui-name="2nd" data-ui-type="filled">
+                            <ul class="ui-line-chart" data-ui-name="2nd" data-ui-type="filled">
                                 <li data-ui-y="120" data-ui-url="#1"></li>
                                 <li data-ui-y="20" data-ui-url="#2"></li>
                                 <li data-ui-y="159" data-ui-url="#3"></li>
@@ -141,8 +141,8 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold ui-align-c">Filled &amp; Curved Line Charts</h5>
-                        <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="ui-lines" data-ui-name="1st" data-ui-type="curved dotted">
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-line-chart" data-ui-name="1st" data-ui-type="curved dotted">
                                 <li data-ui-y="-34" data-ui-url="#1"></li>
                                 <li data-ui-y="-56" data-ui-url="#2"></li>
                                 <li data-ui-y="-112" data-ui-url="#3"></li>
@@ -151,7 +151,7 @@
                                 <li data-ui-y="-20" data-ui-url="#6"></li>
                                 <li data-ui-y="-28" data-ui-url="#7"></li>
                             </ul>
-                            <ul class="ui-lines" data-ui-name="2nd" data-ui-type="curved filled">
+                            <ul class="ui-line-chart" data-ui-name="2nd" data-ui-type="curved filled">
                                 <li data-ui-y="120" data-ui-url="#1"></li>
                                 <li data-ui-y="20" data-ui-url="#2"></li>
                                 <li data-ui-y="159" data-ui-url="#3"></li>
@@ -160,7 +160,7 @@
                                 <li data-ui-y="0" data-ui-url="#6"></li>
                                 <li data-ui-y="20" data-ui-url="#7"></li>
                             </ul>
-                            <ul class="ui-lines" data-ui-name="3rd" data-ui-type="curved filled">
+                            <ul class="ui-line-chart" data-ui-name="3rd" data-ui-type="curved filled">
                                 <li data-ui-y="32" data-ui-url="#1"></li>
                                 <li data-ui-y="52" data-ui-url="#2"></li>
                                 <li data-ui-y="117" data-ui-url="#3"></li>
@@ -175,8 +175,8 @@
                         <div class="ui-row">
                             <div class="ui-col-6">
                                 <h5 class="ui-h5 ui-font-bold ui-align-c">Filled Line Charts</h5>
-                                <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="ui-lines" data-ui-name="1st" data-ui-type="filled">
+                                <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                    <ul class="ui-line-chart" data-ui-name="1st" data-ui-type="filled">
                                         <li data-ui-y="-34" data-ui-url="#1"></li>
                                         <li data-ui-y="-56" data-ui-url="#2"></li>
                                         <li data-ui-y="-112" data-ui-url="#3"></li>
@@ -185,7 +185,7 @@
                                         <li data-ui-y="-20" data-ui-url="#6"></li>
                                         <li data-ui-y="-28" data-ui-url="#7"></li>
                                     </ul>
-                                    <ul class="ui-lines" data-ui-name="2nd" data-ui-type="filled">
+                                    <ul class="ui-line-chart" data-ui-name="2nd" data-ui-type="filled">
                                         <li data-ui-y="120" data-ui-url="#1"></li>
                                         <li data-ui-y="20" data-ui-url="#2"></li>
                                         <li data-ui-y="159" data-ui-url="#3"></li>
@@ -198,8 +198,8 @@
                             </div>
                             <div class="ui-col-6">
                                 <h5 class="ui-h5 ui-font-bold ui-align-c">Filled &amp; Curved Line Charts</h5>
-                                <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="ui-lines" data-ui-name="1st" data-ui-type="curved dotted">
+                                <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                    <ul class="ui-line-chart" data-ui-name="1st" data-ui-type="curved dotted">
                                         <li data-ui-y="-34" data-ui-url="#1"></li>
                                         <li data-ui-y="-56" data-ui-url="#2"></li>
                                         <li data-ui-y="-112" data-ui-url="#3"></li>
@@ -208,7 +208,7 @@
                                         <li data-ui-y="-20" data-ui-url="#6"></li>
                                         <li data-ui-y="-28" data-ui-url="#7"></li>
                                     </ul>
-                                    <ul class="ui-lines" data-ui-name="2nd" data-ui-type="curved filled">
+                                    <ul class="ui-line-chart" data-ui-name="2nd" data-ui-type="curved filled">
                                         <li data-ui-y="120" data-ui-url="#1"></li>
                                         <li data-ui-y="20" data-ui-url="#2"></li>
                                         <li data-ui-y="159" data-ui-url="#3"></li>
@@ -217,7 +217,7 @@
                                         <li data-ui-y="0" data-ui-url="#6"></li>
                                         <li data-ui-y="20" data-ui-url="#7"></li>
                                     </ul>
-                                    <ul class="ui-lines" data-ui-name="3rd" data-ui-type="curved filled">
+                                    <ul class="ui-line-chart" data-ui-name="3rd" data-ui-type="curved filled">
                                         <li data-ui-y="32" data-ui-url="#1"></li>
                                         <li data-ui-y="52" data-ui-url="#2"></li>
                                         <li data-ui-y="117" data-ui-url="#3"></li>
@@ -255,8 +255,8 @@
 
                                 <div class="ui-tab-content ui-open ui-open-ease">
                                     <h5 class="ui-h5 ui-font-bold ui-align-c">First Chart</h5>
-                                    <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                        <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
+                                    <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                        <ul class="ui-line-chart" data-ui-name="Sales" data-ui-type="curved filled">
                                             <li data-ui-y="10" data-ui-url="#"></li>
                                             <li data-ui-y="30" data-ui-url="#"></li>
                                             <li data-ui-y="70" data-ui-url="#"></li>
@@ -264,7 +264,7 @@
                                             <li data-ui-y="100" data-ui-url="#"></li>
                                             <li data-ui-y="150" data-ui-url="#"></li>
                                         </ul>
-                                        <ul class="ui-lines" data-ui-name="Orders" data-ui-type="dashed">
+                                        <ul class="ui-line-chart" data-ui-name="Orders" data-ui-type="dashed">
                                             <li data-ui-y="50" data-ui-url="#"></li>
                                             <li data-ui-y="10" data-ui-url="#"></li>
                                             <li data-ui-y="50" data-ui-url="#"></li>
@@ -276,8 +276,8 @@
                                 </div>
                                 <div class="ui-tab-content">
                                     <h5 class="ui-h5 ui-font-bold ui-align-c">Second Chart</h5>
-                                    <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                        <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
+                                    <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                        <ul class="ui-line-chart" data-ui-name="Sales" data-ui-type="curved filled">
                                             <li data-ui-y="10" data-ui-url="#"></li>
                                             <li data-ui-y="60" data-ui-url="#"></li>
                                             <li data-ui-y="20" data-ui-url="#"></li>
@@ -285,7 +285,7 @@
                                             <li data-ui-y="10" data-ui-url="#"></li>
                                             <li data-ui-y="100" data-ui-url="#"></li>
                                         </ul>
-                                        <ul class="ui-lines" data-ui-name="Orders" data-ui-type="dashed">
+                                        <ul class="ui-line-chart" data-ui-name="Orders" data-ui-type="dashed">
                                             <li data-ui-y="0" data-ui-url="#"></li>
                                             <li data-ui-y="20" data-ui-url="#"></li>
                                             <li data-ui-y="50" data-ui-url="#"></li>
@@ -300,9 +300,9 @@
                     </div>
                     <div class="ui-col-12">
                         <h5 class="ui-h5 ui-font-bold ui-align-c">Column Stepping Chart</h5>
-                        <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,25" data-ui-step="6"
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,25" data-ui-step="6"
                             data-ui-x="01.12.2019,02.12.2019,03.12.2019,04.12.2019,05.12.2019,06.12.2019,07.12.2019,08.12.2019,09.12.2019,10.12.2019,11.12.2019,12.12.2019,13.12.2019,14.12.2019,15.12.2019,16.12.2019,17.12.2019,18.12.2019,19.12.2019,20.12.2019,21.12.2019">
-                            <ul class="ui-lines" data-ui-type="filled dotted">
+                            <ul class="ui-line-chart" data-ui-type="filled dotted">
                                 <li data-ui-y="84"></li>
                                 <li data-ui-y="56"></li>
                                 <li data-ui-y="112"></li>
@@ -339,7 +339,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="25" />
                             </svg>
                         </div>
@@ -348,7 +348,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-ui-percent="50" />
                             </svg>
                         </div>
@@ -357,7 +357,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>JS</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="75" />
                             </svg>
                         </div>
@@ -366,7 +366,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>PHP</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="90" />
                             </svg>
                         </div>
@@ -378,7 +378,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="15" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="85" />
                             </svg>
@@ -388,7 +388,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="10" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="60" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="30" />
@@ -399,7 +399,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="10" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="20" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="30" />
@@ -411,7 +411,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="20" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="20" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="20" />
@@ -431,7 +431,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="25" data-ui-title="25% HTML" />
                             </svg>
                         </div>
@@ -440,7 +440,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-ui-percent="50" data-ui-title="50% CSS" />
                             </svg>
                         </div>
@@ -449,7 +449,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="15" data-ui-title="15% HTML" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="85" data-ui-title="85% PHP" />
                             </svg>
@@ -459,7 +459,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="10" data-ui-title="10% HTML" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="60" data-ui-title="60% PHP" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="30" data-ui-title="30% JS" />
@@ -473,7 +473,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>HTML</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="25" data-ui-title="25% HTML" />
                             </svg>
                         </div>
@@ -482,7 +482,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>CSS</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(97, 70%, 70%)" data-ui-percent="50" data-ui-title="50% CSS" />
                             </svg>
                         </div>
@@ -491,7 +491,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="15" data-ui-title="15% HTML" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="85" data-ui-title="85% PHP" />
                             </svg>
@@ -501,7 +501,7 @@
                         <div class="ui-donut-chart ui-ease-donut-chart">
                             <strong>Multiple<br>Donuts</strong>
                             <svg viewBox="0 0 160 160">
-                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="10" data-ui-title="10% HTML" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="60" data-ui-title="60% PHP" />
                                 <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="30" data-ui-title="30% JS" />

@@ -16,7 +16,7 @@
 
 .ui-ease-donut-chart {
     circle {
-        &:not(.ui-donut-bg) { transition-property: opacity stroke; transition-duration: @ease-default; transition-timing-function: ease-in-out; }
+        &:not(.ui-donut-chart-bg) { transition-property: opacity stroke; transition-duration: @ease-default; transition-timing-function: ease-in-out; }
     }
 }
 
@@ -35,9 +35,9 @@
     circle {
         fill: none; stroke-width: @donut-chart-stroke-size;
 
-        &.ui-loaded:not(.ui-donut-bg) { animation: ui-donut-draw 1.6s ease-in reverse; }
+        &.ui-loaded:not(.ui-donut-chart-bg) { animation: ui-donut-draw 1.6s ease-in reverse; }
         &.ui-selected { stroke-width: @donut-chart-stroke-selected-size; transition-duration: @ease-default; }
-        &.ui-donut-bg { stroke: currentColor; stroke-width: @donut-chart-bg-stroke-size; stroke-dashoffset: 0; opacity: @donut-chart-bg-opacity; }
+        &.ui-donut-chart-bg { stroke: currentColor; stroke-width: @donut-chart-bg-stroke-size; stroke-dashoffset: 0; opacity: @donut-chart-bg-opacity; }
     }
     &:not(.ui-multiple) {
         circle when (@donut-chart-stroke-single-round = true) { stroke-linecap: round; }

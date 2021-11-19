@@ -757,8 +757,8 @@
                 <div class="ui-col-static">
                     <div class="ui-row">
                         <div class="ui-col-12">
-                            <div class="ui-line-charts ui-ease-line-charts" data-ui-size="10,30" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                <ul class="ui-lines" data-ui-name="Last year" data-ui-type="filled">
+                            <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,30" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                <ul class="ui-line-chart" data-ui-name="Last year" data-ui-type="filled">
                                     <li data-ui-y="30" data-ui-url="#1"></li>
                                     <li data-ui-y="50" data-ui-url="#2"></li>
                                     <li data-ui-y="110" data-ui-url="#3"></li>
@@ -767,7 +767,7 @@
                                     <li data-ui-y="320" data-ui-url="#6"></li>
                                     <li data-ui-y="360" data-ui-url="#7"></li>
                                 </ul>
-                                <ul class="ui-lines" data-ui-name="This year" data-ui-type="filled">
+                                <ul class="ui-line-chart" data-ui-name="This year" data-ui-type="filled">
                                     <li data-ui-y="120" data-ui-url="#1"></li>
                                     <li data-ui-y="160" data-ui-url="#2"></li>
                                     <li data-ui-y="180" data-ui-url="#3"></li>

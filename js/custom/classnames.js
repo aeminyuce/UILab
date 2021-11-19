@@ -201,7 +201,7 @@ ui.classnames = {
                     } else if (['code','dl','rtl','pre','hr','blockquote'].indexOf(title) >= 0) {
                         title = 'typography';
 
-                    } else if (['line','lines','donut','pie'].indexOf(title) >= 0) {
+                    } else if (['line','donut','pie'].indexOf(title) >= 0) {
                         title = 'charts';
 
                     } else if (['paging','prev','next'].indexOf(title) >= 0) {

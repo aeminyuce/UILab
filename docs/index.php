@@ -64,7 +64,7 @@
     <script src="../js/photoslide.js?v=<?php echo filemtime('../js/photoslide.js'); ?>"></script>
     <script src="../js/weather.js?v=<?php echo filemtime('../js/weather.js'); ?>"></script>
 
-    <script src="../js/line-charts.js?v=<?php echo filemtime('../js/line-charts.js'); ?>"></script>
+    <script src="../js/line-chart.js?v=<?php echo filemtime('../js/line-chart.js'); ?>"></script>
     <script src="../js/donut-chart.js?v=<?php echo filemtime('../js/donut-chart.js'); ?>"></script>
     <script src="../js/pie-chart.js?v=<?php echo filemtime('../js/pie-chart.js'); ?>"></script>
     <script src="../js/map.js?v=<?php echo filemtime('../js/map.js'); ?>"></script>

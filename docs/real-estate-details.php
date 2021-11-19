@@ -99,7 +99,7 @@
                                             <span class="ui-sp-2"></span>4,9/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
-                                            <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                            <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                             <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-ui-percent="96" />
                                         </svg>
                                     </div>
@@ -111,7 +111,7 @@
                                             <span class="ui-sp-2"></span>4/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
-                                            <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                            <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                             <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="88" />
                                         </svg>
                                     </div>
@@ -123,7 +123,7 @@
                                             <span class="ui-sp-2"></span>4/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
-                                            <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                            <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                             <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="86" />
                                         </svg>
                                     </div>
@@ -135,7 +135,7 @@
                                             <span class="ui-sp-2"></span>3.9/5
                                         </strong>
                                         <svg viewBox="0 0 160 160">
-                                            <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                            <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                             <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="80" />
                                         </svg>
                                     </div>
@@ -198,15 +198,15 @@
                 <div class="ui-card ui-m-20-b ui-round ui-shadow-lg">
                     <div class="ui-p-30-h ui-p-10-v">
                         <b>Previous Offers / <span style="color: hsl(30, 100%, 63%);">Averages</span></b>
-                        <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,20" data-ui-x="1,2,3,4,5">
-                            <ul class="ui-lines" data-ui-type="curved dotted">
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="5,20" data-ui-x="1,2,3,4,5">
+                            <ul class="ui-line-chart" data-ui-type="curved dotted">
                                 <li data-ui-y="820000"></li>
                                 <li data-ui-y="380000"></li>
                                 <li data-ui-y="140000"></li>
                                 <li data-ui-y="490000"></li>
                                 <li data-ui-y="560000"></li>
                             </ul>
-                            <ul class="ui-lines" data-ui-type="curved filled">
+                            <ul class="ui-line-chart" data-ui-type="curved filled">
                                 <li data-ui-y="510000"></li>
                                 <li data-ui-y="860000"></li>
                                 <li data-ui-y="360000"></li>

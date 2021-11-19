@@ -596,7 +596,7 @@
                                                     Payments
                                                 </strong>
                                                 <svg viewBox="0 0 160 160">
-                                                    <circle r="69.85699" cy="80" cx="80" class="ui-donut-bg" />
+                                                    <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
                                                     <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-ui-percent="69" />
                                                 </svg>
                                             </div>
@@ -792,8 +792,8 @@
                                         </div>
                                         <h4 class="ui-h4 ui-align-l ui-m-10-t">Statistics</h4>
                                         <div class="ui-tab-content ui-open ui-open-ease">
-                                            <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                                <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
+                                            <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                                <ul class="ui-line-chart" data-ui-name="Sales" data-ui-type="curved filled">
                                                     <li data-ui-y="10" data-ui-url="#"></li>
                                                     <li data-ui-y="30" data-ui-url="#"></li>
                                                     <li data-ui-y="70" data-ui-url="#"></li>
@@ -801,7 +801,7 @@
                                                     <li data-ui-y="100" data-ui-url="#"></li>
                                                     <li data-ui-y="150" data-ui-url="#"></li>
                                                 </ul>
-                                                <ul class="ui-lines" data-ui-name="Orders" data-ui-type="dashed">
+                                                <ul class="ui-line-chart" data-ui-name="Orders" data-ui-type="dashed">
                                                     <li data-ui-y="50" data-ui-url="#"></li>
                                                     <li data-ui-y="10" data-ui-url="#"></li>
                                                     <li data-ui-y="50" data-ui-url="#"></li>
@@ -812,8 +812,8 @@
                                             </div>
                                         </div>
                                         <div class="ui-tab-content">
-                                            <div class="ui-line-charts ui-ease-line-charts" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
-                                                <ul class="ui-lines" data-ui-name="Sales" data-ui-type="curved filled">
+                                            <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
+                                                <ul class="ui-line-chart" data-ui-name="Sales" data-ui-type="curved filled">
                                                     <li data-ui-y="10" data-ui-url="#"></li>
                                                     <li data-ui-y="60" data-ui-url="#"></li>
                                                     <li data-ui-y="20" data-ui-url="#"></li>
@@ -821,7 +821,7 @@
                                                     <li data-ui-y="10" data-ui-url="#"></li>
                                                     <li data-ui-y="100" data-ui-url="#"></li>
                                                 </ul>
-                                                <ul class="ui-lines" data-ui-name="Orders" data-ui-type="dashed">
+                                                <ul class="ui-line-chart" data-ui-name="Orders" data-ui-type="dashed">
                                                     <li data-ui-y="0" data-ui-url="#"></li>
                                                     <li data-ui-y="20" data-ui-url="#"></li>
                                                     <li data-ui-y="50" data-ui-url="#"></li>

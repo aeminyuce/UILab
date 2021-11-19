@@ -353,10 +353,10 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="line charts" value="../css/line-charts">
+                                            <input type="checkbox" name="line chart" value="../css/line-chart">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Line Charts
+                                        Line Chart
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
@@ -834,10 +834,10 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="line charts js" value="../js/line-charts">
+                                            <input type="checkbox" name="line chart js" value="../js/line-chart">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Line Charts
+                                        Line Chart
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
