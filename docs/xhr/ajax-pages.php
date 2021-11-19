@@ -24,6 +24,7 @@
     include ('../listings.php');
     include ('../loading-mask.php');
     include ('../modal.php');
+    include ('../notifier.php');
     include ('../gallery.php');
     include ('../photoslide.php');
     include ('../pricing-tables.php');

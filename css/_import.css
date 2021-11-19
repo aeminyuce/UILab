@@ -3964,27 +3964,6 @@ dt + dd:not(:last-child) {
   padding-right: 30px;
   padding-left: 30px;
 }
-.ui-btn[data-ui-notifier]:after {
-  content: attr(data-ui-notifier);
-  color: hsl(0, 0%, 100%);
-  font-size: 12px;
-  text-align: center !important;
-  line-height: 1;
-  min-width: 16px;
-  min-height: 16px;
-  background-color: hsl(0, 74%, 55%);
-  padding: 2px 4px;
-  border-radius: 200px;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  z-index: 1;
-  transform: translateX(-75%);
-}
-.ui-btn[data-ui-notifier=""]:after {
-  min-width: 8px;
-  min-height: 8px;
-}
 .ui-btn.ui-border {
   padding-top: 9px;
   padding-bottom: 9px;
@@ -6506,6 +6485,49 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-card .ui-avatar-holder [class*="ui-avatar"] {
   border-color: hsl(0, 0%, 100%);
   border-color: var(--ui-card-bg);
+}
+/* notifier */
+.ui-notifier {
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+}
+.ui-notifier:after {
+  box-sizing: border-box;
+  content: "";
+  color: hsl(0, 0%, 100%);
+  min-width: 8px;
+  min-height: 8px;
+  background-color: hsl(348, 75%, 50%);
+  border-radius: 1000px;
+  position: absolute;
+  top: 1px;
+  left: 75%;
+}
+.ui-notifier[data-ui-val]:after {
+  content: attr(data-ui-val);
+  font-size: 12px;
+  text-align: center !important;
+  line-height: 1;
+  min-width: 12px;
+  min-height: 12px;
+  padding: 2px 4px;
+  top: -3px;
+  z-index: 1;
+}
+.ui-notifier-lg:after {
+  min-width: 16px;
+  min-height: 16px;
+  top: -3px;
+}
+.ui-notifier-lg[data-ui-val]:after {
+  font-size: 16px;
+  line-height: 1.2;
+  min-width: 24px;
+  min-height: 24px;
+  top: -16px;
+  padding: 3px 6px;
+  top: -7px;
 }
 /* progress bar */
 @keyframes ui-progress-fill {

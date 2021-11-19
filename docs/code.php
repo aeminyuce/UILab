@@ -298,6 +298,13 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
+                                            <input type="checkbox" name="notifier" value="../css/notifier">
+                                            <i class="ui-form-state ui-fill-dark-100"></i>
+                                        </span>
+                                        Notifier
+                                    </label>
+                                    <label class="ui-label">
+                                        <span class="ui-switch ui-round ui-border-dual ui-ease-form">
                                             <input type="checkbox" name="progress bar" value="../css/progress-bar">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>

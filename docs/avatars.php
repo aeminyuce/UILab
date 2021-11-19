@@ -17,8 +17,12 @@
                     <span class="ui-avatar-xs ui-circle ui-theme-orange ui-fill-dark-100">
                         <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
-                    <span class="ui-avatar-xs ui-circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
-                    <span class="ui-avatar-xs ui-circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>
+                    <span class="ui-avatar-xs ui-circle ui-theme-yellow ui-fill-dark-100">
+                        <span>HY</span>
+                    </span>
+                    <span class="ui-avatar-xs ui-circle ui-theme-sub ui-fill-dark-100">
+                        <span>EKY</span>
+                    </span>
 
                     <span class="ui-sp-30"></span>
 
@@ -33,8 +37,12 @@
                     <span class="ui-avatar-sm ui-circle ui-theme-orange ui-fill-dark-100">
                         <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
-                    <span class="ui-avatar-sm ui-circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
-                    <span class="ui-avatar-sm ui-circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>
+                    <span class="ui-avatar-sm ui-circle ui-theme-yellow ui-fill-dark-100">
+                        <span>HY</span>
+                    </span>
+                    <span class="ui-avatar-sm ui-circle ui-theme-sub ui-fill-dark-100">
+                        <span>EKY</span>
+                    </span>
 
                     <span class="ui-sp-30"></span>
 
@@ -49,8 +57,12 @@
                     <span class="ui-avatar ui-circle ui-theme-orange ui-fill-dark-100">
                         <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
-                    <span class="ui-avatar ui-circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
-                    <span class="ui-avatar ui-circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>
+                    <span class="ui-avatar ui-circle ui-theme-yellow ui-fill-dark-100">
+                        <span>HY</span>
+                    </span>
+                    <span class="ui-avatar ui-circle ui-theme-sub ui-fill-dark-100">
+                        <span>EKY</span>
+                    </span>
 
                     <span class="ui-sp-30"></span>
 
@@ -65,8 +77,12 @@
                     <span class="ui-avatar-lg ui-circle ui-theme-orange ui-fill-dark-100">
                         <svg class="ui-icon"><use href="#user"/></svg>
                     </span>
-                    <span class="ui-avatar-lg ui-circle ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
-                    <span class="ui-avatar-lg ui-circle ui-theme-sub ui-fill-dark-100"><span>EKY</span></span>
+                    <span class="ui-avatar-lg ui-circle ui-theme-yellow ui-fill-dark-100">
+                        <span>HY</span>
+                    </span>
+                    <span class="ui-avatar-lg ui-circle ui-theme-sub ui-fill-dark-100">
+                        <span>EKY</span>
+                    </span>
 
                 </div>
 

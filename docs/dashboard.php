@@ -279,8 +279,10 @@
 
                 <div class="ui-inline">
                     <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
-                        <button class="ui-btn ui-color-black-25 ui-btn-square ui-btn-ghost ui-circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Personal Logs">
-                            <svg class="ui-icon"><use href="#grid-column"/></svg>
+                        <button class="ui-btn ui-color-black-25 ui-btn-square ui-btn-ghost ui-circle">
+                            <span class="ui-notifier">
+                                <svg class="ui-icon"><use href="#comment"/></svg>
+                            </span>
                         </button>
                         <div class="ui-dropdown-menu ui-round ui-shadow-lg ui-no-scroll">
                             <div class="ui-tab-holder ui-theme-sub ui-ease-tab" data-ui-classes="ui-border-lg ui-stroke ui-text">
@@ -322,8 +324,10 @@
                         </div>
                     </div>
                     <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
-                        <button class="ui-btn ui-color-black-25 ui-btn-square ui-btn-ghost ui-circle" data-ui-notifier data-ui-tooltip="l" data-ui-only="desktop" title="Notification Center">
-                            <svg class="ui-icon"><use href="#bars-right"/></svg>
+                        <button class="ui-btn ui-color-black-25 ui-btn-square ui-btn-ghost ui-circle">
+                            <span class="ui-notifier">
+                                <svg class="ui-icon"><use href="#bell"/></svg>
+                            </span>
                         </button>
                         <div class="ui-dropdown-menu ui-round ui-shadow-lg ui-no-scroll">
                             <div class="ui-tab-holder ui-theme-sub ui-ease-tab" data-ui-classes="ui-border-lg ui-stroke ui-text">

@@ -1,0 +1,31 @@
+// out: false
+/* notifier */ @import (reference) 'ui.less';
+
+@notifier-bg:                           hsl(348, 75%, 50%);
+
+@notifier-size:                         8px;
+@notifier-lg-size:                      16px;
+
+@notifier-padding:                      4px;
+@notifier-lg-padding:                   6px;
+
+@notifier-pos-v:                        1px;
+@notifier-pos-h:                        75%;
+
+.ui-notifier {
+    vertical-align: middle; display: inline-block; position: relative;
+
+    &:after { box-sizing: border-box; content: ""; color: @white; min-width: @notifier-size; min-height: @notifier-size; background-color: @notifier-bg; border-radius: @circle; position: absolute; top: @notifier-pos-v; left: @notifier-pos-h; }
+
+    &[data-ui-val] {
+        &:after { content: attr(data-ui-val); font-size: @font-12; text-align: center !important; line-height: 1; min-width: (@notifier-size * 1.5); min-height: (@notifier-size * 1.5); padding: (@notifier-padding / 2) @notifier-padding; top: -((@notifier-size / 2) - @notifier-pos-v); z-index: 1; }
+    }
+
+    &-lg {
+        &:after { min-width: @notifier-lg-size; min-height: @notifier-lg-size; top: -((@notifier-size / 2) - @notifier-pos-v); }
+
+        &[data-ui-val] {
+            &:after { font-size: @font-16; line-height: 1.2; min-width: (@notifier-lg-size * 1.5); min-height: (@notifier-lg-size * 1.5); top: -@notifier-lg-size; padding: (@notifier-lg-padding / 2) @notifier-lg-padding;  top: -((@notifier-lg-size / 2) - @notifier-pos-v); }
+        }
+    }
+}

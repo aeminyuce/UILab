@@ -180,6 +180,7 @@
                         <li><a class="ui-btn ui-btn-ghost" href="?p=loading-mask">Loading Mask</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=map">Map</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=modal">Modal</a></li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=notifier">Notifier</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=photoslide">Photoslide</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=pricing-tables">Pricing Tables</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=progress-bar">Progress Bar</a></li>

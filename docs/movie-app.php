@@ -104,8 +104,10 @@
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-circle">
                                     <svg class="ui-icon"><use href="#user"/></svg>
                                 </button>
-                                <button class="ui-btn ui-btn-square ui-btn-ghost ui-circle" data-ui-notifier>
-                                    <svg class="ui-icon"><use href="#bell"/></svg>
+                                <button class="ui-btn ui-btn-square ui-btn-ghost ui-circle">
+                                    <span class="ui-notifier">
+                                        <svg class="ui-icon"><use href="#bell"/></svg>
+                                    </span>
                                 </button>
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-circle">
                                     <svg class="ui-icon"><use href="#setting"/></svg>
