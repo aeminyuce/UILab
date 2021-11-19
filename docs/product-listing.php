@@ -12,7 +12,7 @@
                 <div class="ui-sidebar-add-r">
 
                     <div class="ui-card ui-p-15 ui-round ui-shadow-lg">
-                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete ui-input ui-form-icon-all ui-round ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form ui-form-has-clear">
+                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete ui-input ui-form-icon-all ui-round ui-ease-form ui-form-has-clear">
                             <svg class="ui-icon ui-form-icon-l"><use href="#search"/></svg>
                             <button type="button" class="ui-form-clear">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
@@ -227,7 +227,7 @@
                             <span class="ui-font-16">Found <b>47</b> and displaying <b>9</b> products.</span>
                         </div>
                         <div class="ui-col-6 ui-align-r ui-sm-no-p-t">
-                            <div class="ui-select ui-align-l ui-round ui-form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
+                            <div class="ui-select ui-align-l ui-round ui-form-inline ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="1" checked>Sort by</option>
@@ -236,7 +236,7 @@
                                     <option value="4">Price (High to Low)</option>
                                 </select>
                             </div>
-                            <div class="ui-select ui-align-l ui-round ui-form-inline ui-no-border ui-theme-gray ui-fill-light-300 ui-ease-form">
+                            <div class="ui-select ui-align-l ui-round ui-form-inline ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="12" checked>Show 9</option>

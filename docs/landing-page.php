@@ -7,7 +7,7 @@
 <!-- header: start -->
 <header class="ui-container ui-no-gutter ui-bg-white ui-invert-bg" data-ui-classes="ui-shadow-lg">
 
-    <div class="ui-border-b ui-theme-sub">
+    <div class="ui-shadow-sm ui-theme-sub">
         <div class="ui-fixed ui-p-10-v ui-sm-no-p-v">
             <div class="ui-row">
                 <div class="ui-col-static ui-no-fluid">
@@ -340,15 +340,15 @@
             <div class="ui-fixed">
                 <div class="ui-row ui-no-row-gap-v ui-icons-no-opacity ui-icons-m-5-r">
                     <div class="ui-col-12 ui-color-black-50 ui-xs-align-l ui-align-c ui-ease-1st-btn">
-                        <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-m-1-b ui-border-b ui-text ui-border-lg ui-stroke ui-active">
+                        <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-border-b ui-text ui-border-lg ui-stroke ui-active">
                             <svg class="ui-icon"><use href="#building"/></svg>
                             Company
                         </button>
-                        <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-m-1-b ui-border-b">
+                        <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-border-b">
                             <svg class="ui-icon"><use href="#comments"/></svg>
                             Social
                         </button>
-                        <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-m-1-b ui-border-b">
+                        <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-border-b">
                             <svg class="ui-icon"><use href="#users"/></svg>
                             Customers
                         </button>
@@ -357,12 +357,12 @@
                 <span class="ui-sp-10 ui-visible-sm"></span>
             </div>
 
-            <div class="ui-tab-content ui-p-10 ui-open ui-open-ease">
+            <div class="ui-tab-content ui-m-10-v ui-m-30-h ui-open ui-open-ease">
                 <div class="ui-row ui-sm-fluid ui-icons-sm ui-hover-shadow-2nd ui-hover-t-2nd">
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow-lg ui-ease-layout" href="#">
 
-                            <span class="ui-p-15 ui-block">
+                            <span class="ui-p-30 ui-block">
                                 <span class="ui-font-22 ui-block">Ready to modern agriculture.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Company</b>
 
@@ -384,9 +384,9 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow-lg ui-ease-layout" href="#">
 
-                            <span class="ui-p-15 ui-block">
+                            <span class="ui-p-30 ui-block">
                                 <span class="ui-font-22 ui-block">Farmers happy now.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Company</b>
 
@@ -408,9 +408,9 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow-lg ui-ease-layout" href="#">
 
-                            <span class="ui-p-15 ui-block">
+                            <span class="ui-p-30 ui-block">
                                 <span class="ui-font-22 ui-block">New market prospects.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Company</b>
 
@@ -432,9 +432,9 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow-lg ui-ease-layout" href="#">
 
-                            <span class="ui-p-15 ui-block">
+                            <span class="ui-p-30 ui-block">
                                 <span class="ui-font-22 ui-block">About product breeding</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Company</b>
 
@@ -465,9 +465,9 @@
             <div class="ui-tab-content ui-p-10">
                 <div class="ui-row ui-sm-fluid">
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow-lg ui-ease-layout" href="#">
 
-                            <span class="ui-p-15 ui-block">
+                            <span class="ui-p-30 ui-block">
                                 <span class="ui-font-22 ui-block">Farmers happy now.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Social</b>
 
@@ -489,9 +489,9 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow-lg ui-ease-layout" href="#">
 
-                            <span class="ui-p-15 ui-block">
+                            <span class="ui-p-30 ui-block">
                                 <span class="ui-font-22 ui-block">New market prospects.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Social</b>
 
@@ -513,9 +513,9 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow-lg ui-ease-layout" href="#">
 
-                            <span class="ui-p-15 ui-block">
+                            <span class="ui-p-30 ui-block">
                                 <span class="ui-font-22 ui-block">About product breeding</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Social</b>
 
@@ -537,9 +537,9 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow-lg ui-ease-layout" href="#">
 
-                            <span class="ui-p-15 ui-block">
+                            <span class="ui-p-30 ui-block">
                                 <span class="ui-font-22 ui-block">Ready to modern agriculture.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Social</b>
 
@@ -570,9 +570,9 @@
             <div class="ui-tab-content ui-p-10">
                 <div class="ui-row ui-sm-fluid">
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow-lg ui-ease-layout" href="#">
 
-                            <span class="ui-p-15 ui-block">
+                            <span class="ui-p-30 ui-block">
                                 <span class="ui-font-22 ui-block">Farmers happy now.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Customers</b>
 
@@ -594,9 +594,9 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow-lg ui-ease-layout" href="#">
 
-                            <span class="ui-p-15 ui-block">
+                            <span class="ui-p-30 ui-block">
                                 <span class="ui-font-22 ui-block">Ready to modern agriculture.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Customers</b>
 
@@ -618,9 +618,9 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow-lg ui-ease-layout" href="#">
 
-                            <span class="ui-p-15 ui-block">
+                            <span class="ui-p-30 ui-block">
                                 <span class="ui-font-22 ui-block">About product breeding</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Customers</b>
 
@@ -642,9 +642,9 @@
                         </a>
                     </div>
                     <div class="ui-col-3 ui-col-md-6">
-                        <a class="ui-link ui-card ui-full-h ui-shadow ui-ease-layout" href="#">
+                        <a class="ui-link ui-card ui-full-h ui-shadow-lg ui-ease-layout" href="#">
 
-                            <span class="ui-p-15 ui-block">
+                            <span class="ui-p-30 ui-block">
                                 <span class="ui-font-22 ui-block">New market prospects.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Customers</b>
 
