@@ -150,7 +150,7 @@
                 </div>
             </div>
 
-            <div class="ui-col-400 ui-p-10">
+            <div class="ui-col-350 ui-p-10 ui-order-md-first">
 
                 <div class="ui-card ui-align-c ui-round ui-shadow-lg ui-theme-sub">
                     <div class="ui-card-side ui-p-10-v ui-fill-dark-300">
@@ -172,7 +172,7 @@
                 </div>
 
                 <div class="ui-card ui-align-c ui-round ui-shadow-lg ui-theme-sub">
-                    <ul class="ui-list-inline ui-list-gap ui-p-30 ui-p-15-b ui-icons-lg ui-icons-m-5-r ui-theme-gray ui-inline-block-1st">
+                    <ul class="ui-list-inline ui-list-gap ui-list-sp-10 ui-p-30 ui-p-15-b ui-icons-lg ui-icons-m-5-r ui-theme-gray ui-inline-block-1st">
                         <li>
                             <svg class="ui-icon"><use href="#floor-plan"/></svg>
                             <span class="ui-font-16">7+1</span>
@@ -187,17 +187,19 @@
                         </li>
                     </ul>
                     <div class="ui-p-15-b">
-                        <svg class="ui-icon ui-color-black-25"><use href="#marker"/></svg>
-                        <span class="ui-color-black-25">Location: <b>New York</b></span>
+                        <svg class="ui-icon ui-icon-sm ui-color-black-25"><use href="#marker"/></svg>
+                        <span class="ui-inline-block ui-color-black-25">New York</span>
                     </div>
                     <div class="ui-p-10 ui-border-t">
                         Real Estate ID: <b>RE-616</b>
                     </div>
                 </div>
 
-                <div class="ui-card ui-m-20-b ui-round ui-shadow-lg">
+                <div class="ui-card ui-m-20-b ui-round ui-shadow-lg ui-theme-sub">
                     <div class="ui-p-30-h ui-p-10-v">
-                        <b>Previous Offers / <span style="color: hsl(30, 100%, 63%);">Averages</span></b>
+                        <b class="ui-text">Previous Offers</b>
+                        <span class="ui-opacity-half">/</span>
+                        <b style="color: hsl(30, 100%, 63%);">Averages</b>
                         <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="5,20" data-ui-x="1,2,3,4,5">
                             <ul class="ui-line-chart" data-ui-type="curved dotted">
                                 <li data-ui-y="820000"></li>
@@ -244,7 +246,7 @@
                                 </div>
                             </div>
                             <span class="ui-sp-15"></span>
-                            <button class="ui-btn ui-btn-lg ui-block ui-round ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
+                            <button class="ui-btn ui-btn-lg ui-block ui-round ui-fill-dark-100 ui-ease-btn" type="submit">
                                 <b>MAKE OFFER</b>
                             </button>
                             <span class="ui-sp-5"></span>
