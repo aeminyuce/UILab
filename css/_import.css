@@ -7377,6 +7377,9 @@ header.ui-sticky-static {
 .ui-tooltip:not(.ui-open-ease) {
   opacity: 0;
 }
+.ui-tooltip.ui-round {
+  border-radius: 6.66666667px;
+}
 .ui-tooltip-content {
   line-height: 1.2em;
   min-height: 26px;

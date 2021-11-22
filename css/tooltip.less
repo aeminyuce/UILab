@@ -29,8 +29,11 @@
     min-width: @tooltip-min-width; max-width: @tooltip-max-width; position: absolute; z-index: @tooltip-z-index;
 
     &:not([class*="ui-fill-"]) { color: @white; ._bg-var(tooltip-bg); }
+
     &:not(.ui-open) { display: none; }
     &:not(.ui-open-ease) { opacity: 0; }
+
+    &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
 
     &-content { line-height: @tooltip-content-line-height; min-height: @tooltip-min-height; padding: @tooltip-content-padding (@tooltip-content-padding * 2); position: relative; }
 
