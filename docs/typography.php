@@ -141,7 +141,9 @@
                     <br>
                     <div class="ui-align-r">ui-align-r</div>
                     <br>
-                    <div class="ui-align-r">ui-align-r</div>
+                    <div class="ui-align-r ui-sm-align-c">ui-align-r ui-sm-align-c</div>
+                    <br>
+                    <div class="ui-align-r ui-md-align-l">ui-align-r ui-md-align-l</div>
                     <br>
                     <p class="ui-align-justify"><strong>ui-align-justify:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae faucibus orci. Etiam bibendum arcu sodales velit iaculis, a semper arcu gravida.</p>
                     <span class="ui-sp-10"></span>

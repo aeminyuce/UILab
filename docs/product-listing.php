@@ -222,13 +222,13 @@
                     </div>
 
                     <div class="ui-row ui-sm-fluid">
-                        <div class="ui-col-4">
+                        <div class="ui-col-4 ui-sm-align-c">
                             <span class="ui-sp-5 ui-hidden-sm"></span>
                             <span class="ui-font-16">Showing <b>9</b> of <b>47</b> products.</span>
                         </div>
 
                         <div class="ui-col-8 ui-align-r ui-sm-align-c ui-sm-no-p-t">
-                            <div class="ui-select ui-align-l ui-sm-align-l ui-round ui-form-inline-xs ui-ease-form">
+                            <div class="ui-select ui-round ui-form-inline-xs ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="1" checked>Sort by</option>
@@ -237,7 +237,7 @@
                                     <option value="4">Price (High to Low)</option>
                                 </select>
                             </div>
-                            <div class="ui-select ui-align-l ui-sm-align-l ui-round ui-form-inline-xs ui-ease-form">
+                            <div class="ui-select ui-round ui-form-inline-xs ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="12" checked>Show 9</option>

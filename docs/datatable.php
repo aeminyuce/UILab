@@ -455,7 +455,7 @@
 
                         <div class="ui-row ui-no-row-gap ui-no-fluid">
                             <div class="ui-col-4">
-                                <div class="ui-p-5-v">
+                                <div class="ui-p-10-v">
                                     Total <b class="ui-datatable-total"></b>
                                 </div>
                             </div>
@@ -482,7 +482,7 @@
                             </div>
                         </div>
                         <div class="ui-col-7 ui-align-r ui-sm-align-l">
-                            <label class="ui-label ui-m-5-r">
+                            <label class="ui-label ui-m-10-r">
                                 <span class="ui-check ui-round ui-border-dual ui-sm-no-m-t ui-ease-form">
                                     <input class="ui-datatable-check-all" type="checkbox">
                                     <i class="ui-form-state"></i>
@@ -1223,7 +1223,7 @@
 
                     <div class="ui-row ui-no-fluid">
                         <div class="ui-col-6">
-                            <div class="ui-p-5-v">
+                            <div class="ui-p-10-v">
                                 Total <b class="ui-datatable-total"></b>
                             </div>
                         </div>
@@ -1249,7 +1249,7 @@
                             </div>
                         </div>
                         <div class="ui-col-7 ui-align-r ui-sm-align-l">
-                            <label class="ui-label ui-m-5-r">
+                            <label class="ui-label ui-m-5-t ui-m-10-r">
                                 <span class="ui-check ui-round ui-border-dual ui-sm-no-m-t ui-ease-form">
                                     <input class="ui-datatable-filter" data-ui-index="2" type="checkbox" value="25">
                                     <i class="ui-form-state"></i>
@@ -1808,7 +1808,7 @@
 
                     <div class="ui-row ui-no-fluid">
                         <div class="ui-col-6">
-                            <div class="ui-p-5-v">
+                            <div class="ui-p-10-v">
                                 Total <b class="ui-datatable-total"></b>
                             </div>
                         </div>

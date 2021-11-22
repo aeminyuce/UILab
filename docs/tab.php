@@ -147,7 +147,7 @@
                 <h3 class="ui-h3">Side Navigated Tabs</h3>
                 <div class="ui-tab-holder ui-col-static ui-border-dual ui-m-30-b ui-ease-tab" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
-                    <div class="ui-col-200 ui-p-1 ui-theme-sub">
+                    <div class="ui-col-250 ui-p-1 ui-theme-sub">
 
                         <div class="ui-btn-list ui-align-l ui-icons-m-10-r ui-icons-no-opacity ui-form-lg ui-ease-1st-btn">
                             <button class="ui-tab ui-btn ui-border-r ui-border-lg ui-stroke ui-border-r ui-text ui-active">
@@ -222,7 +222,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ui-col-200 ui-p-1 ui-theme-sub">
+                    <div class="ui-col-250 ui-p-1 ui-theme-sub">
 
                         <div class="ui-btn-list ui-align-l ui-icons-no-opacity ui-form-lg ui-ease-1st-btn">
                             <button class="ui-tab ui-btn ui-border-l ui-border-l ui-border-lg ui-stroke ui-text ui-active">
@@ -257,7 +257,7 @@
 
                     <div class="ui-tab-content ui-tab-holder ui-col-static ui-border-dual ui-m-30-b ui-ease-tab ui-open ui-open-ease" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
-                        <div class="ui-col-200 ui-p-1 ui-theme-sub">
+                        <div class="ui-col-250 ui-p-1 ui-theme-sub">
 
                             <div class="ui-btn-list ui-align-l ui-icons-m-10-r ui-icons-no-opacity ui-form-lg ui-ease-1st-btn">
                                 <button class="ui-tab ui-btn ui-border-r ui-border-lg ui-stroke ui-text ui-active">
@@ -307,7 +307,7 @@
                     </div>
                     <div class="ui-tab-content ui-tab-holder ui-col-static ui-border-dual ui-m-30-b ui-ease-tab" data-ui-classes="ui-border-lg ui-stroke ui-text">
 
-                        <div class="ui-col-200 ui-p-1 ui-theme-sub">
+                        <div class="ui-col-250 ui-p-1 ui-theme-sub">
 
                             <div class="ui-btn-list ui-align-l ui-icons-m-10-r ui-icons-no-opacity ui-form-lg ui-ease-1st-btn">
                                 <button class="ui-tab ui-btn ui-border-r ui-border-lg ui-stroke ui-text ui-active">

@@ -141,7 +141,7 @@
                 </div>
 
                 <h3 class="ui-h3">Square Buttons</h3>
-                <div class="ui-p-30-b ui-align-c ui-theme-sub ui-ease-1st-btn">
+                <div class="ui-p-30-b ui-theme-sub ui-ease-1st-btn">
                     <a class="ui-btn ui-btn-square ui-btn-xs ui-round ui-fill-dark-100" href="#">
                         <svg class="ui-icon"><use href="#trash"/></svg>
                     </a>

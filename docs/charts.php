@@ -248,7 +248,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <h4 class="ui-h4 ui-align-l ui-m-5-v">Multiple Line Charts</h4>
+                                <h4 class="ui-h4 ui-align-l ui-m-10-t">Multiple Line Charts</h4>
 
                             </div>
                             <div class="ui-card-side ui-p-15">
@@ -422,7 +422,7 @@
                     </div>
                 </div>
 
-                <div class="ui-p-10-v ui-align-c ui-lg-align-l ui-xs-align-c">
+                <div class="ui-p-10-v ui-align-c">
                     <b>Show Title Examples:</b>
                 </div>
 
@@ -589,7 +589,7 @@
                     </div>
                 </div>
 
-                <div class="ui-p-10-v ui-align-c ui-lg-align-l ui-xs-align-c">
+                <div class="ui-p-10-v ui-align-c">
                     <b>Show Title Examples:</b>
                 </div>
 

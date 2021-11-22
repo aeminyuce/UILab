@@ -313,7 +313,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="ui-col-50 ui-color-black-25 ui-align-c ui-icons-lg ui-set-relative">
+                                <div class="ui-col-50 ui-opacity-half ui-align-c ui-icons-lg ui-set-relative">
                                     <div class="ui-set-absolute ui-set-all ui-hidden-md">
                                         <div class="ui-set-absolute ui-set-c ui-p-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
@@ -351,7 +351,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="ui-col-50 ui-color-black-25 ui-align-c ui-icons-lg ui-set-relative">
+                                <div class="ui-col-50 ui-opacity-half ui-align-c ui-icons-lg ui-set-relative">
                                     <div class="ui-set-absolute ui-set-all ui-hidden-md">
                                         <div class="ui-set-absolute ui-set-c ui-p-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
@@ -389,7 +389,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="ui-col-50 ui-color-black-25 ui-align-c ui-icons-lg ui-set-relative">
+                                <div class="ui-col-50 ui-opacity-half ui-align-c ui-icons-lg ui-set-relative">
                                     <div class="ui-set-absolute ui-set-all ui-hidden-md">
                                         <div class="ui-set-absolute ui-set-c ui-p-20-h">
                                             <svg class="ui-icon"><use href="#exchange-h"/></svg>
@@ -1295,7 +1295,7 @@
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                        <input type="text" value="3" min="2" max="5" class="ui-number ui-align-r">
+                                        <input type="text" value="3" min="2" max="5" class="ui-number">
                                     </div>
                                 </div>
                             </div>

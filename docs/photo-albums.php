@@ -8,7 +8,7 @@
 
                     <span class="ui-sp-15"></span>
 
-                    <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-align-l ui-block ui-circle ui-fill-dark-100 ui-ease-btn">
+                    <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-block ui-circle ui-fill-dark-100 ui-ease-btn">
                         Create New
                         <svg class="ui-icon ui-float-r"><use href="#plus"/></svg>
                     </a>
@@ -47,11 +47,11 @@
                 <div class="ui-row ui-row-gap-lg">
                     <div class="ui-col-12">
 
-                        <div class="ui-row ui-sm-fluid ui-highlight ui-sm-align-c">
-                            <div class="ui-col-6">
+                        <div class="ui-row ui-sm-fluid ui-highlight">
+                            <div class="ui-col-6 ui-sm-align-c">
                                 <h3 class="ui-h3 ui-m-15-v ui-sm-no-m">Summer Holiday Photos</h3>
                             </div>
-                            <div class="ui-col-6 ui-align-r ui-xs-align-c">
+                            <div class="ui-col-6 ui-align-r ui-sm-align-c">
                                 <span class="ui-color-black-25 ui-font-16 ui-inline-block">23 Jun - 18 Aug, 2012</span>
                                 <img class="ui-avatar ui-avatar-sm ui-circle ui-m-15-l" src="img/profile-image.jpg" alt="">
                             </div>
@@ -142,11 +142,11 @@
                             </li>
                         </ul>
 
-                        <div class="ui-row ui-sm-fluid ui-highlight ui-sm-align-c">
-                            <div class="ui-col-6">
+                        <div class="ui-row ui-sm-fluid ui-highlight">
+                            <div class="ui-col-6 ui-sm-align-c">
                                 <h3 class="ui-h3 ui-m-15-v ui-sm-no-m">Autumn Comes Photos</h3>
                             </div>
-                            <div class="ui-col-6 ui-align-r ui-xs-align-c">
+                            <div class="ui-col-6 ui-align-r ui-sm-align-c">
                                 <span class="ui-color-black-25 ui-font-16 ui-inline-block">3 Sep - 18 Nov, 2021</span>
                                 <img class="ui-avatar ui-avatar-sm ui-circle ui-m-15-l" src="img/profile-image3.jpg" alt="">
                             </div>

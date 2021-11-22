@@ -241,7 +241,7 @@
                         <svg class="ui-icon"><use href="#search"/></svg>
                     </button>
                     <div class="ui-dropdown ui-nav ui-ease-dropdown">
-                        <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle ui-hidden-sm">
+                        <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-circle ui-hidden-sm">
                             My Jobs
                             <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                         </button>
@@ -429,8 +429,10 @@
                             </li>
                         </ul>
                     </span>
-                    <span class="ui-m-3-t ui-inline-block ui-hidden-xs">aeminyuce</span>
-                    <span class="ui-font-12 ui-color-black-50 ui-block ui-hidden-xs">Premium</span>
+                    <span class="ui-m-3-t ui-inline-block">
+                        <span class="ui-hidden-xs">aeminyuce</span>
+                        <span class="ui-font-12 ui-opacity-half ui-block ui-hidden-xs">Premium</span>
+                    </span>
                 </div>
 
             </header>
@@ -794,7 +796,8 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <h4 class="ui-h4 ui-align-l ui-m-10-t">Statistics</h4>
+                                        <h4 class="ui-h4 ui-align-l ui-float-l ui-m-10-t">Statistics</h4>
+
                                         <div class="ui-tab-content ui-open ui-open-ease">
                                             <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="5,48" data-ui-x="Sep,Oct,Nov,Dec,Jan,Fab">
                                                 <ul class="ui-line-chart" data-ui-name="Sales" data-ui-type="curved filled">
@@ -851,7 +854,7 @@
                                             <ul class="ui-timeline ui-timeline-l ui-m-15-h ui-timeline-no-h-lines">
                                                 <li>Etiam bibendum molestie lectus sit amet aliquet. Pellentesque non lacus iaculis, tristique velit.</li>
                                                 <li>
-                                                    <span class="ui-avatar-holder ui-circle ui-hover-r-more-2nd ui-ease-2nd-layout">
+                                                    <span class="ui-avatar-holder ui-circle ui-hover-scale-more-2nd ui-ease-2nd-layout">
                                                         <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image.jpg" alt=""></a>
                                                         <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image2.jpg" alt=""></a>
                                                         <a href="#"><img class="ui-avatar ui-border-dual ui-circle" src="img/profile-image3.jpg" alt=""></a>
@@ -1516,7 +1519,7 @@
 
                                         <div class="ui-row ui-no-row-gap ui-no-fluid">
                                             <div class="ui-col-4">
-                                                <div class="ui-p-5-v">
+                                                <div class="ui-p-10-v">
                                                     Total <b class="ui-datatable-total"></b>
                                                 </div>
                                             </div>
@@ -1549,7 +1552,7 @@
                                             <div class="ui-col-static ui-no-fluid">
                                                 <div class="ui-row">
                                                     <div class="ui-col-12">
-                                                        <h4 class="ui-h4 ui-align-l ui-m-4-t ui-m-3-b">Forms</h4>
+                                                        <h4 class="ui-h4 ui-align-l ui-m-10-t">Forms</h4>
                                                     </div>
                                                 </div>
                                                 <div class="ui-col-48 ui-p-5-v">

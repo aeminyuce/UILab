@@ -7,9 +7,9 @@
 
             <div class="movie-library ui-full-h ui-set-fixed ui-set-l ui-p-5 ui-fill-dark-100 ui-hidden-md ui-scroll-v ui-scrollbar-faded">
 
-                <div class="ui-align-l ui-p-10 ui-icons-no-opacity ui-icons-m-10-r ui-form-lg ui-sidebar-add-l">
+                <div class="ui-p-10 ui-icons-no-opacity ui-icons-m-10-r ui-form-lg ui-sidebar-add-l">
                     <h5 class="ui-h5 ui-color-white-50 ui-p-15 ui-m-5-b">LIBRARY</h5>
-                    <ul class="ui-list-unstyled ui-list-sp-15 ui-font-16 ui-font-bold ui-block-2nd ui-ease-2nd-btn">
+                    <ul class="ui-list-unstyled ui-list-sp-15 ui-font-16 ui-font-bold ui-align-l ui-block-2nd ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-btn-ghost ui-p-15-h ui-circle" href="#">
                                 <svg class="ui-icon"><use href="#tv"/></svg>
@@ -94,7 +94,7 @@
                         </div>
 
                         <div class="ui-col-6 ui-align-r ui-icons-no-opacity">
-                            <span class="ui-align-c ui-color-black-50 ui-m-20-r ui-sm-no-m ui-ease-1st-btn">
+                            <span class="ui-color-black-50 ui-m-20-r ui-sm-no-m ui-ease-1st-btn">
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-m-10-l ui-circle ui-float-l ui-sidebar-show-l ui-visible-md">
                                     <svg class="ui-icon"><use href="#bars-left"/></svg>
                                 </button>
