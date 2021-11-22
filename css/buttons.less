@@ -46,12 +46,7 @@
 
     &-passive { opacity: .6; cursor: default; }
     &-active { font-weight: @font-bold; }
-
-    &-square {
-        min-width: 0 !important; width: @btn-default; max-width: none !important;
-
-        &:not([class*="ui-align-"]) { text-align: center !important; }
-    }
+    &-square { min-width: 0 !important; width: @btn-default; max-width: none !important; }
 
     &-ghost:not(.ui-btn-visible) {
         &:not(:hover) { background-color: @no-color !important; }

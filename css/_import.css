@@ -2152,17 +2152,29 @@ html .ui-row {
 .ui-align-nowrap {
   white-space: nowrap !important;
 }
-.ui-align-c,
-.ui-align-c *:not([class*="ui-align"]) {
-  text-align: center !important;
-}
 .ui-align-r,
-.ui-align-r *:not([class*="ui-align"]) {
+ul.ui-align-r li *:not([class*="ui-align-"]),
+.ui-align-r > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+.ui-align-r > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+.ui-align-r > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+.ui-align-r > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
   text-align: right !important;
 }
 .ui-align-l,
-.ui-align-l *:not([class*="ui-align"]) {
+ul.ui-align-l li *:not([class*="ui-align-"]),
+.ui-align-l > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+.ui-align-l > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+.ui-align-l > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+.ui-align-l > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
   text-align: left !important;
+}
+.ui-align-c,
+ul.ui-align-c li *:not([class*="ui-align-"]),
+.ui-align-c > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+.ui-align-c > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+.ui-align-c > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+.ui-align-c > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
+  text-align: center !important;
 }
 .ui-bg-white:not([class*="ui-fill-"]) {
   background-color: hsl(0, 0%, 100%);
@@ -2210,17 +2222,29 @@ html .ui-row {
     clear: both !important;
     display: block;
   }
-  .ui-md-align-c,
-  .ui-md-align-c *:not([class*="ui-align"]) {
-    text-align: center !important;
-  }
   .ui-md-align-r,
-  .ui-md-align-r *:not([class*="ui-align"]) {
+  ul.ui-md-align-r li *:not([class*="ui-align-"]),
+  .ui-md-align-r > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-r > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-r > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-r > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
     text-align: right !important;
   }
   .ui-md-align-l,
-  .ui-md-align-l *:not([class*="ui-align"]) {
+  ul.ui-md-align-l li *:not([class*="ui-align-"]),
+  .ui-md-align-l > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-l > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-l > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-l > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
     text-align: left !important;
+  }
+  .ui-md-align-c,
+  ul.ui-md-align-c li *:not([class*="ui-align-"]),
+  .ui-md-align-c > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-c > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-c > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-c > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
+    text-align: center !important;
   }
 }
 @media (max-width: 767px) {
@@ -2248,23 +2272,47 @@ html .ui-row {
     clear: both !important;
     display: block;
   }
-  .ui-md-align-c,
-  .ui-sm-align-c,
-  .ui-md-align-c *:not([class*="ui-align"]),
-  .ui-sm-align-c *:not([class*="ui-align"]) {
-    text-align: center !important;
-  }
   .ui-md-align-r,
   .ui-sm-align-r,
-  .ui-md-align-r *:not([class*="ui-align"]),
-  .ui-sm-align-r *:not([class*="ui-align"]) {
+  ul.ui-md-align-r li *:not([class*="ui-align-"]),
+  ul.ui-sm-align-r li *:not([class*="ui-align-"]),
+  .ui-md-align-r > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-r > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-r > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-r > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-r > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-r > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-r > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-r > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
     text-align: right !important;
   }
   .ui-md-align-l,
   .ui-sm-align-l,
-  .ui-md-align-l *:not([class*="ui-align"]),
-  .ui-sm-align-l *:not([class*="ui-align"]) {
+  ul.ui-md-align-l li *:not([class*="ui-align-"]),
+  ul.ui-sm-align-l li *:not([class*="ui-align-"]),
+  .ui-md-align-l > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-l > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-l > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-l > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-l > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-l > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-l > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-l > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
     text-align: left !important;
+  }
+  .ui-md-align-c,
+  .ui-sm-align-c,
+  ul.ui-md-align-c li *:not([class*="ui-align-"]),
+  ul.ui-sm-align-c li *:not([class*="ui-align-"]),
+  .ui-md-align-c > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-c > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-c > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-c > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-c > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-c > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-c > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-c > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
+    text-align: center !important;
   }
 }
 @media (max-width: 480px) {
@@ -2288,29 +2336,65 @@ html .ui-row {
     clear: both !important;
     display: block;
   }
-  .ui-md-align-c,
-  .ui-sm-align-c,
-  .ui-xs-align-c,
-  .ui-md-align-c *:not([class*="ui-align"]),
-  .ui-sm-align-c *:not([class*="ui-align"]),
-  .ui-xs-align-c *:not([class*="ui-align"]) {
-    text-align: center !important;
-  }
   .ui-md-align-r,
   .ui-sm-align-r,
   .ui-xs-align-r,
-  .ui-md-align-r *:not([class*="ui-align"]),
-  .ui-sm-align-r *:not([class*="ui-align"]),
-  .ui-xs-align-r *:not([class*="ui-align"]) {
+  ul.ui-md-align-r li *:not([class*="ui-align-"]),
+  ul.ui-sm-align-r li *:not([class*="ui-align-"]),
+  ul.ui-xs-align-r li *:not([class*="ui-align-"]),
+  .ui-md-align-r > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-r > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xs-align-r > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-r > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-r > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xs-align-r > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-r > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-r > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xs-align-r > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-r > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-r > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xs-align-r > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
     text-align: right !important;
   }
   .ui-md-align-l,
   .ui-sm-align-l,
   .ui-xs-align-l,
-  .ui-md-align-l *:not([class*="ui-align"]),
-  .ui-sm-align-l *:not([class*="ui-align"]),
-  .ui-xs-align-l *:not([class*="ui-align"]) {
+  ul.ui-md-align-l li *:not([class*="ui-align-"]),
+  ul.ui-sm-align-l li *:not([class*="ui-align-"]),
+  ul.ui-xs-align-l li *:not([class*="ui-align-"]),
+  .ui-md-align-l > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-l > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xs-align-l > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-l > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-l > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xs-align-l > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-l > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-l > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xs-align-l > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-l > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-l > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xs-align-l > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
     text-align: left !important;
+  }
+  .ui-md-align-c,
+  .ui-sm-align-c,
+  .ui-xs-align-c,
+  ul.ui-md-align-c li *:not([class*="ui-align-"]),
+  ul.ui-sm-align-c li *:not([class*="ui-align-"]),
+  ul.ui-xs-align-c li *:not([class*="ui-align-"]),
+  .ui-md-align-c > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-c > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xs-align-c > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-c > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-c > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xs-align-c > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-c > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-c > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xs-align-c > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-md-align-c > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-sm-align-c > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xs-align-c > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
+    text-align: center !important;
   }
 }
 @media (max-width: 1399px) {
@@ -2321,17 +2405,29 @@ html .ui-row {
     clear: both !important;
     display: block;
   }
-  .ui-lg-align-c,
-  .ui-lg-align-c *:not([class*="ui-align"]) {
-    text-align: center !important;
-  }
   .ui-lg-align-r,
-  .ui-lg-align-r *:not([class*="ui-align"]) {
+  ul.ui-lg-align-r li *:not([class*="ui-align-"]),
+  .ui-lg-align-r > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-lg-align-r > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-lg-align-r > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-lg-align-r > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
     text-align: right !important;
   }
   .ui-lg-align-l,
-  .ui-lg-align-l *:not([class*="ui-align"]) {
+  ul.ui-lg-align-l li *:not([class*="ui-align-"]),
+  .ui-lg-align-l > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-lg-align-l > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-lg-align-l > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-lg-align-l > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
     text-align: left !important;
+  }
+  .ui-lg-align-c,
+  ul.ui-lg-align-c li *:not([class*="ui-align-"]),
+  .ui-lg-align-c > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-lg-align-c > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-lg-align-c > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-lg-align-c > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
+    text-align: center !important;
   }
 }
 @media (max-width: 1629px) {
@@ -2346,17 +2442,29 @@ html .ui-row {
   .ui-no-float-xl {
     float: none !important;
   }
-  .ui-xl-align-c,
-  .ui-xl-align-c *:not([class*="ui-align"]) {
-    text-align: center !important;
-  }
   .ui-xl-align-r,
-  .ui-xl-align-r *:not([class*="ui-align"]) {
+  ul.ui-xl-align-r li *:not([class*="ui-align-"]),
+  .ui-xl-align-r > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xl-align-r > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xl-align-r > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xl-align-r > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
     text-align: right !important;
   }
   .ui-xl-align-l,
-  .ui-xl-align-l *:not([class*="ui-align"]) {
+  ul.ui-xl-align-l li *:not([class*="ui-align-"]),
+  .ui-xl-align-l > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xl-align-l > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xl-align-l > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xl-align-l > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
     text-align: left !important;
+  }
+  .ui-xl-align-c,
+  ul.ui-xl-align-c li *:not([class*="ui-align-"]),
+  .ui-xl-align-c > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xl-align-c > * > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xl-align-c > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]),
+  .ui-xl-align-c > * > .ui-dropdown > .ui-btn:not(.ui-btn-square):not([class*="ui-align-"]) {
+    text-align: center !important;
   }
 }
 /* borders */
@@ -3935,9 +4043,6 @@ dt + dd:not(:last-child) {
   min-width: 0 !important;
   width: 42px;
   max-width: none !important;
-}
-.ui-btn-square:not([class*="ui-align-"]) {
-  text-align: center !important;
 }
 .ui-btn-ghost:not(.ui-btn-visible):not(:hover) {
   background-color: transparent !important;
