@@ -1,5 +1,5 @@
 /*
- UI Photoslie JS
+ UI Photoslide JS
  Requires UI JS
 */
 

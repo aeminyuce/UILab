@@ -1,6 +1,6 @@
 /*globals ui */
 
-ui.lineCharts.colors = [
+ui.lineChart.colors = [
     'hsl(43, 100%, 52%)',
     'hsl(140, 86%, 46%)',
     'hsl(347, 100%, 69%)',

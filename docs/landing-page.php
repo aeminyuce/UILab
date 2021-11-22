@@ -903,7 +903,7 @@
 </footer>
 <!-- footer: end -->
 
-<!-- mobile menu -->
+<!-- sidebar -->
 <div class="ui-sidebar ui-sidebar-r ui-ease-layout ui-ease-in-out">
     <div class="ui-sidebar-title ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-ease-btn ui-sidebar-close">

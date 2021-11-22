@@ -1,14 +1,13 @@
 /*globals document, ui, setTimeout, FileReader */
 
-function fileSize(holder, code) {
+function fileSize(code) {
 
-    var fileSize = encodeURIComponent(code).match(/%[89ABab]/g);
+    var fileSize = encodeURI(code).split(/%..|./).length - 1;
 
-    fileSize = code.length + (fileSize ? fileSize.length : 0);
     fileSize = fileSize / 1000;
-
     fileSize = fileSize.toFixed(2);
-    ui.find('.generate-size', holder)[0].innerHTML = fileSize + ' kb';
+
+    return fileSize;
 
 }
 
@@ -40,6 +39,7 @@ function pullFiles(that) {
 
                         count += 1;
                         pullResults += '\n';
+
                         countFnc();
 
                     } else {
@@ -47,25 +47,29 @@ function pullFiles(that) {
                         if (that.name === 'less') {
 
                             pullResults = pullResults.replace(/ @import \(reference\) 'ui.less';/g, ''); // remove repeated main ui file
-                            pullResults = pullResults.replace(/\/\/ out: false/g, ''); // remove less settings
+                            pullResults = pullResults.replace(/\/\/ out: false+(\n|\r)+\/\*/g, '/*'); // remove less settings
 
-                        }
+                            pullResults = pullResults.replace(/(\n|\r)+\/\*/g, '\n\n/*'); // add line break before /* title */
+                            pullResults = pullResults.replace(/\*\/+(\n|\r)/g, '*/\n\n'); // remove line break after /* title */
 
-                        if (type === 'icons') { // icons
+                            pullResults = pullResults.replace(/(\n\n|\r\r)/g, ''); // remove duplicate line breaks
+
+                        } else if (type === 'icons') {
                             pullResults = '<svg style="display: none;">\n' + pullResults + '</svg>'
                         }
 
                         result.value = pullResults;
+
                         result.scrollTop = 0; // IE, EDGE: scrollTo() not supported for textarea element
                         result.rows = 24;
 
-                        fileSize(holder, pullResults);
+                        ui.find('.generate-size', holder)[0].innerHTML = fileSize(pullResults) + ' kb';
 
-                        // empty variables
                         setTimeout(function () {
                             ui.loadingMask.toggle(that); // hide loading
                         }, ui.globals.ease);
 
+                        // empty variables
                         pullResults = '';
 
                     }
@@ -266,14 +270,6 @@ function generator() {
             code = code.replace(/(<!--.*?-->)|(<!--[\w\W\n\s]+?-->)/gm, ''); // remove <!-- -->
 
             // line breaks and multiple spaces
-            if (this.name === 'css') {
-
-                code = code.replace(/ {/g, '{').replace(/: /g, ':');
-                code = code.replace(/ >/g, '>').replace(/> /g, '>');
-                code = code.replace(/, /g, ',');
-
-            }
-
             if (this.name === 'js') {
                 code = code.replace(/\n/g, ' ').replace(/\s+\s/g, ' ');
 
@@ -287,7 +283,7 @@ function generator() {
             result.scrollTop = 0; // IE, EDGE: scrollTo() not supported for textarea element
             result.rows = 12;
 
-            fileSize(holder, code);
+            ui.find('.generate-size', holder)[0].innerHTML = fileSize(code) + ' kb';
 
         });
 
@@ -298,7 +294,7 @@ function generator() {
 
         function () {
 
-            var that, holder, result, code;
+            var that, holder, result;
 
             that = this;
             setTimeout(function () {
@@ -306,8 +302,7 @@ function generator() {
                 holder = ui.closest(that, '.generate-holder')[0];
                 result = ui.find('textarea', holder)[0];
 
-                code = result.value;
-                fileSize(holder, code);
+                ui.find('.generate-size', holder)[0].innerHTML = fileSize(result.value) + ' kb';
 
             }, 0);
 

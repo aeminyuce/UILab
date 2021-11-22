@@ -1738,7 +1738,7 @@
     </div>
 </main>
 
-<!-- mobile menu -->
+<!-- sidebar -->
 <div class="ui-sidebar ui-sidebar-l ui-invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
     <div class="ui-sidebar-title ui-no-p ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-sidebar-close">

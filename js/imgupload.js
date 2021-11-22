@@ -1,9 +1,9 @@
 /*
- UI Image Uploader JS
+ UI Imgupload JS
  Requires UI JS
 */
 
-ui.imageUploader = {
+ui.imgUpload = {
 
     // targets
     target: 'ui-imgupload',
@@ -74,7 +74,7 @@ ui.imageUploader = {
     'use strict';
     /*globals document, ui, setTimeout, Image, FileReader, FormData, atob, Uint8Array, Blob, confirm, alert */
 
-    ui.imageUploader.Start = function () {
+    ui.imgUpload.Start = function () {
 
         var uploaders, savedImgs;
 
@@ -94,7 +94,7 @@ ui.imageUploader = {
 
                         ext = ext.toString();
 
-                        if (ui.imageUploader.types.indexOf(ext) > -1) {
+                        if (ui.imgUpload.types.indexOf(ext) > -1) {
                             allowed.push(files[i]);
                         }
 
@@ -119,10 +119,10 @@ ui.imageUploader = {
                 c = document.createElement("canvas");
                 ctx = c.getContext("2d");
 
-                ui.addClass(uploader, ui.imageUploader.nameLoading);
+                ui.addClass(uploader, ui.imgUpload.nameLoading);
 
-                listCont = ui.find('.' + ui.imageUploader.nameList, uploader)[0];
-                list = ui.find('.' + ui.imageUploader.nameList + ' ul', uploader)[0];
+                listCont = ui.find('.' + ui.imgUpload.nameList, uploader)[0];
+                list = ui.find('.' + ui.imgUpload.nameList + ' ul', uploader)[0];
 
                 loadImages = function (j, tag) {
 
@@ -131,41 +131,41 @@ ui.imageUploader = {
                     h[j] = img[j].height;
 
                     // get ratio
-                    r = ui.imageUploader.ratio.split(':');
+                    r = ui.imgUpload.ratio.split(':');
                     if (r.length !== 2) { r = ''; }
 
-                    if (ui.imageUploader.resize && !savedImgs) { // resize images
+                    if (ui.imgUpload.resize && !savedImgs) { // resize images
 
                         if (w[j] > h[j]) { // horizontal image
 
-                            h[j] = (h[j] / w[j]) * ui.imageUploader.resizeWidth;
-                            w[j] = ui.imageUploader.resizeWidth;
+                            h[j] = (h[j] / w[j]) * ui.imgUpload.resizeWidth;
+                            w[j] = ui.imgUpload.resizeWidth;
 
-                            if (h[j] > ui.imageUploader.resizeHeight) {
+                            if (h[j] > ui.imgUpload.resizeHeight) {
 
-                                w[j] = (w[j] / h[j]) * ui.imageUploader.resizeHeight;
-                                h[j] = ui.imageUploader.resizeHeight;
+                                w[j] = (w[j] / h[j]) * ui.imgUpload.resizeHeight;
+                                h[j] = ui.imgUpload.resizeHeight;
 
                             }
 
                         } else { // vertical image
 
-                            w[j] = (w[j] / h[j]) * ui.imageUploader.resizeHeight;
-                            h[j] = ui.imageUploader.resizeHeight;
+                            w[j] = (w[j] / h[j]) * ui.imgUpload.resizeHeight;
+                            h[j] = ui.imgUpload.resizeHeight;
 
-                            if (w[j] > ui.imageUploader.resizeWidth) {
+                            if (w[j] > ui.imgUpload.resizeWidth) {
 
-                                h[j] = (h[j] / w[j]) * ui.imageUploader.resizeWidth;
-                                w[j] = ui.imageUploader.resizeWidth;
+                                h[j] = (h[j] / w[j]) * ui.imgUpload.resizeWidth;
+                                w[j] = ui.imgUpload.resizeWidth;
 
                             }
 
                         }
 
-                        if (ui.imageUploader.fill && !savedImgs) {
+                        if (ui.imgUpload.fill && !savedImgs) {
 
-                            c.width = ui.imageUploader.resizeWidth;
-                            c.height = ui.imageUploader.resizeHeight;
+                            c.width = ui.imgUpload.resizeWidth;
+                            c.height = ui.imgUpload.resizeHeight;
 
                         } else {
 
@@ -176,7 +176,7 @@ ui.imageUploader = {
 
                     } else {
 
-                        if (!ui.imageUploader.fit && ui.imageUploader.fill && !savedImgs) {
+                        if (!ui.imgUpload.fit && ui.imgUpload.fill && !savedImgs) {
 
                             if (r !== '') {
 
@@ -203,12 +203,12 @@ ui.imageUploader = {
 
                     }
 
-                    if (ui.imageUploader.fit && !savedImgs) { // crop to fit images
+                    if (ui.imgUpload.fit && !savedImgs) { // crop to fit images
 
-                        if (ui.imageUploader.resize) {
+                        if (ui.imgUpload.resize) {
 
-                            c.width = ui.imageUploader.resizeWidth;
-                            c.height = ui.imageUploader.resizeHeight;
+                            c.width = ui.imgUpload.resizeWidth;
+                            c.height = ui.imgUpload.resizeHeight;
 
                         } else {
 
@@ -230,9 +230,9 @@ ui.imageUploader = {
 
                     } else {
 
-                        if (ui.imageUploader.fill && !savedImgs) { // fill blank areas
+                        if (ui.imgUpload.fill && !savedImgs) { // fill blank areas
 
-                            ctx.fillStyle = ui.imageUploader.fillColor;
+                            ctx.fillStyle = ui.imgUpload.fillColor;
                             ctx.fillRect(0, 0, c.width, c.height);
 
                             ctx.drawImage(img[j], (c.width - w[j]) / 2, (c.height - h[j]) / 2, w[j], h[j]);
@@ -263,8 +263,8 @@ ui.imageUploader = {
 
                     } else { // define a new id
 
-                        ui.imageUploader.newID += 1;
-                        imgLoaded[j].id = ui.imageUploader.newID;
+                        ui.imgUpload.newID += 1;
+                        imgLoaded[j].id = ui.imgUpload.newID;
 
                     }
 
@@ -283,29 +283,29 @@ ui.imageUploader = {
 
                                     if (imgLoaded[k] !== undefined) { // return when image loading failed
 
-                                        html += '<' + ui.imageUploader.tagList + ' class="' + ui.imageUploader.nameOpenEase + '">' +
+                                        html += '<' + ui.imgUpload.tagList + ' class="' + ui.imgUpload.nameOpenEase + '">' +
 
-                                                    '<span class="' + ui.imageUploader.targetImages + '">' +
+                                                    '<span class="' + ui.imgUpload.targetImages + '">' +
                                                         '<img id="' + imgLoaded[k].id + '" src="' + imgLoaded[k].data + '" draggable="false">' +
                                                     '</span>' +
 
-                                                    '<' + ui.imageUploader.tagNames + ' class="' + ui.imageUploader.targetNames + '">' +
+                                                    '<' + ui.imgUpload.tagNames + ' class="' + ui.imgUpload.targetNames + '">' +
                                                         imgLoaded[k].name +
-                                                    '</' + ui.imageUploader.tagNames +'>' +
+                                                    '</' + ui.imgUpload.tagNames +'>' +
 
-                                                    '<' + ui.imageUploader.tagInfos + ' class="' + ui.imageUploader.targetInfos + '">' +
+                                                    '<' + ui.imgUpload.tagInfos + ' class="' + ui.imgUpload.targetInfos + '">' +
                                                         imgLoaded[k].size + 'kb' +
-                                                    '</' + ui.imageUploader.tagInfos + '>';
+                                                    '</' + ui.imgUpload.tagInfos + '>';
 
                                         if (imgLoaded[k].tag !== '') { // add tags
 
-                                            html += '<span class="' + ui.imageUploader.targetTags + '">' +
+                                            html += '<span class="' + ui.imgUpload.targetTags + '">' +
                                                         imgLoaded[k].tag +
                                                     '</span>';
 
                                         }
 
-                                        html += '</' + ui.imageUploader.tagList + '>';
+                                        html += '</' + ui.imgUpload.tagList + '>';
 
                                     }
 
@@ -315,7 +315,7 @@ ui.imageUploader = {
 
                         }, 0);
 
-                        ui.addClass(listCont, ui.imageUploader.nameOpen);
+                        ui.addClass(listCont, ui.imgUpload.nameOpen);
 
                         if (savedImgs) {
                             showTimer = ui.globals.slow;
@@ -326,13 +326,13 @@ ui.imageUploader = {
 
                         setTimeout(function () {
 
-                            newItem = ui.find('.' + ui.imageUploader.nameList + ' ' + ui.imageUploader.tagList + '.' + ui.imageUploader.nameOpenEase, listCont);
+                            newItem = ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList + '.' + ui.imgUpload.nameOpenEase, listCont);
                             ui.each(newItem,
 
                                 function (k) {
 
                                     setTimeout(function () {
-                                        ui.removeClass(newItem[k], ui.imageUploader.nameOpenEase);
+                                        ui.removeClass(newItem[k], ui.imgUpload.nameOpenEase);
                                     }, (ui.globals.fast / 2) * k);
 
                                 });
@@ -352,7 +352,7 @@ ui.imageUploader = {
                         }, showTimer);
 
                         setTimeout(function () {
-                            ui.removeClass(uploader, ui.imageUploader.nameLoading);
+                            ui.removeClass(uploader, ui.imgUpload.nameLoading);
                         }, showTimer);
 
                     }
@@ -378,12 +378,12 @@ ui.imageUploader = {
                             img[i].onerror = function () {
 
                                 if (ui.alerts === undefined) {
-                                    alert(ui.imageUploader.msgImgError);
+                                    alert(ui.imgUpload.msgImgError);
 
                                 } else {
 
                                     ui.alerts.message({
-                                        msg: allowed[i].name + ' ' + ui.imageUploader.msgImgError,
+                                        msg: allowed[i].name + ' ' + ui.imgUpload.msgImgError,
                                         theme: ui.alerts.themeDanger
                                     });
 
@@ -418,7 +418,7 @@ ui.imageUploader = {
         }
 
         // load saved before images
-        uploaders = ui.find('.' + ui.imageUploader.target);
+        uploaders = ui.find('.' + ui.imgUpload.target);
         ui.each(uploaders,
 
             function () {
@@ -428,15 +428,15 @@ ui.imageUploader = {
                 i = -1;
                 imported = [];
 
-                list = ui.find('.' + ui.imageUploader.nameList + ' li', this);
+                list = ui.find('.' + ui.imgUpload.nameList + ' li', this);
                 ui.each(list,
 
                     function () {
 
-                        img = this.getAttribute(ui.imageUploader.dataImg);
+                        img = this.getAttribute(ui.imgUpload.dataImg);
                         if (img !== null && img !== '') {
 
-                            id = this.getAttribute(ui.imageUploader.dataID);
+                            id = this.getAttribute(ui.imgUpload.dataID);
                             if (id !== null && id !== '') {
 
                                 i += 1;
@@ -446,7 +446,7 @@ ui.imageUploader = {
                                 imported[i].id = id;
                                 imported[i].tag = '';
 
-                                tag = this.getAttribute(ui.imageUploader.dataTag);
+                                tag = this.getAttribute(ui.imgUpload.dataTag);
                                 if (tag !== null) { imported[i].tag = tag; }
 
                             }
@@ -469,7 +469,7 @@ ui.imageUploader = {
         ui.on(document,
             'dragenter',
 
-            '.' + ui.imageUploader.target,
+            '.' + ui.imgUpload.target,
 
             function (e) {
 
@@ -478,24 +478,24 @@ ui.imageUploader = {
 
                 var that, uploader;
 
-                ui.addClass(this, ui.imageUploader.nameDrop);
+                ui.addClass(this, ui.imgUpload.nameDrop);
                 that = this;
 
                 ui.on('body',
-                    'dragover.' + ui.imageUploader.eventUploader,
+                    'dragover.' + ui.imgUpload.eventUploader,
 
                     function (ev) {
 
                         ev.preventDefault();
                         ev.stopPropagation();
 
-                        uploader = ui.closest(ev.target, '.' + ui.imageUploader.target)[0];
+                        uploader = ui.closest(ev.target, '.' + ui.imgUpload.target)[0];
 
                         if (uploader === undefined) {
-                            ui.removeClass(that, ui.imageUploader.nameDrop);
+                            ui.removeClass(that, ui.imgUpload.nameDrop);
 
                         } else {
-                            ui.addClass(that, ui.imageUploader.nameDrop);
+                            ui.addClass(that, ui.imgUpload.nameDrop);
                         }
 
                     });
@@ -510,20 +510,20 @@ ui.imageUploader = {
                 e.preventDefault();
                 e.stopPropagation();
 
-                var uploader = ui.closest(e.target, '.' + ui.imageUploader.target)[0];
+                var uploader = ui.closest(e.target, '.' + ui.imgUpload.target)[0];
 
                 if (uploader === undefined) {
-                    ui.removeClass(uploader, ui.imageUploader.nameDrop);
+                    ui.removeClass(uploader, ui.imgUpload.nameDrop);
 
                 } else {
 
-                    ui.addClass(uploader, ui.imageUploader.nameDrop);
+                    ui.addClass(uploader, ui.imgUpload.nameDrop);
 
                     savedImgs = false;
                     loadFiles(uploader, e.dataTransfer.files);
 
-                    ui.removeClass(uploader, ui.imageUploader.nameDrop);
-                    ui.off(document, 'dragover.' + ui.imageUploader.eventUploader);
+                    ui.removeClass(uploader, ui.imgUpload.nameDrop);
+                    ui.off(document, 'dragover.' + ui.imgUpload.eventUploader);
 
                 }
 
@@ -532,11 +532,11 @@ ui.imageUploader = {
         ui.on(document,
             'change',
 
-            '.' + ui.imageUploader.target + ' input[type="file"]',
+            '.' + ui.imgUpload.target + ' input[type="file"]',
 
             function () {
 
-                var uploader = ui.closest(this, '.' + ui.imageUploader.target)[0];
+                var uploader = ui.closest(this, '.' + ui.imgUpload.target)[0];
 
                 savedImgs = false;
                 loadFiles(uploader, this.files);
@@ -574,7 +574,7 @@ ui.imageUploader = {
         ui.on(document,
             'submit',
 
-            '.' + ui.imageUploader.target + ' form',
+            '.' + ui.imgUpload.target + ' form',
 
             function (e) {
 
@@ -587,20 +587,20 @@ ui.imageUploader = {
 
                     formData = new FormData(); // formdata API
 
-                    uploader = ui.closest(that, '.' + ui.imageUploader.target)[0];
-                    list = ui.find('.' + ui.imageUploader.nameList + ' ' + ui.imageUploader.tagList, uploader);
+                    uploader = ui.closest(that, '.' + ui.imgUpload.target)[0];
+                    list = ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList, uploader);
 
                     ui.each(list,
 
                         function (i) {
 
-                            file = ui.find('.' + ui.imageUploader.targetImages + ' img', this)[0];
-                            formData.append(ui.imageUploader.formDataID + '[' + i + ']', file.id); // add id
+                            file = ui.find('.' + ui.imgUpload.targetImages + ' img', this)[0];
+                            formData.append(ui.imgUpload.formDataID + '[' + i + ']', file.id); // add id
 
-                            tag = ui.find('.' + ui.imageUploader.targetTags, this)[0];
+                            tag = ui.find('.' + ui.imgUpload.targetTags, this)[0];
                             if (tag !== undefined) { tag = tag.textContent; } else { tag = ''; }
 
-                            formData.append(ui.imageUploader.formDataTag + '[' + i + ']', tag); // add image tag
+                            formData.append(ui.imgUpload.formDataTag + '[' + i + ']', tag); // add image tag
 
                             img = file.src.split(";");
                             imgType = img[0].split(":")[1]; // get image type
@@ -608,11 +608,11 @@ ui.imageUploader = {
                             img = img[1].split(",")[1];
                             img = toBlob(img, imgType); // convert to blob to using server's file protocol
 
-                            formData.append(ui.imageUploader.formDataImg + '[' + i + ']', img); // add image file
+                            formData.append(ui.imgUpload.formDataImg + '[' + i + ']', img); // add image file
 
                         });
 
-                    ui.addClass(uploader, ui.imageUploader.nameUploading);
+                    ui.addClass(uploader, ui.imgUpload.nameUploading);
 
                     ui.ajax({
 
@@ -622,7 +622,7 @@ ui.imageUploader = {
 
                         callback: function (status, response) {
 
-                            ui.removeClass(uploader, ui.imageUploader.nameUploading);
+                            ui.removeClass(uploader, ui.imgUpload.nameUploading);
                             if (status === 'success') { // check ajax connection
 
                                 response = JSON.parse(response);
@@ -653,12 +653,12 @@ ui.imageUploader = {
                             } else {
 
                                 if (ui.alerts === undefined) {
-                                    alert(ui.imageUploader.msgError);
+                                    alert(ui.imgUpload.msgError);
 
                                 } else {
 
                                     ui.alerts.message({
-                                        msg: ui.imageUploader.msgError,
+                                        msg: ui.imgUpload.msgError,
                                         theme: ui.alerts.themeWarning
                                     });
 
@@ -674,14 +674,14 @@ ui.imageUploader = {
 
                 if (ui.alerts === undefined) {
 
-                    confirmed = confirm(ui.imageUploader.msgBeforeUpload);
+                    confirmed = confirm(ui.imgUpload.msgBeforeUpload);
                     if (confirmed) { fnc(); }
 
                 } else {
 
                     ui.alerts.dialog({
 
-                        msg: ui.imageUploader.msgBeforeUpload,
+                        msg: ui.imgUpload.msgBeforeUpload,
 
                         callback: function (val) {
                             if (val === ui.alerts.successBtnValue) { fnc(); }
@@ -696,7 +696,7 @@ ui.imageUploader = {
         ui.on(document,
             'click',
 
-            '.' + ui.imageUploader.nameLoading + ',.' + ui.imageUploader.nameUploading,
+            '.' + ui.imgUpload.nameLoading + ',.' + ui.imgUpload.nameUploading,
 
             function (e) { // prevent clicks when loading and uploading
 
@@ -708,6 +708,6 @@ ui.imageUploader = {
     };
 
     // Loaders
-    ui.onload(ui.imageUploader.Start);
+    ui.onload(ui.imgUpload.Start);
 
 }());

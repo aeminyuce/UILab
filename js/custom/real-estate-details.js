@@ -1,15 +1,15 @@
 /*globals ui */
 
-ui.lineCharts.top = 18;
-ui.lineCharts.left = 6;
+ui.lineChart.top = 18;
+ui.lineChart.left = 6;
 
-ui.lineCharts.showGrid = false;
-ui.lineCharts.showGridText = false;
-ui.lineCharts.showInfo = false;
+ui.lineChart.showGrid = false;
+ui.lineChart.showGridText = false;
+ui.lineChart.showInfo = false;
 
-ui.lineCharts.gridStroke = 0;
+ui.lineChart.gridStroke = 0;
 
-ui.lineCharts.colors = [
+ui.lineChart.colors = [
     'hsl(30, 100%, 63%)',
     'hsl(206, 87%, 50%)',
     'hsl(347, 100%, 69%)',

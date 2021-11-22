@@ -1,9 +1,9 @@
 /*
- UI Line Charts JS
+ UI Line Chart JS
  Requires UI JS
 */
 
-ui.lineCharts = {
+ui.lineChart = {
 
     // targets
     target: 'ui-line-chart-holder',
@@ -92,22 +92,22 @@ ui.lineCharts = {
     var loadCharts;
 
     // load charts
-    ui.lineCharts.Start = function () {
+    ui.lineChart.Start = function () {
 
         var i, j, k, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
 
         loadCharts = function (method, resizer) {
 
-            if (method === ui.lineCharts.nameLoaded) {
-                charts = ui.find('.' + ui.lineCharts.target + '.' + ui.lineCharts.nameLoaded);
+            if (method === ui.lineChart.nameLoaded) {
+                charts = ui.find('.' + ui.lineChart.target + '.' + ui.lineChart.nameLoaded);
 
             } else if (method === ui.globals.eventDomChange) {
 
-                charts = ui.find('.' + ui.lineCharts.target + ':not(.' + ui.lineCharts.nameLoaded + '):not(.' + ui.lineCharts.nameResized + ')');
-                ui.removeClass('.' + ui.lineCharts.target, ui.lineCharts.nameResized);
+                charts = ui.find('.' + ui.lineChart.target + ':not(.' + ui.lineChart.nameLoaded + '):not(.' + ui.lineChart.nameResized + ')');
+                ui.removeClass('.' + ui.lineChart.target, ui.lineChart.nameResized);
 
             } else {
-                charts = ui.find('.' + ui.lineCharts.target + ':not(.' + ui.lineCharts.nameLoaded + ')');
+                charts = ui.find('.' + ui.lineChart.target + ':not(.' + ui.lineChart.nameLoaded + ')');
             }
 
             if (charts.length === 0) { return; }
@@ -116,7 +116,7 @@ ui.lineCharts = {
 
                 function () {
 
-                    lines = ui.find('.' + ui.lineCharts.nameLines, this);
+                    lines = ui.find('.' + ui.lineChart.nameLines, this);
                     if (lines.length === 0) { return; }
 
                     data = [];
@@ -126,17 +126,17 @@ ui.lineCharts = {
                     data.backup = [];
 
                     if (resizer !== undefined && resizer) {
-                        ui.addClass(this, ui.lineCharts.nameLoaded + ' ' + ui.lineCharts.nameResized);
+                        ui.addClass(this, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
 
                     } else {
-                        ui.addClass(this, ui.lineCharts.nameLoaded);
+                        ui.addClass(this, ui.lineChart.nameLoaded);
                     }
 
                     // calculate height of chart
-                    size = this.getAttribute(ui.lineCharts.dataSize);
+                    size = this.getAttribute(ui.lineChart.dataSize);
 
-                    rows = ui.lineCharts.rows;
-                    rowsHeight = ui.lineCharts.rowsHeight;
+                    rows = ui.lineChart.rows;
+                    rowsHeight = ui.lineChart.rowsHeight;
 
                     if (size !== null && size !== '') {
 
@@ -154,7 +154,7 @@ ui.lineCharts = {
                     data.height = rows * rowsHeight;
 
                     // read all x parameters
-                    x = this.getAttribute(ui.lineCharts.dataX);
+                    x = this.getAttribute(ui.lineChart.dataX);
 
                     if (x !== null && x !== '') {
                         data.x = x.split(',');
@@ -178,18 +178,18 @@ ui.lineCharts = {
 
                             data.backup += this.outerHTML;
 
-                            ui.each(ui.find(ui.lineCharts.tagLines, this),
+                            ui.each(ui.find(ui.lineChart.tagLines, this),
 
                                 function () {
 
-                                    y = this.getAttribute(ui.lineCharts.dataY);
+                                    y = this.getAttribute(ui.lineChart.dataY);
 
                                     if (y !== null && y !== '') {
                                         data[i].y.push(y);
 
                                     } else { return; }
 
-                                    link = this.getAttribute(ui.lineCharts.dataLink);
+                                    link = this.getAttribute(ui.lineChart.dataLink);
 
                                     if (link !== null && link !== '') {
                                         data[i].links.push(link);
@@ -228,14 +228,14 @@ ui.lineCharts = {
                     // start html
                     data.svgHeight = data.height;
 
-                    if (ui.lineCharts.showInfo || ui.lineCharts.showGridText) {
+                    if (ui.lineChart.showInfo || ui.lineChart.showGridText) {
                         data.svgHeight += 15;
                     }
 
                     html = '<svg style="width: ' + data.width + 'px; height: ' + data.svgHeight + 'px;">';
 
                     // check column stepping
-                    data.step = this.getAttribute(ui.lineCharts.dataStep);
+                    data.step = this.getAttribute(ui.lineChart.dataStep);
                     if (data.step !== null && data.step !== '' && data.step !== '0') {
 
                         if (isNaN(data.step)) {
@@ -254,21 +254,21 @@ ui.lineCharts = {
                     } else { data.step = false; }
 
                     // create grids
-                    col = (data.width - (ui.lineCharts.right + ui.lineCharts.left)) / (x.length - 1);
-                    html += '<g class="' + ui.lineCharts.nameGridX + '">';
+                    col = (data.width - (ui.lineChart.right + ui.lineChart.left)) / (x.length - 1);
+                    html += '<g class="' + ui.lineChart.nameGridX + '">';
 
                     for (i = 0; i < x.length; i++) {
 
-                        posX = (i * col) + ui.lineCharts.left;
+                        posX = (i * col) + ui.lineChart.left;
 
-                        if (ui.lineCharts.showGridText) {
+                        if (ui.lineChart.showGridText) {
 
                             if (data.step) {
 
                                 if (data.stepArr.indexOf(i) > -1) {
                                     html += '<text ' +
                                                 'x="' + posX + '" ' +
-                                                'y="' + (data.height - ui.lineCharts.bottom + 20) +
+                                                'y="' + (data.height - ui.lineChart.bottom + 20) +
                                             '">' +
                                                 x[i] +
                                             '</text>';
@@ -277,7 +277,7 @@ ui.lineCharts = {
                             } else {
                                 html += '<text ' +
                                             'x="' + posX + '" ' +
-                                            'y="' + (data.height - ui.lineCharts.bottom + 20) +
+                                            'y="' + (data.height - ui.lineChart.bottom + 20) +
                                         '">' +
                                             x[i] +
                                         '</text>';
@@ -285,21 +285,21 @@ ui.lineCharts = {
 
                         }
 
-                        if (i === 0 || ui.lineCharts.showGrid) {
+                        if (i === 0 || ui.lineChart.showGrid) {
                             html += '<line ' +
                                         'x1="' + posX + '" ' +
                                         'x2="' + posX + '" ' +
-                                        'y1="' + ui.lineCharts.top + '" ';
+                                        'y1="' + ui.lineChart.top + '" ';
                         }
 
                         if (i === 0) { // root of x grid
-                            html += 'y2="' + Math.ceil(data.height - (ui.lineCharts.bottom + (ui.lineCharts.gridStroke / 2))) +'" ' +
-                                    'class="' + ui.lineCharts.nameGridRoot + '" ' +
-                                    'stroke-width="' + ui.lineCharts.gridStroke + '"';
+                            html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + (ui.lineChart.gridStroke / 2))) +'" ' +
+                                    'class="' + ui.lineChart.nameGridRoot + '" ' +
+                                    'stroke-width="' + ui.lineChart.gridStroke + '"';
 
                         } else {
-                            html += 'y2="' + (data.height - ui.lineCharts.bottom) + '" ' +
-                                    'stroke-dasharray="' + ui.lineCharts.gridStrokeArray + '"';
+                            html += 'y2="' + (data.height - ui.lineChart.bottom) + '" ' +
+                                    'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
                         }
 
                         html += '></line>';
@@ -307,36 +307,36 @@ ui.lineCharts = {
                     }
 
                     html += '</g>' +
-                        '<g class="' + ui.lineCharts.nameGridY + '">';
+                        '<g class="' + ui.lineChart.nameGridY + '">';
 
                     for (i = 0; i <= rows; i++) {
 
-                        posY = parseInt((i * (data.height - (ui.lineCharts.top + ui.lineCharts.bottom)) / rows) + ui.lineCharts.top);
+                        posY = parseInt((i * (data.height - (ui.lineChart.top + ui.lineChart.bottom)) / rows) + ui.lineChart.top);
 
-                        if (ui.lineCharts.showGridText) {
+                        if (ui.lineChart.showGridText) {
                             html += '<text ' +
-                                        'x="' + (ui.lineCharts.left - 10) + '" ' +
+                                        'x="' + (ui.lineChart.left - 10) + '" ' +
                                         'y="' + (posY + 4) +
                                     '">' +
                                         (parseInt((yMax - yMin) / rows) * (rows - i) + yMin) +
                                     '</text>';
                         }
 
-                        if (i === rows || ui.lineCharts.showGrid) {
+                        if (i === rows || ui.lineChart.showGrid) {
                             html += '<line ' +
-                                        'x2="' + (data.width - ui.lineCharts.right + 1) + '" ' +
+                                        'x2="' + (data.width - ui.lineChart.right + 1) + '" ' +
                                         'y1="' + posY + '" ' +
                                         'y2="' + posY + '" ';
                         }
 
                         if (i >= rows) { // root of y grid
-                            html += 'x1="' + Math.ceil(ui.lineCharts.left - (ui.lineCharts.gridStroke / 2)) + '" ' +
-                                    'class="' + ui.lineCharts.nameGridRoot + '" ' +
-                                    'stroke-width="' + ui.lineCharts.gridStroke + '"';
+                            html += 'x1="' + Math.ceil(ui.lineChart.left - (ui.lineChart.gridStroke / 2)) + '" ' +
+                                    'class="' + ui.lineChart.nameGridRoot + '" ' +
+                                    'stroke-width="' + ui.lineChart.gridStroke + '"';
 
                         } else {
-                            html += 'x1="' + Math.floor(ui.lineCharts.left + ui.lineCharts.gridStroke) + '" ' +
-                                    'stroke-dasharray="' + ui.lineCharts.gridStrokeArray + '"';
+                            html += 'x1="' + Math.floor(ui.lineChart.left + ui.lineChart.gridStroke) + '" ' +
+                                    'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
                         }
 
                         html += '></line>';
@@ -359,21 +359,21 @@ ui.lineCharts = {
                             y = data[j].y;
 
                             // set color
-                            if (j > ui.lineCharts.colors.length - 1) {
-                                data.color.push(ui.lineCharts.colors[j - ui.lineCharts.colors.length]);
+                            if (j > ui.lineChart.colors.length - 1) {
+                                data.color.push(ui.lineChart.colors[j - ui.lineChart.colors.length]);
 
                             } else {
-                                data.color.push(ui.lineCharts.colors[j]);
+                                data.color.push(ui.lineChart.colors[j]);
                             }
 
                             // create paths and circles
                             for (i = 0; i < y.length; i++) {
 
-                                posX = (i * col) + ui.lineCharts.left;
-                                posY = data.height - (data.height + (((data.height - (ui.lineCharts.top + ui.lineCharts.bottom)) * (y[i] - yMax)) / (yMax - yMin)) - ui.lineCharts.top);
+                                posX = (i * col) + ui.lineChart.left;
+                                posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[i] - yMax)) / (yMax - yMin)) - ui.lineChart.top);
 
                                 // get line type
-                                type = this.getAttribute(ui.lineCharts.dataType);
+                                type = this.getAttribute(ui.lineChart.dataType);
                                 if (type === null) { type = ''; }
 
                                 // create lines
@@ -384,9 +384,9 @@ ui.lineCharts = {
 
                                 }
 
-                                if (type.indexOf(ui.lineCharts.curved) > -1) { // curved
+                                if (type.indexOf(ui.lineChart.curved) > -1) { // curved
 
-                                    data.percent = parseInt((ui.lineCharts.curveSize * (i * col)) / 100);
+                                    data.percent = parseInt((ui.lineChart.curveSize * (i * col)) / 100);
 
                                     if (i === 1) { // start curves
 
@@ -413,7 +413,7 @@ ui.lineCharts = {
                                 circles += '<circle ' +
                                                 'cx="' + posX + '" ' +
                                                 'cy="' + posY + '" ' +
-                                                'r="' + ui.lineCharts.circleSize + '" ' +
+                                                'r="' + ui.lineChart.circleSize + '" ' +
                                                 'fill="' + data.color[j] + '" ' +
                                                 'stroke="' + data.color[j] + '" ' +
                                                 'stroke-width="0" ';
@@ -440,11 +440,11 @@ ui.lineCharts = {
                             }
 
                             // create paths
-                            if (type.indexOf(ui.lineCharts.dashed) > -1) { // dashed
-                                html += '<path class="' + ui.lineCharts.nameTypePrefix + ui.lineCharts.dashed + '" ';
+                            if (type.indexOf(ui.lineChart.dashed) > -1) { // dashed
+                                html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dashed + '" ';
 
-                            } else if (type.indexOf(ui.lineCharts.dotted) > -1) { // dotted
-                                html += '<path class="' + ui.lineCharts.nameTypePrefix + ui.lineCharts.dotted + '" ';
+                            } else if (type.indexOf(ui.lineChart.dotted) > -1) { // dotted
+                                html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dotted + '" ';
 
                             } else {
                                 html += '<path ';
@@ -453,38 +453,38 @@ ui.lineCharts = {
                             html += 'd="M ' + pathStart.x + ' ' + pathStart.y +
                                     paths + '" ' +
                                     'stroke="' + data.color[j] + '" ' +
-                                    'stroke-width="' + ui.lineCharts.lineStroke + '" ' +
+                                    'stroke-width="' + ui.lineChart.lineStroke + '" ' +
                                 '/>';
 
-                            if (type.indexOf(ui.lineCharts.filled) > -1) { // add filled paths
+                            if (type.indexOf(ui.lineChart.filled) > -1) { // add filled paths
 
                                 data.id = new Date().getTime();
                                 data.id = data.id.toString();
                                 data.id = data.id.substring(data.id.length - 4, data.id.length) + j;
 
-                                html += '<linearGradient id="' + ui.lineCharts.idGradient + data.id + '" x1="0" y1="0" x2="0" y2="100%">' +
+                                html += '<linearGradient id="' + ui.lineChart.idGradient + data.id + '" x1="0" y1="0" x2="0" y2="100%">' +
                                             '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' +
                                             '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' +
                                         '</linearGradient>' +
 
-                                        '<path d="M ' + (pathStart.x + (ui.lineCharts.gridStroke / 2)) + ' ' + pathStart.y +
+                                        '<path d="M ' + (pathStart.x + (ui.lineChart.gridStroke / 2)) + ' ' + pathStart.y +
 
                                             paths +
 
-                                            ' V ' + (data.height - ui.lineCharts.bottom - (ui.lineCharts.gridStroke / 2)) +
-                                            ' H ' + ((ui.lineCharts.gridStroke / 2) + ui.lineCharts.left) + ' Z" ' +
+                                            ' V ' + (data.height - ui.lineChart.bottom - (ui.lineChart.gridStroke / 2)) +
+                                            ' H ' + ((ui.lineChart.gridStroke / 2) + ui.lineChart.left) + ' Z" ' +
 
                                             'stroke="0" ' +
-                                            'fill="url(#' + ui.lineCharts.idGradient + data.id + ')" ' +
-                                            'stroke-width="' + ui.lineCharts.lineStroke + '" ' +
-                                            'class="' + ui.lineCharts.nameTypePrefix + ui.lineCharts.filled + '" ' +
+                                            'fill="url(#' + ui.lineChart.idGradient + data.id + ')" ' +
+                                            'stroke-width="' + ui.lineChart.lineStroke + '" ' +
+                                            'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' +
 
                                         '/>';
 
                             }
 
                             // get data names
-                            name = this.getAttribute(ui.lineCharts.dataName);
+                            name = this.getAttribute(ui.lineChart.dataName);
 
                             if (name !== null && name !== '') {
                                 data.name.push(name);
@@ -499,13 +499,13 @@ ui.lineCharts = {
                     html += circles + '</g></svg>';
 
                     if (data.width === 0) {
-                        ui.removeClass(this, ui.lineCharts.nameLoaded + ' ' + ui.lineCharts.nameResized);
+                        ui.removeClass(this, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
                     }
 
                     // create info
-                    if (ui.lineCharts.showInfo) {
+                    if (ui.lineChart.showInfo) {
 
-                        html += '<ul class="' + ui.lineCharts.nameInfo + '">';
+                        html += '<ul class="' + ui.lineChart.nameInfo + '">';
 
                         for (i = 0; i < lines.length; i++) {
 
@@ -516,17 +516,17 @@ ui.lineCharts = {
                             }
 
                             html += '<li>' +
-                                '<' + ui.lineCharts.tagInfoColor +' style="background: ' + data.color[i] + '">' +
-                                '</' + ui.lineCharts.tagInfoColor + '>';
+                                '<' + ui.lineChart.tagInfoColor +' style="background: ' + data.color[i] + '">' +
+                                '</' + ui.lineChart.tagInfoColor + '>';
 
                             if (data.name[i] === '') {
-                                html += '<' + ui.lineCharts.tagInfoStat + '>' + total;
+                                html += '<' + ui.lineChart.tagInfoStat + '>' + total;
 
                             } else {
                                 html += data.name[i] + ': <b>' + total;
                             }
 
-                            html += '</' + ui.lineCharts.tagInfoStat + '></li>';
+                            html += '</' + ui.lineChart.tagInfoStat + '></li>';
 
                         }
 
@@ -546,18 +546,18 @@ ui.lineCharts = {
 
         };
 
-        loadCharts(ui.lineCharts.nameNotLoaded); // show not loaded charts
+        loadCharts(ui.lineChart.nameNotLoaded); // show not loaded charts
 
     };
 
     // Loaders
-    ui.onload(ui.lineCharts.Start);
+    ui.onload(ui.lineChart.Start);
 
     ui.on(window,
         'resize',
 
         function () {
-            loadCharts(ui.lineCharts.nameLoaded, true); // resize loaded charts
+            loadCharts(ui.lineChart.nameLoaded, true); // resize loaded charts
         });
 
     ui.on(document,
@@ -573,8 +573,8 @@ ui.lineCharts = {
 
         function () {
 
-            if (ui.ajax.classNames.indexOf(ui.lineCharts.target) > -1) {
-                loadCharts(ui.lineCharts.nameNotLoaded); // show not loaded charts
+            if (ui.ajax.classNames.indexOf(ui.lineChart.target) > -1) {
+                loadCharts(ui.lineChart.nameNotLoaded); // show not loaded charts
             }
 
         });

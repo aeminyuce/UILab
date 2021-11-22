@@ -1,14 +1,14 @@
 /*globals window, ui, setTimeout */
 
-ui.lineCharts.rows = 4;
-ui.lineCharts.rowsHeight = 36;
+ui.lineChart.rows = 4;
+ui.lineChart.rowsHeight = 36;
 
-ui.lineCharts.top = 16;
-ui.lineCharts.right = 20;
-ui.lineCharts.bottom = 10;
+ui.lineChart.top = 16;
+ui.lineChart.right = 20;
+ui.lineChart.bottom = 10;
 
-ui.lineCharts.showGrid = false;
-ui.lineCharts.showInfo = false;
+ui.lineChart.showGrid = false;
+ui.lineChart.showInfo = false;
 
 ui.alerts.stylesMsgTheme = 'ui-theme-sub ui-fill-dark-100';
 

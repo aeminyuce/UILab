@@ -22,16 +22,6 @@
 
                     <div class="generate-holder ui-tab-content ui-form-lg ui-p-15 ui-open ui-open-ease">
 
-                        <div class="ui-align-c ui-m-30-b">
-                            <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form ui-form-inline-xs">
-                                <input class="generate-import ui-cursor-pointer" name="less" type="file">
-                                <span class="ui-btn ui-circle ui-block ui-ease-btn">
-                                    <span class="ui-inline-block">Import LESS File</span>
-                                    <svg class="ui-icon ui-m-5-l"><use href="#import"/></svg>
-                                </span>
-                            </div>
-                        </div>
-
                         <div class="generate-list ui-row ui-row-gap-sm-v">
                             <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
@@ -43,7 +33,7 @@
                                             <input class="generate-toggle" type="checkbox" checked disabled>
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -63,7 +53,7 @@
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -83,7 +73,7 @@
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -95,7 +85,7 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="ui-borders" value="../css/borders" checked>
+                                            <input type="checkbox" name="borders" value="../css/borders" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Borders
@@ -124,7 +114,7 @@
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -154,7 +144,7 @@
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -195,7 +185,7 @@
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -229,7 +219,7 @@
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -252,7 +242,7 @@
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -355,7 +345,7 @@
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -399,7 +389,7 @@
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -446,7 +436,7 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="datatable" value="../css/gdatatable">
+                                            <input type="checkbox" name="datatable" value="../css/datatable">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Datatable
@@ -489,7 +479,7 @@
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -511,26 +501,29 @@
                                     <textarea class="ui-color-black-50 ui-font-16 ui-p-10" rows="6"></textarea>
                                     <div class="ui-border-t ui-border-dual">
                                         <div class="ui-inline-block ui-p-5-r">
-                                            <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
+                                            <button title="Clear Form" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
                                             </button>
-                                            <!--
-                                            <button title="Minify code" name="css" class="generate-min ui-btn ui-btn-square ui-btn-ghost ui-ease-btn">
-                                                <svg class="ui-icon"><use href="#code"/></svg>
+                                            <button title="Copy to Clipboard" class="generate-copy ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
+                                                <svg class="ui-icon"><use href="#files"/></svg>
                                             </button>
-                                            -->
                                         </div>
                                         File size:
                                         <b class="generate-size">0 Kb</b>
                                     </div>
                                 </div>
 
-                                <div class="ui-align-r ui-align-c ui-ease-1st-btn">
-                                    <span class="ui-sp-15 ui-visible-xs"></span>
-                                    <button name="less" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">Generate LESS</button>
-                                    <span class="ui-sp-5 ui-visible-sm"></span>
-                                    <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid ui-round">
-                                        <svg class="ui-icon ui-text ui-m-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
+                                <div class="ui-align-c ui-ease-1st-btn">
+                                    <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form ui-form-inline-xs">
+                                        <input class="generate-import ui-cursor-pointer" name="less" type="file">
+                                        <span class="ui-btn ui-circle ui-block ui-ease-btn">
+                                            <span class="ui-inline-block">Import LESS File</span>
+                                            <svg class="ui-icon ui-m-5-l"><use href="#import"/></svg>
+                                        </span>
+                                    </div>
+                                    <button name="less" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">
+                                        Generate LESS
+                                        <svg class="ui-icon ui-m-5-l"><use href="#code"/></svg>
                                     </button>
                                 </div>
 
@@ -540,16 +533,6 @@
                     </div>
 
                     <div class="generate-holder ui-tab-content ui-form-lg ui-p-15">
-
-                        <div class="ui-align-c ui-m-30-b">
-                            <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form ui-form-inline-xs">
-                                <input class="generate-import ui-cursor-pointer" name="js" type="file">
-                                <span class="ui-btn ui-circle ui-block ui-ease-btn">
-                                    <span class="ui-inline-block">Import JS File</span>
-                                    <svg class="ui-icon ui-m-5-l"><use href="#import"/></svg>
-                                </span>
-                            </div>
-                        </div>
 
                         <div class="generate-list ui-row ui-row-gap-sm-v">
                             <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
@@ -562,7 +545,7 @@
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -582,7 +565,7 @@
                                             <input class="generate-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -602,7 +585,7 @@
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -639,7 +622,7 @@
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -701,7 +684,7 @@
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -731,7 +714,7 @@
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -838,7 +821,7 @@
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <label class="ui-label">
@@ -881,8 +864,11 @@
                                     <textarea class="ui-color-black-50 ui-font-16 ui-p-10" rows="6"></textarea>
                                     <div class="ui-border-t ui-border-dual">
                                         <div class="ui-inline-block ui-p-5-r">
-                                            <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
+                                            <button title="Clear Form" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
+                                            </button>
+                                            <button title="Copy to Clipboard" class="generate-copy ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
+                                                <svg class="ui-icon"><use href="#files"/></svg>
                                             </button>
                                             <button title="Minify code" name="js" class="generate-min ui-btn ui-btn-square ui-btn-ghost ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#code"/></svg>
@@ -893,11 +879,17 @@
                                     </div>
                                 </div>
 
-                                <div class="ui-align-r ui-align-c ui-ease-1st-btn">
-                                    <span class="ui-sp-15 ui-visible-xs"></span>
-                                    <button name="js" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">Generate JS</button>
-                                    <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid ui-round">
-                                        <svg class="ui-icon ui-text ui-m-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
+                                <div class="ui-align-c ui-ease-1st-btn">
+                                    <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form ui-form-inline-xs">
+                                        <input class="generate-import ui-cursor-pointer" name="js" type="file">
+                                        <span class="ui-btn ui-circle ui-block ui-ease-btn">
+                                            <span class="ui-inline-block">Import JS File</span>
+                                            <svg class="ui-icon ui-m-5-l"><use href="#import"/></svg>
+                                        </span>
+                                    </div>
+                                    <button name="js" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">
+                                        Generate JS
+                                        <svg class="ui-icon ui-m-5-l"><use href="#code"/></svg>
                                     </button>
                                 </div>
 
@@ -917,7 +909,7 @@
                                             <input class="generate-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
-                                        <span class="ui-color-black-50">Select/Deselect All</span>
+                                        <span class="ui-color-black-50">Toggle Select All</span>
                                     </label>
 
                                     <div class="ui-row ui-no-row-gap-v ui-xs-fluid">
@@ -1012,10 +1004,13 @@
                                     <textarea class="ui-color-black-50 ui-font-16 ui-p-10" rows="6"></textarea>
                                     <div class="ui-border-t ui-border-dual">
                                         <div class="ui-inline-block ui-p-5-r">
-                                            <button title="Clear form!" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
+                                            <button title="Clear Form" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
                                             </button>
-                                            <button title="Minify code" name="ui-icon" class="generate-min ui-btn ui-btn-square ui-btn-ghost ui-ease-btn">
+                                            <button title="Copy to Clipboard" class="generate-copy ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
+                                                <svg class="ui-icon"><use href="#files"/></svg>
+                                            </button>
+                                            <button title="Minify code" name="icon" class="generate-min ui-btn ui-btn-square ui-btn-ghost ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#code"/></svg>
                                             </button>
                                         </div>
@@ -1024,11 +1019,10 @@
                                     </div>
                                 </div>
 
-                                <div class="ui-align-r ui-align-c ui-ease-1st-btn">
-                                    <span class="ui-sp-15 ui-visible-xs"></span>
-                                    <button name="php" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100" data-ui-type="icons">Generate Icons</button>
-                                    <button title="Copy to clipboard!" class="generate-copy ui-btn ui-btn-xs-fluid ui-round">
-                                        <svg class="ui-icon ui-text ui-m-5-r ui-no-opacity"><use href="#files"/></svg>Copy to clipboard
+                                <div class="ui-align-c ui-ease-1st-btn">
+                                    <button name="php" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100" data-ui-type="icons">
+                                        Generate Icons
+                                        <svg class="ui-icon ui-m-5-l"><use href="#code"/></svg>
                                     </button>
                                 </div>
 
