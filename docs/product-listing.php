@@ -221,13 +221,14 @@
                         </div>
                     </div>
 
-                    <div class="ui-row ui-sm-fluid ui-sm-align-c">
-                        <div class="ui-col-6">
+                    <div class="ui-row ui-sm-fluid">
+                        <div class="ui-col-4">
                             <span class="ui-sp-5 ui-hidden-sm"></span>
-                            <span class="ui-font-16">Found <b>47</b> and displaying <b>9</b> products.</span>
+                            <span class="ui-font-16">Showing <b>9</b> of <b>47</b> products.</span>
                         </div>
-                        <div class="ui-col-6 ui-align-r ui-sm-no-p-t">
-                            <div class="ui-select ui-align-l ui-round ui-form-inline ui-ease-form">
+
+                        <div class="ui-col-8 ui-align-r ui-sm-align-c ui-sm-no-p-t">
+                            <div class="ui-select ui-align-l ui-sm-align-l ui-round ui-form-inline-xs ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="1" checked>Sort by</option>
@@ -236,7 +237,7 @@
                                     <option value="4">Price (High to Low)</option>
                                 </select>
                             </div>
-                            <div class="ui-select ui-align-l ui-round ui-form-inline ui-ease-form">
+                            <div class="ui-select ui-align-l ui-sm-align-l ui-round ui-form-inline-xs ui-ease-form">
                                 <svg class="ui-icon"><use href="#angle-down"/></svg>
                                 <select>
                                     <option value="12" checked>Show 9</option>
@@ -244,7 +245,9 @@
                                     <option value="36">Show 27</option>
                                 </select>
                             </div>
-                            <span class="ui-sp-10 ui-visible-xs"></span>
+
+                            <span class="ui-sp-10 ui-visible-sm"></span>
+
                             <span class="ui-align-c ui-theme-sub ui-ease-1st-btn">
                                 <button class="ui-btn ui-btn-square ui-round ui-fill-dark-100">
                                     <svg class="ui-icon"><use href="#grid-column"/></svg>
@@ -465,9 +468,13 @@
                         </div>
                     </div>
 
+                    <span class="ui-sp-10"></span>
+
                     <div class="ui-row">
                         <div class="ui-col-12 ui-align-c">
-                            <button class="product-list-load-more ui-btn ui-btn-lg ui-btn-xs-fluid ui-circle ui-ease-btn">Load more</button>
+                            <button class="product-list-load-more ui-btn ui-btn-lg ui-btn-xs-fluid ui-circle ui-ease-btn">
+                                Load more products.
+                            </button>
                         </div>
                     </div>
 

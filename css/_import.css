@@ -2152,17 +2152,17 @@ html .ui-row {
 .ui-align-nowrap {
   white-space: nowrap !important;
 }
+.ui-align-c,
+.ui-align-c *:not([class*="ui-align"]) {
+  text-align: center !important;
+}
 .ui-align-r,
-.ui-align-r * {
+.ui-align-r *:not([class*="ui-align"]) {
   text-align: right !important;
 }
 .ui-align-l,
-.ui-align-l * {
+.ui-align-l *:not([class*="ui-align"]) {
   text-align: left !important;
-}
-.ui-align-c,
-.ui-align-c * {
-  text-align: center !important;
 }
 .ui-bg-white:not([class*="ui-fill-"]) {
   background-color: hsl(0, 0%, 100%);
@@ -2211,22 +2211,16 @@ html .ui-row {
     display: block;
   }
   .ui-md-align-c,
-  .ui-md-align-c *,
-  .ui-md-align-c *,
-  .ui-md-align-c * * {
+  .ui-md-align-c *:not([class*="ui-align"]) {
     text-align: center !important;
   }
-  .ui-md-align-l,
-  .ui-md-align-l *,
-  .ui-md-align-l *,
-  .ui-md-align-l * * {
-    text-align: left !important;
-  }
   .ui-md-align-r,
-  .ui-md-align-r *,
-  .ui-md-align-r *,
-  .ui-md-align-r * * {
+  .ui-md-align-r *:not([class*="ui-align"]) {
     text-align: right !important;
+  }
+  .ui-md-align-l,
+  .ui-md-align-l *:not([class*="ui-align"]) {
+    text-align: left !important;
   }
 }
 @media (max-width: 767px) {
@@ -2256,33 +2250,21 @@ html .ui-row {
   }
   .ui-md-align-c,
   .ui-sm-align-c,
-  .ui-md-align-c *,
-  .ui-sm-align-c *,
-  .ui-md-align-c *,
-  .ui-sm-align-c *,
-  .ui-md-align-c * *,
-  .ui-sm-align-c * * {
+  .ui-md-align-c *:not([class*="ui-align"]),
+  .ui-sm-align-c *:not([class*="ui-align"]) {
     text-align: center !important;
-  }
-  .ui-md-align-l,
-  .ui-sm-align-l,
-  .ui-md-align-l *,
-  .ui-sm-align-l *,
-  .ui-md-align-l *,
-  .ui-sm-align-l *,
-  .ui-md-align-l * *,
-  .ui-sm-align-l * * {
-    text-align: left !important;
   }
   .ui-md-align-r,
   .ui-sm-align-r,
-  .ui-md-align-r *,
-  .ui-sm-align-r *,
-  .ui-md-align-r *,
-  .ui-sm-align-r *,
-  .ui-md-align-r * *,
-  .ui-sm-align-r * * {
+  .ui-md-align-r *:not([class*="ui-align"]),
+  .ui-sm-align-r *:not([class*="ui-align"]) {
     text-align: right !important;
+  }
+  .ui-md-align-l,
+  .ui-sm-align-l,
+  .ui-md-align-l *:not([class*="ui-align"]),
+  .ui-sm-align-l *:not([class*="ui-align"]) {
+    text-align: left !important;
   }
 }
 @media (max-width: 480px) {
@@ -2309,44 +2291,26 @@ html .ui-row {
   .ui-md-align-c,
   .ui-sm-align-c,
   .ui-xs-align-c,
-  .ui-md-align-c *,
-  .ui-sm-align-c *,
-  .ui-xs-align-c *,
-  .ui-md-align-c *,
-  .ui-sm-align-c *,
-  .ui-xs-align-c *,
-  .ui-md-align-c * *,
-  .ui-sm-align-c * *,
-  .ui-xs-align-c * * {
+  .ui-md-align-c *:not([class*="ui-align"]),
+  .ui-sm-align-c *:not([class*="ui-align"]),
+  .ui-xs-align-c *:not([class*="ui-align"]) {
     text-align: center !important;
-  }
-  .ui-md-align-l,
-  .ui-sm-align-l,
-  .ui-xs-align-l,
-  .ui-md-align-l *,
-  .ui-sm-align-l *,
-  .ui-xs-align-l *,
-  .ui-md-align-l *,
-  .ui-sm-align-l *,
-  .ui-xs-align-l *,
-  .ui-md-align-l * *,
-  .ui-sm-align-l * *,
-  .ui-xs-align-l * * {
-    text-align: left !important;
   }
   .ui-md-align-r,
   .ui-sm-align-r,
   .ui-xs-align-r,
-  .ui-md-align-r *,
-  .ui-sm-align-r *,
-  .ui-xs-align-r *,
-  .ui-md-align-r *,
-  .ui-sm-align-r *,
-  .ui-xs-align-r *,
-  .ui-md-align-r * *,
-  .ui-sm-align-r * *,
-  .ui-xs-align-r * * {
+  .ui-md-align-r *:not([class*="ui-align"]),
+  .ui-sm-align-r *:not([class*="ui-align"]),
+  .ui-xs-align-r *:not([class*="ui-align"]) {
     text-align: right !important;
+  }
+  .ui-md-align-l,
+  .ui-sm-align-l,
+  .ui-xs-align-l,
+  .ui-md-align-l *:not([class*="ui-align"]),
+  .ui-sm-align-l *:not([class*="ui-align"]),
+  .ui-xs-align-l *:not([class*="ui-align"]) {
+    text-align: left !important;
   }
 }
 @media (max-width: 1399px) {
@@ -2358,22 +2322,16 @@ html .ui-row {
     display: block;
   }
   .ui-lg-align-c,
-  .ui-lg-align-c *,
-  .ui-lg-align-c *,
-  .ui-lg-align-c * * {
+  .ui-lg-align-c *:not([class*="ui-align"]) {
     text-align: center !important;
   }
-  .ui-lg-align-l,
-  .ui-lg-align-l *,
-  .ui-lg-align-l *,
-  .ui-lg-align-l * * {
-    text-align: left !important;
-  }
   .ui-lg-align-r,
-  .ui-lg-align-r *,
-  .ui-lg-align-r *,
-  .ui-lg-align-r * * {
+  .ui-lg-align-r *:not([class*="ui-align"]) {
     text-align: right !important;
+  }
+  .ui-lg-align-l,
+  .ui-lg-align-l *:not([class*="ui-align"]) {
+    text-align: left !important;
   }
 }
 @media (max-width: 1629px) {
@@ -2389,22 +2347,16 @@ html .ui-row {
     float: none !important;
   }
   .ui-xl-align-c,
-  .ui-xl-align-c *,
-  .ui-xl-align-c *,
-  .ui-xl-align-c * * {
+  .ui-xl-align-c *:not([class*="ui-align"]) {
     text-align: center !important;
   }
-  .ui-xl-align-l,
-  .ui-xl-align-l *,
-  .ui-xl-align-l *,
-  .ui-xl-align-l * * {
-    text-align: left !important;
-  }
   .ui-xl-align-r,
-  .ui-xl-align-r *,
-  .ui-xl-align-r *,
-  .ui-xl-align-r * * {
+  .ui-xl-align-r *:not([class*="ui-align"]) {
     text-align: right !important;
+  }
+  .ui-xl-align-l,
+  .ui-xl-align-l *:not([class*="ui-align"]) {
+    text-align: left !important;
   }
 }
 /* borders */

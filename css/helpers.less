@@ -238,14 +238,14 @@ each(@increases, {
     &nowrap { white-space: nowrap !important; }
 }
 
+.ui-align-c {
+    &,*:not([class*="ui-align"]) { text-align: center !important; }
+}
 .ui-align-r {
-    &,* { text-align: right !important; }
+    &,*:not([class*="ui-align"]) { text-align: right !important; }
 }
 .ui-align-l {
-    &,* { text-align: left !important; }
-}
-.ui-align-c {
-    &,* { text-align: center !important; }
+    &,*:not([class*="ui-align"]) { text-align: left !important; }
 }
 
 .ui-bg- {
@@ -280,15 +280,9 @@ each(@increases, {
     .ui-clearfix-md { .ui-clearfix(); }
 
     .ui-md-align- {
-        &c {
-            &,* { .ui-align-c(); }
-        }
-        &l {
-            &,* { .ui-align-l(); }
-        }
-        &r {
-            &,* { .ui-align-r(); }
-        }
+        &c { .ui-align-c(); }
+        &r { .ui-align-r(); }
+        &l { .ui-align-l(); }
     }
 }
 @media (@sm-finish) {
@@ -309,15 +303,9 @@ each(@increases, {
     }
 
     .ui-md-align-,.ui-sm-align- {
-        &c {
-            &,* { .ui-align-c(); }
-        }
-        &l {
-            &,* { .ui-align-l(); }
-        }
-        &r {
-            &,* { .ui-align-r(); }
-        }
+        &c { .ui-align-c(); }
+        &r { .ui-align-r(); }
+        &l { .ui-align-l(); }
     }
 
 }
@@ -335,15 +323,9 @@ each(@increases, {
     }
 
     .ui-md-align-,.ui-sm-align-,.ui-xs-align- {
-        &c {
-            &,* { .ui-align-c(); }
-        }
-        &l {
-            &,* { .ui-align-l(); }
-        }
-        &r {
-            &,* { .ui-align-r(); }
-        }
+        &c { .ui-align-c(); }
+        &r { .ui-align-r(); }
+        &l { .ui-align-l(); }
     }
 }
 @media (@default-finish) {
@@ -351,15 +333,9 @@ each(@increases, {
     .ui-clearfix-lg { .ui-clearfix(); }
 
     .ui-lg-align- {
-        &c {
-            &,* { .ui-align-c(); }
-        }
-        &l {
-            &,* { .ui-align-l(); }
-        }
-        &r {
-            &,* { .ui-align-r(); }
-        }
+        &c { .ui-align-c(); }
+        &r { .ui-align-r(); }
+        &l { .ui-align-l(); }
     }
 }
 @media (@lg-finish) {
@@ -370,14 +346,8 @@ each(@increases, {
     .ui-no-float-xl { .ui-no-float(); }
 
     .ui-xl-align- {
-        &c {
-            &,* { .ui-align-c(); }
-        }
-        &l {
-            &,* { .ui-align-l(); }
-        }
-        &r {
-            &,* { .ui-align-r(); }
-        }
+        &c { .ui-align-c(); }
+        &r { .ui-align-r(); }
+        &l { .ui-align-l(); }
     }
 }
