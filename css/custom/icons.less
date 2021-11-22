@@ -7,10 +7,10 @@
 @icons-list-bg-dark:                    @card-bg-dark;
 
 @icons-list-hover-bg:                   fade(@black, 12%);
-@icons-list-hover-bg-dark:              hsl(219, 12%, 27%);
+@icons-list-hover-bg-dark:              fade(@white, 20%);
 
 @icons-name-color:                      @black-50;
-@icons-name-color-dark:                 hsl(0, 0%, 82%);
+@icons-name-color-dark:                 fade(@white, 50%);
 
 ._icons-vars () {
     --ui-icons-list-color: @icons-list-color;
@@ -48,7 +48,7 @@
     &:not(:last-child) { margin-bottom: 30px; }
 
     li {
-        ._color-var(icons-list-color); max-width: 160px; ._bg-var(icons-list-bg); padding: 15px 10px; margin: 1px; border-radius: @round; cursor: pointer; flex-grow: 1;
+        ._color-var(icons-list-color); width: 160px; ._bg-var(icons-list-bg); padding: 10px 6px; margin: 1px; border-radius: @round; cursor: pointer;
 
         .ui-desktop &:hover { ._bg-var(icons-list-hover-bg); }
         & > span { ._color-var(icons-name-color); font-size: @font-13; white-space: nowrap; text-overflow: ellipsis; line-height: normal; min-width: 129px; width: 100%; margin-top: 10px; overflow: hidden; display: block; }
