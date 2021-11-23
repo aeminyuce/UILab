@@ -6396,6 +6396,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-table:not(.ui-table-sidebar).ui-align-c th {
   text-align: center;
 }
+.ui-table.ui-border,
 .ui-table[class*="ui-border-"] {
   border-color: hsl(0, 0%, 86.7%);
   border-color: var(--ui-table-border-color);
