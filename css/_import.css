@@ -145,7 +145,7 @@
   --ui-map-path-fill-hover: hsla(0, 0%, 100%, 0.15);
 }
 html {
-  font-family: "Poppins", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Poppins', Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.015em;
@@ -3643,7 +3643,7 @@ button.ui-font-underline:hover {
 .ui-h4,
 .ui-h5,
 .ui-h6 {
-  font-family: "Archivo", "Poppins", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Archivo', 'Poppins', Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   letter-spacing: -0.025em;
   margin-bottom: 0;
@@ -3735,7 +3735,7 @@ button.ui-font-underline:hover {
 }
 .ui-code,
 .ui-pre {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
 .ui-code {
   color: hsl(345, 69%, 46%);
@@ -4006,6 +4006,9 @@ dt + dd:not(:last-child) {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+button.ui-btn {
+  font-family: 'Poppins', Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 .ui-btn.ui-round {
   border-radius: 6.66666667px;
@@ -4896,7 +4899,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   box-sizing: border-box;
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
-  font-family: "Poppins", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Poppins', Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 15px;
   width: 100%;
   background-color: transparent;
@@ -4988,7 +4991,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   -webkit-background-clip: text;
 }
 .ui-chrome .ui-input input:-webkit-autofill::first-line {
-  font-family: "Poppins", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Poppins', Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
 }
 .ui-no-border.ui-input input,
@@ -7210,12 +7213,12 @@ header.ui-sticky-static {
   border-radius: 0 !important;
 }
 .ui-modal-content.ui-modal-fullscreen .ui-modal-header .ui-modal-buttons {
-  padding-right: 48px;
+  padding-right: 55.5px;
 }
 .ui-modal-content.ui-modal-fullscreen .ui-close-modal {
   background-color: hsla(0, 0%, 0%, 0.2);
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
 }
 .ui-desktop .ui-modal-content.ui-modal-fullscreen .ui-close-modal:hover {
   background-color: hsla(0, 0%, 0%, 0.35);
@@ -7239,10 +7242,10 @@ header.ui-sticky-static {
   border-radius: 9px;
 }
 .ui-modal-content.ui-has-header .ui-modal {
-  padding-top: 62px !important;
+  padding-top: 72px !important;
 }
 .ui-modal-content.ui-has-footer .ui-modal {
-  padding-bottom: 62px !important;
+  padding-bottom: 72px !important;
 }
 .ui-modal-content .ui-close-modal {
   color: hsl(0, 0%, 100%) !important;
@@ -7276,9 +7279,9 @@ header.ui-sticky-static {
 .ui-modal-header > .ui-row,
 .ui-modal-container > .ui-row,
 .ui-modal-footer > .ui-row {
-  margin-top: -10px;
+  margin-top: -15px;
   margin-right: inherit;
-  margin-bottom: -10px;
+  margin-bottom: -15px;
   margin-left: inherit;
 }
 .ui-modal-header > .ui-fixed,
@@ -7286,15 +7289,15 @@ header.ui-sticky-static {
 .ui-modal-footer > .ui-fixed {
   padding-right: 0;
   padding-left: 0;
-  margin-top: -10px;
-  margin-bottom: -10px;
+  margin-top: -15px;
+  margin-bottom: -15px;
 }
 .ui-modal-header,
 .ui-modal-footer {
   text-overflow: ellipsis;
   white-space: nowrap;
   background-color: hsla(0, 0%, 0%, 0.04);
-  padding: 10px;
+  padding: 15px;
   overflow: hidden;
   position: absolute;
   right: 0;
@@ -7315,7 +7318,7 @@ header.ui-sticky-static {
   margin: 8px 0;
 }
 .ui-modal-header {
-  height: 62px;
+  height: 72px;
   top: 0;
   z-index: 9;
 }
@@ -7333,10 +7336,10 @@ header.ui-sticky-static {
   float: left;
 }
 .ui-modal-container {
-  min-height: 20px;
+  min-height: 30px;
   height: 100%;
   max-height: 100%;
-  padding: 10px;
+  padding: 15px;
   overflow: auto;
   position: relative;
 }
@@ -7354,7 +7357,7 @@ header.ui-sticky-static {
   left: 0;
 }
 .ui-modal-footer {
-  height: 62px;
+  height: 72px;
   bottom: 0;
   z-index: 9;
 }
@@ -7397,8 +7400,8 @@ header.ui-sticky-static {
 }
 .ui-tooltip-content {
   line-height: 1.2em;
-  min-height: 26px;
-  padding: 5px 10px;
+  min-height: 36px;
+  padding: 10px 20px;
   position: relative;
 }
 .ui-tooltip[data-ui-pos="t"] > span {

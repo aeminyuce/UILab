@@ -30,6 +30,8 @@
 .ui-btn {
     ._color-var(black); font-size: @font-15; text-decoration: none; text-align: center; vertical-align: middle; line-height: (@btn-default - (@btn-default-padding * 2)); height: @btn-default; ._bg-var(btn-bg); padding-top: @btn-default-padding; padding-bottom: @btn-default-padding; display: inline-block; position: relative; cursor: pointer; @no-appearance();
 
+    button& { font-family: @font-family; } // must be setting for button tags!
+
     &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
 
     &:not(.ui-border):not([class*="ui-border-"]) { border-width: 0; }

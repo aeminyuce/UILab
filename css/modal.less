@@ -1,7 +1,7 @@
 // out: false
 /* modal */ @import (reference) 'ui.less';
 
-@modal-padding:                         10px;
+@modal-padding:                         15px;
 @modal-z-index:                         89;
 @modal-bg:                              fade(@black, 86%);
 
@@ -91,7 +91,7 @@
                 width: 100%; height: 100%; border-radius: 0 !important;
 
                 .ui-modal-header {
-                    .ui-modal-buttons { padding-right: @btn-lg; }
+                    .ui-modal-buttons { padding-right: (@btn-lg + (@modal-padding / 2)); }
                 }
                 .ui-close-modal {
                     background-color: @modal-close-fullscreen-bg; top: @modal-padding; right: @modal-padding;
