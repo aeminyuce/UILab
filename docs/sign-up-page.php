@@ -8,12 +8,12 @@
 
             <div class="signup-holder ui-no-scroll ui-set-relative ui-fill-dark-100">
 
-                <div class="signup-icons ui-icons-bold">
-                    <svg class="ui-icon"><use href="#plus"/></svg>
-                    <svg class="ui-icon"><use href="#plus"/></svg>
-                    <svg class="ui-icon"><use href="#plus"/></svg>
-                    <svg class="ui-icon"><use href="#plus"/></svg>
-                    <svg class="ui-icon"><use href="#plus"/></svg>
+                <div class="signup-icons ui-icons-default">
+                    <svg class="ui-icon"><use href="#star"/></svg>
+                    <svg class="ui-icon"><use href="#square"/></svg>
+                    <svg class="ui-icon"><use href="#circle"/></svg>
+                    <svg class="ui-icon"><use href="#plus-badge"/></svg>
+                    <svg class="ui-icon ui-icon-thin"><use href="#user-plus"/></svg>
                 </div>
 
                 <div class="ui-fixed ui-theme-green">
