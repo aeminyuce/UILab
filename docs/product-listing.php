@@ -248,12 +248,12 @@
 
                             <span class="ui-sp-10 ui-visible-sm"></span>
 
-                            <span class="ui-align-c ui-theme-sub ui-ease-1st-btn">
-                                <button class="ui-btn ui-btn-square ui-round ui-fill-dark-100">
-                                    <svg class="ui-icon"><use href="#grid-column"/></svg>
+                            <span class="ui-align-c ui-icons-no-opacity ui-theme-sub ui-ease-1st-btn">
+                                <button class="ui-btn ui-btn-square ui-round ui-text">
+                                    <svg class="ui-icon"><use href="#grid-column-fill"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square ui-round">
-                                    <svg class="ui-icon"><use href="#grid-row"/></svg>
+                                    <svg class="ui-icon"><use href="#grid-row-fill"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square ui-round ui-sidebar-show-r ui-visible-md">
                                     <svg class="ui-icon"><use href="#bars-right"/></svg>

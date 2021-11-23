@@ -1287,28 +1287,28 @@
 <symbol id="filter-fill" viewBox="0 0 288 288">
     <use class="ui-svg-f" href="#filter"/>
 </symbol>
-<symbol id="grid-row" viewBox="-12 -12 288 288">
+<symbol id="grid-row" viewBox="-12 0 288 288">
     <path d="M12 12h240v96H12z"/>
     <path class="ui-svg-s" d="M12 156h240v96H12z"/>
 </symbol>
 <symbol id="grid-row-fill" viewBox="0 0 288 288">
     <use class="ui-svg-f" href="#grid-row"/>
 </symbol>
-<symbol id="grid-column" viewBox="-12 -12 288 288">
+<symbol id="grid-column" viewBox="-12 0 288 288">
     <path d="M12 12h96v96H12z"/>
     <path class="ui-svg-s" d="M12 156h96v96H12zM156 12h96v96h-96zM156 156h96v96h-96z"/>
 </symbol>
 <symbol id="grid-column-fill" viewBox="0 0 288 288">
     <use class="ui-svg-f" href="#grid-column"/>
 </symbol>
-<symbol id="grid-flow" viewBox="-12 -12 288 288">
+<symbol id="grid-flow" viewBox="-12 0 288 288">
     <path d="M12 12h240v152H12z"/>
     <path class="ui-svg-s" d="M12 212h240v40H12z"/>
 </symbol>
 <symbol id="grid-flow-fill" viewBox="0 0 288 288">
     <use class="ui-svg-f" href="#grid-flow"/>
 </symbol>
-<symbol id="grid-masonry" viewBox="-12 -12 288 288">
+<symbol id="grid-masonry" viewBox="-12 0 288 288">
     <path d="M12 12h96v128H12z"/>
     <path class="ui-svg-s" d="M156 116h96v136h-96zM12 196h96v56H12zM156 12h96v56h-96z"/>
 </symbol>

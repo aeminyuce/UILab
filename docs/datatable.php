@@ -35,7 +35,7 @@
                             </div>
                             <div class="ui-col-lg-3 ui-col-6 ui-no-fluid">
                                 <div class="ui-dropdown ui-menu-l ui-block ui-ease-dropdown">
-                                    <button class="ui-btn ui-align-l ui-round ui-fill-light-100">
+                                    <button class="ui-btn ui-align-l ui-p-10 ui-round ui-fill-light-100">
                                         <span>
                                             <svg class="ui-icon"><use href="#sort"></svg> Sort
                                         </span>
