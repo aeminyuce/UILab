@@ -3709,7 +3709,6 @@ button.ui-font-underline:hover {
 .ui-blockquote:not(:last-child) {
   margin-bottom: 20px;
 }
-.ui-blockquote.ui-align-r,
 .ui-blockquote.ui-float-r {
   text-align: right;
   border-right: 5px solid hsl(0, 0%, 93%);
@@ -3720,8 +3719,11 @@ button.ui-font-underline:hover {
 }
 .ui-blockquote footer {
   color: hsl(0, 0%, 47%);
-  font-size: 12px;
+  font-size: 13px;
   display: block;
+}
+.ui-blockquote footer:before {
+  content: "\2014\00A0";
 }
 .ui-hr {
   box-sizing: content-box;

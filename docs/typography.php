@@ -156,6 +156,10 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <footer>A. Emin YUCE</footer>
                     </blockquote>
+                    <blockquote class="ui-blockquote ui-float-r">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <footer>A. Emin YUCE</footer>
+                    </blockquote>
                 </div>
 
                 <h3 class="ui-h3">Hr</h3>
