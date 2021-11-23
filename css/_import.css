@@ -5900,21 +5900,15 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 }
 /* icons */
 .ui-icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 30px;
   vertical-align: middle;
   display: inline-block;
   fill: none;
   stroke: currentColor;
   stroke-linecap: round;
   stroke-linejoin: round;
-  width: 20px;
-  height: 20px;
-  stroke-width: 30px;
-}
-.ui-icon-mirror-v {
-  transform: scaleY(-1);
-}
-.ui-icon-mirror-h {
-  transform: scaleX(-1);
 }
 .ui-svg-f {
   fill: currentColor !important;
@@ -5931,71 +5925,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 }
 .ui-svg-fr {
   fill-rule: evenodd;
-}
-.ui-icon-xxl,
-.ui-icons-xxl .ui-icon {
-  width: 50px !important;
-  height: 50px !important;
-}
-.ui-icon-xxl,
-.ui-icons-xxl .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 12px !important;
-}
-.ui-icon-xl,
-.ui-icons-xl .ui-icon {
-  width: 34px !important;
-  height: 34px !important;
-}
-.ui-icon-xl,
-.ui-icons-xl .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 16px !important;
-}
-.ui-icon-lg,
-.ui-icons-lg .ui-icon {
-  width: 26px !important;
-  height: 26px !important;
-}
-.ui-icon-lg,
-.ui-icons-lg .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 24px !important;
-}
-.ui-icon-sm,
-.ui-icons-sm .ui-icon {
-  width: 18px !important;
-  height: 18px !important;
-}
-.ui-icon-sm,
-.ui-icons-sm .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 32px !important;
-}
-.ui-icon-xs,
-.ui-icons-xs .ui-icon {
-  width: 14px !important;
-  height: 14px !important;
-}
-.ui-icon-xs,
-.ui-icons-xs .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 36px !important;
-}
-.ui-icon-thin,
-.ui-icons-thin .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 12px !important;
-}
-.ui-icon-light,
-.ui-icons-light .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 16px !important;
-}
-.ui-icon-default,
-.ui-icons-default .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 24px !important;
-}
-.ui-icon-semibold,
-.ui-icons-semibold .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 32px !important;
-}
-.ui-icon-bold,
-.ui-icons-bold .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 36px !important;
 }
 .ui-icons-no-opacity .ui-icon:not(.ui-opacity-half) {
   opacity: 1 !important;
@@ -6027,6 +5956,92 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-icons-m-10-h .ui-icon {
   margin-right: 10px !important;
   margin-left: 10px !important;
+}
+.ui-icons-xxl .ui-icon:not([class*="ui-icon-"]) {
+  width: 50px !important;
+  height: 50px !important;
+  stroke-width: 12px !important;
+}
+.ui-icons-xl .ui-icon:not([class*="ui-icon-"]) {
+  width: 34px !important;
+  height: 34px !important;
+  stroke-width: 16px !important;
+}
+.ui-icons-lg .ui-icon:not([class*="ui-icon-"]) {
+  width: 26px !important;
+  height: 26px !important;
+  stroke-width: 24px !important;
+}
+.ui-icons-sm .ui-icon:not([class*="ui-icon-"]) {
+  width: 18px !important;
+  height: 18px !important;
+  stroke-width: 32px !important;
+}
+.ui-icons-xs .ui-icon:not([class*="ui-icon-"]) {
+  width: 14px !important;
+  height: 14px !important;
+  stroke-width: 36px !important;
+}
+.ui-icons-thin .ui-icon:not([class*="ui-icon-"]) {
+  stroke-width: 12px !important;
+}
+.ui-icons-light .ui-icon:not([class*="ui-icon-"]) {
+  stroke-width: 16px !important;
+}
+.ui-icons-default .ui-icon:not([class*="ui-icon-"]) {
+  stroke-width: 24px !important;
+}
+.ui-icons-semibold .ui-icon:not([class*="ui-icon-"]) {
+  stroke-width: 32px !important;
+}
+.ui-icons-bold .ui-icon:not([class*="ui-icon-"]) {
+  stroke-width: 36px !important;
+}
+.ui-icon-mirror-v {
+  transform: scaleY(-1);
+}
+.ui-icon-mirror-h {
+  transform: scaleX(-1);
+}
+.ui-icon-xxl {
+  width: 50px !important;
+  height: 50px !important;
+  stroke-width: 12px !important;
+}
+.ui-icon-xl {
+  width: 34px !important;
+  height: 34px !important;
+  stroke-width: 16px !important;
+}
+.ui-icon-lg {
+  width: 26px !important;
+  height: 26px !important;
+  stroke-width: 24px !important;
+}
+.ui-icon-sm {
+  width: 18px !important;
+  height: 18px !important;
+  stroke-width: 32px !important;
+}
+.ui-icon-xs {
+  width: 14px !important;
+  height: 14px !important;
+  stroke-width: 36px !important;
+}
+.ui-icon-thin {
+  stroke-width: 12px !important;
+}
+.ui-icon-light {
+  stroke-width: 16px !important;
+}
+.ui-icon-default {
+  stroke-width: 24px !important;
+}
+.ui-icon-semibold {
+  stroke-width: 32px !important;
+}
+.ui-icon-bold {
+  stroke-width: 36px !important;
 }
 /* listgroup */
 .ui-ease-listgroup li,

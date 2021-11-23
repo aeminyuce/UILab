@@ -1,7 +1,7 @@
 // out: false
 /* icons */ @import (reference) 'ui.less';
 
-@icon-weights:                          thin light default semibold bold;
+@icons-weights:                         thin light default semibold bold;
 @icons-margin-sizes:                    5px 10px;
 
 .ui- {
@@ -34,7 +34,7 @@
         });
 
         each(@icon-sizes, { // do not merge
-            @weight: extract(@icon-weights, @index);
+            @weight: extract(@icons-weights, @index);
             &@{weight} .ui-icon:not([class*="ui-icon-"]) { ._icon-weight(@value) !important; }
         });
     }
@@ -50,7 +50,7 @@
         });
 
         each(@icon-sizes, { // do not merge
-            @weight: extract(@icon-weights, @index);
+            @weight: extract(@icons-weights, @index);
             &-@{weight} { ._icon-weight(@value) !important; }
         });
     }

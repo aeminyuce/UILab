@@ -73,19 +73,19 @@
                 <div class="ui-p-30-b">
                     <ul class="ui-steps-bar ui-steps-icon">
                         <li>
-                            <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                            <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                         <li class="ui-active">
-                            <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                            <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                            <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                            <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle"/></svg>
                             Step Name Here
                         </li>
                     </ul>
@@ -181,19 +181,19 @@
                     <div class="ui-p-30-b">
                         <ul class="ui-steps-bar ui-steps-icon">
                             <li>
-                                <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                                <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle"/></svg>
                                 Step Name Here
                             </li>
                             <li class="ui-active">
-                                <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                                <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle"/></svg>
                                 Step Name Here
                             </li>
                             <li>
-                                <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                                <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle"/></svg>
                                 Step Name Here
                             </li>
                             <li>
-                                <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle-fill"/></svg>
+                                <svg class="ui-icon" data-ui-tooltip title="Completed"><use href="#check-circle"/></svg>
                                 Step Name Here
                             </li>
                         </ul>
