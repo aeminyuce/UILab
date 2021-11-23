@@ -24,39 +24,39 @@
   height: 52px;
   bottom: 70px;
   left: 202px;
-  opacity: 0.15;
-  transform: rotate(12deg);
-}
-.signup-icons .ui-icon:nth-child(2) {
-  width: 28px;
-  height: 28px;
-  bottom: 2px;
-  left: 4px;
-  opacity: 0.1;
+  opacity: 0.35;
   transform: rotate(-12deg);
 }
+.signup-icons .ui-icon:nth-child(2) {
+  width: 42px;
+  height: 42px;
+  bottom: 14px;
+  left: -4px;
+  opacity: 0.1;
+  transform: rotate(22deg);
+}
 .signup-icons .ui-icon:nth-child(3) {
-  width: 64px;
-  height: 64px;
-  top: 22px;
-  left: 22px;
-  opacity: 0.5;
+  width: 32px;
+  height: 32px;
+  top: 12px;
+  left: 12px;
+  opacity: 0.15;
   transform: rotate(-12deg);
 }
 .signup-icons .ui-icon:nth-child(4) {
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   bottom: 42px;
-  right: -8px;
-  opacity: 0.3;
+  right: -14px;
+  opacity: 0.15;
   transform: rotate(-12deg);
 }
 .signup-icons .ui-icon:nth-child(5) {
-  width: 206px;
-  height: 206px;
-  top: -42px;
+  width: 248px;
+  height: 248px;
+  top: -58px;
   right: 29%;
-  opacity: 0.15;
+  opacity: 0.22;
   transform: rotate(12deg);
 }
 .signup-btn {
