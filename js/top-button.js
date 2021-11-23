@@ -7,7 +7,6 @@ ui.topButton = {
 
     // targets
     target: 'ui-top-button',
-    targetScrollable: 'body', // don't use html tag: IE 10 not supported!
 
     // helper classnames
     nameOpen: 'ui-open',
@@ -28,73 +27,44 @@ ui.topButton = {
 (function () {
 
     'use strict';
-    /*globals window, document, ui, setTimeout ,setInterval, clearInterval */
-
-    var
-        scrollPos,
-        scrollEl,
-        btnAnimate;
+    /*globals window, document, ui, setTimeout */
 
     function togglerFnc() {
 
-        var topBtn, showBtn, hideBtn;
-        topBtn = ui.find('.' + ui.topButton.target);
+        var topBtn = ui.find('.' + ui.topButton.target);
 
-        showBtn = function () {
+        if (ui.find('body')[0].offsetHeight > (window.innerHeight * 2) && window.innerWidth > ui.globals.sm) {
 
-            if (!ui.hasClass(topBtn, ui.topButton.nameOpen)) {
+            setTimeout(function () {
 
-                ui.addClass(topBtn, ui.topButton.nameOpen);
+                if (window.pageYOffset > (window.innerHeight / 3)) {
 
-                setTimeout(function () {
-                    ui.addClass(topBtn, ui.topButton.nameOpenEase);
-                }, ui.globals.slow);
+                    if (!ui.hasClass(topBtn, ui.topButton.nameOpen)) {
 
-            }
+                        ui.addClass(topBtn, ui.topButton.nameOpen);
 
-        };
+                        setTimeout(function () {
+                            ui.addClass(topBtn, ui.topButton.nameOpenEase);
+                        }, ui.globals.slow);
 
-        hideBtn = function () {
-
-            if (ui.hasClass(topBtn, ui.topButton.nameOpen)) {
-
-                ui.removeClass(topBtn, ui.topButton.nameOpenEase);
-
-                setTimeout(function () {
-                    ui.removeClass(topBtn, ui.topButton.nameOpen);
-                }, ui.globals.slow);
-
-            }
-
-        };
-
-        if (ui.topButton.targetScrollable === 'body') {
-
-            if (scrollEl === undefined) { return; }
-
-            if (scrollEl.offsetHeight > (window.innerHeight * 2) && window.innerWidth > ui.globals.sm) {
-
-                scrollPos = window.pageYOffset;
-
-                if (scrollPos > (window.innerHeight / 3)) {
-                    showBtn();
+                    }
 
                 } else {
-                    hideBtn();
+
+                    if (ui.hasClass(topBtn, ui.topButton.nameOpen)) {
+
+                        ui.removeClass(topBtn, ui.topButton.nameOpenEase);
+
+                        setTimeout(function () {
+                            ui.removeClass(topBtn, ui.topButton.nameOpen);
+                        }, ui.globals.slow);
+
+                    }
+
                 }
 
-            }
+            }, 0);
 
-        } else {
-
-            scrollPos = scrollEl.scrollTop;
-
-            if (scrollPos > (scrollEl.offsetHeight / 3) && window.innerWidth > ui.globals.sm) {
-                showBtn();
-
-            } else {
-                hideBtn();
-            }
         }
 
     }
@@ -107,13 +77,6 @@ ui.topButton = {
                             '<svg class="' + ui.topButton.stylesIcon + '"><use href="#' + ui.topButton.icon + '"/></svg>' +
                         '</button>';
 
-            if (ui.topButton.targetScrollable === 'body') {
-                scrollEl = ui.find(ui.topButton.targetScrollable)[0];
-
-            } else {
-                scrollEl = ui.find('.' + ui.topButton.targetScrollable)[0];
-            }
-
             ui.find('body')[0].insertAdjacentHTML('beforeend', html);
             togglerFnc();
 
@@ -122,23 +85,7 @@ ui.topButton = {
                 'click',
 
                 function () {
-
-                    clearInterval(btnAnimate);
-                    btnAnimate = setInterval(function () {
-
-                        scrollPos -= (scrollPos / 4);
-
-                        if (ui.topButton.targetScrollable === 'body') {
-                            window.scrollTo(0, scrollPos);
-
-                        } else {
-                            scrollEl.scrollTop = scrollPos; // IE, EDGE: scrollTo() not supported for div element
-                        }
-
-                        if (scrollPos <= 0) { clearInterval(btnAnimate); }
-
-                    }, 10);
-
+                    window.scrollTo(0, 0);
                 });
 
         }

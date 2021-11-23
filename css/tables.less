@@ -36,11 +36,12 @@
 }
 
 .ui-table {
-    width: 100%; ._bg-var(card-bg); border-collapse: collapse; border-spacing: 0;
+    width: 100%; ._bg-var(card-bg); border-collapse: collapse; border-spacing: 0; caption-side: top;
 
     &:not(:last-child) { margin-bottom: @highlight-space; }
 
-    caption { font-size: @font-16; text-align: center; ._bg-var(table-caption-bg); padding: @table-padding; }
+    &.ui-table-caption-b { caption-side: bottom; }
+    caption { ._color-var(black); font-size: @font-16; text-align: center; ._bg-var(table-caption-bg); padding: @table-padding; }
 
     th,td { font-weight: @font-normal; vertical-align: top; text-align: left; }
 

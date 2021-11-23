@@ -2,6 +2,8 @@
 /* ui */
 
 // reset
+@page-smooth-scrolling-reset:           true;
+
 @body-font-reset:                       true;
 @body-bg-reset:                         true;
 @body-margin-reset:                     true;
@@ -294,16 +296,19 @@
 }
 
 // reset
-html {
+& when (@page-smooth-scrolling-reset = true) {
+    html:not(.ui-no-effects) { scroll-behavior: smooth; }
+}
+body {
     & when (@body-font-reset = true) {
         font-family: @font-family; font-size: @font-size; font-weight: @font-normal; letter-spacing: @letter-spacing;
     }
     & when (@body-bg-reset = true) {
         ._bg-var(body-bg);
     }
-}
-& when (@body-margin-reset = true) {
-    body { margin: 0; }
+    & when (@body-margin-reset = true) {
+        margin: 0;
+    }
 }
 
 [class*="ui-"] {
@@ -349,7 +354,7 @@ html {
             .ui-hidden-light,.ui-visible-dark { display: none !important; }
         }
         @media (prefers-color-scheme: dark) {
-            html { ._color-var(black); }
+            body { ._color-var(black); }
 
             .ui-visible-light,.ui-hidden-dark { display: none !important; }
 
@@ -366,7 +371,7 @@ html {
             .ui-hidden-light,.ui-visible-dark { display: none !important; }
         }
         [data-ui-mode="dark"] {
-            ._color-var(black);
+            body { ._color-var(black); }
 
             .ui-visible-light,.ui-hidden-dark { display: none !important; }
 

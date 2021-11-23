@@ -11,15 +11,7 @@
 
 @tooltip-arrow-size:                    10px;
 
-@tooltip-bg:                            @card-bg-dark;
-@tooltip-bg-dark:                       @black;
-
-._global-vars () {
-    --ui-tooltip-bg: @tooltip-bg;
-}
-._global-vars-dark () {
-    --ui-tooltip-bg: @tooltip-bg-dark;
-}
+@tooltip-bg:                            hsl(348, 75%, 50%);
 
 .ui-ease-tooltip { transition-property: top, left, opacity; }
 
@@ -28,7 +20,7 @@
 .ui-tooltip {
     min-width: @tooltip-min-width; max-width: @tooltip-max-width; position: absolute; z-index: @tooltip-z-index;
 
-    &:not([class*="ui-fill-"]) { color: @white; ._bg-var(tooltip-bg); }
+    &:not([class*="ui-fill-"]) { color: @white; background-color: @tooltip-bg; }
 
     &:not(.ui-open) { display: none; }
     &:not(.ui-open-ease) { opacity: 0; }
@@ -106,7 +98,7 @@
         i {
             box-sizing: content-box; width: @tooltip-arrow-size; height: @tooltip-arrow-size; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
 
-            &:not([class*="ui-fill-"]) { ._bg-var(tooltip-bg); }
+            &:not([class*="ui-fill-"]) { background-color: @tooltip-bg; }
         }
     }
 }

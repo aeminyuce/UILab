@@ -12,6 +12,7 @@
 @calendar-days-passive-opacity:         .45;
 @calendar-icons-opacity:                .65;
 
+@calendar-caption-side:                 top;
 @calendar-caption-padding:              5px;
 
 @calendar-caption-buttons-padding:      10px;
@@ -35,8 +36,8 @@
 @calendar-picker-z-index:               10;
 @calendar-picker-shadow:                fade(@black, 15%);
 
-@calendar-highlighted-bg:               fade(@black, 15%);
-@calendar-highlighted-bg-dark:          fade(@white, 15%);
+@calendar-highlighted-bg:               fade(@black, 8%);
+@calendar-highlighted-bg-dark:          fade(@white, 8%);
 
 @calendar-weekend-bg:                   fade(@black, 4%);
 @calendar-weekend-bg-dark:              fade(@white, 4%);
@@ -157,7 +158,10 @@
     }
 
     caption {
-        box-sizing: border-box; height: (@calendar-caption-buttons-size + @calendar-caption-padding * 2); ._bg-var(calendar-highlighted-bg); padding: @calendar-caption-padding (@calendar-caption-buttons-size + @calendar-caption-padding * 2); margin-bottom: @calendar-caption-padding;
+        box-sizing: border-box; height: (@calendar-caption-buttons-size + @calendar-caption-padding * 2); ._bg-var(calendar-highlighted-bg); padding: @calendar-caption-padding (@calendar-caption-buttons-size + @calendar-caption-padding * 2); caption-side: @calendar-caption-side;
+
+        & when (@calendar-caption-side = top) { margin-bottom: @calendar-caption-padding; }
+        & when (@calendar-caption-side = bottom) { margin-top: @calendar-caption-padding; }
 
         button { font-size: @font-16; white-space: nowrap; text-overflow: ellipsis; line-height: (@calendar-caption-buttons-size - @calendar-caption-buttons-padding * 2); max-width: @calendar-caption-buttons-max-width; height: @calendar-caption-buttons-size; background-color: @no-color; overflow: hidden; border: 0; }
         & > button {
@@ -181,39 +185,39 @@
 
     &.ui-round {
         caption {
-            &,button { border-radius: @round; }
+            &,button { border-radius: (@round - (@round * 0.3333333333)); }
         }
 
         .ui-calendar {
             &-panel {
-                border-radius: @round;
+                border-radius: (@round - (@round * 0.3333333333));
 
-                .ui-panel-call { border-radius: @round; }
+                .ui-panel-call { border-radius: (@round - (@round * 0.3333333333)); }
             }
 
-            &-month { border-radius: @round 0 0 @round; }
-            &-year { border-radius: 0 @round @round 0; }
+            &-month { border-radius: (@round - (@round * 0.3333333333)) 0 0 (@round - (@round * 0.3333333333)); }
+            &-year { border-radius: 0 (@round - (@round * 0.3333333333)) (@round - (@round * 0.3333333333)) 0; }
 
             &-details {
-                & > button { border-radius: @round; }
-                li { box-sizing: border-box; border-radius: @round; }
+                & > button { border-radius: (@round - (@round * 0.3333333333)); }
+                li { box-sizing: border-box; border-radius: (@round - (@round * 0.3333333333)); }
             }
         }
 
         table {
             &.ui-fill-weekends {
                 th {
-                    &:nth-child(6) { border-radius: @round 0 0 0; }
-                    &:nth-child(7) { border-radius: 0 @round 0 0; }
+                    &:nth-child(6) { border-radius: (@round - (@round * 0.3333333333)) 0 0 0; }
+                    &:nth-child(7) { border-radius: 0 (@round - (@round * 0.3333333333)) 0 0; }
                 }
                 tr {
-                    &:last-child td:nth-child(6) { border-radius: 0 0 0 @round; }
-                    &:last-child td:nth-child(7) { border-radius: 0 0 @round 0; }
+                    &:last-child td:nth-child(6) { border-radius: 0 0 0 (@round - (@round * 0.3333333333)); }
+                    &:last-child td:nth-child(7) { border-radius: 0 0 (@round - (@round * 0.3333333333)) 0; }
                 }
             }
         }
         td {
-            button { border-radius: @round; }
+            button { border-radius: (@round - (@round * 0.3333333333)); }
         }
     }
 
