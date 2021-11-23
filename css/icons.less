@@ -4,44 +4,54 @@
 @icon-weights:                          thin light default semibold bold;
 @icons-margin-sizes:                    5px 10px;
 
-.ui-icon {
-    vertical-align: middle; display: inline-block; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round;
+.ui- {
+    &icon { ._icon(@icon-default-size); vertical-align: middle; display: inline-block; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; }
 
-    ._icon(@icon-default-size);
+    &svg- {
+        &f { fill: currentColor !important; } // fill
+        &l { fill: none !important; } // line
+        &sd { fill: currentColor !important; stroke: none !important; } // solid
+        &s { opacity: @icon-sub-opacity; } // sub
+        &fr { fill-rule: evenodd; } // fill-rule
+    }
 
-    &-mirror- {
-        &v { transform: scaleY(-1); }
-        &h { transform: scaleX(-1); }
+    &icons- {
+        &no-opacity {
+            .ui-icon:not(.ui-opacity-half) { opacity: 1 !important; }
+        }
+
+        each(@icons-margin-sizes, {
+            @size: unit(@value);
+
+            &m-@{size}-l .ui-icon { margin-left: @value !important; }
+            &m-@{size}-r .ui-icon { margin-right: @value !important; }
+            &m-@{size}-v .ui-icon { margin-top: @value !important; margin-bottom: @value !important; }
+            &m-@{size}-h .ui-icon { margin-right: @value !important; margin-left: @value !important; }
+        });
+
+        each(@icon-sizes, { // do not merge
+            &@{key} .ui-icon:not([class*="ui-icon-"]) { ._icon-size(@value) !important; ._icon-weight(@value) !important; }
+        });
+
+        each(@icon-sizes, { // do not merge
+            @weight: extract(@icon-weights, @index);
+            &@{weight} .ui-icon:not([class*="ui-icon-"]) { ._icon-weight(@value) !important; }
+        });
+    }
+
+    &icon {
+        &-mirror- {
+            &v { transform: scaleY(-1); }
+            &h { transform: scaleX(-1); }
+        }
+
+        each(@icon-sizes, { // do not merge
+            &-@{key} { ._icon-size(@value) !important; ._icon-weight(@value) !important; }
+        });
+
+        each(@icon-sizes, { // do not merge
+            @weight: extract(@icon-weights, @index);
+            &-@{weight} { ._icon-weight(@value) !important; }
+        });
     }
 }
-
-.ui-svg- {
-    &f { fill: currentColor !important; } // fill
-    &l { fill: none !important; } // line
-    &sd { fill: currentColor !important; stroke: none !important; } // solid
-    &s { opacity: @icon-sub-opacity; } // sub
-    &fr { fill-rule: evenodd; } // fill-rule
-}
-
-each(@icon-sizes, { // do not merge
-    .ui-icon-@{key},.ui-icons-@{key} .ui-icon { ._icon-size(@value) !important; }
-    .ui-icon-@{key},.ui-icons-@{key} .ui-icon:not([class*="ui-icon-"]) { ._icon-weight(@value) !important; }
-});
-
-each(@icon-sizes, { // do not merge
-    @weight: extract(@icon-weights, @index);
-    .ui-icon-@{weight},.ui-icons-@{weight} .ui-icon:not([class*="ui-icon-"]) { ._icon-weight(@value) !important; }
-});
-
-.ui-icons-no-opacity {
-    .ui-icon:not(.ui-opacity-half) { opacity: 1 !important; }
-}
-
-each(@icons-margin-sizes, {
-    @size: unit(@value);
-
-    .ui-icons-m-@{size}-l .ui-icon { margin-left: @value !important; }
-    .ui-icons-m-@{size}-r .ui-icon { margin-right: @value !important; }
-    .ui-icons-m-@{size}-v .ui-icon { margin-top: @value !important; margin-bottom: @value !important; }
-    .ui-icons-m-@{size}-h .ui-icon { margin-right: @value !important; margin-left: @value !important; }
-});
