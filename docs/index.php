@@ -27,10 +27,6 @@
     <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
     <!--[if lt IE 10]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
 
-    <!-- import bootstrap for testing -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
     <!-- import CSS -->
     <link rel="stylesheet" href="../css/_import.css?v=<?php echo filemtime('../css/_import.css'); ?>"/>
 
@@ -53,7 +49,7 @@
     <script src="../js/textarea-counter.js?v=<?php echo filemtime('../js/textarea-counter.js'); ?>"></script>
 
     <script src="../js/card.js?v=<?php echo filemtime('../js/card.js'); ?>"></script>
-    <script src="../js/sticky-header.js?v=<?php echo filemtime('../js/sticky-header.js'); ?>"></script>
+    <script src="../js/header-sticky.js?v=<?php echo filemtime('../js/header-sticky.js'); ?>"></script>
 
     <script src="../js/sidebar.js?v=<?php echo filemtime('../js/sidebar.js'); ?>"></script>
     <script src="../js/modal.js?v=<?php echo filemtime('../js/modal.js'); ?>"></script>
@@ -93,7 +89,7 @@
 ?>
 
     <!-- header -->
-    <header class="ui-container ui-form-lg ui-theme-base ui-invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
+    <header class="ui-header-sticky ui-container ui-form-lg ui-theme-base ui-invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
         <div class="ui-row">
             <div class="ui-col-12 ui-p-15">
                 <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost ui-circle ui-icons-no-opacity ui-float-r ui-ease-btn">
@@ -127,7 +123,7 @@
     } else {
 ?>
     <!-- header -->
-    <header class="ui-container ui-form-lg ui-invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
+    <header class="ui-header-sticky ui-container ui-form-lg ui-invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout ui-visible" data-ui-classes="ui-shadow-lg">
         <div class="ui-row">
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-col-250 ui-col-xs-100 ui-p-15 ui-no-p-r">
@@ -217,14 +213,14 @@
 
                             <span class="ui-sp-15"></span>
 
-                            <div class="ui-form-lg ui-ease-1st-btn">
+                            <div class="ui-sm-align-l ui-form-lg ui-ease-1st-btn">
                                 <a href="?p=code" class="ui-btn ui-btn-ghost ui-btn-sm-fluid ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle">
                                     <svg class="ui-icon ui-m-5-r"><use href="#code"/></svg>
                                     Code
                                 </a>
                                 <a href="?p=classnames" class="ui-btn ui-btn-ghost ui-btn-sm-fluid ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle">
+                                    <svg class="ui-icon ui-m-5-r"><use href="#brackets-curly"/></svg>
                                     Classnames
-                                    <svg class="ui-icon ui-m-5-l"><use href="#brackets-curly"/></svg>
                                 </a>
                                 <a href="?p=icons" class="ui-btn ui-btn-ghost ui-btn-sm-fluid ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle">
                                     <svg class="ui-icon ui-m-5-r"><use href="#draw"/></svg>

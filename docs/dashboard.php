@@ -228,7 +228,7 @@
         <div class="ui-row">
 
             <!-- header: start -->
-            <header class="ui-col-12 ui-align-r ui-icons-no-opacity ui-shadow-sm ui-form-lg ui-ease-layout dashboard-menu-opened" data-ui-classes="ui-shadow-lg">
+            <header class="ui-header-sticky ui-col-12 ui-align-r ui-icons-no-opacity ui-shadow-sm ui-form-lg ui-ease-layout dashboard-menu-opened" data-ui-classes="ui-shadow-lg">
 
                 <div class="ui-align-c ui-float-l ui-ease-1st-btn">
                     <button class="dashboard-menu-show ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle ui-visible-lg ui-hidden" data-ui-tooltip title="Toggle Menu">
@@ -241,11 +241,11 @@
                         <svg class="ui-icon"><use href="#search"/></svg>
                     </button>
                     <div class="ui-dropdown ui-nav ui-ease-dropdown">
-                        <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-circle ui-hidden-sm">
+                        <button class="ui-btn ui-btn-ghost ui-color-black-25 ui-p-15-h ui-circle ui-hidden-sm">
                             My Jobs
                             <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                         </button>
-                        <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle ui-visible-sm">
+                        <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-p-10-h ui-circle ui-visible-sm">
                             <svg class="ui-icon"><use href="#angle-down"/></svg>
                         </button>
                         <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-2 ui-round ui-shadow-lg">

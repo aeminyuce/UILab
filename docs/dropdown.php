@@ -7,7 +7,7 @@
                 <div class="ui-row ui-p-30-b ui-block-2nd ui-theme-sub">
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
-                            <button class="ui-btn ui-circle ui-fill-dark-100">
+                            <button class="ui-btn ui-round ui-fill-dark-100">
                                 Dropdown (Long Listed)
                                 <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="#angle-down"/></svg>
                             </button>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-menu-hover ui-ease-dropdown">
-                            <button class="ui-btn ui-circle ui-fill-dark-100">
+                            <button class="ui-btn ui-round ui-fill-dark-100">
                                 Hover Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="#angle-down"/></svg>
                             </button>
@@ -54,7 +54,7 @@
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-menu-c ui-ease-dropdown">
-                            <button class="ui-btn ui-circle ui-fill-dark-100">
+                            <button class="ui-btn ui-round ui-fill-dark-100">
                                 Center Menu
                                 <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="#angle-down"/></svg>
                             </button>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
-                            <button class="ui-btn ui-circle ui-fill-dark-100">
+                            <button class="ui-btn ui-round ui-fill-dark-100">
                                 Left Menu
                                 <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="#angle-down"/></svg>
                             </button>
@@ -196,7 +196,7 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-text ui-fill-light-200">
+                            <button class="ui-btn ui-btn-ghost ui-round ui-border-dual ui-stroke ui-text ui-fill-light-200">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                             </button>
@@ -234,7 +234,7 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-text ui-fill-light-200">
+                            <button class="ui-btn ui-btn-ghost ui-round ui-border-dual ui-stroke ui-text ui-fill-light-200">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                             </button>
@@ -276,7 +276,7 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-text ui-fill-light-200">
+                            <button class="ui-btn ui-btn-ghost ui-round ui-border-dual ui-stroke ui-text ui-fill-light-200">
                                 List Example with Links
                                 <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                             </button>
@@ -308,7 +308,7 @@
                     <div class="ui-col-3 ui-col-sm-6">
 
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual ui-stroke ui-text ui-fill-light-200">
+                            <button class="ui-btn ui-btn-ghost ui-round ui-border-dual ui-stroke ui-text ui-fill-light-200">
                                 List Example with Buttons
                                 <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="#angle-down"/></svg>
                             </button>
@@ -503,7 +503,7 @@
                 <div class="ui-row ui-p-30-b ui-block-2nd ui-form-lg">
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual">
+                            <button class="ui-btn ui-btn-ghost ui-round ui-border-dual">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="#angle-down"/></svg>
                             </button>
@@ -543,7 +543,7 @@
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual">
+                            <button class="ui-btn ui-btn-ghost ui-round ui-border-dual">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="#angle-down"/></svg>
                             </button>
@@ -589,7 +589,7 @@
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
                         <div class="ui-dropdown ui-ease-dropdown">
-                            <button class="ui-btn ui-btn-ghost ui-circle ui-border-dual">
+                            <button class="ui-btn ui-btn-ghost ui-round ui-border-dual">
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="#angle-down"/></svg>
                             </button>

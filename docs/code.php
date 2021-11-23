@@ -316,10 +316,10 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="sticky header" value="../css/sticky-header">
+                                            <input type="checkbox" name="header sticky" value="../css/header-sticky">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Sticky Header
+                                        Header Sticky
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
@@ -696,10 +696,10 @@
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="sticky header js" value="../js/sticky-header">
+                                            <input type="checkbox" name="header sticky js" value="../js/header-sticky">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        Sticky Header
+                                        Header Sticky
                                     </label>
                                 </div>
 

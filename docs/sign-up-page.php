@@ -13,7 +13,7 @@
                     <svg class="ui-icon"><use href="#square"/></svg>
                     <svg class="ui-icon"><use href="#circle"/></svg>
                     <svg class="ui-icon"><use href="#plus-badge"/></svg>
-                    <svg class="ui-icon ui-icon-thin"><use href="#user-plus"/></svg>
+                    <svg class="ui-icon"><use href="#user-plus"/></svg>
                 </div>
 
                 <div class="ui-fixed ui-theme-green">

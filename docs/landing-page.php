@@ -5,7 +5,7 @@
 <script src="../js/custom/landing-page.js?v=<?php echo filemtime('../js/custom/landing-page.js'); ?>"></script>
 
 <!-- header: start -->
-<header class="ui-container ui-no-gutter ui-bg-white ui-invert-bg" data-ui-classes="ui-shadow-lg">
+<header class="ui-header-sticky ui-container ui-no-gutter ui-bg-white ui-invert-bg" data-ui-classes="ui-shadow-lg">
 
     <div class="ui-shadow-sm ui-theme-sub">
         <div class="ui-fixed ui-p-10-v ui-sm-no-p-v">

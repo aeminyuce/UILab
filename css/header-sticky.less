@@ -1,0 +1,8 @@
+// out: false
+/* header sticky */ @import (reference) 'ui.less';
+
+@sticky-header-z-index:                 89;
+
+.ui-header-sticky {
+    &.ui-sticky { position: fixed; top: 0; right: 0; left: 0; z-index: @sticky-header-z-index; }
+}

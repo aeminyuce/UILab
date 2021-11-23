@@ -51,7 +51,7 @@
                     <span class="ui-sp-30"></span>
 
                     <h5 class="ui-h5 ui-color-white-50 ui-p-15 ui-m-5-b">NEWS &amp; EVENTS</h5>
-                    <ul class="ui-list-unstyled ui-list-sp-15 ui-color-white-50 ui-font-16 ui-block-2nd ui-ease-2nd-btn">
+                    <ul class="ui-list-unstyled ui-list-sp-15 ui-color-white-50 ui-font-16 ui-align-l ui-block-2nd ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-btn-ghost ui-p-15-h ui-circle" href="#">
                                 <svg class="ui-icon"><use href="#news"/></svg>
@@ -81,7 +81,7 @@
 
                 <div class="ui-p-30 ui-no-p-b ui-md-no-p">
 
-                    <header class="ui-row ui-no-row-gap-t ui-sticky-md ui-form-lg" data-ui-classes="ui-shadow-lg">
+                    <header class="ui-header-sticky ui-sticky-md ui-row ui-no-row-gap-t ui-form-lg" data-ui-classes="ui-shadow-lg">
 
                         <div class="ui-col-6 ui-hidden-md ui-ease-1st-form">
                             <div class="ui-input ui-form-icon-all ui-m-15-b ui-circle ui-form-has-clear">

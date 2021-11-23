@@ -102,6 +102,7 @@
     .ui-dropdown-menu {
         ._bg-var(highlighted); overflow-x: hidden; overflow-y: auto; position: absolute; z-index: 1; transform-origin: top left;
 
+        &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
         .ui-mobile & { -webkit-overflow-scrolling: touch; }
     }
 
@@ -235,13 +236,13 @@
 
         .ui-dropdown-menu { background: none; max-height: inherit !important; overflow: inherit; position: static; box-shadow: none; transform-origin: top center !important; }
         ul.ui-dropdown-menu {
-            & > li {
-                &:not(:last-child) { border-bottom: 0; }
-            }
             &.ui-round {
                 & > li {
-                    &,a { border-radius: @round; }
+                    &,a { border-radius: (@round - (@round * 0.3333333333)); }
                 }
+            }
+            & > li {
+                &:not(:last-child) { border-bottom: 0; }
             }
         }
 

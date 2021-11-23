@@ -219,6 +219,9 @@ ui.classnames = {
                     } else if (title === 'carousel' || title === 'bring') {
                         title = 'carousel';
 
+                    } if (title === 'header' || title === 'sticky') {
+                        title = 'header sticky';
+
                     } else if (title === 'm') {
                         title = 'margin';
 
@@ -239,9 +242,6 @@ ui.classnames = {
 
                     } if (title === 'img') {
                         title = 'image';
-
-                    } if (title === 'sticky') {
-                        title = 'sticky header';
 
                     } if (title === 'imgupload') {
                         title = 'image upload';

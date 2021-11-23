@@ -79,28 +79,27 @@
 
         </div>
         <div class="login-container ui-col-lg-7 ui-col-6 ui-set-relative">
-
             <div class="login-holder ui-align-c ui-no-scroll ui-set-relative ui-fill-dark-100 ui-shadow-lg">
 
                 <div class="ui-full-w ui-set-absolute ui-set-c">
                     <h1 class="ui-h1 ui-hidden-md">Create your account</h1>
                     <p class="ui-font-18 ui-color-white-25">Sign up to create, discover and connect with the global community.</p>
+
                     <span class="ui-sp-30 ui-m-10-v"></span>
-                    <a href="?l=sign-up-page" class="login-btn ui-btn ui-btn-lg ui-circle ui-hover-scale ui-hover-shadow ui-ease-btn"><b>SIGN UP NOW</b></a>
+
+                    <a href="?l=sign-up-page" class="login-btn ui-btn ui-btn-lg ui-circle ui-hover-scale ui-hover-shadow ui-ease-btn">
+                        <b>SIGN UP NOW</b>
+                    </a>
                 </div>
 
-                <div class="login-icons ui-icons-bold">
-                    <svg class="ui-icon ui-hidden-sm"><use href="#plus"/></svg>
-                    <svg class="ui-icon"><use href="#plus"/></svg>
-                    <svg class="ui-icon"><use href="#plus"/></svg>
-                    <svg class="ui-icon"><use href="#plus"/></svg>
-                    <svg class="ui-icon"><use href="#plus"/></svg>
+                <div class="login-icons ui-icons-default">
+                    <svg class="ui-icon ui-hidden-sm"><use href="#plus-badge"/></svg>
+                    <svg class="ui-icon"><use href="#square"/></svg>
+                    <svg class="ui-icon"><use href="#circle"/></svg>
+                    <svg class="ui-icon"><use href="#star"/></svg>
                 </div>
 
             </div>
-
-            <svg class="ui-icon ui-color-white ui-visible-lg"><use href="#users"/></svg>
-
         </div>
     </div>
 
