@@ -3700,30 +3700,6 @@ button.ui-font-underline:hover {
 .ui-rtl {
   direction: rtl;
 }
-.ui-blockquote {
-  font-size: 16px;
-  padding: 10px 20px !important;
-  border-left: 5px solid hsl(0, 0%, 93%);
-}
-.ui-blockquote:not(:last-child) {
-  margin-bottom: 20px;
-}
-.ui-blockquote.ui-float-r {
-  text-align: right;
-  border-right: 5px solid hsl(0, 0%, 93%);
-  border-left: 0;
-}
-.ui-blockquote p:not(:last-child) {
-  margin-top: 0;
-}
-.ui-blockquote footer {
-  color: hsl(0, 0%, 47%);
-  font-size: 13px;
-  display: block;
-}
-.ui-blockquote footer:before {
-  content: "\2014\00A0";
-}
 .ui-hr {
   box-sizing: content-box;
   width: 100%;

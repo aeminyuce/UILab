@@ -12,7 +12,6 @@
 @calendar-days-passive-opacity:         .45;
 @calendar-icons-opacity:                .65;
 
-@calendar-caption-side:                 top;
 @calendar-caption-padding:              5px;
 
 @calendar-caption-buttons-padding:      10px;
@@ -158,10 +157,7 @@
     }
 
     caption {
-        box-sizing: border-box; height: (@calendar-caption-buttons-size + @calendar-caption-padding * 2); ._bg-var(calendar-highlighted-bg); padding: @calendar-caption-padding (@calendar-caption-buttons-size + @calendar-caption-padding * 2); caption-side: @calendar-caption-side;
-
-        & when (@calendar-caption-side = top) { margin-bottom: @calendar-caption-padding; }
-        & when (@calendar-caption-side = bottom) { margin-top: @calendar-caption-padding; }
+        box-sizing: border-box; height: (@calendar-caption-buttons-size + @calendar-caption-padding * 2); ._bg-var(calendar-highlighted-bg); padding: @calendar-caption-padding (@calendar-caption-buttons-size + @calendar-caption-padding * 2); caption-side: top;
 
         button { font-size: @font-16; white-space: nowrap; text-overflow: ellipsis; line-height: (@calendar-caption-buttons-size - @calendar-caption-buttons-padding * 2); max-width: @calendar-caption-buttons-max-width; height: @calendar-caption-buttons-size; background-color: @no-color; overflow: hidden; border: 0; }
         & > button {
@@ -342,7 +338,11 @@
     }
 
     &.ui-picker-t {
-        .ui-calendar { bottom: 100%; }
+        .ui-calendar {
+            bottom: 100%;
+
+            caption { caption-side: bottom; }
+        }
 
         &.ui-no-border {
             .ui-calendar { margin-top: @calendar-picker-space; }

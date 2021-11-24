@@ -150,18 +150,6 @@
                     <p class="ui-align-nowrap"><strong>ui-align-nowrap:</strong> Lorem ipsum dolor sit amet.</p>
                 </div>
 
-                <h3 class="ui-h3">Blockquote</h3>
-                <div class="ui-p-30-b">
-                    <blockquote class="ui-blockquote">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <footer>A. Emin YUCE</footer>
-                    </blockquote>
-                    <blockquote class="ui-blockquote ui-float-r">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <footer>A. Emin YUCE</footer>
-                    </blockquote>
-                </div>
-
                 <h3 class="ui-h3">Hr</h3>
                 <div class="ui-p-30-b">
                     Before hr tag.

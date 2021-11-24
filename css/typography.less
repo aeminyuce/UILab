@@ -16,9 +16,6 @@
 @code-color:                            hsl(345, 69%, 46%);
 @code-bg:                               hsl(343, 37%, 96%);
 
-@blockquote-border:                     hsl(0, 0%, 93%);
-@blockquote-footer-color:               hsl(0, 0%, 47%);
-
 ._global-vars () {
     --ui-black-25: @black-25;
     --ui-black-50: @black-50;
@@ -155,25 +152,6 @@
     &h6 { font-size: @font-12; }
 
     &rtl { direction: rtl; }
-
-    &blockquote {
-        font-size: @font-16; padding: 10px 20px !important; border-left: 5px solid @blockquote-border;
-
-        &:not(:last-child) { margin-bottom: @highlight-space; }
-
-        &.ui-float-r { text-align: right; border-right: 5px solid @blockquote-border; border-left: 0; }
-
-        p {
-            &:not(:last-child) { margin-top: 0; }
-        }
-
-        footer {
-            color: @blockquote-footer-color; font-size: @font-13; display: block;
-
-            &:before { content: "\2014\00A0"; }
-        }
-    }
-
     &hr { box-sizing: content-box; width: 100%; height: 1px; ._bg-var(border-color); margin-top: @highlight-space !important; margin-bottom: @highlight-space !important; border: 0; }
 
     &code,&pre { font-family: @code-font-family; }

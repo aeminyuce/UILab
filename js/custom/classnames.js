@@ -195,7 +195,7 @@ ui.classnames = {
                     } else if (['w','weather','days','graphs','reports','now'].indexOf(title) >= 0) {
                         title = 'weather';
 
-                    } else if (['code','dl','rtl','pre','hr','blockquote'].indexOf(title) >= 0) {
+                    } else if (['code','dl','rtl','pre','hr'].indexOf(title) >= 0) {
                         title = 'typography';
 
                     } else if (['theme','fill','stroke','text'].indexOf(title) >= 0) {
