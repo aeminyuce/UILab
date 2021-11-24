@@ -6,34 +6,37 @@
 
                 <h3 class="ui-h3">Showing Dialogues</h3>
                 <pre class="ui-pre ui-round">ui.alerts.dialog({ msg: '', success: '', error: '', custom: { value: 'button text', value: 'button text' }, callback });</pre>
-                <dl class="ui-dl-h ui-p-15 ui-round ui-border">
-                    <dt>msg</dt>
-                    <dd>
-                        Required. Your dialog example..<br>
-                        success<br>
-                        Optional. Set success button text.<br>
-                        Success button returns a value: <code class="ui-code">'success'</code>
-                    </dd>
 
-                    <dt>error</dt>
-                    <dd>
-                        Optional. Set error button text.<br>
-                        Error button returns a value: <code class="ui-code">'error'</code>
-                    </dd>
+                <div class="ui-p-15 ui-round ui-border">
+                    <dl class="ui-row ui-xs-fluid">
+                        <dt class="ui-col-4">msg</dt>
+                        <dd class="ui-col-8">
+                            Required. Your dialog example..<br>
+                            success<br>
+                            Optional. Set success button text.<br>
+                            Success button returns a value: <code class="ui-code">'success'</code>
+                        </dd>
 
-                    <dt>custom</dt>
-                    <dd>
-                        Optional. Set custom buttons.<br>
-                        Custom buttons returns defined own value.<br>
-                        Example usage: <code class="ui-code">{value: 'button text', value: 'button text'}</code>
-                    </dd>
+                        <dt class="ui-col-4">error</dt>
+                        <dd class="ui-col-8">
+                            Optional. Set error button text.<br>
+                            Error button returns a value: <code class="ui-code">'error'</code>
+                        </dd>
 
-                    <dt>callback</dt>
-                    <dd>
-                        Optional. Set a callback function when dialog returns a value.<br>
-                        Example usage: <code class="ui-code">function (value) {}</code>
-                    </dd>
-                </dl>
+                        <dt class="ui-col-4">custom</dt>
+                        <dd class="ui-col-8">
+                            Optional. Set custom buttons.<br>
+                            Custom buttons returns defined own value.<br>
+                            Example usage: <code class="ui-code">{value: 'button text', value: 'button text'}</code>
+                        </dd>
+
+                        <dt class="ui-col-4">callback</dt>
+                        <dd class="ui-col-8">
+                            Optional. Set a callback function when dialog returns a value.<br>
+                            Example usage: <code class="ui-code">function (value) {}</code>
+                        </dd>
+                    </dl>
+                </div>
 
             </div>
             <div class="ui-col-12 ui-p-30-b">
@@ -74,23 +77,26 @@
 
                 <h3 class="ui-h3">Showing Messages</h3>
                 <pre class="ui-pre ui-round">ui.alerts.message({ msg: '', pos: '', theme: '' });</pre>
-                <dl class="ui-dl-h ui-p-15 ui-round ui-border">
-                    <dt>msg</dt>
-                    <dd class="ui-m-15-b">Required. Your alert message.</dd>
 
-                    <dt>pos</dt>
-                    <dd class="ui-m-15-b">
-                        Optional. Set message position.<br>
-                        Default value: <code class="ui-code">'tr'</code><br>
-                        Available values: <code class="ui-code">'tr', 'tl', 'br', 'bl'</code>
-                    </dd>
+                <div class="ui-p-15 ui-round ui-border">
+                    <dl class="ui-row ui-xs-fluid">
+                        <dt class="ui-col-4">msg</dt>
+                        <dd class="ui-col-8">Required. Your alert message.</dd>
 
-                    <dt>theme</dt>
-                    <dd>
-                        Optional. Set message theme.<br>
-                        Available values: <code class="ui-code">'success', 'warning', 'danger'</code>
-                    </dd>
-                </dl>
+                        <dt class="ui-col-4">pos</dt>
+                        <dd class="ui-col-8">
+                            Optional. Set message position.<br>
+                            Default value: <code class="ui-code">'tr'</code><br>
+                            Available values: <code class="ui-code">'tr', 'tl', 'br', 'bl'</code>
+                        </dd>
+
+                        <dt class="ui-col-4">theme</dt>
+                        <dd class="ui-col-8">
+                            Optional. Set message theme.<br>
+                            Available values: <code class="ui-code">'success', 'warning', 'danger'</code>
+                        </dd>
+                    </dl>
+                </div>
 
             </div>
             <div class="ui-col-12 ui-no-p-b">

@@ -5,9 +5,6 @@
 @list-gap:                              (@highlight-space / 2);
 @list-gap-lg:                           (@list-gap * 3);
 
-@horizontal-list-side:                  170px;
-@horizontal-list-space:                 10px;
-
 @list-col-size:                         range(2, 6, 1); // start, end, step
 
 .ui-list- {
@@ -66,34 +63,6 @@
     & > li { break-inside: avoid; }
 }
 
-dl {
-    &:not(:last-child) { margin-bottom: @highlight-space; }
-
-    &:before,&:after { content: ""; display: table; }
-    &:after { clear: both; }
-}
-dd { margin-left: 0; }
-dt {
-    font-weight: @font-bold;
-
-    & + dd:not(:last-child) { margin-bottom: @horizontal-list-space; }
-}
-
-@media (@md-start) {
-    .ui-dl-h {
-        dt {
-            white-space: nowrap; text-overflow: ellipsis; width: @horizontal-list-side; float: left; overflow: hidden; clear: left; position: relative;
-
-            &:after { content: ":"; position: absolute; right: 0; }
-        }
-        dd { margin-left: (@horizontal-list-side + @highlight-space); }
-    }
-}
-@media (@sm-finish) {
-    .ui-dl-h {
-        dd { margin-bottom: @horizontal-list-space; }
-    }
-}
 @media (@sm-start) {
     each(@list-col-size, {
         .ui-list-col- {

@@ -183,29 +183,16 @@
                     </div>
                 </div>
 
-                <h3 class="ui-h3">Description Lists</h3>
+                <h3 class="ui-h3">Description Lists with Grid</h3>
                 <div class="ui-p-30-b">
-                    <dl>
-                        <dt>Description lists</dt>
-                        <dd>A description list is perfect for defining terms.</dd>
-                        <dt>Euismod</dt>
-                        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-                        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-                        <dt>Malesuada porta</dt>
-                        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-                    </dl>
-                </div>
-
-                <h3 class="ui-h3">Horizontal Description Lists</h3>
-                <div class="ui-p-30-b">
-                    <dl class="ui-dl-h">
-                        <dt>Description lists</dt>
-                        <dd>A description list is perfect for defining terms.</dd>
-                        <dt>Euismod</dt>
-                        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-                        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-                        <dt>Malesuada porta</dt>
-                        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                    <dl class="ui-row ui-row-gap-sm">
+                        <dt class="ui-col-4">Description lists</dt>
+                        <dd class="ui-col-8">A description list is perfect for defining terms.</dd>
+                        <dt class="ui-col-4">Euismod</dt>
+                        <dd class="ui-col-8">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                        <dd class="ui-col-8 ui-offset-4">Donec id elit non mi porta gravida at eget metus.</dd>
+                        <dt class="ui-col-4">Malesuada porta</dt>
+                        <dd class="ui-col-8">Etiam porta sem malesuada magna mollis euismod.</dd>
                     </dl>
                 </div>
 

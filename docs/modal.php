@@ -7,46 +7,48 @@
                 <h3 class="ui-h3">Open Modal</h3>
                 <pre class="ui-pre ui-round">ui.modal.open({ source, size, type, closable, callback });</pre>
 
-                <dl class="ui-dl-h ui-p-15 ui-round ui-border">
-                    <dt>source</dt>
-                    <dd>
-                        Required. Set the source of modal.<br>
-                        Available values: <code class="ui-code">id or classname</code>
-                    </dd>
+                <div class="ui-p-15 ui-round ui-border">
+                    <dl class="ui-row ui-xs-fluid">
+                        <dt class="ui-col-4">source</dt>
+                        <dd class="ui-col-8">
+                            Required. Set the source of modal.<br>
+                            Available values: <code class="ui-code">id or classname</code>
+                        </dd>
 
-                    <dt>size</dt>
-                    <dd>
-                        Optional. Set the size of modal.<br>
-                        Default value: <code class="ui-code">'md'</code><br>
-                        Available values: <code class="ui-code">'lg', 'md', 'sm', 'fullscreen', inline, {'width', 'height'}</code>
-                    </dd>
+                        <dt class="ui-col-4">size</dt>
+                        <dd class="ui-col-8">
+                            Optional. Set the size of modal.<br>
+                            Default value: <code class="ui-code">'md'</code><br>
+                            Available values: <code class="ui-code">'lg', 'md', 'sm', 'fullscreen', inline, {'width', 'height'}</code>
+                        </dd>
 
-                    <dt>type</dt>
-                    <dd>
-                        Optional. Set the different source type of modal.<br>
-                        Available values: <code class="ui-code">'ajax', 'iframe'</code>
-                    </dd>
+                        <dt class="ui-col-4">type</dt>
+                        <dd class="ui-col-8">
+                            Optional. Set the different source type of modal.<br>
+                            Available values: <code class="ui-code">'ajax', 'iframe'</code>
+                        </dd>
 
-                    <dt>bg</dt>
-                    <dd>
-                        Optional. Set the background visibility of modal.<br>
-                        Default value: <code class="ui-code">true</code><br>
-                        Available values: <code class="ui-code">true, false</code>
-                    </dd>
+                        <dt class="ui-col-4">bg</dt>
+                        <dd class="ui-col-8">
+                            Optional. Set the background visibility of modal.<br>
+                            Default value: <code class="ui-code">true</code><br>
+                            Available values: <code class="ui-code">true, false</code>
+                        </dd>
 
-                    <dt>closable</dt>
-                    <dd>
-                        Optional. Set the visibility of close controls of modal.<br>
-                        Default value: <code class="ui-code">true</code><br>
-                        Available values: <code class="ui-code">true, false</code>
-                    </dd>
+                        <dt class="ui-col-4">closable</dt>
+                        <dd class="ui-col-8">
+                            Optional. Set the visibility of close controls of modal.<br>
+                            Default value: <code class="ui-code">true</code><br>
+                            Available values: <code class="ui-code">true, false</code>
+                        </dd>
 
-                    <dt>callback</dt>
-                    <dd>
-                        Optional. Set a callback function after modal opens.<br>
-                        Example usage: <code class="ui-code">function () {}</code>
-                    </dd>
-                </dl>
+                        <dt class="ui-col-4">callback</dt>
+                        <dd class="ui-col-8">
+                            Optional. Set a callback function after modal opens.<br>
+                            Example usage: <code class="ui-code">function () {}</code>
+                        </dd>
+                    </dl>
+                </div>
 
             </div>
 
@@ -176,13 +178,15 @@
                 <h3 class="ui-h3">Close Modal</h3>
                 <pre class="ui-pre ui-round">ui.modal.close(callback);</pre>
 
-                <dl class="ui-dl-h ui-p-15 ui-round ui-border">
-                    <dt>callback</dt>
-                    <dd>
-                        Optional. Set a callback function after modal closes.<br>
-                        Example usage: <code class="ui-code">function () {}</code>
-                    </dd>
-                </dl>
+                <div class="ui-p-15 ui-round ui-border">
+                    <dl class="ui-row ui-xs-fluid">
+                        <dt class="ui-col-4">callback</dt>
+                        <dd class="ui-col-8">
+                            Optional. Set a callback function after modal closes.<br>
+                            Example usage: <code class="ui-code">function () {}</code>
+                        </dd>
+                    </dl>
+                </div>
 
             </div>
 

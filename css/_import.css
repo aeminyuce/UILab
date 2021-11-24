@@ -3883,50 +3883,6 @@ button.ui-font-underline:hover {
 [class*="ui-list-col-"] > li {
   break-inside: avoid;
 }
-dl:not(:last-child) {
-  margin-bottom: 20px;
-}
-dl:before,
-dl:after {
-  content: "";
-  display: table;
-}
-dl:after {
-  clear: both;
-}
-dd {
-  margin-left: 0;
-}
-dt {
-  font-weight: 700;
-}
-dt + dd:not(:last-child) {
-  margin-bottom: 10px;
-}
-@media (min-width: 768px) {
-  .ui-dl-h dt {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 170px;
-    float: left;
-    overflow: hidden;
-    clear: left;
-    position: relative;
-  }
-  .ui-dl-h dt:after {
-    content: ":";
-    position: absolute;
-    right: 0;
-  }
-  .ui-dl-h dd {
-    margin-left: 190px;
-  }
-}
-@media (max-width: 767px) {
-  .ui-dl-h dd {
-    margin-bottom: 10px;
-  }
-}
 @media (min-width: 481px) {
   .ui-list-col-2 > li {
     width: 50%;
