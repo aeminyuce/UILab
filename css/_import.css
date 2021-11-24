@@ -5895,12 +5895,13 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   margin-bottom: 1px;
 }
 .ui-autocomplete li {
+  box-sizing: border-box;
   white-space: nowrap;
   text-overflow: ellipsis;
   text-align: left;
-  line-height: 30px;
-  height: 30px;
-  padding: 5px 10px;
+  line-height: 22px;
+  height: 42px;
+  padding: 10px 15px;
   overflow: hidden;
 }
 .ui-desktop .ui-autocomplete li:hover,
