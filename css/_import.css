@@ -7820,7 +7820,6 @@ button.ui-dialog-custom {
   background-color: var(--ui-calendar-highlighted-bg);
   padding: 5px 58px;
   caption-side: top;
-  margin-bottom: 5px;
 }
 .ui-calendar caption button {
   font-size: 16px;
@@ -8128,6 +8127,9 @@ button.ui-dialog-custom {
 }
 .ui-input.ui-picker-t .ui-calendar {
   bottom: 100%;
+}
+.ui-input.ui-picker-t .ui-calendar caption {
+  caption-side: bottom;
 }
 .ui-input.ui-picker-t.ui-no-border .ui-calendar {
   margin-top: 1px;
