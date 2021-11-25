@@ -4772,9 +4772,9 @@ a.ui-btn:hover {
   transition-property: opacity;
   transition-duration: 0.15s;
 }
-.ui-ease-form textarea,
-.ui-ease-1st-form > * textarea,
-.ui-ease-2nd-form > * > * textarea {
+.ui-ease-form.ui-textarea-toggle textarea,
+.ui-ease-1st-form > *.ui-textarea-toggle textarea,
+.ui-ease-2nd-form > * > *.ui-textarea-toggle textarea {
   transition-property: height;
   transition-duration: 0.15s;
 }
@@ -4921,6 +4921,10 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   vertical-align: top;
   width: 100%;
   overflow: auto;
+  resize: vertical;
+}
+.ui-textarea textarea[disabled],
+.ui-textarea textarea[readonly] {
   resize: none;
 }
 .ui-textarea textarea:not([rows]) {
@@ -4946,6 +4950,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-textarea-toggle:not(.ui-form-focus) textarea {
   line-height: 22px;
   height: 40px;
+  resize: none;
 }
 .ui-textarea-toggle:not(.ui-form-focus).ui-border-dual textarea {
   line-height: 18px;

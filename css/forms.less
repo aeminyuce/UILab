@@ -16,6 +16,7 @@
 @select-opacity:                       .45;
 
 @textarea-default-size:                4em;
+@textarea-resize:                      true;
 
 @form-clear-icon-size:                 16px;
 
@@ -118,7 +119,10 @@
         .ui-form-state { transition-property: width, height, background-color, transform, opacity; transition-duration: @ease-default; }
 
         select { transition-property: opacity; transition-duration: @ease-default; }
-        textarea { transition-property: height; transition-duration: @ease-default; }
+
+        &.ui-textarea-toggle {
+            textarea { transition-property: height; transition-duration: @ease-default; }
+        }
 
         &.ui-file {
             input { transition-property: opacity; transition-duration: @ease-default; }
@@ -183,8 +187,12 @@ html:not(.ui-no-effects) {
 
     &textarea {
         textarea {
-            line-height: @line-height-readable; vertical-align: top; width: 100%; overflow: auto; resize: none;
+            line-height: @line-height-readable; vertical-align: top; width: 100%; overflow: auto;
 
+            & when (@textarea-resize = true) { resize: vertical; }
+            & when (@textarea-resize = false) { resize: none; }
+
+            &[disabled],&[readonly] { resize: none; }
             &:not([rows]) { height: @textarea-default-size; }
         }
     }
@@ -206,7 +214,8 @@ html:not(.ui-no-effects) {
 
     &textarea-toggle {
         &:not(.ui-form-focus) {
-            textarea { line-height: (@btn-default - @form-padding * 2); height: (@btn-default - 2); }
+            textarea { line-height: (@btn-default - @form-padding * 2); height: (@btn-default - 2); resize: none; }
+
             &.ui-border-dual {
                 textarea { line-height: (@btn-default - 2 * @border-dual - @form-padding * 2); height: (@btn-default - 2 * @border-dual); }
             }
