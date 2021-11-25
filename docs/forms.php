@@ -70,6 +70,16 @@
                         </div>
                         <p class="ui-form-hint ui-form-warning">Your message is here.</p>
                     </div>
+
+                    <div class="ui-col-3">
+                        <label class="ui-form-info">Color Picker</label>
+                    </div>
+                    <div class="ui-col-9">
+                        <div class="ui-input ui-form-color ui-round ui-border-dual ui-ease-form">
+                            <input type="color" value="#3d5cc2">
+                        </div>
+                    </div>
+
                     <div class="ui-col-3">
                         <label class="ui-form-info">Captcha</label>
                     </div>
@@ -100,6 +110,7 @@
 
                         </div>
                     </div>
+
                     <div class="ui-col-6">
                         <label class="ui-form-label">Full Name</label>
                         <div class="ui-input ui-border-dual ui-round ui-ease-form">
@@ -132,6 +143,7 @@
                             </div>
                             <p class="ui-form-hint ui-color-black-25">Form hint</p>
                         </div>
+
                         <div class="ui-col-3">
                             <label class="ui-form-info">Your Age</label>
                         </div>
@@ -147,6 +159,16 @@
                             </div>
                             <p class="ui-form-hint ui-color-black-25">Form hint</p>
                         </div>
+
+                        <div class="ui-col-3">
+                            <label class="ui-form-info">Color Picker</label>
+                        </div>
+                        <div class="ui-col-9">
+                            <div class="ui-input ui-form-color ui-round ui-border-dual ui-ease-form">
+                                <input type="color" value="#3d5cc2">
+                            </div>
+                        </div>
+
                         <div class="ui-col-3">
                             <label class="ui-form-info">Captcha</label>
                         </div>
@@ -177,9 +199,11 @@
 
                             </div>
                         </div>
+
                         <div class="ui-col-9 ui-offset-3">
                             <button type="reset" class="ui-btn ui-btn-xs-fluid ui-round ui-ease-btn">Reset Form</button>
                         </div>
+
                         <div class="ui-col-6">
                             <label class="ui-form-label">Full Name</label>
                             <div class="ui-input ui-border-dual ui-round ui-ease-form">

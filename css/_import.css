@@ -4830,7 +4830,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   line-height: normal;
   min-height: 42px;
 }
-.ui-input input,
+.ui-input input:not([type="color"]),
 .ui-select select,
 .ui-select-multi select,
 .ui-textarea textarea {
@@ -4852,14 +4852,14 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   -moz-appearance: none;
   appearance: none;
 }
-.ui-input input,
+.ui-input input:not([type="color"]),
 .ui-select select,
 .ui-textarea textarea {
   line-height: 18px;
   padding: 10px;
   border-radius: 0;
 }
-.ui-input input,
+.ui-input input:not([type="color"]),
 .ui-select select {
   height: 40px;
   overflow: hidden;
@@ -4937,12 +4937,12 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   font-family: 'Poppins', Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
 }
-.ui-no-border.ui-input input,
+.ui-no-border.ui-input input:not([type="color"]),
 .ui-no-border.ui-select select {
   line-height: 22px;
   height: 42px;
 }
-.ui-border-dual.ui-input input,
+.ui-border-dual.ui-input input:not([type="color"]),
 .ui-border-dual.ui-select select {
   line-height: 18px;
   height: 38px;
@@ -5286,6 +5286,25 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-required-msg:not(.ui-show) {
   display: none;
 }
+.ui-form-color {
+  width: 42px;
+  vertical-align: middle;
+  display: inline-block !important;
+}
+.ui-ie .ui-form-color {
+  width: 84px;
+  padding-left: 10px;
+}
+.ui-form-color.ui-round {
+  border-radius: 5.66666667px;
+}
+.ui-form-color input[type="color"] {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 0;
+  position: absolute;
+}
 .ui-form-light {
   border-color: hsla(0, 0%, 100%, 0.175) !important;
 }
@@ -5469,18 +5488,18 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-form-lg .ui-select {
   min-height: 48px;
 }
-.ui-form-lg .ui-input input {
+.ui-form-lg .ui-input input:not([type="color"]) {
   font-size: 16px;
   line-height: 28px;
   height: 48px;
   padding-right: 20px;
   padding-left: 20px;
 }
-.ui-form-lg .ui-input.ui-no-border input {
+.ui-form-lg .ui-input.ui-no-border input:not([type="color"]) {
   line-height: 26px;
   height: 48px;
 }
-.ui-form-lg .ui-input.ui-border-dual input {
+.ui-form-lg .ui-input.ui-border-dual input:not([type="color"]) {
   line-height: 24px;
   height: 44px;
 }
@@ -5526,6 +5545,39 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-form-lg [class*="ui-form-icon"]:not(.ui-form-icon-l) > input {
   padding-right: 60px !important;
 }
+.ui-form-lg .ui-form-color {
+  width: 48px;
+}
+.ui-ie .ui-form-lg .ui-form-color {
+  width: 96px;
+}
+.ui-form-lg .ui-form- .ui-file {
+  height: 48px;
+}
+.ui-form-lg .ui-form- .ui-file > i {
+  font-size: 16px;
+  line-height: 46px;
+}
+.ui-form-lg .ui-form- .ui-file .ui-btn {
+  line-height: 18px;
+}
+.ui-form-lg .ui-form- .ui-file .ui-btn .ui-icon {
+  width: 23px;
+  height: 23px;
+  stroke-width: 27px;
+}
+.ui-form-lg .ui-form- .ui-file.ui-no-border .ui-tn {
+  line-height: 20px;
+}
+.ui-form-lg .ui-form- .ui-file.ui-no-border > i {
+  line-height: 48px;
+}
+.ui-form-lg .ui-form- .ui-file.ui-border-dual .ui-btn {
+  line-height: 16px;
+}
+.ui-form-lg .ui-form- .ui-file.ui-border-dual > i {
+  line-height: 44px;
+}
 .ui-form-lg .ui-form-icon-l > .ui-icon {
   left: 20px;
 }
@@ -5543,33 +5595,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   width: 20px;
   height: 20px;
   stroke-width: 30px;
-}
-.ui-form-lg .ui-file {
-  height: 48px;
-}
-.ui-form-lg .ui-file > i {
-  font-size: 16px;
-  line-height: 46px;
-}
-.ui-form-lg .ui-file .ui-btn {
-  line-height: 18px;
-}
-.ui-form-lg .ui-file .ui-btn .ui-icon {
-  width: 23px;
-  height: 23px;
-  stroke-width: 27px;
-}
-.ui-form-lg .ui-file.ui-no-border .ui-tn {
-  line-height: 20px;
-}
-.ui-form-lg .ui-file.ui-no-border > i {
-  line-height: 48px;
-}
-.ui-form-lg .ui-file.ui-border-dual .ui-btn {
-  line-height: 16px;
-}
-.ui-form-lg .ui-file.ui-border-dual > i {
-  line-height: 44px;
 }
 .ui-form-error .ui-check,
 .ui-form-error .ui-radio,

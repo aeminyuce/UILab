@@ -152,10 +152,10 @@ html:not(.ui-no-effects) {
 
     &input,&select,.ui-mobile &select-multi { line-height: normal; min-height: @btn-default; }
 
-    &input input,&select select,&select-multi select,&textarea textarea { outline: 0; box-sizing: border-box; ._color-var(black); font-family: @font-family; font-size: @font-15; width: 100%; background-color: @no-color; border: 0; }
+    &input input:not([type="color"]),&select select,&select-multi select,&textarea textarea { outline: 0; box-sizing: border-box; ._color-var(black); font-family: @font-family; font-size: @font-15; width: 100%; background-color: @no-color; border: 0; }
     &input input,&select select,&select-multi select,&range { @no-appearance(); }
-    &input input,&select select,&textarea textarea { line-height: @form-line-height; padding: @form-padding; border-radius: 0; } // border radius fix for Chrome
-    &input input,&select select { height: (@btn-default - 2); overflow: hidden; }
+    &input input:not([type="color"]),&select select,&textarea textarea { line-height: @form-line-height; padding: @form-padding; border-radius: 0; } // border radius fix for Chrome
+    &input input:not([type="color"]),&select select { height: (@btn-default - 2); overflow: hidden; }
 
     &select {
         &:not(.ui-form-focus) {
@@ -206,10 +206,10 @@ html:not(.ui-no-effects) {
     }
 
     &no-border {
-        &.ui-input input,&.ui-select select { line-height: (@btn-default - @form-padding * 2); height: @btn-default; }
+        &.ui-input input:not([type="color"]),&.ui-select select { line-height: (@btn-default - @form-padding * 2); height: @btn-default; }
     }
     &border-dual {
-        &.ui-input input,&.ui-select select { line-height: (@btn-default - @form-padding * 2 - @border-dual * 2); height: (@btn-default - @border-dual * 2); }
+        &.ui-input input:not([type="color"]),&.ui-select select { line-height: (@btn-default - @form-padding * 2 - @border-dual * 2); height: (@btn-default - @border-dual * 2); }
     }
 
     &textarea-toggle {
@@ -375,6 +375,16 @@ html:not(.ui-no-effects) {
 }
 
 .ui-form- {
+
+    &color {
+        width: @btn-default; vertical-align: middle; display: inline-block !important;
+
+        .ui-ie & { width: (@btn-default * 2); padding-left: @form-padding; }
+
+        &.ui-round { border-radius: (@round - (@round * 0.3333333333) - 1); }
+        input[type="color"] { width: 100%; height: 100%; background: transparent; border: 0; position: absolute; }
+    }
+
     &light {
         border-color: @border-color-dark !important;
 
@@ -508,13 +518,13 @@ html:not(.ui-no-effects) {
         .ui-input,.ui-select { min-height: @btn-lg; }
 
         .ui-input {
-            input { font-size: @font-16; line-height: (@btn-lg - 2 * @form-padding); height: @btn-lg; padding-right: (@form-padding * 2); padding-left: (@form-padding * 2); }
+            input:not([type="color"]) { font-size: @font-16; line-height: (@btn-lg - 2 * @form-padding); height: @btn-lg; padding-right: (@form-padding * 2); padding-left: (@form-padding * 2); }
 
             &.ui-no-border {
-                input { line-height: (@btn-lg - 2 * @form-padding - 2); height: @btn-lg; }
+                input:not([type="color"]) { line-height: (@btn-lg - 2 * @form-padding - 2); height: @btn-lg; }
             }
             &.ui-border-dual {
-                input { line-height: (@btn-lg - 2 * @form-padding - @border-dual * 2); height: (@btn-lg - @border-dual * 2); }
+                input:not([type="color"]) { line-height: (@btn-lg - 2 * @form-padding - @border-dual * 2); height: (@btn-lg - @border-dual * 2); }
             }
         }
 
@@ -543,40 +553,51 @@ html:not(.ui-no-effects) {
             &:not(.ui-form-icon-l) > input { padding-right: (@icon-default-size + @form-padding * 4) !important; }
         }
 
-        .ui-form-icon-l {
-            & > .ui-icon { left: (@form-padding * 2); }
-            & > input { padding-left: (@icon-default-size + @form-padding * 4) !important; }
-        }
+        .ui-form- {
 
-        .ui-form-icon-all {
-            & > .ui-form-icon-l { left: (@form-padding * 2); }
-            & > input { padding-right: (@icon-default-size + @form-padding * 4) !important; padding-left: (@icon-default-size + @form-padding * 4) !important; }
-        }
+            &color {
+                width: @btn-lg;
 
-        .ui-form-clear {
-            .ui-icon { ._icon(@icon-default-size); }
-        }
-
-        .ui-file {
-            height: @btn-lg;
-
-            & > i { font-size: @font-16; line-height: (@btn-lg - 2); }
-
-            .ui-btn {
-                line-height: (@btn-lg - (@file-btn-padding-lg * 2 + 2));
-
-                .ui-icon { ._icon((@btn-lg-icon - 2)); }
+                .ui-ie & { width: (@btn-lg * 2); }
             }
 
-            &.ui-no-border {
-                .ui-tn { line-height: (@btn-lg - @file-btn-padding-lg * 2); }
-                & > i { line-height: @btn-lg; }
+            .ui-file {
+                height: @btn-lg;
+
+                & > i { font-size: @font-16; line-height: (@btn-lg - 2); }
+
+                .ui-btn {
+                    line-height: (@btn-lg - (@file-btn-padding-lg * 2 + 2));
+
+                    .ui-icon { ._icon((@btn-lg-icon - 2)); }
+                }
+
+                &.ui-no-border {
+                    .ui-tn { line-height: (@btn-lg - @file-btn-padding-lg * 2); }
+                    & > i { line-height: @btn-lg; }
+                }
+                &.ui-border-dual {
+                    .ui-btn { line-height: (@btn-lg - (@file-btn-padding-lg * 2 + @border-dual * 2)); }
+                    & > i { line-height: (@btn-lg - 4); }
+                }
             }
-            &.ui-border-dual {
-                .ui-btn { line-height: (@btn-lg - (@file-btn-padding-lg * 2 + @border-dual * 2)); }
-                & > i { line-height: (@btn-lg - 4); }
+
+            &icon-l {
+                & > .ui-icon { left: (@form-padding * 2); }
+                & > input { padding-left: (@icon-default-size + @form-padding * 4) !important; }
             }
+
+            &icon-all {
+                & > .ui-form-icon-l { left: (@form-padding * 2); }
+                & > input { padding-right: (@icon-default-size + @form-padding * 4) !important; padding-left: (@icon-default-size + @form-padding * 4) !important; }
+            }
+
+            &clear {
+                .ui-icon { ._icon(@icon-default-size); }
+            }
+
         }
+
     }
 
     &error {
