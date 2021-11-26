@@ -984,11 +984,29 @@
                         </li>
                         <li>
                             <label class="ui-label">
+                                <span class="ui-check ui-form-disabled ui-round ui-border-dual ui-ease-form">
+                                    <input type="checkbox" disabled>
+                                    <i class="ui-form-state"></i>
+                                </span>
+                                Disabled Checkbox
+                            </label>
+                        </li>
+                        <li>
+                            <label class="ui-label">
                                 <div class="ui-check ui-round ui-border-dual ui-ease-form">
                                     <input type="checkbox" class="ui-indeterminate">
                                     <i class="ui-form-state"></i>
                                 </div>
                                 Indeterminate
+                            </label>
+                        </li>
+                        <li>
+                            <label class="ui-label">
+                                <div class="ui-check ui-form-disabled ui-round ui-border-dual ui-ease-form">
+                                    <input type="checkbox" class="ui-indeterminate" disabled>
+                                    <i class="ui-form-state"></i>
+                                </div>
+                                Disabled Indeterminate
                             </label>
                         </li>
                     </ul>
@@ -1021,6 +1039,15 @@
                                 Radio3
                             </label>
                         </li>
+                        <li>
+                            <label class="ui-label">
+                                <span class="ui-radio ui-form-disabled ui-border-dual ui-ease-form">
+                                    <input type="radio" name="radiotest2" disabled>
+                                    <i class="ui-form-state"></i>
+                                </span>
+                                Disabled Radio4
+                            </label>
+                        </li>
                     </ul>
 
                     <span class="ui-sp-15"></span>
@@ -1041,16 +1068,16 @@
                                         <input type="checkbox" checked>
                                         <i class="ui-form-state ui-theme-sub ui-fill-dark-100"></i>
                                 </span>
-                                Switch with Themes
+                                Switch with Theme
                             </label>
                         </li>
                         <li>
                             <label class="ui-label">
-                                <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                        <input type="checkbox" checked>
-                                        <i class="ui-form-state ui-theme-base ui-fill-dark-100"></i>
+                                <span class="ui-switch ui-form-disabled ui-round ui-border-dual ui-ease-form">
+                                        <input type="checkbox" disabled>
+                                        <i class="ui-form-state ui-theme-base"></i>
                                 </span>
-                                Switch with Themes
+                                Disabled Switch
                             </label>
                         </li>
                         <li>
