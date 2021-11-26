@@ -4830,12 +4830,11 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   line-height: normal;
   min-height: 42px;
 }
-.ui-input input:not([type="color"]),
+.ui-input input,
 .ui-select select,
 .ui-select-multi select,
 .ui-textarea textarea {
   outline: 0;
-  box-sizing: border-box;
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
   font-family: 'Poppins', Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -4843,6 +4842,12 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   width: 100%;
   background-color: transparent;
   border: 0;
+}
+.ui-input input:not([type="color"]),
+.ui-select select,
+.ui-select-multi select,
+.ui-textarea textarea {
+  box-sizing: border-box;
 }
 .ui-input input,
 .ui-select select,
@@ -5287,22 +5292,15 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   display: none;
 }
 .ui-form-color {
-  width: 42px;
   vertical-align: middle;
+  width: 89px;
   display: inline-block !important;
 }
-.ui-ie .ui-form-color {
-  width: 84px;
-  padding-left: 10px;
-}
-.ui-form-color.ui-round {
-  border-radius: 5.66666667px;
-}
 .ui-form-color input[type="color"] {
-  width: 100%;
+  text-align: center;
   height: 100%;
-  background: transparent;
-  border: 0;
+  padding: 5px;
+  overflow: hidden;
   position: absolute;
 }
 .ui-form-light {
@@ -5546,10 +5544,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   padding-right: 60px !important;
 }
 .ui-form-lg .ui-form-color {
-  width: 48px;
-}
-.ui-ie .ui-form-lg .ui-form-color {
-  width: 96px;
+  width: 111px;
 }
 .ui-form-lg .ui-form- .ui-file {
   height: 48px;
