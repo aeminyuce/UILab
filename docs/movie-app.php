@@ -431,7 +431,7 @@
             <div class="ui-col-static ui-no-fluid">
                 <div class="ui-row ui-no-row-gap-h">
                     <div class="ui-col-12 ui-ease-1st-form">
-                        <div class="ui-input ui-form-icon ui-form-has-clear ui-round-l ui-no-border ui-shadow-in-sm ui-theme-gray ui-fill-light-300 ui-ease-form">
+                        <div class="ui-input ui-form-has-clear ui-form-icon ui-round-l ui-no-border ui-shadow-in-sm ui-theme-gray ui-fill-light-300 ui-ease-form">
                             <button type="button" class="ui-form-clear">
                                 <svg class="ui-icon"><use href="#remove"/></svg>
                             </button>

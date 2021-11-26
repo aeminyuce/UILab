@@ -50,11 +50,6 @@
 @form-error-bg:                        fade(@red, 10%);
 @form-warning-bg:                      fade(@yellow, 10%);
 
-@placeholder-color:                    fade(@black, 40%);
-@placeholder-focus-color:              fade(@black, 23%);
-@placeholder-color-dark:               fade(@white, 40%);
-@placeholder-focus-color-dark:         fade(@white, 23%);
-
 @form-custom-state-size:               14px;
 @indeterminate-state-size:             4px;
 @switch-size:                          44px;
@@ -82,9 +77,6 @@
     --ui-range-track-bg: @range-track-bg;
     --ui-range-track-hover-bg: @range-track-hover-bg;
 
-    --ui-placeholder-color: @placeholder-color;
-    --ui-placeholder-focus-color: @placeholder-focus-color;
-
     --ui-check-bg: @check-bg;
     --ui-switch-bg: @switch-bg;
 
@@ -102,9 +94,6 @@
     --ui-range-thumb-color: @range-thumb-color-dark;
     --ui-range-track-bg: @range-track-bg-dark;
     --ui-range-track-hover-bg: @range-track-hover-bg-dark;
-
-    --ui-placeholder-color: @placeholder-color-dark;
-    --ui-placeholder-focus-color: @placeholder-focus-color-dark;
 
     --ui-check-bg: @check-bg-dark;
     --ui-switch-bg: @switch-bg-dark;
@@ -152,13 +141,13 @@ html:not(.ui-no-effects) {
         &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
     }
 
-    &input,&select,.ui-mobile &select-multi { line-height: normal; min-height: @btn-default; }
+    &input input,&select select,&select-multi select,&textarea textarea { outline: 0; box-sizing: border-box; ._color-var(black); font-family: @font-family; font-size: @font-15; width: 100%; background-color: @no-color; border: 0; }
+    &input input:not([type="color"]),&select select,&textarea textarea { line-height: @form-line-height; padding: @form-padding; border-radius: 0; }
 
-    &input input,&select select,&select-multi select,&textarea textarea { outline: 0; ._color-var(black); font-family: @font-family; font-size: @font-15; width: 100%; background-color: @no-color; border: 0; }
-    &input input:not([type="color"]),&select select,&select-multi select,&textarea textarea { box-sizing: border-box; }
     &input input,&select select,&select-multi select,&range { @no-appearance(); }
-    &input input:not([type="color"]),&select select,&textarea textarea { line-height: @form-line-height; padding: @form-padding; border-radius: 0; } // border radius fix for Chrome
+
     &input input:not([type="color"]),&select select { height: (@btn-default - 2); overflow: hidden; }
+    &input,&select,.ui-mobile &select-multi { line-height: normal; min-height: @btn-default; }
 
     &select {
         &:not(.ui-form-focus) {
@@ -201,10 +190,18 @@ html:not(.ui-no-effects) {
     }
 
     &chrome {
-        .ui-input input:-webkit-autofill {
-            -webkit-background-clip: text; // removes autofill bg
+        .ui-input {
+            input {
+                &:-webkit-autofill {
+                    -webkit-background-clip: text; // removes autofill bg
 
-            &::first-line { font-family: @font-family; font-size: @font-size; }
+                    &::first-line { font-family: @font-family; font-size: @font-size; }
+                }
+
+                &[list]::-webkit-calendar-picker-indicator { // removes only data list hover arrow
+                    display: none !important;
+                }
+            }
         }
     }
 
@@ -378,11 +375,10 @@ html:not(.ui-no-effects) {
 }
 
 .ui-form- {
-
     &color {
         vertical-align: middle; width: ((@btn-default * 2) + @form-color-padding); display: inline-block !important;
 
-        input[type="color"] { text-align: center; height: 100%; padding: @form-color-padding; overflow: hidden; position: absolute; }
+        input[type="color"] { text-align: center; line-height: inherit; height: 100%; padding: @form-color-padding; border-radius: 0; position: absolute; }
     }
 
     &light {
@@ -627,23 +623,6 @@ html:not(.ui-no-effects) {
     }
 }
 
-::placeholder {
-    ._color-var(placeholder-color);
-
-    .ui-form-focus > & { ._color-var(placeholder-focus-color); }
-    .ui-form-light > & { color: @placeholder-color-dark; }
-    .ui-form-light.ui-form-focus > & { color: @placeholder-focus-color-dark; }
-
-}
-::-ms-input-placeholder {
-    ._color-var(placeholder-color);
-
-    .ui-form-focus > & { ._color-var(placeholder-focus-color); }
-    .ui-form-light > & { color: @placeholder-color-dark; }
-    .ui-form-light.ui-form-focus > & { color: @placeholder-focus-color-dark; }
-}
-::-moz-placeholder { opacity: 1; }
-
 & when (@dark-mode = true) {
     & when (@dark-mode-auto-switcher = true) {
         @media (prefers-color-scheme: light) {
@@ -654,6 +633,10 @@ html:not(.ui-no-effects) {
         @media (prefers-color-scheme: dark) {
             .ui-chrome {
                 .ui-input input:-webkit-autofill { -webkit-text-fill-color: @white !important; }
+            }
+
+            .ui-input {
+                input::-webkit-calendar-picker-indicator { filter: invert(1); }
             }
         }
     }
@@ -666,6 +649,10 @@ html:not(.ui-no-effects) {
         [data-ui-mode="dark"] {
             &.ui-chrome {
                 .ui-input input:-webkit-autofill { -webkit-text-fill-color: @white !important; }
+            }
+
+            .ui-input {
+                input::-webkit-calendar-picker-indicator { filter: invert(1); }
             }
         }
     }

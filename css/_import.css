@@ -26,8 +26,6 @@
   --ui-range-thumb-color: hsl(220, 3%, 57%);
   --ui-range-track-bg: hsla(0, 0%, 0%, 0.08);
   --ui-range-track-hover-bg: hsla(0, 0%, 0%, 0.15);
-  --ui-placeholder-color: hsla(0, 0%, 0%, 0.4);
-  --ui-placeholder-focus-color: hsla(0, 0%, 0%, 0.23);
   --ui-check-bg: hsla(0, 0%, 0%, 0.65);
   --ui-switch-bg: hsla(0, 0%, 0%, 0.15);
   --ui-form-disabled-bg: hsla(0, 0%, 0%, 0.075);
@@ -98,8 +96,6 @@
   --ui-range-thumb-color: hsl(219, 7%, 40%);
   --ui-range-track-bg: hsla(0, 0%, 100%, 0.08);
   --ui-range-track-hover-bg: hsla(0, 0%, 100%, 0.15);
-  --ui-placeholder-color: hsla(0, 0%, 100%, 0.4);
-  --ui-placeholder-focus-color: hsla(0, 0%, 100%, 0.23);
   --ui-check-bg: hsla(0, 0%, 100%, 0.65);
   --ui-switch-bg: hsla(0, 0%, 100%, 0.15);
   --ui-form-disabled-bg: hsla(0, 0%, 100%, 0.075);
@@ -4824,17 +4820,12 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-textarea.ui-round {
   border-radius: 6.66666667px;
 }
-.ui-input,
-.ui-select,
-.ui-mobile .ui-select-multi {
-  line-height: normal;
-  min-height: 42px;
-}
 .ui-input input,
 .ui-select select,
 .ui-select-multi select,
 .ui-textarea textarea {
   outline: 0;
+  box-sizing: border-box;
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
   font-family: 'Poppins', Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -4845,9 +4836,10 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 }
 .ui-input input:not([type="color"]),
 .ui-select select,
-.ui-select-multi select,
 .ui-textarea textarea {
-  box-sizing: border-box;
+  line-height: 18px;
+  padding: 10px;
+  border-radius: 0;
 }
 .ui-input input,
 .ui-select select,
@@ -4858,16 +4850,15 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   appearance: none;
 }
 .ui-input input:not([type="color"]),
-.ui-select select,
-.ui-textarea textarea {
-  line-height: 18px;
-  padding: 10px;
-  border-radius: 0;
-}
-.ui-input input:not([type="color"]),
 .ui-select select {
   height: 40px;
   overflow: hidden;
+}
+.ui-input,
+.ui-select,
+.ui-mobile .ui-select-multi {
+  line-height: normal;
+  min-height: 42px;
 }
 .ui-select:not(.ui-form-focus) select {
   opacity: 0.45;
@@ -4941,6 +4932,9 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-chrome .ui-input input:-webkit-autofill::first-line {
   font-family: 'Poppins', Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
+}
+.ui-chrome .ui-input input[list]::-webkit-calendar-picker-indicator {
+  display: none !important;
 }
 .ui-no-border.ui-input input:not([type="color"]),
 .ui-no-border.ui-select select {
@@ -5298,9 +5292,10 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 }
 .ui-form-color input[type="color"] {
   text-align: center;
+  line-height: inherit;
   height: 100%;
   padding: 5px;
-  overflow: hidden;
+  border-radius: 0;
   position: absolute;
 }
 .ui-form-light {
@@ -5646,42 +5641,14 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 [class*="ui-form-icon"] > button:hover .ui-icon {
   opacity: 1;
 }
-::placeholder {
-  color: hsla(0, 0%, 0%, 0.4);
-  color: var(--ui-placeholder-color);
-}
-.ui-form-focus > ::placeholder {
-  color: hsla(0, 0%, 0%, 0.23);
-  color: var(--ui-placeholder-focus-color);
-}
-.ui-form-light > ::placeholder {
-  color: hsla(0, 0%, 100%, 0.4);
-}
-.ui-form-light.ui-form-focus > ::placeholder {
-  color: hsla(0, 0%, 100%, 0.23);
-}
-::-ms-input-placeholder {
-  color: hsla(0, 0%, 0%, 0.4);
-  color: var(--ui-placeholder-color);
-}
-.ui-form-focus > ::-ms-input-placeholder {
-  color: hsla(0, 0%, 0%, 0.23);
-  color: var(--ui-placeholder-focus-color);
-}
-.ui-form-light > ::-ms-input-placeholder {
-  color: hsla(0, 0%, 100%, 0.4);
-}
-.ui-form-light.ui-form-focus > ::-ms-input-placeholder {
-  color: hsla(0, 0%, 100%, 0.23);
-}
-::-moz-placeholder {
-  opacity: 1;
-}
 [data-ui-mode="light"].ui-chrome .ui-input input:-webkit-autofill {
   -webkit-text-fill-color: hsl(0, 0%, 0%) !important;
 }
 [data-ui-mode="dark"].ui-chrome .ui-input input:-webkit-autofill {
   -webkit-text-fill-color: hsl(0, 0%, 100%) !important;
+}
+[data-ui-mode="dark"] .ui-input input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
 }
 @media (min-width: 960px) {
   .ui-form-info {
@@ -7117,14 +7084,8 @@ html:not(.ui-ie) .ui-steps-bar li {
 .ui-modal-win.ui-modal-no-bg .ui-select-multi select,
 .ui-modal-win.ui-modal-no-bg .ui-textarea textarea,
 .ui-modal-win.ui-modal-no-bg .ui-input .ui-icon,
-.ui-modal-win.ui-modal-no-bg .uiselect .ui-icon {
-  color: hsl(0, 0%, 100%);
-}
-.ui-modal-win.ui-modal-no-bg ::placeholder {
-  color: hsla(0, 0%, 100%, 0.4);
-}
-.ui-modal-win.ui-modal-no-bg ::-ms-input-placeholder {
-  color: hsla(0, 0%, 100%, 0.4);
+.ui-modal-win.ui-modal-no-bg .ui-select .ui-icon {
+  color: hsl(0, 0%, 100%) !important;
 }
 .ui-modal-win.ui-modal-no-bg .ui-modal-content {
   background: none !important;
