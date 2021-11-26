@@ -633,34 +633,42 @@
 
                 <h3 class="ui-h3">Select Forms</h3>
                 <div class="ui-p-30-b">
-                    <div class="ui-row">
-                        <div class="ui-col-6">
-                            <div class="ui-select ui-round ui-border-dual ui-ease-form">
-                                <svg class="ui-icon"><use href="#angle-down"/></svg>
-                                <select>
-                                    <option value="">Select</option>
-                                    <option>Value 1</option>
-                                    <option>Value 2</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="ui-col-6">
-                            <div class="ui-select ui-round ui-border-dual ui-ease-form">
-                                <svg class="ui-icon"><use href="#angle-down"/></svg>
-                                <select>
-                                    <optgroup label="Title">
-                                        <option value="">Select with groups</option>
-                                        <option>Value 1</option>
-                                        <option>Value 2</option>
-                                    </optgroup>
-                                    <optgroup label="Title">
-                                        <option>Value 3</option>
-                                        <option>Value 4</option>
-                                        <option>Value 5</option>
-                                    </optgroup>
-                                </select>
-                            </div>
-                        </div>
+                    <div class="ui-select ui-m-10-b ui-round ui-border-dual ui-ease-form ui-form-inline">
+                        <svg class="ui-icon"><use href="#angle-down"/></svg>
+                        <select>
+                            <option value="">Select</option>
+                            <option>Value 1</option>
+                            <option>Value 2</option>
+                        </select>
+                    </div>
+
+                    <span class="ui-clearfix"></span>
+
+                    <div class="ui-select ui-m-10-b ui-round ui-border-dual ui-ease-form ui-form-inline">
+                        <svg class="ui-icon"><use href="#angle-down"/></svg>
+                        <select>
+                            <optgroup label="Title">
+                                <option value="">Select with groups</option>
+                                <option>Value 1</option>
+                                <option>Value 2</option>
+                            </optgroup>
+                            <optgroup label="Title">
+                                <option>Value 3</option>
+                                <option>Value 4</option>
+                                <option>Value 5</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <span class="ui-clearfix"></span>
+
+                    <div class="ui-select ui-form-disabled ui-m-10-b ui-round ui-border-dual ui-ease-form ui-form-inline">
+                        <svg class="ui-icon"><use href="#angle-down"/></svg>
+                        <select disabled>
+                            <option value="">Disabled Select</option>
+                            <option>Value 1</option>
+                            <option>Value 2</option>
+                        </select>
                     </div>
 
                     <div class="ui-select-multi ui-m-10-b ui-round ui-border-dual ui-ease-form">
