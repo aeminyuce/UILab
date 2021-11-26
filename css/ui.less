@@ -396,21 +396,44 @@ body {
     from { background-position: 40px 0; }
     to { background-position: 0 0; }
 }
+@keyframes ui-bounce-x {
+    from { transform: translateX(0); }
+    25% { transform: translateX(-12%); }
+    75% { transform: translateX(12%); }
+    100% { transform: translateX(0); }
+}
+@keyframes ui-bounce-y {
+    from { transform: translateY(0); }
+    40% { transform: translateY(-12%); }
+    80% { transform: translateY(12%); }
+    100% { transform: translateY(0); }
+}
+@keyframes ui-bounce-z {
+    from { transform: scale(1); }
+    40% { transform: scale(.9); }
+    80% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
 
 [class*="ui-ease-"],
 [class*="ui-ease-1st-"] > *,
 [class*="ui-ease-2nd-"] > * > * { transition-duration: @ease-default; transition-timing-function: ease-out; }
 
-.ui-animate {
-    &-spin { animation: ui-spin 1.15s linear infinite; }
-    &-progress { animation: ui-progress 3s linear infinite; }
-}
+.ui- {
+    &animate- {
+        &spin { animation: ui-spin 1.15s linear infinite; }
+        &progress { animation: ui-progress 3s linear infinite; }
+        &bounce-x { animation: ui-bounce-x 1.3s linear infinite; }
+        &bounce-y { animation: ui-bounce-y 1.15s linear infinite; }
+        &bounce-z { animation: ui-bounce-z 1s linear infinite; }
+    }
 
-.ui-no-effects {
-    &,&:before,&:after,*,*:before,*:after { transition-property: none !important; animation: none !important; }
-}
-.ui-pause-effects {
-    &,&:before,&:after,*,*:before,*:after { transition-property: none !important; animation-play-state: paused !important; }
+    &no-effects {
+        &,&:before,&:after,*,*:before,*:after { transition-property: none !important; animation: none !important; }
+    }
+    &pause-effects {
+        &,&:before,&:after,*,*:before,*:after { transition-property: none !important; animation-play-state: paused !important; }
+    }
 }
 
 .ui-ease- {

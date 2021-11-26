@@ -64,7 +64,7 @@
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
                             <div class="ui-col-48 ui-align-c ui-p-4-v">
-                                <svg class="ui-icon ui-icon-xl"><use href="#info-circle"/></svg>
+                                <svg class="ui-icon ui-icon-xl ui-animate-bounce-z"><use href="#info-circle"/></svg>
                             </div>
                             <div class="ui-row">
                                 <div class="ui-col-12 ui-sm-align-c ui-font-16">
@@ -86,7 +86,7 @@
                             </button>
                                 <div class="ui-col-static ui-sm-fluid">
                                     <div class="ui-col-48 ui-p-4-v ui-align-c">
-                                        <svg class="ui-icon ui-icon-xl"><use href="#info-circle"/></svg>
+                                        <svg class="ui-icon ui-icon-xl ui-animate-bounce-y"><use href="#info-circle"/></svg>
                                     </div>
                                     <div class="ui-row">
                                         <div class="ui-col-12 ui-sm-align-c ui-font-16">
@@ -106,7 +106,7 @@
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
                             <div class="ui-col-48 ui-align-c ui-p-4-v">
-                                <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xl ui-animate-bounce-x"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="ui-row">
                                 <div class="ui-col-12 ui-sm-align-c ui-font-16">
@@ -122,7 +122,7 @@
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
                             <div class="ui-col-48 ui-align-c ui-p-4-v">
-                                <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xl ui-animate-bounce-y"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
                                 <div class="ui-col-12 ui-sm-align-c ui-font-16">
@@ -138,7 +138,7 @@
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
                             <div class="ui-col-48 ui-align-c ui-p-4-v">
-                                <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xl ui-animate-bounce-z"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="ui-row">
                                 <div class="ui-col-12 ui-sm-align-c ui-font-16">
@@ -154,7 +154,7 @@
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
                             <div class="ui-col-48 ui-align-c ui-p-4-v">
-                                <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xl ui-animate-bounce-x"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
                                 <div class="ui-col-12 ui-sm-align-c ui-font-16">
@@ -170,7 +170,7 @@
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
                             <div class="ui-col-48 ui-align-c ui-p-4-v">
-                                <svg class="ui-icon ui-icon-xl"><use href="#alert-triangle-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xl ui-animate-bounce-y"><use href="#alert-triangle-fill"/></svg>
                             </div>
                             <div class="ui-row">
                                 <div class="ui-col-12 ui-sm-align-c ui-font-16">
@@ -186,7 +186,7 @@
                         </button>
                         <div class="ui-col-static ui-sm-fluid">
                             <div class="ui-col-48 ui-align-c ui-p-4-v">
-                                <svg class="ui-icon ui-icon-xl"><use href="#question-circle-fill"/></svg>
+                                <svg class="ui-icon ui-icon-xl ui-animate-bounce-z"><use href="#question-circle-fill"/></svg>
                             </div>
                             <div class="ui-row">
                                 <div class="ui-col-12 ui-sm-align-c ui-font-16">
