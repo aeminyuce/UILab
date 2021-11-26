@@ -642,7 +642,14 @@
                         </select>
                     </div>
 
-                    <span class="ui-clearfix"></span>
+                    <div class="ui-select ui-form-disabled ui-m-10-b ui-round ui-border-dual ui-ease-form ui-form-inline">
+                        <svg class="ui-icon"><use href="#angle-down"/></svg>
+                        <select disabled>
+                            <option value="">Disabled Select</option>
+                            <option>Value 1</option>
+                            <option>Value 2</option>
+                        </select>
+                    </div>
 
                     <div class="ui-select ui-m-10-b ui-round ui-border-dual ui-ease-form ui-form-inline">
                         <svg class="ui-icon"><use href="#angle-down"/></svg>
@@ -662,42 +669,39 @@
 
                     <span class="ui-clearfix"></span>
 
-                    <div class="ui-select ui-form-disabled ui-m-10-b ui-round ui-border-dual ui-ease-form ui-form-inline">
-                        <svg class="ui-icon"><use href="#angle-down"/></svg>
-                        <select disabled>
-                            <option value="">Disabled Select</option>
-                            <option>Value 1</option>
-                            <option>Value 2</option>
-                        </select>
-                    </div>
-
-                    <div class="ui-select-multi ui-m-10-b ui-round ui-border-dual ui-ease-form">
-                        <select multiple size="6">
-                            <option value="">Value 1</option>
-                            <option>Value 2</option>
-                            <option>Value 3</option>
-                            <option>Value 4</option>
-                            <option>Value 5</option>
-                            <option>Value 6</option>
-                            <option>Value 7</option>
-                            <option>Value 8</option>
-                            <option>Value 9</option>
-                            <option>Value 10</option>
-                        </select>
-                    </div>
-                    <div class="ui-select-multi ui-m-10-b ui-round ui-border-dual ui-ease-form">
-                        <select multiple size="6">
-                            <optgroup label="Title">
-                                <option value="">Select</option>
-                                <option>Value 1</option>
-                                <option>Value 2</option>
-                            </optgroup>
-                            <optgroup label="Title">
-                                <option>Value 3</option>
-                                <option>Value 4</option>
-                                <option>Value 5</option>
-                            </optgroup>
-                        </select>
+                    <div class="ui-row">
+                        <div class="ui-col-6">
+                            <div class="ui-select-multi ui-m-10-b ui-round ui-border-dual ui-ease-form">
+                                <select multiple size="6">
+                                    <option value="">Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                    <option>Value 4</option>
+                                    <option>Value 5</option>
+                                    <option>Value 6</option>
+                                    <option>Value 7</option>
+                                    <option>Value 8</option>
+                                    <option>Value 9</option>
+                                    <option>Value 10</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="ui-col-6">
+                            <div class="ui-select-multi ui-m-10-b ui-round ui-border-dual ui-ease-form">
+                                <select multiple size="6">
+                                    <optgroup label="Title">
+                                        <option value="">Select</option>
+                                        <option>Value 1</option>
+                                        <option>Value 2</option>
+                                    </optgroup>
+                                    <optgroup label="Title">
+                                        <option>Value 3</option>
+                                        <option>Value 4</option>
+                                        <option>Value 5</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
