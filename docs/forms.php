@@ -3,7 +3,7 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-p-30">
 
-                <h3 class="ui-h3">Forms in Grid System</h3>
+                <h3 class="ui-h3">Forms in Grid</h3>
                 <div class="ui-row ui-p-30-b">
                     <div class="ui-col-3">
                         <label class="ui-form-info">Label</label>
@@ -12,7 +12,7 @@
                         <div class="ui-input ui-round ui-border-dual ui-ease-form">
                             <input type="text" value="123456">
                         </div>
-                        <p class="ui-form-hint ui-color-black-25">Form hint</p>
+                        <p class="ui-form-hint ui-color-black-25">Form Hint</p>
                     </div>
 
                     <div class="ui-col-3">
@@ -72,11 +72,50 @@
                     </div>
 
                     <div class="ui-col-3">
-                        <label class="ui-form-info">Color Picker</label>
+                        <label class="ui-form-info">Contact Phone</label>
                     </div>
                     <div class="ui-col-9">
-                        <div class="ui-input ui-form-color ui-round ui-border-dual ui-ease-form">
-                            <input type="color" value="#3d5cc2">
+                        <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
+                            <svg class="ui-icon"><use href="#phone"/></svg>
+                            <input class="ui-number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
+                        </div>
+                    </div>
+
+                    <div class="ui-col-3">
+                        <label class="ui-form-info">Email Address</label>
+                    </div>
+                    <div class="ui-col-9">
+                        <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
+                            <svg class="ui-icon"><use href="#at"/></svg>
+                            <input type="email">
+                        </div>
+                    </div>
+
+                    <div class="ui-col-3">
+                        <label class="ui-form-info">Company Site</label>
+                    </div>
+                    <div class="ui-col-9">
+                        <div class="ui-form-holder ui-col-static ui-no-fluid">
+
+                            <div class="ui-row ui-no-row-gap">
+                                <div class="ui-col-12">
+                                    <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
+                                        <svg class="ui-icon"><use href="#browser"/></svg>
+                                        <input type="text" placeholder="Site name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui-col-200">
+                                <div class="ui-select ui-round ui-border-dual ui-ease-form">
+                                    <svg class="ui-icon"><use href="#angle-down"/></svg>
+                                    <select>
+                                        <option>.com</option>
+                                        <option>.net</option>
+                                        <option>.org</option>
+                                    </select>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -111,6 +150,21 @@
                         </div>
                     </div>
 
+                    <div class="ui-col-3">
+                        <label class="ui-form-info">Color Picker</label>
+                    </div>
+                    <div class="ui-col-9">
+                        <div class="ui-input ui-form-color ui-round ui-border-dual ui-ease-form">
+                            <input type="color" value="#118eee">
+                        </div>
+                        <div class="ui-input ui-form-color ui-round ui-border-dual ui-ease-form">
+                            <input type="color" value="#3d5cc2">
+                        </div>
+                        <div class="ui-input ui-form-color ui-round ui-border-dual ui-ease-form">
+                            <input type="text" value="#ff0000">
+                        </div>
+                    </div>
+
                     <div class="ui-col-6">
                         <label class="ui-form-label">Full Name</label>
                         <div class="ui-input ui-border-dual ui-round ui-ease-form">
@@ -141,7 +195,7 @@
                             <div class="ui-input ui-border-dual ui-round ui-ease-form">
                                 <input type="text" placeholder="Enter name">
                             </div>
-                            <p class="ui-form-hint ui-color-black-25">Form hint</p>
+                            <p class="ui-form-hint ui-color-black-25">Form Hint</p>
                         </div>
 
                         <div class="ui-col-3">
@@ -157,15 +211,54 @@
                                     <option>31 - 40</option>
                                 </select>
                             </div>
-                            <p class="ui-form-hint ui-color-black-25">Form hint</p>
+                            <p class="ui-form-hint ui-color-black-25">Form Hint</p>
                         </div>
 
                         <div class="ui-col-3">
-                            <label class="ui-form-info">Color Picker</label>
+                            <label class="ui-form-info">Contact Phone</label>
                         </div>
                         <div class="ui-col-9">
-                            <div class="ui-input ui-form-color ui-round ui-border-dual ui-ease-form">
-                                <input type="color" value="#3d5cc2">
+                            <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
+                                <svg class="ui-icon"><use href="#phone"/></svg>
+                                <input class="ui-number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
+                            </div>
+                        </div>
+
+                        <div class="ui-col-3">
+                            <label class="ui-form-info">Email Address</label>
+                        </div>
+                        <div class="ui-col-9">
+                            <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
+                                <svg class="ui-icon"><use href="#at"/></svg>
+                                <input type="email">
+                            </div>
+                        </div>
+
+                        <div class="ui-col-3">
+                            <label class="ui-form-info">Company Site</label>
+                        </div>
+                        <div class="ui-col-9">
+                            <div class="ui-form-holder ui-col-static ui-no-fluid">
+
+                                <div class="ui-row ui-no-row-gap">
+                                    <div class="ui-col-12">
+                                        <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
+                                            <svg class="ui-icon"><use href="#browser"/></svg>
+                                            <input type="text" placeholder="Site name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ui-col-200">
+                                    <div class="ui-select ui-round ui-border-dual ui-ease-form">
+                                        <svg class="ui-icon"><use href="#angle-down"/></svg>
+                                        <select>
+                                            <option>.com</option>
+                                            <option>.net</option>
+                                            <option>.org</option>
+                                        </select>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
@@ -197,6 +290,21 @@
                                     </div>
                                 </div>
 
+                            </div>
+                        </div>
+
+                        <div class="ui-col-3">
+                            <label class="ui-form-info">Color Picker</label>
+                        </div>
+                        <div class="ui-col-9">
+                            <div class="ui-input ui-form-color ui-round ui-border-dual ui-ease-form">
+                                <input type="color" value="#118eee">
+                            </div>
+                            <div class="ui-input ui-form-color ui-round ui-border-dual ui-ease-form">
+                                <input type="color" value="#3d5cc2">
+                            </div>
+                            <div class="ui-input ui-form-color ui-round ui-border-dual ui-ease-form">
+                                <input type="text" value="#ff0000">
                             </div>
                         </div>
 
