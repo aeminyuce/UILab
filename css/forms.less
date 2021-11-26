@@ -512,6 +512,7 @@ html:not(.ui-no-effects) {
 
     &lg {
         .ui-input,.ui-select { min-height: @btn-lg; }
+        .ui-form-color { width: ((@btn-lg * 2) + @form-padding + @form-color-padding); }
 
         .ui-input {
             input:not([type="color"]) { font-size: @font-16; line-height: (@btn-lg - 2 * @form-padding); height: @btn-lg; padding-right: (@form-padding * 2); padding-left: (@form-padding * 2); }
@@ -549,44 +550,39 @@ html:not(.ui-no-effects) {
             &:not(.ui-form-icon-l) > input { padding-right: (@icon-default-size + @form-padding * 4) !important; }
         }
 
-        .ui-form- {
-            &color { width: ((@btn-lg * 2) + @form-padding + @form-color-padding); }
+        .ui-file {
+            height: @btn-lg;
 
-            .ui-file {
-                height: @btn-lg;
+            & > i { font-size: @font-16; line-height: (@btn-lg - 2); }
 
-                & > i { font-size: @font-16; line-height: (@btn-lg - 2); }
+            .ui-btn {
+                line-height: (@btn-lg - (@file-btn-padding-lg * 2 + 2));
 
-                .ui-btn {
-                    line-height: (@btn-lg - (@file-btn-padding-lg * 2 + 2));
-
-                    .ui-icon { ._icon((@btn-lg-icon - 2)); }
-                }
-
-                &.ui-no-border {
-                    .ui-tn { line-height: (@btn-lg - @file-btn-padding-lg * 2); }
-                    & > i { line-height: @btn-lg; }
-                }
-                &.ui-border-dual {
-                    .ui-btn { line-height: (@btn-lg - (@file-btn-padding-lg * 2 + @border-dual * 2)); }
-                    & > i { line-height: (@btn-lg - 4); }
-                }
+                .ui-icon { ._icon((@btn-lg-icon - 2)); }
             }
 
-            &icon-l {
-                & > .ui-icon { left: (@form-padding * 2); }
-                & > input { padding-left: (@icon-default-size + @form-padding * 4) !important; }
+            &.ui-no-border {
+                .ui-tn { line-height: (@btn-lg - @file-btn-padding-lg * 2); }
+                & > i { line-height: @btn-lg; }
             }
-
-            &icon-all {
-                & > .ui-form-icon-l { left: (@form-padding * 2); }
-                & > input { padding-right: (@icon-default-size + @form-padding * 4) !important; padding-left: (@icon-default-size + @form-padding * 4) !important; }
+            &.ui-border-dual {
+                .ui-btn { line-height: (@btn-lg - (@file-btn-padding-lg * 2 + @border-dual * 2)); }
+                & > i { line-height: (@btn-lg - 4); }
             }
+        }
 
-            &clear {
-                .ui-icon { ._icon(@icon-default-size); }
-            }
+        &icon-l {
+            & > .ui-icon { left: (@form-padding * 2); }
+            & > input { padding-left: (@icon-default-size + @form-padding * 4) !important; }
+        }
 
+        &icon-all {
+            & > .ui-form-icon-l { left: (@form-padding * 2); }
+            & > input { padding-right: (@icon-default-size + @form-padding * 4) !important; padding-left: (@icon-default-size + @form-padding * 4) !important; }
+        }
+
+        &clear {
+            .ui-icon { ._icon(@icon-default-size); }
         }
 
     }
