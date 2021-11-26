@@ -4860,6 +4860,16 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   line-height: normal;
   min-height: 42px;
 }
+.ui-chrome .ui-input input:-webkit-autofill {
+  -webkit-background-clip: text;
+}
+.ui-chrome .ui-input input:-webkit-autofill::first-line {
+  font-family: 'Poppins', Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+}
+.ui-chrome .ui-input input[list]::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
 .ui-select:not(.ui-form-focus) select {
   opacity: 0.45;
 }
@@ -4925,16 +4935,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 }
 .ui-textarea textarea:not([rows]) {
   height: 4em;
-}
-.ui-chrome .ui-input input:-webkit-autofill {
-  -webkit-background-clip: text;
-}
-.ui-chrome .ui-input input:-webkit-autofill::first-line {
-  font-family: 'Poppins', Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 14px;
-}
-.ui-chrome .ui-input input[list]::-webkit-calendar-picker-indicator {
-  display: none !important;
 }
 .ui-no-border.ui-input input:not([type="color"]),
 .ui-no-border.ui-select select {

@@ -149,6 +149,22 @@ html:not(.ui-no-effects) {
     &input input:not([type="color"]),&select select { height: (@btn-default - 2); overflow: hidden; }
     &input,&select,.ui-mobile &select-multi { line-height: normal; min-height: @btn-default; }
 
+    &chrome {
+        .ui-input {
+            input {
+                &:-webkit-autofill {
+                    -webkit-background-clip: text; // removes autofill bg
+
+                    &::first-line { font-family: @font-family; font-size: @font-size; }
+                }
+
+                &[list]::-webkit-calendar-picker-indicator { // removes only data list hover arrow
+                    display: none !important;
+                }
+            }
+        }
+    }
+
     &select {
         &:not(.ui-form-focus) {
             select { opacity: @select-opacity; }
@@ -186,22 +202,6 @@ html:not(.ui-no-effects) {
 
             &[disabled],&[readonly] { resize: none; }
             &:not([rows]) { height: @textarea-default-size; }
-        }
-    }
-
-    &chrome {
-        .ui-input {
-            input {
-                &:-webkit-autofill {
-                    -webkit-background-clip: text; // removes autofill bg
-
-                    &::first-line { font-family: @font-family; font-size: @font-size; }
-                }
-
-                &[list]::-webkit-calendar-picker-indicator { // removes only data list hover arrow
-                    display: none !important;
-                }
-            }
         }
     }
 
