@@ -105,7 +105,7 @@
                                     <svg class="ui-icon"><use href="#user"/></svg>
                                 </button>
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-circle">
-                                    <span class="ui-notifier">
+                                    <span class="ui-notifier ui-circle">
                                         <svg class="ui-icon"><use href="#bell"/></svg>
                                     </span>
                                 </button>

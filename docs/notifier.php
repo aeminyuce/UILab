@@ -125,24 +125,24 @@
                     <div class="ui-row ui-row-gap-lg ui-ease-2nd-btn">
                         <div class="ui-col-6">
 
-                            <div class="ui-notifier">
+                            <div class="ui-notifier ui-circle">
                                 <img class="ui-avatar-sm ui-circle" src="img/profile-image.jpg" alt="">
                             </div>
 
-                            <div class="ui-notifier" data-ui-val="26">
+                            <div class="ui-notifier ui-circle" data-ui-val="26">
                                 <img class="ui-avatar-sm ui-circle" src="img/profile-image3.jpg" alt="">
                             </div>
 
                         </div>
                         <div class="ui-col-6">
 
-                            <div class="ui-notifier">
+                            <div class="ui-notifier ui-circle">
                                 <span class="ui-avatar-sm ui-circle ui-theme-orange ui-fill-dark-100">
                                     <svg class="ui-icon"><use href="#user"/></svg>
                                 </span>
                             </div>
 
-                            <div class="ui-notifier" data-ui-val="26">
+                            <div class="ui-notifier ui-circle" data-ui-val="26">
                                 <span class="ui-avatar-sm ui-circle ui-theme-sub ui-fill-dark-100">
                                     <span>EKY</span>
                                 </span>
@@ -150,24 +150,24 @@
                         </div>
                         <div class="ui-col-6">
 
-                            <div class="ui-notifier ui-notifier-lg">
+                            <div class="ui-notifier ui-notifier-lg ui-circle">
                                 <img class="ui-avatar ui-circle" src="img/profile-image.jpg" alt="">
                             </div>
 
-                            <div class="ui-notifier ui-notifier-lg" data-ui-val="26">
+                            <div class="ui-notifier ui-notifier-lg ui-circle" data-ui-val="26">
                                 <img class="ui-avatar ui-circle" src="img/profile-image3.jpg" alt="">
                             </div>
 
                         </div>
                         <div class="ui-col-6">
 
-                            <div class="ui-notifier ui-notifier-lg">
+                            <div class="ui-notifier ui-notifier-lg ui-circle">
                                 <span class="ui-avatar ui-circle ui-theme-orange ui-fill-dark-100">
                                     <svg class="ui-icon"><use href="#user"/></svg>
                                 </span>
                             </div>
 
-                            <div class="ui-notifier ui-notifier-lg" data-ui-val="26">
+                            <div class="ui-notifier ui-notifier-lg ui-circle" data-ui-val="26">
                                 <span class="ui-avatar ui-circle ui-theme-sub ui-fill-dark-100">
                                     <span>EKY</span>
                                 </span>
@@ -175,24 +175,24 @@
                         </div>
                         <div class="ui-col-6">
 
-                            <div class="ui-notifier ui-notifier-lg">
+                            <div class="ui-notifier ui-notifier-lg ui-circle">
                                 <img class="ui-avatar-lg ui-circle" src="img/profile-image.jpg" alt="">
                             </div>
 
-                            <div class="ui-notifier ui-notifier-lg" data-ui-val="26">
+                            <div class="ui-notifier ui-notifier-lg ui-circle" data-ui-val="26">
                                 <img class="ui-avatar-lg ui-circle" src="img/profile-image3.jpg" alt="">
                             </div>
 
                         </div>
                         <div class="ui-col-6">
 
-                            <div class="ui-notifier ui-notifier-lg">
+                            <div class="ui-notifier ui-notifier-lg ui-circle">
                                 <span class="ui-avatar-lg ui-circle ui-theme-orange ui-fill-dark-100">
                                     <svg class="ui-icon"><use href="#user"/></svg>
                                 </span>
                             </div>
 
-                            <div class="ui-notifier ui-notifier-lg" data-ui-val="26">
+                            <div class="ui-notifier ui-notifier-lg ui-circle" data-ui-val="26">
                                 <span class="ui-avatar-lg ui-circle ui-theme-sub ui-fill-dark-100">
                                     <span>EKY</span>
                                 </span>

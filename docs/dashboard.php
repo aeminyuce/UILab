@@ -280,7 +280,7 @@
                 <div class="ui-inline">
                     <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                         <button class="ui-btn ui-color-black-25 ui-btn-square ui-btn-ghost ui-circle">
-                            <span class="ui-notifier">
+                            <span class="ui-notifier ui-circle">
                                 <svg class="ui-icon"><use href="#comment"/></svg>
                             </span>
                         </button>
@@ -325,7 +325,7 @@
                     </div>
                     <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                         <button class="ui-btn ui-color-black-25 ui-btn-square ui-btn-ghost ui-circle">
-                            <span class="ui-notifier">
+                            <span class="ui-notifier ui-circle">
                                 <svg class="ui-icon"><use href="#bell"/></svg>
                             </span>
                         </button>
