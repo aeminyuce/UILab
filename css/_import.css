@@ -2013,12 +2013,6 @@ html .ui-row {
 .ui-no-scroll {
   overflow: hidden !important;
 }
-[class*="ui-round-"],
-[class*="ui-circle-"],
-.ui-round,
-.ui-circle {
-  background-clip: padding-box;
-}
 .ui-round {
   border-radius: 10px;
 }
