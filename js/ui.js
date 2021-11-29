@@ -30,6 +30,7 @@ var ui = {
         svgElems: ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'],
 
         // data attributes
+        dataPrefix: 'data-ui-',
         dataClasses: 'data-ui-classes',
 
         // custom events
@@ -563,7 +564,7 @@ var ui = {
         }
 
         if (ui.ajax.requests === undefined) { ui.ajax.requests = []; }
-        var i, re;
+        var i, re, rex;
 
         i = ui.ajax.requests.length;
         re = '';
@@ -598,7 +599,10 @@ var ui = {
                 props.callback('success', ui.ajax.requests[i].responseText, ui.ajax.requests[i]);
 
                 // get data attributes
-                ui.ajax.data = ui.ajax.requests[i].responseText.match(/data-ui-+\w+=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
+                re = ui.globals.dataPrefix + '+\\w+=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[ \\s\\>]';
+                re = new RegExp(re, 'g');
+
+                ui.ajax.data = ui.ajax.requests[i].responseText.match(re);
 
                 if (ui.ajax.data === null) {
                     ui.ajax.data = '';
@@ -615,11 +619,10 @@ var ui = {
                 }
 
                 // get list of data classnames
-                re = ui.globals.dataClasses + '=\"+[\w\s\d\\-\\_\=]+\"[\s\>]';
-                re = new RegExp(re, 'g');
+                rex = ui.globals.dataClasses + '=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[\\s\\>]';
+                rex = new RegExp(rex, 'g');
 
-                ui.ajax.classNames +=  ui.ajax.requests[i].responseText.match(re);
-
+                ui.ajax.classNames +=  ui.ajax.requests[i].responseText.match(rex);
                 if (ui.ajax.classNames !== 'null') { // not match: returns string null!
 
                     ui.ajax.classNames = ui.ajax.classNames.toString().match(/"+[\w\s\d\-\_\=]+"/g);
