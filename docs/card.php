@@ -3,13 +3,40 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-p-30">
 
-                <h3 class="ui-h3">Card Example</h4>
-                <div class="ui-p-30-b">
-                    <div class="ui-card ui-p-15 ui-round ui-shadow">
-                        <h4 class="ui-h4 ui-m-15-b">Title</h4>
-                        <p class="ui-font-readable">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
-                        </p>
+                <h3 class="ui-h3">Card Examples</h4>
+                <div class="ui-row ui-m-30-b">
+                    <div class="ui-col-static ui-sm-fluid">
+                        <div class="ui-col-300 ui-p-10">
+
+                            <div class="ui-card ui-round ui-shadow ui-theme-sub">
+                                <div class="ui-card-side">
+                                    <img class="ui-img-fluid ui-round-t" src="img/image_06.jpg" alt="">
+                                </div>
+                                <div class="ui-card-side ui-p-15">
+                                    <h3 class="ui-h3">Card title</h3>
+                                    <p class="ui-highlight">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a class="ui-btn ui-block ui-round ui-fill-dark-100 ui-ease-btn" href="#">Button</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="ui-row">
+                            <div class="ui-col-12">
+
+                                <div class="ui-card ui-p-30 ui-round ui-shadow">
+                                    <h3 class="ui-h3 ui-m-15-b">Title</h3>
+                                    <p class="ui-font-readable">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam.
+                                    </p>
+                                    <img class="ui-img-sm-fluid ui-round ui-m-15-v" src="img/image_04.jpg" height="184" alt="">
+                                    <p class="ui-font-readable">
+                                        Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
