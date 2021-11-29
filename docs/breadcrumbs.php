@@ -5,93 +5,69 @@
             <div class="ui-col-12 ui-p-30-v">
 
                 <h3 class="ui-h3">Breadcrumbs Examples</h3>
-                <div class="ui-breadcrumbs ui-color-black-25">
-                    <ul class="ui-list-inline">
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="ui-font-hoverline" href="#" itemprop="item" title="Home">
-                                <span itemprop="name">Home</span>
-                            </a>
-                            <meta itemprop="position" content="1" />
+
+                <nav class="ui-breadcrumbs">
+                    <ul class="ui-color-black-25 ui-font-hoverline-2nd">
+                        <li>
+                            <a href="#">Home</a>
                         </li>
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="ui-font-hoverline" href="#" itemprop="item" title="Search Results">
-                                <span itemprop="name">
-                                    Search Results
-                                </span>
-                                <meta itemprop="position" content="2" />
+                        <li>
+                            <a href="#">Search Results</a>
+                        </li>
+                        <li>
+                            <b>Content Details</b>
+                        </li>
+                    </ul>
+                </nav>
+
+                <span class="ui-sp-15"></span>
+
+                <nav class="ui-breadcrumbs">
+                    <ul>
+                        <li>
+                            <a class="ui-opacity ui-ease-btn" href="#">
+                                <svg class="ui-icon ui-icon-sm"><use href="#home"/></svg>
                             </a>
                         </li>
-                        <li><b>Content Details</b></li>
+                        <li>
+                            <a class="ui-font-hoverline" href="#">Search Results</a>
+                        </li>
+                        <li>
+                            <b>Content Details</b>
+                        </li>
+                    </ul>
+                </nav>
+
+                <span class="ui-sp-15"></span>
+
+                <div class="ui-breadcrumbs ui-theme-sub ui-text">
+                    <ul>
+                        <li>
+                            <a class="ui-opacity ui-ease-btn" href="#">
+                                <svg class="ui-icon ui-icon-sm"><use href="#home"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="ui-font-hoverline" href="#">Search Results</a>
+                        </li>
+                        <li>
+                            <b>Content Details</b>
+                        </li>
                     </ul>
                 </div>
 
                 <span class="ui-sp-15"></span>
 
                 <div class="ui-breadcrumbs">
-                    <ul class="ui-list-inline">
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="ui-opacity ui-ease-btn" href="#" itemprop="item" title="Home">
-                                <span itemprop="name">
-                                    <svg class="ui-icon ui-icon-sm"><use href="#home"/></svg>
-                                </span>
-                            </a>
-                            <meta itemprop="position" content="1" />
-                        </li>
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="ui-font-hoverline" href="#" itemprop="item" title="Search Results">
-                                <span itemprop="name">
-                                    Search Results
-                                </span>
-                                <meta itemprop="position" content="2" />
+                    <ul class="ui-ease-2nd-btn">
+                        <li>
+                            <a class="ui-btn ui-round" href="#">
+                                <svg class="ui-icon ui-m-5-r"><use href="#home"/></svg>
+                                Home
                             </a>
                         </li>
-                        <li><b>Content Details</b></li>
-                    </ul>
-                </div>
-
-                <span class="ui-sp-15"></span>
-
-                <div class="ui-breadcrumbs ui-theme-sub">
-                    <ul class="ui-list-inline">
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="ui-opacity ui-text ui-ease-btn" href="#" itemprop="item" title="Home">
-                                <span itemprop="name">
-                                    <svg class="ui-icon ui-icon-sm"><use href="#home"/></svg>
-                                </span>
-                            </a>
-                            <meta itemprop="position" content="1" />
-                        </li>
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="ui-font-hoverline ui-text" href="#" itemprop="item" title="Search Results">
-                                <span itemprop="name">
-                                    Search Results
-                                </span>
-                                <meta itemprop="position" content="2" />
-                            </a>
-                        </li>
-                        <li><b>Content Details</b></li>
-                    </ul>
-                </div>
-
-                <span class="ui-sp-15"></span>
-
-                <div class="ui-breadcrumbs ui-icons-no-opacity">
-                    <ul class="ui-list-inline">
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="ui-btn ui-round ui-ease-btn" href="#" itemprop="item" title="Home">
-                                <span itemprop="name">
-                                    <svg class="ui-icon ui-m-5-r"><use href="#home"/></svg> Home
-                                </span>
-                            </a>
-                            <meta itemprop="position" content="1" />
-                        </li>
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="ui-btn ui-round ui-ease-btn" href="#" itemprop="item" title="Search Results">
-                                    <span itemprop="name">
-                                        Search Results
-                                </span>
-                                <meta itemprop="position" content="2" />
-                            </a>
+                        <li>
+                            <a class="ui-btn ui-round" href="#">Search Results</a>
                         </li>
                         <li>
                             <button class="ui-btn ui-btn-passive ui-round">Content Details</button>
@@ -102,22 +78,15 @@
                 <span class="ui-sp-15"></span>
 
                 <div class="ui-breadcrumbs ui-theme-sub">
-                    <ul class="ui-list-inline">
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
-                                <span itemprop="name">
-                                    <svg class="ui-icon ui-m-5-r"><use href="#home"/></svg> Home
-                                </span>
+                    <ul class="ui-ease-2nd-btn">
+                        <li>
+                            <a class="ui-btn ui-round ui-fill-dark-100" href="#">
+                                <svg class="ui-icon ui-m-5-r"><use href="#home"/></svg>
+                                Home
                             </a>
-                            <meta itemprop="position" content="1" />
                         </li>
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Search Results">
-                                    <span itemprop="name">
-                                        Search Results
-                                </span>
-                                <meta itemprop="position" content="2" />
-                            </a>
+                        <li>
+                            <a class="ui-btn ui-round ui-fill-dark-100" href="#">Search Results</a>
                         </li>
                         <li>
                             <button class="ui-btn ui-btn-passive ui-round ui-fill-dark-100">Content Details</button>
@@ -127,22 +96,18 @@
 
                 <span class="ui-sp-15"></span>
 
-                <div class="ui-breadcrumbs ui-breadcrumbs-no-sep ui-icons-no-opacity">
-                    <ul class="ui-list-inline">
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="ui-btn ui-round ui-ease-btn" href="#" itemprop="item" title="Home">
-                                <span itemprop="name">
-                                    <svg class="ui-icon ui-m-5-r"><use href="#home"/></svg> Home
-                                </span>
+                <div class="ui-breadcrumbs ui-breadcrumbs-no-sep">
+                    <ul class="ease-2nd-btn">
+                        <li>
+                            <a class="ui-btn ui-round" href="#">
+                                <svg class="ui-icon ui-m-5-r"><use href="#home"/></svg>
+                                Home
                             </a>
-                            <meta itemprop="position" content="1" />
                         </li>
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="ui-btn ui-round ui-ease-btn" href="#" itemprop="item" title="Search Results">
-                                    <span itemprop="name">
-                                        <svg class="ui-icon ui-icon-xs ui-inline-block ui-m-3-r"><use href="#angle-left"/></svg> Search Results
-                                    </span>
-                                <meta itemprop="position" content="2" />
+                        <li>
+                            <a class="ui-btn ui-round" href="#">
+                                <svg class="ui-icon ui-icon-xs ui-inline-block ui-m-3-r"><use href="#angle-left"/></svg>
+                                Search Results
                             </a>
                         </li>
                         <li>
@@ -154,14 +119,11 @@
                 <span class="ui-sp-15"></span>
 
                 <div class="ui-breadcrumbs ui-breadcrumbs-no-sep ui-theme-base">
-                    <ul class="ui-list-inline">
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
-                                <span itemprop="name">
-                                    <svg class="ui-icon"><use href="#home"/></svg>
-                                </span>
+                    <ul>
+                        <li>
+                            <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#">
+                                <svg class="ui-icon"><use href="#home"/></svg>
                             </a>
-                            <meta itemprop="position" content="1" />
                         </li>
                         <li>
                             <span class="ui-dropdown ui-ease-dropdown">
@@ -169,29 +131,14 @@
                                     <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                 </button>
                                 <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
-                                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                                        <a href="#" itemprop="item">
-                                            <span itemprop="name">
-                                                Search Results
-                                            </span>
-                                        </a>
-                                        <meta itemprop="position" content="2" />
+                                    <li>
+                                        <a href="#">Search Results</a>
                                     </li>
-                                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                                        <a href="#" itemprop="item">
-                                            <span itemprop="name">
-                                                Content Details
-                                            </span>
-                                        </a>
-                                        <meta itemprop="position" content="3" />
+                                    <li>
+                                        <a href="#">Content Details</a>
                                     </li>
-                                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                                        <a href="#" itemprop="item">
-                                            <span itemprop="name">
-                                                Detail Options
-                                            </span>
-                                        </a>
-                                        <meta itemprop="position" content="4" />
+                                    <li>
+                                        <a href="#">Detail Options</a>
                                     </li>
                                 </ul>
                             </span>
@@ -205,14 +152,11 @@
                 <span class="ui-sp-15"></span>
 
                 <div class="ui-breadcrumbs ui-breadcrumbs-no-sep ui-theme-sub">
-                    <ul class="ui-list-inline">
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#" itemprop="item" title="Home">
-                                <span itemprop="name">
-                                    <svg class="ui-icon"><use href="#home"/></svg>
-                                </span>
+                    <ul>
+                        <li>
+                            <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#">
+                                <svg class="ui-icon"><use href="#home"/></svg>
                             </a>
-                            <meta itemprop="position" content="1" />
                         </li>
                         <li>
                             <span class="ui-dropdown ui-ease-dropdown">
@@ -220,29 +164,14 @@
                                     <svg class="ui-icon"><use href="#ellipsis-h"/></svg>
                                 </button>
                                 <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
-                                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                                        <a href="#" itemprop="item">
-                                            <span itemprop="name">
-                                                Search Results
-                                            </span>
-                                        </a>
-                                        <meta itemprop="position" content="2" />
+                                    <li>
+                                        <a href="#">Search Results</a>
                                     </li>
-                                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                                        <a href="#" itemprop="item">
-                                            <span itemprop="name">
-                                                Content Details
-                                            </span>
-                                        </a>
-                                        <meta itemprop="position" content="3" />
+                                    <li>
+                                        <a href="#">Content Details</a>
                                     </li>
-                                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                                        <a href="#" itemprop="item">
-                                            <span itemprop="name">
-                                                Detail Options
-                                            </span>
-                                        </a>
-                                        <meta itemprop="position" content="4" />
+                                    <li>
+                                        <a href="#">Detail Options</a>
                                     </li>
                                 </ul>
                             </span>
