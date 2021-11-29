@@ -904,12 +904,14 @@
 <!-- footer: end -->
 
 <!-- sidebar -->
-<div class="ui-sidebar ui-sidebar-r ui-ease-layout ui-ease-in-out">
+<div class="ui-sidebar ui-sidebar-r ui-round ui-ease-layout ui-ease-in-out">
     <div class="ui-sidebar-title ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-ease-btn ui-sidebar-close">
             <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
         </button>
-        <a href="#"><img src="img/agriculture/logo.png" alt="" srcset="img/agriculture/logo@2x.png 2x"></a>
+        <a href="#">
+            <img class="ui-m-5-v" src="img/agriculture/logo.png" alt="" srcset="img/agriculture/logo@2x.png 2x">
+        </a>
     </div>
     <div class="ui-sidebar-content ui-align-l ui-theme-sub ui-scroll-v"></div>
 </div>

@@ -1524,12 +1524,12 @@
 </main>
 
 <!-- sidebar -->
-<div class="ui-sidebar ui-sidebar-l ui-invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
+<div class="ui-sidebar ui-sidebar-l ui-round ui-invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
     <div class="ui-sidebar-title ui-no-p ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-sidebar-close">
             <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
         </button>
-        <img src="img/logo-udashboard.png" height="66" alt="">
+        <img class="ui-m-10-t" src="img/logo-udashboard.png" height="62" alt="">
     </div>
     <div class="ui-sidebar-content ui-no-p ui-scroll-v ui-scrollbar-faded"></div>
 </div>

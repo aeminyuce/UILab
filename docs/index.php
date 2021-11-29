@@ -318,12 +318,12 @@
     </main>
 
     <!-- sidebar -->
-    <div class="ui-sidebar ui-sidebar-r ui-theme-base ui-ease-layout ui-ease-in-out">
+    <div class="ui-sidebar ui-sidebar-r ui-round ui-theme-base ui-ease-layout ui-ease-in-out">
         <div class="ui-sidebar-title ui-p-15-v ui-fill-dark-100">
             <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-sidebar-close">
                 <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
             </button>
-            <img src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">
+            <img class="ui-m-5-v" src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">
         </div>
         <div class="ui-sidebar-content ui-no-p ui-theme-gray ui-fill-light-100 ui-scroll-v"></div>
     </div>

@@ -47,6 +47,8 @@ ui.sidebar = {
     'use strict';
     /*globals window, document, ui, setTimeout */
 
+    var getScrollPos;
+
     ui.sidebar.close = function (panel) {
 
         var i, id, el, contents, bg;
@@ -222,11 +224,15 @@ ui.sidebar = {
 
         function () {
 
+            if (window.innerWidth === getScrollPos) { return; } // close only horizontal resizing
+
             var panel = ui.find('.' + ui.sidebar.target + '.' + ui.sidebar.nameOpen);
 
             if (panel.length > 0) {
                 ui.sidebar.close(panel);
             }
+
+            getScrollPos = window.innerWidth;
 
         });
 

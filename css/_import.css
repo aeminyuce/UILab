@@ -7030,13 +7030,16 @@ html:not(.ui-ie) .ui-steps-bar li {
   background-color: hsl(0, 0%, 98%);
   background-color: var(--ui-body-bg);
   position: fixed;
-  top: 0;
-  bottom: 0;
+  top: 10px;
+  bottom: 10px;
   z-index: 90;
   box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.15);
 }
 .ui-sidebar-opened,
 .ui-sidebar-opened > body {
+  overflow: hidden;
+}
+.ui-sidebar.ui-round {
   overflow: hidden;
 }
 .ui-sidebar-bg {
@@ -7058,11 +7061,11 @@ html:not(.ui-ie) .ui-steps-bar li {
   opacity: 0;
 }
 .ui-sidebar-r {
-  right: 0;
+  right: 10px;
   transform: translateX(100%);
 }
 .ui-sidebar-l {
-  left: 0;
+  left: 10px;
   transform: translateX(-100%);
 }
 .ui-sidebar:not(.ui-open) {
@@ -7073,21 +7076,21 @@ html:not(.ui-ie) .ui-steps-bar li {
 }
 .ui-sidebar-close {
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   z-index: 10;
 }
 .ui-sidebar-title {
-  height: 66px;
-  padding: 10px 68px 10px 10px;
+  height: 78px;
+  padding: 15px 78px 15px 15px;
   position: relative;
   z-index: 1;
 }
 .ui-sidebar-title + .ui-sidebar-content {
-  top: 66px;
+  top: 78px;
 }
 .ui-sidebar-content {
-  padding: 10px;
+  padding: 15px;
   position: absolute;
   top: 0;
   right: 0;
