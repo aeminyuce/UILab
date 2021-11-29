@@ -3838,7 +3838,6 @@ button.ui-font-underline:hover {
 .ui-list-inline ul,
 .ui-list-inline ol,
 .ui-list-inline li {
-  vertical-align: middle;
   display: inline-block;
 }
 .ui-list-gap-sm.ui-list-inline li:not(:last-child) {
@@ -3968,8 +3967,6 @@ button.ui-font-underline:hover {
   transition-duration: 0.15s;
 }
 .ui-btn {
-  color: hsl(0, 0%, 0%);
-  color: var(--ui-black);
   font-family: 'Poppins', Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 15px;
   text-decoration: none;
@@ -3988,8 +3985,9 @@ button.ui-font-underline:hover {
   -moz-appearance: none;
   appearance: none;
 }
-a.ui-btn:active,
-a.ui-btn:hover {
+.ui-btn:not([class*="ui-fill"]),
+.ui-btn:not([class*="ui-fill"]):active,
+.ui-btn:not([class*="ui-fill"]):hover {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
 }
@@ -6433,14 +6431,21 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-breadcrumbs:not(:last-child) {
   margin-bottom: 10px;
 }
+.ui-breadcrumbs > ul,
+.ui-breadcrumbs > ul > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .ui-breadcrumbs > ul > li:not(:last-child) {
   margin-right: 5px;
 }
-.ui-breadcrumbs > ul > li > a {
+.ui-breadcrumbs > ul > li > a:not(.ui-btn) {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
   text-decoration: none;
 }
+.ui-breadcrumbs > ul > li,
 .ui-breadcrumbs > ul > li > a,
 .ui-breadcrumbs > ul > li > b {
   display: inline-block;
@@ -9850,6 +9855,7 @@ html:not(.ui-ie) .ui-map svg {
 }
 /* themes */
 [class*="ui-fill-light-"],
+[class*="ui-fill-light-"]:hover,
 [class*="ui-fill-light-"] .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
 [class*="ui-fill-light-"] a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
 [class*="ui-fill-light-"] button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
@@ -9857,6 +9863,7 @@ html:not(.ui-ie) .ui-map svg {
   color: var(--ui-black);
 }
 [class*="ui-fill-dark-"],
+[class*="ui-fill-dark-"]:hover,
 [class*="ui-fill-dark-"] .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
 [class*="ui-fill-dark-"] a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
 [class*="ui-fill-dark-"] button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {

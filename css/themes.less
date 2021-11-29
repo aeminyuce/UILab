@@ -4,7 +4,7 @@
 @theme-colors:                          gray green yellow orange red base sub;
 
 [class*="ui-fill-light-"] {
-    ._color-var(black);
+    &,&:hover { ._color-var(black); }
 
     .ui-icon,a,button {
         &:not([class*="ui-fill-"]):not([class*="ui-color-"]) { &:extend([class*="ui-fill-light-"] ); }
@@ -12,7 +12,7 @@
 }
 
 [class*="ui-fill-dark-"] {
-    color: @white;
+    &,&:hover { color: @white; }
 
     .ui-icon,a,button {
         &:not([class*="ui-fill-"]):not([class*="ui-color-"]) { &:extend([class*="ui-fill-dark-"]); }
