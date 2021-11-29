@@ -15,7 +15,7 @@
                                     <p class="ui-font-lead ui-font-readable">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam.
                                     </p>
-                                    <img class="ui-img-sm-fluid ui-round ui-highlight ui-m-auto" src="img/image_04.jpg" height="264" alt="">
+                                    <img class="ui-img-sm-fluid ui-highlight ui-m-auto" src="img/image_04.jpg" height="260" alt="">
                                     <p class="ui-font-readable">
                                         In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                                     </p>
@@ -23,7 +23,7 @@
 
                             </div>
                         </div>
-                        <div class="ui-col-300 ui-p-10">
+                        <div class="ui-col-350 ui-p-10">
 
                             <div class="ui-card ui-round ui-shadow ui-theme-sub">
                                 <div class="ui-card-side">
@@ -53,16 +53,18 @@
                             <h4 class="ui-h4"><svg class="ui-icon ui-icon-lg"><use href="#user"/></svg>Card Title</h4>
                         </div>
                         <div class="ui-card-side ui-p-15 ui-font-readable">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.<br>
-                            Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus.<br>
-                            In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
+                            <img class="ui-img-sm-fluid ui-highlight ui-m-auto" src="img/image_02.jpg" height="460" alt="">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
+                            <br><br>
+                            In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                         </div>
                         <div class="ui-card-side ui-p-15 ui-theme-gray ui-fill-light-100">
                             <h4 class="ui-h4">Separated Title</h4>
                         </div>
                         <div class="ui-card-side ui-p-15 ui-font-readable">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie.<br>
-                            In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
+                            <br><br>
+                            Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                         </div>
                         <div class="ui-card-side ui-p-15 ui-theme-gray ui-fill-light-100">
                             Card Footer
@@ -75,6 +77,8 @@
                         </div>
                         <div class="ui-card-side ui-p-15 ui-font-readable">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
+                            <br><br>
+                            Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                         </div>
                         <div class="ui-card-side ui-p-15 ui-align-r ui-sm-align-c ui-border-t ui-ease-2nd-btn">
                             <form action="#">
