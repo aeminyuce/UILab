@@ -116,7 +116,7 @@ ui.textareaCounter = {
 
         function () {
 
-            if (ui.ajax.text.indexOf(ui.textareaCounter.dataCounter) > 0) {
+            if (ui.ajax.data.indexOf(ui.textareaCounter.dataCounter) > 0) {
                 loadCounters();
             }
 

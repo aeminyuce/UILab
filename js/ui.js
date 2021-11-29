@@ -29,8 +29,11 @@ var ui = {
         // svg elements
         svgElems: ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'],
 
+        // data attributes
+        dataClasses: 'data-ui-classes',
+
         // custom events
-        eventAjaxCallback: 'ui:ajaxCallbacks',
+        eventAjaxCallback: 'ui:ajaxCallback',
         eventDomChange: 'ui:domChange'
 
     },
@@ -560,7 +563,10 @@ var ui = {
         }
 
         if (ui.ajax.requests === undefined) { ui.ajax.requests = []; }
-        var i = ui.ajax.requests.length;
+        var i, re;
+
+        i = ui.ajax.requests.length;
+        re = '';
 
         ui.ajax.requests[i] = new XMLHttpRequest();
         ui.ajax.requests[i].open(props.type, props.url, true);
@@ -588,11 +594,33 @@ var ui = {
 
             if (ui.ajax.requests[i].readyState === 4 && ui.ajax.requests[i].status === 200) {
 
+                ui.ajax.classNames = '';
                 props.callback('success', ui.ajax.requests[i].responseText, ui.ajax.requests[i]);
 
-                // get list of real classnames
-                ui.ajax.classNames = ui.ajax.requests[i].responseText.match(/\sclass=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
-                if (ui.ajax.classNames !== null) {
+                // get data attributes
+                ui.ajax.data = ui.ajax.requests[i].responseText.match(/data-ui-+\w+=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
+
+                if (ui.ajax.data === null) {
+                    ui.ajax.data = '';
+
+                } else {
+                    ui.ajax.data = ui.ajax.data.toString();
+                }
+
+                // get list of classnames
+                ui.ajax.classNames += ui.ajax.requests[i].responseText.match(/\sclass=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
+
+                if (ui.ajax.classNames === 'null') { // not match: returns string null!
+                     ui.ajax.classNames = '';
+                }
+
+                // get list of data classnames
+                re = ui.globals.dataClasses + '=\"+[\w\s\d\\-\\_\=]+\"[\s\>]';
+                re = new RegExp(re, 'g');
+
+                ui.ajax.classNames +=  ui.ajax.requests[i].responseText.match(re);
+
+                if (ui.ajax.classNames !== 'null') { // not match: returns string null!
 
                     ui.ajax.classNames = ui.ajax.classNames.toString().match(/"+[\w\s\d\-\_\=]+"/g);
                     ui.ajax.classNames = ui.ajax.classNames.toString().replace(/\"/g, '').replace(/,/g, ' ').split(' ');
@@ -602,14 +630,13 @@ var ui = {
                     });
 
                     // ajax callbacks
-                    ui.ajax.text = ui.ajax.requests[i].responseText;
                     ui.trigger(document, ui.globals.eventAjaxCallback); // set custom event
 
-                    // empty variables
-                    ui.ajax.classNames = '';
-                    ui.ajax.text = '';
-
                 }
+
+                // empty variables
+                ui.ajax.classNames = '';
+                ui.ajax.data = '';
 
             } else { // error
                 props.callback('error', '', ui.ajax.requests[i]);

@@ -213,14 +213,14 @@ ui.classnames = {
                     } else if (title === 'darkmode' || title === 'invert') {
                         title = 'dark Mode';
 
-                    } else if (title === 'list') {
-                        title = 'listings';
-
                     } else if (title === 'carousel' || title === 'bring') {
                         title = 'carousel';
 
                     } if (title === 'header' || title === 'sticky') {
                         title = 'header sticky';
+
+                    } else if (title === 'list') {
+                        title = 'listings';
 
                     } else if (title === 'm') {
                         title = 'margin';
