@@ -15,7 +15,7 @@
     <path class="ui-svg-l" d="M32.6 31H45c0 13.3-8.5 24-19 24S7 44.3 7 31 15.6 7 26 7c1.9 0 7.5.1 13.2 6.8"/>
 </symbol>
 <symbol id="in-tx-i" viewBox="0 0 288 288">
-    <path d="M7 7v48"/>
+    <path class="ui-svg-l" d="M7 7v48"/>
 </symbol>
 <symbol id="in-tx-j" viewBox="0 0 288 288">
     <path class="ui-svg-l" d="M7.4 43.6s.8 11.3 12 11.4 14-11 14-11V7"/>
