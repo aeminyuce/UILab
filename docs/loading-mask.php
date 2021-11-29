@@ -15,21 +15,21 @@
                 <div class="ui-p-30-b ui-theme-base">
 
                     <div class="ui-form-lg ui-ease-1st-btn">
-                        <button id="exampleButton" class="ui-btn ui-btn-xs-fluid ui-p-25-h ui-round ui-theme-sub ui-fill-dark-100 ui-ease-btn">Button</button>
+                        <button id="loading-mask-btn" class="ui-btn ui-btn-xs-fluid ui-p-25-h ui-round ui-theme-sub ui-fill-dark-100 ui-ease-btn">Button</button>
                     </div>
 
-                    <pre class="ui-pre ui-round ui-m-10-t ui-m-5-b">ui.loadingMask.toggle('#exampleButton');</pre>
-                    <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.loadingMask.toggle('#exampleButton');">Run Code</button>
+                    <pre class="ui-pre ui-round ui-m-10-t ui-m-5-b">ui.loadingMask.toggle('#loading-mask-btn');</pre>
+                    <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.loadingMask.toggle('#loading-mask-btn');">Run Code</button>
 
                     <span class="ui-sp-30"></span>
 
                     <div class="ui-form-lg ui-ease-1st-btn">
-                        <a href="#" class="exampleButton ui-btn ui-btn-xs-fluid ui-p-25-h ui-round ui-theme-sub ui-fill-dark-100">Link</a>
-                        <button class="exampleButton ui-btn ui-btn-xs-fluid ui-p-25-h ui-round ui-theme-sub ui-fill-dark-100" onclick="alert('Javascript Alert');">Javascript Alert</button>
+                        <a href="#" class="loading-mask-btn ui-btn ui-btn-xs-fluid ui-p-25-h ui-round ui-theme-sub ui-fill-dark-100">Link</a>
+                        <button class="loading-mask-btn ui-btn ui-btn-xs-fluid ui-p-25-h ui-round ui-theme-sub ui-fill-dark-100" onclick="alert('Javascript Alert');">Javascript Alert</button>
                     </div>
 
-                    <pre class="ui-pre ui-round ui-m-10-t ui-m-5-b">ui.loadingMask.toggle('.exampleButton');</pre>
-                    <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.loadingMask.toggle('.exampleButton');">Run Code</button>
+                    <pre class="ui-pre ui-round ui-m-10-t ui-m-5-b">ui.loadingMask.toggle('.loading-mask-btn');</pre>
+                    <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.loadingMask.toggle('.loading-mask-btn');">Run Code</button>
 
                 </div>
 

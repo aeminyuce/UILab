@@ -97,7 +97,7 @@
                 <span class="ui-sp-15"></span>
 
                 <div class="ui-breadcrumbs ui-breadcrumbs-no-sep">
-                    <ul class="ease-2nd-btn">
+                    <ul class="ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-round" href="#">
                                 <svg class="ui-icon ui-m-5-r"><use href="#home"/></svg>
