@@ -10,8 +10,8 @@ ui.grid = {
     targetOrders: 'ui-order-',
 
     // helper classnames
-    nameFirst: '-first',
-    nameLast: '-last',
+    nameFirstPrefix: '-first',
+    nameLastPrefix: '-last',
 
     // data attributes
     dataOrdered: 'data-ui-ordered'
@@ -40,14 +40,14 @@ ui.grid = {
 
                         i = Array.prototype.slice.call(this.parentElement.children).indexOf(this);
 
-                        if (ui.hasClass(this, ui.grid.targetOrders + classType + ui.grid.nameFirst) && i !== 0) {
+                        if (ui.hasClass(this, ui.grid.targetOrders + classType + ui.grid.nameFirstPrefix) && i !== 0) {
 
                             this.setAttribute(ui.grid.dataOrdered, i);
                             p.insertBefore(this, p.firstChild);
 
                         }
 
-                        if (ui.hasClass(this, ui.grid.targetOrders + classType + ui.grid.nameLast) && i !== (siblings.length - 1)) {
+                        if (ui.hasClass(this, ui.grid.targetOrders + classType + ui.grid.nameLastPrefix) && i !== (siblings.length - 1)) {
 
                             this.setAttribute(ui.grid.dataOrdered, i);
                             p.appendChild(this);
@@ -65,7 +65,7 @@ ui.grid = {
                         p = this.parentElement;
                         siblings = p.children;
 
-                        if (ui.hasClass(this, ui.grid.targetOrders + classType + ui.grid.nameFirst)) {
+                        if (ui.hasClass(this, ui.grid.targetOrders + classType + ui.grid.nameFirstPrefix)) {
 
                             this.removeAttribute(ui.grid.dataOrdered);
                             p.insertBefore(this, siblings[o + 1]);

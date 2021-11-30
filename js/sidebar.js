@@ -20,8 +20,8 @@ ui.sidebar = {
     nameShowingMenu: 'ui-sidebar-show-',
     nameAddContent: 'ui-sidebar-add-',
 
-    nameLeft: 'l', // using with prefixes
-    nameRight: 'r', // using with prefixes
+    nameLeftSuffix: 'l', // using with prefixes
+    nameRightSuffix: 'r', // using with prefixes
 
     // helper classnames
     nameOpen: 'ui-open',
@@ -100,10 +100,10 @@ ui.sidebar = {
                 var html, importers, moveFnc, id, i, j, index, indexArr, position, bg, panel, filtered, content;
 
                 html = [];
-                position = ui.sidebar.nameLeft;
+                position = ui.sidebar.nameLeftSuffix;
 
-                if (ui.hasClass(this, ui.sidebar.nameShowingMenu + ui.sidebar.nameRight)) {
-                    position = ui.sidebar.nameRight;
+                if (ui.hasClass(this, ui.sidebar.nameShowingMenu + ui.sidebar.nameRightSuffix)) {
+                    position = ui.sidebar.nameRightSuffix;
                 }
 
                 moveFnc = function (that, j) {

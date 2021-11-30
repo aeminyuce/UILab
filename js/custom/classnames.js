@@ -33,6 +33,11 @@ ui.classnames = {
     filePath: 'xhr/ajax-pages.php',
     prefix: 'ui',
 
+    jsTarget: 'target',
+    jsName: 'name',
+
+    jsIgnore: 'Prefix|Suffix',
+
     // messages
     msgErrors: 'Errors',
     msgNoErrors: '* No errors detected *',
@@ -75,21 +80,56 @@ ui.classnames = {
             callback: function () { }
         });
 
-        // get real classnames list with xhr triggered callback event
+        // get all classnames and data classnames with xhr triggered callback event
         ui.on(document,
             ui.globals.eventAjaxCallback,
 
             function () {
 
-                var i, reStart, reDuplicate, str, strStart, strLength, html, title, items;
+                var i, re, reStart, reDuplicate, beforeLoaded, loaded, str, strStart, strLength, html, title, items, jsModule, jsName;
 
-                // check all class names
+                // load js classnames
+                beforeLoaded = [];
+                loaded = [];
+
+                // target+\w*|target|name+\w*
+                re = ui.classnames.jsTarget + '+\\w*|' + ui.classnames.jsTarget + '|' + ui.classnames.jsName + '+\\w*';
+                re = new RegExp(re, 'g');
+
+                for (jsModule in ui) {
+                    for (jsName in ui[jsModule]) {
+
+                        if ( jsName.match(re) !== null && jsName.match(ui.classnames.jsIgnore) === null) {
+                            beforeLoaded.push(ui[jsModule][jsName]);
+                        }
+
+                    }
+                }
+
+                ui.each(beforeLoaded,
+
+                    function () {
+
+                        if (typeof this === 'string') { // remove object targets
+                            loaded.push(this);
+                        }
+
+                    });
+
+                // load html classnames
                 ui.each(ui.ajax.classNames,
+
+                    function () {
+                        loaded.push(this);
+                    });
+
+                // check all classnames
+                ui.each(loaded,
 
                     function () {
 
                         // check prefix
-                        reStart = ui.classnames.prefix + '-';
+                        reStart = ui.classnames.prefix + '-+\\w+';
                         reStart = new RegExp(reStart, 'g');
 
                         // check duplicates
@@ -342,6 +382,9 @@ ui.classnames = {
                 total.textContent = arr.filtered.length + ' / ' + created;
 
                 // empty variables
+                beforeLoaded = [];
+                loaded = [];
+
                 arr = [];
 
                 html = "";
