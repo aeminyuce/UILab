@@ -14,11 +14,11 @@ ui.sidebar = {
     nameClose: 'ui-sidebar-close',
     nameContent: 'ui-sidebar-content',
 
-    nameDataTarget: 'ui-sbid',
+    nameTargetPrefix: 'ui-sbid',
 
-    nameShow: 'ui-sidebar-',
-    nameShowingMenu: 'ui-sidebar-show-',
-    nameAddContent: 'ui-sidebar-add-',
+    nameShowPrefix: 'ui-sidebar-',
+    nameShowMenuPrefix: 'ui-sidebar-show-',
+    nameAddContentPrefix: 'ui-sidebar-add-',
 
     nameLeftSuffix: 'l', // using with prefixes
     nameRightSuffix: 'r', // using with prefixes
@@ -71,7 +71,7 @@ ui.sidebar = {
 
         for (i = 0; i < contents.length; i++) {
 
-            id = '.' + ui.sidebar.nameDataTarget + '-' + contents[i].getAttribute(ui.sidebar.dataID);
+            id = '.' + ui.sidebar.nameTargetPrefix + '-' + contents[i].getAttribute(ui.sidebar.dataID);
             el = ui.find(id)[0];
 
             contents[i].removeAttribute(ui.sidebar.dataID);
@@ -93,7 +93,7 @@ ui.sidebar = {
         ui.on(document,
             'click',
 
-            '[class*="' + ui.sidebar.nameShowingMenu + '"]',
+            '[class*="' + ui.sidebar.nameShowMenuPrefix + '"]',
 
             function () {
 
@@ -102,7 +102,7 @@ ui.sidebar = {
                 html = [];
                 position = ui.sidebar.nameLeftSuffix;
 
-                if (ui.hasClass(this, ui.sidebar.nameShowingMenu + ui.sidebar.nameRightSuffix)) {
+                if (ui.hasClass(this, ui.sidebar.nameShowMenuPrefix + ui.sidebar.nameRightSuffix)) {
                     position = ui.sidebar.nameRightSuffix;
                 }
 
@@ -115,7 +115,7 @@ ui.sidebar = {
                     that.insertAdjacentHTML(
                         'beforebegin',
 
-                        '<' + ui.sidebar.tagDataTarget + ' class="' + ui.sidebar.nameDataTarget + '-' + id + '" style="display: none;">' +
+                        '<' + ui.sidebar.tagDataTarget + ' class="' + ui.sidebar.nameTargetPrefix + '-' + id + '" style="display: none;">' +
                         '</' + ui.sidebar.tagDataTarget + '>'
                     );
 
@@ -126,7 +126,7 @@ ui.sidebar = {
 
                 };
 
-                importers = ui.find('.' + ui.sidebar.nameAddContent + position);
+                importers = ui.find('.' + ui.sidebar.nameAddContentPrefix + position);
 
                 if (importers.length === 1) {
                     moveFnc(importers[0], 0);
@@ -154,7 +154,7 @@ ui.sidebar = {
 
                 } else { return; }
 
-                panel = ui.find('.' + ui.sidebar.target + '.' + ui.sidebar.nameShow + position);
+                panel = ui.find('.' + ui.sidebar.target + '.' + ui.sidebar.nameShowPrefix + position);
                 content = ui.find('.' + ui.sidebar.nameContent, panel);
 
                 filtered = html.filter(function (el) {

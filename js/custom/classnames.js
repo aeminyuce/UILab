@@ -28,7 +28,7 @@ ui.classnames = {
     stylesCatCol: 'ui-col-lg-3 ui-col-4 ui-col-sm-6',
 
     // values
-    listColLength: 5,
+    listColLength: 6,
 
     filePath: 'xhr/ajax-pages.php',
     prefix: 'ui',
@@ -122,6 +122,11 @@ ui.classnames = {
                     function () {
                         loaded.push(this);
                     });
+
+                // remove duplicate loaded classnames
+                loaded = loaded.filter(function (value, index, self) {
+                    return self.indexOf(value) === index;
+                });
 
                 // check all classnames
                 ui.each(loaded,
@@ -235,7 +240,7 @@ ui.classnames = {
                     } else if (['open','open-ease','active','selected','show'].indexOf(title) >= 0) {
                         title = 'helpers';
 
-                    } else if (['w','weather','days','graphs','reports','now'].indexOf(title) >= 0) {
+                    } else if (['w','weather','days','graphs','reports','now','clear','night'].indexOf(title) >= 0) {
                         title = 'weather';
 
                     } else if (['code','rtl','pre','hr'].indexOf(title) >= 0) {
@@ -344,7 +349,7 @@ ui.classnames = {
                             return a.length - b.length || a.localeCompare(b, undefined, {
                                 numeric: true,
                                 sensitivity: 'base'
-                              });
+                            });
 
                         });
 
