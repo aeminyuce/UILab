@@ -220,7 +220,10 @@ ui.classnames = {
                     }
 
                     // filter rules
-                    if (['container','fluid','fixed','row','gutter','col','push','pull','offset','order'].indexOf(title) >= 0) {
+                    if (['desktop','windows','edg','edge','ie','chrome','firefox','opera','mac','safari','mobile','ios','android'].indexOf(title) >= 0) {
+                        title = 'system';
+
+                    } else if (['container','fluid','fixed','row','gutter','col','push','pull','offset','order'].indexOf(title) >= 0) {
                         title = 'grids';
 
                     } else if (['h1','h2','h3','h4','h5','h6'].indexOf(title) >= 0) {
