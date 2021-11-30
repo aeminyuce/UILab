@@ -1,38 +1,42 @@
 // out: false
 /* progress bar */ @import (reference) 'ui.less';
 
+@progress-bar-info-font-size:           80%;
+
 @progress-bar-lg-size:                  20px;
 @progress-bar-default-size:             14px;
 @progress-bar-sm-size:                  10px;
+
 @progress-bar-padding:                  2px;
+@progress-bar-round:                    (@round - @round * 0.3333333333);
+
+@progress-bar-inner-bg:                 hsl(348, 75%, 50%);
 
 @progress-bar-bg:                       fade(@black, 7.5%);
 @progress-bar-bg-dark:                  fade(@black, 45%);
 
-@progress-bar-inner-bg:                 fade(@black, 30%);
-@progress-bar-inner-bg-dark:            fade(@white, 30%);
-
 ._global-vars () {
     --ui-progress-bar-bg: @progress-bar-bg;
-    --ui-progress-bar-inner-bg: @progress-bar-inner-bg;
 }
 ._global-vars-dark () {
     --ui-progress-bar-bg: @progress-bar-bg-dark;
-    --ui-progress-bar-inner-bg: @progress-bar-inner-bg-dark;
 }
 
 @keyframes ui-progress-fill { from { width: 0; } }
 
 .ui-progress- {
     &bar {
-        height: @progress-bar-default-size; ._bg-var(progress-bar-bg); padding: @progress-bar-padding; display: block; overflow: hidden;
+        color: @white; height: @progress-bar-default-size; ._bg-var(progress-bar-bg); padding: @progress-bar-padding; display: block;
 
         &:not(:last-child) { margin-bottom: @highlight-space; }
 
         & > span {
-            width: 0; height: (@progress-bar-default-size - @progress-bar-padding * 2); ._bg-var(progress-bar-inner-bg); float: left;
+            width: 0; height: (@progress-bar-default-size - @progress-bar-padding * 2); background-color: @progress-bar-inner-bg; overflow: hidden; float: left;
 
             &:not([class*="animate-"]) { animation: ui-progress-fill 2s ease-in-out forwards; }
+        }
+        &:not(.ui-progress-lg) {
+            & > span { font-size: 0 !important; }
         }
         &.ui-border > span {
             height: (@progress-bar-default-size - @progress-bar-padding * 2 - 2);
@@ -40,16 +44,25 @@
         &.ui-border-dual > span {
             height: (@progress-bar-default-size - @progress-bar-padding * 2 - @border-dual * 2);
         }
-        &.ui-round > span {
-            &:first-child { border-top-left-radius: (@round - @round * 0.3333333333); border-bottom-left-radius: (@round - @round * 0.3333333333); }
-            &:last-child { border-top-right-radius: (@round - @round * 0.3333333333); border-bottom-right-radius: (@round - @round * 0.3333333333); }
+
+        &.ui-round {
+            border-radius: @progress-bar-round;
+
+            & > span {
+                &:first-child { border-top-left-radius: (@progress-bar-round - @progress-bar-round * 0.3333333333); border-bottom-left-radius: (@progress-bar-round - @progress-bar-round * 0.3333333333); }
+                &:last-child { border-top-right-radius: (@progress-bar-round - @progress-bar-round * 0.3333333333); border-bottom-right-radius: (@progress-bar-round - @progress-bar-round * 0.3333333333); }
+            }
+        }
+        &.ui-circle > span {
+            &:first-child { border-top-left-radius: @circle; border-bottom-left-radius: @circle; }
+            &:last-child { border-top-right-radius: @circle; border-bottom-right-radius: @circle; }
         }
     }
 
     &lg {
         height: @progress-bar-lg-size;
 
-        & > span { height: (@progress-bar-lg-size - @progress-bar-padding * 2); }
+        & > span { font-size: @progress-bar-info-font-size; text-align: center; height: (@progress-bar-lg-size - @progress-bar-padding * 2); }
         &.ui-border-dual > span {
             height: (@progress-bar-lg-size - @progress-bar-padding * 2 - @border-dual * 2);
         }

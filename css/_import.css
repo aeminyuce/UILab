@@ -41,7 +41,6 @@
   --ui-breadcrumbs-sep-color: hsla(0, 0%, 0%, 0.25);
   --ui-avatar-bg: hsla(0, 0%, 0%, 0.08);
   --ui-progress-bar-bg: hsla(0, 0%, 0%, 0.075);
-  --ui-progress-bar-inner-bg: hsla(0, 0%, 0%, 0.3);
   --ui-scrollbar-scroll-bg: hsl(0, 0%, 92%);
   --ui-scrollbar-scroll-fadedbg: hsla(0, 0%, 0%, 0.045);
   --ui-scrollbar-thumb-bg: hsla(0, 0%, 0%, 0.15);
@@ -111,7 +110,6 @@
   --ui-breadcrumbs-sep-color: hsla(0, 0%, 100%, 0.25);
   --ui-avatar-bg: hsla(0, 0%, 100%, 0.08);
   --ui-progress-bar-bg: hsla(0, 0%, 0%, 0.45);
-  --ui-progress-bar-inner-bg: hsla(0, 0%, 100%, 0.3);
   --ui-scrollbar-scroll-bg: hsl(218, 16%, 18%);
   --ui-scrollbar-scroll-faded-bg: hsla(0, 0%, 100%, 0.045);
   --ui-scrollbar-thumb-bg: hsla(0, 0%, 100%, 0.2);
@@ -6624,12 +6622,12 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   }
 }
 .ui-progress-bar {
+  color: hsl(0, 0%, 100%);
   height: 14px;
   background-color: hsla(0, 0%, 0%, 0.075);
   background-color: var(--ui-progress-bar-bg);
   padding: 2px;
   display: block;
-  overflow: hidden;
 }
 .ui-progress-bar:not(:last-child) {
   margin-bottom: 20px;
@@ -6637,12 +6635,15 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-progress-bar > span {
   width: 0;
   height: 10px;
-  background-color: hsla(0, 0%, 0%, 0.3);
-  background-color: var(--ui-progress-bar-inner-bg);
+  background-color: hsl(348, 75%, 50%);
+  overflow: hidden;
   float: left;
 }
 .ui-progress-bar > span:not([class*="animate-"]) {
   animation: ui-progress-fill 2s ease-in-out forwards;
+}
+.ui-progress-bar:not(.ui-progress-lg) > span {
+  font-size: 0 !important;
 }
 .ui-progress-bar.ui-border > span {
   height: 8px;
@@ -6650,18 +6651,31 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-progress-bar.ui-border-dual > span {
   height: 6px;
 }
+.ui-progress-bar.ui-round {
+  border-radius: 6.66666667px;
+}
 .ui-progress-bar.ui-round > span:first-child {
-  border-top-left-radius: 6.66666667px;
-  border-bottom-left-radius: 6.66666667px;
+  border-top-left-radius: 4.44444444px;
+  border-bottom-left-radius: 4.44444444px;
 }
 .ui-progress-bar.ui-round > span:last-child {
-  border-top-right-radius: 6.66666667px;
-  border-bottom-right-radius: 6.66666667px;
+  border-top-right-radius: 4.44444444px;
+  border-bottom-right-radius: 4.44444444px;
+}
+.ui-progress-bar.ui-circle > span:first-child {
+  border-top-left-radius: 1000px;
+  border-bottom-left-radius: 1000px;
+}
+.ui-progress-bar.ui-circle > span:last-child {
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
 }
 .ui-progress-lg {
   height: 20px;
 }
 .ui-progress-lg > span {
+  font-size: 80%;
+  text-align: center;
   height: 16px;
 }
 .ui-progress-lg.ui-border-dual > span {
