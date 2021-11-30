@@ -625,7 +625,7 @@ var ui = {
                 ui.ajax.classNames +=  ui.ajax.requests[i].responseText.match(rex);
                 if (ui.ajax.classNames !== 'null') { // not match: returns string null!
 
-                    ui.ajax.classNames = ui.ajax.classNames.toString().match(/"+[\w\s\d\-\_\=]+"/g);
+                    ui.ajax.classNames = ui.ajax.classNames.match(/"+[\w\s\d\-\_\=]+"/g);
                     ui.ajax.classNames = ui.ajax.classNames.toString().replace(/\"/g, '').replace(/,/g, ' ').split(' ');
 
                     ui.ajax.classNames = ui.ajax.classNames.filter(function (value, index, self) {

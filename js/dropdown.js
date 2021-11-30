@@ -16,6 +16,9 @@ ui.dropdown = {
     nameMenuLeft: 'ui-menu-l',
     nameMenuCenter: 'ui-menu-c',
 
+    nameMenuPosRight: 'ui-menu-pos-r',
+    nameMenuPosLeft: 'ui-menu-pos-l',
+
     nameNav: 'ui-nav',
     nameNavFullHor: 'ui-nav-full-h',
 
@@ -58,15 +61,23 @@ ui.dropdown = {
 
         listStyles,
         selectOpened,
-        selectInContent;
+        selectInContent,
 
-    function dropdownClose() {
+        getScrollPos;
+
+    function dropdownClose(innerParent) {
 
         if (selectOpened) { return; }
 
         var that, list;
 
-        that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen);
+        if (innerParent === undefined) {
+            that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen);
+
+        } else {
+            that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen, innerParent);
+        }
+
         ui.removeClass(that, ui.dropdown.nameOpenEase);
 
         clearTimeout(dropdownLeaveTimer);
@@ -87,9 +98,18 @@ ui.dropdown = {
                         } else {
 
                             list.style.removeProperty('max-height');
+
+                            list.style.removeProperty('position');
                             list.style.removeProperty('right');
+                            list.style.removeProperty('left');
+
                             list.style.removeProperty('margin-left');
+                            list.style.removeProperty('margin-top');
+
+                            list.style.removeProperty('overflow');
+
                             list.style.removeProperty('transform-origin');
+                            list.style.removeProperty('box-shadow');
 
                         }
 
@@ -110,14 +130,30 @@ ui.dropdown = {
             e.preventDefault();
             e.stopPropagation();
 
-            var list, alignSize, parent, offset, setMaxH;
+            var list, alignSize, parent, offset, setMaxH, hasInner, inner, innerParent;
+
+            inner = false;
+            hasInner = false;
 
             parent = that.parentNode;
 
             clearTimeout(dropdownOpenTimer);
             dropdownOpenTimer = setTimeout(function () {
 
-                dropdownClose();
+                innerParent = ui.closest(parent, '.' + ui.dropdown.target)[0];
+                if ((ui.hasClass(parent, ui.dropdown.nameMenuPosRight) || ui.hasClass(parent, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
+
+                    // detecting inner dropdown positions
+                    inner = true;
+                    dropdownClose(innerParent);
+
+                } else { dropdownClose(); }
+
+                if (ui.find('.' + ui.dropdown.nameMenuPosRight, parent).length > 0 || ui.find('.' + ui.dropdown.nameMenuPosLeft, parent).length > 0) {
+
+                    // detecting dropdown has inner dropdown positions
+                    hasInner = true;
+                }
 
                 clearTimeout(dropdownOpenTimer);
                 ui.addClass(parent, ui.dropdown.nameOpen);
@@ -128,6 +164,10 @@ ui.dropdown = {
 
                 offset = parent.getBoundingClientRect();
                 list = ui.find('.' + ui.dropdown.nameMenu, parent)[0];
+
+                if (hasInner) {
+                    list.style.overflow = 'visible';
+                }
 
                 if (ui.closest(that, '.' + ui.dropdown.nameSidebar)[0] === undefined && !ui.hasClass(parent, ui.dropdown.nameNavFullHor)) { // diable all positionings on sidebars and full horizontal navigations
 
@@ -167,20 +207,91 @@ ui.dropdown = {
 
                 setMaxH = function (pos) { // set max-height of list
 
-                    if (pos === 'top') {
+                    if (pos === 'default')  {
+                        list.style.maxHeight = window.innerHeight - (offset.top + that.offsetHeight + ui.dropdown.scrollbarSize + ui.dropdown.menuTopMargin) + 'px';
+
+                    } else if (pos === 'top') {
                         list.style.maxHeight = window.innerHeight - (ui.dropdown.scrollbarSize + ui.dropdown.menuTopMargin) + 'px';
 
-                    } else {
-                        list.style.maxHeight = window.innerHeight - (offset.top + that.offsetHeight + ui.dropdown.scrollbarSize + ui.dropdown.menuTopMargin) + 'px';
+                    } else if (pos === 'pos')  {
+                        list.style.maxHeight = window.innerHeight - (offset.top + ui.dropdown.scrollbarSize) + 'px';
                     }
 
                 };
 
-                if (offset.top + parseInt(that.offsetHeight + list.offsetHeight) >= window.innerHeight) { // menu vertical positioning
+                if (ui.hasClass(parent, ui.dropdown.nameMenuPosRight)) { // right position menu
+
+                    if (window.innerWidth > ui.globals.sm) { // right positioning: active
+
+                        if (list.offsetWidth > (window.innerWidth - offset.left) - (list.offsetWidth + ui.dropdown.scrollbarSize)) {
+
+                            list.style.top = 'inherit';
+                            list.style.left = 'inherit';
+
+                            list.style.marginTop = ui.dropdown.menuTopMargin + 'px';
+                            list.style.transformOrigin = 'top left';
+
+                            if (inner) {
+
+                                list.style.position = 'static';
+                                list.style.boxShadow = 'none';
+
+                            }
+
+                        }
+
+                        setMaxH('pos');
+
+                    } else { // right positioning: passive
+
+                        setMaxH('default');
+
+                        list.style.top = 'inherit';
+                        list.style.left = 'inherit';
+
+                        list.style.marginTop = ui.dropdown.menuTopMargin + 'px';
+
+                    }
+
+                } else if (ui.hasClass(parent, ui.dropdown.nameMenuPosLeft)) { // left position menu
+
+                    if (window.innerWidth > ui.globals.sm) { // left positioning: active
+
+                        if (offset.left - list.offsetWidth < ui.dropdown.scrollbarSize) {
+
+                            list.style.top = 'inherit';
+                            list.style.right = 'inherit';
+
+                            list.style.marginTop = ui.dropdown.menuTopMargin + 'px';
+                            list.style.transformOrigin = 'top right';
+
+                            if (inner) {
+
+                                list.style.position = 'static';
+                                list.style.boxShadow = 'none';
+
+                            }
+
+                        }
+
+                        setMaxH('pos');
+
+                    } else { // left positioning: passive
+
+                        setMaxH('default');
+
+                        list.style.top = 'inherit';
+                        list.style.right = 'inherit';
+
+                        list.style.marginTop = ui.dropdown.menuTopMargin + 'px';
+
+                    }
+
+                } else if (offset.top + parseInt(that.offsetHeight + list.offsetHeight) >= window.innerHeight) { // menu vertical positioning
 
                     if (offset.top - parseInt(that.offsetHeight + list.offsetHeight) + that.offsetHeight > 0) {
 
-                        if (!ui.hasClass(parent, ui.dropdown.nameNavFullHor)) { // disable top menu with full horizontal navigations
+                        if (!ui.hasClass(parent, ui.dropdown.nameNavFullHor)) { // add top menu without full horizontal navigations
 
                             ui.addClass(parent, ui.dropdown.nameMenuTop);
                             list.style.removeProperty('transform-origin');
@@ -313,8 +424,21 @@ ui.dropdown = {
                 clearTimeout(dropdownLeaveTimer);
                 clearTimeout(dropdownOpenTimer);
 
+                var that, innerParent;
+
+                innerParent = ui.closest(this, '.' + ui.dropdown.target)[0];
+                that = this;
+
                 dropdownLeaveTimer = setTimeout(function () {
-                    dropdownClose();
+
+                    innerParent = ui.closest(that, '.' + ui.dropdown.target)[0];
+                    if ((ui.hasClass(that, ui.dropdown.nameMenuPosRight) || ui.hasClass(that, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
+
+                        // detecting inner dropdown positions
+                        dropdownClose(innerParent);
+
+                    } else { dropdownClose(); }
+
                 }, ui.globals.ease * 2);
 
             });
@@ -368,6 +492,17 @@ ui.dropdown = {
 
     // Loaders
     ui.onload(ui.dropdown.Start);
-    ui.on(window, 'resize', dropdownClose);
+
+    ui.on(window,
+        'resize',
+
+        function () {
+
+            if (window.innerWidth === getScrollPos) { return; } // close only horizontal resizing
+
+            dropdownClose();
+            getScrollPos = window.innerWidth;
+
+        });
 
 }());

@@ -149,21 +149,21 @@
 
                     <div class="ui-col-250 ui-p-1 ui-theme-sub">
 
-                        <div class="ui-btn-list ui-align-l ui-icons-m-10-r ui-icons-no-opacity ui-form-lg ui-ease-1st-btn">
+                        <div class="ui-btn-list ui-align-l ui-icons-no-opacity ui-form-lg ui-ease-1st-btn">
                             <button class="ui-tab ui-btn ui-border-r ui-border-lg ui-stroke ui-border-r ui-text ui-active">
-                                <svg class="ui-icon"><use href="#users"/></svg>
+                                <svg class="ui-icon ui-float-r"><use href="#users"/></svg>
                                 Tab Button
                             </button>
                             <button class="ui-tab ui-btn ui-border-r">
-                                <svg class="ui-icon"><use href="#network"/></svg>
+                                <svg class="ui-icon ui-float-r"><use href="#network"/></svg>
                                 Tab Button
                             </button>
                             <button class="ui-tab ui-btn ui-border-r">
-                                <svg class="ui-icon"><use href="#shield"/></svg>
+                                <svg class="ui-icon ui-float-r"><use href="#shield"/></svg>
                                 Tab Button
                             </button>
                             <button class="ui-tab ui-btn ui-border-r">
-                                <svg class="ui-icon"><use href="#settings"/></svg>
+                                <svg class="ui-icon ui-float-r"><use href="#settings"/></svg>
                                 Tab Button
                             </button>
                         </div>
@@ -224,21 +224,21 @@
                     </div>
                     <div class="ui-col-250 ui-p-1 ui-theme-sub">
 
-                        <div class="ui-btn-list ui-align-l ui-icons-no-opacity ui-form-lg ui-ease-1st-btn">
+                        <div class="ui-btn-list ui-align-l ui-icons-m-10-r ui-icons-no-opacity ui-form-lg ui-ease-1st-btn">
                             <button class="ui-tab ui-btn ui-border-l ui-border-l ui-border-lg ui-stroke ui-text ui-active">
-                                <svg class="ui-icon ui-float-r"><use href="#users"/></svg>
+                                <svg class="ui-icon"><use href="#users"/></svg>
                                 Tab Button
                             </button>
                             <button class="ui-tab ui-btn ui-border-l">
-                                <svg class="ui-icon ui-float-r"><use href="#network"/></svg>
+                                <svg class="ui-icon"><use href="#network"/></svg>
                                 Tab Button
                             </button>
                             <button class="ui-tab ui-btn ui-border-l">
-                                <svg class="ui-icon ui-float-r"><use href="#shield"/></svg>
+                                <svg class="ui-icon"><use href="#shield"/></svg>
                                 Tab Button
                             </button>
                             <button class="ui-tab ui-btn ui-border-l">
-                                <svg class="ui-icon ui-float-r"><use href="#settings"/></svg>
+                                <svg class="ui-icon"><use href="#settings"/></svg>
                                 Tab Button
                             </button>
                         </div>
@@ -259,21 +259,21 @@
 
                         <div class="ui-col-250 ui-p-1 ui-theme-sub">
 
-                            <div class="ui-btn-list ui-align-l ui-icons-m-10-r ui-icons-no-opacity ui-form-lg ui-ease-1st-btn">
+                            <div class="ui-btn-list ui-align-l ui-icons-no-opacity ui-form-lg ui-ease-1st-btn">
                                 <button class="ui-tab ui-btn ui-border-r ui-border-lg ui-stroke ui-text ui-active">
-                                    <svg class="ui-icon"><use href="#users"/></svg>
+                                    <svg class="ui-icon ui-float-r"><use href="#users"/></svg>
                                     Tab Button
                                 </button>
                                 <button class="ui-tab ui-btn ui-border-r">
-                                    <svg class="ui-icon"><use href="#network"/></svg>
+                                    <svg class="ui-icon ui-float-r"><use href="#network"/></svg>
                                     Tab Button
                                 </button>
                                 <button class="ui-tab ui-btn ui-border-r">
-                                    <svg class="ui-icon"><use href="#shield"/></svg>
+                                    <svg class="ui-icon ui-float-r"><use href="#shield"/></svg>
                                     Tab Button
                                 </button>
                                 <button class="ui-tab ui-btn ui-border-r">
-                                    <svg class="ui-icon"><use href="#settings"/></svg>
+                                    <svg class="ui-icon ui-float-r"><use href="#settings"/></svg>
                                     Tab Button
                                 </button>
                             </div>
@@ -309,21 +309,21 @@
 
                         <div class="ui-col-250 ui-p-1 ui-theme-sub">
 
-                            <div class="ui-btn-list ui-align-l ui-icons-m-10-r ui-icons-no-opacity ui-form-lg ui-ease-1st-btn">
+                            <div class="ui-btn-list ui-align-l ui-icons-no-opacity ui-form-lg ui-ease-1st-btn">
                                 <button class="ui-tab ui-btn ui-border-r ui-border-lg ui-stroke ui-text ui-active">
-                                    <svg class="ui-icon"><use href="#users"/></svg>
+                                    <svg class="ui-icon ui-float-r"><use href="#users"/></svg>
                                     Tab Button
                                 </button>
                                 <button class="ui-tab ui-btn ui-border-r">
-                                    <svg class="ui-icon"><use href="#network"/></svg>
+                                    <svg class="ui-icon ui-float-r"><use href="#network"/></svg>
                                     Tab Button
                                 </button>
                                 <button class="ui-tab ui-btn ui-border-r">
-                                    <svg class="ui-icon"><use href="#shield"/></svg>
+                                    <svg class="ui-icon ui-float-r"><use href="#shield"/></svg>
                                     Tab Button
                                 </button>
                                 <button class="ui-tab ui-btn ui-border-r">
-                                    <svg class="ui-icon"><use href="#settings"/></svg>
+                                    <svg class="ui-icon ui-float-r"><use href="#settings"/></svg>
                                     Tab Button
                                 </button>
                             </div>

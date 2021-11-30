@@ -4501,6 +4501,9 @@ button.ui-font-underline:hover {
   display: inline-block;
   position: relative;
 }
+.ui-dropdown .ui-dropdown:not([class*="ui-menu-pos-"]) {
+  display: none !important;
+}
 .ui-dropdown.ui-open {
   z-index: 19;
 }
@@ -4526,7 +4529,7 @@ button.ui-font-underline:hover {
   stroke-width: 38px !important;
   margin-top: -2px;
 }
-.ui-dropdown > .ui-btn:not(.ui-btn-sm):not(.ui-btn-xs) .ui-toggle-icon.ui-float-r {
+.ui-dropdown > .ui-btn:not(.ui-btn-sm):not(.ui-btn-xs) .ui-toggle-icon[class*="ui-float-"] {
   margin-top: 6px;
   margin-bottom: 6px;
 }
@@ -4536,7 +4539,7 @@ button.ui-font-underline:hover {
   stroke-width: 38px !important;
   margin-top: -2px;
 }
-.ui-dropdown > .ui-btn.ui-btn-sm .ui-toggle-icon.ui-float-r {
+.ui-dropdown > .ui-btn.ui-btn-sm .ui-toggle-icon[class*="ui-float-"] {
   margin-top: 4px;
   margin-bottom: 4px;
 }
@@ -4546,7 +4549,7 @@ button.ui-font-underline:hover {
   stroke-width: 38px !important;
   margin-top: -2px;
 }
-.ui-dropdown > .ui-btn.ui-btn-xs .ui-toggle-icon.ui-float-r {
+.ui-dropdown > .ui-btn.ui-btn-xs .ui-toggle-icon[class*="ui-float-"] {
   margin-top: 3px;
   margin-bottom: 3px;
 }
@@ -4602,10 +4605,21 @@ button.ui-font-underline:hover {
   opacity: 0;
   transform: scale(0.95);
 }
-.ui-dropdown:not(.ui-menu-t) .ui-dropdown-menu {
+.ui-dropdown.ui-menu-pos-r .ui-dropdown-menu {
+  margin-left: 1px;
+  top: 0;
+  left: 100%;
+}
+.ui-dropdown.ui-menu-pos-l .ui-dropdown-menu {
+  margin-right: 1px;
+  top: 0;
+  right: 100%;
+  transform-origin: top right;
+}
+.ui-dropdown:not(.ui-menu-t):not(.ui-menu-pos-r):not(.ui-menu-pos-l) .ui-dropdown-menu {
   margin-top: 1px;
 }
-.ui-dropdown.ui-menu-t .ui-dropdown-menu {
+.ui-dropdown.ui-menu-t > .ui-dropdown-menu {
   margin-bottom: 1px;
   bottom: 100%;
   transform-origin: bottom left;
@@ -4762,6 +4776,9 @@ button.ui-font-underline:hover {
 .ui-sidebar .ui-dropdown ul.ui-dropdown-menu > li:not(:last-child) {
   border-bottom: 0;
 }
+.ui-sidebar .ui-dropdown .ui-dropdown[class*="ui-menu-pos-"] .ui-dropdown-menu {
+  position: static !important;
+}
 .ui-sidebar .ui-dropdown:not(:last-child) .ui-dropdown-menu {
   margin-bottom: 10px !important;
 }
@@ -4785,6 +4802,11 @@ button.ui-font-underline:hover {
 @media (max-width: 767px) {
   .ui-dropdown .ui-dropdown-menu {
     transform-origin: top center !important;
+  }
+  .ui-dropdown .ui-dropdown[class*="ui-menu-pos-"] .ui-dropdown-menu {
+    border-radius: 0 !important;
+    position: static !important;
+    box-shadow: none !important;
   }
 }
 /* forms */

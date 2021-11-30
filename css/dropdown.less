@@ -8,9 +8,9 @@
 @dropdown-toggle-icon-sm-size:            12px;
 @dropdown-toggle-icon-xs-size:            10px;
 
-@dropdown-toggle-right-icon-margins:      6px;
-@dropdown-toggle-right-icon-sm-margins:   4px;
-@dropdown-toggle-right-icon-xs-margins:   3px;
+@dropdown-toggle-float-icon-margins:      6px;
+@dropdown-toggle-float-icon-sm-margins:   4px;
+@dropdown-toggle-float-icon-xs-margins:   3px;
 
 @dropdown-menu-space:                     1px;
 @dropdown-menu-min-width:                 100%;
@@ -59,6 +59,10 @@
 .ui-dropdown {
     vertical-align: middle; display: inline-block; position: relative;
 
+    .ui-dropdown {
+        &:not([class*="ui-menu-pos-"]) { display: none !important; }
+    }
+
     &.ui-open {
         z-index: @dropdown-open-z-index;
 
@@ -80,21 +84,21 @@
             .ui-toggle-icon {
                 ._icon(@dropdown-toggle-icon-size) !important; margin-top: -2px;
 
-                &.ui-float-r { margin-top: @dropdown-toggle-right-icon-margins; margin-bottom: @dropdown-toggle-right-icon-margins; }
+                &[class*="ui-float-"] { margin-top: @dropdown-toggle-float-icon-margins; margin-bottom: @dropdown-toggle-float-icon-margins; }
             }
         }
         &.ui-btn-sm {
             .ui-toggle-icon {
                 ._icon(@dropdown-toggle-icon-sm-size) !important; margin-top: -2px;
 
-                &.ui-float-r { margin-top: @dropdown-toggle-right-icon-sm-margins; margin-bottom: @dropdown-toggle-right-icon-sm-margins; }
+                &[class*="ui-float-"] { margin-top: @dropdown-toggle-float-icon-sm-margins; margin-bottom: @dropdown-toggle-float-icon-sm-margins; }
             }
         }
         &.ui-btn-xs {
             .ui-toggle-icon {
                 ._icon(@dropdown-toggle-icon-xs-size) !important; margin-top: -2px;
 
-                &.ui-float-r { margin-top: @dropdown-toggle-right-icon-xs-margins; margin-bottom: @dropdown-toggle-right-icon-xs-margins; }
+                &[class*="ui-float-"] { margin-top: @dropdown-toggle-float-icon-xs-margins; margin-bottom: @dropdown-toggle-float-icon-xs-margins; }
             }
         }
     }
@@ -122,23 +126,34 @@
             & > .ui-row { margin-left: inherit; margin-right: inherit; }
         }
     }
+
     &.ui-menu-c {
         .ui-dropdown-menu { transform-origin: top center; }
     }
     &.ui-menu-l {
         .ui-dropdown-menu { transform-origin: top right; }
     }
+
     &:not(.ui-open) {
         .ui-dropdown-menu { display: none !important; }
     }
     &:not(.ui-open-ease) {
         .ui-dropdown-menu { opacity: 0; transform: scale(@dropdown-menu-open-scale); }
     }
-    &:not(.ui-menu-t) {
+
+    &.ui-menu-pos-r {
+        .ui-dropdown-menu { margin-left: @dropdown-menu-space; top: 0; left: 100%; }
+    }
+    &.ui-menu-pos-l {
+        .ui-dropdown-menu { margin-right: @dropdown-menu-space; top: 0; right: 100%; transform-origin: top right; }
+    }
+
+    &:not(.ui-menu-t):not(.ui-menu-pos-r):not(.ui-menu-pos-l) {
         .ui-dropdown-menu { margin-top: @dropdown-menu-space; }
     }
+
     &.ui-menu-t {
-        .ui-dropdown-menu { margin-bottom: @dropdown-menu-space; bottom: 100%; transform-origin: bottom left; }
+        & > .ui-dropdown-menu { margin-bottom: @dropdown-menu-space; bottom: 100%; transform-origin: bottom left; }
 
         &.ui-menu-c {
             .ui-dropdown-menu { transform-origin: bottom center; }
@@ -245,6 +260,11 @@
                 &:not(:last-child) { border-bottom: 0; }
             }
         }
+        .ui-dropdown {
+            &[class*="ui-menu-pos-"] {
+                .ui-dropdown-menu { position: static !important; }
+            }
+        }
 
         &:not(:last-child) {
             .ui-dropdown-menu { margin-bottom: (@highlight-space / 2) !important; }
@@ -270,5 +290,11 @@
 @media (@sm-finish) {
     .ui-dropdown {
         .ui-dropdown-menu { transform-origin: top center !important; }
+
+        .ui-dropdown {
+            &[class*="ui-menu-pos-"] {
+                .ui-dropdown-menu { border-radius: 0 !important; position: static !important; box-shadow: none !important; }
+            }
+        }
     }
 }
