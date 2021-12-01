@@ -11,8 +11,6 @@
 
 @tooltip-arrow-size:                    10px;
 
-@tooltip-bg:                            hsl(348, 75%, 50%);
-
 .ui-ease-tooltip { transition-property: top, left, opacity; }
 
 [data-ui-tooltip] { display: inline-block; }
@@ -20,7 +18,7 @@
 .ui-tooltip {
     min-width: @tooltip-min-width; max-width: @tooltip-max-width; position: absolute; z-index: @tooltip-z-index;
 
-    &:not([class*="ui-fill-"]) { color: @white; background-color: @tooltip-bg; }
+    &:not([class*="ui-fill-"]) { color: @white; background-color: @featured-color; }
 
     &:not(.ui-open) { display: none; }
     &:not(.ui-open-ease) { opacity: 0; }
@@ -98,7 +96,7 @@
         i {
             box-sizing: content-box; width: @tooltip-arrow-size; height: @tooltip-arrow-size; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
 
-            &:not([class*="ui-fill-"]) { background-color: @tooltip-bg; }
+            &:not([class*="ui-fill-"]) { background-color: @featured-color; }
         }
     }
 }

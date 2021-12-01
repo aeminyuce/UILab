@@ -14,7 +14,7 @@
   --ui-border-dark-color: hsla(0, 0%, 0%, 0.35);
   --ui-black-25: hsla(0, 0%, 0%, 0.4);
   --ui-black-50: hsla(0, 0%, 0%, 0.5);
-  --ui-code-color: hsl(345, 69%, 46%);
+  --ui-code-color: hsl(348, 75%, 50%);
   --ui-code-bg: hsl(343, 37%, 96%);
   --ui-dropdown-list-selected-bg: hsla(0, 0%, 0%, 0.075);
   --ui-dropdown-list-hover-bg: hsla(0, 0%, 0%, 0.05);
@@ -84,7 +84,7 @@
   --ui-black-25: hsla(0, 0%, 100%, 0.72);
   --ui-black-50: hsla(0, 0%, 100%, 0.87);
   --ui-code-color: hsl(0, 0%, 100%);
-  --ui-code-bg: hsl(345, 69%, 46%);
+  --ui-code-bg: hsl(348, 75%, 50%);
   --ui-dropdown-list-selected-bg: hsla(0, 0%, 100%, 0.075);
   --ui-dropdown-list-hover-bg: hsla(0, 0%, 0%, 0.05);
   --ui-dropdown-list-border: hsla(0, 0%, 100%, 0.065);
@@ -3752,9 +3752,10 @@ button.ui-font-underline:hover {
 .ui-code,
 .ui-pre {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-size: 14px;
 }
 .ui-code {
-  color: hsl(345, 69%, 46%);
+  color: hsl(348, 75%, 50%);
   color: var(--ui-code-color);
   font-size: 90%;
   background-color: hsl(343, 37%, 96%);
@@ -3763,7 +3764,7 @@ button.ui-font-underline:hover {
   border-radius: 2px;
 }
 .ui-pre {
-  color: hsl(0, 0%, 100%);
+  color: hsl(200, 100%, 80%);
   line-height: 170%;
   min-height: 42px;
   background-color: hsl(220, 8%, 22%);
@@ -7592,7 +7593,7 @@ html:not(.ui-ie) .ui-steps-bar li {
 }
 .ui-alerts-msg:not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 100%);
-  background-color: hsl(220, 12%, 4%);
+  background-color: hsl(348, 75%, 50%);
 }
 .ui-alerts-msg.ui-msg-success {
   background-color: hsl(142, 82%, 42%) !important;

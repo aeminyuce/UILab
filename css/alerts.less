@@ -32,8 +32,6 @@
 @alerts-msg-window-space:              20px;
 @alerts-msg-slide-size:                40px;
 
-@alerts-msg-bg:                        hsl(220, 12%, 4%);
-
 .ui-alerts {
     &-opened {
         scroll-behavior: auto !important;
@@ -66,7 +64,7 @@
 
         &:not(.ui-show) { display: none; }
         &:not(.ui-show-ease) { opacity: 0; }
-        &:not([class*="ui-fill-"]) { color: @white; background-color: @alerts-msg-bg; }
+        &:not([class*="ui-fill-"]) { color: @white; background-color: @featured-color; }
 
         &.ui-msg- {
             &success { background-color: @green !important; }

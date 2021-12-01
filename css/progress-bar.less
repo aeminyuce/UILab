@@ -10,8 +10,6 @@
 @progress-bar-padding:                  2px;
 @progress-bar-round:                    (@round - @round * 0.3333333333);
 
-@progress-bar-inner-bg:                 hsl(348, 75%, 50%);
-
 @progress-bar-bg:                       fade(@black, 7.5%);
 @progress-bar-bg-dark:                  fade(@black, 45%);
 
@@ -31,7 +29,7 @@
         &:not(:last-child) { margin-bottom: @highlight-space; }
 
         & > span {
-            width: 0; height: (@progress-bar-default-size - @progress-bar-padding * 2); background-color: @progress-bar-inner-bg; overflow: hidden; float: left;
+            width: 0; height: (@progress-bar-default-size - @progress-bar-padding * 2); background-color: @featured-color; overflow: hidden; float: left;
 
             &:not([class*="animate-"]) { animation: ui-progress-fill 2s ease-in-out forwards; }
         }

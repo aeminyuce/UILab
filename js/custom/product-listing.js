@@ -10,8 +10,6 @@ ui.lineChart.bottom = 10;
 ui.lineChart.showGrid = false;
 ui.lineChart.showInfo = false;
 
-ui.alerts.stylesMsgTheme = 'ui-theme-sub ui-fill-dark-100';
-
 ui.onload(function () {
     ui.on('.product-list-load-more',
         'click',
