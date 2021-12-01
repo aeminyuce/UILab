@@ -638,6 +638,8 @@ var ui = {
                 }
 
                 // empty variables
+                ui.ajax.requests[i] = undefined;
+
                 ui.ajax.classNames = '';
                 ui.ajax.data = '';
 
