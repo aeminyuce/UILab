@@ -212,8 +212,11 @@
 
                     <div class="ui-fixed ui-fixed-xl ui-p-15 ui-m-30-v ui-sm-no-p">
                         <div class="ui-highlight ui-align-c ui-p-30 ui-xs-no-p ui-round ui-theme-sub">
-                            <h1 class="ui-h1 ui-font-light">UI lab is a modular design system.</h2>
-                            <h4 class="ui-h4 ui-font-bold ui-text">For developing web interfaces fastly!</h4>
+
+                            <div class="ui-cursor-default ui-no-selection ui-highlight">
+                                <h1 class="ui-h1 ui-font-light">UI lab is a modular design system.</h2>
+                                <h4 class="ui-h4 ui-font-bold ui-text">For developing web interfaces fastly!</h4>
+                            </div>
 
                             <span class="ui-sp-15"></span>
 

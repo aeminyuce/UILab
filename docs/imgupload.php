@@ -31,23 +31,23 @@
                     <ul>
 
                         <!-- image ratio: 16:9-->
-                        <li data-ui-photo="img/house_01.jpg" data-ui-id="1" data-ui-tag="Exterior"></li>
-                        <li data-ui-photo="img/house_02.jpg" data-ui-id="2" data-ui-tag=""></li>
-                        <li data-ui-photo="img/house_03.jpg" data-ui-id="3" data-ui-tag="Garden"></li>
-                        <li data-ui-photo="img/house_04.jpg" data-ui-id="4" data-ui-tag="Exterior"></li>
-                        <li data-ui-photo="img/house_05.jpg" data-ui-id="5" data-ui-tag="Exterior"></li>
+                        <li data-ui-src="img/house_01.jpg" data-ui-id="1" data-ui-tag="Exterior"></li>
+                        <li data-ui-src="img/house_02.jpg" data-ui-id="2" data-ui-tag=""></li>
+                        <li data-ui-src="img/house_03.jpg" data-ui-id="3" data-ui-tag="Garden"></li>
+                        <li data-ui-src="img/house_04.jpg" data-ui-id="4" data-ui-tag="Exterior"></li>
+                        <li data-ui-src="img/house_05.jpg" data-ui-id="5" data-ui-tag="Exterior"></li>
 
                         <!-- image ratio: 4:3-->
-                        <li data-ui-photo="img/image_01.jpg" data-ui-id="1" data-ui-tag="Coffee"></li>
-                        <li data-ui-photo="img/image_02.jpg" data-ui-id="2" data-ui-tag="Museum"></li>
-                        <li data-ui-photo="img/image_03.jpg" data-ui-id="3" data-ui-tag="Clouds"></li>
-                        <li data-ui-photo="img/image_04.jpg" data-ui-id="4" data-ui-tag="Forest"></li>
-                        <li data-ui-photo="img/image_05.jpg" data-ui-id="5" data-ui-tag="Classic Cars"></li>
-                        <li data-ui-photo="img/image_06.jpg" data-ui-id="6" data-ui-tag="Sport"></li>
-                        <li data-ui-photo="img/image_07.jpg" data-ui-id="7" data-ui-tag="Interior"></li>
-                        <li data-ui-photo="img/image_08.jpg" data-ui-id="8" data-ui-tag="Historical"></li>
-                        <li data-ui-photo="img/image_09.jpg" data-ui-id="9" data-ui-tag="California"></li>
-                        <li data-ui-photo="img/image_10.jpg" data-ui-id="10" data-ui-tag="Alaska"></li>
+                        <li data-ui-src="img/image_01.jpg" data-ui-id="1" data-ui-tag="Coffee"></li>
+                        <li data-ui-src="img/image_02.jpg" data-ui-id="2" data-ui-tag="Museum"></li>
+                        <li data-ui-src="img/image_03.jpg" data-ui-id="3" data-ui-tag="Clouds"></li>
+                        <li data-ui-src="img/image_04.jpg" data-ui-id="4" data-ui-tag="Forest"></li>
+                        <li data-ui-src="img/image_05.jpg" data-ui-id="5" data-ui-tag="Classic Cars"></li>
+                        <li data-ui-src="img/image_06.jpg" data-ui-id="6" data-ui-tag="Sport"></li>
+                        <li data-ui-src="img/image_07.jpg" data-ui-id="7" data-ui-tag="Interior"></li>
+                        <li data-ui-src="img/image_08.jpg" data-ui-id="8" data-ui-tag="Historical"></li>
+                        <li data-ui-src="img/image_09.jpg" data-ui-id="9" data-ui-tag="California"></li>
+                        <li data-ui-src="img/image_10.jpg" data-ui-id="10" data-ui-tag="Alaska"></li>
 
                     </ul>
                 </div>
