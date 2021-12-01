@@ -15,7 +15,6 @@ ui.tooltip = {
     // helper classnames
     nameOpen: 'ui-open',
     nameOpenEase: 'ui-open-ease',
-    nameClose: 'ui-close',
 
     // styling classnames
     stylesTarget: 'ui-round ui-ease-tooltip',
@@ -223,7 +222,7 @@ ui.tooltip = {
             dataTitle = that.getAttribute(ui.tooltip.dataTitle);
             if (dataTitle !== null && dataTitle !== '') {
 
-                if (type === ui.tooltip.nameClose) {
+                if (type === 'close') {
 
                     removeFnc(that);
 
@@ -257,9 +256,7 @@ ui.tooltip = {
                     if (e.type === 'mouseenter') {
                         type = ui.tooltip.nameOpen;
 
-                    } else {
-                        type = ui.tooltip.nameClose;
-                    }
+                    } else { type = 'close'; }
 
                     tooltipFnc(this, type);
 
@@ -321,7 +318,7 @@ ui.tooltip = {
 
                             function () {
 
-                                tooltipFnc(that, ui.tooltip.nameClose);
+                                tooltipFnc(that, 'close');
                                 ui.off(document, 'touchend.' + ui.tooltip.eventClose);
 
                             });

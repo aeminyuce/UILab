@@ -21,7 +21,7 @@ ui.lineChart = {
 
     // helper classnames
     nameLoaded: 'ui-loaded',
-    nameNotLoaded: 'ui-not-loaded',
+    nameNotLoaded: 'ui-no-loaded',
 
     nameResized: 'ui-resized',
 

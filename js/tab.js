@@ -16,6 +16,7 @@ ui.tab = {
     // helper classnames
     nameOpen: 'ui-open',
     nameOpenEase: 'ui-open-ease',
+
     nameActive: 'ui-active',
 
     // data attributes

@@ -9,7 +9,7 @@ ui.grid = {
     targetColsPrefix: 'ui-col-',
     targetOrdersPrefix: 'ui-order-',
 
-    // helper classnames
+    // main classnames
     nameFirstPrefix: '-first',
     nameLastPrefix: '-last',
 
