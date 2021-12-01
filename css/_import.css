@@ -7393,7 +7393,7 @@ html:not(.ui-ie) .ui-steps-bar li {
     max-width: 90%;
   }
 }
-/* tooltip*/
+/* tooltip */
 .ui-ease-tooltip {
   transition-property: top, left, opacity;
 }

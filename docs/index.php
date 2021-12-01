@@ -73,6 +73,11 @@
     <script src="../js/pie-chart.js?v=<?php echo filemtime('../js/pie-chart.js'); ?>"></script>
     <script src="../js/map.js?v=<?php echo filemtime('../js/map.js'); ?>"></script>
 
+    <!-- custom JS for creating classnames! -->
+    <script src="../js/custom/code.js?v=<?php echo filemtime('../js/custom/code.js'); ?>"></script>
+    <script src="../js/custom/classnames.js?v=<?php echo filemtime('../js/custom/classnames.js'); ?>"></script>
+    <script src="../js/custom/iconlist.js?v=<?php echo filemtime('../js/custom/iconlist.js'); ?>"></script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -229,9 +234,9 @@
                                     <svg class="ui-icon ui-m-5-r"><use href="#brackets-curly"/></svg>
                                     Classnames
                                 </a>
-                                <a href="?p=icons" class="ui-btn ui-btn-ghost ui-btn-sm-fluid ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle">
+                                <a href="?p=iconlist" class="ui-btn ui-btn-ghost ui-btn-sm-fluid ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle">
                                     <svg class="ui-icon ui-m-5-r"><use href="#draw"/></svg>
-                                    SVG Icons
+                                    Icon List
                                 </a>
                             </div>
                         </div>

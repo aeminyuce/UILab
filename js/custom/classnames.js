@@ -70,10 +70,12 @@ ui.classnames = {
         lastAddedWarning = '';
 
         // get elements
-        total = ui.find('.' + ui.classnames.nameTotal)[0];
-
         list = ui.find('.' + ui.classnames.targetList)[0];
         alerts = ui.find('.' + ui.classnames.targetAlerts)[0];
+
+        if (list === undefined || alerts === undefined) { return; }
+
+        total = ui.find('.' + ui.classnames.nameTotal)[0];
 
         // check all pages with xhr
         ui.ajax({

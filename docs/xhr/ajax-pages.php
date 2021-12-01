@@ -5,7 +5,7 @@
 
     include ('../code.php');
     include ('../classnames.php');
-    include ('../icons.php');
+    include ('../iconlist.php');
 
     // menu pages
     include ('../alerts.php');

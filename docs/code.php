@@ -1,5 +1,5 @@
 <!-- custom JS -->
-<script src="../js/custom/code.js?v=<?php echo filemtime('../js/custom/code.js'); ?>"></script>
+<!-- imported on index! -->
 
 <main class="ui-container">
     <div class="ui-row">
@@ -20,17 +20,17 @@
 
                 <div class="ui-fixed ui-fixed-xl ui-p-15 ui-sm-no-p ui-shadow-in-sm ui-round ui-theme-gray ui-fill-light-100">
 
-                    <div class="generate-holder ui-tab-content ui-form-lg ui-p-15 ui-open ui-open-ease">
+                    <div class="code-holder ui-tab-content ui-form-lg ui-p-15 ui-open ui-open-ease">
 
-                        <div class="generate-list ui-row ui-row-gap-sm-v">
+                        <div class="code-list ui-row ui-row-gap-sm-v">
                             <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
                                 <h4 class="ui-h4">Core</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form ui-form-disabled">
-                                            <input class="generate-toggle" type="checkbox" checked disabled>
+                                            <input class="code-toggle" type="checkbox" checked disabled>
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -47,10 +47,10 @@
 
                                 <h4 class="ui-h4">Grid System</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox" checked>
+                                            <input class="code-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -67,10 +67,10 @@
 
                                 <h4 class="ui-h4">Utilities</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox" checked>
+                                            <input class="code-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -108,10 +108,10 @@
 
                                 <h4 class="ui-h4">Typography</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox">
+                                            <input class="code-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -138,10 +138,10 @@
 
                                 <h4 class="ui-h4">Buttons</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox">
+                                            <input class="code-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -179,10 +179,10 @@
 
                                 <h4 class="ui-h4">Forms</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox">
+                                            <input class="code-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -213,10 +213,10 @@
 
                                 <h4 class="ui-h4">Icons</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox" checked>
+                                            <input class="code-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -236,10 +236,10 @@
 
                                 <h4 class="ui-h4">Layout</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox">
+                                            <input class="code-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -339,10 +339,10 @@
 
                                 <h4 class="ui-h4">Charts</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox">
+                                            <input class="code-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -383,10 +383,10 @@
 
                                 <h4 class="ui-h4">Components</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox">
+                                            <input class="code-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -473,10 +473,10 @@
 
                                 <h4 class="ui-h4">Themes</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox" checked>
+                                            <input class="code-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -501,27 +501,27 @@
                                     <textarea class="ui-color-black-50 ui-font-16 ui-p-10" rows="6"></textarea>
                                     <div class="ui-border-t ui-border-dual">
                                         <div class="ui-inline-block ui-p-5-r">
-                                            <button title="Clear Form" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
+                                            <button title="Clear Form" class="code-clear ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
                                             </button>
-                                            <button title="Copy to Clipboard" class="generate-copy ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
+                                            <button title="Copy to Clipboard" class="code-copy ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#files"/></svg>
                                             </button>
                                         </div>
                                         File size:
-                                        <b class="generate-size">0 Kb</b>
+                                        <b class="code-size">0.00 kb</b>
                                     </div>
                                 </div>
 
                                 <div class="ui-align-c ui-ease-1st-btn">
                                     <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form ui-form-inline-xs">
-                                        <input class="generate-import ui-cursor-pointer" name="less" type="file">
+                                        <input class="code-import ui-cursor-pointer" name="less" type="file">
                                         <span class="ui-btn ui-circle ui-block ui-ease-btn">
                                             <span class="ui-inline-block">Import LESS File</span>
                                             <svg class="ui-icon ui-m-5-l"><use href="#import"/></svg>
                                         </span>
                                     </div>
-                                    <button name="less" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">
+                                    <button name="less" class="code-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">
                                         Generate LESS
                                         <svg class="ui-icon ui-m-5-l"><use href="#code"/></svg>
                                     </button>
@@ -532,17 +532,17 @@
 
                     </div>
 
-                    <div class="generate-holder ui-tab-content ui-form-lg ui-p-15">
+                    <div class="code-holder ui-tab-content ui-form-lg ui-p-15">
 
-                        <div class="generate-list ui-row ui-row-gap-sm-v">
+                        <div class="code-list ui-row ui-row-gap-sm-v">
                             <div class="ui-col-3 ui-col-md-4 ui-col-sm-6">
 
                                 <h4 class="ui-h4">Core</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox" checked>
+                                            <input class="code-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -559,10 +559,10 @@
 
                                 <h4 class="ui-h4">Grid System</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox" checked>
+                                            <input class="code-toggle" type="checkbox" checked>
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -579,10 +579,10 @@
 
                                 <h4 class="ui-h4">Buttons</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox">
+                                            <input class="code-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -616,10 +616,10 @@
 
                                 <h4 class="ui-h4">Forms</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox">
+                                            <input class="code-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -678,10 +678,10 @@
 
                                 <h4 class="ui-h4">Layout</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox">
+                                            <input class="code-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -708,10 +708,10 @@
 
                                 <h4 class="ui-h4">Components</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox">
+                                            <input class="code-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -815,10 +815,10 @@
 
                                 <h4 class="ui-h4">Charts</h4>
 
-                                <div class="generate-forms ui-m-20-b ui-block-1st">
+                                <div class="code-forms ui-m-20-b ui-block-1st">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox">
+                                            <input class="code-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -864,30 +864,30 @@
                                     <textarea class="ui-color-black-50 ui-font-16 ui-p-10" rows="6"></textarea>
                                     <div class="ui-border-t ui-border-dual">
                                         <div class="ui-inline-block ui-p-5-r">
-                                            <button title="Clear Form" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
+                                            <button title="Clear Form" class="code-clear ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
                                             </button>
-                                            <button title="Copy to Clipboard" class="generate-copy ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
+                                            <button title="Copy to Clipboard" class="code-copy ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#files"/></svg>
                                             </button>
-                                            <button title="Minify code" name="js" class="generate-min ui-btn ui-btn-square ui-btn-ghost ui-ease-btn">
+                                            <button title="Minify code" name="js" class="code-min ui-btn ui-btn-square ui-btn-ghost ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#code"/></svg>
                                             </button>
                                         </div>
                                         File size:
-                                        <b class="generate-size">0 Kb</b>
+                                        <b class="code-size">0.00 kb</b>
                                     </div>
                                 </div>
 
                                 <div class="ui-align-c ui-ease-1st-btn">
                                     <div class="ui-file ui-no-border ui-round ui-circle ui-no-border ui-ease-form ui-form-inline-xs">
-                                        <input class="generate-import ui-cursor-pointer" name="js" type="file">
+                                        <input class="code-import ui-cursor-pointer" name="js" type="file">
                                         <span class="ui-btn ui-circle ui-block ui-ease-btn">
                                             <span class="ui-inline-block">Import JS File</span>
                                             <svg class="ui-icon ui-m-5-l"><use href="#import"/></svg>
                                         </span>
                                     </div>
-                                    <button name="js" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">
+                                    <button name="js" class="code-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100">
                                         Generate JS
                                         <svg class="ui-icon ui-m-5-l"><use href="#code"/></svg>
                                     </button>
@@ -898,15 +898,15 @@
 
                     </div>
 
-                    <div class="generate-holder ui-tab-content ui-form-lg ui-p-15">
+                    <div class="code-holder ui-tab-content ui-form-lg ui-p-15">
 
-                        <div class="generate-list ui-row ui-row-gap-sm-v">
+                        <div class="code-list ui-row ui-row-gap-sm-v">
                             <div class="ui-col-12">
 
-                                <div class="generate-forms ui-m-20-b">
+                                <div class="code-forms ui-m-20-b">
                                     <label class="ui-label ui-m-5-b ui-opacity ui-ease-opacity">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input class="generate-toggle" type="checkbox">
+                                            <input class="code-toggle" type="checkbox">
                                             <i class="ui-form-state"></i>
                                         </span>
                                         <span class="ui-color-black-50">Toggle Select All</span>
@@ -1004,23 +1004,23 @@
                                     <textarea class="ui-color-black-50 ui-font-16 ui-p-10" rows="6"></textarea>
                                     <div class="ui-border-t ui-border-dual">
                                         <div class="ui-inline-block ui-p-5-r">
-                                            <button title="Clear Form" class="generate-clear ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
+                                            <button title="Clear Form" class="code-clear ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#trash"/></svg>
                                             </button>
-                                            <button title="Copy to Clipboard" class="generate-copy ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
+                                            <button title="Copy to Clipboard" class="code-copy ui-btn ui-btn-square ui-btn-ghost ui-float-l ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#files"/></svg>
                                             </button>
-                                            <button title="Minify code" name="icon" class="generate-min ui-btn ui-btn-square ui-btn-ghost ui-ease-btn">
+                                            <button title="Minify code" name="icon" class="code-min ui-btn ui-btn-square ui-btn-ghost ui-ease-btn">
                                                 <svg class="ui-icon"><use href="#code"/></svg>
                                             </button>
                                         </div>
                                         File size:
-                                        <b class="generate-size">0 Kb</b>
+                                        <b class="code-size">0.00 kb</b>
                                     </div>
                                 </div>
 
                                 <div class="ui-align-c ui-ease-1st-btn">
-                                    <button name="php" class="generate-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100" data-ui-type="icons">
+                                    <button name="php" class="code-btn ui-btn ui-btn-xs-fluid ui-round ui-fill-dark-100" data-ui-type="icons">
                                         Generate Icons
                                         <svg class="ui-icon ui-m-5-l"><use href="#code"/></svg>
                                     </button>

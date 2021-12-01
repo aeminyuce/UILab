@@ -1,8 +1,8 @@
 <!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/icons.css?v=<?php echo filemtime('../css/custom/icons.css'); ?>"/>
+<link rel="stylesheet" href="../css/custom/iconlist.css?v=<?php echo filemtime('../css/custom/iconlist.css'); ?>"/>
 
 <!-- custom JS -->
-<script src="../js/custom/icons.js?v=<?php echo filemtime('../js/custom/icons.js'); ?>"></script>
+<!-- imported on index! -->
 
 <main class="ui-container">
     <div class="ui-fixed ui-fixed-xl">
@@ -19,33 +19,33 @@
                     <div class="ui-row">
                         <div class="ui-col-4">
                             <h4 class="ui-h4 ui-m-10-b">Change Weight</h4>
-                            <div class="iconlist-modifiers ui-btn-holder ui-form-lg ui-m-20-b ui-theme-sub ui-form-lg ui-ease-1st-btn">
-                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Bold" data-weight="bold" class="ui-btn ui-round">
-                                    <svg class="ui-icon ui-icon-bold ui-no-opacity"><use href="#remove"/></svg>
+                            <div class="iconlist-tools ui-btn-holder ui-form-lg ui-icons-no-opacity ui-m-20-b ui-theme-sub ui-form-lg ui-ease-1st-btn">
+                                <button title="Bold" data-ui-weight="bold" class="ui-btn ui-round">
+                                    <svg class="ui-icon ui-icon-bold"><use href="#remove"/></svg>
                                 </button>
-                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Semibold" daui-weight="semibold" class="ui-btn ui-round">
-                                    <svg class="ui-icon ui-icon-bold ui-no-opacity"><use href="#remove"/></svg>
+                                <button title="Semibold" data-ui-weight="semibold" class="ui-btn ui-round">
+                                    <svg class="ui-icon ui-icon-bold"><use href="#remove"/></svg>
                                 </button>
-                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Auto Weight" daui-weight="" class="ui-btn ui-round ui-fill-dark-100">
+                                <button title="Auto Weight" data-ui-weight="" class="ui-btn ui-round ui-fill-dark-100">
                                     Auto
                                 </button>
-                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Light" data-weight="light" class="ui-btn ui-round">
-                                    <svg class="ui-icon ui-icon-light ui-no-opacity"><use href="#remove"/></svg>
+                                <button title="Light" data-ui-weight="light" class="ui-btn ui-round">
+                                    <svg class="ui-icon ui-icon-light"><use href="#remove"/></svg>
                                 </button>
-                                <button data-ui-tooltip="b" data-ui-only="desktop" title="Thin" data-weight="thin" class="ui-btn ui-round">
-                                    <svg class="ui-icon ui-icon-thin ui-no-opacity"><use href="#remove"/></svg>
+                                <button title="Thin" data-ui-weight="thin" class="ui-btn ui-round">
+                                    <svg class="ui-icon ui-icon-thin"><use href="#remove"/></svg>
                                 </button>
                             </div>
                         </div>
                         <div class="ui-col-8">
                             <h4 class="ui-h4 ui-m-10-b">Change Size</h4>
-                            <div class="iconlist-modifiers ui-btn-holder ui-form-lg ui-m-20-b ui-theme-sub ui-form-lg ui-ease-1st-btn">
-                                <button data-size="xxl" class="ui-btn ui-round ui-fill-dark-100">XXL</button>
-                                <button data-size="xl" class="ui-btn ui-round">XL</button>
-                                <button data-size="lg" class="ui-btn ui-round">L</button>
-                                <button data-size="" class="ui-btn ui-round">-</button>
-                                <button data-size="sm" class="ui-btn ui-round">SM</button>
-                                <button data-size="xs" class="ui-btn ui-round">XS</button>
+                            <div class="iconlist-tools ui-btn-holder ui-form-lg ui-m-20-b ui-theme-sub ui-form-lg ui-ease-1st-btn">
+                                <button data-ui-size="xxl" class="ui-btn ui-round ui-fill-dark-100">XXL</button>
+                                <button data-ui-size="xl" class="ui-btn ui-round">XL</button>
+                                <button data-ui-size="lg" class="ui-btn ui-round">L</button>
+                                <button data-ui-size="" class="ui-btn ui-round">-</button>
+                                <button data-ui-size="sm" class="ui-btn ui-round">SM</button>
+                                <button data-ui-size="xs" class="ui-btn ui-round">XS</button>
                             </div>
                         </div>
                     </div>
