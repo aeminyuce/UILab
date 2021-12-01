@@ -3760,8 +3760,10 @@ button.ui-font-underline:hover {
   font-size: 90%;
   background-color: hsl(343, 37%, 96%);
   background-color: var(--ui-code-bg);
+  padding-right: 4px;
+  padding-left: 4px;
   display: inline-block;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 .ui-pre {
   color: hsl(200, 100%, 80%);
