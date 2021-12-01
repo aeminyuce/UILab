@@ -3,6 +3,10 @@
     // home
     include ('../index.php');
 
+    include ('../code.php');
+    include ('../classnames.php');
+    include ('../icons.php');
+
     // menu pages
     include ('../alerts.php');
     include ('../avatars.php');
@@ -12,26 +16,25 @@
     include ('../card.php');
     include ('../carousel.php');
     include ('../charts.php');
-    include ('../classnames.php');
     include ('../countdown.php');
+    include ('../datatable.php');
     include ('../dropdown.php');
     include ('../error-pages.php');
     include ('../forms.php');
+    include ('../gallery.php');
     include ('../grid.php');
-    include ('../datatable.php');
     include ('../imgupload.php');
     include ('../listgroup.php');
     include ('../listings.php');
     include ('../loading-mask.php');
+    include ('../map.php');
     include ('../modal.php');
     include ('../notifier.php');
-    include ('../gallery.php');
     include ('../photoslide.php');
     include ('../pricing-tables.php');
     include ('../progress-bar.php');
     include ('../steps.php');
     include ('../stripes.php');
-    include ('../map.php');
     include ('../tables.php');
     include ('../tab.php');
     include ('../themes.php');

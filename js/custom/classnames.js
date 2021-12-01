@@ -35,6 +35,7 @@ ui.classnames = {
 
     jsTarget: 'target',
     jsName: 'name',
+    jsStyles: 'styles',
 
     jsIgnore: 'Prefix|Suffix',
 
@@ -86,35 +87,43 @@ ui.classnames = {
 
             function () {
 
-                var i, re, reStart, reDuplicate, beforeLoaded, loaded, str, strStart, strLength, html, title, items, jsModule, jsName;
+                var i, j, re, reStart, reDuplicate, loaded, str, strStart, strLength, html, title, items, jsClass, jsModule, jsKey, jsStyleList;
 
                 // load js classnames
-                beforeLoaded = [];
                 loaded = [];
 
-                // target+\w*|target|name+\w*
-                re = ui.classnames.jsTarget + '+\\w*|' + ui.classnames.jsTarget + '|' + ui.classnames.jsName + '+\\w*';
+                re = ui.classnames.jsTarget + '+\\w*|' + ui.classnames.jsTarget + '|' + ui.classnames.jsName + '+\\w*' + '|' + ui.classnames.jsStyles + '+\\w*';
                 re = new RegExp(re, 'g');
 
                 for (jsModule in ui) {
-                    for (jsName in ui[jsModule]) {
+                    for (jsKey in ui[jsModule]) {
 
-                        if ( jsName.match(re) !== null && jsName.match(ui.classnames.jsIgnore) === null) {
-                            beforeLoaded.push(ui[jsModule][jsName]);
+                        if ( jsKey.match(re) !== null && jsKey.match(ui.classnames.jsIgnore) === null) {
+
+                            jsClass = ui[jsModule][jsKey];
+                            if (typeof jsClass === 'string') { // remove objects
+
+                                jsStyleList = jsClass.toString().split(' ');
+                                if (jsStyleList.length > 1) { // check styles for multiple classnames
+
+                                    for (j = 0; j < jsStyleList.length; j++) {
+                                        loaded.push(jsStyleList[j]);
+                                    }
+
+                                } else {
+
+                                    if (jsClass !== '') { // remove empty styles
+                                        loaded.push(jsClass);
+                                    }
+
+                                }
+
+                            }
+
                         }
 
                     }
                 }
-
-                ui.each(beforeLoaded,
-
-                    function () {
-
-                        if (typeof this === 'string') { // remove object targets
-                            loaded.push(this);
-                        }
-
-                    });
 
                 // load html classnames
                 ui.each(ui.ajax.classNames,
@@ -383,9 +392,7 @@ ui.classnames = {
                 total.textContent = arr.filtered.length + ' / ' + created;
 
                 // empty variables
-                beforeLoaded = [];
                 loaded = [];
-
                 arr = [];
 
                 html = "";
