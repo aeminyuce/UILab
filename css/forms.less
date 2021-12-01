@@ -50,6 +50,8 @@
 @form-error-bg:                        fade(@red, 10%);
 @form-warning-bg:                      fade(@yellow, 10%);
 
+@form-light-placeholder-color:         fade(@white, 40%);
+
 @form-custom-state-size:               14px;
 @indeterminate-state-size:             4px;
 @switch-size:                          44px;
@@ -386,6 +388,10 @@ html:not(.ui-no-effects) {
 
         & > input,& > select:not(:focus),& > textarea,.ui-icon { color: @white; }
         & > input:-webkit-autofill:not(:focus) { -webkit-text-fill-color: @white !important; }
+
+        &.ui-input input,&.ui-textarea textarea {
+            &::placeholder { color: @form-light-placeholder-color; }
+        }
     }
 
     &focus {

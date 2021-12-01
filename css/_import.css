@@ -5373,6 +5373,10 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-form-light > input:-webkit-autofill:not(:focus) {
   -webkit-text-fill-color: hsl(0, 0%, 100%) !important;
 }
+.ui-form-light.ui-input input::placeholder,
+.ui-form-light.ui-textarea textarea::placeholder {
+  color: hsla(0, 0%, 100%, 0.4);
+}
 .ui-form-focus {
   border-color: hsla(0, 0%, 0%, 0.35);
   border-color: var(--ui-form-focus-border);
@@ -5812,8 +5816,8 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   background-color: hsla(0, 0%, 0%, 0.035);
   background-color: var(--ui-textarea-counter-bg);
 }
-.ui-textarea:not(.ui-textarea-toggle)[data-ui-counter].ui-change:before {
-  content: attr(data-ui-change);
+.ui-textarea:not(.ui-textarea-toggle)[data-ui-counter].ui-changed:before {
+  content: attr(data-ui-changed);
 }
 .ui-textarea:not(.ui-textarea-toggle)[data-ui-counter] textarea {
   margin-bottom: 13px;
