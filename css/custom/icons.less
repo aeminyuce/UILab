@@ -1,28 +1,28 @@
 /* icons */ @import (reference) '../ui.less';
 
-@icons-list-color:                      hsl(214, 10%, 32%);
-@icons-list-color-dark:                 @white;
+@iconlist-color:                      hsl(214, 10%, 32%);
+@iconlist-color-dark:                   @white;
 
-@icons-list-bg:                         fade(@black, 7%);
-@icons-list-bg-dark:                    @card-bg-dark;
+@iconlist-bg:                           fade(@black, 7%);
+@iconlist-bg-dark:                      @card-bg-dark;
 
-@icons-list-hover-bg:                   fade(@black, 12%);
-@icons-list-hover-bg-dark:              fade(@white, 20%);
+@iconlist-hover-bg:                     fade(@black, 12%);
+@iconlist-hover-bg-dark:                fade(@white, 20%);
 
 @icons-name-color:                      @black-50;
 @icons-name-color-dark:                 fade(@white, 50%);
 
 ._icons-vars () {
-    --ui-icons-list-color: @icons-list-color;
-    --ui-icons-list-bg: @icons-list-bg;
-    --ui-icons-list-hover-bg: @icons-list-hover-bg;
+    --ui-iconlist-color: @iconlist-color;
+    --ui-iconlist-bg: @iconlist-bg;
+    --ui-iconlist-hover-bg: @iconlist-hover-bg;
 
     --ui-icons-name-color: @icons-name-color;
 }
 ._icons-vars-dark () {
-    --ui-icons-list-color: @icons-list-color-dark;
-    --ui-icons-list-bg: @icons-list-bg-dark;
-    --ui-icons-list-hover-bg: @icons-list-hover-bg-dark;
+    --ui-iconlist-color: @iconlist-color-dark;
+    --ui-iconlist-bg: @iconlist-bg-dark;
+    --ui-iconlist-hover-bg: @iconlist-hover-bg-dark;
 
     --ui-icons-name-color: @icons-name-color-dark;
 }
@@ -42,15 +42,15 @@
     }
 }
 
-.icons-list {
+.iconlist {
     margin: -1px; display: flex; flex-wrap: wrap; justify-content: center;
 
     &:not(:last-child) { margin-bottom: 30px; }
 
     li {
-        ._color-var(icons-list-color); width: 160px; ._bg-var(icons-list-bg); padding: 10px 6px; margin: 1px; border-radius: @round; cursor: pointer;
+        ._color-var(iconlist-color); width: 160px; ._bg-var(iconlist-bg); padding: 10px 6px; margin: 1px; border-radius: @round; cursor: pointer;
 
-        .ui-desktop &:hover { ._bg-var(icons-list-hover-bg); }
+        .ui-desktop &:hover { ._bg-var(iconlist-hover-bg); }
         & > span { ._color-var(icons-name-color); font-size: @font-13; white-space: nowrap; text-overflow: ellipsis; line-height: normal; min-width: 129px; width: 100%; margin-top: 10px; overflow: hidden; display: block; }
 
         .ui-icon:not([class*="ui-animate-"]) { box-sizing: content-box; }

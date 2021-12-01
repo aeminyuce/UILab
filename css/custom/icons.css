@@ -1,41 +1,41 @@
 /* icons */
 [data-ui-mode="light"] {
-  --ui-icons-list-color: hsl(214, 10%, 32%);
-  --ui-icons-list-bg: hsla(0, 0%, 0%, 0.07);
-  --ui-icons-list-hover-bg: hsla(0, 0%, 0%, 0.12);
+  --ui-iconlist-color: hsl(214, 10%, 32%);
+  --ui-iconlist-bg: hsla(0, 0%, 0%, 0.07);
+  --ui-iconlist-hover-bg: hsla(0, 0%, 0%, 0.12);
   --ui-icons-name-color: hsla(0, 0%, 0%, 0.5);
 }
 [data-ui-mode="dark"] {
-  --ui-icons-list-color: hsl(0, 0%, 100%);
-  --ui-icons-list-bg: hsl(220, 8%, 21%);
-  --ui-icons-list-hover-bg: hsla(0, 0%, 100%, 0.2);
+  --ui-iconlist-color: hsl(0, 0%, 100%);
+  --ui-iconlist-bg: hsl(220, 8%, 21%);
+  --ui-iconlist-hover-bg: hsla(0, 0%, 100%, 0.2);
   --ui-icons-name-color: hsla(0, 0%, 100%, 0.5);
 }
-.icons-list {
+.iconlist {
   margin: -1px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.icons-list:not(:last-child) {
+.iconlist:not(:last-child) {
   margin-bottom: 30px;
 }
-.icons-list li {
+.iconlist li {
   color: hsl(214, 10%, 32%);
-  color: var(--ui-icons-list-color);
+  color: var(--ui-iconlist-color);
   width: 160px;
   background-color: hsla(0, 0%, 0%, 0.07);
-  background-color: var(--ui-icons-list-bg);
+  background-color: var(--ui-iconlist-bg);
   padding: 10px 6px;
   margin: 1px;
   border-radius: 10px;
   cursor: pointer;
 }
-.ui-desktop .icons-list li:hover {
+.ui-desktop .iconlist li:hover {
   background-color: hsla(0, 0%, 0%, 0.12);
-  background-color: var(--ui-icons-list-hover-bg);
+  background-color: var(--ui-iconlist-hover-bg);
 }
-.icons-list li > span {
+.iconlist li > span {
   color: hsla(0, 0%, 0%, 0.5);
   color: var(--ui-icons-name-color);
   font-size: 13px;
@@ -48,6 +48,6 @@
   overflow: hidden;
   display: block;
 }
-.icons-list li .ui-icon:not([class*="ui-animate-"]) {
+.iconlist li .ui-icon:not([class*="ui-animate-"]) {
   box-sizing: content-box;
 }

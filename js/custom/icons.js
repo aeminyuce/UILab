@@ -7,7 +7,7 @@ ui.onload(function () {
     var buttons, icons, totalIcons;
 
     totalIcons = 0;
-    buttons = ui.find('.icon-modifiers .ui-btn');
+    buttons = ui.find('.iconlist-modifiers .ui-btn');
 
     ui.on(buttons,
         'click',
@@ -17,7 +17,7 @@ ui.onload(function () {
             var that, list, bttns, size, weight;
 
             that = this;
-            list = ui.find('.icons-list');
+            list = ui.find('.iconlist');
             bttns = ui.find('.ui-btn', this.parentElement);
 
             ui.removeClass(bttns, 'ui-fill-dark-100');
@@ -51,7 +51,7 @@ ui.onload(function () {
 
         });
 
-    ui.each('.icons-list',
+    ui.each('.iconlist',
 
         function () {
 
@@ -66,9 +66,9 @@ ui.onload(function () {
 
         });
 
-    ui.find('.total')[0].textContent = '(Total ' + totalIcons + ' icons)';
+    ui.find('.iconlist-total')[0].textContent = '(Total ' + totalIcons + ' icons)';
 
-    icons = ui.find('.icons-list li');
+    icons = ui.find('.iconlist li');
     ui.on(icons,
         'click',
 
