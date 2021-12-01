@@ -17,8 +17,6 @@ ui.carousel = {
     nameHalfSize: 'ui-carousel-half',
 
     nameAnimate: 'ui-carousel-animate',
-    namePauseAnimates: 'ui-pause-animates',
-
     nameContent: 'ui-carousel-content',
 
     namePrev: 'ui-carousel-prev',
@@ -35,6 +33,8 @@ ui.carousel = {
     nameShow: 'ui-show',
     nameFaded: 'ui-faded',
     nameActive: 'ui-active',
+
+    nameResized: 'ui-resized',
 
     nameFiltered: 'ui-filtered',
     nameNavSelected: 'ui-selected',
@@ -157,7 +157,7 @@ ui.carousel = {
 
             if (elems.length === 0) { return; }
 
-            if (ui.closest(content, '.' + ui.carousel.namePauseAnimates)[0] !== undefined) { // detect carousel is resizing
+            if (ui.closest(content, '.' + ui.carousel.nameResized)[0] !== undefined) { // detect carousel is resizing
                 return;
             }
 
@@ -393,7 +393,7 @@ ui.carousel = {
                     var i = Number(this.getAttribute(ui.carousel.dataID));
                     if (i === null) { return; }
 
-                    ui.addClass(this, ui.carousel.namePauseAnimates);
+                    ui.addClass(this, ui.carousel.nameResized);
                     carouselModifier(i, this, 'resize');
 
                     slider = ui.find('.' + ui.carousel.targetSlider, this)[0];
@@ -416,7 +416,7 @@ ui.carousel = {
                     var i = Number(this.getAttribute(ui.carousel.dataID));
                     if (i === null) { return; }
 
-                    ui.removeClass(this, ui.carousel.namePauseAnimates);
+                    ui.removeClass(this, ui.carousel.nameResized);
 
                     if (autoTimer[i] !== null && autoTimer[i] !== undefined) {
 
