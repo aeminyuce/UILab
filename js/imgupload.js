@@ -8,26 +8,26 @@ ui.imgUpload = {
     // targets
     target: 'ui-imgupload',
 
-    targetImages: 'ui-photo',
-    targetNames: 'ui-name',
-    targetInfos: 'ui-info',
-    targetTags: 'ui-tag',
+    targetImages: 'ui-imgupload-src',
+    targetNames: 'ui-imgupload-name',
+    targetInfos: 'ui-imgupload-info',
+    targetTags: 'ui-imgupload-tag',
 
     // main classnames
     nameList: 'ui-imgupload-list',
-    nameDrop: 'ui-drop-highlight',
+    nameDrop: 'ui-imgupload-drop',
+
+    nameLoading: 'ui-imgupload-loading',
+    nameUploading: 'ui-imgupload-uploading',
 
     // helper classnames
     nameOpen: 'ui-open',
     nameOpenEase: 'ui-open-ease',
 
-    nameLoading: 'ui-loading',
-    nameUploading: 'ui-uploading',
-
     // tags
     tagList: 'li',
 
-    tagNames: 'b',
+    tagNames: 'span',
     tagInfos: 'i',
 
     // values
@@ -55,8 +55,8 @@ ui.imgUpload = {
     msgError: 'Your files not saved! Please, check your connection and try again.',
 
     // data attributes
+    dataSrc: 'data-ui-src',
     dataID: 'data-ui-id',
-    dataImg: 'data-ui-photo',
     dataTag: 'data-ui-tag',
 
     // formData API names
@@ -433,7 +433,7 @@ ui.imgUpload = {
 
                     function () {
 
-                        img = this.getAttribute(ui.imgUpload.dataImg);
+                        img = this.getAttribute(ui.imgUpload.dataSrc);
                         if (img !== null && img !== '') {
 
                             id = this.getAttribute(ui.imgUpload.dataID);

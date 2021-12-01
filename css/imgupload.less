@@ -79,11 +79,11 @@
 .ui-imgupload {
     ._bg-var(card-bg); overflow: hidden; position: relative;
 
-    &.ui-loading,&.ui-uploading {
+    &.ui-imgupload-loading,&.ui-imgupload-uploading {
         .ui-file .ui-btn,[type="submit"] { background-image: @imgupload-loading-bg; background-size: @imgupload-loading-stripe-size @imgupload-loading-stripe-size; animation: ui-imgupload-loader 1s linear infinite; }
     }
 
-    &.ui-drop-highlight {
+    &-drop {
         ._bg-var(imgupload-drop-bg);
 
         .ui-imgupload-list {
@@ -107,20 +107,23 @@
                 box-sizing: border-box; padding: (@imgupload-padding / 2);
 
                 &.ui-open-ease { opacity: 0; }
-                .ui-photo {
-                    display: block; clear: both; position: relative;
 
-                    &:not(:first-child) { margin-top: (@imgupload-padding / 2); }
-                    &:not(:last-child) { margin-bottom: (@imgupload-padding / 2); }
+                .ui-imgupload- {
+                    &src {
+                        display: block; clear: both; position: relative;
 
-                    img { vertical-align: middle; width: auto; max-width: 100%; height: auto; max-height: 100%; display: inline-block; border: 0; position: absolute; top: 50%; left: 50%; box-shadow: 0 @imgupload-list-img-shadow-size @imgupload-list-img-shadow; transform: translate(-50%,-50%); }
+                        &:not(:first-child) { margin-top: (@imgupload-padding / 2); }
+                        &:not(:last-child) { margin-bottom: (@imgupload-padding / 2); }
+
+                        img { vertical-align: middle; width: auto; max-width: 100%; height: auto; max-height: 100%; display: inline-block; border: 0; position: absolute; top: 50%; left: 50%; box-shadow: 0 @imgupload-list-img-shadow-size @imgupload-list-img-shadow; transform: translate(-50%,-50%); }
+                    }
+
+                    &name { white-space: nowrap; text-overflow: ellipsis; line-height: @imgupload-list-name-min-height; min-height: @imgupload-list-name-min-height; overflow: hidden; display: block; }
+
+                    &info,&tag { vertical-align: middle; display: inline-block; }
+                    &info { color: @imgupload-list-info-color; padding: @imgupload-list-info-padding; }
+                    &tag { ._color-var(imgupload-list-tag-color); font-size: @imgupload-list-tag-font-size; white-space: nowrap; padding: @imgupload-list-tag-padding; ._bg-var(imgupload-list-tag-bg); border-radius: @imgupload-list-tag-radius; }
                 }
-
-                .ui-name { white-space: nowrap; text-overflow: ellipsis; line-height: @imgupload-list-name-min-height; min-height: @imgupload-list-name-min-height; overflow: hidden; display: block; }
-
-                .ui-info,.ui-tag { vertical-align: middle; display: inline-block; }
-                .ui-info { color: @imgupload-list-info-color; padding: @imgupload-list-info-padding; }
-                .ui-tag { ._color-var(imgupload-list-tag-color); font-size: @imgupload-list-tag-font-size; white-space: nowrap; padding: @imgupload-list-tag-padding; ._bg-var(imgupload-list-tag-bg); border-radius: @imgupload-list-tag-radius; }
             }
         }
 
@@ -150,14 +153,14 @@
 @media (@sm-start) {
     .ui-imgupload-list {
         li {
-            .ui-photo { min-height: @imgupload-list-img-min-height; }
+            .ui-imgupload-src { min-height: @imgupload-list-img-min-height; }
         }
     }
 }
 @media (@xs-finish) {
     .ui-imgupload-list {
         li {
-            .ui-photo { min-height: @imgupload-list-img-min-height-xs; }
+            .ui-imgupload-src { min-height: @imgupload-list-img-min-height-xs; }
         }
     }
 }

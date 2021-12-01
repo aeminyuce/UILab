@@ -12,9 +12,8 @@
 
 @modal-footer-height:                   (@btn-default + (@modal-padding * 2));
 @modal-footer-z-index:                  9;
-@modal-footer-bg:                       fade(@black, 4%);
 
-@modal-close-icon-size:                 12px;
+@modal-close-icon-size:                 14px;
 @modal-close-z-index:                   10;
 @modal-close-bg:                        fade(@black, 65%);
 @modal-close-hover-bg:                  lighten(@black, 20%);
@@ -23,7 +22,7 @@
 
 @modal-content-open-slide:              10px;
 @modal-content-min-width:               (@layout-min - 40px);
-@modal-content-margin:                  15px;
+@modal-content-margin:                  ((@btn-default / 2) + 5);
 @modal-content-lg-min-height:           300px;
 @modal-content-md-min-height:           240px;
 @modal-content-sm-min-height:           120px;
@@ -79,7 +78,7 @@
                     &-iframe { border-radius: (@round - 1); }
                 }
             }
-            .ui-close-modal {
+            .ui-modal-close {
                 background-color: @modal-close-bg; top: -(@btn-default / 2); right: -(@btn-default / 2);
 
                 .ui-desktop &:hover { background-color: @modal-close-hover-bg; }
@@ -92,7 +91,7 @@
                 .ui-modal-header {
                     .ui-modal-buttons { padding-right: (@btn-lg + (@modal-padding / 2)); }
                 }
-                .ui-close-modal {
+                .ui-modal-close {
                     background-color: @modal-close-fullscreen-bg; top: @modal-padding; right: @modal-padding;
 
                     .ui-desktop &:hover { background-color: @modal-close-fullscreen-hover-bg; }
@@ -109,16 +108,16 @@
         &.ui-round {
             .ui-modal { border-radius: (@round - 1); }
         }
-        &.ui-has {
-            &-header {
+        &.ui-modal-has- {
+            &header {
                 .ui-modal { padding-top: @modal-header-height !important; }
             }
-            &-footer {
+            &footer {
                 .ui-modal { padding-bottom: @modal-footer-height !important; }
             }
         }
 
-        .ui-close-modal {
+        .ui-modal-close {
             color: @white !important; text-align: center; width: @btn-default; height: @btn-default; border: 0; border-radius: 100%; position: absolute; z-index: @modal-close-z-index; cursor: pointer;
 
             .ui-icon { ._icon(@modal-close-icon-size); }
@@ -135,7 +134,7 @@
         & > .ui-fixed { padding-right: 0; padding-left: 0; margin-top: -@modal-padding; margin-bottom: -@modal-padding; }
     }
     &-header,&-footer {
-        text-overflow: ellipsis; white-space: nowrap; background-color: @modal-footer-bg; padding: @modal-padding; overflow: hidden; position: absolute; right: 0; left: 0;
+        text-overflow: ellipsis; white-space: nowrap; ._bg-var(highlighted); padding: @modal-padding; overflow: hidden; position: absolute; right: 0; left: 0;
 
         .ui-btn-lg,&.ui-form-lg .ui-btn { margin: ((@btn-default - @btn-lg) / 2) 0; }
         .ui-btn {
@@ -148,7 +147,7 @@
         height: @modal-header-height; top: 0; z-index: @modal-header-z-index;
 
         .ui- {
-            &h1,&h2,&h3,&h4,&h5,&h6 { font-size: @font-18 !important; text-overflow: ellipsis; line-height: @btn-default; max-width: 100%; overflow: hidden; float: left; }
+            &h1,&h2,&h3,&h4,&h5,&h6 { font-size: @font-18 !important; text-overflow: ellipsis; line-height: @btn-default; max-width: 100%; margin-bottom: 0 !important; overflow: hidden; float: left; }
         }
     }
 

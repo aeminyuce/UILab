@@ -23,7 +23,7 @@ ui.photoGallery = {
 
     namePreviewBg: 'ui-gallery-preview-bg',
 
-    namePreviewLoader: 'ui-preview-loader',
+    namePreviewLoader: 'ui-gallery-preview-loader',
     namePreviewInfo: 'ui-gallery-preview-info',
     namePreviewZoom: 'ui-gallery-preview-zoom',
 
@@ -56,7 +56,7 @@ ui.photoGallery = {
     prevIcon: 'angle-left',
     nextIcon: 'angle-right',
     loaderIcon: 'loader-line',
-    errorIcon: 'no',
+    errorIcon: 'ban',
 
     // values
     imgVerRatio: '1.33',

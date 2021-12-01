@@ -948,7 +948,7 @@ ui.effects = {
     target: document,
 
     // main classnames
-    namePause: 'ui-pause-effects',
+    namePause: 'ui-effects-paused',
     nameNoEffects: 'ui-no-effects',
 
     // pause effects

@@ -34,7 +34,19 @@
 .ui-line-chart-holder {
     @no-selection();
 
-    .ui-line-chart { display: none !important; }
+    .ui-line-chart {
+        display: none !important;
+
+        &-info {
+            list-style: none; text-align: center; display: block;
+
+            li {
+                margin: 0 @line-chart-info-gap round((@line-chart-info-gap / 2)) @line-chart-info-gap; display: inline-block;
+
+                span { vertical-align: middle; width: @line-chart-info-dot-size; height: @line-chart-info-dot-size; margin: round((-(@line-chart-info-gap / 2))) @line-chart-info-gap 0 0; display: inline-block; border-radius: 50%; }
+            }
+        }
+    }
 
     svg {
         width: 100%;
@@ -62,8 +74,8 @@
             stroke: currentColor;
             html:not(.ui-firefox) & { shape-rendering: crispEdges; }
 
-            &.ui-root-grid { opacity: @line-chart-stroke-opacity; }
-            &:not(.ui-root-grid) { stroke-width: @line-chart-bg-grid-stroke-size; opacity: @line-chart-bg-grid-opacity; }
+            &.ui-line-root-grid { opacity: @line-chart-stroke-opacity; }
+            &:not(.ui-line-root-grid) { stroke-width: @line-chart-bg-grid-stroke-size; opacity: @line-chart-bg-grid-opacity; }
         }
         circle {
             &[onclick] { cursor: pointer; }
@@ -73,8 +85,8 @@
         }
 
         text { fill: currentColor; font-size: @line-chart-text-size; opacity: @line-chart-grid-text-opacity; }
-        .ui-x-grid { text-anchor: @line-chart-grid-text-anchor-x; }
-        .ui-y-grid { text-anchor: @line-chart-grid-text-anchor-y; }
+        .ui-line-x-grid { text-anchor: @line-chart-grid-text-anchor-x; }
+        .ui-line-y-grid { text-anchor: @line-chart-grid-text-anchor-y; }
     }
 
     &.ui-resized {
@@ -107,16 +119,6 @@
                 }
                 circle { animation: ui-line-circles .6s forwards; }
             }
-        }
-    }
-
-    .ui-chart-info {
-        list-style: none; text-align: center; display: block;
-
-        li {
-            margin: 0 @line-chart-info-gap round((@line-chart-info-gap / 2)) @line-chart-info-gap; display: inline-block;
-
-            span { vertical-align: middle; width: @line-chart-info-dot-size; height: @line-chart-info-dot-size; margin: round((-(@line-chart-info-gap / 2))) @line-chart-info-gap 0 0; display: inline-block; border-radius: 50%; }
         }
     }
 }

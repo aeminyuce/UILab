@@ -15,8 +15,8 @@ ui.modal = {
     nameWinNoBG: 'ui-modal-no-bg',
 
     nameContent: 'ui-modal-content',
-    nameHasHeader: 'ui-has-header',
-    nameHasFooter: 'ui-has-footer',
+    nameHasHeader: 'ui-modal-has-header',
+    nameHasFooter: 'ui-modal-has-footer',
 
     nameHeader: 'ui-modal-header',
     nameContainer: 'ui-modal-container',
@@ -26,7 +26,7 @@ ui.modal = {
     nameRemovable: 'ui-modal-removable',
     nameIframe: 'ui-modal-iframe',
 
-    nameModalClose: 'ui-close-modal',
+    nameModalClose: 'ui-modal-close',
 
     nameSizePrefix: 'ui-modal-',
     nameLG: 'ui-modal-lg',

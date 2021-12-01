@@ -14,12 +14,12 @@ ui.calendar = {
     nameDetails: 'ui-calendar-details',
 
     namePicker: 'ui-calendar-picker',
-    namePickerTop: 'ui-picker-t',
-    namePickerLeft: 'ui-picker-l',
+    namePickerTop: 'ui-calendar-picker-t',
+    namePickerLeft: 'ui-calendar-picker-l',
 
     namePanel: 'ui-calendar-panel',
-    nameShowPanel: 'ui-show-panel',
-    namePanelCall: 'ui-panel-call',
+    nameShowPanel: 'ui-calendar-show-panel',
+    namePanelCall: 'ui-calendar-panel-call',
 
     nameMonth: 'ui-calendar-month',
     nameYear: 'ui-calendar-year',
@@ -27,16 +27,16 @@ ui.calendar = {
     namePrev: 'ui-calendar-prev',
     nameNext: 'ui-calendar-next',
 
-    nameToday: 'ui-today',
-    namePickerDay: 'ui-pickerday',
-    namePassiveDay: 'ui-passive',
+    nameToday: 'ui-calendar-today',
+    namePickerDay: 'ui-calendar-pickerday',
+    namePassiveDay: 'ui-calendar-days-passive',
 
-    nameWeekend: 'ui-fill-weekends',
+    nameWeekend: 'ui-calendar-fill-weekends',
 
-    nameToggleDetails: 'ui-toggle-details',
-    nameShowDetails: 'ui-show-details',
-    nameHasDetails: 'ui-has-details',
-    nameEmptyDetails: 'ui-empty-details',
+    nameToggleDetails: 'ui-calendar-toggle-details',
+    nameShowDetails: 'ui-calendar-show-details',
+    nameHasDetails: 'ui-calendar-has-details',
+    nameEmptyDetails: 'ui-calendar-details-empty',
 
     // helper classnames
     nameOpen: 'ui-open',

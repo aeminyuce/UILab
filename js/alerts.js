@@ -13,7 +13,7 @@ ui.alerts = {
     // main classnames
     nameDialogOpened: 'ui-alerts-opened',
     nameDialogMsg: 'ui-dialog-msg',
-    nameCloseDialog: 'ui-close-alert',
+    nameCloseDialog: 'ui-dialog-close',
 
     nameDialogBtnHolder: 'ui-dialog-buttons',
     nameDialogCustom: 'ui-dialog-custom',

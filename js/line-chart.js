@@ -11,11 +11,11 @@ ui.lineChart = {
     // main classnames
     nameLines: 'ui-line-chart',
 
-    nameGridRoot: 'ui-root-grid',
-    nameGridX: 'ui-x-grid',
-    nameGridY: 'ui-y-grid',
+    nameGridRoot: 'ui-line-root-grid',
+    nameGridX: 'ui-line-x-grid',
+    nameGridY: 'ui-line-y-grid',
 
-    nameInfo: 'ui-chart-info',
+    nameInfo: 'ui-line-chart-info',
 
     nameTypePrefix: 'ui-',
 
