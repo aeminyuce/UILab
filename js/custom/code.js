@@ -30,14 +30,17 @@ ui.code = {
 
     // messages
     msgFileSize: 'kb',
-    msgNofileSize: '0.00'
+    msgNofileSize: '0.00',
+
+    msgReadSuccess: 'File read successfully!',
+    msgReadFail: 'File not supported!'
 
 };
 
 (function () {
 
     'use strict';
-    /*globals document, ui, setTimeout, FileReader */
+    /*globals window, document, ui, setTimeout, FileReader */
 
     function fileSize(code) {
 
@@ -195,6 +198,13 @@ ui.code = {
 
                 }
 
+                window.scrollTo(0, 0);
+
+                ui.alerts.message({
+                    msg: ui.code.msgReadSuccess,
+                    theme: 'success'
+                });
+
                 setTimeout(function () {
 
                     ui.each(list,
@@ -245,14 +255,20 @@ ui.code = {
                     // empty variables
                     getTypes = [];
 
-                }, ui.globals.ease * 2);
+                }, ui.globals.ease * 5); // wait for scrollto
 
             };
 
         } else {
 
             setTimeout(function () {
+
                 ui.loadingMask.toggle(btn); // hide loading
+
+                ui.alerts.message({
+                    msg: ui.code.msgReadFail,
+                    theme: 'danger'
+                });
 
             }, ui.globals.ease);
 
