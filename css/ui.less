@@ -416,9 +416,8 @@ body {
     100% { transform: scale(1); }
 }
 
-[class*="ui-ease-"],
-[class*="ui-ease-1st-"] > *,
-[class*="ui-ease-2nd-"] > * > * { transition-duration: @ease-default; transition-timing-function: ease-out; }
+[class*="ui-ease-"]:not([class*="ui-ease-1st-"]):not([class*="ui-ease-2nd-"]),
+[class*="ui-ease-1st-"] > *,[class*="ui-ease-2nd-"] > * > * { transition-duration: @ease-default; transition-timing-function: ease-out; }
 
 .ui- {
     &animate- {
