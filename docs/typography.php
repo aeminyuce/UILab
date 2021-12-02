@@ -157,9 +157,9 @@
                     After hr tag.
                 </div>
 
-                <h3 class="ui-h3">Code</h3>
+                <h3 class="ui-h3">Pre</h3>
                 <div class="ui-p-30-b">
-                    <pre class="ui-pre ui-pre ui-round">&lt;p&gt;pre example&lt;/p&gt;</pre>
+                    <pre class="ui-pre ui-ease-pre ui-pre ui-ease-pre ui-round">&lt;p&gt;pre example&lt;/p&gt;</pre>
                     Inline code example:  <code class="ui-code">&lt;ui-code&gt;</code>
 
                 </div>

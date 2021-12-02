@@ -14,7 +14,7 @@
   --ui-border-dark-color: hsla(0, 0%, 0%, 0.35);
   --ui-black-25: hsla(0, 0%, 0%, 0.4);
   --ui-black-50: hsla(0, 0%, 0%, 0.5);
-  --ui-code-color: hsl(348, 75%, 50%);
+  --ui-code-color: hsl(345, 74%, 52%);
   --ui-code-bg: hsl(343, 37%, 96%);
   --ui-dropdown-list-selected-bg: hsla(0, 0%, 0%, 0.075);
   --ui-dropdown-list-hover-bg: hsla(0, 0%, 0%, 0.05);
@@ -84,7 +84,7 @@
   --ui-black-25: hsla(0, 0%, 100%, 0.72);
   --ui-black-50: hsla(0, 0%, 100%, 0.87);
   --ui-code-color: hsl(0, 0%, 100%);
-  --ui-code-bg: hsl(348, 75%, 50%);
+  --ui-code-bg: hsl(345, 74%, 52%);
   --ui-dropdown-list-selected-bg: hsla(0, 0%, 100%, 0.075);
   --ui-dropdown-list-hover-bg: hsla(0, 0%, 0%, 0.05);
   --ui-dropdown-list-border: hsla(0, 0%, 100%, 0.065);
@@ -3490,6 +3490,10 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
   }
 }
 /* typography */
+.ui-ease-pre {
+  transition-property: color, background-color;
+  transition-duration: 0.15s;
+}
 .ui-color-white,
 .ui-color-white .ui-icon:not([class*="ui-text-"]):not([class*="ui-fill-"]),
 .ui-color-white a:not([class*="ui-text-"]):not([class*="ui-fill-"]),
@@ -3551,7 +3555,7 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
 .ui-color-red .ui-icon:not([class*="ui-text"]):not([class*="ui-fill-"]),
 .ui-color-red a:not([class*="ui-text"]):not([class*="ui-fill-"]),
 .ui-color-red button:not([class*="ui-text"]):not([class*="ui-fill-"]) {
-  color: hsl(0, 74%, 55%) !important;
+  color: hsl(0, 82%, 52%) !important;
 }
 .ui-color-blue,
 .ui-color-blue .ui-icon:not([class*="ui-text"]):not([class*="ui-fill-"]),
@@ -3755,7 +3759,7 @@ button.ui-font-underline:hover {
   font-size: 14px;
 }
 .ui-code {
-  color: hsl(348, 75%, 50%);
+  color: hsl(345, 74%, 52%);
   color: var(--ui-code-color);
   font-size: 90%;
   background-color: hsl(343, 37%, 96%);
@@ -3774,6 +3778,7 @@ button.ui-font-underline:hover {
   overflow-x: auto !important;
   overflow-y: auto !important;
   display: block;
+  cursor: text;
 }
 .ui-pre:not(:last-child) {
   margin-bottom: 20px;
@@ -3783,6 +3788,10 @@ button.ui-font-underline:hover {
 }
 .ui-pre.ui-scroll-v {
   max-height: 350px;
+}
+.ui-desktop .ui-pre:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(220, 8%, 24%);
 }
 @media (max-width: 480px) {
   .ui-h1,
@@ -5342,7 +5351,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   transform: translate(-50%, -50%);
 }
 .ui-required-msg {
-  color: hsl(0, 74%, 55%);
+  color: hsl(0, 82%, 52%);
   margin-top: 5px;
 }
 .ui-required-msg.ui-show {
@@ -5489,11 +5498,11 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-form-holder.ui-form-error .ui-select,
 .ui-form-holder.ui-form-error .ui-border,
 .ui-form-holder.ui-form-error [class*="ui-border-"] {
-  border-color: hsl(0, 74%, 55%) !important;
+  border-color: hsl(0, 82%, 52%) !important;
 }
 .ui-form-holder.ui-form-error .ui-input,
 .ui-form-holder.ui-form-error .ui-select {
-  background-color: hsla(0, 74%, 55%, 0.1);
+  background-color: hsla(0, 82%, 52%, 0.1);
 }
 .ui-form-holder.ui-form-warning .ui-input,
 .ui-form-holder.ui-form-warning .ui-select,
@@ -5527,7 +5536,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   display: block;
 }
 .ui-form-hint.ui-form-error {
-  color: hsl(0, 74%, 55%);
+  color: hsl(0, 82%, 52%);
 }
 .ui-form-hint.ui-form-warning {
   color: hsl(42, 100%, 45%);
@@ -5659,12 +5668,12 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-form-error .ui-check,
 .ui-form-error .ui-radio,
 .ui-form-error .ui-switch {
-  background-color: hsla(0, 74%, 55%, 0.1) !important;
-  border-color: hsl(0, 74%, 55%) !important;
+  background-color: hsla(0, 82%, 52%, 0.1) !important;
+  border-color: hsl(0, 82%, 52%) !important;
 }
 .ui-form-error:not(.ui-form-holder):not(.ui-required-holder):not(.ui-form-hint) {
-  background-color: hsla(0, 74%, 55%, 0.1) !important;
-  border-color: hsl(0, 74%, 55%) !important;
+  background-color: hsla(0, 82%, 52%, 0.1) !important;
+  border-color: hsl(0, 82%, 52%) !important;
 }
 .ui-form-warning .ui-check,
 .ui-form-warning .ui-radio,
@@ -5827,7 +5836,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 }
 [data-ui-counter].ui-form-error:before {
   color: hsl(0, 0%, 100%) !important;
-  background-color: hsla(0, 74%, 71%, 0.65) !important;
+  background-color: hsla(0, 82%, 68%, 0.65) !important;
 }
 [data-ui-counter].ui-form-warning:before {
   color: hsl(0, 0%, 100%) !important;
@@ -6589,7 +6598,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   color: hsl(0, 0%, 100%);
   min-width: 8px;
   min-height: 8px;
-  background-color: hsl(348, 75%, 50%);
+  background-color: hsl(345, 74%, 52%);
   border-radius: 1000px;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -6642,7 +6651,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-progress-bar > span {
   width: 0;
   height: 10px;
-  background-color: hsl(348, 75%, 50%);
+  background-color: hsl(345, 74%, 52%);
   overflow: hidden;
   float: left;
 }
@@ -7190,7 +7199,7 @@ html:not(.ui-ie) .ui-steps-bar li {
   box-shadow: none !important;
 }
 .ui-modal-win.ui-modal-no-bg .ui-form-error:not(.ui-form-holder) {
-  background-color: hsl(0, 74%, 55%) !important;
+  background-color: hsl(0, 82%, 52%) !important;
 }
 .ui-modal-win.ui-modal-no-bg .ui-form-error .ui-icon {
   color: hsl(0, 0%, 100%) !important;
@@ -7410,7 +7419,7 @@ html:not(.ui-ie) .ui-steps-bar li {
 }
 .ui-tooltip:not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 100%);
-  background-color: hsl(348, 75%, 50%);
+  background-color: hsl(345, 74%, 52%);
 }
 .ui-tooltip:not(.ui-open) {
   display: none;
@@ -7522,7 +7531,7 @@ html:not(.ui-ie) .ui-steps-bar li {
   transform: translate(-50%, -50%);
 }
 .ui-tooltip > span i:not([class*="ui-fill-"]) {
-  background-color: hsl(348, 75%, 50%);
+  background-color: hsl(345, 74%, 52%);
 }
 /* alerts */
 .ui-alerts-opened {
@@ -7595,7 +7604,7 @@ html:not(.ui-ie) .ui-steps-bar li {
 }
 .ui-alerts-msg:not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 100%);
-  background-color: hsl(348, 75%, 50%);
+  background-color: hsl(345, 74%, 52%);
 }
 .ui-alerts-msg.ui-msg-success {
   background-color: hsl(142, 82%, 42%) !important;
@@ -7604,7 +7613,7 @@ html:not(.ui-ie) .ui-steps-bar li {
   background-color: hsl(42, 100%, 45%) !important;
 }
 .ui-alerts-msg.ui-msg-danger {
-  background-color: hsl(0, 74%, 55%) !important;
+  background-color: hsl(0, 82%, 52%) !important;
 }
 .ui-alerts-msg.ui-tr {
   top: 20px;
@@ -7663,10 +7672,10 @@ button.ui-dialog-success {
 }
 button.ui-dialog-error {
   color: hsl(0, 0%, 100%) !important;
-  background-color: hsl(0, 74%, 55%);
+  background-color: hsl(0, 82%, 52%);
 }
 .ui-desktop button.ui-dialog-error:hover {
-  background-color: hsl(0, 74%, 61%);
+  background-color: hsl(0, 82%, 58%);
 }
 button.ui-dialog-custom {
   color: hsl(0, 0%, 0%);
@@ -8866,7 +8875,7 @@ button.ui-dialog-custom {
   animation: ui-gallery-preview-loader 1.15s linear infinite;
 }
 .ui-gallery-preview-loader.ui-pause {
-  color: hsl(0, 74%, 55%);
+  color: hsl(0, 82%, 52%);
   margin: 0;
   animation: none;
 }
@@ -10224,67 +10233,67 @@ html:not(.ui-ie) .ui-map svg {
 }
 .ui-theme-red.ui-fill-light-100,
 .ui-theme-red .ui-fill-light-100:not([class*="ui-theme-"]) {
-  background-color: hsla(0, 74%, 65%, 0.15);
+  background-color: hsla(0, 82%, 62%, 0.15);
 }
 .ui-theme-red.ui-fill-light-200,
 .ui-theme-red .ui-fill-light-200:not([class*="ui-theme-"]) {
-  background-color: hsla(0, 74%, 70%, 0.25);
+  background-color: hsla(0, 82%, 67%, 0.25);
 }
 .ui-theme-red.ui-fill-light-300,
 .ui-theme-red .ui-fill-light-300:not([class*="ui-theme-"]) {
-  background-color: hsla(0, 74%, 75%, 0.35);
+  background-color: hsla(0, 82%, 72%, 0.35);
 }
 .ui-theme-red.ui-fill-dark-100,
 .ui-theme-red .ui-fill-dark-100:not([class*="ui-theme-"]) {
-  background-color: hsl(0, 74%, 55%);
+  background-color: hsl(0, 82%, 52%);
 }
 .ui-theme-red.ui-fill-dark-200,
 .ui-theme-red .ui-fill-dark-200:not([class*="ui-theme-"]) {
-  background-color: hsl(0, 74%, 40%);
+  background-color: hsl(0, 82%, 37%);
 }
 .ui-theme-red.ui-fill-dark-300,
 .ui-theme-red .ui-fill-dark-300:not([class*="ui-theme-"]) {
-  background-color: hsl(0, 74%, 30%);
+  background-color: hsl(0, 82%, 27%);
 }
 .ui-desktop .ui-theme-red.ui-fill-light-100.ui-hover:hover,
 .ui-desktop .ui-theme-red .ui-fill-light-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-red.ui-fill-light-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-red .ui-fill-light-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
-  background-color: hsla(0, 74%, 65%, 0.3);
+  background-color: hsla(0, 82%, 62%, 0.3);
 }
 .ui-desktop .ui-theme-red.ui-fill-light-200.ui-hover:hover,
 .ui-desktop .ui-theme-red .ui-fill-light-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-red.ui-fill-light-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-red .ui-fill-light-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
-  background-color: hsla(0, 74%, 70%, 0.5);
+  background-color: hsla(0, 82%, 67%, 0.5);
 }
 .ui-desktop .ui-theme-red.ui-fill-light-300.ui-hover:hover,
 .ui-desktop .ui-theme-red .ui-fill-light-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-red.ui-fill-light-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-red .ui-fill-light-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
-  background-color: hsla(0, 74%, 75%, 0.7);
+  background-color: hsla(0, 82%, 72%, 0.7);
 }
 .ui-desktop .ui-theme-red.ui-fill-dark-100.ui-hover:hover,
 .ui-desktop .ui-theme-red .ui-fill-dark-100:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-red.ui-fill-dark-100.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-red .ui-fill-dark-100:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
-  background-color: hsl(0, 74%, 70%);
+  background-color: hsl(0, 82%, 67%);
 }
 .ui-desktop .ui-theme-red.ui-fill-dark-200.ui-hover:hover,
 .ui-desktop .ui-theme-red .ui-fill-dark-200:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-red.ui-fill-dark-200.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-red .ui-fill-dark-200:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
-  background-color: hsl(0, 74%, 75%);
+  background-color: hsl(0, 82%, 72%);
 }
 .ui-desktop .ui-theme-red.ui-fill-dark-300.ui-hover:hover,
 .ui-desktop .ui-theme-red .ui-fill-dark-300:not([class*="ui-theme-"]).ui-hover:hover,
 .ui-desktop .ui-theme-red.ui-fill-dark-300.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover,
 .ui-desktop .ui-theme-red .ui-fill-dark-300:not([class*="ui-theme-"]).ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover {
-  background-color: hsl(0, 74%, 80%);
+  background-color: hsl(0, 82%, 77%);
 }
 .ui-theme-red.ui-text,
 .ui-theme-red .ui-text:not([class*="ui-theme-"]) {
-  color: hsl(0, 74%, 55%) !important;
+  color: hsl(0, 82%, 52%) !important;
 }
 .ui-theme-red.ui-text .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
 .ui-theme-red .ui-text:not([class*="ui-theme-"]) .ui-icon:not([class*="ui-fill-"]):not([class*="ui-color-"]),
@@ -10292,11 +10301,11 @@ html:not(.ui-ie) .ui-map svg {
 .ui-theme-red .ui-text:not([class*="ui-theme-"]) a:not([class*="ui-fill-"]):not([class*="ui-color-"]),
 .ui-theme-red.ui-text button:not([class*="ui-fill-"]):not([class*="ui-color-"]),
 .ui-theme-red .ui-text:not([class*="ui-theme-"]) button:not([class*="ui-fill-"]):not([class*="ui-color-"]) {
-  color: hsl(0, 74%, 55%) !important;
+  color: hsl(0, 82%, 52%) !important;
 }
 .ui-theme-red.ui-stroke,
 .ui-theme-red .ui-stroke:not([class*="ui-theme-"]) {
-  border-color: hsl(0, 74%, 55%) !important;
+  border-color: hsl(0, 82%, 52%) !important;
 }
 .ui-theme-base.ui-fill-light-100,
 .ui-theme-base .ui-fill-light-100:not([class*="ui-theme-"]) {

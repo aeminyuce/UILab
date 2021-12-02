@@ -5,7 +5,7 @@
             <div class="ui-col-12">
 
                 <h3 class="ui-h3">Open Modal</h3>
-                <pre class="ui-pre ui-round">ui.modal.open({ source, size, type, closable, callback });</pre>
+                <pre class="ui-pre ui-ease-pre ui-round">ui.modal.open({ source, size, type, closable, callback });</pre>
 
                 <div class="ui-p-15 ui-round ui-border">
                     <dl class="ui-row ui-xs-fluid">
@@ -58,14 +58,14 @@
             <div class="ui-col-6 ui-no-p-v">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open modal window with id.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '#modal-example'<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '#modal-example'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#modal-example'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-p-t">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open modal window with class name.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example'<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example'});">Run Code</button>
 
             </div>
@@ -76,42 +76,42 @@
             <div class="ui-col-6 ui-no-p-v">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open large size modal window.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: 'lg'<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: 'lg'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', size: 'lg'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-p-t">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open default (medium) size modal window.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: 'md'<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: 'md'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', size: 'md'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-p-t">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open small size modal window.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: 'sm'<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: 'sm'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', size: 'sm'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-p-t">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open fullscreen modal window.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: 'fullscreen'<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: 'fullscreen'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', size: 'fullscreen'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-p-t">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open inline modal window.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: 'inline'<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: 'inline'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', size: 'inline'});">Run Code</button>
 
             </div>
             <div class="ui-col-6 ui-no-p-t">
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open fixed size modal window.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: '560x315'<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    size: '560x315'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', size: '560x315'});">Run Code</button>
 
             </div>
@@ -120,7 +120,7 @@
 
                 <b>Type:</b>
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Open links with ajax modal.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: 'xhr/ajax-modal.php'<br>    size: 'lg',<br>    type: 'ajax'<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: 'xhr/ajax-modal.php'<br>    size: 'lg',<br>    type: 'ajax'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: 'xhr/ajax-modal.php', size: 'lg', type: 'ajax'});">Run Code</button>
 
                 <span class="ui-sp-15"></span>
@@ -129,19 +129,19 @@
                     Open links with iframe modal.<br>
                     Youtube embed link example:
                 </i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: 'https://www.youtube.com/embed/Ct6BUPvE2sM',<br>    size: '640x360',<br>    type: 'iframe'<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: 'https://www.youtube.com/embed/Ct6BUPvE2sM',<br>    size: '640x360',<br>    type: 'iframe'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: 'https://www.youtube.com/embed/Ct6BUPvE2sM', size: '640x360', type: 'iframe'});">Run Code</button>
 
                 <span class="ui-sp-15"></span>
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Google map embed link example:</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927',<br>    size: 'fullscreen',<br>    type: 'iframe'<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927',<br>    size: 'fullscreen',<br>    type: 'iframe'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0860158126!2d28.45174621544522!3d41.003964328513874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1549286679927', size: 'fullscreen', type: 'iframe'});">Run Code</button>
 
                 <span class="ui-sp-15"></span>
 
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Google map embed link with header and footer:</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '#modal-example'<br>    size: 'fullscreen'<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '#modal-example'<br>    size: 'fullscreen'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '#modal-example', size: 'fullscreen'});">Run Code</button>
 
             </div>
@@ -150,7 +150,7 @@
 
                 <b>Bg:</b>
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Enable/Disable modal window background color.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-search',<br>    bg: 'false'<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-search',<br>    bg: 'false'<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-search', bg: 'false'});">Run Code</button>
 
             </div>
@@ -159,7 +159,7 @@
 
                 <b>Closable:</b>
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Close modal window with footer buttons.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    closable: false<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    closable: false<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', closable: false});">Run Code</button>
 
             </div>
@@ -168,7 +168,7 @@
 
                 <b>Callback:</b>
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Callback call after open modal.</i>
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    callback: function () {<br>        alert('Modal opened!');<br>    }<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    callback: function () {<br>        alert('Modal opened!');<br>    }<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', callback: function () { alert('Modal opened!'); }});">Run Code</button>
 
             </div>
@@ -176,7 +176,7 @@
             <div class="ui-col-12">
 
                 <h3 class="ui-h3">Close Modal</h3>
-                <pre class="ui-pre ui-round">ui.modal.close(callback);</pre>
+                <pre class="ui-pre ui-ease-pre ui-round">ui.modal.close(callback);</pre>
 
                 <div class="ui-p-15 ui-round ui-border">
                     <dl class="ui-row ui-xs-fluid">
@@ -191,11 +191,11 @@
             </div>
 
             <div class="ui-col-12 ui-no-p-b">
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.close();</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.close();</pre>
 
                 <span class="ui-sp-15"></span>
 
-                <pre class="ui-pre ui-round ui-m-5-b">ui.modal.close({<br>    function () {<br>        alert('Modal closed!');<br>    }<br>});</pre>
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.close({<br>    function () {<br>        alert('Modal closed!');<br>    }<br>});</pre>
 
             </div>
 

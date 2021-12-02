@@ -12,6 +12,7 @@
 
 @pre-color:                             hsl(200, 100%, 80%);
 @pre-bg:                                hsl(220, 8%, 22%);
+@pre-hover-bg:                          hsl(220, 8%, 24%);
 @pre-max-height:                        350px;
 
 @code-color:                            @featured-color;
@@ -33,6 +34,8 @@
     --ui-code-color: @white;
     --ui-code-bg: @code-color;
 }
+
+.ui-ease-pre { transition-property: color, background-color; transition-duration: @ease-default; }
 
 .ui-color- {
     &white {
@@ -161,12 +164,14 @@
     &code { ._color-var(code-color); font-size: 90%; ._bg-var(code-bg); padding-right: @code-padding-h; padding-left: @code-padding-h; display: inline-block; border-radius: @code-radius; }
 
     &pre {
-        color: @pre-color; line-height: @line-height-readable; min-height: @btn-default; background-color: @pre-bg; padding: 10px !important; overflow-x: auto !important; overflow-y: auto !important; display: block;
+        color: @pre-color; line-height: @line-height-readable; min-height: @btn-default; background-color: @pre-bg; padding: 10px !important; overflow-x: auto !important; overflow-y: auto !important; display: block; cursor: text;
 
         &:not(:last-child) { margin-bottom: @highlight-space; }
 
         &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
         &.ui-scroll-v { max-height: @pre-max-height; }
+
+        .ui-desktop &:hover { color: @white; background-color: @pre-hover-bg; }
     }
 }
 
