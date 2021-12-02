@@ -14,14 +14,13 @@ ui.sidebar = {
     nameClose: 'ui-sidebar-close',
     nameContent: 'ui-sidebar-content',
 
-    nameTargetPrefix: 'ui-sbid',
-
+    nameTargetPrefix: 'ui-sbid-',
     nameShowPrefix: 'ui-sidebar-',
     nameShowMenuPrefix: 'ui-sidebar-show-',
     nameAddContentPrefix: 'ui-sidebar-add-',
 
-    nameLeftSuffix: 'l', // using with prefixes
-    nameRightSuffix: 'r', // using with prefixes
+    nameLeftSuffix: 'l',
+    nameRightSuffix: 'r',
 
     // helper classnames
     nameOpen: 'ui-open',
@@ -71,7 +70,7 @@ ui.sidebar = {
 
         for (i = 0; i < contents.length; i++) {
 
-            id = '.' + ui.sidebar.nameTargetPrefix + '-' + contents[i].getAttribute(ui.sidebar.dataID);
+            id = '.' + ui.sidebar.nameTargetPrefix + contents[i].getAttribute(ui.sidebar.dataID);
             el = ui.find(id)[0];
 
             contents[i].removeAttribute(ui.sidebar.dataID);
@@ -115,7 +114,7 @@ ui.sidebar = {
                     that.insertAdjacentHTML(
                         'beforebegin',
 
-                        '<' + ui.sidebar.tagDataTarget + ' class="' + ui.sidebar.nameTargetPrefix + '-' + id + '" style="display: none;">' +
+                        '<' + ui.sidebar.tagDataTarget + ' class="' + ui.sidebar.nameTargetPrefix + id + '" style="display: none;">' +
                         '</' + ui.sidebar.tagDataTarget + '>'
                     );
 

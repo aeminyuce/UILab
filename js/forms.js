@@ -27,18 +27,18 @@ ui.forms = {
 
     nameFormIcon: 'ui-form-icon',
 
+    nameRequired: 'ui-required',
+    nameRequiredMsg: 'ui-required-msg',
+    nameRequiredMsgShow: 'ui-show',
+
+    nameError: 'ui-form-error',
+
     // helper classnames
     nameOpen: 'ui-open',
     nameOpenEase: 'ui-open-ease',
 
     // outer classnames
     nameIcon: 'ui-icon',
-
-    nameRequired: 'ui-required',
-    nameRequiredMsg: 'ui-required-msg',
-    nameRequiredMsgShow: 'ui-show',
-
-    nameError: 'ui-form-error',
 
     // tags
     tagFileInfo: 'i'

@@ -9,7 +9,7 @@ ui.autocomplete = {
     target: 'ui-autocomplete',
 
     // main classnames
-    nameMenuTop: 'ui-menu-t',
+    nameMenuTop: 'ui-autocomplete-t',
 
     // helper classnames
     nameOpen: 'ui-open',

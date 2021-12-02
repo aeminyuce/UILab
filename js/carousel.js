@@ -27,7 +27,6 @@ ui.carousel = {
     nameGalleryDetailLoader: 'ui-carousel-gallery-detail-loader',
 
     nameGalleryThumbs: 'ui-carousel-gallery-thumbs',
-    nameGalleryImg: 'ui-photo',
 
     // helper classnames
     nameShow: 'ui-show',
@@ -41,6 +40,8 @@ ui.carousel = {
     nameGallerySelected: 'ui-selected',
 
     // outer classnames
+    namePhoto: 'ui-photo',
+
     nameScroll: 'ui-scroll',
     nameScrollV: 'ui-scroll-v',
     nameScrollH: 'ui-scroll-h',
@@ -618,7 +619,7 @@ ui.carousel = {
 
                 function () {
 
-                    var images = ui.find('.' + ui.carousel.nameGalleryImg, this);
+                    var images = ui.find('.' + ui.carousel.namePhoto, this);
 
                     if (images.length <= 1) {
                         this.style.display = 'none'; // hide thumbs when image length is 1 or 0
@@ -955,7 +956,7 @@ ui.carousel = {
         ui.on(document,
             'click',
 
-            '.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.nameGalleryImg,
+            '.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.namePhoto,
 
             function () {
 
@@ -966,7 +967,7 @@ ui.carousel = {
                 detail = ui.find('.' + ui.carousel.nameGalleryDetail, parent[0]);
                 target = ui.find('img', detail);
 
-                thumbs = ui.find('.' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.nameGalleryImg, parent[0]);
+                thumbs = ui.find('.' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.namePhoto, parent[0]);
 
                 index = Array.prototype.slice.call(thumbs).indexOf(this);
                 target.setAttribute(ui.carousel.dataCount, index);

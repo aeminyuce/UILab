@@ -9,7 +9,8 @@ ui.photoGallery = {
     targetGallery: 'ui-gallery',
     targetPreview: 'ui-gallery-preview',
 
-    targetImages: 'ui-photo',
+    targetPhotos: 'ui-photo',
+    targetPhotoVer: 'ui-photo-v',
 
     // main classnames
     nameGalleryPassive: 'ui-gallery-passive',
@@ -29,8 +30,6 @@ ui.photoGallery = {
 
     namePreviewPrev: 'ui-gallery-preview-prev',
     namePreviewNext: 'ui-gallery-preview-next',
-
-    nameImgVer: 'ui-photo-v',
 
     // helper classnames
     nameOpen: 'ui-open',
@@ -102,7 +101,7 @@ ui.photoGallery = {
 
                 var img, newImg, imgLength, imgFnc;
 
-                img = ui.find('a.' + ui.photoGallery.targetImages +' img', gallery[galleryCounter]);
+                img = ui.find('a.' + ui.photoGallery.targetPhotos +' img', gallery[galleryCounter]);
 
                 imgLength = img.length - 1;
                 if (imgLength < 0) { return; }
@@ -117,7 +116,7 @@ ui.photoGallery = {
                     newImg.onload = function () {
 
                         if (this.naturalWidth / this.naturalHeight < ui.photoGallery.imgVerRatio) {
-                            ui.addClass(img[imgCounter], ui.photoGallery.nameImgVer);
+                            ui.addClass(img[imgCounter], ui.photoGallery.targetPhotoVer);
                         }
 
                         if (imgCounter < imgLength) {
@@ -159,10 +158,10 @@ ui.photoGallery = {
             }
 
             if (call === undefined) {
-                images = ui.find('a.' + ui.photoGallery.targetImages, parent);
+                images = ui.find('a.' + ui.photoGallery.targetPhotos, parent);
 
             } else {
-                images = ui.find('.' + ui.photoGallery.targetImages, parent);
+                images = ui.find('.' + ui.photoGallery.targetPhotos, parent);
             }
 
             // mobile and touch screens: show data titles first
@@ -263,7 +262,7 @@ ui.photoGallery = {
             function showImage() {
 
                 if (img.naturalWidth / img.naturalHeight < 1.33) {
-                    ui.addClass(img, ui.photoGallery.nameImgVer);
+                    ui.addClass(img, ui.photoGallery.targetPhotoVer);
                 }
 
                 imgWidth = img.width;
@@ -409,7 +408,7 @@ ui.photoGallery = {
                 setTimeout(function () {
 
                     ui.removeClass(img, ui.photoGallery.nameOpen);
-                    ui.removeClass(img, ui.photoGallery.nameImgVer);
+                    ui.removeClass(img, ui.photoGallery.targetPhotoVer);
 
                     newImg.src = loadedImages[index];
                     img.src = newImg.src;
@@ -704,7 +703,7 @@ ui.photoGallery = {
         ui.on(document,
             'touchmove.' + ui.photoGallery.eventGalleryTouch + ' touchend',
 
-            '.' + ui.photoGallery.targetGallery + ' a.' + ui.photoGallery.targetImages,
+            '.' + ui.photoGallery.targetGallery + ' a.' + ui.photoGallery.targetPhotos,
 
             function (e) {
 
@@ -746,7 +745,7 @@ ui.photoGallery = {
         ui.on(document,
             'click',
 
-            '.' + ui.photoGallery.targetGallery + ' a.' + ui.photoGallery.targetImages,
+            '.' + ui.photoGallery.targetGallery + ' a.' + ui.photoGallery.targetPhotos,
 
             function (e) {
 
@@ -786,7 +785,7 @@ ui.photoGallery = {
 
                 }
 
-                galleryFnc(e, ui.find(target + ' .' + ui.photoGallery.targetImages)[count], 'call');
+                galleryFnc(e, ui.find(target + ' .' + ui.photoGallery.targetPhotos)[count], 'call');
 
             });
 

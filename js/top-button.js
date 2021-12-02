@@ -13,7 +13,7 @@ ui.topButton = {
     nameOpenEase: 'ui-open-ease',
 
     // styling classnames
-    stylesTarget: 'ui-circle ui-ease-layout',
+    stylesTarget: 'ui-round ui-ease-layout',
     stylesIcon: 'ui-icon ui-ease-layout',
 
     // icons
