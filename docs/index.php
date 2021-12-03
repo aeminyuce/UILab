@@ -6,7 +6,7 @@
 <head>
 
     <title>UI lab is a modular design system for developing web interfaces fastly!</title>
-    <meta name="keywords" content="ui lab, responsive, design system, css, javascript, tools, examples">
+    <meta name="keywords" content="responsive, design system, ui examples, web, css, less, javascript">
     <meta name="description" content="UI lab is a modular design system for developing web interfaces fastly!" />
     <meta name="author" content="A. Emin YUCE"/>
 
