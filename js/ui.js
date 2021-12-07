@@ -1,21 +1,10 @@
-"use strict";
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-/*
- UI Core JS
-*/
-
-/*globals window, document, Event, navigator, NodeList, setTimeout, clearTimeout, XMLHttpRequest */
 var ui = {
   globals: {
-    // responsive breakpoints
     xl: 1680,
     lg: 1400,
     md: 959,
     sm: 767,
     xs: 480,
-    // effect timers
     fast: 100,
     ease: 150,
     slow: 400,
@@ -23,14 +12,10 @@ var ui = {
     slow3x: 1200,
     slow4x: 1600,
     slow5x: 2000,
-    // non-closest event listeners
     nonClosestElems: ['mouseenter', 'mouseleave', 'mouseout', 'mouseover'],
-    // svg elements
     svgElems: ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'],
-    // data attributes
     dataPrefix: 'data-ui-',
     dataClasses: 'data-ui-classes',
-    // custom events
     eventAjaxCallback: 'ui:ajaxCallback',
     eventDomChange: 'ui:domChange'
   },
@@ -55,10 +40,8 @@ var ui = {
       ui.handlers[pt][pe].push(callback);
 
       if (typeof pe !== 'function' && callback !== undefined) {
-        // merge repeated event listeners
         if (ui.handlers[pt][pe].length === 1) {
           pt.addEventListener(pe.split('.')[0], function (ev) {
-            // split for event naming
             for (i = 0; i < ui.handlers[pt][pe].length; i++) {
               ui.handlers[pt][pe][i](ev);
             }
@@ -97,15 +80,12 @@ var ui = {
       customEvent = false;
 
       if (callback !== undefined) {
-        // delegate
         f = function f(event) {
-          eName = e.split('.')[0]; // split for event naming
-
-          targetEl = ui.find(that); // catches future updated DOM!
+          eName = e.split('.')[0];
+          targetEl = ui.find(that);
 
           for (j = 0; j < targetEl.length; j++) {
             if (ui.globals.nonClosestElems.indexOf(eName) > -1) {
-              // control non-closest event listeners
               if (event.target === targetEl[j]) {
                 callback.call(targetEl[j], event, event.toElement);
               }
@@ -119,25 +99,20 @@ var ui = {
 
         delegate = true;
       } else {
-        f = that; // filter ui.on(object, event, function) event listeners
+        f = that;
 
-        if (_typeof(t) === 'object' && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') {
-          // detect window event listeners
+        if (t instanceof Object && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') {
           isWindowEvent = Object.prototype.toString.call(t) === '[object Window]';
 
           if (isWindowEvent) {
-            // disable ie duplicate window event firing on ready
-            isMSIE =
-            /*@cc_on!@*/
-            false;
+            isMSIE = false;
 
             if (isMSIE || !!document.documentMode || navigator.userAgent.toLowerCase().indexOf('edge') > -1) {
               setTimeout(function () {
                 l.addEventListener(e, that, true);
               }, ui.globals.ease);
             }
-          } // detect custom event listeners
-
+          }
 
           objName = Object.prototype.toString.call(t);
 
@@ -168,17 +143,15 @@ var ui = {
 
         if (typeof pe !== 'function' && f !== undefined) {
           if (delegate || isWindowEvent || customEvent) {
-            // merge repeated event listeners
             if (ui.handlers[pt][pe].length === 1) {
               pt.addEventListener(pe.split('.')[0], function (ev) {
-                // split for event naming
                 for (m = 0; m < ui.handlers[pt][pe].length; m++) {
                   ui.handlers[pt][pe][m](ev);
                 }
               }, true);
             }
           } else {
-            pt.addEventListener(pe.split('.')[0], f, true); // split for event naming
+            pt.addEventListener(pe.split('.')[0], f, true);
           }
         } else {
           return;
@@ -194,8 +167,7 @@ var ui = {
           handlerFnc(l[i], e);
         }
       }
-    }; // for multiple event listeners ex: 'click touchend'
-
+    };
 
     arr = e.split(' ');
 
@@ -213,9 +185,8 @@ var ui = {
         if (ui.handlers[pt] !== undefined) {
           if (ui.handlers[pt][pe] !== undefined) {
             for (j = 0; j < ui.handlers[pt][pe].length; j++) {
-              pt.removeEventListener(pe.split('.')[0], ui.handlers[pt][pe][j], true); // split for event naming
-
-              ui.handlers[pt][pe].splice(ui.handlers[pt][pe][j], 1); // remove event from eventHandlers array
+              pt.removeEventListener(pe.split('.')[0], ui.handlers[pt][pe][j], true);
+              ui.handlers[pt][pe].splice(ui.handlers[pt][pe][j], 1);
             }
           }
         }
@@ -224,15 +195,13 @@ var ui = {
       l = ui.find(t);
 
       if (l.length === 0) {
-        // detect window event listeners
         handlerFnc(l, e);
       } else {
         for (i = 0; i < l.length; i++) {
           handlerFnc(l[i], e);
         }
       }
-    }; // for multiple event listeners ex: 'click touchend'
-
+    };
 
     arr = e.split(' ');
 
@@ -249,7 +218,6 @@ var ui = {
       try {
         event = new Event(e);
       } catch (err) {
-        // ie
         event = document.createEvent('HTMLEvents');
         event.initEvent(e, true, false);
       }
@@ -259,8 +227,7 @@ var ui = {
       for (i = 0; i < l.length; i++) {
         l[i].dispatchEvent(event);
       }
-    }; // for multiple event listeners ex: 'click touchend'
-
+    };
 
     arr = e.split(' ');
 
@@ -277,7 +244,6 @@ var ui = {
 
     for (i = 0; i < l.length; i++) {
       if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) {
-        // check SVG and own elements
         re = new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className.baseVal);
       } else {
         re = new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className);
@@ -299,7 +265,6 @@ var ui = {
     for (i = 0; i < l.length; i++) {
       for (j = 0; j < name.length; j++) {
         if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) {
-          // check SVG and own elements
           arr = l[i].className.baseVal.split(' ');
 
           if (arr.indexOf(name[j]) === -1) {
@@ -332,7 +297,6 @@ var ui = {
         re = new RegExp('(\\s|^)' + name[j] + '(\\s|$)');
 
         if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) {
-          // check SVG and own elements
           l[i].className.baseVal = l[i].className.baseVal.replace(re, ' ').replace(rex, '');
         } else {
           l[i].className = l[i].className.replace(re, ' ').replace(rex, '');
@@ -358,7 +322,7 @@ var ui = {
     name = name.split(' ');
 
     for (i = 0; i < l.length; i++) {
-      isSvgElements = ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1; // check SVG and own elements
+      isSvgElements = ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1;
 
       if (isSvgElements) {
         arr = l[i].className.baseVal.split(' ');
@@ -425,10 +389,10 @@ var ui = {
 
     var l, o, i, j, p;
 
-    if (_typeof(outer) !== 'object') {
-      o = ui.find(outer);
-    } else {
+    if (outer instanceof Object) {
       o = [outer];
+    } else {
+      o = ui.find(outer);
     }
 
     l = ui.find(t);
@@ -459,16 +423,14 @@ var ui = {
         outerElIndex,
         foundEl = [];
 
-    if (_typeof(item) === 'object') {
+    if (item instanceof Object) {
       if (NodeList.prototype.isPrototypeOf(item)) {
         return item;
-      } // if item property has ui.find(item) nodelist
-
+      }
 
       objName = Object.prototype.toString.call(item);
 
       if (objName === '[object HTMLDocument]' || objName === '[object Document]') {
-        // detect document
         if (ui.find.document === undefined) {
           ui.find.document = document.querySelectorAll('html');
         }
@@ -479,25 +441,21 @@ var ui = {
 
       if (objName === '[object Window]') {
         return window;
-      } // window object
-
+      }
 
       if (objName === '[object Array]') {
         return item;
-      } // array object
+      }
 
-
-      return [item]; // "this" object, [] converting object for event loops
+      return [item];
     }
 
     if (outer !== undefined) {
-      // find items in outer elements
-      if (_typeof(outer) !== 'object') {
-        outerEl = document.querySelectorAll(outer); // convert to array
+      if (!outer instanceof Object) {
+        outerEl = document.querySelectorAll(outer);
       } else {
         outerEl = outer;
-      } // discard "this" object && form object (form element not returns "this", it returns all form elements)
-
+      }
 
       if (outerEl.length !== undefined && Array.prototype.slice.call(outerEl).length === 1) {
         for (i = 0; i < outerEl.length; i++) {
@@ -507,15 +465,13 @@ var ui = {
             foundEl = outerElIndex[0];
 
             if (foundEl === undefined) {
-              // when founded item length is 1, foundEl returned undefined (select option elements)
               foundEl = outerEl.querySelectorAll(item);
             }
           } else {
-            foundEl = foundEl.concat(outerElIndex); // merge arrays
+            foundEl = foundEl.concat(outerElIndex);
           }
         }
       } else {
-        // "this" object
         foundEl = outerEl.querySelectorAll(item);
       }
 
@@ -525,13 +481,6 @@ var ui = {
     return document.querySelectorAll(item);
   },
   ajax: function ajax(props) {
-    /*
-    props list:
-        props.type
-        props.url
-        props.data
-        props.callback
-    */
     'use strict';
 
     if (props.url === undefined) {
@@ -539,7 +488,7 @@ var ui = {
     }
 
     if (props.type === undefined || props.type === '') {
-      props.type = 'GET'; // send strings
+      props.type = 'GET';
     }
 
     if (ui.ajax.requests === undefined) {
@@ -550,33 +499,28 @@ var ui = {
     i = ui.ajax.requests.length;
     re = '';
     ui.ajax.requests[i] = new XMLHttpRequest();
-    ui.ajax.requests[i].open(props.type, props.url, true); // beforesend
+    ui.ajax.requests[i].open(props.type, props.url, true);
 
     if (props.beforesend !== undefined) {
       props.beforesend(ui.ajax.requests[i]);
-    } // headers
+    }
 
-
-    ui.ajax.requests[i].setRequestHeader('X-Requested-With', 'XMLHttpRequest'); // set ajax request header
+    ui.ajax.requests[i].setRequestHeader('X-Requested-With', 'XMLHttpRequest');
 
     if (!props.cache) {
-      // no cache header
       ui.ajax.requests[i].setRequestHeader('cache-control', 'no-cache');
-    } // check params in url
-
+    }
 
     if (props.data !== '' && props.data !== undefined) {
       ui.ajax.requests[i].send(props.data);
     } else {
       ui.ajax.requests[i].send();
-    } // xhr loading
-
+    }
 
     ui.ajax.requests[i].onload = function () {
       if (ui.ajax.requests[i].readyState === 4 && ui.ajax.requests[i].status === 200) {
         ui.ajax.classNames = '';
-        props.callback('success', ui.ajax.requests[i].responseText, ui.ajax.requests[i]); // get data attributes
-
+        props.callback('success', ui.ajax.requests[i].responseText, ui.ajax.requests[i]);
         re = ui.globals.dataPrefix + '+\\w+=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[ \\s\\>]';
         re = new RegExp(re, 'g');
         ui.ajax.data = ui.ajax.requests[i].responseText.match(re);
@@ -585,53 +529,42 @@ var ui = {
           ui.ajax.data = '';
         } else {
           ui.ajax.data = ui.ajax.data.toString();
-        } // get list of classnames
-
+        }
 
         ui.ajax.classNames += ui.ajax.requests[i].responseText.match(/\sclass=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
 
         if (ui.ajax.classNames === 'null') {
-          // not match: returns string null!
           ui.ajax.classNames = '';
-        } // get list of data classnames
-
+        }
 
         rex = ui.globals.dataClasses + '=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[\\s\\>]';
         rex = new RegExp(rex, 'g');
         ui.ajax.classNames += ui.ajax.requests[i].responseText.match(rex);
 
         if (ui.ajax.classNames !== 'null') {
-          // not match: returns string null!
           ui.ajax.classNames = ui.ajax.classNames.match(/"+[\w\s\d\-\_\=]+"/g);
           ui.ajax.classNames = ui.ajax.classNames.toString().replace(/\"/g, '').replace(/,/g, ' ').split(' ');
           ui.ajax.classNames = ui.ajax.classNames.filter(function (value, index, self) {
             return self.indexOf(value) === index;
-          }); // ajax callbacks
-
-          ui.trigger(document, ui.globals.eventAjaxCallback); // set custom event
-        } // empty variables
-
+          });
+          ui.trigger(document, ui.globals.eventAjaxCallback);
+        }
 
         ui.ajax.requests[i] = undefined;
         ui.ajax.classNames = '';
         ui.ajax.data = '';
       } else {
-        // error
         props.callback('error', '', ui.ajax.requests[i]);
       }
-    }; // error
-
+    };
 
     ui.ajax.requests[i].onerror = function () {
       props.callback('error', '', ui.ajax.requests[i]);
     };
   }
-}; // user agents
-
+};
 ui.userAgents = {
-  // targets
   target: document,
-  // main classnames
   nameDesktop: 'ui-desktop',
   nameWindows: 'ui-windows',
   nameChromiumEdge: 'ui-edg',
@@ -646,7 +579,6 @@ ui.userAgents = {
   nameIos: 'ui-ios',
   nameAndroid: 'ui-android',
   nameAndroidBrowser: 'ui-android-browser',
-  // variables
   userLang: '',
   desktop: false,
   ie: false,
@@ -656,8 +588,7 @@ ui.userAgents = {
   ios: false,
   android: false,
   androidOld: false,
-  nativeBrowser: false // It returns true on Jelly Bean and older versions and old native browser web view apps together.
-
+  nativeBrowser: false
 };
 
 (function () {
@@ -687,9 +618,7 @@ ui.userAgents = {
       ui.removeClass(ui.userAgents.target, ui.userAgents.nameChrome);
     }
 
-    isMSIE =
-    /*@cc_on!@*/
-    false;
+    isMSIE = false;
 
     if (isMSIE || !!document.documentMode || ua.indexOf('edge') > -1) {
       ui.userAgents.ie = true;
@@ -702,7 +631,6 @@ ui.userAgents = {
         ui.addClass(ui.userAgents.target, ui.userAgents.nameEdge);
       }
     } else if (ua.indexOf('edg') > -1) {
-      // detect new Chromium Edge
       ui.userAgents.edg = true;
       ui.addClass(ui.userAgents.target, ui.userAgents.nameChromiumEdge);
     }
@@ -737,7 +665,6 @@ ui.userAgents = {
         ui.removeClass(ui.userAgents.target, ui.userAgents.nameIos);
 
         if (ui.userAgents.nativeBrowser || parseFloat(ua.match(/android\s([0-9\.]*)/)[1]) < parseFloat('4.4')) {
-          // Jelly Bean and before with stock browser is androidOld
           ui.userAgents.androidOld = true;
         }
 
@@ -750,20 +677,15 @@ ui.userAgents = {
       ui.userAgents.desktop = true;
     }
   });
-})(); // dark mode
-
+})();
 
 ui.darkMode = {
-  // targets
   target: document,
-  // main classnames
   nameToggle: 'ui-darkmode-toggle',
-  // values
   valueDark: 'dark',
   valueLight: 'light',
   cookieDays: 365,
   cookieName: 'ui-darkMode',
-  // data attributes
   dataMod: 'data-ui-mode'
 };
 
@@ -773,37 +695,34 @@ ui.darkMode = {
   ui.onload(function () {
     if (ui.userAgents.ie) {
       return;
-    } // change event listener for darkColorScheme not supported on IE!
-
+    }
 
     var i, mode, doc, darkColorScheme, state, cookies, cookieName, setState;
     mode = ui.darkMode.valueLight;
     doc = ui.find(ui.darkMode.target)[0];
-    darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)'); // set current theme color
+    darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
     if (window.matchMedia) {
       if (darkColorScheme.matches) {
         mode = ui.darkMode.valueDark;
       }
-    } // check stored theme color
-
+    }
 
     state = decodeURIComponent(document.cookie).split('; ');
 
     for (i = 0; i < state.length; i++) {
       cookies = state[i].split('=');
       cookieName = cookies[0];
-      cookieName = cookieName.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+      cookieName = cookieName.replace(/^\s+|\s+$/g, '');
 
       if (cookieName === 'ui-darkMode') {
         mode = cookies[1];
       }
     }
 
-    doc.setAttribute(ui.darkMode.dataMod, mode); // Event Listeners
+    doc.setAttribute(ui.darkMode.dataMod, mode);
 
     setState = function setState(mode) {
-      // set theme state
       var d = new Date();
       d.setTime(d.getTime() + ui.darkMode.cookieDays * (24 * 60 * 60 * 1000));
       document.cookie = ui.darkMode.cookieName + '=' + mode + ';' + "expires=" + d.toUTCString();
@@ -820,8 +739,7 @@ ui.darkMode = {
       setState(mode);
     });
     ui.on(document, 'click', '.' + ui.darkMode.nameToggle, function (e) {
-      e.preventDefault(); // toggle theme color
-
+      e.preventDefault();
       var current = doc.getAttribute(ui.darkMode.dataMod);
       ui.addClass(ui.effects.target, ui.effects.nameNoEffects);
       setTimeout(function () {
@@ -841,26 +759,17 @@ ui.darkMode = {
       }, 0);
     });
   });
-})(); // effects
-
+})();
 
 ui.effects = {
-  // targets
   target: document,
-  // main classnames
   namePause: 'ui-effects-paused',
   nameNoEffects: 'ui-no-effects',
-  // pause effects
   pauseAll: false,
   pauseScroll: false,
-  // pause effects when scrolling
   pauseResize: false,
-  // pause effects when resizing
   preload: true,
-  // wait page preload to start effects
   reduceMotion: true,
-  // detecting device reduce motions
-  // show effects
   ie: true,
   android: true,
   androidOld: false
@@ -897,8 +806,6 @@ ui.effects = {
     }
 
     reduceTimers = function reduceTimers() {
-      // reduce effect timers
-      // they must be bigger than 10!
       ui.globals.fast = 11;
       ui.globals.ease = 12;
       ui.globals.slow = 13;
@@ -921,7 +828,6 @@ ui.effects = {
       ui.addClass(ui.effects.target, ui.effects.nameNoEffects);
       reduceTimers();
     } else {
-      // wait page preload to start transitions
       if (ui.effects.preload) {
         ui.addClass(ui.effects.target, ui.effects.namePause);
         setTimeout(function () {
@@ -931,18 +837,10 @@ ui.effects = {
     }
   });
 })();
-"use strict";
-
-/*
- UI Alerts JS
- Requires UI Core JS
-*/
 ui.alerts = {
-  // targets
   targetDialog: 'ui-alerts-dialog',
   targetMsg: 'ui-alerts-msg',
   targetBg: 'ui-alerts-bg',
-  // main classnames
   nameDialogOpened: 'ui-alerts-opened',
   nameDialogMsg: 'ui-dialog-msg',
   nameCloseDialog: 'ui-dialog-close',
@@ -953,29 +851,22 @@ ui.alerts = {
   nameMsgHolder: 'ui-alerts-msg-holder',
   nameMsgThemePrefix: 'ui-msg-',
   namePosPrefix: 'ui-',
-  // helper classnames
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
   nameShow: 'ui-show',
   nameShowEase: 'ui-show-ease',
-  // outer classnames
   nameIcon: 'ui-icon',
-  // styling classnames
   stylesDialog: 'ui-round ui-shadow-lg ui-ease-layout ui-ease-in-out',
   stylesCloseDialog: 'ui-ease-layout',
   stylesDialogBtnHolder: 'ui-ease-1st-btn',
   stylesMsg: 'ui-round ui-shadow-lg ui-ease-layout ui-ease-in-out',
   stylesMsgTheme: '',
   stylesBg: 'ui-ease-layout',
-  // icons
   closeIcon: 'remove',
-  // values
   dialogMessages: false,
-  // shows automatically clicked buttons text
   successBtnValue: 'success',
   errorBtnValue: 'error',
   messageTimer: 6000,
-  // wait for atomatically close messages
   posTopRight: 'tr',
   posTopLeft: 'tl',
   posBottomRight: 'br',
@@ -983,22 +874,18 @@ ui.alerts = {
   themeSuccess: 'success',
   themeWarning: 'warning',
   themeDanger: 'danger',
-  // messages
   msgDialogSuccess: 'OK',
-  // custom events
   eventCloseDialog: 'ui:closeAlertsDialog'
 };
 
 (function () {
   'use strict';
-  /*globals window, document, ui, setTimeout */
 
   var pageYPos,
       cancelCloseDialog,
       messageQueue = [];
 
   ui.alerts.Start = function () {
-    // dialogues
     ui.alerts.closeDialog = function () {
       var bg, dialog;
       dialog = ui.find('.' + ui.alerts.targetDialog)[0];
@@ -1026,13 +913,6 @@ ui.alerts = {
     };
 
     ui.alerts.dialog = function (props) {
-      /*
-      props list:
-          props.msg
-          props.error
-          props.custom
-          props.callback
-      */
       var closeBtn, bg, success, buttons, i, keys, val, html, dialog, userCloseDialog;
 
       if (props === undefined) {
@@ -1047,16 +927,14 @@ ui.alerts = {
 
       if (dialog !== undefined) {
         return;
-      } // prevent multiple dialogues
-
+      }
 
       if (ui.userAgents.mobile) {
-        pageYPos = window.pageYOffset; // get current scroll-y position
+        pageYPos = window.pageYOffset;
       }
 
       closeBtn = '';
-      cancelCloseDialog = false; // create buttons
-
+      cancelCloseDialog = false;
       buttons = '';
 
       if (props.custom !== undefined) {
@@ -1080,12 +958,10 @@ ui.alerts = {
       buttons += '<button class="' + ui.alerts.nameDialogSuccess + '" value="' + ui.alerts.successBtnValue + '">' + success + '</button>';
 
       if (props.error !== undefined) {
-        buttons += '<button class="' + ui.alerts.nameDialogError + '" value="' + ui.alerts.errorBtnValue + '">' + props.error + '</button>'; // create close icon
-
+        buttons += '<button class="' + ui.alerts.nameDialogError + '" value="' + ui.alerts.errorBtnValue + '">' + props.error + '</button>';
         cancelCloseDialog = true;
         closeBtn = '<button class="' + ui.alerts.nameCloseDialog + ' ' + ui.alerts.stylesCloseDialog + '">' + '<svg class="' + ui.alerts.nameIcon + '"><use href="#' + ui.alerts.closeIcon + '"/></svg>' + '</button>';
-      } // create dialog
-
+      }
 
       bg = ui.find('.' + ui.alerts.targetBg)[0];
       html = '<div class="' + ui.alerts.targetDialog + ' ' + ui.alerts.stylesDialog + '">' + closeBtn + '<div class="' + ui.alerts.nameDialogMsg + '">' + props.msg + '</div>' + '<div class="' + ui.alerts.nameDialogBtnHolder + ' ' + ui.alerts.stylesDialogBtnHolder + '">' + buttons + '</div>' + '</div>';
@@ -1095,8 +971,7 @@ ui.alerts = {
       }
 
       ui.find('body')[0].insertAdjacentHTML('beforeend', html);
-      ui.addClass(document, ui.alerts.nameDialogOpened); // show dialog
-
+      ui.addClass(document, ui.alerts.nameDialogOpened);
       bg = ui.find('.' + ui.alerts.targetBg);
       ui.addClass(bg, ui.alerts.nameOpen);
       setTimeout(function () {
@@ -1104,12 +979,10 @@ ui.alerts = {
         setTimeout(function () {
           dialog = ui.find('.' + ui.alerts.targetDialog);
           ui.addClass(dialog, ui.alerts.nameShow);
-          ui.find('.' + ui.alerts.nameDialogSuccess)[0].focus(); // fosuc success button
-
+          ui.find('.' + ui.alerts.nameDialogSuccess)[0].focus();
           setTimeout(function () {
             ui.addClass(dialog, ui.alerts.nameShowEase);
-          }, 10); // Event Listeners
-
+          }, 10);
           ui.on('.' + ui.alerts.nameDialogBtnHolder + ' button', 'click', function () {
             var that, msg, msgTimer, theme;
             that = this;
@@ -1130,18 +1003,15 @@ ui.alerts = {
 
             ui.alerts.closeDialog();
             setTimeout(function () {
-              // show message
               if (ui.alerts.dialogMessages) {
                 ui.alerts.message({
                   msg: msg,
                   theme: theme
                 });
-              } // callback
-
+              }
 
               if (props.callback !== undefined) {
                 setTimeout(function () {
-                  // wait for closing dialog and showing messages
                   props.callback.call(that, that.value);
                 }, ui.globals.ease * 2);
               }
@@ -1149,7 +1019,6 @@ ui.alerts = {
           });
 
           if (cancelCloseDialog) {
-            // attach close event listeners if props.error defined
             userCloseDialog = function userCloseDialog() {
               var errorBtn = ui.find('.' + ui.alerts.targetDialog + ' .' + ui.alerts.nameDialogError)[0];
               ui.alerts.closeDialog();
@@ -1168,15 +1037,13 @@ ui.alerts = {
             ui.on('body', 'keydown.' + ui.alerts.eventCloseDialog, function (e) {
               if (e.keyCode === 27) {
                 userCloseDialog();
-              } // esc
-
+              }
             });
           }
         }, ui.globals.ease);
       }, 10);
       return false;
-    }; // messages
-
+    };
 
     ui.alerts.closeMessage = function (win) {
       ui.removeClass(win, ui.alerts.nameShowEase);
@@ -1187,12 +1054,6 @@ ui.alerts = {
     };
 
     ui.alerts.message = function (props) {
-      /*
-      props list:
-          props.msg
-          props.pos
-          props.theme
-      */
       var arr, html, holder, message, msgStyles, prev, i, j, slide;
 
       if (props === undefined) {
@@ -1201,15 +1062,13 @@ ui.alerts = {
 
       if (props.msg === undefined) {
         return;
-      } // detect position
-
+      }
 
       arr = [ui.alerts.posTopRight, ui.alerts.posTopLeft, ui.alerts.posBottomRight, ui.alerts.posBottomLeft];
 
       if (arr.indexOf(props.pos) < 0) {
         props.pos = ui.alerts.posBottomRight;
-      } // detect theme
-
+      }
 
       msgStyles = '';
       arr = [ui.alerts.themeSuccess, ui.alerts.themeWarning, ui.alerts.themeDanger];
@@ -1218,8 +1077,7 @@ ui.alerts = {
         msgStyles += ui.alerts.nameMsgThemePrefix + props.theme + ' ';
       } else if (ui.alerts.stylesMsgTheme !== '') {
         msgStyles += ui.alerts.stylesMsgTheme + ' ';
-      } // create mssage
-
+      }
 
       holder = ui.find('.' + ui.alerts.nameMsgHolder)[0];
       html = '';
@@ -1237,13 +1095,12 @@ ui.alerts = {
       } else {
         holder = ui.find('.' + ui.alerts.nameMsgHolder)[0];
         holder.insertAdjacentHTML('beforeend', html);
-      } // show message
-
+      }
 
       message = ui.find('.' + ui.alerts.targetMsg + ':last-child');
       ui.addClass(message, ui.alerts.nameShow);
       setTimeout(function () {
-        ui.addClass(message, ui.alerts.nameShowEase); // move same position elements
+        ui.addClass(message, ui.alerts.nameShowEase);
 
         if (holder !== undefined) {
           prev = ui.find('.' + ui.alerts.targetMsg + '.' + ui.alerts.namePosPrefix + props.pos);
@@ -1261,12 +1118,10 @@ ui.alerts = {
 
             prev[j].style.transform = 'translateY(' + slide + 'px)';
           }
-        } // auto close messages
-
+        }
 
         messageQueue.push(message);
         setTimeout(function () {
-          // for manually closing messages by user
           if (messageQueue[0] === undefined) {
             return;
           }
@@ -1275,8 +1130,7 @@ ui.alerts = {
           messageQueue.shift();
         }, ui.alerts.messageTimer);
       }, 10);
-    }; // Event Listeners
-
+    };
 
     ui.on(document, 'click', '.' + ui.alerts.targetMsg, function () {
       var i;
@@ -1289,35 +1143,21 @@ ui.alerts = {
 
       ui.alerts.closeMessage(this);
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.alerts.Start);
 })();
-"use strict";
-
-/*
- UI Autocomplete JS
- Requires UI Core JS
-*/
 ui.autocomplete = {
-  // targets
   target: 'ui-autocomplete',
-  // main classnames
   nameMenuTop: 'ui-autocomplete-t',
-  // helper classnames
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
   nameLoaded: 'ui-loaded',
   nameSelected: 'ui-selected',
-  // outer classnames
   nameRound: 'ui-round',
   nameInput: 'ui-input',
-  // styling classnames
   stylesList: 'ui-shadow-lg ui-ease-autocomplete',
-  // tags
   tagHighlight: 'b',
-  // values
   scrollbarSize: 15,
   queryParameter: 'val',
   customLetters: {
@@ -1329,24 +1169,21 @@ ui.autocomplete = {
     "Ö": "ö",
     "Ç": "ç"
   },
-  // data attributes
   dataSrc: 'data-ui-src',
   dataVal: 'data-ui-val'
 };
 
 (function () {
   'use strict';
-  /*globals window, document, ui, clearTimeout, setTimeout */
 
   ui.autocomplete.Start = function () {
     var customLowerCase,
         formEventListeners,
-        autocompleteRequests = []; // custom lowercase
+        autocompleteRequests = [];
 
     (function () {
       var k, re, chars, keys;
-      keys = Object.keys(ui.autocomplete.customLetters); // returns array
-
+      keys = Object.keys(ui.autocomplete.customLetters);
       chars = '(([';
 
       for (k = 0; k < keys.length; k++) {
@@ -1362,8 +1199,7 @@ ui.autocomplete = {
         });
         return string.toLowerCase();
       };
-    })(); // Event Listeners
-
+    })();
 
     formEventListeners = ui.find('.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + ' > [type="text"]');
     ui.on(document, 'keyup', formEventListeners, function (e) {
@@ -1373,11 +1209,9 @@ ui.autocomplete = {
 
       if (list[0] === undefined) {
         return;
-      } // clear forms has triggering keyup event
-
+      }
 
       if (e.keyCode === 38 || e.keyCode === 40) {
-        // navigate the list
         listItems = ui.find('li', list[0]);
 
         if (listItems.length > 0) {
@@ -1387,14 +1221,12 @@ ui.autocomplete = {
             navIndex = Array.prototype.slice.call(listItems).indexOf(navSelected[0]);
 
             if (e.keyCode === 40) {
-              // arrow down
               navIndex += 1;
 
               if (navIndex >= listItems.length) {
                 navIndex = 0;
               }
             } else if (e.keyCode === 38) {
-              // arrow up
               navIndex -= 1;
 
               if (navIndex < 0) {
@@ -1403,10 +1235,8 @@ ui.autocomplete = {
             }
           } else {
             if (e.keyCode === 40) {
-              // arrow down
               navIndex = 0;
             } else if (e.keyCode === 38) {
-              // arrow up
               navIndex = listItems.length - 1;
             }
           }
@@ -1416,7 +1246,6 @@ ui.autocomplete = {
           this.value = listItems[navIndex].textContent;
         }
       } else if (e.keyCode === 13 || e.keyCode === 27 || e.keyCode === undefined) {
-        // undefined: detect keyup trigger event when clicking!
         if (list.length >= 1) {
           ui.removeClass(p, ui.autocomplete.nameOpenEase);
           setTimeout(function () {
@@ -1427,7 +1256,7 @@ ui.autocomplete = {
       } else if (e.keyCode !== 16 && e.keyCode !== 17 && e.keyCode !== 18) {
         v = this.value;
         v = customLowerCase(v);
-        v = v.replace(/\s+$/g, ''); // remove the last space
+        v = v.replace(/\s+$/g, '');
 
         if (v !== '') {
           checkData = function checkData(response) {
@@ -1435,7 +1264,6 @@ ui.autocomplete = {
 
             if (response.length !== 'undefined') {
               createDropdown = function createDropdown() {
-                // create dropdown
                 clearTimeout(timerShowLines);
                 timerShowLines = setTimeout(function () {
                   offset = p.getBoundingClientRect();
@@ -1467,8 +1295,7 @@ ui.autocomplete = {
                 if (key !== null) {
                   if (typeof key === 'boolean') {
                     return;
-                  } // booleans not supported!
-
+                  }
 
                   m = key;
 
@@ -1480,14 +1307,12 @@ ui.autocomplete = {
                   }
 
                   if (m !== null) {
-                    createDropdown(); // show max. number of lines: 5
-
+                    createDropdown();
                     k += 1;
 
                     if (k > 5) {
                       return;
-                    } // create lines
-
+                    }
 
                     if (typeof key === 'number') {
                       for (j = 0; j < key.toString().length; j++) {
@@ -1530,11 +1355,9 @@ ui.autocomplete = {
             src = p.getAttribute(ui.autocomplete.dataSrc);
 
             if (src !== null && src !== '') {
-              // get json data with ajax
               ui.ajax({
                 url: src + '?' + ui.autocomplete.queryParameter + '=' + v,
                 beforesend: function beforesend(xhr) {
-                  // abort still processing previous autocomplete requests
                   for (n = 0; n < autocompleteRequests.length; n++) {
                     autocompleteRequests[n].abort();
                     autocompleteRequests.splice(n, 1);
@@ -1562,7 +1385,6 @@ ui.autocomplete = {
       }
     });
     ui.on(document, 'keydown', formEventListeners, function (e) {
-      // prevent form submitting when selecting from list with enter
       if (e.keyCode === 13) {
         var p, list;
         p = this.parentNode;
@@ -1606,28 +1428,18 @@ ui.autocomplete = {
       }, ui.globals.ease);
     });
     ui.on(document, 'mousedown', '.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + '.' + ui.autocomplete.nameOpen + ' li', function () {
-      // trigger defined event listeners after autocomplete selected
       var p, target;
       p = ui.closest(this, '.' + ui.autocomplete.target);
       target = ui.find('[type="text"]', p);
       target.value = this.textContent;
       ui.trigger(target, 'keyup');
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.autocomplete.Start);
 })();
-"use strict";
-
-/*
- UI Calendar JS
- Requires UI Core JS
-*/
 ui.calendar = {
-  // targets
   target: 'ui-calendar',
-  // main classnames
   nameContainer: 'ui-calendar-container',
   nameTitle: 'ui-calendar-title',
   nameDetails: 'ui-calendar-details',
@@ -1649,16 +1461,13 @@ ui.calendar = {
   nameShowDetails: 'ui-calendar-show-details',
   nameHasDetails: 'ui-calendar-has-details',
   nameEmptyDetails: 'ui-calendar-details-empty',
-  // helper classnames
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
   nameActive: 'ui-active',
   nameSelected: 'ui-selected',
-  // outer classnames
   nameIcon: 'ui-icon',
   nameHover: 'ui-hover',
   nameRound: 'ui-round',
-  // styling classnames
   stylesCalendar: 'ui-ease-calendar',
   stylesTitle: 'ui-ease-bg',
   stylesContainer: 'ui-ease-layout ui-ease-slow ui-ease-in-out',
@@ -1666,45 +1475,33 @@ ui.calendar = {
   stylesToday: 'ui-theme-sub ui-fill-dark-100',
   stylesPickerDay: 'ui-theme-red ui-fill-dark-100',
   stylesDetailScroll: 'ui-scrollbar-faded',
-  // icons
   prevIcon: 'arrow-left',
-  // header's previous button
   nextIcon: 'arrow-right',
-  // header's next button
   backIcon: 'angle-left',
-  // detail's back button
-  // values
   pickerSep: '/',
   days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
   months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
   dateFormat: 1,
-  // 0: dd mm yyyy, 1: mm dd yyyy
   startDayofWeek: 1,
-  // 0: Sunday, 1: Monday
   setPrev: 'prev',
   setNext: 'next',
   fillWeekends: true,
-  // true: fills dark color to weekends' background
   calendarPadding: 5,
   scrollbarSize: 15,
-  // data attributes
   dataDate: 'data-ui-date',
   dataSrc: 'data-ui-src',
   dataDay: 'data-ui-day',
   dataD: 'data-ui-d',
-  // custom events
   eventClose: 'ui:pickerClose',
   eventChange: 'ui:pickerChange'
 };
 
 (function () {
   'use strict';
-  /*globals window, document, ui, setTimeout */
 
-  var checkCalendars; // first loading
+  var checkCalendars;
 
   ui.calendar.Start = function () {
-    // get calendar's date
     function getAttr(that, date, newDate) {
       var attr = that.getAttribute(ui.calendar.dataDate);
 
@@ -1712,7 +1509,6 @@ ui.calendar = {
         attr = attr.split(',');
 
         if (attr.length === 1) {
-          // set only month
           if (!isNaN(Number(attr[0])) && attr[0].length <= 2) {
             if (attr[0] === '0') {
               attr[0] = 1;
@@ -1721,7 +1517,6 @@ ui.calendar = {
             date.setMonth(attr[0] - 1);
           }
         } else if (attr.length === 2) {
-          // set year and month
           if (!isNaN(Number(attr[0])) && attr[0].length === 4) {
             if (!isNaN(Number(attr[1])) && attr[1].length <= 2) {
               date.setFullYear(attr[0]);
@@ -1747,8 +1542,7 @@ ui.calendar = {
           date.setMonth(date.getMonth() + 1);
         }
       }
-    } // get picker value
-
+    }
 
     function pickerVal(that) {
       if (that.value !== '') {
@@ -1757,50 +1551,44 @@ ui.calendar = {
         if (val.length === 3 && val[0].length <= 2 && val[1].length <= 2 && val[2].length === 4) {
           if (!isNaN(val[0]) && !isNaN(val[1]) && !isNaN(val[2])) {
             if (ui.calendar.dateFormat === 1) {
-              return Number(val[2]) + ',' + Number(val[0] - 1) + ',' + Number(val[1]); // mm dd yyyy
+              return Number(val[2]) + ',' + Number(val[0] - 1) + ',' + Number(val[1]);
             }
 
-            return Number(val[2]) + ',' + Number(val[1] - 1) + ',' + Number(val[0]); // dd mm yyyy
+            return Number(val[2]) + ',' + Number(val[1] - 1) + ',' + Number(val[0]);
           }
         }
 
         return '';
       }
-    } // create calendar table
-
+    }
 
     function createFnc(that, newDate, picker) {
       var date, today, pickerDay, container, html, i, j, todayStyles, pickerDayStyles, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, src, keys, dday, details;
       date = new Date();
-      date.setDate(1); // for the prev and next implementations
-
-      pickerDay = ''; // set new date
+      date.setDate(1);
+      pickerDay = '';
 
       if (newDate !== undefined) {
         if (newDate === ui.calendar.setPrev || newDate === ui.calendar.setNext) {
           if (picker) {
-            // called from picker
-            pickerDay = pickerVal(picker); // check value
+            pickerDay = pickerVal(picker);
           }
 
-          getAttr(that, date, newDate); // get date
+          getAttr(that, date, newDate);
         } else {
           newDate = newDate.split(',');
           date.setFullYear(newDate[0]);
           date.setMonth(newDate[1]);
 
           if (newDate[2] !== undefined) {
-            // defined a new day from picker
             pickerDay = Number(newDate[0]) + ',' + Number(newDate[1]) + ',' + Number(newDate[2]);
           }
         }
       } else {
-        getAttr(that, date); // get date
-      } // set new date
+        getAttr(that, date);
+      }
 
-
-      that.setAttribute(ui.calendar.dataDate, date.getFullYear() + ',' + (date.getMonth() + 1)); // create table
-
+      that.setAttribute(ui.calendar.dataDate, date.getFullYear() + ',' + (date.getMonth() + 1));
       html = '';
       container = ui.find('.' + ui.calendar.nameContainer, that)[0];
 
@@ -1817,14 +1605,12 @@ ui.calendar = {
       html += '>' + '<caption>' + '<button type="button" tabindex="-1" class="' + ui.calendar.namePrev + '">' + '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.prevIcon + '"/></svg>' + '</button>' + '<span class="' + ui.calendar.nameTitle + ' ' + ui.calendar.stylesTitle + '">' + '<button type="button" tabindex="-1" class="' + ui.calendar.nameMonth + '">' + ui.calendar.months[date.getMonth()] + '</button>' + '<button type="button" tabindex="-1" class="' + ui.calendar.nameYear + '">' + date.getFullYear() + '</button>' + '</span>' + '<button type="button" tabindex="-1" class="' + ui.calendar.nameNext + '">' + '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.nextIcon + '"/></svg>' + '</button>' + '</caption>' + '<thead>';
 
       if (ui.calendar.startDayofWeek === 0) {
-        // Sunday
         html += '<th>' + ui.calendar.days[ui.calendar.days.length - 1] + '</th>';
 
         for (i = 0; i < ui.calendar.days.length - 1; i++) {
           html += '<th>' + ui.calendar.days[i] + '</th>';
         }
       } else {
-        // Monday
         for (i = 0; i < ui.calendar.days.length; i++) {
           html += '<th>' + ui.calendar.days[i] + '</th>';
         }
@@ -1834,14 +1620,10 @@ ui.calendar = {
       firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
 
       if (ui.calendar.startDayofWeek === 0) {
-        // Sunday
-        sysDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']; // don't update to your language
-
+        sysDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
         firstDay = sysDays.indexOf(sysDays[firstDay.getDay()]);
       } else {
-        // Monday
-        sysDays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']; // don't update to your language
-
+        sysDays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
         firstDay = sysDays.indexOf(sysDays[firstDay.getDay() - 1]);
       }
 
@@ -1872,7 +1654,6 @@ ui.calendar = {
 
           if (activeDay) {
             if (date.getFullYear() + ' ' + date.getMonth() + ' ' + days === today) {
-              // today
               todayStyles = '';
 
               if (ui.calendar.stylesToday !== '') {
@@ -1881,9 +1662,7 @@ ui.calendar = {
 
               html += '<td class="' + ui.calendar.nameToday + '">' + '<button class="' + todayStyles + '" type="button" tabindex="-1">' + days + '</button>' + '</td>';
             } else {
-              // other days
               if (pickerDay !== '') {
-                // defined a new day from picker
                 if (date.getFullYear() + ',' + date.getMonth() + ',' + days === pickerDay) {
                   pickerDayStyles = '';
 
@@ -1900,7 +1679,6 @@ ui.calendar = {
               }
             }
           } else {
-            // passive days
             html += '<td class="' + ui.calendar.namePassiveDay + '">' + '<span>' + days + '</span>' + '</td>';
           }
 
@@ -1918,14 +1696,12 @@ ui.calendar = {
       } else {
         container.innerHTML = '';
         container.insertAdjacentHTML('afterbegin', html);
-      } // check details
-
+      }
 
       src = that.getAttribute(ui.calendar.dataSrc);
 
       if (src !== null && src !== '') {
-        details = ''; // get json data with ajax
-
+        details = '';
         ui.ajax({
           url: src,
           callback: function callback(status, response) {
@@ -1943,10 +1719,8 @@ ui.calendar = {
 
                 if (Number(response[i].year) === date.getFullYear()) {
                   if (Number(response[i].month) === date.getMonth() + 1) {
-                    // select detailed days
                     dday = ui.find('[' + ui.calendar.dataDay + '="' + response[i].day + '"]', that);
-                    ui.addClass(dday, ui.calendar.nameToggleDetails); // create details html
-
+                    ui.addClass(dday, ui.calendar.nameToggleDetails);
                     details += '<li ' + ui.calendar.dataD + '="' + response[i].day + '">' + '<strong>' + response[i].day + '</strong>' + '<b>' + response[i].dayName + '</b><br>';
                     keys = Object.keys(response[i].details);
 
@@ -1969,10 +1743,10 @@ ui.calendar = {
 
               if (details !== '') {
                 details = '<div class="' + ui.calendar.nameDetails + '">' + '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">' + '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.backIcon + '"/></svg>' + '</button>' + '<ul class="' + ui.calendar.stylesDetailScroll + '">' + details + '</ul>' + '</div>';
-                ui.addClass(container, ui.calendar.nameHasDetails); // enable buttons click event
+                ui.addClass(container, ui.calendar.nameHasDetails);
               } else {
                 details = '<div class="' + ui.calendar.nameDetails + ' ' + ui.calendar.nameEmptyDetails + '">' + '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">' + '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.backIcon + '"/></svg>' + '</button>' + '<ul>' + '<li>' + '<strong></strong>' + '<b></b><br>' + '<span></span>' + '<span></span>' + '<span></span>' + '</li>' + '</ul>' + '</div>';
-                ui.removeClass(container, ui.calendar.nameHasDetails); // disable buttons click event
+                ui.removeClass(container, ui.calendar.nameHasDetails);
               }
 
               container.insertAdjacentHTML('afterbegin', details);
@@ -1984,8 +1758,7 @@ ui.calendar = {
 
       html = '';
       ui.addClass(that, ui.calendar.nameActive);
-    } // ckeck not loaded calendars
-
+    }
 
     checkCalendars = function checkCalendars() {
       var calendars = ui.find('.' + ui.calendar.target + ':not(.' + ui.calendar.nameActive + ')');
@@ -1997,19 +1770,16 @@ ui.calendar = {
       }
     };
 
-    checkCalendars(); // Event Listeners
-    // calendar navigation
-
+    checkCalendars();
     ui.on(document, 'click', '.' + ui.calendar.namePrev + ',.' + ui.calendar.nameNext, function () {
       var that, picker, form;
       that = ui.closest(this, '.' + ui.calendar.target)[0];
-      picker = ui.closest(that, '.' + ui.calendar.namePicker)[0]; // check called from picker
+      picker = ui.closest(that, '.' + ui.calendar.namePicker)[0];
 
       if (ui.hasClass(this, ui.calendar.nameNext)) {
         if (picker === undefined) {
           createFnc(that, ui.calendar.setNext);
         } else {
-          // picker
           form = ui.find('[type="text"]', picker)[0];
           createFnc(that, ui.calendar.setNext, form);
         }
@@ -2017,23 +1787,19 @@ ui.calendar = {
         if (picker === undefined) {
           createFnc(that, ui.calendar.setPrev);
         } else {
-          // picker
           form = ui.find('[type="text"]', picker)[0];
           createFnc(that, ui.calendar.setPrev, form);
         }
       }
-    }); // change month and year with panel
-
+    });
     ui.on(document, 'click', '.' + ui.calendar.nameMonth + ',.' + ui.calendar.nameYear, function () {
       var that, date, year, years, month, html, i, panelType, getList, getSelected, getIndex;
       date = new Date();
       that = ui.closest(this, '.' + ui.calendar.target)[0];
-      getAttr(that, date); // create panel
-
+      getAttr(that, date);
       html = '<div class="' + ui.calendar.namePanel + ' ' + ui.calendar.stylesPanel + '">' + '<ul>';
 
       if (ui.hasClass(this, ui.calendar.nameYear)) {
-        // years
         panelType = 'year';
         year = date.getFullYear();
         years = 1920 + (new Date().getFullYear() - 1920) + 100;
@@ -2050,7 +1816,6 @@ ui.calendar = {
           html += 'name="' + i + '">' + i + '</button>' + '</li>';
         }
       } else {
-        // months
         panelType = 'month';
         month = ui.calendar.months[date.getMonth()];
 
@@ -2067,25 +1832,21 @@ ui.calendar = {
         }
       }
 
-      html += '</ul>' + '</div>'; // show panel
-
+      html += '</ul>' + '</div>';
       that.insertAdjacentHTML('afterbegin', html);
-      html = ''; // animate panel
-
+      html = '';
       setTimeout(function () {
-        ui.addClass(that, ui.calendar.nameShowPanel); // scroll to active year
+        ui.addClass(that, ui.calendar.nameShowPanel);
 
         if (panelType === 'year') {
           getList = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall, that);
           getSelected = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall + '.' + ui.calendar.nameSelected, that)[0];
           getIndex = Math.floor(Array.prototype.slice.call(getList).indexOf(getSelected) / 12);
-          ui.find('.' + ui.calendar.namePanel, that)[0].scrollTop = getIndex * (that.offsetHeight - ui.calendar.calendarPadding * 2); // IE, EDGE: scrollTo() not supported for div element
-
+          ui.find('.' + ui.calendar.namePanel, that)[0].scrollTop = getIndex * (that.offsetHeight - ui.calendar.calendarPadding * 2);
           getList = '';
         }
       }, 10);
-    }); // close panel
-
+    });
     ui.on(document, 'click', '.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall, function () {
       var that, date;
       date = new Date();
@@ -2094,12 +1855,9 @@ ui.calendar = {
       ui.removeClass(that, ui.calendar.nameShowPanel);
 
       if (!ui.hasClass(this, ui.calendar.nameSelected)) {
-        // check user selected different date
         if (this.name.length === 4) {
-          // selected year
           createFnc(that, this.name + ',' + date.getMonth());
         } else {
-          // selected month
           createFnc(that, date.getFullYear() + ',' + this.name);
         }
       }
@@ -2107,7 +1865,7 @@ ui.calendar = {
       setTimeout(function () {
         that.removeChild(ui.find('.' + ui.calendar.namePanel, that)[0]);
       }, ui.globals.slow);
-    }); // close picker
+    });
 
     function pickerCloseFnc(type, target) {
       var allPickers = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target);
@@ -2118,7 +1876,6 @@ ui.calendar = {
       }
 
       if (type === 'continuous') {
-        // when the user holds the tab button continuously
         ui.each(allPickers, function (i) {
           ui.removeClass(this, ui.calendar.nameOpenEase);
           setTimeout(function () {
@@ -2143,28 +1900,23 @@ ui.calendar = {
             removePicker(form, that);
           }, ui.globals.ease);
         });
-      } // remove event listeners
-
+      }
 
       ui.off('body', 'mousedown.' + ui.calendar.eventClose);
       ui.off(target, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
-    } // show picker
-
+    }
 
     ui.on(document, 'focus', '.' + ui.calendar.namePicker + ' > [type="text"]', function () {
       var that, form, offset, html, picker, inputDate, formHeight, pickerWidth, pickerHeight;
-      that = this; // check duplicate
-
+      that = this;
       form = that.parentElement;
 
       if (ui.find('.' + ui.calendar.target, form).length > 0) {
         return;
-      } // remove event listeners
-
+      }
 
       ui.off('body', 'mousedown.' + ui.calendar.eventClose);
-      ui.off(that, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange); // create picker
-
+      ui.off(that, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
       html = '<div class="' + ui.calendar.target;
 
       if (ui.hasClass(form, ui.calendar.nameRound)) {
@@ -2173,16 +1925,14 @@ ui.calendar = {
 
       html += ' ' + ui.calendar.stylesCalendar + '">' + '</div>';
       form.insertAdjacentHTML('beforeend', html);
-      picker = ui.find('.' + ui.calendar.target, form)[0]; // check value
-
+      picker = ui.find('.' + ui.calendar.target, form)[0];
       inputDate = pickerVal(that);
 
       if (inputDate === '') {
         createFnc(picker);
       } else {
         createFnc(picker, inputDate);
-      } // check picker position
-
+      }
 
       offset = form.getBoundingClientRect();
       formHeight = form.offsetHeight;
@@ -2199,33 +1949,27 @@ ui.calendar = {
         if (offset.top - parseInt(formHeight + pickerHeight) + formHeight > 0) {
           ui.addClass(form, ui.calendar.namePickerTop);
         }
-      } // show picker
-
+      }
 
       setTimeout(function () {
         ui.addClass(picker, ui.calendar.nameOpenEase);
-      }, 10); // close event listeners
-
+      }, 10);
       ui.on('body', 'mousedown.' + ui.calendar.eventClose, function (ev) {
-        // prevent for picker elements
         if (ui.closest(ev.target, form)[0] !== undefined) {
           return;
         }
 
         if (ev.button !== 2) {
-          // inherited right clicks
           pickerCloseFnc('default', that);
         }
       });
       ui.on(that, 'keydown.' + ui.calendar.eventClose, function (ev) {
         if (ev.keyCode === 9 || ev.keyCode === 13 || ev.keyCode === 27) {
-          // Tab || Enter || Esc
           pickerCloseFnc('continuous', that);
         }
-      }); // change event
-
+      });
       ui.on(that, 'keyup.' + ui.calendar.eventChange, function () {
-        inputDate = pickerVal(this); // check value
+        inputDate = pickerVal(this);
 
         if (inputDate === '') {
           createFnc(picker);
@@ -2233,19 +1977,15 @@ ui.calendar = {
           createFnc(picker, inputDate);
         }
       });
-    }); // picker buttons
-
+    });
     ui.on(document, 'click', '.' + ui.calendar.namePicker + ' .' + ui.calendar.target + ' tbody td button', function () {
       var date, day, month, picker, that, form;
       date = new Date();
       picker = ui.closest(this, '.' + ui.calendar.namePicker)[0];
       that = ui.find('.' + ui.calendar.target, picker)[0];
       form = ui.find('[type="text"]', picker)[0];
-      getAttr(that, date); // get date
-
-      date.setDate(this.textContent); // set new day
-      // set values to input form
-
+      getAttr(that, date);
+      date.setDate(this.textContent);
       day = date.getDate().toString();
 
       if (day.length === 1) {
@@ -2261,15 +2001,13 @@ ui.calendar = {
       }
 
       if (ui.calendar.dateFormat === 1) {
-        form.value = month + ui.calendar.pickerSep + day + ui.calendar.pickerSep + date.getFullYear(); // mm dd yyyy
+        form.value = month + ui.calendar.pickerSep + day + ui.calendar.pickerSep + date.getFullYear();
       } else {
-        form.value = day + ui.calendar.pickerSep + month + ui.calendar.pickerSep + date.getFullYear(); // dd mm yyyy
-      } // close picker
-
+        form.value = day + ui.calendar.pickerSep + month + ui.calendar.pickerSep + date.getFullYear();
+      }
 
       pickerCloseFnc('default', form);
-    }); // toggle details
-
+    });
     ui.on(document, 'click', '.' + ui.calendar.target + ' .' + ui.calendar.nameToggleDetails, function () {
       var that, details, day, i, list, scroll;
       that = ui.closest(this, '.' + ui.calendar.target)[0];
@@ -2297,39 +2035,27 @@ ui.calendar = {
           scroll += list[i].offsetHeight + ui.calendar.calendarPadding;
         }
 
-        ui.find('ul', details)[0].scrollTop = scroll; // IE, EDGE: scrollTo() not supported for div element
+        ui.find('ul', details)[0].scrollTop = scroll;
       }
     });
-  }; // Loaders
+  };
 
-
-  ui.onload(ui.calendar.Start); // ajax callback loader
-
+  ui.onload(ui.calendar.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
     if (ui.ajax.classNames.indexOf(ui.calendar.target) > -1) {
       checkCalendars();
     }
   });
 })();
-"use strict";
-
-/*
- UI Card JS
- Requires UI Core JS
-*/
 ui.card = {
-  // targets
   targetClose: 'ui-card-close',
-  // styling classnames
   stylesClosing: 'ui-card-close-wait ui-ease-layout'
 };
 
 (function () {
   'use strict';
-  /*globals document, ui, setTimeout */
 
   ui.card.Start = function () {
-    // Event Listeners
     ui.on(document, 'click', '.' + ui.card.targetClose, function () {
       var parentEl = this.parentElement;
       ui.addClass(parentEl, ui.card.stylesClosing);
@@ -2337,24 +2063,15 @@ ui.card = {
         parentEl.parentNode.removeChild(parentEl);
       }, ui.globals.ease * 2);
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.card.Start);
 })();
-"use strict";
-
-/*
- UI Carousel JS
- Requires UI Core JS
-*/
 ui.carousel = {
-  // targets
   target: 'ui-carousel',
   targetGallery: 'ui-carousel-gallery',
   targetSlider: 'ui-carousel-slider',
   targetNav: 'ui-carousel-nav',
-  // main classnames
   nameTouchMove: 'ui-carousel-touchmove',
   nameHalfSize: 'ui-carousel-half',
   nameAnimate: 'ui-carousel-animate',
@@ -2365,7 +2082,6 @@ ui.carousel = {
   nameGalleryDetail: 'ui-carousel-gallery-detail',
   nameGalleryDetailLoader: 'ui-carousel-gallery-detail-loader',
   nameGalleryThumbs: 'ui-carousel-gallery-thumbs',
-  // helper classnames
   nameShow: 'ui-show',
   nameFaded: 'ui-faded',
   nameActive: 'ui-active',
@@ -2373,7 +2089,6 @@ ui.carousel = {
   nameFiltered: 'ui-filtered',
   nameNavSelected: 'ui-selected',
   nameGallerySelected: 'ui-selected',
-  // outer classnames
   namePhoto: 'ui-photo',
   nameScroll: 'ui-scroll',
   nameScrollV: 'ui-scroll-v',
@@ -2384,17 +2099,12 @@ ui.carousel = {
   nameEaseSlow3x: 'ui-ease-slow-3x',
   nameEaseSlow4x: 'ui-ease-slow-4x',
   nameEaseSlow5x: 'ui-ease-slow-5x',
-  // styling classnames
   stylesDots: 'ui-ease-all ui-ease-slow',
-  // tags
   tagDots: 'i',
-  // values
   halfSize: 0.5,
-  // set percent of default half size
   defaultSlideTimer: 8000,
   touchMoveToleranceX: 15,
   touchMoveToleranceY: 25,
-  // data attributes
   dataCols: 'data-ui-col',
   dataColsXL: 'data-ui-col-xl',
   dataColsLG: 'data-ui-col-lg',
@@ -2407,14 +2117,12 @@ ui.carousel = {
   dataCount: 'data-ui-count',
   dataSlide: 'data-ui-slide',
   dataHref: 'data-ui-href',
-  // custom events
   eventTouchEnd: 'ui:carouselTouchEnd',
   eventTouchCancel: 'ui:carouselTouchCancel'
 };
 
 (function () {
   'use strict';
-  /*globals window, document, ui, Image, setTimeout, clearTimeout, setInterval, clearInterval */
 
   var idCount = 0,
       cols = [],
@@ -2469,7 +2177,6 @@ ui.carousel = {
       }
 
       if (ui.closest(content, '.' + ui.carousel.nameResized)[0] !== undefined) {
-        // detect carousel is resizing
         return;
       }
 
@@ -2478,7 +2185,6 @@ ui.carousel = {
       }
 
       setTimeout(function () {
-        // wait for dom loading or slider ease time
         function show() {
           setTimeout(function () {
             ui.addClass(elems[i], ui.carousel.nameShow);
@@ -2498,8 +2204,7 @@ ui.carousel = {
   function filterDots(navDots, navDotsEl, count, i) {
     ui.removeClass(navDots, ui.carousel.nameFiltered);
     ui.removeClass(navDotsEl, ui.carousel.nameShow + ' ' + ui.carousel.nameFaded);
-    var col = getCols(i); // get responsive cols
-
+    var col = getCols(i);
     ui.addClass(navDots, ui.carousel.nameFiltered);
 
     if (count - 1 > -1) {
@@ -2533,10 +2238,9 @@ ui.carousel = {
       return;
     }
 
-    col = getCols(i); // get responsive cols
+    col = getCols(i);
 
     if (contents.length <= col) {
-      // toggle nav
       nav.style.display = 'none';
     } else {
       nav.style.display = '';
@@ -2560,10 +2264,8 @@ ui.carousel = {
     slider[0].style.width = size + 'px';
 
     if (contents.length / col === 1) {
-      // check nav is active
       counts[i] = 0;
     } else if (col !== 1 && counts[i] > col) {
-      // check current count larger than current col size
       counts[i] = col;
     }
 
@@ -2573,10 +2275,8 @@ ui.carousel = {
     navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
     ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
     ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
-    filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
-
+    filterDots(navDots, navDotsEl, counts[i], i);
     ui.each(contents, function (l) {
-      // detect carousel animates
       if (l + 1 > col) {
         return;
       }
@@ -2628,7 +2328,7 @@ ui.carousel = {
 
     navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that);
     navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
-    col = getCols(i); // get responsive cols
+    col = getCols(i);
 
     if (direction === 'next') {
       counts[i] += 1;
@@ -2647,8 +2347,7 @@ ui.carousel = {
     that.setAttribute(ui.carousel.dataContent, counts[i] + 1);
     ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
     ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
-    filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
-
+    filterDots(navDots, navDotsEl, counts[i], i);
     slide = counts[i] * contents[0].offsetWidth;
     halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
 
@@ -2657,11 +2356,9 @@ ui.carousel = {
     }
 
     slider[0].style.transform = 'translateX(-' + slide + 'px)';
-    getSlideSpeed(slider, contentsEase[i], i); // get carousel slide speed
-    // detect carousel animates
+    getSlideSpeed(slider, contentsEase[i], i);
 
     if (contents.length > 1 && contents.length !== col) {
-      // stop reloading animates when content length is not enough
       ui.each(contents, function () {
         carouselAnimate(this, contentsEase[i], 'static');
       });
@@ -2694,7 +2391,6 @@ ui.carousel = {
 
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function () {
-      // wait auto slider until resize completed
       that = ui.find('.' + ui.carousel.target);
       ui.each(that, function () {
         var i = Number(this.getAttribute(ui.carousel.dataID));
@@ -2723,21 +2419,18 @@ ui.carousel = {
     var carousels = ui.find('.' + ui.carousel.target + ':not(.' + ui.carousel.nameActive + ')');
 
     if (carousels.length > 0) {
-      // load carousels
       ui.each(carousels, function () {
         var j, k, that, contents, col, nav, navDots, navDotsHtml, navDotsEl;
-        that = this; // id
-
+        that = this;
         that.setAttribute(ui.carousel.dataID, idCount);
         j = idCount;
-        idCount += 1; // cols
-
+        idCount += 1;
         cols[j] = that.getAttribute(ui.carousel.dataCols);
         colsXL[j] = that.getAttribute(ui.carousel.dataColsXL);
         colsLG[j] = that.getAttribute(ui.carousel.dataColsLG);
         colsMD[j] = that.getAttribute(ui.carousel.dataColsMD);
         colsSM[j] = that.getAttribute(ui.carousel.dataColsSM);
-        colsXS[j] = that.getAttribute(ui.carousel.dataColsXS); // col
+        colsXS[j] = that.getAttribute(ui.carousel.dataColsXS);
 
         if (cols[j] === null) {
           cols[j] = 1;
@@ -2747,8 +2440,7 @@ ui.carousel = {
           if (!cols[j] || cols[j] === '0' || cols[j] === '') {
             cols[j] = 1;
           }
-        } // xl
-
+        }
 
         if (colsXL[j] === null) {
           colsXL[j] = cols[j];
@@ -2758,8 +2450,7 @@ ui.carousel = {
           if (!colsXL[j] || colsXL[j] === '0' || colsXL[j] === '') {
             colsXL[j] = cols[j];
           }
-        } // lg
-
+        }
 
         if (colsLG[j] === null) {
           colsLG[j] = cols[j];
@@ -2769,8 +2460,7 @@ ui.carousel = {
           if (!colsLG[j] || colsLG[j] === '0' || colsLG[j] === '') {
             colsLG[j] = cols[j];
           }
-        } // md
-
+        }
 
         if (colsMD[j] === null) {
           colsMD[j] = cols[j];
@@ -2780,8 +2470,7 @@ ui.carousel = {
           if (!colsMD[j] || colsMD[j] === '0' || colsMD[j] === '') {
             colsMD[j] = cols[j];
           }
-        } // sm
-
+        }
 
         if (colsSM[j] === null) {
           colsSM[j] = cols[j];
@@ -2791,8 +2480,7 @@ ui.carousel = {
           if (!colsSM[j] || colsSM[j] === '0' || colsSM[j] === '') {
             colsSM[j] = cols[j];
           }
-        } // xs
-
+        }
 
         if (colsXS[j] === null) {
           colsXS[j] = cols[j];
@@ -2819,12 +2507,10 @@ ui.carousel = {
         }
 
         ui.addClass(that, ui.carousel.nameActive);
-        carouselModifier(j, that, 'static'); // create nav
-
-        col = getCols(j); // get responsive cols
+        carouselModifier(j, that, 'static');
+        col = getCols(j);
 
         if (contents.length <= col) {
-          // toggle nav
           nav.style.display = 'none';
         } else {
           nav.style.display = '';
@@ -2843,9 +2529,7 @@ ui.carousel = {
         that.setAttribute(ui.carousel.dataContent, counts[j] + 1);
         ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
         ui.addClass(navDotsEl[counts[j]], ui.carousel.nameNavSelected);
-        filterDots(navDots, navDotsEl, counts[j], j); // filter dots when dots number exceeds
-        // auto slider
-
+        filterDots(navDots, navDotsEl, counts[j], j);
         autoTimer[j] = that.getAttribute(ui.carousel.dataSlide);
 
         if (autoTimer[j] !== null) {
@@ -2857,21 +2541,19 @@ ui.carousel = {
             carouselNav(that, 'next');
           }, autoTimer[j]);
         }
-      }); // carousel gallery loader
-
+      });
       ui.each('.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs, function () {
         var images = ui.find('.' + ui.carousel.namePhoto, this);
 
         if (images.length <= 1) {
-          this.style.display = 'none'; // hide thumbs when image length is 1 or 0
+          this.style.display = 'none';
         }
       });
     }
   }
 
   ui.carousel.Start = function () {
-    carouselLoader(); // Event Listeners
-
+    carouselLoader();
     ui.on(document, 'click', '.' + ui.carousel.namePrev + ',.' + ui.carousel.nameNext, function () {
       var i, that, direction;
 
@@ -2888,7 +2570,7 @@ ui.carousel = {
         return;
       }
 
-      carouselNav(that, direction); // wait auto slider when navigating
+      carouselNav(that, direction);
 
       if (autoTimer[i] !== null) {
         clearInterval(autoSlider[i]);
@@ -2928,7 +2610,6 @@ ui.carousel = {
       var callCarousels = ui.find('.' + ui.carousel.target + '[' + ui.carousel.dataSlide + ']');
 
       if (document.hidden) {
-        // stop all carousels when browser windows is not active
         ui.each(callCarousels, function () {
           carouselStop(this);
         });
@@ -2937,8 +2618,7 @@ ui.carousel = {
           carouselStart(this);
         });
       }
-    }); // prevent touch event listeners when inline scrolling
-
+    });
     ui.on(document, 'scroll', '.' + ui.carousel.target + ' .' + ui.carousel.nameScroll + ',' + '.' + ui.carousel.target + ' .' + ui.carousel.nameScrollV + ',' + '.' + ui.carousel.target + ' .' + ui.carousel.nameScrollH, function (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -2947,8 +2627,7 @@ ui.carousel = {
       isScrollingTimer = setTimeout(function () {
         isScrolling = false;
       }, ui.globals.ease);
-    }); // touchmove event listeners
-
+    });
     ui.on(document, 'touchstart', '.' + ui.carousel.target, function (e) {
       var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, halfSized, touchEndTimer, contents;
 
@@ -2971,26 +2650,21 @@ ui.carousel = {
         return;
       }
 
-      col = getCols(i); // get responsive cols
-
-      startMove = window.getComputedStyle(slider).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
-
-      startMove = startMove.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|'); // select only numbers
-
+      col = getCols(i);
+      startMove = window.getComputedStyle(slider).getPropertyValue('transform');
+      startMove = startMove.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|');
       startMove = startMove.split('|')[4];
       ui.off(document, 'touchmove');
       ui.on(document, 'touchmove', function (e) {
         if (ui.hasClass(document, ui.photoGallery.namePreviewOpened)) {
           return;
-        } // stop if photo gallery is opened
-
+        }
 
         if (isScrolling) {
           return;
         }
 
         if (e.cancelable && e.defaultPrevented) {
-          // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
           e.preventDefault();
         }
 
@@ -3016,7 +2690,7 @@ ui.carousel = {
             move = sliderMax;
           }
 
-          slider.style.transform = 'translateX(' + move + 'px)'; // wait auto slider when touchmove
+          slider.style.transform = 'translateX(' + move + 'px)';
 
           if (autoTimer[i] !== null) {
             clearInterval(autoSlider[i]);
@@ -3037,7 +2711,6 @@ ui.carousel = {
             counts[i] = Math.abs(move) / contents[0].offsetWidth;
 
             if (currentx > startx) {
-              // slide to right
               if (counts[i].toFixed(2).split('.')[1] > ui.carousel.touchMoveToleranceX) {
                 counts[i] = Math.floor(counts[i]);
               } else {
@@ -3048,7 +2721,6 @@ ui.carousel = {
                 }
               }
             } else {
-              // slide to left
               if (counts[i].toFixed(2).split('.')[1] > ui.carousel.touchMoveToleranceX) {
                 counts[i] = Math.ceil(counts[i]);
               } else {
@@ -3070,20 +2742,17 @@ ui.carousel = {
             that.setAttribute(ui.carousel.dataContent, counts[i] + 1);
             ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
             ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
-            filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
-
+            filterDots(navDots, navDotsEl, counts[i], i);
             clearTimeout(touchEndTimer);
             touchEndTimer = setTimeout(function () {
-              getSlideSpeed(slider, contentsEase[i], i); // get carousel slide speed
-              // wait auto slider until touchmove ends
+              getSlideSpeed(slider, contentsEase[i], i);
 
               if (autoTimer[i] !== null) {
                 clearInterval(autoSlider[i]);
                 autoSlider[i] = setInterval(function () {
                   carouselNav(that, 'next');
                 }, autoTimer[i]);
-              } // detect carousel animates
-
+              }
 
               ui.each(contents, function () {
                 carouselAnimate(this, contentsEase[i], 'touch');
@@ -3098,8 +2767,7 @@ ui.carousel = {
         ui.off(that, 'touchmove');
         ui.off(document, 'touchend.' + ui.carousel.eventTouchEnd + ' touchcancel.' + ui.carousel.eventTouchCancel);
       });
-    }); // carousel gallery thumbs
-
+    });
     ui.on(document, 'click', '.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.namePhoto, function () {
       var parent, detail, target, thumbs, index, newImg;
       parent = ui.closest(this, '.' + ui.carousel.targetGallery);
@@ -3120,31 +2788,21 @@ ui.carousel = {
       ui.removeClass(thumbs, ui.carousel.nameGallerySelected);
       ui.addClass(this, ui.carousel.nameGallerySelected);
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.carousel.Start);
   ui.on(window, 'resize', carouselResizer);
   ui.on(document, ui.globals.eventDomChange, function () {
     carouselResizer('resize');
-  }); // ajax callback loader
-
+  });
   ui.on(document, ui.globals.eventAjaxCallback, function () {
     if (ui.ajax.classNames.indexOf(ui.carousel.target) > -1) {
       carouselLoader();
     }
   });
 })();
-"use strict";
-
-/*
- UI Countdown JS
- Requires UI Core JS
-*/
 ui.countdown = {
-  // targets
   target: 'ui-countdown',
-  // main classnames
   nameDay: 'ui-countdown-day',
   nameHour: 'ui-countdown-hour',
   nameMinute: 'ui-countdown-min',
@@ -3153,7 +2811,6 @@ ui.countdown = {
 
 (function () {
   'use strict';
-  /*globals document, ui, setInterval, clearInterval */
 
   var countdownTimer;
 
@@ -3284,38 +2941,25 @@ ui.countdown = {
 
     clearInterval(countdownTimer);
     countdownTimer = setInterval(drawFnc, 1000);
-  }; // Loaders
+  };
 
-
-  ui.onload(ui.countdown.Start); // ajax callback loader
-
+  ui.onload(ui.countdown.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
     if (ui.ajax.classNames.indexOf(ui.countdown.target) > -1) {
       ui.countdown.Start();
     }
   });
 })();
-"use strict";
-
-/*
- UI Currency Spinner JS
- Requires UI Core JS
-*/
 ui.currencySpinner = {
-  // targets
   target: 'ui-currency-spinner',
-  // main classnames
   nameUp: 'ui-currency-up',
   nameDown: 'ui-currency-down',
-  // outer classnames
   nameInput: 'ui-input',
-  // values
   decimals: false
 };
 
 (function () {
   'use strict';
-  /*globals document, ui */
 
   var cacheCurrencySpinner;
 
@@ -3408,8 +3052,7 @@ ui.currencySpinner = {
         val = locales(val);
         input.value = val;
       }
-    } // Event Listeners
-
+    }
 
     ui.on(document, 'click', '.' + ui.currencySpinner.nameUp + ',.' + ui.currencySpinner.nameDown, function (e) {
       e.preventDefault();
@@ -3475,22 +3118,13 @@ ui.currencySpinner = {
         return;
       }
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.currencySpinner.Start);
 })();
-"use strict";
-
-/*
- UI Datatable JS
- Requires UI Core JS
-*/
 ui.datatable = {
-  // targets
   target: 'ui-datatable',
   targetLoaded: 'ui-datatable-loaded',
-  // main classnames
   nameContainer: 'ui-datatable-container',
   nameListContent: 'ui-datatable-content',
   nameListStriped: 'ui-datatable-striped',
@@ -3502,7 +3136,6 @@ ui.datatable = {
   nameCheck: 'ui-datatable-check',
   nameTotal: 'ui-datatable-total',
   namePaging: 'ui-datatable-paging',
-  // helper classnames
   nameActive: 'ui-active',
   nameEven: 'ui-even',
   nameShow: 'ui-showed',
@@ -3510,19 +3143,16 @@ ui.datatable = {
   nameChecked: 'ui-checked',
   nameAsc: 'ui-asc',
   nameDesc: 'ui-desc',
-  // outer classnames
   nameIcon: 'ui-icon',
   nameBtnActive: 'ui-btn-active',
   nameBtnPassive: 'ui-btn-passive',
   namePrev: 'ui-paging-prev',
   nameNext: 'ui-paging-next',
-  // icons
   sortIcon: 'sort-fill',
   ascIcon: 'sort-up-fill',
   descIcon: 'sort-down-fill',
   prevIcon: 'angle-left',
   nextIcon: 'angle-right',
-  // values
   valueSplit: '|',
   customLetters: {
     "İ": "i",
@@ -3535,12 +3165,10 @@ ui.datatable = {
   },
   sortTypeNumber: 'number',
   listIdNaming: 'ui-gridList-',
-  // storages
   storageTest: 'ui-gridList-test',
   storageVals: 'ui-gridList-vals-',
   storageShow: 'ui-gridList-show-',
   storagePaging: 'ui-gridList-paging-',
-  // data attributes
   dataDefault: 'data-ui-default',
   dataActive: 'data-ui-active',
   dataID: 'data-ui-id',
@@ -3552,7 +3180,6 @@ ui.datatable = {
 
 (function () {
   'use strict';
-  /*globals window, document, ui, sessionStorage, performance */
 
   var testStorage = true,
       startListID = 0,
@@ -3560,19 +3187,17 @@ ui.datatable = {
       showCount = [],
       pagingCount = [],
       customLowerCase,
-      temp = document.createDocumentFragment(); // test for storage is supported?
+      temp = document.createDocumentFragment();
 
   try {
     sessionStorage.setItem(ui.datatable.storageTest, 0);
   } catch (e) {
     testStorage = false;
-  } // custom lowercase
-
+  }
 
   (function () {
     var k, re, chars, keys;
-    keys = Object.keys(ui.datatable.customLetters); // returns array
-
+    keys = Object.keys(ui.datatable.customLetters);
     chars = '(([';
 
     for (k = 0; k < keys.length; k++) {
@@ -3588,8 +3213,7 @@ ui.datatable = {
       });
       return string.toLowerCase();
     };
-  })(); // create paging
-
+  })();
 
   function createPaging(paging, id, listLength) {
     var defaultClass, activeClass, classes, re, rex, html, total, i, min, max;
@@ -3673,17 +3297,15 @@ ui.datatable = {
     classes = classes.replace(re, ' ').replace(rex, '');
     html += '<button class="' + classes + '">' + '<svg class="' + ui.datatable.nameIcon + '"><use href="#' + ui.datatable.nextIcon + '"/></svg>' + '</button>\n';
     paging[0].innerHTML = '';
-    paging[0].insertAdjacentHTML('beforeend', html); // set paging to storage
+    paging[0].insertAdjacentHTML('beforeend', html);
 
     if (testStorage && sessionStorage !== undefined) {
       sessionStorage.setItem(ui.datatable.storagePaging + id, pagingCount[id]);
-    } // empty variables
-
+    }
 
     classes = '';
     html = '';
-  } // loader
-
+  }
 
   function loadGrid(that, id) {
     var i, list, paging, gridTotal, isEven, gridStriped;
@@ -3692,32 +3314,27 @@ ui.datatable = {
       list = ui.find('.' + ui.datatable.nameListContent + '.' + ui.datatable.nameFiltered, that);
     } else {
       list = ui.find('.' + ui.datatable.nameListContent, that);
-    } // paging
-
+    }
 
     paging = ui.find('.' + ui.datatable.namePaging, that);
 
     if (paging.length > 0) {
       if (pagingCount[id] === undefined || pagingCount[id] === 0) {
-        pagingCount[id] = 1; // paging available
-
-        createPaging(paging, id, list.length); // create paging buttons
+        pagingCount[id] = 1;
+        createPaging(paging, id, list.length);
       } else {
-        createPaging(paging, id, list.length); // update paging buttons
+        createPaging(paging, id, list.length);
       }
     } else {
-      pagingCount[id] = 0; // paging not available
-
+      pagingCount[id] = 0;
       ui.addClass(that, ui.datatable.nameListShowAll);
-    } // total grids
-
+    }
 
     gridTotal = ui.find('.' + ui.datatable.nameTotal, that);
 
     if (gridTotal.length > 0) {
       gridTotal[0].textContent = list.length;
-    } // define even elements and visible grids
-
+    }
 
     isEven = false;
     gridStriped = ui.hasClass(that, ui.datatable.nameListStriped);
@@ -3745,13 +3362,10 @@ ui.datatable = {
       for (i = 0; i < list.length; i++) {
         evenList(list[i]);
       }
-    } // empty variables
-
+    }
 
     list = '';
-  } // Event Listeners
-  // paging
-
+  }
 
   ui.on(document, 'click', '.' + ui.datatable.target + ' .' + ui.datatable.namePaging + ' button', function () {
     var that, id;
@@ -3767,8 +3381,7 @@ ui.datatable = {
     }
 
     loadGrid(that, id);
-  }); // show
-
+  });
   ui.on(document, 'change', '.' + ui.datatable.target + ' select.' + ui.datatable.nameListShow, function () {
     var that, id;
     that = ui.closest(this, '.' + ui.datatable.target)[0];
@@ -3781,21 +3394,18 @@ ui.datatable = {
     } else {
       showCount[id] = this.value;
       ui.removeClass(that, ui.datatable.nameListShowAll);
-    } // set show count to storage
-
+    }
 
     if (testStorage && sessionStorage !== undefined) {
       sessionStorage.setItem(ui.datatable.storageShow + id, showCount[id]);
     }
 
     loadGrid(that, id);
-  }); // sort
-
+  });
   ui.on(document, 'mousedown', '.' + ui.datatable.target + ' [' + ui.datatable.dataSort + ']', function () {
     var that, id, buttons, isAsc, gridContainer, list, sortIndex, sortType, arr, arrSorted;
     that = ui.closest(this, '.' + ui.datatable.target)[0];
-    id = that.getAttribute(ui.datatable.dataID); // modify buttons
-
+    id = that.getAttribute(ui.datatable.dataID);
     buttons = ui.find('[' + ui.datatable.dataSort + ']', that);
     ui.removeClass(buttons, ui.datatable.nameActive);
     ui.addClass(this, ui.datatable.nameActive);
@@ -3815,8 +3425,7 @@ ui.datatable = {
       ui.removeClass(this, ui.datatable.nameDesc);
       ui.addClass(this, ui.datatable.nameAsc);
       ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', '#' + ui.datatable.ascIcon);
-    } // sort
-
+    }
 
     gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
     list = ui.find('.' + ui.datatable.nameListContent, gridContainer);
@@ -3876,24 +3485,21 @@ ui.datatable = {
     ui.each(list, function (i) {
       temp.appendChild(list[arr.indexOf(arrSorted[i])]);
       arr[arr.indexOf(arrSorted[i])] = '';
-    }); // load sorted grids
-
+    });
     gridContainer.appendChild(temp);
     pagingCount[id] = 1;
-    loadGrid(that, id); // empty variables
-
+    loadGrid(that, id);
     arr = [];
     arrSorted = [];
     buttons = '';
     list = '';
-  }); // filter
+  });
 
   function gridFilter(that, firstLoading) {
     var id, filters, val, vals, index, sortType, sortIndex, indexes, list, gridContainer, j, contentVal, contentArr, activeFilters, passed, checkAll;
     id = that.getAttribute(ui.datatable.dataID);
     vals = [];
-    indexes = []; // read all filter values
-
+    indexes = [];
     filters = ui.find('.' + ui.datatable.nameFilter, that);
     ui.each(filters, function (i) {
       if (firstLoading) {
@@ -3924,8 +3530,7 @@ ui.datatable = {
           val = this.value;
         }
 
-        val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
-
+        val = val.replace(/^\s+|\s+$/g, '');
         sortType = this.getAttribute(ui.datatable.dataType);
 
         if (sortType === null) {
@@ -3952,7 +3557,7 @@ ui.datatable = {
       } else {
         indexes.push('');
       }
-    }); // filter
+    });
 
     if (vals.length > 0) {
       activeFilters = vals.filter(function (filterVal) {
@@ -3963,8 +3568,7 @@ ui.datatable = {
       ui.each(list, function () {
         temp.appendChild(this);
       });
-      list = ui.find('.' + ui.datatable.nameListContent, temp); // remove checked
-
+      list = ui.find('.' + ui.datatable.nameListContent, temp);
       checkAll = ui.find('.' + ui.datatable.nameCheckAll, that);
 
       if (checkAll.length > 0) {
@@ -3994,12 +3598,10 @@ ui.datatable = {
               if (vals[j] !== '') {
                 if (indexes[j] === '') {
                   if (contentVal.replace(/\|/g, ' ').match(vals[j]) !== null) {
-                    // contain
                     passed.push('pass');
                   }
                 } else {
                   if (contentArr[indexes[j]] === vals[j]) {
-                    // equal
                     passed.push('pass');
                   }
                 }
@@ -4016,20 +3618,16 @@ ui.datatable = {
       } else {
         ui.removeClass(that, ui.datatable.nameListFiltered);
         ui.removeClass(list, ui.datatable.nameFiltered);
-      } // set filters to storage
-
+      }
 
       if (testStorage && sessionStorage !== undefined) {
         sessionStorage.setItem(ui.datatable.storageVals + id, vals.toString());
-      } // load filtered grids
-
+      }
 
       gridContainer.appendChild(temp);
-    } // load filtered grids
+    }
 
-
-    loadGrid(that, id); // empty variables
-
+    loadGrid(that, id);
     vals = [];
     indexes = [];
     contentArr = [];
@@ -4045,8 +3643,7 @@ ui.datatable = {
   ui.on(document, 'change', '.' + ui.datatable.target + ' .' + ui.datatable.nameFilter + ':not([type="text"])', function () {
     var that = ui.closest(this, '.' + ui.datatable.target)[0];
     gridFilter(that, false);
-  }); // check
-
+  });
   ui.on(document, 'change', '.' + ui.datatable.target + ' .' + ui.datatable.nameCheckAll, function () {
     var that, list, form, checked, checkFnc, uncheckFnc;
     that = ui.closest(this, '.' + ui.datatable.target)[0];
@@ -4106,22 +3703,20 @@ ui.datatable = {
         checkAll.checked = false;
       }
     }
-  }); // first loading
+  });
 
   ui.datatable.Start = function () {
     ui.each('.' + ui.datatable.target + ':not(.' + ui.datatable.targetLoaded + ')', function () {
-      var id, gridShow, index, i; // define id
-
+      var id, gridShow, index, i;
       startListID += 1;
       id = ui.datatable.listIdNaming + startListID;
-      this.setAttribute(ui.datatable.dataID, id); // check stored variables
+      this.setAttribute(ui.datatable.dataID, id);
 
       if (testStorage && sessionStorage !== undefined) {
         loadedVals[id] = sessionStorage.getItem(ui.datatable.storageVals + id);
         showCount[id] = Number(sessionStorage.getItem(ui.datatable.storageShow + id));
         pagingCount[id] = Number(sessionStorage.getItem(ui.datatable.storagePaging + id));
-      } // calculate show
-
+      }
 
       gridShow = ui.find('select.' + ui.datatable.nameListShow, this)[0];
 
@@ -4144,27 +3739,23 @@ ui.datatable = {
             gridShow.selectedIndex = index;
           }
         }
-      } // load values
-
+      }
 
       if (loadedVals[id] !== undefined && loadedVals[id] !== null) {
         if (loadedVals[id].length > 0) {
           gridFilter(this, true);
         }
-      } // load grids
-
+      }
 
       ui.addClass(this, ui.datatable.targetLoaded);
       loadGrid(this, id);
     });
-  }; // clear stored variables when page refreshing
-
+  };
 
   ui.on(window, 'beforeunload', function () {
     if (testStorage && sessionStorage !== undefined) {
       if (window.performance) {
         if (performance.navigation.type !== 1) {
-          // The Navigation Timing API: if === 1 means page refreshed
           var gridLists, id;
           gridLists = ui.find('.' + ui.datatable.target);
           ui.each(gridLists, function () {
@@ -4176,32 +3767,20 @@ ui.datatable = {
         }
       }
     }
-  }); // Loaders
-
-  ui.onload(ui.datatable.Start); // ajax callback loader
-
+  });
+  ui.onload(ui.datatable.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
     if (ui.ajax.classNames.indexOf(ui.datatable.target) > -1) {
       ui.datatable.Start();
     }
   });
 })();
-"use strict";
-
-/*
- UI Donut Chart JS
- Requires UI Core JS
-*/
 ui.donutChart = {
-  // targets
   target: 'ui-donut-chart',
   targetBg: 'ui-donut-chart-bg',
-  // helper classnames
   nameLoaded: 'ui-loaded',
   nameSelected: 'ui-selected',
-  // tags
   tagMsg: 'strong',
-  // data attributes
   dataPercent: 'data-ui-percent',
   dataTitle: 'data-ui-title',
   dataMsg: 'data-ui-msg'
@@ -4209,7 +3788,6 @@ ui.donutChart = {
 
 (function () {
   'use strict';
-  /*globals document, ui, setTimeout */
 
   var loadCharts;
 
@@ -4243,13 +3821,13 @@ ui.donutChart = {
             if (index > 0) {
               angle = Math.floor(arrAngle[index - 1] + arrPercent[index - 1] * 3.6);
               arrAngle.push(angle);
-              that.setAttribute('transform', 'rotate(' + angle + ' 80 80)'); // rotate(angle, cx, cy); All IE browsers not supported CSS only transforms
+              that.setAttribute('transform', 'rotate(' + angle + ' 80 80)');
             } else {
               arrAngle.push(0);
             }
 
             if (ui.userAgents.ie) {
-              chart[i].style.height = chart[i].offsetWidth + 'px'; // transformed circle has highest height on IE
+              chart[i].style.height = chart[i].offsetWidth + 'px';
             }
 
             ui.addClass(that, ui.donutChart.nameLoaded);
@@ -4260,8 +3838,7 @@ ui.donutChart = {
       }
     };
 
-    loadCharts(); // Event Listeners
-
+    loadCharts();
     ui.on(document, 'mouseenter mouseleave touchend', '.' + ui.donutChart.target + ' circle[' + ui.donutChart.dataTitle + ']', function (e) {
       var that, circle, chart, msg, msgTitle, title;
       that = this;
@@ -4275,7 +3852,6 @@ ui.donutChart = {
       if (e.type === 'mouseleave') {
         msg.innerHTML = msg.getAttribute(ui.donutChart.dataMsg);
       } else {
-        // show titles
         if (msg === undefined) {
           chart.insertAdjacentHTML('beforeEnd', '<' + ui.donutChart.tagMsg + '></' + ui.donutChart.tagMsg + '>');
           msg = ui.find(ui.donutChart.tagMsg, chart)[0];
@@ -4297,28 +3873,18 @@ ui.donutChart = {
         }, 0);
       }
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.donutChart.Start);
-  ui.on(document, ui.globals.eventDomChange, ui.donutChart.Start); // ajax callback loader
-
+  ui.on(document, ui.globals.eventDomChange, ui.donutChart.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
     if (ui.ajax.classNames.indexOf(ui.donutChart.target) > -1) {
       loadCharts();
     }
   });
 })();
-"use strict";
-
-/*
- UI Dropdown JS
- Requires UI Core JS
-*/
 ui.dropdown = {
-  // targets
   target: 'ui-dropdown',
-  // main classnames
   nameMenu: 'ui-dropdown-menu',
   nameHover: 'ui-menu-hover',
   nameMenuTop: 'ui-menu-t',
@@ -4328,27 +3894,21 @@ ui.dropdown = {
   nameMenuPosLeft: 'ui-menu-pos-l',
   nameNav: 'ui-nav',
   nameNavFullHor: 'ui-nav-full-h',
-  // helper classnames
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
   nameSelected: 'ui-selected',
-  // outer classnames
   nameBtn: 'ui-btn',
   nameSidebar: 'ui-sidebar',
-  // tags
   tagMenuItems: 'li',
   tagValue: 'span',
   tagValueItems: 'label',
-  // values
   scrollbarSize: 20,
   menuTopMargin: 1,
-  // custom events
   eventClose: 'ui:dropdownClose'
 };
 
 (function () {
   'use strict';
-  /*globals window, document, ui, setTimeout, clearTimeout */
 
   var dropdownHoverTimer, dropdownOpenTimer, dropdownLeaveTimer, dropdownCloseTimer, listStyles, selectOpened, selectInContent, getScrollPos;
 
@@ -4405,7 +3965,6 @@ ui.dropdown = {
         innerParent = ui.closest(parent, '.' + ui.dropdown.target)[0];
 
         if ((ui.hasClass(parent, ui.dropdown.nameMenuPosRight) || ui.hasClass(parent, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
-          // detecting inner dropdown positions
           inner = true;
           dropdownClose(innerParent);
         } else {
@@ -4413,7 +3972,6 @@ ui.dropdown = {
         }
 
         if (ui.find('.' + ui.dropdown.nameMenuPosRight, parent).length > 0 || ui.find('.' + ui.dropdown.nameMenuPosLeft, parent).length > 0) {
-          // detecting dropdown has inner dropdown positions
           hasInner = true;
         }
 
@@ -4430,11 +3988,9 @@ ui.dropdown = {
         }
 
         if (ui.closest(that, '.' + ui.dropdown.nameSidebar)[0] === undefined && !ui.hasClass(parent, ui.dropdown.nameNavFullHor)) {
-          // diable all positionings on sidebars and full horizontal navigations
           listStyles = list.style.length;
 
           if (window.innerWidth > ui.globals.sm) {
-            // menu horizontal positioning: active
             if (ui.hasClass(parent, ui.dropdown.nameMenuLeft) || offset.left + list.offsetWidth + ui.dropdown.scrollbarSize > window.innerWidth) {
               if (offset.left - (list.offsetWidth - parent.offsetWidth) >= 0) {
                 list.style.right = 0;
@@ -4449,14 +4005,12 @@ ui.dropdown = {
               }
             }
           } else {
-            // menu horizontal positioning: passive
             list.style.marginLeft = -(offset.left - ui.dropdown.scrollbarSize / 2) + 'px';
             list.style.width = window.innerWidth - ui.dropdown.scrollbarSize + 'px';
           }
         }
 
         setMaxH = function setMaxH(pos) {
-          // set max-height of list
           if (pos === 'default') {
             list.style.maxHeight = window.innerHeight - (offset.top + that.offsetHeight + ui.dropdown.scrollbarSize + ui.dropdown.menuTopMargin) + 'px';
           } else if (pos === 'top') {
@@ -4467,9 +4021,7 @@ ui.dropdown = {
         };
 
         if (ui.hasClass(parent, ui.dropdown.nameMenuPosRight)) {
-          // right position menu
           if (window.innerWidth > ui.globals.sm) {
-            // right positioning: active
             if (list.offsetWidth > window.innerWidth - offset.left - (list.offsetWidth + ui.dropdown.scrollbarSize)) {
               list.style.top = 'inherit';
               list.style.left = 'inherit';
@@ -4484,16 +4036,13 @@ ui.dropdown = {
 
             setMaxH('pos');
           } else {
-            // right positioning: passive
             setMaxH('default');
             list.style.top = 'inherit';
             list.style.left = 'inherit';
             list.style.marginTop = ui.dropdown.menuTopMargin + 'px';
           }
         } else if (ui.hasClass(parent, ui.dropdown.nameMenuPosLeft)) {
-          // left position menu
           if (window.innerWidth > ui.globals.sm) {
-            // left positioning: active
             if (offset.left - list.offsetWidth < ui.dropdown.scrollbarSize) {
               list.style.top = 'inherit';
               list.style.right = 'inherit';
@@ -4508,17 +4057,14 @@ ui.dropdown = {
 
             setMaxH('pos');
           } else {
-            // left positioning: passive
             setMaxH('default');
             list.style.top = 'inherit';
             list.style.right = 'inherit';
             list.style.marginTop = ui.dropdown.menuTopMargin + 'px';
           }
         } else if (offset.top + parseInt(that.offsetHeight + list.offsetHeight) >= window.innerHeight) {
-          // menu vertical positioning
           if (offset.top - parseInt(that.offsetHeight + list.offsetHeight) + that.offsetHeight > 0) {
             if (!ui.hasClass(parent, ui.dropdown.nameNavFullHor)) {
-              // add top menu without full horizontal navigations
               ui.addClass(parent, ui.dropdown.nameMenuTop);
               list.style.removeProperty('transform-origin');
             }
@@ -4535,31 +4081,26 @@ ui.dropdown = {
       if (e.type === 'click') {
         setTimeout(function () {
           ui.on(document, 'click.' + ui.dropdown.eventClose, function (ev) {
-            var content = ui.closest(ev.target, '.' + ui.dropdown.nameMenu)[0]; // prevent for non listing contents
+            var content = ui.closest(ev.target, '.' + ui.dropdown.nameMenu)[0];
 
             if (content !== undefined) {
               if (ui.closest(content, '.' + ui.dropdown.target)[0] !== undefined) {
-                // check other content classnames
                 return;
               }
             }
 
             if (ui.closest(ev.target, '.' + ui.dropdown.target + '.' + ui.dropdown.nameNavFullHor)[0] !== undefined && ev.target.className.split(' ').indexOf(ui.dropdown.nameMenu) === 0) {
-              // check full horizontal navigations
               return;
             }
 
             if (ev.button !== 2) {
-              // inherited right clicks
               dropdownClose();
               ui.off(document, 'click.' + ui.dropdown.eventClose);
             }
           });
         }, 0);
       }
-    } // Event Listeners
-    // open
-
+    }
 
     ui.on(document, 'click', '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + ':not(.' + ui.dropdown.nameHover + '):not(.' + ui.dropdown.nameOpenEase + ') > .' + ui.dropdown.nameBtn + ',' + '.' + ui.userAgents.nameMobile + ' .' + ui.dropdown.target + ':not(.' + ui.dropdown.nameOpenEase + ') > .' + ui.dropdown.nameBtn, function (e) {
       dropdownHoverTimer = 0;
@@ -4573,8 +4114,7 @@ ui.dropdown = {
     ui.on(document, 'mouseenter', '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + '.' + ui.dropdown.nameHover + '.' + ui.dropdown.nameOpen + ' > .' + ui.dropdown.nameBtn + ',' + '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + '.' + ui.dropdown.nameHover + '.' + ui.dropdown.nameOpenEase + ' .' + ui.dropdown.nameMenu, function () {
       dropdownHoverTimer = ui.globals.ease * 2;
       clearTimeout(dropdownLeaveTimer);
-    }); // form toggle
-
+    });
     ui.on(document, 'click', '.' + ui.dropdown.target + ' ' + ui.dropdown.tagMenuItems + ' > ' + ui.dropdown.tagValueItems, function () {
       var p, target, input;
       p = ui.closest(this, '.' + ui.dropdown.target)[0];
@@ -4589,8 +4129,7 @@ ui.dropdown = {
 
       ui.removeClass(ui.find('.' + ui.dropdown.nameSelected, p), ui.dropdown.nameSelected);
       ui.addClass(this.parentNode, ui.dropdown.nameSelected);
-    }); // close
-
+    });
     ui.on(document, 'mouseleave', '.' + ui.dropdown.target + '.' + ui.dropdown.nameHover, function () {
       clearTimeout(dropdownLeaveTimer);
       clearTimeout(dropdownOpenTimer);
@@ -4601,7 +4140,6 @@ ui.dropdown = {
         innerParent = ui.closest(that, '.' + ui.dropdown.target)[0];
 
         if ((ui.hasClass(that, ui.dropdown.nameMenuPosRight) || ui.hasClass(that, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
-          // detecting inner dropdown positions
           dropdownClose(innerParent);
         } else {
           dropdownClose();
@@ -4612,8 +4150,7 @@ ui.dropdown = {
       clearTimeout(dropdownLeaveTimer);
       clearTimeout(dropdownOpenTimer);
       dropdownClose();
-    }); // select dropdown fix
-
+    });
     selectOpened = false;
     selectInContent = ui.find('.' + ui.dropdown.target + ' .' + ui.dropdown.nameMenu + ' select');
     ui.on(document, 'focus', selectInContent, function () {
@@ -4627,44 +4164,31 @@ ui.dropdown = {
         selectOpened = false;
       }
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.dropdown.Start);
   ui.on(window, 'resize', function () {
     if (window.innerWidth === getScrollPos) {
       return;
-    } // close only horizontal resizing
-
+    }
 
     dropdownClose();
     getScrollPos = window.innerWidth;
   });
 })();
-"use strict";
-
-/*
- UI Dual Multi Select JS
- Requires UI Core JS
-*/
 ui.dualMultiSelect = {
-  // targets
   target: 'ui-dual-multi-select',
-  // outer classnames
   nameSelectMulti: 'ui-select-multi',
-  // data attributes
   dataIndex: 'data-ui-index'
 };
 
 (function () {
   'use strict';
-  /*globals document, ui, setTimeout */
 
   var resetOptions, loadSelects, movetoSource;
 
   ui.dualMultiSelect.Start = function () {
     resetOptions = function resetOptions(selects, isSubmit) {
-      // reset options
       var sourceList, targetList;
       sourceList = ui.find('option', selects[0]);
       targetList = ui.find('option', selects[1]);
@@ -4690,12 +4214,10 @@ ui.dualMultiSelect = {
       ui.each(holder, function () {
         arr = [];
         arrStart = [];
-        selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', this); // move name attribute from source to target select
-
+        selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', this);
         name = selects[0].name;
         selects[0].removeAttribute('name');
-        selects[1].name = name; // get user defined idexes
-
+        selects[1].name = name;
         options = ui.find('option', selects[0]);
         ui.each(options, function () {
           index = this.getAttribute(ui.dualMultiSelect.dataIndex);
@@ -4706,8 +4228,7 @@ ui.dualMultiSelect = {
           } else {
             arr.push('');
           }
-        }); // create new indexes for not defined options
-
+        });
         arrStart = arrStart.sort();
         userArr = arrStart;
         arrStart = Number(arrStart[arrStart.length - 1]);
@@ -4726,21 +4247,18 @@ ui.dualMultiSelect = {
               arr[i] = arrStart.toString();
             }
           }
-        } // set all indexes to options
-
+        }
 
         ui.each(options, function (j) {
           this.setAttribute(ui.dualMultiSelect.dataIndex, arr[j]);
 
           if (userArr.length > 0) {
-            // move user defined options from source to target by index
             index = Number(arr.indexOf(userArr[j]));
 
             if (index > -1) {
               selects[1].appendChild(options[index]);
             }
           } else {
-            // move options selected with attribute from source to target
             selected = this.getAttribute('selected');
 
             if (selected !== null) {
@@ -4748,7 +4266,7 @@ ui.dualMultiSelect = {
             }
           }
         });
-        resetOptions(selects); // reset options
+        resetOptions(selects);
       });
     };
 
@@ -4760,10 +4278,8 @@ ui.dualMultiSelect = {
       sourceList = ui.find('option', selects[0]);
 
       if (sourceList.length === 0) {
-        // first moving to empty list
         selects[0].appendChild(that);
       } else if (sourceList.length === 1) {
-        // only one option in list
         index = Number(sourceList[0].getAttribute(ui.dualMultiSelect.dataIndex));
 
         if (i > index) {
@@ -4773,7 +4289,7 @@ ui.dualMultiSelect = {
         }
       } else {
         arr = [];
-        inserted = false; // move to index
+        inserted = false;
 
         for (j = 0; j < sourceList.length; j++) {
           index = Number(sourceList[j].getAttribute(ui.dualMultiSelect.dataIndex));
@@ -4784,8 +4300,7 @@ ui.dualMultiSelect = {
             selects[0].insertBefore(that, sourceList[j]);
             break;
           }
-        } // move biggest index to end of the list
-
+        }
 
         if (!inserted) {
           if (i > arr.sort()[arr.length - 1]) {
@@ -4793,21 +4308,18 @@ ui.dualMultiSelect = {
           }
         }
       }
-    }; // Event Listeners
-
+    };
 
     ui.on(document, 'change', '.' + ui.dualMultiSelect.target + ' .' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', function (e) {
       if (!e.isTrusted) {
         return;
-      } // prevent trigger change event listeners
-
+      }
 
       var i, that, options, selects, parent, dir;
-      options = Array.prototype.slice.call(e.target); // get option list
+      options = Array.prototype.slice.call(e.target);
 
       for (i = 0; options.length; i++) {
         if (options[i].selected) {
-          // get selected option
           that = options[i];
           break;
         }
@@ -4819,19 +4331,16 @@ ui.dualMultiSelect = {
       dir = Array.prototype.slice.call(selects).indexOf(parent);
 
       if (dir === 0) {
-        // move from source to target select
         selects[1].appendChild(that);
       } else {
-        // move from target to source select
         movetoSource(that, selects);
       }
 
-      resetOptions(selects); // reset options
+      resetOptions(selects);
     });
     ui.on(document, 'reset', 'form', function () {
       var i, holder, selects, sourceList, targetList, selected;
       setTimeout(function () {
-        // wait for form reset started on DOM
         holder = ui.find('.' + ui.dualMultiSelect.target);
         ui.each(holder, function () {
           selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', this);
@@ -4841,18 +4350,15 @@ ui.dualMultiSelect = {
             i = Number(this.getAttribute(ui.dualMultiSelect.dataIndex)) - 1;
 
             if (selected === null) {
-              // move options to source that not selected with attribute
               movetoSource(this, selects);
             }
           });
-          targetList = ui.find('option', selects[1]); // reload modified list
-
+          targetList = ui.find('option', selects[1]);
           sourceList = ui.find('option', selects[0]);
           ui.each(sourceList, function () {
             selected = this.getAttribute('selected');
 
             if (selected !== null) {
-              // move options to target that selected with attribute
               if (targetList.length === 0) {
                 selects[1].appendChild(this);
               } else {
@@ -4860,59 +4366,45 @@ ui.dualMultiSelect = {
               }
             }
           });
-          resetOptions(selects); // reset options
+          resetOptions(selects);
         });
       }, 0);
     });
     ui.on(document, 'submit', 'form', function (e) {
       var elems, selects;
-      elems = Array.prototype.slice.call(e.target); // get submitted element list
-
+      elems = Array.prototype.slice.call(e.target);
       ui.each(elems, function () {
         if (this.tagName === 'SELECT' && this.multiple) {
-          // get multiple selects
           selects = ui.closest(this, '.' + ui.dualMultiSelect.target)[0];
           selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', selects);
 
           if (selects !== undefined) {
-            resetOptions(selects, true); // reset options, set target list to selected before submit
+            resetOptions(selects, true);
           }
         }
       });
     });
-  }; // Loaders
+  };
 
-
-  ui.onload(ui.dualMultiSelect.Start); // ajax callback loader
-
+  ui.onload(ui.dualMultiSelect.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
     if (ui.ajax.classNames.indexOf(ui.dualMultiSelect.target) > 0) {
       loadSelects();
     }
   });
 })();
-"use strict";
-
-/*
- UI Form Spinner JS
- Requires UI Core JS
-*/
 ui.formSpinner = {
-  // targets
   target: 'ui-form-spinner',
-  // main classnames
   nameUp: 'ui-spinner-up',
   nameDown: 'ui-spinner-down'
 };
 
 (function () {
   'use strict';
-  /*globals document, ui */
 
   var checkSpinnerForms;
 
   ui.formSpinner.Start = function () {
-    // Event Listeners
     ui.on(document, 'click', '.' + ui.formSpinner.nameUp + ',.' + ui.formSpinner.nameDown, function () {
       var p, input, val, max, min;
       p = ui.closest(this, '.' + ui.formSpinner.target), input = ui.find('[type="text"]', p);
@@ -4945,32 +4437,22 @@ ui.formSpinner = {
     };
 
     checkSpinnerForms();
-  }; // Loaders
+  };
 
-
-  ui.onload(ui.formSpinner.Start); // ajax callback loader
-
+  ui.onload(ui.formSpinner.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
     if (ui.ajax.classNames.indexOf(ui.formSpinner.target) > -1) {
       checkSpinnerForms();
     }
   });
 })();
-"use strict";
-
-/*
- UI Forms JS
- Requires UI Core JS
-*/
 ui.forms = {
-  // targets
   targetText: 'ui-input',
   targetSelect: 'ui-select',
   targetSelectMulti: 'ui-select-multi',
   targetTextarea: 'ui-textarea',
   targetFile: 'ui-file',
   targetIndeterminate: 'ui-indeterminate',
-  // main classnames
   nameFocus: 'ui-form-focus',
   nameHolder: 'ui-form-holder',
   nameHolderFocus: 'ui-form-holder-focus',
@@ -4983,18 +4465,14 @@ ui.forms = {
   nameRequiredMsg: 'ui-required-msg',
   nameRequiredMsgShow: 'ui-show',
   nameError: 'ui-form-error',
-  // helper classnames
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
-  // outer classnames
   nameIcon: 'ui-icon',
-  // tags
   tagFileInfo: 'i'
 };
 
 (function () {
   'use strict';
-  /*globals document, ui, setTimeout */
 
   var clearForms, loadClearForms;
 
@@ -5027,8 +4505,7 @@ ui.forms = {
           break;
         }
       }
-    } // clear with form icons
-
+    }
 
     clearForms = function clearForms(that) {
       var btn = ui.find('.' + ui.forms.nameClear, that.parentElement)[0];
@@ -5055,31 +4532,27 @@ ui.forms = {
       });
     };
 
-    loadClearForms(); // Event Listeners
-
+    loadClearForms();
     ui.on(document, 'focus', '.' + ui.forms.targetText + ' input,' + '.' + ui.forms.targetSelect + ' select,' + '.' + ui.forms.targetSelectMulti + ' select,' + '.' + ui.forms.targetTextarea + ' textarea', function () {
       formFocus(this, 'add');
     });
     ui.on(document, 'blur', 'input,select,textarea', function () {
       formFocus(this, 'remove');
-    }); // file inputs
-
+    });
     ui.on(document, 'change', '.' + ui.forms.targetFile + ' input', function () {
       var info = ui.find(ui.forms.tagFileInfo, this.parentElement)[0];
 
       if (info !== undefined) {
         info.innerHTML = this.value;
       }
-    }); // indeterminate
-
+    });
     ui.on(document, 'click', 'input[type="checkbox"].' + ui.forms.targetIndeterminate, function () {
       if (this.readOnly) {
         this.checked = this.readOnly = false;
       } else if (!this.checked) {
         this.readOnly = this.indeterminate = true;
       }
-    }); // toggle password
-
+    });
     ui.on(document, 'click touchend', '.' + ui.forms.nameShowPass, function () {
       var that = this.parentElement;
       that = ui.find('input', that)[0];
@@ -5089,8 +4562,7 @@ ui.forms = {
       } else {
         that.setAttribute('type', 'password');
       }
-    }); // number
-
+    });
     ui.on(document, 'keypress', '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber, function (e) {
       var c,
           isRefresh = false;
@@ -5136,21 +4608,18 @@ ui.forms = {
           that.value = newValues;
         }
       }, 0);
-    }); // form icons
+    });
 
     if (ui.userAgents.mobile) {
-      // fix: buttons not clicked on form focus at mobile devices
       ui.on(document, 'mousedown', '[class*="' + ui.forms.nameFormIcon + '"] > button.' + ui.forms.nameIcon + ',' + '[class*="' + ui.forms.nameFormIcon + '"] > input.' + ui.forms.nameIcon, function (e) {
         e.stopPropagation();
         ui.trigger(this, 'click');
-      }); // submit with form icons (ios fix)
-
+      });
       ui.on(document, 'click', '.' + ui.forms.targetText + ' > [type="submit"]', function () {
         var form = ui.closest(this, '.' + ui.forms.targetText)[0];
         ui.trigger(form, 'submit');
       });
-    } // trigger custom event listeners when form resetting
-
+    }
 
     ui.on(document, 'reset', 'form', function (e) {
       var forms, errors, reqMessages;
@@ -5158,22 +4627,15 @@ ui.forms = {
       errors = ui.find('.' + ui.forms.nameError, this);
       reqMessages = ui.find('.' + ui.forms.nameRequiredMsg, this);
       setTimeout(function () {
-        // wait for form reset started on DOM
         ui.each(forms, function () {
-          // trigger defined event listeners after form clear
-          //ui.trigger(this, 'change');
           if (!ui.hasClass(this, ui.forms.nameRequired)) {
-            // discard required forms
             ui.trigger(this, 'keydown keyup');
           }
-        }); // remove errors
-
-        ui.removeClass(errors, ui.forms.nameError); // remove error messages
-
+        });
+        ui.removeClass(errors, ui.forms.nameError);
         ui.removeClass(reqMessages, ui.forms.nameRequiredMsgShow);
       }, 0);
-    }); // clear with form icons
-
+    });
     ui.on(document, 'change keyup', '.' + ui.forms.targetText + '.' + ui.forms.nameHasClear + ' input', function () {
       clearForms(this);
     });
@@ -5182,35 +4644,23 @@ ui.forms = {
       form.value = '';
 
       if (!ui.hasClass(form, ui.forms.nameRequired)) {
-        // discard required forms
-        // trigger defined event listeners after form clear
         ui.trigger(form, 'change keydown keyup');
       }
     });
-  }; // Loaders
+  };
 
-
-  ui.onload(ui.forms.Start); // ajax callback loader
-
+  ui.onload(ui.forms.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
     if (ui.ajax.classNames.indexOf(ui.forms.nameClear) > 0) {
       loadClearForms();
     }
   });
 })();
-"use strict";
-
-/*
- UI Photo Gallery JS
- Requires UI Core JS
-*/
 ui.photoGallery = {
-  // targets
   targetGallery: 'ui-gallery',
   targetPreview: 'ui-gallery-preview',
   targetPhotos: 'ui-photo',
   targetPhotoVer: 'ui-photo-v',
-  // main classnames
   nameGalleryPassive: 'ui-gallery-passive',
   nameGalleryCall: 'ui-gallery-call',
   nameGalleryInfo: 'ui-gallery-has-info',
@@ -5223,34 +4673,26 @@ ui.photoGallery = {
   namePreviewZoom: 'ui-gallery-preview-zoom',
   namePreviewPrev: 'ui-gallery-preview-prev',
   namePreviewNext: 'ui-gallery-preview-next',
-  // helper classnames
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
   namePause: 'ui-pause',
   namePauseEase: 'ui-pause-ease',
-  // styling classnames
   stylesCloseIcon: 'ui-btn ui-btn-lg ui-btn-square ui-btn-ghost ui-circle ui-ease-btn',
   stylesPreview: 'ui-ease-layout',
   stylesPreviewBtn: 'ui-circle ui-ease-btn',
-  // outer classnames
   nameIcon: 'ui-icon',
-  // tags
   tagGalleryInfo: 'span',
-  // icons
   closeIcon: 'remove',
   prevIcon: 'angle-left',
   nextIcon: 'angle-right',
   loaderIcon: 'loader-line',
   errorIcon: 'ban',
-  // values
   imgVerRatio: '1.33',
   imgZoomMin: '1',
   imgZoomMax: '6',
-  // data attributes
   dataTarget: 'data-ui-target',
   dataCount: 'data-ui-count',
   dataHref: 'data-ui-href',
-  // custom events
   eventGalleryTouch: 'ui:photogallery',
   eventPreviewClose: 'ui:previewClose',
   eventPreviewNav: 'ui:previewNav'
@@ -5258,7 +4700,6 @@ ui.photoGallery = {
 
 (function () {
   'use strict';
-  /*globals window, document, ui, Image, setTimeout, clearTimeout */
 
   var imgTouchmove,
       pageTouchmove = false,
@@ -5279,7 +4720,7 @@ ui.photoGallery = {
 
     if (gallery.length > 0) {
       galleryCounter = 0;
-      imgCounter = 0; // control vertical images
+      imgCounter = 0;
 
       _checkImages = function checkImages() {
         var img, newImg, imgLength, _imgFnc;
@@ -5335,8 +4776,7 @@ ui.photoGallery = {
         images = ui.find('a.' + ui.photoGallery.targetPhotos, parent);
       } else {
         images = ui.find('.' + ui.photoGallery.targetPhotos, parent);
-      } // mobile and touch screens: show data titles first
-
+      }
 
       if (e.type === 'touchend') {
         if (ui.hasClass(that, ui.photoGallery.nameGalleryInfo)) {
@@ -5353,9 +4793,8 @@ ui.photoGallery = {
       }
 
       if (ui.userAgents.mobile) {
-        pageYPos = window.pageYOffset; // get current y scroll position
-      } // get images and titles
-
+        pageYPos = window.pageYOffset;
+      }
 
       ui.each(images, function () {
         var href = this.getAttribute('href');
@@ -5371,22 +4810,19 @@ ui.photoGallery = {
         } else {
           loadedTitles.push(null);
         }
-      }); // detect previously opened galleries
-
+      });
       preview = ui.find('.' + ui.photoGallery.targetPreview);
 
       if (preview.length > 0) {
         for (i = 0; i < preview.length; i++) {
           preview[i].parentNode.removeChild(preview[i]);
         }
-      } // create gallery
-
+      }
 
       index = Array.prototype.slice.call(images).indexOf(that);
       html = '<div class="' + ui.photoGallery.targetPreview + ' ' + ui.photoGallery.stylesPreview + '">' + '<div class="' + ui.photoGallery.namePreviewBg + '"></div>' + '<button class="' + ui.photoGallery.namePreviewClose + ' ' + ui.photoGallery.stylesCloseIcon + '">' + '<svg class="' + ui.photoGallery.nameIcon + '"><use href="#' + ui.photoGallery.closeIcon + '"/></svg>' + '</button>' + '<button type="button" class="' + ui.photoGallery.namePreviewPrev + ' ' + ui.photoGallery.stylesPreviewBtn + '">' + '<svg class="' + ui.photoGallery.nameIcon + '"><use href="#' + ui.photoGallery.prevIcon + '"/></svg>' + '</button>' + '<button type="button" class="' + ui.photoGallery.namePreviewNext + ' ' + ui.photoGallery.stylesPreviewBtn + '">' + '<svg class="' + ui.photoGallery.nameIcon + '"><use href="#' + ui.photoGallery.nextIcon + '"/></svg>' + '</button>' + '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.photoGallery.nameIcon + '">' + '<use href="#' + ui.photoGallery.loaderIcon + '"/>' + '</svg>' + '<span class="' + ui.photoGallery.namePreviewInfo + ' ' + ui.photoGallery.stylesPreview + '"></span>' + '<img class="' + ui.photoGallery.stylesPreview + '">' + '</div>';
       ui.find('body')[0].insertAdjacentHTML('beforeend', html);
-      preview = ui.find('.' + ui.photoGallery.targetPreview); // create and load image
-
+      preview = ui.find('.' + ui.photoGallery.targetPreview);
       newImg = new Image();
       newImg.src = loadedImages[index];
       img = ui.find('img', preview);
@@ -5417,7 +4853,6 @@ ui.photoGallery = {
       newImg.onerror = notLoadedImage;
 
       function toggleGalleryTools() {
-        // show/hide nav buttons
         if (index < 1) {
           ui.hide('.' + ui.photoGallery.namePreviewPrev);
         } else {
@@ -5428,8 +4863,7 @@ ui.photoGallery = {
           ui.hide('.' + ui.photoGallery.namePreviewNext);
         } else {
           ui.show('.' + ui.photoGallery.namePreviewNext);
-        } // show/hide info window
-
+        }
 
         info = ui.find('.' + ui.photoGallery.namePreviewInfo)[0];
         ui.removeClass(info, ui.photoGallery.nameOpen);
@@ -5443,13 +4877,12 @@ ui.photoGallery = {
         }, ui.globals.slow);
       }
 
-      toggleGalleryTools(); // show gallery
-
+      toggleGalleryTools();
       ui.addClass(document, ui.photoGallery.namePreviewOpened);
       ui.addClass(preview, ui.photoGallery.nameOpen);
       setTimeout(function () {
         ui.addClass(preview, ui.photoGallery.nameOpenEase);
-      }, 10); // close gallery
+      }, 10);
 
       function closeGallery() {
         ui.removeClass(preview, ui.photoGallery.nameOpenEase);
@@ -5471,14 +4904,12 @@ ui.photoGallery = {
       ui.on('body', 'keydown.' + ui.photoGallery.eventPreviewClose, function (e) {
         if (e.keyCode === 27) {
           closeGallery();
-        } // esc
-
+        }
       });
       ui.on('.' + ui.photoGallery.namePreviewClose, 'click', closeGallery);
-      ui.on('.' + ui.photoGallery.namePreviewBg, 'click', closeGallery); // gallery nav
+      ui.on('.' + ui.photoGallery.namePreviewBg, 'click', closeGallery);
 
       function navigateGallery(that, direction) {
-        // control prev/next
         if (direction === 'next') {
           index += 1;
 
@@ -5493,8 +4924,7 @@ ui.photoGallery = {
             index = 0;
             return;
           }
-        } // hide current image and load new one
-
+        }
 
         ui.removeClass(img, ui.photoGallery.nameOpenEase);
         ui.show(loader);
@@ -5507,16 +4937,14 @@ ui.photoGallery = {
           newImg.src = loadedImages[index];
           img.src = newImg.src;
           newImg.onload = showImage;
-          newImg.onerror = notLoadedImage; // reset touch setting
-
+          newImg.onerror = notLoadedImage;
           imgPosX = '-50';
           imgPosY = '-50';
           imgZoom = 1;
           ui.removeClass(that, ui.photoGallery.namePreviewZoom);
           img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
         }, ui.globals.ease);
-      } // Event Listeners
-
+      }
 
       ui.on('.' + ui.photoGallery.targetPreview + ' .' + ui.photoGallery.namePreviewPrev + ',.' + ui.photoGallery.targetPreview + ' .' + ui.photoGallery.namePreviewNext, 'click', function () {
         if (ui.hasClass(this, ui.photoGallery.namePreviewNext)) {
@@ -5540,27 +4968,22 @@ ui.photoGallery = {
 
         if (imgPosX < -horLimit - 100) {
           imgPosX = -horLimit - 100;
-        } // left
-
+        }
 
         if (imgPosX > horLimit) {
           imgPosX = horLimit;
-        } // right
-
+        }
 
         if (imgPosY < -verLimit - 100) {
           imgPosY = -verLimit - 100;
-        } // top
-
+        }
 
         if (imgPosY > verLimit) {
           imgPosY = verLimit;
-        } // bottom
-
+        }
 
         img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
-      } // touch event listeners: double tap to zoom
-
+      }
 
       imgPosX = '-50';
       imgPosY = '-50';
@@ -5573,19 +4996,17 @@ ui.photoGallery = {
         }
 
         if (e.type === 'dblclick') {
-          // added double click to zoom for desktop
           touchesLength = 1;
         } else {
           touchesLength = e.changedTouches.length;
         }
 
         if (touchesLength === 1) {
-          // control number of touches
           now = new Date().getTime();
 
           if (e.type === 'touchend' && now - lastTouchEnd <= 200 && now - lastTouchEnd > 0 || e.type === 'dblclick') {
             e.preventDefault();
-            rect = img.getBoundingClientRect(); // get img DOM rect
+            rect = img.getBoundingClientRect();
 
             if (ui.hasClass(this, ui.photoGallery.namePreviewZoom)) {
               imgPosX = '-50';
@@ -5611,7 +5032,6 @@ ui.photoGallery = {
             img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
           } else if (imgTouchmove) {
             if (imgZoom > 1 && (imgWidth * imgZoom > window.innerWidth || imgHeight * imgZoom > window.innerHeight)) {
-              // control image exceeds window size
               imgTouchmove = false;
               imgLimits();
             }
@@ -5622,8 +5042,7 @@ ui.photoGallery = {
 
           lastTouchEnd = now;
         }
-      }); // touch event listeners: pinch to zoom
-
+      });
       ui.on(preview, 'touchstart', function (e) {
         if (e.target.src === undefined) {
           return;
@@ -5632,25 +5051,20 @@ ui.photoGallery = {
         e.preventDefault();
         var sx, sy, x, y, pinchStart, pinch, matrix, newScale, msx, msy;
         waitPinchZoom = false;
-        matrix = window.getComputedStyle(img).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
-
-        matrix = matrix.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|'); // select only numbers
-
-        matrix = matrix.split('|'); // touch move image positioning
-
+        matrix = window.getComputedStyle(img).getPropertyValue('transform');
+        matrix = matrix.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|');
+        matrix = matrix.split('|');
         msx = e.targetTouches[0].pageX;
         msy = e.targetTouches[0].pageY;
 
         if (e.targetTouches.length > 1) {
-          // control number of touches
           sx = msx - e.targetTouches[1].pageX;
           sy = msy - e.targetTouches[1].pageY;
-          pinchStart = Math.sqrt(sx * sx + sy * sy); // the pythagorean distance between two points
+          pinchStart = Math.sqrt(sx * sx + sy * sy);
         }
 
         ui.on(this, 'touchmove', function (e) {
           if (imgZoom > 1 && (imgWidth * imgZoom > window.innerWidth || imgHeight * imgZoom > window.innerHeight)) {
-            // control image exceeds window size
             ui.addClass(img, ui.photoGallery.namePauseEase);
             imgTouchmove = true;
             waitPinchZoom = true;
@@ -5659,11 +5073,9 @@ ui.photoGallery = {
           }
 
           if (e.targetTouches.length > 1) {
-            // control number of touches
             x = e.targetTouches[0].pageX - e.targetTouches[1].pageX;
             y = e.targetTouches[0].pageY - e.targetTouches[1].pageY;
-            pinch = Math.sqrt(x * x + y * y); // the pythagorean distance between two points
-
+            pinch = Math.sqrt(x * x + y * y);
             newScale = (pinch - pinchStart) / pinch * (imgWidth / imgHeight * 2);
             imgZoom = parseFloat(matrix[3]) + parseFloat(newScale);
 
@@ -5683,8 +5095,7 @@ ui.photoGallery = {
 
           img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
         });
-      }); // mousemove for zoomed image on desktop
-
+      });
       ui.on(document, 'mousedown', '.' + ui.photoGallery.targetPreview + ' img.' + ui.photoGallery.namePreviewZoom, function (e) {
         if (e.target.src === null || ui.userAgents.mobile) {
           return;
@@ -5694,14 +5105,11 @@ ui.photoGallery = {
         var msx, msy, matrix;
         msx = e.clientX;
         msy = e.clientY;
-        matrix = window.getComputedStyle(img).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
-
-        matrix = matrix.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|'); // select only numbers
-
+        matrix = window.getComputedStyle(img).getPropertyValue('transform');
+        matrix = matrix.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|');
         matrix = matrix.split('|');
         ui.on(img, 'mousemove', function (e) {
           if (imgZoom > 1 && (imgWidth * imgZoom > window.innerWidth || imgHeight * imgZoom > window.innerHeight)) {
-            // control image exceeds window size
             ui.addClass(img, ui.photoGallery.namePauseEase);
             imgPosX = parseFloat((e.clientX - msx) / imgWidth) * 100 + parseFloat(matrix[4] / imgWidth * 100);
             imgPosY = parseFloat((e.clientY - msy) / imgHeight) * 100 + parseFloat(matrix[5] / imgHeight * 100);
@@ -5711,7 +5119,6 @@ ui.photoGallery = {
         ui.on(img, 'mouseup mouseleave', function () {
           if (ui.userAgents.desktop) {
             if (imgZoom > 1 && (imgWidth * imgZoom > window.innerWidth || imgHeight * imgZoom > window.innerHeight)) {
-              // control image exceeds window size
               imgLimits();
             }
 
@@ -5720,12 +5127,10 @@ ui.photoGallery = {
           }
         });
       });
-    } // Event Listeners
-
+    }
 
     ui.on(document, 'touchmove.' + ui.photoGallery.eventGalleryTouch + ' touchend', '.' + ui.photoGallery.targetGallery + ' a.' + ui.photoGallery.targetPhotos, function (e) {
       if (e.cancelable && e.defaultPrevented) {
-        // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
         e.preventDefault();
       }
 
@@ -5783,31 +5188,20 @@ ui.photoGallery = {
 
       galleryFnc(e, ui.find(target + ' .' + ui.photoGallery.targetPhotos)[count], 'call');
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.photoGallery.Start);
 })();
-"use strict";
-
-/*
- UI Grid JS
- Requires UI Core JS
-*/
 ui.grid = {
-  // targets
   targetColsPrefix: 'ui-col-',
   targetOrdersPrefix: 'ui-order-',
-  // main classnames
   nameFirstSuffix: '-first',
   nameLastSuffix: '-last',
-  // data attributes
   dataOrdered: 'data-ui-ordered'
 };
 
 (function () {
   'use strict';
-  /*globals window, document, ui */
 
   ui.grid.Start = function () {
     var fnc, o, p, siblings, i;
@@ -5854,42 +5248,30 @@ ui.grid = {
       fnc('lg', window.innerWidth > ui.globals.lg - 1);
       fnc('xl', window.innerWidth > ui.globals.xl - 1);
     }
-  }; // Loaders
-
+  };
 
   ui.onload(ui.grid.Start);
   ui.on(window, 'resize', ui.grid.Start);
-  ui.on(document, ui.globals.eventDomChange, ui.grid.Start); // ajax callback loader
-
+  ui.on(document, ui.globals.eventDomChange, ui.grid.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
     if (ui.ajax.classNames.indexOf(ui.grid.targetOrdersPrefix) > -1) {
       ui.grid.Start();
     }
   });
 })();
-"use strict";
-
-/*
- UI Header Sticky JS
- Requires UI Core JS
-*/
 ui.headerSticky = {
-  // targets
   target: 'ui-header-sticky',
-  // main classnames
   nameSticky: 'ui-sticky',
   nameXS: 'ui-sticky-xs',
   nameSM: 'ui-sticky-sm',
   nameMD: 'ui-sticky-md',
   nameLG: 'ui-sticky-lg',
   nameXL: 'ui-sticky-xl',
-  // data attributes
   dataClasses: 'data-ui-classes'
 };
 
 (function () {
   'use strict';
-  /*globals window, document, ui */
 
   var stickyLoad, stickyClear, classList, classes, size, header, body;
 
@@ -5907,8 +5289,7 @@ ui.headerSticky = {
   stickyLoad = function stickyLoad() {
     if (header === undefined) {
       return;
-    } // firefox
-
+    }
 
     if (window.pageYOffset > header.offsetTop) {
       if (size !== '') {
@@ -5976,78 +5357,52 @@ ui.headerSticky = {
 
     classes = header.getAttribute(ui.headerSticky.dataClasses);
     stickyLoad();
-  }; // Loaders
-
+  };
 
   ui.onload(ui.headerSticky.Start);
   ui.on(window, 'scroll', stickyLoad);
   ui.on(document, ui.globals.eventDomChange, stickyLoad);
 })();
-"use strict";
-
-/*
- UI Imgupload JS
- Requires UI Core JS
-*/
 ui.imgUpload = {
-  // targets
   target: 'ui-imgupload',
   targetImages: 'ui-imgupload-src',
   targetNames: 'ui-imgupload-name',
   targetInfos: 'ui-imgupload-info',
   targetTags: 'ui-imgupload-tag',
-  // main classnames
   nameList: 'ui-imgupload-list',
   nameDrop: 'ui-imgupload-drop',
   nameLoading: 'ui-imgupload-loading',
   nameUploading: 'ui-imgupload-uploading',
-  // helper classnames
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
-  // tags
   tagList: 'li',
   tagNames: 'span',
   tagInfos: 'i',
-  // values
   ratio: '4:3',
-  // activated when resize: false
   resize: true,
-  // resize images
   resizeWidth: 1024,
-  // resize width
   resizeHeight: 768,
-  // resize height
   fill: false,
-  // fill blank areas
   fillColor: 'hsl(0, 0%, 100%)',
-  // fill color
   fit: true,
-  // crop to fit images
   newID: 1000000,
-  // start new ids from
   types: ['jpg', 'jpeg', 'png', 'gif'],
-  // add your allowed file types
-  // messages
   msgConfirm: 'Yes',
   msgNotConfirm: 'No',
   msgImgError: 'is not found!',
   msgBeforeUpload: 'Do you want to upload your files?',
   msgError: 'Your files not saved! Please, check your connection and try again.',
-  // data attributes
   dataSrc: 'data-ui-src',
   dataID: 'data-ui-id',
   dataTag: 'data-ui-tag',
-  // formData API names
   formDataID: 'id',
   formDataTag: 'tag',
   formDataImg: 'img',
-  // custom events
   eventUploader: 'ui:imageUploader'
 };
 
 (function () {
   'use strict';
-  /*globals document, ui, setTimeout, Image, FileReader, FormData, atob, Uint8Array, Blob, confirm, alert */
 
   ui.imgUpload.Start = function () {
     var uploaders, savedImgs;
@@ -6056,7 +5411,6 @@ ui.imgUpload = {
       var i, ext, c, ctx, data, img, imgLoaded, w, h, r, size, allowed, showTimer, readers, listCont, list, loaded, loadImages, loadImagesAfter, html, newItem;
 
       if (files.length > 0) {
-        // check allowed file types
         allowed = [];
 
         for (i = 0; i < files.length; i++) {
@@ -6073,9 +5427,7 @@ ui.imgUpload = {
 
         if (allowed.length === 0) {
           return;
-        } // stop when all file types not allowed
-        // load images
-
+        }
 
         readers = [];
         img = [];
@@ -6091,10 +5443,8 @@ ui.imgUpload = {
         list = ui.find('.' + ui.imgUpload.nameList + ' ul', uploader)[0];
 
         loadImages = function loadImages(j, tag) {
-          // get width and height
           w[j] = img[j].width;
-          h[j] = img[j].height; // get ratio
-
+          h[j] = img[j].height;
           r = ui.imgUpload.ratio.split(':');
 
           if (r.length !== 2) {
@@ -6102,9 +5452,7 @@ ui.imgUpload = {
           }
 
           if (ui.imgUpload.resize && !savedImgs) {
-            // resize images
             if (w[j] > h[j]) {
-              // horizontal image
               h[j] = h[j] / w[j] * ui.imgUpload.resizeWidth;
               w[j] = ui.imgUpload.resizeWidth;
 
@@ -6113,7 +5461,6 @@ ui.imgUpload = {
                 h[j] = ui.imgUpload.resizeHeight;
               }
             } else {
-              // vertical image
               w[j] = w[j] / h[j] * ui.imgUpload.resizeHeight;
               h[j] = ui.imgUpload.resizeHeight;
 
@@ -6134,11 +5481,9 @@ ui.imgUpload = {
             if (!ui.imgUpload.fit && ui.imgUpload.fill && !savedImgs) {
               if (r !== '') {
                 if (w[j] > h[j]) {
-                  // horizontal image
                   c.width = w[j];
                   c.height = r[1] / r[0] * w[j];
                 } else {
-                  // vertical image
                   c.width = r[0] / r[1] * h[j];
                   c.height = h[j];
                 }
@@ -6150,17 +5495,14 @@ ui.imgUpload = {
           }
 
           if (ui.imgUpload.fit && !savedImgs) {
-            // crop to fit images
             if (ui.imgUpload.resize) {
               c.width = ui.imgUpload.resizeWidth;
               c.height = ui.imgUpload.resizeHeight;
             } else {
               if (w[j] > h[j]) {
-                // horizontal image
                 c.width = r[0] / r[1] * h[j];
                 c.height = h[j];
               } else {
-                // vertical image
                 c.width = w[j];
                 c.height = r[1] / r[0] * w[j];
               }
@@ -6169,7 +5511,6 @@ ui.imgUpload = {
             ctx.drawImage(img[j], 0, 0, c.width, c.height);
           } else {
             if (ui.imgUpload.fill && !savedImgs) {
-              // fill blank areas
               ctx.fillStyle = ui.imgUpload.fillColor;
               ctx.fillRect(0, 0, c.width, c.height);
               ctx.drawImage(img[j], (c.width - w[j]) / 2, (c.height - h[j]) / 2, w[j], h[j]);
@@ -6178,8 +5519,7 @@ ui.imgUpload = {
             }
           }
 
-          data = c.toDataURL("image/jpeg"); // calculate new image file size from new base64
-
+          data = c.toDataURL("image/jpeg");
           size = data.split(',')[1].length;
           size = 4 * Math.ceil(size / 3) * 0.5624896334383812 / 1000;
           size = size.toFixed(0);
@@ -6190,10 +5530,8 @@ ui.imgUpload = {
           imgLoaded[j].tag = tag;
 
           if (savedImgs) {
-            // get saved image's id
             imgLoaded[j].id = allowed[j].id;
           } else {
-            // define a new id
             ui.imgUpload.newID += 1;
             imgLoaded[j].id = ui.imgUpload.newID;
           }
@@ -6206,11 +5544,9 @@ ui.imgUpload = {
             setTimeout(function () {
               ui.each(imgLoaded, function (k) {
                 if (imgLoaded[k] !== undefined) {
-                  // return when image loading failed
                   html += '<' + ui.imgUpload.tagList + ' class="' + ui.imgUpload.nameOpenEase + '">' + '<span class="' + ui.imgUpload.targetImages + '">' + '<img id="' + imgLoaded[k].id + '" src="' + imgLoaded[k].data + '" draggable="false">' + '</span>' + '<' + ui.imgUpload.tagNames + ' class="' + ui.imgUpload.targetNames + '">' + imgLoaded[k].name + '</' + ui.imgUpload.tagNames + '>' + '<' + ui.imgUpload.tagInfos + ' class="' + ui.imgUpload.targetInfos + '">' + imgLoaded[k].size + 'kb' + '</' + ui.imgUpload.tagInfos + '>';
 
                   if (imgLoaded[k].tag !== '') {
-                    // add tags
                     html += '<span class="' + ui.imgUpload.targetTags + '">' + imgLoaded[k].tag + '</span>';
                   }
 
@@ -6233,8 +5569,7 @@ ui.imgUpload = {
                 setTimeout(function () {
                   ui.removeClass(newItem[k], ui.imgUpload.nameOpenEase);
                 }, ui.globals.fast / 2 * k);
-              }); // empty variables
-
+              });
               allowed = [];
               readers = [];
               img = [];
@@ -6251,13 +5586,12 @@ ui.imgUpload = {
 
         ui.each(allowed, function (i) {
           if (savedImgs) {
-            // array: get images saved before
             img[i] = new Image();
             img[i].src = allowed[i].name;
 
             img[i].onload = function () {
               loadImages(i, allowed[i].tag);
-              loadImagesAfter(); // end of images
+              loadImagesAfter();
             };
 
             img[i].onerror = function () {
@@ -6270,12 +5604,10 @@ ui.imgUpload = {
                 });
               }
 
-              loadImagesAfter(); // end of images
+              loadImagesAfter();
             };
           } else {
-            // FileList object: get images from user selected
-            readers[i] = new FileReader(); // filereader API
-
+            readers[i] = new FileReader();
             readers[i].readAsDataURL(allowed[i]);
 
             readers[i].onload = function () {
@@ -6287,12 +5619,11 @@ ui.imgUpload = {
               };
             };
 
-            readers[i].onloadend = loadImagesAfter; // end of images
+            readers[i].onloadend = loadImagesAfter;
           }
         });
       }
-    } // load saved before images
-
+    }
 
     uploaders = ui.find('.' + ui.imgUpload.target);
     ui.each(uploaders, function () {
@@ -6323,11 +5654,9 @@ ui.imgUpload = {
         this.parentNode.removeChild(this);
       });
       savedImgs = true;
-      loadFiles(this, imported); // empty variables
-
+      loadFiles(this, imported);
       imported = [];
-    }); // Event Listeners
-
+    });
     ui.on(document, 'dragenter', '.' + ui.imgUpload.target, function (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -6368,7 +5697,6 @@ ui.imgUpload = {
     });
 
     function toBlob(base, type, sliceSize) {
-      // convert base64 images to blob
       var i, j, byteCharacters, byteArray, byteArrays, slice, byteNumbers, blob;
       type = type || '';
       sliceSize = sliceSize || 512;
@@ -6399,14 +5727,12 @@ ui.imgUpload = {
       that = this;
 
       fnc = function fnc() {
-        formData = new FormData(); // formdata API
-
+        formData = new FormData();
         uploader = ui.closest(that, '.' + ui.imgUpload.target)[0];
         list = ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList, uploader);
         ui.each(list, function (i) {
           file = ui.find('.' + ui.imgUpload.targetImages + ' img', this)[0];
-          formData.append(ui.imgUpload.formDataID + '[' + i + ']', file.id); // add id
-
+          formData.append(ui.imgUpload.formDataID + '[' + i + ']', file.id);
           tag = ui.find('.' + ui.imgUpload.targetTags, this)[0];
 
           if (tag !== undefined) {
@@ -6415,15 +5741,12 @@ ui.imgUpload = {
             tag = '';
           }
 
-          formData.append(ui.imgUpload.formDataTag + '[' + i + ']', tag); // add image tag
-
+          formData.append(ui.imgUpload.formDataTag + '[' + i + ']', tag);
           img = file.src.split(";");
-          imgType = img[0].split(":")[1]; // get image type
-
+          imgType = img[0].split(":")[1];
           img = img[1].split(",")[1];
-          img = toBlob(img, imgType); // convert to blob to using server's file protocol
-
-          formData.append(ui.imgUpload.formDataImg + '[' + i + ']', img); // add image file
+          img = toBlob(img, imgType);
+          formData.append(ui.imgUpload.formDataImg + '[' + i + ']', img);
         });
         ui.addClass(uploader, ui.imgUpload.nameUploading);
         ui.ajax({
@@ -6434,23 +5757,19 @@ ui.imgUpload = {
             ui.removeClass(uploader, ui.imgUpload.nameUploading);
 
             if (status === 'success') {
-              // check ajax connection
               response = JSON.parse(response);
 
               if (ui.alerts === undefined) {
-                alert(response.message); // show server message
+                alert(response.message);
               } else {
                 if (response.success === true) {
-                  // check server connection
                   ui.alerts.message({
                     msg: response.message,
-                    // show server message
                     theme: ui.alerts.themeSuccess
                   });
                 } else {
                   ui.alerts.message({
                     msg: response.message,
-                    // show server message
                     theme: ui.alerts.themeDanger
                   });
                 }
@@ -6487,42 +5806,28 @@ ui.imgUpload = {
       }
     });
     ui.on(document, 'click', '.' + ui.imgUpload.nameLoading + ',.' + ui.imgUpload.nameUploading, function (e) {
-      // prevent clicks when loading and uploading
       e.preventDefault();
       e.stopPropagation();
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.imgUpload.Start);
 })();
-"use strict";
-
-/*
- UI Line Chart JS
- Requires UI Core JS
-*/
 ui.lineChart = {
-  // targets
   target: 'ui-line-chart-holder',
-  // main classnames
   nameLines: 'ui-line-chart',
   nameGridRoot: 'ui-line-root-grid',
   nameGridX: 'ui-line-x-grid',
   nameGridY: 'ui-line-y-grid',
   nameInfo: 'ui-line-chart-info',
   nameTypePrefix: 'ui-',
-  // helper classnames
   nameLoaded: 'ui-loaded',
   nameNotLoaded: 'ui-no-loaded',
   nameResized: 'ui-resized',
-  // ids
   idGradient: 'ui-gradient',
-  // tags
   tagLines: 'li',
   tagInfoColor: 'span',
   tagInfoStat: 'b',
-  // values
   colors: ['hsl(30, 100%, 63%)', 'hsl(347, 100%, 69%)', 'hsl(260, 100%, 70%)', 'hsl(180, 48%, 52%)', 'hsl(42, 100%, 67%)', 'hsl(13, 26%, 41%)', 'hsl(65, 49%, 54%)', 'hsl(0, 0%, 42%)', 'hsl(225, 43%, 57%)'],
   showGrid: true,
   showGridText: true,
@@ -6542,7 +5847,6 @@ ui.lineChart = {
   dashed: 'dashed',
   curved: 'curved',
   filled: 'filled',
-  // data attributes
   dataX: 'data-ui-x',
   dataY: 'data-ui-y',
   dataSize: 'data-ui-size',
@@ -6554,9 +5858,8 @@ ui.lineChart = {
 
 (function () {
   'use strict';
-  /*globals window, document, ui */
 
-  var loadCharts; // load charts
+  var loadCharts;
 
   ui.lineChart.Start = function () {
     var i, j, k, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
@@ -6591,8 +5894,7 @@ ui.lineChart = {
           ui.addClass(this, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
         } else {
           ui.addClass(this, ui.lineChart.nameLoaded);
-        } // calculate height of chart
-
+        }
 
         size = this.getAttribute(ui.lineChart.dataSize);
         rows = ui.lineChart.rows;
@@ -6608,8 +5910,7 @@ ui.lineChart = {
         }
 
         data.width = this.offsetWidth;
-        data.height = rows * rowsHeight; // read all x parameters
-
+        data.height = rows * rowsHeight;
         x = this.getAttribute(ui.lineChart.dataX);
 
         if (x !== null && x !== '') {
@@ -6618,8 +5919,7 @@ ui.lineChart = {
           return;
         }
 
-        x = data.x; // read all y parameters
-
+        x = data.x;
         yMax = [];
         data.pass = false;
         ui.each(lines, function (i) {
@@ -6646,38 +5946,32 @@ ui.lineChart = {
           });
 
           if (data.x.length === data[i].y.length) {
-            yMax.push(data[i].y); // push y datas to calculate the max value of all datas
+            yMax.push(data[i].y);
           } else {
-            data.pass = true; // x and y datas are not equal
+            data.pass = true;
           }
         });
 
         if (data.pass) {
           return;
-        } // get min and max values of all y datas
-
+        }
 
         yMax = yMax.toString().split(',');
         yMax = yMax.filter(function (item, pos) {
-          // convert array as unique
           return yMax.indexOf(item) === pos;
         });
         yMax = yMax.sort(function (a, b) {
-          // convert array as desc
           return b - a;
         });
         yMin = parseInt(yMax[yMax.length - 1]);
-        yMax = Math.ceil((parseInt(yMax[0]) - yMin) / rows) * rows + yMin; // convert yMax to divide with rows
-        // start html
-
+        yMax = Math.ceil((parseInt(yMax[0]) - yMin) / rows) * rows + yMin;
         data.svgHeight = data.height;
 
         if (ui.lineChart.showInfo || ui.lineChart.showGridText) {
           data.svgHeight += 15;
         }
 
-        html = '<svg style="width: ' + data.width + 'px; height: ' + data.svgHeight + 'px;">'; // check column stepping
-
+        html = '<svg style="width: ' + data.width + 'px; height: ' + data.svgHeight + 'px;">';
         data.step = this.getAttribute(ui.lineChart.dataStep);
 
         if (data.step !== null && data.step !== '' && data.step !== '0') {
@@ -6692,8 +5986,7 @@ ui.lineChart = {
           }
         } else {
           data.step = false;
-        } // create grids
-
+        }
 
         col = (data.width - (ui.lineChart.right + ui.lineChart.left)) / (x.length - 1);
         html += '<g class="' + ui.lineChart.nameGridX + '">';
@@ -6716,7 +6009,6 @@ ui.lineChart = {
           }
 
           if (i === 0) {
-            // root of x grid
             html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + ui.lineChart.gridStroke / 2)) + '" ' + 'class="' + ui.lineChart.nameGridRoot + '" ' + 'stroke-width="' + ui.lineChart.gridStroke + '"';
           } else {
             html += 'y2="' + (data.height - ui.lineChart.bottom) + '" ' + 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
@@ -6739,7 +6031,6 @@ ui.lineChart = {
           }
 
           if (i >= rows) {
-            // root of y grid
             html += 'x1="' + Math.ceil(ui.lineChart.left - ui.lineChart.gridStroke / 2) + '" ' + 'class="' + ui.lineChart.nameGridRoot + '" ' + 'stroke-width="' + ui.lineChart.gridStroke + '"';
           } else {
             html += 'x1="' + Math.floor(ui.lineChart.left + ui.lineChart.gridStroke) + '" ' + 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
@@ -6748,82 +6039,66 @@ ui.lineChart = {
           html += '></line>';
         }
 
-        html += '</g>'; // create svg contents
-
+        html += '</g>';
         circles = '';
         pathStart = [];
         html += '<g>';
         ui.each(lines, function (j) {
           paths = '';
-          y = data[j].y; // set color
+          y = data[j].y;
 
           if (j > ui.lineChart.colors.length - 1) {
             data.color.push(ui.lineChart.colors[j - ui.lineChart.colors.length]);
           } else {
             data.color.push(ui.lineChart.colors[j]);
-          } // create paths and circles
-
+          }
 
           for (i = 0; i < y.length; i++) {
             posX = i * col + ui.lineChart.left;
-            posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[i] - yMax) / (yMax - yMin) - ui.lineChart.top); // get line type
-
+            posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[i] - yMax) / (yMax - yMin) - ui.lineChart.top);
             type = this.getAttribute(ui.lineChart.dataType);
 
             if (type === null) {
               type = '';
-            } // create lines
-
+            }
 
             if (i === 0) {
-              // start point
               pathStart.x = posX;
               pathStart.y = posY;
             }
 
             if (type.indexOf(ui.lineChart.curved) > -1) {
-              // curved
               data.percent = parseInt(ui.lineChart.curveSize * (i * col) / 100);
 
               if (i === 1) {
-                // start curves
                 paths += ' C ' + (col + data.percent) + ' ' + (posY - data.percent) + ',' + ' ' + (col + data.percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
               } else if (i > 0) {
-                // other curves
                 paths += ' S ' + (i * col - data.percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
               }
             } else {
-              // default
               if (i > 0) {
-                // other points
                 paths += ' L ' + posX + ' ' + posY;
               }
-            } // create circles
-
+            }
 
             circles += '<circle ' + 'cx="' + posX + '" ' + 'cy="' + posY + '" ' + 'r="' + ui.lineChart.circleSize + '" ' + 'fill="' + data.color[j] + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="0" ';
 
             if (data[j].links[i] !== '') {
-              // check links
               circles += 'onclick="location.href = \'' + data[j].links[i] + '\';"';
             }
 
             if (ui.tooltip === undefined) {
-              // Optional!
               circles += '/>' + '<title>' + y[i] + '</title>';
             } else {
               circles += ui.tooltip.dataTooltip + ' ' + 'title="' + y[i] + '" ' + '/>';
             }
 
             '</circle>';
-          } // create paths
-
+          }
 
           if (type.indexOf(ui.lineChart.dashed) > -1) {
-            // dashed
             html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dashed + '" ';
           } else if (type.indexOf(ui.lineChart.dotted) > -1) {
-            // dotted
             html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dotted + '" ';
           } else {
             html += '<path ';
@@ -6832,13 +6107,11 @@ ui.lineChart = {
           html += 'd="M ' + pathStart.x + ' ' + pathStart.y + paths + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + '/>';
 
           if (type.indexOf(ui.lineChart.filled) > -1) {
-            // add filled paths
             data.id = new Date().getTime();
             data.id = data.id.toString();
             data.id = data.id.substring(data.id.length - 4, data.id.length) + j;
             html += '<linearGradient id="' + ui.lineChart.idGradient + data.id + '" x1="0" y1="0" x2="0" y2="100%">' + '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' + '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' + '</linearGradient>' + '<path d="M ' + (pathStart.x + ui.lineChart.gridStroke / 2) + ' ' + pathStart.y + paths + ' V ' + (data.height - ui.lineChart.bottom - ui.lineChart.gridStroke / 2) + ' H ' + (ui.lineChart.gridStroke / 2 + ui.lineChart.left) + ' Z" ' + 'stroke="0" ' + 'fill="url(#' + ui.lineChart.idGradient + data.id + ')" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + 'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' + '/>';
-          } // get data names
-
+          }
 
           name = this.getAttribute(ui.lineChart.dataName);
 
@@ -6847,14 +6120,12 @@ ui.lineChart = {
           } else {
             data.name.push('');
           }
-        }); // close svg tag
-
+        });
         html += circles + '</g></svg>';
 
         if (data.width === 0) {
           ui.removeClass(this, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
-        } // create info
-
+        }
 
         if (ui.lineChart.showInfo) {
           html += '<ul class="' + ui.lineChart.nameInfo + '">';
@@ -6878,60 +6149,44 @@ ui.lineChart = {
           }
 
           html += '</ul>';
-        } // parse html
-
+        }
 
         this.innerHTML = data.backup;
-        this.insertAdjacentHTML('beforeEnd', html); // empty variables
-
+        this.insertAdjacentHTML('beforeEnd', html);
         data = [];
         html = '';
       });
     };
 
-    loadCharts(ui.lineChart.nameNotLoaded); // show not loaded charts
-  }; // Loaders
-
+    loadCharts(ui.lineChart.nameNotLoaded);
+  };
 
   ui.onload(ui.lineChart.Start);
   ui.on(window, 'resize', function () {
-    loadCharts(ui.lineChart.nameLoaded, true); // resize loaded charts
+    loadCharts(ui.lineChart.nameLoaded, true);
   });
   ui.on(document, ui.globals.eventDomChange, function () {
-    loadCharts(ui.globals.eventDomChange); // resize loaded charts
-  }); // ajax callback loader
-
+    loadCharts(ui.globals.eventDomChange);
+  });
   ui.on(document, ui.globals.eventAjaxCallback, function () {
     if (ui.ajax.classNames.indexOf(ui.lineChart.target) > -1) {
-      loadCharts(ui.lineChart.nameNotLoaded); // show not loaded charts
+      loadCharts(ui.lineChart.nameNotLoaded);
     }
   });
 })();
-"use strict";
-
-/*
- UI Loading Mask JS
- Requires UI Core JS
-*/
 ui.loadingMask = {
-  // targets
   target: 'ui-loading-mask',
-  // main classnames
   nameSticky: 'ui-loading-mask-sticky',
   nameLoader: 'ui-loading-mask-loader',
-  // helper classnames
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
-  // styling classnames
   stylesLoader: 'ui-ease-layout',
-  // values
   loadingBox: '-128 -12 288 288',
   loadingPath: '<path d="M12 12a120 120 0 01120 120"/>'
 };
 
 (function () {
   'use strict';
-  /*globals ui, window, document, setTimeout */
 
   var maskItems = [],
       maskHolders = [];
@@ -6942,9 +6197,7 @@ ui.loadingMask = {
       l = ui.find(that);
 
       function effectTimers(type) {
-        // wait for effects
         function emptyVars(j, l) {
-          // empty variables
           if (j === l.length - 1) {
             maskItems = [];
             maskHolders = [];
@@ -6960,7 +6213,6 @@ ui.loadingMask = {
             }
           }, ui.globals.ease);
         } else {
-          // show
           setTimeout(function () {
             for (j = 0; j < l.length; j++) {
               ui.addClass(maskHolders[j], ui.loadingMask.nameOpenEase);
@@ -6972,13 +6224,11 @@ ui.loadingMask = {
 
       for (i = 0; i < l.length; i++) {
         if (ui.hasClass(l[i], ui.loadingMask.target)) {
-          // hide loading
           status = 'hide';
           maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
           ui.removeClass(maskHolders[i], ui.loadingMask.nameOpenEase);
           maskItems[i] = l[i];
         } else {
-          // show loading
           status = 'show';
           html = '<span class="' + ui.loadingMask.nameLoader + ' ' + ui.loadingMask.stylesLoader + '">' + '<span>' + '<svg viewBox="' + ui.loadingMask.loadingBox + '" style="height: ' + l[i].offsetHeight / 2 + 'px;">' + ui.loadingMask.loadingPath + '</svg>' + '</span>' + '</span>';
           l[i].insertAdjacentHTML('afterbegin', html);
@@ -7002,42 +6252,28 @@ ui.loadingMask = {
           effectTimers(status);
         }
       }
-    }; // Event Listeners
-
+    };
 
     ui.on(document, 'click', '.' + ui.loadingMask.target, function (e) {
       e.preventDefault();
       e.stopPropagation();
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.loadingMask.Start);
 })();
-"use strict";
-
-/*
- UI Map JS
- Requires UI Core JS
-*/
 ui.map = {
-  // targets
   target: 'ui-map',
-  // helper classnames
   nameActive: 'ui-active',
-  // tags
   tagTarget: 'path',
-  // values
   opacityMax: '0.75',
   opacityMin: '0.25',
-  // data attributes
   dataSize: 'data-ui-size',
   dataHref: 'data-ui-href'
 };
 
 (function () {
   'use strict';
-  /*globals window, ui */
 
   ui.map.Start = function () {
     var map, arr, data, items, opacity;
@@ -7081,8 +6317,7 @@ ui.map = {
         }
       });
       arr[i] = [];
-    }); // Event Listeners
-
+    });
     ui.on(ui.map.tagTarget, 'click', function () {
       var href = this.getAttribute(ui.map.dataHref);
 
@@ -7090,23 +6325,14 @@ ui.map = {
         window.location = href;
       }
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.map.Start);
 })();
-"use strict";
-
-/*
- UI Modal JS
- Requires UI Core JS
-*/
 ui.modal = {
-  // targets
   target: 'ui-modal',
   targetWin: 'ui-modal-win',
   targetBg: 'ui-modal-bg',
-  // main classnames
   nameModalOpened: 'ui-modal-opened',
   nameWinNoBG: 'ui-modal-no-bg',
   nameContent: 'ui-modal-content',
@@ -7125,21 +6351,16 @@ ui.modal = {
   nameSM: 'ui-modal-sm',
   nameInline: 'ui-modal-inline',
   nameFullscreen: 'ui-modal-fullscreen',
-  // helper classnames
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
   nameShow: 'ui-show',
   nameShowEase: 'ui-show-ease',
   nameActive: 'ui-active',
-  // outer classnames
   nameIcon: 'ui-icon',
-  // styling classnames
   stylesContent: 'ui-shadow-lg ui-ease-layout',
   stylesCloseBtn: 'ui-ease-btn',
   stylesModalBg: 'ui-ease-layout',
-  // icons
   closeIcon: 'remove',
-  // values
   winMargin: 15,
   sizeLG: 'lg',
   sizeMD: 'md',
@@ -7152,7 +6373,6 @@ ui.modal = {
   heightMinLG: '300',
   heightMinMD: '240',
   heightMinSM: '120',
-  // data attributes
   dataCustomW: 'data-ui-customW',
   dataCustomH: 'data-ui-customH',
   dataOpenSize: 'data-ui-openSize'
@@ -7160,7 +6380,6 @@ ui.modal = {
 
 (function () {
   'use strict';
-  /*globals window, document, ui, setTimeout */
 
   var pageYPos;
 
@@ -7174,8 +6393,7 @@ ui.modal = {
 
       if (openSize !== null) {
         type = 'md';
-        userDefined = ui.globals.md + 1; // md, inline
-
+        userDefined = ui.globals.md + 1;
         openSize = Number(openSize);
 
         if (window.innerWidth < openSize) {
@@ -7183,10 +6401,10 @@ ui.modal = {
         } else {
           if (ui.hasClass(win, ui.modal.nameLG)) {
             type = 'lg';
-            userDefined = ui.globals.lg; // lg
+            userDefined = ui.globals.lg;
           } else if (ui.hasClass(win, ui.modal.nameSM)) {
             type = 'sm';
-            userDefined = ui.globals.md; // sm
+            userDefined = ui.globals.md;
           }
 
           if (window.innerWidth > userDefined) {
@@ -7255,10 +6473,8 @@ ui.modal = {
           removeModal = ui.find('.' + ui.modal.nameRemovable, win[0]).length;
 
           if (removeModal > 0) {
-            // remove modal window
             win[0].parentNode.removeChild(win[0]);
           } else {
-            // hide modal window
             ui.removeClass(this, ui.modal.nameShow);
           }
         });
@@ -7273,20 +6489,11 @@ ui.modal = {
         setTimeout(function () {
           ui.removeClass(bg, ui.modal.nameOpen);
         }, ui.globals.ease);
-        ui.trigger(document, ui.globals.eventDomChange); // set custom event
+        ui.trigger(document, ui.globals.eventDomChange);
       }, ui.globals.ease);
     };
 
     ui.modal.open = function (props) {
-      /*
-      props list:
-          props.source
-          props.size
-          props.type
-          props.bg
-          props.closable
-          props.callback
-      */
       var closeBtn, nonClosable, typeArr, type, created, temp, getSize, size, customSize, sizeArr, forms, bg, html, win, content;
 
       if (props === undefined) {
@@ -7297,12 +6504,11 @@ ui.modal = {
         return;
       }
 
-      ui.modal.close(); // hide opened modal windows and prevent multiple modal windows
+      ui.modal.close();
 
       if (ui.userAgents.mobile) {
-        pageYPos = window.pageYOffset; // get current scroll-y position
-      } // check closable
-
+        pageYPos = window.pageYOffset;
+      }
 
       nonClosable = false;
 
@@ -7310,8 +6516,7 @@ ui.modal = {
         if (!props.closable) {
           nonClosable = true;
         }
-      } // create modal
-
+      }
 
       function createModal() {
         bg = ui.find('.' + ui.modal.targetBg)[0];
@@ -7330,8 +6535,7 @@ ui.modal = {
         ui.find('body')[0].insertAdjacentHTML('beforeend', html);
         win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameActive)[0];
         content = ui.find('.' + ui.modal.nameContent, win)[0];
-      } // check header and footer availability
-
+      }
 
       function checkHeaderFooter() {
         if (ui.find('.' + ui.modal.nameHeader, content)[0] !== undefined) {
@@ -7341,11 +6545,9 @@ ui.modal = {
         if (ui.find('.' + ui.modal.nameFooter, content)[0] !== undefined) {
           ui.addClass(content, ui.modal.nameHasFooter);
         }
-      } // complete modal
-
+      }
 
       function showModal() {
-        // set modal size
         ui.removeClass(content, ui.modal.nameLG + ' ' + ui.modal.nameMD + ' ' + ui.modal.nameSM + ' ' + ui.modal.nameFullscreen + ' ' + ui.modal.nameInline);
         content.style.removeProperty('top');
         content.style.removeProperty('left');
@@ -7370,7 +6572,7 @@ ui.modal = {
             ui.addClass(content, size);
           };
 
-          customSize = props.size.split('x'); // check custom size
+          customSize = props.size.split('x');
 
           if (customSize.length === 2) {
             if (customSize[0].match(/^[0-9]+$/) !== null && customSize[1].match(/^[0-9]+$/) !== null) {
@@ -7384,15 +6586,13 @@ ui.modal = {
           } else {
             getSize();
           }
-        } // set closable
-
+        }
 
         if (nonClosable) {
           ui.removeClass(win, ui.modal.nameClosable);
         } else {
           ui.addClass(win, ui.modal.nameClosable);
-        } // add/remove close button
-
+        }
 
         closeBtn = ui.find('.' + ui.modal.nameModalClose, win)[0];
 
@@ -7405,8 +6605,7 @@ ui.modal = {
             closeBtn = '<button class="' + ui.modal.nameModalClose + ' ' + ui.modal.stylesCloseBtn + '">' + '<svg class="' + ui.modal.nameIcon + '"><use href="#' + ui.modal.closeIcon + '"/></svg>' + '</button>';
             content.insertAdjacentHTML('afterbegin', closeBtn);
           }
-        } // showing modal
-
+        }
 
         ui.addClass(document, ui.modal.nameModalOpened);
         bg = ui.find('.' + ui.modal.targetBg);
@@ -7419,7 +6618,6 @@ ui.modal = {
             content.style.left = Math.floor((bg[0].offsetWidth - content.offsetWidth) / 2) + 'px';
 
             if (size !== undefined && size !== ui.modal.nameFullscreen) {
-              // inherit fixed size && fullscreen
               content.style.width = content.offsetWidth + 'px';
               content.setAttribute(ui.modal.dataOpenSize, content.offsetWidth);
               content.style.height = content.offsetHeight + 'px';
@@ -7430,25 +6628,20 @@ ui.modal = {
               ui.removeClass(win, ui.modal.nameActive);
               modalResizer();
               setTimeout(function () {
-                // wait for modal dom is ready
-                ui.trigger(document, ui.globals.eventDomChange); // set custom event
-              }, ui.globals.ease); // callback
+                ui.trigger(document, ui.globals.eventDomChange);
+              }, ui.globals.ease);
 
               if (props.callback !== undefined) {
                 setTimeout(function () {
-                  // wait for modal dom is ready
                   props.callback.call(content);
                 }, ui.globals.ease * 2);
               }
             }, 10);
           }, ui.globals.ease);
         }, 10);
-      } // get source
-
+      }
 
       if (props.type === undefined) {
-        // inner sources
-        // check the modal created before
         props.source = ui.find(props.source);
 
         if (props.source[0] === undefined) {
@@ -7458,19 +6651,15 @@ ui.modal = {
         created = ui.closest(props.source, '.' + ui.modal.targetWin);
 
         if (created.length > 0) {
-          // modal created before
           ui.addClass(created, ui.modal.nameActive);
           win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameActive)[0];
           content = ui.find('.' + ui.modal.nameContent, win)[0];
-          showModal(); // reset forms
-
+          showModal();
           forms = ui.find('form', content);
           ui.each(forms, function () {
             this.reset();
           });
         } else {
-          // create modal
-          // move source
           temp = document.createDocumentFragment();
           ui.each(props.source, function (i) {
             temp.appendChild(props.source[i]);
@@ -7481,7 +6670,6 @@ ui.modal = {
           showModal();
         }
       } else {
-        // other source types
         typeArr = [ui.modal.typeAjax, ui.modal.typeIframe];
 
         if (typeArr.indexOf(props.type) > -1) {
@@ -7489,13 +6677,11 @@ ui.modal = {
         }
 
         if (type === ui.modal.typeIframe) {
-          // iframe sources
           temp = '<iframe ' + 'class="' + ui.modal.nameIframe + ' ' + ui.modal.nameRemovable + '" ' + 'src="' + props.source + '" ' + 'frameborder="0" ' + 'allowfullscreen' + '>' + '</iframe>';
           createModal();
           content.insertAdjacentHTML('beforeend', temp);
           showModal();
         } else if (type === ui.modal.typeAjax) {
-          // ajax sources
           ui.ajax({
             url: props.source,
             callback: function callback(status, response) {
@@ -7512,8 +6698,7 @@ ui.modal = {
       }
 
       return false;
-    }; // Event Listeners
-
+    };
 
     function userClose() {
       var p = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow + '.' + ui.modal.nameClosable)[0];
@@ -7528,40 +6713,24 @@ ui.modal = {
     ui.on(document, 'keydown', function (e) {
       if (e.keyCode === 27) {
         userClose();
-      } // esc
-
+      }
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.modal.Start);
   ui.on(window, 'resize', modalResizer);
 })();
-"use strict";
-
-/*
- UI Photoslide JS
- Requires UI Core JS
-*/
 ui.photoslide = {
-  // targets
   target: 'ui-photoslide',
-  // main classnames
   nameNav: 'ui-photoslide-nav',
   namePrev: 'ui-photoslide-prev',
   nameNext: 'ui-photoslide-next',
-  // helper classNames
   nameShow: 'ui-show',
   nameSelected: 'ui-selected',
   nameLoaded: 'ui-loaded',
-  // outer classnames
   nameBtn: 'ui-btn',
-  // tags
   tagNavDot: 'i',
-  // values
   rexFiles: '(\.png|\.gif|\.jeg|\.jpg|\.svg)$',
-  // .webp and .tiff not supported!
-  // data attributes
   dataSrc: 'data-ui-src'
 };
 
@@ -7569,7 +6738,6 @@ ui.photoslide = {
   'use strict';
 
   var count, dataSrcLists, loadedImages;
-  /*globals document, ui, Image */
 
   function photoSliderLoader() {
     var slider, j, images, dataSrc, nav, navDots, re;
@@ -7597,8 +6765,7 @@ ui.photoslide = {
         return;
       }
 
-      images[i].removeAttribute(ui.photoslide.dataSrc); // create nav
-
+      images[i].removeAttribute(ui.photoslide.dataSrc);
       nav = ui.find('.' + ui.photoslide.nameNav, slider)[0];
 
       if (dataSrcLists[i].length > 1) {
@@ -7623,12 +6790,10 @@ ui.photoslide = {
   }
 
   ui.photoslide.Start = function () {
-    // empty arrays when reloading
     count = [];
     dataSrcLists = [];
     loadedImages = [];
-    photoSliderLoader(); // Event Listeners
-
+    photoSliderLoader();
     ui.on(document, 'click', '.' + ui.photoslide.target + ' .' + ui.photoslide.nameBtn, function (e) {
       e.preventDefault();
       var slider, i, img, total, dots;
@@ -7685,35 +6850,22 @@ ui.photoslide = {
         ui.addClass(slider, ui.photoslide.nameLoaded);
       }
     });
-  }; // Loaders
+  };
 
-
-  ui.onload(ui.photoslide.Start); // ajax callback loader
-
+  ui.onload(ui.photoslide.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
     if (ui.ajax.classNames.indexOf(ui.photoslide.target) > -1) {
       photoSliderLoader();
     }
   });
 })();
-"use strict";
-
-/*
- UI Pie Chart JS
- Requires UI Core JS
-*/
 ui.pieChart = {
-  // targets
   target: 'ui-pie-chart',
-  // main classnames
   namePieLeft: 'ui-pie-l',
   namePieRight: 'ui-pie-r',
-  // helper classnames
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
-  // outer classnames
   nameNoEffects: 'ui-no-effects',
-  // tags
   tagDatasHolder: 'ul',
   tagData: 'li',
   tagPiesHolder: 'span',
@@ -7721,9 +6873,7 @@ ui.pieChart = {
   tagMsgHolder: 'div',
   tagMsg: 'span',
   tagTitle: 'i',
-  // values
   opacityShowTitle: '.25',
-  // data attributes
   dataPercent: 'data-ui-percent',
   dataFill: 'data-ui-fill',
   dataTitle: 'data-ui-title'
@@ -7731,7 +6881,6 @@ ui.pieChart = {
 
 (function () {
   'use strict';
-  /*globals window, document, ui, setTimeout */
 
   var loadCharts;
 
@@ -7800,13 +6949,11 @@ ui.pieChart = {
         title = that.getAttribute(ui.pieChart.dataTitle);
 
         if (title !== null && title !== '') {
-          // add titles for dataTitle attributes
           msg = ui.find(ui.pieChart.tagMsg, msgHolder)[i];
           msg = ui.find(ui.pieChart.tagTitle, msg)[0];
           msg.setAttribute('title', title);
 
           if (ui.tooltip !== undefined) {
-            // Optional!
             msg.setAttribute(ui.tooltip.dataTooltip, '');
           }
         }
@@ -7838,14 +6985,13 @@ ui.pieChart = {
           ui.addClass(that, ui.pieChart.nameOpen);
           setTimeout(function () {
             ui.addClass(that, ui.pieChart.nameOpenEase);
-          }, ui.globals.slow5x); // wait for animations complete
+          }, ui.globals.slow5x);
         }
       });
     };
 
     loadCharts();
-    chartsResizer(); // Event Listeners
-
+    chartsResizer();
     ui.on(document, 'mouseenter mouseleave touchend', '.' + ui.pieChart.target + ' > ' + ui.pieChart.tagMsgHolder + ' ' + ui.pieChart.tagMsg + ' ' + ui.pieChart.tagTitle, function (e) {
       var i, chart, elems, msg;
       chart = ui.closest(this, '.' + ui.pieChart.target)[0];
@@ -7865,36 +7011,24 @@ ui.pieChart = {
         elems[i].style.removeProperty('opacity');
       }
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.pieChart.Start);
   ui.on(window, 'resize', chartsResizer);
-  ui.on(document, ui.globals.eventDomChange, chartsResizer); // ajax callback loader
-
+  ui.on(document, ui.globals.eventDomChange, chartsResizer);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
     if (ui.ajax.classNames.indexOf(ui.pieChart.target) > -1) {
       loadCharts();
     }
   });
 })();
-"use strict";
-
-/*
- UI Required Forms JS
- Requires UI Core JS
-*/
 ui.requiredForms = {
-  // targets
   target: 'ui-required',
-  // main classnames
   targetAccept: 'ui-required-holder',
   nameMsg: 'ui-required-msg',
   nameTypePrefix: 'ui-',
-  // helper classnames
   nameSuccess: 'ui-success',
   nameShow: 'ui-show',
-  // outer classnames
   nameHolder: 'ui-form-holder',
   nameInput: 'ui-input',
   nameSelect: 'ui-select',
@@ -7902,14 +7036,12 @@ ui.requiredForms = {
   nameFile: 'ui-file',
   nameIndeterminate: 'ui-indeterminate',
   nameError: 'ui-form-error',
-  // values
   scrollingTopSpacing: 20,
   rexMail: '^[a-z0-9][a-z0-9-_\\.]+@([a-z]|[a-z0-9]?[a-z0-9-]+[a-z0-9])\\.[a-z0-9]{2,10}(?:\\.[a-z]{2,10})?$'
 };
 
 (function () {
   'use strict';
-  /*globals window, document, ui */
 
   ui.requiredForms.Start = function () {
     function required(that, type) {
@@ -7938,7 +7070,6 @@ ui.requiredForms = {
       };
 
       checkForms = function checkForms(t) {
-        // show error
         showErr = function showErr() {
           if (t.type === 'radio') {
             radios = ui.find('[type="radio"][name="' + that.name + '"]');
@@ -7952,12 +7083,11 @@ ui.requiredForms = {
           if (showMsg) {
             ui.addClass(next, ui.requiredForms.nameShow);
           }
-        }; // check value
-
+        };
 
         if (type !== ui.requiredForms.targetAccept) {
           val = t.value.toLowerCase();
-          val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+          val = val.replace(/^\s+|\s+$/g, '');
 
           if (val === '') {
             showErr();
@@ -7985,8 +7115,7 @@ ui.requiredForms = {
               showErr();
             }
           }
-        } // check min
-
+        }
 
         if (type !== ui.requiredForms.nameSelect) {
           min = t.getAttribute('minlength');
@@ -7996,8 +7125,7 @@ ui.requiredForms = {
               showErr();
             }
           }
-        } // check min and max numbers
-
+        }
 
         if (type !== ui.requiredForms.nameSelect) {
           min = t.getAttribute('minnumber');
@@ -8023,8 +7151,7 @@ ui.requiredForms = {
               showErr();
             }
           }
-        } // check emails
-
+        }
 
         if (type === ui.requiredForms.nameTypePrefix + 'email') {
           reMail = new RegExp(ui.requiredForms.rexMail);
@@ -8038,7 +7165,6 @@ ui.requiredForms = {
       checkHolder = ui.closest(that, '.' + ui.requiredForms.nameHolder)[0];
 
       if (checkHolder === undefined) {
-        // default forms
         parentType = type;
 
         if (type !== ui.requiredForms.nameSelect && type !== ui.requiredForms.nameTextarea && type !== ui.requiredForms.targetAccept && type !== ui.requiredForms.nameFile) {
@@ -8049,7 +7175,6 @@ ui.requiredForms = {
         hideErr();
         checkForms(that);
       } else {
-        // form holders
         p = checkHolder;
         holderForms = ui.find('.' + ui.requiredForms.nameInput + ' input.' + ui.requiredForms.target + ',' + '.' + ui.requiredForms.nameSelect + ' select.' + ui.requiredForms.target, p);
         hideErr();
@@ -8073,18 +7198,15 @@ ui.requiredForms = {
           checkForms(this);
         });
       }
-    } // Event Listeners
-
+    }
 
     ui.on(document, 'submit', 'form', function (e) {
       var i, elems, formElems, success, getIndex, getRect, scrollIndex, scrollPos;
       formElems = [];
-      elems = e.target.elements; // get submitted element list
+      elems = e.target.elements;
 
       for (i = 0; i < elems.length; i++) {
-        // filter required elements
         if (ui.hasClass(elems[i], ui.requiredForms.target) && !elems[i].disabled) {
-          // extract disabled elements
           formElems.push(elems[i]);
         }
       }
@@ -8118,7 +7240,6 @@ ui.requiredForms = {
         e.stopPropagation();
 
         if (ui.hasClass(document, ui.modal.nameModalOpened)) {
-          // stop scrolling when modal opened
           return;
         }
 
@@ -8145,22 +7266,13 @@ ui.requiredForms = {
     ui.on(document, 'change', '.' + ui.requiredForms.nameFile + ' input.' + ui.requiredForms.target, function () {
       required(this, ui.requiredForms.nameFile);
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.requiredForms.Start);
 })();
-"use strict";
-
-/*
- UI Sidebar JS
- Requires UI Core JS
-*/
 ui.sidebar = {
-  // targets
   target: 'ui-sidebar',
   targetBg: 'ui-sidebar-bg',
-  // main classnames
   nameOpened: 'ui-sidebar-opened',
   nameClose: 'ui-sidebar-close',
   nameContent: 'ui-sidebar-content',
@@ -8170,23 +7282,17 @@ ui.sidebar = {
   nameAddContentPrefix: 'ui-sidebar-add-',
   nameLeftSuffix: 'l',
   nameRightSuffix: 'r',
-  // helper classnames
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
-  // styling classnames
   stylesBg: 'ui-ease-slow ui-ease-layout',
-  // tags
   tagDataTarget: 'i',
-  // data attributes
   dataID: 'data-ui-sbid',
   dataImport: 'data-ui-import',
-  // custom events
   eventMenuOpen: 'ui:sidebarOpen'
 };
 
 (function () {
   'use strict';
-  /*globals window, document, ui, setTimeout */
 
   var getScrollPos;
 
@@ -8215,7 +7321,6 @@ ui.sidebar = {
   };
 
   ui.sidebar.Start = function () {
-    // Event Listeners
     ui.on(document, 'click', '[class*="' + ui.sidebar.nameShowMenuPrefix + '"]', function () {
       var html, importers, moveFnc, id, i, j, index, indexArr, position, bg, panel, filtered, content;
       html = [];
@@ -8283,7 +7388,7 @@ ui.sidebar = {
         ui.addClass(panel, ui.sidebar.nameOpenEase);
         ui.addClass(bg, ui.sidebar.nameOpenEase);
         setTimeout(function () {
-          ui.trigger(document, ui.sidebar.eventMenuOpen + ' ' + ui.globals.eventDomChange); // set custom event
+          ui.trigger(document, ui.sidebar.eventMenuOpen + ' ' + ui.globals.eventDomChange);
         }, ui.globals.slow);
       }, 10);
       ui.on('.' + ui.sidebar.nameClose, 'click', function () {
@@ -8294,15 +7399,13 @@ ui.sidebar = {
       var panel = ui.find('.' + ui.sidebar.target + '.' + ui.sidebar.nameOpen);
       ui.sidebar.close(panel);
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.sidebar.Start);
   ui.on(window, 'resize', function () {
     if (window.innerWidth === getScrollPos) {
       return;
-    } // close only horizontal resizing
-
+    }
 
     var panel = ui.find('.' + ui.sidebar.target + '.' + ui.sidebar.nameOpen);
 
@@ -8313,47 +7416,31 @@ ui.sidebar = {
     getScrollPos = window.innerWidth;
   });
 })();
-"use strict";
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-/*
- UI Tab JS
- Requires UI Core JS
-*/
 ui.tab = {
-  // targets
   targetParent: 'ui-tab-holder',
   targetTab: 'ui-tab',
-  // main classnames
   nameContent: 'ui-tab-content',
   nameToggle: 'ui-tab-toggle',
-  // helper classnames
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
   nameActive: 'ui-active',
-  // data attributes
   dataID: 'data-ui-id',
   dataClasses: 'data-ui-classes',
-  // custom events
   eventCloseToggleTabs: 'ui:closeToggleTabs',
   eventToggleTabsClosed: 'ui:toggleTabsClosed'
 };
 
 (function () {
   'use strict';
-  /*globals document, ui, setTimeout */
 
   ui.tab.Start = function () {
-    // Event Listeners
     ui.on(document, 'click', '.' + ui.tab.targetParent + ' .' + ui.tab.targetTab, function (e) {
       e.preventDefault();
       var parent, tabs, index, innerTabs, outerTabs, id, content, lastOpened, innerContent, outerContent, currentContent, currentHeight, classes, toggle;
       outerTabs = [];
       outerContent = [];
       parent = ui.closest(this, '.' + ui.tab.targetParent)[0];
-      tabs = ui.find('.' + ui.tab.targetTab, parent); // check inner tabs
-
+      tabs = ui.find('.' + ui.tab.targetTab, parent);
       innerTabs = ui.find('.' + ui.tab.targetParent + ' .' + ui.tab.targetParent + ' .' + ui.tab.targetTab, parent);
       innerTabs = Array.prototype.slice.call(innerTabs);
       ui.each(tabs, function () {
@@ -8367,8 +7454,7 @@ ui.tab = {
       }
 
       index = Array.prototype.slice.call(tabs).indexOf(this);
-      content = ui.find('.' + ui.tab.nameContent, parent); // check inner contents
-
+      content = ui.find('.' + ui.tab.nameContent, parent);
       innerContent = ui.find('.' + ui.tab.targetParent + ' .' + ui.tab.targetParent + ' .' + ui.tab.nameContent, parent);
       innerContent = Array.prototype.slice.call(innerContent);
       ui.each(content, function () {
@@ -8379,8 +7465,7 @@ ui.tab = {
 
       if (outerContent.length !== 0) {
         content = outerContent;
-      } // check ids
-
+      }
 
       id = this.getAttribute(ui.tab.dataID);
 
@@ -8430,13 +7515,12 @@ ui.tab = {
           ui.each(content, function () {
             if (this !== currentContent) {
               if (ui.hasClass(this, ui.tab.nameOpen)) {
-                lastOpened = this; // find last opened content
+                lastOpened = this;
               }
             }
           });
 
           if (lastOpened) {
-            // hide last opened content
             lastOpened.style.height = lastOpened.offsetHeight + 'px';
             lastOpened.style.overflow = 'hidden';
             setTimeout(function () {
@@ -8451,7 +7535,6 @@ ui.tab = {
           }
 
           setTimeout(function () {
-            // open current clicked content
             ui.addClass(currentContent, ui.tab.nameOpen);
             currentHeight = currentContent.offsetHeight;
             currentContent.style.height = '0';
@@ -8459,30 +7542,24 @@ ui.tab = {
             setTimeout(function () {
               ui.addClass(currentContent, ui.tab.nameOpenEase);
               currentContent.style.height = currentHeight + 'px';
-              ui.trigger(document, ui.globals.eventDomChange); // set custom event
-
+              ui.trigger(document, ui.globals.eventDomChange);
               setTimeout(function () {
                 currentContent.style.removeProperty('height');
                 currentContent.style.removeProperty('overflow');
               }, ui.globals.ease * 2);
             }, ui.globals.fast / 2);
-          }, 0); // close opened toggle tabs when outside the tabs
-
+          }, 0);
           ui.on(document, 'mouseup.' + ui.tab.eventCloseToggleTabs, function (ev) {
-            if (_typeof(ev.target.className) === 'object') {
+            if (ev.target.className instanceof Object) {
               return;
-            } // fix: when clicking on SVG icons inside the toggle tab
-
+            }
 
             if (ev.button !== 2) {
-              // inherited right clicks
               if (ev.target.className.split(' ').indexOf(ui.tab.nameToggle) !== -1 && ui.closest(ev.target, '.' + ui.tab.targetParent)[0] === parent) {
-                // controlling same toggled tab buttons
                 return;
               }
 
               if (ev.target.className.split(' ').indexOf(ui.tab.nameContent) === -1 && ui.closest(ev.target, '.' + ui.tab.nameContent)[0] === undefined) {
-                // controlling inside of the opened tab content
                 currentContent.style.height = currentContent.offsetHeight + 'px';
                 currentContent.style.overflow = 'hidden';
                 setTimeout(function () {
@@ -8499,8 +7576,7 @@ ui.tab = {
                     ui.removeClass(content, ui.tab.nameOpen);
                   }, ui.globals.ease * 2);
                 }, 0);
-                ui.trigger(document, ui.tab.eventToggleTabsClosed); // set custom event
-
+                ui.trigger(document, ui.tab.eventToggleTabsClosed);
                 ui.off(document, 'mouseup.' + ui.tab.eventCloseToggleTabs);
               }
             }
@@ -8512,38 +7588,26 @@ ui.tab = {
             ui.addClass(currentContent, ui.tab.nameOpen);
             setTimeout(function () {
               ui.addClass(currentContent, ui.tab.nameOpenEase);
-              ui.trigger(document, ui.globals.eventDomChange); // set custom event
+              ui.trigger(document, ui.globals.eventDomChange);
             }, ui.globals.fast / 2);
           }, 0);
         }
       }
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.tab.Start);
 })();
-"use strict";
-
-/*
- UI Textarea Counter JS
- Requires UI Core JS
-*/
 ui.textareaCounter = {
-  // targets
   target: 'ui-textarea',
-  // main classnames
   nameToggle: 'ui-textarea-toggle',
-  // helper classnames
   nameChange: 'ui-changed',
-  // data attributes
   dataCounter: 'data-ui-counter',
   dataChange: 'data-ui-changed'
 };
 
 (function () {
   'use strict';
-  /*globals document, ui, setTimeout */
 
   var loadCounters;
 
@@ -8572,8 +7636,7 @@ ui.textareaCounter = {
       });
     };
 
-    loadCounters(); // Event Listeners
-
+    loadCounters();
     ui.on(document, 'keydown keyup keypress change', '.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + '] textarea', function (e) {
       if (e.type === 'keydown' && e.ctrlKey) {
         var that = this;
@@ -8598,36 +7661,23 @@ ui.textareaCounter = {
         }
       }, 0);
     });
-  }; // Loaders
+  };
 
-
-  ui.onload(ui.textareaCounter.Start); // ajax callback loader
-
+  ui.onload(ui.textareaCounter.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
     if (ui.ajax.data.indexOf(ui.textareaCounter.dataCounter) > 0) {
       loadCounters();
     }
   });
 })();
-"use strict";
-
-/*
- UI Tooltip JS
- Requires UI Core JS
-*/
 ui.tooltip = {
-  // targets
   target: 'ui-tooltip',
-  // main classnames
   nameActive: 'ui-tooltip-active',
   nameContent: 'ui-tooltip-content',
-  // helper classnames
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
-  // styling classnames
   stylesTarget: 'ui-round ui-ease-tooltip',
   stylesArrow: '',
-  // values
   scrollbarSize: 15,
   t: 't',
   b: 'b',
@@ -8637,19 +7687,16 @@ ui.tooltip = {
   tl: 'tl',
   br: 'br',
   bl: 'bl',
-  // data attributes
   dataTooltip: 'data-ui-tooltip',
   dataTitle: 'data-ui-title',
   dataPos: 'data-ui-pos',
   dataDesktop: 'data-ui-only="desktop"',
   dataMobile: 'data-ui-only="mobile"',
-  // custom events
   eventClose: 'ui:tooltipClose'
 };
 
 (function () {
   'use strict';
-  /*globals window, document, ui, setTimeout, clearTimeout */
 
   var removeTimer, removeTimer2x, pageTouchmoveTimer, touchControl, isScrolling;
 
@@ -8668,10 +7715,9 @@ ui.tooltip = {
   function createFnc(source, title) {
     var win, winRect, html, sourceRect, arr, pos, posRecall, calc;
     win = ui.find('.' + ui.tooltip.target);
-    sourceRect = source.getBoundingClientRect(); // clear remove timers
-
+    sourceRect = source.getBoundingClientRect();
     clearTimeout(removeTimer);
-    clearTimeout(removeTimer2x); // create
+    clearTimeout(removeTimer2x);
 
     if (win.length > 0) {
       ui.find('.' + ui.tooltip.nameContent, win[0])[0].innerHTML = title;
@@ -8679,21 +7725,17 @@ ui.tooltip = {
       html = '<div class="' + ui.tooltip.target + ' ' + ui.tooltip.stylesTarget + '">' + '<div class="' + ui.tooltip.nameContent + '">' + title + '</div>' + '<span>' + '<i class="' + ui.tooltip.stylesArrow + '"></i>' + '</span>' + '</div>';
       ui.find('body')[0].insertAdjacentHTML('afterbegin', html);
       win = ui.find('.' + ui.tooltip.target);
-    } // show
-
+    }
 
     ui.addClass(win, ui.tooltip.nameOpen);
     setTimeout(function () {
-      // check screen limits
-      winRect = win[0].getBoundingClientRect(); // detect defined position
-
+      winRect = win[0].getBoundingClientRect();
       arr = [ui.tooltip.t, ui.tooltip.b, ui.tooltip.r, ui.tooltip.l, ui.tooltip.tr, ui.tooltip.tl, ui.tooltip.br, ui.tooltip.bl];
       pos = source.getAttribute(ui.tooltip.dataTooltip);
 
       if (arr.indexOf(pos) < 0) {
         pos = ui.tooltip.t;
-      } // calculate positioning
-
+      }
 
       calc = [];
       calc.ver = 0;
@@ -8702,52 +7744,40 @@ ui.tooltip = {
 
       calc.Fnc = function () {
         if (pos === ui.tooltip.t || pos === ui.tooltip.b) {
-          // top || bottom
           calc.hor = (sourceRect.width - winRect.width) / 2;
         }
 
         if (pos === ui.tooltip.t || pos === ui.tooltip.tr || pos === ui.tooltip.tl) {
-          // top
           calc.ver = -sourceRect.height + (sourceRect.height - winRect.height) - ui.tooltip.scrollbarSize;
         } else if (pos === ui.tooltip.b || pos === ui.tooltip.br || pos === ui.tooltip.bl) {
-          // bottom
           calc.ver = sourceRect.height + ui.tooltip.scrollbarSize;
         } else if (pos === ui.tooltip.r) {
-          // right
           calc.ver = sourceRect.height / 2 - winRect.height / 2;
           calc.hor = sourceRect.width + ui.tooltip.scrollbarSize;
         } else if (pos === ui.tooltip.l) {
-          // left
           calc.ver = sourceRect.height / 2 - winRect.height / 2;
           calc.hor = -sourceRect.width + (sourceRect.width - winRect.width) - ui.tooltip.scrollbarSize;
         }
 
         if (pos === ui.tooltip.tr || pos === ui.tooltip.br) {
-          // top right || bottom right
           calc.hor = sourceRect.width / 2 - ui.tooltip.scrollbarSize;
         } else if (pos === ui.tooltip.tl || pos === ui.tooltip.bl) {
-          // top left || bottom left
           calc.hor = -(sourceRect.width / 2) + (sourceRect.width - winRect.width) + ui.tooltip.scrollbarSize;
         }
       };
 
-      calc.Fnc(); // check screen limits
-
+      calc.Fnc();
       posRecall = '';
 
       if (sourceRect.top - window.pageYOffset + calc.ver < -window.pageYOffset) {
-        // top
         posRecall += ui.tooltip.b;
       } else if (sourceRect.top + window.pageYOffset + winRect.height + calc.ver > window.innerHeight + window.pageYOffset) {
-        // bottom
         posRecall += ui.tooltip.t;
       }
 
       if (sourceRect.left + window.pageXOffset + calc.hor + winRect.width > window.innerWidth + window.pageXOffset) {
-        // right
         posRecall += ui.tooltip.l;
       } else if (sourceRect.left - window.pageXOffset + calc.hor < 0) {
-        // left
         posRecall += ui.tooltip.r;
       }
 
@@ -8791,7 +7821,6 @@ ui.tooltip = {
   }
 
   ui.tooltip.Start = function () {
-    // Event Listeners
     ui.on(document, 'mouseenter mouseleave', '[' + ui.tooltip.dataTooltip + ']:not([' + ui.tooltip.dataMobile + '])', function (e) {
       if (ui.userAgents.desktop) {
         var type;
@@ -8829,7 +7858,6 @@ ui.tooltip = {
           }
         } else {
           if (!touchControl && e.cancelable && e.defaultPrevented) {
-            // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
             e.preventDefault();
           }
         }
@@ -8844,35 +7872,22 @@ ui.tooltip = {
         }, ui.globals.fast / 2);
       }
     });
-  }; // Loaders
-
+  };
 
   ui.onload(ui.tooltip.Start);
 })();
-"use strict";
-
-/*
- UI Top Button JS
- Requires UI Core JS
-*/
 ui.topButton = {
-  // targets
   target: 'ui-top-button',
-  // helper classnames
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
-  // styling classnames
   stylesTarget: 'ui-round ui-ease-layout',
   stylesIcon: 'ui-icon ui-ease-layout',
-  // icons
   icon: 'arrow-to-top',
-  // custom texts
   titleText: 'Back to top!'
 };
 
 (function () {
   'use strict';
-  /*globals window, document, ui, setTimeout */
 
   function togglerFnc() {
     var topBtn = ui.find('.' + ui.topButton.target);
@@ -8902,29 +7917,19 @@ ui.topButton = {
     if (ui.userAgents.desktop) {
       var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + '" title="' + ui.topButton.titleText + '">' + '<svg class="' + ui.topButton.stylesIcon + '"><use href="#' + ui.topButton.icon + '"/></svg>' + '</button>';
       ui.find('body')[0].insertAdjacentHTML('beforeend', html);
-      togglerFnc(); // Event Listeners
-
+      togglerFnc();
       ui.on('.' + ui.topButton.target, 'click', function () {
         window.scrollTo(0, 0);
       });
     }
-  }; // Loaders
-
+  };
 
   ui.onload(ui.topButton.Start);
   ui.on(window, 'resize scroll', togglerFnc);
   ui.on(document, ui.globals.eventDomChange, togglerFnc);
 })();
-"use strict";
-
-/*
- UI Weather JS
- Requires UI Core JS
-*/
 ui.weather = {
-  // targets
   target: 'ui-weather',
-  // main classnames
   nameGraphs: 'ui-graphs',
   nameNight: 'ui-night',
   nameClear: 'ui-clear',
@@ -8932,29 +7937,23 @@ ui.weather = {
   nameWdate: 'ui-w-date',
   nameWclock: 'ui-w-clock',
   nameAnimatePrefix: 'ui-',
-  // helper classnames
   nameLoaded: 'ui-loaded',
-  // animations
   animateClear: 'clear',
   animateStars: 'stars',
   animateShootingStar: 'shooting-star',
   animateCloud: 'cloud',
   animateCloudHeavy: 'cloud-heavy',
   animateFog: 'fog',
-  // values
   days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
   months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
   graphPath: 'img/weather/',
-  // animation graphics folder
   fileType: 'png',
-  // data attributes
   dataGraphs: 'data-ui-graphs',
   dataDay: 'data-ui-day'
 };
 
 (function () {
   'use strict';
-  /*globals document, ui, setInterval */
 
   var dateLoaded,
       clockLoaded,
@@ -8964,7 +7963,7 @@ ui.weather = {
 
   ui.weather.Start = function () {
     var date, dateText, dateHtml, clockText, clockHtml, minute, hour, day, month, that, graphs, animations, sun, sunPos, sunrise, sunset;
-    animations = []; // load animation graphics
+    animations = [];
 
     loadGraphs = function loadGraphs() {
       var i, html;
@@ -8985,32 +7984,26 @@ ui.weather = {
 
               for (i = 0; i < data.length; i++) {
                 if (data[i] === ui.weather.animateClear) {
-                  // convert sun to stars
                   animations.push(ui.weather.animateStars);
                 } else if (data[i] === ui.weather.animateStars) {
-                  // convert stars to sun
                   animations.push(ui.weather.animateClear);
                 }
 
                 if (data.length === 1 && (data[i] === ui.weather.animateCloud || data[i] === ui.weather.animateFog)) {
-                  // add sun and stars for cloudy and foggy weather
                   animations.push(ui.weather.animateClear);
                   animations.push(ui.weather.animateStars);
                 }
 
                 if (data[i] === ui.weather.animateCloudHeavy) {
-                  // add stars for mostly cloudy weather
                   animations.push(ui.weather.animateStars);
                 }
 
                 if (data.length === 1 && (data[i] === ui.weather.animateClear || data[i] === ui.weather.animateStars)) {
-                  // add shooting star if weather is clear
                   animations.push(ui.weather.animateShootingStar);
                 }
 
-                animations.push(data[i]); // add other animations
-              } // create animations
-
+                animations.push(data[i]);
+              }
 
               for (i = 0; i < animations.length; i++) {
                 html += '<div ' + 'class="' + ui.weather.nameAnimatePrefix + animations[i] + '" ' + 'style="background-image: url(' + ui.weather.graphPath + animations[i] + '.' + ui.weather.fileType + ');">' + '</div>';
@@ -9024,10 +8017,9 @@ ui.weather = {
       });
     };
 
-    loadGraphs(); // check date, clock and night
+    loadGraphs();
 
     function dateFnc() {
-      // date
       date = new Date();
       day = date.getDay();
 
@@ -9055,14 +8047,12 @@ ui.weather = {
         });
       }
 
-      dateLoaded = dateText; // clock
-
+      dateLoaded = dateText;
       hour = date.getHours().toString();
 
       if (hour.length === 1) {
         hour = '0' + hour;
-      } // convert two digits
-
+      }
 
       minute = date.getMinutes().toString();
 
@@ -9076,8 +8066,7 @@ ui.weather = {
       if (clockLoaded !== clockText) {
         ui.each('.' + ui.weather.nameWclock, function () {
           this.innerHTML = clockHtml;
-        }); // check sunrise and sunset
-
+        });
         graphs = ui.find('.' + ui.weather.target + ' .' + ui.weather.nameGraphs + '[' + ui.weather.dataDay + ']');
         ui.each(graphs, function () {
           sunPos = this.getAttribute(ui.weather.dataDay);
@@ -9100,13 +8089,11 @@ ui.weather = {
 
           if (sunrise[0].length === 1) {
             sunrise[0] = '0' + sunrise[0];
-          } // sunrise hour
-
+          }
 
           if (sunrise[1].length === 1) {
             sunrise[1] = '0' + sunrise[1];
-          } // sunrise minute
-
+          }
 
           sunset = sunPos[1].split(':');
 
@@ -9116,28 +8103,23 @@ ui.weather = {
 
           if (sunset[0].length === 1) {
             sunset[0] = '0' + sunset[0];
-          } // sunset hour
-
+          }
 
           if (sunset[1].length === 1) {
             sunset[1] = '0' + sunset[1];
-          } // sunset minute
-          // convert day or night
-
+          }
 
           sun = ui.find('.' + ui.weather.nameClear, this)[0];
           that = ui.closest(this, '.' + ui.weather.target)[0];
 
           if (hour === sunrise[0] && minute < sunrise[1] || hour < sunrise[0] || hour === sunset[0] && minute > sunset[1] || hour > sunset[0]) {
-            // night
-            ui.addClass(that, ui.weather.nameNight); // sun positioning
+            ui.addClass(that, ui.weather.nameNight);
 
             if (sun !== undefined) {
               sun.style.removeProperty('left');
             }
           } else {
-            // day
-            ui.removeClass(that, ui.weather.nameNight); // sun positioning
+            ui.removeClass(that, ui.weather.nameNight);
 
             if (sun !== undefined) {
               sun.style.left = parseInt(hour - sunrise[0]) * 100 / (sunset[0] - sunrise[0]) + '%';
@@ -9151,11 +8133,9 @@ ui.weather = {
 
     dateFnc();
     setInterval(dateFnc, 1000);
-  }; // Loaders
+  };
 
-
-  ui.onload(ui.weather.Start); // ajax callback loader
-
+  ui.onload(ui.weather.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
     if (ui.ajax.classNames.indexOf(ui.weather.target) > -1) {
       loadGraphs();

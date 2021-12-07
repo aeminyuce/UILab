@@ -222,7 +222,7 @@ ui.tab = {
 
                             function (ev) {
 
-                                if (typeof ev.target.className === 'object') { return; } // fix: when clicking on SVG icons inside the toggle tab
+                                if (ev.target.className instanceof Object) { return; } // fix: when clicking on SVG icons inside the toggle tab
 
                                 if (ev.button !== 2) { // inherited right clicks
 

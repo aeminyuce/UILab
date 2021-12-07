@@ -137,7 +137,7 @@ var ui = {
                 f = that;
 
                 // filter ui.on(object, event, function) event listeners
-                if (typeof t === 'object' && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') {
+                if (t instanceof Object && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') {
 
                     // detect window event listeners
                     isWindowEvent = Object.prototype.toString.call(t) === '[object Window]';
@@ -462,7 +462,7 @@ var ui = {
 
         var l, o, i, j, p;
 
-        if (typeof outer !== 'object') { o = ui.find(outer); } else { o = [outer]; }
+        if (outer instanceof Object) {  o = [outer]; } else {o = ui.find(outer); }
         l = ui.find(t);
 
         for (i = 0; i < l.length; i++) {
@@ -484,7 +484,7 @@ var ui = {
 
         var i, objName, call, outerEl, outerElIndex, foundEl = [];
 
-        if (typeof item === 'object') {
+        if (item instanceof Object) {
 
             if (NodeList.prototype.isPrototypeOf(item)) { return item; } // if item property has ui.find(item) nodelist
 
@@ -509,7 +509,7 @@ var ui = {
 
         if (outer !== undefined) { // find items in outer elements
 
-            if (typeof outer !== 'object') {
+            if (!outer instanceof Object) {
                 outerEl = document.querySelectorAll(outer); // convert to array
 
             } else { outerEl = outer; }

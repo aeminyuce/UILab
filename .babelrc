@@ -1,4 +1,6 @@
 {
+    "comments": false, // remove comments
+    "sourceType": "unambiguous", // use scripts with modules together
     "presets": [
         [
             "@babel/preset-env", {
