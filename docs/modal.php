@@ -51,6 +51,12 @@
                 </div>
 
             </div>
+            <div class="ui-col-12">
+
+                <h3 class="ui-h3">Close Modal</h3>
+                <pre class="ui-pre ui-ease-pre ui-round">ui.modal.close(callback);</pre>
+
+            </div>
 
             <div class="ui-col-12 ui-no-p-b">
                 <b class="ui-m-5-b ui-block">Examples:</b>
@@ -170,32 +176,6 @@
                 <i class="ui-color-black-50 ui-m-5-b ui-block">Callback call after open modal.</i>
                 <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.open({<br>    source: '.modal-example',<br>    callback: function () {<br>        alert('Modal opened!');<br>    }<br>});</pre>
                 <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.modal.open({source: '.modal-example', callback: function () { alert('Modal opened!'); }});">Run Code</button>
-
-            </div>
-
-            <div class="ui-col-12">
-
-                <h3 class="ui-h3">Close Modal</h3>
-                <pre class="ui-pre ui-ease-pre ui-round">ui.modal.close(callback);</pre>
-
-                <div class="ui-p-15 ui-round ui-border">
-                    <dl class="ui-row ui-xs-fluid">
-                        <dt class="ui-col-4">callback</dt>
-                        <dd class="ui-col-8">
-                            Optional. Set a callback function after modal closes.<br>
-                            Example usage: <code class="ui-code">function () {}</code>
-                        </dd>
-                    </dl>
-                </div>
-
-            </div>
-
-            <div class="ui-col-12 ui-no-p-b">
-                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.close();</pre>
-
-                <span class="ui-sp-15"></span>
-
-                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.modal.close({<br>    function () {<br>        alert('Modal closed!');<br>    }<br>});</pre>
 
             </div>
 

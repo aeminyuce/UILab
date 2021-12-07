@@ -7239,7 +7239,7 @@ ui.modal = {
   }
 
   ui.modal.Start = function () {
-    ui.modal.close = function (callback) {
+    ui.modal.close = function () {
       var win, bg, removeModal;
       win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow);
 
@@ -7271,18 +7271,7 @@ ui.modal = {
         }
 
         setTimeout(function () {
-          ui.removeClass(bg, ui.modal.nameOpen); // callback
-
-          if (callback !== undefined) {
-            if (typeof callback !== 'function') {
-              return;
-            }
-
-            setTimeout(function () {
-              // wait for closing modal
-              callback.call();
-            }, ui.globals.ease);
-          }
+          ui.removeClass(bg, ui.modal.nameOpen);
         }, ui.globals.ease);
         ui.trigger(document, ui.globals.eventDomChange); // set custom event
       }, ui.globals.ease);
