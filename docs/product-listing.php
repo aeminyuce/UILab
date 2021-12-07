@@ -1,5 +1,5 @@
 <!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/product-listing.css?v=<?php echo filemtime('../css/custom/product-listing.css'); ?>"/>
+<link href="../css/custom/product-listing.css?v=<?php echo filemtime('../css/custom/product-listing.css'); ?>" rel="stylesheet"/>
 
 <!-- custom JS -->
 <script src="../js/custom/product-listing.js?v=<?php echo filemtime('../js/custom/product-listing.js'); ?>"></script>

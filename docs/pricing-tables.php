@@ -1,5 +1,5 @@
 <!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/pricing-table.css?v=<?php echo filemtime('../css/custom/pricing-table.css'); ?>"/>
+<link href="../css/custom/pricing-table.css?v=<?php echo filemtime('../css/custom/pricing-table.css'); ?>" rel="stylesheet"/>
 
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">

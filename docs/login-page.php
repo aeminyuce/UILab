@@ -1,5 +1,5 @@
 <!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/login-page.css?v=<?php echo filemtime('../css/custom/login-page.css'); ?>"/>
+<link href="../css/custom/login-page.css?v=<?php echo filemtime('../css/custom/login-page.css'); ?>" rel="stylesheet"/>
 
 <main class="ui-container ui-full-h ui-no-gutter ui-set-fixed ui-set-all ui-scroll-v">
 

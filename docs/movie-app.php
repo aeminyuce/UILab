@@ -1,5 +1,5 @@
 <!-- custom CSS -->
-<link rel="stylesheet" href="../css/custom/movie-app.css?v=<?php echo filemtime('../css/custom/movie-app.css'); ?>"/>
+<link href="../css/custom/movie-app.css?v=<?php echo filemtime('../css/custom/movie-app.css'); ?>" rel="stylesheet"/>
 
 <main class="ui-container ui-no-gutter">
     <div class="ui-col-static ui-no-fluid">
