@@ -1,3 +1,11 @@
+@import '../node_modules/@fontsource/poppins/200.css';
+@import '../node_modules/@fontsource/poppins/300.css';
+@import '../node_modules/@fontsource/poppins/400.css';
+@import '../node_modules/@fontsource/poppins/400-italic.css';
+@import '../node_modules/@fontsource/poppins/500.css';
+@import '../node_modules/@fontsource/poppins/700.css';
+@import '../node_modules/@fontsource/archivo/400.css';
+@import '../node_modules/@fontsource/archivo/700.css';
 /* ui core */
 [data-ui-mode="light"] {
   --ui-body-bg: hsl(0, 0%, 98%);
