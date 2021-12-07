@@ -8142,3 +8142,622 @@ ui.weather = {
     }
   });
 })();
+ui.classnames = {
+  targetList: 'classnames-list',
+  targetAlerts: 'classnames-alerts',
+  nameTotal: 'classnames-total',
+  stylesNoErrors: 'ui-opacity-half',
+  stylesWarningSep: 'ui-font-18 ui-font-capitalize ui-m-20-t',
+  stylesError: 'ui-color-red',
+  stylesWarning: 'ui-color-yellow',
+  stylesCatTite: 'ui-h4 ui-font-capitalize ui-m-10-b',
+  stylesCatCard: 'ui-card ui-font-16 ui-round ui-p-10 ui-shadow-lg',
+  stylesCatList: 'ui-list-unstyled ui-list-sp-5',
+  stylesCatRow: 'ui-row ui-xs-fluid',
+  stylesCatCol: 'ui-col-lg-3 ui-col-4 ui-col-sm-6',
+  listColLength: 6,
+  filePath: 'xhr/ajax-pages.php',
+  prefix: 'ui',
+  jsTarget: 'target',
+  jsName: 'name',
+  jsStyles: 'styles',
+  jsIgnore: 'Prefix|Suffix',
+  msgErrors: 'Errors',
+  msgNoErrors: '* No errors detected *',
+  msgEmpty: 'Empty Classname!',
+  msgDuplicate: 'Prefix Duplicated'
+};
+
+(function () {
+  'use strict';
+
+  ui.classnames.Start = function () {
+    var arr, total, created, list, alerts, lastAddedWarning;
+    arr = [];
+    arr.list = [];
+    arr.error = [];
+    arr.warning = [];
+    arr.filtered = [];
+    arr.groups = [];
+    lastAddedWarning = '';
+    list = ui.find('.' + ui.classnames.targetList)[0];
+    alerts = ui.find('.' + ui.classnames.targetAlerts)[0];
+
+    if (list === undefined || alerts === undefined) {
+      return;
+    }
+
+    total = ui.find('.' + ui.classnames.nameTotal)[0];
+    ui.ajax({
+      url: ui.classnames.filePath,
+      callback: function callback() {}
+    });
+    ui.on(document, ui.globals.eventAjaxCallback, function () {
+      var i, j, re, reStart, reDuplicate, loaded, str, strStart, strLength, html, title, items, jsClass, jsModule, jsKey, jsStyleList;
+      loaded = [];
+      re = ui.classnames.jsTarget + '+\\w*|' + ui.classnames.jsTarget + '|' + ui.classnames.jsName + '+\\w*' + '|' + ui.classnames.jsStyles + '+\\w*';
+      re = new RegExp(re, 'g');
+
+      for (jsModule in ui) {
+        for (jsKey in ui[jsModule]) {
+          if (jsKey.match(re) !== null && jsKey.match(ui.classnames.jsIgnore) === null) {
+            jsClass = ui[jsModule][jsKey];
+
+            if (typeof jsClass === 'string') {
+              jsStyleList = jsClass.toString().split(' ');
+
+              if (jsStyleList.length > 1) {
+                for (j = 0; j < jsStyleList.length; j++) {
+                  loaded.push(jsStyleList[j]);
+                }
+              } else {
+                if (jsClass !== '') {
+                  loaded.push(jsClass);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      ui.each(ui.ajax.classNames, function () {
+        loaded.push(this);
+      });
+      loaded = loaded.filter(function (value, index, self) {
+        return self.indexOf(value) === index;
+      });
+      ui.each(loaded, function () {
+        reStart = ui.classnames.prefix + '-+\\w+';
+        reStart = new RegExp(reStart, 'g');
+        reDuplicate = '(' + ui.classnames.prefix + '-)|(-' + ui.classnames.prefix + ')';
+        reDuplicate = new RegExp(reDuplicate, 'g');
+        str = this.toString();
+        strStart = str.match(reStart);
+
+        if (strStart === null) {
+          if (str === '') {
+            arr.error.push(ui.classnames.msgEmpty);
+          } else {
+            arr.warning.push(str);
+          }
+        } else {
+          arr.list.push(str);
+        }
+
+        strLength = str.match(reDuplicate);
+
+        if (strLength !== null) {
+          strLength = Number(str.match(reDuplicate).length);
+
+          if (strLength > 1) {
+            arr.error.push(ui.classnames.msgDuplicate + ': ' + str);
+          }
+        }
+      });
+
+      if (arr.error.length === 0) {
+        alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesNoErrors + '">' + ui.classnames.msgNoErrors + '</li>');
+      } else {
+        alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + ui.classnames.msgErrors + '</li>');
+      }
+
+      ui.each(arr.error, function () {
+        alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesError + '">' + this + '</li>');
+      });
+      arr.warning = arr.warning.sort();
+      ui.each(arr.warning, function () {
+        if (lastAddedWarning === '' || lastAddedWarning.split('-')[0] !== this.split('-')[0]) {
+          alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + this.split('-')[0] + '</li>');
+        }
+
+        alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarning + '">' + this + '</li>');
+        lastAddedWarning = this;
+      });
+
+      function filterClassnames(that) {
+        title = that.split('-')[1];
+
+        if (title === 'no' || title === 'xl' || title === 'lg' || title === 'md' || title === 'sm' || title === 'xs') {
+          title = that.split('-')[2];
+        }
+
+        if (title === 'no') {
+          title = that.split('-')[3];
+        }
+
+        if (['desktop', 'windows', 'edg', 'edge', 'ie', 'chrome', 'firefox', 'opera', 'mac', 'safari', 'mobile', 'ios', 'android'].indexOf(title) >= 0) {
+          title = 'user agents';
+        } else if (['container', 'fluid', 'fixed', 'row', 'gutter', 'col', 'push', 'pull', 'offset', 'order'].indexOf(title) >= 0) {
+          title = 'grids';
+        } else if (['open', 'active', 'selected', 'pause', 'show', 'showed', 'faded', 'odd', 'even', 'asc', 'desc', 'filtered', 'checked', 'loaded', 'success', 'resized', 'changed'].indexOf(title) >= 0) {
+          title = 'helpers';
+        } else if (['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].indexOf(title) >= 0) {
+          title = 'headings';
+        } else if (['form', 'input', 'select', 'dual', 'textarea', 'indeterminate', 'range', 'check', 'radio', 'switch', 'currency', 'spinner', 'file', 'number', 'required', 'label', 'pass'].indexOf(title) >= 0) {
+          title = 'forms';
+        } else if (['w', 'weather', 'days', 'graphs', 'reports', 'now', 'clear', 'night'].indexOf(title) >= 0) {
+          title = 'weather';
+        } else if (['code', 'rtl', 'pre', 'hr'].indexOf(title) >= 0) {
+          title = 'typography';
+        } else if (['theme', 'fill', 'stroke', 'text'].indexOf(title) >= 0) {
+          title = 'themes';
+        } else if (['line', 'donut', 'pie'].indexOf(title) >= 0) {
+          title = 'charts';
+        } else if (['icon', 'icons', 'toggle'].indexOf(title) >= 0) {
+          title = 'icons';
+        } else if (['dropdown', 'nav', 'menu'].indexOf(title) >= 0) {
+          title = 'dropdowns';
+        } else if (title === 'darkmode' || title === 'invert') {
+          title = 'dark mode';
+        } else if (title === 'carousel' || title === 'bring') {
+          title = 'carousel';
+        }
+
+        if (title === 'header' || title === 'sticky') {
+          title = 'header';
+        }
+
+        if (title === 'alerts' || title === 'dialog') {
+          title = 'alerts';
+        }
+
+        if (title === 'header' || title === 'sticky') {
+          title = 'header';
+        } else if (title === 'm') {
+          title = 'margin';
+        }
+
+        if (title === 'p') {
+          title = 'padding';
+        }
+
+        if (title === 'sp') {
+          title = 'spacer';
+        }
+
+        if (title === 'ease') {
+          title = 'effects';
+        }
+
+        if (title === 'imgupload') {
+          title = 'image upload';
+        }
+
+        return title;
+      }
+
+      ui.each(arr.list, function () {
+        filterClassnames(this);
+
+        if (arr.filtered.indexOf(title) === -1) {
+          arr.filtered.push(title);
+        }
+      });
+      ui.each(arr.list, function () {
+        filterClassnames(this);
+
+        if (arr.filtered.indexOf(title) > -1) {
+          if (arr.groups[title] === undefined) {
+            arr.groups[title] = this;
+          } else {
+            arr.groups[title] += ', ' + this;
+          }
+        }
+      });
+      created = 0;
+      arr.filtered = arr.filtered.sort(function (a, b) {
+        return a.localeCompare(b);
+      });
+      ui.each(arr.filtered, function () {
+        items = arr.groups[this].split(',');
+        items = items.sort(function (a, b) {
+          return a.length - b.length || a.localeCompare(b, undefined, {
+            numeric: true,
+            sensitivity: 'base'
+          });
+        });
+        html = '<h4 class="' + ui.classnames.stylesCatTite + '">' + this + '</h4>' + '<div class="' + ui.classnames.stylesCatCard + '">' + '<div class="' + ui.classnames.stylesCatRow + '">';
+
+        for (i = 0; i < items.length; i++) {
+          if (parseInt(i / ui.classnames.listColLength) === i / ui.classnames.listColLength) {
+            if (i !== 0) {
+              html += '</ul></div>';
+            }
+
+            html += '<div class="' + ui.classnames.stylesCatCol + '">' + '<ul class="' + ui.classnames.stylesCatList + '">';
+          }
+
+          if (items[i].indexOf('[native code]') === -1) {
+            items[i] = items[i].replace(/^\s+|\s+$/g, '');
+            html += '<li>' + items[i] + '</li>';
+            created += 1;
+          }
+        }
+
+        html += '</ul></div></div></div>';
+        list.insertAdjacentHTML('beforeend', html);
+      });
+      total.textContent = arr.filtered.length + ' / ' + created;
+      loaded = [];
+      arr = [];
+      html = "";
+      items = "";
+    });
+  };
+
+  ui.onload(ui.classnames.Start);
+})();
+ui.code = {
+  target: 'code-holder',
+  nameForms: 'code-forms',
+  nameToggler: 'code-toggle',
+  nameSize: 'code-size',
+  nameGenerateBtn: 'code-btn',
+  nameImport: 'code-import',
+  nameCopy: 'code-copy',
+  nameClear: 'code-clear',
+  nameMin: 'code-min',
+  nameBtn: 'ui-btn',
+  dataType: 'data-ui-type',
+  readFileCharset: 'UTF-8',
+  msgFileSize: 'kb',
+  msgNofileSize: '0.00',
+  msgReadSuccess: 'File read successfully!',
+  msgReadFail: 'File not supported!'
+};
+
+(function () {
+  'use strict';
+
+  function fileSize(code) {
+    var fileSize = encodeURI(code).split(/%..|./).length - 1;
+    fileSize = fileSize / 1000;
+    fileSize = fileSize.toFixed(2);
+    return fileSize;
+  }
+
+  function pullFiles(that) {
+    var holder, list, result, pullResults, count, type, _countFnc;
+
+    holder = ui.closest(that, '.' + ui.code.target)[0];
+    list = ui.find('input:checked:not(.' + ui.code.nameToggler + ')', holder);
+    result = ui.find('textarea', holder)[0];
+    pullResults = '';
+    count = 0;
+    type = that.getAttribute(ui.code.dataType);
+
+    _countFnc = function countFnc() {
+      ui.ajax({
+        url: list[count].getAttribute('value') + '.' + that.name,
+        callback: function callback(status, response) {
+          if (status === 'success') {
+            pullResults += response;
+
+            if (count < list.length - 1) {
+              count += 1;
+              pullResults += '\n';
+
+              _countFnc();
+            } else {
+              if (that.name === 'less') {
+                pullResults = pullResults.replace(/ @import \(reference\) '..\/core.less';/g, '');
+                pullResults = pullResults.replace(/\/\/ out: false+(\n|\r)+\/\*/g, '/*');
+                pullResults = pullResults.replace(/(\n\n|\r\r)/g, '');
+                pullResults = pullResults.replace(/(\n|\r)+\/\*/g, '\n\n/*');
+              } else if (type === 'icons') {
+                pullResults = '<svg style="display: none;">\n' + pullResults + '</svg>';
+              }
+
+              result.value = pullResults;
+              result.scrollTop = 0;
+              result.rows = 24;
+              ui.find('.' + ui.code.nameSize, holder)[0].innerHTML = fileSize(pullResults) + ' ' + ui.code.msgFileSize;
+              setTimeout(function () {
+                ui.loadingMask.toggle(that);
+              }, ui.globals.ease);
+              pullResults = '';
+            }
+          }
+        }
+      });
+    };
+
+    ui.loadingMask.toggle(that);
+
+    if (list.length < 1) {
+      setTimeout(function () {
+        ui.loadingMask.toggle(that);
+      }, ui.globals.ease);
+      return;
+    }
+
+    _countFnc();
+  }
+
+  function readFiles(that) {
+    var i, holder, forms, elems, list, btn, reader, ext, file, getTypes, count, toggler;
+    holder = ui.closest(that, '.' + ui.code.target)[0];
+    elems = ui.find('input', holder);
+    list = ui.find('input:not(.' + ui.code.nameToggler + ')', holder);
+    reader = new FileReader();
+    file = that.files[0];
+
+    if (file === null) {
+      that.value = '';
+      return;
+    }
+
+    btn = that.parentElement;
+    btn = ui.find('.' + ui.code.nameBtn, btn)[0];
+    ui.loadingMask.toggle(btn);
+    ui.each(elems, function () {
+      this.checked = false;
+    });
+    ext = file.name.match(/\.[0-9a-z]+$/i)[0];
+
+    if (ext === '.' + that.name) {
+      reader.readAsText(file, ui.code.readFileCharset);
+
+      reader.onload = function (ev) {
+        getTypes = ev.target.result.match(/\/\*+[\w\d\s\,]+\*\//g);
+
+        if (getTypes === null) {
+          setTimeout(function () {
+            ui.loadingMask.toggle(btn);
+          }, ui.globals.ease);
+          that.value = '';
+          return;
+        }
+
+        for (i = 0; i < getTypes.length; i += 1) {
+          getTypes[i] = getTypes[i].replace(/\/\* /g, '').replace(/ \*\//g, '');
+          getTypes[i] = getTypes[i].toLowerCase();
+        }
+
+        window.scrollTo(0, 0);
+        ui.alerts.message({
+          msg: ui.code.msgReadSuccess,
+          theme: 'success'
+        });
+        setTimeout(function () {
+          ui.each(list, function () {
+            if (getTypes.toString().indexOf(this.name) > -1) {
+              this.checked = true;
+            } else {
+              this.checked = false;
+            }
+          });
+          forms = ui.find('.' + ui.code.nameForms, holder);
+          ui.each(forms, function () {
+            count = 0;
+            elems = ui.find('input:not(.' + ui.code.nameToggler + ')', this);
+            toggler = ui.find('.' + ui.code.nameToggler, this)[0];
+            ui.each(elems, function () {
+              if (this.checked) {
+                count += 1;
+              }
+            });
+
+            if (elems.length > 0 && count === elems.length) {
+              toggler.checked = true;
+            } else {
+              toggler.checked = false;
+            }
+          });
+          setTimeout(function () {
+            ui.loadingMask.toggle(btn);
+          }, ui.globals.ease);
+          getTypes = [];
+        }, ui.globals.ease * 5);
+      };
+    } else {
+      setTimeout(function () {
+        ui.loadingMask.toggle(btn);
+        ui.alerts.message({
+          msg: ui.code.msgReadFail,
+          theme: 'danger'
+        });
+      }, ui.globals.ease);
+    }
+
+    that.value = '';
+  }
+
+  function generator() {
+    ui.on('.' + ui.code.nameImport, 'change', function () {
+      readFiles(this);
+    });
+    ui.on('.' + ui.code.nameGenerateBtn, 'click', function () {
+      pullFiles(this);
+    });
+    ui.on('.' + ui.code.nameClear, 'click', function () {
+      var holder, result;
+      holder = ui.closest(this, '.' + ui.code.target)[0];
+      result = ui.find('textarea', holder)[0];
+      result.value = '';
+      result.rows = 6;
+      ui.find('.' + ui.code.nameSize, holder)[0].innerHTML = ui.code.msgNofileSize + ' ' + ui.code.msgFileSize;
+    });
+    ui.on('.' + ui.code.nameMin, 'click', function () {
+      var holder, result, code;
+      holder = ui.closest(this, '.' + ui.code.target)[0];
+      result = ui.find('textarea', holder)[0];
+      code = result.value;
+
+      if (code.length === 0) {
+        return;
+      }
+
+      code = code.replace(/\/\*[\s\S]*?\*\/|([^\\:]|^)\/\/.*$/gm, '');
+      code = code.replace(/(<!--.*?-->)|(<!--[\w\W\n\s]+?-->)/gm, '');
+
+      if (this.name === 'js') {
+        code = code.replace(/\n/g, ' ').replace(/\s+\s/g, ' ');
+      } else {
+        code = code.replace(/\n/g, '').replace(/\s+\s/g, '').replace(/^\s|\s+$/g, '');
+      }
+
+      code = code.replace(/^\s|\s+$/g, '');
+      result.value = code;
+      result.scrollTop = 0;
+      result.rows = 12;
+      ui.find('.' + ui.code.nameSize, holder)[0].innerHTML = fileSize(code) + ' ' + ui.code.msgFileSize;
+    });
+    ui.on(document, 'paste keydown', '.' + ui.code.target + ' textarea', function () {
+      var that, holder, result;
+      that = this;
+      setTimeout(function () {
+        holder = ui.closest(that, '.' + ui.code.target)[0];
+        result = ui.find('textarea', holder)[0];
+        ui.find('.' + ui.code.nameSize, holder)[0].innerHTML = fileSize(result.value) + ' ' + ui.code.msgFileSize;
+      }, 0);
+    });
+    ui.on('.' + ui.code.nameCopy, 'click', function () {
+      var holder, form;
+      holder = ui.closest(this, '.' + ui.code.target)[0];
+      form = ui.find('textarea', holder)[0];
+
+      if (form.value.length === 0) {
+        return;
+      }
+
+      form.select();
+      document.execCommand('copy');
+    });
+    ui.on('.' + ui.code.nameToggler, 'change', function () {
+      var forms, elems;
+      forms = ui.closest(this, '.' + ui.code.nameForms)[0];
+      elems = ui.find('input', forms);
+
+      if (this.checked) {
+        ui.each(elems, function () {
+          this.checked = true;
+        });
+      } else {
+        ui.each(elems, function () {
+          this.checked = false;
+        });
+      }
+    });
+    ui.on('.' + ui.code.nameForms + ' input:not(.' + ui.code.nameToggler + ')', 'change', function () {
+      var forms, elems, count, toggler;
+      count = 0;
+      forms = ui.closest(this, '.' + ui.code.nameForms)[0];
+      elems = ui.find('input:not(.' + ui.code.nameToggler + ')', forms);
+      toggler = ui.find('.' + ui.code.nameToggler, forms)[0];
+      ui.each(elems, function () {
+        if (this.checked) {
+          count += 1;
+        }
+      });
+
+      if (count === elems.length) {
+        toggler.checked = true;
+      } else {
+        toggler.checked = false;
+      }
+    });
+  }
+
+  ui.onload(generator);
+})();
+ui.iconlist = {
+  target: 'iconlist',
+  nameTools: 'iconlist-tools',
+  nameTotal: 'iconlist-total',
+  nameIconsPrefix: 'ui-icons-',
+  nameBtn: 'ui-btn',
+  stylesToolActive: 'ui-fill-dark-100',
+  stylesTotal: 'ui-font-16 ui-m-5-v ui-block ui-opacity-half',
+  stylesIconWeights: 'ui-icons-bold ui-icons-semibold ui-icons-light ui-icons-thin',
+  stylesIconSizes: 'ui-icons-xxl ui-icons-xl ui-icons-lg ui-icons-sm ui-icons-xs',
+  dataSize: 'data-ui-size',
+  dataWeight: 'data-ui-weight',
+  msgTotal: 'Total icons',
+  msgCopied: 'Copied!'
+};
+
+(function () {
+  'use strict';
+
+  ui.iconlist.Start = function () {
+    var tools, list, icons, totalIcons;
+    list = ui.find('.' + ui.iconlist.target);
+    tools = ui.find('.' + ui.iconlist.nameTools + ' .' + ui.iconlist.nameBtn);
+
+    if (list[0] === undefined || tools[0] === undefined) {
+      return;
+    }
+
+    totalIcons = 0;
+    ui.on(tools, 'click', function () {
+      var that, buttons, size, weight;
+      that = this;
+      buttons = ui.find('.' + ui.iconlist.nameBtn, this.parentElement);
+      ui.removeClass(buttons, ui.iconlist.stylesToolActive);
+      setTimeout(function () {
+        ui.addClass(that, ui.iconlist.stylesToolActive);
+      }, 0);
+      size = this.getAttribute(ui.iconlist.dataSize);
+
+      if (size !== null) {
+        ui.removeClass(list, ui.iconlist.stylesIconSizes);
+
+        if (size !== '') {
+          ui.addClass(list, ui.iconlist.nameIconsPrefix + size);
+        }
+      }
+
+      weight = this.getAttribute(ui.iconlist.dataWeight);
+
+      if (weight !== null) {
+        ui.removeClass(list, ui.iconlist.stylesIconWeights);
+
+        if (weight !== '') {
+          ui.addClass(list, ui.iconlist.nameIconsPrefix + weight);
+        }
+      }
+    });
+    ui.each('.' + ui.iconlist.target, function () {
+      var total = ui.find('li', this).length;
+      this.previousElementSibling.insertAdjacentHTML('beforeend', ' <span class="' + ui.iconlist.stylesTotal + '">(' + total + ' icons)</span>');
+      totalIcons += total;
+    });
+    ui.find('.' + ui.iconlist.nameTotal)[0].textContent = '(' + ui.iconlist.msgTotal + ': ' + totalIcons + ')';
+    icons = ui.find('.' + ui.iconlist.target + ' li');
+    ui.on(icons, 'click', function () {
+      var range, iconName;
+      range = document.createRange();
+      iconName = ui.find('span', this)[0];
+      range.selectNode(iconName);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand('copy');
+      ui.alerts.message({
+        msg: '<b>' + ui.iconlist.msgCopied + '</b><br>' + iconName.textContent
+      });
+    });
+  };
+
+  ui.onload(ui.iconlist.Start);
+})();

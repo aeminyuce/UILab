@@ -18,7 +18,7 @@
     "javascript"
   ],
   "scripts": {
-    "build-js": "babel js/core.js js/modules/*.js --out-file js/ui.js"
+    "build-js": "babel js/core.js js/modules/*.js js/helpers/*.js --out-file js/ui.js"
   },
   "repository": {
     "type": "git",

@@ -6,6 +6,7 @@
 <head>
 
     <title>UI lab is a modular design system for developing web interfaces fastly!</title>
+
     <meta name="keywords" content="responsive, design system, ui examples, web, css, less, javascript">
     <meta name="description" content="UI lab is a modular design system for developing web interfaces fastly!" />
     <meta name="author" content="A. Emin YUCE"/>
@@ -13,10 +14,10 @@
     <!-- charset -->
     <meta charset="utf-8" />
 
-    <!-- scaling settings -->
+    <!-- scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
-    <!-- disable browser caching -->
+    <!-- no browser caching -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
@@ -24,30 +25,15 @@
     <!-- favicon -->
     <link rel="ui-icon" href="img/favicon.ico?v=<?php echo filemtime('img/favicon.ico'); ?>" />
 
-    <!--[if IE]><meta https-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
-    <!--[if lt IE 10]><script>window.navigate('http://outdatedbrowser.com/tr');</script><![endif]-->
-
-    <!-- import Bootstrap for testing -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
     <!-- UI -->
-    <link rel="stylesheet" href="../css/ui.css?v=<?php echo filemtime('../css/ui.css'); ?>"/>
+    <link href="../css/ui.css?v=<?php echo filemtime('../css/ui.css'); ?>" rel="stylesheet"/>
     <script src="../js/ui.js?v=<?php echo filemtime('../js/ui.js'); ?>"></script>
-
-    <!-- custom JS for creating classnames! -->
-    <script src="../js/custom/code.js?v=<?php echo filemtime('../js/custom/code.js'); ?>"></script>
-    <script src="../js/custom/classnames.js?v=<?php echo filemtime('../js/custom/classnames.js'); ?>"></script>
-    <script src="../js/custom/iconlist.js?v=<?php echo filemtime('../js/custom/iconlist.js'); ?>"></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- default font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-
-    <!-- headings font -->
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;700&display=swap" rel="stylesheet">
 
 </head>
