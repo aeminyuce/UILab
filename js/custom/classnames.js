@@ -1,6 +1,6 @@
 /*
  UI Classnames JS
- Requires UI JS
+ Requires UI Core JS
 */
 
 ui.classnames = {

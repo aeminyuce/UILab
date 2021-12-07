@@ -1,6 +1,6 @@
 /*
  UI Code JS
- Requires UI JS
+ Requires UI Core JS
 */
 
 ui.code = {
@@ -89,13 +89,11 @@ ui.code = {
 
                             if (that.name === 'less') {
 
-                                pullResults = pullResults.replace(/ @import \(reference\) 'ui.less';/g, ''); // remove repeated main ui file
+                                pullResults = pullResults.replace(/ @import \(reference\) '..\/core.less';/g, ''); // remove repeated core file
                                 pullResults = pullResults.replace(/\/\/ out: false+(\n|\r)+\/\*/g, '/*'); // remove less settings
 
-                                pullResults = pullResults.replace(/(\n|\r)+\/\*/g, '\n\n/*'); // add line break before /* title */
-                                pullResults = pullResults.replace(/\*\/+(\n|\r)/g, '*/\n\n'); // remove line break after /* title */
-
                                 pullResults = pullResults.replace(/(\n\n|\r\r)/g, ''); // remove duplicate line breaks
+                                pullResults = pullResults.replace(/(\n|\r)+\/\*/g, '\n\n/*'); // add line break before titles/
 
                             } else if (type === 'icons') {
                                 pullResults = '<svg style="display: none;">\n' + pullResults + '</svg>'

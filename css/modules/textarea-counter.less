@@ -1,0 +1,44 @@
+// out: false
+/* textarea counter */ @import (reference) '../core.less';
+
+@textarea-counter-align:               right;
+@textarea-counter-height:              13px;
+
+@textarea-counter-color:               fade(@black, 45%);
+@textarea-counter-color-dark:          @white;
+@textarea-counter-bg:                  fade(@black, 3.5%);
+@textarea-counter-bg-dark:             fade(@white, 17.5%);
+
+@textarea-counter-error-bg:            fade(lighten(@red, 16%), 65%);
+@textarea-counter-warning-bg:          fade(lighten(@yellow, 16%), 65%);
+
+._global-vars () {
+    --ui-textarea-counter-color: @textarea-counter-color;
+    --ui-textarea-counter-bg: @textarea-counter-bg;
+}
+._global-vars-dark () {
+    --ui-textarea-counter-color: @textarea-counter-color-dark;
+    --ui-textarea-counter-bg: @textarea-counter-bg-dark;
+}
+
+.ui-textarea {
+    &:not(.ui-textarea-toggle)[data-ui-counter] {
+        &:before { content: attr(data-ui-counter); font-size: @font-9; text-align: @textarea-counter-align; line-height: (@textarea-counter-height - 1); width: 100%; height: @textarea-counter-height; padding: 1px @form-padding; display: block; position: absolute; bottom: 0; left: 0; z-index: 1; }
+        &:not(.ui-form-light),&.ui-form-focus {
+            &:before { ._color-var(textarea-counter-color); ._bg-var(textarea-counter-bg); }
+        }
+        &.ui-changed {
+            &:before { content: attr(data-ui-changed); }
+        }
+        textarea { margin-bottom: @textarea-counter-height; }
+    }
+}
+
+[data-ui-counter] {
+    &.ui-form-error {
+        &:before { color: @white !important; background-color: @textarea-counter-error-bg !important; }
+    }
+    &.ui-form-warning {
+        &:before { color: @white !important; background-color: @textarea-counter-warning-bg !important; }
+    }
+}

@@ -1,0 +1,54 @@
+// out: false
+/* map */ @import (reference) '../core.less';
+
+@map-height-for-ie:                     360px;
+@map-inner-stroke-width:                1.5;
+
+@map-path-fill:                         fade(@black, 8%);
+@map-path-fill-hover:                   fade(@black, 15%);
+
+@map-path-fill-dark:                    fade(@white, 8%);
+@map-path-fill-hover-dark:              fade(@white, 15%);
+
+._global-vars () {
+    --ui-map-path-fill: @map-path-fill;
+    --ui-map-path-fill-hover: @map-path-fill-hover;
+}
+._global-vars-dark () {
+    --ui-map-path-fill: @map-path-fill-dark;
+    --ui-map-path-fill-hover: @map-path-fill-hover-dark;
+}
+
+.ui-map {
+    position: relative;
+
+    svg {
+        width: 100%; height: auto; margin-right: auto; margin-left: auto; display: block;
+
+        html:not(.ui-ie) & { height: auto; }
+        .ui-ie & { height: @map-height-for-ie; }
+
+        path {
+            stroke-width: @map-inner-stroke-width;
+
+            &:not([fill]) {
+                ._fill-var(map-path-fill);
+
+                &:hover { ._fill-var(map-path-fill-hover); }
+            }
+            &:not([stroke]) {
+                ._stroke-var(body-bg);
+
+                .ui-card & { ._stroke-var(card-bg); }
+            }
+
+            &.ui-active {
+                &:not([fill]) { fill: currentColor; }
+                &:hover { opacity: 1 !important; }
+            }
+
+            &[data-ui-href] { cursor: pointer; }
+        }
+
+    }
+}

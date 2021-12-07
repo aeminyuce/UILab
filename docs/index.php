@@ -31,47 +31,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <!-- import CSS -->
-    <link rel="stylesheet" href="../css/_import.css?v=<?php echo filemtime('../css/_import.css'); ?>"/>
-
-    <!-- import JS -->
+    <!-- UI -->
+    <link rel="stylesheet" href="../css/ui.css?v=<?php echo filemtime('../css/ui.css'); ?>"/>
     <script src="../js/ui.js?v=<?php echo filemtime('../js/ui.js'); ?>"></script>
-
-    <script src="../js/grid.js?v=<?php echo filemtime('../js/grid.js'); ?>"></script>
-
-    <script src="../js/top-button.js?v=<?php echo filemtime('../js/top-button.js'); ?>"></script>
-    <script src="../js/dropdown.js?v=<?php echo filemtime('../js/dropdown.js'); ?>"></script>
-    <script src="../js/loading-mask.js?v=<?php echo filemtime('../js/loading-mask.js'); ?>"></script>
-    <script src="../js/tab.js?v=<?php echo filemtime('../js/tab.js'); ?>"></script>
-
-    <script src="../js/forms.js?v=<?php echo filemtime('../js/forms.js'); ?>"></script>
-    <script src="../js/autocomplete.js?v=<?php echo filemtime('../js/autocomplete.js'); ?>"></script>
-    <script src="../js/currency-spinner.js?v=<?php echo filemtime('../js/currency-spinner.js'); ?>"></script>
-    <script src="../js/dual-multi-select.js?v=<?php echo filemtime('../js/dual-multi-select.js'); ?>"></script>
-    <script src="../js/form-spinner.js?v=<?php echo filemtime('../js/form-spinner.js'); ?>"></script>
-    <script src="../js/required-forms.js?v=<?php echo filemtime('../js/required-forms.js'); ?>"></script>
-    <script src="../js/textarea-counter.js?v=<?php echo filemtime('../js/textarea-counter.js'); ?>"></script>
-
-    <script src="../js/card.js?v=<?php echo filemtime('../js/card.js'); ?>"></script>
-    <script src="../js/header-sticky.js?v=<?php echo filemtime('../js/header-sticky.js'); ?>"></script>
-
-    <script src="../js/sidebar.js?v=<?php echo filemtime('../js/sidebar.js'); ?>"></script>
-    <script src="../js/modal.js?v=<?php echo filemtime('../js/modal.js'); ?>"></script>
-    <script src="../js/tooltip.js?v=<?php echo filemtime('../js/tooltip.js'); ?>"></script>
-    <script src="../js/alerts.js?v=<?php echo filemtime('../js/alerts.js'); ?>"></script>
-    <script src="../js/calendar.js?v=<?php echo filemtime('../js/calendar.js'); ?>"></script>
-    <script src="../js/carousel.js?v=<?php echo filemtime('../js/carousel.js'); ?>"></script>
-    <script src="../js/countdown.js?v=<?php echo filemtime('../js/countdown.js'); ?>"></script>
-    <script src="../js/datatable.js?v=<?php echo filemtime('../js/datatable.js'); ?>"></script>
-    <script src="../js/imgupload.js?v=<?php echo filemtime('../js/imgupload.js'); ?>"></script>
-    <script src="../js/gallery.js?v=<?php echo filemtime('../js/gallery.js'); ?>"></script>
-    <script src="../js/photoslide.js?v=<?php echo filemtime('../js/photoslide.js'); ?>"></script>
-    <script src="../js/weather.js?v=<?php echo filemtime('../js/weather.js'); ?>"></script>
-
-    <script src="../js/line-chart.js?v=<?php echo filemtime('../js/line-chart.js'); ?>"></script>
-    <script src="../js/donut-chart.js?v=<?php echo filemtime('../js/donut-chart.js'); ?>"></script>
-    <script src="../js/pie-chart.js?v=<?php echo filemtime('../js/pie-chart.js'); ?>"></script>
-    <script src="../js/map.js?v=<?php echo filemtime('../js/map.js'); ?>"></script>
 
     <!-- custom JS for creating classnames! -->
     <script src="../js/custom/code.js?v=<?php echo filemtime('../js/custom/code.js'); ?>"></script>
@@ -82,10 +44,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- default -->
+    <!-- default font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
-    <!-- headings -->
+    <!-- headings font -->
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;700&display=swap" rel="stylesheet">
 
 </head>

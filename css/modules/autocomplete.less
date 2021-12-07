@@ -1,0 +1,61 @@
+// out: false
+/* autocomplete */ @import (reference) '../core.less';
+
+@autocomplete-list-min-width:           200px;
+@autocomplete-menu-space:               1px;
+@autocomplete-open-z-index:             19;
+
+@autocomplete-list-height:              @btn-default;
+@autocomplete-list-padding-v:           10px;
+@autocomplete-list-padding-h:           15px;
+
+@autocomplete-list-hover-bg:            fade(@black, 7.5%);
+
+.ui-ease-autocomplete {
+    transition-property: margin-top, opacity;
+
+    ul { transition-property: opacity; transition-duration: @ease-default; }
+    li { transition-property: background-color; transition-duration: @ease-default; }
+}
+
+.ui-autocomplete {
+    overflow: visible !important;
+
+    &.ui-open { z-index: @autocomplete-open-z-index; }
+
+    ul { ._color-var(black); list-style: none; min-width: @autocomplete-list-min-width; width: 100%; ._bg-var(highlighted); padding: 0; margin: 0; position: absolute; }
+    &:not(.ui-open) {
+        ul { display: none; }
+    }
+    &:not(.ui-open-ease) {
+        ul { opacity: 0; }
+    }
+
+    &:not(.ui-autocomplete-t):not(.ui-border-dual):not(.ui-no-border) {
+        ul { margin-top: (@autocomplete-menu-space + 1); }
+    }
+    &.ui-border-dual,&.ui-no-border {
+        &:not(.ui-autocomplete-t) {
+            ul { margin-top: (@border-dual + 1); }
+        }
+    }
+
+    &.ui-autocomplete-t {
+        ul { bottom: 100%; }
+        &:not(.ui-border-dual):not(.ui-no-border) {
+            ul { margin-bottom: (@autocomplete-menu-space + 1); }
+        }
+        &.ui-border-dual {
+            ul { margin-bottom: (@autocomplete-menu-space + @border-dual); }
+        }
+        &.ui-no-border {
+            ul { margin-bottom: @autocomplete-menu-space; }
+        }
+    }
+
+    li {
+        box-sizing: border-box; white-space: nowrap; text-overflow: ellipsis; text-align: left; line-height: (@autocomplete-list-height - (@autocomplete-list-padding-v * 2)); height: @autocomplete-list-height; padding: @autocomplete-list-padding-v @autocomplete-list-padding-h; overflow: hidden;
+
+        .ui-desktop &:hover,&.ui-selected { background-color: @autocomplete-list-hover-bg; cursor: default; }
+    }
+}

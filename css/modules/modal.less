@@ -1,0 +1,173 @@
+// out: false
+/* modal */ @import (reference) '../core.less';
+
+@modal-padding:                         15px;
+@modal-z-index:                         89;
+@modal-bg:                              fade(@black, 86%);
+
+@modal-inline-mobile-width:             90%;
+
+@modal-header-height:                   (@btn-default + (@modal-padding * 2));
+@modal-header-z-index:                  9;
+
+@modal-footer-height:                   (@btn-default + (@modal-padding * 2));
+@modal-footer-z-index:                  9;
+
+@modal-close-icon-size:                 14px;
+@modal-close-z-index:                   10;
+@modal-close-bg:                        fade(@black, 65%);
+@modal-close-hover-bg:                  lighten(@black, 20%);
+@modal-close-fullscreen-bg:             fade(@black, 20%);
+@modal-close-fullscreen-hover-bg:       fade(@black, 35%);
+
+@modal-content-open-slide:              10px;
+@modal-content-min-width:               (@layout-min - 40px);
+@modal-content-margin:                  ((@btn-default / 2) + 5);
+@modal-content-lg-min-height:           300px;
+@modal-content-md-min-height:           240px;
+@modal-content-sm-min-height:           120px;
+
+.ui-modal {
+    display: none;
+
+    &-opened {
+        scroll-behavior: auto !important;
+
+        &,& > body { overflow: hidden; }
+    }
+
+    &-bg {
+        width: 100%; min-width: @layout-min; height: 100%; background-color: @modal-bg; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: @modal-z-index;
+
+        &:not(.ui-open) { display: none; }
+        &:not(.ui-open-ease) { opacity: 0; }
+    }
+
+    &-win {
+        &.ui-show { position: fixed; z-index: (@modal-z-index + 1); }
+        &:not(.ui-show) { display: none; }
+
+        &.ui-modal-no-bg {
+            &,.ui-input input,.ui-select select,.ui-select-multi select,.ui-textarea textarea,
+            .ui-input .ui-icon,.ui-select .ui-icon { color: @white !important; }
+
+            .ui-modal-content { background: none !important; box-shadow: none !important; }
+
+            .ui-form-error {
+                &:not(.ui-form-holder) { background-color: @red !important; }
+                .ui-icon { color: @white !important; }
+            }
+        }
+        &:not(.ui-show-ease) {
+            .ui-modal-content { opacity: 0; transform: translateY(@modal-content-open-slide); }
+        }
+
+        .ui-modal { height: 100%; display: block; }
+    }
+
+    &-content {
+        min-width: @modal-content-min-width; ._bg-var(body-bg); position: fixed;
+
+        &:not(.ui-modal-fullscreen) {
+            max-height: calc(100% - (@modal-content-margin * 2));
+
+            &.ui-round {
+                .ui-modal {
+                    &-header { border-radius: (@round - 1) (@round - 1) 0 0; }
+                    &-footer { border-radius: 0 0 (@round - 1) (@round - 1); }
+                    &-iframe { border-radius: (@round - 1); }
+                }
+            }
+            .ui-modal-close {
+                background-color: @modal-close-bg; top: -(@btn-default / 2); right: -(@btn-default / 2);
+
+                .ui-desktop &:hover { background-color: @modal-close-hover-bg; }
+            }
+        }
+        &.ui-modal- {
+            &fullscreen {
+                width: 100%; height: 100%; border-radius: 0 !important;
+
+                .ui-modal-header {
+                    .ui-modal-buttons { padding-right: (@btn-lg + (@modal-padding / 2)); }
+                }
+                .ui-modal-close {
+                    background-color: @modal-close-fullscreen-bg; top: @modal-padding; right: @modal-padding;
+
+                    .ui-desktop &:hover { background-color: @modal-close-fullscreen-hover-bg; }
+                }
+            }
+
+            &lg { max-width: @lg-breakpoint; min-height: @modal-content-lg-min-height; }
+            &md { max-width: @md-breakpoint; min-height: @modal-content-md-min-height; }
+            &sm { max-width: @xs-breakpoint; min-height: @modal-content-sm-min-height; }
+
+            &inline { width: auto; }
+        }
+
+        &.ui-round {
+            .ui-modal { border-radius: (@round - 1); }
+        }
+        &.ui-modal-has- {
+            &header {
+                .ui-modal { padding-top: @modal-header-height !important; }
+            }
+            &footer {
+                .ui-modal { padding-bottom: @modal-footer-height !important; }
+            }
+        }
+
+        .ui-modal-close {
+            color: @white !important; text-align: center; width: @btn-default; height: @btn-default; border: 0; border-radius: 100%; position: absolute; z-index: @modal-close-z-index; cursor: pointer;
+
+            .ui-icon { ._icon(@modal-close-icon-size); }
+        }
+    }
+
+    &-buttons { float: right; }
+    &-iframe { width: 100%; height: 100%; overflow: hidden; }
+
+    &-header,&-container,&-footer {
+        min-width: @modal-content-min-width;
+
+        & > .ui-row { margin-top: -@modal-padding; margin-right: inherit; margin-bottom: -@modal-padding; margin-left: inherit; }
+        & > .ui-fixed { padding-right: 0; padding-left: 0; margin-top: -@modal-padding; margin-bottom: -@modal-padding; }
+    }
+    &-header,&-footer {
+        text-overflow: ellipsis; white-space: nowrap; ._bg-var(highlighted); padding: @modal-padding; overflow: hidden; position: absolute; right: 0; left: 0;
+
+        .ui-btn-lg,&.ui-form-lg .ui-btn { margin: ((@btn-default - @btn-lg) / 2) 0; }
+        .ui-btn {
+            &-sm { margin: ((@btn-default - @btn-sm) / 2) 0; }
+            &-xs { margin: ((@btn-default - @btn-xs) / 2) 0; }
+        }
+    }
+
+    &-header {
+        height: @modal-header-height; top: 0; z-index: @modal-header-z-index;
+
+        .ui- {
+            &h1,&h2,&h3,&h4,&h5,&h6 { font-size: @font-18 !important; text-overflow: ellipsis; line-height: @btn-default; max-width: 100%; margin-bottom: 0 !important; overflow: hidden; float: left; }
+        }
+    }
+
+    &-container {
+        min-height: (@modal-padding * 2); height: 100%; max-height: 100%; padding: @modal-padding; overflow: auto; position: relative;
+
+        .ui-mobile & { -webkit-overflow-scrolling: touch; }
+        & > iframe { width: 100%; height: 100%; overflow: hidden; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+    }
+
+    &-footer { height: @modal-footer-height; bottom: 0; z-index: @modal-footer-z-index; }
+}
+
+@media (@md-start) {
+    .ui-modal-content {
+        &.ui-modal-inline { max-width: @md-breakpoint; }
+    }
+}
+@media (@sm-finish) {
+    .ui-modal-content {
+        &.ui-modal-inline { max-width: @modal-inline-mobile-width; }
+    }
+}

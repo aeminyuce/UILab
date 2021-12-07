@@ -1,6 +1,6 @@
 /*
  UI Iconlist JS
- Requires UI JS
+ Requires UI Core JS
 */
 
 ui.iconlist = {

@@ -1,0 +1,37 @@
+{
+  "name": "uilab",
+  "title": "UI lab",
+  "description": "UI lab is a modular design system for developing web interfaces fastly!",
+  "author": "A. Emin YUCE",
+  "version": "1.0.0",
+  "license": "MIT",
+  "style": "css/_import.css",
+  "less": "css_import.less",
+  "main": "js/_import.js",
+  "keywords": [
+    "responsive",
+    "design system",
+    "ui examples",
+    "web",
+    "css",
+    "less",
+    "javascript"
+  ],
+  "scripts": {
+    "build-js": "babel js/core.js js/modules/*.js --out-file js/ui.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeminyuce/UILab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aeminyuce/UILab/issues"
+  },
+  "homepage": "https://github.com/aeminyuce/UILab#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.4"
+  }
+}

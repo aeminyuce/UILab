@@ -38,10 +38,10 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form ui-form-disabled">
-                                            <input type="checkbox" name="ui" value="../css/ui" checked disabled>
+                                            <input type="checkbox" name="ui core" value="../css/core" checked disabled>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        UI
+                                        UI Core
                                     </label>
                                 </div>
 
@@ -58,7 +58,7 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="grid" value="../css/grid" checked>
+                                            <input type="checkbox" name="grid" value="../css/modules/grid" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Grid
@@ -78,28 +78,28 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="helpers" value="../css/helpers" checked>
+                                            <input type="checkbox" name="helpers" value="../css/modules/helpers" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Helpers
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="borders" value="../css/borders" checked>
+                                            <input type="checkbox" name="borders" value="../css/modules/borders" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Borders
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="paddings" value="../css/paddings" checked>
+                                            <input type="checkbox" name="paddings" value="../css/modules/paddings" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Paddings
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="margins" value="../css/margins" checked>
+                                            <input type="checkbox" name="margins" value="../css/modules/margins" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Margins
@@ -119,14 +119,14 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="typography" value="../css/typography" checked>
+                                            <input type="checkbox" name="typography" value="../css/modules/typography" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Typography
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="listings" value="../css/listings">
+                                            <input type="checkbox" name="listings" value="../css/modules/listings">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Listings
@@ -149,28 +149,28 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="buttons" value="../css/buttons" checked>
+                                            <input type="checkbox" name="buttons" value="../css/modules/buttons" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Buttons
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="top button" value="../css/top-button" checked>
+                                            <input type="checkbox" name="top button" value="../css/modules/top-button" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Top Button
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="tab" value="../css/tab">
+                                            <input type="checkbox" name="tab" value="../css/modules/tab">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Tab
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="dropdown" value="../css/dropdown">
+                                            <input type="checkbox" name="dropdown" value="../css/modules/dropdown">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Dropdown
@@ -190,21 +190,21 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="forms" value="../css/forms" checked>
+                                            <input type="checkbox" name="forms" value="../css/modules/forms" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Forms
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="textarea counter" value="../css/textarea-counter">
+                                            <input type="checkbox" name="textarea counter" value="../css/modules/textarea-counter">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Textarea Counter
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="autocomplete" value="../css/autocomplete">
+                                            <input type="checkbox" name="autocomplete" value="../css/modules/autocomplete">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Autocomplete
@@ -224,7 +224,7 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="icons" value="../css/icons" checked>
+                                            <input type="checkbox" name="icons" value="../css/modules/icons" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Icons
@@ -247,90 +247,90 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="listgroup" value="../css/listgroup" checked>
+                                            <input type="checkbox" name="listgroup" value="../css/modules/listgroup" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         List Group
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="card" value="../css/card" checked>
+                                            <input type="checkbox" name="card" value="../css/modules/card" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Card
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="tables" value="../css/tables" checked>
+                                            <input type="checkbox" name="tables" value="../css/modules/tables" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Tables
                                     </label>                                    <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="breadcrumbs" value="../css/breadcrumbs">
+                                            <input type="checkbox" name="breadcrumbs" value="../css/modules/breadcrumbs">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Breadcrumbs
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="loading mask" value="../css/loading-mask">
+                                            <input type="checkbox" name="loading mask" value="../css/modules/loading-mask">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Loading Mask
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="avatars" value="../css/avatars">
+                                            <input type="checkbox" name="avatars" value="../css/modules/avatars">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Avatars
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="notifier" value="../css/notifier">
+                                            <input type="checkbox" name="notifier" value="../css/modules/notifier">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Notifier
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="progress bar" value="../css/progress-bar">
+                                            <input type="checkbox" name="progress bar" value="../css/modules/progress-bar">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Progress Bar
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="scrollbar" value="../css/scrollbar">
+                                            <input type="checkbox" name="scrollbar" value="../css/modules/scrollbar">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Scrollbar
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="steps" value="../css/steps">
+                                            <input type="checkbox" name="steps" value="../css/modules/steps">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Steps
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="header sticky" value="../css/header-sticky">
+                                            <input type="checkbox" name="header sticky" value="../css/modules/header-sticky">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Header Sticky
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="stripes" value="../css/stripes">
+                                            <input type="checkbox" name="stripes" value="../css/modules/stripes">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Stripes
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="timeline" value="../css/timeline">
+                                            <input type="checkbox" name="timeline" value="../css/modules/timeline">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Timeline
@@ -350,28 +350,28 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="line chart" value="../css/line-chart">
+                                            <input type="checkbox" name="line chart" value="../css/modules/line-chart">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Line Chart
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="donut chart" value="../css/donut-chart">
+                                            <input type="checkbox" name="donut chart" value="../css/modules/donut-chart">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Donut Chart
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="pie chart" value="../css/pie-chart">
+                                            <input type="checkbox" name="pie chart" value="../css/modules/pie-chart">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Pie Chart
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="map" value="../css/map">
+                                            <input type="checkbox" name="map" value="../css/modules/map">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Map
@@ -394,77 +394,77 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="sidebar" value="../css/sidebar" checked>
+                                            <input type="checkbox" name="sidebar" value="../css/modules/sidebar" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Sidebar
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="modal" value="../css/modal" checked>
+                                            <input type="checkbox" name="modal" value="../css/modules/modal" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Modal
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="tooltip" value="../css/tooltip" checked>
+                                            <input type="checkbox" name="tooltip" value="../css/modules/tooltip" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Tooltip
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="alerts" value="../css/alerts">
+                                            <input type="checkbox" name="alerts" value="../css/modules/alerts">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Alerts
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="calendar" value="../css/calendar">
+                                            <input type="checkbox" name="calendar" value="../css/modules/calendar">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Calendar
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="carousel" value="../css/carousel">
+                                            <input type="checkbox" name="carousel" value="../css/modules/carousel">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Carousel
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="datatable" value="../css/datatable">
+                                            <input type="checkbox" name="datatable" value="../css/modules/datatable">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Datatable
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="imgupload" value="../css/imgupload">
+                                            <input type="checkbox" name="imgupload" value="../css/modules/imgupload">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Image Upload
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="gallery" value="../css/gallery">
+                                            <input type="checkbox" name="gallery" value="../css/modules/gallery">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Gallery
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="photoslide" value="../css/photoslide">
+                                            <input type="checkbox" name="photoslide" value="../css/modules/photoslide">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Photoslide
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="weather" value="../css/weather">
+                                            <input type="checkbox" name="weather" value="../css/modules/weather">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Weather
@@ -484,7 +484,7 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="themes" value="../css/themes" checked>
+                                            <input type="checkbox" name="themes" value="../css/modules/themes" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Themes
@@ -550,10 +550,10 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="ui js" value="../js/ui" checked>
+                                            <input type="checkbox" name="ui core js" value="../js/core" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
-                                        UI
+                                        UI Core
                                     </label>
                                 </div>
 
@@ -570,7 +570,7 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="grid js" value="../js/grid" checked>
+                                            <input type="checkbox" name="grid js" value="../js/modules/grid" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Grid
@@ -590,21 +590,21 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="top button js" value="../js/top-button" checked>
+                                            <input type="checkbox" name="top button js" value="../js/modules/top-button" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Top Button
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="dropdown js" value="../js/dropdown">
+                                            <input type="checkbox" name="dropdown js" value="../js/modules/dropdown">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Dropdown
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="tab js" value="../js/tab">
+                                            <input type="checkbox" name="tab js" value="../js/modules/tab">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Tab
@@ -627,49 +627,49 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="forms js" value="../js/forms" checked>
+                                            <input type="checkbox" name="forms js" value="../js/modules/forms" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Forms
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="autocomplete js" value="../js/autocomplete">
+                                            <input type="checkbox" name="autocomplete js" value="../js/modules/autocomplete">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Autocomplete
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="currency spinner js" value="../js/currency-spinner">
+                                            <input type="checkbox" name="currency spinner js" value="../js/modules/currency-spinner">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Currency Spinner
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="dual multi select js" value="../js/dual-multi-select">
+                                            <input type="checkbox" name="dual multi select js" value="../js/modules/dual-multi-select">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Dual Multi Select
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="form spinner js" value="../js/form-spinner">
+                                            <input type="checkbox" name="form spinner js" value="../js/modules/form-spinner">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Form Spinner
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="required forms js" value="../js/required-forms">
+                                            <input type="checkbox" name="required forms js" value="../js/modules/required-forms">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Required Forms
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="textarea counter js" value="../js/textarea-counter">
+                                            <input type="checkbox" name="textarea counter js" value="../js/modules/textarea-counter">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Textarea Counter
@@ -689,14 +689,14 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="card js" value="../js/card" checked>
+                                            <input type="checkbox" name="card js" value="../js/modules/card" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Card
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="header sticky js" value="../js/header-sticky">
+                                            <input type="checkbox" name="header sticky js" value="../js/modules/header-sticky">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Header Sticky
@@ -719,91 +719,91 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="sidebar js" value="../js/sidebar" checked>
+                                            <input type="checkbox" name="sidebar js" value="../js/modules/sidebar" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Sidebar
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="modal js" value="../js/modal" checked>
+                                            <input type="checkbox" name="modal js" value="../js/modules/modal" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Modal
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="tooltip js" value="../js/tooltip" checked>
+                                            <input type="checkbox" name="tooltip js" value="../js/modules/tooltip" checked>
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Tooltip
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="alerts js" value="../js/alerts">
+                                            <input type="checkbox" name="alerts js" value="../js/modules/alerts">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Alerts
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="calendar js" value="../js/calendar">
+                                            <input type="checkbox" name="calendar js" value="../js/modules/calendar">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Calendar
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="carousel js" value="../js/carousel">
+                                            <input type="checkbox" name="carousel js" value="../js/modules/carousel">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Carousel
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="countdown js" value="../js/countdown">
+                                            <input type="checkbox" name="countdown js" value="../js/modules/countdown">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Countdown
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="datatable js" value="../js/datatable">
+                                            <input type="checkbox" name="datatable js" value="../js/modules/datatable">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Datatable
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="imgupload js" value="../js/imgupload">
+                                            <input type="checkbox" name="imgupload js" value="../js/modules/imgupload">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Image Upload
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="oading mask js" value="../js/loading-mask">
+                                            <input type="checkbox" name="oading mask js" value="../js/modules/loading-mask">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Loading Mask
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="gallery js" value="../js/gallery">
+                                            <input type="checkbox" name="gallery js" value="../js/modules/gallery">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Gallery
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="photoslide js" value="../js/photoslide">
+                                            <input type="checkbox" name="photoslide js" value="../js/modules/photoslide">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         photoslide
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="weather js" value="../js/weather">
+                                            <input type="checkbox" name="weather js" value="../js/modules/weather">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Weather
@@ -826,28 +826,28 @@
 
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="line chart js" value="../js/line-chart">
+                                            <input type="checkbox" name="line chart js" value="../js/modules/line-chart">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Line Chart
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="donut chart js" value="../js/donut-chart">
+                                            <input type="checkbox" name="donut chart js" value="../js/modules/donut-chart">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Donut Chart
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="pie chart js" value="../js/pie-chart">
+                                            <input type="checkbox" name="pie chart js" value="../js/modules/pie-chart">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Pie chart
                                     </label>
                                     <label class="ui-label">
                                         <span class="ui-switch ui-round ui-border-dual ui-ease-form">
-                                            <input type="checkbox" name="map js" value="../js/map">
+                                            <input type="checkbox" name="map js" value="../js/modules/map">
                                             <i class="ui-form-state ui-fill-dark-100"></i>
                                         </span>
                                         Map

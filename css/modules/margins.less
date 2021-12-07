@@ -1,0 +1,58 @@
+// out: false
+/* margins */ @import (reference) '../core.less';
+
+._margins (@name; @size) {
+    .@{name} { margin: @size !important; }
+
+    .@{name}-h { margin-left: @size !important; margin-right: @size !important; }
+    .@{name}-v { margin-top: @size !important; margin-bottom: @size !important; }
+}
+
+._margins_ext (@name; @size) {
+    .@{name}-t { margin-top: @size !important; }
+    .@{name}-r { margin-right: @size !important; }
+    .@{name}-b { margin-bottom: @size !important; }
+    .@{name}-l { margin-left: @size !important; }
+}
+
+each(@increases, {
+    @j: unit(@value);
+    ._margins (@name: ~'ui-m-@{j}'; @size: @value);
+});
+
+each(@increases, {
+    @j: unit(@value);
+    ._margins_ext (@name: ~'ui-m-@{j}'; @size: @value);
+});
+
+._margins (@name: ui-no-m; @size: 0);
+._margins_ext (@name: ui-no-m; @size: 0);
+
+@media (@lg-start) {
+    ._margins (@name: ui-lg-no-m; @size: 0);
+    ._margins_ext (@name: ui-lg-no-m; @size: 0);
+}
+@media (@md-start) and (@md-finish) {
+    ._margins (@name: ui-md-no-m; @size: 0);
+    ._margins_ext (@name: ui-md-no-m; @size: 0);
+}
+@media (@sm-start) and (@sm-finish) {
+    ._margins (@name: ui-md-no-m; @size: 0);
+    ._margins (@name: ui-sm-no-m; @size: 0);
+
+    ._margins_ext (@name: ui-md-no-m; @size: 0);
+    ._margins_ext (@name: ui-sm-no-m; @size: 0);
+}
+@media (@xs-finish) {
+    ._margins (@name: ui-md-no-m; @size: 0);
+    ._margins (@name: ui-sm-no-m; @size: 0);
+    ._margins (@name: ui-xs-no-m; @size: 0);
+
+    ._margins_ext (@name: ui-md-no-m; @size: 0);
+    ._margins_ext (@name: ui-sm-no-m; @size: 0);
+    ._margins_ext (@name: ui-xs-no-m; @size: 0);
+}
+@media (@xl-start) {
+    ._margins (@name: ui-xl-no-m; @size: 0);
+    ._margins_ext (@name: ui-xl-no-m; @size: 0);
+}
