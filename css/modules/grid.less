@@ -113,8 +113,15 @@ each(@custom-grid-sizes, {
 .ui-col-static when (@static-grids = true) {
     width: 100%; display: table; table-layout: fixed;
 
-    & > .ui-row,& > [class*="ui-col-"] { vertical-align: top; display: table-cell; }
-    & > .ui-row { width: 100%; margin-left: inherit; margin-right: inherit; table-layout: fixed; }
+    & > .row,& > [class*="col-"] { vertical-align: top; display: table-cell; }
+    & > .row {
+        width: 100%; margin-left: inherit; margin-right: inherit; table-layout: fixed;
+
+        &:before,&:after { content: "" !important; display: table !important; }
+        &:after { clear: both !important; }
+
+        & > [class*="col-"]:not(.col-static):not(.col-12) { float: left; } // grid in static grid is not a flex!
+    }
 }
 
 ._create-static-cols(@name; @value) when (@static-grids = true) {

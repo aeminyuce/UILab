@@ -701,16 +701,27 @@ html .ui-row {
   display: table;
   table-layout: fixed;
 }
-.ui-col-static > .ui-row,
-.ui-col-static > [class*="ui-col-"] {
+.ui-col-static > .row,
+.ui-col-static > [class*="col-"] {
   vertical-align: top;
   display: table-cell;
 }
-.ui-col-static > .ui-row {
+.ui-col-static > .row {
   width: 100%;
   margin-left: inherit;
   margin-right: inherit;
   table-layout: fixed;
+}
+.ui-col-static > .row:before,
+.ui-col-static > .row:after {
+  content: "" !important;
+  display: table !important;
+}
+.ui-col-static > .row:after {
+  clear: both !important;
+}
+.ui-col-static > .row > [class*="col-"]:not(.col-static):not(.col-12) {
+  float: left;
 }
 .ui-col-50 {
   width: 50px;
