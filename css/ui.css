@@ -422,7 +422,6 @@ body {
 .ui-fixed {
   margin-right: auto;
   margin-left: auto;
-  display: block;
 }
 .ui-no-gutter {
   padding-right: 0 !important;
@@ -430,6 +429,9 @@ body {
 }
 html .ui-row {
   display: flex;
+}
+.ui-ie .ui-row > [class*="ui-col-"]:not(.ui-col-static):not(.ui-col-12) {
+  float: left;
 }
 .ui-row {
   margin-right: -10px;
@@ -525,7 +527,6 @@ html .ui-row {
 }
 [class*="ui-col-"] {
   min-height: 1px;
-  display: block;
 }
 [class*="ui-push-"],
 [class*="ui-pull-"] {
@@ -702,17 +703,6 @@ html .ui-row {
   margin-left: inherit;
   margin-right: inherit;
   table-layout: fixed;
-}
-.ui-col-static > .ui-row:before,
-.ui-col-static > .ui-row:after {
-  content: "" !important;
-  display: table !important;
-}
-.ui-col-static > .ui-row:after {
-  clear: both !important;
-}
-.ui-col-static > .ui-row > [class*="ui-col-"]:not(.ui-col-static):not(.ui-col-12) {
-  float: left;
 }
 .ui-col-50 {
   width: 50px;
@@ -1173,7 +1163,6 @@ html .ui-row {
   .ui-col-static:not(.ui-no-fluid):not(.ui-sm-fluid):not(.ui-xs-fluid) > .ui-row,
   .ui-col-static:not(.ui-no-fluid):not(.ui-sm-fluid):not(.ui-xs-fluid) > [class*="ui-col-"] {
     width: 100%;
-    display: block;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -1397,7 +1386,6 @@ html .ui-row {
   .ui-col-static:not(.ui-no-fluid):not(.ui-xs-fluid) > .ui-row,
   .ui-col-static:not(.ui-no-fluid):not(.ui-xs-fluid) > [class*="ui-col-"] {
     width: 100%;
-    display: block;
   }
 }
 @media (max-width: 480px) {
@@ -1625,7 +1613,6 @@ html .ui-row {
   .ui-col-static:not(.ui-no-fluid) > .ui-row,
   .ui-col-static:not(.ui-no-fluid) > [class*="ui-col-"] {
     width: 100%;
-    display: block;
   }
 }
 @media (max-width: 1399px) {
@@ -1637,7 +1624,6 @@ html .ui-row {
   .ui-lg-fluid.ui-col-static > .ui-row,
   .ui-lg-fluid.ui-col-static > [class*="ui-col-"] {
     width: 100%;
-    display: block;
   }
   [class*="ui-offset-"].ui-lg-fluid {
     margin-left: 0;
@@ -1658,7 +1644,6 @@ html .ui-row {
   .ui-xl-fluid.ui-col-static > .ui-row,
   .ui-xl-fluid.ui-col-static > [class*="ui-col-"] {
     width: 100%;
-    display: block;
   }
   [class*="ui-offset-"].ui-xl-fluid {
     margin-left: 0;
