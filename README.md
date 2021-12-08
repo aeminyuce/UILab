@@ -1,5 +1,4 @@
-![UI Lab Logo](https://aeminyuce.github.io/UILab/docs/img/uilab-logo@2x.png)
-
+# UI Lab
 UI lab is a modular design system for developing web interfaces fastly!
 > by A. Emin YUCE
 
