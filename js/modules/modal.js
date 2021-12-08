@@ -83,8 +83,6 @@ ui.modal = {
 
 (function () {
 
-    /*globals window, document, ui, setTimeout */
-
     var pageYPos;
 
     function modalResizer() {

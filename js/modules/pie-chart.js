@@ -42,8 +42,6 @@ ui.pieChart = {
 
 (function () {
 
-    /*globals window, document, ui, setTimeout */
-
     var loadCharts;
 
     function chartsResizer() {

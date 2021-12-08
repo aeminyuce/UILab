@@ -26,8 +26,6 @@ ui.topButton = {
 
 (function () {
 
-    /*globals window, document, ui, setTimeout */
-
     function togglerFnc() {
 
         var topBtn = ui.find('.' + ui.topButton.target);

@@ -45,8 +45,6 @@ ui.weather = {
 
 (function () {
 
-    /*globals document, ui, setInterval */
-
     var
         dateLoaded,
         clockLoaded,

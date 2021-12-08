@@ -39,8 +39,6 @@ ui.code = {
 
 (function () {
 
-    /*globals window, document, ui, setTimeout, FileReader */
-
     function fileSize(code) {
 
         var fileSize = encodeURI(code).split(/%..|./).length - 1;

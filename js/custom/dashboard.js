@@ -1,5 +1,3 @@
-/*globals document, ui, setTimeout, sessionStorage */
-
 // Toggle Menu
 var testStorage;
 

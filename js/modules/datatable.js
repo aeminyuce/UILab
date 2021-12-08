@@ -80,8 +80,6 @@ ui.datatable = {
 
 (function () {
 
-    /*globals window, document, ui, sessionStorage, performance */
-
     var
         testStorage = true,
         startListID = 0,

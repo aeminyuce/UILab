@@ -1,5 +1,3 @@
-/*globals document, ui, setTimeout */
-
 ui.onload(function () {
 
     setTimeout(function () {

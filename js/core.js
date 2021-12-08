@@ -2,7 +2,6 @@
  UI Core JS
 */
 
-/*globals window, document, Event, navigator, NodeList, setTimeout, clearTimeout, XMLHttpRequest */
 var ui = {
 
     globals: {
@@ -132,7 +131,7 @@ var ui = {
 
                 f = that;
 
-                // filter ui.on(object, event, function) event listeners
+                // filter ui.on(object, event, fn) event listeners
                 if (t instanceof Object && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') {
 
                     // detect window event listeners
@@ -301,10 +300,10 @@ var ui = {
         for (i = 0; i < l.length; i++) {
 
             if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
-                re =  new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className.baseVal);
+                re = new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className.baseVal);
 
             } else {
-                re =  new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className);
+                re =new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className);
             }
 
         }
@@ -438,7 +437,7 @@ var ui = {
 
         var l, o, i, j, p;
 
-        if (outer instanceof Object) {  o = [outer]; } else {o = ui.find(outer); }
+        if (outer instanceof Object) { o = [outer]; } else { o = ui.find(outer); }
         l = ui.find(t);
 
         for (i = 0; i < l.length; i++) {
@@ -474,8 +473,8 @@ var ui = {
 
             }
 
-            if (objName === '[object Window]') {  return window; } // window object
-            if (objName === '[object Array]') {  return item; } // array object
+            if (objName === '[object Window]') { return window; } // window object
+            if (objName === '[object Array]') { return item; } // array object
 
             return [item]; // "this" object, [] converting object for event loops
 
@@ -596,7 +595,7 @@ var ui = {
                 rex = ui.globals.dataClasses + '=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[\\s\\>]';
                 rex = new RegExp(rex, 'g');
 
-                ui.ajax.classNames +=  ui.ajax.requests[i].responseText.match(rex);
+                ui.ajax.classNames += ui.ajax.requests[i].responseText.match(rex);
                 if (ui.ajax.classNames !== 'null') { // not match: returns string null!
 
                     ui.ajax.classNames = ui.ajax.classNames.match(/"+[\w\s\d\-\_\=]+"/g);

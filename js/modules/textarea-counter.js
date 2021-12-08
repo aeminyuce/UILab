@@ -22,8 +22,6 @@ ui.textareaCounter = {
 
 (function () {
 
-    /*globals document, ui, setTimeout */
-
     var loadCounters;
 
     ui.textareaCounter.Start = function () {

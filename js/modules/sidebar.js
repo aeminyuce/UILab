@@ -43,8 +43,6 @@ ui.sidebar = {
 
 (function () {
 
-    /*globals window, document, ui, setTimeout */
-
     var getScrollPos;
 
     ui.sidebar.close = function (panel) {

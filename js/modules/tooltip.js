@@ -48,8 +48,6 @@ ui.tooltip = {
 
 (function () {
 
-    /*globals window, document, ui, setTimeout, clearTimeout */
-
     var
         removeTimer,
         removeTimer2x,

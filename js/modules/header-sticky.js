@@ -23,8 +23,6 @@ ui.headerSticky = {
 
 (function () {
 
-    /*globals window, document, ui */
-
     var
         stickyLoad,
         stickyClear,

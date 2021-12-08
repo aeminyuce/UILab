@@ -26,8 +26,6 @@ ui.map = {
 
 (function () {
 
-    /*globals window, ui */
-
     ui.map.Start = function () {
 
         var map, arr, data, items, opacity;

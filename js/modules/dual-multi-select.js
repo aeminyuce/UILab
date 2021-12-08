@@ -18,8 +18,6 @@ ui.dualMultiSelect = {
 
 (function () {
 
-    /*globals document, ui, setTimeout */
-
     var
         resetOptions,
         loadSelects,

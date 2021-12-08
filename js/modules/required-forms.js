@@ -37,8 +37,6 @@ ui.requiredForms = {
 
 (function () {
 
-    /*globals window, document, ui */
-
     ui.requiredForms.Start = function () {
 
         function required(that, type) {

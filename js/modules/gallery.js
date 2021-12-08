@@ -77,8 +77,6 @@ ui.photoGallery = {
 
 (function () {
 
-    /*globals window, document, ui, Image, setTimeout, clearTimeout */
-
     var
         imgTouchmove,
         pageTouchmove = false,

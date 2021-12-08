@@ -20,8 +20,6 @@ ui.grid = {
 
 (function () {
 
-    /*globals window, document, ui */
-
     ui.grid.Start = function () {
 
         var fnc, o, p, siblings, i;

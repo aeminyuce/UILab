@@ -99,8 +99,6 @@ ui.calendar = {
 
 (function () {
 
-    /*globals window, document, ui, setTimeout */
-
     var checkCalendars;
 
     // first loading

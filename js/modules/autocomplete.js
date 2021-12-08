@@ -50,8 +50,6 @@ ui.autocomplete = {
 
 (function () {
 
-    /*globals window, document, ui, clearTimeout, setTimeout */
-
     ui.autocomplete.Start = function () {
 
         var

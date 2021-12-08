@@ -16,8 +16,6 @@ ui.formSpinner = {
 
 (function () {
 
-    /*globals document, ui */
-
     var checkSpinnerForms;
 
     ui.formSpinner.Start = function () {

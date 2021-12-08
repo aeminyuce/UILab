@@ -15,8 +15,6 @@ ui.card = {
 
 (function () {
 
-    /*globals document, ui, setTimeout */
-
     ui.card.Start = function () {
 
         // Event Listeners

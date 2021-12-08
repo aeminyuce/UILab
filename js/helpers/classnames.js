@@ -50,8 +50,6 @@ ui.classnames = {
 
 (function () {
 
-    /*globals document, ui */
-
     ui.classnames.Start = function () {
 
         var arr, total, created, list, alerts, lastAddedWarning;

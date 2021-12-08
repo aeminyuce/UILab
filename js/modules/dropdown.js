@@ -49,8 +49,6 @@ ui.dropdown = {
 
 (function () {
 
-    /*globals window, document, ui, setTimeout, clearTimeout */
-
     var
         dropdownHoverTimer,
         dropdownOpenTimer,

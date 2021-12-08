@@ -21,8 +21,6 @@ ui.currencySpinner = {
 
 (function () {
 
-    /*globals document, ui */
-
     var cacheCurrencySpinner;
 
     ui.currencySpinner.Start = function () {

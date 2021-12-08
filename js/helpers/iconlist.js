@@ -35,8 +35,6 @@ ui.iconlist = {
 
 (function () {
 
-    /*globals window, document, ui, setTimeout */
-
     ui.iconlist.Start = function () {
 
         var tools, list, icons, totalIcons;

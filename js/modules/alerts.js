@@ -74,8 +74,6 @@ ui.alerts = {
 
 (function () {
 
-    /*globals window, document, ui, setTimeout */
-
     var
         pageYPos,
         cancelCloseDialog,

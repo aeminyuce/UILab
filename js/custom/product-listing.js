@@ -1,5 +1,3 @@
-/*globals window, ui, setTimeout */
-
 ui.lineChart.rows = 4;
 ui.lineChart.rowsHeight = 36;
 

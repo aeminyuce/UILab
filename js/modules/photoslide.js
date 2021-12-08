@@ -41,7 +41,6 @@ ui.photoslide = {
         dataSrcLists,
         loadedImages;
 
-    /*globals document, ui, Image */
     function photoSliderLoader() {
 
         var slider, j, images, dataSrc, nav, navDots, re;

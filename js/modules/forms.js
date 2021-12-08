@@ -47,8 +47,6 @@ ui.forms = {
 
 (function () {
 
-    /*globals document, ui, setTimeout */
-
     var
         clearForms,
         loadClearForms;

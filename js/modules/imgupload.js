@@ -71,8 +71,6 @@ ui.imgUpload = {
 
 (function () {
 
-    /*globals document, ui, setTimeout, Image, FileReader, FormData, atob, Uint8Array, Blob, confirm, alert */
-
     ui.imgUpload.Start = function () {
 
         var uploaders, savedImgs;

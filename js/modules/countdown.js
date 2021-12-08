@@ -17,8 +17,6 @@ ui.countdown = {
 
 (function () {
 
-    /*globals document, ui, setInterval, clearInterval */
-
     var countdownTimer;
 
     ui.countdown.Start = function () {

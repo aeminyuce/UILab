@@ -27,8 +27,6 @@ ui.loadingMask = {
 
 (function () {
 
-    /*globals ui, window, document, setTimeout */
-
     var
         maskItems = [],
         maskHolders = [];

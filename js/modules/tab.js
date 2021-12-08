@@ -31,8 +31,6 @@ ui.tab = {
 
 (function () {
 
-    /*globals document, ui, setTimeout */
-
     ui.tab.Start = function () {
 
         // Event Listeners

@@ -90,8 +90,6 @@ ui.carousel = {
 
 (function () {
 
-    /*globals window, document, ui, Image, setTimeout, clearTimeout, setInterval, clearInterval */
-
     var
         idCount = 0,
 
