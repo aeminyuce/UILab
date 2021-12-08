@@ -31,7 +31,13 @@
     "css-product-listing": "lessc css/custom/product-listing.less css/custom/product-listing.css",
     "css-sign-up-page": "lessc css/custom/sign-up-page.less css/custom/sign-up-page.css",
     "js": "babel js/core.js js/modules/*.js js/helpers/*.js --out-file js/ui.js",
-    "js:min": "babel js/core.js js/modules/*.js js/helpers/*.js --out-file js/ui.js --minified --no-comments"
+    "js:min": "babel js/core.js js/modules/*.js js/helpers/*.js --out-file js/ui.js --minified --no-comments",
+    "js-custom": "npm run js-dashboard & npm run js-landing-page & npm run js-product-listing & npm run js-real-estate-details & npm run js-useragents",
+    "js-dashboard": "babel js/custom/dashboard.js --out-file js/custom/dashboard-bundle.js",
+    "js-landing-page": "babel js/custom/landing-page.js --out-file js/custom/landing-page-bundle.js",
+    "js-product-listing": "babel js/custom/product-listing.js --out-files js/custom/product-listing-bundle.js",
+    "js-real-estate-details": "babel js/custom/real-estate-details.js --out-file js/custom/real-estate-details-bundle.js",
+    "js-useragents": "babel js/custom/useragents.js --out-file js/custom/useragents-bundle.js"
   },
   "repository": {
     "type": "git",
