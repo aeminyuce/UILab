@@ -207,7 +207,7 @@ each(@custom-static-grid-sizes, {
     }
     .ui-col-static when (@static-grids = true) {
         &:not(.ui-no-fluid):not(.ui-sm-fluid):not(.ui-xs-fluid) {
-            & > .ui-row,& > [class*="ui-col-"] { width: 100%; }
+            & > .ui-row,& > [class*="ui-col-"] { width: 100%; display: block; }
         }
     }
 
@@ -255,7 +255,7 @@ each(@custom-static-grid-sizes, {
     }
     .ui-col-static when (@static-grids = true) {
         &:not(.ui-no-fluid):not(.ui-xs-fluid) {
-            & > .ui-row,& > [class*="ui-col-"] { width: 100%; }
+            & > .ui-row,& > [class*="ui-col-"] { width: 100%; display: block; }
         }
     }
 }
@@ -303,15 +303,16 @@ each(@custom-static-grid-sizes, {
     }
     .ui-col-static when (@static-grids = true) {
         &:not(.ui-no-fluid) {
-            & > .ui-row,& > [class*="ui-col-"] { width: 100%; }
+            & > .ui-row,& > [class*="ui-col-"] { width: 100%; display: block; }
         }
     }
 }
 @media (@default-finish) {
     .ui-lg-fluid {
         &.ui-row > [class*="ui-col-"],[class*="ui-col-"]& { width: 100%; clear: both; }
+
         &.ui-col-static when (@static-grids = true) {
-            & > .ui-row,& > [class*="ui-col-"] { width: 100%; }
+            & > .ui-row,& > [class*="ui-col-"] { width: 100%; display: block; }
         }
 
         [class*="ui-offset-"]& { margin-left: 0; }
@@ -322,8 +323,9 @@ each(@custom-static-grid-sizes, {
 @media (@lg-finish) {
     .ui-xl-fluid {
         &.ui-row > [class*="ui-col-"],[class*="ui-col-"]& { width: 100%; clear: both; }
+
         &.ui-col-static when (@static-grids = true) {
-            & > .ui-row,& > [class*="ui-col-"] { width: 100%; }
+            & > .ui-row,& > [class*="ui-col-"] { width: 100%; display: block; }
         }
 
         [class*="ui-offset-"]& { margin-left: 0; }
