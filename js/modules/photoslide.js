@@ -36,8 +36,6 @@ ui.photoslide = {
 
 (function () {
 
-    'use strict';
-
     var
         count,
         dataSrcLists,

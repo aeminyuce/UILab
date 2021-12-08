@@ -80,7 +80,6 @@ ui.datatable = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui, sessionStorage, performance */
 
     var

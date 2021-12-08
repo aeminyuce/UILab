@@ -23,7 +23,6 @@ ui.headerSticky = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui */
 
     var

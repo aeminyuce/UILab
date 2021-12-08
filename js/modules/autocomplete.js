@@ -50,7 +50,6 @@ ui.autocomplete = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui, clearTimeout, setTimeout */
 
     ui.autocomplete.Start = function () {

@@ -39,7 +39,6 @@ ui.code = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui, setTimeout, FileReader */
 
     function fileSize(code) {

@@ -50,7 +50,6 @@ ui.classnames = {
 
 (function () {
 
-    'use strict';
     /*globals document, ui */
 
     ui.classnames.Start = function () {

@@ -43,7 +43,6 @@ ui.sidebar = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui, setTimeout */
 
     var getScrollPos;

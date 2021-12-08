@@ -77,7 +77,6 @@ ui.photoGallery = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui, Image, setTimeout, clearTimeout */
 
     var

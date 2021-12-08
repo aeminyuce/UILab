@@ -37,7 +37,6 @@ ui.requiredForms = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui */
 
     ui.requiredForms.Start = function () {

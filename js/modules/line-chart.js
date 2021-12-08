@@ -86,7 +86,6 @@ ui.lineChart = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui */
 
     var loadCharts;

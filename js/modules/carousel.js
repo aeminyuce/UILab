@@ -90,7 +90,6 @@ ui.carousel = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui, Image, setTimeout, clearTimeout, setInterval, clearInterval */
 
     var

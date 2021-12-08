@@ -20,7 +20,6 @@ ui.grid = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui */
 
     ui.grid.Start = function () {

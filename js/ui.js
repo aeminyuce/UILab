@@ -20,8 +20,6 @@ var ui = {
     eventDomChange: 'ui:domChange'
   },
   onload: function onload(callback) {
-    'use strict';
-
     var handlerFnc, i;
 
     handlerFnc = function handlerFnc(pt, pe) {
@@ -67,8 +65,6 @@ var ui = {
     }
   },
   on: function on(t, e, that, callback) {
-    'use strict';
-
     var arr, f, fnc, handlerFnc, targetEl, objName, isWindowEvent, l, customEvent, isMSIE, eName, delegate, i, j, k, m;
 
     fnc = function fnc(e) {
@@ -176,8 +172,6 @@ var ui = {
     }
   },
   off: function off(t, e) {
-    'use strict';
-
     var arr, fnc, handlerFnc, l, i, j, k;
 
     fnc = function fnc(e) {
@@ -210,8 +204,6 @@ var ui = {
     }
   },
   trigger: function trigger(t, e) {
-    'use strict';
-
     var arr, fnc, event, l, i, j;
 
     fnc = function fnc(e) {
@@ -236,8 +228,6 @@ var ui = {
     }
   },
   hasClass: function hasClass(t, name) {
-    'use strict';
-
     var re,
         l = ui.find(t),
         i;
@@ -253,8 +243,6 @@ var ui = {
     return re;
   },
   addClass: function addClass(t, name) {
-    'use strict';
-
     var arr,
         l = ui.find(t),
         i,
@@ -283,8 +271,6 @@ var ui = {
     }
   },
   removeClass: function removeClass(t, name) {
-    'use strict';
-
     var l = ui.find(t),
         i,
         j,
@@ -309,8 +295,6 @@ var ui = {
     }
   },
   toggleClass: function toggleClass(t, name) {
-    'use strict';
-
     var isSvgElements,
         arr,
         newArr,
@@ -355,8 +339,6 @@ var ui = {
     }
   },
   show: function show(t) {
-    'use strict';
-
     var l = ui.find(t),
         i;
 
@@ -365,8 +347,6 @@ var ui = {
     }
   },
   hide: function hide(t) {
-    'use strict';
-
     var l = ui.find(t),
         i;
 
@@ -375,8 +355,6 @@ var ui = {
     }
   },
   each: function each(t, callback) {
-    'use strict';
-
     var l = ui.find(t),
         i;
 
@@ -385,8 +363,6 @@ var ui = {
     }
   },
   closest: function closest(t, outer) {
-    'use strict';
-
     var l, o, i, j, p;
 
     if (outer instanceof Object) {
@@ -414,8 +390,6 @@ var ui = {
     return [];
   },
   find: function find(item, outer) {
-    'use strict';
-
     var i,
         objName,
         call,
@@ -451,10 +425,10 @@ var ui = {
     }
 
     if (outer !== undefined) {
-      if (!outer instanceof Object) {
-        outerEl = document.querySelectorAll(outer);
-      } else {
+      if (outer instanceof Object) {
         outerEl = outer;
+      } else {
+        outerEl = document.querySelectorAll(outer);
       }
 
       if (outerEl.length !== undefined && Array.prototype.slice.call(outerEl).length === 1) {
@@ -481,8 +455,6 @@ var ui = {
     return document.querySelectorAll(item);
   },
   ajax: function ajax(props) {
-    'use strict';
-
     if (props.url === undefined) {
       return;
     }
@@ -592,8 +564,6 @@ ui.userAgents = {
 };
 
 (function () {
-  'use strict';
-
   ui.onload(function () {
     var ua, isMSIE;
     ua = navigator.userAgent.toLowerCase();
@@ -690,8 +660,6 @@ ui.darkMode = {
 };
 
 (function () {
-  'use strict';
-
   ui.onload(function () {
     if (ui.userAgents.ie) {
       return;
@@ -776,8 +744,6 @@ ui.effects = {
 };
 
 (function () {
-  'use strict';
-
   var pauseTransitionsTimer;
   ui.on(window, 'resize scroll', function (e) {
     if (!ui.effects.pauseAll) {
@@ -879,8 +845,6 @@ ui.alerts = {
 };
 
 (function () {
-  'use strict';
-
   var pageYPos,
       cancelCloseDialog,
       messageQueue = [];
@@ -1174,8 +1138,6 @@ ui.autocomplete = {
 };
 
 (function () {
-  'use strict';
-
   ui.autocomplete.Start = function () {
     var customLowerCase,
         formEventListeners,
@@ -1497,8 +1459,6 @@ ui.calendar = {
 };
 
 (function () {
-  'use strict';
-
   var checkCalendars;
 
   ui.calendar.Start = function () {
@@ -2053,8 +2013,6 @@ ui.card = {
 };
 
 (function () {
-  'use strict';
-
   ui.card.Start = function () {
     ui.on(document, 'click', '.' + ui.card.targetClose, function () {
       var parentEl = this.parentElement;
@@ -2122,8 +2080,6 @@ ui.carousel = {
 };
 
 (function () {
-  'use strict';
-
   var idCount = 0,
       cols = [],
       colsXL = [],
@@ -2810,8 +2766,6 @@ ui.countdown = {
 };
 
 (function () {
-  'use strict';
-
   var countdownTimer;
 
   ui.countdown.Start = function () {
@@ -2959,8 +2913,6 @@ ui.currencySpinner = {
 };
 
 (function () {
-  'use strict';
-
   var cacheCurrencySpinner;
 
   ui.currencySpinner.Start = function () {
@@ -3179,8 +3131,6 @@ ui.datatable = {
 };
 
 (function () {
-  'use strict';
-
   var testStorage = true,
       startListID = 0,
       loadedVals = [],
@@ -3787,8 +3737,6 @@ ui.donutChart = {
 };
 
 (function () {
-  'use strict';
-
   var loadCharts;
 
   ui.donutChart.Start = function () {
@@ -3908,8 +3856,6 @@ ui.dropdown = {
 };
 
 (function () {
-  'use strict';
-
   var dropdownHoverTimer, dropdownOpenTimer, dropdownLeaveTimer, dropdownCloseTimer, listStyles, selectOpened, selectInContent, getScrollPos;
 
   function dropdownClose(innerParent) {
@@ -4183,8 +4129,6 @@ ui.dualMultiSelect = {
 };
 
 (function () {
-  'use strict';
-
   var resetOptions, loadSelects, movetoSource;
 
   ui.dualMultiSelect.Start = function () {
@@ -4400,8 +4344,6 @@ ui.formSpinner = {
 };
 
 (function () {
-  'use strict';
-
   var checkSpinnerForms;
 
   ui.formSpinner.Start = function () {
@@ -4472,8 +4414,6 @@ ui.forms = {
 };
 
 (function () {
-  'use strict';
-
   var clearForms, loadClearForms;
 
   ui.forms.Start = function () {
@@ -4699,8 +4639,6 @@ ui.photoGallery = {
 };
 
 (function () {
-  'use strict';
-
   var imgTouchmove,
       pageTouchmove = false,
       pageTouchmoveTimer;
@@ -5201,8 +5139,6 @@ ui.grid = {
 };
 
 (function () {
-  'use strict';
-
   ui.grid.Start = function () {
     var fnc, o, p, siblings, i;
 
@@ -5271,8 +5207,6 @@ ui.headerSticky = {
 };
 
 (function () {
-  'use strict';
-
   var stickyLoad, stickyClear, classList, classes, size, header, body;
 
   stickyClear = function stickyClear() {
@@ -5402,8 +5336,6 @@ ui.imgUpload = {
 };
 
 (function () {
-  'use strict';
-
   ui.imgUpload.Start = function () {
     var uploaders, savedImgs;
 
@@ -5857,8 +5789,6 @@ ui.lineChart = {
 };
 
 (function () {
-  'use strict';
-
   var loadCharts;
 
   ui.lineChart.Start = function () {
@@ -6186,8 +6116,6 @@ ui.loadingMask = {
 };
 
 (function () {
-  'use strict';
-
   var maskItems = [],
       maskHolders = [];
 
@@ -6273,8 +6201,6 @@ ui.map = {
 };
 
 (function () {
-  'use strict';
-
   ui.map.Start = function () {
     var map, arr, data, items, opacity;
     map = ui.find('.' + ui.map.target);
@@ -6379,8 +6305,6 @@ ui.modal = {
 };
 
 (function () {
-  'use strict';
-
   var pageYPos;
 
   function modalResizer() {
@@ -6735,8 +6659,6 @@ ui.photoslide = {
 };
 
 (function () {
-  'use strict';
-
   var count, dataSrcLists, loadedImages;
 
   function photoSliderLoader() {
@@ -6880,8 +6802,6 @@ ui.pieChart = {
 };
 
 (function () {
-  'use strict';
-
   var loadCharts;
 
   function chartsResizer() {
@@ -7041,8 +6961,6 @@ ui.requiredForms = {
 };
 
 (function () {
-  'use strict';
-
   ui.requiredForms.Start = function () {
     function required(that, type) {
       var p, parentType, checkHolder, checkForms, holderForms, next, showMsg, hideErr, showErr, min, max, val, reMail, radios, radiosCheck, i;
@@ -7292,8 +7210,6 @@ ui.sidebar = {
 };
 
 (function () {
-  'use strict';
-
   var getScrollPos;
 
   ui.sidebar.close = function (panel) {
@@ -7431,8 +7347,6 @@ ui.tab = {
 };
 
 (function () {
-  'use strict';
-
   ui.tab.Start = function () {
     ui.on(document, 'click', '.' + ui.tab.targetParent + ' .' + ui.tab.targetTab, function (e) {
       e.preventDefault();
@@ -7607,8 +7521,6 @@ ui.textareaCounter = {
 };
 
 (function () {
-  'use strict';
-
   var loadCounters;
 
   ui.textareaCounter.Start = function () {
@@ -7696,8 +7608,6 @@ ui.tooltip = {
 };
 
 (function () {
-  'use strict';
-
   var removeTimer, removeTimer2x, pageTouchmoveTimer, touchControl, isScrolling;
 
   function removeFnc() {
@@ -7887,8 +7797,6 @@ ui.topButton = {
 };
 
 (function () {
-  'use strict';
-
   function togglerFnc() {
     var topBtn = ui.find('.' + ui.topButton.target);
 
@@ -7953,8 +7861,6 @@ ui.weather = {
 };
 
 (function () {
-  'use strict';
-
   var dateLoaded,
       clockLoaded,
       loadGraphs,
@@ -8169,8 +8075,6 @@ ui.classnames = {
 };
 
 (function () {
-  'use strict';
-
   ui.classnames.Start = function () {
     var arr, total, created, list, alerts, lastAddedWarning;
     arr = [];
@@ -8427,8 +8331,6 @@ ui.code = {
 };
 
 (function () {
-  'use strict';
-
   function fileSize(code) {
     var fileSize = encodeURI(code).split(/%..|./).length - 1;
     fileSize = fileSize / 1000;
@@ -8698,8 +8600,6 @@ ui.iconlist = {
 };
 
 (function () {
-  'use strict';
-
   ui.iconlist.Start = function () {
     var tools, list, icons, totalIcons;
     list = ui.find('.' + ui.iconlist.target);

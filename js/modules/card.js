@@ -15,7 +15,6 @@ ui.card = {
 
 (function () {
 
-    'use strict';
     /*globals document, ui, setTimeout */
 
     ui.card.Start = function () {

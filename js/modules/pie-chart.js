@@ -42,7 +42,6 @@ ui.pieChart = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui, setTimeout */
 
     var loadCharts;

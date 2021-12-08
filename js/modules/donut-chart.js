@@ -25,7 +25,6 @@ ui.donutChart = {
 
 (function () {
 
-    'use strict';
     /*globals document, ui, setTimeout */
 
     var loadCharts;

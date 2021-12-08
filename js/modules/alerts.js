@@ -74,7 +74,6 @@ ui.alerts = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui, setTimeout */
 
     var

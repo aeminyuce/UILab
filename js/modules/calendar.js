@@ -99,7 +99,6 @@ ui.calendar = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui, setTimeout */
 
     var checkCalendars;

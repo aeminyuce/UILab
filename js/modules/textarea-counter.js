@@ -22,7 +22,6 @@ ui.textareaCounter = {
 
 (function () {
 
-    'use strict';
     /*globals document, ui, setTimeout */
 
     var loadCounters;

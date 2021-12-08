@@ -35,7 +35,6 @@ ui.iconlist = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui, setTimeout */
 
     ui.iconlist.Start = function () {

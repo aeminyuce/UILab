@@ -45,7 +45,6 @@ ui.weather = {
 
 (function () {
 
-    'use strict';
     /*globals document, ui, setInterval */
 
     var

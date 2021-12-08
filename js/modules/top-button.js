@@ -26,7 +26,6 @@ ui.topButton = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui, setTimeout */
 
     function togglerFnc() {

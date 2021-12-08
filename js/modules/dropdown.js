@@ -49,7 +49,6 @@ ui.dropdown = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui, setTimeout, clearTimeout */
 
     var

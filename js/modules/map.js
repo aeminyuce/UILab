@@ -26,7 +26,6 @@ ui.map = {
 
 (function () {
 
-    'use strict';
     /*globals window, ui */
 
     ui.map.Start = function () {

@@ -21,7 +21,6 @@ ui.currencySpinner = {
 
 (function () {
 
-    'use strict';
     /*globals document, ui */
 
     var cacheCurrencySpinner;

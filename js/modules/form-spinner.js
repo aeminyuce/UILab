@@ -16,7 +16,6 @@ ui.formSpinner = {
 
 (function () {
 
-    'use strict';
     /*globals document, ui */
 
     var checkSpinnerForms;

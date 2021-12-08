@@ -83,7 +83,6 @@ ui.modal = {
 
 (function () {
 
-    'use strict';
     /*globals window, document, ui, setTimeout */
 
     var pageYPos;

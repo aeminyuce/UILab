@@ -31,7 +31,6 @@ ui.tab = {
 
 (function () {
 
-    'use strict';
     /*globals document, ui, setTimeout */
 
     ui.tab.Start = function () {

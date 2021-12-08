@@ -18,7 +18,6 @@ ui.dualMultiSelect = {
 
 (function () {
 
-    'use strict';
     /*globals document, ui, setTimeout */
 
     var

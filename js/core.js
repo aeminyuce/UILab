@@ -40,8 +40,6 @@ var ui = {
     },
     onload: (callback) => {
 
-        'use strict';
-
         var handlerFnc, i;
 
         handlerFnc = (pt, pe) => {
@@ -91,8 +89,6 @@ var ui = {
 
     },
     on: (t, e, that, callback) => {
-
-        'use strict';
 
         var arr, f, fnc, handlerFnc, targetEl, objName, isWindowEvent, l, customEvent, isMSIE, eName, delegate, i, j, k, m;
 
@@ -225,8 +221,6 @@ var ui = {
     },
     off: (t, e) => {
 
-        'use strict';
-
         var arr, fnc, handlerFnc, l, i, j, k;
 
         fnc = (e) => {
@@ -273,8 +267,6 @@ var ui = {
     },
     trigger: (t, e) => {
 
-        'use strict';
-
         var arr, fnc, event, l, i, j;
 
         fnc = (e) => {
@@ -304,8 +296,6 @@ var ui = {
     },
     hasClass: (t, name) => {
 
-        'use strict';
-
         var re, l = ui.find(t), i;
 
         for (i = 0; i < l.length; i++) {
@@ -322,8 +312,6 @@ var ui = {
 
     },
     addClass: (t, name) => {
-
-        'use strict';
 
         var arr, l = ui.find(t), i, j, re = new RegExp('^\\s+|\\s+$');
 
@@ -360,8 +348,6 @@ var ui = {
     },
     removeClass: (t, name) => {
 
-        'use strict';
-
         var l = ui.find(t), i, j, rex = new RegExp('^\\s+|\\s+$'), re;
 
         name = name.split(' ');
@@ -389,8 +375,6 @@ var ui = {
 
     },
     toggleClass: (t, name) => {
-
-        'use strict';
 
         var isSvgElements, arr, newArr, index, l = ui.find(t), i, j, re = new RegExp('^\\s+|\\s+$');
 
@@ -434,15 +418,11 @@ var ui = {
     },
     show: (t) => {
 
-        'use strict';
-
         var l = ui.find(t), i;
         for (i = 0; i < l.length; i++) { l[i].style.display = 'block'; }
 
     },
     hide: (t) => {
-
-        'use strict';
 
         var l = ui.find(t), i;
         for (i = 0; i < l.length; i++) { l[i].style.display = 'none'; }
@@ -450,15 +430,11 @@ var ui = {
     },
     each: (t, callback) => {
 
-        'use strict';
-
         var l = ui.find(t), i;
         for (i = 0; i < l.length; i++) { callback.call(l[i], i); }
 
     },
     closest: (t, outer) => {
-
-        'use strict';
 
         var l, o, i, j, p;
 
@@ -479,8 +455,6 @@ var ui = {
 
     },
     find: (item, outer) => {
-
-        'use strict';
 
         var i, objName, call, outerEl, outerElIndex, foundEl = [];
 
@@ -509,10 +483,12 @@ var ui = {
 
         if (outer !== undefined) { // find items in outer elements
 
-            if (!outer instanceof Object) {
-                outerEl = document.querySelectorAll(outer); // convert to array
+            if (outer instanceof Object) {
+                outerEl = outer;
 
-            } else { outerEl = outer; }
+            } else {
+                outerEl = document.querySelectorAll(outer); // convert to array
+            }
 
             // discard "this" object && form object (form element not returns "this", it returns all form elements)
             if (outerEl.length !== undefined && Array.prototype.slice.call(outerEl).length === 1) {
@@ -554,8 +530,6 @@ var ui = {
             props.data
             props.callback
         */
-
-        'use strict';
 
         if (props.url === undefined) { return; }
 
@@ -701,8 +675,6 @@ ui.userAgents = {
 
 (() => {
 
-    'use strict';
-
     ui.onload(() => {
 
         var ua, isMSIE;
@@ -839,8 +811,6 @@ ui.darkMode = {
 
 (() => {
 
-    'use strict';
-
     ui.onload(() => {
 
         if (ui.userAgents.ie) { return; } // change event listener for darkColorScheme not supported on IE!
@@ -967,8 +937,6 @@ ui.effects = {
 };
 
 (() => {
-
-    'use strict';
 
     var pauseTransitionsTimer;
 

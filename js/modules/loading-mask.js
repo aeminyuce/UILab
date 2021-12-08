@@ -27,7 +27,6 @@ ui.loadingMask = {
 
 (function () {
 
-    'use strict';
     /*globals ui, window, document, setTimeout */
 
     var
