@@ -167,10 +167,6 @@
                             <span class="ui-sp-15"></span>
 
                             <div class="ui-sm-align-l ui-form-lg ui-ease-1st-btn">
-                                <a href="?p=code" class="ui-btn ui-btn-ghost ui-btn-sm-fluid ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle">
-                                    <svg class="ui-icon ui-m-5-r"><use href="#code"/></svg>
-                                    Code
-                                </a>
                                 <a href="?p=classnames" class="ui-btn ui-btn-ghost ui-btn-sm-fluid ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle">
                                     <svg class="ui-icon ui-m-5-r"><use href="#brackets-curly"/></svg>
                                     Classnames

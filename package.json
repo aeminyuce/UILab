@@ -18,7 +18,10 @@
   "less": "css/ui.less",
   "main": "js/ui.js",
   "scripts": {
-    "build-js": "babel js/core.js js/modules/*.js js/helpers/*.js --out-file js/ui.js"
+
+    "js": "babel js/core.js js/modules/*.js js/helpers/*.js --out-file js/ui.js",
+    "js:min": "babel js/core.js js/modules/*.js js/helpers/*.js --out-file js/ui.js --minified --no-comments"
+
   },
   "repository": {
     "type": "git",

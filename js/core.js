@@ -89,7 +89,7 @@ var ui = {
     },
     on: (t, e, that, callback) => {
 
-        var arr, f, fnc, handlerFnc, targetEl, objName, isWindowEvent, l, customEvent, isMSIE, eName, delegate, i, j, k, m;
+        var arr, f, fnc, handlerFnc, targetEl, objName, isWindowEvent, l, customEvent, eName, delegate, ua, i, j, k, m;
 
         fnc = (e) => {
 
@@ -130,6 +130,7 @@ var ui = {
             } else {
 
                 f = that;
+                ua = navigator.userAgent.toLowerCase();
 
                 // filter ui.on(object, event, fn) event listeners
                 if (t instanceof Object && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') {
@@ -139,9 +140,7 @@ var ui = {
                     if (isWindowEvent) {
 
                         // disable ie duplicate window event firing on ready
-                        isMSIE = /*@cc_on!@*/false;
-
-                        if (isMSIE || !!document.documentMode || navigator.userAgent.toLowerCase().indexOf('edge') > -1) {
+                        if (ua.indexOf("MSIE ") > 0 || !!document.documentMode || ua.indexOf('edge') > -1) {
 
                             setTimeout(() => {
                                 l.addEventListener(e, that, true);
@@ -676,9 +675,7 @@ ui.userAgents = {
 
     ui.onload(() => {
 
-        var ua, isMSIE;
-
-        ua = navigator.userAgent.toLowerCase();
+        var ua = navigator.userAgent.toLowerCase();
         ui.userAgents.userLang = (navigator.language || navigator.userLanguage).split('-')[0];
 
         if (ua.indexOf('firefox') > -1) {
@@ -704,8 +701,7 @@ ui.userAgents = {
 
         }
 
-        isMSIE = /*@cc_on!@*/false;
-        if (isMSIE || !!document.documentMode || ua.indexOf('edge') > -1) {
+        if (ua.indexOf("MSIE ") > 0 || !!document.documentMode || ua.indexOf('edge') > -1) {
 
             ui.userAgents.ie = true;
 

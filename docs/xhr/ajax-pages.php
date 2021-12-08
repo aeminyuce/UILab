@@ -3,10 +3,6 @@
     // home
     include ('../index.php');
 
-    include ('../code.php');
-    include ('../classnames.php');
-    include ('../iconlist.php');
-
     // menu pages
     include ('../alerts.php');
     include ('../avatars.php');
@@ -56,5 +52,9 @@
     // xhr pages
     include ('../ajax-modal.php');
     include ('../ajax-products.php');
+
+    // helpers
+    include ('../classnames.php');
+    include ('../iconlist.php');
 
 ?>

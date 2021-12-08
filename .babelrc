@@ -1,5 +1,5 @@
-{
-    "comments": false, // remove comments
+{ // https://babeljs.io/docs/en/options
+
     "sourceType": "unambiguous", // use scripts with modules together
     "presets": [
         [
@@ -10,4 +10,5 @@
             }
         ]
     ]
+
 }
