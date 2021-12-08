@@ -701,26 +701,26 @@ html .ui-row {
   display: table;
   table-layout: fixed;
 }
-.ui-col-static > .row,
-.ui-col-static > [class*="col-"] {
+.ui-col-static > .ui-row,
+.ui-col-static > [class*="ui-col-"] {
   vertical-align: top;
   display: table-cell;
 }
-.ui-col-static > .row {
+.ui-col-static > .ui-row {
   width: 100%;
   margin-left: inherit;
   margin-right: inherit;
   table-layout: fixed;
 }
-.ui-col-static > .row:before,
-.ui-col-static > .row:after {
+.ui-col-static > .ui-row:before,
+.ui-col-static > .ui-row:after {
   content: "" !important;
   display: table !important;
 }
-.ui-col-static > .row:after {
+.ui-col-static > .ui-row:after {
   clear: both !important;
 }
-.ui-col-static > .row > [class*="col-"]:not(.col-static):not(.col-12) {
+.ui-col-static > .ui-row > [class*="ui-col-"]:not(.ui-col-static):not(.ui-col-12) {
   float: left;
 }
 .ui-col-50 {
