@@ -29,6 +29,10 @@
     <link href="../css/ui.css?v=<?php echo filemtime('../css/ui.css'); ?>" rel="stylesheet">
     <script src="../js/ui.js?v=<?php echo filemtime('../js/ui.js'); ?>"></script>
 
+    <!-- helpers -->
+    <script src="../js/helpers/classnames-bundle.js?v=<?php echo filemtime('../js/helpers/classnames-bundle.js'); ?>"></script>
+    <script src="../js/helpers/iconlist-bundle.js?v=<?php echo filemtime('../js/helpers/iconlist-bundle.js'); ?>"></script>
+
 </head>
 
 <body>

@@ -1,4 +1,3 @@
-// Toggle Menu
 var testStorage;
 
 function dashboardMenuToggler(onload) {
@@ -7,7 +6,6 @@ function dashboardMenuToggler(onload) {
   menuInner = ui.find('.dashboard-menu > div')[0];
 
   toggleClasses = function toggleClasses() {
-    // toggle classnames
     ui.toggleClass(menu, 'ui-hidden ui-visible-lg');
     ui.toggleClass('header', 'dashboard-menu-opened');
     ui.toggleClass('.ui-sidebar-show-l', 'ui-hidden-lg');
@@ -15,10 +13,8 @@ function dashboardMenuToggler(onload) {
   };
 
   if (ui.hasClass(menu, 'ui-hidden')) {
-    // show
     state = 'opened';
-    toggleClasses(); // toggle classnames
-
+    toggleClasses();
     setTimeout(function () {
       menu.style.width = '250px';
       menuInner.style.transform = 'translateX(0)';
@@ -28,10 +24,9 @@ function dashboardMenuToggler(onload) {
       }, 0);
     }, 0);
   } else {
-    // hide
     state = 'closed';
     menu.style.width = '0';
-    menuInner.style.transform = 'translateX(-100%)'; // toggle classnames
+    menuInner.style.transform = 'translateX(-100%)';
 
     if (onload) {
       setTimeout(toggleClasses, ui.globals.slow);
@@ -41,8 +36,8 @@ function dashboardMenuToggler(onload) {
   }
 
   setTimeout(function () {
-    ui.trigger(document, ui.globals.eventDomChange); // set custom event
-  }, ui.globals.slow); // set menu state
+    ui.trigger(document, ui.globals.eventDomChange);
+  }, ui.globals.slow);
 
   if (testStorage && sessionStorage !== undefined) {
     sessionStorage.setItem('dashboard-left-menu', state);
@@ -51,8 +46,7 @@ function dashboardMenuToggler(onload) {
 
 ui.on(document, 'click', '.dashboard-menu-show,.dashboard-menu-hide', dashboardMenuToggler);
 ui.onload(function () {
-  // check stored menu position
-  testStorage = true; // test for storage is supported?
+  testStorage = true;
 
   try {
     sessionStorage.setItem('dashboard-left-menu-test', 0);
