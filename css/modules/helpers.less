@@ -1,5 +1,4 @@
-// out: false
-/* helpers */ @import (reference) '../core.less';
+/* helpers */
 
 @shadow-sm:                             0 1px 3px fade(@black, 5%);
 @shadow:                                0 1px 3px fade(@black, 10%);
@@ -100,7 +99,6 @@
 
 .ui-round {
     border-radius: @round;
-    &:extend([class*="ui-round-"]);
 
     & > .ui-round,& > * > .ui-round { border-radius: (@round - 1); }
 
@@ -115,10 +113,7 @@
     & > .ui-round-l,& > * > .ui-round-l { border-radius: (@round - 1) 0 0 (@round - 1); }
 }
 
-.ui-circle {
-    border-radius: @circle;
-    &:extend([class*="ui-circle-"]);
-}
+.ui-circle { border-radius: @circle; }
 
 .ui-shadow {
     box-shadow: @shadow;

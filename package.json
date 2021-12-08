@@ -18,10 +18,20 @@
   "less": "css/ui.less",
   "main": "js/ui.js",
   "scripts": {
-
+    "css": "lessc css/ui.less css/ui.css",
+    "css:min": "lessc css/ui.less css/ui.css --clean-css",
+    "css-helpers": "lessc css/helpers/iconlist.less css/helpers/iconlist.css",
+    "css-custom": "npm run css-dashboard & npm run css-error-pages & npm run css-landing-page & npm run css-login-page & npm run css-movie-app & npm run css-pricing-table & npm run css-product-listing & npm run css-sign-up-page",
+    "css-dashboard": "lessc css/custom/dashboard.less css/custom/dashboard.css",
+    "css-error-pages": "lessc css/custom/error-pages.less css/custom/error-pages.css",
+    "css-landing-page": "lessc css/custom/landing-page.less css/custom/landing-page.css",
+    "css-login-page": "lessc css/custom/login-page.less css/custom/login-page.css",
+    "css-movie-app": "lessc css/custom/movie-app.less css/custom/movie-app.css",
+    "css-pricing-table": "lessc css/custom/pricing-table.less css/custom/pricing-table.css",
+    "css-product-listing": "lessc css/custom/product-listing.less css/custom/product-listing.css",
+    "css-sign-up-page": "lessc css/custom/sign-up-page.less css/custom/sign-up-page.css",
     "js": "babel js/core.js js/modules/*.js js/helpers/*.js --out-file js/ui.js",
     "js:min": "babel js/core.js js/modules/*.js js/helpers/*.js --out-file js/ui.js --minified --no-comments"
-
   },
   "repository": {
     "type": "git",
@@ -37,7 +47,9 @@
     "@babel/eslint-parser": "^7.16.3",
     "@babel/node": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
-    "eslint": "^8.4.1"
+    "eslint": "^8.4.1",
+    "less": "^4.1.2",
+    "less-plugin-clean-css": "^1.5.1"
   },
   "dependencies": {
     "@fontsource/archivo": "^4.5.1",
