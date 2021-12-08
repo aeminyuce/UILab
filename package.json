@@ -5,9 +5,6 @@
   "author": "A. Emin YUCE",
   "version": "1.0.0",
   "license": "MIT",
-  "style": "css/_import.css",
-  "less": "css_import.less",
-  "main": "js/_import.js",
   "keywords": [
     "responsive",
     "design system",
@@ -17,6 +14,9 @@
     "less",
     "javascript"
   ],
+  "style": "css/ui.css",
+  "less": "css/ui.less",
+  "main": "js/ui.js",
   "scripts": {
     "build-js": "babel js/core.js js/modules/*.js js/helpers/*.js --out-file js/ui.js"
   },
