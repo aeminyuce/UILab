@@ -1,5 +1,5 @@
 <!-- custom CSS -->
-<link href="../css/custom/sign-up-page.css?v=<?php echo filemtime('../css/custom/sign-up-page.css'); ?>" rel="stylesheet"/>
+<link href="../css/custom/sign-up-page.css?v=<?php echo filemtime('../css/custom/sign-up-page.css'); ?>" rel="stylesheet">
 
 <main class="ui-container ui-no-gutter">
 

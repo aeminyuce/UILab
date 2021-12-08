@@ -1,5 +1,5 @@
 <!-- custom CSS -->
-<link href="../css/custom/dashboard.css?v=<?php echo filemtime('../css/custom/dashboard.css'); ?>" rel="stylesheet"/>
+<link href="../css/custom/dashboard.css?v=<?php echo filemtime('../css/custom/dashboard.css'); ?>" rel="stylesheet">
 
 <!-- custom JS -->
 <script src="../js/custom/dashboard.js?v=<?php echo filemtime('../js/custom/dashboard.js'); ?>"></script>

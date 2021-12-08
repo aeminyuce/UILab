@@ -8,25 +8,25 @@
     <title>UI lab is a modular design system for developing web interfaces fastly!</title>
 
     <meta name="keywords" content="responsive, design system, ui examples, web, css, less, javascript">
-    <meta name="description" content="UI lab is a modular design system for developing web interfaces fastly!" />
-    <meta name="author" content="A. Emin YUCE"/>
+    <meta name="description" content="UI lab is a modular design system for developing web interfaces fastly!">
+    <meta name="author" content="A. Emin YUCE">
 
     <!-- charset -->
     <meta charset="utf-8" />
 
     <!-- scaling -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- no browser caching -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
+    <!-- no caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
 
     <!-- favicon -->
-    <link rel="ui-icon" href="img/favicon.ico?v=<?php echo filemtime('img/favicon.ico'); ?>" />
+    <link rel="ui-icon" href="img/favicon.ico">
 
     <!-- UI -->
-    <link href="../css/ui.css?v=<?php echo filemtime('../css/ui.css'); ?>" rel="stylesheet"/>
+    <link href="../css/ui.css?v=<?php echo filemtime('../css/ui.css'); ?>" rel="stylesheet">
     <script src="../js/ui.js?v=<?php echo filemtime('../js/ui.js'); ?>"></script>
 
 </head>

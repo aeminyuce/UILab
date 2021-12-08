@@ -1,5 +1,5 @@
 <!-- custom CSS -->
-<link href="../css/custom/error-pages.css?v=<?php echo filemtime('../css/custom/error-pages.css'); ?>" rel="stylesheet"/>
+<link href="../css/custom/error-pages.css?v=<?php echo filemtime('../css/custom/error-pages.css'); ?>" rel="stylesheet">
 
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">

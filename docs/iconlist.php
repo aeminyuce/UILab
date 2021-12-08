@@ -1,5 +1,5 @@
 <!-- custom CSS -->
-<link href="../css/helpers/iconlist.css?v=<?php echo filemtime('../css/helpers/iconlist.css'); ?>" rel="stylesheet"/>
+<link href="../css/helpers/iconlist.css?v=<?php echo filemtime('../css/helpers/iconlist.css'); ?>" rel="stylesheet">
 
 <!-- custom JS -->
 <!-- imported on index! -->
