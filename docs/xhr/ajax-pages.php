@@ -3,7 +3,7 @@
     // home
     include ('../index.php');
 
-    // menu pages
+    // docs
     include ('../alerts.php');
     include ('../avatars.php');
     include ('../breadcrumbs.php');
@@ -39,22 +39,22 @@
     include ('../typography.php');
     include ('../weather.php');
 
-    // layout pages
-    include ('../login-page.php');
-    include ('../sign-up-page.php');
-    include ('../dashboard.php');
-    include ('../landing-page.php');
-    include ('../movie-app.php');
-    include ('../product-listing.php');
-    include ('../real-estate-details.php');
-    include ('../photo-albums.php');
+    // helpers
+    include ('../classnames.php');
+    include ('../iconlist.php');
+
+    // custom pages
+    include ('../custom/dashboard.php');
+    include ('../custom/landing-page.php');
+    include ('../custom/login-page.php');
+    include ('../custom/movie-app.php');
+    include ('../custom/photo-albums.php');
+    include ('../custom/product-listing.php');
+    include ('../custom/real-estate-details.php');
+    include ('../custom/sign-up-page.php');
 
     // xhr pages
     include ('../ajax-modal.php');
     include ('../ajax-products.php');
-
-    // helpers
-    include ('../classnames.php');
-    include ('../iconlist.php');
 
 ?>

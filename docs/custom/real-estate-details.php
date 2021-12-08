@@ -1,5 +1,5 @@
 <!-- custom JS -->
-<script src="../js/custom/real-estate-details.js?v=<?php echo filemtime('../js/custom/real-estate-details.js'); ?>"></script>
+<script src="../js/custom/real-estate-details-bundle.js?v=<?php echo filemtime('../js/custom/real-estate-details-bundle.js'); ?>"></script>
 
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed ui-p-30-v">

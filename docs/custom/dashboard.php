@@ -2,7 +2,7 @@
 <link href="../css/custom/dashboard.css?v=<?php echo filemtime('../css/custom/dashboard.css'); ?>" rel="stylesheet">
 
 <!-- custom JS -->
-<script src="../js/custom/dashboard.js?v=<?php echo filemtime('../js/custom/dashboard.js'); ?>"></script>
+<script src="../js/custom/dashboard-bundle.js?v=<?php echo filemtime('../js/custom/dashboard-bundle.js'); ?>"></script>
 
 <main class="ui-container ui-no-gutter">
 

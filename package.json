@@ -19,7 +19,7 @@
   "main": "js/ui.js",
   "scripts": {
     "css": "lessc css/ui.less css/ui.css",
-    "css:min": "lessc css/ui.less css/ui.css --clean-css",
+    "css:min": "lessc css/ui.less css/ui.css --compress",
     "css-helpers": "lessc css/helpers/iconlist.less css/helpers/iconlist.css",
     "css-custom": "npm run css-dashboard & npm run css-error-pages & npm run css-landing-page & npm run css-login-page & npm run css-movie-app & npm run css-pricing-table & npm run css-product-listing & npm run css-sign-up-page",
     "css-dashboard": "lessc css/custom/dashboard.less css/custom/dashboard.css",
@@ -35,7 +35,7 @@
     "js-custom": "npm run js-dashboard & npm run js-landing-page & npm run js-product-listing & npm run js-real-estate-details & npm run js-useragents",
     "js-dashboard": "babel js/custom/dashboard.js --out-file js/custom/dashboard-bundle.js",
     "js-landing-page": "babel js/custom/landing-page.js --out-file js/custom/landing-page-bundle.js",
-    "js-product-listing": "babel js/custom/product-listing.js --out-files js/custom/product-listing-bundle.js",
+    "js-product-listing": "babel js/custom/product-listing.js --out-file js/custom/product-listing-bundle.js",
     "js-real-estate-details": "babel js/custom/real-estate-details.js --out-file js/custom/real-estate-details-bundle.js",
     "js-useragents": "babel js/custom/useragents.js --out-file js/custom/useragents-bundle.js"
   },
@@ -54,8 +54,7 @@
     "@babel/node": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "eslint": "^8.4.1",
-    "less": "^4.1.2",
-    "less-plugin-clean-css": "^1.5.1"
+    "less": "^4.1.2"
   },
   "dependencies": {
     "@fontsource/archivo": "^4.5.1",

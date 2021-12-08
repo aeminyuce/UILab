@@ -2,7 +2,7 @@
 <link href="../css/custom/product-listing.css?v=<?php echo filemtime('../css/custom/product-listing.css'); ?>" rel="stylesheet">
 
 <!-- custom JS -->
-<script src="../js/custom/product-listing.js?v=<?php echo filemtime('../js/custom/product-listing.js'); ?>"></script>
+<script src="../js/custom/product-listing-bundle.js?v=<?php echo filemtime('../js/custom/product-listing-bundle.js'); ?>"></script>
 
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
