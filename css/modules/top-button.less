@@ -3,29 +3,27 @@
 @top-button-size:                       @btn-lg;
 @top-button-z-index:                    7;
 
-@top-button-opacity:                    .45;
-@top-button-hover-opacity:              .75;
 @top-button-hover-icon-slide:           -3px;
 
 @top-button-slide-size:                 30px;
 
 @top-button-position-r:                 10px;
-@top-button-position-b:                 15px;
+@top-button-position-b:                 30px;
 
 .ui-top-button {
-    text-align: center; width: @top-button-size; height: @top-button-size; background-color: @black; display: none; border: 0; position: fixed; right: @top-button-position-r; bottom: (@top-button-position-b + @top-button-slide-size); z-index: @top-button-z-index; opacity: 0; cursor: pointer;
+    text-align: center; width: @top-button-size; height: @top-button-size; ._bg-var(btn-bg); display: none; border: 0; position: fixed; right: @top-button-position-r; bottom: (@top-button-position-b + @top-button-slide-size); z-index: @top-button-z-index; opacity: 0; cursor: pointer;
 
+    &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
     &.ui-open {
         display: block;
 
-        &-ease { opacity: @top-button-opacity; transform: translateY(@top-button-slide-size); }
+        &-ease { opacity: 1; transform: translateY(@top-button-slide-size); }
     }
-    .ui-icon { color: @white; opacity: 1 !important; }
+
+    .ui-icon { ._color-var(black); }
 
     .ui-desktop & {
         &:hover {
-            opacity: @top-button-hover-opacity;
-
             .ui-icon { transform: translateY(@top-button-hover-icon-slide); }
         }
     }
