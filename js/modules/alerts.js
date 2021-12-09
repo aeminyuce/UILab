@@ -55,6 +55,8 @@ ui.alerts = {
 
     messageTimer: 6000, // wait for atomatically close messages
 
+    posDefault: 'tr',
+
     posTopRight: 'tr',
     posTopLeft: 'tl',
     posBottomRight: 'br',
@@ -366,7 +368,7 @@ ui.alerts = {
             arr = [ui.alerts.posTopRight, ui.alerts.posTopLeft, ui.alerts.posBottomRight, ui.alerts.posBottomLeft];
 
             if (arr.indexOf(props.pos) < 0) {
-                props.pos = ui.alerts.posBottomRight;
+                props.pos = ui.alerts.posDefault;
             }
 
             // detect theme
