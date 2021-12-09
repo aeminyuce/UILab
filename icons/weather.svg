@@ -1,5 +1,5 @@
 <!-- weather -->
-<svg style="display: none;">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="in-thermo" viewBox="0 0 288 288">
         <path class="ui-svg-s" d="M12 196a55.8 55.8 0 0116-39.2V52a40 40 0 1180 0v104.8A56 56 0 1112 196z"/>
         <path d="M68 180a16 16 0 11-16 16 16 16 0 0116-16z"/>

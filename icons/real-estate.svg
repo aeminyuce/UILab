@@ -1,5 +1,5 @@
 <!-- real estate -->
-<svg style="display: none;">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="in-house" viewBox="-10 -20 288 288">
         <path class="ui-svg-l" d="M16.9 112l120-100 120 100"/>
         <path class="ui-svg-s" d="M41 92v144h191.9V20h-40.1l.1 39-56-47z"/>

@@ -1,5 +1,5 @@
 <!-- kitchen -->
-<svg style="display: none;">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="chef" viewBox="-12 -12 288 288">
         <path d="M40 188v-40.7A54 54 0 0112 100a54 54 0 0169-51.9A54 54 0 01132 12a54 54 0 0151 36.1 54 54 0 0169 51.9 54 54 0 01-28 47.3V188z"/>
         <path class="ui-svg-s" d="M40 188h184v64H40z"/>

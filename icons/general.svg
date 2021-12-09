@@ -1,5 +1,5 @@
 <!-- general -->
-<svg style="display: none;">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="in-alert" viewBox="-132 -72 288 288">
         <path d="M12 132v-8M12 12v72"/>
     </symbol>

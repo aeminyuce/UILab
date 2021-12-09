@@ -1,5 +1,5 @@
 <!-- files -->
-<svg style="display: none;">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="in-tx-a" viewBox="0 0 288 288">
         <path class="ui-svg-l" d="M9 55L28 7l19 48 M15.4 39h25.3"/>
     </symbol>
