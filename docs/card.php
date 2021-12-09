@@ -133,7 +133,7 @@
                         <div class="ui-card-side ui-p-15 ui-border-b">
                             <h4 class="ui-h4"><svg class="ui-icon ui-icon-lg"><use href="#check-badge"/></svg>Card Title</h4>
                         </div>
-                        <div class="ui-card-side ui-p-15 ui-border-b">
+                        <div class="ui-card-side ui-p-15">
 
                             <div class="ui-card ui-theme-gray ui-p-15 ui-round ui-fill-light-300">
                             <button class="ui-card-close ui-ease-btn">
