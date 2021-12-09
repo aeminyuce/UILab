@@ -2,7 +2,6 @@
   "name": "uilab",
   "title": "UI lab",
   "description": "UI lab is a modular design system for developing web interfaces fastly!",
-  "author": "A. Emin YUCE",
   "version": "1.0.0",
   "license": "MIT",
   "keywords": [
@@ -62,8 +61,5 @@
     "eslint": "^8.4.1",
     "less": "^4.1.2"
   },
-  "dependencies": {
-    "@fontsource/archivo": "^4.5.1",
-    "@fontsource/poppins": "^4.5.0"
-  }
+  "dependencies": {}
 }

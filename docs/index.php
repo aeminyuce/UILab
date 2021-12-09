@@ -9,7 +9,6 @@
 
     <meta name="keywords" content="responsive, design system, ui examples, web, css, less, javascript">
     <meta name="description" content="UI lab is a modular design system for developing web interfaces fastly!">
-    <meta name="author" content="A. Emin YUCE">
 
     <!-- charset -->
     <meta charset="utf-8" />
@@ -32,6 +31,16 @@
     <!-- helpers -->
     <script src="../js/helpers/classnames-bundle.js?v=<?php echo filemtime('../js/helpers/classnames-bundle.js'); ?>"></script>
     <script src="../js/helpers/iconlist-bundle.js?v=<?php echo filemtime('../js/helpers/iconlist-bundle.js'); ?>"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- default -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;700&display=swap" rel="stylesheet">
 
 </head>
 
