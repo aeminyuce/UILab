@@ -186,7 +186,7 @@ ui.alerts = {
                 cancelCloseDialog = true;
 
                 closeBtn = '<button class="' + ui.alerts.nameCloseDialog + ' ' + ui.alerts.stylesCloseDialog + '">' +
-                                '<svg class="' + ui.alerts.nameIcon + '"><use href="#' + ui.alerts.closeIcon + '"/></svg>' +
+                                '<svg class="' + ui.alerts.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.alerts.closeIcon + '"/></svg>' +
                             '</button>';
             }
 

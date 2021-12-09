@@ -28,6 +28,9 @@ var ui = {
         // svg elements
         svgElems: ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'],
 
+        // icons
+        iconSrc: '../docs/img/icons.svg', // IE not support SVG external reference!
+
         // data attributes
         dataPrefix: 'data-ui-',
         dataClasses: 'data-ui-classes',
@@ -704,6 +707,7 @@ ui.userAgents = {
         if (ua.indexOf("MSIE ") > 0 || !!document.documentMode || ua.indexOf('edge') > -1) {
 
             ui.userAgents.ie = true;
+            ui.globals.iconSrc = ''; // IE not support SVG external reference!
 
             ui.addClass(ui.userAgents.target, ui.userAgents.nameIE);
             ui.removeClass(ui.userAgents.target, ui.userAgents.nameChrome);

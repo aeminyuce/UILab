@@ -48,7 +48,7 @@
 
                     <div class="ui-form-lg">
                         <div class="loadingmask-text2 ui-input ui-form-icon-l ui-m-10-b ui-round ui-border-dual ui-form-inline ui-ease-form">
-                            <svg class="ui-icon"><use href="#search"/></svg>
+                            <svg class="ui-icon"><use href="img/icons.svg#search"/></svg>
                             <input type="text" placeholder="Left icon">
                         </div>
                     </div>
@@ -59,7 +59,7 @@
 
                     <div class="ui-form-lg">
                         <div class="loadingmask-select ui-select ui-round ui-border-dual ui-form-inline ui-ease-form">
-                            <svg class="ui-icon"><use href="#angle-down"/></svg>
+                            <svg class="ui-icon"><use href="img/icons.svg#angle-down"/></svg>
                             <select>
                                 <option value="">Select your age</option>
                                 <option>Under 20</option>

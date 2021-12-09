@@ -226,18 +226,18 @@ ui.photoGallery = {
                         '<div class="' + ui.photoGallery.namePreviewBg + '"></div>' +
 
                         '<button class="' + ui.photoGallery.namePreviewClose + ' ' + ui.photoGallery.stylesCloseIcon +'">' +
-                            '<svg class="' + ui.photoGallery.nameIcon + '"><use href="#' + ui.photoGallery.closeIcon + '"/></svg>' +
+                            '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.closeIcon + '"/></svg>' +
                         '</button>' +
 
                         '<button type="button" class="' + ui.photoGallery.namePreviewPrev + ' ' + ui.photoGallery.stylesPreviewBtn + '">' +
-                            '<svg class="' + ui.photoGallery.nameIcon + '"><use href="#' + ui.photoGallery.prevIcon + '"/></svg>' +
+                            '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.prevIcon + '"/></svg>' +
                         '</button>' +
                         '<button type="button" class="' + ui.photoGallery.namePreviewNext + ' ' + ui.photoGallery.stylesPreviewBtn + '">' +
-                            '<svg class="' + ui.photoGallery.nameIcon + '"><use href="#' + ui.photoGallery.nextIcon + '"/></svg>' +
+                            '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.nextIcon + '"/></svg>' +
                         '</button>' +
 
                         '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.photoGallery.nameIcon + '">' +
-                            '<use href="#' + ui.photoGallery.loaderIcon + '"/>' +
+                            '<use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon + '"/>' +
                         '</svg>' +
                         '<span class="' + ui.photoGallery.namePreviewInfo + ' ' + ui.photoGallery.stylesPreview + '"></span>' +
 
@@ -279,7 +279,7 @@ ui.photoGallery = {
             function notLoadedImage() {
 
                 ui.addClass(loader, ui.photoGallery.namePause);
-                ui.find('use', loader)[0].setAttribute('href', '#' + ui.photoGallery.errorIcon);
+                ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.errorIcon);
 
             }
 
@@ -398,7 +398,7 @@ ui.photoGallery = {
                 ui.show(loader);
 
                 ui.removeClass(loader, ui.photoGallery.namePause);
-                ui.find('use', loader)[0].setAttribute('href', '#' + ui.photoGallery.loaderIcon);
+                ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon);
 
                 toggleGalleryTools();
 

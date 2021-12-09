@@ -56,11 +56,11 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-p-15">
                 <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost ui-circle ui-icons-no-opacity ui-float-r ui-ease-btn">
-                    <svg class="ui-icon ui-visible-dark"><use href="#moon-fill"/></svg>
-                    <svg class="ui-icon ui-visible-light"><use href="#sun-fill"/></svg>
+                    <svg class="ui-icon ui-visible-dark"><use href="img/icons.svg#moon-fill"/></svg>
+                    <svg class="ui-icon ui-visible-light"><use href="img/icons.svg#sun-fill"/></svg>
                 </button>
                 <a href="index.php" class="ui-btn ui-btn-square ui-btn-ghost ui-circle ui-m-10-r ui-ease-btn">
-                    <svg class="ui-icon ui-icon-hybrid ui-no-opacity"><use href="#long-arrow-left"/></svg>
+                    <svg class="ui-icon ui-icon-hybrid ui-no-opacity"><use href="img/icons.svg#long-arrow-left"/></svg>
                 </a>
                 <h1 class="ui-h1 ui-font-18 ui-inline-block">
                     <span class="ui-font-capitalize"><?php echo str_replace("-", " ", $page); ?></span>
@@ -79,8 +79,8 @@
 ?>
 
 <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-lg ui-btn-square ui-round ui-icons-no-opacity ui-ease-btn ui-set-fixed ui-set-r" style="bottom: 88px;right: 15px;">
-    <svg class="ui-icon ui-visible-dark"><use href="#moon-fill"/></svg>
-    <svg class="ui-icon ui-visible-light"><use href="#sun-fill"/></svg>
+    <svg class="ui-icon ui-visible-dark"><use href="img/icons.svg#moon-fill"/></svg>
+    <svg class="ui-icon ui-visible-light"><use href="img/icons.svg#sun-fill"/></svg>
 </button>
 <?php
     } else {
@@ -95,17 +95,17 @@
                 <div class="ui-row">
                     <div class="ui-col-12 ui-align-r ui-p-15 ui-no-p-l ui-icons-no-opacity ui-ease-1st-btn">
                         <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost ui-circle">
-                            <svg class="ui-icon ui-visible-dark"><use href="#moon-fill"/></svg>
-                            <svg class="ui-icon ui-visible-light"><use href="#sun-fill"/></svg>
+                            <svg class="ui-icon ui-visible-dark"><use href="img/icons.svg#moon-fill"/></svg>
+                            <svg class="ui-icon ui-visible-light"><use href="img/icons.svg#sun-fill"/></svg>
                         </button>
                         <a title="GitHub" href="https://github.com/aeminyuce/UILab" class="ui-btn ui-btn-square ui-btn-ghost ui-circle" target="_blank">
-                            <svg class="ui-icon"><use href="#github"/></svg>
+                            <svg class="ui-icon"><use href="img/icons.svg#github"/></svg>
                         </a>
                         <a title="GitHub" href="https://dribbble.com/aeminyuce" class="ui-btn ui-btn-square ui-btn-ghost ui-circle" target="_blank">
-                            <svg class="ui-icon"><use href="#dribbble"/></svg>
+                            <svg class="ui-icon"><use href="img/icons.svg#dribbble"/></svg>
                         </a>
                         <button class="ui-btn ui-btn-square ui-btn-ghost ui-circle ui-sidebar-show-r ui-visible-md">
-                            <svg class="ui-icon"><use href="#bars-right"/></svg>
+                            <svg class="ui-icon"><use href="img/icons.svg#bars-right"/></svg>
                         </button>
                     </div>
                 </div>
@@ -181,11 +181,11 @@
 
                             <div class="ui-sm-align-l ui-form-lg ui-ease-1st-btn">
                                 <a href="?p=classnames" class="ui-btn ui-btn-ghost ui-btn-sm-fluid ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle">
-                                    <svg class="ui-icon ui-m-5-r"><use href="#brackets-curly"/></svg>
+                                    <svg class="ui-icon ui-m-5-r"><use href="img/icons.svg#brackets-curly"/></svg>
                                     Classnames
                                 </a>
                                 <a href="?p=iconlist" class="ui-btn ui-btn-ghost ui-btn-sm-fluid ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle">
-                                    <svg class="ui-icon ui-m-5-r"><use href="#draw"/></svg>
+                                    <svg class="ui-icon ui-m-5-r"><use href="img/icons.svg#draw"/></svg>
                                     Icon List
                                 </a>
                             </div>
@@ -279,7 +279,7 @@
     <div class="ui-sidebar ui-sidebar-r ui-round ui-theme-base ui-ease-layout ui-ease-in-out">
         <div class="ui-sidebar-title ui-p-15-v ui-fill-dark-100">
             <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-sidebar-close">
-                <svg class="ui-icon ui-no-opacity"><use href="#remove"/></svg>
+                <svg class="ui-icon ui-no-opacity"><use href="img/icons.svg#remove"/></svg>
             </button>
             <img class="ui-m-5-v" src="img/uilab-logo.png" alt="" srcset="img/uilab-logo@2x.png 2x">
         </div>
@@ -288,8 +288,6 @@
 <?php
     }
 ?>
-
-<?php include ('img/icons.svg'); ?>
 
 </body>
 </html>

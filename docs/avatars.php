@@ -9,13 +9,13 @@
                     <img class="ui-avatar-xs ui-circle" src="img/profile-image.jpg" alt="">
                     <img class="ui-avatar-xs ui-circle" src="img/profile-image2.jpg" alt="">
                     <span class="ui-avatar-xs ui-circle">
-                        <svg class="ui-icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
                     </span>
 
                     <span class="ui-sp-5 ui-visible-sm"></span>
 
                     <span class="ui-avatar-xs ui-circle ui-theme-orange ui-fill-dark-100">
-                        <svg class="ui-icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
                     </span>
                     <span class="ui-avatar-xs ui-circle ui-theme-yellow ui-fill-dark-100">
                         <span>HY</span>
@@ -29,13 +29,13 @@
                     <img class="ui-avatar-sm ui-circle" src="img/profile-image.jpg" alt="">
                     <img class="ui-avatar-sm ui-circle" src="img/profile-image2.jpg" alt="">
                     <span class="ui-avatar-sm ui-circle">
-                        <svg class="ui-icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
                     </span>
 
                     <span class="ui-sp-5 ui-visible-sm"></span>
 
                     <span class="ui-avatar-sm ui-circle ui-theme-orange ui-fill-dark-100">
-                        <svg class="ui-icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
                     </span>
                     <span class="ui-avatar-sm ui-circle ui-theme-yellow ui-fill-dark-100">
                         <span>HY</span>
@@ -49,13 +49,13 @@
                     <img class="ui-avatar ui-circle" src="img/profile-image.jpg" alt="">
                     <img class="ui-avatar ui-circle" src="img/profile-image2.jpg" alt="">
                     <span class="ui-avatar ui-circle">
-                        <svg class="ui-icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
                     </span>
 
                     <span class="ui-sp-5 ui-visible-sm"></span>
 
                     <span class="ui-avatar ui-circle ui-theme-orange ui-fill-dark-100">
-                        <svg class="ui-icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
                     </span>
                     <span class="ui-avatar ui-circle ui-theme-yellow ui-fill-dark-100">
                         <span>HY</span>
@@ -69,13 +69,13 @@
                     <img class="ui-avatar-lg ui-circle" src="img/profile-image.jpg" alt="">
                     <img class="ui-avatar-lg ui-circle" src="img/profile-image2.jpg" alt="">
                     <span class="ui-avatar-lg ui-circle">
-                        <svg class="ui-icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
                     </span>
 
                     <span class="ui-sp-5 ui-visible-sm"></span>
 
                     <span class="ui-avatar-lg ui-circle ui-theme-orange ui-fill-dark-100">
-                        <svg class="ui-icon"><use href="#user"/></svg>
+                        <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
                     </span>
                     <span class="ui-avatar-lg ui-circle ui-theme-yellow ui-fill-dark-100">
                         <span>HY</span>

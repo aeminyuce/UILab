@@ -71,7 +71,7 @@ ui.topButton = {
         if (ui.userAgents.desktop) {
 
             var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + '" title="' + ui.topButton.titleText + '">' +
-                            '<svg class="' + ui.topButton.stylesIcon + '"><use href="#' + ui.topButton.icon + '"/></svg>' +
+                            '<svg class="' + ui.topButton.stylesIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.topButton.icon + '"/></svg>' +
                         '</button>';
 
             ui.find('body')[0].insertAdjacentHTML('beforeend', html);

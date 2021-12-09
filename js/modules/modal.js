@@ -373,7 +373,7 @@ ui.modal = {
                     if (closeBtn === undefined) {
 
                         closeBtn = '<button class="' + ui.modal.nameModalClose + ' ' + ui.modal.stylesCloseBtn + '">' +
-                                        '<svg class="' + ui.modal.nameIcon + '"><use href="#' + ui.modal.closeIcon + '"/></svg>' +
+                                        '<svg class="' + ui.modal.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.modal.closeIcon + '"/></svg>' +
                                     '</button>';
 
                         content.insertAdjacentHTML('afterbegin', closeBtn);

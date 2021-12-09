@@ -13,14 +13,14 @@
 
                         <div class="ui-card ui-full-h ui-p-30 ui-round ui-shadow">
                             <div class="ui-m-30-v">
-                                <svg class="ui-icon pricing-table-icon ui-theme-sub ui-text"><use href="#box"/></svg>
+                                <svg class="ui-icon pricing-table-icon ui-theme-sub ui-text"><use href="img/icons.svg#box"/></svg>
                             </div>
                             <h2 class="ui-h2 ui-font-bold ui-m-15-v">Free</h2>
                             <h4 class="ui-h4 ui-color-black-50">1 End Product License</h4>
                             <p class="ui-color-black-25 ui-font-16 ui-font-readable ui-m-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                             <a class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-m-30-b ui-circle ui-shadow-lg ui-theme-green ui-fill-dark-100 ui-ease-btn" href="#">
                                 <b class="ui-inline-block">GET FOR FREE</b>
-                                <svg class="ui-icon ui-m-5-l"><use href="#heart"/></svg>
+                                <svg class="ui-icon ui-m-5-l"><use href="img/icons.svg#heart"/></svg>
                             </a>
                         </div>
 
@@ -29,7 +29,7 @@
 
                         <div class="ui-card ui-full-h ui-p-30 ui-round ui-shadow-lg ui-theme-sub ui-fill-dark-100">
                             <div class="ui-m-30-v">
-                                <svg class="ui-icon pricing-table-icon"><use href="#gift"/></svg>
+                                <svg class="ui-icon pricing-table-icon"><use href="img/icons.svg#gift"/></svg>
                             </div>
                             <h2 class="ui-h2 ui-font-bold ui-m-15-v">$19</h2>
                             <h4 class="ui-h4">Business License</h4>
@@ -37,10 +37,10 @@
                             <span class="ui-sp-10"></span>
                             <a class="ui-btn ui-btn-multi ui-btn-lg ui-btn-xs-fluid ui-circle ui-shadow-lg ui-theme-base ui-fill-dark-200 ui-ease-btn" href="#">
                                 <b class="ui-inline-block">PURCHASE</b>
-                                <svg class="ui-icon ui-m-5-l"><use href="#shopping-cart"/></svg>
+                                <svg class="ui-icon ui-m-5-l"><use href="img/icons.svg#shopping-cart"/></svg>
                             </a>
                             <div class="ui-color-white-50 ui-m-30-v">
-                                <svg class="ui-icon ui-m-5-r"><use href="#check-badge"/></svg>Recommend
+                                <svg class="ui-icon ui-m-5-r"><use href="img/icons.svg#check-badge"/></svg>Recommend
                             </div>
                         </div>
 
@@ -49,14 +49,14 @@
 
                         <div class="ui-card ui-full-h ui-p-30 ui-round ui-shadow">
                             <div class="ui-m-30-v">
-                                <svg class="ui-icon pricing-table-icon ui-theme-sub ui-text"><use href="#wallet"/></svg>
+                                <svg class="ui-icon pricing-table-icon ui-theme-sub ui-text"><use href="img/icons.svg#wallet"/></svg>
                             </div>
                             <h2 class="ui-h2 ui-font-bold ui-m-15-v">$49</h2>
                             <h4 class="ui-h4 ui-color-black-50">Enterprise License</h4>
                             <p class="ui-color-black-25 ui-font-16 ui-font-readable ui-m-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                             <a class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-m-30-b ui-circle ui-shadow-lg ui-theme-sub ui-fill-dark-100 ui-ease-btn" href="#">
                                 <b class="ui-inline-block">PURCHASE</b>
-                                <svg class="ui-icon ui-m-5-l"><use href="#shopping-basket"/></svg>
+                                <svg class="ui-icon ui-m-5-l"><use href="img/icons.svg#shopping-basket"/></svg>
                             </a>
                         </div>
 
@@ -73,14 +73,14 @@
                         <div class="ui-card ui-full-h ui-round ui-shadow">
                             <div class="ui-card-side ui-p-30 ui-border-b">
                                 <div class="ui-m-30-v">
-                                    <svg class="ui-icon pricing-table-icon ui-theme-sub ui-text"><use href="#box"/></svg>
+                                    <svg class="ui-icon pricing-table-icon ui-theme-sub ui-text"><use href="img/icons.svg#box"/></svg>
                                 </div>
                                 <h2 class="ui-h2 ui-font-bold ui-m-15-v">Free</h2>
                                 <h4 class="ui-h4 ui-color-black-50">1 End Product License</h4>
                                 <p class="ui-color-black-25 ui-font-16 ui-font-readable ui-m-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                                 <a class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-m-30-b ui-circle ui-shadow-lg ui-theme-green ui-fill-dark-100 ui-ease-btn" href="#">
                                     <b class="ui-inline-block">GET FOR FREE</b>
-                                    <svg class="ui-icon ui-m-5-l"><use href="#heart"/></svg>
+                                    <svg class="ui-icon ui-m-5-l"><use href="img/icons.svg#heart"/></svg>
                                 </a>
                             </div>
                             <div class="ui-card-side ui-p-30">
@@ -90,16 +90,16 @@
                                     <li><span class="ui-color-black-25 ui-font-14">Projects</span>1 Project</li>
                                     <li>
                                         <span class="ui-color-black-25 ui-font-14">Support</span>
-                                        <svg class="ui-icon"><use href="#check"/></svg>
+                                        <svg class="ui-icon"><use href="img/icons.svg#check"/></svg>
                                     </li>
                                     <li>
                                         <span class="ui-color-black-25 ui-font-14">Tutorials</span>
-                                        <svg class="ui-icon"><use href="#ban"/></svg>
+                                        <svg class="ui-icon"><use href="img/icons.svg#ban"/></svg>
                                         </span>
                                     </li>
                                     <li>
                                         <span class="ui-color-black-25 ui-font-14">Cancellation</span>
-                                        <svg class="ui-icon"><use href="#ban"/></svg>
+                                        <svg class="ui-icon"><use href="img/icons.svg#ban"/></svg>
                                     </li>
                                 </ul>
                             </div>
@@ -111,7 +111,7 @@
                         <div class="ui-card ui-full-h ui-round ui-shadow-lg ui-theme-sub ui-fill-dark-100">
                             <div class="ui-card-side ui-p-30 ui-border-b ui-border-light">
                                 <div class="ui-m-30-v">
-                                    <svg class="ui-icon pricing-table-icon"><use href="#gift"/></svg>
+                                    <svg class="ui-icon pricing-table-icon"><use href="img/icons.svg#gift"/></svg>
                                 </div>
                                 <h2 class="ui-h2 ui-font-bold ui-m-15-v">$19</h2>
                                 <h4 class="ui-h4">Business License</h4>
@@ -119,7 +119,7 @@
                                 <span class="ui-sp-10"></span>
                                 <a class="ui-btn ui-btn-multi ui-btn-lg ui-btn-xs-fluid ui-m-25-b ui-circle ui-shadow-lg ui-theme-base ui-fill-dark-200 ui-ease-btn" href="#">
                                     <b class="ui-inline-block">PURCHASE</b>
-                                    <svg class="ui-icon ui-m-5-l"><use href="#shopping-cart"/></svg>
+                                    <svg class="ui-icon ui-m-5-l"><use href="img/icons.svg#shopping-cart"/></svg>
                                 </a>
                             </div>
                             <div class="ui-card-side ui-p-30">
@@ -129,16 +129,16 @@
                                     <li><span class="ui-color-white-50 ui-font-14">Projects</span>100 Projects</li>
                                     <li>
                                         <span class="ui-color-white-50 ui-font-14">Support</span>
-                                        <svg class="ui-icon"><use href="#check"/></svg>
+                                        <svg class="ui-icon"><use href="img/icons.svg#check"/></svg>
                                     </li>
                                     <li>
                                         <span class="ui-color-white-50 ui-font-14">Tutorials</span>
-                                        <svg class="ui-icon"><use href="#check"/></svg>
+                                        <svg class="ui-icon"><use href="img/icons.svg#check"/></svg>
                                         </span>
                                     </li>
                                     <li>
                                         <span class="ui-color-white-50 ui-font-14">Cancellation</span>
-                                        <svg class="ui-icon"><use href="#check"/></svg>
+                                        <svg class="ui-icon"><use href="img/icons.svg#check"/></svg>
                                     </li>
                                 </ul>
                             </div>
@@ -150,14 +150,14 @@
                         <div class="ui-card ui-full-h ui-round ui-shadow">
                             <div class="ui-card-side ui-p-30 ui-border-b">
                                 <div class="ui-m-30-v">
-                                    <svg class="ui-icon pricing-table-icon ui-theme-sub ui-text"><use href="#wallet"/></svg>
+                                    <svg class="ui-icon pricing-table-icon ui-theme-sub ui-text"><use href="img/icons.svg#wallet"/></svg>
                                 </div>
                                 <h2 class="ui-h2 ui-font-bold ui-m-15-v">$49</h2>
                                 <h4 class="ui-h4 ui-color-black-50">Enterprise License</h4>
                                 <p class="ui-color-black-25 ui-font-16 ui-font-readable ui-m-30-v">Lorem ipsum dolor sit amet edipiscing elit sed do eiusmod elpors labore et dolore magna siad enim aliqua.</p>
                                 <a class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-m-30-b ui-circle ui-shadow-lg ui-theme-sub ui-fill-dark-100 ui-ease-btn" href="#">
                                     <b class="ui-inline-block">PURCHASE</b>
-                                    <svg class="ui-icon ui-m-5-l"><use href="#shopping-basket"/></svg>
+                                    <svg class="ui-icon ui-m-5-l"><use href="img/icons.svg#shopping-basket"/></svg>
                                 </a>
                             </div>
                             <div class="ui-card-side ui-p-30">
@@ -167,16 +167,16 @@
                                     <li><span class="ui-color-black-25 ui-font-14">Projects</span>Unlimited Projects</li>
                                     <li>
                                         <span class="ui-color-black-25 ui-font-14">Support</span>
-                                        <svg class="ui-icon"><use href="#check"/></svg>
+                                        <svg class="ui-icon"><use href="img/icons.svg#check"/></svg>
                                     </li>
                                     <li>
                                         <span class="ui-color-black-25 ui-font-14">Tutorials</span>
-                                        <svg class="ui-icon"><use href="#ban"/></svg>
+                                        <svg class="ui-icon"><use href="img/icons.svg#ban"/></svg>
                                         </span>
                                     </li>
                                     <li>
                                         <span class="ui-color-black-25 ui-font-14">Cancellation</span>
-                                        <svg class="ui-icon"><use href="#ban"/></svg>
+                                        <svg class="ui-icon"><use href="img/icons.svg#ban"/></svg>
                                     </li>
                                 </ul>
                             </div>

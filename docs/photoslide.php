@@ -11,17 +11,17 @@
 
                             <div class="ui-card ui-p-30 ui-round ui-shadow-lg">
                                 <span class="ui-photoslide ui-m-15-b">
-                                    <svg class="ui-photoslide-loader ui-icon"><use href="#loader-line"/></svg>
+                                    <svg class="ui-photoslide-loader ui-icon"><use href="img/icons.svg#loader-line"/></svg>
                                     <img
                                         class="ui-round"
                                         src="img/image_02.jpg" alt=""
                                         data-ui-src="img/image_03.jpg,img/image_04.jpg,img/image_05.jpg"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-m-15-l ui-circle ui-ease-btn">
-                                        <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="#angle-left"/></svg>
+                                        <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="img/icons.svg#angle-left"/></svg>
                                     </button>
                                     <button title="Next" class="ui-photoslide-next ui-btn ui-btn-ghost ui-btn-square ui-m-15-r ui-circle ui-ease-btn">
-                                        <svg class="ui-icon ui-m-3-l ui-no-opacity"><use href="#angle-right"/></svg>
+                                        <svg class="ui-icon ui-m-3-l ui-no-opacity"><use href="img/icons.svg#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photoslide-nav ui-m-15-b ui-ease-1st-layout"></span>
                                 </span>
@@ -35,17 +35,17 @@
 
                             <div class="ui-card ui-p-30 ui-round ui-shadow-lg">
                                 <span class="ui-photoslide ui-m-15-b">
-                                    <svg class="ui-photoslide-loader ui-icon"><use href="#loader-line"/></svg>
+                                    <svg class="ui-photoslide-loader ui-icon"><use href="img/icons.svg#loader-line"/></svg>
                                     <img
                                         class="ui-round"
                                         src="img/image_03.jpg" alt=""
                                         data-ui-src="img/image_04.jpg,img/image_05.jpg,img/image_06.jpg"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-m-15-l ui-circle ui-ease-btn">
-                                        <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="#angle-left"/></svg>
+                                        <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="img/icons.svg#angle-left"/></svg>
                                     </button>
                                     <button title="Next" class="ui-photoslide-next ui-btn ui-btn-ghost ui-btn-square ui-m-15-r ui-circle ui-ease-btn">
-                                        <svg class="ui-icon ui-m-3-l ui-no-opacity"><use href="#angle-right"/></svg>
+                                        <svg class="ui-icon ui-m-3-l ui-no-opacity"><use href="img/icons.svg#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photoslide-nav ui-m-15-b ui-ease-1st-layout"></span>
                                 </span>
@@ -59,17 +59,17 @@
 
                             <div class="ui-card ui-p-30 ui-round ui-shadow-lg">
                                 <span class="ui-photoslide ui-m-15-b">
-                                    <svg class="ui-photoslide-loader ui-icon"><use href="#loader-line"/></svg>
+                                    <svg class="ui-photoslide-loader ui-icon"><use href="img/icons.svg#loader-line"/></svg>
                                     <img
                                         class="ui-round"
                                         src="img/image_04.jpg" alt=""
                                         data-ui-src="img/image_05.jpg,img/image_06.jpg,img/image_07.jpg"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-m-15-l ui-circle ui-ease-btn">
-                                        <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="#angle-left"/></svg>
+                                        <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="img/icons.svg#angle-left"/></svg>
                                     </button>
                                     <button title="Next" class="ui-photoslide-next ui-btn ui-btn-ghost ui-btn-square ui-m-15-r ui-circle ui-ease-btn">
-                                        <svg class="ui-icon ui-m-3-l ui-no-opacity"><use href="#angle-right"/></svg>
+                                        <svg class="ui-icon ui-m-3-l ui-no-opacity"><use href="img/icons.svg#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photoslide-nav ui-m-15-b ui-ease-1st-layout"></span>
                                 </span>
@@ -83,17 +83,17 @@
 
                             <div class="ui-card ui-p-30 ui-round ui-shadow-lg">
                                 <span class="ui-photoslide ui-m-15-b">
-                                    <svg class="ui-photoslide-loader ui-icon"><use href="#loader-line"/></svg>
+                                    <svg class="ui-photoslide-loader ui-icon"><use href="img/icons.svg#loader-line"/></svg>
                                     <img
                                         class="ui-round"
                                         src="img/image_05.jpg" alt=""
                                         data-ui-src="img/image_06.jpg,img/image_07.jpg,img/image_08.jpg"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-m-15-l ui-circle ui-ease-btn">
-                                        <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="#angle-left"/></svg>
+                                        <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="img/icons.svg#angle-left"/></svg>
                                     </button>
                                     <button title="Next" class="ui-photoslide-next ui-btn ui-btn-ghost ui-btn-square ui-m-15-r ui-circle ui-ease-btn">
-                                        <svg class="ui-icon ui-m-3-l ui-no-opacity"><use href="#angle-right"/></svg>
+                                        <svg class="ui-icon ui-m-3-l ui-no-opacity"><use href="img/icons.svg#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photoslide-nav ui-m-15-b ui-ease-1st-layout"></span>
                                 </span>
@@ -107,17 +107,17 @@
 
                             <div class="ui-card ui-p-30 ui-round ui-shadow-lg">
                                 <span class="ui-photoslide ui-m-15-b">
-                                    <svg class="ui-photoslide-loader ui-icon"><use href="#loader-line"/></svg>
+                                    <svg class="ui-photoslide-loader ui-icon"><use href="img/icons.svg#loader-line"/></svg>
                                     <img
                                         class="ui-round"
                                         src="img/image_07.jpg" alt=""
                                         data-ui-src="img/image_08.jpg,img/image_09.jpg,img/image_10.jpg"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-m-15-l ui-circle ui-ease-btn">
-                                        <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="#angle-left"/></svg>
+                                        <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="img/icons.svg#angle-left"/></svg>
                                     </button>
                                     <button title="Next" class="ui-photoslide-next ui-btn ui-btn-ghost ui-btn-square ui-m-15-r ui-circle ui-ease-btn">
-                                        <svg class="ui-icon ui-m-3-l ui-no-opacity"><use href="#angle-right"/></svg>
+                                        <svg class="ui-icon ui-m-3-l ui-no-opacity"><use href="img/icons.svg#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photoslide-nav ui-m-15-b ui-ease-1st-layout"></span>
                                 </span>
@@ -131,17 +131,17 @@
 
                             <div class="ui-card ui-p-30 ui-round ui-shadow-lg">
                                 <span class="ui-photoslide ui-m-15-b">
-                                    <svg class="ui-photoslide-loader ui-icon"><use href="#loader-line"/></svg>
+                                    <svg class="ui-photoslide-loader ui-icon"><use href="img/icons.svg#loader-line"/></svg>
                                     <img
                                         class="ui-round"
                                         src="img/image_08.jpg" alt=""
                                         data-ui-src="img/image_09.jpg,img/image_10.jpg,img/image_01.jpg"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-m-15-l ui-circle ui-ease-btn">
-                                        <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="#angle-left"/></svg>
+                                        <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="img/icons.svg#angle-left"/></svg>
                                     </button>
                                     <button title="Next" class="ui-photoslide-next ui-btn ui-btn-ghost ui-btn-square ui-m-15-r ui-circle ui-ease-btn">
-                                        <svg class="ui-icon ui-m-3-l ui-no-opacity"><use href="#angle-right"/></svg>
+                                        <svg class="ui-icon ui-m-3-l ui-no-opacity"><use href="img/icons.svg#angle-right"/></svg>
                                     </button>
                                     <span class="ui-photoslide-nav ui-m-15-b ui-ease-1st-layout"></span>
                                 </span>

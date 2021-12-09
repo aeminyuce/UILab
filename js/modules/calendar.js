@@ -216,7 +216,7 @@ ui.calendar = {
                     date.setMonth(newDate[1]);
 
                     if (newDate[2] !== undefined) { // defined a new day from picker
-                        pickerDay = Number(newDate[0]) + ',' +  Number(newDate[1]) + ',' + Number(newDate[2]);
+                        pickerDay = Number(newDate[0]) + ',' + Number(newDate[1]) + ',' + Number(newDate[2]);
                     }
 
                 }
@@ -246,7 +246,7 @@ ui.calendar = {
             '<caption>' +
 
                 '<button type="button" tabindex="-1" class="' + ui.calendar.namePrev + '">' +
-                    '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.prevIcon + '"/></svg>' +
+                    '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.prevIcon + '"/></svg>' +
                 '</button>' +
 
                 '<span class="' + ui.calendar.nameTitle + ' ' + ui.calendar.stylesTitle + '">' +
@@ -255,7 +255,7 @@ ui.calendar = {
                 '</span>' +
 
                 '<button type="button" tabindex="-1" class="' + ui.calendar.nameNext + '">' +
-                    '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.nextIcon + '"/></svg>' +
+                    '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.nextIcon + '"/></svg>' +
                 '</button>' +
 
             '</caption>' +
@@ -465,7 +465,7 @@ ui.calendar = {
 
                                 details = '<div class="' + ui.calendar.nameDetails + '">' +
                                                 '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">' +
-                                                    '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.backIcon + '"/></svg>' +
+                                                    '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/></svg>' +
                                                 '</button>' +
                                                 '<ul class="' + ui.calendar.stylesDetailScroll + '">' + details + '</ul>' +
                                             '</div>';
@@ -476,7 +476,7 @@ ui.calendar = {
 
                                 details = '<div class="' + ui.calendar.nameDetails + ' ' + ui.calendar.nameEmptyDetails + '">' +
                                                 '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">' +
-                                                    '<svg class="' + ui.calendar.nameIcon + '"><use href="#' + ui.calendar.backIcon + '"/></svg>' +
+                                                    '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/></svg>' +
                                                 '</button>' +
                                                 '<ul>' +
                                                     '<li>' +

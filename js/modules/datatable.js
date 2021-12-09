@@ -173,7 +173,7 @@ ui.datatable = {
 
         classes = classes.replace(re, ' ').replace(rex, '');
         html = '<button class="' + classes + '">' +
-                '<svg class="' + ui.datatable.nameIcon + '"><use href="#' + ui.datatable.prevIcon + '"/></svg>' +
+                '<svg class="' + ui.datatable.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.datatable.prevIcon + '"/></svg>' +
             '</button>\n';
 
         for (i = min; i <= max; i++) {
@@ -196,7 +196,7 @@ ui.datatable = {
 
         classes = classes.replace(re, ' ').replace(rex, '');
         html += '<button class="' + classes + '">' +
-                '<svg class="' + ui.datatable.nameIcon + '"><use href="#' + ui.datatable.nextIcon + '"/></svg>' +
+                '<svg class="' + ui.datatable.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.datatable.nextIcon + '"/></svg>' +
             '</button>\n';
 
         paging[0].innerHTML = '';
@@ -389,7 +389,7 @@ ui.datatable = {
                     if (!ui.hasClass(this, ui.datatable.nameActive)) {
 
                         ui.removeClass(this, ui.datatable.nameAsc + ' ' + ui.datatable.nameDesc);
-                        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', '#' + ui.datatable.sortIcon);
+                        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
 
                     }
 
@@ -402,14 +402,14 @@ ui.datatable = {
                 ui.removeClass(this, ui.datatable.nameAsc);
                 ui.addClass(this, ui.datatable.nameDesc);
 
-                ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', '#' + ui.datatable.descIcon);
+                ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descIcon);
 
             } else {
 
                 ui.removeClass(this, ui.datatable.nameDesc);
                 ui.addClass(this, ui.datatable.nameAsc);
 
-                ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', '#' + ui.datatable.ascIcon);
+                ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascIcon);
 
             }
 

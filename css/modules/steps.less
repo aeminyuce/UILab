@@ -4,6 +4,7 @@
 @steps-passive-size:                    10px;
 @steps-margin-v:                        5px;
 @steps-line-size:                       2px;
+@steps-icon-opacity:                    .42;
 
 @steps-inactive-color:                  fade(@black, 32%);
 @steps-inactive-color-dark:             fade(@white, 32%);
@@ -33,7 +34,7 @@
 
             .ui-card & { ._bg-var(card-bg); }
         }
-        &:after { content: ""; width: 100%; height: @steps-line-size; background-color: @green; position: absolute; top: (@steps-margin-v + (@steps-active-size - @steps-line-size) / 2); left: -50%; opacity: @icon-sub-opacity; }
+        &:after { content: ""; width: 100%; height: @steps-line-size; background-color: @green; position: absolute; top: (@steps-margin-v + (@steps-active-size - @steps-line-size) / 2); left: -50%; opacity: @steps-icon-opacity; }
         &:first-child {
             &:after { content: none; }
         }

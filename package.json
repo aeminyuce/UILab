@@ -51,6 +51,5 @@
     "@babel/preset-env": "^7.16.4",
     "eslint": "^8.4.1",
     "less": "^4.1.2"
-  },
-  "dependencies": {}
+  }
 }

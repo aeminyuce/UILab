@@ -6,14 +6,6 @@
 .ui- {
     &icon { ._icon(@icon-default-size); vertical-align: middle; display: inline-block; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; }
 
-    &svg- {
-        &f { fill: currentColor !important; } // fill
-        &l { fill: none !important; } // line
-        &sd { fill: currentColor !important; stroke: none !important; } // solid
-        &s { opacity: @icon-sub-opacity; } // sub
-        &fr { fill-rule: evenodd; } // fill-rule
-    }
-
     &icons- {
         &no-opacity {
             .ui-icon:not(.ui-opacity-half) { opacity: 1 !important; }
