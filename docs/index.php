@@ -290,19 +290,17 @@
 ?>
 
 <!-- icons -->
-<svg style="display: none;">
 <?php
-    include ('../icons/general.php');
-    include ('../icons/touch.php');
-    include ('../icons/media.php');
-    include ('../icons/kitchen.php');
-    include ('../icons/real-estate.php');
-    include ('../icons/weather.php');
-    include ('../icons/commerce.php');
-    include ('../icons/files.php');
-    include ('../icons/social.php');
-    include ('../icons/brands.php');
+    include ('../icons/general.svg');
+    include ('../icons/touch.svg');
+    include ('../icons/media.svg');
+    include ('../icons/kitchen.svg');
+    include ('../icons/real-estate.svg');
+    include ('../icons/weather.svg');
+    include ('../icons/commerce.svg');
+    include ('../icons/files.svg');
+    include ('../icons/social.svg');
+    include ('../icons/brands.svg');
 ?>
-</svg>
 </body>
 </html>

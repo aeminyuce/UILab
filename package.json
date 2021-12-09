@@ -4,15 +4,6 @@
   "description": "UI lab is a modular design system for developing web interfaces fastly!",
   "version": "1.0.0",
   "license": "MIT",
-  "keywords": [
-    "responsive",
-    "design system",
-    "ui examples",
-    "web",
-    "css",
-    "less",
-    "javascript"
-  ],
   "style": "css/ui.css",
   "less": "css/ui.less",
   "main": "js/ui.js",
