@@ -5,19 +5,19 @@
 
 @top-button-hover-icon-slide:           -3px;
 
-@top-button-slide-size:                 30px;
-
-@top-button-position-r:                 10px;
+@top-button-position-r:                 15px;
 @top-button-position-b:                 30px;
 
+@top-button-slide-size:                 (@btn-lg + (@top-button-position-r * 2));
+
 .ui-top-button {
-    text-align: center; width: @top-button-size; height: @top-button-size; ._bg-var(btn-bg); display: none; border: 0; position: fixed; right: @top-button-position-r; bottom: (@top-button-position-b + @top-button-slide-size); z-index: @top-button-z-index; opacity: 0; cursor: pointer;
+    text-align: center; width: @top-button-size; height: @top-button-size; ._bg-var(btn-bg); display: none; border: 0; position: fixed; right: @top-button-position-r; bottom: @top-button-position-b; z-index: @top-button-z-index; opacity: 0; transform: translateX(@top-button-slide-size); cursor: pointer;
 
     &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
     &.ui-open {
         display: block;
 
-        &-ease { opacity: 1; transform: translateY(@top-button-slide-size); }
+        &-ease { opacity: 1; transform: translateX(0); }
     }
 
     .ui-icon { ._color-var(black); }
