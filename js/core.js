@@ -40,11 +40,11 @@ var ui = {
         eventDomChange: 'ui:domChange'
 
     },
-    onload: (callback) => {
+    onload: function (callback) {
 
         var handlerFnc, i;
 
-        handlerFnc = (pt, pe) => {
+        handlerFnc = function (pt, pe) {
 
             if (ui.handlers === undefined) { ui.handlers = {}; }
             if (ui.handlers[pt] === undefined) { ui.handlers[pt] = {}; }
@@ -56,7 +56,7 @@ var ui = {
 
                 // merge repeated event listeners
                 if (ui.handlers[pt][pe].length === 1) {
-                    pt.addEventListener(pe.split('.')[0], (ev) => { // split for event naming
+                    pt.addEventListener(pe.split('.')[0], function (ev) { // split for event naming
 
                         for (i = 0; i < ui.handlers[pt][pe].length; i++) {
                             ui.handlers[pt][pe][i](ev);
@@ -90,11 +90,11 @@ var ui = {
         }
 
     },
-    on: (t, e, that, callback) => {
+    on: function (t, e, that, callback) {
 
         var arr, f, fnc, handlerFnc, targetEl, objName, isWindowEvent, l, customEvent, eName, delegate, ua, i, j, k, m;
 
-        fnc = (e) => {
+        fnc = function (e) {
 
             if (typeof t === 'string' && e === undefined) { return; }
 
@@ -103,7 +103,7 @@ var ui = {
 
             if (callback !== undefined) { // delegate
 
-                f = (event) => {
+                f = function (event) {
 
                     eName = e.split('.')[0]; // split for event naming
                     targetEl = ui.find(that); // catches future updated DOM!
@@ -145,7 +145,7 @@ var ui = {
                         // disable ie duplicate window event firing on ready
                         if (ua.indexOf("MSIE ") > 0 || !!document.documentMode || ua.indexOf('edge') > -1) {
 
-                            setTimeout(() => {
+                            setTimeout(function () {
                                 l.addEventListener(e, that, true);
                             }, ui.globals.ease);
 
@@ -164,7 +164,7 @@ var ui = {
 
             }
 
-            handlerFnc = (pt, pe) => {
+            handlerFnc = function (pt, pe) {
 
                 if (f === undefined) { return; }
 
@@ -180,7 +180,7 @@ var ui = {
 
                         // merge repeated event listeners
                         if (ui.handlers[pt][pe].length === 1) {
-                            pt.addEventListener(pe.split('.')[0], (ev) => { // split for event naming
+                            pt.addEventListener(pe.split('.')[0], function (ev) { // split for event naming
 
                                 for (m = 0; m < ui.handlers[pt][pe].length; m++) {
                                     ui.handlers[pt][pe][m](ev);
@@ -220,13 +220,13 @@ var ui = {
         }
 
     },
-    off: (t, e) => {
+    off: function (t, e) {
 
         var arr, fnc, handlerFnc, l, i, j, k;
 
-        fnc = (e) => {
+        fnc = function (e) {
 
-            handlerFnc = (pt, pe) => {
+            handlerFnc = function (pt, pe) {
 
                 if (ui.handlers[pt] !== undefined) {
                     if (ui.handlers[pt][pe] !== undefined) {
@@ -266,11 +266,11 @@ var ui = {
         }
 
     },
-    trigger: (t, e) => {
+    trigger: function (t, e) {
 
         var arr, fnc, event, l, i, j;
 
-        fnc = (e) => {
+        fnc = function (e) {
 
             try {
                 event = new Event(e);
@@ -295,7 +295,7 @@ var ui = {
         }
 
     },
-    hasClass: (t, name) => {
+    hasClass: function (t, name) {
 
         var re, l = ui.find(t), i;
 
@@ -312,7 +312,7 @@ var ui = {
         return re;
 
     },
-    addClass: (t, name) => {
+    addClass: function (t, name) {
 
         var arr, l = ui.find(t), i, j, re = new RegExp('^\\s+|\\s+$');
 
@@ -347,7 +347,7 @@ var ui = {
         }
 
     },
-    removeClass: (t, name) => {
+    removeClass: function (t, name) {
 
         var l = ui.find(t), i, j, rex = new RegExp('^\\s+|\\s+$'), re;
 
@@ -375,7 +375,7 @@ var ui = {
         }
 
     },
-    toggleClass: (t, name) => {
+    toggleClass: function (t, name) {
 
         var isSvgElements, arr, newArr, index, l = ui.find(t), i, j, re = new RegExp('^\\s+|\\s+$');
 
@@ -417,25 +417,25 @@ var ui = {
         }
 
     },
-    show: (t) => {
+    show: function (t) {
 
         var l = ui.find(t), i;
         for (i = 0; i < l.length; i++) { l[i].style.display = 'block'; }
 
     },
-    hide: (t) => {
+    hide: function (t) {
 
         var l = ui.find(t), i;
         for (i = 0; i < l.length; i++) { l[i].style.display = 'none'; }
 
     },
-    each: (t, callback) => {
+    each: function (t, callback) {
 
         var l = ui.find(t), i;
         for (i = 0; i < l.length; i++) { callback.call(l[i], i); }
 
     },
-    closest: (t, outer) => {
+    closest: function (t, outer) {
 
         var l, o, i, j, p;
 
@@ -455,7 +455,7 @@ var ui = {
         return [];
 
     },
-    find: (item, outer) => {
+    find: function (item, outer) {
 
         var i, objName, call, outerEl, outerElIndex, foundEl = [];
 
@@ -522,7 +522,7 @@ var ui = {
         return document.querySelectorAll(item);
 
     },
-    ajax: (props) => {
+    ajax: function (props) {
 
         /*
         props list:
@@ -566,7 +566,7 @@ var ui = {
         } else { ui.ajax.requests[i].send(); }
 
         // xhr loading
-        ui.ajax.requests[i].onload = () => {
+        ui.ajax.requests[i].onload = function () {
 
             if (ui.ajax.requests[i].readyState === 4 && ui.ajax.requests[i].status === 200) {
 
@@ -603,7 +603,7 @@ var ui = {
                     ui.ajax.classNames = ui.ajax.classNames.match(/"+[\w\s\d\-\_\=]+"/g);
                     ui.ajax.classNames = ui.ajax.classNames.toString().replace(/\"/g, '').replace(/,/g, ' ').split(' ');
 
-                    ui.ajax.classNames = ui.ajax.classNames.filter((value, index, self) => {
+                    ui.ajax.classNames = ui.ajax.classNames.filter(function (value, index, self) {
                         return self.indexOf(value) === index;
                     });
 
@@ -625,7 +625,7 @@ var ui = {
         };
 
         // error
-        ui.ajax.requests[i].onerror = () => {
+        ui.ajax.requests[i].onerror = function () {
             props.callback('error', '', ui.ajax.requests[i]);
         };
 
@@ -674,9 +674,9 @@ ui.userAgents = {
 
 };
 
-(() => {
+(function () {
 
-    ui.onload(() => {
+    ui.onload(function () {
 
         var ua = navigator.userAgent.toLowerCase();
         ui.userAgents.userLang = (navigator.language || navigator.userLanguage).split('-')[0];
@@ -785,7 +785,7 @@ ui.userAgents = {
 
     });
 
-})();
+}());
 
 // dark mode
 ui.darkMode = {
@@ -808,9 +808,9 @@ ui.darkMode = {
 
 };
 
-(() => {
+(function () {
 
-    ui.onload(() => {
+    ui.onload(function () {
 
         if (ui.userAgents.ie) { return; } // change event listener for darkColorScheme not supported on IE!
 
@@ -848,7 +848,7 @@ ui.darkMode = {
         doc.setAttribute(ui.darkMode.dataMod, mode);
 
         // Event Listeners
-        setState = (mode) => { // set theme state
+        setState = function (mode) { // set theme state
 
             var d = new Date();
 
@@ -860,7 +860,7 @@ ui.darkMode = {
         ui.on(darkColorScheme,
             'change',
 
-            () => {
+            function () {
 
                 if(darkColorScheme.matches) { mode = ui.darkMode.valueDark; } else { mode= ui.darkMode.valueLight; }
                 doc.setAttribute(ui.darkMode.dataMod, mode);
@@ -874,7 +874,7 @@ ui.darkMode = {
 
             '.' + ui.darkMode.nameToggle,
 
-            (e) => {
+            function (e) {
 
                 e.preventDefault();
 
@@ -882,7 +882,7 @@ ui.darkMode = {
                 var current = doc.getAttribute(ui.darkMode.dataMod);
                 ui.addClass(ui.effects.target, ui.effects.nameNoEffects);
 
-                setTimeout(() => {
+                setTimeout(function () {
 
                     if (current !== null && current !== '') {
 
@@ -898,7 +898,7 @@ ui.darkMode = {
                     doc.setAttribute(ui.darkMode.dataMod, mode);
                     setState(mode);
 
-                    setTimeout(() => {
+                    setTimeout(function () {
                         ui.removeClass(ui.effects.target, ui.effects.nameNoEffects);
                     }, 10);
 
@@ -935,14 +935,14 @@ ui.effects = {
 
 };
 
-(() => {
+(function () {
 
     var pauseTransitionsTimer;
 
     ui.on(window,
         'resize scroll',
 
-        (e) => {
+        function (e) {
 
             if (!ui.effects.pauseAll) {
 
@@ -951,7 +951,7 @@ ui.effects = {
                     clearTimeout(pauseTransitionsTimer);
                     ui.addClass(ui.effects.target, ui.effects.namePause);
 
-                    pauseTransitionsTimer = setTimeout(() => {
+                    pauseTransitionsTimer = setTimeout(function () {
                         ui.removeClass(ui.effects.target, ui.effects.namePause);
                     }, ui.globals.ease * 2);
 
@@ -961,7 +961,7 @@ ui.effects = {
 
     });
 
-    ui.onload(() => {
+    ui.onload(function () {
 
         var detectMotion, reduceTimers;
 
@@ -975,7 +975,7 @@ ui.effects = {
             ui.effects.pauseAll = true;
         }
 
-        reduceTimers = () => { // reduce effect timers
+        reduceTimers = function () { // reduce effect timers
 
             // they must be bigger than 10!
             ui.globals.fast = 11;
@@ -1011,7 +1011,7 @@ ui.effects = {
 
                 ui.addClass(ui.effects.target, ui.effects.namePause);
 
-                setTimeout(() => {
+                setTimeout(function () {
                     ui.removeClass(ui.effects.target, ui.effects.namePause);
                 }, ui.globals.ease * 2);
 
@@ -1021,4 +1021,4 @@ ui.effects = {
 
     });
 
-})();
+}());
