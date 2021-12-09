@@ -289,18 +289,7 @@
     }
 ?>
 
-<!-- icons -->
-<?php
-    include ('../icons/general.svg');
-    include ('../icons/touch.svg');
-    include ('../icons/media.svg');
-    include ('../icons/kitchen.svg');
-    include ('../icons/real-estate.svg');
-    include ('../icons/weather.svg');
-    include ('../icons/commerce.svg');
-    include ('../icons/files.svg');
-    include ('../icons/social.svg');
-    include ('../icons/brands.svg');
-?>
+<?php include ('img/icons.svg'); ?>
+
 </body>
 </html>
