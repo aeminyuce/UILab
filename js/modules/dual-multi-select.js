@@ -20,7 +20,6 @@ ui.dualMultiSelect = {
 
     var
         resetOptions,
-        loadSelects,
         movetoSource;
 
     ui.dualMultiSelect.Start = function () {
@@ -60,7 +59,7 @@ ui.dualMultiSelect = {
 
         };
 
-        loadSelects = function () {
+        ui.dualMultiSelect.Init = function () {
 
             var i, holder, selects, name, arr, userArr, arrStart, index, options, selected;
 
@@ -152,7 +151,7 @@ ui.dualMultiSelect = {
                 });
 
         };
-        loadSelects();
+        ui.dualMultiSelect.Init();
 
         movetoSource = function (that, selects) {
 
@@ -355,7 +354,7 @@ ui.dualMultiSelect = {
         function () {
 
             if (ui.ajax.classNames.indexOf(ui.dualMultiSelect.target) > 0) {
-                loadSelects();
+                ui.dualMultiSelect.Init();
             }
 
         });

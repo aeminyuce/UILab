@@ -41,7 +41,7 @@ ui.photoslide = {
         dataSrcLists,
         loadedImages;
 
-    function photoSliderLoader() {
+    ui.photoslide.Init = function () {
 
         var slider, j, images, dataSrc, nav, navDots, re;
 
@@ -112,7 +112,7 @@ ui.photoslide = {
         dataSrcLists = [];
         loadedImages = [];
 
-        photoSliderLoader();
+        ui.photoslide.Init();
 
         // Event Listeners
         ui.on(document,
@@ -197,7 +197,7 @@ ui.photoslide = {
         function () {
 
             if (ui.ajax.classNames.indexOf(ui.photoslide.target) > -1) {
-                photoSliderLoader();
+                ui.photoslide.Init();
             }
 
         });

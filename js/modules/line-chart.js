@@ -86,14 +86,12 @@ ui.lineChart = {
 
 (function () {
 
-    var loadCharts;
-
     // load charts
     ui.lineChart.Start = function () {
 
         var i, j, k, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
 
-        loadCharts = function (method, resizer) {
+        ui.lineChart.Init = function (method, resizer) {
 
             if (method === ui.lineChart.nameLoaded) {
                 charts = ui.find('.' + ui.lineChart.target + '.' + ui.lineChart.nameLoaded);
@@ -543,7 +541,7 @@ ui.lineChart = {
 
         };
 
-        loadCharts(ui.lineChart.nameNotLoaded); // show not loaded charts
+        ui.lineChart.Init(ui.lineChart.nameNotLoaded); // show not loaded charts
 
     };
 
@@ -554,14 +552,14 @@ ui.lineChart = {
         'resize',
 
         function () {
-            loadCharts(ui.lineChart.nameLoaded, true); // resize loaded charts
+            ui.lineChart.Init(ui.lineChart.nameLoaded, true); // resize loaded charts
         });
 
     ui.on(document,
         ui.globals.eventDomChange,
 
         function () {
-            loadCharts(ui.globals.eventDomChange); // resize loaded charts
+            ui.lineChart.Init(ui.globals.eventDomChange); // resize loaded charts
         });
 
     // ajax callback loader
@@ -571,7 +569,7 @@ ui.lineChart = {
         function () {
 
             if (ui.ajax.classNames.indexOf(ui.lineChart.target) > -1) {
-                loadCharts(ui.lineChart.nameNotLoaded); // show not loaded charts
+                ui.lineChart.Init(ui.lineChart.nameNotLoaded); // show not loaded charts
             }
 
         });

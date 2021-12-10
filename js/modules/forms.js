@@ -47,9 +47,7 @@ ui.forms = {
 
 (function () {
 
-    var
-        clearForms,
-        loadClearForms;
+    var clearForms;
 
     ui.forms.Start = function () {
 
@@ -121,7 +119,7 @@ ui.forms = {
 
         };
 
-        loadClearForms = function () {
+        ui.forms.Init = function () {
 
             ui.each('.' + ui.forms.targetText + '.' + ui.forms.nameHasClear + ' input', function () {
 
@@ -131,7 +129,7 @@ ui.forms = {
             });
 
         };
-        loadClearForms();
+        ui.forms.Init();
 
         // Event Listeners
         ui.on(document,
@@ -392,7 +390,7 @@ ui.forms = {
         function () {
 
             if (ui.ajax.classNames.indexOf(ui.forms.nameClear) > 0) {
-                loadClearForms();
+                ui.forms.Init();
             }
 
         });

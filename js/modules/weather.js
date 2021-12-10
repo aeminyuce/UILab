@@ -48,7 +48,6 @@ ui.weather = {
     var
         dateLoaded,
         clockLoaded,
-        loadGraphs,
 
         re = new RegExp('\\s+\\s'),
         rex = new RegExp('^\\s|\\s+$');
@@ -60,7 +59,7 @@ ui.weather = {
         animations = [];
 
         // load animation graphics
-        loadGraphs = function () {
+        ui.weather.Init = function () {
 
             var i, html;
 
@@ -131,8 +130,7 @@ ui.weather = {
                 });
 
         };
-
-        loadGraphs();
+        ui.weather.Init();
 
         // check date, clock and night
         function dateFnc() {
@@ -255,7 +253,7 @@ ui.weather = {
         function () {
 
             if (ui.ajax.classNames.indexOf(ui.weather.target) > -1) {
-                loadGraphs();
+                ui.weather.Init();
             }
 
         });

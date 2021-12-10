@@ -22,8 +22,6 @@ ui.textareaCounter = {
 
 (function () {
 
-    var loadCounters;
-
     ui.textareaCounter.Start = function () {
 
         function counter(t) {
@@ -52,7 +50,7 @@ ui.textareaCounter = {
 
         }
 
-        loadCounters = function () {
+        ui.textareaCounter.Init = function () {
 
             ui.each('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + ']:not(.' + ui.textareaCounter.nameToggle + '):not(.' + ui.textareaCounter.nameChange + ')',
 
@@ -61,7 +59,7 @@ ui.textareaCounter = {
                 });
 
         };
-        loadCounters();
+        ui.textareaCounter.Init();
 
         // Event Listeners
         ui.on(document,
@@ -114,7 +112,7 @@ ui.textareaCounter = {
         function () {
 
             if (ui.ajax.data.indexOf(ui.textareaCounter.dataCounter) > 0) {
-                loadCounters();
+                ui.textareaCounter.Init();
             }
 
         });

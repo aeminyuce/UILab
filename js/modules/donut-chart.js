@@ -25,11 +25,9 @@ ui.donutChart = {
 
 (function () {
 
-    var loadCharts;
-
     ui.donutChart.Start = function () {
 
-        loadCharts = function () {
+        ui.donutChart.Init = function () {
 
             var chart, circles, percent, dasharray, angle, arrPercent, arrAngle;
 
@@ -87,7 +85,7 @@ ui.donutChart = {
             }
 
         };
-        loadCharts();
+        ui.donutChart.Init();
 
         // Event Listeners
         ui.on(document,
@@ -160,7 +158,7 @@ ui.donutChart = {
         function () {
 
             if (ui.ajax.classNames.indexOf(ui.donutChart.target) > -1) {
-                loadCharts();
+                ui.donutChart.Init();
             }
 
         });

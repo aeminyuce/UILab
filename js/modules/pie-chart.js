@@ -42,8 +42,6 @@ ui.pieChart = {
 
 (function () {
 
-    var loadCharts;
-
     function chartsResizer() {
 
         var chart, elems;
@@ -64,7 +62,7 @@ ui.pieChart = {
 
     ui.pieChart.Start = function () {
 
-        loadCharts = function () {
+        ui.pieChart.Init = function () {
 
             var chart, elems, deg, textDeg, loadFnc, arr, fill, percent, html, title, msgHolder, msg;
 
@@ -203,7 +201,7 @@ ui.pieChart = {
 
         };
 
-        loadCharts();
+        ui.pieChart.Init();
         chartsResizer();
 
         // Event Listeners
@@ -261,7 +259,7 @@ ui.pieChart = {
         function () {
 
             if (ui.ajax.classNames.indexOf(ui.pieChart.target) > -1) {
-                loadCharts();
+                ui.pieChart.Init();
             }
 
         });

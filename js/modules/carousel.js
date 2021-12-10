@@ -437,7 +437,7 @@ ui.carousel = {
 
     }
 
-    function carouselLoader() {
+    ui.carousel.Init = function () {
 
         var carousels = ui.find('.' + ui.carousel.target + ':not(.' + ui.carousel.nameActive + ')');
 
@@ -630,7 +630,7 @@ ui.carousel = {
 
     ui.carousel.Start = function () {
 
-        carouselLoader();
+        ui.carousel.Init();
 
         // Event Listeners
         ui.on(document,
@@ -1001,7 +1001,7 @@ ui.carousel = {
         function () {
 
             if (ui.ajax.classNames.indexOf(ui.carousel.target) > -1) {
-                carouselLoader();
+                ui.carousel.Init();
             }
 
         });

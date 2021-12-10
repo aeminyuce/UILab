@@ -99,8 +99,6 @@ ui.calendar = {
 
 (function () {
 
-    var checkCalendars;
-
     // first loading
     ui.calendar.Start = function () {
 
@@ -510,7 +508,7 @@ ui.calendar = {
         }
 
         // ckeck not loaded calendars
-        checkCalendars = function () {
+        ui.calendar.Init = function () {
 
             var calendars = ui.find('.' + ui.calendar.target + ':not(.' + ui.calendar.nameActive + ')');
 
@@ -525,7 +523,7 @@ ui.calendar = {
             }
 
         };
-        checkCalendars();
+        ui.calendar.Init();
 
         // Event Listeners
         // calendar navigation
@@ -981,7 +979,7 @@ ui.calendar = {
         function () {
 
             if (ui.ajax.classNames.indexOf(ui.calendar.target) > -1) {
-                checkCalendars();
+                ui.calendar.Init();
             }
 
         });

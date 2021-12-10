@@ -16,8 +16,6 @@ ui.formSpinner = {
 
 (function () {
 
-    var checkSpinnerForms;
-
     ui.formSpinner.Start = function () {
 
         // Event Listeners
@@ -53,7 +51,7 @@ ui.formSpinner = {
 
             });
 
-        checkSpinnerForms = function () {
+        ui.formSpinner.Init = function () {
 
             ui.each('.' + ui.formSpinner.target,
 
@@ -65,7 +63,7 @@ ui.formSpinner = {
                 });
 
         };
-        checkSpinnerForms();
+        ui.formSpinner.Init();
 
     };
 
@@ -79,7 +77,7 @@ ui.formSpinner = {
         function () {
 
             if (ui.ajax.classNames.indexOf(ui.formSpinner.target) > -1) {
-                checkSpinnerForms();
+                ui.formSpinner.Init();
             }
 
         });
