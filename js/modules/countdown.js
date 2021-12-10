@@ -94,28 +94,28 @@ ui.countdown = {
                     if (day !== undefined) {
 
                         if (dateLeft[0] === '0') { day.textContent = '00'; } else {
-                            if (dateLeft[0].length === 1) { day.textContent = '0' + dateLeft[0]; } else { day.textContent = dateLeft[0];}
+                            if (dateLeft[0].length === 1) { day.textContent = '0' + dateLeft[0]; } else { day.textContent = dateLeft[0]; }
                         }
 
                     }
                     if (hour !== undefined) {
 
                         if (dateLeft[1] === '0') { hour.textContent = '00'; } else {
-                            if (dateLeft[1].length === 1) { hour.textContent = '0' + dateLeft[1]; } else { hour.textContent = dateLeft[1];}
+                            if (dateLeft[1].length === 1) { hour.textContent = '0' + dateLeft[1]; } else { hour.textContent = dateLeft[1]; }
                         }
 
                     }
                     if (minute !== undefined) {
 
                         if (dateLeft[2] === '0') { minute.textContent = '00'; } else {
-                            if (dateLeft[2].length === 1) { minute.textContent = '0' + dateLeft[2]; } else { minute.textContent = dateLeft[2];}
+                            if (dateLeft[2].length === 1) { minute.textContent = '0' + dateLeft[2]; } else { minute.textContent = dateLeft[2]; }
                         }
 
                     }
                     if (sec !== undefined) {
 
                         if (dateLeft[3] === '0') { sec.textContent = '00'; } else {
-                            if (dateLeft[3].length === 1) { sec.textContent = '0' + dateLeft[3]; } else { sec.textContent = dateLeft[3];}
+                            if (dateLeft[3].length === 1) { sec.textContent = '0' + dateLeft[3]; } else { sec.textContent = dateLeft[3]; }
                         }
 
                     }

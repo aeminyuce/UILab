@@ -233,37 +233,37 @@ ui.classnames = {
                     }
 
                     // filter rules
-                    if (['desktop','windows','edg','edge','ie','chrome','firefox','opera','mac','safari','mobile','ios','android'].indexOf(title) >= 0) {
+                    if (['desktop', 'windows', 'edg', 'edge', 'ie', 'chrome', 'firefox', 'opera', 'mac', 'safari', 'mobile', 'ios', 'android'].indexOf(title) >= 0) {
                         title = 'user agents';
 
-                    } else if (['container','fluid','fixed','row','gutter','col','push','pull','offset','order'].indexOf(title) >= 0) {
+                    } else if (['container', 'fluid', 'fixed', 'row', 'gutter', 'col', 'push', 'pull', 'offset', 'order'].indexOf(title) >= 0) {
                         title = 'grids';
 
-                    } else if (['open','active','selected','pause','show','showed','faded','odd','even','asc','desc','filtered','checked','loaded','success','resized','changed'].indexOf(title) >= 0) {
+                    } else if (['open', 'active', 'selected', 'pause', ' show', 'showed', 'faded', 'odd', 'even', 'asc', 'desc', 'filtered', 'checked', 'loaded', 'success', 'resized', 'changed'].indexOf(title) >= 0) {
                         title = 'helpers';
 
-                    } else if (['h1','h2','h3','h4','h5','h6'].indexOf(title) >= 0) {
+                    } else if (['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].indexOf(title) >= 0) {
                         title = 'headings';
 
-                    } else if (['form','input','select','dual','textarea','indeterminate','range','check','radio','switch','currency','spinner','file','number','required','label','pass'].indexOf(title) >= 0) {
+                    } else if (['form', 'input', 'select', 'dual', 'textarea', 'indeterminate', 'range', 'check', 'radio', 'switch', 'currency', 'spinner', 'file', 'number', 'required', 'label', 'pass'].indexOf(title) >= 0) {
                         title = 'forms';
 
-                    } else if (['w','weather','days','graphs','reports','now','clear','night'].indexOf(title) >= 0) {
+                    } else if (['w', 'weather', 'days', 'graphs', 'reports', 'now', 'clear', 'night'].indexOf(title) >= 0) {
                         title = 'weather';
 
-                    } else if (['code','rtl','pre','hr'].indexOf(title) >= 0) {
+                    } else if (['code', 'rtl', 'pre', 'hr'].indexOf(title) >= 0) {
                         title = 'typography';
 
-                    } else if (['theme','fill','stroke','text'].indexOf(title) >= 0) {
+                    } else if (['theme', 'fill', 'stroke', 'text'].indexOf(title) >= 0) {
                         title = 'themes';
 
-                    } else if (['line','donut','pie'].indexOf(title) >= 0) {
+                    } else if (['line', 'donut', 'pie'].indexOf(title) >= 0) {
                         title = 'charts';
 
-                    } else if (['icon','icons','toggle'].indexOf(title) >= 0) {
+                    } else if (['icon', 'icons', 'toggle'].indexOf(title) >= 0) {
                         title = 'icons';
 
-                    } else if (['dropdown','nav','menu'].indexOf(title) >= 0) {
+                    } else if (['dropdown', 'nav', 'menu'].indexOf(title) >= 0) {
                         title = 'dropdowns';
 
                     } else if (title === 'darkmode' || title === 'invert') {

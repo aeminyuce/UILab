@@ -55,7 +55,7 @@ ui.autocomplete = {
         var
             customLowerCase,
             formEventListeners,
-            autocompleteRequests  = [];
+            autocompleteRequests = [];
 
         // custom lowercase
         (function () {
@@ -238,7 +238,7 @@ ui.autocomplete = {
 
                                                 for (j = 0; j < key.toString().length; j++) {
 
-                                                    if (j ===  key.toString().indexOf(m)) { txt += '<' + ui.autocomplete.tagHighlight + '>'; }
+                                                    if (j === key.toString().indexOf(m)) { txt += '<' + ui.autocomplete.tagHighlight + '>'; }
                                                     if (j === (key.toString().indexOf(m) + v.length)) { txt += '</' + ui.autocomplete.tagHighlight + '>'; }
 
                                                     txt += key.toString().charAt(j);

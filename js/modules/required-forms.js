@@ -187,7 +187,7 @@ ui.requiredForms = {
 
                 p = checkHolder;
 
-                holderForms = ui.find('.' + ui.requiredForms.nameInput + ' input.' + ui.requiredForms.target + ',' +  '.' + ui.requiredForms.nameSelect + ' select.' + ui.requiredForms.target, p);
+                holderForms = ui.find('.' + ui.requiredForms.nameInput + ' input.' + ui.requiredForms.target + ',' + '.' + ui.requiredForms.nameSelect + ' select.' + ui.requiredForms.target, p);
                 hideErr();
 
                 ui.each(holderForms,

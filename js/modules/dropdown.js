@@ -204,13 +204,13 @@ ui.dropdown = {
 
                 setMaxH = function (pos) { // set max-height of list
 
-                    if (pos === 'default')  {
+                    if (pos === 'default') {
                         list.style.maxHeight = window.innerHeight - (offset.top + that.offsetHeight + ui.dropdown.scrollbarSize + ui.dropdown.menuTopMargin) + 'px';
 
                     } else if (pos === 'top') {
                         list.style.maxHeight = window.innerHeight - (ui.dropdown.scrollbarSize + ui.dropdown.menuTopMargin) + 'px';
 
-                    } else if (pos === 'pos')  {
+                    } else if (pos === 'pos') {
                         list.style.maxHeight = window.innerHeight - (offset.top + ui.dropdown.scrollbarSize) + 'px';
                     }
 
