@@ -97,7 +97,7 @@ ui.classnames = {
                 for (jsModule in ui) {
                     for (jsKey in ui[jsModule]) {
 
-                        if ( jsKey.match(re) !== null && jsKey.match(ui.classnames.jsIgnore) === null) {
+                        if (jsKey.match(re) !== null && jsKey.match(ui.classnames.jsIgnore) === null) {
 
                             jsClass = ui[jsModule][jsKey];
                             if (typeof jsClass === 'string') { // remove objects
