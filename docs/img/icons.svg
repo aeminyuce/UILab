@@ -1619,9 +1619,9 @@
         <symbol id="required" viewBox="-24 -12 288 288">
             <path d="M120.3 12v240M224.2 192L16.4 72M16.4 192L224.2 72"/>
         </symbol>
-        <symbol id="save" viewBox="-22 -12 288 288">
-            <path d="M116 12v72 M52 12h112v72H52z M52 124h144v88H52z"/>
-            <path opacity=".42" d="M12 12h169.5l54.7 48v192H12z"/>
+        <symbol id="save" viewBox="-26 -16 288 288">
+            <path d="M47 6h90v47H47Z M118 85a41 41 0 1 1-41 41 41 41 0 0 1 41-41Z"/>
+            <path opacity=".42" d="M6 6h170l54 48v192H6Z"/>
         </symbol>
         <symbol id="save-fill" viewBox="0 0 288 288">
             <use fill="currentColor" href="#save"/>
