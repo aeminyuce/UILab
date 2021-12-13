@@ -13,7 +13,9 @@ module.exports = {
         "Event": true,
         "navigator": true,
 
+        "require": true,
         "module": true,
+
         "NodeList": true,
         "Image": true,
 
