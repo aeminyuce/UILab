@@ -24,7 +24,7 @@
     "css-sign-up-page": "lessc css/custom/sign-up-page.less css/custom/sign-up-page.css",
     "js-build": "npm run js:min & npm run js-helpers & npm run js-custom",
     "js": "babel js/core.js js/modules/*.js --out-file js/ui.js",
-    "js:es6": "babel --no-babelrc js/core.js js/modules/*.js --out-file js/ui.js",
+    "js:dev": "babel --no-babelrc js/core.js js/modules/*.js --out-file js/ui.js",
     "js:min": "babel js/core.js js/modules/*.js --out-file js/ui.js --minified --no-comments",
     "js-helpers": "npm run js-classnames & npm run js-iconlist",
     "js-classnames": "babel js/helpers/classnames.js --out-file js/helpers/classnames-bundle.js --no-comments",
