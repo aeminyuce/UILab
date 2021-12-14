@@ -1,8 +1,8 @@
 <!-- custom CSS -->
-<link href="../css/custom/dashboard.css?v=<?php echo filemtime('../css/custom/dashboard.css'); ?>" rel="stylesheet">
+<link href="../dist/css/dashboard.css?v=<?php echo filemtime('../dist/css/dashboard.css'); ?>" rel="stylesheet">
 
 <!-- custom JS -->
-<script src="../js/custom/dashboard-bundle.js?v=<?php echo filemtime('../js/custom/dashboard-bundle.js'); ?>"></script>
+<script src="../dist/js/dashboard.js?v=<?php echo filemtime('../dist/js/dashboard.js'); ?>"></script>
 
 <main class="ui-container ui-no-gutter">
 

@@ -25,12 +25,12 @@
     <link rel="ui-icon" href="img/favicon.ico">
 
     <!-- UI -->
-    <link href="../css/ui.css?v=<?php echo filemtime('../css/ui.css'); ?>" rel="stylesheet">
-    <script src="../js/ui.js?v=<?php echo filemtime('../js/ui.js'); ?>"></script>
+    <link href="../dist/css/ui.css?v=<?php echo filemtime('../dist/css/ui.css'); ?>" rel="stylesheet">
+    <script src="../dist/js/ui.js?v=<?php echo filemtime('../dist/js/ui.js'); ?>"></script>
 
     <!-- helpers -->
-    <script src="../js/helpers/classnames-bundle.js?v=<?php echo filemtime('../js/helpers/classnames-bundle.js'); ?>"></script>
-    <script src="../js/helpers/iconlist-bundle.js?v=<?php echo filemtime('../js/helpers/iconlist-bundle.js'); ?>"></script>
+    <script src="../dist/js/classnames.js?v=<?php echo filemtime('../dist/js/classnames.js'); ?>"></script>
+    <script src="../dist/js/iconlist.js?v=<?php echo filemtime('../dist/js/iconlist.js'); ?>"></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

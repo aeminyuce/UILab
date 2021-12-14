@@ -1,8 +1,8 @@
 <!-- custom CSS -->
-<link href="../css/custom/landing-page.css?v=<?php echo filemtime('../css/custom/landing-page.css'); ?>" rel="stylesheet">
+<link href="../dist/css/landing-page.css?v=<?php echo filemtime('../dist/css/landing-page.css'); ?>" rel="stylesheet">
 
 <!-- custom JS -->
-<script src="../js/custom/landing-page-bundle.js?v=<?php echo filemtime('../js/custom/landing-page-bundle.js'); ?>"></script>
+<script src="../dist/js/landing-page.js?v=<?php echo filemtime('../dist/js/landing-page.js'); ?>"></script>
 
 <!-- header: start -->
 <header class="ui-header-sticky ui-container ui-no-gutter ui-bg-white ui-invert-bg" data-ui-classes="ui-shadow-lg">
