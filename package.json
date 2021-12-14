@@ -23,7 +23,7 @@
     "css-product-listing": "lessc css/custom/product-listing.less css/custom/product-listing.css",
     "css-sign-up-page": "lessc css/custom/sign-up-page.less css/custom/sign-up-page.css",
     "js-build": "npm run js:min & npm run js-helpers & npm run js-custom",
-    "js": "babel js/core.js js/modules/*.js --out-file js/ui.js",
+    "js": "babel js/ui.js js/modules/*.js --out-file js/ui.js",
     "js:dev": "babel --no-babelrc js/core.js js/modules/*.js --out-file js/ui.js",
     "js:min": "babel js/core.js js/modules/*.js --out-file js/ui.js --minified --no-comments",
     "js-helpers": "npm run js-classnames & npm run js-iconlist",
@@ -51,6 +51,7 @@
     "@babel/node": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "eslint": "^8.4.1",
-    "less": "^4.1.2"
+    "less": "^4.1.2",
+    "rollup": "^2.61.1"
   }
 }
