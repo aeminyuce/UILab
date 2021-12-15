@@ -282,11 +282,11 @@
                         </div>
                         <div class="ui-carousel-nav ui-m-10-t ui-ease-1st-btn">
                             <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square ui-circle">
-                                <svg class="ui-icon ui-m-3-r"><use href="img/icons.svg#angle-left"/></svg>
+                                <svg class="ui-icon ui-m-3-r"><use href="../icon/set.svg#angle-left"/></svg>
                             </button>
                             <span class="ui-carousel-dots ui-color-black-25"></span>
                             <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square ui-circle">
-                                <svg class="ui-icon ui-m-3-l"><use href="img/icons.svg#angle-right"/></svg>
+                                <svg class="ui-icon ui-m-3-l"><use href="../icon/set.svg#angle-right"/></svg>
                             </button>
                         </div>
                     </div>
@@ -298,8 +298,8 @@
                         <div class="ui-row">
                             <div class="ui-carousel-gallery-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 ui-sm-fluid">
                                 <img src="img/house_01.jpg" class="ui-gallery-call ui-ease-layout" data-ui-target="#productGallery" data-ui-count="0" alt="">
-                                <svg class="ui-carousel-gallery-zoom ui-icon"><use href="img/icons.svg#expand-wide"/></svg>
-                                <svg class="ui-carousel-gallery-loader ui-icon"><use href="img/icons.svg#loader-line"/></svg>
+                                <svg class="ui-carousel-gallery-zoom ui-icon"><use href="../icon/set.svg#expand-wide"/></svg>
+                                <svg class="ui-carousel-gallery-loader ui-icon"><use href="../icon/set.svg#loader-line"/></svg>
                             </div>
                         </div>
                         <div id="productGallery" class="ui-carousel ui-carousel-half ui-carousel-gallery-thumbs ui-m-10 ui-md-no-m-h" data-ui-col="8" data-ui-col-md="6" data-ui-col-sm="5" data-ui-col-xs="3">
@@ -334,11 +334,11 @@
                             </div>
                             <div class="ui-carousel-nav ui-ease-1st-btn">
                                 <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square ui-circle">
-                                    <svg class="ui-icon ui-m-3-r"><use href="img/icons.svg#angle-left"/></svg>
+                                    <svg class="ui-icon ui-m-3-r"><use href="../icon/set.svg#angle-left"/></svg>
                                 </button>
                                 <span class="ui-carousel-dots ui-color-black-25"></span>
                                 <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square ui-circle">
-                                    <svg class="ui-icon ui-m-3-l"><use href="img/icons.svg#angle-right"/></svg>
+                                    <svg class="ui-icon ui-m-3-l"><use href="../icon/set.svg#angle-right"/></svg>
                                 </button>
                             </div>
                         </div>
@@ -351,8 +351,8 @@
                         <div class="ui-row">
                             <div class="ui-carousel-gallery-detail ui-col-8 ui-col-md-6 ui-push-2 ui-push-md-3 ui-sm-fluid">
                                 <img src="img/image_01.jpg" class="ui-gallery-call ui-ease-layout" data-ui-target="#productGallery2" data-ui-count="0" alt="">
-                                <svg class="ui-carousel-gallery-zoom ui-icon"><use href="img/icons.svg#expand-wide"/></svg>
-                                <svg class="ui-carousel-gallery-loader ui-icon"><use href="img/icons.svg#loader-line"/></svg>
+                                <svg class="ui-carousel-gallery-zoom ui-icon"><use href="../icon/set.svg#expand-wide"/></svg>
+                                <svg class="ui-carousel-gallery-loader ui-icon"><use href="../icon/set.svg#loader-line"/></svg>
                             </div>
                         </div>
                         <div id="productGallery2" class="ui-carousel-gallery-thumbs">

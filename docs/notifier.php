@@ -10,108 +10,108 @@
                         <div class="ui-col-6">
                             <a href="#" class="ui-btn ui-btn-square ui-btn-xs ui-round">
                                 <span class="ui-notifier">
-                                    <svg class="ui-icon"><use href="img/icons.svg#setting"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#setting"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-sm ui-round">
                                 <span class="ui-notifier">
-                                    <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#user"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-round">
                                 <span class="ui-notifier">
-                                    <svg class="ui-icon"><use href="img/icons.svg#comments"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#comments"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-lg ui-round">
                                 <span class="ui-notifier">
-                                    <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#user"/></svg>
                                 </span>
                             </a>
                         </div>
                         <div class="ui-col-6">
                             <a href="#" class="ui-btn ui-btn-square ui-btn-xs ui-circle">
                                 <span class="ui-notifier">
-                                    <svg class="ui-icon"><use href="img/icons.svg#setting"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#setting"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-sm ui-circle">
                                 <span class="ui-notifier">
-                                    <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#user"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-circle">
                                 <span class="ui-notifier">
-                                    <svg class="ui-icon"><use href="img/icons.svg#comments"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#comments"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-lg ui-circle">
                                 <span class="ui-notifier">
-                                    <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#user"/></svg>
                                 </span>
                             </a>
                         </div>
                         <div class="ui-col-6">
                             <a href="#" class="ui-btn ui-btn-square ui-btn-xs ui-round">
                                 <span class="ui-notifier" data-ui-val="2">
-                                    <svg class="ui-icon"><use href="img/icons.svg#setting"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#setting"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-sm ui-round">
                                 <span class="ui-notifier" data-ui-val="4">
-                                    <svg class="ui-icon"><use href="img/icons.svg#setting"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#setting"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-round">
                                 <span class="ui-notifier" data-ui-val="11">
-                                    <svg class="ui-icon"><use href="img/icons.svg#setting"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#setting"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-lg ui-round">
                                 <span class="ui-notifier" data-ui-val="20">
-                                    <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#user"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-lg ui-round">
                                 <span class="ui-notifier" data-ui-val="3">
-                                    <svg class="ui-icon"><use href="img/icons.svg#comments"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#comments"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-lg ui-round">
                                 <span class="ui-notifier" data-ui-val="315">
-                                    <svg class="ui-icon"><use href="img/icons.svg#bell"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#bell"/></svg>
                                 </span>
                             </a>
                         </div>
                         <div class="ui-col-6">
                             <a href="#" class="ui-btn ui-btn-square ui-btn-xs ui-circle">
                                 <span class="ui-notifier" data-ui-val="2">
-                                    <svg class="ui-icon"><use href="img/icons.svg#setting"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#setting"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-sm ui-circle">
                                 <span class="ui-notifier" data-ui-val="4">
-                                    <svg class="ui-icon"><use href="img/icons.svg#setting"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#setting"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-circle">
                                 <span class="ui-notifier" data-ui-val="11">
-                                    <svg class="ui-icon"><use href="img/icons.svg#setting"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#setting"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-lg ui-circle">
                                 <span class="ui-notifier" data-ui-val="20">
-                                    <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#user"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-lg ui-circle">
                                 <span class="ui-notifier" data-ui-val="3">
-                                    <svg class="ui-icon"><use href="img/icons.svg#comments"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#comments"/></svg>
                                 </span>
                             </a>
                             <a href="#" class="ui-btn ui-btn-square ui-btn-lg ui-circle">
                                 <span class="ui-notifier" data-ui-val="315">
-                                    <svg class="ui-icon"><use href="img/icons.svg#bell"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#bell"/></svg>
                                 </span>
                             </a>
                         </div>
@@ -138,7 +138,7 @@
 
                             <div class="ui-notifier ui-circle">
                                 <span class="ui-avatar-sm ui-circle ui-theme-orange ui-fill-dark-100">
-                                    <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#user"/></svg>
                                 </span>
                             </div>
 
@@ -163,7 +163,7 @@
 
                             <div class="ui-notifier ui-notifier-lg ui-circle">
                                 <span class="ui-avatar ui-circle ui-theme-orange ui-fill-dark-100">
-                                    <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#user"/></svg>
                                 </span>
                             </div>
 
@@ -188,7 +188,7 @@
 
                             <div class="ui-notifier ui-notifier-lg ui-circle">
                                 <span class="ui-avatar-lg ui-circle ui-theme-orange ui-fill-dark-100">
-                                    <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#user"/></svg>
                                 </span>
                             </div>
 

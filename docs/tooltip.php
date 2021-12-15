@@ -34,21 +34,21 @@
 
                 <h3 class="ui-h3">Using with Icons</h3>
                 <div class="ui-theme-sub ui-icons-xl ui-text ui-p-30-b ui-hover-t-more-1st ui-ease-1st-layout">
-                    <svg class="ui-icon" data-ui-tooltip title="Like!"><use href="img/icons.svg#heart"/></svg>
-                    <svg class="ui-icon" data-ui-tooltip title="Somewhere on Earth!"><use href="img/icons.svg#marker"/></svg>
-                    <svg class="ui-icon" data-ui-tooltip title="Call us now 555 55 55"><use href="img/icons.svg#phone"/></svg>
-                    <svg class="ui-icon" data-ui-tooltip title="Add favorites!"><use href="img/icons.svg#star"/></svg>
+                    <svg class="ui-icon" data-ui-tooltip title="Like!"><use href="../icon/set.svg#heart"/></svg>
+                    <svg class="ui-icon" data-ui-tooltip title="Somewhere on Earth!"><use href="../icon/set.svg#marker"/></svg>
+                    <svg class="ui-icon" data-ui-tooltip title="Call us now 555 55 55"><use href="../icon/set.svg#phone"/></svg>
+                    <svg class="ui-icon" data-ui-tooltip title="Add favorites!"><use href="../icon/set.svg#star"/></svg>
                 </div>
 
                 <h3 class="ui-h3">Using with Forms</h3>
                 <div class="ui-ease-1st-form ui-p-30-b ui-form-lg ui-ease-1st-form">
                     <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
-                        <svg class="ui-icon" data-ui-tooltip="tl" title="Your message here!"><use href="img/icons.svg#question-circle-fill"/></svg>
+                        <svg class="ui-icon" data-ui-tooltip="tl" title="Your message here!"><use href="../icon/set.svg#question-circle-fill"/></svg>
                         <input type="text" placeholder="Placeholder Example">
                     </div>
                     <span class="ui-sp-15"></span>
                     <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form">
-                        <svg class="ui-icon" data-ui-tooltip="tr" title="Your message here!"><use href="img/icons.svg#question-circle-fill"/></svg>
+                        <svg class="ui-icon" data-ui-tooltip="tr" title="Your message here!"><use href="../icon/set.svg#question-circle-fill"/></svg>
                         <input type="text" placeholder="Placeholder Example">
                     </div>
                 </div>

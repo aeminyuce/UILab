@@ -26,7 +26,7 @@
                     <ul>
                         <li>
                             <a class="ui-opacity ui-ease-btn" href="#">
-                                <svg class="ui-icon ui-icon-sm"><use href="img/icons.svg#home"/></svg>
+                                <svg class="ui-icon ui-icon-sm"><use href="../icon/set.svg#home"/></svg>
                             </a>
                         </li>
                         <li>
@@ -44,7 +44,7 @@
                     <ul>
                         <li>
                             <a class="ui-opacity ui-ease-btn" href="#">
-                                <svg class="ui-icon ui-icon-sm"><use href="img/icons.svg#home"/></svg>
+                                <svg class="ui-icon ui-icon-sm"><use href="../icon/set.svg#home"/></svg>
                             </a>
                         </li>
                         <li>
@@ -62,7 +62,7 @@
                     <ul class="ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-round" href="#">
-                                <svg class="ui-icon ui-m-5-r"><use href="img/icons.svg#home"/></svg>
+                                <svg class="ui-icon ui-m-5-r"><use href="../icon/set.svg#home"/></svg>
                                 Home
                             </a>
                         </li>
@@ -81,7 +81,7 @@
                     <ul class="ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-round ui-fill-dark-100" href="#">
-                                <svg class="ui-icon ui-m-5-r"><use href="img/icons.svg#home"/></svg>
+                                <svg class="ui-icon ui-m-5-r"><use href="../icon/set.svg#home"/></svg>
                                 Home
                             </a>
                         </li>
@@ -100,13 +100,13 @@
                     <ul class="ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-round" href="#">
-                                <svg class="ui-icon ui-m-5-r"><use href="img/icons.svg#home"/></svg>
+                                <svg class="ui-icon ui-m-5-r"><use href="../icon/set.svg#home"/></svg>
                                 Home
                             </a>
                         </li>
                         <li>
                             <a class="ui-btn ui-round" href="#">
-                                <svg class="ui-icon ui-icon-xs ui-inline-block ui-m-3-r"><use href="img/icons.svg#angle-left"/></svg>
+                                <svg class="ui-icon ui-icon-xs ui-inline-block ui-m-3-r"><use href="../icon/set.svg#angle-left"/></svg>
                                 Search Results
                             </a>
                         </li>
@@ -122,13 +122,13 @@
                     <ul>
                         <li>
                             <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#">
-                                <svg class="ui-icon"><use href="img/icons.svg#home"/></svg>
+                                <svg class="ui-icon"><use href="../icon/set.svg#home"/></svg>
                             </a>
                         </li>
                         <li>
                             <span class="ui-dropdown ui-ease-dropdown">
                                 <button class="ui-btn ui-round ui-fill-dark-100">
-                                    <svg class="ui-icon"><use href="img/icons.svg#ellipsis-h"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#ellipsis-h"/></svg>
                                 </button>
                                 <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                     <li>
@@ -155,13 +155,13 @@
                     <ul>
                         <li>
                             <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#">
-                                <svg class="ui-icon"><use href="img/icons.svg#home"/></svg>
+                                <svg class="ui-icon"><use href="../icon/set.svg#home"/></svg>
                             </a>
                         </li>
                         <li>
                             <span class="ui-dropdown ui-ease-dropdown">
                                 <button class="ui-btn ui-round ui-fill-dark-100">
-                                    <svg class="ui-icon"><use href="img/icons.svg#ellipsis-h"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#ellipsis-h"/></svg>
                                 </button>
                                 <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                     <li>

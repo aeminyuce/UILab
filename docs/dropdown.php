@@ -9,7 +9,7 @@
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn ui-round ui-fill-dark-100">
                                 Dropdown (Long List)
-                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                 <li>Dropdown Item</li>
@@ -43,7 +43,7 @@
                         <div class="ui-dropdown ui-menu-hover ui-ease-dropdown">
                             <button class="ui-btn ui-round ui-fill-dark-100">
                                 Hover Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                 <li><a href="#">Dropdown Link</a></li>
@@ -56,7 +56,7 @@
                         <div class="ui-dropdown ui-menu-c ui-ease-dropdown">
                             <button class="ui-btn ui-round ui-fill-dark-100">
                                 Center Menu
-                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                 <li><a href="#">Dropdown with ui-menu-c align center to your drop down list.</a></li>
@@ -69,7 +69,7 @@
                         <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                             <button class="ui-btn ui-round ui-fill-dark-100">
                                 Left Menu
-                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                 <li><a href="#">Dropdown with ui-menu-l align left your drop down list.</a></li>
@@ -87,7 +87,7 @@
                         <div class="ui-dropdown ui-menu-pos-r ui-ease-dropdown">
                             <button class="ui-btn ui-round">
                                 Right Position Menu
-                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-right"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-right"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                 <li>Dropdown Item</li>
@@ -101,7 +101,7 @@
 
                         <div class="ui-dropdown ui-menu-pos-l ui-ease-dropdown">
                             <button class="ui-btn ui-round">
-                            <svg class="ui-toggle-icon ui-icon ui-float-l"><use href="img/icons.svg#angle-left"/></svg>
+                            <svg class="ui-toggle-icon ui-icon ui-float-l"><use href="../icon/set.svg#angle-left"/></svg>
                                 Left Position Menu
                             </button>
                             <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
@@ -120,7 +120,7 @@
                         <div class="ui-dropdown ui-menu-pos-r ui-ease-dropdown">
                             <button class="ui-btn ui-btn-lg ui-round">
                                 Right Position Menu (Long List)
-                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-right"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-right"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                 <li>Dropdown Item</li>
@@ -155,7 +155,7 @@
 
                         <div class="ui-dropdown ui-menu-pos-l ui-ease-dropdown">
                             <button class="ui-btn ui-btn-lg ui-round">
-                            <svg class="ui-toggle-icon ui-icon ui-float-l"><use href="img/icons.svg#angle-left"/></svg>
+                            <svg class="ui-toggle-icon ui-icon ui-float-l"><use href="../icon/set.svg#angle-left"/></svg>
                                 Left Position Menu (Long List)
                             </button>
                             <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
@@ -196,36 +196,36 @@
                         <div class="ui-dropdown ui-nav ui-menu-hover ui-btn-xs-fluid ui-m-5-b ui-ease-dropdown">
                             <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Nav Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-2 ui-round ui-shadow-lg">
-                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#hourglass-start"/></svg> Waiting</a></li>
-                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#user-circle"/></svg> Expert</a></li>
-                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#shield"/></svg> On Audit</a></li>
-                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#hourglass"/></svg> Delayed</a></li>
-                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#hourglass-end"/></svg> Waiting</a></li>
-                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#user"/></svg> Expert</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#hourglass-start"/></svg> Waiting</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#user-circle"/></svg> Expert</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#shield"/></svg> On Audit</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#hourglass"/></svg> Delayed</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#hourglass-end"/></svg> Waiting</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#user"/></svg> Expert</a></li>
                             </ul>
                         </div>
 
                         <div class="ui-dropdown ui-nav ui-menu-hover ui-btn-xs-fluid ui-m-5-b ui-ease-dropdown">
                             <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Nav Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-2 ui-round ui-shadow-lg">
-                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#hourglass-start"/></svg> Waiting</a></li>
-                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#user-circle"/></svg> Expert</a></li>
-                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#shield"/></svg> On Audit</a></li>
-                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#hourglass"/></svg> Delayed</a></li>
-                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#hourglass-end"/></svg> Waiting</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#hourglass-start"/></svg> Waiting</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#user-circle"/></svg> Expert</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#shield"/></svg> On Audit</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#hourglass"/></svg> Delayed</a></li>
+                                <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#hourglass-end"/></svg> Waiting</a></li>
                             </ul>
                         </div>
 
                         <div class="ui-dropdown ui-nav ui-menu-hover ui-btn-xs-fluid ui-m-5-b ui-ease-dropdown">
                             <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Nav Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-3 ui-round ui-shadow-lg">
                                 <li><a href="#"><b class="ui-menu-icon">23</b> Waiting</a></li>
@@ -243,7 +243,7 @@
                         <div class="ui-dropdown ui-nav ui-menu-hover ui-btn-xs-fluid ui-m-5-b ui-ease-dropdown">
                             <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Nav Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-3 ui-round ui-shadow-lg">
                                 <li><a href="#"><b class="ui-menu-icon">23</b> Waiting</a></li>
@@ -266,7 +266,7 @@
                         <div class="ui-dropdown ui-nav ui-nav-full-h ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Nav Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-3 ui-shadow-lg">
                                 <li><a href="#"><b class="ui-menu-icon">23</b> Waiting</a></li>
@@ -284,7 +284,7 @@
                         <div class="ui-dropdown ui-nav ui-nav-full-h ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn ui-circle ui-fill-dark-100">
                                 Nav Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-3 ui-shadow-lg">
                                 <li><a href="#"><b class="ui-menu-icon">23</b> Waiting</a></li>
@@ -307,14 +307,14 @@
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost ui-round ui-border-dual ui-stroke ui-text ui-fill-light-200">
                                 Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-no-opacity ui-m-5-l"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-no-opacity ui-m-5-l"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <div class="ui-dropdown-menu ui-tab-holder ui-round ui-align-l ui-shadow-lg ui-block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-visible">
 
                                 <a href="#" class="ui-btn ui-btn-ghost ui-ease-btn">Waiting</a>
 
                                 <button class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-ease-btn">
-                                    <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                                    <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                                     On Audit
                                 </button>
                                 <div class="ui-tab-content ui-block-1st ui-theme-gray ui-fill-light-100 ui-ease-1st-btn">
@@ -324,7 +324,7 @@
                                 </div>
 
                                 <button class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-ease-btn">
-                                    <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                                    <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                                     Expert
                                 </button>
                                 <div class="ui-tab-content ui-block-1st ui-theme-gray ui-fill-light-100 ui-ease-1st-btn">
@@ -345,14 +345,14 @@
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost ui-round ui-border-dual ui-stroke ui-text ui-fill-light-200">
                                 Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-no-opacity ui-m-5-l"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-no-opacity ui-m-5-l"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <div class="ui-dropdown-menu ui-tab-holder ui-round ui-align-l ui-shadow-lg ui-block-1st" data-ui-classes="ui-fill-dark-100 ui-btn-visible">
 
                                 <a href="#" class="ui-btn ui-btn-ghost ui-ease-btn">Waiting</a>
 
                                 <button class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-ease-btn">
-                                    <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                                    <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                                     On Audit
                                 </button>
                                 <div class="ui-tab-content ui-block-1st ui-theme-gray ui-fill-light-100 ui-ease-1st-btn">
@@ -362,7 +362,7 @@
                                 </div>
 
                                 <button class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-ease-btn">
-                                    <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                                    <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                                     Expert
                                 </button>
                                 <div class="ui-tab-content ui-block-1st ui-theme-gray ui-fill-light-100 ui-ease-1st-btn">
@@ -387,7 +387,7 @@
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost ui-round ui-border-dual ui-stroke ui-text ui-fill-light-200">
                                 Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-no-opacity ui-m-5-l"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-no-opacity ui-m-5-l"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <div class="ui-dropdown-menu ui-round ui-align-l ui-shadow-lg ui-block-1st">
 
@@ -396,7 +396,7 @@
                                 <div class="ui-dropdown ui-menu-pos-r ui-ease-dropdown">
                                     <button class="ui-btn ui-btn-ghost">
                                         On Audit
-                                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-right"/></svg>
+                                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-right"/></svg>
                                     </button>
                                     <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                         <li><a href="#">Inner Dropdown Item</a></li>
@@ -408,7 +408,7 @@
                                 <div class="ui-dropdown ui-menu-pos-r ui-ease-dropdown">
                                     <button class="ui-btn ui-btn-ghost">
                                         Expert
-                                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-right"/></svg>
+                                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-right"/></svg>
                                     </button>
                                     <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                         <li><a href="#">Inner Dropdown Item</a></li>
@@ -429,7 +429,7 @@
                         <div class="ui-dropdown ui-menu-hover ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost ui-round ui-border-dual ui-stroke ui-text ui-fill-light-200">
                                 Hover Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-no-opacity ui-m-5-l"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-no-opacity ui-m-5-l"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <div class="ui-dropdown-menu ui-round ui-align-l ui-shadow-lg ui-block-1st">
 
@@ -438,7 +438,7 @@
                                 <div class="ui-dropdown ui-menu-pos-r ui-menu-hover ui-ease-dropdown">
                                     <button class="ui-btn ui-btn-ghost">
                                         On Audit
-                                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-right"/></svg>
+                                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-right"/></svg>
                                     </button>
                                     <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                         <li><a href="#">Inner Dropdown Item</a></li>
@@ -450,7 +450,7 @@
                                 <div class="ui-dropdown ui-menu-pos-r ui-menu-hover ui-ease-dropdown">
                                     <button class="ui-btn ui-btn-ghost">
                                         Expert
-                                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-right"/></svg>
+                                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-right"/></svg>
                                     </button>
                                     <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                         <li><a href="#">Inner Dropdown Item</a></li>
@@ -475,7 +475,7 @@
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn ui-round ui-fill-dark-200">
                                 List Example with Links
-                                <svg class="ui-toggle-icon ui-icon ui-no-opacity ui-m-5-l"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-no-opacity ui-m-5-l"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-list-col-2 ui-round ui-shadow-lg">
                                 <li class="ui-dropdown-holder">
@@ -507,7 +507,7 @@
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn ui-round ui-fill-dark-200">
                                 List Example with Buttons
-                                <svg class="ui-toggle-icon ui-icon ui-no-opacity ui-m-5-l"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-no-opacity ui-m-5-l"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-list-col-2 ui-round ui-shadow-lg">
                                 <li class="ui-dropdown-holder">
@@ -543,7 +543,7 @@
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn ui-align-l ui-circle">
                                 <span>Value 01</span>
-                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                 <li class="ui-selected">
@@ -579,54 +579,54 @@
                         <div class="ui-dropdown ui-btn-xs-fluid ui-ease-dropdown">
                             <button class="ui-btn ui-align-l ui-circle">
                                 <span>Select Value with Icons</span>
-                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-icons-m-5-r ui-round ui-shadow-lg">
                                 <li>
                                     <label>
-                                        <svg class="ui-icon"><use href="img/icons.svg#check-circle-fill"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#check-circle-fill"/></svg>
                                         Value 01
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <svg class="ui-icon"><use href="img/icons.svg#check-circle-fill"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#check-circle-fill"/></svg>
                                         Value 02
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <svg class="ui-icon"><use href="img/icons.svg#check-circle-fill"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#check-circle-fill"/></svg>
                                         Value 03
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <svg class="ui-icon"><use href="img/icons.svg#check-circle-fill"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#check-circle-fill"/></svg>
                                         Value 04
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <svg class="ui-icon"><use href="img/icons.svg#check-circle-fill"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#check-circle-fill"/></svg>
                                         Value 05
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <svg class="ui-icon"><use href="img/icons.svg#check-circle-fill"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#check-circle-fill"/></svg>
                                         Value 06
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <svg class="ui-icon"><use href="img/icons.svg#check-circle-fill"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#check-circle-fill"/></svg>
                                         Value 07
                                     </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <svg class="ui-icon"><use href="img/icons.svg#check-circle-fill"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#check-circle-fill"/></svg>
                                         Value 08
                                     </label>
                                 </li>
@@ -642,24 +642,24 @@
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn ui-align-l ui-circle">
                                 Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#user"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#user"/></svg>
                                         Profile
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#key"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#key"/></svg>
                                         Change Password
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#sign-out"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#sign-out"/></svg>
                                         Logout
                                     </a>
                                 </li>
@@ -670,24 +670,24 @@
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn ui-align-l ui-circle">
                                 Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#user"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#user"/></svg>
                                         Profile
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#key"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#key"/></svg>
                                         Change Password
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#sign-out"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#sign-out"/></svg>
                                         Logout
                                     </a>
                                 </li>
@@ -702,36 +702,36 @@
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost ui-round ui-border-dual">
                                 Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-grid ui-round ui-icons-lg ui-shadow-lg">
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#home"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#home"/></svg>
                                         Home
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#user"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#user"/></svg>
                                         Profile
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#bell"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#bell"/></svg>
                                         Notifications
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#calendar"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#calendar"/></svg>
                                         Calendar
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#sign-out"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#sign-out"/></svg>
                                         Logout
                                     </a>
                                 </li>
@@ -742,42 +742,42 @@
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost ui-round ui-border-dual">
                                 Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-grid ui-round ui-icons-lg ui-shadow-lg">
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#home"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#home"/></svg>
                                         Home
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#user"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#user"/></svg>
                                         Profile
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#bell"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#bell"/></svg>
                                         Notifications
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#calendar"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#calendar"/></svg>
                                         Calendar
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#settings"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#settings"/></svg>
                                         Settings
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#sign-out"/></svg>
+                                        <svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#sign-out"/></svg>
                                         Logout
                                     </a>
                                 </li>
@@ -788,7 +788,7 @@
                         <div class="ui-dropdown ui-ease-dropdown">
                             <button class="ui-btn ui-btn-ghost ui-round ui-border-dual">
                                 Dropdown
-                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                                <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                             </button>
                             <ul class="ui-dropdown-menu ui-dropdown-has-grid ui-round ui-shadow-lg">
                                 <li>Home</li>

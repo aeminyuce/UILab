@@ -11,8 +11,8 @@
                     <div class="ui-carousel-gallery">
                         <div class="ui-carousel-gallery-detail">
                             <img src="img/house_01.jpg" class="ui-gallery-call ui-round ui-shadow-lg ui-ease-layout" data-ui-target="#realEstateGallery" data-ui-count="0" alt="">
-                            <svg class="ui-carousel-gallery-zoom ui-icon"><use href="img/icons.svg#expand-wide"/></svg>
-                            <svg class="ui-carousel-gallery-loader ui-icon"><use href="img/icons.svg#loader-line"/></svg>
+                            <svg class="ui-carousel-gallery-zoom ui-icon"><use href="../icon/set.svg#expand-wide"/></svg>
+                            <svg class="ui-carousel-gallery-loader ui-icon"><use href="../icon/set.svg#loader-line"/></svg>
                         </div>
                         <div id="realEstateGallery" class="ui-carousel ui-carousel-gallery-thumbs ui-carousel-half" data-ui-col="6" data-ui-col-md="5" data-ui-col-sm="4" data-ui-col-xs="3">
                             <div class="ui-carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow ui-gallery-passive">
@@ -49,11 +49,11 @@
                             </div>
                             <div class="ui-carousel-nav ui-ease-1st-btn">
                                 <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square ui-circle">
-                                    <svg class="ui-icon ui-m-3-r"><use href="img/icons.svg#angle-left"/></svg>
+                                    <svg class="ui-icon ui-m-3-r"><use href="../icon/set.svg#angle-left"/></svg>
                                 </button>
                                 <span class="ui-carousel-dots ui-color-black-25"></span>
                                 <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square ui-circle">
-                                    <svg class="ui-icon ui-m-3-l"><use href="img/icons.svg#angle-right"/></svg>
+                                    <svg class="ui-icon ui-m-3-l"><use href="../icon/set.svg#angle-right"/></svg>
                                 </button>
                             </div>
                         </div>
@@ -76,7 +76,7 @@
                         </div>
                         <div class="ui-p-30 ui-border-t">
                             <h4 class="ui-h4 ui-m-15-b">Power Saving Statistics</h4>
-                            <svg class="ui-icon ui-icon-xl ui-float-l ui-m-5-t ui-m-10-r"><use href="img/icons.svg#bolt"/></svg>
+                            <svg class="ui-icon ui-icon-xl ui-float-l ui-m-5-t ui-m-10-r"><use href="../icon/set.svg#bolt"/></svg>
                             <ul class="ui-list-unstyled ui-p-2-t">
                                 <li><b>Power per Month:</b> 4,86 kWp</li>
                                 <li><b>Yearly Output:</b> 4900 kWp</li>
@@ -155,7 +155,7 @@
                     <div class="ui-card-side ui-p-10-v ui-fill-dark-300">
                         <ul class="ui-list-inline ui-countdown ui-no-selection">
                             <li class="ui-p-10-v ui-p-15-h ui-hidden-xs">
-                                <svg class="ui-icon ui-icon-xxl"><use href="img/icons.svg#history"/></svg>
+                                <svg class="ui-icon ui-icon-xxl"><use href="../icon/set.svg#history"/></svg>
                             </li>
                             <li class="ui-p-5"><b class="ui-countdown-day ui-font-22 ui-block">12</b>Days</li>
                             <li class="ui-p-5"><b class="ui-countdown-hour ui-font-22 ui-block">22</b>Hours</li>
@@ -173,20 +173,20 @@
                 <div class="ui-card ui-align-c ui-round ui-shadow-lg ui-theme-sub">
                     <ul class="ui-list-inline ui-list-gap ui-list-sp-10 ui-p-30 ui-p-15-b ui-icons-lg ui-icons-m-5-r ui-theme-gray ui-inline-block-1st">
                         <li>
-                            <svg class="ui-icon"><use href="img/icons.svg#floor-plan"/></svg>
+                            <svg class="ui-icon"><use href="../icon/set.svg#floor-plan"/></svg>
                             <span class="ui-font-16">7+1</span>
                         </li>
                         <li>
-                            <svg class="ui-icon"><use href="img/icons.svg#house-surface"/></svg>
+                            <svg class="ui-icon"><use href="../icon/set.svg#house-surface"/></svg>
                             <span class="ui-font-16">628m<sup>2</sup></span>
                         </li>
                         <li>
-                            <svg class="ui-icon"><use href="img/icons.svg#house-floor"/></svg>
+                            <svg class="ui-icon"><use href="../icon/set.svg#house-floor"/></svg>
                             Ground Floor
                         </li>
                     </ul>
                     <div class="ui-p-15-b">
-                        <svg class="ui-icon ui-icon-sm ui-color-black-25"><use href="img/icons.svg#marker"/></svg>
+                        <svg class="ui-icon ui-icon-sm ui-color-black-25"><use href="../icon/set.svg#marker"/></svg>
                         <span class="ui-inline-block ui-color-black-25">New York</span>
                     </div>
                     <div class="ui-p-10 ui-border-t">
@@ -228,7 +228,7 @@
                             <div class="ui-col-static ui-no-fluid ui-currency-spinner ui-form-lg">
                                 <div class="ui-col-50">
                                     <button class="ui-currency-down ui-btn ui-no-p-h ui-block ui-round-l ui-ease-btn" type="button">
-                                        <svg class="ui-icon"><use href="img/icons.svg#minus"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#minus"/></svg>
                                     </button>
                                 </div>
                                 <div class="ui-row">
@@ -240,7 +240,7 @@
                                 </div>
                                 <div class="ui-col-50">
                                     <button class="ui-currency-up ui-btn ui-no-p-h ui-block ui-round-r ui-ease-btn" type="button">
-                                        <svg class="ui-icon"><use href="img/icons.svg#plus"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#plus"/></svg>
                                     </button>
                                 </div>
                             </div>
@@ -258,37 +258,37 @@
                     <ul class="ui-list-unstyled ui-list-sp-15 ui-icons-lg ui-icons-m-5-r">
                         <li>
                             <span class="ui-color-black-25 ui-block ui-m-5-b">House Type</span>
-                            <svg class="ui-icon ui-text"><use href="img/icons.svg#house"/></svg>
+                            <svg class="ui-icon ui-text"><use href="../icon/set.svg#house"/></svg>
                             <b>Single Family</b>
                         </li>
                         <li>
                             <span class="ui-color-black-25 ui-block ui-m-5-b">Build Surface</span>
-                            <svg class="ui-icon ui-text"><use href="img/icons.svg#house-surface"/></svg>
+                            <svg class="ui-icon ui-text"><use href="../icon/set.svg#house-surface"/></svg>
                             <b>628m<sup>2</sup></b>
                         </li>
                         <li>
                             <span class="ui-color-black-25 ui-block ui-m-5-b">Heating/Cooling System</span>
-                            <svg class="ui-icon ui-text"><use href="img/icons.svg#house-heat"/></svg>
+                            <svg class="ui-icon ui-text"><use href="../icon/set.svg#house-heat"/></svg>
                             <b>Air Cooling</b>
                         </li>
                         <li>
                             <span class="ui-color-black-25 ui-block ui-m-5-b">Bedrooms</span>
-                            <svg class="ui-icon ui-text"><use href="img/icons.svg#bed"/></svg>
+                            <svg class="ui-icon ui-text"><use href="../icon/set.svg#bed"/></svg>
                             <b>4</b>
                         </li>
                         <li>
                             <span class="ui-color-black-25 ui-block ui-m-5-b">Bathrooms/Guest toilets</span>
-                            <svg class="ui-icon ui-text"><use href="img/icons.svg#wc"/></svg>
+                            <svg class="ui-icon ui-text"><use href="../icon/set.svg#wc"/></svg>
                             <b>3</b>
                         </li>
                         <li>
                             <span class="ui-color-black-25 ui-block ui-m-5-b">Parking</span>
-                            <svg class="ui-icon ui-text"><use href="img/icons.svg#garage"/></svg>
+                            <svg class="ui-icon ui-text"><use href="../icon/set.svg#garage"/></svg>
                             <b>2 Spaces</b>
                         </li>
                         <li>
                             <span class="ui-color-black-25 ui-block ui-m-5-b">Year of Build</span>
-                            <svg class="ui-icon ui-text"><use href="img/icons.svg#calendar-day"/></svg>
+                            <svg class="ui-icon ui-text"><use href="../icon/set.svg#calendar-day"/></svg>
                             <b>2019</b>
                         </li>
                     </ul>
@@ -297,12 +297,12 @@
 
                     <div class="ui-align-l ui-icons-no-opacity ui-form-lg ui-ease-1st-btn">
                         <a class="ui-btn ui-block ui-btn-multi ui-round-t" href="#">
-                            <svg class="ui-icon ui-float-r"><use href="img/icons.svg#images"/></svg>
+                            <svg class="ui-icon ui-float-r"><use href="../icon/set.svg#images"/></svg>
                             Show All HD Images
                         </a>
                         <span class="ui-sp-1"></span>
                         <a class="ui-btn ui-block ui-btn-multi ui-round-b" href="#">
-                            <svg class="ui-icon ui-float-r"><use href="img/icons.svg#file-pdf"/></svg>
+                            <svg class="ui-icon ui-float-r"><use href="../icon/set.svg#file-pdf"/></svg>
                             Download PDF Brochure
                         </a>
                     </div>

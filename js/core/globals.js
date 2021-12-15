@@ -26,7 +26,7 @@ export const ui = {
         svgElems: ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'],
 
         // icons
-        iconSrc: '../docs/img/icons.svg', // IE not support SVG external reference!
+        iconSrc: '../icon/set.svg', // IE not support SVG external reference!
 
         // data attributes
         dataPrefix: 'data-ui-',

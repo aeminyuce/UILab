@@ -14,7 +14,7 @@ var ui = {
     slow5x: 2000,
     nonClosestElems: ['mouseenter', 'mouseleave', 'mouseout', 'mouseover'],
     svgElems: ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'],
-    iconSrc: '../docs/img/icons.svg',
+    iconSrc: '../icon/set.svg',
     dataPrefix: 'data-ui-',
     dataClasses: 'data-ui-classes',
     eventAjaxCallback: 'ui:ajaxCallback',
@@ -2662,7 +2662,7 @@ ui.textareaCounter = {
 ui.icons = {
   target: 'use',
   nameIcon: 'ui-icon',
-  iconSrc: '../docs/img/icons.svg'
+  iconSrc: '../icon/set.svg'
 };
 
 (function () {

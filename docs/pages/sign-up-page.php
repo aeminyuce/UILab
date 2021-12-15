@@ -8,11 +8,11 @@
             <div class="signup-holder ui-no-scroll ui-set-relative ui-fill-dark-100">
 
                 <div class="signup-icons ui-icons-default">
-                    <svg class="ui-icon"><use href="img/icons.svg#star"/></svg>
-                    <svg class="ui-icon"><use href="img/icons.svg#square"/></svg>
-                    <svg class="ui-icon"><use href="img/icons.svg#circle"/></svg>
-                    <svg class="ui-icon"><use href="img/icons.svg#plus-badge"/></svg>
-                    <svg class="ui-icon"><use href="img/icons.svg#user-plus"/></svg>
+                    <svg class="ui-icon"><use href="../icon/set.svg#star"/></svg>
+                    <svg class="ui-icon"><use href="../icon/set.svg#square"/></svg>
+                    <svg class="ui-icon"><use href="../icon/set.svg#circle"/></svg>
+                    <svg class="ui-icon"><use href="../icon/set.svg#plus-badge"/></svg>
+                    <svg class="ui-icon"><use href="../icon/set.svg#user-plus"/></svg>
                 </div>
 
                 <div class="ui-fixed ui-theme-green">
@@ -84,7 +84,7 @@
                                     <label class="ui-form-label ui-color-black-50">Password</label>
                                     <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
                                         <button type="button" title="Toggle Password" class="ui-pass-toggle">
-                                            <svg class="ui-icon"><use href="img/icons.svg#eye-fill"/></svg>
+                                            <svg class="ui-icon"><use href="../icon/set.svg#eye-fill"/></svg>
                                         </button>
                                         <input class="ui-required" type="password" placeholder="Enter password" minlength="8">
                                     </div>
@@ -95,7 +95,7 @@
                                     <label class="ui-form-label ui-color-black-50">Confirm Password</label>
                                     <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
                                         <button type="button" title="Toggle Password" class="ui-pass-toggle">
-                                            <svg class="ui-icon"><use href="img/icons.svg#eye-fill"/></svg>
+                                            <svg class="ui-icon"><use href="../icon/set.svg#eye-fill"/></svg>
                                         </button>
                                         <input class="ui-required" type="password" placeholder="Enter password again" minlength="8">
                                     </div>
@@ -150,19 +150,19 @@
                                 </h1>
                                 <ul class="ui-list-unstyled ui-list-sp-10 ui-color-black-25 ui-font-18 ui-icons-sm ui-icons-m-5-r ui-theme-sub">
                                     <li>
-                                        <svg class="ui-icon ui-text ui-hidden-sm"><use href="img/icons.svg#check-circle-fill"/></svg>
+                                        <svg class="ui-icon ui-text ui-hidden-sm"><use href="../icon/set.svg#check-circle-fill"/></svg>
                                         Work and build around your team.
                                     </li>
                                     <li>
-                                        <svg class="ui-icon ui-text ui-hidden-sm"><use href="img/icons.svg#check-circle-fill"/></svg>
+                                        <svg class="ui-icon ui-text ui-hidden-sm"><use href="../icon/set.svg#check-circle-fill"/></svg>
                                         Whatever work you do, wherever you do it.
                                     </li>
                                     <li>
-                                        <svg class="ui-icon ui-text ui-hidden-sm"><use href="img/icons.svg#check-circle-fill"/></svg>
+                                        <svg class="ui-icon ui-text ui-hidden-sm"><use href="../icon/set.svg#check-circle-fill"/></svg>
                                         Where humans connect.
                                     </li>
                                     <li>
-                                        <svg class="ui-icon ui-text ui-hidden-sm"><use href="img/icons.svg#check-circle-fill"/></svg>
+                                        <svg class="ui-icon ui-text ui-hidden-sm"><use href="../icon/set.svg#check-circle-fill"/></svg>
                                         Expanding your environment.
                                     </li>
                                 </ul>

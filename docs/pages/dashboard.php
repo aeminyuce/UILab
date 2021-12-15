@@ -12,7 +12,7 @@
                 <div class="ui-set-relative ui-p-5-t">
                     <img class="ui-m-1-t" src="img/logo-udashboard.png" height="62" alt="">
                     <button class="dashboard-menu-hide ui-opacity-more ui-p-10-h ui-ease-btn ui-set-absolute ui-set-cy ui-set-r" data-ui-tooltip title="Toggle Menu">
-                        <svg class="ui-icon"><use href="img/icons.svg#angle-left"/></svg>
+                        <svg class="ui-icon"><use href="../icon/set.svg#angle-left"/></svg>
                     </button>
                 </div>
 
@@ -53,13 +53,13 @@
                     </div>
 
                     <a href="#" class="ui-btn ui-btn-lg ui-btn-ghost ui-block ui-m-10-v">
-                        <svg class="ui-icon ui-m-15-r"><use href="img/icons.svg#grid-masonry"/></svg>
+                        <svg class="ui-icon ui-m-15-r"><use href="../icon/set.svg#grid-masonry"/></svg>
                         Dashboard
                     </a>
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-p-10-r ui-block">
-                        <svg class="ui-icon ui-m-15-r"><use href="img/icons.svg#users"/></svg>
-                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                        <svg class="ui-icon ui-m-15-r"><use href="../icon/set.svg#users"/></svg>
+                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                         Employees
                     </button>
 
@@ -68,7 +68,7 @@
                             <ul class="ui-tab-holder ui-list-sp-15 ui-p-30-l ui-ease-2nd-btn" data-ui-classes="ui-text">
                                 <li>
                                     <a class="ui-tab ui-tab-toggle ui-opacity" href="#">
-                                        <svg class="ui-toggle-icon ui-icon ui-m-10-r ui-float-r"><use href="img/icons.svg#arrow-down"/></svg>
+                                        <svg class="ui-toggle-icon ui-icon ui-m-10-r ui-float-r"><use href="../icon/set.svg#arrow-down"/></svg>
                                         Managers
                                     </a>
                                     <div class="ui-tab-content">
@@ -81,7 +81,7 @@
                                 </li>
                                 <li>
                                     <a class="ui-tab ui-tab-toggle ui-opacity" href="#">
-                                        <svg class="ui-toggle-icon ui-icon ui-m-10-r ui-float-r"><use href="img/icons.svg#arrow-down"/></svg>
+                                        <svg class="ui-toggle-icon ui-icon ui-m-10-r ui-float-r"><use href="../icon/set.svg#arrow-down"/></svg>
                                         Team Leaders
                                     </a>
                                     <div class="ui-tab-content">
@@ -100,8 +100,8 @@
                     </div>
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-p-10-r ui-block">
-                        <svg class="ui-icon ui-m-15-r"><use href="img/icons.svg#moneys"/></svg>
-                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                        <svg class="ui-icon ui-m-15-r"><use href="../icon/set.svg#moneys"/></svg>
+                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                         Payments
                     </button>
                     <div class="ui-tab-content">
@@ -117,8 +117,8 @@
                     </div>
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-p-10-r ui-block">
-                        <svg class="ui-icon ui-m-15-r"><use href="img/icons.svg#calendar-check"/></svg>
-                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                        <svg class="ui-icon ui-m-15-r"><use href="../icon/set.svg#calendar-check"/></svg>
+                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                         Events
                     </button>
                     <div class="ui-tab-content">
@@ -133,8 +133,8 @@
                     </div>
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-p-10-r ui-block">
-                        <svg class="ui-icon ui-m-15-r"><use href="img/icons.svg#files"/></svg>
-                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                        <svg class="ui-icon ui-m-15-r"><use href="../icon/set.svg#files"/></svg>
+                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                         Documents
                     </button>
                     <div class="ui-tab-content">
@@ -151,8 +151,8 @@
                     </div>
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-p-10-r ui-block">
-                        <svg class="ui-icon ui-m-15-r"><use href="img/icons.svg#chart-line"/></svg>
-                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                        <svg class="ui-icon ui-m-15-r"><use href="../icon/set.svg#chart-line"/></svg>
+                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                         Statistics
                     </button>
                     <div class="ui-tab-content">
@@ -167,8 +167,8 @@
                     </div>
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-p-10-r ui-block">
-                        <svg class="ui-icon ui-m-15-r"><use href="img/icons.svg#doc"/></svg>
-                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                        <svg class="ui-icon ui-m-15-r"><use href="../icon/set.svg#doc"/></svg>
+                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                         Reports
                     </button>
                     <div class="ui-tab-content">
@@ -185,8 +185,8 @@
                     </div>
 
                     <button class="ui-tab ui-tab-toggle ui-btn ui-btn-lg ui-btn-ghost ui-p-10-r ui-block">
-                        <svg class="ui-icon ui-m-15-r"><use href="img/icons.svg#truck"/></svg>
-                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="img/icons.svg#angle-down"/></svg>
+                        <svg class="ui-icon ui-m-15-r"><use href="../icon/set.svg#truck"/></svg>
+                        <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../icon/set.svg#angle-down"/></svg>
                         Orders
                     </button>
                     <div class="ui-tab-content">
@@ -204,15 +204,15 @@
 
                     <div class="ui-btn-list ui-m-10 ui-icons-m-10-r ui-form-lg ui-ease-1st-btn">
                         <button class="ui-btn ui-round">
-                            <svg class="ui-icon"><use href="img/icons.svg#shield"/></svg>
+                            <svg class="ui-icon"><use href="../icon/set.svg#shield"/></svg>
                             Administration
                         </button>
                         <button class="ui-btn ui-round">
-                            <svg class="ui-icon"><use href="img/icons.svg#clock"/></svg>
+                            <svg class="ui-icon"><use href="../icon/set.svg#clock"/></svg>
                             Recent History
                         </button>
                         <button class="ui-btn ui-round">
-                            <svg class="ui-icon"><use href="img/icons.svg#settings"/></svg>
+                            <svg class="ui-icon"><use href="../icon/set.svg#settings"/></svg>
                             Tools
                         </button>
                     </div>
@@ -229,21 +229,21 @@
 
                 <div class="ui-align-c ui-float-l ui-ease-1st-btn">
                     <button class="dashboard-menu-show ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle ui-visible-lg ui-hidden" data-ui-tooltip title="Toggle Menu">
-                        <svg class="ui-icon"><use href="img/icons.svg#angle-right"/></svg>
+                        <svg class="ui-icon"><use href="../icon/set.svg#angle-right"/></svg>
                     </button>
                     <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle ui-sidebar-show-l ui-hidden-lg" data-ui-tooltip title="Show Menu" data-ui-only="desktop">
-                        <svg class="ui-icon"><use href="img/icons.svg#bars-left"/></svg>
+                        <svg class="ui-icon"><use href="../icon/set.svg#bars-left"/></svg>
                     </button>
                     <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-p-10 ui-circle" onclick="ui.modal.open({source: '.modal-search', bg: 'false'});" data-ui-tooltip data-ui-only="desktop" title="Search">
-                        <svg class="ui-icon"><use href="img/icons.svg#search"/></svg>
+                        <svg class="ui-icon"><use href="../icon/set.svg#search"/></svg>
                     </button>
                     <div class="ui-dropdown ui-nav ui-ease-dropdown">
                         <button class="ui-btn ui-btn-ghost ui-color-black-25 ui-p-15-h ui-circle ui-hidden-sm">
                             My Jobs
-                            <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="img/icons.svg#angle-down"/></svg>
+                            <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="../icon/set.svg#angle-down"/></svg>
                         </button>
                         <button class="ui-btn ui-color-black-25 ui-btn-ghost ui-p-10-h ui-circle ui-visible-sm">
-                            <svg class="ui-icon"><use href="img/icons.svg#angle-down"/></svg>
+                            <svg class="ui-icon"><use href="../icon/set.svg#angle-down"/></svg>
                         </button>
                         <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-list-col-2 ui-round ui-shadow-lg">
                             <li>
@@ -278,7 +278,7 @@
                     <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                         <button class="ui-btn ui-color-black-25 ui-btn-square ui-btn-ghost ui-circle">
                             <span class="ui-notifier ui-circle">
-                                <svg class="ui-icon"><use href="img/icons.svg#comment"/></svg>
+                                <svg class="ui-icon"><use href="../icon/set.svg#comment"/></svg>
                             </span>
                         </button>
                         <div class="ui-dropdown-menu ui-round ui-shadow-lg ui-no-scroll">
@@ -286,10 +286,10 @@
 
                                 <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-border-b ui-ease-1st-btn">
                                     <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-text ui-active" title="Favorites">
-                                        <svg class="ui-icon"><use href="img/icons.svg#star"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#star"/></svg>
                                     </button>
                                     <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b" title="History">
-                                        <svg class="ui-icon"><use href="img/icons.svg#history"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#history"/></svg>
                                     </button>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v ui-open ui-open-ease" style="max-height: 420px;">
@@ -323,7 +323,7 @@
                     <div class="ui-dropdown ui-menu-l ui-ease-dropdown">
                         <button class="ui-btn ui-color-black-25 ui-btn-square ui-btn-ghost ui-circle">
                             <span class="ui-notifier ui-circle">
-                                <svg class="ui-icon"><use href="img/icons.svg#bell"/></svg>
+                                <svg class="ui-icon"><use href="../icon/set.svg#bell"/></svg>
                             </span>
                         </button>
                         <div class="ui-dropdown-menu ui-round ui-shadow-lg ui-no-scroll">
@@ -331,13 +331,13 @@
 
                                 <div class="ui-btn-holder ui-color-black-25 ui-align-c ui-border-b ui-ease-1st-btn">
                                     <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b ui-border-lg ui-stroke ui-text ui-active" title="Notifications">
-                                        <svg class="ui-icon"><use href="img/icons.svg#bell"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#bell"/></svg>
                                     </button>
                                     <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b" title="Notes">
-                                        <svg class="ui-icon"><use href="img/icons.svg#pencil-write"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#pencil-write"/></svg>
                                     </button>
                                     <button class="ui-tab ui-btn ui-btn-ghost ui-round-t ui-border-b" title="Started Jobs">
-                                        <svg class="ui-icon"><use href="img/icons.svg#hourglass-start"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#hourglass-start"/></svg>
                                     </button>
                                 </div>
                                 <div class="ui-tab-content ui-align-l ui-scroll-v ui-open ui-open-ease" style="max-height: 420px;">
@@ -390,37 +390,37 @@
                         <ul class="ui-dropdown-menu ui-dropdown-has-grid ui-align-c ui-icons-lg ui-round ui-shadow-lg">
                             <li>
                                 <a href="#">
-                                    <svg class="ui-icon"><use href="img/icons.svg#user"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#user"/></svg>
                                     Profile
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <svg class="ui-icon"><use href="img/icons.svg#calendar"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#calendar"/></svg>
                                     Calendar
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <svg class="ui-icon"><use href="img/icons.svg#lock"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#lock"/></svg>
                                     Lock Screen
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <svg class="ui-icon"><use href="img/icons.svg#key"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#key"/></svg>
                                     Change Password
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <svg class="ui-icon"><use href="img/icons.svg#setting"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#setting"/></svg>
                                     Settings
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <svg class="ui-icon"><use href="img/icons.svg#sign-out"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#sign-out"/></svg>
                                     Logout
                                 </a>
                             </li>
@@ -461,7 +461,7 @@
                                         </div>
                                         <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Pending for the transaction.</p>
                                         <p class="ui-color-black-25">
-                                            <svg class="ui-icon ui-icon-xs"><use href="img/icons.svg#clock"/></svg>
+                                            <svg class="ui-icon ui-icon-xs"><use href="../icon/set.svg#clock"/></svg>
                                             <span class="ui-inline-block">Last updated: 15:12</span>
                                         </p>
                                     </div>
@@ -484,7 +484,7 @@
                                         </div>
                                         <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Paused for the some reasons.</p>
                                         <p class="ui-color-black-25">
-                                            <svg class="ui-icon ui-icon-xs"><use href="img/icons.svg#clock"/></svg>
+                                            <svg class="ui-icon ui-icon-xs"><use href="../icon/set.svg#clock"/></svg>
                                             <span class="ui-inline-block">Last updated: 15:12</span>
                                         </p>
                                     </div>
@@ -507,7 +507,7 @@
                                         </div>
                                         <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Reached for the expert.</p>
                                         <p class="ui-color-black-25">
-                                            <svg class="ui-icon ui-icon-xs"><use href="img/icons.svg#clock"/></svg>
+                                            <svg class="ui-icon ui-icon-xs"><use href="../icon/set.svg#clock"/></svg>
                                             <span class="ui-inline-block">Last updated: 15:12</span>
                                         </p>
                                     </div>
@@ -530,7 +530,7 @@
                                         </div>
                                         <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Confirmed for payment.</p>
                                         <p class="ui-color-black-25">
-                                            <svg class="ui-icon ui-icon-xs"><use href="img/icons.svg#clock"/></svg>
+                                            <svg class="ui-icon ui-icon-xs"><use href="../icon/set.svg#clock"/></svg>
                                             <span class="ui-inline-block">Last updated: 15:12</span>
                                         </p>
                                     </div>
@@ -539,11 +539,11 @@
                             </div>
                             <div class="ui-carousel-nav ui-no-m-t ui-m-10-b ui-ease-1st-btn">
                                 <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square ui-circle">
-                                    <svg class="ui-icon ui-m-3-r"><use href="img/icons.svg#angle-left"/></svg>
+                                    <svg class="ui-icon ui-m-3-r"><use href="../icon/set.svg#angle-left"/></svg>
                                 </button>
                                 <span class="ui-carousel-dots ui-color-black-25"></span>
                                 <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square ui-circle">
-                                    <svg class="ui-icon ui-m-3-l"><use href="img/icons.svg#angle-right"/></svg>
+                                    <svg class="ui-icon ui-m-3-l"><use href="../icon/set.svg#angle-right"/></svg>
                                 </button>
                             </div>
                         </div>
@@ -553,12 +553,12 @@
                         <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                             <div class="ui-dropdown ui-menu-l ui-float-r ui-ease-dropdown">
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-round">
-                                    <svg class="ui-icon"><use href="img/icons.svg#ellipsis-h"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#ellipsis-h"/></svg>
                                 </button>
                                 <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
-                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#file-pdf"/></svg>Download PDF</a></li>
-                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#file-xls"/></svg>Download Excel</a></li>
-                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#eye"/></svg>See Detailed Activity</a></li>
+                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#file-pdf"/></svg>Download PDF</a></li>
+                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#file-xls"/></svg>Download Excel</a></li>
+                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#eye"/></svg>See Detailed Activity</a></li>
                                 </ul>
                             </div>
                             <h4 class="ui-h4 ui-align-l ui-m-10-t">Activity</h4>
@@ -597,7 +597,7 @@
                             <span class="ui-sp-3"></span>
                             <p class="ui-color-black-50 ui-font-16 ui-m-5-b">Daily reports that all received.</p>
                             <p class="ui-color-black-25">
-                                <svg class="ui-icon ui-icon-xs ui-m-5-r"><use href="img/icons.svg#clock"/></svg>
+                                <svg class="ui-icon ui-icon-xs ui-m-5-r"><use href="../icon/set.svg#clock"/></svg>
                                 <span class="ui-inline-block">Last updated: 15:12</span>
                             </p>
                         </div>
@@ -753,18 +753,18 @@
                             <div class="ui-ease-tab">
                                 <div class="ui-dropdown ui-menu-l ui-float-r ui-ease-dropdown">
                                     <button class="ui-btn ui-btn-square ui-btn-ghost ui-round">
-                                        <svg class="ui-icon"><use href="img/icons.svg#ellipsis-h"/></svg>
+                                        <svg class="ui-icon"><use href="../icon/set.svg#ellipsis-h"/></svg>
                                     </button>
                                     <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
-                                        <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#file-pdf"/></svg>Download PDF</a></li>
-                                        <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#file-xls"/></svg>Download Excel</a></li>
-                                        <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#eye"/></svg>See Detailed Statistics</a></li>
+                                        <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#file-pdf"/></svg>Download PDF</a></li>
+                                        <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#file-xls"/></svg>Download Excel</a></li>
+                                        <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#eye"/></svg>See Detailed Statistics</a></li>
                                     </ul>
                                 </div>
                                 <div class="ui-dropdown ui-menu-l ui-m-5-r ui-float-r ui-ease-dropdown">
                                     <button class="ui-btn ui-btn-ghost ui-round">
                                         <span>Last year</span>
-                                        <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="img/icons.svg#angle-down"/></svg>
+                                        <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="../icon/set.svg#angle-down"/></svg>
                                     </button>
                                     <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                         <li class="ui-selected">
@@ -858,13 +858,13 @@
                                         <li>
                                             <span class="ui-icons-xl ui-icons-no-opacity ui-ease-1st-btn">
                                                 <a class="ui-btn ui-btn-square ui-p-5-v ui-round" href="#">
-                                                    <svg class="ui-icon ui-m-2-v"><use href="img/icons.svg#file-pdf-fill"/></svg>
+                                                    <svg class="ui-icon ui-m-2-v"><use href="../icon/set.svg#file-pdf-fill"/></svg>
                                                 </a>
                                                 <a class="ui-btn ui-btn-square ui-p-5-v ui-round" href="#">
-                                                    <svg class="ui-icon ui-m-2-v"><use href="img/icons.svg#file-xls-fill"/></svg>
+                                                    <svg class="ui-icon ui-m-2-v"><use href="../icon/set.svg#file-xls-fill"/></svg>
                                                 </a>
                                                 <a class="ui-btn ui-btn-square ui-p-5-v ui-round" href="#">
-                                                    <svg class="ui-icon ui-m-2-v"><use href="img/icons.svg#file-zip-fill"/></svg>
+                                                    <svg class="ui-icon ui-m-2-v"><use href="../icon/set.svg#file-zip-fill"/></svg>
                                                 </a>
                                             </span>
                                         </li>
@@ -893,11 +893,11 @@
                         <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                             <div class="ui-dropdown ui-menu-l ui-float-r ui-ease-dropdown">
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-round">
-                                    <svg class="ui-icon"><use href="img/icons.svg#ellipsis-h"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#ellipsis-h"/></svg>
                                 </button>
                                 <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
-                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#calendar-plus"/></svg>Add to Your Calendar</a></li>
-                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#eye"/></svg>See All Events</a></li>
+                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#calendar-plus"/></svg>Add to Your Calendar</a></li>
+                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#eye"/></svg>See All Events</a></li>
                                 </ul>
                             </div>
                             <h4 class="ui-h4 ui-align-l ui-m-10-t">Events</h4>
@@ -909,12 +909,12 @@
                         <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                             <div class="ui-dropdown ui-menu-l ui-float-r ui-ease-dropdown">
                                 <button class="ui-btn ui-btn-square ui-btn-ghost ui-round">
-                                    <svg class="ui-icon"><use href="img/icons.svg#ellipsis-h"/></svg>
+                                    <svg class="ui-icon"><use href="../icon/set.svg#ellipsis-h"/></svg>
                                 </button>
                                 <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
-                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#file-pdf"/></svg>Download PDF</a></li>
-                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#file-xls"/></svg>Download Excel</a></li>
-                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="img/icons.svg#eye"/></svg>See All Experts</a></li>
+                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#file-pdf"/></svg>Download PDF</a></li>
+                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#file-xls"/></svg>Download Excel</a></li>
+                                    <li><a href="#"><svg class="ui-menu-icon ui-icon"><use href="../icon/set.svg#eye"/></svg>See All Experts</a></li>
                                 </ul>
                             </div>
                             <h4 class="ui-h4 ui-align-l ui-m-10-t">Experts</h4>
@@ -923,9 +923,9 @@
                                 <div class="ui-row ui-no-row-gap-v ui-row-gap-sm-h">
                                     <div class="ui-col-6 ui-lg-fluid">
                                         <div class="ui-input ui-form-icon-all ui-round ui-no-border ui-fill-light-100 ui-form-has-clear ui-ease-form">
-                                            <svg class="ui-icon ui-form-icon-l"><use href="img/icons.svg#search"/></svg>
+                                            <svg class="ui-icon ui-form-icon-l"><use href="../icon/set.svg#search"/></svg>
                                             <button class="ui-form-clear">
-                                                <svg class="ui-icon"><use href="img/icons.svg#remove"/></svg>
+                                                <svg class="ui-icon"><use href="../icon/set.svg#remove"/></svg>
                                             </button>
                                             <input class="ui-datatable-filter" type="text" placeholder="Search">
                                         </div>
@@ -933,7 +933,7 @@
                                     </div>
                                     <div class="ui-col-lg-3 ui-col-6 ui-no-fluid">
                                         <div class="ui-select ui-round ui-no-border ui-fill-light-100 ui-ease-form">
-                                            <svg class="ui-icon"><use href="img/icons.svg#angle-down"/></svg>
+                                            <svg class="ui-icon"><use href="../icon/set.svg#angle-down"/></svg>
                                             <select class="ui-datatable-filter" data-ui-index="2">
                                                 <option value="">Filter</option>
                                                 <option>Starting</option>
@@ -950,19 +950,19 @@
                                         <div class="ui-dropdown ui-menu-l ui-block ui-ease-dropdown">
                                             <button class="ui-btn ui-align-l ui-p-10 ui-round ui-fill-light-100">
                                                 <span>
-                                                    <svg class="ui-icon"><use href="img/icons.svg#sort"/></svg> Sort
+                                                    <svg class="ui-icon"><use href="../icon/set.svg#sort"/></svg> Sort
                                                 </span>
                                             </button>
                                             <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
                                                 <li>
                                                     <label data-ui-sort="1">
-                                                        <svg class="ui-icon"><use href="img/icons.svg#sort"/></svg>
+                                                        <svg class="ui-icon"><use href="../icon/set.svg#sort"/></svg>
                                                         <input type="radio" name="s">By Name
                                                     </label>
                                                 </li>
                                                 <li>
                                                     <label data-ui-sort="2">
-                                                        <svg class="ui-icon"><use href="img/icons.svg#sort"/></svg>
+                                                        <svg class="ui-icon"><use href="../icon/set.svg#sort"/></svg>
                                                         <input type="radio" name="s">By Step
                                                     </label>
                                                 </li>
@@ -986,25 +986,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#check-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#check-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#clock"/></svg>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#clock"/></svg>6:P
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#check-circle"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#check-circle"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1018,25 +1018,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon ui-theme-yellow ui-text">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#alert-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#alert-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#check-circle"/></svg>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#check-circle"/></svg>6:P
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#check-circle"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#check-circle"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1050,25 +1050,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#check-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#check-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#check-circle"/></svg>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#check-circle"/></svg>6:P
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#clock"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#clock"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1082,25 +1082,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#check-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#check-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#clock"/></svg>>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#clock"/></svg>>6:P
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#check-circle"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#check-circle"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1115,25 +1115,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#check-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#check-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#clock"/></svg>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#clock"/></svg>6:P
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#check-circle"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#check-circle"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1147,25 +1147,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon ui-theme-yellow ui-text">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#alert-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#alert-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#check-circle"/></svg>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#check-circle"/></svg>6:P
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#check-circle"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#check-circle"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1179,25 +1179,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#check-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#check-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#check-circle"/></svg>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#check-circle"/></svg>6:P
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#clock"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#clock"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1211,25 +1211,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#check-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#check-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#clock"/></svg>>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#clock"/></svg>>6:P
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#check-circle"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#check-circle"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1243,25 +1243,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#check-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#check-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#clock"/></svg>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#clock"/></svg>6:P
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#check-circle"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#check-circle"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1275,25 +1275,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon ui-theme-yellow ui-text">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#alert-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#alert-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#check-circle"/></svg>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#check-circle"/></svg>6:P
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#check-circle"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#check-circle"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1307,25 +1307,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#check-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#check-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#check-circle"/></svg>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#check-circle"/></svg>6:P
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#clock"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#clock"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1339,25 +1339,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#check-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#check-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#clock"/></svg>>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#clock"/></svg>>6:P
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#check-circle"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#check-circle"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1371,25 +1371,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#check-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#check-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#clock"/></svg>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#clock"/></svg>6:P
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#check-circle"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#check-circle"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1403,25 +1403,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon ui-theme-yellow ui-text">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#alert-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#alert-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#check-circle"/></svg>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#check-circle"/></svg>6:P
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#check-circle"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#check-circle"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1435,25 +1435,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#check-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#check-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#check-circle"/></svg>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#check-circle"/></svg>6:P
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#clock"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#clock"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1467,25 +1467,25 @@
                                             <div class="ui-col-7">
                                                 <ul class="ui-steps-bar ui-steps-icon">
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="img/icons.svg#check-circle"/></svg>1:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Starting"><use href="../icon/set.svg#check-circle"/></svg>1:S
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="img/icons.svg#check-circle"/></svg>2:W
+                                                        <svg class="ui-icon" data-ui-tooltip title="Waiting"><use href="../icon/set.svg#check-circle"/></svg>2:W
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="img/icons.svg#check-circle"/></svg>3:E
+                                                        <svg class="ui-icon" data-ui-tooltip title="Expert"><use href="../icon/set.svg#check-circle"/></svg>3:E
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="img/icons.svg#check-circle"/></svg>4:F
+                                                        <svg class="ui-icon" data-ui-tooltip title="First Audit"><use href="../icon/set.svg#check-circle"/></svg>4:F
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="img/icons.svg#check-circle"/></svg>5:S
+                                                        <svg class="ui-icon" data-ui-tooltip title="Second Audit"><use href="../icon/set.svg#check-circle"/></svg>5:S
                                                     </li>
                                                     <li class="ui-active">
-                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="img/icons.svg#clock"/></svg>>6:P
+                                                        <svg class="ui-icon" data-ui-tooltip title="Paused"><use href="../icon/set.svg#clock"/></svg>>6:P
                                                     </li>
                                                     <li>
-                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="img/icons.svg#check-circle"/></svg>7:C
+                                                        <svg class="ui-icon" data-ui-tooltip title="Delayed"><use href="../icon/set.svg#check-circle"/></svg>7:C
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1524,7 +1524,7 @@
 <div class="ui-sidebar ui-sidebar-l ui-round ui-invert-bg ui-theme-base ui-fill-dark-100 ui-ease-layout ui-ease-in-out">
     <div class="ui-sidebar-title ui-no-p ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-circle ui-ease-btn ui-sidebar-close">
-            <svg class="ui-icon ui-no-opacity"><use href="img/icons.svg#remove"/></svg>
+            <svg class="ui-icon ui-no-opacity"><use href="../icon/set.svg#remove"/></svg>
         </button>
         <img class="ui-m-10-t" src="img/logo-udashboard.png" height="62" alt="">
     </div>
@@ -1544,7 +1544,7 @@
                     <div class="ui-col-12 ui-ease-1st-form">
                         <div class="ui-input ui-form-has-clear ui-form-icon ui-round-l ui-no-border ui-shadow-in-sm ui-theme-gray ui-fill-light-300">
                             <button type="button" class="ui-form-clear">
-                                <svg class="ui-icon"><use href="img/icons.svg#remove"/></svg>
+                                <svg class="ui-icon"><use href="../icon/set.svg#remove"/></svg>
                             </button>
                             <input class="ui-required" type="text" placeholder="Search">
                         </div>
@@ -1553,7 +1553,7 @@
                 </div>
                 <div class="ui-col-100 ui-col-xs-50 ui-p-10-v">
                     <button class="ui-btn ui-block ui-round-r ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
-                        <svg class="ui-icon"><use href="img/icons.svg#search"/></svg>
+                        <svg class="ui-icon"><use href="../icon/set.svg#search"/></svg>
                     </button>
                 </div>
             </div>
@@ -1561,21 +1561,21 @@
             <div class="ui-row ui-xs-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity ui-hover-t-more-2nd ui-icons-m-5-v ui-theme-base ui-ease-2nd-btn">
                 <div class="ui-col-4 ui-p-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
-                        <svg class="ui-icon"><use href="img/icons.svg#news"/></svg>
+                        <svg class="ui-icon"><use href="../icon/set.svg#news"/></svg>
                         <span class="ui-font-18 ui-block ui-m-5-t">News</span>
                         <span class="ui-color-white-50">589</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-p-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
-                        <svg class="ui-icon"><use href="img/icons.svg#calendar-check"/></svg>
+                        <svg class="ui-icon"><use href="../icon/set.svg#calendar-check"/></svg>
                         <span class="ui-font-18 ui-block ui-m-5-t">Events</span>
                         <span class="ui-color-white-50">219</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-p-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
-                        <svg class="ui-icon"><use href="img/icons.svg#files"/></svg>
+                        <svg class="ui-icon"><use href="../icon/set.svg#files"/></svg>
                         <span class="ui-font-18 ui-block ui-m-5-t">Documents</span>
                         <span class="ui-color-white-50">701</span>
                     </a>
