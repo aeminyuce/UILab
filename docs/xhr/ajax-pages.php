@@ -43,17 +43,17 @@
     include ('../classnames.php');
     include ('../iconlist.php');
 
-    // custom pages
-    include ('../custom/dashboard.php');
-    include ('../custom/landing-page.php');
-    include ('../custom/login-page.php');
-    include ('../custom/movie-app.php');
-    include ('../custom/photo-albums.php');
-    include ('../custom/product-listing.php');
-    include ('../custom/real-estate-details.php');
-    include ('../custom/sign-up-page.php');
+    // pages
+    include ('../pages/dashboard.php');
+    include ('../pages/landing-page.php');
+    include ('../pages/login-page.php');
+    include ('../pages/movie-app.php');
+    include ('../pages/photo-albums.php');
+    include ('../pages/product-listing.php');
+    include ('../pages/real-estate-details.php');
+    include ('../pages/sign-up-page.php');
 
-    // xhr pages
+    // xhr
     include ('../ajax-modal.php');
     include ('../ajax-products.php');
 

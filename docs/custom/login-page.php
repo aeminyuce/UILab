@@ -87,7 +87,7 @@
 
                     <span class="ui-sp-30 ui-m-10-v"></span>
 
-                    <a href="?l=custom/sign-up-page" class="login-btn ui-btn ui-btn-lg ui-circle ui-hover-scale ui-hover-shadow ui-ease-btn">
+                    <a href="?l=pages/sign-up-page" class="login-btn ui-btn ui-btn-lg ui-circle ui-hover-scale ui-hover-shadow ui-ease-btn">
                         <b>SIGN UP NOW</b>
                     </a>
                 </div>

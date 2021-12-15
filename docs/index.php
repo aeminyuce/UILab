@@ -195,7 +195,7 @@
 
                         <div class="ui-row ui-row-gap-lg ui-sm-fluid ui-align-c ui-hover-shadow-2nd ui-hover-t-2nd">
                             <div class="ui-col-lg-4 ui-col-6">
-                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=custom/login-page">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=pages/login-page">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-login-page.jpg" alt="Login Page">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-login-page-dark.jpg" alt="Login Page Dark">
                                     <h4 class="ui-h4 ui-inline-block ui-p-10-v">
@@ -204,7 +204,7 @@
                                 </a>
                             </div>
                             <div class="ui-col-lg-4 ui-col-6">
-                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=custom/sign-up-page">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=pages/sign-up-page">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-sign-up-page.jpg" alt="Sign Up Page">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-sign-up-page-dark.jpg" alt="Sign Up Page Dark">
                                     <h4 class="ui-h4 ui-inline-block ui-p-10-v">
@@ -213,7 +213,7 @@
                                 </a>
                             </div>
                             <div class="ui-col-lg-4 ui-col-6">
-                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=custom/dashboard">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=pages/dashboard">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-dashboard.jpg" alt="Dashboard">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-dashboard-dark.jpg" alt="Dashboard Dark">
                                     <h4 class="ui-h4 ui-inline-block ui-p-10-v">
@@ -222,7 +222,7 @@
                                 </a>
                             </div>
                             <div class="ui-col-lg-4 ui-col-6">
-                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=custom/landing-page">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=pages/landing-page">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-landing-page.jpg" alt="Landing Page">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-landing-page-dark.jpg" alt="Landing Page Dark">
                                     <h4 class="ui-h4 ui-inline-block ui-p-10-v">
@@ -231,7 +231,7 @@
                                 </a>
                             </div>
                             <div class="ui-col-lg-4 ui-col-6">
-                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=custom/movie-app">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=pages/movie-app">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-movie-app.jpg" alt="Movie App">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-movie-app-dark.jpg" alt="Movie App Dark">
                                     <h4 class="ui-h4 ui-inline-block ui-p-10-v">
@@ -240,7 +240,7 @@
                                 </a>
                             </div>
                             <div class="ui-col-lg-4 ui-col-6">
-                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=custom/product-listing">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=pages/product-listing">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-product-listing.jpg" alt="Product Listing">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-product-listing-dark.jpg" alt="Product Listing Dark">
                                     <h4 class="ui-h4 ui-inline-block ui-p-10-v">
@@ -249,7 +249,7 @@
                                 </a>
                             </div>
                             <div class="ui-col-lg-4 ui-col-6">
-                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=custom/real-estate-details">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=pages/real-estate-details">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-real-estate-details.jpg" alt="Real Estate Details">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-real-estate-details-dark.jpg" alt="Real Estate Details Dark">
                                     <h4 class="ui-h4 ui-inline-block ui-p-10-v">
@@ -258,7 +258,7 @@
                                 </a>
                             </div>
                             <div class="ui-col-lg-4 ui-col-6">
-                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=custom/photo-albums">
+                                <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=pages/photo-albums">
                                     <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-photo-albums.jpg" alt="Photo Albums">
                                     <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-photo-albums-dark.jpg" alt="Photo Albums Dark">
                                     <h4 class="ui-h4 ui-inline-block ui-p-10-v">

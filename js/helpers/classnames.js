@@ -45,7 +45,7 @@ ui.classnames = {
 
 };
 
-(function () {
+(() => {
 
     ui.classnames.Start = function () {
 
@@ -401,4 +401,4 @@ ui.classnames = {
     // loaders
     ui.onload(ui.classnames.Start);
 
-}());
+})();

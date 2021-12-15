@@ -29,7 +29,7 @@ ui.iconlist = {
     msgCopied: 'Copied!'
 };
 
-(function () {
+(() => {
 
     ui.iconlist.Start = function () {
 
@@ -130,4 +130,4 @@ ui.iconlist = {
     // loaders
     ui.onload(ui.iconlist.Start);
 
-}());
+})();
