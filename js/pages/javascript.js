@@ -1,4 +1,4 @@
-/* useragents */
+/* javascript */
 
 // loader
 ui.onload(function () {

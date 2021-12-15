@@ -1,4 +1,4 @@
-<script src="../js/pages/useragents.js?v=<?php echo filemtime('../js/pages/useragents.js'); ?>"></script>
+<script src="../js/pages/javascript.js?v=<?php echo filemtime('../js/pages/javascript.js'); ?>"></script>
 
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed">
