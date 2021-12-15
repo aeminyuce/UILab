@@ -1,4 +1,3 @@
-<!-- custom JS -->
 <script src="../dist/js/real-estate-details.js?v=<?php echo filemtime('../dist/js/real-estate-details.js'); ?>"></script>
 
 <main class="ui-container ui-no-gutter">

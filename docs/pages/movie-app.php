@@ -1,4 +1,3 @@
-<!-- custom CSS -->
 <link href="../dist/css/movie-app.css?v=<?php echo filemtime('../dist/css/movie-app.css'); ?>" rel="stylesheet">
 
 <main class="ui-container ui-no-gutter">

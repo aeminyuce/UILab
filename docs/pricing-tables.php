@@ -1,4 +1,3 @@
-<!-- custom CSS -->
 <link href="../dist/css/pricing-table.css?v=<?php echo filemtime('../dist/css/pricing-table.css'); ?>" rel="stylesheet">
 
 <main class="ui-container ui-no-gutter">

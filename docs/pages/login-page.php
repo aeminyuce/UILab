@@ -1,4 +1,3 @@
-<!-- custom CSS -->
 <link href="../dist/css/login-page.css?v=<?php echo filemtime('../dist/css/login-page.css'); ?>" rel="stylesheet">
 
 <main class="ui-container ui-full-h ui-no-gutter ui-set-fixed ui-set-all ui-scroll-v">

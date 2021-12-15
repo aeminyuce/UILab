@@ -1,4 +1,3 @@
-<!-- custom CSS -->
 <link href="../dist/css/error-pages.css?v=<?php echo filemtime('../dist/css/error-pages.css'); ?>" rel="stylesheet">
 
 <main class="ui-container ui-no-gutter">

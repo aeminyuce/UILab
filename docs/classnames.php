@@ -1,6 +1,3 @@
-<!-- custom JS -->
-<!-- imported on index! -->
-
 <main class="ui-container ui-no-gutter">
     <div class="ui-fixed ui-fixed-xl ui-p-30-v ui-m-10-v">
 

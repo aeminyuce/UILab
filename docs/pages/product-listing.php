@@ -1,7 +1,4 @@
-<!-- custom CSS -->
 <link href="../dist/css/product-listing.css?v=<?php echo filemtime('../dist/css/product-listing.css'); ?>" rel="stylesheet">
-
-<!-- custom JS -->
 <script src="../dist/js/product-listing.js?v=<?php echo filemtime('../dist/js/product-listing.js'); ?>"></script>
 
 <main class="ui-container ui-no-gutter">

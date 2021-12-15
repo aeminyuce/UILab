@@ -1,8 +1,4 @@
-<!-- custom CSS -->
 <link href="../dist/css/iconlist.css?v=<?php echo filemtime('../dist/css/iconlist.css'); ?>" rel="stylesheet">
-
-<!-- custom JS -->
-<!-- imported on index! -->
 
 <main class="ui-container">
     <div class="ui-fixed ui-fixed-xl">

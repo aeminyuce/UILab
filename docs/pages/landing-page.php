@@ -1,7 +1,4 @@
-<!-- custom CSS -->
 <link href="../dist/css/landing-page.css?v=<?php echo filemtime('../dist/css/landing-page.css'); ?>" rel="stylesheet">
-
-<!-- custom JS -->
 <script src="../dist/js/landing-page.js?v=<?php echo filemtime('../dist/js/landing-page.js'); ?>"></script>
 
 <!-- header: start -->

@@ -1,7 +1,4 @@
-<!-- custom CSS -->
 <link href="../dist/css/dashboard.css?v=<?php echo filemtime('../dist/css/dashboard.css'); ?>" rel="stylesheet">
-
-<!-- custom JS -->
 <script src="../dist/js/dashboard.js?v=<?php echo filemtime('../dist/js/dashboard.js'); ?>"></script>
 
 <main class="ui-container ui-no-gutter">

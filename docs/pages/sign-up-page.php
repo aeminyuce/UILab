@@ -1,4 +1,3 @@
-<!-- custom CSS -->
 <link href="../dist/css/sign-up-page.css?v=<?php echo filemtime('../dist/css/sign-up-page.css'); ?>" rel="stylesheet">
 
 <main class="ui-container ui-no-gutter">
