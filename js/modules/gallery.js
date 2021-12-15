@@ -83,61 +83,60 @@ ui.photoGallery = {
 
     ui.photoGallery.Start = function () {
 
-        var gallery, galleryCounter, imgCounter, pageYPos, checkImages, imgWidth, imgHeight, loadedImages = [], loadedTitles = [];
+        var gallery, galleryCounter, imgCounter, pageYPos, imgWidth, imgHeight, loadedImages = [], loadedTitles = [];
 
         gallery = ui.find('.' + ui.photoGallery.targetGallery);
+
+        function checkImages () { // control vertical images
+
+            var img, newImg, imgLength;
+
+            img = ui.find('a.' + ui.photoGallery.targetPhotos +' img', gallery[galleryCounter]);
+
+            imgLength = img.length - 1;
+            if (imgLength < 0) { return; }
+
+            function imgLoader() {
+
+                newImg = new Image();
+                newImg.src = img[imgCounter].src;
+
+                img[imgCounter].src = newImg.src;
+
+                newImg.onload = function () {
+
+                    if (this.naturalWidth / this.naturalHeight < ui.photoGallery.imgVerRatio) {
+                        ui.addClass(img[imgCounter], ui.photoGallery.targetPhotoVer);
+                    }
+
+                    if (imgCounter < imgLength) {
+
+                        imgCounter += 1;
+                        imgLoader();
+
+                    } else if (imgCounter === imgLength) {
+
+                        imgCounter = 0;
+                        if (galleryCounter < (gallery.length - 1)) {
+
+                            galleryCounter += 1;
+                            checkImages();
+
+                        }
+                    }
+
+                };
+
+            }
+
+            imgLoader();
+
+        }
 
         if (gallery.length > 0) {
 
             galleryCounter = 0;
             imgCounter = 0;
-
-            // control vertical images
-            checkImages = function () {
-
-                var img, newImg, imgLength, imgFnc;
-
-                img = ui.find('a.' + ui.photoGallery.targetPhotos +' img', gallery[galleryCounter]);
-
-                imgLength = img.length - 1;
-                if (imgLength < 0) { return; }
-
-                imgFnc = function () {
-
-                    newImg = new Image();
-                    newImg.src = img[imgCounter].src;
-
-                    img[imgCounter].src = newImg.src;
-
-                    newImg.onload = function () {
-
-                        if (this.naturalWidth / this.naturalHeight < ui.photoGallery.imgVerRatio) {
-                            ui.addClass(img[imgCounter], ui.photoGallery.targetPhotoVer);
-                        }
-
-                        if (imgCounter < imgLength) {
-
-                            imgCounter += 1;
-                            imgFnc();
-
-                        } else if (imgCounter === imgLength) {
-
-                            imgCounter = 0;
-                            if (galleryCounter < (gallery.length - 1)) {
-
-                                galleryCounter += 1;
-                                checkImages();
-
-                            }
-                        }
-
-                    };
-
-                };
-
-                imgFnc();
-
-            };
 
             checkImages();
 
