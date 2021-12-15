@@ -1,0 +1,148 @@
+// reset
+@page-smooth-scrolling-reset:           true;
+
+@body-font-reset:                       true;
+@body-bg-reset:                         true;
+@body-margin-reset:                     true;
+
+// fonts
+@large-fonts-scaling:                   true;
+
+@font-family:                           'Poppins', Roboto, "Helvetica Neue", Arial, sans-serif;
+@font-size:                             @font-14;
+@letter-spacing:                        -0.015em;
+
+@line-height-readable:                  170%;
+@line-height-condensed:                 120%;
+
+@font-bold:                             700;
+@font-semibold:                         500;
+@font-normal:                           400;
+@font-light:                            300;
+@font-thin:                             200;
+
+@font-9:                                9px;
+@font-10:                               10px;
+@font-11:                               11px;
+@font-12:                               12px;
+@font-13:                               13px;
+@font-14:                               14px;
+@font-15:                               15px;
+@font-16:                               16px;
+@font-18:                               18px;
+@font-22:                               22px;
+@font-24:                               24px;
+@font-28:                               28px;
+@font-30:                               30px;
+@font-36:                               36px;
+@font-38:                               38px;
+@font-48:                               48px;
+
+// dark mode
+@dark-mode:                             true;
+@dark-mode-auto-switcher:               false;
+
+// effects
+@ease-timings:                          ease-in ease-out ease-in-out;
+@ease-default:                          .15s;
+@ease-types:                            { fast: .1s; slow: .4s; slow-2x: .8s; slow-3x: 1.2s; slow-4x: 1.6s; slow-5x: 2s; }
+
+// metrics
+@increases:                             1px 2px 3px 4px 5px 10px 15px 20px 25px 30px;
+
+@round:                                 10px;
+@circle:                                1000px;
+
+@border-dual:                           2px;
+@highlight-space:                       20px;
+
+@btn-lg:                                48px;
+@btn-default:                           42px;
+@btn-sm:                                32px;
+@btn-xs:                                26px;
+
+@form-padding:                          10px;
+
+@avatar-default:                        50px;
+@avatar-lg:                             80px;
+@avatar-sm:                             @btn-lg;
+@avatar-xs:                             @btn-default;
+
+@icon-default-size:                     20px;
+@icon-weight-max:                       38px;
+@icon-weight-min:                       12px;
+@icon-sizes:                            { xxl: 50px; xl: 34px; lg: 26px; sm: 18px; xs: 14px; }
+
+// breakpoints
+@xl-breakpoint:                         1630px;
+@lg-breakpoint:                         1400px;
+@md-breakpoint:                         960px;
+@sm-breakpoint:                         768px;
+@xs-breakpoint:                         480px;
+@layout-min:                            320px;
+
+@xl-start:                              ~'min-width:' @xl-breakpoint;
+@lg-finish:                             ~'max-width:' (@xl-breakpoint - 1);
+
+@lg-start:                              ~'min-width:' @lg-breakpoint;
+@default-finish:                        ~'max-width:' (@lg-breakpoint - 1);
+
+@default-start:                         ~'min-width:' @md-breakpoint;
+@md-finish:                             ~'max-width:' (@md-breakpoint - 1);
+
+@md-start:                              ~'min-width:' @sm-breakpoint;
+@sm-finish:                             ~'max-width:' (@sm-breakpoint - 1);
+
+@sm-start:                              ~'min-width:' (@xs-breakpoint + 1);
+@xs-finish:                             ~'max-width:' @xs-breakpoint;
+
+// colors
+@body-bg:                               hsl(0, 0%, 98%);
+@body-bg-dark:                          hsl(218, 16%, 10%);
+
+@no-color:                              transparent;
+@featured-color:                        hsl(345, 74%, 52%);
+
+@white:                                 hsl(0, 0%, 100%);
+@white-50:                              hsla(0, 0%, 100%, 0.87);
+@white-25:                              hsla(0, 0%, 100%, 0.72);
+
+@black:                                 hsl(0, 0%, 0%);
+@black-50:                              hsla(0, 0%, 0%, 0.50);
+@black-25:                              hsla(0, 0%, 0%, 0.40);
+
+@gray:                                  hsl(220, 8%, 65%);
+@green:                                 hsl(142, 82%, 42%);
+@yellow:                                hsl(42, 100%, 45%);
+@orange:                                hsl(30, 100%, 50%);
+@red:                                   hsl(0, 82%, 52%);
+@blue:                                  hsl(212, 64%, 38%);
+@base:                                  hsl(226, 52%, 50%);
+@sub:                                   hsl(206, 87%, 50%);
+
+@border-color:                          fade(@black, 15%);
+@border-color-dark:                     fade(@white, 17.5%);
+
+@table-border-color:                    hsl(0, 0%, 86.7%);
+@table-border-color-dark:               @highlighted-dark;
+
+@card-bg:                               @white;
+@card-bg-dark:                          hsl(220, 8%, 21%);
+@highlighted:                           @white;
+@highlighted-dark:                      hsl(220, 8%, 28%);
+
+@invert-bg:                             hsl(220, 8%, 32%);
+
+@btn-bg:                                fade(@black, 8%);
+@btn-bg-dark:                           fade(@white, 12.5%);
+@btn-hover-bg:                          fade(@black, 15%);
+@btn-hover-bg-dark:                     fade(@white, 20%);
+@btn-ghost-hover-bg:                    fade(@black, 7.5%);
+@btn-ghost-hover-bg-dark:               fade(@white, 7.5%);
+
+// compiling
+@referenceCompiling:                    false; // disable duplicate compilings when less files imported as reference
+
+// rulesets
+@no-appearance:                         { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+@no-selection:                          { -ms-user-select: none; -webkit-user-select: none; -moz-user-select: none; user-select: none; }

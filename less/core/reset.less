@@ -1,0 +1,26 @@
+/* reset */
+
+& when (@page-smooth-scrolling-reset = true) {
+    html:not(.ui-no-effects) { scroll-behavior: smooth; }
+}
+body {
+    & when (@body-font-reset = true) {
+        font-family: @font-family; font-size: @font-size; font-weight: @font-normal; letter-spacing: @letter-spacing;
+    }
+    & when (@body-bg-reset = true) {
+        ._bg-var(body-bg);
+    }
+    & when (@body-margin-reset = true) {
+        margin: 0;
+    }
+}
+
+[class*="ui-"] {
+    padding: 0; margin: 0;
+
+    &,&:before,&:after { box-sizing: border-box; }
+}
+
+.ui-link {
+    &,&:active,&:hover { ._color-var(black); word-wrap: break-word; text-decoration: none; }
+}
