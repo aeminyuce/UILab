@@ -19,11 +19,113 @@ var ui = {
     dataClasses: 'data-ui-classes',
     eventAjaxCallback: 'ui:ajaxCallback',
     eventDomChange: 'ui:domChange'
-  },
-  onload: function onload(callback) {
-    var handlerFnc, i;
+  }
+};
+
+ui.onload = function (callback) {
+  var handlerFnc, i;
+
+  handlerFnc = function handlerFnc(pt, pe) {
+    if (ui.handlers === undefined) {
+      ui.handlers = {};
+    }
+
+    if (ui.handlers[pt] === undefined) {
+      ui.handlers[pt] = {};
+    }
+
+    if (ui.handlers[pt][pe] === undefined) {
+      ui.handlers[pt][pe] = [];
+    }
+
+    ui.handlers[pt][pe].push(callback);
+
+    if (typeof pe !== 'function' && callback !== undefined) {
+      if (ui.handlers[pt][pe].length === 1) {
+        pt.addEventListener(pe.split('.')[0], function (ev) {
+          for (i = 0; i < ui.handlers[pt][pe].length; i++) {
+            ui.handlers[pt][pe][i](ev);
+          }
+        }, true);
+      }
+    } else {
+      return;
+    }
+  };
+
+  if (document.attachEvent) {
+    if (document.readyState === 'complete') {
+      callback();
+    } else {
+      handlerFnc(document, 'DOMContentLoaded');
+    }
+  } else {
+    if (document.readyState !== 'loading') {
+      callback();
+    } else {
+      handlerFnc(document, 'DOMContentLoaded');
+    }
+  }
+};
+
+ui.on = function (t, e, that, callback) {
+  var arr, f, fnc, handlerFnc, targetEl, objName, isWindowEvent, l, customEvent, eName, delegate, ua, i, j, k, m;
+
+  fnc = function fnc(e) {
+    if (typeof t === 'string' && e === undefined) {
+      return;
+    }
+
+    delegate = false;
+    customEvent = false;
+
+    if (callback !== undefined) {
+      f = function f(event) {
+        eName = e.split('.')[0];
+        targetEl = ui.find(that);
+
+        for (j = 0; j < targetEl.length; j++) {
+          if (ui.globals.nonClosestElems.indexOf(eName) > -1) {
+            if (event.target === targetEl[j]) {
+              callback.call(targetEl[j], event, event.toElement);
+            }
+          } else {
+            if (event.target === targetEl[j] || ui.closest(event.target, targetEl[j]).length === 1) {
+              callback.call(targetEl[j], event, event.toElement);
+            }
+          }
+        }
+      };
+
+      delegate = true;
+    } else {
+      f = that;
+      ua = navigator.userAgent.toLowerCase();
+
+      if (t instanceof Object && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') {
+        isWindowEvent = Object.prototype.toString.call(t) === '[object Window]';
+
+        if (isWindowEvent) {
+          if (ua.indexOf("MSIE ") > 0 || !!document.documentMode || ua.indexOf('edge') > -1) {
+            setTimeout(function () {
+              l.addEventListener(e, that, true);
+            }, ui.globals.ease);
+          }
+        }
+
+        objName = Object.prototype.toString.call(t);
+
+        if (objName === '[object HTMLDocument]' || objName === '[object Document]') {
+          customEvent = true;
+        }
+      }
+    }
 
     handlerFnc = function handlerFnc(pt, pe) {
+      if (f === undefined) {
+        return;
+      }
+
       if (ui.handlers === undefined) {
         ui.handlers = {};
       }
@@ -36,505 +138,418 @@ var ui = {
         ui.handlers[pt][pe] = [];
       }
 
-      ui.handlers[pt][pe].push(callback);
+      ui.handlers[pt][pe].push(f);
 
-      if (typeof pe !== 'function' && callback !== undefined) {
-        if (ui.handlers[pt][pe].length === 1) {
-          pt.addEventListener(pe.split('.')[0], function (ev) {
-            for (i = 0; i < ui.handlers[pt][pe].length; i++) {
-              ui.handlers[pt][pe][i](ev);
-            }
-          }, true);
-        }
-      } else {
-        return;
-      }
-    };
-
-    if (document.attachEvent) {
-      if (document.readyState === 'complete') {
-        callback();
-      } else {
-        handlerFnc(document, 'DOMContentLoaded');
-      }
-    } else {
-      if (document.readyState !== 'loading') {
-        callback();
-      } else {
-        handlerFnc(document, 'DOMContentLoaded');
-      }
-    }
-  },
-  on: function on(t, e, that, callback) {
-    var arr, f, fnc, handlerFnc, targetEl, objName, isWindowEvent, l, customEvent, eName, delegate, ua, i, j, k, m;
-
-    fnc = function fnc(e) {
-      if (typeof t === 'string' && e === undefined) {
-        return;
-      }
-
-      delegate = false;
-      customEvent = false;
-
-      if (callback !== undefined) {
-        f = function f(event) {
-          eName = e.split('.')[0];
-          targetEl = ui.find(that);
-
-          for (j = 0; j < targetEl.length; j++) {
-            if (ui.globals.nonClosestElems.indexOf(eName) > -1) {
-              if (event.target === targetEl[j]) {
-                callback.call(targetEl[j], event, event.toElement);
+      if (typeof pe !== 'function' && f !== undefined) {
+        if (delegate || isWindowEvent || customEvent) {
+          if (ui.handlers[pt][pe].length === 1) {
+            pt.addEventListener(pe.split('.')[0], function (ev) {
+              for (m = 0; m < ui.handlers[pt][pe].length; m++) {
+                ui.handlers[pt][pe][m](ev);
               }
-            } else {
-              if (event.target === targetEl[j] || ui.closest(event.target, targetEl[j]).length === 1) {
-                callback.call(targetEl[j], event, event.toElement);
-              }
-            }
-          }
-        };
-
-        delegate = true;
-      } else {
-        f = that;
-        ua = navigator.userAgent.toLowerCase();
-
-        if (t instanceof Object && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') {
-          isWindowEvent = Object.prototype.toString.call(t) === '[object Window]';
-
-          if (isWindowEvent) {
-            if (ua.indexOf("MSIE ") > 0 || !!document.documentMode || ua.indexOf('edge') > -1) {
-              setTimeout(function () {
-                l.addEventListener(e, that, true);
-              }, ui.globals.ease);
-            }
-          }
-
-          objName = Object.prototype.toString.call(t);
-
-          if (objName === '[object HTMLDocument]' || objName === '[object Document]') {
-            customEvent = true;
-          }
-        }
-      }
-
-      handlerFnc = function handlerFnc(pt, pe) {
-        if (f === undefined) {
-          return;
-        }
-
-        if (ui.handlers === undefined) {
-          ui.handlers = {};
-        }
-
-        if (ui.handlers[pt] === undefined) {
-          ui.handlers[pt] = {};
-        }
-
-        if (ui.handlers[pt][pe] === undefined) {
-          ui.handlers[pt][pe] = [];
-        }
-
-        ui.handlers[pt][pe].push(f);
-
-        if (typeof pe !== 'function' && f !== undefined) {
-          if (delegate || isWindowEvent || customEvent) {
-            if (ui.handlers[pt][pe].length === 1) {
-              pt.addEventListener(pe.split('.')[0], function (ev) {
-                for (m = 0; m < ui.handlers[pt][pe].length; m++) {
-                  ui.handlers[pt][pe][m](ev);
-                }
-              }, true);
-            }
-          } else {
-            pt.addEventListener(pe.split('.')[0], f, true);
+            }, true);
           }
         } else {
-          return;
+          pt.addEventListener(pe.split('.')[0], f, true);
         }
-      };
-
-      l = ui.find(t);
-
-      if (isWindowEvent) {
-        handlerFnc(l, e);
       } else {
-        for (i = 0; i < l.length; i++) {
-          handlerFnc(l[i], e);
-        }
+        return;
       }
     };
 
-    arr = e.split(' ');
+    l = ui.find(t);
 
-    for (k = 0; k < arr.length; k++) {
-      fnc(arr[k]);
-    }
-  },
-  off: function off(t, e) {
-    var arr, fnc, handlerFnc, l, i, j, k;
-
-    fnc = function fnc(e) {
-      handlerFnc = function handlerFnc(pt, pe) {
-        if (ui.handlers[pt] !== undefined) {
-          if (ui.handlers[pt][pe] !== undefined) {
-            for (j = 0; j < ui.handlers[pt][pe].length; j++) {
-              pt.removeEventListener(pe.split('.')[0], ui.handlers[pt][pe][j], true);
-              ui.handlers[pt][pe].splice(ui.handlers[pt][pe][j], 1);
-            }
-          }
-        }
-      };
-
-      l = ui.find(t);
-
-      if (l.length === 0) {
-        handlerFnc(l, e);
-      } else {
-        for (i = 0; i < l.length; i++) {
-          handlerFnc(l[i], e);
-        }
-      }
-    };
-
-    arr = e.split(' ');
-
-    for (k = 0; k < arr.length; k++) {
-      fnc(arr[k]);
-    }
-  },
-  trigger: function trigger(t, e) {
-    var arr, fnc, event, l, i, j;
-
-    fnc = function fnc(e) {
-      try {
-        event = new Event(e);
-      } catch (err) {
-        event = document.createEvent('HTMLEvents');
-        event.initEvent(e, true, false);
-      }
-
-      l = ui.find(t);
-
+    if (isWindowEvent) {
+      handlerFnc(l, e);
+    } else {
       for (i = 0; i < l.length; i++) {
-        l[i].dispatchEvent(event);
+        handlerFnc(l[i], e);
+      }
+    }
+  };
+
+  arr = e.split(' ');
+
+  for (k = 0; k < arr.length; k++) {
+    fnc(arr[k]);
+  }
+};
+
+ui.off = function (t, e) {
+  var arr, fnc, handlerFnc, l, i, j, k;
+
+  fnc = function fnc(e) {
+    handlerFnc = function handlerFnc(pt, pe) {
+      if (ui.handlers[pt] !== undefined) {
+        if (ui.handlers[pt][pe] !== undefined) {
+          for (j = 0; j < ui.handlers[pt][pe].length; j++) {
+            pt.removeEventListener(pe.split('.')[0], ui.handlers[pt][pe][j], true);
+            ui.handlers[pt][pe].splice(ui.handlers[pt][pe][j], 1);
+          }
+        }
       }
     };
 
-    arr = e.split(' ');
+    l = ui.find(t);
 
-    for (j = 0; j < arr.length; j++) {
-      fnc(arr[j]);
-    }
-  },
-  hasClass: function hasClass(t, name) {
-    var re,
-        l = ui.find(t),
-        i;
-
-    for (i = 0; i < l.length; i++) {
-      if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) {
-        re = new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className.baseVal);
-      } else {
-        re = new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className);
-      }
-    }
-
-    return re;
-  },
-  addClass: function addClass(t, name) {
-    var arr,
-        l = ui.find(t),
-        i,
-        j,
-        re = new RegExp('^\\s+|\\s+$');
-    name = name.split(' ');
-
-    for (i = 0; i < l.length; i++) {
-      for (j = 0; j < name.length; j++) {
-        if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) {
-          arr = l[i].className.baseVal.split(' ');
-
-          if (arr.indexOf(name[j]) === -1) {
-            l[i].className.baseVal += ' ' + name[j];
-            l[i].className.baseVal = l[i].className.baseVal.replace(re, '');
-          }
-        } else {
-          arr = l[i].className.split(' ');
-
-          if (arr.indexOf(name[j]) === -1) {
-            l[i].className += ' ' + name[j];
-            l[i].className = l[i].className.replace(re, '');
-          }
-        }
-      }
-    }
-  },
-  removeClass: function removeClass(t, name) {
-    var l = ui.find(t),
-        i,
-        j,
-        rex = new RegExp('^\\s+|\\s+$'),
-        re;
-    name = name.split(' ');
-
-    for (i = 0; i < l.length; i++) {
-      for (j = 0; j < name.length; j++) {
-        re = new RegExp('(\\s|^)' + name[j] + '(\\s|$)');
-
-        if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) {
-          l[i].className.baseVal = l[i].className.baseVal.replace(re, ' ').replace(rex, '');
-        } else {
-          l[i].className = l[i].className.replace(re, ' ').replace(rex, '');
-
-          if (l[i].className === '') {
-            l[i].removeAttribute('class');
-          }
-        }
-      }
-    }
-  },
-  toggleClass: function toggleClass(t, name) {
-    var isSvgElements,
-        arr,
-        newArr,
-        index,
-        l = ui.find(t),
-        i,
-        j,
-        re = new RegExp('^\\s+|\\s+$');
-    name = name.split(' ');
-
-    for (i = 0; i < l.length; i++) {
-      isSvgElements = ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1;
-
-      if (isSvgElements) {
-        arr = l[i].className.baseVal.split(' ');
-      } else {
-        arr = l[i].className.split(' ');
-      }
-
-      for (j = 0; j < name.length; j++) {
-        newArr = arr;
-        index = newArr.indexOf(name[j]);
-
-        if (index >= 0) {
-          newArr.splice(index, 1);
-        } else {
-          newArr.push(name[j]);
-        }
-
-        if (isSvgElements) {
-          l[i].className.baseVal = arr.join(' ');
-        } else {
-          newArr = newArr.join(' ').replace(re, '');
-
-          if (newArr.length === 0) {
-            l[i].removeAttribute('class');
-          } else {
-            l[i].className = newArr;
-          }
-        }
-      }
-    }
-  },
-  show: function show(t) {
-    var l = ui.find(t),
-        i;
-
-    for (i = 0; i < l.length; i++) {
-      l[i].style.display = 'block';
-    }
-  },
-  hide: function hide(t) {
-    var l = ui.find(t),
-        i;
-
-    for (i = 0; i < l.length; i++) {
-      l[i].style.display = 'none';
-    }
-  },
-  each: function each(t, callback) {
-    var l = ui.find(t),
-        i;
-
-    for (i = 0; i < l.length; i++) {
-      callback.call(l[i], i);
-    }
-  },
-  closest: function closest(t, outer) {
-    var l, o, i, j, p;
-
-    if (outer instanceof Object) {
-      o = [outer];
+    if (l.length === 0) {
+      handlerFnc(l, e);
     } else {
-      o = ui.find(outer);
+      for (i = 0; i < l.length; i++) {
+        handlerFnc(l[i], e);
+      }
+    }
+  };
+
+  arr = e.split(' ');
+
+  for (k = 0; k < arr.length; k++) {
+    fnc(arr[k]);
+  }
+};
+
+ui.trigger = function (t, e) {
+  var arr, fnc, event, l, i, j;
+
+  fnc = function fnc(e) {
+    try {
+      event = new Event(e);
+    } catch (err) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(e, true, false);
     }
 
     l = ui.find(t);
 
     for (i = 0; i < l.length; i++) {
-      p = l[i].parentNode;
-
-      while (p) {
-        for (j = 0; j < o.length; j++) {
-          if (p === o[j]) {
-            return ui.find(p);
-          }
-        }
-
-        p = p.parentNode;
-      }
+      l[i].dispatchEvent(event);
     }
+  };
 
-    return [];
-  },
-  find: function find(item, outer) {
-    var i,
-        objName,
-        call,
-        outerEl,
-        outerElIndex,
-        foundEl = [];
+  arr = e.split(' ');
 
-    if (item instanceof Object) {
-      if (NodeList.prototype.isPrototypeOf(item)) {
-        return item;
-      }
-
-      objName = Object.prototype.toString.call(item);
-
-      if (objName === '[object HTMLDocument]' || objName === '[object Document]') {
-        if (ui.find.document === undefined) {
-          ui.find.document = document.querySelectorAll('html');
-        }
-
-        call = ui.find.document;
-        return call;
-      }
-
-      if (objName === '[object Window]') {
-        return window;
-      }
-
-      if (objName === '[object Array]') {
-        return item;
-      }
-
-      return [item];
-    }
-
-    if (outer !== undefined) {
-      if (outer instanceof Object) {
-        outerEl = outer;
-      } else {
-        outerEl = document.querySelectorAll(outer);
-      }
-
-      if (outerEl.length !== undefined && Array.prototype.slice.call(outerEl).length === 1) {
-        for (i = 0; i < outerEl.length; i++) {
-          outerElIndex = outerEl[i].querySelectorAll(item);
-
-          if (outerEl.length === 1) {
-            foundEl = outerElIndex[0];
-
-            if (foundEl === undefined) {
-              foundEl = outerEl.querySelectorAll(item);
-            }
-          } else {
-            foundEl = foundEl.concat(outerElIndex);
-          }
-        }
-      } else {
-        foundEl = outerEl.querySelectorAll(item);
-      }
-
-      return foundEl;
-    }
-
-    return document.querySelectorAll(item);
-  },
-  ajax: function ajax(props) {
-    if (props.url === undefined) {
-      return;
-    }
-
-    if (props.type === undefined || props.type === '') {
-      props.type = 'GET';
-    }
-
-    if (ui.ajax.requests === undefined) {
-      ui.ajax.requests = [];
-    }
-
-    var i, re, rex;
-    i = ui.ajax.requests.length;
-    re = '';
-    ui.ajax.requests[i] = new XMLHttpRequest();
-    ui.ajax.requests[i].open(props.type, props.url, true);
-
-    if (props.beforesend !== undefined) {
-      props.beforesend(ui.ajax.requests[i]);
-    }
-
-    ui.ajax.requests[i].setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-
-    if (!props.cache) {
-      ui.ajax.requests[i].setRequestHeader('cache-control', 'no-cache');
-    }
-
-    if (props.data !== '' && props.data !== undefined) {
-      ui.ajax.requests[i].send(props.data);
-    } else {
-      ui.ajax.requests[i].send();
-    }
-
-    ui.ajax.requests[i].onload = function () {
-      if (ui.ajax.requests[i].readyState === 4 && ui.ajax.requests[i].status === 200) {
-        ui.ajax.classNames = '';
-        props.callback('success', ui.ajax.requests[i].responseText, ui.ajax.requests[i]);
-        re = ui.globals.dataPrefix + '+\\w+=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[ \\s\\>]';
-        re = new RegExp(re, 'g');
-        ui.ajax.data = ui.ajax.requests[i].responseText.match(re);
-
-        if (ui.ajax.data === null) {
-          ui.ajax.data = '';
-        } else {
-          ui.ajax.data = ui.ajax.data.toString();
-        }
-
-        ui.ajax.classNames += ui.ajax.requests[i].responseText.match(/\sclass=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
-
-        if (ui.ajax.classNames === 'null') {
-          ui.ajax.classNames = '';
-        }
-
-        rex = ui.globals.dataClasses + '=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[\\s\\>]';
-        rex = new RegExp(rex, 'g');
-        ui.ajax.classNames += ui.ajax.requests[i].responseText.match(rex);
-
-        if (ui.ajax.classNames !== 'null') {
-          ui.ajax.classNames = ui.ajax.classNames.match(/"+[\w\s\d\-\_\=]+"/g);
-          ui.ajax.classNames = ui.ajax.classNames.toString().replace(/\"/g, '').replace(/,/g, ' ').split(' ');
-          ui.ajax.classNames = ui.ajax.classNames.filter(function (value, index, self) {
-            return self.indexOf(value) === index;
-          });
-          ui.trigger(document, ui.globals.eventAjaxCallback);
-        }
-
-        ui.ajax.requests[i] = undefined;
-        ui.ajax.classNames = '';
-        ui.ajax.data = '';
-      } else {
-        props.callback('error', '', ui.ajax.requests[i]);
-      }
-    };
-
-    ui.ajax.requests[i].onerror = function () {
-      props.callback('error', '', ui.ajax.requests[i]);
-    };
+  for (j = 0; j < arr.length; j++) {
+    fnc(arr[j]);
   }
 };
+
+ui.hasClass = function (t, name) {
+  var re,
+      l = ui.find(t),
+      i;
+
+  for (i = 0; i < l.length; i++) {
+    if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) {
+      re = new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className.baseVal);
+    } else {
+      re = new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className);
+    }
+  }
+
+  return re;
+};
+
+ui.addClass = function (t, name) {
+  var arr,
+      l = ui.find(t),
+      i,
+      j,
+      re = new RegExp('^\\s+|\\s+$');
+  name = name.split(' ');
+
+  for (i = 0; i < l.length; i++) {
+    for (j = 0; j < name.length; j++) {
+      if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) {
+        arr = l[i].className.baseVal.split(' ');
+
+        if (arr.indexOf(name[j]) === -1) {
+          l[i].className.baseVal += ' ' + name[j];
+          l[i].className.baseVal = l[i].className.baseVal.replace(re, '');
+        }
+      } else {
+        arr = l[i].className.split(' ');
+
+        if (arr.indexOf(name[j]) === -1) {
+          l[i].className += ' ' + name[j];
+          l[i].className = l[i].className.replace(re, '');
+        }
+      }
+    }
+  }
+};
+
+ui.removeClass = function (t, name) {
+  var l = ui.find(t),
+      i,
+      j,
+      rex = new RegExp('^\\s+|\\s+$'),
+      re;
+  name = name.split(' ');
+
+  for (i = 0; i < l.length; i++) {
+    for (j = 0; j < name.length; j++) {
+      re = new RegExp('(\\s|^)' + name[j] + '(\\s|$)');
+
+      if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) {
+        l[i].className.baseVal = l[i].className.baseVal.replace(re, ' ').replace(rex, '');
+      } else {
+        l[i].className = l[i].className.replace(re, ' ').replace(rex, '');
+
+        if (l[i].className === '') {
+          l[i].removeAttribute('class');
+        }
+      }
+    }
+  }
+};
+
+ui.toggleClass = function (t, name) {
+  var isSvgElements,
+      arr,
+      newArr,
+      index,
+      l = ui.find(t),
+      i,
+      j,
+      re = new RegExp('^\\s+|\\s+$');
+  name = name.split(' ');
+
+  for (i = 0; i < l.length; i++) {
+    isSvgElements = ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1;
+
+    if (isSvgElements) {
+      arr = l[i].className.baseVal.split(' ');
+    } else {
+      arr = l[i].className.split(' ');
+    }
+
+    for (j = 0; j < name.length; j++) {
+      newArr = arr;
+      index = newArr.indexOf(name[j]);
+
+      if (index >= 0) {
+        newArr.splice(index, 1);
+      } else {
+        newArr.push(name[j]);
+      }
+
+      if (isSvgElements) {
+        l[i].className.baseVal = arr.join(' ');
+      } else {
+        newArr = newArr.join(' ').replace(re, '');
+
+        if (newArr.length === 0) {
+          l[i].removeAttribute('class');
+        } else {
+          l[i].className = newArr;
+        }
+      }
+    }
+  }
+};
+
+ui.show = function (t) {
+  var l = ui.find(t),
+      i;
+
+  for (i = 0; i < l.length; i++) {
+    l[i].style.display = 'block';
+  }
+};
+
+ui.hide = function (t) {
+  var l = ui.find(t),
+      i;
+
+  for (i = 0; i < l.length; i++) {
+    l[i].style.display = 'none';
+  }
+};
+
+ui.each = function (t, callback) {
+  var l = ui.find(t),
+      i;
+
+  for (i = 0; i < l.length; i++) {
+    callback.call(l[i], i);
+  }
+};
+
+ui.closest = function (t, outer) {
+  var l, o, i, j, p;
+
+  if (outer instanceof Object) {
+    o = [outer];
+  } else {
+    o = ui.find(outer);
+  }
+
+  l = ui.find(t);
+
+  for (i = 0; i < l.length; i++) {
+    p = l[i].parentNode;
+
+    while (p) {
+      for (j = 0; j < o.length; j++) {
+        if (p === o[j]) {
+          return ui.find(p);
+        }
+      }
+
+      p = p.parentNode;
+    }
+  }
+
+  return [];
+};
+
+ui.find = function (item, outer) {
+  var i,
+      objName,
+      call,
+      outerEl,
+      outerElIndex,
+      foundEl = [];
+
+  if (item instanceof Object) {
+    if (NodeList.prototype.isPrototypeOf(item)) {
+      return item;
+    }
+
+    objName = Object.prototype.toString.call(item);
+
+    if (objName === '[object HTMLDocument]' || objName === '[object Document]') {
+      if (ui.find.document === undefined) {
+        ui.find.document = document.querySelectorAll('html');
+      }
+
+      call = ui.find.document;
+      return call;
+    }
+
+    if (objName === '[object Window]') {
+      return window;
+    }
+
+    if (objName === '[object Array]') {
+      return item;
+    }
+
+    return [item];
+  }
+
+  if (outer !== undefined) {
+    if (outer instanceof Object) {
+      outerEl = outer;
+    } else {
+      outerEl = document.querySelectorAll(outer);
+    }
+
+    if (outerEl.length !== undefined && Array.prototype.slice.call(outerEl).length === 1) {
+      for (i = 0; i < outerEl.length; i++) {
+        outerElIndex = outerEl[i].querySelectorAll(item);
+
+        if (outerEl.length === 1) {
+          foundEl = outerElIndex[0];
+
+          if (foundEl === undefined) {
+            foundEl = outerEl.querySelectorAll(item);
+          }
+        } else {
+          foundEl = foundEl.concat(outerElIndex);
+        }
+      }
+    } else {
+      foundEl = outerEl.querySelectorAll(item);
+    }
+
+    return foundEl;
+  }
+
+  return document.querySelectorAll(item);
+};
+
+ui.ajax = function (props) {
+  if (props.url === undefined) {
+    return;
+  }
+
+  if (props.type === undefined || props.type === '') {
+    props.type = 'GET';
+  }
+
+  if (ui.ajax.requests === undefined) {
+    ui.ajax.requests = [];
+  }
+
+  var i, re, rex;
+  i = ui.ajax.requests.length;
+  re = '';
+  ui.ajax.requests[i] = new XMLHttpRequest();
+  ui.ajax.requests[i].open(props.type, props.url, true);
+
+  if (props.beforesend !== undefined) {
+    props.beforesend(ui.ajax.requests[i]);
+  }
+
+  ui.ajax.requests[i].setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+
+  if (!props.cache) {
+    ui.ajax.requests[i].setRequestHeader('cache-control', 'no-cache');
+  }
+
+  if (props.data !== '' && props.data !== undefined) {
+    ui.ajax.requests[i].send(props.data);
+  } else {
+    ui.ajax.requests[i].send();
+  }
+
+  ui.ajax.requests[i].onload = function () {
+    if (ui.ajax.requests[i].readyState === 4 && ui.ajax.requests[i].status === 200) {
+      ui.ajax.classNames = '';
+      props.callback('success', ui.ajax.requests[i].responseText, ui.ajax.requests[i]);
+      re = ui.globals.dataPrefix + '+\\w+=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[ \\s\\>]';
+      re = new RegExp(re, 'g');
+      ui.ajax.data = ui.ajax.requests[i].responseText.match(re);
+
+      if (ui.ajax.data === null) {
+        ui.ajax.data = '';
+      } else {
+        ui.ajax.data = ui.ajax.data.toString();
+      }
+
+      ui.ajax.classNames += ui.ajax.requests[i].responseText.match(/\sclass=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
+
+      if (ui.ajax.classNames === 'null') {
+        ui.ajax.classNames = '';
+      }
+
+      rex = ui.globals.dataClasses + '=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[\\s\\>]';
+      rex = new RegExp(rex, 'g');
+      ui.ajax.classNames += ui.ajax.requests[i].responseText.match(rex);
+
+      if (ui.ajax.classNames !== 'null') {
+        ui.ajax.classNames = ui.ajax.classNames.match(/"+[\w\s\d\-\_\=]+"/g);
+        ui.ajax.classNames = ui.ajax.classNames.toString().replace(/\"/g, '').replace(/,/g, ' ').split(' ');
+        ui.ajax.classNames = ui.ajax.classNames.filter(function (value, index, self) {
+          return self.indexOf(value) === index;
+        });
+        ui.trigger(document, ui.globals.eventAjaxCallback);
+      }
+
+      ui.ajax.requests[i] = undefined;
+      ui.ajax.classNames = '';
+      ui.ajax.data = '';
+    } else {
+      props.callback('error', '', ui.ajax.requests[i]);
+    }
+  };
+
+  ui.ajax.requests[i].onerror = function () {
+    props.callback('error', '', ui.ajax.requests[i]);
+  };
+};
+
 ui.userAgents = {
   target: document,
   nameDesktop: 'ui-desktop',

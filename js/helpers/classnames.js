@@ -1,5 +1,4 @@
 // classnames
-
 ui.classnames = {
 
     // targets

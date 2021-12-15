@@ -1,5 +1,5 @@
 // sidebar
-import { ui } from './../core.js';
+import { ui } from './../core/globals.js';
 export default () => ui;
 
 ui.sidebar = {
