@@ -22,50 +22,70 @@ var ui = {
   }
 };
 
-ui.onload = function (callback) {
-  var handlerFnc, i;
+ui.find = function (item, outer) {
+  var i,
+      objName,
+      call,
+      outerEl,
+      outerElIndex,
+      foundEl = [];
 
-  handlerFnc = function handlerFnc(pt, pe) {
-    if (ui.handlers === undefined) {
-      ui.handlers = {};
+  if (item instanceof Object) {
+    if (NodeList.prototype.isPrototypeOf(item)) {
+      return item;
     }
 
-    if (ui.handlers[pt] === undefined) {
-      ui.handlers[pt] = {};
+    objName = Object.prototype.toString.call(item);
+
+    if (objName === '[object HTMLDocument]' || objName === '[object Document]') {
+      if (ui.find.document === undefined) {
+        ui.find.document = document.querySelectorAll('html');
+      }
+
+      call = ui.find.document;
+      return call;
     }
 
-    if (ui.handlers[pt][pe] === undefined) {
-      ui.handlers[pt][pe] = [];
+    if (objName === '[object Window]') {
+      return window;
     }
 
-    ui.handlers[pt][pe].push(callback);
+    if (objName === '[object Array]') {
+      return item;
+    }
 
-    if (typeof pe !== 'function' && callback !== undefined) {
-      if (ui.handlers[pt][pe].length === 1) {
-        pt.addEventListener(pe.split('.')[0], function (ev) {
-          for (i = 0; i < ui.handlers[pt][pe].length; i++) {
-            ui.handlers[pt][pe][i](ev);
+    return [item];
+  }
+
+  if (outer !== undefined) {
+    if (outer instanceof Object) {
+      outerEl = outer;
+    } else {
+      outerEl = document.querySelectorAll(outer);
+    }
+
+    if (outerEl.length !== undefined && Array.prototype.slice.call(outerEl).length === 1) {
+      for (i = 0; i < outerEl.length; i++) {
+        outerElIndex = outerEl[i].querySelectorAll(item);
+
+        if (outerEl.length === 1) {
+          foundEl = outerElIndex[0];
+
+          if (foundEl === undefined) {
+            foundEl = outerEl.querySelectorAll(item);
           }
-        }, true);
+        } else {
+          foundEl = foundEl.concat(outerElIndex);
+        }
       }
     } else {
-      return;
+      foundEl = outerEl.querySelectorAll(item);
     }
-  };
 
-  if (document.attachEvent) {
-    if (document.readyState === 'complete') {
-      callback();
-    } else {
-      handlerFnc(document, 'DOMContentLoaded');
-    }
-  } else {
-    if (document.readyState !== 'loading') {
-      callback();
-    } else {
-      handlerFnc(document, 'DOMContentLoaded');
-    }
+    return foundEl;
   }
+
+  return document.querySelectorAll(item);
 };
 
 ui.on = function (t, e, that, callback) {
@@ -205,6 +225,52 @@ ui.off = function (t, e) {
 
   for (k = 0; k < arr.length; k++) {
     fnc(arr[k]);
+  }
+};
+
+ui.onload = function (callback) {
+  var handlerFnc, i;
+
+  handlerFnc = function handlerFnc(pt, pe) {
+    if (ui.handlers === undefined) {
+      ui.handlers = {};
+    }
+
+    if (ui.handlers[pt] === undefined) {
+      ui.handlers[pt] = {};
+    }
+
+    if (ui.handlers[pt][pe] === undefined) {
+      ui.handlers[pt][pe] = [];
+    }
+
+    ui.handlers[pt][pe].push(callback);
+
+    if (typeof pe !== 'function' && callback !== undefined) {
+      if (ui.handlers[pt][pe].length === 1) {
+        pt.addEventListener(pe.split('.')[0], function (ev) {
+          for (i = 0; i < ui.handlers[pt][pe].length; i++) {
+            ui.handlers[pt][pe][i](ev);
+          }
+        }, true);
+      }
+    } else {
+      return;
+    }
+  };
+
+  if (document.attachEvent) {
+    if (document.readyState === 'complete') {
+      callback();
+    } else {
+      handlerFnc(document, 'DOMContentLoaded');
+    }
+  } else {
+    if (document.readyState !== 'loading') {
+      callback();
+    } else {
+      handlerFnc(document, 'DOMContentLoaded');
+    }
   }
 };
 
@@ -401,72 +467,6 @@ ui.closest = function (t, outer) {
   }
 
   return [];
-};
-
-ui.find = function (item, outer) {
-  var i,
-      objName,
-      call,
-      outerEl,
-      outerElIndex,
-      foundEl = [];
-
-  if (item instanceof Object) {
-    if (NodeList.prototype.isPrototypeOf(item)) {
-      return item;
-    }
-
-    objName = Object.prototype.toString.call(item);
-
-    if (objName === '[object HTMLDocument]' || objName === '[object Document]') {
-      if (ui.find.document === undefined) {
-        ui.find.document = document.querySelectorAll('html');
-      }
-
-      call = ui.find.document;
-      return call;
-    }
-
-    if (objName === '[object Window]') {
-      return window;
-    }
-
-    if (objName === '[object Array]') {
-      return item;
-    }
-
-    return [item];
-  }
-
-  if (outer !== undefined) {
-    if (outer instanceof Object) {
-      outerEl = outer;
-    } else {
-      outerEl = document.querySelectorAll(outer);
-    }
-
-    if (outerEl.length !== undefined && Array.prototype.slice.call(outerEl).length === 1) {
-      for (i = 0; i < outerEl.length; i++) {
-        outerElIndex = outerEl[i].querySelectorAll(item);
-
-        if (outerEl.length === 1) {
-          foundEl = outerElIndex[0];
-
-          if (foundEl === undefined) {
-            foundEl = outerEl.querySelectorAll(item);
-          }
-        } else {
-          foundEl = foundEl.concat(outerElIndex);
-        }
-      }
-    } else {
-      foundEl = outerEl.querySelectorAll(item);
-    }
-
-    return foundEl;
-  }
-
-  return document.querySelectorAll(item);
 };
 
 ui.ajax = function (props) {

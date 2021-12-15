@@ -1,45 +1,37 @@
-// Core
-import { default as ui_core__onload } from './core/onload.js';
+/* Core */
 
+// Utilities
+import { default as ui_core__find } from './core/find.js';
 import { default as ui_core__on } from './core/on.js';
 import { default as ui_core__off } from './core/off.js';
+import { default as ui_core__onload } from './core/onload.js';
 import { default as ui_core__trigger } from './core/trigger.js';
-
 import { default as ui_core__hasclass } from './core/hasclass.js';
 import { default as ui_core__addclass } from './core/addclass.js';
 import { default as ui_core__removeclass } from './core/removeclass.js';
 import { default as ui_core__toggleclass } from './core/toggleclass.js';
-
 import { default as ui_core__show } from './core/show.js';
 import { default as ui_core__hide } from './core/hide.js';
-
 import { default as ui_core__each } from './core/each.js';
-
 import { default as ui_core__closest } from './core/closest.js';
-import { default as ui_core__find } from './core/find.js';
-
 import { default as ui_core__ajax } from './core/ajax.js';
 
-ui_core__onload();
-
+ui_core__find();
 ui_core__on();
 ui_core__off();
+ui_core__onload();
 ui_core__trigger();
-
 ui_core__hasclass();
 ui_core__addclass();
 ui_core__removeclass();
 ui_core__toggleclass();
-
 ui_core__show();
 ui_core__hide();
-
 ui_core__each();
-
 ui_core__closest();
-ui_core__find();
-
 ui_core__ajax();
+
+/* Modules */
 
 // Modifiers
 import { default as ui_module__user_agents} from './modules/user-agents.js';
