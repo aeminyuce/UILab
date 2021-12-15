@@ -1,6 +1,5 @@
 /* Core */
 
-// Utilities
 import { default as ui_core__find } from './core/find.js';
 import { default as ui_core__on } from './core/on.js';
 import { default as ui_core__off } from './core/off.js';
