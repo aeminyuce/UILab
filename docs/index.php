@@ -120,7 +120,6 @@
             <div class="ui-col-250 ui-theme-gray ui-fill-light-200 ui-hidden-md">
 
                 <div class="ui-sidebar-add-r">
-                    <h3 class="ui-h3 ui-m-15">Components</h3>
                     <ul class="ui-list-unstyled ui-align-l ui-block-2nd ui-ease-2nd-button">
                         <li><a class="ui-btn ui-btn-ghost" href="?p=alerts">Alerts</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=avatars">Avatars</a></li>
@@ -156,10 +155,10 @@
                         <li><a class="ui-btn ui-btn-ghost" href="?p=tooltip">Tooltip</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=typography">Typography</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=weather">Weather</a></li>
-                    </ul>
-                    <h3 class="ui-h3 ui-m-15">Javascript</h3>
-                    <ul class="ui-list-unstyled ui-align-l ui-block-2nd ui-ease-2nd-button">
-                        <li><a class="ui-btn ui-btn-ghost" href="?p=ui">UI JS</a></li>
+                        <li>
+                            <hr class="ui-hr ui-m-10-v">
+                        </li>
+                        <li><a class="ui-btn ui-btn-ghost" href="?p=javascript">Javascript</a></li>
                     </ul>
                 </div>
 

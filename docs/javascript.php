@@ -6,7 +6,7 @@
             <div class="ui-col-12 ui-p-30">
 
                 <div class="ui-card-warning ui-p-30 ui-round ui-theme-sub ui-fill-light-100 ui-stroke">
-                    UI JS is a simple javascript for creating, removing and triggering javascript event listeners and finding HTML elements.
+                    UI lab includes a simple javascript for creating, removing and triggering javascript event listeners and finding HTML elements.
                 </div>
 
                 <div class="ui-p-30-v ui-block-1st ui-theme-base">
