@@ -1,7 +1,6 @@
-/*
- UI Modal JS
- Requires UI Core JS
-*/
+// modal
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.modal = {
 
@@ -81,7 +80,7 @@ ui.modal = {
 
 };
 
-(function () {
+(() => {
 
     var pageYPos;
 
@@ -550,8 +549,8 @@ ui.modal = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.modal.Start);
     ui.on(window, 'resize', modalResizer);
 
-}());
+})();

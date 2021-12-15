@@ -1,7 +1,6 @@
-/*
- UI Grid JS
- Requires UI Core JS
-*/
+// grid
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.grid = {
 
@@ -18,7 +17,7 @@ ui.grid = {
 
 };
 
-(function () {
+(() => {
 
     ui.grid.Start = function () {
 
@@ -93,7 +92,7 @@ ui.grid = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.grid.Start);
 
     ui.on(window, 'resize', ui.grid.Start);
@@ -111,4 +110,4 @@ ui.grid = {
 
         });
 
-}());
+})();

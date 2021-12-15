@@ -1,7 +1,6 @@
-/*
- UI Imgupload JS
- Requires UI Core JS
-*/
+// imgupload
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.imgUpload = {
 
@@ -69,7 +68,7 @@ ui.imgUpload = {
 
 };
 
-(function () {
+(() => {
 
     ui.imgUpload.Start = function () {
 
@@ -704,7 +703,7 @@ ui.imgUpload = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.imgUpload.Start);
 
-}());
+})();

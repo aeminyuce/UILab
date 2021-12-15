@@ -1,7 +1,6 @@
-/*
- UI Donut Chart JS
- Requires UI Core JS
-*/
+// donut chart
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.donutChart = {
 
@@ -23,7 +22,7 @@ ui.donutChart = {
 
 };
 
-(function () {
+(() => {
 
     ui.donutChart.Start = function () {
 
@@ -147,7 +146,7 @@ ui.donutChart = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.donutChart.Start);
     ui.on(document, ui.globals.eventDomChange, ui.donutChart.Start);
 
@@ -163,4 +162,4 @@ ui.donutChart = {
 
         });
 
-}());
+})();

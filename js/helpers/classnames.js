@@ -1,7 +1,4 @@
-/*
- UI Classnames JS
- Requires UI Core JS
-*/
+// classnames
 
 ui.classnames = {
 
@@ -401,7 +398,7 @@ ui.classnames = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.classnames.Start);
 
 }());

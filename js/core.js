@@ -1,8 +1,5 @@
-/*
- UI Core JS
-*/
-
-var ui = {
+// ui
+export const ui = {
 
     globals: {
 

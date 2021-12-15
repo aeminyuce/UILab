@@ -1,7 +1,6 @@
-/*
- UI Dropdown JS
- Requires UI Core JS
-*/
+// dropdown
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.dropdown = {
 
@@ -47,7 +46,7 @@ ui.dropdown = {
 
 };
 
-(function () {
+(() => {
 
     var
         dropdownHoverTimer,
@@ -487,7 +486,7 @@ ui.dropdown = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.dropdown.Start);
 
     ui.on(window,
@@ -502,4 +501,4 @@ ui.dropdown = {
 
         });
 
-}());
+})();

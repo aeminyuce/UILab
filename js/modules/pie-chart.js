@@ -1,7 +1,6 @@
-/*
- UI Pie Chart JS
- Requires UI Core JS
-*/
+// pie chart
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.pieChart = {
 
@@ -40,7 +39,7 @@ ui.pieChart = {
 
 };
 
-(function () {
+(() => {
 
     function chartsResizer() {
 
@@ -246,7 +245,7 @@ ui.pieChart = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.pieChart.Start);
 
     ui.on(window, 'resize', chartsResizer);
@@ -264,4 +263,4 @@ ui.pieChart = {
 
         });
 
-}());
+})();

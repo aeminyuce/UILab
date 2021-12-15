@@ -1,7 +1,6 @@
-/*
- UI Sidebar JS
- Requires UI Core JS
-*/
+// sidebar
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.sidebar = {
 
@@ -41,7 +40,7 @@ ui.sidebar = {
 
 };
 
-(function () {
+(() => {
 
     var getScrollPos;
 
@@ -212,7 +211,7 @@ ui.sidebar = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.sidebar.Start);
 
     ui.on(window,
@@ -232,4 +231,4 @@ ui.sidebar = {
 
         });
 
-}());
+})();

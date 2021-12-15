@@ -1,7 +1,6 @@
-/*
- UI Textarea Counter JS
- Requires UI Core JS
-*/
+// textarea counter
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.textareaCounter = {
 
@@ -20,7 +19,7 @@ ui.textareaCounter = {
 
 };
 
-(function () {
+(() => {
 
     ui.textareaCounter.Start = function () {
 
@@ -102,7 +101,7 @@ ui.textareaCounter = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.textareaCounter.Start);
 
     // ajax callback loader
@@ -117,4 +116,4 @@ ui.textareaCounter = {
 
         });
 
-}());
+})();

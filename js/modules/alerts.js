@@ -1,7 +1,6 @@
-/*
- UI Alerts JS
- Requires UI Core JS
-*/
+// alerts
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.alerts = {
 
@@ -74,7 +73,7 @@ ui.alerts = {
 
 };
 
-(function () {
+(() => {
 
     var
         pageYPos,
@@ -480,7 +479,7 @@ ui.alerts = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.alerts.Start);
 
-}());
+})();

@@ -1,7 +1,6 @@
-/*
- UI Tab JS
- Requires UI Core JS
-*/
+// tab
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.tab = {
 
@@ -29,7 +28,7 @@ ui.tab = {
 
 };
 
-(function () {
+(() => {
 
     ui.tab.Start = function () {
 
@@ -287,7 +286,7 @@ ui.tab = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.tab.Start);
 
-}());
+})();

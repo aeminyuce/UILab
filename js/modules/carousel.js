@@ -1,7 +1,6 @@
-/*
- UI Carousel JS
- Requires UI Core JS
-*/
+// carousel
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.carousel = {
 
@@ -88,7 +87,7 @@ ui.carousel = {
 
 };
 
-(function () {
+(() => {
 
     var
         idCount = 0,
@@ -988,7 +987,7 @@ ui.carousel = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.carousel.Start);
 
     ui.on(window, 'resize', carouselResizer);
@@ -1006,4 +1005,4 @@ ui.carousel = {
 
         });
 
-}());
+})();

@@ -1,7 +1,6 @@
-/*
- UI Autocomplete JS
- Requires UI Core JS
-*/
+// autocomplete
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.autocomplete = {
 
@@ -48,7 +47,7 @@ ui.autocomplete = {
 
 };
 
-(function () {
+(() => {
 
     ui.autocomplete.Start = function () {
 
@@ -434,7 +433,7 @@ ui.autocomplete = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.autocomplete.Start);
 
-}());
+})();

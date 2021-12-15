@@ -1,7 +1,6 @@
-/*
- UI Weather JS
- Requires UI Core JS
-*/
+// weather
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.weather = {
 
@@ -43,7 +42,7 @@ ui.weather = {
 
 };
 
-(function () {
+(() => {
 
     var
         dateLoaded,
@@ -243,7 +242,7 @@ ui.weather = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.weather.Start);
 
     // ajax callback loader
@@ -258,4 +257,4 @@ ui.weather = {
 
         });
 
-}());
+})();

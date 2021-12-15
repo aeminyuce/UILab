@@ -1,7 +1,6 @@
-/*
- UI Loading Mask JS
- Requires UI Core JS
-*/
+// loading mask
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.loadingMask = {
 
@@ -25,7 +24,7 @@ ui.loadingMask = {
 
 };
 
-(function () {
+(() => {
 
     var
         maskItems = [],
@@ -151,7 +150,7 @@ ui.loadingMask = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.loadingMask.Start);
 
-}());
+})();

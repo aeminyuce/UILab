@@ -1,7 +1,6 @@
-/*
- UI Map JS
- Requires UI Core JS
-*/
+// map
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.map = {
 
@@ -24,7 +23,7 @@ ui.map = {
 
 };
 
-(function () {
+(() => {
 
     ui.map.Start = function () {
 
@@ -99,7 +98,7 @@ ui.map = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.map.Start);
 
-}());
+})();

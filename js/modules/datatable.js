@@ -1,7 +1,6 @@
-/*
- UI Datatable JS
- Requires UI Core JS
-*/
+// datatable
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.datatable = {
 
@@ -78,7 +77,7 @@ ui.datatable = {
 
 };
 
-(function () {
+(() => {
 
     var
         testStorage = true,
@@ -938,7 +937,7 @@ ui.datatable = {
 
         });
 
-    // Loaders
+    // loaders
     ui.onload(ui.datatable.Start);
 
     // ajax callback loader
@@ -953,4 +952,4 @@ ui.datatable = {
 
         });
 
-}());
+})();

@@ -1,7 +1,6 @@
-/*
- UI Form Spinner JS
- Requires UI Core JS
-*/
+// form spinner
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.formSpinner = {
 
@@ -14,7 +13,7 @@ ui.formSpinner = {
 
 };
 
-(function () {
+(() => {
 
     ui.formSpinner.Start = function () {
 
@@ -67,7 +66,7 @@ ui.formSpinner = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.formSpinner.Start);
 
     // ajax callback loader
@@ -82,4 +81,4 @@ ui.formSpinner = {
 
         });
 
-}());
+})();

@@ -1,7 +1,6 @@
-/*
- UI Required Forms JS
- Requires UI Core JS
-*/
+// required forms
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.requiredForms = {
 
@@ -35,7 +34,7 @@ ui.requiredForms = {
 
 };
 
-(function () {
+(() => {
 
     ui.requiredForms.Start = function () {
 
@@ -340,7 +339,7 @@ ui.requiredForms = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.requiredForms.Start);
 
-}());
+})();

@@ -1,7 +1,6 @@
-/*
- UI Currency Spinner JS
- Requires UI Core JS
-*/
+// currency spinner
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.currencySpinner = {
 
@@ -19,7 +18,7 @@ ui.currencySpinner = {
     decimals: false
 };
 
-(function () {
+(() => {
 
     var cacheCurrencySpinner;
 
@@ -251,7 +250,7 @@ ui.currencySpinner = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.currencySpinner.Start);
 
-}());
+})();

@@ -1,7 +1,6 @@
-/*
- UI Line Chart JS
- Requires UI Core JS
-*/
+// line chart
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.lineChart = {
 
@@ -84,7 +83,7 @@ ui.lineChart = {
 
 };
 
-(function () {
+(() => {
 
     // load charts
     ui.lineChart.Start = function () {
@@ -545,7 +544,7 @@ ui.lineChart = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.lineChart.Start);
 
     ui.on(window,
@@ -574,4 +573,4 @@ ui.lineChart = {
 
         });
 
-}());
+})();

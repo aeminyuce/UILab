@@ -1,8 +1,4 @@
-/*
- UI Iconlist JS
- Requires UI Core JS
-*/
-
+// iconlist
 ui.iconlist = {
 
     // targets
@@ -131,7 +127,7 @@ ui.iconlist = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.iconlist.Start);
 
 }());

@@ -1,7 +1,6 @@
-/*
- UI Card JS
- Requires UI Core JS
-*/
+// card
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.card = {
 
@@ -13,7 +12,7 @@ ui.card = {
 
 };
 
-(function () {
+(() => {
 
     ui.card.Start = function () {
 
@@ -36,7 +35,7 @@ ui.card = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.card.Start);
 
-}());
+})();

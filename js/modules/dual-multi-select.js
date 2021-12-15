@@ -1,7 +1,6 @@
-/*
- UI Dual Multi Select JS
- Requires UI Core JS
-*/
+// dual multi select
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.dualMultiSelect = {
 
@@ -16,7 +15,7 @@ ui.dualMultiSelect = {
 
 };
 
-(function () {
+(() => {
 
     var
         resetOptions,
@@ -344,7 +343,7 @@ ui.dualMultiSelect = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.dualMultiSelect.Start);
 
     // ajax callback loader
@@ -359,4 +358,4 @@ ui.dualMultiSelect = {
 
         });
 
-}());
+})();

@@ -1,7 +1,6 @@
-/*
- UI Photoslide JS
- Requires UI Core JS
-*/
+// photoslide
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.photoslide = {
 
@@ -34,7 +33,7 @@ ui.photoslide = {
 
 };
 
-(function () {
+(() => {
 
     var
         count,
@@ -187,7 +186,7 @@ ui.photoslide = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.photoslide.Start);
 
     // ajax callback loader
@@ -202,4 +201,4 @@ ui.photoslide = {
 
         });
 
-}());
+})();

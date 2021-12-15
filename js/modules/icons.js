@@ -1,7 +1,6 @@
-/*
- UI Icons JS
- Requires UI Core JS
-*/
+// icosn
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.icons = {
 
@@ -16,7 +15,7 @@ ui.icons = {
 
 };
 
-(function () {
+(() => {
 
     ui.icons.Start = function () {
 
@@ -72,7 +71,7 @@ ui.icons = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.icons.Start);
 
     // ajax callback loader
@@ -87,4 +86,4 @@ ui.icons = {
 
         });
 
-}());
+})();

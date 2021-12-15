@@ -1,7 +1,6 @@
-/*
- UI Photo Gallery JS
- Requires UI Core JS
-*/
+// gallery
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.photoGallery = {
 
@@ -75,7 +74,7 @@ ui.photoGallery = {
 
 };
 
-(function () {
+(() => {
 
     var
         imgTouchmove,
@@ -788,7 +787,7 @@ ui.photoGallery = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.photoGallery.Start);
 
-}());
+})();

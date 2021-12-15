@@ -1,7 +1,6 @@
-/*
- UI Header Sticky JS
- Requires UI Core JS
-*/
+// header sticky
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.headerSticky = {
 
@@ -21,7 +20,7 @@ ui.headerSticky = {
 
 };
 
-(function () {
+(() => {
 
     var
         stickyLoad,
@@ -110,10 +109,10 @@ ui.headerSticky = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.headerSticky.Start);
 
     ui.on(window, 'scroll', stickyLoad);
     ui.on(document, ui.globals.eventDomChange, stickyLoad);
 
-}());
+})();

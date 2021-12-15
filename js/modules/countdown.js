@@ -1,7 +1,6 @@
-/*
- UI Countdown JS
- Requires UI Core JS
-*/
+// countdown
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.countdown = {
 
@@ -15,7 +14,7 @@ ui.countdown = {
     nameSecond: 'ui-countdown-sec'
 };
 
-(function () {
+(() => {
 
     var countdownTimer;
 
@@ -129,7 +128,7 @@ ui.countdown = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.countdown.Start);
 
     // ajax callback loader
@@ -144,4 +143,4 @@ ui.countdown = {
 
         });
 
-}());
+})();

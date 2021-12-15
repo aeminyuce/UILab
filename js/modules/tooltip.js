@@ -1,7 +1,6 @@
-/*
- UI Tooltip JS
- Requires UI Core JS
-*/
+// tooltip
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.tooltip = {
 
@@ -46,7 +45,7 @@ ui.tooltip = {
 
 };
 
-(function () {
+(() => {
 
     var
         removeTimer,
@@ -328,7 +327,7 @@ ui.tooltip = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.tooltip.Start);
 
-}());
+})();

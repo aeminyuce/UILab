@@ -1,7 +1,6 @@
-/*
- UI Calendar JS
- Requires UI Core JS
-*/
+// calendar
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.calendar = {
 
@@ -97,7 +96,7 @@ ui.calendar = {
 
 };
 
-(function () {
+(() => {
 
     // first loading
     ui.calendar.Start = function () {
@@ -969,7 +968,7 @@ ui.calendar = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.calendar.Start);
 
     // ajax callback loader
@@ -984,4 +983,4 @@ ui.calendar = {
 
         });
 
-}());
+})();

@@ -1,7 +1,6 @@
-/*
- UI Forms JS
- Requires UI Core JS
-*/
+// forms
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.forms = {
 
@@ -45,7 +44,7 @@ ui.forms = {
 
 };
 
-(function () {
+(() => {
 
     var clearForms;
 
@@ -380,7 +379,7 @@ ui.forms = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.forms.Start);
 
     // ajax callback loader
@@ -395,4 +394,4 @@ ui.forms = {
 
         });
 
-}());
+})();

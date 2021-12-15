@@ -1,7 +1,6 @@
-/*
- UI Top Button JS
- Requires UI Core JS
-*/
+// top button
+import { ui } from './../core.js';
+export default () => ui;
 
 ui.topButton = {
 
@@ -24,7 +23,7 @@ ui.topButton = {
 
 };
 
-(function () {
+(() => {
 
     function togglerFnc() {
 
@@ -89,10 +88,10 @@ ui.topButton = {
 
     };
 
-    // Loaders
+    // loaders
     ui.onload(ui.topButton.Start);
 
     ui.on(window, 'resize scroll', togglerFnc);
     ui.on(document, ui.globals.eventDomChange, togglerFnc);
 
-}());
+})();
