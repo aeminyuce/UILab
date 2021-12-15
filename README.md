@@ -1,6 +1,4 @@
-### UI lab is a modular design system for developing web interfaces fastly!
-
-#### Installed packages:
+### Installed packages:
 ```
 // Less
 npm i -D less

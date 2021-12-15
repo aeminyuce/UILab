@@ -1,12 +1,5 @@
 {
-  "name": "uilab",
-  "title": "UI lab",
-  "description": "UI lab is a modular design system for developing web interfaces fastly!",
-  "version": "1.0.0",
-  "license": "MIT",
-  "style": "dist/css/ui.css",
-  "less": "less/ui.less",
-  "main": "dist/js/ui.js",
+  "name": "ui",
   "scripts": {
     "css-build": "npm run css & npm run css-helpers & npm run css-custom",
     "css": "lessc less/ui.less dist/css/ui.css",
@@ -22,8 +15,7 @@
     "css-product-listing": "lessc less/custom/product-listing.less dist/css/product-listing.css",
     "css-sign-up-page": "lessc less/custom/sign-up-page.less dist/css/sign-up-page.css",
     "js-build": "npm run js & npm run js-helpers & npm run js-custom",
-    "js": "babel js/core.js js/modules/*.js --out-file dist/js/ui.js --no-comments",
-    "js:dev": "babel js/core.js js/modules/*.js --out-file dist/js/ui.js --no-babelrc",
+    "js": "rollup js/ui.js --file dist/js/ui.js & babel dist/js/ui.js --out-file dist/js/ui.js --no-comments",
     "js-helpers": "npm run js-classnames & npm run js-iconlist",
     "js-classnames": "babel js/helpers/classnames.js --out-file dist/js/classnames.js --no-comments",
     "js-iconlist": "babel js/helpers/iconlist.js --out-file dist/js/iconlist.js --no-comments",
@@ -34,14 +26,6 @@
     "js-real-estate-details": "babel js/custom/real-estate-details.js --out-file dist/js/real-estate-details.js --no-comments",
     "js-useragents": "babel js/custom/useragents.js --out-file dist/js/useragents.js --no-comments"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aeminyuce/UILab.git"
-  },
-  "bugs": {
-    "url": "https://github.com/aeminyuce/UILab/issues"
-  },
-  "homepage": "https://github.com/aeminyuce/UILab#readme",
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
