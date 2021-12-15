@@ -1,4 +1,5 @@
-// donut chart
+/* donut chart */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

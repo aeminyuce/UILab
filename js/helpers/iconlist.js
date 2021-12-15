@@ -1,4 +1,5 @@
-// iconlist
+/* iconlist */
+
 ui.iconlist = {
 
     // targets

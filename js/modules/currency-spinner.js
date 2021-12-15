@@ -1,4 +1,5 @@
-// currency spinner
+/* currency spinner */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

@@ -1,4 +1,5 @@
-// card
+/* card */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

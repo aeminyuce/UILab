@@ -1,4 +1,5 @@
-// loading mask
+/* loading mask */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

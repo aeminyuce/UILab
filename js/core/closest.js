@@ -1,4 +1,5 @@
-// closest
+/* closest */
+
 import { ui } from './globals.js';
 export default () => ui;
 

@@ -1,4 +1,5 @@
-// alerts
+/* alerts */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

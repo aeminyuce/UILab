@@ -1,4 +1,5 @@
-// removeclass
+/* removeclass */
+
 import { ui } from './globals.js';
 export default () => ui;
 

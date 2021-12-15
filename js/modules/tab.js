@@ -1,4 +1,5 @@
-// tab
+/* tab */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

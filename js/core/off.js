@@ -1,4 +1,5 @@
-// off
+/* off */
+
 import { ui } from './globals.js';
 export default () => ui;
 

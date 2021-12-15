@@ -1,4 +1,5 @@
-// dual multi select
+/* dual multi select */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

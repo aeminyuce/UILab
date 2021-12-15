@@ -1,4 +1,5 @@
-// ajax
+/* ajax */
+
 import { ui } from './globals.js';
 export default () => ui;
 

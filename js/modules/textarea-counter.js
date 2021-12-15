@@ -1,4 +1,5 @@
-// textarea counter
+/* textarea counter */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

@@ -1,4 +1,5 @@
-// line chart
+/* line chart */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

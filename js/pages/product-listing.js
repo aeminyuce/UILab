@@ -1,3 +1,6 @@
+/* product listing */
+
+// settings
 ui.lineChart.rows = 4;
 ui.lineChart.rowsHeight = 36;
 
@@ -8,7 +11,9 @@ ui.lineChart.bottom = 10;
 ui.lineChart.showGrid = false;
 ui.lineChart.showInfo = false;
 
+// loader
 ui.onload(function () {
+
     ui.on('.product-list-load-more',
         'click',
 

@@ -1,4 +1,5 @@
-// hasclass
+/* hasclass */
+
 import { ui } from './globals.js';
 export default () => ui;
 

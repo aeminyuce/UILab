@@ -1,3 +1,6 @@
+/* useragents */
+
+// loader
 ui.onload(function () {
 
     setTimeout(function () {

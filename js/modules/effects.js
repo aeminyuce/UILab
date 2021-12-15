@@ -1,4 +1,5 @@
-// effects
+/* effects */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

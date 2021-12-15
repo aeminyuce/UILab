@@ -1,4 +1,5 @@
-// required forms
+/* required forms */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

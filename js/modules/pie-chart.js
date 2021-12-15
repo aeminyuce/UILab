@@ -1,4 +1,5 @@
-// pie chart
+/* pie chart */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

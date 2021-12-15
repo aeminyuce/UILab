@@ -1,4 +1,5 @@
-// map
+/* map */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

@@ -1,4 +1,5 @@
-// top button
+/* top button */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

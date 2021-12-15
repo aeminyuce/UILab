@@ -1,4 +1,5 @@
-// globals
+/* globals */
+
 export const ui = {
     globals: {
 

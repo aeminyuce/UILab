@@ -1,4 +1,5 @@
-// trigger
+/* trigger */
+
 import { ui } from './globals.js';
 export default () => ui;
 

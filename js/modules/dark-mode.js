@@ -1,4 +1,5 @@
-// dark mode
+/* dark mode */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

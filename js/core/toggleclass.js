@@ -1,4 +1,5 @@
-// toggleclass
+/* toggleclass */
+
 import { ui } from './globals.js';
 export default () => ui;
 

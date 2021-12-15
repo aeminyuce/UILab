@@ -1,4 +1,5 @@
-// dropdown
+/* dropdown */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 

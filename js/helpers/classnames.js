@@ -1,4 +1,5 @@
-// classnames
+/* classnames */
+
 ui.classnames = {
 
     // targets

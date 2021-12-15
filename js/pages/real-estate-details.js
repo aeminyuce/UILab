@@ -1,3 +1,6 @@
+/* real estate details */
+
+// settings
 ui.lineChart.top = 18;
 ui.lineChart.left = 6;
 

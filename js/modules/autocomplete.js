@@ -1,4 +1,5 @@
-// autocomplete
+/* autocomplete */
+
 import { ui } from './../core/globals.js';
 export default () => ui;
 
