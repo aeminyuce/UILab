@@ -24,7 +24,12 @@
     "js-landing-page": "babel js/pages/landing-page.js --out-file dist/js/landing-page.js --no-comments",
     "js-product-listing": "babel js/pages/product-listing.js --out-file dist/js/product-listing.js --no-comments",
     "js-real-estate-details": "babel js/pages/real-estate-details.js --out-file dist/js/real-estate-details.js --no-comments",
-    "js-javascript": "babel js/pages/javascript.js --out-file dist/js/javascript.js --no-comments"
+    "js-javascript": "babel js/pages/javascript.js --out-file dist/js/javascript.js --no-comments",
+    "icon": "npm run icon:svgo & npm run icon:sprite",
+    "icon:svgo": "npm run icon:general & npm run icon:files",
+    "icon:general": "svgo -f icon/general",
+    "icon:files": "svgo -f icon/files",
+    "icon:sprite": "svgstore -o dist/icons.svg icon/*/*.svg --inline"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
@@ -34,6 +39,8 @@
     "@babel/preset-env": "^7.16.4",
     "eslint": "^8.4.1",
     "less": "^4.1.2",
-    "rollup": "^2.61.1"
+    "rollup": "^2.61.1",
+    "svgo": "^2.8.0",
+    "svgstore-cli": "^2.0.1"
   }
 }
