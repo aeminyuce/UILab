@@ -49,19 +49,19 @@
             <div class="ui-row ui-sm-fluid ui-p-30-b ui-ease-2nd-form">
                 <div class="ui-col-12">
                     <div class="ui-calendar-picker ui-input ui-form-icon-l ui-round ui-border-dual ui-form-inline-xs">
-                        <svg class="ui-icon"><use href="../icon/set.svg#calendar"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#calendar"/></svg>
                         <input type="text">
                     </div>
                 </div>
                 <div class="ui-col-6">
                     <div class="ui-calendar-picker ui-input ui-form-icon-l ui-round ui-border-dual">
-                        <svg class="ui-icon"><use href="../icon/set.svg#calendar"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#calendar"/></svg>
                         <input type="text">
                     </div>
                 </div>
                 <div class="ui-col-6">
                     <div class="ui-calendar-picker ui-input ui-form-icon-l ui-round ui-border-dual">
-                        <svg class="ui-icon"><use href="../icon/set.svg#calendar"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#calendar"/></svg>
                         <input type="text">
                     </div>
                 </div>
@@ -71,13 +71,13 @@
             <div class="ui-row ui-sm-fluid ui-p-30-b ui-form-lg ui-ease-2nd-form">
                 <div class="ui-col-6">
                     <div class="ui-calendar-picker ui-input ui-form-icon-l ui-round ui-border-dual">
-                        <svg class="ui-icon"><use href="../icon/set.svg#calendar"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#calendar"/></svg>
                         <input type="text" value="2/5/2016">
                     </div>
                 </div>
                 <div class="ui-col-6">
                     <div class="ui-calendar-picker ui-input ui-form-icon-l ui-round ui-border-dual">
-                        <svg class="ui-icon"><use href="../icon/set.svg#calendar"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#calendar"/></svg>
                         <input type="text" value="02/05/2016">
                     </div>
                 </div>

@@ -18,12 +18,10 @@ ui.iconlist = {
     stylesToolActive: 'ui-fill-dark-100',
     stylesTotal: 'ui-font-16 ui-m-5-v ui-block ui-opacity-half',
 
-    stylesIconWeights: 'ui-icons-bold ui-icons-semibold ui-icons-light ui-icons-thin',
     stylesIconSizes: 'ui-icons-xxl ui-icons-xl ui-icons-lg ui-icons-sm ui-icons-xs',
 
     // data attributes
     dataSize: 'data-ui-size',
-    dataWeight: 'data-ui-weight',
 
     // messages
     msgTotal: 'Total icons',
@@ -48,7 +46,7 @@ ui.iconlist = {
 
             function () {
 
-                var that, buttons, size, weight;
+                var that, buttons, size;
 
                 that = this;
 
@@ -67,18 +65,6 @@ ui.iconlist = {
 
                     if (size !== '') {
                         ui.addClass(list, ui.iconlist.nameIconsPrefix + size);
-                    }
-
-                }
-
-                // change weight
-                weight = this.getAttribute(ui.iconlist.dataWeight);
-                if (weight !== null) {
-
-                    ui.removeClass(list, ui.iconlist.stylesIconWeights);
-
-                    if (weight !== '') {
-                        ui.addClass(list, ui.iconlist.nameIconsPrefix + weight);
                     }
 
                 }

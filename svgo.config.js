@@ -10,7 +10,7 @@ module.exports = { // https://github.com/svg/svgo
 
         {
             name: 'removeAttrs',
-            params: { attrs: '(class|id|data-name)' }
+            params: { attrs: '(class|id|data-name|fill|stroke|stroke-linecap|stroke-linejoin|stroke-width)' }
         },
         {
             name: 'cleanupNumericValues',

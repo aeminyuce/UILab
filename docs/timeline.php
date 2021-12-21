@@ -11,7 +11,7 @@
                     </li>
                     <li>
                         <span class="ui-avatar ui-circle ui-shadow-lg ui-theme-orange ui-fill-dark-100">
-                            <svg class="ui-icon ui-color-white"><use href="../icon/set.svg#calendar"/></svg>
+                            <svg class="ui-icon ui-color-white"><use href="../dist/icons.svg#calendar"/></svg>
                         </span>
                         <span class="ui-card ui-round ui-fill-dark-100">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span>
                     </li>
@@ -25,19 +25,19 @@
                 <ul class="ui-timeline ui-font-16 ui-theme-sub ui-text">
                     <li>
                         <span class="ui-avatar-sm ui-circle ui-fill-dark-100">
-                            <svg class="ui-icon ui-color-white"><use href="../icon/set.svg#user"/></svg>
+                            <svg class="ui-icon ui-color-white"><use href="../dist/icons.svg#user"/></svg>
                         </span>
                         <span class="ui-card ui-border-dual ui-round ui-stroke ui-shadow-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque. </span>
                     </li>
                     <li>
                         <span class="ui-avatar-sm ui-circle ui-fill-dark-100">
-                            <svg class="ui-icon ui-color-white"><use href="../icon/set.svg#heart"/></svg>
+                            <svg class="ui-icon ui-color-white"><use href="../dist/icons.svg#heart"/></svg>
                         </span>
                         <span class="ui-card ui-border-dual ui-round ui-stroke ui-shadow-lg">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span>
                     </li>
                     <li>
                         <span class="ui-avatar-sm ui-circle ui-fill-dark-100">
-                            <svg class="ui-icon ui-color-white"><use href="../icon/set.svg#flag"/></svg>
+                            <svg class="ui-icon ui-color-white"><use href="../dist/icons.svg#flag"/></svg>
                         </span>
                         <span class="ui-card ui-border-dual ui-round ui-stroke ui-shadow-lg">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span>
                     </li>
@@ -103,7 +103,7 @@
                     </li>
                     <li>
                         <span class="ui-avatar ui-circle ui-shadow-lg ui-theme-orange ui-fill-dark-100">
-                            <svg class="ui-icon ui-color-white"><use href="../icon/set.svg#calendar"/></svg>
+                            <svg class="ui-icon ui-color-white"><use href="../dist/icons.svg#calendar"/></svg>
                         </span>
                         <span class="ui-card ui-round ui-fill-dark-100">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span>
                     </li>

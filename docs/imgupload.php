@@ -14,12 +14,12 @@
                             <div class="ui-file ui-no-border ui-inline-block ui-round ui-ease-form">
                                 <input class="ui-bg-white ui-cursor-pointer" type="file" name="images[]" multiple>
                                 <span class="ui-btn ui-btn-square ui-theme-green ui-fill-dark-100 ui-ease-btn">
-                                    <svg class="ui-icon ui-no-opacity"><use href="../icon/set.svg#plus"/></svg>
+                                    <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#plus"/></svg>
                                 </span>
                             </div>
 
                             <button title="Send Images" type="submit" name="send" class="ui-btn ui-btn-square ui-round ui-theme-base ui-fill-dark-100 ui-ease-btn">
-                                <svg class="ui-icon"><use href="../icon/set.svg#send"/></svg>
+                                <svg class="ui-icon"><use href="../dist/icons.svg#send"/></svg>
                             </button>
 
                         </div>
@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="ui-imgupload-list">
-                    <svg class="ui-icon ui-icon-xxl"><use href="../icon/set.svg#images-plus"/></svg>
+                    <svg class="ui-icon ui-icon-xxl"><use href="../dist/icons.svg#images-plus"/></svg>
                     <ul>
 
                         <!-- image ratio: 16:9-->

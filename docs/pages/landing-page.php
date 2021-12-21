@@ -19,14 +19,14 @@
                             <div class="ui-hidden-sm">
                                 <div class="ui-ease-1st-btn ui-icons-no-opacity ui-form-lg ui-sidebar-add-r">
                                     <a href="#" class="ui-btn ui-btn-sm-fluid ui-btn-ghost">
-                                        <svg class="ui-icon ui-m-5-r ui-visible-sm"><use href="../icon/set.svg#home"/></svg>
+                                        <svg class="ui-icon ui-m-5-r ui-visible-sm"><use href="../dist/icons.svg#home"/></svg>
                                         Home
                                     </a>
                                     <div class="ui-dropdown ui-ease-dropdown">
                                         <button class="ui-btn ui-btn-sm-fluid ui-btn-ghost">
-                                            <svg class="ui-icon ui-m-5-r ui-visible-sm"><use href="../icon/set.svg#box"/></svg>
+                                            <svg class="ui-icon ui-m-5-r ui-visible-sm"><use href="../dist/icons.svg#box"/></svg>
                                             Products
-                                            <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="../icon/set.svg#angle-down"/></svg>
+                                            <svg class="ui-toggle-icon ui-icon ui-m-5-l"><use href="../dist/icons.svg#angle-down"/></svg>
                                         </button>
                                         <ul class="ui-dropdown-menu ui-shadow-lg">
                                             <li><a href="#">Gardening</a></li>
@@ -38,27 +38,27 @@
                                         </ul>
                                     </div>
                                     <a class="ui-btn ui-btn-sm-fluid ui-btn-ghost" href="#">
-                                        <svg class="ui-icon ui-m-5-r ui-visible-sm"><use href="../icon/set.svg#coins"/></svg>
+                                        <svg class="ui-icon ui-m-5-r ui-visible-sm"><use href="../dist/icons.svg#coins"/></svg>
                                         Pricing
                                     </a>
                                     <a class="ui-btn ui-btn-sm-fluid ui-btn-ghost" href="#">
-                                        <svg class="ui-icon ui-m-5-r ui-visible-sm"><use href="../icon/set.svg#envelope-open"/></svg>
+                                        <svg class="ui-icon ui-m-5-r ui-visible-sm"><use href="../dist/icons.svg#envelope-open"/></svg>
                                         Contact
                                     </a>
 
                                     <span class="ui-sp-15 ui-visible-sm"></span>
 
                                     <a title="Login" class="ui-btn ui-btn-square ui-fill-dark-100" href="#">
-                                        <svg class="ui-icon"><use href="../icon/set.svg#sign-in"/></svg>
+                                        <svg class="ui-icon"><use href="../dist/icons.svg#sign-in"/></svg>
                                     </a>
                                     <a title="Sign Up" class="ui-btn ui-btn-square ui-theme-base ui-fill-dark-100" href="#">
-                                        <svg class="ui-icon"><use href="../icon/set.svg#user-plus"/></svg>
+                                        <svg class="ui-icon"><use href="../dist/icons.svg#user-plus"/></svg>
                                     </a>
                                 </div>
                             </div>
 
                             <button class="ui-btn ui-btn-lg ui-btn-square ui-btn-ghost ui-text ui-ease-btn ui-sidebar-show-r ui-visible-sm">
-                                <svg class="ui-icon ui-no-opacity"><use href="../icon/set.svg#bars"/></svg>
+                                <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#bars"/></svg>
                             </button>
 
                         </div>
@@ -80,15 +80,15 @@
             <div class="ui-row ui-no-row-gap-v ui-icons-no-opacity ui-icons-m-5-r">
                 <div class="ui-col-12 ui-color-black-50 ui-align-c ui-ease-1st-btn">
                     <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-m-1-b ui-border-b ui-text ui-border-lg ui-stroke ui-active">
-                        <svg class="ui-icon"><use href="../icon/set.svg#factory"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#factory"/></svg>
                         Long Term Investment
                     </button>
                     <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-m-1-b ui-border-b">
-                        <svg class="ui-icon"><use href="../icon/set.svg#network"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#network"/></svg>
                         Connect with Our Farmers
                     </button>
                     <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-m-1-b ui-border-b">
-                        <svg class="ui-icon"><use href="../icon/set.svg#user-circle"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#user-circle"/></svg>
                         Social Impact Investment
                     </button>
                 </div>
@@ -106,7 +106,7 @@
                                 <h2 class="ui-h2 ui-font-48 ui-font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="ui-highlight ui-font-22 ui-color-white-50 ui-font-readable">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="ui-btn ui-btn-xs-fluid ui-fill-dark-100 ui-ease-btn">
-                                    <svg class="ui-icon ui-m-5-r"><use href="../icon/set.svg#moneys"/></svg>
+                                    <svg class="ui-icon ui-m-5-r"><use href="../dist/icons.svg#moneys"/></svg>
                                     <b>Invest Now</b>
                                 </a>
 
@@ -117,13 +117,13 @@
                             <div class="landing-page-banner-slogan ui-p-15 ui-set-relative">
                                 <div class="ui-align-c ui-p-15 ui-set-relative ui-shadow-lg">
                                     <span class="ui-sp-15"></span>
-                                    <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="../icon/set.svg#factory"/></svg>
+                                    <svg class="ui-icon ui-icon-xxl"><use href="../dist/icons.svg#factory"/></svg>
                                     <span class="ui-sp-30 ui-hidden-md"></span>
                                     <h3 class="ui-h3 ui-font-bold">Long term investment</h3>
                                     <p class="ui-highlight ui-font-18">Our consider terms that have long term investment program nowZ.</p>
                                     <a href="#" class="ui-btn ui-block ui-theme-sub ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
-                                        <svg class="ui-icon ui-m-5-l"><use href="../icon/set.svg#long-arrow-right"/></svg>
+                                        <svg class="ui-icon ui-m-5-l"><use href="../dist/icons.svg#long-arrow-right"/></svg>
                                     </a>
                                 </div>
                             </div>
@@ -144,7 +144,7 @@
                                 <h2 class="ui-h2 ui-font-48 ui-font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="ui-highlight ui-font-22 ui-color-white-50 ui-font-readable">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="ui-btn ui-btn-xs-fluid ui-fill-dark-100 ui-ease-btn">
-                                    <svg class="ui-icon ui-m-5-r"><use href="../icon/set.svg#moneys"/></svg>
+                                    <svg class="ui-icon ui-m-5-r"><use href="../dist/icons.svg#moneys"/></svg>
                                     <b>Invest Now</b>
                                 </a>
 
@@ -155,13 +155,13 @@
                             <div class="landing-page-banner-slogan ui-p-15 ui-set-relative">
                                 <div class="ui-align-c ui-p-15 ui-set-relative ui-shadow-lg">
                                     <span class="ui-sp-15"></span>
-                                    <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="../icon/set.svg#network"/></svg>
+                                    <svg class="ui-icon ui-icon-xxl"><use href="../dist/icons.svg#network"/></svg>
                                     <span class="ui-sp-30"></span>
                                     <h3 class="ui-h3 ui-font-bold">Connect with Our Farmers</h3>
                                     <p class="ui-highlight ui-font-18">Our consider terms that have long term investment program now.</p>
                                     <a href="#" class="ui-btn ui-block ui-theme-sub ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
-                                        <svg class="ui-icon ui-m-5-l"><use href="../icon/set.svg#long-arrow-right"/></svg>
+                                        <svg class="ui-icon ui-m-5-l"><use href="../dist/icons.svg#long-arrow-right"/></svg>
                                     </a>
                                 </div>
                             </div>
@@ -182,7 +182,7 @@
                                 <h2 class="ui-h2 ui-font-48 ui-font-bold">A New Way to Invest<br>in Agriculture</h2>
                                 <p class="ui-highlight ui-font-22 ui-color-white-50 ui-font-readable">We provides farmers, ranchers, private forecasters and agricultural producers with online self service applications and aducational materials.</p>
                                 <a href="#" class="ui-btn ui-btn-xs-fluid ui-fill-dark-100 ui-ease-btn">
-                                    <svg class="ui-icon ui-m-5-r"><use href="../icon/set.svg#moneys"/></svg>
+                                    <svg class="ui-icon ui-m-5-r"><use href="../dist/icons.svg#moneys"/></svg>
                                     <b>Invest Now</b>
                                 </a>
 
@@ -193,13 +193,13 @@
                             <div class="landing-page-banner-slogan ui-p-15 ui-set-relative">
                                 <div class="ui-align-c ui-p-15 ui-set-relative ui-shadow-lg">
                                     <span class="ui-sp-15"></span>
-                                    <svg class="ui-icon ui-icon-xxl ui-icon-semibold"><use href="../icon/set.svg#user-circle"/></svg>
+                                    <svg class="ui-icon ui-icon-xxl"><use href="../dist/icons.svg#user-circle"/></svg>
                                     <span class="ui-sp-30"></span>
                                     <h3 class="ui-h3 ui-font-bold">Social Impact Investment</h3>
                                     <p class="ui-highlight ui-font-18">Our consider terms that have long term investment program now.</p>
                                     <a href="#" class="ui-btn ui-block ui-theme-sub ui-fill-dark-100 ui-ease-btn">
                                         <b>Learn more</b>
-                                        <svg class="ui-icon ui-m-5-l"><use href="../icon/set.svg#long-arrow-right"/></svg>
+                                        <svg class="ui-icon ui-m-5-l"><use href="../dist/icons.svg#long-arrow-right"/></svg>
                                     </a>
                                 </div>
                             </div>
@@ -222,7 +222,7 @@
                 <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
-                        <svg class="ui-icon ui-text"><use href="../icon/set.svg#leaf"/></svg>
+                        <svg class="ui-icon ui-text"><use href="../dist/icons.svg#leaf"/></svg>
                         <span class="ui-sp-20"></span>
                         <h3 class="ui-h3 ui-m-10-b">Planting</h3>
                         <p class="ui-highlight ui-font-16 ui-color-black-50">Complete range of lands caping services.</p>
@@ -233,7 +233,7 @@
                 <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
-                        <svg class="ui-icon ui-text"><use href="../icon/set.svg#wind-sock"/></svg>
+                        <svg class="ui-icon ui-text"><use href="../dist/icons.svg#wind-sock"/></svg>
                         <span class="ui-sp-20"></span>
                         <h3 class="ui-h3 ui-m-10-b">Garden Care</h3>
                         <p class="ui-highlight ui-font-16 ui-color-black-50">Resolving environmental problems with best results.</p>
@@ -244,7 +244,7 @@
                 <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
-                        <svg class="ui-icon ui-text"><use href="../icon/set.svg#water"/></svg>
+                        <svg class="ui-icon ui-text"><use href="../dist/icons.svg#water"/></svg>
                         <span class="ui-sp-20"></span>
                         <h3 class="ui-h3 ui-m-10-b">Irrigation System</h3>
                         <p class="ui-highlight ui-font-16 ui-color-black-50">Idea of denouncing pleasure and praising.</p>
@@ -255,7 +255,7 @@
                 <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
-                        <svg class="ui-icon ui-text"><use href="../icon/set.svg#land"/></svg>
+                        <svg class="ui-icon ui-text"><use href="../dist/icons.svg#land"/></svg>
                         <span class="ui-sp-20"></span>
                         <h3 class="ui-h3 ui-m-10-b">Hardscaping</h3>
                         <p class="ui-highlight ui-font-16 ui-color-black-50">Placing int the landscape with great pleasure.</p>
@@ -266,7 +266,7 @@
                 <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
-                        <svg class="ui-icon ui-text"><use href="../icon/set.svg#leaf"/></svg>
+                        <svg class="ui-icon ui-text"><use href="../dist/icons.svg#leaf"/></svg>
                         <span class="ui-sp-20"></span>
                         <h3 class="ui-h3 ui-m-10-b">Planting</h3>
                         <p class="ui-highlight ui-font-16 ui-color-black-50">Complete range of lands caping services.</p>
@@ -277,7 +277,7 @@
                 <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
-                        <svg class="ui-icon ui-text"><use href="../icon/set.svg#wind-sock"/></svg>
+                        <svg class="ui-icon ui-text"><use href="../dist/icons.svg#wind-sock"/></svg>
                         <span class="ui-sp-20"></span>
                         <h3 class="ui-h3 ui-m-10-b">Garden Care</h3>
                         <p class="ui-highlight ui-font-16 ui-color-black-50">Resolving environmental problems with best results.</p>
@@ -288,7 +288,7 @@
                 <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
-                        <svg class="ui-icon ui-text"><use href="../icon/set.svg#water"/></svg>
+                        <svg class="ui-icon ui-text"><use href="../dist/icons.svg#water"/></svg>
                         <span class="ui-sp-20"></span>
                         <h3 class="ui-h3 ui-m-10-b">Irrigation System</h3>
                         <p class="ui-highlight ui-font-16 ui-color-black-50">Idea of denouncing pleasure and praising.</p>
@@ -299,7 +299,7 @@
                 <div class="ui-carousel-content ui-p-15">
                     <div class="ui-card ui-p-15 ui-full-h ui-shadow-lg ui-ease-layout">
                         <span class="ui-sp-15"></span>
-                        <svg class="ui-icon ui-text"><use href="../icon/set.svg#land"/></svg>
+                        <svg class="ui-icon ui-text"><use href="../dist/icons.svg#land"/></svg>
                         <span class="ui-sp-20"></span>
                         <h3 class="ui-h3 ui-m-10-b">Hardscaping</h3>
                         <p class="ui-highlight ui-font-16 ui-color-black-50">Placing int the landscape with great pleasure.</p>
@@ -310,11 +310,11 @@
             </div>
             <div class="ui-carousel-nav ui-m-10-t ui-icons-no-opacity ui-ease-1st-btn">
                 <button class="ui-carousel-prev ui-btn ui-btn-square ui-btn-ghost ui-fill-dark-100">
-                    <svg class="ui-icon ui-text"><use href="../icon/set.svg#angle-left"/></svg>
+                    <svg class="ui-icon ui-text"><use href="../dist/icons.svg#angle-left"/></svg>
                 </button>
                 <span class="ui-carousel-dots ui-text"></span>
                 <button class="ui-carousel-next ui-btn ui-btn-square ui-btn-ghost ui-fill-dark-100">
-                    <svg class="ui-icon ui-text"><use href="../icon/set.svg#angle-right"/></svg>
+                    <svg class="ui-icon ui-text"><use href="../dist/icons.svg#angle-right"/></svg>
                 </button>
             </div>
         </div>
@@ -338,15 +338,15 @@
                 <div class="ui-row ui-no-row-gap-v ui-icons-no-opacity ui-icons-m-5-r">
                     <div class="ui-col-12 ui-color-black-50 ui-align-c ui-ease-1st-btn">
                         <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-border-b ui-text ui-border-lg ui-stroke ui-active">
-                            <svg class="ui-icon"><use href="../icon/set.svg#building"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#building"/></svg>
                             Company
                         </button>
                         <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-border-b">
-                            <svg class="ui-icon"><use href="../icon/set.svg#comments"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#comments"/></svg>
                             Social
                         </button>
                         <button class="ui-tab ui-btn ui-btn-xs-fluid ui-btn-ghost ui-border-b">
-                            <svg class="ui-icon"><use href="../icon/set.svg#users"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#users"/></svg>
                             Customers
                         </button>
                     </div>
@@ -368,13 +368,13 @@
                             </span>
 
                             <span class="ui-font-12 ui-color-black-25 ui-border-t ui-p-10 ui-block ui-inline-block-1st">
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#clock"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#clock"/></svg>
                                 <b class="ui-m-10-r">SEPTEMBER 30, 2019</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#eye"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#eye"/></svg>
                                 <b class="ui-m-10-r">116</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#comment"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#comment"/></svg>
                                 <b>2</b>
                             </span>
 
@@ -392,13 +392,13 @@
                             </span>
 
                             <span class="ui-font-12 ui-color-black-25 ui-border-t ui-p-10 ui-block ui-inline-block-1st">
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#clock"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#clock"/></svg>
                                 <b class="ui-m-10-r">SEPTEMBER 21, 2019</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#eye"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#eye"/></svg>
                                 <b class="ui-m-10-r">147</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#comment"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#comment"/></svg>
                                 <b>8</b>
                             </span>
 
@@ -416,13 +416,13 @@
                             </span>
 
                             <span class="ui-font-12 ui-color-black-25 ui-border-t ui-p-10 ui-block ui-inline-block-1st">
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#clock"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#clock"/></svg>
                                 <b class="ui-m-10-r">SEPTEMBER 09, 2019</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#eye"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#eye"/></svg>
                                 <b class="ui-m-10-r">205</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#comment"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#comment"/></svg>
                                 <b>12</b>
                             </span>
 
@@ -440,13 +440,13 @@
                             </span>
 
                             <span class="ui-font-12 ui-color-black-25 ui-border-t ui-p-10 ui-block ui-inline-block-1st">
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#clock"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#clock"/></svg>
                                 <b class="ui-m-10-r">SEPTEMBER 01, 2019</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#eye"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#eye"/></svg>
                                 <b class="ui-m-10-r">279</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#comment"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#comment"/></svg>
                                 <b>19</b>
                             </span>
 
@@ -455,7 +455,7 @@
                 </div>
                 <div class="ui-align-c ui-p-30-t ui-p-10-b">
                     <a href="#" class="ui-btn ui-btn-xs-fluid ui-theme-sub ui-fill-dark-100 ui-ease-btn">
-                        <b>View all company news</b> <svg class="ui-icon ui-m-5-l"><use href="../icon/set.svg#long-arrow-right"/></svg>
+                        <b>View all company news</b> <svg class="ui-icon ui-m-5-l"><use href="../dist/icons.svg#long-arrow-right"/></svg>
                     </a>
                 </div>
             </div>
@@ -473,13 +473,13 @@
                             </span>
 
                             <span class="ui-font-12 ui-color-black-25 ui-border-t ui-p-10 ui-block ui-inline-block-1st">
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#clock"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#clock"/></svg>
                                 <b class="ui-m-10-r">SEPTEMBER 21, 2019</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#eye"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#eye"/></svg>
                                 <b class="ui-m-10-r">147</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#comment"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#comment"/></svg>
                                 <b>8</b>
                             </span>
 
@@ -497,13 +497,13 @@
                             </span>
 
                             <span class="ui-font-12 ui-color-black-25 ui-border-t ui-p-10 ui-block ui-inline-block-1st">
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#clock"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#clock"/></svg>
                                 <b class="ui-m-10-r">SEPTEMBER 09, 2019</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#eye"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#eye"/></svg>
                                 <b class="ui-m-10-r">205</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#comment"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#comment"/></svg>
                                 <b>12</b>
                             </span>
 
@@ -521,13 +521,13 @@
                             </span>
 
                             <span class="ui-font-12 ui-color-black-25 ui-border-t ui-p-10 ui-block ui-inline-block-1st">
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#clock"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#clock"/></svg>
                                 <b class="ui-m-10-r">SEPTEMBER 01, 2019</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#eye"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#eye"/></svg>
                                 <b class="ui-m-10-r">279</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#comment"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#comment"/></svg>
                                 <b>19</b>
                             </span>
 
@@ -545,13 +545,13 @@
                             </span>
 
                             <span class="ui-font-12 ui-color-black-25 ui-border-t ui-p-10 ui-block ui-inline-block-1st">
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#clock"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#clock"/></svg>
                                 <b class="ui-m-10-r">SEPTEMBER 30, 2019</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#eye"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#eye"/></svg>
                                 <b class="ui-m-10-r">116</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#comment"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#comment"/></svg>
                                 <b>2</b>
                             </span>
 
@@ -560,7 +560,7 @@
                 </div>
                 <div class="ui-align-c ui-p-30-t ui-p-10-b">
                     <a href="#" class="ui-btn ui-btn-xs-fluid ui-theme-sub ui-fill-dark-100 ui-ease-btn">
-                        <b>View all social news</b> <svg class="ui-icon ui-m-5-l"><use href="../icon/set.svg#long-arrow-right"/></svg>
+                        <b>View all social news</b> <svg class="ui-icon ui-m-5-l"><use href="../dist/icons.svg#long-arrow-right"/></svg>
                     </a>
                 </div>
             </div>
@@ -578,13 +578,13 @@
                             </span>
 
                             <span class="ui-font-12 ui-color-black-25 ui-border-t ui-p-10 ui-block ui-inline-block-1st">
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#clock"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#clock"/></svg>
                                 <b class="ui-m-10-r">SEPTEMBER 21, 2019</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#eye"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#eye"/></svg>
                                 <b class="ui-m-10-r">147</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#comment"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#comment"/></svg>
                                 <b>8</b>
                             </span>
 
@@ -602,13 +602,13 @@
                             </span>
 
                             <span class="ui-font-12 ui-color-black-25 ui-border-t ui-p-10 ui-block ui-inline-block-1st">
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#clock"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#clock"/></svg>
                                 <b class="ui-m-10-r">SEPTEMBER 30, 2019</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#eye"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#eye"/></svg>
                                 <b class="ui-m-10-r">116</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#comment"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#comment"/></svg>
                                 <b>2</b>
                             </span>
 
@@ -626,13 +626,13 @@
                             </span>
 
                             <span class="ui-font-12 ui-color-black-25 ui-border-t ui-p-10 ui-block ui-inline-block-1st">
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#clock"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#clock"/></svg>
                                 <b class="ui-m-10-r">SEPTEMBER 01, 2019</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#eye"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#eye"/></svg>
                                 <b class="ui-m-10-r">279</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#comment"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#comment"/></svg>
                                 <b>19</b>
                             </span>
 
@@ -650,13 +650,13 @@
                             </span>
 
                             <span class="ui-font-12 ui-color-black-25 ui-border-t ui-p-10 ui-block ui-inline-block-1st">
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#clock"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#clock"/></svg>
                                 <b class="ui-m-10-r">SEPTEMBER 09, 2019</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#eye"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#eye"/></svg>
                                 <b class="ui-m-10-r">205</b>
 
-                                <svg class="ui-icon ui-m-2-r"><use href="../icon/set.svg#comment"/></svg>
+                                <svg class="ui-icon ui-m-2-r"><use href="../dist/icons.svg#comment"/></svg>
                                 <b>12</b>
                             </span>
 
@@ -665,7 +665,7 @@
                 </div>
                 <div class="ui-align-c ui-p-30-t ui-p-10-b">
                     <a href="#" class="ui-btn ui-btn-xs-fluid ui-theme-sub ui-fill-dark-100 ui-ease-btn">
-                        <b>View all customer news</b> <svg class="ui-icon ui-m-5-l"><use href="../icon/set.svg#long-arrow-right"/></svg>
+                        <b>View all customer news</b> <svg class="ui-icon ui-m-5-l"><use href="../dist/icons.svg#long-arrow-right"/></svg>
                     </a>
                 </div>
             </div>
@@ -691,7 +691,7 @@
                             <img src="img/agriculture/md01.jpg" alt="">
                             <span class="ui-font-18 ui-font-readable">
                                 <span class="ui-scroll-v ui-m-20 ui-set-absolute ui-set-all">
-                                    <svg class="ui-icon ui-icon-xxl ui-float-l ui-m-20-r ui-hidden-md ui-text"><use href="../icon/set.svg#trees"/></svg>
+                                    <svg class="ui-icon ui-icon-xxl ui-float-l ui-m-20-r ui-hidden-md ui-text"><use href="../dist/icons.svg#trees"/></svg>
                                     <b>Sed nunc mauris, auctor tristique libero non tristique.</b>
                                     <span class="ui-m-15-t ui-block">
                                         Nullam mollis molestie magna nec tincidunt. Phasellus mattis aliquet ex, vel gravida dui elementum ut. Ut euismod nisi in tellus luctus dictum et ut nulla. Sed scelerisque rutrum dui, et suscipit diam sagittis quis. Quisque dapibus varius ornare.
@@ -787,7 +787,7 @@
                         </p>
                         <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-theme-sub ui-fill-dark-100 ui-ease-btn">
                             <b>View all statistics</b>
-                            <svg class="ui-icon ui-m-5-l"><use href="../icon/set.svg#long-arrow-right"/></svg>
+                            <svg class="ui-icon ui-m-5-l"><use href="../dist/icons.svg#long-arrow-right"/></svg>
                         </a>
                     </div>
                 </div>
@@ -845,25 +845,25 @@
                             <h4 class="ui-h4 ui-m-15-b">Social</h4>
                             <div class="ui-align-c ui-form-lg ui-ease-1st-btn">
                                 <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
-                                    <svg class="ui-icon"><use href="../icon/set.svg#facebook"/></svg>
+                                    <svg class="ui-icon"><use href="../dist/icons.svg#facebook"/></svg>
                                 </a>
                                 <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
-                                    <svg class="ui-icon"><use href="../icon/set.svg#twitter"/></svg>
+                                    <svg class="ui-icon"><use href="../dist/icons.svg#twitter"/></svg>
                                 </a>
                                 <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
-                                    <svg class="ui-icon"><use href="../icon/set.svg#instagram"/></svg>
+                                    <svg class="ui-icon"><use href="../dist/icons.svg#instagram"/></svg>
                                 </a>
                                 <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
-                                    <svg class="ui-icon"><use href="../icon/set.svg#linkedin"/></svg>
+                                    <svg class="ui-icon"><use href="../dist/icons.svg#linkedin"/></svg>
                                 </a>
                                 <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
-                                    <svg class="ui-icon"><use href="../icon/set.svg#google"/></svg>
+                                    <svg class="ui-icon"><use href="../dist/icons.svg#google"/></svg>
                                 </a>
                                 <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
-                                    <svg class="ui-icon"><use href="../icon/set.svg#whatsapp"/></svg>
+                                    <svg class="ui-icon"><use href="../dist/icons.svg#whatsapp"/></svg>
                                 </a>
                                 <a class="ui-btn ui-btn-ghost ui-btn-square" href="#" target="_blank">
-                                    <svg class="ui-icon"><use href="../icon/set.svg#youtube"/></svg>
+                                    <svg class="ui-icon"><use href="../dist/icons.svg#youtube"/></svg>
                                 </a>
                             </div>
 
@@ -883,7 +883,7 @@
                                     </div>
                                     <div class="ui-col-48">
                                         <button class="ui-btn ui-btn-square ui-theme-sub ui-fill-dark-100 ui-ease-btn">
-                                            <svg class="ui-icon"><use href="../icon/set.svg#send"/></svg>
+                                            <svg class="ui-icon"><use href="../dist/icons.svg#send"/></svg>
                                         </button>
                                     </div>
                                 </div>
@@ -904,7 +904,7 @@
 <div class="ui-sidebar ui-sidebar-r ui-round ui-ease-layout ui-ease-in-out">
     <div class="ui-sidebar-title ui-border-b">
         <button class="ui-btn ui-btn-square ui-btn-lg ui-btn-ghost ui-ease-btn ui-sidebar-close">
-            <svg class="ui-icon ui-no-opacity"><use href="../icon/set.svg#remove"/></svg>
+            <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#remove"/></svg>
         </button>
         <a href="#">
             <img class="ui-m-5-v" src="img/agriculture/logo.png" alt="" srcset="img/agriculture/logo@2x.png 2x">

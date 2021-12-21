@@ -47,9 +47,9 @@ ui.datatable = {
     nameNext: 'ui-paging-next',
 
     // icons
-    sortIcon : 'sort-fill',
-    ascIcon : 'sort-up-fill',
-    descIcon : 'sort-down-fill',
+    sortIcon : 'sort',
+    ascIcon : 'sort-up',
+    descIcon : 'sort-down',
 
     prevIcon : 'angle-left',
     nextIcon : 'angle-right',

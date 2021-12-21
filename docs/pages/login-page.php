@@ -13,7 +13,7 @@
 
                     <label class="ui-form-label ui-color-black-50">User Name</label>
                     <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
-                        <svg class="ui-icon"><use href="../icon/set.svg#user"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#user"/></svg>
                         <input class="ui-required" type="text" placeholder="Enter user name" minlength="3" autofocus>
                     </div>
                     <p class="ui-required-msg">Enter user name.</p>
@@ -23,7 +23,7 @@
                     <label class="ui-form-label ui-color-black-50">Password</label>
                     <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
                         <button type="button" title="Toggle Password" class="ui-pass-toggle">
-                            <svg class="ui-icon"><use href="../icon/set.svg#eye-fill"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#eye"/></svg>
                         </button>
                         <input class="ui-required" type="password" placeholder="Enter password" minlength="8">
                     </div>
@@ -46,7 +46,7 @@
                     </button>
                     <span class="ui-sp-15"></span>
                     <button class="ui-tab ui-btn ui-btn-ghost ui-color-black-50 ui-round ui-block ui-ease-btn" data-ui-id="lostPasswordExample">
-                        <svg class="ui-icon ui-m-5-r ui-no-opacity"><use href="../icon/set.svg#lock"/></svg> Forgot password?
+                        <svg class="ui-icon ui-m-5-r ui-no-opacity"><use href="../dist/icons.svg#lock"/></svg> Forgot password?
                     </button>
 
                 </form>
@@ -58,7 +58,7 @@
 
                     <label class="ui-form-label ui-color-black-50">Your email</label>
                     <div class="ui-input ui-form-icon ui-round ui-border-dual ui-ease-form">
-                        <svg class="ui-icon"><use href="../icon/set.svg#at"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#at"/></svg>
                         <input class="ui-required" type="email" placeholder="Enter email">
                     </div>
                     <p class="ui-required-msg">Enter email.</p>
@@ -70,7 +70,7 @@
                     </button>
                     <span class="ui-sp-15"></span>
                     <button class="ui-tab ui-btn ui-btn-ghost ui-color-black-50 ui-round ui-block ui-ease-btn" data-ui-id="loginExample">
-                        <svg class="ui-icon ui-m-5-r ui-no-opacity"><use href="../icon/set.svg#long-arrow-left"/></svg> Back to login
+                        <svg class="ui-icon ui-m-5-r ui-no-opacity"><use href="../dist/icons.svg#long-arrow-left"/></svg> Back to login
                     </button>
 
                 </form>
@@ -91,11 +91,11 @@
                     </a>
                 </div>
 
-                <div class="login-icons ui-icons-default">
-                    <svg class="ui-icon ui-hidden-sm"><use href="../icon/set.svg#plus-badge"/></svg>
-                    <svg class="ui-icon"><use href="../icon/set.svg#square"/></svg>
-                    <svg class="ui-icon"><use href="../icon/set.svg#circle"/></svg>
-                    <svg class="ui-icon"><use href="../icon/set.svg#star"/></svg>
+                <div class="login-icons">
+                    <svg class="ui-icon ui-hidden-sm"><use href="../dist/icons.svg#plus-badge"/></svg>
+                    <svg class="ui-icon"><use href="../dist/icons.svg#square"/></svg>
+                    <svg class="ui-icon"><use href="../dist/icons.svg#circle"/></svg>
+                    <svg class="ui-icon"><use href="../dist/icons.svg#star"/></svg>
                 </div>
 
             </div>

@@ -87,27 +87,27 @@
                 <div class="ui-row ui-xs-fluid ui-align-l ui-p-30-b ui-block-2nd ui-ease-2nd-btn">
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-lg ui-circle ui-border" href="#">
-                            Large Button <svg class="ui-icon ui-float-r"><use href="../icon/set.svg#settings"/></svg>
+                            Large Button <svg class="ui-icon ui-float-r"><use href="../dist/icons.svg#settings"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-lg ui-circle ui-border" href="#">
-                            Large Button <svg class="ui-icon ui-float-r"><use href="../icon/set.svg#settings"/></svg>
+                            Large Button <svg class="ui-icon ui-float-r"><use href="../dist/icons.svg#settings"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-circle ui-border" href="#">
-                            Default Button <svg class="ui-icon ui-float-r"><use href="../icon/set.svg#settings"/></svg>
+                            Default Button <svg class="ui-icon ui-float-r"><use href="../dist/icons.svg#settings"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-sm ui-circle ui-border" href="#">
-                            Small Button <svg class="ui-icon ui-float-r"><use href="../icon/set.svg#settings"/></svg>
+                            Small Button <svg class="ui-icon ui-float-r"><use href="../dist/icons.svg#settings"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-ghost ui-btn-xs ui-circle ui-border" href="#">
-                            Extra Small Button <svg class="ui-icon ui-float-r"><use href="../icon/set.svg#settings"/></svg>
+                            Extra Small Button <svg class="ui-icon ui-float-r"><use href="../dist/icons.svg#settings"/></svg>
                         </a>
                     </div>
 
@@ -115,27 +115,27 @@
 
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-lg ui-round" href="#">
-                            Large Button <svg class="ui-icon ui-float-r"><use href="../icon/set.svg#comment"/></svg>
+                            Large Button <svg class="ui-icon ui-float-r"><use href="../dist/icons.svg#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-lg ui-round" href="#">
-                            Large Button <svg class="ui-icon ui-float-r"><use href="../icon/set.svg#comment"/></svg>
+                            Large Button <svg class="ui-icon ui-float-r"><use href="../dist/icons.svg#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-round" href="#">
-                            Default Button <svg class="ui-icon ui-float-r"><use href="../icon/set.svg#comment"/></svg>
+                            Default Button <svg class="ui-icon ui-float-r"><use href="../dist/icons.svg#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-sm ui-round" href="#">
-                            Small Button <svg class="ui-icon ui-float-r"><use href="../icon/set.svg#comment"/></svg>
+                            Small Button <svg class="ui-icon ui-float-r"><use href="../dist/icons.svg#comment"/></svg>
                         </a>
                     </div>
                     <div class="ui-col-6">
                         <a class="ui-btn ui-btn-xs ui-round" href="#">
-                            Extra Small Button <svg class="ui-icon ui-float-r"><use href="../icon/set.svg#comment"/></svg>
+                            Extra Small Button <svg class="ui-icon ui-float-r"><use href="../dist/icons.svg#comment"/></svg>
                         </a>
                     </div>
                 </div>
@@ -143,23 +143,23 @@
                 <h3 class="ui-h3">Square Buttons</h3>
                 <div class="ui-p-30-b ui-theme-sub ui-ease-1st-btn">
                     <a class="ui-btn ui-btn-square ui-btn-xs ui-round ui-fill-dark-100" href="#">
-                        <svg class="ui-icon"><use href="../icon/set.svg#trash"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#trash"/></svg>
                     </a>
                     <a class="ui-btn ui-btn-square ui-btn-sm ui-round ui-fill-dark-100" href="#">
-                        <svg class="ui-icon"><use href="../icon/set.svg#trash"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#trash"/></svg>
                     </a>
                     <a class="ui-btn ui-btn-square ui-round ui-fill-dark-100" href="#">
-                        <svg class="ui-icon"><use href="../icon/set.svg#trash"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#trash"/></svg>
                     </a>
                     <a class="ui-btn ui-btn-square ui-btn-lg ui-round ui-fill-dark-100" href="#">
-                        <svg class="ui-icon"><use href="../icon/set.svg#trash"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#trash"/></svg>
                     </a>
                 </div>
 
                 <h3 class="ui-h3">Responsive Buttons</h3>
                 <div class="ui-p-30-b ui-form-lg ui-ease-1st-btn">
                     <a class="ui-btn ui-btn-square ui-round ui-btn-xs-fluid" href="#">
-                        <svg class="ui-icon"><use href="../icon/set.svg#filter"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#filter"/></svg>
                     </a>
                     <a class="ui-btn ui-round ui-btn-md-fluid" href="#">MD Responsive Button</a>
                     <a class="ui-btn ui-round ui-btn-sm-fluid" href="#">SM Responsive Button</a>
@@ -241,10 +241,10 @@
 
                     <div class="ui-paging ui-align-c ui-theme-sub ui-ease-1st-btn">
                         <a class="ui-btn ui-btn-xs ui-paging-prev ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-dual-left"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-dual-left"/></svg>
                         </a>
                         <a class="ui-btn ui-btn-xs ui-paging-prev ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-left"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-left"/></svg>
                         </a>
                         <a class="ui-btn ui-btn-xs ui-round" href="#">1</a>
                         <a class="ui-btn ui-btn-xs ui-btn-active ui-round ui-fill-dark-100" href="#">2</a>
@@ -253,19 +253,19 @@
                         <a class="ui-btn ui-btn-xs ui-btn-passive ui-round" href="#">...</a>
                         <a class="ui-btn ui-btn-xs ui-round" href="#">10</a>
                         <a class="ui-btn ui-btn-xs ui-paging-next ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-right"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-right"/></svg>
                         </a>
                         <a class="ui-btn ui-btn-xs ui-paging-next ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-dual-right"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-dual-right"/></svg>
                         </a>
                     </div>
 
                     <div class="ui-paging ui-align-c ui-theme-sub ui-ease-1st-btn">
                         <a class="ui-btn ui-btn-sm ui-paging-prev ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-dual-left"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-dual-left"/></svg>
                         </a>
                         <a class="ui-btn ui-btn-sm ui-paging-prev ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-left"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-left"/></svg>
                         </a>
                         <a class="ui-btn ui-btn-sm ui-round" href="#">1</a>
                         <a class="ui-btn ui-btn-sm ui-btn-active ui-round ui-fill-dark-100" href="#">2</a>
@@ -274,19 +274,19 @@
                         <a class="ui-btn ui-btn-sm ui-btn-passive ui-round" href="#">...</a>
                         <a class="ui-btn ui-btn-sm ui-round" href="#">10</a>
                         <a class="ui-btn ui-btn-sm ui-paging-next ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-right"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-right"/></svg>
                         </a>
                         <a class="ui-btn ui-btn-sm ui-paging-next ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-dual-right"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-dual-right"/></svg>
                         </a>
                     </div>
 
                     <div class="ui-paging ui-align-c ui-theme-sub ui-ease-1st-btn">
                         <a class="ui-btn ui-paging-prev ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-dual-left"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-dual-left"/></svg>
                         </a>
                         <a class="ui-btn ui-paging-prev ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-left"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-left"/></svg>
                         </a>
                         <a class="ui-btn ui-round" href="#">1</a>
                         <a class="ui-btn ui-btn-active ui-round ui-fill-dark-100" href="#">2</a>
@@ -295,19 +295,19 @@
                         <a class="ui-btn ui-btn-passive ui-round" href="#">...</a>
                         <a class="ui-btn ui-round" href="#">10</a>
                         <a class="ui-btn ui-paging-next ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-right"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-right"/></svg>
                         </a>
                         <a class="ui-btn ui-paging-next ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-dual-right"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-dual-right"/></svg>
                         </a>
                     </div>
 
                     <div class="ui-paging ui-form-lg ui-align-c ui-theme-sub ui-ease-1st-btn">
                         <a class="ui-btn ui-paging-prev ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-dual-left"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-dual-left"/></svg>
                         </a>
                         <a class="ui-btn ui-paging-prev ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-left"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-left"/></svg>
                         </a>
                         <a class="ui-btn ui-round" href="#">1</a>
                         <a class="ui-btn ui-btn-active ui-round ui-border-dual ui-stroke ui-text" href="#">2</a>
@@ -316,10 +316,10 @@
                         <a class="ui-btn ui-btn-passive ui-round" href="#">...</a>
                         <a class="ui-btn ui-round" href="#">10</a>
                         <a class="ui-btn ui-paging-next ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-right"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-right"/></svg>
                         </a>
                         <a class="ui-btn ui-paging-next ui-round" href="#">
-                            <svg class="ui-icon"><use href="../icon/set.svg#angle-dual-right"/></svg>
+                            <svg class="ui-icon"><use href="../dist/icons.svg#angle-dual-right"/></svg>
                         </a>
                     </div>
 
@@ -330,52 +330,52 @@
                     <div class="ui-col-6">
                         <div class="ui-btn-list ui-align-l ui-icons-m-10-r ui-form-lg ui-icons-no-opacity ui-theme-green ui-ease-1st-btn">
                             <button class="ui-btn">
-                                <svg class="ui-icon ui-text"><use href="../icon/set.svg#shield"/></svg>Administration
+                                <svg class="ui-icon ui-text"><use href="../dist/icons.svg#shield"/></svg>Administration
                             </button>
                             <button class="ui-btn">
-                                <svg class="ui-icon ui-text"><use href="../icon/set.svg#clock"/></svg>Recent History
+                                <svg class="ui-icon ui-text"><use href="../dist/icons.svg#clock"/></svg>Recent History
                             </button>
                             <button class="ui-btn">
-                                <svg class="ui-icon ui-text"><use href="../icon/set.svg#settings"/></svg>Tools
+                                <svg class="ui-icon ui-text"><use href="../dist/icons.svg#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>
                     <div class="ui-col-6">
                         <div class="ui-btn-list ui-align-l ui-icons-m-10-r ui-form-lg ui-icons-no-opacity ui-theme-red ui-ease-1st-btn">
                             <button class="ui-btn ui-round">
-                                <svg class="ui-icon ui-text"><use href="../icon/set.svg#shield"/></svg>Administration
+                                <svg class="ui-icon ui-text"><use href="../dist/icons.svg#shield"/></svg>Administration
                             </button>
                             <button class="ui-btn ui-round">
-                                <svg class="ui-icon ui-text"><use href="../icon/set.svg#clock"/></svg>Recent History
+                                <svg class="ui-icon ui-text"><use href="../dist/icons.svg#clock"/></svg>Recent History
                             </button>
                             <button class="ui-btn ui-round">
-                                <svg class="ui-icon ui-text"><use href="../icon/set.svg#settings"/></svg>Tools
+                                <svg class="ui-icon ui-text"><use href="../dist/icons.svg#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>
                     <div class="ui-col-6">
                         <div class="ui-btn-list ui-align-l ui-icons-m-10-r ui-form-lg ui-icons-no-opacity ui-theme-orange ui-ease-1st-btn">
                             <button class="ui-btn ui-btn-ghost ui-round ui-border ui-stroke">
-                                <svg class="ui-icon ui-text"><use href="../icon/set.svg#shield"/></svg>Administration
+                                <svg class="ui-icon ui-text"><use href="../dist/icons.svg#shield"/></svg>Administration
                             </button>
                             <button class="ui-btn ui-btn-ghost ui-round ui-border ui-stroke">
-                                <svg class="ui-icon ui-text"><use href="../icon/set.svg#clock"/></svg>Recent History
+                                <svg class="ui-icon ui-text"><use href="../dist/icons.svg#clock"/></svg>Recent History
                             </button>
                             <button class="ui-btn ui-btn-ghost ui-round ui-border ui-stroke">
-                                <svg class="ui-icon ui-text"><use href="../icon/set.svg#settings"/></svg>Tools
+                                <svg class="ui-icon ui-text"><use href="../dist/icons.svg#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>
                     <div class="ui-col-6">
                         <div class="ui-btn-list ui-align-l ui-icons-m-10-r ui-form-lg ui-icons-no-opacity ui-theme-yellow ui-ease-1st-btn">
                             <button class="ui-btn ui-btn-ghost ui-round ui-border-dual ui-stroke">
-                                <svg class="ui-icon ui-text"><use href="../icon/set.svg#shield"/></svg>Administration
+                                <svg class="ui-icon ui-text"><use href="../dist/icons.svg#shield"/></svg>Administration
                             </button>
                             <button class="ui-btn ui-btn-ghost ui-round ui-border-dual ui-stroke">
-                                <svg class="ui-icon ui-text"><use href="../icon/set.svg#clock"/></svg>Recent History
+                                <svg class="ui-icon ui-text"><use href="../dist/icons.svg#clock"/></svg>Recent History
                             </button>
                             <button class="ui-btn ui-btn-ghost ui-round ui-border-dual ui-stroke">
-                                <svg class="ui-icon ui-text"><use href="../icon/set.svg#settings"/></svg>Tools
+                                <svg class="ui-icon ui-text"><use href="../dist/icons.svg#settings"/></svg>Tools
                             </button>
                         </div>
                     </div>

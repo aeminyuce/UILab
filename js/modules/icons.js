@@ -12,7 +12,7 @@ ui.icons = {
     nameIcon: 'ui-icon',
 
     // values
-    iconSrc: '../icon/set.svg'
+    iconSrc: '../dist/icons.svg'
 
 };
 

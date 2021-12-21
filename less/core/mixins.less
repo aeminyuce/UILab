@@ -79,15 +79,6 @@
 }
 
 // icon mixins
-._icon-size(@size) {
-    width: @size; height: @size;
-}
-._icon-weight(@size) {
-    @stroke-calc: (@icon-weight-max + (@icon-weight-min - if(@size < @icon-weight-min, @icon-weight-min, @size)));
-    @stroke-size: if(@stroke-calc < @icon-weight-min, @icon-weight-min, @stroke-calc);
-
-    stroke-width: @stroke-size;
-}
 ._icon(@size) {
-    ._icon-size(@size); ._icon-weight(@size);
+    width: @size; height: @size;
 }

@@ -11,7 +11,7 @@
                     <p class="ui-highlight ui-color-red ui-font-28 ui-font-bold">Error: 404 Page Not Found</p>
                     <p class="ui-highlight ui-color-red error-pages-icon ui-no-selection">
                         <span class="ui-inline-block">4</span>
-                        <svg class="ui-icon"><use href="../icon/set.svg#undo"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#undo"/></svg>
                         <span class="ui-inline-block">4</span>
                     </p>
                     <p class="ui-highlight ui-font-18 ui-font-readable">Sorry, the page you're looking for cannot be reached.<br>Here are few links that may be helpful.</p>
@@ -28,12 +28,12 @@
                     <p class="ui-highlight ui-color-yellow ui-font-28 ui-font-bold">Error: 403 Forbidden</p>
                     <p class="ui-highlight ui-color-yellow error-pages-icon ui-no-selection">
                         <span class="ui-inline-block">4</span>
-                        <svg class="ui-icon"><use href="../icon/set.svg#ban"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#ban"/></svg>
                         <span class="ui-inline-block">3</span>
                     </p>
                     <p class="ui-highlight ui-font-18 ui-font-readable">You don't have access to this page.<br>Please contact support if this wasn't supposed to happen.</p>
                     <a class="ui-color-yellow ui-btn ui-btn-ghost ui-border-dual ui-circle ui-ease-btn" href="#">
-                        <svg class="ui-icon ui-m-5-r ui-no-opacity"><use href="../icon/set.svg#long-arrow-left"/></svg>
+                        <svg class="ui-icon ui-m-5-r ui-no-opacity"><use href="../dist/icons.svg#long-arrow-left"/></svg>
                         Go Back
                     </a>
                 </div>
@@ -44,12 +44,12 @@
                     <p class="ui-highlight ui-color-orange ui-font-28 ui-font-bold">Error: 500 Unexpected Error</p>
                     <p class="ui-highlight ui-color-orange error-pages-icon ui-no-selection">
                         <span class="ui-inline-block">5</span>
-                        <svg class="ui-icon"><use href="../icon/set.svg#face-blank"/></svg>
-                        <svg class="ui-icon"><use href="../icon/set.svg#face-blank"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#face-blank"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#face-blank"/></svg>
                     </p>
                     <p class="ui-highlight ui-font-18 ui-font-readable">We are having some issues at the moment.<br>We will have it fixed in no time!</p>
                     <a class="ui-color-orange ui-btn ui-btn-ghost ui-border-dual ui-circle ui-ease-btn" href="#">
-                        <svg class="ui-icon ui-m-5-r ui-no-opacity"><use href="../icon/set.svg#long-arrow-left"/></svg>
+                        <svg class="ui-icon ui-m-5-r ui-no-opacity"><use href="../dist/icons.svg#long-arrow-left"/></svg>
                         Go Back
                     </a>
                 </div>

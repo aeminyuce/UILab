@@ -6,10 +6,8 @@ ui.iconlist = {
   nameBtn: 'ui-btn',
   stylesToolActive: 'ui-fill-dark-100',
   stylesTotal: 'ui-font-16 ui-m-5-v ui-block ui-opacity-half',
-  stylesIconWeights: 'ui-icons-bold ui-icons-semibold ui-icons-light ui-icons-thin',
   stylesIconSizes: 'ui-icons-xxl ui-icons-xl ui-icons-lg ui-icons-sm ui-icons-xs',
   dataSize: 'data-ui-size',
-  dataWeight: 'data-ui-weight',
   msgTotal: 'Total icons',
   msgCopied: 'Copied!'
 };
@@ -26,7 +24,7 @@ ui.iconlist = {
 
     totalIcons = 0;
     ui.on(tools, 'click', function () {
-      var that, buttons, size, weight;
+      var that, buttons, size;
       that = this;
       buttons = ui.find('.' + ui.iconlist.nameBtn, this.parentElement);
       ui.removeClass(buttons, ui.iconlist.stylesToolActive);
@@ -40,16 +38,6 @@ ui.iconlist = {
 
         if (size !== '') {
           ui.addClass(list, ui.iconlist.nameIconsPrefix + size);
-        }
-      }
-
-      weight = this.getAttribute(ui.iconlist.dataWeight);
-
-      if (weight !== null) {
-        ui.removeClass(list, ui.iconlist.stylesIconWeights);
-
-        if (weight !== '') {
-          ui.addClass(list, ui.iconlist.nameIconsPrefix + weight);
         }
       }
     });

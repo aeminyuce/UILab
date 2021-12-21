@@ -1,10 +1,9 @@
 /* icons */
 
-@icons-weights:                         thin light default semibold bold;
 @icons-margin-sizes:                    5px 10px;
 
 .ui- {
-    &icon { ._icon(@icon-default-size); vertical-align: middle; display: inline-block; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; }
+    &icon { ._icon(@icon-default-size); vertical-align: middle; display: inline-block; fill: currentColor; stroke: none; }
 
     &icons- {
         &no-opacity {
@@ -21,12 +20,7 @@
         });
 
         each(@icon-sizes, { // do not merge
-            &@{key} .ui-icon:not([class*="ui-icon-"]) { ._icon-size(@value) !important; ._icon-weight(@value) !important; }
-        });
-
-        each(@icon-sizes, { // do not merge
-            @weight: extract(@icons-weights, @index);
-            &@{weight} .ui-icon:not([class*="ui-icon-"]) { ._icon-weight(@value) !important; }
+            &@{key} .ui-icon:not([class*="ui-icon-"]) { ._icon(@value) !important; }
         });
     }
 
@@ -37,12 +31,7 @@
         }
 
         each(@icon-sizes, { // do not merge
-            &-@{key} { ._icon-size(@value) !important; ._icon-weight(@value) !important; }
-        });
-
-        each(@icon-sizes, { // do not merge
-            @weight: extract(@icons-weights, @index);
-            &-@{weight} { ._icon-weight(@value) !important; }
+            &-@{key} { ._icon(@value) !important; }
         });
     }
 }

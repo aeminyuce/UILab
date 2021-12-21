@@ -10,7 +10,7 @@
 
                     <a href="#" class="ui-btn ui-btn-lg ui-btn-xs-fluid ui-block ui-circle ui-fill-dark-100 ui-ease-btn">
                         Create New
-                        <svg class="ui-icon ui-float-r"><use href="../icon/set.svg#plus"/></svg>
+                        <svg class="ui-icon ui-float-r"><use href="../dist/icons.svg#plus"/></svg>
                     </a>
 
                     <ul class="ui-list-unstyled ui-list-sp-30 ui-hover-r-more-2nd ui-font-16 ui-m-30 ui-inline-block-2nd ui-ease-2nd-layout">
@@ -25,19 +25,19 @@
                     <ul class="ui-list-unstyled ui-list-sp-15 ui-font-16 ui-hover-r-more-2nd ui-inline-block-2nd ui-opacity-half ui-icons-sm ui-icons-m-10-r ui-ease-2nd-layout">
                         <li>
                             <a href="#">
-                                <svg class="ui-icon"><use href="../icon/set.svg#marker"/></svg>
+                                <svg class="ui-icon"><use href="../dist/icons.svg#marker"/></svg>
                                 Locations
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <svg class="ui-icon"><use href="../icon/set.svg#users"/></svg>
+                                <svg class="ui-icon"><use href="../dist/icons.svg#users"/></svg>
                                 Friends
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <svg class="ui-icon"><use href="../icon/set.svg#settings"/></svg>
+                                <svg class="ui-icon"><use href="../dist/icons.svg#settings"/></svg>
                                 Settings
                             </a>
                         </li>

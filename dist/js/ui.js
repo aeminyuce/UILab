@@ -14,7 +14,7 @@ var ui = {
     slow5x: 2000,
     nonClosestElems: ['mouseenter', 'mouseleave', 'mouseout', 'mouseover'],
     svgElems: ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'],
-    iconSrc: '../icon/set.svg',
+    iconSrc: '../dist/icons.svg',
     dataPrefix: 'data-ui-',
     dataClasses: 'data-ui-classes',
     eventAjaxCallback: 'ui:ajaxCallback',
@@ -2662,7 +2662,7 @@ ui.textareaCounter = {
 ui.icons = {
   target: 'use',
   nameIcon: 'ui-icon',
-  iconSrc: '../icon/set.svg'
+  iconSrc: '../dist/icons.svg'
 };
 
 (function () {
@@ -4652,9 +4652,9 @@ ui.datatable = {
   nameBtnPassive: 'ui-btn-passive',
   namePrev: 'ui-paging-prev',
   nameNext: 'ui-paging-next',
-  sortIcon: 'sort-fill',
-  ascIcon: 'sort-up-fill',
-  descIcon: 'sort-down-fill',
+  sortIcon: 'sort',
+  ascIcon: 'sort-up',
+  descIcon: 'sort-down',
   prevIcon: 'angle-left',
   nextIcon: 'angle-right',
   valueSplit: '|',

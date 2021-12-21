@@ -1,0 +1,6 @@
+<svg viewBox="0 0 252 252">
+    <g transform="translate(6 -6)">
+        <circle cx="120" cy="120" r="120" transform="translate(0 12)"/>
+        <path d="M120 84.5v96m-48-48h96"/>
+    </g>
+</svg>

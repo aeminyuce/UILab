@@ -4065,7 +4065,6 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
   vertical-align: middle;
   width: 22px;
   height: 22px;
-  stroke-width: 28px;
 }
 .ui-btn .ui-icon:not(.ui-no-opacity) {
   opacity: 0.45;
@@ -4120,7 +4119,6 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
 .ui-form-lg .ui-btn .ui-icon:not(.ui-toggle-icon) {
   width: 25px;
   height: 25px;
-  stroke-width: 25px;
 }
 .ui-btn-sm {
   font-size: 12px;
@@ -4151,7 +4149,6 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
 .ui-btn-sm .ui-icon:not(.ui-toggle-icon) {
   width: 18px;
   height: 18px;
-  stroke-width: 32px;
 }
 .ui-btn-xs {
   font-size: 11px;
@@ -4182,7 +4179,6 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
 .ui-btn-xs .ui-icon:not(.ui-toggle-icon) {
   width: 16px;
   height: 16px;
-  stroke-width: 34px;
 }
 .ui-sidebar .ui-btn-xs-fluid,
 .ui-sidebar .ui-btn-sm-fluid,
@@ -4462,7 +4458,6 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
 .ui-tab-holder .ui-tab:not(.ui-btn-xs) .ui-toggle-icon {
   width: 14px !important;
   height: 14px !important;
-  stroke-width: 36px !important;
 }
 .ui-tab-holder .ui-tab:not(.ui-btn-xs) .ui-toggle-icon.ui-float-r {
   margin-top: 5px;
@@ -4471,7 +4466,6 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
 .ui-tab-holder .ui-tab.ui-btn-xs .ui-toggle-icon {
   width: 12px !important;
   height: 12px !important;
-  stroke-width: 38px !important;
 }
 .ui-tab-holder .ui-tab.ui-btn-xs .ui-toggle-icon.ui-float-r {
   margin-top: 3px;
@@ -4542,7 +4536,6 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
 .ui-dropdown > .ui-btn:not(.ui-btn-sm):not(.ui-btn-xs) .ui-toggle-icon {
   width: 12px !important;
   height: 12px !important;
-  stroke-width: 38px !important;
   margin-top: -2px;
 }
 .ui-dropdown > .ui-btn:not(.ui-btn-sm):not(.ui-btn-xs) .ui-toggle-icon[class*="ui-float-"] {
@@ -4552,7 +4545,6 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
 .ui-dropdown > .ui-btn.ui-btn-sm .ui-toggle-icon {
   width: 12px !important;
   height: 12px !important;
-  stroke-width: 38px !important;
   margin-top: -2px;
 }
 .ui-dropdown > .ui-btn.ui-btn-sm .ui-toggle-icon[class*="ui-float-"] {
@@ -4562,7 +4554,6 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
 .ui-dropdown > .ui-btn.ui-btn-xs .ui-toggle-icon {
   width: 10px !important;
   height: 10px !important;
-  stroke-width: 38px !important;
   margin-top: -2px;
 }
 .ui-dropdown > .ui-btn.ui-btn-xs .ui-toggle-icon[class*="ui-float-"] {
@@ -4967,7 +4958,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-select .ui-icon {
   width: 16px;
   height: 16px;
-  stroke-width: 34px;
   position: absolute;
   top: 50%;
   right: 10px;
@@ -5084,7 +5074,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-file .ui-btn .ui-icon {
   width: 20px;
   height: 20px;
-  stroke-width: 30px;
 }
 .ui-file.ui-round.ui-round {
   border-radius: 6.66666667px;
@@ -5534,7 +5523,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-input .ui-form-clear .ui-icon {
   width: 16px;
   height: 16px;
-  stroke-width: 34px;
 }
 .ui-form-hint {
   font-size: 13px;
@@ -5606,19 +5594,16 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-form-lg .ui-select .ui-icon {
   width: 20px;
   height: 20px;
-  stroke-width: 30px;
   right: 20px;
 }
 .ui-form-lg [class*="ui-form-icon"] > .ui-icon {
   width: 20px;
   height: 20px;
-  stroke-width: 30px;
   right: 20px;
 }
 .ui-form-lg [class*="ui-form-icon"] .ui-icon {
   width: 20px;
   height: 20px;
-  stroke-width: 30px;
 }
 .ui-form-lg [class*="ui-form-icon"] > button {
   right: 20px;
@@ -5639,7 +5624,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-form-lg .ui-file .ui-btn .ui-icon {
   width: 23px;
   height: 23px;
-  stroke-width: 27px;
 }
 .ui-form-lg .ui-file.ui-no-border .ui-tn {
   line-height: 20px;
@@ -5669,7 +5653,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-form-lgclear .ui-icon {
   width: 20px;
   height: 20px;
-  stroke-width: 30px;
 }
 .ui-form-error .ui-check,
 .ui-form-error .ui-radio,
@@ -5707,7 +5690,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 [class*="ui-form-icon"] .ui-icon {
   width: 18px;
   height: 18px;
-  stroke-width: 32px;
 }
 [class*="ui-form-icon"] .ui-icon {
   opacity: 0.45;
@@ -5922,13 +5904,10 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-icon {
   width: 20px;
   height: 20px;
-  stroke-width: 30px;
   vertical-align: middle;
   display: inline-block;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  fill: currentColor;
+  stroke: none;
 }
 .ui-icons-no-opacity .ui-icon:not(.ui-opacity-half) {
   opacity: 1 !important;
@@ -5964,42 +5943,22 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-icons-xxl .ui-icon:not([class*="ui-icon-"]) {
   width: 50px !important;
   height: 50px !important;
-  stroke-width: 12px !important;
 }
 .ui-icons-xl .ui-icon:not([class*="ui-icon-"]) {
   width: 34px !important;
   height: 34px !important;
-  stroke-width: 16px !important;
 }
 .ui-icons-lg .ui-icon:not([class*="ui-icon-"]) {
   width: 26px !important;
   height: 26px !important;
-  stroke-width: 24px !important;
 }
 .ui-icons-sm .ui-icon:not([class*="ui-icon-"]) {
   width: 18px !important;
   height: 18px !important;
-  stroke-width: 32px !important;
 }
 .ui-icons-xs .ui-icon:not([class*="ui-icon-"]) {
   width: 14px !important;
   height: 14px !important;
-  stroke-width: 36px !important;
-}
-.ui-icons-thin .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 12px !important;
-}
-.ui-icons-light .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 16px !important;
-}
-.ui-icons-default .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 24px !important;
-}
-.ui-icons-semibold .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 32px !important;
-}
-.ui-icons-bold .ui-icon:not([class*="ui-icon-"]) {
-  stroke-width: 36px !important;
 }
 .ui-icon-mirror-v {
   transform: scaleY(-1);
@@ -6010,42 +5969,22 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-icon-xxl {
   width: 50px !important;
   height: 50px !important;
-  stroke-width: 12px !important;
 }
 .ui-icon-xl {
   width: 34px !important;
   height: 34px !important;
-  stroke-width: 16px !important;
 }
 .ui-icon-lg {
   width: 26px !important;
   height: 26px !important;
-  stroke-width: 24px !important;
 }
 .ui-icon-sm {
   width: 18px !important;
   height: 18px !important;
-  stroke-width: 32px !important;
 }
 .ui-icon-xs {
   width: 14px !important;
   height: 14px !important;
-  stroke-width: 36px !important;
-}
-.ui-icon-thin {
-  stroke-width: 12px !important;
-}
-.ui-icon-light {
-  stroke-width: 16px !important;
-}
-.ui-icon-default {
-  stroke-width: 24px !important;
-}
-.ui-icon-semibold {
-  stroke-width: 32px !important;
-}
-.ui-icon-bold {
-  stroke-width: 36px !important;
 }
 /* listgroup */
 .ui-ease-listgroup li,
@@ -6125,7 +6064,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-listgroup .ui-listgroup-icon {
   width: 14px;
   height: 14px;
-  stroke-width: 36px;
   position: absolute;
   top: 50%;
   right: 10px;
@@ -6142,7 +6080,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-listgroup .ui-listgroup-has-icon-xxl .ui-listgroup-icon {
   width: 50px;
   height: 50px;
-  stroke-width: 12px;
 }
 .ui-listgroup .ui-listgroup-has-icon-xl > li,
 .ui-listgroup .ui-listgroup-has-icon-xl > li > a:not(.ui-listgroup-url) {
@@ -6154,7 +6091,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-listgroup .ui-listgroup-has-icon-xl .ui-listgroup-icon {
   width: 34px;
   height: 34px;
-  stroke-width: 16px;
 }
 .ui-listgroup .ui-listgroup-has-icon-lg > li,
 .ui-listgroup .ui-listgroup-has-icon-lg > li > a:not(.ui-listgroup-url) {
@@ -6166,7 +6102,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-listgroup .ui-listgroup-has-icon-lg .ui-listgroup-icon {
   width: 26px;
   height: 26px;
-  stroke-width: 24px;
 }
 .ui-listgroup .ui-listgroup-has-icon-sm > li,
 .ui-listgroup .ui-listgroup-has-icon-sm > li > a:not(.ui-listgroup-url) {
@@ -6178,7 +6113,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-listgroup .ui-listgroup-has-icon-sm .ui-listgroup-icon {
   width: 18px;
   height: 18px;
-  stroke-width: 32px;
 }
 .ui-listgroup .ui-listgroup-has-icon-xs > li,
 .ui-listgroup .ui-listgroup-has-icon-xs > li > a:not(.ui-listgroup-url) {
@@ -6190,7 +6124,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-listgroup .ui-listgroup-has-icon-xs .ui-listgroup-icon {
   width: 14px;
   height: 14px;
-  stroke-width: 36px;
 }
 .ui-listgroup .ui-listgroup-has-avatar-lg li,
 .ui-listgroup .ui-listgroup-has-avatar-lg li > a:not(.ui-listgroup-url) {
@@ -6285,7 +6218,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-card-close .ui-icon {
   width: 12px;
   height: 12px;
-  stroke-width: 38px;
 }
 .ui-desktop .ui-card-close:hover {
   opacity: 0.75;
@@ -6532,7 +6464,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-avatar-lg .ui-icon {
   width: 34px;
   height: 34px;
-  stroke-width: 16px;
 }
 .ui-avatar-sm {
   font-size: 14px;
@@ -6542,7 +6473,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-avatar-sm .ui-icon {
   width: 18px;
   height: 18px;
-  stroke-width: 32px;
 }
 .ui-avatar-xs {
   font-size: 12px;
@@ -6552,7 +6482,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-avatar-xs .ui-icon {
   width: 14px;
   height: 14px;
-  stroke-width: 36px;
 }
 .ui-avatar-holder {
   vertical-align: middle;
@@ -7282,7 +7211,6 @@ html:not(.ui-ie) .ui-steps-bar li {
 .ui-modal-content .ui-modal-close .ui-icon {
   width: 14px;
   height: 14px;
-  stroke-width: 36px;
 }
 .ui-modal-buttons {
   float: right;
@@ -7693,7 +7621,6 @@ button.ui-dialog-custom {
 .ui-dialog-close .ui-icon {
   width: 12px;
   height: 12px;
-  stroke-width: 38px;
 }
 .ui-desktop .ui-dialog-close:hover {
   opacity: 0.75;
@@ -7858,7 +7785,6 @@ button.ui-dialog-custom {
 .ui-calendar caption > button .ui-icon {
   width: 20px;
   height: 20px;
-  stroke-width: 30px;
   opacity: 0.65;
 }
 .ui-calendar-prev {
@@ -7962,7 +7888,6 @@ button.ui-dialog-custom {
 .ui-calendar-details > button .ui-icon {
   width: 20px;
   height: 20px;
-  stroke-width: 30px;
   opacity: 0.65;
 }
 .ui-calendar-details ul {
@@ -8276,7 +8201,6 @@ button.ui-dialog-custom {
 .ui-carousel-gallery-detail .ui-icon {
   width: 80px;
   height: 80px;
-  stroke-width: 12px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -8855,7 +8779,6 @@ button.ui-dialog-custom {
   color: hsl(0, 0%, 100%);
   width: 50px;
   height: 50px;
-  stroke-width: 12px;
   margin: -25px 0 0 -25px;
   position: absolute;
   top: 50%;
@@ -9056,7 +8979,6 @@ button.ui-dialog-custom {
 .ui-photoslide-loader {
   width: 42px;
   height: 42px;
-  stroke-width: 12px;
   margin: -21px 0 0 -21px;
   position: absolute;
   top: 50%;

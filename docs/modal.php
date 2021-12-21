@@ -220,7 +220,7 @@
                     <div class="ui-col-12 ui-ease-1st-form">
                         <div class="ui-input ui-form-has-clear ui-form-icon ui-round-l ui-no-border ui-shadow-in-sm ui-theme-gray ui-fill-light-300 ui-ease-form">
                             <button type="button" class="ui-form-clear">
-                                <svg class="ui-icon"><use href="../icon/set.svg#remove"/></svg>
+                                <svg class="ui-icon"><use href="../dist/icons.svg#remove"/></svg>
                             </button>
                             <input class="ui-required" type="text" placeholder="Search">
                         </div>
@@ -229,7 +229,7 @@
                 </div>
                 <div class="ui-col-100 ui-col-xs-50 ui-p-10-v">
                     <button class="ui-btn ui-block ui-round-r ui-theme-sub ui-fill-dark-100 ui-ease-btn" type="submit">
-                        <svg class="ui-icon"><use href="../icon/set.svg#search"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#search"/></svg>
                     </button>
                 </div>
             </div>
@@ -237,21 +237,21 @@
             <div class="ui-row ui-xs-fluid ui-icons-xxl ui-block-2nd ui-icons-no-opacity ui-hover-t-more-2nd ui-icons-m-5-v ui-theme-base ui-form-lg ui-ease-2nd-btn">
                 <div class="ui-col-4 ui-p-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
-                        <svg class="ui-icon"><use href="../icon/set.svg#news"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#news"/></svg>
                         <span class="ui-font-18 ui-block ui-m-5-t">News</span>
                         <span class="ui-color-white-50">589</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-p-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
-                        <svg class="ui-icon"><use href="../icon/set.svg#calendar-check"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#calendar-check"/></svg>
                         <span class="ui-font-18 ui-block ui-m-5-t">Events</span>
                         <span class="ui-color-white-50">219</span>
                     </a>
                 </div>
                 <div class="ui-col-4 ui-p-10-b">
                     <a class="ui-btn ui-btn-multi ui-font-condensed ui-round ui-fill-dark-100" href="#">
-                        <svg class="ui-icon"><use href="../icon/set.svg#files"/></svg>
+                        <svg class="ui-icon"><use href="../dist/icons.svg#files"/></svg>
                         <span class="ui-font-18 ui-block ui-m-5-t">Documents</span>
                         <span class="ui-color-white-50">701</span>
                     </a>
