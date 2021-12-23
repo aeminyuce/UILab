@@ -138,7 +138,6 @@
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#lab"/></svg><span>lab</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#virus"/></svg><span>virus</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#mask"/></svg><span>mask</span></li>
-                    <li><svg class="ui-icon"><use href="../dist/icons.svg#lab"/></svg><span>lab</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#bell"/></svg><span>bell</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#bell-on"/></svg><span>bell-on</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#award"/></svg><span>award</span></li>
@@ -212,7 +211,6 @@
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#edit"/></svg><span>edit</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#ellipsis-h"/></svg><span>ellipsis-h</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#ellipsis-v"/></svg><span>ellipsis-v</span></li>
-                    <li><svg class="ui-icon"><use href="../dist/icons.svg#skip"/></svg><span>skip</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#skip"/></svg><span>skip</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#envelope"/></svg><span>envelope</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#envelope-open"/></svg><span>envelope-open</span></li>
