@@ -1,3 +1,6 @@
-<svg viewBox="0 0 204 252">
-    <path d="M6 6h192.028L198 246H6Zm40 135h64m-64-40h112"/>
+<svg viewBox="0 0 264 264">
+    <g transform="translate(-792 -1848)" clip-path="url(#clip-path)">
+        <path d="M828.5 1854.5h192a6 6 0 0 1 6 6v240a6 6 0 0 1-6 6h-192a6 6 0 0 1-6-6v-240a6 6 0 0 1 6-6Zm186 12h-180v228h180Z"/>
+        <path d="M932.5 2001.5h-64a6 6 0 0 1 0-12h64a6 6 0 0 1 0 12Zm48-40h-112a6 6 0 0 1 0-12h112a6 6 0 0 1 0 12Z"/>
+    </g>
 </svg>

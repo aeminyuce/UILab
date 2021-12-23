@@ -1,6 +1,6 @@
-<svg viewBox="0 0 252 252">
-    <g transform="translate(-26.507 -8.5)">
-        <path d="M151.507 193.5v-8m0-112v72"/>
-        <circle cx="120" cy="120" r="120" transform="translate(32.507 14.5)"/>
+<svg viewBox="0 0 264 264">
+    <g transform="translate(-528 -1320)" clip-path="url(#clip-path)">
+        <path d="M660.5 1518.5a6 6 0 0 1-6-6v-8a6 6 0 0 1 12 0v8a6 6 0 0 1-6 6Zm0-48a6 6 0 0 1-6-6v-72a6 6 0 0 1 6-6 6 6 0 0 1 6 6v72a6 6 0 0 1-6 6Z"/>
+        <path d="M661.5 1327.5a126 126 0 1 1-126 126 126.143 126.143 0 0 1 126-126Zm0 240a114 114 0 1 0-114-114 114.129 114.129 0 0 0 114 114Z"/>
     </g>
 </svg>

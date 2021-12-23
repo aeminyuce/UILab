@@ -237,6 +237,8 @@
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#heart"/></svg><span>heart</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#help"/></svg><span>help</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#hourglass"/></svg><span>hourglass</span></li>
+                    <li><svg class="ui-icon"><use href="../dist/icons.svg#hourglass-start"/></svg><span>hourglass-start</span></li>
+                    <li><svg class="ui-icon"><use href="../dist/icons.svg#hourglass-end"/></svg><span>hourglass-end</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#image"/></svg><span>image</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#images"/></svg><span>images</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#images-minus"/></svg><span>images-minus</span></li>
