@@ -220,7 +220,6 @@
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#face-blank"/></svg><span>face-blank</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#face-smile"/></svg><span>face-smile</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#face-sad"/></svg><span>face-sad</span></li>
-                    <li><svg class="ui-icon"><use href="../dist/icons.svg#face-sad"/></svg><span>face-sad</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#face-meh"/></svg><span>face-meh</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#face-angry"/></svg><span>face-angry</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#factory"/></svg><span>factory</span></li>
