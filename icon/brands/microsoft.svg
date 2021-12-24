@@ -1,5 +1,3 @@
 <svg viewBox="0 0 264 264">
-    <g clip-path="url(#clip-path)">
-        <path d="M139 253V139h117v114ZM9 253V139h117v114Zm130-127V12h117v114ZM9 126V12h117v114Z"/>
-    </g>
+    <path d="M139 253V139h117v114ZM9 253V139h117v114Zm130-127V12h117v114ZM9 126V12h117v114Z"/>
 </svg>
