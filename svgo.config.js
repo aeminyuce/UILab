@@ -30,7 +30,6 @@ module.exports = { // https://github.com/svg/svgo
         'cleanupIDs',
         'removeStyleElement',
         'removeUselessDefs',
-        'removeXMLNS',
         'convertColors',
         'collapseGroups',
         'removeRasterImages',
