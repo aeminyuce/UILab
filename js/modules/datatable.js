@@ -111,7 +111,7 @@ ui.datatable = {
 
         re = new RegExp(chars, 'g');
 
-        customLowerCase = function (string) {
+        customLowerCase = (string) => {
 
             string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
                 return ui.datatable.customLetters[l];
@@ -461,7 +461,7 @@ ui.datatable = {
             if (isAsc) {
 
                 if (sortType === ui.datatable.sortTypeNumber) {
-                    arrSorted.sort(function (a, b) { return b - a; });
+                    arrSorted.sort((a, b) => b - a);
 
                 } else {
                     arrSorted.sort().reverse();
@@ -470,7 +470,7 @@ ui.datatable = {
             } else {
 
                 if (sortType === ui.datatable.sortTypeNumber) {
-                    arrSorted.sort(function (a, b) { return a - b; });
+                    arrSorted.sort((a, b) => a - b);
 
                 } else {
                     arrSorted.sort();
@@ -585,10 +585,7 @@ ui.datatable = {
         // filter
         if (vals.length > 0) {
 
-            activeFilters = vals.filter(function (filterVal) {
-                return filterVal !== '';
-            });
-
+            activeFilters = vals.filter((filterVal) => filterVal !== '');
             gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
 
             list = ui.find('.' + ui.datatable.nameListContent, gridContainer);

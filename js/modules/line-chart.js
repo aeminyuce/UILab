@@ -209,13 +209,8 @@ ui.lineChart = {
                     // get min and max values of all y datas
                     yMax = yMax.toString().split(',');
 
-                    yMax = yMax.filter(function (item, pos) { // convert array as unique
-                        return yMax.indexOf(item) === pos;
-                    });
-
-                    yMax = yMax.sort(function (a, b) { // convert array as desc
-                        return b - a;
-                    });
+                    yMax = yMax.filter((item, pos) => yMax.indexOf(item) === pos); // convert array as unique
+                    yMax = yMax.sort((a, b) => b - a); // convert array as desc
 
                     yMin = parseInt(yMax[yMax.length - 1]);
                     yMax = Math.ceil((parseInt(yMax[0]) - yMin) / rows) * rows + yMin; // convert yMax to divide with rows

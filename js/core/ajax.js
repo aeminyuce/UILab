@@ -83,10 +83,7 @@ ui.ajax = function (props) {
 
                 ui.ajax.classNames = ui.ajax.classNames.match(/"+[\w\s\d\-\_\=]+"/g);
                 ui.ajax.classNames = ui.ajax.classNames.toString().replace(/\"/g, '').replace(/,/g, ' ').split(' ');
-
-                ui.ajax.classNames = ui.ajax.classNames.filter(function (value, index, self) {
-                    return self.indexOf(value) === index;
-                });
+                ui.ajax.classNames = ui.ajax.classNames.filter((value, index, self) => self.indexOf(value) === index);
 
                 // ajax callbacks
                 ui.trigger(document, ui.globals.eventAjaxCallback); // set custom event

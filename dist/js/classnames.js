@@ -47,7 +47,7 @@ ui.classnames = {
       callback: function callback() {}
     });
     ui.on(document, ui.globals.eventAjaxCallback, function () {
-      var i, j, re, reStart, reDuplicate, loaded, str, strStart, strLength, html, title, items, jsClass, jsModule, jsKey, jsStyleList;
+      var i, j, re, reStart, reDuplicate, loaded, str, strStart, strLength, html, title, items, jsClass, jsModule, jsKey, jsStyleList, filterClassnames;
       loaded = [];
       re = ui.classnames.jsTarget + '+\\w*|' + ui.classnames.jsTarget + '|' + ui.classnames.jsName + '+\\w*' + '|' + ui.classnames.jsStyles + '+\\w*';
       re = new RegExp(re, 'g');
@@ -128,7 +128,7 @@ ui.classnames = {
         lastAddedWarning = this;
       });
 
-      function filterClassnames(that) {
+      filterClassnames = function filterClassnames(that) {
         title = that.split('-')[1];
 
         if (title === 'no' || title === 'xl' || title === 'lg' || title === 'md' || title === 'sm' || title === 'xs') {
@@ -198,7 +198,7 @@ ui.classnames = {
         }
 
         return title;
-      }
+      };
 
       ui.each(arr.list, function () {
         filterClassnames(this);

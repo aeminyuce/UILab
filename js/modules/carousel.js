@@ -91,6 +91,7 @@ ui.carousel = {
 (() => {
 
     var
+        getCols,
         idCount = 0,
 
         cols = [],
@@ -114,7 +115,7 @@ ui.carousel = {
 
         touchStarted = false;
 
-    function getCols(i) {
+    getCols = (i) => {
 
         var col;
 

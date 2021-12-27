@@ -3,7 +3,7 @@
 import { ui } from './globals.js';
 export default () => ui;
 
-ui.find = function (item, outer) {
+ui.find = (item, outer) => {
 
     var i, objName, call, outerEl, outerElIndex, foundEl = [];
 

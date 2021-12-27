@@ -153,9 +153,7 @@ ui.sidebar = {
                 panel = ui.find('.' + ui.sidebar.target + '.' + ui.sidebar.nameShowPrefix + position);
                 content = ui.find('.' + ui.sidebar.nameContent, panel);
 
-                filtered = html.filter(function (el) {
-                    return el != null;
-                });
+                filtered = html.filter((el) => el != null);
 
                 for (j = 0; j < filtered.length; j++) {
                     content.appendChild(filtered[j]);

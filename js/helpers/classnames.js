@@ -83,7 +83,7 @@ ui.classnames = {
 
             function () {
 
-                var i, j, re, reStart, reDuplicate, loaded, str, strStart, strLength, html, title, items, jsClass, jsModule, jsKey, jsStyleList;
+                var i, j, re, reStart, reDuplicate, loaded, str, strStart, strLength, html, title, items, jsClass, jsModule, jsKey, jsStyleList, filterClassnames;
 
                 // load js classnames
                 loaded = [];
@@ -129,9 +129,7 @@ ui.classnames = {
                     });
 
                 // remove duplicate loaded classnames
-                loaded = loaded.filter(function (value, index, self) {
-                    return self.indexOf(value) === index;
-                });
+                loaded = loaded.filter((value, index, self) => self.indexOf(value) === index);
 
                 // check all classnames
                 ui.each(loaded,
@@ -215,7 +213,7 @@ ui.classnames = {
                     });
 
                 // filter list of classnames
-                function filterClassnames(that) {
+                filterClassnames = (that) => {
 
                     title = that.split('-')[1];
 
@@ -333,17 +331,14 @@ ui.classnames = {
 
                 // create category names
                 created = 0;
-
-                arr.filtered = arr.filtered.sort(function (a, b) {
-                    return a.localeCompare(b);
-                });
+                arr.filtered = arr.filtered.sort((a, b) => a.localeCompare(b));
 
                 ui.each(arr.filtered,
 
                     function () {
 
                         items = arr.groups[this].split(',');
-                        items = items.sort(function (a, b) {
+                        items = items.sort((a, b) => {
 
                             return a.length - b.length || a.localeCompare(b, undefined, {
                                 numeric: true,

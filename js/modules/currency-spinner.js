@@ -25,7 +25,9 @@ ui.currencySpinner = {
 
     ui.currencySpinner.Start = function () {
 
-        function convert(s) {
+        var convert;
+
+        convert = (s) => {
 
             var regDecimal, regClear, number, decimal;
 

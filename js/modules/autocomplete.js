@@ -72,10 +72,7 @@ ui.autocomplete = {
 
             customLowerCase = function (string) {
 
-                string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
-                    return ui.autocomplete.customLetters[l];
-                });
-
+                string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, (l) => ui.autocomplete.customLetters[l]);
                 return string.toLowerCase();
 
             };

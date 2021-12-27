@@ -102,6 +102,8 @@ ui.calendar = {
     // first loading
     ui.calendar.Start = function () {
 
+        var pickerVal;
+
         // get calendar's date
         function getAttr(that, date, newDate) {
 
@@ -159,7 +161,7 @@ ui.calendar = {
         }
 
         // get picker value
-        function pickerVal(that) {
+        pickerVal = (that) => {
 
             if (that.value !== '') {
 

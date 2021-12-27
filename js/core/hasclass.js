@@ -3,7 +3,7 @@
 import { ui } from './globals.js';
 export default () => ui;
 
-ui.hasClass = function (t, name) {
+ui.hasClass = (t, name) => {
 
     var re, l = ui.find(t), i;
 

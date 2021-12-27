@@ -1709,7 +1709,9 @@ ui.currencySpinner = {
   var cacheCurrencySpinner;
 
   ui.currencySpinner.Start = function () {
-    function convert(s) {
+    var convert;
+
+    convert = function convert(s) {
       var regDecimal, regClear, number, decimal;
       regDecimal = new RegExp(/(\,+\d+)/g);
       regClear = new RegExp(/(\s)|(\.)|(\,)/g);
@@ -1734,7 +1736,7 @@ ui.currencySpinner = {
       }
 
       return s;
-    }
+    };
 
     function locales(l) {
       return l.toLocaleString();
@@ -3199,6 +3201,8 @@ ui.calendar = {
 
 (function () {
   ui.calendar.Start = function () {
+    var pickerVal;
+
     function getAttr(that, date, newDate) {
       var attr = that.getAttribute(ui.calendar.dataDate);
 
@@ -3241,7 +3245,7 @@ ui.calendar = {
       }
     }
 
-    function pickerVal(that) {
+    pickerVal = function pickerVal(that) {
       if (that.value !== '') {
         var val = that.value.split(ui.calendar.pickerSep);
 
@@ -3257,7 +3261,7 @@ ui.calendar = {
 
         return '';
       }
-    }
+    };
 
     function createFnc(that, newDate, picker) {
       var date, today, pickerDay, container, html, i, j, todayStyles, pickerDayStyles, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, src, keys, dday, details;
@@ -3800,7 +3804,8 @@ ui.carousel = {
 };
 
 (function () {
-  var idCount = 0,
+  var getCols,
+      idCount = 0,
       cols = [],
       colsXL = [],
       colsLG = [],
@@ -3816,7 +3821,7 @@ ui.carousel = {
       isScrolling = false,
       touchStarted = false;
 
-  function getCols(i) {
+  getCols = function getCols(i) {
     var col;
 
     if (window.innerWidth >= ui.globals.xl) {
@@ -3834,7 +3839,7 @@ ui.carousel = {
     }
 
     return col;
-  }
+  };
 
   function carouselAnimate(content, wait, type) {
     var time, elems, i;

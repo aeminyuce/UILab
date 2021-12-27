@@ -50,7 +50,7 @@ ui.countdown = {
 
             });
 
-        calc = function (ms) {
+        calc = (ms) => {
 
             var days, daysMs, hours, hoursMs, minutes, minutesMs, sec;
 
@@ -72,7 +72,7 @@ ui.countdown = {
 
             return days + ':' + hours + ':' + minutes + ':' + sec;
 
-        };
+        }
 
         function drawFnc() {
 

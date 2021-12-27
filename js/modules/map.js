@@ -51,7 +51,7 @@ ui.map = {
 
                     });
 
-                arr[i] = arr[i].sort(function (a, b) { return b - a; });
+                arr[i] = arr[i].sort((a, b) => b - a);
 
                 ui.each(items,
 
