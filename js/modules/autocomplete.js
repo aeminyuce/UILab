@@ -58,7 +58,7 @@ ui.autocomplete = {
             autocompleteRequests = [];
 
         // custom lowercase
-        (function () {
+        (() => {
 
             var k, re, chars, keys;
 
@@ -77,7 +77,7 @@ ui.autocomplete = {
 
             };
 
-        }());
+        })();
 
         // Event Listeners
         formEventListeners = ui.find('.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + ' > [type="text"]');

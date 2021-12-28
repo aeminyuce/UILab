@@ -100,7 +100,7 @@ ui.datatable = {
     }
 
     // custom lowercase
-    (function () {
+    (() => {
 
         var k, re, chars, keys;
         keys = Object.keys(ui.datatable.customLetters); // returns array
@@ -121,7 +121,7 @@ ui.datatable = {
 
         };
 
-    }());
+    })();
 
     // create paging
     function createPaging(paging, id, listLength) {
