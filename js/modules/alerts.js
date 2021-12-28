@@ -91,7 +91,7 @@ ui.alerts = {
             dialog = ui.find('.' + ui.alerts.targetDialog)[0];
             ui.removeClass(dialog, ui.alerts.nameShowEase);
 
-            setTimeout(function () {
+            setTimeout(() => {
 
                 dialog.parentNode.removeChild(dialog);
 
@@ -104,9 +104,8 @@ ui.alerts = {
                     window.scrollTo(0, pageYPos);
                 }
 
-                setTimeout(function () {
+                setTimeout(() => {
                     ui.removeClass(bg, ui.alerts.nameOpen);
-
                 }, ui.globals.ease);
 
             }, ui.globals.ease);
@@ -222,17 +221,17 @@ ui.alerts = {
             bg = ui.find('.' + ui.alerts.targetBg);
             ui.addClass(bg, ui.alerts.nameOpen);
 
-            setTimeout(function () {
+            setTimeout(() => {
 
                 ui.addClass(bg, ui.alerts.nameOpenEase);
-                setTimeout(function () {
+                setTimeout(() => {
 
                     dialog = ui.find('.' + ui.alerts.targetDialog);
                     ui.addClass(dialog, ui.alerts.nameShow);
 
                     ui.find('.' + ui.alerts.nameDialogSuccess)[0].focus(); // fosuc success button
 
-                    setTimeout(function () {
+                    setTimeout(() => {
                         ui.addClass(dialog, ui.alerts.nameShowEase);
                     }, 10);
 
@@ -265,7 +264,7 @@ ui.alerts = {
 
                             ui.alerts.closeDialog();
 
-                            setTimeout(function () {
+                            setTimeout(() => {
 
                                 // show message
                                 if (ui.alerts.dialogMessages) {
@@ -280,7 +279,7 @@ ui.alerts = {
                                 // callback
                                 if (props.callback !== undefined) {
 
-                                    setTimeout(function () { // wait for closing dialog and showing messages
+                                    setTimeout(() => { // wait for closing dialog and showing messages
                                         props.callback.call(that, that.value);
 
                                     }, ui.globals.ease * 2);
@@ -300,7 +299,7 @@ ui.alerts = {
                             ui.alerts.closeDialog();
                             if (ui.alerts.dialogMessages && errorBtn !== undefined) {
 
-                                setTimeout(function () {
+                                setTimeout(() => {
 
                                     ui.alerts.message({
                                         msg: errorBtn.textContent,
@@ -341,7 +340,7 @@ ui.alerts = {
         ui.alerts.closeMessage = function (win) {
 
             ui.removeClass(win, ui.alerts.nameShowEase);
-            setTimeout(function () {
+            setTimeout(() => {
 
                 ui.removeClass(win, ui.alerts.nameShow);
                 win.parentNode.removeChild(win);
@@ -413,7 +412,7 @@ ui.alerts = {
             message = ui.find('.' + ui.alerts.targetMsg + ':last-child');
             ui.addClass(message, ui.alerts.nameShow);
 
-            setTimeout(function () {
+            setTimeout(() => {
 
                 ui.addClass(message, ui.alerts.nameShowEase);
 
@@ -443,7 +442,7 @@ ui.alerts = {
                 // auto close messages
                 messageQueue.push(message);
 
-                setTimeout(function () { // for manually closing messages by user
+                setTimeout(() => { // for manually closing messages by user
 
                     if (messageQueue[0] === undefined) { return; }
 

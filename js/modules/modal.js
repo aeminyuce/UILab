@@ -193,7 +193,7 @@ ui.modal = {
                     ui.removeClass(this, ui.modal.nameShowEase);
                 });
 
-            setTimeout(function () {
+            setTimeout(() => {
 
                 ui.each(win,
 
@@ -219,7 +219,7 @@ ui.modal = {
                     window.scrollTo(0, pageYPos);
                 }
 
-                setTimeout(function () {
+                setTimeout(() => {
                     ui.removeClass(bg, ui.modal.nameOpen);
                 }, ui.globals.ease);
 
@@ -388,10 +388,10 @@ ui.modal = {
                 bg = ui.find('.' + ui.modal.targetBg);
                 ui.addClass(bg, ui.modal.nameOpen);
 
-                setTimeout(function () {
+                setTimeout(() => {
 
                     ui.addClass(bg, ui.modal.nameOpenEase);
-                    setTimeout(function () {
+                    setTimeout(() => {
 
                         ui.addClass(win, ui.modal.nameShow);
 
@@ -406,21 +406,21 @@ ui.modal = {
 
                         }
 
-                        setTimeout(function () {
+                        setTimeout(() => {
 
                             ui.addClass(win, ui.modal.nameShowEase);
                             ui.removeClass(win, ui.modal.nameActive);
 
                             modalResizer();
 
-                            setTimeout(function () { // wait for modal dom is ready
+                            setTimeout(() => { // wait for modal dom is ready
                                 ui.trigger(document, ui.globals.eventDomChange); // set custom event
                             }, ui.globals.ease);
 
                             // callback
                             if (props.callback !== undefined) {
 
-                                setTimeout(function () { // wait for modal dom is ready
+                                setTimeout(() => { // wait for modal dom is ready
                                     props.callback.call(content);
                                 }, ui.globals.ease * 2);
 

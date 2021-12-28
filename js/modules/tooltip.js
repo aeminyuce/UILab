@@ -61,10 +61,10 @@ ui.tooltip = {
 
         clearTimeout(removeTimer);
 
-        removeTimer = setTimeout(function () {
+        removeTimer = setTimeout(() => {
             ui.removeClass(that, ui.tooltip.nameOpenEase);
 
-            removeTimer2x = setTimeout(function () {
+            removeTimer2x = setTimeout(() => {
 
                 ui.removeClass(that, ui.tooltip.nameOpen);
                 that.parentNode.removeChild(that);
@@ -110,7 +110,7 @@ ui.tooltip = {
 
         // show
         ui.addClass(win, ui.tooltip.nameOpen);
-        setTimeout(function () {
+        setTimeout(() => {
 
             // check screen limits
             winRect = win[0].getBoundingClientRect();
@@ -307,7 +307,7 @@ ui.tooltip = {
                     }
 
                     clearTimeout(pageTouchmoveTimer);
-                    pageTouchmoveTimer = setTimeout(function () {
+                    pageTouchmoveTimer = setTimeout(() => {
 
                         tooltipFnc(that, ui.tooltip.nameOpen);
                         ui.on(document,

@@ -44,7 +44,7 @@ ui.onload(function () {
 
                             ui.loadingMask.toggle(that);
 
-                            setTimeout(function () {
+                            setTimeout(() => {
                                 window.scrollTo(0, scrollPos);
                             }, ui.globals.ease);
 

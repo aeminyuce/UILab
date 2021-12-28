@@ -3,7 +3,7 @@
 // loader
 ui.onload(function () {
 
-    setTimeout(function () {
+    setTimeout(() => {
 
         var results = ui.find(document)[0].getAttribute('class');
         ui.find('.results')[0].innerHTML = '&lt;html class="' + results + '"&gt;';

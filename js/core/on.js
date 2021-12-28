@@ -58,7 +58,7 @@ ui.on = function (t, e, that, callback) {
                     // disable ie duplicate window event firing on ready
                     if (ua.indexOf("MSIE ") > 0 || !!document.documentMode || ua.indexOf('edge') > -1) {
 
-                        setTimeout(function () {
+                        setTimeout(() => {
                             l.addEventListener(e, that, true);
                         }, ui.globals.ease);
 

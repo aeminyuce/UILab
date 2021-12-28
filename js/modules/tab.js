@@ -110,10 +110,10 @@ ui.tab = {
                         currentContent.style.height = currentContent.offsetHeight + 'px';
                         currentContent.style.overflow = 'hidden';
 
-                        setTimeout(function () {
+                        setTimeout(() => {
 
                             currentContent.style.height = '0';
-                            setTimeout(function () {
+                            setTimeout(() => {
 
                                 if (classes) {
                                     ui.toggleClass(tabs[index], classes);
@@ -168,10 +168,10 @@ ui.tab = {
                                 lastOpened.style.height = lastOpened.offsetHeight + 'px';
                                 lastOpened.style.overflow = 'hidden';
 
-                                setTimeout(function () {
+                                setTimeout(() => {
 
                                     lastOpened.style.height = '0';
-                                    setTimeout(function () {
+                                    setTimeout(() => {
 
                                         ui.removeClass(lastOpened, ui.tab.nameOpenEase);
 
@@ -186,7 +186,7 @@ ui.tab = {
 
                             }
 
-                        setTimeout(function () { // open current clicked content
+                        setTimeout(() => { // open current clicked content
 
                             ui.addClass(currentContent, ui.tab.nameOpen);
 
@@ -195,14 +195,14 @@ ui.tab = {
                             currentContent.style.height = '0';
                             currentContent.style.overflow = 'hidden';
 
-                            setTimeout(function () {
+                            setTimeout(() => {
 
                                 ui.addClass(currentContent, ui.tab.nameOpenEase);
                                 currentContent.style.height = currentHeight + 'px';
 
                                 ui.trigger(document, ui.globals.eventDomChange); // set custom event
 
-                                setTimeout(function () {
+                                setTimeout(() => {
 
                                     currentContent.style.removeProperty('height');
                                     currentContent.style.removeProperty('overflow');
@@ -232,10 +232,10 @@ ui.tab = {
                                         currentContent.style.height = currentContent.offsetHeight + 'px';
                                         currentContent.style.overflow = 'hidden';
 
-                                        setTimeout(function () {
+                                        setTimeout(() => {
 
                                             currentContent.style.height = '0';
-                                            setTimeout(function () {
+                                            setTimeout(() => {
 
                                                 if (classes) {
                                                     ui.removeClass(tabs, classes);
@@ -265,12 +265,12 @@ ui.tab = {
                     } else {
 
                         ui.removeClass(content, ui.tab.nameOpenEase);
-                        setTimeout(function () {
+                        setTimeout(() => {
 
                             ui.removeClass(content, ui.tab.nameOpen);
                             ui.addClass(currentContent, ui.tab.nameOpen);
 
-                            setTimeout(function () {
+                            setTimeout(() => {
 
                                 ui.addClass(currentContent, ui.tab.nameOpenEase);
                                 ui.trigger(document, ui.globals.eventDomChange); // set custom event

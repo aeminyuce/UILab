@@ -103,7 +103,7 @@ ui.forms = {
 
                 ui.addClass(btn, ui.forms.nameOpen);
 
-                setTimeout(function () {
+                setTimeout(() => {
                     ui.addClass(btn, ui.forms.nameOpenEase);
                 }, 10);
 
@@ -111,7 +111,7 @@ ui.forms = {
 
                 ui.removeClass(btn, ui.forms.nameOpenEase);
 
-                setTimeout(function () {
+                setTimeout(() => {
                     ui.removeClass(btn, ui.forms.nameOpen);
                 }, ui.globals.ease);
 
@@ -124,7 +124,7 @@ ui.forms = {
             ui.each('.' + ui.forms.targetText + '.' + ui.forms.nameHasClear + ' input', function () {
 
                 var that = this;
-                setTimeout(function () { clearForms(that); }, 0);
+                setTimeout(() => { clearForms(that); }, 0);
 
             });
 
@@ -247,7 +247,7 @@ ui.forms = {
                 maxLength = that.getAttribute('maxlength');
                 that.removeAttribute('maxlength');
 
-                setTimeout(function () {
+                setTimeout(() => {
 
                     newValues = '';
                     getValues = that.value.match(new RegExp(/[0-9]/, 'g'));
@@ -326,7 +326,7 @@ ui.forms = {
                 errors = ui.find('.' + ui.forms.nameError, this);
                 reqMessages = ui.find('.' + ui.forms.nameRequiredMsg, this);
 
-                setTimeout(function () { // wait for form reset started on DOM
+                setTimeout(() => { // wait for form reset started on DOM
 
                     ui.each(forms, function () {
 

@@ -72,7 +72,7 @@ ui.textareaCounter = {
                 if (e.type === 'keydown' && e.ctrlKey) {
 
                     var that = this;
-                    setTimeout(function () { counter(that); }, 0);
+                    setTimeout(() => { counter(that); }, 0);
 
                 } else { counter(this); }
 
@@ -90,7 +90,7 @@ ui.textareaCounter = {
                 that = ui.find('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + '] textarea');
                 if (that.length === 0) { return; }
 
-                setTimeout(function () {
+                setTimeout(() => {
 
                     for (i = 0; i < that.length; i++) {
                         counter(that[i]);

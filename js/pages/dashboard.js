@@ -27,12 +27,12 @@
             state = 'opened';
             toggleClasses(); // toggle classnames
 
-            setTimeout(function () {
+            setTimeout(() => {
 
                 menu.style.width = '250px';
                 menuInner.style.transform = 'translateX(0)';
 
-                    setTimeout(function () {
+                    setTimeout(() => {
 
                         menu.style.removeProperty('width');
                         menu.style.removeProperty('transform');
@@ -56,7 +56,7 @@
 
         }
 
-        setTimeout(function () {
+        setTimeout(() => {
             ui.trigger(document, ui.globals.eventDomChange); // set custom event
         }, ui.globals.slow);
 

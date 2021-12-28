@@ -142,7 +142,7 @@ ui.autocomplete = {
                     if (list.length >= 1) {
 
                         ui.removeClass(p, ui.autocomplete.nameOpenEase);
-                        setTimeout(function () {
+                        setTimeout(() => {
 
                             ui.removeClass(p, ui.autocomplete.nameOpen);
                             list[0].innerHTML = '';
@@ -169,7 +169,7 @@ ui.autocomplete = {
 
                                     // create dropdown
                                     clearTimeout(timerShowLines);
-                                    timerShowLines = setTimeout(function () {
+                                    timerShowLines = setTimeout(() => {
 
                                         offset = p.getBoundingClientRect();
 
@@ -195,7 +195,7 @@ ui.autocomplete = {
 
                                 ui.addClass(p, ui.autocomplete.nameOpen);
 
-                                setTimeout(function () {
+                                setTimeout(() => {
                                     ui.addClass(p, ui.autocomplete.nameOpenEase);
                                 }, 0);
 
@@ -313,7 +313,7 @@ ui.autocomplete = {
 
                         ui.removeClass(p, ui.autocomplete.nameOpenEase);
 
-                        setTimeout(function () {
+                        setTimeout(() => {
 
                             ui.removeClass(list, ui.autocomplete.nameOpen);
                             list[0].innerHTML = '';
@@ -347,9 +347,8 @@ ui.autocomplete = {
 
                         ui.removeClass(p, ui.autocomplete.nameOpenEase);
 
-                        setTimeout(function () {
+                        setTimeout(() => {
                             ui.removeClass(p, ui.autocomplete.nameOpen);
-
                         }, ui.globals.ease);
 
                     }
@@ -400,7 +399,7 @@ ui.autocomplete = {
                 list = ui.find('ul', p);
 
                 ui.removeClass(p, ui.autocomplete.nameOpenEase);
-                setTimeout(function () {
+                setTimeout(() => {
 
                     ui.removeClass(p, ui.autocomplete.nameOpen);
 

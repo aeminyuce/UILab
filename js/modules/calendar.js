@@ -455,7 +455,7 @@ ui.calendar = {
 
                             if (ui.hasClass(that, ui.calendar.nameShowDetails)) {
 
-                                setTimeout(function () {
+                                setTimeout(() => {
                                     ui.addClass(ui.find('.' + ui.calendar.nameDetails, container), ui.calendar.nameOpen);
                                 }, 10);
 
@@ -643,7 +643,7 @@ ui.calendar = {
                 html = '';
 
                 // animate panel
-                setTimeout(function () {
+                setTimeout(() => {
 
                     ui.addClass(that, ui.calendar.nameShowPanel);
 
@@ -690,7 +690,7 @@ ui.calendar = {
                     }
                 }
 
-                setTimeout(function () {
+                setTimeout(() => {
                     that.removeChild(ui.find('.' + ui.calendar.namePanel, that)[0]);
                 }, ui.globals.slow);
 
@@ -716,7 +716,7 @@ ui.calendar = {
 
                         ui.removeClass(this, ui.calendar.nameOpenEase);
 
-                        setTimeout(function () {
+                        setTimeout(() => {
 
                             var that, form;
 
@@ -743,7 +743,7 @@ ui.calendar = {
 
                         ui.removeClass(that, ui.calendar.nameOpenEase);
 
-                        setTimeout(function () {
+                        setTimeout(() => {
                             removePicker(form, that);
                         }, ui.globals.ease);
 
@@ -826,7 +826,7 @@ ui.calendar = {
                 }
 
                 // show picker
-                setTimeout(function () {
+                setTimeout(() => {
                     ui.addClass(picker, ui.calendar.nameOpenEase);
                 }, 10);
 
@@ -936,7 +936,7 @@ ui.calendar = {
 
                     ui.removeClass(that, ui.calendar.nameShowDetails);
 
-                    setTimeout(function () {
+                    setTimeout(() => {
                         ui.removeClass(details, ui.calendar.nameOpen);
                     }, ui.globals.ease * 2);
 
@@ -944,7 +944,7 @@ ui.calendar = {
 
                     ui.addClass(details, ui.calendar.nameOpen);
 
-                    setTimeout(function () {
+                    setTimeout(() => {
                         ui.addClass(that, ui.calendar.nameShowDetails);
                     }, 10);
 

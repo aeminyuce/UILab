@@ -32,7 +32,7 @@ ui.topButton = {
 
         if (ui.find('body')[0].offsetHeight > (window.innerHeight * 2) && window.innerWidth > ui.globals.sm) {
 
-            setTimeout(function () {
+            setTimeout(() => {
 
                 if (window.pageYOffset > (window.innerHeight / 3)) {
 
@@ -40,7 +40,7 @@ ui.topButton = {
 
                         ui.addClass(topBtn, ui.topButton.nameOpen);
 
-                        setTimeout(function () {
+                        setTimeout(() => {
                             ui.addClass(topBtn, ui.topButton.nameOpenEase);
                         }, ui.globals.slow);
 
@@ -52,7 +52,7 @@ ui.topButton = {
 
                         ui.removeClass(topBtn, ui.topButton.nameOpenEase);
 
-                        setTimeout(function () {
+                        setTimeout(() => {
                             ui.removeClass(topBtn, ui.topButton.nameOpen);
                         }, ui.globals.slow);
 

@@ -272,7 +272,7 @@ ui.imgUpload = {
                     loaded += 1;
                     if (loaded === allowed.length) {
 
-                        setTimeout(function () {
+                        setTimeout(() => {
 
                             ui.each(imgLoaded,
 
@@ -321,14 +321,14 @@ ui.imgUpload = {
                             showTimer = ui.globals.ease;
                         }
 
-                        setTimeout(function () {
+                        setTimeout(() => {
 
                             newItem = ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList + '.' + ui.imgUpload.nameOpenEase, listCont);
                             ui.each(newItem,
 
                                 function (k) {
 
-                                    setTimeout(function () {
+                                    setTimeout(() => {
                                         ui.removeClass(newItem[k], ui.imgUpload.nameOpenEase);
                                     }, (ui.globals.fast / 2) * k);
 
@@ -348,7 +348,7 @@ ui.imgUpload = {
 
                         }, showTimer);
 
-                        setTimeout(function () {
+                        setTimeout(() => {
                             ui.removeClass(uploader, ui.imgUpload.nameLoading);
                         }, showTimer);
 

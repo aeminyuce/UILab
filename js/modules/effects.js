@@ -43,7 +43,7 @@ ui.effects = {
                     clearTimeout(pauseTransitionsTimer);
                     ui.addClass(ui.effects.target, ui.effects.namePause);
 
-                    pauseTransitionsTimer = setTimeout(function () {
+                    pauseTransitionsTimer = setTimeout(() => {
                         ui.removeClass(ui.effects.target, ui.effects.namePause);
                     }, ui.globals.ease * 2);
 
@@ -103,7 +103,7 @@ ui.effects = {
 
                 ui.addClass(ui.effects.target, ui.effects.namePause);
 
-                setTimeout(function () {
+                setTimeout(() => {
                     ui.removeClass(ui.effects.target, ui.effects.namePause);
                 }, ui.globals.ease * 2);
 

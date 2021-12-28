@@ -28,7 +28,7 @@ ui.card = {
                 var parentEl = this.parentElement;
                 ui.addClass(parentEl, ui.card.stylesClosing);
 
-                setTimeout(function () {
+                setTimeout(() => {
                     parentEl.parentNode.removeChild(parentEl);
                 }, ui.globals.ease * 2);
 

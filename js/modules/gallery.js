@@ -269,7 +269,7 @@ ui.photoGallery = {
 
                 ui.addClass(img, ui.photoGallery.nameOpen);
 
-                setTimeout(function () {
+                setTimeout(() => {
                     ui.addClass(img, ui.photoGallery.nameOpenEase);
                 }, ui.globals.ease + 10);
 
@@ -306,7 +306,7 @@ ui.photoGallery = {
                 info = ui.find('.' + ui.photoGallery.namePreviewInfo)[0];
                 ui.removeClass(info, ui.photoGallery.nameOpen);
 
-                setTimeout(function () {
+                setTimeout(() => {
 
                     if (loadedTitles[index] === null) {
                         info.innerHTML = '';
@@ -328,7 +328,7 @@ ui.photoGallery = {
             ui.addClass(document, ui.photoGallery.namePreviewOpened);
             ui.addClass(preview, ui.photoGallery.nameOpen);
 
-            setTimeout(function () {
+            setTimeout(() => {
                 ui.addClass(preview, ui.photoGallery.nameOpenEase);
             }, 10);
 
@@ -345,7 +345,7 @@ ui.photoGallery = {
                 loadedImages = [];
                 loadedTitles = [];
 
-                setTimeout(function () {
+                setTimeout(() => {
 
                     ui.removeClass(preview, ui.photoGallery.nameOpen);
                     preview[0].parentNode.removeChild(preview[0]);
@@ -401,7 +401,7 @@ ui.photoGallery = {
 
                 toggleGalleryTools();
 
-                setTimeout(function () {
+                setTimeout(() => {
 
                     ui.removeClass(img, ui.photoGallery.nameOpen);
                     ui.removeClass(img, ui.photoGallery.targetPhotoVer);
@@ -713,7 +713,7 @@ ui.photoGallery = {
                 if (e.type === 'touchend') {
 
                     clearTimeout(pageTouchmoveTimer);
-                    pageTouchmoveTimer = setTimeout(function () {
+                    pageTouchmoveTimer = setTimeout(function () { // has this!
 
                         if (pageTouchmove === false) {
 

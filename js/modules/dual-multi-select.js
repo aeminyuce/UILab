@@ -262,7 +262,7 @@ ui.dualMultiSelect = {
 
                 var i, holder, selects, sourceList, targetList, selected;
 
-                setTimeout(function () { // wait for form reset started on DOM
+                setTimeout(() => { // wait for form reset started on DOM
 
                     holder = ui.find('.' + ui.dualMultiSelect.target);
                     ui.each(holder,

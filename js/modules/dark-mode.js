@@ -97,7 +97,7 @@ ui.darkMode = {
                 var current = doc.getAttribute(ui.darkMode.dataMod);
                 ui.addClass(ui.effects.target, ui.effects.nameNoEffects);
 
-                setTimeout(function () {
+                setTimeout(() => {
 
                     if (current !== null && current !== '') {
 
@@ -113,7 +113,7 @@ ui.darkMode = {
                     doc.setAttribute(ui.darkMode.dataMod, mode);
                     setState(mode);
 
-                    setTimeout(function () {
+                    setTimeout(() => {
                         ui.removeClass(ui.effects.target, ui.effects.nameNoEffects);
                     }, 10);
 

@@ -53,7 +53,7 @@ ui.iconlist = {
                 buttons = ui.find('.' + ui.iconlist.nameBtn, this.parentElement);
                 ui.removeClass(buttons, ui.iconlist.stylesToolActive);
 
-                setTimeout(function () {
+                setTimeout(() => {
                     ui.addClass(that, ui.iconlist.stylesToolActive);
                 }, 0);
 

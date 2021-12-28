@@ -191,7 +191,7 @@ ui.pieChart = {
 
                         ui.addClass(that, ui.pieChart.nameOpen);
 
-                        setTimeout(function () {
+                        setTimeout(() => {
                             ui.addClass(that, ui.pieChart.nameOpenEase);
                         }, ui.globals.slow5x); // wait for animations complete
 

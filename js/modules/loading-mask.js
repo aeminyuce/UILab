@@ -55,7 +55,7 @@ ui.loadingMask = {
 
                 if (type === 'hide') {
 
-                    setTimeout(function () {
+                    setTimeout(() => {
 
                         for (j = 0; j < l.length; j++) {
 
@@ -70,7 +70,7 @@ ui.loadingMask = {
 
                 } else { // show
 
-                    setTimeout(function () {
+                    setTimeout(() => {
 
                         for (j = 0; j < l.length; j++) {
 

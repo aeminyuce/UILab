@@ -164,11 +164,11 @@ ui.carousel = {
                 ui.removeClass(elems, ui.carousel.nameShow);
             }
 
-            setTimeout(function () { // wait for dom loading or slider ease time
+            setTimeout(() => { // wait for dom loading or slider ease time
 
                 function show() {
 
-                    setTimeout(function () {
+                    setTimeout(() => {
 
                         ui.addClass(elems[i], ui.carousel.nameShow);
                         i += 1;
@@ -405,7 +405,7 @@ ui.carousel = {
         }
 
         clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function () { // wait auto slider until resize completed
+        resizeTimer = setTimeout(() => { // wait auto slider until resize completed
 
             that = ui.find('.' + ui.carousel.target);
             ui.each(that,
@@ -421,7 +421,7 @@ ui.carousel = {
 
                         clearInterval(autoSlider[i]);
 
-                        autoSlider[i] = setInterval(function () {
+                        autoSlider[i] = setInterval(() => {
                             carouselNav(that[i], 'next');
                         }, autoTimer[i]);
 
@@ -604,7 +604,7 @@ ui.carousel = {
                             autoTimer[j] = ui.carousel.defaultSlideTimer;
                         }
 
-                        autoSlider[j] = setInterval(function () {
+                        autoSlider[j] = setInterval(() => {
                             carouselNav(that, 'next');
                         }, autoTimer[j]);
 
@@ -671,7 +671,7 @@ ui.carousel = {
 
             clearInterval(autoSlider[i]);
 
-            autoSlider[i] = setInterval(function () {
+            autoSlider[i] = setInterval(() => {
                 carouselNav(that, 'next');
             }, autoTimer[i]);
 
@@ -745,7 +745,7 @@ ui.carousel = {
                 isScrolling = true;
                 clearTimeout(isScrollingTimer);
 
-                isScrollingTimer = setTimeout(function () {
+                isScrollingTimer = setTimeout(() => {
                     isScrolling = false;
                 }, ui.globals.ease);
 
@@ -853,7 +853,7 @@ ui.carousel = {
                             that.style.transitionDuration = '';
                             slider.style.transitionDuration = '';
 
-                            setTimeout(function () {
+                            setTimeout(() => {
 
                                 var beforeCount, navDots;
                                 navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that[i])[0];
@@ -910,7 +910,7 @@ ui.carousel = {
                                 filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
 
                                 clearTimeout(touchEndTimer);
-                                touchEndTimer = setTimeout(function () {
+                                touchEndTimer = setTimeout(() => {
 
                                     getSlideSpeed(slider, contentsEase[i], i); // get carousel slide speed
 
@@ -919,7 +919,7 @@ ui.carousel = {
 
                                         clearInterval(autoSlider[i]);
 
-                                        autoSlider[i] = setInterval(function () {
+                                        autoSlider[i] = setInterval(() => {
                                             carouselNav(that, 'next');
                                         }, autoTimer[i]);
 

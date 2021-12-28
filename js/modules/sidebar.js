@@ -56,7 +56,7 @@ ui.sidebar = {
 
         ui.removeClass(document, ui.sidebar.nameOpened);
 
-        setTimeout(function () {
+        setTimeout(() => {
 
             ui.removeClass(panel, ui.sidebar.nameOpen);
             ui.removeClass(bg, ui.sidebar.nameOpen);
@@ -176,12 +176,12 @@ ui.sidebar = {
                 ui.addClass(panel, ui.sidebar.nameOpen);
                 ui.addClass(bg, ui.sidebar.nameOpen);
 
-                setTimeout(function () {
+                setTimeout(() => {
 
                     ui.addClass(panel, ui.sidebar.nameOpenEase);
                     ui.addClass(bg, ui.sidebar.nameOpenEase);
 
-                    setTimeout(function () {
+                    setTimeout(() => {
                         ui.trigger(document, ui.sidebar.eventMenuOpen + ' ' + ui.globals.eventDomChange); // set custom event
                     }, ui.globals.slow);
 

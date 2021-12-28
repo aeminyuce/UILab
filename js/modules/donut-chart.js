@@ -103,7 +103,7 @@ ui.donutChart = {
                 msg = ui.find(ui.donutChart.tagMsg, chart)[0];
                 circle = ui.find('circle', chart);
 
-                setTimeout(function () {
+                setTimeout(() => {
                     ui.removeClass(circle, ui.donutChart.nameSelected);
                 }, 0);
 
@@ -131,7 +131,7 @@ ui.donutChart = {
                     }
 
                     title = that.getAttribute(ui.donutChart.dataTitle);
-                    setTimeout(function () {
+                    setTimeout(() => {
 
                         if (title !== null && title !== '') {
                             msg.innerHTML = title;

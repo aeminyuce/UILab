@@ -78,7 +78,7 @@ ui.dropdown = {
         ui.removeClass(that, ui.dropdown.nameOpenEase);
 
         clearTimeout(dropdownLeaveTimer);
-        dropdownLeaveTimer = setTimeout(function () {
+        dropdownLeaveTimer = setTimeout(() => {
 
             ui.each(that,
 
@@ -87,7 +87,7 @@ ui.dropdown = {
                     clearTimeout(dropdownCloseTimer);
                     list = ui.find('.' + ui.dropdown.nameMenu, this)[0];
 
-                    dropdownCloseTimer = setTimeout(function () {
+                    dropdownCloseTimer = setTimeout(() => {
 
                         if (listStyles === 0) {
                             list.removeAttribute('style');
@@ -135,7 +135,7 @@ ui.dropdown = {
             parent = that.parentNode;
 
             clearTimeout(dropdownOpenTimer);
-            dropdownOpenTimer = setTimeout(function () {
+            dropdownOpenTimer = setTimeout(() => {
 
                 innerParent = ui.closest(parent, '.' + ui.dropdown.target)[0];
                 if ((ui.hasClass(parent, ui.dropdown.nameMenuPosRight) || ui.hasClass(parent, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
@@ -155,7 +155,7 @@ ui.dropdown = {
                 clearTimeout(dropdownOpenTimer);
                 ui.addClass(parent, ui.dropdown.nameOpen);
 
-                dropdownOpenTimer = setTimeout(function () {
+                dropdownOpenTimer = setTimeout(() => {
                     ui.addClass(parent, ui.dropdown.nameOpenEase);
                 }, dropdownHoverTimer / 6);
 
@@ -305,7 +305,7 @@ ui.dropdown = {
 
             if (e.type === 'click') {
 
-                setTimeout(function () {
+                setTimeout(() => {
 
                     ui.on(document,
                         'click.' + ui.dropdown.eventClose,
@@ -426,7 +426,7 @@ ui.dropdown = {
                 innerParent = ui.closest(this, '.' + ui.dropdown.target)[0];
                 that = this;
 
-                dropdownLeaveTimer = setTimeout(function () {
+                dropdownLeaveTimer = setTimeout(() => {
 
                     innerParent = ui.closest(that, '.' + ui.dropdown.target)[0];
                     if ((ui.hasClass(that, ui.dropdown.nameMenuPosRight) || ui.hasClass(that, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
