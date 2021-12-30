@@ -20,7 +20,7 @@ ui.grid = {
 
 (() => {
 
-    ui.grid.Start = function () {
+    ui.grid.Start = () => {
 
         var fnc, o, p, siblings, i;
 

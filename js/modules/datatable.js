@@ -906,7 +906,7 @@ ui.datatable = {
     ui.on(window,
         'beforeunload',
 
-        function () {
+        () => {
 
             if (testStorage && sessionStorage !== undefined) {
 

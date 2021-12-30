@@ -92,6 +92,7 @@ ui.carousel = {
 
     var
         getCols,
+        carouselResizer,
         idCount = 0,
 
         cols = [],
@@ -376,7 +377,7 @@ ui.carousel = {
 
     }
 
-    function carouselResizer(e) {
+    carouselResizer = (e) => {
 
         var that, slider;
 
@@ -705,7 +706,7 @@ ui.carousel = {
         ui.on(window,
             'visibilitychange',
 
-            function () {
+            () => {
 
                 var callCarousels = ui.find('.' + ui.carousel.target + '[' + ui.carousel.dataSlide + ']');
 
@@ -737,7 +738,7 @@ ui.carousel = {
              '.' + ui.carousel.target + ' .' + ui.carousel.nameScrollV + ',' +
              '.' + ui.carousel.target + ' .' + ui.carousel.nameScrollH,
 
-            function (e) {
+            (e) => {
 
                 e.preventDefault();
                 e.stopPropagation();

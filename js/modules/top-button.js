@@ -26,7 +26,9 @@ ui.topButton = {
 
 (() => {
 
-    function togglerFnc() {
+    var togglerFnc;
+
+    togglerFnc = () => {
 
         var topBtn = ui.find('.' + ui.topButton.target);
 

@@ -42,7 +42,9 @@ ui.pieChart = {
 
 (() => {
 
-    function chartsResizer() {
+    var chartsResizer;
+
+    chartsResizer = () => {
 
         var chart, elems;
 

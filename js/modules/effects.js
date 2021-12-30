@@ -34,7 +34,7 @@ ui.effects = {
     ui.on(window,
         'resize scroll',
 
-        function (e) {
+        (e) => {
 
             if (!ui.effects.pauseAll) {
 

@@ -83,9 +83,9 @@ ui.modal = {
 
 (() => {
 
-    var pageYPos;
+    var pageYPos, modalResizer;
 
-    function modalResizer() {
+    modalResizer = () => {
 
         var win, type, container, bg, openSize, userDefined, customW, customH, minHeight;
 

@@ -49,7 +49,7 @@ ui.headerSticky = {
 
     };
 
-    stickyLoad = function () {
+    stickyLoad = () => {
 
         if (header === undefined) { return; } // firefox
         if (window.pageYOffset > header.offsetTop) {

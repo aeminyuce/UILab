@@ -1367,7 +1367,9 @@ ui.topButton = {
 };
 
 (function () {
-  function togglerFnc() {
+  var togglerFnc;
+
+  togglerFnc = function togglerFnc() {
     var topBtn = ui.find('.' + ui.topButton.target);
 
     if (ui.find('body')[0].offsetHeight > window.innerHeight * 2 && window.innerWidth > ui.globals.sm) {
@@ -1389,7 +1391,7 @@ ui.topButton = {
         }
       }, 0);
     }
-  }
+  };
 
   ui.topButton.Start = function () {
     if (ui.userAgents.desktop) {
@@ -3805,6 +3807,7 @@ ui.carousel = {
 
 (function () {
   var getCols,
+      carouselResizer,
       idCount = 0,
       cols = [],
       colsXL = [],
@@ -4046,7 +4049,7 @@ ui.carousel = {
     }
   }
 
-  function carouselResizer(e) {
+  carouselResizer = function carouselResizer(e) {
     var that, slider;
 
     if (touchStarted) {
@@ -4094,7 +4097,7 @@ ui.carousel = {
         slider.style.transitionDuration = '';
       });
     }, ui.globals.ease);
-  }
+  };
 
   ui.carousel.Init = function () {
     var carousels = ui.find('.' + ui.carousel.target + ':not(.' + ui.carousel.nameActive + ')');
@@ -6398,9 +6401,9 @@ ui.modal = {
 };
 
 (function () {
-  var pageYPos;
+  var pageYPos, modalResizer;
 
-  function modalResizer() {
+  modalResizer = function modalResizer() {
     var win, type, container, bg, openSize, userDefined, customW, customH, minHeight;
     win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow + ' .' + ui.modal.nameContent + ':not(.' + ui.modal.nameFullscreen + ')')[0];
 
@@ -6471,7 +6474,7 @@ ui.modal = {
       win.style.top = Math.floor((bg.offsetHeight - win.offsetHeight) / 2) + 'px';
       win.style.left = Math.floor((bg.offsetWidth - win.offsetWidth) / 2) + 'px';
     }
-  }
+  };
 
   ui.modal.Start = function () {
     ui.modal.close = function () {
@@ -7920,7 +7923,9 @@ ui.pieChart = {
 };
 
 (function () {
-  function chartsResizer() {
+  var chartsResizer;
+
+  chartsResizer = function chartsResizer() {
     var chart, elems;
     chart = ui.find('.' + ui.pieChart.target);
 
@@ -7932,7 +7937,7 @@ ui.pieChart = {
       elems = ui.find(ui.pieChart.tagDatasHolder, this)[0];
       elems.style.height = elems.offsetWidth + 'px';
     });
-  }
+  };
 
   ui.pieChart.Start = function () {
     ui.pieChart.Init = function () {

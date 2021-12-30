@@ -546,7 +546,7 @@ ui.lineChart = {
     ui.on(window,
         'resize',
 
-        function () {
+        () => {
             ui.lineChart.Init(ui.lineChart.nameLoaded, true); // resize loaded charts
         });
 

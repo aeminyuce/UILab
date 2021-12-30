@@ -493,7 +493,7 @@ ui.dropdown = {
     ui.on(window,
         'resize',
 
-        function () {
+        () => {
 
             if (window.innerWidth === getScrollPos) { return; } // close only horizontal resizing
 
