@@ -617,7 +617,7 @@ ui.imgUpload = {
                         url : that.action,
                         data: formData,
 
-                        callback: function (status, response) {
+                        callback: (status, response) => {
 
                             ui.removeClass(uploader, ui.imgUpload.nameUploading);
                             if (status === 'success') { // check ajax connection

@@ -282,7 +282,7 @@ ui.autocomplete = {
                                 ui.ajax({
 
                                     url : src + '?' + ui.autocomplete.queryParameter + '=' + v,
-                                    beforesend: function (xhr) {
+                                    beforesend: (xhr) => {
 
                                         // abort still processing previous autocomplete requests
                                         for (n = 0; n < autocompleteRequests.length; n++) {
@@ -295,7 +295,7 @@ ui.autocomplete = {
                                         autocompleteRequests.push(xhr);
 
                                     },
-                                    callback: function (status, response) {
+                                    callback: (status, response) => {
 
                                         if (status === 'success') {
                                             checkData(response);

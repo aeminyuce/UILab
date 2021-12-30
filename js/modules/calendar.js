@@ -410,7 +410,7 @@ ui.calendar = {
                 ui.ajax({
 
                     url : src,
-                    callback: function (status, response) {
+                    callback: (status, response) => {
 
                         if (status === 'success') {
 

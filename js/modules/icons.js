@@ -51,7 +51,7 @@ ui.icons = {
                     ui.ajax({
 
                         url : ui.icons.iconSrc,
-                        callback: function (status, response) {
+                        callback: (status, response) => {
 
                             if (status === 'success') {
 

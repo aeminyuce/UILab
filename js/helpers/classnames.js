@@ -74,7 +74,7 @@ ui.classnames = {
         // check all pages with xhr
         ui.ajax({
             url : ui.classnames.filePath,
-            callback: function () { }
+            callback: () => { }
         });
 
         // get all classnames and data classnames with xhr triggered callback event

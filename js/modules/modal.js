@@ -505,7 +505,7 @@ ui.modal = {
                     ui.ajax({
 
                         url : props.source,
-                        callback: function (status, response) {
+                        callback: (status, response) => {
 
                             if (status === 'success') {
 

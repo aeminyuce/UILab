@@ -28,7 +28,7 @@ ui.onload(function () {
 
             ui.ajax({
                 url : 'xhr/ajax-products.php',
-                callback: function (status, response) {
+                callback: (status, response) => {
 
                     target = ui.find('.product-list');
                     if (target.length > 0) {
