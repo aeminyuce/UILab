@@ -267,7 +267,7 @@ ui.imgUpload = {
 
                 };
 
-                loadImagesAfter = function () {
+                loadImagesAfter = () => {
 
                     loaded += 1;
                     if (loaded === allowed.length) {
@@ -365,14 +365,14 @@ ui.imgUpload = {
                             img[i] = new Image();
                             img[i].src = allowed[i].name;
 
-                            img[i].onload = function () {
+                            img[i].onload = () => {
 
                                 loadImages(i, allowed[i].tag);
                                 loadImagesAfter(); // end of images
 
                             };
 
-                            img[i].onerror = function () {
+                            img[i].onerror = () => {
 
                                 if (ui.alerts === undefined) {
                                     alert(ui.imgUpload.msgImgError);
@@ -395,12 +395,12 @@ ui.imgUpload = {
                             readers[i] = new FileReader(); // filereader API
                             readers[i].readAsDataURL(allowed[i]);
 
-                            readers[i].onload = function () {
+                            readers[i].onload = function () { // has this!
 
                                 img[i] = new Image();
                                 img[i].src = this.result;
 
-                                img[i].onload = function () { loadImages(i, ''); };
+                                img[i].onload = () => { loadImages(i, ''); };
 
                             };
 

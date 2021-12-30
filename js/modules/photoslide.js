@@ -164,14 +164,14 @@ ui.photoslide = {
                     loadedImages[i][count[i]] = new Image();
                     loadedImages[i][count[i]].src = dataSrcLists[i][count[i]];
 
-                    loadedImages[i][count[i]].onload = function () {
+                    loadedImages[i][count[i]].onload = () => {
 
                         img.src = loadedImages[i][count[i]].src;
                         ui.addClass(slider, ui.photoslide.nameLoaded);
 
                     };
 
-                    img.onerror = function () {
+                    img.onerror = () => {
                         ui.removeClass(slider, ui.photoslide.nameLoaded);
                     };
 

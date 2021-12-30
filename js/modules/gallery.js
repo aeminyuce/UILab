@@ -104,7 +104,7 @@ ui.photoGallery = {
 
                 img[imgCounter].src = newImg.src;
 
-                newImg.onload = function () {
+                newImg.onload = function () { // has this!
 
                     if (this.naturalWidth / this.naturalHeight < ui.photoGallery.imgVerRatio) {
                         ui.addClass(img[imgCounter], ui.photoGallery.targetPhotoVer);
@@ -145,7 +145,7 @@ ui.photoGallery = {
 
         function galleryFnc(e, that, call) {
 
-            var i, parent, images, preview, html, index, loader, newImg, img, imgPosX, imgPosY, info, imgZoom, lastTouchEnd, waitPinchZoom;
+            var i, parent, images, preview, html, index, loader, showImage, notLoadedImage, newImg, img, imgPosX, imgPosY, info, imgZoom, lastTouchEnd, waitPinchZoom;
 
             parent = ui.closest(that, '.' + ui.photoGallery.targetGallery)[0];
 
@@ -255,7 +255,7 @@ ui.photoGallery = {
 
             loader = ui.find('.' + ui.photoGallery.namePreviewLoader, preview);
 
-            function showImage() {
+            showImage = () => {
 
                 if (img.naturalWidth / img.naturalHeight < 1.33) {
                     ui.addClass(img, ui.photoGallery.targetPhotoVer);
@@ -275,7 +275,7 @@ ui.photoGallery = {
 
             }
 
-            function notLoadedImage() {
+            notLoadedImage = () => {
 
                 ui.addClass(loader, ui.photoGallery.namePause);
                 ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.errorIcon);

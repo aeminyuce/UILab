@@ -975,7 +975,7 @@ ui.carousel = {
                 newImg = new Image();
                 newImg.src = this.getAttribute(ui.carousel.dataHref);
 
-                newImg.onload = function () {
+                newImg.onload = () => {
 
                     target.src = newImg.src;
                     ui.removeClass(detail, ui.carousel.nameGalleryDetailLoader);

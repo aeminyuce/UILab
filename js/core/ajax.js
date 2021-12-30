@@ -47,7 +47,7 @@ ui.ajax = function (props) {
     } else { ui.ajax.requests[i].send(); }
 
     // xhr loading
-    ui.ajax.requests[i].onload = function () {
+    ui.ajax.requests[i].onload = () => {
 
         if (ui.ajax.requests[i].readyState === 4 && ui.ajax.requests[i].status === 200) {
 
@@ -103,7 +103,7 @@ ui.ajax = function (props) {
     };
 
     // error
-    ui.ajax.requests[i].onerror = function () {
+    ui.ajax.requests[i].onerror = () => {
         props.callback('error', '', ui.ajax.requests[i]);
     };
 
