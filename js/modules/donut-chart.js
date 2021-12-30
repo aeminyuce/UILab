@@ -155,7 +155,7 @@ ui.donutChart = {
     ui.on(document,
         ui.globals.eventAjaxCallback,
 
-        function () {
+        () => {
 
             if (ui.ajax.classNames.indexOf(ui.donutChart.target) > -1) {
                 ui.donutChart.Init();

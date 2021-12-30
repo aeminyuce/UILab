@@ -74,7 +74,7 @@ ui.formSpinner = {
     ui.on(document,
         ui.globals.eventAjaxCallback,
 
-        function () {
+        () => {
 
             if (ui.ajax.classNames.indexOf(ui.formSpinner.target) > -1) {
                 ui.formSpinner.Init();

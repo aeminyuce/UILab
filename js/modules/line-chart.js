@@ -553,7 +553,7 @@ ui.lineChart = {
     ui.on(document,
         ui.globals.eventDomChange,
 
-        function () {
+        () => {
             ui.lineChart.Init(ui.globals.eventDomChange); // resize loaded charts
         });
 
@@ -561,7 +561,7 @@ ui.lineChart = {
     ui.on(document,
         ui.globals.eventAjaxCallback,
 
-        function () {
+        () => {
 
             if (ui.ajax.classNames.indexOf(ui.lineChart.target) > -1) {
                 ui.lineChart.Init(ui.lineChart.nameNotLoaded); // show not loaded charts

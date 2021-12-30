@@ -136,7 +136,7 @@ ui.countdown = {
     ui.on(document,
         ui.globals.eventAjaxCallback,
 
-        function () {
+        () => {
 
             if (ui.ajax.classNames.indexOf(ui.countdown.target) > -1) {
                 ui.countdown.Start();

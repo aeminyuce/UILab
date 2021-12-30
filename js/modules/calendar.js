@@ -978,7 +978,7 @@ ui.calendar = {
     ui.on(document,
         ui.globals.eventAjaxCallback,
 
-        function () {
+        () => {
 
             if (ui.ajax.classNames.indexOf(ui.calendar.target) > -1) {
                 ui.calendar.Init();

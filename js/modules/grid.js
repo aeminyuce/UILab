@@ -103,7 +103,7 @@ ui.grid = {
     ui.on(document,
         ui.globals.eventAjaxCallback,
 
-        function () {
+        () => {
 
             if (ui.ajax.classNames.indexOf(ui.grid.targetOrdersPrefix) > -1) {
                 ui.grid.Start();

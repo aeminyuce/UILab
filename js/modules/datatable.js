@@ -942,7 +942,7 @@ ui.datatable = {
     ui.on(document,
         ui.globals.eventAjaxCallback,
 
-        function () {
+        () => {
 
             if (ui.ajax.classNames.indexOf(ui.datatable.target) > -1) {
                 ui.datatable.Start();

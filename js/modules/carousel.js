@@ -994,13 +994,13 @@ ui.carousel = {
     ui.onload(ui.carousel.Start);
 
     ui.on(window, 'resize', carouselResizer);
-    ui.on(document, ui.globals.eventDomChange, function () { carouselResizer('resize'); });
+    ui.on(document, ui.globals.eventDomChange, () => { carouselResizer('resize'); });
 
     // ajax callback loader
     ui.on(document,
         ui.globals.eventAjaxCallback,
 
-        function () {
+        () => {
 
             if (ui.ajax.classNames.indexOf(ui.carousel.target) > -1) {
                 ui.carousel.Init();

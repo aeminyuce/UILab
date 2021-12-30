@@ -250,7 +250,7 @@ ui.weather = {
     ui.on(document,
         ui.globals.eventAjaxCallback,
 
-        function () {
+        () => {
 
             if (ui.ajax.classNames.indexOf(ui.weather.target) > -1) {
                 ui.weather.Init();

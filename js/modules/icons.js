@@ -79,7 +79,7 @@ ui.icons = {
     ui.on(document,
         ui.globals.eventAjaxCallback,
 
-        function () {
+        () => {
 
             if (ui.ajax.classNames.indexOf(ui.formSpinner.nameIcon) > -1) {
                 ui.icons.Start();

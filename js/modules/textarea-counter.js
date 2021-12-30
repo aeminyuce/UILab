@@ -109,7 +109,7 @@ ui.textareaCounter = {
     ui.on(document,
         ui.globals.eventAjaxCallback,
 
-        function () {
+        () => {
 
             if (ui.ajax.data.indexOf(ui.textareaCounter.dataCounter) > 0) {
                 ui.textareaCounter.Init();

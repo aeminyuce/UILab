@@ -194,7 +194,7 @@ ui.photoslide = {
     ui.on(document,
         ui.globals.eventAjaxCallback,
 
-        function () {
+        () => {
 
             if (ui.ajax.classNames.indexOf(ui.photoslide.target) > -1) {
                 ui.photoslide.Init();

@@ -81,7 +81,7 @@ ui.classnames = {
         ui.on(document,
             ui.globals.eventAjaxCallback,
 
-            function () {
+            () => {
 
                 var i, j, re, reStart, reDuplicate, loaded, str, strStart, strLength, html, title, items, jsClass, jsModule, jsKey, jsStyleList, filterClassnames;
 

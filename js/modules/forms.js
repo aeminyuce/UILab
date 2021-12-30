@@ -387,7 +387,7 @@ ui.forms = {
     ui.on(document,
         ui.globals.eventAjaxCallback,
 
-        function () {
+        () => {
 
             if (ui.ajax.classNames.indexOf(ui.forms.nameClear) > 0) {
                 ui.forms.Init();
