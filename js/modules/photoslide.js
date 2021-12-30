@@ -41,7 +41,7 @@ ui.photoslide = {
         dataSrcLists,
         loadedImages;
 
-    ui.photoslide.Init = function () {
+    ui.photoslide.Init = () => {
 
         var slider, j, images, dataSrc, nav, navDots, re;
 
@@ -105,7 +105,7 @@ ui.photoslide = {
 
     }
 
-    ui.photoslide.Start = function () {
+    ui.photoslide.Start = () => {
 
         // empty arrays when reloading
         count = [];

@@ -18,7 +18,7 @@ ui.icons = {
 
 (() => {
 
-    ui.icons.Start = function () {
+    ui.icons.Start = () => {
 
         // svg icon reference replacement for IE
         if (!ui.userAgents.ie) { return; }

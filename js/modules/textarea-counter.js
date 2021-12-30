@@ -22,7 +22,7 @@ ui.textareaCounter = {
 
 (() => {
 
-    ui.textareaCounter.Start = function () {
+    ui.textareaCounter.Start = () => {
 
         function counter(t) {
 
@@ -50,7 +50,7 @@ ui.textareaCounter = {
 
         }
 
-        ui.textareaCounter.Init = function () {
+        ui.textareaCounter.Init = () => {
 
             ui.each('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + ']:not(.' + ui.textareaCounter.nameToggle + '):not(.' + ui.textareaCounter.nameChange + ')',
 

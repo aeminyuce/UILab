@@ -25,9 +25,9 @@ ui.donutChart = {
 
 (() => {
 
-    ui.donutChart.Start = function () {
+    ui.donutChart.Start = () => {
 
-        ui.donutChart.Init = function () {
+        ui.donutChart.Init = () => {
 
             var chart, circles, percent, dasharray, angle, arrPercent, arrAngle;
 

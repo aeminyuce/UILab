@@ -83,7 +83,7 @@ ui.sidebar = {
 
     };
 
-    ui.sidebar.Start = function () {
+    ui.sidebar.Start = () => {
 
         // Event Listeners
         ui.on(document,

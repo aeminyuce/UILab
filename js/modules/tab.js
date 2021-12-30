@@ -31,7 +31,7 @@ ui.tab = {
 
 (() => {
 
-    ui.tab.Start = function () {
+    ui.tab.Start = () => {
 
         // Event Listeners
         ui.on(document,

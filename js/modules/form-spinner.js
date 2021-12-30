@@ -16,7 +16,7 @@ ui.formSpinner = {
 
 (() => {
 
-    ui.formSpinner.Start = function () {
+    ui.formSpinner.Start = () => {
 
         // Event Listeners
         ui.on(document,
@@ -51,7 +51,7 @@ ui.formSpinner = {
 
             });
 
-        ui.formSpinner.Init = function () {
+        ui.formSpinner.Init = () => {
 
             ui.each('.' + ui.formSpinner.target,
 

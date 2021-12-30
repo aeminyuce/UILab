@@ -62,9 +62,9 @@ ui.pieChart = {
 
     }
 
-    ui.pieChart.Start = function () {
+    ui.pieChart.Start = () => {
 
-        ui.pieChart.Init = function () {
+        ui.pieChart.Init = () => {
 
             var chart, elems, deg, textDeg, loadFnc, arr, fill, percent, html, title, msgHolder, msg;
 

@@ -71,7 +71,7 @@ ui.imgUpload = {
 
 (() => {
 
-    ui.imgUpload.Start = function () {
+    ui.imgUpload.Start = () => {
 
         var uploaders, savedImgs;
 

@@ -15,7 +15,7 @@ ui.card = {
 
 (() => {
 
-    ui.card.Start = function () {
+    ui.card.Start = () => {
 
         // Event Listeners
         ui.on(document,

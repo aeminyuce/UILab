@@ -76,7 +76,7 @@ ui.headerSticky = {
 
     };
 
-    ui.headerSticky.Start = function () {
+    ui.headerSticky.Start = () => {
 
         header = ui.find('.' + ui.headerSticky.target);
         if (header.length === 0) { return; }

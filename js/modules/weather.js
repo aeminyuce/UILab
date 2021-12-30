@@ -52,14 +52,14 @@ ui.weather = {
         re = new RegExp('\\s+\\s'),
         rex = new RegExp('^\\s|\\s+$');
 
-    ui.weather.Start = function () {
+    ui.weather.Start = () => {
 
         var date, dateText, dateHtml, clockText, clockHtml, minute, hour, day, month, that, graphs, animations, sun, sunPos, sunrise, sunset;
 
         animations = [];
 
         // load animation graphics
-        ui.weather.Init = function () {
+        ui.weather.Init = () => {
 
             var i, html;
 

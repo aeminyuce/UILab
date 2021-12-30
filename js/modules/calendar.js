@@ -100,7 +100,7 @@ ui.calendar = {
 (() => {
 
     // first loading
-    ui.calendar.Start = function () {
+    ui.calendar.Start = () => {
 
         var pickerVal;
 
@@ -510,7 +510,7 @@ ui.calendar = {
         }
 
         // ckeck not loaded calendars
-        ui.calendar.Init = function () {
+        ui.calendar.Init = () => {
 
             var calendars = ui.find('.' + ui.calendar.target + ':not(.' + ui.calendar.nameActive + ')');
 

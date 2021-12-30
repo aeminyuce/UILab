@@ -19,7 +19,7 @@ ui.countdown = {
 
     var countdownTimer;
 
-    ui.countdown.Start = function () {
+    ui.countdown.Start = () => {
 
         var countdown, arr, calc;
 

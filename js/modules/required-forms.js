@@ -37,7 +37,7 @@ ui.requiredForms = {
 
 (() => {
 
-    ui.requiredForms.Start = function () {
+    ui.requiredForms.Start = () => {
 
         function required(that, type) {
 

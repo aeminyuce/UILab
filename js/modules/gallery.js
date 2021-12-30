@@ -82,7 +82,7 @@ ui.photoGallery = {
         pageTouchmove = false,
         pageTouchmoveTimer;
 
-    ui.photoGallery.Start = function () {
+    ui.photoGallery.Start = () => {
 
         var gallery, galleryCounter, imgCounter, pageYPos, imgWidth, imgHeight, loadedImages = [], loadedTitles = [];
 

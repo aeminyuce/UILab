@@ -81,7 +81,7 @@ ui.alerts = {
         cancelCloseDialog,
         messageQueue = [];
 
-    ui.alerts.Start = function () {
+    ui.alerts.Start = () => {
 
         // dialogues
         ui.alerts.closeDialog = function () {

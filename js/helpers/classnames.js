@@ -47,7 +47,7 @@ ui.classnames = {
 
 (() => {
 
-    ui.classnames.Start = function () {
+    ui.classnames.Start = () => {
 
         var arr, total, created, list, alerts, lastAddedWarning;
 

@@ -120,7 +120,7 @@ ui.dropdown = {
 
     }
 
-    ui.dropdown.Start = function () {
+    ui.dropdown.Start = () => {
 
         function dropdownOpen(e, that) {
 

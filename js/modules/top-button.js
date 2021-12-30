@@ -68,7 +68,7 @@ ui.topButton = {
 
     }
 
-    ui.topButton.Start = function () {
+    ui.topButton.Start = () => {
 
         if (ui.userAgents.desktop) {
 

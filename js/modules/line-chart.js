@@ -87,7 +87,7 @@ ui.lineChart = {
 (() => {
 
     // load charts
-    ui.lineChart.Start = function () {
+    ui.lineChart.Start = () => {
 
         var i, j, k, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
 

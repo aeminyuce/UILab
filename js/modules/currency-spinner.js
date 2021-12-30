@@ -23,7 +23,7 @@ ui.currencySpinner = {
 
     var cacheCurrencySpinner;
 
-    ui.currencySpinner.Start = function () {
+    ui.currencySpinner.Start = () => {
 
         var convert;
 

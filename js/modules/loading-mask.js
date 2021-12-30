@@ -31,7 +31,7 @@ ui.loadingMask = {
         maskItems = [],
         maskHolders = [];
 
-    ui.loadingMask.Start = function () {
+    ui.loadingMask.Start = () => {
 
         ui.loadingMask.toggle = function (that) {
 

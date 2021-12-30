@@ -49,7 +49,7 @@ ui.forms = {
 
     var clearForms;
 
-    ui.forms.Start = function () {
+    ui.forms.Start = () => {
 
         function formFocus(t, type) {
 
@@ -119,7 +119,7 @@ ui.forms = {
 
         };
 
-        ui.forms.Init = function () {
+        ui.forms.Init = () => {
 
             ui.each('.' + ui.forms.targetText + '.' + ui.forms.nameHasClear + ' input', function () {
 

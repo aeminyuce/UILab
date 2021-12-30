@@ -824,7 +824,7 @@ ui.datatable = {
         });
 
     // first loading
-    ui.datatable.Start = function () {
+    ui.datatable.Start = () => {
 
         ui.each('.' + ui.datatable.target + ':not(.' + ui.datatable.targetLoaded + ')',
 

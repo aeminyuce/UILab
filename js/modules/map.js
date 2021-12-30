@@ -26,7 +26,7 @@ ui.map = {
 
 (() => {
 
-    ui.map.Start = function () {
+    ui.map.Start = () => {
 
         var map, arr, data, items, opacity;
 

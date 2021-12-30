@@ -30,7 +30,7 @@ ui.iconlist = {
 
 (() => {
 
-    ui.iconlist.Start = function () {
+    ui.iconlist.Start = () => {
 
         var tools, list, icons, totalIcons;
 

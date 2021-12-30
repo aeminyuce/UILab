@@ -50,7 +50,7 @@ ui.autocomplete = {
 
 (() => {
 
-    ui.autocomplete.Start = function () {
+    ui.autocomplete.Start = () => {
 
         var
             customLowerCase,

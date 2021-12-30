@@ -22,7 +22,7 @@ ui.dualMultiSelect = {
         resetOptions,
         movetoSource;
 
-    ui.dualMultiSelect.Start = function () {
+    ui.dualMultiSelect.Start = () => {
 
         resetOptions = function (selects, isSubmit) { // reset options
 
@@ -59,7 +59,7 @@ ui.dualMultiSelect = {
 
         };
 
-        ui.dualMultiSelect.Init = function () {
+        ui.dualMultiSelect.Init = () => {
 
             var i, holder, selects, name, arr, userArr, arrStart, index, options, selected;
 

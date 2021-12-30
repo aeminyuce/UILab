@@ -236,7 +236,7 @@ ui.tooltip = {
 
     }
 
-    ui.tooltip.Start = function () {
+    ui.tooltip.Start = () => {
 
         // Event Listeners
         ui.on(document,

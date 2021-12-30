@@ -178,7 +178,7 @@ ui.modal = {
 
     }
 
-    ui.modal.Start = function () {
+    ui.modal.Start = () => {
 
         ui.modal.close = function () {
 

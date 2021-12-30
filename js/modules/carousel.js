@@ -439,7 +439,7 @@ ui.carousel = {
 
     }
 
-    ui.carousel.Init = function () {
+    ui.carousel.Init = () => {
 
         var carousels = ui.find('.' + ui.carousel.target + ':not(.' + ui.carousel.nameActive + ')');
 
@@ -630,7 +630,7 @@ ui.carousel = {
 
     }
 
-    ui.carousel.Start = function () {
+    ui.carousel.Start = () => {
 
         ui.carousel.Init();
 
