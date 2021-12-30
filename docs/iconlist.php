@@ -483,7 +483,6 @@
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#file-pdf"/></svg><span>file-pdf</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#file-png"/></svg><span>file-png</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#file-ppt"/></svg><span>file-ppt</span></li>
-                    <li><svg class="ui-icon"><use href="../dist/icons.svg#file-pptx"/></svg><span>file-pptx</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#file-rar"/></svg><span>file-rar</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#file-svg"/></svg><span>file-svg</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#file-tiff"/></svg><span>file-tiff</span></li>
