@@ -27,10 +27,6 @@
     100% { transform: scale(1); }
 }
 
-[class*="ui-ease-"],
-[class*="ui-ease-1st-"] > *,
-[class*="ui-ease-2nd-"] > * > * { transition-duration: @ease-default; transition-timing-function: ease-out; }
-
 .ui- {
     &animate- {
         &spin { animation: ui-spin 1.15s linear infinite; }
@@ -48,6 +44,8 @@
     }
 }
 
+[class*="ui-ease-"],[class*="ui-ease-1st-"] > *,[class*="ui-ease-2nd-"] > * > * { transition-timing-function: ease-out; }
+
 .ui-ease- {
 
     each(@ease-types, {
@@ -56,19 +54,19 @@
         }
     });
 
-    &color,&1st-color > *,&2nd-color > * > * { transition-property: color; }
-    &width,&1st-width > *,&2nd-width > * > * { transition-property: width; }
-    &height,&1st-height > *,&2nd-height > * > * { transition-property: height; }
-    &bg,&1st-bg > *,&2nd-bg > * > * { transition-property: background-color; }
-    &margin,&1st-margin > *,&2nd-margin > * > * { transition-property: margin; }
-    &border,&1st-border > *,&2nd-border > * > * { transition-property: border-color, border-width; }
-    &position,&1st-position > *,&2nd-position > * > * { transition-property: top, right, bottom, left; }
-    &layout,&1st-layout > *,&2nd-layout > * > * { transition-property: transform, opacity, box-shadow; }
-    &svg,&1st-svg > *,&2nd-svg > * > * { transition-property: fill, stroke, opacity; }
+    &color,&1st-color > *,&2nd-color > * > * { transition-property: color; transition-duration: @ease-default; }
+    &width,&1st-width > *,&2nd-width > * > * { transition-property: width; transition-duration: @ease-default; }
+    &height,&1st-height > *,&2nd-height > * > * { transition-property: height; transition-duration: @ease-default; }
+    &bg,&1st-bg > *,&2nd-bg > * > * { transition-property: background-color; transition-duration: @ease-default; }
+    &margin,&1st-margin > *,&2nd-margin > * > * { transition-property: margin; transition-duration: @ease-default; }
+    &border,&1st-border > *,&2nd-border > * > * { transition-property: border-color, border-width; transition-duration: @ease-default; }
+    &position,&1st-position > *,&2nd-position > * > * { transition-property: top, right, bottom, left; transition-duration: @ease-default; }
+    &layout,&1st-layout > *,&2nd-layout > * > * { transition-property: transform, opacity, box-shadow; transition-duration: @ease-default; }
+    &svg,&1st-svg > *,&2nd-svg > * > * { transition-property: fill, stroke, opacity; transition-duration: @ease-default; }
     &all { transition-property: all; }
 
     &default {
-        &,&[class*="ui-ease-1st-"]> *,&[class*="ui-ease-2nd-"] > * > * { transition-duration: ease-out !important; transition-timing-function: ease !important; }
+        &,&[class*="ui-ease-1st-"]> *,&[class*="ui-ease-2nd-"] > * > * { transition-duration: @ease-default !important; transition-timing-function: ease !important; }
     }
 }
 

@@ -265,12 +265,6 @@ body {
     transform: scale(1);
   }
 }
-[class*="ui-ease-"],
-[class*="ui-ease-1st-"] > *,
-[class*="ui-ease-2nd-"] > * > * {
-  transition-duration: 0.15s;
-  transition-timing-function: ease-out;
-}
 .ui-animate-spin {
   animation: ui-spin 1.15s linear infinite;
 }
@@ -303,6 +297,11 @@ body {
 .ui-effects-paused *:after {
   transition-property: none !important;
   animation-play-state: paused !important;
+}
+[class*="ui-ease-"],
+[class*="ui-ease-1st-"] > *,
+[class*="ui-ease-2nd-"] > * > * {
+  transition-timing-function: ease-out;
 }
 .ui-ease-fast,
 .ui-ease-fast[class*="ui-ease-1st-"] > *,
@@ -338,46 +337,55 @@ body {
 .ui-ease-1st-color > *,
 .ui-ease-2nd-color > * > * {
   transition-property: color;
+  transition-duration: 0.15s;
 }
 .ui-ease-width,
 .ui-ease-1st-width > *,
 .ui-ease-2nd-width > * > * {
   transition-property: width;
+  transition-duration: 0.15s;
 }
 .ui-ease-height,
 .ui-ease-1st-height > *,
 .ui-ease-2nd-height > * > * {
   transition-property: height;
+  transition-duration: 0.15s;
 }
 .ui-ease-bg,
 .ui-ease-1st-bg > *,
 .ui-ease-2nd-bg > * > * {
   transition-property: background-color;
+  transition-duration: 0.15s;
 }
 .ui-ease-margin,
 .ui-ease-1st-margin > *,
 .ui-ease-2nd-margin > * > * {
   transition-property: margin;
+  transition-duration: 0.15s;
 }
 .ui-ease-border,
 .ui-ease-1st-border > *,
 .ui-ease-2nd-border > * > * {
   transition-property: border-color, border-width;
+  transition-duration: 0.15s;
 }
 .ui-ease-position,
 .ui-ease-1st-position > *,
 .ui-ease-2nd-position > * > * {
   transition-property: top, right, bottom, left;
+  transition-duration: 0.15s;
 }
 .ui-ease-layout,
 .ui-ease-1st-layout > *,
 .ui-ease-2nd-layout > * > * {
   transition-property: transform, opacity, box-shadow;
+  transition-duration: 0.15s;
 }
 .ui-ease-svg,
 .ui-ease-1st-svg > *,
 .ui-ease-2nd-svg > * > * {
   transition-property: fill, stroke, opacity;
+  transition-duration: 0.15s;
 }
 .ui-ease-all {
   transition-property: all;
@@ -385,7 +393,7 @@ body {
 .ui-ease-default,
 .ui-ease-default[class*="ui-ease-1st-"] > *,
 .ui-ease-default[class*="ui-ease-2nd-"] > * > * {
-  transition-duration: ease-out !important;
+  transition-duration: 0.15s !important;
   transition-timing-function: ease !important;
 }
 .ui-ease-in,
@@ -3967,6 +3975,7 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
 .ui-ease-1st-btn > *,
 .ui-ease-2nd-btn > * > * {
   transition-property: color, background-color, border-width, border-color, opacity, transform, box-shadow;
+  transition-duration: 0.15s;
 }
 .ui-ease-btn .ui-icon,
 .ui-ease-1st-btn > * .ui-icon,
@@ -4821,6 +4830,7 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
 .ui-ease-1st-form > *,
 .ui-ease-2nd-form > * > * {
   transition-property: color, background-color, border-color;
+  transition-duration: 0.15s;
 }
 .ui-ease-form .ui-icon,
 .ui-ease-1st-form > * .ui-icon,
@@ -5833,6 +5843,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 /* autocomplete */
 .ui-ease-autocomplete {
   transition-property: margin-top, opacity;
+  transition-duration: 0.15s;
 }
 .ui-ease-autocomplete ul {
   transition-property: opacity;
@@ -7325,6 +7336,7 @@ html:not(.ui-ie) .ui-steps-bar li {
 /* tooltip */
 .ui-ease-tooltip {
   transition-property: top, left, opacity;
+  transition-duration: 0.15s;
 }
 [data-ui-tooltip] {
   display: inline-block;
@@ -7638,6 +7650,7 @@ button.ui-dialog-custom {
 /* calendar */
 .ui-ease-calendar {
   transition-property: opacity;
+  transition-duration: 0.15s;
 }
 .ui-ease-calendar .ui-calendar-details,
 .ui-ease-calendar thead,
@@ -9045,6 +9058,7 @@ button.ui-dialog-custom {
 /* weather */
 .ui-ease-weather .ui-graphs {
   transition-property: background-color;
+  transition-duration: 0.15s;
 }
 .ui-ease-weather .ui-graphs,
 .ui-ease-weather .ui-graphs > div {
