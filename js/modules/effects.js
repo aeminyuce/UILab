@@ -53,7 +53,7 @@ ui.effects = {
 
     });
 
-    ui.onload(function () {
+    ui.onload(() => {
 
         var detectMotion, reduceTimers;
 

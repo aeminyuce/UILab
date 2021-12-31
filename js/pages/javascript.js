@@ -1,7 +1,7 @@
 /* javascript */
 
 // loader
-ui.onload(function () {
+ui.onload(() => {
 
     setTimeout(() => {
 

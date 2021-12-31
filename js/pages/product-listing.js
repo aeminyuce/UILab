@@ -12,7 +12,7 @@ ui.lineChart.showGrid = false;
 ui.lineChart.showInfo = false;
 
 // loader
-ui.onload(function () {
+ui.onload(() => {
 
     ui.on('.product-list-load-more',
         'click',

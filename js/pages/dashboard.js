@@ -69,8 +69,7 @@
     ui.on(document, 'click', '.dashboard-menu-show,.dashboard-menu-hide', dashboardMenuToggler);
 
     // loader
-    ui.onload(
-        function () { // check stored menu position
+    ui.onload(() => { // check stored menu position
 
             testStorage = true;
 

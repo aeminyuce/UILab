@@ -3,7 +3,7 @@
 import { ui } from './globals.js';
 export default () => ui;
 
-ui.onload = function (callback) {
+ui.onload = (callback) => {
 
     var handlerFnc, i;
 

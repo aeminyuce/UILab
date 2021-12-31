@@ -25,7 +25,7 @@ ui.darkMode = {
 
 (() => {
 
-    ui.onload(function () {
+    ui.onload(() => {
 
         if (ui.userAgents.ie) { return; } // change event listener for darkColorScheme not supported on IE!
 
