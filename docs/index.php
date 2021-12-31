@@ -120,7 +120,7 @@
             <div class="ui-col-250 ui-theme-gray ui-fill-light-200 ui-hidden-md">
 
                 <div class="ui-sidebar-add-r">
-                    <ul class="ui-list-unstyled ui-align-l ui-block-2nd ui-ease-2nd-button">
+                    <ul class="ui-list-unstyled ui-align-l ui-block-2nd ui-ease-2nd-btn">
                         <li><a class="ui-btn ui-btn-ghost" href="?p=alerts">Alerts</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=avatars">Avatars</a></li>
                         <li><a class="ui-btn ui-btn-ghost" href="?p=breadcrumbs">Breadcrumbs</a></li>
