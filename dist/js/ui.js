@@ -4663,6 +4663,8 @@ ui.datatable = {
   sortIcon: 'sort',
   ascIcon: 'sort-up',
   descIcon: 'sort-down',
+  ascNumberIcon: 'sort-number-up',
+  descNumberIcon: 'sort-number-down',
   prevIcon: 'angle-left',
   nextIcon: 'angle-right',
   valueSplit: '|',
@@ -4925,16 +4927,32 @@ ui.datatable = {
         ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
       }
     });
+    sortType = this.getAttribute(ui.datatable.dataType);
+
+    if (sortType === null) {
+      sortType = '';
+    }
+
     isAsc = ui.hasClass(this, ui.datatable.nameAsc);
 
     if (isAsc) {
       ui.removeClass(this, ui.datatable.nameAsc);
       ui.addClass(this, ui.datatable.nameDesc);
-      ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descIcon);
+
+      if (sortType === ui.datatable.sortTypeNumber) {
+        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descNumberIcon);
+      } else {
+        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descIcon);
+      }
     } else {
       ui.removeClass(this, ui.datatable.nameDesc);
       ui.addClass(this, ui.datatable.nameAsc);
-      ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascIcon);
+
+      if (sortType === ui.datatable.sortTypeNumber) {
+        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascNumberIcon);
+      } else {
+        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascIcon);
+      }
     }
 
     gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
@@ -4950,12 +4968,6 @@ ui.datatable = {
       sortIndex = 0;
     } else {
       sortIndex = Number(sortIndex) - 1;
-    }
-
-    sortType = this.getAttribute(ui.datatable.dataType);
-
-    if (sortType === null) {
-      sortType = '';
     }
 
     list = ui.find('.' + ui.datatable.nameListContent, temp);
