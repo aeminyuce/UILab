@@ -298,6 +298,8 @@
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#sort"/></svg><span>sort</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#sort-up"/></svg><span>sort-up</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#sort-down"/></svg><span>sort-down</span></li>
+                    <li><svg class="ui-icon"><use href="../dist/icons.svg#sort-number-up"/></svg><span>sort-number-up</span></li>
+                    <li><svg class="ui-icon"><use href="../dist/icons.svg#sort-number-down"/></svg><span>sort-number-down</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#star"/></svg><span>star</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#star-half"/></svg><span>star-half</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#table"/></svg><span>table</span></li>
@@ -358,6 +360,8 @@
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#mobile-h"/></svg><span>mobile-h</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#tablet-v"/></svg><span>tablet-v</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#tablet-h"/></svg><span>tablet-h</span></li>
+                    <li><svg class="ui-icon"><use href="../dist/icons.svg#watch"/></svg><span>watch</span></li>
+                    <li><svg class="ui-icon"><use href="../dist/icons.svg#watch-fitness"/></svg><span>watch-fitness</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#headphone"/></svg><span>headphone</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#headset"/></svg><span>headset</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#music"/></svg><span>music</span></li>
