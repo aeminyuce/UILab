@@ -14,24 +14,22 @@ ui.iconlist = {
 
 (function () {
   ui.iconlist.Start = function () {
-    var tools, list, icons, totalIcons;
-    list = ui.find('.' + ui.iconlist.target);
-    tools = ui.find('.' + ui.iconlist.nameTools + ' .' + ui.iconlist.nameBtn);
+    var list = ui.find('.' + ui.iconlist.target);
+    var tools = ui.find('.' + ui.iconlist.nameTools + ' .' + ui.iconlist.nameBtn);
 
     if (list[0] === undefined || tools[0] === undefined) {
       return;
     }
 
-    totalIcons = 0;
+    var totalIcons = 0;
     ui.on(tools, 'click', function () {
-      var that, buttons, size;
-      that = this;
-      buttons = ui.find('.' + ui.iconlist.nameBtn, this.parentElement);
+      var that = this;
+      var buttons = ui.find('.' + ui.iconlist.nameBtn, this.parentElement);
       ui.removeClass(buttons, ui.iconlist.stylesToolActive);
       setTimeout(function () {
         ui.addClass(that, ui.iconlist.stylesToolActive);
       }, 0);
-      size = this.getAttribute(ui.iconlist.dataSize);
+      var size = this.getAttribute(ui.iconlist.dataSize);
 
       if (size !== null) {
         ui.removeClass(list, ui.iconlist.stylesIconSizes);
@@ -41,17 +39,16 @@ ui.iconlist = {
         }
       }
     });
-    ui.each('.' + ui.iconlist.target, function () {
-      var total = ui.find('li', this).length;
-      this.previousElementSibling.insertAdjacentHTML('beforeend', ' <span class="' + ui.iconlist.stylesTotal + '">(' + total + ' icons)</span>');
+    ui.find('.' + ui.iconlist.target).forEach(function (el) {
+      var total = ui.find('li', el).length;
+      el.previousElementSibling.insertAdjacentHTML('beforeend', ' <span class="' + ui.iconlist.stylesTotal + '">(' + total + ' icons)</span>');
       totalIcons += total;
     });
     ui.find('.' + ui.iconlist.nameTotal)[0].textContent = '(' + ui.iconlist.msgTotal + ': ' + totalIcons + ')';
-    icons = ui.find('.' + ui.iconlist.target + ' li');
+    var icons = ui.find('.' + ui.iconlist.target + ' li');
     ui.on(icons, 'click', function () {
-      var range, iconName;
-      range = document.createRange();
-      iconName = ui.find('span', this)[0];
+      var range = document.createRange();
+      var iconName = ui.find('span', this)[0];
       range.selectNode(iconName);
       window.getSelection().removeAllRanges();
       window.getSelection().addRange(range);

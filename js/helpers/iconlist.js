@@ -32,33 +32,29 @@ ui.iconlist = {
 
     ui.iconlist.Start = () => {
 
-        var tools, list, icons, totalIcons;
-
-        list = ui.find('.' + ui.iconlist.target);
-        tools = ui.find('.' + ui.iconlist.nameTools + ' .' + ui.iconlist.nameBtn);
+        const list = ui.find('.' + ui.iconlist.target);
+        const tools = ui.find('.' + ui.iconlist.nameTools + ' .' + ui.iconlist.nameBtn);
 
         if (list[0] === undefined || tools[0] === undefined) { return; }
 
-        totalIcons = 0;
+        let totalIcons = 0;
 
         ui.on(tools,
             'click',
 
             function () {
 
-                var that, buttons, size;
+                const that = this;
+                const buttons = ui.find('.' + ui.iconlist.nameBtn, this.parentElement);
 
-                that = this;
-
-                buttons = ui.find('.' + ui.iconlist.nameBtn, this.parentElement);
                 ui.removeClass(buttons, ui.iconlist.stylesToolActive);
 
-                setTimeout(() => {
+                setTimeout(function() { // has this
                     ui.addClass(that, ui.iconlist.stylesToolActive);
                 }, 0);
 
                 // change size
-                size = this.getAttribute(ui.iconlist.dataSize);
+                const size = this.getAttribute(ui.iconlist.dataSize);
                 if (size !== null) {
 
                     ui.removeClass(list, ui.iconlist.stylesIconSizes);
@@ -71,34 +67,31 @@ ui.iconlist = {
 
             });
 
-        ui.each('.' + ui.iconlist.target,
+        ui.find('.' + ui.iconlist.target).forEach(el => {
 
-            function () {
+            const total = ui.find('li', el).length;
 
-                var total = ui.find('li', this).length;
+            el.previousElementSibling.insertAdjacentHTML(
+                'beforeend',
+                ' <span class="' + ui.iconlist.stylesTotal + '">(' + total + ' icons)</span>'
+            );
 
-                this.previousElementSibling.insertAdjacentHTML(
-                    'beforeend',
-                    ' <span class="' + ui.iconlist.stylesTotal + '">(' + total + ' icons)</span>'
-                );
+            totalIcons += total;
 
-                totalIcons += total;
-
-            });
+        });
 
         ui.find('.' + ui.iconlist.nameTotal)[0].textContent = '(' + ui.iconlist.msgTotal + ': ' + totalIcons + ')';
 
-        icons = ui.find('.' + ui.iconlist.target + ' li');
+        const icons = ui.find('.' + ui.iconlist.target + ' li');
+
         ui.on(icons,
             'click',
 
             function () {
 
-                var range, iconName;
+                const range = document.createRange();
+                const iconName = ui.find('span', this)[0];
 
-                range = document.createRange();
-
-                iconName = ui.find('span', this)[0];
                 range.selectNode(iconName);
 
                 window.getSelection().removeAllRanges();
