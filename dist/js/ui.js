@@ -23,27 +23,19 @@ var ui = {
 };
 
 ui.find = function (item, outer) {
-  var i,
-      objName,
-      call,
-      outerEl,
-      outerElIndex,
-      foundEl = [];
-
   if (item instanceof Object) {
     if (NodeList.prototype.isPrototypeOf(item)) {
       return item;
     }
 
-    objName = Object.prototype.toString.call(item);
+    var objName = Object.prototype.toString.call(item);
 
     if (objName === '[object HTMLDocument]' || objName === '[object Document]') {
       if (ui.find.document === undefined) {
         ui.find.document = document.querySelectorAll('html');
       }
 
-      call = ui.find.document;
-      return call;
+      return ui.find.document;
     }
 
     if (objName === '[object Window]') {
@@ -58,6 +50,9 @@ ui.find = function (item, outer) {
   }
 
   if (outer !== undefined) {
+    var outerEl;
+    var foundEl = [];
+
     if (outer instanceof Object) {
       outerEl = outer;
     } else {
@@ -65,8 +60,8 @@ ui.find = function (item, outer) {
     }
 
     if (outerEl.length !== undefined && Array.prototype.slice.call(outerEl).length === 1) {
-      for (i = 0; i < outerEl.length; i++) {
-        outerElIndex = outerEl[i].querySelectorAll(item);
+      outerEl.forEach(function (el) {
+        var outerElIndex = el.querySelectorAll(item);
 
         if (outerEl.length === 1) {
           foundEl = outerElIndex[0];
@@ -77,7 +72,7 @@ ui.find = function (item, outer) {
         } else {
           foundEl = foundEl.concat(outerElIndex);
         }
-      }
+      });
     } else {
       foundEl = outerEl.querySelectorAll(item);
     }
@@ -89,38 +84,37 @@ ui.find = function (item, outer) {
 };
 
 ui.on = function (t, e, that, callback) {
-  var arr, f, fnc, handlerFnc, targetEl, objName, isWindowEvent, l, customEvent, eName, delegate, ua, i, j, k, m;
-
-  fnc = function fnc(e) {
+  var set = function set(e) {
     if (typeof t === 'string' && e === undefined) {
       return;
     }
 
-    delegate = false;
-    customEvent = false;
+    var callFnc;
+    var isWindowEvent;
+    var delegate = false;
+    var customEvent = false;
 
     if (callback !== undefined) {
-      f = function f(event) {
-        eName = e.split('.')[0];
-        targetEl = ui.find(that);
-
-        for (j = 0; j < targetEl.length; j++) {
+      callFnc = function callFnc(event) {
+        var eName = e.split('.')[0];
+        var targetEl = ui.find(that);
+        targetEl.forEach(function (el) {
           if (ui.globals.nonClosestElems.indexOf(eName) > -1) {
-            if (event.target === targetEl[j]) {
-              callback.call(targetEl[j], event, event.toElement);
+            if (event.target === el) {
+              callback.call(el, event, event.toElement);
             }
           } else {
-            if (event.target === targetEl[j] || ui.closest(event.target, targetEl[j]).length === 1) {
-              callback.call(targetEl[j], event, event.toElement);
+            if (event.target === el || ui.closest(event.target, el).length === 1) {
+              callback.call(el, event, event.toElement);
             }
           }
-        }
+        });
       };
 
       delegate = true;
     } else {
-      f = that;
-      ua = navigator.userAgent.toLowerCase();
+      callFnc = that;
+      var ua = navigator.userAgent.toLowerCase();
 
       if (t instanceof Object && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') {
         isWindowEvent = Object.prototype.toString.call(t) === '[object Window]';
@@ -133,7 +127,7 @@ ui.on = function (t, e, that, callback) {
           }
         }
 
-        objName = Object.prototype.toString.call(t);
+        var objName = Object.prototype.toString.call(t);
 
         if (objName === '[object HTMLDocument]' || objName === '[object Document]') {
           customEvent = true;
@@ -141,8 +135,8 @@ ui.on = function (t, e, that, callback) {
       }
     }
 
-    handlerFnc = function handlerFnc(pt, pe) {
-      if (f === undefined) {
+    var handlerFnc = function handlerFnc(pt, pe) {
+      if (callFnc === undefined) {
         return;
       }
 
@@ -158,41 +152,40 @@ ui.on = function (t, e, that, callback) {
         ui.handlers[pt][pe] = [];
       }
 
-      ui.handlers[pt][pe].push(f);
+      ui.handlers[pt][pe].push(callFnc);
 
-      if (typeof pe !== 'function' && f !== undefined) {
+      if (typeof pe !== 'function' && callFnc !== undefined) {
         if (delegate || isWindowEvent || customEvent) {
           if (ui.handlers[pt][pe].length === 1) {
             pt.addEventListener(pe.split('.')[0], function (ev) {
-              for (m = 0; m < ui.handlers[pt][pe].length; m++) {
-                ui.handlers[pt][pe][m](ev);
-              }
+              ui.handlers[pt][pe].forEach(function (fnc) {
+                fnc(ev);
+              });
             }, true);
           }
         } else {
-          pt.addEventListener(pe.split('.')[0], f, true);
+          pt.addEventListener(pe.split('.')[0], callFnc, true);
         }
       } else {
         return;
       }
     };
 
-    l = ui.find(t);
+    var l = ui.find(t);
 
     if (isWindowEvent) {
       handlerFnc(l, e);
     } else {
-      for (i = 0; i < l.length; i++) {
-        handlerFnc(l[i], e);
-      }
+      l.forEach(function (el) {
+        handlerFnc(el, e);
+      });
     }
   };
 
-  arr = e.split(' ');
-
-  for (k = 0; k < arr.length; k++) {
-    fnc(arr[k]);
-  }
+  var arr = e.split(' ');
+  arr.forEach(function (eventName) {
+    set(eventName);
+  });
 };
 
 ui.off = function (t, e) {

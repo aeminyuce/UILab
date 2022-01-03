@@ -5,21 +5,18 @@ export default () => ui;
 
 ui.find = (item, outer) => {
 
-    var i, objName, call, outerEl, outerElIndex, foundEl = [];
-
     if (item instanceof Object) {
 
         if (NodeList.prototype.isPrototypeOf(item)) { return item; } // if item property has ui.find(item) nodelist
 
-        objName = Object.prototype.toString.call(item);
+        const objName = Object.prototype.toString.call(item);
         if (objName === '[object HTMLDocument]' || objName === '[object Document]') { // detect document
 
             if (ui.find.document === undefined) {
                 ui.find.document = document.querySelectorAll('html');
             }
 
-            call = ui.find.document;
-            return call;
+            return ui.find.document;
 
         }
 
@@ -32,6 +29,9 @@ ui.find = (item, outer) => {
 
     if (outer !== undefined) { // find items in outer elements
 
+        let outerEl;
+        let foundEl = [];
+
         if (outer instanceof Object) {
             outerEl = outer;
 
@@ -42,9 +42,9 @@ ui.find = (item, outer) => {
         // discard "this" object && form object (form element not returns "this", it returns all form elements)
         if (outerEl.length !== undefined && Array.prototype.slice.call(outerEl).length === 1) {
 
-            for (i = 0; i < outerEl.length; i++) {
+            outerEl.forEach(el => {
 
-                outerElIndex = outerEl[i].querySelectorAll(item);
+                const outerElIndex = el.querySelectorAll(item);
                 if (outerEl.length === 1) {
 
                     foundEl = outerElIndex[0];
@@ -57,7 +57,7 @@ ui.find = (item, outer) => {
                     foundEl = foundEl.concat(outerElIndex); // merge arrays
                 }
 
-            }
+            });
 
         } else { // "this" object
             foundEl = outerEl.querySelectorAll(item);
