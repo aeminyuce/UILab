@@ -26,44 +26,42 @@ ui.classnames = {
 
 (function () {
   ui.classnames.Start = function () {
-    var arr, total, created, list, alerts, lastAddedWarning;
-    arr = [];
+    var arr = [];
     arr.list = [];
     arr.error = [];
     arr.warning = [];
     arr.filtered = [];
     arr.groups = [];
-    lastAddedWarning = '';
-    list = ui.find('.' + ui.classnames.targetList)[0];
-    alerts = ui.find('.' + ui.classnames.targetAlerts)[0];
+    var lastAddedWarning = '';
+    var list = ui.find('.' + ui.classnames.targetList)[0];
+    var alerts = ui.find('.' + ui.classnames.targetAlerts)[0];
 
     if (list === undefined || alerts === undefined) {
       return;
     }
 
-    total = ui.find('.' + ui.classnames.nameTotal)[0];
+    var total = ui.find('.' + ui.classnames.nameTotal)[0];
     ui.ajax({
       url: ui.classnames.filePath,
       callback: function callback() {}
     });
     ui.on(document, ui.globals.eventAjaxCallback, function () {
-      var i, j, re, reStart, reDuplicate, loaded, str, strStart, strLength, html, title, items, jsClass, jsModule, jsKey, jsStyleList, filterClassnames;
-      loaded = [];
-      re = ui.classnames.jsTarget + '+\\w*|' + ui.classnames.jsTarget + '|' + ui.classnames.jsName + '+\\w*' + '|' + ui.classnames.jsStyles + '+\\w*';
+      var loaded = [];
+      var re = ui.classnames.jsTarget + '+\\w*|' + ui.classnames.jsTarget + '|' + ui.classnames.jsName + '+\\w*' + '|' + ui.classnames.jsStyles + '+\\w*';
       re = new RegExp(re, 'g');
 
-      for (jsModule in ui) {
-        for (jsKey in ui[jsModule]) {
+      for (var jsModule in ui) {
+        for (var jsKey in ui[jsModule]) {
           if (jsKey.match(re) !== null && jsKey.match(ui.classnames.jsIgnore) === null) {
-            jsClass = ui[jsModule][jsKey];
+            var jsClass = ui[jsModule][jsKey];
 
             if (typeof jsClass === 'string') {
-              jsStyleList = jsClass.toString().split(' ');
+              var jsStyleList = jsClass.toString().split(' ');
 
               if (jsStyleList.length > 1) {
-                for (j = 0; j < jsStyleList.length; j++) {
-                  loaded.push(jsStyleList[j]);
-                }
+                jsStyleList.forEach(function (style) {
+                  loaded.push(style);
+                });
               } else {
                 if (jsClass !== '') {
                   loaded.push(jsClass);
@@ -74,19 +72,19 @@ ui.classnames = {
         }
       }
 
-      ui.each(ui.ajax.classNames, function () {
-        loaded.push(this);
+      ui.ajax.classNames.forEach(function (name) {
+        loaded.push(name);
       });
       loaded = loaded.filter(function (value, index, self) {
         return self.indexOf(value) === index;
       });
-      ui.each(loaded, function () {
-        reStart = ui.classnames.prefix + '-+\\w+';
+      loaded.forEach(function (name) {
+        var reStart = ui.classnames.prefix + '-+\\w+';
         reStart = new RegExp(reStart, 'g');
-        reDuplicate = '(' + ui.classnames.prefix + '-)|(-' + ui.classnames.prefix + ')';
+        var reDuplicate = '(' + ui.classnames.prefix + '-)|(-' + ui.classnames.prefix + ')';
         reDuplicate = new RegExp(reDuplicate, 'g');
-        str = this.toString();
-        strStart = str.match(reStart);
+        var str = name.toString();
+        var strStart = str.match(reStart);
 
         if (strStart === null) {
           if (str === '') {
@@ -98,7 +96,7 @@ ui.classnames = {
           arr.list.push(str);
         }
 
-        strLength = str.match(reDuplicate);
+        var strLength = str.match(reDuplicate);
 
         if (strLength !== null) {
           strLength = Number(str.match(reDuplicate).length);
@@ -115,21 +113,21 @@ ui.classnames = {
         alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + ui.classnames.msgErrors + '</li>');
       }
 
-      ui.each(arr.error, function () {
-        alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesError + '">' + this + '</li>');
+      arr.error.forEach(function (name) {
+        alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesError + '">' + name + '</li>');
       });
       arr.warning = arr.warning.sort();
-      ui.each(arr.warning, function () {
-        if (lastAddedWarning === '' || lastAddedWarning.split('-')[0] !== this.split('-')[0]) {
-          alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + this.split('-')[0] + '</li>');
+      arr.warning.forEach(function (name) {
+        if (lastAddedWarning === '' || lastAddedWarning.split('-')[0] !== name.split('-')[0]) {
+          alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + name.split('-')[0] + '</li>');
         }
 
-        alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarning + '">' + this + '</li>');
-        lastAddedWarning = this;
+        alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarning + '">' + name + '</li>');
+        lastAddedWarning = name;
       });
 
-      filterClassnames = function filterClassnames(that) {
-        title = that.split('-')[1];
+      var filterClassnames = function filterClassnames(that) {
+        var title = that.split('-')[1];
 
         if (title === 'no' || title === 'xl' || title === 'lg' || title === 'md' || title === 'sm' || title === 'xs') {
           title = that.split('-')[2];
@@ -200,39 +198,40 @@ ui.classnames = {
         return title;
       };
 
-      ui.each(arr.list, function () {
-        filterClassnames(this);
+      arr.list.forEach(function (name) {
+        var title = filterClassnames(name);
 
         if (arr.filtered.indexOf(title) === -1) {
           arr.filtered.push(title);
         }
       });
-      ui.each(arr.list, function () {
-        filterClassnames(this);
+      arr.list.forEach(function (name) {
+        var title = filterClassnames(name);
 
         if (arr.filtered.indexOf(title) > -1) {
           if (arr.groups[title] === undefined) {
-            arr.groups[title] = this;
+            arr.groups[title] = name;
           } else {
-            arr.groups[title] += ', ' + this;
+            arr.groups[title] += ', ' + name;
           }
         }
       });
-      created = 0;
+      var html;
+      var items;
+      var created = 0;
       arr.filtered = arr.filtered.sort(function (a, b) {
         return a.localeCompare(b);
       });
-      ui.each(arr.filtered, function () {
-        items = arr.groups[this].split(',');
+      arr.filtered.forEach(function (name) {
+        items = arr.groups[name].split(',');
         items = items.sort(function (a, b) {
           return a.length - b.length || a.localeCompare(b, undefined, {
             numeric: true,
             sensitivity: 'base'
           });
         });
-        html = '<h4 class="' + ui.classnames.stylesCatTite + '">' + this + '</h4>' + '<div class="' + ui.classnames.stylesCatCard + '">' + '<div class="' + ui.classnames.stylesCatRow + '">';
-
-        for (i = 0; i < items.length; i++) {
+        html = '<h4 class="' + ui.classnames.stylesCatTite + '">' + name + '</h4>' + '<div class="' + ui.classnames.stylesCatCard + '">' + '<div class="' + ui.classnames.stylesCatRow + '">';
+        items.forEach(function (item, i) {
           if (parseInt(i / ui.classnames.listColLength) === i / ui.classnames.listColLength) {
             if (i !== 0) {
               html += '</ul></div>';
@@ -241,13 +240,12 @@ ui.classnames = {
             html += '<div class="' + ui.classnames.stylesCatCol + '">' + '<ul class="' + ui.classnames.stylesCatList + '">';
           }
 
-          if (items[i].indexOf('[native code]') === -1) {
-            items[i] = items[i].replace(/^\s+|\s+$/g, '');
-            html += '<li>' + items[i] + '</li>';
+          if (item.indexOf('[native code]') === -1) {
+            item = item.replace(/^\s+|\s+$/g, '');
+            html += '<li>' + item + '</li>';
             created += 1;
           }
-        }
-
+        });
         html += '</ul></div></div></div>';
         list.insertAdjacentHTML('beforeend', html);
       });

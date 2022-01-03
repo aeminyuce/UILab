@@ -49,10 +49,8 @@ ui.classnames = {
 
     ui.classnames.Start = () => {
 
-        var arr, total, created, list, alerts, lastAddedWarning;
-
         // create arrays
-        arr = [];
+        let arr = []; // will be empty
 
         arr.list = [];
         arr.error = [];
@@ -61,15 +59,15 @@ ui.classnames = {
         arr.filtered = [];
         arr.groups = [];
 
-        lastAddedWarning = '';
+        let lastAddedWarning = '';
 
         // get elements
-        list = ui.find('.' + ui.classnames.targetList)[0];
-        alerts = ui.find('.' + ui.classnames.targetAlerts)[0];
+        const list = ui.find('.' + ui.classnames.targetList)[0];
+        const alerts = ui.find('.' + ui.classnames.targetAlerts)[0];
 
         if (list === undefined || alerts === undefined) { return; }
 
-        total = ui.find('.' + ui.classnames.nameTotal)[0];
+        const total = ui.find('.' + ui.classnames.nameTotal)[0];
 
         // check all pages with xhr
         ui.ajax({
@@ -83,28 +81,24 @@ ui.classnames = {
 
             () => {
 
-                var i, j, re, reStart, reDuplicate, loaded, str, strStart, strLength, html, title, items, jsClass, jsModule, jsKey, jsStyleList, filterClassnames;
-
                 // load js classnames
-                loaded = [];
+                let loaded = []; // will be empty
 
-                re = ui.classnames.jsTarget + '+\\w*|' + ui.classnames.jsTarget + '|' + ui.classnames.jsName + '+\\w*' + '|' + ui.classnames.jsStyles + '+\\w*';
+                let re = ui.classnames.jsTarget + '+\\w*|' + ui.classnames.jsTarget + '|' + ui.classnames.jsName + '+\\w*' + '|' + ui.classnames.jsStyles + '+\\w*';
                 re = new RegExp(re, 'g');
 
-                for (jsModule in ui) {
-                    for (jsKey in ui[jsModule]) {
+                for (let jsModule in ui) {
+                    for (let jsKey in ui[jsModule]) {
 
                         if (jsKey.match(re) !== null && jsKey.match(ui.classnames.jsIgnore) === null) {
 
-                            jsClass = ui[jsModule][jsKey];
+                            const jsClass = ui[jsModule][jsKey];
                             if (typeof jsClass === 'string') { // remove objects
 
-                                jsStyleList = jsClass.toString().split(' ');
-                                if (jsStyleList.length > 1) { // check styles for multiple classnames
+                                const jsStyleList = jsClass.toString().split(' ');
 
-                                    for (j = 0; j < jsStyleList.length; j++) {
-                                        loaded.push(jsStyleList[j]);
-                                    }
+                                if (jsStyleList.length > 1) { // check styles for multiple classnames
+                                    jsStyleList.forEach(style => { loaded.push(style); });
 
                                 } else {
 
@@ -122,66 +116,62 @@ ui.classnames = {
                 }
 
                 // load html classnames
-                ui.each(ui.ajax.classNames,
-
-                    function () {
-                        loaded.push(this);
-                    });
+                ui.ajax.classNames.forEach(name => {
+                    loaded.push(name);
+                });
 
                 // remove duplicate loaded classnames
                 loaded = loaded.filter((value, index, self) => self.indexOf(value) === index);
 
                 // check all classnames
-                ui.each(loaded,
+                loaded.forEach(name => {
 
-                    function () {
+                    // check prefix
+                    let reStart = ui.classnames.prefix + '-+\\w+';
+                    reStart = new RegExp(reStart, 'g');
 
-                        // check prefix
-                        reStart = ui.classnames.prefix + '-+\\w+';
-                        reStart = new RegExp(reStart, 'g');
+                    // check duplicates
+                    let reDuplicate = '(' + ui.classnames.prefix + '-)|(-' + ui.classnames.prefix + ')';
+                    reDuplicate = new RegExp(reDuplicate, 'g');
 
-                        // check duplicates
-                        reDuplicate = '(' + ui.classnames.prefix + '-)|(-' + ui.classnames.prefix + ')';
-                        reDuplicate = new RegExp(reDuplicate, 'g');
+                    const str = name.toString();
+                    const strStart = str.match(reStart);
 
-                        str = this.toString();
-                        strStart = str.match(reStart);
+                    if (strStart === null) {
 
-                        if (strStart === null) {
+                        if (str === '') {
 
-                            if (str === '') {
-
-                                // error: empty
-                                arr.error.push(ui.classnames.msgEmpty);
-
-                            } else {
-
-                                // warning
-                                arr.warning.push(str);
-
-                            }
+                            // error: empty
+                            arr.error.push(ui.classnames.msgEmpty);
 
                         } else {
 
-                            // list
-                            arr.list.push(str);
+                            // warning
+                            arr.warning.push(str);
 
                         }
 
-                        strLength = str.match(reDuplicate);
-                        if (strLength !== null) {
+                    } else {
 
-                            strLength = Number(str.match(reDuplicate).length);
-                            if (strLength > 1) {
+                        // list
+                        arr.list.push(str);
 
-                                // error: duplicate
-                                arr.error.push(ui.classnames.msgDuplicate + ': ' + str);
+                    }
 
-                            }
+                    let strLength = str.match(reDuplicate);
+                    if (strLength !== null) {
+
+                        strLength = Number(str.match(reDuplicate).length);
+                        if (strLength > 1) {
+
+                            // error: duplicate
+                            arr.error.push(ui.classnames.msgDuplicate + ': ' + str);
 
                         }
 
-                    });
+                    }
+
+                });
 
                 // create errors
                 if (arr.error.length === 0) {
@@ -191,31 +181,27 @@ ui.classnames = {
                     alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + ui.classnames.msgErrors + '</li>');
                 }
 
-                ui.each(arr.error,
-
-                    function () {
-                        alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesError + '">' + this + '</li>');
-                    });
+                arr.error.forEach(name => {
+                    alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesError + '">' + name + '</li>');
+                });
 
                 // create warnings
                 arr.warning = arr.warning.sort();
-                ui.each(arr.warning,
+                arr.warning.forEach(name => {
 
-                    function () {
+                    if (lastAddedWarning === '' || lastAddedWarning.split('-')[0] !== name.split('-')[0]) {
+                        alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + name.split('-')[0] + '</li>');
+                    }
 
-                        if (lastAddedWarning === '' || lastAddedWarning.split('-')[0] !== this.split('-')[0]) {
-                            alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + this.split('-')[0] + '</li>');
-                        }
+                    alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarning + '">' + name + '</li>');
+                    lastAddedWarning = name;
 
-                        alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarning + '">' + this + '</li>');
-                        lastAddedWarning = this;
-
-                    });
+                });
 
                 // filter list of classnames
-                filterClassnames = (that) => {
+                const filterClassnames = (that) => {
 
-                    title = that.split('-')[1];
+                    let title = that.split('-')[1];
 
                     // Ex: ui-no-*, ui-sm-*
                     if (title === 'no' || title === 'xl' || title === 'lg' || title === 'md' || title === 'sm' || title === 'xs') {
@@ -297,88 +283,85 @@ ui.classnames = {
                 }
 
                 // create group names
-                ui.each(arr.list,
+                arr.list.forEach(name => {
 
-                    function () {
+                    const title = filterClassnames(name);
 
-                        filterClassnames(this); // returns title
+                    if (arr.filtered.indexOf(title) === -1) {
+                        arr.filtered.push(title);
+                    }
 
-                        if (arr.filtered.indexOf(title) === -1) {
-                            arr.filtered.push(title);
-                        }
-
-                    });
+                });
 
                 // copy classnames to filtered groups
-                ui.each(arr.list,
+                arr.list.forEach(name => {
 
-                    function () {
+                    const title = filterClassnames(name);
 
-                        filterClassnames(this); // returns title
+                    if (arr.filtered.indexOf(title) > -1) {
 
-                        if (arr.filtered.indexOf(title) > -1) {
+                        if (arr.groups[title] === undefined) {
+                            arr.groups[title] = name;
 
-                            if (arr.groups[title] === undefined) {
-                                arr.groups[title] = this;
-
-                            } else {
-                                arr.groups[title] += ', ' + this;
-                            }
-
+                        } else {
+                            arr.groups[title] += ', ' + name;
                         }
 
-                    });
+                    }
+
+                });
 
                 // create category names
-                created = 0;
+                let html;
+                let items;
+                let created = 0;
+
                 arr.filtered = arr.filtered.sort((a, b) => a.localeCompare(b));
 
-                ui.each(arr.filtered,
+                arr.filtered.forEach(name => {
 
-                    function () {
+                    items = arr.groups[name].split(',');
+                    items = items.sort((a, b) => {
 
-                        items = arr.groups[this].split(',');
-                        items = items.sort((a, b) => {
-
-                            return a.length - b.length || a.localeCompare(b, undefined, {
-                                numeric: true,
-                                sensitivity: 'base'
-                            });
-
+                        return a.length - b.length || a.localeCompare(b, undefined, {
+                            numeric: true,
+                            sensitivity: 'base'
                         });
 
-                        html = '<h4 class="' + ui.classnames.stylesCatTite + '">' + this + '</h4>' +
-                                '<div class="' + ui.classnames.stylesCatCard + '">' +
-                                    '<div class="' + ui.classnames.stylesCatRow + '">';
+                    });
 
-                        for (i = 0; i < items.length; i++) {
+                    html = '<h4 class="' + ui.classnames.stylesCatTite + '">' + name + '</h4>' +
+                            '<div class="' + ui.classnames.stylesCatCard + '">' +
+                                '<div class="' + ui.classnames.stylesCatRow + '">';
 
-                            if (parseInt(i / ui.classnames.listColLength) === i / ui.classnames.listColLength) { // create cols
+                    items.forEach((item, i) => {
 
-                                if (i !== 0) {
-                                    html += '</ul></div>'; // close tags
-                                }
+                        if (parseInt(i / ui.classnames.listColLength) === i / ui.classnames.listColLength) { // create cols
 
-                                html += '<div class="' + ui.classnames.stylesCatCol + '">' +
-                                            '<ul class="' + ui.classnames.stylesCatList + '">';
-
+                            if (i !== 0) {
+                                html += '</ul></div>'; // close tags
                             }
 
-                            if (items[i].indexOf('[native code]') === -1) { // catch native code error
-
-                                items[i] = items[i].replace(/^\s+|\s+$/g, ''); // remove first and last spaces
-
-                                html += '<li>' + items[i] + '</li>'; // create rows
-                                created += 1;
-
-                            }
+                            html += '<div class="' + ui.classnames.stylesCatCol + '">' +
+                                        '<ul class="' + ui.classnames.stylesCatList + '">';
 
                         }
 
-                        html += '</ul></div></div></div>'; // close tags
-                        list.insertAdjacentHTML('beforeend', html);
+                        if (item.indexOf('[native code]') === -1) { // catch native code error
+
+                            item = item.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+
+                            html += '<li>' + item + '</li>'; // create rows
+                            created += 1;
+
+                        }
 
                     });
+
+                    html += '</ul></div></div></div>'; // close tags
+                    list.insertAdjacentHTML('beforeend', html);
+
+                });
 
                 total.textContent = arr.filtered.length + ' / ' + created;
 
