@@ -5,9 +5,7 @@ export default () => ui;
 
 ui.onload = (callback) => {
 
-    var handlerFnc, i;
-
-    handlerFnc = function (pt, pe) {
+    const handlerFnc = function (pt, pe) {
 
         if (ui.handlers === undefined) { ui.handlers = {}; }
         if (ui.handlers[pt] === undefined) { ui.handlers[pt] = {}; }
@@ -19,13 +17,11 @@ ui.onload = (callback) => {
 
             // merge repeated event listeners
             if (ui.handlers[pt][pe].length === 1) {
+
                 pt.addEventListener(pe.split('.')[0], function (ev) { // split for event naming
-
-                    for (i = 0; i < ui.handlers[pt][pe].length; i++) {
-                        ui.handlers[pt][pe][i](ev);
-                    }
-
+                    ui.handlers[pt][pe].forEach(fnc => { fnc(ev); });
                 }, true);
+
             }
 
         } else { return; }

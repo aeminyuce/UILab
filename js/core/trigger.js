@@ -3,11 +3,11 @@
 import { ui } from './globals.js';
 export default () => ui;
 
-ui.trigger = function (t, e) {
+ui.trigger = function (that, e) {
 
-    var arr, fnc, event, l, i, j;
+    let event;
 
-    fnc = function (e) {
+    const callFnc = (e) => {
 
         try {
             event = new Event(e);
@@ -19,16 +19,13 @@ ui.trigger = function (t, e) {
 
         }
 
-        l = ui.find(t);
-        for (i = 0; i < l.length; i++) { l[i].dispatchEvent(event); }
+        const nodeList = ui.find(that);
+        nodeList.forEach(el => { el.dispatchEvent(event); });
 
     };
 
     // for multiple event listeners ex: 'click touchend'
-    arr = e.split(' ');
-
-    for (j = 0; j < arr.length; j++) {
-        fnc(arr[j]);
-    }
+    const arr = e.split(' ');
+    arr.forEach(name => { callFnc(name); });
 
 }

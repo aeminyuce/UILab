@@ -183,48 +183,43 @@ ui.on = function (t, e, that, callback) {
   };
 
   var arr = e.split(' ');
-  arr.forEach(function (eventName) {
-    set(eventName);
+  arr.forEach(function (name) {
+    set(name);
   });
 };
 
-ui.off = function (t, e) {
-  var arr, fnc, handlerFnc, l, i, j, k;
-
-  fnc = function fnc(e) {
-    handlerFnc = function handlerFnc(pt, pe) {
+ui.off = function (that, e) {
+  var callFnc = function callFnc(e) {
+    var handlerFnc = function handlerFnc(pt, pe) {
       if (ui.handlers[pt] !== undefined) {
         if (ui.handlers[pt][pe] !== undefined) {
-          for (j = 0; j < ui.handlers[pt][pe].length; j++) {
-            pt.removeEventListener(pe.split('.')[0], ui.handlers[pt][pe][j], true);
-            ui.handlers[pt][pe].splice(ui.handlers[pt][pe][j], 1);
-          }
+          ui.handlers[pt][pe].forEach(function (name) {
+            pt.removeEventListener(pe.split('.')[0], name, true);
+            ui.handlers[pt][pe].splice(name, 1);
+          });
         }
       }
     };
 
-    l = ui.find(t);
+    var nodeList = ui.find(that);
 
-    if (l.length === 0) {
-      handlerFnc(l, e);
+    if (nodeList.length === 0) {
+      handlerFnc(nodeList, e);
     } else {
-      for (i = 0; i < l.length; i++) {
-        handlerFnc(l[i], e);
-      }
+      nodeList.forEach(function (el) {
+        handlerFnc(el, e);
+      });
     }
   };
 
-  arr = e.split(' ');
-
-  for (k = 0; k < arr.length; k++) {
-    fnc(arr[k]);
-  }
+  var arr = e.split(' ');
+  arr.forEach(function (name) {
+    callFnc(name);
+  });
 };
 
 ui.onload = function (callback) {
-  var handlerFnc, i;
-
-  handlerFnc = function handlerFnc(pt, pe) {
+  var handlerFnc = function handlerFnc(pt, pe) {
     if (ui.handlers === undefined) {
       ui.handlers = {};
     }
@@ -242,9 +237,9 @@ ui.onload = function (callback) {
     if (typeof pe !== 'function' && callback !== undefined) {
       if (ui.handlers[pt][pe].length === 1) {
         pt.addEventListener(pe.split('.')[0], function (ev) {
-          for (i = 0; i < ui.handlers[pt][pe].length; i++) {
-            ui.handlers[pt][pe][i](ev);
-          }
+          ui.handlers[pt][pe].forEach(function (fnc) {
+            fnc(ev);
+          });
         }, true);
       }
     } else {
@@ -267,10 +262,10 @@ ui.onload = function (callback) {
   }
 };
 
-ui.trigger = function (t, e) {
-  var arr, fnc, event, l, i, j;
+ui.trigger = function (that, e) {
+  var event;
 
-  fnc = function fnc(e) {
+  var callFnc = function callFnc(e) {
     try {
       event = new Event(e);
     } catch (err) {
@@ -278,33 +273,28 @@ ui.trigger = function (t, e) {
       event.initEvent(e, true, false);
     }
 
-    l = ui.find(t);
-
-    for (i = 0; i < l.length; i++) {
-      l[i].dispatchEvent(event);
-    }
+    var nodeList = ui.find(that);
+    nodeList.forEach(function (el) {
+      el.dispatchEvent(event);
+    });
   };
 
-  arr = e.split(' ');
-
-  for (j = 0; j < arr.length; j++) {
-    fnc(arr[j]);
-  }
+  var arr = e.split(' ');
+  arr.forEach(function (name) {
+    callFnc(name);
+  });
 };
 
-ui.hasClass = function (t, name) {
-  var re,
-      l = ui.find(t),
-      i;
-
-  for (i = 0; i < l.length; i++) {
-    if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) {
-      re = new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className.baseVal);
+ui.hasClass = function (that, name) {
+  var re;
+  var nodeList = ui.find(that);
+  nodeList.forEach(function (el) {
+    if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) {
+      re = new RegExp('(^| )' + name + '( |$)', 'gi').test(el.className.baseVal);
     } else {
-      re = new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className);
+      re = new RegExp('(^| )' + name + '( |$)', 'gi').test(el.className);
     }
-  }
-
+  });
   return re;
 };
 
@@ -334,74 +324,67 @@ ui.addClass = function (that, name) {
   });
 };
 
-ui.removeClass = function (t, name) {
-  var l = ui.find(t),
-      i,
-      j,
-      rex = new RegExp('^\\s+|\\s+$'),
-      re;
+ui.removeClass = function (that, name) {
   name = name.split(' ');
+  var rex = new RegExp('^\\s+|\\s+$');
+  var nodeList = ui.find(that);
+  nodeList.forEach(function (el) {
+    name.forEach(function (item) {
+      var re = new RegExp('(\\s|^)' + item + '(\\s|$)');
 
-  for (i = 0; i < l.length; i++) {
-    for (j = 0; j < name.length; j++) {
-      re = new RegExp('(\\s|^)' + name[j] + '(\\s|$)');
-
-      if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) {
-        l[i].className.baseVal = l[i].className.baseVal.replace(re, ' ').replace(rex, '');
+      if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) {
+        el.className.baseVal = el.className.baseVal.replace(re, ' ').replace(rex, '');
       } else {
-        l[i].className = l[i].className.replace(re, ' ').replace(rex, '');
+        el.className = el.className.replace(re, ' ').replace(rex, '');
 
-        if (l[i].className === '') {
-          l[i].removeAttribute('class');
+        if (el.className === '') {
+          el.removeAttribute('class');
         }
       }
-    }
-  }
+    });
+  });
 };
 
-ui.toggleClass = function (t, name) {
-  var isSvgElements,
-      arr,
-      newArr,
-      index,
-      l = ui.find(t),
-      i,
-      j,
-      re = new RegExp('^\\s+|\\s+$');
+ui.toggleClass = function (that, name) {
   name = name.split(' ');
-
-  for (i = 0; i < l.length; i++) {
-    isSvgElements = ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1;
+  var arr;
+  var newArr;
+  var index;
+  var isSvgElements;
+  var re = new RegExp('^\\s+|\\s+$');
+  var nodeList = ui.find(that);
+  nodeList.forEach(function (el) {
+    isSvgElements = ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1;
 
     if (isSvgElements) {
-      arr = l[i].className.baseVal.split(' ');
+      arr = el.className.baseVal.split(' ');
     } else {
-      arr = l[i].className.split(' ');
+      arr = el.className.split(' ');
     }
 
-    for (j = 0; j < name.length; j++) {
+    name.forEach(function (item) {
       newArr = arr;
-      index = newArr.indexOf(name[j]);
+      index = newArr.indexOf(item);
 
       if (index >= 0) {
         newArr.splice(index, 1);
       } else {
-        newArr.push(name[j]);
+        newArr.push(item);
       }
 
       if (isSvgElements) {
-        l[i].className.baseVal = arr.join(' ');
+        el.className.baseVal = arr.join(' ');
       } else {
         newArr = newArr.join(' ').replace(re, '');
 
         if (newArr.length === 0) {
-          l[i].removeAttribute('class');
+          el.removeAttribute('class');
         } else {
-          l[i].className = newArr;
+          el.className = newArr;
         }
       }
-    }
-  }
+    });
+  });
 };
 
 ui.each = function (t, callback) {

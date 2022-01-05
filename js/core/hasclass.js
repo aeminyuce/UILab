@@ -3,20 +3,22 @@
 import { ui } from './globals.js';
 export default () => ui;
 
-ui.hasClass = (t, name) => {
+ui.hasClass = (that, name) => {
 
-    var re, l = ui.find(t), i;
+    let re;
 
-    for (i = 0; i < l.length; i++) {
+    const nodeList = ui.find(that);
+    nodeList.forEach(el => {
 
-        if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
-            re = new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className.baseVal);
+        if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) { // check SVG and own elements
+            re = new RegExp('(^| )' + name + '( |$)', 'gi').test(el.className.baseVal);
 
         } else {
-            re =new RegExp('(^| )' + name + '( |$)', 'gi').test(l[i].className);
+            re =new RegExp('(^| )' + name + '( |$)', 'gi').test(el.className);
         }
 
-    }
+    });
+
     return re;
 
 }

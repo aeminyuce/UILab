@@ -17,7 +17,7 @@ ui.on = function (t, e, that, callback) {
 
         if (callback !== undefined) { // delegate
 
-            callFnc = function (event) {
+            callFnc = (event) => {
 
                 const eName = e.split('.')[0]; // split for event naming
                 const targetEl = ui.find(that); // catches future updated DOM!
@@ -122,6 +122,6 @@ ui.on = function (t, e, that, callback) {
 
     // for multiple event listeners ex: 'click touchend'
     const arr = e.split(' ');
-    arr.forEach(eventName => { set(eventName); });
+    arr.forEach(name => { set(name); });
 
 }
