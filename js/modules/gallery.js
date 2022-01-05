@@ -265,7 +265,7 @@ ui.photoGallery = {
                 imgHeight = img.height;
 
                 ui.addClass(loader, ui.photoGallery.namePause);
-                ui.hide(loader);
+                loader.style.display = 'none';
 
                 ui.addClass(img, ui.photoGallery.nameOpen);
 
@@ -289,17 +289,17 @@ ui.photoGallery = {
 
                 // show/hide nav buttons
                 if (index < 1) {
-                    ui.hide('.' + ui.photoGallery.namePreviewPrev);
+                    ui.find('.' + ui.photoGallery.namePreviewPrev)[0].style.display = 'none';
 
                 } else {
-                    ui.show('.' + ui.photoGallery.namePreviewPrev);
+                    ui.find('.' + ui.photoGallery.namePreviewPrev)[0].style.display = 'block';
                 }
 
                 if (index >= (loadedImages.length - 1)) {
-                    ui.hide('.' + ui.photoGallery.namePreviewNext);
+                    ui.find('.' + ui.photoGallery.namePreviewNext)[0].style.display = 'none';
 
                 } else {
-                    ui.show('.' + ui.photoGallery.namePreviewNext);
+                    ui.find('.' + ui.photoGallery.namePreviewNext)[0].style.display = 'block';
                 }
 
                 // show/hide info window
@@ -394,7 +394,7 @@ ui.photoGallery = {
 
                 // hide current image and load new one
                 ui.removeClass(img, ui.photoGallery.nameOpenEase);
-                ui.show(loader);
+                loader.style.display = 'block';
 
                 ui.removeClass(loader, ui.photoGallery.namePause);
                 ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon);
