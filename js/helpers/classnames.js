@@ -45,334 +45,330 @@ ui.classnames = {
 
 };
 
-(() => {
+ui.classnames.Start = () => {
 
-    ui.classnames.Start = () => {
+    // create arrays
+    let arr = []; // will be empty
 
-        // create arrays
-        let arr = []; // will be empty
+    arr.list = [];
+    arr.error = [];
+    arr.warning = [];
 
-        arr.list = [];
-        arr.error = [];
-        arr.warning = [];
+    arr.filtered = [];
+    arr.groups = [];
 
-        arr.filtered = [];
-        arr.groups = [];
+    let lastAddedWarning = '';
 
-        let lastAddedWarning = '';
+    // get elements
+    const list = ui.find('.' + ui.classnames.targetList)[0];
+    const alerts = ui.find('.' + ui.classnames.targetAlerts)[0];
 
-        // get elements
-        const list = ui.find('.' + ui.classnames.targetList)[0];
-        const alerts = ui.find('.' + ui.classnames.targetAlerts)[0];
+    if (list === undefined || alerts === undefined) { return; }
 
-        if (list === undefined || alerts === undefined) { return; }
+    const total = ui.find('.' + ui.classnames.nameTotal)[0];
 
-        const total = ui.find('.' + ui.classnames.nameTotal)[0];
+    // check all pages with xhr
+    ui.ajax({
+        url : ui.classnames.filePath,
+        callback: () => { }
+    });
 
-        // check all pages with xhr
-        ui.ajax({
-            url : ui.classnames.filePath,
-            callback: () => { }
-        });
+    // get all classnames and data classnames with xhr triggered callback event
+    ui.on(document,
+        ui.globals.eventAjaxCallback,
 
-        // get all classnames and data classnames with xhr triggered callback event
-        ui.on(document,
-            ui.globals.eventAjaxCallback,
+        () => {
 
-            () => {
+            // load js classnames
+            let loaded = []; // will be empty
 
-                // load js classnames
-                let loaded = []; // will be empty
+            let re = ui.classnames.jsTarget + '+\\w*|' + ui.classnames.jsTarget + '|' + ui.classnames.jsName + '+\\w*' + '|' + ui.classnames.jsStyles + '+\\w*';
+            re = new RegExp(re, 'g');
 
-                let re = ui.classnames.jsTarget + '+\\w*|' + ui.classnames.jsTarget + '|' + ui.classnames.jsName + '+\\w*' + '|' + ui.classnames.jsStyles + '+\\w*';
-                re = new RegExp(re, 'g');
+            for (let jsModule in ui) {
+                for (let jsKey in ui[jsModule]) {
 
-                for (let jsModule in ui) {
-                    for (let jsKey in ui[jsModule]) {
+                    if (jsKey.match(re) !== null && jsKey.match(ui.classnames.jsIgnore) === null) {
 
-                        if (jsKey.match(re) !== null && jsKey.match(ui.classnames.jsIgnore) === null) {
+                        const jsClass = ui[jsModule][jsKey];
+                        if (typeof jsClass === 'string') { // remove objects
 
-                            const jsClass = ui[jsModule][jsKey];
-                            if (typeof jsClass === 'string') { // remove objects
+                            const jsStyleList = jsClass.toString().split(' ');
 
-                                const jsStyleList = jsClass.toString().split(' ');
+                            if (jsStyleList.length > 1) { // check styles for multiple classnames
+                                jsStyleList.forEach(style => { loaded.push(style); });
 
-                                if (jsStyleList.length > 1) { // check styles for multiple classnames
-                                    jsStyleList.forEach(style => { loaded.push(style); });
-
-                                } else if (jsClass !== '') { // remove empty styles
-                                    loaded.push(jsClass);
-                                }
-
+                            } else if (jsClass !== '') { // remove empty styles
+                                loaded.push(jsClass);
                             }
 
                         }
 
                     }
+
                 }
+            }
 
-                // load html classnames
-                ui.ajax.classNames.forEach(name => {
-                    loaded.push(name);
-                });
+            // load html classnames
+            ui.ajax.classNames.forEach(name => {
+                loaded.push(name);
+            });
 
-                // remove duplicate loaded classnames
-                loaded = loaded.filter((value, index, self) => self.indexOf(value) === index);
+            // remove duplicate loaded classnames
+            loaded = loaded.filter((value, index, self) => self.indexOf(value) === index);
 
-                // check all classnames
-                loaded.forEach(name => {
+            // check all classnames
+            loaded.forEach(name => {
 
-                    // check prefix
-                    let reStart = ui.classnames.prefix + '-+\\w+';
-                    reStart = new RegExp(reStart, 'g');
+                // check prefix
+                let reStart = ui.classnames.prefix + '-+\\w+';
+                reStart = new RegExp(reStart, 'g');
 
-                    // check duplicates
-                    let reDuplicate = '(' + ui.classnames.prefix + '-)|(-' + ui.classnames.prefix + ')';
-                    reDuplicate = new RegExp(reDuplicate, 'g');
+                // check duplicates
+                let reDuplicate = '(' + ui.classnames.prefix + '-)|(-' + ui.classnames.prefix + ')';
+                reDuplicate = new RegExp(reDuplicate, 'g');
 
-                    const str = name.toString();
-                    const strStart = str.match(reStart);
+                const str = name.toString();
+                const strStart = str.match(reStart);
 
-                    if (strStart === null) {
+                if (strStart === null) {
 
-                        if (str === '') {
+                    if (str === '') {
 
-                            // error: empty
-                            arr.error.push(ui.classnames.msgEmpty);
-
-                        } else {
-
-                            // warning
-                            arr.warning.push(str);
-
-                        }
+                        // error: empty
+                        arr.error.push(ui.classnames.msgEmpty);
 
                     } else {
 
-                        // list
-                        arr.list.push(str);
+                        // warning
+                        arr.warning.push(str);
 
                     }
-
-                    let strLength = str.match(reDuplicate);
-                    if (strLength !== null) {
-
-                        strLength = Number(str.match(reDuplicate).length);
-                        if (strLength > 1) {
-
-                            // error: duplicate
-                            arr.error.push(ui.classnames.msgDuplicate + ': ' + str);
-
-                        }
-
-                    }
-
-                });
-
-                // create errors
-                if (arr.error.length === 0) {
-                    alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesNoErrors + '">' + ui.classnames.msgNoErrors + '</li>');
 
                 } else {
-                    alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + ui.classnames.msgErrors + '</li>');
-                }
 
-                arr.error.forEach(name => {
-                    alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesError + '">' + name + '</li>');
-                });
-
-                // create warnings
-                arr.warning = arr.warning.sort();
-                arr.warning.forEach(name => {
-
-                    if (lastAddedWarning === '' || lastAddedWarning.split('-')[0] !== name.split('-')[0]) {
-                        alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + name.split('-')[0] + '</li>');
-                    }
-
-                    alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarning + '">' + name + '</li>');
-                    lastAddedWarning = name;
-
-                });
-
-                // filter list of classnames
-                const filterClassnames = (that) => {
-
-                    let title = that.split('-')[1];
-
-                    // Ex: ui-no-*, ui-sm-*
-                    if (title === 'no' || title === 'xl' || title === 'lg' || title === 'md' || title === 'sm' || title === 'xs') {
-                        title = that.split('-')[2];
-                    }
-
-                    // Ex: ui-sm-no-*
-                    if (title === 'no') {
-                        title = that.split('-')[3];
-                    }
-
-                    // filter rules
-                    if (['desktop', 'windows', 'edg', 'edge', 'ie', 'chrome', 'firefox', 'opera', 'mac', 'safari', 'mobile', 'ios', 'android'].indexOf(title) >= 0) {
-                        title = 'user agents';
-
-                    } else if (['container', 'fluid', 'fixed', 'row', 'gutter', 'col', 'push', 'pull', 'offset', 'order'].indexOf(title) >= 0) {
-                        title = 'grids';
-
-                    } else if (['open', 'active', 'selected', 'pause', ' show', 'showed', 'faded', 'odd', 'even', 'asc', 'desc', 'filtered', 'checked', 'loaded', 'success', 'resized', 'changed'].indexOf(title) >= 0) {
-                        title = 'helpers';
-
-                    } else if (['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].indexOf(title) >= 0) {
-                        title = 'headings';
-
-                    } else if (['form', 'input', 'select', 'dual', 'textarea', 'indeterminate', 'range', 'check', 'radio', 'switch', 'currency', 'spinner', 'file', 'number', 'required', 'label', 'pass'].indexOf(title) >= 0) {
-                        title = 'forms';
-
-                    } else if (['w', 'weather', 'days', 'graphs', 'reports', 'now', 'clear', 'night'].indexOf(title) >= 0) {
-                        title = 'weather';
-
-                    } else if (['code', 'rtl', 'pre', 'hr'].indexOf(title) >= 0) {
-                        title = 'typography';
-
-                    } else if (['theme', 'fill', 'stroke', 'text'].indexOf(title) >= 0) {
-                        title = 'themes';
-
-                    } else if (['line', 'donut', 'pie'].indexOf(title) >= 0) {
-                        title = 'charts';
-
-                    } else if (['icon', 'icons', 'toggle'].indexOf(title) >= 0) {
-                        title = 'icons';
-
-                    } else if (['dropdown', 'nav', 'menu'].indexOf(title) >= 0) {
-                        title = 'dropdowns';
-
-                    } else if (title === 'darkmode' || title === 'invert') {
-                        title = 'dark mode';
-
-                    } else if (title === 'carousel' || title === 'bring') {
-                        title = 'carousel';
-
-                    } if (title === 'header' || title === 'sticky') {
-                        title = 'header';
-
-                    } if (title === 'alerts' || title === 'dialog') {
-                        title = 'alerts';
-
-                    } if (title === 'header' || title === 'sticky') {
-                        title = 'header';
-
-                    } else if (title === 'm') {
-                        title = 'margin';
-
-                    } if (title === 'p') {
-                        title = 'padding';
-
-                    } if (title === 'sp') {
-                        title = 'spacer';
-
-                    } if (title === 'ease') {
-                        title = 'effects';
-
-                    } if (title === 'imgupload') {
-                        title = 'image upload';
-                    }
-
-                    return title;
+                    // list
+                    arr.list.push(str);
 
                 }
 
-                // create group names
-                arr.list.forEach(name => {
+                let strLength = str.match(reDuplicate);
+                if (strLength !== null) {
 
-                    const title = filterClassnames(name);
+                    strLength = Number(str.match(reDuplicate).length);
+                    if (strLength > 1) {
 
-                    if (arr.filtered.indexOf(title) === -1) {
-                        arr.filtered.push(title);
-                    }
-
-                });
-
-                // copy classnames to filtered groups
-                arr.list.forEach(name => {
-
-                    const title = filterClassnames(name);
-
-                    if (arr.filtered.indexOf(title) > -1) {
-
-                        if (arr.groups[title] === undefined) {
-                            arr.groups[title] = name;
-
-                        } else {
-                            arr.groups[title] += ', ' + name;
-                        }
+                        // error: duplicate
+                        arr.error.push(ui.classnames.msgDuplicate + ': ' + str);
 
                     }
 
-                });
-
-                // create category names
-                let html;
-                let items;
-                let created = 0;
-
-                arr.filtered = arr.filtered.sort((a, b) => a.localeCompare(b));
-
-                arr.filtered.forEach(name => {
-
-                    items = arr.groups[name].split(',');
-                    items = items.sort((a, b) => {
-
-                        return a.length - b.length || a.localeCompare(b, undefined, {
-                            numeric: true,
-                            sensitivity: 'base'
-                        });
-
-                    });
-
-                    html = '<h4 class="' + ui.classnames.stylesCatTite + '">' + name + '</h4>' +
-                            '<div class="' + ui.classnames.stylesCatCard + '">' +
-                                '<div class="' + ui.classnames.stylesCatRow + '">';
-
-                    items.forEach((item, i) => {
-
-                        if (parseInt(i / ui.classnames.listColLength) === i / ui.classnames.listColLength) { // create cols
-
-                            if (i !== 0) {
-                                html += '</ul></div>'; // close tags
-                            }
-
-                            html += '<div class="' + ui.classnames.stylesCatCol + '">' +
-                                        '<ul class="' + ui.classnames.stylesCatList + '">';
-
-                        }
-
-                        if (item.indexOf('[native code]') === -1) { // catch native code error
-
-                            item = item.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
-
-                            html += '<li>' + item + '</li>'; // create rows
-                            created += 1;
-
-                        }
-
-                    });
-
-                    html += '</ul></div></div></div>'; // close tags
-                    list.insertAdjacentHTML('beforeend', html);
-
-                });
-
-                total.textContent = arr.filtered.length + ' / ' + created;
-
-                // empty variables
-                loaded = [];
-                arr = [];
-
-                html = "";
-                items = "";
+                }
 
             });
 
-    };
+            // create errors
+            if (arr.error.length === 0) {
+                alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesNoErrors + '">' + ui.classnames.msgNoErrors + '</li>');
 
-    // loaders
-    ui.onload(ui.classnames.Start);
+            } else {
+                alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + ui.classnames.msgErrors + '</li>');
+            }
 
-})();
+            arr.error.forEach(name => {
+                alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesError + '">' + name + '</li>');
+            });
+
+            // create warnings
+            arr.warning = arr.warning.sort();
+            arr.warning.forEach(name => {
+
+                if (lastAddedWarning === '' || lastAddedWarning.split('-')[0] !== name.split('-')[0]) {
+                    alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + name.split('-')[0] + '</li>');
+                }
+
+                alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarning + '">' + name + '</li>');
+                lastAddedWarning = name;
+
+            });
+
+            // filter list of classnames
+            const filterClassnames = (that) => {
+
+                let title = that.split('-')[1];
+
+                // Ex: ui-no-*, ui-sm-*
+                if (title === 'no' || title === 'xl' || title === 'lg' || title === 'md' || title === 'sm' || title === 'xs') {
+                    title = that.split('-')[2];
+                }
+
+                // Ex: ui-sm-no-*
+                if (title === 'no') {
+                    title = that.split('-')[3];
+                }
+
+                // filter rules
+                if (['desktop', 'windows', 'edg', 'edge', 'ie', 'chrome', 'firefox', 'opera', 'mac', 'safari', 'mobile', 'ios', 'android'].indexOf(title) >= 0) {
+                    title = 'user agents';
+
+                } else if (['container', 'fluid', 'fixed', 'row', 'gutter', 'col', 'push', 'pull', 'offset', 'order'].indexOf(title) >= 0) {
+                    title = 'grids';
+
+                } else if (['open', 'active', 'selected', 'pause', ' show', 'showed', 'faded', 'odd', 'even', 'asc', 'desc', 'filtered', 'checked', 'loaded', 'success', 'resized', 'changed'].indexOf(title) >= 0) {
+                    title = 'helpers';
+
+                } else if (['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].indexOf(title) >= 0) {
+                    title = 'headings';
+
+                } else if (['form', 'input', 'select', 'dual', 'textarea', 'indeterminate', 'range', 'check', 'radio', 'switch', 'currency', 'spinner', 'file', 'number', 'required', 'label', 'pass'].indexOf(title) >= 0) {
+                    title = 'forms';
+
+                } else if (['w', 'weather', 'days', 'graphs', 'reports', 'now', 'clear', 'night'].indexOf(title) >= 0) {
+                    title = 'weather';
+
+                } else if (['code', 'rtl', 'pre', 'hr'].indexOf(title) >= 0) {
+                    title = 'typography';
+
+                } else if (['theme', 'fill', 'stroke', 'text'].indexOf(title) >= 0) {
+                    title = 'themes';
+
+                } else if (['line', 'donut', 'pie'].indexOf(title) >= 0) {
+                    title = 'charts';
+
+                } else if (['icon', 'icons', 'toggle'].indexOf(title) >= 0) {
+                    title = 'icons';
+
+                } else if (['dropdown', 'nav', 'menu'].indexOf(title) >= 0) {
+                    title = 'dropdowns';
+
+                } else if (title === 'darkmode' || title === 'invert') {
+                    title = 'dark mode';
+
+                } else if (title === 'carousel' || title === 'bring') {
+                    title = 'carousel';
+
+                } if (title === 'header' || title === 'sticky') {
+                    title = 'header';
+
+                } if (title === 'alerts' || title === 'dialog') {
+                    title = 'alerts';
+
+                } if (title === 'header' || title === 'sticky') {
+                    title = 'header';
+
+                } else if (title === 'm') {
+                    title = 'margin';
+
+                } if (title === 'p') {
+                    title = 'padding';
+
+                } if (title === 'sp') {
+                    title = 'spacer';
+
+                } if (title === 'ease') {
+                    title = 'effects';
+
+                } if (title === 'imgupload') {
+                    title = 'image upload';
+                }
+
+                return title;
+
+            }
+
+            // create group names
+            arr.list.forEach(name => {
+
+                const title = filterClassnames(name);
+
+                if (arr.filtered.indexOf(title) === -1) {
+                    arr.filtered.push(title);
+                }
+
+            });
+
+            // copy classnames to filtered groups
+            arr.list.forEach(name => {
+
+                const title = filterClassnames(name);
+
+                if (arr.filtered.indexOf(title) > -1) {
+
+                    if (arr.groups[title] === undefined) {
+                        arr.groups[title] = name;
+
+                    } else {
+                        arr.groups[title] += ', ' + name;
+                    }
+
+                }
+
+            });
+
+            // create category names
+            let html;
+            let items;
+            let created = 0;
+
+            arr.filtered = arr.filtered.sort((a, b) => a.localeCompare(b));
+
+            arr.filtered.forEach(name => {
+
+                items = arr.groups[name].split(',');
+                items = items.sort((a, b) => {
+
+                    return a.length - b.length || a.localeCompare(b, undefined, {
+                        numeric: true,
+                        sensitivity: 'base'
+                    });
+
+                });
+
+                html = '<h4 class="' + ui.classnames.stylesCatTite + '">' + name + '</h4>' +
+                        '<div class="' + ui.classnames.stylesCatCard + '">' +
+                            '<div class="' + ui.classnames.stylesCatRow + '">';
+
+                items.forEach((item, i) => {
+
+                    if (parseInt(i / ui.classnames.listColLength) === i / ui.classnames.listColLength) { // create cols
+
+                        if (i !== 0) {
+                            html += '</ul></div>'; // close tags
+                        }
+
+                        html += '<div class="' + ui.classnames.stylesCatCol + '">' +
+                                    '<ul class="' + ui.classnames.stylesCatList + '">';
+
+                    }
+
+                    if (item.indexOf('[native code]') === -1) { // catch native code error
+
+                        item = item.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+
+                        html += '<li>' + item + '</li>'; // create rows
+                        created += 1;
+
+                    }
+
+                });
+
+                html += '</ul></div></div></div>'; // close tags
+                list.insertAdjacentHTML('beforeend', html);
+
+            });
+
+            total.textContent = arr.filtered.length + ' / ' + created;
+
+            // empty variables
+            loaded = [];
+            arr = [];
+
+            html = "";
+            items = "";
+
+        });
+
+};
+
+// loaders
+ui.onload(ui.classnames.Start);

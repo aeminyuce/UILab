@@ -13,30 +13,26 @@ ui.card = {
 
 };
 
-(() => {
+ui.card.Start = () => {
 
-    ui.card.Start = () => {
+    // Event Listeners
+    ui.on(document,
+        'click',
 
-        // Event Listeners
-        ui.on(document,
-            'click',
+        '.' + ui.card.targetClose,
 
-            '.' + ui.card.targetClose,
+        function () {
 
-            function () {
+            var parentEl = this.parentElement;
+            ui.addClass(parentEl, ui.card.stylesClosing);
 
-                var parentEl = this.parentElement;
-                ui.addClass(parentEl, ui.card.stylesClosing);
+            setTimeout(() => {
+                parentEl.parentNode.removeChild(parentEl);
+            }, ui.globals.ease * 2);
 
-                setTimeout(() => {
-                    parentEl.parentNode.removeChild(parentEl);
-                }, ui.globals.ease * 2);
+        });
 
-            });
+};
 
-    };
-
-    // loaders
-    ui.onload(ui.card.Start);
-
-})();
+// loaders
+ui.onload(ui.card.Start);

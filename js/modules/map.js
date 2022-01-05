@@ -24,82 +24,78 @@ ui.map = {
 
 };
 
-(() => {
+ui.map.Start = () => {
 
-    ui.map.Start = () => {
+    var map, arr, data, items, opacity;
 
-        var map, arr, data, items, opacity;
+    map = ui.find('.' + ui.map.target);
+    if (map.length === 0) { return; }
 
-        map = ui.find('.' + ui.map.target);
-        if (map.length === 0) { return; }
+    arr = [];
 
-        arr = [];
+    ui.each(map,
 
-        ui.each(map,
+        function (i) {
 
-            function (i) {
+            arr[i] = [];
+            items = ui.find(ui.map.tagTarget + '[' + ui.map.dataSize + ']', this);
 
-                arr[i] = [];
-                items = ui.find(ui.map.tagTarget + '[' + ui.map.dataSize + ']', this);
+            ui.each(items,
 
-                ui.each(items,
+                function () {
 
-                    function () {
+                    data = this.getAttribute(ui.map.dataSize);
+                    if (data > 0) { arr[i].push(data); }
 
-                        data = this.getAttribute(ui.map.dataSize);
-                        if (data > 0) { arr[i].push(data); }
+                });
 
-                    });
+            arr[i] = arr[i].sort((a, b) => b - a);
 
-                arr[i] = arr[i].sort((a, b) => b - a);
+            ui.each(items,
 
-                ui.each(items,
+                function () {
 
-                    function () {
+                    data = this.getAttribute(ui.map.dataSize);
+                    if (data > 0) {
 
-                        data = this.getAttribute(ui.map.dataSize);
-                        if (data > 0) {
+                        ui.addClass(this, ui.map.nameActive);
 
-                            ui.addClass(this, ui.map.nameActive);
+                        opacity = Math.sqrt(data) / Math.sqrt(arr[i][0]);
+                        opacity = opacity.toFixed(2);
 
-                            opacity = Math.sqrt(data) / Math.sqrt(arr[i][0]);
-                            opacity = opacity.toFixed(2);
-
-                            if (opacity > ui.map.opacityMax) {
-                                opacity = ui.map.opacityMax;
-                            }
-
-                            if (opacity < ui.map.opacityMin) {
-                                opacity = ui.map.opacityMin;
-                            }
-
-                            this.setAttribute('style', 'opacity: ' + opacity + ';');
-
+                        if (opacity > ui.map.opacityMax) {
+                            opacity = ui.map.opacityMax;
                         }
 
-                    });
+                        if (opacity < ui.map.opacityMin) {
+                            opacity = ui.map.opacityMin;
+                        }
 
-                arr[i] = [];
+                        this.setAttribute('style', 'opacity: ' + opacity + ';');
 
-            });
+                    }
 
-        // Event Listeners
-        ui.on(ui.map.tagTarget,
-            'click',
+                });
 
-            function () {
+            arr[i] = [];
 
-                var href = this.getAttribute(ui.map.dataHref);
+        });
 
-                if (href !== null) {
-                    window.location = href;
-                }
+    // Event Listeners
+    ui.on(ui.map.tagTarget,
+        'click',
 
-            });
+        function () {
 
-    };
+            var href = this.getAttribute(ui.map.dataHref);
 
-    // loaders
-    ui.onload(ui.map.Start);
+            if (href !== null) {
+                window.location = href;
+            }
 
-})();
+        });
+
+};
+
+// loaders
+ui.onload(ui.map.Start);

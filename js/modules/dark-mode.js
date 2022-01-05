@@ -23,104 +23,100 @@ ui.darkMode = {
 
 };
 
-(() => {
+ui.onload(() => {
 
-    ui.onload(() => {
+    if (ui.userAgents.ie) { return; } // change event listener for darkColorScheme not supported on IE!
 
-        if (ui.userAgents.ie) { return; } // change event listener for darkColorScheme not supported on IE!
+    var i, mode, doc, darkColorScheme, state, cookies, cookieName, setState;
 
-        var i, mode, doc, darkColorScheme, state, cookies, cookieName, setState;
+    mode = ui.darkMode.valueLight;
+    doc = ui.find(ui.darkMode.target)[0];
 
-        mode = ui.darkMode.valueLight;
-        doc = ui.find(ui.darkMode.target)[0];
+    darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-        darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    // set current theme color
+    if (window.matchMedia) {
 
-        // set current theme color
-        if (window.matchMedia) {
-
-            if(darkColorScheme.matches) {
-                mode = ui.darkMode.valueDark;
-            }
-
+        if(darkColorScheme.matches) {
+            mode = ui.darkMode.valueDark;
         }
 
-        // check stored theme color
-        state = decodeURIComponent(document.cookie).split('; ');
-        for (i = 0; i < state.length; i++ ) {
+    }
 
-            cookies = state[i].split('=');
+    // check stored theme color
+    state = decodeURIComponent(document.cookie).split('; ');
+    for (i = 0; i < state.length; i++ ) {
 
-            cookieName = cookies[0];
-            cookieName = cookieName.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+        cookies = state[i].split('=');
 
-            if (cookieName === 'ui-darkMode') {
-                mode = cookies[1];
-            }
+        cookieName = cookies[0];
+        cookieName = cookieName.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
 
+        if (cookieName === 'ui-darkMode') {
+            mode = cookies[1];
         }
 
-        doc.setAttribute(ui.darkMode.dataMod, mode);
+    }
 
-        // Event Listeners
-        setState = function (mode) { // set theme state
+    doc.setAttribute(ui.darkMode.dataMod, mode);
 
-            var d = new Date();
+    // Event Listeners
+    setState = function (mode) { // set theme state
 
-            d.setTime(d.getTime() + ui.darkMode.cookieDays * (24 * 60 * 60 * 1000));
-            document.cookie = ui.darkMode.cookieName + '=' + mode + ';' + "expires=" + d.toUTCString();
+        var d = new Date();
 
-        };
+        d.setTime(d.getTime() + ui.darkMode.cookieDays * (24 * 60 * 60 * 1000));
+        document.cookie = ui.darkMode.cookieName + '=' + mode + ';' + "expires=" + d.toUTCString();
 
-        ui.on(darkColorScheme,
-            'change',
+    };
 
-            function () {
+    ui.on(darkColorScheme,
+        'change',
 
-                if(darkColorScheme.matches) { mode = ui.darkMode.valueDark; } else { mode= ui.darkMode.valueLight; }
-                doc.setAttribute(ui.darkMode.dataMod, mode);
+        function () {
 
-                setState(mode);
+            if(darkColorScheme.matches) { mode = ui.darkMode.valueDark; } else { mode= ui.darkMode.valueLight; }
+            doc.setAttribute(ui.darkMode.dataMod, mode);
 
-            });
+            setState(mode);
 
-        ui.on(document,
-            'click',
+        });
 
-            '.' + ui.darkMode.nameToggle,
+    ui.on(document,
+        'click',
 
-            function (e) {
+        '.' + ui.darkMode.nameToggle,
 
-                e.preventDefault();
+        function (e) {
 
-                // toggle theme color
-                var current = doc.getAttribute(ui.darkMode.dataMod);
-                ui.addClass(ui.effects.target, ui.effects.nameNoEffects);
+            e.preventDefault();
 
-                setTimeout(() => {
+            // toggle theme color
+            var current = doc.getAttribute(ui.darkMode.dataMod);
+            ui.addClass(ui.effects.target, ui.effects.nameNoEffects);
 
-                    if (current !== null && current !== '') {
+            setTimeout(() => {
 
-                        if (current === ui.darkMode.valueDark) {
-                            mode = ui.darkMode.valueLight;
+                if (current !== null && current !== '') {
 
-                        } else {
-                            mode = ui.darkMode.valueDark;
-                        }
+                    if (current === ui.darkMode.valueDark) {
+                        mode = ui.darkMode.valueLight;
 
+                    } else {
+                        mode = ui.darkMode.valueDark;
                     }
 
-                    doc.setAttribute(ui.darkMode.dataMod, mode);
-                    setState(mode);
+                }
 
-                    setTimeout(() => {
-                        ui.removeClass(ui.effects.target, ui.effects.nameNoEffects);
-                    }, 10);
+                doc.setAttribute(ui.darkMode.dataMod, mode);
+                setState(mode);
 
-                }, 0);
+                setTimeout(() => {
+                    ui.removeClass(ui.effects.target, ui.effects.nameNoEffects);
+                }, 10);
 
-            });
+            }, 0);
 
-    });
+        });
 
-})();
+});
