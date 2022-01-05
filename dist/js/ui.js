@@ -308,33 +308,30 @@ ui.hasClass = function (t, name) {
   return re;
 };
 
-ui.addClass = function (t, name) {
-  var arr,
-      l = ui.find(t),
-      i,
-      j,
-      re = new RegExp('^\\s+|\\s+$');
+ui.addClass = function (that, name) {
+  var arr;
+  var re = new RegExp('^\\s+|\\s+$');
+  var nodeList = ui.find(that);
   name = name.split(' ');
+  nodeList.forEach(function (el) {
+    name.forEach(function (item) {
+      if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) {
+        arr = el.className.baseVal.split(' ');
 
-  for (i = 0; i < l.length; i++) {
-    for (j = 0; j < name.length; j++) {
-      if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) {
-        arr = l[i].className.baseVal.split(' ');
-
-        if (arr.indexOf(name[j]) === -1) {
-          l[i].className.baseVal += ' ' + name[j];
-          l[i].className.baseVal = l[i].className.baseVal.replace(re, '');
+        if (arr.indexOf(item) === -1) {
+          el.className.baseVal += ' ' + item;
+          el.className.baseVal = el.className.baseVal.replace(re, '');
         }
       } else {
-        arr = l[i].className.split(' ');
+        arr = el.className.split(' ');
 
-        if (arr.indexOf(name[j]) === -1) {
-          l[i].className += ' ' + name[j];
-          l[i].className = l[i].className.replace(re, '');
+        if (arr.indexOf(item) === -1) {
+          el.className += ' ' + item;
+          el.className = el.className.replace(re, '');
         }
       }
-    }
-  }
+    });
+  });
 };
 
 ui.removeClass = function (t, name) {
@@ -434,32 +431,33 @@ ui.each = function (t, callback) {
   }
 };
 
-ui.closest = function (t, outer) {
-  var l, o, i, j, p;
+ui.closest = function (that, outer) {
+  var outerEl;
+  var parentEl;
 
   if (outer instanceof Object) {
-    o = [outer];
+    outerEl = [outer];
   } else {
-    o = ui.find(outer);
+    outerEl = ui.find(outer);
   }
 
-  l = ui.find(t);
+  var elems = [];
+  var nodeList = ui.find(that);
+  nodeList.forEach(function (el) {
+    parentEl = el.parentNode;
 
-  for (i = 0; i < l.length; i++) {
-    p = l[i].parentNode;
-
-    while (p) {
-      for (j = 0; j < o.length; j++) {
-        if (p === o[j]) {
-          return ui.find(p);
+    while (parentEl) {
+      for (var i = 0; i < outerEl.length; i++) {
+        if (parentEl === outerEl[i]) {
+          elems = ui.find(parentEl);
+          return;
         }
       }
 
-      p = p.parentNode;
+      parentEl = parentEl.parentNode;
     }
-  }
-
-  return [];
+  });
+  return elems;
 };
 
 ui.ajax = function (props) {
@@ -475,9 +473,7 @@ ui.ajax = function (props) {
     ui.ajax.requests = [];
   }
 
-  var i, re, rex;
-  i = ui.ajax.requests.length;
-  re = '';
+  var i = ui.ajax.requests.length;
   ui.ajax.requests[i] = new XMLHttpRequest();
   ui.ajax.requests[i].open(props.type, props.url, true);
 
@@ -501,7 +497,7 @@ ui.ajax = function (props) {
     if (ui.ajax.requests[i].readyState === 4 && ui.ajax.requests[i].status === 200) {
       ui.ajax.classNames = '';
       props.callback('success', ui.ajax.requests[i].responseText, ui.ajax.requests[i]);
-      re = ui.globals.dataPrefix + '+\\w+=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[ \\s\\>]';
+      var re = ui.globals.dataPrefix + '+\\w+=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[ \\s\\>]';
       re = new RegExp(re, 'g');
       ui.ajax.data = ui.ajax.requests[i].responseText.match(re);
 
@@ -517,7 +513,7 @@ ui.ajax = function (props) {
         ui.ajax.classNames = '';
       }
 
-      rex = ui.globals.dataClasses + '=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[\\s\\>]';
+      var rex = ui.globals.dataClasses + '=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[\\s\\>]';
       rex = new RegExp(rex, 'g');
       ui.ajax.classNames += ui.ajax.requests[i].responseText.match(rex);
 
@@ -5770,7 +5766,7 @@ ui.photoGallery = {
       if (e.type === 'touchend') {
         clearTimeout(pageTouchmoveTimer);
         pageTouchmoveTimer = setTimeout(function () {
-          if (pageTouchmove === false) {
+          if (!pageTouchmove) {
             if (ui.hasClass(this, ui.photoGallery.nameGalleryInfo)) {
               if (ui.userAgents.mobile && ui.hasClass(this, ui.photoGallery.nameGalleryTouch)) {
                 galleryFnc(e, that);
@@ -6217,7 +6213,7 @@ ui.imgUpload = {
               if (ui.alerts === undefined) {
                 alert(response.message);
               } else {
-                if (response.success === true) {
+                if (response.success) {
                   ui.alerts.message({
                     msg: response.message,
                     theme: ui.alerts.themeSuccess

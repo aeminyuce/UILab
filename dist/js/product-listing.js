@@ -7,14 +7,13 @@ ui.lineChart.showGrid = false;
 ui.lineChart.showInfo = false;
 ui.onload(function () {
   ui.on('.product-list-load-more', 'click', function () {
-    var that, target, scrollPos;
-    that = this;
-    ui.loadingMask.toggle(this);
-    scrollPos = that.getBoundingClientRect().top + window.pageYOffset - 15;
+    var that = this;
+    ui.loadingMask.toggle(that);
+    var scrollPos = that.getBoundingClientRect().top + window.pageYOffset - 15;
     ui.ajax({
       url: 'xhr/ajax-products.php',
       callback: function callback(status, response) {
-        target = ui.find('.product-list');
+        var target = ui.find('.product-list');
 
         if (target.length > 0) {
           if (status === 'success') {

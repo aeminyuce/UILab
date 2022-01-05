@@ -2,16 +2,17 @@
   var testStorage;
 
   function dashboardMenuToggler(onload) {
-    var menu, menuInner, toggleClasses, state;
-    menu = ui.find('.dashboard-menu')[0];
-    menuInner = ui.find('.dashboard-menu > div')[0];
+    var menu = ui.find('.dashboard-menu')[0];
+    var menuInner = ui.find('.dashboard-menu > div')[0];
 
-    toggleClasses = function toggleClasses() {
+    var toggleClasses = function toggleClasses() {
       ui.toggleClass(menu, 'ui-hidden ui-visible-lg');
       ui.toggleClass('header', 'dashboard-menu-opened');
       ui.toggleClass('.ui-sidebar-show-l', 'ui-hidden-lg');
       ui.toggleClass('.dashboard-menu-show', 'ui-hidden');
     };
+
+    var state;
 
     if (ui.hasClass(menu, 'ui-hidden')) {
       state = 'opened';

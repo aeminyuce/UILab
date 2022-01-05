@@ -715,7 +715,7 @@ ui.photoGallery = {
                     clearTimeout(pageTouchmoveTimer);
                     pageTouchmoveTimer = setTimeout(function () { // has this!
 
-                        if (pageTouchmove === false) {
+                        if (!pageTouchmove) {
 
                             if (ui.hasClass(this, ui.photoGallery.nameGalleryInfo)) {
 

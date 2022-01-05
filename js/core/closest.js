@@ -3,23 +3,43 @@
 import { ui } from './globals.js';
 export default () => ui;
 
-ui.closest = function (t, outer) {
+ui.closest = function (that, outer) {
 
-    var l, o, i, j, p;
+    let outerEl;
+    let parentEl;
 
-    if (outer instanceof Object) { o = [outer]; } else { o = ui.find(outer); }
-    l = ui.find(t);
+    if (outer instanceof Object) {
+        outerEl = [outer];
 
-    for (i = 0; i < l.length; i++) {
-        p = l[i].parentNode;
-        while (p) {
-
-            for (j = 0; j < o.length; j++) { if (p === o[j]) { return ui.find(p); } }
-            p = p.parentNode;
-
-        }
+    } else {
+        outerEl = ui.find(outer);
     }
 
-    return [];
+    let elems = [];
+    const nodeList = ui.find(that);
+
+    nodeList.forEach(el => {
+
+        parentEl = el.parentNode;
+        while (parentEl) {
+
+            for (let i = 0; i < outerEl.length; i++) { // has return
+
+                if (parentEl === outerEl[i]) {
+
+                    elems = ui.find(parentEl);
+                    return;
+
+                }
+
+            }
+
+            parentEl = parentEl.parentNode;
+
+        }
+
+    });
+
+    return elems;
 
 }

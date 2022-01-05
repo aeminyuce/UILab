@@ -62,10 +62,8 @@ ui.classnames = {
                 jsStyleList.forEach(function (style) {
                   loaded.push(style);
                 });
-              } else {
-                if (jsClass !== '') {
-                  loaded.push(jsClass);
-                }
+              } else if (jsClass !== '') {
+                loaded.push(jsClass);
               }
             }
           }

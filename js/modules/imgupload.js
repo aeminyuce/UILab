@@ -629,7 +629,7 @@ ui.imgUpload = {
 
                                 } else {
 
-                                    if (response.success === true) { // check server connection
+                                    if (response.success) { // check server connection
 
                                         ui.alerts.message({
                                             msg: response.message, // show server message

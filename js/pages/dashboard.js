@@ -3,16 +3,14 @@
 (() => {
 
     // toggle menu
-    var testStorage;
+    let testStorage;
 
     function dashboardMenuToggler(onload) {
 
-        var menu, menuInner, toggleClasses, state;
+        const menu = ui.find('.dashboard-menu')[0];
+        const menuInner = ui.find('.dashboard-menu > div')[0];
 
-        menu = ui.find('.dashboard-menu')[0];
-        menuInner = ui.find('.dashboard-menu > div')[0];
-
-        toggleClasses = function () { // toggle classnames
+        const toggleClasses = function () { // toggle classnames
 
             ui.toggleClass(menu, 'ui-hidden ui-visible-lg');
             ui.toggleClass('header', 'dashboard-menu-opened');
@@ -21,6 +19,8 @@
             ui.toggleClass('.dashboard-menu-show', 'ui-hidden');
 
         };
+
+        let state;
 
         if (ui.hasClass(menu, 'ui-hidden')) { // show
 
@@ -52,7 +52,9 @@
             if (onload) {
                 setTimeout(toggleClasses, ui.globals.slow);
 
-            } else { toggleClasses(); }
+            } else {
+                toggleClasses();
+            }
 
         }
 
@@ -83,8 +85,11 @@
 
             if (testStorage && sessionStorage !== undefined) {
 
-                var state = sessionStorage.getItem('dashboard-left-menu');
-                if (state !== null && state === 'closed') { dashboardMenuToggler(true); }
+                const state = sessionStorage.getItem('dashboard-left-menu');
+
+                if (state !== null && state === 'closed') {
+                    dashboardMenuToggler(true);
+                }
 
             }
 

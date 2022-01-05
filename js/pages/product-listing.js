@@ -19,18 +19,16 @@ ui.onload(() => {
 
         function () {
 
-            var that, target, scrollPos;
+            const that = this;
+            ui.loadingMask.toggle(that);
 
-            that = this;
-            ui.loadingMask.toggle(this);
-
-            scrollPos = that.getBoundingClientRect().top + window.pageYOffset - 15;
+            const scrollPos = that.getBoundingClientRect().top + window.pageYOffset - 15;
 
             ui.ajax({
                 url : 'xhr/ajax-products.php',
                 callback: (status, response) => {
 
-                    target = ui.find('.product-list');
+                    const target = ui.find('.product-list');
                     if (target.length > 0) {
 
                         if (status === 'success') {

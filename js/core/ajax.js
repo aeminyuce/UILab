@@ -20,10 +20,8 @@ ui.ajax = function (props) {
     }
 
     if (ui.ajax.requests === undefined) { ui.ajax.requests = []; }
-    var i, re, rex;
 
-    i = ui.ajax.requests.length;
-    re = '';
+    const i = ui.ajax.requests.length;
 
     ui.ajax.requests[i] = new XMLHttpRequest();
     ui.ajax.requests[i].open(props.type, props.url, true);
@@ -55,7 +53,7 @@ ui.ajax = function (props) {
             props.callback('success', ui.ajax.requests[i].responseText, ui.ajax.requests[i]);
 
             // get data attributes
-            re = ui.globals.dataPrefix + '+\\w+=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[ \\s\\>]';
+            let re = ui.globals.dataPrefix + '+\\w+=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[ \\s\\>]';
             re = new RegExp(re, 'g');
 
             ui.ajax.data = ui.ajax.requests[i].responseText.match(re);
@@ -75,7 +73,7 @@ ui.ajax = function (props) {
             }
 
             // get list of data classnames
-            rex = ui.globals.dataClasses + '=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[\\s\\>]';
+            let rex = ui.globals.dataClasses + '=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[\\s\\>]';
             rex = new RegExp(rex, 'g');
 
             ui.ajax.classNames += ui.ajax.requests[i].responseText.match(rex);
@@ -83,6 +81,7 @@ ui.ajax = function (props) {
 
                 ui.ajax.classNames = ui.ajax.classNames.match(/"+[\w\s\d\-\_\=]+"/g);
                 ui.ajax.classNames = ui.ajax.classNames.toString().replace(/\"/g, '').replace(/,/g, ' ').split(' ');
+
                 ui.ajax.classNames = ui.ajax.classNames.filter((value, index, self) => self.indexOf(value) === index);
 
                 // ajax callbacks

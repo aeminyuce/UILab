@@ -3,38 +3,43 @@
 import { ui } from './globals.js';
 export default () => ui;
 
-ui.addClass = function (t, name) {
+ui.addClass = function (that, name) {
 
-    var arr, l = ui.find(t), i, j, re = new RegExp('^\\s+|\\s+$');
+    let arr;
+
+    const re = new RegExp('^\\s+|\\s+$');
+    const nodeList = ui.find(that);
 
     name = name.split(' ');
 
-    for (i = 0; i < l.length; i++) {
-        for (j = 0; j < name.length; j++) {
+    nodeList.forEach(el => {
 
-            if (ui.globals.svgElems.indexOf(l[i].tagName.toLowerCase()) !== -1) { // check SVG and own elements
+        name.forEach(item => {
 
-                arr = l[i].className.baseVal.split(' ');
-                if (arr.indexOf(name[j]) === -1) {
+            if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) { // check SVG and own elements
 
-                    l[i].className.baseVal += ' ' + name[j];
-                    l[i].className.baseVal = l[i].className.baseVal.replace(re, '');
+                arr = el.className.baseVal.split(' ');
+                if (arr.indexOf(item) === -1) {
+
+                    el.className.baseVal += ' ' + item;
+                    el.className.baseVal = el.className.baseVal.replace(re, '');
 
                 }
 
             } else {
 
-                arr = l[i].className.split(' ');
-                if (arr.indexOf(name[j]) === -1) {
+                arr = el.className.split(' ');
+                if (arr.indexOf(item) === -1) {
 
-                    l[i].className += ' ' + name[j];
-                    l[i].className = l[i].className.replace(re, '');
+                    el.className += ' ' + item;
+                    el.className = el.className.replace(re, '');
 
                 }
 
             }
 
-        }
-    }
+        });
+
+    });
 
 }

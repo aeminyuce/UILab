@@ -100,12 +100,8 @@ ui.classnames = {
                                 if (jsStyleList.length > 1) { // check styles for multiple classnames
                                     jsStyleList.forEach(style => { loaded.push(style); });
 
-                                } else {
-
-                                    if (jsClass !== '') { // remove empty styles
-                                        loaded.push(jsClass);
-                                    }
-
+                                } else if (jsClass !== '') { // remove empty styles
+                                    loaded.push(jsClass);
                                 }
 
                             }
