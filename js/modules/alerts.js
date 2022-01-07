@@ -76,9 +76,10 @@ ui.alerts = {
 
 (() => {
 
-    var
+    let
         pageYPos,
         cancelCloseDialog,
+
         messageQueue = [];
 
     ui.alerts.Start = () => {
@@ -86,16 +87,14 @@ ui.alerts = {
         // dialogues
         ui.alerts.closeDialog = function () {
 
-            var bg, dialog;
-
-            dialog = ui.find('.' + ui.alerts.targetDialog)[0];
+            const dialog = ui.find('.' + ui.alerts.targetDialog)[0];
             ui.removeClass(dialog, ui.alerts.nameShowEase);
 
             setTimeout(() => {
 
                 dialog.parentNode.removeChild(dialog);
 
-                bg = ui.find('.' + ui.alerts.targetBg);
+                const bg = ui.find('.' + ui.alerts.targetBg);
                 ui.removeClass(bg, ui.alerts.nameOpenEase);
 
                 ui.removeClass(document, ui.alerts.nameDialogOpened);
@@ -131,40 +130,41 @@ ui.alerts = {
                 props.callback
             */
 
-            var closeBtn, bg, success, buttons, i, keys, val, html, dialog, userCloseDialog;
-
             if (props === undefined) { return; }
             if (props.msg === undefined) { return; }
 
-            dialog = ui.find('.' + ui.alerts.targetDialog)[0];
+            let dialog = ui.find('.' + ui.alerts.targetDialog)[0];
             if (dialog !== undefined) { return; } // prevent multiple dialogues
 
             if (ui.userAgents.mobile) {
                 pageYPos = window.pageYOffset; // get current scroll-y position
             }
 
-            closeBtn = '';
+            let closeBtn = '';
             cancelCloseDialog = false;
 
             // create buttons
-            buttons = '';
+            let buttons = '';
 
             if (props.custom !== undefined) {
 
-                keys = Object.keys(props.custom);
-                for (i = 0; i < keys.length; i++) {
+                for (let key in props.custom) {
 
-                    val = props.custom[keys[i]];
+                    const val = props.custom[key];
+
                     if (val !== '') {
 
-                        buttons += '<button class="' + ui.alerts.nameDialogCustom + '" value="' + keys[i] + '">' +
+                        buttons += '<button class="' + ui.alerts.nameDialogCustom + '" value="' + key + '">' +
                                         val +
                                     '</button>';
 
                     }
+
                 }
 
             }
+
+            let success;
 
             if (props.success === undefined) {
                 success = ui.alerts.msgDialogSuccess;
@@ -192,9 +192,9 @@ ui.alerts = {
             }
 
             // create dialog
-            bg = ui.find('.' + ui.alerts.targetBg)[0];
+            const bgOld = ui.find('.' + ui.alerts.targetBg)[0];
 
-            html = '<div class="' + ui.alerts.targetDialog + ' ' + ui.alerts.stylesDialog + '">' +
+            let html = '<div class="' + ui.alerts.targetDialog + ' ' + ui.alerts.stylesDialog + '">' +
 
                         closeBtn +
 
@@ -207,7 +207,7 @@ ui.alerts = {
 
                     '</div>';
 
-            if (bg === undefined) {
+            if (bgOld === undefined) {
 
                 html += '<div class="' + ui.alerts.targetBg + ' ' + ui.alerts.stylesBg + '">' +
                         '</div>';
@@ -217,13 +217,14 @@ ui.alerts = {
             ui.find('body')[0].insertAdjacentHTML('beforeend', html);
             ui.addClass(document, ui.alerts.nameDialogOpened);
 
+            const bgNew = ui.find('.' + ui.alerts.targetBg);
+
             // show dialog
-            bg = ui.find('.' + ui.alerts.targetBg);
-            ui.addClass(bg, ui.alerts.nameOpen);
+            ui.addClass(bgNew, ui.alerts.nameOpen);
 
             setTimeout(() => {
 
-                ui.addClass(bg, ui.alerts.nameOpenEase);
+                ui.addClass(bgNew, ui.alerts.nameOpenEase);
                 setTimeout(() => {
 
                     dialog = ui.find('.' + ui.alerts.targetDialog);
@@ -241,12 +242,8 @@ ui.alerts = {
 
                         function () {
 
-                            var that, msg, msgTimer, theme;
-
-                            that = this;
-                            msg = this.textContent;
-
-                            theme = '';
+                            const that = this;
+                            let theme = '';
 
                             if (ui.hasClass(this, ui.alerts.nameDialogSuccess)) {
                                 theme = ui.alerts.themeSuccess;
@@ -254,6 +251,8 @@ ui.alerts = {
                             } else if (ui.hasClass(this, ui.alerts.nameDialogError)) {
                                 theme = ui.alerts.themeDanger;
                             }
+
+                            let msgTimer
 
                             if (ui.alerts.dialogMessages) {
                                 msgTimer = ui.globals.ease;
@@ -263,6 +262,7 @@ ui.alerts = {
                             }
 
                             ui.alerts.closeDialog();
+                            const msg = this.textContent;
 
                             setTimeout(() => {
 
@@ -292,11 +292,11 @@ ui.alerts = {
 
                     if (cancelCloseDialog) { // attach close event listeners if props.error defined
 
-                        userCloseDialog = function () {
+                        const userCloseDialog = function () {
 
-                            var errorBtn = ui.find('.' + ui.alerts.targetDialog + ' .' + ui.alerts.nameDialogError)[0];
-
+                            const errorBtn = ui.find('.' + ui.alerts.targetDialog + ' .' + ui.alerts.nameDialogError)[0];
                             ui.alerts.closeDialog();
+
                             if (ui.alerts.dialogMessages && errorBtn !== undefined) {
 
                                 setTimeout(() => {
@@ -343,7 +343,10 @@ ui.alerts = {
             setTimeout(() => {
 
                 ui.removeClass(win, ui.alerts.nameShow);
-                win.parentNode.removeChild(win);
+
+                if (win.parentNode !== null) {
+                    win.parentNode.removeChild(win);
+                }
 
             }, ui.globals.ease);
 
@@ -358,23 +361,21 @@ ui.alerts = {
                 props.theme
             */
 
-            var arr, html, holder, message, msgStyles, prev, i, j, slide;
-
             if (props === undefined) { return; }
             if (props.msg === undefined) { return; }
 
             // detect position
-            arr = [ui.alerts.posTopRight, ui.alerts.posTopLeft, ui.alerts.posBottomRight, ui.alerts.posBottomLeft];
+            const arrPos = [ui.alerts.posTopRight, ui.alerts.posTopLeft, ui.alerts.posBottomRight, ui.alerts.posBottomLeft];
 
-            if (arr.indexOf(props.pos) < 0) {
+            if (arrPos.indexOf(props.pos) < 0) {
                 props.pos = ui.alerts.posDefault;
             }
 
             // detect theme
-            msgStyles = '';
-            arr = [ui.alerts.themeSuccess, ui.alerts.themeWarning, ui.alerts.themeDanger];
+            let msgStyles = '';
+            const arrTheme = [ui.alerts.themeSuccess, ui.alerts.themeWarning, ui.alerts.themeDanger];
 
-            if (arr.indexOf(props.theme) > -1) {
+            if (arrTheme.indexOf(props.theme) > -1) {
                 msgStyles += ui.alerts.nameMsgThemePrefix + props.theme + ' ';
 
             } else if (ui.alerts.stylesMsgTheme !== '') {
@@ -382,9 +383,9 @@ ui.alerts = {
             }
 
             // create mssage
-            holder = ui.find('.' + ui.alerts.nameMsgHolder)[0];
+            let holder = ui.find('.' + ui.alerts.nameMsgHolder)[0];
 
-            html = '';
+            let html = '';
 
             if (holder === undefined) {
                 html += '<div class="' + ui.alerts.nameMsgHolder + '">';
@@ -409,7 +410,7 @@ ui.alerts = {
             }
 
             // show message
-            message = ui.find('.' + ui.alerts.targetMsg + ':last-child');
+            const message = ui.find('.' + ui.alerts.targetMsg + ':last-child');
             ui.addClass(message, ui.alerts.nameShow);
 
             setTimeout(() => {
@@ -419,14 +420,14 @@ ui.alerts = {
                 // move same position elements
                 if (holder !== undefined) {
 
-                    prev = ui.find('.' + ui.alerts.targetMsg + '.' + ui.alerts.namePosPrefix + props.pos);
+                    const prev = ui.find('.' + ui.alerts.targetMsg + '.' + ui.alerts.namePosPrefix + props.pos);
 
-                    for (j = 0; j < prev.length; j++) {
+                    prev.forEach((el, j, arr) => {
 
-                        slide = 0;
+                        let slide = 0;
 
-                        for (i = j + 1; i < prev.length; i++) {
-                            slide += Number(prev[i].offsetHeight + 10);
+                        for (let i = j + 1; i < arr.length; i++) {
+                            slide += Number(el.offsetHeight + 10);
                         }
 
                         if (props.pos === ui.alerts.posBottomRight || props.pos === ui.alerts.posBottomLeft) {
@@ -435,7 +436,7 @@ ui.alerts = {
 
                         prev[j].style.transform = 'translateY(' + slide + 'px)';
 
-                    }
+                    });
 
                 }
 
@@ -463,17 +464,17 @@ ui.alerts = {
 
             function () {
 
-                var i;
+                const that = this;
 
-                for (i = 0; i < messageQueue.length; i++) {
+                messageQueue.forEach((el, i) => {
 
-                    if (messageQueue[i][0] === this) {
+                    if (el[0] === that) {
                         messageQueue.splice(i, 1);
                     }
 
-                }
+                });
 
-                ui.alerts.closeMessage(this);
+                ui.alerts.closeMessage(that);
 
             });
 

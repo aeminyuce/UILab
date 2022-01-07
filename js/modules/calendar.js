@@ -188,7 +188,7 @@ ui.calendar.Start = () => {
     // create calendar table
     function createFnc(that, newDate, picker) {
 
-        var date, today, pickerDay, container, html, i, j, todayStyles, pickerDayStyles, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, src, keys, dday, details;
+        var date, today, pickerDay, container, html, i, j, todayStyles, pickerDayStyles, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, src, dday, details;
 
         date = new Date();
         date.setDate(1); // for the prev and next implementations
@@ -431,13 +431,11 @@ ui.calendar.Start = () => {
                                                     '<strong>' + response[i].day + '</strong>' +
                                                     '<b>' + response[i].dayName + '</b><br>';
 
-                                    keys = Object.keys(response[i].details);
-
-                                    for (j = 0; j < keys.length; j++) {
+                                    for (let key in response[i].details) {
 
                                         details += '<span>' +
-                                                        '<i>' + keys[j] + '</i> ' +
-                                                        response[i].details[keys[j]] +
+                                                        '<i>' + key + '</i> ' +
+                                                        response[i].details[key] +
                                                     '</span>';
 
                                     }

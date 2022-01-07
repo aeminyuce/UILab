@@ -47,7 +47,7 @@ ui.iconlist.Start = () => {
 
             ui.removeClass(buttons, ui.iconlist.stylesToolActive);
 
-            setTimeout(function() { // has this
+            setTimeout(() => {
                 ui.addClass(that, ui.iconlist.stylesToolActive);
             }, 0);
 

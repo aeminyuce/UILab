@@ -2804,12 +2804,11 @@ ui.alerts = {
 
   ui.alerts.Start = function () {
     ui.alerts.closeDialog = function () {
-      var bg, dialog;
-      dialog = ui.find('.' + ui.alerts.targetDialog)[0];
+      var dialog = ui.find('.' + ui.alerts.targetDialog)[0];
       ui.removeClass(dialog, ui.alerts.nameShowEase);
       setTimeout(function () {
         dialog.parentNode.removeChild(dialog);
-        bg = ui.find('.' + ui.alerts.targetBg);
+        var bg = ui.find('.' + ui.alerts.targetBg);
         ui.removeClass(bg, ui.alerts.nameOpenEase);
         ui.removeClass(document, ui.alerts.nameDialogOpened);
 
@@ -2830,8 +2829,6 @@ ui.alerts = {
     };
 
     ui.alerts.dialog = function (props) {
-      var closeBtn, bg, success, buttons, i, keys, val, html, dialog, userCloseDialog;
-
       if (props === undefined) {
         return;
       }
@@ -2840,7 +2837,7 @@ ui.alerts = {
         return;
       }
 
-      dialog = ui.find('.' + ui.alerts.targetDialog)[0];
+      var dialog = ui.find('.' + ui.alerts.targetDialog)[0];
 
       if (dialog !== undefined) {
         return;
@@ -2850,21 +2847,21 @@ ui.alerts = {
         pageYPos = window.pageYOffset;
       }
 
-      closeBtn = '';
+      var closeBtn = '';
       cancelCloseDialog = false;
-      buttons = '';
+      var buttons = '';
 
       if (props.custom !== undefined) {
-        keys = Object.keys(props.custom);
-
-        for (i = 0; i < keys.length; i++) {
-          val = props.custom[keys[i]];
+        for (var key in props.custom) {
+          var val = props.custom[key];
 
           if (val !== '') {
-            buttons += '<button class="' + ui.alerts.nameDialogCustom + '" value="' + keys[i] + '">' + val + '</button>';
+            buttons += '<button class="' + ui.alerts.nameDialogCustom + '" value="' + key + '">' + val + '</button>';
           }
         }
       }
+
+      var success;
 
       if (props.success === undefined) {
         success = ui.alerts.msgDialogSuccess;
@@ -2880,19 +2877,19 @@ ui.alerts = {
         closeBtn = '<button class="' + ui.alerts.nameCloseDialog + ' ' + ui.alerts.stylesCloseDialog + '">' + '<svg class="' + ui.alerts.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.alerts.closeIcon + '"/></svg>' + '</button>';
       }
 
-      bg = ui.find('.' + ui.alerts.targetBg)[0];
-      html = '<div class="' + ui.alerts.targetDialog + ' ' + ui.alerts.stylesDialog + '">' + closeBtn + '<div class="' + ui.alerts.nameDialogMsg + '">' + props.msg + '</div>' + '<div class="' + ui.alerts.nameDialogBtnHolder + ' ' + ui.alerts.stylesDialogBtnHolder + '">' + buttons + '</div>' + '</div>';
+      var bgOld = ui.find('.' + ui.alerts.targetBg)[0];
+      var html = '<div class="' + ui.alerts.targetDialog + ' ' + ui.alerts.stylesDialog + '">' + closeBtn + '<div class="' + ui.alerts.nameDialogMsg + '">' + props.msg + '</div>' + '<div class="' + ui.alerts.nameDialogBtnHolder + ' ' + ui.alerts.stylesDialogBtnHolder + '">' + buttons + '</div>' + '</div>';
 
-      if (bg === undefined) {
+      if (bgOld === undefined) {
         html += '<div class="' + ui.alerts.targetBg + ' ' + ui.alerts.stylesBg + '">' + '</div>';
       }
 
       ui.find('body')[0].insertAdjacentHTML('beforeend', html);
       ui.addClass(document, ui.alerts.nameDialogOpened);
-      bg = ui.find('.' + ui.alerts.targetBg);
-      ui.addClass(bg, ui.alerts.nameOpen);
+      var bgNew = ui.find('.' + ui.alerts.targetBg);
+      ui.addClass(bgNew, ui.alerts.nameOpen);
       setTimeout(function () {
-        ui.addClass(bg, ui.alerts.nameOpenEase);
+        ui.addClass(bgNew, ui.alerts.nameOpenEase);
         setTimeout(function () {
           dialog = ui.find('.' + ui.alerts.targetDialog);
           ui.addClass(dialog, ui.alerts.nameShow);
@@ -2901,16 +2898,16 @@ ui.alerts = {
             ui.addClass(dialog, ui.alerts.nameShowEase);
           }, 10);
           ui.on('.' + ui.alerts.nameDialogBtnHolder + ' button', 'click', function () {
-            var that, msg, msgTimer, theme;
-            that = this;
-            msg = this.textContent;
-            theme = '';
+            var that = this;
+            var theme = '';
 
             if (ui.hasClass(this, ui.alerts.nameDialogSuccess)) {
               theme = ui.alerts.themeSuccess;
             } else if (ui.hasClass(this, ui.alerts.nameDialogError)) {
               theme = ui.alerts.themeDanger;
             }
+
+            var msgTimer;
 
             if (ui.alerts.dialogMessages) {
               msgTimer = ui.globals.ease;
@@ -2919,6 +2916,7 @@ ui.alerts = {
             }
 
             ui.alerts.closeDialog();
+            var msg = this.textContent;
             setTimeout(function () {
               if (ui.alerts.dialogMessages) {
                 ui.alerts.message({
@@ -2936,7 +2934,7 @@ ui.alerts = {
           });
 
           if (cancelCloseDialog) {
-            userCloseDialog = function userCloseDialog() {
+            var userCloseDialog = function userCloseDialog() {
               var errorBtn = ui.find('.' + ui.alerts.targetDialog + ' .' + ui.alerts.nameDialogError)[0];
               ui.alerts.closeDialog();
 
@@ -2966,13 +2964,14 @@ ui.alerts = {
       ui.removeClass(win, ui.alerts.nameShowEase);
       setTimeout(function () {
         ui.removeClass(win, ui.alerts.nameShow);
-        win.parentNode.removeChild(win);
+
+        if (win.parentNode !== null) {
+          win.parentNode.removeChild(win);
+        }
       }, ui.globals.ease);
     };
 
     ui.alerts.message = function (props) {
-      var arr, html, holder, message, msgStyles, prev, i, j, slide;
-
       if (props === undefined) {
         return;
       }
@@ -2981,23 +2980,23 @@ ui.alerts = {
         return;
       }
 
-      arr = [ui.alerts.posTopRight, ui.alerts.posTopLeft, ui.alerts.posBottomRight, ui.alerts.posBottomLeft];
+      var arrPos = [ui.alerts.posTopRight, ui.alerts.posTopLeft, ui.alerts.posBottomRight, ui.alerts.posBottomLeft];
 
-      if (arr.indexOf(props.pos) < 0) {
+      if (arrPos.indexOf(props.pos) < 0) {
         props.pos = ui.alerts.posDefault;
       }
 
-      msgStyles = '';
-      arr = [ui.alerts.themeSuccess, ui.alerts.themeWarning, ui.alerts.themeDanger];
+      var msgStyles = '';
+      var arrTheme = [ui.alerts.themeSuccess, ui.alerts.themeWarning, ui.alerts.themeDanger];
 
-      if (arr.indexOf(props.theme) > -1) {
+      if (arrTheme.indexOf(props.theme) > -1) {
         msgStyles += ui.alerts.nameMsgThemePrefix + props.theme + ' ';
       } else if (ui.alerts.stylesMsgTheme !== '') {
         msgStyles += ui.alerts.stylesMsgTheme + ' ';
       }
 
-      holder = ui.find('.' + ui.alerts.nameMsgHolder)[0];
-      html = '';
+      var holder = ui.find('.' + ui.alerts.nameMsgHolder)[0];
+      var html = '';
 
       if (holder === undefined) {
         html += '<div class="' + ui.alerts.nameMsgHolder + '">';
@@ -3014,19 +3013,18 @@ ui.alerts = {
         holder.insertAdjacentHTML('beforeend', html);
       }
 
-      message = ui.find('.' + ui.alerts.targetMsg + ':last-child');
+      var message = ui.find('.' + ui.alerts.targetMsg + ':last-child');
       ui.addClass(message, ui.alerts.nameShow);
       setTimeout(function () {
         ui.addClass(message, ui.alerts.nameShowEase);
 
         if (holder !== undefined) {
-          prev = ui.find('.' + ui.alerts.targetMsg + '.' + ui.alerts.namePosPrefix + props.pos);
+          var prev = ui.find('.' + ui.alerts.targetMsg + '.' + ui.alerts.namePosPrefix + props.pos);
+          prev.forEach(function (el, j, arr) {
+            var slide = 0;
 
-          for (j = 0; j < prev.length; j++) {
-            slide = 0;
-
-            for (i = j + 1; i < prev.length; i++) {
-              slide += Number(prev[i].offsetHeight + 10);
+            for (var i = j + 1; i < arr.length; i++) {
+              slide += Number(el.offsetHeight + 10);
             }
 
             if (props.pos === ui.alerts.posBottomRight || props.pos === ui.alerts.posBottomLeft) {
@@ -3034,7 +3032,7 @@ ui.alerts = {
             }
 
             prev[j].style.transform = 'translateY(' + slide + 'px)';
-          }
+          });
         }
 
         messageQueue.push(message);
@@ -3050,15 +3048,13 @@ ui.alerts = {
     };
 
     ui.on(document, 'click', '.' + ui.alerts.targetMsg, function () {
-      var i;
-
-      for (i = 0; i < messageQueue.length; i++) {
-        if (messageQueue[i][0] === this) {
+      var that = this;
+      messageQueue.forEach(function (el, i) {
+        if (el[0] === that) {
           messageQueue.splice(i, 1);
         }
-      }
-
-      ui.alerts.closeMessage(this);
+      });
+      ui.alerts.closeMessage(that);
     });
   };
 
@@ -3187,7 +3183,7 @@ ui.calendar.Start = function () {
   };
 
   function createFnc(that, newDate, picker) {
-    var date, today, pickerDay, container, html, i, j, todayStyles, pickerDayStyles, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, src, keys, dday, details;
+    var date, today, pickerDay, container, html, i, j, todayStyles, pickerDayStyles, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, src, dday, details;
     date = new Date();
     date.setDate(1);
     pickerDay = '';
@@ -3346,10 +3342,9 @@ ui.calendar.Start = function () {
                   dday = ui.find('[' + ui.calendar.dataDay + '="' + response[i].day + '"]', that);
                   ui.addClass(dday, ui.calendar.nameToggleDetails);
                   details += '<li ' + ui.calendar.dataD + '="' + response[i].day + '">' + '<strong>' + response[i].day + '</strong>' + '<b>' + response[i].dayName + '</b><br>';
-                  keys = Object.keys(response[i].details);
 
-                  for (j = 0; j < keys.length; j++) {
-                    details += '<span>' + '<i>' + keys[j] + '</i> ' + response[i].details[keys[j]] + '</span>';
+                  for (var key in response[i].details) {
+                    details += '<span>' + '<i>' + key + '</i> ' + response[i].details[key] + '</span>';
                   }
 
                   details += '</li>';
