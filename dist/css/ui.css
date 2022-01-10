@@ -303,36 +303,6 @@ body {
 [class*="ui-ease-2nd-"] > * > * {
   transition-timing-function: ease-out;
 }
-.ui-ease-fast,
-.ui-ease-fast[class*="ui-ease-1st-"] > *,
-.ui-ease-fast[class*="ui-ease-2nd-"] > * > * {
-  transition-duration: 0.1s;
-}
-.ui-ease-slow,
-.ui-ease-slow[class*="ui-ease-1st-"] > *,
-.ui-ease-slow[class*="ui-ease-2nd-"] > * > * {
-  transition-duration: 0.4s;
-}
-.ui-ease-slow-2x,
-.ui-ease-slow-2x[class*="ui-ease-1st-"] > *,
-.ui-ease-slow-2x[class*="ui-ease-2nd-"] > * > * {
-  transition-duration: 0.8s;
-}
-.ui-ease-slow-3x,
-.ui-ease-slow-3x[class*="ui-ease-1st-"] > *,
-.ui-ease-slow-3x[class*="ui-ease-2nd-"] > * > * {
-  transition-duration: 1.2s;
-}
-.ui-ease-slow-4x,
-.ui-ease-slow-4x[class*="ui-ease-1st-"] > *,
-.ui-ease-slow-4x[class*="ui-ease-2nd-"] > * > * {
-  transition-duration: 1.6s;
-}
-.ui-ease-slow-5x,
-.ui-ease-slow-5x[class*="ui-ease-1st-"] > *,
-.ui-ease-slow-5x[class*="ui-ease-2nd-"] > * > * {
-  transition-duration: 2s;
-}
 .ui-ease-color,
 .ui-ease-1st-color > *,
 .ui-ease-2nd-color > * > * {
@@ -389,6 +359,36 @@ body {
 }
 .ui-ease-all {
   transition-property: all;
+}
+.ui-ease-fast,
+.ui-ease-fast[class*="ui-ease-1st-"] > *,
+.ui-ease-fast[class*="ui-ease-2nd-"] > * > * {
+  transition-duration: 0.1s !important;
+}
+.ui-ease-slow,
+.ui-ease-slow[class*="ui-ease-1st-"] > *,
+.ui-ease-slow[class*="ui-ease-2nd-"] > * > * {
+  transition-duration: 0.4s !important;
+}
+.ui-ease-slow-2x,
+.ui-ease-slow-2x[class*="ui-ease-1st-"] > *,
+.ui-ease-slow-2x[class*="ui-ease-2nd-"] > * > * {
+  transition-duration: 0.8s !important;
+}
+.ui-ease-slow-3x,
+.ui-ease-slow-3x[class*="ui-ease-1st-"] > *,
+.ui-ease-slow-3x[class*="ui-ease-2nd-"] > * > * {
+  transition-duration: 1.2s !important;
+}
+.ui-ease-slow-4x,
+.ui-ease-slow-4x[class*="ui-ease-1st-"] > *,
+.ui-ease-slow-4x[class*="ui-ease-2nd-"] > * > * {
+  transition-duration: 1.6s !important;
+}
+.ui-ease-slow-5x,
+.ui-ease-slow-5x[class*="ui-ease-1st-"] > *,
+.ui-ease-slow-5x[class*="ui-ease-2nd-"] > * > * {
+  transition-duration: 2s !important;
 }
 .ui-ease-default,
 .ui-ease-default[class*="ui-ease-1st-"] > *,

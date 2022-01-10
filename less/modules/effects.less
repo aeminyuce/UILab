@@ -48,12 +48,6 @@
 
 .ui-ease- {
 
-    each(@ease-types, {
-        &@{key} {
-            &,&[class*="ui-ease-1st-"] > *,&[class*="ui-ease-2nd-"] > * > * { transition-duration: @value; }
-        }
-    });
-
     &color,&1st-color > *,&2nd-color > * > * { transition-property: color; transition-duration: @ease-default; }
     &width,&1st-width > *,&2nd-width > * > * { transition-property: width; transition-duration: @ease-default; }
     &height,&1st-height > *,&2nd-height > * > * { transition-property: height; transition-duration: @ease-default; }
@@ -64,6 +58,12 @@
     &layout,&1st-layout > *,&2nd-layout > * > * { transition-property: transform, opacity, box-shadow; transition-duration: @ease-default; }
     &svg,&1st-svg > *,&2nd-svg > * > * { transition-property: fill, stroke, opacity; transition-duration: @ease-default; }
     &all { transition-property: all; }
+
+    each(@ease-types, {
+        &@{key} {
+            &,&[class*="ui-ease-1st-"] > *,&[class*="ui-ease-2nd-"] > * > * { transition-duration: @value !important; }
+        }
+    });
 
     &default {
         &,&[class*="ui-ease-1st-"]> *,&[class*="ui-ease-2nd-"] > * > * { transition-duration: @ease-default !important; transition-timing-function: ease !important; }
