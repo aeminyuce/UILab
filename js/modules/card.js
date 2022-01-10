@@ -23,7 +23,7 @@ ui.card.Start = () => {
 
         function () {
 
-            var parentEl = this.parentElement;
+            const parentEl = this.parentElement;
             ui.addClass(parentEl, ui.card.stylesClosing);
 
             setTimeout(() => {

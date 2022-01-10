@@ -48,7 +48,7 @@ ui.classnames = {
 ui.classnames.Start = () => {
 
     // create arrays
-    let arr = []; // will be empty
+    let arr = [];
 
     arr.list = [];
     arr.error = [];
@@ -80,7 +80,7 @@ ui.classnames.Start = () => {
         () => {
 
             // load js classnames
-            let loaded = []; // will be empty
+            let loaded = [];
 
             let re = ui.classnames.jsTarget + '+\\w*|' + ui.classnames.jsTarget + '|' + ui.classnames.jsName + '+\\w*' + '|' + ui.classnames.jsStyles + '+\\w*';
             re = new RegExp(re, 'g');

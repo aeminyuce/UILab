@@ -100,13 +100,10 @@ ui.calendar = {
 // first loading
 ui.calendar.Start = () => {
 
-    var pickerVal;
-
     // get calendar's date
     function getAttr(that, date, newDate) {
 
-        var attr = that.getAttribute(ui.calendar.dataDate);
-
+        let attr = that.getAttribute(ui.calendar.dataDate);
         if (attr !== null && attr !== '') {
 
             attr = attr.split(',');
@@ -159,11 +156,11 @@ ui.calendar.Start = () => {
     }
 
     // get picker value
-    pickerVal = (that) => {
+    const pickerVal = (that) => {
 
         if (that.value !== '') {
 
-            var val = that.value.split(ui.calendar.pickerSep);
+            const val = that.value.split(ui.calendar.pickerSep);
 
             if (val.length === 3 && val[0].length <= 2 && val[1].length <= 2 && val[2].length === 4) {
 
@@ -188,12 +185,10 @@ ui.calendar.Start = () => {
     // create calendar table
     function createFnc(that, newDate, picker) {
 
-        var date, today, pickerDay, container, html, i, j, todayStyles, pickerDayStyles, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, src, dday, details;
-
-        date = new Date();
+        const date = new Date();
         date.setDate(1); // for the prev and next implementations
 
-        pickerDay = '';
+        let pickerDay = '';
 
         // set new date
         if (newDate !== undefined) {
@@ -227,8 +222,8 @@ ui.calendar.Start = () => {
         that.setAttribute(ui.calendar.dataDate, date.getFullYear() + ',' + (date.getMonth() + 1));
 
         // create table
-        html = '';
-        container = ui.find('.' + ui.calendar.nameContainer, that)[0];
+        let html = '';
+        let container = ui.find('.' + ui.calendar.nameContainer, that)[0];
 
         if (container === undefined) {
             html += '<div class="' + ui.calendar.nameContainer + ' ' + ui.calendar.stylesContainer + '">';
@@ -260,25 +255,18 @@ ui.calendar.Start = () => {
         '<thead>';
 
         if (ui.calendar.startDayofWeek === 0) { // Sunday
-
             html += '<th>' + ui.calendar.days[ui.calendar.days.length - 1] + '</th>';
-
-            for (i = 0; i < ui.calendar.days.length - 1; i++) {
-                html += '<th>' + ui.calendar.days[i] + '</th>';
-            }
-
-        } else { // Monday
-
-            for (i = 0; i < ui.calendar.days.length; i++) {
-                html += '<th>' + ui.calendar.days[i] + '</th>';
-            }
-
         }
+
+        ui.calendar.days.forEach(item => {
+            html += '<th>' + item + '</th>';
+        });
 
         html += '</thead>' +
                 '<tbody>';
 
-        firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+        let sysDays;
+        let firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
 
         if (ui.calendar.startDayofWeek === 0) { // Sunday
 
@@ -294,19 +282,19 @@ ui.calendar.Start = () => {
 
         if (firstDay < 1) { firstDay = 7; }
 
-        prevLastDay = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
-        days = prevLastDay - (firstDay - 1);
+        let prevLastDay = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
+        let days = prevLastDay - (firstDay - 1);
 
-        lastDay = new Date(date.getFullYear(), (date.getMonth() + 1), 0).getDate();
+        const lastDay = new Date(date.getFullYear(), (date.getMonth() + 1), 0).getDate();
 
-        activeDay = false;
-        today = new Date().getFullYear() + ' ' + new Date().getMonth() + ' ' + new Date().getDate();
+        let activeDay = false;
+        const today = new Date().getFullYear() + ' ' + new Date().getMonth() + ' ' + new Date().getDate();
 
-        for (i = 0; i < 6; i++) {
+        for (let i = 0; i < 6; i++) {
 
             html += '<tr>';
 
-            for (j = 0; j < 7; j++) {
+            for (let j = 0; j < 7; j++) {
 
                 if (days > prevLastDay) {
 
@@ -326,7 +314,7 @@ ui.calendar.Start = () => {
 
                     if (date.getFullYear() + ' ' + date.getMonth() + ' ' + days === today) { // today
 
-                        todayStyles = '';
+                        let todayStyles = '';
 
                         if (ui.calendar.stylesToday !== '') {
                             todayStyles = ui.calendar.stylesToday + ' ' + ui.calendar.nameHover;
@@ -342,7 +330,7 @@ ui.calendar.Start = () => {
 
                             if (date.getFullYear() + ',' + date.getMonth() + ',' + days === pickerDay) {
 
-                                pickerDayStyles = '';
+                                let pickerDayStyles = '';
 
                                 if (ui.calendar.pickerDayStyles !== '') {
                                     pickerDayStyles = ui.calendar.stylesPickerDay + ' ' + ui.calendar.nameHover;
@@ -399,10 +387,10 @@ ui.calendar.Start = () => {
         }
 
         // check details
-        src = that.getAttribute(ui.calendar.dataSrc);
+        const src = that.getAttribute(ui.calendar.dataSrc);
         if (src !== null && src !== '') {
 
-            details = '';
+            let details = '';
 
             // get json data with ajax
             ui.ajax({
@@ -415,27 +403,27 @@ ui.calendar.Start = () => {
                         response = JSON.parse(response);
                         if (response.length === 'undefined') { return; }
 
-                        for (i = 0; i < response.length; i++) {
+                        response.forEach(item => {
 
-                            if (response[i] === null) { return; }
+                            if (item === null) { return; }
 
-                            if (Number(response[i].year) === date.getFullYear()) {
-                                if (Number(response[i].month) === date.getMonth() + 1) {
+                            if (Number(item.year) === date.getFullYear()) {
+                                if (Number(item.month) === date.getMonth() + 1) {
 
                                     // select detailed days
-                                    dday = ui.find('[' + ui.calendar.dataDay + '="' + response[i].day + '"]', that);
+                                    const dday = ui.find('[' + ui.calendar.dataDay + '="' + item.day + '"]', that);
                                     ui.addClass(dday, ui.calendar.nameToggleDetails);
 
                                     // create details html
-                                    details += '<li ' + ui.calendar.dataD + '="' + response[i].day + '">' +
-                                                    '<strong>' + response[i].day + '</strong>' +
-                                                    '<b>' + response[i].dayName + '</b><br>';
+                                    details += '<li ' + ui.calendar.dataD + '="' + item.day + '">' +
+                                                    '<strong>' + item.day + '</strong>' +
+                                                    '<b>' + item.dayName + '</b><br>';
 
-                                    for (let key in response[i].details) {
+                                    for (let key in item.details) {
 
                                         details += '<span>' +
                                                         '<i>' + key + '</i> ' +
-                                                        response[i].details[key] +
+                                                        item.details[key] +
                                                     '</span>';
 
                                     }
@@ -445,7 +433,7 @@ ui.calendar.Start = () => {
                                 }
                             }
 
-                        }
+                        });
 
                         container = ui.find('.' + ui.calendar.nameContainer, that)[0];
 
@@ -508,16 +496,10 @@ ui.calendar.Start = () => {
     // ckeck not loaded calendars
     ui.calendar.Init = () => {
 
-        var calendars = ui.find('.' + ui.calendar.target + ':not(.' + ui.calendar.nameActive + ')');
+        const calendars = ui.find('.' + ui.calendar.target + ':not(.' + ui.calendar.nameActive + ')');
 
         if (calendars.length > 0) {
-
-            ui.each(calendars,
-
-                function () {
-                    createFnc(this);
-                });
-
+            calendars.forEach(el => { createFnc(el); });
         }
 
     };
@@ -532,10 +514,10 @@ ui.calendar.Start = () => {
 
         function () {
 
-            var that, picker, form;
+            const that = ui.closest(this, '.' + ui.calendar.target)[0];
+            const picker = ui.closest(that, '.' + ui.calendar.namePicker)[0]; // check called from picker
 
-            that = ui.closest(this, '.' + ui.calendar.target)[0];
-            picker = ui.closest(that, '.' + ui.calendar.namePicker)[0]; // check called from picker
+            let form;
 
             if (ui.hasClass(this, ui.calendar.nameNext)) {
 
@@ -573,25 +555,25 @@ ui.calendar.Start = () => {
 
         function () {
 
-            var that, date, year, years, month, html, i, panelType, getList, getSelected, getIndex;
+            let panelType;
 
-            date = new Date();
-            that = ui.closest(this, '.' + ui.calendar.target)[0];
+            const date = new Date();
+            const that = ui.closest(this, '.' + ui.calendar.target)[0];
 
             getAttr(that, date);
 
             // create panel
-            html = '<div class="' + ui.calendar.namePanel + ' ' + ui.calendar.stylesPanel + '">' +
+            let html = '<div class="' + ui.calendar.namePanel + ' ' + ui.calendar.stylesPanel + '">' +
                         '<ul>';
 
             if (ui.hasClass(this, ui.calendar.nameYear)) { // years
 
                 panelType = 'year';
 
-                year = date.getFullYear();
-                years = 1920 + (new Date().getFullYear() - 1920) + 100;
+                const year = date.getFullYear();
+                const years = 1920 + (new Date().getFullYear() - 1920) + 100;
 
-                for (i = 1920; i <= years; i++) {
+                for (let i = 1920; i <= years; i++) {
 
                     html += '<li>' +
                                 '<button type="button" tabindex="-1" ';
@@ -611,23 +593,24 @@ ui.calendar.Start = () => {
             } else { // months
 
                 panelType = 'month';
+                const month = ui.calendar.months[date.getMonth()];
 
-                month = ui.calendar.months[date.getMonth()];
-                for (i = 0; i < ui.calendar.months.length; i++) {
+                ui.calendar.months.forEach((item, i) => {
 
                     html += '<li>' +
                                 '<button type="button" tabindex="-1" ';
 
-                    if (month === ui.calendar.months[i]) {
+                    if (month === item) {
                         html += 'class="' + ui.calendar.namePanelCall + ' ' + ui.calendar.nameSelected + '" ';
 
                     } else {
                         html += 'class="' + ui.calendar.namePanelCall + '" ';
                     }
 
-                    html += 'name="' + i + '">' + ui.calendar.months[i] + '</button>' +
+                    html += 'name="' + i + '">' + item + '</button>' +
                         '</li>';
-                }
+
+                });
 
             }
 
@@ -646,10 +629,10 @@ ui.calendar.Start = () => {
                 // scroll to active year
                 if (panelType === 'year') {
 
-                    getList = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall, that);
-                    getSelected = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall + '.' + ui.calendar.nameSelected, that)[0];
+                    let getList = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall, that);
+                    const getSelected = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall + '.' + ui.calendar.nameSelected, that)[0];
 
-                    getIndex = Math.floor(Array.prototype.slice.call(getList).indexOf(getSelected) / 12);
+                    const getIndex = Math.floor(Array.prototype.slice.call(getList).indexOf(getSelected) / 12);
                     ui.find('.' + ui.calendar.namePanel, that)[0].scrollTop = (getIndex * (that.offsetHeight - (ui.calendar.calendarPadding * 2))); // IE, EDGE: scrollTo() not supported for div element
 
                     getList = '';
@@ -668,10 +651,8 @@ ui.calendar.Start = () => {
 
         function () {
 
-            var that, date;
-
-            date = new Date();
-            that = ui.closest(this, '.' + ui.calendar.target)[0];
+            const date = new Date();
+            const that = ui.closest(this, '.' + ui.calendar.target)[0];
 
             getAttr(that, date);
             ui.removeClass(that, ui.calendar.nameShowPanel);
@@ -695,7 +676,7 @@ ui.calendar.Start = () => {
     // close picker
     function pickerCloseFnc(type, target) {
 
-        var allPickers = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target);
+        const allPickers = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target);
 
         function removePicker(form, picker) {
 
@@ -706,44 +687,35 @@ ui.calendar.Start = () => {
 
         if (type === 'continuous') { // when the user holds the tab button continuously
 
-            ui.each(allPickers,
+            allPickers.forEach((item, i) => {
 
-                function (i) {
+                ui.removeClass(item, ui.calendar.nameOpenEase);
 
-                    ui.removeClass(this, ui.calendar.nameOpenEase);
+                setTimeout(() => {
 
-                    setTimeout(() => {
+                    const that = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target)[i];
+                    if (that === undefined) { return; }
 
-                        var that, form;
+                    const form = that.parentElement;
+                    removePicker(form, that);
 
-                        that = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target)[i];
-                        if (that === undefined) { return; }
+                }, ui.globals.ease);
 
-                        form = that.parentElement;
-                        removePicker(form, that);
-
-                    }, ui.globals.ease);
-
-                });
+            });
 
         } else {
 
-            ui.each(allPickers,
+            allPickers.forEach(item => {
 
-                function () {
+                const form = item.parentElement;
 
-                    var that, form;
+                ui.removeClass(item, ui.calendar.nameOpenEase);
 
-                    that = this;
-                    form = that.parentElement;
+                setTimeout(() => {
+                    removePicker(form, item);
+                }, ui.globals.ease);
 
-                    ui.removeClass(that, ui.calendar.nameOpenEase);
-
-                    setTimeout(() => {
-                        removePicker(form, that);
-                    }, ui.globals.ease);
-
-                });
+            });
 
         }
 
@@ -761,12 +733,10 @@ ui.calendar.Start = () => {
 
         function () {
 
-            var that, form, offset, html, picker, inputDate, formHeight, pickerWidth, pickerHeight;
-
-            that = this;
+            const that = this;
 
             // check duplicate
-            form = that.parentElement;
+            const form = that.parentElement;
             if (ui.find('.' + ui.calendar.target, form).length > 0) { return; }
 
             // remove event listeners
@@ -774,7 +744,7 @@ ui.calendar.Start = () => {
             ui.off(that, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
 
             // create picker
-            html = '<div class="' + ui.calendar.target;
+            let html = '<div class="' + ui.calendar.target;
 
             if (ui.hasClass(form, ui.calendar.nameRound)) {
                 html += ' ' + ui.calendar.nameRound;
@@ -785,10 +755,10 @@ ui.calendar.Start = () => {
 
             form.insertAdjacentHTML('beforeend', html);
 
-            picker = ui.find('.' + ui.calendar.target, form)[0];
+            const picker = ui.find('.' + ui.calendar.target, form)[0];
 
             // check value
-            inputDate = pickerVal(that);
+            let inputDate = pickerVal(that);
 
             if (inputDate === '') {
                 createFnc(picker);
@@ -798,12 +768,11 @@ ui.calendar.Start = () => {
             }
 
             // check picker position
-            offset = form.getBoundingClientRect();
+            const offset = form.getBoundingClientRect();
 
-            formHeight = form.offsetHeight;
-
-            pickerWidth = picker.offsetWidth;
-            pickerHeight = picker.offsetHeight;
+            const formHeight = form.offsetHeight;
+            const pickerWidth = picker.offsetWidth;
+            const pickerHeight = picker.offsetHeight;
 
             if (offset.left + pickerWidth + ui.calendar.scrollbarSize > window.innerWidth) {
 
@@ -881,23 +850,23 @@ ui.calendar.Start = () => {
 
         function () {
 
-            var date, day, month, picker, that, form;
+            const date = new Date();
+            const picker = ui.closest(this, '.' + ui.calendar.namePicker)[0];
 
-            date = new Date();
-
-            picker = ui.closest(this, '.' + ui.calendar.namePicker)[0];
-
-            that = ui.find('.' + ui.calendar.target, picker)[0];
-            form = ui.find('[type="text"]', picker)[0];
+            const that = ui.find('.' + ui.calendar.target, picker)[0];
+            const form = ui.find('[type="text"]', picker)[0];
 
             getAttr(that, date); // get date
             date.setDate(this.textContent); // set new day
 
             // set values to input form
-            day = date.getDate().toString();
-            if (day.length === 1) { day = '0' + day; }
+            let day = date.getDate().toString();
 
-            month = date.getMonth();
+            if (day.length === 1) {
+                day = '0' + day;
+            }
+
+            let month = date.getMonth();
             month += 1;
 
             month = month.toString();
@@ -923,10 +892,8 @@ ui.calendar.Start = () => {
 
         function () {
 
-            var that, details, day, i, list, scroll;
-
-            that = ui.closest(this, '.' + ui.calendar.target)[0];
-            details = ui.find('.' + ui.calendar.nameDetails, that)[0];
+            const that = ui.closest(this, '.' + ui.calendar.target)[0];
+            const details = ui.find('.' + ui.calendar.nameDetails, that)[0];
 
             if (ui.hasClass(that, ui.calendar.nameShowDetails)) {
 
@@ -944,12 +911,12 @@ ui.calendar.Start = () => {
                     ui.addClass(that, ui.calendar.nameShowDetails);
                 }, 10);
 
-                scroll = 0;
+                let scroll = 0;
 
-                day = this.getAttribute(ui.calendar.dataDay);
-                list = ui.find('.' + ui.calendar.nameDetails + ' li', that);
+                const day = this.getAttribute(ui.calendar.dataDay);
+                const list = ui.find('.' + ui.calendar.nameDetails + ' li', that);
 
-                for (i = 0; i < list.length; i++) {
+                for (let i = 0; i < list.length; i++) { // has break
 
                     if (list[i].getAttribute(ui.calendar.dataD) === day) {
                         break;

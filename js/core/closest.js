@@ -23,7 +23,7 @@ ui.closest = function (that, outer) {
         parentEl = el.parentNode;
         while (parentEl) {
 
-            for (let i = 0; i < outerEl.length; i++) { // has return
+            for (let i = 0; i < outerEl.length; i++) { // has return for parent loop
 
                 if (parentEl === outerEl[i]) {
 

@@ -1381,16 +1381,15 @@ ui.autocomplete.Start = function () {
       autocompleteRequests = [];
 
   (function () {
-    var k, re, chars, keys;
-    keys = Object.keys(ui.autocomplete.customLetters);
-    chars = '(([';
+    var keys = Object.keys(ui.autocomplete.customLetters);
+    var chars = '(([';
 
-    for (k = 0; k < keys.length; k++) {
-      chars += keys[k];
+    for (var i = 0; i < keys.length; i++) {
+      chars += keys[i];
     }
 
     chars += ']))';
-    re = new RegExp(chars, 'g');
+    var re = new RegExp(chars, 'g');
 
     customLowerCase = function customLowerCase(string) {
       string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
@@ -1402,19 +1401,20 @@ ui.autocomplete.Start = function () {
 
   formEventListeners = ui.find('.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + ' > [type="text"]');
   ui.on(document, 'keyup', formEventListeners, function (e) {
-    var i, j, k, n, p, list, listItems, navSelected, navIndex, v, key, checkData, createDropdown, timerShowLines, offset, tHeight, dHeight, m, txt, getVal, src;
-    p = this.parentNode;
-    list = ui.find('ul', p);
+    var timerShowLines;
+    var parent = this.parentNode;
+    var list = ui.find('ul', parent);
 
     if (list[0] === undefined) {
       return;
     }
 
     if (e.keyCode === 38 || e.keyCode === 40) {
-      listItems = ui.find('li', list[0]);
+      var listItems = ui.find('li', list[0]);
 
       if (listItems.length > 0) {
-        navSelected = ui.find('li.' + ui.autocomplete.nameSelected, list[0]);
+        var navIndex;
+        var navSelected = ui.find('li.' + ui.autocomplete.nameSelected, list[0]);
 
         if (navSelected.length > 0) {
           navIndex = Array.prototype.slice.call(listItems).indexOf(navSelected[0]);
@@ -1446,127 +1446,117 @@ ui.autocomplete.Start = function () {
       }
     } else if (e.keyCode === 13 || e.keyCode === 27 || e.keyCode === undefined) {
       if (list.length >= 1) {
-        ui.removeClass(p, ui.autocomplete.nameOpenEase);
+        ui.removeClass(parent, ui.autocomplete.nameOpenEase);
         setTimeout(function () {
-          ui.removeClass(p, ui.autocomplete.nameOpen);
+          ui.removeClass(parent, ui.autocomplete.nameOpen);
           list[0].innerHTML = '';
         }, ui.globals.ease);
       }
     } else if (e.keyCode !== 16 && e.keyCode !== 17 && e.keyCode !== 18) {
-      v = this.value;
-      v = customLowerCase(v);
-      v = v.replace(/\s+$/g, '');
+      var val = this.value;
+      val = customLowerCase(val);
+      val = val.replace(/\s+$/g, '');
 
-      if (v !== '') {
-        checkData = function checkData(response) {
-          response = JSON.parse(response);
-
-          if (response.length !== 'undefined') {
-            createDropdown = function createDropdown() {
-              clearTimeout(timerShowLines);
-              timerShowLines = setTimeout(function () {
-                offset = p.getBoundingClientRect();
-                tHeight = p.offsetHeight;
-                dHeight = list[0].offsetHeight;
-
-                if (offset.top + parseInt(tHeight + dHeight) >= window.innerHeight) {
-                  if (offset.top - parseInt(tHeight + dHeight) + tHeight > 0) {
-                    ui.addClass(p, ui.autocomplete.nameMenuTop);
-                  } else {
-                    list[0].style.height = dHeight - (offset.top + parseInt(tHeight + dHeight) - window.innerHeight) - ui.autocomplete.scrollbarSize + 'px';
-                  }
-                }
-              }, 10);
-            };
-
-            k = 0;
-            ui.addClass(p, ui.autocomplete.nameOpen);
-            setTimeout(function () {
-              ui.addClass(p, ui.autocomplete.nameOpenEase);
-            }, 0);
-            ui.removeClass(p, ui.autocomplete.nameMenuTop);
-            list[0].innerHTML = '';
-
-            for (i = 0; i < response.length; i++) {
-              key = response[i][getVal];
-              txt = '';
-
-              if (key !== null) {
-                if (typeof key === 'boolean') {
-                  return;
-                }
-
-                m = key;
-
-                if (typeof key === 'number') {
-                  m = m.toString().match(v, 'g');
-                } else {
-                  m = customLowerCase(m);
-                  m = m.match(v, 'g');
-                }
-
-                if (m !== null) {
-                  createDropdown();
-                  k += 1;
-
-                  if (k > 5) {
-                    return;
-                  }
-
-                  if (typeof key === 'number') {
-                    for (j = 0; j < key.toString().length; j++) {
-                      if (j === key.toString().indexOf(m)) {
-                        txt += '<' + ui.autocomplete.tagHighlight + '>';
-                      }
-
-                      if (j === key.toString().indexOf(m) + v.length) {
-                        txt += '</' + ui.autocomplete.tagHighlight + '>';
-                      }
-
-                      txt += key.toString().charAt(j);
-                    }
-                  } else {
-                    for (j = 0; j < key.length; j++) {
-                      if (j === customLowerCase(key).indexOf(m)) {
-                        txt += '<' + ui.autocomplete.tagHighlight + '>';
-                      }
-
-                      if (j === customLowerCase(key).indexOf(m) + v.length) {
-                        txt += '</' + ui.autocomplete.tagHighlight + '>';
-                      }
-
-                      txt += key.charAt(j);
-                    }
-                  }
-
-                  list[0].insertAdjacentHTML('beforeend', '<li>' + txt + '</li>');
-                }
-              }
-            }
-          }
-
-          response = '';
-        };
-
-        getVal = p.getAttribute(ui.autocomplete.dataVal);
+      if (val !== '') {
+        var getVal = parent.getAttribute(ui.autocomplete.dataVal);
 
         if (getVal !== null && getVal !== '') {
-          src = p.getAttribute(ui.autocomplete.dataSrc);
+          var src = parent.getAttribute(ui.autocomplete.dataSrc);
 
           if (src !== null && src !== '') {
             ui.ajax({
-              url: src + '?' + ui.autocomplete.queryParameter + '=' + v,
+              url: src + '?' + ui.autocomplete.queryParameter + '=' + val,
               beforesend: function beforesend(xhr) {
-                for (n = 0; n < autocompleteRequests.length; n++) {
-                  autocompleteRequests[n].abort();
+                autocompleteRequests.forEach(function (item, n) {
+                  item.abort();
                   autocompleteRequests.splice(n, 1);
-                }
-
+                });
                 autocompleteRequests.push(xhr);
               },
               callback: function callback(status, response) {
                 if (status === 'success') {
-                  checkData(response);
+                  response = JSON.parse(response);
+
+                  if (response.length !== 'undefined') {
+                    var k = 0;
+                    ui.addClass(parent, ui.autocomplete.nameOpen);
+                    setTimeout(function () {
+                      ui.addClass(parent, ui.autocomplete.nameOpenEase);
+                    }, 0);
+                    ui.removeClass(parent, ui.autocomplete.nameMenuTop);
+                    list[0].innerHTML = '';
+                    response.forEach(function (item) {
+                      var key = item[getVal];
+                      var txt = '';
+
+                      if (key !== null) {
+                        if (typeof key === 'boolean') {
+                          return;
+                        }
+
+                        var modified = key;
+
+                        if (typeof key === 'number') {
+                          modified = modified.toString().match(val, 'g');
+                        } else {
+                          modified = customLowerCase(modified);
+                          modified = modified.match(val, 'g');
+                        }
+
+                        if (modified !== null) {
+                          clearTimeout(timerShowLines);
+                          timerShowLines = setTimeout(function () {
+                            var offset = parent.getBoundingClientRect();
+                            var tHeight = parent.offsetHeight;
+                            var dHeight = list[0].offsetHeight;
+
+                            if (offset.top + parseInt(tHeight + dHeight) >= window.innerHeight) {
+                              if (offset.top - parseInt(tHeight + dHeight) + tHeight > 0) {
+                                ui.addClass(parent, ui.autocomplete.nameMenuTop);
+                              } else {
+                                list[0].style.height = dHeight - (offset.top + parseInt(tHeight + dHeight) - window.innerHeight) - ui.autocomplete.scrollbarSize + 'px';
+                              }
+                            }
+                          }, 10);
+                          k += 1;
+
+                          if (k > 5) {
+                            return;
+                          }
+
+                          if (typeof key === 'number') {
+                            for (var i = 0; i < key.toString().length; i++) {
+                              if (i === key.toString().indexOf(modified)) {
+                                txt += '<' + ui.autocomplete.tagHighlight + '>';
+                              }
+
+                              if (i === key.toString().indexOf(modified) + val.length) {
+                                txt += '</' + ui.autocomplete.tagHighlight + '>';
+                              }
+
+                              txt += key.toString().charAt(i);
+                            }
+                          } else {
+                            for (var j = 0; j < key.length; j++) {
+                              if (j === customLowerCase(key).indexOf(modified)) {
+                                txt += '<' + ui.autocomplete.tagHighlight + '>';
+                              }
+
+                              if (j === customLowerCase(key).indexOf(modified) + val.length) {
+                                txt += '</' + ui.autocomplete.tagHighlight + '>';
+                              }
+
+                              txt += key.charAt(j);
+                            }
+                          }
+
+                          list[0].insertAdjacentHTML('beforeend', '<li>' + txt + '</li>');
+                        }
+                      }
+                    });
+                  }
+
+                  response = '';
                 }
               }
             });
@@ -1575,7 +1565,7 @@ ui.autocomplete.Start = function () {
           return;
         }
       } else {
-        ui.removeClass(p, ui.autocomplete.nameOpenEase);
+        ui.removeClass(parent, ui.autocomplete.nameOpenEase);
         setTimeout(function () {
           ui.removeClass(list, ui.autocomplete.nameOpen);
           list[0].innerHTML = '';
@@ -1585,51 +1575,47 @@ ui.autocomplete.Start = function () {
   });
   ui.on(document, 'keydown', formEventListeners, function (e) {
     if (e.keyCode === 13) {
-      var p, list;
-      p = this.parentNode;
-      list = ui.find('li.' + ui.autocomplete.nameSelected, p);
+      var parent = this.parentNode;
+      var list = ui.find('li.' + ui.autocomplete.nameSelected, parent);
 
       if (list.length > 0) {
         e.preventDefault();
         e.stopPropagation();
-        ui.removeClass(p, ui.autocomplete.nameOpenEase);
+        ui.removeClass(parent, ui.autocomplete.nameOpenEase);
         setTimeout(function () {
-          ui.removeClass(p, ui.autocomplete.nameOpen);
+          ui.removeClass(parent, ui.autocomplete.nameOpen);
         }, ui.globals.ease);
       }
     }
   });
   ui.on(document, 'focus', formEventListeners, function () {
-    var p, styles;
-    p = this.parentNode;
+    var parent = this.parentNode;
+    var styles = ui.autocomplete.stylesList;
     this.setAttribute('autocomplete', 'off');
-    ui.addClass(p, ui.autocomplete.nameOpen);
-    ui.removeClass(p, ui.autocomplete.nameMenuTop);
-    styles = ui.autocomplete.stylesList;
+    ui.addClass(parent, ui.autocomplete.nameOpen);
+    ui.removeClass(parent, ui.autocomplete.nameMenuTop);
 
-    if (ui.hasClass(p, ui.autocomplete.nameRound)) {
+    if (ui.hasClass(parent, ui.autocomplete.nameRound)) {
       styles += ' ' + ui.autocomplete.nameRound;
     }
 
-    p.insertAdjacentHTML('beforeend', '<ul class="' + styles + '"></ul>');
+    parent.insertAdjacentHTML('beforeend', '<ul class="' + styles + '"></ul>');
   });
   ui.on(document, 'blur', formEventListeners, function () {
-    var p, list;
-    p = this.parentNode;
-    list = ui.find('ul', p);
-    ui.removeClass(p, ui.autocomplete.nameOpenEase);
+    var parent = this.parentNode;
+    var list = ui.find('ul', parent);
+    ui.removeClass(parent, ui.autocomplete.nameOpenEase);
     setTimeout(function () {
-      ui.removeClass(p, ui.autocomplete.nameOpen);
+      ui.removeClass(parent, ui.autocomplete.nameOpen);
 
       if (list.length > 0) {
-        p.removeChild(list[0]);
+        parent.removeChild(list[0]);
       }
     }, ui.globals.ease);
   });
   ui.on(document, 'mousedown', '.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + '.' + ui.autocomplete.nameOpen + ' li', function () {
-    var p, target;
-    p = ui.closest(this, '.' + ui.autocomplete.target);
-    target = ui.find('[type="text"]', p);
+    var parent = ui.closest(this, '.' + ui.autocomplete.target);
+    var target = ui.find('[type="text"]', parent);
     target.value = this.textContent;
     ui.trigger(target, 'keyup');
   });
@@ -3120,8 +3106,6 @@ ui.calendar = {
 };
 
 ui.calendar.Start = function () {
-  var pickerVal;
-
   function getAttr(that, date, newDate) {
     var attr = that.getAttribute(ui.calendar.dataDate);
 
@@ -3164,7 +3148,7 @@ ui.calendar.Start = function () {
     }
   }
 
-  pickerVal = function pickerVal(that) {
+  var pickerVal = function pickerVal(that) {
     if (that.value !== '') {
       var val = that.value.split(ui.calendar.pickerSep);
 
@@ -3183,10 +3167,9 @@ ui.calendar.Start = function () {
   };
 
   function createFnc(that, newDate, picker) {
-    var date, today, pickerDay, container, html, i, j, todayStyles, pickerDayStyles, sysDays, activeDay, days, prevLastDay, firstDay, lastDay, src, dday, details;
-    date = new Date();
+    var date = new Date();
     date.setDate(1);
-    pickerDay = '';
+    var pickerDay = '';
 
     if (newDate !== undefined) {
       if (newDate === ui.calendar.setPrev || newDate === ui.calendar.setNext) {
@@ -3209,8 +3192,8 @@ ui.calendar.Start = function () {
     }
 
     that.setAttribute(ui.calendar.dataDate, date.getFullYear() + ',' + (date.getMonth() + 1));
-    html = '';
-    container = ui.find('.' + ui.calendar.nameContainer, that)[0];
+    var html = '';
+    var container = ui.find('.' + ui.calendar.nameContainer, that)[0];
 
     if (container === undefined) {
       html += '<div class="' + ui.calendar.nameContainer + ' ' + ui.calendar.stylesContainer + '">';
@@ -3226,18 +3209,14 @@ ui.calendar.Start = function () {
 
     if (ui.calendar.startDayofWeek === 0) {
       html += '<th>' + ui.calendar.days[ui.calendar.days.length - 1] + '</th>';
-
-      for (i = 0; i < ui.calendar.days.length - 1; i++) {
-        html += '<th>' + ui.calendar.days[i] + '</th>';
-      }
-    } else {
-      for (i = 0; i < ui.calendar.days.length; i++) {
-        html += '<th>' + ui.calendar.days[i] + '</th>';
-      }
     }
 
+    ui.calendar.days.forEach(function (item) {
+      html += '<th>' + item + '</th>';
+    });
     html += '</thead>' + '<tbody>';
-    firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+    var sysDays;
+    var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
 
     if (ui.calendar.startDayofWeek === 0) {
       sysDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -3251,16 +3230,16 @@ ui.calendar.Start = function () {
       firstDay = 7;
     }
 
-    prevLastDay = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
-    days = prevLastDay - (firstDay - 1);
-    lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
-    activeDay = false;
-    today = new Date().getFullYear() + ' ' + new Date().getMonth() + ' ' + new Date().getDate();
+    var prevLastDay = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
+    var days = prevLastDay - (firstDay - 1);
+    var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
+    var activeDay = false;
+    var today = new Date().getFullYear() + ' ' + new Date().getMonth() + ' ' + new Date().getDate();
 
-    for (i = 0; i < 6; i++) {
+    for (var i = 0; i < 6; i++) {
       html += '<tr>';
 
-      for (j = 0; j < 7; j++) {
+      for (var j = 0; j < 7; j++) {
         if (days > prevLastDay) {
           days = 1;
           prevLastDay = lastDay;
@@ -3274,7 +3253,7 @@ ui.calendar.Start = function () {
 
         if (activeDay) {
           if (date.getFullYear() + ' ' + date.getMonth() + ' ' + days === today) {
-            todayStyles = '';
+            var todayStyles = '';
 
             if (ui.calendar.stylesToday !== '') {
               todayStyles = ui.calendar.stylesToday + ' ' + ui.calendar.nameHover;
@@ -3284,7 +3263,7 @@ ui.calendar.Start = function () {
           } else {
             if (pickerDay !== '') {
               if (date.getFullYear() + ',' + date.getMonth() + ',' + days === pickerDay) {
-                pickerDayStyles = '';
+                var pickerDayStyles = '';
 
                 if (ui.calendar.pickerDayStyles !== '') {
                   pickerDayStyles = ui.calendar.stylesPickerDay + ' ' + ui.calendar.nameHover;
@@ -3318,10 +3297,10 @@ ui.calendar.Start = function () {
       container.insertAdjacentHTML('afterbegin', html);
     }
 
-    src = that.getAttribute(ui.calendar.dataSrc);
+    var src = that.getAttribute(ui.calendar.dataSrc);
 
     if (src !== null && src !== '') {
-      details = '';
+      var details = '';
       ui.ajax({
         url: src,
         callback: function callback(status, response) {
@@ -3332,26 +3311,25 @@ ui.calendar.Start = function () {
               return;
             }
 
-            for (i = 0; i < response.length; i++) {
-              if (response[i] === null) {
+            response.forEach(function (item) {
+              if (item === null) {
                 return;
               }
 
-              if (Number(response[i].year) === date.getFullYear()) {
-                if (Number(response[i].month) === date.getMonth() + 1) {
-                  dday = ui.find('[' + ui.calendar.dataDay + '="' + response[i].day + '"]', that);
+              if (Number(item.year) === date.getFullYear()) {
+                if (Number(item.month) === date.getMonth() + 1) {
+                  var dday = ui.find('[' + ui.calendar.dataDay + '="' + item.day + '"]', that);
                   ui.addClass(dday, ui.calendar.nameToggleDetails);
-                  details += '<li ' + ui.calendar.dataD + '="' + response[i].day + '">' + '<strong>' + response[i].day + '</strong>' + '<b>' + response[i].dayName + '</b><br>';
+                  details += '<li ' + ui.calendar.dataD + '="' + item.day + '">' + '<strong>' + item.day + '</strong>' + '<b>' + item.dayName + '</b><br>';
 
-                  for (var key in response[i].details) {
-                    details += '<span>' + '<i>' + key + '</i> ' + response[i].details[key] + '</span>';
+                  for (var key in item.details) {
+                    details += '<span>' + '<i>' + key + '</i> ' + item.details[key] + '</span>';
                   }
 
                   details += '</li>';
                 }
               }
-            }
-
+            });
             container = ui.find('.' + ui.calendar.nameContainer, that)[0];
 
             if (ui.hasClass(that, ui.calendar.nameShowDetails)) {
@@ -3383,17 +3361,17 @@ ui.calendar.Start = function () {
     var calendars = ui.find('.' + ui.calendar.target + ':not(.' + ui.calendar.nameActive + ')');
 
     if (calendars.length > 0) {
-      ui.each(calendars, function () {
-        createFnc(this);
+      calendars.forEach(function (el) {
+        createFnc(el);
       });
     }
   };
 
   ui.calendar.Init();
   ui.on(document, 'click', '.' + ui.calendar.namePrev + ',.' + ui.calendar.nameNext, function () {
-    var that, picker, form;
-    that = ui.closest(this, '.' + ui.calendar.target)[0];
-    picker = ui.closest(that, '.' + ui.calendar.namePicker)[0];
+    var that = ui.closest(this, '.' + ui.calendar.target)[0];
+    var picker = ui.closest(that, '.' + ui.calendar.namePicker)[0];
+    var form;
 
     if (ui.hasClass(this, ui.calendar.nameNext)) {
       if (picker === undefined) {
@@ -3412,18 +3390,18 @@ ui.calendar.Start = function () {
     }
   });
   ui.on(document, 'click', '.' + ui.calendar.nameMonth + ',.' + ui.calendar.nameYear, function () {
-    var that, date, year, years, month, html, i, panelType, getList, getSelected, getIndex;
-    date = new Date();
-    that = ui.closest(this, '.' + ui.calendar.target)[0];
+    var panelType;
+    var date = new Date();
+    var that = ui.closest(this, '.' + ui.calendar.target)[0];
     getAttr(that, date);
-    html = '<div class="' + ui.calendar.namePanel + ' ' + ui.calendar.stylesPanel + '">' + '<ul>';
+    var html = '<div class="' + ui.calendar.namePanel + ' ' + ui.calendar.stylesPanel + '">' + '<ul>';
 
     if (ui.hasClass(this, ui.calendar.nameYear)) {
       panelType = 'year';
-      year = date.getFullYear();
-      years = 1920 + (new Date().getFullYear() - 1920) + 100;
+      var year = date.getFullYear();
+      var years = 1920 + (new Date().getFullYear() - 1920) + 100;
 
-      for (i = 1920; i <= years; i++) {
+      for (var i = 1920; i <= years; i++) {
         html += '<li>' + '<button type="button" tabindex="-1" ';
 
         if (year === i) {
@@ -3436,19 +3414,18 @@ ui.calendar.Start = function () {
       }
     } else {
       panelType = 'month';
-      month = ui.calendar.months[date.getMonth()];
-
-      for (i = 0; i < ui.calendar.months.length; i++) {
+      var month = ui.calendar.months[date.getMonth()];
+      ui.calendar.months.forEach(function (item, i) {
         html += '<li>' + '<button type="button" tabindex="-1" ';
 
-        if (month === ui.calendar.months[i]) {
+        if (month === item) {
           html += 'class="' + ui.calendar.namePanelCall + ' ' + ui.calendar.nameSelected + '" ';
         } else {
           html += 'class="' + ui.calendar.namePanelCall + '" ';
         }
 
-        html += 'name="' + i + '">' + ui.calendar.months[i] + '</button>' + '</li>';
-      }
+        html += 'name="' + i + '">' + item + '</button>' + '</li>';
+      });
     }
 
     html += '</ul>' + '</div>';
@@ -3458,18 +3435,17 @@ ui.calendar.Start = function () {
       ui.addClass(that, ui.calendar.nameShowPanel);
 
       if (panelType === 'year') {
-        getList = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall, that);
-        getSelected = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall + '.' + ui.calendar.nameSelected, that)[0];
-        getIndex = Math.floor(Array.prototype.slice.call(getList).indexOf(getSelected) / 12);
+        var getList = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall, that);
+        var getSelected = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall + '.' + ui.calendar.nameSelected, that)[0];
+        var getIndex = Math.floor(Array.prototype.slice.call(getList).indexOf(getSelected) / 12);
         ui.find('.' + ui.calendar.namePanel, that)[0].scrollTop = getIndex * (that.offsetHeight - ui.calendar.calendarPadding * 2);
         getList = '';
       }
     }, 10);
   });
   ui.on(document, 'click', '.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall, function () {
-    var that, date;
-    date = new Date();
-    that = ui.closest(this, '.' + ui.calendar.target)[0];
+    var date = new Date();
+    var that = ui.closest(this, '.' + ui.calendar.target)[0];
     getAttr(that, date);
     ui.removeClass(that, ui.calendar.nameShowPanel);
 
@@ -3495,28 +3471,25 @@ ui.calendar.Start = function () {
     }
 
     if (type === 'continuous') {
-      ui.each(allPickers, function (i) {
-        ui.removeClass(this, ui.calendar.nameOpenEase);
+      allPickers.forEach(function (item, i) {
+        ui.removeClass(item, ui.calendar.nameOpenEase);
         setTimeout(function () {
-          var that, form;
-          that = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target)[i];
+          var that = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target)[i];
 
           if (that === undefined) {
             return;
           }
 
-          form = that.parentElement;
+          var form = that.parentElement;
           removePicker(form, that);
         }, ui.globals.ease);
       });
     } else {
-      ui.each(allPickers, function () {
-        var that, form;
-        that = this;
-        form = that.parentElement;
-        ui.removeClass(that, ui.calendar.nameOpenEase);
+      allPickers.forEach(function (item) {
+        var form = item.parentElement;
+        ui.removeClass(item, ui.calendar.nameOpenEase);
         setTimeout(function () {
-          removePicker(form, that);
+          removePicker(form, item);
         }, ui.globals.ease);
       });
     }
@@ -3526,9 +3499,8 @@ ui.calendar.Start = function () {
   }
 
   ui.on(document, 'focus', '.' + ui.calendar.namePicker + ' > [type="text"]', function () {
-    var that, form, offset, html, picker, inputDate, formHeight, pickerWidth, pickerHeight;
-    that = this;
-    form = that.parentElement;
+    var that = this;
+    var form = that.parentElement;
 
     if (ui.find('.' + ui.calendar.target, form).length > 0) {
       return;
@@ -3536,7 +3508,7 @@ ui.calendar.Start = function () {
 
     ui.off('body', 'mousedown.' + ui.calendar.eventClose);
     ui.off(that, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
-    html = '<div class="' + ui.calendar.target;
+    var html = '<div class="' + ui.calendar.target;
 
     if (ui.hasClass(form, ui.calendar.nameRound)) {
       html += ' ' + ui.calendar.nameRound;
@@ -3544,8 +3516,8 @@ ui.calendar.Start = function () {
 
     html += ' ' + ui.calendar.stylesCalendar + '">' + '</div>';
     form.insertAdjacentHTML('beforeend', html);
-    picker = ui.find('.' + ui.calendar.target, form)[0];
-    inputDate = pickerVal(that);
+    var picker = ui.find('.' + ui.calendar.target, form)[0];
+    var inputDate = pickerVal(that);
 
     if (inputDate === '') {
       createFnc(picker);
@@ -3553,10 +3525,10 @@ ui.calendar.Start = function () {
       createFnc(picker, inputDate);
     }
 
-    offset = form.getBoundingClientRect();
-    formHeight = form.offsetHeight;
-    pickerWidth = picker.offsetWidth;
-    pickerHeight = picker.offsetHeight;
+    var offset = form.getBoundingClientRect();
+    var formHeight = form.offsetHeight;
+    var pickerWidth = picker.offsetWidth;
+    var pickerHeight = picker.offsetHeight;
 
     if (offset.left + pickerWidth + ui.calendar.scrollbarSize > window.innerWidth) {
       if (offset.left - (pickerWidth - form.offsetWidth) - ui.calendar.scrollbarSize > 0) {
@@ -3598,20 +3570,19 @@ ui.calendar.Start = function () {
     });
   });
   ui.on(document, 'click', '.' + ui.calendar.namePicker + ' .' + ui.calendar.target + ' tbody td button', function () {
-    var date, day, month, picker, that, form;
-    date = new Date();
-    picker = ui.closest(this, '.' + ui.calendar.namePicker)[0];
-    that = ui.find('.' + ui.calendar.target, picker)[0];
-    form = ui.find('[type="text"]', picker)[0];
+    var date = new Date();
+    var picker = ui.closest(this, '.' + ui.calendar.namePicker)[0];
+    var that = ui.find('.' + ui.calendar.target, picker)[0];
+    var form = ui.find('[type="text"]', picker)[0];
     getAttr(that, date);
     date.setDate(this.textContent);
-    day = date.getDate().toString();
+    var day = date.getDate().toString();
 
     if (day.length === 1) {
       day = '0' + day;
     }
 
-    month = date.getMonth();
+    var month = date.getMonth();
     month += 1;
     month = month.toString();
 
@@ -3628,9 +3599,8 @@ ui.calendar.Start = function () {
     pickerCloseFnc('default', form);
   });
   ui.on(document, 'click', '.' + ui.calendar.target + ' .' + ui.calendar.nameToggleDetails, function () {
-    var that, details, day, i, list, scroll;
-    that = ui.closest(this, '.' + ui.calendar.target)[0];
-    details = ui.find('.' + ui.calendar.nameDetails, that)[0];
+    var that = ui.closest(this, '.' + ui.calendar.target)[0];
+    var details = ui.find('.' + ui.calendar.nameDetails, that)[0];
 
     if (ui.hasClass(that, ui.calendar.nameShowDetails)) {
       ui.removeClass(that, ui.calendar.nameShowDetails);
@@ -3642,11 +3612,11 @@ ui.calendar.Start = function () {
       setTimeout(function () {
         ui.addClass(that, ui.calendar.nameShowDetails);
       }, 10);
-      scroll = 0;
-      day = this.getAttribute(ui.calendar.dataDay);
-      list = ui.find('.' + ui.calendar.nameDetails + ' li', that);
+      var scroll = 0;
+      var day = this.getAttribute(ui.calendar.dataDay);
+      var list = ui.find('.' + ui.calendar.nameDetails + ' li', that);
 
-      for (i = 0; i < list.length; i++) {
+      for (var i = 0; i < list.length; i++) {
         if (list[i].getAttribute(ui.calendar.dataD) === day) {
           break;
         }
