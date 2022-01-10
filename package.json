@@ -40,14 +40,14 @@
     "icon:sprite": "svgstore -o dist/icons.svg icon/*/*.svg"
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.0",
-    "@babel/core": "^7.16.0",
-    "@babel/eslint-parser": "^7.16.3",
-    "@babel/node": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "eslint": "^8.4.1",
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/node": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "eslint": "^8.6.0",
     "less": "^4.1.2",
-    "rollup": "^2.61.1",
+    "rollup": "^2.63.0",
     "svgo": "^2.8.0",
     "svgstore-cli": "^2.0.1"
   }
