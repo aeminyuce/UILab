@@ -733,15 +733,13 @@ ui.calendar.Start = () => {
 
         function () {
 
-            const that = this;
-
             // check duplicate
-            const form = that.parentElement;
+            const form = this.parentElement;
             if (ui.find('.' + ui.calendar.target, form).length > 0) { return; }
 
             // remove event listeners
             ui.off('body', 'mousedown.' + ui.calendar.eventClose);
-            ui.off(that, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
+            ui.off(this, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
 
             // create picker
             let html = '<div class="' + ui.calendar.target;
@@ -758,7 +756,7 @@ ui.calendar.Start = () => {
             const picker = ui.find('.' + ui.calendar.target, form)[0];
 
             // check value
-            let inputDate = pickerVal(that);
+            let inputDate = pickerVal(this);
 
             if (inputDate === '') {
                 createFnc(picker);
@@ -795,6 +793,8 @@ ui.calendar.Start = () => {
                 ui.addClass(picker, ui.calendar.nameOpenEase);
             }, 10);
 
+            const that = this;
+
             // close event listeners
             ui.on('body',
                 'mousedown.' + ui.calendar.eventClose,
@@ -818,7 +818,7 @@ ui.calendar.Start = () => {
                 function (ev) {
 
                     if (ev.keyCode === 9 || ev.keyCode === 13 || ev.keyCode === 27) { // Tab || Enter || Esc
-                        pickerCloseFnc('continuous', that);
+                        pickerCloseFnc('continuous', this);
                     }
 
                 });

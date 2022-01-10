@@ -393,7 +393,7 @@ ui.imgUpload.Start = () => {
                         readers[i] = new FileReader(); // filereader API
                         readers[i].readAsDataURL(allowed[i]);
 
-                        readers[i].onload = function () { // has this!
+                        readers[i].onload = function () {
 
                             img[i] = new Image();
                             img[i].src = this.result;

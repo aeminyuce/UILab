@@ -2884,7 +2884,6 @@ ui.alerts = {
             ui.addClass(dialog, ui.alerts.nameShowEase);
           }, 10);
           ui.on('.' + ui.alerts.nameDialogBtnHolder + ' button', 'click', function () {
-            var that = this;
             var theme = '';
 
             if (ui.hasClass(this, ui.alerts.nameDialogSuccess)) {
@@ -2903,6 +2902,7 @@ ui.alerts = {
 
             ui.alerts.closeDialog();
             var msg = this.textContent;
+            var that = this;
             setTimeout(function () {
               if (ui.alerts.dialogMessages) {
                 ui.alerts.message({
@@ -3034,13 +3034,14 @@ ui.alerts = {
     };
 
     ui.on(document, 'click', '.' + ui.alerts.targetMsg, function () {
-      var that = this;
+      var _this = this;
+
       messageQueue.forEach(function (el, i) {
-        if (el[0] === that) {
+        if (el[0] === _this) {
           messageQueue.splice(i, 1);
         }
       });
-      ui.alerts.closeMessage(that);
+      ui.alerts.closeMessage(this);
     });
   };
 
@@ -3499,15 +3500,14 @@ ui.calendar.Start = function () {
   }
 
   ui.on(document, 'focus', '.' + ui.calendar.namePicker + ' > [type="text"]', function () {
-    var that = this;
-    var form = that.parentElement;
+    var form = this.parentElement;
 
     if (ui.find('.' + ui.calendar.target, form).length > 0) {
       return;
     }
 
     ui.off('body', 'mousedown.' + ui.calendar.eventClose);
-    ui.off(that, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
+    ui.off(this, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
     var html = '<div class="' + ui.calendar.target;
 
     if (ui.hasClass(form, ui.calendar.nameRound)) {
@@ -3517,7 +3517,7 @@ ui.calendar.Start = function () {
     html += ' ' + ui.calendar.stylesCalendar + '">' + '</div>';
     form.insertAdjacentHTML('beforeend', html);
     var picker = ui.find('.' + ui.calendar.target, form)[0];
-    var inputDate = pickerVal(that);
+    var inputDate = pickerVal(this);
 
     if (inputDate === '') {
       createFnc(picker);
@@ -3545,6 +3545,7 @@ ui.calendar.Start = function () {
     setTimeout(function () {
       ui.addClass(picker, ui.calendar.nameOpenEase);
     }, 10);
+    var that = this;
     ui.on('body', 'mousedown.' + ui.calendar.eventClose, function (ev) {
       if (ui.closest(ev.target, form)[0] !== undefined) {
         return;
@@ -3556,7 +3557,7 @@ ui.calendar.Start = function () {
     });
     ui.on(that, 'keydown.' + ui.calendar.eventClose, function (ev) {
       if (ev.keyCode === 9 || ev.keyCode === 13 || ev.keyCode === 27) {
-        pickerCloseFnc('continuous', that);
+        pickerCloseFnc('continuous', this);
       }
     });
     ui.on(that, 'keyup.' + ui.calendar.eventChange, function () {

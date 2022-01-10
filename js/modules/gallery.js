@@ -104,7 +104,7 @@ ui.photoGallery = {
 
                 img[imgCounter].src = newImg.src;
 
-                newImg.onload = function () { // has this!
+                newImg.onload = function () {
 
                     if (this.naturalWidth / this.naturalHeight < ui.photoGallery.imgVerRatio) {
                         ui.addClass(img[imgCounter], ui.photoGallery.targetPhotoVer);
@@ -713,7 +713,7 @@ ui.photoGallery = {
                 if (e.type === 'touchend') {
 
                     clearTimeout(pageTouchmoveTimer);
-                    pageTouchmoveTimer = setTimeout(function () { // has this!
+                    pageTouchmoveTimer = setTimeout(function () {
 
                         if (!pageTouchmove) {
 

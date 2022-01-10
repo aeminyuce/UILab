@@ -242,7 +242,6 @@ ui.alerts = {
 
                         function () {
 
-                            const that = this;
                             let theme = '';
 
                             if (ui.hasClass(this, ui.alerts.nameDialogSuccess)) {
@@ -264,6 +263,8 @@ ui.alerts = {
                             ui.alerts.closeDialog();
                             const msg = this.textContent;
 
+                            const that = this;
+
                             setTimeout(() => {
 
                                 // show message
@@ -281,7 +282,6 @@ ui.alerts = {
 
                                     setTimeout(() => { // wait for closing dialog and showing messages
                                         props.callback.call(that, that.value);
-
                                     }, ui.globals.ease * 2);
 
                                 }
@@ -464,17 +464,15 @@ ui.alerts = {
 
             function () {
 
-                const that = this;
-
                 messageQueue.forEach((el, i) => {
 
-                    if (el[0] === that) {
+                    if (el[0] === this) {
                         messageQueue.splice(i, 1);
                     }
 
                 });
 
-                ui.alerts.closeMessage(that);
+                ui.alerts.closeMessage(this);
 
             });
 
