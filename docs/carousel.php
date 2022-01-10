@@ -8,10 +8,10 @@
 
                     <h5 class="ui-h5 ui-font-bold">HTML Content Carousel</h5>
 
-                    <div class="ui-carousel ui-p-10 ui-round ui-shadow-in-sm ui-theme-gray ui-fill-light-100" data-ui-col="1" data-ui-slide="4000">
+                    <div class="ui-carousel ui-p-10 ui-round ui-shadow-in-sm ui-theme-gray ui-fill-light-100" data-ui-col="1" data-ui-slide="5000">
                         <div class="ui-carousel-slider ui-form-lg ui-ease-2nd-layout ui-ease-layout ui-ease-slow-2x ui-ease-in-out">
 
-                            <div class="ui-carousel-content ui-p-10-h" data-ui-animate="10">
+                            <div class="ui-carousel-content ui-p-10-h" data-ui-animate="300">
 
                                     <div class="ui-row ui-sm-fluid">
                                         <div class="ui-col-4 ui-col-md-6">
@@ -56,7 +56,7 @@
                                     </div>
 
                             </div>
-                            <div class="ui-carousel-content ui-p-10-h" data-ui-animate="10">
+                            <div class="ui-carousel-content ui-p-10-h" data-ui-animate="300">
 
                                     <div class="ui-row ui-sm-fluid">
                                         <div class="ui-col-4 ui-col-md-6">
@@ -101,7 +101,7 @@
                                     </div>
 
                             </div>
-                            <div class="ui-carousel-content ui-p-10-h" data-ui-animate="10">
+                            <div class="ui-carousel-content ui-p-10-h" data-ui-animate="300">
 
                                     <div class="ui-row ui-sm-fluid">
                                         <div class="ui-col-4 ui-col-md-6">
