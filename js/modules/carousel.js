@@ -90,7 +90,7 @@ ui.carousel = {
 
 (() => {
 
-    var
+    let
         getCols,
         carouselResizer,
         idCount = 0,
@@ -118,7 +118,7 @@ ui.carousel = {
 
     getCols = (i) => {
 
-        var col;
+        let col;
 
         if (window.innerWidth >= ui.globals.xl) {
             col = colsXL[i];
@@ -145,15 +145,15 @@ ui.carousel = {
 
     function carouselAnimate(content, wait, type) {
 
-        var time, elems, i;
-
-        time = content.getAttribute(ui.carousel.dataAnimate);
+        let time = content.getAttribute(ui.carousel.dataAnimate);
         if (time !== null) {
 
-            if (time === '') { time = ui.globals.ease; }
+            if (time === '') {
+                time = ui.globals.ease;
+            }
 
-            i = 0;
-            elems = ui.find('.' + ui.carousel.nameAnimate, content);
+            let i = 0;
+            const elems = ui.find('.' + ui.carousel.nameAnimate, content);
 
             if (elems.length === 0) { return; }
 
@@ -192,7 +192,7 @@ ui.carousel = {
         ui.removeClass(navDots, ui.carousel.nameFiltered);
         ui.removeClass(navDotsEl, ui.carousel.nameShow + ' ' + ui.carousel.nameFaded);
 
-        var col = getCols(i); // get responsive cols
+        const col = getCols(i); // get responsive cols
 
         ui.addClass(navDots, ui.carousel.nameFiltered);
 
@@ -220,25 +220,23 @@ ui.carousel = {
 
     function carouselModifier(i, that, type) {
 
-        var j, slider, contents, nav, col, halfSized, size, navDots, navDotsEl;
-
-        contents = ui.find('.' + ui.carousel.nameContent, that);
+        const contents = ui.find('.' + ui.carousel.nameContent, that);
         if (contents.length === 0) { return; }
 
-        nav = ui.find('.' + ui.carousel.targetNav, that)[0];
+        const nav = ui.find('.' + ui.carousel.targetNav, that)[0];
         if (nav === undefined) { return; }
 
-        col = getCols(i); // get responsive cols
+        const col = getCols(i); // get responsive cols
 
         if (contents.length <= col) { // toggle nav
             nav.style.display = 'none';
 
         } else { nav.style.display = ''; }
 
-        halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
-        slider = ui.find('.' + ui.carousel.targetSlider, that);
+        const halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
+        const slider = ui.find('.' + ui.carousel.targetSlider, that);
 
-        size = col;
+        let size = col;
 
         if (halfSized && col > 1 && col !== contents.length) {
             size -= ui.carousel.halfSize;
@@ -246,9 +244,9 @@ ui.carousel = {
 
         size = Math.round(that.offsetWidth / size);
 
-        for (j = 0; j < contents.length; j++) {
-            contents[j].style.width = size + 'px';
-        }
+        contents.forEach(item => {
+            item.style.width = size + 'px';
+        });
 
         size = size * contents.length;
         slider[0].style.width = size + 'px';
@@ -263,22 +261,20 @@ ui.carousel = {
         that.setAttribute(ui.carousel.dataContent, (counts[i] + 1));
         slider[0].style.transform = 'translateX(-' + (counts[i] * contents[0].offsetWidth) + 'px)';
 
-        navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that);
-        navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
+        const navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that);
+        const navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
 
         ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
         ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
 
         filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
 
-        ui.each(contents,
+        contents.forEach((item, l) => { // detect carousel animates
 
-            function (l) { // detect carousel animates
+            if (l + 1 > col) { return; }
+            carouselAnimate(item, (ui.globals.ease * 2), type);
 
-                if (l + 1 > col) { return; }
-                carouselAnimate(this, (ui.globals.ease * 2), type);
-
-            });
+        });
 
     }
 
@@ -311,23 +307,21 @@ ui.carousel = {
 
     function carouselNav(that, direction) {
 
-        var col, slider, nav, contents, i, navDots, navDotsEl, slide, halfSized;
-
-        nav = ui.find('.' + ui.carousel.targetNav, that)[0];
+        const nav = ui.find('.' + ui.carousel.targetNav, that)[0];
         if (nav === undefined) { return; }
 
-        slider = ui.find('.' + ui.carousel.targetSlider, that);
-        contents = ui.find('.' + ui.carousel.nameContent, slider[0]);
+        const slider = ui.find('.' + ui.carousel.targetSlider, that);
+        const contents = ui.find('.' + ui.carousel.nameContent, slider[0]);
 
         if (contents.length === 0) { return; }
 
-        i = Number(that.getAttribute(ui.carousel.dataID));
+        const i = Number(that.getAttribute(ui.carousel.dataID));
         if (i === null) { return; }
 
-        navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that);
-        navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
+        const navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that);
+        const navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
 
-        col = getCols(i); // get responsive cols
+        const col = getCols(i); // get responsive cols
 
         if (direction === 'next') {
 
@@ -353,9 +347,9 @@ ui.carousel = {
         ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
 
         filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
-        slide = counts[i] * contents[0].offsetWidth;
+        let slide = counts[i] * contents[0].offsetWidth;
 
-        halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
+        const halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
 
         if (halfSized && (counts[i] === contents.length - col)) {
             slide += contents[0].offsetWidth * ui.carousel.halfSize;
@@ -364,14 +358,11 @@ ui.carousel = {
         slider[0].style.transform = 'translateX(-' + slide + 'px)';
         getSlideSpeed(slider, contentsEase[i], i); // get carousel slide speed
 
-        // detect carousel animates
         if (contents.length > 1 && contents.length !== col) { // stop reloading animates when content length is not enough
 
-            ui.each(contents,
-
-                function () {
-                    carouselAnimate(this, contentsEase[i], 'static');
-                });
+            contents.forEach(item => { // detect carousel animates
+                carouselAnimate(item, contentsEase[i], 'static');
+            });
 
         }
 
@@ -379,61 +370,54 @@ ui.carousel = {
 
     carouselResizer = (e) => {
 
-        var that, slider;
-
         if (touchStarted) { return; }
 
         if (e === 'resize' || e.type === 'resize') {
 
-            that = ui.find('.' + ui.carousel.target);
-            ui.each(that,
+            ui.find('.' + ui.carousel.target).forEach(el => {
 
-                function () {
+                const i = Number(el.getAttribute(ui.carousel.dataID));
+                if (i === null) { return; }
 
-                    var i = Number(this.getAttribute(ui.carousel.dataID));
-                    if (i === null) { return; }
+                ui.addClass(el, ui.carousel.nameResized);
+                carouselModifier(i, el, 'resize');
 
-                    ui.addClass(this, ui.carousel.nameResized);
-                    carouselModifier(i, this, 'resize');
+                const slider = ui.find('.' + ui.carousel.targetSlider, el)[0];
 
-                    slider = ui.find('.' + ui.carousel.targetSlider, this)[0];
+                el.style.transitionDuration = '0s';
+                slider.style.transitionDuration = '0s';
 
-                    this.style.transitionDuration = '0s';
-                    slider.style.transitionDuration = '0s';
-
-                });
+            });
 
         }
 
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(() => { // wait auto slider until resize completed
 
-            that = ui.find('.' + ui.carousel.target);
-            ui.each(that,
+            const that = ui.find('.' + ui.carousel.target);
+            that.forEach(el => {
 
-                function () {
+                const i = Number(el.getAttribute(ui.carousel.dataID));
+                if (i === null) { return; }
 
-                    var i = Number(this.getAttribute(ui.carousel.dataID));
-                    if (i === null) { return; }
+                ui.removeClass(el, ui.carousel.nameResized);
 
-                    ui.removeClass(this, ui.carousel.nameResized);
+                if (autoTimer[i] !== null && autoTimer[i] !== undefined) {
 
-                    if (autoTimer[i] !== null && autoTimer[i] !== undefined) {
+                    clearInterval(autoSlider[i]);
 
-                        clearInterval(autoSlider[i]);
+                    autoSlider[i] = setInterval(() => {
+                        carouselNav(that[i], 'next');
+                    }, autoTimer[i]);
 
-                        autoSlider[i] = setInterval(() => {
-                            carouselNav(that[i], 'next');
-                        }, autoTimer[i]);
+                }
 
-                    }
+                const slider = ui.find('.' + ui.carousel.targetSlider, el)[0];
 
-                    slider = ui.find('.' + ui.carousel.targetSlider, this)[0];
+                el.style.transitionDuration = '';
+                slider.style.transitionDuration = '';
 
-                    this.style.transitionDuration = '';
-                    slider.style.transitionDuration = '';
-
-                });
+            });
 
         }, ui.globals.ease);
 
@@ -441,190 +425,183 @@ ui.carousel = {
 
     ui.carousel.Init = () => {
 
-        var carousels = ui.find('.' + ui.carousel.target + ':not(.' + ui.carousel.nameActive + ')');
-
+        const carousels = ui.find('.' + ui.carousel.target + ':not(.' + ui.carousel.nameActive + ')');
         if (carousels.length > 0) {
 
             // load carousels
-            ui.each(carousels,
+            carousels.forEach(el => {
 
-                function () {
+                // id
+                el.setAttribute(ui.carousel.dataID, idCount);
 
-                    var j, k, that, contents, col, nav, navDots, navDotsHtml, navDotsEl;
+                const j = idCount;
+                idCount += 1;
 
-                    that = this;
+                // cols
+                cols[j] = el.getAttribute(ui.carousel.dataCols);
 
-                    // id
-                    that.setAttribute(ui.carousel.dataID, idCount);
+                colsXL[j] = el.getAttribute(ui.carousel.dataColsXL);
+                colsLG[j] = el.getAttribute(ui.carousel.dataColsLG);
+                colsMD[j] = el.getAttribute(ui.carousel.dataColsMD);
+                colsSM[j] = el.getAttribute(ui.carousel.dataColsSM);
+                colsXS[j] = el.getAttribute(ui.carousel.dataColsXS);
 
-                    j = idCount;
-                    idCount += 1;
+                // col
+                if (cols[j] === null) {
+                    cols[j] = 1;
 
-                    // cols
-                    cols[j] = that.getAttribute(ui.carousel.dataCols);
+                } else {
 
-                    colsXL[j] = that.getAttribute(ui.carousel.dataColsXL);
-                    colsLG[j] = that.getAttribute(ui.carousel.dataColsLG);
-                    colsMD[j] = that.getAttribute(ui.carousel.dataColsMD);
-                    colsSM[j] = that.getAttribute(ui.carousel.dataColsSM);
-                    colsXS[j] = that.getAttribute(ui.carousel.dataColsXS);
+                    cols[j] = Number(cols[j]);
 
-                    // col
-                    if (cols[j] === null) {
+                    if (!cols[j] || cols[j] === '0' || cols[j] === '') {
                         cols[j] = 1;
-
-                    } else {
-
-                        cols[j] = Number(cols[j]);
-
-                        if (!cols[j] || cols[j] === '0' || cols[j] === '') {
-                            cols[j] = 1;
-                        }
-
                     }
 
-                    // xl
-                    if (colsXL[j] === null) {
+                }
+
+                // xl
+                if (colsXL[j] === null) {
+                    colsXL[j] = cols[j];
+
+                } else {
+
+                    colsXL[j] = Number(colsXL[j]);
+
+                    if (!colsXL[j] || colsXL[j] === '0' || colsXL[j] === '') {
                         colsXL[j] = cols[j];
-
-                    } else {
-
-                        colsXL[j] = Number(colsXL[j]);
-
-                        if (!colsXL[j] || colsXL[j] === '0' || colsXL[j] === '') {
-                            colsXL[j] = cols[j];
-                        }
-
                     }
 
-                    // lg
-                    if (colsLG[j] === null) {
+                }
+
+                // lg
+                if (colsLG[j] === null) {
+                    colsLG[j] = cols[j];
+
+                } else {
+
+                    colsLG[j] = Number(colsLG[j]);
+
+                    if (!colsLG[j] || colsLG[j] === '0' || colsLG[j] === '') {
                         colsLG[j] = cols[j];
-
-                    } else {
-
-                        colsLG[j] = Number(colsLG[j]);
-
-                        if (!colsLG[j] || colsLG[j] === '0' || colsLG[j] === '') {
-                            colsLG[j] = cols[j];
-                        }
-
                     }
 
-                    // md
-                    if (colsMD[j] === null) {
+                }
+
+                // md
+                if (colsMD[j] === null) {
+                    colsMD[j] = cols[j];
+
+                } else {
+
+                    colsMD[j] = Number(colsMD[j]);
+
+                    if (!colsMD[j] || colsMD[j] === '0' || colsMD[j] === '') {
                         colsMD[j] = cols[j];
-
-                    } else {
-
-                        colsMD[j] = Number(colsMD[j]);
-
-                        if (!colsMD[j] || colsMD[j] === '0' || colsMD[j] === '') {
-                            colsMD[j] = cols[j];
-                        }
-
                     }
 
-                    // sm
-                    if (colsSM[j] === null) {
+                }
+
+                // sm
+                if (colsSM[j] === null) {
+                    colsSM[j] = cols[j];
+
+                } else {
+
+                    colsSM[j] = Number(colsSM[j]);
+
+                    if (!colsSM[j] || colsSM[j] === '0' || colsSM[j] === '') {
                         colsSM[j] = cols[j];
-
-                    } else {
-
-                        colsSM[j] = Number(colsSM[j]);
-
-                        if (!colsSM[j] || colsSM[j] === '0' || colsSM[j] === '') {
-                            colsSM[j] = cols[j];
-                        }
-
                     }
 
-                    // xs
-                    if (colsXS[j] === null) {
+                }
+
+                // xs
+                if (colsXS[j] === null) {
+                    colsXS[j] = cols[j];
+
+                } else {
+
+                    colsXS[j] = Number(colsXS[j]);
+
+                    if (!colsXS[j] || colsXS[j] === '0' || colsXS[j] === '') {
                         colsXS[j] = cols[j];
-
-                    } else {
-
-                        colsXS[j] = Number(colsXS[j]);
-
-                        if (!colsXS[j] || colsXS[j] === '0' || colsXS[j] === '') {
-                            colsXS[j] = cols[j];
-                        }
-
                     }
 
-                    counts[j] = 0;
+                }
 
-                    contents = ui.find('.' + ui.carousel.nameContent, that);
-                    if (contents.length === 0) { return; }
+                counts[j] = 0;
 
-                    nav = ui.find('.' + ui.carousel.targetNav, that)[0];
-                    navDots = ui.find('.' + ui.carousel.nameDots, nav)[0];
+                const contents = ui.find('.' + ui.carousel.nameContent, el);
+                if (contents.length === 0) { return; }
 
-                    if (nav === undefined || navDots === undefined) { return; }
+                const nav = ui.find('.' + ui.carousel.targetNav, el)[0];
+                const navDots = ui.find('.' + ui.carousel.nameDots, nav)[0];
 
-                    ui.addClass(that, ui.carousel.nameActive);
-                    carouselModifier(j, that, 'static');
+                if (nav === undefined || navDots === undefined) { return; }
 
-                    // create nav
-                    col = getCols(j); // get responsive cols
+                ui.addClass(el, ui.carousel.nameActive);
+                carouselModifier(j, el, 'static');
 
-                    if (contents.length <= col) { // toggle nav
-                        nav.style.display = 'none';
+                // create nav
+                const col = getCols(j); // get responsive cols
 
-                    } else { nav.style.display = ''; }
+                if (contents.length <= col) { // toggle nav
+                    nav.style.display = 'none';
 
-                    navDotsHtml = '';
-                    navDots.innerHTML = '';
+                } else { nav.style.display = ''; }
 
-                    for (k = 0; k < contents.length; k++) {
+                let navDotsHtml = '';
+                navDots.innerHTML = '';
 
-                        navDotsHtml += '<' + ui.carousel.tagDots + ' ' +
-                                            'class="' + ui.carousel.stylesDots + '">' +
-                                       '</' + ui.carousel.tagDots + '>';
+                contents.forEach(() => {
 
-                    }
-
-                    navDots.insertAdjacentHTML('beforeend', navDotsHtml);
-                    navDotsEl = ui.find('.' + ui.carousel.nameDots + ' i', nav);
-
-                    counts[j] = 0;
-                    that.setAttribute(ui.carousel.dataContent, (counts[j] + 1));
-
-                    ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
-                    ui.addClass(navDotsEl[counts[j]], ui.carousel.nameNavSelected);
-
-                    filterDots(navDots, navDotsEl, counts[j], j); // filter dots when dots number exceeds
-
-                    // auto slider
-                    autoTimer[j] = that.getAttribute(ui.carousel.dataSlide);
-
-                    if (autoTimer[j] !== null) {
-
-                        if (autoTimer[j] === '') {
-                            autoTimer[j] = ui.carousel.defaultSlideTimer;
-                        }
-
-                        autoSlider[j] = setInterval(() => {
-                            carouselNav(that, 'next');
-                        }, autoTimer[j]);
-
-                    }
+                    navDotsHtml += '<' + ui.carousel.tagDots + ' ' +
+                                        'class="' + ui.carousel.stylesDots + '">' +
+                                   '</' + ui.carousel.tagDots + '>';
 
                 });
+
+                navDots.insertAdjacentHTML('beforeend', navDotsHtml);
+                const navDotsEl = ui.find('.' + ui.carousel.nameDots + ' i', nav);
+
+                counts[j] = 0;
+                el.setAttribute(ui.carousel.dataContent, (counts[j] + 1));
+
+                ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
+                ui.addClass(navDotsEl[counts[j]], ui.carousel.nameNavSelected);
+
+                filterDots(navDots, navDotsEl, counts[j], j); // filter dots when dots number exceeds
+
+                // auto slider
+                autoTimer[j] = el.getAttribute(ui.carousel.dataSlide);
+
+                if (autoTimer[j] !== null) {
+
+                    if (autoTimer[j] === '') {
+                        autoTimer[j] = ui.carousel.defaultSlideTimer;
+                    }
+
+                    const that = el;
+
+                    autoSlider[j] = setInterval(() => {
+                        carouselNav(that, 'next');
+                    }, autoTimer[j]);
+
+                }
+
+            });
 
             // carousel gallery loader
-            ui.each('.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs,
+            ui.find('.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs).forEach(el => {
 
-                function () {
+                const images = ui.find('.' + ui.carousel.namePhoto, el);
 
-                    var images = ui.find('.' + ui.carousel.namePhoto, this);
+                if (images.length <= 1) {
+                    el.style.display = 'none'; // hide thumbs when image length is 1 or 0
+                }
 
-                    if (images.length <= 1) {
-                        this.style.display = 'none'; // hide thumbs when image length is 1 or 0
-                    }
-
-                });
+            });
 
         }
 
@@ -642,7 +619,7 @@ ui.carousel = {
 
             function () {
 
-                var i, that, direction;
+                let direction;
 
                 if (ui.hasClass(this, ui.carousel.nameNext)) {
                     direction = 'next';
@@ -651,9 +628,9 @@ ui.carousel = {
                     direction = 'prev';
                 }
 
-                that = ui.closest(this, '.' + ui.carousel.target)[0];
+                const that = ui.closest(this, '.' + ui.carousel.target)[0];
+                const i = Number(that.getAttribute(ui.carousel.dataID));
 
-                i = Number(that.getAttribute(ui.carousel.dataID));
                 if (i === null) { return; }
 
                 carouselNav(that, direction);
@@ -667,7 +644,7 @@ ui.carousel = {
 
         function carouselStart(that) {
 
-            var i = Number(that.getAttribute(ui.carousel.dataID));
+            const i = Number(that.getAttribute(ui.carousel.dataID));
             if (i === null) { return; }
 
             clearInterval(autoSlider[i]);
@@ -680,7 +657,7 @@ ui.carousel = {
 
         function carouselStop(that) {
 
-            var i = Number(that.getAttribute(ui.carousel.dataID));
+            const i = Number(that.getAttribute(ui.carousel.dataID));
             if (i === null) { return; }
 
             clearInterval(autoSlider[i]);
@@ -708,24 +685,13 @@ ui.carousel = {
 
             () => {
 
-                var callCarousels = ui.find('.' + ui.carousel.target + '[' + ui.carousel.dataSlide + ']');
+                const callCarousels = ui.find('.' + ui.carousel.target + '[' + ui.carousel.dataSlide + ']');
 
                 if (document.hidden) { // stop all carousels when browser windows is not active
-
-                    ui.each(callCarousels,
-
-                        function () {
-                            carouselStop(this);
-                        });
+                    callCarousels.forEach(el => { carouselStop(el); });
 
                 } else {
-
-                    ui.each(callCarousels,
-
-                        function () {
-                            carouselStart(this);
-                        });
-
+                    callCarousels.forEach(el => { carouselStart(el); });
                 }
 
             });
@@ -760,34 +726,33 @@ ui.carousel = {
 
             function (e) {
 
-                var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, halfSized, touchEndTimer, contents;
-
                 if (isScrolling) { return; }
 
-                touchMove = false;
+                let touchMove = false;
                 touchStarted = true;
 
-                startx = e.targetTouches[0].pageX;
-                starty = e.targetTouches[0].pageY;
+                const startx = e.targetTouches[0].pageX;
+                const starty = e.targetTouches[0].pageY;
 
-                that = this;
+                const slider = ui.find('.' + ui.carousel.targetSlider, this)[0];
 
-                slider = ui.find('.' + ui.carousel.targetSlider, that)[0];
+                const contents = ui.find('.' + ui.carousel.nameContent, this);
+                const navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', this);
 
-                contents = ui.find('.' + ui.carousel.nameContent, that);
-                navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
+                const halfSized = ui.hasClass(this, ui.carousel.nameHalfSize);
 
-                halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
-
-                i = Number(that.getAttribute(ui.carousel.dataID));
+                const i = Number(this.getAttribute(ui.carousel.dataID));
                 if (i === null) { return; }
 
-                col = getCols(i); // get responsive cols
+                const col = getCols(i); // get responsive cols
 
-                startMove = window.getComputedStyle(slider).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
+                let startMove = window.getComputedStyle(slider).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
                 startMove = startMove.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|'); // select only numbers
 
                 startMove = startMove.split('|')[4];
+
+                let currentx, currenty, move, touchEndTimer;
+                const that = this;
 
                 ui.off(document, 'touchmove');
 
@@ -814,7 +779,7 @@ ui.carousel = {
                             slider.style.transitionDuration = '0s';
 
                             clearTimeout(touchEndTimer);
-                            sliderMax = -((contents.length - col) * contents[0].offsetWidth);
+                            let sliderMax = -((contents.length - col) * contents[0].offsetWidth);
 
                             if (halfSized) {
                                 sliderMax -= contents[0].offsetWidth * ui.carousel.halfSize;
@@ -856,10 +821,9 @@ ui.carousel = {
 
                             setTimeout(() => {
 
-                                var beforeCount, navDots;
-                                navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that[i])[0];
+                                const navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that[i])[0];
+                                let beforeCount = counts[i];
 
-                                beforeCount = counts[i];
                                 counts[i] = Math.abs(move) / contents[0].offsetWidth;
 
                                 if (currentx > startx) { // slide to right
@@ -926,12 +890,9 @@ ui.carousel = {
 
                                     }
 
-                                    // detect carousel animates
-                                    ui.each(contents,
-
-                                        function () {
-                                            carouselAnimate(this, contentsEase[i], 'touch');
-                                        });
+                                    contents.forEach(item => { // detect carousel animates
+                                        carouselAnimate(item, contentsEase[i], 'touch');
+                                    });
 
                                     ui.removeClass(document, ui.carousel.nameTouchMove);
                                     touchStarted = false;
@@ -959,21 +920,19 @@ ui.carousel = {
 
             function () {
 
-                var parent, detail, target, thumbs, index, newImg;
+                const parent = ui.closest(this, '.' + ui.carousel.targetGallery);
 
-                parent = ui.closest(this, '.' + ui.carousel.targetGallery);
+                const detail = ui.find('.' + ui.carousel.nameGalleryDetail, parent[0]);
+                const target = ui.find('img', detail);
 
-                detail = ui.find('.' + ui.carousel.nameGalleryDetail, parent[0]);
-                target = ui.find('img', detail);
+                const thumbs = ui.find('.' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.namePhoto, parent[0]);
 
-                thumbs = ui.find('.' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.namePhoto, parent[0]);
-
-                index = Array.prototype.slice.call(thumbs).indexOf(this);
+                const index = Array.prototype.slice.call(thumbs).indexOf(this);
                 target.setAttribute(ui.carousel.dataCount, index);
 
                 ui.addClass(detail, ui.carousel.nameGalleryDetailLoader);
 
-                newImg = new Image();
+                const newImg = new Image();
                 newImg.src = this.getAttribute(ui.carousel.dataHref);
 
                 newImg.onload = () => {

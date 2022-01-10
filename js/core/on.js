@@ -9,8 +9,7 @@ ui.on = function (t, e, that, callback) {
 
         if (typeof t === 'string' && e === undefined) { return; }
 
-        let callFnc;
-        let isWindowEvent;
+        let callFnc, isWindowEvent;
 
         let delegate = false;
         let customEvent = false;
@@ -20,9 +19,8 @@ ui.on = function (t, e, that, callback) {
             callFnc = (event) => {
 
                 const eName = e.split('.')[0]; // split for event naming
-                const targetEl = ui.find(that); // catches future updated DOM!
 
-                targetEl.forEach(el => {
+                ui.find(that).forEach(el => { // catches future updated DOM!
 
                     if (ui.globals.nonClosestElems.indexOf(eName) > -1) { // control non-closest event listeners
 
@@ -121,7 +119,6 @@ ui.on = function (t, e, that, callback) {
     };
 
     // for multiple event listeners ex: 'click touchend'
-    const arr = e.split(' ');
-    arr.forEach(name => { set(name); });
+    e.split(' ').forEach(name => { set(name); });
 
 }

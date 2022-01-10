@@ -36,7 +36,6 @@ ui.off = function (that, e) {
     };
 
     // for multiple event listeners ex: 'click touchend'
-    const arr = e.split(' ');
-    arr.forEach(name => { callFnc(name); });
+    e.split(' ').forEach(name => { callFnc(name); });
 
 }

@@ -7,8 +7,7 @@ ui.hasClass = (that, name) => {
 
     let re;
 
-    const nodeList = ui.find(that);
-    nodeList.forEach(el => {
+    ui.find(that).forEach(el => {
 
         if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) { // check SVG and own elements
             re = new RegExp('(^| )' + name + '( |$)', 'gi').test(el.className.baseVal);

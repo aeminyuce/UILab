@@ -306,8 +306,7 @@ ui.classnames.Start = () => {
             });
 
             // create category names
-            let html;
-            let items;
+            let html, items;
             let created = 0;
 
             arr.filtered = arr.filtered.sort((a, b) => a.localeCompare(b));

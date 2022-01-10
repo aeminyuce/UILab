@@ -5,8 +5,7 @@ export default () => ui;
 
 ui.closest = function (that, outer) {
 
-    let outerEl;
-    let parentEl;
+    let outerEl, parentEl;
 
     if (outer instanceof Object) {
         outerEl = [outer];
@@ -16,9 +15,8 @@ ui.closest = function (that, outer) {
     }
 
     let elems = [];
-    const nodeList = ui.find(that);
 
-    nodeList.forEach(el => {
+    ui.find(that).forEach(el => {
 
         parentEl = el.parentNode;
         while (parentEl) {

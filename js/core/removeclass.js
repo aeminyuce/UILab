@@ -5,14 +5,11 @@ export default () => ui;
 
 ui.removeClass = function (that, name) {
 
-    name = name.split(' ');
-
     const rex = new RegExp('^\\s+|\\s+$');
-    const nodeList = ui.find(that);
 
-    nodeList.forEach(el => {
+    ui.find(that).forEach(el => {
 
-        name.forEach(item => {
+        name.split(' ').forEach(item => {
 
             const re = new RegExp('(\\s|^)' + item + '(\\s|$)');
 

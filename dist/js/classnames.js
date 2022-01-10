@@ -213,8 +213,7 @@ ui.classnames.Start = function () {
         }
       }
     });
-    var html;
-    var items;
+    var html, items;
     var created = 0;
     arr.filtered = arr.filtered.sort(function (a, b) {
       return a.localeCompare(b);

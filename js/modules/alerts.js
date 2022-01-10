@@ -251,7 +251,7 @@ ui.alerts = {
                                 theme = ui.alerts.themeDanger;
                             }
 
-                            let msgTimer
+                            let msgTimer;
 
                             if (ui.alerts.dialogMessages) {
                                 msgTimer = ui.globals.ease;
@@ -384,7 +384,6 @@ ui.alerts = {
 
             // create mssage
             let holder = ui.find('.' + ui.alerts.nameMsgHolder)[0];
-
             let html = '';
 
             if (holder === undefined) {
@@ -421,7 +420,6 @@ ui.alerts = {
                 if (holder !== undefined) {
 
                     const prev = ui.find('.' + ui.alerts.targetMsg + '.' + ui.alerts.namePosPrefix + props.pos);
-
                     prev.forEach((el, j, arr) => {
 
                         let slide = 0;

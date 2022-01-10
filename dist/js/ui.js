@@ -89,16 +89,14 @@ ui.on = function (t, e, that, callback) {
       return;
     }
 
-    var callFnc;
-    var isWindowEvent;
+    var callFnc, isWindowEvent;
     var delegate = false;
     var customEvent = false;
 
     if (callback !== undefined) {
       callFnc = function callFnc(event) {
         var eName = e.split('.')[0];
-        var targetEl = ui.find(that);
-        targetEl.forEach(function (el) {
+        ui.find(that).forEach(function (el) {
           if (ui.globals.nonClosestElems.indexOf(eName) > -1) {
             if (event.target === el) {
               callback.call(el, event, event.toElement);
@@ -182,8 +180,7 @@ ui.on = function (t, e, that, callback) {
     }
   };
 
-  var arr = e.split(' ');
-  arr.forEach(function (name) {
+  e.split(' ').forEach(function (name) {
     set(name);
   });
 };
@@ -212,8 +209,7 @@ ui.off = function (that, e) {
     }
   };
 
-  var arr = e.split(' ');
-  arr.forEach(function (name) {
+  e.split(' ').forEach(function (name) {
     callFnc(name);
   });
 };
@@ -273,22 +269,19 @@ ui.trigger = function (that, e) {
       event.initEvent(e, true, false);
     }
 
-    var nodeList = ui.find(that);
-    nodeList.forEach(function (el) {
+    ui.find(that).forEach(function (el) {
       el.dispatchEvent(event);
     });
   };
 
-  var arr = e.split(' ');
-  arr.forEach(function (name) {
+  e.split(' ').forEach(function (name) {
     callFnc(name);
   });
 };
 
 ui.hasClass = function (that, name) {
   var re;
-  var nodeList = ui.find(that);
-  nodeList.forEach(function (el) {
+  ui.find(that).forEach(function (el) {
     if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) {
       re = new RegExp('(^| )' + name + '( |$)', 'gi').test(el.className.baseVal);
     } else {
@@ -301,10 +294,8 @@ ui.hasClass = function (that, name) {
 ui.addClass = function (that, name) {
   var arr;
   var re = new RegExp('^\\s+|\\s+$');
-  var nodeList = ui.find(that);
-  name = name.split(' ');
-  nodeList.forEach(function (el) {
-    name.forEach(function (item) {
+  ui.find(that).forEach(function (el) {
+    name.split(' ').forEach(function (item) {
       if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) {
         arr = el.className.baseVal.split(' ');
 
@@ -325,11 +316,9 @@ ui.addClass = function (that, name) {
 };
 
 ui.removeClass = function (that, name) {
-  name = name.split(' ');
   var rex = new RegExp('^\\s+|\\s+$');
-  var nodeList = ui.find(that);
-  nodeList.forEach(function (el) {
-    name.forEach(function (item) {
+  ui.find(that).forEach(function (el) {
+    name.split(' ').forEach(function (item) {
       var re = new RegExp('(\\s|^)' + item + '(\\s|$)');
 
       if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) {
@@ -346,14 +335,9 @@ ui.removeClass = function (that, name) {
 };
 
 ui.toggleClass = function (that, name) {
-  name = name.split(' ');
-  var arr;
-  var newArr;
-  var index;
-  var isSvgElements;
+  var arr, newArr, index, isSvgElements;
   var re = new RegExp('^\\s+|\\s+$');
-  var nodeList = ui.find(that);
-  nodeList.forEach(function (el) {
+  ui.find(that).forEach(function (el) {
     isSvgElements = ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1;
 
     if (isSvgElements) {
@@ -362,7 +346,7 @@ ui.toggleClass = function (that, name) {
       arr = el.className.split(' ');
     }
 
-    name.forEach(function (item) {
+    name.split(' ').forEach(function (item) {
       newArr = arr;
       index = newArr.indexOf(item);
 
@@ -397,8 +381,7 @@ ui.each = function (t, callback) {
 };
 
 ui.closest = function (that, outer) {
-  var outerEl;
-  var parentEl;
+  var outerEl, parentEl;
 
   if (outer instanceof Object) {
     outerEl = [outer];
@@ -407,8 +390,7 @@ ui.closest = function (that, outer) {
   }
 
   var elems = [];
-  var nodeList = ui.find(that);
-  nodeList.forEach(function (el) {
+  ui.find(that).forEach(function (el) {
     parentEl = el.parentNode;
 
     while (parentEl) {
@@ -3730,16 +3712,15 @@ ui.carousel = {
   };
 
   function carouselAnimate(content, wait, type) {
-    var time, elems, i;
-    time = content.getAttribute(ui.carousel.dataAnimate);
+    var time = content.getAttribute(ui.carousel.dataAnimate);
 
     if (time !== null) {
       if (time === '') {
         time = ui.globals.ease;
       }
 
-      i = 0;
-      elems = ui.find('.' + ui.carousel.nameAnimate, content);
+      var i = 0;
+      var elems = ui.find('.' + ui.carousel.nameAnimate, content);
 
       if (elems.length === 0) {
         return;
@@ -3794,20 +3775,19 @@ ui.carousel = {
   }
 
   function carouselModifier(i, that, type) {
-    var j, slider, contents, nav, col, halfSized, size, navDots, navDotsEl;
-    contents = ui.find('.' + ui.carousel.nameContent, that);
+    var contents = ui.find('.' + ui.carousel.nameContent, that);
 
     if (contents.length === 0) {
       return;
     }
 
-    nav = ui.find('.' + ui.carousel.targetNav, that)[0];
+    var nav = ui.find('.' + ui.carousel.targetNav, that)[0];
 
     if (nav === undefined) {
       return;
     }
 
-    col = getCols(i);
+    var col = getCols(i);
 
     if (contents.length <= col) {
       nav.style.display = 'none';
@@ -3815,20 +3795,18 @@ ui.carousel = {
       nav.style.display = '';
     }
 
-    halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
-    slider = ui.find('.' + ui.carousel.targetSlider, that);
-    size = col;
+    var halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
+    var slider = ui.find('.' + ui.carousel.targetSlider, that);
+    var size = col;
 
     if (halfSized && col > 1 && col !== contents.length) {
       size -= ui.carousel.halfSize;
     }
 
     size = Math.round(that.offsetWidth / size);
-
-    for (j = 0; j < contents.length; j++) {
-      contents[j].style.width = size + 'px';
-    }
-
+    contents.forEach(function (item) {
+      item.style.width = size + 'px';
+    });
     size = size * contents.length;
     slider[0].style.width = size + 'px';
 
@@ -3840,17 +3818,17 @@ ui.carousel = {
 
     that.setAttribute(ui.carousel.dataContent, counts[i] + 1);
     slider[0].style.transform = 'translateX(-' + counts[i] * contents[0].offsetWidth + 'px)';
-    navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that);
-    navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
+    var navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that);
+    var navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
     ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
     ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
     filterDots(navDots, navDotsEl, counts[i], i);
-    ui.each(contents, function (l) {
+    contents.forEach(function (item, l) {
       if (l + 1 > col) {
         return;
       }
 
-      carouselAnimate(this, ui.globals.ease * 2, type);
+      carouselAnimate(item, ui.globals.ease * 2, type);
     });
   }
 
@@ -3875,29 +3853,28 @@ ui.carousel = {
   }
 
   function carouselNav(that, direction) {
-    var col, slider, nav, contents, i, navDots, navDotsEl, slide, halfSized;
-    nav = ui.find('.' + ui.carousel.targetNav, that)[0];
+    var nav = ui.find('.' + ui.carousel.targetNav, that)[0];
 
     if (nav === undefined) {
       return;
     }
 
-    slider = ui.find('.' + ui.carousel.targetSlider, that);
-    contents = ui.find('.' + ui.carousel.nameContent, slider[0]);
+    var slider = ui.find('.' + ui.carousel.targetSlider, that);
+    var contents = ui.find('.' + ui.carousel.nameContent, slider[0]);
 
     if (contents.length === 0) {
       return;
     }
 
-    i = Number(that.getAttribute(ui.carousel.dataID));
+    var i = Number(that.getAttribute(ui.carousel.dataID));
 
     if (i === null) {
       return;
     }
 
-    navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that);
-    navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
-    col = getCols(i);
+    var navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that);
+    var navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
+    var col = getCols(i);
 
     if (direction === 'next') {
       counts[i] += 1;
@@ -3917,8 +3894,8 @@ ui.carousel = {
     ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
     ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
     filterDots(navDots, navDotsEl, counts[i], i);
-    slide = counts[i] * contents[0].offsetWidth;
-    halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
+    var slide = counts[i] * contents[0].offsetWidth;
+    var halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
 
     if (halfSized && counts[i] === contents.length - col) {
       slide += contents[0].offsetWidth * ui.carousel.halfSize;
@@ -3928,47 +3905,44 @@ ui.carousel = {
     getSlideSpeed(slider, contentsEase[i], i);
 
     if (contents.length > 1 && contents.length !== col) {
-      ui.each(contents, function () {
-        carouselAnimate(this, contentsEase[i], 'static');
+      contents.forEach(function (item) {
+        carouselAnimate(item, contentsEase[i], 'static');
       });
     }
   }
 
   carouselResizer = function carouselResizer(e) {
-    var that, slider;
-
     if (touchStarted) {
       return;
     }
 
     if (e === 'resize' || e.type === 'resize') {
-      that = ui.find('.' + ui.carousel.target);
-      ui.each(that, function () {
-        var i = Number(this.getAttribute(ui.carousel.dataID));
+      ui.find('.' + ui.carousel.target).forEach(function (el) {
+        var i = Number(el.getAttribute(ui.carousel.dataID));
 
         if (i === null) {
           return;
         }
 
-        ui.addClass(this, ui.carousel.nameResized);
-        carouselModifier(i, this, 'resize');
-        slider = ui.find('.' + ui.carousel.targetSlider, this)[0];
-        this.style.transitionDuration = '0s';
+        ui.addClass(el, ui.carousel.nameResized);
+        carouselModifier(i, el, 'resize');
+        var slider = ui.find('.' + ui.carousel.targetSlider, el)[0];
+        el.style.transitionDuration = '0s';
         slider.style.transitionDuration = '0s';
       });
     }
 
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function () {
-      that = ui.find('.' + ui.carousel.target);
-      ui.each(that, function () {
-        var i = Number(this.getAttribute(ui.carousel.dataID));
+      var that = ui.find('.' + ui.carousel.target);
+      that.forEach(function (el) {
+        var i = Number(el.getAttribute(ui.carousel.dataID));
 
         if (i === null) {
           return;
         }
 
-        ui.removeClass(this, ui.carousel.nameResized);
+        ui.removeClass(el, ui.carousel.nameResized);
 
         if (autoTimer[i] !== null && autoTimer[i] !== undefined) {
           clearInterval(autoSlider[i]);
@@ -3977,8 +3951,8 @@ ui.carousel = {
           }, autoTimer[i]);
         }
 
-        slider = ui.find('.' + ui.carousel.targetSlider, this)[0];
-        this.style.transitionDuration = '';
+        var slider = ui.find('.' + ui.carousel.targetSlider, el)[0];
+        el.style.transitionDuration = '';
         slider.style.transitionDuration = '';
       });
     }, ui.globals.ease);
@@ -3988,18 +3962,16 @@ ui.carousel = {
     var carousels = ui.find('.' + ui.carousel.target + ':not(.' + ui.carousel.nameActive + ')');
 
     if (carousels.length > 0) {
-      ui.each(carousels, function () {
-        var j, k, that, contents, col, nav, navDots, navDotsHtml, navDotsEl;
-        that = this;
-        that.setAttribute(ui.carousel.dataID, idCount);
-        j = idCount;
+      carousels.forEach(function (el) {
+        el.setAttribute(ui.carousel.dataID, idCount);
+        var j = idCount;
         idCount += 1;
-        cols[j] = that.getAttribute(ui.carousel.dataCols);
-        colsXL[j] = that.getAttribute(ui.carousel.dataColsXL);
-        colsLG[j] = that.getAttribute(ui.carousel.dataColsLG);
-        colsMD[j] = that.getAttribute(ui.carousel.dataColsMD);
-        colsSM[j] = that.getAttribute(ui.carousel.dataColsSM);
-        colsXS[j] = that.getAttribute(ui.carousel.dataColsXS);
+        cols[j] = el.getAttribute(ui.carousel.dataCols);
+        colsXL[j] = el.getAttribute(ui.carousel.dataColsXL);
+        colsLG[j] = el.getAttribute(ui.carousel.dataColsLG);
+        colsMD[j] = el.getAttribute(ui.carousel.dataColsMD);
+        colsSM[j] = el.getAttribute(ui.carousel.dataColsSM);
+        colsXS[j] = el.getAttribute(ui.carousel.dataColsXS);
 
         if (cols[j] === null) {
           cols[j] = 1;
@@ -4062,22 +4034,22 @@ ui.carousel = {
         }
 
         counts[j] = 0;
-        contents = ui.find('.' + ui.carousel.nameContent, that);
+        var contents = ui.find('.' + ui.carousel.nameContent, el);
 
         if (contents.length === 0) {
           return;
         }
 
-        nav = ui.find('.' + ui.carousel.targetNav, that)[0];
-        navDots = ui.find('.' + ui.carousel.nameDots, nav)[0];
+        var nav = ui.find('.' + ui.carousel.targetNav, el)[0];
+        var navDots = ui.find('.' + ui.carousel.nameDots, nav)[0];
 
         if (nav === undefined || navDots === undefined) {
           return;
         }
 
-        ui.addClass(that, ui.carousel.nameActive);
-        carouselModifier(j, that, 'static');
-        col = getCols(j);
+        ui.addClass(el, ui.carousel.nameActive);
+        carouselModifier(j, el, 'static');
+        var col = getCols(j);
 
         if (contents.length <= col) {
           nav.style.display = 'none';
@@ -4085,37 +4057,36 @@ ui.carousel = {
           nav.style.display = '';
         }
 
-        navDotsHtml = '';
+        var navDotsHtml = '';
         navDots.innerHTML = '';
-
-        for (k = 0; k < contents.length; k++) {
+        contents.forEach(function () {
           navDotsHtml += '<' + ui.carousel.tagDots + ' ' + 'class="' + ui.carousel.stylesDots + '">' + '</' + ui.carousel.tagDots + '>';
-        }
-
+        });
         navDots.insertAdjacentHTML('beforeend', navDotsHtml);
-        navDotsEl = ui.find('.' + ui.carousel.nameDots + ' i', nav);
+        var navDotsEl = ui.find('.' + ui.carousel.nameDots + ' i', nav);
         counts[j] = 0;
-        that.setAttribute(ui.carousel.dataContent, counts[j] + 1);
+        el.setAttribute(ui.carousel.dataContent, counts[j] + 1);
         ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
         ui.addClass(navDotsEl[counts[j]], ui.carousel.nameNavSelected);
         filterDots(navDots, navDotsEl, counts[j], j);
-        autoTimer[j] = that.getAttribute(ui.carousel.dataSlide);
+        autoTimer[j] = el.getAttribute(ui.carousel.dataSlide);
 
         if (autoTimer[j] !== null) {
           if (autoTimer[j] === '') {
             autoTimer[j] = ui.carousel.defaultSlideTimer;
           }
 
+          var that = el;
           autoSlider[j] = setInterval(function () {
             carouselNav(that, 'next');
           }, autoTimer[j]);
         }
       });
-      ui.each('.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs, function () {
-        var images = ui.find('.' + ui.carousel.namePhoto, this);
+      ui.find('.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs).forEach(function (el) {
+        var images = ui.find('.' + ui.carousel.namePhoto, el);
 
         if (images.length <= 1) {
-          this.style.display = 'none';
+          el.style.display = 'none';
         }
       });
     }
@@ -4124,7 +4095,7 @@ ui.carousel = {
   ui.carousel.Start = function () {
     ui.carousel.Init();
     ui.on(document, 'click', '.' + ui.carousel.namePrev + ',.' + ui.carousel.nameNext, function () {
-      var i, that, direction;
+      var direction;
 
       if (ui.hasClass(this, ui.carousel.nameNext)) {
         direction = 'next';
@@ -4132,8 +4103,8 @@ ui.carousel = {
         direction = 'prev';
       }
 
-      that = ui.closest(this, '.' + ui.carousel.target)[0];
-      i = Number(that.getAttribute(ui.carousel.dataID));
+      var that = ui.closest(this, '.' + ui.carousel.target)[0];
+      var i = Number(that.getAttribute(ui.carousel.dataID));
 
       if (i === null) {
         return;
@@ -4179,12 +4150,12 @@ ui.carousel = {
       var callCarousels = ui.find('.' + ui.carousel.target + '[' + ui.carousel.dataSlide + ']');
 
       if (document.hidden) {
-        ui.each(callCarousels, function () {
-          carouselStop(this);
+        callCarousels.forEach(function (el) {
+          carouselStop(el);
         });
       } else {
-        ui.each(callCarousels, function () {
-          carouselStart(this);
+        callCarousels.forEach(function (el) {
+          carouselStart(el);
         });
       }
     });
@@ -4198,31 +4169,30 @@ ui.carousel = {
       }, ui.globals.ease);
     });
     ui.on(document, 'touchstart', '.' + ui.carousel.target, function (e) {
-      var i, startx, starty, currentx, currenty, startMove, touchMove, move, that, slider, sliderMax, col, navDotsEl, halfSized, touchEndTimer, contents;
-
       if (isScrolling) {
         return;
       }
 
-      touchMove = false;
+      var touchMove = false;
       touchStarted = true;
-      startx = e.targetTouches[0].pageX;
-      starty = e.targetTouches[0].pageY;
-      that = this;
-      slider = ui.find('.' + ui.carousel.targetSlider, that)[0];
-      contents = ui.find('.' + ui.carousel.nameContent, that);
-      navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
-      halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
-      i = Number(that.getAttribute(ui.carousel.dataID));
+      var startx = e.targetTouches[0].pageX;
+      var starty = e.targetTouches[0].pageY;
+      var slider = ui.find('.' + ui.carousel.targetSlider, this)[0];
+      var contents = ui.find('.' + ui.carousel.nameContent, this);
+      var navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', this);
+      var halfSized = ui.hasClass(this, ui.carousel.nameHalfSize);
+      var i = Number(this.getAttribute(ui.carousel.dataID));
 
       if (i === null) {
         return;
       }
 
-      col = getCols(i);
-      startMove = window.getComputedStyle(slider).getPropertyValue('transform');
+      var col = getCols(i);
+      var startMove = window.getComputedStyle(slider).getPropertyValue('transform');
       startMove = startMove.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|');
       startMove = startMove.split('|')[4];
+      var currentx, currenty, move, touchEndTimer;
+      var that = this;
       ui.off(document, 'touchmove');
       ui.on(document, 'touchmove', function (e) {
         if (ui.hasClass(document, ui.photoGallery.namePreviewOpened)) {
@@ -4245,7 +4215,7 @@ ui.carousel = {
           that.style.transitionDuration = '0s';
           slider.style.transitionDuration = '0s';
           clearTimeout(touchEndTimer);
-          sliderMax = -((contents.length - col) * contents[0].offsetWidth);
+          var sliderMax = -((contents.length - col) * contents[0].offsetWidth);
 
           if (halfSized) {
             sliderMax -= contents[0].offsetWidth * ui.carousel.halfSize;
@@ -4274,9 +4244,8 @@ ui.carousel = {
           that.style.transitionDuration = '';
           slider.style.transitionDuration = '';
           setTimeout(function () {
-            var beforeCount, navDots;
-            navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that[i])[0];
-            beforeCount = counts[i];
+            var navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that[i])[0];
+            var beforeCount = counts[i];
             counts[i] = Math.abs(move) / contents[0].offsetWidth;
 
             if (currentx > startx) {
@@ -4323,8 +4292,8 @@ ui.carousel = {
                 }, autoTimer[i]);
               }
 
-              ui.each(contents, function () {
-                carouselAnimate(this, contentsEase[i], 'touch');
+              contents.forEach(function (item) {
+                carouselAnimate(item, contentsEase[i], 'touch');
               });
               ui.removeClass(document, ui.carousel.nameTouchMove);
               touchStarted = false;
@@ -4338,15 +4307,14 @@ ui.carousel = {
       });
     });
     ui.on(document, 'click', '.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.namePhoto, function () {
-      var parent, detail, target, thumbs, index, newImg;
-      parent = ui.closest(this, '.' + ui.carousel.targetGallery);
-      detail = ui.find('.' + ui.carousel.nameGalleryDetail, parent[0]);
-      target = ui.find('img', detail);
-      thumbs = ui.find('.' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.namePhoto, parent[0]);
-      index = Array.prototype.slice.call(thumbs).indexOf(this);
+      var parent = ui.closest(this, '.' + ui.carousel.targetGallery);
+      var detail = ui.find('.' + ui.carousel.nameGalleryDetail, parent[0]);
+      var target = ui.find('img', detail);
+      var thumbs = ui.find('.' + ui.carousel.nameGalleryThumbs + ' .' + ui.carousel.namePhoto, parent[0]);
+      var index = Array.prototype.slice.call(thumbs).indexOf(this);
       target.setAttribute(ui.carousel.dataCount, index);
       ui.addClass(detail, ui.carousel.nameGalleryDetailLoader);
-      newImg = new Image();
+      var newImg = new Image();
       newImg.src = this.getAttribute(ui.carousel.dataHref);
 
       newImg.onload = function () {

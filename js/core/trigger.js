@@ -19,13 +19,11 @@ ui.trigger = function (that, e) {
 
         }
 
-        const nodeList = ui.find(that);
-        nodeList.forEach(el => { el.dispatchEvent(event); });
+        ui.find(that).forEach(el => { el.dispatchEvent(event); });
 
     };
 
     // for multiple event listeners ex: 'click touchend'
-    const arr = e.split(' ');
-    arr.forEach(name => { callFnc(name); });
+    e.split(' ').forEach(name => { callFnc(name); });
 
 }

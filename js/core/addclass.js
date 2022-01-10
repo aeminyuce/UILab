@@ -6,15 +6,11 @@ export default () => ui;
 ui.addClass = function (that, name) {
 
     let arr;
-
     const re = new RegExp('^\\s+|\\s+$');
-    const nodeList = ui.find(that);
 
-    name = name.split(' ');
+    ui.find(that).forEach(el => {
 
-    nodeList.forEach(el => {
-
-        name.forEach(item => {
+        name.split(' ').forEach(item => {
 
             if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) { // check SVG and own elements
 

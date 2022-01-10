@@ -5,17 +5,11 @@ export default () => ui;
 
 ui.toggleClass = function (that, name) {
 
-    name = name.split(' ');
-
-    let arr;
-    let newArr;
-    let index;
-    let isSvgElements;
+    let arr, newArr, index, isSvgElements;
 
     const re = new RegExp('^\\s+|\\s+$');
-    const nodeList = ui.find(that);
 
-    nodeList.forEach(el => {
+    ui.find(that).forEach(el => {
 
         isSvgElements = ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1; // check SVG and own elements
 
@@ -26,7 +20,7 @@ ui.toggleClass = function (that, name) {
             arr = el.className.split(' ');
         }
 
-        name.forEach(item => {
+        name.split(' ').forEach(item => {
 
             newArr = arr;
             index = newArr.indexOf(item);
