@@ -22,12 +22,12 @@ ui.textareaCounter = {
 
 ui.textareaCounter.Start = () => {
 
-    function counter(t) {
+    function counter(el) {
 
         var p, v, total, length;
 
-        p = t.parentElement;
-        v = t.value;
+        p = el.parentElement;
+        v = el.value;
 
         total = p.getAttribute(ui.textareaCounter.dataCounter);
         length = (total - v.length);
@@ -37,7 +37,7 @@ ui.textareaCounter.Start = () => {
             length = 0;
 
             p.setAttribute(ui.textareaCounter.dataChange, '0');
-            t.value = v.substring(0, total);
+            el.value = v.substring(0, total);
 
         }
 

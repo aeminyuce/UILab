@@ -27,14 +27,10 @@ ui.onload(() => {
 
     if (ui.userAgents.ie) { return; } // change event listener for darkColorScheme not supported on IE!
 
-    var i, mode, doc, darkColorScheme, state, cookies, cookieName, setState;
-
-    mode = ui.darkMode.valueLight;
-    doc = ui.find(ui.darkMode.target)[0];
-
-    darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
     // set current theme color
+    let mode = ui.darkMode.valueLight;
+    const darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
     if (window.matchMedia) {
 
         if(darkColorScheme.matches) {
@@ -44,29 +40,29 @@ ui.onload(() => {
     }
 
     // check stored theme color
-    state = decodeURIComponent(document.cookie).split('; ');
-    for (i = 0; i < state.length; i++ ) {
+    decodeURIComponent(document.cookie).split('; ').forEach(item => {
 
-        cookies = state[i].split('=');
+        const cookies = item.split('=');
 
-        cookieName = cookies[0];
-        cookieName = cookieName.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+        let cookie = cookies[0];
+        cookie = cookie.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
 
-        if (cookieName === 'ui-darkMode') {
+        if (cookie === ui.darkMode.cookieName) {
             mode = cookies[1];
         }
 
-    }
-
-    doc.setAttribute(ui.darkMode.dataMod, mode);
+    });
 
     // Event Listeners
-    setState = function (mode) { // set theme state
+    const doc = ui.find(ui.darkMode.target)[0];
+    doc.setAttribute(ui.darkMode.dataMod, mode);
 
-        var d = new Date();
+    const setState = function (mode) { // set theme state
 
-        d.setTime(d.getTime() + ui.darkMode.cookieDays * (24 * 60 * 60 * 1000));
-        document.cookie = ui.darkMode.cookieName + '=' + mode + ';' + "expires=" + d.toUTCString();
+        const date = new Date();
+        date.setTime(date.getTime() + ui.darkMode.cookieDays * (24 * 60 * 60 * 1000));
+
+        document.cookie = ui.darkMode.cookieName + '=' + mode + ';' + "expires=" + date.toUTCString();
 
     };
 
@@ -75,9 +71,14 @@ ui.onload(() => {
 
         function () {
 
-            if(darkColorScheme.matches) { mode = ui.darkMode.valueDark; } else { mode= ui.darkMode.valueLight; }
-            doc.setAttribute(ui.darkMode.dataMod, mode);
+            if(darkColorScheme.matches) {
+                mode = ui.darkMode.valueDark;
 
+            } else {
+                mode= ui.darkMode.valueLight;
+            }
+
+            doc.setAttribute(ui.darkMode.dataMod, mode);
             setState(mode);
 
         });
@@ -92,9 +93,9 @@ ui.onload(() => {
             e.preventDefault();
 
             // toggle theme color
-            var current = doc.getAttribute(ui.darkMode.dataMod);
             ui.addClass(ui.effects.target, ui.effects.nameNoEffects);
 
+            const current = doc.getAttribute(ui.darkMode.dataMod);
             setTimeout(() => {
 
                 if (current !== null && current !== '') {

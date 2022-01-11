@@ -82,7 +82,7 @@ ui.datatable = {
 
 (() => {
 
-    var
+    let
         testStorage = true,
         startListID = 0,
 
@@ -90,7 +90,6 @@ ui.datatable = {
         showCount = [],
         pagingCount = [],
 
-        customLowerCase,
         temp = document.createDocumentFragment();
 
     // test for storage is supported?
@@ -101,43 +100,28 @@ ui.datatable = {
         testStorage = false;
     }
 
-    // custom lowercase
-    (() => {
+    const customLowerCase = (string) => { // custom lowercase
 
-        var k, re, chars, keys;
-        keys = Object.keys(ui.datatable.customLetters); // returns array
+        const keys = Object.keys(ui.datatable.customLetters); // returns array
 
-        chars = '(([';
-        for (k = 0; k < keys.length; k++) { chars += keys[k]; }
+        let chars = '(([';
+        for (let i = 0; i < keys.length; i++) { chars += keys[i]; }
         chars += ']))';
 
-        re = new RegExp(chars, 'g');
+        const re = new RegExp(chars, 'g');
 
-        customLowerCase = (string) => {
+        string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
+            return ui.datatable.customLetters[l];
+        });
 
-            string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
-                return ui.datatable.customLetters[l];
-            });
+        return string.toLowerCase();
 
-            return string.toLowerCase();
-
-        };
-
-    })();
+    };
 
     // create paging
     function createPaging(paging, id, listLength) {
 
-        var defaultClass, activeClass, classes, re, rex, html, total, i, min, max;
-
-        re = new RegExp('\\s+\\s');
-        rex = new RegExp('\\s+$');
-
-        defaultClass = paging[0].getAttribute(ui.datatable.dataDefault);
-        if (defaultClass === null) { defaultClass = ''; }
-
-        activeClass = paging[0].getAttribute(ui.datatable.dataActive);
-        if (activeClass === null) { activeClass = ''; }
+        let total, min, max;
 
         if (showCount[id] === undefined || showCount[id] === 0) {
             total = 1;
@@ -150,7 +134,10 @@ ui.datatable = {
         }
 
         if (pagingCount[id] < 1) { pagingCount[id] = 1; }
-        if (pagingCount[id] > total) { pagingCount[id] = total; }
+
+        if (pagingCount[id] > total) {
+            pagingCount[id] = total;
+        }
 
         if (pagingCount[id] === total) {
             min = pagingCount[id] - 2;
@@ -170,15 +157,34 @@ ui.datatable = {
 
         if (max > total) { max = total; }
 
-        classes = ui.datatable.namePrev + ' ' + defaultClass;
-        if (pagingCount[id] === 1) { classes += ' ' + ui.datatable.nameBtnPassive; }
+        let defaultClass = paging[0].getAttribute(ui.datatable.dataDefault);
+
+        if (defaultClass === null) {
+            defaultClass = '';
+        }
+
+        let activeClass = paging[0].getAttribute(ui.datatable.dataActive);
+
+        if (activeClass === null) {
+            activeClass = '';
+        }
+
+        let classes = ui.datatable.namePrev + ' ' + defaultClass;
+
+        if (pagingCount[id] === 1) {
+            classes += ' ' + ui.datatable.nameBtnPassive;
+        }
+
+        const re = new RegExp('\\s+\\s');
+        const rex = new RegExp('\\s+$');
 
         classes = classes.replace(re, ' ').replace(rex, '');
-        html = '<button class="' + classes + '">' +
+
+        let html = '<button class="' + classes + '">' +
                 '<svg class="' + ui.datatable.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.datatable.prevIcon + '"/></svg>' +
             '</button>\n';
 
-        for (i = min; i <= max; i++) {
+        for (let i = min; i <= max; i++) {
 
             if (i === pagingCount[id]) {
 
@@ -218,7 +224,7 @@ ui.datatable = {
     // loader
     function loadGrid(that, id) {
 
-        var i, list, paging, gridTotal, isEven, gridStriped;
+        let list;
 
         if (ui.hasClass(that, ui.datatable.nameListFiltered)) {
             list = ui.find('.' + ui.datatable.nameListContent + '.' + ui.datatable.nameFiltered, that);
@@ -228,7 +234,8 @@ ui.datatable = {
         }
 
         // paging
-        paging = ui.find('.' + ui.datatable.namePaging, that);
+        const paging = ui.find('.' + ui.datatable.namePaging, that);
+
         if (paging.length > 0) {
 
             if (pagingCount[id] === undefined || pagingCount[id] === 0) {
@@ -248,52 +255,48 @@ ui.datatable = {
         }
 
         // total grids
-        gridTotal = ui.find('.' + ui.datatable.nameTotal, that);
+        const gridTotal = ui.find('.' + ui.datatable.nameTotal, that);
 
         if (gridTotal.length > 0) {
             gridTotal[0].textContent = list.length;
         }
 
         // define even elements and visible grids
-        isEven = false;
-        gridStriped = ui.hasClass(that, ui.datatable.nameListStriped);
+        let isEven = false;
+        const gridStriped = ui.hasClass(that, ui.datatable.nameListStriped);
 
         ui.removeClass(ui.find('.' + ui.datatable.nameListContent + '.' + ui.datatable.nameShow, that), ui.datatable.nameShow);
 
-        function evenList(t) {
+        function evenList(el) {
 
             if (gridStriped) {
 
                 if (isEven) {
 
-                    ui.addClass(t, ui.datatable.nameEven);
+                    ui.addClass(el, ui.datatable.nameEven);
                     isEven = false;
 
                 } else {
 
-                    ui.removeClass(t, ui.datatable.nameEven);
+                    ui.removeClass(el, ui.datatable.nameEven);
                     isEven = true;
 
                 }
 
             }
 
-            ui.addClass(t, ui.datatable.nameShow);
+            ui.addClass(el, ui.datatable.nameShow);
 
         }
 
         if (showCount[id] > 0 && pagingCount[id] > 0) {
 
-            for (i = (pagingCount[id] - 1) * showCount[id]; i < pagingCount[id] * showCount[id]; i++) {
+            for (let i = (pagingCount[id] - 1) * showCount[id]; i < pagingCount[id] * showCount[id]; i++) {
                 evenList(list[i]);
             }
 
         } else {
-
-            for (i = 0; i < list.length; i++) {
-                evenList(list[i]);
-            }
-
+            list.forEach(item => { evenList(item); });
         }
 
         // empty variables
@@ -310,10 +313,8 @@ ui.datatable = {
 
         function () {
 
-            var that, id;
-
-            that = ui.closest(this, '.' + ui.datatable.target)[0];
-            id = that.getAttribute(ui.datatable.dataID);
+            const that = ui.closest(this, '.' + ui.datatable.target)[0];
+            const id = that.getAttribute(ui.datatable.dataID);
 
             if (ui.hasClass(this, ui.datatable.nameNext)) {
                 pagingCount[id] += 1;
@@ -337,10 +338,8 @@ ui.datatable = {
 
         function () {
 
-            var that, id;
-
-            that = ui.closest(this, '.' + ui.datatable.target)[0];
-            id = that.getAttribute(ui.datatable.dataID);
+            const that = ui.closest(this, '.' + ui.datatable.target)[0];
+            const id = that.getAttribute(ui.datatable.dataID);
 
             if (isNaN(Number(this.value))) {
 
@@ -373,34 +372,30 @@ ui.datatable = {
 
         function () {
 
-            var that, id, buttons, isAsc, gridContainer, list, sortIndex, sortType, arr, arrSorted;
-
-            that = ui.closest(this, '.' + ui.datatable.target)[0];
-            id = that.getAttribute(ui.datatable.dataID);
+            const that = ui.closest(this, '.' + ui.datatable.target)[0];
+            const id = that.getAttribute(ui.datatable.dataID);
 
             // modify buttons
-            buttons = ui.find('[' + ui.datatable.dataSort + ']', that);
+            let buttons = ui.find('[' + ui.datatable.dataSort + ']', that);
 
             ui.removeClass(buttons, ui.datatable.nameActive);
             ui.addClass(this, ui.datatable.nameActive);
 
-            ui.each(buttons,
+            buttons.forEach(el => {
 
-                function () {
+                if (!ui.hasClass(el, ui.datatable.nameActive)) {
 
-                    if (!ui.hasClass(this, ui.datatable.nameActive)) {
+                    ui.removeClass(el, ui.datatable.nameAsc + ' ' + ui.datatable.nameDesc);
+                    ui.find('.' + ui.datatable.nameIcon + ' use', el)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
 
-                        ui.removeClass(this, ui.datatable.nameAsc + ' ' + ui.datatable.nameDesc);
-                        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
+                }
 
-                    }
+            });
 
-                });
-
-            sortType = this.getAttribute(ui.datatable.dataType);
+            let sortType = this.getAttribute(ui.datatable.dataType);
             if (sortType === null) { sortType = ''; }
 
-            isAsc = ui.hasClass(this, ui.datatable.nameAsc);
+            const isAsc = ui.hasClass(this, ui.datatable.nameAsc);
 
             if (isAsc) {
 
@@ -430,46 +425,42 @@ ui.datatable = {
             }
 
             // sort
-            gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
+            const gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
 
-            list = ui.find('.' + ui.datatable.nameListContent, gridContainer);
-            ui.each(list,
+            ui.find('.' + ui.datatable.nameListContent, gridContainer).forEach(el => {
+                temp.appendChild(el);
+            });
 
-                function () {
-                    temp.appendChild(this);
-                });
+            let arr = [];
+            let arrSorted = [];
 
-            arr = [];
-            arrSorted = [];
-
-            sortIndex = this.getAttribute(ui.datatable.dataSort);
+            let sortIndex = this.getAttribute(ui.datatable.dataSort);
 
             if (sortIndex === null || sortIndex === '' || sortIndex === '0') {
                 sortIndex = 0;
 
-            } else { sortIndex = Number(sortIndex) - 1; }
+            } else {
+                sortIndex = Number(sortIndex) - 1;
+            }
 
-            list = ui.find('.' + ui.datatable.nameListContent, temp);
-            ui.each(list,
+            let list = ui.find('.' + ui.datatable.nameListContent, temp);
+            list.forEach(el => {
 
-                function () {
+                let val = el.getAttribute(ui.datatable.dataVal);
+                if (val !== null && val !== '') {
 
-                    var val = this.getAttribute(ui.datatable.dataVal);
+                    val = val.split(ui.datatable.valueSplit)[sortIndex];
 
-                    if (val !== null && val !== '') {
-
-                        val = val.split(ui.datatable.valueSplit)[sortIndex];
-
-                        if (sortType !== ui.datatable.sortTypeNumber) {
-                            val = customLowerCase(val);
-                        }
-
-                        arr.push(val);
-                        arrSorted.push(val);
-
+                    if (sortType !== ui.datatable.sortTypeNumber) {
+                        val = customLowerCase(val);
                     }
 
-                });
+                    arr.push(val);
+                    arrSorted.push(val);
+
+                }
+
+            });
 
             if (isAsc) {
 
@@ -491,14 +482,12 @@ ui.datatable = {
 
             }
 
-            ui.each(list,
+            for (let i = 0; i < list.length; i++) {
 
-                function (i) {
+                temp.appendChild(list[arr.indexOf(arrSorted[i])]);
+                arr[arr.indexOf(arrSorted[i])] = '';
 
-                    temp.appendChild(list[arr.indexOf(arrSorted[i])]);
-                    arr[arr.indexOf(arrSorted[i])] = '';
-
-                });
+            }
 
             // load sorted grids
             gridContainer.appendChild(temp);
@@ -518,172 +507,163 @@ ui.datatable = {
     // filter
     function gridFilter(that, firstLoading) {
 
-        var id, filters, val, vals, index, sortType, sortIndex, indexes, list, gridContainer, j, contentVal, contentArr, activeFilters, passed, checkAll;
+        let contentArr, contentVal;
 
-        id = that.getAttribute(ui.datatable.dataID);
+        let vals = [];
+        let indexes = [];
 
-        vals = [];
-        indexes = [];
+        const id = that.getAttribute(ui.datatable.dataID);
 
         // read all filter values
-        filters = ui.find('.' + ui.datatable.nameFilter, that);
-        ui.each(filters,
+        ui.find('.' + ui.datatable.nameFilter, that).forEach((el, i) => {
 
-            function (i) {
+            if (firstLoading) {
 
-                if (firstLoading) {
+                vals = loadedVals[id].split(',');
 
-                    vals = loadedVals[id].split(',');
+                if (el.type === 'checkbox' || el.type === 'radio') {
 
-                    if (this.type === 'checkbox' || this.type === 'radio') {
-                        if (vals[i] !== '') { this.checked = true; }
+                    if (vals[i] !== '') {
+                        el.checked = true;
+                    }
 
-                    } else if (this.tagName === 'SELECT') {
-                        for (j = 0; j < this.options.length; j++) {
+                } else if (el.tagName === 'SELECT') {
 
-                            if (customLowerCase(this.options[j].innerText) === vals[i]) {
+                    el.options.forEach(item => {
 
-                                index = Array.prototype.slice.call(this.options).indexOf(this.options[j]);
-                                this.selectedIndex = index;
+                        if (customLowerCase(item.innerText) === vals[i]) {
 
-                            }
+                            const index = Array.prototype.slice.call(el.options).indexOf(item);
+                            el.selectedIndex = index;
 
                         }
 
-                    } else {
-                        this.value = vals[i];
+                    });
+
+                } else { el.value = vals[i]; }
+
+            } else {
+
+                let val = '';
+
+                if (el.type === 'checkbox' || el.type === 'radio') {
+
+                    if (el.checked) {
+                        val = el.value;
                     }
 
-                } else {
+                } else { val = el.value; }
 
-                    val = '';
+                val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
 
-                    if (this.type === 'checkbox' || this.type === 'radio') {
-                        if (this.checked) { val = this.value; }
+                let sortType = el.getAttribute(ui.datatable.dataType);
 
-                    } else {
-                        val = this.value;
-                    }
-
-                    val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
-
-                    sortType = this.getAttribute(ui.datatable.dataType);
-                    if (sortType === null) { sortType = ''; }
-
-                    if (sortType === ui.datatable.sortTypeNumber) {
-                        vals.push(val);
-
-                    } else {
-                        vals.push(customLowerCase(val));
-                    }
-
+                if (sortType === null) {
+                    sortType = '';
                 }
 
-                sortIndex = this.getAttribute(ui.datatable.dataIndex);
-                if (sortIndex !== null) {
+                if (sortType === ui.datatable.sortTypeNumber) {
+                    vals.push(val);
 
-                    if (sortIndex === '' || sortIndex === '0') {
-                        sortIndex = 0;
-
-                    } else {
-                        sortIndex = Number(sortIndex) - 1;
-                    }
-
-                    indexes.push(sortIndex);
-
-                } else { indexes.push(''); }
-
-            });
-
-        // filter
-        if (vals.length > 0) {
-
-            activeFilters = vals.filter((filterVal) => filterVal !== '');
-            gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
-
-            list = ui.find('.' + ui.datatable.nameListContent, gridContainer);
-            ui.each(list,
-
-                function () {
-                    temp.appendChild(this);
-                });
-
-            list = ui.find('.' + ui.datatable.nameListContent, temp);
-
-            // remove checked
-            checkAll = ui.find('.' + ui.datatable.nameCheckAll, that);
-
-            if (checkAll.length > 0) {
-
-                ui.each(checkAll,
-
-                    function () {
-                        this.checked = false;
-                    });
+                } else {
+                    vals.push(customLowerCase(val));
+                }
 
             }
 
-            ui.each(list,
+            let sortIndex = el.getAttribute(ui.datatable.dataIndex);
+            if (sortIndex !== null) {
 
-                function () {
+                if (sortIndex === '' || sortIndex === '0') {
+                    sortIndex = 0;
 
-                    if (ui.hasClass(this, ui.datatable.nameChecked)) {
+                } else {
+                    sortIndex = Number(sortIndex) - 1;
+                }
 
-                        ui.removeClass(this, ui.datatable.nameChecked);
-                        ui.find('.' + ui.datatable.nameCheck, this)[0].checked = false;
+                indexes.push(sortIndex);
 
-                    }
+            } else { indexes.push(''); }
 
-                });
+        });
+
+        // filter
+        let list;
+        if (vals.length > 0) {
+
+            const activeFilters = vals.filter((filterVal) => filterVal !== '');
+            const gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
+
+            ui.find('.' + ui.datatable.nameListContent, gridContainer).forEach(el => {
+                temp.appendChild(el);
+            });
+
+            // remove checked
+            const checkAll = ui.find('.' + ui.datatable.nameCheckAll, that);
+
+            if (checkAll.length > 0) {
+                checkAll.forEach(item => { item.checked = false; });
+            }
+
+            list = ui.find('.' + ui.datatable.nameListContent, temp);
+            list.forEach(el => {
+
+                if (ui.hasClass(el, ui.datatable.nameChecked)) {
+
+                    ui.removeClass(el, ui.datatable.nameChecked);
+                    ui.find('.' + ui.datatable.nameCheck, el)[0].checked = false;
+
+                }
+
+            });
 
             if (activeFilters.length > 0) {
 
                 ui.addClass(that, ui.datatable.nameListFiltered);
-                ui.each(list,
 
-                    function () {
+                list.forEach(el => {
 
-                        passed = [];
+                    let passed = [];
 
-                        contentVal = this.getAttribute(ui.datatable.dataVal);
+                    contentVal = el.getAttribute(ui.datatable.dataVal);
 
-                        if (contentVal !== null && contentVal !== '') {
+                    if (contentVal !== null && contentVal !== '') {
 
-                            contentVal = customLowerCase(contentVal);
-                            contentArr = contentVal.split(ui.datatable.valueSplit);
+                        contentVal = customLowerCase(contentVal);
+                        contentArr = contentVal.split(ui.datatable.valueSplit);
 
-                            for (j = 0; j < vals.length; j++) {
+                        vals.forEach((item, j) => {
 
-                                if (vals[j] !== '') {
+                            if (item !== '') {
 
-                                    if (indexes[j] === '') {
+                                if (indexes[j] === '') {
 
-                                        if (contentVal.replace(/\|/g, ' ').match(vals[j]) !== null) { // contain
-                                            passed.push('pass');
-                                        }
+                                    if (contentVal.replace(/\|/g, ' ').match(item) !== null) { // contain
+                                        passed.push('pass');
+                                    }
 
-                                    } else {
+                                } else {
 
-                                        if (contentArr[indexes[j]] === vals[j]) { // equal
-                                            passed.push('pass');
-                                        }
-
+                                    if (contentArr[indexes[j]] === item) { // equal
+                                        passed.push('pass');
                                     }
 
                                 }
 
                             }
 
-                        }
+                        });
 
-                        if (activeFilters.length === passed.length) {
-                            ui.addClass(this, ui.datatable.nameFiltered);
+                    }
 
-                        } else {
-                            ui.removeClass(this, ui.datatable.nameFiltered);
-                        }
+                    if (activeFilters.length === passed.length) {
+                        ui.addClass(el, ui.datatable.nameFiltered);
 
-                    });
+                    } else {
+                        ui.removeClass(el, ui.datatable.nameFiltered);
+                    }
+
+                });
 
             } else {
 
@@ -710,7 +690,6 @@ ui.datatable = {
         indexes = [];
         contentArr = [];
 
-        filters = '';
         list = '';
         contentVal = '';
 
@@ -723,7 +702,7 @@ ui.datatable = {
 
         function () {
 
-            var that = ui.closest(this, '.' + ui.datatable.target)[0];
+            const that = ui.closest(this, '.' + ui.datatable.target)[0];
             gridFilter(that, false);
 
         });
@@ -735,7 +714,7 @@ ui.datatable = {
 
         function () {
 
-            var that = ui.closest(this, '.' + ui.datatable.target)[0];
+            const that = ui.closest(this, '.' + ui.datatable.target)[0];
             gridFilter(that, false);
 
         });
@@ -748,21 +727,14 @@ ui.datatable = {
 
         function () {
 
-            var that, list, form, checked, checkFnc, uncheckFnc;
+            const checkFnc = (el) => {
 
-            that = ui.closest(this, '.' + ui.datatable.target)[0];
-            list = ui.find('.' + ui.datatable.nameListContent, that);
+                if (!ui.hasClass(el, ui.datatable.nameChecked)) {
 
-            checked = this.checked;
-
-            checkFnc = function (t) {
-
-                if (!ui.hasClass(t, ui.datatable.nameChecked)) {
-
-                    form = ui.find('.' + ui.datatable.nameCheck, t)[0];
+                    const form = ui.find('.' + ui.datatable.nameCheck, el)[0];
                     if (form !== undefined) {
 
-                        ui.addClass(t, ui.datatable.nameChecked);
+                        ui.addClass(el, ui.datatable.nameChecked);
                         form.checked = true;
 
                     }
@@ -771,14 +743,14 @@ ui.datatable = {
 
             };
 
-            uncheckFnc = function (t) {
+            const uncheckFnc = (el) => {
 
-                if (ui.hasClass(t, ui.datatable.nameChecked)) {
+                if (ui.hasClass(el, ui.datatable.nameChecked)) {
 
-                    form = ui.find('.' + ui.datatable.nameCheck, t)[0];
+                    const form = ui.find('.' + ui.datatable.nameCheck, el)[0];
                     if (form !== undefined) {
 
-                        ui.removeClass(t, ui.datatable.nameChecked);
+                        ui.removeClass(el, ui.datatable.nameChecked);
                         form.checked = false;
 
                     }
@@ -787,24 +759,25 @@ ui.datatable = {
 
             };
 
-            ui.each(list,
+            const that = ui.closest(this, '.' + ui.datatable.target)[0];
+            const checked = this.checked;
 
-                function () {
+            ui.find('.' + ui.datatable.nameListContent, that).forEach(el => {
 
-                    if (checked) {
+                if (checked) {
 
-                        if (ui.hasClass(that, ui.datatable.nameListFiltered)) {
+                    if (ui.hasClass(that, ui.datatable.nameListFiltered)) {
 
-                            if (ui.hasClass(this, ui.datatable.nameFiltered)) {
-                                checkFnc(this);
+                        if (ui.hasClass(el, ui.datatable.nameFiltered)) {
+                            checkFnc(el);
 
-                            } else { uncheckFnc(this); }
+                        } else { uncheckFnc(el); }
 
-                        } else { checkFnc(this); }
+                    } else { checkFnc(el); }
 
-                    } else { uncheckFnc(this); }
+                } else { uncheckFnc(el); }
 
-                });
+            });
 
         });
 
@@ -815,10 +788,8 @@ ui.datatable = {
 
         function () {
 
-            var that, list, checkAll;
-
-            that = ui.closest(that, '.' + ui.datatable.target)[0];
-            list = ui.closest(this, '.' + ui.datatable.nameListContent)[0];
+            const that = ui.closest(that, '.' + ui.datatable.target)[0];
+            const list = ui.closest(this, '.' + ui.datatable.nameListContent)[0];
 
             if (this.checked) {
                 ui.addClass(list, ui.datatable.nameChecked);
@@ -826,7 +797,8 @@ ui.datatable = {
             } else {
 
                 ui.removeClass(list, ui.datatable.nameChecked);
-                checkAll = ui.find('.' + ui.datatable.nameCheckAll, that)[0];
+
+                const checkAll = ui.find('.' + ui.datatable.nameCheckAll, that)[0];
 
                 if (ui.find('.' + ui.datatable.nameCheckAll, that)[0] !== undefined) {
                     checkAll.checked = false;
@@ -839,79 +811,75 @@ ui.datatable = {
     // first loading
     ui.datatable.Start = () => {
 
-        ui.each('.' + ui.datatable.target + ':not(.' + ui.datatable.targetLoaded + ')',
+        ui.find('.' + ui.datatable.target + ':not(.' + ui.datatable.targetLoaded + ')').forEach(el => {
 
-            function () {
+            // define id
+            startListID += 1;
 
-                var id, gridShow, index, i;
+            const id = ui.datatable.listIdNaming + startListID;
+            el.setAttribute(ui.datatable.dataID, id);
 
-                // define id
-                startListID += 1;
-                id = ui.datatable.listIdNaming + startListID;
+            // check stored variables
+            if (testStorage && sessionStorage !== undefined) {
 
-                this.setAttribute(ui.datatable.dataID, id);
+                loadedVals[id] = sessionStorage.getItem(ui.datatable.storageVals + id);
+                showCount[id] = Number(sessionStorage.getItem(ui.datatable.storageShow + id));
+                pagingCount[id] = Number(sessionStorage.getItem(ui.datatable.storagePaging + id));
 
-                // check stored variables
-                if (testStorage && sessionStorage !== undefined) {
+            }
 
-                    loadedVals[id] = sessionStorage.getItem(ui.datatable.storageVals + id);
-                    showCount[id] = Number(sessionStorage.getItem(ui.datatable.storageShow + id));
-                    pagingCount[id] = Number(sessionStorage.getItem(ui.datatable.storagePaging + id));
+            // calculate show
+            const gridShow = ui.find('select.' + ui.datatable.nameListShow, el)[0];
+            if (showCount[id] === 0) {
 
-                }
+                if (gridShow !== undefined) {
 
-                // calculate show
-                gridShow = ui.find('select.' + ui.datatable.nameListShow, this)[0];
-                if (showCount[id] === 0) {
+                    if (showCount[id] === undefined || showCount[id] === 0) {
 
-                    if (gridShow !== undefined) {
+                        if (isNaN(Number(gridShow.value))) {
 
-                        if (showCount[id] === undefined || showCount[id] === 0) {
+                            showCount[id] = 0;
+                            pagingCount[id] = 1;
 
-                            if (isNaN(Number(gridShow.value))) {
+                            ui.addClass(el, ui.datatable.nameListShowAll);
 
-                                showCount[id] = 0;
-                                pagingCount[id] = 1;
-
-                                ui.addClass(this, ui.datatable.nameListShowAll);
-
-                            } else {
-                                showCount[id] = gridShow.value;
-                            }
-
-                        }
-
-                    }
-
-                } else {
-
-                    for (i = 0; i < gridShow.options.length; i++) {
-
-                        if (Number(customLowerCase(gridShow.options[i].innerText)) === showCount[id]) {
-
-                            index = Array.prototype.slice.call(gridShow.options).indexOf(gridShow.options[i]);
-                            gridShow.selectedIndex = index;
-
+                        } else {
+                            showCount[id] = gridShow.value;
                         }
 
                     }
 
                 }
 
-                // load values
-                if (loadedVals[id] !== undefined && loadedVals[id] !== null) {
+            } else {
 
-                    if (loadedVals[id].length > 0) {
-                        gridFilter(this, true);
+                gridShow.options.length.forEach(item => {
+
+                    if (Number(customLowerCase(item.innerText)) === showCount[id]) {
+
+                        const index = Array.prototype.slice.call(gridShow.options).indexOf(item);
+                        gridShow.selectedIndex = index;
+
                     }
 
+                });
+
+            }
+
+            // load values
+            if (loadedVals[id] !== undefined && loadedVals[id] !== null) {
+
+                if (loadedVals[id].length > 0) {
+                    gridFilter(el, true);
                 }
 
-                // load grids
-                ui.addClass(this, ui.datatable.targetLoaded);
-                loadGrid(this, id);
+            }
 
-            });
+            // load grids
+            ui.addClass(el, ui.datatable.targetLoaded);
+            loadGrid(el, id);
+
+        });
 
     };
 
@@ -924,24 +892,21 @@ ui.datatable = {
             if (testStorage && sessionStorage !== undefined) {
 
                 if (window.performance) {
+
                     if (performance.navigation.type !== 1) { // The Navigation Timing API: if === 1 means page refreshed
 
-                        var gridLists, id;
-                        gridLists = ui.find('.' + ui.datatable.target);
+                        ui.find('.' + ui.datatable.target).forEach(item => {
 
-                        ui.each(gridLists,
+                            const id = item.getAttribute(ui.datatable.dataID);
 
-                            function () {
+                            sessionStorage.setItem(ui.datatable.storageVals + id, '');
+                            sessionStorage.setItem(ui.datatable.storageShow + id, 0);
+                            sessionStorage.setItem(ui.datatable.storagePaging + id, 0);
 
-                                id = this.getAttribute(ui.datatable.dataID);
-
-                                sessionStorage.setItem(ui.datatable.storageVals + id, '');
-                                sessionStorage.setItem(ui.datatable.storageShow + id, 0);
-                                sessionStorage.setItem(ui.datatable.storagePaging + id, 0);
-
-                            });
+                        });
 
                     }
+
                 }
 
             }

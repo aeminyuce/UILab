@@ -65,18 +65,18 @@ ui.requiredForms.Start = () => {
 
         };
 
-        checkForms = function (t) {
+        checkForms = function (el) {
 
             // show error
             showErr = function () {
 
-                if (t.type === 'radio') {
+                if (el.type === 'radio') {
 
                     radios = ui.find('[type="radio"][name="' + that.name + '"]');
                     ui.removeClass(radios, ui.requiredForms.nameSuccess);
 
                 } else {
-                    ui.removeClass(t, ui.requiredForms.nameSuccess);
+                    ui.removeClass(el, ui.requiredForms.nameSuccess);
                 }
 
                 ui.addClass(p, ui.requiredForms.nameError);
@@ -90,17 +90,17 @@ ui.requiredForms.Start = () => {
             // check value
             if (type !== ui.requiredForms.targetAccept) {
 
-                val = t.value.toLowerCase();
+                val = el.value.toLowerCase();
                 val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
 
                 if (val === '') { showErr(); }
 
             } else {
 
-                if (t.type === 'radio') {
+                if (el.type === 'radio') {
 
                     radiosCheck = 0;
-                    radios = ui.find('[type="radio"][name="' + t.name + '"]');
+                    radios = ui.find('[type="radio"][name="' + el.name + '"]');
 
                     for (i = 0; i < radios.length; i++) {
                         if (radios[i].checked) { radiosCheck += 1; }
@@ -110,9 +110,9 @@ ui.requiredForms.Start = () => {
 
                 } else {
 
-                    if (!t.checked) {
+                    if (!el.checked) {
 
-                        if (ui.hasClass(t, ui.requiredForms.nameIndeterminate) && t.indeterminate) {
+                        if (ui.hasClass(el, ui.requiredForms.nameIndeterminate) && el.indeterminate) {
                             return;
                         }
                         showErr();
@@ -126,7 +126,7 @@ ui.requiredForms.Start = () => {
             // check min
             if (type !== ui.requiredForms.nameSelect) {
 
-                min = t.getAttribute('minlength');
+                min = el.getAttribute('minlength');
 
                 if (min !== null && min !== '' && !isNaN(min)) {
                     if (val.length < min) { showErr(); }
@@ -137,7 +137,7 @@ ui.requiredForms.Start = () => {
             // check min and max numbers
             if (type !== ui.requiredForms.nameSelect) {
 
-                min = t.getAttribute('minnumber');
+                min = el.getAttribute('minnumber');
                 if (min !== null && min !== '' && !isNaN(min)) {
 
                     if (!isNaN(val)) {
@@ -146,7 +146,7 @@ ui.requiredForms.Start = () => {
 
                 }
 
-                max = t.getAttribute('maxnumber');
+                max = el.getAttribute('maxnumber');
                 if (max !== null && max !== '' && !isNaN(max)) {
 
                     if (!isNaN(val)) {

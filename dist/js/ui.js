@@ -83,7 +83,7 @@ ui.find = function (item, outer) {
   return document.querySelectorAll(item);
 };
 
-ui.on = function (t, e, that, callback) {
+ui.on = function (self, e, that, callback) {
   var set = function set(e) {
     if (typeof t === 'string' && e === undefined) {
       return;
@@ -114,8 +114,8 @@ ui.on = function (t, e, that, callback) {
       callFnc = that;
       var ua = navigator.userAgent.toLowerCase();
 
-      if (t instanceof Object && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') {
-        isWindowEvent = Object.prototype.toString.call(t) === '[object Window]';
+      if (self instanceof Object && !NodeList.prototype.isPrototypeOf(self) && typeof e === 'string') {
+        isWindowEvent = Object.prototype.toString.call(self) === '[object Window]';
 
         if (isWindowEvent) {
           if (ua.indexOf("MSIE ") > 0 || !!document.documentMode || ua.indexOf('edge') > -1) {
@@ -125,7 +125,7 @@ ui.on = function (t, e, that, callback) {
           }
         }
 
-        var objName = Object.prototype.toString.call(t);
+        var objName = Object.prototype.toString.call(self);
 
         if (objName === '[object HTMLDocument]' || objName === '[object Document]') {
           customEvent = true;
@@ -169,7 +169,7 @@ ui.on = function (t, e, that, callback) {
       }
     };
 
-    var l = ui.find(t);
+    var l = ui.find(self);
 
     if (isWindowEvent) {
       handlerFnc(l, e);
@@ -608,10 +608,8 @@ ui.onload(function () {
     return;
   }
 
-  var i, mode, doc, darkColorScheme, state, cookies, cookieName, setState;
-  mode = ui.darkMode.valueLight;
-  doc = ui.find(ui.darkMode.target)[0];
-  darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+  var mode = ui.darkMode.valueLight;
+  var darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
   if (window.matchMedia) {
     if (darkColorScheme.matches) {
@@ -619,24 +617,22 @@ ui.onload(function () {
     }
   }
 
-  state = decodeURIComponent(document.cookie).split('; ');
+  decodeURIComponent(document.cookie).split('; ').forEach(function (item) {
+    var cookies = item.split('=');
+    var cookie = cookies[0];
+    cookie = cookie.replace(/^\s+|\s+$/g, '');
 
-  for (i = 0; i < state.length; i++) {
-    cookies = state[i].split('=');
-    cookieName = cookies[0];
-    cookieName = cookieName.replace(/^\s+|\s+$/g, '');
-
-    if (cookieName === 'ui-darkMode') {
+    if (cookie === ui.darkMode.cookieName) {
       mode = cookies[1];
     }
-  }
-
+  });
+  var doc = ui.find(ui.darkMode.target)[0];
   doc.setAttribute(ui.darkMode.dataMod, mode);
 
-  setState = function setState(mode) {
-    var d = new Date();
-    d.setTime(d.getTime() + ui.darkMode.cookieDays * (24 * 60 * 60 * 1000));
-    document.cookie = ui.darkMode.cookieName + '=' + mode + ';' + "expires=" + d.toUTCString();
+  var setState = function setState(mode) {
+    var date = new Date();
+    date.setTime(date.getTime() + ui.darkMode.cookieDays * (24 * 60 * 60 * 1000));
+    document.cookie = ui.darkMode.cookieName + '=' + mode + ';' + "expires=" + date.toUTCString();
   };
 
   ui.on(darkColorScheme, 'change', function () {
@@ -651,8 +647,8 @@ ui.onload(function () {
   });
   ui.on(document, 'click', '.' + ui.darkMode.nameToggle, function (e) {
     e.preventDefault();
-    var current = doc.getAttribute(ui.darkMode.dataMod);
     ui.addClass(ui.effects.target, ui.effects.nameNoEffects);
+    var current = doc.getAttribute(ui.darkMode.dataMod);
     setTimeout(function () {
       if (current !== null && current !== '') {
         if (current === ui.darkMode.valueDark) {
@@ -1358,11 +1354,10 @@ ui.autocomplete = {
 };
 
 ui.autocomplete.Start = function () {
-  var customLowerCase,
-      formEventListeners,
+  var formEventListeners,
       autocompleteRequests = [];
 
-  (function () {
+  var customLowerCase = function customLowerCase(string) {
     var keys = Object.keys(ui.autocomplete.customLetters);
     var chars = '(([';
 
@@ -1372,14 +1367,11 @@ ui.autocomplete.Start = function () {
 
     chars += ']))';
     var re = new RegExp(chars, 'g');
-
-    customLowerCase = function customLowerCase(string) {
-      string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
-        return ui.autocomplete.customLetters[l];
-      });
-      return string.toLowerCase();
-    };
-  })();
+    string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
+      return ui.autocomplete.customLetters[l];
+    });
+    return string.toLowerCase();
+  };
 
   formEventListeners = ui.find('.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + ' > [type="text"]');
   ui.on(document, 'keyup', formEventListeners, function (e) {
@@ -1616,16 +1608,13 @@ ui.currencySpinner = {
   var cacheCurrencySpinner;
 
   ui.currencySpinner.Start = function () {
-    var convert;
-
-    convert = function convert(s) {
-      var regDecimal, regClear, number, decimal;
-      regDecimal = new RegExp(/(\,+\d+)/g);
-      regClear = new RegExp(/(\s)|(\.)|(\,)/g);
+    var convert = function convert(s) {
+      var regDecimal = new RegExp(/(\,+\d+)/g);
+      var regClear = new RegExp(/(\s)|(\.)|(\,)/g);
 
       if (ui.currencySpinner.decimals) {
-        number = s.replace(regDecimal, '');
-        decimal = s.match(regDecimal);
+        var number = s.replace(regDecimal, '');
+        var decimal = s.match(regDecimal);
 
         if (decimal === null) {
           decimal = '0';
@@ -1650,17 +1639,16 @@ ui.currencySpinner = {
     }
 
     function currencyChange(that) {
-      var p, input, val, min, step, nav;
-      nav = [];
-      p = ui.closest(that, '.' + ui.currencySpinner.target);
-      input = ui.find('[type="text"]', p);
-      val = convert(input.value);
+      var parent = ui.closest(that, '.' + ui.currencySpinner.target);
+      var input = ui.find('[type="text"]', parent);
+      var nav = [];
       nav.up = ui.hasClass(that, ui.currencySpinner.nameUp);
       nav.down = ui.hasClass(that, ui.currencySpinner.nameDown);
+      var val = convert(input.value);
 
       if (nav.up || nav.down) {
-        step = convert(input.getAttribute('step'));
-        min = convert(input.getAttribute('min'));
+        var step = convert(input.getAttribute('step'));
+        var min = convert(input.getAttribute('min'));
 
         if (nav.up) {
           if (ui.currencySpinner.decimals) {
@@ -1713,27 +1701,27 @@ ui.currencySpinner = {
       currencyChange(this);
     });
     ui.on(document, 'keypress', '.' + ui.currencySpinner.target + ' input[type="text"]', function (e) {
-      var c,
-          isRefresh = false;
+      var char, ignoreList;
+      var isRefresh = false;
 
       if (e.which) {
-        c = e.which;
+        char = e.which;
       } else {
-        c = e.keyCode;
+        char = e.keyCode;
 
-        if (c === 116) {
+        if (char === 116) {
           isRefresh = true;
         }
       }
 
+      ignoreList = [8, 9, 35, 36, 37, 39];
+
       if (ui.currencySpinner.decimals) {
-        if (c !== 8 && c !== 9 && c !== 35 && c !== 36 && c !== 37 && c !== 39 && c !== 44 && !isRefresh && (c < 48 || c > 57)) {
-          e.preventDefault();
-        }
-      } else {
-        if (c !== 8 && c !== 9 && c !== 35 && c !== 36 && c !== 37 && c !== 39 && !isRefresh && (c < 48 || c > 57)) {
-          e.preventDefault();
-        }
+        ignoreList.push(44);
+      }
+
+      if (ignoreList.includes(char) === -1 && !isRefresh && (char < 48 || char > 57)) {
+        e.preventDefault();
       }
     });
     ui.on(document, 'focus', '.' + ui.currencySpinner.target + ' input[type="text"]', function () {
@@ -1755,9 +1743,8 @@ ui.currencySpinner = {
       }
 
       if (e.type === 'blur') {
-        var input, min;
-        input = ui.find('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameInput + ' input')[0];
-        min = convert(input.getAttribute('min'));
+        var input = ui.find('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameInput + ' input')[0];
+        var min = convert(input.getAttribute('min'));
 
         if (convert(input.value) < min) {
           input.value = locales(min);
@@ -2022,10 +2009,10 @@ ui.forms = {
   var clearForms;
 
   ui.forms.Start = function () {
-    function formFocus(t, type) {
+    function formFocus(that, type) {
       var i, parent, classes, holder;
       classes = [ui.forms.targetText, ui.forms.targetSelect, ui.forms.targetSelectMulti, ui.forms.targetTextarea];
-      holder = ui.closest(t, '.' + ui.forms.nameHolder);
+      holder = ui.closest(that, '.' + ui.forms.nameHolder);
 
       if (holder.length === 1) {
         ui.removeClass('.' + ui.forms.nameHolderFocus, ui.forms.nameHolderFocus);
@@ -2038,7 +2025,7 @@ ui.forms = {
       }
 
       for (i = 0; i < classes.length; i++) {
-        parent = ui.closest(t, '.' + classes[i]);
+        parent = ui.closest(that, '.' + classes[i]);
 
         if (parent.length === 1) {
           if (type === 'add') {
@@ -2293,13 +2280,13 @@ ui.requiredForms.Start = function () {
       }
     };
 
-    checkForms = function checkForms(t) {
+    checkForms = function checkForms(el) {
       showErr = function showErr() {
-        if (t.type === 'radio') {
+        if (el.type === 'radio') {
           radios = ui.find('[type="radio"][name="' + that.name + '"]');
           ui.removeClass(radios, ui.requiredForms.nameSuccess);
         } else {
-          ui.removeClass(t, ui.requiredForms.nameSuccess);
+          ui.removeClass(el, ui.requiredForms.nameSuccess);
         }
 
         ui.addClass(p, ui.requiredForms.nameError);
@@ -2310,16 +2297,16 @@ ui.requiredForms.Start = function () {
       };
 
       if (type !== ui.requiredForms.targetAccept) {
-        val = t.value.toLowerCase();
+        val = el.value.toLowerCase();
         val = val.replace(/^\s+|\s+$/g, '');
 
         if (val === '') {
           showErr();
         }
       } else {
-        if (t.type === 'radio') {
+        if (el.type === 'radio') {
           radiosCheck = 0;
-          radios = ui.find('[type="radio"][name="' + t.name + '"]');
+          radios = ui.find('[type="radio"][name="' + el.name + '"]');
 
           for (i = 0; i < radios.length; i++) {
             if (radios[i].checked) {
@@ -2331,8 +2318,8 @@ ui.requiredForms.Start = function () {
             showErr();
           }
         } else {
-          if (!t.checked) {
-            if (ui.hasClass(t, ui.requiredForms.nameIndeterminate) && t.indeterminate) {
+          if (!el.checked) {
+            if (ui.hasClass(el, ui.requiredForms.nameIndeterminate) && el.indeterminate) {
               return;
             }
 
@@ -2342,7 +2329,7 @@ ui.requiredForms.Start = function () {
       }
 
       if (type !== ui.requiredForms.nameSelect) {
-        min = t.getAttribute('minlength');
+        min = el.getAttribute('minlength');
 
         if (min !== null && min !== '' && !isNaN(min)) {
           if (val.length < min) {
@@ -2352,7 +2339,7 @@ ui.requiredForms.Start = function () {
       }
 
       if (type !== ui.requiredForms.nameSelect) {
-        min = t.getAttribute('minnumber');
+        min = el.getAttribute('minnumber');
 
         if (min !== null && min !== '' && !isNaN(min)) {
           if (!isNaN(val)) {
@@ -2364,7 +2351,7 @@ ui.requiredForms.Start = function () {
           }
         }
 
-        max = t.getAttribute('maxnumber');
+        max = el.getAttribute('maxnumber');
 
         if (max !== null && max !== '' && !isNaN(max)) {
           if (!isNaN(val)) {
@@ -2502,17 +2489,17 @@ ui.textareaCounter = {
 };
 
 ui.textareaCounter.Start = function () {
-  function counter(t) {
+  function counter(el) {
     var p, v, total, length;
-    p = t.parentElement;
-    v = t.value;
+    p = el.parentElement;
+    v = el.value;
     total = p.getAttribute(ui.textareaCounter.dataCounter);
     length = total - v.length;
 
     if (length <= 0) {
       length = 0;
       p.setAttribute(ui.textareaCounter.dataChange, '0');
-      t.value = v.substring(0, total);
+      el.value = v.substring(0, total);
     }
 
     ui.addClass(p, ui.textareaCounter.nameChange);
@@ -4351,33 +4338,34 @@ ui.countdown = {
   var countdownTimer;
 
   ui.countdown.Start = function () {
-    var countdown, arr, calc;
-    countdown = ui.find('.' + ui.countdown.target);
+    var countdown = ui.find('.' + ui.countdown.target);
 
     if (ui.countdown.length === 0) {
       return;
     }
 
-    arr = [];
-    ui.each(countdown, function (i) {
-      var date, day, hour, minute, sec;
-      date = new Date();
-      day = ui.find('.' + ui.countdown.nameDay, this)[0];
-      hour = ui.find('.' + ui.countdown.nameHour, this)[0];
-      minute = ui.find('.' + ui.countdown.nameMinute, this)[0];
-      sec = ui.find('.' + ui.countdown.nameSecond, this)[0];
+    var arr = [];
+    countdown.forEach(function (el, i) {
+      var date = new Date();
+      var day = ui.find('.' + ui.countdown.nameDay, el)[0];
 
       if (day !== undefined) {
         date.setDate(date.getDate() + Number(day.textContent));
       }
 
+      var hour = ui.find('.' + ui.countdown.nameHour, el)[0];
+
       if (hour !== undefined) {
         date.setHours(date.getHours() + Number(hour.textContent));
       }
 
+      var minute = ui.find('.' + ui.countdown.nameMinute, el)[0];
+
       if (minute !== undefined) {
         date.setMinutes(date.getMinutes() + Number(minute.textContent));
       }
+
+      var sec = ui.find('.' + ui.countdown.nameSecond, el)[0];
 
       if (sec !== undefined) {
         date.setSeconds(date.getSeconds() + Number(sec.textContent));
@@ -4386,27 +4374,29 @@ ui.countdown = {
       arr[i] = date.getTime();
     });
 
-    calc = function calc(ms) {
-      var days, daysMs, hours, hoursMs, minutes, minutesMs, sec;
-      days = Math.floor(ms / (24 * 60 * 60 * 1000));
-      daysMs = ms % (24 * 60 * 60 * 1000);
-      hours = Math.floor(daysMs / (60 * 60 * 1000));
-      hoursMs = ms % (60 * 60 * 1000);
-      minutes = Math.floor(hoursMs / (60 * 1000));
-      minutesMs = ms % (60 * 1000);
-      sec = Math.floor(minutesMs / 1000) + 1;
+    var calc = function calc(ms) {
+      var days = Math.floor(ms / (24 * 60 * 60 * 1000));
 
       if (days < 0) {
         days = 0;
       }
 
+      var daysMs = ms % (24 * 60 * 60 * 1000);
+      var hours = Math.floor(daysMs / (60 * 60 * 1000));
+
       if (hours < 0) {
         hours = 0;
       }
 
+      var hoursMs = ms % (60 * 60 * 1000);
+      var minutes = Math.floor(hoursMs / (60 * 1000));
+
       if (minutes < 0) {
         minutes = 0;
       }
+
+      var minutesMs = ms % (60 * 1000);
+      var sec = Math.floor(minutesMs / 1000) + 1;
 
       if (sec < 0) {
         sec = 0;
@@ -4415,15 +4405,12 @@ ui.countdown = {
       return days + ':' + hours + ':' + minutes + ':' + sec;
     };
 
-    function drawFnc() {
-      ui.each(countdown, function (i) {
-        var dateLeft, day, hour, minute, sec;
-        dateLeft = calc(arr[i] - new Date());
-        day = ui.find('.' + ui.countdown.nameDay, this)[0];
-        hour = ui.find('.' + ui.countdown.nameHour, this)[0];
-        minute = ui.find('.' + ui.countdown.nameMinute, this)[0];
-        sec = ui.find('.' + ui.countdown.nameSecond, this)[0];
+    clearInterval(countdownTimer);
+    countdownTimer = setInterval(function () {
+      countdown.forEach(function (el, i) {
+        var dateLeft = calc(arr[i] - new Date());
         dateLeft = dateLeft.split(':');
+        var day = ui.find('.' + ui.countdown.nameDay, el)[0];
 
         if (day !== undefined) {
           if (dateLeft[0] === '0') {
@@ -4437,6 +4424,8 @@ ui.countdown = {
           }
         }
 
+        var hour = ui.find('.' + ui.countdown.nameHour, el)[0];
+
         if (hour !== undefined) {
           if (dateLeft[1] === '0') {
             hour.textContent = '00';
@@ -4448,6 +4437,8 @@ ui.countdown = {
             }
           }
         }
+
+        var minute = ui.find('.' + ui.countdown.nameMinute, el)[0];
 
         if (minute !== undefined) {
           if (dateLeft[2] === '0') {
@@ -4461,6 +4452,8 @@ ui.countdown = {
           }
         }
 
+        var sec = ui.find('.' + ui.countdown.nameSecond, el)[0];
+
         if (sec !== undefined) {
           if (dateLeft[3] === '0') {
             sec.textContent = '00';
@@ -4473,10 +4466,7 @@ ui.countdown = {
           }
         }
       });
-    }
-
-    clearInterval(countdownTimer);
-    countdownTimer = setInterval(drawFnc, 1000);
+    }, 1000);
   };
 
   ui.onload(ui.countdown.Start);
@@ -4551,7 +4541,6 @@ ui.datatable = {
       loadedVals = [],
       showCount = [],
       pagingCount = [],
-      customLowerCase,
       temp = document.createDocumentFragment();
 
   try {
@@ -4560,41 +4549,24 @@ ui.datatable = {
     testStorage = false;
   }
 
-  (function () {
-    var k, re, chars, keys;
-    keys = Object.keys(ui.datatable.customLetters);
-    chars = '(([';
+  var customLowerCase = function customLowerCase(string) {
+    var keys = Object.keys(ui.datatable.customLetters);
+    var chars = '(([';
 
-    for (k = 0; k < keys.length; k++) {
-      chars += keys[k];
+    for (var i = 0; i < keys.length; i++) {
+      chars += keys[i];
     }
 
     chars += ']))';
-    re = new RegExp(chars, 'g');
-
-    customLowerCase = function customLowerCase(string) {
-      string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
-        return ui.datatable.customLetters[l];
-      });
-      return string.toLowerCase();
-    };
-  })();
+    var re = new RegExp(chars, 'g');
+    string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
+      return ui.datatable.customLetters[l];
+    });
+    return string.toLowerCase();
+  };
 
   function createPaging(paging, id, listLength) {
-    var defaultClass, activeClass, classes, re, rex, html, total, i, min, max;
-    re = new RegExp('\\s+\\s');
-    rex = new RegExp('\\s+$');
-    defaultClass = paging[0].getAttribute(ui.datatable.dataDefault);
-
-    if (defaultClass === null) {
-      defaultClass = '';
-    }
-
-    activeClass = paging[0].getAttribute(ui.datatable.dataActive);
-
-    if (activeClass === null) {
-      activeClass = '';
-    }
+    var total, min, max;
 
     if (showCount[id] === undefined || showCount[id] === 0) {
       total = 1;
@@ -4634,16 +4606,30 @@ ui.datatable = {
       max = total;
     }
 
-    classes = ui.datatable.namePrev + ' ' + defaultClass;
+    var defaultClass = paging[0].getAttribute(ui.datatable.dataDefault);
+
+    if (defaultClass === null) {
+      defaultClass = '';
+    }
+
+    var activeClass = paging[0].getAttribute(ui.datatable.dataActive);
+
+    if (activeClass === null) {
+      activeClass = '';
+    }
+
+    var classes = ui.datatable.namePrev + ' ' + defaultClass;
 
     if (pagingCount[id] === 1) {
       classes += ' ' + ui.datatable.nameBtnPassive;
     }
 
+    var re = new RegExp('\\s+\\s');
+    var rex = new RegExp('\\s+$');
     classes = classes.replace(re, ' ').replace(rex, '');
-    html = '<button class="' + classes + '">' + '<svg class="' + ui.datatable.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.datatable.prevIcon + '"/></svg>' + '</button>\n';
+    var html = '<button class="' + classes + '">' + '<svg class="' + ui.datatable.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.datatable.prevIcon + '"/></svg>' + '</button>\n';
 
-    for (i = min; i <= max; i++) {
+    for (var i = min; i <= max; i++) {
       if (i === pagingCount[id]) {
         classes = ui.datatable.nameBtnActive + ' ' + defaultClass + ' ' + activeClass;
         classes = classes.replace(re, ' ').replace(rex, '');
@@ -4673,7 +4659,7 @@ ui.datatable = {
   }
 
   function loadGrid(that, id) {
-    var i, list, paging, gridTotal, isEven, gridStriped;
+    var list;
 
     if (ui.hasClass(that, ui.datatable.nameListFiltered)) {
       list = ui.find('.' + ui.datatable.nameListContent + '.' + ui.datatable.nameFiltered, that);
@@ -4681,7 +4667,7 @@ ui.datatable = {
       list = ui.find('.' + ui.datatable.nameListContent, that);
     }
 
-    paging = ui.find('.' + ui.datatable.namePaging, that);
+    var paging = ui.find('.' + ui.datatable.namePaging, that);
 
     if (paging.length > 0) {
       if (pagingCount[id] === undefined || pagingCount[id] === 0) {
@@ -4695,47 +4681,46 @@ ui.datatable = {
       ui.addClass(that, ui.datatable.nameListShowAll);
     }
 
-    gridTotal = ui.find('.' + ui.datatable.nameTotal, that);
+    var gridTotal = ui.find('.' + ui.datatable.nameTotal, that);
 
     if (gridTotal.length > 0) {
       gridTotal[0].textContent = list.length;
     }
 
-    isEven = false;
-    gridStriped = ui.hasClass(that, ui.datatable.nameListStriped);
+    var isEven = false;
+    var gridStriped = ui.hasClass(that, ui.datatable.nameListStriped);
     ui.removeClass(ui.find('.' + ui.datatable.nameListContent + '.' + ui.datatable.nameShow, that), ui.datatable.nameShow);
 
-    function evenList(t) {
+    function evenList(el) {
       if (gridStriped) {
         if (isEven) {
-          ui.addClass(t, ui.datatable.nameEven);
+          ui.addClass(el, ui.datatable.nameEven);
           isEven = false;
         } else {
-          ui.removeClass(t, ui.datatable.nameEven);
+          ui.removeClass(el, ui.datatable.nameEven);
           isEven = true;
         }
       }
 
-      ui.addClass(t, ui.datatable.nameShow);
+      ui.addClass(el, ui.datatable.nameShow);
     }
 
     if (showCount[id] > 0 && pagingCount[id] > 0) {
-      for (i = (pagingCount[id] - 1) * showCount[id]; i < pagingCount[id] * showCount[id]; i++) {
+      for (var i = (pagingCount[id] - 1) * showCount[id]; i < pagingCount[id] * showCount[id]; i++) {
         evenList(list[i]);
       }
     } else {
-      for (i = 0; i < list.length; i++) {
-        evenList(list[i]);
-      }
+      list.forEach(function (item) {
+        evenList(item);
+      });
     }
 
     list = '';
   }
 
   ui.on(document, 'click', '.' + ui.datatable.target + ' .' + ui.datatable.namePaging + ' button', function () {
-    var that, id;
-    that = ui.closest(this, '.' + ui.datatable.target)[0];
-    id = that.getAttribute(ui.datatable.dataID);
+    var that = ui.closest(this, '.' + ui.datatable.target)[0];
+    var id = that.getAttribute(ui.datatable.dataID);
 
     if (ui.hasClass(this, ui.datatable.nameNext)) {
       pagingCount[id] += 1;
@@ -4748,9 +4733,8 @@ ui.datatable = {
     loadGrid(that, id);
   });
   ui.on(document, 'change', '.' + ui.datatable.target + ' select.' + ui.datatable.nameListShow, function () {
-    var that, id;
-    that = ui.closest(this, '.' + ui.datatable.target)[0];
-    id = that.getAttribute(ui.datatable.dataID);
+    var that = ui.closest(this, '.' + ui.datatable.target)[0];
+    var id = that.getAttribute(ui.datatable.dataID);
 
     if (isNaN(Number(this.value))) {
       showCount[id] = 0;
@@ -4768,25 +4752,24 @@ ui.datatable = {
     loadGrid(that, id);
   });
   ui.on(document, 'mousedown', '.' + ui.datatable.target + ' [' + ui.datatable.dataSort + ']', function () {
-    var that, id, buttons, isAsc, gridContainer, list, sortIndex, sortType, arr, arrSorted;
-    that = ui.closest(this, '.' + ui.datatable.target)[0];
-    id = that.getAttribute(ui.datatable.dataID);
-    buttons = ui.find('[' + ui.datatable.dataSort + ']', that);
+    var that = ui.closest(this, '.' + ui.datatable.target)[0];
+    var id = that.getAttribute(ui.datatable.dataID);
+    var buttons = ui.find('[' + ui.datatable.dataSort + ']', that);
     ui.removeClass(buttons, ui.datatable.nameActive);
     ui.addClass(this, ui.datatable.nameActive);
-    ui.each(buttons, function () {
-      if (!ui.hasClass(this, ui.datatable.nameActive)) {
-        ui.removeClass(this, ui.datatable.nameAsc + ' ' + ui.datatable.nameDesc);
-        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
+    buttons.forEach(function (el) {
+      if (!ui.hasClass(el, ui.datatable.nameActive)) {
+        ui.removeClass(el, ui.datatable.nameAsc + ' ' + ui.datatable.nameDesc);
+        ui.find('.' + ui.datatable.nameIcon + ' use', el)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
       }
     });
-    sortType = this.getAttribute(ui.datatable.dataType);
+    var sortType = this.getAttribute(ui.datatable.dataType);
 
     if (sortType === null) {
       sortType = '';
     }
 
-    isAsc = ui.hasClass(this, ui.datatable.nameAsc);
+    var isAsc = ui.hasClass(this, ui.datatable.nameAsc);
 
     if (isAsc) {
       ui.removeClass(this, ui.datatable.nameAsc);
@@ -4808,14 +4791,13 @@ ui.datatable = {
       }
     }
 
-    gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
-    list = ui.find('.' + ui.datatable.nameListContent, gridContainer);
-    ui.each(list, function () {
-      temp.appendChild(this);
+    var gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
+    ui.find('.' + ui.datatable.nameListContent, gridContainer).forEach(function (el) {
+      temp.appendChild(el);
     });
-    arr = [];
-    arrSorted = [];
-    sortIndex = this.getAttribute(ui.datatable.dataSort);
+    var arr = [];
+    var arrSorted = [];
+    var sortIndex = this.getAttribute(ui.datatable.dataSort);
 
     if (sortIndex === null || sortIndex === '' || sortIndex === '0') {
       sortIndex = 0;
@@ -4823,9 +4805,9 @@ ui.datatable = {
       sortIndex = Number(sortIndex) - 1;
     }
 
-    list = ui.find('.' + ui.datatable.nameListContent, temp);
-    ui.each(list, function () {
-      var val = this.getAttribute(ui.datatable.dataVal);
+    var list = ui.find('.' + ui.datatable.nameListContent, temp);
+    list.forEach(function (el) {
+      var val = el.getAttribute(ui.datatable.dataVal);
 
       if (val !== null && val !== '') {
         val = val.split(ui.datatable.valueSplit)[sortIndex];
@@ -4857,10 +4839,11 @@ ui.datatable = {
       }
     }
 
-    ui.each(list, function (i) {
+    for (var i = 0; i < list.length; i++) {
       temp.appendChild(list[arr.indexOf(arrSorted[i])]);
       arr[arr.indexOf(arrSorted[i])] = '';
-    });
+    }
+
     gridContainer.appendChild(temp);
     pagingCount[id] = 1;
     loadGrid(that, id);
@@ -4871,42 +4854,41 @@ ui.datatable = {
   });
 
   function gridFilter(that, firstLoading) {
-    var id, filters, val, vals, index, sortType, sortIndex, indexes, list, gridContainer, j, contentVal, contentArr, activeFilters, passed, checkAll;
-    id = that.getAttribute(ui.datatable.dataID);
-    vals = [];
-    indexes = [];
-    filters = ui.find('.' + ui.datatable.nameFilter, that);
-    ui.each(filters, function (i) {
+    var contentArr, contentVal;
+    var vals = [];
+    var indexes = [];
+    var id = that.getAttribute(ui.datatable.dataID);
+    ui.find('.' + ui.datatable.nameFilter, that).forEach(function (el, i) {
       if (firstLoading) {
         vals = loadedVals[id].split(',');
 
-        if (this.type === 'checkbox' || this.type === 'radio') {
+        if (el.type === 'checkbox' || el.type === 'radio') {
           if (vals[i] !== '') {
-            this.checked = true;
+            el.checked = true;
           }
-        } else if (this.tagName === 'SELECT') {
-          for (j = 0; j < this.options.length; j++) {
-            if (customLowerCase(this.options[j].innerText) === vals[i]) {
-              index = Array.prototype.slice.call(this.options).indexOf(this.options[j]);
-              this.selectedIndex = index;
+        } else if (el.tagName === 'SELECT') {
+          el.options.forEach(function (item) {
+            if (customLowerCase(item.innerText) === vals[i]) {
+              var index = Array.prototype.slice.call(el.options).indexOf(item);
+              el.selectedIndex = index;
             }
-          }
+          });
         } else {
-          this.value = vals[i];
+          el.value = vals[i];
         }
       } else {
-        val = '';
+        var val = '';
 
-        if (this.type === 'checkbox' || this.type === 'radio') {
-          if (this.checked) {
-            val = this.value;
+        if (el.type === 'checkbox' || el.type === 'radio') {
+          if (el.checked) {
+            val = el.value;
           }
         } else {
-          val = this.value;
+          val = el.value;
         }
 
         val = val.replace(/^\s+|\s+$/g, '');
-        sortType = this.getAttribute(ui.datatable.dataType);
+        var sortType = el.getAttribute(ui.datatable.dataType);
 
         if (sortType === null) {
           sortType = '';
@@ -4919,7 +4901,7 @@ ui.datatable = {
         }
       }
 
-      sortIndex = this.getAttribute(ui.datatable.dataIndex);
+      var sortIndex = el.getAttribute(ui.datatable.dataIndex);
 
       if (sortIndex !== null) {
         if (sortIndex === '' || sortIndex === '0') {
@@ -4933,61 +4915,60 @@ ui.datatable = {
         indexes.push('');
       }
     });
+    var list;
 
     if (vals.length > 0) {
-      activeFilters = vals.filter(function (filterVal) {
+      var activeFilters = vals.filter(function (filterVal) {
         return filterVal !== '';
       });
-      gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
-      list = ui.find('.' + ui.datatable.nameListContent, gridContainer);
-      ui.each(list, function () {
-        temp.appendChild(this);
+      var gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
+      ui.find('.' + ui.datatable.nameListContent, gridContainer).forEach(function (el) {
+        temp.appendChild(el);
       });
-      list = ui.find('.' + ui.datatable.nameListContent, temp);
-      checkAll = ui.find('.' + ui.datatable.nameCheckAll, that);
+      var checkAll = ui.find('.' + ui.datatable.nameCheckAll, that);
 
       if (checkAll.length > 0) {
-        ui.each(checkAll, function () {
-          this.checked = false;
+        checkAll.forEach(function (item) {
+          item.checked = false;
         });
       }
 
-      ui.each(list, function () {
-        if (ui.hasClass(this, ui.datatable.nameChecked)) {
-          ui.removeClass(this, ui.datatable.nameChecked);
-          ui.find('.' + ui.datatable.nameCheck, this)[0].checked = false;
+      list = ui.find('.' + ui.datatable.nameListContent, temp);
+      list.forEach(function (el) {
+        if (ui.hasClass(el, ui.datatable.nameChecked)) {
+          ui.removeClass(el, ui.datatable.nameChecked);
+          ui.find('.' + ui.datatable.nameCheck, el)[0].checked = false;
         }
       });
 
       if (activeFilters.length > 0) {
         ui.addClass(that, ui.datatable.nameListFiltered);
-        ui.each(list, function () {
-          passed = [];
-          contentVal = this.getAttribute(ui.datatable.dataVal);
+        list.forEach(function (el) {
+          var passed = [];
+          contentVal = el.getAttribute(ui.datatable.dataVal);
 
           if (contentVal !== null && contentVal !== '') {
             contentVal = customLowerCase(contentVal);
             contentArr = contentVal.split(ui.datatable.valueSplit);
-
-            for (j = 0; j < vals.length; j++) {
-              if (vals[j] !== '') {
+            vals.forEach(function (item, j) {
+              if (item !== '') {
                 if (indexes[j] === '') {
-                  if (contentVal.replace(/\|/g, ' ').match(vals[j]) !== null) {
+                  if (contentVal.replace(/\|/g, ' ').match(item) !== null) {
                     passed.push('pass');
                   }
                 } else {
-                  if (contentArr[indexes[j]] === vals[j]) {
+                  if (contentArr[indexes[j]] === item) {
                     passed.push('pass');
                   }
                 }
               }
-            }
+            });
           }
 
           if (activeFilters.length === passed.length) {
-            ui.addClass(this, ui.datatable.nameFiltered);
+            ui.addClass(el, ui.datatable.nameFiltered);
           } else {
-            ui.removeClass(this, ui.datatable.nameFiltered);
+            ui.removeClass(el, ui.datatable.nameFiltered);
           }
         });
       } else {
@@ -5006,7 +4987,6 @@ ui.datatable = {
     vals = [];
     indexes = [];
     contentArr = [];
-    filters = '';
     list = '';
     contentVal = '';
   }
@@ -5020,59 +5000,55 @@ ui.datatable = {
     gridFilter(that, false);
   });
   ui.on(document, 'change', '.' + ui.datatable.target + ' .' + ui.datatable.nameCheckAll, function () {
-    var that, list, form, checked, checkFnc, uncheckFnc;
-    that = ui.closest(this, '.' + ui.datatable.target)[0];
-    list = ui.find('.' + ui.datatable.nameListContent, that);
-    checked = this.checked;
-
-    checkFnc = function checkFnc(t) {
-      if (!ui.hasClass(t, ui.datatable.nameChecked)) {
-        form = ui.find('.' + ui.datatable.nameCheck, t)[0];
+    var checkFnc = function checkFnc(el) {
+      if (!ui.hasClass(el, ui.datatable.nameChecked)) {
+        var form = ui.find('.' + ui.datatable.nameCheck, el)[0];
 
         if (form !== undefined) {
-          ui.addClass(t, ui.datatable.nameChecked);
+          ui.addClass(el, ui.datatable.nameChecked);
           form.checked = true;
         }
       }
     };
 
-    uncheckFnc = function uncheckFnc(t) {
-      if (ui.hasClass(t, ui.datatable.nameChecked)) {
-        form = ui.find('.' + ui.datatable.nameCheck, t)[0];
+    var uncheckFnc = function uncheckFnc(el) {
+      if (ui.hasClass(el, ui.datatable.nameChecked)) {
+        var form = ui.find('.' + ui.datatable.nameCheck, el)[0];
 
         if (form !== undefined) {
-          ui.removeClass(t, ui.datatable.nameChecked);
+          ui.removeClass(el, ui.datatable.nameChecked);
           form.checked = false;
         }
       }
     };
 
-    ui.each(list, function () {
+    var that = ui.closest(this, '.' + ui.datatable.target)[0];
+    var checked = this.checked;
+    ui.find('.' + ui.datatable.nameListContent, that).forEach(function (el) {
       if (checked) {
         if (ui.hasClass(that, ui.datatable.nameListFiltered)) {
-          if (ui.hasClass(this, ui.datatable.nameFiltered)) {
-            checkFnc(this);
+          if (ui.hasClass(el, ui.datatable.nameFiltered)) {
+            checkFnc(el);
           } else {
-            uncheckFnc(this);
+            uncheckFnc(el);
           }
         } else {
-          checkFnc(this);
+          checkFnc(el);
         }
       } else {
-        uncheckFnc(this);
+        uncheckFnc(el);
       }
     });
   });
   ui.on(document, 'change', '.' + ui.datatable.target + ' .' + ui.datatable.nameCheck, function () {
-    var that, list, checkAll;
-    that = ui.closest(that, '.' + ui.datatable.target)[0];
-    list = ui.closest(this, '.' + ui.datatable.nameListContent)[0];
+    var that = ui.closest(that, '.' + ui.datatable.target)[0];
+    var list = ui.closest(this, '.' + ui.datatable.nameListContent)[0];
 
     if (this.checked) {
       ui.addClass(list, ui.datatable.nameChecked);
     } else {
       ui.removeClass(list, ui.datatable.nameChecked);
-      checkAll = ui.find('.' + ui.datatable.nameCheckAll, that)[0];
+      var checkAll = ui.find('.' + ui.datatable.nameCheckAll, that)[0];
 
       if (ui.find('.' + ui.datatable.nameCheckAll, that)[0] !== undefined) {
         checkAll.checked = false;
@@ -5081,11 +5057,10 @@ ui.datatable = {
   });
 
   ui.datatable.Start = function () {
-    ui.each('.' + ui.datatable.target + ':not(.' + ui.datatable.targetLoaded + ')', function () {
-      var id, gridShow, index, i;
+    ui.find('.' + ui.datatable.target + ':not(.' + ui.datatable.targetLoaded + ')').forEach(function (el) {
       startListID += 1;
-      id = ui.datatable.listIdNaming + startListID;
-      this.setAttribute(ui.datatable.dataID, id);
+      var id = ui.datatable.listIdNaming + startListID;
+      el.setAttribute(ui.datatable.dataID, id);
 
       if (testStorage && sessionStorage !== undefined) {
         loadedVals[id] = sessionStorage.getItem(ui.datatable.storageVals + id);
@@ -5093,7 +5068,7 @@ ui.datatable = {
         pagingCount[id] = Number(sessionStorage.getItem(ui.datatable.storagePaging + id));
       }
 
-      gridShow = ui.find('select.' + ui.datatable.nameListShow, this)[0];
+      var gridShow = ui.find('select.' + ui.datatable.nameListShow, el)[0];
 
       if (showCount[id] === 0) {
         if (gridShow !== undefined) {
@@ -5101,29 +5076,29 @@ ui.datatable = {
             if (isNaN(Number(gridShow.value))) {
               showCount[id] = 0;
               pagingCount[id] = 1;
-              ui.addClass(this, ui.datatable.nameListShowAll);
+              ui.addClass(el, ui.datatable.nameListShowAll);
             } else {
               showCount[id] = gridShow.value;
             }
           }
         }
       } else {
-        for (i = 0; i < gridShow.options.length; i++) {
-          if (Number(customLowerCase(gridShow.options[i].innerText)) === showCount[id]) {
-            index = Array.prototype.slice.call(gridShow.options).indexOf(gridShow.options[i]);
+        gridShow.options.length.forEach(function (item) {
+          if (Number(customLowerCase(item.innerText)) === showCount[id]) {
+            var index = Array.prototype.slice.call(gridShow.options).indexOf(item);
             gridShow.selectedIndex = index;
           }
-        }
+        });
       }
 
       if (loadedVals[id] !== undefined && loadedVals[id] !== null) {
         if (loadedVals[id].length > 0) {
-          gridFilter(this, true);
+          gridFilter(el, true);
         }
       }
 
-      ui.addClass(this, ui.datatable.targetLoaded);
-      loadGrid(this, id);
+      ui.addClass(el, ui.datatable.targetLoaded);
+      loadGrid(el, id);
     });
   };
 
@@ -5131,10 +5106,8 @@ ui.datatable = {
     if (testStorage && sessionStorage !== undefined) {
       if (window.performance) {
         if (performance.navigation.type !== 1) {
-          var gridLists, id;
-          gridLists = ui.find('.' + ui.datatable.target);
-          ui.each(gridLists, function () {
-            id = this.getAttribute(ui.datatable.dataID);
+          ui.find('.' + ui.datatable.target).forEach(function (item) {
+            var id = item.getAttribute(ui.datatable.dataID);
             sessionStorage.setItem(ui.datatable.storageVals + id, '');
             sessionStorage.setItem(ui.datatable.storageShow + id, 0);
             sessionStorage.setItem(ui.datatable.storagePaging + id, 0);

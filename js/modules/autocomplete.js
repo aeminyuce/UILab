@@ -43,13 +43,10 @@ ui.autocomplete = {
 ui.autocomplete.Start = () => {
 
     let
-        customLowerCase,
         formEventListeners,
-
         autocompleteRequests = [];
 
-    // custom lowercase
-    (() => {
+    const customLowerCase = function (string) { // custom lowercase
 
         const keys = Object.keys(ui.autocomplete.customLetters); // returns array
 
@@ -59,14 +56,10 @@ ui.autocomplete.Start = () => {
 
         const re = new RegExp(chars, 'g');
 
-        customLowerCase = function (string) {
+        string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, (l) => ui.autocomplete.customLetters[l]);
+        return string.toLowerCase();
 
-            string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, (l) => ui.autocomplete.customLetters[l]);
-            return string.toLowerCase();
-
-        };
-
-    })();
+    };
 
     // Event Listeners
     formEventListeners = ui.find('.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + ' > [type="text"]');

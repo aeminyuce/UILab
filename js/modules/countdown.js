@@ -17,115 +17,133 @@ ui.countdown = {
 
 (() => {
 
-    var countdownTimer;
+    let countdownTimer;
 
     ui.countdown.Start = () => {
 
-        var countdown, arr, calc;
-
-        countdown = ui.find('.' + ui.countdown.target);
+        const countdown = ui.find('.' + ui.countdown.target);
         if (ui.countdown.length === 0) { return; }
 
-        arr = [];
+        const arr = [];
 
-        ui.each(countdown,
+        countdown.forEach((el, i) => {
 
-            function (i) {
+            const date = new Date();
+            const day = ui.find('.' + ui.countdown.nameDay, el)[0];
 
-                var date, day, hour, minute, sec;
+            if (day !== undefined) {
+                date.setDate(date.getDate() + Number(day.textContent));
+            }
 
-                date = new Date();
+            const hour = ui.find('.' + ui.countdown.nameHour, el)[0];
 
-                day = ui.find('.' + ui.countdown.nameDay, this)[0];
-                hour = ui.find('.' + ui.countdown.nameHour, this)[0];
-                minute = ui.find('.' + ui.countdown.nameMinute, this)[0];
-                sec = ui.find('.' + ui.countdown.nameSecond, this)[0];
+            if (hour !== undefined) {
+                date.setHours(date.getHours() + Number(hour.textContent));
+            }
 
-                if (day !== undefined) { date.setDate(date.getDate() + Number(day.textContent)); }
-                if (hour !== undefined) { date.setHours(date.getHours() + Number(hour.textContent)); }
-                if (minute !== undefined) { date.setMinutes(date.getMinutes() + Number(minute.textContent)); }
-                if (sec !== undefined) { date.setSeconds(date.getSeconds() + Number(sec.textContent)); }
+            const minute = ui.find('.' + ui.countdown.nameMinute, el)[0];
 
-                arr[i] = date.getTime();
+            if (minute !== undefined) {
+                date.setMinutes(date.getMinutes() + Number(minute.textContent));
+            }
 
-            });
+            const sec = ui.find('.' + ui.countdown.nameSecond, el)[0];
 
-        calc = (ms) => {
+            if (sec !== undefined) {
+                date.setSeconds(date.getSeconds() + Number(sec.textContent));
+            }
 
-            var days, daysMs, hours, hoursMs, minutes, minutesMs, sec;
+            arr[i] = date.getTime();
 
-            days = Math.floor(ms / (24 * 60 * 60 * 1000));
-            daysMs = ms % (24 * 60 * 60 * 1000);
+        });
 
-            hours = Math.floor(daysMs / (60 * 60 * 1000));
-            hoursMs = ms % (60 * 60 * 1000);
+        const calc = (ms) => {
 
-            minutes = Math.floor(hoursMs / (60 * 1000));
-            minutesMs = ms % (60 * 1000);
-
-            sec = Math.floor(minutesMs / 1000) + 1;
-
+            let days = Math.floor(ms / (24 * 60 * 60 * 1000));
             if (days < 0) { days = 0; }
+
+            const daysMs = ms % (24 * 60 * 60 * 1000);
+
+            let hours = Math.floor(daysMs / (60 * 60 * 1000));
             if (hours < 0) { hours = 0; }
+
+            const hoursMs = ms % (60 * 60 * 1000);
+
+            let minutes = Math.floor(hoursMs / (60 * 1000));
             if (minutes < 0) { minutes = 0; }
+
+            const minutesMs = ms % (60 * 1000);
+
+            let sec = Math.floor(minutesMs / 1000) + 1;
             if (sec < 0) { sec = 0; }
 
             return days + ':' + hours + ':' + minutes + ':' + sec;
 
         }
 
-        function drawFnc() {
-
-            ui.each(countdown,
-
-                function (i) {
-
-                    var dateLeft, day, hour, minute, sec;
-
-                    dateLeft = calc(arr[i] - new Date());
-
-                    day = ui.find('.' + ui.countdown.nameDay, this)[0];
-                    hour = ui.find('.' + ui.countdown.nameHour, this)[0];
-                    minute = ui.find('.' + ui.countdown.nameMinute, this)[0];
-                    sec = ui.find('.' + ui.countdown.nameSecond, this)[0];
-
-                    dateLeft = dateLeft.split(':');
-
-                    if (day !== undefined) {
-
-                        if (dateLeft[0] === '0') { day.textContent = '00'; } else {
-                            if (dateLeft[0].length === 1) { day.textContent = '0' + dateLeft[0]; } else { day.textContent = dateLeft[0]; }
-                        }
-
-                    }
-                    if (hour !== undefined) {
-
-                        if (dateLeft[1] === '0') { hour.textContent = '00'; } else {
-                            if (dateLeft[1].length === 1) { hour.textContent = '0' + dateLeft[1]; } else { hour.textContent = dateLeft[1]; }
-                        }
-
-                    }
-                    if (minute !== undefined) {
-
-                        if (dateLeft[2] === '0') { minute.textContent = '00'; } else {
-                            if (dateLeft[2].length === 1) { minute.textContent = '0' + dateLeft[2]; } else { minute.textContent = dateLeft[2]; }
-                        }
-
-                    }
-                    if (sec !== undefined) {
-
-                        if (dateLeft[3] === '0') { sec.textContent = '00'; } else {
-                            if (dateLeft[3].length === 1) { sec.textContent = '0' + dateLeft[3]; } else { sec.textContent = dateLeft[3]; }
-                        }
-
-                    }
-
-                });
-
-        }
-
         clearInterval(countdownTimer);
-        countdownTimer = setInterval(drawFnc, 1000);
+        countdownTimer = setInterval(() => {
+
+            countdown.forEach((el, i) => {
+
+                let dateLeft = calc(arr[i] - new Date());
+                dateLeft = dateLeft.split(':');
+
+                const day = ui.find('.' + ui.countdown.nameDay, el)[0];
+                if (day !== undefined) {
+
+                    if (dateLeft[0] === '0') { day.textContent = '00'; } else {
+
+                        if (dateLeft[0].length === 1) {
+                            day.textContent = '0' + dateLeft[0]; } else { day.textContent = dateLeft[0];
+                        }
+
+                    }
+
+                }
+
+                const hour = ui.find('.' + ui.countdown.nameHour, el)[0];
+                if (hour !== undefined) {
+
+                    if (dateLeft[1] === '0') { hour.textContent = '00'; } else {
+
+                        if (dateLeft[1].length === 1) {
+                            hour.textContent = '0' + dateLeft[1]; } else { hour.textContent = dateLeft[1];
+                        }
+
+                    }
+
+                }
+
+                const minute = ui.find('.' + ui.countdown.nameMinute, el)[0];
+                if (minute !== undefined) {
+
+                    if (dateLeft[2] === '0') { minute.textContent = '00'; } else {
+
+                        if (dateLeft[2].length === 1) {
+                            minute.textContent = '0' + dateLeft[2]; } else { minute.textContent = dateLeft[2];
+                        }
+
+                    }
+
+                }
+
+                const sec = ui.find('.' + ui.countdown.nameSecond, el)[0];
+                if (sec !== undefined) {
+
+                    if (dateLeft[3] === '0') { sec.textContent = '00'; } else {
+
+                        if (dateLeft[3].length === 1) {
+                            sec.textContent = '0' + dateLeft[3]; } else { sec.textContent = dateLeft[3];
+                        }
+
+                    }
+
+                }
+
+            });
+
+        }, 1000);
 
     };
 

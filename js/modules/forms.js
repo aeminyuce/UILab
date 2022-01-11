@@ -51,7 +51,7 @@ ui.forms = {
 
     ui.forms.Start = () => {
 
-        function formFocus(t, type) {
+        function formFocus(that, type) {
 
             var i, parent, classes, holder;
 
@@ -62,7 +62,7 @@ ui.forms = {
                 ui.forms.targetTextarea
             ];
 
-            holder = ui.closest(t, '.' + ui.forms.nameHolder);
+            holder = ui.closest(that, '.' + ui.forms.nameHolder);
 
             if (holder.length === 1) {
 
@@ -76,7 +76,7 @@ ui.forms = {
 
             for (i = 0; i < classes.length; i++) {
 
-                parent = ui.closest(t, '.' + classes[i]);
+                parent = ui.closest(that, '.' + classes[i]);
 
                 if (parent.length === 1) {
 

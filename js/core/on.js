@@ -3,7 +3,7 @@
 import { ui } from './globals.js';
 export default () => ui;
 
-ui.on = function (t, e, that, callback) {
+ui.on = function (self, e, that, callback) {
 
     const set = function (e) {
 
@@ -48,10 +48,10 @@ ui.on = function (t, e, that, callback) {
             const ua = navigator.userAgent.toLowerCase();
 
             // filter ui.on(object, event, fn) event listeners
-            if (t instanceof Object && !NodeList.prototype.isPrototypeOf(t) && typeof e === 'string') {
+            if (self instanceof Object && !NodeList.prototype.isPrototypeOf(self) && typeof e === 'string') {
 
                 // detect window event listeners
-                isWindowEvent = Object.prototype.toString.call(t) === '[object Window]';
+                isWindowEvent = Object.prototype.toString.call(self) === '[object Window]';
                 if (isWindowEvent) {
 
                     // disable ie duplicate window event firing on ready
@@ -66,7 +66,7 @@ ui.on = function (t, e, that, callback) {
                 }
 
                 // detect custom event listeners
-                const objName = Object.prototype.toString.call(t);
+                const objName = Object.prototype.toString.call(self);
 
                 if (objName === '[object HTMLDocument]' || objName === '[object Document]') {
                     customEvent = true;
@@ -107,7 +107,7 @@ ui.on = function (t, e, that, callback) {
 
         };
 
-        const l = ui.find(t);
+        const l = ui.find(self);
 
         if (isWindowEvent) {
             handlerFnc(l, e);

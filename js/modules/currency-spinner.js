@@ -21,23 +21,19 @@ ui.currencySpinner = {
 
 (() => {
 
-    var cacheCurrencySpinner;
+    let cacheCurrencySpinner;
 
     ui.currencySpinner.Start = () => {
 
-        var convert;
+        const convert = (s) => {
 
-        convert = (s) => {
-
-            var regDecimal, regClear, number, decimal;
-
-            regDecimal = new RegExp(/(\,+\d+)/g);
-            regClear = new RegExp(/(\s)|(\.)|(\,)/g);
+            const regDecimal = new RegExp(/(\,+\d+)/g);
+            const regClear = new RegExp(/(\s)|(\.)|(\,)/g);
 
             if (ui.currencySpinner.decimals) {
 
-                number = s.replace(regDecimal, '');
-                decimal = s.match(regDecimal);
+                let number = s.replace(regDecimal, '');
+                let decimal = s.match(regDecimal);
 
                 if (decimal === null) {
                     decimal = '0';
@@ -68,22 +64,20 @@ ui.currencySpinner = {
 
         function currencyChange(that) {
 
-            var p, input, val, min, step, nav;
+            const parent = ui.closest(that, '.' + ui.currencySpinner.target);
+            const input = ui.find('[type="text"]', parent);
 
-            nav = [];
-
-            p = ui.closest(that, '.' + ui.currencySpinner.target);
-            input = ui.find('[type="text"]', p);
-
-            val = convert(input.value);
+            const nav = [];
 
             nav.up = ui.hasClass(that, ui.currencySpinner.nameUp);
             nav.down = ui.hasClass(that, ui.currencySpinner.nameDown);
 
+            let val = convert(input.value);
+
             if (nav.up || nav.down) {
 
-                step = convert(input.getAttribute('step'));
-                min = convert(input.getAttribute('min'));
+                let step = convert(input.getAttribute('step'));
+                let min = convert(input.getAttribute('min'));
 
                 if (nav.up) {
 
@@ -161,30 +155,30 @@ ui.currencySpinner = {
 
             function (e) {
 
-                var c, isRefresh = false;
+                let char, ignoreList;
+                let isRefresh = false;
 
                 if (e.which) {
-                    c = e.which;
+                    char = e.which;
 
                 } else {
 
-                    c = e.keyCode;
-                    if (c === 116) { isRefresh = true; }
+                    char = e.keyCode;
+
+                    if (char === 116) { // f5
+                        isRefresh = true;
+                    }
 
                 }
 
+                ignoreList = [8, 9, 35, 36, 37, 39]; // backspace, tab, end, home, arrow left, arrow right
+
                 if (ui.currencySpinner.decimals) {
+                    ignoreList.push(44); // print screen
+                }
 
-                    if (c !== 8 && c !== 9 && c !== 35 && c !== 36 && c !== 37 && c !== 39 && c !== 44 && !isRefresh && (c < 48 || c > 57)) {
-                        e.preventDefault();
-                    }
-
-                } else {
-
-                    if (c !== 8 && c !== 9 && c !== 35 && c !== 36 && c !== 37 && c !== 39 && !isRefresh && (c < 48 || c > 57)) {
-                        e.preventDefault();
-                    }
-
+                if (ignoreList.includes(char) === -1 && !isRefresh && (char < 48 || char > 57)) { // 48-57: 0-9
+                    e.preventDefault();
                 }
 
             });
@@ -220,16 +214,18 @@ ui.currencySpinner = {
                         currencyChange(this);
                     }
 
-                } else { currencyChange(this); }
+                } else {
+                    currencyChange(this);
+                }
 
                 if (e.type === 'blur') {
 
-                    var input, min;
+                    const input = ui.find('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameInput + ' input')[0];
+                    const min = convert(input.getAttribute('min'));
 
-                    input = ui.find('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameInput + ' input')[0];
-                    min = convert(input.getAttribute('min'));
-
-                    if (convert(input.value) < min) { input.value = locales(min); }
+                    if (convert(input.value) < min) {
+                        input.value = locales(min);
+                    }
 
                 }
 
