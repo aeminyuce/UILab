@@ -49,7 +49,7 @@ ui.dropdown = {
 
 (() => {
 
-    var
+    let
         dropdownHoverTimer,
         dropdownOpenTimer,
 
@@ -66,7 +66,7 @@ ui.dropdown = {
 
         if (selectOpened) { return; }
 
-        var that, list;
+        let that;
 
         if (innerParent === undefined) {
             that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen);
@@ -80,41 +80,39 @@ ui.dropdown = {
         clearTimeout(dropdownLeaveTimer);
         dropdownLeaveTimer = setTimeout(() => {
 
-            ui.each(that,
+            that.forEach(el => {
 
-                function () {
+                clearTimeout(dropdownCloseTimer);
+                const list = ui.find('.' + ui.dropdown.nameMenu, el)[0];
 
-                    clearTimeout(dropdownCloseTimer);
-                    list = ui.find('.' + ui.dropdown.nameMenu, this)[0];
+                dropdownCloseTimer = setTimeout(() => {
 
-                    dropdownCloseTimer = setTimeout(() => {
+                    if (listStyles === 0) {
+                        list.removeAttribute('style');
 
-                        if (listStyles === 0) {
-                            list.removeAttribute('style');
+                    } else {
 
-                        } else {
+                        list.style.removeProperty('max-height');
 
-                            list.style.removeProperty('max-height');
+                        list.style.removeProperty('position');
+                        list.style.removeProperty('right');
+                        list.style.removeProperty('left');
 
-                            list.style.removeProperty('position');
-                            list.style.removeProperty('right');
-                            list.style.removeProperty('left');
+                        list.style.removeProperty('margin-left');
+                        list.style.removeProperty('margin-top');
 
-                            list.style.removeProperty('margin-left');
-                            list.style.removeProperty('margin-top');
+                        list.style.removeProperty('overflow');
 
-                            list.style.removeProperty('overflow');
+                        list.style.removeProperty('transform-origin');
+                        list.style.removeProperty('box-shadow');
 
-                            list.style.removeProperty('transform-origin');
-                            list.style.removeProperty('box-shadow');
+                    }
 
-                        }
+                    ui.removeClass(that, ui.dropdown.nameMenuTop + ' ' + ui.dropdown.nameOpen);
 
-                        ui.removeClass(that, ui.dropdown.nameMenuTop + ' ' + ui.dropdown.nameOpen);
+                }, ui.globals.ease);
 
-                    }, ui.globals.ease);
-
-                });
+            });
 
         }, 0);
 
@@ -127,17 +125,16 @@ ui.dropdown = {
             e.preventDefault();
             e.stopPropagation();
 
-            var list, alignSize, parent, offset, setMaxH, hasInner, inner, innerParent;
+            let inner = false;
+            let hasInner = false;
 
-            inner = false;
-            hasInner = false;
-
-            parent = that.parentNode;
+            const parent = that.parentNode;
 
             clearTimeout(dropdownOpenTimer);
             dropdownOpenTimer = setTimeout(() => {
 
-                innerParent = ui.closest(parent, '.' + ui.dropdown.target)[0];
+                const innerParent = ui.closest(parent, '.' + ui.dropdown.target)[0];
+
                 if ((ui.hasClass(parent, ui.dropdown.nameMenuPosRight) || ui.hasClass(parent, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
 
                     // detecting inner dropdown positions
@@ -159,8 +156,8 @@ ui.dropdown = {
                     ui.addClass(parent, ui.dropdown.nameOpenEase);
                 }, dropdownHoverTimer / 6);
 
-                offset = parent.getBoundingClientRect();
-                list = ui.find('.' + ui.dropdown.nameMenu, parent)[0];
+                const offset = parent.getBoundingClientRect();
+                const list = ui.find('.' + ui.dropdown.nameMenu, parent)[0];
 
                 if (hasInner) {
                     list.style.overflow = 'visible';
@@ -185,7 +182,7 @@ ui.dropdown = {
 
                         } else if (ui.hasClass(parent, ui.dropdown.nameMenuCenter)) {
 
-                            alignSize = Math.abs(list.offsetWidth - parent.offsetWidth) / 2;
+                            const alignSize = Math.abs(list.offsetWidth - parent.offsetWidth) / 2;
 
                             if ((offset.left - alignSize > 0) && (alignSize > 0)) {
                                 list.style.marginLeft = -alignSize + 'px';
@@ -202,7 +199,7 @@ ui.dropdown = {
 
                 }
 
-                setMaxH = function (pos) { // set max-height of list
+                const setMaxH = function (pos) { // set max-height of list
 
                     if (pos === 'default') {
                         list.style.maxHeight = window.innerHeight - (offset.top + that.offsetHeight + ui.dropdown.scrollbarSize + ui.dropdown.menuTopMargin) + 'px';
@@ -312,7 +309,7 @@ ui.dropdown = {
 
                         function (ev) {
 
-                            var content = ui.closest(ev.target, '.' + ui.dropdown.nameMenu)[0];
+                            const content = ui.closest(ev.target, '.' + ui.dropdown.nameMenu)[0];
 
                             // prevent for non listing contents
                             if (content !== undefined) {
@@ -392,20 +389,19 @@ ui.dropdown = {
 
             function () {
 
-                var p, target, input;
+                const parent = ui.closest(this, '.' + ui.dropdown.target)[0];
+                const target = ui.find('.' + ui.dropdown.nameBtn + ' > ' + ui.dropdown.tagValue, parent)[0];
 
-                p = ui.closest(this, '.' + ui.dropdown.target)[0];
-
-                target = ui.find('.' + ui.dropdown.nameBtn + ' > ' + ui.dropdown.tagValue, p)[0];
                 target.innerHTML = '';
                 target.insertAdjacentHTML('beforeend', this.innerHTML);
 
-                input = ui.find('input', target)[0];
+                const input = ui.find('input', target)[0];
+
                 if (input !== undefined) {
                     input.parentNode.removeChild(input);
                 }
 
-                ui.removeClass(ui.find('.' + ui.dropdown.nameSelected, p), ui.dropdown.nameSelected);
+                ui.removeClass(ui.find('.' + ui.dropdown.nameSelected, parent), ui.dropdown.nameSelected);
                 ui.addClass(this.parentNode, ui.dropdown.nameSelected);
 
             });
@@ -421,14 +417,11 @@ ui.dropdown = {
                 clearTimeout(dropdownLeaveTimer);
                 clearTimeout(dropdownOpenTimer);
 
-                var that, innerParent;
-
-                innerParent = ui.closest(this, '.' + ui.dropdown.target)[0];
-                that = this;
-
+                const that = this;
                 dropdownLeaveTimer = setTimeout(() => {
 
-                    innerParent = ui.closest(that, '.' + ui.dropdown.target)[0];
+                    const innerParent = ui.closest(that, '.' + ui.dropdown.target)[0];
+
                     if ((ui.hasClass(that, ui.dropdown.nameMenuPosRight) || ui.hasClass(that, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
 
                         // detecting inner dropdown positions

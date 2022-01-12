@@ -916,12 +916,9 @@ ui.calendar.Start = () => {
                 const day = this.getAttribute(ui.calendar.dataDay);
                 const list = ui.find('.' + ui.calendar.nameDetails + ' li', that);
 
-                for (let i = 0; i < list.length; i++) { // has break
+                for (let i = 0; i < list.length; i++) {
 
-                    if (list[i].getAttribute(ui.calendar.dataD) === day) {
-                        break;
-                    }
-
+                    if (list[i].getAttribute(ui.calendar.dataD) === day) { break; }
                     scroll += list[i].offsetHeight + ui.calendar.calendarPadding;
 
                 }

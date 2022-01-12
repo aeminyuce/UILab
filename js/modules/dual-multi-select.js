@@ -18,7 +18,7 @@ ui.dualMultiSelect = {
 
 (() => {
 
-    var
+    let
         resetOptions,
         movetoSource;
 
@@ -26,139 +26,128 @@ ui.dualMultiSelect = {
 
         resetOptions = function (selects, isSubmit) { // reset options
 
-            var sourceList, targetList;
+            ui.find('option', selects[0]).forEach(item => {
 
-            sourceList = ui.find('option', selects[0]);
-            targetList = ui.find('option', selects[1]);
+                if (ui.userAgents.mobile) {
+                    item.selected = true;
 
-            ui.each(sourceList,
+                } else {
+                    item.selected = false;
+                }
 
-                function () {
+            });
 
-                    if (ui.userAgents.mobile) {
-                        this.selected = true;
+            ui.find('option', selects[1]).forEach(item => {
 
-                    } else {
-                        this.selected = false;
-                    }
+                if (ui.userAgents.mobile || isSubmit !== undefined) {
+                    item.selected = true;
 
-                });
+                } else {
+                    item.selected = false;
+                }
 
-            ui.each(targetList,
-
-                function () {
-
-                    if (ui.userAgents.mobile || isSubmit !== undefined) {
-                        this.selected = true;
-
-                    } else {
-                        this.selected = false;
-                    }
-
-                });
+            });
 
         };
 
         ui.dualMultiSelect.Init = () => {
 
-            var i, holder, selects, name, arr, userArr, arrStart, index, options, selected;
+            ui.find('.' + ui.dualMultiSelect.target).forEach(el => {
 
-            holder = ui.find('.' + ui.dualMultiSelect.target);
-            ui.each(holder,
+                let arr = [];
+                let arrStart = [];
 
-                function () {
+                const selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', el);
 
-                    arr = [];
-                    arrStart = [];
+                // move name attribute from source to target select
+                const name = selects[0].name;
 
-                    selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', this);
+                selects[0].removeAttribute('name');
+                selects[1].name = name;
 
-                    // move name attribute from source to target select
-                    name = selects[0].name;
+                // get user defined idexes
+                const options = ui.find('option', selects[0]);
 
-                    selects[0].removeAttribute('name');
-                    selects[1].name = name;
+                options.forEach(item => {
 
-                    // get user defined idexes
-                    options = ui.find('option', selects[0]);
-                    ui.each(options,
+                    const index = item.getAttribute(ui.dualMultiSelect.dataIndex);
 
-                        function () {
+                    if (index !== null && index !== '' && !isNaN(index)) {
 
-                            index = this.getAttribute(ui.dualMultiSelect.dataIndex);
-                            if (index !== null && index !== '' && !isNaN(index)) {
+                        arr.push(index);
+                        arrStart.push(index);
 
-                                arr.push(index);
-                                arrStart.push(index);
+                    } else { arr.push(''); }
 
-                            } else { arr.push(''); }
+                });
 
-                        });
+                // create new indexes for not defined options
+                arrStart = arrStart.sort();
 
-                    // create new indexes for not defined options
-                    arrStart = arrStart.sort();
-                    userArr = arrStart;
+                const userArr = arrStart;
 
-                    arrStart = Number(arrStart[arrStart.length - 1]);
-                    if (isNaN(arrStart)) {
+                arrStart = Number(arrStart[arrStart.length - 1]);
+                if (isNaN(arrStart)) {
 
-                        arrStart = 0;
-                        for (i = 0; i < options.length; i++) {
+                    arrStart = 0;
+                    for (let i = 0; i < options.length; i++) {
+
+                        arrStart += 1;
+                        arr[i] = arrStart.toString();
+
+                    }
+
+                } else {
+
+                    for (let j = 1; j <= options.length; j++) {
+
+                        if (arr[j] === '') {
 
                             arrStart += 1;
-                            arr[i] = arrStart.toString();
-
-                        }
-
-                    } else {
-
-                        for (i = 1; i <= options.length; i++) {
-
-                            if (arr[i] === '') {
-
-                                arrStart += 1;
-                                arr[i] = arrStart.toString();
-
-                            }
+                            arr[j] = arrStart.toString();
 
                         }
 
                     }
 
-                    // set all indexes to options
-                    ui.each(options,
+                }
 
-                        function (j) {
+                // set all indexes to options
+                options.forEach((item, i) => {
 
-                            this.setAttribute(ui.dualMultiSelect.dataIndex, arr[j]);
+                    item.setAttribute(ui.dualMultiSelect.dataIndex, arr[i]);
 
-                            if (userArr.length > 0) { // move user defined options from source to target by index
+                    if (userArr.length > 0) { // move user defined options from source to target by index
 
-                                index = Number(arr.indexOf(userArr[j]));
-                                if (index > -1) { selects[1].appendChild(options[index]); }
+                        const index = Number(arr.indexOf(userArr[i]));
 
-                            } else { // move options selected with attribute from source to target
+                        if (index > -1) {
+                            selects[1].appendChild(options[index]);
+                        }
 
-                                selected = this.getAttribute('selected');
-                                if (selected !== null) { selects[1].appendChild(this); }
+                    } else { // move options selected with attribute from source to target
 
-                            }
+                        const selected = item.getAttribute('selected');
 
-                        });
+                        if (selected !== null) {
+                            selects[1].appendChild(item);
+                        }
 
-                    resetOptions(selects); // reset options
+                    }
 
                 });
+
+                resetOptions(selects); // reset options
+
+            });
 
         };
         ui.dualMultiSelect.Init();
 
         movetoSource = function (that, selects) {
 
-            var i, j, sourceList, index, arr, inserted;
-
-            i = Number(that.getAttribute(ui.dualMultiSelect.dataIndex));
-            sourceList = ui.find('option', selects[0]);
+            const i = Number(that.getAttribute(ui.dualMultiSelect.dataIndex));
+            const sourceList = ui.find('option', selects[0]);
 
             if (sourceList.length === 0) {
 
@@ -168,9 +157,9 @@ ui.dualMultiSelect = {
             } else if (sourceList.length === 1) {
 
                 // only one option in list
-                index = Number(sourceList[0].getAttribute(ui.dualMultiSelect.dataIndex));
+                const firstIndex = Number(sourceList[0].getAttribute(ui.dualMultiSelect.dataIndex));
 
-                if (i > index) {
+                if (i > firstIndex) {
                     selects[0].appendChild(that);
 
                 } else {
@@ -179,16 +168,16 @@ ui.dualMultiSelect = {
 
             } else {
 
-                arr = [];
-                inserted = false;
+                const arr = [];
+                let inserted = false;
 
                 // move to index
-                for (j = 0; j < sourceList.length; j++) {
+                for (let j = 0; j < sourceList.length; j++) {
 
-                    index = Number(sourceList[j].getAttribute(ui.dualMultiSelect.dataIndex));
-                    arr.push(index);
+                    const otherIndex = Number(sourceList[j].getAttribute(ui.dualMultiSelect.dataIndex));
+                    arr.push(otherIndex);
 
-                    if (index - 1 >= i) {
+                    if (otherIndex - 1 >= i) {
 
                         inserted = true;
                         selects[0].insertBefore(that, sourceList[j]);
@@ -222,10 +211,10 @@ ui.dualMultiSelect = {
 
                 if (!e.isTrusted) { return; } // prevent trigger change event listeners
 
-                var i, that, options, selects, parent, dir;
+                let that;
+                const options = Array.prototype.slice.call(e.target); // get option list
 
-                options = Array.prototype.slice.call(e.target); // get option list
-                for (i = 0; options.length; i++) {
+                for (let i = 0; options.length; i++) {
 
                     if (options[i].selected) { // get selected option
 
@@ -236,20 +225,20 @@ ui.dualMultiSelect = {
 
                 }
 
-                selects = ui.closest(that, '.' + ui.dualMultiSelect.target)[0];
-                selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', selects);
+                const selects = ui.closest(that, '.' + ui.dualMultiSelect.target)[0];
+                const multi = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', selects);
 
-                parent = ui.closest(that, '.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]')[0];
-                dir = Array.prototype.slice.call(selects).indexOf(parent);
+                const parent = ui.closest(that, '.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]')[0];
+                const dir = Array.prototype.slice.call(multi).indexOf(parent);
 
                 if (dir === 0) { // move from source to target select
-                    selects[1].appendChild(that);
+                    multi[1].appendChild(that);
 
                 } else { // move from target to source select
-                    movetoSource(that, selects);
+                    movetoSource(that, multi);
                 }
 
-                resetOptions(selects); // reset options
+                resetOptions(multi); // reset options
 
             });
 
@@ -260,54 +249,46 @@ ui.dualMultiSelect = {
 
             function () {
 
-                var i, holder, selects, sourceList, targetList, selected;
-
                 setTimeout(() => { // wait for form reset started on DOM
 
-                    holder = ui.find('.' + ui.dualMultiSelect.target);
-                    ui.each(holder,
+                    ui.find('.' + ui.dualMultiSelect.target).forEach(el => {
 
-                        function () {
+                        let index;
+                        let selected;
 
-                            selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', this);
+                        const selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', el);
 
-                            targetList = ui.find('option', selects[1]);
-                            ui.each(targetList,
+                        ui.find('option', selects[1]).forEach(item => {
 
-                                function () {
+                            selected = item.getAttribute('selected');
+                            index = Number(item.getAttribute(ui.dualMultiSelect.dataIndex)) - 1;
 
-                                    selected = this.getAttribute('selected');
-                                    i = Number(this.getAttribute(ui.dualMultiSelect.dataIndex)) - 1;
-
-                                    if (selected === null) { // move options to source that not selected with attribute
-                                        movetoSource(this, selects);
-                                    }
-
-                                });
-
-                            targetList = ui.find('option', selects[1]); // reload modified list
-
-                            sourceList = ui.find('option', selects[0]);
-                            ui.each(sourceList,
-
-                                function () {
-
-                                    selected = this.getAttribute('selected');
-                                    if (selected !== null) { // move options to target that selected with attribute
-
-                                        if (targetList.length === 0) {
-                                            selects[1].appendChild(this);
-
-                                        } else {
-                                            selects[1].insertBefore(this, targetList[i]);
-                                        }
-                                    }
-
-                                });
-
-                            resetOptions(selects); // reset options
+                            if (selected === null) { // move options to source that not selected with attribute
+                                movetoSource(item, selects);
+                            }
 
                         });
+
+                        const targetList = ui.find('option', selects[1]); // reload modified list
+
+                        ui.find('option', selects[0]).forEach(item => {
+
+                            selected = item.getAttribute('selected');
+                            if (selected !== null) { // move options to target that selected with attribute
+
+                                if (targetList.length === 0) {
+                                    selects[1].appendChild(item);
+
+                                } else {
+                                    selects[1].insertBefore(item, targetList[index]);
+                                }
+                            }
+
+                        });
+
+                        resetOptions(selects); // reset options
+
+                    });
 
                 }, 0);
 
@@ -320,25 +301,20 @@ ui.dualMultiSelect = {
 
             function (e) {
 
-                var elems, selects;
+                Array.prototype.slice.call(e.target).forEach(item => { // get submitted element list
 
-                elems = Array.prototype.slice.call(e.target); // get submitted element list
-                ui.each(elems,
+                    if (item.tagName === 'SELECT' && item.multiple) { // get multiple selects
 
-                    function () {
+                        const selects = ui.closest(item, '.' + ui.dualMultiSelect.target)[0];
+                        const multi = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', selects);
 
-                        if (this.tagName === 'SELECT' && this.multiple) { // get multiple selects
-
-                            selects = ui.closest(this, '.' + ui.dualMultiSelect.target)[0];
-                            selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', selects);
-
-                            if (selects !== undefined) {
-                                resetOptions(selects, true); // reset options, set target list to selected before submit
-                            }
-
+                        if (multi !== undefined) {
+                            resetOptions(multi, true); // reset options, set target list to selected before submit
                         }
 
-                    });
+                    }
+
+                });
 
             });
 

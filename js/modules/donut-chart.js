@@ -27,58 +27,50 @@ ui.donutChart.Start = () => {
 
     ui.donutChart.Init = () => {
 
-        var chart, circles, percent, dasharray, angle, arrPercent, arrAngle;
-
-        arrPercent = [];
-        arrAngle = [];
-
-        chart = ui.find('.' + ui.donutChart.target);
+        const chart = ui.find('.' + ui.donutChart.target);
         if (chart.length > 0) {
 
-            ui.each(chart,
+            let arrPercent = [];
+            let arrAngle = [];
 
-                function (i) {
+            chart.forEach(el => {
 
-                    circles = ui.find('circle:not(.' + ui.donutChart.targetBg + ')', this);
+                const circles = ui.find('circle:not(.' + ui.donutChart.targetBg + ')', el);
 
-                    if (circles.length > 1) {
-                        ui.addClass(this, 'multiple');
+                if (circles.length > 1) {
+                    ui.addClass(el, 'multiple');
+                }
+
+                circles.forEach((item, j) => {
+
+                    const percent = item.getAttribute(ui.donutChart.dataPercent);
+                    arrPercent.push(percent);
+
+                    let dasharray = Math.round(percent * 4.4);
+                    if (dasharray < 0) { dasharray = 0; }
+
+                    item.setAttribute('stroke-dasharray', dasharray + ', 440');
+                    if (j > 0) {
+
+                        const angle = Math.floor(arrAngle[j - 1] + ((arrPercent[j - 1]) * 3.6));
+                        arrAngle.push(angle);
+
+                        item.setAttribute('transform', 'rotate(' + angle + ' 80 80)'); // rotate(angle, cx, cy); All IE browsers not supported CSS only transforms
+
+                    } else { arrAngle.push(0); }
+
+                    if (ui.userAgents.ie) {
+                        el.style.height = el.offsetWidth + 'px'; // transformed circle has highest height on IE
                     }
 
-                    ui.each(circles,
-
-                        function (index) {
-
-                            var that = this;
-
-                            percent = that.getAttribute(ui.donutChart.dataPercent);
-                            arrPercent.push(percent);
-
-                            dasharray = Math.round(percent * 4.4);
-                            if (dasharray < 0) { dasharray = 0; }
-
-                            that.setAttribute('stroke-dasharray', dasharray + ', 440');
-                            if (index > 0) {
-
-                                angle = Math.floor(arrAngle[index - 1] + ((arrPercent[index - 1]) * 3.6));
-                                arrAngle.push(angle);
-
-                                that.setAttribute('transform', 'rotate(' + angle + ' 80 80)'); // rotate(angle, cx, cy); All IE browsers not supported CSS only transforms
-
-                            } else { arrAngle.push(0); }
-
-                            if (ui.userAgents.ie) {
-                                chart[i].style.height = chart[i].offsetWidth + 'px'; // transformed circle has highest height on IE
-                            }
-
-                            ui.addClass(that, ui.donutChart.nameLoaded);
-
-                        });
-
-                    arrPercent = [];
-                    arrAngle = [];
+                    ui.addClass(item, ui.donutChart.nameLoaded);
 
                 });
+
+                arrPercent = [];
+                arrAngle = [];
+
+            });
 
         }
 
@@ -93,13 +85,10 @@ ui.donutChart.Start = () => {
 
         function (e) {
 
-            var that, circle, chart, msg, msgTitle, title;
+            const chart = ui.closest(this, '.' + ui.donutChart.target)[0];
 
-            that = this;
-            chart = ui.closest(that, '.' + ui.donutChart.target)[0];
-
-            msg = ui.find(ui.donutChart.tagMsg, chart)[0];
-            circle = ui.find('circle', chart);
+            let msg = ui.find(ui.donutChart.tagMsg, chart)[0];
+            const circle = ui.find('circle', chart);
 
             setTimeout(() => {
                 ui.removeClass(circle, ui.donutChart.nameSelected);
@@ -122,13 +111,15 @@ ui.donutChart.Start = () => {
 
                 }
 
-                msgTitle = msg.getAttribute(ui.donutChart.dataMsg);
+                const msgTitle = msg.getAttribute(ui.donutChart.dataMsg);
 
                 if (msgTitle === null) {
                     msg.setAttribute(ui.donutChart.dataMsg, msg.innerHTML);
                 }
 
-                title = that.getAttribute(ui.donutChart.dataTitle);
+                const title = this.getAttribute(ui.donutChart.dataTitle);
+                const that = this;
+
                 setTimeout(() => {
 
                     if (title !== null && title !== '') {

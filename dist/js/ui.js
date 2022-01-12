@@ -60,8 +60,8 @@ ui.find = function (item, outer) {
     }
 
     if (outerEl.length !== undefined && Array.prototype.slice.call(outerEl).length === 1) {
-      outerEl.forEach(function (el) {
-        var outerElIndex = el.querySelectorAll(item);
+      for (var i = 0; i < outerEl.length; i++) {
+        var outerElIndex = outerEl[i].querySelectorAll(item);
 
         if (outerEl.length === 1) {
           foundEl = outerElIndex[0];
@@ -72,7 +72,7 @@ ui.find = function (item, outer) {
         } else {
           foundEl = foundEl.concat(outerElIndex);
         }
-      });
+      }
     } else {
       foundEl = outerEl.querySelectorAll(item);
     }
@@ -836,7 +836,7 @@ ui.dropdown = {
       return;
     }
 
-    var that, list;
+    var that;
 
     if (innerParent === undefined) {
       that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen);
@@ -847,9 +847,9 @@ ui.dropdown = {
     ui.removeClass(that, ui.dropdown.nameOpenEase);
     clearTimeout(dropdownLeaveTimer);
     dropdownLeaveTimer = setTimeout(function () {
-      ui.each(that, function () {
+      that.forEach(function (el) {
         clearTimeout(dropdownCloseTimer);
-        list = ui.find('.' + ui.dropdown.nameMenu, this)[0];
+        var list = ui.find('.' + ui.dropdown.nameMenu, el)[0];
         dropdownCloseTimer = setTimeout(function () {
           if (listStyles === 0) {
             list.removeAttribute('style');
@@ -875,13 +875,12 @@ ui.dropdown = {
     function dropdownOpen(e, that) {
       e.preventDefault();
       e.stopPropagation();
-      var list, alignSize, parent, offset, setMaxH, hasInner, inner, innerParent;
-      inner = false;
-      hasInner = false;
-      parent = that.parentNode;
+      var inner = false;
+      var hasInner = false;
+      var parent = that.parentNode;
       clearTimeout(dropdownOpenTimer);
       dropdownOpenTimer = setTimeout(function () {
-        innerParent = ui.closest(parent, '.' + ui.dropdown.target)[0];
+        var innerParent = ui.closest(parent, '.' + ui.dropdown.target)[0];
 
         if ((ui.hasClass(parent, ui.dropdown.nameMenuPosRight) || ui.hasClass(parent, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
           inner = true;
@@ -899,8 +898,8 @@ ui.dropdown = {
         dropdownOpenTimer = setTimeout(function () {
           ui.addClass(parent, ui.dropdown.nameOpenEase);
         }, dropdownHoverTimer / 6);
-        offset = parent.getBoundingClientRect();
-        list = ui.find('.' + ui.dropdown.nameMenu, parent)[0];
+        var offset = parent.getBoundingClientRect();
+        var list = ui.find('.' + ui.dropdown.nameMenu, parent)[0];
 
         if (hasInner) {
           list.style.overflow = 'visible';
@@ -917,7 +916,7 @@ ui.dropdown = {
                 list.style.transformOrigin = 'top right';
               }
             } else if (ui.hasClass(parent, ui.dropdown.nameMenuCenter)) {
-              alignSize = Math.abs(list.offsetWidth - parent.offsetWidth) / 2;
+              var alignSize = Math.abs(list.offsetWidth - parent.offsetWidth) / 2;
 
               if (offset.left - alignSize > 0 && alignSize > 0) {
                 list.style.marginLeft = -alignSize + 'px';
@@ -929,7 +928,7 @@ ui.dropdown = {
           }
         }
 
-        setMaxH = function setMaxH(pos) {
+        var setMaxH = function setMaxH(pos) {
           if (pos === 'default') {
             list.style.maxHeight = window.innerHeight - (offset.top + that.offsetHeight + ui.dropdown.scrollbarSize + ui.dropdown.menuTopMargin) + 'px';
           } else if (pos === 'top') {
@@ -1035,28 +1034,25 @@ ui.dropdown = {
       clearTimeout(dropdownLeaveTimer);
     });
     ui.on(document, 'click', '.' + ui.dropdown.target + ' ' + ui.dropdown.tagMenuItems + ' > ' + ui.dropdown.tagValueItems, function () {
-      var p, target, input;
-      p = ui.closest(this, '.' + ui.dropdown.target)[0];
-      target = ui.find('.' + ui.dropdown.nameBtn + ' > ' + ui.dropdown.tagValue, p)[0];
+      var parent = ui.closest(this, '.' + ui.dropdown.target)[0];
+      var target = ui.find('.' + ui.dropdown.nameBtn + ' > ' + ui.dropdown.tagValue, parent)[0];
       target.innerHTML = '';
       target.insertAdjacentHTML('beforeend', this.innerHTML);
-      input = ui.find('input', target)[0];
+      var input = ui.find('input', target)[0];
 
       if (input !== undefined) {
         input.parentNode.removeChild(input);
       }
 
-      ui.removeClass(ui.find('.' + ui.dropdown.nameSelected, p), ui.dropdown.nameSelected);
+      ui.removeClass(ui.find('.' + ui.dropdown.nameSelected, parent), ui.dropdown.nameSelected);
       ui.addClass(this.parentNode, ui.dropdown.nameSelected);
     });
     ui.on(document, 'mouseleave', '.' + ui.dropdown.target + '.' + ui.dropdown.nameHover, function () {
       clearTimeout(dropdownLeaveTimer);
       clearTimeout(dropdownOpenTimer);
-      var that, innerParent;
-      innerParent = ui.closest(this, '.' + ui.dropdown.target)[0];
-      that = this;
+      var that = this;
       dropdownLeaveTimer = setTimeout(function () {
-        innerParent = ui.closest(that, '.' + ui.dropdown.target)[0];
+        var innerParent = ui.closest(that, '.' + ui.dropdown.target)[0];
 
         if ((ui.hasClass(that, ui.dropdown.nameMenuPosRight) || ui.hasClass(that, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
           dropdownClose(innerParent);
@@ -1775,38 +1771,33 @@ ui.dualMultiSelect = {
 
   ui.dualMultiSelect.Start = function () {
     resetOptions = function resetOptions(selects, isSubmit) {
-      var sourceList, targetList;
-      sourceList = ui.find('option', selects[0]);
-      targetList = ui.find('option', selects[1]);
-      ui.each(sourceList, function () {
+      ui.find('option', selects[0]).forEach(function (item) {
         if (ui.userAgents.mobile) {
-          this.selected = true;
+          item.selected = true;
         } else {
-          this.selected = false;
+          item.selected = false;
         }
       });
-      ui.each(targetList, function () {
+      ui.find('option', selects[1]).forEach(function (item) {
         if (ui.userAgents.mobile || isSubmit !== undefined) {
-          this.selected = true;
+          item.selected = true;
         } else {
-          this.selected = false;
+          item.selected = false;
         }
       });
     };
 
     ui.dualMultiSelect.Init = function () {
-      var i, holder, selects, name, arr, userArr, arrStart, index, options, selected;
-      holder = ui.find('.' + ui.dualMultiSelect.target);
-      ui.each(holder, function () {
-        arr = [];
-        arrStart = [];
-        selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', this);
-        name = selects[0].name;
+      ui.find('.' + ui.dualMultiSelect.target).forEach(function (el) {
+        var arr = [];
+        var arrStart = [];
+        var selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', el);
+        var name = selects[0].name;
         selects[0].removeAttribute('name');
         selects[1].name = name;
-        options = ui.find('option', selects[0]);
-        ui.each(options, function () {
-          index = this.getAttribute(ui.dualMultiSelect.dataIndex);
+        var options = ui.find('option', selects[0]);
+        options.forEach(function (item) {
+          var index = item.getAttribute(ui.dualMultiSelect.dataIndex);
 
           if (index !== null && index !== '' && !isNaN(index)) {
             arr.push(index);
@@ -1816,39 +1807,39 @@ ui.dualMultiSelect = {
           }
         });
         arrStart = arrStart.sort();
-        userArr = arrStart;
+        var userArr = arrStart;
         arrStart = Number(arrStart[arrStart.length - 1]);
 
         if (isNaN(arrStart)) {
           arrStart = 0;
 
-          for (i = 0; i < options.length; i++) {
+          for (var i = 0; i < options.length; i++) {
             arrStart += 1;
             arr[i] = arrStart.toString();
           }
         } else {
-          for (i = 1; i <= options.length; i++) {
-            if (arr[i] === '') {
+          for (var j = 1; j <= options.length; j++) {
+            if (arr[j] === '') {
               arrStart += 1;
-              arr[i] = arrStart.toString();
+              arr[j] = arrStart.toString();
             }
           }
         }
 
-        ui.each(options, function (j) {
-          this.setAttribute(ui.dualMultiSelect.dataIndex, arr[j]);
+        options.forEach(function (item, i) {
+          item.setAttribute(ui.dualMultiSelect.dataIndex, arr[i]);
 
           if (userArr.length > 0) {
-            index = Number(arr.indexOf(userArr[j]));
+            var index = Number(arr.indexOf(userArr[i]));
 
             if (index > -1) {
               selects[1].appendChild(options[index]);
             }
           } else {
-            selected = this.getAttribute('selected');
+            var selected = item.getAttribute('selected');
 
             if (selected !== null) {
-              selects[1].appendChild(this);
+              selects[1].appendChild(item);
             }
           }
         });
@@ -1859,29 +1850,28 @@ ui.dualMultiSelect = {
     ui.dualMultiSelect.Init();
 
     movetoSource = function movetoSource(that, selects) {
-      var i, j, sourceList, index, arr, inserted;
-      i = Number(that.getAttribute(ui.dualMultiSelect.dataIndex));
-      sourceList = ui.find('option', selects[0]);
+      var i = Number(that.getAttribute(ui.dualMultiSelect.dataIndex));
+      var sourceList = ui.find('option', selects[0]);
 
       if (sourceList.length === 0) {
         selects[0].appendChild(that);
       } else if (sourceList.length === 1) {
-        index = Number(sourceList[0].getAttribute(ui.dualMultiSelect.dataIndex));
+        var firstIndex = Number(sourceList[0].getAttribute(ui.dualMultiSelect.dataIndex));
 
-        if (i > index) {
+        if (i > firstIndex) {
           selects[0].appendChild(that);
         } else {
           selects[0].insertBefore(that, sourceList[0]);
         }
       } else {
-        arr = [];
-        inserted = false;
+        var arr = [];
+        var inserted = false;
 
-        for (j = 0; j < sourceList.length; j++) {
-          index = Number(sourceList[j].getAttribute(ui.dualMultiSelect.dataIndex));
-          arr.push(index);
+        for (var j = 0; j < sourceList.length; j++) {
+          var otherIndex = Number(sourceList[j].getAttribute(ui.dualMultiSelect.dataIndex));
+          arr.push(otherIndex);
 
-          if (index - 1 >= i) {
+          if (otherIndex - 1 >= i) {
             inserted = true;
             selects[0].insertBefore(that, sourceList[j]);
             break;
@@ -1901,54 +1891,52 @@ ui.dualMultiSelect = {
         return;
       }
 
-      var i, that, options, selects, parent, dir;
-      options = Array.prototype.slice.call(e.target);
+      var that;
+      var options = Array.prototype.slice.call(e.target);
 
-      for (i = 0; options.length; i++) {
+      for (var i = 0; options.length; i++) {
         if (options[i].selected) {
           that = options[i];
           break;
         }
       }
 
-      selects = ui.closest(that, '.' + ui.dualMultiSelect.target)[0];
-      selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', selects);
-      parent = ui.closest(that, '.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]')[0];
-      dir = Array.prototype.slice.call(selects).indexOf(parent);
+      var selects = ui.closest(that, '.' + ui.dualMultiSelect.target)[0];
+      var multi = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', selects);
+      var parent = ui.closest(that, '.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]')[0];
+      var dir = Array.prototype.slice.call(multi).indexOf(parent);
 
       if (dir === 0) {
-        selects[1].appendChild(that);
+        multi[1].appendChild(that);
       } else {
-        movetoSource(that, selects);
+        movetoSource(that, multi);
       }
 
-      resetOptions(selects);
+      resetOptions(multi);
     });
     ui.on(document, 'reset', 'form', function () {
-      var i, holder, selects, sourceList, targetList, selected;
       setTimeout(function () {
-        holder = ui.find('.' + ui.dualMultiSelect.target);
-        ui.each(holder, function () {
-          selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', this);
-          targetList = ui.find('option', selects[1]);
-          ui.each(targetList, function () {
-            selected = this.getAttribute('selected');
-            i = Number(this.getAttribute(ui.dualMultiSelect.dataIndex)) - 1;
+        ui.find('.' + ui.dualMultiSelect.target).forEach(function (el) {
+          var index;
+          var selected;
+          var selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', el);
+          ui.find('option', selects[1]).forEach(function (item) {
+            selected = item.getAttribute('selected');
+            index = Number(item.getAttribute(ui.dualMultiSelect.dataIndex)) - 1;
 
             if (selected === null) {
-              movetoSource(this, selects);
+              movetoSource(item, selects);
             }
           });
-          targetList = ui.find('option', selects[1]);
-          sourceList = ui.find('option', selects[0]);
-          ui.each(sourceList, function () {
-            selected = this.getAttribute('selected');
+          var targetList = ui.find('option', selects[1]);
+          ui.find('option', selects[0]).forEach(function (item) {
+            selected = item.getAttribute('selected');
 
             if (selected !== null) {
               if (targetList.length === 0) {
-                selects[1].appendChild(this);
+                selects[1].appendChild(item);
               } else {
-                selects[1].insertBefore(this, targetList[i]);
+                selects[1].insertBefore(item, targetList[index]);
               }
             }
           });
@@ -1957,15 +1945,13 @@ ui.dualMultiSelect = {
       }, 0);
     });
     ui.on(document, 'submit', 'form', function (e) {
-      var elems, selects;
-      elems = Array.prototype.slice.call(e.target);
-      ui.each(elems, function () {
-        if (this.tagName === 'SELECT' && this.multiple) {
-          selects = ui.closest(this, '.' + ui.dualMultiSelect.target)[0];
-          selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', selects);
+      Array.prototype.slice.call(e.target).forEach(function (item) {
+        if (item.tagName === 'SELECT' && item.multiple) {
+          var selects = ui.closest(item, '.' + ui.dualMultiSelect.target)[0];
+          var multi = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', selects);
 
-          if (selects !== undefined) {
-            resetOptions(selects, true);
+          if (multi !== undefined) {
+            resetOptions(multi, true);
           }
         }
       });
@@ -7289,44 +7275,42 @@ ui.donutChart = {
 
 ui.donutChart.Start = function () {
   ui.donutChart.Init = function () {
-    var chart, circles, percent, dasharray, angle, arrPercent, arrAngle;
-    arrPercent = [];
-    arrAngle = [];
-    chart = ui.find('.' + ui.donutChart.target);
+    var chart = ui.find('.' + ui.donutChart.target);
 
     if (chart.length > 0) {
-      ui.each(chart, function (i) {
-        circles = ui.find('circle:not(.' + ui.donutChart.targetBg + ')', this);
+      var arrPercent = [];
+      var arrAngle = [];
+      chart.forEach(function (el) {
+        var circles = ui.find('circle:not(.' + ui.donutChart.targetBg + ')', el);
 
         if (circles.length > 1) {
-          ui.addClass(this, 'multiple');
+          ui.addClass(el, 'multiple');
         }
 
-        ui.each(circles, function (index) {
-          var that = this;
-          percent = that.getAttribute(ui.donutChart.dataPercent);
+        circles.forEach(function (item, j) {
+          var percent = item.getAttribute(ui.donutChart.dataPercent);
           arrPercent.push(percent);
-          dasharray = Math.round(percent * 4.4);
+          var dasharray = Math.round(percent * 4.4);
 
           if (dasharray < 0) {
             dasharray = 0;
           }
 
-          that.setAttribute('stroke-dasharray', dasharray + ', 440');
+          item.setAttribute('stroke-dasharray', dasharray + ', 440');
 
-          if (index > 0) {
-            angle = Math.floor(arrAngle[index - 1] + arrPercent[index - 1] * 3.6);
+          if (j > 0) {
+            var angle = Math.floor(arrAngle[j - 1] + arrPercent[j - 1] * 3.6);
             arrAngle.push(angle);
-            that.setAttribute('transform', 'rotate(' + angle + ' 80 80)');
+            item.setAttribute('transform', 'rotate(' + angle + ' 80 80)');
           } else {
             arrAngle.push(0);
           }
 
           if (ui.userAgents.ie) {
-            chart[i].style.height = chart[i].offsetWidth + 'px';
+            el.style.height = el.offsetWidth + 'px';
           }
 
-          ui.addClass(that, ui.donutChart.nameLoaded);
+          ui.addClass(item, ui.donutChart.nameLoaded);
         });
         arrPercent = [];
         arrAngle = [];
@@ -7336,11 +7320,9 @@ ui.donutChart.Start = function () {
 
   ui.donutChart.Init();
   ui.on(document, 'mouseenter mouseleave touchend', '.' + ui.donutChart.target + ' circle[' + ui.donutChart.dataTitle + ']', function (e) {
-    var that, circle, chart, msg, msgTitle, title;
-    that = this;
-    chart = ui.closest(that, '.' + ui.donutChart.target)[0];
-    msg = ui.find(ui.donutChart.tagMsg, chart)[0];
-    circle = ui.find('circle', chart);
+    var chart = ui.closest(this, '.' + ui.donutChart.target)[0];
+    var msg = ui.find(ui.donutChart.tagMsg, chart)[0];
+    var circle = ui.find('circle', chart);
     setTimeout(function () {
       ui.removeClass(circle, ui.donutChart.nameSelected);
     }, 0);
@@ -7353,13 +7335,14 @@ ui.donutChart.Start = function () {
         msg = ui.find(ui.donutChart.tagMsg, chart)[0];
       }
 
-      msgTitle = msg.getAttribute(ui.donutChart.dataMsg);
+      var msgTitle = msg.getAttribute(ui.donutChart.dataMsg);
 
       if (msgTitle === null) {
         msg.setAttribute(ui.donutChart.dataMsg, msg.innerHTML);
       }
 
-      title = that.getAttribute(ui.donutChart.dataTitle);
+      var title = this.getAttribute(ui.donutChart.dataTitle);
+      var that = this;
       setTimeout(function () {
         if (title !== null && title !== '') {
           msg.innerHTML = title;

@@ -42,9 +42,9 @@ ui.find = (item, outer) => {
         // discard "this" object && form object (form element not returns "this", it returns all form elements)
         if (outerEl.length !== undefined && Array.prototype.slice.call(outerEl).length === 1) {
 
-            outerEl.forEach(el => {
+            for (let i = 0; i < outerEl.length; i++) {
 
-                const outerElIndex = el.querySelectorAll(item);
+                const outerElIndex = outerEl[i].querySelectorAll(item);
                 if (outerEl.length === 1) {
 
                     foundEl = outerElIndex[0];
@@ -57,7 +57,7 @@ ui.find = (item, outer) => {
                     foundEl = foundEl.concat(outerElIndex); // merge arrays
                 }
 
-            });
+            }
 
         } else { // "this" object
             foundEl = outerEl.querySelectorAll(item);
