@@ -15,6 +15,7 @@ module.exports = {
 
         "require": true,
         "module": true,
+        "Promise": true,
 
         "NodeList": true,
         "Image": true,
