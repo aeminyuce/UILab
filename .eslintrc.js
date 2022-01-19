@@ -36,7 +36,13 @@ module.exports = {
         "sessionStorage": true,
 
         "alert": true,
-        "console": true
+        "console": true,
+
+        "global": true,
+        "describe": true,
+        "before": true,
+        "it": true,
+        "after": true
 
     },
     rules: { // https://eslint.org/docs/rules/
