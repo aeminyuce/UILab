@@ -53,11 +53,11 @@ ui_module__top_button();
 
 // Forms
 import { default as ui_module__autocomplete } from './modules/autocomplete.js';
-import { default as ui_module__currency_spinner } from './modules/currency-spinner';
-import { default as ui_module__dual_multi_select } from './modules/dual-multi-select';
+import { default as ui_module__currency_spinner } from './modules/currency-spinner.js';
+import { default as ui_module__dual_multi_select } from './modules/dual-multi-select.js';
 import { default as ui_module__forms } from './modules/forms.js';
-import { default as ui_module__form_spinner } from './modules/form-spinner';
-import { default as ui_module__required_forms } from './modules/required-forms';
+import { default as ui_module__form_spinner } from './modules/form-spinner.js';
+import { default as ui_module__required_forms } from './modules/required-forms.js';
 import { default as ui_module__textarea_counter } from './modules/textarea-counter.js';
 
 ui_module__autocomplete();
