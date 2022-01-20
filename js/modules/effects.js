@@ -29,7 +29,7 @@ ui.effects = {
 
 (() => {
 
-    var pauseTransitionsTimer;
+    let pauseTransitionsTimer;
 
     ui.on(window,
         'resize scroll',
@@ -55,8 +55,6 @@ ui.effects = {
 
     ui.onload(() => {
 
-        var detectMotion, reduceTimers;
-
         if (ui.userAgents.ie && !ui.userAgents.edge && !ui.effects.ie) {
             ui.effects.pauseAll = true;
         }
@@ -67,7 +65,7 @@ ui.effects = {
             ui.effects.pauseAll = true;
         }
 
-        reduceTimers = function () { // reduce effect timers
+        const reduceTimers = () => { // reduce effect timers
 
             // they must be bigger than 10!
             ui.globals.fast = 11;
@@ -82,7 +80,7 @@ ui.effects = {
 
         if (ui.effects.reduceMotion) {
 
-            detectMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+            const detectMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
             if (!detectMotion || detectMotion.matches) {
 
                 ui.addClass(ui.effects.target, ui.effects.nameNoEffects);

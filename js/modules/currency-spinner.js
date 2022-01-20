@@ -177,7 +177,7 @@ ui.currencySpinner = {
                     ignoreList.push(44); // print screen
                 }
 
-                if (ignoreList.includes(char) === -1 && !isRefresh && (char < 48 || char > 57)) { // 48-57: 0-9
+                if (ignoreList.indexOf(char) === -1 && !isRefresh && (char < 48 || char > 57)) { // 48-57: 0-9
                     e.preventDefault();
                 }
 

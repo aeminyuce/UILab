@@ -47,22 +47,20 @@ ui.forms = {
 
 (() => {
 
-    var clearForms;
+    let clearForms;
 
     ui.forms.Start = () => {
 
         function formFocus(that, type) {
 
-            var i, parent, classes, holder;
-
-            classes = [
+            const classes = [
                 ui.forms.targetText,
                 ui.forms.targetSelect,
                 ui.forms.targetSelectMulti,
                 ui.forms.targetTextarea
             ];
 
-            holder = ui.closest(that, '.' + ui.forms.nameHolder);
+            const holder = ui.closest(that, '.' + ui.forms.nameHolder);
 
             if (holder.length === 1) {
 
@@ -72,12 +70,13 @@ ui.forms = {
                     ui.addClass(holder, ui.forms.nameHolderFocus);
                 }
 
-            } else { ui.removeClass('.' + ui.forms.nameFocus, ui.forms.nameFocus); }
+            } else {
+                ui.removeClass('.' + ui.forms.nameFocus, ui.forms.nameFocus);
+            }
 
-            for (i = 0; i < classes.length; i++) {
+            for (let i = 0; i < classes.length; i++) {
 
-                parent = ui.closest(that, '.' + classes[i]);
-
+                const parent = ui.closest(that, '.' + classes[i]);
                 if (parent.length === 1) {
 
                     if (type === 'add') {
@@ -97,7 +96,7 @@ ui.forms = {
         // clear with form icons
         clearForms = function (that) {
 
-            var btn = ui.find('.' + ui.forms.nameClear, that.parentElement)[0];
+            const btn = ui.find('.' + ui.forms.nameClear, that.parentElement)[0];
 
             if (that.value !== '') {
 
@@ -121,11 +120,8 @@ ui.forms = {
 
         ui.forms.Init = () => {
 
-            ui.each('.' + ui.forms.targetText + '.' + ui.forms.nameHasClear + ' input', function () {
-
-                var that = this;
-                setTimeout(() => { clearForms(that); }, 0);
-
+            ui.find('.' + ui.forms.targetText + '.' + ui.forms.nameHasClear + ' input').forEach(el => {
+                setTimeout(() => { clearForms(el); }, 0);
             });
 
         };
@@ -161,7 +157,7 @@ ui.forms = {
 
             function () {
 
-                var info = ui.find(ui.forms.tagFileInfo, this.parentElement)[0];
+                const info = ui.find(ui.forms.tagFileInfo, this.parentElement)[0];
 
                 if (info !== undefined) {
                     info.innerHTML = this.value;
@@ -194,9 +190,7 @@ ui.forms = {
 
             function () {
 
-                var that = this.parentElement;
-
-                that = ui.find('input', that)[0];
+                const that = ui.find('input', this.parentElement)[0];
 
                 if (that.getAttribute('type') === 'password') {
                     that.setAttribute('type', 'text');
@@ -215,19 +209,25 @@ ui.forms = {
 
             function (e) {
 
-                var c, isRefresh = false;
+                let char;
+                let isRefresh = false;
 
                 if (e.which) {
-                    c = e.which;
+                    char = e.which;
 
                 } else {
 
-                    c = e.keyCode;
-                    if (c === 116) { isRefresh = true; }
+                    char = e.keyCode;
+
+                    if (char === 116) { // f5
+                        isRefresh = true;
+                    }
 
                 }
 
-                if (c !== 8 && c !== 9 && c !== 35 && c !== 36 && c !== 37 && c !== 39 && c !== 46 && !isRefresh && (c < 48 || c > 57)) {
+                const ignoreList = [8, 9, 35, 36, 37, 39, 46]; // backspace, tab, end, home, arrow left, arrow right, delete
+
+                if (ignoreList.indexOf(char) === -1 && !isRefresh && (char < 48 || char > 57)) { // 48-57: 0-9
                     e.preventDefault();
                 }
 
@@ -240,23 +240,21 @@ ui.forms = {
 
             function () {
 
-                var i, re, that, getValues, newValues, maxLength;
+                const that = this;
+                const maxLength = that.getAttribute('maxlength');
 
-                that = this;
-
-                maxLength = that.getAttribute('maxlength');
                 that.removeAttribute('maxlength');
 
                 setTimeout(() => {
 
-                    newValues = '';
-                    getValues = that.value.match(new RegExp(/[0-9]/, 'g'));
+                    let newValues = '';
+                    const getValues = that.value.match(new RegExp(/[0-9]/, 'g'));
 
                     if (getValues !== null) {
 
-                        for (i = 0; i < getValues.length; i++) {
-                            newValues += getValues[i];
-                        }
+                        getValues.forEach(item => {
+                            newValues += item;
+                        });
 
                     } else {
 
@@ -267,7 +265,7 @@ ui.forms = {
 
                     if (maxLength !== null) {
 
-                        re = '[0-9]{1,' + maxLength + '}';
+                        let re = '[0-9]{1,' + maxLength + '}';
                         re = new RegExp(re, 'g');
 
                         that.value = newValues.match(re)[0];
@@ -305,7 +303,7 @@ ui.forms = {
 
                 function () {
 
-                    var form = ui.closest(this, '.' + ui.forms.targetText)[0];
+                    const form = ui.closest(this, '.' + ui.forms.targetText)[0];
                     ui.trigger(form, 'submit');
 
                 });
@@ -320,21 +318,18 @@ ui.forms = {
 
             function (e) {
 
-                var forms, errors, reqMessages;
-                forms = Array.prototype.slice.call(e.target);
+                const forms = Array.prototype.slice.call(e.target);
 
-                errors = ui.find('.' + ui.forms.nameError, this);
-                reqMessages = ui.find('.' + ui.forms.nameRequiredMsg, this);
+                const errors = ui.find('.' + ui.forms.nameError, this);
+                const reqMessages = ui.find('.' + ui.forms.nameRequiredMsg, this);
 
                 setTimeout(() => { // wait for form reset started on DOM
 
-                    ui.each(forms, function () {
+                    forms.forEach(el => {
 
                         // trigger defined event listeners after form clear
-                        //ui.trigger(this, 'change');
-
-                        if (!ui.hasClass(this, ui.forms.nameRequired)) { // discard required forms
-                            ui.trigger(this, 'keydown keyup');
+                        if (!ui.hasClass(el, ui.forms.nameRequired)) { // discard required forms
+                            ui.trigger(el, 'keydown keyup');
                         }
 
                     });
@@ -366,7 +361,7 @@ ui.forms = {
 
             function () {
 
-                var form = ui.find('input', this.parentElement)[0];
+                const form = ui.find('input', this.parentElement)[0];
                 form.value = '';
 
                 if (!ui.hasClass(form, ui.forms.nameRequired)) { // discard required forms

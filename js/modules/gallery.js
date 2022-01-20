@@ -77,29 +77,26 @@ ui.photoGallery = {
 
 (() => {
 
-    var
+    let
         imgTouchmove,
         pageTouchmove = false,
         pageTouchmoveTimer;
 
     ui.photoGallery.Start = () => {
 
-        var gallery, galleryCounter, imgCounter, pageYPos, imgWidth, imgHeight, loadedImages = [], loadedTitles = [];
-
-        gallery = ui.find('.' + ui.photoGallery.targetGallery);
+        let galleryCounter, imgCounter, imgWidth;
+        const gallery = ui.find('.' + ui.photoGallery.targetGallery);
 
         function checkImages () { // control vertical images
 
-            var img, newImg, imgLength;
+            const img = ui.find('a.' + ui.photoGallery.targetPhotos +' img', gallery[galleryCounter]);
 
-            img = ui.find('a.' + ui.photoGallery.targetPhotos +' img', gallery[galleryCounter]);
-
-            imgLength = img.length - 1;
+            const imgLength = img.length - 1;
             if (imgLength < 0) { return; }
 
             function imgLoader() {
 
-                newImg = new Image();
+                const newImg = new Image();
                 newImg.src = img[imgCounter].src;
 
                 img[imgCounter].src = newImg.src;
@@ -145,13 +142,13 @@ ui.photoGallery = {
 
         function galleryFnc(e, that, call) {
 
-            var i, parent, images, preview, html, index, loader, showImage, notLoadedImage, newImg, img, imgPosX, imgPosY, info, imgZoom, lastTouchEnd, waitPinchZoom;
-
-            parent = ui.closest(that, '.' + ui.photoGallery.targetGallery)[0];
+            let parent = ui.closest(that, '.' + ui.photoGallery.targetGallery)[0];
 
             if (parent === undefined) {
                 parent = ui.closest(that, '.' + ui.photoGallery.nameGalleryPassive)[0];
             }
+
+            let images;
 
             if (call === undefined) {
                 images = ui.find('a.' + ui.photoGallery.targetPhotos, parent);
@@ -180,48 +177,50 @@ ui.photoGallery = {
 
             }
 
+            let pageYPos;
+
             if (ui.userAgents.mobile) {
                 pageYPos = window.pageYOffset; // get current y scroll position
             }
 
             // get images and titles
-            ui.each(images,
+            let loadedImages = [];
+            let loadedTitles = [];
 
-                function () {
+            images.forEach(el => {
 
-                    var href = this.getAttribute('href');
+                const href = el.getAttribute('href');
 
-                    if (href !== null) {
-                        loadedImages.push(href);
+                if (href !== null) {
+                    loadedImages.push(href);
 
-                    } else {
-                        loadedImages.push(this.getAttribute(ui.photoGallery.dataHref));
-                    }
+                } else {
+                    loadedImages.push(el.getAttribute(ui.photoGallery.dataHref));
+                }
 
-                    if (ui.hasClass(this, ui.photoGallery.nameGalleryInfo)) {
-                        loadedTitles.push(ui.find(ui.photoGallery.tagGalleryInfo, this)[0].innerHTML);
+                if (ui.hasClass(el, ui.photoGallery.nameGalleryInfo)) {
+                    loadedTitles.push(ui.find(ui.photoGallery.tagGalleryInfo, el)[0].innerHTML);
 
-                    } else {
-                        loadedTitles.push(null);
-                    }
+                } else {
+                    loadedTitles.push(null);
+                }
 
-                });
+            });
 
             // detect previously opened galleries
-            preview = ui.find('.' + ui.photoGallery.targetPreview);
+            const previousOpened = ui.find('.' + ui.photoGallery.targetPreview);
+            if (previousOpened.length > 0) {
 
-            if (preview.length > 0) {
-
-                for (i = 0; i < preview.length; i++) {
-                    preview[i].parentNode.removeChild(preview[i]);
-                }
+                previousOpened.forEach(el => {
+                    el.parentNode.removeChild(el);
+                });
 
             }
 
             // create gallery
-            index = Array.prototype.slice.call(images).indexOf(that);
+            let index = Array.prototype.slice.call(images).indexOf(that);
 
-            html = '<div class="' + ui.photoGallery.targetPreview + ' ' + ui.photoGallery.stylesPreview + '">' +
+            const html = '<div class="' + ui.photoGallery.targetPreview + ' ' + ui.photoGallery.stylesPreview + '">' +
                         '<div class="' + ui.photoGallery.namePreviewBg + '"></div>' +
 
                         '<button class="' + ui.photoGallery.namePreviewClose + ' ' + ui.photoGallery.stylesCloseIcon +'">' +
@@ -244,18 +243,19 @@ ui.photoGallery = {
                     '</div>';
 
             ui.find('body')[0].insertAdjacentHTML('beforeend', html);
-            preview = ui.find('.' + ui.photoGallery.targetPreview);
+            const preview = ui.find('.' + ui.photoGallery.targetPreview);
 
             // create and load image
-            newImg = new Image();
+            const newImg = new Image();
             newImg.src = loadedImages[index];
 
-            img = ui.find('img', preview);
+            const img = ui.find('img', preview);
             img.src = newImg.src;
 
-            loader = ui.find('.' + ui.photoGallery.namePreviewLoader, preview);
+            let imgHeight;
+            const loader = ui.find('.' + ui.photoGallery.namePreviewLoader, preview);
 
-            showImage = () => {
+            const showImage = () => {
 
                 if (img.naturalWidth / img.naturalHeight < 1.33) {
                     ui.addClass(img, ui.photoGallery.targetPhotoVer);
@@ -275,7 +275,7 @@ ui.photoGallery = {
 
             }
 
-            notLoadedImage = () => {
+            const notLoadedImage = () => {
 
                 ui.addClass(loader, ui.photoGallery.namePause);
                 ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.errorIcon);
@@ -303,7 +303,7 @@ ui.photoGallery = {
                 }
 
                 // show/hide info window
-                info = ui.find('.' + ui.photoGallery.namePreviewInfo)[0];
+                const info = ui.find('.' + ui.photoGallery.namePreviewInfo)[0];
                 ui.removeClass(info, ui.photoGallery.nameOpen);
 
                 setTimeout(() => {
@@ -367,6 +367,8 @@ ui.photoGallery = {
             ui.on('.' + ui.photoGallery.namePreviewBg, 'click', closeGallery);
 
             // gallery nav
+            let imgPosX, imgPosY, imgZoom;
+
             function navigateGallery(that, direction) {
 
                 // control prev/next
@@ -456,10 +458,8 @@ ui.photoGallery = {
 
             function imgLimits() {
 
-                var horLimit, verLimit;
-
-                horLimit = (((imgWidth * imgZoom) - window.innerWidth) / (imgWidth * imgZoom)) * 100;
-                verLimit = (((imgHeight * imgZoom) - window.innerHeight) / (imgHeight * imgZoom)) * 100;
+                const horLimit = (((imgWidth * imgZoom) - window.innerWidth) / (imgWidth * imgZoom)) * 100;
+                const verLimit = (((imgHeight * imgZoom) - window.innerHeight) / (imgHeight * imgZoom)) * 100;
 
                 if (imgPosX < -horLimit - 100) { imgPosX = -horLimit - 100; } // left
                 if (imgPosX > horLimit) { imgPosX = horLimit; } // right
@@ -476,15 +476,16 @@ ui.photoGallery = {
             imgPosY = '-50';
 
             imgZoom = 1;
+            let waitPinchZoom = false;
 
             ui.on(img,
                 'touchend dblclick',
 
                 function (e) {
 
-                    var touchesLength, now, getX, getY, rect;
-
                     if (waitPinchZoom) { return; }
+
+                    let touchesLength;
 
                     if (e.type === 'dblclick') { // added double click to zoom for desktop
                         touchesLength = 1;
@@ -495,11 +496,12 @@ ui.photoGallery = {
 
                     if (touchesLength === 1) { // control number of touches
 
-                        now = new Date().getTime();
+                        let lastTouchEnd = 0;
+                        const now = new Date().getTime();
+
                         if ((e.type === 'touchend' && ((now - lastTouchEnd) <= 200 && (now - lastTouchEnd) > 0)) || e.type === 'dblclick') {
 
                             e.preventDefault();
-                            rect = img.getBoundingClientRect(); // get img DOM rect
 
                             if (ui.hasClass(this, ui.photoGallery.namePreviewZoom)) {
 
@@ -510,6 +512,9 @@ ui.photoGallery = {
                                 ui.removeClass(this, ui.photoGallery.namePreviewZoom);
 
                             } else {
+
+                                let getX, getY;
+                                const rect = img.getBoundingClientRect(); // get img DOM rect
 
                                 imgZoom = 2;
 
@@ -563,23 +568,23 @@ ui.photoGallery = {
                     if (e.target.src === undefined) { return; }
 
                     e.preventDefault();
-                    var sx, sy, x, y, pinchStart, pinch, matrix, newScale, msx, msy;
-
                     waitPinchZoom = false;
 
-                    matrix = window.getComputedStyle(img).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
+                    let matrix = window.getComputedStyle(img).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
 
                     matrix = matrix.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|'); // select only numbers
                     matrix = matrix.split('|');
 
                     // touch move image positioning
-                    msx = e.targetTouches[0].pageX;
-                    msy = e.targetTouches[0].pageY;
+                    const msx = e.targetTouches[0].pageX;
+                    const msy = e.targetTouches[0].pageY;
+
+                    let pinchStart;
 
                     if (e.targetTouches.length > 1) { // control number of touches
 
-                        sx = msx - e.targetTouches[1].pageX;
-                        sy = msy - e.targetTouches[1].pageY;
+                        const sx = msx - e.targetTouches[1].pageX;
+                        const sy = msy - e.targetTouches[1].pageY;
 
                         pinchStart = Math.sqrt(sx * sx + sy * sy); // the pythagorean distance between two points
 
@@ -604,12 +609,12 @@ ui.photoGallery = {
 
                             if (e.targetTouches.length > 1) { // control number of touches
 
-                                x = e.targetTouches[0].pageX - e.targetTouches[1].pageX;
-                                y = e.targetTouches[0].pageY - e.targetTouches[1].pageY;
+                                const x = e.targetTouches[0].pageX - e.targetTouches[1].pageX;
+                                const y = e.targetTouches[0].pageY - e.targetTouches[1].pageY;
 
-                                pinch = Math.sqrt(x * x + y * y); // the pythagorean distance between two points
+                                const pinch = Math.sqrt(x * x + y * y); // the pythagorean distance between two points
+                                const newScale = ((pinch - pinchStart) / pinch) * ((imgWidth / imgHeight) * 2);
 
-                                newScale = ((pinch - pinchStart) / pinch) * ((imgWidth / imgHeight) * 2);
                                 imgZoom = parseFloat(matrix[3]) + parseFloat(newScale);
 
                                 if (imgZoom <= ui.photoGallery.imgZoomMin) {
@@ -645,12 +650,11 @@ ui.photoGallery = {
                     if (e.target.src === null || ui.userAgents.mobile) { return; }
 
                     e.preventDefault();
-                    var msx, msy, matrix;
 
-                    msx = e.clientX;
-                    msy = e.clientY;
+                    const msx = e.clientX;
+                    const msy = e.clientY;
 
-                    matrix = window.getComputedStyle(img).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
+                    let matrix = window.getComputedStyle(img).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
 
                     matrix = matrix.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|'); // select only numbers
                     matrix = matrix.split('|');
@@ -709,8 +713,9 @@ ui.photoGallery = {
 
                 if (e.type === 'touchmove') { pageTouchmove = true; }
 
-                var that = this;
                 if (e.type === 'touchend') {
+
+                    const that = this;
 
                     clearTimeout(pageTouchmoveTimer);
                     pageTouchmoveTimer = setTimeout(function () {
@@ -761,10 +766,9 @@ ui.photoGallery = {
             function (e) {
 
                 e.preventDefault();
-                var target, count;
 
-                target = this.getAttribute(ui.photoGallery.dataTarget);
-                count = this.getAttribute(ui.photoGallery.dataCount);
+                const target = this.getAttribute(ui.photoGallery.dataTarget);
+                let count = this.getAttribute(ui.photoGallery.dataCount);
 
                 if (target === null) { return; }
 

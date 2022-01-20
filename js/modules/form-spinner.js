@@ -24,14 +24,12 @@ ui.formSpinner.Start = () => {
 
         function () {
 
-            var p, input, val, max, min;
+            const parent = ui.closest(this, '.' + ui.formSpinner.target);
+            const input = ui.find('[type="text"]', parent);
 
-            p = ui.closest(this, '.' + ui.formSpinner.target),
-            input = ui.find('[type="text"]', p);
-
-            val = Number(input.value);
-            max = input.getAttribute('max');
-            min = input.getAttribute('min');
+            let val = Number(input.value);
+            let max = input.getAttribute('max');
+            let min = input.getAttribute('min');
 
             if (ui.hasClass(this, ui.formSpinner.nameUp)) {
 
@@ -51,14 +49,12 @@ ui.formSpinner.Start = () => {
 
     ui.formSpinner.Init = () => {
 
-        ui.each('.' + ui.formSpinner.target,
+        ui.find('.' + ui.formSpinner.target).forEach(el => {
 
-            function () {
+            const that = ui.find('[type="text"]', el)[0];
+            that.value = that.getAttribute('value');
 
-                var t = ui.find('[type="text"]', this)[0];
-                t.value = t.getAttribute('value');
-
-            });
+        });
 
     };
     ui.formSpinner.Init();

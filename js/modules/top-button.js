@@ -40,7 +40,6 @@ ui.topButton = {
 
                     if (!ui.hasClass(topBtn, ui.topButton.nameOpen)) {
 
-                        topBtn.style.display = 'block';
                         ui.addClass(topBtn, ui.topButton.nameOpen);
 
                         setTimeout(() => {
@@ -56,10 +55,7 @@ ui.topButton = {
                         ui.removeClass(topBtn, ui.topButton.nameOpenEase);
 
                         setTimeout(() => {
-
                             ui.removeClass(topBtn, ui.topButton.nameOpen);
-                            topBtn.style.display = 'none';
-
                         }, ui.globals.slow);
 
                     }
@@ -76,7 +72,7 @@ ui.topButton = {
 
         if (ui.userAgents.desktop) {
 
-            var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + '" title="' + ui.topButton.titleText + '" style="display: none;">' +
+            var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + '" title="' + ui.topButton.titleText + '">' +
                             '<svg class="' + ui.topButton.stylesIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.topButton.icon + '"/></svg>' +
                         '</button>';
 
