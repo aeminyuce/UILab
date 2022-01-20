@@ -18,10 +18,10 @@ global.document = window.document;
 const el = global.document.querySelector("div");
 
 // test js file
-import * as ui from './../../dist/js/ui.js';
+import { default as addClass } from './../../js/core/addclass.js';
 
 const classname = 'test-classname';
-ui.addClass(el, classname);
+addClass(el, classname);
 
 // asserts
 describe("Core AddClass", () => {
