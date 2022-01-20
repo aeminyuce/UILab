@@ -3,25 +3,20 @@ const assert = require("chai").assert;
 const { JSDOM } = require("jsdom");
 
 // create dom
-const options = {}
-
-const { window } = new JSDOM(`
+const dom = new JSDOM(`
 
     <!DOCTYPE html>
     <div></div>
 
-`, options);
-
-global.window = window;
-global.document = window.document;
-
-const el = global.document.querySelector("div");
+`);
 
 // test js file
-import { default as addClass } from './../../js/core/addclass.js';
+import * as ui from '../../js/ui.js';
 
 const classname = 'test-classname';
-addClass(el, classname);
+const el = dom.window.document.querySelector("div");
+
+ui.addClass(el, classname);
 
 // asserts
 describe("Core AddClass", () => {
