@@ -1,20 +1,10 @@
 // requires
 const assert = require("chai").assert;
-const { JSDOM } = require("jsdom");
-
-// create dom
-const dom = new JSDOM(`
-
-    <!DOCTYPE html>
-    <div></div>
-
-`);
-
-// test js file
 import * as ui from '../../js/ui.js';
 
+// test
 const classname = 'test-classname';
-const el = dom.window.document.querySelector("div");
+const el = document.querySelector("div");
 
 ui.addClass(el, classname);
 
