@@ -9,7 +9,7 @@ npm i -D rollup eslint
 
 // Test
 npm i -D @babel/register
-npm i -D mocha chai jsdom
+npm i -D mocha chai puppeteer
 
 // Icon
 npm i -D svgo svgstore-cli

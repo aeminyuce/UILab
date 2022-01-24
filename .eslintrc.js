@@ -40,6 +40,8 @@ module.exports = {
         "console": true,
 
         "global": true,
+        "__dirname": true,
+
         "describe": true,
         "before": true,
         "it": true,

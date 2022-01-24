@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Core AddClass</title>
+
+    <!-- charset -->
+    <meta charset="utf-8" />
+
+    <!-- scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- no caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- UI -->
+    <link href="../../dist/css/ui.css" rel="stylesheet">
+    <script src="../../dist/js/ui.js"></script>
+
+    <script>
+
+        // globals
+        ui.globals.iconSrc = '../../dist/icons.svg';
+
+        // loader
+        ui.onload(function () {
+
+            var result;
+
+            // adding single classname to single element
+            ui.addClass('#single', 'single-classname');
+
+            if (ui.hasClass('#single', 'single-classname')) {
+                result = '<i class="ui-color-green">Passing</i>';
+
+            } else {
+                result = '<i class="ui-color-red">Failing</i>';
+            }
+
+            ui.find('#single-result')[0].innerHTML = result;
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="ui-header-sticky ui-container ui-form-lg ui-theme-base ui-invert-bg ui-fill-dark-100 ui-ease-layout" data-ui-classes="ui-shadow-lg">
+        <div class="ui-row">
+            <div class="ui-col-12">
+                <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-square ui-btn-ghost ui-circle ui-icons-no-opacity ui-float-r ui-ease-btn">
+                    <svg class="ui-icon ui-visible-dark"><use href="../../dist/icons.svg#moon"/></svg>
+                    <svg class="ui-icon ui-visible-light"><use href="../../dist/icons.svg#sun"/></svg>
+                </button>
+                <h1 class="ui-h1 ui-font-18 ui-align-l ui-p-15">Add Classname Test</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="ui-container ui-no-gutter">
+        <div class="ui-fixed ui-p-30-v">
+
+            <!-- test results -->
+            <pre class="ui-pre ui-ease-pre ui-round ui-m-30-b">ui.addClass(element, '.class');<br>ui.addClass(element, '.class .class ...');</pre>
+
+            <ul>
+                <li id="single">
+                    Adding single classname to single element:<br>
+                    <span id="single-result"></span>
+                </li>
+            </ul>
+
+        </div>
+    </main>
+
+</body>
+</html>
