@@ -1,5 +1,10 @@
 {
   "name": "ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeminyuce/UILab.git"
+  },
+  "license": "MIT",
   "scripts": {
     "css:build": "npm run css:ui & npm run css:helpers & npm run css:pages",
     "css:ui": "lessc less/ui.less dist/css/ui.css",
