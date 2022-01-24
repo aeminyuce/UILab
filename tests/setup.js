@@ -7,16 +7,20 @@ const options = {
     runScripts: "outside-only"
 }
 
-const dom = new JSDOM(`
-
-    <!DOCTYPE html>
-    <div></div>
-
-`, options);
+const dom = new JSDOM(`<!DOCTYPE html>`, options);
 
 // globals
 global.window = dom.window;
 global.document = dom.window.document;
+
+document = {
+
+    ...document,
+
+    addEventListener: () => { },
+    removeEventListener: () => { }
+
+}
 
 window.matchMedia = () => {
     return { matches: false }
@@ -32,4 +36,4 @@ global.navigator = {
     language: "en-EN",
     appVersion: "Win"
 
-};
+}
