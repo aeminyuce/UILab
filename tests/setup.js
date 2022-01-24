@@ -13,6 +13,14 @@ const dom = new JSDOM(`<!DOCTYPE html>`, options);
 global.window = dom.window;
 global.document = dom.window.document;
 
+global.navigator = {
+
+    userAgent: "Chrome",
+    language: "en-EN",
+    appVersion: "Win"
+
+}
+
 document = {
 
     ...document,
@@ -29,11 +37,3 @@ window.matchMedia = () => {
 global.Element = window.Element;
 global.Image = window.Image;
 global.NodeList = window.NodeList;
-
-global.navigator = {
-
-    userAgent: "Chrome",
-    language: "en-EN",
-    appVersion: "Win"
-
-}
