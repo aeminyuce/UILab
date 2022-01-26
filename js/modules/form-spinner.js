@@ -49,12 +49,14 @@ ui.formSpinner.Start = () => {
 
     ui.formSpinner.Init = () => {
 
-        ui.find('.' + ui.formSpinner.target).forEach(el => {
+        Array.prototype.forEach.call(ui.find('.' + ui.formSpinner.target),
 
-            const that = ui.find('[type="text"]', el)[0];
-            that.value = that.getAttribute('value');
+            el => {
 
-        });
+                const that = ui.find('[type="text"]', el)[0];
+                that.value = that.getAttribute('value');
+
+            });
 
     };
     ui.formSpinner.Init();

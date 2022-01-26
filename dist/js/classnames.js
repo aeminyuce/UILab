@@ -58,7 +58,7 @@ ui.classnames.Start = function () {
             var jsStyleList = jsClass.toString().split(' ');
 
             if (jsStyleList.length > 1) {
-              jsStyleList.forEach(function (style) {
+              Array.prototype.forEach.call(jsStyleList, function (style) {
                 loaded.push(style);
               });
             } else if (jsClass !== '') {
@@ -69,13 +69,13 @@ ui.classnames.Start = function () {
       }
     }
 
-    ui.ajax.classNames.forEach(function (name) {
+    Array.prototype.forEach.call(ui.ajax.classNames, function (name) {
       loaded.push(name);
     });
     loaded = loaded.filter(function (value, index, self) {
       return self.indexOf(value) === index;
     });
-    loaded.forEach(function (name) {
+    Array.prototype.forEach.call(loaded, function (name) {
       var reStart = ui.classnames.prefix + '-+\\w+';
       reStart = new RegExp(reStart, 'g');
       var reDuplicate = '(' + ui.classnames.prefix + '-)|(-' + ui.classnames.prefix + ')';
@@ -110,11 +110,11 @@ ui.classnames.Start = function () {
       alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + ui.classnames.msgErrors + '</li>');
     }
 
-    arr.error.forEach(function (name) {
+    Array.prototype.forEach.call(arr.error, function (name) {
       alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesError + '">' + name + '</li>');
     });
     arr.warning = arr.warning.sort();
-    arr.warning.forEach(function (name) {
+    Array.prototype.forEach.call(arr.warning, function (name) {
       if (lastAddedWarning === '' || lastAddedWarning.split('-')[0] !== name.split('-')[0]) {
         alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + name.split('-')[0] + '</li>');
       }
@@ -195,14 +195,14 @@ ui.classnames.Start = function () {
       return title;
     };
 
-    arr.list.forEach(function (name) {
+    Array.prototype.forEach.call(arr.list, function (name) {
       var title = filterClassnames(name);
 
       if (arr.filtered.indexOf(title) === -1) {
         arr.filtered.push(title);
       }
     });
-    arr.list.forEach(function (name) {
+    Array.prototype.forEach.call(arr.list, function (name) {
       var title = filterClassnames(name);
 
       if (arr.filtered.indexOf(title) > -1) {
@@ -218,7 +218,7 @@ ui.classnames.Start = function () {
     arr.filtered = arr.filtered.sort(function (a, b) {
       return a.localeCompare(b);
     });
-    arr.filtered.forEach(function (name) {
+    Array.prototype.forEach.call(arr.filtered, function (name) {
       items = arr.groups[name].split(',');
       items = items.sort(function (a, b) {
         return a.length - b.length || a.localeCompare(b, undefined, {
@@ -227,7 +227,7 @@ ui.classnames.Start = function () {
         });
       });
       html = '<h4 class="' + ui.classnames.stylesCatTite + '">' + name + '</h4>' + '<div class="' + ui.classnames.stylesCatCard + '">' + '<div class="' + ui.classnames.stylesCatRow + '">';
-      items.forEach(function (item, i) {
+      Array.prototype.forEach.call(items, function (item, i) {
         if (parseInt(i / ui.classnames.listColLength) === i / ui.classnames.listColLength) {
           if (i !== 0) {
             html += '</ul></div>';

@@ -96,7 +96,7 @@ ui.on = function (self, e, that, callback) {
     if (callback !== undefined) {
       callFnc = function callFnc(event) {
         var eName = e.split('.')[0];
-        ui.find(that).forEach(function (el) {
+        Array.prototype.forEach.call(ui.find(that), function (el) {
           if (ui.globals.nonClosestElems.indexOf(eName) > -1) {
             if (event.target === el) {
               callback.call(el, event, event.toElement);
@@ -120,7 +120,7 @@ ui.on = function (self, e, that, callback) {
         if (isWindowEvent) {
           if (ua.indexOf("MSIE ") > 0 || !!document.documentMode || ua.indexOf('edge') > -1) {
             setTimeout(function () {
-              l.addEventListener(e, that, true);
+              nodelist.addEventListener(e, that, true);
             }, ui.globals.ease);
           }
         }
@@ -156,9 +156,9 @@ ui.on = function (self, e, that, callback) {
         if (delegate || isWindowEvent || customEvent) {
           if (ui.handlers[pt][pe].length === 1) {
             pt.addEventListener(pe.split('.')[0], function (ev) {
-              ui.handlers[pt][pe].forEach(function (fnc) {
-                fnc(ev);
-              });
+              for (var i = 0; i < ui.handlers[pt][pe].length; i++) {
+                ui.handlers[pt][pe][i](ev);
+              }
             }, true);
           }
         } else {
@@ -169,20 +169,22 @@ ui.on = function (self, e, that, callback) {
       }
     };
 
-    var l = ui.find(self);
+    var nodelist = ui.find(self);
 
     if (isWindowEvent) {
-      handlerFnc(l, e);
+      handlerFnc(nodelist, e);
     } else {
-      l.forEach(function (el) {
+      Array.prototype.forEach.call(nodelist, function (el) {
         handlerFnc(el, e);
       });
     }
   };
 
-  e.split(' ').forEach(function (name) {
-    set(name);
-  });
+  var arr = e.split(' ');
+
+  for (var j = 0; j < arr.length; j++) {
+    set(arr[j]);
+  }
 };
 
 ui.off = function (that, e) {
@@ -190,10 +192,10 @@ ui.off = function (that, e) {
     var handlerFnc = function handlerFnc(pt, pe) {
       if (ui.handlers[pt] !== undefined) {
         if (ui.handlers[pt][pe] !== undefined) {
-          ui.handlers[pt][pe].forEach(function (name) {
-            pt.removeEventListener(pe.split('.')[0], name, true);
-            ui.handlers[pt][pe].splice(name, 1);
-          });
+          for (var i = 0; i < ui.handlers[pt][pe].length; i++) {
+            pt.removeEventListener(pe.split('.')[0], ui.handlers[pt][pe][i], true);
+            ui.handlers[pt][pe].splice(ui.handlers[pt][pe][i], 1);
+          }
         }
       }
     };
@@ -203,15 +205,17 @@ ui.off = function (that, e) {
     if (nodeList.length === 0) {
       handlerFnc(nodeList, e);
     } else {
-      nodeList.forEach(function (el) {
+      Array.prototype.forEach.call(nodeList, function (el) {
         handlerFnc(el, e);
       });
     }
   };
 
-  e.split(' ').forEach(function (name) {
-    callFnc(name);
-  });
+  var arr = e.split(' ');
+
+  for (var j = 0; j < arr.length; j++) {
+    callFnc(arr[j]);
+  }
 };
 
 ui.onload = function (callback) {
@@ -233,9 +237,9 @@ ui.onload = function (callback) {
     if (typeof pe !== 'function' && callback !== undefined) {
       if (ui.handlers[pt][pe].length === 1) {
         pt.addEventListener(pe.split('.')[0], function (ev) {
-          ui.handlers[pt][pe].forEach(function (fnc) {
-            fnc(ev);
-          });
+          for (var i = 0; i < ui.handlers[pt][pe].length; i++) {
+            ui.handlers[pt][pe][i](ev);
+          }
         }, true);
       }
     } else {
@@ -269,14 +273,16 @@ ui.trigger = function (that, e) {
       event.initEvent(e, true, false);
     }
 
-    ui.find(that).forEach(function (el) {
+    Array.prototype.forEach.call(ui.find(that), function (el) {
       el.dispatchEvent(event);
     });
   };
 
-  e.split(' ').forEach(function (name) {
-    callFnc(name);
-  });
+  var arr = e.split(' ');
+
+  for (var i = 0; i < arr.length; i++) {
+    callFnc(arr[i]);
+  }
 };
 
 ui.hasClass = function (that, name) {
@@ -297,32 +303,34 @@ ui.hasClass = function (that, name) {
 ui.addClass = function (that, name) {
   var arr;
   var re = new RegExp('^\\s+|\\s+$');
-  ui.find(that).forEach(function (el) {
-    name.split(' ').forEach(function (item) {
+  name = name.split(' ');
+  Array.prototype.forEach.call(ui.find(that), function (el) {
+    for (var i = 0; i < name.length; i++) {
       if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) {
         arr = el.className.baseVal.split(' ');
 
-        if (arr.indexOf(item) === -1) {
-          el.className.baseVal += ' ' + item;
+        if (arr.indexOf(name[i]) === -1) {
+          el.className.baseVal += ' ' + name[i];
           el.className.baseVal = el.className.baseVal.replace(re, '');
         }
       } else {
         arr = el.className.split(' ');
 
-        if (arr.indexOf(item) === -1) {
-          el.className += ' ' + item;
+        if (arr.indexOf(name[i]) === -1) {
+          el.className += ' ' + name[i];
           el.className = el.className.replace(re, '');
         }
       }
-    });
+    }
   });
 };
 
 ui.removeClass = function (that, name) {
   var rex = new RegExp('^\\s+|\\s+$');
-  ui.find(that).forEach(function (el) {
-    name.split(' ').forEach(function (item) {
-      var re = new RegExp('(\\s|^)' + item + '(\\s|$)');
+  name = name.split(' ');
+  Array.prototype.forEach.call(ui.find(that), function (el) {
+    for (var i = 0; i < name.length; i++) {
+      var re = new RegExp('(\\s|^)' + name[i] + '(\\s|$)');
 
       if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) {
         el.className.baseVal = el.className.baseVal.replace(re, ' ').replace(rex, '');
@@ -333,14 +341,15 @@ ui.removeClass = function (that, name) {
           el.removeAttribute('class');
         }
       }
-    });
+    }
   });
 };
 
 ui.toggleClass = function (that, name) {
   var arr, newArr, index, isSvgElements;
   var re = new RegExp('^\\s+|\\s+$');
-  ui.find(that).forEach(function (el) {
+  name = name.split(' ');
+  Array.prototype.forEach.call(ui.find(that), function (el) {
     isSvgElements = ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1;
 
     if (isSvgElements) {
@@ -349,14 +358,14 @@ ui.toggleClass = function (that, name) {
       arr = el.className.split(' ');
     }
 
-    name.split(' ').forEach(function (item) {
+    for (var i = 0; i < name.length; i++) {
       newArr = arr;
-      index = newArr.indexOf(item);
+      index = newArr.indexOf(name[i]);
 
       if (index >= 0) {
         newArr.splice(index, 1);
       } else {
-        newArr.push(item);
+        newArr.push(name[i]);
       }
 
       if (isSvgElements) {
@@ -370,7 +379,7 @@ ui.toggleClass = function (that, name) {
           el.className = newArr;
         }
       }
-    });
+    }
   });
 };
 
@@ -393,7 +402,7 @@ ui.closest = function (that, outer) {
   }
 
   var elems = [];
-  ui.find(that).forEach(function (el) {
+  Array.prototype.forEach.call(ui.find(that), function (el) {
     parentEl = el.parentNode;
 
     while (parentEl) {
@@ -620,15 +629,18 @@ ui.onload(function () {
     }
   }
 
-  decodeURIComponent(document.cookie).split('; ').forEach(function (item) {
-    var cookies = item.split('=');
+  var state = decodeURIComponent(document.cookie).split('; ');
+
+  for (var i = 0; i < state.length; i++) {
+    var cookies = state[i].split('=');
     var cookie = cookies[0];
     cookie = cookie.replace(/^\s+|\s+$/g, '');
 
     if (cookie === ui.darkMode.cookieName) {
       mode = cookies[1];
     }
-  });
+  }
+
   var doc = ui.find(ui.darkMode.target)[0];
   doc.setAttribute(ui.darkMode.dataMod, mode);
 
@@ -848,7 +860,7 @@ ui.dropdown = {
     ui.removeClass(that, ui.dropdown.nameOpenEase);
     clearTimeout(dropdownLeaveTimer);
     dropdownLeaveTimer = setTimeout(function () {
-      that.forEach(function (el) {
+      Array.prototype.forEach.call(that, function (el) {
         clearTimeout(dropdownCloseTimer);
         var list = ui.find('.' + ui.dropdown.nameMenu, el)[0];
         dropdownCloseTimer = setTimeout(function () {
@@ -1438,7 +1450,7 @@ ui.autocomplete.Start = function () {
             ui.ajax({
               url: src + '?' + ui.autocomplete.queryParameter + '=' + val,
               beforesend: function beforesend(xhr) {
-                autocompleteRequests.forEach(function (item, n) {
+                Array.prototype.forEach.call(autocompleteRequests, function (item, n) {
                   item.abort();
                   autocompleteRequests.splice(n, 1);
                 });
@@ -1456,7 +1468,7 @@ ui.autocomplete.Start = function () {
                     }, 0);
                     ui.removeClass(parent, ui.autocomplete.nameMenuTop);
                     list[0].innerHTML = '';
-                    response.forEach(function (item) {
+                    Array.prototype.forEach.call(response, function (item) {
                       var key = item[getVal];
                       var txt = '';
 
@@ -1772,14 +1784,14 @@ ui.dualMultiSelect = {
 
   ui.dualMultiSelect.Start = function () {
     resetOptions = function resetOptions(selects, isSubmit) {
-      ui.find('option', selects[0]).forEach(function (item) {
+      Array.prototype.forEach.call(ui.find('option', selects[0]), function (item) {
         if (ui.userAgents.mobile) {
           item.selected = true;
         } else {
           item.selected = false;
         }
       });
-      ui.find('option', selects[1]).forEach(function (item) {
+      Array.prototype.forEach.call(ui.find('option', selects[1]), function (item) {
         if (ui.userAgents.mobile || isSubmit !== undefined) {
           item.selected = true;
         } else {
@@ -1789,7 +1801,7 @@ ui.dualMultiSelect = {
     };
 
     ui.dualMultiSelect.Init = function () {
-      ui.find('.' + ui.dualMultiSelect.target).forEach(function (el) {
+      Array.prototype.forEach.call(ui.find('.' + ui.dualMultiSelect.target), function (el) {
         var arr = [];
         var arrStart = [];
         var selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', el);
@@ -1797,7 +1809,7 @@ ui.dualMultiSelect = {
         selects[0].removeAttribute('name');
         selects[1].name = name;
         var options = ui.find('option', selects[0]);
-        options.forEach(function (item) {
+        Array.prototype.forEach.call(options, function (item) {
           var index = item.getAttribute(ui.dualMultiSelect.dataIndex);
 
           if (index !== null && index !== '' && !isNaN(index)) {
@@ -1827,7 +1839,7 @@ ui.dualMultiSelect = {
           }
         }
 
-        options.forEach(function (item, i) {
+        Array.prototype.forEach.call(options, function (item, i) {
           item.setAttribute(ui.dualMultiSelect.dataIndex, arr[i]);
 
           if (userArr.length > 0) {
@@ -1917,11 +1929,11 @@ ui.dualMultiSelect = {
     });
     ui.on(document, 'reset', 'form', function () {
       setTimeout(function () {
-        ui.find('.' + ui.dualMultiSelect.target).forEach(function (el) {
+        Array.prototype.forEach.call(ui.find('.' + ui.dualMultiSelect.target), function (el) {
           var index;
           var selected;
           var selects = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', el);
-          ui.find('option', selects[1]).forEach(function (item) {
+          Array.prototype.forEach.call(ui.find('option', selects[1]), function (item) {
             selected = item.getAttribute('selected');
             index = Number(item.getAttribute(ui.dualMultiSelect.dataIndex)) - 1;
 
@@ -1930,7 +1942,7 @@ ui.dualMultiSelect = {
             }
           });
           var targetList = ui.find('option', selects[1]);
-          ui.find('option', selects[0]).forEach(function (item) {
+          Array.prototype.forEach.call(ui.find('option', selects[0]), function (item) {
             selected = item.getAttribute('selected');
 
             if (selected !== null) {
@@ -1946,7 +1958,7 @@ ui.dualMultiSelect = {
       }, 0);
     });
     ui.on(document, 'submit', 'form', function (e) {
-      Array.prototype.slice.call(e.target).forEach(function (item) {
+      Array.prototype.forEach.call(e.target, function (item) {
         if (item.tagName === 'SELECT' && item.multiple) {
           var selects = ui.closest(item, '.' + ui.dualMultiSelect.target)[0];
           var multi = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', selects);
@@ -2042,7 +2054,7 @@ ui.forms = {
     };
 
     ui.forms.Init = function () {
-      ui.find('.' + ui.forms.targetText + '.' + ui.forms.nameHasClear + ' input').forEach(function (el) {
+      Array.prototype.forEach.call(ui.find('.' + ui.forms.targetText + '.' + ui.forms.nameHasClear + ' input'), function (el) {
         setTimeout(function () {
           clearForms(el);
         }, 0);
@@ -2108,7 +2120,7 @@ ui.forms = {
         var getValues = that.value.match(new RegExp(/[0-9]/, 'g'));
 
         if (getValues !== null) {
-          getValues.forEach(function (item) {
+          Array.prototype.forEach.call(getValues, function (item) {
             newValues += item;
           });
         } else {
@@ -2143,7 +2155,7 @@ ui.forms = {
       var errors = ui.find('.' + ui.forms.nameError, this);
       var reqMessages = ui.find('.' + ui.forms.nameRequiredMsg, this);
       setTimeout(function () {
-        forms.forEach(function (el) {
+        Array.prototype.forEach.call(forms, function (el) {
           if (!ui.hasClass(el, ui.forms.nameRequired)) {
             ui.trigger(el, 'keydown keyup');
           }
@@ -2205,7 +2217,7 @@ ui.formSpinner.Start = function () {
   });
 
   ui.formSpinner.Init = function () {
-    ui.find('.' + ui.formSpinner.target).forEach(function (el) {
+    Array.prototype.forEach.call(ui.find('.' + ui.formSpinner.target), function (el) {
       var that = ui.find('[type="text"]', el)[0];
       that.value = that.getAttribute('value');
     });
@@ -2561,6 +2573,7 @@ ui.icons.Start = function () {
         callback: function callback(status, response) {
           if (status === 'success') {
             page.insertAdjacentHTML('afterbegin', response);
+            ui.find('body > svg')[0].style.display = 'none';
             iconsList = '';
           }
         }
@@ -2959,7 +2972,7 @@ ui.alerts = {
 
         if (holder !== undefined) {
           var prev = ui.find('.' + ui.alerts.targetMsg + '.' + ui.alerts.namePosPrefix + props.pos);
-          prev.forEach(function (el, j, arr) {
+          Array.prototype.forEach.call(prev, function (el, j, arr) {
             var slide = 0;
 
             for (var i = j + 1; i < arr.length; i++) {
@@ -2989,7 +3002,7 @@ ui.alerts = {
     ui.on(document, 'click', '.' + ui.alerts.targetMsg, function () {
       var _this = this;
 
-      messageQueue.forEach(function (el, i) {
+      Array.prototype.forEach.call(messageQueue, function (el, i) {
         if (el[0] === _this) {
           messageQueue.splice(i, 1);
         }
@@ -3165,7 +3178,7 @@ ui.calendar.Start = function () {
       html += '<th>' + ui.calendar.days[ui.calendar.days.length - 1] + '</th>';
     }
 
-    ui.calendar.days.forEach(function (item) {
+    Array.prototype.forEach.call(ui.calendar.days, function (item) {
       html += '<th>' + item + '</th>';
     });
     html += '</thead>' + '<tbody>';
@@ -3265,7 +3278,7 @@ ui.calendar.Start = function () {
               return;
             }
 
-            response.forEach(function (item) {
+            Array.prototype.forEach.call(response, function (item) {
               if (item === null) {
                 return;
               }
@@ -3315,7 +3328,7 @@ ui.calendar.Start = function () {
     var calendars = ui.find('.' + ui.calendar.target + ':not(.' + ui.calendar.nameActive + ')');
 
     if (calendars.length > 0) {
-      calendars.forEach(function (el) {
+      Array.prototype.forEach.call(calendars, function (el) {
         createFnc(el);
       });
     }
@@ -3369,7 +3382,7 @@ ui.calendar.Start = function () {
     } else {
       panelType = 'month';
       var month = ui.calendar.months[date.getMonth()];
-      ui.calendar.months.forEach(function (item, i) {
+      Array.prototype.forEach.call(ui.calendar.months, function (item, i) {
         html += '<li>' + '<button type="button" tabindex="-1" ';
 
         if (month === item) {
@@ -3425,7 +3438,7 @@ ui.calendar.Start = function () {
     }
 
     if (type === 'continuous') {
-      allPickers.forEach(function (item, i) {
+      Array.prototype.forEach.call(allPickers, function (item, i) {
         ui.removeClass(item, ui.calendar.nameOpenEase);
         setTimeout(function () {
           var that = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target)[i];
@@ -3439,7 +3452,7 @@ ui.calendar.Start = function () {
         }, ui.globals.ease);
       });
     } else {
-      allPickers.forEach(function (item) {
+      Array.prototype.forEach.call(allPickers, function (item) {
         var form = item.parentElement;
         ui.removeClass(item, ui.calendar.nameOpenEase);
         setTimeout(function () {
@@ -3775,7 +3788,7 @@ ui.carousel = {
     }
 
     size = Math.round(that.offsetWidth / size);
-    contents.forEach(function (item) {
+    Array.prototype.forEach.call(contents, function (item) {
       item.style.width = size + 'px';
     });
     size = size * contents.length;
@@ -3794,7 +3807,7 @@ ui.carousel = {
     ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
     ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
     filterDots(navDots, navDotsEl, counts[i], i);
-    contents.forEach(function (item, l) {
+    Array.prototype.forEach.call(contents, function (item, l) {
       if (l + 1 > col) {
         return;
       }
@@ -3876,7 +3889,7 @@ ui.carousel = {
     getSlideSpeed(slider, contentsEase[i], i);
 
     if (contents.length > 1 && contents.length !== col) {
-      contents.forEach(function (item) {
+      Array.prototype.forEach.call(contents, function (item) {
         carouselAnimate(item, contentsEase[i], 'static');
       });
     }
@@ -3888,7 +3901,7 @@ ui.carousel = {
     }
 
     if (e === 'resize' || e.type === 'resize') {
-      ui.find('.' + ui.carousel.target).forEach(function (el) {
+      Array.prototype.forEach.call(ui.find('.' + ui.carousel.target), function (el) {
         var i = Number(el.getAttribute(ui.carousel.dataID));
 
         if (i === null) {
@@ -3906,7 +3919,7 @@ ui.carousel = {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function () {
       var that = ui.find('.' + ui.carousel.target);
-      that.forEach(function (el) {
+      Array.prototype.forEach.call(that, function (el) {
         var i = Number(el.getAttribute(ui.carousel.dataID));
 
         if (i === null) {
@@ -3933,7 +3946,7 @@ ui.carousel = {
     var carousels = ui.find('.' + ui.carousel.target + ':not(.' + ui.carousel.nameActive + ')');
 
     if (carousels.length > 0) {
-      carousels.forEach(function (el) {
+      Array.prototype.forEach.call(carousels, function (el) {
         el.setAttribute(ui.carousel.dataID, idCount);
         var j = idCount;
         idCount += 1;
@@ -4030,7 +4043,7 @@ ui.carousel = {
 
         var navDotsHtml = '';
         navDots.innerHTML = '';
-        contents.forEach(function () {
+        Array.prototype.forEach.call(contents, function () {
           navDotsHtml += '<' + ui.carousel.tagDots + ' ' + 'class="' + ui.carousel.stylesDots + '">' + '</' + ui.carousel.tagDots + '>';
         });
         navDots.insertAdjacentHTML('beforeend', navDotsHtml);
@@ -4053,7 +4066,7 @@ ui.carousel = {
           }, autoTimer[j]);
         }
       });
-      ui.find('.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs).forEach(function (el) {
+      Array.prototype.forEach.call(ui.find('.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs), function (el) {
         var images = ui.find('.' + ui.carousel.namePhoto, el);
 
         if (images.length <= 1) {
@@ -4121,11 +4134,11 @@ ui.carousel = {
       var callCarousels = ui.find('.' + ui.carousel.target + '[' + ui.carousel.dataSlide + ']');
 
       if (document.hidden) {
-        callCarousels.forEach(function (el) {
+        Array.prototype.forEach.call(callCarousels, function (el) {
           carouselStop(el);
         });
       } else {
-        callCarousels.forEach(function (el) {
+        Array.prototype.forEach.call(callCarousels, function (el) {
           carouselStart(el);
         });
       }
@@ -4263,7 +4276,7 @@ ui.carousel = {
                 }, autoTimer[i]);
               }
 
-              contents.forEach(function (item) {
+              Array.prototype.forEach.call(contents, function (item) {
                 carouselAnimate(item, contentsEase[i], 'touch');
               });
               ui.removeClass(document, ui.carousel.nameTouchMove);
@@ -4329,7 +4342,7 @@ ui.countdown = {
     }
 
     var arr = [];
-    countdown.forEach(function (el, i) {
+    Array.prototype.forEach.call(countdown, function (el, i) {
       var date = new Date();
       var day = ui.find('.' + ui.countdown.nameDay, el)[0];
 
@@ -4391,7 +4404,7 @@ ui.countdown = {
 
     clearInterval(countdownTimer);
     countdownTimer = setInterval(function () {
-      countdown.forEach(function (el, i) {
+      Array.prototype.forEach.call(countdown, function (el, i) {
         var dateLeft = calc(arr[i] - new Date());
         dateLeft = dateLeft.split(':');
         var day = ui.find('.' + ui.countdown.nameDay, el)[0];
@@ -4694,7 +4707,7 @@ ui.datatable = {
         evenList(list[i]);
       }
     } else {
-      list.forEach(function (item) {
+      Array.prototype.forEach.call(list, function (item) {
         evenList(item);
       });
     }
@@ -4741,7 +4754,7 @@ ui.datatable = {
     var buttons = ui.find('[' + ui.datatable.dataSort + ']', that);
     ui.removeClass(buttons, ui.datatable.nameActive);
     ui.addClass(this, ui.datatable.nameActive);
-    buttons.forEach(function (el) {
+    Array.prototype.forEach.call(buttons, function (el) {
       if (!ui.hasClass(el, ui.datatable.nameActive)) {
         ui.removeClass(el, ui.datatable.nameAsc + ' ' + ui.datatable.nameDesc);
         ui.find('.' + ui.datatable.nameIcon + ' use', el)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
@@ -4776,7 +4789,7 @@ ui.datatable = {
     }
 
     var gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
-    ui.find('.' + ui.datatable.nameListContent, gridContainer).forEach(function (el) {
+    Array.prototype.forEach.call(ui.find('.' + ui.datatable.nameListContent, gridContainer), function (el) {
       temp.appendChild(el);
     });
     var arr = [];
@@ -4790,7 +4803,7 @@ ui.datatable = {
     }
 
     var list = ui.find('.' + ui.datatable.nameListContent, temp);
-    list.forEach(function (el) {
+    Array.prototype.forEach.call(list, function (el) {
       var val = el.getAttribute(ui.datatable.dataVal);
 
       if (val !== null && val !== '') {
@@ -4842,7 +4855,7 @@ ui.datatable = {
     var vals = [];
     var indexes = [];
     var id = that.getAttribute(ui.datatable.dataID);
-    ui.find('.' + ui.datatable.nameFilter, that).forEach(function (el, i) {
+    Array.prototype.forEach.call(ui.find('.' + ui.datatable.nameFilter, that), function (el, i) {
       if (firstLoading) {
         vals = loadedVals[id].split(',');
 
@@ -4851,7 +4864,7 @@ ui.datatable = {
             el.checked = true;
           }
         } else if (el.tagName === 'SELECT') {
-          el.options.forEach(function (item) {
+          Array.prototype.forEach.call(el.options, function (item) {
             if (customLowerCase(item.innerText) === vals[i]) {
               var index = Array.prototype.slice.call(el.options).indexOf(item);
               el.selectedIndex = index;
@@ -4906,19 +4919,19 @@ ui.datatable = {
         return filterVal !== '';
       });
       var gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
-      ui.find('.' + ui.datatable.nameListContent, gridContainer).forEach(function (el) {
+      Array.prototype.forEach.call(ui.find('.' + ui.datatable.nameListContent, gridContainer), function (el) {
         temp.appendChild(el);
       });
       var checkAll = ui.find('.' + ui.datatable.nameCheckAll, that);
 
       if (checkAll.length > 0) {
-        checkAll.forEach(function (item) {
+        Array.prototype.forEach.call(checkAll, function (item) {
           item.checked = false;
         });
       }
 
       list = ui.find('.' + ui.datatable.nameListContent, temp);
-      list.forEach(function (el) {
+      Array.prototype.forEach.call(list, function (el) {
         if (ui.hasClass(el, ui.datatable.nameChecked)) {
           ui.removeClass(el, ui.datatable.nameChecked);
           ui.find('.' + ui.datatable.nameCheck, el)[0].checked = false;
@@ -4927,14 +4940,14 @@ ui.datatable = {
 
       if (activeFilters.length > 0) {
         ui.addClass(that, ui.datatable.nameListFiltered);
-        list.forEach(function (el) {
+        Array.prototype.forEach.call(list, function (el) {
           var passed = [];
           contentVal = el.getAttribute(ui.datatable.dataVal);
 
           if (contentVal !== null && contentVal !== '') {
             contentVal = customLowerCase(contentVal);
             contentArr = contentVal.split(ui.datatable.valueSplit);
-            vals.forEach(function (item, j) {
+            Array.prototype.forEach.call(vals, function (item, j) {
               if (item !== '') {
                 if (indexes[j] === '') {
                   if (contentVal.replace(/\|/g, ' ').match(item) !== null) {
@@ -5008,7 +5021,7 @@ ui.datatable = {
 
     var that = ui.closest(this, '.' + ui.datatable.target)[0];
     var checked = this.checked;
-    ui.find('.' + ui.datatable.nameListContent, that).forEach(function (el) {
+    Array.prototype.forEach.call(ui.find('.' + ui.datatable.nameListContent, that), function (el) {
       if (checked) {
         if (ui.hasClass(that, ui.datatable.nameListFiltered)) {
           if (ui.hasClass(el, ui.datatable.nameFiltered)) {
@@ -5041,7 +5054,7 @@ ui.datatable = {
   });
 
   ui.datatable.Start = function () {
-    ui.find('.' + ui.datatable.target + ':not(.' + ui.datatable.targetLoaded + ')').forEach(function (el) {
+    Array.prototype.forEach.call(ui.find('.' + ui.datatable.target + ':not(.' + ui.datatable.targetLoaded + ')'), function (el) {
       startListID += 1;
       var id = ui.datatable.listIdNaming + startListID;
       el.setAttribute(ui.datatable.dataID, id);
@@ -5067,7 +5080,7 @@ ui.datatable = {
           }
         }
       } else {
-        gridShow.options.length.forEach(function (item) {
+        Array.prototype.forEach.call(gridShow.options, function (item) {
           if (Number(customLowerCase(item.innerText)) === showCount[id]) {
             var index = Array.prototype.slice.call(gridShow.options).indexOf(item);
             gridShow.selectedIndex = index;
@@ -5090,7 +5103,7 @@ ui.datatable = {
     if (testStorage && sessionStorage !== undefined) {
       if (window.performance) {
         if (performance.navigation.type !== 1) {
-          ui.find('.' + ui.datatable.target).forEach(function (item) {
+          Array.prototype.forEach.call(ui.find('.' + ui.datatable.target), function (item) {
             var id = item.getAttribute(ui.datatable.dataID);
             sessionStorage.setItem(ui.datatable.storageVals + id, '');
             sessionStorage.setItem(ui.datatable.storageShow + id, 0);
@@ -5237,7 +5250,7 @@ ui.photoGallery = {
 
       var loadedImages = [];
       var loadedTitles = [];
-      images.forEach(function (el) {
+      Array.prototype.forEach.call(images, function (el) {
         var href = el.getAttribute('href');
 
         if (href !== null) {
@@ -5255,7 +5268,7 @@ ui.photoGallery = {
       var previousOpened = ui.find('.' + ui.photoGallery.targetPreview);
 
       if (previousOpened.length > 0) {
-        previousOpened.forEach(function (el) {
+        Array.prototype.forEach.call(previousOpened, function (el) {
           el.parentNode.removeChild(el);
         });
       }
@@ -7276,14 +7289,14 @@ ui.donutChart.Start = function () {
     if (chart.length > 0) {
       var arrPercent = [];
       var arrAngle = [];
-      chart.forEach(function (el) {
+      Array.prototype.forEach.call(chart, function (el) {
         var circles = ui.find('circle:not(.' + ui.donutChart.targetBg + ')', el);
 
         if (circles.length > 1) {
           ui.addClass(el, 'multiple');
         }
 
-        circles.forEach(function (item, j) {
+        Array.prototype.forEach.call(circles, function (item, j) {
           var percent = item.getAttribute(ui.donutChart.dataPercent);
           arrPercent.push(percent);
           var dasharray = Math.round(percent * 4.4);

@@ -120,9 +120,11 @@ ui.forms = {
 
         ui.forms.Init = () => {
 
-            ui.find('.' + ui.forms.targetText + '.' + ui.forms.nameHasClear + ' input').forEach(el => {
-                setTimeout(() => { clearForms(el); }, 0);
-            });
+            Array.prototype.forEach.call(ui.find('.' + ui.forms.targetText + '.' + ui.forms.nameHasClear + ' input'),
+
+                el => {
+                    setTimeout(() => { clearForms(el); }, 0);
+                });
 
         };
         ui.forms.Init();
@@ -252,9 +254,11 @@ ui.forms = {
 
                     if (getValues !== null) {
 
-                        getValues.forEach(item => {
-                            newValues += item;
-                        });
+                        Array.prototype.forEach.call(getValues,
+
+                            item => {
+                                newValues += item;
+                            });
 
                     } else {
 
@@ -325,14 +329,16 @@ ui.forms = {
 
                 setTimeout(() => { // wait for form reset started on DOM
 
-                    forms.forEach(el => {
+                    Array.prototype.forEach.call(forms,
 
-                        // trigger defined event listeners after form clear
-                        if (!ui.hasClass(el, ui.forms.nameRequired)) { // discard required forms
-                            ui.trigger(el, 'keydown keyup');
-                        }
+                        el => {
 
-                    });
+                            // trigger defined event listeners after form clear
+                            if (!ui.hasClass(el, ui.forms.nameRequired)) { // discard required forms
+                                ui.trigger(el, 'keydown keyup');
+                            }
+
+                        });
 
                     // remove errors
                     ui.removeClass(errors, ui.forms.nameError);

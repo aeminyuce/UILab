@@ -8,34 +8,38 @@ ui.addClass = function (that, name) {
     let arr;
     const re = new RegExp('^\\s+|\\s+$');
 
-    ui.find(that).forEach(el => {
+    name = name.split(' ');
 
-        name.split(' ').forEach(item => {
+    Array.prototype.forEach.call(ui.find(that),
 
-            if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) { // check SVG and own elements
+        el => {
 
-                arr = el.className.baseVal.split(' ');
-                if (arr.indexOf(item) === -1) {
+            for (let i = 0; i < name.length; i++) {
 
-                    el.className.baseVal += ' ' + item;
-                    el.className.baseVal = el.className.baseVal.replace(re, '');
+                if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) { // check SVG and own elements
 
-                }
+                    arr = el.className.baseVal.split(' ');
+                    if (arr.indexOf(name[i]) === -1) {
 
-            } else {
+                        el.className.baseVal += ' ' + name[i];
+                        el.className.baseVal = el.className.baseVal.replace(re, '');
 
-                arr = el.className.split(' ');
-                if (arr.indexOf(item) === -1) {
+                    }
 
-                    el.className += ' ' + item;
-                    el.className = el.className.replace(re, '');
+                } else {
+
+                    arr = el.className.split(' ');
+                    if (arr.indexOf(name[i]) === -1) {
+
+                        el.className += ' ' + name[i];
+                        el.className = el.className.replace(re, '');
+
+                    }
 
                 }
 
             }
 
         });
-
-    });
 
 }

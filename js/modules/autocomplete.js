@@ -156,12 +156,14 @@ ui.autocomplete.Start = () => {
                                 beforesend: (xhr) => {
 
                                     // abort still processing previous autocomplete requests
-                                    autocompleteRequests.forEach((item, n) => {
+                                    Array.prototype.forEach.call(autocompleteRequests,
 
-                                        item.abort();
-                                        autocompleteRequests.splice(n, 1);
+                                        (item, n) => {
 
-                                    });
+                                            item.abort();
+                                            autocompleteRequests.splice(n, 1);
+
+                                        });
 
                                     autocompleteRequests.push(xhr);
 
@@ -184,88 +186,90 @@ ui.autocomplete.Start = () => {
                                             ui.removeClass(parent, ui.autocomplete.nameMenuTop);
                                             list[0].innerHTML = '';
 
-                                            response.forEach(item => {
+                                            Array.prototype.forEach.call(response,
 
-                                                const key = item[getVal];
-                                                let txt = '';
+                                                item => {
 
-                                                if (key !== null) {
+                                                    const key = item[getVal];
+                                                    let txt = '';
 
-                                                    if (typeof key === 'boolean') { return; } // booleans not supported!
-                                                    let modified = key;
+                                                    if (key !== null) {
 
-                                                    if (typeof key === 'number') {
-                                                        modified = modified.toString().match(val, 'g');
+                                                        if (typeof key === 'boolean') { return; } // booleans not supported!
+                                                        let modified = key;
 
-                                                    } else {
+                                                        if (typeof key === 'number') {
+                                                            modified = modified.toString().match(val, 'g');
 
-                                                        modified = customLowerCase(modified);
-                                                        modified = modified.match(val, 'g');
+                                                        } else {
 
-                                                    }
+                                                            modified = customLowerCase(modified);
+                                                            modified = modified.match(val, 'g');
 
-                                                    if (modified !== null) {
+                                                        }
 
-                                                        clearTimeout(timerShowLines);
-                                                        timerShowLines = setTimeout(() => { // create dropdown
+                                                        if (modified !== null) {
 
-                                                            const offset = parent.getBoundingClientRect();
+                                                            clearTimeout(timerShowLines);
+                                                            timerShowLines = setTimeout(() => { // create dropdown
 
-                                                            const tHeight = parent.offsetHeight;
-                                                            const dHeight = list[0].offsetHeight;
+                                                                const offset = parent.getBoundingClientRect();
 
-                                                            if (offset.top + parseInt(tHeight + dHeight) >= window.innerHeight) {
+                                                                const tHeight = parent.offsetHeight;
+                                                                const dHeight = list[0].offsetHeight;
 
-                                                                if (offset.top - parseInt(tHeight + dHeight) + tHeight > 0) {
-                                                                    ui.addClass(parent, ui.autocomplete.nameMenuTop);
+                                                                if (offset.top + parseInt(tHeight + dHeight) >= window.innerHeight) {
 
-                                                                } else {
-                                                                    list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight) - window.innerHeight) - ui.autocomplete.scrollbarSize) + 'px';
+                                                                    if (offset.top - parseInt(tHeight + dHeight) + tHeight > 0) {
+                                                                        ui.addClass(parent, ui.autocomplete.nameMenuTop);
+
+                                                                    } else {
+                                                                        list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight) - window.innerHeight) - ui.autocomplete.scrollbarSize) + 'px';
+                                                                    }
+
+                                                                }
+
+                                                            }, 10);
+
+                                                            // show max. number of lines: 5
+                                                            k += 1;
+                                                            if (k > 5) { return; }
+
+                                                            // create lines
+                                                            if (typeof key === 'number') {
+
+                                                                for (let i = 0; i < key.toString().length; i++) {
+
+                                                                    if (i === key.toString().indexOf(modified)) { txt += '<' + ui.autocomplete.tagHighlight + '>'; }
+                                                                    if (i === (key.toString().indexOf(modified) + val.length)) { txt += '</' + ui.autocomplete.tagHighlight + '>'; }
+
+                                                                    txt += key.toString().charAt(i);
+
+                                                                }
+
+                                                            } else {
+
+                                                                for (let j = 0; j < key.length; j++) {
+
+                                                                    if (j === customLowerCase(key).indexOf(modified)) { txt += '<' + ui.autocomplete.tagHighlight + '>'; }
+                                                                    if (j === (customLowerCase(key).indexOf(modified) + val.length)) { txt += '</' + ui.autocomplete.tagHighlight + '>'; }
+
+                                                                    txt += key.charAt(j);
+
                                                                 }
 
                                                             }
 
-                                                        }, 10);
-
-                                                        // show max. number of lines: 5
-                                                        k += 1;
-                                                        if (k > 5) { return; }
-
-                                                        // create lines
-                                                        if (typeof key === 'number') {
-
-                                                            for (let i = 0; i < key.toString().length; i++) {
-
-                                                                if (i === key.toString().indexOf(modified)) { txt += '<' + ui.autocomplete.tagHighlight + '>'; }
-                                                                if (i === (key.toString().indexOf(modified) + val.length)) { txt += '</' + ui.autocomplete.tagHighlight + '>'; }
-
-                                                                txt += key.toString().charAt(i);
-
-                                                            }
-
-                                                        } else {
-
-                                                            for (let j = 0; j < key.length; j++) {
-
-                                                                if (j === customLowerCase(key).indexOf(modified)) { txt += '<' + ui.autocomplete.tagHighlight + '>'; }
-                                                                if (j === (customLowerCase(key).indexOf(modified) + val.length)) { txt += '</' + ui.autocomplete.tagHighlight + '>'; }
-
-                                                                txt += key.charAt(j);
-
-                                                            }
+                                                            list[0].insertAdjacentHTML(
+                                                                'beforeend',
+                                                                '<li>' + txt + '</li>'
+                                                            );
 
                                                         }
 
-                                                        list[0].insertAdjacentHTML(
-                                                            'beforeend',
-                                                            '<li>' + txt + '</li>'
-                                                        );
-
                                                     }
 
-                                                }
-
-                                            });
+                                                });
 
                                         }
 

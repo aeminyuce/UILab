@@ -40,9 +40,10 @@ ui.onload(() => {
     }
 
     // check stored theme color
-    decodeURIComponent(document.cookie).split('; ').forEach(item => {
+    const state = decodeURIComponent(document.cookie).split('; ');
+    for (let i = 0; i < state.length; i++ ) {
 
-        const cookies = item.split('=');
+        const cookies = state[i].split('=');
 
         let cookie = cookies[0];
         cookie = cookie.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
@@ -51,7 +52,7 @@ ui.onload(() => {
             mode = cookies[1];
         }
 
-    });
+    }
 
     // Event Listeners
     const doc = ui.find(ui.darkMode.target)[0];

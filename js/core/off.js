@@ -12,12 +12,12 @@ ui.off = function (that, e) {
             if (ui.handlers[pt] !== undefined) {
                 if (ui.handlers[pt][pe] !== undefined) {
 
-                    ui.handlers[pt][pe].forEach(name => {
+                    for (let i = 0; i < ui.handlers[pt][pe].length; i++) {
 
-                        pt.removeEventListener(pe.split('.')[0], name, true); // split for event naming
-                        ui.handlers[pt][pe].splice(name, 1); // remove event from eventHandlers array
+                        pt.removeEventListener(pe.split('.')[0], ui.handlers[pt][pe][i], true); // split for event naming
+                        ui.handlers[pt][pe].splice(ui.handlers[pt][pe][i], 1); // remove event from eventHandlers array
 
-                    });
+                    }
 
                 }
             }
@@ -30,12 +30,16 @@ ui.off = function (that, e) {
             handlerFnc(nodeList, e);
 
         } else {
-            nodeList.forEach(el => { handlerFnc(el, e); });
+            Array.prototype.forEach.call(nodeList, el => { handlerFnc(el, e); });
         }
 
     };
 
     // for multiple event listeners ex: 'click touchend'
-    e.split(' ').forEach(name => { callFnc(name); });
+    const arr = e.split(' ');
+
+    for (let j = 0; j < arr.length; j++) {
+        callFnc(arr[j]);
+    }
 
 }

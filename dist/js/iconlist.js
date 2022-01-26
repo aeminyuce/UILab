@@ -38,7 +38,7 @@ ui.iconlist.Start = function () {
       }
     }
   });
-  ui.find('.' + ui.iconlist.target).forEach(function (el) {
+  Array.prototype.forEach.call(ui.find('.' + ui.iconlist.target), function (el) {
     var total = ui.find('li', el).length;
     el.previousElementSibling.insertAdjacentHTML('beforeend', ' <span class="' + ui.iconlist.stylesTotal + '">(' + total + ' icons)</span>');
     totalIcons += total;

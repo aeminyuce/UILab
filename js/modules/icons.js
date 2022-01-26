@@ -26,7 +26,7 @@ ui.icons.Start = () => {
     page = ui.find('body')[0];
     iconsList = ui.find(ui.icons.target);
 
-    sprites = ui.find('body > svg'); // check svg spites loaded before
+    sprites = ui.find('body > svg'); // check svg sprites loaded before
 
     ui.each(iconsList,
 
@@ -54,6 +54,7 @@ ui.icons.Start = () => {
                         if (status === 'success') {
 
                             page.insertAdjacentHTML('afterbegin', response);
+                            ui.find('body > svg')[0].style.display = 'none';
 
                             // empty variables
                             iconsList = '';

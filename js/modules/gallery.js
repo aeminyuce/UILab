@@ -187,33 +187,37 @@ ui.photoGallery = {
             let loadedImages = [];
             let loadedTitles = [];
 
-            images.forEach(el => {
+            Array.prototype.forEach.call(images,
 
-                const href = el.getAttribute('href');
+                el => {
 
-                if (href !== null) {
-                    loadedImages.push(href);
+                    const href = el.getAttribute('href');
 
-                } else {
-                    loadedImages.push(el.getAttribute(ui.photoGallery.dataHref));
-                }
+                    if (href !== null) {
+                        loadedImages.push(href);
 
-                if (ui.hasClass(el, ui.photoGallery.nameGalleryInfo)) {
-                    loadedTitles.push(ui.find(ui.photoGallery.tagGalleryInfo, el)[0].innerHTML);
+                    } else {
+                        loadedImages.push(el.getAttribute(ui.photoGallery.dataHref));
+                    }
 
-                } else {
-                    loadedTitles.push(null);
-                }
+                    if (ui.hasClass(el, ui.photoGallery.nameGalleryInfo)) {
+                        loadedTitles.push(ui.find(ui.photoGallery.tagGalleryInfo, el)[0].innerHTML);
 
-            });
+                    } else {
+                        loadedTitles.push(null);
+                    }
+
+                });
 
             // detect previously opened galleries
             const previousOpened = ui.find('.' + ui.photoGallery.targetPreview);
             if (previousOpened.length > 0) {
 
-                previousOpened.forEach(el => {
-                    el.parentNode.removeChild(el);
-                });
+                Array.prototype.forEach.call(previousOpened,
+
+                    el => {
+                        el.parentNode.removeChild(el);
+                    });
 
             }
 

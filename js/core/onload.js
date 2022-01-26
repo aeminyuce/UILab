@@ -19,7 +19,11 @@ ui.onload = (callback) => {
             if (ui.handlers[pt][pe].length === 1) {
 
                 pt.addEventListener(pe.split('.')[0], function (ev) { // split for event naming
-                    ui.handlers[pt][pe].forEach(fnc => { fnc(ev); });
+
+                    for (let i = 0; i < ui.handlers[pt][pe].length; i++) {
+                        ui.handlers[pt][pe][i](ev);
+                    }
+
                 }, true);
 
             }

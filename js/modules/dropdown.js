@@ -80,39 +80,41 @@ ui.dropdown = {
         clearTimeout(dropdownLeaveTimer);
         dropdownLeaveTimer = setTimeout(() => {
 
-            that.forEach(el => {
+            Array.prototype.forEach.call(that,
 
-                clearTimeout(dropdownCloseTimer);
-                const list = ui.find('.' + ui.dropdown.nameMenu, el)[0];
+                el => {
 
-                dropdownCloseTimer = setTimeout(() => {
+                    clearTimeout(dropdownCloseTimer);
+                    const list = ui.find('.' + ui.dropdown.nameMenu, el)[0];
 
-                    if (listStyles === 0) {
-                        list.removeAttribute('style');
+                    dropdownCloseTimer = setTimeout(() => {
 
-                    } else {
+                        if (listStyles === 0) {
+                            list.removeAttribute('style');
 
-                        list.style.removeProperty('max-height');
+                        } else {
 
-                        list.style.removeProperty('position');
-                        list.style.removeProperty('right');
-                        list.style.removeProperty('left');
+                            list.style.removeProperty('max-height');
 
-                        list.style.removeProperty('margin-left');
-                        list.style.removeProperty('margin-top');
+                            list.style.removeProperty('position');
+                            list.style.removeProperty('right');
+                            list.style.removeProperty('left');
 
-                        list.style.removeProperty('overflow');
+                            list.style.removeProperty('margin-left');
+                            list.style.removeProperty('margin-top');
 
-                        list.style.removeProperty('transform-origin');
-                        list.style.removeProperty('box-shadow');
+                            list.style.removeProperty('overflow');
 
-                    }
+                            list.style.removeProperty('transform-origin');
+                            list.style.removeProperty('box-shadow');
 
-                    ui.removeClass(that, ui.dropdown.nameMenuTop + ' ' + ui.dropdown.nameOpen);
+                        }
 
-                }, ui.globals.ease);
+                        ui.removeClass(that, ui.dropdown.nameMenuTop + ' ' + ui.dropdown.nameOpen);
 
-            });
+                    }, ui.globals.ease);
+
+                });
 
         }, 0);
 

@@ -8,48 +8,51 @@ ui.toggleClass = function (that, name) {
     let arr, newArr, index, isSvgElements;
 
     const re = new RegExp('^\\s+|\\s+$');
+    name = name.split(' ');
 
-    ui.find(that).forEach(el => {
+    Array.prototype.forEach.call(ui.find(that),
 
-        isSvgElements = ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1; // check SVG and own elements
+        el => {
 
-        if (isSvgElements) {
-            arr = el.className.baseVal.split(' ');
-
-        } else {
-            arr = el.className.split(' ');
-        }
-
-        name.split(' ').forEach(item => {
-
-            newArr = arr;
-            index = newArr.indexOf(item);
-
-            if (index >= 0) {
-                newArr.splice(index, 1);
-
-            } else {
-                newArr.push(item);
-            }
+            isSvgElements = ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1; // check SVG and own elements
 
             if (isSvgElements) {
-                el.className.baseVal = arr.join(' ');
+                arr = el.className.baseVal.split(' ');
 
             } else {
+                arr = el.className.split(' ');
+            }
 
-                newArr = newArr.join(' ').replace(re, '');
+            for (let i = 0; i < name.length; i++) {
 
-                if (newArr.length === 0) {
-                    el.removeAttribute('class');
+                newArr = arr;
+                index = newArr.indexOf(name[i]);
+
+                if (index >= 0) {
+                    newArr.splice(index, 1);
 
                 } else {
-                    el.className = newArr;
+                    newArr.push(name[i]);
+                }
+
+                if (isSvgElements) {
+                    el.className.baseVal = arr.join(' ');
+
+                } else {
+
+                    newArr = newArr.join(' ').replace(re, '');
+
+                    if (newArr.length === 0) {
+                        el.removeAttribute('class');
+
+                    } else {
+                        el.className = newArr;
+                    }
+
                 }
 
             }
 
         });
-
-    });
 
 }

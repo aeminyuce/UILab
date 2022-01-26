@@ -96,7 +96,7 @@ ui.classnames.Start = () => {
                             const jsStyleList = jsClass.toString().split(' ');
 
                             if (jsStyleList.length > 1) { // check styles for multiple classnames
-                                jsStyleList.forEach(style => { loaded.push(style); });
+                                Array.prototype.forEach.call(jsStyleList, style => { loaded.push(style); });
 
                             } else if (jsClass !== '') { // remove empty styles
                                 loaded.push(jsClass);
@@ -110,62 +110,66 @@ ui.classnames.Start = () => {
             }
 
             // load html classnames
-            ui.ajax.classNames.forEach(name => {
-                loaded.push(name);
-            });
+            Array.prototype.forEach.call(ui.ajax.classNames,
+
+                name => {
+                    loaded.push(name);
+                });
 
             // remove duplicate loaded classnames
             loaded = loaded.filter((value, index, self) => self.indexOf(value) === index);
 
             // check all classnames
-            loaded.forEach(name => {
+            Array.prototype.forEach.call(loaded,
 
-                // check prefix
-                let reStart = ui.classnames.prefix + '-+\\w+';
-                reStart = new RegExp(reStart, 'g');
+                name => {
 
-                // check duplicates
-                let reDuplicate = '(' + ui.classnames.prefix + '-)|(-' + ui.classnames.prefix + ')';
-                reDuplicate = new RegExp(reDuplicate, 'g');
+                    // check prefix
+                    let reStart = ui.classnames.prefix + '-+\\w+';
+                    reStart = new RegExp(reStart, 'g');
 
-                const str = name.toString();
-                const strStart = str.match(reStart);
+                    // check duplicates
+                    let reDuplicate = '(' + ui.classnames.prefix + '-)|(-' + ui.classnames.prefix + ')';
+                    reDuplicate = new RegExp(reDuplicate, 'g');
 
-                if (strStart === null) {
+                    const str = name.toString();
+                    const strStart = str.match(reStart);
 
-                    if (str === '') {
+                    if (strStart === null) {
 
-                        // error: empty
-                        arr.error.push(ui.classnames.msgEmpty);
+                        if (str === '') {
+
+                            // error: empty
+                            arr.error.push(ui.classnames.msgEmpty);
+
+                        } else {
+
+                            // warning
+                            arr.warning.push(str);
+
+                        }
 
                     } else {
 
-                        // warning
-                        arr.warning.push(str);
+                        // list
+                        arr.list.push(str);
 
                     }
 
-                } else {
+                    let strLength = str.match(reDuplicate);
+                    if (strLength !== null) {
 
-                    // list
-                    arr.list.push(str);
+                        strLength = Number(str.match(reDuplicate).length);
+                        if (strLength > 1) {
 
-                }
+                            // error: duplicate
+                            arr.error.push(ui.classnames.msgDuplicate + ': ' + str);
 
-                let strLength = str.match(reDuplicate);
-                if (strLength !== null) {
-
-                    strLength = Number(str.match(reDuplicate).length);
-                    if (strLength > 1) {
-
-                        // error: duplicate
-                        arr.error.push(ui.classnames.msgDuplicate + ': ' + str);
+                        }
 
                     }
 
-                }
-
-            });
+                });
 
             // create errors
             if (arr.error.length === 0) {
@@ -175,22 +179,26 @@ ui.classnames.Start = () => {
                 alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + ui.classnames.msgErrors + '</li>');
             }
 
-            arr.error.forEach(name => {
-                alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesError + '">' + name + '</li>');
-            });
+            Array.prototype.forEach.call(arr.error,
+
+                name => {
+                    alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesError + '">' + name + '</li>');
+                });
 
             // create warnings
             arr.warning = arr.warning.sort();
-            arr.warning.forEach(name => {
+            Array.prototype.forEach.call(arr.warning,
 
-                if (lastAddedWarning === '' || lastAddedWarning.split('-')[0] !== name.split('-')[0]) {
-                    alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + name.split('-')[0] + '</li>');
-                }
+                name => {
 
-                alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarning + '">' + name + '</li>');
-                lastAddedWarning = name;
+                    if (lastAddedWarning === '' || lastAddedWarning.split('-')[0] !== name.split('-')[0]) {
+                        alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + name.split('-')[0] + '</li>');
+                    }
 
-            });
+                    alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarning + '">' + name + '</li>');
+                    lastAddedWarning = name;
+
+                });
 
             // filter list of classnames
             const filterClassnames = (that) => {
@@ -277,33 +285,37 @@ ui.classnames.Start = () => {
             }
 
             // create group names
-            arr.list.forEach(name => {
+            Array.prototype.forEach.call(arr.list,
 
-                const title = filterClassnames(name);
+                name => {
 
-                if (arr.filtered.indexOf(title) === -1) {
-                    arr.filtered.push(title);
-                }
+                    const title = filterClassnames(name);
 
-            });
-
-            // copy classnames to filtered groups
-            arr.list.forEach(name => {
-
-                const title = filterClassnames(name);
-
-                if (arr.filtered.indexOf(title) > -1) {
-
-                    if (arr.groups[title] === undefined) {
-                        arr.groups[title] = name;
-
-                    } else {
-                        arr.groups[title] += ', ' + name;
+                    if (arr.filtered.indexOf(title) === -1) {
+                        arr.filtered.push(title);
                     }
 
-                }
+                });
 
-            });
+            // copy classnames to filtered groups
+            Array.prototype.forEach.call(arr.list,
+
+                name => {
+
+                    const title = filterClassnames(name);
+
+                    if (arr.filtered.indexOf(title) > -1) {
+
+                        if (arr.groups[title] === undefined) {
+                            arr.groups[title] = name;
+
+                        } else {
+                            arr.groups[title] += ', ' + name;
+                        }
+
+                    }
+
+                });
 
             // create category names
             let html, items;
@@ -311,50 +323,54 @@ ui.classnames.Start = () => {
 
             arr.filtered = arr.filtered.sort((a, b) => a.localeCompare(b));
 
-            arr.filtered.forEach(name => {
+            Array.prototype.forEach.call(arr.filtered,
 
-                items = arr.groups[name].split(',');
-                items = items.sort((a, b) => {
+                name => {
 
-                    return a.length - b.length || a.localeCompare(b, undefined, {
-                        numeric: true,
-                        sensitivity: 'base'
+                    items = arr.groups[name].split(',');
+                    items = items.sort((a, b) => {
+
+                        return a.length - b.length || a.localeCompare(b, undefined, {
+                            numeric: true,
+                            sensitivity: 'base'
+                        });
+
                     });
 
+                    html = '<h4 class="' + ui.classnames.stylesCatTite + '">' + name + '</h4>' +
+                            '<div class="' + ui.classnames.stylesCatCard + '">' +
+                                '<div class="' + ui.classnames.stylesCatRow + '">';
+
+                    Array.prototype.forEach.call(items,
+
+                        (item, i) => {
+
+                            if (parseInt(i / ui.classnames.listColLength) === i / ui.classnames.listColLength) { // create cols
+
+                                if (i !== 0) {
+                                    html += '</ul></div>'; // close tags
+                                }
+
+                                html += '<div class="' + ui.classnames.stylesCatCol + '">' +
+                                            '<ul class="' + ui.classnames.stylesCatList + '">';
+
+                            }
+
+                            if (item.indexOf('[native code]') === -1) { // catch native code error
+
+                                item = item.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+
+                                html += '<li>' + item + '</li>'; // create rows
+                                created += 1;
+
+                            }
+
+                        });
+
+                    html += '</ul></div></div></div>'; // close tags
+                    list.insertAdjacentHTML('beforeend', html);
+
                 });
-
-                html = '<h4 class="' + ui.classnames.stylesCatTite + '">' + name + '</h4>' +
-                        '<div class="' + ui.classnames.stylesCatCard + '">' +
-                            '<div class="' + ui.classnames.stylesCatRow + '">';
-
-                items.forEach((item, i) => {
-
-                    if (parseInt(i / ui.classnames.listColLength) === i / ui.classnames.listColLength) { // create cols
-
-                        if (i !== 0) {
-                            html += '</ul></div>'; // close tags
-                        }
-
-                        html += '<div class="' + ui.classnames.stylesCatCol + '">' +
-                                    '<ul class="' + ui.classnames.stylesCatList + '">';
-
-                    }
-
-                    if (item.indexOf('[native code]') === -1) { // catch native code error
-
-                        item = item.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
-
-                        html += '<li>' + item + '</li>'; // create rows
-                        created += 1;
-
-                    }
-
-                });
-
-                html += '</ul></div></div></div>'; // close tags
-                list.insertAdjacentHTML('beforeend', html);
-
-            });
 
             total.textContent = arr.filtered.length + ' / ' + created;
 

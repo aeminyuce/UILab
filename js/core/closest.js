@@ -16,27 +16,29 @@ ui.closest = function (that, outer) {
 
     let elems = [];
 
-    ui.find(that).forEach(el => {
+    Array.prototype.forEach.call(ui.find(that),
 
-        parentEl = el.parentNode;
-        while (parentEl) {
+        el => {
 
-            for (let i = 0; i < outerEl.length; i++) {
+            parentEl = el.parentNode;
+            while (parentEl) {
 
-                if (parentEl === outerEl[i]) {
+                for (let i = 0; i < outerEl.length; i++) {
 
-                    elems = ui.find(parentEl);
-                    return;
+                    if (parentEl === outerEl[i]) {
+
+                        elems = ui.find(parentEl);
+                        return;
+
+                    }
 
                 }
 
+                parentEl = parentEl.parentNode;
+
             }
 
-            parentEl = parentEl.parentNode;
-
-        }
-
-    });
+        });
 
     return elems;
 

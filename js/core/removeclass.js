@@ -6,28 +6,31 @@ export default () => ui;
 ui.removeClass = function (that, name) {
 
     const rex = new RegExp('^\\s+|\\s+$');
+    name = name.split(' ');
 
-    ui.find(that).forEach(el => {
+    Array.prototype.forEach.call(ui.find(that),
 
-        name.split(' ').forEach(item => {
+        el => {
 
-            const re = new RegExp('(\\s|^)' + item + '(\\s|$)');
+            for (let i = 0; i < name.length; i++) {
 
-            if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) { // check SVG and own elements
-                el.className.baseVal = el.className.baseVal.replace(re, ' ').replace(rex, '');
+                const re = new RegExp('(\\s|^)' + name[i] + '(\\s|$)');
 
-            } else {
+                if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) { // check SVG and own elements
+                    el.className.baseVal = el.className.baseVal.replace(re, ' ').replace(rex, '');
 
-                el.className = el.className.replace(re, ' ').replace(rex, '');
+                } else {
 
-                if (el.className === '') {
-                    el.removeAttribute('class');
+                    el.className = el.className.replace(re, ' ').replace(rex, '');
+
+                    if (el.className === '') {
+                        el.removeAttribute('class');
+                    }
+
                 }
 
             }
 
         });
-
-    });
 
 }

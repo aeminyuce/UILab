@@ -20,23 +20,25 @@ ui.on = function (self, e, that, callback) {
 
                 const eName = e.split('.')[0]; // split for event naming
 
-                ui.find(that).forEach(el => { // catches future updated DOM!
+                Array.prototype.forEach.call(ui.find(that),
 
-                    if (ui.globals.nonClosestElems.indexOf(eName) > -1) { // control non-closest event listeners
+                    el => { // catches future updated DOM!
 
-                        if (event.target === el) {
-                            callback.call(el, event, event.toElement);
+                        if (ui.globals.nonClosestElems.indexOf(eName) > -1) { // control non-closest event listeners
+
+                            if (event.target === el) {
+                                callback.call(el, event, event.toElement);
+                            }
+
+                        } else {
+
+                            if (event.target === el || ui.closest(event.target, el).length === 1) {
+                                callback.call(el, event, event.toElement);
+                            }
+
                         }
 
-                    } else {
-
-                        if (event.target === el || ui.closest(event.target, el).length === 1) {
-                            callback.call(el, event, event.toElement);
-                        }
-
-                    }
-
-                });
+                    });
 
             };
 
@@ -58,7 +60,7 @@ ui.on = function (self, e, that, callback) {
                     if (ua.indexOf("MSIE ") > 0 || !!document.documentMode || ua.indexOf('edge') > -1) {
 
                         setTimeout(() => {
-                            l.addEventListener(e, that, true);
+                            nodelist.addEventListener(e, that, true);
                         }, ui.globals.ease);
 
                     }
@@ -94,7 +96,11 @@ ui.on = function (self, e, that, callback) {
                     if (ui.handlers[pt][pe].length === 1) {
 
                         pt.addEventListener(pe.split('.')[0], function (ev) { // split for event naming
-                            ui.handlers[pt][pe].forEach(fnc => { fnc(ev); });
+
+                            for (let i = 0; i < ui.handlers[pt][pe].length; i++) {
+                                ui.handlers[pt][pe][i](ev);
+                            }
+
                         }, true);
 
                     }
@@ -107,18 +113,22 @@ ui.on = function (self, e, that, callback) {
 
         };
 
-        const l = ui.find(self);
+        const nodelist = ui.find(self);
 
         if (isWindowEvent) {
-            handlerFnc(l, e);
+            handlerFnc(nodelist, e);
 
         } else {
-            l.forEach(el => { handlerFnc(el, e); });
+            Array.prototype.forEach.call(nodelist, el => { handlerFnc(el, e); });
         }
 
     };
 
     // for multiple event listeners ex: 'click touchend'
-    e.split(' ').forEach(name => { set(name); });
+    const arr = e.split(' ');
+
+    for (let j = 0; j < arr.length; j++) {
+        set(arr[j]);
+    }
 
 }

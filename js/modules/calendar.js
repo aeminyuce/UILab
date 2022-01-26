@@ -258,9 +258,11 @@ ui.calendar.Start = () => {
             html += '<th>' + ui.calendar.days[ui.calendar.days.length - 1] + '</th>';
         }
 
-        ui.calendar.days.forEach(item => {
-            html += '<th>' + item + '</th>';
-        });
+        Array.prototype.forEach.call(ui.calendar.days,
+
+            item => {
+                html += '<th>' + item + '</th>';
+            });
 
         html += '</thead>' +
                 '<tbody>';
@@ -403,37 +405,39 @@ ui.calendar.Start = () => {
                         response = JSON.parse(response);
                         if (response.length === 'undefined') { return; }
 
-                        response.forEach(item => {
+                        Array.prototype.forEach.call(response,
 
-                            if (item === null) { return; }
+                            item => {
 
-                            if (Number(item.year) === date.getFullYear()) {
-                                if (Number(item.month) === date.getMonth() + 1) {
+                                if (item === null) { return; }
 
-                                    // select detailed days
-                                    const dday = ui.find('[' + ui.calendar.dataDay + '="' + item.day + '"]', that);
-                                    ui.addClass(dday, ui.calendar.nameToggleDetails);
+                                if (Number(item.year) === date.getFullYear()) {
+                                    if (Number(item.month) === date.getMonth() + 1) {
 
-                                    // create details html
-                                    details += '<li ' + ui.calendar.dataD + '="' + item.day + '">' +
-                                                    '<strong>' + item.day + '</strong>' +
-                                                    '<b>' + item.dayName + '</b><br>';
+                                        // select detailed days
+                                        const dday = ui.find('[' + ui.calendar.dataDay + '="' + item.day + '"]', that);
+                                        ui.addClass(dday, ui.calendar.nameToggleDetails);
 
-                                    for (let key in item.details) {
+                                        // create details html
+                                        details += '<li ' + ui.calendar.dataD + '="' + item.day + '">' +
+                                                        '<strong>' + item.day + '</strong>' +
+                                                        '<b>' + item.dayName + '</b><br>';
 
-                                        details += '<span>' +
-                                                        '<i>' + key + '</i> ' +
-                                                        item.details[key] +
-                                                    '</span>';
+                                        for (let key in item.details) {
+
+                                            details += '<span>' +
+                                                            '<i>' + key + '</i> ' +
+                                                            item.details[key] +
+                                                        '</span>';
+
+                                        }
+
+                                        details += '</li>';
 
                                     }
-
-                                    details += '</li>';
-
                                 }
-                            }
 
-                        });
+                            });
 
                         container = ui.find('.' + ui.calendar.nameContainer, that)[0];
 
@@ -499,7 +503,7 @@ ui.calendar.Start = () => {
         const calendars = ui.find('.' + ui.calendar.target + ':not(.' + ui.calendar.nameActive + ')');
 
         if (calendars.length > 0) {
-            calendars.forEach(el => { createFnc(el); });
+            Array.prototype.forEach.call(calendars, el => { createFnc(el); });
         }
 
     };
@@ -595,22 +599,24 @@ ui.calendar.Start = () => {
                 panelType = 'month';
                 const month = ui.calendar.months[date.getMonth()];
 
-                ui.calendar.months.forEach((item, i) => {
+                Array.prototype.forEach.call(ui.calendar.months,
 
-                    html += '<li>' +
-                                '<button type="button" tabindex="-1" ';
+                    (item, i) => {
 
-                    if (month === item) {
-                        html += 'class="' + ui.calendar.namePanelCall + ' ' + ui.calendar.nameSelected + '" ';
+                        html += '<li>' +
+                                    '<button type="button" tabindex="-1" ';
 
-                    } else {
-                        html += 'class="' + ui.calendar.namePanelCall + '" ';
-                    }
+                        if (month === item) {
+                            html += 'class="' + ui.calendar.namePanelCall + ' ' + ui.calendar.nameSelected + '" ';
 
-                    html += 'name="' + i + '">' + item + '</button>' +
-                        '</li>';
+                        } else {
+                            html += 'class="' + ui.calendar.namePanelCall + '" ';
+                        }
 
-                });
+                        html += 'name="' + i + '">' + item + '</button>' +
+                            '</li>';
+
+                    });
 
             }
 
@@ -687,35 +693,39 @@ ui.calendar.Start = () => {
 
         if (type === 'continuous') { // when the user holds the tab button continuously
 
-            allPickers.forEach((item, i) => {
+            Array.prototype.forEach.call(allPickers,
 
-                ui.removeClass(item, ui.calendar.nameOpenEase);
+                (item, i) => {
 
-                setTimeout(() => {
+                    ui.removeClass(item, ui.calendar.nameOpenEase);
 
-                    const that = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target)[i];
-                    if (that === undefined) { return; }
+                    setTimeout(() => {
 
-                    const form = that.parentElement;
-                    removePicker(form, that);
+                        const that = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target)[i];
+                        if (that === undefined) { return; }
 
-                }, ui.globals.ease);
+                        const form = that.parentElement;
+                        removePicker(form, that);
 
-            });
+                    }, ui.globals.ease);
+
+                });
 
         } else {
 
-            allPickers.forEach(item => {
+            Array.prototype.forEach.call(allPickers,
 
-                const form = item.parentElement;
+                item => {
 
-                ui.removeClass(item, ui.calendar.nameOpenEase);
+                    const form = item.parentElement;
 
-                setTimeout(() => {
-                    removePicker(form, item);
-                }, ui.globals.ease);
+                    ui.removeClass(item, ui.calendar.nameOpenEase);
 
-            });
+                    setTimeout(() => {
+                        removePicker(form, item);
+                    }, ui.globals.ease);
+
+                });
 
         }
 

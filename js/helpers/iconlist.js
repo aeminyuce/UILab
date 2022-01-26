@@ -65,18 +65,20 @@ ui.iconlist.Start = () => {
 
         });
 
-    ui.find('.' + ui.iconlist.target).forEach(el => {
+    Array.prototype.forEach.call(ui.find('.' + ui.iconlist.target),
 
-        const total = ui.find('li', el).length;
+        el => {
 
-        el.previousElementSibling.insertAdjacentHTML(
-            'beforeend',
-            ' <span class="' + ui.iconlist.stylesTotal + '">(' + total + ' icons)</span>'
-        );
+            const total = ui.find('li', el).length;
 
-        totalIcons += total;
+            el.previousElementSibling.insertAdjacentHTML(
+                'beforeend',
+                ' <span class="' + ui.iconlist.stylesTotal + '">(' + total + ' icons)</span>'
+            );
 
-    });
+            totalIcons += total;
+
+        });
 
     ui.find('.' + ui.iconlist.nameTotal)[0].textContent = '(' + ui.iconlist.msgTotal + ': ' + totalIcons + ')';
 

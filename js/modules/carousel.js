@@ -244,9 +244,11 @@ ui.carousel = {
 
         size = Math.round(that.offsetWidth / size);
 
-        contents.forEach(item => {
-            item.style.width = size + 'px';
-        });
+        Array.prototype.forEach.call(contents,
+
+            item => {
+                item.style.width = size + 'px';
+            });
 
         size = size * contents.length;
         slider[0].style.width = size + 'px';
@@ -269,12 +271,14 @@ ui.carousel = {
 
         filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
 
-        contents.forEach((item, l) => { // detect carousel animates
+        Array.prototype.forEach.call(contents,
 
-            if (l + 1 > col) { return; }
-            carouselAnimate(item, (ui.globals.ease * 2), type);
+            (item, l) => { // detect carousel animates
 
-        });
+                if (l + 1 > col) { return; }
+                carouselAnimate(item, (ui.globals.ease * 2), type);
+
+            });
 
     }
 
@@ -360,7 +364,7 @@ ui.carousel = {
 
         if (contents.length > 1 && contents.length !== col) { // stop reloading animates when content length is not enough
 
-            contents.forEach(item => { // detect carousel animates
+            Array.prototype.forEach.call(contents, item => { // detect carousel animates
                 carouselAnimate(item, contentsEase[i], 'static');
             });
 
@@ -374,50 +378,54 @@ ui.carousel = {
 
         if (e === 'resize' || e.type === 'resize') {
 
-            ui.find('.' + ui.carousel.target).forEach(el => {
+            Array.prototype.forEach.call( ui.find('.' + ui.carousel.target),
 
-                const i = Number(el.getAttribute(ui.carousel.dataID));
-                if (i === null) { return; }
+                el => {
 
-                ui.addClass(el, ui.carousel.nameResized);
-                carouselModifier(i, el, 'resize');
+                        const i = Number(el.getAttribute(ui.carousel.dataID));
+                        if (i === null) { return; }
 
-                const slider = ui.find('.' + ui.carousel.targetSlider, el)[0];
+                        ui.addClass(el, ui.carousel.nameResized);
+                        carouselModifier(i, el, 'resize');
 
-                el.style.transitionDuration = '0s';
-                slider.style.transitionDuration = '0s';
+                        const slider = ui.find('.' + ui.carousel.targetSlider, el)[0];
 
-            });
+                        el.style.transitionDuration = '0s';
+                        slider.style.transitionDuration = '0s';
 
-        }
+                    });
+
+                }
 
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(() => { // wait auto slider until resize completed
 
             const that = ui.find('.' + ui.carousel.target);
-            that.forEach(el => {
+            Array.prototype.forEach.call(that,
 
-                const i = Number(el.getAttribute(ui.carousel.dataID));
-                if (i === null) { return; }
+                el => {
 
-                ui.removeClass(el, ui.carousel.nameResized);
+                    const i = Number(el.getAttribute(ui.carousel.dataID));
+                    if (i === null) { return; }
 
-                if (autoTimer[i] !== null && autoTimer[i] !== undefined) {
+                    ui.removeClass(el, ui.carousel.nameResized);
 
-                    clearInterval(autoSlider[i]);
+                    if (autoTimer[i] !== null && autoTimer[i] !== undefined) {
 
-                    autoSlider[i] = setInterval(() => {
-                        carouselNav(that[i], 'next');
-                    }, autoTimer[i]);
+                        clearInterval(autoSlider[i]);
 
-                }
+                        autoSlider[i] = setInterval(() => {
+                            carouselNav(that[i], 'next');
+                        }, autoTimer[i]);
 
-                const slider = ui.find('.' + ui.carousel.targetSlider, el)[0];
+                    }
 
-                el.style.transitionDuration = '';
-                slider.style.transitionDuration = '';
+                    const slider = ui.find('.' + ui.carousel.targetSlider, el)[0];
 
-            });
+                    el.style.transitionDuration = '';
+                    slider.style.transitionDuration = '';
+
+                });
 
         }, ui.globals.ease);
 
@@ -429,179 +437,185 @@ ui.carousel = {
         if (carousels.length > 0) {
 
             // load carousels
-            carousels.forEach(el => {
+            Array.prototype.forEach.call(carousels,
 
-                // id
-                el.setAttribute(ui.carousel.dataID, idCount);
+                el => {
 
-                const j = idCount;
-                idCount += 1;
+                    // id
+                    el.setAttribute(ui.carousel.dataID, idCount);
 
-                // cols
-                cols[j] = el.getAttribute(ui.carousel.dataCols);
+                    const j = idCount;
+                    idCount += 1;
 
-                colsXL[j] = el.getAttribute(ui.carousel.dataColsXL);
-                colsLG[j] = el.getAttribute(ui.carousel.dataColsLG);
-                colsMD[j] = el.getAttribute(ui.carousel.dataColsMD);
-                colsSM[j] = el.getAttribute(ui.carousel.dataColsSM);
-                colsXS[j] = el.getAttribute(ui.carousel.dataColsXS);
+                    // cols
+                    cols[j] = el.getAttribute(ui.carousel.dataCols);
 
-                // col
-                if (cols[j] === null) {
-                    cols[j] = 1;
+                    colsXL[j] = el.getAttribute(ui.carousel.dataColsXL);
+                    colsLG[j] = el.getAttribute(ui.carousel.dataColsLG);
+                    colsMD[j] = el.getAttribute(ui.carousel.dataColsMD);
+                    colsSM[j] = el.getAttribute(ui.carousel.dataColsSM);
+                    colsXS[j] = el.getAttribute(ui.carousel.dataColsXS);
 
-                } else {
-
-                    cols[j] = Number(cols[j]);
-
-                    if (!cols[j] || cols[j] === '0' || cols[j] === '') {
+                    // col
+                    if (cols[j] === null) {
                         cols[j] = 1;
+
+                    } else {
+
+                        cols[j] = Number(cols[j]);
+
+                        if (!cols[j] || cols[j] === '0' || cols[j] === '') {
+                            cols[j] = 1;
+                        }
+
                     }
 
-                }
-
-                // xl
-                if (colsXL[j] === null) {
-                    colsXL[j] = cols[j];
-
-                } else {
-
-                    colsXL[j] = Number(colsXL[j]);
-
-                    if (!colsXL[j] || colsXL[j] === '0' || colsXL[j] === '') {
+                    // xl
+                    if (colsXL[j] === null) {
                         colsXL[j] = cols[j];
+
+                    } else {
+
+                        colsXL[j] = Number(colsXL[j]);
+
+                        if (!colsXL[j] || colsXL[j] === '0' || colsXL[j] === '') {
+                            colsXL[j] = cols[j];
+                        }
+
                     }
 
-                }
-
-                // lg
-                if (colsLG[j] === null) {
-                    colsLG[j] = cols[j];
-
-                } else {
-
-                    colsLG[j] = Number(colsLG[j]);
-
-                    if (!colsLG[j] || colsLG[j] === '0' || colsLG[j] === '') {
+                    // lg
+                    if (colsLG[j] === null) {
                         colsLG[j] = cols[j];
+
+                    } else {
+
+                        colsLG[j] = Number(colsLG[j]);
+
+                        if (!colsLG[j] || colsLG[j] === '0' || colsLG[j] === '') {
+                            colsLG[j] = cols[j];
+                        }
+
                     }
 
-                }
-
-                // md
-                if (colsMD[j] === null) {
-                    colsMD[j] = cols[j];
-
-                } else {
-
-                    colsMD[j] = Number(colsMD[j]);
-
-                    if (!colsMD[j] || colsMD[j] === '0' || colsMD[j] === '') {
+                    // md
+                    if (colsMD[j] === null) {
                         colsMD[j] = cols[j];
+
+                    } else {
+
+                        colsMD[j] = Number(colsMD[j]);
+
+                        if (!colsMD[j] || colsMD[j] === '0' || colsMD[j] === '') {
+                            colsMD[j] = cols[j];
+                        }
+
                     }
 
-                }
-
-                // sm
-                if (colsSM[j] === null) {
-                    colsSM[j] = cols[j];
-
-                } else {
-
-                    colsSM[j] = Number(colsSM[j]);
-
-                    if (!colsSM[j] || colsSM[j] === '0' || colsSM[j] === '') {
+                    // sm
+                    if (colsSM[j] === null) {
                         colsSM[j] = cols[j];
+
+                    } else {
+
+                        colsSM[j] = Number(colsSM[j]);
+
+                        if (!colsSM[j] || colsSM[j] === '0' || colsSM[j] === '') {
+                            colsSM[j] = cols[j];
+                        }
+
                     }
 
-                }
-
-                // xs
-                if (colsXS[j] === null) {
-                    colsXS[j] = cols[j];
-
-                } else {
-
-                    colsXS[j] = Number(colsXS[j]);
-
-                    if (!colsXS[j] || colsXS[j] === '0' || colsXS[j] === '') {
+                    // xs
+                    if (colsXS[j] === null) {
                         colsXS[j] = cols[j];
+
+                    } else {
+
+                        colsXS[j] = Number(colsXS[j]);
+
+                        if (!colsXS[j] || colsXS[j] === '0' || colsXS[j] === '') {
+                            colsXS[j] = cols[j];
+                        }
+
                     }
 
-                }
+                    counts[j] = 0;
 
-                counts[j] = 0;
+                    const contents = ui.find('.' + ui.carousel.nameContent, el);
+                    if (contents.length === 0) { return; }
 
-                const contents = ui.find('.' + ui.carousel.nameContent, el);
-                if (contents.length === 0) { return; }
+                    const nav = ui.find('.' + ui.carousel.targetNav, el)[0];
+                    const navDots = ui.find('.' + ui.carousel.nameDots, nav)[0];
 
-                const nav = ui.find('.' + ui.carousel.targetNav, el)[0];
-                const navDots = ui.find('.' + ui.carousel.nameDots, nav)[0];
+                    if (nav === undefined || navDots === undefined) { return; }
 
-                if (nav === undefined || navDots === undefined) { return; }
+                    ui.addClass(el, ui.carousel.nameActive);
+                    carouselModifier(j, el, 'static');
 
-                ui.addClass(el, ui.carousel.nameActive);
-                carouselModifier(j, el, 'static');
+                    // create nav
+                    const col = getCols(j); // get responsive cols
 
-                // create nav
-                const col = getCols(j); // get responsive cols
+                    if (contents.length <= col) { // toggle nav
+                        nav.style.display = 'none';
 
-                if (contents.length <= col) { // toggle nav
-                    nav.style.display = 'none';
+                    } else { nav.style.display = ''; }
 
-                } else { nav.style.display = ''; }
+                    let navDotsHtml = '';
+                    navDots.innerHTML = '';
 
-                let navDotsHtml = '';
-                navDots.innerHTML = '';
+                    Array.prototype.forEach.call(contents,
 
-                contents.forEach(() => {
+                        () => {
 
-                    navDotsHtml += '<' + ui.carousel.tagDots + ' ' +
-                                        'class="' + ui.carousel.stylesDots + '">' +
-                                   '</' + ui.carousel.tagDots + '>';
+                            navDotsHtml += '<' + ui.carousel.tagDots + ' ' +
+                                                'class="' + ui.carousel.stylesDots + '">' +
+                                        '</' + ui.carousel.tagDots + '>';
+
+                        });
+
+                    navDots.insertAdjacentHTML('beforeend', navDotsHtml);
+                    const navDotsEl = ui.find('.' + ui.carousel.nameDots + ' i', nav);
+
+                    counts[j] = 0;
+                    el.setAttribute(ui.carousel.dataContent, (counts[j] + 1));
+
+                    ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
+                    ui.addClass(navDotsEl[counts[j]], ui.carousel.nameNavSelected);
+
+                    filterDots(navDots, navDotsEl, counts[j], j); // filter dots when dots number exceeds
+
+                    // auto slider
+                    autoTimer[j] = el.getAttribute(ui.carousel.dataSlide);
+
+                    if (autoTimer[j] !== null) {
+
+                        if (autoTimer[j] === '') {
+                            autoTimer[j] = ui.carousel.defaultSlideTimer;
+                        }
+
+                        const that = el;
+
+                        autoSlider[j] = setInterval(() => {
+                            carouselNav(that, 'next');
+                        }, autoTimer[j]);
+
+                    }
 
                 });
 
-                navDots.insertAdjacentHTML('beforeend', navDotsHtml);
-                const navDotsEl = ui.find('.' + ui.carousel.nameDots + ' i', nav);
+            // carousel gallery loader
+            Array.prototype.forEach.call(ui.find('.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs),
 
-                counts[j] = 0;
-                el.setAttribute(ui.carousel.dataContent, (counts[j] + 1));
+                el => {
 
-                ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
-                ui.addClass(navDotsEl[counts[j]], ui.carousel.nameNavSelected);
+                    const images = ui.find('.' + ui.carousel.namePhoto, el);
 
-                filterDots(navDots, navDotsEl, counts[j], j); // filter dots when dots number exceeds
-
-                // auto slider
-                autoTimer[j] = el.getAttribute(ui.carousel.dataSlide);
-
-                if (autoTimer[j] !== null) {
-
-                    if (autoTimer[j] === '') {
-                        autoTimer[j] = ui.carousel.defaultSlideTimer;
+                    if (images.length <= 1) {
+                        el.style.display = 'none'; // hide thumbs when image length is 1 or 0
                     }
 
-                    const that = el;
-
-                    autoSlider[j] = setInterval(() => {
-                        carouselNav(that, 'next');
-                    }, autoTimer[j]);
-
-                }
-
-            });
-
-            // carousel gallery loader
-            ui.find('.' + ui.carousel.targetGallery + ' .' + ui.carousel.nameGalleryThumbs).forEach(el => {
-
-                const images = ui.find('.' + ui.carousel.namePhoto, el);
-
-                if (images.length <= 1) {
-                    el.style.display = 'none'; // hide thumbs when image length is 1 or 0
-                }
-
-            });
+                });
 
         }
 
@@ -688,10 +702,10 @@ ui.carousel = {
                 const callCarousels = ui.find('.' + ui.carousel.target + '[' + ui.carousel.dataSlide + ']');
 
                 if (document.hidden) { // stop all carousels when browser windows is not active
-                    callCarousels.forEach(el => { carouselStop(el); });
+                    Array.prototype.forEach.call(callCarousels, el => { carouselStop(el); });
 
                 } else {
-                    callCarousels.forEach(el => { carouselStart(el); });
+                    Array.prototype.forEach.call(callCarousels, el => { carouselStart(el); });
                 }
 
             });
@@ -890,9 +904,11 @@ ui.carousel = {
 
                                     }
 
-                                    contents.forEach(item => { // detect carousel animates
-                                        carouselAnimate(item, contentsEase[i], 'touch');
-                                    });
+                                    Array.prototype.forEach.call(contents,
+
+                                        item => { // detect carousel animates
+                                            carouselAnimate(item, contentsEase[i], 'touch');
+                                        });
 
                                     ui.removeClass(document, ui.carousel.nameTouchMove);
                                     touchStarted = false;

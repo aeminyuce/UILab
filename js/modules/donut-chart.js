@@ -33,44 +33,48 @@ ui.donutChart.Start = () => {
             let arrPercent = [];
             let arrAngle = [];
 
-            chart.forEach(el => {
+            Array.prototype.forEach.call(chart,
 
-                const circles = ui.find('circle:not(.' + ui.donutChart.targetBg + ')', el);
+                el => {
 
-                if (circles.length > 1) {
-                    ui.addClass(el, 'multiple');
-                }
+                    const circles = ui.find('circle:not(.' + ui.donutChart.targetBg + ')', el);
 
-                circles.forEach((item, j) => {
-
-                    const percent = item.getAttribute(ui.donutChart.dataPercent);
-                    arrPercent.push(percent);
-
-                    let dasharray = Math.round(percent * 4.4);
-                    if (dasharray < 0) { dasharray = 0; }
-
-                    item.setAttribute('stroke-dasharray', dasharray + ', 440');
-                    if (j > 0) {
-
-                        const angle = Math.floor(arrAngle[j - 1] + ((arrPercent[j - 1]) * 3.6));
-                        arrAngle.push(angle);
-
-                        item.setAttribute('transform', 'rotate(' + angle + ' 80 80)'); // rotate(angle, cx, cy); All IE browsers not supported CSS only transforms
-
-                    } else { arrAngle.push(0); }
-
-                    if (ui.userAgents.ie) {
-                        el.style.height = el.offsetWidth + 'px'; // transformed circle has highest height on IE
+                    if (circles.length > 1) {
+                        ui.addClass(el, 'multiple');
                     }
 
-                    ui.addClass(item, ui.donutChart.nameLoaded);
+                    Array.prototype.forEach.call(circles,
+
+                        (item, j) => {
+
+                            const percent = item.getAttribute(ui.donutChart.dataPercent);
+                            arrPercent.push(percent);
+
+                            let dasharray = Math.round(percent * 4.4);
+                            if (dasharray < 0) { dasharray = 0; }
+
+                            item.setAttribute('stroke-dasharray', dasharray + ', 440');
+                            if (j > 0) {
+
+                                const angle = Math.floor(arrAngle[j - 1] + ((arrPercent[j - 1]) * 3.6));
+                                arrAngle.push(angle);
+
+                                item.setAttribute('transform', 'rotate(' + angle + ' 80 80)'); // rotate(angle, cx, cy); All IE browsers not supported CSS only transforms
+
+                            } else { arrAngle.push(0); }
+
+                            if (ui.userAgents.ie) {
+                                el.style.height = el.offsetWidth + 'px'; // transformed circle has highest height on IE
+                            }
+
+                            ui.addClass(item, ui.donutChart.nameLoaded);
+
+                        });
+
+                    arrPercent = [];
+                    arrAngle = [];
 
                 });
-
-                arrPercent = [];
-                arrAngle = [];
-
-            });
 
         }
 

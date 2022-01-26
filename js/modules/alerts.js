@@ -420,21 +420,23 @@ ui.alerts = {
                 if (holder !== undefined) {
 
                     const prev = ui.find('.' + ui.alerts.targetMsg + '.' + ui.alerts.namePosPrefix + props.pos);
-                    prev.forEach((el, j, arr) => {
+                    Array.prototype.forEach.call(prev,
 
-                        let slide = 0;
+                        (el, j, arr) => {
 
-                        for (let i = j + 1; i < arr.length; i++) {
-                            slide += Number(el.offsetHeight + 10);
-                        }
+                            let slide = 0;
 
-                        if (props.pos === ui.alerts.posBottomRight || props.pos === ui.alerts.posBottomLeft) {
-                            slide = -1 * slide;
-                        }
+                            for (let i = j + 1; i < arr.length; i++) {
+                                slide += Number(el.offsetHeight + 10);
+                            }
 
-                        prev[j].style.transform = 'translateY(' + slide + 'px)';
+                            if (props.pos === ui.alerts.posBottomRight || props.pos === ui.alerts.posBottomLeft) {
+                                slide = -1 * slide;
+                            }
 
-                    });
+                            prev[j].style.transform = 'translateY(' + slide + 'px)';
+
+                        });
 
                 }
 
@@ -462,13 +464,15 @@ ui.alerts = {
 
             function () {
 
-                messageQueue.forEach((el, i) => {
+                Array.prototype.forEach.call(messageQueue,
 
-                    if (el[0] === this) {
-                        messageQueue.splice(i, 1);
-                    }
+                    (el, i) => {
 
-                });
+                        if (el[0] === this) {
+                            messageQueue.splice(i, 1);
+                        }
+
+                    });
 
                 ui.alerts.closeMessage(this);
 
