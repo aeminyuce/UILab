@@ -1723,7 +1723,7 @@
                 <h3 class="ui-h3">Special Forms</h3>
                 <div class="ui-row ui-p-30-b">
                     <div class="ui-col-3">
-                        <label class="ui-form-info" >Number Form</label>
+                        <label class="ui-form-info">Number Form</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input ui-round ui-border-dual ui-ease-form">
