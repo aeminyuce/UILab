@@ -21,26 +21,24 @@ ui.icons.Start = () => {
     // svg icon reference replacement for IE
     if (!ui.userAgents.ie) { return; }
 
-    var iconsList, href, newHref, page, sprites;
+    let iconsList = ui.find(ui.icons.target);
 
-    page = ui.find('body')[0];
-    iconsList = ui.find(ui.icons.target);
+    const page = ui.find('body')[0];
+    const sprites = ui.find('body > svg'); // check svg sprites loaded before
 
-    sprites = ui.find('body > svg'); // check svg sprites loaded before
+    Array.prototype.forEach.call(iconsList,
 
-    ui.each(iconsList,
+        (el, i) => {
 
-        function (i) {
-
-            href = this.getAttribute('href');
-            newHref = href.split('#')[1];
+            const href = el.getAttribute('href');
+            const newHref = href.split('#')[1];
 
             if (newHref !== undefined) { // pass replaced before
 
-                this.removeAttribute('href');
-                this.setAttribute('href');
+                el.removeAttribute('href');
+                el.setAttribute('href');
 
-                this.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + newHref);
+                el.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + newHref);
 
             }
 
@@ -67,7 +65,9 @@ ui.icons.Start = () => {
 
             }
 
-            });
+        }
+
+    );
 
 };
 

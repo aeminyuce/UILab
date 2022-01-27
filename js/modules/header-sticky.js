@@ -23,7 +23,7 @@ ui.headerSticky = {
 
 (() => {
 
-    var
+    let
         stickyLoad,
         stickyClear,
 

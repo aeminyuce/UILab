@@ -20,72 +20,84 @@ ui.grid = {
 
 ui.grid.Start = () => {
 
-    var fnc, o, p, siblings, i;
-
     if (ui.find('[class*="' + ui.grid.targetColsPrefix + '"][class*="' + ui.grid.targetOrdersPrefix + '"]').length > 0) {
 
-        fnc = function (classType, size) {
+        const move = (classType, size) => {
 
             if (size) {
 
-                ui.each('[class*="' + ui.grid.targetOrdersPrefix + classType + '-"]', function () {
+                Array.prototype.forEach.call(ui.find('[class*="' + ui.grid.targetOrdersPrefix + classType + '-"]'),
 
-                    p = this.parentElement;
-                    siblings = p.children;
+                    el => {
 
-                    i = Array.prototype.slice.call(this.parentElement.children).indexOf(this);
+                        const parent = el.parentElement;
+                        const siblings = parent.children;
 
-                    if (ui.hasClass(this, ui.grid.targetOrdersPrefix + classType + ui.grid.nameFirstSuffix) && i !== 0) {
+                        const index = Array.prototype.slice.call(el.parentElement.children).indexOf(el);
 
-                        this.setAttribute(ui.grid.dataOrdered, i);
-                        p.insertBefore(this, p.firstChild);
+                        if (ui.hasClass(el, ui.grid.targetOrdersPrefix + classType + ui.grid.nameFirstSuffix) && index !== 0) {
+
+                            el.setAttribute(ui.grid.dataOrdered, index);
+                            parent.insertBefore(el, parent.firstChild);
+
+                        }
+
+                        if (ui.hasClass(el, ui.grid.targetOrdersPrefix + classType + ui.grid.nameLastSuffix) && index !== (siblings.length - 1)) {
+
+                            el.setAttribute(ui.grid.dataOrdered, index);
+                            parent.appendChild(el);
+
+                        }
 
                     }
 
-                    if (ui.hasClass(this, ui.grid.targetOrdersPrefix + classType + ui.grid.nameLastSuffix) && i !== (siblings.length - 1)) {
-
-                        this.setAttribute(ui.grid.dataOrdered, i);
-                        p.appendChild(this);
-
-                    }
-
-                });
+                );
 
             } else {
 
-                ui.each('[class*="' + ui.grid.targetOrdersPrefix + classType + '-"][' + ui.grid.dataOrdered + ']', function () {
+                Array.prototype.forEach.call(ui.find('[class*="' + ui.grid.targetOrdersPrefix + classType + '-"][' + ui.grid.dataOrdered + ']'),
 
-                    o = parseInt(this.getAttribute(ui.grid.dataOrdered));
+                    el => {
 
-                    p = this.parentElement;
-                    siblings = p.children;
+                        const order = parseInt(el.getAttribute(ui.grid.dataOrdered));
 
-                    if (ui.hasClass(this, ui.grid.targetOrdersPrefix + classType + ui.grid.nameFirstSuffix)) {
+                        const parent = el.parentElement;
+                        const siblings = parent.children;
 
-                        this.removeAttribute(ui.grid.dataOrdered);
-                        p.insertBefore(this, siblings[o + 1]);
+                        if (ui.hasClass(el, ui.grid.targetOrdersPrefix + classType + ui.grid.nameFirstSuffix)) {
 
-                    } else {
+                            let refEl = siblings[order + 1];
 
-                        this.removeAttribute(ui.grid.dataOrdered);
-                        p.insertBefore(this, siblings[o]);
+                            if (refEl !== undefined) {
+                                refEl = null; // IE requires as 2nd argument a valid node or null
+                            }
+
+                            el.removeAttribute(ui.grid.dataOrdered);
+                            parent.insertBefore(el, refEl);
+
+                        } else {
+
+                            el.removeAttribute(ui.grid.dataOrdered);
+                            parent.insertBefore(el, siblings[order]);
+
+                        }
 
                     }
 
-                });
+                );
 
             }
 
         };
 
-        fnc('xs', window.innerWidth < ui.globals.xs + 1);
-        fnc('sm', window.innerWidth < ui.globals.sm + 1);
-        fnc('md', window.innerWidth < ui.globals.md + 1);
+        move('xs', window.innerWidth < ui.globals.xs + 1);
+        move('sm', window.innerWidth < ui.globals.sm + 1);
+        move('md', window.innerWidth < ui.globals.md + 1);
 
-        fnc('default', window.innerWidth < ui.globals.lg);
+        move('default', window.innerWidth < ui.globals.lg);
 
-        fnc('lg', window.innerWidth > ui.globals.lg - 1);
-        fnc('xl', window.innerWidth > ui.globals.xl - 1);
+        move('lg', window.innerWidth > ui.globals.lg - 1);
+        move('xl', window.innerWidth > ui.globals.xl - 1);
 
     }
 

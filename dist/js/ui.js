@@ -763,49 +763,53 @@ ui.grid = {
 };
 
 ui.grid.Start = function () {
-  var fnc, o, p, siblings, i;
-
   if (ui.find('[class*="' + ui.grid.targetColsPrefix + '"][class*="' + ui.grid.targetOrdersPrefix + '"]').length > 0) {
-    fnc = function fnc(classType, size) {
+    var move = function move(classType, size) {
       if (size) {
-        ui.each('[class*="' + ui.grid.targetOrdersPrefix + classType + '-"]', function () {
-          p = this.parentElement;
-          siblings = p.children;
-          i = Array.prototype.slice.call(this.parentElement.children).indexOf(this);
+        Array.prototype.forEach.call(ui.find('[class*="' + ui.grid.targetOrdersPrefix + classType + '-"]'), function (el) {
+          var parent = el.parentElement;
+          var siblings = parent.children;
+          var index = Array.prototype.slice.call(el.parentElement.children).indexOf(el);
 
-          if (ui.hasClass(this, ui.grid.targetOrdersPrefix + classType + ui.grid.nameFirstSuffix) && i !== 0) {
-            this.setAttribute(ui.grid.dataOrdered, i);
-            p.insertBefore(this, p.firstChild);
+          if (ui.hasClass(el, ui.grid.targetOrdersPrefix + classType + ui.grid.nameFirstSuffix) && index !== 0) {
+            el.setAttribute(ui.grid.dataOrdered, index);
+            parent.insertBefore(el, parent.firstChild);
           }
 
-          if (ui.hasClass(this, ui.grid.targetOrdersPrefix + classType + ui.grid.nameLastSuffix) && i !== siblings.length - 1) {
-            this.setAttribute(ui.grid.dataOrdered, i);
-            p.appendChild(this);
+          if (ui.hasClass(el, ui.grid.targetOrdersPrefix + classType + ui.grid.nameLastSuffix) && index !== siblings.length - 1) {
+            el.setAttribute(ui.grid.dataOrdered, index);
+            parent.appendChild(el);
           }
         });
       } else {
-        ui.each('[class*="' + ui.grid.targetOrdersPrefix + classType + '-"][' + ui.grid.dataOrdered + ']', function () {
-          o = parseInt(this.getAttribute(ui.grid.dataOrdered));
-          p = this.parentElement;
-          siblings = p.children;
+        Array.prototype.forEach.call(ui.find('[class*="' + ui.grid.targetOrdersPrefix + classType + '-"][' + ui.grid.dataOrdered + ']'), function (el) {
+          var order = parseInt(el.getAttribute(ui.grid.dataOrdered));
+          var parent = el.parentElement;
+          var siblings = parent.children;
 
-          if (ui.hasClass(this, ui.grid.targetOrdersPrefix + classType + ui.grid.nameFirstSuffix)) {
-            this.removeAttribute(ui.grid.dataOrdered);
-            p.insertBefore(this, siblings[o + 1]);
+          if (ui.hasClass(el, ui.grid.targetOrdersPrefix + classType + ui.grid.nameFirstSuffix)) {
+            var refEl = siblings[order + 1];
+
+            if (refEl !== undefined) {
+              refEl = null;
+            }
+
+            el.removeAttribute(ui.grid.dataOrdered);
+            parent.insertBefore(el, refEl);
           } else {
-            this.removeAttribute(ui.grid.dataOrdered);
-            p.insertBefore(this, siblings[o]);
+            el.removeAttribute(ui.grid.dataOrdered);
+            parent.insertBefore(el, siblings[order]);
           }
         });
       }
     };
 
-    fnc('xs', window.innerWidth < ui.globals.xs + 1);
-    fnc('sm', window.innerWidth < ui.globals.sm + 1);
-    fnc('md', window.innerWidth < ui.globals.md + 1);
-    fnc('default', window.innerWidth < ui.globals.lg);
-    fnc('lg', window.innerWidth > ui.globals.lg - 1);
-    fnc('xl', window.innerWidth > ui.globals.xl - 1);
+    move('xs', window.innerWidth < ui.globals.xs + 1);
+    move('sm', window.innerWidth < ui.globals.sm + 1);
+    move('md', window.innerWidth < ui.globals.md + 1);
+    move('default', window.innerWidth < ui.globals.lg);
+    move('lg', window.innerWidth > ui.globals.lg - 1);
+    move('xl', window.innerWidth > ui.globals.xl - 1);
   }
 };
 
@@ -2553,18 +2557,17 @@ ui.icons.Start = function () {
     return;
   }
 
-  var iconsList, href, newHref, page, sprites;
-  page = ui.find('body')[0];
-  iconsList = ui.find(ui.icons.target);
-  sprites = ui.find('body > svg');
-  ui.each(iconsList, function (i) {
-    href = this.getAttribute('href');
-    newHref = href.split('#')[1];
+  var iconsList = ui.find(ui.icons.target);
+  var page = ui.find('body')[0];
+  var sprites = ui.find('body > svg');
+  Array.prototype.forEach.call(iconsList, function (el, i) {
+    var href = el.getAttribute('href');
+    var newHref = href.split('#')[1];
 
     if (newHref !== undefined) {
-      this.removeAttribute('href');
-      this.setAttribute('href');
-      this.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + newHref);
+      el.removeAttribute('href');
+      el.setAttribute('href');
+      el.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#' + newHref);
     }
 
     if (sprites.length === 0 && i + 1 === iconsList.length) {
