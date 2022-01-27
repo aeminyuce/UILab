@@ -68,7 +68,7 @@ ui.grid.Start = () => {
 
                             let refEl = siblings[order + 1];
 
-                            if (refEl !== undefined) {
+                            if (refEl === undefined) {
                                 refEl = null; // IE requires as 2nd argument a valid node or null
                             }
 

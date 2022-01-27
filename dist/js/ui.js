@@ -790,7 +790,7 @@ ui.grid.Start = function () {
           if (ui.hasClass(el, ui.grid.targetOrdersPrefix + classType + ui.grid.nameFirstSuffix)) {
             var refEl = siblings[order + 1];
 
-            if (refEl !== undefined) {
+            if (refEl === undefined) {
               refEl = null;
             }
 
