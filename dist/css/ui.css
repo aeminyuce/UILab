@@ -5923,6 +5923,62 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-icons-no-opacity .ui-icon:not(.ui-opacity-half) {
   opacity: 1 !important;
 }
+.ui-icons-m-1-l .ui-icon {
+  margin-left: 1px !important;
+}
+.ui-icons-m-1-r .ui-icon {
+  margin-right: 1px !important;
+}
+.ui-icons-m-1-v .ui-icon {
+  margin-top: 1px !important;
+  margin-bottom: 1px !important;
+}
+.ui-icons-m-1-h .ui-icon {
+  margin-right: 1px !important;
+  margin-left: 1px !important;
+}
+.ui-icons-m-2-l .ui-icon {
+  margin-left: 2px !important;
+}
+.ui-icons-m-2-r .ui-icon {
+  margin-right: 2px !important;
+}
+.ui-icons-m-2-v .ui-icon {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+.ui-icons-m-2-h .ui-icon {
+  margin-right: 2px !important;
+  margin-left: 2px !important;
+}
+.ui-icons-m-3-l .ui-icon {
+  margin-left: 3px !important;
+}
+.ui-icons-m-3-r .ui-icon {
+  margin-right: 3px !important;
+}
+.ui-icons-m-3-v .ui-icon {
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
+}
+.ui-icons-m-3-h .ui-icon {
+  margin-right: 3px !important;
+  margin-left: 3px !important;
+}
+.ui-icons-m-4-l .ui-icon {
+  margin-left: 4px !important;
+}
+.ui-icons-m-4-r .ui-icon {
+  margin-right: 4px !important;
+}
+.ui-icons-m-4-v .ui-icon {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+}
+.ui-icons-m-4-h .ui-icon {
+  margin-right: 4px !important;
+  margin-left: 4px !important;
+}
 .ui-icons-m-5-l .ui-icon {
   margin-left: 5px !important;
 }
@@ -10233,7 +10289,7 @@ html:not(.ui-ie) .ui-map svg {
 .ui-theme-red .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(0, 82%, 52%) !important;
 }
-/* themes extended */
+/* themes ext */
 .ui-theme-base.ui-fill-light-100,
 .ui-theme-base .ui-fill-light-100:not([class*="ui-theme-"]) {
   background-color: hsla(226, 52%, 60%, 0.15);
