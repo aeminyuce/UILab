@@ -1,0 +1,11 @@
+/* themes ext */
+
+@base:                                  hsl(226, 52%, 50%);
+@sub:                                   hsl(206, 87%, 50%);
+
+@theme-ext-colors:                      base sub;
+
+each(@theme-ext-colors, {
+    @color: @@value;
+    ._theme(@value,  @color);
+});

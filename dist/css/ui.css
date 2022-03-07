@@ -10233,6 +10233,7 @@ html:not(.ui-ie) .ui-map svg {
 .ui-theme-red .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(0, 82%, 52%) !important;
 }
+/* themes extended */
 .ui-theme-base.ui-fill-light-100,
 .ui-theme-base .ui-fill-light-100:not([class*="ui-theme-"]) {
   background-color: hsla(226, 52%, 60%, 0.15);
