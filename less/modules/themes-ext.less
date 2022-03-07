@@ -5,7 +5,11 @@
 
 @theme-ext-colors:                      base sub;
 
-each(@theme-ext-colors, {
-    @color: @@value;
-    ._theme(@value,  @color);
-});
+& when (@referenceCompiling = false) { // not compiled when reference importing
+
+    each(@theme-ext-colors, {
+        @color: @@value;
+        ._theme(@value,  @color);
+    });
+
+}
