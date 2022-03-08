@@ -205,7 +205,7 @@ ui.tooltip = {
         var title, dataTitle;
 
         title = that.getAttribute('title');
-        if (type === ui.tooltip.nameOpen && title !== null && title !== '') {
+        if (type === "show" && title !== null && title !== '') {
 
             createFnc(that, title);
 
@@ -219,14 +219,17 @@ ui.tooltip = {
             dataTitle = that.getAttribute(ui.tooltip.dataTitle);
             if (dataTitle !== null && dataTitle !== '') {
 
-                if (type === 'close') {
+                if (type === 'close' || type === 'hide') {
 
                     removeFnc(that);
+                    ui.removeClass(that, ui.tooltip.nameActive);
+
+                }
+
+                if (type === 'close') {
 
                     that.removeAttribute(ui.tooltip.dataTitle);
                     that.setAttribute('title', dataTitle);
-
-                    ui.removeClass(that, ui.tooltip.nameActive);
 
                 }
 
@@ -240,7 +243,7 @@ ui.tooltip = {
 
         // Event Listeners
         ui.on(document,
-            'mouseenter mouseleave',
+            'mouseenter mouseleave mousedown',
 
             '[' + ui.tooltip.dataTooltip + ']:not([' + ui.tooltip.dataMobile + '])',
 
@@ -251,7 +254,10 @@ ui.tooltip = {
                     var type;
 
                     if (e.type === 'mouseenter') {
-                        type = ui.tooltip.nameOpen;
+                        type = "show";
+
+                    } else if (e.type === 'mousedown') {
+                        type = "hide";
 
                     } else { type = 'close'; }
 
@@ -309,7 +315,7 @@ ui.tooltip = {
                     clearTimeout(pageTouchmoveTimer);
                     pageTouchmoveTimer = setTimeout(() => {
 
-                        tooltipFnc(that, ui.tooltip.nameOpen);
+                        tooltipFnc(that, "show");
                         ui.on(document,
                             'touchend.' + ui.tooltip.eventClose,
 
