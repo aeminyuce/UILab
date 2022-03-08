@@ -6887,6 +6887,11 @@ ui.tooltip = {
 
   function removeFnc() {
     var that = ui.find('.' + ui.tooltip.target)[0];
+
+    if (that === undefined) {
+      return;
+    }
+
     clearTimeout(removeTimer);
     removeTimer = setTimeout(function () {
       ui.removeClass(that, ui.tooltip.nameOpenEase);

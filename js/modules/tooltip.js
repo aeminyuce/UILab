@@ -58,6 +58,7 @@ ui.tooltip = {
     function removeFnc() {
 
         var that = ui.find('.' + ui.tooltip.target)[0];
+        if (that === undefined) { return; }
 
         clearTimeout(removeTimer);
 
