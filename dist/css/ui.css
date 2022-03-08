@@ -6474,7 +6474,8 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   color: hsla(0, 0%, 0%, 0.25);
   color: var(--ui-breadcrumbs-sep-color);
   font-size: 18px;
-  line-height: normal;
+  vertical-align: middle;
+  line-height: 0;
   margin: 0 8px 0 3px;
   display: inline-block;
 }
