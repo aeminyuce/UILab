@@ -6470,7 +6470,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   display: inline-block;
 }
 .ui-breadcrumbs:not(.ui-breadcrumbs-no-sep) > ul > li:not(:first-child):before {
-  content: "\203A";
+  content: "\2022";
   color: hsla(0, 0%, 0%, 0.25);
   color: var(--ui-breadcrumbs-sep-color);
   font-size: 18px;
