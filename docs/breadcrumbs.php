@@ -63,7 +63,7 @@
                         <li>
                             <a class="ui-btn ui-round" href="#">
                                 <svg class="ui-icon ui-m-5-r"><use href="../dist/icons.svg#home"/></svg>
-                                Home
+                                <span class="ui-inline-block">Home</span>
                             </a>
                         </li>
                         <li>
@@ -82,7 +82,7 @@
                         <li>
                             <a class="ui-btn ui-round ui-fill-dark-100" href="#">
                                 <svg class="ui-icon ui-m-5-r"><use href="../dist/icons.svg#home"/></svg>
-                                Home
+                                <span class="ui-inline-block">Home</span>
                             </a>
                         </li>
                         <li>
@@ -101,13 +101,13 @@
                         <li>
                             <a class="ui-btn ui-round" href="#">
                                 <svg class="ui-icon ui-m-5-r"><use href="../dist/icons.svg#home"/></svg>
-                                Home
+                                <span class="ui-inline-block">Home</span>
                             </a>
                         </li>
                         <li>
                             <a class="ui-btn ui-round" href="#">
                                 <svg class="ui-icon ui-icon-xs ui-inline-block ui-m-3-r"><use href="../dist/icons.svg#angle-left"/></svg>
-                                Search Results
+                                <span class="ui-inline-block">Search Results</span>
                             </a>
                         </li>
                         <li>
