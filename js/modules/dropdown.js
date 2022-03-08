@@ -171,7 +171,7 @@ ui.dropdown = {
 
                     if (window.innerWidth > ui.globals.sm) { // menu horizontal positioning: active
 
-                        if (ui.hasClass(parent, ui.dropdown.nameMenuLeft) || (offset.left + list.offsetWidth + ui.dropdown.scrollbarSize) > window.innerWidth) {
+                        if (ui.hasClass(parent, ui.dropdown.nameMenuLeft) || (!ui.hasClass(parent, ui.dropdown.nameMenuPosLeft) && (offset.left + list.offsetWidth + ui.dropdown.scrollbarSize) > window.innerWidth)) {
 
                             if (offset.left - (list.offsetWidth - parent.offsetWidth) >= 0) {
 

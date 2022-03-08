@@ -926,7 +926,7 @@ ui.dropdown = {
           listStyles = list.style.length;
 
           if (window.innerWidth > ui.globals.sm) {
-            if (ui.hasClass(parent, ui.dropdown.nameMenuLeft) || offset.left + list.offsetWidth + ui.dropdown.scrollbarSize > window.innerWidth) {
+            if (ui.hasClass(parent, ui.dropdown.nameMenuLeft) || !ui.hasClass(parent, ui.dropdown.nameMenuPosLeft) && offset.left + list.offsetWidth + ui.dropdown.scrollbarSize > window.innerWidth) {
               if (offset.left - (list.offsetWidth - parent.offsetWidth) >= 0) {
                 list.style.right = 0;
                 list.style.left = 'inherit';
