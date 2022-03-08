@@ -26,7 +26,7 @@
                     <ul>
                         <li>
                             <a class="ui-opacity ui-ease-btn" href="#">
-                                <svg class="ui-icon ui-icon-sm"><use href="../dist/icons.svg#home"/></svg>
+                                <svg class="ui-icon ui-icon-sm ui-m-3-b"><use href="../dist/icons.svg#home"/></svg>
                             </a>
                         </li>
                         <li>
@@ -44,7 +44,7 @@
                     <ul>
                         <li>
                             <a class="ui-opacity ui-ease-btn" href="#">
-                                <svg class="ui-icon ui-icon-sm"><use href="../dist/icons.svg#home"/></svg>
+                                <svg class="ui-icon ui-icon-sm ui-m-3-b"><use href="../dist/icons.svg#home"/></svg>
                             </a>
                         </li>
                         <li>
@@ -62,7 +62,7 @@
                     <ul class="ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-round" href="#">
-                                <svg class="ui-icon ui-m-5-r"><use href="../dist/icons.svg#home"/></svg>
+                                <svg class="ui-icon ui-m-5-r ui-m-3-b"><use href="../dist/icons.svg#home"/></svg>
                                 <span class="ui-inline-block">Home</span>
                             </a>
                         </li>
@@ -81,7 +81,7 @@
                     <ul class="ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-round ui-fill-dark-100" href="#">
-                                <svg class="ui-icon ui-m-5-r"><use href="../dist/icons.svg#home"/></svg>
+                                <svg class="ui-icon ui-m-5-r ui-m-3-b"><use href="../dist/icons.svg#home"/></svg>
                                 <span class="ui-inline-block">Home</span>
                             </a>
                         </li>
@@ -100,7 +100,7 @@
                     <ul class="ui-ease-2nd-btn">
                         <li>
                             <a class="ui-btn ui-round" href="#">
-                                <svg class="ui-icon ui-m-5-r"><use href="../dist/icons.svg#home"/></svg>
+                                <svg class="ui-icon ui-m-5-r ui-m-3-b"><use href="../dist/icons.svg#home"/></svg>
                                 <span class="ui-inline-block">Home</span>
                             </a>
                         </li>
@@ -122,7 +122,7 @@
                     <ul>
                         <li>
                             <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#">
-                                <svg class="ui-icon"><use href="../dist/icons.svg#home"/></svg>
+                                <svg class="ui-icon ui-m-3-b"><use href="../dist/icons.svg#home"/></svg>
                             </a>
                         </li>
                         <li>
@@ -155,7 +155,7 @@
                     <ul>
                         <li>
                             <a class="ui-btn ui-round ui-fill-dark-100 ui-ease-btn" href="#">
-                                <svg class="ui-icon"><use href="../dist/icons.svg#home"/></svg>
+                                <svg class="ui-icon ui-m-3-b"><use href="../dist/icons.svg#home"/></svg>
                             </a>
                         </li>
                         <li>
