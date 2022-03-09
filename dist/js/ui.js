@@ -6884,7 +6884,7 @@ ui.tooltip = {
 };
 
 (function () {
-  var removeTimer, removeTimer2x, pageTouchmoveTimer, touchControl, isScrolling;
+  var removeTimer, removeTimer2x, pageTouchmoveTimer, tooltipOpenedTimer, touchControl, isScrolling;
 
   function removeFnc() {
     var that = ui.find('.' + ui.tooltip.target)[0];
@@ -6993,6 +6993,7 @@ ui.tooltip = {
     title = that.getAttribute('title');
 
     if (type === "show" && title !== null && title !== '') {
+      clearTimeout(tooltipOpenedTimer);
       ui.addClass(document, ui.tooltip.nameTooltipOpened);
       createFnc(that, title);
       that.setAttribute(ui.tooltip.dataTitle, title);
@@ -7005,7 +7006,10 @@ ui.tooltip = {
         if (type === 'close' || type === 'hide') {
           removeFnc();
           ui.removeClass(that, ui.tooltip.nameActive);
-          ui.removeClass(document, ui.tooltip.nameTooltipOpened);
+          clearTimeout(tooltipOpenedTimer);
+          tooltipOpenedTimer = setTimeout(function () {
+            ui.removeClass(document, ui.tooltip.nameTooltipOpened);
+          }, ui.globals.ease);
         }
 
         if (type === 'close') {

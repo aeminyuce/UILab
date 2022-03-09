@@ -53,6 +53,8 @@ ui.tooltip = {
         removeTimer,
         removeTimer2x,
         pageTouchmoveTimer,
+        tooltipOpenedTimer,
+
         touchControl,
         isScrolling;
 
@@ -209,7 +211,9 @@ ui.tooltip = {
         title = that.getAttribute('title');
         if (type === "show" && title !== null && title !== '') {
 
+            clearTimeout(tooltipOpenedTimer);
             ui.addClass(document, ui.tooltip.nameTooltipOpened);
+
             createFnc(that, title);
 
             that.setAttribute(ui.tooltip.dataTitle, title);
@@ -227,7 +231,11 @@ ui.tooltip = {
                     removeFnc(that);
 
                     ui.removeClass(that, ui.tooltip.nameActive);
-                    ui.removeClass(document, ui.tooltip.nameTooltipOpened);
+                    clearTimeout(tooltipOpenedTimer);
+
+                    tooltipOpenedTimer = setTimeout(() => {
+                        ui.removeClass(document, ui.tooltip.nameTooltipOpened);
+                    }, ui.globals.ease);
 
                 }
 
