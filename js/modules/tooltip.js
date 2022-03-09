@@ -9,6 +9,7 @@ ui.tooltip = {
     target: 'ui-tooltip',
 
     // main classnames
+    nameTooltipOpened: 'ui-tooltip-opened',
     nameActive: 'ui-tooltip-active',
     nameContent: 'ui-tooltip-content',
 
@@ -208,6 +209,7 @@ ui.tooltip = {
         title = that.getAttribute('title');
         if (type === "show" && title !== null && title !== '') {
 
+            ui.addClass(document, ui.tooltip.nameTooltipOpened);
             createFnc(that, title);
 
             that.setAttribute(ui.tooltip.dataTitle, title);
@@ -223,7 +225,9 @@ ui.tooltip = {
                 if (type === 'close' || type === 'hide') {
 
                     removeFnc(that);
+
                     ui.removeClass(that, ui.tooltip.nameActive);
+                    ui.removeClass(document, ui.tooltip.nameTooltipOpened);
 
                 }
 

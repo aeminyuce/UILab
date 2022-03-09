@@ -17,6 +17,8 @@
 .ui-tooltip {
     min-width: @tooltip-min-width; max-width: @tooltip-max-width; position: absolute; z-index: @tooltip-z-index;
 
+    &-opened { overflow-x: hidden; }
+
     &:not([class*="ui-fill-"]) { color: @white; background-color: @featured-color; }
 
     &:not(.ui-open) { display: none; }

@@ -7404,6 +7404,9 @@ html:not(.ui-ie) .ui-steps-bar li {
   position: absolute;
   z-index: 99;
 }
+.ui-tooltip-opened {
+  overflow-x: hidden;
+}
 .ui-tooltip:not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 100%);
   background-color: hsl(345, 74%, 52%);

@@ -6859,6 +6859,7 @@ ui.sidebar = {
 
 ui.tooltip = {
   target: 'ui-tooltip',
+  nameTooltipOpened: 'ui-tooltip-opened',
   nameActive: 'ui-tooltip-active',
   nameContent: 'ui-tooltip-content',
   nameOpen: 'ui-open',
@@ -6992,6 +6993,7 @@ ui.tooltip = {
     title = that.getAttribute('title');
 
     if (type === "show" && title !== null && title !== '') {
+      ui.addClass(document, ui.tooltip.nameTooltipOpened);
       createFnc(that, title);
       that.setAttribute(ui.tooltip.dataTitle, title);
       that.removeAttribute('title');
@@ -7003,6 +7005,7 @@ ui.tooltip = {
         if (type === 'close' || type === 'hide') {
           removeFnc();
           ui.removeClass(that, ui.tooltip.nameActive);
+          ui.removeClass(document, ui.tooltip.nameTooltipOpened);
         }
 
         if (type === 'close') {
