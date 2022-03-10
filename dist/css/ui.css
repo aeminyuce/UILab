@@ -4430,8 +4430,8 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
   bottom: 30px;
   z-index: 7;
   opacity: 0;
-  transform: translateX(78px);
   cursor: pointer;
+  transform: translateX(78px);
 }
 .ui-top-button.ui-round {
   border-radius: 6.66666667px;

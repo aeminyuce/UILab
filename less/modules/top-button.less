@@ -8,10 +8,13 @@
 @top-button-position-r:                 15px;
 @top-button-position-b:                 30px;
 
-@top-button-slide-size:                 (@top-button-size + (@top-button-position-r * 2));
+@top-button-slide-pos:                  right; // right, bottom
 
 .ui-top-button {
-    text-align: center; width: @top-button-size; height: @top-button-size; ._bg-var(btn-bg); display: none; border: 0; position: fixed; right: @top-button-position-r; bottom: @top-button-position-b; z-index: @top-button-z-index; opacity: 0; transform: translateX(@top-button-slide-size); cursor: pointer;
+    text-align: center; width: @top-button-size; height: @top-button-size; ._bg-var(btn-bg); display: none; border: 0; position: fixed; right: @top-button-position-r; bottom: @top-button-position-b; z-index: @top-button-z-index; opacity: 0; cursor: pointer;
+
+    & when (@top-button-slide-pos = right) { transform: translateX((@top-button-size + (@top-button-position-r * 2))); }
+    & when (@top-button-slide-pos = bottom) { transform: translateY((@top-button-size + (@top-button-position-b * 2))); }
 
     &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
     &.ui-open {
