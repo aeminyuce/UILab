@@ -22,7 +22,7 @@
     <meta http-equiv="Expires" content="0">
 
     <!-- favicon -->
-    <link rel="ui-icon" href="img/favicon.ico">
+    <link rel="icon" href="img/favicon.ico">
 
     <!-- UI -->
     <link href="../dist/css/ui.css?v=<?php echo filemtime('../dist/css/ui.css'); ?>" rel="stylesheet">
