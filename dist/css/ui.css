@@ -9988,6 +9988,7 @@ html:not(.ui-ie) .ui-map svg {
 .ui-theme-gray.ui-stroke,
 .ui-theme-gray .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(220, 8%, 65%) !important;
+  stroke: hsl(220, 8%, 65%);
 }
 .ui-theme-green.ui-fill-light-100,
 .ui-theme-green .ui-fill-light-100:not([class*="ui-theme-"]) {
@@ -10064,6 +10065,7 @@ html:not(.ui-ie) .ui-map svg {
 .ui-theme-green.ui-stroke,
 .ui-theme-green .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(142, 82%, 42%) !important;
+  stroke: hsl(142, 82%, 42%);
 }
 .ui-theme-yellow.ui-fill-light-100,
 .ui-theme-yellow .ui-fill-light-100:not([class*="ui-theme-"]) {
@@ -10140,6 +10142,7 @@ html:not(.ui-ie) .ui-map svg {
 .ui-theme-yellow.ui-stroke,
 .ui-theme-yellow .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(42, 100%, 45%) !important;
+  stroke: hsl(42, 100%, 45%);
 }
 .ui-theme-orange.ui-fill-light-100,
 .ui-theme-orange .ui-fill-light-100:not([class*="ui-theme-"]) {
@@ -10216,6 +10219,7 @@ html:not(.ui-ie) .ui-map svg {
 .ui-theme-orange.ui-stroke,
 .ui-theme-orange .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(30, 100%, 50%) !important;
+  stroke: hsl(30, 100%, 50%);
 }
 .ui-theme-red.ui-fill-light-100,
 .ui-theme-red .ui-fill-light-100:not([class*="ui-theme-"]) {
@@ -10292,6 +10296,7 @@ html:not(.ui-ie) .ui-map svg {
 .ui-theme-red.ui-stroke,
 .ui-theme-red .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(0, 82%, 52%) !important;
+  stroke: hsl(0, 82%, 52%);
 }
 /* themes ext */
 .ui-theme-base.ui-fill-light-100,
@@ -10369,6 +10374,7 @@ html:not(.ui-ie) .ui-map svg {
 .ui-theme-base.ui-stroke,
 .ui-theme-base .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(226, 52%, 50%) !important;
+  stroke: hsl(226, 52%, 50%);
 }
 .ui-theme-sub.ui-fill-light-100,
 .ui-theme-sub .ui-fill-light-100:not([class*="ui-theme-"]) {
@@ -10445,4 +10451,5 @@ html:not(.ui-ie) .ui-map svg {
 .ui-theme-sub.ui-stroke,
 .ui-theme-sub .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(206, 87%, 50%) !important;
+  stroke: hsl(206, 87%, 50%);
 }

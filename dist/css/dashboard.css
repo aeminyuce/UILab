@@ -80,6 +80,7 @@
 .ui-theme-base.ui-stroke,
 .ui-theme-base .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(231, 55%, 47%) !important;
+  stroke: hsl(231, 55%, 47%);
 }
 .ui-theme-sub.ui-fill-light-100,
 .ui-theme-sub .ui-fill-light-100:not([class*="ui-theme-"]) {
@@ -156,6 +157,7 @@
 .ui-theme-sub.ui-stroke,
 .ui-theme-sub .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(189, 95%, 40%) !important;
+  stroke: hsl(189, 95%, 40%);
 }
 body {
   overflow-x: hidden;

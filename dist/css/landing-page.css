@@ -74,6 +74,7 @@
 .ui-theme-base.ui-stroke,
 .ui-theme-base .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(40, 93%, 54%) !important;
+  stroke: hsl(40, 93%, 54%);
 }
 .ui-theme-sub.ui-fill-light-100,
 .ui-theme-sub .ui-fill-light-100:not([class*="ui-theme-"]) {
@@ -150,6 +151,7 @@
 .ui-theme-sub.ui-stroke,
 .ui-theme-sub .ui-stroke:not([class*="ui-theme-"]) {
   border-color: hsl(140, 87%, 39%) !important;
+  stroke: hsl(140, 87%, 39%);
 }
 .ui-col-220 {
   width: 220px;
