@@ -582,14 +582,14 @@
                                         </strong>
                                         <svg viewBox="0 0 160 160">
                                             <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
-                                            <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-ui-percent="69" />
+                                            <circle r="69.85699" cy="80" cx="80" class="ui-theme-sub ui-stroke" data-ui-percent="69" /> <!-- stroke="hsl(186, 70%, 68%)" -->
                                         </svg>
                                     </div>
                                 </div>
                                 <div class="ui-col-6">
                                     <div class="ui-pie-chart ui-m-auto ui-ease-pie-chart" data-ui-info="Profit" style="max-width: 150px;">
                                         <ul>
-                                            <li data-ui-percent="70" data-ui-fill="hsl(97, 70%, 70%)"></li>
+                                            <li data-ui-percent="70" data-ui-fill="hsl(97, 70%, 70%)"></li> <!-- class="ui-theme-base ui-text" -->
                                         </ul>
                                     </div>
                                 </div>
@@ -618,7 +618,7 @@
                                                 <span class="ui-donut-chart ui-col-48 ui-float-r ui-ease-donut-chart">
                                                     <strong class="ui-color-black-25 ui-font-11">88%</strong>
                                                     <svg viewBox="0 0 160 160">
-                                                        <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
+                                                        <circle r="69.85699" cy="80" cx="80" class="ui-stroke" data-ui-percent="88" /> <!-- stroke="hsl(188, 89%, 40%)" -->
                                                     </svg>
                                                 </span>
                                                 <b class="ui-m-5-t ui-block">AAC-2019-013:AGF</b>
@@ -628,7 +628,7 @@
                                                 <span class="ui-donut-chart ui-col-48 ui-float-r ui-ease-donut-chart">
                                                     <strong class="ui-color-black-25 ui-font-11">76%</strong>
                                                     <svg viewBox="0 0 160 160">
-                                                        <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
+                                                        <circle r="69.85699" cy="80" cx="80" class="ui-stroke" data-ui-percent="76" /> <!-- stroke="hsl(188, 89%, 40%)" -->
                                                     </svg>
                                                 </span>
                                                 <b class="ui-m-5-t ui-block">BDA-2019-642</b>
@@ -638,7 +638,7 @@
                                                 <span class="ui-donut-chart ui-col-48 ui-float-r ui-ease-donut-chart">
                                                     <strong class="ui-color-black-25 ui-font-11">69%</strong>
                                                     <svg viewBox="0 0 160 160">
-                                                        <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
+                                                        <circle r="69.85699" cy="80" cx="80" class="ui-stroke" data-ui-percent="69" /> <!-- stroke="hsl(188, 89%, 40%)" -->
                                                     </svg>
                                                 </span>
                                                 <b class="ui-m-5-t ui-block">DDG-2019-505:AG</b>
@@ -648,7 +648,7 @@
                                                 <span class="ui-donut-chart ui-col-48 ui-float-r ui-ease-donut-chart">
                                                     <strong class="ui-color-black-25 ui-font-11">52%</strong>
                                                     <svg viewBox="0 0 160 160">
-                                                        <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
+                                                        <circle r="69.85699" cy="80" cx="80" class="ui-stroke" data-ui-percent="52" /> <!-- stroke="hsl(188, 89%, 40%)" -->
                                                     </svg>
                                                 </span>
                                                 <b class="ui-m-5-t ui-block">OOC-2019-781:F</b>
@@ -658,7 +658,7 @@
                                                 <span class="ui-donut-chart ui-col-48 ui-float-r ui-ease-donut-chart">
                                                     <strong class="ui-color-black-25 ui-font-11">36%</strong>
                                                     <svg viewBox="0 0 160 160">
-                                                        <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
+                                                        <circle r="69.85699" cy="80" cx="80" class="ui-stroke" data-ui-percent="36" /> <!-- stroke="hsl(188, 89%, 40%)" -->
                                                     </svg>
                                                 </span>
                                                 <b class="ui-m-5-t ui-block">BDD-2019-047:G</b>
@@ -668,7 +668,7 @@
                                                 <span class="ui-donut-chart ui-col-48 ui-float-r ui-ease-donut-chart">
                                                     <strong class="ui-color-black-25 ui-font-11">36%</strong>
                                                     <svg viewBox="0 0 160 160">
-                                                        <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
+                                                        <circle r="69.85699" cy="80" cx="80" class="ui-stroke" data-ui-percent="36" /> <!-- stroke="hsl(188, 89%, 40%)" -->
                                                     </svg>
                                                 </span>
                                                 <b class="ui-m-5-t ui-block">RAC-2019-973</b>
@@ -684,7 +684,7 @@
                                                 <span class="ui-donut-chart ui-col-48 ui-float-r ui-ease-donut-chart">
                                                     <strong class="ui-color-black-25 ui-font-11">88%</strong>
                                                     <svg viewBox="0 0 160 160">
-                                                        <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="88" />
+                                                        <circle r="69.85699" cy="80" cx="80" class="ui-stroke" data-ui-percent="88" /> <!-- stroke="hsl(188, 89%, 40%)" -->
                                                     </svg>
                                                 </span>
                                                 <b class="ui-m-5-t ui-block">AAC-2019-013:AGF</b>
@@ -694,7 +694,7 @@
                                                 <span class="ui-donut-chart ui-col-48 ui-float-r ui-ease-donut-chart">
                                                     <strong class="ui-color-black-25 ui-font-11">76%</strong>
                                                     <svg viewBox="0 0 160 160">
-                                                        <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="76" />
+                                                        <circle r="69.85699" cy="80" cx="80" class="ui-stroke" data-ui-percent="76" /> <!-- stroke="hsl(188, 89%, 40%)" -->
                                                     </svg>
                                                 </span>
                                                 <b class="ui-m-5-t ui-block">BDA-2019-642</b>
@@ -704,7 +704,7 @@
                                                 <span class="ui-donut-chart ui-col-48 ui-float-r ui-ease-donut-chart">
                                                     <strong class="ui-color-black-25 ui-font-11">69%</strong>
                                                     <svg viewBox="0 0 160 160">
-                                                        <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="69" />
+                                                        <circle r="69.85699" cy="80" cx="80" class="ui-stroke" data-ui-percent="69" /> <!-- stroke="hsl(188, 89%, 40%)" -->
                                                     </svg>
                                                 </span>
                                                 <b class="ui-m-5-t ui-block">DDG-2019-505:AG</b>
@@ -714,7 +714,7 @@
                                                 <span class="ui-donut-chart ui-col-48 ui-float-r ui-ease-donut-chart">
                                                     <strong class="ui-color-black-25 ui-font-11">52%</strong>
                                                     <svg viewBox="0 0 160 160">
-                                                        <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="52" />
+                                                        <circle r="69.85699" cy="80" cx="80" class="ui-stroke" data-ui-percent="52" /> <!-- stroke="hsl(188, 89%, 40%)" -->
                                                     </svg>
                                                 </span>
                                                 <b class="ui-m-5-t ui-block">OOC-2019-781:F</b>
@@ -724,7 +724,7 @@
                                                 <span class="ui-donut-chart ui-col-48 ui-float-r ui-ease-donut-chart">
                                                     <strong class="ui-color-black-25 ui-font-11">36%</strong>
                                                     <svg viewBox="0 0 160 160">
-                                                        <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
+                                                        <circle r="69.85699" cy="80" cx="80" class="ui-stroke" data-ui-percent="36" /> <!-- stroke="hsl(188, 89%, 40%)" -->
                                                     </svg>
                                                 </span>
                                                 <b class="ui-m-5-t ui-block">BDD-2019-047:G</b>
@@ -734,7 +734,7 @@
                                                 <span class="ui-donut-chart ui-col-48 ui-float-r ui-ease-donut-chart">
                                                     <strong class="ui-color-black-25 ui-font-11">36%</strong>
                                                     <svg viewBox="0 0 160 160">
-                                                        <circle r="69.85699" cy="80" cx="80" stroke="hsl(188, 89%, 40%)" data-ui-percent="36" />
+                                                        <circle r="69.85699" cy="80" cx="80" class="ui-stroke" data-ui-percent="36" /> <!-- stroke="hsl(188, 89%, 40%)" -->
                                                     </svg>
                                                 </span>
                                                 <b class="ui-m-5-t ui-block">RAC-2019-973</b>
