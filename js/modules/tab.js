@@ -217,44 +217,38 @@ ui.tab.Start = () => {
 
                         function (ev) {
 
-                            if (ev.target.className instanceof Object) { return; } // fix: when clicking on SVG icons inside the toggle tab
-
                             if (ev.button !== 2) { // inherited right clicks
 
-                                if (ev.target.className.split(' ').indexOf(ui.tab.nameToggle) !== -1 && ui.closest(ev.target, '.' + ui.tab.targetParent)[0] === parent) { // controlling same toggled tab buttons
-                                    return;
+                                if (ui.hasClass(ev.target, ui.tab.nameToggle) !== -1) { // controlling same toggled tab buttons
+                                    if (ui.closest(ev.target, '.' + ui.tab.targetParent)[0] === parent) { return; }
                                 }
 
-                                if (ev.target.className.split(' ').indexOf(ui.tab.nameContent) === -1 && ui.closest(ev.target, '.' + ui.tab.nameContent)[0] === undefined) { // controlling inside of the opened tab content
+                                currentContent.style.height = currentContent.offsetHeight + 'px';
+                                currentContent.style.overflow = 'hidden';
 
-                                    currentContent.style.height = currentContent.offsetHeight + 'px';
-                                    currentContent.style.overflow = 'hidden';
+                                setTimeout(() => {
 
+                                    currentContent.style.height = '0';
                                     setTimeout(() => {
 
-                                        currentContent.style.height = '0';
-                                        setTimeout(() => {
+                                        if (classes) {
+                                            ui.removeClass(tabs, classes);
+                                        }
 
-                                            if (classes) {
-                                                ui.removeClass(tabs, classes);
-                                            }
+                                        ui.removeClass(tabs, ui.tab.nameActive);
+                                        ui.removeClass(content, ui.tab.nameOpenEase);
 
-                                            ui.removeClass(tabs, ui.tab.nameActive);
-                                            ui.removeClass(content, ui.tab.nameOpenEase);
+                                        currentContent.style.removeProperty('height');
+                                        currentContent.style.removeProperty('overflow');
 
-                                            currentContent.style.removeProperty('height');
-                                            currentContent.style.removeProperty('overflow');
+                                        ui.removeClass(content, ui.tab.nameOpen);
 
-                                            ui.removeClass(content, ui.tab.nameOpen);
+                                    }, ui.globals.ease * 2);
 
-                                        }, ui.globals.ease * 2);
+                                }, 0);
 
-                                    }, 0);
-
-                                    ui.trigger(document, ui.tab.eventToggleTabsClosed); // set custom event
-                                    ui.off(document, 'mouseup.' + ui.tab.eventCloseToggleTabs);
-
-                                }
+                                ui.trigger(document, ui.tab.eventToggleTabsClosed); // set custom event
+                                ui.off(document, 'mouseup.' + ui.tab.eventCloseToggleTabs);
 
                             }
 

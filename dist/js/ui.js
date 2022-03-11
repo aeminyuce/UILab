@@ -1240,35 +1240,31 @@ ui.tab.Start = function () {
           }, ui.globals.fast / 2);
         }, 0);
         ui.on(document, 'mouseup.' + ui.tab.eventCloseToggleTabs, function (ev) {
-          if (ev.target.className instanceof Object) {
-            return;
-          }
-
           if (ev.button !== 2) {
-            if (ev.target.className.split(' ').indexOf(ui.tab.nameToggle) !== -1 && ui.closest(ev.target, '.' + ui.tab.targetParent)[0] === parent) {
-              return;
+            if (ui.hasClass(ev.target, ui.tab.nameToggle) !== -1) {
+              if (ui.closest(ev.target, '.' + ui.tab.targetParent)[0] === parent) {
+                return;
+              }
             }
 
-            if (ev.target.className.split(' ').indexOf(ui.tab.nameContent) === -1 && ui.closest(ev.target, '.' + ui.tab.nameContent)[0] === undefined) {
-              currentContent.style.height = currentContent.offsetHeight + 'px';
-              currentContent.style.overflow = 'hidden';
+            currentContent.style.height = currentContent.offsetHeight + 'px';
+            currentContent.style.overflow = 'hidden';
+            setTimeout(function () {
+              currentContent.style.height = '0';
               setTimeout(function () {
-                currentContent.style.height = '0';
-                setTimeout(function () {
-                  if (classes) {
-                    ui.removeClass(tabs, classes);
-                  }
+                if (classes) {
+                  ui.removeClass(tabs, classes);
+                }
 
-                  ui.removeClass(tabs, ui.tab.nameActive);
-                  ui.removeClass(content, ui.tab.nameOpenEase);
-                  currentContent.style.removeProperty('height');
-                  currentContent.style.removeProperty('overflow');
-                  ui.removeClass(content, ui.tab.nameOpen);
-                }, ui.globals.ease * 2);
-              }, 0);
-              ui.trigger(document, ui.tab.eventToggleTabsClosed);
-              ui.off(document, 'mouseup.' + ui.tab.eventCloseToggleTabs);
-            }
+                ui.removeClass(tabs, ui.tab.nameActive);
+                ui.removeClass(content, ui.tab.nameOpenEase);
+                currentContent.style.removeProperty('height');
+                currentContent.style.removeProperty('overflow');
+                ui.removeClass(content, ui.tab.nameOpen);
+              }, ui.globals.ease * 2);
+            }, 0);
+            ui.trigger(document, ui.tab.eventToggleTabsClosed);
+            ui.off(document, 'mouseup.' + ui.tab.eventCloseToggleTabs);
           }
         });
       } else {
