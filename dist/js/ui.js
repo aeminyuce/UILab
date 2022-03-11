@@ -6898,7 +6898,11 @@ ui.tooltip = {
       ui.removeClass(that, ui.tooltip.nameOpenEase);
       removeTimer2x = setTimeout(function () {
         ui.removeClass(that, ui.tooltip.nameOpen);
-        that.parentNode.removeChild(that);
+        var parent = that.parentNode;
+
+        if (parent !== null) {
+          parent.removeChild(that);
+        }
       }, ui.globals.ease);
     }, ui.globals.ease);
   }

@@ -71,7 +71,12 @@ ui.tooltip = {
             removeTimer2x = setTimeout(() => {
 
                 ui.removeClass(that, ui.tooltip.nameOpen);
-                that.parentNode.removeChild(that);
+
+                var parent = that.parentNode;
+
+                if (parent !== null) {
+                    parent.removeChild(that);
+                }
 
             }, ui.globals.ease);
 
