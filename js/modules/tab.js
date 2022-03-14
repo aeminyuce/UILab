@@ -264,11 +264,11 @@ ui.tab.Start = () => {
 
                             if (ev.button !== 2) { // inherited right clicks
 
-                                // controlling same toggled tab buttons
                                 var holderEl = ui.closest(ev.target, '.' + ui.tab.targetParent)[0];
 
+                                // controlling same toggled tab buttons
                                 if (holderEl === parent) { return; }
-                                if (ui.closest(holderEl, '.' + ui.tab.targetParent)[0] !== undefined) { return; }
+                                if (ui.closest(holderEl, '.' + ui.tab.targetParent)[0] !== undefined) { return; } // inner tabs
 
                                 if (accordion) {
 
