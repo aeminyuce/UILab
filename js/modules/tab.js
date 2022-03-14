@@ -12,6 +12,7 @@ ui.tab = {
     // main classnames
     nameContent: 'ui-tab-content',
     nameToggle: 'ui-tab-toggle',
+    nameAccordion: 'ui-tab-accordion',
 
     // helper classnames
     nameOpen: 'ui-open',
@@ -41,7 +42,7 @@ ui.tab.Start = () => {
 
             e.preventDefault();
 
-            var parent, tabs, index, innerTabs, outerTabs, id, content, lastOpened, innerContent, outerContent, currentContent, currentHeight, classes, toggle;
+            var parent, tabs, index, innerTabs, outerTabs, id, content, lastOpened, innerContent, outerContent, currentContent, currentHeight, classes, accordion, accordionTimer, toggle;
 
             outerTabs = [];
             outerContent = [];
@@ -94,23 +95,41 @@ ui.tab.Start = () => {
                 currentContent = content[index];
             }
 
-            toggle = false;
             classes = parent.getAttribute(ui.tab.dataClasses);
 
+            accordion = false;
+            toggle = false;
+
             if (ui.hasClass(this, ui.tab.nameToggle)) {
+
                 toggle = true;
+
+                if (ui.hasClass(parent, ui.tab.nameAccordion)) {
+                    accordion = true;
+                }
+
             }
 
             if (ui.hasClass(this, ui.tab.nameActive)) {
 
                 if (toggle) {
 
-                    currentContent.style.height = currentContent.offsetHeight + 'px';
-                    currentContent.style.overflow = 'hidden';
+                    if (accordion) {
+
+                        currentContent.style.height = currentContent.offsetHeight + 'px';
+                        currentContent.style.overflow = 'hidden';
+
+                    }
 
                     setTimeout(() => {
 
-                        currentContent.style.height = '0';
+                        if (accordion) {
+
+                            currentContent.style.height = '0';
+                            accordionTimer = ui.globals.ease * 2;
+
+                        } else { accordionTimer = 0; }
+
                         setTimeout(() => {
 
                             if (classes) {
@@ -120,12 +139,16 @@ ui.tab.Start = () => {
                             ui.removeClass(tabs[index], ui.tab.nameActive);
                             ui.removeClass(currentContent, ui.tab.nameOpenEase);
 
-                            currentContent.style.removeProperty('height');
-                            currentContent.style.removeProperty('overflow');
+                            if (accordion) {
+
+                                currentContent.style.removeProperty('height');
+                                currentContent.style.removeProperty('overflow');
+
+                            }
 
                             ui.removeClass(currentContent, ui.tab.nameOpen);
 
-                        }, ui.globals.ease * 2);
+                        }, accordionTimer);
 
                     }, 0);
 
@@ -163,22 +186,36 @@ ui.tab.Start = () => {
 
                         if (lastOpened) { // hide last opened content
 
-                            lastOpened.style.height = lastOpened.offsetHeight + 'px';
-                            lastOpened.style.overflow = 'hidden';
+                            if (accordion) {
+
+                                lastOpened.style.height = lastOpened.offsetHeight + 'px';
+                                lastOpened.style.overflow = 'hidden';
+
+                            }
 
                             setTimeout(() => {
 
-                                lastOpened.style.height = '0';
+                                if (accordion) {
+
+                                    lastOpened.style.height = '0';
+                                    accordionTimer = ui.globals.ease * 2;
+
+                                } else { accordionTimer = 0; }
+
                                 setTimeout(() => {
 
                                     ui.removeClass(lastOpened, ui.tab.nameOpenEase);
 
-                                    lastOpened.style.removeProperty('height');
-                                    lastOpened.style.removeProperty('overflow');
+                                    if (accordion) {
+
+                                        lastOpened.style.removeProperty('height');
+                                        lastOpened.style.removeProperty('overflow');
+
+                                    }
 
                                     ui.removeClass(lastOpened, ui.tab.nameOpen);
 
-                                }, ui.globals.ease * 2);
+                                }, accordionTimer);
 
                             }, 0);
 
@@ -188,10 +225,14 @@ ui.tab.Start = () => {
 
                         ui.addClass(currentContent, ui.tab.nameOpen);
 
-                        currentHeight = currentContent.offsetHeight;
+                        if (accordion) {
 
-                        currentContent.style.height = '0';
-                        currentContent.style.overflow = 'hidden';
+                            currentHeight = currentContent.offsetHeight;
+
+                            currentContent.style.height = '0';
+                            currentContent.style.overflow = 'hidden';
+
+                        }
 
                         setTimeout(() => {
 
@@ -200,12 +241,16 @@ ui.tab.Start = () => {
 
                             ui.trigger(document, ui.globals.eventDomChange); // set custom event
 
-                            setTimeout(() => {
+                            if (accordion) {
 
-                                currentContent.style.removeProperty('height');
-                                currentContent.style.removeProperty('overflow');
+                                setTimeout(() => {
 
-                            }, ui.globals.ease * 2);
+                                    currentContent.style.removeProperty('height');
+                                    currentContent.style.removeProperty('overflow');
+
+                                }, ui.globals.ease * 2);
+
+                            }
 
                         }, ui.globals.fast / 2);
 
@@ -219,16 +264,28 @@ ui.tab.Start = () => {
 
                             if (ev.button !== 2) { // inherited right clicks
 
-                                if (ui.hasClass(ev.target, ui.tab.nameToggle) !== -1) { // controlling same toggled tab buttons
-                                    if (ui.closest(ev.target, '.' + ui.tab.targetParent)[0] === parent) { return; }
-                                }
+                                // controlling same toggled tab buttons
+                                var holderEl = ui.closest(ev.target, '.' + ui.tab.targetParent)[0];
 
-                                currentContent.style.height = currentContent.offsetHeight + 'px';
-                                currentContent.style.overflow = 'hidden';
+                                if (holderEl === parent) { return; }
+                                if (ui.closest(holderEl, '.' + ui.tab.targetParent)[0] !== undefined) { return; }
+
+                                if (accordion) {
+
+                                    currentContent.style.height = currentContent.offsetHeight + 'px';
+                                    currentContent.style.overflow = 'hidden';
+
+                                }
 
                                 setTimeout(() => {
 
-                                    currentContent.style.height = '0';
+                                    if (accordion) {
+
+                                        currentContent.style.height = '0';
+                                        accordionTimer = ui.globals.ease * 2;
+
+                                    } else { accordionTimer = 0; }
+
                                     setTimeout(() => {
 
                                         if (classes) {
@@ -238,12 +295,16 @@ ui.tab.Start = () => {
                                         ui.removeClass(tabs, ui.tab.nameActive);
                                         ui.removeClass(content, ui.tab.nameOpenEase);
 
-                                        currentContent.style.removeProperty('height');
-                                        currentContent.style.removeProperty('overflow');
+                                        if (accordion) {
+
+                                            currentContent.style.removeProperty('height');
+                                            currentContent.style.removeProperty('overflow');
+
+                                        }
 
                                         ui.removeClass(content, ui.tab.nameOpen);
 
-                                    }, ui.globals.ease * 2);
+                                    }, accordionTimer);
 
                                 }, 0);
 

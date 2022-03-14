@@ -16,7 +16,7 @@
                     </button>
                 </div>
 
-                <div class="ui-tab-holder ui-align-l ui-icons-no-opacity ui-theme-sub ui-ease-tab ui-ease-1st-btn ui-scroll-v ui-scrollbar-faded ui-sidebar-add-l" data-ui-classes="ui-text">
+                <div class="ui-tab-holder ui-tab-accordion ui-align-l ui-icons-no-opacity ui-theme-sub ui-ease-tab ui-ease-1st-btn ui-scroll-v ui-scrollbar-faded ui-sidebar-add-l" data-ui-classes="ui-text">
 
                     <div class="ui-p-10">
                         <div class="ui-font-12 ui-m-10-b ui-color-white-25">Personal Activity</div>
@@ -65,7 +65,7 @@
 
                     <div class="ui-tab-content">
                         <div class="ui-p-15-v ui-p-20-l">
-                            <ul class="ui-tab-holder ui-list-sp-15 ui-p-30-l ui-ease-2nd-btn" data-ui-classes="ui-text">
+                            <ul class="ui-tab-holder ui-tab-accordion ui-list-sp-15 ui-p-30-l ui-ease-2nd-btn" data-ui-classes="ui-text">
                                 <li>
                                     <a class="ui-tab ui-tab-toggle ui-opacity" href="#">
                                         <svg class="ui-toggle-icon ui-icon ui-m-10-r ui-float-r"><use href="../dist/icons.svg#arrow-down"/></svg>

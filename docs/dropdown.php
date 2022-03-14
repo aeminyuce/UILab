@@ -309,7 +309,7 @@
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-no-opacity ui-m-5-l"><use href="../dist/icons.svg#angle-down"/></svg>
                             </button>
-                            <div class="ui-dropdown-menu ui-tab-holder ui-round ui-align-l ui-shadow-lg ui-block-1st ui-ease-tab" data-ui-classes="ui-fill-dark-100 ui-btn-visible">
+                            <div class="ui-dropdown-menu ui-tab-holder ui-tab-accordion ui-round ui-align-l ui-shadow-lg ui-block-1st ui-ease-tab" data-ui-classes="ui-fill-dark-100 ui-btn-visible">
 
                                 <a href="#" class="ui-btn ui-btn-ghost ui-ease-btn">Waiting</a>
 
@@ -347,7 +347,7 @@
                                 Dropdown
                                 <svg class="ui-toggle-icon ui-icon ui-no-opacity ui-m-5-l"><use href="../dist/icons.svg#angle-down"/></svg>
                             </button>
-                            <div class="ui-dropdown-menu ui-tab-holder ui-round ui-align-l ui-shadow-lg ui-block-1st ui-ease-tab" data-ui-classes="ui-fill-dark-100 ui-btn-visible">
+                            <div class="ui-dropdown-menu ui-tab-holder ui-tab-accordion ui-round ui-align-l ui-shadow-lg ui-block-1st ui-ease-tab" data-ui-classes="ui-fill-dark-100 ui-btn-visible">
 
                                 <a href="#" class="ui-btn ui-btn-ghost ui-ease-btn">Waiting</a>
 
