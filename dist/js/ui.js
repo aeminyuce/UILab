@@ -1191,11 +1191,6 @@ ui.tab.Start = function () {
           }
 
           setTimeout(function () {
-            if (classes) {
-              ui.toggleClass(tabs[index], classes);
-            }
-
-            ui.removeClass(tabs[index], ui.tab.nameActive);
             ui.removeClass(currentContent, ui.tab.nameOpen);
 
             if (accordion) {
@@ -1203,6 +1198,12 @@ ui.tab.Start = function () {
               currentContent.style.removeProperty('overflow');
             }
           }, ui.globals.ease * 2);
+
+          if (classes) {
+            ui.toggleClass(tabs[index], classes);
+          }
+
+          ui.removeClass(tabs[index], ui.tab.nameActive);
           ui.removeClass(currentContent, ui.tab.nameOpenEase);
         }, 0);
       }
@@ -1293,11 +1294,6 @@ ui.tab.Start = function () {
               }
 
               setTimeout(function () {
-                if (classes) {
-                  ui.removeClass(tabs, classes);
-                }
-
-                ui.removeClass(tabs, ui.tab.nameActive);
                 ui.removeClass(content, ui.tab.nameOpen);
 
                 if (accordion) {
@@ -1305,6 +1301,12 @@ ui.tab.Start = function () {
                   currentContent.style.removeProperty('overflow');
                 }
               }, ui.globals.ease * 2);
+
+              if (classes) {
+                ui.removeClass(tabs, classes);
+              }
+
+              ui.removeClass(tabs, ui.tab.nameActive);
               ui.removeClass(content, ui.tab.nameOpenEase);
             }, 0);
             ui.trigger(document, ui.tab.eventToggleTabsClosed);

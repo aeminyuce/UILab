@@ -129,11 +129,6 @@ ui.tab.Start = () => {
 
                         setTimeout(() => {
 
-                            if (classes) {
-                                ui.toggleClass(tabs[index], classes);
-                            }
-
-                            ui.removeClass(tabs[index], ui.tab.nameActive);
                             ui.removeClass(currentContent, ui.tab.nameOpen);
 
                             if (accordion) {
@@ -145,6 +140,11 @@ ui.tab.Start = () => {
 
                         }, ui.globals.ease * 2);
 
+                        if (classes) {
+                            ui.toggleClass(tabs[index], classes);
+                        }
+
+                        ui.removeClass(tabs[index], ui.tab.nameActive);
                         ui.removeClass(currentContent, ui.tab.nameOpenEase);
 
                     }, 0);
@@ -279,11 +279,6 @@ ui.tab.Start = () => {
 
                                     setTimeout(() => {
 
-                                        if (classes) {
-                                            ui.removeClass(tabs, classes);
-                                        }
-
-                                        ui.removeClass(tabs, ui.tab.nameActive);
                                         ui.removeClass(content, ui.tab.nameOpen);
 
                                         if (accordion) {
@@ -295,6 +290,11 @@ ui.tab.Start = () => {
 
                                     }, ui.globals.ease * 2);
 
+                                    if (classes) {
+                                        ui.removeClass(tabs, classes);
+                                    }
+
+                                    ui.removeClass(tabs, ui.tab.nameActive);
                                     ui.removeClass(content, ui.tab.nameOpenEase);
 
                                 }, 0);
