@@ -1127,7 +1127,7 @@ ui.tab = {
 ui.tab.Start = function () {
   ui.on(document, 'click', '.' + ui.tab.targetParent + ' .' + ui.tab.targetTab, function (e) {
     e.preventDefault();
-    var parent, tabs, index, innerTabs, outerTabs, id, content, lastOpened, innerContent, outerContent, currentContent, currentHeight, classes, accordion, accordionTimer, toggle;
+    var parent, tabs, index, innerTabs, outerTabs, id, content, lastOpened, innerContent, outerContent, currentContent, currentHeight, classes, accordion, toggle;
     outerTabs = [];
     outerContent = [];
     parent = ui.closest(this, '.' + ui.tab.targetParent)[0];
@@ -1188,9 +1188,6 @@ ui.tab.Start = function () {
         setTimeout(function () {
           if (accordion) {
             currentContent.style.height = '0';
-            accordionTimer = ui.globals.ease * 2;
-          } else {
-            accordionTimer = 0;
           }
 
           setTimeout(function () {
@@ -1199,15 +1196,14 @@ ui.tab.Start = function () {
             }
 
             ui.removeClass(tabs[index], ui.tab.nameActive);
-            ui.removeClass(currentContent, ui.tab.nameOpenEase);
+            ui.removeClass(currentContent, ui.tab.nameOpen);
 
             if (accordion) {
               currentContent.style.removeProperty('height');
               currentContent.style.removeProperty('overflow');
             }
-
-            ui.removeClass(currentContent, ui.tab.nameOpen);
-          }, accordionTimer);
+          }, ui.globals.ease * 2);
+          ui.removeClass(currentContent, ui.tab.nameOpenEase);
         }, 0);
       }
     } else {
@@ -1238,21 +1234,17 @@ ui.tab.Start = function () {
           setTimeout(function () {
             if (accordion) {
               lastOpened.style.height = '0';
-              accordionTimer = ui.globals.ease * 2;
-            } else {
-              accordionTimer = 0;
             }
 
             setTimeout(function () {
-              ui.removeClass(lastOpened, ui.tab.nameOpenEase);
+              ui.removeClass(lastOpened, ui.tab.nameOpen);
 
               if (accordion) {
                 lastOpened.style.removeProperty('height');
                 lastOpened.style.removeProperty('overflow');
               }
-
-              ui.removeClass(lastOpened, ui.tab.nameOpen);
-            }, accordionTimer);
+            }, ui.globals.ease * 2);
+            ui.removeClass(lastOpened, ui.tab.nameOpenEase);
           }, 0);
         }
 
@@ -1298,9 +1290,6 @@ ui.tab.Start = function () {
             setTimeout(function () {
               if (accordion) {
                 currentContent.style.height = '0';
-                accordionTimer = ui.globals.ease * 2;
-              } else {
-                accordionTimer = 0;
               }
 
               setTimeout(function () {
@@ -1309,15 +1298,14 @@ ui.tab.Start = function () {
                 }
 
                 ui.removeClass(tabs, ui.tab.nameActive);
-                ui.removeClass(content, ui.tab.nameOpenEase);
+                ui.removeClass(content, ui.tab.nameOpen);
 
                 if (accordion) {
                   currentContent.style.removeProperty('height');
                   currentContent.style.removeProperty('overflow');
                 }
-
-                ui.removeClass(content, ui.tab.nameOpen);
-              }, accordionTimer);
+              }, ui.globals.ease * 2);
+              ui.removeClass(content, ui.tab.nameOpenEase);
             }, 0);
             ui.trigger(document, ui.tab.eventToggleTabsClosed);
             ui.off(document, 'mouseup.' + ui.tab.eventCloseToggleTabs);

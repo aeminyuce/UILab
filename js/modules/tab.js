@@ -42,7 +42,7 @@ ui.tab.Start = () => {
 
             e.preventDefault();
 
-            var parent, tabs, index, innerTabs, outerTabs, id, content, lastOpened, innerContent, outerContent, currentContent, currentHeight, classes, accordion, accordionTimer, toggle;
+            var parent, tabs, index, innerTabs, outerTabs, id, content, lastOpened, innerContent, outerContent, currentContent, currentHeight, classes, accordion, toggle;
 
             outerTabs = [];
             outerContent = [];
@@ -124,11 +124,8 @@ ui.tab.Start = () => {
                     setTimeout(() => {
 
                         if (accordion) {
-
                             currentContent.style.height = '0';
-                            accordionTimer = ui.globals.ease * 2;
-
-                        } else { accordionTimer = 0; }
+                        }
 
                         setTimeout(() => {
 
@@ -137,7 +134,7 @@ ui.tab.Start = () => {
                             }
 
                             ui.removeClass(tabs[index], ui.tab.nameActive);
-                            ui.removeClass(currentContent, ui.tab.nameOpenEase);
+                            ui.removeClass(currentContent, ui.tab.nameOpen);
 
                             if (accordion) {
 
@@ -146,9 +143,9 @@ ui.tab.Start = () => {
 
                             }
 
-                            ui.removeClass(currentContent, ui.tab.nameOpen);
+                        }, ui.globals.ease * 2);
 
-                        }, accordionTimer);
+                        ui.removeClass(currentContent, ui.tab.nameOpenEase);
 
                     }, 0);
 
@@ -196,15 +193,12 @@ ui.tab.Start = () => {
                             setTimeout(() => {
 
                                 if (accordion) {
-
                                     lastOpened.style.height = '0';
-                                    accordionTimer = ui.globals.ease * 2;
-
-                                } else { accordionTimer = 0; }
+                                }
 
                                 setTimeout(() => {
 
-                                    ui.removeClass(lastOpened, ui.tab.nameOpenEase);
+                                    ui.removeClass(lastOpened, ui.tab.nameOpen);
 
                                     if (accordion) {
 
@@ -213,9 +207,9 @@ ui.tab.Start = () => {
 
                                     }
 
-                                    ui.removeClass(lastOpened, ui.tab.nameOpen);
+                                }, ui.globals.ease * 2);
 
-                                }, accordionTimer);
+                                ui.removeClass(lastOpened, ui.tab.nameOpenEase);
 
                             }, 0);
 
@@ -280,11 +274,8 @@ ui.tab.Start = () => {
                                 setTimeout(() => {
 
                                     if (accordion) {
-
                                         currentContent.style.height = '0';
-                                        accordionTimer = ui.globals.ease * 2;
-
-                                    } else { accordionTimer = 0; }
+                                    }
 
                                     setTimeout(() => {
 
@@ -293,7 +284,7 @@ ui.tab.Start = () => {
                                         }
 
                                         ui.removeClass(tabs, ui.tab.nameActive);
-                                        ui.removeClass(content, ui.tab.nameOpenEase);
+                                        ui.removeClass(content, ui.tab.nameOpen);
 
                                         if (accordion) {
 
@@ -302,9 +293,9 @@ ui.tab.Start = () => {
 
                                         }
 
-                                        ui.removeClass(content, ui.tab.nameOpen);
+                                    }, ui.globals.ease * 2);
 
-                                    }, accordionTimer);
+                                    ui.removeClass(content, ui.tab.nameOpenEase);
 
                                 }, 0);
 
