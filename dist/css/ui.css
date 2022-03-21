@@ -6070,11 +6070,11 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   margin: 0;
 }
 .ui-listgroup > ul > li {
-  box-sizing: border-box;
   position: relative;
 }
 .ui-listgroup > ul > li,
 .ui-listgroup > ul > li > a:not(.ui-listgroup-url) {
+  box-sizing: border-box;
   line-height: normal;
   padding: 10px;
 }

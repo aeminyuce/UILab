@@ -35,9 +35,9 @@
 
     & > ul {
         & > li {
-            box-sizing: border-box; position: relative;
+            position: relative;
 
-            &,& > a:not(.ui-listgroup-url) { line-height: normal; padding: @listgroup-list-padding; }
+            &,& > a:not(.ui-listgroup-url) { box-sizing: border-box; line-height: normal; padding: @listgroup-list-padding; }
 
             &:before,&:after,& > a:not(.ui-listgroup-url):before,& > a:not(.ui-listgroup-url):after { content: ""; display: table; }
             &:after,& > a:not(.ui-listgroup-url):after { clear: both; }
