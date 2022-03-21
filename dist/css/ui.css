@@ -9866,7 +9866,7 @@ html:not(.ui-ie) .ui-map svg {
   height: 360px;
 }
 .ui-map svg path {
-  stroke-width: 1.5;
+  stroke-width: 1;
 }
 .ui-map svg path:not([fill]) {
   fill: hsla(0, 0%, 0%, 0.08);
