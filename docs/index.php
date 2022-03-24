@@ -1,7 +1,18 @@
-<?php header('Content-Type: text/html; charset=utf-8'); ?>
+<?php
+    header('Content-Type: text/html; charset=utf-8');
+
+    // checking dark mode with cookie
+    if (isset($_COOKIE["ui-darkMode"]))
+    {
+        $mode = $_COOKIE["ui-darkMode"];
+
+    } else {
+        $mode = 'light';
+    }
+?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr" data-ui-mode="<?php echo $mode; ?>">
 
 <head>
 
