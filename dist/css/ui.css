@@ -7578,7 +7578,7 @@ html:not(.ui-ie) .ui-steps-bar li {
   text-align: center;
   width: 280px;
   min-height: 42px;
-  padding: 10px;
+  padding: 12px 10px;
   position: fixed;
   z-index: 99;
   cursor: pointer;
