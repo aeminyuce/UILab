@@ -357,6 +357,7 @@
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#desktop"/></svg><span>desktop</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#tv"/></svg><span>tv</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#mobile-v"/></svg><span>mobile-v</span></li>
+                    <li><svg class="ui-icon"><use href="../dist/icons.svg#mobile-write"/></svg><span>mobile-write</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#mobile-h"/></svg><span>mobile-h</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#tablet-v"/></svg><span>tablet-v</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#tablet-h"/></svg><span>tablet-h</span></li>
