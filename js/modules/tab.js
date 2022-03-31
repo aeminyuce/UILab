@@ -264,6 +264,9 @@ ui.tab.Start = () => {
                                 if (holderEl === parent) { return; }
                                 if (ui.closest(holderEl, '.' + ui.tab.targetParent)[0] !== undefined) { return; } // inner tabs
 
+                                // controlling active toggle tabs length
+                                if (ui.find('.' + ui.tab.nameToggle + '.' + ui.tab.nameActive, parent).length === 0) { return; }
+
                                 if (accordion) {
 
                                     currentContent.style.height = currentContent.offsetHeight + 'px';

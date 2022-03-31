@@ -1283,6 +1283,10 @@ ui.tab.Start = function () {
               return;
             }
 
+            if (ui.find('.' + ui.tab.nameToggle + '.' + ui.tab.nameActive, parent).length === 0) {
+              return;
+            }
+
             if (accordion) {
               currentContent.style.height = currentContent.offsetHeight + 'px';
               currentContent.style.overflow = 'hidden';
