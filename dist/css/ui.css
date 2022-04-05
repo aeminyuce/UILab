@@ -8807,7 +8807,6 @@ button.ui-dialog-custom {
 }
 .ui-gallery-preview-opened > body {
   overflow: hidden;
-  position: fixed;
 }
 .ui-gallery-preview-bg {
   background-color: hsla(0, 0%, 0%, 0.86);

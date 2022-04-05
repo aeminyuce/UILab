@@ -179,6 +179,12 @@ ui.photoGallery = {
 
             }
 
+            let pageYPos;
+
+            if (ui.userAgents.mobile) {
+                pageYPos = window.pageYOffset; // get current y scroll position
+            }
+
             // get images and titles
             let loadedImages = [];
             let loadedTitles = [];
@@ -340,6 +346,9 @@ ui.photoGallery = {
                 ui.removeClass(preview, ui.photoGallery.nameOpenEase);
                 ui.removeClass(document, ui.photoGallery.namePreviewOpened);
 
+                if (ui.userAgents.mobile) {
+                    window.scrollTo(0, pageYPos);
+                }
 
                 loadedImages = [];
                 loadedTitles = [];
