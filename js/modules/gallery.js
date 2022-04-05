@@ -58,10 +58,10 @@ ui.photoGallery = {
     errorIcon: 'ban',
 
     // values
-    imgVerRatio: '1.33',
+    imgVerRatio: 1.33,
 
-    imgZoomSizeDesktop: '2',
-    imgZoomSizeMobile: '1.2',
+    imgZoomSizeDesktop: 2,
+    imgZoomSizeMobile: 1.2,
 
     // data attributes
     dataTarget: 'data-ui-target',
