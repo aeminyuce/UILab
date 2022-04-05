@@ -8807,6 +8807,7 @@ button.ui-dialog-custom {
 }
 .ui-gallery-preview-opened > body {
   overflow: hidden;
+  position: fixed;
 }
 .ui-gallery-preview-bg {
   background-color: hsla(0, 0%, 0%, 0.86);
@@ -8895,6 +8896,9 @@ button.ui-dialog-custom {
   transform: translate(-50%, -50%);
   box-shadow: 0 5px 30px hsla(0, 0%, 0%, 0.75);
 }
+.ui-gallery-preview > img:not(.ui-gallery-preview-zoom) {
+  cursor: zoom-in;
+}
 .ui-gallery-preview > img:not(.ui-open) {
   display: none;
 }
@@ -8903,6 +8907,7 @@ button.ui-dialog-custom {
 }
 .ui-gallery-preview > .ui-gallery-preview-zoom {
   z-index: 5;
+  cursor: grab;
 }
 .ui-gallery-preview > .ui-pause-ease {
   transition-duration: 0s;

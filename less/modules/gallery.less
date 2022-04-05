@@ -103,7 +103,7 @@
         &-opened {
             scroll-behavior: auto !important;
 
-            & > body { overflow: hidden; }
+            & > body { overflow: hidden; position: fixed; }
         }
 
         &-bg { background-color: @gallery-preview-bg; position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
@@ -134,12 +134,14 @@
         & > img {
             vertical-align: middle; display: inline-block; border: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); box-shadow: 0 @gallery-preview-img-shadow-size @gallery-preview-img-shadow;
 
+            &:not(.ui-gallery-preview-zoom) { cursor: zoom-in; }
+
             &:not(.ui-open) { display: none; }
             &:not(.ui-open-ease) { opacity: 0; }
         }
 
 
-        & > .ui-gallery-preview-zoom { z-index: (@gallery-preview-close-icon-z-index / 2); }
+        & > .ui-gallery-preview-zoom { z-index: (@gallery-preview-close-icon-z-index / 2); cursor: grab; }
         & > .ui-pause-ease { transition-duration: 0s; }
 
         &-close {

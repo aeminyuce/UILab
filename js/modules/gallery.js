@@ -59,8 +59,9 @@ ui.photoGallery = {
 
     // values
     imgVerRatio: '1.33',
-    imgZoomMin: '1',
-    imgZoomMax: '6',
+
+    imgZoomSizeDesktop: '2',
+    imgZoomSizeMobile: '1.2',
 
     // data attributes
     dataTarget: 'data-ui-target',
@@ -78,7 +79,8 @@ ui.photoGallery = {
 (() => {
 
     let
-        imgTouchmove,
+        imgZoomMove = false,
+
         pageTouchmove = false,
         pageTouchmoveTimer;
 
@@ -175,12 +177,6 @@ ui.photoGallery = {
 
                 } else { ui.removeClass(images, ui.photoGallery.nameGalleryTouch); }
 
-            }
-
-            let pageYPos;
-
-            if (ui.userAgents.mobile) {
-                pageYPos = window.pageYOffset; // get current y scroll position
             }
 
             // get images and titles
@@ -339,12 +335,11 @@ ui.photoGallery = {
             // close gallery
             function closeGallery() {
 
+                imgZoomMove = false;
+
                 ui.removeClass(preview, ui.photoGallery.nameOpenEase);
                 ui.removeClass(document, ui.photoGallery.namePreviewOpened);
 
-                if (ui.userAgents.mobile) {
-                    window.scrollTo(0, pageYPos);
-                }
 
                 loadedImages = [];
                 loadedTitles = [];
@@ -422,7 +417,7 @@ ui.photoGallery = {
                     imgPosX = '-50';
                     imgPosY = '-50';
 
-                    imgZoom = 1;
+                    imgZoom = 1; // default
 
                     ui.removeClass(that, ui.photoGallery.namePreviewZoom);
                     img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
@@ -431,7 +426,7 @@ ui.photoGallery = {
 
             }
 
-            // Event Listeners
+            // Event Listeners after Gallery Loaded
             ui.on('.' + ui.photoGallery.targetPreview + ' .' + ui.photoGallery.namePreviewPrev + ',.' + ui.photoGallery.targetPreview + ' .' + ui.photoGallery.namePreviewNext,
                 'click',
 
@@ -460,38 +455,20 @@ ui.photoGallery = {
 
                 });
 
-            function imgLimits() {
-
-                const horLimit = (((imgWidth * imgZoom) - window.innerWidth) / (imgWidth * imgZoom)) * 100;
-                const verLimit = (((imgHeight * imgZoom) - window.innerHeight) / (imgHeight * imgZoom)) * 100;
-
-                if (imgPosX < -horLimit - 100) { imgPosX = -horLimit - 100; } // left
-                if (imgPosX > horLimit) { imgPosX = horLimit; } // right
-
-                if (imgPosY < -verLimit - 100) { imgPosY = -verLimit - 100; } // top
-                if (imgPosY > verLimit) { imgPosY = verLimit; } // bottom
-
-                img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
-
-            }
-
-            // touch event listeners: double tap to zoom
             imgPosX = '-50';
             imgPosY = '-50';
 
-            imgZoom = 1;
-            let waitPinchZoom = false;
+            imgZoom = 1; // default
 
+            // tap/click to zoom
             ui.on(img,
-                'touchend dblclick',
+                'touchend click',
 
                 function (e) {
 
-                    if (waitPinchZoom) { return; }
-
                     let touchesLength;
 
-                    if (e.type === 'dblclick') { // added double click to zoom for desktop
+                    if (e.type === 'click') { // added double click to zoom for desktop
                         touchesLength = 1;
 
                     } else {
@@ -503,7 +480,9 @@ ui.photoGallery = {
                         let lastTouchEnd = 0;
                         const now = new Date().getTime();
 
-                        if ((e.type === 'touchend' && ((now - lastTouchEnd) <= 200 && (now - lastTouchEnd) > 0)) || e.type === 'dblclick') {
+                        if (imgZoomMove) { return; }
+
+                        if ((e.type === 'touchend' && ((now - lastTouchEnd) <= 200 && (now - lastTouchEnd) > 0)) || e.type === 'click') {
 
                             e.preventDefault();
 
@@ -512,7 +491,7 @@ ui.photoGallery = {
                                 imgPosX = '-50';
                                 imgPosY = '-50';
 
-                                imgZoom = 1;
+                                imgZoom = 1; // default
                                 ui.removeClass(this, ui.photoGallery.namePreviewZoom);
 
                             } else {
@@ -520,17 +499,19 @@ ui.photoGallery = {
                                 let getX, getY;
                                 const rect = img.getBoundingClientRect(); // get img DOM rect
 
-                                imgZoom = 2;
-
-                                if (e.type === 'dblclick') {
+                                if (e.type === 'click') {
 
                                     getX = e.clientX;
                                     getY = e.clientY;
+
+                                    imgZoom = ui.photoGallery.imgZoomSizeDesktop;
 
                                 } else {
 
                                     getX = e.changedTouches[0].pageX;
                                     getY = e.changedTouches[0].pageY;
+
+                                    imgZoom = ui.photoGallery.imgZoomSizeMobile;
 
                                 }
 
@@ -543,18 +524,6 @@ ui.photoGallery = {
 
                             img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
 
-                        } else if (imgTouchmove) {
-
-                            if (imgZoom > 1 && (((imgWidth * imgZoom) > window.innerWidth) || (imgHeight * imgZoom) > window.innerHeight)) { // control image exceeds window size
-
-                                imgTouchmove = false;
-                                imgLimits();
-
-                            }
-
-                            ui.off(preview, 'touchmove');
-                            ui.removeClass(img, ui.photoGallery.namePauseEase);
-
                         }
 
                         lastTouchEnd = now;
@@ -563,100 +532,37 @@ ui.photoGallery = {
 
                 });
 
-            // touch event listeners: pinch to zoom
-            ui.on(preview,
-                'touchstart',
-
-                function (e) {
-
-                    if (e.target.src === undefined) { return; }
-
-                    e.preventDefault();
-                    waitPinchZoom = false;
-
-                    let matrix = window.getComputedStyle(img).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
-
-                    matrix = matrix.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|'); // select only numbers
-                    matrix = matrix.split('|');
-
-                    // touch move image positioning
-                    const msx = e.targetTouches[0].pageX;
-                    const msy = e.targetTouches[0].pageY;
-
-                    let pinchStart;
-
-                    if (e.targetTouches.length > 1) { // control number of touches
-
-                        const sx = msx - e.targetTouches[1].pageX;
-                        const sy = msy - e.targetTouches[1].pageY;
-
-                        pinchStart = Math.sqrt(sx * sx + sy * sy); // the pythagorean distance between two points
-
-                    }
-
-                    ui.on(this,
-                        'touchmove',
-
-                        function (e) {
-
-                            if (imgZoom > 1 && (((imgWidth * imgZoom) > window.innerWidth) || (imgHeight * imgZoom) > window.innerHeight)) { // control image exceeds window size
-
-                                ui.addClass(img, ui.photoGallery.namePauseEase);
-
-                                imgTouchmove = true;
-                                waitPinchZoom = true;
-
-                                imgPosX = parseFloat((e.targetTouches[0].pageX - msx) / imgWidth) * 100 + parseFloat((matrix[4] / imgWidth) * 100);
-                                imgPosY = parseFloat((e.targetTouches[0].pageY - msy) / imgHeight) * 100 + parseFloat((matrix[5] / imgHeight) * 100);
-
-                            }
-
-                            if (e.targetTouches.length > 1) { // control number of touches
-
-                                const x = e.targetTouches[0].pageX - e.targetTouches[1].pageX;
-                                const y = e.targetTouches[0].pageY - e.targetTouches[1].pageY;
-
-                                const pinch = Math.sqrt(x * x + y * y); // the pythagorean distance between two points
-                                const newScale = ((pinch - pinchStart) / pinch) * ((imgWidth / imgHeight) * 2);
-
-                                imgZoom = parseFloat(matrix[3]) + parseFloat(newScale);
-
-                                if (imgZoom <= ui.photoGallery.imgZoomMin) {
-
-                                    imgPosX = '-50';
-                                    imgPosY = '-50';
-
-                                    imgZoom = ui.photoGallery.imgZoomMin;
-                                    ui.removeClass(img, ui.photoGallery.namePreviewZoom);
-
-                                } else { ui.addClass(img, ui.photoGallery.namePreviewZoom); }
-
-                                if (imgZoom > ui.photoGallery.imgZoomMax) {
-                                    imgZoom = ui.photoGallery.imgZoomMax;
-                                }
-
-                            }
-
-                            img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
-
-                        });
-
-                });
-
-            // mousemove for zoomed image on desktop
+            // move for zoomed image
             ui.on(document,
-                'mousedown',
+                'mousedown touchstart',
 
                 '.' + ui.photoGallery.targetPreview + ' img.' + ui.photoGallery.namePreviewZoom,
 
                 function (e) {
 
-                    if (e.target.src === null || ui.userAgents.mobile) { return; }
+                    if (e.target.src === null) { return; }
 
-                    e.preventDefault();
+                    imgZoomMove = false;
 
-                    const msx = e.clientX;
-                    const msy = e.clientY;
+                    let sx, sy, getX, getY;
+
+                    if (e.type === 'mousedown') {
+
+                        e.preventDefault();
+
+                        sx = e.clientX;
+                        sy = e.clientY;
+
+                    } else {
+
+                        if (e.cancelable && e.defaultPrevented) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
+                            e.preventDefault();
+                        }
+
+                        sx = e.changedTouches[0].pageX;
+                        sy = e.changedTouches[0].pageY;
+
+                    }
 
                     let matrix = window.getComputedStyle(img).getPropertyValue('transform'); // matrix(xZoom, 0, 0, yZoom, xPos, yPos)
 
@@ -664,16 +570,29 @@ ui.photoGallery = {
                     matrix = matrix.split('|');
 
                     ui.on(img,
-                        'mousemove',
+                        'mousemove touchmove',
 
                         function (e) {
 
-                            if (imgZoom > 1 && (((imgWidth * imgZoom) > window.innerWidth) || (imgHeight * imgZoom) > window.innerHeight)) { // control image exceeds window size
+                            if (imgZoom > 1 && (((imgWidth * imgZoom) > window.innerWidth) || (imgHeight * imgZoom) > window.innerHeight)) { // image limits
 
+                                if (e.type === 'mousemove') {
+
+                                    getX = e.clientX;
+                                    getY = e.clientY;
+
+                                } else {
+
+                                    getX = e.changedTouches[0].pageX;
+                                    getY = e.changedTouches[0].pageY;
+
+                                }
+
+                                imgZoomMove = true;
                                 ui.addClass(img, ui.photoGallery.namePauseEase);
 
-                                imgPosX = parseFloat((e.clientX - msx) / imgWidth) * 100 + parseFloat((matrix[4] / imgWidth) * 100);
-                                imgPosY = parseFloat((e.clientY - msy) / imgHeight) * 100 + parseFloat((matrix[5] / imgHeight) * 100);
+                                imgPosX = parseFloat((getX - sx) / imgWidth) * 100 + parseFloat((matrix[4] / imgWidth) * 100);
+                                imgPosY = parseFloat((getY - sy) / imgHeight) * 100 + parseFloat((matrix[5] / imgHeight) * 100);
 
                                 img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
 
@@ -682,20 +601,27 @@ ui.photoGallery = {
                         });
 
                     ui.on(img,
-                        'mouseup mouseleave',
+                        'mouseup mouseleave touchend touchcancel',
 
                         function () {
 
-                            if (ui.userAgents.desktop) {
+                            if (imgZoom > 1 && (((imgWidth * imgZoom) > window.innerWidth) || (imgHeight * imgZoom) > window.innerHeight)) { // image limits
 
-                                if (imgZoom > 1 && (((imgWidth * imgZoom) > window.innerWidth) || (imgHeight * imgZoom) > window.innerHeight)) { // control image exceeds window size
-                                    imgLimits();
-                                }
+                                const horLimit = (((imgWidth * imgZoom) - window.innerWidth) / (imgWidth * imgZoom)) * 100;
+                                const verLimit = (((imgHeight * imgZoom) - window.innerHeight) / (imgHeight * imgZoom)) * 100;
 
-                                ui.off(img, 'mousemove mouseup mouseleave');
-                                ui.removeClass(img, ui.photoGallery.namePauseEase);
+                                if (imgPosY < -verLimit - 100) { imgPosY = -verLimit - 100; } // top
+                                if (imgPosX < -horLimit - 100) { imgPosX = -horLimit - 100; } // left
+
+                                if (imgPosX > horLimit) { imgPosX = horLimit; } // right
+                                if (imgPosY > verLimit) { imgPosY = verLimit; } // bottom
+
+                                img.style.transform = 'translate(' + imgPosX + '%,' + imgPosY + '%) scale(' + imgZoom + ')';
 
                             }
+
+                            ui.off(img, 'mousemove mouseup mouseleave touchmove touchend touchcancel');
+                            ui.removeClass(img, ui.photoGallery.namePauseEase);
 
                         });
 
