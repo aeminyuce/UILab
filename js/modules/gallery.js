@@ -59,9 +59,7 @@ ui.photoGallery = {
 
     // values
     imgVerRatio: 1.33,
-
-    imgZoomSizeDesktop: 2,
-    imgZoomSizeMobile: 1.2,
+    imgZoomSize: 2,
 
     // data attributes
     dataTarget: 'data-ui-target',
@@ -477,7 +475,7 @@ ui.photoGallery = {
 
                     let touchesLength;
 
-                    if (e.type === 'click') { // added double click to zoom for desktop
+                    if (e.type === 'click') { // added click to zoom for desktop
                         touchesLength = 1;
 
                     } else {
@@ -508,19 +506,17 @@ ui.photoGallery = {
                                 let getX, getY;
                                 const rect = img.getBoundingClientRect(); // get img DOM rect
 
+                                imgZoom = ui.photoGallery.imgZoomSize;
+
                                 if (e.type === 'click') {
 
                                     getX = e.clientX;
                                     getY = e.clientY;
 
-                                    imgZoom = ui.photoGallery.imgZoomSizeDesktop;
-
                                 } else {
 
                                     getX = e.changedTouches[0].pageX;
                                     getY = e.changedTouches[0].pageY;
-
-                                    imgZoom = ui.photoGallery.imgZoomSizeMobile;
 
                                 }
 
