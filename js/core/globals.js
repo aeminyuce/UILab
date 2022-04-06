@@ -22,6 +22,9 @@ export const ui = {
         // non-closest event listeners
         nonClosestElems: ['mouseenter', 'mouseleave', 'mouseout', 'mouseover'],
 
+        // passive event listeners
+        passiveEvents: ['touchstart', 'touchmove'],
+
         // svg elements
         svgElems: ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'],
 

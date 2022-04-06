@@ -12,13 +12,18 @@ ui.on = function (self, e, that, callback) {
         let callFnc, isWindowEvent;
 
         let delegate = false;
+        let passiveEvent = false;
         let customEvent = false;
+
+        const eName = e.split('.')[0]; // split for event naming
+
+        if (ui.globals.passiveEvents.indexOf(eName) > -1) { // control passive event listeners
+            passiveEvent = true;
+        }
 
         if (callback !== undefined) { // delegate
 
             callFnc = (event) => {
-
-                const eName = e.split('.')[0]; // split for event naming
 
                 Array.prototype.forEach.call(ui.find(that),
 
@@ -60,7 +65,7 @@ ui.on = function (self, e, that, callback) {
                     if (ua.indexOf("MSIE ") > 0 || !!document.documentMode || ua.indexOf('edge') > -1) {
 
                         setTimeout(() => {
-                            nodelist.addEventListener(e, that, true);
+                            nodelist.addEventListener(e, that, true); // true: using capture phase
                         }, ui.globals.ease);
 
                     }
@@ -101,12 +106,12 @@ ui.on = function (self, e, that, callback) {
                                 ui.handlers[pt][pe][i](ev);
                             }
 
-                        }, true);
+                        }, passiveEvent ? { passive: true } : true);
 
                     }
 
                 } else {
-                    pt.addEventListener(pe.split('.')[0], callFnc, true); // split for event naming
+                    pt.addEventListener(pe.split('.')[0], callFnc, passiveEvent ? { passive: true } : true); // split for event naming
                 }
 
             } else { return; }

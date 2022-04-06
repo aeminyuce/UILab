@@ -13,6 +13,7 @@ var ui = {
     slow4x: 1600,
     slow5x: 2000,
     nonClosestElems: ['mouseenter', 'mouseleave', 'mouseout', 'mouseover'],
+    passiveEvents: ['touchstart', 'touchmove'],
     svgElems: ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'],
     iconSrc: '../dist/icons.svg',
     dataPrefix: 'data-ui-',
@@ -91,11 +92,16 @@ ui.on = function (self, e, that, callback) {
 
     var callFnc, isWindowEvent;
     var delegate = false;
+    var passiveEvent = false;
     var customEvent = false;
+    var eName = e.split('.')[0];
+
+    if (ui.globals.passiveEvents.indexOf(eName) > -1) {
+      passiveEvent = true;
+    }
 
     if (callback !== undefined) {
       callFnc = function callFnc(event) {
-        var eName = e.split('.')[0];
         Array.prototype.forEach.call(ui.find(that), function (el) {
           if (ui.globals.nonClosestElems.indexOf(eName) > -1) {
             if (event.target === el) {
@@ -159,10 +165,14 @@ ui.on = function (self, e, that, callback) {
               for (var i = 0; i < ui.handlers[pt][pe].length; i++) {
                 ui.handlers[pt][pe][i](ev);
               }
-            }, true);
+            }, passiveEvent ? {
+              passive: true
+            } : true);
           }
         } else {
-          pt.addEventListener(pe.split('.')[0], callFnc, true);
+          pt.addEventListener(pe.split('.')[0], callFnc, passiveEvent ? {
+            passive: true
+          } : true);
         }
       } else {
         return;
@@ -189,11 +199,20 @@ ui.on = function (self, e, that, callback) {
 
 ui.off = function (that, e) {
   var callFnc = function callFnc(e) {
+    var passiveEvent = false;
+    var eName = e.split('.')[0];
+
+    if (ui.globals.passiveEvents.indexOf(eName) > -1) {
+      passiveEvent = true;
+    }
+
     var handlerFnc = function handlerFnc(pt, pe) {
       if (ui.handlers[pt] !== undefined) {
         if (ui.handlers[pt][pe] !== undefined) {
           for (var i = 0; i < ui.handlers[pt][pe].length; i++) {
-            pt.removeEventListener(pe.split('.')[0], ui.handlers[pt][pe][i], true);
+            pt.removeEventListener(pe.split('.')[0], ui.handlers[pt][pe][i], passiveEvent ? {
+              passive: true
+            } : true);
             ui.handlers[pt][pe].splice(ui.handlers[pt][pe][i], 1);
           }
         }
