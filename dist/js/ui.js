@@ -5517,8 +5517,8 @@ ui.photoGallery = {
           lastTouchEnd = now;
         }
       });
-      ui.on(document, 'mousedown touchstart', '.' + ui.photoGallery.targetPreview + ' img.' + ui.photoGallery.namePreviewZoom, function (e) {
-        if (e.target.src === null) {
+      ui.on(img, 'mousedown touchstart', function (e) {
+        if (!ui.hasClass(this, ui.photoGallery.namePreviewZoom)) {
           return;
         }
 

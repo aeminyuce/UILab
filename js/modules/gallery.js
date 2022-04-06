@@ -538,14 +538,12 @@ ui.photoGallery = {
                 });
 
             // move for zoomed image
-            ui.on(document,
+            ui.on(img,
                 'mousedown touchstart',
-
-                '.' + ui.photoGallery.targetPreview + ' img.' + ui.photoGallery.namePreviewZoom,
 
                 function (e) {
 
-                    if (e.target.src === null) { return; }
+                    if (!ui.hasClass(this, ui.photoGallery.namePreviewZoom)) { return; }
 
                     imgZoomMove = false;
 
