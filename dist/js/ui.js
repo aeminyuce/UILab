@@ -2805,7 +2805,7 @@ ui.alerts = {
   successBtnValue: 'success',
   errorBtnValue: 'error',
   messageTimer: 6000,
-  posDefault: 'tr',
+  posDefault: 'br',
   posTopRight: 'tr',
   posTopLeft: 'tl',
   posBottomRight: 'br',
@@ -2918,6 +2918,8 @@ ui.alerts = {
             ui.addClass(dialog, ui.alerts.nameShowEase);
           }, 10);
           ui.on('.' + ui.alerts.nameDialogBtnHolder + ' button', 'click', function () {
+            var _this = this;
+
             var theme = '';
 
             if (ui.hasClass(this, ui.alerts.nameDialogSuccess)) {
@@ -2936,7 +2938,6 @@ ui.alerts = {
 
             ui.alerts.closeDialog();
             var msg = this.textContent;
-            var that = this;
             setTimeout(function () {
               if (ui.alerts.dialogMessages) {
                 ui.alerts.message({
@@ -2947,7 +2948,7 @@ ui.alerts = {
 
               if (props.callback !== undefined) {
                 setTimeout(function () {
-                  props.callback.call(that, that.value);
+                  props.callback.call(_this, _this.value);
                 }, ui.globals.ease * 2);
               }
             }, msgTimer);
@@ -3068,10 +3069,10 @@ ui.alerts = {
     };
 
     ui.on(document, 'click', '.' + ui.alerts.targetMsg, function () {
-      var _this = this;
+      var _this2 = this;
 
       Array.prototype.forEach.call(messageQueue, function (el, i) {
-        if (el[0] === _this) {
+        if (el[0] === _this2) {
           messageQueue.splice(i, 1);
         }
       });
@@ -3534,6 +3535,8 @@ ui.calendar.Start = function () {
   }
 
   ui.on(document, 'focus', '.' + ui.calendar.namePicker + ' > [type="text"]', function () {
+    var _this3 = this;
+
     var form = this.parentElement;
 
     if (ui.find('.' + ui.calendar.target, form).length > 0) {
@@ -3579,22 +3582,21 @@ ui.calendar.Start = function () {
     setTimeout(function () {
       ui.addClass(picker, ui.calendar.nameOpenEase);
     }, 10);
-    var that = this;
     ui.on('body', 'mousedown.' + ui.calendar.eventClose, function (ev) {
       if (ui.closest(ev.target, form)[0] !== undefined) {
         return;
       }
 
       if (ev.button !== 2) {
-        pickerCloseFnc('default', that);
+        pickerCloseFnc('default', _this3);
       }
     });
-    ui.on(that, 'keydown.' + ui.calendar.eventClose, function (ev) {
+    ui.on(this, 'keydown.' + ui.calendar.eventClose, function (ev) {
       if (ev.keyCode === 9 || ev.keyCode === 13 || ev.keyCode === 27) {
         pickerCloseFnc('continuous', this);
       }
     });
-    ui.on(that, 'keyup.' + ui.calendar.eventChange, function () {
+    ui.on(this, 'keyup.' + ui.calendar.eventChange, function () {
       inputDate = pickerVal(this);
 
       if (inputDate === '') {
@@ -5697,16 +5699,14 @@ ui.imgUpload = {
 };
 
 ui.imgUpload.Start = function () {
-  var uploaders, savedImgs;
+  var savedImgs;
 
-  function loadFiles(uploader, files) {
-    var i, ext, c, ctx, data, img, imgLoaded, w, h, r, size, allowed, showTimer, readers, listCont, list, loaded, loadImages, loadImagesAfter, html, newItem;
-
+  var loadFiles = function loadFiles(uploader, files) {
     if (files.length > 0) {
-      allowed = [];
+      var allowed = [];
 
-      for (i = 0; i < files.length; i++) {
-        ext = files[i].name.split('.')[1].toLowerCase();
+      for (var i = 0; i < files.length; i++) {
+        var ext = files[i].name.split('.')[1].toLowerCase();
 
         if (ext !== null) {
           ext = ext.toString();
@@ -5721,23 +5721,21 @@ ui.imgUpload.Start = function () {
         return;
       }
 
-      readers = [];
-      img = [];
-      imgLoaded = [];
-      w = [];
-      h = [];
-      html = '';
-      loaded = 0;
-      c = document.createElement("canvas");
-      ctx = c.getContext("2d");
+      var readers = [];
+      var img = [];
+      var imgLoaded = [];
+      var w = [];
+      var h = [];
+      var html = '';
+      var loaded = 0;
+      var c = document.createElement("canvas");
+      var ctx = c.getContext("2d");
       ui.addClass(uploader, ui.imgUpload.nameLoading);
-      listCont = ui.find('.' + ui.imgUpload.nameList, uploader)[0];
-      list = ui.find('.' + ui.imgUpload.nameList + ' ul', uploader)[0];
 
-      loadImages = function loadImages(j, tag) {
+      var loadImages = function loadImages(j, tag) {
         w[j] = img[j].width;
         h[j] = img[j].height;
-        r = ui.imgUpload.ratio.split(':');
+        var r = ui.imgUpload.ratio.split(':');
 
         if (r.length !== 2) {
           r = '';
@@ -5811,8 +5809,8 @@ ui.imgUpload.Start = function () {
           }
         }
 
-        data = c.toDataURL("image/jpeg");
-        size = data.split(',')[1].length;
+        var data = c.toDataURL("image/jpeg");
+        var size = data.split(',')[1].length;
         size = 4 * Math.ceil(size / 3) * 0.5624896334383812 / 1000;
         size = size.toFixed(0);
         imgLoaded[j] = [];
@@ -5829,25 +5827,28 @@ ui.imgUpload.Start = function () {
         }
       };
 
-      loadImagesAfter = function loadImagesAfter() {
+      var loadImagesThen = function loadImagesThen() {
         loaded += 1;
 
         if (loaded === allowed.length) {
           setTimeout(function () {
-            ui.each(imgLoaded, function (k) {
-              if (imgLoaded[k] !== undefined) {
-                html += '<' + ui.imgUpload.tagList + ' class="' + ui.imgUpload.nameOpenEase + '">' + '<span class="' + ui.imgUpload.targetImages + '">' + '<img id="' + imgLoaded[k].id + '" src="' + imgLoaded[k].data + '" draggable="false">' + '</span>' + '<' + ui.imgUpload.tagNames + ' class="' + ui.imgUpload.targetNames + '">' + imgLoaded[k].name + '</' + ui.imgUpload.tagNames + '>' + '<' + ui.imgUpload.tagInfos + ' class="' + ui.imgUpload.targetInfos + '">' + imgLoaded[k].size + 'kb' + '</' + ui.imgUpload.tagInfos + '>';
+            Array.prototype.forEach.call(imgLoaded, function (img) {
+              if (img !== undefined) {
+                html += '<' + ui.imgUpload.tagList + ' class="' + ui.imgUpload.nameOpenEase + '">' + '<span class="' + ui.imgUpload.targetImages + '">' + '<img id="' + img.id + '" src="' + img.data + '" draggable="false">' + '</span>' + '<' + ui.imgUpload.tagNames + ' class="' + ui.imgUpload.targetNames + '">' + img.name + '</' + ui.imgUpload.tagNames + '>' + '<' + ui.imgUpload.tagInfos + ' class="' + ui.imgUpload.targetInfos + '">' + img.size + 'kb' + '</' + ui.imgUpload.tagInfos + '>';
 
-                if (imgLoaded[k].tag !== '') {
-                  html += '<span class="' + ui.imgUpload.targetTags + '">' + imgLoaded[k].tag + '</span>';
+                if (img.tag !== '') {
+                  html += '<span class="' + ui.imgUpload.targetTags + '">' + img.tag + '</span>';
                 }
 
                 html += '</' + ui.imgUpload.tagList + '>';
               }
             });
+            var list = ui.find('.' + ui.imgUpload.nameList + ' ul', uploader)[0];
             list.insertAdjacentHTML('afterbegin', html);
           }, 0);
+          var listCont = ui.find('.' + ui.imgUpload.nameList, uploader)[0];
           ui.addClass(listCont, ui.imgUpload.nameOpen);
+          var showTimer;
 
           if (savedImgs) {
             showTimer = ui.globals.slow;
@@ -5856,11 +5857,10 @@ ui.imgUpload.Start = function () {
           }
 
           setTimeout(function () {
-            newItem = ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList + '.' + ui.imgUpload.nameOpenEase, listCont);
-            ui.each(newItem, function (k) {
+            Array.prototype.forEach.call(ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList + '.' + ui.imgUpload.nameOpenEase, listCont), function (newImg, i) {
               setTimeout(function () {
-                ui.removeClass(newItem[k], ui.imgUpload.nameOpenEase);
-              }, ui.globals.fast / 2 * k);
+                ui.removeClass(newImg, ui.imgUpload.nameOpenEase);
+              }, ui.globals.fast / 2 * i);
             });
             allowed = [];
             readers = [];
@@ -5876,14 +5876,14 @@ ui.imgUpload.Start = function () {
         }
       };
 
-      ui.each(allowed, function (i) {
+      Array.prototype.forEach.call(allowed, function (el, i) {
         if (savedImgs) {
           img[i] = new Image();
-          img[i].src = allowed[i].name;
+          img[i].src = el.name;
 
           img[i].onload = function () {
-            loadImages(i, allowed[i].tag);
-            loadImagesAfter();
+            loadImages(i, el.tag);
+            loadImagesThen();
           };
 
           img[i].onerror = function () {
@@ -5891,16 +5891,16 @@ ui.imgUpload.Start = function () {
               alert(ui.imgUpload.msgImgError);
             } else {
               ui.alerts.message({
-                msg: allowed[i].name + ' ' + ui.imgUpload.msgImgError,
+                msg: el.name + ' ' + ui.imgUpload.msgImgError,
                 theme: ui.alerts.themeDanger
               });
             }
 
-            loadImagesAfter();
+            loadImagesThen();
           };
         } else {
           readers[i] = new FileReader();
-          readers[i].readAsDataURL(allowed[i]);
+          readers[i].readAsDataURL(el);
 
           readers[i].onload = function () {
             img[i] = new Image();
@@ -5911,23 +5911,20 @@ ui.imgUpload.Start = function () {
             };
           };
 
-          readers[i].onloadend = loadImagesAfter;
+          readers[i].onloadend = loadImagesThen;
         }
       });
     }
-  }
+  };
 
-  uploaders = ui.find('.' + ui.imgUpload.target);
-  ui.each(uploaders, function () {
-    var i, list, imported, img, id, tag;
-    i = -1;
-    imported = [];
-    list = ui.find('.' + ui.imgUpload.nameList + ' li', this);
-    ui.each(list, function () {
-      img = this.getAttribute(ui.imgUpload.dataSrc);
+  Array.prototype.forEach.call(ui.find('.' + ui.imgUpload.target), function (el) {
+    var i = -1;
+    var imported = [];
+    Array.prototype.forEach.call(ui.find('.' + ui.imgUpload.nameList + ' li', el), function (item) {
+      var img = item.getAttribute(ui.imgUpload.dataSrc);
 
       if (img !== null && img !== '') {
-        id = this.getAttribute(ui.imgUpload.dataID);
+        var id = item.getAttribute(ui.imgUpload.dataID);
 
         if (id !== null && id !== '') {
           i += 1;
@@ -5935,7 +5932,7 @@ ui.imgUpload.Start = function () {
           imported[i].name = img;
           imported[i].id = id;
           imported[i].tag = '';
-          tag = this.getAttribute(ui.imgUpload.dataTag);
+          var tag = item.getAttribute(ui.imgUpload.dataTag);
 
           if (tag !== null) {
             imported[i].tag = tag;
@@ -5943,27 +5940,27 @@ ui.imgUpload.Start = function () {
         }
       }
 
-      this.parentNode.removeChild(this);
+      item.parentNode.removeChild(item);
     });
     savedImgs = true;
-    loadFiles(this, imported);
+    loadFiles(el, imported);
     imported = [];
   });
   ui.on(document, 'dragenter', '.' + ui.imgUpload.target, function (e) {
+    var _this4 = this;
+
     e.preventDefault();
     e.stopPropagation();
-    var that, uploader;
     ui.addClass(this, ui.imgUpload.nameDrop);
-    that = this;
     ui.on('body', 'dragover.' + ui.imgUpload.eventUploader, function (ev) {
       ev.preventDefault();
       ev.stopPropagation();
-      uploader = ui.closest(ev.target, '.' + ui.imgUpload.target)[0];
+      var uploader = ui.closest(ev.target, '.' + ui.imgUpload.target)[0];
 
       if (uploader === undefined) {
-        ui.removeClass(that, ui.imgUpload.nameDrop);
+        ui.removeClass(_this4, ui.imgUpload.nameDrop);
       } else {
-        ui.addClass(that, ui.imgUpload.nameDrop);
+        ui.addClass(_this4, ui.imgUpload.nameDrop);
       }
     });
   });
@@ -5989,43 +5986,41 @@ ui.imgUpload.Start = function () {
   });
 
   function toBlob(base, type, sliceSize) {
-    var i, j, byteCharacters, byteArray, byteArrays, slice, byteNumbers, blob;
     type = type || '';
     sliceSize = sliceSize || 512;
-    byteCharacters = atob(base);
-    byteArrays = [];
+    var byteCharacters = atob(base);
+    var byteArrays = [];
 
-    for (j = 0; j < byteCharacters.length; j += sliceSize) {
-      slice = byteCharacters.slice(j, j + sliceSize);
-      byteNumbers = new Array(slice.length);
+    for (var j = 0; j < byteCharacters.length; j += sliceSize) {
+      var slice = byteCharacters.slice(j, j + sliceSize);
+      var byteNumbers = new Array(slice.length);
 
-      for (i = 0; i < slice.length; i++) {
+      for (var i = 0; i < slice.length; i++) {
         byteNumbers[i] = slice.charCodeAt(i);
       }
 
-      byteArray = new Uint8Array(byteNumbers);
+      var byteArray = new Uint8Array(byteNumbers);
       byteArrays.push(byteArray);
     }
 
-    blob = new Blob(byteArrays, {
+    var blob = new Blob(byteArrays, {
       type: type
     });
     return blob;
   }
 
   ui.on(document, 'submit', '.' + ui.imgUpload.target + ' form', function (e) {
-    e.preventDefault();
-    var fnc, that, formData, uploader, list, file, tag, img, imgType, confirmed;
-    that = this;
+    var _this5 = this;
 
-    fnc = function fnc() {
-      formData = new FormData();
-      uploader = ui.closest(that, '.' + ui.imgUpload.target)[0];
-      list = ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList, uploader);
-      ui.each(list, function (i) {
-        file = ui.find('.' + ui.imgUpload.targetImages + ' img', this)[0];
+    e.preventDefault();
+
+    var uploaderFnc = function uploaderFnc() {
+      var formData = new FormData();
+      var uploader = ui.closest(_this5, '.' + ui.imgUpload.target)[0];
+      Array.prototype.forEach.call(ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList, uploader), function (el, i) {
+        var file = ui.find('.' + ui.imgUpload.targetImages + ' img', el)[0];
         formData.append(ui.imgUpload.formDataID + '[' + i + ']', file.id);
-        tag = ui.find('.' + ui.imgUpload.targetTags, this)[0];
+        var tag = ui.find('.' + ui.imgUpload.targetTags, el)[0];
 
         if (tag !== undefined) {
           tag = tag.textContent;
@@ -6034,8 +6029,8 @@ ui.imgUpload.Start = function () {
         }
 
         formData.append(ui.imgUpload.formDataTag + '[' + i + ']', tag);
-        img = file.src.split(";");
-        imgType = img[0].split(":")[1];
+        var img = file.src.split(";");
+        var imgType = img[0].split(":")[1];
         img = img[1].split(",")[1];
         img = toBlob(img, imgType);
         formData.append(ui.imgUpload.formDataImg + '[' + i + ']', img);
@@ -6043,7 +6038,7 @@ ui.imgUpload.Start = function () {
       ui.addClass(uploader, ui.imgUpload.nameUploading);
       ui.ajax({
         type: 'POST',
-        url: that.action,
+        url: _this5.action,
         data: formData,
         callback: function callback(status, response) {
           ui.removeClass(uploader, ui.imgUpload.nameUploading);
@@ -6081,17 +6076,18 @@ ui.imgUpload.Start = function () {
     };
 
     if (ui.alerts === undefined) {
-      confirmed = confirm(ui.imgUpload.msgBeforeUpload);
+      var confirmed = confirm(ui.imgUpload.msgBeforeUpload);
 
       if (confirmed) {
-        fnc();
+        uploaderFnc();
       }
     } else {
       ui.alerts.dialog({
         msg: ui.imgUpload.msgBeforeUpload,
+        error: ui.imgUpload.msgNotConfirm,
         callback: function callback(val) {
           if (val === ui.alerts.successBtnValue) {
-            fnc();
+            uploaderFnc();
           }
         }
       });

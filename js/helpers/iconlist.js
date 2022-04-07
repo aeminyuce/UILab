@@ -42,13 +42,11 @@ ui.iconlist.Start = () => {
 
         function () {
 
-            const that = this;
             const buttons = ui.find('.' + ui.iconlist.nameBtn, this.parentElement);
-
             ui.removeClass(buttons, ui.iconlist.stylesToolActive);
 
             setTimeout(() => {
-                ui.addClass(that, ui.iconlist.stylesToolActive);
+                ui.addClass(this, ui.iconlist.stylesToolActive);
             }, 0);
 
             // change size

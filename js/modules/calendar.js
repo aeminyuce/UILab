@@ -803,13 +803,11 @@ ui.calendar.Start = () => {
                 ui.addClass(picker, ui.calendar.nameOpenEase);
             }, 10);
 
-            const that = this;
-
             // close event listeners
             ui.on('body',
                 'mousedown.' + ui.calendar.eventClose,
 
-                function (ev) {
+                (ev) => {
 
                     // prevent for picker elements
                     if (ui.closest(ev.target, form)[0] !== undefined) {
@@ -817,12 +815,12 @@ ui.calendar.Start = () => {
                     }
 
                     if (ev.button !== 2) { // inherited right clicks
-                        pickerCloseFnc('default', that);
+                        pickerCloseFnc('default', this);
                     }
 
                 });
 
-            ui.on(that,
+            ui.on(this,
                 'keydown.' + ui.calendar.eventClose,
 
                 function (ev) {
@@ -834,7 +832,7 @@ ui.calendar.Start = () => {
                 });
 
             // change event
-            ui.on(that,
+            ui.on(this,
                 'keyup.' + ui.calendar.eventChange,
 
                 function () {

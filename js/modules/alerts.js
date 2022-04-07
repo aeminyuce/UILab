@@ -55,7 +55,7 @@ ui.alerts = {
 
     messageTimer: 6000, // wait for atomatically close messages
 
-    posDefault: 'tr',
+    posDefault: 'br',
 
     posTopRight: 'tr',
     posTopLeft: 'tl',
@@ -263,8 +263,6 @@ ui.alerts = {
                             ui.alerts.closeDialog();
                             const msg = this.textContent;
 
-                            const that = this;
-
                             setTimeout(() => {
 
                                 // show message
@@ -281,7 +279,7 @@ ui.alerts = {
                                 if (props.callback !== undefined) {
 
                                     setTimeout(() => { // wait for closing dialog and showing messages
-                                        props.callback.call(that, that.value);
+                                        props.callback.call(this, this.value);
                                     }, ui.globals.ease * 2);
 
                                 }

@@ -22,11 +22,12 @@ ui.iconlist.Start = function () {
 
   var totalIcons = 0;
   ui.on(tools, 'click', function () {
-    var that = this;
+    var _this = this;
+
     var buttons = ui.find('.' + ui.iconlist.nameBtn, this.parentElement);
     ui.removeClass(buttons, ui.iconlist.stylesToolActive);
     setTimeout(function () {
-      ui.addClass(that, ui.iconlist.stylesToolActive);
+      ui.addClass(_this, ui.iconlist.stylesToolActive);
     }, 0);
     var size = this.getAttribute(ui.iconlist.dataSize);
 

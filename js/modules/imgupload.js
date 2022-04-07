@@ -71,20 +71,18 @@ ui.imgUpload = {
 
 ui.imgUpload.Start = () => {
 
-    var uploaders, savedImgs;
+    let savedImgs;
 
-    function loadFiles(uploader, files) {
-
-        var i, ext, c, ctx, data, img, imgLoaded, w, h, r, size, allowed, showTimer, readers, listCont, list, loaded, loadImages, loadImagesAfter, html, newItem;
+    const loadFiles = (uploader, files) => {
 
         if (files.length > 0) {
 
             // check allowed file types
-            allowed = [];
+            let allowed = [];
 
-            for (i = 0; i < files.length; i++) {
+            for (let i = 0; i < files.length; i++) {
 
-                ext = files[i].name.split('.')[1].toLowerCase();
+                let ext = files[i].name.split('.')[1].toLowerCase();
                 if (ext !== null) {
 
                     ext = ext.toString();
@@ -100,33 +98,30 @@ ui.imgUpload.Start = () => {
             if (allowed.length === 0) { return; } // stop when all file types not allowed
 
             // load images
-            readers = [];
+            let readers = [];
 
-            img = [];
-            imgLoaded = [];
+            let img = [];
+            let imgLoaded = [];
 
-            w = [];
-            h = [];
+            let w = [];
+            let h = [];
 
-            html = '';
-            loaded = 0;
+            let html = '';
+            let loaded = 0;
 
-            c = document.createElement("canvas");
-            ctx = c.getContext("2d");
+            const c = document.createElement("canvas");
+            const ctx = c.getContext("2d");
 
             ui.addClass(uploader, ui.imgUpload.nameLoading);
 
-            listCont = ui.find('.' + ui.imgUpload.nameList, uploader)[0];
-            list = ui.find('.' + ui.imgUpload.nameList + ' ul', uploader)[0];
-
-            loadImages = function (j, tag) {
+            const loadImages = (j, tag) => {
 
                 // get width and height
                 w[j] = img[j].width;
                 h[j] = img[j].height;
 
                 // get ratio
-                r = ui.imgUpload.ratio.split(':');
+                let r = ui.imgUpload.ratio.split(':');
                 if (r.length !== 2) { r = ''; }
 
                 if (ui.imgUpload.resize && !savedImgs) { // resize images
@@ -238,10 +233,10 @@ ui.imgUpload.Start = () => {
 
                 }
 
-                data = c.toDataURL("image/jpeg");
+                const data = c.toDataURL("image/jpeg");
 
                 // calculate new image file size from new base64
-                size = data.split(',')[1].length;
+                let size = data.split(',')[1].length;
                 size = (4 * Math.ceil(size / 3) * 0.5624896334383812) / 1000;
 
                 size = size.toFixed(0);
@@ -265,37 +260,37 @@ ui.imgUpload.Start = () => {
 
             };
 
-            loadImagesAfter = () => {
+            const loadImagesThen = () => {
 
                 loaded += 1;
                 if (loaded === allowed.length) {
 
                     setTimeout(() => {
 
-                        ui.each(imgLoaded,
+                        Array.prototype.forEach.call(imgLoaded,
 
-                            function (k) {
+                            (img) => {
 
-                                if (imgLoaded[k] !== undefined) { // return when image loading failed
+                                if (img !== undefined) { // return when image loading failed
 
                                     html += '<' + ui.imgUpload.tagList + ' class="' + ui.imgUpload.nameOpenEase + '">' +
 
                                                 '<span class="' + ui.imgUpload.targetImages + '">' +
-                                                    '<img id="' + imgLoaded[k].id + '" src="' + imgLoaded[k].data + '" draggable="false">' +
+                                                    '<img id="' + img.id + '" src="' + img.data + '" draggable="false">' +
                                                 '</span>' +
 
                                                 '<' + ui.imgUpload.tagNames + ' class="' + ui.imgUpload.targetNames + '">' +
-                                                    imgLoaded[k].name +
+                                                    img.name +
                                                 '</' + ui.imgUpload.tagNames +'>' +
 
                                                 '<' + ui.imgUpload.tagInfos + ' class="' + ui.imgUpload.targetInfos + '">' +
-                                                    imgLoaded[k].size + 'kb' +
+                                                    img.size + 'kb' +
                                                 '</' + ui.imgUpload.tagInfos + '>';
 
-                                    if (imgLoaded[k].tag !== '') { // add tags
+                                    if (img.tag !== '') { // add tags
 
                                         html += '<span class="' + ui.imgUpload.targetTags + '">' +
-                                                    imgLoaded[k].tag +
+                                                    img.tag +
                                                 '</span>';
 
                                     }
@@ -306,11 +301,15 @@ ui.imgUpload.Start = () => {
 
                             });
 
+                        const list = ui.find('.' + ui.imgUpload.nameList + ' ul', uploader)[0];
                         list.insertAdjacentHTML('afterbegin', html);
 
                     }, 0);
 
+                    const listCont = ui.find('.' + ui.imgUpload.nameList, uploader)[0];
                     ui.addClass(listCont, ui.imgUpload.nameOpen);
+
+                    let showTimer;
 
                     if (savedImgs) {
                         showTimer = ui.globals.slow;
@@ -321,16 +320,15 @@ ui.imgUpload.Start = () => {
 
                     setTimeout(() => {
 
-                        newItem = ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList + '.' + ui.imgUpload.nameOpenEase, listCont);
-                        ui.each(newItem,
-
-                            function (k) {
+                        Array.prototype.forEach.call(ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList + '.' + ui.imgUpload.nameOpenEase, listCont),
+                            (newImg, i) => {
 
                                 setTimeout(() => {
-                                    ui.removeClass(newItem[k], ui.imgUpload.nameOpenEase);
-                                }, (ui.globals.fast / 2) * k);
+                                    ui.removeClass(newImg, ui.imgUpload.nameOpenEase);
+                                }, (ui.globals.fast / 2) * i);
 
                             });
+
 
                         // empty variables
                         allowed = [];
@@ -354,19 +352,18 @@ ui.imgUpload.Start = () => {
 
             };
 
-            ui.each(allowed,
-
-                function (i) {
+            Array.prototype.forEach.call(allowed,
+                (el, i) => {
 
                     if (savedImgs) { // array: get images saved before
 
                         img[i] = new Image();
-                        img[i].src = allowed[i].name;
+                        img[i].src = el.name;
 
                         img[i].onload = () => {
 
-                            loadImages(i, allowed[i].tag);
-                            loadImagesAfter(); // end of images
+                            loadImages(i, el.tag);
+                            loadImagesThen(); // end of images
 
                         };
 
@@ -378,20 +375,20 @@ ui.imgUpload.Start = () => {
                             } else {
 
                                 ui.alerts.message({
-                                    msg: allowed[i].name + ' ' + ui.imgUpload.msgImgError,
+                                    msg: el.name + ' ' + ui.imgUpload.msgImgError,
                                     theme: ui.alerts.themeDanger
                                 });
 
                             }
 
-                            loadImagesAfter(); // end of images
+                            loadImagesThen(); // end of images
 
                         };
 
                     } else { // FileList object: get images from user selected
 
                         readers[i] = new FileReader(); // filereader API
-                        readers[i].readAsDataURL(allowed[i]);
+                        readers[i].readAsDataURL(el);
 
                         readers[i].onload = function () {
 
@@ -402,7 +399,7 @@ ui.imgUpload.Start = () => {
 
                         };
 
-                        readers[i].onloadend = loadImagesAfter; // end of images
+                        readers[i].onloadend = loadImagesThen; // end of images
 
                     }
 
@@ -413,25 +410,21 @@ ui.imgUpload.Start = () => {
     }
 
     // load saved before images
-    uploaders = ui.find('.' + ui.imgUpload.target);
-    ui.each(uploaders,
+    Array.prototype.forEach.call(ui.find('.' + ui.imgUpload.target),
 
-        function () {
+        (el) => {
 
-            var i, list, imported, img, id, tag;
+            let i = -1;
+            let imported = [];
 
-            i = -1;
-            imported = [];
+            Array.prototype.forEach.call(ui.find('.' + ui.imgUpload.nameList + ' li', el),
 
-            list = ui.find('.' + ui.imgUpload.nameList + ' li', this);
-            ui.each(list,
+                (item) => {
 
-                function () {
-
-                    img = this.getAttribute(ui.imgUpload.dataSrc);
+                    const img = item.getAttribute(ui.imgUpload.dataSrc);
                     if (img !== null && img !== '') {
 
-                        id = this.getAttribute(ui.imgUpload.dataID);
+                        const id = item.getAttribute(ui.imgUpload.dataID);
                         if (id !== null && id !== '') {
 
                             i += 1;
@@ -441,19 +434,19 @@ ui.imgUpload.Start = () => {
                             imported[i].id = id;
                             imported[i].tag = '';
 
-                            tag = this.getAttribute(ui.imgUpload.dataTag);
+                            const tag = item.getAttribute(ui.imgUpload.dataTag);
                             if (tag !== null) { imported[i].tag = tag; }
 
                         }
 
                     }
 
-                    this.parentNode.removeChild(this);
+                    item.parentNode.removeChild(item);
 
                 });
 
             savedImgs = true;
-            loadFiles(this, imported);
+            loadFiles(el, imported);
 
             // empty variables
             imported = [];
@@ -471,26 +464,23 @@ ui.imgUpload.Start = () => {
             e.preventDefault();
             e.stopPropagation();
 
-            var that, uploader;
-
             ui.addClass(this, ui.imgUpload.nameDrop);
-            that = this;
 
             ui.on('body',
                 'dragover.' + ui.imgUpload.eventUploader,
 
-                function (ev) {
+                (ev) => {
 
                     ev.preventDefault();
                     ev.stopPropagation();
 
-                    uploader = ui.closest(ev.target, '.' + ui.imgUpload.target)[0];
+                    const uploader = ui.closest(ev.target, '.' + ui.imgUpload.target)[0];
 
                     if (uploader === undefined) {
-                        ui.removeClass(that, ui.imgUpload.nameDrop);
+                        ui.removeClass(this, ui.imgUpload.nameDrop);
 
                     } else {
-                        ui.addClass(that, ui.imgUpload.nameDrop);
+                        ui.addClass(this, ui.imgUpload.nameDrop);
                     }
 
                 });
@@ -505,7 +495,7 @@ ui.imgUpload.Start = () => {
             e.preventDefault();
             e.stopPropagation();
 
-            var uploader = ui.closest(e.target, '.' + ui.imgUpload.target)[0];
+            const uploader = ui.closest(e.target, '.' + ui.imgUpload.target)[0];
 
             if (uploader === undefined) {
                 ui.removeClass(uploader, ui.imgUpload.nameDrop);
@@ -531,7 +521,7 @@ ui.imgUpload.Start = () => {
 
         function () {
 
-            var uploader = ui.closest(this, '.' + ui.imgUpload.target)[0];
+            const uploader = ui.closest(this, '.' + ui.imgUpload.target)[0];
 
             savedImgs = false;
             loadFiles(uploader, this.files);
@@ -540,28 +530,26 @@ ui.imgUpload.Start = () => {
 
     function toBlob(base, type, sliceSize) { // convert base64 images to blob
 
-        var i, j, byteCharacters, byteArray, byteArrays, slice, byteNumbers, blob;
-
         type = type || '';
         sliceSize = sliceSize || 512;
 
-        byteCharacters = atob(base);
-        byteArrays = [];
+        const byteCharacters = atob(base);
+        const byteArrays = [];
 
-        for (j = 0; j < byteCharacters.length; j += sliceSize) {
+        for (let j = 0; j < byteCharacters.length; j += sliceSize) {
 
-            slice = byteCharacters.slice(j, j + sliceSize);
-            byteNumbers = new Array(slice.length);
+            const slice = byteCharacters.slice(j, j + sliceSize);
+            const byteNumbers = new Array(slice.length);
 
-            for (i = 0; i < slice.length; i++) {
+            for (let i = 0; i < slice.length; i++) {
                 byteNumbers[i] = slice.charCodeAt(i);
             }
 
-            byteArray = new Uint8Array(byteNumbers);
+            const byteArray = new Uint8Array(byteNumbers);
             byteArrays.push(byteArray);
         }
 
-        blob = new Blob(byteArrays, {type: type});
+        const blob = new Blob(byteArrays, {type: type});
         return blob;
 
     }
@@ -575,30 +563,29 @@ ui.imgUpload.Start = () => {
 
             e.preventDefault();
 
-            var fnc, that, formData, uploader, list, file, tag, img, imgType, confirmed;
-            that = this;
+            const uploaderFnc = () => {
 
-            fnc = function () {
+                const formData = new FormData(); // formdata API
+                const uploader = ui.closest(this, '.' + ui.imgUpload.target)[0];
 
-                formData = new FormData(); // formdata API
+                Array.prototype.forEach.call(ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList, uploader),
 
-                uploader = ui.closest(that, '.' + ui.imgUpload.target)[0];
-                list = ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList, uploader);
+                    (el, i) => {
 
-                ui.each(list,
-
-                    function (i) {
-
-                        file = ui.find('.' + ui.imgUpload.targetImages + ' img', this)[0];
+                        const file = ui.find('.' + ui.imgUpload.targetImages + ' img', el)[0];
                         formData.append(ui.imgUpload.formDataID + '[' + i + ']', file.id); // add id
 
-                        tag = ui.find('.' + ui.imgUpload.targetTags, this)[0];
-                        if (tag !== undefined) { tag = tag.textContent; } else { tag = ''; }
+                        let tag = ui.find('.' + ui.imgUpload.targetTags, el)[0];
+
+                        if (tag !== undefined) {
+                            tag = tag.textContent;
+
+                        } else { tag = ''; }
 
                         formData.append(ui.imgUpload.formDataTag + '[' + i + ']', tag); // add image tag
 
-                        img = file.src.split(";");
-                        imgType = img[0].split(":")[1]; // get image type
+                        let img = file.src.split(";");
+                        const imgType = img[0].split(":")[1]; // get image type
 
                         img = img[1].split(",")[1];
                         img = toBlob(img, imgType); // convert to blob to using server's file protocol
@@ -607,12 +594,13 @@ ui.imgUpload.Start = () => {
 
                     });
 
+
                 ui.addClass(uploader, ui.imgUpload.nameUploading);
 
                 ui.ajax({
 
                     type: 'POST',
-                    url : that.action,
+                    url : this.action,
                     data: formData,
 
                     callback: (status, response) => {
@@ -669,17 +657,18 @@ ui.imgUpload.Start = () => {
 
             if (ui.alerts === undefined) {
 
-                confirmed = confirm(ui.imgUpload.msgBeforeUpload);
-                if (confirmed) { fnc(); }
+                const confirmed = confirm(ui.imgUpload.msgBeforeUpload);
+                if (confirmed) { uploaderFnc(); }
 
             } else {
 
                 ui.alerts.dialog({
 
                     msg: ui.imgUpload.msgBeforeUpload,
+                    error: ui.imgUpload.msgNotConfirm,
 
                     callback: function (val) {
-                        if (val === ui.alerts.successBtnValue) { fnc(); }
+                        if (val === ui.alerts.successBtnValue) { uploaderFnc(); }
                     }
 
                 });
