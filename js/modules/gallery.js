@@ -558,10 +558,6 @@ ui.photoGallery = {
 
                     } else {
 
-                        if (e.cancelable && e.defaultPrevented) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
-                            e.preventDefault();
-                        }
-
                         sx = e.changedTouches[0].pageX;
                         sy = e.changedTouches[0].pageY;
 
@@ -639,10 +635,6 @@ ui.photoGallery = {
             '.' + ui.photoGallery.targetGallery + ' a.' + ui.photoGallery.targetPhotos,
 
             function (e) {
-
-                if (e.cancelable && e.defaultPrevented) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
-                    e.preventDefault();
-                }
 
                 if (e.type === 'touchmove') { pageTouchmove = true; }
 

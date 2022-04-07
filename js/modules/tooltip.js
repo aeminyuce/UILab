@@ -316,18 +316,8 @@ ui.tooltip = {
 
                     }
 
-                    if (ui.userAgents.mobile && ui.userAgents.ios) {
-
-                        if (!touchControl) {
-                            e.preventDefault();
-                        }
-
-                    } else {
-
-                        if (!touchControl && e.cancelable && e.defaultPrevented) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
-                            e.preventDefault();
-                        }
-
+                    if (!touchControl) {
+                        e.preventDefault();
                     }
 
                     clearTimeout(pageTouchmoveTimer);

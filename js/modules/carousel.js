@@ -53,6 +53,8 @@ ui.carousel = {
     nameEaseSlow4x: 'ui-ease-slow-4x',
     nameEaseSlow5x: 'ui-ease-slow-5x',
 
+    nameNoEffects: 'ui-no-effects',
+
     // styling classnames
     stylesDots: 'ui-ease-all ui-ease-slow',
 
@@ -390,8 +392,8 @@ ui.carousel = {
 
                         const slider = ui.find('.' + ui.carousel.targetSlider, el)[0];
 
-                        el.style.transitionDuration = '0s';
-                        slider.style.transitionDuration = '0s';
+                        ui.addClass(el, ui.carousel.nameNoEffects);
+                        ui.addClass(slider, ui.carousel.nameNoEffects);
 
                     });
 
@@ -422,8 +424,8 @@ ui.carousel = {
 
                     const slider = ui.find('.' + ui.carousel.targetSlider, el)[0];
 
-                    el.style.transitionDuration = '';
-                    slider.style.transitionDuration = '';
+                    ui.removeClass(el, ui.carousel.nameNoEffects);
+                    ui.removeClass(slider, ui.carousel.nameNoEffects);
 
                 });
 
@@ -778,10 +780,6 @@ ui.carousel = {
                         if (ui.hasClass(document, ui.photoGallery.namePreviewOpened)) { return; } // stop if photo gallery is opened
                         if (isScrolling) { return; }
 
-                        if (e.cancelable && e.defaultPrevented) { // touchstart or touchmove with preventDefault we need this. Because, now Chrome and Android browsers preventDefault automatically.
-                            e.preventDefault();
-                        }
-
                         currentx = e.targetTouches[0].pageX;
                         currenty = e.targetTouches[0].pageY;
 
@@ -789,8 +787,8 @@ ui.carousel = {
 
                             touchMove = true;
 
-                            that.style.transitionDuration = '0s';
-                            slider.style.transitionDuration = '0s';
+                            ui.addClass(that, ui.carousel.nameNoEffects);
+                            ui.addClass(slider, ui.carousel.nameNoEffects);
 
                             clearTimeout(touchEndTimer);
                             let sliderMax = -((contents.length - col) * contents[0].offsetWidth);
@@ -830,8 +828,8 @@ ui.carousel = {
 
                         if (touchMove) {
 
-                            that.style.transitionDuration = '';
-                            slider.style.transitionDuration = '';
+                            ui.removeClass(that, ui.carousel.nameNoEffects);
+                            ui.removeClass(slider, ui.carousel.nameNoEffects);
 
                             setTimeout(() => {
 

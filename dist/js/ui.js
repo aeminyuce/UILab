@@ -3702,6 +3702,7 @@ ui.carousel = {
   nameEaseSlow3x: 'ui-ease-slow-3x',
   nameEaseSlow4x: 'ui-ease-slow-4x',
   nameEaseSlow5x: 'ui-ease-slow-5x',
+  nameNoEffects: 'ui-no-effects',
   stylesDots: 'ui-ease-all ui-ease-slow',
   tagDots: 'i',
   halfSize: 0.5,
@@ -3979,8 +3980,8 @@ ui.carousel = {
         ui.addClass(el, ui.carousel.nameResized);
         carouselModifier(i, el, 'resize');
         var slider = ui.find('.' + ui.carousel.targetSlider, el)[0];
-        el.style.transitionDuration = '0s';
-        slider.style.transitionDuration = '0s';
+        ui.addClass(el, ui.carousel.nameNoEffects);
+        ui.addClass(slider, ui.carousel.nameNoEffects);
       });
     }
 
@@ -4004,8 +4005,8 @@ ui.carousel = {
         }
 
         var slider = ui.find('.' + ui.carousel.targetSlider, el)[0];
-        el.style.transitionDuration = '';
-        slider.style.transitionDuration = '';
+        ui.removeClass(el, ui.carousel.nameNoEffects);
+        ui.removeClass(slider, ui.carousel.nameNoEffects);
       });
     }, ui.globals.ease);
   };
@@ -4255,17 +4256,13 @@ ui.carousel = {
           return;
         }
 
-        if (e.cancelable && e.defaultPrevented) {
-          e.preventDefault();
-        }
-
         currentx = e.targetTouches[0].pageX;
         currenty = e.targetTouches[0].pageY;
 
         if (Math.abs(startx - currentx) > ui.carousel.touchMoveToleranceX && Math.abs(starty - currenty) < ui.carousel.touchMoveToleranceY) {
           touchMove = true;
-          that.style.transitionDuration = '0s';
-          slider.style.transitionDuration = '0s';
+          ui.addClass(that, ui.carousel.nameNoEffects);
+          ui.addClass(slider, ui.carousel.nameNoEffects);
           clearTimeout(touchEndTimer);
           var sliderMax = -((contents.length - col) * contents[0].offsetWidth);
 
@@ -4293,8 +4290,8 @@ ui.carousel = {
       ui.off(document, 'touchend.' + ui.carousel.eventTouchEnd + ' touchcancel.' + ui.carousel.eventTouchCancel);
       ui.on(document, 'touchend.' + ui.carousel.eventTouchEnd + ' touchcancel.' + ui.carousel.eventTouchCancel, function () {
         if (touchMove) {
-          that.style.transitionDuration = '';
-          slider.style.transitionDuration = '';
+          ui.removeClass(that, ui.carousel.nameNoEffects);
+          ui.removeClass(slider, ui.carousel.nameNoEffects);
           setTimeout(function () {
             var navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that[i])[0];
             var beforeCount = counts[i];
@@ -5549,10 +5546,6 @@ ui.photoGallery = {
           sx = e.clientX;
           sy = e.clientY;
         } else {
-          if (e.cancelable && e.defaultPrevented) {
-            e.preventDefault();
-          }
-
           sx = e.changedTouches[0].pageX;
           sy = e.changedTouches[0].pageY;
         }
@@ -5608,10 +5601,6 @@ ui.photoGallery = {
     }
 
     ui.on(document, 'touchmove.' + ui.photoGallery.eventGalleryTouch + ' touchend', '.' + ui.photoGallery.targetGallery + ' a.' + ui.photoGallery.targetPhotos, function (e) {
-      if (e.cancelable && e.defaultPrevented) {
-        e.preventDefault();
-      }
-
       if (e.type === 'touchmove') {
         pageTouchmove = true;
       }
@@ -7076,14 +7065,8 @@ ui.tooltip = {
           return;
         }
 
-        if (ui.userAgents.mobile && ui.userAgents.ios) {
-          if (!touchControl) {
-            e.preventDefault();
-          }
-        } else {
-          if (!touchControl && e.cancelable && e.defaultPrevented) {
-            e.preventDefault();
-          }
+        if (!touchControl) {
+          e.preventDefault();
         }
 
         clearTimeout(pageTouchmoveTimer);
