@@ -19,10 +19,9 @@ ui.onload(() => {
 
         function () {
 
-            const that = this;
-            ui.loadingMask.toggle(that);
+            ui.loadingMask.toggle(this);
 
-            const scrollPos = that.getBoundingClientRect().top + window.pageYOffset - 15;
+            const scrollPos = this.getBoundingClientRect().top + window.pageYOffset - 15;
 
             ui.ajax({
                 url : 'xhr/ajax-products.php',
@@ -40,7 +39,7 @@ ui.onload(() => {
                                 theme: 'ui-theme-sub ui-fill-dark-100'
                             });
 
-                            ui.loadingMask.toggle(that);
+                            ui.loadingMask.toggle(this);
 
                             setTimeout(() => {
                                 window.scrollTo(0, scrollPos);
@@ -54,7 +53,7 @@ ui.onload(() => {
                                 pos: ui.alerts.posTopRight
                             });
 
-                            ui.loadingMask.toggle(that);
+                            ui.loadingMask.toggle(this);
 
                         }
 

@@ -7,9 +7,10 @@ ui.lineChart.showGrid = false;
 ui.lineChart.showInfo = false;
 ui.onload(function () {
   ui.on('.product-list-load-more', 'click', function () {
-    var that = this;
-    ui.loadingMask.toggle(that);
-    var scrollPos = that.getBoundingClientRect().top + window.pageYOffset - 15;
+    var _this = this;
+
+    ui.loadingMask.toggle(this);
+    var scrollPos = this.getBoundingClientRect().top + window.pageYOffset - 15;
     ui.ajax({
       url: 'xhr/ajax-products.php',
       callback: function callback(status, response) {
@@ -22,7 +23,7 @@ ui.onload(function () {
               msg: 'Products loaded!',
               theme: 'ui-theme-sub ui-fill-dark-100'
             });
-            ui.loadingMask.toggle(that);
+            ui.loadingMask.toggle(_this);
             setTimeout(function () {
               window.scrollTo(0, scrollPos);
             }, ui.globals.ease);
@@ -32,7 +33,7 @@ ui.onload(function () {
               theme: ui.alerts.themeDanger,
               pos: ui.alerts.posTopRight
             });
-            ui.loadingMask.toggle(that);
+            ui.loadingMask.toggle(_this);
           }
         }
       }

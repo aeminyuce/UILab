@@ -242,15 +242,13 @@ ui.forms = {
 
             function () {
 
-                const that = this;
-                const maxLength = that.getAttribute('maxlength');
-
-                that.removeAttribute('maxlength');
+                const maxLength = this.getAttribute('maxlength');
+                this.removeAttribute('maxlength');
 
                 setTimeout(() => {
 
                     let newValues = '';
-                    const getValues = that.value.match(new RegExp(/[0-9]/, 'g'));
+                    const getValues = this.value.match(new RegExp(/[0-9]/, 'g'));
 
                     if (getValues !== null) {
 
@@ -262,7 +260,7 @@ ui.forms = {
 
                     } else {
 
-                        that.value = newValues;
+                        this.value = newValues;
                         return false;
 
                     }
@@ -272,11 +270,11 @@ ui.forms = {
                         let re = '[0-9]{1,' + maxLength + '}';
                         re = new RegExp(re, 'g');
 
-                        that.value = newValues.match(re)[0];
-                        that.setAttribute('maxlength', maxLength);
+                        this.value = newValues.match(re)[0];
+                        this.setAttribute('maxlength', maxLength);
 
                     } else {
-                        that.value = newValues;
+                        this.value = newValues;
                     }
 
                 }, 0);

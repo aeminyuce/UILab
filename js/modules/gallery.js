@@ -640,24 +640,11 @@ ui.photoGallery = {
 
                 if (e.type === 'touchend') {
 
-                    const that = this;
-
                     clearTimeout(pageTouchmoveTimer);
-                    pageTouchmoveTimer = setTimeout(function () {
+                    pageTouchmoveTimer = setTimeout(() => {
 
                         if (!pageTouchmove) {
-
-                            if (ui.hasClass(this, ui.photoGallery.nameGalleryInfo)) {
-
-                                if (ui.userAgents.mobile && ui.hasClass(this, ui.photoGallery.nameGalleryTouch)) {
-                                    galleryFnc(e, that);
-
-                                } else { return; }
-
-                            } else {
-                                galleryFnc(e, that);
-                            }
-
+                            galleryFnc(e, this);
                         }
 
                         pageTouchmove = false;

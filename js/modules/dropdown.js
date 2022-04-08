@@ -419,15 +419,12 @@ ui.dropdown = {
                 clearTimeout(dropdownLeaveTimer);
                 clearTimeout(dropdownOpenTimer);
 
-                const that = this;
                 dropdownLeaveTimer = setTimeout(() => {
 
-                    const innerParent = ui.closest(that, '.' + ui.dropdown.target)[0];
+                    const innerParent = ui.closest(this, '.' + ui.dropdown.target)[0];
 
-                    if ((ui.hasClass(that, ui.dropdown.nameMenuPosRight) || ui.hasClass(that, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
-
-                        // detecting inner dropdown positions
-                        dropdownClose(innerParent);
+                    if ((ui.hasClass(this, ui.dropdown.nameMenuPosRight) || ui.hasClass(this, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
+                        dropdownClose(innerParent); // detecting inner dropdown positions
 
                     } else { dropdownClose(); }
 

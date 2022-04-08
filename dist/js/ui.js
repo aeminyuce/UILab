@@ -1084,13 +1084,14 @@ ui.dropdown = {
       ui.addClass(this.parentNode, ui.dropdown.nameSelected);
     });
     ui.on(document, 'mouseleave', '.' + ui.dropdown.target + '.' + ui.dropdown.nameHover, function () {
+      var _this = this;
+
       clearTimeout(dropdownLeaveTimer);
       clearTimeout(dropdownOpenTimer);
-      var that = this;
       dropdownLeaveTimer = setTimeout(function () {
-        var innerParent = ui.closest(that, '.' + ui.dropdown.target)[0];
+        var innerParent = ui.closest(_this, '.' + ui.dropdown.target)[0];
 
-        if ((ui.hasClass(that, ui.dropdown.nameMenuPosRight) || ui.hasClass(that, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
+        if ((ui.hasClass(_this, ui.dropdown.nameMenuPosRight) || ui.hasClass(_this, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
           dropdownClose(innerParent);
         } else {
           dropdownClose();
@@ -2181,29 +2182,32 @@ ui.forms = {
       }
     });
     ui.on(document, 'paste', '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber, function () {
-      var that = this;
-      var maxLength = that.getAttribute('maxlength');
-      that.removeAttribute('maxlength');
+      var _this2 = this;
+
+      var maxLength = this.getAttribute('maxlength');
+      this.removeAttribute('maxlength');
       setTimeout(function () {
         var newValues = '';
-        var getValues = that.value.match(new RegExp(/[0-9]/, 'g'));
+
+        var getValues = _this2.value.match(new RegExp(/[0-9]/, 'g'));
 
         if (getValues !== null) {
           Array.prototype.forEach.call(getValues, function (item) {
             newValues += item;
           });
         } else {
-          that.value = newValues;
+          _this2.value = newValues;
           return false;
         }
 
         if (maxLength !== null) {
           var re = '[0-9]{1,' + maxLength + '}';
           re = new RegExp(re, 'g');
-          that.value = newValues.match(re)[0];
-          that.setAttribute('maxlength', maxLength);
+          _this2.value = newValues.match(re)[0];
+
+          _this2.setAttribute('maxlength', maxLength);
         } else {
-          that.value = newValues;
+          _this2.value = newValues;
         }
       }, 0);
     });
@@ -2918,7 +2922,7 @@ ui.alerts = {
             ui.addClass(dialog, ui.alerts.nameShowEase);
           }, 10);
           ui.on('.' + ui.alerts.nameDialogBtnHolder + ' button', 'click', function () {
-            var _this = this;
+            var _this3 = this;
 
             var theme = '';
 
@@ -2948,7 +2952,7 @@ ui.alerts = {
 
               if (props.callback !== undefined) {
                 setTimeout(function () {
-                  props.callback.call(_this, _this.value);
+                  props.callback.call(_this3, _this3.value);
                 }, ui.globals.ease * 2);
               }
             }, msgTimer);
@@ -3069,10 +3073,10 @@ ui.alerts = {
     };
 
     ui.on(document, 'click', '.' + ui.alerts.targetMsg, function () {
-      var _this2 = this;
+      var _this4 = this;
 
       Array.prototype.forEach.call(messageQueue, function (el, i) {
-        if (el[0] === _this2) {
+        if (el[0] === _this4) {
           messageQueue.splice(i, 1);
         }
       });
@@ -3535,7 +3539,7 @@ ui.calendar.Start = function () {
   }
 
   ui.on(document, 'focus', '.' + ui.calendar.namePicker + ' > [type="text"]', function () {
-    var _this3 = this;
+    var _this5 = this;
 
     var form = this.parentElement;
 
@@ -3588,7 +3592,7 @@ ui.calendar.Start = function () {
       }
 
       if (ev.button !== 2) {
-        pickerCloseFnc('default', _this3);
+        pickerCloseFnc('default', _this5);
       }
     });
     ui.on(this, 'keydown.' + ui.calendar.eventClose, function (ev) {
@@ -5603,24 +5607,17 @@ ui.photoGallery = {
     }
 
     ui.on(document, 'touchmove.' + ui.photoGallery.eventGalleryTouch + ' touchend', '.' + ui.photoGallery.targetGallery + ' a.' + ui.photoGallery.targetPhotos, function (e) {
+      var _this6 = this;
+
       if (e.type === 'touchmove') {
         pageTouchmove = true;
       }
 
       if (e.type === 'touchend') {
-        var that = this;
         clearTimeout(pageTouchmoveTimer);
         pageTouchmoveTimer = setTimeout(function () {
           if (!pageTouchmove) {
-            if (ui.hasClass(this, ui.photoGallery.nameGalleryInfo)) {
-              if (ui.userAgents.mobile && ui.hasClass(this, ui.photoGallery.nameGalleryTouch)) {
-                galleryFnc(e, that);
-              } else {
-                return;
-              }
-            } else {
-              galleryFnc(e, that);
-            }
+            galleryFnc(e, _this6);
           }
 
           pageTouchmove = false;
@@ -5947,7 +5944,7 @@ ui.imgUpload.Start = function () {
     imported = [];
   });
   ui.on(document, 'dragenter', '.' + ui.imgUpload.target, function (e) {
-    var _this4 = this;
+    var _this7 = this;
 
     e.preventDefault();
     e.stopPropagation();
@@ -5958,9 +5955,9 @@ ui.imgUpload.Start = function () {
       var uploader = ui.closest(ev.target, '.' + ui.imgUpload.target)[0];
 
       if (uploader === undefined) {
-        ui.removeClass(_this4, ui.imgUpload.nameDrop);
+        ui.removeClass(_this7, ui.imgUpload.nameDrop);
       } else {
-        ui.addClass(_this4, ui.imgUpload.nameDrop);
+        ui.addClass(_this7, ui.imgUpload.nameDrop);
       }
     });
   });
@@ -6010,13 +6007,13 @@ ui.imgUpload.Start = function () {
   }
 
   ui.on(document, 'submit', '.' + ui.imgUpload.target + ' form', function (e) {
-    var _this5 = this;
+    var _this8 = this;
 
     e.preventDefault();
 
     var uploaderFnc = function uploaderFnc() {
       var formData = new FormData();
-      var uploader = ui.closest(_this5, '.' + ui.imgUpload.target)[0];
+      var uploader = ui.closest(_this8, '.' + ui.imgUpload.target)[0];
       Array.prototype.forEach.call(ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList, uploader), function (el, i) {
         var file = ui.find('.' + ui.imgUpload.targetImages + ' img', el)[0];
         formData.append(ui.imgUpload.formDataID + '[' + i + ']', file.id);
@@ -6038,7 +6035,7 @@ ui.imgUpload.Start = function () {
       ui.addClass(uploader, ui.imgUpload.nameUploading);
       ui.ajax({
         type: 'POST',
-        url: _this5.action,
+        url: _this8.action,
         data: formData,
         callback: function callback(status, response) {
           ui.removeClass(uploader, ui.imgUpload.nameUploading);
@@ -7350,6 +7347,8 @@ ui.donutChart.Start = function () {
 
   ui.donutChart.Init();
   ui.on(document, 'mouseenter mouseleave touchend', '.' + ui.donutChart.target + ' circle[' + ui.donutChart.dataTitle + ']', function (e) {
+    var _this9 = this;
+
     var chart = ui.closest(this, '.' + ui.donutChart.target)[0];
     var msg = ui.find(ui.donutChart.tagMsg, chart)[0];
     var circle = ui.find('circle', chart);
@@ -7372,13 +7371,12 @@ ui.donutChart.Start = function () {
       }
 
       var title = this.getAttribute(ui.donutChart.dataTitle);
-      var that = this;
       setTimeout(function () {
         if (title !== null && title !== '') {
           msg.innerHTML = title;
         }
 
-        ui.addClass(that, ui.donutChart.nameSelected);
+        ui.addClass(_this9, ui.donutChart.nameSelected);
       }, 0);
     }
   });

@@ -122,7 +122,6 @@ ui.donutChart.Start = () => {
                 }
 
                 const title = this.getAttribute(ui.donutChart.dataTitle);
-                const that = this;
 
                 setTimeout(() => {
 
@@ -130,7 +129,7 @@ ui.donutChart.Start = () => {
                         msg.innerHTML = title;
                     }
 
-                    ui.addClass(that, ui.donutChart.nameSelected);
+                    ui.addClass(this, ui.donutChart.nameSelected);
 
                 }, 0);
 
