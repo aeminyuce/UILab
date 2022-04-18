@@ -22,7 +22,7 @@
                         <div class="ui-font-12 ui-m-10-b ui-color-white-25">Personal Activity</div>
 
                         <div class="ui-btn-holder ui-align-c ui-ease-1st-btn">
-                            <button class="ui-btn ui-btn-multi ui-p-10 ui-round-l">
+                            <button class="ui-btn ui-btn-multi ui-p-10 ui-round">
 
                                 <span class="ui-font-22">13</span>
                                 <span class="ui-font-12 ui-color-white-25 ui-m-5-b ui-block">Waiting</span>
@@ -31,7 +31,7 @@
                                 </span>
 
                             </button>
-                            <button class="ui-btn ui-btn-multi ui-p-10">
+                            <button class="ui-btn ui-btn-multi ui-p-10 ui-round">
 
                                 <span class="ui-font-22">3</span>
                                 <span class="ui-font-12 ui-color-white-25 ui-m-5-b ui-block">Paused</span>
@@ -40,7 +40,7 @@
                                 </span>
 
                             </button>
-                            <button class="ui-btn ui-btn-multi ui-p-10 ui-round-r">
+                            <button class="ui-btn ui-btn-multi ui-p-10 ui-round">
 
                                 <span class="ui-font-22">16</span>
                                 <span class="ui-font-12 ui-color-white-25 ui-m-5-b ui-block">Delayed</span>
