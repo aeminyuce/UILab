@@ -75,6 +75,13 @@
         &:not(.ui-toggle-icon) { vertical-align: middle; ._icon(@btn-default-icon); }
         &:not(.ui-no-opacity) { opacity: .45; }
     }
+    &:not(.ui-btn-multi) {
+        .ui-icon {
+            &:not(.ui-toggle-icon) {
+                &:first-child:last-child { vertical-align: top; }
+            }
+        }
+    }
     &[class*="ui-fill-dark-"] {
         .ui-icon { opacity: 1; }
     }

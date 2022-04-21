@@ -4078,6 +4078,9 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
 .ui-btn .ui-icon:not(.ui-no-opacity) {
   opacity: 0.45;
 }
+.ui-btn:not(.ui-btn-multi) .ui-icon:not(.ui-toggle-icon):first-child:last-child {
+  vertical-align: top;
+}
 .ui-btn[class*="ui-fill-dark-"] .ui-icon {
   opacity: 1;
 }
