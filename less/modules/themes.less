@@ -2,24 +2,6 @@
 
 @theme-colors:                          gray green yellow orange red;
 
-[class*="ui-fill-light-"] {
-    &,&:hover { ._color-var(black); }
-
-    .ui-icon,a,button {
-        &:not([class*="ui-fill-"]):not([class*="ui-color-"]) { &:extend([class*="ui-fill-light-"] ); }
-    }
-}
-
-[class*="ui-fill-dark-"] {
-    &,&:hover { color: @white; }
-
-    .ui-icon,a,button {
-        &:not([class*="ui-fill-"]):not([class*="ui-color-"]) { &:extend([class*="ui-fill-dark-"]); }
-    }
-}
-
-.ui-text:not(.ui-link) { word-wrap: break-word; text-decoration: none; }
-
 ._theme(@name; @color) {
     @theme-bg-vars: {
         light-100: fade(lighten(@color, 10%), 15%);
@@ -50,7 +32,7 @@
             .ui-desktop & {
                 &.ui-hover:hover,&.ui-btn:not(.ui-btn-passive):not(.ui-btn-ghost):not(.ui-opacity):not(.ui-opacity-more):hover { background-color: @value; }
             }
-          }
+        }
     });
 
     .ui-theme-@{name}.ui-text,.ui-theme-@{name} .ui-text:not([class*="ui-theme-"]) {
@@ -65,6 +47,24 @@
 }
 
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    [class*="ui-fill-light-"] {
+        &,&:hover { ._color-var(black); }
+
+        .ui-icon,a,button {
+            &:not([class*="ui-fill-"]):not([class*="ui-color-"]) { &:extend([class*="ui-fill-light-"] ); }
+        }
+    }
+
+    [class*="ui-fill-dark-"] {
+        &,&:hover { color: @white; }
+
+        .ui-icon,a,button {
+            &:not([class*="ui-fill-"]):not([class*="ui-color-"]) { &:extend([class*="ui-fill-dark-"]); }
+        }
+    }
+
+    .ui-text:not(.ui-link) { word-wrap: break-word; text-decoration: none; }
 
     each(@theme-colors, {
         @color: @@value;

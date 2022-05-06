@@ -21,55 +21,60 @@
 
 @keyframes ui-progress-fill { from { width: 0; } }
 
-.ui-progress- {
-    &bar {
-        color: @white; height: @progress-bar-default-size; ._bg-var(progress-bar-bg); padding: @progress-bar-padding; display: block;
 
-        &:not(:last-child) { margin-bottom: @highlight-space; }
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-        & > span {
-            width: 0; height: (@progress-bar-default-size - @progress-bar-padding * 2); background-color: @featured-color; overflow: hidden; float: left;
+    .ui-progress- {
+        &bar {
+            color: @white; height: @progress-bar-default-size; ._bg-var(progress-bar-bg); padding: @progress-bar-padding; display: block;
 
-            &:not([class*="animate-"]) { animation: ui-progress-fill 2s ease-in-out forwards; }
-        }
-        &:not(.ui-progress-lg) {
-            & > span { font-size: 0 !important; }
-        }
-        &.ui-border > span {
-            height: (@progress-bar-default-size - @progress-bar-padding * 2 - 2);
-        }
-        &.ui-border-dual > span {
-            height: (@progress-bar-default-size - @progress-bar-padding * 2 - @border-dual * 2);
-        }
-
-        &.ui-round {
-            border-radius: @progress-bar-round;
+            &:not(:last-child) { margin-bottom: @highlight-space; }
 
             & > span {
-                &:first-child { border-top-left-radius: (@progress-bar-round - @progress-bar-round * 0.3333333333); border-bottom-left-radius: (@progress-bar-round - @progress-bar-round * 0.3333333333); }
-                &:last-child { border-top-right-radius: (@progress-bar-round - @progress-bar-round * 0.3333333333); border-bottom-right-radius: (@progress-bar-round - @progress-bar-round * 0.3333333333); }
+                width: 0; height: (@progress-bar-default-size - @progress-bar-padding * 2); background-color: @featured-color; overflow: hidden; float: left;
+
+                &:not([class*="animate-"]) { animation: ui-progress-fill 2s ease-in-out forwards; }
+            }
+            &:not(.ui-progress-lg) {
+                & > span { font-size: 0 !important; }
+            }
+            &.ui-border > span {
+                height: (@progress-bar-default-size - @progress-bar-padding * 2 - 2);
+            }
+            &.ui-border-dual > span {
+                height: (@progress-bar-default-size - @progress-bar-padding * 2 - @border-dual * 2);
+            }
+
+            &.ui-round {
+                border-radius: @progress-bar-round;
+
+                & > span {
+                    &:first-child { border-top-left-radius: (@progress-bar-round - @progress-bar-round * 0.3333333333); border-bottom-left-radius: (@progress-bar-round - @progress-bar-round * 0.3333333333); }
+                    &:last-child { border-top-right-radius: (@progress-bar-round - @progress-bar-round * 0.3333333333); border-bottom-right-radius: (@progress-bar-round - @progress-bar-round * 0.3333333333); }
+                }
+            }
+            &.ui-circle > span {
+                &:first-child { border-top-left-radius: @circle; border-bottom-left-radius: @circle; }
+                &:last-child { border-top-right-radius: @circle; border-bottom-right-radius: @circle; }
             }
         }
-        &.ui-circle > span {
-            &:first-child { border-top-left-radius: @circle; border-bottom-left-radius: @circle; }
-            &:last-child { border-top-right-radius: @circle; border-bottom-right-radius: @circle; }
+
+        &lg {
+            height: @progress-bar-lg-size;
+
+            & > span { font-size: @progress-bar-info-font-size; text-align: center; height: (@progress-bar-lg-size - @progress-bar-padding * 2); }
+            &.ui-border-dual > span {
+                height: (@progress-bar-lg-size - @progress-bar-padding * 2 - @border-dual * 2);
+            }
+        }
+        &sm {
+            height: @progress-bar-sm-size;
+
+            & > span { height: (@progress-bar-sm-size - @progress-bar-padding * 2); }
+            &.ui-border-dual > span {
+                height: (@progress-bar-sm-size - @progress-bar-padding * 2 - @border-dual * 2);
+            }
         }
     }
 
-    &lg {
-        height: @progress-bar-lg-size;
-
-        & > span { font-size: @progress-bar-info-font-size; text-align: center; height: (@progress-bar-lg-size - @progress-bar-padding * 2); }
-        &.ui-border-dual > span {
-            height: (@progress-bar-lg-size - @progress-bar-padding * 2 - @border-dual * 2);
-        }
-    }
-    &sm {
-        height: @progress-bar-sm-size;
-
-        & > span { height: (@progress-bar-sm-size - @progress-bar-padding * 2); }
-        &.ui-border-dual > span {
-            height: (@progress-bar-sm-size - @progress-bar-padding * 2 - @border-dual * 2);
-        }
-    }
 }

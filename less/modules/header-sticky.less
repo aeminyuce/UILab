@@ -2,6 +2,10 @@
 
 @sticky-header-z-index:                 89;
 
-.ui-header-sticky {
-    &.ui-sticky { position: fixed; top: 0; right: 0; left: 0; z-index: @sticky-header-z-index; }
+& when (@referenceCompiling = false) { // not compiled when reference importing
+
+    .ui-header-sticky {
+        &.ui-sticky { position: fixed; top: 0; right: 0; left: 0; z-index: @sticky-header-z-index; }
+    }
+
 }

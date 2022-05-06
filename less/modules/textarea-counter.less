@@ -20,24 +20,28 @@
     --ui-textarea-counter-bg: @textarea-counter-bg-dark;
 }
 
-.ui-textarea {
-    &:not(.ui-textarea-toggle)[data-ui-counter] {
-        &:before { content: attr(data-ui-counter); font-size: @font-9; text-align: @textarea-counter-align; line-height: (@textarea-counter-height - 1); width: 100%; height: @textarea-counter-height; padding: 1px @form-padding; display: block; position: absolute; bottom: 0; left: 0; z-index: 1; }
-        &:not(.ui-form-light),&.ui-form-focus {
-            &:before { ._color-var(textarea-counter-color); ._bg-var(textarea-counter-bg); }
-        }
-        &.ui-changed {
-            &:before { content: attr(data-ui-changed); }
-        }
-        textarea { margin-bottom: @textarea-counter-height; }
-    }
-}
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-[data-ui-counter] {
-    &.ui-form-error {
-        &:before { color: @white !important; background-color: @textarea-counter-error-bg !important; }
+    .ui-textarea {
+        &:not(.ui-textarea-toggle)[data-ui-counter] {
+            &:before { content: attr(data-ui-counter); font-size: @font-9; text-align: @textarea-counter-align; line-height: (@textarea-counter-height - 1); width: 100%; height: @textarea-counter-height; padding: 1px @form-padding; display: block; position: absolute; bottom: 0; left: 0; z-index: 1; }
+            &:not(.ui-form-light),&.ui-form-focus {
+                &:before { ._color-var(textarea-counter-color); ._bg-var(textarea-counter-bg); }
+            }
+            &.ui-changed {
+                &:before { content: attr(data-ui-changed); }
+            }
+            textarea { margin-bottom: @textarea-counter-height; }
+        }
     }
-    &.ui-form-warning {
-        &:before { color: @white !important; background-color: @textarea-counter-warning-bg !important; }
+
+    [data-ui-counter] {
+        &.ui-form-error {
+            &:before { color: @white !important; background-color: @textarea-counter-error-bg !important; }
+        }
+        &.ui-form-warning {
+            &:before { color: @white !important; background-color: @textarea-counter-warning-bg !important; }
+        }
     }
+
 }

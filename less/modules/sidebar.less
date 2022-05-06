@@ -10,34 +10,38 @@
 @sidebar-bg-bg:                     fade(@black, 65%);
 @sidebar-bg:                        fade(@black, 15%);
 
-.ui-sidebar {
-    width: 100%; width: @layout-min; ._bg-var(body-bg); position: fixed; top: @sidebar-spacer; bottom: @sidebar-spacer; z-index: 90; box-shadow: 0 @sidebar-shadow-size @sidebar-bg;
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-    &-opened {
-        &,& > body { overflow: hidden; }
-    }
+    .ui-sidebar {
+        width: 100%; width: @layout-min; ._bg-var(body-bg); position: fixed; top: @sidebar-spacer; bottom: @sidebar-spacer; z-index: 90; box-shadow: 0 @sidebar-shadow-size @sidebar-bg;
 
-    &.ui-round { overflow: hidden; }
+        &-opened {
+            &,& > body { overflow: hidden; }
+        }
 
-    &-bg {
-        width: 100%; min-width: @layout-min; height: 100%; background-color: @sidebar-bg-bg; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 89;
+        &.ui-round { overflow: hidden; }
+
+        &-bg {
+            width: 100%; min-width: @layout-min; height: 100%; background-color: @sidebar-bg-bg; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 89;
+
+            &:not(.ui-open) { display: none; }
+            &:not(.ui-open-ease) { opacity: 0; }
+        }
+
+        &-r { right: @sidebar-spacer; transform: translateX(100%); }
+        &-l { left: @sidebar-spacer; transform: translateX(-100%); }
 
         &:not(.ui-open) { display: none; }
-        &:not(.ui-open-ease) { opacity: 0; }
+        &.ui-open-ease { transform: translateX(0); }
+
+        &-close{ position: fixed; top: @sidebar-padding; right: @sidebar-padding; z-index: 10; }
+        &-title {
+            height: (@sidebar-title-height + (@sidebar-padding * 2)); padding: @sidebar-padding ((@sidebar-padding * 2) + @sidebar-close-btn-size) @sidebar-padding @sidebar-padding; position: relative; z-index: 1;
+
+            & + .ui-sidebar-content { top: (@sidebar-title-height + (@sidebar-padding * 2)); }
+        }
+
+        &-content { padding: @sidebar-padding; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
     }
 
-    &-r { right: @sidebar-spacer; transform: translateX(100%); }
-    &-l { left: @sidebar-spacer; transform: translateX(-100%); }
-
-    &:not(.ui-open) { display: none; }
-    &.ui-open-ease { transform: translateX(0); }
-
-    &-close{ position: fixed; top: @sidebar-padding; right: @sidebar-padding; z-index: 10; }
-    &-title {
-        height: (@sidebar-title-height + (@sidebar-padding * 2)); padding: @sidebar-padding ((@sidebar-padding * 2) + @sidebar-close-btn-size) @sidebar-padding @sidebar-padding; position: relative; z-index: 1;
-
-        & + .ui-sidebar-content { top: (@sidebar-title-height + (@sidebar-padding * 2)); }
-    }
-
-    &-content { padding: @sidebar-padding; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 }

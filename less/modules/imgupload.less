@@ -64,107 +64,111 @@
     to { background-position: 0 0; }
 }
 
-.ui-ease-imgupload {
-    transition-property: background-color; transition-duration: @ease-default;
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-    .ui-imgupload-list {
-        transition-property: margin; transition-duration: @ease-default;
-
-        & > .ui-icon { transition-property: opacity; transition-duration: @ease-default; }
-        li { transition-property: opacity; transition-duration: (@ease-default * 2); }
-    }
-}
-
-.ui-imgupload {
-    ._bg-var(card-bg); overflow: hidden; position: relative;
-
-    &.ui-imgupload-loading,&.ui-imgupload-uploading {
-        .ui-file .ui-btn,[type="submit"] { background-image: @imgupload-loading-bg; background-size: @imgupload-loading-stripe-size @imgupload-loading-stripe-size; animation: ui-imgupload-loader 1s linear infinite; }
-    }
-
-    &-drop {
-        ._bg-var(imgupload-drop-bg);
+    .ui-ease-imgupload {
+        transition-property: background-color; transition-duration: @ease-default;
 
         .ui-imgupload-list {
-            ._bg-var(imgupload-list-bg); margin: @imgupload-padding; ._border-var(@style: @imgupload-list-border-style; @width: @imgupload-list-border-size; @var: imgupload-list-border); border-radius: @round;
+            transition-property: margin; transition-duration: @ease-default;
 
-            & > .ui-icon { display: block; }
-            li { opacity: @imgupload-drop-opacity; }
+            & > .ui-icon { transition-property: opacity; transition-duration: @ease-default; }
+            li { transition-property: opacity; transition-duration: (@ease-default * 2); }
         }
     }
 
-    &-list {
-        min-height: @imgupload-list-min-height; position: relative;
+    .ui-imgupload {
+        ._bg-var(card-bg); overflow: hidden; position: relative;
 
-        & > .ui-icon { position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%, -50%); }
-        &.ui-open > .ui-icon { display: none; }
+        &.ui-imgupload-loading,&.ui-imgupload-uploading {
+            .ui-file .ui-btn,[type="submit"] { background-image: @imgupload-loading-bg; background-size: @imgupload-loading-stripe-size @imgupload-loading-stripe-size; animation: ui-imgupload-loader 1s linear infinite; }
+        }
 
-        ul {
-            list-style: none; padding: (@imgupload-padding / 2); margin: 0; display: flex; flex-wrap: wrap;
+        &-drop {
+            ._bg-var(imgupload-drop-bg);
 
-           li {
-                box-sizing: border-box; padding: (@imgupload-padding / 2);
+            .ui-imgupload-list {
+                ._bg-var(imgupload-list-bg); margin: @imgupload-padding; ._border-var(@style: @imgupload-list-border-style; @width: @imgupload-list-border-size; @var: imgupload-list-border); border-radius: @round;
 
-                &.ui-open-ease { opacity: 0; }
-
-                .ui-imgupload- {
-                    &src {
-                        display: block; clear: both; position: relative;
-
-                        &:not(:first-child) { margin-top: (@imgupload-padding / 2); }
-                        &:not(:last-child) { margin-bottom: (@imgupload-padding / 2); }
-
-                        img { vertical-align: middle; width: auto; max-width: 100%; height: auto; max-height: 100%; display: inline-block; border: 0; position: absolute; top: 50%; left: 50%; box-shadow: 0 @imgupload-list-img-shadow-size @imgupload-list-img-shadow; transform: translate(-50%,-50%); }
-                    }
-
-                    &name { white-space: nowrap; text-overflow: ellipsis; line-height: @imgupload-list-name-min-height; min-height: @imgupload-list-name-min-height; overflow: hidden; display: block; }
-
-                    &info,&tag { vertical-align: middle; display: inline-block; }
-                    &info { color: @imgupload-list-info-color; padding: @imgupload-list-info-padding; }
-                    &tag { ._color-var(imgupload-list-tag-color); font-size: @imgupload-list-tag-font-size; white-space: nowrap; padding: @imgupload-list-tag-padding; ._bg-var(imgupload-list-tag-bg); border-radius: @imgupload-list-tag-radius; }
-                }
+                & > .ui-icon { display: block; }
+                li { opacity: @imgupload-drop-opacity; }
             }
         }
 
-        &:not(.ui-open) {
-            ._bg-var(imgupload-list-bg); margin: @imgupload-padding; ._border-var(@style: @imgupload-list-border-style; @width: @imgupload-list-border-size; @var: imgupload-list-border); border-radius: @round;
+        &-list {
+            min-height: @imgupload-list-min-height; position: relative;
 
-            li { display: none; }
-        }
-    }
-}
+            & > .ui-icon { position: absolute; top: 50%; left: 50%; z-index: 1; transform: translate(-50%, -50%); }
+            &.ui-open > .ui-icon { display: none; }
 
-@media (@default-start) {
-    .ui-imgupload-list {
-        li { width: 20%; }
-    }
-}
-@media (@md-finish) {
-    .ui-imgupload-list {
-        li { width: 25%; }
-    }
-}
-@media (@sm-finish) {
-    .ui-imgupload-list {
-        li { width: 33.333332%; }
-    }
-}
-@media (@sm-start) {
-    .ui-imgupload-list {
-        li {
-            .ui-imgupload-src { min-height: @imgupload-list-img-min-height; }
+            ul {
+                list-style: none; padding: (@imgupload-padding / 2); margin: 0; display: flex; flex-wrap: wrap;
+
+            li {
+                    box-sizing: border-box; padding: (@imgupload-padding / 2);
+
+                    &.ui-open-ease { opacity: 0; }
+
+                    .ui-imgupload- {
+                        &src {
+                            display: block; clear: both; position: relative;
+
+                            &:not(:first-child) { margin-top: (@imgupload-padding / 2); }
+                            &:not(:last-child) { margin-bottom: (@imgupload-padding / 2); }
+
+                            img { vertical-align: middle; width: auto; max-width: 100%; height: auto; max-height: 100%; display: inline-block; border: 0; position: absolute; top: 50%; left: 50%; box-shadow: 0 @imgupload-list-img-shadow-size @imgupload-list-img-shadow; transform: translate(-50%,-50%); }
+                        }
+
+                        &name { white-space: nowrap; text-overflow: ellipsis; line-height: @imgupload-list-name-min-height; min-height: @imgupload-list-name-min-height; overflow: hidden; display: block; }
+
+                        &info,&tag { vertical-align: middle; display: inline-block; }
+                        &info { color: @imgupload-list-info-color; padding: @imgupload-list-info-padding; }
+                        &tag { ._color-var(imgupload-list-tag-color); font-size: @imgupload-list-tag-font-size; white-space: nowrap; padding: @imgupload-list-tag-padding; ._bg-var(imgupload-list-tag-bg); border-radius: @imgupload-list-tag-radius; }
+                    }
+                }
+            }
+
+            &:not(.ui-open) {
+                ._bg-var(imgupload-list-bg); margin: @imgupload-padding; ._border-var(@style: @imgupload-list-border-style; @width: @imgupload-list-border-size; @var: imgupload-list-border); border-radius: @round;
+
+                li { display: none; }
+            }
         }
     }
-}
-@media (@xs-finish) {
-    .ui-imgupload-list {
-        li {
-            .ui-imgupload-src { min-height: @imgupload-list-img-min-height-xs; }
+
+    @media (@default-start) {
+        .ui-imgupload-list {
+            li { width: 20%; }
         }
     }
-}
-@media (max-width: (@layout-min + 60)) {
-    .ui-imgupload-list {
-        li { width: 50%; }
+    @media (@md-finish) {
+        .ui-imgupload-list {
+            li { width: 25%; }
+        }
     }
+    @media (@sm-finish) {
+        .ui-imgupload-list {
+            li { width: 33.333332%; }
+        }
+    }
+    @media (@sm-start) {
+        .ui-imgupload-list {
+            li {
+                .ui-imgupload-src { min-height: @imgupload-list-img-min-height; }
+            }
+        }
+    }
+    @media (@xs-finish) {
+        .ui-imgupload-list {
+            li {
+                .ui-imgupload-src { min-height: @imgupload-list-img-min-height-xs; }
+            }
+        }
+    }
+    @media (max-width: (@layout-min + 60)) {
+        .ui-imgupload-list {
+            li { width: 50%; }
+        }
+    }
+
 }

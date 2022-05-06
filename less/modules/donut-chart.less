@@ -9,37 +9,40 @@
 
 @donut-chart-title-size:                @font-size;
 
-@keyframes ui-donut-draw {
-    to { stroke-dasharray: 0 440; }
-}
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-.ui-ease-donut-chart {
-    circle {
-        &:not(.ui-donut-chart-bg) { transition-property: opacity stroke; transition-duration: @ease-default; transition-timing-function: ease-in-out; }
+    @keyframes ui-donut-draw {
+        to { stroke-dasharray: 0 440; }
     }
-}
 
-.ui-donut-chart {
-    text-align: left !important; display: block; position: relative; @no-selection();
-
-    strong { text-align: center; font-size: @donut-chart-title-size; line-height: @donut-chart-title-size; width: 100%; position: absolute; top: 50%; z-index: 1; transform: translateY(-50%); }
-    svg {
-        &:not(.ui-icon) {
-            width: 100%; height: auto; margin: 0 auto;
-
-            html:not(.ui-edge) & { -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
-            .ui-edge & { -ms-transform: rotate(90deg); transform: rotate(90deg); }
+    .ui-ease-donut-chart {
+        circle {
+            &:not(.ui-donut-chart-bg) { transition-property: opacity stroke; transition-duration: @ease-default; transition-timing-function: ease-in-out; }
         }
     }
-    circle {
-        fill: none; stroke-width: @donut-chart-stroke-size;
 
-        &.ui-loaded:not(.ui-donut-chart-bg) { animation: ui-donut-draw 1.6s ease-in reverse; }
-        &.ui-selected { stroke-width: @donut-chart-stroke-selected-size; transition-duration: @ease-default; }
-        &.ui-donut-chart-bg { stroke: currentColor; stroke-width: @donut-chart-bg-stroke-size; stroke-dashoffset: 0; opacity: @donut-chart-bg-opacity; }
+    .ui-donut-chart {
+        text-align: left !important; display: block; position: relative; @no-selection();
+
+        strong { text-align: center; font-size: @donut-chart-title-size; line-height: @donut-chart-title-size; width: 100%; position: absolute; top: 50%; z-index: 1; transform: translateY(-50%); }
+        svg {
+            &:not(.ui-icon) {
+                width: 100%; height: auto; margin: 0 auto;
+
+                html:not(.ui-edge) & { -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
+                .ui-edge & { -ms-transform: rotate(90deg); transform: rotate(90deg); }
+            }
+        }
+        circle {
+            fill: none; stroke-width: @donut-chart-stroke-size;
+
+            &.ui-loaded:not(.ui-donut-chart-bg) { animation: ui-donut-draw 1.6s ease-in reverse; }
+            &.ui-selected { stroke-width: @donut-chart-stroke-selected-size; transition-duration: @ease-default; }
+            &.ui-donut-chart-bg { stroke: currentColor; stroke-width: @donut-chart-bg-stroke-size; stroke-dashoffset: 0; opacity: @donut-chart-bg-opacity; }
+        }
+        &:not(.ui-multiple) {
+            circle when (@donut-chart-stroke-single-round = true) { stroke-linecap: round; }
+        }
     }
-    &:not(.ui-multiple) {
-        circle when (@donut-chart-stroke-single-round = true) { stroke-linecap: round; }
-    }
+
 }
-

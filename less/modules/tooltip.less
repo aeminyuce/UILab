@@ -10,94 +10,98 @@
 
 @tooltip-arrow-size:                    10px;
 
-.ui-ease-tooltip { transition-property: top, left, opacity; transition-duration: @ease-default; }
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-[data-ui-tooltip] { display: inline-block; }
+    .ui-ease-tooltip { transition-property: top, left, opacity; transition-duration: @ease-default; }
 
-.ui-tooltip {
-    min-width: @tooltip-min-width; max-width: @tooltip-max-width; position: absolute; z-index: @tooltip-z-index;
+    [data-ui-tooltip] { display: inline-block; }
 
-    &-opened { overflow-x: hidden; }
+    .ui-tooltip {
+        min-width: @tooltip-min-width; max-width: @tooltip-max-width; position: absolute; z-index: @tooltip-z-index;
 
-    &:not([class*="ui-fill-"]) { color: @white; background-color: @featured-color; }
+        &-opened { overflow-x: hidden; }
 
-    &:not(.ui-open) { display: none; }
-    &:not(.ui-open-ease) { opacity: 0; }
+        &:not([class*="ui-fill-"]) { color: @white; background-color: @featured-color; }
 
-    &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
+        &:not(.ui-open) { display: none; }
+        &:not(.ui-open-ease) { opacity: 0; }
 
-    &-content { line-height: @tooltip-content-line-height; min-height: (@tooltip-min-height + @tooltip-content-padding); padding: @tooltip-content-padding (@tooltip-content-padding * 2); position: relative; }
+        &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
 
-    &[data-ui-pos="t"] {
+        &-content { line-height: @tooltip-content-line-height; min-height: (@tooltip-min-height + @tooltip-content-padding); padding: @tooltip-content-padding (@tooltip-content-padding * 2); position: relative; }
+
+        &[data-ui-pos="t"] {
+            & > span {
+                top: 100%; left: 50%;
+
+                i { border-top-color: @no-color; border-left-color: @no-color; }
+            }
+            .ui-tooltip-content { text-align: center; }
+        }
+        &[data-ui-pos="b"] {
+            & > span {
+                bottom: 100%; left: 50%;
+
+                i { border-bottom-color: @no-color; border-right-color: @no-color; }
+            }
+            .ui-tooltip-content { text-align: center; }
+        }
+        &[data-ui-pos="r"] {
+            & > span {
+                right: 100%; top: 50%;
+
+                i { border-top-color: @no-color; border-right-color: @no-color; }
+            }
+        }
+        &[data-ui-pos="l"] {
+            & > span {
+                left: 100%; top: 50%;
+
+                i { border-bottom-color: @no-color; border-left-color: @no-color; }
+            }
+            .ui-tooltip-content { text-align: right; }
+        }
+
+        &[data-ui-pos="tr"] {
+            & > span {
+                top: 100%; left: (@tooltip-arrow-size * 2);
+
+                i { border-top-color: @no-color; border-left-color: @no-color; }
+            }
+        }
+        &[data-ui-pos="tl"] {
+            & > span {
+                top: 100%; right: (@tooltip-arrow-size * 2);
+
+                i { border-top-color: @no-color; border-left-color: @no-color; }
+            }
+            .ui-tooltip-content { text-align: right; }
+        }
+        &[data-ui-pos="br"] {
+            & > span {
+                bottom: 100%; left: (@tooltip-arrow-size * 2);
+
+                i { border-bottom-color: @no-color; border-right-color: @no-color; }
+            }
+        }
+        &[data-ui-pos="bl"] {
+            & > span {
+                bottom: 100%; right: (@tooltip-arrow-size * 2);
+
+                i { border-bottom-color: @no-color; border-right-color: @no-color; }
+            }
+            .ui-tooltip-content { text-align: right; }
+        }
+
         & > span {
-            top: 100%; left: 50%;
+            display: block; position: absolute; transform: rotate(45deg);
 
-            i { border-top-color: @no-color; border-left-color: @no-color; }
-        }
-        .ui-tooltip-content { text-align: center; }
-    }
-    &[data-ui-pos="b"] {
-        & > span {
-            bottom: 100%; left: 50%;
+            i {
+                box-sizing: content-box; width: @tooltip-arrow-size; height: @tooltip-arrow-size; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
 
-            i { border-bottom-color: @no-color; border-right-color: @no-color; }
-        }
-        .ui-tooltip-content { text-align: center; }
-    }
-    &[data-ui-pos="r"] {
-        & > span {
-            right: 100%; top: 50%;
-
-            i { border-top-color: @no-color; border-right-color: @no-color; }
+                &:not([class*="ui-fill-"]) { background-color: @featured-color; }
+            }
         }
     }
-    &[data-ui-pos="l"] {
-        & > span {
-            left: 100%; top: 50%;
 
-            i { border-bottom-color: @no-color; border-left-color: @no-color; }
-        }
-        .ui-tooltip-content { text-align: right; }
-    }
-
-    &[data-ui-pos="tr"] {
-        & > span {
-            top: 100%; left: (@tooltip-arrow-size * 2);
-
-            i { border-top-color: @no-color; border-left-color: @no-color; }
-        }
-    }
-    &[data-ui-pos="tl"] {
-        & > span {
-            top: 100%; right: (@tooltip-arrow-size * 2);
-
-            i { border-top-color: @no-color; border-left-color: @no-color; }
-        }
-        .ui-tooltip-content { text-align: right; }
-    }
-    &[data-ui-pos="br"] {
-        & > span {
-            bottom: 100%; left: (@tooltip-arrow-size * 2);
-
-            i { border-bottom-color: @no-color; border-right-color: @no-color; }
-        }
-    }
-    &[data-ui-pos="bl"] {
-        & > span {
-            bottom: 100%; right: (@tooltip-arrow-size * 2);
-
-            i { border-bottom-color: @no-color; border-right-color: @no-color; }
-        }
-        .ui-tooltip-content { text-align: right; }
-    }
-
-    & > span {
-        display: block; position: absolute; transform: rotate(45deg);
-
-        i {
-            box-sizing: content-box; width: @tooltip-arrow-size; height: @tooltip-arrow-size; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
-
-            &:not([class*="ui-fill-"]) { background-color: @featured-color; }
-        }
-    }
 }

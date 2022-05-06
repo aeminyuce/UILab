@@ -1,49 +1,53 @@
 /*  dark mode */
 
-& when (@dark-mode = false) {
-    .ui-hidden-light,.ui-visible-dark { display: none !important; }
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-    .ui-darkmode-toggle { display: none !important; }
-}
-& when (@dark-mode = true) {
-    .ui-ie {
+    & when (@dark-mode = false) {
         .ui-hidden-light,.ui-visible-dark { display: none !important; }
-    }
-
-    & when (@dark-mode-auto-switcher = true) {
-        @media (prefers-color-scheme: light) {
-            .ui-hidden-light,.ui-visible-dark { display: none !important; }
-        }
-        @media (prefers-color-scheme: dark) {
-            body { ._color-var(black); }
-
-            .ui-visible-light,.ui-hidden-dark { display: none !important; }
-
-            .ui-invert- {
-                &img { filter: invert(1) hue-rotate(180deg) !important; }
-                &bg { ._bg-var(invert-bg) !important; }
-            }
-        }
 
         .ui-darkmode-toggle { display: none !important; }
     }
-    & when (@dark-mode-auto-switcher = false) {
-        [data-ui-mode="light"] {
+    & when (@dark-mode = true) {
+        .ui-ie {
             .ui-hidden-light,.ui-visible-dark { display: none !important; }
         }
-        [data-ui-mode="dark"] {
-            body { ._color-var(black); }
 
-            .ui-visible-light,.ui-hidden-dark { display: none !important; }
+        & when (@dark-mode-auto-switcher = true) {
+            @media (prefers-color-scheme: light) {
+                .ui-hidden-light,.ui-visible-dark { display: none !important; }
+            }
+            @media (prefers-color-scheme: dark) {
+                body { ._color-var(black); }
 
-            .ui-invert- {
-                &img { filter: invert(1) hue-rotate(180deg) !important; }
-                &bg { ._bg-var(invert-bg) !important; }
+                .ui-visible-light,.ui-hidden-dark { display: none !important; }
+
+                .ui-invert- {
+                    &img { filter: invert(1) hue-rotate(180deg) !important; }
+                    &bg { ._bg-var(invert-bg) !important; }
+                }
+            }
+
+            .ui-darkmode-toggle { display: none !important; }
+        }
+        & when (@dark-mode-auto-switcher = false) {
+            [data-ui-mode="light"] {
+                .ui-hidden-light,.ui-visible-dark { display: none !important; }
+            }
+            [data-ui-mode="dark"] {
+                body { ._color-var(black); }
+
+                .ui-visible-light,.ui-hidden-dark { display: none !important; }
+
+                .ui-invert- {
+                    &img { filter: invert(1) hue-rotate(180deg) !important; }
+                    &bg { ._bg-var(invert-bg) !important; }
+                }
             }
         }
     }
-}
 
-.ui-ie {
-    .ui-darkmode-toggle { &:extend(.ui-ie .ui-hidden-ie); }
+    .ui-ie {
+        .ui-darkmode-toggle { &:extend(.ui-ie .ui-hidden-ie); }
+    }
+
 }

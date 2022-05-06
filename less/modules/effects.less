@@ -27,50 +27,50 @@
     100% { transform: scale(1); }
 }
 
-.ui- {
-    &animate- {
-        &spin { animation: ui-spin 1.15s linear infinite; }
-        &progress { animation: ui-progress 3s linear infinite; }
-        &bounce-x { animation: ui-bounce-x 1.3s linear infinite; }
-        &bounce-y { animation: ui-bounce-y 1.15s linear infinite; }
-        &bounce-z { animation: ui-bounce-z 1s linear infinite; }
-    }
-
-    &no-effects {
-        &,&:before,&:after,*,*:before,*:after { transition-property: none !important; animation: none !important; }
-    }
-    &effects-paused {
-        &,&:before,&:after,*,*:before,*:after { transition-property: none !important; animation-play-state: paused !important; }
-    }
-}
-
-[class*="ui-ease-"],[class*="ui-ease-1st-"] > *,[class*="ui-ease-2nd-"] > * > * { transition-timing-function: ease-out; }
-
-.ui-ease- {
-
-    &color,&1st-color > *,&2nd-color > * > * { transition-property: color; transition-duration: @ease-default; }
-    &width,&1st-width > *,&2nd-width > * > * { transition-property: width; transition-duration: @ease-default; }
-    &height,&1st-height > *,&2nd-height > * > * { transition-property: height; transition-duration: @ease-default; }
-    &bg,&1st-bg > *,&2nd-bg > * > * { transition-property: background-color; transition-duration: @ease-default; }
-    &margin,&1st-margin > *,&2nd-margin > * > * { transition-property: margin; transition-duration: @ease-default; }
-    &border,&1st-border > *,&2nd-border > * > * { transition-property: border-color, border-width; transition-duration: @ease-default; }
-    &position,&1st-position > *,&2nd-position > * > * { transition-property: top, right, bottom, left; transition-duration: @ease-default; }
-    &layout,&1st-layout > *,&2nd-layout > * > * { transition-property: transform, opacity, box-shadow; transition-duration: @ease-default; }
-    &svg,&1st-svg > *,&2nd-svg > * > * { transition-property: fill, stroke, opacity; transition-duration: @ease-default; }
-    &all { transition-property: all; }
-
-    each(@ease-types, {
-        &@{key} {
-            &,&[class*="ui-ease-1st-"] > *,&[class*="ui-ease-2nd-"] > * > * { transition-duration: @value !important; }
-        }
-    });
-
-    &default {
-        &,&[class*="ui-ease-1st-"]> *,&[class*="ui-ease-2nd-"] > * > * { transition-duration: @ease-default !important; transition-timing-function: ease !important; }
-    }
-}
-
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    .ui- {
+        &animate- {
+            &spin { animation: ui-spin 1.15s linear infinite; }
+            &progress { animation: ui-progress 3s linear infinite; }
+            &bounce-x { animation: ui-bounce-x 1.3s linear infinite; }
+            &bounce-y { animation: ui-bounce-y 1.15s linear infinite; }
+            &bounce-z { animation: ui-bounce-z 1s linear infinite; }
+        }
+
+        &no-effects {
+            &,&:before,&:after,*,*:before,*:after { transition-property: none !important; animation: none !important; }
+        }
+        &effects-paused {
+            &,&:before,&:after,*,*:before,*:after { transition-property: none !important; animation-play-state: paused !important; }
+        }
+    }
+
+    [class*="ui-ease-"],[class*="ui-ease-1st-"] > *,[class*="ui-ease-2nd-"] > * > * { transition-timing-function: ease-out; }
+
+    .ui-ease- {
+
+        &color,&1st-color > *,&2nd-color > * > * { transition-property: color; transition-duration: @ease-default; }
+        &width,&1st-width > *,&2nd-width > * > * { transition-property: width; transition-duration: @ease-default; }
+        &height,&1st-height > *,&2nd-height > * > * { transition-property: height; transition-duration: @ease-default; }
+        &bg,&1st-bg > *,&2nd-bg > * > * { transition-property: background-color; transition-duration: @ease-default; }
+        &margin,&1st-margin > *,&2nd-margin > * > * { transition-property: margin; transition-duration: @ease-default; }
+        &border,&1st-border > *,&2nd-border > * > * { transition-property: border-color, border-width; transition-duration: @ease-default; }
+        &position,&1st-position > *,&2nd-position > * > * { transition-property: top, right, bottom, left; transition-duration: @ease-default; }
+        &layout,&1st-layout > *,&2nd-layout > * > * { transition-property: transform, opacity, box-shadow; transition-duration: @ease-default; }
+        &svg,&1st-svg > *,&2nd-svg > * > * { transition-property: fill, stroke, opacity; transition-duration: @ease-default; }
+        &all { transition-property: all; }
+
+        each(@ease-types, {
+            &@{key} {
+                &,&[class*="ui-ease-1st-"] > *,&[class*="ui-ease-2nd-"] > * > * { transition-duration: @value !important; }
+            }
+        });
+
+        &default {
+            &,&[class*="ui-ease-1st-"]> *,&[class*="ui-ease-2nd-"] > * > * { transition-duration: @ease-default !important; transition-timing-function: ease !important; }
+        }
+    }
 
     each(@ease-timings, {
         .ui-@{value} {

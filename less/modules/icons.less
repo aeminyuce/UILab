@@ -2,36 +2,40 @@
 
 @icons-margin-sizes:                    1px 2px 3px 4px 5px 10px;
 
-.ui- {
-    &icon { ._icon(@icon-default-size); vertical-align: middle; display: inline-block; fill: currentColor; stroke: none; }
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-    &icons- {
-        &no-opacity {
-            .ui-icon:not(.ui-opacity-half) { opacity: 1 !important; }
+    .ui- {
+        &icon { ._icon(@icon-default-size); vertical-align: middle; display: inline-block; fill: currentColor; stroke: none; }
+
+        &icons- {
+            &no-opacity {
+                .ui-icon:not(.ui-opacity-half) { opacity: 1 !important; }
+            }
+
+            each(@icons-margin-sizes, {
+                @size: unit(@value);
+
+                &m-@{size}-l .ui-icon { margin-left: @value !important; }
+                &m-@{size}-r .ui-icon { margin-right: @value !important; }
+                &m-@{size}-v .ui-icon { margin-top: @value !important; margin-bottom: @value !important; }
+                &m-@{size}-h .ui-icon { margin-right: @value !important; margin-left: @value !important; }
+            });
+
+            each(@icon-sizes, { // do not merge
+                &@{key} .ui-icon:not([class*="ui-icon-"]) { ._icon(@value) !important; }
+            });
         }
 
-        each(@icons-margin-sizes, {
-            @size: unit(@value);
+        &icon {
+            &-mirror- {
+                &v { transform: scaleY(-1); }
+                &h { transform: scaleX(-1); }
+            }
 
-            &m-@{size}-l .ui-icon { margin-left: @value !important; }
-            &m-@{size}-r .ui-icon { margin-right: @value !important; }
-            &m-@{size}-v .ui-icon { margin-top: @value !important; margin-bottom: @value !important; }
-            &m-@{size}-h .ui-icon { margin-right: @value !important; margin-left: @value !important; }
-        });
-
-        each(@icon-sizes, { // do not merge
-            &@{key} .ui-icon:not([class*="ui-icon-"]) { ._icon(@value) !important; }
-        });
-    }
-
-    &icon {
-        &-mirror- {
-            &v { transform: scaleY(-1); }
-            &h { transform: scaleX(-1); }
+            each(@icon-sizes, { // do not merge
+                &-@{key} { ._icon(@value) !important; }
+            });
         }
-
-        each(@icon-sizes, { // do not merge
-            &-@{key} { ._icon(@value) !important; }
-        });
     }
+
 }

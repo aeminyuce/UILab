@@ -30,111 +30,79 @@
     --ui-table-sidebar-bg: @table-sidebar-bg-dark;
 }
 
-.ui-ease-table {
-    tr { transition-property: background-color; transition-duration: @ease-default; }
-}
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-.ui-table {
-    width: 100%; ._bg-var(card-bg); border-collapse: collapse; border-spacing: 0; caption-side: top;
-
-    &:not(:last-child) { margin-bottom: @highlight-space; }
-
-    &.ui-table-caption-b { caption-side: bottom; }
-    caption { ._color-var(black); font-size: @font-16; text-align: center; ._bg-var(table-caption-bg); padding: @table-padding; }
-
-    th,td { font-weight: @font-normal; vertical-align: top; text-align: left; }
-
-    &:not([class*="ui-table-condensed"]) {
-        th,td { padding: @table-padding; }
-    }
-    &.ui-table-condensed:not(.ui-table-condensed-more) {
-        th,td { padding-top: (@table-padding / 2); padding-bottom: (@table-padding / 2); }
+    .ui-ease-table {
+        tr { transition-property: background-color; transition-duration: @ease-default; }
     }
 
-    &:not(.ui-table-no-sep) {
-        th,td { ._border-var(@dir: border-bottom; @var: table-border-color); }
-    }
+    .ui-table {
+        width: 100%; ._bg-var(card-bg); border-collapse: collapse; border-spacing: 0; caption-side: top;
 
-    .ui-table-nowrap {
-        th,td { white-space: nowrap; text-overflow: ''; overflow: hidden; }
-    }
+        &:not(:last-child) { margin-bottom: @highlight-space; }
 
-    thead {
-        th { font-weight: @font-bold; vertical-align: bottom !important; }
-    }
-    tbody {
-        tr:last-child {
-            th { border-bottom-width: 0; }
+        &.ui-table-caption-b { caption-side: bottom; }
+        caption { ._color-var(black); font-size: @font-16; text-align: center; ._bg-var(table-caption-bg); padding: @table-padding; }
+
+        th,td { font-weight: @font-normal; vertical-align: top; text-align: left; }
+
+        &:not([class*="ui-table-condensed"]) {
+            th,td { padding: @table-padding; }
         }
-    }
-
-    &-sidebar {
-        td {
-            &:first-of-type { font-weight: @font-bold; ._bg-var(table-sidebar-bg); ._border-var(@dir: border-right; @var: table-border-color); }
+        &.ui-table-condensed:not(.ui-table-condensed-more) {
+            th,td { padding-top: (@table-padding / 2); padding-bottom: (@table-padding / 2); }
         }
-        &.ui-align-c {
-            td:not(:first-child) { text-align: center; }
-        }
-    }
 
-    tbody:last-child,tfoot {
+        &:not(.ui-table-no-sep) {
+            th,td { ._border-var(@dir: border-bottom; @var: table-border-color); }
+        }
+
+        .ui-table-nowrap {
+            th,td { white-space: nowrap; text-overflow: ''; overflow: hidden; }
+        }
+
+        thead {
+            th { font-weight: @font-bold; vertical-align: bottom !important; }
+        }
+        tbody {
+            tr:last-child {
+                th { border-bottom-width: 0; }
+            }
+        }
+
+        &-sidebar {
+            td {
+                &:first-of-type { font-weight: @font-bold; ._bg-var(table-sidebar-bg); ._border-var(@dir: border-right; @var: table-border-color); }
+            }
+            &.ui-align-c {
+                td:not(:first-child) { text-align: center; }
+            }
+        }
+
+        tbody:last-child,tfoot {
+            tr {
+                &:last-child {
+                    td { border-bottom: 0; }
+                }
+            }
+        }
         tr {
-            &:last-child {
+            &:last-child:not(:first-child) {
                 td { border-bottom: 0; }
             }
         }
-    }
-    tr {
-        &:last-child:not(:first-child) {
-            td { border-bottom: 0; }
+
+        &:not(.ui-table-sidebar).ui-align-c {
+            td,th { text-align: center; }
         }
-    }
 
-    &:not(.ui-table-sidebar).ui-align-c {
-        td,th { text-align: center; }
-    }
+        &.ui-border,&[class*="ui-border-"] { ._border-color-var(table-border-color); }
 
-    &.ui-border,&[class*="ui-border-"] { ._border-color-var(table-border-color); }
-
-    &-valign {
-        td,th { vertical-align: middle !important; }
-    }
-
-    &-scroll {
-        width: 100%; overflow-x: auto;
-
-        .ui-mobile & { -webkit-overflow-scrolling: touch; }
-
-        .ui-table { margin-bottom: 0 !important; }
-        & > .ui-table {
-            tr > * { white-space: nowrap; }
+        &-valign {
+            td,th { vertical-align: middle !important; }
         }
-    }
 
-    &-striped {
-        tr:nth-child(even):not([class*="ui-fill-"]) { ._bg-var(table-stripe-bg); }
-    }
-
-    &-hover {
-        .ui-desktop & {
-            tbody {
-                tr:not([class*="ui-fill-"]):hover { ._bg-var(table-hover-bg); }
-            }
-        }
-    }
-
-    &-border {
-        ._border-var(@var: table-border-color);
-
-        th,td {
-            &:not(:last-child) { ._border-var(@dir: border-right; @var: table-border-color); }
-        }
-    }
-}
-
-@media (@md-finish) {
-    .ui-table {
-        &-fluid {
+        &-scroll {
             width: 100%; overflow-x: auto;
 
             .ui-mobile & { -webkit-overflow-scrolling: touch; }
@@ -144,5 +112,41 @@
                 tr > * { white-space: nowrap; }
             }
         }
+
+        &-striped {
+            tr:nth-child(even):not([class*="ui-fill-"]) { ._bg-var(table-stripe-bg); }
+        }
+
+        &-hover {
+            .ui-desktop & {
+                tbody {
+                    tr:not([class*="ui-fill-"]):hover { ._bg-var(table-hover-bg); }
+                }
+            }
+        }
+
+        &-border {
+            ._border-var(@var: table-border-color);
+
+            th,td {
+                &:not(:last-child) { ._border-var(@dir: border-right; @var: table-border-color); }
+            }
+        }
     }
+
+    @media (@md-finish) {
+        .ui-table {
+            &-fluid {
+                width: 100%; overflow-x: auto;
+
+                .ui-mobile & { -webkit-overflow-scrolling: touch; }
+
+                .ui-table { margin-bottom: 0 !important; }
+                & > .ui-table {
+                    tr > * { white-space: nowrap; }
+                }
+            }
+        }
+    }
+
 }

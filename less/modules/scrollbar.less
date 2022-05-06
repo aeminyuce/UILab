@@ -35,32 +35,36 @@
     --ui-scrollbar-thumb-bg-active: @scrollbar-thumb-bg-active-dark;
 }
 
-.ui-desktop {
-    ::-webkit-scrollbar { width: @scrollbar-size; height: @scrollbar-size; ._bg-var(scrollbar-scroll-bg); }
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-    .ui-scrollbar-faded {
-        &::-webkit-scrollbar { ._bg-var(scrollbar-scroll-faded-bg); }
-    }
+    .ui-desktop {
+        ::-webkit-scrollbar { width: @scrollbar-size; height: @scrollbar-size; ._bg-var(scrollbar-scroll-bg); }
 
-    body::-webkit-scrollbar { width: @page-scrollbar-size; height: @page-scrollbar-size; }
+        .ui-scrollbar-faded {
+            &::-webkit-scrollbar { ._bg-var(scrollbar-scroll-faded-bg); }
+        }
 
-    ::-webkit-scrollbar-thumb {
-        ._bg-var(scrollbar-thumb-bg);
+        body::-webkit-scrollbar { width: @page-scrollbar-size; height: @page-scrollbar-size; }
 
-        &:hover { ._bg-var(scrollbar-thumb-hover-bg); }
-        &:active { ._bg-var(scrollbar-thumb-bg-active); }
-    }
+        ::-webkit-scrollbar-thumb {
+            ._bg-var(scrollbar-thumb-bg);
 
-    .ui-round {
-        &::-webkit-scrollbar-thumb { border-radius: @round; }
-    }
+            &:hover { ._bg-var(scrollbar-thumb-hover-bg); }
+            &:active { ._bg-var(scrollbar-thumb-bg-active); }
+        }
 
-    [class*="ui-fill-dark-"] {
-        &::-webkit-scrollbar-thumb,::-webkit-scrollbar-thumb {
-            background-color: @scrollbar-thumb-bg-dark;
+        .ui-round {
+            &::-webkit-scrollbar-thumb { border-radius: @round; }
+        }
 
-            &:hover { background-color: @scrollbar-thumb-hover-bg-dark; }
-            &:active { background-color: @scrollbar-thumb-bg-active-dark; }
+        [class*="ui-fill-dark-"] {
+            &::-webkit-scrollbar-thumb,::-webkit-scrollbar-thumb {
+                background-color: @scrollbar-thumb-bg-dark;
+
+                &:hover { background-color: @scrollbar-thumb-hover-bg-dark; }
+                &:active { background-color: @scrollbar-thumb-bg-active-dark; }
+            }
         }
     }
+
 }

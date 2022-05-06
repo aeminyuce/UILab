@@ -21,71 +21,75 @@
     --ui-steps-border: @steps-border-dark;
 }
 
-.ui-steps-bar {
-    list-style: none; display: flex;
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-    &:not([class*="ui-text"]) { color: @green; }
-    li {
-        font-size: @font-11; line-height: normal; text-align: center; position: relative; flex-grow: 1;
+    .ui-steps-bar {
+        list-style: none; display: flex;
 
-        html:not(.ui-ie) & { flex-basis: 100%; }
-        &:before {
-            content: ""; box-sizing: border-box; font-weight: @font-bold; font-size: @font-11; text-align: center; ._bg-var(body-bg); width: @steps-active-size; height: @steps-active-size; margin: @steps-margin-v auto; display: block; border: @steps-line-size solid @no-color; border-radius: 50%; position: relative; z-index: 1;
+        &:not([class*="ui-text"]) { color: @green; }
+        li {
+            font-size: @font-11; line-height: normal; text-align: center; position: relative; flex-grow: 1;
 
-            .ui-card & { ._bg-var(card-bg); }
-        }
-        &:after { content: ""; width: 100%; height: @steps-line-size; background-color: @green; position: absolute; top: (@steps-margin-v + (@steps-active-size - @steps-line-size) / 2); left: -50%; opacity: @steps-icon-opacity; }
-        &:first-child {
-            &:after { content: none; }
-        }
-
-        &.ui-active {
+            html:not(.ui-ie) & { flex-basis: 100%; }
             &:before {
-                border-color: currentColor;
+                content: ""; box-sizing: border-box; font-weight: @font-bold; font-size: @font-11; text-align: center; ._bg-var(body-bg); width: @steps-active-size; height: @steps-active-size; margin: @steps-margin-v auto; display: block; border: @steps-line-size solid @no-color; border-radius: 50%; position: relative; z-index: 1;
 
-                .ui-card & { ._bg-var(card-bg) !important; }
+                .ui-card & { ._bg-var(card-bg); }
             }
-            & ~ li {
-                ._color-var(steps-inactive-color);
+            &:after { content: ""; width: 100%; height: @steps-line-size; background-color: @green; position: absolute; top: (@steps-margin-v + (@steps-active-size - @steps-line-size) / 2); left: -50%; opacity: @steps-icon-opacity; }
+            &:first-child {
+                &:after { content: none; }
+            }
 
+            &.ui-active {
                 &:before {
-                    width: @steps-passive-size; height: @steps-passive-size; ._bg-var(body-bg); margin: (@steps-margin-v + (@steps-active-size - @steps-passive-size) / 2) auto; ._border-color-var(steps-border);
+                    border-color: currentColor;
+
+                    .ui-card & { ._bg-var(card-bg) !important; }
+                }
+                & ~ li {
+                    ._color-var(steps-inactive-color);
+
+                    &:before {
+                        width: @steps-passive-size; height: @steps-passive-size; ._bg-var(body-bg); margin: (@steps-margin-v + (@steps-active-size - @steps-passive-size) / 2) auto; ._border-color-var(steps-border);
+
+                        .ui-card & { ._bg-var(card-bg); ._border-color-var(steps-border); }
+                    }
+                    &:after { ._bg-var(steps-border); left: -50%; }
+                }
+            }
+
+            & > span { width: @steps-active-size; height: @steps-active-size; display: block; position: absolute; top: @steps-margin-v; left: 50%; z-index: 2; transform: translateX(-50%); }
+        }
+        &:not(.ui-steps-icon) {
+            li {
+                &:before { background-color: @green; }
+                &.ui-active {
+                    &:before { ._bg-var(body-bg); }
+                }
+            }
+        }
+        &[class*="ui-text"] {
+            li {
+                &:before { background-color: currentColor; border-color: currentColor; }
+                &:after { background-color: currentColor; }
+            }
+        }
+
+        &.ui-steps-icon {
+            li {
+                &:before {
+                    ._bg-var(body-bg); ._border-color-var(body-bg);
 
                     .ui-card & { ._bg-var(card-bg); ._border-color-var(steps-border); }
                 }
-                &:after { ._bg-var(steps-border); left: -50%; }
-            }
-        }
 
-        & > span { width: @steps-active-size; height: @steps-active-size; display: block; position: absolute; top: @steps-margin-v; left: 50%; z-index: 2; transform: translateX(-50%); }
-    }
-    &:not(.ui-steps-icon) {
-        li {
-            &:before { background-color: @green; }
-            &.ui-active {
-                &:before { ._bg-var(body-bg); }
+                & > .ui-icon { color: currentColor; width: @steps-active-size; height: @steps-active-size; display: block; position: absolute; top: @steps-margin-v; left: 50%; z-index: 2; transform: translateX(-50%); }
+                &.ui-active ~ li {
+                    & > .ui-icon { opacity: 0; }
+                }
             }
         }
     }
-    &[class*="ui-text"] {
-        li {
-            &:before { background-color: currentColor; border-color: currentColor; }
-            &:after { background-color: currentColor; }
-        }
-    }
 
-    &.ui-steps-icon {
-        li {
-            &:before {
-                ._bg-var(body-bg); ._border-color-var(body-bg);
-
-                .ui-card & { ._bg-var(card-bg); ._border-color-var(steps-border); }
-            }
-
-            & > .ui-icon { color: currentColor; width: @steps-active-size; height: @steps-active-size; display: block; position: absolute; top: @steps-margin-v; left: 50%; z-index: 2; transform: translateX(-50%); }
-            &.ui-active ~ li {
-                & > .ui-icon { opacity: 0; }
-            }
-        }
-    }
 }

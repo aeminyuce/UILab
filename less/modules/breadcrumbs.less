@@ -13,35 +13,39 @@
     --ui-breadcrumbs-sep-color: @breadcrumbs-sep-color-dark;
 }
 
-.ui-breadcrumbs {
-    &:not(:last-child) { margin-bottom: (@highlight-space / 2); }
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-    & > ul {
-        &,& > ul { list-style: none; padding: 0; margin: 0; }
+    .ui-breadcrumbs {
+        &:not(:last-child) { margin-bottom: (@highlight-space / 2); }
 
-        & > li {
-            &:not(:last-child) { margin-right: @breadcrumbs-sep-size; }
-
-            & > a:not(.ui-btn) { ._color-var(black); text-decoration: none; }
-            &,& > a,& > b { display: inline-block; }
-        }
-    }
-
-    &:not(.ui-breadcrumbs-no-sep) {
         & > ul {
+            &,& > ul { list-style: none; padding: 0; margin: 0; }
+
             & > li {
-                &:not(:first-child):before { content: "\@{breadcrumbs-sep}"; ._color-var(breadcrumbs-sep-color); font-size: @font-18; vertical-align: middle; line-height: 0; margin: 0 (@breadcrumbs-sep-size + 3) 0 (@breadcrumbs-sep-size - 2); display: inline-block; }
+                &:not(:last-child) { margin-right: @breadcrumbs-sep-size; }
+
+                & > a:not(.ui-btn) { ._color-var(black); text-decoration: none; }
+                &,& > a,& > b { display: inline-block; }
+            }
+        }
+
+        &:not(.ui-breadcrumbs-no-sep) {
+            & > ul {
+                & > li {
+                    &:not(:first-child):before { content: "\@{breadcrumbs-sep}"; ._color-var(breadcrumbs-sep-color); font-size: @font-18; vertical-align: middle; line-height: 0; margin: 0 (@breadcrumbs-sep-size + 3) 0 (@breadcrumbs-sep-size - 2); display: inline-block; }
+                }
             }
         }
     }
-}
 
-@media (@xs-finish) {
-    .ui-breadcrumbs {
-        text-align: center; margin-top: @breadcrumbs-sep-size;
+    @media (@xs-finish) {
+        .ui-breadcrumbs {
+            text-align: center; margin-top: @breadcrumbs-sep-size;
 
-        & > ul {
-            & > li { margin-bottom: @breadcrumbs-sep-size; }
+            & > ul {
+                & > li { margin-bottom: @breadcrumbs-sep-size; }
+            }
         }
     }
+
 }

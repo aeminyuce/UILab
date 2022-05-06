@@ -1,17 +1,21 @@
 /* user agents */
 
-.ui-mobile {
-    * { -webkit-tap-highlight-color: @no-color; }
-}
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-.ui-ios { -webkit-text-size-adjust: 100%; }
-
-.ui-ie {
-    .ui-hidden-ie { display: none !important; }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-    .ui-mac.ui-chrome {
-        body { backface-visibility: hidden; perspective: 1000; } // chrome high pixel ratio display fix
+    .ui-mobile {
+        * { -webkit-tap-highlight-color: @no-color; }
     }
+
+    .ui-ios { -webkit-text-size-adjust: 100%; }
+
+    .ui-ie {
+        .ui-hidden-ie { display: none !important; }
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+        .ui-mac.ui-chrome {
+            body { backface-visibility: hidden; perspective: 1000; } // chrome high pixel ratio display fix
+        }
+    }
+
 }

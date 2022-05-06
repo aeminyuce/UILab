@@ -8,11 +8,15 @@
 @stripe-light-bg:                       linear-gradient(45deg, @no-color 25%, fade(@white, 35%) 25%, fade(@white, 35%) 50%, @no-color 50%, @no-color 75%, fade(@white, 35%) 75%);
 @stripe-dark-bg:                        linear-gradient(45deg, @no-color 25%, fade(@black, 15%) 25%, fade(@black, 15%) 50%, @no-color 50%, @no-color 75%, fade(@black, 15%) 75%);
 
-.ui-stripe- {
-    &light { background-image: @stripe-light-bg; background-size: @stripes-default-size @stripes-default-size; }
-    &dark { background-image: @stripe-dark-bg; background-size: @stripes-default-size @stripes-default-size; }
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-    &lg { background-size: @stripes-lg-size @stripes-lg-size; }
-    &sm { background-size: @stripes-sm-size @stripes-sm-size; }
-    &xs { background-size: @stripes-xs-size @stripes-xs-size; }
+    .ui-stripe- {
+        &light { background-image: @stripe-light-bg; background-size: @stripes-default-size @stripes-default-size; }
+        &dark { background-image: @stripe-dark-bg; background-size: @stripes-default-size @stripes-default-size; }
+
+        &lg { background-size: @stripes-lg-size @stripes-lg-size; }
+        &sm { background-size: @stripes-sm-size @stripes-sm-size; }
+        &xs { background-size: @stripes-xs-size @stripes-xs-size; }
+    }
+
 }

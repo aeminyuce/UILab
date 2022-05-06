@@ -18,36 +18,40 @@
     --ui-map-path-fill-hover: @map-path-fill-hover-dark;
 }
 
-.ui-map {
-    position: relative;
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-    svg {
-        width: 100%; height: auto; margin-right: auto; margin-left: auto; display: block;
+    .ui-map {
+        position: relative;
 
-        html:not(.ui-ie) & { height: auto; }
-        .ui-ie & { height: @map-height-for-ie; }
+        svg {
+            width: 100%; height: auto; margin-right: auto; margin-left: auto; display: block;
 
-        path {
-            stroke-width: @map-inner-stroke-width;
+            html:not(.ui-ie) & { height: auto; }
+            .ui-ie & { height: @map-height-for-ie; }
 
-            &:not([fill]) {
-                ._fill-var(map-path-fill);
+            path {
+                stroke-width: @map-inner-stroke-width;
 
-                &:hover { ._fill-var(map-path-fill-hover); }
+                &:not([fill]) {
+                    ._fill-var(map-path-fill);
+
+                    &:hover { ._fill-var(map-path-fill-hover); }
+                }
+                &:not([stroke]) {
+                    ._stroke-var(body-bg);
+
+                    .ui-card & { ._stroke-var(card-bg); }
+                }
+
+                &.ui-active {
+                    &:not([fill]) { fill: currentColor; }
+                    &:hover { opacity: 1 !important; }
+                }
+
+                &[data-ui-href] { cursor: pointer; }
             }
-            &:not([stroke]) {
-                ._stroke-var(body-bg);
 
-                .ui-card & { ._stroke-var(card-bg); }
-            }
-
-            &.ui-active {
-                &:not([fill]) { fill: currentColor; }
-                &:hover { opacity: 1 !important; }
-            }
-
-            &[data-ui-href] { cursor: pointer; }
         }
-
     }
+
 }

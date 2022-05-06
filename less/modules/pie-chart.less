@@ -18,67 +18,71 @@
 }
 @keyframes ui-pie-spin-r { 0% { -ms-transform: rotate(0deg); transform: rotate(0deg); } }
 
-.ui-ease-pie-chart {
-    li,& > div span { transition-property: opacity; transition-duration: (@ease-default * 2); }
-}
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-.ui-pie-chart {
-    position: relative; @no-selection();
-
-    &[data-ui-info] {
-        &:before { content: attr(data-ui-info); color: @black; font-weight: @font-bold; font-size: @pie-chart-title-text-size; text-align: center; line-height: @pie-chart-title-text-size; min-width: (@pie-chart-title-height - @pie-chart-title-padding); min-height: (@pie-chart-title-height - @pie-chart-title-padding); background: @white; padding: @pie-chart-title-padding (@pie-chart-title-padding * 2); display: inline-block; border-radius: @circle; position: absolute; top: 50%; left: 50%; z-index: 2; transform: translate(-50%,-50%); }
+    .ui-ease-pie-chart {
+        li,& > div span { transition-property: opacity; transition-duration: (@ease-default * 2); }
     }
-    & > div {
-        span {
-            display: block; position: absolute; top: 50%; right: 0; left: 50%; z-index: 1; transform-origin: left top;
 
-            i { color: @black-50; font-size: @pie-chart-info-text-size; font-style: normal; font-weight: @font-bold; line-height: @pie-chart-info-text-size; background: @white; padding: @pie-chart-info-padding (@pie-chart-info-padding * 2); margin-right: @pie-chart-info-inner-space; border-radius: @circle; float: right; }
+    .ui-pie-chart {
+        position: relative; @no-selection();
+
+        &[data-ui-info] {
+            &:before { content: attr(data-ui-info); color: @black; font-weight: @font-bold; font-size: @pie-chart-title-text-size; text-align: center; line-height: @pie-chart-title-text-size; min-width: (@pie-chart-title-height - @pie-chart-title-padding); min-height: (@pie-chart-title-height - @pie-chart-title-padding); background: @white; padding: @pie-chart-title-padding (@pie-chart-title-padding * 2); display: inline-block; border-radius: @circle; position: absolute; top: 50%; left: 50%; z-index: 2; transform: translate(-50%,-50%); }
         }
-    }
-    &:not(.ui-open-ease) {
         & > div {
-            span { opacity: 0; }
-        }
-    }
+            span {
+                display: block; position: absolute; top: 50%; right: 0; left: 50%; z-index: 1; transform-origin: left top;
 
-    ul {
-        list-style: none; padding: 0; margin: 0; overflow: hidden; display: block; border-radius: 50%; position: relative;
-
-        &:after { content: ""; background-color: currentColor; display: block; border-radius: 50%; position: absolute; top: @pie-chart-back-inner-space; right: @pie-chart-back-inner-space; bottom: @pie-chart-back-inner-space; left: @pie-chart-back-inner-space; opacity: @pie-chart-back-opacity; }
-    }
-
-    li {
-        width: 100%; height: 100%; border-radius: 50%; z-index: 1;
-
-        &:first-child { position: relative; }
-        &:not(:first-child) { position: absolute; top: 0; left: 0; }
-
-        span {
-            width: 50%; height: 100%; display: block; position: absolute; top: 0;
-
-            b { background-color: currentColor; width: 100%; height: 100%; position: absolute; }
-        }
-        .ui-pie-l {
-            left: 0;
-
-            b { left: 100%; border-radius: 0 @circle @circle 0; -ms-transform-origin: left; transform-origin: left; }
-        }
-        .ui-pie-r {
-            overflow: hidden; left: 50%;
-
-            b { left: -100%; border-radius: @circle 0 0 @circle; -ms-transform: rotate(180deg); transform: rotate(180deg); -ms-transform-origin: right; transform-origin: right; }
-        }
-    }
-    &:not(.ui-open) {
-        li { opacity: 0; }
-    }
-    &.ui-open {
-        li {
-            .ui-pie-l {
-                b { animation: ui-pie-spin-l 1.6s ease-out forwards; }
-                & + .ui-pie-r b { animation: ui-pie-spin-r .8s ease-in forwards; }
+                i { color: @black-50; font-size: @pie-chart-info-text-size; font-style: normal; font-weight: @font-bold; line-height: @pie-chart-info-text-size; background: @white; padding: @pie-chart-info-padding (@pie-chart-info-padding * 2); margin-right: @pie-chart-info-inner-space; border-radius: @circle; float: right; }
             }
-            .ui-pie-r b { animation: ui-pie-spin-r 1.6s ease-in forwards; }
+        }
+        &:not(.ui-open-ease) {
+            & > div {
+                span { opacity: 0; }
+            }
+        }
+
+        ul {
+            list-style: none; padding: 0; margin: 0; overflow: hidden; display: block; border-radius: 50%; position: relative;
+
+            &:after { content: ""; background-color: currentColor; display: block; border-radius: 50%; position: absolute; top: @pie-chart-back-inner-space; right: @pie-chart-back-inner-space; bottom: @pie-chart-back-inner-space; left: @pie-chart-back-inner-space; opacity: @pie-chart-back-opacity; }
+        }
+
+        li {
+            width: 100%; height: 100%; border-radius: 50%; z-index: 1;
+
+            &:first-child { position: relative; }
+            &:not(:first-child) { position: absolute; top: 0; left: 0; }
+
+            span {
+                width: 50%; height: 100%; display: block; position: absolute; top: 0;
+
+                b { background-color: currentColor; width: 100%; height: 100%; position: absolute; }
+            }
+            .ui-pie-l {
+                left: 0;
+
+                b { left: 100%; border-radius: 0 @circle @circle 0; -ms-transform-origin: left; transform-origin: left; }
+            }
+            .ui-pie-r {
+                overflow: hidden; left: 50%;
+
+                b { left: -100%; border-radius: @circle 0 0 @circle; -ms-transform: rotate(180deg); transform: rotate(180deg); -ms-transform-origin: right; transform-origin: right; }
+            }
+        }
+        &:not(.ui-open) {
+            li { opacity: 0; }
+        }
+        &.ui-open {
+            li {
+                .ui-pie-l {
+                    b { animation: ui-pie-spin-l 1.6s ease-out forwards; }
+                    & + .ui-pie-r b { animation: ui-pie-spin-r .8s ease-in forwards; }
+                }
+                .ui-pie-r b { animation: ui-pie-spin-r 1.6s ease-in forwards; }
+            }
         }
     }
+
 }

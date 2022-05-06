@@ -10,28 +10,32 @@
 
 @top-button-slide-pos:                  right; // right, bottom
 
-.ui-top-button {
-    text-align: center; width: @top-button-size; height: @top-button-size; ._bg-var(btn-bg); display: none; border: 0; position: fixed; right: @top-button-position-r; bottom: @top-button-position-b; z-index: @top-button-z-index; opacity: 0; cursor: pointer;
+& when (@referenceCompiling = false) { // not compiled when reference importing
 
-    & when (@top-button-slide-pos = right) { transform: translateX((@top-button-size + (@top-button-position-r * 2))); }
-    & when (@top-button-slide-pos = bottom) { transform: translateY((@top-button-size + (@top-button-position-b * 2))); }
+    .ui-top-button {
+        text-align: center; width: @top-button-size; height: @top-button-size; ._bg-var(btn-bg); display: none; border: 0; position: fixed; right: @top-button-position-r; bottom: @top-button-position-b; z-index: @top-button-z-index; opacity: 0; cursor: pointer;
 
-    &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
-    &.ui-open {
-        display: block;
+        & when (@top-button-slide-pos = right) { transform: translateX((@top-button-size + (@top-button-position-r * 2))); }
+        & when (@top-button-slide-pos = bottom) { transform: translateY((@top-button-size + (@top-button-position-b * 2))); }
 
-        &-ease { opacity: 1; transform: translateX(0); }
-    }
+        &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
+        &.ui-open {
+            display: block;
 
-    .ui-icon { ._color-var(black); }
+            &-ease { opacity: 1; transform: translateX(0); }
+        }
 
-    .ui-desktop & {
-        &:hover {
-            .ui-icon { transform: translateY(@top-button-hover-icon-slide); }
+        .ui-icon { ._color-var(black); }
+
+        .ui-desktop & {
+            &:hover {
+                .ui-icon { transform: translateY(@top-button-hover-icon-slide); }
+            }
         }
     }
-}
 
-@media (max-width: @layout-min) {
-    .ui-top-button { display: none !important; }
+    @media (max-width: @layout-min) {
+        .ui-top-button { display: none !important; }
+    }
+
 }
