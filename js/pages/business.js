@@ -1,14 +1,6 @@
 /* business */
 
 // settings
-ui.globals.xl = 1538; // >= 16"
-ui.globals.lg = 1268; // <= 14"
-
-ui.effects.pauseResize = true;
-
-ui.tooltip.stylesTarget = 'ui-round ui-ease-tooltip ui-theme-sub ui-fill-dark-100';
-ui.tooltip.stylesArrow = 'ui-fill-dark-100';
-
 ui.topButton.stylesTarget = 'ui-circle ui-ease-layout';
 
 // layout

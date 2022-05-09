@@ -44,6 +44,7 @@
     include ('../iconlist.php');
 
     // pages
+    include ('../pages/business.php');
     include ('../pages/dashboard.php');
     include ('../pages/landing-page.php');
     include ('../pages/login-page.php');
