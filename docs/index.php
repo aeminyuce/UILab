@@ -1,6 +1,9 @@
 <?php
     header('Content-Type: text/html; charset=utf-8');
 
+    // controlling default dark mode button
+    $defaultDarkModeBtn = true;
+
     // checking dark mode with cookie
     if (isset($_COOKIE["ui-darkMode"]))
     {
@@ -87,6 +90,9 @@
 
         $page = $_GET["l"];
         include ($page.'.php');
+
+        // controlling default dark mode button
+        if ($defaultDarkModeBtn) {
 ?>
 
 <button title="Toggle Dark Mode" data-ui-tooltip data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-lg ui-btn-square ui-round ui-icons-no-opacity ui-ease-btn ui-set-fixed ui-set-r" style="bottom: 88px;right: 15px;">
@@ -94,6 +100,8 @@
     <svg class="ui-icon ui-visible-light"><use href="../dist/icons.svg#sun"/></svg>
 </button>
 <?php
+        }
+
     } else {
 ?>
     <!-- header -->
