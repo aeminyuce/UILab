@@ -2,14 +2,6 @@
     // hide default dark mode button
     $defaultDarkModeBtn = false;
 
-    // cookie: dark mode
-    $mode = 'light';
-
-    if (isset($_COOKIE["ui-darkMode"]))
-    {
-        $mode = $_COOKIE["ui-darkMode"];
-    }
-
     // cookie: menu
     $menuToggle = '';
     $menuIcon = 'left';
@@ -34,7 +26,7 @@
     <div class="ui-col-static ui-no-fluid ui-full-h">
 
         <!-- left panel -->
-        <div class="ui-col-panel-l <?php echo $menuToggle; ?>"> <!-- cookie: menü kontrolü -->
+        <div class="ui-col-panel-l <?php echo $menuToggle; ?>"> <!-- cookie: menu -->
             <div class="panel-l ui-sidebar-add-l ui-ease-width">
 
                 <div class="ui-col-static ui-no-fluid ui-tab-holder ui-ease-tab ui-ease-1st-btn" data-ui-classes="ui-btn-visible">
@@ -47,13 +39,13 @@
                             <!-- toggle sidebar -->
                             <button title="Menü Daralt/Genişlet" class="panel-l-toggle ui-btn ui-btn-ghost ui-btn-square ui-m-10-b ui-ease-btn ui-visible-xl">
                                 <svg class="ui-icon ui-no-opacity">
-                                    <use href="../dist/icons.svg#angle-<?php echo $menuIcon ?>"></use> <!-- cookie: menü kontrolü -->
+                                    <use href="../dist/icons.svg#angle-<?php echo $menuIcon ?>"></use> <!-- cookie: menu -->
                                 </svg>
                             </button>
 
                             <!-- buttons -->
                             <div class="ease-1st-btn">
-                                <button title="İş Sayıları" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square<?php echo $menuActiveBtn; ?>"> <!-- cookie: menü kontrolü -->
+                                <button title="İş Sayıları" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square<?php echo $menuActiveBtn; ?>"> <!-- cookie: menu -->
                                     <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#tachometer"></use></svg>
                                 </button>
 
