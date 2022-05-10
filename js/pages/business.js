@@ -286,6 +286,7 @@ ui.topButton.stylesTarget = 'ui-circle ui-ease-layout';
                     // change icon
                     leftPanelToggleIcon.innerHTML = '<use href="' + ui.globals.iconSrc + '#' + iconName + '"></use>';
 
+                    ui.lineChart.Init(ui.lineChart.nameLoaded, true); // resize loaded charts
 
                 }, ui.globals.ease);
 

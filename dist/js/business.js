@@ -153,6 +153,7 @@ ui.topButton.stylesTarget = 'ui-circle ui-ease-layout';
 
         ui.toggleClass(leftPanelHolder, nameToggleMenu);
         leftPanelToggleIcon.innerHTML = '<use href="' + ui.globals.iconSrc + '#' + iconName + '"></use>';
+        ui.lineChart.Init(ui.lineChart.nameLoaded, true);
       }, ui.globals.ease);
     });
   };
