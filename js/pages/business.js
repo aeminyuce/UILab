@@ -3,6 +3,11 @@
 // settings
 ui.topButton.stylesTarget = 'ui-circle ui-ease-layout';
 
+ui.lineChart.rowsHeight = 80;
+ui.lineChart.top = 10;
+ui.lineChart.showGrid = false;
+ui.lineChart.gridStroke = 0;
+
 // layout
 (() => {
 

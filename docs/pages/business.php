@@ -53,9 +53,6 @@
                                     <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#briefcase"></use></svg>
                                 </button>
 
-                                <a title="Mobil İmza" href="#" data-ui-tooltip="r" data-ui-only="desktop" class="ui-btn ui-btn-ghost ui-btn-square"> <!-- link -->
-                                    <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#mobile-write"></use></svg>
-                                </a>
                                 <button title="Muhasebe" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square">
                                     <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#wallet"></use></svg>
                                 </button>
@@ -109,7 +106,7 @@
                                 </form>
 
                                 <div class="ui-p-10-h">İş Sayılarım</div>
-                                <div class="ui-row ui-row-gap-xs ui-no-fluid ui-align-c ui-m-10 ui-theme-base ui-ease-2nd-btn">
+                                <div class="ui-row ui-row-gap-sm ui-no-fluid ui-align-c ui-m-10 ui-theme-base ui-ease-2nd-btn">
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>32</span>
@@ -173,10 +170,16 @@
                                             <i>Gönderilecek</i>
                                         </button>
                                     </div>
+                                    <div class="ui-col-4">
+                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
+                                            <svg class="ui-icon"><use href="../dist/icons.svg#flag"></use></svg>
+                                            <i>Raporlaşmış</i>
+                                        </button>
+                                    </div>
                                 </div>
 
                                 <div class="ui-p-10-h">Şirket İş Sayıları</div>
-                                <div class="ui-row ui-row-gap-xs ui-no-fluid ui-align-c ui-m-10 ui-ease-2nd-btn">
+                                <div class="ui-row ui-row-gap-sm ui-no-fluid ui-align-c ui-m-10 ui-ease-2nd-btn">
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi">
                                             <span>416</span>
@@ -483,7 +486,7 @@
                 </header>
 
                 <!-- pages -->
-                <div class="page-middle ui-fixed ui-fixed-xl ui-theme-base">
+                <div class="page-middle ui-fixed ui-fixed-xl">
                     <div class="ui-row">
 
                         <div class="ui-col-static">
@@ -493,15 +496,89 @@
 
                                     <!-- contents -->
                                     <div class="ui-row">
+                                        <div class="ui-col-12 ui-no-p">
+                                            <div class="ui-carousel" data-ui-col-xl="3" data-ui-col-lg="2" data-ui-col="2" data-ui-col-md="2" data-ui-col-sm="1" data-ui-col-xs="1">
+                                                <div class="ui-carousel-slider ui-icons-m-5-r ui-ease-layout ui-ease-slow ui-ease-in-out">
+
+                                                    <div class="ui-carousel-content ui-p-10 ui-theme-yellow">
+                                                        <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
+                                                            <div class="ui-col-static ui-no-fluid">
+                                                                <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
+                                                                    <div class="ui-col-12">
+                                                                        <div class="ui-font-18">Pending</div>
+                                                                        <span class="ui-color-black-25 ui-font-16">Total: 45%</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ui-col-100 ui-align-r">
+                                                                    <span class="ui-font-38 ui-text">157</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ui-progress-bar ui-m-15-t ui-round">
+                                                                <span class="ui-fill-dark-100 ui-stripe-light" style="width: 45%;"></span>
+                                                            </div>
+                                                            <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Pending for the transaction.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ui-carousel-content ui-p-10 ui-theme-yellow">
+                                                        <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
+                                                            <div class="ui-col-static ui-no-fluid">
+                                                                <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
+                                                                    <div class="ui-col-12">
+                                                                        <div class="ui-font-18">Paused</div>
+                                                                        <span class="ui-color-black-25 ui-font-16">Total: 5%</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ui-col-100 ui-align-r">
+                                                                    <span class="ui-font-38 ui-text">23</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ui-progress-bar ui-m-15-t ui-round">
+                                                                <span class="ui-fill-dark-100 ui-stripe-light" style="width: 5%;"></span>
+                                                            </div>
+                                                            <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Paused for the some reasons.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ui-carousel-content ui-p-10 ui-theme-green">
+                                                        <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
+                                                            <div class="ui-col-static ui-no-fluid">
+                                                                <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
+                                                                    <div class="ui-col-12">
+                                                                        <div class="ui-font-18">Completed</div>
+                                                                        <span class="ui-color-black-25 ui-font-16">Total: 80%</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ui-col-100 ui-align-r">
+                                                                    <span class="ui-font-38 ui-text">256</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ui-progress-bar ui-m-15-t ui-round">
+                                                                <span class="ui-fill-dark-100 ui-stripe-light" style="width: 80%;"></span>
+                                                            </div>
+                                                            <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Reached for the expert.</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="ui-carousel-nav ui-no-m-t ui-m-10-b ui-ease-1st-btn">
+                                                    <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square ui-circle">
+                                                        <svg class="ui-icon ui-m-3-r"><use href="../dist/icons.svg#angle-left"/></svg>
+                                                    </button>
+                                                    <span class="ui-carousel-dots ui-color-black-25"></span>
+                                                    <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square ui-circle">
+                                                        <svg class="ui-icon ui-m-3-l"><use href="../dist/icons.svg#angle-right"/></svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="ui-col-8">
                                             <div class="ui-card ui-full-h ui-round ui-shadow-lg">
                                                 <div class="ui-card-side ui-p-15 ui-border-b">
                                                     <h4 class="ui-h4">İş Yoğunluk Grafiği</h4>
                                                 </div>
                                                 <div class="ui-card-side ui-p-15">
-                                                    <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,25" data-ui-step="6"
-                                                        data-ui-x="01.12.2019,02.12.2019,03.12.2019,04.12.2019,05.12.2019,06.12.2019,07.12.2019,08.12.2019,09.12.2019,10.12.2019,11.12.2019,12.12.2019,13.12.2019,14.12.2019,15.12.2019,16.12.2019,17.12.2019,18.12.2019,19.12.2019,20.12.2019,21.12.2019">
-                                                        <ul class="ui-line-chart" data-ui-type="filled dotted">
+                                                    <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,30" data-ui-step="6"
+                                                        data-ui-x="01.12.2019,02.12.2019,03.12.2019,04.12.2019,05.12.2019,06.12.2019,07.12.2019,08.12.2019,09.12.2019,10.12.2019,11.12.2019,12.12.2019,13.12.2019,14.12.2019,15.12.2019,16.12.2019,17.12.2019,18.12.2019">
+                                                        <ul class="ui-line-chart" data-ui-type="filled">
                                                             <li data-ui-y="84"></li>
                                                             <li data-ui-y="56"></li>
                                                             <li data-ui-y="112"></li>
@@ -517,12 +594,29 @@
                                                             <li data-ui-y="144"></li>
                                                             <li data-ui-y="59"></li>
                                                             <li data-ui-y="112"></li>
-                                                            <li data-ui-y="140"></li>
-                                                            <li data-ui-y="28"></li>
-                                                            <li data-ui-y="0"></li>
-                                                            <li data-ui-y="28"></li>
-                                                            <li data-ui-y="32"></li>
+                                                            <li data-ui-y="60"></li>
+                                                            <li data-ui-y="78"></li>
+                                                            <li data-ui-y="49"></li>
+                                                        </ul>
+                                                        <ul class="ui-line-chart" data-ui-type="filled dotted">
+                                                            <li data-ui-y="53"></li>
+                                                            <li data-ui-y="22"></li>
                                                             <li data-ui-y="52"></li>
+                                                            <li data-ui-y="93"></li>
+                                                            <li data-ui-y="86"></li>
+                                                            <li data-ui-y="21"></li>
+                                                            <li data-ui-y="56"></li>
+                                                            <li data-ui-y="48"></li>
+                                                            <li data-ui-y="86"></li>
+                                                            <li data-ui-y="88"></li>
+                                                            <li data-ui-y="52"></li>
+                                                            <li data-ui-y="77"></li>
+                                                            <li data-ui-y="88"></li>
+                                                            <li data-ui-y="26"></li>
+                                                            <li data-ui-y="62"></li>
+                                                            <li data-ui-y="43"></li>
+                                                            <li data-ui-y="55"></li>
+                                                            <li data-ui-y="26"></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -699,7 +793,7 @@
 
         <!-- right panel -->
         <div class="ui-col-panel-r">
-            <div class="panel-r ui-p-5 ui-theme-sub">
+            <div class="panel-r ui-p-5">
 
                 <!-- koyu mod -->
                 <button title="Koyu Mod Aç/Kapat" data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-ghost ui-btn-square ui-icons-no-opacity ui-m-10-b ui-ease-btn">
