@@ -9602,13 +9602,12 @@ html:not(.ui-firefox) .ui-line-chart-holder svg line {
 .ui-line-chart-holder svg .ui-line-y-grid {
   text-anchor: end;
 }
-.ui-line-chart-holder.ui-resized svg path.ui-filled {
-  opacity: 0;
+.ui-line-chart-holder.ui-resized svg path:not(.ui-dashed):not(.ui-dotted) {
+  stroke-dashoffset: 1;
+  stroke-dasharray: 1;
 }
-.ui-line-chart-holder.ui-resized svg path.ui-dashed,
-.ui-line-chart-holder.ui-resized svg path.ui-dotted {
-  stroke-dashoffset: 0;
-  opacity: 0;
+.ui-line-chart-holder.ui-resized svg path.ui-filled {
+  opacity: 0.15;
 }
 html:not(.ui-ie) .ui-line-chart-holder:not(.ui-resized) svg path.ui-dashed,
 html:not(.ui-ie) .ui-line-chart-holder:not(.ui-resized) svg path.ui-dotted {

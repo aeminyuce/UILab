@@ -93,8 +93,8 @@
         &.ui-resized {
             svg {
                 path {
-                    &.ui-filled { opacity: 0; }
-                    &.ui-dashed,&.ui-dotted { stroke-dashoffset: 0; opacity: 0; }
+                    &:not(.ui-dashed):not(.ui-dotted) { stroke-dashoffset: 1; stroke-dasharray: 1; }
+                    &.ui-filled { opacity: @line-chart-filled-opacity; }
                 }
             }
         }
