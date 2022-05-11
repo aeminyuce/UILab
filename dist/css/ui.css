@@ -282,10 +282,13 @@ body {
 }
 .ui-no-effects,
 .ui-no-effects:before,
-.ui-no-effects:after,
-.ui-no-effects *,
-.ui-no-effects *:before,
-.ui-no-effects *:after {
+.ui-no-effects:after {
+  transition-property: none !important;
+  animation: none !important;
+}
+html.ui-no-effects *,
+html.ui-no-effects *:before,
+html.ui-no-effects *:after {
   transition-property: none !important;
   animation: none !important;
 }

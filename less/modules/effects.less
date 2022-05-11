@@ -39,7 +39,11 @@
         }
 
         &no-effects {
-            &,&:before,&:after,*,*:before,*:after { transition-property: none !important; animation: none !important; }
+            &,&:before,&:after{ transition-property: none !important; animation: none !important; }
+
+            html& {
+              *,*:before,*:after { transition-property: none !important; animation: none !important; }
+            }
         }
         &effects-paused {
             &,&:before,&:after,*,*:before,*:after { transition-property: none !important; animation-play-state: paused !important; }
