@@ -380,7 +380,7 @@ ui.carousel = {
 
         if (e === 'resize' || e.type === 'resize') {
 
-            Array.prototype.forEach.call( ui.find('.' + ui.carousel.target),
+            Array.prototype.forEach.call(ui.find('.' + ui.carousel.target),
 
                 el => {
 
