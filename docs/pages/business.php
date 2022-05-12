@@ -101,11 +101,11 @@
                                         <button type="submit">
                                             <svg class="ui-icon"><use href="../dist/icons.svg#search"/></svg>
                                         </button>
-                                        <input type="text" placeholder="Başvuru ara">
+                                        <input type="text" placeholder="Search">
                                     </div>
                                 </form>
 
-                                <div class="ui-p-10-h">İş Sayılarım</div>
+                                <div class="ui-p-10-h">My Stats</div>
                                 <div class="ui-row ui-row-gap-sm ui-no-fluid ui-align-c ui-m-10 ui-theme-base ui-ease-2nd-btn">
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi ui-fill-dark-100">
@@ -178,16 +178,16 @@
                                     </div>
                                 </div>
 
-                                <div class="ui-p-10-h">Şirket İş Sayıları</div>
-                                <div class="ui-row ui-row-gap-sm ui-no-fluid ui-align-c ui-m-10 ui-ease-2nd-btn">
+                                <div class="ui-p-10-h">Company Stats</div>
+                                <div class="ui-row ui-row-gap-sm ui-no-fluid ui-align-c ui-m-10 ui-theme-sub ui-ease-2nd-btn">
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi">
+                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>416</span>
                                             <i>Bekleyen</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi">
+                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>
                                                 665
                                                 <i>17</i>
@@ -196,7 +196,7 @@
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi">
+                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>
                                                 168
                                                 <i>27</i>
@@ -205,7 +205,7 @@
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi">
+                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>
                                                 19
                                                 <i>4</i>
@@ -214,37 +214,37 @@
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi">
+                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>1</span>
                                             <i>Kotrol Edildi</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi">
+                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>0</span>
                                             <i>Bugün</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi">
+                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>74</span>
                                             <i>Donmuş</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi">
+                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>797</span>
                                             <i>Gecikmiş</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi">
+                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <svg class="ui-icon"><use href="../dist/icons.svg#hourglass-start"></use></svg>
                                             <i>Gönderilecek</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi">
+                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <svg class="ui-icon"><use href="../dist/icons.svg#flag"></use></svg>
                                             <i>Raporlaşmış</i>
                                         </button>
@@ -411,11 +411,6 @@
                                     <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#grid-masonry"></use></svg>
                                 </a>
 
-                                <!-- başvuru ara -->
-                                <a title="Başvuru Ara" class="ui-btn ui-btn-ghost ui-btn-square ui-circle" href="#">
-                                    <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#search"></use></svg>
-                                </a>
-
                                 <!-- harita -->
                                 <a title="Harita" class="ui-btn ui-btn-ghost ui-btn-square ui-circle" href="#">
                                     <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#marker"></use></svg>
@@ -430,17 +425,7 @@
                             <div class="profile-menu ui-dropdown ui-menu-l ui-ease-dropdown">
                                 <button title="Profilim" class="ui-btn ui-btn-multi ui-no-p ui-circle">
                                     <svg class="ui-icon ui-icon-sm ui-no-opacity"><use href="../dist/icons.svg#grid-column"></use></svg>
-                                    <!--
-                                        Resim var:
-                                    -->
                                     <img class="ui-avatar ui-avatar-xs ui-border-dual ui-circle border-sd" src="img/profile-image2.jpg" alt="">
-                                    <!--
-                                        Resim yok:
-
-                                    <span class="ui-avatar-xs ui-circle bg-sd">
-                                        <span>KYD</span>
-                                    </span>
-                                    -->
                                 </button>
                                 <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
                                     <li class="ui-border-b ui-border-lg">
@@ -500,7 +485,7 @@
                                             <div class="ui-carousel" data-ui-col-xl="3" data-ui-col-lg="2" data-ui-col="2" data-ui-col-md="2" data-ui-col-sm="1" data-ui-col-xs="1">
                                                 <div class="ui-carousel-slider ui-icons-m-5-r ui-ease-layout ui-ease-slow ui-ease-in-out">
 
-                                                    <div class="ui-carousel-content ui-p-10 ui-theme-yellow">
+                                                    <div class="ui-carousel-content ui-p-10 ui-theme-base">
                                                         <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                                                             <div class="ui-col-static ui-no-fluid">
                                                                 <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
@@ -516,16 +501,15 @@
                                                             <div class="ui-progress-bar ui-m-15-t ui-round">
                                                                 <span class="ui-fill-dark-100 ui-stripe-light" style="width: 45%;"></span>
                                                             </div>
-                                                            <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Pending for the transaction.</p>
                                                         </div>
                                                     </div>
-                                                    <div class="ui-carousel-content ui-p-10 ui-theme-yellow">
+                                                    <div class="ui-carousel-content ui-p-10 ui-theme-base">
                                                         <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                                                             <div class="ui-col-static ui-no-fluid">
                                                                 <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
                                                                     <div class="ui-col-12">
                                                                         <div class="ui-font-18">Paused</div>
-                                                                        <span class="ui-color-black-25 ui-font-16">Total: 5%</span>
+                                                                        <span class="ui-color-black-25 ui-font-16">Total: 35%</span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ui-col-100 ui-align-r">
@@ -533,12 +517,11 @@
                                                                 </div>
                                                             </div>
                                                             <div class="ui-progress-bar ui-m-15-t ui-round">
-                                                                <span class="ui-fill-dark-100 ui-stripe-light" style="width: 5%;"></span>
+                                                                <span class="ui-fill-dark-100 ui-stripe-light" style="width: 35%;"></span>
                                                             </div>
-                                                            <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Paused for the some reasons.</p>
                                                         </div>
                                                     </div>
-                                                    <div class="ui-carousel-content ui-p-10 ui-theme-green">
+                                                    <div class="ui-carousel-content ui-p-10 ui-theme-sub">
                                                         <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
                                                             <div class="ui-col-static ui-no-fluid">
                                                                 <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
@@ -554,7 +537,6 @@
                                                             <div class="ui-progress-bar ui-m-15-t ui-round">
                                                                 <span class="ui-fill-dark-100 ui-stripe-light" style="width: 80%;"></span>
                                                             </div>
-                                                            <p class="ui-color-black-25 ui-font-16 ui-m-5-b">Reached for the expert.</p>
                                                         </div>
                                                     </div>
 
@@ -579,24 +561,24 @@
                                                     <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,30" data-ui-step="6"
                                                         data-ui-x="01.12.2019,02.12.2019,03.12.2019,04.12.2019,05.12.2019,06.12.2019,07.12.2019,08.12.2019,09.12.2019,10.12.2019,11.12.2019,12.12.2019,13.12.2019,14.12.2019,15.12.2019,16.12.2019,17.12.2019,18.12.2019">
                                                         <ul class="ui-line-chart" data-ui-type="filled">
-                                                            <li data-ui-y="84"></li>
+                                                            <li data-ui-y="64"></li>
                                                             <li data-ui-y="56"></li>
                                                             <li data-ui-y="112"></li>
                                                             <li data-ui-y="140"></li>
                                                             <li data-ui-y="28"></li>
                                                             <li data-ui-y="0"></li>
-                                                            <li data-ui-y="28"></li>
-                                                            <li data-ui-y="32"></li>
-                                                            <li data-ui-y="52"></li>
-                                                            <li data-ui-y="117"></li>
-                                                            <li data-ui-y="85"></li>
-                                                            <li data-ui-y="137"></li>
-                                                            <li data-ui-y="144"></li>
+                                                            <li data-ui-y="17"></li>
+                                                            <li data-ui-y="11"></li>
+                                                            <li data-ui-y="47"></li>
+                                                            <li data-ui-y="106"></li>
+                                                            <li data-ui-y="99"></li>
+                                                            <li data-ui-y="46"></li>
+                                                            <li data-ui-y="23"></li>
                                                             <li data-ui-y="59"></li>
                                                             <li data-ui-y="112"></li>
                                                             <li data-ui-y="60"></li>
-                                                            <li data-ui-y="78"></li>
-                                                            <li data-ui-y="49"></li>
+                                                            <li data-ui-y="72"></li>
+                                                            <li data-ui-y="10"></li>
                                                         </ul>
                                                         <ul class="ui-line-chart" data-ui-type="filled dotted">
                                                             <li data-ui-y="53"></li>
@@ -611,7 +593,7 @@
                                                             <li data-ui-y="88"></li>
                                                             <li data-ui-y="52"></li>
                                                             <li data-ui-y="77"></li>
-                                                            <li data-ui-y="88"></li>
+                                                            <li data-ui-y="66"></li>
                                                             <li data-ui-y="26"></li>
                                                             <li data-ui-y="62"></li>
                                                             <li data-ui-y="43"></li>
@@ -638,60 +620,31 @@
 
                                     <div class="business-masthead ui-sidebar-add-r">
 
-                                        <div class="cover bg-sd"></div>
-
-                                        <!--
-                                            Resim var:
-                                        -->
+                                        <div class="cover ui-theme-base ui-fill-dark-100"></div>
                                         <img class="ui-avatar ui-avatar-lg" src="img/profile-image2.jpg" alt="">
-                                        <!--
-                                            Resim yok:
-
-                                        <span class="ui-avatar-lg bg-sd">
-                                            <span>KYD</span>
-                                        </span>
-                                        -->
 
                                         <div class="ui-align-c">
-                                            <div class="ui-m-5-b">Supervisor User</div>
+                                            Supervisor User
                                             <div class="ui-color-black-50 ui-font-11 ui-m-15-b">
-                                                su@businessdomain.com<br>
-                                                İSTANBUL, BEYOĞLU
+                                                su@businessdomain.com
                                             </div>
 
                                             <div class="ui-m-20-b">
-
-                                                <span class="info">Ankara Bölge</span> <!-- bölge -->
-                                                <span class="info">Şirket</span> <!-- tipi -->
-                                                <span class="info bg-sd">Denetmen</span> <!-- birimi -->
-
-                                                <span class="ui-sp-2"></span>
-
-                                                <!-- SPK lisansı yok
-                                                <span class="info">SPK: Lisansı Yok</span>
-                                                -->
-                                                <!-- SPK lisansı var -->
-                                                <span class="info bg-featured">SPK: Aktif Lisans</span>
-
-                                                <!-- mobil imza yok -->
-                                                <span class="info">Mobil İmza: Yok</span>
-                                                <!-- mobil imza var
-                                                <span class="info bg-featured">Mobil İmza: Turkcell</b></span>
-                                                -->
-
+                                                <span class="info ui-theme-green ui-fill-dark-100">Licence</span>
+                                                <span class="info">Signature</span>
                                             </div>
                                         </div>
 
                                         <b class="business-title">
-                                            Son Eklenen İşlerim
+                                            Recent Reports
                                             <span class="info">6</span>
                                         </b>
-                                        <!--no content
+                                        <!--no content -->
                                         <span class="business-no-content-sm">
                                             <svg class="ui-icon"><use href="../dist/icons.svg#briefcase"></use></svg>
                                             Son eklenen iş kaydı yok
                                         </span>
-                                        -->
+
                                         <div class="ui-listgroup">
                                             <ul class="ui-listgroup-has-avatar-xs ui-listgroup-has-icon-xs ui-scroll-v ui-ease-listgroup">
                                                 <li>
@@ -761,14 +714,12 @@
                                             </ul>
                                         </div>
 
-                                        <b class="business-title">Çevrimiçi Kullanıcılar</b>
+                                        <b class="business-title">Online Users</b>
                                         <div class="ui-align-c ui-p-10">
                                             <div class="ui-avatar-holder">
-                                                <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/profile-image3.jpg" alt="">
-                                                <span class="ui-avatar-sm ui-border-dual ui-circle bg-sd">
-                                                    <span>KYD</span>
-                                                </span>
                                                 <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/profile-image.jpg" alt="">
+                                                <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/profile-image2.jpg" alt="">
+                                                <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/profile-image3.jpg" alt="">
                                                 <a class="ui-btn ui-btn-square ui-circle ui-ease-btn" href="#">+3</a>
                                             </div>
                                         </div>

@@ -36,6 +36,13 @@
     }
 }
 
+/* theme */
+@base:                                  hsl(331, 71%, 58%);
+@sub:                                   hsl(189, 95%, 40%);
+
+._theme(base, @base);
+._theme(sub, @sub);
+
 /* body */
 html,main { box-sizing: border-box; height: 100%; }
 
@@ -214,6 +221,7 @@ each(@panel-sizes, {
 				._bg-var(panel-l-contens-bg); overflow-y: auto !important; border-radius: (@round - (@round * 0.3333333333)); position: absolute; top: (@panel-l-logo-height + @panel-spacing + 2); right: @panel-spacing; bottom: @panel-spacing; left: 0;
 
 				.ui-mobile & { -webkit-overflow-scrolling: touch; }
+				&::-webkit-scrollbar { ._bg-var(scrollbar-scroll-faded-bg); }
 
 				.ui-btn:not(.ui-btn-multi) {
 					white-space: nowrap; text-align: left; text-overflow: ellipsis; width: 100%; padding-right: 10px; padding-left: 10px; overflow: hidden; display: block;

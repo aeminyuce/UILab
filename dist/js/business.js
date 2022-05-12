@@ -3,6 +3,7 @@ ui.lineChart.rowsHeight = 80;
 ui.lineChart.top = 10;
 ui.lineChart.showGrid = false;
 ui.lineChart.gridStroke = 0;
+ui.lineChart.colors = ['hsl(331, 71%, 54%)', 'hsl(189, 95%, 40%)'];
 
 (function () {
   var setCookie = function setCookie(name, value) {
