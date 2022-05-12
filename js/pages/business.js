@@ -297,6 +297,8 @@ ui.lineChart.colors = [
 
                     ui.lineChart.Init(ui.lineChart.nameLoaded, true); // resize loaded charts
 
+                    ui.trigger(document, ui.globals.eventDomChange); // set custom event
+
                 }, ui.globals.ease);
 
             });

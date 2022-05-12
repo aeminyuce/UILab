@@ -159,6 +159,7 @@ ui.lineChart.colors = ['hsl(331, 71%, 54%)', 'hsl(189, 95%, 40%)'];
         ui.toggleClass(leftPanelHolder, nameToggleMenu);
         leftPanelToggleIcon.innerHTML = '<use href="' + ui.globals.iconSrc + '#' + iconName + '"></use>';
         ui.lineChart.Init(ui.lineChart.nameLoaded, true);
+        ui.trigger(document, ui.globals.eventDomChange);
       }, ui.globals.ease);
     });
   };
