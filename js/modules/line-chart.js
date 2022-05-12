@@ -95,9 +95,7 @@ ui.lineChart.Start = () => {
             charts = ui.find('.' + ui.lineChart.target + '.' + ui.lineChart.nameLoaded);
 
         } else if (method === ui.globals.eventDomChange) {
-
             charts = ui.find('.' + ui.lineChart.target + ':not(.' + ui.lineChart.nameLoaded + '):not(.' + ui.lineChart.nameResized + ')');
-            ui.removeClass('.' + ui.lineChart.target, ui.lineChart.nameResized);
 
         } else {
             charts = ui.find('.' + ui.lineChart.target + ':not(.' + ui.lineChart.nameLoaded + ')');
