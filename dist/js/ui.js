@@ -681,7 +681,6 @@ ui.onload(function () {
   });
   ui.on(document, 'click', '.' + ui.darkMode.nameToggle, function (e) {
     e.preventDefault();
-    ui.addClass(ui.effects.target, ui.effects.nameNoEffects);
     var current = doc.getAttribute(ui.darkMode.dataMod);
     setTimeout(function () {
       if (current !== null && current !== '') {
@@ -694,9 +693,6 @@ ui.onload(function () {
 
       doc.setAttribute(ui.darkMode.dataMod, mode);
       setState(mode);
-      setTimeout(function () {
-        ui.removeClass(ui.effects.target, ui.effects.nameNoEffects);
-      }, 10);
     }, 0);
   });
 });

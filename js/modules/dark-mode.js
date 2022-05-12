@@ -94,7 +94,6 @@ ui.onload(() => {
             e.preventDefault();
 
             // toggle theme color
-            ui.addClass(ui.effects.target, ui.effects.nameNoEffects);
 
             const current = doc.getAttribute(ui.darkMode.dataMod);
             setTimeout(() => {
@@ -112,10 +111,6 @@ ui.onload(() => {
 
                 doc.setAttribute(ui.darkMode.dataMod, mode);
                 setState(mode);
-
-                setTimeout(() => {
-                    ui.removeClass(ui.effects.target, ui.effects.nameNoEffects);
-                }, 10);
 
             }, 0);
 
