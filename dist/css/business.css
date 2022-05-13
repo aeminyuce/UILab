@@ -967,9 +967,11 @@ main {
 .business-masthead {
   min-height: 272px;
 }
-.business-masthead .cover {
+.business-masthead-cover {
   box-sizing: border-box;
-  height: 52px;
+  height: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 6.66666667px 6.66666667px 0 0;
 }
 .business-masthead .ui-avatar-lg {

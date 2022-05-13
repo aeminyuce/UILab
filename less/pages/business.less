@@ -527,7 +527,7 @@ each(@panel-sizes, {
 /* masthead */
 @masthead-min-height:        			272px;
 
-@masthead-cover-height:        	        52px;
+@masthead-cover-height:        	        80px;
 @masthead-cover-margin-b:        	    10px;
 
 @masthead-listgroup-max-height:         306px;
@@ -539,7 +539,7 @@ each(@panel-sizes, {
 .business-masthead {
 	min-height: @masthead-min-height;
 
-	.cover { box-sizing: border-box; height: @masthead-cover-height; border-radius: (@round - (@round * 0.3333333333)) (@round - (@round * 0.3333333333)) 0 0; }
+	&-cover { box-sizing: border-box; height: @masthead-cover-height; background-size: cover; background-repeat: no-repeat; border-radius: (@round - (@round * 0.3333333333)) (@round - (@round * 0.3333333333)) 0 0; }
 	.ui-avatar-lg { margin: -(@avatar-lg / 2) auto @masthead-cover-margin-b auto; display: block; ._border-var(@width: @border-lg; @var: card-bg); border-radius: @circle; }
 
 	.business-no-content-sm {

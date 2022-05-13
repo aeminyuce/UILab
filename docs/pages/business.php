@@ -620,7 +620,10 @@
 
                                     <div class="business-masthead ui-sidebar-add-r">
 
-                                        <div class="cover ui-theme-base ui-fill-dark-100"></div>
+                                        <div
+                                            class="business-masthead-cover"
+                                            style="background-image: url(img/business/profile-cover.png)">
+                                        </div>
                                         <img class="ui-avatar ui-avatar-lg" src="img/profile-image2.jpg" alt="">
 
                                         <div class="ui-align-c">
