@@ -5,11 +5,11 @@ export default () => ui;
 
 ui.icons = {
 
-    // targets
-    target: 'use',
-
     // outer classnames
     nameIcon: 'ui-icon',
+
+    // tags
+    tagIcon: 'use',
 
     // values
     iconSrc: '../dist/icons.svg'
@@ -21,7 +21,7 @@ ui.icons.Start = () => {
     // svg icon reference replacement for IE
     if (!ui.userAgents.ie) { return; }
 
-    let iconsList = ui.find(ui.icons.target);
+    let iconsList = ui.find(ui.icons.tagIcon);
 
     const page = ui.find('body')[0];
     const sprites = ui.find('body > svg'); // check svg sprites loaded before

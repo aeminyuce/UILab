@@ -2610,8 +2610,8 @@ ui.on(document, ui.globals.eventAjaxCallback, function () {
   }
 });
 ui.icons = {
-  target: 'use',
   nameIcon: 'ui-icon',
+  tagIcon: 'use',
   iconSrc: '../dist/icons.svg'
 };
 
@@ -2620,7 +2620,7 @@ ui.icons.Start = function () {
     return;
   }
 
-  var iconsList = ui.find(ui.icons.target);
+  var iconsList = ui.find(ui.icons.tagIcon);
   var page = ui.find('body')[0];
   var sprites = ui.find('body > svg');
   Array.prototype.forEach.call(iconsList, function (el, i) {
