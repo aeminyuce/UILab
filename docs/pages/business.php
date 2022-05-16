@@ -11,7 +11,7 @@
     {
         if ($_COOKIE["leftPanelToggle"] == 'hide')
         {
-            $menuToggle = ' toggle-menu';
+            $menuToggle = ' business-toggle-menu';
             $menuIcon = 'right';
             $menuActiveBtn = '';
         }
@@ -26,18 +26,18 @@
     <div class="ui-col-static ui-no-fluid ui-full-h">
 
         <!-- left panel -->
-        <div class="ui-col-panel-l<?php echo $menuToggle; ?>"> <!-- cookie: menu -->
-            <div class="panel-l ui-sidebar-add-l ui-ease-width">
+        <div class="ui-col-business-panel-l<?php echo $menuToggle; ?>"> <!-- cookie: menu -->
+            <div class="business-panel-l ui-sidebar-add-l ui-ease-width">
 
                 <div class="ui-col-static ui-no-fluid ui-tab-holder ui-ease-tab ui-ease-1st-btn" data-ui-classes="ui-btn-visible">
 
-                    <div class="ui-col-panel-min">
+                    <div class="ui-col-business-panel-min">
 
                         <!-- mini left panel -->
-                        <div class="panel-l-min">
+                        <div class="business-panel-l-min">
 
                             <!-- toggle sidebar -->
-                            <button title="Menü Daralt/Genişlet" class="panel-l-toggle ui-btn ui-btn-ghost ui-btn-square ui-m-10-b ui-ease-btn ui-visible-xl">
+                            <button title="Menü Daralt/Genişlet" class="business-panel-l-toggle ui-btn ui-btn-ghost ui-btn-square ui-m-10-b ui-ease-btn ui-visible-xl">
                                 <svg class="ui-icon ui-no-opacity">
                                     <use href="../dist/icons.svg#angle-<?php echo $menuIcon ?>"></use> <!-- cookie: menu -->
                                 </svg>
@@ -85,11 +85,11 @@
 
                     </div>
 
-                    <div class="panel-l-contents-holder ui-row">
-                        <div class="panel-l-contents ui-col-12">
+                    <div class="business-panel-l-contents-holder ui-row">
+                        <div class="business-panel-l-contents ui-col-12">
 
                             <!-- logo -->
-                            <a title="Logo" class="panel-l-logo" href="#">
+                            <a title="Logo" class="business-panel-l-logo" href="#">
                                 <img src="img/logo-udashboard.png" alt="">
                             </a>
 
@@ -394,7 +394,7 @@
             <div class="ui-col-12">
 
                 <!-- header -->
-                <header class="ui-header-sticky ui-ease-layout" data-ui-classes="header-highlight">
+                <header class="ui-header-sticky ui-ease-layout" data-ui-classes="business-header-highlight">
                     <div class="ui-row ui-no-row-gap-v ui-no-fluid">
                         <div class="ui-col-12 ui-align-c">
 
@@ -419,19 +419,19 @@
                             </div>
 
                             <!-- header time -->
-                            <div class="header-time ui-hidden-sm"></div>
+                            <div class="business-header-time ui-hidden-sm"></div>
 
                             <!-- profile -->
-                            <div class="profile-menu ui-dropdown ui-menu-l ui-ease-dropdown">
+                            <div class="business-profile-menu ui-dropdown ui-menu-l ui-ease-dropdown">
                                 <button title="Profilim" class="ui-btn ui-btn-multi ui-no-p ui-circle">
                                     <svg class="ui-icon ui-icon-sm ui-no-opacity"><use href="../dist/icons.svg#grid-column"></use></svg>
-                                    <img class="ui-avatar ui-avatar-xs ui-border-dual ui-circle border-sd" src="img/profile-image2.jpg" alt="">
+                                    <img class="ui-avatar ui-avatar-xs ui-circle" src="img/profile-image2.jpg" alt="">
                                 </button>
                                 <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
                                     <li class="ui-border-b ui-border-lg">
                                         <a href="#">
                                             <span class="ui-color-black-50">Supervisor User</span><br>
-                                            <span class="info bg-sd">Denetmen</span>
+                                            <span class="business-info ui-m-3-t">Denetmen</span>
                                         </a>
                                     </li>
                                     <li>
@@ -471,7 +471,7 @@
                 </header>
 
                 <!-- pages -->
-                <div class="page-middle ui-fixed ui-fixed-xl">
+                <div class="business-page-middle ui-fixed ui-fixed-xl">
                     <div class="ui-row">
 
                         <div class="ui-col-static">
@@ -633,14 +633,14 @@
                                             </div>
 
                                             <div class="ui-m-20-b">
-                                                <span class="info ui-theme-green ui-fill-dark-100">Licence</span>
-                                                <span class="info">Signature</span>
+                                                <span class="business-info ui-theme-green ui-fill-dark-100">Licence</span>
+                                                <span class="business-info">Signature</span>
                                             </div>
                                         </div>
 
                                         <b class="business-title">
                                             Recent Reports
-                                            <span class="info">6</span>
+                                            <span class="business-info">6</span>
                                         </b>
                                         <!--no content -->
                                         <span class="business-no-content-sm">
@@ -746,8 +746,8 @@
         </div>
 
         <!-- right panel -->
-        <div class="ui-col-panel-r">
-            <div class="panel-r ui-p-5">
+        <div class="ui-col-business-panel-r">
+            <div class="business-panel-r ui-p-5">
 
                 <!-- koyu mod -->
                 <button title="Koyu Mod Aç/Kapat" data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-ghost ui-btn-square ui-icons-no-opacity ui-m-10-b ui-ease-btn">
@@ -781,7 +781,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <h4>
-                            <span class="info bg-featured">2 Yeni</span>
+                            <span class="business-info">2 Yeni</span>
                             Bildirimler
                         </h4>
 
@@ -798,9 +798,9 @@
 
                             <div class="ui-listgroup">
                                 <ul class="ui-listgroup-has-avatar-xs ui-ease-listgroup">
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-ss">
+                                            <span class="ui-avatar-xs">
                                                 <span>SS</span>
                                             </span>
                                             <b>DOC-312557</b>
@@ -808,9 +808,9 @@
                                             <p>Başvuru oluşturuldu.</p>
                                         </a>
                                     </li>
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-su">
+                                            <span class="ui-avatar-xs">
                                                 <span>SU</span>
                                             </span>
                                             <b>DOC-312557</b>
@@ -820,29 +820,29 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-sd">
+                                            <span class="ui-avatar-xs">
                                                 <span>SD</span>
                                             </span>
                                             <b>DOC-312557</b>
                                             <em>14.03.2022 09:50</em>
                                             <p>Denetmene gönderildi.</p>
-                                            <span class="info">Geçen süre: 4 sa 59 dk</span>
+                                            <span class="business-info">Geçen süre: 4 sa 59 dk</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-bd">
+                                            <span class="ui-avatar-xs">
                                                 <span>BD</span>
                                             </span>
                                             <b>DOC-312557</b>
                                             <em>14.03.2022 09:50</em>
                                             <p>Birim değiştirildi.</p>
-                                            <span class="info">Geçen süre: 4 sa 59 dk</span>
+                                            <span class="business-info">Geçen süre: 4 sa 59 dk</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-bd">
+                                            <span class="ui-avatar-xs">
                                                 <span>BG</span>
                                             </span>
                                             <b>DOC-312557</b>
@@ -852,7 +852,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-ss">
+                                            <span class="ui-avatar-xs">
                                                 <span>SS</span>
                                             </span>
                                             <b>DOC-312557</b>
@@ -862,7 +862,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-su">
+                                            <span class="ui-avatar-xs">
                                                 <span>SU</span>
                                             </span>
                                             <b>DOC-312557</b>
@@ -872,29 +872,29 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-sd">
+                                            <span class="ui-avatar-xs">
                                                 <span>SD</span>
                                             </span>
                                             <b>DOC-312557</b>
                                             <em>14.03.2022 09:50</em>
                                             <p>Denetmene gönderildi.</p>
-                                            <span class="info">Geçen süre: 4 sa 59 dk</span>
+                                            <span class="business-info">Geçen süre: 4 sa 59 dk</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-bd">
+                                            <span class="ui-avatar-xs">
                                                 <span>BD</span>
                                             </span>
                                             <b>DOC-312557</b>
                                             <em>14.03.2022 09:50</em>
                                             <p>Birim değiştirildi.</p>
-                                            <span class="info">Geçen süre: 4 sa 59 dk</span>
+                                            <span class="business-info">Geçen süre: 4 sa 59 dk</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-bd">
+                                            <span class="ui-avatar-xs">
                                                 <span>BG</span>
                                             </span>
                                             <b>DOC-312557</b>
@@ -915,8 +915,8 @@
                     </button>
                     <div class="ui-tab-content">
                         <h4>
-                            <span class="info bg-featured">2 Yeni</span>
-                            <span class="mark ui-ease-bg" onclick="ui.alerts.message({ msg: 'Tüm notlar okundu olarak işaretlendi!' });">Tümünü Okundu İşaretle</span>
+                            <span class="business-info">2 Yeni</span>
+                            <span class="business-mark ui-ease-bg" onclick="ui.alerts.message({ msg: 'Tüm notlar okundu olarak işaretlendi!' });">Tümünü Okundu İşaretle</span>
                             Notlar
                         </h4>
 
@@ -933,19 +933,19 @@
 
                             <div class="ui-listgroup">
                                 <ul class="ui-listgroup-has-avatar-xs ui-ease-listgroup">
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <img class="ui-avatar-xs border-su" src="img/profile-image2.jpg" alt="">
+                                            <img class="ui-avatar-xs" src="img/profile-image2.jpg" alt="">
                                             <b>Specialist User</b>
                                             DOC-312557
                                             <em>3 sa 56 dk önce</em>
                                         </a>
                                         <p>UZMAN İŞİ ALDI<br>Specialist User İşi Aldı</p>
-                                        <span class="mark ui-ease-bg" onclick="ui.alerts.message({ msg: 'Not okundu olarak işaretlendi!' });">Okundu İşaretle</span>
+                                        <span class="business-mark ui-ease-bg" onclick="ui.alerts.message({ msg: 'Not okundu olarak işaretlendi!' });">Okundu İşaretle</span>
                                     </li>
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-su">
+                                            <span class="ui-avatar-xs">
                                                 <span>KU</span>
                                             </span>
                                             <b>Specialist User</b>
@@ -953,11 +953,11 @@
                                             <em>3 sa 56 dk önce</em>
                                         </a>
                                         <p>UZMAN İŞİ ALDI<br>Specialist User İşi Aldı</p>
-                                        <span class="mark ui-ease-bg" onclick="ui.alerts.message({ msg: 'Not okundu olarak işaretlendi!' });">Okundu İşaretle</span>
+                                        <span class="business-mark ui-ease-bg" onclick="ui.alerts.message({ msg: 'Not okundu olarak işaretlendi!' });">Okundu İşaretle</span>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img class="ui-avatar-xs border-sd" src="img/profile-image3.jpg" alt="">
+                                            <img class="ui-avatar-xs" src="img/profile-image3.jpg" alt="">
                                             <b>Supervisor User</b>
                                             DOC-312557
                                             <em>3 sa 56 dk önce</em>
@@ -966,7 +966,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-sd">
+                                            <span class="ui-avatar-xs">
                                                 <span>KD</span>
                                             </span>
                                             <b>Supervisor User</b>
@@ -977,7 +977,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img class="ui-avatar-xs border-ss" src="img/profile-image.jpg" alt="">
+                                            <img class="ui-avatar-xs" src="img/profile-image.jpg" alt="">
                                             <b>Secretarial User</b>
                                             DOC-312557
                                             <em>3 sa 56 dk önce</em>
@@ -986,7 +986,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-ss">
+                                            <span class="ui-avatar-xs">
                                                 <span>KS</span>
                                             </span>
                                             <b>Secretarial User</b>
@@ -1008,7 +1008,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <h4>
-                            <span class="info bg-featured">8 Yeni</span>
+                            <span class="business-info">8 Yeni</span>
                             Bekleyen İşler
                         </h4>
 
@@ -1025,14 +1025,14 @@
 
                             <div class="ui-listgroup">
                                 <ul class="ui-listgroup-has-avatar-xs ui-ease-listgroup">
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-8">
+                                            <span class="ui-avatar-xs">
                                                 <span><b>18</b> Gün</span>
                                             </span>
                                             <b>DOC-312557</b>
                                             <em>Teslim Tarihi: 25.03.2022 09:43</em>
-                                            <span class="info bg-acil">Acil</span>
+                                            <span class="business-info">Acil</span>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
                                             <dt>İl/İlçe</dt>
@@ -1043,15 +1043,15 @@
                                             <dd>8896/10 KÜÇÜK SANAYİ TESİSİ</dd>
                                         </dl>
                                     </li>
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-7">
+                                            <span class="ui-avatar-xs">
                                                 <span><b>16</b> Gün</span>
                                             </span>
                                             <b>DOC-312557</b>
                                             <em>Teslim Tarihi: 25.03.2022 09:43</em>
-                                            <span class="info bg-acil">Acil</span>
-                                            <span class="info bg-vip">VIP</span>
+                                            <span class="business-info">Acil</span>
+                                            <span class="business-info">VIP</span>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
                                             <dt>İl/İlçe</dt>
@@ -1062,14 +1062,14 @@
                                             <dd>8896/10 KÜÇÜK SANAYİ TESİSİ</dd>
                                         </dl>
                                     </li>
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-6">
+                                            <span class="ui-avatar-xs">
                                                 <span><b>13</b> Gün</span>
                                             </span>
                                             <b>DOC-312557</b>
                                             <em>Teslim Tarihi: 25.03.2022 09:43</em>
-                                            <span class="info bg-revize">Revize</span>
+                                            <span class="business-info">Revize</span>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
                                             <dt>İl/İlçe</dt>
@@ -1080,9 +1080,9 @@
                                             <dd>8896/10 KÜÇÜK SANAYİ TESİSİ</dd>
                                         </dl>
                                     </li>
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-5">
+                                            <span class="ui-avatar-xs">
                                                 <span><b>10</b> Gün</span>
                                             </span>
                                             <b>DOC-312557</b>
@@ -1097,9 +1097,9 @@
                                             <dd>8896/10 KÜÇÜK SANAYİ TESİSİ</dd>
                                         </dl>
                                     </li>
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-4">
+                                            <span class="ui-avatar-xs">
                                                 <span><b>8</b> Gün</span>
                                             </span>
                                             <b>DOC-312557</b>
@@ -1114,9 +1114,9 @@
                                             <dd>8896/10 KÜÇÜK SANAYİ TESİSİ</dd>
                                         </dl>
                                     </li>
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-3">
+                                            <span class="ui-avatar-xs">
                                                 <span><b>6</b> Gün</span>
                                             </span>
                                             <b>DOC-312557</b>
@@ -1131,9 +1131,9 @@
                                             <dd>8896/10 KÜÇÜK SANAYİ TESİSİ</dd>
                                         </dl>
                                     </li>
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-2">
+                                            <span class="ui-avatar-xs">
                                                 <span><b>4</b> Gün</span>
                                             </span>
                                             <b>DOC-312557</b>
@@ -1148,9 +1148,9 @@
                                             <dd>8896/10 KÜÇÜK SANAYİ TESİSİ</dd>
                                         </dl>
                                     </li>
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-1">
+                                            <span class="ui-avatar-xs">
                                                 <span><b>1</b> Gün</span>
                                             </span>
                                             <b>DOC-312557</b>
@@ -1178,7 +1178,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <h4>
-                            <span class="info bg-featured">4 Yeni</span>
+                            <span class="business-info">4 Yeni</span>
                             Gönderilcek İşler
                         </h4>
 
@@ -1195,40 +1195,40 @@
 
                             <div class="ui-listgroup">
                                 <ul class="ui-listgroup-has-avatar-xs ui-ease-listgroup">
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-1">
+                                            <span class="ui-avatar-xs">
                                                 <span><b>1</b> Gün</span>
                                             </span>
                                             <b>DOC-312557</b>
                                             <em>14.03.2022 09:50</em>
-                                            <span class="info bg-acil">Acil</span>
+                                            <span class="business-info">Acil</span>
                                         </a>
                                     </li>
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-1">
+                                            <span class="ui-avatar-xs">
                                                 <span><b>0</b> Gün</span>
                                             </span>
                                             <b>DOC-312557</b>
                                             <em>14.03.2022 09:50</em>
-                                            <span class="info bg-acil">Acil</span>
-                                            <span class="info bg-vip">VIP</span>
+                                            <span class="business-info">Acil</span>
+                                            <span class="business-info">VIP</span>
                                         </a>
                                     </li>
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-1">
+                                            <span class="ui-avatar-xs">
                                                 <span><b>-1</b> Gün</span>
                                             </span>
                                             <b>DOC-312557</b>
                                             <em>14.03.2022 09:50</em>
-                                            <span class="info bg-revize">Revize</span>
+                                            <span class="business-info">Revize</span>
                                         </a>
                                     </li>
-                                    <li class="new">
+                                    <li class="business-new">
                                         <a href="#">
-                                            <span class="ui-avatar-xs bg-1">
+                                            <span class="ui-avatar-xs">
                                                 <span><b>-2</b> Gün</span>
                                             </span>
                                             <b>DOC-312557</b>
@@ -1254,7 +1254,7 @@
 
                             <div class="ui-listgroup">
                                 <b class="business-title">
-                                    <a title="Yeni Ekle" class="edit ui-ease-bg" href="#">
+                                    <a title="Yeni Ekle" class="business-edit ui-ease-bg" href="#">
                                         <svg class="ui-icon"><use href="../dist/icons.svg#plus"></use></svg>
                                     </a>
                                     Başvuru Bul
@@ -1263,14 +1263,14 @@
                                     <li>
                                         ŞİRKET TÜM İŞLER
                                         <span class="ui-ease-1st-bg">
-                                            <a class="edit ui-listgroup-url" href="#">Düzenle</a>
-                                            <span class="remove" onclick="ui.alerts.dialog({ msg: 'ŞİRKET TÜM İŞLER adlı hızlı arama favori listesinden kaldırılacaktır.', success: 'Kaldır', error: 'Vazgeç', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Hızlı arama kaldırıldı!' }); } });">Kaldır</span>
-                                            <a class="mark ui-listgroup-url" href="#">Hızlı Arama Yap</a>
+                                            <a class="business-edit ui-listgroup-url" href="#">Düzenle</a>
+                                            <span class="business-remove" onclick="ui.alerts.dialog({ msg: 'ŞİRKET TÜM İŞLER adlı hızlı arama favori listesinden kaldırılacaktır.', success: 'Kaldır', error: 'Vazgeç', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Hızlı arama kaldırıldı!' }); } });">Kaldır</span>
+                                            <a class="business-mark ui-listgroup-url" href="#">Hızlı Arama Yap</a>
                                         </span>
                                     </li>
                                 </ul>
                                 <b class="business-title">
-                                    <a title="Yeni Ekle" class="edit ui-ease-bg" href="#">
+                                    <a title="Yeni Ekle" class="business-edit ui-ease-bg" href="#">
                                         <svg class="ui-icon"><use href="../dist/icons.svg#plus"></use></svg>
                                     </a>
                                     Kullanıcılar
@@ -1279,22 +1279,22 @@
                                     <li>
                                         GARANTİ BBVA İŞLERİ
                                         <span class="ui-ease-1st-bg">
-                                            <a class="edit ui-listgroup-url" href="#">Düzenle</a>
-                                            <span class="remove" onclick="ui.alerts.dialog({ msg: 'GARANTİ BBVA İŞLERİ adlı hızlı arama favori listesinden kaldırılacaktır.', success: 'Kaldır', error: 'Vazgeç', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Hızlı arama kaldırıldı!' }); } });">Kaldır</span>
-                                            <a class="mark ui-listgroup-url" href="#">Hızlı Arama Yap</a>
+                                            <a class="business-edit ui-listgroup-url" href="#">Düzenle</a>
+                                            <span class="business-remove" onclick="ui.alerts.dialog({ msg: 'GARANTİ BBVA İŞLERİ adlı hızlı arama favori listesinden kaldırılacaktır.', success: 'Kaldır', error: 'Vazgeç', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Hızlı arama kaldırıldı!' }); } });">Kaldır</span>
+                                            <a class="business-mark ui-listgroup-url" href="#">Hızlı Arama Yap</a>
                                         </span>
                                     </li>
                                     <li>
                                         AKBANK UZMAN İŞLERİ
                                         <span class="ui-ease-1st-bg">
-                                            <a class="edit ui-listgroup-url" href="#">Düzenle</a>
-                                            <span class="remove" onclick="ui.alerts.dialog({ msg: 'AKBANK UZMAN İŞLERİ adlı hızlı arama favori listesinden kaldırılacaktır.', success: 'Kaldır', error: 'Vazgeç', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Hızlı arama kaldırıldı!' }); } });">Kaldır</span>
-                                            <a class="mark ui-listgroup-url" href="#">Hızlı Arama Yap</a>
+                                            <a class="business-edit ui-listgroup-url" href="#">Düzenle</a>
+                                            <span class="business-remove" onclick="ui.alerts.dialog({ msg: 'AKBANK UZMAN İŞLERİ adlı hızlı arama favori listesinden kaldırılacaktır.', success: 'Kaldır', error: 'Vazgeç', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Hızlı arama kaldırıldı!' }); } });">Kaldır</span>
+                                            <a class="business-mark ui-listgroup-url" href="#">Hızlı Arama Yap</a>
                                         </span>
                                     </li>
                                 </ul>
                                 <b class="business-title">
-                                    <a title="Yeni Ekle" class="edit ui-ease-bg" href="#">
+                                    <a title="Yeni Ekle" class="business-edit ui-ease-bg" href="#">
                                         <svg class="ui-icon"><use href="../dist/icons.svg#plus"></use></svg>
                                     </a>
                                     Banka / Şirket
@@ -1304,7 +1304,7 @@
                                     Hızlı arama kaydı yok
                                 </span>
                                 <b class="business-title">
-                                    <a title="Yeni Ekle" class="edit ui-ease-bg" href="#">
+                                    <a title="Yeni Ekle" class="business-edit ui-ease-bg" href="#">
                                         <svg class="ui-icon"><use href="../dist/icons.svg#plus"></use></svg>
                                     </a>
                                     Çözüm Ortağı Mutabakat Listesi
@@ -1314,7 +1314,7 @@
                                     Hızlı arama kaydı yok
                                 </span>
                                 <b class="business-title">
-                                    <a title="Yeni Ekle" class="edit ui-ease-bg" href="#">
+                                    <a title="Yeni Ekle" class="business-edit ui-ease-bg" href="#">
                                         <svg class="ui-icon"><use href="../dist/icons.svg#plus"></use></svg>
                                     </a>
                                     Harita Yoğunluk
@@ -1324,7 +1324,7 @@
                                     Hızlı arama kaydı yok
                                 </span>
                                 <b class="business-title">
-                                    <a title="Yeni Ekle" class="edit ui-ease-bg" href="#">
+                                    <a title="Yeni Ekle" class="business-edit ui-ease-bg" href="#">
                                         <svg class="ui-icon"><use href="../dist/icons.svg#plus"></use></svg>
                                     </a>
                                     Yıllık Ciro Karşılaştırması

@@ -30,7 +30,7 @@ ui.lineChart.colors = [
     // header time
     const headerTime = () => {
 
-        const headerTime = ui.find('.header-time')[0];
+        const headerTime = ui.find('.business-header-time')[0];
 
         if (headerTime !== undefined) {
             headerTime.innerHTML = '<b>Per,</b> <span class="ui-font-light">10 Mart</span> <b>13:15</b>';
@@ -41,20 +41,20 @@ ui.lineChart.colors = [
     // left panel menu
     const leftPanelMenu = () => {
 
-        const leftPanelHolder = ui.find('.ui-col-panel-l');
-        const leftPanel = ui.find('.panel-l');
+        const leftPanelHolder = ui.find('.ui-col-business-panel-l');
+        const leftPanel = ui.find('.business-panel-l');
 
         const leftPanelToggleIconLeft = 'angle-left';
         const leftPanelToggleIconRight = 'angle-right';
 
-        const leftPanelToggleBtn = ui.find('.panel-l-toggle')[0];
-        const leftPanelToggleIcon = ui.find('.panel-l-toggle .ui-icon')[0];
+        const leftPanelToggleBtn = ui.find('.business-panel-l-toggle')[0];
+        const leftPanelToggleIcon = ui.find('.business-panel-l-toggle .ui-icon')[0];
 
-        const leftPanelMinTabs = ui.find('.panel-l-min .ui-tab');
-        const leftPanelContents = ui.find('.panel-l-contents > .ui-tab-content');
+        const leftPanelMinTabs = ui.find('.business-panel-l-min .ui-tab');
+        const leftPanelContents = ui.find('.business-panel-l-contents > .ui-tab-content');
 
-        const nameShowMenu = 'show-menu';
-        const nameToggleMenu = 'toggle-menu';
+        const nameShowMenu = 'business-show-menu';
+        const nameToggleMenu = 'business-toggle-menu';
 
         const nameBtnVisible = 'ui-btn-visible';
 

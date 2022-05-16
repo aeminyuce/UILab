@@ -14,7 +14,7 @@ ui.lineChart.colors = ['hsl(331, 71%, 54%)', 'hsl(189, 95%, 40%)'];
   };
 
   var headerTime = function headerTime() {
-    var headerTime = ui.find('.header-time')[0];
+    var headerTime = ui.find('.business-header-time')[0];
 
     if (headerTime !== undefined) {
       headerTime.innerHTML = '<b>Per,</b> <span class="ui-font-light">10 Mart</span> <b>13:15</b>';
@@ -22,16 +22,16 @@ ui.lineChart.colors = ['hsl(331, 71%, 54%)', 'hsl(189, 95%, 40%)'];
   };
 
   var leftPanelMenu = function leftPanelMenu() {
-    var leftPanelHolder = ui.find('.ui-col-panel-l');
-    var leftPanel = ui.find('.panel-l');
+    var leftPanelHolder = ui.find('.ui-col-business-panel-l');
+    var leftPanel = ui.find('.business-panel-l');
     var leftPanelToggleIconLeft = 'angle-left';
     var leftPanelToggleIconRight = 'angle-right';
-    var leftPanelToggleBtn = ui.find('.panel-l-toggle')[0];
-    var leftPanelToggleIcon = ui.find('.panel-l-toggle .ui-icon')[0];
-    var leftPanelMinTabs = ui.find('.panel-l-min .ui-tab');
-    var leftPanelContents = ui.find('.panel-l-contents > .ui-tab-content');
-    var nameShowMenu = 'show-menu';
-    var nameToggleMenu = 'toggle-menu';
+    var leftPanelToggleBtn = ui.find('.business-panel-l-toggle')[0];
+    var leftPanelToggleIcon = ui.find('.business-panel-l-toggle .ui-icon')[0];
+    var leftPanelMinTabs = ui.find('.business-panel-l-min .ui-tab');
+    var leftPanelContents = ui.find('.business-panel-l-contents > .ui-tab-content');
+    var nameShowMenu = 'business-show-menu';
+    var nameToggleMenu = 'business-toggle-menu';
     var nameBtnVisible = 'ui-btn-visible';
     var cookieName = 'leftPanelToggle';
     var eventCloseLeftPanel = 'closeLeftPanel';
