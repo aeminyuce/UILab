@@ -237,7 +237,7 @@ main {
   display: block;
 }
 .business-panel-l-logo img {
-  max-width: 156px;
+  max-width: 250px;
   height: 50px;
 }
 .business-panel-l-contents {
@@ -307,7 +307,7 @@ main {
   font-weight: normal;
   line-height: normal;
   vertical-align: middle;
-  min-width: 16px;
+  min-width: 18px;
   background-color: hsl(0, 0%, 95%);
   background-color: var(--ui-panel-l-digits-bg);
   padding: 1px 3px;
@@ -463,6 +463,9 @@ main {
 }
 .business-panel-r .ui-tab-content .ui-listgroup li [class*="ui-avatar"] {
   border-radius: 1000px;
+}
+.business-panel-r .ui-tab-content .ui-listgroup li [class*="ui-avatar"] span {
+  line-height: 14px;
 }
 .business-panel-r .ui-tab-content .ui-listgroup li [class*="ui-avatar"] .ui-icon {
   width: 20px;
@@ -774,7 +777,7 @@ main {
   margin-top: 1px;
 }
 .business-masthead .ui-listgroup ul {
-  max-height: 306px;
+  max-height: 467px;
 }
 .business-masthead .ui-listgroup li > b,
 .business-masthead .ui-listgroup a > b,
@@ -799,4 +802,7 @@ main {
 }
 .business-masthead .ui-listgroup li [class*="ui-avatar"] {
   border-radius: 1000px;
+}
+.business-masthead .ui-listgroup li [class*="ui-avatar"] span {
+  line-height: 14px;
 }

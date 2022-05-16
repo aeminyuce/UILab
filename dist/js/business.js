@@ -17,7 +17,7 @@ ui.lineChart.colors = ['hsl(331, 71%, 54%)', 'hsl(189, 95%, 40%)'];
     var headerTime = ui.find('.business-header-time')[0];
 
     if (headerTime !== undefined) {
-      headerTime.innerHTML = '<b>Per,</b> <span class="ui-font-light">10 Mart</span> <b>13:15</b>';
+      headerTime.innerHTML = '<b>Thu,</b> <span class="ui-font-light">March 10</span> <b>13:15</b>';
     }
   };
 

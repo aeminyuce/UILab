@@ -61,7 +61,7 @@ html,main { box-sizing: border-box; height: 100%; }
 @panel-l-btn-length-max:               	 12;
 @panel-l-btn-margin:                	 2px;
 
-@panel-l-logo-max-width:                 156px;
+@panel-l-logo-max-width:                 250px;
 @panel-l-logo-height:                	 50px;
 
 @panel-l-contents-top:					 3px;
@@ -152,7 +152,7 @@ each(@panel-sizes, {
 						& > span {
 							font-size: 18px; margin-top: @panel-spacing; display: block;
 
-							& > i { box-sizing: border-box; ._color-var(black); font-size: 10px; font-style: normal; font-weight: normal; line-height: normal; vertical-align: middle; min-width: 16px; ._bg-var(panel-l-digits-bg); padding: 1px 3px; margin: -13px 0 0 -3px; display: inline-block; border-radius: @round; box-shadow: @shadow-sm; }
+							& > i { box-sizing: border-box; ._color-var(black); font-size: 10px; font-style: normal; font-weight: normal; line-height: normal; vertical-align: middle; min-width: 18px; ._bg-var(panel-l-digits-bg); padding: 1px 3px; margin: -13px 0 0 -3px; display: inline-block; border-radius: @round; box-shadow: @shadow-sm; }
 						}
 						& > i { font-size: 9px; font-style: normal; white-space: nowrap; text-overflow: ellipsis; line-height: 20px; overflow: hidden; display: block; }
 
@@ -230,6 +230,7 @@ each(@panel-sizes, {
 						[class*="ui-avatar"] {
 							border-radius: @circle;
 
+							span { line-height: 14px; }
 							.ui-icon { width: 20px; height: 20px; }
 						}
 					}
@@ -445,7 +446,7 @@ each(@panel-sizes, {
 @masthead-cover-height:        	        80px;
 @masthead-cover-margin-b:        	    10px;
 
-@masthead-listgroup-max-height:         306px;
+@masthead-listgroup-max-height:         467px;
 @masthead-show-sidebar-btn-r:			68px;
 
 .ui-col-business-masthead { width: extract(@panel-sizes, 1); }
@@ -472,7 +473,11 @@ each(@panel-sizes, {
 		}
 		li {
 			a:not(:last-child){ margin-bottom: @panel-r-menu-padding; ._border-var(@dir: border-bottom; @var: border-light-color); }
-			[class*="ui-avatar"] { border-radius: @circle; }
+			[class*="ui-avatar"] {
+				border-radius: @circle;
+
+				span { line-height: 14px; }
+			}
 		}
 	}
 

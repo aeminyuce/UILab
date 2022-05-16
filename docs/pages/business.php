@@ -37,8 +37,8 @@
                         <div class="business-panel-l-min">
 
                             <!-- toggle sidebar -->
-                            <button title="Menü Daralt/Genişlet" class="business-panel-l-toggle ui-btn ui-btn-ghost ui-btn-square ui-m-10-b ui-ease-btn ui-visible-xl">
-                                <svg class="ui-icon ui-no-opacity">
+                            <button title="Toggle menu" class="business-panel-l-toggle ui-btn ui-btn-ghost ui-btn-square ui-m-10-b ui-ease-btn ui-visible-xl">
+                                <svg class="ui-icon">
                                     <use href="../dist/icons.svg#angle-<?php echo $menuIcon ?>"></use> <!-- cookie: menu -->
                                 </svg>
                             </button>
@@ -90,7 +90,7 @@
 
                             <!-- logo -->
                             <a title="Logo" class="business-panel-l-logo" href="#">
-                                <img src="img/logo-udashboard.png" alt="">
+                                <img class="ui-invert-img" src="img/business/logo-business-panel.png" alt="">
                             </a>
 
                             <!-- menus -->
@@ -285,7 +285,7 @@
                                     <a href="#" class="ui-btn ui-btn-ghost">Tahsilat Listeleme</a>
                                     <a href="#" class="ui-btn ui-btn-ghost">Personel Masraf</a>
                                     <a href="#" class="ui-btn ui-btn-ghost">Kadrolu Uzman Prim Listesi</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Denetmen Prim Listesi</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Supervisor Prim Listesi</a>
                                     <a href="#" class="ui-btn ui-btn-ghost">Listeler/Raporlar</a>
                                     <a href="#" class="ui-btn ui-btn-ghost">Mutabakat Başvuru Log</a>
                                 </div>
@@ -302,7 +302,7 @@
                                     <a href="#" class="ui-btn ui-btn-ghost">Uzman İş Takvimi</a>
                                     <a href="#" class="ui-btn ui-btn-ghost">Uzman İş Sayıları</a>
                                     <a href="#" class="ui-btn ui-btn-ghost">Sekreterya İş Sayıları</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Denetmen İş Takvimi</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Supervisor İş Takvimi</a>
                                     <a href="#" class="ui-btn ui-btn-ghost">Matris</a>
                                     <a href="#" class="ui-btn ui-btn-ghost">TGFST & KFE</a>
                                     <a href="#" class="ui-btn ui-btn-ghost">İş Adım Süreleri</a>
@@ -315,10 +315,10 @@
                                     <a href="#" class="ui-btn ui-btn-ghost">Başvuru Performans</a>
                                     <a href="#" class="ui-btn ui-btn-ghost">Günlük Rapor</a>
                                     <a href="#" class="ui-btn ui-btn-ghost">Aylık Müşteri Değerlendirme Raporu</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Denetmen Ciroları</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Denetmen Durumları</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Denetmen Puanlama</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">2. Denetmen Puanlama</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Supervisor Ciroları</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Supervisor Durumları</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Supervisor Puanlama</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">2. Supervisor Puanlama</a>
                                     <a href="#" class="ui-btn ui-btn-ghost">Değerlendirme Tablosu</a>
                                     <a href="#" class="ui-btn ui-btn-ghost">Birim Fiyat Analizi</a>
                                     <a href="#" class="ui-btn ui-btn-ghost">G. D. Asgari Ücret Tarifesi Kıyaslama</a>
@@ -421,17 +421,19 @@
                             <!-- header time -->
                             <div class="business-header-time ui-hidden-sm"></div>
 
-                            <!-- profile -->
+                            <!-- header profile -->
                             <div class="business-profile-menu ui-dropdown ui-menu-l ui-ease-dropdown">
                                 <button title="Profilim" class="ui-btn ui-btn-multi ui-no-p ui-circle">
                                     <svg class="ui-icon ui-icon-sm ui-no-opacity"><use href="../dist/icons.svg#grid-column"></use></svg>
-                                    <img class="ui-avatar ui-avatar-xs ui-circle" src="img/profile-image2.jpg" alt="">
+                                    <span class="ui-avatar ui-avatar-xs ui-circle ui-theme-sub ui-fill-dark-100">
+                                        <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#tree-pine"></use></svg>
+                                    </span>
                                 </button>
                                 <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
                                     <li class="ui-border-b ui-border-lg">
                                         <a href="#">
-                                            <span class="ui-color-black-50">Supervisor User</span><br>
-                                            <span class="business-info ui-m-3-t">Denetmen</span>
+                                            <span class="ui-color-black-50">Pine Tree User</span><br>
+                                            <span class="business-info ui-m-3-t ui-theme-base ui-fill-dark-100">Supervisor</span>
                                         </a>
                                     </li>
                                     <li>
@@ -555,7 +557,7 @@
                                         <div class="ui-col-8">
                                             <div class="ui-card ui-full-h ui-round ui-shadow-lg">
                                                 <div class="ui-card-side ui-p-15 ui-border-b">
-                                                    <h4 class="ui-h4">İş Yoğunluk Grafiği</h4>
+                                                    <h4 class="ui-h4">Work Intensity</h4>
                                                 </div>
                                                 <div class="ui-card-side ui-p-15">
                                                     <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,30" data-ui-step="6"
@@ -609,6 +611,65 @@
                                                 <div class="ui-calendar ui-ease-calendar ui-round" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>
                                             </div>
                                         </div>
+                                        <div class="ui-col-12">
+                                            <div class="ui-card ui-full-h ui-round ui-shadow-lg">
+                                                <div class="ui-card-side ui-p-15 ui-border-b">
+                                                    <h4 class="ui-h4">Statistics</h4>
+                                                </div>
+                                                <div class="ui-card-side ui-p-15-h">
+                                                    <div class="ui-row ui-row-gap-lg">
+                                                        <div class="ui-col-2 ui-col-sm-4 ui-col-xs-6">
+                                                            <div class="ui-donut-chart ui-ease-donut-chart">
+                                                                <strong>
+                                                                    <span class="ui-font-16 ui-color-black-25">Interior</span>
+                                                                    <span class="ui-sp-2"></span>4,9/5
+                                                                </strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-ui-percent="96" />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ui-col-2 ui-col-sm-4 ui-col-xs-6">
+                                                            <div class="ui-donut-chart ui-ease-donut-chart">
+                                                                <strong>
+                                                                    <span class="ui-font-16 ui-color-black-25">Exterior</span>
+                                                                    <span class="ui-sp-2"></span>4/5
+                                                                </strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="88" />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ui-col-2 ui-col-sm-4 ui-col-xs-6">
+                                                            <div class="ui-donut-chart ui-ease-donut-chart">
+                                                                <strong>
+                                                                    <span class="ui-font-16 ui-color-black-25">Quality</span>
+                                                                    <span class="ui-sp-2"></span>4/5
+                                                                </strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="86" />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ui-col-2 ui-col-sm-4 ui-col-xs-6">
+                                                            <div class="ui-donut-chart ui-ease-donut-chart">
+                                                                <strong>
+                                                                    <span class="ui-font-16 ui-color-black-25">Savings</span>
+                                                                    <span class="ui-sp-2"></span>3.9/5
+                                                                </strong>
+                                                                <svg viewBox="0 0 160 160">
+                                                                    <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
+                                                                    <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="80" />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -624,16 +685,18 @@
                                             class="business-masthead-cover"
                                             style="background-image: url(img/business/profile-cover.png)">
                                         </div>
-                                        <img class="ui-avatar ui-avatar-lg" src="img/profile-image2.jpg" alt="">
+                                        <span class="ui-avatar-lg ui-theme-sub ui-fill-dark-100">
+                                            <svg class="ui-icon"><use href="../dist/icons.svg#tree-pine"></use></svg>
+                                        </span>
 
                                         <div class="ui-align-c">
-                                            Supervisor User
+                                            Pine Tree User
                                             <div class="ui-color-black-50 ui-font-11 ui-m-15-b">
                                                 su@businessdomain.com
                                             </div>
 
                                             <div class="ui-m-20-b">
-                                                <span class="business-info ui-theme-green ui-fill-dark-100">Licence</span>
+                                                <span class="business-info ui-theme-sub ui-fill-dark-100">Licence</span>
                                                 <span class="business-info">Signature</span>
                                             </div>
                                         </div>
@@ -642,11 +705,6 @@
                                             Recent Reports
                                             <span class="business-info">6</span>
                                         </b>
-                                        <!--no content -->
-                                        <span class="business-no-content-sm">
-                                            <svg class="ui-icon"><use href="../dist/icons.svg#briefcase"></use></svg>
-                                            Son eklenen iş kaydı yok
-                                        </span>
 
                                         <div class="ui-listgroup">
                                             <ul class="ui-listgroup-has-avatar-xs ui-listgroup-has-icon-xs ui-scroll-v ui-ease-listgroup">
@@ -654,7 +712,7 @@
                                                     <a href="#">
                                                         <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
                                                         <span class="ui-avatar-xs">
-                                                            <span>25 saat</span>
+                                                            <span>25 hrs.</span>
                                                         </span>
                                                         <b>DOC-312557</b>
                                                         Specialist User
@@ -665,7 +723,7 @@
                                                     <a href="#">
                                                         <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
                                                         <span class="ui-avatar-xs">
-                                                            <span>11 saat</span>
+                                                            <span>11 hrs.</span>
                                                         </span>
                                                         <b>DOC-312557</b>
                                                         Specialist User
@@ -675,7 +733,7 @@
                                                     <a href="#">
                                                         <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
                                                         <span class="ui-avatar-xs">
-                                                            <span>25 saat</span>
+                                                            <span>25 hrs.</span>
                                                         </span>
                                                         <b>DOC-312557</b>
                                                         Specialist User
@@ -686,7 +744,7 @@
                                                     <a href="#">
                                                         <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
                                                         <span class="ui-avatar-xs">
-                                                            <span>11 saat</span>
+                                                            <span>11 hrs.</span>
                                                         </span>
                                                         <b>DOC-312557</b>
                                                         Specialist User
@@ -696,7 +754,7 @@
                                                     <a href="#">
                                                         <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
                                                         <span class="ui-avatar-xs">
-                                                            <span>25 saat</span>
+                                                            <span>25 hrs.</span>
                                                         </span>
                                                         <b>DOC-312557</b>
                                                         Specialist User
@@ -707,7 +765,7 @@
                                                     <a href="#">
                                                         <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
                                                         <span class="ui-avatar-xs">
-                                                            <span>11 saat</span>
+                                                            <span>11 hrs.</span>
                                                         </span>
                                                         <b>DOC-312557</b>
                                                         Specialist User
@@ -719,10 +777,16 @@
 
                                         <b class="business-title">Online Users</b>
                                         <div class="ui-align-c ui-p-10">
-                                            <div class="ui-avatar-holder">
-                                                <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/profile-image.jpg" alt="">
-                                                <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/profile-image2.jpg" alt="">
-                                                <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/profile-image3.jpg" alt="">
+                                            <div class="ui-avatar-holder ui-hover-scale-more-2nd ui-ease-2nd-layout">
+                                                <a href="#" title="User Name">
+                                                    <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/business/profile-image3.jpg" alt="">
+                                                </a>
+                                                <a href="#" title="User Name">
+                                                    <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/business/profile-image.jpg" alt="">
+                                                </a>
+                                                <a href="#" title="User Name">
+                                                    <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/business/profile-image2.jpg" alt="">
+                                                </a>
                                                 <a class="ui-btn ui-btn-square ui-circle ui-ease-btn" href="#">+3</a>
                                             </div>
                                         </div>
@@ -781,7 +845,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <h4>
-                            <span class="business-info">2 Yeni</span>
+                            <span class="business-info">2 New</span>
                             Bildirimler
                         </h4>
 
@@ -793,7 +857,7 @@
                             <!--no content -->
                             <div class="business-no-content">
                                 <svg class="ui-icon"><use href="../dist/icons.svg#bell-on"></use></svg>
-                                Yeni bildirim yok
+                                New bildirim yok
                             </div>
 
                             <div class="ui-listgroup">
@@ -825,7 +889,7 @@
                                             </span>
                                             <b>DOC-312557</b>
                                             <em>14.03.2022 09:50</em>
-                                            <p>Denetmene gönderildi.</p>
+                                            <p>Supervisore gönderildi.</p>
                                             <span class="business-info">Geçen süre: 4 sa 59 dk</span>
                                         </a>
                                     </li>
@@ -877,7 +941,7 @@
                                             </span>
                                             <b>DOC-312557</b>
                                             <em>14.03.2022 09:50</em>
-                                            <p>Denetmene gönderildi.</p>
+                                            <p>Supervisore gönderildi.</p>
                                             <span class="business-info">Geçen süre: 4 sa 59 dk</span>
                                         </a>
                                     </li>
@@ -915,7 +979,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <h4>
-                            <span class="business-info">2 Yeni</span>
+                            <span class="business-info">2 New</span>
                             <span class="business-mark ui-ease-bg" onclick="ui.alerts.message({ msg: 'Tüm notlar okundu olarak işaretlendi!' });">Tümünü Okundu İşaretle</span>
                             Notlar
                         </h4>
@@ -928,7 +992,7 @@
                             <!--no content -->
                             <div class="business-no-content">
                                 <svg class="ui-icon"><use href="../dist/icons.svg#pencil-write"></use></svg>
-                                Yeni not yok
+                                New not yok
                             </div>
 
                             <div class="ui-listgroup">
@@ -958,22 +1022,22 @@
                                     <li>
                                         <a href="#">
                                             <img class="ui-avatar-xs" src="img/profile-image3.jpg" alt="">
-                                            <b>Supervisor User</b>
+                                            <b>Pine Tree User</b>
                                             DOC-312557
                                             <em>3 sa 56 dk önce</em>
                                         </a>
-                                        <p>DENETMENE GÖNDERİLDİ<br>Supervisor User İşi Aldı</p>
+                                        <p>SupervisorE GÖNDERİLDİ<br>Pine Tree User İşi Aldı</p>
                                     </li>
                                     <li>
                                         <a href="#">
                                             <span class="ui-avatar-xs">
                                                 <span>KD</span>
                                             </span>
-                                            <b>Supervisor User</b>
+                                            <b>Pine Tree User</b>
                                             DOC-312557
                                             <em>3 sa 56 dk önce</em>
                                         </a>
-                                        <p>DENETMENE GÖNDERİLDİ<br>Supervisor User İşi Aldı</p>
+                                        <p>SupervisorE GÖNDERİLDİ<br>Pine Tree User İşi Aldı</p>
                                     </li>
                                     <li>
                                         <a href="#">
@@ -1008,7 +1072,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <h4>
-                            <span class="business-info">8 Yeni</span>
+                            <span class="business-info">8 New</span>
                             Bekleyen İşler
                         </h4>
 
@@ -1178,7 +1242,7 @@
                     </button>
                     <div class="ui-tab-content">
                         <h4>
-                            <span class="business-info">4 Yeni</span>
+                            <span class="business-info">4 New</span>
                             Gönderilcek İşler
                         </h4>
 
@@ -1264,7 +1328,7 @@
                                         ŞİRKET TÜM İŞLER
                                         <span class="ui-ease-1st-bg">
                                             <a class="business-edit ui-listgroup-url" href="#">Düzenle</a>
-                                            <span class="business-remove" onclick="ui.alerts.dialog({ msg: 'ŞİRKET TÜM İŞLER adlı hızlı arama favori listesinden kaldırılacaktır.', success: 'Kaldır', error: 'Vazgeç', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Hızlı arama kaldırıldı!' }); } });">Kaldır</span>
+                                            <span class="business-remove" onclick="ui.alerts.dialog({ msg: 'ŞİRKET TÜM İŞLER adlı hızlı arama favori listesinden kaldırılacaktır.', success: 'Remove', error: 'Vazgeç', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Hızlı arama kaldırıldı!' }); } });">Kaldır</span>
                                             <a class="business-mark ui-listgroup-url" href="#">Hızlı Arama Yap</a>
                                         </span>
                                     </li>
@@ -1280,7 +1344,7 @@
                                         GARANTİ BBVA İŞLERİ
                                         <span class="ui-ease-1st-bg">
                                             <a class="business-edit ui-listgroup-url" href="#">Düzenle</a>
-                                            <span class="business-remove" onclick="ui.alerts.dialog({ msg: 'GARANTİ BBVA İŞLERİ adlı hızlı arama favori listesinden kaldırılacaktır.', success: 'Kaldır', error: 'Vazgeç', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Hızlı arama kaldırıldı!' }); } });">Kaldır</span>
+                                            <span class="business-remove" onclick="ui.alerts.dialog({ msg: 'GARANTİ BBVA İŞLERİ adlı hızlı arama favori listesinden kaldırılacaktır.', success: 'Remove', error: 'Vazgeç', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Hızlı arama kaldırıldı!' }); } });">Kaldır</span>
                                             <a class="business-mark ui-listgroup-url" href="#">Hızlı Arama Yap</a>
                                         </span>
                                     </li>
@@ -1288,7 +1352,7 @@
                                         AKBANK UZMAN İŞLERİ
                                         <span class="ui-ease-1st-bg">
                                             <a class="business-edit ui-listgroup-url" href="#">Düzenle</a>
-                                            <span class="business-remove" onclick="ui.alerts.dialog({ msg: 'AKBANK UZMAN İŞLERİ adlı hızlı arama favori listesinden kaldırılacaktır.', success: 'Kaldır', error: 'Vazgeç', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Hızlı arama kaldırıldı!' }); } });">Kaldır</span>
+                                            <span class="business-remove" onclick="ui.alerts.dialog({ msg: 'AKBANK UZMAN İŞLERİ adlı hızlı arama favori listesinden kaldırılacaktır.', success: 'Remove', error: 'Vazgeç', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Hızlı arama kaldırıldı!' }); } });">Kaldır</span>
                                             <a class="business-mark ui-listgroup-url" href="#">Hızlı Arama Yap</a>
                                         </span>
                                     </li>
@@ -1414,7 +1478,7 @@
 
                     <!-- help icon -->
                     <a class="ui-btn ui-btn-ghost ui-btn-square ui-icons-no-opacity ui-ease-btn" title="Help Center" href="#">
-                        <svg class="ui-icon"><use href="../dist/icons.svg#help"/> </svg>
+                        <svg class="ui-icon ui-theme-gray ui-text"><use href="../dist/icons.svg#help"/> </svg>
                     </a>
 
                 </div>
