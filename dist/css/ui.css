@@ -6506,7 +6506,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-avatar-xs {
   text-align: center;
   vertical-align: middle;
-  background-clip: padding-box;
   position: relative;
 }
 .ui-avatar:not(img),
@@ -6573,12 +6572,12 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   border-color: var(--ui-body-bg);
 }
 .ui-dropdown .ui-avatar-holder [class*="ui-avatar"] {
-  border-color: hsl(0, 0%, 100%);
-  border-color: var(--ui-highlighted);
+  border-color: hsl(0, 0%, 100%) !important;
+  border-color: var(--ui-highlighted) !important;
 }
 .ui-card .ui-avatar-holder [class*="ui-avatar"] {
-  border-color: hsl(0, 0%, 100%);
-  border-color: var(--ui-card-bg);
+  border-color: hsl(0, 0%, 100%) !important;
+  border-color: var(--ui-card-bg) !important;
 }
 /* notifier */
 .ui-notifier {

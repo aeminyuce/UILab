@@ -22,7 +22,7 @@
         font-size: @font-16; width: @avatar-default; height: @avatar-default;
 
         &,&-lg,&-sm,&-xs {
-            text-align: center; vertical-align: middle; background-clip: padding-box; position: relative;
+            text-align: center; vertical-align: middle; position: relative;
 
             &:not(img) {
                 text-decoration: none; ._bg-var(avatar-bg); display: inline-block;
@@ -59,8 +59,8 @@
             [class*="ui-avatar"] {
                 &:not([class*="ui-stroke"]) { ._border-color-var(body-bg); }
 
-                .ui-dropdown & { ._border-color-var(highlighted); }
-                .ui-card & { ._border-color-var(card-bg); }
+                .ui-dropdown & { ._border-color-var(highlighted) !important; }
+                .ui-card & { ._border-color-var(card-bg) !important; }
             }
         }
     }
