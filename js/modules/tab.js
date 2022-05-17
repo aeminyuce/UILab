@@ -233,6 +233,8 @@ ui.tab.Start = () => {
                             ui.addClass(currentContent, ui.tab.nameOpenEase);
                             currentContent.style.height = currentHeight + 'px';
 
+                            ui.trigger(document, ui.globals.eventDomChange); // set custom event
+
                             if (accordion) {
 
                                 setTimeout(() => {
@@ -316,7 +318,10 @@ ui.tab.Start = () => {
                         ui.addClass(currentContent, ui.tab.nameOpen);
 
                         setTimeout(() => {
+
                             ui.addClass(currentContent, ui.tab.nameOpenEase);
+                            ui.trigger(document, ui.globals.eventDomChange); // set custom event
+
                         }, ui.globals.fast / 2);
 
                     }, 0);

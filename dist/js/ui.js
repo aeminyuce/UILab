@@ -1277,6 +1277,7 @@ ui.tab.Start = function () {
           setTimeout(function () {
             ui.addClass(currentContent, ui.tab.nameOpenEase);
             currentContent.style.height = currentHeight + 'px';
+            ui.trigger(document, ui.globals.eventDomChange);
 
             if (accordion) {
               setTimeout(function () {
@@ -1339,6 +1340,7 @@ ui.tab.Start = function () {
           ui.addClass(currentContent, ui.tab.nameOpen);
           setTimeout(function () {
             ui.addClass(currentContent, ui.tab.nameOpenEase);
+            ui.trigger(document, ui.globals.eventDomChange);
           }, ui.globals.fast / 2);
         }, 0);
       }
