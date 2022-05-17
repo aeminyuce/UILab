@@ -6506,6 +6506,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-avatar-xs {
   text-align: center;
   vertical-align: middle;
+  background-clip: padding-box;
   position: relative;
 }
 .ui-avatar:not(img),
