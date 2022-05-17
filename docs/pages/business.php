@@ -96,23 +96,21 @@
                             <!-- menus -->
                             <div class="ui-tab-content ui-open ui-open-ease">
 
-                                <form action="#">
-                                    <div class="ui-input ui-form-icon ui-round ui-m-10 ui-border-dual ui-ease-form">
-                                        <button type="submit">
-                                            <svg class="ui-icon"><use href="../dist/icons.svg#search"/></svg>
-                                        </button>
-                                        <input type="text" placeholder="Search">
-                                    </div>
-                                </form>
+                                <div class="ui-p-10 ui-m-10-b ui-ease-1st-bg">
+                                    <form action="#">
+                                        <div class="ui-input ui-form-icon ui-round ui-m-15-b ui-ease-form">
+                                            <button type="submit">
+                                                <svg class="ui-icon"><use href="../dist/icons.svg#search"/></svg>
+                                            </button>
+                                            <input type="text" placeholder="Search reports">
+                                        </div>
+                                    </form>
+                                    <a class="business-edit ui-m-4-b" href="#">recently added</a>
+                                    <a class="business-edit ui-m-4-b" href="#">yearly reports</a>
+                                </div>
 
                                 <div class="ui-p-10-h">My Stats</div>
-                                <div class="ui-row ui-row-gap-sm ui-no-fluid ui-align-c ui-m-10 ui-theme-base ui-ease-2nd-btn">
-                                    <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
-                                            <span>32</span>
-                                            <i>Bekleyen</i>
-                                        </button>
-                                    </div>
+                                <div class="ui-row ui-row-gap-sm ui-no-fluid ui-highlight ui-align-c ui-m-10 ui-theme-base ui-ease-2nd-btn">
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>
@@ -138,6 +136,12 @@
                                                 <i>16</i>
                                             </span>
                                             <i>2. Denetimde</i>
+                                        </button>
+                                    </div>
+                                    <div class="ui-col-4">
+                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
+                                            <span>32</span>
+                                            <i>Bekleyen</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
@@ -179,17 +183,11 @@
                                 </div>
 
                                 <div class="ui-p-10-h">Company Stats</div>
-                                <div class="ui-row ui-row-gap-sm ui-no-fluid ui-align-c ui-m-10 ui-theme-sub ui-ease-2nd-btn">
-                                    <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
-                                            <span>416</span>
-                                            <i>Bekleyen</i>
-                                        </button>
-                                    </div>
+                                <div class="ui-row ui-row-gap-sm ui-no-fluid ui-highlight ui-align-c ui-m-10 ui-theme-sub ui-ease-2nd-btn">
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>
-                                                665
+                                                315
                                                 <i>17</i>
                                             </span>
                                             <i>Uzmanda</i>
@@ -214,39 +212,85 @@
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
+                                        <button class="ui-btn ui-btn-multi">
+                                            <span>416</span>
+                                            <i>Bekleyen</i>
+                                        </button>
+                                    </div>
+                                    <div class="ui-col-4">
+                                        <button class="ui-btn ui-btn-multi">
                                             <span>1</span>
                                             <i>Kotrol Edildi</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
+                                        <button class="ui-btn ui-btn-multi">
                                             <span>0</span>
                                             <i>Bugün</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
+                                        <button class="ui-btn ui-btn-multi">
                                             <span>74</span>
                                             <i>Donmuş</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
+                                        <button class="ui-btn ui-btn-multi">
                                             <span>797</span>
                                             <i>Gecikmiş</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
+                                        <button class="ui-btn ui-btn-multi">
                                             <svg class="ui-icon"><use href="../dist/icons.svg#hourglass-start"></use></svg>
                                             <i>Gönderilecek</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
-                                        <button class="ui-btn ui-btn-multi ui-fill-dark-100">
+                                        <button class="ui-btn ui-btn-multi">
                                             <svg class="ui-icon"><use href="../dist/icons.svg#flag"></use></svg>
                                             <i>Raporlaşmış</i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="ui-p-10-h">Regional Stats</div>
+                                <div class="ui-row ui-row-gap-sm ui-no-fluid ui-align-c ui-m-10 ui-ease-2nd-btn">
+                                    <div class="ui-col-4">
+                                        <button class="ui-btn ui-btn-multi">
+                                            <span>416</span>
+                                            <i>Bekleyen</i>
+                                        </button>
+                                    </div>
+                                    <div class="ui-col-4">
+                                        <button class="ui-btn ui-btn-multi">
+                                            <span>1</span>
+                                            <i>Kotrol Edildi</i>
+                                        </button>
+                                    </div>
+                                    <div class="ui-col-4">
+                                        <button class="ui-btn ui-btn-multi">
+                                            <span>0</span>
+                                            <i>Bugün</i>
+                                        </button>
+                                    </div>
+                                    <div class="ui-col-4">
+                                        <button class="ui-btn ui-btn-multi">
+                                            <span>74</span>
+                                            <i>Donmuş</i>
+                                        </button>
+                                    </div>
+                                    <div class="ui-col-4">
+                                        <button class="ui-btn ui-btn-multi">
+                                            <span>797</span>
+                                            <i>Gecikmiş</i>
+                                        </button>
+                                    </div>
+                                    <div class="ui-col-4">
+                                        <button class="ui-btn ui-btn-multi">
+                                            <svg class="ui-icon"><use href="../dist/icons.svg#hourglass-start"></use></svg>
+                                            <i>Gönderilecek</i>
                                         </button>
                                     </div>
                                 </div>
@@ -426,7 +470,7 @@
                                 <button title="Profilim" class="ui-btn ui-btn-multi ui-no-p ui-circle">
                                     <svg class="ui-icon ui-icon-sm ui-no-opacity"><use href="../dist/icons.svg#grid-column"></use></svg>
                                     <span class="ui-avatar ui-avatar-xs ui-circle ui-theme-sub ui-fill-dark-100">
-                                        <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#tree-pine"></use></svg>
+                                        <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#user"></use></svg>
                                     </span>
                                 </button>
                                 <ul class="ui-dropdown-menu ui-dropdown-has-icon ui-round ui-shadow-lg">
@@ -483,84 +527,57 @@
 
                                     <!-- contents -->
                                     <div class="ui-row">
-                                        <div class="ui-col-12 ui-no-p">
-                                            <div class="ui-carousel" data-ui-col-xl="3" data-ui-col-lg="2" data-ui-col="2" data-ui-col-md="2" data-ui-col-sm="1" data-ui-col-xs="1">
-                                                <div class="ui-carousel-slider ui-icons-m-5-r ui-ease-layout ui-ease-slow ui-ease-in-out">
-
-                                                    <div class="ui-carousel-content ui-p-10 ui-theme-base">
-                                                        <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
-                                                            <div class="ui-col-static ui-no-fluid">
-                                                                <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
-                                                                    <div class="ui-col-12">
-                                                                        <div class="ui-font-18">Pending</div>
-                                                                        <span class="ui-color-black-25 ui-font-16">Total: 45%</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="ui-col-100 ui-align-r">
-                                                                    <span class="ui-font-38 ui-text">157</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="ui-progress-bar ui-m-15-t ui-round">
-                                                                <span class="ui-fill-dark-100 ui-stripe-light" style="width: 45%;"></span>
-                                                            </div>
+                                        <div class="ui-col-4 ui-col-md-6 ui-theme-base">
+                                            <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
+                                                <div class="ui-col-static ui-no-fluid">
+                                                    <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
+                                                        <div class="ui-col-12">
+                                                            <div class="ui-font-18">Active Reports</div>
+                                                            <span class="ui-color-black-25 ui-font-16">74% efficiency</span>
                                                         </div>
                                                     </div>
-                                                    <div class="ui-carousel-content ui-p-10 ui-theme-base">
-                                                        <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
-                                                            <div class="ui-col-static ui-no-fluid">
-                                                                <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
-                                                                    <div class="ui-col-12">
-                                                                        <div class="ui-font-18">Paused</div>
-                                                                        <span class="ui-color-black-25 ui-font-16">Total: 35%</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="ui-col-100 ui-align-r">
-                                                                    <span class="ui-font-38 ui-text">23</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="ui-progress-bar ui-m-15-t ui-round">
-                                                                <span class="ui-fill-dark-100 ui-stripe-light" style="width: 35%;"></span>
-                                                            </div>
-                                                        </div>
+                                                    <div class="ui-col-100 ui-align-r">
+                                                        <span class="ui-font-38 ui-text">19</span>
                                                     </div>
-                                                    <div class="ui-carousel-content ui-p-10 ui-theme-sub">
-                                                        <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
-                                                            <div class="ui-col-static ui-no-fluid">
-                                                                <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
-                                                                    <div class="ui-col-12">
-                                                                        <div class="ui-font-18">Completed</div>
-                                                                        <span class="ui-color-black-25 ui-font-16">Total: 80%</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="ui-col-100 ui-align-r">
-                                                                    <span class="ui-font-38 ui-text">256</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="ui-progress-bar ui-m-15-t ui-round">
-                                                                <span class="ui-fill-dark-100 ui-stripe-light" style="width: 80%;"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
                                                 </div>
-                                                <div class="ui-carousel-nav ui-no-m-t ui-m-10-b ui-ease-1st-btn">
-                                                    <button class="ui-carousel-prev ui-btn ui-btn-ghost ui-btn-square ui-circle">
-                                                        <svg class="ui-icon ui-m-3-r"><use href="../dist/icons.svg#angle-left"/></svg>
-                                                    </button>
-                                                    <span class="ui-carousel-dots ui-color-black-25"></span>
-                                                    <button class="ui-carousel-next ui-btn ui-btn-ghost ui-btn-square ui-circle">
-                                                        <svg class="ui-icon ui-m-3-l"><use href="../dist/icons.svg#angle-right"/></svg>
-                                                    </button>
+                                                <div class="ui-progress-bar ui-m-15-t ui-round">
+                                                    <span class="ui-fill-dark-100" style="width: 74%;"></span>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="ui-col-8 ui-col-md-6 ui-theme-sub">
+                                            <div class="ui-card ui-full-h ui-p-15 ui-round ui-shadow-lg">
+                                                <div class="ui-col-static ui-no-fluid">
+                                                    <div class="ui-row ui-no-row-gap-h ui-row-gap-md-v">
+                                                        <div class="ui-col-12">
+                                                            <div class="ui-font-18">Finished Reports</div>
+                                                            <span class="ui-color-black-25 ui-font-16">58% efficiency</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ui-col-300 ui-col-sm-100 ui-col-xs-100 ui-align-r">
+                                                        <span class="ui-font-38 ui-text">
+                                                            <span class="ui-font-18 ui-hidden-sm">final reports</span>
+                                                            106
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="ui-progress-bar ui-m-15-t ui-round">
+                                                    <span class="ui-fill-dark-100" style="width: 58%;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ui-col-4">
+                                            <div class="ui-card ui-round ui-full-h ui-shadow-lg">
+                                                <div class="ui-calendar ui-ease-calendar ui-round"></div>
                                             </div>
                                         </div>
                                         <div class="ui-col-8">
                                             <div class="ui-card ui-full-h ui-round ui-shadow-lg">
                                                 <div class="ui-card-side ui-p-15 ui-border-b">
-                                                    <h4 class="ui-h4">Work Intensity</h4>
+                                                    <h4 class="ui-h4">Report Intensity</h4>
                                                 </div>
                                                 <div class="ui-card-side ui-p-15">
-                                                    <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,30" data-ui-step="6"
+                                                    <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,28" data-ui-step="6"
                                                         data-ui-x="01.12.2019,02.12.2019,03.12.2019,04.12.2019,05.12.2019,06.12.2019,07.12.2019,08.12.2019,09.12.2019,10.12.2019,11.12.2019,12.12.2019,13.12.2019,14.12.2019,15.12.2019,16.12.2019,17.12.2019,18.12.2019">
                                                         <ul class="ui-line-chart" data-ui-type="filled">
                                                             <li data-ui-y="64"></li>
@@ -606,65 +623,67 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="ui-col-4">
-                                            <div class="ui-card ui-round ui-full-h ui-shadow-lg">
-                                                <div class="ui-calendar ui-ease-calendar ui-round" data-ui-src="json/calendar.json" data-ui-date="2019,6"></div>
-                                            </div>
-                                        </div>
                                         <div class="ui-col-12">
                                             <div class="ui-card ui-full-h ui-round ui-shadow-lg">
                                                 <div class="ui-card-side ui-p-15 ui-border-b">
-                                                    <h4 class="ui-h4">Statistics</h4>
+                                                    <h4 class="ui-h4">Performance List</h4>
                                                 </div>
-                                                <div class="ui-card-side ui-p-15-h">
-                                                    <div class="ui-row ui-row-gap-lg">
-                                                        <div class="ui-col-2 ui-col-sm-4 ui-col-xs-6">
-                                                            <div class="ui-donut-chart ui-ease-donut-chart">
+                                                <div class="ui-card-side">
+                                                    <div class="ui-row ui-no-fluid">
+                                                        <div class="ui-col-lg-2 ui-col-3 ui-col-sm-6 ui-col-xs-6 ui-offset-lg-0 ui-offset-3 ui-offset-sm-0 ui-offset-xs-0">
+                                                            <div class="ui-donut-chart ui-ease-donut-chart ui-theme-base">
                                                                 <strong>
-                                                                    <span class="ui-font-16 ui-color-black-25">Interior</span>
-                                                                    <span class="ui-sp-2"></span>4,9/5
+                                                                    <span class="ui-avatar-lg ui-circle ui-m-5-b ui-bg-white ui-invert-bg ui-shadow-lg">
+                                                                        <span class="ui-font-regular ui-m-3-t">
+                                                                            86%
+                                                                            <span class="ui-font-14 ui-m-5-t ui-block">UPT</span>
+                                                                        </span>
+                                                                    </span>
                                                                 </strong>
                                                                 <svg viewBox="0 0 160 160">
                                                                     <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
-                                                                    <circle r="69.85699" cy="80" cx="80" stroke="hsl(186, 70%, 68%)" data-ui-percent="96" />
+                                                                    <circle r="69.85699" cy="80" cx="80" class="ui-stroke" data-ui-percent="86" />
                                                                 </svg>
                                                             </div>
                                                         </div>
-                                                        <div class="ui-col-2 ui-col-sm-4 ui-col-xs-6">
-                                                            <div class="ui-donut-chart ui-ease-donut-chart">
+                                                        <div class="ui-col-lg-2 ui-col-3 ui-col-sm-6 ui-col-xs-6">
+                                                            <div class="ui-donut-chart ui-ease-donut-chart ui-theme-sub">
                                                                 <strong>
-                                                                    <span class="ui-font-16 ui-color-black-25">Exterior</span>
-                                                                    <span class="ui-sp-2"></span>4/5
+                                                                    <span class="ui-avatar-lg ui-circle ui-m-5-b ui-bg-white ui-invert-bg ui-shadow-lg">
+                                                                        <span class="ui-font-regular ui-m-3-t">
+                                                                            72%
+                                                                            <span class="ui-font-14 ui-m-5-t ui-block">AL</span>
+                                                                        </span>
+                                                                    </span>
                                                                 </strong>
                                                                 <svg viewBox="0 0 160 160">
                                                                     <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
-                                                                    <circle r="69.85699" cy="80" cx="80" stroke="hsl(210, 86%, 68%)" data-ui-percent="88" />
+                                                                    <circle r="69.85699" cy="80" cx="80" class="ui-stroke" data-ui-percent="72" />
                                                                 </svg>
                                                             </div>
                                                         </div>
-                                                        <div class="ui-col-2 ui-col-sm-4 ui-col-xs-6">
-                                                            <div class="ui-donut-chart ui-ease-donut-chart">
-                                                                <strong>
-                                                                    <span class="ui-font-16 ui-color-black-25">Quality</span>
-                                                                    <span class="ui-sp-2"></span>4/5
-                                                                </strong>
-                                                                <svg viewBox="0 0 160 160">
-                                                                    <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
-                                                                    <circle r="69.85699" cy="80" cx="80" stroke="hsl(27, 77%, 59%)" data-ui-percent="86" />
-                                                                </svg>
+                                                        <div class="ui-col-lg-8 ui-col-12 ui-align-c">
+                                                            <div class="ui-hover-scale-more-1st ui-m-30-v ui-md-no-m-t ui-ease-1st-layout">
+                                                                <img title="68%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="img/profile-image2.jpg" alt="">
+                                                                <span title="64%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b">
+                                                                    <span>HY</span>
+                                                                </span>
+                                                                <span title="63%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b">
+                                                                    <span>EKY</span>
+                                                                </span>
+                                                                <img title="58%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="img/profile-image.jpg" alt="">
+                                                                <img title="57%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="img/business/profile-image3.jpg" alt="">
+                                                                <img title="49%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="img/profile-image3.jpg" alt="">
+                                                                <span title="47%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b">
+                                                                    <span>AST</span>
+                                                                </span>
+                                                                <img title="45%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="img/business/profile-image.jpg" alt="">
+                                                                <img title="42%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="img/business/profile-image2.jpg" alt="">
+                                                                <span title="39%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b">
+                                                                    <span>AC</span>
+                                                                </span>
                                                             </div>
-                                                        </div>
-                                                        <div class="ui-col-2 ui-col-sm-4 ui-col-xs-6">
-                                                            <div class="ui-donut-chart ui-ease-donut-chart">
-                                                                <strong>
-                                                                    <span class="ui-font-16 ui-color-black-25">Savings</span>
-                                                                    <span class="ui-sp-2"></span>3.9/5
-                                                                </strong>
-                                                                <svg viewBox="0 0 160 160">
-                                                                    <circle r="69.85699" cy="80" cx="80" class="ui-donut-chart-bg" />
-                                                                    <circle r="69.85699" cy="80" cx="80" stroke="hsl(285, 70%, 70%)" data-ui-percent="80" />
-                                                                </svg>
-                                                            </div>
+                                                            <a class="ui-btn ui-circle ui-m-10-b ui-ease-btn" href="#">See full list +173</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -686,17 +705,17 @@
                                             style="background-image: url(img/business/profile-cover.png)">
                                         </div>
                                         <span class="ui-avatar-lg ui-theme-sub ui-fill-dark-100">
-                                            <svg class="ui-icon"><use href="../dist/icons.svg#tree-pine"></use></svg>
+                                            <span>UPT</span>
                                         </span>
 
                                         <div class="ui-align-c">
-                                            Pine Tree User
+                                            User Pine Tree
                                             <div class="ui-color-black-50 ui-font-11 ui-m-15-b">
-                                                su@businessdomain.com
+                                                upt@businesspanel.com
                                             </div>
 
                                             <div class="ui-m-20-b">
-                                                <span class="business-info ui-theme-sub ui-fill-dark-100">Licence</span>
+                                                <span class="business-info ui-theme-base ui-fill-dark-100">Licence</span>
                                                 <span class="business-info">Signature</span>
                                             </div>
                                         </div>
@@ -744,16 +763,6 @@
                                                     <a href="#">
                                                         <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
                                                         <span class="ui-avatar-xs">
-                                                            <span>11 hrs.</span>
-                                                        </span>
-                                                        <b>DOC-312557</b>
-                                                        Specialist User
-                                                        <em>TAKBİS Alınacak, 1 Tapu | 54234/22 AVM</em>
-                                                    </a>
-                                                <li>
-                                                    <a href="#">
-                                                        <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
-                                                        <span class="ui-avatar-xs">
                                                             <span>25 hrs.</span>
                                                         </span>
                                                         <b>DOC-312557</b>
@@ -771,6 +780,16 @@
                                                         Specialist User
                                                         <em>TAKBİS Alınacak, 1 Tapu | 54234/22 AVM</em>
                                                     </a>
+                                                <li>
+                                                    <a href="#">
+                                                        <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
+                                                        <span class="ui-avatar-xs">
+                                                            <span>25 hrs.</span>
+                                                        </span>
+                                                        <b>DOC-312557</b>
+                                                        Specialist User
+                                                        <em>TAKBİS Alınacak, 1 Tapu | 3/3</em>
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -778,14 +797,16 @@
                                         <b class="business-title">Online Users</b>
                                         <div class="ui-align-c ui-p-10">
                                             <div class="ui-avatar-holder ui-hover-scale-more-2nd ui-ease-2nd-layout">
-                                                <a href="#" title="User Name">
-                                                    <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/business/profile-image3.jpg" alt="">
+                                                <a class="ui-link" href="#" data-ui-tooltip="t" title="46 mins.">
+                                                    <span class="ui-avatar-sm ui-border-dual ui-circle ui-theme-sub ui-fill-dark-100">
+                                                        <span>LA</span>
+                                                    </span>
                                                 </a>
-                                                <a href="#" title="User Name">
+                                                <a href="#" data-ui-tooltip="t" title="1 hrs.">
                                                     <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/business/profile-image.jpg" alt="">
                                                 </a>
-                                                <a href="#" title="User Name">
-                                                    <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/business/profile-image2.jpg" alt="">
+                                                <a href="#" data-ui-tooltip="t" title="12 mins.">
+                                                    <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/business/profile-image3.jpg" alt="">
                                                 </a>
                                                 <a class="ui-btn ui-btn-square ui-circle ui-ease-btn" href="#">+3</a>
                                             </div>
@@ -797,7 +818,7 @@
                             </div>
 
                             <!-- toggle masthead -->
-                            <button title="Toggle Masthead" class="ui-sidebar-show-r ui-btn ui-btn-lg ui-btn-square ui-circle ui-theme-base ui-fill-dark-100 ui-ease-btn ui-hidden-lg">
+                            <button title="Toggle Masthead" class="ui-sidebar-show-r ui-btn ui-btn-lg ui-btn-square ui-circle ui-theme-sub ui-fill-dark-100 ui-ease-btn ui-hidden-lg">
                                 <svg class="ui-icon"><use href="../dist/icons.svg#bars-right"></use></svg>
                             </button>
 

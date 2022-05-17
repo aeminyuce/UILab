@@ -1,5 +1,9 @@
 /* business */
 
+// theme
+const baseColor = 'hsl(331, 71%, 58%)';
+const subColor = 'hsl(189, 95%, 40%)';
+
 // settings
 ui.topButton.stylesTarget = 'ui-circle ui-ease-layout';
 
@@ -7,10 +11,7 @@ ui.lineChart.rowsHeight = 80;
 ui.lineChart.top = 10;
 ui.lineChart.showGrid = false;
 ui.lineChart.gridStroke = 0;
-ui.lineChart.colors = [
-    'hsl(331, 71%, 54%)',
-    'hsl(189, 95%, 40%)'
-];
+ui.lineChart.colors = [baseColor, subColor];
 
 // layout
 (() => {
