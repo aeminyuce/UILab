@@ -16,7 +16,7 @@
                 <div class="ui-calendar ui-ease-calendar ui-no-p ui-m-5 ui-shadow-lg ui-theme-sub ui-fill-dark-200"></div>
             </div>
             <div class="ui-col-4 ui-col-md-6">
-                <div class="ui-calendar ui-ease-calendar ui-round ui-theme-sub ui-fill-dark-100"></div>
+                <div class="ui-calendar ui-ease-calendar ui-round ui-theme-sub ui-fill-dark-200"></div>
             </div>
             <div class="ui-col-4 ui-col-md-6">
                 <div class="ui-calendar ui-ease-calendar ui-round ui-shadow-lg ui-theme-base ui-fill-dark-100"></div>
