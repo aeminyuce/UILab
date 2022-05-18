@@ -33,7 +33,7 @@
 
                     <div class="ui-col-business-panel-min">
 
-                        <!-- mini left panel -->
+                        <!--mini left panel -->
                         <div class="business-panel-l-min">
 
                             <!-- toggle sidebar -->
@@ -45,38 +45,38 @@
 
                             <!-- buttons -->
                             <div class="ui-ease-1st-btn">
-                                <button title="İş Sayıları" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square<?php echo $menuActiveBtn; ?>"> <!-- cookie: menu -->
-                                    <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#tachometer"></use></svg>
+                                <button title="Start" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square<?php echo $menuActiveBtn; ?>"> <!-- cookie: menu -->
+                                    <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#flag"></use></svg>
                                 </button>
 
-                                <button title="Başvurular" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square">
+                                <button title="Reports" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square">
                                     <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#briefcase"></use></svg>
                                 </button>
 
-                                <button title="Muhasebe" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square">
-                                    <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#wallet"></use></svg>
+                                <button title="Trades" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square">
+                                    <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#barcode"></use></svg>
                                 </button>
-                                <button title="Listeler" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square">
-                                    <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#list-square"></use></svg>
+                                <button title="Lists" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square">
+                                    <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#doc"></use></svg>
                                 </button>
-                                <button title="Araçlar" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square">
-                                    <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#wrench"></use></svg>
+                                <button title="Misc" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square">
+                                    <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#recycle"></use></svg>
                                 </button>
-                                <button title="İnsan Kaynakları" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square">
-                                    <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#user-search"></use></svg>
+                                <button title="Human Resources" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square">
+                                    <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#users"></use></svg>
                                 </button>
 
-                                <a title="Teklif &amp; Sözleşme" href="#" data-ui-tooltip="r" data-ui-only="desktop" class="ui-btn ui-btn-ghost ui-btn-square"> <!-- link -->
+                                <a title="Contracts" href="#" data-ui-tooltip="r" data-ui-only="desktop" class="ui-btn ui-btn-ghost ui-btn-square"> <!-- link -->
                                     <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#award"></use></svg>
                                 </a>
-                                <a title="Müşteri Yönetimi" href="#" data-ui-tooltip="r" data-ui-only="desktop" class="ui-btn ui-btn-ghost ui-btn-square"> <!-- link -->
+                                <a title="Customer Management" href="#" data-ui-tooltip="r" data-ui-only="desktop" class="ui-btn ui-btn-ghost ui-btn-square"> <!-- link -->
                                     <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#user-circle"></use></svg>
                                 </a>
-                                <a title="Evrak" href="#" data-ui-tooltip="r" data-ui-only="desktop" class="ui-btn ui-btn-ghost ui-btn-square"> <!-- link -->
-                                    <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#doc"></use></svg>
+                                <a title="Documents" href="#" data-ui-tooltip="r" data-ui-only="desktop" class="ui-btn ui-btn-ghost ui-btn-square"> <!-- link -->
+                                    <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#docs"></use></svg>
                                 </a>
 
-                                <button title="Yönetim" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square">
+                                <button title="Administration" data-ui-tooltip="r" data-ui-only="desktop" class="ui-tab ui-btn ui-btn-ghost ui-btn-square">
                                     <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#shield"></use></svg>
                                 </button>
                             </div>
@@ -117,7 +117,7 @@
                                                 87
                                                 <i>16</i>
                                             </span>
-                                            <i>Uzmanda</i>
+                                            <i>Specialist</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
@@ -126,7 +126,7 @@
                                                 10
                                                 <i>7</i>
                                             </span>
-                                            <i>Denetimde</i>
+                                            <i>1st Check</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
@@ -135,49 +135,49 @@
                                                 4
                                                 <i>16</i>
                                             </span>
-                                            <i>2. Denetimde</i>
+                                            <i>2nd Check</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>32</span>
-                                            <i>Bekleyen</i>
+                                            <i>Waiting</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>0</span>
-                                            <i>Kotrol Edildi</i>
+                                            <i>Checked</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>0</span>
-                                            <i>Bugün</i>
+                                            <i>Today</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>0</span>
-                                            <i>Donmuş</i>
+                                            <i>Stopped</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <span>85</span>
-                                            <i>Gecikmiş</i>
+                                            <i>Delayed</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <svg class="ui-icon"><use href="../dist/icons.svg#hourglass-start"></use></svg>
-                                            <i>Gönderilecek</i>
+                                            <i>Sending</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi ui-fill-dark-100">
                                             <svg class="ui-icon"><use href="../dist/icons.svg#flag"></use></svg>
-                                            <i>Raporlaşmış</i>
+                                            <i>Final</i>
                                         </button>
                                     </div>
                                 </div>
@@ -190,7 +190,7 @@
                                                 315
                                                 <i>17</i>
                                             </span>
-                                            <i>Uzmanda</i>
+                                            <i>Specialist</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
@@ -199,7 +199,7 @@
                                                 168
                                                 <i>27</i>
                                             </span>
-                                            <i>Denetimde</i>
+                                            <i>1st Check</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
@@ -208,49 +208,49 @@
                                                 19
                                                 <i>4</i>
                                             </span>
-                                            <i>2. Denetimde</i>
+                                            <i>2nd Check</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi">
                                             <span>416</span>
-                                            <i>Bekleyen</i>
+                                            <i>Waiting</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi">
                                             <span>1</span>
-                                            <i>Kotrol Edildi</i>
+                                            <i>Checked</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi">
                                             <span>0</span>
-                                            <i>Bugün</i>
+                                            <i>Today</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi">
                                             <span>74</span>
-                                            <i>Donmuş</i>
+                                            <i>Stopped</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi">
                                             <span>797</span>
-                                            <i>Gecikmiş</i>
+                                            <i>Delayed</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi">
                                             <svg class="ui-icon"><use href="../dist/icons.svg#hourglass-start"></use></svg>
-                                            <i>Gönderilecek</i>
+                                            <i>Sending</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi">
                                             <svg class="ui-icon"><use href="../dist/icons.svg#flag"></use></svg>
-                                            <i>Raporlaşmış</i>
+                                            <i>Final</i>
                                         </button>
                                     </div>
                                 </div>
@@ -260,37 +260,37 @@
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi">
                                             <span>416</span>
-                                            <i>Bekleyen</i>
+                                            <i>Waiting</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi">
                                             <span>1</span>
-                                            <i>Kotrol Edildi</i>
+                                            <i>Checked</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi">
                                             <span>0</span>
-                                            <i>Bugün</i>
+                                            <i>Today</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi">
                                             <span>74</span>
-                                            <i>Donmuş</i>
+                                            <i>Stopped</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi">
                                             <span>797</span>
-                                            <i>Gecikmiş</i>
+                                            <i>Delayed</i>
                                         </button>
                                     </div>
                                     <div class="ui-col-4">
                                         <button class="ui-btn ui-btn-multi">
                                             <svg class="ui-icon"><use href="../dist/icons.svg#hourglass-start"></use></svg>
-                                            <i>Gönderilecek</i>
+                                            <i>Sending</i>
                                         </button>
                                     </div>
                                 </div>
@@ -298,129 +298,129 @@
                             </div>
                             <div class="ui-tab-content">
 
-                                <b class="business-title">Başvurular</b>
+                                <b class="business-title">Reports</b>
                                 <div class="ui-btn-list ui-ease-1st-btn"> <!-- link buttons -->
-                                    <a href="#" class="ui-btn ui-btn-ghost">Yeni</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Bul</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">New</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Find</a>
                                 </div>
 
                                 <div class="ui-tab-holder ui-tab-accordion ui-ease-tab" data-ui-classes="ui-btn-visible">
                                     <button class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-ease-btn">
                                         <svg class="ui-toggle-icon ui-icon"><use href="../dist/icons.svg#angle-down"></use></svg>
-                                        <span>Toplu İşlemler</span>
+                                        <span>Batch Operations</span>
                                     </button>
                                     <div class="ui-tab-content ui-btn-list ui-ease-1st-btn">
-                                        <a href="#" class="ui-btn ui-btn-ghost">Rapor/Takbis</a>
-                                        <a href="#" class="ui-btn ui-btn-ghost">Kargo/Arşiv</a>
+                                        <a href="#" class="ui-btn ui-btn-ghost">Reports</a>
+                                        <a href="#" class="ui-btn ui-btn-ghost">Archive</a>
                                     </div>
                                 </div>
 
                                 <div class="ui-btn-list ui-ease-1st-btn"> <!-- link buttons -->
-                                    <a href="#" class="ui-btn ui-btn-ghost">Notlar</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Notes</a>
                                 </div>
 
                             </div>
                             <div class="ui-tab-content">
 
-                                <b class="business-title">Muhasebe</b>
+                                <b class="business-title">Trades</b>
                                 <div class="ui-btn-list ui-ease-1st-btn"> <!-- link buttons -->
-                                    <a href="#" class="ui-btn ui-btn-ghost">Banka Mutabakat</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Çözüm Ortağı Mutabakat</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Tahsilat Listeleme</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Personel Masraf</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Kadrolu Uzman Prim Listesi</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Supervisor Prim Listesi</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Listeler/Raporlar</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Mutabakat Başvuru Log</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Bank Reconciliation</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Solution Partner Consensus</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Collection Listing</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Personnel Expenses</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Permanent Expert Bonus List</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Supervisor Bonus List</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Lists &amp; Reports</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Reconciliation Application Log</a>
                                 </div>
 
                             </div>
                             <div class="ui-tab-content">
 
-                                <b class="business-title">Listeler</b>
+                                <b class="business-title">Lists</b>
                                 <div class="ui-btn-list ui-ease-1st-btn"> <!-- link buttons -->
-                                    <a href="#" class="ui-btn ui-btn-ghost">Genel Liste</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">İş Takip</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Uzman Durumları</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Uzman İş Durumları</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Uzman İş Takvimi</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Uzman İş Sayıları</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Sekreterya İş Sayıları</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Supervisor İş Takvimi</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Matris</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">TGFST & KFE</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">İş Adım Süreleri</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">İş Adım Süreleri Ortalamaları</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Başvuru Tamamlandığında Kalan Süre</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">SPL Lisans Süresi Dolan Kullanıcılar</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Uzman Aylık İş Sayıları ve Ortalama Süreleri</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Uzman Performans</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Uzman Dönemsel Performans</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Başvuru Performans</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Günlük Rapor</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Aylık Müşteri Değerlendirme Raporu</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Supervisor Ciroları</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Supervisor Durumları</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Supervisor Puanlama</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">2. Supervisor Puanlama</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Değerlendirme Tablosu</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Birim Fiyat Analizi</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">G. D. Asgari Ücret Tarifesi Kıyaslama</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Harita Yoğunluk</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Revizyon Raporları</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Genel (Sorgular)</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Müşteri Rapor Sayı ve Hasıla</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">General List</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Job Tracking</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Expert Statuses</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Specialized Business Cases</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Expert Business Calendar</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Number of Specialist Jobs</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Secretariat Jobs</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Supervisor Business Calendar</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Matrix</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">TGFST &amp; KFE</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Job Step Times</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Job Step Time Averages</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Time Remaining When Application Is Completed</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">SPL Expired Users</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Expert Monthly Job Numbers and Average Duration</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Expert Performance</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Expert Periodic Performance</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Application Performance</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Daily report</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Monthly Customer Evaluation Report</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Supervisor Turnovers</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Supervisor Statuses</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Supervisor Rating</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">2. Supervisor Rating</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Evaluation Chart</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Unit Price Analysis</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">G. D.minimum Wage Tariff Comparison</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Map Density</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Revision Reports</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">General (Questions)</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Customer Report Number and Output</a>
                                 </div>
 
                             </div>
                             <div class="ui-tab-content">
 
-                                <b class="business-title">Araçlar</b>
+                                <b class="business-title">Misc</b>
                                 <div class="ui-btn-list ui-ease-1st-btn"> <!-- link buttons -->
-                                    <a href="#" class="ui-btn ui-btn-ghost">Proje Arşivi</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Rapor Arşivi</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Gayrimenkul Emsal</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Makine Emsal</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Sorunlu Taşınmazlar</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Harita</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Project Archive</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Report Archive</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Real Estate Precedent</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Machinery Precedent</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Troubled Real Estates</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Map</a>
                                 </div>
 
                             </div>
                             <div class="ui-tab-content">
 
-                                <b class="business-title">İnsan Kaynakları</b>
+                                <b class="business-title">Human Resources</b>
                                 <div class="ui-btn-list ui-ease-1st-btn"> <!-- link buttons -->
-                                    <a href="#" class="ui-btn ui-btn-ghost">Kullanıcılar</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Çözüm Ortakları</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Uzman Yardımcıları</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Kullanıcı Bildirimleri</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Kullanıcı İzinleri</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Kullanıcı Listeleri</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Bordro Yönetimi</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Performans Yönetimi</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Kullanıcı Belge Tipleri</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Users</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Solution partners</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Specialist Assistants</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">User Notifications</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">User Permissions</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">User Lists</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Payroll Management</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Performance management</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">User Document Types</a>
                                 </div>
 
                             </div>
                             <div class="ui-tab-content">
 
-                                <b class="business-title">Yönetim</b>
+                                <b class="business-title">Administration</b>
                                 <div class="ui-btn-list ui-ease-1st-btn"> <!-- link buttons -->
-                                    <a href="#" class="ui-btn ui-btn-ghost">Dashboard İzleme İzinleri</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Kullanıcı Yetkileri</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Kullanıcı Log</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Sistem Yedekleri</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Bölge & Şube</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">İl/İlçe/Mahalle-Köy</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Duyuru & Haber</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Sıkça Sorulan Sorular</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Seçme Kutuları</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Not Hazır Metinler</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Belge Arşivi</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Kontrol Listesi</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Etiket</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Sistem Logları</a>
-                                    <a href="#" class="ui-btn ui-btn-ghost">Disk Durumları</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Monitoring Permissions</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">User Authorizations</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">User Log</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">System Backups</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Region &amp; Branch</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">City/District</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Announcement &amp; News</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Frequently Asked Questions</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Selection Boxes</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Note Stock Texts</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Document Archive</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Control List</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Ticket</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">System Logs</a>
+                                    <a href="#" class="ui-btn ui-btn-ghost">Disk States</a>
                                 </div>
 
                             </div>
@@ -483,7 +483,7 @@
                                     <li>
                                         <a href="#">
                                             <svg class="ui-menu-icon ui-icon"><use href="../dist/icons.svg#archive"></use></svg>
-                                            Dokümanlarım
+                                            My Documents
                                         </a>
                                     </li>
                                     <li>
@@ -495,13 +495,13 @@
                                     <li class="ui-sep">
                                         <a href="#">
                                             <svg class="ui-menu-icon ui-icon"><use href="../dist/icons.svg#desktop"></use></svg>
-                                            Ekranı Kilitle
+                                            Lock Screen
                                         </a>
                                     </li>
                                     <li class="ui-sep">
                                         <a href="#">
                                             <svg class="ui-menu-icon ui-icon"><use href="../dist/icons.svg#sign-out"></use></svg>
-                                            Oturumu Kapat
+                                            Sign Out
                                         </a>
                                     </li>
                                 </ul>
@@ -715,8 +715,8 @@
                                             </div>
 
                                             <div class="ui-m-20-b">
-                                                <span class="business-info ui-theme-base ui-fill-dark-100">Licence</span>
-                                                <span class="business-info">Signature</span>
+                                                <span class="business-info ui-theme-base ui-fill-dark-100">Licenced</span>
+                                                <span class="business-info">Mobile</span>
                                             </div>
                                         </div>
 
@@ -731,64 +731,64 @@
                                                     <a href="#">
                                                         <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
                                                         <span class="ui-avatar-xs">
-                                                            <span>25 hrs.</span>
+                                                            <span>2hrs</span>
                                                         </span>
                                                         <b>DOC-312557</b>
                                                         Specialist User
-                                                        <em>TAKBİS Alınacak, 1 Tapu | 3/3</em>
+                                                        <em>Report will be received.</em>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#">
                                                         <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
                                                         <span class="ui-avatar-xs">
-                                                            <span>11 hrs.</span>
+                                                            <span>6hrs</span>
                                                         </span>
                                                         <b>DOC-312557</b>
                                                         Specialist User
-                                                        <em>TAKBİS Alınacak, 1 Tapu | 54234/22 AVM</em>
+                                                        <em>Report received.</em>
                                                     </a>
                                                 <li>
                                                     <a href="#">
                                                         <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
                                                         <span class="ui-avatar-xs">
-                                                            <span>25 hrs.</span>
+                                                            <span>11hrs</span>
                                                         </span>
                                                         <b>DOC-312557</b>
-                                                        Specialist User
-                                                        <em>TAKBİS Alınacak, 1 Tapu | 3/3</em>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
-                                                        <span class="ui-avatar-xs">
-                                                            <span>25 hrs.</span>
-                                                        </span>
-                                                        <b>DOC-312557</b>
-                                                        Specialist User
-                                                        <em>TAKBİS Alınacak, 1 Tapu | 3/3</em>
+                                                        Supervisor User
+                                                        <em>Report received.</em>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#">
                                                         <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
                                                         <span class="ui-avatar-xs">
-                                                            <span>11 hrs.</span>
+                                                            <span>14hrs</span>
+                                                        </span>
+                                                        <b>DOC-312557</b>
+                                                        Supervisor User
+                                                        <em>Report cancelled.</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
+                                                        <span class="ui-avatar-xs">
+                                                            <span>15hrs</span>
                                                         </span>
                                                         <b>DOC-312557</b>
                                                         Specialist User
-                                                        <em>TAKBİS Alınacak, 1 Tapu | 54234/22 AVM</em>
+                                                        <em>Report will be received.</em>
                                                     </a>
                                                 <li>
                                                     <a href="#">
                                                         <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"></use></svg>
                                                         <span class="ui-avatar-xs">
-                                                            <span>25 hrs.</span>
+                                                            <span>19hrs</span>
                                                         </span>
                                                         <b>DOC-312557</b>
                                                         Specialist User
-                                                        <em>TAKBİS Alınacak, 1 Tapu | 3/3</em>
+                                                        <em>Report will be received.</em>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -797,15 +797,15 @@
                                         <b class="business-title">Online Users</b>
                                         <div class="ui-align-c ui-p-10">
                                             <div class="ui-avatar-holder ui-hover-scale-more-2nd ui-ease-2nd-layout">
-                                                <a class="ui-link" href="#" data-ui-tooltip="t" title="46 mins.">
+                                                <a class="ui-link" href="#" data-ui-tooltip="t" title="46mins.">
                                                     <span class="ui-avatar-sm ui-border-dual ui-circle ui-theme-sub ui-fill-dark-100">
                                                         <span>LA</span>
                                                     </span>
                                                 </a>
-                                                <a href="#" data-ui-tooltip="t" title="1 hrs.">
+                                                <a href="#" data-ui-tooltip="t" title="1hrs">
                                                     <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/business/profile-image.jpg" alt="">
                                                 </a>
-                                                <a href="#" data-ui-tooltip="t" title="12 mins.">
+                                                <a href="#" data-ui-tooltip="t" title="12mins.">
                                                     <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/business/profile-image3.jpg" alt="">
                                                 </a>
                                                 <a class="ui-btn ui-btn-square ui-circle ui-ease-btn" href="#">+3</a>
@@ -834,8 +834,8 @@
         <div class="ui-col-business-panel-r">
             <div class="business-panel-r ui-p-5">
 
-                <!-- koyu mod -->
-                <button title="Koyu Mod Aç/Kapat" data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-ghost ui-btn-square ui-icons-no-opacity ui-m-10-b ui-ease-btn">
+                <!-- toggle dark mode -->
+                <button title="toggle Dark Mode" data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-ghost ui-btn-square ui-icons-no-opacity ui-m-10-b ui-ease-btn">
                     <svg class="ui-icon ui-visible-dark">
                         <defs>
                             <linearGradient id="dark-bg" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(120)">
@@ -859,7 +859,7 @@
                 <!-- menus -->
                 <div class="ui-tab-holder ui-ease-tab ui-ease-1st-btn" data-ui-classes="ui-btn-visible">
 
-                    <button title="Bildirimler" data-ui-tooltip="l" data-ui-only="desktop" class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-btn-square">
+                    <button title="Notifications" data-ui-tooltip="l" data-ui-only="desktop" class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-btn-square">
                         <span class="ui-notifier">
                             <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#bell-on"></use></svg>
                         </span>
@@ -867,7 +867,7 @@
                     <div class="ui-tab-content">
                         <h4>
                             <span class="business-info">2 New</span>
-                            Bildirimler
+                            Notifications
                         </h4>
 
                         <!-- list loader -->
@@ -878,7 +878,7 @@
                             <!--no content -->
                             <div class="business-no-content">
                                 <svg class="ui-icon"><use href="../dist/icons.svg#bell-on"></use></svg>
-                                New bildirim yok
+                                No new notifications.
                             </div>
 
                             <div class="ui-listgroup">
@@ -889,8 +889,8 @@
                                                 <span>SS</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>14.03.2022 09:50</em>
-                                            <p>Başvuru oluşturuldu.</p>
+                                            <em>03.14.2022 09:50pm</em>
+                                            <p>Report created.</p>
                                         </a>
                                     </li>
                                     <li class="business-new">
@@ -899,8 +899,8 @@
                                                 <span>SU</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>14.03.2022 09:50</em>
-                                            <p>Uzmana gönderildi.</p>
+                                            <em>03.14.2022 09:50pm</em>
+                                            <p>Sending specialist.</p>
                                         </a>
                                     </li>
                                     <li>
@@ -909,9 +909,9 @@
                                                 <span>SD</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>14.03.2022 09:50</em>
-                                            <p>Supervisore gönderildi.</p>
-                                            <span class="business-info">Geçen süre: 4 sa 59 dk</span>
+                                            <em>03.14.2022 09:50pm</em>
+                                            <p>Sending supervisor.</p>
+                                            <span class="business-info">4hrs 59min</span>
                                         </a>
                                     </li>
                                     <li>
@@ -920,9 +920,9 @@
                                                 <span>BD</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>14.03.2022 09:50</em>
-                                            <p>Birim değiştirildi.</p>
-                                            <span class="business-info">Geçen süre: 4 sa 59 dk</span>
+                                            <em>03.14.2022 09:50pm</em>
+                                            <p>Unit changed.</p>
+                                            <span class="business-info">4hrs 59min</span>
                                         </a>
                                     </li>
                                     <li>
@@ -931,8 +931,8 @@
                                                 <span>BG</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>14.03.2022 09:50</em>
-                                            <p>Rapor Genel Müd. gönderildi.</p>
+                                            <em>03.14.2022 09:50pm</em>
+                                            <p>Report sent.</p>
                                         </a>
                                     </li>
                                     <li>
@@ -941,8 +941,8 @@
                                                 <span>SS</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>14.03.2022 09:50</em>
-                                            <p>Başvuru oluşturuldu.</p>
+                                            <em>03.14.2022 09:50pm</em>
+                                            <p>Report created.</p>
                                         </a>
                                     </li>
                                     <li>
@@ -951,8 +951,8 @@
                                                 <span>SU</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>14.03.2022 09:50</em>
-                                            <p>Uzmana gönderildi.</p>
+                                            <em>03.14.2022 09:50pm</em>
+                                            <p>Sending specialist.</p>
                                         </a>
                                     </li>
                                     <li>
@@ -961,9 +961,9 @@
                                                 <span>SD</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>14.03.2022 09:50</em>
-                                            <p>Supervisore gönderildi.</p>
-                                            <span class="business-info">Geçen süre: 4 sa 59 dk</span>
+                                            <em>03.14.2022 09:50pm</em>
+                                            <p>Sending supervisor.</p>
+                                            <span class="business-info">4hrs 59min</span>
                                         </a>
                                     </li>
                                     <li>
@@ -972,9 +972,9 @@
                                                 <span>BD</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>14.03.2022 09:50</em>
-                                            <p>Birim değiştirildi.</p>
-                                            <span class="business-info">Geçen süre: 4 sa 59 dk</span>
+                                            <em>03.14.2022 09:50pm</em>
+                                            <p>Unit changed.</p>
+                                            <span class="business-info">4hrs 59min</span>
                                         </a>
                                     </li>
                                     <li>
@@ -983,8 +983,8 @@
                                                 <span>BG</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>14.03.2022 09:50</em>
-                                            <p>Rapor Genel Müd. gönderildi.</p>
+                                            <em>03.14.2022 09:50pm</em>
+                                            <p>Report sent.</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -993,7 +993,7 @@
 
                     </div>
 
-                    <button title="Notlar" data-ui-tooltip="l" data-ui-only="desktop" class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-btn-square">
+                    <button title="Notes" data-ui-tooltip="l" data-ui-only="desktop" class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-btn-square">
                         <span class="ui-notifier">
                             <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#pencil-write"></use></svg>
                         </span>
@@ -1001,8 +1001,8 @@
                     <div class="ui-tab-content">
                         <h4>
                             <span class="business-info">2 New</span>
-                            <span class="business-mark ui-ease-bg" onclick="ui.alerts.message({ msg: 'Tüm notlar okundu olarak işaretlendi!' });">Tümünü Okundu İşaretle</span>
-                            Notlar
+                            <span class="business-mark ui-ease-bg" onclick="ui.alerts.message({ msg: 'All notes marked as read!' });">Mark All Read</span>
+                            Notes
                         </h4>
 
                         <!-- list loader -->
@@ -1013,7 +1013,7 @@
                             <!--no content -->
                             <div class="business-no-content">
                                 <svg class="ui-icon"><use href="../dist/icons.svg#pencil-write"></use></svg>
-                                New not yok
+                                No new notes.
                             </div>
 
                             <div class="ui-listgroup">
@@ -1023,10 +1023,10 @@
                                             <img class="ui-avatar-xs" src="img/profile-image2.jpg" alt="">
                                             <b>Specialist User</b>
                                             DOC-312557
-                                            <em>3 sa 56 dk önce</em>
+                                            <em>3hrs 56min</em>
                                         </a>
-                                        <p>UZMAN İŞİ ALDI<br>Specialist User İşi Aldı</p>
-                                        <span class="business-mark ui-ease-bg" onclick="ui.alerts.message({ msg: 'Not okundu olarak işaretlendi!' });">Okundu İşaretle</span>
+                                        <p>Specialist user got report.</p>
+                                        <span class="business-mark ui-ease-bg" onclick="ui.alerts.message({ msg: 'Note marked as read!' });">Mark as Read</span>
                                     </li>
                                     <li class="business-new">
                                         <a href="#">
@@ -1035,19 +1035,19 @@
                                             </span>
                                             <b>Specialist User</b>
                                             DOC-312557
-                                            <em>3 sa 56 dk önce</em>
+                                            <em>3hrs 56min</em>
                                         </a>
-                                        <p>UZMAN İŞİ ALDI<br>Specialist User İşi Aldı</p>
-                                        <span class="business-mark ui-ease-bg" onclick="ui.alerts.message({ msg: 'Not okundu olarak işaretlendi!' });">Okundu İşaretle</span>
+                                        <p>Specialist user got report.</p>
+                                        <span class="business-mark ui-ease-bg" onclick="ui.alerts.message({ msg: 'Note marked as read!' });">Mark as Read</span>
                                     </li>
                                     <li>
                                         <a href="#">
                                             <img class="ui-avatar-xs" src="img/profile-image3.jpg" alt="">
                                             <b>Pine Tree User</b>
                                             DOC-312557
-                                            <em>3 sa 56 dk önce</em>
+                                            <em>3hrs 56min</em>
                                         </a>
-                                        <p>SupervisorE GÖNDERİLDİ<br>Pine Tree User İşi Aldı</p>
+                                        <p>Supervisor user got report.</p>
                                     </li>
                                     <li>
                                         <a href="#">
@@ -1056,18 +1056,18 @@
                                             </span>
                                             <b>Pine Tree User</b>
                                             DOC-312557
-                                            <em>3 sa 56 dk önce</em>
+                                            <em>3hrs 56min</em>
                                         </a>
-                                        <p>SupervisorE GÖNDERİLDİ<br>Pine Tree User İşi Aldı</p>
+                                        <p>Supervisor user got report.</p>
                                     </li>
                                     <li>
                                         <a href="#">
                                             <img class="ui-avatar-xs" src="img/profile-image.jpg" alt="">
                                             <b>Secretarial User</b>
                                             DOC-312557
-                                            <em>3 sa 56 dk önce</em>
+                                            <em>3hrs 56min</em>
                                         </a>
-                                        <p>GENEL NOTLAR<br>Başvuru için gerekli belgeler temin edilmiştir.</p>
+                                        <p>Documents for application have been provided.</p>
                                     </li>
                                     <li>
                                         <a href="#">
@@ -1076,9 +1076,9 @@
                                             </span>
                                             <b>Secretarial User</b>
                                             DOC-312557
-                                            <em>3 sa 56 dk önce</em>
+                                            <em>3hrs 56min</em>
                                         </a>
-                                        <p>GENEL NOTLAR<br>Başvuru için gerekli belgeler temin edilmiştir.</p>
+                                        <p>Documents for application have been provided.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -1086,7 +1086,7 @@
 
                     </div>
 
-                    <button title="Bekleyen İşler" data-ui-tooltip="l" data-ui-only="desktop" class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-btn-square">
+                    <button title="Pending Reports" data-ui-tooltip="l" data-ui-only="desktop" class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-btn-square">
                         <span class="ui-notifier">
                             <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#hourglass-start"></use></svg>
                         </span>
@@ -1094,7 +1094,7 @@
                     <div class="ui-tab-content">
                         <h4>
                             <span class="business-info">8 New</span>
-                            Bekleyen İşler
+                            Pending Reports
                         </h4>
 
                         <!-- list loader -->
@@ -1105,7 +1105,7 @@
                             <!--no content -->
                             <div class="business-no-content">
                                 <svg class="ui-icon"><use href="../dist/icons.svg#hourglass-start"></use></svg>
-                                Bekleyen işler yok
+                                No new pending reports.
                             </div>
 
                             <div class="ui-listgroup">
@@ -1113,11 +1113,11 @@
                                     <li class="business-new">
                                         <a href="#">
                                             <span class="ui-avatar-xs">
-                                                <span><b>18</b> Gün</span>
+                                                <span><b>18</b> day</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>Teslim Tarihi: 25.03.2022 09:43</em>
-                                            <span class="business-info">Acil</span>
+                                            <em>30.25.2022 09:43pm</em>
+                                            <span class="business-info ui-theme-red ui-fill-dark-100">Urgent</span>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
                                             <dt>İl/İlçe</dt>
@@ -1131,12 +1131,12 @@
                                     <li class="business-new">
                                         <a href="#">
                                             <span class="ui-avatar-xs">
-                                                <span><b>16</b> Gün</span>
+                                                <span><b>16</b> day</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>Teslim Tarihi: 25.03.2022 09:43</em>
-                                            <span class="business-info">Acil</span>
-                                            <span class="business-info">VIP</span>
+                                            <em>30.25.2022 09:43pm</em>
+                                            <span class="business-info ui-theme-red ui-fill-dark-100">Urgent</span>
+                                            <span class="business-info ui-theme-yellow ui-fill-dark-100">VIP</span>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
                                             <dt>İl/İlçe</dt>
@@ -1150,11 +1150,11 @@
                                     <li class="business-new">
                                         <a href="#">
                                             <span class="ui-avatar-xs">
-                                                <span><b>13</b> Gün</span>
+                                                <span><b>13</b> day</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>Teslim Tarihi: 25.03.2022 09:43</em>
-                                            <span class="business-info">Revize</span>
+                                            <em>30.25.2022 09:43pm</em>
+                                            <span class="business-info ui-theme-orange ui-fill-dark-100">Revised</span>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
                                             <dt>İl/İlçe</dt>
@@ -1168,10 +1168,10 @@
                                     <li class="business-new">
                                         <a href="#">
                                             <span class="ui-avatar-xs">
-                                                <span><b>10</b> Gün</span>
+                                                <span><b>10</b> day</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>Teslim Tarihi: 25.03.2022 09:43</em>
+                                            <em>30.25.2022 09:43pm</em>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
                                             <dt>İl/İlçe</dt>
@@ -1185,10 +1185,10 @@
                                     <li class="business-new">
                                         <a href="#">
                                             <span class="ui-avatar-xs">
-                                                <span><b>8</b> Gün</span>
+                                                <span><b>8</b> day</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>Teslim Tarihi: 25.03.2022 09:43</em>
+                                            <em>30.25.2022 09:43pm</em>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
                                             <dt>İl/İlçe</dt>
@@ -1202,10 +1202,10 @@
                                     <li class="business-new">
                                         <a href="#">
                                             <span class="ui-avatar-xs">
-                                                <span><b>6</b> Gün</span>
+                                                <span><b>6</b> day</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>Teslim Tarihi: 25.03.2022 09:43</em>
+                                            <em>30.25.2022 09:43pm</em>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
                                             <dt>İl/İlçe</dt>
@@ -1219,10 +1219,10 @@
                                     <li class="business-new">
                                         <a href="#">
                                             <span class="ui-avatar-xs">
-                                                <span><b>4</b> Gün</span>
+                                                <span><b>4</b> day</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>Teslim Tarihi: 25.03.2022 09:43</em>
+                                            <em>30.25.2022 09:43pm</em>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
                                             <dt>İl/İlçe</dt>
@@ -1236,10 +1236,10 @@
                                     <li class="business-new">
                                         <a href="#">
                                             <span class="ui-avatar-xs">
-                                                <span><b>1</b> Gün</span>
+                                                <span><b>1</b> day</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>Teslim Tarihi: 25.03.2022 09:43</em>
+                                            <em>30.25.2022 09:43pm</em>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
                                             <dt>İl/İlçe</dt>
@@ -1264,7 +1264,7 @@
                     <div class="ui-tab-content">
                         <h4>
                             <span class="business-info">4 New</span>
-                            Gönderilcek İşler
+                            Sending Reports
                         </h4>
 
                         <!-- list loader -->
@@ -1275,7 +1275,7 @@
                             <!--no content -->
                             <div class="business-no-content">
                                 <svg class="ui-icon"><use href="../dist/icons.svg#hourglass-start"></use></svg>
-                                Gönderilcek işler yok
+                                No new sending reports.
                             </div>
 
                             <div class="ui-listgroup">
@@ -1283,41 +1283,41 @@
                                     <li class="business-new">
                                         <a href="#">
                                             <span class="ui-avatar-xs">
-                                                <span><b>1</b> Gün</span>
+                                                <span><b>1</b> day</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>14.03.2022 09:50</em>
-                                            <span class="business-info">Acil</span>
+                                            <em>03.14.2022 09:50pm</em>
+                                            <span class="business-info ui-theme-red ui-fill-dark-100">Urgent</span>
                                         </a>
                                     </li>
                                     <li class="business-new">
                                         <a href="#">
                                             <span class="ui-avatar-xs">
-                                                <span><b>0</b> Gün</span>
+                                                <span><b>0</b> day</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>14.03.2022 09:50</em>
-                                            <span class="business-info">Acil</span>
-                                            <span class="business-info">VIP</span>
+                                            <em>03.14.2022 09:50pm</em>
+                                            <span class="business-info ui-theme-red ui-fill-dark-100">Urgent</span>
+                                            <span class="business-info ui-theme-yellow ui-fill-dark-100">VIP</span>
                                         </a>
                                     </li>
                                     <li class="business-new">
                                         <a href="#">
                                             <span class="ui-avatar-xs">
-                                                <span><b>-1</b> Gün</span>
+                                                <span><b>-1</b> day</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>14.03.2022 09:50</em>
-                                            <span class="business-info">Revize</span>
+                                            <em>03.14.2022 09:50pm</em>
+                                            <span class="business-info ui-theme-orange ui-fill-dark-100">Revised</span>
                                         </a>
                                     </li>
                                     <li class="business-new">
                                         <a href="#">
                                             <span class="ui-avatar-xs">
-                                                <span><b>-2</b> Gün</span>
+                                                <span><b>-2</b> day</span>
                                             </span>
                                             <b>DOC-312557</b>
-                                            <em>14.03.2022 09:50</em>
+                                            <em>03.14.2022 09:50pm</em>
                                         </a>
                                     </li>
                                 </ul>
@@ -1326,11 +1326,11 @@
 
                     </div>
 
-                    <button title="Favorilerim" data-ui-tooltip="l" data-ui-only="desktop" class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-btn-square">
+                    <button title="Favorites" data-ui-tooltip="l" data-ui-only="desktop" class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-btn-square">
                         <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#star"></use></svg>
                     </button>
                     <div class="ui-tab-content">
-                        <h4>Favorilerim</h4>
+                        <h4>Favorites</h4>
 
                         <!-- list loader -->
                         <div class="business-list-loader ui-animate-progress"></div>
@@ -1339,95 +1339,95 @@
 
                             <div class="ui-listgroup">
                                 <b class="business-title">
-                                    <a title="Yeni Ekle" class="business-edit ui-ease-bg" href="#">
+                                    <a title="Add New" class="business-edit ui-ease-bg" href="#">
                                         <svg class="ui-icon"><use href="../dist/icons.svg#plus"></use></svg>
                                     </a>
-                                    Başvuru Bul
+                                    Search
                                 </b>
                                 <ul class="ui-ease-listgroup">
                                     <li>
-                                        ŞİRKET TÜM İŞLER
+                                        Company All Reports
                                         <span class="ui-ease-1st-bg">
-                                            <a class="business-edit ui-listgroup-url" href="#">Düzenle</a>
-                                            <span class="business-remove" onclick="ui.alerts.dialog({ msg: 'ŞİRKET TÜM İŞLER adlı hızlı arama favori listesinden kaldırılacaktır.', success: 'Remove', error: 'Vazgeç', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Hızlı arama kaldırıldı!' }); } });">Kaldır</span>
-                                            <a class="business-mark ui-listgroup-url" href="#">Hızlı Arama Yap</a>
+                                            <a class="business-edit ui-listgroup-url" href="#">Edit</a>
+                                            <span class="business-remove" onclick="ui.alerts.dialog({ msg: 'Company All Reports will be removed from the favorites list.', success: 'Remove', error: 'Cancel', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Removed from favorites!' }); } });">Remove</span>
+                                            <a class="business-mark ui-listgroup-url" href="#">Show Results</a>
                                         </span>
                                     </li>
                                 </ul>
                                 <b class="business-title">
-                                    <a title="Yeni Ekle" class="business-edit ui-ease-bg" href="#">
+                                    <a title="Add New" class="business-edit ui-ease-bg" href="#">
                                         <svg class="ui-icon"><use href="../dist/icons.svg#plus"></use></svg>
                                     </a>
-                                    Kullanıcılar
+                                    Users
                                 </b>
                                 <ul class="ui-ease-listgroup">
                                     <li>
-                                        GARANTİ BBVA İŞLERİ
+                                        Specialist User Reports
                                         <span class="ui-ease-1st-bg">
-                                            <a class="business-edit ui-listgroup-url" href="#">Düzenle</a>
-                                            <span class="business-remove" onclick="ui.alerts.dialog({ msg: 'GARANTİ BBVA İŞLERİ adlı hızlı arama favori listesinden kaldırılacaktır.', success: 'Remove', error: 'Vazgeç', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Hızlı arama kaldırıldı!' }); } });">Kaldır</span>
-                                            <a class="business-mark ui-listgroup-url" href="#">Hızlı Arama Yap</a>
+                                            <a class="business-edit ui-listgroup-url" href="#">Edit</a>
+                                            <span class="business-remove" onclick="ui.alerts.dialog({ msg: 'Specialist User Reports will be removed from the favorites list.', success: 'Remove', error: 'Cancel', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Removed from favorites!' }); } });">Remove</span>
+                                            <a class="business-mark ui-listgroup-url" href="#">Show Results</a>
                                         </span>
                                     </li>
                                     <li>
-                                        AKBANK UZMAN İŞLERİ
+                                        Supervisor User Reports
                                         <span class="ui-ease-1st-bg">
-                                            <a class="business-edit ui-listgroup-url" href="#">Düzenle</a>
-                                            <span class="business-remove" onclick="ui.alerts.dialog({ msg: 'AKBANK UZMAN İŞLERİ adlı hızlı arama favori listesinden kaldırılacaktır.', success: 'Remove', error: 'Vazgeç', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Hızlı arama kaldırıldı!' }); } });">Kaldır</span>
-                                            <a class="business-mark ui-listgroup-url" href="#">Hızlı Arama Yap</a>
+                                            <a class="business-edit ui-listgroup-url" href="#">Edit</a>
+                                            <span class="business-remove" onclick="ui.alerts.dialog({ msg: 'Supervisor User Reports will be removed from the favorites list.', success: 'Remove', error: 'Cancel', callback: function (v) { if (v === 'success') ui.alerts.message({ msg: 'Removed from favorites!' }); } });">Remove</span>
+                                            <a class="business-mark ui-listgroup-url" href="#">Show Results</a>
                                         </span>
                                     </li>
                                 </ul>
                                 <b class="business-title">
-                                    <a title="Yeni Ekle" class="business-edit ui-ease-bg" href="#">
+                                    <a title="Add New" class="business-edit ui-ease-bg" href="#">
                                         <svg class="ui-icon"><use href="../dist/icons.svg#plus"></use></svg>
                                     </a>
-                                    Banka / Şirket
+                                    Companies
                                 </b>
                                 <span class="business-no-content-sm"> <!--no content -->
                                     <svg class="ui-icon"><use href="../dist/icons.svg#star"></use></svg>
-                                    Hızlı arama kaydı yok
+                                    Not added yet.
                                 </span>
                                 <b class="business-title">
-                                    <a title="Yeni Ekle" class="business-edit ui-ease-bg" href="#">
+                                    <a title="Add New" class="business-edit ui-ease-bg" href="#">
                                         <svg class="ui-icon"><use href="../dist/icons.svg#plus"></use></svg>
                                     </a>
-                                    Çözüm Ortağı Mutabakat Listesi
+                                    Lists
                                 </b>
                                 <span class="business-no-content-sm"> <!--no content -->
                                     <svg class="ui-icon"><use href="../dist/icons.svg#star"></use></svg>
-                                    Hızlı arama kaydı yok
+                                    Not lists added yet.
                                 </span>
                                 <b class="business-title">
-                                    <a title="Yeni Ekle" class="business-edit ui-ease-bg" href="#">
+                                    <a title="Add New" class="business-edit ui-ease-bg" href="#">
                                         <svg class="ui-icon"><use href="../dist/icons.svg#plus"></use></svg>
                                     </a>
-                                    Harita Yoğunluk
+                                    Maps
                                 </b>
                                 <span class="business-no-content-sm"> <!--no content -->
                                     <svg class="ui-icon"><use href="../dist/icons.svg#star"></use></svg>
-                                    Hızlı arama kaydı yok
+                                    Not maps added yet.
                                 </span>
                                 <b class="business-title">
-                                    <a title="Yeni Ekle" class="business-edit ui-ease-bg" href="#">
+                                    <a title="Add New" class="business-edit ui-ease-bg" href="#">
                                         <svg class="ui-icon"><use href="../dist/icons.svg#plus"></use></svg>
                                     </a>
-                                    Yıllık Ciro Karşılaştırması
+                                    Graphs
                                 </b>
                                 <span class="business-no-content-sm"> <!--no content -->
                                     <svg class="ui-icon"><use href="../dist/icons.svg#star"></use></svg>
-                                    Hızlı arama kaydı yok
+                                    Not graphs added yet.
                                 </span>
                             </div>
                         </div>
 
                     </div>
 
-                    <button title="Son İncelediğim İşler" data-ui-tooltip="l" data-ui-only="desktop" class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-btn-square">
+                    <button title="Last Visited Reports" data-ui-tooltip="l" data-ui-only="desktop" class="ui-tab ui-tab-toggle ui-btn ui-btn-ghost ui-btn-square">
                         <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#history"></use></svg>
                     </button>
                     <div class="ui-tab-content">
-                        <h4>Son İncelediğim İşler</h4>
+                        <h4>Last Visited Reports</h4>
 
                         <!-- list loader -->
                         <div class="business-list-loader ui-animate-progress"></div>
@@ -1437,7 +1437,7 @@
                             <!--no content -->
                             <div class="business-no-content">
                                 <svg class="ui-icon"><use href="../dist/icons.svg#history"></use></svg>
-                                Henüz incelediğiniz bir iş yok
+                                No reports visited.
                             </div>
 
                             <div class="ui-listgroup">
@@ -1450,7 +1450,7 @@
                                             </span>
                                             <b>DOC-312557</b>
                                             <span>3170187</span>
-                                            <em>1 sa 25 dk</em>
+                                            <em>1hrs 25min</em>
                                         </a>
                                     </li>
                                     <li>
@@ -1461,7 +1461,7 @@
                                             </span>
                                             <b>DOC-312557</b>
                                             <span>3170187</span>
-                                            <em>1 sa 25 dk</em>
+                                            <em>1hrs 25min</em>
                                         </a>
                                     </li>
                                     <li>
@@ -1472,7 +1472,7 @@
                                             </span>
                                             <b>DOC-312557</b>
                                             <span>3170187</span>
-                                            <em>1 sa 25 dk</em>
+                                            <em>1hrs 25min</em>
                                         </a>
                                     </li>
                                     <li>
@@ -1483,7 +1483,7 @@
                                             </span>
                                             <b>DOC-312557</b>
                                             <span>3170187</span>
-                                            <em>1 sa 25 dk</em>
+                                            <em>1hrs 25min</em>
                                         </a>
                                     </li>
                                 </ul>
@@ -1497,9 +1497,9 @@
                 <!-- panel bottom -->
                 <div class="ui-set-absolute ui-set-b ui-set-cx ui-align-c ui-m-5-b">
 
-                    <!-- help icon -->
-                    <a class="ui-btn ui-btn-ghost ui-btn-square ui-icons-no-opacity ui-ease-btn" title="Help Center" href="#">
-                        <svg class="ui-icon ui-theme-gray ui-text"><use href="../dist/icons.svg#help"/> </svg>
+                    <!-- company icon -->
+                    <a class="ui-btn ui-btn-ghost ui-btn-square ui-icons-no-opacity ui-ease-btn" title="Company Name" href="#">
+                        <svg class="ui-icon ui-theme-gray ui-text"><use href="../dist/icons.svg#box"/> </svg>
                     </a>
 
                 </div>
