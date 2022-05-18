@@ -9683,18 +9683,18 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.ui-icon) {
 }
 .ui-donut-chart circle {
   fill: none;
-  stroke-width: 10;
+  stroke-width: 8;
 }
 .ui-donut-chart circle.ui-loaded:not(.ui-donut-chart-bg) {
   animation: ui-donut-draw 1.6s ease-in reverse;
 }
 .ui-donut-chart circle.ui-selected {
-  stroke-width: 16;
+  stroke-width: 14;
   transition-duration: 0.15s;
 }
 .ui-donut-chart circle.ui-donut-chart-bg {
   stroke: currentColor;
-  stroke-width: 6;
+  stroke-width: 3;
   stroke-dashoffset: 0;
   opacity: 0.05;
 }
