@@ -232,8 +232,8 @@
                             </div>
                             <div class="ui-col-lg-4 ui-col-6">
                                 <a class="ui-link ui-card ui-p-2 ui-round ui-shadow-lg ui-ease-layout" href="?l=pages/business">
-                                    <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-dashboard.jpg" alt="Business">
-                                    <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-dashboard-dark.jpg" alt="Business Dark">
+                                    <img class="ui-img-fluid ui-round-t ui-visible-light" src="img/layout-business.jpg" alt="Business">
+                                    <img class="ui-img-fluid ui-round-t ui-visible-dark" src="img/layout-business-dark.jpg" alt="Business Dark">
                                     <h4 class="ui-h4 ui-inline-block ui-p-10-v">
                                         Business
                                     </h4>

@@ -450,13 +450,13 @@
                                     <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#bars-left"></use></svg>
                                 </button>
 
-                                <!-- göstergeler -->
-                                <a title="Göstergeler" class="ui-btn ui-btn-ghost ui-btn-square ui-circle" href="#">
+                                <!-- dashboard -->
+                                <a title="Dashboard" class="ui-btn ui-btn-ghost ui-btn-square ui-circle" href="#">
                                     <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#grid-masonry"></use></svg>
                                 </a>
 
-                                <!-- harita -->
-                                <a title="Harita" class="ui-btn ui-btn-ghost ui-btn-square ui-circle" href="#">
+                                <!-- map -->
+                                <a title="Map" class="ui-btn ui-btn-ghost ui-btn-square ui-circle" href="#">
                                     <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#marker"></use></svg>
                                 </a>
 
@@ -467,7 +467,7 @@
 
                             <!-- header profile -->
                             <div class="business-profile-menu ui-dropdown ui-menu-l ui-ease-dropdown">
-                                <button title="Profilim" class="ui-btn ui-btn-multi ui-no-p ui-circle">
+                                <button title="My Profile" class="ui-btn ui-btn-multi ui-no-p ui-circle">
                                     <svg class="ui-icon ui-icon-sm ui-no-opacity"><use href="../dist/icons.svg#grid-column"></use></svg>
                                     <span class="ui-avatar ui-avatar-xs ui-circle ui-theme-sub ui-fill-dark-100">
                                         <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#user"></use></svg>
@@ -733,7 +733,7 @@
                                                         <span class="ui-avatar-xs">
                                                             <span>2hrs</span>
                                                         </span>
-                                                        <b>DOC-312557</b>
+                                                        <b>DOC-716001</b>
                                                         Specialist User
                                                         <em>Report will be received.</em>
                                                     </a>
@@ -744,7 +744,7 @@
                                                         <span class="ui-avatar-xs">
                                                             <span>6hrs</span>
                                                         </span>
-                                                        <b>DOC-312557</b>
+                                                        <b>REP-316601</b>
                                                         Specialist User
                                                         <em>Report received.</em>
                                                     </a>
@@ -754,7 +754,7 @@
                                                         <span class="ui-avatar-xs">
                                                             <span>11hrs</span>
                                                         </span>
-                                                        <b>DOC-312557</b>
+                                                        <b>TOC-101262</b>
                                                         Supervisor User
                                                         <em>Report received.</em>
                                                     </a>
@@ -765,7 +765,7 @@
                                                         <span class="ui-avatar-xs">
                                                             <span>14hrs</span>
                                                         </span>
-                                                        <b>DOC-312557</b>
+                                                        <b>NAT-312557</b>
                                                         Supervisor User
                                                         <em>Report cancelled.</em>
                                                     </a>
@@ -776,7 +776,7 @@
                                                         <span class="ui-avatar-xs">
                                                             <span>15hrs</span>
                                                         </span>
-                                                        <b>DOC-312557</b>
+                                                        <b>SUN-801215</b>
                                                         Specialist User
                                                         <em>Report will be received.</em>
                                                     </a>
@@ -786,7 +786,7 @@
                                                         <span class="ui-avatar-xs">
                                                             <span>19hrs</span>
                                                         </span>
-                                                        <b>DOC-312557</b>
+                                                        <b>LAB-313303</b>
                                                         Specialist User
                                                         <em>Report will be received.</em>
                                                     </a>
@@ -1120,12 +1120,12 @@
                                             <span class="business-info ui-theme-red ui-fill-dark-100">Urgent</span>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
-                                            <dt>İl/İlçe</dt>
-                                            <dd>İZMİR / BORNOVA</dd>
-                                            <dt>Tapu Sayısı</dt>
+                                            <dt>State</dt>
+                                            <dd>Ankara</dd>
+                                            <dt>Title Deeds</dt>
                                             <dd>1</dd>
-                                            <dt>Ada/Parsel</dt>
-                                            <dd>8896/10 KÜÇÜK SANAYİ TESİSİ</dd>
+                                            <dt>Parcels</dt>
+                                            <dd>110/5</dd>
                                         </dl>
                                     </li>
                                     <li class="business-new">
@@ -1139,12 +1139,12 @@
                                             <span class="business-info ui-theme-yellow ui-fill-dark-100">VIP</span>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
-                                            <dt>İl/İlçe</dt>
-                                            <dd>İZMİR / BORNOVA</dd>
-                                            <dt>Tapu Sayısı</dt>
+                                            <dt>State</dt>
+                                            <dd>İstanbul</dd>
+                                            <dt>Title Deeds</dt>
                                             <dd>1</dd>
-                                            <dt>Ada/Parsel</dt>
-                                            <dd>8896/10 KÜÇÜK SANAYİ TESİSİ</dd>
+                                            <dt>Parcels</dt>
+                                            <dd>896/7</dd>
                                         </dl>
                                     </li>
                                     <li class="business-new">
@@ -1157,12 +1157,12 @@
                                             <span class="business-info ui-theme-orange ui-fill-dark-100">Revised</span>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
-                                            <dt>İl/İlçe</dt>
-                                            <dd>İZMİR / BORNOVA</dd>
-                                            <dt>Tapu Sayısı</dt>
+                                            <dt>State</dt>
+                                            <dd>İzmir</dd>
+                                            <dt>Title Deeds</dt>
                                             <dd>1</dd>
-                                            <dt>Ada/Parsel</dt>
-                                            <dd>8896/10 KÜÇÜK SANAYİ TESİSİ</dd>
+                                            <dt>Parcels</dt>
+                                            <dd>70/1</dd>
                                         </dl>
                                     </li>
                                     <li class="business-new">
@@ -1174,12 +1174,12 @@
                                             <em>30.25.2022 09:43pm</em>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
-                                            <dt>İl/İlçe</dt>
-                                            <dd>İZMİR / BORNOVA</dd>
-                                            <dt>Tapu Sayısı</dt>
+                                            <dt>State</dt>
+                                            <dd>Antalya</dd>
+                                            <dt>Title Deeds</dt>
                                             <dd>1</dd>
-                                            <dt>Ada/Parsel</dt>
-                                            <dd>8896/10 KÜÇÜK SANAYİ TESİSİ</dd>
+                                            <dt>Parcels</dt>
+                                            <dd>606/13</dd>
                                         </dl>
                                     </li>
                                     <li class="business-new">
@@ -1191,12 +1191,12 @@
                                             <em>30.25.2022 09:43pm</em>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
-                                            <dt>İl/İlçe</dt>
-                                            <dd>İZMİR / BORNOVA</dd>
-                                            <dt>Tapu Sayısı</dt>
+                                            <dt>State</dt>
+                                            <dd>İstanbul</dd>
+                                            <dt>Title Deeds</dt>
                                             <dd>1</dd>
-                                            <dt>Ada/Parsel</dt>
-                                            <dd>8896/10 KÜÇÜK SANAYİ TESİSİ</dd>
+                                            <dt>Parcels</dt>
+                                            <dd>23/5</dd>
                                         </dl>
                                     </li>
                                     <li class="business-new">
@@ -1208,12 +1208,12 @@
                                             <em>30.25.2022 09:43pm</em>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
-                                            <dt>İl/İlçe</dt>
-                                            <dd>İZMİR / BORNOVA</dd>
-                                            <dt>Tapu Sayısı</dt>
+                                            <dt>State</dt>
+                                            <dd>Ankara</dd>
+                                            <dt>Title Deeds</dt>
                                             <dd>1</dd>
-                                            <dt>Ada/Parsel</dt>
-                                            <dd>8896/10 KÜÇÜK SANAYİ TESİSİ</dd>
+                                            <dt>Parcels</dt>
+                                            <dd>775/9</dd>
                                         </dl>
                                     </li>
                                     <li class="business-new">
@@ -1225,12 +1225,12 @@
                                             <em>30.25.2022 09:43pm</em>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
-                                            <dt>İl/İlçe</dt>
-                                            <dd>İZMİR / BORNOVA</dd>
-                                            <dt>Tapu Sayısı</dt>
+                                            <dt>State</dt>
+                                            <dd>İstanbul</dd>
+                                            <dt>Title Deeds</dt>
                                             <dd>1</dd>
-                                            <dt>Ada/Parsel</dt>
-                                            <dd>8896/10 KÜÇÜK SANAYİ TESİSİ</dd>
+                                            <dt>Parcels</dt>
+                                            <dd>513/2</dd>
                                         </dl>
                                     </li>
                                     <li class="business-new">
@@ -1242,12 +1242,12 @@
                                             <em>30.25.2022 09:43pm</em>
                                         </a>
                                         <dl class="ui-row ui-row-gap-sm">
-                                            <dt>İl/İlçe</dt>
-                                            <dd>İZMİR / BORNOVA</dd>
-                                            <dt>Tapu Sayısı</dt>
+                                            <dt>State</dt>
+                                            <dd>İstanbul</dd>
+                                            <dt>Title Deeds</dt>
                                             <dd>1</dd>
-                                            <dt>Ada/Parsel</dt>
-                                            <dd>8896/10 KÜÇÜK SANAYİ TESİSİ</dd>
+                                            <dt>Parcels</dt>
+                                            <dd>896/7</dd>
                                         </dl>
                                     </li>
                                 </ul>
