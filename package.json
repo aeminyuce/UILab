@@ -6,6 +6,9 @@
   },
   "license": "MIT",
   "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development",
+    "test": "mocha tests/unit/*.test.js --require @babel/register",
     "css:build": "npm run css:ui & npm run css:helpers & npm run css:pages",
     "css:ui": "lessc less/ui.less dist/css/ui.css",
     "css:helpers": "npm run css:iconlist",
@@ -44,8 +47,7 @@
     "icon:social": "svgo -f icon/social",
     "icon:touch": "svgo -f icon/touch",
     "icon:weather": "svgo -f icon/weather",
-    "icon:sprite": "svgstore -o dist/icons.svg icon/*/*.svg",
-    "test": "mocha tests/unit/*.test.js --require @babel/register"
+    "icon:sprite": "svgstore -o dist/icons.svg icon/*/*.svg"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
@@ -53,14 +55,27 @@
     "@babel/eslint-parser": "^7.17.0",
     "@babel/node": "^7.16.8",
     "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.17.12",
     "@babel/register": "^7.17.0",
+    "babel-loader": "^8.2.5",
     "chai": "^4.3.6",
+    "css-loader": "^6.7.1",
     "eslint": "^8.10.0",
+    "html-webpack-plugin": "^5.5.0",
     "less": "^4.1.2",
+    "less-loader": "^11.0.0",
     "mocha": "^9.2.1",
     "puppeteer": "^13.4.1",
     "rollup": "^2.70.0",
+    "style-loader": "^3.3.1",
     "svgo": "^2.8.0",
-    "svgstore-cli": "^2.0.1"
+    "svgstore-cli": "^2.0.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   }
 }

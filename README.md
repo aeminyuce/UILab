@@ -7,19 +7,15 @@ npm i -D less
 npm i -D @babel/core @babel/cli @babel/node @babel/preset-env @babel/eslint-parser
 npm i -D rollup
 
-// ES Lint
-run cmd as administrator
-powershell Set-ExecutionPolicy RemoteSigned
+// React
+npm i react react-dom
+npm i -D webpack webpack-cli html-webpack-plugin webpack-dev-server
+npm i -D @babel/preset-react @babel/plugin-proposal-private-methods @babel/plugin-proposal-class-properties babel-loader
+npm i -D style-loader css-loader less-loader
 
+// ES Lint
 npm i -D eslint
 npm init @eslint/config
-
-√ How would you like to use ESLint?                     : problems
-√ What type of modules does your project use?           : esm
-√ Which framework does your project use?                : none
-√ Does your project use TypeScript?                     : No
-√ Where does your code run?                             : browser
-√ What format do you want your config file to be in?    : JavaScript (Roll back file!)
 
 // Icon
 npm i -D svgo svgstore-cli
