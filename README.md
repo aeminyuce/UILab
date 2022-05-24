@@ -25,17 +25,17 @@ npm i -D @babel/register
 npm i -D mocha chai puppeteer
 ```
 ### Docs:
-[Less](https://lesscss.org/usage)
-[Less Preview](http://lesscss.org/less-preview)
-
-[ESLint](https://eslint.org/docs/rules)
-
-[Babel](https://babeljs.io/docs/en/options)
-[Rollup](https://rollupjs.org/guide/en)
-
-[SVGO](https://github.com/svg/svgo)
-[SVGOMG](https://jakearchibald.github.io/svgomg)
-
-[Mocha](https://mochajs.org)
-[Chai](https://www.chaijs.com/api)
-[Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/api.md)
+[Less](https://lesscss.org/usage)\
+[Less Preview](http://lesscss.org/less-preview)\
+\
+[ESLint](https://eslint.org/docs/rules)\
+\
+[Babel](https://babeljs.io/docs/en/options)\
+[Rollup](https://rollupjs.org/guide/en)\
+\
+[SVGO](https://github.com/svg/svgo)\
+[SVGOMG](https://jakearchibald.github.io/svgomg)\
+\
+[Mocha](https://mochajs.org)\
+[Chai](https://www.chaijs.com/api)\
+[Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/api.md)\
