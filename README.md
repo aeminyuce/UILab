@@ -25,7 +25,6 @@ npm i -D @babel/register
 npm i -D mocha chai puppeteer
 ```
 ### Docs:
-```
 [Less](https://lesscss.org/usage)
 [Less Preview](http://lesscss.org/less-preview)
 
@@ -40,4 +39,3 @@ npm i -D mocha chai puppeteer
 [Mocha](https://mochajs.org)
 [Chai](https://www.chaijs.com/api)
 [Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/api.md)
-```
