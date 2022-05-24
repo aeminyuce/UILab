@@ -26,11 +26,13 @@ ui.topButton = {
 
 (() => {
 
-    var togglerFnc;
+    var togglerFnc = () => {
 
-    togglerFnc = () => {
+        var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + ' ' + ui.topButton.nameOpen + '" title="' + ui.topButton.titleText + '">' +
+                        '<svg class="' + ui.topButton.stylesIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.topButton.icon + '"/></svg>' +
+                    '</button>';
 
-        var topBtn = ui.find('.' + ui.topButton.target)[0];
+        var topBtn;
 
         if (ui.find('body')[0].offsetHeight > (window.innerHeight * 2) && window.innerWidth > ui.globals.sm) {
 
@@ -38,9 +40,11 @@ ui.topButton = {
 
                 if (window.pageYOffset > (window.innerHeight / 3)) {
 
-                    if (!ui.hasClass(topBtn, ui.topButton.nameOpen)) {
+                    topBtn = ui.find('.' + ui.topButton.target)[0];
+                    if (topBtn === undefined) {
 
-                        ui.addClass(topBtn, ui.topButton.nameOpen);
+                        ui.find('body')[0].insertAdjacentHTML('beforeend', html);
+                        topBtn = ui.find('.' + ui.topButton.target)[0];
 
                         setTimeout(() => {
                             ui.addClass(topBtn, ui.topButton.nameOpenEase);
@@ -50,12 +54,17 @@ ui.topButton = {
 
                 } else {
 
-                    if (ui.hasClass(topBtn, ui.topButton.nameOpen)) {
+                    topBtn = ui.find('.' + ui.topButton.target)[0];
+                    if (topBtn !== undefined) {
 
                         ui.removeClass(topBtn, ui.topButton.nameOpenEase);
 
                         setTimeout(() => {
-                            ui.removeClass(topBtn, ui.topButton.nameOpen);
+
+                            if (topBtn.parentNode !== null) {
+                                topBtn.parentNode.removeChild(topBtn);
+                            }
+
                         }, ui.globals.slow);
 
                     }
@@ -72,16 +81,13 @@ ui.topButton = {
 
         if (ui.userAgents.desktop) {
 
-            var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + '" title="' + ui.topButton.titleText + '">' +
-                            '<svg class="' + ui.topButton.stylesIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.topButton.icon + '"/></svg>' +
-                        '</button>';
-
-            ui.find('body')[0].insertAdjacentHTML('beforeend', html);
             togglerFnc();
 
             // Event Listeners
-            ui.on('.' + ui.topButton.target,
+            ui.on(document,
                 'click',
+
+                '.' + ui.topButton.target,
 
                 function () {
                     window.scrollTo(0, 0);

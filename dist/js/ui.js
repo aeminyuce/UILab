@@ -1360,25 +1360,31 @@ ui.topButton = {
 };
 
 (function () {
-  var togglerFnc;
-
-  togglerFnc = function togglerFnc() {
-    var topBtn = ui.find('.' + ui.topButton.target)[0];
+  var togglerFnc = function togglerFnc() {
+    var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + ' ' + ui.topButton.nameOpen + '" title="' + ui.topButton.titleText + '">' + '<svg class="' + ui.topButton.stylesIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.topButton.icon + '"/></svg>' + '</button>';
+    var topBtn;
 
     if (ui.find('body')[0].offsetHeight > window.innerHeight * 2 && window.innerWidth > ui.globals.sm) {
       setTimeout(function () {
         if (window.pageYOffset > window.innerHeight / 3) {
-          if (!ui.hasClass(topBtn, ui.topButton.nameOpen)) {
-            ui.addClass(topBtn, ui.topButton.nameOpen);
+          topBtn = ui.find('.' + ui.topButton.target)[0];
+
+          if (topBtn === undefined) {
+            ui.find('body')[0].insertAdjacentHTML('beforeend', html);
+            topBtn = ui.find('.' + ui.topButton.target)[0];
             setTimeout(function () {
               ui.addClass(topBtn, ui.topButton.nameOpenEase);
             }, ui.globals.slow);
           }
         } else {
-          if (ui.hasClass(topBtn, ui.topButton.nameOpen)) {
+          topBtn = ui.find('.' + ui.topButton.target)[0];
+
+          if (topBtn !== undefined) {
             ui.removeClass(topBtn, ui.topButton.nameOpenEase);
             setTimeout(function () {
-              ui.removeClass(topBtn, ui.topButton.nameOpen);
+              if (topBtn.parentNode !== null) {
+                topBtn.parentNode.removeChild(topBtn);
+              }
             }, ui.globals.slow);
           }
         }
@@ -1388,10 +1394,8 @@ ui.topButton = {
 
   ui.topButton.Start = function () {
     if (ui.userAgents.desktop) {
-      var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + '" title="' + ui.topButton.titleText + '">' + '<svg class="' + ui.topButton.stylesIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.topButton.icon + '"/></svg>' + '</button>';
-      ui.find('body')[0].insertAdjacentHTML('beforeend', html);
       togglerFnc();
-      ui.on('.' + ui.topButton.target, 'click', function () {
+      ui.on(document, 'click', '.' + ui.topButton.target, function () {
         window.scrollTo(0, 0);
       });
     }
