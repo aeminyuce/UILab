@@ -3,12 +3,26 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: path.resolve(__dirname, "./src/index.js"),
-    output: {
-        path: path.resolve(__dirname, "bundle")
-    },
     devServer: { // https://webpack.js.org/configuration/dev-server/
         port: 3000, // Opens http://localhost:3000/
         open: true, // Opens browser on a new tab automatically
+    },
+    resolve: {
+        alias: { // custom aliases
+            styles: path.resolve(__dirname, './less/styles.less'),
+            stylesModule: path.resolve(__dirname, './less/modules/'),
+
+            scripts: path.resolve(__dirname, './js/scripts'),
+            scriptsModule: path.resolve(__dirname, './js/modules/'),
+
+            ui: path.resolve(__dirname, './js/core/globals'),
+            icons: path.resolve(__dirname, './dist/icons.svg'),
+            components: path.resolve(__dirname, './src/components/'),
+        },
+    },
+    performance: {
+        maxEntrypointSize: 512000, // rendered main.js size limit
+        maxAssetSize: 512000 // single asset size limit
     },
     module: {
         rules: [

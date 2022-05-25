@@ -1,20 +1,19 @@
 import React, { useEffect } from "react";
 
-// UI
-import '../less/ui.less';
-import '../js/ui.js';
+import 'styles';
+import 'stylesModule/calendar.less';
+import 'stylesModule/line-chart.less';
 
-// Globals
-import { ui } from '../js/core/globals.js';
+import 'scripts';
+import 'scriptsModule/calendar';
+import 'scriptsModule/line-chart';
 
-// Icons
-import svg from '../dist/icons.svg';
+import { ui } from 'ui';
+ui.globals.iconSrc = Icons;
+ui.icons.iconSrc = Icons;
 
-ui.globals.iconSrc = svg;
-ui.icons.iconSrc = svg;
-
-// Components
-import Button from "./Components/Button";
+import Icons from 'icons';
+import Button, { SquareButton } from "components/Button";
 
 export default function App() {
 
@@ -22,33 +21,34 @@ export default function App() {
 
         // Inits
         ui.calendar.Init();
-        ui.carousel.Init();
-        ui.donutChart.Init();
-        ui.dualMultiSelect.Init();
-        ui.formSpinner.Init();
-        ui.forms.Init();
+        //ui.carousel.Init();
+        //ui.donutChart.Init();
+        //ui.dualMultiSelect.Init();
+        //ui.formSpinner.Init();
+        //ui.forms.Init();
         ui.lineChart.Init();
-        ui.photoslide.Init();
-        ui.pieChart.Init();
-        ui.textareaCounter.Init();
-        ui.weather.Init();
+        //ui.photoslide.Init();
+        //ui.pieChart.Init();
+        //ui.textareaCounter.Init();
+        //ui.weather.Init();
 
-    }, []);
+    }); // Runs on every render
 
     return (
         <>
             <div className="ui-fixed ui-p-30-v">
 
                 <h1>Hello World</h1>
-                <Button classname="ui-btn ui-ease-btn" label="Test Button"></Button>
+                <Button label="Test Button"></Button>
+                <br/><br/>
+                <SquareButton label="SB"></SquareButton>
 
                 <br/><br/>
-                <h2>SVG Icon Example</h2>
-                <svg className="ui-icon"><use href={svg + "#brackets-curly"}></use></svg>
+                <h2 className="ui-h2">SVG Icon Example</h2>
+                <svg className="ui-icon"><use href={Icons + "#brackets-curly"}></use></svg>
                 <br/><br/>
 
-                <h3 className="ui-h3">Calendar Styles</h3>
-
+                <h3 className="ui-h3">Calendars</h3>
                 <div className="ui-row">
                     <div className="ui-col-4 ui-col-md-6">
                         <div className="ui-calendar ui-ease-calendar"></div>
@@ -68,6 +68,9 @@ export default function App() {
                     <div className="ui-col-4 ui-col-md-6">
                         <div className="ui-calendar ui-ease-calendar ui-round ui-shadow-lg ui-theme-base ui-fill-dark-100"></div>
                     </div>
+                </div>
+                <div className="ui-col-12">
+                    <h3 className="ui-h3">Line Charts</h3>
                 </div>
                 <div className="ui-row">
                     <div className="ui-col-6">

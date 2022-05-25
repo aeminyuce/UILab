@@ -6,7 +6,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "webpack serve --mode production",
     "start": "webpack serve --mode development",
     "test": "mocha tests/unit/*.test.js --require @babel/register",
     "css:build": "npm run css:ui & npm run css:helpers & npm run css:pages",
