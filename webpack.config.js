@@ -7,8 +7,10 @@ module.exports = {
         port: 3000, // Opens http://localhost:3000/
         open: true, // Opens browser on a new tab automatically
     },
-    resolve: {
+    resolve: { // https://webpack.js.org/configuration/resolve/
+        extensions: ['.js', '.less'],
         alias: { // custom aliases
+
             styles: path.resolve(__dirname, './less/styles.less'),
             stylesModule: path.resolve(__dirname, './less/modules/'),
 
@@ -16,8 +18,9 @@ module.exports = {
             scriptsModule: path.resolve(__dirname, './js/modules/'),
 
             ui: path.resolve(__dirname, './js/core/globals'),
-            icons: path.resolve(__dirname, './dist/icons.svg'),
+            utils: path.resolve(__dirname, './src/utils/'),
             components: path.resolve(__dirname, './src/components/'),
+
         },
     },
     performance: {

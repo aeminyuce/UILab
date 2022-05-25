@@ -1,36 +1,22 @@
 import React, { useEffect } from "react";
 
 import 'styles';
-import 'stylesModule/calendar.less';
-import 'stylesModule/line-chart.less';
+import 'stylesModule/calendar';
+import 'stylesModule/line-chart';
 
 import 'scripts';
 import 'scriptsModule/calendar';
 import 'scriptsModule/line-chart';
 
-import { ui } from 'ui';
-ui.globals.iconSrc = Icons;
-ui.icons.iconSrc = Icons;
+import Inits from 'utils/Inits';
+import Icons from 'utils/Icons';
 
-import Icons from 'icons';
 import Button, { SquareButton } from "components/Button";
 
 export default function App() {
 
     useEffect(() => {
-
-        // Inits
-        ui.calendar.Init();
-        //ui.carousel.Init();
-        //ui.donutChart.Init();
-        //ui.dualMultiSelect.Init();
-        //ui.formSpinner.Init();
-        //ui.forms.Init();
-        ui.lineChart.Init();
-        //ui.photoslide.Init();
-        //ui.pieChart.Init();
-        //ui.textareaCounter.Init();
-        //ui.weather.Init();
+        Inits();
 
     }); // Runs on every render
 
