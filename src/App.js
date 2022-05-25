@@ -1,16 +1,22 @@
 import React, { useEffect } from "react";
 
+// ui
 import 'styles';
-import 'stylesModule/calendar';
-import 'stylesModule/line-chart';
-
 import 'scripts';
-import 'scriptsModule/calendar';
-import 'scriptsModule/line-chart';
+
+// modules
+import 'styleModule/calendar';
+import 'scriptModule/calendar';
+
+import 'styleModule/line-chart';
+import 'scriptModule/line-chart';
 
 import Inits from 'utils/Inits';
+
+// icons
 import Icons from 'utils/Icons';
 
+// components
 import Button, { SquareButton } from "components/Button";
 
 export default function App() {

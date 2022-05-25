@@ -21,8 +21,6 @@ import './modules/effects.js';
 import './modules/grid.js';
 
 // Buttons
-import './modules/dropdown.js';
-import './modules/tab.js';
 import './modules/top-button.js';
 
 // Icons
