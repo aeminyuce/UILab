@@ -8,7 +8,7 @@ module.exports = {
         open: true, // Opens browser on a new tab automatically
     },
     resolve: { // https://webpack.js.org/configuration/resolve/
-        extensions: ['.js', '.less'],
+        extensions: ['.js', '.less', '.css'], // file types
         alias: { // custom aliases
             styles: path.resolve(__dirname, './less/styles.less'),
             scripts: path.resolve(__dirname, './js/scripts'),
