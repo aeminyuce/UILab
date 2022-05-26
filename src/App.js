@@ -17,6 +17,7 @@ import Inits from 'utils/Inits';
 import Icons from 'utils/Icons';
 
 // components
+import Icon from "components/Icons";
 import Button, { SquareButton } from "components/Button";
 
 export default function App() {
@@ -30,16 +31,21 @@ export default function App() {
         <>
             <div className="ui-fixed ui-p-30-v">
 
-                <h1>Hello World</h1>
+                <h1>Icons</h1>
+                <Icon src="envelope" size="xs"></Icon>
+                <Icon src="envelope" size="sm"></Icon>
+                <Icon src="envelope"></Icon> {/* default size */}
+                <Icon src="envelope" size="lg"></Icon>
+                <Icon src="envelope" size="xl"></Icon>
+                <Icon src="envelope" size="xxl"></Icon>
+                <Icon src="camera" type="media"></Icon>
+                <Icon src="camera" type="media" size="xl"></Icon>
+                <Icon src="camera" type="media" size="xxl"></Icon>
+                <br/><br/>
                 <Button label="Test Button"></Button>
                 <br/><br/>
                 <SquareButton label="SB"></SquareButton>
-
                 <br/><br/>
-                <h2 className="ui-h2">SVG Icon Example</h2>
-                <svg className="ui-icon"><use href={Icons + "#brackets-curly"}></use></svg>
-                <br/><br/>
-
                 <h3 className="ui-h3">Calendars</h3>
                 <div className="ui-row">
                     <div className="ui-col-4 ui-col-md-6">

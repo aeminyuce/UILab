@@ -63,11 +63,12 @@ module.exports = {
             },
             {
                 test: /\.svg$/,
+                include: path.resolve(__dirname, "dist"),
                 use: [ // loads SVG
                     {
                         loader: 'svg-url-loader',
                         options: {
-                            limit: 10000,
+                            iesafe: true, // make all svg images to work in IE
                         },
                     },
                 ],
