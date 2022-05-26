@@ -42,6 +42,14 @@ export default function App() {
                 <Icon src="camera" type="media" size="xl"></Icon>
                 <Icon src="camera" type="media" size="xxl"></Icon>
                 <br/><br/>
+                <h3 className="ui-h2">SVG Sprite Icon Example</h3>
+                <svg className="ui-icon ui-icon-xs"><use href={Icons + "#camera"}></use></svg>
+                <svg className="ui-icon ui-icon-sm"><use href={Icons + "#camera"}></use></svg>
+                <svg className="ui-icon"><use href={Icons + "#camera"}></use></svg>
+                <svg className="ui-icon ui-icon-lg"><use href={Icons + "#camera"}></use></svg>
+                <svg className="ui-icon ui-icon-xl"><use href={Icons + "#camera"}></use></svg>
+                <svg className="ui-icon ui-icon-xxl"><use href={Icons + "#camera"}></use></svg>
+                <br/><br/>
                 <Button label="Test Button"></Button>
                 <br/><br/>
                 <SquareButton label="SB"></SquareButton>
