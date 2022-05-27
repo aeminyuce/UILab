@@ -14,7 +14,7 @@ import 'scriptModule/line-chart';
 import Inits from 'utils/Inits';
 
 // icons
-import Icons from 'utils/Icons';
+//import Icons from 'utils/Icons';
 
 // components
 import Icon from "components/Icons";
@@ -34,21 +34,13 @@ export default function App() {
                 <h1>Icons</h1>
                 <Icon src="envelope" size="xs"></Icon>
                 <Icon src="envelope" size="sm"></Icon>
-                <Icon src="envelope"></Icon> {/* default size */}
+                <Icon src="envelope"></Icon>
                 <Icon src="envelope" size="lg"></Icon>
                 <Icon src="envelope" size="xl"></Icon>
                 <Icon src="envelope" size="xxl"></Icon>
-                <Icon src="camera" type="media"></Icon>
-                <Icon src="camera" type="media" size="xl"></Icon>
-                <Icon src="camera" type="media" size="xxl"></Icon>
-                <br/><br/>
-                <h3 className="ui-h2">SVG Sprite Icon Example</h3>
-                <svg className="ui-icon ui-icon-xs"><use href={Icons + "#camera"}></use></svg>
-                <svg className="ui-icon ui-icon-sm"><use href={Icons + "#camera"}></use></svg>
-                <svg className="ui-icon"><use href={Icons + "#camera"}></use></svg>
-                <svg className="ui-icon ui-icon-lg"><use href={Icons + "#camera"}></use></svg>
-                <svg className="ui-icon ui-icon-xl"><use href={Icons + "#camera"}></use></svg>
-                <svg className="ui-icon ui-icon-xxl"><use href={Icons + "#camera"}></use></svg>
+                <Icon src="camera"></Icon>
+                <Icon src="camera" size="xl"></Icon>
+                <Icon src="camera" size="xxl"></Icon>
                 <br/><br/>
                 <Button label="Test Button"></Button>
                 <br/><br/>

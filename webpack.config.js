@@ -63,7 +63,7 @@ module.exports = {
             },
             {
                 test: /\.svg$/,
-                include: path.resolve(__dirname, "dist"),
+                include: path.resolve(__dirname, "icon"),
                 use: [ // loads SVG
                     {
                         loader: 'svg-url-loader',

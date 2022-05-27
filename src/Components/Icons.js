@@ -1,61 +1,59 @@
 import React, { useState, useEffect } from "react";
 
+// svg files
+import envelope from '../../icon/general/envelope.svg';
+import camera from '../../icon/media/camera.svg';
+
 export default function Icon(props) {
 
-    // reading svg files
-    const [currentSrc, updateSrc] = useState(""); // string
-    const type = props.type ? props.type : "general";
+    const names = [
+        { name: "envelope", val: envelope },
+        { name: "camera", val: camera },
+    ];
 
-    useEffect(() => {
-
-        const svg = require("svg-url-loader!../../icon/" + type + "/" + props.src + ".svg");
-
-        // get d='...' from svg file
-        const from = svg.indexOf("d='") + 3; // start of d
-
-        const cut = svg.indexOf("'/%");
-        const to = svg.length - (svg.length - cut); // end of d
-
-        const path = svg.substring(from, to); // inside of ''
-        updateSrc(path); // set state
-
-    }, []); // Runs only first render
-
-    // icon sizes
     const sizes = [
         { size: "xs", name: "ui-icon-xs" },
         { size: "sm", name: "ui-icon-sm" },
         { size: "lg", name: "ui-icon-lg" },
         { size: "xl", name: "ui-icon-xl" },
-        { size: "xxl", name: "ui-icon-xxl" }
+        { size: "xxl", name: "ui-icon-xxl" },
     ];
 
-    const iconSizes = sizes.filter(item => {
+    const [currentSrc, updateSrc] = useState(""); // type: string
+
+    // icon names
+    const iconName = names.find(item => {
+        return item.name === props.src;
+    });
+
+    useEffect(() => {
+
+        // get d='...' from svg file
+        const from = iconName.val.indexOf("d='") + 3;
+
+        const cut = iconName.val.indexOf("'/%");
+        const to = iconName.val.length - (iconName.val.length - cut);
+
+        const path = iconName.val.substring(from, to); // get inside of '...'
+        updateSrc(path);
+
+    }, []); // Runs only first render
+
+    // icon sizes
+    const iconSizes = sizes.find(item => {
         return item.size === props.size;
     });
 
-    if (iconSizes.length === 0) { // no size
+    let setSize = "";
 
-        return (
-            <svg className={"ui-icon"} viewBox="0 0 264 264">
-                <path d={currentSrc} />
-            </svg>
-        );
-
-    } else { // other sizes
-
-        return (
-            <>
-                {iconSizes.map(item => {
-                    return (
-                        <svg key={item} className={"ui-icon " + item.name} viewBox="0 0 264 264">
-                            <path d={currentSrc} />
-                        </svg>
-                    );
-                })}
-            </>
-        );
-
+    if (iconSizes !== undefined) {
+        setSize = " " + iconSizes.name;
     }
+
+    return (
+        <svg className={"ui-icon" + setSize} viewBox="0 0 264 264">
+            <path d={currentSrc} />
+        </svg>
+    );
 
 }
