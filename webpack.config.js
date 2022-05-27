@@ -18,6 +18,7 @@ module.exports = {
 
             ui: path.resolve(__dirname, './js/core/globals'),
             utils: path.resolve(__dirname, './src/utils/'),
+            icon: path.resolve(__dirname, './icon/'),
             components: path.resolve(__dirname, './src/components/'),
         },
     },
@@ -39,7 +40,9 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                include: path.resolve(__dirname, "public"),
+                include: [
+                    path.resolve(__dirname, "public"),
+                ],
                 use: [ // loads CSS
                     "style-loader",
                     "css-loader"
@@ -47,7 +50,9 @@ module.exports = {
             },
             {
                 test: /\.less$/i,
-                include: path.resolve(__dirname, "less"),
+                include: [
+                    path.resolve(__dirname, "less"),
+                ],
                 use: [ // compiles Less to CSS
                     { loader: "style-loader" },
                     { loader: "css-loader" },
@@ -63,7 +68,10 @@ module.exports = {
             },
             {
                 test: /\.svg$/,
-                include: path.resolve(__dirname, "icon"),
+                include: [
+                    path.resolve(__dirname, "icon"),
+                    path.resolve(__dirname, "dist"),
+                ],
                 use: [ // loads SVG
                     {
                         loader: 'svg-url-loader',

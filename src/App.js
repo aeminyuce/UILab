@@ -13,9 +13,6 @@ import 'scriptModule/line-chart';
 
 import Inits from 'utils/Inits';
 
-// icons
-//import Icons from 'utils/Icons';
-
 // components
 import Icon from "components/Icons";
 import Button, { SquareButton } from "components/Button";

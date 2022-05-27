@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-// svg files
-import envelope from '../../icon/general/envelope.svg';
-import camera from '../../icon/media/camera.svg';
+// read svg files
+import envelope from 'icon/general/envelope.svg';
+import camera from 'icon/media/camera.svg';
 
 export default function Icon(props) {
 
@@ -57,3 +57,10 @@ export default function Icon(props) {
     );
 
 }
+
+// create sprites
+import { ui } from 'ui';
+import sprites from '../../dist/icons.svg';
+
+ui.globals.iconSrc = sprites;
+ui.icons.iconSrc = sprites;
