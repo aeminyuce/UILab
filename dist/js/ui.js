@@ -16,6 +16,8 @@ var ui = {
     passiveEvents: ['touchstart', 'touchmove'],
     svgElems: ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'],
     iconSrc: '../dist/icons.svg',
+    inlineSvg: false,
+    inlineSvgViewBox: '0 0 264 264',
     dataPrefix: 'data-ui-',
     dataClasses: 'data-ui-classes',
     eventAjaxCallback: 'ui:ajaxCallback',
@@ -1361,7 +1363,15 @@ ui.topButton = {
 
 (function () {
   var togglerFnc = function togglerFnc() {
-    var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + ' ' + ui.topButton.nameOpen + '" title="' + ui.topButton.titleText + '">' + '<svg class="' + ui.topButton.stylesIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.topButton.icon + '"/></svg>' + '</button>';
+    var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + ' ' + ui.topButton.nameOpen + '" title="' + ui.topButton.titleText + '">';
+
+    if (ui.globals.inlineSvg) {
+      html += '<svg class="' + ui.topButton.stylesIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.topButton.icon;
+    } else {
+      html += '<svg class="' + ui.topButton.stylesIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.topButton.icon + '"/>';
+    }
+
+    html += '</svg>' + '</button>';
     var topBtn;
 
     if (ui.find('body')[0].offsetHeight > window.innerHeight * 2 && window.innerWidth > ui.globals.sm) {
@@ -2898,7 +2908,15 @@ ui.alerts = {
       if (props.error !== undefined) {
         buttons += '<button class="' + ui.alerts.nameDialogError + '" value="' + ui.alerts.errorBtnValue + '">' + props.error + '</button>';
         cancelCloseDialog = true;
-        closeBtn = '<button class="' + ui.alerts.nameCloseDialog + ' ' + ui.alerts.stylesCloseDialog + '">' + '<svg class="' + ui.alerts.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.alerts.closeIcon + '"/></svg>' + '</button>';
+        closeBtn = '<button class="' + ui.alerts.nameCloseDialog + ' ' + ui.alerts.stylesCloseDialog + '">';
+
+        if (ui.globals.inlineSvg) {
+          closeBtn += '<svg class="' + ui.alerts.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.closeIcon;
+        } else {
+          closeBtn += '<svg class="' + ui.alerts.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.closeIcon + '"/>';
+        }
+
+        closeBtn += '</svg>' + '</button>';
       }
 
       var bgOld = ui.find('.' + ui.alerts.targetBg)[0];
@@ -3245,7 +3263,23 @@ ui.calendar.Start = function () {
       html += ' class="' + ui.calendar.nameWeekend + '"';
     }
 
-    html += '>' + '<caption>' + '<button type="button" tabindex="-1" class="' + ui.calendar.namePrev + '">' + '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.prevIcon + '"/></svg>' + '</button>' + '<span class="' + ui.calendar.nameTitle + ' ' + ui.calendar.stylesTitle + '">' + '<button type="button" tabindex="-1" class="' + ui.calendar.nameMonth + '">' + ui.calendar.months[date.getMonth()] + '</button>' + '<button type="button" tabindex="-1" class="' + ui.calendar.nameYear + '">' + date.getFullYear() + '</button>' + '</span>' + '<button type="button" tabindex="-1" class="' + ui.calendar.nameNext + '">' + '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.nextIcon + '"/></svg>' + '</button>' + '</caption>' + '<thead>';
+    html += '>' + '<caption>' + '<button type="button" tabindex="-1" class="' + ui.calendar.namePrev + '">';
+
+    if (ui.globals.inlineSvg) {
+      html += '<svg class="' + ui.calendar.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.prevIcon;
+    } else {
+      html += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.prevIcon + '"/>';
+    }
+
+    html += '</svg>' + '</button>' + '<span class="' + ui.calendar.nameTitle + ' ' + ui.calendar.stylesTitle + '">' + '<button type="button" tabindex="-1" class="' + ui.calendar.nameMonth + '">' + ui.calendar.months[date.getMonth()] + '</button>' + '<button type="button" tabindex="-1" class="' + ui.calendar.nameYear + '">' + date.getFullYear() + '</button>' + '</span>' + '<button type="button" tabindex="-1" class="' + ui.calendar.nameNext + '">';
+
+    if (ui.globals.inlineSvg) {
+      html += '<svg class="' + ui.calendar.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.nextIcon;
+    } else {
+      html += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.nextIcon + '"/>';
+    }
+
+    html += '</svg>' + '</button>' + '</caption>' + '<thead>';
 
     if (ui.calendar.startDayofWeek === 0) {
       html += '<th>' + ui.calendar.days[ui.calendar.days.length - 1] + '</th>';
@@ -3379,10 +3413,29 @@ ui.calendar.Start = function () {
             }
 
             if (details !== '') {
-              details = '<div class="' + ui.calendar.nameDetails + '">' + '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">' + '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/></svg>' + '</button>' + '<ul class="' + ui.calendar.stylesDetailScroll + '">' + details + '</ul>' + '</div>';
+              var detailsTemp;
+              detailsTemp = '<div class="' + ui.calendar.nameDetails + '">' + '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">';
+
+              if (ui.globals.inlineSvg) {
+                detailsTemp += '<svg class="' + ui.calendar.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.backIcon;
+              } else {
+                detailsTemp += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/>';
+              }
+
+              detailsTemp += '</svg>' + '</button>' + '<ul class="' + ui.calendar.stylesDetailScroll + '">' + details + '</ul>' + '</div>';
               ui.addClass(container, ui.calendar.nameHasDetails);
+              details = detailsTemp;
+              detailsTemp = '';
             } else {
-              details = '<div class="' + ui.calendar.nameDetails + ' ' + ui.calendar.nameEmptyDetails + '">' + '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">' + '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/></svg>' + '</button>' + '<ul>' + '<li>' + '<strong></strong>' + '<b></b><br>' + '<span></span>' + '<span></span>' + '<span></span>' + '</li>' + '</ul>' + '</div>';
+              details = '<div class="' + ui.calendar.nameDetails + ' ' + ui.calendar.nameEmptyDetails + '">' + '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">';
+
+              if (ui.globals.inlineSvg) {
+                details += '<svg class="' + ui.calendar.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.backIcon;
+              } else {
+                details += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/>';
+              }
+
+              details += '</svg>' + '</button>' + '<ul>' + '<li>' + '<strong></strong>' + '<b></b><br>' + '<span></span>' + '<span></span>' + '<span></span>' + '</li>' + '</ul>' + '</div>';
               ui.removeClass(container, ui.calendar.nameHasDetails);
             }
 
@@ -4828,7 +4881,12 @@ ui.datatable = {
     Array.prototype.forEach.call(buttons, function (el) {
       if (!ui.hasClass(el, ui.datatable.nameActive)) {
         ui.removeClass(el, ui.datatable.nameAsc + ' ' + ui.datatable.nameDesc);
-        ui.find('.' + ui.datatable.nameIcon + ' use', el)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
+
+        if (ui.globals.inlineSvg) {
+          ui.find('.' + ui.datatable.nameIcon, el)[0] = ui.datatable.sortIcon;
+        } else {
+          ui.find('.' + ui.datatable.nameIcon + ' use', el)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
+        }
       }
     });
     var sortType = this.getAttribute(ui.datatable.dataType);
@@ -4844,18 +4902,34 @@ ui.datatable = {
       ui.addClass(this, ui.datatable.nameDesc);
 
       if (sortType === ui.datatable.sortTypeNumber) {
-        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descNumberIcon);
+        if (ui.globals.inlineSvg) {
+          ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.descNumberIcon;
+        } else {
+          ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descNumberIcon);
+        }
       } else {
-        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descIcon);
+        if (ui.globals.inlineSvg) {
+          ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.descIcon;
+        } else {
+          ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descIcon);
+        }
       }
     } else {
       ui.removeClass(this, ui.datatable.nameDesc);
       ui.addClass(this, ui.datatable.nameAsc);
 
       if (sortType === ui.datatable.sortTypeNumber) {
-        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascNumberIcon);
+        if (ui.globals.inlineSvg) {
+          ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.ascNumberIcon;
+        } else {
+          ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascNumberIcon);
+        }
       } else {
-        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascIcon);
+        if (ui.globals.inlineSvg) {
+          ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.ascIcon;
+        } else {
+          ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascIcon);
+        }
       }
     }
 
@@ -5344,7 +5418,39 @@ ui.photoGallery = {
       }
 
       var index = Array.prototype.slice.call(images).indexOf(that);
-      var html = '<div class="' + ui.photoGallery.targetPreview + ' ' + ui.photoGallery.stylesPreview + '">' + '<div class="' + ui.photoGallery.namePreviewBg + '"></div>' + '<button class="' + ui.photoGallery.namePreviewClose + ' ' + ui.photoGallery.stylesCloseIcon + '">' + '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.closeIcon + '"/></svg>' + '</button>' + '<button type="button" class="' + ui.photoGallery.namePreviewPrev + ' ' + ui.photoGallery.stylesPreviewBtn + '">' + '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.prevIcon + '"/></svg>' + '</button>' + '<button type="button" class="' + ui.photoGallery.namePreviewNext + ' ' + ui.photoGallery.stylesPreviewBtn + '">' + '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.nextIcon + '"/></svg>' + '</button>' + '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.photoGallery.nameIcon + '">' + '<use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon + '"/>' + '</svg>' + '<span class="' + ui.photoGallery.namePreviewInfo + ' ' + ui.photoGallery.stylesPreview + '"></span>' + '<img class="' + ui.photoGallery.stylesPreview + '">' + '</div>';
+      var html = '<div class="' + ui.photoGallery.targetPreview + ' ' + ui.photoGallery.stylesPreview + '">' + '<div class="' + ui.photoGallery.namePreviewBg + '"></div>' + '<button class="' + ui.photoGallery.namePreviewClose + ' ' + ui.photoGallery.stylesCloseIcon + '">';
+
+      if (ui.globals.inlineSvg) {
+        html += '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.closeIcon;
+      } else {
+        html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.closeIcon + '"/>';
+      }
+
+      html += '</svg>' + '</button>' + '<button type="button" class="' + ui.photoGallery.namePreviewPrev + ' ' + ui.photoGallery.stylesPreviewBtn + '">';
+
+      if (ui.globals.inlineSvg) {
+        html += '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.prevIcon;
+      } else {
+        html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.prevIcon + '"/>';
+      }
+
+      html += '</svg>' + '</button>' + '<button type="button" class="' + ui.photoGallery.namePreviewNext + ' ' + ui.photoGallery.stylesPreviewBtn + '">';
+
+      if (ui.globals.inlineSvg) {
+        html += '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.nextIcon;
+      } else {
+        html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.nextIcon + '"/>';
+      }
+
+      html += '</svg>' + '</button>';
+
+      if (ui.globals.inlineSvg) {
+        html += '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.loaderIcon;
+      } else {
+        html += '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon + '"/>';
+      }
+
+      html += '</svg>' + '<span class="' + ui.photoGallery.namePreviewInfo + ' ' + ui.photoGallery.stylesPreview + '"></span>' + '<img class="' + ui.photoGallery.stylesPreview + '">' + '</div>';
       ui.find('body')[0].insertAdjacentHTML('beforeend', html);
       var preview = ui.find('.' + ui.photoGallery.targetPreview);
       var newImg = new Image();
@@ -5371,7 +5477,12 @@ ui.photoGallery = {
 
       var notLoadedImage = function notLoadedImage() {
         ui.addClass(loader, ui.photoGallery.namePause);
-        ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.errorIcon);
+
+        if (ui.globals.inlineSvg) {
+          loader.innerHTML = ui.photoGallery.errorIcon;
+        } else {
+          ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.errorIcon);
+        }
       };
 
       newImg.onload = showImage;
@@ -5456,7 +5567,13 @@ ui.photoGallery = {
         ui.removeClass(img, ui.photoGallery.nameOpenEase);
         loader.style.display = 'block';
         ui.removeClass(loader, ui.photoGallery.namePause);
-        ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon);
+
+        if (ui.globals.inlineSvg) {
+          loader.innerHTML = ui.photoGallery.loaderIcon;
+        } else {
+          ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon);
+        }
+
         toggleGalleryTools();
         setTimeout(function () {
           ui.removeClass(img, ui.photoGallery.nameOpen);
@@ -6455,7 +6572,15 @@ ui.modal = {
           }
         } else {
           if (closeBtn === undefined) {
-            closeBtn = '<button class="' + ui.modal.nameModalClose + ' ' + ui.modal.stylesCloseBtn + '">' + '<svg class="' + ui.modal.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.modal.closeIcon + '"/></svg>' + '</button>';
+            closeBtn = '<button class="' + ui.modal.nameModalClose + ' ' + ui.modal.stylesCloseBtn + '">';
+
+            if (ui.globals.inlineSvg) {
+              closeBtn += '<svg class="' + ui.modal.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.modal.closeIcon;
+            } else {
+              closeBtn += '<svg class="' + ui.modal.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.modal.closeIcon + '"/>';
+            }
+
+            closeBtn += '</svg>' + '</button>';
             content.insertAdjacentHTML('afterbegin', closeBtn);
           }
         }

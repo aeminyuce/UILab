@@ -31,6 +31,9 @@ export const ui = {
         // icons
         iconSrc: '../dist/icons.svg', // IE not support SVG external reference!
 
+        inlineSvg: false,
+        inlineSvgViewBox: '0 0 264 264',
+
         // data attributes
         dataPrefix: 'data-ui-',
         dataClasses: 'data-ui-classes',

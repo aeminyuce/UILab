@@ -388,7 +388,13 @@ ui.datatable = {
                     if (!ui.hasClass(el, ui.datatable.nameActive)) {
 
                         ui.removeClass(el, ui.datatable.nameAsc + ' ' + ui.datatable.nameDesc);
-                        ui.find('.' + ui.datatable.nameIcon + ' use', el)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
+
+                        if (ui.globals.inlineSvg) {
+                            ui.find('.' + ui.datatable.nameIcon, el)[0] = ui.datatable.sortIcon;
+
+                        } else {
+                            ui.find('.' + ui.datatable.nameIcon + ' use', el)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
+                        }
 
                     }
 
@@ -405,10 +411,23 @@ ui.datatable = {
                 ui.addClass(this, ui.datatable.nameDesc);
 
                 if (sortType === ui.datatable.sortTypeNumber) {
-                    ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descNumberIcon);
+
+                    if (ui.globals.inlineSvg) {
+                        ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.descNumberIcon;
+
+                    } else {
+                        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descNumberIcon);
+                    }
 
                 } else {
-                    ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descIcon);
+
+                    if (ui.globals.inlineSvg) {
+                        ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.descIcon;
+
+                    } else {
+                        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descIcon);
+                    }
+
                 }
 
             } else {
@@ -417,10 +436,23 @@ ui.datatable = {
                 ui.addClass(this, ui.datatable.nameAsc);
 
                 if (sortType === ui.datatable.sortTypeNumber) {
-                    ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascNumberIcon);
+
+                    if (ui.globals.inlineSvg) {
+                        ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.ascNumberIcon;
+
+                    } else {
+                        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascNumberIcon);
+                    }
 
                 } else {
-                    ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascIcon);
+
+                    if (ui.globals.inlineSvg) {
+                        ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.ascIcon;
+
+                    } else {
+                        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascIcon);
+                    }
+
                 }
 
 

@@ -186,9 +186,17 @@ ui.alerts = {
                 // create close icon
                 cancelCloseDialog = true;
 
-                closeBtn = '<button class="' + ui.alerts.nameCloseDialog + ' ' + ui.alerts.stylesCloseDialog + '">' +
-                                '<svg class="' + ui.alerts.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.alerts.closeIcon + '"/></svg>' +
-                            '</button>';
+                closeBtn = '<button class="' + ui.alerts.nameCloseDialog + ' ' + ui.alerts.stylesCloseDialog + '">';
+
+                if (ui.globals.inlineSvg) {
+                    closeBtn += '<svg class="' + ui.alerts.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.closeIcon;
+
+                } else {
+                    closeBtn += '<svg class="' + ui.alerts.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.closeIcon + '"/>';
+                }
+
+                closeBtn += '</svg>' +
+                        '</button>';
             }
 
             // create dialog

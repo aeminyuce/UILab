@@ -238,8 +238,17 @@ ui.calendar.Start = () => {
         html += '>' +
         '<caption>' +
 
-            '<button type="button" tabindex="-1" class="' + ui.calendar.namePrev + '">' +
-                '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.prevIcon + '"/></svg>' +
+            '<button type="button" tabindex="-1" class="' + ui.calendar.namePrev + '">';
+
+        if (ui.globals.inlineSvg) {
+            html += '<svg class="' + ui.calendar.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.prevIcon;
+
+        } else {
+            html += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.prevIcon + '"/>';
+        }
+
+        html += '</svg>' +
+
             '</button>' +
 
             '<span class="' + ui.calendar.nameTitle + ' ' + ui.calendar.stylesTitle + '">' +
@@ -247,8 +256,17 @@ ui.calendar.Start = () => {
                 '<button type="button" tabindex="-1" class="' + ui.calendar.nameYear + '">' + date.getFullYear() + '</button>' +
             '</span>' +
 
-            '<button type="button" tabindex="-1" class="' + ui.calendar.nameNext + '">' +
-                '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.nextIcon + '"/></svg>' +
+            '<button type="button" tabindex="-1" class="' + ui.calendar.nameNext + '">';
+
+        if (ui.globals.inlineSvg) {
+            html += '<svg class="' + ui.calendar.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.nextIcon;
+
+        } else {
+            html += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.nextIcon + '"/>';
+        }
+
+        html += '</svg>' +
+
             '</button>' +
 
         '</caption>' +
@@ -451,20 +469,43 @@ ui.calendar.Start = () => {
 
                         if (details !== '') {
 
-                            details = '<div class="' + ui.calendar.nameDetails + '">' +
-                                            '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">' +
-                                                '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/></svg>' +
-                                            '</button>' +
-                                            '<ul class="' + ui.calendar.stylesDetailScroll + '">' + details + '</ul>' +
-                                        '</div>';
+                            let detailsTemp;
+
+                            detailsTemp = '<div class="' + ui.calendar.nameDetails + '">' +
+                                            '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">';
+
+                            if (ui.globals.inlineSvg) {
+                                detailsTemp += '<svg class="' + ui.calendar.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.backIcon;
+
+                            } else {
+                                detailsTemp += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/>';
+                            }
+
+                            detailsTemp += '</svg>' +
+
+                                        '</button>' +
+                                        '<ul class="' + ui.calendar.stylesDetailScroll + '">' + details + '</ul>' +
+                                    '</div>';
 
                             ui.addClass(container, ui.calendar.nameHasDetails); // enable buttons click event
+
+                            details = detailsTemp;
+                            detailsTemp = '';
 
                         } else {
 
                             details = '<div class="' + ui.calendar.nameDetails + ' ' + ui.calendar.nameEmptyDetails + '">' +
-                                            '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">' +
-                                                '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/></svg>' +
+                                            '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">';
+
+                            if (ui.globals.inlineSvg) {
+                                details += '<svg class="' + ui.calendar.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.backIcon;
+
+                            } else {
+                                details += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/>';
+                            }
+
+                            details += '</svg>' +
+
                                             '</button>' +
                                             '<ul>' +
                                                 '<li>' +
