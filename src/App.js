@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 
-// ui
-import 'styles';
-import 'scripts';
-
-// modules
-import 'styleModule/calendar';
-import 'scriptModule/calendar';
-
-import 'styleModule/line-chart';
-import 'scriptModule/line-chart';
+// utils
+import 'utils/Styles';
+import 'utils/Scripts';
 
 import Inits from 'utils/Inits';
+
+// modules
+import 'style/calendar';
+import 'script/calendar';
+
+import 'style/line-chart';
+import 'script/line-chart';
 
 // components
 import Icon from "components/Icons";

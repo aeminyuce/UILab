@@ -10,11 +10,10 @@ module.exports = {
     resolve: { // https://webpack.js.org/configuration/resolve/
         extensions: ['.js', '.less', '.css'], // file types
         alias: { // custom aliases
-            styles: path.resolve(__dirname, './less/styles.less'),
-            scripts: path.resolve(__dirname, './js/scripts'),
-
-            styleModule: path.resolve(__dirname, './less/modules/'),
-            scriptModule: path.resolve(__dirname, './js/modules/'),
+            coreStyles: path.resolve(__dirname, './less/core/'),
+            style: path.resolve(__dirname, './less/modules/'),
+            coreScripts: path.resolve(__dirname, './js/core/'),
+            script: path.resolve(__dirname, './js/modules/'),
 
             ui: path.resolve(__dirname, './js/core/globals'),
             utils: path.resolve(__dirname, './src/utils/'),
