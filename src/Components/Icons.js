@@ -1,22 +1,61 @@
 import React, { useState, useEffect } from "react";
 
-// SVG icons
+import { ui } from 'ui';
+
+// JS icons
+import angle_left from 'icon/general/angle-left.svg';
+
+import arrow_to_top from 'icon/general/arrow-to-top.svg';
+import arrow_left from 'icon/general/arrow-left.svg';
+import arrow_right from 'icon/general/arrow-right.svg';
+
+import sort from 'icon/general/sort.svg';
+import sort_up from 'icon/general/sort-up.svg';
+import sort_down from 'icon/general/sort-down.svg';
+import sort_number_up from 'icon/general/sort-number-up.svg';
+import sort_number_down from 'icon/general/sort-number-down.svg';
+
+import remove from 'icon/general/remove.svg';
+import ban from 'icon/general/ban.svg';
+import loader_line from 'icon/general/loader-line.svg';
+
+// inline icons
 import envelope from 'icon/general/envelope.svg';
 import camera from 'icon/media/camera.svg';
 
 export default function Icon(props) {
 
     const names = [
-        { name: "envelope", val: envelope },
-        { name: "camera", val: camera },
+
+        // JS icons
+        {val: angle_left, name: "angle-left"},
+
+        {val: arrow_to_top, name: "arrow-to-top"},
+        {val: arrow_left, name: "arrow-left"},
+        {val: arrow_right, name: "arrow-right"},
+
+        {val: sort, name: "sort"},
+        {val: sort_up, name: "sort-up"},
+        {val: sort_down, name: "sort-down"},
+        {val: sort_number_up, name: "sort-number-up"},
+        {val: sort_number_down, name: "sort-number-down"},
+
+        {val: remove, name: "remove"},
+        {val: ban, name: "ban"},
+        {val: loader_line, name: "loader-line"},
+
+        // inline icons
+        {val: envelope, name: "envelope"},
+        {val: camera, name: "camera"},
+
     ];
 
     const sizes = [
-        { size: "xs", name: "ui-icon-xs" },
-        { size: "sm", name: "ui-icon-sm" },
-        { size: "lg", name: "ui-icon-lg" },
-        { size: "xl", name: "ui-icon-xl" },
-        { size: "xxl", name: "ui-icon-xxl" },
+        {name: "ui-icon-xs", size: "xs"},
+        {name: "ui-icon-sm", size: "sm"},
+        {name: "ui-icon-lg", size: "lg"},
+        {name: "ui-icon-xl", size: "xl",},
+        {name: "ui-icon-xxl", size: "xxl"},
     ];
 
     const [currentSrc, updateSrc] = useState(""); // type: string
@@ -72,24 +111,7 @@ const getPath = function(src, curves) {
     return newPath;
 }
 
-// JS icons
-import angle_left from 'icon/general/angle-left.svg';
-
-import arrow_to_top from 'icon/general/arrow-to-top.svg';
-import arrow_left from 'icon/general/arrow-left.svg';
-import arrow_right from 'icon/general/arrow-right.svg';
-
-import sort from 'icon/general/sort.svg';
-import sort_up from 'icon/general/sort-up.svg';
-import sort_down from 'icon/general/sort-down.svg';
-import sort_number_up from 'icon/general/sort-number-up.svg';
-import sort_number_down from 'icon/general/sort-number-down.svg';
-
-import remove from 'icon/general/remove.svg';
-import ban from 'icon/general/ban.svg';
-import loader_line from 'icon/general/loader-line.svg';
-
-import { ui } from 'ui';
+// define JS icons
 ui.globals.inlineSvg = true;
 
 if (ui.alerts !== undefined) ui.alerts.closeIcon = getPath(remove);
