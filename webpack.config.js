@@ -3,11 +3,14 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: path.resolve(__dirname, "./src/index.js"),
-    devServer: { // https://webpack.js.org/configuration/dev-server/
+    devServer: {
         port: 3000, // Opens http://localhost:3000/
         open: true, // Opens browser on a new tab automatically
     },
-    resolve: { // https://webpack.js.org/configuration/resolve/
+    output: {
+        publicPath: 'auto', // define public path
+    },
+    resolve: {
         extensions: ['.js', '.less', '.css'], // file types
         alias: { // custom aliases
             coreStyles: path.resolve(__dirname, './less/core/'),

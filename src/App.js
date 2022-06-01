@@ -28,6 +28,7 @@ export default function App() {
         <>
             <div className="ui-fixed ui-p-30-v">
 
+                <img src="/img/uilab-logo.png" />
                 <h1>Icons</h1>
                 <Icon src="envelope" size="xs"></Icon>
                 <Icon src="envelope" size="sm"></Icon>
