@@ -547,72 +547,97 @@ ui.userAgents = {
   nativeBrowser: false
 };
 ui.onload(function () {
+  var classes = [];
   var ua = navigator.userAgent.toLowerCase();
   ui.userAgents.userLang = (navigator.language || navigator.userLanguage).split('-')[0];
 
+  var out = function out(name) {
+    var index = classes.indexOf(name);
+
+    if (index !== -1) {
+      classes.splice(index, 1);
+    }
+  };
+
   if (ua.indexOf('firefox') > -1) {
-    ui.addClass(ui.userAgents.target, ui.userAgents.nameFirefox);
+    classes.push(ui.userAgents.nameFirefox);
   }
 
   if (ua.indexOf('safari') > -1) {
-    ui.addClass(ui.userAgents.target, ui.userAgents.nameSafari);
+    classes.push(ui.userAgents.nameSafari);
   }
 
   if (ua.indexOf('chrome') > -1) {
-    ui.addClass(ui.userAgents.target, ui.userAgents.nameChrome);
-    ui.removeClass(ui.userAgents.target, ui.userAgents.nameSafari);
+    classes.push(ui.userAgents.nameChrome);
+    out(ui.userAgents.nameSafari);
   }
 
   if (ua.indexOf('opera') > -1 || ua.indexOf('opr') > -1) {
-    ui.addClass(ui.userAgents.target, ui.userAgents.nameOpera);
-    ui.removeClass(ui.userAgents.target, ui.userAgents.nameSafari);
-    ui.removeClass(ui.userAgents.target, ui.userAgents.nameChrome);
+    classes.push(ui.userAgents.nameOpera);
+    out(ui.userAgents.nameSafari);
+    out(ui.userAgents.nameChrome);
   }
 
   if (ua.indexOf("MSIE ") > 0 || !!document.documentMode || ua.indexOf('edge') > -1) {
     ui.userAgents.ie = true;
     ui.globals.iconSrc = '';
-    ui.addClass(ui.userAgents.target, ui.userAgents.nameIE);
-    ui.removeClass(ui.userAgents.target, ui.userAgents.nameChrome);
+    classes.push(ui.userAgents.nameIE);
+    out(ui.userAgents.nameChrome);
 
     if (ua.indexOf('edge') > -1 || ua.indexOf('edg') > -1) {
       ui.userAgents.edge = true;
-      ui.removeClass(ui.userAgents.target, ui.userAgents.nameIE);
-      ui.addClass(ui.userAgents.target, ui.userAgents.nameEdge);
+      out(ui.userAgents.nameIE);
+      classes.push(ui.userAgents.nameEdge);
     }
   } else if (ua.indexOf('edg') > -1) {
     ui.userAgents.edg = true;
-    ui.addClass(ui.userAgents.target, ui.userAgents.nameChromiumEdge);
+    classes.push(ui.userAgents.nameChromiumEdge);
   }
 
-  if (navigator.appVersion.indexOf('Win') !== -1) {
-    ui.addClass(ui.userAgents.target, ui.userAgents.nameWindows);
+  if (navigator.userAgentData !== undefined) {
+    var _navigator$userAgentD, _navigator$userAgentD2;
+
+    if (((_navigator$userAgentD = navigator.userAgentData) === null || _navigator$userAgentD === void 0 ? void 0 : _navigator$userAgentD.platform.indexOf("Win")) !== -1) {
+      classes.push(ui.userAgents.nameWindows);
+    }
+
+    if (((_navigator$userAgentD2 = navigator.userAgentData) === null || _navigator$userAgentD2 === void 0 ? void 0 : _navigator$userAgentD2.platform.indexOf("Mac")) !== -1) {
+      classes.push(ui.userAgents.nameMac);
+    }
+  } else {
+    if (navigator.appVersion.indexOf('Win') !== -1) {
+      classes.push(ui.userAgents.nameWindows);
+    }
+
+    if (navigator.appVersion.indexOf('Mac') !== -1) {
+      classes.push(ui.userAgents.nameMac);
+    }
   }
 
-  if (navigator.appVersion.indexOf('Mac') !== -1) {
-    ui.addClass(ui.userAgents.target, ui.userAgents.nameMac);
-  }
-
-  if (ua.indexOf('mobile') > -1) {
-    ui.addClass(ui.userAgents.target, ui.userAgents.nameMobile);
+  if (ua.indexOf('mobile') === -1) {
+    out(ui.userAgents.nameIos);
+    classes.push(ui.userAgents.nameDesktop);
+    ui.userAgents.desktop = true;
+  } else {
+    classes.push(ui.userAgents.nameMobile);
     ui.userAgents.mobile = true;
 
-    if (ua.indexOf('apple') > -1) {
-      ui.addClass(ui.userAgents.target, ui.userAgents.nameIos);
-      ui.removeClass(ui.userAgents.target, ui.userAgents.nameMac);
+    if (ua.match("iphone|ipad|ipod") !== null) {
+      classes.push(ui.userAgents.nameIos);
+      out(ui.userAgents.nameMac);
       ui.userAgents.ios = true;
     }
 
     if (ua.indexOf('android') > -1) {
       if (ua.indexOf('mozilla/5.0') > -1 && ua.indexOf('applewebkit') > -1 && ua.indexOf('version/') > -1) {
-        ui.removeClass(ui.userAgents.target, ui.userAgents.nameChrome);
-        ui.removeClass(ui.userAgents.target, ui.userAgents.nameSafari);
-        ui.addClass(ui.userAgents.target, ui.userAgents.nameAndroidBrowser);
+        out(ui.userAgents.nameChrome);
+        out(ui.userAgents.nameSafari);
+        classes.push(ui.userAgents.nameAndroidBrowser);
         ui.userAgents.nativeBrowser = true;
       }
 
-      ui.addClass(ui.userAgents.target, ui.userAgents.nameAndroid);
-      ui.removeClass(ui.userAgents.target, ui.userAgents.nameIos);
+      classes.push(ui.userAgents.nameAndroid);
+      out(ui.userAgents.nameIos);
 
       if (ui.userAgents.nativeBrowser || parseFloat(ua.match(/android\s([0-9\.]*)/)[1]) < parseFloat('4.4')) {
         ui.userAgents.androidOld = true;
@@ -621,11 +646,19 @@ ui.onload(function () {
       ui.userAgents.android = true;
       ui.userAgents.ios = false;
     }
-  } else {
-    ui.removeClass(ui.userAgents.target, ui.userAgents.nameIos);
-    ui.addClass(ui.userAgents.target, ui.userAgents.nameDesktop);
-    ui.userAgents.desktop = true;
   }
+
+  var allClasses = '';
+
+  for (var i = 0; i < classes.length; i++) {
+    allClasses += classes[i];
+
+    if (i + 1 !== classes.length) {
+      allClasses += ' ';
+    }
+  }
+
+  ui.addClass(ui.userAgents.target, allClasses);
 });
 ui.darkMode = {
   target: document,
