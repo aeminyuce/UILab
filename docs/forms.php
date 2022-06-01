@@ -136,7 +136,7 @@
 
                             <div class="ui-col-100">
                                 <img class="ui-border-dual ui-round ui-ease-border"
-                                    src="img/captcha.jpg"
+                                    src="../public/img/captcha.jpg"
                                     width="100"
                                     height="42"
                                     alt=""
@@ -288,7 +288,7 @@
 
                                 <div class="ui-col-100">
                                     <img class="ui-border-dual ui-round ui-ease-border"
-                                        src="img/captcha.jpg"
+                                        src="../public/img/captcha.jpg"
                                         width="100"
                                         height="48"
                                         alt=""
@@ -2222,7 +2222,7 @@
 
                         <div class="ui-col-100">
                             <img class="ui-border-dual ui-border-light ui-round ui-ease-border"
-                                src="img/captcha.jpg"
+                                src="../public/img/captcha.jpg"
                                 width="100"
                                 height="42"
                                 alt=""

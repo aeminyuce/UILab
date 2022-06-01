@@ -93,7 +93,7 @@
 
                 <h3 class="ui-h3">Rtl Content</h3>
                 <p class="ui-font-readable ui-rtl ui-highlight ui-card ui-p-15 ui-round ui-shadow-lg">
-                    <img class="ui-float-r ui-m-15-l ui-round" src="img/image_01.jpg" width="120" alt="">
+                    <img class="ui-float-r ui-m-15-l ui-round" src="../public/img/image_01.jpg" width="120" alt="">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat gravida posuere. Etiam luctus ex vitae diam tempor, a egestas magna posuere. Vestibulum faucibus ex dolor, at tempor ante iaculis vel. Nulla facilisi.
                 </p>
 

@@ -14,8 +14,8 @@
                                     <svg class="ui-photoslide-loader ui-icon"><use href="../dist/icons.svg#loader-line"/></svg>
                                     <img
                                         class="ui-round"
-                                        src="img/image_02.jpg" alt=""
-                                        data-ui-src="img/image_03.jpg,img/image_04.jpg,img/image_05.jpg"
+                                        src="../public/img/image_02.jpg" alt=""
+                                        data-ui-src="../public/img/image_03.jpg,../public/img/image_04.jpg,../public/img/image_05.jpg"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-m-15-l ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="../dist/icons.svg#angle-left"/></svg>
@@ -38,8 +38,8 @@
                                     <svg class="ui-photoslide-loader ui-icon"><use href="../dist/icons.svg#loader-line"/></svg>
                                     <img
                                         class="ui-round"
-                                        src="img/image_03.jpg" alt=""
-                                        data-ui-src="img/image_04.jpg,img/image_05.jpg,img/image_06.jpg"
+                                        src="../public/img/image_03.jpg" alt=""
+                                        data-ui-src="../public/img/image_04.jpg,../public/img/image_05.jpg,../public/img/image_06.jpg"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-m-15-l ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="../dist/icons.svg#angle-left"/></svg>
@@ -62,8 +62,8 @@
                                     <svg class="ui-photoslide-loader ui-icon"><use href="../dist/icons.svg#loader-line"/></svg>
                                     <img
                                         class="ui-round"
-                                        src="img/image_04.jpg" alt=""
-                                        data-ui-src="img/image_05.jpg,img/image_06.jpg,img/image_07.jpg"
+                                        src="../public/img/image_04.jpg" alt=""
+                                        data-ui-src="../public/img/image_05.jpg,../public/img/image_06.jpg,../public/img/image_07.jpg"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-m-15-l ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="../dist/icons.svg#angle-left"/></svg>
@@ -86,8 +86,8 @@
                                     <svg class="ui-photoslide-loader ui-icon"><use href="../dist/icons.svg#loader-line"/></svg>
                                     <img
                                         class="ui-round"
-                                        src="img/image_05.jpg" alt=""
-                                        data-ui-src="img/image_06.jpg,img/image_07.jpg,img/image_08.jpg"
+                                        src="../public/img/image_05.jpg" alt=""
+                                        data-ui-src="../public/img/image_06.jpg,../public/img/image_07.jpg,../public/img/image_08.jpg"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-m-15-l ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="../dist/icons.svg#angle-left"/></svg>
@@ -110,8 +110,8 @@
                                     <svg class="ui-photoslide-loader ui-icon"><use href="../dist/icons.svg#loader-line"/></svg>
                                     <img
                                         class="ui-round"
-                                        src="img/image_07.jpg" alt=""
-                                        data-ui-src="img/image_08.jpg,img/image_09.jpg,img/image_10.jpg"
+                                        src="../public/img/image_07.jpg" alt=""
+                                        data-ui-src="../public/img/image_08.jpg,../public/img/image_09.jpg,../public/img/image_10.jpg"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-m-15-l ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="../dist/icons.svg#angle-left"/></svg>
@@ -134,8 +134,8 @@
                                     <svg class="ui-photoslide-loader ui-icon"><use href="../dist/icons.svg#loader-line"/></svg>
                                     <img
                                         class="ui-round"
-                                        src="img/image_08.jpg" alt=""
-                                        data-ui-src="img/image_09.jpg,img/image_10.jpg,img/image_01.jpg"
+                                        src="../public/img/image_08.jpg" alt=""
+                                        data-ui-src="../public/img/image_09.jpg,../public/img/image_10.jpg,../public/img/image_01.jpg"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-m-15-l ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="../dist/icons.svg#angle-left"/></svg>

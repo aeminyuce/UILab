@@ -90,7 +90,7 @@
 
                             <!-- logo -->
                             <a title="Logo" class="business-panel-l-logo" href="#">
-                                <img class="ui-invert-img" src="img/business/logo-business-panel.png" alt="">
+                                <img class="ui-invert-img" src="../public/img/business/logo-business-panel.png" alt="">
                             </a>
 
                             <!-- menus -->
@@ -664,21 +664,21 @@
                                                         </div>
                                                         <div class="ui-col-lg-8 ui-col-12 ui-align-c">
                                                             <div class="ui-hover-scale-more-1st ui-m-30-v ui-md-no-m-t ui-ease-1st-layout">
-                                                                <img title="68%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="img/profile-image2.jpg" alt="">
+                                                                <img title="68%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="../public/img/profile-image2.jpg" alt="">
                                                                 <span title="64%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b">
                                                                     <span>HY</span>
                                                                 </span>
                                                                 <span title="63%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b">
                                                                     <span>EKY</span>
                                                                 </span>
-                                                                <img title="58%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="img/profile-image.jpg" alt="">
-                                                                <img title="57%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="img/business/profile-image3.jpg" alt="">
-                                                                <img title="49%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="img/profile-image3.jpg" alt="">
+                                                                <img title="58%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="../public/img/profile-image.jpg" alt="">
+                                                                <img title="57%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="../public/img/business/profile-image3.jpg" alt="">
+                                                                <img title="49%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="../public/img/profile-image3.jpg" alt="">
                                                                 <span title="47%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b">
                                                                     <span>AST</span>
                                                                 </span>
-                                                                <img title="45%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="img/business/profile-image.jpg" alt="">
-                                                                <img title="42%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="img/business/profile-image2.jpg" alt="">
+                                                                <img title="45%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="../public/img/business/profile-image.jpg" alt="">
+                                                                <img title="42%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b" src="../public/img/business/profile-image2.jpg" alt="">
                                                                 <span title="39%" data-ui-tooltip="t" class="ui-avatar ui-circle ui-m-5-b">
                                                                     <span>AC</span>
                                                                 </span>
@@ -702,7 +702,7 @@
 
                                         <div
                                             class="business-masthead-cover"
-                                            style="background-image: url(img/business/profile-cover.png)">
+                                            style="background-image: url(../public/img/business/profile-cover.png)">
                                         </div>
                                         <span class="ui-avatar-lg ui-theme-sub ui-fill-dark-100">
                                             <span>UPT</span>
@@ -803,10 +803,10 @@
                                                     </span>
                                                 </a>
                                                 <a href="#" data-ui-tooltip="t" title="1hrs">
-                                                    <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/business/profile-image.jpg" alt="">
+                                                    <img class="ui-avatar-sm ui-border-dual ui-circle" src="../public/img/business/profile-image.jpg" alt="">
                                                 </a>
                                                 <a href="#" data-ui-tooltip="t" title="12mins.">
-                                                    <img class="ui-avatar-sm ui-border-dual ui-circle" src="img/business/profile-image3.jpg" alt="">
+                                                    <img class="ui-avatar-sm ui-border-dual ui-circle" src="../public/img/business/profile-image3.jpg" alt="">
                                                 </a>
                                                 <a class="ui-btn ui-btn-square ui-circle ui-ease-btn" href="#">+3</a>
                                             </div>
@@ -1020,7 +1020,7 @@
                                 <ul class="ui-listgroup-has-avatar-xs ui-ease-listgroup">
                                     <li class="business-new">
                                         <a href="#">
-                                            <img class="ui-avatar-xs" src="img/profile-image2.jpg" alt="">
+                                            <img class="ui-avatar-xs" src="../public/img/profile-image2.jpg" alt="">
                                             <b>Specialist User</b>
                                             DOC-312557
                                             <em>3hrs 56min</em>
@@ -1042,7 +1042,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img class="ui-avatar-xs" src="img/profile-image3.jpg" alt="">
+                                            <img class="ui-avatar-xs" src="../public/img/profile-image3.jpg" alt="">
                                             <b>Pine Tree User</b>
                                             DOC-312557
                                             <em>3hrs 56min</em>
@@ -1062,7 +1062,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img class="ui-avatar-xs" src="img/profile-image.jpg" alt="">
+                                            <img class="ui-avatar-xs" src="../public/img/profile-image.jpg" alt="">
                                             <b>Secretarial User</b>
                                             DOC-312557
                                             <em>3hrs 56min</em>

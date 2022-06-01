@@ -10,41 +10,41 @@
 
                     <div class="ui-carousel-gallery">
                         <div class="ui-carousel-gallery-detail">
-                            <img src="img/house_01.jpg" class="ui-gallery-call ui-round ui-shadow-lg ui-ease-layout" data-ui-target="#realEstateGallery" data-ui-count="0" alt="">
+                            <img src="../public/img/house_01.jpg" class="ui-gallery-call ui-round ui-shadow-lg ui-ease-layout" data-ui-target="#realEstateGallery" data-ui-count="0" alt="">
                             <svg class="ui-carousel-gallery-zoom ui-icon"><use href="../dist/icons.svg#expand-wide"/></svg>
                             <svg class="ui-carousel-gallery-loader ui-icon"><use href="../dist/icons.svg#loader-line"/></svg>
                         </div>
                         <div id="realEstateGallery" class="ui-carousel ui-carousel-gallery-thumbs ui-carousel-half" data-ui-col="6" data-ui-col-md="5" data-ui-col-sm="4" data-ui-col-xs="3">
                             <div class="ui-carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow ui-gallery-passive">
                                 <div class="ui-carousel-content">
-                                    <img class="ui-photo ui-round ui-ease-default ui-selected" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
+                                    <img class="ui-photo ui-round ui-ease-default ui-selected" src="../public/img/house_01.jpg" data-ui-href="../public/img/house_01.jpg" alt="">
                                 </div>
                                 <div class="ui-carousel-content">
-                                    <img class="ui-photo ui-round ui-ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
+                                    <img class="ui-photo ui-round ui-ease-default" src="../public/img/house_02.jpg" data-ui-href="../public/img/house_02.jpg" alt="">
                                 </div>
                                 <div class="ui-carousel-content">
-                                    <img class="ui-photo ui-round ui-ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
+                                    <img class="ui-photo ui-round ui-ease-default" src="../public/img/house_03.jpg" data-ui-href="../public/img/house_03.jpg" alt="">
                                 </div>
                                 <div class="ui-carousel-content">
-                                    <img class="ui-photo ui-round ui-ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
+                                    <img class="ui-photo ui-round ui-ease-default" src="../public/img/house_04.jpg" data-ui-href="../public/img/house_04.jpg" alt="">
                                 </div>
                                 <div class="ui-carousel-content">
-                                    <img class="ui-photo ui-round ui-ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
+                                    <img class="ui-photo ui-round ui-ease-default" src="../public/img/house_05.jpg" data-ui-href="../public/img/house_05.jpg" alt="">
                                 </div>
                                 <div class="ui-carousel-content">
-                                    <img class="ui-photo ui-round ui-ease-default" src="img/house_01.jpg" data-ui-href="img/house_01.jpg" alt="">
+                                    <img class="ui-photo ui-round ui-ease-default" src="../public/img/house_01.jpg" data-ui-href="../public/img/house_01.jpg" alt="">
                                 </div>
                                 <div class="ui-carousel-content">
-                                    <img class="ui-photo ui-round ui-ease-default" src="img/house_02.jpg" data-ui-href="img/house_02.jpg" alt="">
+                                    <img class="ui-photo ui-round ui-ease-default" src="../public/img/house_02.jpg" data-ui-href="../public/img/house_02.jpg" alt="">
                                 </div>
                                 <div class="ui-carousel-content">
-                                    <img class="ui-photo ui-round ui-ease-default" src="img/house_03.jpg" data-ui-href="img/house_03.jpg" alt="">
+                                    <img class="ui-photo ui-round ui-ease-default" src="../public/img/house_03.jpg" data-ui-href="../public/img/house_03.jpg" alt="">
                                 </div>
                                 <div class="ui-carousel-content">
-                                    <img class="ui-photo ui-round ui-ease-default" src="img/house_04.jpg" data-ui-href="img/house_04.jpg" alt="">
+                                    <img class="ui-photo ui-round ui-ease-default" src="../public/img/house_04.jpg" data-ui-href="../public/img/house_04.jpg" alt="">
                                 </div>
                                 <div class="ui-carousel-content">
-                                    <img class="ui-photo ui-round ui-ease-default" src="img/house_05.jpg" data-ui-href="img/house_05.jpg" alt="">
+                                    <img class="ui-photo ui-round ui-ease-default" src="../public/img/house_05.jpg" data-ui-href="../public/img/house_05.jpg" alt="">
                                 </div>
                             </div>
                             <div class="ui-carousel-nav ui-ease-1st-btn">

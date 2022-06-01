@@ -7220,7 +7220,7 @@ ui.weather = {
   animateFog: 'fog',
   days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
   months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-  graphPath: 'img/weather/',
+  graphPath: '../public/img/weather/',
   fileType: 'png',
   dataGraphs: 'data-ui-graphs',
   dataDay: 'data-ui-day'

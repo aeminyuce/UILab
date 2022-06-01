@@ -10,7 +10,7 @@
                 <div class="ui-col-static ui-no-fluid">
                     <div class="ui-col-220 ui-p-10">
                         <a class="ui-m-2-v ui-inline-block" href="#">
-                            <img src="img/agriculture/logo.png" alt="Agriculture Logo" srcset="img/agriculture/logo@2x.png 2x">
+                            <img src="../public/img/agriculture/logo.png" alt="Agriculture Logo" srcset="../public/img/agriculture/logo@2x.png 2x">
                         </a>
                     </div>
                     <div class="ui-row">
@@ -96,7 +96,7 @@
             <span class="ui-sp-10 ui-visible-sm"></span>
         </div>
 
-        <div class="landing-page-banner-content ui-tab-content ui-p-30-v ui-set-relative ui-theme-base ui-fill-dark-100 ui-open ui-open-ease" style="background-image: url(img/agriculture/lg01.jpg)">
+        <div class="landing-page-banner-content ui-tab-content ui-p-30-v ui-set-relative ui-theme-base ui-fill-dark-100 ui-open ui-open-ease" style="background-image: url(../public/img/agriculture/lg01.jpg)">
             <div class="ui-fixed ui-p-30-v ui-set-relative">
                 <div class="ui-row">
                     <div class="ui-col-static">
@@ -134,7 +134,7 @@
             </div>
             <span class="ui-sp-30 ui-m-10-v"></span>
         </div>
-        <div class="landing-page-banner-content ui-tab-content ui-p-30-v ui-set-relative ui-theme-base ui-fill-dark-100" style="background-image: url(img/agriculture/lg02.jpg)">
+        <div class="landing-page-banner-content ui-tab-content ui-p-30-v ui-set-relative ui-theme-base ui-fill-dark-100" style="background-image: url(../public/img/agriculture/lg02.jpg)">
             <div class="ui-fixed ui-p-30-v ui-set-relative">
                 <div class="ui-row">
                     <div class="ui-col-static">
@@ -172,7 +172,7 @@
             </div>
             <span class="ui-sp-30 ui-m-10-v"></span>
         </div>
-        <div class="landing-page-content ui-tab-content ui-p-30-v ui-set-relative ui-theme-base ui-fill-dark-100" style="background-image: url(img/agriculture/lg03.jpg)">
+        <div class="landing-page-content ui-tab-content ui-p-30-v ui-set-relative ui-theme-base ui-fill-dark-100" style="background-image: url(../public/img/agriculture/lg03.jpg)">
             <div class="ui-fixed ui-p-30-v ui-set-relative">
                 <div class="ui-row">
                     <div class="ui-col-static">
@@ -363,7 +363,7 @@
                                 <span class="ui-font-22 ui-block">Ready to modern agriculture.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Company</b>
 
-                                <img class="ui-img-fluid ui-m-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-m-15-b" src="../public/img/agriculture/news02.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 ui-font-readable">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
@@ -387,7 +387,7 @@
                                 <span class="ui-font-22 ui-block">Farmers happy now.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Company</b>
 
-                                <img class="ui-img-fluid ui-m-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-m-15-b" src="../public/img/agriculture/news01.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 ui-font-readable">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
@@ -411,7 +411,7 @@
                                 <span class="ui-font-22 ui-block">New market prospects.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Company</b>
 
-                                <img class="ui-img-fluid ui-m-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-m-15-b" src="../public/img/agriculture/news03.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 ui-font-readable">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
@@ -435,7 +435,7 @@
                                 <span class="ui-font-22 ui-block">About product breeding</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Company</b>
 
-                                <img class="ui-img-fluid ui-m-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-m-15-b" src="../public/img/agriculture/news04.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 ui-font-readable">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
@@ -468,7 +468,7 @@
                                 <span class="ui-font-22 ui-block">Farmers happy now.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Social</b>
 
-                                <img class="ui-img-fluid ui-m-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-m-15-b" src="../public/img/agriculture/news01.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 ui-font-readable">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
@@ -492,7 +492,7 @@
                                 <span class="ui-font-22 ui-block">New market prospects.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Social</b>
 
-                                <img class="ui-img-fluid ui-m-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-m-15-b" src="../public/img/agriculture/news03.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 ui-font-readable">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
@@ -516,7 +516,7 @@
                                 <span class="ui-font-22 ui-block">About product breeding</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Social</b>
 
-                                <img class="ui-img-fluid ui-m-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-m-15-b" src="../public/img/agriculture/news04.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 ui-font-readable">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
@@ -540,7 +540,7 @@
                                 <span class="ui-font-22 ui-block">Ready to modern agriculture.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Social</b>
 
-                                <img class="ui-img-fluid ui-m-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-m-15-b" src="../public/img/agriculture/news02.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 ui-font-readable">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
@@ -573,7 +573,7 @@
                                 <span class="ui-font-22 ui-block">Farmers happy now.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Customers</b>
 
-                                <img class="ui-img-fluid ui-m-15-b" src="img/agriculture/news01.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-m-15-b" src="../public/img/agriculture/news01.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 ui-font-readable">Mauris nunc odio, pretium id efficitur eget, sodales in libero. Ut congue consequat nulla sit amet dapibus. Sed vel pharetra tellus...</span>
                             </span>
 
@@ -597,7 +597,7 @@
                                 <span class="ui-font-22 ui-block">Ready to modern agriculture.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Customers</b>
 
-                                <img class="ui-img-fluid ui-m-15-b" src="img/agriculture/news02.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-m-15-b" src="../public/img/agriculture/news02.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 ui-font-readable">Vivamus egestas ligula quis ligula cursus, ut faucibus metus vehicula. Donec placerat purus ipsum, eu ultrices justo placerat...</span>
                             </span>
 
@@ -621,7 +621,7 @@
                                 <span class="ui-font-22 ui-block">About product breeding</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Customers</b>
 
-                                <img class="ui-img-fluid ui-m-15-b" src="img/agriculture/news04.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-m-15-b" src="../public/img/agriculture/news04.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 ui-font-readable">Mauris accumsan quam quis orci rhoncus eleifend. Sed varius sagittis magna ut rhoncus. Curabitur pulvinar dictum egestas. Duis sit...</span>
                             </span>
 
@@ -645,7 +645,7 @@
                                 <span class="ui-font-22 ui-block">New market prospects.</span>
                                 <b class="ui-color-black-25 ui-m-15-b ui-block">Customers</b>
 
-                                <img class="ui-img-fluid ui-m-15-b" src="img/agriculture/news03.jpg" alt="Agriculture News">
+                                <img class="ui-img-fluid ui-m-15-b" src="../public/img/agriculture/news03.jpg" alt="Agriculture News">
                                 <span class="ui-color-black-50 ui-font-readable">Praesent elit erat, consequat nec pellentesque et, pharetra et arcu. Cras aliquet placerat est, nec dapibus mi. Aliquam ullamcorper...</span>
                             </span>
 
@@ -687,8 +687,8 @@
 
                 <ul class="ui-gallery ui-gallery-has-cover ui-block-2nd ui-ease-gallery">
                     <li>
-                        <a class="ui-photo ui-gallery-has-info ui-gallery-show-info" href="img/agriculture/md01.jpg">
-                            <img src="img/agriculture/md01.jpg" alt="">
+                        <a class="ui-photo ui-gallery-has-info ui-gallery-show-info" href="../public/img/agriculture/md01.jpg">
+                            <img src="../public/img/agriculture/md01.jpg" alt="">
                             <span class="ui-font-18 ui-font-readable">
                                 <span class="ui-scroll-v ui-m-20 ui-set-absolute ui-set-all">
                                     <svg class="ui-icon ui-icon-xxl ui-float-l ui-m-20-r ui-hidden-md ui-text"><use href="../dist/icons.svg#trees"/></svg>
@@ -701,38 +701,38 @@
                         </a>
                     </li>
                     <li>
-                        <a class="ui-photo ui-gallery-has-info" href="img/agriculture/md02.jpg">
-                            <img src="img/agriculture/md02.jpg" alt="">
+                        <a class="ui-photo ui-gallery-has-info" href="../public/img/agriculture/md02.jpg">
+                            <img src="../public/img/agriculture/md02.jpg" alt="">
                             <span class="ui-font-18 ui-theme-base ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                         </a>
                     </li>
                     <li>
-                        <a class="ui-photo ui-gallery-has-info" href="img/agriculture/md03.jpg">
-                            <img src="img/agriculture/md03.jpg" alt="">
+                        <a class="ui-photo ui-gallery-has-info" href="../public/img/agriculture/md03.jpg">
+                            <img src="../public/img/agriculture/md03.jpg" alt="">
                             <span class="ui-font-18 ui-fill-dark-100">Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                         </a>
                     </li>
                     <li>
-                        <a class="ui-photo ui-gallery-has-info" href="img/agriculture/md04.jpg">
-                            <img src="img/agriculture/md04.jpg" alt="">
+                        <a class="ui-photo ui-gallery-has-info" href="../public/img/agriculture/md04.jpg">
+                            <img src="../public/img/agriculture/md04.jpg" alt="">
                             <span class="ui-font-18 ui-theme-base ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
                     <li>
-                        <a class="ui-photo ui-gallery-has-info" href="img/agriculture/md05.jpg">
-                            <img src="img/agriculture/md05.jpg" alt="">
+                        <a class="ui-photo ui-gallery-has-info" href="../public/img/agriculture/md05.jpg">
+                            <img src="../public/img/agriculture/md05.jpg" alt="">
                             <span class="ui-font-18 ui-fill-dark-100">Consectetur adipiscing elit. Integer eu dignissim libero.</span>
                         </a>
                     </li>
                     <li>
-                        <a class="ui-photo ui-gallery-has-info" href="img/agriculture/md06.jpg">
-                            <img class="" src="img/agriculture/md06.jpg" alt="">
+                        <a class="ui-photo ui-gallery-has-info" href="../public/img/agriculture/md06.jpg">
+                            <img class="" src="../public/img/agriculture/md06.jpg" alt="">
                             <span class="ui-font-18 ui-theme-base ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
                     <li>
-                        <a class="ui-photo ui-gallery-has-info" href="img/agriculture/md07.jpg">
-                            <img class="ui-invert-img" src="img/agriculture/md07.jpg" alt="">
+                        <a class="ui-photo ui-gallery-has-info" href="../public/img/agriculture/md07.jpg">
+                            <img class="ui-invert-img" src="../public/img/agriculture/md07.jpg" alt="">
                             <span class="ui-font-18 ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </li>
@@ -907,7 +907,7 @@
             <svg class="ui-icon ui-no-opacity"><use href="../dist/icons.svg#remove"/></svg>
         </button>
         <a href="#">
-            <img class="ui-m-5-v" src="img/agriculture/logo.png" alt="" srcset="img/agriculture/logo@2x.png 2x">
+            <img class="ui-m-5-v" src="../public/img/agriculture/logo.png" alt="" srcset="../public/img/agriculture/logo@2x.png 2x">
         </a>
     </div>
     <div class="ui-sidebar-content ui-align-l ui-theme-sub ui-scroll-v"></div>

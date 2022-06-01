@@ -19,19 +19,19 @@
 
                                                 <div class="ui-row ui-row-gap-xs ui-no-fluid ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                                                     <div class="ui-col-6">
-                                                        <img class="ui-carousel-animate ui-bring-back ui-img-fluid" src="img/image_09.jpg" alt="">
+                                                        <img class="ui-carousel-animate ui-bring-back ui-img-fluid" src="../public/img/image_09.jpg" alt="">
                                                     </div>
                                                     <div class="ui-col-6">
-                                                        <img class="ui-carousel-animate ui-bring-front ui-img-fluid" src="img/image_05.jpg" alt="">
+                                                        <img class="ui-carousel-animate ui-bring-front ui-img-fluid" src="../public/img/image_05.jpg" alt="">
                                                     </div>
                                                     <div class="ui-col-4">
-                                                        <img class="ui-carousel-animate ui-bring-l ui-img-fluid" src="img/image_02.jpg" alt="">
+                                                        <img class="ui-carousel-animate ui-bring-l ui-img-fluid" src="../public/img/image_02.jpg" alt="">
                                                     </div>
                                                     <div class="ui-col-4">
-                                                        <img class="ui-carousel-animate ui-bring-b ui-img-fluid" src="img/image_03.jpg" alt="">
+                                                        <img class="ui-carousel-animate ui-bring-b ui-img-fluid" src="../public/img/image_03.jpg" alt="">
                                                     </div>
                                                     <div class="ui-col-4">
-                                                        <img class="ui-carousel-animate ui-bring-r ui-img-fluid" src="img/image_01.jpg" alt="">
+                                                        <img class="ui-carousel-animate ui-bring-r ui-img-fluid" src="../public/img/image_01.jpg" alt="">
                                                     </div>
                                                 </div>
 
@@ -64,19 +64,19 @@
 
                                                 <div class="ui-row ui-row-gap-xs ui-no-fluid ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                                                     <div class="ui-col-6">
-                                                        <img class="ui-carousel-animate ui-bring-back ui-img-fluid" src="img/image_09.jpg" alt="">
+                                                        <img class="ui-carousel-animate ui-bring-back ui-img-fluid" src="../public/img/image_09.jpg" alt="">
                                                     </div>
                                                     <div class="ui-col-6">
-                                                        <img class="ui-carousel-animate ui-bring-front ui-img-fluid" src="img/image_05.jpg" alt="">
+                                                        <img class="ui-carousel-animate ui-bring-front ui-img-fluid" src="../public/img/image_05.jpg" alt="">
                                                     </div>
                                                     <div class="ui-col-4">
-                                                        <img class="ui-carousel-animate ui-bring-l ui-img-fluid" src="img/image_02.jpg" alt="">
+                                                        <img class="ui-carousel-animate ui-bring-l ui-img-fluid" src="../public/img/image_02.jpg" alt="">
                                                     </div>
                                                     <div class="ui-col-4">
-                                                        <img class="ui-carousel-animate ui-bring-b ui-img-fluid" src="img/image_03.jpg" alt="">
+                                                        <img class="ui-carousel-animate ui-bring-b ui-img-fluid" src="../public/img/image_03.jpg" alt="">
                                                     </div>
                                                     <div class="ui-col-4">
-                                                        <img class="ui-carousel-animate ui-bring-r ui-img-fluid" src="img/image_01.jpg" alt="">
+                                                        <img class="ui-carousel-animate ui-bring-r ui-img-fluid" src="../public/img/image_01.jpg" alt="">
                                                     </div>
                                                 </div>
 
@@ -109,19 +109,19 @@
 
                                                 <div class="ui-row ui-row-gap-xs ui-no-fluid ui-ease-2nd-layout ui-ease-slow ui-ease-in-out">
                                                     <div class="ui-col-6">
-                                                        <img class="ui-carousel-animate ui-bring-back ui-img-fluid" src="img/image_09.jpg" alt="">
+                                                        <img class="ui-carousel-animate ui-bring-back ui-img-fluid" src="../public/img/image_09.jpg" alt="">
                                                     </div>
                                                     <div class="ui-col-6">
-                                                        <img class="ui-carousel-animate ui-bring-front ui-img-fluid" src="img/image_05.jpg" alt="">
+                                                        <img class="ui-carousel-animate ui-bring-front ui-img-fluid" src="../public/img/image_05.jpg" alt="">
                                                     </div>
                                                     <div class="ui-col-4">
-                                                        <img class="ui-carousel-animate ui-bring-l ui-img-fluid" src="img/image_02.jpg" alt="">
+                                                        <img class="ui-carousel-animate ui-bring-l ui-img-fluid" src="../public/img/image_02.jpg" alt="">
                                                     </div>
                                                     <div class="ui-col-4">
-                                                        <img class="ui-carousel-animate ui-bring-b ui-img-fluid" src="img/image_03.jpg" alt="">
+                                                        <img class="ui-carousel-animate ui-bring-b ui-img-fluid" src="../public/img/image_03.jpg" alt="">
                                                     </div>
                                                     <div class="ui-col-4">
-                                                        <img class="ui-carousel-animate ui-bring-r ui-img-fluid" src="img/image_01.jpg" alt="">
+                                                        <img class="ui-carousel-animate ui-bring-r ui-img-fluid" src="../public/img/image_01.jpg" alt="">
                                                     </div>
                                                 </div>
 
@@ -168,52 +168,52 @@
                     <div class="ui-carousel" data-ui-col="8" data-ui-col-md="4" data-ui-col-sm="3" data-ui-col-xs="1" data-ui-slide="2000">
                         <div class="ui-carousel-slider ui-ease-2nd-layout ui-ease-layout ui-ease-slow ui-ease-in-out">
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_10.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_10.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_02.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_02.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_08.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_08.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_04.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_04.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_05.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_05.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_06.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_06.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_07.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_07.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_08.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_08.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_09.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_09.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_10.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_10.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_01.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_01.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_02.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_02.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_03.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_03.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_04.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_04.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_05.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_05.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_06.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_06.jpg" alt="">
                             </div>
                         </div>
                         <div class="ui-carousel-nav ui-ease-1st-btn">
@@ -233,22 +233,22 @@
                     <div class="ui-carousel ui-carousel-half" data-ui-col="4" data-ui-col-md="3" data-ui-col-sm="2" data-ui-col-xs="2">
                         <div class="ui-carousel-slider ui-ease-layout ui-ease-slow ui-ease-in-out">
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_09.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_09.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_07.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_07.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_05.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_05.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_04.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_04.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_01.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_01.jpg" alt="">
                             </div>
                             <div class="ui-carousel-content">
-                                <img class="ui-photo" src="img/image_06.jpg" alt="">
+                                <img class="ui-photo" src="../public/img/image_06.jpg" alt="">
                             </div>
                         </div>
                         <div class="ui-carousel-nav ui-m-10-t ui-ease-1st-btn">

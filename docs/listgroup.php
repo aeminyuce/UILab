@@ -381,7 +381,7 @@
                         <li>
                             <a href="#">
                                 <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"/></svg>
-                                <img class="ui-avatar-xs ui-circle" src="img/profile-image.jpg" alt="">
+                                <img class="ui-avatar-xs ui-circle" src="../public/img/profile-image.jpg" alt="">
                                 <b class="ui-font-16 ui-block">Title</b>
                                 <span class="ui-color-black-25">Donec vitae orci finibus.</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -433,7 +433,7 @@
                         <li>
                             <a href="#">
                                 <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"/></svg>
-                                <img class="ui-avatar-sm ui-circle" src="img/profile-image.jpg" alt="">
+                                <img class="ui-avatar-sm ui-circle" src="../public/img/profile-image.jpg" alt="">
                                 <b class="ui-font-16 ui-block">Title</b>
                                 <span class="ui-color-black-25">Donec vitae orci finibus.</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -485,7 +485,7 @@
                         <li>
                             <a href="#">
                                 <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"/></svg>
-                                <img class="ui-avatar ui-circle" src="img/profile-image.jpg" alt="">
+                                <img class="ui-avatar ui-circle" src="../public/img/profile-image.jpg" alt="">
                                 <b class="ui-font-16 ui-block">Title</b>
                                 <span class="ui-color-black-25">Donec vitae orci finibus.</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -537,7 +537,7 @@
                         <li>
                             <a href="#">
                                 <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"/></svg>
-                                <img class="ui-avatar-lg ui-circle" src="img/profile-image.jpg" alt="">
+                                <img class="ui-avatar-lg ui-circle" src="../public/img/profile-image.jpg" alt="">
                                 <b class="ui-font-22 ui-block">Title</b>
                                 <span class="ui-color-black-25 ui-font-16">Donec vitae orci finibus.</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -589,7 +589,7 @@
                         <li>
                             <a href="#" class="ui-theme-red ui-fill-light-100">
                                 <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"/></svg>
-                                <img class="ui-avatar ui-circle" src="img/profile-image.jpg" alt="">
+                                <img class="ui-avatar ui-circle" src="../public/img/profile-image.jpg" alt="">
                                 <b class="ui-font-16 ui-block">Title</b>
                                 <span class="ui-color-black-25">Donec vitae orci finibus.</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -634,7 +634,7 @@
                         <li>
                             <a href="#" class="ui-fill-light-100">
                                 <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"/></svg>
-                                <img class="ui-avatar ui-circle" src="img/profile-image.jpg" alt="">
+                                <img class="ui-avatar ui-circle" src="../public/img/profile-image.jpg" alt="">
                                 <b class="ui-font-16 ui-block">Title</b>
                                 <span class="ui-color-black-25">Donec vitae orci finibus.</span>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -677,7 +677,7 @@
                         <li>
                             <a href="#" class="ui-fill-light-100">
                                 <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"/></svg>
-                                <img class="ui-avatar ui-circle" src="img/profile-image.jpg" alt="">
+                                <img class="ui-avatar ui-circle" src="../public/img/profile-image.jpg" alt="">
                                 <b class="ui-font-16 ui-block">Title</b>
                                 <span class="ui-color-black-25">Donec vitae orci finibus.</span>
                                 <p>Lorem ipsum dolor sit amet.</p>

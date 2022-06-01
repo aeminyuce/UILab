@@ -53,14 +53,14 @@
                             </div>
                             <div class="ui-col-6 ui-align-r ui-sm-align-c">
                                 <span class="ui-color-black-25 ui-font-16 ui-inline-block">23 Jun - 18 Aug, 2012</span>
-                                <img class="ui-avatar ui-avatar-sm ui-circle ui-m-15-l" src="img/profile-image.jpg" alt="">
+                                <img class="ui-avatar ui-avatar-sm ui-circle ui-m-15-l" src="../public/img/profile-image.jpg" alt="">
                             </div>
                         </div>
 
                         <ul class="ui-gallery ui-gallery-has-cover ui-highlight ui-block-2nd ui-ease-gallery ui-theme-sub">
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_03.jpg">
-                                    <img src="img/image_03.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_03.jpg">
+                                    <img src="../public/img/image_03.jpg" alt="">
                                     <span class="ui-font-readable">
                                         <span class="ui-scroll-v ui-m-30 ui-set-absolute ui-set-all">
                                             <span class="ui-font-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
@@ -75,68 +75,68 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_01.jpg">
-                                    <img src="img/image_01.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_01.jpg">
+                                    <img src="../public/img/image_01.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_03.jpg">
-                                    <img src="img/image_03.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_03.jpg">
+                                    <img src="../public/img/image_03.jpg" alt="">
                                     <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_04.jpg">
-                                    <img src="img/image_04.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_04.jpg">
+                                    <img src="../public/img/image_04.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_05.jpg">
-                                    <img src="img/image_05.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_05.jpg">
+                                    <img src="../public/img/image_05.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_06.jpg">
-                                    <img src="img/image_06.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_06.jpg">
+                                    <img src="../public/img/image_06.jpg" alt="">
                                     <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_07.jpg">
-                                    <img src="img/image_07.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_07.jpg">
+                                    <img src="../public/img/image_07.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_08.jpg">
-                                    <img src="img/image_08.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_08.jpg">
+                                    <img src="../public/img/image_08.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_09.jpg">
-                                    <img src="img/image_09.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_09.jpg">
+                                    <img src="../public/img/image_09.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_10.jpg">
-                                    <img src="img/image_10.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_10.jpg">
+                                    <img src="../public/img/image_10.jpg" alt="">
                                     <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_01.jpg">
-                                    <img src="img/image_01.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_01.jpg">
+                                    <img src="../public/img/image_01.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_02.jpg">
-                                    <img src="img/image_02.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_02.jpg">
+                                    <img src="../public/img/image_02.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                 </a>
                             </li>
@@ -148,14 +148,14 @@
                             </div>
                             <div class="ui-col-6 ui-align-r ui-sm-align-c">
                                 <span class="ui-color-black-25 ui-font-16 ui-inline-block">3 Sep - 18 Nov, 2021</span>
-                                <img class="ui-avatar ui-avatar-sm ui-circle ui-m-15-l" src="img/profile-image3.jpg" alt="">
+                                <img class="ui-avatar ui-avatar-sm ui-circle ui-m-15-l" src="../public/img/profile-image3.jpg" alt="">
                             </div>
                         </div>
 
                         <ul class="ui-gallery ui-gallery-has-cover ui-highlight ui-block-2nd ui-ease-gallery ui-theme-sub">
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_06.jpg">
-                                    <img src="img/image_06.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_06.jpg">
+                                    <img src="../public/img/image_06.jpg" alt="">
                                     <span class="ui-font-readable">
                                         <span class="ui-scroll-v ui-m-30 ui-set-absolute ui-set-all">
                                             <span class="ui-font-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
@@ -170,68 +170,68 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_02.jpg">
-                                    <img src="img/image_02.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_02.jpg">
+                                    <img src="../public/img/image_02.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_03.jpg">
-                                    <img src="img/image_03.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_03.jpg">
+                                    <img src="../public/img/image_03.jpg" alt="">
                                     <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_04.jpg">
-                                    <img src="img/image_04.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_04.jpg">
+                                    <img src="../public/img/image_04.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_05.jpg">
-                                    <img src="img/image_05.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_05.jpg">
+                                    <img src="../public/img/image_05.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_06.jpg">
-                                    <img src="img/image_06.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_06.jpg">
+                                    <img src="../public/img/image_06.jpg" alt="">
                                     <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_07.jpg">
-                                    <img src="img/image_07.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_07.jpg">
+                                    <img src="../public/img/image_07.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_08.jpg">
-                                    <img src="img/image_08.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_08.jpg">
+                                    <img src="../public/img/image_08.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_09.jpg">
-                                    <img src="img/image_09.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_09.jpg">
+                                    <img src="../public/img/image_09.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_10.jpg">
-                                    <img src="img/image_10.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_10.jpg">
+                                    <img src="../public/img/image_10.jpg" alt="">
                                     <span>Aenean dapibus malesuada posuere. Nulla ac tempus nisi, sed rhoncus purus.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_01.jpg">
-                                    <img src="img/image_01.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_01.jpg">
+                                    <img src="../public/img/image_01.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                 </a>
                             </li>
                             <li>
-                                <a class="ui-photo ui-gallery-has-info" href="img/image_02.jpg">
-                                    <img src="img/image_02.jpg" alt="">
+                                <a class="ui-photo ui-gallery-has-info" href="../public/img/image_02.jpg">
+                                    <img src="../public/img/image_02.jpg" alt="">
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim libero.</span>
                                 </a>
                             </li>

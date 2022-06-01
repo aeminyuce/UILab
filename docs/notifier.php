@@ -126,11 +126,11 @@
                         <div class="ui-col-6">
 
                             <div class="ui-notifier ui-circle">
-                                <img class="ui-avatar-sm ui-circle" src="img/profile-image.jpg" alt="">
+                                <img class="ui-avatar-sm ui-circle" src="../public/img/profile-image.jpg" alt="">
                             </div>
 
                             <div class="ui-notifier ui-circle" data-ui-val="26">
-                                <img class="ui-avatar-sm ui-circle" src="img/profile-image3.jpg" alt="">
+                                <img class="ui-avatar-sm ui-circle" src="../public/img/profile-image3.jpg" alt="">
                             </div>
 
                         </div>
@@ -151,11 +151,11 @@
                         <div class="ui-col-6">
 
                             <div class="ui-notifier ui-notifier-lg ui-circle">
-                                <img class="ui-avatar ui-circle" src="img/profile-image.jpg" alt="">
+                                <img class="ui-avatar ui-circle" src="../public/img/profile-image.jpg" alt="">
                             </div>
 
                             <div class="ui-notifier ui-notifier-lg ui-circle" data-ui-val="26">
-                                <img class="ui-avatar ui-circle" src="img/profile-image3.jpg" alt="">
+                                <img class="ui-avatar ui-circle" src="../public/img/profile-image3.jpg" alt="">
                             </div>
 
                         </div>
@@ -176,11 +176,11 @@
                         <div class="ui-col-6">
 
                             <div class="ui-notifier ui-notifier-lg ui-circle">
-                                <img class="ui-avatar-lg ui-circle" src="img/profile-image.jpg" alt="">
+                                <img class="ui-avatar-lg ui-circle" src="../public/img/profile-image.jpg" alt="">
                             </div>
 
                             <div class="ui-notifier ui-notifier-lg ui-circle" data-ui-val="26">
-                                <img class="ui-avatar-lg ui-circle" src="img/profile-image3.jpg" alt="">
+                                <img class="ui-avatar-lg ui-circle" src="../public/img/profile-image3.jpg" alt="">
                             </div>
 
                         </div>

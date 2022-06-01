@@ -6,7 +6,7 @@
                 <h3 class="ui-h3 ui-align-c">2018</h3>
                 <ul class="ui-timeline ui-font-16 ui-theme-base ui-text">
                     <li>
-                        <img class="ui-avatar ui-circle ui-shadow-lg" src="img/profile-image.jpg" alt="">
+                        <img class="ui-avatar ui-circle ui-shadow-lg" src="../public/img/profile-image.jpg" alt="">
                         <span class="ui-card ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque.</span>
                     </li>
                     <li>
@@ -98,7 +98,7 @@
                 <h3 class="ui-h3">Activity</h3>
                 <ul class="ui-timeline ui-timeline-l ui-font-16 ui-theme-base ui-text">
                     <li>
-                        <img class="ui-avatar ui-circle ui-shadow-lg" src="img/profile-image.jpg" alt="">
+                        <img class="ui-avatar ui-circle ui-shadow-lg" src="../public/img/profile-image.jpg" alt="">
                         <span class="ui-card ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque.</span>
                     </li>
                     <li>

@@ -265,8 +265,8 @@
                                 <span class="ui-photoslide ui-m-20-b">
                                     <svg class="ui-photoslide-loader ui-icon"><use href="../dist/icons.svg#loader-line"/></svg>
                                     <img
-                                        src="img/product_01.png" alt=""
-                                        data-ui-src="img/product_01.png,img/product_02.png,img/product_03.png"
+                                        src="../public/img/product_01.png" alt=""
+                                        data-ui-src="../public/img/product_01.png,../public/img/product_02.png,../public/img/product_03.png"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="../dist/icons.svg#angle-left"/></svg>
@@ -301,8 +301,8 @@
                                 <span class="ui-photoslide ui-m-20-b">
                                     <svg class="ui-photoslide-loader ui-icon"><use href="../dist/icons.svg#loader-line"/></svg>
                                     <img
-                                        src="img/product_02.png" alt=""
-                                        data-ui-src="img/product_02.png,img/product_04.png"
+                                        src="../public/img/product_02.png" alt=""
+                                        data-ui-src="../public/img/product_02.png,../public/img/product_04.png"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="../dist/icons.svg#angle-left"/></svg>
@@ -336,8 +336,8 @@
                                 <span class="ui-photoslide ui-m-20-b">
                                     <svg class="ui-photoslide-loader ui-icon"><use href="../dist/icons.svg#loader-line"/></svg>
                                     <img
-                                        src="img/product_03.png" alt=""
-                                        data-ui-src="img/product_03.png,img/product_05.png"
+                                        src="../public/img/product_03.png" alt=""
+                                        data-ui-src="../public/img/product_03.png,../public/img/product_05.png"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="../dist/icons.svg#angle-left"/></svg>
@@ -370,7 +370,7 @@
                             <a class="ui-link ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photoslide ui-m-20-b">
                                     <svg class="ui-photoslide-loader ui-icon"><use href="../dist/icons.svg#loader-line"/></svg>
-                                    <img src="img/product_04.png" alt="">
+                                    <img src="../public/img/product_04.png" alt="">
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="../dist/icons.svg#angle-left"/></svg>
                                     </button>
@@ -401,7 +401,7 @@
                             <a class="ui-link ui-full-h ui-p-15 ui-no-p-t ui-card ui-round ui-shadow-lg ui-ease-layout" href="#">
                                 <span class="ui-photoslide ui-m-20-b">
                                     <svg class="ui-photoslide-loader ui-icon"><use href="../dist/icons.svg#loader-line"/></svg>
-                                    <img src="img/product_05.png" alt="">
+                                    <img src="../public/img/product_05.png" alt="">
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="../dist/icons.svg#angle-left"/></svg>
                                     </button>
@@ -433,8 +433,8 @@
                                 <span class="ui-photoslide ui-m-20-b">
                                     <svg class="ui-photoslide-loader ui-icon"><use href="../dist/icons.svg#loader-line"/></svg>
                                     <img
-                                        src="img/product_02.png" alt=""
-                                        data-ui-src="img/product_02.png,img/product_04.png"
+                                        src="../public/img/product_02.png" alt=""
+                                        data-ui-src="../public/img/product_02.png,../public/img/product_04.png"
                                     >
                                     <button title="Prev" class="ui-photoslide-prev ui-btn ui-btn-ghost ui-btn-square ui-circle ui-ease-btn">
                                         <svg class="ui-icon ui-m-3-r ui-no-opacity"><use href="../dist/icons.svg#angle-left"/></svg>

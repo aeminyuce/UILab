@@ -15,7 +15,7 @@
                                     <p class="ui-font-lead ui-font-readable">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam.
                                     </p>
-                                    <img class="ui-img-md-fluid ui-highlight ui-m-auto" src="img/image_04.jpg" height="308" alt="">
+                                    <img class="ui-img-md-fluid ui-highlight ui-m-auto" src="../public/img/image_04.jpg" height="308" alt="">
                                     <p class="ui-font-readable">
                                         In feugiat felis ut nibh malesuada, id imperdiet libero molestie. Sed ut ipsum quis nisi congue aliquet id at diam. Proin nec fermentum odio. Pellentesque neque enim, finibus sed malesuada eget, vestibulum id tortor. Morbi quis metus vitae ligula porta rhoncus sit amet ac tellus. In hac habitasse platea dictumst. Donec at pulvinar libero. Mauris mattis leo mi, venenatis semper risus pulvinar ac.
                                     </p>
@@ -27,7 +27,7 @@
 
                             <div class="ui-card ui-round ui-shadow-lg ui-theme-sub">
                                 <div class="ui-card-side">
-                                    <img class="ui-img-fluid ui-round-t" src="img/image_06.jpg" alt="">
+                                    <img class="ui-img-fluid ui-round-t" src="../public/img/image_06.jpg" alt="">
                                 </div>
                                 <div class="ui-card-side ui-p-15">
                                     <h3 class="ui-h3">Card title</h3>
@@ -71,7 +71,7 @@
                             </h4>
                         </div>
                         <div class="ui-card-side ui-align-c ui-p-30 ui-m-1-b ui-fill-light-100">
-                            <img class="ui-img-sm-fluid" src="img/image_02.jpg" height="320" alt="">
+                            <img class="ui-img-sm-fluid" src="../public/img/image_02.jpg" height="320" alt="">
                             <span class="ui-sp-10"></span>
                             <i class="ui-color-black-50">Lorem ipsum dolor sit amet</i>
                         </div>
