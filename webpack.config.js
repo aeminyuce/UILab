@@ -7,9 +7,6 @@ module.exports = {
         port: 3000, // Opens http://localhost:3000/
         open: true, // Opens browser on a new tab automatically
     },
-    output: {
-        publicPath: 'auto', // define public path
-    },
     resolve: {
         extensions: ['.js', '.less', '.css'], // file types
         alias: { // custom aliases
