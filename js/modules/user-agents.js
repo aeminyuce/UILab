@@ -45,7 +45,7 @@ ui.userAgents = {
 
 ui.onload(() => {
 
-    var ua = navigator.userAgent.toLowerCase();
+    const ua = navigator.userAgent.toLowerCase();
     ui.userAgents.userLang = (navigator.language || navigator.userLanguage).split('-')[0];
 
     if (ua.indexOf('firefox') > -1) {
