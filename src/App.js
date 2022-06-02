@@ -14,7 +14,7 @@ import 'style/line-chart';
 import 'script/line-chart';
 
 // components
-import Icon from "components/Icons";
+import Icon from "components/Icon";
 import Button, { SquareButton } from "components/Button";
 
 export default function App() {
