@@ -38,6 +38,8 @@ export default function App() {
                 <Icon src="camera"></Icon>
                 <Icon src="camera" size="xl"></Icon>
                 <Icon src="camera" size="xxl"></Icon>
+                <br/>
+                <Icon src="envelope" size="lg" animate="bounce-y"></Icon>
                 <br/><br/>
                 <Button label="Test Button"></Button>
                 <br/><br/>

@@ -45,44 +45,30 @@ export default function Icon(props) {
         {val: loader_line, name: "loader-line"},
 
         // inline icons
+        {val: loader_line, name: "loader-line"},
         {val: envelope, name: "envelope"},
         {val: camera, name: "camera"},
 
     ];
-
-    const sizes = [
-        {name: "ui-icon-xs", size: "xs"},
-        {name: "ui-icon-sm", size: "sm"},
-        {name: "ui-icon-lg", size: "lg"},
-        {name: "ui-icon-xl", size: "xl",},
-        {name: "ui-icon-xxl", size: "xxl"},
-    ];
-
-    const [currentSrc, updateSrc] = useState(""); // type: string
 
     // icon names
     const iconName = names.find(item => {
         return item.name === props.src;
     });
 
+    const [currentSrc, updateSrc] = useState(""); // type: string
+
     useEffect(() => {
         updateSrc(getPath(iconName.val, true));
 
     }, []); // Runs only first render
 
-    // icon sizes
-    const iconSizes = sizes.find(item => {
-        return item.size === props.size;
-    });
-
-    let setSize = "";
-
-    if (iconSizes !== undefined) {
-        setSize = " " + iconSizes.name;
-    }
+    // extras
+    const setSize = props.size ? " ui-icon-" + props.size : '';
+    const setAnimate = props.animate ? " ui-animate-" + props.animate : '';
 
     return (
-        <svg className={"ui-icon" + setSize} viewBox="0 0 264 264">
+        <svg className={"ui-icon" + setSize + setAnimate} viewBox="0 0 264 264">
             <path d={currentSrc} />
         </svg>
     );
