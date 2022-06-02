@@ -1,6 +1,11 @@
 import React from "react";
 import { createRoot } from 'react-dom/client';
-import App from "./App";
+
+// utils
+import 'utils/Styles';
+import 'utils/Scripts';
+
+import Routers from 'utils/Routers';
 
 const root = createRoot(document.getElementById('app'));
-root.render(<App />);
+root.render(<Routers />);

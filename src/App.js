@@ -1,34 +1,33 @@
 import React, { useEffect } from "react";
-
-// utils
-import 'utils/Styles';
-import 'utils/Scripts';
-
-import Inits from 'utils/Inits';
-
-// modules
-import 'style/calendar';
-import 'script/calendar';
-
-import 'style/line-chart';
-import 'script/line-chart';
+import { Link } from "react-router-dom";
 
 // components
 import Icon from "components/Icon";
 import Button, { SquareButton } from "components/Button";
+
+// modules
+import 'style/line-chart';
+import 'script/line-chart';
+
+// utils
+import Inits from 'utils/Inits';
 
 export default function App() {
 
     useEffect(() => {
         Inits();
 
-    }); // Runs on every render
+    }, []); // Runs only first render
 
     return (
         <>
             <div className="ui-fixed ui-p-30-v">
 
                 <img src="/img/uilab-logo.png" />
+                <br/>
+                <Link className="ui-link" to="/">Home</Link> | <Link className="ui-link" to="/calendar">Calendar</Link>
+                <br/><br/>
+
                 <h1>Icons</h1>
                 <Icon src="envelope" size="xs"></Icon>
                 <Icon src="envelope" size="sm"></Icon>
@@ -44,27 +43,6 @@ export default function App() {
                 <br/><br/>
                 <SquareButton label="SB"></SquareButton>
                 <br/><br/>
-                <h3 className="ui-h3">Calendars</h3>
-                <div className="ui-row">
-                    <div className="ui-col-4 ui-col-md-6">
-                        <div className="ui-calendar ui-ease-calendar"></div>
-                    </div>
-                    <div className="ui-col-4 ui-col-md-6">
-                        <div className="ui-calendar ui-ease-calendar ui-round"></div>
-                    </div>
-                    <div className="ui-col-4 ui-col-md-6">
-                        <div className="ui-calendar ui-ease-calendar ui-round ui-shadow"></div>
-                    </div>
-                    <div className="ui-col-4 ui-col-md-6">
-                        <div className="ui-calendar ui-ease-calendar ui-no-p ui-m-5 ui-shadow-lg ui-theme-sub ui-fill-dark-200"></div>
-                    </div>
-                    <div className="ui-col-4 ui-col-md-6">
-                        <div className="ui-calendar ui-ease-calendar ui-round ui-theme-sub ui-fill-dark-200"></div>
-                    </div>
-                    <div className="ui-col-4 ui-col-md-6">
-                        <div className="ui-calendar ui-ease-calendar ui-round ui-shadow-lg ui-theme-base ui-fill-dark-100"></div>
-                    </div>
-                </div>
                 <div className="ui-col-12">
                     <h3 className="ui-h3">Line Charts</h3>
                 </div>

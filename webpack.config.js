@@ -6,6 +6,7 @@ module.exports = {
     devServer: {
         port: 3000, // Opens http://localhost:3000/
         open: true, // Opens browser on a new tab automatically
+        historyApiFallback: true, // running routes on page refresh
     },
     resolve: {
         extensions: ['.js', '.less', '.css'], // file types
@@ -25,6 +26,7 @@ module.exports = {
         maxEntrypointSize: 512000, // rendered main.js size limit
         maxAssetSize: 512000 // single asset size limit
     },
+    devtool: "eval-cheap-source-map", // ignore source mapping files from node_modules
     module: {
         rules: [
             {
