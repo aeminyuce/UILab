@@ -19,6 +19,7 @@ npm i -D style-loader css-loader less-loader svg-url-loader
 **ES Lint**
 ```
 npm i -D eslint
+powershell Set-ExecutionPolicy RemoteSigned
 npm init @eslint/config
 ```
 **Icons**
