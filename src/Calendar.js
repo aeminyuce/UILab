@@ -1,16 +1,19 @@
 import React, { useEffect } from "react";
 
-// modules
-import 'style/calendar';
-import 'script/calendar';
-
 // utils
-import Inits from 'utils/Inits';
+import JsInits from "utils/JsInits";
+import JsIcons from "utils/JsIcons";
+
+// assets
+import "style/modules/calendar";
+import "script/modules/calendar";
 
 export default function Calendar() {
 
     useEffect(() => {
-        Inits();
+
+        JsIcons();
+        JsInits();
 
     }, []); // Runs only first render
 

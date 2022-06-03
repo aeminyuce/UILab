@@ -1,21 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useEffect, lazy } from "react";
 import { Link } from "react-router-dom";
 
-// components
-import Icon from "components/Icon";
-import Button, { SquareButton } from "components/Button";
-
-// modules
-import 'style/line-chart';
-import 'script/line-chart';
-
 // utils
-import Inits from 'utils/Inits';
+import JsInits from "utils/JsInits";
+import JsIcons from "utils/JsIcons";
+
+// components
+const Icon = lazy(() => import("components/Icon"));
+const Button = lazy(() => import("components/Button"));
+
+// assets
+import "style/ui-react";
+import "script/ui-react";
+
+import "style/modules/line-chart";
+import "script/modules/line-chart";
 
 export default function App() {
 
     useEffect(() => {
-        Inits();
+
+        JsIcons();
+        JsInits();
 
     }, []); // Runs only first render
 
@@ -42,8 +48,6 @@ export default function App() {
                 <Icon src="envelope" size="lg" animate="bounce-y"></Icon>
                 <br/><br/>
                 <Button label="Test Button"></Button>
-                <br/><br/>
-                <SquareButton label="SB"></SquareButton>
                 <br/><br/>
                 <div className="ui-col-12">
                     <h3 className="ui-h3">Line Charts</h3>

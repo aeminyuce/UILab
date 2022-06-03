@@ -1,4 +1,4 @@
-// Inits
+// JS Inits
 import { ui } from 'ui';
 
 export default function Inits() {

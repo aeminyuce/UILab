@@ -1,7 +1,7 @@
-import React from "react";
+import React, { lazy } from "react";
 
 // components
-import Icon from "components/Icon";
+const Icon = lazy(() => import("components/Icon"));
 
 export default function Loader() {
     return (

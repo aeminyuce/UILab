@@ -1,12 +1,12 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// routes
-const App = lazy(() => import('../App'));
-const Calendar = lazy(() => import('../Calendar'));
-
 // utils
 import Loader from "utils/Loader";
+
+// routes
+const App = lazy(() => import("../App"));
+const Calendar = lazy(() => import("../Calendar"));
 
 export default function Routers() {
     return (

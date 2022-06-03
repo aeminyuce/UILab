@@ -2,10 +2,7 @@ import React from "react";
 import { createRoot } from 'react-dom/client';
 
 // utils
-import 'utils/Styles';
-import 'utils/Scripts';
-
-import Routers from 'utils/Routers';
+import Routers from "utils/Routers";
 
 const root = createRoot(document.getElementById('app'));
 root.render(<Routers />);

@@ -12,16 +12,3 @@ export default function Button(props) {
         </>
     );
 }
-
-export function SquareButton(props) {
-    return (
-        <>
-            <button
-                className="ui-btn ui-btn-square ui-ease-btn"
-                type={props.submit ? 'submit' : 'button'}
-            >
-                {props.label ? props.label : 'New Button'}
-            </button>
-        </>
-    );
-}
