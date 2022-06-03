@@ -2,8 +2,9 @@ const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 const config = {
-    entry: {
-        bundle: { import: './src/index.js' }, // main autput file name
+    entry: { // pages
+        index: { import: './src/index.js' }, // main autput file name
+        calendar: { import: './src/Calendar.js' }, // main autput file name
     },
     output: {
         filename: '[name].js',
@@ -11,7 +12,14 @@ const config = {
     },
     optimization: {
         splitChunks: {
-            chunks: 'all', // split all output files
+            cacheGroups: {
+                vendors: {
+                    chunks: 'all', // split all output files
+                    test: /\/node_modules\//, // reduce random numbered files
+                    enforce: true,
+                }
+
+            }
         },
     },
     devServer: {
@@ -70,7 +78,6 @@ const config = {
                 test: /\.svg$/,
                 include: [
                     path.resolve(__dirname, "icon"),
-                    path.resolve(__dirname, "dist"),
                 ],
                 use: [ // loads SVG
                     {
