@@ -9,13 +9,6 @@ import JsIcons from "utils/JsIcons";
 const Icon = lazy(() => import("components/Icon"));
 const Button = lazy(() => import("components/Button"));
 
-// assets
-import "style/ui-react";
-import "script/ui-react";
-
-import "style/modules/line-chart";
-import "script/modules/line-chart";
-
 export default function App() {
 
     useEffect(() => {

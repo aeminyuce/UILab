@@ -4,10 +4,6 @@ import React, { useEffect } from "react";
 import JsInits from "utils/JsInits";
 import JsIcons from "utils/JsIcons";
 
-// assets
-import "style/modules/calendar";
-import "script/modules/calendar";
-
 export default function Calendar() {
 
     useEffect(() => {
