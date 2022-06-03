@@ -1,20 +1,29 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
-module.exports = {
-    entry: path.resolve(__dirname, "./src/index.js"),
+const config = {
+    entry: {
+        bundle: { import: './src/index.js' }, // main autput file name
+    },
+    output: {
+        filename: '[name].js',
+        path: path.resolve(__dirname, 'bundle'), // when script not serve mode!
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all', // split all output files
+        },
+    },
     devServer: {
         port: 3000, // Opens http://localhost:3000/
         open: true, // Opens browser on a new tab automatically
-        historyApiFallback: true, // running routes on page refresh
+        historyApiFallback: true, // running routes when page refresh
     },
     resolve: {
-        extensions: ['.js', '.less', '.css'], // file types
-        alias: { // custom aliases
-            coreStyles: path.resolve(__dirname, './less/core/'),
-            style: path.resolve(__dirname, './less/modules/'),
-            coreScripts: path.resolve(__dirname, './js/core/'),
-            script: path.resolve(__dirname, './js/modules/'),
+        extensions: ['.js', '.less'], // file types
+        alias: {
+            style: path.resolve(__dirname, './less/'),
+            script: path.resolve(__dirname, './js/'),
 
             ui: path.resolve(__dirname, './js/core/globals'),
             utils: path.resolve(__dirname, './src/utils/'),
@@ -22,11 +31,11 @@ module.exports = {
             components: path.resolve(__dirname, './src/components/'),
         },
     },
-    performance: {
-        maxEntrypointSize: 512000, // rendered main.js size limit
-        maxAssetSize: 512000 // single asset size limit
-    },
     devtool: "eval-cheap-source-map", // ignore source mapping files from node_modules
+    performance: {
+        maxEntrypointSize: 100000, // rendered main.js size limit
+        maxAssetSize: 100000 // single asset size limit
+    },
     module: {
         rules: [
             {
@@ -38,16 +47,6 @@ module.exports = {
                         presets: ["@babel/preset-env", "@babel/preset-react"],
                     },
                 },
-            },
-            {
-                test: /\.css$/,
-                include: [
-                    path.resolve(__dirname, "public"),
-                ],
-                use: [ // loads CSS
-                    "style-loader",
-                    "css-loader"
-                ],
             },
             {
                 test: /\.less$/i,
@@ -89,4 +88,14 @@ module.exports = {
             template: "./src/index.html",
         }),
     ],
+}
+
+module.exports = (env, argv) => {
+
+    if (argv.mode === 'production') {
+        config.devtool = false; // disable when production mode for reducing output file sizes
+    }
+
+    return config;
+
 };
