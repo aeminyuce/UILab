@@ -1,20 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import envelope from 'icon/general/envelope.svg';
-import camera from 'icon/media/camera.svg';
-import loader_line from 'icon/general/loader-line.svg';
-
 export default function Icon(props) {
-
-    const names = [
-        { val: loader_line, name: "loader-line" },
-        { val: envelope, name: "envelope" },
-        { val: camera, name: "camera" },
-    ];
-
-    const iconName = names.find(item => {
-        return item.name === props.src;
-    });
 
     const [currentSrc, updateSrc] = useState(""); // type: string
 
@@ -31,7 +17,7 @@ export default function Icon(props) {
     }
 
     useEffect(() => {
-        updateSrc(getPath(iconName.val));
+        updateSrc(getPath(props.src));
 
     }, []); // Runs only first render
 

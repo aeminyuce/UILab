@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // utils
-import Loader from "utils/Loader";
+import PageLoader from "utils/PageLoader";
 
 // assets
 import "style/ui-react";
@@ -15,7 +15,7 @@ const Page_Calendar = lazy(() => import("../Calendar"));
 export default function Routers() {
     return (
         <BrowserRouter>
-            <Suspense fallback={<Loader />}>
+            <Suspense fallback={<PageLoader />}>
                 <Routes>
                     <Route path="/" element={<Page_Index />} />
                     <Route path="calendar" element={<Page_Calendar />} />

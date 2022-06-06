@@ -1,6 +1,10 @@
 import React, { lazy } from "react";
 import { Link } from "react-router-dom";
 
+// assets
+import icon_envelope from 'icon/general/envelope.svg';
+import icon_camera from 'icon/media/camera.svg';
+
 // components
 const Icon = lazy(() => import("components/Icon"));
 const Button = lazy(() => import("components/Button"));
@@ -17,17 +21,17 @@ export default function App() {
                 <br/><br/>
 
                 <h1>Icons</h1>
-                <Icon src="envelope" size="xs"></Icon>
-                <Icon src="envelope" size="sm"></Icon>
-                <Icon src="envelope"></Icon>
-                <Icon src="envelope" size="lg"></Icon>
-                <Icon src="envelope" size="xl"></Icon>
-                <Icon src="envelope" size="xxl"></Icon>
-                <Icon src="camera"></Icon>
-                <Icon src="camera" size="xl"></Icon>
-                <Icon src="camera" size="xxl"></Icon>
+                <Icon src={icon_envelope} size="xs"></Icon>
+                <Icon src={icon_envelope} size="sm"></Icon>
+                <Icon src={icon_envelope}></Icon>
+                <Icon src={icon_envelope} size="lg"></Icon>
+                <Icon src={icon_envelope} size="xl"></Icon>
+                <Icon src={icon_envelope} size="xxl"></Icon>
+                <Icon src={icon_camera}></Icon>
+                <Icon src={icon_camera} size="xl"></Icon>
+                <Icon src={icon_camera} size="xxl"></Icon>
                 <br/>
-                <Icon src="envelope" size="lg" animate="bounce-y"></Icon>
+                <Icon src={icon_envelope} size="lg" animate="bounce-y"></Icon>
                 <br/><br/>
                 <Button label="Test Button"></Button>
                 <br/><br/>

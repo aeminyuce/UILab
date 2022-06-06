@@ -1,8 +1,5 @@
 import React, { useEffect } from "react";
-
-// utils
-import JsInits from "utils/JsInits";
-import JsIcons from "utils/JsIcons";
+import { ui } from 'ui';
 
 // assets
 import "style/modules/line-chart";
@@ -12,8 +9,8 @@ export default function LineChart() {
 
     useEffect(() => {
 
-        JsIcons();
-        JsInits();
+        // inits
+        ui.lineChart.Init();
 
     }, []); // Runs only first render
 
