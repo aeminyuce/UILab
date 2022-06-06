@@ -8,6 +8,7 @@ import icon_camera from 'icon/media/camera.svg';
 // components
 const Icon = lazy(() => import("components/Icon"));
 const Button = lazy(() => import("components/Button"));
+const TopButton = lazy(() => import("components/TopButton"));
 const LineChart = lazy(() => import("components/LineChart"));
 
 export default function App() {
@@ -45,9 +46,11 @@ export default function App() {
                 </div>
 
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 show top button
 
             </div>
+            <TopButton />
         </>
     );
 }

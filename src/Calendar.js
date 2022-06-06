@@ -1,6 +1,7 @@
 import React, { lazy } from "react";
 
 // components
+const TopButton = lazy(() => import("components/TopButton"));
 const Calendar = lazy(() => import("components/Calendar"));
 
 export default function Page_Calendar() {
@@ -15,9 +16,11 @@ export default function Page_Calendar() {
                 </div>
 
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 show top button
 
             </div>
+            <TopButton />
         </>
     );
 }
