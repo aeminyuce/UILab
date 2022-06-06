@@ -8,19 +8,25 @@ import PageLoader from "utils/PageLoader";
 import "style/ui-react";
 import "script/ui-react";
 
+// components
+const TopButton = lazy(() => import("components/TopButton"));
+
 // routes
 const Page_Index = lazy(() => import("../App"));
 const Page_Calendar = lazy(() => import("../Calendar"));
 
 export default function Routers() {
     return (
-        <BrowserRouter>
-            <Suspense fallback={<PageLoader />}>
-                <Routes>
-                    <Route path="/" element={<Page_Index />} />
-                    <Route path="calendar" element={<Page_Calendar />} />
-                </Routes>
-            </Suspense>
-        </BrowserRouter>
+        <>
+            <BrowserRouter>
+                <Suspense fallback={<PageLoader />}>
+                    <Routes>
+                        <Route path="/" element={<Page_Index />} />
+                        <Route path="calendar" element={<Page_Calendar />} />
+                    </Routes>
+                </Suspense>
+            </BrowserRouter>
+            <TopButton />
+        </>
     );
 }
