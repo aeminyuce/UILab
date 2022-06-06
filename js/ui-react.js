@@ -19,6 +19,3 @@ import './modules/effects.js';
 
 // Grid
 import './modules/grid.js';
-
-// Buttons
-import './modules/top-button.js';
