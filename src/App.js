@@ -1,23 +1,12 @@
-import React, { useEffect, lazy } from "react";
+import React, { lazy } from "react";
 import { Link } from "react-router-dom";
-
-// utils
-import JsInits from "utils/JsInits";
-import JsIcons from "utils/JsIcons";
 
 // components
 const Icon = lazy(() => import("components/Icon"));
 const Button = lazy(() => import("components/Button"));
+const LineChart = lazy(() => import("components/LineChart"));
 
 export default function App() {
-
-    useEffect(() => {
-
-        JsIcons();
-        JsInits();
-
-    }, []); // Runs only first render
-
     return (
         <>
             <div className="ui-fixed ui-p-30-v">
@@ -46,33 +35,8 @@ export default function App() {
                     <h3 className="ui-h3">Line Charts</h3>
                 </div>
                 <div className="ui-row">
-                    <div className="ui-col-6">
-                        <h5 className="ui-h5 ui-font-bold ui-align-c">Line Chart</h5>
-                        <div className="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul className="ui-line-chart">
-                                <li data-ui-y="84"></li>
-                                <li data-ui-y="56"></li>
-                                <li data-ui-y="112"></li>
-                                <li data-ui-y="140"></li>
-                                <li data-ui-y="28"></li>
-                                <li data-ui-y="0"></li>
-                                <li data-ui-y="28"></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="ui-col-6">
-                        <h5 className="ui-h5 ui-font-bold ui-align-c">Curved Line Chart</h5>
-                        <div className="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul className="ui-line-chart" data-ui-type="curved">
-                                <li data-ui-y="0"></li>
-                                <li data-ui-y="-56"></li>
-                                <li data-ui-y="-112"></li>
-                                <li data-ui-y="-140"></li>
-                                <li data-ui-y="-28"></li>
-                                <li data-ui-y="-20"></li>
-                                <li data-ui-y="-28"></li>
-                            </ul>
-                        </div>
+                    <div className="ui-col-12">
+                        <LineChart />
                     </div>
                 </div>
 
