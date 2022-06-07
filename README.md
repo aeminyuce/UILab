@@ -11,15 +11,13 @@ npm i -D rollup
 **React**
 ```
 npm i react react-dom react-router-dom
-npm i -D @babel/preset-react babel-loader
-npm i -D @babel/plugin-proposal-private-methods @babel/plugin-proposal-class-properties
+npm i -D babel-loader @babel/preset-react
 npm i -D webpack webpack-cli html-webpack-plugin webpack-dev-server
 npm i -D style-loader css-loader less-loader svg-url-loader
 ```
 **ES Lint**
 ```
-npm i -D eslint
-powershell Set-ExecutionPolicy RemoteSigned
+npm i -D eslint eslint-plugin-react
 npm init @eslint/config
 ```
 **Icons**
