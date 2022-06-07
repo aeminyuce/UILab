@@ -61,6 +61,7 @@
     "chai": "^4.3.6",
     "css-loader": "^6.7.1",
     "eslint": "^8.10.0",
+    "eslint-plugin-react": "^7.30.0",
     "html-webpack-plugin": "^5.5.0",
     "less": "^4.1.2",
     "less-loader": "^11.0.0",
