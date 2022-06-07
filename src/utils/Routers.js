@@ -5,8 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageLoader from "utils/PageLoader";
 
 // assets
-import "style/ui-react";
-import "script/ui-react";
+import "utils/SharedStyles";
+import "utils/SharedScripts";
 
 // components
 const TopButton = lazy(() => import("components/TopButton"));
