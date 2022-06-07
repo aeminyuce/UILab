@@ -7591,7 +7591,7 @@ ui.lineChart = {
 };
 
 ui.lineChart.Start = function () {
-  var i, j, k, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
+  var charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
 
   ui.lineChart.Init = function (method, resizer) {
     if (method === ui.lineChart.nameLoaded) {
@@ -7650,13 +7650,13 @@ ui.lineChart.Start = function () {
       x = data.x;
       yMax = [];
       data.pass = false;
-      ui.each(lines, function (i) {
+      Array.prototype.forEach.call(lines, function (el, i) {
         data[i] = [];
         data[i].y = [];
         data[i].links = [];
-        data.backup += this.outerHTML;
-        ui.each(ui.find(ui.lineChart.tagLines, this), function () {
-          y = this.getAttribute(ui.lineChart.dataY);
+        data.backup += el.outerHTML;
+        Array.prototype.forEach.call(ui.find(ui.lineChart.tagLines, el), function (item) {
+          y = item.getAttribute(ui.lineChart.dataY);
 
           if (y !== null && y !== '') {
             data[i].y.push(y);
@@ -7664,7 +7664,7 @@ ui.lineChart.Start = function () {
             return;
           }
 
-          link = this.getAttribute(ui.lineChart.dataLink);
+          link = item.getAttribute(ui.lineChart.dataLink);
 
           if (link !== null && link !== '') {
             data[i].links.push(link);
@@ -7708,8 +7708,8 @@ ui.lineChart.Start = function () {
         } else {
           data.stepArr = [];
 
-          for (k = 0; k < Math.ceil(x.length / data.step); k++) {
-            data.stepArr.push(k * data.step);
+          for (var m = 0; m < Math.ceil(x.length / data.step); m++) {
+            data.stepArr.push(m * data.step);
           }
         }
       } else {
@@ -7719,24 +7719,24 @@ ui.lineChart.Start = function () {
       col = (data.width - (ui.lineChart.right + ui.lineChart.left)) / (x.length - 1);
       html += '<g class="' + ui.lineChart.nameGridX + '">';
 
-      for (i = 0; i < x.length; i++) {
-        posX = i * col + ui.lineChart.left;
+      for (var k = 0; k < x.length; k++) {
+        posX = k * col + ui.lineChart.left;
 
         if (ui.lineChart.showGridText) {
           if (data.step) {
-            if (data.stepArr.indexOf(i) > -1) {
-              html += '<text ' + 'x="' + posX + '" ' + 'y="' + (data.height - ui.lineChart.bottom + 20) + '">' + x[i] + '</text>';
+            if (data.stepArr.indexOf(k) > -1) {
+              html += '<text ' + 'x="' + posX + '" ' + 'y="' + (data.height - ui.lineChart.bottom + 20) + '">' + x[k] + '</text>';
             }
           } else {
-            html += '<text ' + 'x="' + posX + '" ' + 'y="' + (data.height - ui.lineChart.bottom + 20) + '">' + x[i] + '</text>';
+            html += '<text ' + 'x="' + posX + '" ' + 'y="' + (data.height - ui.lineChart.bottom + 20) + '">' + x[k] + '</text>';
           }
         }
 
-        if (i === 0 || ui.lineChart.showGrid) {
+        if (k === 0 || ui.lineChart.showGrid) {
           html += '<line ' + 'x1="' + posX + '" ' + 'x2="' + posX + '" ' + 'y1="' + ui.lineChart.top + '" ';
         }
 
-        if (i === 0) {
+        if (k === 0) {
           html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + ui.lineChart.gridStroke / 2)) + '" ' + 'class="' + ui.lineChart.nameGridRoot + '" ' + 'stroke-width="' + ui.lineChart.gridStroke + '"';
         } else {
           html += 'y2="' + (data.height - ui.lineChart.bottom) + '" ' + 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
@@ -7747,18 +7747,18 @@ ui.lineChart.Start = function () {
 
       html += '</g>' + '<g class="' + ui.lineChart.nameGridY + '">';
 
-      for (i = 0; i <= rows; i++) {
-        posY = parseInt(i * (data.height - (ui.lineChart.top + ui.lineChart.bottom)) / rows + ui.lineChart.top);
+      for (var l = 0; l <= rows; l++) {
+        posY = parseInt(l * (data.height - (ui.lineChart.top + ui.lineChart.bottom)) / rows + ui.lineChart.top);
 
         if (ui.lineChart.showGridText) {
-          html += '<text ' + 'x="' + (ui.lineChart.left - 10) + '" ' + 'y="' + (posY + 4) + '">' + (parseInt((yMax - yMin) / rows) * (rows - i) + yMin) + '</text>';
+          html += '<text ' + 'x="' + (ui.lineChart.left - 10) + '" ' + 'y="' + (posY + 4) + '">' + (parseInt((yMax - yMin) / rows) * (rows - l) + yMin) + '</text>';
         }
 
-        if (i === rows || ui.lineChart.showGrid) {
+        if (l === rows || ui.lineChart.showGrid) {
           html += '<line ' + 'x2="' + (data.width - ui.lineChart.right + 1) + '" ' + 'y1="' + posY + '" ' + 'y2="' + posY + '" ';
         }
 
-        if (i >= rows) {
+        if (l >= rows) {
           html += 'x1="' + Math.ceil(ui.lineChart.left - ui.lineChart.gridStroke / 2) + '" ' + 'class="' + ui.lineChart.nameGridRoot + '" ' + 'stroke-width="' + ui.lineChart.gridStroke + '"';
         } else {
           html += 'x1="' + Math.floor(ui.lineChart.left + ui.lineChart.gridStroke) + '" ' + 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
@@ -7771,7 +7771,7 @@ ui.lineChart.Start = function () {
       circles = '';
       pathStart = [];
       html += '<g>';
-      ui.each(lines, function (j) {
+      Array.prototype.forEach.call(lines, function (el, j) {
         paths = '';
         y = data[j].y;
 
@@ -7781,44 +7781,44 @@ ui.lineChart.Start = function () {
           data.color.push(ui.lineChart.colors[j]);
         }
 
-        for (i = 0; i < y.length; i++) {
-          posX = i * col + ui.lineChart.left;
-          posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[i] - yMax) / (yMax - yMin) - ui.lineChart.top);
-          type = this.getAttribute(ui.lineChart.dataType);
+        for (var n = 0; n < y.length; n++) {
+          posX = n * col + ui.lineChart.left;
+          posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax) / (yMax - yMin) - ui.lineChart.top);
+          type = el.getAttribute(ui.lineChart.dataType);
 
           if (type === null) {
             type = '';
           }
 
-          if (i === 0) {
+          if (n === 0) {
             pathStart.x = posX;
             pathStart.y = posY;
           }
 
           if (type.indexOf(ui.lineChart.curved) > -1) {
-            data.percent = parseInt(ui.lineChart.curveSize * (i * col) / 100);
+            data.percent = parseInt(ui.lineChart.curveSize * (n * col) / 100);
 
-            if (i === 1) {
+            if (n === 1) {
               paths += ' C ' + (col + data.percent) + ' ' + (posY - data.percent) + ',' + ' ' + (col + data.percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
-            } else if (i > 0) {
-              paths += ' S ' + (i * col - data.percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
+            } else if (n > 0) {
+              paths += ' S ' + (n * col - data.percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
             }
           } else {
-            if (i > 0) {
+            if (n > 0) {
               paths += ' L ' + posX + ' ' + posY;
             }
           }
 
           circles += '<circle ' + 'cx="' + posX + '" ' + 'cy="' + posY + '" ' + 'r="' + ui.lineChart.circleSize + '" ' + 'fill="' + data.color[j] + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="0" ';
 
-          if (data[j].links[i] !== '') {
-            circles += 'onclick="location.href = \'' + data[j].links[i] + '\';"';
+          if (data[j].links[n] !== '') {
+            circles += 'onclick="location.href = \'' + data[j].links[n] + '\';"';
           }
 
           if (ui.tooltip === undefined) {
-            circles += '/>' + '<title>' + y[i] + '</title>';
+            circles += '/>' + '<title>' + y[n] + '</title>';
           } else {
-            circles += ui.tooltip.dataTooltip + ' ' + 'title="' + y[i] + '" ' + '/>';
+            circles += ui.tooltip.dataTooltip + ' ' + 'title="' + y[n] + '" ' + '/>';
           }
         }
 
@@ -7839,7 +7839,7 @@ ui.lineChart.Start = function () {
           html += '<linearGradient id="' + ui.lineChart.idGradient + data.id + '" x1="0" y1="0" x2="0" y2="100%">' + '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' + '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' + '</linearGradient>' + '<path d="M ' + (pathStart.x + ui.lineChart.gridStroke / 2) + ' ' + pathStart.y + paths + ' V ' + (data.height - ui.lineChart.bottom - ui.lineChart.gridStroke / 2) + ' H ' + (ui.lineChart.gridStroke / 2 + ui.lineChart.left) + ' Z" ' + 'stroke="0" ' + 'fill="url(#' + ui.lineChart.idGradient + data.id + ')" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + 'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' + '/>';
         }
 
-        name = this.getAttribute(ui.lineChart.dataName);
+        name = el.getAttribute(ui.lineChart.dataName);
 
         if (name !== null && name !== '') {
           data.name.push(name);
@@ -7856,19 +7856,19 @@ ui.lineChart.Start = function () {
       if (ui.lineChart.showInfo) {
         html += '<ul class="' + ui.lineChart.nameInfo + '">';
 
-        for (i = 0; i < lines.length; i++) {
+        for (var p = 0; p < lines.length; p++) {
           total = 0;
 
-          for (j = 0; j < data[i].y.length; j++) {
-            total += parseInt(data[i].y[j]);
+          for (var n = 0; n < data[p].y.length; n++) {
+            total += parseInt(data[p].y[n]);
           }
 
-          html += '<li>' + '<' + ui.lineChart.tagInfoColor + ' style="background: ' + data.color[i] + '">' + '</' + ui.lineChart.tagInfoColor + '>';
+          html += '<li>' + '<' + ui.lineChart.tagInfoColor + ' style="background: ' + data.color[p] + '">' + '</' + ui.lineChart.tagInfoColor + '>';
 
-          if (data.name[i] === '') {
+          if (data.name[p] === '') {
             html += '<' + ui.lineChart.tagInfoStat + '>' + total;
           } else {
-            html += data.name[i] + ': <b>' + total;
+            html += data.name[p] + ': <b>' + total;
           }
 
           html += '</' + ui.lineChart.tagInfoStat + '></li>';

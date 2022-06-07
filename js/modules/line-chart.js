@@ -87,7 +87,7 @@ ui.lineChart = {
 // load charts
 ui.lineChart.Start = () => {
 
-    var i, j, k, charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
+    var charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
 
     ui.lineChart.Init = function (method, resizer) {
 
@@ -158,29 +158,29 @@ ui.lineChart.Start = () => {
                 yMax = [];
                 data.pass = false;
 
-                ui.each(lines,
+                Array.prototype.forEach.call(lines,
 
-                    function (i) {
+                    (el, i) => {
 
                         data[i] = [];
 
                         data[i].y = [];
                         data[i].links = [];
 
-                        data.backup += this.outerHTML;
+                        data.backup += el.outerHTML;
 
-                        ui.each(ui.find(ui.lineChart.tagLines, this),
+                        Array.prototype.forEach.call(ui.find(ui.lineChart.tagLines, el),
 
-                            function () {
+                            (item) => {
 
-                                y = this.getAttribute(ui.lineChart.dataY);
+                                y = item.getAttribute(ui.lineChart.dataY);
 
                                 if (y !== null && y !== '') {
                                     data[i].y.push(y);
 
                                 } else { return; }
 
-                                link = this.getAttribute(ui.lineChart.dataLink);
+                                link = item.getAttribute(ui.lineChart.dataLink);
 
                                 if (link !== null && link !== '') {
                                     data[i].links.push(link);
@@ -231,8 +231,8 @@ ui.lineChart.Start = () => {
 
                         data.stepArr = [];
 
-                        for (k = 0; k < Math.ceil(x.length / data.step); k++) {
-                            data.stepArr.push(k * data.step);
+                        for (let m = 0; m < Math.ceil(x.length / data.step); m++) {
+                            data.stepArr.push(m * data.step);
                         }
 
                     }
@@ -243,49 +243,55 @@ ui.lineChart.Start = () => {
                 col = (data.width - (ui.lineChart.right + ui.lineChart.left)) / (x.length - 1);
                 html += '<g class="' + ui.lineChart.nameGridX + '">';
 
-                for (i = 0; i < x.length; i++) {
+                for (let k = 0; k < x.length; k++) {
 
-                    posX = (i * col) + ui.lineChart.left;
+                    posX = (k * col) + ui.lineChart.left;
 
                     if (ui.lineChart.showGridText) {
 
                         if (data.step) {
 
-                            if (data.stepArr.indexOf(i) > -1) {
+                            if (data.stepArr.indexOf(k) > -1) {
+
                                 html += '<text ' +
                                             'x="' + posX + '" ' +
                                             'y="' + (data.height - ui.lineChart.bottom + 20) +
                                         '">' +
-                                            x[i] +
+                                            x[k] +
                                         '</text>';
                             }
 
                         } else {
+
                             html += '<text ' +
                                         'x="' + posX + '" ' +
                                         'y="' + (data.height - ui.lineChart.bottom + 20) +
                                     '">' +
-                                        x[i] +
+                                        x[k] +
                                     '</text>';
                         }
 
                     }
 
-                    if (i === 0 || ui.lineChart.showGrid) {
+                    if (k === 0 || ui.lineChart.showGrid) {
+
                         html += '<line ' +
                                     'x1="' + posX + '" ' +
                                     'x2="' + posX + '" ' +
                                     'y1="' + ui.lineChart.top + '" ';
                     }
 
-                    if (i === 0) { // root of x grid
+                    if (k === 0) { // root of x grid
+
                         html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + (ui.lineChart.gridStroke / 2))) +'" ' +
                                 'class="' + ui.lineChart.nameGridRoot + '" ' +
                                 'stroke-width="' + ui.lineChart.gridStroke + '"';
 
                     } else {
+
                         html += 'y2="' + (data.height - ui.lineChart.bottom) + '" ' +
                                 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
+
                     }
 
                     html += '></line>';
@@ -295,27 +301,30 @@ ui.lineChart.Start = () => {
                 html += '</g>' +
                     '<g class="' + ui.lineChart.nameGridY + '">';
 
-                for (i = 0; i <= rows; i++) {
+                for (let l = 0; l <= rows; l++) {
 
-                    posY = parseInt((i * (data.height - (ui.lineChart.top + ui.lineChart.bottom)) / rows) + ui.lineChart.top);
+                    posY = parseInt((l * (data.height - (ui.lineChart.top + ui.lineChart.bottom)) / rows) + ui.lineChart.top);
 
                     if (ui.lineChart.showGridText) {
+
                         html += '<text ' +
                                     'x="' + (ui.lineChart.left - 10) + '" ' +
                                     'y="' + (posY + 4) +
                                 '">' +
-                                    (parseInt((yMax - yMin) / rows) * (rows - i) + yMin) +
+                                    (parseInt((yMax - yMin) / rows) * (rows - l) + yMin) +
                                 '</text>';
                     }
 
-                    if (i === rows || ui.lineChart.showGrid) {
+                    if (l === rows || ui.lineChart.showGrid) {
+
                         html += '<line ' +
                                     'x2="' + (data.width - ui.lineChart.right + 1) + '" ' +
                                     'y1="' + posY + '" ' +
                                     'y2="' + posY + '" ';
                     }
 
-                    if (i >= rows) { // root of y grid
+                    if (l >= rows) { // root of y grid
+
                         html += 'x1="' + Math.ceil(ui.lineChart.left - (ui.lineChart.gridStroke / 2)) + '" ' +
                                 'class="' + ui.lineChart.nameGridRoot + '" ' +
                                 'stroke-width="' + ui.lineChart.gridStroke + '"';
@@ -323,6 +332,7 @@ ui.lineChart.Start = () => {
                     } else {
                         html += 'x1="' + Math.floor(ui.lineChart.left + ui.lineChart.gridStroke) + '" ' +
                                 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
+
                     }
 
                     html += '></line>';
@@ -337,9 +347,9 @@ ui.lineChart.Start = () => {
 
                 html += '<g>';
 
-                ui.each(lines,
+                Array.prototype.forEach.call(lines,
 
-                    function (j) {
+                    (el, j) => {
 
                         paths = '';
                         y = data[j].y;
@@ -353,17 +363,17 @@ ui.lineChart.Start = () => {
                         }
 
                         // create paths and circles
-                        for (i = 0; i < y.length; i++) {
+                        for (let n = 0; n < y.length; n++) {
 
-                            posX = (i * col) + ui.lineChart.left;
-                            posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[i] - yMax)) / (yMax - yMin)) - ui.lineChart.top);
+                            posX = (n * col) + ui.lineChart.left;
+                            posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax)) / (yMax - yMin)) - ui.lineChart.top);
 
                             // get line type
-                            type = this.getAttribute(ui.lineChart.dataType);
+                            type = el.getAttribute(ui.lineChart.dataType);
                             if (type === null) { type = ''; }
 
                             // create lines
-                            if (i === 0) { // start point
+                            if (n === 0) { // start point
 
                                 pathStart.x = posX;
                                 pathStart.y = posY;
@@ -372,24 +382,24 @@ ui.lineChart.Start = () => {
 
                             if (type.indexOf(ui.lineChart.curved) > -1) { // curved
 
-                                data.percent = parseInt((ui.lineChart.curveSize * (i * col)) / 100);
+                                data.percent = parseInt((ui.lineChart.curveSize * (n * col)) / 100);
 
-                                if (i === 1) { // start curves
+                                if (n === 1) { // start curves
 
                                     paths += ' C ' + (col + data.percent) + ' ' + (posY - data.percent) + ',' +
                                         ' ' + (col + data.percent) + ' ' + posY + ',' +
                                         ' ' + posX + ' ' + posY;
 
-                                } else if (i > 0) { // other curves
+                                } else if (n > 0) { // other curves
 
-                                    paths += ' S ' + ((i * col) - data.percent) + ' ' + posY + ',' +
+                                    paths += ' S ' + ((n * col) - data.percent) + ' ' + posY + ',' +
                                         ' ' + posX + ' ' + posY;
 
                                 }
 
                             } else { // default
 
-                                if (i > 0) { // other points
+                                if (n > 0) { // other points
                                     paths += ' L ' + posX + ' ' + posY;
                                 }
 
@@ -404,19 +414,19 @@ ui.lineChart.Start = () => {
                                             'stroke="' + data.color[j] + '" ' +
                                             'stroke-width="0" ';
 
-                            if (data[j].links[i] !== '') { // check links
-                                circles += 'onclick="location.href = \'' + data[j].links[i] + '\';"';
+                            if (data[j].links[n] !== '') { // check links
+                                circles += 'onclick="location.href = \'' + data[j].links[n] + '\';"';
                             }
 
                             if (ui.tooltip === undefined) { // Optional!
 
                                 circles += '/>' +
-                                            '<title>' + y[i] + '</title>';
+                                            '<title>' + y[n] + '</title>';
 
                             } else {
 
                                 circles += ui.tooltip.dataTooltip + ' ' +
-                                            'title="' + y[i] + '" ' +
+                                            'title="' + y[n] + '" ' +
                                         '/>';
 
                             }
@@ -470,7 +480,7 @@ ui.lineChart.Start = () => {
                         }
 
                         // get data names
-                        name = this.getAttribute(ui.lineChart.dataName);
+                        name = el.getAttribute(ui.lineChart.dataName);
 
                         if (name !== null && name !== '') {
                             data.name.push(name);
@@ -493,23 +503,23 @@ ui.lineChart.Start = () => {
 
                     html += '<ul class="' + ui.lineChart.nameInfo + '">';
 
-                    for (i = 0; i < lines.length; i++) {
+                    for (let p = 0; p < lines.length; p++) {
 
                         total = 0;
 
-                        for (j = 0; j < data[i].y.length; j++) {
-                            total += parseInt(data[i].y[j]);
+                        for (let n = 0; n < data[p].y.length; n++) {
+                            total += parseInt(data[p].y[n]);
                         }
 
                         html += '<li>' +
-                            '<' + ui.lineChart.tagInfoColor +' style="background: ' + data.color[i] + '">' +
+                            '<' + ui.lineChart.tagInfoColor +' style="background: ' + data.color[p] + '">' +
                             '</' + ui.lineChart.tagInfoColor + '>';
 
-                        if (data.name[i] === '') {
+                        if (data.name[p] === '') {
                             html += '<' + ui.lineChart.tagInfoStat + '>' + total;
 
                         } else {
-                            html += data.name[i] + ': <b>' + total;
+                            html += data.name[p] + ': <b>' + total;
                         }
 
                         html += '</' + ui.lineChart.tagInfoStat + '></li>';
