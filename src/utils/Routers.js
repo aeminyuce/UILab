@@ -1,14 +1,12 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// utils
-import PageLoader from "utils/PageLoader";
-
 // assets
 import "utils/SharedStyles";
 import "utils/SharedScripts";
 
 // components
+const PageLoader = lazy(() => import("components/PageLoader"));
 const TopButton = lazy(() => import("components/TopButton"));
 
 // routes
