@@ -1,17 +1,8 @@
 module.exports = {
     parserOptions: {
         parser: "@babel/eslint-parser",
-        requireConfigFile: false,
         ecmaVersion: "latest",
         sourceType: "module",
-        ecmaFeatures: {
-            "jsx": true,
-            "modules": true,
-            "experimentalObjectRestSpread": true
-        },
-        babelOptions: {
-            presets: ["@babel/eslint-parser"]
-        },
     },
     extends: [
         'plugin:react/recommended'
