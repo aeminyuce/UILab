@@ -1,14 +1,21 @@
 module.exports = {
-    parser: "@babel/eslint-parser",
     parserOptions: {
+        parser: "@babel/eslint-parser",
         requireConfigFile: false,
+        ecmaVersion: "latest",
+        sourceType: "module",
+        ecmaFeatures: {
+            "jsx": true,
+            "modules": true,
+            "experimentalObjectRestSpread": true
+        },
+        babelOptions: {
+            presets: ["@babel/eslint-parser"]
+        },
     },
-    babelOptions: {
-        plugins: [
-            "@babel/plugin-proposal-class-properties",
-            "@babel/plugin-proposal-private-methods"
-        ]
-    },
+    extends: [
+        'plugin:react/recommended'
+    ],
     globals: {
 
         "ui": true,
@@ -112,7 +119,9 @@ module.exports = {
         "no-unsafe-finally": "error",
         "no-unsafe-negation": "error",
         "no-unused-labels": "error",
-        "no-unused-vars": "error"
+        "no-unused-vars": "error",
+
+        "react/prop-types": "off"
 
     }
 };
