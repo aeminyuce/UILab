@@ -10,8 +10,8 @@ const PageLoader = lazy(() => import("components/PageLoader"));
 const TopButton = lazy(() => import("components/TopButton"));
 
 // routes
-const Page_Index = lazy(() => import("../App"));
-const Page_Calendar = lazy(() => import("../Calendar"));
+const Route_Index = lazy(() => import("../App"));
+const Route_Calendar = lazy(() => import("../Calendar"));
 
 export default function Routers() {
     return (
@@ -19,8 +19,11 @@ export default function Routers() {
             <BrowserRouter>
                 <Suspense fallback={<PageLoader />}>
                     <Routes>
-                        <Route path="/" element={<Page_Index />} />
-                        <Route path="calendar" element={<Page_Calendar />} />
+
+                        <Route path="/" element={<Route_Index />} />
+
+                        <Route path="calendar" element={<Route_Calendar />} />
+
                     </Routes>
                 </Suspense>
             </BrowserRouter>
