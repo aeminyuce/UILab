@@ -5,8 +5,13 @@ module.exports = {
         sourceType: "module",
     },
     extends: [
-        'plugin:react/recommended'
+        "plugin:react/recommended",
     ],
+    settings: {
+        react: {
+            "version": "detect"
+        },
+    },
     globals: {
 
         "ui": true,
