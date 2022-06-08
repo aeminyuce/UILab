@@ -38,11 +38,15 @@ npm i -D mocha chai puppeteer
 [Babel JS](https://babeljs.io/docs/en/options)\
 [Rollup JS](https://rollupjs.org/guide/en)\
 \
+[React JS](https://reactjs.org)\
+[React Router](https://reactrouter.com)\
+[Prop Types](https://github.com/facebook/prop-types)\
+\
+[Webpack JS](https://webpack.js.org/guides/)
+\
 [SVGO](https://github.com/svg/svgo)\
 [SVGO Online Editor](https://jakearchibald.github.io/svgomg)\
 \
 [Mocha JS](https://mochajs.org)\
 [Chai JS](https://www.chaijs.com/api)\
-[Puppeteer API](https://github.com/puppeteer/puppeteer/blob/main/docs/api.md)\
-\
-[Webpack JS](https://webpack.js.org/guides/)
+[Puppeteer API](https://github.com/puppeteer/puppeteer/blob/main/docs/api.md)
