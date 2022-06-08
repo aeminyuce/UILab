@@ -33,7 +33,7 @@ export default function App() {
                 <br/>
                 <Icon src={icon_envelope} size="lg" animate="bounce-y"></Icon>
                 <br/><br/>
-                <Button label="Test Button"></Button>
+                <Button type="submit" label="Test Button"></Button>
                 <br/><br/>
                 <div className="ui-col-12">
                     <h3 className="ui-h3">Line Charts</h3>

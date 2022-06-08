@@ -112,7 +112,5 @@ module.exports = {
         "no-unused-labels": "error",
         "no-unused-vars": "error",
 
-        "react/prop-types": "off"
-
     }
 };

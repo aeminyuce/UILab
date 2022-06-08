@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 export default function Icon(props) {
+
+    if (!props.src) return;
 
     const [currentSrc, updateSrc] = useState(""); // type: string
 
@@ -31,3 +34,9 @@ export default function Icon(props) {
     );
 
 }
+
+Icon.propTypes = {
+    src: PropTypes.string.isRequired,
+    size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl', 'xxl']),
+    animate: PropTypes.string,
+};

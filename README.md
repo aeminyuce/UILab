@@ -10,7 +10,7 @@ npm i -D rollup
 ```
 **React**
 ```
-npm i react react-dom react-router-dom
+npm i react react-dom react-router-dom prop-types
 npm i -D babel-loader @babel/preset-react
 npm i -D webpack webpack-cli html-webpack-plugin webpack-dev-server
 npm i -D style-loader css-loader less-loader svg-url-loader
