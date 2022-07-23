@@ -1,4 +1,4 @@
-export default function SVGLoader(src) { // get svg path
+export default function SVGLoader(src:string) { // get svg path
 
     const from = src.indexOf("d='") + 3;
 

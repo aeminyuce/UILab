@@ -1,7 +1,8 @@
-import React, { lazy } from "react";
+import * as React from 'react';
+import { lazy } from 'react';
 
 // components
-const Calendar = lazy(() => import("components/Calendar"));
+const Calendar = lazy(() => import("@/src/components/Calendar"));
 
 export default function Page_Calendar() {
     return (

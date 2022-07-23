@@ -1,13 +1,14 @@
-import React, { Suspense, lazy } from "react";
+import * as React from 'react';
+import { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // assets
-import "utils/SharedStyles";
-import "utils/SharedScripts";
+import "@/src/utils/SharedStyles";
+import "@/src/utils/SharedScripts";
 
 // components
-const PageLoader = lazy(() => import("components/PageLoader"));
-const TopButton = lazy(() => import("components/TopButton"));
+const PageLoader = lazy(() => import("@/src/components/PageLoader"));
+const TopButton = lazy(() => import("@/src/components/TopButton"));
 
 // routes
 const Route_Index = lazy(() => import("../App"));

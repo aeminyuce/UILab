@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
-import { ui } from 'ui';
+import * as React from 'react';
+import { useEffect } from 'react';
+import { ui } from '@/js/core/globals';
 
 // assets
-import "style/modules/line-chart";
-import "script/modules/line-chart";
+import "@/less/modules/line-chart";
+import "@/js/modules/line-chart";
 
 export default function LineChart() {
 

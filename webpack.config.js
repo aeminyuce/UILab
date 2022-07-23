@@ -2,12 +2,8 @@ const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 const config = {
-    entry: { // pages
-        index: { import: './src/index.js' }, // main autput file name
-        calendar: { import: './src/Calendar.js' }, // main autput file name
-    },
     output: {
-        filename: '[name].js',
+        filename: '[contenthash].js',
         path: path.resolve(__dirname, 'bundle'), // when script not serve mode!
     },
     optimization: {
@@ -28,21 +24,15 @@ const config = {
         historyApiFallback: true, // running routes when page refresh
     },
     resolve: {
-        extensions: ['.js', '.less'], // file types
+        extensions: ['.js', '.tsx', '.less'], // file types
         alias: {
-            style: path.resolve(__dirname, './less/'),
-            script: path.resolve(__dirname, './js/'),
-
-            ui: path.resolve(__dirname, './js/core/globals'),
-            utils: path.resolve(__dirname, './src/utils/'),
-            icon: path.resolve(__dirname, './icon/'),
-            components: path.resolve(__dirname, './src/components/'),
+            '@': path.resolve(__dirname, './'),
         },
     },
     devtool: "eval-cheap-source-map", // ignore source mapping files from node_modules
     performance: {
-        maxEntrypointSize: 100000, // rendered main.js size limit
-        maxAssetSize: 100000 // single asset size limit
+        maxEntrypointSize: 1000000, // rendered js size limit
+        maxAssetSize: 1000000 // single asset size limit
     },
     module: {
         rules: [
@@ -55,6 +45,11 @@ const config = {
                         presets: ["@babel/preset-env", "@babel/preset-react"],
                     },
                 },
+            },
+            {
+                test: /\.(ts|tsx)?$/,
+                exclude: /node_modules/,
+                use: 'ts-loader',
             },
             {
                 test: /\.less$/i,

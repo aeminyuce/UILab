@@ -1,16 +1,17 @@
-import React, { useEffect } from "react";
-import { ui } from 'ui';
+import * as React from 'react';
+import { useEffect } from 'react';
+import { ui } from '@/js/core/globals';
 
 // utils
-import SVGLoader from "utils/SVGLoader";
+import SVGLoader from "@/src/utils/SVGLoader";
 
 // assets
-import icon_angle_left from 'icon/general/angle-left.svg';
-import icon_arrow_left from 'icon/general/arrow-left.svg';
-import icon_arrow_right from 'icon/general/arrow-right.svg';
+const icon_angle_left = require("@/icon/general/angle-left.svg") as string;
+const icon_arrow_left = require("@/icon/general/arrow-left.svg") as string;
+const icon_arrow_right = require("@/icon/general/arrow-right.svg") as string;
 
-import "style/modules/calendar";
-import "script/modules/calendar";
+import "@/less/modules/calendar";
+import "@/js/modules/calendar";
 
 export default function Calendar() {
 

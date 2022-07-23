@@ -1,10 +1,11 @@
-import React, { lazy } from "react";
+import * as React from 'react';
+import { lazy } from 'react';
 
 // assets
-import icon_loader_line from 'icon/general/loader-line.svg';
+const icon_loader_line = require("@/icon/general/loader-line.svg") as string;
 
 // components
-const Icon = lazy(() => import("components/Icon"));
+const Icon = lazy(() => import("@/src/components/Icon"));
 
 export default function PageLoader() {
     return (

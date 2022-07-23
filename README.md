@@ -8,17 +8,17 @@ npm i -D less
 npm i -D @babel/core @babel/cli @babel/node @babel/preset-env @babel/eslint-parser
 npm i -D rollup
 ```
-**React**
-```
-npm i react react-dom react-router-dom prop-types
-npm i -D babel-loader @babel/preset-react
-npm i -D webpack webpack-cli html-webpack-plugin webpack-dev-server
-npm i -D style-loader css-loader less-loader svg-url-loader
-```
 **ES Lint**
 ```
 npm i -D eslint eslint-plugin-react
 npm init @eslint/config
+```
+**React**
+```
+npm i react react-dom react-router-dom @types/react typescript
+npm i -D babel-loader @babel/preset-react
+npm i -D webpack webpack-cli html-webpack-plugin webpack-dev-server
+npm i -D style-loader ts-loader css-loader less-loader svg-url-loader
 ```
 **Icons**
 ```
@@ -33,15 +33,14 @@ npm i -D mocha chai puppeteer
 [Less JS](https://lesscss.org/usage)\
 [Less JS Preview](http://lesscss.org/less-preview)\
 \
-[ESLint JS](https://eslint.org/docs/rules)\
-\
 [Babel JS](https://babeljs.io/docs/en/options)\
 [Rollup JS](https://rollupjs.org/guide/en)\
 \
+[ESLint JS](https://eslint.org/docs/rules)\
+\
 [React JS](https://reactjs.org)\
 [React Router](https://reactrouter.com)\
-[Prop Types](https://github.com/facebook/prop-types)\
-\
+[Typescript](https://www.typescriptlang.org)\
 [Webpack JS](https://webpack.js.org/guides/)
 \
 [SVGO](https://github.com/svg/svgo)\
