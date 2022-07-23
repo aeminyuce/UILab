@@ -31,7 +31,6 @@ npm i -D mocha chai puppeteer
 ```
 ### Documentation Links:
 [Less JS](https://lesscss.org/usage)\
-[Less JS Preview](http://lesscss.org/less-preview)\
 \
 [Babel JS](https://babeljs.io/docs/en/options)\
 [Rollup JS](https://rollupjs.org/guide/en)\
