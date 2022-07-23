@@ -27,6 +27,11 @@ const config = {
         extensions: ['.js', '.tsx', '.less'], // file types
         alias: {
             '@': path.resolve(__dirname, './'),
+            '@components': path.resolve(__dirname, './src/components/'),
+            '@utils': path.resolve(__dirname, './src/utils/'),
+            '@icon': path.resolve(__dirname, './icon/'),
+            '@less': path.resolve(__dirname, './less/'),
+            '@js': path.resolve(__dirname, './js/'),
         },
     },
     devtool: "eval-cheap-source-map", // ignore source mapping files from node_modules

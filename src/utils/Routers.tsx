@@ -3,12 +3,12 @@ import { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // assets
-import "@/src/utils/SharedStyles";
-import "@/src/utils/SharedScripts";
+import "@utils/SharedStyles";
+import "@utils/SharedScripts";
 
 // components
-const PageLoader = lazy(() => import("@/src/components/PageLoader"));
-const TopButton = lazy(() => import("@/src/components/TopButton"));
+const PageLoader = lazy(() => import("@components/PageLoader"));
+const TopButton = lazy(() => import("@components/TopButton"));
 
 // routes
 const Route_Index = lazy(() => import("../App"));
@@ -22,7 +22,6 @@ export default function Routers() {
                     <Routes>
 
                         <Route path="/" element={<Route_Index />} />
-
                         <Route path="calendar" element={<Route_Calendar />} />
 
                     </Routes>

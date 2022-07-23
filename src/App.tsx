@@ -3,13 +3,13 @@ import { lazy } from 'react';
 import { Link } from "react-router-dom";
 
 // assets
-const icon_envelope = require("@/icon/general/envelope.svg") as string;
-const icon_camera = require("@/icon/media/camera.svg") as string;
+const icon_envelope = require("@icon/general/envelope.svg") as string;
+const icon_camera = require("@icon/media/camera.svg") as string;
 
 // components
-const Icon = lazy(() => import("@/src/components/Icon"));
-const Button = lazy(() => import("@/src/components/Button"));
-const LineChart = lazy(() => import("@/src/components/LineChart"));
+const Icon = lazy(() => import("@components/Icon"));
+const Button = lazy(() => import("@components/Button"));
+const LineChart = lazy(() => import("@components/LineChart"));
 
 export default function App() {
     return (

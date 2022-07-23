@@ -2,7 +2,7 @@ import * as React from 'react';
 import { lazy } from 'react';
 
 // components
-const Calendar = lazy(() => import("@/src/components/Calendar"));
+const Calendar = lazy(() => import("@components/Calendar"));
 
 export default function Page_Calendar() {
     return (
