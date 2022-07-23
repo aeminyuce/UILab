@@ -26,7 +26,7 @@ const config = {
     resolve: {
         extensions: ['.js', '.tsx', '.less'], // file types
         alias: {
-            '@': path.resolve(__dirname, './'),
+            '@ui': path.resolve(__dirname, 'js/core/globals/'),
             '@components': path.resolve(__dirname, './src/components/'),
             '@utils': path.resolve(__dirname, './src/utils/'),
             '@icon': path.resolve(__dirname, './icon/'),

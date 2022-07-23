@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useEffect } from "react";
-import { ui } from '@js/core/globals';
+import { ui } from '@ui';
 
 // utils
 import SVGLoader from "@utils/SVGLoader";

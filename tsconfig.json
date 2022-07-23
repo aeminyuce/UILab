@@ -2,7 +2,7 @@
   "compilerOptions": {
       "baseUrl": "./",
       "paths": {
-        "@/*": ["*"],
+        "@ui": ["js/core/globals"],
         "@components/*": ["src/components/*"],
         "@utils/*": ["src/utils/*"],
         "@icon/*": ["icon/*"],
@@ -11,5 +11,9 @@
       },
       "jsx": "react",
       "allowSyntheticDefaultImports": true,
-  }
+    },
+    "include": [
+      "src/**/*.tsx",
+      "index.d.ts",
+    ],
 }
