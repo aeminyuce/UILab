@@ -3,10 +3,11 @@ import * as React from 'react';
 interface IconProps {
     src: string,
     size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl',
-    animate?: string
+    animate?: string,
+    opacity?: 'no' | 'more' | 'half' | 'full',
 }
 
-export default function Icon({src, size, animate}:IconProps) {
+export default function Icon({src, size, animate, opacity}:IconProps) {
 
     if (!src)
         return null;
@@ -26,8 +27,17 @@ export default function Icon({src, size, animate}:IconProps) {
     const setSize = size ? " ui-icon-" + size : '';
     const setAnimate = animate ? " ui-animate-" + animate : '';
 
+    let setOpacity:String;
+
+    if (opacity === 'no') {
+        setOpacity = " ui-no-opacity";
+
+    } else {
+        setOpacity = opacity ? " ui-opacity-" + opacity : '';
+    }
+
     return (
-        <svg className={"ui-icon" + setSize + setAnimate} viewBox="0 0 264 264">
+        <svg className={"ui-icon" + setSize + setAnimate + setOpacity} viewBox="0 0 264 264">
             <path d={getPath(src)} />
         </svg>
     );
