@@ -5,9 +5,10 @@ interface IconProps {
     size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl',
     animate?: string,
     opacity?: 'no' | 'more' | 'half' | 'full',
+    classNameExt?: string,
 }
 
-export default function Icon({src, size, animate, opacity}:IconProps) {
+export default function Icon({src, size, animate, opacity, classNameExt}:IconProps) {
 
     if (!src)
         return null;
@@ -36,8 +37,10 @@ export default function Icon({src, size, animate, opacity}:IconProps) {
         setOpacity = opacity ? " ui-opacity-" + opacity : '';
     }
 
+    const setClassNameExt = classNameExt ? " " + classNameExt : '';
+
     return (
-        <svg className={"ui-icon" + setSize + setAnimate + setOpacity} viewBox="0 0 264 264">
+        <svg className={"ui-icon" + setSize + setAnimate + setOpacity + setClassNameExt} viewBox="0 0 264 264">
             <path d={getPath(src)} />
         </svg>
     );
