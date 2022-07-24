@@ -835,7 +835,7 @@
             <div class="business-panel-r ui-p-5">
 
                 <!-- toggle dark mode -->
-                <button title="toggle Dark Mode" data-ui-only="desktop" class="ui-darkmode-toggle ui-btn ui-btn-ghost ui-btn-square ui-icons-no-opacity ui-m-10-b ui-ease-btn">
+                <button title="toggle Dark Mode" class="ui-darkmode-toggle ui-btn ui-btn-ghost ui-btn-square ui-icons-no-opacity ui-m-10-b ui-ease-btn">
                     <svg class="ui-icon ui-visible-dark">
                         <defs>
                             <linearGradient id="dark-bg" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(120)">
