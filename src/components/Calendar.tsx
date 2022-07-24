@@ -20,9 +20,9 @@ export default function Calendar() {
         // icons
         ui.globals.inlineSvg = true;
 
-        ui.calendar.prevIcon = SVGLoader(icon_arrow_left);
-        ui.calendar.nextIcon = SVGLoader(icon_arrow_right);
-        ui.calendar.backIcon = SVGLoader(icon_angle_left);
+        ui.calendar.prevIcon = SVGLoader({src: icon_arrow_left});
+        ui.calendar.nextIcon = SVGLoader({src: icon_arrow_right});
+        ui.calendar.backIcon = SVGLoader({src: icon_angle_left});
 
         // init
         ui.calendar.Init();

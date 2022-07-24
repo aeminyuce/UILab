@@ -17,7 +17,7 @@ export default function TopButton() {
 
         // icons
         ui.globals.inlineSvg = true;
-        ui.topButton.icon = SVGLoader(icon_arrow_to_top);
+        ui.topButton.icon = SVGLoader({src: icon_arrow_to_top});
 
     }, []); // Runs only first render
 
