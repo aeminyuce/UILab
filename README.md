@@ -15,7 +15,8 @@ npm init @eslint/config
 ```
 **React**
 ```
-npm i react react-dom react-router-dom @types/react typescript
+npm i react react-dom react-router-dom
+npm i typescript @types/react @types/react-dom
 npm i -D babel-loader @babel/preset-react
 npm i -D webpack webpack-cli html-webpack-plugin webpack-dev-server
 npm i -D style-loader ts-loader css-loader less-loader svg-url-loader
