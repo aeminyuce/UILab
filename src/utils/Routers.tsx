@@ -7,6 +7,7 @@ import "@utils/SharedStyles";
 import "@utils/SharedScripts";
 
 // components
+const StickyHeader = lazy(() => import("@components/StickyHeader"));
 const PageLoader = lazy(() => import("@components/PageLoader"));
 const TopButton = lazy(() => import("@components/TopButton"));
 
@@ -27,6 +28,8 @@ export default function Routers() {
                     </Routes>
                 </Suspense>
             </BrowserRouter>
+
+            <StickyHeader />
             <TopButton />
         </>
     );
