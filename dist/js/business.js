@@ -24,17 +24,16 @@ ui.lineChart.colors = [baseColor, subColor];
   };
 
   var leftPanelMenu = function leftPanelMenu() {
-    var leftPanelHolder = ui.find('.ui-col-business-panel-l');
-    var leftPanel = ui.find('.business-panel-l');
-    var leftPanelToggleIconLeft = 'angle-left';
-    var leftPanelToggleIconRight = 'angle-right';
-    var leftPanelToggleBtn = ui.find('.business-panel-l-toggle')[0];
-    var leftPanelToggleIcon = ui.find('.business-panel-l-toggle .ui-icon')[0];
-    var leftPanelMinTabs = ui.find('.business-panel-l-min .ui-tab');
-    var leftPanelContents = ui.find('.business-panel-l-contents > .ui-tab-content');
+    var leftPanelHolder = '.ui-col-business-panel-l';
+    var leftPanel = '.business-panel-l';
+    var leftPanelToggleBtn = '.business-panel-l-toggle';
+    var leftPanelMinTabs = '.business-panel-l-min .ui-tab';
+    var leftPanelContents = '.business-panel-l-contents > .ui-tab-content';
     var nameShowMenu = 'business-show-menu';
     var nameToggleMenu = 'business-toggle-menu';
     var nameBtnVisible = 'ui-btn-visible';
+    var nameIcon = 'ui-icon';
+    var nameMirrorIcon = 'ui-icon-mirror-h';
     var cookieName = 'leftPanelToggle';
     var eventCloseLeftPanel = 'closeLeftPanel';
     var getScrollPos = 0;
@@ -53,8 +52,8 @@ ui.lineChart.colors = [baseColor, subColor];
     }
 
     var openLastOpenedTab = function openLastOpenedTab() {
-      ui.addClass(leftPanelMinTabs[lastOpenedTab], ui.tab.nameActive + ' ' + nameBtnVisible);
-      ui.addClass(leftPanelContents[lastOpenedTab], ui.tab.nameOpen + ' ' + ui.tab.nameOpenEase);
+      ui.addClass(ui.find(leftPanelMinTabs)[lastOpenedTab], ui.tab.nameActive + ' ' + nameBtnVisible);
+      ui.addClass(ui.find(leftPanelContents)[lastOpenedTab], ui.tab.nameOpen + ' ' + ui.tab.nameOpenEase);
     };
 
     var clearLastOpenedTab = function clearLastOpenedTab() {
@@ -80,7 +79,7 @@ ui.lineChart.colors = [baseColor, subColor];
 
             if (!ui.hasClass(leftPanelHolder, nameToggleMenu)) {
               ui.addClass(leftPanelHolder, nameToggleMenu);
-              leftPanelToggleIcon.innerHTML = '<use href="' + ui.globals.iconSrc + '#' + leftPanelToggleIconRight + '"></use>';
+              ui.addClass(leftPanelToggleBtn + ' .' + nameIcon, nameMirrorIcon);
             }
           }
         } else {
@@ -102,7 +101,7 @@ ui.lineChart.colors = [baseColor, subColor];
       getScrollPos = window.innerWidth;
     });
     ui.on(document, 'click', leftPanelMinTabs, function () {
-      lastOpenedTab = Array.prototype.slice.call(leftPanelMinTabs).indexOf(this);
+      lastOpenedTab = Array.prototype.slice.call(ui.find(leftPanelMinTabs)).indexOf(this);
 
       if (window.innerWidth < ui.globals.xl && window.innerWidth > ui.globals.md) {
         setTimeout(function () {
@@ -120,19 +119,19 @@ ui.lineChart.colors = [baseColor, subColor];
             if (e.button !== 2) {
               if (ui.closest(e.target, leftPanelToggleBtn).length === 1) {
                 ui.off(document, 'mouseup.' + eventCloseLeftPanel);
-              } else if (ui.closest(e.target, leftPanelHolder[0]).length === 1) {
+              } else if (ui.closest(e.target, leftPanelHolder).length === 1) {
                 return;
               }
 
               clearLastOpenedTab();
               ui.addClass(leftPanelHolder, nameToggleMenu);
-              leftPanelToggleIcon.innerHTML = '<use href="' + ui.globals.iconSrc + '#' + leftPanelToggleIconRight + '"></use>';
+              ui.addClass(leftPanelToggleBtn + ' .' + nameIcon, nameMirrorIcon);
               ui.off(document, 'mouseup.' + eventCloseLeftPanel);
             }
           });
         } else {
           setTimeout(function () {
-            leftPanelToggleIcon.innerHTML = '<use href="' + ui.globals.iconSrc + '#' + leftPanelToggleIconLeft + '"></use>';
+            ui.removeClass(leftPanelToggleBtn + ' .' + nameIcon, nameMirrorIcon);
           }, ui.globals.ease);
         }
       }
@@ -143,23 +142,21 @@ ui.lineChart.colors = [baseColor, subColor];
       }, ui.globals.ease);
     });
     ui.on(document, 'click', leftPanelToggleBtn, function () {
-      var iconName = '';
       setTimeout(function () {
         clearLastOpenedTab();
 
         if (ui.hasClass(leftPanelHolder, nameToggleMenu)) {
-          iconName = leftPanelToggleIconLeft;
+          ui.removeClass(leftPanelToggleBtn + ' .' + nameIcon, nameMirrorIcon);
           leftPanelToggleStatus = 'show';
           setCookie(cookieName, 'show');
           openLastOpenedTab();
         } else {
-          iconName = leftPanelToggleIconRight;
+          ui.addClass(leftPanelToggleBtn + ' .' + nameIcon, nameMirrorIcon);
           leftPanelToggleStatus = 'hide';
           setCookie(cookieName, 'hide');
         }
 
         ui.toggleClass(leftPanelHolder, nameToggleMenu);
-        leftPanelToggleIcon.innerHTML = '<use href="' + ui.globals.iconSrc + '#' + iconName + '"></use>';
         ui.lineChart.Init(ui.lineChart.nameLoaded, true);
         ui.trigger(document, ui.globals.eventDomChange);
       }, ui.globals.ease);

@@ -42,22 +42,17 @@ ui.lineChart.colors = [baseColor, subColor];
     // left panel menu
     const leftPanelMenu = () => {
 
-        const leftPanelHolder = ui.find('.ui-col-business-panel-l');
-        const leftPanel = ui.find('.business-panel-l');
-
-        const leftPanelToggleIconLeft = 'angle-left';
-        const leftPanelToggleIconRight = 'angle-right';
-
-        const leftPanelToggleBtn = ui.find('.business-panel-l-toggle')[0];
-        const leftPanelToggleIcon = ui.find('.business-panel-l-toggle .ui-icon')[0];
-
-        const leftPanelMinTabs = ui.find('.business-panel-l-min .ui-tab');
-        const leftPanelContents = ui.find('.business-panel-l-contents > .ui-tab-content');
+        const leftPanelHolder = '.ui-col-business-panel-l';
+        const leftPanel = '.business-panel-l';
+        const leftPanelToggleBtn = '.business-panel-l-toggle';
+        const leftPanelMinTabs = '.business-panel-l-min .ui-tab';
+        const leftPanelContents = '.business-panel-l-contents > .ui-tab-content';
 
         const nameShowMenu = 'business-show-menu';
         const nameToggleMenu = 'business-toggle-menu';
-
         const nameBtnVisible = 'ui-btn-visible';
+        const nameIcon = 'ui-icon';
+        const nameMirrorIcon = 'ui-icon-mirror-h';
 
         const cookieName = 'leftPanelToggle';
         const eventCloseLeftPanel = 'closeLeftPanel';
@@ -85,8 +80,8 @@ ui.lineChart.colors = [baseColor, subColor];
         // open last opened tab
         const openLastOpenedTab = () => {
 
-            ui.addClass(leftPanelMinTabs[lastOpenedTab], ui.tab.nameActive + ' ' + nameBtnVisible);
-            ui.addClass(leftPanelContents[lastOpenedTab], ui.tab.nameOpen + ' ' + ui.tab.nameOpenEase);
+            ui.addClass(ui.find(leftPanelMinTabs)[lastOpenedTab], ui.tab.nameActive + ' ' + nameBtnVisible);
+            ui.addClass(ui.find(leftPanelContents)[lastOpenedTab], ui.tab.nameOpen + ' ' + ui.tab.nameOpenEase);
 
         }
 
@@ -128,12 +123,12 @@ ui.lineChart.colors = [baseColor, subColor];
 
                         if (!ui.hasClass(leftPanelHolder, nameToggleMenu)) {
 
-
                             // toggle classname
                             ui.addClass(leftPanelHolder, nameToggleMenu);
 
-                            // change icon
-                            leftPanelToggleIcon.innerHTML = '<use href="' + ui.globals.iconSrc + '#' + leftPanelToggleIconRight + '"></use>';
+                            // mirror icon
+                            ui.addClass(leftPanelToggleBtn + ' .' + nameIcon, nameMirrorIcon);
+
 
                         }
 
@@ -174,7 +169,7 @@ ui.lineChart.colors = [baseColor, subColor];
             function () {
 
                 // save last opened tab
-                lastOpenedTab = Array.prototype.slice.call(leftPanelMinTabs).indexOf(this);
+                lastOpenedTab = Array.prototype.slice.call(ui.find(leftPanelMinTabs)).indexOf(this);
 
                 // show menu
                 if (window.innerWidth < ui.globals.xl && window.innerWidth > ui.globals.md) {
@@ -210,15 +205,15 @@ ui.lineChart.colors = [baseColor, subColor];
                                         // remove left panel close event
                                         ui.off(document, 'mouseup.' + eventCloseLeftPanel);
 
-                                    } else if (ui.closest(e.target, leftPanelHolder[0]).length === 1) { return; } // disable when clicking inside of left panel
+                                    } else if (ui.closest(e.target, leftPanelHolder).length === 1) { return; } // disable when clicking inside of left panel
 
                                     clearLastOpenedTab();
 
                                     // toggle classname
                                     ui.addClass(leftPanelHolder, nameToggleMenu);
 
-                                    // change icon
-                                    leftPanelToggleIcon.innerHTML = '<use href="' + ui.globals.iconSrc + '#' + leftPanelToggleIconRight + '"></use>';
+                                    // mirror icon
+                                    ui.addClass(leftPanelToggleBtn + ' .' + nameIcon, nameMirrorIcon);
 
                                     // remove left panel close event
                                     ui.off(document, 'mouseup.' + eventCloseLeftPanel);
@@ -231,8 +226,8 @@ ui.lineChart.colors = [baseColor, subColor];
 
                         setTimeout(() => {
 
-                            // change icon
-                            leftPanelToggleIcon.innerHTML = '<use href="' + ui.globals.iconSrc + '#' + leftPanelToggleIconLeft + '"></use>';
+                            // mirror icon
+                            ui.removeClass(leftPanelToggleBtn + ' .' + nameIcon, nameMirrorIcon);
 
                         }, ui.globals.ease);
 
@@ -262,8 +257,6 @@ ui.lineChart.colors = [baseColor, subColor];
 
             function () {
 
-                let iconName = '';
-
                 setTimeout(() => {
 
                     // clear last opened tab
@@ -271,7 +264,8 @@ ui.lineChart.colors = [baseColor, subColor];
 
                     if (ui.hasClass(leftPanelHolder, nameToggleMenu)) { // show
 
-                        iconName = leftPanelToggleIconLeft;
+                        // mirror icon
+                        ui.removeClass(leftPanelToggleBtn + ' .' + nameIcon, nameMirrorIcon);
 
                         // set cookie
                         leftPanelToggleStatus = 'show';
@@ -282,7 +276,8 @@ ui.lineChart.colors = [baseColor, subColor];
 
                     } else { // hide
 
-                        iconName = leftPanelToggleIconRight;
+                        // mirror icon
+                        ui.addClass(leftPanelToggleBtn + ' .' + nameIcon, nameMirrorIcon);
 
                         // set cookie
                         leftPanelToggleStatus = 'hide';
@@ -293,11 +288,7 @@ ui.lineChart.colors = [baseColor, subColor];
                     // toggle classname
                     ui.toggleClass(leftPanelHolder, nameToggleMenu);
 
-                    // change icon
-                    leftPanelToggleIcon.innerHTML = '<use href="' + ui.globals.iconSrc + '#' + iconName + '"></use>';
-
                     ui.lineChart.Init(ui.lineChart.nameLoaded, true); // resize loaded charts
-
                     ui.trigger(document, ui.globals.eventDomChange); // set custom event
 
                 }, ui.globals.ease);
