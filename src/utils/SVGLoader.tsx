@@ -1,6 +1,6 @@
 interface SVGLoaderProps {
     src: string,
-    type?: 'path',
+    type?: 'inline',
 }
 
 export default function SVGLoader({src, type}:SVGLoaderProps) { // get svg path
