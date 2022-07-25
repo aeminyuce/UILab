@@ -549,7 +549,7 @@ main {
 }
 .ui-header-sticky.business-header-highlight {
   box-shadow: 0 5px 3px -10px hsla(0, 0%, 0%, 0.15), 0 5px 15px -10px hsla(0, 0%, 0%, 0.35);
-  z-index: 4;
+  z-index: 4 !important;
 }
 @media (min-width: 1680px) {
   .business-toggle-menu + .ui-row .ui-header-sticky.ui-sticky {

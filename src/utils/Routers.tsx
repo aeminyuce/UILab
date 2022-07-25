@@ -18,6 +18,8 @@ const Route_Calendar = lazy(() => import("../Calendar"));
 export default function Routers() {
     return (
         <>
+            <StickyHeader />
+
             <BrowserRouter>
                 <Suspense fallback={<PageLoader />}>
                     <Routes>
@@ -29,7 +31,6 @@ export default function Routers() {
                 </Suspense>
             </BrowserRouter>
 
-            <StickyHeader />
             <TopButton />
         </>
     );
