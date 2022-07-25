@@ -6,7 +6,6 @@
 package.json\
 svgo.config.js\
 webpack.config.js\
-\
 ### Installed Packages:
 **Less**
 ```
@@ -41,7 +40,6 @@ package.json\
 svgo.config.js\
 tsconfig.json\
 webpack.config.js\
-\
 ### Installed Packages:
 **JS**
 ```
