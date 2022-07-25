@@ -306,7 +306,7 @@ each(@panel-sizes, {
 		}
 	}
 }
-.ui-header-sticky.ui-sticky { right: extract(@panel-sizes, 2); }
+.ui-header-sticky.ui-sticky { right: extract(@panel-sizes, 2) !important; }
 
 .ui-header-sticky.business-header-highlight { box-shadow: 0 5px 3px -10px hsla(0, 0%, 0%, 0.15), 0 5px 15px -10px hsla(0, 0%, 0%, 0.35); z-index: (@panel-z-index - 2); }
 
@@ -314,16 +314,16 @@ each(@panel-sizes, {
 	.ui-header-sticky.ui-sticky {
 
 		.business-toggle-menu + .ui-row & {
-			left: extract(@panel-sizes, 2);
+			left: extract(@panel-sizes, 2) !important;
 		}
 
 	 }
 }
 @media (@default-start) {
-	.ui-header-sticky.ui-sticky { left: extract(@panel-sizes, 1); }
+	.ui-header-sticky.ui-sticky { left: extract(@panel-sizes, 1) !important; }
 }
 @media (@lg-finish) and (@default-start) {
-	.ui-header-sticky.ui-sticky { left: extract(@panel-sizes, 2); }
+	.ui-header-sticky.ui-sticky { left: extract(@panel-sizes, 2) !important; }
 }
 
 .business-header-time { font-size: 16px; margin: 10px 0; position: absolute; left: 50%; transform: translateX(-50%); }

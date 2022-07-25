@@ -545,7 +545,7 @@ main {
   margin-right: -2px;
 }
 .ui-header-sticky.ui-sticky {
-  right: 52px;
+  right: 52px !important;
 }
 .ui-header-sticky.business-header-highlight {
   box-shadow: 0 5px 3px -10px hsla(0, 0%, 0%, 0.15), 0 5px 15px -10px hsla(0, 0%, 0%, 0.35);
@@ -553,17 +553,17 @@ main {
 }
 @media (min-width: 1680px) {
   .business-toggle-menu + .ui-row .ui-header-sticky.ui-sticky {
-    left: 52px;
+    left: 52px !important;
   }
 }
 @media (min-width: 960px) {
   .ui-header-sticky.ui-sticky {
-    left: 296px;
+    left: 296px !important;
   }
 }
 @media (max-width: 1679px) and (min-width: 960px) {
   .ui-header-sticky.ui-sticky {
-    left: 52px;
+    left: 52px !important;
   }
 }
 .business-header-time {
