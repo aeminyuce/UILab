@@ -5,7 +5,7 @@
 .gitignore\
 package.json\
 svgo.config.js\
-webpack.config.js\
+webpack.config.js
 ### Installed Packages:
 **Less**
 ```
@@ -39,7 +39,7 @@ index.d.ts\
 package.json\
 svgo.config.js\
 tsconfig.json\
-webpack.config.js\
+webpack.config.js
 ### Installed Packages:
 **JS**
 ```
