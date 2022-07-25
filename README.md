@@ -1,3 +1,12 @@
+## Non React Projects
+### ConfigurationFiles:
+.babelrc\
+.eslintrc.js\
+.gitignore\
+package.json\
+svgo.config.js\
+webpack.config.js\
+\
 ### Installed Packages:
 **Less**
 ```
@@ -7,6 +16,36 @@ npm i -D less
 ```
 npm i -D @babel/core @babel/cli @babel/node @babel/preset-env @babel/eslint-parser
 npm i -D rollup
+```
+**ES Lint**
+```
+npm i -D eslint
+npm init @eslint/config
+```
+**Icons**
+```
+npm i -D svgo svgstore-cli
+```
+**Test**
+```
+npm i -D @babel/register
+npm i -D mocha chai puppeteer
+```
+## React Projects
+### ConfigurationFiles:
+.babelrc\
+.eslintrc.js\
+.gitignore\
+index.d.ts\
+package.json\
+svgo.config.js\
+tsconfig.json\
+webpack.config.js\
+\
+### Installed Packages:
+**JS**
+```
+npm i -D @babel/preset-env @babel/eslint-parser
 ```
 **ES Lint**
 ```
@@ -23,14 +62,14 @@ npm i -D style-loader ts-loader css-loader less-loader svg-url-loader
 ```
 **Icons**
 ```
-npm i -D svgo svgstore-cli
+npm i -D svgo
 ```
 **Test**
 ```
 npm i -D @babel/register
-npm i -D mocha chai puppeteer
+npm i -D mocha chai
 ```
-### Documentation Links:
+## Documentation Links:
 [Less JS](https://lesscss.org/usage)\
 \
 [Babel JS](https://babeljs.io/docs/en/options)\
