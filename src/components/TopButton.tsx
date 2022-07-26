@@ -19,6 +19,9 @@ export default function TopButton() {
         ui.globals.inlineSvg = true;
         ui.topButton.icon = SVGLoader({src: icon_arrow_to_top});
 
+        // settings
+        ui.topButton.stylesTarget = 'ui-circle ui-ease-layout';
+
     }, []); // Runs only first render
 
     return (

@@ -25,19 +25,19 @@ export default function Icon({src, size, animate, opacity, classNameExt}:IconPro
 
     }
 
-    const setSize = size ? " ui-icon-" + size : '';
+    const setSize = size ? ' ui-icon-' + size : '';
     const setAnimate = animate ? " ui-animate-" + animate : '';
 
     let setOpacity:String;
 
     if (opacity === 'no') {
-        setOpacity = " ui-no-opacity";
+        setOpacity = ' ui-no-opacity';
 
     } else {
-        setOpacity = opacity ? " ui-opacity-" + opacity : '';
+        setOpacity = opacity ? ' ui-opacity-' + opacity : '';
     }
 
-    const setClassNameExt = classNameExt ? " " + classNameExt : '';
+    const setClassNameExt = classNameExt ? ' ' + classNameExt : '';
 
     return (
         <svg className={"ui-icon" + setSize + setAnimate + setOpacity + setClassNameExt} viewBox="0 0 264 264">
