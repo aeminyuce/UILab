@@ -7813,7 +7813,7 @@ button.ui-dialog-custom {
 }
 .ui-calendar tbody td.ui-calendar-pickerday button:not([class*="ui-fill-"]) {
   color: hsl(0, 0%, 100%) !important;
-  background-color: hsl(212, 64%, 38%);
+  background-color: hsl(212, 64%, 45.5%);
 }
 .ui-desktop .ui-calendar tbody td.ui-calendar-pickerday button:not([class*="ui-fill-"]):hover {
   background-color: hsl(212, 64%, 53%);
@@ -8087,6 +8087,7 @@ button.ui-dialog-custom {
   flex-wrap: wrap;
 }
 .ui-calendar-panel li {
+  box-sizing: border-box;
   width: 33.333332%;
   height: 25%;
   padding: 2px;
@@ -8107,7 +8108,7 @@ button.ui-dialog-custom {
 .ui-calendar-panel .ui-calendar-panel-call.ui-selected {
   color: hsl(0, 0%, 100%) !important;
   font-weight: 700;
-  background-color: hsl(212, 64%, 38%);
+  background-color: hsl(212, 64%, 45.5%);
 }
 .ui-desktop .ui-calendar-panel .ui-calendar-panel-call.ui-selected:hover {
   background-color: hsl(212, 64%, 53%);

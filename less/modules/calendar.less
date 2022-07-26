@@ -29,7 +29,7 @@
 @calendar-notifiers-width:              6px;
 @calendar-notifiers-bg:                 hsl(347, 100%, 54%);
 
-@calendar-pickerday-btn-bg:             @blue;
+@calendar-pickerday-btn-bg:             lighten(@blue, 7.5%);
 @calendar-pickerday-btn-hover-bg:       lighten(@blue, 15%);
 
 @calendar-picker-space:                 1px;
@@ -294,7 +294,7 @@
             .ui-mobile & { -webkit-overflow-scrolling: touch; }
 
             ul { display: flex; flex-wrap: wrap; }
-            li { width: 33.333332%; height: 25%; padding: @calendar-panel-items-gap; flex-grow: 1; }
+            li { box-sizing: border-box; width: 33.333332%; height: 25%; padding: @calendar-panel-items-gap; flex-grow: 1; }
 
             .ui-calendar-panel-call {
                 font-size: @calendar-panel-items-font-size; white-space: nowrap; text-overflow: ellipsis; line-height: 100%; width: 100%; height: 100%; background-color: @no-color; padding: @calendar-panel-items-padding; overflow: hidden; border: 0;
