@@ -249,13 +249,15 @@ main {
 .business-panel-l-contents > .ui-tab-content {
   background-color: hsla(0, 0%, 0%, 0.045);
   background-color: var(--ui-panel-l-contens-bg);
-  overflow-y: auto !important;
   border-radius: 6.66666667px;
   position: absolute;
   top: 57px;
   right: 5px;
   bottom: 5px;
   left: 0;
+}
+html:not(.ui-calendar-picker-opened) .business-panel-l-contents > .ui-tab-content {
+  overflow-y: auto !important;
 }
 .ui-mobile .business-panel-l-contents > .ui-tab-content {
   -webkit-overflow-scrolling: touch;

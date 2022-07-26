@@ -132,7 +132,9 @@ each(@panel-sizes, {
 			width: calc(100% - extract(@panel-sizes, 2)); height: 100%; padding-top: @panel-l-contents-top !important; position: absolute;
 
 			& > .ui-tab-content {
-				._bg-var(panel-l-contens-bg); overflow-y: auto !important; border-radius: (@round - (@round * 0.3333333333)); position: absolute; top: (@panel-l-logo-height + @panel-spacing + 2); right: @panel-spacing; bottom: @panel-spacing; left: 0;
+				._bg-var(panel-l-contens-bg); border-radius: (@round - (@round * 0.3333333333)); position: absolute; top: (@panel-l-logo-height + @panel-spacing + 2); right: @panel-spacing; bottom: @panel-spacing; left: 0;
+
+				html:not(.ui-calendar-picker-opened) & { overflow-y: auto !important; }
 
 				.ui-mobile & { -webkit-overflow-scrolling: touch; }
 				&::-webkit-scrollbar { ._bg-var(scrollbar-scroll-faded-bg); }
