@@ -1,15 +1,12 @@
 import * as React from 'react';
-import { lazy } from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import Icon from '@components/Icon';
+import Button from '@components/Button';
+import LineChart from '@components/LineChart';
 
 // assets
 const icon_envelope = require("@icon/general/envelope.svg") as string;
 const icon_camera = require("@icon/media/camera.svg") as string;
-
-// components
-const Icon = lazy(() => import("@components/Icon"));
-const Button = lazy(() => import("@components/Button"));
-const LineChart = lazy(() => import("@components/LineChart"));
 
 export default function App() {
     return (

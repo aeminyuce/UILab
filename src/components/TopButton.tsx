@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { useEffect } from "react";
+import { useEffect } from 'react';
 import { ui } from '@ui';
 
 // utils
-import SVGLoader from "@utils/SVGLoader";
+import SVGLoader from '@utils/SVGLoader';
 
 // assets
 const icon_arrow_to_top = require("@icon/general/arrow-to-top.svg") as string;

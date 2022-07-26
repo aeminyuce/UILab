@@ -4,7 +4,7 @@ import { ui } from '@ui';
 import Icon from '@components/Icon';
 
 // utils
-import SVGLoader from "@utils/SVGLoader";
+import SVGLoader from '@utils/SVGLoader';
 
 // assets
 const icon_angle_left = require("@icon/general/angle-left.svg") as string;
