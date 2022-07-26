@@ -7,9 +7,9 @@ import "@utils/SharedStyles";
 import "@utils/SharedScripts";
 
 // components
-const StickyHeader = lazy(() => import("@components/StickyHeader"));
-const PageLoader = lazy(() => import("@components/PageLoader"));
-const TopButton = lazy(() => import("@components/TopButton"));
+import StickyHeader from '@components/StickyHeader';
+import PageLoader from '@components/PageLoader';
+import TopButton from '@components/TopButton';
 
 // routes
 const Route_Index = lazy(() => import("../App"));
@@ -23,10 +23,8 @@ export default function Routers() {
             <BrowserRouter>
                 <Suspense fallback={<PageLoader />}>
                     <Routes>
-
                         <Route path="/" element={<Route_Index />} />
                         <Route path="calendar" element={<Route_Calendar />} />
-
                     </Routes>
                 </Suspense>
             </BrowserRouter>
