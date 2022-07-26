@@ -3143,6 +3143,7 @@ ui.calendar = {
   nameContainer: 'ui-calendar-container',
   nameTitle: 'ui-calendar-title',
   nameDetails: 'ui-calendar-details',
+  namePickerOpened: 'ui-calendar-picker-opened',
   namePicker: 'ui-calendar-picker',
   namePickerTop: 'ui-calendar-picker-t',
   namePickerLeft: 'ui-calendar-picker-l',
@@ -3589,6 +3590,7 @@ ui.calendar.Start = function () {
   });
 
   function pickerCloseFnc(type, target) {
+    ui.removeClass(document, ui.calendar.namePickerOpened);
     var allPickers = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target);
 
     function removePicker(form, picker) {
@@ -3633,6 +3635,7 @@ ui.calendar.Start = function () {
       return;
     }
 
+    ui.addClass(document, ui.calendar.namePickerOpened);
     ui.off('body', 'mousedown.' + ui.calendar.eventClose);
     ui.off(this, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
     var html = '<div class="' + ui.calendar.target;

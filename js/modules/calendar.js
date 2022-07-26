@@ -13,6 +13,7 @@ ui.calendar = {
     nameTitle: 'ui-calendar-title',
     nameDetails: 'ui-calendar-details',
 
+    namePickerOpened: 'ui-calendar-picker-opened',
     namePicker: 'ui-calendar-picker',
     namePickerTop: 'ui-calendar-picker-t',
     namePickerLeft: 'ui-calendar-picker-l',
@@ -723,6 +724,7 @@ ui.calendar.Start = () => {
     // close picker
     function pickerCloseFnc(type, target) {
 
+        ui.removeClass(document, ui.calendar.namePickerOpened);
         const allPickers = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target);
 
         function removePicker(form, picker) {
@@ -787,6 +789,8 @@ ui.calendar.Start = () => {
             // check duplicate
             const form = this.parentElement;
             if (ui.find('.' + ui.calendar.target, form).length > 0) { return; }
+
+            ui.addClass(document, ui.calendar.namePickerOpened);
 
             // remove event listeners
             ui.off('body', 'mousedown.' + ui.calendar.eventClose);
