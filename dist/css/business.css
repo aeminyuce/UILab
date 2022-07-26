@@ -172,6 +172,7 @@
 }
 /* body */
 html,
+body,
 main {
   box-sizing: border-box;
   height: 100%;
