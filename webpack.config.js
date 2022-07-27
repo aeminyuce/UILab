@@ -14,7 +14,6 @@ const config = {
                     test: /\/node_modules\//, // reduce random numbered files
                     enforce: true,
                 }
-
             }
         },
     },
