@@ -1,3 +1,4 @@
+/* variables */
 [data-ui-mode="light"] {
   --ui-body-bg: hsl(0, 0%, 98%);
   --ui-white: hsl(0, 0%, 100%);
@@ -9,62 +10,6 @@
   --ui-btn-bg: hsla(0, 0%, 0%, 0.08);
   --ui-btn-hover-bg: hsla(0, 0%, 0%, 0.15);
   --ui-btn-ghost-hover-bg: hsla(0, 0%, 0%, 0.075);
-  --ui-black-25: hsla(0, 0%, 0%, 0.4);
-  --ui-black-50: hsla(0, 0%, 0%, 0.5);
-  --ui-code-color: hsl(345, 74%, 52%);
-  --ui-code-bg: hsl(343, 37%, 96%);
-  --ui-border-light-color: hsla(0, 0%, 0%, 0.045);
-  --ui-border-dark-color: hsla(0, 0%, 0%, 0.35);
-  --ui-dropdown-list-selected-bg: hsla(0, 0%, 0%, 0.075);
-  --ui-dropdown-list-hover-bg: hsla(0, 0%, 0%, 0.05);
-  --ui-dropdown-list-border: hsla(0, 0%, 0%, 0.045);
-  --ui-form-bg: hsla(0, 0%, 0%, 0.0175);
-  --ui-form-focus-bg: hsla(0, 0%, 0%, 0.03);
-  --ui-form-focus-border: hsla(0, 0%, 0%, 0.35);
-  --ui-select-multi-options-border: hsla(0, 0%, 0%, 0.045);
-  --ui-range-thumb-color: hsl(220, 3%, 57%);
-  --ui-range-track-bg: hsla(0, 0%, 0%, 0.08);
-  --ui-range-track-hover-bg: hsla(0, 0%, 0%, 0.15);
-  --ui-check-bg: hsla(0, 0%, 0%, 0.65);
-  --ui-switch-bg: hsla(0, 0%, 0%, 0.15);
-  --ui-form-disabled-bg: hsla(0, 0%, 0%, 0.075);
-  --ui-form-readonly-color: hsla(0, 0%, 0%, 0.5);
-  --ui-textarea-counter-color: hsla(0, 0%, 0%, 0.45);
-  --ui-textarea-counter-bg: hsla(0, 0%, 0%, 0.035);
-  --ui-listgroup-stripe-bg: hsla(0, 0%, 0%, 0.035);
-  --ui-listgroup-hover-bg: hsla(0, 0%, 0%, 0.06);
-  --ui-table-caption-bg: hsla(0, 0%, 0%, 0.025);
-  --ui-table-stripe-bg: hsla(0, 0%, 0%, 0.045);
-  --ui-table-hover-bg: hsla(0, 0%, 0%, 0.1);
-  --ui-table-sidebar-bg: hsla(0, 0%, 0%, 0.025);
-  --ui-breadcrumbs-sep-color: hsla(0, 0%, 0%, 0.25);
-  --ui-avatar-bg: hsla(0, 0%, 0%, 0.08);
-  --ui-progress-bar-bg: hsla(0, 0%, 0%, 0.075);
-  --ui-scrollbar-scroll-bg: hsl(0, 0%, 92%);
-  --ui-scrollbar-scroll-fadedbg: hsla(0, 0%, 0%, 0.045);
-  --ui-scrollbar-thumb-bg: hsla(0, 0%, 0%, 0.2);
-  --ui-scrollbar-thumb-hover-bg: hsla(0, 0%, 0%, 0.1);
-  --ui-scrollbar-thumb-bg-active: hsla(0, 0%, 0%, 0.25);
-  --ui-steps-inactive-color: hsla(0, 0%, 0%, 0.32);
-  --ui-steps-border: hsla(0, 0%, 0%, 0.12);
-  --ui-timeline-line-bg: hsla(0, 0%, 0%, 0.15);
-  --ui-calendar-highlighted-bg: hsla(0, 0%, 0%, 0.1);
-  --ui-calendar-weekend-bg: hsla(0, 0%, 0%, 0.04);
-  --ui-calendar-details-empty-bg: hsla(0, 0%, 0%, 0.12);
-  --ui-calendar-today-btn-bg: hsla(0, 0%, 0%, 0.15);
-  --ui-calendar-today-btn-hover-bg: hsla(0, 0%, 0%, 0.2);
-  --ui-datatable-stripe-bg: hsla(0, 0%, 0%, 0.035);
-  --ui-datatable-hover-bg: hsla(0, 0%, 0%, 0.06);
-  --ui-datatable-border: hsl(0, 0%, 86.7%);
-  --ui-imgupload-drop-bg: hsl(0, 0%, 93%);
-  --ui-imgupload-list-bg: hsla(0, 0%, 100%, 0.45);
-  --ui-imgupload-list-border: hsla(0, 0%, 0%, 0.15);
-  --ui-imgupload-list-tag-color: hsla(0, 0%, 0%, 0.5);
-  --ui-imgupload-list-tag-bg: hsla(0, 0%, 0%, 0.08);
-  --ui-photoslide-dot-bg: hsla(0, 0%, 0%, 0.4);
-  --ui-photoslide-dot-selected-bg: hsla(0, 0%, 0%, 0.65);
-  --ui-map-path-fill: hsla(0, 0%, 0%, 0.08);
-  --ui-map-path-fill-hover: hsla(0, 0%, 0%, 0.15);
 }
 [data-ui-mode="dark"] {
   --ui-body-bg: hsl(218, 16%, 10%);
@@ -78,62 +23,6 @@
   --ui-btn-bg: hsla(0, 0%, 100%, 0.125);
   --ui-btn-hover-bg: hsla(0, 0%, 100%, 0.2);
   --ui-btn-ghost-hover-bg: hsla(0, 0%, 100%, 0.075);
-  --ui-black-25: hsla(0, 0%, 100%, 0.72);
-  --ui-black-50: hsla(0, 0%, 100%, 0.87);
-  --ui-code-color: hsl(0, 0%, 100%);
-  --ui-code-bg: hsl(345, 74%, 52%);
-  --ui-border-light-color: hsla(0, 0%, 100%, 0.065);
-  --ui-border-dark-color: hsla(0, 0%, 100%, 0.25);
-  --ui-dropdown-list-selected-bg: hsla(0, 0%, 100%, 0.075);
-  --ui-dropdown-list-hover-bg: hsla(0, 0%, 0%, 0.05);
-  --ui-dropdown-list-border: hsla(0, 0%, 100%, 0.065);
-  --ui-form-bg: hsla(0, 0%, 100%, 0.0275);
-  --ui-form-focus-bg: hsla(0, 0%, 100%, 0.075);
-  --ui-form-focus-border: hsla(0, 0%, 100%, 0.65);
-  --ui-select-multi-options-border: hsla(0, 0%, 100%, 0.045);
-  --ui-range-thumb-color: hsl(219, 7%, 40%);
-  --ui-range-track-bg: hsla(0, 0%, 100%, 0.08);
-  --ui-range-track-hover-bg: hsla(0, 0%, 100%, 0.15);
-  --ui-check-bg: hsla(0, 0%, 100%, 0.65);
-  --ui-switch-bg: hsla(0, 0%, 100%, 0.15);
-  --ui-form-disabled-bg: hsla(0, 0%, 100%, 0.075);
-  --ui-form-readonly-color: hsla(0, 0%, 100%, 0.65);
-  --ui-textarea-counter-color: hsl(0, 0%, 100%);
-  --ui-textarea-counter-bg: hsla(0, 0%, 100%, 0.175);
-  --ui-listgroup-stripe-bg: hsla(0, 0%, 100%, 0.035);
-  --ui-listgroup-hover-bg: hsla(0, 0%, 100%, 0.06);
-  --ui-table-caption-bg: hsla(0, 0%, 100%, 0.025);
-  --ui-table-stripe-bg: hsla(0, 0%, 100%, 0.035);
-  --ui-table-hover-bg: hsla(0, 0%, 100%, 0.08);
-  --ui-table-sidebar-bg: hsla(0, 0%, 100%, 0.025);
-  --ui-breadcrumbs-sep-color: hsla(0, 0%, 100%, 0.25);
-  --ui-avatar-bg: hsla(0, 0%, 100%, 0.08);
-  --ui-progress-bar-bg: hsla(0, 0%, 0%, 0.45);
-  --ui-scrollbar-scroll-bg: hsl(218, 16%, 18%);
-  --ui-scrollbar-scroll-faded-bg: hsla(0, 0%, 100%, 0.045);
-  --ui-scrollbar-thumb-bg: hsla(0, 0%, 100%, 0.3);
-  --ui-scrollbar-thumb-hover-bg: hsla(0, 0%, 100%, 0.15);
-  --ui-scrollbar-thumb-bg-active: hsla(0, 0%, 100%, 0.35);
-  --ui-steps-inactive-color: hsla(0, 0%, 100%, 0.32);
-  --ui-steps-border: hsla(0, 0%, 100%, 0.12);
-  --ui-timeline-line-bg: hsla(0, 0%, 100%, 0.175);
-  --ui-calendar-highlighted-bg: hsla(0, 0%, 100%, 0.1);
-  --ui-calendar-weekend-bg: hsla(0, 0%, 100%, 0.04);
-  --ui-calendar-details-empty-bg: hsla(0, 0%, 100%, 0.18);
-  --ui-calendar-today-btn-bg: hsla(0, 0%, 100%, 0.15);
-  --ui-calendar-today-btn-hover-bg: hsla(0, 0%, 100%, 0.2);
-  --ui-datatable-stripe-bg: hsla(0, 0%, 100%, 0.035);
-  --ui-datatable-hover-bg: hsla(0, 0%, 100%, 0.06);
-  --ui-datatable-border: hsl(220, 8%, 28%);
-  --ui-imgupload-drop-bg: hsl(222, 13%, 15%);
-  --ui-imgupload-list-bg: hsla(0, 0%, 100%, 0.035);
-  --ui-imgupload-list-border: hsla(0, 0%, 100%, 0.15);
-  --ui-imgupload-list-tag-color: hsl(0, 0%, 73%);
-  --ui-imgupload-list-tag-bg: hsla(0, 0%, 100%, 0.08);
-  --ui-photoslide-dot-bg: hsla(0, 0%, 100%, 0.4);
-  --ui-photoslide-dot-selected-bg: hsla(0, 0%, 100%, 0.65);
-  --ui-map-path-fill: hsla(0, 0%, 100%, 0.08);
-  --ui-map-path-fill-hover: hsla(0, 0%, 100%, 0.15);
 }
 /* reset */
 html:not(.ui-no-effects) {
@@ -1887,6 +1776,18 @@ html .ui-row {
   }
 }
 /* typography */
+[data-ui-mode="light"] {
+  --ui-black-25: hsla(0, 0%, 0%, 0.4);
+  --ui-black-50: hsla(0, 0%, 0%, 0.5);
+  --ui-code-color: hsl(345, 74%, 52%);
+  --ui-code-bg: hsl(343, 37%, 96%);
+}
+[data-ui-mode="dark"] {
+  --ui-black-25: hsla(0, 0%, 100%, 0.72);
+  --ui-black-50: hsla(0, 0%, 100%, 0.87);
+  --ui-code-color: hsl(0, 0%, 100%);
+  --ui-code-bg: hsl(345, 74%, 52%);
+}
 .ui-ease-pre {
   transition-property: color, background-color;
   transition-duration: 0.15s;
@@ -2990,6 +2891,14 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
   }
 }
 /* borders */
+[data-ui-mode="light"] {
+  --ui-border-light-color: hsla(0, 0%, 0%, 0.045);
+  --ui-border-dark-color: hsla(0, 0%, 0%, 0.35);
+}
+[data-ui-mode="dark"] {
+  --ui-border-light-color: hsla(0, 0%, 100%, 0.065);
+  --ui-border-dark-color: hsla(0, 0%, 100%, 0.25);
+}
 .ui-border,
 .ui-border-t,
 .ui-border-r,
@@ -4504,6 +4413,16 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
   min-width: 300px;
 }
 /* dropdown */
+[data-ui-mode="light"] {
+  --ui-dropdown-list-selected-bg: hsla(0, 0%, 0%, 0.075);
+  --ui-dropdown-list-hover-bg: hsla(0, 0%, 0%, 0.05);
+  --ui-dropdown-list-border: hsla(0, 0%, 0%, 0.045);
+}
+[data-ui-mode="dark"] {
+  --ui-dropdown-list-selected-bg: hsla(0, 0%, 100%, 0.075);
+  --ui-dropdown-list-hover-bg: hsla(0, 0%, 0%, 0.05);
+  --ui-dropdown-list-border: hsla(0, 0%, 100%, 0.065);
+}
 .ui-ease-dropdown li {
   transition-property: background-color;
   transition-duration: 0.15s;
@@ -4832,6 +4751,32 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
   }
 }
 /* forms */
+[data-ui-mode="light"] {
+  --ui-form-bg: hsla(0, 0%, 0%, 0.0175);
+  --ui-form-focus-bg: hsla(0, 0%, 0%, 0.03);
+  --ui-form-focus-border: hsla(0, 0%, 0%, 0.35);
+  --ui-select-multi-options-border: hsla(0, 0%, 0%, 0.045);
+  --ui-range-thumb-color: hsl(220, 3%, 57%);
+  --ui-range-track-bg: hsla(0, 0%, 0%, 0.08);
+  --ui-range-track-hover-bg: hsla(0, 0%, 0%, 0.15);
+  --ui-check-bg: hsla(0, 0%, 0%, 0.65);
+  --ui-switch-bg: hsla(0, 0%, 0%, 0.15);
+  --ui-form-disabled-bg: hsla(0, 0%, 0%, 0.075);
+  --ui-form-readonly-color: hsla(0, 0%, 0%, 0.5);
+}
+[data-ui-mode="dark"] {
+  --ui-form-bg: hsla(0, 0%, 100%, 0.0275);
+  --ui-form-focus-bg: hsla(0, 0%, 100%, 0.075);
+  --ui-form-focus-border: hsla(0, 0%, 100%, 0.65);
+  --ui-select-multi-options-border: hsla(0, 0%, 100%, 0.045);
+  --ui-range-thumb-color: hsl(219, 7%, 40%);
+  --ui-range-track-bg: hsla(0, 0%, 100%, 0.08);
+  --ui-range-track-hover-bg: hsla(0, 0%, 100%, 0.15);
+  --ui-check-bg: hsla(0, 0%, 100%, 0.65);
+  --ui-switch-bg: hsla(0, 0%, 100%, 0.15);
+  --ui-form-disabled-bg: hsla(0, 0%, 100%, 0.075);
+  --ui-form-readonly-color: hsla(0, 0%, 100%, 0.65);
+}
 .ui-ease-form,
 .ui-ease-1st-form > *,
 .ui-ease-2nd-form > * > * {
@@ -5811,6 +5756,14 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   }
 }
 /* textarea counter */
+[data-ui-mode="light"] {
+  --ui-textarea-counter-color: hsla(0, 0%, 0%, 0.45);
+  --ui-textarea-counter-bg: hsla(0, 0%, 0%, 0.035);
+}
+[data-ui-mode="dark"] {
+  --ui-textarea-counter-color: hsl(0, 0%, 100%);
+  --ui-textarea-counter-bg: hsla(0, 0%, 100%, 0.175);
+}
 .ui-textarea:not(.ui-textarea-toggle)[data-ui-counter]:before {
   content: attr(data-ui-counter);
   font-size: 9px;
@@ -6060,6 +6013,14 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   height: 14px !important;
 }
 /* listgroup */
+[data-ui-mode="light"] {
+  --ui-listgroup-stripe-bg: hsla(0, 0%, 0%, 0.035);
+  --ui-listgroup-hover-bg: hsla(0, 0%, 0%, 0.06);
+}
+[data-ui-mode="dark"] {
+  --ui-listgroup-stripe-bg: hsla(0, 0%, 100%, 0.035);
+  --ui-listgroup-hover-bg: hsla(0, 0%, 100%, 0.06);
+}
 .ui-ease-listgroup li,
 .ui-ease-listgroup li > a:not(.ui-listgroup-url) {
   transition-property: background-color;
@@ -6317,6 +6278,18 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   }
 }
 /* tables */
+[data-ui-mode="light"] {
+  --ui-table-caption-bg: hsla(0, 0%, 0%, 0.025);
+  --ui-table-stripe-bg: hsla(0, 0%, 0%, 0.045);
+  --ui-table-hover-bg: hsla(0, 0%, 0%, 0.1);
+  --ui-table-sidebar-bg: hsla(0, 0%, 0%, 0.025);
+}
+[data-ui-mode="dark"] {
+  --ui-table-caption-bg: hsla(0, 0%, 100%, 0.025);
+  --ui-table-stripe-bg: hsla(0, 0%, 100%, 0.035);
+  --ui-table-hover-bg: hsla(0, 0%, 100%, 0.08);
+  --ui-table-sidebar-bg: hsla(0, 0%, 100%, 0.025);
+}
 .ui-ease-table tr {
   transition-property: background-color;
   transition-duration: 0.15s;
@@ -6453,6 +6426,12 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   }
 }
 /* breadcrumbs */
+[data-ui-mode="light"] {
+  --ui-breadcrumbs-sep-color: hsla(0, 0%, 0%, 0.25);
+}
+[data-ui-mode="dark"] {
+  --ui-breadcrumbs-sep-color: hsla(0, 0%, 100%, 0.25);
+}
 .ui-breadcrumbs:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -6495,6 +6474,12 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   }
 }
 /* avatars */
+[data-ui-mode="light"] {
+  --ui-avatar-bg: hsla(0, 0%, 0%, 0.08);
+}
+[data-ui-mode="dark"] {
+  --ui-avatar-bg: hsla(0, 0%, 100%, 0.08);
+}
 .ui-avatar {
   font-size: 16px;
   width: 50px;
@@ -6625,6 +6610,12 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   padding: 3px 6px;
 }
 /* progress bar */
+[data-ui-mode="light"] {
+  --ui-progress-bar-bg: hsla(0, 0%, 0%, 0.075);
+}
+[data-ui-mode="dark"] {
+  --ui-progress-bar-bg: hsla(0, 0%, 0%, 0.45);
+}
 @keyframes ui-progress-fill {
   from {
     width: 0;
@@ -6700,6 +6691,20 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   height: 2px;
 }
 /* scrollbar */
+[data-ui-mode="light"] {
+  --ui-scrollbar-scroll-bg: hsl(0, 0%, 92%);
+  --ui-scrollbar-scroll-fadedbg: hsla(0, 0%, 0%, 0.045);
+  --ui-scrollbar-thumb-bg: hsla(0, 0%, 0%, 0.2);
+  --ui-scrollbar-thumb-hover-bg: hsla(0, 0%, 0%, 0.1);
+  --ui-scrollbar-thumb-bg-active: hsla(0, 0%, 0%, 0.25);
+}
+[data-ui-mode="dark"] {
+  --ui-scrollbar-scroll-bg: hsl(218, 16%, 18%);
+  --ui-scrollbar-scroll-faded-bg: hsla(0, 0%, 100%, 0.045);
+  --ui-scrollbar-thumb-bg: hsla(0, 0%, 100%, 0.3);
+  --ui-scrollbar-thumb-hover-bg: hsla(0, 0%, 100%, 0.15);
+  --ui-scrollbar-thumb-bg-active: hsla(0, 0%, 100%, 0.35);
+}
 .ui-desktop ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -6742,6 +6747,14 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   background-color: hsla(0, 0%, 100%, 0.35);
 }
 /* steps */
+[data-ui-mode="light"] {
+  --ui-steps-inactive-color: hsla(0, 0%, 0%, 0.32);
+  --ui-steps-border: hsla(0, 0%, 0%, 0.12);
+}
+[data-ui-mode="dark"] {
+  --ui-steps-inactive-color: hsla(0, 0%, 100%, 0.32);
+  --ui-steps-border: hsla(0, 0%, 100%, 0.12);
+}
 .ui-steps-bar {
   list-style: none;
   display: flex;
@@ -6901,6 +6914,12 @@ html:not(.ui-ie) .ui-steps-bar li {
   background-size: 5px 5px;
 }
 /* timeline */
+[data-ui-mode="light"] {
+  --ui-timeline-line-bg: hsla(0, 0%, 0%, 0.15);
+}
+[data-ui-mode="dark"] {
+  --ui-timeline-line-bg: hsla(0, 0%, 100%, 0.175);
+}
 .ui-timeline {
   list-style: none;
   position: relative;
@@ -7714,6 +7733,20 @@ button.ui-dialog-custom {
   }
 }
 /* calendar */
+[data-ui-mode="light"] {
+  --ui-calendar-highlighted-bg: hsla(0, 0%, 0%, 0.1);
+  --ui-calendar-weekend-bg: hsla(0, 0%, 0%, 0.04);
+  --ui-calendar-details-empty-bg: hsla(0, 0%, 0%, 0.12);
+  --ui-calendar-today-btn-bg: hsla(0, 0%, 0%, 0.15);
+  --ui-calendar-today-btn-hover-bg: hsla(0, 0%, 0%, 0.2);
+}
+[data-ui-mode="dark"] {
+  --ui-calendar-highlighted-bg: hsla(0, 0%, 100%, 0.1);
+  --ui-calendar-weekend-bg: hsla(0, 0%, 100%, 0.04);
+  --ui-calendar-details-empty-bg: hsla(0, 0%, 100%, 0.18);
+  --ui-calendar-today-btn-bg: hsla(0, 0%, 100%, 0.15);
+  --ui-calendar-today-btn-hover-bg: hsla(0, 0%, 100%, 0.2);
+}
 .ui-ease-calendar {
   transition-property: opacity;
   transition-duration: 0.15s;
@@ -8406,6 +8439,16 @@ button.ui-dialog-custom {
   }
 }
 /* datatable */
+[data-ui-mode="light"] {
+  --ui-datatable-stripe-bg: hsla(0, 0%, 0%, 0.035);
+  --ui-datatable-hover-bg: hsla(0, 0%, 0%, 0.06);
+  --ui-datatable-border: hsl(0, 0%, 86.7%);
+}
+[data-ui-mode="dark"] {
+  --ui-datatable-stripe-bg: hsla(0, 0%, 100%, 0.035);
+  --ui-datatable-hover-bg: hsla(0, 0%, 100%, 0.06);
+  --ui-datatable-border: hsl(220, 8%, 28%);
+}
 .ui-ease-datatable .ui-datatable-content {
   transition-property: background-color;
   transition-duration: 0.15s;
@@ -8456,6 +8499,20 @@ button.ui-dialog-custom {
   border: 0;
 }
 /* imgupload */
+[data-ui-mode="light"] {
+  --ui-imgupload-drop-bg: hsl(0, 0%, 93%);
+  --ui-imgupload-list-bg: hsla(0, 0%, 100%, 0.45);
+  --ui-imgupload-list-border: hsla(0, 0%, 0%, 0.15);
+  --ui-imgupload-list-tag-color: hsla(0, 0%, 0%, 0.5);
+  --ui-imgupload-list-tag-bg: hsla(0, 0%, 0%, 0.08);
+}
+[data-ui-mode="dark"] {
+  --ui-imgupload-drop-bg: hsl(222, 13%, 15%);
+  --ui-imgupload-list-bg: hsla(0, 0%, 100%, 0.035);
+  --ui-imgupload-list-border: hsla(0, 0%, 100%, 0.15);
+  --ui-imgupload-list-tag-color: hsl(0, 0%, 73%);
+  --ui-imgupload-list-tag-bg: hsla(0, 0%, 100%, 0.08);
+}
 @keyframes ui-imgupload-loader {
   from {
     background-position: 40px 0;
@@ -9031,6 +9088,14 @@ button.ui-dialog-custom {
   }
 }
 /* photoslide */
+[data-ui-mode="light"] {
+  --ui-photoslide-dot-bg: hsla(0, 0%, 0%, 0.4);
+  --ui-photoslide-dot-selected-bg: hsla(0, 0%, 0%, 0.65);
+}
+[data-ui-mode="dark"] {
+  --ui-photoslide-dot-bg: hsla(0, 0%, 100%, 0.4);
+  --ui-photoslide-dot-selected-bg: hsla(0, 0%, 100%, 0.65);
+}
 @keyframes ui-photoslide-loader {
   from {
     transform: rotate(0deg);
@@ -9859,6 +9924,14 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.ui-icon) {
   animation: ui-pie-spin-r 1.6s ease-in forwards;
 }
 /* map */
+[data-ui-mode="light"] {
+  --ui-map-path-fill: hsla(0, 0%, 0%, 0.08);
+  --ui-map-path-fill-hover: hsla(0, 0%, 0%, 0.15);
+}
+[data-ui-mode="dark"] {
+  --ui-map-path-fill: hsla(0, 0%, 100%, 0.08);
+  --ui-map-path-fill-hover: hsla(0, 0%, 100%, 0.15);
+}
 .ui-map {
   position: relative;
 }

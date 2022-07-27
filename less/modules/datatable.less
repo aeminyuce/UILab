@@ -1,6 +1,6 @@
 /* datatable */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
 
 @datatable-content-padding:             10px;
 
@@ -15,20 +15,35 @@
 
 @datatable-checked:                     fade(@yellow, 15%);
 
-._global-vars () {
-    --ui-datatable-stripe-bg: @datatable-stripe-bg;
-    --ui-datatable-hover-bg: @datatable-hover-bg;
-
-    --ui-datatable-border: @datatable-border;
-}
-._global-vars-dark () {
-    --ui-datatable-stripe-bg: @datatable-stripe-bg-dark;
-    --ui-datatable-hover-bg: @datatable-hover-bg-dark;
-
-    --ui-datatable-border: @datatable-border-dark;
-}
-
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    ._global-vars () {
+        --ui-datatable-stripe-bg: @datatable-stripe-bg;
+        --ui-datatable-hover-bg: @datatable-hover-bg;
+
+        --ui-datatable-border: @datatable-border;
+    }
+    ._global-vars-dark () {
+        --ui-datatable-stripe-bg: @datatable-stripe-bg-dark;
+        --ui-datatable-hover-bg: @datatable-hover-bg-dark;
+
+        --ui-datatable-border: @datatable-border-dark;
+    }
+
+    & when (@dark-mode = true) {
+        & when (@dark-mode-auto-switcher = true) {
+            @media (prefers-color-scheme: light) {
+                :root { ._global-vars(); }
+            }
+            @media (prefers-color-scheme: dark) {
+                :root { ._global-vars-dark(); }
+            }
+        }
+        & when (@dark-mode-auto-switcher = false) {
+            [data-ui-mode="light"] { ._global-vars(); }
+            [data-ui-mode="dark"] { ._global-vars-dark(); }
+        }
+    }
 
     .ui-ease-datatable {
         .ui-datatable-content { transition-property: background-color; transition-duration: @ease-default; }

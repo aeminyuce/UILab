@@ -1,6 +1,7 @@
 /* borders */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
+@import (reference) '../core/mixins.less';
 
 @border-lg:                            5px;
 
@@ -10,16 +11,31 @@
 @border-dark-color:                    fade(@black, 35%);
 @border-dark-color-dark:               fade(@white, 25%);
 
-._global-vars () {
-    --ui-border-light-color: @border-light-color;
-    --ui-border-dark-color: @border-dark-color;
-}
-._global-vars-dark () {
-    --ui-border-light-color: @border-light-color-dark;
-    --ui-border-dark-color: @border-dark-color-dark;
-}
-
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    ._global-vars () {
+        --ui-border-light-color: @border-light-color;
+        --ui-border-dark-color: @border-dark-color;
+    }
+    ._global-vars-dark () {
+        --ui-border-light-color: @border-light-color-dark;
+        --ui-border-dark-color: @border-dark-color-dark;
+    }
+
+    & when (@dark-mode = true) {
+        & when (@dark-mode-auto-switcher = true) {
+            @media (prefers-color-scheme: light) {
+                :root { ._global-vars(); }
+            }
+            @media (prefers-color-scheme: dark) {
+                :root { ._global-vars-dark(); }
+            }
+        }
+        & when (@dark-mode-auto-switcher = false) {
+            [data-ui-mode="light"] { ._global-vars(); }
+            [data-ui-mode="dark"] { ._global-vars-dark(); }
+        }
+    }
 
     .ui-border {
         &,&-t,&-r,&-b,&-l,&-h,&-v,&-dual,&-lg {

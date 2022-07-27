@@ -1,6 +1,6 @@
 /* photoslide */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
 
 @photoslide-loader-icon-size:           42px;
 @photoslide-loader-opacity:             .45;
@@ -17,21 +17,36 @@
 @photoslide-dot-selected-bg:            fade(@black, 65%);
 @photoslide-dot-selected-bg-dark:       fade(@white, 65%);
 
-._global-vars () {
-    --ui-photoslide-dot-bg: @photoslide-dot-bg;
-    --ui-photoslide-dot-selected-bg: @photoslide-dot-selected-bg;
-}
-._global-vars-dark () {
-    --ui-photoslide-dot-bg: @photoslide-dot-bg-dark;
-    --ui-photoslide-dot-selected-bg: @photoslide-dot-selected-bg-dark;
-}
-
-@keyframes ui-photoslide-loader {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    ._global-vars () {
+        --ui-photoslide-dot-bg: @photoslide-dot-bg;
+        --ui-photoslide-dot-selected-bg: @photoslide-dot-selected-bg;
+    }
+    ._global-vars-dark () {
+        --ui-photoslide-dot-bg: @photoslide-dot-bg-dark;
+        --ui-photoslide-dot-selected-bg: @photoslide-dot-selected-bg-dark;
+    }
+
+    & when (@dark-mode = true) {
+        & when (@dark-mode-auto-switcher = true) {
+            @media (prefers-color-scheme: light) {
+                :root { ._global-vars(); }
+            }
+            @media (prefers-color-scheme: dark) {
+                :root { ._global-vars-dark(); }
+            }
+        }
+        & when (@dark-mode-auto-switcher = false) {
+            [data-ui-mode="light"] { ._global-vars(); }
+            [data-ui-mode="dark"] { ._global-vars-dark(); }
+        }
+    }
+
+    @keyframes ui-photoslide-loader {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
 
     .ui-photoslide {
         white-space: nowrap; overflow: hidden; display: block; position: relative;

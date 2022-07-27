@@ -1,6 +1,6 @@
 /* progress bar */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
 
 @progress-bar-info-font-size:           80%;
 
@@ -14,17 +14,31 @@
 @progress-bar-bg:                       fade(@black, 7.5%);
 @progress-bar-bg-dark:                  fade(@black, 45%);
 
-._global-vars () {
-    --ui-progress-bar-bg: @progress-bar-bg;
-}
-._global-vars-dark () {
-    --ui-progress-bar-bg: @progress-bar-bg-dark;
-}
-
-@keyframes ui-progress-fill { from { width: 0; } }
-
-
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    ._global-vars () {
+        --ui-progress-bar-bg: @progress-bar-bg;
+    }
+    ._global-vars-dark () {
+        --ui-progress-bar-bg: @progress-bar-bg-dark;
+    }
+
+    & when (@dark-mode = true) {
+        & when (@dark-mode-auto-switcher = true) {
+            @media (prefers-color-scheme: light) {
+                :root { ._global-vars(); }
+            }
+            @media (prefers-color-scheme: dark) {
+                :root { ._global-vars-dark(); }
+            }
+        }
+        & when (@dark-mode-auto-switcher = false) {
+            [data-ui-mode="light"] { ._global-vars(); }
+            [data-ui-mode="dark"] { ._global-vars-dark(); }
+        }
+    }
+
+    @keyframes ui-progress-fill { from { width: 0; } }
 
     .ui-progress- {
         &bar {

@@ -1,6 +1,6 @@
 /* gallery */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
 
 @gallery-img-height:                    210px;
 @gallery-img-oversize:                  130%;
@@ -36,12 +36,12 @@
 @gallery-preview-info-padding:          15px;
 @gallery-preview-info-bg:               fade(@black, 75%);
 
-@keyframes ui-gallery-preview-loader {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    @keyframes ui-gallery-preview-loader {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
 
     .ui-ease-gallery {
         .ui-photo {

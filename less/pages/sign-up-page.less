@@ -1,6 +1,7 @@
 /* sign up page */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
+@import (reference) '../modules/themes.less';
 
 @sign-up-holder-bg:                     linear-gradient(110deg, hsl(263, 37%, 42%), hsl(242, 88%, 17%), hsl(331, 73%, 25%));
 @sign-up-holder-bg-dark:                linear-gradient(110deg, hsl(262, 100%, 72%), hsl(242, 46%, 31%), hsl(331, 60%, 39%));
@@ -11,12 +12,12 @@
 @sign-up-why-bg:                        linear-gradient(130deg, @white, hsl(255, 100%, 94%), @white);
 @sign-up-why-bg-dark:                   linear-gradient(130deg, @card-bg-dark, hsl(256, 19%, 20%), @card-bg-dark);
 
-._sign-up-vars () {
+._global-vars () {
     --ui-sign-up-holder-bg: @sign-up-holder-bg;
     --ui-sign-up-btn-bg: @sign-up-btn-bg;
     --ui-sign-up-why-bg: @sign-up-why-bg;
 }
-._sign-up-vars-dark () {
+._global-vars-dark () {
     --ui-sign-up-holder-bg: @sign-up-holder-bg-dark;
     --ui-sign-up-btn-bg: @sign-up-btn-bg-dark;
     --ui-sign-up-why-bg: @sign-up-why-bg-dark;
@@ -25,15 +26,15 @@
 & when (@dark-mode = true) {
     & when (@dark-mode-auto-switcher = true) {
         @media (prefers-color-scheme: light) {
-            :root { ._sign-up-vars(); }
+            :root { ._global-vars(); }
         }
         @media (prefers-color-scheme: dark) {
-            :root { ._sign-up-vars-dark(); }
+            :root { ._global-vars-dark(); }
         }
     }
     & when (@dark-mode-auto-switcher = false) {
-        [data-ui-mode="light"] { ._sign-up-vars(); }
-        [data-ui-mode="dark"] { ._sign-up-vars-dark(); }
+        [data-ui-mode="light"] { ._global-vars(); }
+        [data-ui-mode="dark"] { ._global-vars-dark(); }
     }
 }
 

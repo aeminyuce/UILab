@@ -1,6 +1,7 @@
 /* breadcrumbs */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
+@import (reference) '../core/mixins.less';
 
 @breadcrumbs-sep:                       2022; // arrow: 203A, bull: 2022, pipe: 2502
 @breadcrumbs-sep-size:                  5px;
@@ -8,14 +9,29 @@
 @breadcrumbs-sep-color:                 fade(@black, 25%);
 @breadcrumbs-sep-color-dark:            fade(@white, 25%);
 
-._global-vars () {
-    --ui-breadcrumbs-sep-color: @breadcrumbs-sep-color;
-}
-._global-vars-dark () {
-    --ui-breadcrumbs-sep-color: @breadcrumbs-sep-color-dark;
-}
-
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    ._global-vars () {
+        --ui-breadcrumbs-sep-color: @breadcrumbs-sep-color;
+    }
+    ._global-vars-dark () {
+        --ui-breadcrumbs-sep-color: @breadcrumbs-sep-color-dark;
+    }
+
+    & when (@dark-mode = true) {
+        & when (@dark-mode-auto-switcher = true) {
+            @media (prefers-color-scheme: light) {
+                :root { ._global-vars(); }
+            }
+            @media (prefers-color-scheme: dark) {
+                :root { ._global-vars-dark(); }
+            }
+        }
+        & when (@dark-mode-auto-switcher = false) {
+            [data-ui-mode="light"] { ._global-vars(); }
+            [data-ui-mode="dark"] { ._global-vars-dark(); }
+        }
+    }
 
     .ui-breadcrumbs {
         &:not(:last-child) { margin-bottom: (@highlight-space / 2); }

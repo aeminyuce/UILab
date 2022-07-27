@@ -1,6 +1,6 @@
 /* imgupload */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
 
 @imgupload-padding:                          30px;
 
@@ -42,31 +42,46 @@
 @imgupload-loading-stripe-size:              20px;
 @imgupload-loading-bg:                       linear-gradient(45deg, @no-color 25%, fade(@white, 25%) 25%, fade(@white, 25%) 50%, @no-color 50%, @no-color 75%, fade(@white, 25%) 75%);
 
-._global-vars () {
-    --ui-imgupload-drop-bg: @imgupload-drop-bg;
-
-    --ui-imgupload-list-bg: @imgupload-list-bg;
-    --ui-imgupload-list-border: @imgupload-list-border;
-
-    --ui-imgupload-list-tag-color: @imgupload-list-tag-color;
-    --ui-imgupload-list-tag-bg: @imgupload-list-tag-bg;
-}
-._global-vars-dark () {
-    --ui-imgupload-drop-bg: @imgupload-drop-bg-dark;
-
-    --ui-imgupload-list-bg: @imgupload-list-bg-dark;
-    --ui-imgupload-list-border: @imgupload-list-border-dark;
-
-    --ui-imgupload-list-tag-color: @imgupload-list-tag-color-dark;
-    --ui-imgupload-list-tag-bg: @imgupload-list-tag-bg-dark;
-}
-
-@keyframes ui-imgupload-loader {
-    from { background-position: (@imgupload-loading-stripe-size * 2) 0; }
-    to { background-position: 0 0; }
-}
-
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    ._global-vars () {
+        --ui-imgupload-drop-bg: @imgupload-drop-bg;
+
+        --ui-imgupload-list-bg: @imgupload-list-bg;
+        --ui-imgupload-list-border: @imgupload-list-border;
+
+        --ui-imgupload-list-tag-color: @imgupload-list-tag-color;
+        --ui-imgupload-list-tag-bg: @imgupload-list-tag-bg;
+    }
+    ._global-vars-dark () {
+        --ui-imgupload-drop-bg: @imgupload-drop-bg-dark;
+
+        --ui-imgupload-list-bg: @imgupload-list-bg-dark;
+        --ui-imgupload-list-border: @imgupload-list-border-dark;
+
+        --ui-imgupload-list-tag-color: @imgupload-list-tag-color-dark;
+        --ui-imgupload-list-tag-bg: @imgupload-list-tag-bg-dark;
+    }
+
+    & when (@dark-mode = true) {
+        & when (@dark-mode-auto-switcher = true) {
+            @media (prefers-color-scheme: light) {
+                :root { ._global-vars(); }
+            }
+            @media (prefers-color-scheme: dark) {
+                :root { ._global-vars-dark(); }
+            }
+        }
+        & when (@dark-mode-auto-switcher = false) {
+            [data-ui-mode="light"] { ._global-vars(); }
+            [data-ui-mode="dark"] { ._global-vars-dark(); }
+        }
+    }
+
+    @keyframes ui-imgupload-loader {
+        from { background-position: (@imgupload-loading-stripe-size * 2) 0; }
+        to { background-position: 0 0; }
+    }
 
     .ui-ease-imgupload {
         transition-property: background-color; transition-duration: @ease-default;

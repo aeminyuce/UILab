@@ -1,6 +1,7 @@
 /*  dark mode */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
+@import (reference) '../core/mixins.less';
 
 & when (@referenceCompiling = false) { // not compiled when reference importing
 
@@ -49,7 +50,7 @@
     }
 
     .ui-ie {
-        .ui-darkmode-toggle { &:extend(.ui-ie .ui-hidden-ie); }
+        .ui-darkmode-toggle { display: none !important; }
     }
 
 }

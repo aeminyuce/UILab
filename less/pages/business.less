@@ -1,8 +1,15 @@
 /* business */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
 
-._business-vars () {
+@import (reference) '../modules/borders.less';
+@import (reference) '../modules/helpers.less';
+@import (reference) '../modules/stripes.less';
+@import (reference) '../modules/scrollbar.less';
+@import (reference) '../modules/top-button.less';
+@import (reference) '../modules/themes.less';
+
+._global-vars () {
     --ui-panel-l-contens-bg: @panel-l-contens-bg;
     --ui-panel-l-digits-bg: @panel-l-digits-bg;
 
@@ -11,7 +18,7 @@
     --ui-title-bg: @title-bg;
     --ui-no-content-sm-bg: @no-content-sm-bg;
 }
-._business-vars-dark () {
+._global-vars-dark () {
     --ui-panel-l-contens-bg: @panel-l-contens-bg-dark;
     --ui-panel-l-digits-bg: @panel-l-digits-bg-dark;
 
@@ -22,18 +29,18 @@
 }
 
 & when (@dark-mode = true) {
-    & when (@dark-mode-auto-switcher = true) {
-        @media (prefers-color-scheme: light) {
-            :root { ._business-vars(); }
-        }
-        @media (prefers-color-scheme: dark) {
-            :root { ._business-vars-dark(); }
-        }
-    }
-    & when (@dark-mode-auto-switcher = false) {
-        [data-ui-mode="light"] { ._business-vars(); }
-        [data-ui-mode="dark"] { ._business-vars-dark(); }
-    }
+	& when (@dark-mode-auto-switcher = true) {
+		@media (prefers-color-scheme: light) {
+			:root { ._global-vars(); }
+		}
+		@media (prefers-color-scheme: dark) {
+			:root { ._global-vars-dark(); }
+		}
+	}
+	& when (@dark-mode-auto-switcher = false) {
+		[data-ui-mode="light"] { ._global-vars(); }
+		[data-ui-mode="dark"] { ._global-vars-dark(); }
+	}
 }
 
 /* theme */

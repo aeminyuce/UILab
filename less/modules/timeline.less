@@ -1,6 +1,6 @@
 /* timeline */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
 
 @timeline-card-padding:                 15px;
 @timeline-steps-size:                   14px;
@@ -10,14 +10,29 @@
 @timeline-line-bg:                      fade(@black, 15%);
 @timeline-line-bg-dark:                 fade(@white, 17.5%);
 
-._global-vars () {
-    --ui-timeline-line-bg: @timeline-line-bg;
-}
-._global-vars-dark () {
-    --ui-timeline-line-bg: @timeline-line-bg-dark;
-}
-
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    ._global-vars () {
+        --ui-timeline-line-bg: @timeline-line-bg;
+    }
+    ._global-vars-dark () {
+        --ui-timeline-line-bg: @timeline-line-bg-dark;
+    }
+
+    & when (@dark-mode = true) {
+        & when (@dark-mode-auto-switcher = true) {
+            @media (prefers-color-scheme: light) {
+                :root { ._global-vars(); }
+            }
+            @media (prefers-color-scheme: dark) {
+                :root { ._global-vars-dark(); }
+            }
+        }
+        & when (@dark-mode-auto-switcher = false) {
+            [data-ui-mode="light"] { ._global-vars(); }
+            [data-ui-mode="dark"] { ._global-vars-dark(); }
+        }
+    }
 
     .ui-timeline {
         list-style: none; position: relative;

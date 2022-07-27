@@ -1,6 +1,7 @@
 /* login page */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
+@import (reference) '../core/mixins.less';
 
 @login-page-forms-container-bg:         hsl(255, 57%, 97%);
 @login-page-forms-container-bg-dark:    @no-color;
@@ -17,7 +18,7 @@
 @login-page-signup-btn-bg:              linear-gradient(130deg, hsl(261, 37%, 56%),hsl(331, 73%, 25%));
 @login-page-signup-btn-bg-dark:         linear-gradient(130deg, hsl(262, 100%, 72%),hsl(331, 60%, 39%));
 
-._login-page-vars () {
+._global-vars () {
     --ui-login-page-forms-container-bg: @login-page-forms-container-bg;
     --ui-login-page-container-bg: @login-page-container-bg;
     --ui-login-page-holder-bg: @login-page-holder-bg;
@@ -25,7 +26,7 @@
     --ui-login-page-login-btn-bg: @login-page-login-btn-bg;
     --ui-login-page-signup-btn-bg: @login-page-signup-btn-bg;
 }
-._login-page-vars-dark () {
+._global-vars-dark () {
     --ui-login-page-forms-container-bg: @login-page-forms-container-bg-dark;
     --ui-login-page-container-bg: @login-page-container-bg-dark;
     --ui-login-page-holder-bg: @login-page-holder-bg-dark;
@@ -37,15 +38,15 @@
 & when (@dark-mode = true) {
     & when (@dark-mode-auto-switcher = true) {
         @media (prefers-color-scheme: light) {
-            :root { ._login-page-vars(); }
+            :root { ._global-vars(); }
         }
         @media (prefers-color-scheme: dark) {
-            :root { ._login-page-vars-dark(); }
+            :root { ._global-vars-dark(); }
         }
     }
     & when (@dark-mode-auto-switcher = false) {
-        [data-ui-mode="light"] { ._login-page-vars(); }
-        [data-ui-mode="dark"] { ._login-page-vars-dark(); }
+        [data-ui-mode="light"] { ._global-vars(); }
+        [data-ui-mode="dark"] { ._global-vars-dark(); }
     }
 }
 

@@ -1,6 +1,7 @@
 /* movie app */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
+@import (reference) '../core/mixins.less';
 
 @movie-app-header-bg:                   hsl(0, 0%, 100%);
 @movie-app-header-bg-dark:              @body-bg-dark;
@@ -10,11 +11,11 @@
 
 @movie-app-library-selected-bg:         linear-gradient(135deg, hsl(0, 100%, 72%), hsl(296, 70%, 65%));
 
-._movie-app-vars () {
+._global-vars () {
     --ui-movie-app-header-bg: @movie-app-header-bg;
     --ui-movie-app-library-bg: @movie-app-library-bg;
 }
-._movie-app-vars-dark () {
+._global-vars-dark () {
     --ui-movie-app-header-bg: @movie-app-header-bg-dark;
     --ui-movie-app-library-bg: @movie-app-library-bg-dark;
 }
@@ -22,15 +23,15 @@
 & when (@dark-mode = true) {
     & when (@dark-mode-auto-switcher = true) {
         @media (prefers-color-scheme: light) {
-            :root { ._movie-app-vars(); }
+            :root { ._global-vars(); }
         }
         @media (prefers-color-scheme: dark) {
-            :root { ._movie-app-vars-dark(); }
+            :root { ._global-vars-dark(); }
         }
     }
     & when (@dark-mode-auto-switcher = false) {
-        [data-ui-mode="light"] { ._movie-app-vars(); }
-        [data-ui-mode="dark"] { ._movie-app-vars-dark(); }
+        [data-ui-mode="light"] { ._global-vars(); }
+        [data-ui-mode="dark"] { ._global-vars-dark(); }
     }
 }
 

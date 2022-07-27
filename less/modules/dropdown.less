@@ -1,6 +1,7 @@
 /* dropdown */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
+@import (reference) '../core/mixins.less';
 
 @dropdown-open-z-index:                   19;
 @dropdown-menu-open-scale:                .95;
@@ -35,18 +36,33 @@
 @dropdown-grids-min-width:                (@layout-min - @highlight-space);
 @dropdown-grids-col:                      2;
 
-._global-vars () {
-    --ui-dropdown-list-selected-bg: @dropdown-list-selected-bg;
-    --ui-dropdown-list-hover-bg: @dropdown-list-hover-bg;
-    --ui-dropdown-list-border: @dropdown-list-border;
-}
-._global-vars-dark () {
-    --ui-dropdown-list-selected-bg: @dropdown-list-selected-bg-dark;
-    --ui-dropdown-list-hover-bg: @dropdown-list-hover-bg-dark;
-    --ui-dropdown-list-border: @dropdown-list-border-dark;
-}
-
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    ._global-vars () {
+        --ui-dropdown-list-selected-bg: @dropdown-list-selected-bg;
+        --ui-dropdown-list-hover-bg: @dropdown-list-hover-bg;
+        --ui-dropdown-list-border: @dropdown-list-border;
+    }
+    ._global-vars-dark () {
+        --ui-dropdown-list-selected-bg: @dropdown-list-selected-bg-dark;
+        --ui-dropdown-list-hover-bg: @dropdown-list-hover-bg-dark;
+        --ui-dropdown-list-border: @dropdown-list-border-dark;
+    }
+
+    & when (@dark-mode = true) {
+        & when (@dark-mode-auto-switcher = true) {
+            @media (prefers-color-scheme: light) {
+                :root { ._global-vars(); }
+            }
+            @media (prefers-color-scheme: dark) {
+                :root { ._global-vars-dark(); }
+            }
+        }
+        & when (@dark-mode-auto-switcher = false) {
+            [data-ui-mode="light"] { ._global-vars(); }
+            [data-ui-mode="dark"] { ._global-vars-dark(); }
+        }
+    }
 
     .ui-ease-dropdown {
         li { transition-property: background-color; transition-duration: @ease-default; }

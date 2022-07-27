@@ -1,6 +1,6 @@
 /* pie chart */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
 
 @pie-chart-title-text-size:             @font-size;
 @pie-chart-title-height:                22px;
@@ -13,14 +13,16 @@
 @pie-chart-back-inner-space:            5px;
 @pie-chart-back-opacity:                .05;
 
-@keyframes ui-pie-spin-l {
-    0% { opacity: 0; }
-    49% { opacity: 0; }
-    50% { -ms-transform: rotate(0deg); transform: rotate(0deg); opacity: 1; }
-}
-@keyframes ui-pie-spin-r { 0% { -ms-transform: rotate(0deg); transform: rotate(0deg); } }
-
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    @keyframes ui-pie-spin-l {
+        0% { opacity: 0; }
+        49% { opacity: 0; }
+        50% { -ms-transform: rotate(0deg); transform: rotate(0deg); opacity: 1; }
+    }
+    @keyframes ui-pie-spin-r {
+        0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+    }
 
     .ui-ease-pie-chart {
         li,& > div span { transition-property: opacity; transition-duration: (@ease-default * 2); }

@@ -1,6 +1,7 @@
 /* calendar */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
+@import (reference) '../core/mixins.less';
 
 @calendar-padding:                      5px;
 @calendar-max-width:                    (@sm-breakpoint - @highlight-space - (@border-dual * 2));
@@ -63,24 +64,39 @@
 @calendar-panel-items-padding:          8px;
 @calendar-panel-items-gap:              2px;
 
-._global-vars () {
-    --ui-calendar-highlighted-bg: @calendar-highlighted-bg;
-    --ui-calendar-weekend-bg: @calendar-weekend-bg;
-    --ui-calendar-details-empty-bg: @calendar-details-empty-bg;
-
-    --ui-calendar-today-btn-bg: @calendar-today-btn-bg;
-    --ui-calendar-today-btn-hover-bg: @calendar-today-btn-hover-bg;
-}
-._global-vars-dark () {
-    --ui-calendar-highlighted-bg: @calendar-highlighted-bg-dark;
-    --ui-calendar-weekend-bg: @calendar-weekend-bg-dark;
-    --ui-calendar-details-empty-bg: @calendar-details-empty-bg-dark;
-
-    --ui-calendar-today-btn-bg: @calendar-today-btn-bg-dark;
-    --ui-calendar-today-btn-hover-bg: @calendar-today-btn-hover-bg-dark;
-}
-
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    ._global-vars () {
+        --ui-calendar-highlighted-bg: @calendar-highlighted-bg;
+        --ui-calendar-weekend-bg: @calendar-weekend-bg;
+        --ui-calendar-details-empty-bg: @calendar-details-empty-bg;
+
+        --ui-calendar-today-btn-bg: @calendar-today-btn-bg;
+        --ui-calendar-today-btn-hover-bg: @calendar-today-btn-hover-bg;
+    }
+    ._global-vars-dark () {
+        --ui-calendar-highlighted-bg: @calendar-highlighted-bg-dark;
+        --ui-calendar-weekend-bg: @calendar-weekend-bg-dark;
+        --ui-calendar-details-empty-bg: @calendar-details-empty-bg-dark;
+
+        --ui-calendar-today-btn-bg: @calendar-today-btn-bg-dark;
+        --ui-calendar-today-btn-hover-bg: @calendar-today-btn-hover-bg-dark;
+    }
+
+    & when (@dark-mode = true) {
+        & when (@dark-mode-auto-switcher = true) {
+            @media (prefers-color-scheme: light) {
+                :root { ._global-vars(); }
+            }
+            @media (prefers-color-scheme: dark) {
+                :root { ._global-vars-dark(); }
+            }
+        }
+        & when (@dark-mode-auto-switcher = false) {
+            [data-ui-mode="light"] { ._global-vars(); }
+            [data-ui-mode="dark"] { ._global-vars-dark(); }
+        }
+    }
 
     .ui-ease-calendar {
         transition-property: opacity; transition-duration: @ease-default;

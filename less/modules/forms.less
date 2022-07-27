@@ -1,6 +1,9 @@
 /* forms */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
+@import (reference) '../core/mixins.less';
+
+@import (reference) '../modules/buttons.less';
 
 @form-line-height:                     18px;
 @form-label-opacity:                   .6;
@@ -68,44 +71,59 @@
 @form-readonly-color:                  fade(@black, 50%);
 @form-readonly-color-dark:             fade(@white, 65%);
 
-._global-vars () {
-    --ui-form-bg: @form-bg;
-
-    --ui-form-focus-bg: @form-focus-bg;
-    --ui-form-focus-border: @form-focus-border;
-
-    --ui-select-multi-options-border: @select-multi-options-border;
-
-    --ui-range-thumb-color: @range-thumb-color;
-    --ui-range-track-bg: @range-track-bg;
-    --ui-range-track-hover-bg: @range-track-hover-bg;
-
-    --ui-check-bg: @check-bg;
-    --ui-switch-bg: @switch-bg;
-
-    --ui-form-disabled-bg: @form-disabled-bg;
-    --ui-form-readonly-color: @form-readonly-color;
-}
-._global-vars-dark () {
-    --ui-form-bg: @form-bg-dark;
-
-    --ui-form-focus-bg: @form-focus-bg-dark;
-    --ui-form-focus-border: @form-focus-border-dark;
-
-    --ui-select-multi-options-border: @select-multi-options-border-dark;
-
-    --ui-range-thumb-color: @range-thumb-color-dark;
-    --ui-range-track-bg: @range-track-bg-dark;
-    --ui-range-track-hover-bg: @range-track-hover-bg-dark;
-
-    --ui-check-bg: @check-bg-dark;
-    --ui-switch-bg: @switch-bg-dark;
-
-    --ui-form-disabled-bg: @form-disabled-bg-dark;
-    --ui-form-readonly-color: @form-readonly-color-dark;
-}
-
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    ._global-vars () {
+        --ui-form-bg: @form-bg;
+
+        --ui-form-focus-bg: @form-focus-bg;
+        --ui-form-focus-border: @form-focus-border;
+
+        --ui-select-multi-options-border: @select-multi-options-border;
+
+        --ui-range-thumb-color: @range-thumb-color;
+        --ui-range-track-bg: @range-track-bg;
+        --ui-range-track-hover-bg: @range-track-hover-bg;
+
+        --ui-check-bg: @check-bg;
+        --ui-switch-bg: @switch-bg;
+
+        --ui-form-disabled-bg: @form-disabled-bg;
+        --ui-form-readonly-color: @form-readonly-color;
+    }
+    ._global-vars-dark () {
+        --ui-form-bg: @form-bg-dark;
+
+        --ui-form-focus-bg: @form-focus-bg-dark;
+        --ui-form-focus-border: @form-focus-border-dark;
+
+        --ui-select-multi-options-border: @select-multi-options-border-dark;
+
+        --ui-range-thumb-color: @range-thumb-color-dark;
+        --ui-range-track-bg: @range-track-bg-dark;
+        --ui-range-track-hover-bg: @range-track-hover-bg-dark;
+
+        --ui-check-bg: @check-bg-dark;
+        --ui-switch-bg: @switch-bg-dark;
+
+        --ui-form-disabled-bg: @form-disabled-bg-dark;
+        --ui-form-readonly-color: @form-readonly-color-dark;
+    }
+
+    & when (@dark-mode = true) {
+        & when (@dark-mode-auto-switcher = true) {
+            @media (prefers-color-scheme: light) {
+                :root { ._global-vars(); }
+            }
+            @media (prefers-color-scheme: dark) {
+                :root { ._global-vars-dark(); }
+            }
+        }
+        & when (@dark-mode-auto-switcher = false) {
+            [data-ui-mode="light"] { ._global-vars(); }
+            [data-ui-mode="dark"] { ._global-vars-dark(); }
+        }
+    }
 
     .ui-ease- {
         &form,&1st-form > *,&2nd-form > * > * {

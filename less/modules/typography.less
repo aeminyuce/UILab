@@ -1,8 +1,8 @@
 /* typography */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
+@import (reference) '../core/mixins.less';
 
-@headings-font-family:                  'Archivo', @font-family;
 @headings-letter-spacing:               -0.025em;
 
 @code-font-family:                      SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
@@ -21,22 +21,37 @@
 @code-padding-h:                        4px;
 @code-radius:                           3px;
 
-._global-vars () {
-    --ui-black-25: @black-25;
-    --ui-black-50: @black-50;
-
-    --ui-code-color: @code-color;
-    --ui-code-bg: @code-bg;
-}
-._global-vars-dark () {
-    --ui-black-25: @white-25;
-    --ui-black-50: @white-50;
-
-    --ui-code-color: @white;
-    --ui-code-bg: @code-color;
-}
-
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    ._global-vars () {
+        --ui-black-25: @black-25;
+        --ui-black-50: @black-50;
+
+        --ui-code-color: @code-color;
+        --ui-code-bg: @code-bg;
+    }
+    ._global-vars-dark () {
+        --ui-black-25: @white-25;
+        --ui-black-50: @white-50;
+
+        --ui-code-color: @white;
+        --ui-code-bg: @code-color;
+    }
+
+    & when (@dark-mode = true) {
+        & when (@dark-mode-auto-switcher = true) {
+            @media (prefers-color-scheme: light) {
+                :root { ._global-vars(); }
+            }
+            @media (prefers-color-scheme: dark) {
+                :root { ._global-vars-dark(); }
+            }
+        }
+        & when (@dark-mode-auto-switcher = false) {
+            [data-ui-mode="light"] { ._global-vars(); }
+            [data-ui-mode="dark"] { ._global-vars-dark(); }
+        }
+    }
 
     .ui-ease-pre { transition-property: color, background-color; transition-duration: @ease-default; }
 

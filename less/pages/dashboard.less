@@ -1,6 +1,7 @@
 /* dashboard */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
+@import (reference) '../modules/themes.less';
 
 @header-height:                         62px;
 
@@ -10,25 +11,25 @@
 @header-bg:                             hsl(0, 0%, 100%);
 @header-bg-dark:                        hsl(220, 15%, 16%);
 
-._dashboard-vars () {
+._global-vars () {
     --ui-header-bg: @header-bg;
 }
-._dashboard-vars-dark () {
+._global-vars-dark () {
     --ui-header-bg: @header-bg-dark;
 }
 
 & when (@dark-mode = true) {
     & when (@dark-mode-auto-switcher = true) {
         @media (prefers-color-scheme: light) {
-            :root { ._dashboard-vars(); }
+            :root { ._global-vars(); }
         }
         @media (prefers-color-scheme: dark) {
-            :root { ._dashboard-vars-dark(); }
+            :root { ._global-vars-dark(); }
         }
     }
     & when (@dark-mode-auto-switcher = false) {
-        [data-ui-mode="light"] { ._dashboard-vars(); }
-        [data-ui-mode="dark"] { ._dashboard-vars-dark(); }
+        [data-ui-mode="light"] { ._global-vars(); }
+        [data-ui-mode="dark"] { ._global-vars-dark(); }
     }
 }
 

@@ -1,6 +1,6 @@
 /* steps */
 
-@import (reference) '../ui.less';
+@import (reference) '../core/globals.less';
 
 @steps-active-size:                     18px;
 @steps-passive-size:                    10px;
@@ -14,16 +14,31 @@
 @steps-border:                          fade(@black, 12%);
 @steps-border-dark:                     fade(@white, 12%);
 
-._global-vars () {
-    --ui-steps-inactive-color: @steps-inactive-color;
-    --ui-steps-border: @steps-border;
-}
-._global-vars-dark () {
-    --ui-steps-inactive-color: @steps-inactive-color-dark;
-    --ui-steps-border: @steps-border-dark;
-}
-
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    ._global-vars () {
+        --ui-steps-inactive-color: @steps-inactive-color;
+        --ui-steps-border: @steps-border;
+    }
+    ._global-vars-dark () {
+        --ui-steps-inactive-color: @steps-inactive-color-dark;
+        --ui-steps-border: @steps-border-dark;
+    }
+
+    & when (@dark-mode = true) {
+        & when (@dark-mode-auto-switcher = true) {
+            @media (prefers-color-scheme: light) {
+                :root { ._global-vars(); }
+            }
+            @media (prefers-color-scheme: dark) {
+                :root { ._global-vars-dark(); }
+            }
+        }
+        & when (@dark-mode-auto-switcher = false) {
+            [data-ui-mode="light"] { ._global-vars(); }
+            [data-ui-mode="dark"] { ._global-vars-dark(); }
+        }
+    }
 
     .ui-steps-bar {
         list-style: none; display: flex;
