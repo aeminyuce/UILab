@@ -276,8 +276,12 @@ ui.requiredForms.Start = () => {
                 e.preventDefault();
                 e.stopPropagation();
 
-                if (ui.hasClass(document, ui.modal.nameModalOpened)) { // stop scrolling when modal opened
-                    return;
+                if (ui.modal !== undefined) { // stop scrolling when modal opened
+
+                    if (ui.hasClass(document, ui.modal.nameModalOpened)) {
+                        return;
+                    }
+
                 }
 
                 scrollPos = window.pageYOffset;

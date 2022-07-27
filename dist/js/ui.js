@@ -2562,8 +2562,10 @@ ui.requiredForms.Start = function () {
       e.preventDefault();
       e.stopPropagation();
 
-      if (ui.hasClass(document, ui.modal.nameModalOpened)) {
-        return;
+      if (ui.modal !== undefined) {
+        if (ui.hasClass(document, ui.modal.nameModalOpened)) {
+          return;
+        }
       }
 
       scrollPos = window.pageYOffset;
