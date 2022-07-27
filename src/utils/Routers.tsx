@@ -2,10 +2,6 @@ import * as React from 'react';
 import { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-// assets
-import "@utils/SharedStyles";
-import "@utils/SharedScripts";
-
 // components
 import StickyHeader from '@components/StickyHeader';
 import PageLoader from '@components/PageLoader';
