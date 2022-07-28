@@ -40,10 +40,10 @@ export default function Calendar() {
 
 interface PickerProps {
     placeholder?: string,
-    classNameExt?: string,
+    className?: string,
 }
 
-export function Picker({placeholder, classNameExt}:PickerProps) {
+export function Picker({placeholder, className}:PickerProps) {
 
     useEffect(() => {
 
@@ -58,11 +58,11 @@ export function Picker({placeholder, classNameExt}:PickerProps) {
 
     }, []); // Runs only first render
 
-    const setClassNameExt = classNameExt ? ' ' + classNameExt : '';
+    const setclassName = className ? ' ' + className : '';
 
     return (
         <>
-            <div className={"ui-calendar-picker ui-input ui-form-icon-l" + setClassNameExt}>
+            <div className={"ui-calendar-picker ui-input ui-form-icon-l" + setclassName}>
                 <Icon src={icon_calendar}></Icon>
                 <input type="text" placeholder={placeholder}/>
             </div>

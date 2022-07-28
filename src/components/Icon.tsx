@@ -1,48 +1,53 @@
 import * as React from 'react';
 
 interface IconProps {
+
     src: string,
+
     size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl',
-    animate?: string,
     opacity?: 'no' | 'more' | 'half' | 'full',
-    classNameExt?: string,
+    animate?: string,
+
+    className?: string,
 }
 
-export default function Icon({src, size, animate, opacity, classNameExt}:IconProps) {
+export default function Icon(
 
-    if (!src)
-        return null;
+    {src, size, animate, opacity, className}:IconProps) {
 
-    const getPath = function(str:string) { // get svg path
+        // get svg path
+        const getPath = function(str:string) {
 
-        const from = str.indexOf("d='") + 3;
+            const from = str.indexOf("d='") + 3;
 
-        const cut = str.indexOf("'/%");
-        const to = str.length - (str.length - cut);
+            const cut = str.indexOf("'/%");
+            const to = str.length - (str.length - cut);
 
-        const path = str.substring(from, to);
-        return path;
+            const path = str.substring(from, to);
+            return path;
+
+        }
+
+        // classes
+        const setSize = size ? ' ui-icon-' + size : '';
+        const setAnimate = animate ? " ui-animate-" + animate : '';
+        const setclassName = className ? ' ' + className : '';
+
+        let setOpacity:String;
+
+        if (opacity === 'no') {
+            setOpacity = ' ui-no-opacity';
+
+        } else {
+            setOpacity = opacity ? ' ui-opacity-' + opacity : '';
+        }
+
+        const classes = "ui-icon" + setSize + setAnimate + setOpacity + setclassName;
+
+        return (
+            <svg className={classes} viewBox="0 0 264 264">
+                <path d={getPath(src)} />
+            </svg>
+        );
 
     }
-
-    const setSize = size ? ' ui-icon-' + size : '';
-    const setAnimate = animate ? " ui-animate-" + animate : '';
-
-    let setOpacity:String;
-
-    if (opacity === 'no') {
-        setOpacity = ' ui-no-opacity';
-
-    } else {
-        setOpacity = opacity ? ' ui-opacity-' + opacity : '';
-    }
-
-    const setClassNameExt = classNameExt ? ' ' + classNameExt : '';
-
-    return (
-        <svg className={"ui-icon" + setSize + setAnimate + setOpacity + setClassNameExt} viewBox="0 0 264 264">
-            <path d={getPath(src)} />
-        </svg>
-    );
-
-}
