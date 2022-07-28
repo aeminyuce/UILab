@@ -21,9 +21,6 @@ import '@less/modules/helpers';
 import '@less/modules/paddings';
 import '@less/modules/margins';
 
-// Buttons
-import '@less/modules/buttons';
-
 // Icons
 import '@less/modules/icons';
 

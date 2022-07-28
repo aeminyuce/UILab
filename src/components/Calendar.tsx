@@ -15,7 +15,7 @@ const icon_calendar = require("@icon/general/calendar.svg") as string;
 import "@less/modules/calendar";
 import "@js/modules/calendar";
 
-export default function Calendar() {
+const Calendar = function () {
 
     useEffect(() => {
 
@@ -38,34 +38,45 @@ export default function Calendar() {
     );
 }
 
-interface PickerProps {
+interface CalendarPickerProps {
+
     placeholder?: string,
     className?: string,
+
 }
 
-export function Picker({placeholder, className}:PickerProps) {
+const CalendarPicker = function (
 
-    useEffect(() => {
+    { placeholder, className }:CalendarPickerProps) {
 
-        // icons
-        ui.globals.inlineSvg = true;
+        useEffect(() => {
 
-        ui.calendar.prevIcon = SVGLoader({src: icon_arrow_left});
-        ui.calendar.nextIcon = SVGLoader({src: icon_arrow_right});
+            // icons
+            ui.globals.inlineSvg = true;
 
-        // init
-        ui.calendar.Init();
+            ui.calendar.prevIcon = SVGLoader({src: icon_arrow_left});
+            ui.calendar.nextIcon = SVGLoader({src: icon_arrow_right});
 
-    }, []); // Runs only first render
+            // init
+            ui.calendar.Init();
 
-    const setclassName = className ? ' ' + className : '';
+        }, []); // Runs only first render
 
-    return (
-        <>
-            <div className={"ui-calendar-picker ui-input ui-form-icon-l" + setclassName}>
-                <Icon src={icon_calendar}></Icon>
-                <input type="text" placeholder={placeholder}/>
-            </div>
-        </>
-    );
-}
+        // classes
+        const setclassName = className ? ' ' + className : '';
+        const classes = "ui-calendar-picker ui-input ui-form-icon-l" + setclassName;
+
+        return (
+            <>
+                <div className={classes}>
+                    <Icon src={icon_calendar}></Icon>
+                    <input type="text" placeholder={placeholder}/>
+                </div>
+            </>
+        );
+    }
+
+
+export default Object.assign(Calendar, {
+    Picker: CalendarPicker,
+});
