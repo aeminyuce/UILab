@@ -1,5 +1,8 @@
 import * as React from 'react';
 
+// assets
+import '@less/modules/icons';
+
 interface IconProps {
 
     src: string,
@@ -9,11 +12,12 @@ interface IconProps {
     animate?: string,
 
     className?: string,
+    style?: any,
 }
 
 export default function Icon(
 
-    {src, size, animate, opacity, className}:IconProps) {
+    {src, size, animate, opacity, className, style }:IconProps) {
 
         // get svg path
         const getPath = function(str:string) {
@@ -33,7 +37,7 @@ export default function Icon(
         const setAnimate = animate ? " ui-animate-" + animate : '';
         const setclassName = className ? ' ' + className : '';
 
-        let setOpacity:String;
+        let setOpacity:string;
 
         if (opacity === 'no') {
             setOpacity = ' ui-no-opacity';
@@ -42,10 +46,10 @@ export default function Icon(
             setOpacity = opacity ? ' ui-opacity-' + opacity : '';
         }
 
-        const classes = "ui-icon" + setSize + setAnimate + setOpacity + setclassName;
+        const classes = 'ui-icon' + setSize + setAnimate + setOpacity + setclassName;
 
         return (
-            <svg className={classes} viewBox="0 0 264 264">
+            <svg className={classes} style={style} viewBox="0 0 264 264">
                 <path d={getPath(src)} />
             </svg>
         );

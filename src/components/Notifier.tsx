@@ -12,12 +12,13 @@ interface NotifierProps {
 
     className?: string,
     dataVal?: number,
+    style?: any,
 
 }
 
 export default function Notifier(
 
-    { children, newNotify, lg, className, dataVal }:NotifierProps) {
+    { children, newNotify, lg, className, dataVal, style }:NotifierProps) {
 
         // classes
         const setNewNotifier = newNotify ? 'ui-notifier' : '';
@@ -28,7 +29,7 @@ export default function Notifier(
 
         return (
             <>
-                <span className={classes} data-ui-val={dataVal}>
+                <span className={classes} data-ui-val={dataVal} style={style}>
                     {children}
                 </span>
             </>

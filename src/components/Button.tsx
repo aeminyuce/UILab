@@ -25,12 +25,13 @@ interface ButtonProps {
 
     className?: string,
     data?: any,
+    style?: any,
 
 }
 
 const Button = function (
 
-    { children, title, to, active, passive, multi, square, ghost, noease, type, size, fluid, className, data }:ButtonProps) {
+    { children, title, to, active, passive, multi, square, ghost, noease, type, size, fluid, className, style, data }:ButtonProps) {
 
         // classes
         const setActive = passive ? ' ui-btn-passive' : '';
@@ -47,14 +48,14 @@ const Button = function (
 
         const setclassName = className ? ' ' + className : '';
 
-        const classes = "ui-btn" + setSize + setFluid + setActive + setPassive + setMulti + setSquare + setGhost + setclassName + setEase;
+        const classes = 'ui-btn' + setSize + setFluid + setActive + setPassive + setMulti + setSquare + setGhost + setclassName + setEase;
 
         // data attributes
         let setData = [];
 
         for (const name in data) {
 
-            const attr = "data-ui-" + name;
+            const attr = 'data-ui-' + name;
             setData[attr] = data[name];
 
         }
@@ -63,13 +64,13 @@ const Button = function (
             <>
                 {to ? (
 
-                    <Link to={to} title={title} type={type} className={classes} {...setData}>
+                    <Link to={to} title={title} type={type} className={classes} {...setData} style={style}>
                         {children}
                     </Link>
 
                 ) : (
 
-                    <button title={title} type={type} className={classes} {...setData}>
+                    <button title={title} type={type} className={classes} {...setData} style={style}>
                         {children}
                     </button>
 
@@ -86,12 +87,13 @@ interface ButtonWrapperProps {
 
     className?: string,
     data?: any,
+    style?: any,
 
 }
 
 const ButtonWrapper = function (
 
-    { children, ease, className, data }:ButtonWrapperProps) {
+    { children, ease, className, data, style }:ButtonWrapperProps) {
 
         // classes
         const setEase = ease ? 'ui-ease-' + ease + '-btn' : '';
@@ -104,14 +106,14 @@ const ButtonWrapper = function (
 
         for (const name in data) {
 
-            const attr = "data-ui-" + name;
+            const attr = 'data-ui-' + name;
             setData[attr] = data[name];
 
         }
 
         return (
             <>
-                <div className={classes} {...setData}>
+                <div className={classes} {...setData} style={style}>
                     {children}
                 </div>
             </>

@@ -41,13 +41,15 @@ const Calendar = function () {
 interface CalendarPickerProps {
 
     placeholder?: string,
+
     className?: string,
+    style?: any,
 
 }
 
 const CalendarPicker = function (
 
-    { placeholder, className }:CalendarPickerProps) {
+    { placeholder, className, style }:CalendarPickerProps) {
 
         useEffect(() => {
 
@@ -64,11 +66,11 @@ const CalendarPicker = function (
 
         // classes
         const setclassName = className ? ' ' + className : '';
-        const classes = "ui-calendar-picker ui-input ui-form-icon-l" + setclassName;
+        const classes = 'ui-calendar-picker ui-input ui-form-icon-l' + setclassName;
 
         return (
             <>
-                <div className={classes}>
+                <div className={classes} style={style}>
                     <Icon src={icon_calendar}></Icon>
                     <input type="text" placeholder={placeholder}/>
                 </div>
