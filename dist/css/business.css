@@ -242,7 +242,7 @@ main {
   height: 50px;
 }
 .business-panel-l-contents {
-  width: calc(100% - 52px);
+  width: calc(100% - 52px) !important;
   height: 100%;
   padding-top: 3px !important;
   position: absolute;

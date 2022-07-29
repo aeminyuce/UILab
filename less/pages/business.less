@@ -136,7 +136,7 @@ each(@panel-sizes, {
 
 		// contents
 		&-contents {
-			width: calc(100% - extract(@panel-sizes, 2)); height: 100%; padding-top: @panel-l-contents-top !important; position: absolute;
+			width: calc(100% - extract(@panel-sizes, 2)) !important; height: 100%; padding-top: @panel-l-contents-top !important; position: absolute;
 
 			& > .ui-tab-content {
 				._bg-var(panel-l-contens-bg); border-radius: (@round - (@round * 0.3333333333)); position: absolute; top: (@panel-l-logo-height + @panel-spacing + 2); right: @panel-spacing; bottom: @panel-spacing; left: 0;
