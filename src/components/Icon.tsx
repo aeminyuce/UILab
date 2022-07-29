@@ -37,13 +37,17 @@ export default function Icon(
         const setAnimate = animate ? " ui-animate-" + animate : '';
         const setclassName = className ? ' ' + className : '';
 
-        let setOpacity:string;
+        let setOpacity: string = '';
 
-        if (opacity === 'no') {
-            setOpacity = ' ui-no-opacity';
+        if (opacity) {
 
-        } else {
-            setOpacity = opacity ? ' ui-opacity-' + opacity : '';
+            if (opacity === 'no') {
+                setOpacity = ' ui-no-opacity';
+
+            } else {
+                setOpacity = ' ui-opacity-' + opacity;
+            }
+
         }
 
         const classes = 'ui-icon' + setSize + setAnimate + setOpacity + setclassName;

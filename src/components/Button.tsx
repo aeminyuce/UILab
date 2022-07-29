@@ -11,13 +11,13 @@ interface ButtonProps {
     title?: string,
     to?: string,
 
-    active?: boolean;
-    passive?: boolean;
-    multi?: boolean;
-    square?: boolean;
-    ghost?: boolean;
+    active?: true;
+    passive?: true;
+    multi?: true;
+    square?: true;
+    ghost?: true;
 
-    noease?: boolean;
+    noease?: true;
 
     type?: 'submit' | 'button' | 'reset',
     size?: 'lg' | 'sm' | 'xs',

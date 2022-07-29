@@ -2,9 +2,11 @@ import * as React from 'react';
 import { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+// layouts
+import PageLoader from '@layouts/PageLoader';
+
 // components
 import StickyHeader from '@components/StickyHeader';
-import PageLoader from '@components/PageLoader';
 import TopButton from '@components/TopButton';
 
 // routes

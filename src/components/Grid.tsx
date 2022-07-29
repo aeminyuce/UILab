@@ -4,24 +4,16 @@ import * as React from 'react';
 import "@less/modules/grid";
 import '@js/modules/grid';
 
-interface GridProps {
+let Grid = function () {}
 
-    Container: any,
-    Row: any,
-
-    Col: any,
-    Static : any,
-
-}
-
-let Grid = function ({ Container, Row, Col, Static }:GridProps) {}
-
-interface ContainerProps {
+interface GridContainerProps {
 
     children?: React.ReactNode,
 
-    variant: 'header' | 'main' | 'footer',
+    as: 'div' | 'header' | 'main' | 'footer',
+
     noGutter?: 'all' | 'xl' | 'lg' | 'sm' | 'xs',
+    fixed?: true | 'xl',
 
     className?: string,
     style?: any,
@@ -30,38 +22,69 @@ interface ContainerProps {
 
 let GridContainer = function (
 
-    { children, variant, noGutter, className, style }:ContainerProps) {
+    { children, as, noGutter, fixed, className, style }:GridContainerProps) {
 
         // classes
-        let setNoGutter:string;
+        let setNoGutter: string = '';
 
-        if (noGutter === 'all') {
-            setNoGutter = noGutter ? ' ui-no-gutter' : '';
+        if (noGutter) {
+
+            if (noGutter === 'all') {
+                setNoGutter = ' ui-no-gutter';
+
+            } else {
+                setNoGutter = ' ui-no-gutter-' + noGutter;
+            }
 
         } else {
-            setNoGutter = noGutter ? ' ui-no-gutter-' + noGutter : '';
+            setNoGutter = '';
+        }
+
+        let setFixed:string = '';
+        let classes:string = '';
+
+        if (fixed) {
+
+            setFixed = 'ui-fixed';
+
+            if (fixed === 'xl') {
+                setFixed += ' ui-fixed-' + fixed;
+            }
+
+        } else {
+
+            setFixed = '';
+            classes += 'ui-container';
+
         }
 
         const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-container' + setNoGutter + setClassName;
+        classes += setNoGutter + setFixed + setClassName;
 
         return (
             <>
-                {variant === 'header' &&
+                {as === 'div' &&
+
+                    <div className={classes} style={style}>
+                        {children}
+                    </div>
+
+                }
+                {as === 'header' &&
 
                     <header className={classes} style={style}>
                         {children}
                     </header>
 
                 }
-                {variant === 'main' &&
+                {as === 'main' &&
 
                     <main className={classes} style={style}>
                         {children}
                     </main>
 
                 }
-                {variant === 'footer' &&
+                {as === 'footer' &&
 
                     <footer className={classes} style={style}>
                         {children}
@@ -95,14 +118,18 @@ const GridRow = function (
         // classes
         const setFluid = fluid ? ' ui-' + fluid + '-fluid' : '';
 
-        let setGap:string;
+        let setGap: string = '';
         const setGapDir = gapDir ? '-' + gapDir : '';
 
-        if (gap === 'no') {
-            setGap = ' ui-no-row-gap' + setGapDir;
+        if (gap) {
 
-        } else {
-            setGap = gap ? ' ui-row-gap-' + gap + setGapDir : '';
+            if (gap === 'no') {
+                setGap = ' ui-no-row-gap' + setGapDir;
+
+            } else {
+                setGap = ' ui-row-gap-' + gap + setGapDir;
+            }
+
         }
 
         const setclassName = className ? ' ' + className : '';
