@@ -154,21 +154,23 @@ const GridRow = function (
         );
     }
 
+const gridSizes = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+
 interface GridColProps {
 
     children?: React.ReactNode,
 
-    size: number | string, // string: for string col names
+    size: typeof gridSizes | string, // string: for string col names
 
-    xl?: number,
-    lg?: number,
-    md?: number,
-    sm?: number,
-    xs?: number,
+    xl?: typeof gridSizes,
+    lg?: typeof gridSizes,
+    md?: typeof gridSizes,
+    sm?: typeof gridSizes,
+    xs?: typeof gridSizes,
 
-    offset?: number,
-    push?: number,
-    pull?: number,
+    offset?: typeof gridSizes,
+    push?: typeof gridSizes,
+    pull?: typeof gridSizes,
 
     fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs',
 

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { ui } from '@ui';
 import Icon from '@components/Icon';
+import Form from '@components/Form';
 
 // utils
 import SVGLoader from '@utils/SVGLoader';
@@ -66,14 +67,13 @@ const CalendarPicker = function (
 
         // classes
         const setclassName = className ? ' ' + className : '';
-        const classes = 'ui-calendar-picker ui-input ui-form-icon-l' + setclassName;
+        const classes = 'ui-calendar-picker ui-form-icon-l' + setclassName;
 
         return (
             <>
-                <div className={classes} style={style}>
+                <Form.Input placeholder={placeholder} className={classes} style={style}>
                     <Icon src={icon_calendar}></Icon>
-                    <input type="text" placeholder={placeholder}/>
-                </div>
+                </Form.Input>
             </>
         );
     }
