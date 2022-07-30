@@ -15,7 +15,7 @@ interface FormLabelProps {
 
     children?: React.ReactNode,
 
-    noease?: true;
+    noease?: true,
 
     className?: string,
     style?: any,
@@ -52,7 +52,7 @@ interface FormInputProps {
     number?: true,
     required?: true,
 
-    noease?: true;
+    noease?: true,
 
     className?: string,
     style?: any,

@@ -13,7 +13,7 @@ import TopButton from '@components/TopButton';
 const Route_Index = lazy(() => import("../App"));
 const Route_Calendar = lazy(() => import("../Calendar"));
 
-export default function Routers() {
+export default function () {
     return (
         <>
             <StickyHeader />

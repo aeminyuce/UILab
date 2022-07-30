@@ -8,7 +8,7 @@ import LineChart from '@components/LineChart';
 const icon_envelope = require("@icon/general/envelope.svg") as string;
 const icon_camera = require("@icon/media/camera.svg") as string;
 
-export default function App() {
+export default function () {
     return (
         <>
             <div className="ui-fixed ui-p-30-v">

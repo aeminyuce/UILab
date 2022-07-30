@@ -4,7 +4,7 @@ import Icon from '@components/Icon';
 // assets
 const icon_loader_line = require("@icon/general/loader-line.svg") as string;
 
-export default function PageLoader() {
+export default function () {
     return (
         <>
             <div className="ui-card ui-set-fixed ui-set-all">

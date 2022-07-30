@@ -9,15 +9,16 @@ interface ButtonProps {
     children?: React.ReactNode,
 
     title?: string,
+    href?: string,
     to?: string,
 
-    active?: true;
-    passive?: true;
-    multi?: true;
-    square?: true;
-    ghost?: true;
+    active?: true,
+    passive?: true,
+    multi?: true,
+    square?: true,
+    ghost?: true,
 
-    noease?: true;
+    noease?: true,
 
     type?: 'submit' | 'button' | 'reset',
     size?: 'lg' | 'sm' | 'xs',
@@ -31,7 +32,7 @@ interface ButtonProps {
 
 const Button = function (
 
-    { children, title, to, active, passive, multi, square, ghost, noease, type, size, fluid, className, style, data }:ButtonProps) {
+    { children, title, href, to, active, passive, multi, square, ghost, noease, type, size, fluid, className, style, data }:ButtonProps) {
 
         // classes
         const setActive = passive ? ' ui-btn-passive' : '';
@@ -62,19 +63,25 @@ const Button = function (
 
         return (
             <>
-                {to ? (
+                {href &&
+                    <a href={href} title={title} type={type} className={classes} {...setData} style={style}>
+                        {children}
+                    </a>
+                }
+                {to &&
 
                     <Link to={to} title={title} type={type} className={classes} {...setData} style={style}>
                         {children}
                     </Link>
 
-                ) : (
+                }
+                {!href && !to &&
 
                     <button title={title} type={type} className={classes} {...setData} style={style}>
                         {children}
                     </button>
 
-                )}
+                }
             </>
         );
     }

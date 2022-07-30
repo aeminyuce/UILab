@@ -7,8 +7,8 @@ interface NotifierProps {
 
     children?: React.ReactNode,
 
-    newNotify?: true;
-    lg?: true;
+    newNotify?: true,
+    lg?: true,
 
     className?: string,
     dataVal?: number,

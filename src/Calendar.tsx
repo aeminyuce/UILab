@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Calendar from '@components/Calendar';
 
-export default function Page_Calendar() {
+export default function () {
     return (
         <>
             <div className="ui-fixed ui-p-30-v">
