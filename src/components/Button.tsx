@@ -46,9 +46,9 @@ const Button = function (
         const setSize = size ? ' ui-btn-' + size : '';
         const setFluid = fluid ? ' ui-btn-' + fluid + '-fluid' : '';
 
-        const setclassName = className ? ' ' + className : '';
+        const setClassName = className ? ' ' + className : '';
 
-        const classes = 'ui-btn' + setSize + setFluid + setActive + setPassive + setMulti + setSquare + setGhost + setclassName + setEase;
+        const classes = 'ui-btn' + setSize + setFluid + setActive + setPassive + setMulti + setSquare + setGhost + setClassName + setEase;
 
         // data attributes
         let setData = [];
@@ -97,9 +97,9 @@ const ButtonWrapper = function (
 
         // classes
         const setEase = ease ? 'ui-ease-' + ease + '-btn' : '';
-        const setclassName = className ? ' ' + className : '';
+        const setClassName = className ? ' ' + className : '';
 
-        const classes = setEase + setclassName;
+        const classes = setEase + setClassName;
 
         // data attributes
         let setData = [];

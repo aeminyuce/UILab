@@ -23,9 +23,9 @@ export default function Notifier(
         // classes
         const setNewNotifier = newNotify ? 'ui-notifier' : '';
         const setLarge = lg ? ' ui-notifier-lg' : '';
-        const setclassName = className ? ' ' + className : '';
+        const setClassName = className ? ' ' + className : '';
 
-        const classes = setNewNotifier + setLarge + setclassName;
+        const classes = setNewNotifier + setLarge + setClassName;
 
         return (
             <>

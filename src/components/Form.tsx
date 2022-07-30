@@ -47,6 +47,7 @@ interface FormInputProps {
 
     type?: 'text' | 'password' | 'date' | 'datetime-local' | 'month' | 'week' | 'email' | 'tel' | 'time',
     placeholder?: string,
+    disabled?: true,
 
     number?: true,
     required?: true,
@@ -60,16 +61,17 @@ interface FormInputProps {
 
 const FormInput = function (
 
-    { children, type, placeholder, number, required, noease, className, style }:FormInputProps) {
+    { children, type, placeholder, disabled, number, required, noease, className, style }:FormInputProps) {
 
         // types
         const setType = type ? type : 'text';
 
         // classes
         const setClassName = className ? ' ' + className : '';
+        const setDisabled = disabled ? ' ui-form-disabled' : '';
         const setEase = noease ? '' : ' ui-ease-form';
 
-        const classes = 'ui-input' + setClassName + setEase;
+        const classes = 'ui-input' + setDisabled + setClassName + setEase;
 
         // children classes
         const setNumber = number ? 'ui-number' : '';
@@ -86,7 +88,7 @@ const FormInput = function (
             <>
                 <div className={classes} style={style}>
                     {children}
-                    <input type={setType} placeholder={placeholder} className={childrenClasses} />
+                    <input type={setType} placeholder={placeholder} className={childrenClasses} disabled={disabled} />
                 </div>
             </>
         );

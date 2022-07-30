@@ -18,8 +18,8 @@ const Card = function (
     { children, className, style }:CardProps) {
 
         // classes
-        const setclassName = className ? ' ' + className : '';
-        const classes = 'ui-card' + setclassName;
+        const setClassName = className ? ' ' + className : '';
+        const classes = 'ui-card' + setClassName;
 
         return (
             <>
@@ -35,8 +35,8 @@ const CardSide = function (
     { children, className, style }:CardProps) {
 
         // classes
-        const setclassName = className ? ' ' + className : '';
-        const classes = 'ui-card-side' + setclassName;
+        const setClassName = className ? ' ' + className : '';
+        const classes = 'ui-card-side' + setClassName;
 
         return (
             <>

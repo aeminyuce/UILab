@@ -20,10 +20,10 @@ export default function Avatar(
     { children, size, className, data, style }:AvatarProps) {
 
         // classes
-        const setclassName = className ? ' ' + className : '';
+        const setClassName = className ? ' ' + className : '';
         const setSize = size ? ' ui-avatar-' + size : '';
 
-        const classes = 'ui-avatar' + setSize + setclassName;
+        const classes = 'ui-avatar' + setSize + setClassName;
 
         // data attributes
         let setData = [];

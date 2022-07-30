@@ -132,8 +132,8 @@ const GridRow = function (
 
         }
 
-        const setclassName = className ? ' ' + className : '';
-        const classes = 'ui-row' + setFluid + setGap + setclassName;
+        const setClassName = className ? ' ' + className : '';
+        const classes = 'ui-row' + setFluid + setGap + setClassName;
 
         // data attributes
         let setData = [];
@@ -202,9 +202,9 @@ const GridCol = function (
         const offsets = setOffset + setPush + setPull;
 
         const setFluid = fluid ? ' ui-' + fluid + '-fluid' : '';
-        const setclassName = className ? ' ' + className : '';
+        const setClassName = className ? ' ' + className : '';
 
-        const classes = sizes + offsets + setFluid + setclassName;
+        const classes = sizes + offsets + setFluid + setClassName;
 
         // data attributes
         let setData = [];
@@ -243,9 +243,9 @@ const GridStatic = function (
 
         // classes
         const setFluid = fluid ? ' ui-' + fluid + '-fluid' : '';
-        const setclassName = className ? ' ' + className : '';
+        const setClassName = className ? ' ' + className : '';
 
-        const classes = 'ui-col-static' + setFluid + setclassName;
+        const classes = 'ui-col-static' + setFluid + setClassName;
 
         // data attributes
         let setData = [];

@@ -18,8 +18,8 @@ const Breadcrumbs = function (
     { children, className, style }:BreadcrumbsProps) {
 
         // classes
-        const setclassName = className ? ' ' + className : '';
-        const classes = 'ui-breadcrumbs' + setclassName;
+        const setClassName = className ? ' ' + className : '';
+        const classes = 'ui-breadcrumbs' + setClassName;
 
         return (
             <>
@@ -50,8 +50,8 @@ const BreadcrumbsItem = function (
     { children, to, className, data, style }:BreadcrumbsItemProps) {
 
         // classes
-        const setclassName = className ? ' ' + className : '';
-        const classes = 'ui-breadcrumbs' + setclassName;
+        const setClassName = className ? ' ' + className : '';
+        const classes = 'ui-breadcrumbs' + setClassName;
 
         // data attributes
         let setData = [];

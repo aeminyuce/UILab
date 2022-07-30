@@ -14,9 +14,8 @@ export default function Spacer(
     { size, className, style }:SpacerProps) {
 
         // classes
-        const setclassName = className ? ' ' + className : '';
-
-        const classes = 'ui-sp-' + size + setclassName;
+        const setClassName = className ? ' ' + className : '';
+        const classes = 'ui-sp-' + size + setClassName;
 
         return (
             <>

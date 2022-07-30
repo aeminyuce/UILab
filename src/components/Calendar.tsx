@@ -66,8 +66,8 @@ const CalendarPicker = function (
         }, []); // Runs only first render
 
         // classes
-        const setclassName = className ? ' ' + className : '';
-        const classes = 'ui-calendar-picker ui-form-icon-l' + setclassName;
+        const setClassName = className ? ' ' + className : '';
+        const classes = 'ui-calendar-picker ui-form-icon-l' + setClassName;
 
         return (
             <>

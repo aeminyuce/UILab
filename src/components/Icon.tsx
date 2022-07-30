@@ -35,7 +35,7 @@ export default function Icon(
         // classes
         const setSize = size ? ' ui-icon-' + size : '';
         const setAnimate = animate ? " ui-animate-" + animate : '';
-        const setclassName = className ? ' ' + className : '';
+        const setClassName = className ? ' ' + className : '';
 
         let setOpacity: string = '';
 
@@ -50,7 +50,7 @@ export default function Icon(
 
         }
 
-        const classes = 'ui-icon' + setSize + setAnimate + setOpacity + setclassName;
+        const classes = 'ui-icon' + setSize + setAnimate + setOpacity + setClassName;
 
         return (
             <svg className={classes} style={style} viewBox="0 0 264 264">
