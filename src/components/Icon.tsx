@@ -53,9 +53,11 @@ export default function Icon(
         const classes = 'ui-icon' + setSize + setAnimate + setOpacity + setClassName;
 
         return (
-            <svg className={classes} style={style} viewBox="0 0 264 264">
-                <path d={getPath(src)} />
-            </svg>
+            <>
+                <svg className={classes} style={style} viewBox="0 0 264 264">
+                    <path d={getPath(src)} />
+                </svg>
+            </>
         );
 
     }

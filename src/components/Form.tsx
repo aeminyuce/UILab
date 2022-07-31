@@ -45,6 +45,8 @@ interface FormInputProps {
 
     children?: React.ReactNode,
 
+    onChange?: React.ReactEventHandler,
+
     type?: 'text' | 'password' | 'date' | 'datetime-local' | 'month' | 'week' | 'email' | 'tel' | 'time',
     placeholder?: string,
     disabled?: true,
@@ -61,7 +63,7 @@ interface FormInputProps {
 
 const FormInput = function (
 
-    { children, type, placeholder, disabled, number, required, noease, className, style }:FormInputProps) {
+    { children, onChange, type, placeholder, disabled, number, required, noease, className, style }:FormInputProps) {
 
         // types
         const setType = type ? type : 'text';
@@ -88,7 +90,7 @@ const FormInput = function (
             <>
                 <div className={classes} style={style}>
                     {children}
-                    <input type={setType} placeholder={placeholder} className={childrenClasses} disabled={disabled} />
+                    <input type={setType} placeholder={placeholder} className={childrenClasses} disabled={disabled} onChange={onChange} />
                 </div>
             </>
         );
@@ -98,6 +100,8 @@ interface FormSelectProps {
 
     children?: React.ReactNode,
 
+    onChange?: React.ReactEventHandler,
+
     className?: string,
     style?: any,
 
@@ -105,18 +109,17 @@ interface FormSelectProps {
 
 const FormSelect = function (
 
-    { children, className, style }:FormSelectProps) {
+    { children, onChange, className, style }:FormSelectProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
-
         const classes = 'ui-select' + setClassName + ' ui-ease-form';
 
         return (
             <>
                 <div className={classes} style={style}>
                     <Icon src={icon_angle_down}></Icon>
-                    <select>
+                    <select onChange={onChange}>
                         {children}
                     </select>
                 </div>

@@ -66,23 +66,26 @@ const Button = function (
         return (
             <>
                 {href &&
-                    <a href={href} target={target} title={title} type={type} className={classes} {...setData} style={style}>
-                        {children}
-                    </a>
+                    <>
+                        <a href={href} target={target} title={title} type={type} className={classes} {...setData} style={style}>
+                            {children}
+                        </a>
+                    </>
                 }
                 {to &&
-
-                    <Link to={to} title={title} type={type} className={classes} {...setData} style={style}>
-                        {children}
-                    </Link>
+                    <>
+                        <Link to={to} title={title} type={type} className={classes} {...setData} style={style}>
+                            {children}
+                        </Link>
+                    </>
 
                 }
                 {!href && !to &&
-
-                    <button title={title} type={type} className={classes} {...setData} style={style}>
-                        {children}
-                    </button>
-
+                    <>
+                        <button title={title} type={type} className={classes} {...setData} style={style}>
+                            {children}
+                        </button>
+                    </>
                 }
             </>
         );

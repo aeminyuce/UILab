@@ -64,32 +64,32 @@ let GridContainer = function (
         return (
             <>
                 {as === 'div' &&
-
-                    <div className={classes} style={style}>
-                        {children}
-                    </div>
-
+                    <>
+                        <div className={classes} style={style}>
+                            {children}
+                        </div>
+                    </>
                 }
                 {as === 'header' &&
-
-                    <header className={classes} style={style}>
-                        {children}
-                    </header>
-
+                    <>
+                        <header className={classes} style={style}>
+                            {children}
+                        </header>
+                    </>
                 }
                 {as === 'main' &&
-
-                    <main className={classes} style={style}>
-                        {children}
-                    </main>
-
+                    <>
+                        <main className={classes} style={style}>
+                            {children}
+                        </main>
+                    </>
                 }
                 {as === 'footer' &&
-
-                    <footer className={classes} style={style}>
-                        {children}
-                    </footer>
-
+                    <>
+                        <footer className={classes} style={style}>
+                            {children}
+                        </footer>
+                    </>
                 }
             </>
         );
