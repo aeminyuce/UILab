@@ -492,13 +492,13 @@
                                             Şifre Değiştir
                                         </a>
                                     </li>
-                                    <li class="ui-sep">
+                                    <li>
                                         <a href="#">
                                             <svg class="ui-menu-icon ui-icon"><use href="../dist/icons.svg#desktop"></use></svg>
                                             Lock Screen
                                         </a>
                                     </li>
-                                    <li class="ui-sep">
+                                    <li>
                                         <a href="#">
                                             <svg class="ui-menu-icon ui-icon"><use href="../dist/icons.svg#sign-out"></use></svg>
                                             Sign Out
