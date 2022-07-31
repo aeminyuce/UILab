@@ -204,6 +204,7 @@ main {
   z-index: 6;
   border-radius: 0 10px 10px 0;
 }
+.business-panel-l > .ui-tab-holder,
 .business-panel-l > .ui-col-static {
   height: 100%;
 }
