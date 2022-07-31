@@ -9,20 +9,15 @@ import '@less/modules/user-agents';
 import '@less/modules/dark-mode';
 import '@less/modules/effects';
 
-// Grid
-import '@less/modules/grid';
-
 // Typography
 import '@less/modules/typography';
 import '@less/modules/listings';
 
 // Utilities
 import '@less/modules/helpers';
+import '@less/modules/borders';
 import '@less/modules/paddings';
 import '@less/modules/margins';
-
-// Icons
-import '@less/modules/icons';
 
 // Layout
 import '@less/modules/scrollbar';
@@ -30,3 +25,6 @@ import '@less/modules/scrollbar';
 // Themes
 import '@less/modules/themes';
 import '@less/modules/themes-ext';
+
+// Components
+import '@less/modules/tooltip';

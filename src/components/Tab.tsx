@@ -37,6 +37,8 @@ interface TabContentProps {
 
     children?: React.ReactNode,
 
+    open?: true,
+
     className?: string,
     style?: any,
 
@@ -44,11 +46,13 @@ interface TabContentProps {
 
 const TabContent = function (
 
-    { children, className, style }:TabContentProps) {
+    { children, open, className, style }:TabContentProps) {
 
         // classes
+        const setOpen = open ? ' ui-open ui-open-ease' : '';
+
         const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-tab-content' + setClassName;
+        const classes = 'ui-tab-content' + setClassName + setOpen;
 
         return (
             <>

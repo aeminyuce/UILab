@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PageLoader from '@layouts/PageLoader';
 
 // components
-import StickyHeader from '@components/StickyHeader';
 import TopButton from '@components/TopButton';
 
 // routes
@@ -16,8 +15,6 @@ const Route_Calendar = lazy(() => import("../Calendar"));
 export default function () {
     return (
         <>
-            <StickyHeader />
-
             <BrowserRouter>
                 <Suspense fallback={<PageLoader />}>
                     <Routes>

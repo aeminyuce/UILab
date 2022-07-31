@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import Icon from '@components/Icon';
 import Button from '@components/Button';
+import Grid from '@components/Grid';
 import LineChart from '@components/LineChart';
 
 // assets
@@ -11,7 +12,7 @@ const icon_camera = require("@icon/media/camera.svg") as string;
 export default function () {
     return (
         <>
-            <div className="ui-fixed ui-p-30-v">
+            <Grid.Container fixed as="div" className="ui-p-30-v">
 
                 <img src="/img/uilab-logo.png" />
                 <br/>
@@ -35,20 +36,20 @@ export default function () {
                     Test Button
                 </Button>
                 <br/><br/>
-                <div className="ui-col-12">
-                    <h3 className="ui-h3">Line Charts</h3>
-                </div>
-                <div className="ui-row">
-                    <div className="ui-col-12">
+                <Grid.Row>
+                    <Grid.Col size={12}>
+                        <h3 className="ui-h3">Line Charts</h3>
+                    </Grid.Col>
+                    <Grid.Col size={12}>
                         <LineChart />
-                    </div>
-                </div>
+                    </Grid.Col>
+                </Grid.Row>
 
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 show top button
 
-            </div>
+            </Grid.Container>
         </>
     );
 }

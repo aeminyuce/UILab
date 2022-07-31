@@ -17,5 +17,5 @@ import '@js/modules/user-agents';
 import '@js/modules/dark-mode';
 import '@js/modules/effects';
 
-// Grid
-import '@js/modules/grid';
+// Components
+import '@js/modules/tooltip';
