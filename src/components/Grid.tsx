@@ -232,14 +232,13 @@ interface GridStaticProps {
     fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs',
 
     className?: string,
-    data?: any,
     style?: any,
 
 }
 
 const GridStatic = function (
 
-    { children, fluid, className, data, style }:GridStaticProps) {
+    { children, fluid, className, style }:GridStaticProps) {
 
         // classes
         const setFluid = fluid ? ' ui-' + fluid + '-fluid' : '';
@@ -247,19 +246,9 @@ const GridStatic = function (
 
         const classes = 'ui-col-static' + setFluid + setClassName;
 
-        // data attributes
-        let setData = [];
-
-        for (const name in data) {
-
-            const attr = 'data-ui-' + name;
-            setData[attr] = data[name];
-
-        }
-
         return (
             <>
-                <div className={classes} {...setData} style={style}>
+                <div className={classes} style={style}>
                     {children}
                 </div>
             </>
