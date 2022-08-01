@@ -3677,7 +3677,7 @@ ui.calendar.Start = function () {
     setTimeout(function () {
       ui.addClass(picker, ui.calendar.nameOpenEase);
     }, 10);
-    ui.on('body', 'mousedown.' + ui.calendar.eventClose, function (ev) {
+    ui.on(document, 'mousedown.' + ui.calendar.eventClose, function (ev) {
       if (ui.closest(ev.target, form)[0] !== undefined) {
         return;
       }

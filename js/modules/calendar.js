@@ -849,7 +849,7 @@ ui.calendar.Start = () => {
             }, 10);
 
             // close event listeners
-            ui.on('body',
+            ui.on(document,
                 'mousedown.' + ui.calendar.eventClose,
 
                 (ev) => {
