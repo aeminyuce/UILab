@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Suspense, lazy } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 // layouts
 import PageLoader from '@layouts/PageLoader';
@@ -15,14 +15,14 @@ const Route_Calendar = lazy(() => import("../Calendar"));
 export default function () {
     return (
         <>
-            <BrowserRouter>
+            <HashRouter>
                 <Suspense fallback={<PageLoader />}>
                     <Routes>
                         <Route path="/" element={<Route_Index />} />
                         <Route path="calendar" element={<Route_Calendar />} />
                     </Routes>
                 </Suspense>
-            </BrowserRouter>
+            </HashRouter>
 
             <TopButton />
         </>
