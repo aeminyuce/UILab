@@ -20,7 +20,7 @@ export default function TopButton() {
         ui.topButton.icon = SVGLoader({src: icon_arrow_to_top});
 
         // settings
-        ui.topButton.stylesTarget = 'ui-circle ui-ease-layout';
+        ui.topButton.stylesTarget = 'ui-circle ui-ease-layout ui-theme-sub ui-fill-dark-100';
 
     }, []); // Runs only first render
 

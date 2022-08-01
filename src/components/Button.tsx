@@ -8,6 +8,8 @@ interface ButtonProps {
 
     children?: React.ReactNode,
 
+    onClick?: React.ReactEventHandler,
+
     title?: string,
     to?: string,
 
@@ -34,7 +36,7 @@ interface ButtonProps {
 
 const Button = function (
 
-    { children, title, to, href, target, active, passive, multi, square, ghost, noease, type, size, fluid, className, style, data }:ButtonProps) {
+    { children, onClick, title, to, href, target, active, passive, multi, square, ghost, noease, type, size, fluid, className, style, data }:ButtonProps) {
 
         // classes
         const setActive = passive ? ' ui-btn-passive' : '';
@@ -67,14 +69,14 @@ const Button = function (
             <>
                 {href &&
                     <>
-                        <a href={href} target={target} title={title} type={type} className={classes} {...setData} style={style}>
+                        <a href={href} target={target} title={title} type={type} className={classes} {...setData} style={style} onClick={onClick}>
                             {children}
                         </a>
                     </>
                 }
                 {to &&
                     <>
-                        <Link to={to} title={title} type={type} className={classes} {...setData} style={style}>
+                        <Link to={to} title={title} type={type} className={classes} {...setData} style={style} onClick={onClick}>
                             {children}
                         </Link>
                     </>
@@ -82,7 +84,7 @@ const Button = function (
                 }
                 {!href && !to &&
                     <>
-                        <button title={title} type={type} className={classes} {...setData} style={style}>
+                        <button title={title} type={type} className={classes} {...setData} style={style} onClick={onClick}>
                             {children}
                         </button>
                     </>
