@@ -20,7 +20,7 @@ export default function Icon(
     {src, size, animate, opacity, className, style }:IconProps) {
 
         // get svg path
-        const getPath = function(str:string) {
+        const getPath = function(str: string) {
 
             const from = str.indexOf("d='") + 3;
 

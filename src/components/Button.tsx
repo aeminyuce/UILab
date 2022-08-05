@@ -9,9 +9,11 @@ interface ButtonProps {
     children?: React.ReactNode,
 
     onClick?: React.ReactEventHandler,
+    value?: any,
 
     title?: string,
     to?: string,
+    state?: any,
 
     href?: string,
     target?: '_blank' | '_self' | '_parent' | '_top',
@@ -36,7 +38,7 @@ interface ButtonProps {
 
 const Button = function (
 
-    { children, onClick, title, to, href, target, active, passive, multi, square, ghost, noease, type, size, fluid, className, style, data }:ButtonProps) {
+    { children, onClick, value, title, to, state, href, target, active, passive, multi, square, ghost, noease, type, size, fluid, className, style, data }:ButtonProps) {
 
         // classes
         const setActive = passive ? ' ui-btn-passive' : '';
@@ -69,14 +71,14 @@ const Button = function (
             <>
                 {href &&
                     <>
-                        <a href={href} target={target} title={title} type={type} className={classes} {...setData} style={style} onClick={onClick}>
+                        <a href={href} target={target} title={title} className={classes} {...setData} style={style} onClick={onClick}>
                             {children}
                         </a>
                     </>
                 }
                 {to &&
                     <>
-                        <Link to={to} title={title} type={type} className={classes} {...setData} style={style} onClick={onClick}>
+                        <Link to={to} state={state} title={title} className={classes} {...setData} style={style} onClick={onClick}>
                             {children}
                         </Link>
                     </>
@@ -84,7 +86,7 @@ const Button = function (
                 }
                 {!href && !to &&
                     <>
-                        <button title={title} type={type} className={classes} {...setData} style={style} onClick={onClick}>
+                        <button value={value} title={title} className={classes} {...setData} style={style} onClick={onClick}>
                             {children}
                         </button>
                     </>

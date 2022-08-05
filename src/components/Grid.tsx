@@ -40,8 +40,8 @@ let GridContainer = function (
             setNoGutter = '';
         }
 
-        let setFixed:string = '';
-        let classes:string = '';
+        let setFixed: string = '';
+        let classes: string = '';
 
         if (fixed) {
 

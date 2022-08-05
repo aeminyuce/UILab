@@ -14,7 +14,7 @@ export default function () {
         <>
             <Grid.Container fixed as="div" className="ui-p-30-v">
 
-                <img src="/img/uilab-logo.png" />
+                <img src="img/uilab-logo.png" />
                 <br/>
                 <Link className="ui-link" to="/">Home</Link> | <Link className="ui-link" to="/calendar">Calendar</Link>
                 <br/><br/>

@@ -7,7 +7,7 @@ export default function () {
         <>
             <Grid.Container fixed as="div" className="ui-p-30-v">
 
-                <img src="/img/uilab-logo.png" />
+                <img src="img/uilab-logo.png" />
                 <h1 className="ui-h3">Calendars</h1>
                 <Grid.Row>
                     <Grid.Col size={12}>
