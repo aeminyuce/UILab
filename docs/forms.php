@@ -1848,7 +1848,7 @@
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                    <input class="ui-required" type="text" minnumber="-5" maxnumber="10">
+                                    <input class="ui-required" type="text" min="-5" max="10">
                                 </div>
                                 <p class="ui-required-msg">Minimum number is -5 and maximum number is 10.</p>
                                 <i class="ui-form-hint ui-color-black-25">* Required</i>

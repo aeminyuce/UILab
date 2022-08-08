@@ -137,7 +137,7 @@ ui.requiredForms.Start = () => {
             // check min and max numbers
             if (type !== ui.requiredForms.nameSelect) {
 
-                min = el.getAttribute('minnumber');
+                min = el.getAttribute('min');
                 if (min !== null && min !== '' && !isNaN(min)) {
 
                     if (!isNaN(val)) {
@@ -146,7 +146,7 @@ ui.requiredForms.Start = () => {
 
                 }
 
-                max = el.getAttribute('maxnumber');
+                max = el.getAttribute('max');
                 if (max !== null && max !== '' && !isNaN(max)) {
 
                     if (!isNaN(val)) {
