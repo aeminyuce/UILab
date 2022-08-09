@@ -52,8 +52,15 @@ interface FormInputProps {
     disabled?: true,
     inline?: true,
 
+    icons?: 'r' | 'l' | 'all',
+
     number?: true,
     required?: true,
+
+    minLength?: number,
+    maxLength?: number,
+    min?: number,
+    max?: number,
 
     noease?: true,
 
@@ -64,7 +71,7 @@ interface FormInputProps {
 
 const FormInput = function (
 
-    { children, onChange, type, placeholder, disabled, inline, number, required, noease, className, style }:FormInputProps) {
+    { children, onChange, type, placeholder, disabled, inline, icons, number, required, minLength, maxLength, min, max, noease, className, style }:FormInputProps) {
 
         // types
         const setType = type ? type : 'text';
@@ -75,7 +82,19 @@ const FormInput = function (
         const setEase = noease ? '' : ' ui-ease-form';
         const setInline = inline ? ' ui-form-inline' : '';
 
-        const classes = 'ui-input' + setDisabled + setClassName + setInline + setEase;
+        let setIcons: string = '';
+
+        if (icons === 'r') {
+            setIcons = ' ui-form-icon';
+
+        } else if (icons === 'l') {
+            setIcons = ' ui-form-icon-l';
+
+        } else if (icons === 'all') {
+            setIcons = ' ui-form-icon-all';
+        }
+
+        const classes = 'ui-input' + setIcons + setDisabled + setClassName + setInline + setEase;
 
         // children classes
         const setNumber = number ? 'ui-number' : '';
@@ -92,7 +111,10 @@ const FormInput = function (
             <>
                 <div className={classes} style={style}>
                     {children}
-                    <input type={setType} placeholder={placeholder} className={childrenClasses} disabled={disabled} onChange={onChange} />
+                    <input type={setType} placeholder={placeholder} className={childrenClasses} disabled={disabled}
+                        minLength={minLength} maxLength={maxLength} min={min} max={max}
+                        onChange={onChange}
+                    />
                 </div>
             </>
         );
@@ -103,9 +125,14 @@ interface FormSelectProps {
     children?: React.ReactNode,
 
     onChange?: React.ReactEventHandler,
-
     disabled?: true,
     inline?: true,
+    required?: true,
+
+    myRef?: any,
+    defaultValue?: any,
+
+    noease?: true,
 
     className?: string,
     style?: any,
@@ -114,20 +141,26 @@ interface FormSelectProps {
 
 const FormSelect = function (
 
-    { children, onChange, disabled, inline, className, style }:FormSelectProps) {
+    { children, onChange, disabled, inline, required, myRef, defaultValue, noease, className, style }:FormSelectProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
         const setDisabled = disabled ? ' ui-form-disabled' : '';
+        const setEase = noease ? '' : ' ui-ease-form';
         const setInline = inline ? ' ui-form-inline' : '';
 
-        const classes = 'ui-select' + setDisabled + setClassName + setInline + ' ui-ease-form';
+        const classes = 'ui-select' + setDisabled + setClassName + setInline + setEase;
+
+        // children classes
+        const setRequired = required ? ' ui-required' : '';
+
+        const childrenClasses = setRequired;
 
         return (
             <>
                 <div className={classes} style={style}>
                     <Icon src={icon_angle_down}></Icon>
-                    <select onChange={onChange} disabled={disabled}>
+                    <select ref={myRef} defaultValue={defaultValue} onChange={onChange} className={childrenClasses} disabled={disabled}>
                         {children}
                     </select>
                 </div>
@@ -145,6 +178,10 @@ interface FormCheckProps {
     checked?: boolean,
     disabled?: true,
 
+    required?: true,
+
+    noease?: true,
+
     className?: string,
     style?: any,
 
@@ -152,20 +189,26 @@ interface FormCheckProps {
 
 const FormCheck = function (
 
-    { label, onChange, id, checked, disabled, className, style }:FormCheckProps) {
+    { label, onChange, id, checked, disabled, required, noease, className, style }:FormCheckProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
         const setLabelSpace = label ? ' ui-m-5-r' : '';
         const setDisabled = disabled ? ' ui-form-disabled' : '';
+        const setEase = noease ? '' : ' ui-ease-form';
 
-        const classes = 'ui-check' + setDisabled + setClassName + setLabelSpace + ' ui-ease-form';
+        const classes = 'ui-check' + setDisabled + setClassName + setLabelSpace + setEase;
+
+        // children classes
+        const setRequired = required ? ' ui-required' : '';
+
+        const childrenClasses = setRequired;
 
         return (
             <>
                 <label className="ui-label">
                     <span className={classes} style={style}>
-                        <input id={id} type="checkbox" onChange={onChange} checked={checked} disabled={disabled} />
+                        <input id={id} type="checkbox" onChange={onChange} checked={checked} className={childrenClasses} disabled={disabled} />
                         <i className="ui-form-state"></i>
                     </span>
                     {label}
@@ -184,6 +227,10 @@ interface FormSwitchProps {
     checked?: boolean,
     disabled?: true,
 
+    required?: true,
+
+    noease?: true,
+
     className?: string,
     style?: any,
 
@@ -191,20 +238,26 @@ interface FormSwitchProps {
 
 const FormSwitch = function (
 
-    { label, onChange, id, checked, disabled, className, style }:FormSwitchProps) {
+    { label, onChange, id, checked, disabled, required, noease, className, style }:FormSwitchProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
         const setLabelSpace = label ? ' ui-m-5-r' : '';
         const setDisabled = disabled ? ' ui-form-disabled' : '';
+        const setEase = noease ? '' : ' ui-ease-form';
 
-        const classes = 'ui-switch' + setDisabled + setClassName + setLabelSpace + ' ui-ease-form';
+        const classes = 'ui-switch' + setDisabled + setClassName + setLabelSpace + setEase;
+
+        // children classes
+        const setRequired = required ? ' ui-required' : '';
+
+        const childrenClasses = setRequired;
 
         return (
             <>
                 <label className="ui-label">
                     <span className={classes} style={style}>
-                        <input id={id} type="checkbox" onChange={onChange} checked={checked} disabled={disabled} />
+                        <input id={id} type="checkbox" onChange={onChange} checked={checked} className={childrenClasses} disabled={disabled} />
                         <i className="ui-form-state ui-fill-dark-100"></i>
                     </span>
                     {label}

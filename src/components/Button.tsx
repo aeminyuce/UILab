@@ -25,6 +25,7 @@ interface ButtonProps {
     ghost?: true,
 
     noease?: true,
+    nostyle?: true,
 
     type?: 'submit' | 'button' | 'reset',
     size?: 'lg' | 'sm' | 'xs',
@@ -38,7 +39,7 @@ interface ButtonProps {
 
 const Button = function (
 
-    { children, onClick, value, title, to, state, href, target, active, passive, multi, square, ghost, noease, type, size, fluid, className, style, data }:ButtonProps) {
+    { children, onClick, value, title, to, state, href, target, active, passive, multi, square, ghost, noease, nostyle, type, size, fluid, className, style, data }:ButtonProps) {
 
         // classes
         const setActive = passive ? ' ui-btn-passive' : '';
@@ -55,7 +56,14 @@ const Button = function (
 
         const setClassName = className ? ' ' + className : '';
 
-        const classes = 'ui-btn' + setSize + setFluid + setActive + setPassive + setMulti + setSquare + setGhost + setClassName + setEase;
+        let classes = null;
+
+        if (nostyle) {
+            classes = className ? className : null;
+
+        } else {
+            classes = 'ui-btn' + setSize + setFluid + setActive + setPassive + setMulti + setSquare + setGhost + setClassName + setEase;
+        }
 
         // data attributes
         let setData = [];
@@ -86,7 +94,7 @@ const Button = function (
                 }
                 {!href && !to &&
                     <>
-                        <button value={value} title={title} className={classes} {...setData} style={style} onClick={onClick}>
+                        <button type={type} value={value} title={title} className={classes} {...setData} style={style} onClick={onClick}>
                             {children}
                         </button>
                     </>
