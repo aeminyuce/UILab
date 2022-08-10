@@ -9,8 +9,8 @@ import PageLoader from '@layouts/PageLoader';
 import TopButton from '@components/TopButton';
 
 // routes
-const Route_Index = lazy(() => import("../App"));
-const Route_Calendar = lazy(() => import("../Calendar"));
+const Route_Index = lazy(() => import(/* webpackChunkName: "App" */ "../App"));
+const Route_Calendar = lazy(() => import(/* webpackChunkName: "Calendar" */ "../Calendar"));
 
 export default function () {
     return (

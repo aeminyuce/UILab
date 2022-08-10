@@ -3,16 +3,15 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 const config = {
     output: {
-        filename: '[contenthash].js',
+        filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'bundle'), // when script not serve mode!
     },
     optimization: {
         splitChunks: {
+            chunks: 'all',
             cacheGroups: {
                 vendors: {
-                    chunks: 'all', // split all output files
-                    test: /\/node_modules\//, // reduce random numbered files
-                    enforce: true,
+                    test: /\/node_modules\//, // no importing node modules folder
                 }
             }
         },

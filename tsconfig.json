@@ -12,6 +12,9 @@
       },
       "jsx": "react",
       "allowSyntheticDefaultImports": true,
+      // for webpack magic comments
+      "module": "esnext",
+      "moduleResolution": "node",
     },
     "include": [
       "src/**/*.tsx",
