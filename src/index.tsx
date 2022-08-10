@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { createRoot } from 'react-dom/client';
 
-// assets
+// shared assets
 import "@utils/SharedStyles";
 import "@utils/SharedScripts";
 
-// utils
-import Routers from '@utils/Routers';
+// app
+import App from './App';
 
 const root = createRoot(document.getElementById('app'));
-root.render(<Routers />);
+root.render(<App />);

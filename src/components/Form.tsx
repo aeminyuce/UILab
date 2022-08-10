@@ -2,7 +2,7 @@ import * as React from 'react';
 import Icon from '@components/Icon';
 
 // assets
-const icon_angle_down = require("@icon/angle-down.svg") as string;
+const icon_angle_down = require("@icon/general/angle-down.svg") as string;
 
 import "@less/modules/forms";
 

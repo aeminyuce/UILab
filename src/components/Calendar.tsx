@@ -8,10 +8,10 @@ import Form from '@components/Form';
 import SVGLoader from '@utils/SVGLoader';
 
 // assets
-const icon_angle_left = require("@icon/angle-left.svg") as string;
-const icon_arrow_left = require("@icon/arrow-left.svg") as string;
-const icon_arrow_right = require("@icon/arrow-right.svg") as string;
-const icon_calendar = require("@icon/calendar.svg") as string;
+const icon_angle_left = require("@icon/general/angle-left.svg") as string;
+const icon_arrow_left = require("@icon/general/arrow-left.svg") as string;
+const icon_arrow_right = require("@icon/general/arrow-right.svg") as string;
+const icon_calendar = require("@icon/general/calendar.svg") as string;
 
 import "@less/modules/calendar";
 import "@js/modules/calendar";
