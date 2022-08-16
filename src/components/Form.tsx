@@ -48,9 +48,12 @@ interface FormInputProps {
     onChange?: React.ReactEventHandler,
 
     type?: 'text' | 'password' | 'date' | 'datetime-local' | 'month' | 'week' | 'email' | 'tel' | 'time',
+    name?: string,
+    value?: any,
     placeholder?: string,
     disabled?: true,
     inline?: true,
+    autoComplete?: 'on' | 'off' | 'username' | 'new-password',
 
     icons?: 'r' | 'l' | 'all',
 
@@ -71,7 +74,7 @@ interface FormInputProps {
 
 const FormInput = function (
 
-    { children, onChange, type, placeholder, disabled, inline, icons, number, required, minLength, maxLength, min, max, noease, className, style }:FormInputProps) {
+    { children, onChange, type, name, value, placeholder, disabled, inline, autoComplete, icons, number, required, minLength, maxLength, min, max, noease, className, style }:FormInputProps) {
 
         // types
         const setType = type ? type : 'text';
@@ -111,10 +114,10 @@ const FormInput = function (
             <>
                 <div className={classes} style={style}>
                     {children}
-                    <input type={setType} placeholder={placeholder} className={childrenClasses} disabled={disabled}
+                    <input type={setType} name={name} value={value} placeholder={placeholder}
+                        autoComplete={autoComplete} className={childrenClasses} disabled={disabled}
                         minLength={minLength} maxLength={maxLength} min={min} max={max}
-                        onChange={onChange}
-                    />
+                        onChange={onChange}/>
                 </div>
             </>
         );

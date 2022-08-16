@@ -10,6 +10,9 @@ interface TabHolderProps {
 
     children?: React.ReactNode,
 
+    accordion?: true,
+    noease?: true,
+
     className?: string,
     dataClasses? : string,
     style?: any,
@@ -18,11 +21,15 @@ interface TabHolderProps {
 
 const TabHolder = function (
 
-    { children, className, dataClasses, style }:TabHolderProps) {
+    { children, accordion, noease, className, dataClasses, style }:TabHolderProps) {
 
         // classes
+        const setAccordion = accordion ? ' ui-tab-accordion' : '';
+        const setEase = noease ? '' : ' ui-ease-tab';
+
         const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-tab-holder' + setClassName + ' ui-ease-tab';
+
+        const classes = 'ui-tab-holder' + setAccordion + setClassName + setEase;
 
         return (
             <>

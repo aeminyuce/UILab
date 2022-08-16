@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { useEffect } from 'react';
+import { ui } from '@ui';
 
 // assets
 import "@less/modules/grid";
@@ -161,18 +163,32 @@ interface GridColProps {
     children?: React.ReactNode,
 
     size: typeof gridSizes | string, // string: for string col names
-
-    xl?: typeof gridSizes,
-    lg?: typeof gridSizes,
-    md?: typeof gridSizes,
-    sm?: typeof gridSizes,
-    xs?: typeof gridSizes,
-
     offset?: typeof gridSizes,
     push?: typeof gridSizes,
     pull?: typeof gridSizes,
 
+    xl?: typeof gridSizes | {
+        size?: typeof gridSizes, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
+    },
+    lg?: typeof gridSizes | {
+        size?: typeof gridSizes, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
+    },
+    md?: typeof gridSizes | {
+        size?: typeof gridSizes, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
+    },
+    sm?: typeof gridSizes | {
+        size?: typeof gridSizes, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
+    },
+    xs?: typeof gridSizes | {
+        size?: typeof gridSizes, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
+    },
+
     fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs',
+
+    order?: {
+        when: 'xl' | 'lg' | 'default' | 'sm' | 'xs',
+        position: 'first' | 'last',
+    },
 
     className?: string,
     data?: any,
@@ -182,29 +198,79 @@ interface GridColProps {
 
 const GridCol = function (
 
-    { children, size, xl, lg, md, sm, xs, offset, push, pull, fluid, className, data, style }:GridColProps) {
+    { children, size, offset, push, pull, xl, lg, md, sm, xs, fluid, order, className, data, style }:GridColProps) {
 
         // classes
         const setSize = size ? 'ui-col-' + size : '';
-
-        const setXl = xl ? ' ui-col-xl-' + xl : '';
-        const setLg = lg ? ' ui-col-lg-' + lg : '';
-        const setMd = md ? ' ui-col-md-' + md : '';
-        const setSm = sm ? ' ui-col-sm-' + sm : '';
-        const setXs = xs ? ' ui-col-xs-' + xs : '';
-
-        const sizes = setSize + setXl + setLg + setMd + setSm + setXs;
-
         const setOffset = offset ? ' ui-offset-' + offset : '';
         const setPush = push ? ' ui-push-' + push : '';
         const setPull = pull ? ' ui-pull-' + pull : '';
 
-        const offsets = setOffset + setPush + setPull;
+        const defaults = setSize + setOffset + setPush + setPull;
+
+        let setXl = '';
+        let setLg = '';
+        let setMd = '';
+        let setSm = '';
+        let setXs = '';
+
+        if (xl instanceof Object) {
+
+            setXl += xl.size ? ' ui-col-xl-' + xl.size : '';
+            setXl += xl.offset ? ' ui-offset-xl-' + xl.offset : '';
+            setXl += xl.push ? ' ui-push-xl-' + xl.push : '';
+            setXl += xl.pull ? ' ui-pull-xl-' + xl.pull : '';
+
+        } else { setXl = xl ? ' ui-col-xl-' + xl : ''; }
+
+        if (lg instanceof Object) {
+
+            setLg += lg.size ? ' ui-col-lg-' + lg.size : '';
+            setLg += lg.offset ? ' ui-offset-lg-' + lg.offset : '';
+            setLg += lg.push ? ' ui-push-lg-' + lg.push : '';
+            setLg += lg.pull ? ' ui-pull-lg-' + lg.pull : '';
+
+        } else { setLg = lg ? ' ui-col-lg-' + lg : ''; }
+
+        if (md instanceof Object) {
+
+            setMd += md.size ? ' ui-col-md-' + md.size : '';
+            setMd += md.offset ? ' ui-offset-md-' + md.offset : '';
+            setMd += md.push ? ' ui-push-md-' + md.push : '';
+            setMd += md.pull ? ' ui-pull-md-' + md.pull : '';
+
+        } else { setMd = md ? ' ui-col-md-' + md : ''; }
+
+        if (sm instanceof Object) {
+
+            setSm += sm.size ? ' ui-col-sm-' + sm.size : '';
+            setSm += sm.offset ? ' ui-offset-sm-' + sm.offset : '';
+            setSm += sm.push ? ' ui-push-sm-' + sm.push : '';
+            setSm += sm.pull ? ' ui-pull-sm-' + sm.pull : '';
+
+        } else { setSm = sm ? ' ui-col-sm-' + sm : ''; }
+
+        if (xs instanceof Object) {
+
+            setXs += xs.size ? ' ui-col-xs-' + xs.size : '';
+            setXs += xs.offset ? ' ui-offset-xs-' + xs.offset : '';
+            setXs += xs.push ? ' ui-push-xs-' + xs.push : '';
+            setXs += xs.pull ? ' ui-pull-xs-' + xs.pull : '';
+
+        } else { setXs = xs ? ' ui-col-xs-' + sm : ''; }
+
+        const responsiveSizes = setXl + setLg + setMd + setSm + setXs;
 
         const setFluid = fluid ? ' ui-' + fluid + '-fluid' : '';
         const setClassName = className ? ' ' + className : '';
 
-        const classes = sizes + offsets + setFluid + setClassName;
+        let setOrder = '';
+
+        if (order instanceof Object) {
+            setOrder += order.when ? ' ui-order-' + order.when + '-' + order.position : '';
+        }
+
+        const classes = defaults + responsiveSizes + setFluid + setClassName + setOrder;
 
         // data attributes
         let setData = [];
@@ -215,6 +281,13 @@ const GridCol = function (
             setData[attr] = data[name];
 
         }
+
+        useEffect(() => {
+
+            // start
+            ui.grid.Start();
+
+        }, []); // Runs only first render
 
         return (
             <>
