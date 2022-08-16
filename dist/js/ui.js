@@ -1322,7 +1322,7 @@ ui.tab.Start = function () {
             }
           }, ui.globals.fast / 2);
         }, 0);
-        ui.on(document, 'mouseup.' + ui.tab.eventCloseToggleTabs, function (ev) {
+        ui.on(document, 'mousedown.' + ui.tab.eventCloseToggleTabs, function (ev) {
           if (ev.button !== 2) {
             var holderEl = ui.closest(ev.target, '.' + ui.tab.targetParent)[0];
 
@@ -1365,7 +1365,7 @@ ui.tab.Start = function () {
               ui.removeClass(content, ui.tab.nameOpenEase);
             }, 0);
             ui.trigger(document, ui.tab.eventToggleTabsClosed);
-            ui.off(document, 'mouseup.' + ui.tab.eventCloseToggleTabs);
+            ui.off(document, 'mousedown.' + ui.tab.eventCloseToggleTabs);
           }
         });
       } else {

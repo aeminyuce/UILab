@@ -252,7 +252,7 @@ ui.tab.Start = () => {
 
                     // close opened toggle tabs when outside the tabs
                     ui.on(document,
-                        'mouseup.' + ui.tab.eventCloseToggleTabs,
+                        'mousedown.' + ui.tab.eventCloseToggleTabs,
 
                         function (ev) {
 
@@ -303,7 +303,7 @@ ui.tab.Start = () => {
                                 }, 0);
 
                                 ui.trigger(document, ui.tab.eventToggleTabsClosed); // set custom event
-                                ui.off(document, 'mouseup.' + ui.tab.eventCloseToggleTabs);
+                                ui.off(document, 'mousedown.' + ui.tab.eventCloseToggleTabs);
 
                             }
 
