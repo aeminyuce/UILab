@@ -108,6 +108,7 @@ interface ButtonWrapperProps {
     children?: React.ReactNode,
 
     ease: '1st' | '2nd',
+    largeButtons?: true,
 
     className?: string,
     data?: any,
@@ -117,13 +118,15 @@ interface ButtonWrapperProps {
 
 const ButtonWrapper = function (
 
-    { children, ease, className, data, style }:ButtonWrapperProps) {
+    { children, ease, largeButtons, className, data, style }:ButtonWrapperProps) {
 
         // classes
         const setEase = ease ? 'ui-ease-' + ease + '-btn' : '';
+        const setLargeButtons = largeButtons ? ' ui-form-lg' : '';
+
         const setClassName = className ? ' ' + className : '';
 
-        const classes = setEase + setClassName;
+        const classes = setEase + setLargeButtons + setClassName;
 
         // data attributes
         let setData = [];
