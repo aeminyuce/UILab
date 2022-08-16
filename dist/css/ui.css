@@ -61,8 +61,7 @@ body {
 .ui-ios {
   -webkit-text-size-adjust: 100%;
 }
-.ui-ie .ui-hidden-ie,
-.ui-ie .ui-darkmode-toggle {
+.ui-ie .ui-hidden-ie {
   display: none !important;
 }
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
@@ -94,6 +93,9 @@ body {
 [data-ui-mode="dark"] .ui-invert-bg {
   background-color: hsl(220, 8%, 32%) !important;
   background-color: var(--ui-invert-bg) !important;
+}
+.ui-ie .ui-darkmode-toggle {
+  display: none !important;
 }
 /* effects */
 @keyframes ui-spin {
