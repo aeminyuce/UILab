@@ -100,19 +100,17 @@ ui.tab.Start = () => {
             accordion = false;
             toggle = false;
 
+            if (ui.hasClass(parent, ui.tab.nameAccordion)) {
+                accordion = true;
+            }
+
             if (ui.hasClass(this, ui.tab.nameToggle)) {
-
                 toggle = true;
-
-                if (ui.hasClass(parent, ui.tab.nameAccordion)) {
-                    accordion = true;
-                }
-
             }
 
             if (ui.hasClass(this, ui.tab.nameActive)) {
 
-                if (toggle) {
+                if (toggle || accordion) {
 
                     if (accordion) {
 
@@ -138,7 +136,7 @@ ui.tab.Start = () => {
 
                             }
 
-                        }, ui.globals.ease * 2);
+                        }, accordion ? ui.globals.ease * 2 : ui.globals.fast / 2);
 
                         if (classes) {
                             ui.toggleClass(tabs[index], classes);
@@ -163,7 +161,7 @@ ui.tab.Start = () => {
                 ui.removeClass(tabs, ui.tab.nameActive);
                 ui.addClass(tabs[index], ui.tab.nameActive);
 
-                if (toggle) {
+                if (toggle || accordion) {
 
                     lastOpened = '';
 
@@ -207,7 +205,7 @@ ui.tab.Start = () => {
 
                                     }
 
-                                }, ui.globals.ease * 2);
+                                }, accordion ? ui.globals.ease * 2 : ui.globals.fast / 2);
 
                                 ui.removeClass(lastOpened, ui.tab.nameOpenEase);
 
@@ -242,11 +240,11 @@ ui.tab.Start = () => {
                                     currentContent.style.removeProperty('height');
                                     currentContent.style.removeProperty('overflow');
 
-                                }, ui.globals.ease * 2);
+                                }, accordion ? ui.globals.ease * 2 : ui.globals.fast / 2);
 
                             }
 
-                        }, ui.globals.fast / 2);
+                        }, accordion ? ui.globals.fast / 2 : ui.globals.fast / 2);
 
                     }, 0);
 
@@ -291,7 +289,7 @@ ui.tab.Start = () => {
 
                                         }
 
-                                    }, ui.globals.ease * 2);
+                                    }, accordion ? ui.globals.ease * 2 : ui.globals.fast / 2);
 
                                     if (classes) {
                                         ui.removeClass(tabs, classes);

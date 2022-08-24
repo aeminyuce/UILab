@@ -1221,16 +1221,16 @@ ui.tab.Start = function () {
     accordion = false;
     toggle = false;
 
+    if (ui.hasClass(parent, ui.tab.nameAccordion)) {
+      accordion = true;
+    }
+
     if (ui.hasClass(this, ui.tab.nameToggle)) {
       toggle = true;
-
-      if (ui.hasClass(parent, ui.tab.nameAccordion)) {
-        accordion = true;
-      }
     }
 
     if (ui.hasClass(this, ui.tab.nameActive)) {
-      if (toggle) {
+      if (toggle || accordion) {
         if (accordion) {
           currentContent.style.height = currentContent.offsetHeight + 'px';
           currentContent.style.overflow = 'hidden';
@@ -1248,7 +1248,7 @@ ui.tab.Start = function () {
               currentContent.style.removeProperty('height');
               currentContent.style.removeProperty('overflow');
             }
-          }, ui.globals.ease * 2);
+          }, accordion ? ui.globals.ease * 2 : ui.globals.fast / 2);
 
           if (classes) {
             ui.toggleClass(tabs[index], classes);
@@ -1267,7 +1267,7 @@ ui.tab.Start = function () {
       ui.removeClass(tabs, ui.tab.nameActive);
       ui.addClass(tabs[index], ui.tab.nameActive);
 
-      if (toggle) {
+      if (toggle || accordion) {
         lastOpened = '';
         ui.each(content, function () {
           if (this !== currentContent) {
@@ -1295,7 +1295,7 @@ ui.tab.Start = function () {
                 lastOpened.style.removeProperty('height');
                 lastOpened.style.removeProperty('overflow');
               }
-            }, ui.globals.ease * 2);
+            }, accordion ? ui.globals.ease * 2 : ui.globals.fast / 2);
             ui.removeClass(lastOpened, ui.tab.nameOpenEase);
           }, 0);
         }
@@ -1318,9 +1318,9 @@ ui.tab.Start = function () {
               setTimeout(function () {
                 currentContent.style.removeProperty('height');
                 currentContent.style.removeProperty('overflow');
-              }, ui.globals.ease * 2);
+              }, accordion ? ui.globals.ease * 2 : ui.globals.fast / 2);
             }
-          }, ui.globals.fast / 2);
+          }, accordion ? ui.globals.fast / 2 : ui.globals.fast / 2);
         }, 0);
         ui.on(document, 'mousedown.' + ui.tab.eventCloseToggleTabs, function (ev) {
           if (ev.button !== 2) {
@@ -1355,7 +1355,7 @@ ui.tab.Start = function () {
                   currentContent.style.removeProperty('height');
                   currentContent.style.removeProperty('overflow');
                 }
-              }, ui.globals.ease * 2);
+              }, accordion ? ui.globals.ease * 2 : ui.globals.fast / 2);
 
               if (classes) {
                 ui.removeClass(tabs, classes);
