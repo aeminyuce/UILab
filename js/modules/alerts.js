@@ -388,7 +388,7 @@ ui.alerts = {
                 msgStyles += ui.alerts.stylesMsgTheme + ' ';
             }
 
-            // create mssage
+            // create message
             let holder = ui.find('.' + ui.alerts.nameMsgHolder)[0];
             let html = '';
 
@@ -432,8 +432,8 @@ ui.alerts = {
 
                             let slide = 0;
 
-                            for (let i = j + 1; i < arr.length; i++) {
-                                slide += Number(el.offsetHeight + 10);
+                            for (let i = (j + 1); i < arr.length; i++) {
+                                slide += (prev[i].offsetHeight + 10);
                             }
 
                             if (props.pos === ui.alerts.posBottomRight || props.pos === ui.alerts.posBottomLeft) {

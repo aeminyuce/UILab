@@ -3102,7 +3102,7 @@ ui.alerts = {
             var slide = 0;
 
             for (var i = j + 1; i < arr.length; i++) {
-              slide += Number(el.offsetHeight + 10);
+              slide += prev[i].offsetHeight + 10;
             }
 
             if (props.pos === ui.alerts.posBottomRight || props.pos === ui.alerts.posBottomLeft) {
