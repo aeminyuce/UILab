@@ -5,6 +5,13 @@ const config = {
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'bundle'), // when script not serve mode!
+        clean: { // clean the output directory before emit.
+            keep(asset) { // keep these folders
+                return (
+                    asset.includes('img') // use || for multiple includes
+                );
+            },
+        },
     },
     optimization: {
         splitChunks: {
