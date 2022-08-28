@@ -14,8 +14,9 @@
 & when (@referenceCompiling = false) { // not compiled when reference importing
 
     .ui-card,[class*="ui-card-"]:not(.ui-card-side):not(.ui-card-close) {
-        ._bg-var(card-bg); display: block; position: relative;
+        display: block; position: relative;
 
+        &:not([class*="ui-fill-"]) { ._bg-var(card-bg); }
         &:not(:last-child) { margin-bottom: @highlight-space; }
     }
 
