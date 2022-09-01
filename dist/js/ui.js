@@ -7573,7 +7573,7 @@ ui.lineChart = {
   showInfo: true,
   rows: 5,
   rowsHeight: 50,
-  curveSize: 10,
+  curveSize: 1,
   gridStroke: 1,
   gridStrokeArray: 4,
   lineStroke: 2,
