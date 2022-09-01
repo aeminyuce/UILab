@@ -3,6 +3,16 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-p-30">
 
+                <h3 class="ui-h3">No Styled Button</h3>
+                <div class="ui-row ui-p-30-b ui-block-2nd ui-form-lg ui-ease-2nd-btn">
+                    <div class="ui-col-3 ui-col-sm-6">
+                        <button class="ui-btn-no-style" href="#">No Styled Button</button>
+                    </div>
+                    <div class="ui-col-3 ui-col-sm-6">
+                        <a href="#" class="ui-btn-no-style" href="#">No Styled Link</a>
+                    </div>
+                </div>
+
                 <h3 class="ui-h3">Button Styles</h3>
                 <div class="ui-row ui-p-30-b ui-block-2nd ui-form-lg ui-ease-2nd-btn">
                     <div class="ui-col-3 ui-col-sm-6">
