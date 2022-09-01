@@ -9,7 +9,7 @@
                         <button class="ui-btn-no-style" href="#">No Styled Button</button>
                     </div>
                     <div class="ui-col-3 ui-col-sm-6">
-                        <a href="#" class="ui-btn-no-style" href="#">No Styled Link</a>
+                        <a href="#" class="ui-link" href="#">No Styled Link</a>
                     </div>
                 </div>
 
