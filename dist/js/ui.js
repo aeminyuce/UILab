@@ -7579,7 +7579,7 @@ ui.lineChart = {
   lineStroke: 2,
   circleSize: 4,
   top: 6,
-  right: 8,
+  right: 16,
   bottom: 15,
   left: 35,
   dotted: 'dotted',
