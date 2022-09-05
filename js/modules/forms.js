@@ -227,7 +227,7 @@ ui.forms = {
 
                 }
 
-                const ignoreList = [8, 9, 35, 36, 37, 39, 46]; // backspace, tab, end, home, arrow left, arrow right, delete
+                const ignoreList = [8, 9, 13, 35, 36, 37, 39, 46]; // backspace, tab, enter, end, home, arrow left, arrow right, delete
 
                 if (ignoreList.indexOf(char) === -1 && !isRefresh && (char < 48 || char > 57)) { // 48-57: 0-9
                     e.preventDefault();

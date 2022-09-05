@@ -2218,7 +2218,7 @@ ui.forms = {
         }
       }
 
-      var ignoreList = [8, 9, 35, 36, 37, 39, 46];
+      var ignoreList = [8, 9, 13, 35, 36, 37, 39, 46];
 
       if (ignoreList.indexOf(char) === -1 && !isRefresh && (char < 48 || char > 57)) {
         e.preventDefault();
