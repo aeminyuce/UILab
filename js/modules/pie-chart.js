@@ -66,7 +66,7 @@ ui.pieChart = {
 
         ui.pieChart.Init = () => {
 
-            var chart, elems, deg, textDeg, loadFnc, arr, fill, percent, html, title, msgHolder, msg;
+            var chart, elems, deg, textDeg, loadFnc, arr, fill, percent, html, title, msgHolder;
 
             chart = ui.find('.' + ui.pieChart.target);
             if (chart.length < 1) { return; }
@@ -119,10 +119,24 @@ ui.pieChart = {
                 }
 
                 textDeg = arr[i - 1] - 90 + (deg / 2);
+                title = that.getAttribute(ui.pieChart.dataTitle);
 
                 html = '<' + ui.pieChart.tagMsg + ' style="-ms-transform: rotate(' + textDeg + 'deg) translateY(-50%); transform: rotate(' + textDeg + 'deg) translateY(-50%);">' +
 
-                            '<' + ui.pieChart.tagTitle + ' style="-ms-transform: rotate(' + -textDeg + 'deg); transform: rotate(' + -textDeg + 'deg);">' + percent + '%' +
+                            '<' + ui.pieChart.tagTitle + ' style="-ms-transform: rotate(' + -textDeg + 'deg); transform: rotate(' + -textDeg + 'deg);"';
+
+                if (title !== null && title !== '') { // add titles for dataTitle attributes
+
+                    html += ' title="' + title + '"';
+
+                    if (ui.tooltip !== undefined) { // Optional!
+                        html += ' ' + ui.tooltip.dataTooltip;
+                    }
+
+                }
+
+                html += '>' +
+                                percent + '%' +
                             '</' + ui.pieChart.tagTitle + '>' +
 
                         '</' + ui.pieChart.tagMsg + '>';
@@ -140,20 +154,6 @@ ui.pieChart = {
                 }
 
                 msgHolder.insertAdjacentHTML('beforeEnd', html);
-
-                title = that.getAttribute(ui.pieChart.dataTitle);
-                if (title !== null && title !== '') { // add titles for dataTitle attributes
-
-                    msg = ui.find(ui.pieChart.tagMsg, msgHolder)[i];
-                    msg = ui.find(ui.pieChart.tagTitle, msg)[0];
-
-                    msg.setAttribute('title', title);
-
-                    if (ui.tooltip !== undefined) { // Optional!
-                        msg.setAttribute(ui.tooltip.dataTooltip, '');
-                    }
-
-                }
 
                 if (elems.length > 0) {
 
@@ -267,3 +267,4 @@ ui.pieChart = {
         });
 
 })();
+

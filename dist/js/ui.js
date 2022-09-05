@@ -7943,7 +7943,7 @@ ui.pieChart = {
 
   ui.pieChart.Start = function () {
     ui.pieChart.Init = function () {
-      var chart, elems, deg, textDeg, loadFnc, arr, fill, percent, html, title, msgHolder, msg;
+      var chart, elems, deg, textDeg, loadFnc, arr, fill, percent, html, title, msgHolder;
       chart = ui.find('.' + ui.pieChart.target);
 
       if (chart.length < 1) {
@@ -7980,7 +7980,18 @@ ui.pieChart = {
         }
 
         textDeg = arr[i - 1] - 90 + deg / 2;
-        html = '<' + ui.pieChart.tagMsg + ' style="-ms-transform: rotate(' + textDeg + 'deg) translateY(-50%); transform: rotate(' + textDeg + 'deg) translateY(-50%);">' + '<' + ui.pieChart.tagTitle + ' style="-ms-transform: rotate(' + -textDeg + 'deg); transform: rotate(' + -textDeg + 'deg);">' + percent + '%' + '</' + ui.pieChart.tagTitle + '>' + '</' + ui.pieChart.tagMsg + '>';
+        title = that.getAttribute(ui.pieChart.dataTitle);
+        html = '<' + ui.pieChart.tagMsg + ' style="-ms-transform: rotate(' + textDeg + 'deg) translateY(-50%); transform: rotate(' + textDeg + 'deg) translateY(-50%);">' + '<' + ui.pieChart.tagTitle + ' style="-ms-transform: rotate(' + -textDeg + 'deg); transform: rotate(' + -textDeg + 'deg);"';
+
+        if (title !== null && title !== '') {
+          html += ' title="' + title + '"';
+
+          if (ui.tooltip !== undefined) {
+            html += ' ' + ui.tooltip.dataTooltip;
+          }
+        }
+
+        html += '>' + percent + '%' + '</' + ui.pieChart.tagTitle + '>' + '</' + ui.pieChart.tagMsg + '>';
         msgHolder = ui.find(ui.pieChart.tagMsgHolder, parent)[0];
 
         if (msgHolder === undefined) {
@@ -7989,17 +8000,6 @@ ui.pieChart = {
         }
 
         msgHolder.insertAdjacentHTML('beforeEnd', html);
-        title = that.getAttribute(ui.pieChart.dataTitle);
-
-        if (title !== null && title !== '') {
-          msg = ui.find(ui.pieChart.tagMsg, msgHolder)[i];
-          msg = ui.find(ui.pieChart.tagTitle, msg)[0];
-          msg.setAttribute('title', title);
-
-          if (ui.tooltip !== undefined) {
-            msg.setAttribute(ui.tooltip.dataTooltip, '');
-          }
-        }
 
         if (elems.length > 0) {
           i = Array.prototype.slice.call(elems).indexOf(that);
