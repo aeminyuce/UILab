@@ -52,10 +52,9 @@ const config = {
                 exclude: /node_modules/,
                 use: { // loads JSX files
                     loader: "babel-loader",
-                    presets: [
-                        ["@babel/preset-env", { targets: "ie 11" }],
-                        "@babel/preset-react",
-                    ],
+                    options: {
+                        presets: ["@babel/preset-env", "@babel/preset-react"],
+                    },
                 },
             },
             {
