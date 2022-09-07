@@ -1,5 +1,4 @@
 import { ui } from '@ui';
-import { useEffect } from 'react';
 
 // utils
 import SVGLoader from '@utils/SVGLoader';
@@ -16,8 +15,8 @@ interface AlertsDialogProps {
 
     msg: string,
 
-    success?: 'Got it!',
-    error?: 'No, thanks!',
+    success?: string,
+    error?: string,
     custom?: {
         first?: string,
         second?: string,
@@ -32,13 +31,12 @@ const AlertsDialog = function (
 
     { msg, success, error, custom, callback }:AlertsDialogProps) {
 
-        useEffect(() => {
+        // icons
+        ui.globals.inlineSvg = true;
+        ui.alerts.closeIcon = SVGLoader({src: icon_remove});
 
-            // icons
-            ui.globals.inlineSvg = true;
-            ui.alerts.closeIcon = SVGLoader({src: icon_remove});
-
-        }, []); // Runs only first render
+        // messages
+        ui.alerts.msgDialogSuccess = 'Tamam';
 
         // custom buttons
         let setCustom = null;

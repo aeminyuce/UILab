@@ -10,7 +10,7 @@ export default function () {
         <>
             <Card className="ui-set-fixed ui-set-all">
                 <div className="ui-set-absolute ui-set-c">
-                    <Icon src={icon_loader_line} size="xxl" animate="spin"></Icon>
+                    <Icon src={icon_loader_line} size="xxl" animate="spin" />
                 </div>
             </Card>
         </>

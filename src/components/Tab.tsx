@@ -10,8 +10,8 @@ interface TabHolderProps {
 
     children?: React.ReactNode,
 
-    accordion?: true,
-    noease?: true,
+    accordion?: boolean,
+    noease?: boolean,
 
     className?: string,
     dataClasses? : string,
@@ -44,7 +44,7 @@ interface TabContentProps {
 
     children?: React.ReactNode,
 
-    open?: true,
+    open?: boolean,
 
     className?: string,
     style?: any,

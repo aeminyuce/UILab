@@ -8,8 +8,11 @@ interface IconProps {
     src: string,
 
     size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl',
+    float?: 'l' | 'r',
     opacity?: 'no' | 'more' | 'half' | 'full',
     animate?: string,
+
+    toggle?: boolean,
 
     className?: string,
     style?: any,
@@ -17,7 +20,7 @@ interface IconProps {
 
 export default function Icon(
 
-    {src, size, animate, opacity, className, style }:IconProps) {
+    {src, size, float, opacity, animate, toggle, className, style }:IconProps) {
 
         // get svg path
         const getPath = function(str: string) {
@@ -35,6 +38,9 @@ export default function Icon(
         // classes
         const setSize = size ? ' ui-icon-' + size : '';
         const setAnimate = animate ? " ui-animate-" + animate : '';
+        const setFloat = float ? ' ui-float-' + float : '';
+        const setToggle = toggle ? ' ui-toggle-icon' : '';
+
         const setClassName = className ? ' ' + className : '';
 
         let setOpacity: string = '';
@@ -50,7 +56,7 @@ export default function Icon(
 
         }
 
-        const classes = 'ui-icon' + setSize + setAnimate + setOpacity + setClassName;
+        const classes = 'ui-icon' + setSize + setAnimate + setFloat + setToggle + setOpacity + setClassName;
 
         return (
             <>

@@ -72,7 +72,7 @@ const CalendarPicker = function (
         return (
             <>
                 <Form.Input placeholder={placeholder} className={classes} style={style}>
-                    <Icon src={icon_calendar}></Icon>
+                    <Icon src={icon_calendar} />
                 </Form.Input>
             </>
         );

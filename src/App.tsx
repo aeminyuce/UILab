@@ -45,17 +45,17 @@ const Home = function () {
                 <br/><br/>
 
                 <h1>Icons</h1>
-                <Icon src={icon_envelope} size="xs"></Icon>
-                <Icon src={icon_envelope} size="sm"></Icon>
-                <Icon src={icon_envelope}></Icon>
-                <Icon src={icon_envelope} size="lg"></Icon>
-                <Icon src={icon_envelope} size="xl"></Icon>
-                <Icon src={icon_envelope} size="xxl"></Icon>
-                <Icon src={icon_camera}></Icon>
-                <Icon src={icon_camera} size="xl"></Icon>
-                <Icon src={icon_camera} size="xxl"></Icon>
+                <Icon src={icon_envelope} size="xs" />
+                <Icon src={icon_envelope} size="sm" />
+                <Icon src={icon_envelope} />
+                <Icon src={icon_envelope} size="lg" />
+                <Icon src={icon_envelope} size="xl" />
+                <Icon src={icon_envelope} size="xxl" />
+                <Icon src={icon_camera} />
+                <Icon src={icon_camera} size="xl" />
+                <Icon src={icon_camera} size="xxl" />
                 <br/>
-                <Icon src={icon_envelope} size="lg" animate="bounce-y"></Icon>
+                <Icon src={icon_envelope} size="lg" animate="bounce-y" />
                 <br/><br/>
                 <Button type="submit">
                     Test Button

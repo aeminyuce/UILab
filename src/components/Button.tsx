@@ -18,14 +18,17 @@ interface ButtonProps {
     href?: string,
     target?: '_blank' | '_self' | '_parent' | '_top',
 
-    active?: true,
-    passive?: true,
-    multi?: true,
-    square?: true,
-    ghost?: true,
+    active?: boolean,
+    passive?: boolean,
+    multi?: boolean,
+    square?: boolean,
+    ghost?: boolean,
+    block?: boolean,
 
-    noease?: true,
-    nostyle?: true,
+    myRef?: any,
+
+    noease?: boolean,
+    nostyle?: boolean,
 
     type?: 'submit' | 'button' | 'reset',
     size?: 'lg' | 'sm' | 'xs',
@@ -39,7 +42,7 @@ interface ButtonProps {
 
 const Button = function (
 
-    { children, onClick, value, title, to, state, href, target, active, passive, multi, square, ghost, noease, nostyle, type, size, fluid, className, style, data }:ButtonProps) {
+    { children, onClick, value, title, to, state, href, target, active, passive, multi, square, ghost, block, myRef, noease, nostyle, type, size, fluid, className, style, data }:ButtonProps) {
 
         // classes
         const setActive = passive ? ' ui-btn-passive' : '';
@@ -48,6 +51,7 @@ const Button = function (
         const setMulti = multi ? ' ui-btn-multi' : '';
         const setSquare = square ? ' ui-btn-square' : '';
         const setGhost = ghost ? ' ui-btn-ghost' : '';
+        const setBlock = block ? ' ui-block' : '';
 
         const setEase = noease ? '' : ' ui-ease-btn';
 
@@ -59,10 +63,10 @@ const Button = function (
         let classes = null;
 
         if (nostyle) {
-            classes = className ? className : null;
+            classes = 'ui-btn-no-style' + setClassName;
 
         } else {
-            classes = 'ui-btn' + setSize + setFluid + setActive + setPassive + setMulti + setSquare + setGhost + setClassName + setEase;
+            classes = 'ui-btn' + setSize + setFluid + setActive + setPassive + setMulti + setSquare + setGhost + setBlock + setClassName + setEase;
         }
 
         // data attributes
@@ -94,7 +98,7 @@ const Button = function (
                 }
                 {!href && !to &&
                     <>
-                        <button type={type} value={value} title={title} className={classes} {...setData} style={style} onClick={onClick}>
+                        <button ref={myRef} type={type} value={value} title={title} className={classes} {...setData} style={style} onClick={onClick}>
                             {children}
                         </button>
                     </>
@@ -106,9 +110,10 @@ const Button = function (
 interface ButtonWrapperProps {
 
     children?: React.ReactNode,
+    as?: 'holder' | 'list',
 
     ease: '1st' | '2nd',
-    largeButtons?: true,
+    largeButtons?: boolean,
 
     className?: string,
     data?: any,
@@ -118,15 +123,17 @@ interface ButtonWrapperProps {
 
 const ButtonWrapper = function (
 
-    { children, ease, largeButtons, className, data, style }:ButtonWrapperProps) {
+    { children, as, ease, largeButtons, className, data, style }:ButtonWrapperProps) {
 
         // classes
         const setEase = ease ? 'ui-ease-' + ease + '-btn' : '';
+
+        const setAs = as ? ' ui-btn-' + as : '';
         const setLargeButtons = largeButtons ? ' ui-form-lg' : '';
 
         const setClassName = className ? ' ' + className : '';
 
-        const classes = setEase + setLargeButtons + setClassName;
+        const classes = setEase + setAs + setLargeButtons + setClassName;
 
         // data attributes
         let setData = [];

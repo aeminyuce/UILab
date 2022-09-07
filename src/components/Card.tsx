@@ -8,6 +8,10 @@ interface CardProps {
 
     children?: React.ReactNode,
 
+    type?: 'info' | 'success' | 'warning' | 'danger',
+
+    myRef?: any,
+
     className?: string,
     style?: any,
 
@@ -15,15 +19,17 @@ interface CardProps {
 
 const Card = function (
 
-    { children, className, style }:CardProps) {
+    { children, type, myRef, className, style }:CardProps) {
 
         // classes
+        const setType = type ? ' ui-card-' + type : '';
         const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-card' + setClassName;
+
+        const classes = 'ui-card' + setType + setClassName;
 
         return (
             <>
-                <div className={classes} style={style}>
+                <div ref={myRef} className={classes} style={style}>
                     {children}
                 </div>
             </>
@@ -32,7 +38,7 @@ const Card = function (
 
 const CardSide = function (
 
-    { children, className, style }:CardProps) {
+    { children, myRef, className, style }:CardProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
@@ -40,7 +46,7 @@ const CardSide = function (
 
         return (
             <>
-                <div className={classes} style={style}>
+                <div ref={myRef} className={classes} style={style}>
                     {children}
                 </div>
             </>

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useEffect } from 'react';
 import { ui } from '@ui';
 
 // utils
@@ -15,6 +14,8 @@ interface modalProps {
 
     children?: React.ReactNode,
 
+    as?: 'div' | 'span',
+
     id?: string,
     className?: string,
     style?: any,
@@ -23,15 +24,7 @@ interface modalProps {
 
 let Modal = function (
 
-    { children, id, className, style }:modalProps) {
-
-        useEffect(() => {
-
-            // icons
-            ui.globals.inlineSvg = true;
-            ui.modal.closeIcon = SVGLoader({src: icon_remove});
-
-        }, []); // Runs only first render
+    { children, as, id, className, style }:modalProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
@@ -39,9 +32,20 @@ let Modal = function (
 
         return (
             <>
-                <div id={id} className={classes} style={style}>
-                    {children}
-                </div>
+                {as === 'div' &&
+                    <>
+                        <div id={id} className={classes} style={style}>
+                            {children}
+                        </div>
+                    </>
+                }
+                {as === 'span' &&
+                    <>
+                        <span id={id} className={classes} style={style}>
+                            {children}
+                        </span>
+                    </>
+                }
             </>
         );
 
@@ -66,6 +70,13 @@ interface ModalOpenProps {
 const ModalOpen = function (
 
     { source, bg, closable, type, size, callback }:ModalOpenProps) {
+
+        // styling classnames
+        ui.modal.stylesContent = 'ui-round ui-shadow-lg ui-ease-layout';
+
+         // icons
+         ui.globals.inlineSvg = true;
+         ui.modal.closeIcon = SVGLoader({src: icon_remove});
 
         // sizes
         let setSize = null;

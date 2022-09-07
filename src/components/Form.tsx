@@ -15,7 +15,7 @@ interface FormLabelProps {
 
     children?: React.ReactNode,
 
-    noease?: true,
+    noease?: boolean,
 
     className?: string,
     style?: any,
@@ -46,26 +46,30 @@ interface FormInputProps {
     children?: React.ReactNode,
 
     onChange?: React.ReactEventHandler,
+    onKeyPress?: React.ReactEventHandler,
 
     type?: 'text' | 'password' | 'date' | 'datetime-local' | 'month' | 'week' | 'email' | 'tel' | 'time',
     name?: string,
     value?: any,
     placeholder?: string,
-    disabled?: true,
-    inline?: true,
+    disabled?: boolean,
+    light?: boolean,
+    inline?: boolean,
     autoComplete?: 'on' | 'off' | 'username' | 'new-password',
 
     icons?: 'r' | 'l' | 'all',
 
-    number?: true,
-    required?: true,
+    number?: boolean,
+    required?: boolean,
 
     minLength?: number,
     maxLength?: number,
     min?: number,
     max?: number,
 
-    noease?: true,
+    myRef?: any,
+
+    noease?: boolean,
 
     className?: string,
     style?: any,
@@ -74,7 +78,7 @@ interface FormInputProps {
 
 const FormInput = function (
 
-    { children, onChange, type, name, value, placeholder, disabled, inline, autoComplete, icons, number, required, minLength, maxLength, min, max, noease, className, style }:FormInputProps) {
+    { children, onChange, onKeyPress, type, name, value, placeholder, disabled, light, inline, autoComplete, icons, number, required, minLength, maxLength, min, max, myRef, noease, className, style }:FormInputProps) {
 
         // types
         const setType = type ? type : 'text';
@@ -82,6 +86,7 @@ const FormInput = function (
         // classes
         const setClassName = className ? ' ' + className : '';
         const setDisabled = disabled ? ' ui-form-disabled' : '';
+        const setlight = light ? ' ui-form-light' : '';
         const setEase = noease ? '' : ' ui-ease-form';
         const setInline = inline ? ' ui-form-inline' : '';
 
@@ -97,7 +102,7 @@ const FormInput = function (
             setIcons = ' ui-form-icon-all';
         }
 
-        const classes = 'ui-input' + setIcons + setDisabled + setClassName + setInline + setEase;
+        const classes = 'ui-input' + setIcons + setDisabled + setlight + setClassName + setInline + setEase;
 
         // children classes
         const setNumber = number ? 'ui-number' : '';
@@ -114,10 +119,10 @@ const FormInput = function (
             <>
                 <div className={classes} style={style}>
                     {children}
-                    <input type={setType} name={name} value={value} placeholder={placeholder}
+                    <input ref={myRef} type={setType} name={name} value={value} placeholder={placeholder}
                         autoComplete={autoComplete} className={childrenClasses} disabled={disabled}
                         minLength={minLength} maxLength={maxLength} min={min} max={max}
-                        onChange={onChange}/>
+                        onChange={onChange} onKeyPress={onKeyPress}/>
                 </div>
             </>
         );
@@ -128,14 +133,18 @@ interface FormSelectProps {
     children?: React.ReactNode,
 
     onChange?: React.ReactEventHandler,
-    disabled?: true,
-    inline?: true,
-    required?: true,
+
+    name?: string,
+    value?: any,
+
+    disabled?: boolean,
+    inline?: boolean,
+    required?: boolean,
+    light?: boolean,
 
     myRef?: any,
-    defaultValue?: any,
 
-    noease?: true,
+    noease?: boolean,
 
     className?: string,
     style?: any,
@@ -144,15 +153,16 @@ interface FormSelectProps {
 
 const FormSelect = function (
 
-    { children, onChange, disabled, inline, required, myRef, defaultValue, noease, className, style }:FormSelectProps) {
+    { children, onChange, name, value, disabled, light, inline, required, myRef, noease, className, style }:FormSelectProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
         const setDisabled = disabled ? ' ui-form-disabled' : '';
+        const setLight = light ? ' ui-form-light' : '';
         const setEase = noease ? '' : ' ui-ease-form';
         const setInline = inline ? ' ui-form-inline' : '';
 
-        const classes = 'ui-select' + setDisabled + setClassName + setInline + setEase;
+        const classes = 'ui-select' + setDisabled + setLight + setClassName + setInline + setEase;
 
         // children classes
         const setRequired = required ? ' ui-required' : '';
@@ -162,8 +172,8 @@ const FormSelect = function (
         return (
             <>
                 <div className={classes} style={style}>
-                    <Icon src={icon_angle_down}></Icon>
-                    <select ref={myRef} defaultValue={defaultValue} onChange={onChange} className={childrenClasses} disabled={disabled}>
+                    <Icon src={icon_angle_down} />
+                    <select ref={myRef} name={name} value={value} onChange={onChange} className={childrenClasses} disabled={disabled}>
                         {children}
                     </select>
                 </div>
@@ -173,17 +183,22 @@ const FormSelect = function (
 
 interface FormCheckProps {
 
-    label?: string,
+    type?: 'radio' | 'switch',
+    label?: any,
 
     onChange?: React.ReactEventHandler,
 
     id?: any,
+    name?: string,
+    value?: string,
     checked?: boolean,
-    disabled?: true,
+    disabled?: boolean,
+    indeterminate?: boolean,
+    light?: boolean,
 
-    required?: true,
+    required?: boolean,
 
-    noease?: true,
+    noease?: boolean,
 
     className?: string,
     style?: any,
@@ -192,27 +207,44 @@ interface FormCheckProps {
 
 const FormCheck = function (
 
-    { label, onChange, id, checked, disabled, required, noease, className, style }:FormCheckProps) {
+    { type, label, onChange, id, name, value, checked, disabled, indeterminate, light, required, noease, className, style }:FormCheckProps) {
+
+        // types
+        const setType = type === 'radio' ? 'radio' : 'checkbox';
 
         // classes
         const setClassName = className ? ' ' + className : '';
         const setLabelSpace = label ? ' ui-m-5-r' : '';
         const setDisabled = disabled ? ' ui-form-disabled' : '';
+        const setIndeterminate = indeterminate ? ' ui-indeterminate' : '';
+        const setLight = light ? ' ui-form-light' : '';
         const setEase = noease ? '' : ' ui-ease-form';
 
-        const classes = 'ui-check' + setDisabled + setClassName + setLabelSpace + setEase;
+        let classes = 'ui-check';
+
+        if (type === 'radio') {
+            classes = 'ui-radio';
+
+        } else if (type === 'switch') {
+            classes = 'ui-switch';
+        }
+
+        classes += setDisabled + setIndeterminate + setLight + setClassName + setLabelSpace + setEase;
 
         // children classes
         const setRequired = required ? ' ui-required' : '';
-
         const childrenClasses = setRequired;
+
+        // state classes
+        const setStateTheme = type === 'switch' ? ' ui-fill-dark-100' : '';
+        const stateClasses = 'ui-form-state' + setStateTheme;
 
         return (
             <>
                 <label className="ui-label">
                     <span className={classes} style={style}>
-                        <input id={id} type="checkbox" onChange={onChange} checked={checked} className={childrenClasses} disabled={disabled} />
-                        <i className="ui-form-state"></i>
+                        <input id={id} name={name} value={value} type={setType} onChange={onChange} checked={checked} className={childrenClasses} disabled={disabled} />
+                        <i className={stateClasses}></i>
                     </span>
                     {label}
                 </label>
@@ -220,59 +252,35 @@ const FormCheck = function (
         );
     }
 
-interface FormSwitchProps {
+interface FormRequiredMessageProps {
 
-    label?: string,
-
-    onChange?: React.ReactEventHandler,
-
-    id?: any,
-    checked?: boolean,
-    disabled?: true,
-
-    required?: true,
-
-    noease?: true,
+    children?: React.ReactNode,
 
     className?: string,
     style?: any,
 
 }
 
-const FormSwitch = function (
+const FormRequiredMessage = function (
 
-    { label, onChange, id, checked, disabled, required, noease, className, style }:FormSwitchProps) {
+    { children, className, style }:FormRequiredMessageProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
-        const setLabelSpace = label ? ' ui-m-5-r' : '';
-        const setDisabled = disabled ? ' ui-form-disabled' : '';
-        const setEase = noease ? '' : ' ui-ease-form';
-
-        const classes = 'ui-switch' + setDisabled + setClassName + setLabelSpace + setEase;
-
-        // children classes
-        const setRequired = required ? ' ui-required' : '';
-
-        const childrenClasses = setRequired;
+        const classes = 'ui-required-msg' + setClassName;
 
         return (
             <>
-                <label className="ui-label">
-                    <span className={classes} style={style}>
-                        <input id={id} type="checkbox" onChange={onChange} checked={checked} className={childrenClasses} disabled={disabled} />
-                        <i className="ui-form-state ui-fill-dark-100"></i>
-                    </span>
-                    {label}
-                </label>
+                <p className={classes} style={style}>
+                    {children}
+                </p>
             </>
         );
     }
-
 export default Object.assign(Form, {
     Label: FormLabel,
     Input: FormInput,
     Select: FormSelect,
     Check: FormCheck,
-    Switch: FormSwitch,
+    RequiredMessage: FormRequiredMessage,
 });

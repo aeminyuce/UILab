@@ -8,7 +8,8 @@ interface DropdownProps {
 
     children?: React.ReactNode,
 
-    hover?: true,
+    hover?: boolean,
+    block?: boolean,
     align?: 'l' | 'c',
     pos?: 'l' | 'r',
     nav?: true | 'full-h',
@@ -20,10 +21,11 @@ interface DropdownProps {
 
 const Dropdown = function (
 
-    { children, hover, align, pos, nav, className, style }:DropdownProps) {
+    { children, hover, block, align, pos, nav, className, style }:DropdownProps) {
 
         // classes
         const setHover = hover ? ' ui-menu-hover' : '';
+        const setBlock = block ? ' ui-block' : '';
         const setAlign = align ? ' ui-menu-' + align : '';
         const setPos = pos ? ' ui-menu-pos-' + pos : '';
 
@@ -34,7 +36,7 @@ const Dropdown = function (
         }
 
         const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-dropdown' + setHover + setAlign + setPos + setNav + setClassName + ' ui-ease-dropdown';
+        const classes = 'ui-dropdown' + setHover + setBlock + setAlign + setPos + setNav + setClassName + ' ui-ease-dropdown';
 
         return (
             <>
@@ -49,7 +51,7 @@ interface DropdownMenuProps {
 
     children?: React.ReactNode,
 
-    hasIcon?: true,
+    hasIcon?: boolean,
 
     className?: string,
     style?: any,
@@ -79,6 +81,9 @@ interface DropdownItemProps {
 
     children?: React.ReactNode,
 
+    select?: boolean,
+    selected?: boolean,
+
     className?: string,
     style?: any,
 
@@ -86,11 +91,18 @@ interface DropdownItemProps {
 
 const DropdownItem = function (
 
-    { children, className, style }:DropdownItemProps) {
+    { children, select, selected, className, style }:DropdownItemProps) {
+
+        // classes
+        const setSelected = selected ? ' ui-selected' : '';
+        const setClassName = className ? ' ' + className : '';
+
+        let classes = setSelected + setClassName;
+        classes = classes.replace(/^\s+/g, ''); // remove first spaces
 
         return (
             <>
-                <li className={className} style={style}>
+                <li className={classes} style={style}>
                     {children}
                 </li>
             </>

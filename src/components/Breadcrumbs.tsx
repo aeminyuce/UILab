@@ -24,7 +24,7 @@ const Breadcrumbs = function (
         return (
             <>
                 <nav className={classes} style={style}>
-                    <ul className="ui-color-black-25">
+                    <ul>
                         {children}
                     </ul>
                 </nav>

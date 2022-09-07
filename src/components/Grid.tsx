@@ -186,7 +186,7 @@ interface GridColProps {
     fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs',
 
     order?: {
-        when: 'xl' | 'lg' | 'default' | 'sm' | 'xs',
+        when: 'xl' | 'lg' | 'default' | 'md' | 'sm' | 'xs',
         position: 'first' | 'last',
     },
 
