@@ -1,6 +1,11 @@
 import { lazy } from 'react';
 
-export const Route_Calendar = lazy(() => import(
+export const Home = lazy(() => import(
+    /* webpackChunkName: "Home" */
+    "../Home"
+));
+
+export const Calendar = lazy(() => import(
     /* webpackChunkName: "Calendar" */
     "../Calendar"
 ));

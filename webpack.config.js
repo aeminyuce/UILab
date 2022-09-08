@@ -5,6 +5,7 @@ const config = {
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'bundle'), // when script not serve mode!
+        publicPath: '/', // for page refresh for BrowserRouter
         clean: { // clean the output directory before emit.
             keep(asset) { // keep these folders
                 return (
@@ -26,7 +27,7 @@ const config = {
     devServer: {
         port: 3000, // Opens http://localhost:3000/
         open: true, // Opens browser on a new tab automatically
-        historyApiFallback: true, // running routes when page refresh
+        historyApiFallback: true, // enable page refresh for HashRouter
     },
     resolve: {
         extensions: ['.js', '.tsx', '.less'], // file types
