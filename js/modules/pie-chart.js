@@ -36,7 +36,8 @@ ui.pieChart = {
     // data attributes
     dataPercent: 'data-ui-percent',
     dataFill: 'data-ui-fill',
-    dataTitle: 'data-ui-title'
+    dataTitle: 'data-ui-title',
+    dataCustom: 'data-ui-custom'
 
 };
 
@@ -66,7 +67,7 @@ ui.pieChart = {
 
         ui.pieChart.Init = () => {
 
-            var chart, elems, deg, textDeg, loadFnc, arr, fill, percent, html, title, msgHolder;
+            var chart, elems, deg, textDeg, loadFnc, arr, fill, percent, html, title, customTitle, msgHolder;
 
             chart = ui.find('.' + ui.pieChart.target);
             if (chart.length < 1) { return; }
@@ -135,11 +136,17 @@ ui.pieChart = {
 
                 }
 
-                html += '>' +
-                                percent + '%' +
-                            '</' + ui.pieChart.tagTitle + '>' +
+                customTitle = that.getAttribute(ui.pieChart.dataCustom);
 
-                        '</' + ui.pieChart.tagMsg + '>';
+                if (customTitle !== null && customTitle !== '') { // show custom titles optional!
+                    html += '>' + customTitle;
+
+                } else {
+                    html += '>' + percent + '%';
+                }
+
+                html += '</' + ui.pieChart.tagTitle + '>' +
+                    '</' + ui.pieChart.tagMsg + '>';
 
                 msgHolder = ui.find(ui.pieChart.tagMsgHolder, parent)[0];
                 if (msgHolder === undefined) {
@@ -267,4 +274,3 @@ ui.pieChart = {
         });
 
 })();
-

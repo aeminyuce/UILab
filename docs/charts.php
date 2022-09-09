@@ -590,6 +590,43 @@
                 </div>
 
                 <div class="ui-p-10-v ui-align-c">
+                    <b>Custom Title Examples:</b>
+                </div>
+
+                <div class="ui-row ui-row-gap-lg-v">
+                    <div class="ui-col-3 ui-col-xs-6">
+                        <div class="ui-pie-chart ui-ease-pie-chart">
+                            <ul>
+                                <li data-ui-percent="37" data-ui-custom="1/3" data-ui-fill="hsl(210, 86%, 68%)"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ui-col-3 ui-col-xs-6">
+                        <div class="ui-pie-chart ui-ease-pie-chart">
+                            <ul>
+                                <li data-ui-percent="66" data-ui-custom="66/100" data-ui-fill="hsl(27, 77%, 59%)"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ui-col-3 ui-col-xs-6">
+                        <div class="ui-pie-chart ui-ease-pie-chart">
+                            <ul>
+                                <li data-ui-percent="14" data-ui-custom="1/3" data-ui-fill="hsl(285, 70%, 70%)"></li>
+                                <li data-ui-percent="39" data-ui-custom="2/3" data-ui-fill="hsl(97, 70%, 70%)"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ui-col-3 ui-col-xs-6">
+                        <div class="ui-pie-chart ui-ease-pie-chart" data-ui-info="Example">
+                            <ul>
+                                <li data-ui-percent="57" data-ui-custom="3/5" data-ui-fill="hsl(186, 70%, 68%)"></li>
+                                <li data-ui-percent="22" data-ui-custom="2/5" data-ui-fill="hsl(210, 86%, 68%)"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-p-10-v ui-align-c">
                     <b>Show Title Examples:</b>
                 </div>
 
