@@ -4406,7 +4406,8 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
   width: 14px !important;
   height: 14px !important;
 }
-.ui-tab-holder .ui-tab:not(.ui-btn-xs) .ui-toggle-icon.ui-float-r {
+.ui-tab-holder .ui-tab:not(.ui-btn-xs) .ui-toggle-icon.ui-float-r,
+.ui-tab-holder .ui-tab:not(.ui-btn-xs) .ui-toggle-icon.ui-float-l {
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -4414,7 +4415,8 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
   width: 12px !important;
   height: 12px !important;
 }
-.ui-tab-holder .ui-tab.ui-btn-xs .ui-toggle-icon.ui-float-r {
+.ui-tab-holder .ui-tab.ui-btn-xs .ui-toggle-icon.ui-float-r,
+.ui-tab-holder .ui-tab.ui-btn-xs .ui-toggle-icon.ui-float-l {
   margin-top: 3px;
   margin-bottom: 3px;
 }
