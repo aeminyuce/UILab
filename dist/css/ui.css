@@ -3925,6 +3925,18 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
 .ui-btn.ui-round {
   border-radius: 6.66666667px;
 }
+.ui-btn.ui-round-t {
+  border-radius: 6.66666667px 6.66666667px 0 0;
+}
+.ui-btn.ui-round-r {
+  border-radius: 0 6.66666667px 6.66666667px 0;
+}
+.ui-btn.ui-round-b {
+  border-radius: 0 0 6.66666667px 6.66666667px;
+}
+.ui-btn.ui-round-l {
+  border-radius: 6.66666667px 0 0 6.66666667px;
+}
 .ui-btn:not(.ui-border):not([class*="ui-border-"]) {
   border-width: 0;
 }

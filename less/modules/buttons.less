@@ -38,7 +38,14 @@
             &,&:active,&:hover { ._color-var(black); }
         }
 
-        &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
+        &.ui-round {
+            border-radius: (@round - (@round * 0.3333333333));
+
+            &-t { border-radius: (@round - (@round * 0.3333333333)) (@round - (@round * 0.3333333333)) 0 0; }
+            &-r { border-radius: 0 (@round - (@round * 0.3333333333)) (@round - (@round * 0.3333333333)) 0; }
+            &-b { border-radius: 0 0 (@round - (@round * 0.3333333333)) (@round - (@round * 0.3333333333)); }
+            &-l { border-radius: (@round - (@round * 0.3333333333)) 0 0 (@round - (@round * 0.3333333333)); }
+        }
 
         &:not(.ui-border):not([class*="ui-border-"]) { border-width: 0; }
         &:not(.ui-btn-multi) { white-space: nowrap; }
