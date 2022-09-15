@@ -9815,11 +9815,6 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.ui-icon) {
     transform: rotate(0deg);
   }
 }
-.ui-ease-pie-chart li,
-.ui-ease-pie-chart > div span {
-  transition-property: opacity;
-  transition-duration: 0.3s;
-}
 .ui-pie-chart {
   position: relative;
   -ms-user-select: none;
@@ -9866,6 +9861,9 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.ui-icon) {
   margin-right: 5px;
   border-radius: 1000px;
   float: right;
+}
+.ui-pie-chart > div span i[data-ui-tooltip] {
+  cursor: pointer;
 }
 .ui-pie-chart:not(.ui-open-ease) > div span {
   opacity: 0;

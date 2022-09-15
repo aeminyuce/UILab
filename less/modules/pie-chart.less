@@ -25,10 +25,6 @@
         0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
     }
 
-    .ui-ease-pie-chart {
-        li,& > div span { transition-property: opacity; transition-duration: (@ease-default * 2); }
-    }
-
     .ui-pie-chart {
         position: relative; @no-selection();
 
@@ -39,7 +35,10 @@
             span {
                 display: block; position: absolute; top: 50%; right: 0; left: 50%; z-index: 1; transform-origin: left top;
 
-                i { color: @black-50; font-size: @pie-chart-info-text-size; font-style: normal; font-weight: @font-bold; line-height: @pie-chart-info-text-size; background: @white; padding: @pie-chart-info-padding (@pie-chart-info-padding * 2); margin-right: @pie-chart-info-inner-space; border-radius: @circle; float: right; }
+                i {
+                    color: @black-50; font-size: @pie-chart-info-text-size; font-style: normal; font-weight: @font-bold; line-height: @pie-chart-info-text-size; background: @white; padding: @pie-chart-info-padding (@pie-chart-info-padding * 2); margin-right: @pie-chart-info-inner-space; border-radius: @circle; float: right;
+                    &[data-ui-tooltip] { cursor: pointer; }
+                }
             }
         }
         &:not(.ui-open-ease) {

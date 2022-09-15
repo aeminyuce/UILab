@@ -7918,7 +7918,6 @@ ui.pieChart = {
   tagMsgHolder: 'div',
   tagMsg: 'span',
   tagTitle: 'i',
-  opacityShowTitle: '.25',
   dataPercent: 'data-ui-percent',
   dataFill: 'data-ui-fill',
   dataTitle: 'data-ui-title',
@@ -8044,25 +8043,6 @@ ui.pieChart = {
 
     ui.pieChart.Init();
     chartsResizer();
-    ui.on(document, 'mouseenter mouseleave touchend', '.' + ui.pieChart.target + ' > ' + ui.pieChart.tagMsgHolder + ' ' + ui.pieChart.tagMsg + ' ' + ui.pieChart.tagTitle, function (e) {
-      var i, chart, elems, msg;
-      chart = ui.closest(this, '.' + ui.pieChart.target)[0];
-      elems = ui.find(ui.pieChart.tagData, chart);
-
-      if (e.type === 'mouseleave') {
-        ui.each(elems, function () {
-          this.style.removeProperty('opacity');
-        });
-      } else {
-        msg = ui.find(ui.pieChart.tagMsgHolder, chart)[0];
-        msg = ui.find(ui.pieChart.tagMsg, msg);
-        i = Array.prototype.slice.call(msg).indexOf(this.parentElement);
-        ui.each(elems, function () {
-          this.style.opacity = ui.pieChart.opacityShowTitle;
-        });
-        elems[i].style.removeProperty('opacity');
-      }
-    });
   };
 
   ui.onload(ui.pieChart.Start);
