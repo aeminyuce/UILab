@@ -7,15 +7,19 @@ import {
     Home,
     Calendar,
 
- } from '@utils/PageRoutes';
-
+} from '@utils/PageRoutes';
+import PageTitle from '@utils/PageTitle';
 
 export default function () {
     return (
         <>
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="calendar" element={<Calendar />} />
+                <Route path="/" element={
+                    <PageTitle title="Home"><Home /></PageTitle>
+                } />
+                <Route path="calendar" element={
+                    <PageTitle title="Calendar"><Calendar /></PageTitle>
+                } />
             </Routes>
         </>
     );
