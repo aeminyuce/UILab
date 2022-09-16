@@ -4,10 +4,9 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const config = {
     output: {
         filename: '[name].[contenthash].js',
-        path: path.resolve(__dirname, 'bundle'), // when script not serve mode!
         publicPath: '/', // for page refresh for BrowserRouter
         clean: { // clean the output directory before emit.
-            keep(asset) { // keep these folders
+            keep(asset) { // keep these folders or filenames
                 return (
                     asset.includes('img') // use || for multiple includes
                 );
@@ -97,18 +96,45 @@ const config = {
             },
         ],
     },
-    plugins: [
-        new HtmlWebPackPlugin({
-            template: "./src/index.html",
-            favicon: "./public/favicon.ico",
-        }),
-    ],
 }
 
 module.exports = (env, argv) => {
 
+    // shared variables
+    const build = 'build'; // default build folder
+
+    const htmlWebpackPlugin = { // add files to build
+        template: "./src/index.html",
+        favicon: "./public/favicon.ico",
+    }
+
+    // production configs
     if (argv.mode === 'production') {
+
+        // set build folder
+        let setFolder = env.mode ? build + '_' + env.mode : build; // get custom build folders from --env with package.json
+
+        config.output.path = path.resolve(__dirname, setFolder); // when script not serve mode!
         config.devtool = false; // disable when production mode for reducing output file sizes
+
+        // plugins
+        config.plugins = [
+            new HtmlWebPackPlugin( htmlWebpackPlugin ),
+        ]
+
+    }
+
+    // development configs
+    if (argv.mode === 'development') {
+
+        // set build folder
+        config.output.path = path.resolve(__dirname, build); // when script not serve mode!
+
+        // plugins
+        config.plugins = [
+            new HtmlWebPackPlugin( htmlWebpackPlugin ),
+        ]
+
     }
 
     return config;
