@@ -23,11 +23,6 @@ const config = {
             }
         },
     },
-    devServer: {
-        port: 3000, // Opens http://localhost:3000/
-        open: true, // Opens browser on a new tab automatically
-        historyApiFallback: true, // enable page refresh for HashRouter
-    },
     resolve: {
         extensions: ['.js', '.tsx', '.less'], // file types
         alias: {
@@ -126,6 +121,16 @@ module.exports = (env, argv) => {
 
     // development configs
     if (argv.mode === 'development') {
+
+        // shared variables
+        const port = 3000; // port number
+
+        // server
+        config.devServer = {
+            port: port, // Opens http://localhost:PORTNUMBER/
+            open: true, // Opens browser on a new tab automatically
+            historyApiFallback: true, // enable page refresh for HashRouter
+        };
 
         // set build folder
         config.output.path = path.resolve(__dirname, build); // when script not serve mode!
