@@ -122,12 +122,10 @@ module.exports = (env, argv) => {
     // development configs
     if (argv.mode === 'development') {
 
-        // shared variables
-        const port = 3000; // port number
-
         // server
         config.devServer = {
-            port: port, // Opens http://localhost:PORTNUMBER/
+            host: 'localhost', // localhost
+            port: 3000, // port number
             open: true, // Opens browser on a new tab automatically
             historyApiFallback: true, // enable page refresh for HashRouter
         };
