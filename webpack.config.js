@@ -35,7 +35,6 @@ const config = {
             '@js': path.resolve(__dirname, './js/'),
         },
     },
-    devtool: "inline-source-map", // create map files for showing error details in console
     performance: {
         maxEntrypointSize: 1000000, // rendered js size limit
         maxAssetSize: 1000000 // single asset size limit
