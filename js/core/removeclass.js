@@ -17,7 +17,12 @@ ui.removeClass = function (that, name) {
                 const re = new RegExp('(\\s|^)' + name[i] + '(\\s|$)');
 
                 if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) { // check SVG and own elements
+
                     el.className.baseVal = el.className.baseVal.replace(re, ' ').replace(rex, '');
+
+                    if (el.className.baseVal === '') {
+                        el.removeAttribute('class');
+                    }
 
                 } else {
 

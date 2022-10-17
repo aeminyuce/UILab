@@ -355,6 +355,10 @@ ui.removeClass = function (that, name) {
 
       if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) {
         el.className.baseVal = el.className.baseVal.replace(re, ' ').replace(rex, '');
+
+        if (el.className.baseVal === '') {
+          el.removeAttribute('class');
+        }
       } else {
         el.className = el.className.replace(re, ' ').replace(rex, '');
 
