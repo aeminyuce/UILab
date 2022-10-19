@@ -6373,7 +6373,6 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 }
 .ui-table thead th {
   font-weight: 700;
-  vertical-align: bottom !important;
 }
 .ui-table tbody tr:last-child th {
   border-bottom-width: 0;
