@@ -2208,27 +2208,7 @@ ui.forms = {
         that.setAttribute('type', 'password');
       }
     });
-    ui.on(document, 'keypress', '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber, function (e) {
-      var char;
-      var isRefresh = false;
-
-      if (e.which) {
-        char = e.which;
-      } else {
-        char = e.keyCode;
-
-        if (char === 116) {
-          isRefresh = true;
-        }
-      }
-
-      var ignoreList = [8, 9, 13, 35, 36, 37, 39, 46];
-
-      if (ignoreList.indexOf(char) === -1 && !isRefresh && (char < 48 || char > 57)) {
-        e.preventDefault();
-      }
-    });
-    ui.on(document, 'paste', '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber, function () {
+    ui.on(document, 'paste keydown', '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber, function () {
       var _this2 = this;
 
       var maxLength = this.getAttribute('maxlength');

@@ -205,38 +205,7 @@ ui.forms = {
 
         // number
         ui.on(document,
-            'keypress',
-
-            '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber,
-
-            function (e) {
-
-                let char;
-                let isRefresh = false;
-
-                if (e.which) {
-                    char = e.which;
-
-                } else {
-
-                    char = e.keyCode;
-
-                    if (char === 116) { // f5
-                        isRefresh = true;
-                    }
-
-                }
-
-                const ignoreList = [8, 9, 13, 35, 36, 37, 39, 46]; // backspace, tab, enter, end, home, arrow left, arrow right, delete
-
-                if (ignoreList.indexOf(char) === -1 && !isRefresh && (char < 48 || char > 57)) { // 48-57: 0-9
-                    e.preventDefault();
-                }
-
-            });
-
-        ui.on(document,
-            'paste',
+            'paste keydown',
 
             '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber,
 
