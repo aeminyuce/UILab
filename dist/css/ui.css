@@ -7204,7 +7204,7 @@ html:not(.ui-ie) .ui-steps-bar li {
   width: 100%;
   min-width: 320px;
   height: 100%;
-  background-color: hsla(0, 0%, 0%, 0.86);
+  background-color: hsla(0, 0%, 0%, 0.42);
   position: fixed;
   top: 0;
   right: 0;
