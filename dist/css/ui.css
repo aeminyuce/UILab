@@ -8734,7 +8734,7 @@ button.ui-dialog-custom {
 }
 .ui-loading-mask-loader {
   height: 100%;
-  background-color: hsla(0, 0%, 0%, 0.46);
+  background-color: hsla(0, 0%, 0%, 0.12);
   position: absolute;
   top: 0;
   right: 0;
@@ -8759,11 +8759,13 @@ button.ui-dialog-custom {
   max-height: 76px !important;
   display: block;
   fill: none;
-  stroke: hsl(0, 0%, 100%);
+  stroke: hsl(0, 0%, 0%);
+  stroke: var(--ui-black);
   stroke-width: 8%;
   stroke-linecap: round;
   stroke-linejoin: round;
   animation: ui-loading-spin 1.15s linear infinite;
+  opacity: 0.42;
 }
 .ui-loading-mask-sticky > .ui-loading-mask-loader {
   position: fixed;
