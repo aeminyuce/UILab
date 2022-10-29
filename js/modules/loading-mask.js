@@ -21,8 +21,9 @@ ui.loadingMask = {
     stylesIcon: 'ui-animate-spin',
 
     // values
-    loadingSize: 0.32,
+    sttaicIconTop: 220,
 
+    loadingSize: 0.32,
     loadingBox: '-128 -12 288 288',
     loadingPath: '<path d="M12 12a120 120 0 01120 120"/>'
 
@@ -111,9 +112,14 @@ ui.loadingMask = {
                     // show loading
                     status = 'show';
 
-                    html = '<span class="' + ui.loadingMask.nameLoader + ' ' + ui.loadingMask.stylesLoader + '">' +
-                                '<span>' +
-                                    '<svg viewBox="' + ui.loadingMask.loadingBox + '" class="' + ui.loadingMask.stylesIcon + '" style="height: ' + (l[i].offsetHeight * ui.loadingMask.loadingSize) + 'px;">' +
+                    html = '<span class="' + ui.loadingMask.nameLoader + ' ' + ui.loadingMask.stylesLoader + '">';
+
+                    if (l[i].offsetHeight > window.innerHeight) { // detect static icon
+                        html += '<span style="top: ' + ui.loadingMask.sttaicIconTop + 'px;">';
+
+                    } else html += '<span>';
+
+                    html += '<svg viewBox="' + ui.loadingMask.loadingBox + '" class="' + ui.loadingMask.stylesIcon + '" style="height: ' + (l[i].offsetHeight * ui.loadingMask.loadingSize) + 'px;">' +
                                         ui.loadingMask.loadingPath +
                                     '</svg>' +
                                 '</span>' +

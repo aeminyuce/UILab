@@ -5,7 +5,7 @@
 
 @loading-mask-loader-bg:                      fade(@black, 12%);
 @loading-mask-loader-min-size:                24px;
-@loading-mask-loader-max-size:                76px;
+@loading-mask-loader-max-size:                56px;
 @loading-mask-loader-z-index:                 90;
 @loading-mask-stroke-width:                   8%;
 
@@ -33,7 +33,7 @@
             }
 
             &[class*="ui-fill-dark"] {
-                svg { ._stroke-var(white); opacity: .86; }
+                svg { stroke: @white; opacity: .86; }
             }
             &:not([class*="ui-fill-dark"]) {
                 svg { ._stroke-var(black); opacity: .42; }

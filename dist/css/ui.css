@@ -8749,7 +8749,7 @@ button.ui-dialog-custom {
 }
 .ui-loading-mask-loader span svg {
   min-height: 24px !important;
-  max-height: 76px !important;
+  max-height: 56px !important;
   display: block;
   fill: none;
   stroke-width: 8%;
@@ -8761,7 +8761,6 @@ button.ui-dialog-custom {
 }
 .ui-loading-mask[class*="ui-fill-dark"] svg {
   stroke: hsl(0, 0%, 100%);
-  stroke: var(--ui-white);
   opacity: 0.86;
 }
 .ui-loading-mask:not([class*="ui-fill-dark"]) svg {
