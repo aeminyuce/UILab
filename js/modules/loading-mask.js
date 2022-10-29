@@ -60,12 +60,16 @@ ui.loadingMask = {
 
                     setTimeout(() => {
 
-                        for (j = 0; j < l.length; j++) {
+                        if (maskHolders.length > 0) {
 
-                            maskItems[j].removeChild(maskHolders[j]);
-                            ui.removeClass(maskItems[j], ui.loadingMask.target + ' ' + ui.loadingMask.nameSticky);
+                            for (j = 0; j < l.length; j++) {
 
-                            emptyVars(j, l);
+                                maskItems[j].removeChild(maskHolders[j]);
+                                ui.removeClass(maskItems[j], ui.loadingMask.target + ' ' + ui.loadingMask.nameSticky);
+
+                                emptyVars(j, l);
+
+                            }
 
                         }
 
@@ -96,6 +100,8 @@ ui.loadingMask = {
                     status = 'hide';
 
                     maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
+
+                    ui.removeClass(maskHolders[i], ui.loadingMask.nameOpen);
                     ui.removeClass(maskHolders[i], ui.loadingMask.nameOpenEase);
 
                     maskItems[i] = l[i];
