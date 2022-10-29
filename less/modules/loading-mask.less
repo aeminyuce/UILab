@@ -4,20 +4,16 @@
 @import (reference) '../core/mixins.less';
 
 @loading-mask-loader-bg:                      fade(@black, 12%);
+@loading-mask-loader-min-size:                24px;
 @loading-mask-loader-max-size:                76px;
 @loading-mask-loader-z-index:                 90;
 
 @loading-mask-stroke-width:                   8%;
 
 @loading-mask-icon-stroke:                  black;
-@loading-mask-icon-opacity:                   .42;
+@loading-mask-icon-opacity:                   .86;
 
 & when (@referenceCompiling = false) { // not compiled when reference importing
-
-    @keyframes ui-loading-spin {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-    }
 
     .ui-loading {
         &-mask {
@@ -32,7 +28,7 @@
                 span {
                     display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
 
-                    svg { max-height: @loading-mask-loader-max-size !important; display: block; fill: none; ._stroke-var(@loading-mask-icon-stroke); stroke-width: @loading-mask-stroke-width; stroke-linecap: round; stroke-linejoin: round; animation: ui-loading-spin 1.15s linear infinite; opacity: @loading-mask-icon-opacity; }
+                    svg { min-height: @loading-mask-loader-min-size !important; max-height: @loading-mask-loader-max-size !important; display: block; fill: none; ._stroke-var(@loading-mask-icon-stroke); stroke-width: @loading-mask-stroke-width; stroke-linecap: round; stroke-linejoin: round; opacity: @loading-mask-icon-opacity; }
                 }
             }
 

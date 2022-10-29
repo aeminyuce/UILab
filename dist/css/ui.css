@@ -8719,14 +8719,6 @@ button.ui-dialog-custom {
   }
 }
 /* loading mask */
-@keyframes ui-loading-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .ui-loading-mask {
   overflow: hidden !important;
   position: relative !important;
@@ -8756,6 +8748,7 @@ button.ui-dialog-custom {
   transform: translate(-50%, -50%);
 }
 .ui-loading-mask-loader span svg {
+  min-height: 24px !important;
   max-height: 76px !important;
   display: block;
   fill: none;
@@ -8764,8 +8757,7 @@ button.ui-dialog-custom {
   stroke-width: 8%;
   stroke-linecap: round;
   stroke-linejoin: round;
-  animation: ui-loading-spin 1.15s linear infinite;
-  opacity: 0.42;
+  opacity: 0.86;
 }
 .ui-loading-mask-sticky > .ui-loading-mask-loader {
   position: fixed;

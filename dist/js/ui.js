@@ -6243,6 +6243,8 @@ ui.loadingMask = {
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
   stylesLoader: 'ui-ease-layout',
+  stylesIcon: 'ui-animate-spin',
+  loadingSize: 0.32,
   loadingBox: '-128 -12 288 288',
   loadingPath: '<path d="M12 12a120 120 0 01120 120"/>'
 };
@@ -6290,7 +6292,7 @@ ui.loadingMask = {
           maskItems[i] = l[i];
         } else {
           status = 'show';
-          html = '<span class="' + ui.loadingMask.nameLoader + ' ' + ui.loadingMask.stylesLoader + '">' + '<span>' + '<svg viewBox="' + ui.loadingMask.loadingBox + '" style="height: ' + l[i].offsetHeight / 2 + 'px;">' + ui.loadingMask.loadingPath + '</svg>' + '</span>' + '</span>';
+          html = '<span class="' + ui.loadingMask.nameLoader + ' ' + ui.loadingMask.stylesLoader + '">' + '<span>' + '<svg viewBox="' + ui.loadingMask.loadingBox + '" class="' + ui.loadingMask.stylesIcon + '" style="height: ' + l[i].offsetHeight * ui.loadingMask.loadingSize + 'px;">' + ui.loadingMask.loadingPath + '</svg>' + '</span>' + '</span>';
           l[i].insertAdjacentHTML('afterbegin', html);
           ui.addClass(l[i], ui.loadingMask.target);
 
