@@ -8752,15 +8752,22 @@ button.ui-dialog-custom {
   max-height: 76px !important;
   display: block;
   fill: none;
-  stroke: hsl(0, 0%, 0%);
-  stroke: var(--ui-black);
   stroke-width: 8%;
   stroke-linecap: round;
   stroke-linejoin: round;
-  opacity: 0.86;
 }
 .ui-loading-mask-sticky > .ui-loading-mask-loader {
   position: fixed;
+}
+.ui-loading-mask[class*="ui-fill-dark"] svg {
+  stroke: hsl(0, 0%, 100%);
+  stroke: var(--ui-white);
+  opacity: 0.86;
+}
+.ui-loading-mask:not([class*="ui-fill-dark"]) svg {
+  stroke: hsl(0, 0%, 0%);
+  stroke: var(--ui-black);
+  opacity: 0.42;
 }
 /* gallery */
 @keyframes ui-gallery-preview-loader {
