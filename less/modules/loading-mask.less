@@ -4,10 +4,14 @@
 @import (reference) '../core/mixins.less';
 
 @loading-mask-loader-bg:                      fade(@black, 12%);
-@loading-mask-loader-min-size:                24px;
-@loading-mask-loader-max-size:                56px;
 @loading-mask-loader-z-index:                 90;
-@loading-mask-stroke-width:                   8%;
+
+@loading-mask-svg-min-size:                    24px;
+@loading-mask-svg-max-size:                    56px;
+
+@loading-mask-svg-opacity:                    0.86;
+@loading-mask-svg-opacity-dark:               0.42;
+
 
 & when (@referenceCompiling = false) { // not compiled when reference importing
 
@@ -24,7 +28,7 @@
                 span {
                     display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
 
-                    svg { min-height: @loading-mask-loader-min-size !important; max-height: @loading-mask-loader-max-size !important; display: block; fill: none; stroke-width: @loading-mask-stroke-width; stroke-linecap: round; stroke-linejoin: round; }
+                    svg { min-height: @loading-mask-svg-min-size !important; max-height: @loading-mask-svg-max-size !important; display: block; fill: currentColor; }
                 }
             }
 
@@ -33,10 +37,10 @@
             }
 
             &[class*="ui-fill-dark"] {
-                svg { stroke: @white; opacity: .86; }
+                svg { opacity: @loading-mask-svg-opacity; }
             }
             &:not([class*="ui-fill-dark"]) {
-                svg { ._stroke-var(black); opacity: .42; }
+                svg { opacity: @loading-mask-svg-opacity; }
             }
         }
     }

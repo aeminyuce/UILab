@@ -8751,22 +8751,16 @@ button.ui-dialog-custom {
   min-height: 24px !important;
   max-height: 56px !important;
   display: block;
-  fill: none;
-  stroke-width: 8%;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  fill: currentColor;
 }
 .ui-loading-mask-sticky > .ui-loading-mask-loader {
   position: fixed;
 }
 .ui-loading-mask[class*="ui-fill-dark"] svg {
-  stroke: hsl(0, 0%, 100%);
   opacity: 0.86;
 }
 .ui-loading-mask:not([class*="ui-fill-dark"]) svg {
-  stroke: hsl(0, 0%, 0%);
-  stroke: var(--ui-black);
-  opacity: 0.42;
+  opacity: 0.86;
 }
 /* gallery */
 @keyframes ui-gallery-preview-loader {
