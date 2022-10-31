@@ -205,7 +205,7 @@ ui.forms = {
 
         // number
         ui.on(document,
-            'paste keydown',
+            'keydown paste',
 
             '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber,
 
@@ -222,10 +222,7 @@ ui.forms = {
                     if (getValues !== null) {
 
                         Array.prototype.forEach.call(getValues,
-
-                            item => {
-                                newValues += item;
-                            });
+                            item => newValues += item);
 
                     } else {
 
@@ -242,9 +239,7 @@ ui.forms = {
                         this.value = newValues.match(re)[0];
                         this.setAttribute('maxlength', maxLength);
 
-                    } else {
-                        this.value = newValues;
-                    }
+                    } else this.value = newValues;
 
                 }, 0);
 

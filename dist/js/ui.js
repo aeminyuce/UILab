@@ -2208,7 +2208,7 @@ ui.forms = {
         that.setAttribute('type', 'password');
       }
     });
-    ui.on(document, 'paste keydown', '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber, function () {
+    ui.on(document, 'keydown paste', '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber, function () {
       var _this2 = this;
 
       var maxLength = this.getAttribute('maxlength');
@@ -2220,7 +2220,7 @@ ui.forms = {
 
         if (getValues !== null) {
           Array.prototype.forEach.call(getValues, function (item) {
-            newValues += item;
+            return newValues += item;
           });
         } else {
           _this2.value = newValues;
@@ -2233,9 +2233,7 @@ ui.forms = {
           _this2.value = newValues.match(re)[0];
 
           _this2.setAttribute('maxlength', maxLength);
-        } else {
-          _this2.value = newValues;
-        }
+        } else _this2.value = newValues;
       }, 0);
     });
 
