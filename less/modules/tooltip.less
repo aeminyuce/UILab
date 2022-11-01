@@ -24,7 +24,7 @@
 
         &-opened { overflow-x: hidden; }
 
-        &:not([class*="ui-fill-"]) { color: @white; background-color: @featured-color; }
+        &:not([class*="ui-fill-"]):not([class*="ui-bg-"]) { color: @white; background-color: @featured-color; }
 
         &:not(.ui-open) { display: none; }
         &:not(.ui-open-ease) { opacity: 0; }
@@ -102,7 +102,7 @@
             i {
                 box-sizing: content-box; width: @tooltip-arrow-size; height: @tooltip-arrow-size; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
 
-                &:not([class*="ui-fill-"]) { background-color: @featured-color; }
+                &:not([class*="ui-fill-"]):not([class*="ui-bg-"]) { background-color: @featured-color; }
             }
         }
     }
