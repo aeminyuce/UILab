@@ -607,8 +607,8 @@ html .ui-row {
 }
 .ui-col-static > .ui-row {
   width: 100%;
-  margin-left: inherit;
-  margin-right: inherit;
+  margin-left: unset;
+  margin-right: unset;
   table-layout: fixed;
 }
 .ui-col-static > .ui-row:before,
@@ -4557,8 +4557,8 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
   clear: both;
 }
 .ui-dropdown.ui-nav-full-h .ui-dropdown-menu > .ui-row {
-  margin-left: inherit;
-  margin-right: inherit;
+  margin-left: unset;
+  margin-right: unset;
 }
 .ui-dropdown.ui-menu-c .ui-dropdown-menu {
   transform-origin: top center;
@@ -6241,8 +6241,8 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   border-radius: 0 10px 10px 0;
 }
 [class*="ui-card-"]:not(.ui-card-side):not(.ui-card-close) > .ui-row {
-  margin-left: inherit;
-  margin-right: inherit;
+  margin-left: unset;
+  margin-right: unset;
 }
 .ui-card:before,
 .ui-card-side:before,
@@ -6257,8 +6257,8 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 }
 .ui-card > .ui-row,
 .ui-card-side > .ui-row {
-  margin-left: inherit;
-  margin-right: inherit;
+  margin-left: unset;
+  margin-right: unset;
 }
 .ui-round > .ui-card-side:first-child {
   border-radius: 10px 10px 0 0;
@@ -8505,8 +8505,8 @@ button.ui-dialog-custom {
 }
 .ui-datatable > .ui-row,
 .ui-datatable .ui-datatable-content > .ui-row {
-  margin-left: inherit;
-  margin-right: inherit;
+  margin-left: unset;
+  margin-right: unset;
 }
 .ui-datatable:not(.ui-datatable-showed-all) .ui-datatable-content:not(.ui-showed) {
   display: none;
