@@ -6242,7 +6242,7 @@ ui.loadingMask = {
   nameOpenEase: 'ui-open-ease',
   stylesLoader: 'ui-ease-layout',
   stylesIcon: 'ui-animate-spin',
-  sttaicIconTop: 220,
+  staticIconTop: 220,
   loadingSize: 0.32,
   loadingBox: '0 0 264 264',
   loadingPath: '<path d="M1 132a11 11 0 0 1 11-11 11 11 0 0 1 11 11 109.123 109.123 0 0 0 109 109 11 11 0 0 1 11 11 11 11 0 0 1-11 11C59.766 263 1 204.233 1 132Zm240 0A109.122 109.122 0 0 0 132 23a11 11 0 0 1-11-11 11 11 0 0 1 11-11c72.233 0 131 58.768 131 131a11 11 0 0 1-11 11 11 11 0 0 1-11-11Z"/>'
@@ -6297,7 +6297,7 @@ ui.loadingMask = {
           html = '<span class="' + ui.loadingMask.nameLoader + ' ' + ui.loadingMask.stylesLoader + '">';
 
           if (l[i].offsetHeight > window.innerHeight) {
-            html += '<span style="top: ' + ui.loadingMask.sttaicIconTop + 'px;">';
+            html += '<span style="top: ' + ui.loadingMask.staticIconTop + 'px;">';
           } else html += '<span>';
 
           html += '<svg ' + 'xmlns="http://www.w3.org/2000/svg"' + 'viewBox="' + ui.loadingMask.loadingBox + '"' + 'class="' + ui.loadingMask.stylesIcon + '" ' + 'style="height: ' + l[i].offsetHeight * ui.loadingMask.loadingSize + 'px;">' + ui.loadingMask.loadingPath + '</svg>' + '</span>' + '</span>';

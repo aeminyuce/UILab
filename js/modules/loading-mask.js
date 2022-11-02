@@ -21,7 +21,7 @@ ui.loadingMask = {
     stylesIcon: 'ui-animate-spin',
 
     // values
-    sttaicIconTop: 220,
+    staticIconTop: 220,
 
     loadingSize: 0.32,
     loadingBox: '0 0 264 264',
@@ -115,7 +115,7 @@ ui.loadingMask = {
                     html = '<span class="' + ui.loadingMask.nameLoader + ' ' + ui.loadingMask.stylesLoader + '">';
 
                     if (l[i].offsetHeight > window.innerHeight) { // detect static icon
-                        html += '<span style="top: ' + ui.loadingMask.sttaicIconTop + 'px;">';
+                        html += '<span style="top: ' + ui.loadingMask.staticIconTop + 'px;">';
 
                     } else html += '<span>';
 
