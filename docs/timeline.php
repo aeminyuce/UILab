@@ -3,7 +3,7 @@
         <div class="ui-row">
             <div class="ui-col-12 ui-p-30-v">
 
-                <h3 class="ui-h3 ui-align-c">2018</h3>
+                <h3 class="ui-h3 ui-align-c">2020</h3>
                 <ul class="ui-timeline ui-font-16 ui-theme-base ui-text">
                     <li>
                         <img class="ui-avatar ui-circle ui-shadow-lg" src="../public/img/profile-image.jpg" alt="">
@@ -18,6 +18,50 @@
                     <li>
                         <span class="ui-avatar ui-circle ui-shadow-lg ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
                         <span class="ui-card ui-round ui-fill-dark-100">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span>
+                    </li>
+                </ul>
+
+                <h3 class="ui-h3 ui-align-c">2019</h3>
+                <ul class="ui-timeline ui-font-16 ui-theme-base ui-text">
+                    <li>
+                        <img class="ui-avatar ui-circle ui-shadow-lg" src="../public/img/profile-image.jpg" alt="">
+                        <span class="ui-card ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque.</span>
+                    </li>
+                    <li class="ui-timeline-align-l">
+                        <span class="ui-avatar ui-circle ui-shadow-lg ui-theme-orange ui-fill-dark-100">
+                            <svg class="ui-icon ui-color-white"><use href="../dist/icons.svg#calendar"/></svg>
+                        </span>
+                        <span class="ui-card ui-round ui-fill-dark-100">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span>
+                    </li>
+                    <li>
+                        <span class="ui-avatar ui-circle ui-shadow-lg ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
+                        <span class="ui-card ui-round ui-fill-dark-100">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span>
+                    </li>
+                    <li>
+                        <img class="ui-avatar ui-circle ui-shadow-lg" src="../public/img/profile-image.jpg" alt="">
+                        <span class="ui-card ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque.</span>
+                    </li>
+                </ul>
+
+                <h3 class="ui-h3 ui-align-c">2018</h3>
+                <ul class="ui-timeline ui-font-16 ui-theme-base ui-text">
+                    <li class="ui-timeline-align-r">
+                        <img class="ui-avatar ui-circle ui-shadow-lg" src="../public/img/profile-image.jpg" alt="">
+                        <span class="ui-card ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque.</span>
+                    </li>
+                    <li>
+                        <span class="ui-avatar ui-circle ui-shadow-lg ui-theme-orange ui-fill-dark-100">
+                            <svg class="ui-icon ui-color-white"><use href="../dist/icons.svg#calendar"/></svg>
+                        </span>
+                        <span class="ui-card ui-round ui-fill-dark-100">Nullam sit amet sagittis nisi. Aenean imperdiet dolor nibh, a porta nunc maximus vitae.</span>
+                    </li>
+                    <li>
+                        <span class="ui-avatar ui-circle ui-shadow-lg ui-theme-yellow ui-fill-dark-100"><span>HY</span></span>
+                        <span class="ui-card ui-round ui-fill-dark-100">Etiam bibendum molestie lectus sit amet aliquet. In hac habitasse platea dictumst. Duis libero massa, dapibus sit amet leo malesuada, pharetra iaculis sapien. Pellentesque lobortis leo vitae magna sollicitudin, at tincidunt felis tempor.</span>
+                    </li>
+                    <li>
+                        <img class="ui-avatar ui-circle ui-shadow-lg" src="../public/img/profile-image.jpg" alt="">
+                        <span class="ui-card ui-round ui-fill-dark-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas nulla, et laoreet nulla. Vestibulum finibus nec metus vel bibendum. Mauris consectetur congue pellentesque.</span>
                     </li>
                 </ul>
 

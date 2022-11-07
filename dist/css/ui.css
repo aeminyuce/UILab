@@ -7085,23 +7085,29 @@ html:not(.ui-ie) .ui-steps-bar li {
   .ui-timeline:not(.ui-timeline-l) > li {
     width: 50%;
   }
-  .ui-timeline:not(.ui-timeline-l) > li:nth-child(2n+1) {
+  .ui-timeline:not(.ui-timeline-l) > li:nth-child(2n+1):not([class*="ui-timeline-align-r"]),
+  .ui-timeline:not(.ui-timeline-l) > li.ui-timeline-align-l {
     padding-right: 30px;
   }
-  .ui-timeline:not(.ui-timeline-l) > li:nth-child(2n+1):before {
+  .ui-timeline:not(.ui-timeline-l) > li:nth-child(2n+1):not([class*="ui-timeline-align-r"]):before,
+  .ui-timeline:not(.ui-timeline-l) > li.ui-timeline-align-l:before {
     right: 0;
   }
-  .ui-timeline:not(.ui-timeline-l) > li:nth-child(2n+1):after {
+  .ui-timeline:not(.ui-timeline-l) > li:nth-child(2n+1):not([class*="ui-timeline-align-r"]):after,
+  .ui-timeline:not(.ui-timeline-l) > li.ui-timeline-align-l:after {
     right: -7px;
   }
-  .ui-timeline:not(.ui-timeline-l) > li:nth-child(2n+2) {
+  .ui-timeline:not(.ui-timeline-l) > li:nth-child(2n+2):not([class*="ui-timeline-align-l"]),
+  .ui-timeline:not(.ui-timeline-l) > li.ui-timeline-align-r {
     padding-left: 30px;
     left: 50%;
   }
-  .ui-timeline:not(.ui-timeline-l) > li:nth-child(2n+2):before {
+  .ui-timeline:not(.ui-timeline-l) > li:nth-child(2n+2):not([class*="ui-timeline-align-l"]):before,
+  .ui-timeline:not(.ui-timeline-l) > li.ui-timeline-align-r:before {
     left: 0;
   }
-  .ui-timeline:not(.ui-timeline-l) > li:nth-child(2n+2):after {
+  .ui-timeline:not(.ui-timeline-l) > li:nth-child(2n+2):not([class*="ui-timeline-align-l"]):after,
+  .ui-timeline:not(.ui-timeline-l) > li.ui-timeline-align-r:after {
     left: -7px;
   }
 }
