@@ -50,6 +50,12 @@ ui.lineChart = {
     showGrid: true,
     showGridText: true,
     showInfo: true,
+    showInfoStats: true,
+
+    hideRepeatadCircles: false,
+
+    showGridTextSpace: 7,
+    showInfoSpace: 7,
 
     rows: 5,
     rowsHeight: 50,
@@ -178,7 +184,7 @@ ui.lineChart.Start = () => {
                                 if (y !== null && y !== '') {
                                     data[i].y.push(y);
 
-                                } else { return; }
+                                } else return;
 
                                 link = item.getAttribute(ui.lineChart.dataLink);
 
@@ -214,9 +220,8 @@ ui.lineChart.Start = () => {
                 // start html
                 data.svgHeight = data.height;
 
-                if (ui.lineChart.showInfo || ui.lineChart.showGridText) {
-                    data.svgHeight += 15;
-                }
+                if (ui.lineChart.showInfo) data.svgHeight += ui.lineChart.showInfoSpace;
+                if (ui.lineChart.showGridText) data.svgHeight += ui.lineChart.showGridTextSpace;
 
                 html = '<svg style="width: ' + data.width + 'px; height: ' + data.svgHeight + 'px;">';
 
@@ -406,32 +411,45 @@ ui.lineChart.Start = () => {
                             }
 
                             // create circles
-                            circles += '<circle ' +
-                                            'cx="' + posX + '" ' +
-                                            'cy="' + posY + '" ' +
-                                            'r="' + ui.lineChart.circleSize + '" ' +
-                                            'fill="' + data.color[j] + '" ' +
-                                            'stroke="' + data.color[j] + '" ' +
-                                            'stroke-width="0" ';
+                            const createCircles = () => {
 
-                            if (data[j].links[n] !== '') { // check links
-                                circles += 'onclick="location.href = \'' + data[j].links[n] + '\';"';
+                                circles += '<circle ' +
+                                                    'cx="' + posX + '" ' +
+                                                    'cy="' + posY + '" ' +
+                                                    'r="' + ui.lineChart.circleSize + '" ' +
+                                                    'fill="' + data.color[j] + '" ' +
+                                                    'stroke="' + data.color[j] + '" ' +
+                                                    'stroke-width="0" ';
+
+                                    if (data[j].links[n] !== '') { // check links
+                                        circles += 'onclick="location.href = \'' + data[j].links[n] + '\';"';
+                                    }
+
+                                    if (ui.tooltip === undefined) { // Optional!
+
+                                        circles += '/>' +
+                                                    '<title>' + y[n] + '</title>';
+
+                                    } else {
+
+                                        circles += ui.tooltip.dataTooltip + ' ' +
+                                                    'title="' + y[n] + '" ' +
+                                                '/>';
+
+                                    }
+
+                                    '</circle>';
+
                             }
 
-                            if (ui.tooltip === undefined) { // Optional!
+                            if (ui.lineChart.hideRepeatadCircles) {
 
-                                circles += '/>' +
-                                            '<title>' + y[n] + '</title>';
+                                if (n === 0 || n === y.length - 1) createCircles();
 
-                            } else {
+                                if (y[n - 1] !== undefined && y[n - 1] !== y[n]) createCircles();
+                                if (y[n + 1] !== undefined && y[n + 1] !== y[n]) createCircles();
 
-                                circles += ui.tooltip.dataTooltip + ' ' +
-                                            'title="' + y[n] + '" ' +
-                                        '/>';
-
-                            }
-
-                            '</circle>';
+                            } else createCircles();
 
                         }
 
@@ -485,9 +503,7 @@ ui.lineChart.Start = () => {
                         if (name !== null && name !== '') {
                             data.name.push(name);
 
-                        } else {
-                            data.name.push('');
-                        }
+                        } else data.name.push('');
 
                     });
 
@@ -511,18 +527,25 @@ ui.lineChart.Start = () => {
                             total += parseInt(data[p].y[n]);
                         }
 
-                        html += '<li>' +
-                            '<' + ui.lineChart.tagInfoColor +' style="background: ' + data.color[p] + '">' +
-                            '</' + ui.lineChart.tagInfoColor + '>';
+                        if (data.name[p] !== '') {
 
-                        if (data.name[p] === '') {
-                            html += '<' + ui.lineChart.tagInfoStat + '>' + total;
+                            html += '<li>' +
+                                        '<' + ui.lineChart.tagInfoColor +' style="background: ' +
+                                            data.color[p] + '">' +
+                                        '</' + ui.lineChart.tagInfoColor + '>' +
+                                        data.name[p];
 
-                        } else {
-                            html += data.name[p] + ': <b>' + total;
+                            if (ui.lineChart.showInfoStats) {
+
+                                html += ': <' + ui.lineChart.tagInfoStat + '>' +
+                                            total +
+                                    '</' + ui.lineChart.tagInfoStat + '>';
+
+                            }
+
+                            html += '</li>';
+
                         }
-
-                        html += '</' + ui.lineChart.tagInfoStat + '></li>';
 
                     }
 
