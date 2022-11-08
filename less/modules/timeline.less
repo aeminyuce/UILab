@@ -103,16 +103,17 @@
             }
             &.ui-timeline-no-h-lines {
                 & > li {
-                    &:first-child {
+                    &:first-child:not(:last-child) {
                         padding-top: (@timeline-line-gap / 2);
 
                         &:after { margin-top: (@timeline-line-gap / 4); }
                     }
-                    &:last-child {
+                    &:last-child:not(:first-child) {
                         padding-bottom: (@timeline-line-gap / 2);
 
                         &:after { margin-top: (-@timeline-line-gap / 4); }
                     }
+                    &:last-child:first-child { padding-top: (@timeline-line-gap / 2); padding-bottom: (@timeline-line-gap / 2); }
                 }
             }
         }
