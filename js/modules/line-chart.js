@@ -73,6 +73,9 @@ ui.lineChart = {
     bottom: 15,
     left: 35,
 
+    prefixGridY: '',
+    suffixGridY: '',
+
     dotted: 'dotted',
     dashed: 'dashed',
     curved: 'curved',
@@ -316,7 +319,7 @@ ui.lineChart.Start = () => {
                                     'x="' + (ui.lineChart.left - 10) + '" ' +
                                     'y="' + (posY + 4) +
                                 '">' +
-                                    (parseInt((yMax - yMin) / rows) * (rows - l) + yMin) +
+                                    ui.lineChart.prefixGridY + (parseInt((yMax - yMin) / rows) * (rows - l) + yMin) + ui.lineChart.suffixGridY +
                                 '</text>';
                     }
 
