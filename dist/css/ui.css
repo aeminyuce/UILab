@@ -7071,17 +7071,21 @@ html:not(.ui-ie) .ui-steps-bar li {
 .ui-timeline.ui-timeline-l > li:after {
   left: 0;
 }
-.ui-timeline.ui-timeline-l.ui-timeline-no-h-lines > li:first-child {
+.ui-timeline.ui-timeline-l.ui-timeline-no-h-lines > li:first-child:not(:last-child) {
   padding-top: 15px;
 }
-.ui-timeline.ui-timeline-l.ui-timeline-no-h-lines > li:first-child:after {
+.ui-timeline.ui-timeline-l.ui-timeline-no-h-lines > li:first-child:not(:last-child):after {
   margin-top: 7.5px;
 }
-.ui-timeline.ui-timeline-l.ui-timeline-no-h-lines > li:last-child {
+.ui-timeline.ui-timeline-l.ui-timeline-no-h-lines > li:last-child:not(:first-child) {
   padding-bottom: 15px;
 }
-.ui-timeline.ui-timeline-l.ui-timeline-no-h-lines > li:last-child:after {
+.ui-timeline.ui-timeline-l.ui-timeline-no-h-lines > li:last-child:not(:first-child):after {
   margin-top: -7.5px;
+}
+.ui-timeline.ui-timeline-l.ui-timeline-no-h-lines > li:last-child:first-child {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 @media (min-width: 768px) {
   .ui-timeline:not(.ui-timeline-l):after {
