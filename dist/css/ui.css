@@ -7074,8 +7074,14 @@ html:not(.ui-ie) .ui-steps-bar li {
 .ui-timeline.ui-timeline-l.ui-timeline-no-h-lines > li:first-child {
   padding-top: 15px;
 }
+.ui-timeline.ui-timeline-l.ui-timeline-no-h-lines > li:first-child:after {
+  margin-top: 7.5px;
+}
 .ui-timeline.ui-timeline-l.ui-timeline-no-h-lines > li:last-child {
   padding-bottom: 15px;
+}
+.ui-timeline.ui-timeline-l.ui-timeline-no-h-lines > li:last-child:after {
+  margin-top: -7.5px;
 }
 @media (min-width: 768px) {
   .ui-timeline:not(.ui-timeline-l):after {
