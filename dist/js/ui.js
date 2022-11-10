@@ -7151,14 +7151,20 @@ ui.tooltip = {
 
   function tooltipFnc(that, type) {
     var title, dataTitle;
-    title = that.getAttribute('title');
+    var attr = 'title';
+
+    if (ui.globals.svgElems.indexOf(that.tagName.toLowerCase()) !== -1) {
+      attr = 'name';
+    }
+
+    title = that.getAttribute(attr);
 
     if (type === "show" && title !== null && title !== '') {
       clearTimeout(tooltipOpenedTimer);
       ui.addClass(document, ui.tooltip.nameTooltipOpened);
       createFnc(that, title);
       that.setAttribute(ui.tooltip.dataTitle, title);
-      that.removeAttribute('title');
+      that.removeAttribute(attr);
       ui.addClass(that, ui.tooltip.nameActive);
     } else {
       dataTitle = that.getAttribute(ui.tooltip.dataTitle);
@@ -7175,7 +7181,7 @@ ui.tooltip = {
 
         if (type === 'close') {
           that.removeAttribute(ui.tooltip.dataTitle);
-          that.setAttribute('title', dataTitle);
+          that.setAttribute(attr, dataTitle);
         }
       }
     }

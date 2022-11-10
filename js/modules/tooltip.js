@@ -213,7 +213,14 @@ ui.tooltip = {
 
         var title, dataTitle;
 
-        title = that.getAttribute('title');
+        let attr = 'title';
+
+        if (ui.globals.svgElems.indexOf(that.tagName.toLowerCase()) !== -1) { // check SVG and own elements
+            attr = 'name';
+        }
+
+        title = that.getAttribute(attr);
+
         if (type === "show" && title !== null && title !== '') {
 
             clearTimeout(tooltipOpenedTimer);
@@ -222,7 +229,7 @@ ui.tooltip = {
             createFnc(that, title);
 
             that.setAttribute(ui.tooltip.dataTitle, title);
-            that.removeAttribute('title');
+            that.removeAttribute(attr);
 
             ui.addClass(that, ui.tooltip.nameActive);
 
@@ -247,7 +254,7 @@ ui.tooltip = {
                 if (type === 'close') {
 
                     that.removeAttribute(ui.tooltip.dataTitle);
-                    that.setAttribute('title', dataTitle);
+                    that.setAttribute(attr, dataTitle);
 
                 }
 
