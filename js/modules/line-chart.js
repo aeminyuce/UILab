@@ -71,10 +71,7 @@ ui.lineChart = {
     top: 6,
     right: 16,
     bottom: 15,
-    left: 35,
-
-    prefixGridY: '',
-    suffixGridY: '',
+    left: 55,
 
     dotted: 'dotted',
     dashed: 'dashed',
@@ -84,6 +81,9 @@ ui.lineChart = {
     // data attributes
     dataX: 'data-ui-x',
     dataY: 'data-ui-y',
+
+    dataPrefix: 'data-ui-prefix',
+    dataSuffix: 'data-ui-suffix',
 
     dataSize: 'data-ui-size',
     dataLink: 'data-ui-url',
@@ -218,7 +218,14 @@ ui.lineChart.Start = () => {
                 yMax = yMax.sort((a, b) => b - a); // convert array as desc
 
                 yMin = parseInt(yMax[yMax.length - 1]);
-                yMax = Math.ceil((parseInt(yMax[0]) - yMin) / rows) * rows + yMin; // convert yMax to divide with rows
+
+                // convert yMax to divide with rows
+                if (parseInt(yMax[1]) > 0) { // decimals
+
+                    yMax = Math.ceil((parseInt(yMax[0]) - yMin) / rows) * rows + yMin;
+                    yMax++;
+
+                } else yMax = Math.ceil((parseInt(yMax[0]) - yMin) / rows) * rows + yMin;
 
                 // start html
                 data.svgHeight = data.height;
@@ -309,17 +316,26 @@ ui.lineChart.Start = () => {
                 html += '</g>' +
                     '<g class="' + ui.lineChart.nameGridY + '">';
 
+                let prefix = this.getAttribute(ui.lineChart.dataPrefix);
+                if (prefix === null || size === '') prefix = '';
+
+                let suffix = this.getAttribute(ui.lineChart.dataSuffix);
+                if (suffix === null || size === '') suffix = '';
+
                 for (let l = 0; l <= rows; l++) {
 
                     posY = parseInt((l * (data.height - (ui.lineChart.top + ui.lineChart.bottom)) / rows) + ui.lineChart.top);
 
                     if (ui.lineChart.showGridText) {
 
+                        let val = (parseInt(yMax - yMin) / rows) * (rows - l) + yMin;
+                        if (val.toString().split('.')[1] !== undefined) val = val.toFixed(1); // decimals
+
                         html += '<text ' +
                                     'x="' + (ui.lineChart.left - 10) + '" ' +
                                     'y="' + (posY + 4) +
                                 '">' +
-                                    ui.lineChart.prefixGridY + (parseInt((yMax - yMin) / rows) * (rows - l) + yMin) + ui.lineChart.suffixGridY +
+                                    prefix + val + suffix +
                                 '</text>';
                     }
 

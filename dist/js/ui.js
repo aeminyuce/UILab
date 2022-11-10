@@ -7579,15 +7579,15 @@ ui.lineChart = {
   top: 6,
   right: 16,
   bottom: 15,
-  left: 35,
-  prefixGridY: '',
-  suffixGridY: '',
+  left: 55,
   dotted: 'dotted',
   dashed: 'dashed',
   curved: 'curved',
   filled: 'filled',
   dataX: 'data-ui-x',
   dataY: 'data-ui-y',
+  dataPrefix: 'data-ui-prefix',
+  dataSuffix: 'data-ui-suffix',
   dataSize: 'data-ui-size',
   dataLink: 'data-ui-url',
   dataType: 'data-ui-type',
@@ -7695,7 +7695,12 @@ ui.lineChart.Start = function () {
         return b - a;
       });
       yMin = parseInt(yMax[yMax.length - 1]);
-      yMax = Math.ceil((parseInt(yMax[0]) - yMin) / rows) * rows + yMin;
+
+      if (parseInt(yMax[1]) > 0) {
+        yMax = Math.ceil((parseInt(yMax[0]) - yMin) / rows) * rows + yMin;
+        yMax++;
+      } else yMax = Math.ceil((parseInt(yMax[0]) - yMin) / rows) * rows + yMin;
+
       data.svgHeight = data.height;
       if (ui.lineChart.showInfo) data.svgHeight += ui.lineChart.showInfoSpace;
       if (ui.lineChart.showGridText) data.svgHeight += ui.lineChart.showGridTextSpace;
@@ -7746,12 +7751,18 @@ ui.lineChart.Start = function () {
       }
 
       html += '</g>' + '<g class="' + ui.lineChart.nameGridY + '">';
+      var prefix = this.getAttribute(ui.lineChart.dataPrefix);
+      if (prefix === null || size === '') prefix = '';
+      var suffix = this.getAttribute(ui.lineChart.dataSuffix);
+      if (suffix === null || size === '') suffix = '';
 
       for (var l = 0; l <= rows; l++) {
         posY = parseInt(l * (data.height - (ui.lineChart.top + ui.lineChart.bottom)) / rows + ui.lineChart.top);
 
         if (ui.lineChart.showGridText) {
-          html += '<text ' + 'x="' + (ui.lineChart.left - 10) + '" ' + 'y="' + (posY + 4) + '">' + ui.lineChart.prefixGridY + (parseInt((yMax - yMin) / rows) * (rows - l) + yMin) + ui.lineChart.suffixGridY + '</text>';
+          var val = parseInt(yMax - yMin) / rows * (rows - l) + yMin;
+          if (val.toString().split('.')[1] !== undefined) val = val.toFixed(1);
+          html += '<text ' + 'x="' + (ui.lineChart.left - 10) + '" ' + 'y="' + (posY + 4) + '">' + prefix + val + suffix + '</text>';
         }
 
         if (l === rows || ui.lineChart.showGrid) {
