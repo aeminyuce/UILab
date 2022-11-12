@@ -444,15 +444,15 @@ ui.lineChart.Start = () => {
                                         circles += 'onclick="location.href = \'' + data[j].links[n] + '\';"';
                                     }
 
-                                    if (ui.tooltip === undefined) { // Optional!
+                                    if (ui.tooltip === undefined) {
 
                                         circles += '/>' +
                                                     '<title>' + y[n] + '</title>';
 
-                                    } else {
+                                    } else { // Optional!
 
                                         circles += ui.tooltip.dataTooltip + ' ' +
-                                                    'title="' + y[n] + '" ' +
+                                                    'name="' + y[n] + '" ' +
                                                 '/>';
 
                                     }

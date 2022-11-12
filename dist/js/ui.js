@@ -7836,7 +7836,7 @@ ui.lineChart.Start = function () {
             if (ui.tooltip === undefined) {
               circles += '/>' + '<title>' + y[n] + '</title>';
             } else {
-              circles += ui.tooltip.dataTooltip + ' ' + 'title="' + y[n] + '" ' + '/>';
+              circles += ui.tooltip.dataTooltip + ' ' + 'name="' + y[n] + '" ' + '/>';
             }
           };
 
