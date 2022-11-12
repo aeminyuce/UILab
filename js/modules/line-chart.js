@@ -71,7 +71,7 @@ ui.lineChart = {
     top: 6,
     right: 16,
     bottom: 15,
-    left: 55,
+    left: 35,
 
     dotted: 'dotted',
     dashed: 'dashed',
@@ -328,8 +328,10 @@ ui.lineChart.Start = () => {
 
                     if (ui.lineChart.showGridText) {
 
-                        let val = (parseInt(yMax - yMin) / rows) * (rows - l) + yMin;
-                        if (val.toString().split('.')[1] !== undefined) val = val.toFixed(1); // decimals
+                        let val = parseInt(((yMax - yMin) / rows) * (rows - l) + yMin);
+
+                        if (val > 50) val = parseInt(val / 10) * 10;
+                        if (val < 0) val--;
 
                         html += '<text ' +
                                     'x="' + (ui.lineChart.left - 10) + '" ' +

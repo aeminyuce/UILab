@@ -7585,7 +7585,7 @@ ui.lineChart = {
   top: 6,
   right: 16,
   bottom: 15,
-  left: 55,
+  left: 35,
   dotted: 'dotted',
   dashed: 'dashed',
   curved: 'curved',
@@ -7766,8 +7766,9 @@ ui.lineChart.Start = function () {
         posY = parseInt(l * (data.height - (ui.lineChart.top + ui.lineChart.bottom)) / rows + ui.lineChart.top);
 
         if (ui.lineChart.showGridText) {
-          var val = parseInt(yMax - yMin) / rows * (rows - l) + yMin;
-          if (val.toString().split('.')[1] !== undefined) val = val.toFixed(1);
+          var val = parseInt((yMax - yMin) / rows * (rows - l) + yMin);
+          if (val > 50) val = parseInt(val / 10) * 10;
+          if (val < 0) val--;
           html += '<text ' + 'x="' + (ui.lineChart.left - 10) + '" ' + 'y="' + (posY + 4) + '">' + prefix + val + suffix + '</text>';
         }
 
