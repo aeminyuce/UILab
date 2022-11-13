@@ -69,9 +69,9 @@ ui.lineChart = {
     circleSize: 4,
 
     top: 6,
-    right: 16,
+    right: 6,
     bottom: 15,
-    left: 35,
+    left: 40,
 
     dotted: 'dotted',
     dashed: 'dashed',
