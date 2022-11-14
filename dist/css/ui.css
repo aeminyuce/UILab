@@ -6671,7 +6671,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-progress-bar > span:not([class*="animate-"]) {
   animation: ui-progress-fill 2s ease-in-out forwards;
 }
-.ui-progress-bar:not(.ui-progress-lg) > span {
+.ui-progress-bar:not(.ui-progress-lg):not(.ui-progress-xl):not(.ui-progress-xxl) > span {
   font-size: 0 !important;
 }
 .ui-progress-bar.ui-border > span {
@@ -6699,24 +6699,54 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   border-top-right-radius: 1000px;
   border-bottom-right-radius: 1000px;
 }
+.ui-progress-xxl {
+  height: 60px;
+}
+.ui-progress-xxl > span {
+  font-size: 80%;
+  text-align: center;
+  line-height: 56px;
+  height: 56px;
+}
+.ui-progress-xxl.ui-border-dual > span {
+  line-height: 52px;
+  height: 52px;
+}
+.ui-progress-xl {
+  height: 40px;
+}
+.ui-progress-xl > span {
+  font-size: 80%;
+  text-align: center;
+  line-height: 36px;
+  height: 36px;
+}
+.ui-progress-xl.ui-border-dual > span {
+  line-height: 32px;
+  height: 32px;
+}
 .ui-progress-lg {
   height: 20px;
 }
 .ui-progress-lg > span {
   font-size: 80%;
   text-align: center;
+  line-height: 16px;
   height: 16px;
 }
 .ui-progress-lg.ui-border-dual > span {
+  line-height: 12px;
   height: 12px;
 }
 .ui-progress-sm {
   height: 10px;
 }
 .ui-progress-sm > span {
+  line-height: 6px;
   height: 6px;
 }
 .ui-progress-sm.ui-border-dual > span {
+  line-height: 2px;
   height: 2px;
 }
 /* scrollbar */

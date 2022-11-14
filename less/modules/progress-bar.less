@@ -5,6 +5,8 @@
 
 @progress-bar-info-font-size:           80%;
 
+@progress-bar-xxl-size:                 60px;
+@progress-bar-xl-size:                  40px;
 @progress-bar-lg-size:                  20px;
 @progress-bar-default-size:             14px;
 @progress-bar-sm-size:                  10px;
@@ -52,7 +54,7 @@
 
                 &:not([class*="animate-"]) { animation: ui-progress-fill 2s ease-in-out forwards; }
             }
-            &:not(.ui-progress-lg) {
+            &:not(.ui-progress-lg):not(.ui-progress-xl):not(.ui-progress-xxl) {
                 & > span { font-size: 0 !important; }
             }
             &.ui-border > span {
@@ -76,20 +78,36 @@
             }
         }
 
+        &xxl {
+            height: @progress-bar-xxl-size;
+
+            & > span { font-size: @progress-bar-info-font-size; text-align: center; line-height: (@progress-bar-xxl-size - @progress-bar-padding * 2); height: (@progress-bar-xxl-size - @progress-bar-padding * 2); }
+            &.ui-border-dual > span {
+                line-height: (@progress-bar-xxl-size - @progress-bar-padding * 2 - @border-dual * 2); height: (@progress-bar-xxl-size - @progress-bar-padding * 2 - @border-dual * 2);
+            }
+        }
+        &xl {
+            height: @progress-bar-xl-size;
+
+            & > span { font-size: @progress-bar-info-font-size; text-align: center; line-height: (@progress-bar-xl-size - @progress-bar-padding * 2); height: (@progress-bar-xl-size - @progress-bar-padding * 2); }
+            &.ui-border-dual > span {
+                line-height: (@progress-bar-xl-size - @progress-bar-padding * 2 - @border-dual * 2); height: (@progress-bar-xl-size - @progress-bar-padding * 2 - @border-dual * 2);
+            }
+        }
         &lg {
             height: @progress-bar-lg-size;
 
-            & > span { font-size: @progress-bar-info-font-size; text-align: center; height: (@progress-bar-lg-size - @progress-bar-padding * 2); }
+            & > span { font-size: @progress-bar-info-font-size; text-align: center; line-height: (@progress-bar-lg-size - @progress-bar-padding * 2); height: (@progress-bar-lg-size - @progress-bar-padding * 2); }
             &.ui-border-dual > span {
-                height: (@progress-bar-lg-size - @progress-bar-padding * 2 - @border-dual * 2);
+                line-height: (@progress-bar-lg-size - @progress-bar-padding * 2 - @border-dual * 2); height: (@progress-bar-lg-size - @progress-bar-padding * 2 - @border-dual * 2);
             }
         }
         &sm {
             height: @progress-bar-sm-size;
 
-            & > span { height: (@progress-bar-sm-size - @progress-bar-padding * 2); }
+            & > span { line-height: (@progress-bar-sm-size - @progress-bar-padding * 2); height: (@progress-bar-sm-size - @progress-bar-padding * 2); }
             &.ui-border-dual > span {
-                height: (@progress-bar-sm-size - @progress-bar-padding * 2 - @border-dual * 2);
+                line-height: (@progress-bar-sm-size - @progress-bar-padding * 2 - @border-dual * 2); height: (@progress-bar-sm-size - @progress-bar-padding * 2 - @border-dual * 2);
             }
         }
     }

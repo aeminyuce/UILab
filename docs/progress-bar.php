@@ -18,6 +18,14 @@
                         <span style="width: 80%;">80%</span>
                     </div>
 
+                    <div class="ui-progress-bar ui-progress-xl ui-m-15">
+                        <span style="width: 80%;">80%</span>
+                    </div>
+
+                    <div class="ui-progress-bar ui-progress-xxl ui-m-15">
+                        <span style="width: 80%;">80%</span>
+                    </div>
+
                     <span class="ui-sp-15"></span>
 
                     <div class="ui-theme-yellow">
@@ -30,6 +38,14 @@
                         </div>
 
                         <div class="ui-progress-bar ui-progress-lg ui-m-15 ui-circle">
+                            <span class="ui-fill-dark-100" style="width: 80%;">80%</span>
+                        </div>
+
+                        <div class="ui-progress-bar ui-progress-xl ui-m-15 ui-circle">
+                            <span class="ui-fill-dark-100" style="width: 80%;">80%</span>
+                        </div>
+
+                        <div class="ui-progress-bar ui-progress-xxl ui-m-15 ui-circle">
                             <span class="ui-fill-dark-100" style="width: 80%;">80%</span>
                         </div>
                     </div>
@@ -46,6 +62,14 @@
                         </div>
 
                         <div class="ui-progress-bar ui-progress-lg ui-m-15 ui-circle">
+                            <span class="ui-fill-dark-100" style="width: 80%;">80%</span>
+                        </div>
+
+                        <div class="ui-progress-bar ui-progress-xl ui-m-15 ui-circle">
+                            <span class="ui-fill-dark-100" style="width: 80%;">80%</span>
+                        </div>
+
+                        <div class="ui-progress-bar ui-progress-xxl ui-m-15 ui-circle">
                             <span class="ui-fill-dark-100" style="width: 80%;">80%</span>
                         </div>
                     </div>
@@ -66,6 +90,16 @@
                     </div>
 
                     <div class="ui-progress-bar ui-progress-lg ui-m-15 ui-round">
+                        <span class="ui-theme-base ui-fill-dark-100" style="width: 40%;">40%</span>
+                        <span class="ui-theme-sub ui-fill-dark-100" style="width: 45%;">45%</span>
+                    </div>
+
+                    <div class="ui-progress-bar ui-progress-xl ui-m-15 ui-round">
+                        <span class="ui-theme-base ui-fill-dark-100" style="width: 40%;">40%</span>
+                        <span class="ui-theme-sub ui-fill-dark-100" style="width: 45%;">45%</span>
+                    </div>
+
+                    <div class="ui-progress-bar ui-progress-xxl ui-m-15 ui-round">
                         <span class="ui-theme-base ui-fill-dark-100" style="width: 40%;">40%</span>
                         <span class="ui-theme-sub ui-fill-dark-100" style="width: 45%;">45%</span>
                     </div>
