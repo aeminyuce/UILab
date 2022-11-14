@@ -7059,8 +7059,6 @@ html:not(.ui-ie) .ui-steps-bar li {
   transform: translateY(50%);
 }
 .ui-timeline > li > .ui-card {
-  background-color: hsl(0, 0%, 98%);
-  background-color: var(--ui-body-bg);
   padding: 15px;
   display: block;
   position: relative;
@@ -7070,6 +7068,8 @@ html:not(.ui-ie) .ui-steps-bar li {
 .ui-timeline > li > .ui-card button {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);
+  background-color: hsl(0, 0%, 98%);
+  background-color: var(--ui-body-bg);
 }
 .ui-timeline > li > .ui-avatar + .ui-card {
   padding-top: 33px;

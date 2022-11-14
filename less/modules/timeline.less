@@ -76,9 +76,9 @@
                 &,&-lg,&-sm,&-xs { margin-left: @timeline-card-padding; position: relative; z-index: 1; transform: translateY(50%); }
             }
             & > .ui-card {
-                ._bg-var(body-bg); padding: @timeline-card-padding; display: block; position: relative;
+                padding: @timeline-card-padding; display: block; position: relative;
 
-                &:not([class*="ui-fill"]),a,button { ._color-var(black); }
+                &:not([class*="ui-fill"]),a,button { ._color-var(black); ._bg-var(body-bg); }
             }
             & > .ui-avatar {
                 & + .ui-card { padding-top: ((@avatar-default / 2) + round((@timeline-card-padding / 2))); }
