@@ -7583,7 +7583,7 @@ ui.lineChart = {
   lineStroke: 2,
   circleSize: 4,
   top: 6,
-  right: 6,
+  right: 12,
   bottom: 15,
   left: 40,
   dotted: 'dotted',
@@ -7598,7 +7598,8 @@ ui.lineChart = {
   dataLink: 'data-ui-url',
   dataType: 'data-ui-type',
   dataName: 'data-ui-name',
-  dataStep: 'data-ui-step'
+  dataStep: 'data-ui-step',
+  dataNoCircles: 'data-ui-no-circles'
 };
 
 ui.lineChart.Start = function () {
@@ -7827,7 +7828,11 @@ ui.lineChart.Start = function () {
             }
           }
 
+          var noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
+          if (noCircles === null || noCircles === '') noCircles = false;else noCircles = true;
+
           var createCircles = function createCircles() {
+            if (noCircles) return;
             circles += '<circle ' + 'cx="' + posX + '" ' + 'cy="' + posY + '" ' + 'r="' + ui.lineChart.circleSize + '" ' + 'fill="' + data.color[j] + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="0" ';
 
             if (data[j].links[n] !== '') {
