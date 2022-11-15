@@ -10020,14 +10020,6 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.ui-icon) {
   animation: ui-pie-spin-r 1.6s ease-in forwards;
 }
 /* map */
-[data-ui-mode="light"] {
-  --ui-map-path-fill: hsla(0, 0%, 0%, 0.08);
-  --ui-map-path-fill-hover: hsla(0, 0%, 0%, 0.15);
-}
-[data-ui-mode="dark"] {
-  --ui-map-path-fill: hsla(0, 0%, 100%, 0.08);
-  --ui-map-path-fill-hover: hsla(0, 0%, 100%, 0.15);
-}
 .ui-map {
   position: relative;
 }
@@ -10048,12 +10040,11 @@ html:not(.ui-ie) .ui-map svg {
   stroke-width: 1;
 }
 .ui-map svg path:not([fill]) {
-  fill: hsla(0, 0%, 0%, 0.08);
-  fill: var(--ui-map-path-fill);
+  fill: currentColor;
+  opacity: 0.075;
 }
 .ui-map svg path:not([fill]):hover {
-  fill: hsla(0, 0%, 0%, 0.15);
-  fill: var(--ui-map-path-fill-hover);
+  opacity: 0.125;
 }
 .ui-map svg path:not([stroke]) {
   stroke: hsl(0, 0%, 98%);
