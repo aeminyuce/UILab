@@ -413,6 +413,10 @@
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#wc"/></svg><span>wc</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#building"/></svg><span>building</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#buildings"/></svg><span>buildings</span></li>
+                    <li><svg class="ui-icon"><use href="../dist/icons.svg#house-alt"/></svg><span>house-alt</span></li>
+                    <li><svg class="ui-icon"><use href="../dist/icons.svg#house-alt-lira"/></svg><span>house-alt-lira</span></li>
+                    <li><svg class="ui-icon"><use href="../dist/icons.svg#house-alt-book-open"/></svg><span>house-alt-book-open</span></li>
+                    <li><svg class="ui-icon"><use href="../dist/icons.svg#house-alt-360"/></svg><span>house-alt-360</span></li>
                 </ul>
 
                 <h2 class="ui-h2">Weather Icons</h2>
