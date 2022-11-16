@@ -73,6 +73,15 @@ ui.pieChart = {
 
             loadFnc = function (parent, that, i) {
 
+                const prevPercents = ui.find(ui.pieChart.tagPiesHolder, that);
+
+                if (prevPercents.length > 0) { // remove previous loaded pies
+
+                    for (let i = 0; i < prevPercents.length; i++) {
+                        that.removeChild(prevPercents[i]);
+                    }
+                }
+
                 percent = that.getAttribute(ui.pieChart.dataPercent);
 
                 if (percent === null && percent === '') {
@@ -146,6 +155,7 @@ ui.pieChart = {
                     '</' + ui.pieChart.tagMsg + '>';
 
                 msgHolder = ui.find(ui.pieChart.tagMsgHolder, parent)[0];
+
                 if (msgHolder === undefined) {
 
                     parent.insertAdjacentHTML(
@@ -183,6 +193,17 @@ ui.pieChart = {
 
                     elems = ui.find(ui.pieChart.tagData, that);
                     ui.find(ui.pieChart.tagDatasHolder, this)[0].style.height = that.offsetWidth + 'px';
+
+                    const prevMsg = ui.find(ui.pieChart.tagMsgHolder, that)[0];
+
+                    if (prevMsg !== undefined) { // remove previous loaded messages
+
+                        const msgs = ui.find(ui.pieChart.tagMsg, prevMsg);
+
+                        for (let j = 0; j < msgs.length; j++) {
+                            prevMsg.removeChild(msgs[j]);
+                        }
+                    }
 
                     ui.each(elems,
 

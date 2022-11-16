@@ -7981,6 +7981,14 @@ ui.pieChart = {
       arr = [];
 
       loadFnc = function loadFnc(parent, that, i) {
+        var prevPercents = ui.find(ui.pieChart.tagPiesHolder, that);
+
+        if (prevPercents.length > 0) {
+          for (var _i = 0; _i < prevPercents.length; _i++) {
+            that.removeChild(prevPercents[_i]);
+          }
+        }
+
         percent = that.getAttribute(ui.pieChart.dataPercent);
 
         if (percent === null && percent === '') {
@@ -8054,6 +8062,16 @@ ui.pieChart = {
         var that = this;
         elems = ui.find(ui.pieChart.tagData, that);
         ui.find(ui.pieChart.tagDatasHolder, this)[0].style.height = that.offsetWidth + 'px';
+        var prevMsg = ui.find(ui.pieChart.tagMsgHolder, that)[0];
+
+        if (prevMsg !== undefined) {
+          var msgs = ui.find(ui.pieChart.tagMsg, prevMsg);
+
+          for (var j = 0; j < msgs.length; j++) {
+            prevMsg.removeChild(msgs[j]);
+          }
+        }
+
         ui.each(elems, function (i) {
           loadFnc(that, this, i);
         });
