@@ -7568,11 +7568,12 @@ ui.lineChart = {
   tagInfoColor: 'span',
   tagInfoStat: 'b',
   colors: ['hsl(30, 100%, 63%)', 'hsl(347, 100%, 69%)', 'hsl(260, 100%, 70%)', 'hsl(180, 48%, 52%)', 'hsl(42, 100%, 67%)', 'hsl(13, 26%, 41%)', 'hsl(65, 49%, 54%)', 'hsl(0, 0%, 42%)', 'hsl(225, 43%, 57%)'],
+  includeZero: true,
   showGrid: true,
   showGridText: true,
   showInfo: true,
   showInfoStats: true,
-  hideRepeatadCircles: false,
+  noRepeatadCircles: false,
   showGridTextSpace: 7,
   showInfoSpace: 7,
   rows: 5,
@@ -7661,7 +7662,6 @@ ui.lineChart.Start = function () {
 
       x = data.x;
       yMax = [];
-      data.pass = false;
       Array.prototype.forEach.call(lines, function (el, i) {
         data[i] = [];
         data[i].y = [];
@@ -7669,31 +7669,16 @@ ui.lineChart.Start = function () {
         data.backup += el.outerHTML;
         Array.prototype.forEach.call(ui.find(ui.lineChart.tagLines, el), function (item) {
           y = item.getAttribute(ui.lineChart.dataY);
-
-          if (y !== null && y !== '') {
-            data[i].y.push(y);
-          } else return;
-
+          data[i].y.push(y);
           link = item.getAttribute(ui.lineChart.dataLink);
 
           if (link !== null && link !== '') {
             data[i].links.push(link);
-          } else {
-            data[i].links.push('');
-          }
+          } else data[i].links.push('');
         });
-
-        if (data.x.length === data[i].y.length) {
-          yMax.push(data[i].y);
-        } else {
-          data.pass = true;
-        }
+        yMax.push(data[i].y);
       });
-
-      if (data.pass) {
-        return;
-      }
-
+      if (ui.lineChart.includeZero) yMax.push(0);
       yMax = yMax.toString().split(',');
       yMax = yMax.filter(function (item, pos) {
         return yMax.indexOf(item) === pos;
@@ -7846,7 +7831,7 @@ ui.lineChart.Start = function () {
             }
           };
 
-          if (ui.lineChart.hideRepeatadCircles) {
+          if (ui.lineChart.noRepeatadCircles) {
             if (n === 0 || n === y.length - 1) createCircles();
             if (y[n - 1] !== undefined && y[n - 1] !== y[n]) createCircles();
             if (y[n + 1] !== undefined && y[n + 1] !== y[n]) createCircles();

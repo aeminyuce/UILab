@@ -47,12 +47,14 @@ ui.lineChart = {
         'hsl(225, 43%, 57%)'
     ],
 
+    includeZero: true,
+
     showGrid: true,
     showGridText: true,
     showInfo: true,
     showInfoStats: true,
 
-    hideRepeatadCircles: false,
+    noRepeatadCircles: false,
 
     showGridTextSpace: 7,
     showInfoSpace: 7,
@@ -166,7 +168,6 @@ ui.lineChart.Start = () => {
 
                 // read all y parameters
                 yMax = [];
-                data.pass = false;
 
                 Array.prototype.forEach.call(lines,
 
@@ -184,33 +185,23 @@ ui.lineChart.Start = () => {
                             (item) => {
 
                                 y = item.getAttribute(ui.lineChart.dataY);
-
-                                if (y !== null && y !== '') {
-                                    data[i].y.push(y);
-
-                                } else return;
+                                data[i].y.push(y);
 
                                 link = item.getAttribute(ui.lineChart.dataLink);
 
                                 if (link !== null && link !== '') {
                                     data[i].links.push(link);
 
-                                } else {
-                                    data[i].links.push('');
-                                }
+                                } else data[i].links.push('');
 
                             });
 
-                        if (data.x.length === data[i].y.length) {
-                            yMax.push(data[i].y); // push y datas to calculate the max value of all datas
-
-                        } else {
-                            data.pass = true; // x and y datas are not equal
-                        }
+                        yMax.push(data[i].y); // push y datas to calculate the max value of all datas
 
                     });
 
-                if (data.pass) { return; }
+                // include zero
+                if (ui.lineChart.includeZero) yMax.push(0);
 
                 // get min and max values of all y datas
                 yMax = yMax.toString().split(',');
@@ -469,7 +460,7 @@ ui.lineChart.Start = () => {
 
                             }
 
-                            if (ui.lineChart.hideRepeatadCircles) {
+                            if (ui.lineChart.noRepeatadCircles) {
 
                                 if (n === 0 || n === y.length - 1) createCircles();
 
