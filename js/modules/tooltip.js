@@ -58,7 +58,7 @@ ui.tooltip = {
         touchControl,
         isScrolling;
 
-    function removeFnc() {
+    ui.tooltip.Close = () => {
 
         var that = ui.find('.' + ui.tooltip.target)[0];
         if (that === undefined) { return; }
@@ -240,7 +240,7 @@ ui.tooltip = {
 
                 if (type === 'close' || type === 'hide') {
 
-                    removeFnc(that);
+                    ui.tooltip.Close(that);
 
                     ui.removeClass(that, ui.tooltip.nameActive);
                     clearTimeout(tooltipOpenedTimer);

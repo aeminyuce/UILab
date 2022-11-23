@@ -7043,7 +7043,7 @@ ui.tooltip = {
 (function () {
   var removeTimer, removeTimer2x, pageTouchmoveTimer, tooltipOpenedTimer, touchControl, isScrolling;
 
-  function removeFnc() {
+  ui.tooltip.Close = function () {
     var that = ui.find('.' + ui.tooltip.target)[0];
 
     if (that === undefined) {
@@ -7062,7 +7062,7 @@ ui.tooltip = {
         }
       }, ui.globals.ease);
     }, ui.globals.ease);
-  }
+  };
 
   function createFnc(source, title) {
     var win, winRect, html, sourceRect, arr, pos, posRecall, calc;
@@ -7171,7 +7171,7 @@ ui.tooltip = {
 
       if (dataTitle !== null && dataTitle !== '') {
         if (type === 'close' || type === 'hide') {
-          removeFnc();
+          ui.tooltip.Close(that);
           ui.removeClass(that, ui.tooltip.nameActive);
           clearTimeout(tooltipOpenedTimer);
           tooltipOpenedTimer = setTimeout(function () {
