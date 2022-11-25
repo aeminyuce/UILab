@@ -8090,8 +8090,8 @@ ui.map = {
   target: 'ui-map',
   nameActive: 'ui-active',
   tagTarget: 'path',
-  opacityMax: '0.75',
-  opacityMin: '0.25',
+  opacityMax: '0.95',
+  opacityMin: '0.45',
   dataSize: 'data-ui-size',
   dataHref: 'data-ui-href'
 };

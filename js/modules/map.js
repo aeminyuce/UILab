@@ -15,8 +15,8 @@ ui.map = {
     tagTarget: 'path',
 
     // values
-    opacityMax: '0.75',
-    opacityMin: '0.25',
+    opacityMax: '0.95',
+    opacityMin: '0.45',
 
     // data attributes
     dataSize: 'data-ui-size',

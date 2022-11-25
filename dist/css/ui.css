@@ -10041,10 +10041,10 @@ html:not(.ui-ie) .ui-map svg {
 }
 .ui-map svg path:not([fill]) {
   fill: currentColor;
-  opacity: 0.175;
+  opacity: 0.25;
 }
 .ui-map svg path:not([fill]):hover {
-  opacity: 0.45;
+  opacity: 1;
 }
 .ui-map svg path:not([stroke]) {
   stroke: hsl(0, 0%, 98%);
