@@ -33,7 +33,7 @@ ui.onload(() => {
 
     if (window.matchMedia) {
 
-        if(darkColorScheme.matches) {
+        if (darkColorScheme.matches) {
             mode = ui.darkMode.valueDark;
         }
 
