@@ -127,6 +127,7 @@ module.exports = (env, argv) => {
             port: 3000, // port number
             open: true, // Opens browser on a new tab automatically
             historyApiFallback: true, // enable page refresh for HashRouter
+            hot: true, // always make hot refresh when code updated
         };
 
         // set build folder
