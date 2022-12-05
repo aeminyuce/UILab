@@ -274,31 +274,6 @@
 
                 <span class="ui-sp-30"></span>
 
-                <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
-                    <ul class="ui-listgroup-has-icon-xss ui-ease-listgroup">
-                        <li>
-                            <a href="#">
-                                <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"/></svg>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"/></svg>
-                                Sed finibus rhoncus erat, vitae porttitor sem gravida et.
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg class="ui-listgroup-icon ui-icon"><use href="../dist/icons.svg#angle-right"/></svg>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <span class="ui-sp-30"></span>
-
                 <h3 class="ui-h3">List Groups with Icons</h3>
 
                 <div class="ui-listgroup ui-border ui-round ui-shadow-lg">
