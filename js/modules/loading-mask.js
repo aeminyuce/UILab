@@ -65,10 +65,14 @@ ui.loadingMask = {
 
                             for (j = 0; j < l.length; j++) {
 
-                                maskItems[j].removeChild(maskHolders[j]);
-                                ui.removeClass(maskItems[j], ui.loadingMask.target + ' ' + ui.loadingMask.nameSticky);
+                                if (maskItems[j] !== undefined) {
 
-                                emptyVars(j, l);
+                                    maskItems[j].removeChild(maskHolders[j]);
+                                    ui.removeClass(maskItems[j], ui.loadingMask.target + ' ' + ui.loadingMask.nameSticky);
+
+                                    emptyVars(j, l);
+
+                                }
 
                             }
 

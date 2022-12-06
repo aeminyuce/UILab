@@ -6269,9 +6269,11 @@ ui.loadingMask = {
           setTimeout(function () {
             if (maskHolders.length > 0) {
               for (j = 0; j < l.length; j++) {
-                maskItems[j].removeChild(maskHolders[j]);
-                ui.removeClass(maskItems[j], ui.loadingMask.target + ' ' + ui.loadingMask.nameSticky);
-                emptyVars(j, l);
+                if (maskItems[j] !== undefined) {
+                  maskItems[j].removeChild(maskHolders[j]);
+                  ui.removeClass(maskItems[j], ui.loadingMask.target + ' ' + ui.loadingMask.nameSticky);
+                  emptyVars(j, l);
+                }
               }
             }
           }, ui.globals.ease);
