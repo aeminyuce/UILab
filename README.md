@@ -55,7 +55,7 @@ npm init @eslint/config
 npm i react react-dom react-router-dom react-app-polyfill
 npm i typescript @types/react @types/react-dom
 npm i -D babel-loader @babel/preset-react
-npm i -D webpack webpack-cli html-webpack-plugin webpack-dev-server
+npm i -D webpack webpack-cli html-webpack-plugin webpack-dev-server copy-webpack-plugin
 npm i -D style-loader ts-loader css-loader less-loader svg-url-loader
 ```
 **Icons**

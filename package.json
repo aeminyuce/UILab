@@ -61,6 +61,7 @@
     "@types/react-dom": "^18.0.6",
     "babel-loader": "^8.2.5",
     "chai": "^4.3.6",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
     "eslint": "^8.10.0",
     "eslint-plugin-react": "^7.30.0",

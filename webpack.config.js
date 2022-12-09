@@ -1,27 +1,14 @@
 const path = require("path");
+
+const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 const config = {
     output: {
         filename: '[name].[contenthash].js',
         publicPath: '/', // for page refresh for BrowserRouter
-        clean: { // clean the output directory before emit.
-            keep(asset) { // keep these folders or filenames
-                return (
-                    asset.includes('img') // use || for multiple includes
-                );
-            },
-        },
-    },
-    optimization: {
-        splitChunks: {
-            chunks: 'all',
-            cacheGroups: {
-                vendors: {
-                    test: /\/node_modules\//, // no importing node modules folder
-                }
-            }
-        },
+        clean: true, // clean the output directory before emit.
+        chunkFilename: 'js/[name].[contenthash].js',
     },
     resolve: {
         extensions: ['.js', '.tsx', '.less'], // file types
@@ -111,11 +98,6 @@ module.exports = (env, argv) => {
         config.output.path = path.resolve(__dirname, setFolder); // when script not serve mode!
         config.devtool = false; // disable when production mode for reducing output file sizes
 
-        // plugins
-        config.plugins = [
-            new HtmlWebPackPlugin( htmlWebpackPlugin ),
-        ]
-
     }
 
     // development configs
@@ -133,12 +115,15 @@ module.exports = (env, argv) => {
         // set build folder
         config.output.path = path.resolve(__dirname, build); // when script not serve mode!
 
-        // plugins
-        config.plugins = [
-            new HtmlWebPackPlugin( htmlWebpackPlugin ),
-        ]
-
     }
+
+    // plugins
+    config.plugins = [
+        new HtmlWebPackPlugin( htmlWebpackPlugin ),
+        new CopyPlugin({
+            patterns: [{ from: "public" }], // copy files from public folder
+        }),
+    ]
 
     return config;
 
