@@ -12,6 +12,9 @@
       },
       "jsx": "react",
       "allowSyntheticDefaultImports": true,
+      "lib": [
+        "dom" // fix: cannot find name 'localStorage' or any other built-in modules
+      ],
       // for webpack magic comments
       "module": "esnext",
       "moduleResolution": "node",
