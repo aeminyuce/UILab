@@ -67,7 +67,7 @@ ui.loadingMask = {
 
                                 if (maskItems[j] !== undefined) {
 
-                                    maskItems[j].removeChild(maskHolders[j]);
+                                    maskItems[j].removeChild(ui.find(maskHolders[j])[0]); // ui.find() fix: this node is real and latest!
                                     ui.removeClass(maskItems[j], ui.loadingMask.target + ' ' + ui.loadingMask.nameSticky);
 
                                     emptyVars(j, l);
