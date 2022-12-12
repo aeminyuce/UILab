@@ -53,6 +53,12 @@
         & > [class*="ui-col-"] when (@static-grids = false) { padding: @row-gap; }
         & > [class*="ui-col-"]:not(.ui-col-static) when (@static-grids = true) { padding: @row-gap; }
 
+        &-align {
+            &-l { justify-content: start; }
+            &-c { justify-content: center; }
+            &-r { justify-content: end; }
+        }
+
         &-gap {
             each(@row-gap-breakpoints, {
                 @size: ~'row-gap-@{value}';

@@ -352,6 +352,15 @@ html .ui-row {
 .ui-row > [class*="ui-col-"]:not(.ui-col-static) {
   padding: 10px;
 }
+.ui-row-align-l {
+  justify-content: start;
+}
+.ui-row-align-c {
+  justify-content: center;
+}
+.ui-row-align-r {
+  justify-content: end;
+}
 .ui-row-gap-lg,
 .ui-row-gap-lg-h {
   margin-right: -15px;
