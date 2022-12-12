@@ -247,7 +247,9 @@ ui.lineChart.Start = () => {
                 } else { data.step = false; }
 
                 // create grids
-                col = (data.width - (ui.lineChart.right + ui.lineChart.left)) / (x.length - 1);
+                col = (data.width - (ui.lineChart.right + ui.lineChart.left));
+                if (x.length - 1 !== 0) col = col / (x.length - 1);
+
                 html += '<g class="' + ui.lineChart.nameGridX + '">';
 
                 for (let k = 0; k < x.length; k++) {

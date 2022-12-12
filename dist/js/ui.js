@@ -6542,7 +6542,8 @@ ui.lineChart.Start = function () {
       } else {
         data.step = false;
       }
-      col = (data.width - (ui.lineChart.right + ui.lineChart.left)) / (x.length - 1);
+      col = data.width - (ui.lineChart.right + ui.lineChart.left);
+      if (x.length - 1 !== 0) col = col / (x.length - 1);
       html += '<g class="' + ui.lineChart.nameGridX + '">';
       for (var k = 0; k < x.length; k++) {
         posX = k * col + ui.lineChart.left;
