@@ -67,7 +67,13 @@ ui.loadingMask = {
 
                                 if (maskItems[j] !== undefined) {
 
-                                    ui.removeClass(maskItems[j], ui.loadingMask.target + ' ' + ui.loadingMask.nameSticky);
+                                    if (ui.closest(maskHolders[j], maskItems[j]).length) {
+
+                                        maskItems[j].removeChild(maskHolders[j]);
+                                        ui.removeClass(maskItems[j], ui.loadingMask.target + ' ' + ui.loadingMask.nameSticky);
+
+                                    }
+
                                     emptyVars(j, l);
 
                                 }
@@ -76,7 +82,7 @@ ui.loadingMask = {
 
                         }
 
-                    }, ui.globals.ease);
+                    }, ui.globals.ease * 2);
 
                 } else { // show
 
@@ -104,8 +110,8 @@ ui.loadingMask = {
 
                     maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
 
-                    ui.removeClass(maskHolders[i], ui.loadingMask.nameOpen);
-                    ui.removeClass(maskHolders[i], ui.loadingMask.nameOpenEase);
+                    ui.removeClass(maskHolders[i], ui.loadingMask.nameOpenEase)
+                    setTimeout(() => ui.removeClass(maskHolders[i], ui.loadingMask.nameOpen), ui.globals.ease);
 
                     maskItems[i] = l[i];
 
@@ -114,30 +120,24 @@ ui.loadingMask = {
                     // show loading
                     status = 'show';
 
-                    maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
+                    html = '<span class="' + ui.loadingMask.nameLoader + ' ' + ui.loadingMask.stylesLoader + '">';
 
-                    if (maskHolders[i] === undefined) {
+                    if (l[i].offsetHeight > window.innerHeight) { // detect static icon
+                        html += '<span style="top: ' + ui.loadingMask.staticIconTop + 'px;">';
 
-                        html = '<span class="' + ui.loadingMask.nameLoader + ' ' + ui.loadingMask.stylesLoader + '">';
+                    } else html += '<span>';
 
-                        if (l[i].offsetHeight > window.innerHeight) { // detect static icon
-                            html += '<span style="top: ' + ui.loadingMask.staticIconTop + 'px;">';
+                    html += '<svg ' +
+                            'xmlns="http://www.w3.org/2000/svg"' +
+                            'viewBox="' + ui.loadingMask.loadingBox + '"' +
+                            'class="' + ui.loadingMask.stylesIcon + '" ' +
+                            'style="height: ' + (l[i].offsetHeight * ui.loadingMask.loadingSize) + 'px;">' +
+                                ui.loadingMask.loadingPath +
+                            '</svg>' +
+                        '</span>' +
+                    '</span>';
 
-                        } else html += '<span>';
-
-                        html += '<svg ' +
-                                'xmlns="http://www.w3.org/2000/svg"' +
-                                'viewBox="' + ui.loadingMask.loadingBox + '"' +
-                                'class="' + ui.loadingMask.stylesIcon + '" ' +
-                                'style="height: ' + (l[i].offsetHeight * ui.loadingMask.loadingSize) + 'px;">' +
-                                    ui.loadingMask.loadingPath +
-                                '</svg>' +
-                            '</span>' +
-                        '</span>';
-
-                        l[i].insertAdjacentHTML('afterbegin', html);
-
-                    }
+                    l[i].insertAdjacentHTML('afterbegin', html);
 
                     ui.addClass(l[i], ui.loadingMask.target);
 
@@ -155,9 +155,7 @@ ui.loadingMask = {
 
                 }
 
-                if (i === (l.length - 1)) {
-                    effectTimers(status);
-                }
+                if (i === (l.length - 1)) effectTimers(status);
 
             }
 

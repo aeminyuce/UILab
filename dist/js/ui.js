@@ -5330,12 +5330,15 @@ ui.loadingMask = {
             if (maskHolders.length > 0) {
               for (j = 0; j < l.length; j++) {
                 if (maskItems[j] !== undefined) {
-                  ui.removeClass(maskItems[j], ui.loadingMask.target + ' ' + ui.loadingMask.nameSticky);
+                  if (ui.closest(maskHolders[j], maskItems[j]).length) {
+                    maskItems[j].removeChild(maskHolders[j]);
+                    ui.removeClass(maskItems[j], ui.loadingMask.target + ' ' + ui.loadingMask.nameSticky);
+                  }
                   emptyVars(j, l);
                 }
               }
             }
-          }, ui.globals.ease);
+          }, ui.globals.ease * 2);
         } else {
           setTimeout(function () {
             for (j = 0; j < l.length; j++) {
@@ -5349,20 +5352,19 @@ ui.loadingMask = {
         if (ui.hasClass(l[i], ui.loadingMask.target)) {
           status = 'hide';
           maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
-          ui.removeClass(maskHolders[i], ui.loadingMask.nameOpen);
           ui.removeClass(maskHolders[i], ui.loadingMask.nameOpenEase);
+          setTimeout(function () {
+            return ui.removeClass(maskHolders[i], ui.loadingMask.nameOpen);
+          }, ui.globals.ease);
           maskItems[i] = l[i];
         } else {
           status = 'show';
-          maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
-          if (maskHolders[i] === undefined) {
-            html = '<span class="' + ui.loadingMask.nameLoader + ' ' + ui.loadingMask.stylesLoader + '">';
-            if (l[i].offsetHeight > window.innerHeight) {
-              html += '<span style="top: ' + ui.loadingMask.staticIconTop + 'px;">';
-            } else html += '<span>';
-            html += '<svg ' + 'xmlns="http://www.w3.org/2000/svg"' + 'viewBox="' + ui.loadingMask.loadingBox + '"' + 'class="' + ui.loadingMask.stylesIcon + '" ' + 'style="height: ' + l[i].offsetHeight * ui.loadingMask.loadingSize + 'px;">' + ui.loadingMask.loadingPath + '</svg>' + '</span>' + '</span>';
-            l[i].insertAdjacentHTML('afterbegin', html);
-          }
+          html = '<span class="' + ui.loadingMask.nameLoader + ' ' + ui.loadingMask.stylesLoader + '">';
+          if (l[i].offsetHeight > window.innerHeight) {
+            html += '<span style="top: ' + ui.loadingMask.staticIconTop + 'px;">';
+          } else html += '<span>';
+          html += '<svg ' + 'xmlns="http://www.w3.org/2000/svg"' + 'viewBox="' + ui.loadingMask.loadingBox + '"' + 'class="' + ui.loadingMask.stylesIcon + '" ' + 'style="height: ' + l[i].offsetHeight * ui.loadingMask.loadingSize + 'px;">' + ui.loadingMask.loadingPath + '</svg>' + '</span>' + '</span>';
+          l[i].insertAdjacentHTML('afterbegin', html);
           ui.addClass(l[i], ui.loadingMask.target);
           if (l[i].offsetWidth >= window.innerWidth - 15) {
             sticky = true;
@@ -5375,9 +5377,7 @@ ui.loadingMask = {
           maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
           ui.addClass(maskHolders[i], ui.loadingMask.nameOpen);
         }
-        if (i === l.length - 1) {
-          effectTimers(status);
-        }
+        if (i === l.length - 1) effectTimers(status);
       }
     };
     ui.on(document, 'click', '.' + ui.loadingMask.target, function (e) {
