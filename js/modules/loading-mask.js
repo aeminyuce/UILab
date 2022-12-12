@@ -67,9 +67,7 @@ ui.loadingMask = {
 
                                 if (maskItems[j] !== undefined) {
 
-                                    maskItems[j].removeChild(ui.find(maskHolders[j])[0]); // ui.find() fix: this node is real and latest!
                                     ui.removeClass(maskItems[j], ui.loadingMask.target + ' ' + ui.loadingMask.nameSticky);
-
                                     emptyVars(j, l);
 
                                 }
@@ -116,24 +114,30 @@ ui.loadingMask = {
                     // show loading
                     status = 'show';
 
-                    html = '<span class="' + ui.loadingMask.nameLoader + ' ' + ui.loadingMask.stylesLoader + '">';
+                    maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
 
-                    if (l[i].offsetHeight > window.innerHeight) { // detect static icon
-                        html += '<span style="top: ' + ui.loadingMask.staticIconTop + 'px;">';
+                    if (maskHolders[i] === undefined) {
 
-                    } else html += '<span>';
+                        html = '<span class="' + ui.loadingMask.nameLoader + ' ' + ui.loadingMask.stylesLoader + '">';
 
-                    html += '<svg ' +
-                            'xmlns="http://www.w3.org/2000/svg"' +
-                            'viewBox="' + ui.loadingMask.loadingBox + '"' +
-                            'class="' + ui.loadingMask.stylesIcon + '" ' +
-                            'style="height: ' + (l[i].offsetHeight * ui.loadingMask.loadingSize) + 'px;">' +
-                                ui.loadingMask.loadingPath +
-                            '</svg>' +
-                        '</span>' +
-                    '</span>';
+                        if (l[i].offsetHeight > window.innerHeight) { // detect static icon
+                            html += '<span style="top: ' + ui.loadingMask.staticIconTop + 'px;">';
 
-                    l[i].insertAdjacentHTML('afterbegin', html);
+                        } else html += '<span>';
+
+                        html += '<svg ' +
+                                'xmlns="http://www.w3.org/2000/svg"' +
+                                'viewBox="' + ui.loadingMask.loadingBox + '"' +
+                                'class="' + ui.loadingMask.stylesIcon + '" ' +
+                                'style="height: ' + (l[i].offsetHeight * ui.loadingMask.loadingSize) + 'px;">' +
+                                    ui.loadingMask.loadingPath +
+                                '</svg>' +
+                            '</span>' +
+                        '</span>';
+
+                        l[i].insertAdjacentHTML('afterbegin', html);
+
+                    }
 
                     ui.addClass(l[i], ui.loadingMask.target);
 
