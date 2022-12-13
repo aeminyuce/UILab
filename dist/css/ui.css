@@ -6275,6 +6275,12 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-round > .ui-card-side:last-child {
   border-radius: 0 0 10px 10px;
 }
+.ui-card.ui-round-side:first-child {
+  border-radius: 10px 10px 0 0;
+}
+.ui-card.ui-round-side:last-child {
+  border-radius: 0 0 10px 10px;
+}
 .ui-card-close {
   color: hsl(0, 0%, 0%);
   color: var(--ui-black);

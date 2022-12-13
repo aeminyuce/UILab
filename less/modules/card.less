@@ -38,6 +38,10 @@
             .ui-round > &:first-child { border-radius: @round @round 0 0; }
             .ui-round > &:last-child { border-radius: 0 0 @round @round; }
         }
+        &.ui-round {
+            &-side:first-child { border-radius: @round @round 0 0; }
+            &-side:last-child { border-radius: 0 0 @round @round; }
+        }
 
         &-close {
             ._color-var(black); line-height: @cards-close-icon-size; background-color: @no-color; border: 0; position: absolute; top: @cards-close-icon-position; right: @cards-close-icon-position; z-index: 1; opacity: @cards-close-icon-opacity; cursor: pointer;
