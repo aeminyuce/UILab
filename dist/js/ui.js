@@ -6543,7 +6543,9 @@ ui.lineChart.Start = function () {
         data.step = false;
       }
       col = data.width - (ui.lineChart.right + ui.lineChart.left);
-      if (x.length - 1 !== 0) col = col / (x.length - 1);
+      var rowLength = x.length - 1;
+      if (rowLength === 0) rowLength = 1;
+      col = col / rowLength;
       html += '<g class="' + ui.lineChart.nameGridX + '">';
       for (var k = 0; k < x.length; k++) {
         posX = k * col + ui.lineChart.left;
@@ -6603,7 +6605,9 @@ ui.lineChart.Start = function () {
         }
         var _loop = function _loop(n) {
           posX = n * col + ui.lineChart.left;
-          posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax) / (yMax - yMin) - ui.lineChart.top);
+          var range = yMax - yMin;
+          if (range === 0) range = 1;
+          posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax) / range - ui.lineChart.top);
           type = el.getAttribute(ui.lineChart.dataType);
           if (type === null) {
             type = '';

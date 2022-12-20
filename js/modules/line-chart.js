@@ -248,7 +248,11 @@ ui.lineChart.Start = () => {
 
                 // create grids
                 col = (data.width - (ui.lineChart.right + ui.lineChart.left));
-                if (x.length - 1 !== 0) col = col / (x.length - 1);
+
+                let rowLength = x.length - 1;
+                if (rowLength === 0) rowLength = 1; // ignore infinity
+
+                col = col / rowLength;
 
                 html += '<g class="' + ui.lineChart.nameGridX + '">';
 
@@ -386,7 +390,11 @@ ui.lineChart.Start = () => {
                         for (let n = 0; n < y.length; n++) {
 
                             posX = (n * col) + ui.lineChart.left;
-                            posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax)) / (yMax - yMin)) - ui.lineChart.top);
+
+                            let range = yMax - yMin; // ignore infinity
+                            if (range === 0) range = 1;
+
+                            posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax)) / range) - ui.lineChart.top);
 
                             // get line type
                             type = el.getAttribute(ui.lineChart.dataType);
