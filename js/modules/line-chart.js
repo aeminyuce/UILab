@@ -286,28 +286,29 @@ ui.lineChart.Start = () => {
 
                     }
 
-                    if (k === 0 || ui.lineChart.showGrid) {
+                    if (ui.lineChart.showGrid) {
 
                         html += '<line ' +
                                     'x1="' + posX + '" ' +
                                     'x2="' + posX + '" ' +
                                     'y1="' + ui.lineChart.top + '" ';
+
+                        if (k === 0) { // root of x grid
+
+                            html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + (ui.lineChart.gridStroke / 2))) +'" ' +
+                                    'class="' + ui.lineChart.nameGridRoot + '" ' +
+                                    'stroke-width="' + ui.lineChart.gridStroke + '"';
+
+                        } else {
+
+                            html += 'y2="' + (data.height - ui.lineChart.bottom) + '" ' +
+                                    'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
+
+                        }
+
+                        html += '></line>';
+
                     }
-
-                    if (k === 0) { // root of x grid
-
-                        html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + (ui.lineChart.gridStroke / 2))) +'" ' +
-                                'class="' + ui.lineChart.nameGridRoot + '" ' +
-                                'stroke-width="' + ui.lineChart.gridStroke + '"';
-
-                    } else {
-
-                        html += 'y2="' + (data.height - ui.lineChart.bottom) + '" ' +
-                                'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
-
-                    }
-
-                    html += '></line>';
 
                 }
 
@@ -339,27 +340,29 @@ ui.lineChart.Start = () => {
                                 '</text>';
                     }
 
-                    if (l === rows || ui.lineChart.showGrid) {
+                    if (ui.lineChart.showGrid) {
 
                         html += '<line ' +
                                     'x2="' + (data.width - ui.lineChart.right + 1) + '" ' +
                                     'y1="' + posY + '" ' +
                                     'y2="' + posY + '" ';
+
+                        if (l >= rows) { // root of y grid
+
+                            html += 'x1="' + Math.ceil(ui.lineChart.left - (ui.lineChart.gridStroke / 2)) + '" ' +
+                                    'class="' + ui.lineChart.nameGridRoot + '" ' +
+                                    'stroke-width="' + ui.lineChart.gridStroke + '"';
+
+                        } else {
+
+                            html += 'x1="' + Math.floor(ui.lineChart.left + ui.lineChart.gridStroke) + '" ' +
+                                    'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
+
+                        }
+
+                        html += '></line>';
+
                     }
-
-                    if (l >= rows) { // root of y grid
-
-                        html += 'x1="' + Math.ceil(ui.lineChart.left - (ui.lineChart.gridStroke / 2)) + '" ' +
-                                'class="' + ui.lineChart.nameGridRoot + '" ' +
-                                'stroke-width="' + ui.lineChart.gridStroke + '"';
-
-                    } else {
-                        html += 'x1="' + Math.floor(ui.lineChart.left + ui.lineChart.gridStroke) + '" ' +
-                                'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
-
-                    }
-
-                    html += '></line>';
 
                 }
 

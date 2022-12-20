@@ -6558,15 +6558,15 @@ ui.lineChart.Start = function () {
             html += '<text ' + 'x="' + posX + '" ' + 'y="' + (data.height - ui.lineChart.bottom + 20) + '">' + x[k] + '</text>';
           }
         }
-        if (k === 0 || ui.lineChart.showGrid) {
+        if (ui.lineChart.showGrid) {
           html += '<line ' + 'x1="' + posX + '" ' + 'x2="' + posX + '" ' + 'y1="' + ui.lineChart.top + '" ';
+          if (k === 0) {
+            html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + ui.lineChart.gridStroke / 2)) + '" ' + 'class="' + ui.lineChart.nameGridRoot + '" ' + 'stroke-width="' + ui.lineChart.gridStroke + '"';
+          } else {
+            html += 'y2="' + (data.height - ui.lineChart.bottom) + '" ' + 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
+          }
+          html += '></line>';
         }
-        if (k === 0) {
-          html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + ui.lineChart.gridStroke / 2)) + '" ' + 'class="' + ui.lineChart.nameGridRoot + '" ' + 'stroke-width="' + ui.lineChart.gridStroke + '"';
-        } else {
-          html += 'y2="' + (data.height - ui.lineChart.bottom) + '" ' + 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
-        }
-        html += '></line>';
       }
       html += '</g>' + '<g class="' + ui.lineChart.nameGridY + '">';
       var prefix = this.getAttribute(ui.lineChart.dataPrefix);
@@ -6581,15 +6581,15 @@ ui.lineChart.Start = function () {
           if (val < 0) val--;
           html += '<text ' + 'x="' + (ui.lineChart.left - 10) + '" ' + 'y="' + (posY + 4) + '">' + prefix + val + suffix + '</text>';
         }
-        if (l === rows || ui.lineChart.showGrid) {
+        if (ui.lineChart.showGrid) {
           html += '<line ' + 'x2="' + (data.width - ui.lineChart.right + 1) + '" ' + 'y1="' + posY + '" ' + 'y2="' + posY + '" ';
+          if (l >= rows) {
+            html += 'x1="' + Math.ceil(ui.lineChart.left - ui.lineChart.gridStroke / 2) + '" ' + 'class="' + ui.lineChart.nameGridRoot + '" ' + 'stroke-width="' + ui.lineChart.gridStroke + '"';
+          } else {
+            html += 'x1="' + Math.floor(ui.lineChart.left + ui.lineChart.gridStroke) + '" ' + 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
+          }
+          html += '></line>';
         }
-        if (l >= rows) {
-          html += 'x1="' + Math.ceil(ui.lineChart.left - ui.lineChart.gridStroke / 2) + '" ' + 'class="' + ui.lineChart.nameGridRoot + '" ' + 'stroke-width="' + ui.lineChart.gridStroke + '"';
-        } else {
-          html += 'x1="' + Math.floor(ui.lineChart.left + ui.lineChart.gridStroke) + '" ' + 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
-        }
-        html += '></line>';
       }
       html += '</g>';
       circles = '';
