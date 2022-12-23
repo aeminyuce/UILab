@@ -6,23 +6,19 @@ ui.lineChart.top = 10;
 ui.lineChart.showGrid = false;
 ui.lineChart.gridStroke = 0;
 ui.lineChart.colors = [baseColor, subColor];
-
 (function () {
   var setCookie = function setCookie(name, value) {
     var days = 365;
     var date = new Date();
     date.setTime(date.getTime() + days * (24 * 60 * 60 * 1000));
-    document.cookie = name + '=' + value + ';' + "expires=" + date.toUTCString();
+    document.cookie = name + '=' + value + ';' + "expires=" + date.toUTCString() + ';domain=' + window.location.host;
   };
-
   var headerTime = function headerTime() {
     var headerTime = ui.find('.business-header-time')[0];
-
     if (headerTime !== undefined) {
       headerTime.innerHTML = '<b>Thu,</b> <span class="ui-font-light">March 10</span> <b>13:15</b>';
     }
   };
-
   var leftPanelMenu = function leftPanelMenu() {
     var leftPanelHolder = '.ui-col-business-panel-l';
     var leftPanel = '.business-panel-l';
@@ -40,43 +36,35 @@ ui.lineChart.colors = [baseColor, subColor];
     var lastOpenedTab = 0;
     var leftPanelToggleStatus = 'show';
     var state = decodeURIComponent(document.cookie).split('; ');
-
     for (var i = 0; i < state.length; i++) {
       var cookies = state[i].split('=');
       var cookie = cookies[0];
       cookie = cookie.replace(/^\s+|\s+$/g, '');
-
       if (cookie === cookieName) {
         leftPanelToggleStatus = cookies[1];
       }
     }
-
     var openLastOpenedTab = function openLastOpenedTab() {
       ui.addClass(ui.find(leftPanelMinTabs)[lastOpenedTab], ui.tab.nameActive + ' ' + nameBtnVisible);
       ui.addClass(ui.find(leftPanelContents)[lastOpenedTab], ui.tab.nameOpen + ' ' + ui.tab.nameOpenEase);
     };
-
     var clearLastOpenedTab = function clearLastOpenedTab() {
       ui.removeClass(leftPanelMinTabs, ui.tab.nameActive + ' ' + nameBtnVisible);
       ui.removeClass(leftPanelContents, ui.tab.nameOpen + ' ' + ui.tab.nameOpenEase);
     };
-
     var resizer = function resizer() {
       if (window.innerWidth < ui.globals.xl) {
         clearLastOpenedTab();
       }
-
       if (window.innerWidth < ui.globals.xl && window.innerWidth > ui.globals.md) {
         ui.addClass(leftPanelMinTabs, ui.tab.nameToggle);
       } else {
         ui.removeClass(leftPanelMinTabs, ui.tab.nameToggle);
-
         if (window.innerWidth >= ui.globals.xl) {
           if (leftPanelToggleStatus === 'show') {
             openLastOpenedTab();
           } else {
             clearLastOpenedTab();
-
             if (!ui.hasClass(leftPanelHolder, nameToggleMenu)) {
               ui.addClass(leftPanelHolder, nameToggleMenu);
               ui.addClass(leftPanelToggleBtn + ' .' + nameIcon, nameMirrorIcon);
@@ -86,34 +74,28 @@ ui.lineChart.colors = [baseColor, subColor];
           openLastOpenedTab();
         }
       }
-
       ui.off(document, 'mouseup.' + eventCloseLeftPanel);
     };
-
     resizer();
     ui.on(window, 'resize', function () {
       if (window.innerWidth === getScrollPos) {
         return;
       }
-
       resizer();
       ui.removeClass(leftPanel, nameShowMenu);
       getScrollPos = window.innerWidth;
     });
     ui.on(document, 'click', leftPanelMinTabs, function () {
       lastOpenedTab = Array.prototype.slice.call(ui.find(leftPanelMinTabs)).indexOf(this);
-
       if (window.innerWidth < ui.globals.xl && window.innerWidth > ui.globals.md) {
         setTimeout(function () {
           ui.addClass(leftPanel, nameShowMenu);
         }, ui.globals.ease);
       }
-
       if (window.innerWidth >= ui.globals.xl) {
         setTimeout(function () {
           ui.removeClass(leftPanelHolder, nameToggleMenu);
         }, ui.globals.ease);
-
         if (leftPanelToggleStatus === 'hide') {
           ui.on(document, 'mouseup.' + eventCloseLeftPanel, function (e) {
             if (e.button !== 2) {
@@ -122,7 +104,6 @@ ui.lineChart.colors = [baseColor, subColor];
               } else if (ui.closest(e.target, leftPanelHolder).length === 1) {
                 return;
               }
-
               clearLastOpenedTab();
               ui.addClass(leftPanelHolder, nameToggleMenu);
               ui.addClass(leftPanelToggleBtn + ' .' + nameIcon, nameMirrorIcon);
@@ -144,7 +125,6 @@ ui.lineChart.colors = [baseColor, subColor];
     ui.on(document, 'click', leftPanelToggleBtn, function () {
       setTimeout(function () {
         clearLastOpenedTab();
-
         if (ui.hasClass(leftPanelHolder, nameToggleMenu)) {
           ui.removeClass(leftPanelToggleBtn + ' .' + nameIcon, nameMirrorIcon);
           leftPanelToggleStatus = 'show';
@@ -155,14 +135,14 @@ ui.lineChart.colors = [baseColor, subColor];
           leftPanelToggleStatus = 'hide';
           setCookie(cookieName, 'hide');
         }
-
         ui.toggleClass(leftPanelHolder, nameToggleMenu);
-        ui.lineChart.Init(ui.lineChart.nameLoaded, true);
+        if (ui.lineChart !== undefined) {
+          ui.lineChart.Init(ui.lineChart.nameLoaded, true);
+        }
         ui.trigger(document, ui.globals.eventDomChange);
       }, ui.globals.ease);
     });
   };
-
   ui.onload(function () {
     headerTime();
     leftPanelMenu();

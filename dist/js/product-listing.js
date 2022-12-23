@@ -8,14 +8,12 @@ ui.lineChart.showInfo = false;
 ui.onload(function () {
   ui.on('.product-list-load-more', 'click', function () {
     var _this = this;
-
     ui.loadingMask.toggle(this);
     var scrollPos = this.getBoundingClientRect().top + window.pageYOffset - 15;
     ui.ajax({
       url: 'xhr/ajax-products.php',
       callback: function callback(status, response) {
         var target = ui.find('.product-list');
-
         if (target.length > 0) {
           if (status === 'success') {
             target[0].insertAdjacentHTML('beforeend', response);

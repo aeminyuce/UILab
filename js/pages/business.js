@@ -24,7 +24,7 @@ ui.lineChart.colors = [baseColor, subColor];
 
         date.setTime(date.getTime() + days * (24 * 60 * 60 * 1000));
 
-        document.cookie = name + '=' + value + ';' + "expires=" + date.toUTCString();
+        document.cookie = name + '=' + value + ';' + "expires=" + date.toUTCString() + ';domain=' + window.location.host;
 
     };
 
@@ -288,7 +288,10 @@ ui.lineChart.colors = [baseColor, subColor];
                     // toggle classname
                     ui.toggleClass(leftPanelHolder, nameToggleMenu);
 
-                    ui.lineChart.Init(ui.lineChart.nameLoaded, true); // resize loaded charts
+                    if (ui.lineChart !== undefined) {
+                        ui.lineChart.Init(ui.lineChart.nameLoaded, true); // resize loaded charts
+                    }
+
                     ui.trigger(document, ui.globals.eventDomChange); // set custom event
 
                 }, ui.globals.ease);

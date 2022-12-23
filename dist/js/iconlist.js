@@ -11,29 +11,23 @@ ui.iconlist = {
   msgTotal: 'Total icons',
   msgCopied: 'Copied!'
 };
-
 ui.iconlist.Start = function () {
   var list = ui.find('.' + ui.iconlist.target);
   var tools = ui.find('.' + ui.iconlist.nameTools + ' .' + ui.iconlist.nameBtn);
-
   if (list[0] === undefined || tools[0] === undefined) {
     return;
   }
-
   var totalIcons = 0;
   ui.on(tools, 'click', function () {
     var _this = this;
-
     var buttons = ui.find('.' + ui.iconlist.nameBtn, this.parentElement);
     ui.removeClass(buttons, ui.iconlist.stylesToolActive);
     setTimeout(function () {
       ui.addClass(_this, ui.iconlist.stylesToolActive);
     }, 0);
     var size = this.getAttribute(ui.iconlist.dataSize);
-
     if (size !== null) {
       ui.removeClass(list, ui.iconlist.stylesIconSizes);
-
       if (size !== '') {
         ui.addClass(list, ui.iconlist.nameIconsPrefix + size);
       }
@@ -58,5 +52,4 @@ ui.iconlist.Start = function () {
     });
   });
 };
-
 ui.onload(ui.iconlist.Start);

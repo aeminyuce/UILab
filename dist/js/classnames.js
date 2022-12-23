@@ -23,7 +23,6 @@ ui.classnames = {
   msgEmpty: 'Empty Classname!',
   msgDuplicate: 'Prefix Duplicated'
 };
-
 ui.classnames.Start = function () {
   var arr = [];
   arr.list = [];
@@ -34,11 +33,9 @@ ui.classnames.Start = function () {
   var lastAddedWarning = '';
   var list = ui.find('.' + ui.classnames.targetList)[0];
   var alerts = ui.find('.' + ui.classnames.targetAlerts)[0];
-
   if (list === undefined || alerts === undefined) {
     return;
   }
-
   var total = ui.find('.' + ui.classnames.nameTotal)[0];
   ui.ajax({
     url: ui.classnames.filePath,
@@ -48,15 +45,12 @@ ui.classnames.Start = function () {
     var loaded = [];
     var re = ui.classnames.jsTarget + '+\\w*|' + ui.classnames.jsTarget + '|' + ui.classnames.jsName + '+\\w*' + '|' + ui.classnames.jsStyles + '+\\w*';
     re = new RegExp(re, 'g');
-
     for (var jsModule in ui) {
       for (var jsKey in ui[jsModule]) {
         if (jsKey.match(re) !== null && jsKey.match(ui.classnames.jsIgnore) === null) {
           var jsClass = ui[jsModule][jsKey];
-
           if (typeof jsClass === 'string') {
             var jsStyleList = jsClass.toString().split(' ');
-
             if (jsStyleList.length > 1) {
               Array.prototype.forEach.call(jsStyleList, function (style) {
                 loaded.push(style);
@@ -68,7 +62,6 @@ ui.classnames.Start = function () {
         }
       }
     }
-
     Array.prototype.forEach.call(ui.ajax.classNames, function (name) {
       loaded.push(name);
     });
@@ -82,7 +75,6 @@ ui.classnames.Start = function () {
       reDuplicate = new RegExp(reDuplicate, 'g');
       var str = name.toString();
       var strStart = str.match(reStart);
-
       if (strStart === null) {
         if (str === '') {
           arr.error.push(ui.classnames.msgEmpty);
@@ -92,24 +84,19 @@ ui.classnames.Start = function () {
       } else {
         arr.list.push(str);
       }
-
       var strLength = str.match(reDuplicate);
-
       if (strLength !== null) {
         strLength = Number(str.match(reDuplicate).length);
-
         if (strLength > 1) {
           arr.error.push(ui.classnames.msgDuplicate + ': ' + str);
         }
       }
     });
-
     if (arr.error.length === 0) {
       alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesNoErrors + '">' + ui.classnames.msgNoErrors + '</li>');
     } else {
       alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + ui.classnames.msgErrors + '</li>');
     }
-
     Array.prototype.forEach.call(arr.error, function (name) {
       alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesError + '">' + name + '</li>');
     });
@@ -118,22 +105,17 @@ ui.classnames.Start = function () {
       if (lastAddedWarning === '' || lastAddedWarning.split('-')[0] !== name.split('-')[0]) {
         alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + name.split('-')[0] + '</li>');
       }
-
       alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarning + '">' + name + '</li>');
       lastAddedWarning = name;
     });
-
     var filterClassnames = function filterClassnames(that) {
       var title = that.split('-')[1];
-
       if (title === 'no' || title === 'xl' || title === 'lg' || title === 'md' || title === 'sm' || title === 'xs') {
         title = that.split('-')[2];
       }
-
       if (title === 'no') {
         title = that.split('-')[3];
       }
-
       if (['desktop', 'windows', 'edg', 'edge', 'ie', 'chrome', 'firefox', 'opera', 'mac', 'safari', 'mobile', 'ios', 'android'].indexOf(title) >= 0) {
         title = 'user agents';
       } else if (['container', 'fluid', 'fixed', 'row', 'gutter', 'col', 'push', 'pull', 'offset', 'order'].indexOf(title) >= 0) {
@@ -161,50 +143,39 @@ ui.classnames.Start = function () {
       } else if (title === 'carousel' || title === 'bring') {
         title = 'carousel';
       }
-
       if (title === 'header' || title === 'sticky') {
         title = 'header';
       }
-
       if (title === 'alerts' || title === 'dialog') {
         title = 'alerts';
       }
-
       if (title === 'header' || title === 'sticky') {
         title = 'header';
       } else if (title === 'm') {
         title = 'margin';
       }
-
       if (title === 'p') {
         title = 'padding';
       }
-
       if (title === 'sp') {
         title = 'spacer';
       }
-
       if (title === 'ease') {
         title = 'effects';
       }
-
       if (title === 'imgupload') {
         title = 'image upload';
       }
-
       return title;
     };
-
     Array.prototype.forEach.call(arr.list, function (name) {
       var title = filterClassnames(name);
-
       if (arr.filtered.indexOf(title) === -1) {
         arr.filtered.push(title);
       }
     });
     Array.prototype.forEach.call(arr.list, function (name) {
       var title = filterClassnames(name);
-
       if (arr.filtered.indexOf(title) > -1) {
         if (arr.groups[title] === undefined) {
           arr.groups[title] = name;
@@ -232,10 +203,8 @@ ui.classnames.Start = function () {
           if (i !== 0) {
             html += '</ul></div>';
           }
-
           html += '<div class="' + ui.classnames.stylesCatCol + '">' + '<ul class="' + ui.classnames.stylesCatList + '">';
         }
-
         if (item.indexOf('[native code]') === -1) {
           item = item.replace(/^\s+|\s+$/g, '');
           html += '<li>' + item + '</li>';
@@ -252,5 +221,4 @@ ui.classnames.Start = function () {
     items = "";
   });
 };
-
 ui.onload(ui.classnames.Start);
