@@ -4788,8 +4788,8 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
 }
 /* forms */
 [data-ui-mode="light"] {
-  --ui-form-bg: hsla(0, 0%, 0%, 0.0175);
-  --ui-form-focus-bg: hsla(0, 0%, 0%, 0.03);
+  --ui-form-bg: hsla(0, 0%, 100%, 0.75);
+  --ui-form-focus-bg: hsl(0, 0%, 100%);
   --ui-form-focus-border: hsla(0, 0%, 0%, 0.35);
   --ui-select-multi-options-border: hsla(0, 0%, 0%, 0.045);
   --ui-range-thumb-color: hsl(220, 3%, 57%);
@@ -4801,8 +4801,8 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
   --ui-form-readonly-color: hsla(0, 0%, 0%, 0.5);
 }
 [data-ui-mode="dark"] {
-  --ui-form-bg: hsla(0, 0%, 100%, 0.0275);
-  --ui-form-focus-bg: hsla(0, 0%, 100%, 0.075);
+  --ui-form-bg: hsla(0, 0%, 100%, 0.0675);
+  --ui-form-focus-bg: hsla(0, 0%, 100%, 0.1275);
   --ui-form-focus-border: hsla(0, 0%, 100%, 0.65);
   --ui-select-multi-options-border: hsla(0, 0%, 100%, 0.045);
   --ui-range-thumb-color: hsl(219, 7%, 40%);
@@ -4869,7 +4869,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-select,
 .ui-select-multi,
 .ui-textarea {
-  background-color: hsla(0, 0%, 0%, 0.0175);
+  background-color: hsla(0, 0%, 100%, 0.75);
   background-color: var(--ui-form-bg);
   border: solid 1px hsla(0, 0%, 0%, 0.15);
   border: solid 1px var(--ui-border-color);
@@ -5052,7 +5052,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   text-overflow: ellipsis;
   line-height: 40px;
   width: 100%;
-  background-color: hsla(0, 0%, 0%, 0.0175);
+  background-color: hsla(0, 0%, 100%, 0.75);
   background-color: var(--ui-form-bg);
   padding-right: 20px;
   padding-left: 145px;
@@ -5389,7 +5389,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   border-color: hsla(0, 0%, 100%, 0.65) !important;
 }
 .ui-form-focus:not(.ui-form-readonly) {
-  background-color: hsla(0, 0%, 0%, 0.03);
+  background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-form-focus-bg);
   box-shadow: inset 0 1px 2px hsla(0, 0%, 0%, 0.15);
 }
@@ -7347,12 +7347,12 @@ html:not(.ui-ie) .ui-steps-bar li {
   border-radius: 0 !important;
 }
 .ui-modal-content.ui-modal-fullscreen .ui-modal-header .ui-modal-buttons {
-  padding-right: 55.5px;
+  padding-right: 53px;
 }
 .ui-modal-content.ui-modal-fullscreen .ui-modal-close {
   background-color: hsla(0, 0%, 0%, 0.2);
-  top: 15px;
-  right: 15px;
+  top: 10px;
+  right: 10px;
 }
 .ui-desktop .ui-modal-content.ui-modal-fullscreen .ui-modal-close:hover {
   background-color: hsla(0, 0%, 0%, 0.35);
@@ -7376,10 +7376,10 @@ html:not(.ui-ie) .ui-steps-bar li {
   border-radius: 9px;
 }
 .ui-modal-content.ui-modal-has-header .ui-modal {
-  padding-top: 72px !important;
+  padding-top: 62px !important;
 }
 .ui-modal-content.ui-modal-has-footer .ui-modal {
-  padding-bottom: 72px !important;
+  padding-bottom: 62px !important;
 }
 .ui-modal-content .ui-modal-close {
   color: hsl(0, 0%, 100%) !important;
@@ -7412,9 +7412,9 @@ html:not(.ui-ie) .ui-steps-bar li {
 .ui-modal-header > .ui-row,
 .ui-modal-container > .ui-row,
 .ui-modal-footer > .ui-row {
-  margin-top: -15px;
+  margin-top: -10px;
   margin-right: inherit;
-  margin-bottom: -15px;
+  margin-bottom: -10px;
   margin-left: inherit;
 }
 .ui-modal-header > .ui-fixed,
@@ -7422,8 +7422,8 @@ html:not(.ui-ie) .ui-steps-bar li {
 .ui-modal-footer > .ui-fixed {
   padding-right: 0;
   padding-left: 0;
-  margin-top: -15px;
-  margin-bottom: -15px;
+  margin-top: -10px;
+  margin-bottom: -10px;
 }
 .ui-modal-header,
 .ui-modal-footer {
@@ -7431,7 +7431,7 @@ html:not(.ui-ie) .ui-steps-bar li {
   white-space: nowrap;
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-highlighted);
-  padding: 15px;
+  padding: 10px;
   overflow: hidden;
   position: absolute;
   right: 0;
@@ -7452,7 +7452,7 @@ html:not(.ui-ie) .ui-steps-bar li {
   margin: 8px 0;
 }
 .ui-modal-header {
-  height: 72px;
+  height: 62px;
   top: 0;
   z-index: 9;
 }
@@ -7471,10 +7471,10 @@ html:not(.ui-ie) .ui-steps-bar li {
   float: left;
 }
 .ui-modal-container {
-  min-height: 30px;
+  min-height: 20px;
   height: 100%;
   max-height: 100%;
-  padding: 15px;
+  padding: 10px;
   overflow: auto;
   position: relative;
 }
@@ -7492,7 +7492,7 @@ html:not(.ui-ie) .ui-steps-bar li {
   left: 0;
 }
 .ui-modal-footer {
-  height: 72px;
+  height: 62px;
   bottom: 0;
   z-index: 9;
 }
@@ -9862,7 +9862,7 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.ui-icon) {
 }
 .ui-donut-chart circle {
   fill: none;
-  stroke-width: 8;
+  stroke-width: 10;
 }
 .ui-donut-chart circle.ui-loaded:not(.ui-donut-chart-bg) {
   animation: ui-donut-draw 1.6s ease-in reverse;
