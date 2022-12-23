@@ -24,7 +24,7 @@ ui.lineChart.colors = [baseColor, subColor];
 
         date.setTime(date.getTime() + days * (24 * 60 * 60 * 1000));
 
-        document.cookie = name + '=' + value + ';' + "expires=" + date.toUTCString() + ';domain=' + window.location.host;
+        document.cookie = name + '=' + value + ';' + "expires=" + date.toUTCString() + ';domain=' + window.location.host + ';path=/';
 
     };
 
