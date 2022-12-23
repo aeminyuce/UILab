@@ -585,7 +585,7 @@ ui.onload(function () {
   var setState = function setState(mode) {
     var date = new Date();
     date.setTime(date.getTime() + ui.darkMode.cookieDays * (24 * 60 * 60 * 1000));
-    document.cookie = ui.darkMode.cookieName + '=' + mode + ';' + "expires=" + date.toUTCString();
+    document.cookie = ui.darkMode.cookieName + '=' + mode + ';' + "expires=" + date.toUTCString() + ';domain=' + window.location.host;
   };
   ui.on(darkColorScheme, 'change', function () {
     if (darkColorScheme.matches) {
