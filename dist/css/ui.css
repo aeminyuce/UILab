@@ -6637,8 +6637,8 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   content: attr(data-ui-val);
   font-size: 12px;
   text-align: center !important;
-  line-height: 1.1;
-  min-width: 18px;
+  line-height: 1;
+  min-width: 16px;
   min-height: 12px;
   padding: 2px 4px;
 }
