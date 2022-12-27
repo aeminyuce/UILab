@@ -9911,13 +9911,12 @@ html:not(.ui-edge) .ui-donut-chart svg:not(.ui-icon) {
   content: attr(data-ui-info);
   color: hsl(0, 0%, 0%);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
-  line-height: 14px;
-  min-width: 18px;
-  min-height: 18px;
+  min-width: 20px;
+  min-height: 20px;
   background: hsl(0, 0%, 100%);
-  padding: 4px 8px;
+  padding: 2px 4px;
   display: inline-block;
   border-radius: 1000px;
   position: absolute;

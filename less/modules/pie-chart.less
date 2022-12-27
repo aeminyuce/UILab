@@ -3,9 +3,9 @@
 @import (reference) '../core/globals.less';
 @import (reference) '../core/mixins.less';
 
-@pie-chart-title-text-size:             @font-size;
+@pie-chart-title-text-size:             @font-12;
 @pie-chart-title-height:                22px;
-@pie-chart-title-padding:               4px;
+@pie-chart-title-padding:               2px;
 
 @pie-chart-info-text-size:              @font-11;
 @pie-chart-info-padding:                2px;
@@ -29,7 +29,7 @@
         position: relative; @no-selection();
 
         &[data-ui-info] {
-            &:before { content: attr(data-ui-info); color: @black; font-weight: @font-bold; font-size: @pie-chart-title-text-size; text-align: center; line-height: @pie-chart-title-text-size; min-width: (@pie-chart-title-height - @pie-chart-title-padding); min-height: (@pie-chart-title-height - @pie-chart-title-padding); background: @white; padding: @pie-chart-title-padding (@pie-chart-title-padding * 2); display: inline-block; border-radius: @circle; position: absolute; top: 50%; left: 50%; z-index: 2; transform: translate(-50%,-50%); }
+            &:before { content: attr(data-ui-info); color: @black; font-weight: @font-bold; font-size: @pie-chart-title-text-size; text-align: center; min-width: (@pie-chart-title-height - @pie-chart-title-padding); min-height: (@pie-chart-title-height - @pie-chart-title-padding); background: @white; padding: @pie-chart-title-padding (@pie-chart-title-padding * 2); display: inline-block; border-radius: @circle; position: absolute; top: 50%; left: 50%; z-index: 2; transform: translate(-50%,-50%); }
         }
         & > div {
             span {
