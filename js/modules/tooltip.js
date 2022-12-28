@@ -43,7 +43,8 @@ ui.tooltip = {
     dataMobile: 'data-ui-only="mobile"',
 
     // custom events
-    eventClose: 'ui:tooltipClose'
+    eventClose: 'ui:tooltipClose',
+    eventClosed: 'ui:tooltipClosed'
 
 };
 
@@ -284,7 +285,12 @@ ui.tooltip = {
                     } else if (e.type === 'mousedown') {
                         type = "hide";
 
-                    } else { type = 'close'; }
+                    } else {
+
+                        type = 'close';
+                        ui.trigger(document, ui.tooltip.eventClosed); // set custom event
+
+                    }
 
                     tooltipFnc(this, type);
 
@@ -338,6 +344,8 @@ ui.tooltip = {
 
                                 tooltipFnc(that, 'close');
                                 ui.off(document, 'touchend.' + ui.tooltip.eventClose);
+
+                                ui.trigger(document, ui.tooltip.eventClosed); // set custom event
 
                             });
 

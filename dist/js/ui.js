@@ -5982,7 +5982,8 @@ ui.tooltip = {
   dataPos: 'data-ui-pos',
   dataDesktop: 'data-ui-only="desktop"',
   dataMobile: 'data-ui-only="mobile"',
-  eventClose: 'ui:tooltipClose'
+  eventClose: 'ui:tooltipClose',
+  eventClosed: 'ui:tooltipClosed'
 };
 (function () {
   var removeTimer, removeTimer2x, pageTouchmoveTimer, tooltipOpenedTimer, touchControl, isScrolling;
@@ -6116,6 +6117,7 @@ ui.tooltip = {
           type = "hide";
         } else {
           type = 'close';
+          ui.trigger(document, ui.tooltip.eventClosed);
         }
         tooltipFnc(this, type);
       }
@@ -6143,6 +6145,7 @@ ui.tooltip = {
           ui.on(document, 'touchend.' + ui.tooltip.eventClose, function () {
             tooltipFnc(that, 'close');
             ui.off(document, 'touchend.' + ui.tooltip.eventClose);
+            ui.trigger(document, ui.tooltip.eventClosed);
           });
         }, ui.globals.fast / 2);
       }
