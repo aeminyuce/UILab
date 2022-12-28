@@ -206,9 +206,11 @@ ui.lineChart.Start = () => {
                 // get min and max values of all y datas
                 yMax = yMax.toString().split(',');
 
-                yMax = yMax.filter((item, pos) => yMax.indexOf(item) === pos); // convert array as unique
-                yMax = yMax.sort((a, b) => b - a); // convert array as desc
+                yMax = yMax.filter((item, pos) => { // convert array as unique (ignore empty items!)
+                    return (item !== '' && yMax.indexOf(item) === pos)
+                });
 
+                yMax = yMax.sort((a, b) => b - a); // convert array as desc
                 yMin = parseInt(yMax[yMax.length - 1]);
 
                 // convert yMax to divide with rows
@@ -379,6 +381,7 @@ ui.lineChart.Start = () => {
                     (el, j) => {
 
                         paths = '';
+
                         y = data[j].y;
 
                         // set color
@@ -390,6 +393,58 @@ ui.lineChart.Start = () => {
                         }
 
                         // create paths and circles
+                        let noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
+                        if (noCircles === null || noCircles === '') noCircles = false; else noCircles = true;
+
+                        const createCircles = (n) => {
+
+                            if (noCircles) return;
+
+                            circles += '<circle ' +
+                                            'cx="' + posX + '" ' +
+                                            'cy="' + posY + '" ' +
+                                            'r="' + ui.lineChart.circleSize + '" ' +
+                                            'fill="' + data.color[j] + '" ' +
+                                            'stroke="' + data.color[j] + '" ' +
+                                            'stroke-width="0" ';
+
+                            if (data[j].links[n] !== '') { // check links
+                                circles += 'onclick="location.href = \'' + data[j].links[n] + '\';"';
+                            }
+
+                            if (ui.tooltip === undefined) {
+
+                                circles += '/>' +
+                                            '<title>' + (y[n] ? y[n] : 0) + '</title>';
+
+                            } else { // Optional!
+
+                                circles += ui.tooltip.dataTooltip + ' ' +
+                                            'name="' + (y[n] ? y[n] : 0) + '" ' +
+                                        '/>';
+
+                            }
+
+                            '</circle>';
+
+                        }
+
+                        if (y.length === 0) {
+
+                            posX = col + ui.lineChart.left;
+
+                            let range = yMax - yMin; // ignore infinity
+                            if (range === 0) range = 1;
+
+                            posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * yMax) / range) - ui.lineChart.top);
+
+                            pathStart.x = posX;
+                            pathStart.y = posY;
+
+                            createCircles(0);
+
+                        }
+
                         for (let n = 0; n < y.length; n++) {
 
                             posX = (n * col) + ui.lineChart.left;
@@ -437,51 +492,14 @@ ui.lineChart.Start = () => {
                             }
 
                             // create circles
-                            let noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
-                            if (noCircles === null || noCircles === '') noCircles = false; else noCircles = true;
-
-                            const createCircles = () => {
-
-                                if (noCircles) return;
-
-                                circles += '<circle ' +
-                                                'cx="' + posX + '" ' +
-                                                'cy="' + posY + '" ' +
-                                                'r="' + ui.lineChart.circleSize + '" ' +
-                                                'fill="' + data.color[j] + '" ' +
-                                                'stroke="' + data.color[j] + '" ' +
-                                                'stroke-width="0" ';
-
-                                    if (data[j].links[n] !== '') { // check links
-                                        circles += 'onclick="location.href = \'' + data[j].links[n] + '\';"';
-                                    }
-
-                                    if (ui.tooltip === undefined) {
-
-                                        circles += '/>' +
-                                                    '<title>' + y[n] + '</title>';
-
-                                    } else { // Optional!
-
-                                        circles += ui.tooltip.dataTooltip + ' ' +
-                                                    'name="' + y[n] + '" ' +
-                                                '/>';
-
-                                    }
-
-                                    '</circle>';
-
-                            }
-
                             if (ui.lineChart.noRepeatadCircles) {
 
-                                if (n === 0 || n === y.length - 1) createCircles();
+                                if (n === 0 || n === y.length - 1) createCircles(n);
 
-                                if (y[n - 1] !== undefined && y[n - 1] !== y[n]) createCircles();
-                                if (y[n + 1] !== undefined && y[n + 1] !== y[n]) createCircles();
+                                if (y[n - 1] !== undefined && y[n - 1] !== y[n]) createCircles(n);
+                                if (y[n + 1] !== undefined && y[n + 1] !== y[n]) createCircles(n);
 
-                            } else createCircles();
-
+                            } else createCircles(n);
 
                         }
 
@@ -492,9 +510,7 @@ ui.lineChart.Start = () => {
                         } else if (type.indexOf(ui.lineChart.dotted) > -1) { // dotted
                             html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dotted + '" ';
 
-                        } else {
-                            html += '<path ';
-                        }
+                        } else html += '<path ';
 
                         html += 'd="M ' + pathStart.x + ' ' + pathStart.y +
                                 paths + '" ' +

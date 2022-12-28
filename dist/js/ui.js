@@ -6518,7 +6518,7 @@ ui.lineChart.Start = function () {
       if (ui.lineChart.includeZero) yMax.push(0);
       yMax = yMax.toString().split(',');
       yMax = yMax.filter(function (item, pos) {
-        return yMax.indexOf(item) === pos;
+        return item !== '' && yMax.indexOf(item) === pos;
       });
       yMax = yMax.sort(function (a, b) {
         return b - a;
@@ -6606,11 +6606,34 @@ ui.lineChart.Start = function () {
         } else {
           data.color.push(ui.lineChart.colors[j]);
         }
-        var _loop = function _loop(n) {
-          posX = n * col + ui.lineChart.left;
+        var noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
+        if (noCircles === null || noCircles === '') noCircles = false;else noCircles = true;
+        var createCircles = function createCircles(n) {
+          if (noCircles) return;
+          circles += '<circle ' + 'cx="' + posX + '" ' + 'cy="' + posY + '" ' + 'r="' + ui.lineChart.circleSize + '" ' + 'fill="' + data.color[j] + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="0" ';
+          if (data[j].links[n] !== '') {
+            circles += 'onclick="location.href = \'' + data[j].links[n] + '\';"';
+          }
+          if (ui.tooltip === undefined) {
+            circles += '/>' + '<title>' + (y[n] ? y[n] : 0) + '</title>';
+          } else {
+            circles += ui.tooltip.dataTooltip + ' ' + 'name="' + (y[n] ? y[n] : 0) + '" ' + '/>';
+          }
+        };
+        if (y.length === 0) {
+          posX = col + ui.lineChart.left;
           var range = yMax - yMin;
           if (range === 0) range = 1;
-          posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax) / range - ui.lineChart.top);
+          posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * yMax / range - ui.lineChart.top);
+          pathStart.x = posX;
+          pathStart.y = posY;
+          createCircles(0);
+        }
+        for (var n = 0; n < y.length; n++) {
+          posX = n * col + ui.lineChart.left;
+          var _range = yMax - yMin;
+          if (_range === 0) _range = 1;
+          posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax) / _range - ui.lineChart.top);
           type = el.getAttribute(ui.lineChart.dataType);
           if (type === null) {
             type = '';
@@ -6631,36 +6654,17 @@ ui.lineChart.Start = function () {
               paths += ' L ' + posX + ' ' + posY;
             }
           }
-          var noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
-          if (noCircles === null || noCircles === '') noCircles = false;else noCircles = true;
-          var createCircles = function createCircles() {
-            if (noCircles) return;
-            circles += '<circle ' + 'cx="' + posX + '" ' + 'cy="' + posY + '" ' + 'r="' + ui.lineChart.circleSize + '" ' + 'fill="' + data.color[j] + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="0" ';
-            if (data[j].links[n] !== '') {
-              circles += 'onclick="location.href = \'' + data[j].links[n] + '\';"';
-            }
-            if (ui.tooltip === undefined) {
-              circles += '/>' + '<title>' + y[n] + '</title>';
-            } else {
-              circles += ui.tooltip.dataTooltip + ' ' + 'name="' + y[n] + '" ' + '/>';
-            }
-          };
           if (ui.lineChart.noRepeatadCircles) {
-            if (n === 0 || n === y.length - 1) createCircles();
-            if (y[n - 1] !== undefined && y[n - 1] !== y[n]) createCircles();
-            if (y[n + 1] !== undefined && y[n + 1] !== y[n]) createCircles();
-          } else createCircles();
-        };
-        for (var n = 0; n < y.length; n++) {
-          _loop(n);
+            if (n === 0 || n === y.length - 1) createCircles(n);
+            if (y[n - 1] !== undefined && y[n - 1] !== y[n]) createCircles(n);
+            if (y[n + 1] !== undefined && y[n + 1] !== y[n]) createCircles(n);
+          } else createCircles(n);
         }
         if (type.indexOf(ui.lineChart.dashed) > -1) {
           html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dashed + '" ';
         } else if (type.indexOf(ui.lineChart.dotted) > -1) {
           html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dotted + '" ';
-        } else {
-          html += '<path ';
-        }
+        } else html += '<path ';
         html += 'd="M ' + pathStart.x + ' ' + pathStart.y + paths + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + '/>';
         if (type.indexOf(ui.lineChart.filled) > -1) {
           data.id = new Date().getTime();
