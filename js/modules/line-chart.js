@@ -437,6 +437,7 @@ ui.lineChart.Start = () => {
                             if (range === 0) range = 1;
 
                             posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * yMax) / range) - ui.lineChart.top);
+                            posY = posY > ui.lineChart.top ? posY : (data.svgHeight - ui.lineChart.bottom - 14); // repeated zero datas
 
                             pathStart.x = posX;
                             pathStart.y = posY;
@@ -453,6 +454,7 @@ ui.lineChart.Start = () => {
                             if (range === 0) range = 1;
 
                             posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax)) / range) - ui.lineChart.top);
+                            posY = posY > ui.lineChart.top ? posY : (data.svgHeight - ui.lineChart.bottom - 14); // repeated zero datas
 
                             // get line type
                             type = el.getAttribute(ui.lineChart.dataType);
