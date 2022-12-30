@@ -396,6 +396,10 @@ ui.lineChart.Start = () => {
                         let noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
                         if (noCircles === null || noCircles === '') noCircles = false; else noCircles = true;
 
+                        // get line type
+                        type = el.getAttribute(ui.lineChart.dataType);
+                        if (type === null || type === undefined) { type = ''; }
+
                         const createCircles = (n) => {
 
                             if (noCircles) return;
@@ -455,10 +459,6 @@ ui.lineChart.Start = () => {
 
                             posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax)) / range) - ui.lineChart.top);
                             posY = posY > ui.lineChart.top ? posY : (data.svgHeight - ui.lineChart.bottom - 14); // repeated zero datas
-
-                            // get line type
-                            type = el.getAttribute(ui.lineChart.dataType);
-                            if (type === null) { type = ''; }
 
                             // create lines
                             if (n === 0) { // start point

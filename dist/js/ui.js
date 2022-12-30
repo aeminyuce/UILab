@@ -6608,6 +6608,10 @@ ui.lineChart.Start = function () {
         }
         var noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
         if (noCircles === null || noCircles === '') noCircles = false;else noCircles = true;
+        type = el.getAttribute(ui.lineChart.dataType);
+        if (type === null || type === undefined) {
+          type = '';
+        }
         var createCircles = function createCircles(n) {
           if (noCircles) return;
           circles += '<circle ' + 'cx="' + posX + '" ' + 'cy="' + posY + '" ' + 'r="' + ui.lineChart.circleSize + '" ' + 'fill="' + data.color[j] + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="0" ';
@@ -6636,10 +6640,6 @@ ui.lineChart.Start = function () {
           if (_range === 0) _range = 1;
           posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax) / _range - ui.lineChart.top);
           posY = posY > ui.lineChart.top ? posY : data.svgHeight - ui.lineChart.bottom - 14;
-          type = el.getAttribute(ui.lineChart.dataType);
-          if (type === null) {
-            type = '';
-          }
           if (n === 0) {
             pathStart.x = posX;
             pathStart.y = posY;
