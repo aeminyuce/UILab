@@ -30,7 +30,7 @@
 @alerts-msg-text-align:                center;
 @alerts-msg-width:                     (@layout-min - 40px);
 @alerts-msg-hover-opacity:             .9;
-@alerts-msg-padding:                   12px 10px;
+@alerts-msg-padding:                   16px 12px;
 @alerts-msg-window-space:              20px;
 @alerts-msg-slide-size:                40px;
 
@@ -62,7 +62,7 @@
         }
 
         &-msg {
-            text-align: @alerts-msg-text-align; width: @alerts-msg-width; min-height: @btn-default; padding: @alerts-msg-padding; position: fixed; z-index: (@alerts-z-index + 2); cursor: pointer;
+            text-align: @alerts-msg-text-align; min-height: @btn-default; padding: @alerts-msg-padding; position: fixed; z-index: (@alerts-z-index + 2); cursor: pointer;
 
             .ui-desktop &:hover { opacity: @alerts-msg-hover-opacity; }
 
@@ -74,6 +74,11 @@
                 &success { background-color: @green !important; }
                 &warning { background-color: @yellow !important; }
                 &danger { background-color: @red !important; }
+            }
+
+            &.ui-c {
+                top: @alerts-msg-window-space; left: 50%; transform: translate(-50%,0);
+                &:not(.ui-show-ease) { transform: translate(-50%,-@alerts-msg-slide-size); }
             }
 
             &.ui-tr { top: @alerts-msg-window-space; right: @alerts-msg-window-space; }
@@ -133,10 +138,15 @@
     }
 
     @media (@md-start) {
+        .ui-alerts-msg {
+            &:not(.ui-c) { width: @alerts-msg-width; }
+            &.ui-c { width: (@alerts-msg-width * 2); }
+        }
         .ui-dialog-msg { padding: (@alerts-dialog-padding * 3); }
     }
     @media (@sm-finish) {
         .ui-dialog-msg { padding: (@alerts-dialog-padding * 3) @alerts-dialog-padding; }
+        .ui-alerts-msg { width: @alerts-msg-width; }
     }
 
 }

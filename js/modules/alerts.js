@@ -55,8 +55,9 @@ ui.alerts = {
 
     messageTimer: 4000, // wait for atomatically close messages
 
-    posDefault: 'br',
+    posDefault: 'c',
 
+    posCenter: 'c',
     posTopRight: 'tr',
     posTopLeft: 'tl',
     posBottomRight: 'br',
@@ -371,7 +372,7 @@ ui.alerts = {
             if (props.msg === undefined) { return; }
 
             // detect position
-            const arrPos = [ui.alerts.posTopRight, ui.alerts.posTopLeft, ui.alerts.posBottomRight, ui.alerts.posBottomLeft];
+            const arrPos = [ui.alerts.posCenter, ui.alerts.posTopRight, ui.alerts.posTopLeft, ui.alerts.posBottomRight, ui.alerts.posBottomLeft];
 
             if (arrPos.indexOf(props.pos) < 0) {
                 props.pos = ui.alerts.posDefault;
@@ -440,7 +441,10 @@ ui.alerts = {
                                 slide = -1 * slide;
                             }
 
-                            prev[j].style.transform = 'translateY(' + slide + 'px)';
+                            if (ui.hasClass(el, 'ui-' + ui.alerts.posCenter)) {
+                                prev[j].style.transform = 'translate(-50%,' + slide + 'px)';
+
+                            } else prev[j].style.transform = 'translateY(' + slide + 'px)';
 
                         });
 

@@ -7692,9 +7692,8 @@ html:not(.ui-ie) .ui-steps-bar li {
 }
 .ui-alerts-msg {
   text-align: center;
-  width: 280px;
   min-height: 42px;
-  padding: 12px 10px;
+  padding: 16px 12px;
   position: fixed;
   z-index: 99;
   cursor: pointer;
@@ -7720,6 +7719,14 @@ html:not(.ui-ie) .ui-steps-bar li {
 }
 .ui-alerts-msg.ui-msg-danger {
   background-color: hsl(0, 82%, 52%) !important;
+}
+.ui-alerts-msg.ui-c {
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.ui-alerts-msg.ui-c:not(.ui-show-ease) {
+  transform: translate(-50%, -40px);
 }
 .ui-alerts-msg.ui-tr {
   top: 20px;
@@ -7814,6 +7821,12 @@ button.ui-dialog-custom {
   opacity: 0.75;
 }
 @media (min-width: 768px) {
+  .ui-alerts-msg:not(.ui-c) {
+    width: 280px;
+  }
+  .ui-alerts-msg.ui-c {
+    width: 560px;
+  }
   .ui-dialog-msg {
     padding: 30px;
   }
@@ -7821,6 +7834,9 @@ button.ui-dialog-custom {
 @media (max-width: 767px) {
   .ui-dialog-msg {
     padding: 30px 10px;
+  }
+  .ui-alerts-msg {
+    width: 280px;
   }
 }
 /* calendar */

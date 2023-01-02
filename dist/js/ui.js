@@ -2428,7 +2428,8 @@ ui.alerts = {
   successBtnValue: 'success',
   errorBtnValue: 'error',
   messageTimer: 4000,
-  posDefault: 'br',
+  posDefault: 'c',
+  posCenter: 'c',
   posTopRight: 'tr',
   posTopLeft: 'tl',
   posBottomRight: 'br',
@@ -2596,7 +2597,7 @@ ui.alerts = {
       if (props.msg === undefined) {
         return;
       }
-      var arrPos = [ui.alerts.posTopRight, ui.alerts.posTopLeft, ui.alerts.posBottomRight, ui.alerts.posBottomLeft];
+      var arrPos = [ui.alerts.posCenter, ui.alerts.posTopRight, ui.alerts.posTopLeft, ui.alerts.posBottomRight, ui.alerts.posBottomLeft];
       if (arrPos.indexOf(props.pos) < 0) {
         props.pos = ui.alerts.posDefault;
       }
@@ -2635,7 +2636,9 @@ ui.alerts = {
             if (props.pos === ui.alerts.posBottomRight || props.pos === ui.alerts.posBottomLeft) {
               slide = -1 * slide;
             }
-            prev[j].style.transform = 'translateY(' + slide + 'px)';
+            if (ui.hasClass(el, 'ui-' + ui.alerts.posCenter)) {
+              prev[j].style.transform = 'translate(-50%,' + slide + 'px)';
+            } else prev[j].style.transform = 'translateY(' + slide + 'px)';
           });
         }
         messageQueue.push(message);

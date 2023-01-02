@@ -102,6 +102,12 @@
             <div class="ui-col-12 ui-no-p-b">
                 <b>Show Positions:</b>
             </div>
+            <div class="ui-col-12">
+
+                <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.alerts.message({<br>    msg: 'Center message',<br>    pos: 'c'<br>});</pre>
+                <button class="ui-btn ui-btn-sm ui-round ui-fill-dark-100 ui-ease-btn" onclick="ui.alerts.message({msg: 'Center message', pos: 'c'});">Run Code</button>
+
+            </div>
             <div class="ui-col-6">
 
                 <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.alerts.message({<br>    msg: 'Top left message',<br>    pos: 'tl'<br>});</pre>
