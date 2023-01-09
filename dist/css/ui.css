@@ -3953,7 +3953,6 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
 }
 .ui-btn:not(.ui-btn-multi) {
   white-space: nowrap;
-  overflow: hidden;
 }
 .ui-btn:not(.ui-circle) {
   padding-right: 18px;
