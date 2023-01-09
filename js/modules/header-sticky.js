@@ -17,7 +17,8 @@ ui.headerSticky = {
     nameXL: 'ui-sticky-xl',
 
     // data attributes
-    dataClasses: 'data-ui-classes'
+    dataClasses: 'data-ui-classes',
+    dataSpace: 'data-ui-space'
 
 };
 
@@ -65,12 +66,10 @@ ui.headerSticky = {
 
             }
 
-            body.style.paddingTop = header.offsetHeight + 'px';
+            body.style.paddingTop = header.offsetHeight + Number(header.getAttribute(ui.headerSticky.dataSpace)) + 'px';
             ui.addClass(header, ui.headerSticky.nameSticky);
 
-            if (classes !== null && classes !== '') {
-                ui.addClass(header, classes);
-            }
+            if (classes !== null && classes !== '') ui.addClass(header, classes);
 
         } else { stickyClear(); }
 

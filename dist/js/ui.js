@@ -2321,7 +2321,8 @@ ui.headerSticky = {
   nameMD: 'ui-sticky-md',
   nameLG: 'ui-sticky-lg',
   nameXL: 'ui-sticky-xl',
-  dataClasses: 'data-ui-classes'
+  dataClasses: 'data-ui-classes',
+  dataSpace: 'data-ui-space'
 };
 (function () {
   var stickyLoad, stickyClear, classList, classes, size, header, body;
@@ -2361,11 +2362,9 @@ ui.headerSticky = {
           return;
         }
       }
-      body.style.paddingTop = header.offsetHeight + 'px';
+      body.style.paddingTop = header.offsetHeight + Number(header.getAttribute(ui.headerSticky.dataSpace)) + 'px';
       ui.addClass(header, ui.headerSticky.nameSticky);
-      if (classes !== null && classes !== '') {
-        ui.addClass(header, classes);
-      }
+      if (classes !== null && classes !== '') ui.addClass(header, classes);
     } else {
       stickyClear();
     }
