@@ -2340,7 +2340,7 @@ ui.headerSticky = {
       return;
     }
     var topSpace = Number(header.getAttribute(ui.headerSticky.dataSpace));
-    if (window.pageYOffset + topSpace > header.offsetTop) {
+    if (window.pageYOffset > header.getBoundingClientRect().top) {
       if (size !== '') {
         if (window.innerWidth > ui.globals.xs && size === ui.headerSticky.nameXS) {
           stickyClear();

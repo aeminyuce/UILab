@@ -56,7 +56,7 @@ ui.headerSticky = {
 
         const topSpace = Number(header.getAttribute(ui.headerSticky.dataSpace));
 
-        if (window.pageYOffset + topSpace > header.offsetTop) {
+        if (window.pageYOffset > header.getBoundingClientRect().top) {
 
             if (size !== '') {
 
