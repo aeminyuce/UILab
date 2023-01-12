@@ -1939,7 +1939,7 @@
                             </div>
 
                             <div class="ui-col-3">
-                                <label class="ui-form-info">Required with textarea forms and min length.</label>
+                                <label class="ui-form-info">Required with file inputs.</label>
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-file ui-round ui-border-dual ui-ease-form">
