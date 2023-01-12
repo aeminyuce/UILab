@@ -2009,7 +2009,7 @@ ui.requiredForms = {
   nameIndeterminate: 'ui-indeterminate',
   nameError: 'ui-form-error',
   scrollingTopSpacing: 20,
-  rexMail: '(([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)(\s*(;|,)\s*|\s*$))*'
+  rexMail: '([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}(;|$))'
 };
 ui.requiredForms.Start = function () {
   function required(that, type) {
