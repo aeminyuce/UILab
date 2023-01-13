@@ -6631,7 +6631,7 @@ ui.lineChart.Start = function () {
           var range = yMax - yMin;
           if (range === 0) range = 1;
           posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * yMax / range - ui.lineChart.top);
-          posY = posY > ui.lineChart.top ? posY : data.svgHeight - ui.lineChart.bottom - 14;
+          if (posY === ui.lineChart.top) posY = data.svgHeight - ui.lineChart.bottom - 14;else posY += ui.lineChart.top;
           pathStart.x = posX;
           pathStart.y = posY;
           createCircles(0);
@@ -6641,7 +6641,7 @@ ui.lineChart.Start = function () {
           var _range = yMax - yMin;
           if (_range === 0) _range = 1;
           posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax) / _range - ui.lineChart.top);
-          posY = posY > ui.lineChart.top ? posY : data.svgHeight - ui.lineChart.bottom - 14;
+          if (posY === ui.lineChart.top) posY = data.svgHeight - ui.lineChart.bottom - 14;else posY += ui.lineChart.top;
           if (n === 0) {
             pathStart.x = posX;
             pathStart.y = posY;
