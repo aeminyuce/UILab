@@ -1842,6 +1842,7 @@ ui.forms = {
       }
     }
     clearForms = function clearForms(that) {
+      if (that.readOnly) return;
       var btn = ui.find('.' + ui.forms.nameClear, that.parentElement)[0];
       if (that.value !== '') {
         ui.addClass(btn, ui.forms.nameOpen);

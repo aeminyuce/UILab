@@ -96,6 +96,7 @@ ui.forms = {
         // clear with form icons
         clearForms = function (that) {
 
+            if (that.readOnly) return; // check readOnly forms
             const btn = ui.find('.' + ui.forms.nameClear, that.parentElement)[0];
 
             if (that.value !== '') {
