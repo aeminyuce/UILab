@@ -6526,7 +6526,9 @@ ui.lineChart.Start = function () {
       yMax = yMax.sort(function (a, b) {
         return b - a;
       });
-      yMin = parseInt(Math.floor(yMax[yMax.length - 1]));
+      yMin = yMax[yMax.length - 1];
+      if (yMin.indexOf('.') === 0) yMin = Math.floor(yMin);
+      yMin = parseInt(yMin);
       if (parseInt(yMax[1]) > 0) {
         yMax = Math.ceil((parseInt(yMax[0]) - yMin) / rows) * rows + yMin;
         yMax++;

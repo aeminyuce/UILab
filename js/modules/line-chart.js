@@ -211,7 +211,10 @@ ui.lineChart.Start = () => {
                 });
 
                 yMax = yMax.sort((a, b) => b - a); // convert array as desc
-                yMin = parseInt(Math.floor(yMax[yMax.length - 1]));
+
+                yMin = yMax[yMax.length - 1];
+                if (yMin.indexOf('.') === 0) yMin = Math.floor(yMin); // convert only decimal data. ex: .00
+                yMin = parseInt(yMin);
 
                 // convert yMax to divide with rows
                 if (parseInt(yMax[1]) > 0) { // decimals
