@@ -6477,7 +6477,6 @@ ui.lineChart.Start = function () {
       data = [];
       data.name = [];
       data.color = [];
-      data.backup = [];
       if (resizer !== undefined && resizer) {
         ui.addClass(this, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
       } else {
@@ -6507,7 +6506,6 @@ ui.lineChart.Start = function () {
         data[i] = [];
         data[i].y = [];
         data[i].links = [];
-        data.backup += el.outerHTML;
         Array.prototype.forEach.call(ui.find(ui.lineChart.tagLines, el), function (item) {
           y = item.getAttribute(ui.lineChart.dataY);
           data[i].y.push(y);
@@ -6705,7 +6703,10 @@ ui.lineChart.Start = function () {
         }
         html += '</ul>';
       }
-      this.innerHTML = data.backup;
+      var svg = ui.find('svg', this)[0];
+      if (svg) this.removeChild(svg);
+      var info = ui.find('.' + ui.lineChart.nameInfo, this)[0];
+      if (info) this.removeChild(info);
       this.insertAdjacentHTML('beforeEnd', html);
       data = [];
       html = '';

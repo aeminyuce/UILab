@@ -126,7 +126,6 @@ ui.lineChart.Start = () => {
 
                 data.name = [];
                 data.color = [];
-                data.backup = [];
 
                 if (resizer !== undefined && resizer) {
                     ui.addClass(this, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
@@ -177,8 +176,6 @@ ui.lineChart.Start = () => {
 
                         data[i].y = [];
                         data[i].links = [];
-
-                        data.backup += el.outerHTML;
 
                         Array.prototype.forEach.call(ui.find(ui.lineChart.tagLines, el),
 
@@ -611,7 +608,12 @@ ui.lineChart.Start = () => {
                 }
 
                 // parse html
-                this.innerHTML = data.backup;
+                const svg = ui.find('svg', this)[0];
+                if (svg) this.removeChild(svg);
+
+                const info = ui.find('.' + ui.lineChart.nameInfo, this)[0];
+                if (info) this.removeChild(info);
+
                 this.insertAdjacentHTML('beforeEnd', html);
 
                 // empty variables
