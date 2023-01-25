@@ -1894,7 +1894,6 @@ ui.forms = {
     ui.on(document, 'keydown paste', '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber, function () {
       var _this2 = this;
       var maxLength = this.getAttribute('maxlength');
-      this.removeAttribute('maxlength');
       setTimeout(function () {
         var newValues = '';
         var getValues = _this2.value.match(new RegExp(/[0-9]/, 'g'));
@@ -1910,7 +1909,6 @@ ui.forms = {
           var re = '[0-9]{1,' + maxLength + '}';
           re = new RegExp(re, 'g');
           _this2.value = newValues.match(re)[0];
-          _this2.setAttribute('maxlength', maxLength);
         } else _this2.value = newValues;
       }, 0);
     });

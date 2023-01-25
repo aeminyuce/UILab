@@ -213,7 +213,6 @@ ui.forms = {
             function () {
 
                 const maxLength = this.getAttribute('maxlength');
-                this.removeAttribute('maxlength');
 
                 setTimeout(() => {
 
@@ -238,7 +237,6 @@ ui.forms = {
                         re = new RegExp(re, 'g');
 
                         this.value = newValues.match(re)[0];
-                        this.setAttribute('maxlength', maxLength);
 
                     } else this.value = newValues;
 
