@@ -45,9 +45,6 @@ const config = {
             },
             {
                 test: /\.less$/i,
-                include: [
-                    path.resolve(__dirname, "less"),
-                ],
                 use: [ // compiles Less to CSS
                     { loader: "style-loader" },
                     { loader: "css-loader" },
@@ -63,9 +60,6 @@ const config = {
             },
             {
                 test: /\.svg$/,
-                include: [
-                    path.resolve(__dirname, "icon"),
-                ],
                 use: [ // loads SVG
                     {
                         loader: 'svg-url-loader',
