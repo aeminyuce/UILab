@@ -5,8 +5,8 @@ import Button from '@components/Button';
 import Grid from '@components/Grid';
 
 // assets
-const icon_envelope = require("@icon/general/envelope.svg") as string;
-const icon_camera = require("@icon/media/camera.svg") as string;
+const icon_envelope = require("@icon/envelope.svg") as string;
+const icon_camera = require("@icon/camera.svg") as string;
 
 export default function () {
     return (

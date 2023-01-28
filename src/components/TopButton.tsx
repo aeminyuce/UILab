@@ -6,7 +6,7 @@ import { ui } from '@ui';
 import SVGLoader from '@utils/SVGLoader';
 
 // assets
-const icon_arrow_to_top = require("@icon/general/arrow-to-top.svg") as string;
+const icon_arrow_to_top = require("@icon/arrow-to-top.svg") as string;
 
 import "@less/modules/top-button";
 import "@js/modules/top-button";

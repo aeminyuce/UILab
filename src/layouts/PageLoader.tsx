@@ -3,7 +3,7 @@ import Icon from '@components/Icon';
 import Card from '@components/Card';
 
 // assets
-const icon_loader_line = require("@icon/general/loader-line.svg") as string;
+const icon_loader_line = require("@icon/loader-line.svg") as string;
 
 export default function () {
     return (

@@ -4,7 +4,7 @@ import { ui } from '@ui';
 import SVGLoader from '@utils/SVGLoader';
 
 // assets
-const icon_remove = require("@icon/general/remove.svg") as string;
+const icon_remove = require("@icon/remove.svg") as string;
 
 import "@less/modules/alerts";
 import "@js/modules/alerts";
