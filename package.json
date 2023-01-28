@@ -37,8 +37,8 @@
     "js:product-listing": "rollup js/pages/product-listing.js --file dist/js/product-listing.js & babel dist/js/product-listing.js --out-file dist/js/product-listing.js --no-comments",
     "js:real-estate-details": "rollup js/pages/real-estate-details.js --file dist/js/real-estate-details.js & babel dist/js/real-estate-details.js --out-file dist/js/real-estate-details.js --no-comments",
     "js:javascript": "rollup js/pages/javascript.js --file dist/js/javascript.js & babel dist/js/javascript.js --out-file dist/js/javascript.js --no-comments",
-    "icon:build": "npm run icon:svgo & npm run icon:sprite",
-    "icon:sprite": "svgstore -o dist/icons.svg icon/*/*.svg",
+    "icon:build": "npm run icon:svgo && npm run icon:sprite",
+    "icon:sprite": "svgstore -o dist/icons.svg icon/*.svg",
     "icon:svgo": "svgo -f icon"
   },
   "devDependencies": {
