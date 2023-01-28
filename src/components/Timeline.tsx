@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // assets
-import "@less/modules/timeline";
+import '@less/modules/timeline';
 
 interface TimelineProps {
 
@@ -24,15 +24,12 @@ const Timeline = function (
         const setHide = hide ? ' ui-timeline-no-' + hide : '';
 
         const setClassName = className ? ' ' + className : '';
-
         const classes = 'ui-timeline' + setClassName + setLeft + setHide;
 
         return (
-            <>
-                <ul className={classes} style={style}>
-                    {children}
-                </ul>
-            </>
+            <ul className={classes} style={style}>
+                {children}
+            </ul>
         );
     }
 
@@ -42,6 +39,8 @@ interface TimeLineItemProps {
 
     onClick?: React.ReactEventHandler,
 
+    align?: 'l' | 'r',
+
     className?: string,
     style?: any,
 
@@ -49,14 +48,18 @@ interface TimeLineItemProps {
 
 const TimeLineItem = function (
 
-    { children, onClick, className, style }:TimeLineItemProps) {
+    { children, onClick, align, className, style }:TimeLineItemProps) {
+
+        // classes
+        const setAlign = align ? 'ui-timeline-align-' + align : '';
+
+        const setClassName = className ? ' ' + className : '';
+        const classes = setAlign + setClassName;
 
         return (
-            <>
-                <li className={className} style={style} onClick={onClick}>
-                    {children}
-                </li>
-            </>
+            <li className={classes} style={style} onClick={onClick}>
+                {children}
+            </li>
         );
     }
 

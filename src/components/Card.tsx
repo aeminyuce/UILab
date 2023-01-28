@@ -1,13 +1,14 @@
 import * as React from 'react';
 
 // assets
-import "@less/modules/card";
-import "@js/modules/card";
+import '@less/modules/card';
+import '@js/modules/card';
 
 interface CardProps {
 
     children?: React.ReactNode,
 
+    as?: 'div' | 'span',
     type?: 'info' | 'success' | 'warning' | 'danger',
 
     myRef?: any,
@@ -19,7 +20,7 @@ interface CardProps {
 
 const Card = function (
 
-    { children, type, myRef, className, style }:CardProps) {
+    { children, as, type, myRef, className, style }:CardProps) {
 
         // classes
         const setType = type ? ' ui-card-' + type : '';
@@ -27,13 +28,24 @@ const Card = function (
 
         const classes = 'ui-card' + setType + setClassName;
 
+        // type
+        const setAs = as ? as : 'div';
+
         return (
             <>
-                <div ref={myRef} className={classes} style={style}>
-                    {children}
-                </div>
+                {setAs === 'div' &&
+                    <div ref={myRef} className={classes} style={style}>
+                        {children}
+                    </div>
+                }
+                {setAs === 'span' &&
+                    <span ref={myRef} className={classes} style={style}>
+                        {children}
+                    </span>
+                }
             </>
         );
+
     }
 
 const CardSide = function (
@@ -45,11 +57,9 @@ const CardSide = function (
         const classes = 'ui-card-side' + setClassName;
 
         return (
-            <>
-                <div ref={myRef} className={classes} style={style}>
-                    {children}
-                </div>
-            </>
+            <div ref={myRef} className={classes} style={style}>
+                {children}
+            </div>
         );
     }
 

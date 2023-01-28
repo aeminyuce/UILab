@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 // assets
-import "@less/modules/sidebar";
-import "@js/modules/sidebar";
+import '@less/modules/sidebar';
+import '@js/modules/sidebar';
 
 interface SidebarProps {
 
@@ -26,11 +26,9 @@ const Sidebar = function (
         const classes = 'ui-sidebar' + setPos + setClassName + ' ui-ease-layout ui-ease-in-out';
 
         return (
-            <>
-                <div className={classes} style={style}>
-                    {children}
-                </div>
-            </>
+            <div className={classes} style={style}>
+                {children}
+            </div>
         );
     }
 
@@ -52,11 +50,9 @@ const SidebarContent = function (
         const classes = 'ui-sidebar-content' + setClassName;
 
         return (
-            <>
-                <div className={classes} style={style}>
-                    {children}
-                </div>
-            </>
+            <div className={classes} style={style}>
+                {children}
+            </div>
         );
     }
 

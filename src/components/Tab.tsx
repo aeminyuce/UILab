@@ -4,7 +4,7 @@ import * as React from 'react';
 import '@less/modules/tab';
 import '@js/modules/tab';
 
-let Tab = function () {}
+const Tab = function () {}
 
 interface TabHolderProps {
 
@@ -32,11 +32,9 @@ const TabHolder = function (
         const classes = 'ui-tab-holder' + setAccordion + setClassName + setEase;
 
         return (
-            <>
-                <div className={classes} data-ui-classes={dataClasses} style={style}>
-                    {children}
-                </div>
-            </>
+            <div className={classes} data-ui-classes={dataClasses} style={style}>
+                {children}
+            </div>
         );
     }
 
@@ -62,11 +60,9 @@ const TabContent = function (
         const classes = 'ui-tab-content' + setClassName + setOpen;
 
         return (
-            <>
-                <div className={classes} style={style}>
-                    {children}
-                </div>
-            </>
+            <div className={classes} style={style}>
+                {children}
+            </div>
         );
     }
 

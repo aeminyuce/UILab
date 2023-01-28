@@ -29,7 +29,7 @@ const Dropdown = function (
         const setAlign = align ? ' ui-menu-' + align : '';
         const setPos = pos ? ' ui-menu-pos-' + pos : '';
 
-        let setNav: string = '';
+        let setNav = '';
 
         if (nav) {
             setNav = nav === true ? ' ui-nav' : ' ui-nav ui-nav-full-h';
@@ -39,17 +39,17 @@ const Dropdown = function (
         const classes = 'ui-dropdown' + setHover + setBlock + setAlign + setPos + setNav + setClassName + ' ui-ease-dropdown';
 
         return (
-            <>
-                <div className={classes} style={style}>
-                    {children}
-                </div>
-            </>
+            <div className={classes} style={style}>
+                {children}
+            </div>
         );
     }
 
 interface DropdownMenuProps {
 
     children?: React.ReactNode,
+
+    as?: 'div' | 'span';
 
     hasIcon?: boolean,
 
@@ -60,7 +60,7 @@ interface DropdownMenuProps {
 
 const DropdownMenu = function (
 
-    { children, hasIcon, className, style }:DropdownMenuProps) {
+    { children, as, hasIcon, className, style }:DropdownMenuProps) {
 
         // classes
         const setHasIcon = hasIcon ? ' ui-dropdown-has-icon' : '';
@@ -70,9 +70,21 @@ const DropdownMenu = function (
 
         return (
             <>
-                <ul className={classes} style={style}>
-                    {children}
-                </ul>
+                {as === 'div' &&
+                    <div className={classes} style={style}>
+                        {children}
+                    </div>
+                }
+                {as === 'span' &&
+                    <span className={classes} style={style}>
+                        {children}
+                    </span>
+                }
+                {(as !== 'div' && as !== 'span') &&
+                    <ul className={classes} style={style}>
+                        {children}
+                    </ul>
+            }
             </>
         );
     }
@@ -81,7 +93,6 @@ interface DropdownItemProps {
 
     children?: React.ReactNode,
 
-    select?: boolean,
     selected?: boolean,
 
     className?: string,
@@ -91,7 +102,7 @@ interface DropdownItemProps {
 
 const DropdownItem = function (
 
-    { children, select, selected, className, style }:DropdownItemProps) {
+    { children, selected, className, style }:DropdownItemProps) {
 
         // classes
         const setSelected = selected ? ' ui-selected' : '';
@@ -100,12 +111,12 @@ const DropdownItem = function (
         let classes = setSelected + setClassName;
         classes = classes.replace(/^\s+/g, ''); // remove first spaces
 
+        if (classes === '') { classes = null; }
+
         return (
-            <>
-                <li className={classes} style={style}>
-                    {children}
-                </li>
-            </>
+            <li className={classes} style={style}>
+                {children}
+            </li>
         );
     }
 

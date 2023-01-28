@@ -2,13 +2,16 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 
 // assets
-import "@less/modules/buttons";
+import '@less/modules/buttons';
 
 interface ButtonProps {
 
     children?: React.ReactNode,
 
     onClick?: React.ReactEventHandler,
+    onMouseDown?: React.ReactEventHandler,
+    onMouseUp?: React.ReactEventHandler,
+
     value?: any,
 
     title?: string,
@@ -34,6 +37,8 @@ interface ButtonProps {
     size?: 'lg' | 'sm' | 'xs',
     fluid?: 'md' | 'sm' | 'xs',
 
+    id?: any,
+    form?: any,
     className?: string,
     data?: any,
     style?: any,
@@ -42,7 +47,7 @@ interface ButtonProps {
 
 const Button = function (
 
-    { children, onClick, value, title, to, state, href, target, active, passive, multi, square, ghost, block, myRef, noease, nostyle, type, size, fluid, className, style, data }:ButtonProps) {
+    { children, onClick, onMouseDown, onMouseUp, value, title, to, state, href, target, active, passive, multi, square, ghost, block, myRef, noease, nostyle, type, size, fluid, id, form, className, style, data }:ButtonProps) {
 
         // classes
         const setActive = passive ? ' ui-btn-passive' : '';
@@ -82,26 +87,22 @@ const Button = function (
         return (
             <>
                 {href &&
-                    <>
-                        <a href={href} target={target} title={title} className={classes} {...setData} style={style} onClick={onClick}>
+                    <a href={href} id={id} target={target} title={title} className={classes} {...setData} style={style}
+                        onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
                             {children}
-                        </a>
-                    </>
+                    </a>
                 }
                 {to &&
-                    <>
-                        <Link to={to} state={state} title={title} className={classes} {...setData} style={style} onClick={onClick}>
+                    <Link to={to} id={id} state={state} title={title} className={classes} {...setData} style={style}
+                        onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
                             {children}
-                        </Link>
-                    </>
-
+                    </Link>
                 }
                 {!href && !to &&
-                    <>
-                        <button ref={myRef} type={type} value={value} title={title} className={classes} {...setData} style={style} onClick={onClick}>
+                    <button ref={myRef} id={id} form={form} type={type} value={value} title={title} className={classes} {...setData} style={style}
+                        onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
                             {children}
-                        </button>
-                    </>
+                    </button>
                 }
             </>
         );
@@ -127,13 +128,13 @@ const ButtonWrapper = function (
 
         // classes
         const setEase = ease ? 'ui-ease-' + ease + '-btn' : '';
-
         const setAs = as ? ' ui-btn-' + as : '';
         const setLargeButtons = largeButtons ? ' ui-form-lg' : '';
 
         const setClassName = className ? ' ' + className : '';
 
-        const classes = setEase + setAs + setLargeButtons + setClassName;
+        let classes = setEase + setAs + setLargeButtons + setClassName;
+        if (classes === '') { classes = null; }
 
         // data attributes
         let setData = [];
@@ -146,11 +147,9 @@ const ButtonWrapper = function (
         }
 
         return (
-            <>
-                <div className={classes} {...setData} style={style}>
-                    {children}
-                </div>
-            </>
+            <div className={classes} {...setData} style={style}>
+                {children}
+            </div>
         );
 
     }

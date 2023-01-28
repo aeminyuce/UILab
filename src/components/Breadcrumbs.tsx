@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 
 // assets
-import "@less/modules/breadcrumbs";
+import '@less/modules/breadcrumbs';
 
 interface BreadcrumbsProps {
 
@@ -22,13 +22,11 @@ const Breadcrumbs = function (
         const classes = 'ui-breadcrumbs' + setClassName;
 
         return (
-            <>
-                <nav className={classes} style={style}>
-                    <ul>
-                        {children}
-                    </ul>
-                </nav>
-            </>
+            <nav className={classes} style={style}>
+                <ul>
+                    {children}
+                </ul>
+            </nav>
         );
     }
 
@@ -51,7 +49,7 @@ const BreadcrumbsItem = function (
 
         // classes
         const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-breadcrumbs' + setClassName;
+        const classes = setClassName;
 
         // data attributes
         let setData = [];

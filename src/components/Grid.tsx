@@ -3,10 +3,10 @@ import { useEffect } from 'react';
 import { ui } from '@ui';
 
 // assets
-import "@less/modules/grid";
+import '@less/modules/grid';
 import '@js/modules/grid';
 
-let Grid = function () {}
+const Grid = function () {}
 
 interface GridContainerProps {
 
@@ -17,17 +17,18 @@ interface GridContainerProps {
     noGutter?: 'all' | 'xl' | 'lg' | 'sm' | 'xs',
     fixed?: true | 'xl',
 
+    id?: any,
     className?: string,
     style?: any,
 
 }
 
-let GridContainer = function (
+const GridContainer = function (
 
-    { children, as, noGutter, fixed, className, style }:GridContainerProps) {
+    { children, as, noGutter, fixed, id, className, style }:GridContainerProps) {
 
         // classes
-        let setNoGutter: string = '';
+        let setNoGutter = '';
 
         if (noGutter) {
 
@@ -42,8 +43,8 @@ let GridContainer = function (
             setNoGutter = '';
         }
 
-        let setFixed: string = '';
-        let classes: string = '';
+        let setFixed = '';
+        let classes = '';
 
         if (fixed) {
 
@@ -66,32 +67,24 @@ let GridContainer = function (
         return (
             <>
                 {as === 'div' &&
-                    <>
-                        <div className={classes} style={style}>
-                            {children}
-                        </div>
-                    </>
+                    <div id={id} className={classes} style={style}>
+                        {children}
+                    </div>
                 }
                 {as === 'header' &&
-                    <>
-                        <header className={classes} style={style}>
-                            {children}
-                        </header>
-                    </>
+                    <header id={id} className={classes} style={style}>
+                        {children}
+                    </header>
                 }
                 {as === 'main' &&
-                    <>
-                        <main className={classes} style={style}>
-                            {children}
-                        </main>
-                    </>
+                    <main id={id} className={classes} style={style}>
+                        {children}
+                    </main>
                 }
                 {as === 'footer' &&
-                    <>
-                        <footer className={classes} style={style}>
-                            {children}
-                        </footer>
-                    </>
+                    <footer id={id} className={classes} style={style}>
+                        {children}
+                    </footer>
                 }
             </>
         );
@@ -102,9 +95,12 @@ interface GridRowProps {
 
     children?: React.ReactNode,
 
+    as?: 'dl',
+
+    align?: 'l' | 'c' | 'r',
     fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs',
 
-    gap?: 'no' | 'lg' | 'md' |'sm' | 'xs',
+    gap?: 'no' | 'lg' | 'md' | 'sm' | 'xs',
     gapDir?: 'v' | 'h',
 
     className?: string,
@@ -115,12 +111,13 @@ interface GridRowProps {
 
 const GridRow = function (
 
-    { children, fluid, gap, gapDir, className, data, style }:GridRowProps) {
+    { children, as, align, fluid, gap, gapDir, className, data, style }:GridRowProps) {
 
         // classes
+        const setAlign = align ? ' ui-row-align-' + align : '';
         const setFluid = fluid ? ' ui-' + fluid + '-fluid' : '';
 
-        let setGap: string = '';
+        let setGap = '';
         const setGapDir = gapDir ? '-' + gapDir : '';
 
         if (gap) {
@@ -135,7 +132,7 @@ const GridRow = function (
         }
 
         const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-row' + setFluid + setGap + setClassName;
+        const classes = 'ui-row' + setAlign + setFluid + setGap + setClassName;
 
         // data attributes
         let setData = [];
@@ -149,9 +146,15 @@ const GridRow = function (
 
         return (
             <>
-                <div className={classes} {...setData} style={style}>
-                    {children}
-                </div>
+                {as === 'dl' ?
+                    <dl className={classes} {...setData} style={style}>
+                        {children}
+                    </dl>
+                    :
+                    <div className={classes} {...setData} style={style}>
+                        {children}
+                    </div>
+                }
             </>
         );
     }
@@ -162,25 +165,27 @@ interface GridColProps {
 
     children?: React.ReactNode,
 
+    as?: 'dt' | 'dd',
+
     size: typeof gridSizes | string, // string: for string col names
     offset?: typeof gridSizes,
     push?: typeof gridSizes,
     pull?: typeof gridSizes,
 
-    xl?: typeof gridSizes | {
-        size?: typeof gridSizes, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
+    xl?: typeof gridSizes | string | {
+        size?: typeof gridSizes | string, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
     },
-    lg?: typeof gridSizes | {
-        size?: typeof gridSizes, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
+    lg?: typeof gridSizes | string | {
+        size?: typeof gridSizes | string, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
     },
-    md?: typeof gridSizes | {
-        size?: typeof gridSizes, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
+    md?: typeof gridSizes | string | {
+        size?: typeof gridSizes | string, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
     },
-    sm?: typeof gridSizes | {
-        size?: typeof gridSizes, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
+    sm?: typeof gridSizes | string | {
+        size?: typeof gridSizes | string, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
     },
-    xs?: typeof gridSizes | {
-        size?: typeof gridSizes, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
+    xs?: typeof gridSizes | string | {
+        size?: typeof gridSizes | string, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
     },
 
     fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs',
@@ -198,7 +203,7 @@ interface GridColProps {
 
 const GridCol = function (
 
-    { children, size, offset, push, pull, xl, lg, md, sm, xs, fluid, order, className, data, style }:GridColProps) {
+    { children, as, size, offset, push, pull, xl, lg, md, sm, xs, fluid, order, className, data, style }:GridColProps) {
 
         // classes
         const setSize = size ? 'ui-col-' + size : '';
@@ -270,7 +275,8 @@ const GridCol = function (
             setOrder += order.when ? ' ui-order-' + order.when + '-' + order.position : '';
         }
 
-        const classes = defaults + responsiveSizes + setFluid + setClassName + setOrder;
+        let classes = defaults + responsiveSizes + setFluid + setClassName + setOrder;
+        if (classes === '') { classes = null; }
 
         // data attributes
         let setData = [];
@@ -291,9 +297,21 @@ const GridCol = function (
 
         return (
             <>
-                <div className={classes} {...setData} style={style}>
-                    {children}
-                </div>
+                {!as &&
+                    <div className={classes} {...setData} style={style}>
+                        {children}
+                    </div>
+                }
+                {(as === 'dt') &&
+                    <dt className={classes} {...setData} style={style}>
+                        {children}
+                    </dt>
+                }
+                {(as === 'dd') &&
+                    <dd className={classes} {...setData} style={style}>
+                        {children}
+                    </dd>
+                }
             </>
         );
     }
@@ -320,11 +338,9 @@ const GridStatic = function (
         const classes = 'ui-col-static' + setFluid + setClassName;
 
         return (
-            <>
-                <div className={classes} style={style}>
-                    {children}
-                </div>
-            </>
+            <div className={classes} style={style}>
+                {children}
+            </div>
         );
     }
 

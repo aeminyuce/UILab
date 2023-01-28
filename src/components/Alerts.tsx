@@ -6,10 +6,10 @@ import SVGLoader from '@utils/SVGLoader';
 // assets
 const icon_remove = require("@icon/remove.svg") as string;
 
-import "@less/modules/alerts";
-import "@js/modules/alerts";
+import '@less/modules/alerts';
+import '@js/modules/alerts';
 
-let Alerts = function () {}
+const Alerts = function () {}
 
 interface AlertsDialogProps {
 

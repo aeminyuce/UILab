@@ -3,10 +3,10 @@ import { useEffect } from 'react';
 import { ui } from '@ui';
 
 // assets
-import "@less/modules/donut-chart";
-import "@js/modules/donut-chart";
+import '@less/modules/donut-chart';
+import '@js/modules/donut-chart';
 
-let DonutChart = function () {}
+const DonutChart = function () {}
 
 interface DonutChartHolderProps {
 
@@ -28,7 +28,10 @@ const DonutChartHolder = function (
             // inits
             ui.donutChart.Init();
 
-        }, []); // Runs only first render
+        }); // Runs every render
+
+        // values
+        const setMsg = msg ? msg : '';
 
         // classes
         const setClassName = className ? ' ' + className : '';
@@ -37,19 +40,13 @@ const DonutChartHolder = function (
         const bgClasses = 'ui-donut-chart-bg';
 
         return (
-            <>
-                <div className={classes} style={style}>
-                    {msg &&
-                        <>
-                            <strong>{msg}</strong>
-                        </>
-                    }
-                    <svg viewBox="0 0 160 160">
-                        <circle r="69.85699" cy="80" cx="80" className={bgClasses} />
-                        {children}
-                    </svg>
-                </div>
-            </>
+            <div className={classes} style={style}>
+                <strong>{setMsg}</strong>
+                <svg viewBox="0 0 160 160">
+                    <circle r="69.85699" cy="80" cx="80" className={bgClasses} />
+                    {children}
+                </svg>
+            </div>
         );
     }
 
@@ -67,9 +64,7 @@ const DonutChartItem = function (
     { stroke, percent, title }:DonutChartItemProps) {
 
         return (
-            <>
-                <circle r="69.85699" cy="80" cx="80" stroke={stroke} data-ui-percent={percent} data-ui-title={title} />
-            </>
+            <circle r="69.85699" cy="80" cx="80" stroke={stroke} data-ui-percent={percent} data-ui-title={title} />
         );
     }
 

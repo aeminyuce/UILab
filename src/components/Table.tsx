@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // assets
-import "@less/modules/tables";
+import '@less/modules/tables';
 
 interface TableProps {
 
@@ -46,11 +46,9 @@ const Table = function (
         const classes = 'ui-table' + setClasses + setClassName + ' ui-ease-table';
 
         return (
-            <>
-                <table className={classes} style={style}>
-                    {children}
-                </table>
-            </>
+            <table className={classes} style={style}>
+                {children}
+            </table>
         );
     }
 
@@ -72,11 +70,9 @@ const TableScroll =  function (
         const classes = 'ui-table-scroll' + setClassName;
 
         return (
-            <>
-                <div className={classes} style={style}>
-                    {children}
-                </div>
-            </>
+            <div className={classes} style={style}>
+                {children}
+            </div>
         );
     }
 
@@ -98,11 +94,9 @@ const TableFluid =  function (
         const classes = 'ui-table-fluid' + setClassName;
 
         return (
-            <>
-                <div className={classes} style={style}>
-                    {children}
-                </div>
-            </>
+            <div className={classes} style={style}>
+                {children}
+            </div>
         );
     }
 

@@ -7,8 +7,8 @@ import SVGLoader from '@utils/SVGLoader';
 // assets
 const icon_remove = require("@icon/remove.svg") as string;
 
-import "@less/modules/modal";
-import "@js/modules/modal";
+import '@less/modules/modal';
+import '@js/modules/modal';
 
 interface modalProps {
 
@@ -16,7 +16,7 @@ interface modalProps {
 
     as?: 'div' | 'span',
 
-    id?: string,
+    id?: any,
     className?: string,
     style?: any,
 
@@ -33,18 +33,14 @@ let Modal = function (
         return (
             <>
                 {as === 'div' &&
-                    <>
-                        <div id={id} className={classes} style={style}>
-                            {children}
-                        </div>
-                    </>
+                    <div id={id} className={classes} style={style}>
+                        {children}
+                    </div>
                 }
                 {as === 'span' &&
-                    <>
-                        <span id={id} className={classes} style={style}>
-                            {children}
-                        </span>
-                    </>
+                    <span id={id} className={classes} style={style}>
+                        {children}
+                    </span>
                 }
             </>
         );
@@ -121,7 +117,7 @@ interface modalHeaderProps {
 
     children?: React.ReactNode,
 
-    id?: string,
+    id?: any,
     className?: string,
     style?: any,
 
@@ -136,11 +132,9 @@ const modalHeader = function (
         const classes = 'ui-modal-header' + setClassName;
 
         return (
-            <>
-                <div id={id} className={classes} style={style}>
-                    {children}
-                </div>
-            </>
+            <div id={id} className={classes} style={style}>
+                {children}
+            </div>
         );
 
     }
@@ -149,7 +143,7 @@ interface modalTitleProps {
 
     children?: React.ReactNode,
 
-    id?: string,
+    id?: any,
     className?: string,
     style?: any,
 
@@ -164,11 +158,9 @@ const modalTitle = function (
         const classes = 'ui-h4' + setClassName;
 
         return (
-            <>
-                <h4 id={id} className={classes} style={style}>
-                    {children}
-                </h4>
-            </>
+            <h4 id={id} className={classes} style={style}>
+                {children}
+            </h4>
         );
 
     }
@@ -177,7 +169,7 @@ interface modalButtonsProps {
 
     children?: React.ReactNode,
 
-    id?: string,
+    id?: any,
     className?: string,
     style?: any,
 
@@ -192,11 +184,9 @@ const modalButtons = function (
         const classes = 'ui-modal-butons' + setClassName;
 
         return (
-            <>
-                <div id={id} className={classes} style={style}>
-                    {children}
-                </div>
-            </>
+            <div id={id} className={classes} style={style}>
+                {children}
+            </div>
         );
 
     }
@@ -205,7 +195,7 @@ interface modalContainerProps {
 
     children?: React.ReactNode,
 
-    id?: string,
+    id?: any,
     className?: string,
     style?: any,
 
@@ -220,11 +210,9 @@ const modalContainer = function (
         const classes = 'ui-modal-container' + setClassName;
 
         return (
-            <>
-                <div id={id} className={classes} style={style}>
-                    {children}
-                </div>
-            </>
+            <div id={id} className={classes} style={style}>
+                {children}
+            </div>
         );
 
     }
@@ -233,7 +221,7 @@ interface modalFooterProps {
 
     children?: React.ReactNode,
 
-    id?: string,
+    id?: any,
     className?: string,
     style?: any,
 
@@ -248,11 +236,9 @@ const modalFooter = function (
         const classes = 'ui-modal-footer' + setClassName;
 
         return (
-            <>
-                <div id={id} className={classes} style={style}>
-                    {children}
-                </div>
-            </>
+            <div id={id} className={classes} style={style}>
+                {children}
+            </div>
         );
 
     }

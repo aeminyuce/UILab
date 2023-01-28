@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import { ui } from '@ui';
 
 // assets
-import "@less/modules/header-sticky";
-import "@js/modules/header-sticky";
+import '@less/modules/header-sticky';
+import '@js/modules/header-sticky';
 
 interface HeaderStickyProps {
 
@@ -12,30 +12,29 @@ interface HeaderStickyProps {
 
     className?: string,
     dataClasses?: string,
+    dataSpace?: number,
     style?: any,
 
 }
 
 export default function HeaderSticky(
 
-    { children, className, dataClasses, style }:HeaderStickyProps) {
+    { children, className, dataClasses, dataSpace, style }:HeaderStickyProps) {
 
         useEffect(() => {
 
             // start
             ui.headerSticky.Start();
 
-        }, []); // Runs only first render
+        }); // Runs every render
 
         // classes
         const setClassName = className ? ' ' + className : '';
         const classes = 'ui-header-sticky' + setClassName + ' ui-ease-layout';
 
         return (
-            <>
-                <header className={classes} data-ui-classes={dataClasses} style={style}>
-                    {children}
-                </header>
-            </>
+            <header className={classes} data-ui-classes={dataClasses} data-ui-space={dataSpace} style={style}>
+                {children}
+            </header>
         );
     }

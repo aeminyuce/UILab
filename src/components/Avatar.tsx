@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // assets
-import "@less/modules/avatars";
+import '@less/modules/avatars';
 
 interface AvatarProps {
 
@@ -36,10 +36,8 @@ export default function Avatar(
         }
 
         return (
-            <>
-                <span className={classes} {...setData} style={style}>
-                    {children}
-                </span>
-            </>
+            <span className={classes} {...setData} style={style}>
+                {children}
+            </span>
         );
     }

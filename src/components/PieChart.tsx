@@ -3,10 +3,10 @@ import { useEffect } from 'react';
 import { ui } from '@ui';
 
 // assets
-import "@less/modules/pie-chart";
-import "@js/modules/pie-chart";
+import '@less/modules/pie-chart';
+import '@js/modules/pie-chart';
 
-let PieChart = function () {}
+const PieChart = function () {}
 
 interface PieChartHolderProps {
 
@@ -28,20 +28,18 @@ const PieChartHolder = function (
             // inits
             ui.pieChart.Init();
 
-        }, []); // Runs only first render
+        }); // Runs every render
 
         // classes
         const setClassName = className ? ' ' + className : '';
         const classes = 'ui-pie-chart' + setClassName + ' ui-ease-pie-chart';
 
         return (
-            <>
-                <div className={classes} style={style} data-ui-info={info}>
-                    <ul>
-                        {children}
-                    </ul>
-                </div>
-            </>
+            <div className={classes} style={style} data-ui-info={info}>
+                <ul>
+                    {children}
+                </ul>
+            </div>
         );
     }
 
@@ -50,18 +48,17 @@ interface PieChartItemProps {
     percent: number,
     fill: string,
 
+    customName?: string,
     title?: string,
 
 }
 
 const PieChartItem = function (
 
-    { percent, fill, title }:PieChartItemProps) {
+    { percent, fill, customName, title }:PieChartItemProps) {
 
         return (
-            <>
-                <li data-ui-percent={percent} data-ui-fill={fill} data-ui-title={title}></li>
-            </>
+            <li data-ui-percent={percent} data-ui-custom={customName} data-ui-fill={fill} data-ui-title={title}></li>
         );
     }
 
