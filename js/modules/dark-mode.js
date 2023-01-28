@@ -32,31 +32,31 @@ ui.onload(() => {
     const darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
     if (window.matchMedia) {
-
-        if (darkColorScheme.matches) {
-            mode = ui.darkMode.valueDark;
-        }
-
+        if (darkColorScheme.matches) mode = ui.darkMode.valueDark;
     }
 
     // check stored theme color
     const state = decodeURIComponent(document.cookie).split('; ');
-    for (let i = 0; i < state.length; i++ ) {
+    setTimeout(() => {
 
-        const cookies = state[i].split('=');
+        for (let i = 0; i < state.length; i++ ) {
 
-        let cookie = cookies[0];
-        cookie = cookie.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+            const cookies = state[i].split('=');
 
-        if (cookie === ui.darkMode.cookieName) {
-            mode = cookies[1];
+            let cookie = cookies[0];
+            cookie = cookie.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
+
+            if (cookie === ui.darkMode.cookieName) mode = cookies[1];
+
         }
 
-    }
+        doc.setAttribute(ui.darkMode.dataMod, mode);
+
+
+    }, 0); // wait cookie
 
     // Event Listeners
     const doc = ui.find(ui.darkMode.target)[0];
-    doc.setAttribute(ui.darkMode.dataMod, mode);
 
     const setState = function (mode) { // set theme state
 
@@ -72,7 +72,7 @@ ui.onload(() => {
 
         function () {
 
-            if(darkColorScheme.matches) {
+            if (darkColorScheme.matches) {
                 mode = ui.darkMode.valueDark;
 
             } else {

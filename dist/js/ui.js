@@ -567,21 +567,19 @@ ui.onload(function () {
   var mode = ui.darkMode.valueLight;
   var darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
   if (window.matchMedia) {
-    if (darkColorScheme.matches) {
-      mode = ui.darkMode.valueDark;
-    }
+    if (darkColorScheme.matches) mode = ui.darkMode.valueDark;
   }
   var state = decodeURIComponent(document.cookie).split('; ');
-  for (var i = 0; i < state.length; i++) {
-    var cookies = state[i].split('=');
-    var cookie = cookies[0];
-    cookie = cookie.replace(/^\s+|\s+$/g, '');
-    if (cookie === ui.darkMode.cookieName) {
-      mode = cookies[1];
+  setTimeout(function () {
+    for (var i = 0; i < state.length; i++) {
+      var cookies = state[i].split('=');
+      var cookie = cookies[0];
+      cookie = cookie.replace(/^\s+|\s+$/g, '');
+      if (cookie === ui.darkMode.cookieName) mode = cookies[1];
     }
-  }
+    doc.setAttribute(ui.darkMode.dataMod, mode);
+  }, 0);
   var doc = ui.find(ui.darkMode.target)[0];
-  doc.setAttribute(ui.darkMode.dataMod, mode);
   var setState = function setState(mode) {
     var date = new Date();
     date.setTime(date.getTime() + ui.darkMode.cookieDays * (24 * 60 * 60 * 1000));
