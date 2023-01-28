@@ -8,7 +8,7 @@ const config = {
         filename: '[name].[contenthash].js',
         publicPath: '/', // for page refresh for BrowserRouter
         clean: true, // clean the output directory before emit.
-        chunkFilename: 'js/[name].[contenthash].js',
+        chunkFilename: 'react/[name].[contenthash].js',
     },
     resolve: {
         extensions: ['.js', '.tsx', '.less'], // file types
