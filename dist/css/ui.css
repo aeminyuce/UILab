@@ -2444,6 +2444,9 @@ button.ui-font-underline:hover {
 .ui-round > * > .ui-round-l {
   border-radius: 9px 0 0 9px;
 }
+.ui-no-round {
+  border-radius: 0 !important;
+}
 .ui-circle {
   border-radius: 1000px;
 }
