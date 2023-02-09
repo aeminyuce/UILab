@@ -2006,7 +2006,8 @@ ui.requiredForms = {
   nameIndeterminate: 'ui-indeterminate',
   nameError: 'ui-form-error',
   scrollingTopSpacing: 20,
-  rexMail: '([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}(;|$))'
+  rexMail: '([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}(;|$))',
+  eventShowErr: 'ui:requiredShowErr'
 };
 ui.requiredForms.Start = function () {
   function required(that, type) {
@@ -2029,17 +2030,18 @@ ui.requiredForms.Start = function () {
       }
     };
     checkForms = function checkForms(el) {
+      var showAlertTimer;
       showErr = function showErr() {
+        clearTimeout(showAlertTimer);
+        showAlertTimer = setTimeout(function () {
+          ui.trigger(document, ui.requiredForms.eventShowErr);
+        }, ui.globals.ease);
         if (el.type === 'radio') {
           radios = ui.find('[type="radio"][name="' + that.name + '"]');
           ui.removeClass(radios, ui.requiredForms.nameSuccess);
-        } else {
-          ui.removeClass(el, ui.requiredForms.nameSuccess);
-        }
+        } else ui.removeClass(el, ui.requiredForms.nameSuccess);
         ui.addClass(p, ui.requiredForms.nameError);
-        if (showMsg) {
-          ui.addClass(next, ui.requiredForms.nameShow);
-        }
+        if (showMsg) ui.addClass(next, ui.requiredForms.nameShow);
       };
       if (type !== ui.requiredForms.targetAccept) {
         val = el.value.toLowerCase();

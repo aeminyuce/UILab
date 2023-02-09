@@ -31,7 +31,10 @@ ui.requiredForms = {
 
     // values
     scrollingTopSpacing: 20,
-    rexMail: '([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}(;|$))'
+    rexMail: '([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}(;|$))',
+
+    // custom events
+    eventShowErr: 'ui:requiredShowErr'
 
 };
 
@@ -67,23 +70,26 @@ ui.requiredForms.Start = () => {
 
         checkForms = function (el) {
 
+            let showAlertTimer;
+
             // show error
             showErr = function () {
+
+                clearTimeout(showAlertTimer);
+
+                showAlertTimer = setTimeout(() => {
+                    ui.trigger(document, ui.requiredForms.eventShowErr); // set custom event
+                }, ui.globals.ease);
 
                 if (el.type === 'radio') {
 
                     radios = ui.find('[type="radio"][name="' + that.name + '"]');
                     ui.removeClass(radios, ui.requiredForms.nameSuccess);
 
-                } else {
-                    ui.removeClass(el, ui.requiredForms.nameSuccess);
-                }
+                } else ui.removeClass(el, ui.requiredForms.nameSuccess);
 
                 ui.addClass(p, ui.requiredForms.nameError);
-
-                if (showMsg) {
-                    ui.addClass(next, ui.requiredForms.nameShow);
-                }
+                if (showMsg) ui.addClass(next, ui.requiredForms.nameShow);
 
             };
 
