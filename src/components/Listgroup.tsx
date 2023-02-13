@@ -73,7 +73,9 @@ const ListgroupItem = function (
 
         // classes
         const setClassName = className ? ' ' + className : '';
-        const classes = setClassName;
+
+        let classes = setClassName;
+        classes = classes.replace(/^\s+/g, ''); // remove first spaces
 
         return (
             <li className={classes} style={style}>

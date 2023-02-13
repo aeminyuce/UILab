@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { ui } from '@ui';
+import Alerts from '@components/Alerts';
 import Icon from '@components/Icon';
 
 // assets
@@ -8,6 +10,23 @@ import '@less/modules/forms';
 
 import '@js/modules/required-forms';
 import '@js/modules/forms';
+
+// alerts
+let alertsTimer = null;
+
+ui.on(document, ui.requiredForms.eventShowErr, function () {
+
+    clearTimeout(alertsTimer);
+    alertsTimer = setTimeout(() => {
+
+        Alerts.Message({
+            msg: 'Zorunlu alanları giriniz.',
+            theme: 'danger',
+        });
+
+    }, ui.globals.easeSlow);
+
+});
 
 const Form = function () {}
 
@@ -211,6 +230,7 @@ interface FormSelectProps {
 
     name?: string,
     value?: any,
+    defaultValue?: any,
 
     disabled?: boolean,
     inline?: 'always' | 'xs',
@@ -229,7 +249,7 @@ interface FormSelectProps {
 
 const FormSelect = function (
 
-    { children, onChange, name, value, disabled, light, inline, required, myRef, noease, id, className, style }:FormSelectProps) {
+    { children, onChange, name, value, defaultValue, disabled, light, inline, required, myRef, noease, id, className, style }:FormSelectProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
@@ -256,7 +276,7 @@ const FormSelect = function (
         return (
             <div className={classes} style={style}>
                 <Icon src={icon_angle_down} />
-                <select id={id} ref={myRef} name={name} value={value} onChange={onChange} className={childrenClasses} disabled={disabled}>
+                <select id={id} ref={myRef} name={name} value={value} defaultValue={defaultValue} onChange={onChange} className={childrenClasses} disabled={disabled}>
                     {children}
                 </select>
             </div>
@@ -351,8 +371,14 @@ const FormRequiredMessage = function (
         const setClassName = className ? ' ' + className : '';
         const classes = 'ui-required-msg' + setClassName;
 
+        // styles
+        let styles = {};
+
+        styles = {['maxHeight']: '42px', ...style};
+        styles = {['overflow']: 'hidden', ...styles};
+
         return (
-            <p ref={myRef} className={classes} style={style}>
+            <p ref={myRef} className={classes} style={styles}>
                 {children}
             </p>
         );
