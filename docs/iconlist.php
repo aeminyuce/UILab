@@ -302,6 +302,7 @@
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#sort-number-down"/></svg><span>sort-number-down</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#star"/></svg><span>star</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#star-half"/></svg><span>star-half</span></li>
+                    <li><svg class="ui-icon"><use href="../dist/icons.svg#star-alt"/></svg><span>star-alt</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#table"/></svg><span>table</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#trash"/></svg><span>trash</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#wrench"/></svg><span>wrench</span></li>
