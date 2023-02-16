@@ -2425,7 +2425,7 @@ ui.alerts = {
   dialogMessages: false,
   successBtnValue: 'success',
   errorBtnValue: 'error',
-  messageTimer: 4000,
+  messageTimer: 6000,
   posDefault: 'c',
   posCenter: 'c',
   posTopRight: 'tr',

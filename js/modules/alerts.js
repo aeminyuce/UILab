@@ -53,7 +53,7 @@ ui.alerts = {
     successBtnValue: 'success',
     errorBtnValue: 'error',
 
-    messageTimer: 4000, // wait for atomatically close messages
+    messageTimer: 6000, // wait for atomatically close messages
 
     posDefault: 'c',
 
