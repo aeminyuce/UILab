@@ -526,6 +526,7 @@
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#google-play"/></svg><span>google-play</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#microsoft"/></svg><span>microsoft</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#key-marka"/></svg><span>key-marka</span></li>
+                    <li><svg class="ui-icon"><use href="../dist/icons.svg#halkbank"/></svg><span>halkbank</span></li>
                 </ul>
 
             </div>
