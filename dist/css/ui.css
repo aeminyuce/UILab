@@ -8842,7 +8842,7 @@ button.ui-dialog-custom {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 90;
+  z-index: 18;
 }
 .ui-loading-mask-loader:not(.ui-open) {
   display: none;
