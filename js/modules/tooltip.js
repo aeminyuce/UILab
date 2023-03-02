@@ -358,10 +358,10 @@ ui.tooltip = {
         ui.on(document,
             'click',
 
-            '.' + ui.tooltip.nameContent,
+            '.' + ui.tooltip.target,
 
             function () {
-                tooltipFnc(this, 'hide');
+                ui.tooltip.Close(this);
             });
 
     };

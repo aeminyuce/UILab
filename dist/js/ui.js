@@ -6151,8 +6151,8 @@ ui.tooltip = {
         }, ui.globals.fast / 2);
       }
     });
-    ui.on(document, 'click', '.' + ui.tooltip.nameContent, function () {
-      tooltipFnc(this, 'hide');
+    ui.on(document, 'click', '.' + ui.tooltip.target, function () {
+      ui.tooltip.Close(this);
     });
   };
   ui.onload(ui.tooltip.Start);
