@@ -222,7 +222,7 @@ ui.tooltip = {
 
         title = that.getAttribute(attr);
 
-        if (type === "show" && title !== null && title !== '') {
+        if (type === 'show' && title !== null && title !== '') {
 
             clearTimeout(tooltipOpenedTimer);
             ui.addClass(document, ui.tooltip.nameTooltipOpened);
@@ -280,10 +280,10 @@ ui.tooltip = {
                     var type;
 
                     if (e.type === 'mouseenter') {
-                        type = "show";
+                        type = 'show';
 
                     } else if (e.type === 'mousedown') {
-                        type = "hide";
+                        type = 'hide';
 
                     } else {
 
@@ -336,7 +336,7 @@ ui.tooltip = {
                     clearTimeout(pageTouchmoveTimer);
                     pageTouchmoveTimer = setTimeout(() => {
 
-                        tooltipFnc(that, "show");
+                        tooltipFnc(that, 'show');
                         ui.on(document,
                             'touchend.' + ui.tooltip.eventClose,
 
@@ -353,6 +353,15 @@ ui.tooltip = {
 
                 }
 
+            });
+
+        ui.on(document,
+            'click',
+
+            '.' + ui.tooltip.nameContent,
+
+            function () {
+                tooltipFnc(this, 'hide');
             });
 
     };

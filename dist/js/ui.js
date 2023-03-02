@@ -6083,7 +6083,7 @@ ui.tooltip = {
       attr = 'name';
     }
     title = that.getAttribute(attr);
-    if (type === "show" && title !== null && title !== '') {
+    if (type === 'show' && title !== null && title !== '') {
       clearTimeout(tooltipOpenedTimer);
       ui.addClass(document, ui.tooltip.nameTooltipOpened);
       createFnc(that, title);
@@ -6113,9 +6113,9 @@ ui.tooltip = {
       if (ui.userAgents.desktop) {
         var type;
         if (e.type === 'mouseenter') {
-          type = "show";
+          type = 'show';
         } else if (e.type === 'mousedown') {
-          type = "hide";
+          type = 'hide';
         } else {
           type = 'close';
           ui.trigger(document, ui.tooltip.eventClosed);
@@ -6142,7 +6142,7 @@ ui.tooltip = {
         }
         clearTimeout(pageTouchmoveTimer);
         pageTouchmoveTimer = setTimeout(function () {
-          tooltipFnc(that, "show");
+          tooltipFnc(that, 'show');
           ui.on(document, 'touchend.' + ui.tooltip.eventClose, function () {
             tooltipFnc(that, 'close');
             ui.off(document, 'touchend.' + ui.tooltip.eventClose);
@@ -6150,6 +6150,9 @@ ui.tooltip = {
           });
         }, ui.globals.fast / 2);
       }
+    });
+    ui.on(document, 'click', '.' + ui.tooltip.nameContent, function () {
+      tooltipFnc(this, 'hide');
     });
   };
   ui.onload(ui.tooltip.Start);
