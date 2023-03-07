@@ -76,22 +76,20 @@ const config = {
 module.exports = (env, argv) => {
 
     // shared variables
-    const build = 'build'; // default build folder
-
     const htmlWebpackPlugin = { // add files to build
         template: "./src/index.html",
         favicon: "./public/favicon.ico",
     }
 
+    // set build folder
+    const build = 'build'; // default build folder
+    let setFolder = env.mode ? build + '_' + env.mode : build; // get custom build folders from --env with package.json
+
+    config.output.path = path.resolve(__dirname, setFolder); // when script not serve mode!
+
     // production configs
     if (argv.mode === 'production') {
-
-        // set build folder
-        let setFolder = env.mode ? build + '_' + env.mode : build; // get custom build folders from --env with package.json
-
-        config.output.path = path.resolve(__dirname, setFolder); // when script not serve mode!
         config.devtool = false; // disable when production mode for reducing output file sizes
-
     }
 
     // development configs
@@ -105,9 +103,6 @@ module.exports = (env, argv) => {
             historyApiFallback: true, // enable page refresh for HashRouter
             hot: true, // always make hot refresh when code updated
         };
-
-        // set build folder
-        config.output.path = path.resolve(__dirname, build); // when script not serve mode!
 
     }
 
