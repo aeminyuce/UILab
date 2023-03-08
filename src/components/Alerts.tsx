@@ -13,7 +13,7 @@ const Alerts = function () {}
 
 interface AlertsDialogProps {
 
-    msg: string,
+    msg: any,
 
     success?: string,
     error?: string,
@@ -71,7 +71,7 @@ const AlertsDialog = function (
 
 interface AlertsMessageProps {
 
-    msg: string,
+    msg: any,
 
     pos?: 'tl' | 'tr' | 'bl' | 'br',
     theme?: 'success' | 'warning' | 'danger',

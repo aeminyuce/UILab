@@ -87,13 +87,13 @@ const Button = function (
         return (
             <>
                 {href &&
-                    <a href={href} id={id} target={target} title={title} className={classes} {...setData} style={style}
+                    <a ref={myRef} href={href} id={id} target={target} title={title} className={classes} {...setData} style={style}
                         onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
                             {children}
                     </a>
                 }
                 {to &&
-                    <Link to={to} id={id} state={state} title={title} className={classes} {...setData} style={style}
+                    <Link ref={myRef} to={to} id={id} state={state} title={title} className={classes} {...setData} style={style}
                         onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
                             {children}
                     </Link>

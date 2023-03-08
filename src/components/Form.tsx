@@ -1,6 +1,4 @@
 import * as React from 'react';
-import { ui } from '@ui';
-import Alerts from '@components/Alerts';
 import Icon from '@components/Icon';
 
 // assets
@@ -10,23 +8,6 @@ import '@less/modules/forms';
 
 import '@js/modules/required-forms';
 import '@js/modules/forms';
-
-// alerts
-let alertsTimer = null;
-
-ui.on(document, ui.requiredForms.eventShowErr, function () {
-
-    clearTimeout(alertsTimer);
-    alertsTimer = setTimeout(() => {
-
-        Alerts.Message({
-            msg: 'Zorunlu alanları giriniz.',
-            theme: 'danger',
-        });
-
-    }, ui.globals.easeSlow);
-
-});
 
 const Form = function () {}
 

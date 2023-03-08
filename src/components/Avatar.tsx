@@ -7,7 +7,12 @@ interface AvatarProps {
 
     children?: React.ReactNode,
 
+    onClick?: React.ReactEventHandler,
+    onMouseDown?: React.ReactEventHandler,
+    onMouseUp?: React.ReactEventHandler,
+
     size?: 'lg' | 'sm' | 'xs',
+    title?: string,
 
     className?: string,
     data?: any,
@@ -17,7 +22,7 @@ interface AvatarProps {
 
 export default function Avatar(
 
-    { children, size, className, data, style }:AvatarProps) {
+    { children, onClick, onMouseDown, onMouseUp, size, title, className, data, style }:AvatarProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
@@ -36,8 +41,9 @@ export default function Avatar(
         }
 
         return (
-            <span className={classes} {...setData} style={style}>
-                {children}
+            <span className={classes} {...setData} style={style} title={title}
+                onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
+                    {children}
             </span>
         );
     }

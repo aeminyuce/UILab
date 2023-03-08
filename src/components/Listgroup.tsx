@@ -62,6 +62,10 @@ interface ListgroupItemProps {
 
     children?: React.ReactNode,
 
+    onClick?: React.ReactEventHandler,
+    onMouseDown?: React.ReactEventHandler,
+    onMouseUp?: React.ReactEventHandler,
+
     className?: string,
     style?: any,
 
@@ -69,16 +73,10 @@ interface ListgroupItemProps {
 
 const ListgroupItem = function (
 
-    { children, className, style }:ListgroupItemProps) {
-
-        // classes
-        const setClassName = className ? ' ' + className : '';
-
-        let classes = setClassName;
-        classes = classes.replace(/^\s+/g, ''); // remove first spaces
+    { children, onClick, onMouseDown, onMouseUp, className, style }:ListgroupItemProps) {
 
         return (
-            <li className={classes} style={style}>
+            <li className={className} style={style} onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
                 {children}
             </li>
         );
