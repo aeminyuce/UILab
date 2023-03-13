@@ -209,7 +209,7 @@ ui.forms = {
         ui.on(document,
             'input',
 
-            '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber + ',' + '.' + ui.forms.targetText + ' > .' + ui.forms.nameWord,
+            '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber + ',.' + ui.forms.targetText + ' > .' + ui.forms.nameWord,
 
             function () {
 
@@ -220,9 +220,8 @@ ui.forms = {
                     re = '[0-9]*';
 
                 } else if (ui.hasClass(this, ui.forms.nameWord)) {
-                    re = '^[a-zA-Z\s]*';
-
-                } else this.value = newValues;
+                    re = '[a-zA-Z\s]*';
+                }
 
                 re = new RegExp(re, 'g');
 

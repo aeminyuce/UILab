@@ -1890,14 +1890,14 @@ ui.forms = {
         that.setAttribute('type', 'password');
       }
     });
-    ui.on(document, 'input', '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber + ',' + '.' + ui.forms.targetText + ' > .' + ui.forms.nameWord, function () {
+    ui.on(document, 'input', '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber + ',.' + ui.forms.targetText + ' > .' + ui.forms.nameWord, function () {
       var newValues = '';
       var re = null;
       if (ui.hasClass(this, ui.forms.nameNumber)) {
         re = '[0-9]*';
       } else if (ui.hasClass(this, ui.forms.nameWord)) {
-        re = '^[a-zA-Z\s]*';
-      } else this.value = newValues;
+        re = '[a-zA-Z\s]*';
+      }
       re = new RegExp(re, 'g');
       var getValues = this.value.match(re);
       if (getValues) {
