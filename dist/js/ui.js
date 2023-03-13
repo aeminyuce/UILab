@@ -1803,6 +1803,7 @@ ui.forms = {
   nameClear: 'ui-form-clear',
   nameShowPass: 'ui-pass-toggle',
   nameNumber: 'ui-number',
+  nameWord: 'ui-word',
   nameFormIcon: 'ui-form-icon',
   nameRequired: 'ui-required',
   nameRequiredMsg: 'ui-required-msg',
@@ -1889,26 +1890,24 @@ ui.forms = {
         that.setAttribute('type', 'password');
       }
     });
-    ui.on(document, 'keydown paste', '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber, function () {
-      var _this2 = this;
+    ui.on(document, 'input', '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber + ',' + '.' + ui.forms.targetText + ' > .' + ui.forms.nameWord, function () {
+      var newValues = '';
+      var re = null;
       var maxLength = this.getAttribute('maxlength');
-      setTimeout(function () {
-        var newValues = '';
-        var getValues = _this2.value.match(new RegExp(/[0-9]/, 'g'));
-        if (getValues !== null) {
-          Array.prototype.forEach.call(getValues, function (item) {
-            return newValues += item;
-          });
-        } else {
-          _this2.value = newValues;
-          return false;
-        }
-        if (maxLength !== null) {
-          var re = '[0-9]{1,' + maxLength + '}';
-          re = new RegExp(re, 'g');
-          _this2.value = newValues.match(re)[0];
-        } else _this2.value = newValues;
-      }, 0);
+      if (ui.hasClass(this, ui.forms.nameNumber)) {
+        re = '[0-9]*';
+      } else if (ui.hasClass(this, ui.forms.nameWord)) {
+        re = '^[a-zA-Z\s]*';
+      } else this.value = newValues;
+      re = maxLength ? re + '{1,' + maxLength + '}' : re;
+      re = new RegExp(re, 'g');
+      var getValues = this.value.match(re);
+      if (getValues) {
+        Array.prototype.forEach.call(getValues, function (item) {
+          return newValues += item;
+        });
+        this.value = newValues;
+      }
     });
     if (ui.userAgents.mobile) {
       ui.on(document, 'mousedown', '[class*="' + ui.forms.nameFormIcon + '"] > button.' + ui.forms.nameIcon + ',' + '[class*="' + ui.forms.nameFormIcon + '"] > input.' + ui.forms.nameIcon, function (e) {
@@ -2526,7 +2525,7 @@ ui.alerts = {
             ui.addClass(dialog, ui.alerts.nameShowEase);
           }, 10);
           ui.on('.' + ui.alerts.nameDialogBtnHolder + ' button', 'click', function () {
-            var _this3 = this;
+            var _this2 = this;
             var theme = '';
             if (ui.hasClass(this, ui.alerts.nameDialogSuccess)) {
               theme = ui.alerts.themeSuccess;
@@ -2550,7 +2549,7 @@ ui.alerts = {
               }
               if (props.callback !== undefined) {
                 setTimeout(function () {
-                  props.callback.call(_this3, _this3.value);
+                  props.callback.call(_this2, _this2.value);
                 }, ui.globals.ease * 2);
               }
             }, msgTimer);
@@ -2650,9 +2649,9 @@ ui.alerts = {
       }, 10);
     };
     ui.on(document, 'click', '.' + ui.alerts.targetMsg, function () {
-      var _this4 = this;
+      var _this3 = this;
       Array.prototype.forEach.call(messageQueue, function (el, i) {
-        if (el[0] === _this4) {
+        if (el[0] === _this3) {
           messageQueue.splice(i, 1);
         }
       });
@@ -3072,7 +3071,7 @@ ui.calendar.Start = function () {
     ui.off(target, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
   }
   ui.on(document, 'focus', '.' + ui.calendar.namePicker + ' > [type="text"]', function () {
-    var _this5 = this;
+    var _this4 = this;
     var form = this.parentElement;
     if (ui.find('.' + ui.calendar.target, form).length > 0) {
       return;
@@ -3115,7 +3114,7 @@ ui.calendar.Start = function () {
         return;
       }
       if (ev.button !== 2) {
-        pickerCloseFnc('default', _this5);
+        pickerCloseFnc('default', _this4);
       }
     });
     ui.on(this, 'keydown.' + ui.calendar.eventClose, function (ev) {
@@ -4872,7 +4871,7 @@ ui.photoGallery = {
       });
     }
     ui.on(document, 'touchmove.' + ui.photoGallery.eventGalleryTouch + ' touchend', '.' + ui.photoGallery.targetGallery + ' a.' + ui.photoGallery.targetPhotos, function (e) {
-      var _this6 = this;
+      var _this5 = this;
       if (e.type === 'touchmove') {
         pageTouchmove = true;
       }
@@ -4880,7 +4879,7 @@ ui.photoGallery = {
         clearTimeout(pageTouchmoveTimer);
         pageTouchmoveTimer = setTimeout(function () {
           if (!pageTouchmove) {
-            galleryFnc(e, _this6);
+            galleryFnc(e, _this5);
           }
           pageTouchmove = false;
         }, ui.globals.fast / 2);
@@ -5164,7 +5163,7 @@ ui.imgUpload.Start = function () {
     imported = [];
   });
   ui.on(document, 'dragenter', '.' + ui.imgUpload.target, function (e) {
-    var _this7 = this;
+    var _this6 = this;
     e.preventDefault();
     e.stopPropagation();
     ui.addClass(this, ui.imgUpload.nameDrop);
@@ -5173,9 +5172,9 @@ ui.imgUpload.Start = function () {
       ev.stopPropagation();
       var uploader = ui.closest(ev.target, '.' + ui.imgUpload.target)[0];
       if (uploader === undefined) {
-        ui.removeClass(_this7, ui.imgUpload.nameDrop);
+        ui.removeClass(_this6, ui.imgUpload.nameDrop);
       } else {
-        ui.addClass(_this7, ui.imgUpload.nameDrop);
+        ui.addClass(_this6, ui.imgUpload.nameDrop);
       }
     });
   });
@@ -5218,11 +5217,11 @@ ui.imgUpload.Start = function () {
     return blob;
   }
   ui.on(document, 'submit', '.' + ui.imgUpload.target + ' form', function (e) {
-    var _this8 = this;
+    var _this7 = this;
     e.preventDefault();
     var uploaderFnc = function uploaderFnc() {
       var formData = new FormData();
-      var uploader = ui.closest(_this8, '.' + ui.imgUpload.target)[0];
+      var uploader = ui.closest(_this7, '.' + ui.imgUpload.target)[0];
       Array.prototype.forEach.call(ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList, uploader), function (el, i) {
         var file = ui.find('.' + ui.imgUpload.targetImages + ' img', el)[0];
         formData.append(ui.imgUpload.formDataID + '[' + i + ']', file.id);
@@ -5242,7 +5241,7 @@ ui.imgUpload.Start = function () {
       ui.addClass(uploader, ui.imgUpload.nameUploading);
       ui.ajax({
         type: 'POST',
-        url: _this8.action,
+        url: _this7.action,
         data: formData,
         callback: function callback(status, response) {
           ui.removeClass(uploader, ui.imgUpload.nameUploading);
@@ -6372,7 +6371,7 @@ ui.donutChart.Start = function () {
   };
   ui.donutChart.Init();
   ui.on(document, 'mouseenter mouseleave touchend', '.' + ui.donutChart.target + ' circle[' + ui.donutChart.dataTitle + ']', function (e) {
-    var _this9 = this;
+    var _this8 = this;
     var chart = ui.closest(this, '.' + ui.donutChart.target)[0];
     var msg = ui.find(ui.donutChart.tagMsg, chart)[0];
     var circle = ui.find('circle', chart);
@@ -6395,7 +6394,7 @@ ui.donutChart.Start = function () {
         if (title !== null && title !== '') {
           msg.innerHTML = title;
         }
-        ui.addClass(_this9, ui.donutChart.nameSelected);
+        ui.addClass(_this8, ui.donutChart.nameSelected);
       }, 0);
     }
   });

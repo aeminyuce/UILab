@@ -86,7 +86,7 @@
                     <div class="ui-col-9">
                         <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form ui-form-inline-xs">
                             <svg class="ui-icon"><use href="../dist/icons.svg#phone"/></svg>
-                            <input class="ui-number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
+                            <input class="ui-number" type="text" placeholder="5xxxxxxxxx" minlength="10" maxlength="10">
                         </div>
                     </div>
 
@@ -238,7 +238,7 @@
                         <div class="ui-col-9">
                             <div class="ui-input ui-form-icon-l ui-round ui-border-dual ui-ease-form ui-form-inline-xs">
                                 <svg class="ui-icon"><use href="../dist/icons.svg#phone"/></svg>
-                                <input class="ui-number" type="text" placeholder="123-123-1234" minlength="12" maxlength="12">
+                                <input class="ui-number" type="text" placeholder="5xxxxxxxxx" minlength="10" maxlength="10">
                             </div>
                         </div>
 
@@ -1723,11 +1723,20 @@
                 <h3 class="ui-h3">Special Forms</h3>
                 <div class="ui-row ui-p-30-b">
                     <div class="ui-col-3">
-                        <label class="ui-form-info">Number Form</label>
+                        <label class="ui-form-info">Number Only Form</label>
                     </div>
                     <div class="ui-col-9">
                         <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                            <input class="ui-number" type="text" placeholder="Number">
+                            <input class="ui-number" type="text" placeholder="Type Number Only">
+                        </div>
+                    </div>
+
+                    <div class="ui-col-3">
+                        <label class="ui-form-info">Word Only Form</label>
+                    </div>
+                    <div class="ui-col-9">
+                        <div class="ui-input ui-round ui-border-dual ui-ease-form">
+                            <input class="ui-word" type="text" placeholder="Type Word Only">
                         </div>
                     </div>
 

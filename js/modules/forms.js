@@ -24,6 +24,7 @@ ui.forms = {
 
     nameShowPass: 'ui-pass-toggle',
     nameNumber: 'ui-number',
+    nameWord: 'ui-word',
 
     nameFormIcon: 'ui-form-icon',
 
@@ -204,43 +205,38 @@ ui.forms = {
 
             });
 
-        // number
+        // number and text only forms
         ui.on(document,
-            'keydown paste',
+            'input',
 
-            '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber,
+            '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber + ',' + '.' + ui.forms.targetText + ' > .' + ui.forms.nameWord,
 
             function () {
 
+                let newValues = '';
+                let re = null;
+
                 const maxLength = this.getAttribute('maxlength');
 
-                setTimeout(() => {
+                if (ui.hasClass(this, ui.forms.nameNumber)) {
+                    re = '[0-9]*';
 
-                    let newValues = '';
-                    const getValues = this.value.match(new RegExp(/[0-9]/, 'g'));
+                } else if (ui.hasClass(this, ui.forms.nameWord)) {
+                    re = '^[a-zA-Z\s]*';
 
-                    if (getValues !== null) {
+                } else this.value = newValues;
 
-                        Array.prototype.forEach.call(getValues,
-                            item => newValues += item);
+                re = maxLength ? re + '{1,' + maxLength + '}' : re;
+                re = new RegExp(re, 'g');
 
-                    } else {
+                const getValues = this.value.match(re);
 
-                        this.value = newValues;
-                        return false;
+                if (getValues) {
 
-                    }
+                    Array.prototype.forEach.call(getValues, item => newValues += item);
+                    this.value = newValues;
 
-                    if (maxLength !== null) {
-
-                        let re = '[0-9]{1,' + maxLength + '}';
-                        re = new RegExp(re, 'g');
-
-                        this.value = newValues.match(re)[0];
-
-                    } else this.value = newValues;
-
-                }, 0);
+                }
 
             });
 
