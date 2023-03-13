@@ -216,8 +216,6 @@ ui.forms = {
                 let newValues = '';
                 let re = null;
 
-                const maxLength = this.getAttribute('maxlength');
-
                 if (ui.hasClass(this, ui.forms.nameNumber)) {
                     re = '[0-9]*';
 
@@ -226,7 +224,6 @@ ui.forms = {
 
                 } else this.value = newValues;
 
-                re = maxLength ? re + '{1,' + maxLength + '}' : re;
                 re = new RegExp(re, 'g');
 
                 const getValues = this.value.match(re);
