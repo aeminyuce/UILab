@@ -1,8 +1,9 @@
 import * as React from 'react';
 
+const gridSizes = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 interface SpacerProps {
 
-    size: 1 | 2 | 3 | 4 | 5 | 10 | 15 | 20 | 25 | 30,
+    size: typeof gridSizes,
 
     className?: string,
     style?: any,

@@ -43,8 +43,7 @@ interface FormInputProps {
 
     children?: React.ReactNode,
 
-    onChange?: React.ReactEventHandler,
-    onKeyPress?: React.ReactEventHandler,
+    onInput?: React.ReactEventHandler,
 
     type?: 'text' | 'password' | 'date' | 'datetime-local' | 'month' | 'week' | 'email' | 'tel' | 'time',
     name?: string,
@@ -61,6 +60,7 @@ interface FormInputProps {
     multiple?: boolean,
     readOnly?: boolean,
     number?: boolean,
+    word?: boolean,
     required?: boolean,
     hasClear?: boolean,
 
@@ -81,7 +81,7 @@ interface FormInputProps {
 
 const FormInput = function (
 
-    { children, onChange, onKeyPress, type, name, value, defaultValue, placeholder, disabled, light, inline, autoComplete, icons, multiple, readOnly, number, required, hasClear, minlength, maxlength, min, max, myRef, noease, id, className, style }:FormInputProps) {
+    { children, onInput, type, name, value, defaultValue, placeholder, disabled, light, inline, autoComplete, icons, multiple, readOnly, word, number, required, hasClear, minlength, maxlength, min, max, myRef, noease, id, className, style }:FormInputProps) {
 
         // types
         const setType = type ? type : 'text';
@@ -118,9 +118,10 @@ const FormInput = function (
 
         // children classes
         const setNumber = number ? ' ui-number' : '';
+        const setWord = word ? ' ui-word' : '';
         const setRequired = required ? ' ui-required' : '';
 
-        let childrenClasses = setNumber + setRequired;
+        let childrenClasses = setNumber + setWord + setRequired;
         childrenClasses = childrenClasses.replace(/^\s+/g, ''); // remove first spaces
 
         return (
@@ -129,14 +130,15 @@ const FormInput = function (
                 <input id={id} ref={myRef} type={setType} name={name} value={value} defaultValue={defaultValue} placeholder={placeholder}
                     autoComplete={autoComplete} className={childrenClasses} disabled={disabled} multiple={multiple} readOnly={readOnly}
                     minLength={minlength} maxLength={maxlength} min={min} max={max}
-                    onChange={onChange} onKeyPress={onKeyPress}/>
+                    onInput={onInput} />
             </div>
         );
     }
 
 interface FormTextareaProps {
 
-    onChange?: React.ReactEventHandler,
+    onInput?: React.ReactEventHandler,
+
     rows?: number,
     cols?: number,
 
@@ -166,7 +168,7 @@ interface FormTextareaProps {
 
 const FormTextarea = function (
 
-    { onChange, rows, cols, name, value, placeholder, disabled, light, inline, readOnly, required, minlength, maxlength, myRef, toggle, noease, counter, id, className, style }:FormTextareaProps) {
+    { onInput, rows, cols, name, value, placeholder, disabled, light, inline, readOnly, required, minlength, maxlength, myRef, toggle, noease, counter, id, className, style }:FormTextareaProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
@@ -197,7 +199,7 @@ const FormTextarea = function (
                 <textarea id={id} ref={myRef} name={name} placeholder={placeholder} className={childrenClasses} disabled={disabled}
                     rows={rows} cols={cols} readOnly={readOnly} value={value}
                     minLength={minlength} maxLength={maxlength}
-                    onChange={onChange}>
+                    onInput={onInput}>
                 </textarea>
             </div>
         );
@@ -207,7 +209,7 @@ interface FormSelectProps {
 
     children?: React.ReactNode,
 
-    onChange?: React.ReactEventHandler,
+    onInput?: React.ReactEventHandler,
 
     name?: string,
     value?: any,
@@ -230,7 +232,7 @@ interface FormSelectProps {
 
 const FormSelect = function (
 
-    { children, onChange, name, value, defaultValue, disabled, light, inline, required, myRef, noease, id, className, style }:FormSelectProps) {
+    { children, onInput, name, value, defaultValue, disabled, light, inline, required, myRef, noease, id, className, style }:FormSelectProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
@@ -257,7 +259,7 @@ const FormSelect = function (
         return (
             <div className={classes} style={style}>
                 <Icon src={icon_angle_down} />
-                <select id={id} ref={myRef} name={name} value={value} defaultValue={defaultValue} onChange={onChange} className={childrenClasses} disabled={disabled}>
+                <select id={id} ref={myRef} name={name} value={value} defaultValue={defaultValue} onInput={onInput} className={childrenClasses} disabled={disabled}>
                     {children}
                 </select>
             </div>
@@ -269,7 +271,7 @@ interface FormCheckProps {
     type?: 'radio' | 'switch',
     label?: any,
 
-    onChange?: React.ReactEventHandler,
+    onInput?: React.ReactEventHandler,
 
     id?: any,
     name?: string,
@@ -290,7 +292,7 @@ interface FormCheckProps {
 
 const FormCheck = function (
 
-    { type, label, onChange, id, name, value, checked, disabled, indeterminate, light, required, noease, className, style }:FormCheckProps) {
+    { type, label, onInput, id, name, value, checked, disabled, indeterminate, light, required, noease, className, style }:FormCheckProps) {
 
         // types
         const setType = type === 'radio' ? 'radio' : 'checkbox';
@@ -325,7 +327,7 @@ const FormCheck = function (
         return (
             <label className="ui-label">
                 <span className={classes} style={style}>
-                    <input id={id} name={name} value={value} type={setType} onChange={onChange} checked={checked} className={childrenClasses} disabled={disabled} />
+                    <input id={id} name={name} value={value} type={setType} onInput={onInput} checked={checked} className={childrenClasses} disabled={disabled} />
                     <i className={stateClasses}></i>
                 </span>
                 {label}

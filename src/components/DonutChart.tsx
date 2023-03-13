@@ -53,8 +53,8 @@ const DonutChartHolder = function (
 interface DonutChartItemProps {
 
     stroke: string,
-    percent: number,
 
+    percent: number,
     title?: string,
 
 }
