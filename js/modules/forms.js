@@ -42,7 +42,10 @@ ui.forms = {
     nameIcon: 'ui-icon',
 
     // tags
-    tagFileInfo: 'i'
+    tagFileInfo: 'i',
+
+    // values
+    customLetters : 'ığüşöçİĞÜŞÖÇ',
 
 };
 
@@ -220,7 +223,7 @@ ui.forms = {
                     re = '[0-9]*';
 
                 } else if (ui.hasClass(this, ui.forms.nameWord)) {
-                    re = '[a-zA-Z\s]*';
+                    re = '[a-zA-Z' + ui.forms.customLetters + '\s]*';
                 }
 
                 re = new RegExp(re, 'g');

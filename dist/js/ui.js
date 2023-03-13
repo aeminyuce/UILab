@@ -1812,7 +1812,8 @@ ui.forms = {
   nameOpen: 'ui-open',
   nameOpenEase: 'ui-open-ease',
   nameIcon: 'ui-icon',
-  tagFileInfo: 'i'
+  tagFileInfo: 'i',
+  customLetters: 'ığüşöçİĞÜŞÖÇ'
 };
 (function () {
   var clearForms;
@@ -1896,7 +1897,7 @@ ui.forms = {
       if (ui.hasClass(this, ui.forms.nameNumber)) {
         re = '[0-9]*';
       } else if (ui.hasClass(this, ui.forms.nameWord)) {
-        re = '[a-zA-Z\s]*';
+        re = '[a-zA-Z' + ui.forms.customLetters + '\s]*';
       }
       re = new RegExp(re, 'g');
       var getValues = this.value.match(re);
