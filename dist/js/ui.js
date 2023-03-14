@@ -1895,18 +1895,17 @@ ui.forms = {
       var newValues = '';
       var re = null;
       if (ui.hasClass(this, ui.forms.nameNumber)) {
-        re = '[0-9]*';
+        re = '[0-9]';
       } else if (ui.hasClass(this, ui.forms.nameWord)) {
-        re = '[a-zA-Z' + ui.forms.customLetters + '\s]*';
+        re = '[a-zA-Z ' + ui.forms.customLetters + '.-]';
       }
       re = new RegExp(re, 'g');
       var getValues = this.value.match(re);
-      if (getValues) {
-        Array.prototype.forEach.call(getValues, function (item) {
-          return newValues += item;
-        });
-        this.value = newValues;
-      }
+      if (getValues) Array.prototype.forEach.call(getValues, function (item) {
+        return newValues += item;
+      });
+      newValues = newValues.replace(/\s\s/g, ' ');
+      this.value = newValues;
     });
     if (ui.userAgents.mobile) {
       ui.on(document, 'mousedown', '[class*="' + ui.forms.nameFormIcon + '"] > button.' + ui.forms.nameIcon + ',' + '[class*="' + ui.forms.nameFormIcon + '"] > input.' + ui.forms.nameIcon, function (e) {

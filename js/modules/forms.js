@@ -220,22 +220,19 @@ ui.forms = {
                 let re = null;
 
                 if (ui.hasClass(this, ui.forms.nameNumber)) {
-                    re = '[0-9]*';
+                    re = '[0-9]';
 
                 } else if (ui.hasClass(this, ui.forms.nameWord)) {
-                    re = '[a-zA-Z' + ui.forms.customLetters + '\s]*';
+                    re = '[a-zA-Z ' + ui.forms.customLetters + '.-]';
                 }
 
                 re = new RegExp(re, 'g');
 
                 const getValues = this.value.match(re);
+                if (getValues) Array.prototype.forEach.call(getValues, item => newValues += item);
 
-                if (getValues) {
-
-                    Array.prototype.forEach.call(getValues, item => newValues += item);
-                    this.value = newValues;
-
-                }
+                newValues = newValues.replace(/\s\s/g, ' '); // remove double spaces
+                this.value = newValues;
 
             });
 
