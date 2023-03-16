@@ -564,6 +564,7 @@ ui.onload(function () {
   if (ui.userAgents.ie) {
     return;
   }
+  var autoSwitcher = true;
   var mode = ui.darkMode.valueLight;
   var darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
   if (window.matchMedia) {
@@ -575,7 +576,10 @@ ui.onload(function () {
       var cookies = state[i].split('=');
       var cookie = cookies[0];
       cookie = cookie.replace(/^\s+|\s+$/g, '');
-      if (cookie === ui.darkMode.cookieName) mode = cookies[1];
+      if (cookie === ui.darkMode.cookieName) {
+        mode = cookies[1];
+        autoSwitcher = false;
+      }
     }
     doc.setAttribute(ui.darkMode.dataMod, mode);
   }, 0);
@@ -586,28 +590,23 @@ ui.onload(function () {
     document.cookie = ui.darkMode.cookieName + '=' + mode + ';' + "expires=" + date.toUTCString() + ';domain=' + window.location.host + ';path=/';
   };
   ui.on(darkColorScheme, 'change', function () {
-    if (darkColorScheme.matches) {
-      mode = ui.darkMode.valueDark;
-    } else {
-      mode = ui.darkMode.valueLight;
+    if (autoSwitcher) {
+      mode = darkColorScheme.matches ? ui.darkMode.valueDark : ui.darkMode.valueLight;
+      doc.setAttribute(ui.darkMode.dataMod, mode);
+      setState(mode);
     }
-    doc.setAttribute(ui.darkMode.dataMod, mode);
-    setState(mode);
   });
   ui.on(document, 'click', '.' + ui.darkMode.nameToggle, function (e) {
     e.preventDefault();
     var current = doc.getAttribute(ui.darkMode.dataMod);
     setTimeout(function () {
       if (current !== null && current !== '') {
-        if (current === ui.darkMode.valueDark) {
-          mode = ui.darkMode.valueLight;
-        } else {
-          mode = ui.darkMode.valueDark;
-        }
+        mode = current === ui.darkMode.valueDark ? ui.darkMode.valueLight : ui.darkMode.valueDark;
       }
       doc.setAttribute(ui.darkMode.dataMod, mode);
       setState(mode);
     }, 0);
+    autoSwitcher = false;
   });
 });
 ui.effects = {

@@ -27,8 +27,11 @@ ui.onload(() => {
 
     if (ui.userAgents.ie) { return; } // change event listener for darkColorScheme not supported on IE!
 
+    let autoSwitcher = true;
+
     // set current theme color
     let mode = ui.darkMode.valueLight;
+
     const darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
     if (window.matchMedia) {
@@ -37,6 +40,7 @@ ui.onload(() => {
 
     // check stored theme color
     const state = decodeURIComponent(document.cookie).split('; ');
+
     setTimeout(() => {
 
         for (let i = 0; i < state.length; i++ ) {
@@ -46,7 +50,12 @@ ui.onload(() => {
             let cookie = cookies[0];
             cookie = cookie.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
 
-            if (cookie === ui.darkMode.cookieName) mode = cookies[1];
+            if (cookie === ui.darkMode.cookieName) {
+
+                mode = cookies[1];
+                autoSwitcher = false;
+
+            }
 
         }
 
@@ -72,15 +81,14 @@ ui.onload(() => {
 
         function () {
 
-            if (darkColorScheme.matches) {
-                mode = ui.darkMode.valueDark;
+            if (autoSwitcher) {
 
-            } else {
-                mode= ui.darkMode.valueLight;
+                mode = darkColorScheme.matches ? ui.darkMode.valueDark : ui.darkMode.valueLight;
+
+                doc.setAttribute(ui.darkMode.dataMod, mode);
+                setState(mode);
+
             }
-
-            doc.setAttribute(ui.darkMode.dataMod, mode);
-            setState(mode);
 
         });
 
@@ -94,25 +102,20 @@ ui.onload(() => {
             e.preventDefault();
 
             // toggle theme color
-
             const current = doc.getAttribute(ui.darkMode.dataMod);
+
             setTimeout(() => {
 
                 if (current !== null && current !== '') {
-
-                    if (current === ui.darkMode.valueDark) {
-                        mode = ui.darkMode.valueLight;
-
-                    } else {
-                        mode = ui.darkMode.valueDark;
-                    }
-
+                    mode = (current === ui.darkMode.valueDark) ? ui.darkMode.valueLight : ui.darkMode.valueDark;
                 }
 
                 doc.setAttribute(ui.darkMode.dataMod, mode);
                 setState(mode);
 
             }, 0);
+
+            autoSwitcher = false;
 
         });
 

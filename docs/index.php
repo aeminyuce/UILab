@@ -73,6 +73,10 @@
                     <svg class="ui-icon ui-visible-dark"><use href="../dist/icons.svg#moon"/></svg>
                     <svg class="ui-icon ui-visible-light"><use href="../dist/icons.svg#sun"/></svg>
                 </button>
+                <button title="Print" class="ui-btn ui-btn-square ui-btn-ghost ui-circle ui-icons-no-opacity ui-float-r ui-ease-btn"
+                    onClick="javascript: window.print()">
+                        <svg class="ui-icon"><use href="../dist/icons.svg#print"/></svg>
+                </button>
                 <a href="index.php" class="ui-btn ui-btn-square ui-btn-ghost ui-circle ui-m-10-r ui-ease-btn">
                     <svg class="ui-icon ui-icon-hybrid ui-no-opacity"><use href="../dist/icons.svg#long-arrow-left"/></svg>
                 </a>
@@ -99,6 +103,7 @@
     <svg class="ui-icon ui-visible-dark"><use href="../dist/icons.svg#moon"/></svg>
     <svg class="ui-icon ui-visible-light"><use href="../dist/icons.svg#sun"/></svg>
 </button>
+
 <?php
         }
 
