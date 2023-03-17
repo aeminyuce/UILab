@@ -3404,14 +3404,10 @@ ui.carousel = {
     var col = getCols(i);
     if (direction === 'next') {
       counts[i] += 1;
-      if (counts[i] > contents.length - col) {
-        counts[i] = 0;
-      }
+      if (counts[i] > contents.length - col) counts[i] = 0;
     } else if (direction === 'prev') {
       counts[i] -= 1;
-      if (counts[i] < 0) {
-        counts[i] = 0;
-      }
+      if (counts[i] < 0) counts[i] = contents.length - col;
     }
     that.setAttribute(ui.carousel.dataContent, counts[i] + 1);
     ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
