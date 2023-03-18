@@ -75,7 +75,6 @@
   },
   "dependencies": {
     "react": "latest",
-    "react-app-polyfill": "latest",
     "react-dom": "latest",
     "react-router-dom": "latest"
   }
