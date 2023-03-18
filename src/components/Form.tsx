@@ -43,10 +43,13 @@ interface FormInputProps {
 
     children?: React.ReactNode,
 
+    onChange?: React.ReactEventHandler,
     onInput?: React.ReactEventHandler,
+    onBlur?: React.ReactEventHandler,
 
     type?: 'text' | 'password' | 'date' | 'datetime-local' | 'month' | 'week' | 'email' | 'tel' | 'time',
     name?: string,
+    tabIndex?: number,
     value?: any,
     defaultValue?: any,
     placeholder?: string,
@@ -81,7 +84,7 @@ interface FormInputProps {
 
 const FormInput = function (
 
-    { children, onInput, type, name, value, defaultValue, placeholder, disabled, light, inline, autoComplete, icons, multiple, readOnly, word, number, required, hasClear, minlength, maxlength, min, max, myRef, noease, id, className, style }:FormInputProps) {
+    { children, onChange, onInput, onBlur, type, name, tabIndex, value, defaultValue, placeholder, disabled, light, inline, autoComplete, icons, multiple, readOnly, word, number, required, hasClear, minlength, maxlength, min, max, myRef, noease, id, className, style }:FormInputProps) {
 
         // types
         const setType = type ? type : 'text';
@@ -127,22 +130,24 @@ const FormInput = function (
         return (
             <div className={classes} style={style}>
                 {children}
-                <input id={id} ref={myRef} type={setType} name={name} value={value} defaultValue={defaultValue} placeholder={placeholder}
+                <input id={id} ref={myRef} type={setType} name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} placeholder={placeholder}
                     autoComplete={autoComplete} className={childrenClasses} disabled={disabled} multiple={multiple} readOnly={readOnly}
                     minLength={minlength} maxLength={maxlength} min={min} max={max}
-                    onInput={onInput} />
+                    onChange={onChange} onInput={onInput} onBlur={onBlur} />
             </div>
         );
     }
 
 interface FormTextareaProps {
 
+    onChange?: React.ReactEventHandler,
     onInput?: React.ReactEventHandler,
 
     rows?: number,
     cols?: number,
 
     name?: string,
+    tabIndex?: number,
     value?: any,
     placeholder?: string,
     disabled?: boolean,
@@ -168,7 +173,7 @@ interface FormTextareaProps {
 
 const FormTextarea = function (
 
-    { onInput, rows, cols, name, value, placeholder, disabled, light, inline, readOnly, required, minlength, maxlength, myRef, toggle, noease, counter, id, className, style }:FormTextareaProps) {
+    { onChange, onInput, rows, cols, name, tabIndex, value, placeholder, disabled, light, inline, readOnly, required, minlength, maxlength, myRef, toggle, noease, counter, id, className, style }:FormTextareaProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
@@ -196,10 +201,10 @@ const FormTextarea = function (
 
         return (
             <div className={classes} style={style} data-ui-counter={counter}>
-                <textarea id={id} ref={myRef} name={name} placeholder={placeholder} className={childrenClasses} disabled={disabled}
+                <textarea id={id} ref={myRef} name={name} tabIndex={tabIndex} placeholder={placeholder} className={childrenClasses} disabled={disabled}
                     rows={rows} cols={cols} readOnly={readOnly} value={value}
                     minLength={minlength} maxLength={maxlength}
-                    onInput={onInput}>
+                    onChange={onChange} onInput={onInput}>
                 </textarea>
             </div>
         );
@@ -209,9 +214,11 @@ interface FormSelectProps {
 
     children?: React.ReactNode,
 
+    onChange?: React.ReactEventHandler,
     onInput?: React.ReactEventHandler,
 
     name?: string,
+    tabIndex?: number,
     value?: any,
     defaultValue?: any,
 
@@ -232,7 +239,7 @@ interface FormSelectProps {
 
 const FormSelect = function (
 
-    { children, onInput, name, value, defaultValue, disabled, light, inline, required, myRef, noease, id, className, style }:FormSelectProps) {
+    { children, onChange, onInput, name, tabIndex, value, defaultValue, disabled, light, inline, required, myRef, noease, id, className, style }:FormSelectProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
@@ -259,8 +266,9 @@ const FormSelect = function (
         return (
             <div className={classes} style={style}>
                 <Icon src={icon_angle_down} />
-                <select id={id} ref={myRef} name={name} value={value} defaultValue={defaultValue} onInput={onInput} className={childrenClasses} disabled={disabled}>
-                    {children}
+                <select id={id} ref={myRef} name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} className={childrenClasses} disabled={disabled}
+                    onChange={onChange} onInput={onInput}>
+                        {children}
                 </select>
             </div>
         );
@@ -268,13 +276,14 @@ const FormSelect = function (
 
 interface FormCheckProps {
 
-    type?: 'radio' | 'switch',
+    type?: 'check' | 'radio' | 'switch',
     label?: any,
 
-    onInput?: React.ReactEventHandler,
+    onChange?: React.ReactEventHandler,
 
     id?: any,
     name?: string,
+    tabIndex?: number,
     value?: string,
     checked?: boolean,
     disabled?: boolean,
@@ -292,10 +301,10 @@ interface FormCheckProps {
 
 const FormCheck = function (
 
-    { type, label, onInput, id, name, value, checked, disabled, indeterminate, light, required, noease, className, style }:FormCheckProps) {
+    { type, label, onChange, id, name, tabIndex, value, checked, disabled, indeterminate, light, required, noease, className, style }:FormCheckProps) {
 
         // types
-        const setType = type === 'radio' ? 'radio' : 'checkbox';
+        const setType = (type === 'radio') ? 'radio' : 'checkbox';
 
         // classes
         const setClassName = className ? ' ' + className : '';
@@ -305,14 +314,11 @@ const FormCheck = function (
         const setLight = light ? ' ui-form-light' : '';
         const setEase = noease ? '' : ' ui-ease-form';
 
-        let classes = 'ui-check';
+        let classes = null;
 
-        if (type === 'radio') {
-            classes = 'ui-radio';
-
-        } else if (type === 'switch') {
-            classes = 'ui-switch';
-        }
+        if (type === 'check') classes = 'ui-check';
+        else if (type === 'radio') classes = 'ui-radio';
+        else if (type === 'switch') classes = 'ui-switch';
 
         classes += setDisabled + setIndeterminate + setLight + setClassName + setLabelSpace + setEase;
 
@@ -321,14 +327,16 @@ const FormCheck = function (
         const childrenClasses = setRequired;
 
         // state classes
-        const setStateTheme = type === 'switch' ? ' ui-fill-dark-100' : '';
+        const setStateTheme = (type === 'switch') ? ' ui-fill-dark-100' : '';
         const stateClasses = 'ui-form-state' + setStateTheme;
 
         return (
             <label className="ui-label">
                 <span className={classes} style={style}>
-                    <input id={id} name={name} value={value} type={setType} onInput={onInput} checked={checked} className={childrenClasses} disabled={disabled} />
-                    <i className={stateClasses}></i>
+                    <input id={id} name={name} tabIndex={tabIndex} value={value} type={setType} checked={checked} className={childrenClasses} disabled={disabled} onChange={onChange} />
+                        {type === 'switch' &&
+                            <i className={stateClasses}></i>
+                        }
                 </span>
                 {label}
             </label>

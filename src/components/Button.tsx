@@ -13,6 +13,7 @@ interface ButtonProps {
     onMouseUp?: React.ReactEventHandler,
 
     value?: any,
+    disabled?: boolean,
 
     title?: string,
     to?: string,
@@ -47,11 +48,11 @@ interface ButtonProps {
 
 const Button = function (
 
-    { children, onClick, onMouseDown, onMouseUp, value, title, to, state, href, target, active, passive, multi, square, ghost, block, myRef, noease, nostyle, type, size, fluid, id, form, className, style, data }:ButtonProps) {
+    { children, onClick, onMouseDown, onMouseUp, value, disabled, title, to, state, href, target, active, passive, multi, square, ghost, block, myRef, noease, nostyle, type, size, fluid, id, form, className, style, data }:ButtonProps) {
 
         // classes
-        const setActive = passive ? ' ui-btn-passive' : '';
-        const setPassive = active ? ' ui-btn-active' : '';
+        const setActive = active ? ' ui-btn-active' : '';
+        const setPassive = (disabled || passive) ? ' ui-btn-passive' : '';
 
         const setMulti = multi ? ' ui-btn-multi' : '';
         const setSquare = square ? ' ui-btn-square' : '';
@@ -99,7 +100,7 @@ const Button = function (
                     </Link>
                 }
                 {!href && !to &&
-                    <button ref={myRef} id={id} form={form} type={type} value={value} title={title} className={classes} {...setData} style={style}
+                    <button ref={myRef} id={id} form={form} type={type} value={value} disabled={disabled} title={title} className={classes} {...setData} style={style}
                         onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
                             {children}
                     </button>
