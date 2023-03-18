@@ -4,17 +4,15 @@ import { ui } from '@ui';
 import Icon from '@components/Icon';
 import Form from '@components/Form';
 
-// utils
-import SVGLoader from '@utils/SVGLoader';
-
 // assets
-const icon_angle_left = require("@icon/angle-left.svg") as string;
-const icon_arrow_left = require("@icon/arrow-left.svg") as string;
-const icon_arrow_right = require("@icon/arrow-right.svg") as string;
-const icon_calendar = require("@icon/calendar.svg") as string;
+const icon_arrow_left = '<path d="m4.223 124.175 120-119.955a11 11 0 0 1 15.556 0 11 11 0 0 1 0 15.556L38.519 121H251a11 11 0 0 1 11 11 11 11 0 0 1-11 11H38.608l101.168 101.131a11 11 0 0 1 0 15.556 11 11 0 0 1-15.556 0l-120-119.955a11 11 0 0 1-3.223-7.781 11 11 0 0 1 3.226-7.776Z" />';
+const icon_arrow_right = '<path d="M12 121h212.48L123.223 19.78a11 11 0 0 1 0-15.556 11 11 0 0 1 15.556 0l120 119.955a11 11 0 0 1 3.223 7.781 11 11 0 0 1-3.223 7.779l-120 119.955a11 11 0 0 1-15.556 0A10.969 10.969 0 0 1 120 251.91a10.961 10.961 0 0 1 3.223-7.779L224.392 143H12a11 11 0 0 1-11-11 11 11 0 0 1 11-11Z" />';
+const icon_angle_left = '<path d="M61 131.955a11 11 0 0 1 3.223-7.78l120-119.955a11 11 0 0 1 15.556 0 11 11 0 0 1 0 15.556L87.559 131.955l112.218 112.176a11 11 0 0 1 0 15.556 11 11 0 0 1-15.556 0l-120-119.955A11 11 0 0 1 61 131.955Z" />';
+const icon_calendar = '<path d="M12 263a11 11 0 0 1-11-11V28a11 11 0 0 1 11-11h37v-5A11 11 0 0 1 60 1a11 11 0 0 1 11 11v5h122v-5a11 11 0 0 1 11-11 11 11 0 0 1 11 11v5h37a11 11 0 0 1 11 11v224a11 11 0 0 1-11 11Zm11-22h218V95H23ZM241 73V39h-26v5a11 11 0 0 1-11 11 11 11 0 0 1-11-11v-5H71v5a11 11 0 0 1-11 11 11 11 0 0 1-11-11v-5H23v34Z" />';
 
 import '@less/modules/calendar';
 import '@js/modules/calendar';
+
 
 const Calendar = function () {
 
@@ -23,9 +21,9 @@ const Calendar = function () {
         // icons
         ui.globals.inlineSvg = true;
 
-        ui.calendar.prevIcon = SVGLoader({src: icon_arrow_left});
-        ui.calendar.nextIcon = SVGLoader({src: icon_arrow_right});
-        ui.calendar.backIcon = SVGLoader({src: icon_angle_left});
+        ui.calendar.prevIcon = icon_arrow_left;
+        ui.calendar.nextIcon = icon_arrow_right;
+        ui.calendar.backIcon = icon_angle_left;
 
         // init
         ui.calendar.Init();
@@ -55,8 +53,8 @@ const CalendarPicker = function (
             // icons
             ui.globals.inlineSvg = true;
 
-            ui.calendar.prevIcon = SVGLoader({src: icon_arrow_left});
-            ui.calendar.nextIcon = SVGLoader({src: icon_arrow_right});
+            ui.calendar.prevIcon = icon_arrow_left;
+            ui.calendar.nextIcon = icon_arrow_right;
 
             // init
             ui.calendar.Init();

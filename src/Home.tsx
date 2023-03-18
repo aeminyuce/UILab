@@ -37,10 +37,12 @@ export default function () {
                 <br/><br/>
                 <Grid.Row>
                     <Grid.Col size={12}>
-                        <h3 className="ui-h3">Line Charts</h3>
+                        col-12 grid
                     </Grid.Col>
                 </Grid.Row>
 
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 show top button

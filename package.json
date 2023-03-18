@@ -1,9 +1,23 @@
 {
-  "name": "ui",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aeminyuce/UILab.git"
-  },
+  "name": "keyy-ui",
+  "version": "1.0.4",
+  "keywords": [
+    "responsive",
+    "design system",
+    "ui examples",
+    "web",
+    "css",
+    "less",
+    "javascript"
+  ],
+  "files": [
+    "icon",
+    "js/core",
+    "js/modules",
+    "less/core",
+    "less/modules",
+    "src/components"
+  ],
   "license": "MIT",
   "scripts": {
     "build:update": "npm update && npm run build",

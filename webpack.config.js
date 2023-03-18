@@ -5,7 +5,12 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 const config = {
     output: {
-        filename: '[name].[contenthash].js',
+        filename: (pathData) => {
+
+            if (pathData.chunk.id.includes('vendors-node_modules')) return 'js/modules/[contenthash].js';
+            else return 'js/[name].[contenthash].js';
+
+        },
         publicPath: '/', // for page refresh for BrowserRouter
         clean: true, // clean the output directory before emit.
         chunkFilename: (pathData) => {
@@ -13,6 +18,11 @@ const config = {
             if (pathData.chunk.id.includes('vendors-node_modules')) return 'js/modules/[contenthash].js';
             else return 'js/[name].[contenthash].js';
 
+        },
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all', // required for code splitting files!
         },
     },
     resolve: {
@@ -36,7 +46,7 @@ const config = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: { // loads JSX files
+                use: {
                     loader: "babel-loader",
                     options: {
                         presets: ["@babel/preset-env", "@babel/preset-react"],
@@ -46,11 +56,12 @@ const config = {
             {
                 test: /\.(ts|tsx)?$/,
                 exclude: /node_modules/,
-                use: 'ts-loader',
+                use: "ts-loader",
             },
             {
                 test: /\.less$/i,
-                use: [ // compiles Less to CSS
+                exclude: /node_modules/,
+                use: [
                     { loader: "style-loader" },
                     { loader: "css-loader" },
                     {
@@ -65,14 +76,8 @@ const config = {
             },
             {
                 test: /\.svg$/,
-                use: [ // loads SVG
-                    {
-                        loader: 'svg-url-loader',
-                        options: {
-                            iesafe: true, // make all svg images to work in IE
-                        },
-                    },
-                ],
+                exclude: /node_modules/,
+                use: "svg-url-loader",
             },
         ],
     },

@@ -2,7 +2,7 @@ import * as React from 'react';
 import Icon from '@components/Icon';
 
 // assets
-const icon_angle_down = require("@icon/angle-down.svg") as string;
+const icon_angle_down = 'M132 202h-.024a11 11 0 0 1-7.788-3.255l-117-118a11 11 0 0 1 15.623-15.49L132.033 175.41 242.222 65.222a11 11 0 0 1 15.556 15.556l-118 118A11 11 0 0 1 132 202Z';
 
 import '@less/modules/forms';
 
@@ -265,7 +265,7 @@ const FormSelect = function (
 
         return (
             <div className={classes} style={style}>
-                <Icon src={icon_angle_down} />
+                <Icon path src={icon_angle_down} />
                 <select id={id} ref={myRef} name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} className={childrenClasses} disabled={disabled}
                     onChange={onChange} onInput={onInput}>
                         {children}

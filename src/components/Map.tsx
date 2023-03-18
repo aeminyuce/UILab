@@ -2,10 +2,6 @@ import * as React from 'react';
 import { useId, useEffect } from 'react';
 import { ui } from '@ui';
 
-// utils
-import Capitalize from '@utils/Capitalize';
-import UnescapedUnicode from '@utils/UnescapedUnicode';
-
 // assets
 import '@less/modules/map';
 import '@js/modules/map';
@@ -138,11 +134,9 @@ export default function Map(
                                     let size = sizes[val] ? sizes[val] : 0;
                                     let info = '';
 
-                                    const title = Capitalize(val);
-
                                     if (size instanceof Object) { // check inner arrays
 
-                                        info = '<strong class="ui-m-5-b ui-block">' + title + ': ' + size[defaultValue] + '</strong>';
+                                        info = '<strong class="ui-m-5-b ui-block">' + val + ': ' + size[defaultValue] + '</strong>';
 
                                         Object.keys(size).map((val: any, i: number, arr: any) => {
 
@@ -157,7 +151,7 @@ export default function Map(
 
                                         size = size[defaultValue];
 
-                                    } else info = '<strong>' + title + '</strong>: ' + size;
+                                    } else info = '<strong>' + val + '</strong>: ' + size;
 
                                     const unescaped = UnescapedUnicode(value);
                                     loadedPaths.push(unescaped);
@@ -178,7 +172,7 @@ export default function Map(
                                 emptyPaths.map((value: any, i: number) => {
 
                                     const size = sizes[value] ? sizes[value] : 0;
-                                    const info = '<strong>' + Capitalize(value) + '</strong>: ' + size;
+                                    const info = '<strong>' + value + '</strong>: ' + size;
 
                                     return <path
                                         key={id + 2 + i}
@@ -197,3 +191,42 @@ export default function Map(
         );
 
     }
+
+const UnescapedUnicode = (value: any) => {
+
+    let find = '';
+
+    for (const char of value) {
+
+        const code = char.codePointAt(0);
+        if (code >= 0x80) find += `&#${code};`; else find += char;
+
+    }
+
+    const unescaped = find
+        .replace(/&#305;&#775;/g, 'i') // ı + upper dot
+
+        .replace(/&#304;/g, 'İ')
+        .replace(/&#105;/g, 'i')
+
+        .replace(/&#73;/g, 'I')
+        .replace(/&#305;/g, 'ı')
+
+        .replace(/&#350;/g, 'Ş')
+        .replace(/&#351;/g, 'ş')
+
+        .replace(/&#286;/g, 'Ğ')
+        .replace(/&#287;/g, 'ğ')
+
+        .replace(/&#199;/g, 'Ç')
+        .replace(/&#231;/g, 'ç')
+
+        .replace(/&#220;/g, 'Ü')
+        .replace(/&#252;/g, 'ü')
+
+        .replace(/&#214;/g, 'Ö')
+        .replace(/&#246;/g, 'ö');
+
+    return unescaped;
+
+}

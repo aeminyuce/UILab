@@ -12,6 +12,7 @@ interface IconProps {
     opacity?: 'no' | 'more' | 'half' | 'full',
     animate?: string,
 
+    path?: boolean,
     toggle?: boolean,
 
     className?: string,
@@ -20,7 +21,7 @@ interface IconProps {
 
 export default function Icon(
 
-    {src, size, float, opacity, animate, toggle, className, style }:IconProps) {
+    {src, size, float, opacity, animate, path, toggle, className, style }:IconProps) {
 
         // get svg path
         const getPath = function(str: string) {
@@ -30,8 +31,7 @@ export default function Icon(
             const cut = str.indexOf("'/%");
             const to = str.length - (str.length - cut);
 
-            const path = str.substring(from, to);
-            return path;
+            return str.substring(from, to);
 
         }
 
@@ -60,7 +60,7 @@ export default function Icon(
 
         return (
             <svg className={classes} style={style} viewBox="0 0 264 264">
-                <path d={getPath(src)} />
+                <path d={path ? src : getPath(src)} />
             </svg>
         );
 
