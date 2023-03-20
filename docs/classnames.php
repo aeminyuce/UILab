@@ -19,7 +19,7 @@
             </div>
             <div class="ui-col-3">
 
-                <div class="ui-bg-black ui-color-white ui-round ui-p-20">
+                <div class="ui-bg-white ui-invert-bg ui-round ui-p-20 ui-border-dual">
                     <ul class="classnames-alerts ui-list-unstyled ui-list-sp-5">
                     </ul>
                 </div>
