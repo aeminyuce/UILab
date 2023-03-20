@@ -48,7 +48,7 @@ const GridContainer = function (
 
         if (fixed) {
 
-            setFixed = 'ui-fixed';
+            setFixed = ' ui-fixed';
 
             if (fixed === 'xl') {
                 setFixed += ' ui-fixed-' + fixed;
