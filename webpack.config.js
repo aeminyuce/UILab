@@ -5,20 +5,10 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 const config = {
     output: {
-        filename: (pathData) => {
-
-            if (pathData.chunk.id.includes('vendors-node_modules')) return 'js/modules/[contenthash].js';
-            else return 'js/[name].[contenthash].js';
-
-        },
+        filename: 'js/[name].[contenthash].js',
+        chunkFilename: 'js/[name].[contenthash].js',
         publicPath: '/', // for page refresh for BrowserRouter
         clean: true, // clean the output directory before emit.
-        chunkFilename: (pathData) => {
-
-            if (pathData.chunk.id.includes('vendors-node_modules')) return 'js/modules/[contenthash].js';
-            else return 'js/[name].[contenthash].js';
-
-        },
     },
     optimization: {
         splitChunks: {
@@ -45,7 +35,7 @@ const config = {
         rules: [
             {
                 test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
+                exclude: /node_modules/, // use only js/ts loader!
                 use: {
                     loader: "babel-loader",
                     options: {
@@ -55,12 +45,11 @@ const config = {
             },
             {
                 test: /\.(ts|tsx)?$/,
-                exclude: /node_modules/,
+                exclude: /node_modules/, // use only js/ts loader!
                 use: "ts-loader",
             },
-            {
+            { // do not use exclude!
                 test: /\.less$/i,
-                exclude: /node_modules/,
                 use: [
                     { loader: "style-loader" },
                     { loader: "css-loader" },
@@ -74,9 +63,12 @@ const config = {
                     },
                 ],
             },
-            {
+            { // do not use exclude!
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+            { // do not use exclude!
                 test: /\.svg$/,
-                exclude: /node_modules/,
                 use: "svg-url-loader",
             },
         ],
