@@ -39,9 +39,7 @@ const GridContainer = function (
                 setNoGutter = ' ui-no-gutter-' + noGutter;
             }
 
-        } else {
-            setNoGutter = '';
-        }
+        } else setNoGutter = '';
 
         let setFixed = '';
         let classes = '';
@@ -62,6 +60,8 @@ const GridContainer = function (
         }
 
         const setClassName = className ? ' ' + className : '';
+
+        classes = classes.replace(/^\s+/g, ''); // remove first spaces
         classes += setNoGutter + setFixed + setClassName;
 
         return (
