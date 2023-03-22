@@ -101,7 +101,8 @@ interface GridRowProps {
     fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs',
 
     gap?: 'no' | 'lg' | 'md' | 'sm' | 'xs',
-    gapDir?: 'v' | 'h',
+    vGap?: 'no' | 'lg' | 'md' | 'sm' | 'xs',
+    hGap?: 'no' | 'lg' | 'md' | 'sm' | 'xs',
 
     className?: string,
     data?: any,
@@ -111,28 +112,38 @@ interface GridRowProps {
 
 const GridRow = function (
 
-    { children, as, align, fluid, gap, gapDir, className, data, style }:GridRowProps) {
+    { children, as, align, fluid, gap, vGap, hGap, className, data, style }:GridRowProps) {
 
         // classes
         const setAlign = align ? ' ui-row-align-' + align : '';
         const setFluid = fluid ? ' ui-' + fluid + '-fluid' : '';
 
         let setGap = '';
-        const setGapDir = gapDir ? '-' + gapDir : '';
-
         if (gap) {
 
-            if (gap === 'no') {
-                setGap = ' ui-no-row-gap' + setGapDir;
+            if (gap === 'no') setGap = ' ui-no-row-gap';
+            else setGap = ' ui-row-gap-' + gap;
 
-            } else {
-                setGap = ' ui-row-gap-' + gap + setGapDir;
-            }
+        }
+
+        let setVGap = '';
+        if (vGap) {
+
+            if (vGap === 'no') setVGap = ' ui-no-row-gap-v';
+            else setVGap = ' ui-row-gap-' + vGap + '-v';
+
+        }
+
+        let setHGap = '';
+        if (hGap) {
+
+            if (hGap === 'no') setHGap = ' ui-no-row-gap-h';
+            else setHGap = ' ui-row-gap-' + hGap + '-h';
 
         }
 
         const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-row' + setAlign + setFluid + setGap + setClassName;
+        const classes = 'ui-row' + setAlign + setFluid + setGap + setVGap + setHGap + setClassName;
 
         // data attributes
         let setData = [];
