@@ -1768,6 +1768,17 @@
                     </div>
 
                     <div class="ui-col-3">
+                        <label class="ui-form-info">Currency Form</label>
+                    </div>
+                    <div class="ui-col-9">
+                        <div class="ui-currency-spinner ui-no-fluid">
+                            <div class="ui-input ui-round ui-border-dual ui-ease-form">
+                                <input type="text" min="0" maxlength="12" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui-col-3">
                         <label class="ui-form-info">Currency Spinner</label>
                     </div>
                     <div class="ui-col-9">
