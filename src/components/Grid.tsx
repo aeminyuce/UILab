@@ -61,8 +61,8 @@ const GridContainer = function (
 
         const setClassName = className ? ' ' + className : '';
 
-        classes = classes.replace(/^\s+/g, ''); // remove first spaces
         classes += setNoGutter + setFixed + setClassName;
+        classes = classes.replace(/^\s+/g, ''); // remove first spaces
 
         return (
             <>
