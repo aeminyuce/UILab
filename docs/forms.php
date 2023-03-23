@@ -2287,6 +2287,130 @@
                     <p class="ui-required-msg">Please, write your comments more than 10 characters.</p>
                     <i class="ui-form-hint ui-color-white-25">* Required</i>
 
+                    <span class="ui-sp-30"></span>
+
+                    <h3 class="ui-h3">Checkboxes and Radios</h3>
+                    <div class="ui-p-30-b">
+                        <ul class="ui-list-inline ui-list-gap">
+                            <li>
+                                <label class="ui-label">
+                                    <span class="ui-check ui-round ui-border-dual ui-ease-form">
+                                        <input type="checkbox" checked>
+                                        <i class="ui-form-state"></i>
+                                    </span>
+                                    Checkbox
+                                </label>
+                            </li>
+                            <li>
+                                <label class="ui-label">
+                                    <span class="ui-check ui-form-disabled ui-round ui-border-dual ui-ease-form">
+                                        <input type="checkbox" disabled>
+                                        <i class="ui-form-state"></i>
+                                    </span>
+                                    Disabled Checkbox
+                                </label>
+                            </li>
+                            <li>
+                                <label class="ui-label">
+                                    <div class="ui-check ui-round ui-border-dual ui-ease-form">
+                                        <input type="checkbox" class="ui-indeterminate">
+                                        <i class="ui-form-state"></i>
+                                    </div>
+                                    Indeterminate
+                                </label>
+                            </li>
+                            <li>
+                                <label class="ui-label">
+                                    <div class="ui-check ui-form-disabled ui-round ui-border-dual ui-ease-form">
+                                        <input type="checkbox" class="ui-indeterminate" disabled>
+                                        <i class="ui-form-state"></i>
+                                    </div>
+                                    Disabled Indeterminate
+                                </label>
+                            </li>
+                        </ul>
+
+                        <ul class="ui-list-inline ui-list-gap">
+                            <li>
+                                <label class="ui-label">
+                                    <span class="ui-radio ui-border-dual ui-ease-form">
+                                        <input type="radio" name="radiotest2" checked>
+                                        <i class="ui-form-state"></i>
+                                    </span>
+                                    Radio1
+                                </label>
+                            </li>
+                            <li>
+                                <label class="ui-label">
+                                    <span class="ui-radio ui-border-dual ui-ease-form">
+                                        <input type="radio" name="radiotest2">
+                                        <i class="ui-form-state"></i>
+                                    </span>
+                                    Radio2
+                                </label>
+                            </li>
+                            <li>
+                                <label class="ui-label">
+                                    <span class="ui-radio ui-border-dual ui-ease-form">
+                                        <input type="radio" name="radiotest2">
+                                        <i class="ui-form-state"></i>
+                                    </span>
+                                    Radio3
+                                </label>
+                            </li>
+                            <li>
+                                <label class="ui-label">
+                                    <span class="ui-radio ui-form-disabled ui-border-dual ui-ease-form">
+                                        <input type="radio" name="radiotest2" disabled>
+                                        <i class="ui-form-state"></i>
+                                    </span>
+                                    Disabled Radio4
+                                </label>
+                            </li>
+                        </ul>
+
+                        <span class="ui-sp-15"></span>
+
+                        <ul class="ui-list-inline ui-list-gap">
+                            <li>
+                                <label class="ui-label">
+                                    <span class="ui-switch ui-round ui-border-dual ui-ease-form">
+                                        <input type="checkbox" checked>
+                                        <i class="ui-form-state"></i>
+                                    </span>
+                                    Switch
+                                </label>
+                            </li>
+                            <li>
+                                <label class="ui-label">
+                                    <span class="ui-switch ui-round ui-border-dual ui-ease-form">
+                                            <input type="checkbox" checked>
+                                            <i class="ui-form-state ui-theme-sub ui-fill-dark-100"></i>
+                                    </span>
+                                    Switch with Theme
+                                </label>
+                            </li>
+                            <li>
+                                <label class="ui-label">
+                                    <span class="ui-switch ui-form-disabled ui-round ui-border-dual ui-ease-form">
+                                            <input type="checkbox" disabled>
+                                            <i class="ui-form-state ui-theme-base"></i>
+                                    </span>
+                                    Disabled Switch
+                                </label>
+                            </li>
+                            <li>
+                                <label class="ui-label">
+                                    <span class="ui-switch ui-round ui-border-dual ui-ease-form">
+                                            <input type="checkbox" class="ui-indeterminate">
+                                            <i class="ui-form-state"></i>
+                                    </span>
+                                    Indeterminate Switch
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
 
                 <h3 class="ui-h3">Different Form Styles</h3>

@@ -321,10 +321,15 @@ const FormCheck = function (
         else if (type === 'switch') classes = 'ui-switch';
 
         classes += setDisabled + setIndeterminate + setLight + setClassName + setLabelSpace + setEase;
+        if (classes === '') classes = null;
 
         // children classes
         const setRequired = required ? ' ui-required' : '';
-        const childrenClasses = setRequired;
+
+        let childrenClasses = setRequired;
+        childrenClasses = childrenClasses.replace(/^\s+/g, ''); // remove first spaces
+
+        if (childrenClasses === '') childrenClasses = null;
 
         // state classes
         const setStateTheme = (type === 'switch') ? ' ui-fill-dark-100' : '';
@@ -334,9 +339,7 @@ const FormCheck = function (
             <label className="ui-label">
                 <span className={classes} style={style}>
                     <input id={id} name={name} tabIndex={tabIndex} value={value} type={setType} checked={checked} className={childrenClasses} disabled={disabled} onChange={onChange} />
-                        {type === 'switch' &&
-                            <i className={stateClasses}></i>
-                        }
+                        <i className={stateClasses}></i>
                 </span>
                 {label}
             </label>
