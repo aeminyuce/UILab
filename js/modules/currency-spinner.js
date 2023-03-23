@@ -199,6 +199,8 @@ ui.currencySpinner = {
 
             function (e) {
 
+                if (this.value.length === 0) return;
+
                 if (e.keyCode === 27) {
 
                     this.value = cacheCurrencySpinner;

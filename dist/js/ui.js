@@ -1579,6 +1579,7 @@ ui.currencySpinner = {
       cacheCurrencySpinner = this.value;
     });
     ui.on(document, 'keyup blur', '.' + ui.currencySpinner.target + ' input[type="text"]', function (e) {
+      if (this.value.length === 0) return;
       if (e.keyCode === 27) {
         this.value = cacheCurrencySpinner;
         ui.trigger(this, 'blur');
