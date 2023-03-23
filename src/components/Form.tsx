@@ -296,12 +296,13 @@ interface FormCheckProps {
 
     className?: string,
     style?: any,
+    stateStyle?: any,
 
 }
 
 const FormCheck = function (
 
-    { type, label, onChange, id, name, tabIndex, value, checked, disabled, indeterminate, light, required, noease, className, style }:FormCheckProps) {
+    { type, label, onChange, id, name, tabIndex, value, checked, disabled, indeterminate, light, required, noease, className, style, stateStyle }:FormCheckProps) {
 
         // types
         const setType = (type === 'radio') ? 'radio' : 'checkbox';
@@ -339,7 +340,7 @@ const FormCheck = function (
             <label className="ui-label">
                 <span className={classes} style={style}>
                     <input id={id} name={name} tabIndex={tabIndex} value={value} type={setType} checked={checked} className={childrenClasses} disabled={disabled} onChange={onChange} />
-                        <i className={stateClasses}></i>
+                        <i className={stateClasses} style={stateStyle}></i>
                 </span>
                 {label}
             </label>
