@@ -161,7 +161,14 @@
                 select { text-align: left !important; }
             }
 
-            &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
+            &.ui-round {
+                border-radius: (@round - (@round * 0.3333333333));
+
+                &-t { border-radius: (@round - (@round * 0.3333333333)) (@round - (@round * 0.3333333333)) 0 0; }
+                &-r { border-radius: 0 (@round - (@round * 0.3333333333)) (@round - (@round * 0.3333333333)) 0; }
+                &-b { border-radius: 0 0 (@round - (@round * 0.3333333333)) (@round - (@round * 0.3333333333)); }
+                &-l { border-radius: (@round - (@round * 0.3333333333)) 0 0 (@round - (@round * 0.3333333333)); }
+            }
         }
 
         &input input,&select select,&select-multi select,&textarea textarea { outline: 0; box-sizing: border-box; ._color-var(black); font-family: @font-family; font-size: @font-15; width: 100%; background-color: @no-color; border: 0; }

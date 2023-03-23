@@ -4892,6 +4892,30 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-textarea.ui-round {
   border-radius: 6.66666667px;
 }
+.ui-input.ui-round-t,
+.ui-select.ui-round-t,
+.ui-select-multi.ui-round-t,
+.ui-textarea.ui-round-t {
+  border-radius: 6.66666667px 6.66666667px 0 0;
+}
+.ui-input.ui-round-r,
+.ui-select.ui-round-r,
+.ui-select-multi.ui-round-r,
+.ui-textarea.ui-round-r {
+  border-radius: 0 6.66666667px 6.66666667px 0;
+}
+.ui-input.ui-round-b,
+.ui-select.ui-round-b,
+.ui-select-multi.ui-round-b,
+.ui-textarea.ui-round-b {
+  border-radius: 0 0 6.66666667px 6.66666667px;
+}
+.ui-input.ui-round-l,
+.ui-select.ui-round-l,
+.ui-select-multi.ui-round-l,
+.ui-textarea.ui-round-l {
+  border-radius: 6.66666667px 0 0 6.66666667px;
+}
 .ui-input input,
 .ui-select select,
 .ui-select-multi select,
