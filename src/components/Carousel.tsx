@@ -14,11 +14,11 @@ interface CarouselProps {
 
     col?: typeof gridSizes,
 
-    colXL?: typeof gridSizes,
-    colLG?: typeof gridSizes,
-    colMD?: typeof gridSizes,
-    colSM?: typeof gridSizes,
-    colXS?: typeof gridSizes,
+    xl?: typeof gridSizes,
+    lg?: typeof gridSizes,
+    md?: typeof gridSizes,
+    sm?: typeof gridSizes,
+    xs?: typeof gridSizes,
 
     slideTimer?: number,
 
@@ -28,7 +28,7 @@ interface CarouselProps {
 
 const Carousel = function (
 
-    { children, col, colXL, colLG, colMD, colSM, colXS, slideTimer, className, style }:CarouselProps) {
+    { children, col, xl, lg, md, sm, xs, slideTimer, className, style }:CarouselProps) {
 
         useEffect(() => {
 
@@ -45,13 +45,8 @@ const Carousel = function (
         const classes = 'ui-carousel' + setClassName;
 
         return (
-            <div className={classes} style={style} data-ui-slide={slideTimer}
-                data-ui-col-xl={colXL}
-                data-ui-col-lg={colLG}
-                data-ui-col={col}
-                data-ui-col-md={colMD}
-                data-ui-col-sm={colSM}
-                data-ui-col-xs={colXS}>
+            <div className={classes} style={style} data-ui-slide={slideTimer} data-ui-col={col}
+                data-ui-col-xl={xl} data-ui-col-lg={lg} data-ui-col-md={md} data-ui-col-sm={sm} data-ui-col-xs={xs}>
                     {children}
             </div>
         );
