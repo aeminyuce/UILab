@@ -20,7 +20,7 @@ interface CarouselProps {
     sm?: typeof gridSizes,
     xs?: typeof gridSizes,
 
-    slideTimer?: number,
+    slide?: number,
 
     className?: string,
     style?: any,
@@ -28,7 +28,7 @@ interface CarouselProps {
 
 const Carousel = function (
 
-    { children, col, xl, lg, md, sm, xs, slideTimer, className, style }:CarouselProps) {
+    { children, col, xl, lg, md, sm, xs, slide, className, style }:CarouselProps) {
 
         useEffect(() => {
 
@@ -45,7 +45,7 @@ const Carousel = function (
         const classes = 'ui-carousel' + setClassName;
 
         return (
-            <div className={classes} style={style} data-ui-slide={slideTimer} data-ui-col={col}
+            <div className={classes} style={style} data-ui-slide={slide} data-ui-col={col}
                 data-ui-col-xl={xl} data-ui-col-lg={lg} data-ui-col-md={md} data-ui-col-sm={sm} data-ui-col-xs={xs}>
                     {children}
             </div>
@@ -80,7 +80,7 @@ interface CrouselContentProps {
 
     children?: React.ReactNode,
 
-    animateTimer? : number,
+    animate? : number,
 
     className?: string,
     style?: any,
@@ -89,14 +89,14 @@ interface CrouselContentProps {
 
 const CrouselContent = function (
 
-    { children, animateTimer, className, style }:CrouselContentProps) {
+    { children, animate, className, style }:CrouselContentProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
         const classes = 'ui-carousel-content' + setClassName;
 
         return (
-            <div className={classes} style={style} data-ui-animate={animateTimer}>
+            <div className={classes} style={style} data-ui-animate={animate}>
                 {children}
             </div>
         );
