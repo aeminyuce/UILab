@@ -273,7 +273,7 @@ const GridCol = function (
             setXs += xs.push ? ' ui-push-xs-' + xs.push : '';
             setXs += xs.pull ? ' ui-pull-xs-' + xs.pull : '';
 
-        } else { setXs = xs ? ' ui-col-xs-' + sm : ''; }
+        } else { setXs = xs ? ' ui-col-xs-' + xs : ''; }
 
         const responsiveSizes = setXl + setLg + setMd + setSm + setXs;
 
