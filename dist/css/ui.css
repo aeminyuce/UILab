@@ -3982,6 +3982,9 @@ ul.ui-align-c li *:not([class*="ui-align-"]),
   border: 0;
   cursor: pointer;
 }
+a.ui-btn-no-style {
+  text-decoration: none;
+}
 .ui-btn-passive {
   opacity: 0.6;
   cursor: default;
