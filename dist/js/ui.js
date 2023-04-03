@@ -5490,216 +5490,216 @@ ui.modal = {
       win.style.left = Math.floor((bg.offsetWidth - win.offsetWidth) / 2) + 'px';
     }
   };
-  ui.modal.Start = function () {
-    ui.modal.close = function () {
-      var win, bg, removeModal;
-      win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow);
-      if (win.length === 0) {
-        return;
-      }
+  ui.modal.close = function () {
+    var win, bg, removeModal;
+    win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow);
+    if (win.length === 0) {
+      return;
+    }
+    ui.each(win, function () {
+      ui.removeClass(this, ui.modal.nameShowEase);
+    });
+    setTimeout(function () {
       ui.each(win, function () {
-        ui.removeClass(this, ui.modal.nameShowEase);
-      });
-      setTimeout(function () {
-        ui.each(win, function () {
-          removeModal = ui.find('.' + ui.modal.nameRemovable, win[0]).length;
-          if (removeModal > 0) {
-            win[0].parentNode.removeChild(win[0]);
-          } else {
-            ui.removeClass(this, ui.modal.nameShow);
-          }
-        });
-        bg = ui.find('.' + ui.modal.targetBg);
-        ui.removeClass(bg, ui.modal.nameOpenEase);
-        ui.removeClass(document, ui.modal.nameModalOpened);
-        if (ui.userAgents.mobile) {
-          window.scrollTo(0, pageYPos);
-        }
-        setTimeout(function () {
-          ui.removeClass(bg, ui.modal.nameOpen);
-        }, ui.globals.ease);
-        ui.trigger(document, ui.globals.eventDomChange);
-      }, ui.globals.ease);
-    };
-    ui.modal.open = function (props) {
-      var closeBtn, nonClosable, typeArr, type, created, temp, getSize, size, customSize, sizeArr, forms, bg, html, win, content;
-      if (props === undefined) {
-        return;
-      }
-      if (props.source === undefined) {
-        return;
-      }
-      ui.modal.close();
-      if (ui.userAgents.mobile) {
-        pageYPos = window.pageYOffset;
-      }
-      nonClosable = false;
-      if (props.closable !== undefined) {
-        if (!props.closable) {
-          nonClosable = true;
-        }
-      }
-      function createModal() {
-        bg = ui.find('.' + ui.modal.targetBg)[0];
-        html = '<div class="' + ui.modal.targetWin;
-        if (props.bg !== undefined && props.bg === 'false') {
-          html += ' ' + ui.modal.nameWinNoBG;
-        }
-        html += ' ' + ui.modal.nameActive + '">' + '<div class="' + ui.modal.nameContent + ' ' + ui.modal.stylesContent + '"></div>' + '</div>';
-        if (bg === undefined) {
-          html += '<div class="' + ui.modal.targetBg + ' ' + ui.modal.stylesModalBg + '"></div>';
-        }
-        ui.find('body')[0].insertAdjacentHTML('beforeend', html);
-        win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameActive)[0];
-        content = ui.find('.' + ui.modal.nameContent, win)[0];
-      }
-      function checkHeaderFooter() {
-        if (ui.find('.' + ui.modal.nameHeader, content)[0] !== undefined) {
-          ui.addClass(content, ui.modal.nameHasHeader);
-        }
-        if (ui.find('.' + ui.modal.nameFooter, content)[0] !== undefined) {
-          ui.addClass(content, ui.modal.nameHasFooter);
-        }
-      }
-      function showModal() {
-        ui.removeClass(content, ui.modal.nameLG + ' ' + ui.modal.nameMD + ' ' + ui.modal.nameSM + ' ' + ui.modal.nameFullscreen + ' ' + ui.modal.nameInline);
-        content.style.removeProperty('top');
-        content.style.removeProperty('left');
-        content.style.removeProperty('width');
-        content.style.removeProperty('height');
-        content.removeAttribute(ui.modal.dataOpenSize);
-        content.removeAttribute(ui.modal.dataCustomW);
-        content.removeAttribute(ui.modal.dataCustomH);
-        if (props.size === undefined) {
-          size = ui.modal.nameMD;
-          ui.addClass(content, size);
+        removeModal = ui.find('.' + ui.modal.nameRemovable, win[0]).length;
+        if (removeModal > 0) {
+          win[0].parentNode.removeChild(win[0]);
         } else {
-          getSize = function getSize() {
-            size = ui.modal.nameMD;
-            sizeArr = [ui.modal.sizeLG, ui.modal.sizeMD, ui.modal.sizeSM, ui.modal.sizeFullscreen, ui.modal.sizeInline];
-            if (sizeArr.indexOf(props.size) > -1) {
-              size = ui.modal.nameSizePrefix + props.size;
-            }
-            ui.addClass(content, size);
-          };
-          customSize = props.size.split('x');
-          if (customSize.length === 2) {
-            if (customSize[0].match(/^[0-9]+$/) !== null && customSize[1].match(/^[0-9]+$/) !== null) {
-              content.style.width = customSize[0] + 'px';
-              content.style.height = customSize[1] + 'px';
-              content.setAttribute(ui.modal.dataCustomW, customSize[0]);
-              content.setAttribute(ui.modal.dataCustomH, customSize[1]);
-            } else {
-              getSize();
-            }
+          ui.removeClass(this, ui.modal.nameShow);
+        }
+      });
+      bg = ui.find('.' + ui.modal.targetBg);
+      ui.removeClass(bg, ui.modal.nameOpenEase);
+      ui.removeClass(document, ui.modal.nameModalOpened);
+      if (ui.userAgents.mobile) {
+        window.scrollTo(0, pageYPos);
+      }
+      setTimeout(function () {
+        ui.removeClass(bg, ui.modal.nameOpen);
+      }, ui.globals.ease);
+      ui.trigger(document, ui.globals.eventDomChange);
+    }, ui.globals.ease);
+  };
+  ui.modal.open = function (props) {
+    var closeBtn, nonClosable, typeArr, type, created, temp, getSize, size, customSize, sizeArr, forms, bg, html, win, content;
+    if (props === undefined) {
+      return;
+    }
+    if (props.source === undefined) {
+      return;
+    }
+    ui.modal.close();
+    if (ui.userAgents.mobile) {
+      pageYPos = window.pageYOffset;
+    }
+    nonClosable = false;
+    if (props.closable !== undefined) {
+      if (!props.closable) {
+        nonClosable = true;
+      }
+    }
+    function createModal() {
+      bg = ui.find('.' + ui.modal.targetBg)[0];
+      html = '<div class="' + ui.modal.targetWin;
+      if (props.bg !== undefined && props.bg === 'false') {
+        html += ' ' + ui.modal.nameWinNoBG;
+      }
+      html += ' ' + ui.modal.nameActive + '">' + '<div class="' + ui.modal.nameContent + ' ' + ui.modal.stylesContent + '"></div>' + '</div>';
+      if (bg === undefined) {
+        html += '<div class="' + ui.modal.targetBg + ' ' + ui.modal.stylesModalBg + '"></div>';
+      }
+      ui.find('body')[0].insertAdjacentHTML('beforeend', html);
+      win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameActive)[0];
+      content = ui.find('.' + ui.modal.nameContent, win)[0];
+    }
+    function checkHeaderFooter() {
+      if (ui.find('.' + ui.modal.nameHeader, content)[0] !== undefined) {
+        ui.addClass(content, ui.modal.nameHasHeader);
+      }
+      if (ui.find('.' + ui.modal.nameFooter, content)[0] !== undefined) {
+        ui.addClass(content, ui.modal.nameHasFooter);
+      }
+    }
+    function showModal() {
+      ui.removeClass(content, ui.modal.nameLG + ' ' + ui.modal.nameMD + ' ' + ui.modal.nameSM + ' ' + ui.modal.nameFullscreen + ' ' + ui.modal.nameInline);
+      content.style.removeProperty('top');
+      content.style.removeProperty('left');
+      content.style.removeProperty('width');
+      content.style.removeProperty('height');
+      content.removeAttribute(ui.modal.dataOpenSize);
+      content.removeAttribute(ui.modal.dataCustomW);
+      content.removeAttribute(ui.modal.dataCustomH);
+      if (props.size === undefined) {
+        size = ui.modal.nameMD;
+        ui.addClass(content, size);
+      } else {
+        getSize = function getSize() {
+          size = ui.modal.nameMD;
+          sizeArr = [ui.modal.sizeLG, ui.modal.sizeMD, ui.modal.sizeSM, ui.modal.sizeFullscreen, ui.modal.sizeInline];
+          if (sizeArr.indexOf(props.size) > -1) {
+            size = ui.modal.nameSizePrefix + props.size;
+          }
+          ui.addClass(content, size);
+        };
+        customSize = props.size.split('x');
+        if (customSize.length === 2) {
+          if (customSize[0].match(/^[0-9]+$/) !== null && customSize[1].match(/^[0-9]+$/) !== null) {
+            content.style.width = customSize[0] + 'px';
+            content.style.height = customSize[1] + 'px';
+            content.setAttribute(ui.modal.dataCustomW, customSize[0]);
+            content.setAttribute(ui.modal.dataCustomH, customSize[1]);
           } else {
             getSize();
           }
-        }
-        if (nonClosable) {
-          ui.removeClass(win, ui.modal.nameClosable);
         } else {
-          ui.addClass(win, ui.modal.nameClosable);
+          getSize();
         }
-        closeBtn = ui.find('.' + ui.modal.nameModalClose, win)[0];
-        if (nonClosable) {
-          if (closeBtn !== undefined) {
-            closeBtn.parentNode.removeChild(closeBtn);
-          }
-        } else {
-          if (closeBtn === undefined) {
-            closeBtn = '<button class="' + ui.modal.nameModalClose + ' ' + ui.modal.stylesCloseBtn + '">';
-            if (ui.globals.inlineSvg) {
-              closeBtn += '<svg class="' + ui.modal.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.modal.closeIcon;
-            } else {
-              closeBtn += '<svg class="' + ui.modal.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.modal.closeIcon + '"/>';
-            }
-            closeBtn += '</svg>' + '</button>';
-            content.insertAdjacentHTML('afterbegin', closeBtn);
-          }
-        }
-        ui.addClass(document, ui.modal.nameModalOpened);
-        bg = ui.find('.' + ui.modal.targetBg);
-        ui.addClass(bg, ui.modal.nameOpen);
-        setTimeout(function () {
-          ui.addClass(bg, ui.modal.nameOpenEase);
-          setTimeout(function () {
-            ui.addClass(win, ui.modal.nameShow);
-            content.style.top = Math.floor((bg[0].offsetHeight - content.offsetHeight) / 2) + 'px';
-            content.style.left = Math.floor((bg[0].offsetWidth - content.offsetWidth) / 2) + 'px';
-            if (size !== undefined && size !== ui.modal.nameFullscreen) {
-              content.style.width = content.offsetWidth + 'px';
-              content.setAttribute(ui.modal.dataOpenSize, content.offsetWidth);
-              content.style.height = content.offsetHeight + 'px';
-            }
-            setTimeout(function () {
-              ui.addClass(win, ui.modal.nameShowEase);
-              ui.removeClass(win, ui.modal.nameActive);
-              modalResizer();
-              setTimeout(function () {
-                ui.trigger(document, ui.globals.eventDomChange);
-              }, ui.globals.ease);
-              if (props.callback !== undefined) {
-                setTimeout(function () {
-                  props.callback.call(content);
-                }, ui.globals.ease * 2);
-              }
-            }, 10);
-          }, ui.globals.ease);
-        }, 10);
       }
-      if (props.type === undefined) {
-        props.source = ui.find(props.source);
-        if (props.source[0] === undefined) {
-          return;
-        }
-        created = ui.closest(props.source, '.' + ui.modal.targetWin);
-        if (created.length > 0) {
-          ui.addClass(created, ui.modal.nameActive);
-          win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameActive)[0];
-          content = ui.find('.' + ui.modal.nameContent, win)[0];
-          showModal();
-          forms = ui.find('form', content);
-          ui.each(forms, function () {
-            this.reset();
-          });
-        } else {
-          temp = document.createDocumentFragment();
-          ui.each(props.source, function (i) {
-            temp.appendChild(props.source[i]);
-          });
-          createModal();
-          content.appendChild(temp);
-          checkHeaderFooter();
-          showModal();
+      if (nonClosable) {
+        ui.removeClass(win, ui.modal.nameClosable);
+      } else {
+        ui.addClass(win, ui.modal.nameClosable);
+      }
+      closeBtn = ui.find('.' + ui.modal.nameModalClose, win)[0];
+      if (nonClosable) {
+        if (closeBtn !== undefined) {
+          closeBtn.parentNode.removeChild(closeBtn);
         }
       } else {
-        typeArr = [ui.modal.typeAjax, ui.modal.typeIframe];
-        if (typeArr.indexOf(props.type) > -1) {
-          type = props.type;
-        }
-        if (type === ui.modal.typeIframe) {
-          temp = '<iframe ' + 'class="' + ui.modal.nameIframe + ' ' + ui.modal.nameRemovable + '" ' + 'src="' + props.source + '" ' + 'frameborder="0" ' + 'allowfullscreen' + '>' + '</iframe>';
-          createModal();
-          content.insertAdjacentHTML('beforeend', temp);
-          showModal();
-        } else if (type === ui.modal.typeAjax) {
-          ui.ajax({
-            url: props.source,
-            callback: function callback(status, response) {
-              if (status === 'success') {
-                temp = '<div class="' + ui.modal.target + ' ' + ui.modal.nameRemovable + '">' + response + '</div>';
-                createModal();
-                content.insertAdjacentHTML('beforeend', temp);
-                checkHeaderFooter();
-                showModal();
-              }
-            }
-          });
+        if (closeBtn === undefined) {
+          closeBtn = '<button class="' + ui.modal.nameModalClose + ' ' + ui.modal.stylesCloseBtn + '">';
+          if (ui.globals.inlineSvg) {
+            closeBtn += '<svg class="' + ui.modal.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.modal.closeIcon;
+          } else {
+            closeBtn += '<svg class="' + ui.modal.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.modal.closeIcon + '"/>';
+          }
+          closeBtn += '</svg>' + '</button>';
+          content.insertAdjacentHTML('afterbegin', closeBtn);
         }
       }
-      return false;
-    };
+      ui.addClass(document, ui.modal.nameModalOpened);
+      bg = ui.find('.' + ui.modal.targetBg);
+      ui.addClass(bg, ui.modal.nameOpen);
+      setTimeout(function () {
+        ui.addClass(bg, ui.modal.nameOpenEase);
+        setTimeout(function () {
+          ui.addClass(win, ui.modal.nameShow);
+          content.style.top = Math.floor((bg[0].offsetHeight - content.offsetHeight) / 2) + 'px';
+          content.style.left = Math.floor((bg[0].offsetWidth - content.offsetWidth) / 2) + 'px';
+          if (size !== undefined && size !== ui.modal.nameFullscreen) {
+            content.style.width = content.offsetWidth + 'px';
+            content.setAttribute(ui.modal.dataOpenSize, content.offsetWidth);
+            content.style.height = content.offsetHeight + 'px';
+          }
+          setTimeout(function () {
+            ui.addClass(win, ui.modal.nameShowEase);
+            ui.removeClass(win, ui.modal.nameActive);
+            modalResizer();
+            setTimeout(function () {
+              ui.trigger(document, ui.globals.eventDomChange);
+            }, ui.globals.ease);
+            if (props.callback !== undefined) {
+              setTimeout(function () {
+                props.callback.call(content);
+              }, ui.globals.ease * 2);
+            }
+          }, 10);
+        }, ui.globals.ease);
+      }, 10);
+    }
+    if (props.type === undefined) {
+      props.source = ui.find(props.source);
+      if (props.source[0] === undefined) {
+        return;
+      }
+      created = ui.closest(props.source, '.' + ui.modal.targetWin);
+      if (created.length > 0) {
+        ui.addClass(created, ui.modal.nameActive);
+        win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameActive)[0];
+        content = ui.find('.' + ui.modal.nameContent, win)[0];
+        showModal();
+        forms = ui.find('form', content);
+        ui.each(forms, function () {
+          this.reset();
+        });
+      } else {
+        temp = document.createDocumentFragment();
+        ui.each(props.source, function (i) {
+          temp.appendChild(props.source[i]);
+        });
+        createModal();
+        content.appendChild(temp);
+        checkHeaderFooter();
+        showModal();
+      }
+    } else {
+      typeArr = [ui.modal.typeAjax, ui.modal.typeIframe];
+      if (typeArr.indexOf(props.type) > -1) {
+        type = props.type;
+      }
+      if (type === ui.modal.typeIframe) {
+        temp = '<iframe ' + 'class="' + ui.modal.nameIframe + ' ' + ui.modal.nameRemovable + '" ' + 'src="' + props.source + '" ' + 'frameborder="0" ' + 'allowfullscreen' + '>' + '</iframe>';
+        createModal();
+        content.insertAdjacentHTML('beforeend', temp);
+        showModal();
+      } else if (type === ui.modal.typeAjax) {
+        ui.ajax({
+          url: props.source,
+          callback: function callback(status, response) {
+            if (status === 'success') {
+              temp = '<div class="' + ui.modal.target + ' ' + ui.modal.nameRemovable + '">' + response + '</div>';
+              createModal();
+              content.insertAdjacentHTML('beforeend', temp);
+              checkHeaderFooter();
+              showModal();
+            }
+          }
+        });
+      }
+    }
+    return false;
+  };
+  ui.modal.Start = function () {
     function userClose() {
       var p = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow + '.' + ui.modal.nameClosable)[0];
       if (p !== undefined) {

@@ -11,7 +11,7 @@ interface modalProps {
 
     children?: React.ReactNode,
 
-    as?: 'div' | 'span',
+    as: 'div' | 'span',
 
     id?: any,
     className?: string,
@@ -96,19 +96,9 @@ const ModalOpen = function (
 
     }
 
-interface ModalCloseProps {
-    callback?(): any,
+const ModalClose = function () {
+    ui.modal.close();
 }
-
-const ModalClose = function (
-
-    { callback }:ModalCloseProps) {
-
-        ui.modal.close({
-            callback: callback,
-        });
-
-    }
 
 interface modalHeaderProps {
 
@@ -178,7 +168,7 @@ const modalButtons = function (
 
         // classes
         const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-modal-butons' + setClassName;
+        const classes = 'ui-modal-buttons ui-ease-1st-btn' + setClassName;
 
         return (
             <div id={id} className={classes} style={style}>
