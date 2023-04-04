@@ -13,7 +13,6 @@ const icon_calendar = '<path d="M12 263a11 11 0 0 1-11-11V28a11 11 0 0 1 11-11h3
 import '@less/modules/calendar';
 import '@js/modules/calendar';
 
-
 const Calendar = function () {
 
     useEffect(() => {

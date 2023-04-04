@@ -44,62 +44,6 @@ let Modal = function (
 
     }
 
-interface ModalOpenProps {
-
-    source: string,
-
-    bg?: 'true' | 'false',
-    closable?: boolean,
-
-    type?: 'ajax' | 'iframe',
-    size?: 'lg' |'md' | 'sm' | 'fullscreen' | 'inline' | {
-        width: number, height: number
-    },
-
-    callback?(): any,
-
-}
-
-const ModalOpen = function (
-
-    { source, bg, closable, type, size, callback }:ModalOpenProps) {
-
-        // styling classnames
-        ui.modal.stylesContent = 'ui-round ui-shadow-lg ui-ease-layout';
-
-         // icons
-         ui.globals.inlineSvg = true;
-         ui.modal.closeIcon = icon_remove;
-
-        // sizes
-        let setSize = null;
-
-        if (size instanceof Object) {
-
-            const width = size.width ? size.width : null;
-            const height = size.height ? size.height : null;
-
-            if (width && height) {
-                setSize = width + 'x' + height;
-            }
-
-        } else { setSize = size ? size : null; }
-
-        ui.modal.open({
-            source: source,
-            size: setSize,
-            type: type,
-            bg: bg,
-            closable: closable,
-            callback: callback,
-        });
-
-    }
-
-const ModalClose = function () {
-    ui.modal.close();
-}
-
 interface modalHeaderProps {
 
     children?: React.ReactNode,
@@ -230,10 +174,63 @@ const modalFooter = function (
 
     }
 
-export default Object.assign(Modal, {
-    Open: ModalOpen,
-    Close: ModalClose,
+interface ModalOpenProps {
 
+    source: string,
+
+    bg?: 'true' | 'false',
+    closable?: boolean,
+
+    type?: 'ajax' | 'iframe',
+    size?: 'lg' |'md' | 'sm' | 'fullscreen' | 'inline' | {
+        width: number, height: number
+    },
+
+    callback?(): any,
+
+}
+
+export const modalOpen = function (
+
+    { source, bg, closable, type, size, callback }:ModalOpenProps) {
+
+        // styling classnames
+        ui.modal.stylesContent = 'ui-round ui-shadow-lg ui-ease-layout';
+
+        // icons
+        ui.globals.inlineSvg = true;
+        ui.modal.closeIcon = icon_remove;
+
+        // sizes
+        let setSize = null;
+
+        if (size instanceof Object) {
+
+            const width = size.width ? size.width : null;
+            const height = size.height ? size.height : null;
+
+            if (width && height) {
+                setSize = width + 'x' + height;
+            }
+
+        } else { setSize = size ? size : null; }
+
+        ui.modal.open({
+            source: source,
+            size: setSize,
+            type: type,
+            bg: bg,
+            closable: closable,
+            callback: callback,
+        });
+
+    }
+
+export const modalClose = function () {
+    ui.modal.close();
+}
+
+export default Object.assign(Modal, {
     Header: modalHeader,
     Title: modalTitle,
 
