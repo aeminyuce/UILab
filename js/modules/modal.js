@@ -7,6 +7,7 @@ ui.modal = {
 
     // targets
     target: 'ui-modal',
+    targetHolder: 'body',
     targetWin: 'ui-modal-win',
     targetBg: 'ui-modal-bg',
 
@@ -277,7 +278,7 @@ ui.modal = {
                     html += '<div class="' + ui.modal.targetBg + ' ' + ui.modal.stylesModalBg + '"></div>';
                 }
 
-                ui.find('body')[0].insertAdjacentHTML('beforeend', html);
+                ui.find(ui.modal.targetHolder)[0].insertAdjacentHTML('beforeend', html);
 
                 win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameActive)[0];
                 content = ui.find('.' + ui.modal.nameContent, win)[0];

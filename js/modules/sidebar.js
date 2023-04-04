@@ -7,6 +7,7 @@ ui.sidebar = {
 
     // targets
     target: 'ui-sidebar',
+    targetHolder: 'body',
     targetBg: 'ui-sidebar-bg',
 
     // main classnames
@@ -162,7 +163,7 @@ ui.sidebar = {
                 bg = ui.find('.' + ui.sidebar.targetBg)[0];
                 if (bg === undefined) {
 
-                    ui.find('body')[0].insertAdjacentHTML(
+                    ui.find(ui.sidebar.targetHolder)[0].insertAdjacentHTML(
                         'beforeend',
                         '<div class="' + ui.sidebar.targetBg + ' ' + ui.sidebar.stylesBg + '"></div>'
                     );
