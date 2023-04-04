@@ -194,6 +194,9 @@ export const modalOpen = function (
 
     { source, bg, closable, type, size, callback }:ModalOpenProps) {
 
+        // targets
+        ui.modal.targetHolder = '#app';
+
         // styling classnames
         ui.modal.stylesContent = 'ui-round ui-shadow-lg ui-ease-layout';
 
