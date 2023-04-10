@@ -95,7 +95,7 @@ interface GridRowProps {
 
     children?: React.ReactNode,
 
-    as?: 'dl',
+    as?: 'span' | 'dl',
 
     align?: 'l' | 'c' | 'r',
     fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs',
@@ -157,14 +157,20 @@ const GridRow = function (
 
         return (
             <>
-                {as === 'dl' ?
-                    <dl className={classes} {...setData} style={style}>
-                        {children}
-                    </dl>
-                    :
+                {!as &&
                     <div className={classes} {...setData} style={style}>
                         {children}
                     </div>
+                }
+                {as === 'span' &&
+                    <span className={classes} {...setData} style={style}>
+                        {children}
+                    </span>
+                }
+                {as === 'dl' &&
+                    <dl className={classes} {...setData} style={style}>
+                        {children}
+                    </dl>
                 }
             </>
         );
@@ -176,7 +182,7 @@ interface GridColProps {
 
     children?: React.ReactNode,
 
-    as?: 'dt' | 'dd',
+    as?: 'span' | 'dt' | 'dd',
 
     size: typeof gridSizes | string, // string: for string col names
     offset?: typeof gridSizes,
@@ -313,6 +319,11 @@ const GridCol = function (
                         {children}
                     </div>
                 }
+                {(as === 'span') &&
+                    <span className={classes} {...setData} style={style}>
+                        {children}
+                    </span>
+                }
                 {(as === 'dt') &&
                     <dt className={classes} {...setData} style={style}>
                         {children}
@@ -331,6 +342,8 @@ interface GridStaticProps {
 
     children?: React.ReactNode,
 
+    as?: 'span',
+
     fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs',
 
     className?: string,
@@ -340,7 +353,7 @@ interface GridStaticProps {
 
 const GridStatic = function (
 
-    { children, fluid, className, style }:GridStaticProps) {
+    { children, as, fluid, className, style }:GridStaticProps) {
 
         // classes
         const setFluid = fluid ? ' ui-' + fluid + '-fluid' : '';
@@ -349,9 +362,18 @@ const GridStatic = function (
         const classes = 'ui-col-static' + setFluid + setClassName;
 
         return (
-            <div className={classes} style={style}>
-                {children}
-            </div>
+            <>
+                {!as &&
+                    <div className={classes} style={style}>
+                        {children}
+                    </div>
+                }
+                {as === 'span' &&
+                    <span className={classes} style={style}>
+                        {children}
+                    </span>
+                }
+            </>
         );
     }
 
