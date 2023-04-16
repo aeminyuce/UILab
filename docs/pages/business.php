@@ -577,7 +577,7 @@
                                                     <h4 class="ui-h4">Report Intensity</h4>
                                                 </div>
                                                 <div class="ui-card-side ui-p-15">
-                                                    <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,28" data-ui-step="6"
+                                                    <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,23" data-ui-step="6"
                                                         data-ui-x="01.12.2019,02.12.2019,03.12.2019,04.12.2019,05.12.2019,06.12.2019,07.12.2019,08.12.2019,09.12.2019,10.12.2019,11.12.2019,12.12.2019,13.12.2019,14.12.2019,15.12.2019,16.12.2019,17.12.2019,18.12.2019">
                                                         <ul class="ui-line-chart" data-ui-type="filled">
                                                             <li data-ui-y="64"></li>

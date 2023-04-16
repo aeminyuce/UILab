@@ -969,12 +969,12 @@
                                             </ul>
                                         </div>
                                         <select class="ui-datatable-show ui-hidden">
-                                            <option>4</option>
+                                            <option>3</option>
                                         </select>
                                     </div>
                                 </div>
 
-                                <span class="ui-sp-15"></span>
+                                <span class="ui-sp-20"></span>
 
                                 <div class="ui-datatable-container">
 
@@ -1494,7 +1494,7 @@
 
                                 </div>
 
-                                <span class="ui-sp-10"></span>
+                                <span class="ui-sp-20"></span>
 
                                 <div class="ui-row ui-no-row-gap ui-no-fluid">
                                     <div class="ui-col-4">
