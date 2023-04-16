@@ -7932,7 +7932,7 @@ button.ui-dialog-custom {
 .ui-calendar th {
   font-weight: 700;
   vertical-align: bottom !important;
-  padding: 14px;
+  padding: 8px;
 }
 .ui-calendar tbody td {
   padding: 2px;
@@ -7940,17 +7940,17 @@ button.ui-dialog-custom {
 .ui-calendar tbody td.ui-calendar-days-passive span {
   box-sizing: border-box;
   font-size: 16px;
-  min-height: 42px;
-  padding: 10px;
+  min-height: 32px;
+  padding: 4px;
   display: block;
   opacity: 0.45;
 }
 .ui-calendar tbody td button {
   font-size: 16px;
   width: 100%;
-  min-height: 42px;
+  min-height: 32px;
   background: transparent;
-  padding: 12px;
+  padding: 6px;
   display: block;
   border: 0;
   position: relative;
@@ -8008,10 +8008,10 @@ button.ui-dialog-custom {
 }
 .ui-calendar caption {
   box-sizing: border-box;
-  height: 58px;
+  height: 52px;
   background-color: hsla(0, 0%, 0%, 0.1);
   background-color: var(--ui-calendar-highlighted-bg);
-  padding: 5px 58px;
+  padding: 5px 52px;
   margin-bottom: 5px;
   caption-side: top;
 }
@@ -8019,16 +8019,16 @@ button.ui-dialog-custom {
   font-size: 16px;
   white-space: nowrap;
   text-overflow: ellipsis;
-  line-height: 28px;
+  line-height: 32px;
   max-width: 138px;
-  height: 48px;
+  height: 42px;
   background-color: transparent;
   overflow: hidden;
   border: 0;
 }
 .ui-calendar caption > button {
-  width: 48px;
-  padding: 10px;
+  width: 42px;
+  padding: 5px;
   display: block;
 }
 .ui-calendar caption > button .ui-icon {
@@ -8037,11 +8037,11 @@ button.ui-dialog-custom {
   opacity: 0.65;
 }
 .ui-calendar-prev {
-  margin-left: -53px;
+  margin-left: -47px;
   float: left;
 }
 .ui-calendar-next {
-  margin-right: -53px;
+  margin-right: -47px;
   float: right;
 }
 .ui-calendar-title {
@@ -8054,11 +8054,11 @@ button.ui-dialog-custom {
 }
 .ui-calendar-month {
   font-weight: 700;
-  padding: 10px 5px 10px 10px;
+  padding: 5px 2.5px 5px 5px;
 }
 .ui-calendar-year {
   font-weight: 700;
-  padding: 10px 10px 10px 5px;
+  padding: 5px 5px 5px 2.5px;
 }
 .ui-calendar.ui-round caption,
 .ui-calendar.ui-round caption button {
@@ -8114,9 +8114,9 @@ button.ui-dialog-custom {
   visibility: hidden;
 }
 .ui-calendar-details {
-  padding-left: 47px;
+  padding-left: 37px;
   position: absolute;
-  top: 63px;
+  top: 57px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -8126,7 +8126,7 @@ button.ui-dialog-custom {
   display: none;
 }
 .ui-calendar-details > button {
-  width: 42px;
+  width: 32px;
   height: 100%;
   border: 0;
   position: absolute;
@@ -8340,7 +8340,7 @@ button.ui-dialog-custom {
 }
 @media (min-width: 481px) {
   .ui-input .ui-calendar {
-    min-width: 360px;
+    min-width: 260px;
   }
 }
 @media (max-width: 480px) {

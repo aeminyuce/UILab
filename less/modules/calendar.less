@@ -5,20 +5,20 @@
 
 @calendar-padding:                      5px;
 @calendar-max-width:                    (@sm-breakpoint - @highlight-space - (@border-dual * 2));
-@calendar-min-width:                    360px;
+@calendar-min-width:                    260px;
 @calendar-min-width-mobile:             (@layout-min - 55px);
 @calendar-shadow-size:                  5px 15px;
 
-@calendar-days-padding:                 14px;
+@calendar-days-padding:                 8px;
 @calendar-days-gap:                     2px;
 @calendar-days-passive-opacity:         .45;
 @calendar-icons-opacity:                .65;
 
 @calendar-caption-padding:              5px;
 
-@calendar-caption-buttons-padding:      10px;
+@calendar-caption-buttons-padding:      5px;
 @calendar-caption-buttons-max-width:    138px;
-@calendar-caption-buttons-size:         @btn-lg;
+@calendar-caption-buttons-size:         @btn-default;
 @calendar-caption-buttons-icon-size:    20px;
 
 @calendar-today-btn-bg:                 fade(@black, 15%);
@@ -43,7 +43,7 @@
 @calendar-weekend-bg:                   fade(@black, 4%);
 @calendar-weekend-bg-dark:              fade(@white, 4%);
 
-@calendar-details-toggle-btn-size:      @btn-default;
+@calendar-details-toggle-btn-size:      @btn-sm;
 @calendar-details-toggle-btn-icon-size: 20px;
 
 @calendar-details-slide-size:           20%;
@@ -126,10 +126,10 @@
                 padding: @calendar-days-gap;
 
                 &.ui-calendar-days-passive {
-                    span { box-sizing: border-box; font-size: @font-16; min-height: @btn-default; padding: (@calendar-days-padding - (@calendar-days-gap * 2)); display: block; opacity: @calendar-days-passive-opacity; }
+                    span { box-sizing: border-box; font-size: @font-16; min-height: @btn-sm; padding: (@calendar-days-padding - (@calendar-days-gap * 2)); display: block; opacity: @calendar-days-passive-opacity; }
                 }
 
-                button { font-size: @font-16; width: 100%; min-height: @btn-default; background: @no-color; padding: (@calendar-days-padding - @calendar-days-gap); display: block; border: 0; position: relative; }
+                button { font-size: @font-16; width: 100%; min-height: @btn-sm; background: @no-color; padding: (@calendar-days-padding - @calendar-days-gap); display: block; border: 0; position: relative; }
 
                 &.ui-calendar-toggle-details {
                     button {
@@ -252,7 +252,7 @@
 
             &:not(.ui-open) { display: none; }
             & > button {
-                width: @btn-default; height: 100%; border: 0; position: absolute; top: 0; left: 0; cursor: pointer;
+                width: @btn-sm; height: 100%; border: 0; position: absolute; top: 0; left: 0; cursor: pointer;
 
                 .ui-icon { ._icon(@calendar-details-toggle-btn-icon-size); opacity: @calendar-icons-opacity; }
             }
