@@ -763,10 +763,7 @@ ui.calendar.Start = () => {
                     const form = item.parentElement;
 
                     ui.removeClass(item, ui.calendar.nameOpenEase);
-
-                    setTimeout(() => {
-                        removePicker(form, item);
-                    }, ui.globals.ease);
+                    removePicker(form, item);
 
                 });
 

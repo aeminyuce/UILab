@@ -3060,9 +3060,7 @@ ui.calendar.Start = function () {
       Array.prototype.forEach.call(allPickers, function (item) {
         var form = item.parentElement;
         ui.removeClass(item, ui.calendar.nameOpenEase);
-        setTimeout(function () {
-          removePicker(form, item);
-        }, ui.globals.ease);
+        removePicker(form, item);
       });
     }
     ui.off('body', 'mousedown.' + ui.calendar.eventClose);
