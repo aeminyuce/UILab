@@ -2660,6 +2660,7 @@ ui.alerts = {
 })();
 ui.calendar = {
   target: 'ui-calendar',
+  targetHolder: 'body',
   nameContainer: 'ui-calendar-container',
   nameTitle: 'ui-calendar-title',
   nameDetails: 'ui-calendar-details',
@@ -3060,10 +3061,12 @@ ui.calendar.Start = function () {
       Array.prototype.forEach.call(allPickers, function (item) {
         var form = item.parentElement;
         ui.removeClass(item, ui.calendar.nameOpenEase);
-        removePicker(form, item);
+        setTimeout(function () {
+          removePicker(form, item);
+        }, ui.globals.ease);
       });
     }
-    ui.off('body', 'mousedown.' + ui.calendar.eventClose);
+    ui.off(ui.calendar.targetHolder, 'mousedown.' + ui.calendar.eventClose);
     ui.off(target, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
   }
   ui.on(document, 'focus', '.' + ui.calendar.namePicker + ' > [type="text"]', function () {
@@ -3073,7 +3076,7 @@ ui.calendar.Start = function () {
       return;
     }
     ui.addClass(document, ui.calendar.namePickerOpened);
-    ui.off('body', 'mousedown.' + ui.calendar.eventClose);
+    ui.off(ui.calendar.targetHolder, 'mousedown.' + ui.calendar.eventClose);
     ui.off(this, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
     var html = '<div class="' + ui.calendar.target;
     if (ui.hasClass(form, ui.calendar.nameRound)) {
@@ -3105,7 +3108,7 @@ ui.calendar.Start = function () {
     setTimeout(function () {
       ui.addClass(picker, ui.calendar.nameOpenEase);
     }, 10);
-    ui.on(document, 'mousedown.' + ui.calendar.eventClose, function (ev) {
+    ui.on(ui.calendar.targetHolder, 'mousedown.' + ui.calendar.eventClose, function (ev) {
       if (ui.closest(ev.target, form)[0] !== undefined) {
         return;
       }

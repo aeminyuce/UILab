@@ -7,6 +7,7 @@ ui.calendar = {
 
     // targets
     target: 'ui-calendar',
+    targetHolder: 'body',
 
     // main classnames
     nameContainer: 'ui-calendar-container',
@@ -763,14 +764,17 @@ ui.calendar.Start = () => {
                     const form = item.parentElement;
 
                     ui.removeClass(item, ui.calendar.nameOpenEase);
-                    removePicker(form, item);
+
+                    setTimeout(() => {
+                        removePicker(form, item);
+                    }, ui.globals.ease);
 
                 });
 
         }
 
         // remove event listeners
-        ui.off('body', 'mousedown.' + ui.calendar.eventClose);
+        ui.off(ui.calendar.targetHolder, 'mousedown.' + ui.calendar.eventClose);
         ui.off(target, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
 
     }
@@ -790,7 +794,7 @@ ui.calendar.Start = () => {
             ui.addClass(document, ui.calendar.namePickerOpened);
 
             // remove event listeners
-            ui.off('body', 'mousedown.' + ui.calendar.eventClose);
+            ui.off(ui.calendar.targetHolder, 'mousedown.' + ui.calendar.eventClose);
             ui.off(this, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
 
             // create picker
@@ -846,7 +850,7 @@ ui.calendar.Start = () => {
             }, 10);
 
             // close event listeners
-            ui.on(document,
+            ui.on(ui.calendar.targetHolder,
                 'mousedown.' + ui.calendar.eventClose,
 
                 (ev) => {
