@@ -95,7 +95,7 @@ ui.calendar = {
 
     // custom events
     eventClose: 'ui:pickerClose',
-    eventChange: 'ui:pickerChange'
+    pickerChange: 'ui:pickerChange'
 
 };
 
@@ -775,7 +775,7 @@ ui.calendar.Start = () => {
 
         // remove event listeners
         ui.off(ui.calendar.targetHolder, 'mousedown.' + ui.calendar.eventClose);
-        ui.off(target, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
+        ui.off(target, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.pickerChange);
 
     }
 
@@ -795,7 +795,7 @@ ui.calendar.Start = () => {
 
             // remove event listeners
             ui.off(ui.calendar.targetHolder, 'mousedown.' + ui.calendar.eventClose);
-            ui.off(this, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
+            ui.off(this, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.pickerChange);
 
             // create picker
             let html = '<div class="' + ui.calendar.target;
@@ -879,7 +879,7 @@ ui.calendar.Start = () => {
 
             // change event
             ui.on(this,
-                'keyup.' + ui.calendar.eventChange,
+                'keyup.' + ui.calendar.pickerChange,
 
                 function () {
 
@@ -932,6 +932,8 @@ ui.calendar.Start = () => {
             } else {
                 form.value = day + ui.calendar.pickerSep + month + ui.calendar.pickerSep + date.getFullYear(); // dd mm yyyy
             }
+
+            ui.trigger(document, ui.calendar.pickerChange); // set custom event
 
             // close picker
             pickerCloseFnc('default', form);

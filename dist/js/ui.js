@@ -2715,7 +2715,7 @@ ui.calendar = {
   dataDay: 'data-ui-day',
   dataD: 'data-ui-d',
   eventClose: 'ui:pickerClose',
-  eventChange: 'ui:pickerChange'
+  pickerChange: 'ui:pickerChange'
 };
 ui.calendar.Start = function () {
   function getAttr(that, date, newDate) {
@@ -3067,7 +3067,7 @@ ui.calendar.Start = function () {
       });
     }
     ui.off(ui.calendar.targetHolder, 'mousedown.' + ui.calendar.eventClose);
-    ui.off(target, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
+    ui.off(target, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.pickerChange);
   }
   ui.on(document, 'focus', '.' + ui.calendar.namePicker + ' > [type="text"]', function () {
     var _this4 = this;
@@ -3077,7 +3077,7 @@ ui.calendar.Start = function () {
     }
     ui.addClass(document, ui.calendar.namePickerOpened);
     ui.off(ui.calendar.targetHolder, 'mousedown.' + ui.calendar.eventClose);
-    ui.off(this, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.eventChange);
+    ui.off(this, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.pickerChange);
     var html = '<div class="' + ui.calendar.target;
     if (ui.hasClass(form, ui.calendar.nameRound)) {
       html += ' ' + ui.calendar.nameRound;
@@ -3121,7 +3121,7 @@ ui.calendar.Start = function () {
         pickerCloseFnc('continuous', this);
       }
     });
-    ui.on(this, 'keyup.' + ui.calendar.eventChange, function () {
+    ui.on(this, 'keyup.' + ui.calendar.pickerChange, function () {
       inputDate = pickerVal(this);
       if (inputDate === '') {
         createFnc(picker);
@@ -3152,6 +3152,7 @@ ui.calendar.Start = function () {
     } else {
       form.value = day + ui.calendar.pickerSep + month + ui.calendar.pickerSep + date.getFullYear();
     }
+    ui.trigger(document, ui.calendar.pickerChange);
     pickerCloseFnc('default', form);
   });
   ui.on(document, 'click', '.' + ui.calendar.target + ' .' + ui.calendar.nameToggleDetails, function () {
