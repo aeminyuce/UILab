@@ -7377,12 +7377,12 @@ html:not(.ui-ie) .ui-steps-bar li {
   border-radius: 0 !important;
 }
 .ui-modal-content.ui-modal-fullscreen .ui-modal-header .ui-modal-buttons {
-  padding-right: 53px;
+  padding-right: 51px;
 }
 .ui-modal-content.ui-modal-fullscreen .ui-modal-close {
   background-color: hsla(0, 0%, 0%, 0.2);
-  top: 10px;
-  right: 10px;
+  top: 6px;
+  right: 6px;
 }
 .ui-desktop .ui-modal-content.ui-modal-fullscreen .ui-modal-close:hover {
   background-color: hsla(0, 0%, 0%, 0.35);
@@ -7406,10 +7406,10 @@ html:not(.ui-ie) .ui-steps-bar li {
   border-radius: 9px;
 }
 .ui-modal-content.ui-modal-has-header .ui-modal {
-  padding-top: 62px !important;
+  padding-top: 54px !important;
 }
 .ui-modal-content.ui-modal-has-footer .ui-modal {
-  padding-bottom: 62px !important;
+  padding-bottom: 54px !important;
 }
 .ui-modal-content .ui-modal-close {
   color: hsl(0, 0%, 100%) !important;
@@ -7442,9 +7442,9 @@ html:not(.ui-ie) .ui-steps-bar li {
 .ui-modal-header > .ui-row,
 .ui-modal-container > .ui-row,
 .ui-modal-footer > .ui-row {
-  margin-top: -10px;
+  margin-top: -6px;
   margin-right: inherit;
-  margin-bottom: -10px;
+  margin-bottom: -6px;
   margin-left: inherit;
 }
 .ui-modal-header > .ui-fixed,
@@ -7452,8 +7452,8 @@ html:not(.ui-ie) .ui-steps-bar li {
 .ui-modal-footer > .ui-fixed {
   padding-right: 0;
   padding-left: 0;
-  margin-top: -10px;
-  margin-bottom: -10px;
+  margin-top: -6px;
+  margin-bottom: -6px;
 }
 .ui-modal-header,
 .ui-modal-footer {
@@ -7461,7 +7461,7 @@ html:not(.ui-ie) .ui-steps-bar li {
   white-space: nowrap;
   background-color: hsl(0, 0%, 100%);
   background-color: var(--ui-highlighted);
-  padding: 10px;
+  padding: 6px;
   overflow: hidden;
   position: absolute;
   right: 0;
@@ -7482,7 +7482,7 @@ html:not(.ui-ie) .ui-steps-bar li {
   margin: 8px 0;
 }
 .ui-modal-header {
-  height: 62px;
+  height: 54px;
   top: 0;
   z-index: 9;
 }
@@ -7501,10 +7501,10 @@ html:not(.ui-ie) .ui-steps-bar li {
   float: left;
 }
 .ui-modal-container {
-  min-height: 20px;
+  min-height: 12px;
   height: 100%;
   max-height: 100%;
-  padding: 10px;
+  padding: 6px;
   overflow: auto;
   position: relative;
 }
@@ -7522,7 +7522,7 @@ html:not(.ui-ie) .ui-steps-bar li {
   left: 0;
 }
 .ui-modal-footer {
-  height: 62px;
+  height: 54px;
   bottom: 0;
   z-index: 9;
 }
