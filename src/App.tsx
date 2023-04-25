@@ -4,9 +4,7 @@ import TopButton from '@components/TopButton';
 
 // layouts
 import PageLoader from '@layouts/PageLoader';
-
-// utils
-import RoutePaths from '@utils/RoutePaths';
+import RoutePaths from '@layouts/RoutePaths';
 
 export default function () {
     return (

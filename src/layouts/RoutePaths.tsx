@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
+// layouts
+import PageTitle from '@layouts/PageTitle';
+
 // utils
 import {
 
@@ -8,7 +11,6 @@ import {
     Calendar,
 
 } from '@utils/PageRoutes';
-import PageTitle from '@utils/PageTitle';
 
 export default function () {
     return (

@@ -16,7 +16,7 @@ const config = {
         },
     },
     resolve: {
-        extensions: ['.js', '.tsx', '.less'], // file types
+        extensions: ['.js', '.ts', '.tsx', '.less'], // file types
         alias: {
             '@ui': path.resolve(__dirname, 'js/core/globals'),
             '@layouts': path.resolve(__dirname, './src/layouts/'),
