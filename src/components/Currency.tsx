@@ -88,6 +88,8 @@ const CurrencyForm = function (
         let childrenClasses = setRequired;
         childrenClasses = childrenClasses.replace(/^\s+/g, ''); // remove first spaces
 
+        if (childrenClasses === '') childrenClasses = null;
+
         return (
             <div className={classes} style={style}>
                 <input id={id} ref={myRef} type="text" name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} placeholder={placeholder}

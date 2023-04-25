@@ -127,6 +127,8 @@ const FormInput = function (
         let childrenClasses = setNumber + setWord + setRequired;
         childrenClasses = childrenClasses.replace(/^\s+/g, ''); // remove first spaces
 
+        if (childrenClasses === '') childrenClasses = null;
+
         return (
             <div className={classes} style={style}>
                 {children}
@@ -198,6 +200,8 @@ const FormTextarea = function (
 
         let childrenClasses = setRequired;
         childrenClasses = childrenClasses.replace(/^\s+/g, ''); // remove first spaces
+
+        if (childrenClasses === '') childrenClasses = null;
 
         return (
             <div className={classes} style={style} data-ui-counter={counter}>
