@@ -7,6 +7,9 @@
 @modal-z-index:                         89;
 @modal-bg:                              fade(@black, 42%);
 
+@modal-highlighted-bg:                  hsl(0, 0%, 94%);
+@modal-highlighted-bg-dark:             hsl(220, 8%, 28%);
+
 @modal-inline-mobile-width:             90%;
 
 @modal-header-height:                   (@btn-default + (@modal-padding * 2));
@@ -30,6 +33,29 @@
 @modal-content-sm-min-height:           120px;
 
 & when (@referenceCompiling = false) { // not compiled when reference importing
+
+    ._global-vars () {
+        --ui-modal-highlighted-bg: @modal-highlighted-bg;
+    }
+    ._global-vars-dark () {
+        --ui-modal-highlighted-bg: @modal-highlighted-bg-dark;
+    }
+
+    & when (@dark-mode = true) {
+        & when (@dark-mode-auto-switcher = true) {
+            @media (prefers-color-scheme: light) {
+                :root { ._global-vars(); }
+            }
+            @media (prefers-color-scheme: dark) {
+                :root { ._global-vars-dark(); }
+            }
+        }
+        & when (@dark-mode-auto-switcher = false) {
+            [data-ui-mode="light"] { ._global-vars(); }
+            [data-ui-mode="dark"] { ._global-vars-dark(); }
+        }
+    }
+
 
     .ui-modal {
         display: none;
@@ -70,7 +96,7 @@
         }
 
         &-content {
-            min-width: @modal-content-min-width; ._bg-var(body-bg); position: fixed;
+            min-width: @modal-content-min-width; ._bg-var(card-bg); position: fixed;
 
             &:not(.ui-modal-fullscreen) {
                 max-height: calc(100% - (@modal-content-margin * 2));
@@ -138,7 +164,7 @@
             & > .ui-fixed { padding-right: 0; padding-left: 0; margin-top: -@modal-padding; margin-bottom: -@modal-padding; }
         }
         &-header,&-footer {
-            text-overflow: ellipsis; white-space: nowrap; ._bg-var(highlighted); padding: @modal-padding; overflow: hidden; position: absolute; right: 0; left: 0;
+            text-overflow: ellipsis; white-space: nowrap; ._bg-var(modal-highlighted-bg); padding: @modal-padding; overflow: hidden; position: absolute; right: 0; left: 0;
 
             .ui-btn-lg,&.ui-form-lg .ui-btn { margin: ((@btn-default - @btn-lg) / 2) 0; }
             .ui-btn {

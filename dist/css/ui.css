@@ -7283,6 +7283,12 @@ html:not(.ui-ie) .ui-steps-bar li {
   left: 0;
 }
 /* modal */
+[data-ui-mode="light"] {
+  --ui-modal-highlighted-bg: hsl(0, 0%, 94%);
+}
+[data-ui-mode="dark"] {
+  --ui-modal-highlighted-bg: hsl(220, 8%, 28%);
+}
 .ui-modal {
   display: none;
 }
@@ -7347,8 +7353,8 @@ html:not(.ui-ie) .ui-steps-bar li {
 }
 .ui-modal-content {
   min-width: 280px;
-  background-color: hsl(0, 0%, 98%);
-  background-color: var(--ui-body-bg);
+  background-color: hsl(0, 0%, 100%);
+  background-color: var(--ui-card-bg);
   position: fixed;
 }
 .ui-modal-content:not(.ui-modal-fullscreen) {
@@ -7459,8 +7465,8 @@ html:not(.ui-ie) .ui-steps-bar li {
 .ui-modal-footer {
   text-overflow: ellipsis;
   white-space: nowrap;
-  background-color: hsl(0, 0%, 100%);
-  background-color: var(--ui-highlighted);
+  background-color: hsl(0, 0%, 94%);
+  background-color: var(--ui-modal-highlighted-bg);
   padding: 6px;
   overflow: hidden;
   position: absolute;
