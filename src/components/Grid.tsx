@@ -97,6 +97,8 @@ interface GridRowProps {
 
     as?: 'span' | 'dl',
 
+    formHolder?: boolean,
+
     align?: 'l' | 'c' | 'r',
     fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs',
 
@@ -112,9 +114,10 @@ interface GridRowProps {
 
 const GridRow = function (
 
-    { children, as, align, fluid, gap, vGap, hGap, className, data, style }:GridRowProps) {
+    { children, as, formHolder, align, fluid, gap, vGap, hGap, className, data, style }:GridRowProps) {
 
         // classes
+        const setFormHolder = formHolder ? ' ui-form-holder' : '';
         const setAlign = align ? ' ui-row-align-' + align : '';
         const setFluid = fluid ? ' ui-' + fluid + '-fluid' : '';
 
@@ -143,7 +146,7 @@ const GridRow = function (
         }
 
         const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-row' + setAlign + setFluid + setGap + setVGap + setHGap + setClassName;
+        const classes = 'ui-row' + setFormHolder + setAlign + setFluid + setGap + setVGap + setHGap + setClassName;
 
         // data attributes
         let setData = [];
