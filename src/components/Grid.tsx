@@ -119,10 +119,14 @@ const GridRow = function (
         // classes
         const setFormHolder = formHolder ? ' ui-form-holder' : '';
         const setAlign = align ? ' ui-row-align-' + align : '';
-        const setFluid = fluid ? ' ui-' + fluid + '-fluid' : '';
+
+        let setFluid = fluid ? ' ui-' + fluid + '-fluid' : '';
+        if (formHolder) setFluid = ' ui-no-fluid';
 
         let setGap = '';
-        if (gap) {
+
+        if (formHolder) setGap = ' ui-no-row-gap';
+        else if (gap) {
 
             if (gap === 'no') setGap = ' ui-no-row-gap';
             else setGap = ' ui-row-gap-' + gap;
@@ -130,7 +134,8 @@ const GridRow = function (
         }
 
         let setVGap = '';
-        if (vGap) {
+
+        if (!formHolder && vGap) {
 
             if (vGap === 'no') setVGap = ' ui-no-row-gap-v';
             else setVGap = ' ui-row-gap-' + vGap + '-v';
@@ -138,7 +143,8 @@ const GridRow = function (
         }
 
         let setHGap = '';
-        if (hGap) {
+
+        if (!formHolder && hGap) {
 
             if (hGap === 'no') setHGap = ' ui-no-row-gap-h';
             else setHGap = ' ui-row-gap-' + hGap + '-h';
