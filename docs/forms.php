@@ -1732,6 +1732,15 @@
                     </div>
 
                     <div class="ui-col-3">
+                        <label class="ui-form-info">Number Only Form with Float</label>
+                    </div>
+                    <div class="ui-col-9">
+                        <div class="ui-input ui-round ui-border-dual ui-ease-form">
+                            <input class="ui-number-float" type="text" placeholder="Float Number">
+                        </div>
+                    </div>
+
+                    <div class="ui-col-3">
                         <label class="ui-form-info">Word Only Form</label>
                     </div>
                     <div class="ui-col-9">
@@ -1749,7 +1758,7 @@
                             <div class="ui-row ui-no-row-gap">
                                 <div class="ui-col-12">
                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
-                                        <input type="text" value="3" min="2" max="5" class="ui-number">
+                                        <input type="text" value="3" min="2" max="5" class="ui-number-float">
                                     </div>
                                 </div>
                             </div>

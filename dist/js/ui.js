@@ -1803,6 +1803,7 @@ ui.forms = {
   nameClear: 'ui-form-clear',
   nameShowPass: 'ui-pass-toggle',
   nameNumber: 'ui-number',
+  nameFloatNumber: 'ui-number-float',
   nameWord: 'ui-word',
   nameFormIcon: 'ui-form-icon',
   nameRequired: 'ui-required',
@@ -1891,11 +1892,13 @@ ui.forms = {
         that.setAttribute('type', 'password');
       }
     });
-    ui.on(document, 'input', '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber + ',.' + ui.forms.targetText + ' > .' + ui.forms.nameWord, function () {
+    ui.on(document, 'input', '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber + ',' + '.' + ui.forms.targetText + ' > .' + ui.forms.nameFloatNumber + ',' + '.' + ui.forms.targetText + ' > .' + ui.forms.nameWord, function () {
       var newValues = '';
       var re = null;
       if (ui.hasClass(this, ui.forms.nameNumber)) {
         re = '[0-9]';
+      } else if (ui.hasClass(this, ui.forms.nameFloatNumber)) {
+        re = '[0-9\.]';
       } else if (ui.hasClass(this, ui.forms.nameWord)) {
         re = '[a-zA-Z ' + ui.forms.customLetters + '.-]';
       }

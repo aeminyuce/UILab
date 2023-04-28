@@ -63,6 +63,7 @@ interface FormInputProps {
     multiple?: boolean,
     readOnly?: boolean,
     number?: boolean,
+    numberFloat?: boolean,
     word?: boolean,
     required?: boolean,
     hasClear?: boolean,
@@ -84,7 +85,7 @@ interface FormInputProps {
 
 const FormInput = function (
 
-    { children, onChange, onInput, onBlur, type, name, tabIndex, value, defaultValue, placeholder, disabled, light, inline, autoComplete, icons, multiple, readOnly, word, number, required, hasClear, minlength, maxlength, min, max, myRef, noease, id, className, style }:FormInputProps) {
+    { children, onChange, onInput, onBlur, type, name, tabIndex, value, defaultValue, placeholder, disabled, light, inline, autoComplete, icons, multiple, readOnly, word, number, numberFloat, required, hasClear, minlength, maxlength, min, max, myRef, noease, id, className, style }:FormInputProps) {
 
         // types
         const setType = type ? type : 'text';
@@ -121,10 +122,11 @@ const FormInput = function (
 
         // children classes
         const setNumber = number ? ' ui-number' : '';
+        const setNumberFloat = numberFloat ? ' ui-number-float' : '';
         const setWord = word ? ' ui-word' : '';
         const setRequired = required ? ' ui-required' : '';
 
-        let childrenClasses = setNumber + setWord + setRequired;
+        let childrenClasses = setNumber + setNumberFloat + setWord + setRequired;
         childrenClasses = childrenClasses.replace(/^\s+/g, ''); // remove first spaces
 
         if (childrenClasses === '') childrenClasses = null;

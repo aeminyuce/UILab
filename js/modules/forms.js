@@ -24,6 +24,7 @@ ui.forms = {
 
     nameShowPass: 'ui-pass-toggle',
     nameNumber: 'ui-number',
+    nameFloatNumber: 'ui-number-float',
     nameWord: 'ui-word',
 
     nameFormIcon: 'ui-form-icon',
@@ -208,11 +209,13 @@ ui.forms = {
 
             });
 
-        // number and text only forms
+        // number, float number and text only forms
         ui.on(document,
             'input',
 
-            '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber + ',.' + ui.forms.targetText + ' > .' + ui.forms.nameWord,
+            '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber + ',' +
+            '.' + ui.forms.targetText + ' > .' + ui.forms.nameFloatNumber + ',' +
+            '.' + ui.forms.targetText + ' > .' + ui.forms.nameWord,
 
             function () {
 
@@ -221,6 +224,9 @@ ui.forms = {
 
                 if (ui.hasClass(this, ui.forms.nameNumber)) {
                     re = '[0-9]';
+
+                } else if (ui.hasClass(this, ui.forms.nameFloatNumber)) {
+                    re = '[0-9\.]';
 
                 } else if (ui.hasClass(this, ui.forms.nameWord)) {
                     re = '[a-zA-Z ' + ui.forms.customLetters + '.-]';
