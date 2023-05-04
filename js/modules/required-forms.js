@@ -313,6 +313,16 @@ ui.requiredForms.Start = () => {
     ui.on(document,
         'change',
 
+        '.' + ui.requiredForms.nameInput + ' input.' + ui.requiredForms.target + '[type="date"],' +
+        '.' + ui.requiredForms.nameInput + ' input.' + ui.requiredForms.target + '[type="time"]',
+
+        function () {
+            required(this, ui.requiredForms.nameTypePrefix + this.type);
+        });
+
+    ui.on(document,
+        'change',
+
         '.' + ui.requiredForms.nameSelect + ' select.' + ui.requiredForms.target,
 
         function () {

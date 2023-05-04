@@ -79,6 +79,14 @@
                             <input type="date">
                         </div>
                     </div>
+                    <div class="ui-col-3">
+                        <label class="ui-form-info">HTML5 Time</label>
+                    </div>
+                    <div class="ui-col-9">
+                        <div class="ui-input ui-round ui-border-dual ui-ease-form ui-form-inline-xs">
+                            <input type="time">
+                        </div>
+                    </div>
 
                     <div class="ui-col-3">
                         <label class="ui-form-info">Contact Phone</label>
@@ -1977,6 +1985,28 @@
                                     <i>Choose file.</i>
                                 </div>
                                 <p class="ui-required-msg">Please, select a file.</p>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
+                            </div>
+
+                            <div class="ui-col-3">
+                                <label class="ui-form-info">Required with HTML5 Date</label>
+                            </div>
+                            <div class="ui-col-9">
+                                <div class="ui-input ui-round ui-border-dual ui-ease-form">
+                                    <input class="ui-required" type="date">
+                                </div>
+                                <p class="ui-required-msg">Select a date.</p>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
+                            </div>
+
+                            <div class="ui-col-3">
+                                <label class="ui-form-info">Required with HTML5 Time</label>
+                            </div>
+                            <div class="ui-col-9">
+                                <div class="ui-input ui-round ui-border-dual ui-ease-form">
+                                    <input class="ui-required" type="time">
+                                </div>
+                                <p class="ui-required-msg">Select a time.</p>
                                 <i class="ui-form-hint ui-color-black-25">* Required</i>
                             </div>
 
