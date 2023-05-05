@@ -233,6 +233,13 @@ export const modalClose = function () {
     ui.modal.close();
 }
 
+export const modalRemove = (name: string) => {
+
+    const modal = ui.closest(name + '.' + ui.modal.target, '.' + ui.modal.targetWin)[0];
+    modal.parentElement.removeChild(modal);
+
+}
+
 export default Object.assign(Modal, {
     Header: modalHeader,
     Title: modalTitle,
