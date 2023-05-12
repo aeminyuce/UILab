@@ -93,6 +93,10 @@ interface DropdownItemProps {
 
     children?: React.ReactNode,
 
+    onClick?: React.ReactEventHandler,
+    onMouseDown?: React.ReactEventHandler,
+    onMouseUp?: React.ReactEventHandler,
+
     selected?: boolean,
 
     className?: string,
@@ -102,7 +106,7 @@ interface DropdownItemProps {
 
 const DropdownItem = function (
 
-    { children, selected, className, style }:DropdownItemProps) {
+    { children, onClick, onMouseDown, onMouseUp, selected, className, style }:DropdownItemProps) {
 
         // classes
         const setSelected = selected ? ' ui-selected' : '';
@@ -114,7 +118,7 @@ const DropdownItem = function (
         if (classes === '') { classes = null; }
 
         return (
-            <li className={classes} style={style}>
+            <li className={classes} style={style} onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
                 {children}
             </li>
         );
