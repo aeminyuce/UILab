@@ -1942,7 +1942,7 @@ ui.forms = {
       form.value = '';
       if (!ui.hasClass(form, ui.forms.nameRequired)) {
         ui.trigger(form, 'change keydown keyup');
-      }
+      } else clearForms(form);
     });
   };
   ui.onload(ui.forms.Start);

@@ -334,7 +334,7 @@ ui.forms = {
                     // trigger defined event listeners after form clear
                     ui.trigger(form, 'change keydown keyup');
 
-                }
+                } else clearForms(form);
 
             });
 

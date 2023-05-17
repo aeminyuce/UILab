@@ -1204,6 +1204,14 @@
                             </button>
                             <input type="text">
                         </div>
+                        <label class="ui-form-label ui-p-10-b">Clear with E-mail Forms</label>
+                        <div class="ui-input ui-m-10-b ui-form-icon-all ui-form-has-clear ui-round ui-border-dual ui-ease-form">
+                            <svg class="ui-icon ui-form-icon-l"><use href="../dist/icons.svg#at"/></svg>
+                            <button type="button" class="ui-form-clear">
+                                <svg class="ui-icon"><use href="../dist/icons.svg#remove"/></svg>
+                            </button>
+                            <input class="ui-required" type="email">
+                        </div>
                         <label class="ui-form-label ui-p-10-b">Clear with Large Forms</label>
                         <div class="ui-form-lg ui-m-10-b ui-ease-1st-form">
                             <div class="ui-input ui-form-icon ui-round ui-border-dual ui-form-has-clear">
