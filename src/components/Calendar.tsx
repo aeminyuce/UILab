@@ -47,6 +47,8 @@ interface CalendarPickerProps {
     placeholder?: string,
     disabled?: boolean,
     autoComplete?: 'on' | 'off' | 'username' | 'current-password' | string,
+    number?: boolean,
+    numberFloat?: boolean,
 
     minlength?: number,
     maxlength?: number,
@@ -61,7 +63,7 @@ interface CalendarPickerProps {
 
 const CalendarPicker = function (
 
-    { onChange, onInput, onBlur, name, tabIndex, value, defaultValue, placeholder, disabled, autoComplete, minlength, maxlength, myRef, id, className, style }:CalendarPickerProps) {
+    { onChange, onInput, onBlur, name, tabIndex, value, defaultValue, placeholder, disabled, autoComplete, number, numberFloat, minlength, maxlength, myRef, id, className, style }:CalendarPickerProps) {
 
         useEffect(() => {
 
@@ -83,7 +85,7 @@ const CalendarPicker = function (
         return (
             <Form.Input id={id} myRef={myRef} name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} placeholder={placeholder}
                  autoComplete={autoComplete} className={classes} style={style} disabled={disabled}
-                 minlength={minlength} maxlength={maxlength}
+                 number={number} numberFloat={numberFloat} minlength={minlength} maxlength={maxlength}
                  onChange={onChange} onInput={onInput} onBlur={onBlur}>
                     <Icon path src={icon_calendar} />
             </Form.Input>
