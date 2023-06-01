@@ -240,6 +240,15 @@ export const modalRemove = (name: string) => {
 
 }
 
+export const modalRemoveAll = () => {
+
+    const modals = ui.find('.' + ui.modal.targetWin + ':not(.' + ui.modal.nameShow + ')');
+
+    Array.prototype.forEach.call(modals,
+        (el: any) => el.parentElement.removeChild(el));
+
+}
+
 export default Object.assign(Modal, {
     Header: modalHeader,
     Title: modalTitle,
