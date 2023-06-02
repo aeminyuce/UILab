@@ -6667,6 +6667,14 @@ ui.lineChart.Start = function () {
           pathStart.y = posY;
           createCircles(0);
         }
+        var allRepeated = false;
+        if (ui.lineChart.hideRepeated) {
+          var repeatedlength = 0;
+          for (var r = 0; r < y.length; r++) {
+            if (y[0] === y[r]) repeatedlength += 1;
+          }
+          if (repeatedlength === y.length) allRepeated = true;
+        }
         for (var n = 0; n < y.length; n++) {
           posX = n * col + ui.lineChart.left;
           var _range = yMax - yMin;
@@ -6687,7 +6695,7 @@ ui.lineChart.Start = function () {
             }
           } else if (n > 0) curve = ' L ' + posX + ' ' + posY;
           if (ui.lineChart.hideRepeated) {
-            if (y[n - 1] !== undefined && y[n - 1] !== y[n] || y[n + 1] !== undefined && y[n + 1] !== y[n]) {
+            if (allRepeated && (n === 0 || n === y.length - 1) || y[n - 1] !== undefined && y[n - 1] !== y[n] || y[n + 1] !== undefined && y[n + 1] !== y[n]) {
               paths += n === 0 ? ' ' + pathStart.x + ' ' + pathStart.y + curve : curve;
               createCircles(n);
             } else if (paths !== '') {
@@ -6698,7 +6706,7 @@ ui.lineChart.Start = function () {
                 createPaths(paths, false);
                 createFilledPaths(paths, false);
               }
-              paths = '';
+              if (!allRepeated) paths = '';
             }
           } else {
             paths += curve;

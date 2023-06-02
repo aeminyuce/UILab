@@ -512,6 +512,21 @@ ui.lineChart.Start = () => {
 
                         }
 
+                        // check all y data repeated
+                        let allRepeated = false;
+
+                        if (ui.lineChart.hideRepeated) {
+
+                            let repeatedlength = 0;
+
+                            for (let r = 0; r < y.length; r++) {
+                                if (y[0] === y[r]) repeatedlength += 1;
+                            }
+
+                            if (repeatedlength === y.length) allRepeated = true;
+
+                        }
+
                         // create lines, circles and paths
                         for (let n = 0; n < y.length; n++) {
 
@@ -557,7 +572,12 @@ ui.lineChart.Start = () => {
                             // create circles and paths
                             if (ui.lineChart.hideRepeated) {
 
-                                if ((y[n - 1] !== undefined && y[n - 1] !== y[n]) || (y[n + 1] !== undefined && y[n + 1] !== y[n])) {
+                                if (
+
+                                    (allRepeated && (n === 0 || n === y.length - 1)) ||
+                                    (y[n - 1] !== undefined && y[n - 1] !== y[n]) || (y[n + 1] !== undefined && y[n + 1] !== y[n])
+
+                                ) {
 
                                     // not repeated circles and paths
                                     paths += n === 0 ? ' ' + pathStart.x + ' ' + pathStart.y + curve : curve;
@@ -578,7 +598,7 @@ ui.lineChart.Start = () => {
 
                                     }
 
-                                    paths = '';
+                                    if (!allRepeated) paths = '';
 
                                 }
 
