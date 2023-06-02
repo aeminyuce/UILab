@@ -6632,7 +6632,7 @@ ui.lineChart.Start = function () {
           }
         };
         var removeReTypedCurves = function removeReTypedCurves(data) {
-          return data.replace(/M L |M C /g, 'M ');
+          return data.replace(/M L |M C |M S +[\d\s\.]+\, /g, 'M ');
         };
         var createPaths = function createPaths(pathsData, fromStart) {
           if (type.indexOf(ui.lineChart.dashed) > -1) {
@@ -6645,15 +6645,12 @@ ui.lineChart.Start = function () {
           html += pathsData + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + '/>';
           html = removeReTypedCurves(html);
         };
-        var createFilledPaths = function createFilledPaths(pathsData, fromStart) {
+        var createFilledPaths = function createFilledPaths(id, pathsData, fromStart) {
           if (type.indexOf(ui.lineChart.filled) > -1) {
-            data.id = new Date().getTime();
-            data.id = data.id.toString();
-            data.id = data.id.substring(data.id.length - 4, data.id.length) + j;
-            html += '<linearGradient id="' + ui.lineChart.idGradient + data.id + '" x1="0" y1="0" x2="0" y2="100%">' + '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' + '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' + '</linearGradient>';
+            html += '<linearGradient id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' + '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' + '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' + '</linearGradient>';
             html += '<path d="M';
             if (fromStart) html += ' ' + (pathStart.x + ui.lineChart.gridStroke / 2) + ' ' + pathStart.y;
-            html += pathsData + ' V ' + (data.height - ui.lineChart.bottom - ui.lineChart.gridStroke / 2) + ' H ' + (ui.lineChart.gridStroke / 2 + ui.lineChart.left) + ' Z" ' + 'stroke="0" ' + 'fill="url(#' + ui.lineChart.idGradient + data.id + ')" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + 'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' + '/>';
+            html += pathsData + ' V ' + (data.height - ui.lineChart.bottom - ui.lineChart.gridStroke / 2) + ' H ' + (ui.lineChart.gridStroke / 2 + ui.lineChart.left) + ' Z" ' + 'stroke="0" ' + 'fill="url(#' + ui.lineChart.idGradient + id + ')" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + 'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' + '/>';
             html = removeReTypedCurves(html);
           }
         };
@@ -6675,6 +6672,8 @@ ui.lineChart.Start = function () {
           }
           if (repeatedlength === y.length) allRepeated = true;
         }
+        var randomId = new Date().getTime().toString();
+        randomId = randomId.substring(randomId.length - 4, randomId.length) + j;
         for (var n = 0; n < y.length; n++) {
           posX = n * col + ui.lineChart.left;
           var _range = yMax - yMin;
@@ -6701,10 +6700,10 @@ ui.lineChart.Start = function () {
             } else if (paths !== '') {
               if (n === 0) {
                 createPaths(paths, true);
-                createFilledPaths(paths, true);
+                createFilledPaths(randomId + j + n, paths, true);
               } else {
                 createPaths(paths, false);
-                createFilledPaths(paths, false);
+                createFilledPaths(randomId + j + n, paths, false);
               }
               if (!allRepeated) paths = '';
             }
@@ -6715,7 +6714,7 @@ ui.lineChart.Start = function () {
         }
         if (paths !== '') {
           createPaths(paths, ui.lineChart.hideRepeated ? false : true);
-          createFilledPaths(paths, ui.lineChart.hideRepeated ? false : true);
+          createFilledPaths(randomId + j, paths, ui.lineChart.hideRepeated ? false : true);
         }
         name = el.getAttribute(ui.lineChart.dataName);
         if (name !== null && name !== '') {

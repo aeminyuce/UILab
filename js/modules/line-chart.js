@@ -433,8 +433,8 @@ ui.lineChart.Start = () => {
 
                         }
 
-                        const removeReTypedCurves = (data) => { // remove L and C from cutted paths
-                            return data.replace(/M L |M C /g, 'M ');
+                        const removeReTypedCurves = (data) => {
+                            return data.replace(/M L |M C |M S +[\d\s\.]+\, /g, 'M ');
                         }
 
                         const createPaths = (pathsData, fromStart) => {
@@ -459,15 +459,11 @@ ui.lineChart.Start = () => {
 
                         }
 
-                        const createFilledPaths = (pathsData, fromStart) => {
+                        const createFilledPaths = (id, pathsData, fromStart) => {
 
                             if (type.indexOf(ui.lineChart.filled) > -1) {
 
-                                data.id = new Date().getTime();
-                                data.id = data.id.toString();
-                                data.id = data.id.substring(data.id.length - 4, data.id.length) + j;
-
-                                html += '<linearGradient id="' + ui.lineChart.idGradient + data.id + '" x1="0" y1="0" x2="0" y2="100%">' +
+                                html += '<linearGradient id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' +
                                             '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' +
                                             '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' +
                                         '</linearGradient>';
@@ -481,7 +477,7 @@ ui.lineChart.Start = () => {
                                         ' H ' + ((ui.lineChart.gridStroke / 2) + ui.lineChart.left) + ' Z" ' +
 
                                         'stroke="0" ' +
-                                        'fill="url(#' + ui.lineChart.idGradient + data.id + ')" ' +
+                                        'fill="url(#' + ui.lineChart.idGradient + id + ')" ' +
                                         'stroke-width="' + ui.lineChart.lineStroke + '" ' +
                                         'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' +
 
@@ -526,6 +522,10 @@ ui.lineChart.Start = () => {
                             if (repeatedlength === y.length) allRepeated = true;
 
                         }
+
+                        // random id
+                        let randomId = new Date().getTime().toString();
+                        randomId = randomId.substring(randomId.length - 4, randomId.length) + j;
 
                         // create lines, circles and paths
                         for (let n = 0; n < y.length; n++) {
@@ -589,12 +589,12 @@ ui.lineChart.Start = () => {
                                     if (n === 0) {
 
                                         createPaths(paths, true);
-                                        createFilledPaths(paths, true);
+                                        createFilledPaths((randomId + j + n), paths, true);
 
                                     } else {
 
                                         createPaths(paths, false);
-                                        createFilledPaths(paths, false);
+                                        createFilledPaths((randomId + j + n), paths, false);
 
                                     }
 
@@ -613,9 +613,8 @@ ui.lineChart.Start = () => {
 
                         // create paths
                         if (paths !== '') {
-
                             createPaths(paths, ui.lineChart.hideRepeated ? false : true);
-                            createFilledPaths(paths, ui.lineChart.hideRepeated ? false : true);
+                            createFilledPaths((randomId + j), paths, ui.lineChart.hideRepeated ? false : true);
 
                         }
 
