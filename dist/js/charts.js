@@ -1,0 +1,1 @@
+ui.lineChart.hideRepeated = true;

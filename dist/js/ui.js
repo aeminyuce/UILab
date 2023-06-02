@@ -6431,7 +6431,7 @@ ui.lineChart = {
   showGridText: true,
   showInfo: true,
   showInfoStats: true,
-  noRepeatadCircles: false,
+  hideRepeated: false,
   showGridTextSpace: 7,
   showInfoSpace: 7,
   rows: 5,
@@ -6444,7 +6444,7 @@ ui.lineChart = {
   top: 6,
   right: 24,
   bottom: 15,
-  left: 42,
+  left: 54,
   dotted: 'dotted',
   dashed: 'dashed',
   curved: 'curved',
@@ -6461,7 +6461,7 @@ ui.lineChart = {
   dataNoCircles: 'data-ui-no-circles'
 };
 ui.lineChart.Start = function () {
-  var charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
+  var charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, circles, total, name;
   ui.lineChart.Init = function (method, resizer) {
     if (method === ui.lineChart.nameLoaded) {
       charts = ui.find('.' + ui.lineChart.target + '.' + ui.lineChart.nameLoaded);
@@ -6606,7 +6606,7 @@ ui.lineChart.Start = function () {
       pathStart = [];
       html += '<g>';
       Array.prototype.forEach.call(lines, function (el, j) {
-        paths = '';
+        var paths = '';
         y = data[j].y;
         if (j > ui.lineChart.colors.length - 1) {
           data.color.push(ui.lineChart.colors[j - ui.lineChart.colors.length]);
@@ -6631,6 +6631,32 @@ ui.lineChart.Start = function () {
             circles += ui.tooltip.dataTooltip + ' ' + 'name="' + (y[n] ? y[n] : 0) + '" ' + '/>';
           }
         };
+        var removeReTypedCurves = function removeReTypedCurves(data) {
+          return data.replace(/M L |M C /g, 'M ');
+        };
+        var createPaths = function createPaths(pathsData, fromStart) {
+          if (type.indexOf(ui.lineChart.dashed) > -1) {
+            html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dashed + '" ';
+          } else if (type.indexOf(ui.lineChart.dotted) > -1) {
+            html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dotted + '" ';
+          } else html += '<path ';
+          html += 'd="M';
+          if (fromStart) html += ' ' + pathStart.x + ' ' + pathStart.y;
+          html += pathsData + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + '/>';
+          html = removeReTypedCurves(html);
+        };
+        var createFilledPaths = function createFilledPaths(pathsData, fromStart) {
+          if (type.indexOf(ui.lineChart.filled) > -1) {
+            data.id = new Date().getTime();
+            data.id = data.id.toString();
+            data.id = data.id.substring(data.id.length - 4, data.id.length) + j;
+            html += '<linearGradient id="' + ui.lineChart.idGradient + data.id + '" x1="0" y1="0" x2="0" y2="100%">' + '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' + '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' + '</linearGradient>';
+            html += '<path d="M';
+            if (fromStart) html += ' ' + (pathStart.x + ui.lineChart.gridStroke / 2) + ' ' + pathStart.y;
+            html += pathsData + ' V ' + (data.height - ui.lineChart.bottom - ui.lineChart.gridStroke / 2) + ' H ' + (ui.lineChart.gridStroke / 2 + ui.lineChart.left) + ' Z" ' + 'stroke="0" ' + 'fill="url(#' + ui.lineChart.idGradient + data.id + ')" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + 'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' + '/>';
+            html = removeReTypedCurves(html);
+          }
+        };
         if (y.length === 0) {
           posX = col + ui.lineChart.left;
           var range = yMax - yMin;
@@ -6651,35 +6677,37 @@ ui.lineChart.Start = function () {
             pathStart.x = posX;
             pathStart.y = posY;
           }
+          var curve = '';
           if (type.indexOf(ui.lineChart.curved) > -1) {
             data.percent = parseInt(ui.lineChart.curveSize * (n * col) / 100);
             if (n === 1) {
-              paths += ' C ' + (col + data.percent) + ' ' + (posY - data.percent) + ',' + ' ' + (col + data.percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
+              curve = ' C ' + (col + data.percent) + ' ' + (posY - data.percent) + ',' + ' ' + (col + data.percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
             } else if (n > 0) {
-              paths += ' S ' + (n * col - data.percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
+              curve = ' S ' + (n * col - data.percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
+            }
+          } else if (n > 0) curve = ' L ' + posX + ' ' + posY;
+          if (ui.lineChart.hideRepeated) {
+            if (y[n - 1] !== undefined && y[n - 1] !== y[n] || y[n + 1] !== undefined && y[n + 1] !== y[n]) {
+              paths += n === 0 ? ' ' + pathStart.x + ' ' + pathStart.y + curve : curve;
+              createCircles(n);
+            } else if (paths !== '') {
+              if (n === 0) {
+                createPaths(paths, true);
+                createFilledPaths(paths, true);
+              } else {
+                createPaths(paths, false);
+                createFilledPaths(paths, false);
+              }
+              paths = '';
             }
           } else {
-            if (n > 0) {
-              paths += ' L ' + posX + ' ' + posY;
-            }
+            paths += curve;
+            createCircles(n);
           }
-          if (ui.lineChart.noRepeatadCircles) {
-            if (n === 0 || n === y.length - 1) createCircles(n);
-            if (y[n - 1] !== undefined && y[n - 1] !== y[n]) createCircles(n);
-            if (y[n + 1] !== undefined && y[n + 1] !== y[n]) createCircles(n);
-          } else createCircles(n);
         }
-        if (type.indexOf(ui.lineChart.dashed) > -1) {
-          html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dashed + '" ';
-        } else if (type.indexOf(ui.lineChart.dotted) > -1) {
-          html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dotted + '" ';
-        } else html += '<path ';
-        html += 'd="M ' + pathStart.x + ' ' + pathStart.y + paths + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + '/>';
-        if (type.indexOf(ui.lineChart.filled) > -1) {
-          data.id = new Date().getTime();
-          data.id = data.id.toString();
-          data.id = data.id.substring(data.id.length - 4, data.id.length) + j;
-          html += '<linearGradient id="' + ui.lineChart.idGradient + data.id + '" x1="0" y1="0" x2="0" y2="100%">' + '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' + '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' + '</linearGradient>' + '<path d="M ' + (pathStart.x + ui.lineChart.gridStroke / 2) + ' ' + pathStart.y + paths + ' V ' + (data.height - ui.lineChart.bottom - ui.lineChart.gridStroke / 2) + ' H ' + (ui.lineChart.gridStroke / 2 + ui.lineChart.left) + ' Z" ' + 'stroke="0" ' + 'fill="url(#' + ui.lineChart.idGradient + data.id + ')" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + 'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' + '/>';
+        if (paths !== '') {
+          createPaths(paths, ui.lineChart.hideRepeated ? false : true);
+          createFilledPaths(paths, ui.lineChart.hideRepeated ? false : true);
         }
         name = el.getAttribute(ui.lineChart.dataName);
         if (name !== null && name !== '') {

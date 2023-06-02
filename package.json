@@ -1,6 +1,6 @@
 {
   "name": "keyy-ui",
-  "version": "1.0.51",
+  "version": "1.0.52",
   "keywords": [
     "responsive",
     "design system",
@@ -46,6 +46,7 @@
     "js:iconlist": "rollup js/helpers/iconlist.js --file dist/js/iconlist.js & babel dist/js/iconlist.js --out-file dist/js/iconlist.js --no-comments",
     "js:pages": "npm run js:business && npm run js:dashboard & npm run js:landing-page & npm run js:product-listing & npm run js:real-estate-details & npm run js:javascript",
     "js:business": "rollup js/pages/business.js --file dist/js/business.js & babel dist/js/business.js --out-file dist/js/business.js --no-comments",
+    "js:charts": "rollup js/pages/charts.js --file dist/js/charts.js & babel dist/js/charts.js --out-file dist/js/charts.js --no-comments",
     "js:dashboard": "rollup js/pages/dashboard.js --file dist/js/dashboard.js & babel dist/js/dashboard.js --out-file dist/js/dashboard.js --no-comments",
     "js:landing-page": "rollup js/pages/landing-page.js --file dist/js/landing-page.js & babel dist/js/landing-page.js --out-file dist/js/landing-page.js --no-comments",
     "js:product-listing": "rollup js/pages/product-listing.js --file dist/js/product-listing.js & babel dist/js/product-listing.js --out-file dist/js/product-listing.js --no-comments",
