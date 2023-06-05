@@ -6645,12 +6645,13 @@ ui.lineChart.Start = function () {
           html += pathsData + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + '/>';
           html = removeReTypedCurves(html);
         };
-        var createFilledPaths = function createFilledPaths(id, pathsData, fromStart) {
+        var createFilledPaths = function createFilledPaths(id, pathsData, fromStart, cutted) {
           if (type.indexOf(ui.lineChart.filled) > -1) {
             html += '<linearGradient id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' + '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' + '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' + '</linearGradient>';
             html += '<path d="M';
             if (fromStart) html += ' ' + (pathStart.x + ui.lineChart.gridStroke / 2) + ' ' + pathStart.y;
-            html += pathsData + ' V ' + (data.height - ui.lineChart.bottom - ui.lineChart.gridStroke / 2) + ' H ' + (ui.lineChart.gridStroke / 2 + ui.lineChart.left) + ' Z" ' + 'stroke="0" ' + 'fill="url(#' + ui.lineChart.idGradient + id + ')" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + 'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' + '/>';
+            var cuttedStart = cutted ? cutted : ui.lineChart.gridStroke / 2 + ui.lineChart.left;
+            html += pathsData + ' V ' + (data.height - ui.lineChart.bottom - ui.lineChart.gridStroke / 2) + ' H ' + cuttedStart + ' Z" ' + 'stroke="0" ' + 'fill="url(#' + ui.lineChart.idGradient + id + ')" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + 'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' + '/>';
             html = removeReTypedCurves(html);
           }
         };
@@ -6674,6 +6675,7 @@ ui.lineChart.Start = function () {
         }
         var randomId = new Date().getTime().toString();
         randomId = randomId.substring(randomId.length - 4, randomId.length) + j;
+        var pathCut = null;
         for (var n = 0; n < y.length; n++) {
           posX = n * col + ui.lineChart.left;
           var _range = yMax - yMin;
@@ -6698,6 +6700,7 @@ ui.lineChart.Start = function () {
               paths += n === 0 ? ' ' + pathStart.x + ' ' + pathStart.y + curve : curve;
               createCircles(n);
             } else if (paths !== '') {
+              pathCut = (n + 1) * col + ui.lineChart.left;
               if (n === 0) {
                 createPaths(paths, true);
                 createFilledPaths(randomId + j + n, paths, true);
@@ -6713,8 +6716,9 @@ ui.lineChart.Start = function () {
           }
         }
         if (paths !== '') {
+          var cutted = ui.lineChart.hideRepeated && !allRepeated ? pathCut : null;
           createPaths(paths, ui.lineChart.hideRepeated ? false : true);
-          createFilledPaths(randomId + j, paths, ui.lineChart.hideRepeated ? false : true);
+          createFilledPaths(randomId + j, paths, ui.lineChart.hideRepeated ? false : true, cutted);
         }
         name = el.getAttribute(ui.lineChart.dataName);
         if (name !== null && name !== '') {

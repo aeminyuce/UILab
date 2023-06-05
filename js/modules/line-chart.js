@@ -459,7 +459,7 @@ ui.lineChart.Start = () => {
 
                         }
 
-                        const createFilledPaths = (id, pathsData, fromStart) => {
+                        const createFilledPaths = (id, pathsData, fromStart, cutted) => {
 
                             if (type.indexOf(ui.lineChart.filled) > -1) {
 
@@ -471,10 +471,12 @@ ui.lineChart.Start = () => {
                                 html += '<path d="M';
                                 if (fromStart) html += ' ' + (pathStart.x + (ui.lineChart.gridStroke / 2)) + ' ' + pathStart.y;
 
+                                const cuttedStart = cutted ? cutted : (ui.lineChart.gridStroke / 2) + ui.lineChart.left
+
                                 html += pathsData +
 
                                         ' V ' + (data.height - ui.lineChart.bottom - (ui.lineChart.gridStroke / 2)) +
-                                        ' H ' + ((ui.lineChart.gridStroke / 2) + ui.lineChart.left) + ' Z" ' +
+                                        ' H ' + cuttedStart + ' Z" ' +
 
                                         'stroke="0" ' +
                                         'fill="url(#' + ui.lineChart.idGradient + id + ')" ' +
@@ -528,6 +530,8 @@ ui.lineChart.Start = () => {
                         randomId = randomId.substring(randomId.length - 4, randomId.length) + j;
 
                         // create lines, circles and paths
+                        let pathCut = null;
+
                         for (let n = 0; n < y.length; n++) {
 
                             posX = (n * col) + ui.lineChart.left;
@@ -585,6 +589,8 @@ ui.lineChart.Start = () => {
 
                                 } else if (paths !== '') {
 
+                                    pathCut = ((n + 1) * col) + ui.lineChart.left;
+
                                     // repeated circles and paths
                                     if (n === 0) {
 
@@ -613,8 +619,11 @@ ui.lineChart.Start = () => {
 
                         // create paths
                         if (paths !== '') {
+
+                            const cutted = (ui.lineChart.hideRepeated && !allRepeated) ? pathCut : null;
+
                             createPaths(paths, ui.lineChart.hideRepeated ? false : true);
-                            createFilledPaths((randomId + j), paths, ui.lineChart.hideRepeated ? false : true);
+                            createFilledPaths((randomId + j), paths, ui.lineChart.hideRepeated ? false : true, cutted);
 
                         }
 

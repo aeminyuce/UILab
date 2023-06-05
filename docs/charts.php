@@ -297,7 +297,7 @@
                             <div class="ui-col-6">
                                 <h5 class="ui-h5 ui-font-bold ui-align-c">Repeated Filled Values Hided</h5>
                                 <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="ui-line-chart" data-ui-name="2nd" data-ui-type="filled">
+                                    <ul class="ui-line-chart" data-ui-type="filled">
                                         <li data-ui-y="84"></li>
                                         <li data-ui-y="56"></li>
                                         <li data-ui-y="56"></li>
@@ -368,6 +368,20 @@
                                 <h5 class="ui-h5 ui-font-bold ui-align-c">Full Repeated Values: Middle Circles Hided</h5>
                                 <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                                     <ul class="ui-line-chart">
+                                        <li data-ui-y="13"></li>
+                                        <li data-ui-y="13"></li>
+                                        <li data-ui-y="13"></li>
+                                        <li data-ui-y="13"></li>
+                                        <li data-ui-y="13"></li>
+                                        <li data-ui-y="13"></li>
+                                        <li data-ui-y="13"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ui-col-6">
+                                <h5 class="ui-h5 ui-font-bold ui-align-c">Filled Full Repeated Values: Middle Circles Hided</h5>
+                                <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                                    <ul class="ui-line-chart" data-ui-type="filled">
                                         <li data-ui-y="13"></li>
                                         <li data-ui-y="13"></li>
                                         <li data-ui-y="13"></li>
