@@ -54,8 +54,6 @@ ui.lineChart = {
     showInfo: true,
     showInfoStats: true,
 
-    noRepeatadCircles: false,
-
     rows: 5,
     rowsHeight: 50,
 
@@ -93,7 +91,9 @@ ui.lineChart = {
     dataType: 'data-ui-type',
     dataName: 'data-ui-name',
     dataStep: 'data-ui-step',
+
     dataNoCircles: 'data-ui-no-circles',
+    dataNoRepeatedCircles: 'data-ui-no-repeated-circles',
 
 };
 
@@ -397,6 +397,9 @@ ui.lineChart.Start = () => {
                         let noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
                         if (noCircles === null || noCircles === '') noCircles = false; else noCircles = true;
 
+                        let noRepeatedCircles = el.getAttribute(ui.lineChart.dataNoRepeatedCircles);
+                        if (noRepeatedCircles === null || noRepeatedCircles === '') noRepeatedCircles = false; else noRepeatedCircles = true;
+
                         // get line type
                         type = el.getAttribute(ui.lineChart.dataType);
                         if (type === null || type === undefined) { type = ''; }
@@ -495,7 +498,7 @@ ui.lineChart.Start = () => {
                             }
 
                             // create circles
-                            if (ui.lineChart.noRepeatadCircles) {
+                            if (noRepeatedCircles) {
 
                                 if (n === 0 || n === y.length - 1) createCircles(n);
 

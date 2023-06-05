@@ -233,6 +233,29 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="ui-col-6">
+                        <h5 class="ui-h5 ui-font-bold ui-align-c">No Repeated Circles Line Charts</h5>
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-line-chart" data-ui-name="1st" data-ui-no-repeated-circles="true">
+                                <li data-ui-y="84"></li>
+                                <li data-ui-y="46"></li>
+                                <li data-ui-y="112"></li>
+                                <li data-ui-y="112"></li>
+                                <li data-ui-y="112"></li>
+                                <li data-ui-y="112"></li>
+                                <li data-ui-y="73"></li>
+                            </ul>
+                            <ul class="ui-line-chart" data-ui-name="2nd" data-ui-type="filled">
+                                <li data-ui-y="120" data-ui-url="#1"></li>
+                                <li data-ui-y="20" data-ui-url="#2"></li>
+                                <li data-ui-y="84" data-ui-url="#3"></li>
+                                <li data-ui-y="66" data-ui-url="#4"></li>
+                                <li data-ui-y="80" data-ui-url="#5"></li>
+                                <li data-ui-y="76" data-ui-url="#6"></li>
+                                <li data-ui-y="89" data-ui-url="#7"></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="ui-col-12 ui-m-20-b ui-theme-base ui-fill-dark-100 ui-round">
                         <div class="ui-row">
                             <div class="ui-col-6">

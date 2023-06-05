@@ -26,7 +26,6 @@ interface LineChartHolderProps {
     showGridText?: boolean,
     showInfo?: boolean,
     showInfoStats?: boolean,
-    noRepeatadCircles?: boolean,
 
     className?: string,
     style?: any,
@@ -35,7 +34,7 @@ interface LineChartHolderProps {
 
 const LineChartHolder = function (
 
-    { children, x, step, size, prefix, suffix, showGrid, gridStroke, showGridText, showInfo, showInfoStats, noRepeatadCircles, className, style }:LineChartHolderProps) {
+    { children, x, step, size, prefix, suffix, showGrid, gridStroke, showGridText, showInfo, showInfoStats, className, style }:LineChartHolderProps) {
 
         // settings
         const setShowGrid = showGrid ? showGrid : false;
@@ -43,8 +42,6 @@ const LineChartHolder = function (
         const setShowGridText = showGridText ? showGridText : false;
         const setShowInfo = showInfo ? showInfo : false;
         const setShowInfoStats = showInfoStats ? showInfoStats : false;
-
-        const setNoRepeatadCircles = noRepeatadCircles ? noRepeatadCircles : false;
 
         useEffect(() => {
 
@@ -55,8 +52,6 @@ const LineChartHolder = function (
             ui.lineChart.showGridText = setShowGridText;
             ui.lineChart.showInfo = setShowInfo;
             ui.lineChart.showInfoStats = setShowInfoStats;
-
-            ui.lineChart.noRepeatadCircles = setNoRepeatadCircles;
 
             // inits
             ui.lineChart.Init();
@@ -96,13 +91,15 @@ interface LineChartLineProps {
     dotted?: boolean,
     dashed?: boolean,
     filled?: boolean,
+
     noCircles?: boolean,
+    noRepeatedCircles?: boolean,
 
 }
 
 const LineChartLine = function (
 
-    { children, name, curved, dotted, dashed, filled, noCircles }:LineChartLineProps) {
+    { children, name, curved, dotted, dashed, filled, noCircles, noRepeatedCircles }:LineChartLineProps) {
 
         // types
         const setCurved = curved ? ' curved' : '';
@@ -117,8 +114,10 @@ const LineChartLine = function (
         const classes = 'ui-line-chart';
 
         return (
-            <ul className={classes} data-ui-name={name} data-ui-type={setType} data-ui-no-circles={noCircles}>
-                {children}
+            <ul
+                className={classes} data-ui-name={name} data-ui-type={setType}
+                data-ui-no-circles={noCircles} data-ui-no-repeated-circles={noRepeatedCircles}>
+                    {children}
             </ul>
         );
     }

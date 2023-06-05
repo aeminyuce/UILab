@@ -6431,7 +6431,6 @@ ui.lineChart = {
   showGridText: true,
   showInfo: true,
   showInfoStats: true,
-  noRepeatadCircles: false,
   rows: 5,
   rowsHeight: 50,
   curveSize: 1,
@@ -6459,7 +6458,8 @@ ui.lineChart = {
   dataType: 'data-ui-type',
   dataName: 'data-ui-name',
   dataStep: 'data-ui-step',
-  dataNoCircles: 'data-ui-no-circles'
+  dataNoCircles: 'data-ui-no-circles',
+  dataNoRepeatedCircles: 'data-ui-no-repeated-circles'
 };
 ui.lineChart.Start = function () {
   var charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
@@ -6616,6 +6616,8 @@ ui.lineChart.Start = function () {
         }
         var noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
         if (noCircles === null || noCircles === '') noCircles = false;else noCircles = true;
+        var noRepeatedCircles = el.getAttribute(ui.lineChart.dataNoRepeatedCircles);
+        if (noRepeatedCircles === null || noRepeatedCircles === '') noRepeatedCircles = false;else noRepeatedCircles = true;
         type = el.getAttribute(ui.lineChart.dataType);
         if (type === null || type === undefined) {
           type = '';
@@ -6664,7 +6666,7 @@ ui.lineChart.Start = function () {
               paths += ' L ' + posX + ' ' + posY;
             }
           }
-          if (ui.lineChart.noRepeatadCircles) {
+          if (noRepeatedCircles) {
             if (n === 0 || n === y.length - 1) createCircles(n);
             if (y[n - 1] !== undefined && y[n - 1] !== y[n]) createCircles(n);
             if (y[n + 1] !== undefined && y[n + 1] !== y[n]) createCircles(n);
