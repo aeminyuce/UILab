@@ -437,6 +437,51 @@ ui.lineChart.Start = () => {
 
                         }
 
+                        const createPaths = (pathsData) => {
+
+                            if (type.indexOf(ui.lineChart.dashed) > -1) { // dashed
+                                html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dashed + '" ';
+
+                            } else if (type.indexOf(ui.lineChart.dotted) > -1) { // dotted
+                                html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dotted + '" ';
+
+                            } else html += '<path ';
+
+                            html += 'd="M ' + pathStart.x + ' ' + pathStart.y +
+                                    pathsData + '" ' +
+                                    'stroke="' + data.color[j] + '" ' +
+                                    'stroke-width="' + ui.lineChart.lineStroke + '" ' +
+                                '/>';
+
+                        }
+
+                        const cerateFilledPaths = (id, pathsData) => {
+
+                            if (type.indexOf(ui.lineChart.filled) > -1) {
+
+                                html += '<linearGradient id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' +
+                                            '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' +
+                                            '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' +
+                                        '</linearGradient>' +
+
+                                        '<path d="M ' + (pathStart.x + (ui.lineChart.gridStroke / 2)) + ' ' + pathStart.y +
+
+                                            pathsData +
+
+                                            ' V ' + (data.height - ui.lineChart.bottom - (ui.lineChart.gridStroke / 2)) +
+                                            ' H ' + ((ui.lineChart.gridStroke / 2) + ui.lineChart.left) + ' Z" ' +
+
+                                            'stroke="0" ' +
+                                            'fill="url(#' + ui.lineChart.idGradient + id + ')" ' +
+                                            'stroke-width="' + ui.lineChart.lineStroke + '" ' +
+                                            'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' +
+
+                                        '/>';
+
+                            }
+
+                        }
+
                         if (y.length === 0) {
 
                             posX = col + ui.lineChart.left;
@@ -500,56 +545,24 @@ ui.lineChart.Start = () => {
                             // create circles
                             if (noRepeatedCircles) {
 
-                                if (n === 0 || n === y.length - 1) createCircles(n);
+                                if (
 
-                                if (y[n - 1] !== undefined && y[n - 1] !== y[n]) createCircles(n);
-                                if (y[n + 1] !== undefined && y[n + 1] !== y[n]) createCircles(n);
+                                    (n === 0 || n === y.length - 1) ||
+                                    (y[n - 1] !== undefined && y[n - 1] !== y[n]) || (y[n + 1] !== undefined && y[n + 1] !== y[n])
+
+                                ) createCircles(n);
 
                             } else createCircles(n);
 
                         }
 
+                        // random id
+                        let randomId = new Date().getTime().toString();
+                        randomId = randomId.substring(randomId.length - 4, randomId.length) + j;
+
                         // create paths
-                        if (type.indexOf(ui.lineChart.dashed) > -1) { // dashed
-                            html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dashed + '" ';
-
-                        } else if (type.indexOf(ui.lineChart.dotted) > -1) { // dotted
-                            html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dotted + '" ';
-
-                        } else html += '<path ';
-
-                        html += 'd="M ' + pathStart.x + ' ' + pathStart.y +
-                                paths + '" ' +
-                                'stroke="' + data.color[j] + '" ' +
-                                'stroke-width="' + ui.lineChart.lineStroke + '" ' +
-                            '/>';
-
-                        if (type.indexOf(ui.lineChart.filled) > -1) { // add filled paths
-
-                            data.id = new Date().getTime();
-                            data.id = data.id.toString();
-                            data.id = data.id.substring(data.id.length - 4, data.id.length) + j;
-
-                            html += '<linearGradient id="' + ui.lineChart.idGradient + data.id + '" x1="0" y1="0" x2="0" y2="100%">' +
-                                        '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' +
-                                        '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' +
-                                    '</linearGradient>' +
-
-                                    '<path d="M ' + (pathStart.x + (ui.lineChart.gridStroke / 2)) + ' ' + pathStart.y +
-
-                                        paths +
-
-                                        ' V ' + (data.height - ui.lineChart.bottom - (ui.lineChart.gridStroke / 2)) +
-                                        ' H ' + ((ui.lineChart.gridStroke / 2) + ui.lineChart.left) + ' Z" ' +
-
-                                        'stroke="0" ' +
-                                        'fill="url(#' + ui.lineChart.idGradient + data.id + ')" ' +
-                                        'stroke-width="' + ui.lineChart.lineStroke + '" ' +
-                                        'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' +
-
-                                    '/>';
-
-                        }
+                        createPaths(paths);
+                        cerateFilledPaths(randomId, paths);
 
                         // get data names
                         name = el.getAttribute(ui.lineChart.dataName);
