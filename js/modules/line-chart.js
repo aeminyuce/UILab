@@ -54,8 +54,6 @@ ui.lineChart = {
     showInfo: true,
     showInfoStats: true,
 
-    hideRepeated: false,
-
     showGridTextSpace: 7,
     showInfoSpace: 7,
 
@@ -92,7 +90,9 @@ ui.lineChart = {
     dataType: 'data-ui-type',
     dataName: 'data-ui-name',
     dataStep: 'data-ui-step',
+
     dataNoCircles: 'data-ui-no-circles',
+    dataRepeats: 'data-ui-repeats',
 
 };
 
@@ -396,6 +396,10 @@ ui.lineChart.Start = () => {
                         let noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
                         if (noCircles === null || noCircles === '') noCircles = false; else noCircles = true;
 
+                        // repeated values
+                        let repeats = el.getAttribute(ui.lineChart.dataRepeats);
+                        if (repeats === null || noCircles === '') repeats = false;
+
                         // get line type
                         type = el.getAttribute(ui.lineChart.dataType);
                         if (type === null || type === undefined) { type = ''; }
@@ -513,7 +517,7 @@ ui.lineChart.Start = () => {
                         // check all y data repeated
                         let allRepeated = false;
 
-                        if (ui.lineChart.hideRepeated) {
+                        if (repeats === 'hide') {
 
                             let repeatedlength = 0;
 
@@ -574,7 +578,7 @@ ui.lineChart.Start = () => {
                             } else if (n > 0) curve = ' L ' + posX + ' ' + posY; // default
 
                             // create circles and paths
-                            if (ui.lineChart.hideRepeated) {
+                            if (repeats === 'hide') {
 
                                 if (
 
@@ -620,10 +624,10 @@ ui.lineChart.Start = () => {
                         // create paths
                         if (paths !== '') {
 
-                            const cutted = (ui.lineChart.hideRepeated && !allRepeated) ? pathCut : null;
+                            const cutted = (repeats === 'hide' && !allRepeated) ? pathCut : null;
 
-                            createPaths(paths, ui.lineChart.hideRepeated ? false : true);
-                            createFilledPaths((randomId + j), paths, ui.lineChart.hideRepeated ? false : true, cutted);
+                            createPaths(paths, repeats === 'hide' ? false : true);
+                            createFilledPaths((randomId + j), paths, repeats === 'hide' ? false : true, cutted);
 
                         }
 

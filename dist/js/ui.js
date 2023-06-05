@@ -6431,7 +6431,6 @@ ui.lineChart = {
   showGridText: true,
   showInfo: true,
   showInfoStats: true,
-  hideRepeated: false,
   showGridTextSpace: 7,
   showInfoSpace: 7,
   rows: 5,
@@ -6458,7 +6457,8 @@ ui.lineChart = {
   dataType: 'data-ui-type',
   dataName: 'data-ui-name',
   dataStep: 'data-ui-step',
-  dataNoCircles: 'data-ui-no-circles'
+  dataNoCircles: 'data-ui-no-circles',
+  dataRepeats: 'data-ui-repeats'
 };
 ui.lineChart.Start = function () {
   var charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, circles, total, name;
@@ -6615,6 +6615,8 @@ ui.lineChart.Start = function () {
         }
         var noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
         if (noCircles === null || noCircles === '') noCircles = false;else noCircles = true;
+        var repeats = el.getAttribute(ui.lineChart.dataRepeats);
+        if (repeats === null || noCircles === '') repeats = false;
         type = el.getAttribute(ui.lineChart.dataType);
         if (type === null || type === undefined) {
           type = '';
@@ -6666,7 +6668,7 @@ ui.lineChart.Start = function () {
           createCircles(0);
         }
         var allRepeated = false;
-        if (ui.lineChart.hideRepeated) {
+        if (repeats === 'hide') {
           var repeatedlength = 0;
           for (var r = 0; r < y.length; r++) {
             if (y[0] === y[r]) repeatedlength += 1;
@@ -6695,7 +6697,7 @@ ui.lineChart.Start = function () {
               curve = ' S ' + (n * col - data.percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
             }
           } else if (n > 0) curve = ' L ' + posX + ' ' + posY;
-          if (ui.lineChart.hideRepeated) {
+          if (repeats === 'hide') {
             if (allRepeated && (n === 0 || n === y.length - 1) || y[n - 1] !== undefined && y[n - 1] !== y[n] || y[n + 1] !== undefined && y[n + 1] !== y[n]) {
               paths += n === 0 ? ' ' + pathStart.x + ' ' + pathStart.y + curve : curve;
               createCircles(n);
@@ -6716,9 +6718,9 @@ ui.lineChart.Start = function () {
           }
         }
         if (paths !== '') {
-          var cutted = ui.lineChart.hideRepeated && !allRepeated ? pathCut : null;
-          createPaths(paths, ui.lineChart.hideRepeated ? false : true);
-          createFilledPaths(randomId + j, paths, ui.lineChart.hideRepeated ? false : true, cutted);
+          var cutted = repeats === 'hide' && !allRepeated ? pathCut : null;
+          createPaths(paths, repeats === 'hide' ? false : true);
+          createFilledPaths(randomId + j, paths, repeats === 'hide' ? false : true, cutted);
         }
         name = el.getAttribute(ui.lineChart.dataName);
         if (name !== null && name !== '') {

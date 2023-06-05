@@ -281,9 +281,9 @@
                     <div class="ui-col-12">
                         <div class="ui-row">
                             <div class="ui-col-6">
-                                <h5 class="ui-h5 ui-font-bold ui-align-c">Repeated Values Hided</h5>
+                                <h5 class="ui-h5 ui-font-bold ui-align-c">Hide Repeated Values</h5>
                                 <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="ui-line-chart">
+                                    <ul class="ui-line-chart" data-ui-repeats="hide">
                                         <li data-ui-y="84"></li>
                                         <li data-ui-y="56"></li>
                                         <li data-ui-y="56"></li>
@@ -295,9 +295,9 @@
                                 </div>
                             </div>
                             <div class="ui-col-6">
-                                <h5 class="ui-h5 ui-font-bold ui-align-c">Repeated Filled Values Hided</h5>
+                                <h5 class="ui-h5 ui-font-bold ui-align-c">Hide Filled Repeated Values</h5>
                                 <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="ui-line-chart" data-ui-type="filled">
+                                    <ul class="ui-line-chart" data-ui-type="filled" data-ui-repeats="hide">
                                         <li data-ui-y="84"></li>
                                         <li data-ui-y="56"></li>
                                         <li data-ui-y="56"></li>
@@ -309,9 +309,9 @@
                                 </div>
                             </div>
                             <div class="ui-col-6">
-                                <h5 class="ui-h5 ui-font-bold ui-align-c">Repeated Curved Values Hided</h5>
+                                <h5 class="ui-h5 ui-font-bold ui-align-c">Hide Curved Repeated Values</h5>
                                 <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="ui-line-chart" data-ui-type="curved">
+                                    <ul class="ui-line-chart" data-ui-type="curved" data-ui-repeats="hide">
                                         <li data-ui-y="84"></li>
                                         <li data-ui-y="56"></li>
                                         <li data-ui-y="56"></li>
@@ -323,9 +323,9 @@
                                 </div>
                             </div>
                             <div class="ui-col-6">
-                                <h5 class="ui-h5 ui-font-bold ui-align-c">Double Repeated Values Hided</h5>
+                                <h5 class="ui-h5 ui-font-bold ui-align-c">Hide Multiple Repeated Values</h5>
                                 <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="ui-line-chart">
+                                    <ul class="ui-line-chart" data-ui-repeats="hide">
                                         <li data-ui-y="84"></li>
                                         <li data-ui-y="56"></li>
                                         <li data-ui-y="56"></li>
@@ -337,9 +337,9 @@
                                 </div>
                             </div>
                             <div class="ui-col-6">
-                                <h5 class="ui-h5 ui-font-bold ui-align-c">Starts with Repeated Values Hided</h5>
+                                <h5 class="ui-h5 ui-font-bold ui-align-c">Hide Starts with Repeated Values</h5>
                                 <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="ui-line-chart">
+                                    <ul class="ui-line-chart" data-ui-repeats="hide">
                                         <li data-ui-y="56"></li>
                                         <li data-ui-y="56"></li>
                                         <li data-ui-y="56"></li>
@@ -351,9 +351,9 @@
                                 </div>
                             </div>
                             <div class="ui-col-6">
-                                <h5 class="ui-h5 ui-font-bold ui-align-c">Ends with Repeated Values Hided</h5>
+                                <h5 class="ui-h5 ui-font-bold ui-align-c">Hide Ends with Repeated Values</h5>
                                 <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="ui-line-chart">
+                                    <ul class="ui-line-chart" data-ui-repeats="hide">
                                         <li data-ui-y="13"></li>
                                         <li data-ui-y="21"></li>
                                         <li data-ui-y="42"></li>
@@ -365,9 +365,9 @@
                                 </div>
                             </div>
                             <div class="ui-col-6">
-                                <h5 class="ui-h5 ui-font-bold ui-align-c">Full Repeated Values: Middle Circles Hided</h5>
+                                <h5 class="ui-h5 ui-font-bold ui-align-c">Hide Full Repeated Values: Only Circles</h5>
                                 <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="ui-line-chart">
+                                    <ul class="ui-line-chart" data-ui-repeats="hide" data-ui-repeats="hide">
                                         <li data-ui-y="13"></li>
                                         <li data-ui-y="13"></li>
                                         <li data-ui-y="13"></li>
@@ -379,9 +379,9 @@
                                 </div>
                             </div>
                             <div class="ui-col-6">
-                                <h5 class="ui-h5 ui-font-bold ui-align-c">Filled Full Repeated Values: Middle Circles Hided</h5>
+                                <h5 class="ui-h5 ui-font-bold ui-align-c">Hide Filled Full Repeated Values: Only Circles</h5>
                                 <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                                    <ul class="ui-line-chart" data-ui-type="filled">
+                                    <ul class="ui-line-chart" data-ui-type="filled" data-ui-repeats="hide">
                                         <li data-ui-y="13"></li>
                                         <li data-ui-y="13"></li>
                                         <li data-ui-y="13"></li>
