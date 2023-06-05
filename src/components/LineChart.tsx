@@ -26,7 +26,7 @@ interface LineChartHolderProps {
     showGridText?: boolean,
     showInfo?: boolean,
     showInfoStats?: boolean,
-    hideRepeated?: boolean,
+    noRepeatadCircles?: boolean,
 
     className?: string,
     style?: any,
@@ -35,7 +35,7 @@ interface LineChartHolderProps {
 
 const LineChartHolder = function (
 
-    { children, x, step, size, prefix, suffix, showGrid, gridStroke, showGridText, showInfo, showInfoStats, hideRepeated, className, style }:LineChartHolderProps) {
+    { children, x, step, size, prefix, suffix, showGrid, gridStroke, showGridText, showInfo, showInfoStats, noRepeatadCircles, className, style }:LineChartHolderProps) {
 
         // settings
         const setShowGrid = showGrid ? showGrid : false;
@@ -44,7 +44,7 @@ const LineChartHolder = function (
         const setShowInfo = showInfo ? showInfo : false;
         const setShowInfoStats = showInfoStats ? showInfoStats : false;
 
-        const setHideRepeated = hideRepeated ? hideRepeated : false;
+        const setNoRepeatadCircles = noRepeatadCircles ? noRepeatadCircles : false;
 
         useEffect(() => {
 
@@ -56,7 +56,7 @@ const LineChartHolder = function (
             ui.lineChart.showInfo = setShowInfo;
             ui.lineChart.showInfoStats = setShowInfoStats;
 
-            ui.lineChart.hideRepeated = setHideRepeated;
+            ui.lineChart.noRepeatadCircles = setNoRepeatadCircles;
 
             // inits
             ui.lineChart.Init();
