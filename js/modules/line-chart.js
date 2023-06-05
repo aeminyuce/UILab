@@ -56,9 +56,6 @@ ui.lineChart = {
 
     noRepeatadCircles: false,
 
-    showGridTextSpace: 7,
-    showInfoSpace: 7,
-
     rows: 5,
     rowsHeight: 50,
 
@@ -66,14 +63,18 @@ ui.lineChart = {
 
     gridStroke: 1,
     gridStrokeArray: 4,
+    gridXTextSpace: 10,
+    gridYTextSpace: 5,
 
     lineStroke: 2,
     circleSize: 4,
 
-    top: 6,
-    right: 24,
+    top: 15,
+    right: 25,
     bottom: 15,
-    left: 42,
+    left: 50,
+
+    showInfoSpace: 10,
 
     dotted: 'dotted',
     dashed: 'dashed',
@@ -225,7 +226,7 @@ ui.lineChart.Start = () => {
                 data.svgHeight = data.height;
 
                 if (ui.lineChart.showInfo) data.svgHeight += ui.lineChart.showInfoSpace;
-                if (ui.lineChart.showGridText) data.svgHeight += ui.lineChart.showGridTextSpace;
+                if (ui.lineChart.showGridText) data.svgHeight += ui.lineChart.gridYTextSpace;
 
                 html = '<svg style="width: ' + data.width + 'px; height: ' + data.svgHeight + 'px;">';
 
@@ -270,7 +271,7 @@ ui.lineChart.Start = () => {
 
                                 html += '<text ' +
                                             'x="' + posX + '" ' +
-                                            'y="' + (data.height - ui.lineChart.bottom + 20) +
+                                            'y="' + (data.height + ui.lineChart.gridYTextSpace) +
                                         '">' +
                                             x[k] +
                                         '</text>';
@@ -280,7 +281,7 @@ ui.lineChart.Start = () => {
 
                             html += '<text ' +
                                         'x="' + posX + '" ' +
-                                        'y="' + (data.height - ui.lineChart.bottom + 20) +
+                                        'y="' + (data.height + ui.lineChart.gridYTextSpace) +
                                     '">' +
                                         x[k] +
                                     '</text>';
@@ -297,13 +298,13 @@ ui.lineChart.Start = () => {
 
                         if (k === 0) { // root of x grid
 
-                            html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + (ui.lineChart.gridStroke / 2))) +'" ' +
+                            html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + (ui.lineChart.gridStroke / 2))) + '" ' +
                                     'class="' + ui.lineChart.nameGridRoot + '" ' +
                                     'stroke-width="' + ui.lineChart.gridStroke + '"';
 
                         } else {
 
-                            html += 'y2="' + (data.height - ui.lineChart.bottom) + '" ' +
+                            html += 'y2="' + data.height + '" ' +
                                     'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
 
                         }
@@ -335,7 +336,7 @@ ui.lineChart.Start = () => {
                         if (val < 0) val--;
 
                         html += '<text ' +
-                                    'x="' + (ui.lineChart.left - 10) + '" ' +
+                                    'x="' + (ui.lineChart.left - ui.lineChart.gridXTextSpace) + '" ' +
                                     'y="' + (posY + 4) +
                                 '">' +
                                     prefix + val + suffix +
@@ -345,7 +346,7 @@ ui.lineChart.Start = () => {
                     if (ui.lineChart.showGrid) {
 
                         html += '<line ' +
-                                    'x2="' + (data.width - ui.lineChart.right + 1) + '" ' +
+                                    'x2="' + (data.width - ui.lineChart.right) + '" ' +
                                     'y1="' + posY + '" ' +
                                     'y2="' + posY + '" ';
 
@@ -441,9 +442,7 @@ ui.lineChart.Start = () => {
                             if (range === 0) range = 1;
 
                             posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * yMax) / range) - ui.lineChart.top);
-
-                            if (posY === ui.lineChart.top) posY = (data.svgHeight - ui.lineChart.bottom - 14); // repeated zero datas
-                            else posY += ui.lineChart.top;
+                            if (posY === ui.lineChart.top) posY = (data.svgHeight - ui.lineChart.bottom); // repeated zero datas
 
                             pathStart.x = posX;
                             pathStart.y = posY;
@@ -460,9 +459,7 @@ ui.lineChart.Start = () => {
                             if (range === 0) range = 1;
 
                             posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax)) / range) - ui.lineChart.top);
-
-                            if (posY === ui.lineChart.top) posY = (data.svgHeight - ui.lineChart.bottom - 14); // repeated zero datas
-                            else posY += ui.lineChart.top;
+                            if (posY === ui.lineChart.top) posY = (data.svgHeight - ui.lineChart.bottom); // repeated zero datas
 
                             // create lines
                             if (n === 0) { // start point

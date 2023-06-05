@@ -6432,19 +6432,20 @@ ui.lineChart = {
   showInfo: true,
   showInfoStats: true,
   noRepeatadCircles: false,
-  showGridTextSpace: 7,
-  showInfoSpace: 7,
   rows: 5,
   rowsHeight: 50,
   curveSize: 1,
   gridStroke: 1,
   gridStrokeArray: 4,
+  gridXTextSpace: 10,
+  gridYTextSpace: 5,
   lineStroke: 2,
   circleSize: 4,
-  top: 6,
-  right: 24,
+  top: 15,
+  right: 25,
   bottom: 15,
-  left: 42,
+  left: 50,
+  showInfoSpace: 10,
   dotted: 'dotted',
   dashed: 'dashed',
   curved: 'curved',
@@ -6537,7 +6538,7 @@ ui.lineChart.Start = function () {
       } else yMax = Math.ceil((parseInt(yMax[0]) - yMin) / rows) * rows + yMin;
       data.svgHeight = data.height;
       if (ui.lineChart.showInfo) data.svgHeight += ui.lineChart.showInfoSpace;
-      if (ui.lineChart.showGridText) data.svgHeight += ui.lineChart.showGridTextSpace;
+      if (ui.lineChart.showGridText) data.svgHeight += ui.lineChart.gridYTextSpace;
       html = '<svg style="width: ' + data.width + 'px; height: ' + data.svgHeight + 'px;">';
       data.step = this.getAttribute(ui.lineChart.dataStep);
       if (data.step !== null && data.step !== '' && data.step !== '0') {
@@ -6562,10 +6563,10 @@ ui.lineChart.Start = function () {
         if (ui.lineChart.showGridText) {
           if (data.step) {
             if (data.stepArr.indexOf(k) > -1) {
-              html += '<text ' + 'x="' + posX + '" ' + 'y="' + (data.height - ui.lineChart.bottom + 20) + '">' + x[k] + '</text>';
+              html += '<text ' + 'x="' + posX + '" ' + 'y="' + (data.height + ui.lineChart.gridYTextSpace) + '">' + x[k] + '</text>';
             }
           } else {
-            html += '<text ' + 'x="' + posX + '" ' + 'y="' + (data.height - ui.lineChart.bottom + 20) + '">' + x[k] + '</text>';
+            html += '<text ' + 'x="' + posX + '" ' + 'y="' + (data.height + ui.lineChart.gridYTextSpace) + '">' + x[k] + '</text>';
           }
         }
         if (ui.lineChart.showGrid) {
@@ -6573,7 +6574,7 @@ ui.lineChart.Start = function () {
           if (k === 0) {
             html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + ui.lineChart.gridStroke / 2)) + '" ' + 'class="' + ui.lineChart.nameGridRoot + '" ' + 'stroke-width="' + ui.lineChart.gridStroke + '"';
           } else {
-            html += 'y2="' + (data.height - ui.lineChart.bottom) + '" ' + 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
+            html += 'y2="' + data.height + '" ' + 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
           }
           html += '></line>';
         }
@@ -6589,10 +6590,10 @@ ui.lineChart.Start = function () {
           var val = parseInt((yMax - yMin) / rows * (rows - l) + yMin);
           if (val > 50) val = parseInt(val / 10) * 10;
           if (val < 0) val--;
-          html += '<text ' + 'x="' + (ui.lineChart.left - 10) + '" ' + 'y="' + (posY + 4) + '">' + prefix + val + suffix + '</text>';
+          html += '<text ' + 'x="' + (ui.lineChart.left - ui.lineChart.gridXTextSpace) + '" ' + 'y="' + (posY + 4) + '">' + prefix + val + suffix + '</text>';
         }
         if (ui.lineChart.showGrid) {
-          html += '<line ' + 'x2="' + (data.width - ui.lineChart.right + 1) + '" ' + 'y1="' + posY + '" ' + 'y2="' + posY + '" ';
+          html += '<line ' + 'x2="' + (data.width - ui.lineChart.right) + '" ' + 'y1="' + posY + '" ' + 'y2="' + posY + '" ';
           if (l >= rows) {
             html += 'x1="' + Math.ceil(ui.lineChart.left - ui.lineChart.gridStroke / 2) + '" ' + 'class="' + ui.lineChart.nameGridRoot + '" ' + 'stroke-width="' + ui.lineChart.gridStroke + '"';
           } else {
@@ -6636,7 +6637,7 @@ ui.lineChart.Start = function () {
           var range = yMax - yMin;
           if (range === 0) range = 1;
           posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * yMax / range - ui.lineChart.top);
-          if (posY === ui.lineChart.top) posY = data.svgHeight - ui.lineChart.bottom - 14;else posY += ui.lineChart.top;
+          if (posY === ui.lineChart.top) posY = data.svgHeight - ui.lineChart.bottom;
           pathStart.x = posX;
           pathStart.y = posY;
           createCircles(0);
@@ -6646,7 +6647,7 @@ ui.lineChart.Start = function () {
           var _range = yMax - yMin;
           if (_range === 0) _range = 1;
           posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax) / _range - ui.lineChart.top);
-          if (posY === ui.lineChart.top) posY = data.svgHeight - ui.lineChart.bottom - 14;else posY += ui.lineChart.top;
+          if (posY === ui.lineChart.top) posY = data.svgHeight - ui.lineChart.bottom;
           if (n === 0) {
             pathStart.x = posX;
             pathStart.y = posY;
