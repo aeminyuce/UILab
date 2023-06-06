@@ -490,7 +490,7 @@ ui.lineChart.Start = () => {
                             if (range === 0) range = 1;
 
                             posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * yMax) / range) - ui.lineChart.top);
-                            if (posY === ui.lineChart.top) posY = (data.svgHeight - ui.lineChart.bottom); // repeated zero datas
+                            if (posY === ui.lineChart.top) posY = (data.svgHeight - (ui.lineChart.top + ui.lineChart.bottom)); // repeated zero datas
 
                             pathStart.x = posX;
                             pathStart.y = posY;
@@ -507,7 +507,7 @@ ui.lineChart.Start = () => {
                             if (range === 0) range = 1;
 
                             posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax)) / range) - ui.lineChart.top);
-                            if (posY === ui.lineChart.top) posY = (data.svgHeight - ui.lineChart.bottom); // repeated zero datas
+                            if (posY === ui.lineChart.top) posY = (data.svgHeight - (ui.lineChart.top + ui.lineChart.bottom)); // repeated zero datas
 
                             // create lines
                             if (n === 0) { // start point
