@@ -524,6 +524,8 @@ ui.lineChart.Start = () => {
                         // create lines, circles and paths
                         let repeatedPaths = [];
                         let repeatedIndex = 0;
+
+                        let repeatedMultiple = false;
                         let repeatedFromStart = false;
 
                         let filledPathCuts = [];
@@ -587,9 +589,9 @@ ui.lineChart.Start = () => {
                                 if (
 
                                     (n === 0 && y[n] === y[n + 1]) ||
-                                    (n !== 0 && y[n - 1] === y[n]) ||
+                                    (n > 0 && y[n - 1] === y[n]) ||
 
-                                    (n !== y.length - 1 && y[n + 1] === y[n]) ||
+                                    (n < y.length - 1 && y[n + 1] === y[n]) ||
                                     (n === y.length - 1 && y[n - 1] === y[n])
 
                                 ) {
@@ -597,9 +599,14 @@ ui.lineChart.Start = () => {
                                     if (y[n - 1] !== y[n] || y[n] !== y[n + 1]) createCircles(n); // only start & finish circles
                                     repeatedPaths[repeatedIndex] = paths;
 
-                                    if (y[n] !== y[n + 1] && y[n + 1] === y[n + 2]) clearBeforeRepeat(); // detect multiple after multiple
-                                    if (n === 0 && posX === pathStart.x) repeatedFromStart = true;
+                                    if (n > 0 && y[n - 1] === y[n] && y[n] !== y[n + 1] && y[n + 1] === y[n + 2]) { // detect multiple after multiple
 
+                                        clearBeforeRepeat();
+                                        repeatedMultiple = true;
+
+                                    }
+
+                                    if (n === 0 && posX === pathStart.x) repeatedFromStart = true;
                                     if (y[n - 1] !== y[n] && y[n] === y[n + 1]) filledPathCuts[repeatedIndex] = (n * col) + ui.lineChart.left; // filled path cut start points
 
                                 } else clearBeforeRepeat();
@@ -626,8 +633,10 @@ ui.lineChart.Start = () => {
                                 const path = repeatedPaths[r];
                                 const pathCut = filledPathCuts[r];
 
-                                createPaths(path, repeatedFromStart);
-                                createFilledPaths((randomId + r), path, repeatedFromStart, pathCut);
+                                const fromStart = (r > 0 && repeatedMultiple) ? false : repeatedFromStart;
+
+                                createPaths(path, fromStart);
+                                createFilledPaths((randomId + r), path, fromStart, pathCut);
 
                             }
 

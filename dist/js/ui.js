@@ -6674,6 +6674,7 @@ ui.lineChart.Start = function () {
         randomId = randomId.substring(randomId.length - 4, randomId.length) + j;
         var repeatedPaths = [];
         var repeatedIndex = 0;
+        var repeatedMultiple = false;
         var repeatedFromStart = false;
         var filledPathCuts = [];
         for (var n = 0; n < y.length; n++) {
@@ -6704,10 +6705,13 @@ ui.lineChart.Start = function () {
               paths = '';
               repeatedIndex += 1;
             };
-            if (n === 0 && y[n] === y[n + 1] || n !== 0 && y[n - 1] === y[n] || n !== y.length - 1 && y[n + 1] === y[n] || n === y.length - 1 && y[n - 1] === y[n]) {
+            if (n === 0 && y[n] === y[n + 1] || n > 0 && y[n - 1] === y[n] || n < y.length - 1 && y[n + 1] === y[n] || n === y.length - 1 && y[n - 1] === y[n]) {
               if (y[n - 1] !== y[n] || y[n] !== y[n + 1]) createCircles(n);
               repeatedPaths[repeatedIndex] = paths;
-              if (y[n] !== y[n + 1] && y[n + 1] === y[n + 2]) clearBeforeRepeat();
+              if (n > 0 && y[n - 1] === y[n] && y[n] !== y[n + 1] && y[n + 1] === y[n + 2]) {
+                clearBeforeRepeat();
+                repeatedMultiple = true;
+              }
               if (n === 0 && posX === pathStart.x) repeatedFromStart = true;
               if (y[n - 1] !== y[n] && y[n] === y[n + 1]) filledPathCuts[repeatedIndex] = n * col + ui.lineChart.left;
             } else clearBeforeRepeat();
@@ -6724,8 +6728,9 @@ ui.lineChart.Start = function () {
           for (var r in repeatedPaths) {
             var path = repeatedPaths[r];
             var pathCut = filledPathCuts[r];
-            createPaths(path, repeatedFromStart);
-            createFilledPaths(randomId + r, path, repeatedFromStart, pathCut);
+            var fromStart = r > 0 && repeatedMultiple ? false : repeatedFromStart;
+            createPaths(path, fromStart);
+            createFilledPaths(randomId + r, path, fromStart, pathCut);
           }
         } else {
           createPaths(paths, true);
