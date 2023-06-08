@@ -95,11 +95,13 @@ interface LineChartLineProps {
     noCircles?: boolean,
     noRepeatedCircles?: boolean,
 
+    onlyRepeated?: boolean,
+
 }
 
 const LineChartLine = function (
 
-    { children, name, curved, dotted, dashed, filled, noCircles, noRepeatedCircles }:LineChartLineProps) {
+    { children, name, curved, dotted, dashed, filled, noCircles, noRepeatedCircles, onlyRepeated }:LineChartLineProps) {
 
         // types
         const setCurved = curved ? ' curved' : '';
@@ -116,7 +118,7 @@ const LineChartLine = function (
         return (
             <ul
                 className={classes} data-ui-name={name} data-ui-type={setType}
-                data-ui-no-circles={noCircles} data-ui-no-repeated-circles={noRepeatedCircles}>
+                data-ui-no-circles={noCircles} data-ui-no-repeated-circles={noRepeatedCircles} data-ui-only-repeated={onlyRepeated}>
                     {children}
             </ul>
         );

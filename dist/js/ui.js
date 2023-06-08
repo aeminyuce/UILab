@@ -6459,10 +6459,11 @@ ui.lineChart = {
   dataName: 'data-ui-name',
   dataStep: 'data-ui-step',
   dataNoCircles: 'data-ui-no-circles',
-  dataNoRepeatedCircles: 'data-ui-no-repeated-circles'
+  dataNoRepeatedCircles: 'data-ui-no-repeated-circles',
+  dataOnlyRepeated: 'data-ui-only-repeated'
 };
 ui.lineChart.Start = function () {
-  var charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
+  var charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, circles, total, name;
   ui.lineChart.Init = function (method, resizer) {
     if (method === ui.lineChart.nameLoaded) {
       charts = ui.find('.' + ui.lineChart.target + '.' + ui.lineChart.nameLoaded);
@@ -6585,11 +6586,13 @@ ui.lineChart.Start = function () {
       var suffix = this.getAttribute(ui.lineChart.dataSuffix);
       if (suffix === null || size === '') suffix = '';
       for (var l = 0; l <= rows; l++) {
-        posY = parseInt(l * (data.height - (ui.lineChart.top + ui.lineChart.bottom)) / rows + ui.lineChart.top);
+        posY = l * (data.height - (ui.lineChart.top + ui.lineChart.bottom)) / rows + ui.lineChart.top;
         if (ui.lineChart.showGridText) {
           var val = parseInt((yMax - yMin) / rows * (rows - l) + yMin);
-          if (val > 50) val = parseInt(val / 10) * 10;
-          if (val < 0) val--;
+          if (yMax >= 50 && val > 10) val = Math.round(val / 10) * 10;
+          if (yMax <= -50 && val < -10) val = Math.floor(val / 10) * 10;
+          if (yMax <= 50 && val > 5) val = Math.round(val / 5) * 5;
+          if (yMax >= -50 && val < -5) val = Math.floor(val / 5) * 5;
           html += '<text ' + 'x="' + (ui.lineChart.left - ui.lineChart.gridXTextSpace) + '" ' + 'y="' + (posY + 4) + '">' + prefix + val + suffix + '</text>';
         }
         if (ui.lineChart.showGrid) {
@@ -6607,7 +6610,7 @@ ui.lineChart.Start = function () {
       pathStart = [];
       html += '<g>';
       Array.prototype.forEach.call(lines, function (el, j) {
-        paths = '';
+        var paths = '';
         y = data[j].y;
         if (j > ui.lineChart.colors.length - 1) {
           data.color.push(ui.lineChart.colors[j - ui.lineChart.colors.length]);
@@ -6615,9 +6618,11 @@ ui.lineChart.Start = function () {
           data.color.push(ui.lineChart.colors[j]);
         }
         var noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
-        if (noCircles === null || noCircles === '') noCircles = false;else noCircles = true;
+        noCircles = noCircles === null || noCircles === '' ? false : true;
         var noRepeatedCircles = el.getAttribute(ui.lineChart.dataNoRepeatedCircles);
-        if (noRepeatedCircles === null || noRepeatedCircles === '') noRepeatedCircles = false;else noRepeatedCircles = true;
+        noRepeatedCircles = noRepeatedCircles === null || noRepeatedCircles === '' ? false : true;
+        var onlyRepeated = el.getAttribute(ui.lineChart.dataOnlyRepeated);
+        onlyRepeated = onlyRepeated === null || onlyRepeated === '' ? false : true;
         type = el.getAttribute(ui.lineChart.dataType);
         if (type === null || type === undefined) {
           type = '';
@@ -6634,35 +6639,50 @@ ui.lineChart.Start = function () {
             circles += ui.tooltip.dataTooltip + ' ' + 'name="' + (y[n] ? y[n] : 0) + '" ' + '/>';
           }
         };
-        var createPaths = function createPaths(pathsData) {
+        var removeReTypedCurves = function removeReTypedCurves(data) {
+          return data.replace(/M L |M C |M S +[\d\s\.]+\, /g, 'M ');
+        };
+        var createPaths = function createPaths(pathsData, fromStart) {
           if (type.indexOf(ui.lineChart.dashed) > -1) {
             html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dashed + '" ';
           } else if (type.indexOf(ui.lineChart.dotted) > -1) {
             html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dotted + '" ';
           } else html += '<path ';
-          html += 'd="M ' + pathStart.x + ' ' + pathStart.y + pathsData + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + '/>';
+          html += 'd="M';
+          if (fromStart) html += ' ' + pathStart.x + ' ' + pathStart.y;
+          html += pathsData + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + '/>';
+          html = removeReTypedCurves(html);
         };
-        var cerateFilledPaths = function cerateFilledPaths(id, pathsData) {
+        var createFilledPaths = function createFilledPaths(id, pathsData, fromStart) {
           if (type.indexOf(ui.lineChart.filled) > -1) {
-            html += '<linearGradient id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' + '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' + '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' + '</linearGradient>' + '<path d="M ' + (pathStart.x + ui.lineChart.gridStroke / 2) + ' ' + pathStart.y + pathsData + ' V ' + (data.height - ui.lineChart.bottom - ui.lineChart.gridStroke / 2) + ' H ' + (ui.lineChart.gridStroke / 2 + ui.lineChart.left) + ' Z" ' + 'stroke="0" ' + 'fill="url(#' + ui.lineChart.idGradient + id + ')" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + 'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' + '/>';
+            html += '<linearGradient id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' + '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' + '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' + '</linearGradient>';
+            html += '<path d="M';
+            if (fromStart) html += ' ' + (pathStart.x + ui.lineChart.gridStroke / 2) + ' ' + pathStart.y;
+            html += pathsData + ' V ' + (data.height - ui.lineChart.bottom - ui.lineChart.gridStroke / 2) + ' H ' + (ui.lineChart.gridStroke / 2 + ui.lineChart.left) + ' Z" ' + 'stroke="0" ' + 'fill="url(#' + ui.lineChart.idGradient + id + ')" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + 'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' + '/>';
+            html = removeReTypedCurves(html);
           }
         };
         if (y.length === 0) {
-          posX = col + ui.lineChart.left;
-          var range = yMax - yMin;
-          if (range === 0) range = 1;
-          posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * yMax / range - ui.lineChart.top);
-          if (posY === ui.lineChart.top) posY = data.svgHeight - (ui.lineChart.top + ui.lineChart.bottom);
+          posX = ui.lineChart.left;
+          posY = data.svgHeight - (ui.lineChart.top + ui.lineChart.bottom);
           pathStart.x = posX;
           pathStart.y = posY;
           createCircles(0);
         }
+        var randomId = new Date().getTime().toString();
+        randomId = randomId.substring(randomId.length - 4, randomId.length) + j;
+        var repeatedPaths = [];
+        var repeatedIndex = 0;
+        var repeatedFromStart = false;
         for (var n = 0; n < y.length; n++) {
           posX = n * col + ui.lineChart.left;
-          var _range = yMax - yMin;
-          if (_range === 0) _range = 1;
-          posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax) / _range - ui.lineChart.top);
-          if (posY === ui.lineChart.top) posY = data.svgHeight - (ui.lineChart.top + ui.lineChart.bottom);
+          var range = yMax - yMin;
+          if (range === 0) range = 1;
+          if (yMax + yMin === 0) {
+            posY = data.svgHeight - (ui.lineChart.top + ui.lineChart.bottom);
+          } else {
+            posY = data.height - (data.height + (data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax) / range) + ui.lineChart.top;
+          }
           if (n === 0) {
             pathStart.x = posX;
             pathStart.y = posY;
@@ -6675,18 +6695,36 @@ ui.lineChart.Start = function () {
               paths += ' S ' + (n * col - data.percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
             }
           } else {
-            if (n > 0) {
-              paths += ' L ' + posX + ' ' + posY;
-            }
+            if (n > 0) paths += ' L ' + posX + ' ' + posY;
           }
           if (noRepeatedCircles) {
-            if (n === 0 || n === y.length - 1 || y[n - 1] !== undefined && y[n - 1] !== y[n] || y[n + 1] !== undefined && y[n + 1] !== y[n]) createCircles(n);
+            if (n === 0 && y[n] !== y[n + 1] || n !== 0 && y[n - 1] !== y[n] || n !== y.length - 1 && y[n + 1] !== y[n] || n === y.length - 1 && y[n - 1] !== y[n]) createCircles(n);
+          } else if (onlyRepeated) {
+            var clearBeforeRepeat = function clearBeforeRepeat() {
+              paths = '';
+              repeatedIndex += 1;
+            };
+            if (n === 0 && y[n] === y[n + 1] || n !== 0 && y[n - 1] === y[n] || n !== y.length - 1 && y[n + 1] === y[n] || n === y.length - 1 && y[n - 1] === y[n]) {
+              if (y[n] !== y[n + 1] || y[n - 1] !== y[n]) createCircles(n);
+              repeatedPaths[repeatedIndex] = paths;
+              if (y[n] !== y[n + 1] && y[n + 1] === y[n + 2]) clearBeforeRepeat();
+              if (n === 0 && posX === pathStart.x) repeatedFromStart = true;
+            } else clearBeforeRepeat();
           } else createCircles(n);
         }
-        var randomId = new Date().getTime().toString();
-        randomId = randomId.substring(randomId.length - 4, randomId.length) + j;
-        createPaths(paths);
-        cerateFilledPaths(randomId, paths);
+        if (onlyRepeated) {
+          repeatedPaths = repeatedPaths.filter(function (item) {
+            if (item !== 0 || item !== null || item !== '') return item;
+          });
+          for (var r in repeatedPaths) {
+            var path = repeatedPaths[r];
+            createPaths(path, repeatedFromStart);
+            createFilledPaths(randomId, path, repeatedFromStart);
+          }
+        } else {
+          createPaths(paths, true);
+          createFilledPaths(randomId, paths, true);
+        }
         name = el.getAttribute(ui.lineChart.dataName);
         if (name !== null && name !== '') {
           data.name.push(name);

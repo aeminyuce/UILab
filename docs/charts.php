@@ -22,6 +22,20 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
+                        <h5 class="ui-h5 ui-font-bold ui-align-c">Line Chart with Prefix &amp; Suffix</h5>
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun" data-ui-prefix="$" data-ui-suffix="m">
+                            <ul class="ui-line-chart">
+                                <li data-ui-y="84"></li>
+                                <li data-ui-y="56"></li>
+                                <li data-ui-y="112"></li>
+                                <li data-ui-y="140"></li>
+                                <li data-ui-y="28"></li>
+                                <li data-ui-y="0"></li>
+                                <li data-ui-y="28"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold ui-align-c">Line Chart with Repeated Zero Datas</h5>
                         <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-line-chart">
@@ -36,17 +50,23 @@
                         </div>
                     </div>
                     <div class="ui-col-6">
-                        <h5 class="ui-h5 ui-font-bold ui-align-c">Line Chart with Prefix &amp; Suffix</h5>
-                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun" data-ui-prefix="$" data-ui-suffix="m">
+                        <h5 class="ui-h5 ui-font-bold ui-align-c">Line Chart with All Zero Datas</h5>
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-line-chart">
-                                <li data-ui-y="84"></li>
-                                <li data-ui-y="56"></li>
-                                <li data-ui-y="112"></li>
-                                <li data-ui-y="140"></li>
-                                <li data-ui-y="28"></li>
                                 <li data-ui-y="0"></li>
-                                <li data-ui-y="28"></li>
+                                <li data-ui-y="0"></li>
+                                <li data-ui-y="0"></li>
+                                <li data-ui-y="0"></li>
+                                <li data-ui-y="0"></li>
+                                <li data-ui-y="0"></li>
+                                <li data-ui-y="0"></li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="ui-col-6">
+                        <h5 class="ui-h5 ui-font-bold ui-align-c">Line Chart with No Y Datas</h5>
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-line-chart"></ul>
                         </div>
                     </div>
                     <div class="ui-col-6">
@@ -203,7 +223,7 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold ui-align-c">No Circles Line Charts</h5>
-                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
                             <ul class="ui-line-chart" data-ui-name="1st" data-ui-type="curved dotted" data-ui-no-circles="true">
                                 <li data-ui-y="-34" data-ui-url="#1"></li>
                                 <li data-ui-y="-56" data-ui-url="#2"></li>
@@ -235,24 +255,101 @@
                     </div>
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold ui-align-c">No Repeated Circles Line Charts</h5>
-                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="ui-line-chart" data-ui-name="1st" data-ui-no-repeated-circles="true">
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-line-chart" data-ui-name="Start" data-ui-no-repeated-circles="true">
                                 <li data-ui-y="84"></li>
-                                <li data-ui-y="46"></li>
+                                <li data-ui-y="84"></li>
+                                <li data-ui-y="84"></li>
+                                <li data-ui-y="64"></li>
+                                <li data-ui-y="37"></li>
+                                <li data-ui-y="10"></li>
+                                <li data-ui-y="27"></li>
+                            </ul>
+                            <ul class="ui-line-chart" data-ui-name="Mid" data-ui-no-repeated-circles="true">
+                                <li data-ui-y="55"></li>
+                                <li data-ui-y="33"></li>
                                 <li data-ui-y="112"></li>
                                 <li data-ui-y="112"></li>
                                 <li data-ui-y="112"></li>
                                 <li data-ui-y="112"></li>
                                 <li data-ui-y="73"></li>
                             </ul>
-                            <ul class="ui-line-chart" data-ui-name="2nd" data-ui-type="filled">
-                                <li data-ui-y="120" data-ui-url="#1"></li>
-                                <li data-ui-y="20" data-ui-url="#2"></li>
-                                <li data-ui-y="84" data-ui-url="#3"></li>
-                                <li data-ui-y="66" data-ui-url="#4"></li>
-                                <li data-ui-y="80" data-ui-url="#5"></li>
-                                <li data-ui-y="76" data-ui-url="#6"></li>
-                                <li data-ui-y="89" data-ui-url="#7"></li>
+                            <ul class="ui-line-chart" data-ui-name="End" data-ui-no-repeated-circles="true">
+                                <li data-ui-y="12"></li>
+                                <li data-ui-y="12"></li>
+                                <li data-ui-y="12"></li>
+                                <li data-ui-y="5"></li>
+                                <li data-ui-y="55"></li>
+                                <li data-ui-y="55"></li>
+                                <li data-ui-y="55"></li>
+                            </ul>
+                            <ul class="ui-line-chart" data-ui-name="All" data-ui-no-repeated-circles="true">
+                                <li data-ui-y="42"></li>
+                                <li data-ui-y="42"></li>
+                                <li data-ui-y="42"></li>
+                                <li data-ui-y="42"></li>
+                                <li data-ui-y="42"></li>
+                                <li data-ui-y="42"></li>
+                                <li data-ui-y="42"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ui-col-6">
+                        <h5 class="ui-h5 ui-font-bold ui-align-c">Only Repeated Line Charts</h5>
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-line-chart"data-ui-name="Multi" data-ui-only-repeated="true">
+                                <li data-ui-y="25"></li>
+                                <li data-ui-y="130"></li>
+                                <li data-ui-y="130"></li>
+                                <li data-ui-y="30"></li>
+                                <li data-ui-y="120"></li>
+                                <li data-ui-y="120"></li>
+                                <li data-ui-y="35"></li>
+                            </ul>
+                            <ul class="ui-line-chart" data-ui-name="2x Multi" data-ui-only-repeated="true">
+                                <li data-ui-y="25"></li>
+                                <li data-ui-y="110"></li>
+                                <li data-ui-y="110"></li>
+                                <li data-ui-y="100"></li>
+                                <li data-ui-y="100"></li>
+                                <li data-ui-y="65"></li>
+                                <li data-ui-y="15"></li>
+                            </ul>
+                            <ul class="ui-line-chart" data-ui-name="Mid" data-ui-only-repeated="true">
+                                <li data-ui-y="25"></li>
+                                <li data-ui-y="70"></li>
+                                <li data-ui-y="70"></li>
+                                <li data-ui-y="70"></li>
+                                <li data-ui-y="70"></li>
+                                <li data-ui-y="65"></li>
+                                <li data-ui-y="45"></li>
+                            </ul>
+                            <ul class="ui-line-chart"data-ui-name="Start" data-ui-only-repeated="true">
+                                <li data-ui-y="50"></li>
+                                <li data-ui-y="50"></li>
+                                <li data-ui-y="50"></li>
+                                <li data-ui-y="50"></li>
+                                <li data-ui-y="50"></li>
+                                <li data-ui-y="95"></li>
+                                <li data-ui-y="75"></li>
+                            </ul>
+                            <ul class="ui-line-chart"data-ui-name="End" data-ui-only-repeated="true">
+                                <li data-ui-y="35"></li>
+                                <li data-ui-y="75"></li>
+                                <li data-ui-y="35"></li>
+                                <li data-ui-y="35"></li>
+                                <li data-ui-y="35"></li>
+                                <li data-ui-y="35"></li>
+                                <li data-ui-y="35"></li>
+                            </ul>
+                            <ul class="ui-line-chart"data-ui-name="All" data-ui-only-repeated="true">
+                                <li data-ui-y="15"></li>
+                                <li data-ui-y="15"></li>
+                                <li data-ui-y="15"></li>
+                                <li data-ui-y="15"></li>
+                                <li data-ui-y="15"></li>
+                                <li data-ui-y="15"></li>
+                                <li data-ui-y="15"></li>
                             </ul>
                         </div>
                     </div>

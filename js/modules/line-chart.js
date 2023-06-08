@@ -95,12 +95,14 @@ ui.lineChart = {
     dataNoCircles: 'data-ui-no-circles',
     dataNoRepeatedCircles: 'data-ui-no-repeated-circles',
 
+    dataOnlyRepeated: 'data-ui-only-repeated',
+
 };
 
 // load charts
 ui.lineChart.Start = () => {
 
-    var charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, paths, circles, total, name;
+    var charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, circles, total, name;
 
     ui.lineChart.Init = function (method, resizer) {
 
@@ -326,14 +328,19 @@ ui.lineChart.Start = () => {
 
                 for (let l = 0; l <= rows; l++) {
 
-                    posY = parseInt((l * (data.height - (ui.lineChart.top + ui.lineChart.bottom)) / rows) + ui.lineChart.top);
+                    posY = (l * (data.height - (ui.lineChart.top + ui.lineChart.bottom)) / rows) + ui.lineChart.top;
 
                     if (ui.lineChart.showGridText) {
 
                         let val = parseInt(((yMax - yMin) / rows) * (rows - l) + yMin);
 
-                        if (val > 50) val = parseInt(val / 10) * 10;
-                        if (val < 0) val--;
+                        // multiple of 10
+                        if (yMax >= 50 && val > 10) val = Math.round(val / 10) * 10;
+                        if (yMax <= -50 && val < -10) val = Math.floor(val / 10) * 10;
+
+                        // multiple of 5
+                        if (yMax <= 50 && val > 5) val = Math.round(val / 5) * 5;
+                        if (yMax >= -50 && val < -5) val = Math.floor(val / 5) * 5;
 
                         html += '<text ' +
                                     'x="' + (ui.lineChart.left - ui.lineChart.gridXTextSpace) + '" ' +
@@ -381,7 +388,7 @@ ui.lineChart.Start = () => {
 
                     (el, j) => {
 
-                        paths = '';
+                        let paths = '';
 
                         y = data[j].y;
 
@@ -395,10 +402,13 @@ ui.lineChart.Start = () => {
 
                         // create paths and circles
                         let noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
-                        if (noCircles === null || noCircles === '') noCircles = false; else noCircles = true;
+                        noCircles = noCircles === null || noCircles === '' ? false : true;
 
                         let noRepeatedCircles = el.getAttribute(ui.lineChart.dataNoRepeatedCircles);
-                        if (noRepeatedCircles === null || noRepeatedCircles === '') noRepeatedCircles = false; else noRepeatedCircles = true;
+                        noRepeatedCircles = noRepeatedCircles === null || noRepeatedCircles === '' ? false : true;
+
+                        let onlyRepeated = el.getAttribute(ui.lineChart.dataOnlyRepeated);
+                        onlyRepeated = onlyRepeated === null || onlyRepeated === '' ? false : true;
 
                         // get line type
                         type = el.getAttribute(ui.lineChart.dataType);
@@ -437,7 +447,11 @@ ui.lineChart.Start = () => {
 
                         }
 
-                        const createPaths = (pathsData) => {
+                        const removeReTypedCurves = (data) => {
+                            return data.replace(/M L |M C |M S +[\d\s\.]+\, /g, 'M ');
+                        }
+
+                        const createPaths = (pathsData, fromStart) => {
 
                             if (type.indexOf(ui.lineChart.dashed) > -1) { // dashed
                                 html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dashed + '" ';
@@ -447,26 +461,31 @@ ui.lineChart.Start = () => {
 
                             } else html += '<path ';
 
-                            html += 'd="M ' + pathStart.x + ' ' + pathStart.y +
-                                    pathsData + '" ' +
+                            html += 'd="M';
+                            if (fromStart) html += ' ' + pathStart.x + ' ' + pathStart.y;
+
+                            html += pathsData + '" ' +
                                     'stroke="' + data.color[j] + '" ' +
                                     'stroke-width="' + ui.lineChart.lineStroke + '" ' +
                                 '/>';
 
+                            html = removeReTypedCurves(html);
+
                         }
 
-                        const cerateFilledPaths = (id, pathsData) => {
+                        const createFilledPaths = (id, pathsData, fromStart) => {
 
                             if (type.indexOf(ui.lineChart.filled) > -1) {
 
                                 html += '<linearGradient id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' +
                                             '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' +
                                             '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' +
-                                        '</linearGradient>' +
+                                        '</linearGradient>';
 
-                                        '<path d="M ' + (pathStart.x + (ui.lineChart.gridStroke / 2)) + ' ' + pathStart.y +
+                                html += '<path d="M';
+                                if (fromStart) html += ' ' + (pathStart.x + (ui.lineChart.gridStroke / 2)) + ' ' + pathStart.y;
 
-                                            pathsData +
+                                html += pathsData +
 
                                             ' V ' + (data.height - ui.lineChart.bottom - (ui.lineChart.gridStroke / 2)) +
                                             ' H ' + ((ui.lineChart.gridStroke / 2) + ui.lineChart.left) + ' Z" ' +
@@ -478,19 +497,16 @@ ui.lineChart.Start = () => {
 
                                         '/>';
 
+                                html = removeReTypedCurves(html);
+
                             }
 
                         }
 
-                        if (y.length === 0) {
+                        if (y.length === 0) { // no y datas
 
-                            posX = col + ui.lineChart.left;
-
-                            let range = yMax - yMin; // ignore infinity
-                            if (range === 0) range = 1;
-
-                            posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * yMax) / range) - ui.lineChart.top);
-                            if (posY === ui.lineChart.top) posY = (data.svgHeight - (ui.lineChart.top + ui.lineChart.bottom)); // repeated zero datas
+                            posX = ui.lineChart.left;
+                            posY = (data.svgHeight - (ui.lineChart.top + ui.lineChart.bottom));
 
                             pathStart.x = posX;
                             pathStart.y = posY;
@@ -499,6 +515,14 @@ ui.lineChart.Start = () => {
 
                         }
 
+                        // random id
+                        let randomId = new Date().getTime().toString();
+                        randomId = randomId.substring(randomId.length - 4, randomId.length) + j;
+
+                        let repeatedPaths = [];
+                        let repeatedIndex = 0;
+                        let repeatedFromStart = false;
+
                         for (let n = 0; n < y.length; n++) {
 
                             posX = (n * col) + ui.lineChart.left;
@@ -506,8 +530,12 @@ ui.lineChart.Start = () => {
                             let range = yMax - yMin; // ignore infinity
                             if (range === 0) range = 1;
 
-                            posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax)) / range) - ui.lineChart.top);
-                            if (posY === ui.lineChart.top) posY = (data.svgHeight - (ui.lineChart.top + ui.lineChart.bottom)); // repeated zero datas
+                            if (yMax + yMin === 0) { // repeated zero datas
+                                posY = (data.svgHeight - (ui.lineChart.top + ui.lineChart.bottom));
+
+                            } else { // default
+                                posY = data.height - (data.height + (((data.height - (ui.lineChart.top + ui.lineChart.bottom)) * (y[n] - yMax)) / range)) + ui.lineChart.top;
+                            }
 
                             // create lines
                             if (n === 0) { // start point
@@ -536,33 +564,75 @@ ui.lineChart.Start = () => {
 
                             } else { // default
 
-                                if (n > 0) { // other points
-                                    paths += ' L ' + posX + ' ' + posY;
-                                }
+                                if (n > 0) paths += ' L ' + posX + ' ' + posY; // other points
 
                             }
 
-                            // create circles
+                            // create circles and paths
                             if (noRepeatedCircles) {
 
                                 if (
 
-                                    (n === 0 || n === y.length - 1) ||
-                                    (y[n - 1] !== undefined && y[n - 1] !== y[n]) || (y[n + 1] !== undefined && y[n + 1] !== y[n])
+                                    (n === 0 && y[n] !== y[n + 1]) ||
+                                    (n !== 0 && y[n - 1] !== y[n]) ||
+
+                                    (n !== y.length - 1 && y[n + 1] !== y[n]) ||
+                                    (n === y.length - 1 && y[n - 1] !== y[n])
 
                                 ) createCircles(n);
+
+                            } else if (onlyRepeated) {
+
+                                const clearBeforeRepeat = () => {
+
+                                    paths = '';
+                                    repeatedIndex += 1;
+
+                                }
+
+                                if (
+
+                                    (n === 0 && y[n] === y[n + 1]) ||
+                                    (n !== 0 && y[n - 1] === y[n]) ||
+
+                                    (n !== y.length - 1 && y[n + 1] === y[n]) ||
+                                    (n === y.length - 1 && y[n - 1] === y[n])
+
+                                ) {
+
+                                    if (y[n] !== y[n + 1] || y[n - 1] !== y[n]) createCircles(n); // only start & finish circles
+                                    repeatedPaths[repeatedIndex] = paths;
+
+                                    if (y[n] !== y[n + 1] && y[n + 1] === y[n + 2]) clearBeforeRepeat(); // detect multiple after multiple
+                                    if (n === 0 && posX === pathStart.x) repeatedFromStart = true;
+
+                                } else clearBeforeRepeat();
 
                             } else createCircles(n);
 
                         }
 
-                        // random id
-                        let randomId = new Date().getTime().toString();
-                        randomId = randomId.substring(randomId.length - 4, randomId.length) + j;
+                        if (onlyRepeated) {
 
-                        // create paths
-                        createPaths(paths);
-                        cerateFilledPaths(randomId, paths);
+                            repeatedPaths = repeatedPaths.filter(item => { // remove empty array items
+                                if (item !== 0 || item !== null || item !== '') return item;
+                            });
+
+                            for (let r in repeatedPaths) {
+
+                                const path = repeatedPaths[r];
+
+                                createPaths(path, repeatedFromStart);
+                                createFilledPaths(randomId, path, repeatedFromStart);
+
+                            }
+
+                        } else {
+
+                            createPaths(paths, true);
+                            createFilledPaths(randomId, paths, true);
+
+                        }
 
                         // get data names
                         name = el.getAttribute(ui.lineChart.dataName);
