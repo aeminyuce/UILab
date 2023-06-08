@@ -353,6 +353,65 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="ui-col-6">
+                        <h5 class="ui-h5 ui-font-bold ui-align-c">Only Repeated Curved and Filled Line Charts</h5>
+                        <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
+                            <ul class="ui-line-chart" data-ui-name="Multi" data-ui-type="curved filled" data-ui-only-repeated="true">
+                                <li data-ui-y="25"></li>
+                                <li data-ui-y="130"></li>
+                                <li data-ui-y="130"></li>
+                                <li data-ui-y="30"></li>
+                                <li data-ui-y="120"></li>
+                                <li data-ui-y="120"></li>
+                                <li data-ui-y="35"></li>
+                            </ul>
+                            <ul class="ui-line-chart" data-ui-name="2x Multi" data-ui-type="curved filled" data-ui-only-repeated="true">
+                                <li data-ui-y="25"></li>
+                                <li data-ui-y="110"></li>
+                                <li data-ui-y="110"></li>
+                                <li data-ui-y="100"></li>
+                                <li data-ui-y="100"></li>
+                                <li data-ui-y="65"></li>
+                                <li data-ui-y="15"></li>
+                            </ul>
+                            <ul class="ui-line-chart" data-ui-name="Mid" data-ui-type="curved filled" data-ui-only-repeated="true">
+                                <li data-ui-y="25"></li>
+                                <li data-ui-y="70"></li>
+                                <li data-ui-y="70"></li>
+                                <li data-ui-y="70"></li>
+                                <li data-ui-y="70"></li>
+                                <li data-ui-y="65"></li>
+                                <li data-ui-y="45"></li>
+                            </ul>
+                            <ul class="ui-line-chart"data-ui-name="Start" data-ui-type="curved filled" data-ui-only-repeated="true">
+                                <li data-ui-y="50"></li>
+                                <li data-ui-y="50"></li>
+                                <li data-ui-y="50"></li>
+                                <li data-ui-y="50"></li>
+                                <li data-ui-y="50"></li>
+                                <li data-ui-y="95"></li>
+                                <li data-ui-y="75"></li>
+                            </ul>
+                            <ul class="ui-line-chart"data-ui-name="End" data-ui-type="curved filled" data-ui-only-repeated="true">
+                                <li data-ui-y="35"></li>
+                                <li data-ui-y="75"></li>
+                                <li data-ui-y="35"></li>
+                                <li data-ui-y="35"></li>
+                                <li data-ui-y="35"></li>
+                                <li data-ui-y="35"></li>
+                                <li data-ui-y="35"></li>
+                            </ul>
+                            <ul class="ui-line-chart"data-ui-name="All" data-ui-type="curved filled" data-ui-only-repeated="true">
+                                <li data-ui-y="15"></li>
+                                <li data-ui-y="15"></li>
+                                <li data-ui-y="15"></li>
+                                <li data-ui-y="15"></li>
+                                <li data-ui-y="15"></li>
+                                <li data-ui-y="15"></li>
+                                <li data-ui-y="15"></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="ui-col-12 ui-m-20-b ui-theme-base ui-fill-dark-100 ui-round">
                         <div class="ui-row">
                             <div class="ui-col-6">

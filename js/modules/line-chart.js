@@ -448,7 +448,7 @@ ui.lineChart.Start = () => {
                         }
 
                         const removeReTypedCurves = (data) => {
-                            return data.replace(/M L |M C |M S +[\d\s\.]+\, /g, 'M ');
+                            return data.replace(/M L |M C +[\d\s\.]+\, +[\d\s\.]+\, |M S +[\d\s\.]+\, /g, 'M ');
                         }
 
                         const createPaths = (pathsData, fromStart) => {
@@ -473,7 +473,7 @@ ui.lineChart.Start = () => {
 
                         }
 
-                        const createFilledPaths = (id, pathsData, fromStart) => {
+                        const createFilledPaths = (id, pathsData, fromStart, cutted) => {
 
                             if (type.indexOf(ui.lineChart.filled) > -1) {
 
@@ -485,17 +485,19 @@ ui.lineChart.Start = () => {
                                 html += '<path d="M';
                                 if (fromStart) html += ' ' + (pathStart.x + (ui.lineChart.gridStroke / 2)) + ' ' + pathStart.y;
 
+                                const cuttedStart = cutted ? cutted : (ui.lineChart.gridStroke / 2) + ui.lineChart.left
+
                                 html += pathsData +
 
-                                            ' V ' + (data.height - ui.lineChart.bottom - (ui.lineChart.gridStroke / 2)) +
-                                            ' H ' + ((ui.lineChart.gridStroke / 2) + ui.lineChart.left) + ' Z" ' +
+                                        ' V ' + (data.height - ui.lineChart.bottom - (ui.lineChart.gridStroke / 2)) +
+                                        ' H ' + cuttedStart + ' Z" ' +
 
-                                            'stroke="0" ' +
-                                            'fill="url(#' + ui.lineChart.idGradient + id + ')" ' +
-                                            'stroke-width="' + ui.lineChart.lineStroke + '" ' +
-                                            'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' +
+                                        'stroke="0" ' +
+                                        'fill="url(#' + ui.lineChart.idGradient + id + ')" ' +
+                                        'stroke-width="' + ui.lineChart.lineStroke + '" ' +
+                                        'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' +
 
-                                        '/>';
+                                    '/>';
 
                                 html = removeReTypedCurves(html);
 
@@ -519,9 +521,12 @@ ui.lineChart.Start = () => {
                         let randomId = new Date().getTime().toString();
                         randomId = randomId.substring(randomId.length - 4, randomId.length) + j;
 
+                        // create lines, circles and paths
                         let repeatedPaths = [];
                         let repeatedIndex = 0;
                         let repeatedFromStart = false;
+
+                        let filledPathCuts = [];
 
                         for (let n = 0; n < y.length; n++) {
 
@@ -538,13 +543,15 @@ ui.lineChart.Start = () => {
                             }
 
                             // create lines
-                            if (n === 0) { // start point
+                            if (n === 0) {
 
+                                // start points
                                 pathStart.x = posX;
                                 pathStart.y = posY;
 
                             }
 
+                            // add curves
                             if (type.indexOf(ui.lineChart.curved) > -1) { // curved
 
                                 data.percent = parseInt((ui.lineChart.curveSize * (n * col)) / 100);
@@ -562,24 +569,11 @@ ui.lineChart.Start = () => {
 
                                 }
 
-                            } else { // default
-
-                                if (n > 0) paths += ' L ' + posX + ' ' + posY; // other points
-
-                            }
+                            } else if (n > 0) paths += ' L ' + posX + ' ' + posY; // not curved
 
                             // create circles and paths
                             if (noRepeatedCircles) {
-
-                                if (
-
-                                    (n === 0 && y[n] !== y[n + 1]) ||
-                                    (n !== 0 && y[n - 1] !== y[n]) ||
-
-                                    (n !== y.length - 1 && y[n + 1] !== y[n]) ||
-                                    (n === y.length - 1 && y[n - 1] !== y[n])
-
-                                ) createCircles(n);
+                                if (y[n - 1] !== y[n] || y[n] !== y[n + 1]) createCircles(n);
 
                             } else if (onlyRepeated) {
 
@@ -600,11 +594,13 @@ ui.lineChart.Start = () => {
 
                                 ) {
 
-                                    if (y[n] !== y[n + 1] || y[n - 1] !== y[n]) createCircles(n); // only start & finish circles
+                                    if (y[n - 1] !== y[n] || y[n] !== y[n + 1]) createCircles(n); // only start & finish circles
                                     repeatedPaths[repeatedIndex] = paths;
 
                                     if (y[n] !== y[n + 1] && y[n + 1] === y[n + 2]) clearBeforeRepeat(); // detect multiple after multiple
                                     if (n === 0 && posX === pathStart.x) repeatedFromStart = true;
+
+                                    if (y[n - 1] !== y[n] && y[n] === y[n + 1]) filledPathCuts[repeatedIndex] = (n * col) + ui.lineChart.left; // filled path cut start points
 
                                 } else clearBeforeRepeat();
 
@@ -614,16 +610,24 @@ ui.lineChart.Start = () => {
 
                         if (onlyRepeated) {
 
-                            repeatedPaths = repeatedPaths.filter(item => { // remove empty array items
-                                if (item !== 0 || item !== null || item !== '') return item;
-                            });
+                            const clearEmptyItems = (arr) => { // clear empty array items
+
+                                return arr.filter(item => {
+                                    if (item !== 0 || item !== null || item !== '') return item;
+                                });
+
+                            }
+
+                            repeatedPaths = clearEmptyItems(repeatedPaths);
+                            filledPathCuts = clearEmptyItems(filledPathCuts);
 
                             for (let r in repeatedPaths) {
 
                                 const path = repeatedPaths[r];
+                                const pathCut = filledPathCuts[r];
 
                                 createPaths(path, repeatedFromStart);
-                                createFilledPaths(randomId, path, repeatedFromStart);
+                                createFilledPaths((randomId + r), path, repeatedFromStart, pathCut);
 
                             }
 

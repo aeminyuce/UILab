@@ -6640,7 +6640,7 @@ ui.lineChart.Start = function () {
           }
         };
         var removeReTypedCurves = function removeReTypedCurves(data) {
-          return data.replace(/M L |M C |M S +[\d\s\.]+\, /g, 'M ');
+          return data.replace(/M L |M C +[\d\s\.]+\, +[\d\s\.]+\, |M S +[\d\s\.]+\, /g, 'M ');
         };
         var createPaths = function createPaths(pathsData, fromStart) {
           if (type.indexOf(ui.lineChart.dashed) > -1) {
@@ -6653,12 +6653,13 @@ ui.lineChart.Start = function () {
           html += pathsData + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + '/>';
           html = removeReTypedCurves(html);
         };
-        var createFilledPaths = function createFilledPaths(id, pathsData, fromStart) {
+        var createFilledPaths = function createFilledPaths(id, pathsData, fromStart, cutted) {
           if (type.indexOf(ui.lineChart.filled) > -1) {
             html += '<linearGradient id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' + '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' + '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' + '</linearGradient>';
             html += '<path d="M';
             if (fromStart) html += ' ' + (pathStart.x + ui.lineChart.gridStroke / 2) + ' ' + pathStart.y;
-            html += pathsData + ' V ' + (data.height - ui.lineChart.bottom - ui.lineChart.gridStroke / 2) + ' H ' + (ui.lineChart.gridStroke / 2 + ui.lineChart.left) + ' Z" ' + 'stroke="0" ' + 'fill="url(#' + ui.lineChart.idGradient + id + ')" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + 'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' + '/>';
+            var cuttedStart = cutted ? cutted : ui.lineChart.gridStroke / 2 + ui.lineChart.left;
+            html += pathsData + ' V ' + (data.height - ui.lineChart.bottom - ui.lineChart.gridStroke / 2) + ' H ' + cuttedStart + ' Z" ' + 'stroke="0" ' + 'fill="url(#' + ui.lineChart.idGradient + id + ')" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + 'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' + '/>';
             html = removeReTypedCurves(html);
           }
         };
@@ -6674,6 +6675,7 @@ ui.lineChart.Start = function () {
         var repeatedPaths = [];
         var repeatedIndex = 0;
         var repeatedFromStart = false;
+        var filledPathCuts = [];
         for (var n = 0; n < y.length; n++) {
           posX = n * col + ui.lineChart.left;
           var range = yMax - yMin;
@@ -6694,32 +6696,36 @@ ui.lineChart.Start = function () {
             } else if (n > 0) {
               paths += ' S ' + (n * col - data.percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
             }
-          } else {
-            if (n > 0) paths += ' L ' + posX + ' ' + posY;
-          }
+          } else if (n > 0) paths += ' L ' + posX + ' ' + posY;
           if (noRepeatedCircles) {
-            if (n === 0 && y[n] !== y[n + 1] || n !== 0 && y[n - 1] !== y[n] || n !== y.length - 1 && y[n + 1] !== y[n] || n === y.length - 1 && y[n - 1] !== y[n]) createCircles(n);
+            if (y[n - 1] !== y[n] || y[n] !== y[n + 1]) createCircles(n);
           } else if (onlyRepeated) {
             var clearBeforeRepeat = function clearBeforeRepeat() {
               paths = '';
               repeatedIndex += 1;
             };
             if (n === 0 && y[n] === y[n + 1] || n !== 0 && y[n - 1] === y[n] || n !== y.length - 1 && y[n + 1] === y[n] || n === y.length - 1 && y[n - 1] === y[n]) {
-              if (y[n] !== y[n + 1] || y[n - 1] !== y[n]) createCircles(n);
+              if (y[n - 1] !== y[n] || y[n] !== y[n + 1]) createCircles(n);
               repeatedPaths[repeatedIndex] = paths;
               if (y[n] !== y[n + 1] && y[n + 1] === y[n + 2]) clearBeforeRepeat();
               if (n === 0 && posX === pathStart.x) repeatedFromStart = true;
+              if (y[n - 1] !== y[n] && y[n] === y[n + 1]) filledPathCuts[repeatedIndex] = n * col + ui.lineChart.left;
             } else clearBeforeRepeat();
           } else createCircles(n);
         }
         if (onlyRepeated) {
-          repeatedPaths = repeatedPaths.filter(function (item) {
-            if (item !== 0 || item !== null || item !== '') return item;
-          });
+          var clearEmptyItems = function clearEmptyItems(arr) {
+            return arr.filter(function (item) {
+              if (item !== 0 || item !== null || item !== '') return item;
+            });
+          };
+          repeatedPaths = clearEmptyItems(repeatedPaths);
+          filledPathCuts = clearEmptyItems(filledPathCuts);
           for (var r in repeatedPaths) {
             var path = repeatedPaths[r];
+            var pathCut = filledPathCuts[r];
             createPaths(path, repeatedFromStart);
-            createFilledPaths(randomId, path, repeatedFromStart);
+            createFilledPaths(randomId + r, path, repeatedFromStart, pathCut);
           }
         } else {
           createPaths(paths, true);
