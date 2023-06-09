@@ -37,17 +37,12 @@ ui.off = function (that, e) {
         if (nodeList.length === 0) { // detect window event listeners
             handlerFnc(nodeList, e);
 
-        } else {
-            Array.prototype.forEach.call(nodeList, el => { handlerFnc(el, e); });
-        }
+        } else Array.prototype.forEach.call(nodeList, el => { handlerFnc(el, e); });
 
     };
 
     // for multiple event listeners ex: 'click touchend'
     const arr = e.split(' ');
-
-    for (let j = 0; j < arr.length; j++) {
-        callFnc(arr[j]);
-    }
+    for (let j = 0; j < arr.length; j++) callFnc(arr[j]);
 
 }

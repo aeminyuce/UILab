@@ -56,15 +56,10 @@ ui.requiredForms.Start = () => {
                 radios = ui.find('[type="radio"][name="' + that.name + '"]');
                 ui.addClass(radios, ui.requiredForms.nameSuccess);
 
-            } else {
-                ui.addClass(that, ui.requiredForms.nameSuccess);
-            }
+            } else ui.addClass(that, ui.requiredForms.nameSuccess);
 
             ui.removeClass(p, ui.requiredForms.nameError);
-
-            if (showMsg) {
-                ui.removeClass(next, ui.requiredForms.nameShow);
-            }
+            if (showMsg) ui.removeClass(next, ui.requiredForms.nameShow);
 
         };
 
@@ -109,7 +104,7 @@ ui.requiredForms.Start = () => {
                     radios = ui.find('[type="radio"][name="' + el.name + '"]');
 
                     for (i = 0; i < radios.length; i++) {
-                        if (radios[i].checked) { radiosCheck += 1; }
+                        if (radios[i].checked) radiosCheck += 1;
                     }
 
                     if (radiosCheck === 0) { showErr(); }
@@ -118,9 +113,7 @@ ui.requiredForms.Start = () => {
 
                     if (!el.checked) {
 
-                        if (ui.hasClass(el, ui.requiredForms.nameIndeterminate) && el.indeterminate) {
-                            return;
-                        }
+                        if (ui.hasClass(el, ui.requiredForms.nameIndeterminate) && el.indeterminate) return;
                         showErr();
 
                     }
@@ -146,18 +139,16 @@ ui.requiredForms.Start = () => {
                 min = el.getAttribute('min');
                 if (min !== null && min !== '' && !isNaN(min)) {
 
-                    if (!isNaN(val)) {
-                        if (Number(val) < Number(min)) { showErr(); }
-                    } else { showErr(); }
+                    if (!isNaN(val)) if (Number(val) < Number(min)) { showErr(); }
+                    else showErr();
 
                 }
 
                 max = el.getAttribute('max');
                 if (max !== null && max !== '' && !isNaN(max)) {
 
-                    if (!isNaN(val)) {
-                        if (Number(val) > Number(max)) { showErr(); }
-                    } else { showErr(); }
+                    if (!isNaN(val)) if (Number(val) > Number(max)) { showErr(); }
+                    else showErr();
 
                 }
 
@@ -204,14 +195,10 @@ ui.requiredForms.Start = () => {
                     } else {
 
                         type = this.getAttribute('type');
-                        if (type === null || type === '') { return; }
+                        if (type === null || type === '') return;
 
-                        if (type === 'text') {
-                            type = ui.requiredForms.nameInput;
-
-                        } else {
-                            type = ui.requiredForms.nameTypePrefix + type;
-                        }
+                        if (type === 'text') type = ui.requiredForms.nameInput;
+                        else type = ui.requiredForms.nameTypePrefix + type;
 
                     }
 
@@ -244,7 +231,7 @@ ui.requiredForms.Start = () => {
 
             }
 
-            if (formElems.length === 0) { return; }
+            if (formElems.length === 0) return;
 
             success = 0;
             getIndex = 0;
@@ -297,7 +284,7 @@ ui.requiredForms.Start = () => {
 
                 window.scrollTo(0, scrollIndex);
 
-            } else { return; }
+            } else return;
 
         });
 

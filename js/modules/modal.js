@@ -122,9 +122,7 @@ ui.modal = {
                     if (window.innerWidth > userDefined) {
                         win.style.width = userDefined + 'px';
 
-                    } else {
-                        win.style.width = (window.innerWidth - (ui.modal.winMargin * 2)) + 'px';
-                    }
+                    } else win.style.width = (window.innerWidth - (ui.modal.winMargin * 2)) + 'px';
                 }
 
                 minHeight = ui.modal.heightMinMD;
@@ -186,7 +184,7 @@ ui.modal = {
             var win, bg, removeModal;
 
             win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow);
-            if (win.length === 0) { return; }
+            if (win.length === 0) return;
 
             ui.each(win,
 
@@ -244,8 +242,8 @@ ui.modal = {
 
             var closeBtn, nonClosable, typeArr, type, created, temp, getSize, size, customSize, sizeArr, forms, bg, html, win, content;
 
-            if (props === undefined) { return; }
-            if (props.source === undefined) { return; }
+            if (props === undefined) return;
+            if (props.source === undefined) return;
 
             ui.modal.close(); // hide opened modal windows and prevent multiple modal windows
 
@@ -346,19 +344,15 @@ ui.modal = {
                             content.setAttribute(ui.modal.dataCustomW, customSize[0]);
                             content.setAttribute(ui.modal.dataCustomH, customSize[1]);
 
-                        } else { getSize(); }
+                        } else getSize();
 
-                    } else { getSize(); }
+                    } else getSize();
 
                 }
 
                 // set closable
-                if (nonClosable) {
-                    ui.removeClass(win, ui.modal.nameClosable);
-
-                } else {
-                    ui.addClass(win, ui.modal.nameClosable);
-                }
+                if (nonClosable) ui.removeClass(win, ui.modal.nameClosable);
+                else ui.addClass(win, ui.modal.nameClosable);
 
                 // add/remove close button
                 closeBtn = ui.find('.' + ui.modal.nameModalClose, win)[0];
@@ -378,9 +372,7 @@ ui.modal = {
                         if (ui.globals.inlineSvg) {
                             closeBtn += '<svg class="' + ui.modal.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.modal.closeIcon;
 
-                        } else {
-                            closeBtn += '<svg class="' + ui.modal.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.modal.closeIcon + '"/>';
-                        }
+                        } else closeBtn += '<svg class="' + ui.modal.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.modal.closeIcon + '"/>';
 
                         closeBtn += '</svg>' +
 
@@ -401,6 +393,7 @@ ui.modal = {
                 setTimeout(() => {
 
                     ui.addClass(bg, ui.modal.nameOpenEase);
+
                     setTimeout(() => {
 
                         ui.addClass(win, ui.modal.nameShow);
@@ -449,7 +442,7 @@ ui.modal = {
 
                 // check the modal created before
                 props.source = ui.find(props.source);
-                if (props.source[0] === undefined) { return; }
+                if (props.source[0] === undefined) return;
 
                 created = ui.closest(props.source, '.' + ui.modal.targetWin);
                 if (created.length > 0) { // modal created before

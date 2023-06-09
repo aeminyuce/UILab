@@ -7,7 +7,7 @@ ui.on = function (self, e, that, callback) {
 
     const set = function (e) {
 
-        if (typeof t === 'string' && e === undefined) { return; }
+        if (typeof t === 'string' && e === undefined) return;
 
         let callFnc, isWindowEvent;
 
@@ -85,7 +85,7 @@ ui.on = function (self, e, that, callback) {
 
         const handlerFnc = function (pt, pe) {
 
-            if (callFnc === undefined) { return; }
+            if (callFnc === undefined) return;
 
             if (ui.handlers === undefined) { ui.handlers = {}; }
             if (ui.handlers[pt] === undefined) { ui.handlers[pt] = {}; }
@@ -110,30 +110,21 @@ ui.on = function (self, e, that, callback) {
 
                     }
 
-                } else {
-                    pt.addEventListener(pe.split('.')[0], callFnc, passiveEvent ? { passive: true } : true); // split for event naming
-                }
+                } else pt.addEventListener(pe.split('.')[0], callFnc, passiveEvent ? { passive: true } : true); // split for event naming
 
-            } else { return; }
+            } else return;
 
         };
 
         const nodelist = ui.find(self);
 
-        if (isWindowEvent) {
-            handlerFnc(nodelist, e);
-
-        } else {
-            Array.prototype.forEach.call(nodelist, el => { handlerFnc(el, e); });
-        }
+        if (isWindowEvent) handlerFnc(nodelist, e);
+        else Array.prototype.forEach.call(nodelist, el => { handlerFnc(el, e); });
 
     };
 
     // for multiple event listeners ex: 'click touchend'
     const arr = e.split(' ');
-
-    for (let j = 0; j < arr.length; j++) {
-        set(arr[j]);
-    }
+    for (let j = 0; j < arr.length; j++) set(arr[j]);
 
 }

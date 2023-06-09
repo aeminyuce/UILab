@@ -19,18 +19,12 @@ ui.removeClass = function (that, name) {
                 if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) { // check SVG and own elements
 
                     el.className.baseVal = el.className.baseVal.replace(re, ' ').replace(rex, '');
-
-                    if (el.className.baseVal === '') {
-                        el.removeAttribute('class');
-                    }
+                    if (el.className.baseVal === '') el.removeAttribute('class');
 
                 } else {
 
                     el.className = el.className.replace(re, ' ').replace(rex, '');
-
-                    if (el.className === '') {
-                        el.removeAttribute('class');
-                    }
+                    if (el.className === '') el.removeAttribute('class');
 
                 }
 

@@ -71,9 +71,5 @@ ui.on(document,
     ui.globals.eventAjaxCallback,
 
     () => {
-
-        if (ui.ajax.classNames.indexOf(ui.formSpinner.target) > -1) {
-            ui.formSpinner.Init();
-        }
-
+        if (ui.ajax.classNames.indexOf(ui.formSpinner.target) > -1) ui.formSpinner.Init();
     });

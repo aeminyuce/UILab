@@ -105,7 +105,7 @@ ui.datatable = {
         const keys = Object.keys(ui.datatable.customLetters); // returns array
 
         let chars = '(([';
-        for (let i = 0; i < keys.length; i++) { chars += keys[i]; }
+        for (let i = 0; i < keys.length; i++) chars += keys[i];
         chars += ']))';
 
         const re = new RegExp(chars, 'g');
@@ -134,26 +134,15 @@ ui.datatable = {
         }
 
         if (pagingCount[id] < 1) { pagingCount[id] = 1; }
+        if (pagingCount[id] > total) pagingCount[id] = total;
 
-        if (pagingCount[id] > total) {
-            pagingCount[id] = total;
-        }
-
-        if (pagingCount[id] === total) {
-            min = pagingCount[id] - 2;
-
-        } else {
-            min = pagingCount[id] - 1;
-        }
+        if (pagingCount[id] === total) min = pagingCount[id] - 2;
+        else min = pagingCount[id] - 1;
 
         if (min < 1) { min = 1; }
 
-        if (pagingCount[id] === 1) {
-            max = pagingCount[id] + 2;
-
-        } else {
-            max = pagingCount[id] + 1;
-        }
+        if (pagingCount[id] === 1) max = pagingCount[id] + 2;
+        else max = pagingCount[id] + 1;
 
         if (max > total) { max = total; }
 
@@ -193,9 +182,7 @@ ui.datatable = {
 
                 html += '<button class="' + classes + '">' + pagingCount[id] + '</button>\n';
 
-            } else {
-                html += '<button class="' + defaultClass + '">' + i + '</button>\n';
-            }
+            } else html += '<button class="' + defaultClass + '">' + i + '</button>\n';
 
         }
 
@@ -229,9 +216,7 @@ ui.datatable = {
         if (ui.hasClass(that, ui.datatable.nameListFiltered)) {
             list = ui.find('.' + ui.datatable.nameListContent + '.' + ui.datatable.nameFiltered, that);
 
-        } else {
-            list = ui.find('.' + ui.datatable.nameListContent, that);
-        }
+        } else list = ui.find('.' + ui.datatable.nameListContent, that);
 
         // paging
         const paging = ui.find('.' + ui.datatable.namePaging, that);
@@ -243,9 +228,7 @@ ui.datatable = {
                 pagingCount[id] = 1; // paging available
                 createPaging(paging, id, list.length); // create paging buttons
 
-            } else {
-                createPaging(paging, id, list.length); // update paging buttons
-            }
+            } else createPaging(paging, id, list.length); // update paging buttons
 
         } else {
 
@@ -295,9 +278,7 @@ ui.datatable = {
                 evenList(list[i]);
             }
 
-        } else {
-            Array.prototype.forEach.call(list, item => { evenList(item); });
-        }
+        } else Array.prototype.forEach.call(list, item => { evenList(item); });
 
         // empty variables
         list = '';
@@ -392,9 +373,7 @@ ui.datatable = {
                         if (ui.globals.inlineSvg) {
                             ui.find('.' + ui.datatable.nameIcon, el)[0] = ui.datatable.sortIcon;
 
-                        } else {
-                            ui.find('.' + ui.datatable.nameIcon + ' use', el)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
-                        }
+                        } else ui.find('.' + ui.datatable.nameIcon + ' use', el)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
 
                     }
 
@@ -415,18 +394,14 @@ ui.datatable = {
                     if (ui.globals.inlineSvg) {
                         ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.descNumberIcon;
 
-                    } else {
-                        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descNumberIcon);
-                    }
+                    } else ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descNumberIcon);
 
                 } else {
 
                     if (ui.globals.inlineSvg) {
                         ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.descIcon;
 
-                    } else {
-                        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descIcon);
-                    }
+                    } else ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descIcon);
 
                 }
 
@@ -440,18 +415,14 @@ ui.datatable = {
                     if (ui.globals.inlineSvg) {
                         ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.ascNumberIcon;
 
-                    } else {
-                        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascNumberIcon);
-                    }
+                    } else ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascNumberIcon);
 
                 } else {
 
                     if (ui.globals.inlineSvg) {
                         ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.ascIcon;
 
-                    } else {
-                        ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascIcon);
-                    }
+                    } else ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascIcon);
 
                 }
 
@@ -472,12 +443,8 @@ ui.datatable = {
 
             let sortIndex = this.getAttribute(ui.datatable.dataSort);
 
-            if (sortIndex === null || sortIndex === '' || sortIndex === '0') {
-                sortIndex = 0;
-
-            } else {
-                sortIndex = Number(sortIndex) - 1;
-            }
+            if (sortIndex === null || sortIndex === '' || sortIndex === '0') sortIndex = 0;
+            else sortIndex = Number(sortIndex) - 1;
 
             let list = ui.find('.' + ui.datatable.nameListContent, temp);
             Array.prototype.forEach.call(list,
@@ -502,21 +469,13 @@ ui.datatable = {
 
             if (isAsc) {
 
-                if (sortType === ui.datatable.sortTypeNumber) {
-                    arrSorted.sort((a, b) => b - a);
-
-                } else {
-                    arrSorted.sort().reverse();
-                }
+                if (sortType === ui.datatable.sortTypeNumber) arrSorted.sort((a, b) => b - a);
+                else arrSorted.sort().reverse();
 
             } else {
 
-                if (sortType === ui.datatable.sortTypeNumber) {
-                    arrSorted.sort((a, b) => a - b);
-
-                } else {
-                    arrSorted.sort();
-                }
+                if (sortType === ui.datatable.sortTypeNumber) arrSorted.sort((a, b) => a - b);
+                else arrSorted.sort();
 
             }
 
@@ -562,10 +521,7 @@ ui.datatable = {
                     vals = loadedVals[id].split(',');
 
                     if (el.type === 'checkbox' || el.type === 'radio') {
-
-                        if (vals[i] !== '') {
-                            el.checked = true;
-                        }
+                        if (vals[i] !== '') el.checked = true;
 
                     } else if (el.tagName === 'SELECT') {
 
@@ -582,50 +538,37 @@ ui.datatable = {
 
                             });
 
-                    } else { el.value = vals[i]; }
+                    } else el.value = vals[i];
 
                 } else {
 
                     let val = '';
 
                     if (el.type === 'checkbox' || el.type === 'radio') {
+                        if (el.checked) val = el.value;
 
-                        if (el.checked) {
-                            val = el.value;
-                        }
-
-                    } else { val = el.value; }
+                    } else val = el.value;
 
                     val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
 
                     let sortType = el.getAttribute(ui.datatable.dataType);
 
-                    if (sortType === null) {
-                        sortType = '';
-                    }
+                    if (sortType === null) sortType = '';
 
-                    if (sortType === ui.datatable.sortTypeNumber) {
-                        vals.push(val);
-
-                    } else {
-                        vals.push(customLowerCase(val));
-                    }
+                    if (sortType === ui.datatable.sortTypeNumber) vals.push(val);
+                    else vals.push(customLowerCase(val));
 
                 }
 
                 let sortIndex = el.getAttribute(ui.datatable.dataIndex);
                 if (sortIndex !== null) {
 
-                    if (sortIndex === '' || sortIndex === '0') {
-                        sortIndex = 0;
-
-                    } else {
-                        sortIndex = Number(sortIndex) - 1;
-                    }
+                    if (sortIndex === '' || sortIndex === '0') sortIndex = 0;
+                    else sortIndex = Number(sortIndex) - 1;
 
                     indexes.push(sortIndex);
 
-                } else { indexes.push(''); }
+                } else indexes.push('');
 
             });
 
@@ -687,18 +630,9 @@ ui.datatable = {
                                     if (item !== '') {
 
                                         if (indexes[j] === '') {
+                                            if (contentVal.replace(/\|/g, ' ').match(item) !== null) passed.push('pass'); // contain
 
-                                            if (contentVal.replace(/\|/g, ' ').match(item) !== null) { // contain
-                                                passed.push('pass');
-                                            }
-
-                                        } else {
-
-                                            if (contentArr[indexes[j]] === item) { // equal
-                                                passed.push('pass');
-                                            }
-
-                                        }
+                                        } else if (contentArr[indexes[j]] === item) passed.push('pass'); // equal
 
                                     }
 
@@ -706,12 +640,8 @@ ui.datatable = {
 
                         }
 
-                        if (activeFilters.length === passed.length) {
-                            ui.addClass(el, ui.datatable.nameFiltered);
-
-                        } else {
-                            ui.removeClass(el, ui.datatable.nameFiltered);
-                        }
+                        if (activeFilters.length === passed.length) ui.addClass(el, ui.datatable.nameFiltered);
+                        else ui.removeClass(el, ui.datatable.nameFiltered);
 
                     });
 
@@ -820,14 +750,12 @@ ui.datatable = {
 
                         if (ui.hasClass(that, ui.datatable.nameListFiltered)) {
 
-                            if (ui.hasClass(el, ui.datatable.nameFiltered)) {
-                                checkFnc(el);
+                            if (ui.hasClass(el, ui.datatable.nameFiltered)) checkFnc(el);
+                            else uncheckFnc(el);
 
-                            } else { uncheckFnc(el); }
+                        } else checkFnc(el);
 
-                        } else { checkFnc(el); }
-
-                    } else { uncheckFnc(el); }
+                    } else uncheckFnc(el);
 
                 });
 
@@ -897,9 +825,7 @@ ui.datatable = {
 
                                 ui.addClass(el, ui.datatable.nameListShowAll);
 
-                            } else {
-                                showCount[id] = gridShow.value;
-                            }
+                            } else showCount[id] = gridShow.value;
 
                         }
 
@@ -924,11 +850,7 @@ ui.datatable = {
 
                 // load values
                 if (loadedVals[id] !== undefined && loadedVals[id] !== null) {
-
-                    if (loadedVals[id].length > 0) {
-                        gridFilter(el, true);
-                    }
-
+                    if (loadedVals[id].length > 0) gridFilter(el, true);
                 }
 
                 // load grids
@@ -979,11 +901,7 @@ ui.datatable = {
         ui.globals.eventAjaxCallback,
 
         () => {
-
-            if (ui.ajax.classNames.indexOf(ui.datatable.target) > -1) {
-                ui.datatable.Start();
-            }
-
+            if (ui.ajax.classNames.indexOf(ui.datatable.target) > -1) ui.datatable.Start();
         });
 
 })();

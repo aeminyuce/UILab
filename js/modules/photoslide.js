@@ -50,7 +50,7 @@ ui.photoslide = {
 
             function (i) {
 
-                if (dataSrcLists[i] !== undefined) { return; }
+                if (dataSrcLists[i] !== undefined) return;
                 dataSrc = images[i].getAttribute(ui.photoslide.dataSrc);
 
                 slider = ui.closest(this, '.' + ui.photoslide.target)[0];
@@ -69,7 +69,7 @@ ui.photoslide = {
                 }
 
                 re = new RegExp(ui.photoslide.rexFiles);
-                if (!dataSrcLists[i][0].match(re)) { return; }
+                if (!dataSrcLists[i][0].match(re)) return;
 
                 images[i].removeAttribute(ui.photoslide.dataSrc);
 
@@ -89,9 +89,7 @@ ui.photoslide = {
                             if (j === 0) {
                                 navDots += '<' + ui.photoslide.tagNavDot + ' class="' + ui.photoslide.nameSelected + '"></' + ui.photoslide.tagNavDot + '>';
 
-                            } else {
-                                navDots += '<' + ui.photoslide.tagNavDot + '></' + ui.photoslide.tagNavDot + '>';
-                            }
+                            } else navDots += '<' + ui.photoslide.tagNavDot + '></' + ui.photoslide.tagNavDot + '>';
 
                         }
 
@@ -125,7 +123,7 @@ ui.photoslide = {
                 var slider, i, img, total, dots;
 
                 slider = ui.closest(this, '.' + ui.photoslide.target)[0];
-                if (slider === undefined) { return; }
+                if (slider === undefined) return;
 
                 img = ui.find('img', slider)[0];
 
@@ -195,11 +193,7 @@ ui.photoslide = {
         ui.globals.eventAjaxCallback,
 
         () => {
-
-            if (ui.ajax.classNames.indexOf(ui.photoslide.target) > -1) {
-                ui.photoslide.Init();
-            }
-
+            if (ui.ajax.classNames.indexOf(ui.photoslide.target) > -1) ui.photoslide.Init();
         });
 
 })();

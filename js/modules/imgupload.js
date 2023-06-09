@@ -95,7 +95,7 @@ ui.imgUpload.Start = () => {
 
             }
 
-            if (allowed.length === 0) { return; } // stop when all file types not allowed
+            if (allowed.length === 0) return; // stop when all file types not allowed
 
             // load images
             let readers = [];
@@ -227,9 +227,7 @@ ui.imgUpload.Start = () => {
 
                         ctx.drawImage(img[j], (c.width - w[j]) / 2, (c.height - h[j]) / 2, w[j], h[j]);
 
-                    } else {
-                        ctx.drawImage(img[j], 0, 0, w[j], h[j]);
-                    }
+                    } else ctx.drawImage(img[j], 0, 0, w[j], h[j]);
 
                 }
 
@@ -311,16 +309,13 @@ ui.imgUpload.Start = () => {
 
                     let showTimer;
 
-                    if (savedImgs) {
-                        showTimer = ui.globals.slow;
-
-                    } else {
-                        showTimer = ui.globals.ease;
-                    }
+                    if (savedImgs) showTimer = ui.globals.slow;
+                    else showTimer = ui.globals.ease;
 
                     setTimeout(() => {
 
                         Array.prototype.forEach.call(ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList + '.' + ui.imgUpload.nameOpenEase, listCont),
+
                             (newImg, i) => {
 
                                 setTimeout(() => {
@@ -476,12 +471,8 @@ ui.imgUpload.Start = () => {
 
                     const uploader = ui.closest(ev.target, '.' + ui.imgUpload.target)[0];
 
-                    if (uploader === undefined) {
-                        ui.removeClass(this, ui.imgUpload.nameDrop);
-
-                    } else {
-                        ui.addClass(this, ui.imgUpload.nameDrop);
-                    }
+                    if (uploader === undefined) ui.removeClass(this, ui.imgUpload.nameDrop);
+                    else ui.addClass(this, ui.imgUpload.nameDrop);
 
                 });
 
@@ -541,9 +532,7 @@ ui.imgUpload.Start = () => {
             const slice = byteCharacters.slice(j, j + sliceSize);
             const byteNumbers = new Array(slice.length);
 
-            for (let i = 0; i < slice.length; i++) {
-                byteNumbers[i] = slice.charCodeAt(i);
-            }
+            for (let i = 0; i < slice.length; i++) byteNumbers[i] = slice.charCodeAt(i);
 
             const byteArray = new Uint8Array(byteNumbers);
             byteArrays.push(byteArray);
@@ -576,11 +565,7 @@ ui.imgUpload.Start = () => {
                         formData.append(ui.imgUpload.formDataID + '[' + i + ']', file.id); // add id
 
                         let tag = ui.find('.' + ui.imgUpload.targetTags, el)[0];
-
-                        if (tag !== undefined) {
-                            tag = tag.textContent;
-
-                        } else { tag = ''; }
+                        if (tag !== undefined) tag = tag.textContent; else tag = '';
 
                         formData.append(ui.imgUpload.formDataTag + '[' + i + ']', tag); // add image tag
 
@@ -658,7 +643,7 @@ ui.imgUpload.Start = () => {
             if (ui.alerts === undefined) {
 
                 const confirmed = confirm(ui.imgUpload.msgBeforeUpload);
-                if (confirmed) { uploaderFnc(); }
+                if (confirmed) uploaderFnc();
 
             } else {
 

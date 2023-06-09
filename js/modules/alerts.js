@@ -131,11 +131,11 @@ ui.alerts = {
                 props.callback
             */
 
-            if (props === undefined) { return; }
-            if (props.msg === undefined) { return; }
+            if (props === undefined) return;
+            if (props.msg === undefined) return;
 
             let dialog = ui.find('.' + ui.alerts.targetDialog)[0];
-            if (dialog !== undefined) { return; } // prevent multiple dialogues
+            if (dialog !== undefined) return; // prevent multiple dialogues
 
             if (ui.userAgents.mobile) {
                 pageYPos = window.pageYOffset; // get current scroll-y position
@@ -165,14 +165,10 @@ ui.alerts = {
 
             }
 
-            let success;
+            let success = '';
 
-            if (props.success === undefined) {
-                success = ui.alerts.msgDialogSuccess;
-
-            } else {
-                success = props.success;
-            }
+            if (props.success === undefined) success = ui.alerts.msgDialogSuccess;
+            else success = props.success;
 
             buttons += '<button class="' + ui.alerts.nameDialogSuccess + '" value="' + ui.alerts.successBtnValue + '">' +
                             success +
@@ -234,6 +230,7 @@ ui.alerts = {
             setTimeout(() => {
 
                 ui.addClass(bgNew, ui.alerts.nameOpenEase);
+
                 setTimeout(() => {
 
                     dialog = ui.find('.' + ui.alerts.targetDialog);
@@ -260,14 +257,8 @@ ui.alerts = {
                                 theme = ui.alerts.themeDanger;
                             }
 
-                            let msgTimer;
-
-                            if (ui.alerts.dialogMessages) {
-                                msgTimer = ui.globals.ease;
-
-                            } else {
-                                msgTimer = 0;
-                            }
+                            let msgTimer = 0;
+                            if (ui.alerts.dialogMessages) msgTimer = ui.globals.ease;
 
                             ui.alerts.closeDialog();
                             const msg = this.textContent;
@@ -368,8 +359,8 @@ ui.alerts = {
                 props.theme
             */
 
-            if (props === undefined) { return; }
-            if (props.msg === undefined) { return; }
+            if (props === undefined) return;
+            if (props.msg === undefined) return;
 
             // detect position
             const arrPos = [ui.alerts.posCenter, ui.alerts.posTopRight, ui.alerts.posTopLeft, ui.alerts.posBottomRight, ui.alerts.posBottomLeft];
@@ -455,7 +446,7 @@ ui.alerts = {
 
                 setTimeout(() => { // for manually closing messages by user
 
-                    if (messageQueue[0] === undefined) { return; }
+                    if (messageQueue[0] === undefined) return;
 
                     ui.alerts.closeMessage(messageQueue[0][0]);
                     messageQueue.shift();

@@ -51,7 +51,7 @@ ui.autocomplete.Start = () => {
         const keys = Object.keys(ui.autocomplete.customLetters); // returns array
 
         let chars = '(([';
-        for (let i = 0; i < keys.length; i++) { chars += keys[i]; }
+        for (let i = 0; i < keys.length; i++) chars += keys[i];
         chars += ']))';
 
         const re = new RegExp(chars, 'g');
@@ -75,7 +75,7 @@ ui.autocomplete.Start = () => {
             const parent = this.parentNode;
 
             const list = ui.find('ul', parent);
-            if (list[0] === undefined) { return; } // clear forms has triggering keyup event
+            if (list[0] === undefined) return; // clear forms has triggering keyup event
 
             if (e.keyCode === 38 || e.keyCode === 40) {
 
@@ -93,23 +93,19 @@ ui.autocomplete.Start = () => {
                         if (e.keyCode === 40) { // arrow down
 
                             navIndex += 1;
-                            if (navIndex >= listItems.length) { navIndex = 0; }
+                            if (navIndex >= listItems.length) navIndex = 0;
 
                         } else if (e.keyCode === 38) { // arrow up
 
                             navIndex -= 1;
-                            if (navIndex < 0) { navIndex = 0; }
+                            if (navIndex < 0) navIndex = 0;
 
                         }
 
                     } else {
 
-                        if (e.keyCode === 40) { // arrow down
-                            navIndex = 0;
-
-                        } else if (e.keyCode === 38) { // arrow up
-                            navIndex = listItems.length - 1;
-                        }
+                        if (e.keyCode === 40) navIndex = 0;// arrow down
+                        else if (e.keyCode === 38) navIndex = listItems.length - 1; // arrow up
 
                     }
 
@@ -195,7 +191,8 @@ ui.autocomplete.Start = () => {
 
                                                     if (key !== null) {
 
-                                                        if (typeof key === 'boolean') { return; } // booleans not supported!
+                                                        if (typeof key === 'boolean') return; // booleans not supported!
+
                                                         let modified = key;
 
                                                         if (typeof key === 'number') {
@@ -223,9 +220,7 @@ ui.autocomplete.Start = () => {
                                                                     if (offset.top - parseInt(tHeight + dHeight) + tHeight > 0) {
                                                                         ui.addClass(parent, ui.autocomplete.nameMenuTop);
 
-                                                                    } else {
-                                                                        list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight) - window.innerHeight) - ui.autocomplete.scrollbarSize) + 'px';
-                                                                    }
+                                                                    } else list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight) - window.innerHeight) - ui.autocomplete.scrollbarSize) + 'px';
 
                                                                 }
 
@@ -233,7 +228,7 @@ ui.autocomplete.Start = () => {
 
                                                             // show max. number of lines: 5
                                                             k += 1;
-                                                            if (k > 5) { return; }
+                                                            if (k > 5) return;
 
                                                             // create lines
                                                             if (typeof key === 'number') {
@@ -283,7 +278,7 @@ ui.autocomplete.Start = () => {
                         }
 
 
-                    } else { return; }
+                    } else return;
 
                 } else {
 
@@ -371,10 +366,7 @@ ui.autocomplete.Start = () => {
             setTimeout(() => {
 
                 ui.removeClass(parent, ui.autocomplete.nameOpen);
-
-                if (list.length > 0) {
-                    parent.removeChild(list[0]);
-                }
+                if (list.length > 0) parent.removeChild(list[0]);
 
             }, ui.globals.ease);
 

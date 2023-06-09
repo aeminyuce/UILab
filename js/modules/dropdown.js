@@ -64,16 +64,12 @@ ui.dropdown = {
 
     function dropdownClose(innerParent) {
 
-        if (selectOpened) { return; }
+        if (selectOpened) return;
 
         let that;
 
-        if (innerParent === undefined) {
-            that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen);
-
-        } else {
-            that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen, innerParent);
-        }
+        if (innerParent === undefined) that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen);
+        else that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen, innerParent);
 
         ui.removeClass(that, ui.dropdown.nameOpenEase);
 
@@ -143,12 +139,13 @@ ui.dropdown = {
                     inner = true;
                     dropdownClose(innerParent);
 
-                } else { dropdownClose(); }
+                } else dropdownClose();
 
                 if (ui.find('.' + ui.dropdown.nameMenuPosRight, parent).length > 0 || ui.find('.' + ui.dropdown.nameMenuPosLeft, parent).length > 0) {
 
                     // detecting dropdown has inner dropdown positions
                     hasInner = true;
+
                 }
 
                 clearTimeout(dropdownOpenTimer);
@@ -296,9 +293,9 @@ ui.dropdown = {
 
                         setMaxH('top');
 
-                    } else { setMaxH('default'); }
+                    } else setMaxH('default');
 
-                } else { setMaxH('default'); }
+                } else setMaxH('default');
 
             }, dropdownHoverTimer);
 
@@ -426,7 +423,7 @@ ui.dropdown = {
                     if ((ui.hasClass(this, ui.dropdown.nameMenuPosRight) || ui.hasClass(this, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
                         dropdownClose(innerParent); // detecting inner dropdown positions
 
-                    } else { dropdownClose(); }
+                    } else dropdownClose();
 
                 }, ui.globals.ease * 2);
 
@@ -487,7 +484,7 @@ ui.dropdown = {
 
         () => {
 
-            if (window.innerWidth === getScrollPos) { return; } // close only horizontal resizing
+            if (window.innerWidth === getScrollPos) return; // close only horizontal resizing
 
             dropdownClose();
             getScrollPos = window.innerWidth;

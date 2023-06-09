@@ -190,9 +190,7 @@ ui.tab.Start = () => {
 
                             setTimeout(() => {
 
-                                if (accordion) {
-                                    lastOpened.style.height = '0';
-                                }
+                                if (accordion) lastOpened.style.height = '0';
 
                                 setTimeout(() => {
 
@@ -259,11 +257,11 @@ ui.tab.Start = () => {
                                 var holderEl = ui.closest(ev.target, '.' + ui.tab.targetParent)[0];
 
                                 // controlling same toggled tab buttons
-                                if (holderEl === parent) { return; }
-                                if (ui.closest(holderEl, '.' + ui.tab.targetParent)[0] !== undefined) { return; } // inner tabs
+                                if (holderEl === parent) return;
+                                if (ui.closest(holderEl, '.' + ui.tab.targetParent)[0] !== undefined) return; // inner tabs
 
                                 // controlling active toggle tabs length
-                                if (ui.find('.' + ui.tab.nameToggle + '.' + ui.tab.nameActive, parent).length === 0) { return; }
+                                if (ui.find('.' + ui.tab.nameToggle + '.' + ui.tab.nameActive, parent).length === 0) return;
 
                                 if (accordion) {
 
@@ -310,6 +308,7 @@ ui.tab.Start = () => {
                 } else {
 
                     ui.removeClass(content, ui.tab.nameOpenEase);
+
                     setTimeout(() => {
 
                         ui.removeClass(content, ui.tab.nameOpen);

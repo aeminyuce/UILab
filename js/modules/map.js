@@ -29,7 +29,7 @@ ui.map.Start = () => {
     var map, arr, data, items, opacity;
 
     map = ui.find('.' + ui.map.target);
-    if (map.length === 0) { return; }
+    if (map.length === 0) return;
 
     arr = [];
 

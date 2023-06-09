@@ -63,7 +63,7 @@ ui.classnames.Start = () => {
     const list = ui.find('.' + ui.classnames.targetList)[0];
     const alerts = ui.find('.' + ui.classnames.targetAlerts)[0];
 
-    if (list === undefined || alerts === undefined) { return; }
+    if (list === undefined || alerts === undefined) return;
 
     const total = ui.find('.' + ui.classnames.nameTotal)[0];
 
@@ -86,11 +86,13 @@ ui.classnames.Start = () => {
             re = new RegExp(re, 'g');
 
             for (let jsModule in ui) {
+
                 for (let jsKey in ui[jsModule]) {
 
                     if (jsKey.match(re) !== null && jsKey.match(ui.classnames.jsIgnore) === null) {
 
                         const jsClass = ui[jsModule][jsKey];
+
                         if (typeof jsClass === 'string') { // remove objects
 
                             const jsStyleList = jsClass.toString().split(' ');
@@ -98,15 +100,14 @@ ui.classnames.Start = () => {
                             if (jsStyleList.length > 1) { // check styles for multiple classnames
                                 Array.prototype.forEach.call(jsStyleList, style => { loaded.push(style); });
 
-                            } else if (jsClass !== '') { // remove empty styles
-                                loaded.push(jsClass);
-                            }
+                            } else if (jsClass !== '') loaded.push(jsClass); // remove empty styles
 
                         }
 
                     }
 
                 }
+
             }
 
             // load html classnames
@@ -137,24 +138,10 @@ ui.classnames.Start = () => {
 
                     if (strStart === null) {
 
-                        if (str === '') {
+                        if (str === '') arr.error.push(ui.classnames.msgEmpty); // error: empty
+                        else arr.warning.push(str); // warning
 
-                            // error: empty
-                            arr.error.push(ui.classnames.msgEmpty);
-
-                        } else {
-
-                            // warning
-                            arr.warning.push(str);
-
-                        }
-
-                    } else {
-
-                        // list
-                        arr.list.push(str);
-
-                    }
+                    } else arr.list.push(str); // list
 
                     let strLength = str.match(reDuplicate);
                     if (strLength !== null) {
@@ -175,9 +162,7 @@ ui.classnames.Start = () => {
             if (arr.error.length === 0) {
                 alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesNoErrors + '">' + ui.classnames.msgNoErrors + '</li>');
 
-            } else {
-                alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + ui.classnames.msgErrors + '</li>');
-            }
+            } else alerts.insertAdjacentHTML('beforeend', '<li class="' + ui.classnames.stylesWarningSep + '">' + ui.classnames.msgErrors + '</li>');
 
             Array.prototype.forEach.call(arr.error,
 
@@ -306,12 +291,8 @@ ui.classnames.Start = () => {
 
                     if (arr.filtered.indexOf(title) > -1) {
 
-                        if (arr.groups[title] === undefined) {
-                            arr.groups[title] = name;
-
-                        } else {
-                            arr.groups[title] += ', ' + name;
-                        }
+                        if (arr.groups[title] === undefined) arr.groups[title] = name;
+                        else arr.groups[title] += ', ' + name;
 
                     }
 

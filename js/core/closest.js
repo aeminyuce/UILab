@@ -7,12 +7,8 @@ ui.closest = function (that, outer) {
 
     let outerEl, parentEl;
 
-    if (outer instanceof Object) {
-        outerEl = [outer];
-
-    } else {
-        outerEl = ui.find(outer);
-    }
+    if (outer instanceof Object) outerEl = [outer];
+    else outerEl = ui.find(outer);
 
     let elems = [];
 

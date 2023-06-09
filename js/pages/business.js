@@ -62,8 +62,8 @@ ui.lineChart.colors = [baseColor, subColor];
 
         // check left panel status
         let leftPanelToggleStatus = 'show'; // default
-
         const state = decodeURIComponent(document.cookie).split('; ');
+
         for (let i = 0; i < state.length; i++ ) {
 
             const cookies = state[i].split('=');
@@ -71,9 +71,7 @@ ui.lineChart.colors = [baseColor, subColor];
             let cookie = cookies[0];
             cookie = cookie.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
 
-            if (cookie === cookieName) {
-                leftPanelToggleStatus = cookies[1];
-            }
+            if (cookie === cookieName) leftPanelToggleStatus = cookies[1];
 
         }
 
@@ -97,9 +95,7 @@ ui.lineChart.colors = [baseColor, subColor];
         const resizer = () => {
 
             // clear last opened tab
-            if (window.innerWidth < ui.globals.xl) {
-                clearLastOpenedTab();
-            }
+            if (window.innerWidth < ui.globals.xl) clearLastOpenedTab();
 
             if (window.innerWidth < ui.globals.xl && window.innerWidth > ui.globals.md) { // activate menu
 
@@ -134,9 +130,7 @@ ui.lineChart.colors = [baseColor, subColor];
 
                     }
 
-                } else {
-                    openLastOpenedTab();
-                }
+                } else openLastOpenedTab();
 
             }
 
@@ -151,7 +145,7 @@ ui.lineChart.colors = [baseColor, subColor];
 
             () => {
 
-                if (window.innerWidth === getScrollPos) { return; } // only horizontal resizing
+                if (window.innerWidth === getScrollPos) return; // only horizontal resizing
 
                 resizer();
                 ui.removeClass(leftPanel, nameShowMenu);
@@ -205,7 +199,7 @@ ui.lineChart.colors = [baseColor, subColor];
                                         // remove left panel close event
                                         ui.off(document, 'mouseup.' + eventCloseLeftPanel);
 
-                                    } else if (ui.closest(e.target, leftPanelHolder).length === 1) { return; } // disable when clicking inside of left panel
+                                    } else if (ui.closest(e.target, leftPanelHolder).length === 1) return; // disable when clicking inside of left panel
 
                                     clearLastOpenedTab();
 

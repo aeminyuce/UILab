@@ -92,7 +92,7 @@ ui.photoGallery = {
             const img = ui.find('a.' + ui.photoGallery.targetPhotos +' img', gallery[galleryCounter]);
 
             const imgLength = img.length - 1;
-            if (imgLength < 0) { return; }
+            if (imgLength < 0) return;
 
             function imgLoader() {
 
@@ -143,19 +143,14 @@ ui.photoGallery = {
         function galleryFnc(e, that, call) {
 
             let parent = ui.closest(that, '.' + ui.photoGallery.targetGallery)[0];
-
-            if (parent === undefined) {
-                parent = ui.closest(that, '.' + ui.photoGallery.nameGalleryPassive)[0];
-            }
+            if (parent === undefined) parent = ui.closest(that, '.' + ui.photoGallery.nameGalleryPassive)[0];
 
             let images;
 
             if (call === undefined) {
                 images = ui.find('a.' + ui.photoGallery.targetPhotos, parent);
 
-            } else {
-                images = ui.find('.' + ui.photoGallery.targetPhotos, parent);
-            }
+            } else images = ui.find('.' + ui.photoGallery.targetPhotos, parent);
 
             // mobile and touch screens: show data titles first
             if (e.type === 'touchend') {
@@ -173,7 +168,7 @@ ui.photoGallery = {
 
                     ui.removeClass(images, ui.photoGallery.nameGalleryTouch);
 
-                } else { ui.removeClass(images, ui.photoGallery.nameGalleryTouch); }
+                } else ui.removeClass(images, ui.photoGallery.nameGalleryTouch);
 
             }
 
@@ -193,19 +188,13 @@ ui.photoGallery = {
 
                     const href = el.getAttribute('href');
 
-                    if (href !== null) {
-                        loadedImages.push(href);
-
-                    } else {
-                        loadedImages.push(el.getAttribute(ui.photoGallery.dataHref));
-                    }
+                    if (href !== null) loadedImages.push(href);
+                    else loadedImages.push(el.getAttribute(ui.photoGallery.dataHref));
 
                     if (ui.hasClass(el, ui.photoGallery.nameGalleryInfo)) {
                         loadedTitles.push(ui.find(ui.photoGallery.tagGalleryInfo, el)[0].innerHTML);
 
-                    } else {
-                        loadedTitles.push(null);
-                    }
+                    } else loadedTitles.push(null);
 
                 });
 
@@ -232,9 +221,7 @@ ui.photoGallery = {
             if (ui.globals.inlineSvg) {
                 html += '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.closeIcon;
 
-            } else {
-                html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.closeIcon + '"/>';
-            }
+            } else html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.closeIcon + '"/>';
 
             html += '</svg>' +
 
@@ -244,9 +231,7 @@ ui.photoGallery = {
             if (ui.globals.inlineSvg) {
                 html += '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.prevIcon;
 
-            } else {
-                html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.prevIcon + '"/>';
-            }
+            } else html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.prevIcon + '"/>';
 
             html += '</svg>' +
 
@@ -256,9 +241,7 @@ ui.photoGallery = {
             if (ui.globals.inlineSvg) {
                 html += '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.nextIcon;
 
-            } else {
-                html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.nextIcon + '"/>';
-            }
+            } else html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.nextIcon + '"/>';
 
             html += '</svg>' +
 
@@ -267,9 +250,7 @@ ui.photoGallery = {
             if (ui.globals.inlineSvg) {
                 html += '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.loaderIcon;
 
-            } else {
-                html += '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon + '"/>';
-            }
+            } else html += '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon + '"/>';
 
             html += '</svg>' +
                             '<span class="' + ui.photoGallery.namePreviewInfo + ' ' + ui.photoGallery.stylesPreview + '"></span>' +
@@ -314,12 +295,8 @@ ui.photoGallery = {
 
                 ui.addClass(loader, ui.photoGallery.namePause);
 
-                if (ui.globals.inlineSvg) {
-                    loader.innerHTML = ui.photoGallery.errorIcon;
-
-                } else {
-                    ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.errorIcon);
-                }
+                if (ui.globals.inlineSvg) loader.innerHTML = ui.photoGallery.errorIcon;
+                else ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.errorIcon);
 
             }
 
@@ -329,19 +306,11 @@ ui.photoGallery = {
             function toggleGalleryTools() {
 
                 // show/hide nav buttons
-                if (index < 1) {
-                    ui.find('.' + ui.photoGallery.namePreviewPrev)[0].style.display = 'none';
+                if (index < 1) ui.find('.' + ui.photoGallery.namePreviewPrev)[0].style.display = 'none';
+                else ui.find('.' + ui.photoGallery.namePreviewPrev)[0].style.display = 'block';
 
-                } else {
-                    ui.find('.' + ui.photoGallery.namePreviewPrev)[0].style.display = 'block';
-                }
-
-                if (index >= (loadedImages.length - 1)) {
-                    ui.find('.' + ui.photoGallery.namePreviewNext)[0].style.display = 'none';
-
-                } else {
-                    ui.find('.' + ui.photoGallery.namePreviewNext)[0].style.display = 'block';
-                }
+                if (index >= (loadedImages.length - 1)) ui.find('.' + ui.photoGallery.namePreviewNext)[0].style.display = 'none';
+                else ui.find('.' + ui.photoGallery.namePreviewNext)[0].style.display = 'block';
 
                 // show/hide info window
                 const info = ui.find('.' + ui.photoGallery.namePreviewInfo)[0];
@@ -443,12 +412,8 @@ ui.photoGallery = {
 
                 ui.removeClass(loader, ui.photoGallery.namePause);
 
-                if (ui.globals.inlineSvg) {
-                    loader.innerHTML = ui.photoGallery.loaderIcon;
-
-                } else {
-                    ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon);
-                }
+                if (ui.globals.inlineSvg) loader.innerHTML = ui.photoGallery.loaderIcon;
+                else ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon);
 
                 toggleGalleryTools();
 
@@ -518,19 +483,15 @@ ui.photoGallery = {
 
                     let touchesLength;
 
-                    if (e.type === 'click') { // added click to zoom for desktop
-                        touchesLength = 1;
-
-                    } else {
-                        touchesLength = e.changedTouches.length;
-                    }
+                    if (e.type === 'click') touchesLength = 1; // added click to zoom for desktop
+                    else touchesLength = e.changedTouches.length;
 
                     if (touchesLength === 1) { // control number of touches
 
                         let lastTouchEnd = 0;
                         const now = new Date().getTime();
 
-                        if (imgZoomMove) { return; }
+                        if (imgZoomMove) return;
 
                         if ((e.type === 'touchend' && ((now - lastTouchEnd) <= 200 && (now - lastTouchEnd) > 0)) || e.type === 'click') {
 
@@ -586,7 +547,7 @@ ui.photoGallery = {
 
                 function (e) {
 
-                    if (!ui.hasClass(this, ui.photoGallery.namePreviewZoom)) { return; }
+                    if (!ui.hasClass(this, ui.photoGallery.namePreviewZoom)) return;
 
                     imgZoomMove = false;
 
@@ -725,7 +686,7 @@ ui.photoGallery = {
                 const target = this.getAttribute(ui.photoGallery.dataTarget);
                 let count = this.getAttribute(ui.photoGallery.dataCount);
 
-                if (target === null) { return; }
+                if (target === null) return;
 
                 if (count === null) {
                     count = 0;
@@ -733,10 +694,7 @@ ui.photoGallery = {
                 } else {
 
                     count = Number(count);
-
-                    if (!count || count === '') {
-                        count = 0;
-                    }
+                    if (!count || count === '') count = 0;
 
                 }
 

@@ -25,7 +25,7 @@ ui.darkMode = {
 
 ui.onload(() => {
 
-    if (ui.userAgents.ie) { return; } // change event listener for darkColorScheme not supported on IE!
+    if (ui.userAgents.ie) return; // change event listener for darkColorScheme not supported on IE!
 
     let autoSwitcher = true;
 

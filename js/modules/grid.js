@@ -67,10 +67,7 @@ ui.grid.Start = () => {
                         if (ui.hasClass(el, ui.grid.targetOrdersPrefix + classType + ui.grid.nameFirstSuffix)) {
 
                             let refEl = siblings[order + 1];
-
-                            if (refEl === undefined) {
-                                refEl = null; // IE requires as 2nd argument a valid node or null
-                            }
+                            if (refEl === undefined) refEl = null; // IE requires as 2nd argument a valid node or null
 
                             el.removeAttribute(ui.grid.dataOrdered);
                             parent.insertBefore(el, refEl);
@@ -114,9 +111,5 @@ ui.on(document,
     ui.globals.eventAjaxCallback,
 
     () => {
-
-        if (ui.ajax.classNames.indexOf(ui.grid.targetOrdersPrefix) > -1) {
-            ui.grid.Start();
-        }
-
+        if (ui.ajax.classNames.indexOf(ui.grid.targetOrdersPrefix) > -1) ui.grid.Start();
     });

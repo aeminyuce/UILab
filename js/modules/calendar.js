@@ -139,19 +139,11 @@ ui.calendar.Start = () => {
 
             }
 
-            if (newDate === undefined) {
-                attr = attr.toString();
+            if (newDate === undefined) attr = attr.toString();
+            else attr = newDate.toString();
 
-            } else {
-                attr = newDate.toString();
-            }
-
-            if (attr === ui.calendar.setPrev) {
-                date.setMonth(date.getMonth() - 1);
-
-            } else if (attr === ui.calendar.setNext) {
-                date.setMonth(date.getMonth() + 1);
-            }
+            if (attr === ui.calendar.setPrev) date.setMonth(date.getMonth() - 1);
+            else if (attr === ui.calendar.setNext) date.setMonth(date.getMonth() + 1);
 
         }
 
@@ -168,10 +160,7 @@ ui.calendar.Start = () => {
 
                 if (!isNaN(val[0]) && !isNaN(val[1]) && !isNaN(val[2])) {
 
-                    if (ui.calendar.dateFormat === 1) {
-                        return Number(val[2]) + ',' + Number(val[0] - 1) + ',' + Number(val[1]); // mm dd yyyy
-                    }
-
+                    if (ui.calendar.dateFormat === 1) return Number(val[2]) + ',' + Number(val[0] - 1) + ',' + Number(val[1]); // mm dd yyyy
                     return Number(val[2]) + ',' + Number(val[1] - 1) + ',' + Number(val[0]); // dd mm yyyy
 
                 }
@@ -216,9 +205,7 @@ ui.calendar.Start = () => {
 
             }
 
-        } else {
-            getAttr(that, date); // get date
-        }
+        } else getAttr(that, date); // get date
 
         // set new date
         that.setAttribute(ui.calendar.dataDate, date.getFullYear() + ',' + (date.getMonth() + 1));
@@ -263,9 +250,7 @@ ui.calendar.Start = () => {
         if (ui.globals.inlineSvg) {
             html += '<svg class="' + ui.calendar.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.nextIcon;
 
-        } else {
-            html += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.nextIcon + '"/>';
-        }
+        } else html += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.nextIcon + '"/>';
 
         html += '</svg>' +
 
@@ -323,12 +308,8 @@ ui.calendar.Start = () => {
                     days = 1;
                     prevLastDay = lastDay;
 
-                    if (i < 2) {
-                        activeDay = true;
-
-                    } else {
-                        activeDay = false;
-                    }
+                    if (i < 2) activeDay = true;
+                    else activeDay = false;
 
                 }
 
@@ -380,6 +361,7 @@ ui.calendar.Start = () => {
                     }
 
                 } else { // passive days
+
                     html += '<td class="' + ui.calendar.namePassiveDay + '">' +
                                 '<span>' + days + '</span>' +
                             '</td>';
@@ -423,13 +405,13 @@ ui.calendar.Start = () => {
                     if (status === 'success') {
 
                         response = JSON.parse(response);
-                        if (response.length === 'undefined') { return; }
+                        if (response.length === 'undefined') return;
 
                         Array.prototype.forEach.call(response,
 
                             item => {
 
-                                if (item === null) { return; }
+                                if (item === null) return;
 
                                 if (Number(item.year) === date.getFullYear()) {
                                     if (Number(item.month) === date.getMonth() + 1) {
@@ -479,9 +461,7 @@ ui.calendar.Start = () => {
                             if (ui.globals.inlineSvg) {
                                 detailsTemp += '<svg class="' + ui.calendar.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.backIcon;
 
-                            } else {
-                                detailsTemp += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/>';
-                            }
+                            } else detailsTemp += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/>';
 
                             detailsTemp += '</svg>' +
 
@@ -502,9 +482,7 @@ ui.calendar.Start = () => {
                             if (ui.globals.inlineSvg) {
                                 details += '<svg class="' + ui.calendar.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.backIcon;
 
-                            } else {
-                                details += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/>';
-                            }
+                            } else details += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/>';
 
                             details += '</svg>' +
 
@@ -628,9 +606,7 @@ ui.calendar.Start = () => {
                     if (year === i) {
                         html += 'class="' + ui.calendar.namePanelCall + ' ' + ui.calendar.nameSelected + '" ';
 
-                    } else {
-                        html += 'class="' + ui.calendar.namePanelCall + '" ';
-                    }
+                    } else html += 'class="' + ui.calendar.namePanelCall + '" ';
 
                     html += 'name="' + i + '">' + i + '</button>' +
                         '</li>';
@@ -652,9 +628,7 @@ ui.calendar.Start = () => {
                         if (month === item) {
                             html += 'class="' + ui.calendar.namePanelCall + ' ' + ui.calendar.nameSelected + '" ';
 
-                        } else {
-                            html += 'class="' + ui.calendar.namePanelCall + '" ';
-                        }
+                        } else html += 'class="' + ui.calendar.namePanelCall + '" ';
 
                         html += 'name="' + i + '">' + item + '</button>' +
                             '</li>';
@@ -746,7 +720,7 @@ ui.calendar.Start = () => {
                     setTimeout(() => {
 
                         const that = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target)[i];
-                        if (that === undefined) { return; }
+                        if (that === undefined) return;
 
                         const form = that.parentElement;
                         removePicker(form, that);
@@ -789,7 +763,7 @@ ui.calendar.Start = () => {
 
             // check duplicate
             const form = this.parentElement;
-            if (ui.find('.' + ui.calendar.target, form).length > 0) { return; }
+            if (ui.find('.' + ui.calendar.target, form).length > 0) return;
 
             ui.addClass(document, ui.calendar.namePickerOpened);
 
@@ -814,12 +788,8 @@ ui.calendar.Start = () => {
             // check value
             let inputDate = pickerVal(this);
 
-            if (inputDate === '') {
-                createFnc(picker);
-
-            } else {
-                createFnc(picker, inputDate);
-            }
+            if (inputDate === '') createFnc(picker);
+            else createFnc(picker, inputDate);
 
             // check picker position
             const offset = form.getBoundingClientRect();
@@ -856,13 +826,10 @@ ui.calendar.Start = () => {
                 (ev) => {
 
                     // prevent for picker elements
-                    if (ui.closest(ev.target, form)[0] !== undefined) {
-                        return;
-                    }
+                    if (ui.closest(ev.target, form)[0] !== undefined) return;
 
-                    if (ev.button !== 2) { // inherited right clicks
-                        pickerCloseFnc('default', this);
-                    }
+                    // inherited right clicks
+                    if (ev.button !== 2) pickerCloseFnc('default', this);
 
                 });
 
@@ -885,12 +852,8 @@ ui.calendar.Start = () => {
 
                     inputDate = pickerVal(this); // check value
 
-                    if (inputDate === '') {
-                        createFnc(picker);
-
-                    } else {
-                        createFnc(picker, inputDate);
-                    }
+                    if (inputDate === '') createFnc(picker);
+                    else createFnc(picker, inputDate);
 
                 });
 
@@ -915,10 +878,7 @@ ui.calendar.Start = () => {
 
             // set values to input form
             let day = date.getDate().toString();
-
-            if (day.length === 1) {
-                day = '0' + day;
-            }
+            if (day.length === 1) day = '0' + day;
 
             let month = date.getMonth();
             month += 1;
@@ -929,9 +889,7 @@ ui.calendar.Start = () => {
             if (ui.calendar.dateFormat === 1) {
                 form.value = month + ui.calendar.pickerSep + day + ui.calendar.pickerSep + date.getFullYear(); // mm dd yyyy
 
-            } else {
-                form.value = day + ui.calendar.pickerSep + month + ui.calendar.pickerSep + date.getFullYear(); // dd mm yyyy
-            }
+            } else form.value = day + ui.calendar.pickerSep + month + ui.calendar.pickerSep + date.getFullYear(); // dd mm yyyy
 
             ui.trigger(document, ui.calendar.pickerChange); // set custom event
 
@@ -995,9 +953,5 @@ ui.on(document,
     ui.globals.eventAjaxCallback,
 
     () => {
-
-        if (ui.ajax.classNames.indexOf(ui.calendar.target) > -1) {
-            ui.calendar.Init();
-        }
-
+        if (ui.ajax.classNames.indexOf(ui.calendar.target) > -1) ui.calendar.Init();
     });

@@ -70,9 +70,12 @@ ui.textareaCounter.Start = () => {
             if (e.type === 'keydown' && e.ctrlKey) {
 
                 var that = this;
-                setTimeout(() => { counter(that); }, 0);
 
-            } else { counter(this); }
+                setTimeout(() => {
+                    counter(that);
+                }, 0);
+
+            } else counter(this);
 
         });
 
@@ -86,7 +89,7 @@ ui.textareaCounter.Start = () => {
             var i, that;
 
             that = ui.find('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + '] textarea');
-            if (that.length === 0) { return; }
+            if (that.length === 0) return;
 
             setTimeout(() => {
 
@@ -108,9 +111,5 @@ ui.on(document,
     ui.globals.eventAjaxCallback,
 
     () => {
-
-        if (ui.ajax.data.indexOf(ui.textareaCounter.dataCounter) > 0) {
-            ui.textareaCounter.Init();
-        }
-
+        if (ui.ajax.data.indexOf(ui.textareaCounter.dataCounter) > 0) ui.textareaCounter.Init();
     });

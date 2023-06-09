@@ -52,8 +52,6 @@ ui.forms = {
 
 (() => {
 
-    let clearForms;
-
     ui.forms.Start = () => {
 
         function formFocus(that, type) {
@@ -70,26 +68,17 @@ ui.forms = {
             if (holder.length === 1) {
 
                 ui.removeClass('.' + ui.forms.nameHolderFocus, ui.forms.nameHolderFocus);
+                if (type === 'add') ui.addClass(holder, ui.forms.nameHolderFocus);
 
-                if (type === 'add') {
-                    ui.addClass(holder, ui.forms.nameHolderFocus);
-                }
-
-            } else {
-                ui.removeClass('.' + ui.forms.nameFocus, ui.forms.nameFocus);
-            }
+            } else ui.removeClass('.' + ui.forms.nameFocus, ui.forms.nameFocus);
 
             for (let i = 0; i < classes.length; i++) {
 
                 const parent = ui.closest(that, '.' + classes[i]);
                 if (parent.length === 1) {
 
-                    if (type === 'add') {
-                        ui.addClass(parent, ui.forms.nameFocus);
-
-                    } else {
-                        ui.removeClass(parent, ui.forms.nameFocus);
-                    }
+                    if (type === 'add') ui.addClass(parent, ui.forms.nameFocus);
+                    else ui.removeClass(parent, ui.forms.nameFocus);
 
                     break;
                 }
@@ -99,7 +88,7 @@ ui.forms = {
         }
 
         // clear with form icons
-        clearForms = function (that) {
+        const clearForms = (that) => {
 
             if (that.readOnly) return; // check readOnly forms
             const btn = ui.find('.' + ui.forms.nameClear, that.parentElement)[0];
@@ -181,12 +170,8 @@ ui.forms = {
 
             function () {
 
-                if (this.readOnly) {
-                    this.checked = this.readOnly = false;
-
-                } else if (!this.checked) {
-                    this.readOnly = this.indeterminate = true;
-                }
+                if (this.readOnly) this.checked = this.readOnly = false;
+                else if (!this.checked) this.readOnly = this.indeterminate = true;
 
             });
 
@@ -200,12 +185,8 @@ ui.forms = {
 
                 const that = ui.find('input', this.parentElement)[0];
 
-                if (that.getAttribute('type') === 'password') {
-                    that.setAttribute('type', 'text');
-
-                } else {
-                    that.setAttribute('type', 'password');
-                }
+                if (that.getAttribute('type') === 'password') that.setAttribute('type', 'text');
+                else that.setAttribute('type', 'password');
 
             });
 
@@ -220,7 +201,7 @@ ui.forms = {
             function () {
 
                 let newValues = '';
-                let re = null;
+                let re = '';
 
                 if (ui.hasClass(this, ui.forms.nameNumber)) {
                     re = '[0-9]';
@@ -348,11 +329,7 @@ ui.forms = {
         ui.globals.eventAjaxCallback,
 
         () => {
-
-            if (ui.ajax.classNames.indexOf(ui.forms.nameClear) > 0) {
-                ui.forms.Init();
-            }
-
+            if (ui.ajax.classNames.indexOf(ui.forms.nameClear) > 0) ui.forms.Init();
         });
 
 })();

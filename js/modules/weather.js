@@ -112,10 +112,12 @@ ui.weather = {
 
                                 // create animations
                                 for (i = 0; i < animations.length; i++) {
+
                                     html += '<div ' +
                                                 'class="' + ui.weather.nameAnimatePrefix + animations[i] + '" ' +
                                                 'style="background-image: url(' + ui.weather.graphPath + animations[i] + '.' + ui.weather.fileType + ');">' +
                                             '</div>';
+
                                 }
 
                                 this.insertAdjacentHTML('beforeend', html);
@@ -139,7 +141,7 @@ ui.weather = {
             date = new Date();
 
             day = date.getDay();
-            if (day === 0) { day = 6; } else { day -= 1; }
+            if (day === 0) day = 6; else day -= 1;
 
             dateText = ui.weather.days[day];
 
@@ -189,19 +191,19 @@ ui.weather = {
                     function () {
 
                         sunPos = this.getAttribute(ui.weather.dataDay);
-                        if (sunPos === null || sunPos === '') { return; }
+                        if (sunPos === null || sunPos === '') return;
 
                         sunPos = sunPos.split(',');
-                        if (sunPos.length !== 2) { return; }
+                        if (sunPos.length !== 2) return;
 
                         sunrise = sunPos[0].split(':');
-                        if (sunrise.length !== 2) { return; }
+                        if (sunrise.length !== 2) return;
 
                         if (sunrise[0].length === 1) { sunrise[0] = '0' + sunrise[0]; } // sunrise hour
                         if (sunrise[1].length === 1) { sunrise[1] = '0' + sunrise[1]; } // sunrise minute
 
                         sunset = sunPos[1].split(':');
-                        if (sunset.length !== 2) { return; }
+                        if (sunset.length !== 2) return;
 
                         if (sunset[0].length === 1) { sunset[0] = '0' + sunset[0]; } // sunset hour
                         if (sunset[1].length === 1) { sunset[1] = '0' + sunset[1]; } // sunset minute
@@ -215,18 +217,14 @@ ui.weather = {
                             ui.addClass(that, ui.weather.nameNight);
 
                             // sun positioning
-                            if (sun !== undefined) {
-                                sun.style.removeProperty('left');
-                            }
+                            if (sun !== undefined) sun.style.removeProperty('left');
 
                         } else { // day
 
                             ui.removeClass(that, ui.weather.nameNight);
 
                             // sun positioning
-                            if (sun !== undefined) {
-                                sun.style.left = parseInt(hour - sunrise[0]) * 100 / (sunset[0] - sunrise[0]) + '%';
-                            }
+                            if (sun !== undefined) sun.style.left = parseInt(hour - sunrise[0]) * 100 / (sunset[0] - sunrise[0]) + '%';
 
                         }
 
@@ -251,11 +249,7 @@ ui.weather = {
         ui.globals.eventAjaxCallback,
 
         () => {
-
-            if (ui.ajax.classNames.indexOf(ui.weather.target) > -1) {
-                ui.weather.Init();
-            }
-
+            if (ui.ajax.classNames.indexOf(ui.weather.target) > -1) ui.weather.Init();
         });
 
 })();

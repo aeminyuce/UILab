@@ -137,9 +137,7 @@ ui.carousel = {
         } else if (window.innerWidth <= ui.globals.xs) {
             col = colsXS[i];
 
-        } else {
-            col = cols[i];
-        }
+        } else col = cols[i];
 
         return col;
 
@@ -157,7 +155,7 @@ ui.carousel = {
             let i = 0;
             const elems = ui.find('.' + ui.carousel.nameAnimate, content);
 
-            if (elems.length === 0) { return; }
+            if (elems.length === 0) return;
 
             if (ui.closest(content, '.' + ui.carousel.nameResized)[0] !== undefined) { // detect carousel is resizing
                 return;
@@ -223,17 +221,15 @@ ui.carousel = {
     function carouselModifier(i, that, type) {
 
         const contents = ui.find('.' + ui.carousel.nameContent, that);
-        if (contents.length === 0) { return; }
+        if (contents.length === 0) return;
 
         const nav = ui.find('.' + ui.carousel.targetNav, that)[0];
-        if (nav === undefined) { return; }
+        if (nav === undefined) return;
 
         const col = getCols(i); // get responsive cols
 
-        if (contents.length <= col) { // toggle nav
-            nav.style.display = 'none';
-
-        } else { nav.style.display = ''; }
+        if (contents.length <= col) nav.style.display = 'none'; // toggle nav
+        else nav.style.display = '';
 
         const halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
         const slider = ui.find('.' + ui.carousel.targetSlider, that);
@@ -277,7 +273,7 @@ ui.carousel = {
 
             (item, l) => { // detect carousel animates
 
-                if (l + 1 > col) { return; }
+                if (l + 1 > col) return;
                 carouselAnimate(item, (ui.globals.ease * 2), type);
 
             });
@@ -314,15 +310,15 @@ ui.carousel = {
     function carouselNav(that, direction) {
 
         const nav = ui.find('.' + ui.carousel.targetNav, that)[0];
-        if (nav === undefined) { return; }
+        if (nav === undefined) return;
 
         const slider = ui.find('.' + ui.carousel.targetSlider, that);
         const contents = ui.find('.' + ui.carousel.nameContent, slider[0]);
 
-        if (contents.length === 0) { return; }
+        if (contents.length === 0) return;
 
         const i = Number(that.getAttribute(ui.carousel.dataID));
-        if (i === null) { return; }
+        if (i === null) return;
 
         const navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that);
         const navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
@@ -370,7 +366,7 @@ ui.carousel = {
 
     carouselResizer = (e) => {
 
-        if (touchStarted) { return; }
+        if (touchStarted) return;
 
         if (e === 'resize' || e.type === 'resize') {
 
@@ -379,7 +375,7 @@ ui.carousel = {
                 el => {
 
                         const i = Number(el.getAttribute(ui.carousel.dataID));
-                        if (i === null) { return; }
+                        if (i === null) return;
 
                         ui.addClass(el, ui.carousel.nameResized);
                         carouselModifier(i, el, 'resize');
@@ -402,7 +398,7 @@ ui.carousel = {
                 el => {
 
                     const i = Number(el.getAttribute(ui.carousel.dataID));
-                    if (i === null) { return; }
+                    if (i === null) return;
 
                     ui.removeClass(el, ui.carousel.nameResized);
 
@@ -539,12 +535,12 @@ ui.carousel = {
                     counts[j] = 0;
 
                     const contents = ui.find('.' + ui.carousel.nameContent, el);
-                    if (contents.length === 0) { return; }
+                    if (contents.length === 0) return;
 
                     const nav = ui.find('.' + ui.carousel.targetNav, el)[0];
                     const navDots = ui.find('.' + ui.carousel.nameDots, nav)[0];
 
-                    if (nav === undefined || navDots === undefined) { return; }
+                    if (nav === undefined || navDots === undefined) return;
 
                     ui.addClass(el, ui.carousel.nameActive);
                     carouselModifier(j, el, 'static');
@@ -552,10 +548,8 @@ ui.carousel = {
                     // create nav
                     const col = getCols(j); // get responsive cols
 
-                    if (contents.length <= col) { // toggle nav
-                        nav.style.display = 'none';
-
-                    } else { nav.style.display = ''; }
+                    if (contents.length <= col) nav.style.display = 'none'; // toggle nav
+                    else nav.style.display = '';
 
                     let navDotsHtml = '';
                     navDots.innerHTML = '';
@@ -631,17 +625,13 @@ ui.carousel = {
 
                 let direction;
 
-                if (ui.hasClass(this, ui.carousel.nameNext)) {
-                    direction = 'next';
-
-                } else {
-                    direction = 'prev';
-                }
+                if (ui.hasClass(this, ui.carousel.nameNext)) direction = 'next';
+                else direction = 'prev';
 
                 const that = ui.closest(this, '.' + ui.carousel.target)[0];
                 const i = Number(that.getAttribute(ui.carousel.dataID));
 
-                if (i === null) { return; }
+                if (i === null) return;
 
                 carouselNav(that, direction);
 
@@ -655,7 +645,7 @@ ui.carousel = {
         function carouselStart(that) {
 
             const i = Number(that.getAttribute(ui.carousel.dataID));
-            if (i === null) { return; }
+            if (i === null) return;
 
             clearInterval(autoSlider[i]);
 
@@ -668,7 +658,7 @@ ui.carousel = {
         function carouselStop(that) {
 
             const i = Number(that.getAttribute(ui.carousel.dataID));
-            if (i === null) { return; }
+            if (i === null) return;
 
             clearInterval(autoSlider[i]);
 
@@ -700,9 +690,7 @@ ui.carousel = {
                 if (document.hidden) { // stop all carousels when browser windows is not active
                     Array.prototype.forEach.call(callCarousels, el => { carouselStop(el); });
 
-                } else {
-                    Array.prototype.forEach.call(callCarousels, el => { carouselStart(el); });
-                }
+                } else Array.prototype.forEach.call(callCarousels, el => { carouselStart(el); });
 
             });
 
@@ -736,7 +724,7 @@ ui.carousel = {
 
             function (e) {
 
-                if (isScrolling) { return; }
+                if (isScrolling) return;
 
                 let touchMove = false;
                 touchStarted = true;
@@ -752,7 +740,7 @@ ui.carousel = {
                 const halfSized = ui.hasClass(this, ui.carousel.nameHalfSize);
 
                 const i = Number(this.getAttribute(ui.carousel.dataID));
-                if (i === null) { return; }
+                if (i === null) return;
 
                 const col = getCols(i); // get responsive cols
 
@@ -771,8 +759,8 @@ ui.carousel = {
 
                     function (e) {
 
-                        if (ui.hasClass(document, ui.photoGallery.namePreviewOpened)) { return; } // stop if photo gallery is opened
-                        if (isScrolling) { return; }
+                        if (ui.hasClass(document, ui.photoGallery.namePreviewOpened)) return; // stop if photo gallery is opened
+                        if (isScrolling) return;
 
                         currentx = e.targetTouches[0].pageX;
                         currenty = e.targetTouches[0].pageY;
@@ -785,20 +773,14 @@ ui.carousel = {
                             ui.addClass(slider, ui.carousel.nameNoEffects);
 
                             clearTimeout(touchEndTimer);
-                            let sliderMax = -((contents.length - col) * contents[0].offsetWidth);
 
-                            if (halfSized) {
-                                sliderMax -= contents[0].offsetWidth * ui.carousel.halfSize;
-                            }
+                            let sliderMax = -((contents.length - col) * contents[0].offsetWidth);
+                            if (halfSized) sliderMax -= contents[0].offsetWidth * ui.carousel.halfSize;
 
                             move = (startMove - (startx - currentx));
 
-                            if (move > 0) {
-                                move = 0;
-
-                            } else if (move < sliderMax) {
-                                move = sliderMax;
-                            }
+                            if (move > 0) move = 0;
+                            else if (move < sliderMax) move = sliderMax;
 
                             slider.style.transform = 'translateX(' + move + 'px)';
 
@@ -839,12 +821,8 @@ ui.carousel = {
 
                                     } else {
 
-                                        if (beforeCount <= 0) {
-                                            counts[i] = 0;
-
-                                        } else {
-                                            counts[i] = beforeCount - 1;
-                                        }
+                                        if (beforeCount <= 0) counts[i] = 0;
+                                        else counts[i] = beforeCount - 1;
 
                                     }
 
@@ -855,12 +833,8 @@ ui.carousel = {
 
                                     } else {
 
-                                        if (beforeCount >= (contents.length - 1)) {
-                                            beforeCount = (contents.length - 1);
-
-                                        } else {
-                                            counts[i] = beforeCount + 1;
-                                        }
+                                        if (beforeCount >= (contents.length - 1)) beforeCount = (contents.length - 1);
+                                        else counts[i] = beforeCount + 1;
 
                                     }
 
@@ -968,11 +942,7 @@ ui.carousel = {
         ui.globals.eventAjaxCallback,
 
         () => {
-
-            if (ui.ajax.classNames.indexOf(ui.carousel.target) > -1) {
-                ui.carousel.Init();
-            }
-
+            if (ui.ajax.classNames.indexOf(ui.carousel.target) > -1) ui.carousel.Init();
         });
 
 })();

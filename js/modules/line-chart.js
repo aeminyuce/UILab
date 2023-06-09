@@ -102,9 +102,9 @@ ui.lineChart = {
 // load charts
 ui.lineChart.Start = () => {
 
-    var charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, circles, total, name;
-
     ui.lineChart.Init = function (method, resizer) {
+
+        let charts;
 
         if (method === ui.lineChart.nameLoaded) {
             charts = ui.find('.' + ui.lineChart.target + '.' + ui.lineChart.nameLoaded);
@@ -112,20 +112,20 @@ ui.lineChart.Start = () => {
         } else if (method === ui.globals.eventDomChange) {
             charts = ui.find('.' + ui.lineChart.target + ':not(.' + ui.lineChart.nameLoaded + '):not(.' + ui.lineChart.nameResized + ')');
 
-        } else {
-            charts = ui.find('.' + ui.lineChart.target + ':not(.' + ui.lineChart.nameLoaded + ')');
-        }
+        } else charts = ui.find('.' + ui.lineChart.target + ':not(.' + ui.lineChart.nameLoaded + ')');
 
-        if (charts.length === 0) { return; }
+        if (charts.length === 0) return;
+
+        let html = '';
 
         ui.each(charts,
 
             function () {
 
-                lines = ui.find('.' + ui.lineChart.nameLines, this);
-                if (lines.length === 0) { return; }
+                const lines = ui.find('.' + ui.lineChart.nameLines, this);
+                if (lines.length === 0) return;
 
-                data = [];
+                let data = [];
 
                 data.name = [];
                 data.color = [];
@@ -138,10 +138,10 @@ ui.lineChart.Start = () => {
                 }
 
                 // calculate height of chart
-                size = this.getAttribute(ui.lineChart.dataSize);
+                let size = this.getAttribute(ui.lineChart.dataSize);
 
-                rows = ui.lineChart.rows;
-                rowsHeight = ui.lineChart.rowsHeight;
+                let rows = ui.lineChart.rows;
+                let rowsHeight = ui.lineChart.rowsHeight;
 
                 if (size !== null && size !== '') {
 
@@ -159,17 +159,13 @@ ui.lineChart.Start = () => {
                 data.height = rows * rowsHeight;
 
                 // read all x parameters
-                x = this.getAttribute(ui.lineChart.dataX);
+                let x = this.getAttribute(ui.lineChart.dataX);
 
-                if (x !== null && x !== '') {
-                    data.x = x.split(',');
-
-                } else { return; }
-
+                if (x !== null && x !== '') data.x = x.split(','); else return;
                 x = data.x;
 
                 // read all y parameters
-                yMax = [];
+                let yMax = [];
 
                 Array.prototype.forEach.call(lines,
 
@@ -184,10 +180,10 @@ ui.lineChart.Start = () => {
 
                             (item) => {
 
-                                y = item.getAttribute(ui.lineChart.dataY);
+                                const y = item.getAttribute(ui.lineChart.dataY);
                                 data[i].y.push(y);
 
-                                link = item.getAttribute(ui.lineChart.dataLink);
+                                const link = item.getAttribute(ui.lineChart.dataLink);
 
                                 if (link !== null && link !== '') {
                                     data[i].links.push(link);
@@ -212,7 +208,8 @@ ui.lineChart.Start = () => {
 
                 yMax = yMax.sort((a, b) => b - a); // convert array as desc
 
-                yMin = yMax[yMax.length - 1];
+                let yMin = yMax[yMax.length - 1];
+
                 if (yMin.indexOf('.') === 0) yMin = Math.floor(yMin); // convert only decimal data. ex: .00
                 yMin = parseInt(yMin);
 
@@ -250,10 +247,10 @@ ui.lineChart.Start = () => {
 
                     }
 
-                } else { data.step = false; }
+                } else data.step = false;
 
                 // create grids
-                col = (data.width - (ui.lineChart.right + ui.lineChart.left));
+                let col = (data.width - (ui.lineChart.right + ui.lineChart.left));
 
                 let rowLength = x.length - 1;
                 if (rowLength === 0) rowLength = 1; // ignore infinity
@@ -261,6 +258,9 @@ ui.lineChart.Start = () => {
                 col = col / rowLength;
 
                 html += '<g class="' + ui.lineChart.nameGridX + '">';
+
+                let posX = 0;
+                let posY = 0;
 
                 for (let k = 0; k < x.length; k++) {
 
@@ -380,8 +380,8 @@ ui.lineChart.Start = () => {
                 html += '</g>';
 
                 // create svg contents
-                circles = '';
-                pathStart = [];
+                let circles = '';
+                const pathStart = [];
 
                 html += '<g>';
 
@@ -391,15 +391,13 @@ ui.lineChart.Start = () => {
 
                         let paths = '';
 
-                        y = data[j].y;
+                        const y = data[j].y;
 
                         // set color
                         if (j > ui.lineChart.colors.length - 1) {
                             data.color.push(ui.lineChart.colors[j - ui.lineChart.colors.length]);
 
-                        } else {
-                            data.color.push(ui.lineChart.colors[j]);
-                        }
+                        } else data.color.push(ui.lineChart.colors[j]);
 
                         // create paths and circles
                         let noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
@@ -412,7 +410,7 @@ ui.lineChart.Start = () => {
                         onlyRepeated = onlyRepeated === null || onlyRepeated === '' ? false : true;
 
                         // get line type
-                        type = el.getAttribute(ui.lineChart.dataType);
+                        let type = el.getAttribute(ui.lineChart.dataType);
                         if (type === null || type === undefined) { type = ''; }
 
                         const createCircles = (n) => {
@@ -652,7 +650,7 @@ ui.lineChart.Start = () => {
                         }
 
                         // get data names
-                        name = el.getAttribute(ui.lineChart.dataName);
+                        const name = el.getAttribute(ui.lineChart.dataName);
 
                         if (name !== null && name !== '') {
                             data.name.push(name);
@@ -675,7 +673,7 @@ ui.lineChart.Start = () => {
 
                     for (let p = 0; p < lines.length; p++) {
 
-                        total = 0;
+                        let total = 0;
 
                         for (let n = 0; n < data[p].y.length; n++) {
                             total += parseInt(data[p].y[n]);

@@ -52,7 +52,7 @@ ui.headerSticky = {
 
     stickyLoad = () => {
 
-        if (header === undefined) { return; }
+        if (header === undefined) return;
 
         const topSpace = Number(header.getAttribute(ui.headerSticky.dataSpace));
 
@@ -74,14 +74,14 @@ ui.headerSticky = {
 
             if (classes !== null && classes !== '') ui.addClass(header, classes);
 
-        } else { stickyClear(); }
+        } else stickyClear();
 
     };
 
     ui.headerSticky.Start = () => {
 
         header = ui.find('.' + ui.headerSticky.target)[0];
-        if (header === undefined) { return; }
+        if (header === undefined) return;
 
         body = ui.find('body')[0];
 

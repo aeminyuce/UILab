@@ -16,24 +16,16 @@ ui.toggleClass = function (that, name) {
 
             isSvgElements = ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1; // check SVG and own elements
 
-            if (isSvgElements) {
-                arr = el.className.baseVal.split(' ');
-
-            } else {
-                arr = el.className.split(' ');
-            }
+            if (isSvgElements) arr = el.className.baseVal.split(' ');
+            else arr = el.className.split(' ');
 
             for (let i = 0; i < name.length; i++) {
 
                 newArr = arr;
                 index = newArr.indexOf(name[i]);
 
-                if (index >= 0) {
-                    newArr.splice(index, 1);
-
-                } else {
-                    newArr.push(name[i]);
-                }
+                if (index >= 0) newArr.splice(index, 1);
+                else newArr.push(name[i]);
 
                 if (isSvgElements) {
                     el.className.baseVal = arr.join(' ');
@@ -42,12 +34,8 @@ ui.toggleClass = function (that, name) {
 
                     newArr = newArr.join(' ').replace(re, '');
 
-                    if (newArr.length === 0) {
-                        el.removeAttribute('class');
-
-                    } else {
-                        el.className = newArr;
-                    }
+                    if (newArr.length === 0) el.removeAttribute('class');
+                    else el.className = newArr;
 
                 }
 

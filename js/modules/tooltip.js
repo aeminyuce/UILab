@@ -62,11 +62,12 @@ ui.tooltip = {
     ui.tooltip.Close = () => {
 
         var that = ui.find('.' + ui.tooltip.target)[0];
-        if (that === undefined) { return; }
+        if (that === undefined) return;
 
         clearTimeout(removeTimer);
 
         removeTimer = setTimeout(() => {
+
             ui.removeClass(that, ui.tooltip.nameOpenEase);
 
             removeTimer2x = setTimeout(() => {
@@ -120,6 +121,7 @@ ui.tooltip = {
 
         // show
         ui.addClass(win, ui.tooltip.nameOpen);
+
         setTimeout(() => {
 
             // check screen limits
@@ -334,6 +336,7 @@ ui.tooltip = {
                     }
 
                     clearTimeout(pageTouchmoveTimer);
+
                     pageTouchmoveTimer = setTimeout(() => {
 
                         tooltipFnc(that, 'show');

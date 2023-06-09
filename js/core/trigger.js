@@ -5,9 +5,9 @@ export default () => ui;
 
 ui.trigger = function (that, e) {
 
-    let event;
-
     const callFnc = (e) => {
+
+        let event;
 
         try {
             event = new Event(e);
@@ -25,9 +25,6 @@ ui.trigger = function (that, e) {
 
     // for multiple event listeners ex: 'click touchend'
     const arr = e.split(' ');
-
-    for (let i = 0; i < arr.length; i++) {
-        callFnc(arr[i]);
-    }
+    for (let i = 0; i < arr.length; i++) callFnc(arr[i]);
 
 }

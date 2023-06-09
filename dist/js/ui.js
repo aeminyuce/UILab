@@ -47,11 +47,7 @@ ui.find = function (item, outer) {
   if (outer !== undefined) {
     var outerEl;
     var foundEl = [];
-    if (outer instanceof Object) {
-      outerEl = outer;
-    } else {
-      outerEl = document.querySelectorAll(outer);
-    }
+    if (outer instanceof Object) outerEl = outer;else outerEl = document.querySelectorAll(outer);
     if (outerEl.length !== undefined && Array.prototype.slice.call(outerEl).length === 1) {
       for (var i = 0; i < outerEl.length; i++) {
         var outerElIndex = outerEl[i].querySelectorAll(item);
@@ -60,22 +56,16 @@ ui.find = function (item, outer) {
           if (foundEl === undefined) {
             foundEl = outerEl.querySelectorAll(item);
           }
-        } else {
-          foundEl = foundEl.concat(outerElIndex);
-        }
+        } else foundEl = foundEl.concat(outerElIndex);
       }
-    } else {
-      foundEl = outerEl.querySelectorAll(item);
-    }
+    } else foundEl = outerEl.querySelectorAll(item);
     return foundEl;
   }
   return document.querySelectorAll(item);
 };
 ui.on = function (self, e, that, callback) {
   var set = function set(e) {
-    if (typeof t === 'string' && e === undefined) {
-      return;
-    }
+    if (typeof t === 'string' && e === undefined) return;
     var callFnc, isWindowEvent;
     var delegate = false;
     var passiveEvent = false;
@@ -118,9 +108,7 @@ ui.on = function (self, e, that, callback) {
       }
     }
     var handlerFnc = function handlerFnc(pt, pe) {
-      if (callFnc === undefined) {
-        return;
-      }
+      if (callFnc === undefined) return;
       if (ui.handlers === undefined) {
         ui.handlers = {};
       }
@@ -142,28 +130,18 @@ ui.on = function (self, e, that, callback) {
               passive: true
             } : true);
           }
-        } else {
-          pt.addEventListener(pe.split('.')[0], callFnc, passiveEvent ? {
-            passive: true
-          } : true);
-        }
-      } else {
-        return;
-      }
+        } else pt.addEventListener(pe.split('.')[0], callFnc, passiveEvent ? {
+          passive: true
+        } : true);
+      } else return;
     };
     var nodelist = ui.find(self);
-    if (isWindowEvent) {
-      handlerFnc(nodelist, e);
-    } else {
-      Array.prototype.forEach.call(nodelist, function (el) {
-        handlerFnc(el, e);
-      });
-    }
+    if (isWindowEvent) handlerFnc(nodelist, e);else Array.prototype.forEach.call(nodelist, function (el) {
+      handlerFnc(el, e);
+    });
   };
   var arr = e.split(' ');
-  for (var j = 0; j < arr.length; j++) {
-    set(arr[j]);
-  }
+  for (var j = 0; j < arr.length; j++) set(arr[j]);
 };
 ui.off = function (that, e) {
   var callFnc = function callFnc(e) {
@@ -187,16 +165,12 @@ ui.off = function (that, e) {
     var nodeList = ui.find(that);
     if (nodeList.length === 0) {
       handlerFnc(nodeList, e);
-    } else {
-      Array.prototype.forEach.call(nodeList, function (el) {
-        handlerFnc(el, e);
-      });
-    }
+    } else Array.prototype.forEach.call(nodeList, function (el) {
+      handlerFnc(el, e);
+    });
   };
   var arr = e.split(' ');
-  for (var j = 0; j < arr.length; j++) {
-    callFnc(arr[j]);
-  }
+  for (var j = 0; j < arr.length; j++) callFnc(arr[j]);
 };
 ui.onload = function (callback) {
   var handlerFnc = function handlerFnc(pt, pe) {
@@ -218,27 +192,17 @@ ui.onload = function (callback) {
           }
         }, true);
       }
-    } else {
-      return;
-    }
+    } else return;
   };
   if (document.attachEvent) {
-    if (document.readyState === 'complete') {
-      callback();
-    } else {
-      handlerFnc(document, 'DOMContentLoaded');
-    }
+    if (document.readyState === 'complete') callback();else handlerFnc(document, 'DOMContentLoaded');
   } else {
-    if (document.readyState !== 'loading') {
-      callback();
-    } else {
-      handlerFnc(document, 'DOMContentLoaded');
-    }
+    if (document.readyState !== 'loading') callback();else handlerFnc(document, 'DOMContentLoaded');
   }
 };
 ui.trigger = function (that, e) {
-  var event;
   var callFnc = function callFnc(e) {
+    var event;
     try {
       event = new Event(e);
     } catch (err) {
@@ -250,37 +214,28 @@ ui.trigger = function (that, e) {
     });
   };
   var arr = e.split(' ');
-  for (var i = 0; i < arr.length; i++) {
-    callFnc(arr[i]);
-  }
+  for (var i = 0; i < arr.length; i++) callFnc(arr[i]);
 };
 ui.hasClass = function (that, name) {
-  var re;
   var nodeList = ui.find(that);
   for (var i = 0; i < nodeList.length; i++) {
     if (ui.globals.svgElems.indexOf(nodeList[i].tagName.toLowerCase()) !== -1) {
-      re = new RegExp('(^| )' + name + '( |$)', 'gi').test(nodeList[i].className.baseVal);
-    } else {
-      re = new RegExp('(^| )' + name + '( |$)', 'gi').test(nodeList[i].className);
-    }
+      return new RegExp('(^| )' + name + '( |$)', 'gi').test(nodeList[i].className.baseVal);
+    } else return new RegExp('(^| )' + name + '( |$)', 'gi').test(nodeList[i].className);
   }
-  return re;
 };
 ui.addClass = function (that, name) {
-  var arr;
   var re = new RegExp('^\\s+|\\s+$');
   name = name.split(' ');
   Array.prototype.forEach.call(ui.find(that), function (el) {
     for (var i = 0; i < name.length; i++) {
       if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) {
-        arr = el.className.baseVal.split(' ');
-        if (arr.indexOf(name[i]) === -1) {
+        if (el.className.baseVal.split(' ').indexOf(name[i]) === -1) {
           el.className.baseVal += ' ' + name[i];
           el.className.baseVal = el.className.baseVal.replace(re, '');
         }
       } else {
-        arr = el.className.split(' ');
-        if (arr.indexOf(name[i]) === -1) {
+        if (el.className.split(' ').indexOf(name[i]) === -1) {
           el.className += ' ' + name[i];
           el.className = el.className.replace(re, '');
         }
@@ -296,14 +251,10 @@ ui.removeClass = function (that, name) {
       var re = new RegExp('(\\s|^)' + name[i] + '(\\s|$)');
       if (ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1) {
         el.className.baseVal = el.className.baseVal.replace(re, ' ').replace(rex, '');
-        if (el.className.baseVal === '') {
-          el.removeAttribute('class');
-        }
+        if (el.className.baseVal === '') el.removeAttribute('class');
       } else {
         el.className = el.className.replace(re, ' ').replace(rex, '');
-        if (el.className === '') {
-          el.removeAttribute('class');
-        }
+        if (el.className === '') el.removeAttribute('class');
       }
     }
   });
@@ -314,28 +265,16 @@ ui.toggleClass = function (that, name) {
   name = name.split(' ');
   Array.prototype.forEach.call(ui.find(that), function (el) {
     isSvgElements = ui.globals.svgElems.indexOf(el.tagName.toLowerCase()) !== -1;
-    if (isSvgElements) {
-      arr = el.className.baseVal.split(' ');
-    } else {
-      arr = el.className.split(' ');
-    }
+    if (isSvgElements) arr = el.className.baseVal.split(' ');else arr = el.className.split(' ');
     for (var i = 0; i < name.length; i++) {
       newArr = arr;
       index = newArr.indexOf(name[i]);
-      if (index >= 0) {
-        newArr.splice(index, 1);
-      } else {
-        newArr.push(name[i]);
-      }
+      if (index >= 0) newArr.splice(index, 1);else newArr.push(name[i]);
       if (isSvgElements) {
         el.className.baseVal = arr.join(' ');
       } else {
         newArr = newArr.join(' ').replace(re, '');
-        if (newArr.length === 0) {
-          el.removeAttribute('class');
-        } else {
-          el.className = newArr;
-        }
+        if (newArr.length === 0) el.removeAttribute('class');else el.className = newArr;
       }
     }
   });
@@ -343,17 +282,11 @@ ui.toggleClass = function (that, name) {
 ui.each = function (t, callback) {
   var l = ui.find(t),
     i;
-  for (i = 0; i < l.length; i++) {
-    callback.call(l[i], i);
-  }
+  for (i = 0; i < l.length; i++) callback.call(l[i], i);
 };
 ui.closest = function (that, outer) {
   var outerEl, parentEl;
-  if (outer instanceof Object) {
-    outerEl = [outer];
-  } else {
-    outerEl = ui.find(outer);
-  }
+  if (outer instanceof Object) outerEl = [outer];else outerEl = ui.find(outer);
   var elems = [];
   Array.prototype.forEach.call(ui.find(that), function (el) {
     parentEl = el.parentNode;
@@ -370,9 +303,7 @@ ui.closest = function (that, outer) {
   return elems;
 };
 ui.ajax = function (props) {
-  if (props.url === undefined) {
-    return;
-  }
+  if (props.url === undefined) return;
   if (props.type === undefined || props.type === '') {
     props.type = 'GET';
   }
@@ -389,11 +320,7 @@ ui.ajax = function (props) {
   if (!props.cache) {
     ui.ajax.requests[i].setRequestHeader('cache-control', 'no-cache');
   }
-  if (props.data !== '' && props.data !== undefined) {
-    ui.ajax.requests[i].send(props.data);
-  } else {
-    ui.ajax.requests[i].send();
-  }
+  if (props.data !== '' && props.data !== undefined) ui.ajax.requests[i].send(props.data);else ui.ajax.requests[i].send();
   ui.ajax.requests[i].onload = function () {
     if (ui.ajax.requests[i].readyState === 4 && ui.ajax.requests[i].status === 200) {
       ui.ajax.classNames = '';
@@ -401,11 +328,7 @@ ui.ajax = function (props) {
       var re = ui.globals.dataPrefix + '+\\w+=\\"+[\\w\\s\\d\\-\\_\\=]+\\"[ \\s\\>]';
       re = new RegExp(re, 'g');
       ui.ajax.data = ui.ajax.requests[i].responseText.match(re);
-      if (ui.ajax.data === null) {
-        ui.ajax.data = '';
-      } else {
-        ui.ajax.data = ui.ajax.data.toString();
-      }
+      if (ui.ajax.data === null) ui.ajax.data = '';else ui.ajax.data = ui.ajax.data.toString();
       ui.ajax.classNames += ui.ajax.requests[i].responseText.match(/\sclass=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
       if (ui.ajax.classNames === 'null') {
         ui.ajax.classNames = '';
@@ -424,9 +347,7 @@ ui.ajax = function (props) {
       ui.ajax.requests[i] = undefined;
       ui.ajax.classNames = '';
       ui.ajax.data = '';
-    } else {
-      props.callback('error', '', ui.ajax.requests[i]);
-    }
+    } else props.callback('error', '', ui.ajax.requests[i]);
   };
   ui.ajax.requests[i].onerror = function () {
     props.callback('error', '', ui.ajax.requests[i]);
@@ -499,20 +420,15 @@ ui.onload(function () {
     classes.push(ui.userAgents.nameChromiumEdge);
   }
   if (navigator.userAgentData !== undefined) {
-    var _navigator$userAgentD, _navigator$userAgentD2;
-    if (((_navigator$userAgentD = navigator.userAgentData) === null || _navigator$userAgentD === void 0 ? void 0 : _navigator$userAgentD.platform.indexOf("Win")) !== -1) {
+    if (navigator.userAgentData.platform.indexOf("Win") !== -1) {
       classes.push(ui.userAgents.nameWindows);
     }
-    if (((_navigator$userAgentD2 = navigator.userAgentData) === null || _navigator$userAgentD2 === void 0 ? void 0 : _navigator$userAgentD2.platform.indexOf("Mac")) !== -1) {
+    if (navigator.userAgentData.platform.indexOf("Mac") !== -1) {
       classes.push(ui.userAgents.nameMac);
     }
   } else {
-    if (navigator.appVersion.indexOf('Win') !== -1) {
-      classes.push(ui.userAgents.nameWindows);
-    }
-    if (navigator.appVersion.indexOf('Mac') !== -1) {
-      classes.push(ui.userAgents.nameMac);
-    }
+    if (navigator.appVersion.indexOf('Win') !== -1) classes.push(ui.userAgents.nameWindows);
+    if (navigator.appVersion.indexOf('Mac') !== -1) classes.push(ui.userAgents.nameMac);
   }
   if (ua.indexOf('mobile') === -1) {
     out(ui.userAgents.nameIos);
@@ -545,9 +461,7 @@ ui.onload(function () {
   var allClasses = '';
   for (var i = 0; i < classes.length; i++) {
     allClasses += classes[i];
-    if (i + 1 !== classes.length) {
-      allClasses += ' ';
-    }
+    if (i + 1 !== classes.length) allClasses += ' ';
   }
   ui.addClass(ui.userAgents.target, allClasses);
 });
@@ -561,9 +475,7 @@ ui.darkMode = {
   dataMod: 'data-ui-mode'
 };
 ui.onload(function () {
-  if (ui.userAgents.ie) {
-    return;
-  }
+  if (ui.userAgents.ie) return;
   var autoSwitcher = true;
   var mode = ui.darkMode.valueLight;
   var darkColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
@@ -705,9 +617,7 @@ ui.grid.Start = function () {
           var siblings = parent.children;
           if (ui.hasClass(el, ui.grid.targetOrdersPrefix + classType + ui.grid.nameFirstSuffix)) {
             var refEl = siblings[order + 1];
-            if (refEl === undefined) {
-              refEl = null;
-            }
+            if (refEl === undefined) refEl = null;
             el.removeAttribute(ui.grid.dataOrdered);
             parent.insertBefore(el, refEl);
           } else {
@@ -729,9 +639,7 @@ ui.onload(ui.grid.Start);
 ui.on(window, 'resize', ui.grid.Start);
 ui.on(document, ui.globals.eventDomChange, ui.grid.Start);
 ui.on(document, ui.globals.eventAjaxCallback, function () {
-  if (ui.ajax.classNames.indexOf(ui.grid.targetOrdersPrefix) > -1) {
-    ui.grid.Start();
-  }
+  if (ui.ajax.classNames.indexOf(ui.grid.targetOrdersPrefix) > -1) ui.grid.Start();
 });
 ui.dropdown = {
   target: 'ui-dropdown',
@@ -759,15 +667,9 @@ ui.dropdown = {
 (function () {
   var dropdownHoverTimer, dropdownOpenTimer, dropdownLeaveTimer, dropdownCloseTimer, listStyles, selectOpened, selectInContent, getScrollPos;
   function dropdownClose(innerParent) {
-    if (selectOpened) {
-      return;
-    }
+    if (selectOpened) return;
     var that;
-    if (innerParent === undefined) {
-      that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen);
-    } else {
-      that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen, innerParent);
-    }
+    if (innerParent === undefined) that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen);else that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen, innerParent);
     ui.removeClass(that, ui.dropdown.nameOpenEase);
     clearTimeout(dropdownLeaveTimer);
     dropdownLeaveTimer = setTimeout(function () {
@@ -806,9 +708,7 @@ ui.dropdown = {
         if ((ui.hasClass(parent, ui.dropdown.nameMenuPosRight) || ui.hasClass(parent, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
           inner = true;
           dropdownClose(innerParent);
-        } else {
-          dropdownClose();
-        }
+        } else dropdownClose();
         if (ui.find('.' + ui.dropdown.nameMenuPosRight, parent).length > 0 || ui.find('.' + ui.dropdown.nameMenuPosLeft, parent).length > 0) {
           hasInner = true;
         }
@@ -896,12 +796,8 @@ ui.dropdown = {
               list.style.removeProperty('transform-origin');
             }
             setMaxH('top');
-          } else {
-            setMaxH('default');
-          }
-        } else {
-          setMaxH('default');
-        }
+          } else setMaxH('default');
+        } else setMaxH('default');
       }, dropdownHoverTimer);
       if (e.type === 'click') {
         setTimeout(function () {
@@ -956,9 +852,7 @@ ui.dropdown = {
         var innerParent = ui.closest(_this, '.' + ui.dropdown.target)[0];
         if ((ui.hasClass(_this, ui.dropdown.nameMenuPosRight) || ui.hasClass(_this, ui.dropdown.nameMenuPosLeft)) && innerParent !== undefined) {
           dropdownClose(innerParent);
-        } else {
-          dropdownClose();
-        }
+        } else dropdownClose();
       }, ui.globals.ease * 2);
     });
     ui.on(document, 'mouseup', '.' + ui.dropdown.target + ':not(.' + ui.dropdown.nameNav + ') ' + ui.dropdown.tagMenuItems, function () {
@@ -982,9 +876,7 @@ ui.dropdown = {
   };
   ui.onload(ui.dropdown.Start);
   ui.on(window, 'resize', function () {
-    if (window.innerWidth === getScrollPos) {
-      return;
-    }
+    if (window.innerWidth === getScrollPos) return;
     dropdownClose();
     getScrollPos = window.innerWidth;
   });
@@ -1094,9 +986,7 @@ ui.tab.Start = function () {
             lastOpened.style.overflow = 'hidden';
           }
           setTimeout(function () {
-            if (accordion) {
-              lastOpened.style.height = '0';
-            }
+            if (accordion) lastOpened.style.height = '0';
             setTimeout(function () {
               ui.removeClass(lastOpened, ui.tab.nameOpen);
               if (accordion) {
@@ -1129,15 +1019,9 @@ ui.tab.Start = function () {
         ui.on(document, 'mousedown.' + ui.tab.eventCloseToggleTabs, function (ev) {
           if (ev.button !== 2) {
             var holderEl = ui.closest(ev.target, '.' + ui.tab.targetParent)[0];
-            if (holderEl === parent) {
-              return;
-            }
-            if (ui.closest(holderEl, '.' + ui.tab.targetParent)[0] !== undefined) {
-              return;
-            }
-            if (ui.find('.' + ui.tab.nameToggle + '.' + ui.tab.nameActive, parent).length === 0) {
-              return;
-            }
+            if (holderEl === parent) return;
+            if (ui.closest(holderEl, '.' + ui.tab.targetParent)[0] !== undefined) return;
+            if (ui.find('.' + ui.tab.nameToggle + '.' + ui.tab.nameActive, parent).length === 0) return;
             if (accordion) {
               currentContent.style.height = currentContent.offsetHeight + 'px';
               currentContent.style.overflow = 'hidden';
@@ -1192,9 +1076,7 @@ ui.topButton = {
     var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + ' ' + ui.topButton.nameOpen + '" title="' + ui.topButton.titleText + '">';
     if (ui.globals.inlineSvg) {
       html += '<svg class="' + ui.topButton.stylesIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.topButton.icon;
-    } else {
-      html += '<svg class="' + ui.topButton.stylesIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.topButton.icon + '"/>';
-    }
+    } else html += '<svg class="' + ui.topButton.stylesIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.topButton.icon + '"/>';
     html += '</svg>' + '</button>';
     var topBtn;
     if (ui.find('body')[0].offsetHeight > window.innerHeight * 2 && window.innerWidth > ui.globals.sm) {
@@ -1213,9 +1095,7 @@ ui.topButton = {
           if (topBtn !== undefined) {
             ui.removeClass(topBtn, ui.topButton.nameOpenEase);
             setTimeout(function () {
-              if (topBtn.parentNode !== null) {
-                topBtn.parentNode.removeChild(topBtn);
-              }
+              if (topBtn.parentNode !== null) topBtn.parentNode.removeChild(topBtn);
             }, ui.globals.slow);
           }
         }
@@ -1265,9 +1145,7 @@ ui.autocomplete.Start = function () {
   var customLowerCase = function customLowerCase(string) {
     var keys = Object.keys(ui.autocomplete.customLetters);
     var chars = '(([';
-    for (var i = 0; i < keys.length; i++) {
-      chars += keys[i];
-    }
+    for (var i = 0; i < keys.length; i++) chars += keys[i];
     chars += ']))';
     var re = new RegExp(chars, 'g');
     string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
@@ -1280,9 +1158,7 @@ ui.autocomplete.Start = function () {
     var timerShowLines;
     var parent = this.parentNode;
     var list = ui.find('ul', parent);
-    if (list[0] === undefined) {
-      return;
-    }
+    if (list[0] === undefined) return;
     if (e.keyCode === 38 || e.keyCode === 40) {
       var listItems = ui.find('li', list[0]);
       if (listItems.length > 0) {
@@ -1292,21 +1168,13 @@ ui.autocomplete.Start = function () {
           navIndex = Array.prototype.slice.call(listItems).indexOf(navSelected[0]);
           if (e.keyCode === 40) {
             navIndex += 1;
-            if (navIndex >= listItems.length) {
-              navIndex = 0;
-            }
+            if (navIndex >= listItems.length) navIndex = 0;
           } else if (e.keyCode === 38) {
             navIndex -= 1;
-            if (navIndex < 0) {
-              navIndex = 0;
-            }
+            if (navIndex < 0) navIndex = 0;
           }
         } else {
-          if (e.keyCode === 40) {
-            navIndex = 0;
-          } else if (e.keyCode === 38) {
-            navIndex = listItems.length - 1;
-          }
+          if (e.keyCode === 40) navIndex = 0;else if (e.keyCode === 38) navIndex = listItems.length - 1;
         }
         ui.removeClass(navSelected, ui.autocomplete.nameSelected);
         ui.addClass(listItems[navIndex], ui.autocomplete.nameSelected);
@@ -1353,9 +1221,7 @@ ui.autocomplete.Start = function () {
                       var key = item[getVal];
                       var txt = '';
                       if (key !== null) {
-                        if (typeof key === 'boolean') {
-                          return;
-                        }
+                        if (typeof key === 'boolean') return;
                         var modified = key;
                         if (typeof key === 'number') {
                           modified = modified.toString().match(val, 'g');
@@ -1372,15 +1238,11 @@ ui.autocomplete.Start = function () {
                             if (offset.top + parseInt(tHeight + dHeight) >= window.innerHeight) {
                               if (offset.top - parseInt(tHeight + dHeight) + tHeight > 0) {
                                 ui.addClass(parent, ui.autocomplete.nameMenuTop);
-                              } else {
-                                list[0].style.height = dHeight - (offset.top + parseInt(tHeight + dHeight) - window.innerHeight) - ui.autocomplete.scrollbarSize + 'px';
-                              }
+                              } else list[0].style.height = dHeight - (offset.top + parseInt(tHeight + dHeight) - window.innerHeight) - ui.autocomplete.scrollbarSize + 'px';
                             }
                           }, 10);
                           k += 1;
-                          if (k > 5) {
-                            return;
-                          }
+                          if (k > 5) return;
                           if (typeof key === 'number') {
                             for (var i = 0; i < key.toString().length; i++) {
                               if (i === key.toString().indexOf(modified)) {
@@ -1412,9 +1274,7 @@ ui.autocomplete.Start = function () {
               }
             });
           }
-        } else {
-          return;
-        }
+        } else return;
       } else {
         ui.removeClass(parent, ui.autocomplete.nameOpenEase);
         setTimeout(function () {
@@ -1455,9 +1315,7 @@ ui.autocomplete.Start = function () {
     ui.removeClass(parent, ui.autocomplete.nameOpenEase);
     setTimeout(function () {
       ui.removeClass(parent, ui.autocomplete.nameOpen);
-      if (list.length > 0) {
-        parent.removeChild(list[0]);
-      }
+      if (list.length > 0) parent.removeChild(list[0]);
     }, ui.globals.ease);
   });
   ui.on(document, 'mousedown', '.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + '.' + ui.autocomplete.nameOpen + ' li', function () {
@@ -1484,19 +1342,13 @@ ui.currencySpinner = {
       if (ui.currencySpinner.decimals) {
         var number = s.replace(regDecimal, '');
         var decimal = s.match(regDecimal);
-        if (decimal === null) {
-          decimal = '0';
-        } else {
-          decimal = decimal[0];
-        }
+        if (decimal === null) decimal = '0';else decimal = decimal[0];
         number = Number(number.replace(regClear, ''));
         decimal = Number(decimal.replace(regClear, ''));
         s = [];
         s.push(number);
         s.push(decimal);
-      } else {
-        s = Number(s.replace(/(\s)|(\.)|(\,+\d+)|(\,)/g, ''));
-      }
+      } else s = Number(s.replace(/(\s)|(\.)|(\,+\d+)|(\,)/g, ''));
       return s;
     };
     function locales(l) {
@@ -1516,9 +1368,7 @@ ui.currencySpinner = {
           if (ui.currencySpinner.decimals) {
             val[0] += step[0];
             val[1] += step[1];
-          } else {
-            val += step;
-          }
+          } else val += step;
         } else {
           if (ui.currencySpinner.decimals) {
             val[0] -= step[0];
@@ -1563,9 +1413,7 @@ ui.currencySpinner = {
         char = e.which;
       } else {
         char = e.keyCode;
-        if (char === 116) {
-          isRefresh = true;
-        }
+        if (char === 116) isRefresh = true;
       }
       ignoreList = [8, 9, 35, 36, 37, 39];
       if (ui.currencySpinner.decimals) {
@@ -1586,12 +1434,8 @@ ui.currencySpinner = {
         return;
       }
       if (ui.currencySpinner.decimals) {
-        if (e.type === 'blur') {
-          currencyChange(this);
-        }
-      } else {
-        currencyChange(this);
-      }
+        if (e.type === 'blur') currencyChange(this);
+      } else currencyChange(this);
       if (e.type === 'blur') {
         var input = ui.find('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameInput + ' input')[0];
         var min = convert(input.getAttribute('min'));
@@ -1604,9 +1448,7 @@ ui.currencySpinner = {
       if (e.keyCode === 13) {
         e.preventDefault();
         ui.trigger('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameInput + ' input', 'blur');
-      } else {
-        return;
-      }
+      } else return;
     });
   };
   ui.onload(ui.currencySpinner.Start);
@@ -1621,18 +1463,10 @@ ui.dualMultiSelect = {
   ui.dualMultiSelect.Start = function () {
     resetOptions = function resetOptions(selects, isSubmit) {
       Array.prototype.forEach.call(ui.find('option', selects[0]), function (item) {
-        if (ui.userAgents.mobile) {
-          item.selected = true;
-        } else {
-          item.selected = false;
-        }
+        if (ui.userAgents.mobile) item.selected = true;else item.selected = false;
       });
       Array.prototype.forEach.call(ui.find('option', selects[1]), function (item) {
-        if (ui.userAgents.mobile || isSubmit !== undefined) {
-          item.selected = true;
-        } else {
-          item.selected = false;
-        }
+        if (ui.userAgents.mobile || isSubmit !== undefined) item.selected = true;else item.selected = false;
       });
     };
     ui.dualMultiSelect.Init = function () {
@@ -1649,9 +1483,7 @@ ui.dualMultiSelect = {
           if (index !== null && index !== '' && !isNaN(index)) {
             arr.push(index);
             arrStart.push(index);
-          } else {
-            arr.push('');
-          }
+          } else arr.push('');
         });
         arrStart = arrStart.sort();
         var userArr = arrStart;
@@ -1674,14 +1506,10 @@ ui.dualMultiSelect = {
           item.setAttribute(ui.dualMultiSelect.dataIndex, arr[i]);
           if (userArr.length > 0) {
             var index = Number(arr.indexOf(userArr[i]));
-            if (index > -1) {
-              selects[1].appendChild(options[index]);
-            }
+            if (index > -1) selects[1].appendChild(options[index]);
           } else {
             var selected = item.getAttribute('selected');
-            if (selected !== null) {
-              selects[1].appendChild(item);
-            }
+            if (selected !== null) selects[1].appendChild(item);
           }
         });
         resetOptions(selects);
@@ -1695,11 +1523,7 @@ ui.dualMultiSelect = {
         selects[0].appendChild(that);
       } else if (sourceList.length === 1) {
         var firstIndex = Number(sourceList[0].getAttribute(ui.dualMultiSelect.dataIndex));
-        if (i > firstIndex) {
-          selects[0].appendChild(that);
-        } else {
-          selects[0].insertBefore(that, sourceList[0]);
-        }
+        if (i > firstIndex) selects[0].appendChild(that);else selects[0].insertBefore(that, sourceList[0]);
       } else {
         var arr = [];
         var inserted = false;
@@ -1720,9 +1544,7 @@ ui.dualMultiSelect = {
       }
     };
     ui.on(document, 'change', '.' + ui.dualMultiSelect.target + ' .' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', function (e) {
-      if (!e.isTrusted) {
-        return;
-      }
+      if (!e.isTrusted) return;
       var that;
       var options = Array.prototype.slice.call(e.target);
       for (var i = 0; options.length; i++) {
@@ -1735,11 +1557,7 @@ ui.dualMultiSelect = {
       var multi = ui.find('.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]', selects);
       var parent = ui.closest(that, '.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]')[0];
       var dir = Array.prototype.slice.call(multi).indexOf(parent);
-      if (dir === 0) {
-        multi[1].appendChild(that);
-      } else {
-        movetoSource(that, multi);
-      }
+      if (dir === 0) multi[1].appendChild(that);else movetoSource(that, multi);
       resetOptions(multi);
     });
     ui.on(document, 'reset', 'form', function () {
@@ -1759,11 +1577,7 @@ ui.dualMultiSelect = {
           Array.prototype.forEach.call(ui.find('option', selects[0]), function (item) {
             selected = item.getAttribute('selected');
             if (selected !== null) {
-              if (targetList.length === 0) {
-                selects[1].appendChild(item);
-              } else {
-                selects[1].insertBefore(item, targetList[index]);
-              }
+              if (targetList.length === 0) selects[1].appendChild(item);else selects[1].insertBefore(item, targetList[index]);
             }
           });
           resetOptions(selects);
@@ -1784,9 +1598,7 @@ ui.dualMultiSelect = {
   };
   ui.onload(ui.dualMultiSelect.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
-    if (ui.ajax.classNames.indexOf(ui.dualMultiSelect.target) > 0) {
-      ui.dualMultiSelect.Init();
-    }
+    if (ui.ajax.classNames.indexOf(ui.dualMultiSelect.target) > 0) ui.dualMultiSelect.Init();
   });
 })();
 ui.forms = {
@@ -1817,32 +1629,23 @@ ui.forms = {
   customLetters: 'ığüşöçİĞÜŞÖÇ'
 };
 (function () {
-  var clearForms;
   ui.forms.Start = function () {
     function formFocus(that, type) {
       var classes = [ui.forms.targetText, ui.forms.targetSelect, ui.forms.targetSelectMulti, ui.forms.targetTextarea];
       var holder = ui.closest(that, '.' + ui.forms.nameHolder);
       if (holder.length === 1) {
         ui.removeClass('.' + ui.forms.nameHolderFocus, ui.forms.nameHolderFocus);
-        if (type === 'add') {
-          ui.addClass(holder, ui.forms.nameHolderFocus);
-        }
-      } else {
-        ui.removeClass('.' + ui.forms.nameFocus, ui.forms.nameFocus);
-      }
+        if (type === 'add') ui.addClass(holder, ui.forms.nameHolderFocus);
+      } else ui.removeClass('.' + ui.forms.nameFocus, ui.forms.nameFocus);
       for (var i = 0; i < classes.length; i++) {
         var parent = ui.closest(that, '.' + classes[i]);
         if (parent.length === 1) {
-          if (type === 'add') {
-            ui.addClass(parent, ui.forms.nameFocus);
-          } else {
-            ui.removeClass(parent, ui.forms.nameFocus);
-          }
+          if (type === 'add') ui.addClass(parent, ui.forms.nameFocus);else ui.removeClass(parent, ui.forms.nameFocus);
           break;
         }
       }
     }
-    clearForms = function clearForms(that) {
+    var clearForms = function clearForms(that) {
       if (that.readOnly) return;
       var btn = ui.find('.' + ui.forms.nameClear, that.parentElement)[0];
       if (that.value !== '') {
@@ -1878,23 +1681,15 @@ ui.forms = {
       }
     });
     ui.on(document, 'click', 'input[type="checkbox"].' + ui.forms.targetIndeterminate, function () {
-      if (this.readOnly) {
-        this.checked = this.readOnly = false;
-      } else if (!this.checked) {
-        this.readOnly = this.indeterminate = true;
-      }
+      if (this.readOnly) this.checked = this.readOnly = false;else if (!this.checked) this.readOnly = this.indeterminate = true;
     });
     ui.on(document, 'click touchend', '.' + ui.forms.nameShowPass, function () {
       var that = ui.find('input', this.parentElement)[0];
-      if (that.getAttribute('type') === 'password') {
-        that.setAttribute('type', 'text');
-      } else {
-        that.setAttribute('type', 'password');
-      }
+      if (that.getAttribute('type') === 'password') that.setAttribute('type', 'text');else that.setAttribute('type', 'password');
     });
     ui.on(document, 'input', '.' + ui.forms.targetText + ' > .' + ui.forms.nameNumber + ',' + '.' + ui.forms.targetText + ' > .' + ui.forms.nameFloatNumber + ',' + '.' + ui.forms.targetText + ' > .' + ui.forms.nameWord, function () {
       var newValues = '';
-      var re = null;
+      var re = '';
       if (ui.hasClass(this, ui.forms.nameNumber)) {
         re = '[0-9]';
       } else if (ui.hasClass(this, ui.forms.nameFloatNumber)) {
@@ -1947,9 +1742,7 @@ ui.forms = {
   };
   ui.onload(ui.forms.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
-    if (ui.ajax.classNames.indexOf(ui.forms.nameClear) > 0) {
-      ui.forms.Init();
-    }
+    if (ui.ajax.classNames.indexOf(ui.forms.nameClear) > 0) ui.forms.Init();
   });
 })();
 ui.formSpinner = {
@@ -1987,9 +1780,7 @@ ui.formSpinner.Start = function () {
 };
 ui.onload(ui.formSpinner.Start);
 ui.on(document, ui.globals.eventAjaxCallback, function () {
-  if (ui.ajax.classNames.indexOf(ui.formSpinner.target) > -1) {
-    ui.formSpinner.Init();
-  }
+  if (ui.ajax.classNames.indexOf(ui.formSpinner.target) > -1) ui.formSpinner.Init();
 });
 ui.requiredForms = {
   target: 'ui-required',
@@ -2021,13 +1812,9 @@ ui.requiredForms.Start = function () {
       if (that.type === 'radio') {
         radios = ui.find('[type="radio"][name="' + that.name + '"]');
         ui.addClass(radios, ui.requiredForms.nameSuccess);
-      } else {
-        ui.addClass(that, ui.requiredForms.nameSuccess);
-      }
+      } else ui.addClass(that, ui.requiredForms.nameSuccess);
       ui.removeClass(p, ui.requiredForms.nameError);
-      if (showMsg) {
-        ui.removeClass(next, ui.requiredForms.nameShow);
-      }
+      if (showMsg) ui.removeClass(next, ui.requiredForms.nameShow);
     };
     checkForms = function checkForms(el) {
       var showAlertTimer;
@@ -2054,18 +1841,14 @@ ui.requiredForms.Start = function () {
           radiosCheck = 0;
           radios = ui.find('[type="radio"][name="' + el.name + '"]');
           for (i = 0; i < radios.length; i++) {
-            if (radios[i].checked) {
-              radiosCheck += 1;
-            }
+            if (radios[i].checked) radiosCheck += 1;
           }
           if (radiosCheck === 0) {
             showErr();
           }
         } else {
           if (!el.checked) {
-            if (ui.hasClass(el, ui.requiredForms.nameIndeterminate) && el.indeterminate) {
-              return;
-            }
+            if (ui.hasClass(el, ui.requiredForms.nameIndeterminate) && el.indeterminate) return;
             showErr();
           }
         }
@@ -2081,23 +1864,15 @@ ui.requiredForms.Start = function () {
       if (type !== ui.requiredForms.nameSelect) {
         min = el.getAttribute('min');
         if (min !== null && min !== '' && !isNaN(min)) {
-          if (!isNaN(val)) {
-            if (Number(val) < Number(min)) {
-              showErr();
-            }
-          } else {
+          if (!isNaN(val)) if (Number(val) < Number(min)) {
             showErr();
-          }
+          } else showErr();
         }
         max = el.getAttribute('max');
         if (max !== null && max !== '' && !isNaN(max)) {
-          if (!isNaN(val)) {
-            if (Number(val) > Number(max)) {
-              showErr();
-            }
-          } else {
+          if (!isNaN(val)) if (Number(val) > Number(max)) {
             showErr();
-          }
+          } else showErr();
         }
       }
       if (type === ui.requiredForms.nameTypePrefix + 'email') {
@@ -2125,14 +1900,8 @@ ui.requiredForms.Start = function () {
           type = ui.requiredForms.nameSelect;
         } else {
           type = this.getAttribute('type');
-          if (type === null || type === '') {
-            return;
-          }
-          if (type === 'text') {
-            type = ui.requiredForms.nameInput;
-          } else {
-            type = ui.requiredForms.nameTypePrefix + type;
-          }
+          if (type === null || type === '') return;
+          if (type === 'text') type = ui.requiredForms.nameInput;else type = ui.requiredForms.nameTypePrefix + type;
         }
         checkForms(this);
       });
@@ -2147,9 +1916,7 @@ ui.requiredForms.Start = function () {
         formElems.push(elems[i]);
       }
     }
-    if (formElems.length === 0) {
-      return;
-    }
+    if (formElems.length === 0) return;
     success = 0;
     getIndex = 0;
     if (formElems.length !== success) {
@@ -2179,9 +1946,7 @@ ui.requiredForms.Start = function () {
       getRect = formElems[scrollIndex].getBoundingClientRect();
       scrollIndex = getRect.top - getRect.height * 2 + scrollPos - ui.requiredForms.scrollingTopSpacing;
       window.scrollTo(0, scrollIndex);
-    } else {
-      return;
-    }
+    } else return;
   });
   ui.on(document, 'keyup', '.' + ui.requiredForms.nameInput + ' input.' + ui.requiredForms.target, function () {
     required(this, ui.requiredForms.nameTypePrefix + this.type);
@@ -2238,16 +2003,12 @@ ui.textareaCounter.Start = function () {
       setTimeout(function () {
         counter(that);
       }, 0);
-    } else {
-      counter(this);
-    }
+    } else counter(this);
   });
   ui.on(document, 'reset', 'form', function () {
     var i, that;
     that = ui.find('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + '] textarea');
-    if (that.length === 0) {
-      return;
-    }
+    if (that.length === 0) return;
     setTimeout(function () {
       for (i = 0; i < that.length; i++) {
         counter(that[i]);
@@ -2257,9 +2018,7 @@ ui.textareaCounter.Start = function () {
 };
 ui.onload(ui.textareaCounter.Start);
 ui.on(document, ui.globals.eventAjaxCallback, function () {
-  if (ui.ajax.data.indexOf(ui.textareaCounter.dataCounter) > 0) {
-    ui.textareaCounter.Init();
-  }
+  if (ui.ajax.data.indexOf(ui.textareaCounter.dataCounter) > 0) ui.textareaCounter.Init();
 });
 ui.icons = {
   nameIcon: 'ui-icon',
@@ -2267,9 +2026,7 @@ ui.icons = {
   iconSrc: '../dist/icons.svg'
 };
 ui.icons.Start = function () {
-  if (!ui.userAgents.ie) {
-    return;
-  }
+  if (!ui.userAgents.ie) return;
   var iconsList = ui.find(ui.icons.tagIcon);
   var page = ui.find('body')[0];
   var sprites = ui.find('body > svg');
@@ -2297,9 +2054,7 @@ ui.icons.Start = function () {
 };
 ui.onload(ui.icons.Start);
 ui.on(document, ui.globals.eventAjaxCallback, function () {
-  if (ui.ajax.classNames.indexOf(ui.formSpinner.nameIcon) > -1) {
-    ui.icons.Start();
-  }
+  if (ui.ajax.classNames.indexOf(ui.formSpinner.nameIcon) > -1) ui.icons.Start();
 });
 ui.card = {
   targetClose: 'ui-card-close',
@@ -2338,9 +2093,7 @@ ui.headerSticky = {
     }
   };
   stickyLoad = function stickyLoad() {
-    if (header === undefined) {
-      return;
-    }
+    if (header === undefined) return;
     var topSpace = Number(header.getAttribute(ui.headerSticky.dataSpace));
     if (window.pageYOffset > header.getBoundingClientRect().top) {
       if (size !== '') {
@@ -2368,15 +2121,11 @@ ui.headerSticky = {
       body.style.paddingTop = header.offsetHeight + topSpace + 'px';
       ui.addClass(header, ui.headerSticky.nameSticky);
       if (classes !== null && classes !== '') ui.addClass(header, classes);
-    } else {
-      stickyClear();
-    }
+    } else stickyClear();
   };
   ui.headerSticky.Start = function () {
     header = ui.find('.' + ui.headerSticky.target)[0];
-    if (header === undefined) {
-      return;
-    }
+    if (header === undefined) return;
     body = ui.find('body')[0];
     size = '';
     classList = header.getAttribute('class');
@@ -2468,16 +2217,10 @@ ui.alerts = {
       }
     };
     ui.alerts.dialog = function (props) {
-      if (props === undefined) {
-        return;
-      }
-      if (props.msg === undefined) {
-        return;
-      }
+      if (props === undefined) return;
+      if (props.msg === undefined) return;
       var dialog = ui.find('.' + ui.alerts.targetDialog)[0];
-      if (dialog !== undefined) {
-        return;
-      }
+      if (dialog !== undefined) return;
       if (ui.userAgents.mobile) {
         pageYPos = window.pageYOffset;
       }
@@ -2492,12 +2235,8 @@ ui.alerts = {
           }
         }
       }
-      var success;
-      if (props.success === undefined) {
-        success = ui.alerts.msgDialogSuccess;
-      } else {
-        success = props.success;
-      }
+      var success = '';
+      if (props.success === undefined) success = ui.alerts.msgDialogSuccess;else success = props.success;
       buttons += '<button class="' + ui.alerts.nameDialogSuccess + '" value="' + ui.alerts.successBtnValue + '">' + success + '</button>';
       if (props.error !== undefined) {
         buttons += '<button class="' + ui.alerts.nameDialogError + '" value="' + ui.alerts.errorBtnValue + '">' + props.error + '</button>';
@@ -2536,12 +2275,8 @@ ui.alerts = {
             } else if (ui.hasClass(this, ui.alerts.nameDialogError)) {
               theme = ui.alerts.themeDanger;
             }
-            var msgTimer;
-            if (ui.alerts.dialogMessages) {
-              msgTimer = ui.globals.ease;
-            } else {
-              msgTimer = 0;
-            }
+            var msgTimer = 0;
+            if (ui.alerts.dialogMessages) msgTimer = ui.globals.ease;
             ui.alerts.closeDialog();
             var msg = this.textContent;
             setTimeout(function () {
@@ -2592,12 +2327,8 @@ ui.alerts = {
       }, ui.globals.ease);
     };
     ui.alerts.message = function (props) {
-      if (props === undefined) {
-        return;
-      }
-      if (props.msg === undefined) {
-        return;
-      }
+      if (props === undefined) return;
+      if (props.msg === undefined) return;
       var arrPos = [ui.alerts.posCenter, ui.alerts.posTopRight, ui.alerts.posTopLeft, ui.alerts.posBottomRight, ui.alerts.posBottomLeft];
       if (arrPos.indexOf(props.pos) < 0) {
         props.pos = ui.alerts.posDefault;
@@ -2644,9 +2375,7 @@ ui.alerts = {
         }
         messageQueue.push(message);
         setTimeout(function () {
-          if (messageQueue[0] === undefined) {
-            return;
-          }
+          if (messageQueue[0] === undefined) return;
           ui.alerts.closeMessage(messageQueue[0][0]);
           messageQueue.shift();
         }, ui.alerts.messageTimer);
@@ -2746,16 +2475,8 @@ ui.calendar.Start = function () {
           }
         }
       }
-      if (newDate === undefined) {
-        attr = attr.toString();
-      } else {
-        attr = newDate.toString();
-      }
-      if (attr === ui.calendar.setPrev) {
-        date.setMonth(date.getMonth() - 1);
-      } else if (attr === ui.calendar.setNext) {
-        date.setMonth(date.getMonth() + 1);
-      }
+      if (newDate === undefined) attr = attr.toString();else attr = newDate.toString();
+      if (attr === ui.calendar.setPrev) date.setMonth(date.getMonth() - 1);else if (attr === ui.calendar.setNext) date.setMonth(date.getMonth() + 1);
     }
   }
   var pickerVal = function pickerVal(that) {
@@ -2763,9 +2484,7 @@ ui.calendar.Start = function () {
       var val = that.value.split(ui.calendar.pickerSep);
       if (val.length === 3 && val[0].length <= 2 && val[1].length <= 2 && val[2].length === 4) {
         if (!isNaN(val[0]) && !isNaN(val[1]) && !isNaN(val[2])) {
-          if (ui.calendar.dateFormat === 1) {
-            return Number(val[2]) + ',' + Number(val[0] - 1) + ',' + Number(val[1]);
-          }
+          if (ui.calendar.dateFormat === 1) return Number(val[2]) + ',' + Number(val[0] - 1) + ',' + Number(val[1]);
           return Number(val[2]) + ',' + Number(val[1] - 1) + ',' + Number(val[0]);
         }
       }
@@ -2790,9 +2509,7 @@ ui.calendar.Start = function () {
           pickerDay = Number(newDate[0]) + ',' + Number(newDate[1]) + ',' + Number(newDate[2]);
         }
       }
-    } else {
-      getAttr(that, date);
-    }
+    } else getAttr(that, date);
     that.setAttribute(ui.calendar.dataDate, date.getFullYear() + ',' + (date.getMonth() + 1));
     var html = '';
     var container = ui.find('.' + ui.calendar.nameContainer, that)[0];
@@ -2812,9 +2529,7 @@ ui.calendar.Start = function () {
     html += '</svg>' + '</button>' + '<span class="' + ui.calendar.nameTitle + ' ' + ui.calendar.stylesTitle + '">' + '<button type="button" tabindex="-1" class="' + ui.calendar.nameMonth + '">' + ui.calendar.months[date.getMonth()] + '</button>' + '<button type="button" tabindex="-1" class="' + ui.calendar.nameYear + '">' + date.getFullYear() + '</button>' + '</span>' + '<button type="button" tabindex="-1" class="' + ui.calendar.nameNext + '">';
     if (ui.globals.inlineSvg) {
       html += '<svg class="' + ui.calendar.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.nextIcon;
-    } else {
-      html += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.nextIcon + '"/>';
-    }
+    } else html += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.nextIcon + '"/>';
     html += '</svg>' + '</button>' + '</caption>' + '<thead>';
     if (ui.calendar.startDayofWeek === 0) {
       html += '<th>' + ui.calendar.days[ui.calendar.days.length - 1] + '</th>';
@@ -2846,11 +2561,7 @@ ui.calendar.Start = function () {
         if (days > prevLastDay) {
           days = 1;
           prevLastDay = lastDay;
-          if (i < 2) {
-            activeDay = true;
-          } else {
-            activeDay = false;
-          }
+          if (i < 2) activeDay = true;else activeDay = false;
         }
         if (activeDay) {
           if (date.getFullYear() + ' ' + date.getMonth() + ' ' + days === today) {
@@ -2897,13 +2608,9 @@ ui.calendar.Start = function () {
         callback: function callback(status, response) {
           if (status === 'success') {
             response = JSON.parse(response);
-            if (response.length === 'undefined') {
-              return;
-            }
+            if (response.length === 'undefined') return;
             Array.prototype.forEach.call(response, function (item) {
-              if (item === null) {
-                return;
-              }
+              if (item === null) return;
               if (Number(item.year) === date.getFullYear()) {
                 if (Number(item.month) === date.getMonth() + 1) {
                   var dday = ui.find('[' + ui.calendar.dataDay + '="' + item.day + '"]', that);
@@ -2927,9 +2634,7 @@ ui.calendar.Start = function () {
               detailsTemp = '<div class="' + ui.calendar.nameDetails + '">' + '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">';
               if (ui.globals.inlineSvg) {
                 detailsTemp += '<svg class="' + ui.calendar.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.backIcon;
-              } else {
-                detailsTemp += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/>';
-              }
+              } else detailsTemp += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/>';
               detailsTemp += '</svg>' + '</button>' + '<ul class="' + ui.calendar.stylesDetailScroll + '">' + details + '</ul>' + '</div>';
               ui.addClass(container, ui.calendar.nameHasDetails);
               details = detailsTemp;
@@ -2938,9 +2643,7 @@ ui.calendar.Start = function () {
               details = '<div class="' + ui.calendar.nameDetails + ' ' + ui.calendar.nameEmptyDetails + '">' + '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">';
               if (ui.globals.inlineSvg) {
                 details += '<svg class="' + ui.calendar.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.calendar.backIcon;
-              } else {
-                details += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/>';
-              }
+              } else details += '<svg class="' + ui.calendar.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.calendar.backIcon + '"/>';
               details += '</svg>' + '</button>' + '<ul>' + '<li>' + '<strong></strong>' + '<b></b><br>' + '<span></span>' + '<span></span>' + '<span></span>' + '</li>' + '</ul>' + '</div>';
               ui.removeClass(container, ui.calendar.nameHasDetails);
             }
@@ -2996,9 +2699,7 @@ ui.calendar.Start = function () {
         html += '<li>' + '<button type="button" tabindex="-1" ';
         if (year === i) {
           html += 'class="' + ui.calendar.namePanelCall + ' ' + ui.calendar.nameSelected + '" ';
-        } else {
-          html += 'class="' + ui.calendar.namePanelCall + '" ';
-        }
+        } else html += 'class="' + ui.calendar.namePanelCall + '" ';
         html += 'name="' + i + '">' + i + '</button>' + '</li>';
       }
     } else {
@@ -3008,9 +2709,7 @@ ui.calendar.Start = function () {
         html += '<li>' + '<button type="button" tabindex="-1" ';
         if (month === item) {
           html += 'class="' + ui.calendar.namePanelCall + ' ' + ui.calendar.nameSelected + '" ';
-        } else {
-          html += 'class="' + ui.calendar.namePanelCall + '" ';
-        }
+        } else html += 'class="' + ui.calendar.namePanelCall + '" ';
         html += 'name="' + i + '">' + item + '</button>' + '</li>';
       });
     }
@@ -3056,9 +2755,7 @@ ui.calendar.Start = function () {
         ui.removeClass(item, ui.calendar.nameOpenEase);
         setTimeout(function () {
           var that = ui.find('.' + ui.calendar.namePicker + ' .' + ui.calendar.target)[i];
-          if (that === undefined) {
-            return;
-          }
+          if (that === undefined) return;
           var form = that.parentElement;
           removePicker(form, that);
         }, ui.globals.ease);
@@ -3078,9 +2775,7 @@ ui.calendar.Start = function () {
   ui.on(document, 'focus', '.' + ui.calendar.namePicker + ' > [type="text"]', function () {
     var _this4 = this;
     var form = this.parentElement;
-    if (ui.find('.' + ui.calendar.target, form).length > 0) {
-      return;
-    }
+    if (ui.find('.' + ui.calendar.target, form).length > 0) return;
     ui.addClass(document, ui.calendar.namePickerOpened);
     ui.off(ui.calendar.targetHolder, 'mousedown.' + ui.calendar.eventClose);
     ui.off(this, 'keydown.' + ui.calendar.eventClose + ' keyup.' + ui.calendar.pickerChange);
@@ -3092,11 +2787,7 @@ ui.calendar.Start = function () {
     form.insertAdjacentHTML('beforeend', html);
     var picker = ui.find('.' + ui.calendar.target, form)[0];
     var inputDate = pickerVal(this);
-    if (inputDate === '') {
-      createFnc(picker);
-    } else {
-      createFnc(picker, inputDate);
-    }
+    if (inputDate === '') createFnc(picker);else createFnc(picker, inputDate);
     var offset = form.getBoundingClientRect();
     var formHeight = form.offsetHeight;
     var pickerWidth = picker.offsetWidth;
@@ -3115,12 +2806,8 @@ ui.calendar.Start = function () {
       ui.addClass(picker, ui.calendar.nameOpenEase);
     }, 10);
     ui.on(ui.calendar.targetHolder, 'mousedown.' + ui.calendar.eventClose, function (ev) {
-      if (ui.closest(ev.target, form)[0] !== undefined) {
-        return;
-      }
-      if (ev.button !== 2) {
-        pickerCloseFnc('default', _this4);
-      }
+      if (ui.closest(ev.target, form)[0] !== undefined) return;
+      if (ev.button !== 2) pickerCloseFnc('default', _this4);
     });
     ui.on(this, 'keydown.' + ui.calendar.eventClose, function (ev) {
       if (ev.keyCode === 9 || ev.keyCode === 13 || ev.keyCode === 27) {
@@ -3129,11 +2816,7 @@ ui.calendar.Start = function () {
     });
     ui.on(this, 'keyup.' + ui.calendar.pickerChange, function () {
       inputDate = pickerVal(this);
-      if (inputDate === '') {
-        createFnc(picker);
-      } else {
-        createFnc(picker, inputDate);
-      }
+      if (inputDate === '') createFnc(picker);else createFnc(picker, inputDate);
     });
   });
   ui.on(document, 'click', '.' + ui.calendar.namePicker + ' .' + ui.calendar.target + ' tbody td button', function () {
@@ -3144,9 +2827,7 @@ ui.calendar.Start = function () {
     getAttr(that, date);
     date.setDate(this.textContent);
     var day = date.getDate().toString();
-    if (day.length === 1) {
-      day = '0' + day;
-    }
+    if (day.length === 1) day = '0' + day;
     var month = date.getMonth();
     month += 1;
     month = month.toString();
@@ -3155,9 +2836,7 @@ ui.calendar.Start = function () {
     }
     if (ui.calendar.dateFormat === 1) {
       form.value = month + ui.calendar.pickerSep + day + ui.calendar.pickerSep + date.getFullYear();
-    } else {
-      form.value = day + ui.calendar.pickerSep + month + ui.calendar.pickerSep + date.getFullYear();
-    }
+    } else form.value = day + ui.calendar.pickerSep + month + ui.calendar.pickerSep + date.getFullYear();
     ui.trigger(document, ui.calendar.pickerChange);
     pickerCloseFnc('default', form);
   });
@@ -3189,9 +2868,7 @@ ui.calendar.Start = function () {
 };
 ui.onload(ui.calendar.Start);
 ui.on(document, ui.globals.eventAjaxCallback, function () {
-  if (ui.ajax.classNames.indexOf(ui.calendar.target) > -1) {
-    ui.calendar.Init();
-  }
+  if (ui.ajax.classNames.indexOf(ui.calendar.target) > -1) ui.calendar.Init();
 });
 ui.carousel = {
   target: 'ui-carousel',
@@ -3277,9 +2954,7 @@ ui.carousel = {
       col = colsSM[i];
     } else if (window.innerWidth <= ui.globals.xs) {
       col = colsXS[i];
-    } else {
-      col = cols[i];
-    }
+    } else col = cols[i];
     return col;
   };
   function carouselAnimate(content, wait, type) {
@@ -3290,9 +2965,7 @@ ui.carousel = {
       }
       var i = 0;
       var elems = ui.find('.' + ui.carousel.nameAnimate, content);
-      if (elems.length === 0) {
-        return;
-      }
+      if (elems.length === 0) return;
       if (ui.closest(content, '.' + ui.carousel.nameResized)[0] !== undefined) {
         return;
       }
@@ -3333,19 +3006,11 @@ ui.carousel = {
   }
   function carouselModifier(i, that, type) {
     var contents = ui.find('.' + ui.carousel.nameContent, that);
-    if (contents.length === 0) {
-      return;
-    }
+    if (contents.length === 0) return;
     var nav = ui.find('.' + ui.carousel.targetNav, that)[0];
-    if (nav === undefined) {
-      return;
-    }
+    if (nav === undefined) return;
     var col = getCols(i);
-    if (contents.length <= col) {
-      nav.style.display = 'none';
-    } else {
-      nav.style.display = '';
-    }
+    if (contents.length <= col) nav.style.display = 'none';else nav.style.display = '';
     var halfSized = ui.hasClass(that, ui.carousel.nameHalfSize);
     var slider = ui.find('.' + ui.carousel.targetSlider, that);
     var size = col;
@@ -3371,9 +3036,7 @@ ui.carousel = {
     ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
     filterDots(navDots, navDotsEl, counts[i], i);
     Array.prototype.forEach.call(contents, function (item, l) {
-      if (l + 1 > col) {
-        return;
-      }
+      if (l + 1 > col) return;
       carouselAnimate(item, ui.globals.ease * 2, type);
     });
   }
@@ -3396,18 +3059,12 @@ ui.carousel = {
   }
   function carouselNav(that, direction) {
     var nav = ui.find('.' + ui.carousel.targetNav, that)[0];
-    if (nav === undefined) {
-      return;
-    }
+    if (nav === undefined) return;
     var slider = ui.find('.' + ui.carousel.targetSlider, that);
     var contents = ui.find('.' + ui.carousel.nameContent, slider[0]);
-    if (contents.length === 0) {
-      return;
-    }
+    if (contents.length === 0) return;
     var i = Number(that.getAttribute(ui.carousel.dataID));
-    if (i === null) {
-      return;
-    }
+    if (i === null) return;
     var navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that);
     var navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
     var col = getCols(i);
@@ -3436,15 +3093,11 @@ ui.carousel = {
     }
   }
   carouselResizer = function carouselResizer(e) {
-    if (touchStarted) {
-      return;
-    }
+    if (touchStarted) return;
     if (e === 'resize' || e.type === 'resize') {
       Array.prototype.forEach.call(ui.find('.' + ui.carousel.target), function (el) {
         var i = Number(el.getAttribute(ui.carousel.dataID));
-        if (i === null) {
-          return;
-        }
+        if (i === null) return;
         ui.addClass(el, ui.carousel.nameResized);
         carouselModifier(i, el, 'resize');
         var slider = ui.find('.' + ui.carousel.targetSlider, el)[0];
@@ -3457,9 +3110,7 @@ ui.carousel = {
       var that = ui.find('.' + ui.carousel.target);
       Array.prototype.forEach.call(that, function (el) {
         var i = Number(el.getAttribute(ui.carousel.dataID));
-        if (i === null) {
-          return;
-        }
+        if (i === null) return;
         ui.removeClass(el, ui.carousel.nameResized);
         if (autoTimer[i] !== null && autoTimer[i] !== undefined) {
           clearInterval(autoSlider[i]);
@@ -3536,22 +3187,14 @@ ui.carousel = {
         }
         counts[j] = 0;
         var contents = ui.find('.' + ui.carousel.nameContent, el);
-        if (contents.length === 0) {
-          return;
-        }
+        if (contents.length === 0) return;
         var nav = ui.find('.' + ui.carousel.targetNav, el)[0];
         var navDots = ui.find('.' + ui.carousel.nameDots, nav)[0];
-        if (nav === undefined || navDots === undefined) {
-          return;
-        }
+        if (nav === undefined || navDots === undefined) return;
         ui.addClass(el, ui.carousel.nameActive);
         carouselModifier(j, el, 'static');
         var col = getCols(j);
-        if (contents.length <= col) {
-          nav.style.display = 'none';
-        } else {
-          nav.style.display = '';
-        }
+        if (contents.length <= col) nav.style.display = 'none';else nav.style.display = '';
         var navDotsHtml = '';
         navDots.innerHTML = '';
         Array.prototype.forEach.call(contents, function () {
@@ -3587,16 +3230,10 @@ ui.carousel = {
     ui.carousel.Init();
     ui.on(document, 'click', '.' + ui.carousel.namePrev + ',.' + ui.carousel.nameNext, function () {
       var direction;
-      if (ui.hasClass(this, ui.carousel.nameNext)) {
-        direction = 'next';
-      } else {
-        direction = 'prev';
-      }
+      if (ui.hasClass(this, ui.carousel.nameNext)) direction = 'next';else direction = 'prev';
       var that = ui.closest(this, '.' + ui.carousel.target)[0];
       var i = Number(that.getAttribute(ui.carousel.dataID));
-      if (i === null) {
-        return;
-      }
+      if (i === null) return;
       carouselNav(that, direction);
       if (autoTimer[i] !== null) {
         clearInterval(autoSlider[i]);
@@ -3604,9 +3241,7 @@ ui.carousel = {
     });
     function carouselStart(that) {
       var i = Number(that.getAttribute(ui.carousel.dataID));
-      if (i === null) {
-        return;
-      }
+      if (i === null) return;
       clearInterval(autoSlider[i]);
       autoSlider[i] = setInterval(function () {
         carouselNav(that, 'next');
@@ -3614,9 +3249,7 @@ ui.carousel = {
     }
     function carouselStop(that) {
       var i = Number(that.getAttribute(ui.carousel.dataID));
-      if (i === null) {
-        return;
-      }
+      if (i === null) return;
       clearInterval(autoSlider[i]);
     }
     ui.on(document, 'mouseenter', '.' + ui.carousel.target + '[' + ui.carousel.dataSlide + ']', function () {
@@ -3631,11 +3264,9 @@ ui.carousel = {
         Array.prototype.forEach.call(callCarousels, function (el) {
           carouselStop(el);
         });
-      } else {
-        Array.prototype.forEach.call(callCarousels, function (el) {
-          carouselStart(el);
-        });
-      }
+      } else Array.prototype.forEach.call(callCarousels, function (el) {
+        carouselStart(el);
+      });
     });
     ui.on(document, 'scroll', '.' + ui.carousel.target + ' .' + ui.carousel.nameScroll + ',' + '.' + ui.carousel.target + ' .' + ui.carousel.nameScrollV + ',' + '.' + ui.carousel.target + ' .' + ui.carousel.nameScrollH, function (e) {
       e.preventDefault();
@@ -3647,9 +3278,7 @@ ui.carousel = {
       }, ui.globals.ease);
     });
     ui.on(document, 'touchstart', '.' + ui.carousel.target, function (e) {
-      if (isScrolling) {
-        return;
-      }
+      if (isScrolling) return;
       var touchMove = false;
       touchStarted = true;
       var startx = e.targetTouches[0].pageX;
@@ -3659,9 +3288,7 @@ ui.carousel = {
       var navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', this);
       var halfSized = ui.hasClass(this, ui.carousel.nameHalfSize);
       var i = Number(this.getAttribute(ui.carousel.dataID));
-      if (i === null) {
-        return;
-      }
+      if (i === null) return;
       var col = getCols(i);
       var startMove = window.getComputedStyle(slider).getPropertyValue('transform');
       startMove = startMove.replace('matrix', '').replace(/[\,\(\)\s]/g, ' ').replace(/\s\s/g, '|');
@@ -3670,12 +3297,8 @@ ui.carousel = {
       var that = this;
       ui.off(document, 'touchmove');
       ui.on(document, 'touchmove', function (e) {
-        if (ui.hasClass(document, ui.photoGallery.namePreviewOpened)) {
-          return;
-        }
-        if (isScrolling) {
-          return;
-        }
+        if (ui.hasClass(document, ui.photoGallery.namePreviewOpened)) return;
+        if (isScrolling) return;
         currentx = e.targetTouches[0].pageX;
         currenty = e.targetTouches[0].pageY;
         if (Math.abs(startx - currentx) > ui.carousel.touchMoveToleranceX && Math.abs(starty - currenty) < ui.carousel.touchMoveToleranceY) {
@@ -3684,15 +3307,9 @@ ui.carousel = {
           ui.addClass(slider, ui.carousel.nameNoEffects);
           clearTimeout(touchEndTimer);
           var sliderMax = -((contents.length - col) * contents[0].offsetWidth);
-          if (halfSized) {
-            sliderMax -= contents[0].offsetWidth * ui.carousel.halfSize;
-          }
+          if (halfSized) sliderMax -= contents[0].offsetWidth * ui.carousel.halfSize;
           move = startMove - (startx - currentx);
-          if (move > 0) {
-            move = 0;
-          } else if (move < sliderMax) {
-            move = sliderMax;
-          }
+          if (move > 0) move = 0;else if (move < sliderMax) move = sliderMax;
           slider.style.transform = 'translateX(' + move + 'px)';
           if (autoTimer[i] !== null) {
             clearInterval(autoSlider[i]);
@@ -3713,21 +3330,13 @@ ui.carousel = {
               if (counts[i].toFixed(2).split('.')[1] > ui.carousel.touchMoveToleranceX) {
                 counts[i] = Math.floor(counts[i]);
               } else {
-                if (beforeCount <= 0) {
-                  counts[i] = 0;
-                } else {
-                  counts[i] = beforeCount - 1;
-                }
+                if (beforeCount <= 0) counts[i] = 0;else counts[i] = beforeCount - 1;
               }
             } else {
               if (counts[i].toFixed(2).split('.')[1] > ui.carousel.touchMoveToleranceX) {
                 counts[i] = Math.ceil(counts[i]);
               } else {
-                if (beforeCount >= contents.length - 1) {
-                  beforeCount = contents.length - 1;
-                } else {
-                  counts[i] = beforeCount + 1;
-                }
+                if (beforeCount >= contents.length - 1) beforeCount = contents.length - 1;else counts[i] = beforeCount + 1;
               }
             }
             move = -Math.ceil(counts[i] * contents[0].offsetWidth);
@@ -3785,9 +3394,7 @@ ui.carousel = {
     carouselResizer('resize');
   });
   ui.on(document, ui.globals.eventAjaxCallback, function () {
-    if (ui.ajax.classNames.indexOf(ui.carousel.target) > -1) {
-      ui.carousel.Init();
-    }
+    if (ui.ajax.classNames.indexOf(ui.carousel.target) > -1) ui.carousel.Init();
   });
 })();
 ui.countdown = {
@@ -3801,9 +3408,7 @@ ui.countdown = {
   var countdownTimer;
   ui.countdown.Start = function () {
     var countdown = ui.find('.' + ui.countdown.target);
-    if (ui.countdown.length === 0) {
-      return;
-    }
+    if (ui.countdown.length === 0) return;
     var arr = [];
     Array.prototype.forEach.call(countdown, function (el, i) {
       var date = new Date();
@@ -3857,11 +3462,7 @@ ui.countdown = {
           if (dateLeft[0] === '0') {
             day.textContent = '00';
           } else {
-            if (dateLeft[0].length === 1) {
-              day.textContent = '0' + dateLeft[0];
-            } else {
-              day.textContent = dateLeft[0];
-            }
+            if (dateLeft[0].length === 1) day.textContent = '0' + dateLeft[0];else day.textContent = dateLeft[0];
           }
         }
         var hour = ui.find('.' + ui.countdown.nameHour, el)[0];
@@ -3869,11 +3470,7 @@ ui.countdown = {
           if (dateLeft[1] === '0') {
             hour.textContent = '00';
           } else {
-            if (dateLeft[1].length === 1) {
-              hour.textContent = '0' + dateLeft[1];
-            } else {
-              hour.textContent = dateLeft[1];
-            }
+            if (dateLeft[1].length === 1) hour.textContent = '0' + dateLeft[1];else hour.textContent = dateLeft[1];
           }
         }
         var minute = ui.find('.' + ui.countdown.nameMinute, el)[0];
@@ -3881,11 +3478,7 @@ ui.countdown = {
           if (dateLeft[2] === '0') {
             minute.textContent = '00';
           } else {
-            if (dateLeft[2].length === 1) {
-              minute.textContent = '0' + dateLeft[2];
-            } else {
-              minute.textContent = dateLeft[2];
-            }
+            if (dateLeft[2].length === 1) minute.textContent = '0' + dateLeft[2];else minute.textContent = dateLeft[2];
           }
         }
         var sec = ui.find('.' + ui.countdown.nameSecond, el)[0];
@@ -3893,11 +3486,7 @@ ui.countdown = {
           if (dateLeft[3] === '0') {
             sec.textContent = '00';
           } else {
-            if (dateLeft[3].length === 1) {
-              sec.textContent = '0' + dateLeft[3];
-            } else {
-              sec.textContent = dateLeft[3];
-            }
+            if (dateLeft[3].length === 1) sec.textContent = '0' + dateLeft[3];else sec.textContent = dateLeft[3];
           }
         }
       });
@@ -3905,9 +3494,7 @@ ui.countdown = {
   };
   ui.onload(ui.countdown.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
-    if (ui.ajax.classNames.indexOf(ui.countdown.target) > -1) {
-      ui.countdown.Start();
-    }
+    if (ui.ajax.classNames.indexOf(ui.countdown.target) > -1) ui.countdown.Start();
   });
 })();
 ui.datatable = {
@@ -3982,9 +3569,7 @@ ui.datatable = {
   var customLowerCase = function customLowerCase(string) {
     var keys = Object.keys(ui.datatable.customLetters);
     var chars = '(([';
-    for (var i = 0; i < keys.length; i++) {
-      chars += keys[i];
-    }
+    for (var i = 0; i < keys.length; i++) chars += keys[i];
     chars += ']))';
     var re = new RegExp(chars, 'g');
     string = string.replace(/["'\[\]\{\}()]/g, '').replace(re, function (l) {
@@ -4005,22 +3590,12 @@ ui.datatable = {
     if (pagingCount[id] < 1) {
       pagingCount[id] = 1;
     }
-    if (pagingCount[id] > total) {
-      pagingCount[id] = total;
-    }
-    if (pagingCount[id] === total) {
-      min = pagingCount[id] - 2;
-    } else {
-      min = pagingCount[id] - 1;
-    }
+    if (pagingCount[id] > total) pagingCount[id] = total;
+    if (pagingCount[id] === total) min = pagingCount[id] - 2;else min = pagingCount[id] - 1;
     if (min < 1) {
       min = 1;
     }
-    if (pagingCount[id] === 1) {
-      max = pagingCount[id] + 2;
-    } else {
-      max = pagingCount[id] + 1;
-    }
+    if (pagingCount[id] === 1) max = pagingCount[id] + 2;else max = pagingCount[id] + 1;
     if (max > total) {
       max = total;
     }
@@ -4045,9 +3620,7 @@ ui.datatable = {
         classes = ui.datatable.nameBtnActive + ' ' + defaultClass + ' ' + activeClass;
         classes = classes.replace(re, ' ').replace(rex, '');
         html += '<button class="' + classes + '">' + pagingCount[id] + '</button>\n';
-      } else {
-        html += '<button class="' + defaultClass + '">' + i + '</button>\n';
-      }
+      } else html += '<button class="' + defaultClass + '">' + i + '</button>\n';
     }
     classes = ui.datatable.nameNext + ' ' + defaultClass;
     if (pagingCount[id] === total) {
@@ -4067,17 +3640,13 @@ ui.datatable = {
     var list;
     if (ui.hasClass(that, ui.datatable.nameListFiltered)) {
       list = ui.find('.' + ui.datatable.nameListContent + '.' + ui.datatable.nameFiltered, that);
-    } else {
-      list = ui.find('.' + ui.datatable.nameListContent, that);
-    }
+    } else list = ui.find('.' + ui.datatable.nameListContent, that);
     var paging = ui.find('.' + ui.datatable.namePaging, that);
     if (paging.length > 0) {
       if (pagingCount[id] === undefined || pagingCount[id] === 0) {
         pagingCount[id] = 1;
         createPaging(paging, id, list.length);
-      } else {
-        createPaging(paging, id, list.length);
-      }
+      } else createPaging(paging, id, list.length);
     } else {
       pagingCount[id] = 0;
       ui.addClass(that, ui.datatable.nameListShowAll);
@@ -4105,11 +3674,9 @@ ui.datatable = {
       for (var i = (pagingCount[id] - 1) * showCount[id]; i < pagingCount[id] * showCount[id]; i++) {
         evenList(list[i]);
       }
-    } else {
-      Array.prototype.forEach.call(list, function (item) {
-        evenList(item);
-      });
-    }
+    } else Array.prototype.forEach.call(list, function (item) {
+      evenList(item);
+    });
     list = '';
   }
   ui.on(document, 'click', '.' + ui.datatable.target + ' .' + ui.datatable.namePaging + ' button', function () {
@@ -4151,9 +3718,7 @@ ui.datatable = {
         ui.removeClass(el, ui.datatable.nameAsc + ' ' + ui.datatable.nameDesc);
         if (ui.globals.inlineSvg) {
           ui.find('.' + ui.datatable.nameIcon, el)[0] = ui.datatable.sortIcon;
-        } else {
-          ui.find('.' + ui.datatable.nameIcon + ' use', el)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
-        }
+        } else ui.find('.' + ui.datatable.nameIcon + ' use', el)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
       }
     });
     var sortType = this.getAttribute(ui.datatable.dataType);
@@ -4167,15 +3732,11 @@ ui.datatable = {
       if (sortType === ui.datatable.sortTypeNumber) {
         if (ui.globals.inlineSvg) {
           ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.descNumberIcon;
-        } else {
-          ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descNumberIcon);
-        }
+        } else ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descNumberIcon);
       } else {
         if (ui.globals.inlineSvg) {
           ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.descIcon;
-        } else {
-          ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descIcon);
-        }
+        } else ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descIcon);
       }
     } else {
       ui.removeClass(this, ui.datatable.nameDesc);
@@ -4183,15 +3744,11 @@ ui.datatable = {
       if (sortType === ui.datatable.sortTypeNumber) {
         if (ui.globals.inlineSvg) {
           ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.ascNumberIcon;
-        } else {
-          ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascNumberIcon);
-        }
+        } else ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascNumberIcon);
       } else {
         if (ui.globals.inlineSvg) {
           ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.ascIcon;
-        } else {
-          ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascIcon);
-        }
+        } else ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascIcon);
       }
     }
     var gridContainer = ui.find('.' + ui.datatable.nameContainer, that)[0];
@@ -4201,11 +3758,7 @@ ui.datatable = {
     var arr = [];
     var arrSorted = [];
     var sortIndex = this.getAttribute(ui.datatable.dataSort);
-    if (sortIndex === null || sortIndex === '' || sortIndex === '0') {
-      sortIndex = 0;
-    } else {
-      sortIndex = Number(sortIndex) - 1;
-    }
+    if (sortIndex === null || sortIndex === '' || sortIndex === '0') sortIndex = 0;else sortIndex = Number(sortIndex) - 1;
     var list = ui.find('.' + ui.datatable.nameListContent, temp);
     Array.prototype.forEach.call(list, function (el) {
       var val = el.getAttribute(ui.datatable.dataVal);
@@ -4219,21 +3772,13 @@ ui.datatable = {
       }
     });
     if (isAsc) {
-      if (sortType === ui.datatable.sortTypeNumber) {
-        arrSorted.sort(function (a, b) {
-          return b - a;
-        });
-      } else {
-        arrSorted.sort().reverse();
-      }
+      if (sortType === ui.datatable.sortTypeNumber) arrSorted.sort(function (a, b) {
+        return b - a;
+      });else arrSorted.sort().reverse();
     } else {
-      if (sortType === ui.datatable.sortTypeNumber) {
-        arrSorted.sort(function (a, b) {
-          return a - b;
-        });
-      } else {
-        arrSorted.sort();
-      }
+      if (sortType === ui.datatable.sortTypeNumber) arrSorted.sort(function (a, b) {
+        return a - b;
+      });else arrSorted.sort();
     }
     for (var i = 0; i < list.length; i++) {
       temp.appendChild(list[arr.indexOf(arrSorted[i])]);
@@ -4256,9 +3801,7 @@ ui.datatable = {
       if (firstLoading) {
         vals = loadedVals[id].split(',');
         if (el.type === 'checkbox' || el.type === 'radio') {
-          if (vals[i] !== '') {
-            el.checked = true;
-          }
+          if (vals[i] !== '') el.checked = true;
         } else if (el.tagName === 'SELECT') {
           Array.prototype.forEach.call(el.options, function (item) {
             if (customLowerCase(item.innerText) === vals[i]) {
@@ -4266,40 +3809,22 @@ ui.datatable = {
               el.selectedIndex = index;
             }
           });
-        } else {
-          el.value = vals[i];
-        }
+        } else el.value = vals[i];
       } else {
         var val = '';
         if (el.type === 'checkbox' || el.type === 'radio') {
-          if (el.checked) {
-            val = el.value;
-          }
-        } else {
-          val = el.value;
-        }
+          if (el.checked) val = el.value;
+        } else val = el.value;
         val = val.replace(/^\s+|\s+$/g, '');
         var sortType = el.getAttribute(ui.datatable.dataType);
-        if (sortType === null) {
-          sortType = '';
-        }
-        if (sortType === ui.datatable.sortTypeNumber) {
-          vals.push(val);
-        } else {
-          vals.push(customLowerCase(val));
-        }
+        if (sortType === null) sortType = '';
+        if (sortType === ui.datatable.sortTypeNumber) vals.push(val);else vals.push(customLowerCase(val));
       }
       var sortIndex = el.getAttribute(ui.datatable.dataIndex);
       if (sortIndex !== null) {
-        if (sortIndex === '' || sortIndex === '0') {
-          sortIndex = 0;
-        } else {
-          sortIndex = Number(sortIndex) - 1;
-        }
+        if (sortIndex === '' || sortIndex === '0') sortIndex = 0;else sortIndex = Number(sortIndex) - 1;
         indexes.push(sortIndex);
-      } else {
-        indexes.push('');
-      }
+      } else indexes.push('');
     });
     var list;
     if (vals.length > 0) {
@@ -4334,22 +3859,12 @@ ui.datatable = {
             Array.prototype.forEach.call(vals, function (item, j) {
               if (item !== '') {
                 if (indexes[j] === '') {
-                  if (contentVal.replace(/\|/g, ' ').match(item) !== null) {
-                    passed.push('pass');
-                  }
-                } else {
-                  if (contentArr[indexes[j]] === item) {
-                    passed.push('pass');
-                  }
-                }
+                  if (contentVal.replace(/\|/g, ' ').match(item) !== null) passed.push('pass');
+                } else if (contentArr[indexes[j]] === item) passed.push('pass');
               }
             });
           }
-          if (activeFilters.length === passed.length) {
-            ui.addClass(el, ui.datatable.nameFiltered);
-          } else {
-            ui.removeClass(el, ui.datatable.nameFiltered);
-          }
+          if (activeFilters.length === passed.length) ui.addClass(el, ui.datatable.nameFiltered);else ui.removeClass(el, ui.datatable.nameFiltered);
         });
       } else {
         ui.removeClass(that, ui.datatable.nameListFiltered);
@@ -4399,17 +3914,9 @@ ui.datatable = {
     Array.prototype.forEach.call(ui.find('.' + ui.datatable.nameListContent, that), function (el) {
       if (checked) {
         if (ui.hasClass(that, ui.datatable.nameListFiltered)) {
-          if (ui.hasClass(el, ui.datatable.nameFiltered)) {
-            checkFnc(el);
-          } else {
-            uncheckFnc(el);
-          }
-        } else {
-          checkFnc(el);
-        }
-      } else {
-        uncheckFnc(el);
-      }
+          if (ui.hasClass(el, ui.datatable.nameFiltered)) checkFnc(el);else uncheckFnc(el);
+        } else checkFnc(el);
+      } else uncheckFnc(el);
     });
   });
   ui.on(document, 'change', '.' + ui.datatable.target + ' .' + ui.datatable.nameCheck, function () {
@@ -4443,9 +3950,7 @@ ui.datatable = {
               showCount[id] = 0;
               pagingCount[id] = 1;
               ui.addClass(el, ui.datatable.nameListShowAll);
-            } else {
-              showCount[id] = gridShow.value;
-            }
+            } else showCount[id] = gridShow.value;
           }
         }
       } else {
@@ -4457,9 +3962,7 @@ ui.datatable = {
         });
       }
       if (loadedVals[id] !== undefined && loadedVals[id] !== null) {
-        if (loadedVals[id].length > 0) {
-          gridFilter(el, true);
-        }
+        if (loadedVals[id].length > 0) gridFilter(el, true);
       }
       ui.addClass(el, ui.datatable.targetLoaded);
       loadGrid(el, id);
@@ -4481,9 +3984,7 @@ ui.datatable = {
   });
   ui.onload(ui.datatable.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
-    if (ui.ajax.classNames.indexOf(ui.datatable.target) > -1) {
-      ui.datatable.Start();
-    }
+    if (ui.ajax.classNames.indexOf(ui.datatable.target) > -1) ui.datatable.Start();
   });
 })();
 ui.photoGallery = {
@@ -4536,9 +4037,7 @@ ui.photoGallery = {
     function checkImages() {
       var img = ui.find('a.' + ui.photoGallery.targetPhotos + ' img', gallery[galleryCounter]);
       var imgLength = img.length - 1;
-      if (imgLength < 0) {
-        return;
-      }
+      if (imgLength < 0) return;
       function imgLoader() {
         var newImg = new Image();
         newImg.src = img[imgCounter].src;
@@ -4568,15 +4067,11 @@ ui.photoGallery = {
     }
     function galleryFnc(e, that, call) {
       var parent = ui.closest(that, '.' + ui.photoGallery.targetGallery)[0];
-      if (parent === undefined) {
-        parent = ui.closest(that, '.' + ui.photoGallery.nameGalleryPassive)[0];
-      }
+      if (parent === undefined) parent = ui.closest(that, '.' + ui.photoGallery.nameGalleryPassive)[0];
       var images;
       if (call === undefined) {
         images = ui.find('a.' + ui.photoGallery.targetPhotos, parent);
-      } else {
-        images = ui.find('.' + ui.photoGallery.targetPhotos, parent);
-      }
+      } else images = ui.find('.' + ui.photoGallery.targetPhotos, parent);
       if (e.type === 'touchend') {
         if (ui.hasClass(that, ui.photoGallery.nameGalleryInfo)) {
           if (!ui.hasClass(that, ui.photoGallery.nameGalleryTouch)) {
@@ -4585,9 +4080,7 @@ ui.photoGallery = {
             return;
           }
           ui.removeClass(images, ui.photoGallery.nameGalleryTouch);
-        } else {
-          ui.removeClass(images, ui.photoGallery.nameGalleryTouch);
-        }
+        } else ui.removeClass(images, ui.photoGallery.nameGalleryTouch);
       }
       var pageYPos;
       if (ui.userAgents.mobile) {
@@ -4597,16 +4090,10 @@ ui.photoGallery = {
       var loadedTitles = [];
       Array.prototype.forEach.call(images, function (el) {
         var href = el.getAttribute('href');
-        if (href !== null) {
-          loadedImages.push(href);
-        } else {
-          loadedImages.push(el.getAttribute(ui.photoGallery.dataHref));
-        }
+        if (href !== null) loadedImages.push(href);else loadedImages.push(el.getAttribute(ui.photoGallery.dataHref));
         if (ui.hasClass(el, ui.photoGallery.nameGalleryInfo)) {
           loadedTitles.push(ui.find(ui.photoGallery.tagGalleryInfo, el)[0].innerHTML);
-        } else {
-          loadedTitles.push(null);
-        }
+        } else loadedTitles.push(null);
       });
       var previousOpened = ui.find('.' + ui.photoGallery.targetPreview);
       if (previousOpened.length > 0) {
@@ -4618,27 +4105,19 @@ ui.photoGallery = {
       var html = '<div class="' + ui.photoGallery.targetPreview + ' ' + ui.photoGallery.stylesPreview + '">' + '<div class="' + ui.photoGallery.namePreviewBg + '"></div>' + '<button class="' + ui.photoGallery.namePreviewClose + ' ' + ui.photoGallery.stylesCloseIcon + '">';
       if (ui.globals.inlineSvg) {
         html += '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.closeIcon;
-      } else {
-        html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.closeIcon + '"/>';
-      }
+      } else html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.closeIcon + '"/>';
       html += '</svg>' + '</button>' + '<button type="button" class="' + ui.photoGallery.namePreviewPrev + ' ' + ui.photoGallery.stylesPreviewBtn + '">';
       if (ui.globals.inlineSvg) {
         html += '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.prevIcon;
-      } else {
-        html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.prevIcon + '"/>';
-      }
+      } else html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.prevIcon + '"/>';
       html += '</svg>' + '</button>' + '<button type="button" class="' + ui.photoGallery.namePreviewNext + ' ' + ui.photoGallery.stylesPreviewBtn + '">';
       if (ui.globals.inlineSvg) {
         html += '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.nextIcon;
-      } else {
-        html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.nextIcon + '"/>';
-      }
+      } else html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.nextIcon + '"/>';
       html += '</svg>' + '</button>';
       if (ui.globals.inlineSvg) {
         html += '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.loaderIcon;
-      } else {
-        html += '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon + '"/>';
-      }
+      } else html += '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon + '"/>';
       html += '</svg>' + '<span class="' + ui.photoGallery.namePreviewInfo + ' ' + ui.photoGallery.stylesPreview + '"></span>' + '<img class="' + ui.photoGallery.stylesPreview + '">' + '</div>';
       ui.find('body')[0].insertAdjacentHTML('beforeend', html);
       var preview = ui.find('.' + ui.photoGallery.targetPreview);
@@ -4663,25 +4142,13 @@ ui.photoGallery = {
       };
       var notLoadedImage = function notLoadedImage() {
         ui.addClass(loader, ui.photoGallery.namePause);
-        if (ui.globals.inlineSvg) {
-          loader.innerHTML = ui.photoGallery.errorIcon;
-        } else {
-          ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.errorIcon);
-        }
+        if (ui.globals.inlineSvg) loader.innerHTML = ui.photoGallery.errorIcon;else ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.errorIcon);
       };
       newImg.onload = showImage;
       newImg.onerror = notLoadedImage;
       function toggleGalleryTools() {
-        if (index < 1) {
-          ui.find('.' + ui.photoGallery.namePreviewPrev)[0].style.display = 'none';
-        } else {
-          ui.find('.' + ui.photoGallery.namePreviewPrev)[0].style.display = 'block';
-        }
-        if (index >= loadedImages.length - 1) {
-          ui.find('.' + ui.photoGallery.namePreviewNext)[0].style.display = 'none';
-        } else {
-          ui.find('.' + ui.photoGallery.namePreviewNext)[0].style.display = 'block';
-        }
+        if (index < 1) ui.find('.' + ui.photoGallery.namePreviewPrev)[0].style.display = 'none';else ui.find('.' + ui.photoGallery.namePreviewPrev)[0].style.display = 'block';
+        if (index >= loadedImages.length - 1) ui.find('.' + ui.photoGallery.namePreviewNext)[0].style.display = 'none';else ui.find('.' + ui.photoGallery.namePreviewNext)[0].style.display = 'block';
         var info = ui.find('.' + ui.photoGallery.namePreviewInfo)[0];
         ui.removeClass(info, ui.photoGallery.nameOpen);
         setTimeout(function () {
@@ -4739,11 +4206,7 @@ ui.photoGallery = {
         ui.removeClass(img, ui.photoGallery.nameOpenEase);
         loader.style.display = 'block';
         ui.removeClass(loader, ui.photoGallery.namePause);
-        if (ui.globals.inlineSvg) {
-          loader.innerHTML = ui.photoGallery.loaderIcon;
-        } else {
-          ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon);
-        }
+        if (ui.globals.inlineSvg) loader.innerHTML = ui.photoGallery.loaderIcon;else ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon);
         toggleGalleryTools();
         setTimeout(function () {
           ui.removeClass(img, ui.photoGallery.nameOpen);
@@ -4778,17 +4241,11 @@ ui.photoGallery = {
       imgZoom = 1;
       ui.on(img, 'touchend click', function (e) {
         var touchesLength;
-        if (e.type === 'click') {
-          touchesLength = 1;
-        } else {
-          touchesLength = e.changedTouches.length;
-        }
+        if (e.type === 'click') touchesLength = 1;else touchesLength = e.changedTouches.length;
         if (touchesLength === 1) {
           var lastTouchEnd = 0;
           var now = new Date().getTime();
-          if (imgZoomMove) {
-            return;
-          }
+          if (imgZoomMove) return;
           if (e.type === 'touchend' && now - lastTouchEnd <= 200 && now - lastTouchEnd > 0 || e.type === 'click') {
             e.preventDefault();
             if (ui.hasClass(this, ui.photoGallery.namePreviewZoom)) {
@@ -4817,9 +4274,7 @@ ui.photoGallery = {
         }
       });
       ui.on(img, 'mousedown touchstart', function (e) {
-        if (!ui.hasClass(this, ui.photoGallery.namePreviewZoom)) {
-          return;
-        }
+        if (!ui.hasClass(this, ui.photoGallery.namePreviewZoom)) return;
         imgZoomMove = false;
         var sx, sy, getX, getY;
         if (e.type === 'mousedown') {
@@ -4897,16 +4352,12 @@ ui.photoGallery = {
       e.preventDefault();
       var target = this.getAttribute(ui.photoGallery.dataTarget);
       var count = this.getAttribute(ui.photoGallery.dataCount);
-      if (target === null) {
-        return;
-      }
+      if (target === null) return;
       if (count === null) {
         count = 0;
       } else {
         count = Number(count);
-        if (!count || count === '') {
-          count = 0;
-        }
+        if (!count || count === '') count = 0;
       }
       galleryFnc(e, ui.find(target + ' .' + ui.photoGallery.targetPhotos)[count], 'call');
     });
@@ -4964,9 +4415,7 @@ ui.imgUpload.Start = function () {
           }
         }
       }
-      if (allowed.length === 0) {
-        return;
-      }
+      if (allowed.length === 0) return;
       var readers = [];
       var img = [];
       var imgLoaded = [];
@@ -5042,9 +4491,7 @@ ui.imgUpload.Start = function () {
             ctx.fillStyle = ui.imgUpload.fillColor;
             ctx.fillRect(0, 0, c.width, c.height);
             ctx.drawImage(img[j], (c.width - w[j]) / 2, (c.height - h[j]) / 2, w[j], h[j]);
-          } else {
-            ctx.drawImage(img[j], 0, 0, w[j], h[j]);
-          }
+          } else ctx.drawImage(img[j], 0, 0, w[j], h[j]);
         }
         var data = c.toDataURL("image/jpeg");
         var size = data.split(',')[1].length;
@@ -5081,11 +4528,7 @@ ui.imgUpload.Start = function () {
           var listCont = ui.find('.' + ui.imgUpload.nameList, uploader)[0];
           ui.addClass(listCont, ui.imgUpload.nameOpen);
           var showTimer;
-          if (savedImgs) {
-            showTimer = ui.globals.slow;
-          } else {
-            showTimer = ui.globals.ease;
-          }
+          if (savedImgs) showTimer = ui.globals.slow;else showTimer = ui.globals.ease;
           setTimeout(function () {
             Array.prototype.forEach.call(ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList + '.' + ui.imgUpload.nameOpenEase, listCont), function (newImg, i) {
               setTimeout(function () {
@@ -5173,11 +4616,7 @@ ui.imgUpload.Start = function () {
       ev.preventDefault();
       ev.stopPropagation();
       var uploader = ui.closest(ev.target, '.' + ui.imgUpload.target)[0];
-      if (uploader === undefined) {
-        ui.removeClass(_this6, ui.imgUpload.nameDrop);
-      } else {
-        ui.addClass(_this6, ui.imgUpload.nameDrop);
-      }
+      if (uploader === undefined) ui.removeClass(_this6, ui.imgUpload.nameDrop);else ui.addClass(_this6, ui.imgUpload.nameDrop);
     });
   });
   ui.on('body', 'drop', function (e) {
@@ -5207,9 +4646,7 @@ ui.imgUpload.Start = function () {
     for (var j = 0; j < byteCharacters.length; j += sliceSize) {
       var slice = byteCharacters.slice(j, j + sliceSize);
       var byteNumbers = new Array(slice.length);
-      for (var i = 0; i < slice.length; i++) {
-        byteNumbers[i] = slice.charCodeAt(i);
-      }
+      for (var i = 0; i < slice.length; i++) byteNumbers[i] = slice.charCodeAt(i);
       var byteArray = new Uint8Array(byteNumbers);
       byteArrays.push(byteArray);
     }
@@ -5228,11 +4665,7 @@ ui.imgUpload.Start = function () {
         var file = ui.find('.' + ui.imgUpload.targetImages + ' img', el)[0];
         formData.append(ui.imgUpload.formDataID + '[' + i + ']', file.id);
         var tag = ui.find('.' + ui.imgUpload.targetTags, el)[0];
-        if (tag !== undefined) {
-          tag = tag.textContent;
-        } else {
-          tag = '';
-        }
+        if (tag !== undefined) tag = tag.textContent;else tag = '';
         formData.append(ui.imgUpload.formDataTag + '[' + i + ']', tag);
         var img = file.src.split(";");
         var imgType = img[0].split(":")[1];
@@ -5279,9 +4712,7 @@ ui.imgUpload.Start = function () {
     };
     if (ui.alerts === undefined) {
       var confirmed = confirm(ui.imgUpload.msgBeforeUpload);
-      if (confirmed) {
-        uploaderFnc();
-      }
+      if (confirmed) uploaderFnc();
     } else {
       ui.alerts.dialog({
         msg: ui.imgUpload.msgBeforeUpload,
@@ -5356,7 +4787,7 @@ ui.loadingMask = {
           maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
           ui.removeClass(maskHolders[i], ui.loadingMask.nameOpenEase);
           setTimeout(function () {
-            return ui.removeClass(maskHolders[i], ui.loadingMask.nameOpen);
+            ui.removeClass(maskHolders[i], ui.loadingMask.nameOpen);
           }, ui.globals.ease);
           maskItems[i] = l[i];
         } else {
@@ -5368,14 +4799,8 @@ ui.loadingMask = {
           html += '<svg ' + 'xmlns="http://www.w3.org/2000/svg"' + 'viewBox="' + ui.loadingMask.loadingBox + '"' + 'class="' + ui.loadingMask.stylesIcon + '" ' + 'style="height: ' + l[i].offsetHeight * ui.loadingMask.loadingSize + 'px;">' + ui.loadingMask.loadingPath + '</svg>' + '</span>' + '</span>';
           l[i].insertAdjacentHTML('afterbegin', html);
           ui.addClass(l[i], ui.loadingMask.target);
-          if (l[i].offsetWidth >= window.innerWidth - 15) {
-            sticky = true;
-          } else {
-            sticky = false;
-          }
-          if (sticky) {
-            ui.addClass(l[i], ui.loadingMask.nameSticky);
-          }
+          if (l[i].offsetWidth >= window.innerWidth - 15) sticky = true;else sticky = false;
+          if (sticky) ui.addClass(l[i], ui.loadingMask.nameSticky);
           maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
           ui.addClass(maskHolders[i], ui.loadingMask.nameOpen);
         }
@@ -5462,9 +4887,7 @@ ui.modal = {
           }
           if (window.innerWidth > userDefined) {
             win.style.width = userDefined + 'px';
-          } else {
-            win.style.width = window.innerWidth - ui.modal.winMargin * 2 + 'px';
-          }
+          } else win.style.width = window.innerWidth - ui.modal.winMargin * 2 + 'px';
         }
         minHeight = ui.modal.heightMinMD;
         if (type === 'lg') {
@@ -5503,9 +4926,7 @@ ui.modal = {
     ui.modal.close = function () {
       var win, bg, removeModal;
       win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow);
-      if (win.length === 0) {
-        return;
-      }
+      if (win.length === 0) return;
       ui.each(win, function () {
         ui.removeClass(this, ui.modal.nameShowEase);
       });
@@ -5532,12 +4953,8 @@ ui.modal = {
     };
     ui.modal.open = function (props) {
       var closeBtn, nonClosable, typeArr, type, created, temp, getSize, size, customSize, sizeArr, forms, bg, html, win, content;
-      if (props === undefined) {
-        return;
-      }
-      if (props.source === undefined) {
-        return;
-      }
+      if (props === undefined) return;
+      if (props.source === undefined) return;
       ui.modal.close();
       if (ui.userAgents.mobile) {
         pageYPos = window.pageYOffset;
@@ -5598,18 +5015,10 @@ ui.modal = {
               content.style.height = customSize[1] + 'px';
               content.setAttribute(ui.modal.dataCustomW, customSize[0]);
               content.setAttribute(ui.modal.dataCustomH, customSize[1]);
-            } else {
-              getSize();
-            }
-          } else {
-            getSize();
-          }
+            } else getSize();
+          } else getSize();
         }
-        if (nonClosable) {
-          ui.removeClass(win, ui.modal.nameClosable);
-        } else {
-          ui.addClass(win, ui.modal.nameClosable);
-        }
+        if (nonClosable) ui.removeClass(win, ui.modal.nameClosable);else ui.addClass(win, ui.modal.nameClosable);
         closeBtn = ui.find('.' + ui.modal.nameModalClose, win)[0];
         if (nonClosable) {
           if (closeBtn !== undefined) {
@@ -5620,9 +5029,7 @@ ui.modal = {
             closeBtn = '<button class="' + ui.modal.nameModalClose + ' ' + ui.modal.stylesCloseBtn + '">';
             if (ui.globals.inlineSvg) {
               closeBtn += '<svg class="' + ui.modal.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.modal.closeIcon;
-            } else {
-              closeBtn += '<svg class="' + ui.modal.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.modal.closeIcon + '"/>';
-            }
+            } else closeBtn += '<svg class="' + ui.modal.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.modal.closeIcon + '"/>';
             closeBtn += '</svg>' + '</button>';
             content.insertAdjacentHTML('afterbegin', closeBtn);
           }
@@ -5659,9 +5066,7 @@ ui.modal = {
       }
       if (props.type === undefined) {
         props.source = ui.find(props.source);
-        if (props.source[0] === undefined) {
-          return;
-        }
+        if (props.source[0] === undefined) return;
         created = ui.closest(props.source, '.' + ui.modal.targetWin);
         if (created.length > 0) {
           ui.addClass(created, ui.modal.nameActive);
@@ -5745,9 +5150,7 @@ ui.photoslide = {
     var slider, j, images, dataSrc, nav, navDots, re;
     images = ui.find('.' + ui.photoslide.target + ' img');
     ui.each(images, function (i) {
-      if (dataSrcLists[i] !== undefined) {
-        return;
-      }
+      if (dataSrcLists[i] !== undefined) return;
       dataSrc = images[i].getAttribute(ui.photoslide.dataSrc);
       slider = ui.closest(this, '.' + ui.photoslide.target)[0];
       ui.addClass(slider, ui.photoslide.nameLoaded);
@@ -5759,9 +5162,7 @@ ui.photoslide = {
         return;
       }
       re = new RegExp(ui.photoslide.rexFiles);
-      if (!dataSrcLists[i][0].match(re)) {
-        return;
-      }
+      if (!dataSrcLists[i][0].match(re)) return;
       images[i].removeAttribute(ui.photoslide.dataSrc);
       nav = ui.find('.' + ui.photoslide.nameNav, slider)[0];
       if (dataSrcLists[i].length > 1) {
@@ -5772,9 +5173,7 @@ ui.photoslide = {
           for (j = 0; j < dataSrcLists[i].length; j++) {
             if (j === 0) {
               navDots += '<' + ui.photoslide.tagNavDot + ' class="' + ui.photoslide.nameSelected + '"></' + ui.photoslide.tagNavDot + '>';
-            } else {
-              navDots += '<' + ui.photoslide.tagNavDot + '></' + ui.photoslide.tagNavDot + '>';
-            }
+            } else navDots += '<' + ui.photoslide.tagNavDot + '></' + ui.photoslide.tagNavDot + '>';
           }
           nav.insertAdjacentHTML('beforeend', navDots);
         }
@@ -5790,9 +5189,7 @@ ui.photoslide = {
       e.preventDefault();
       var slider, i, img, total, dots;
       slider = ui.closest(this, '.' + ui.photoslide.target)[0];
-      if (slider === undefined) {
-        return;
-      }
+      if (slider === undefined) return;
       img = ui.find('img', slider)[0];
       i = Array.prototype.slice.call(ui.find('.' + ui.photoslide.target)).indexOf(slider);
       if (count[i] === undefined) {
@@ -5834,9 +5231,7 @@ ui.photoslide = {
   };
   ui.onload(ui.photoslide.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
-    if (ui.ajax.classNames.indexOf(ui.photoslide.target) > -1) {
-      ui.photoslide.Init();
-    }
+    if (ui.ajax.classNames.indexOf(ui.photoslide.target) > -1) ui.photoslide.Init();
   });
 })();
 ui.sidebar = {
@@ -5907,18 +5302,12 @@ ui.sidebar = {
         indexArr = [];
         for (i = 0; i < importers.length; i++) {
           index = importers[i].getAttribute(ui.sidebar.dataImport);
-          if (index !== null && index !== '') {
-            indexArr.push(Number(index));
-          } else {
-            indexArr.push(i);
-          }
+          if (index !== null && index !== '') indexArr.push(Number(index));else indexArr.push(i);
         }
         for (i = 0; i < importers.length; i++) {
           moveFnc(importers[i], indexArr[i]);
         }
-      } else {
-        return;
-      }
+      } else return;
       panel = ui.find('.' + ui.sidebar.target + '.' + ui.sidebar.nameShowPrefix + position);
       content = ui.find('.' + ui.sidebar.nameContent, panel);
       filtered = html.filter(function (el) {
@@ -5953,13 +5342,9 @@ ui.sidebar = {
   };
   ui.onload(ui.sidebar.Start);
   ui.on(window, 'resize', function () {
-    if (window.innerWidth === getScrollPos) {
-      return;
-    }
+    if (window.innerWidth === getScrollPos) return;
     var panel = ui.find('.' + ui.sidebar.target + '.' + ui.sidebar.nameOpen);
-    if (panel.length > 0) {
-      ui.sidebar.close(panel);
-    }
+    if (panel.length > 0) ui.sidebar.close(panel);
     getScrollPos = window.innerWidth;
   });
 })();
@@ -5993,9 +5378,7 @@ ui.tooltip = {
   var removeTimer, removeTimer2x, pageTouchmoveTimer, tooltipOpenedTimer, touchControl, isScrolling;
   ui.tooltip.Close = function () {
     var that = ui.find('.' + ui.tooltip.target)[0];
-    if (that === undefined) {
-      return;
-    }
+    if (that === undefined) return;
     clearTimeout(removeTimer);
     removeTimer = setTimeout(function () {
       ui.removeClass(that, ui.tooltip.nameOpenEase);
@@ -6236,11 +5619,7 @@ ui.weather = {
     function dateFnc() {
       date = new Date();
       day = date.getDay();
-      if (day === 0) {
-        day = 6;
-      } else {
-        day -= 1;
-      }
+      if (day === 0) day = 6;else day -= 1;
       dateText = ui.weather.days[day];
       day = day.toString();
       if (day.length === 1) {
@@ -6273,17 +5652,11 @@ ui.weather = {
         graphs = ui.find('.' + ui.weather.target + ' .' + ui.weather.nameGraphs + '[' + ui.weather.dataDay + ']');
         ui.each(graphs, function () {
           sunPos = this.getAttribute(ui.weather.dataDay);
-          if (sunPos === null || sunPos === '') {
-            return;
-          }
+          if (sunPos === null || sunPos === '') return;
           sunPos = sunPos.split(',');
-          if (sunPos.length !== 2) {
-            return;
-          }
+          if (sunPos.length !== 2) return;
           sunrise = sunPos[0].split(':');
-          if (sunrise.length !== 2) {
-            return;
-          }
+          if (sunrise.length !== 2) return;
           if (sunrise[0].length === 1) {
             sunrise[0] = '0' + sunrise[0];
           }
@@ -6291,9 +5664,7 @@ ui.weather = {
             sunrise[1] = '0' + sunrise[1];
           }
           sunset = sunPos[1].split(':');
-          if (sunset.length !== 2) {
-            return;
-          }
+          if (sunset.length !== 2) return;
           if (sunset[0].length === 1) {
             sunset[0] = '0' + sunset[0];
           }
@@ -6304,14 +5675,10 @@ ui.weather = {
           that = ui.closest(this, '.' + ui.weather.target)[0];
           if (hour === sunrise[0] && minute < sunrise[1] || hour < sunrise[0] || hour === sunset[0] && minute > sunset[1] || hour > sunset[0]) {
             ui.addClass(that, ui.weather.nameNight);
-            if (sun !== undefined) {
-              sun.style.removeProperty('left');
-            }
+            if (sun !== undefined) sun.style.removeProperty('left');
           } else {
             ui.removeClass(that, ui.weather.nameNight);
-            if (sun !== undefined) {
-              sun.style.left = parseInt(hour - sunrise[0]) * 100 / (sunset[0] - sunrise[0]) + '%';
-            }
+            if (sun !== undefined) sun.style.left = parseInt(hour - sunrise[0]) * 100 / (sunset[0] - sunrise[0]) + '%';
           }
         });
       }
@@ -6322,9 +5689,7 @@ ui.weather = {
   };
   ui.onload(ui.weather.Start);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
-    if (ui.ajax.classNames.indexOf(ui.weather.target) > -1) {
-      ui.weather.Init();
-    }
+    if (ui.ajax.classNames.indexOf(ui.weather.target) > -1) ui.weather.Init();
   });
 })();
 ui.donutChart = {
@@ -6352,20 +5717,14 @@ ui.donutChart.Start = function () {
           var percent = item.getAttribute(ui.donutChart.dataPercent);
           arrPercent.push(percent);
           var dasharray = Math.round(percent * 4.4);
-          if (dasharray < 0) {
-            dasharray = 0;
-          }
+          if (dasharray < 0) dasharray = 0;
           item.setAttribute('stroke-dasharray', dasharray + ', 440');
           if (j > 0) {
             var angle = Math.floor(arrAngle[j - 1] + arrPercent[j - 1] * 3.6);
             arrAngle.push(angle);
             item.setAttribute('transform', 'rotate(' + angle + ' 80 80)');
-          } else {
-            arrAngle.push(0);
-          }
-          if (ui.userAgents.ie) {
-            el.style.height = el.offsetWidth + 'px';
-          }
+          } else arrAngle.push(0);
+          if (ui.userAgents.ie) el.style.height = el.offsetWidth + 'px';
           ui.addClass(item, ui.donutChart.nameLoaded);
         });
         arrPercent = [];
@@ -6390,14 +5749,10 @@ ui.donutChart.Start = function () {
         msg = ui.find(ui.donutChart.tagMsg, chart)[0];
       }
       var msgTitle = msg.getAttribute(ui.donutChart.dataMsg);
-      if (msgTitle === null) {
-        msg.setAttribute(ui.donutChart.dataMsg, msg.innerHTML);
-      }
+      if (msgTitle === null) msg.setAttribute(ui.donutChart.dataMsg, msg.innerHTML);
       var title = this.getAttribute(ui.donutChart.dataTitle);
       setTimeout(function () {
-        if (title !== null && title !== '') {
-          msg.innerHTML = title;
-        }
+        if (title !== null && title !== '') msg.innerHTML = title;
         ui.addClass(_this8, ui.donutChart.nameSelected);
       }, 0);
     }
@@ -6406,9 +5761,7 @@ ui.donutChart.Start = function () {
 ui.onload(ui.donutChart.Start);
 ui.on(document, ui.globals.eventDomChange, ui.donutChart.Start);
 ui.on(document, ui.globals.eventAjaxCallback, function () {
-  if (ui.ajax.classNames.indexOf(ui.donutChart.target) > -1) {
-    ui.donutChart.Init();
-  }
+  if (ui.ajax.classNames.indexOf(ui.donutChart.target) > -1) ui.donutChart.Init();
 });
 ui.lineChart = {
   target: 'ui-line-chart-holder',
@@ -6463,24 +5816,19 @@ ui.lineChart = {
   dataOnlyRepeated: 'data-ui-only-repeated'
 };
 ui.lineChart.Start = function () {
-  var charts, lines, data, x, y, yMax, yMin, link, size, rows, rowsHeight, col, posX, posY, html, type, pathStart, circles, total, name;
   ui.lineChart.Init = function (method, resizer) {
+    var charts;
     if (method === ui.lineChart.nameLoaded) {
       charts = ui.find('.' + ui.lineChart.target + '.' + ui.lineChart.nameLoaded);
     } else if (method === ui.globals.eventDomChange) {
       charts = ui.find('.' + ui.lineChart.target + ':not(.' + ui.lineChart.nameLoaded + '):not(.' + ui.lineChart.nameResized + ')');
-    } else {
-      charts = ui.find('.' + ui.lineChart.target + ':not(.' + ui.lineChart.nameLoaded + ')');
-    }
-    if (charts.length === 0) {
-      return;
-    }
+    } else charts = ui.find('.' + ui.lineChart.target + ':not(.' + ui.lineChart.nameLoaded + ')');
+    if (charts.length === 0) return;
+    var html = '';
     ui.each(charts, function () {
-      lines = ui.find('.' + ui.lineChart.nameLines, this);
-      if (lines.length === 0) {
-        return;
-      }
-      data = [];
+      var lines = ui.find('.' + ui.lineChart.nameLines, this);
+      if (lines.length === 0) return;
+      var data = [];
       data.name = [];
       data.color = [];
       if (resizer !== undefined && resizer) {
@@ -6488,9 +5836,9 @@ ui.lineChart.Start = function () {
       } else {
         ui.addClass(this, ui.lineChart.nameLoaded);
       }
-      size = this.getAttribute(ui.lineChart.dataSize);
-      rows = ui.lineChart.rows;
-      rowsHeight = ui.lineChart.rowsHeight;
+      var size = this.getAttribute(ui.lineChart.dataSize);
+      var rows = ui.lineChart.rows;
+      var rowsHeight = ui.lineChart.rowsHeight;
       if (size !== null && size !== '') {
         size = size.split(',');
         if (!isNaN(size[0]) && !isNaN(size[1])) {
@@ -6500,22 +5848,18 @@ ui.lineChart.Start = function () {
       }
       data.width = this.offsetWidth;
       data.height = rows * rowsHeight;
-      x = this.getAttribute(ui.lineChart.dataX);
-      if (x !== null && x !== '') {
-        data.x = x.split(',');
-      } else {
-        return;
-      }
+      var x = this.getAttribute(ui.lineChart.dataX);
+      if (x !== null && x !== '') data.x = x.split(',');else return;
       x = data.x;
-      yMax = [];
+      var yMax = [];
       Array.prototype.forEach.call(lines, function (el, i) {
         data[i] = [];
         data[i].y = [];
         data[i].links = [];
         Array.prototype.forEach.call(ui.find(ui.lineChart.tagLines, el), function (item) {
-          y = item.getAttribute(ui.lineChart.dataY);
+          var y = item.getAttribute(ui.lineChart.dataY);
           data[i].y.push(y);
-          link = item.getAttribute(ui.lineChart.dataLink);
+          var link = item.getAttribute(ui.lineChart.dataLink);
           if (link !== null && link !== '') {
             data[i].links.push(link);
           } else data[i].links.push('');
@@ -6530,7 +5874,7 @@ ui.lineChart.Start = function () {
       yMax = yMax.sort(function (a, b) {
         return b - a;
       });
-      yMin = yMax[yMax.length - 1];
+      var yMin = yMax[yMax.length - 1];
       if (yMin.indexOf('.') === 0) yMin = Math.floor(yMin);
       yMin = parseInt(yMin);
       if (parseInt(yMax[1]) > 0) {
@@ -6551,14 +5895,14 @@ ui.lineChart.Start = function () {
             data.stepArr.push(m * data.step);
           }
         }
-      } else {
-        data.step = false;
-      }
-      col = data.width - (ui.lineChart.right + ui.lineChart.left);
+      } else data.step = false;
+      var col = data.width - (ui.lineChart.right + ui.lineChart.left);
       var rowLength = x.length - 1;
       if (rowLength === 0) rowLength = 1;
       col = col / rowLength;
       html += '<g class="' + ui.lineChart.nameGridX + '">';
+      var posX = 0;
+      var posY = 0;
       for (var k = 0; k < x.length; k++) {
         posX = k * col + ui.lineChart.left;
         if (ui.lineChart.showGridText) {
@@ -6606,24 +5950,22 @@ ui.lineChart.Start = function () {
         }
       }
       html += '</g>';
-      circles = '';
-      pathStart = [];
+      var circles = '';
+      var pathStart = [];
       html += '<g>';
       Array.prototype.forEach.call(lines, function (el, j) {
         var paths = '';
-        y = data[j].y;
+        var y = data[j].y;
         if (j > ui.lineChart.colors.length - 1) {
           data.color.push(ui.lineChart.colors[j - ui.lineChart.colors.length]);
-        } else {
-          data.color.push(ui.lineChart.colors[j]);
-        }
+        } else data.color.push(ui.lineChart.colors[j]);
         var noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
         noCircles = noCircles === null || noCircles === '' ? false : true;
         var noRepeatedCircles = el.getAttribute(ui.lineChart.dataNoRepeatedCircles);
         noRepeatedCircles = noRepeatedCircles === null || noRepeatedCircles === '' ? false : true;
         var onlyRepeated = el.getAttribute(ui.lineChart.dataOnlyRepeated);
         onlyRepeated = onlyRepeated === null || onlyRepeated === '' ? false : true;
-        type = el.getAttribute(ui.lineChart.dataType);
+        var type = el.getAttribute(ui.lineChart.dataType);
         if (type === null || type === undefined) {
           type = '';
         }
@@ -6738,7 +6080,7 @@ ui.lineChart.Start = function () {
           createPaths(paths, true);
           createFilledPaths(randomId, paths, true);
         }
-        name = el.getAttribute(ui.lineChart.dataName);
+        var name = el.getAttribute(ui.lineChart.dataName);
         if (name !== null && name !== '') {
           data.name.push(name);
         } else data.name.push('');
@@ -6750,7 +6092,7 @@ ui.lineChart.Start = function () {
       if (ui.lineChart.showInfo) {
         html += '<ul class="' + ui.lineChart.nameInfo + '">';
         for (var p = 0; p < lines.length; p++) {
-          total = 0;
+          var total = 0;
           for (var n = 0; n < data[p].y.length; n++) {
             total += parseInt(data[p].y[n]);
           }
@@ -6811,9 +6153,7 @@ ui.pieChart = {
   chartsResizer = function chartsResizer() {
     var chart, elems;
     chart = ui.find('.' + ui.pieChart.target);
-    if (chart.length < 1) {
-      return;
-    }
+    if (chart.length < 1) return;
     ui.each(chart, function () {
       elems = ui.find(ui.pieChart.tagDatasHolder, this)[0];
       elems.style.height = elems.offsetWidth + 'px';
@@ -6823,21 +6163,17 @@ ui.pieChart = {
     ui.pieChart.Init = function () {
       var chart, elems, deg, textDeg, loadFnc, arr, fill, percent, html, title, customTitle, msgHolder;
       chart = ui.find('.' + ui.pieChart.target);
-      if (chart.length < 1) {
-        return;
-      }
+      if (chart.length < 1) return;
       arr = [];
       loadFnc = function loadFnc(parent, that, i) {
         var prevPercents = ui.find(ui.pieChart.tagPiesHolder, that);
         if (prevPercents.length > 0) {
-          for (var _i = 0; _i < prevPercents.length; _i++) {
-            that.removeChild(prevPercents[_i]);
+          for (var k = 0; k < prevPercents.length; k++) {
+            that.removeChild(prevPercents[k]);
           }
         }
         percent = that.getAttribute(ui.pieChart.dataPercent);
-        if (percent === null && percent === '') {
-          percent = 0;
-        }
+        if (percent === null && percent === '') percent = 0;
         fill = that.getAttribute(ui.pieChart.dataFill);
         if (fill !== null && fill !== '') {
           that.style.color = fill;
@@ -6849,24 +6185,16 @@ ui.pieChart = {
           html = '<' + ui.pieChart.tagPiesHolder + ' class="' + ui.pieChart.namePieRight + '">' + '<' + ui.pieChart.tagPie + ' style="-ms-transform: rotate(' + deg + 'deg); transform: rotate(' + deg + 'deg);">' + '</' + ui.pieChart.tagPie + '>' + '</' + ui.pieChart.tagPiesHolder + '>';
         }
         that.insertAdjacentHTML('beforeEnd', html);
-        if (arr[i - 1] === undefined) {
-          arr[i - 1] = 0;
-        }
+        if (arr[i - 1] === undefined) arr[i - 1] = 0;
         textDeg = arr[i - 1] - 90 + deg / 2;
         title = that.getAttribute(ui.pieChart.dataTitle);
         html = '<' + ui.pieChart.tagMsg + ' style="-ms-transform: rotate(' + textDeg + 'deg) translateY(-50%); transform: rotate(' + textDeg + 'deg) translateY(-50%);">' + '<' + ui.pieChart.tagTitle + ' style="-ms-transform: rotate(' + -textDeg + 'deg); transform: rotate(' + -textDeg + 'deg);"';
         if (title !== null && title !== '') {
           html += ' title="' + title + '"';
-          if (ui.tooltip !== undefined) {
-            html += ' ' + ui.tooltip.dataTooltip;
-          }
+          if (ui.tooltip !== undefined) html += ' ' + ui.tooltip.dataTooltip;
         }
         customTitle = that.getAttribute(ui.pieChart.dataCustom);
-        if (customTitle !== null && customTitle !== '') {
-          html += '>' + customTitle;
-        } else {
-          html += '>' + percent + '%';
-        }
+        if (customTitle !== null && customTitle !== '') html += '>' + customTitle;else html += '>' + percent + '%';
         html += '</' + ui.pieChart.tagTitle + '>' + '</' + ui.pieChart.tagMsg + '>';
         msgHolder = ui.find(ui.pieChart.tagMsgHolder, parent)[0];
         if (msgHolder === undefined) {
@@ -6880,9 +6208,7 @@ ui.pieChart = {
             that.style.transform = 'rotate(' + arr[i - 1] + 'deg)';
             that.style.msTransform = 'rotate(' + arr[i - 1] + 'deg)';
             arr[i] = arr[i - 1] + deg;
-          } else {
-            arr[i] = deg;
-          }
+          } else arr[i] = deg;
         }
       };
       ui.each(chart, function () {
@@ -6916,9 +6242,7 @@ ui.pieChart = {
   ui.on(window, 'resize', chartsResizer);
   ui.on(document, ui.globals.eventDomChange, chartsResizer);
   ui.on(document, ui.globals.eventAjaxCallback, function () {
-    if (ui.ajax.classNames.indexOf(ui.pieChart.target) > -1) {
-      ui.pieChart.Init();
-    }
+    if (ui.ajax.classNames.indexOf(ui.pieChart.target) > -1) ui.pieChart.Init();
   });
 })();
 ui.map = {
@@ -6933,9 +6257,7 @@ ui.map = {
 ui.map.Start = function () {
   var map, arr, data, items, opacity;
   map = ui.find('.' + ui.map.target);
-  if (map.length === 0) {
-    return;
-  }
+  if (map.length === 0) return;
   arr = [];
   ui.each(map, function (i) {
     arr[i] = [];

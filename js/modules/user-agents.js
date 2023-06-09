@@ -110,23 +110,18 @@ ui.onload(() => {
 
     if (navigator.userAgentData !== undefined) { // new usage
 
-        if (navigator.userAgentData?.platform.indexOf("Win") !== -1) {
+        if (navigator.userAgentData.platform.indexOf("Win") !== -1) {
             classes.push(ui.userAgents.nameWindows);
         }
 
-        if (navigator.userAgentData?.platform.indexOf("Mac") !== -1) {
+        if (navigator.userAgentData.platform.indexOf("Mac") !== -1) {
             classes.push(ui.userAgents.nameMac);
         }
 
     } else { // audit usage
 
-        if (navigator.appVersion.indexOf('Win') !== -1) {
-            classes.push(ui.userAgents.nameWindows);
-        }
-
-        if (navigator.appVersion.indexOf('Mac') !== -1) {
-            classes.push(ui.userAgents.nameMac);
-        }
+        if (navigator.appVersion.indexOf('Win') !== -1) classes.push(ui.userAgents.nameWindows);
+        if (navigator.appVersion.indexOf('Mac') !== -1) classes.push(ui.userAgents.nameMac);
 
     }
 
@@ -183,10 +178,7 @@ ui.onload(() => {
     for (let i = 0; i < classes.length; i++) {
 
         allClasses += classes[i];
-
-        if (i + 1 !== classes.length) {
-            allClasses += ' ';
-        }
+        if (i + 1 !== classes.length) allClasses += ' ';
     }
 
     ui.addClass(ui.userAgents.target, allClasses);

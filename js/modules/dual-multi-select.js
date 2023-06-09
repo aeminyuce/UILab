@@ -30,12 +30,8 @@ ui.dualMultiSelect = {
 
                 item => {
 
-                    if (ui.userAgents.mobile) {
-                        item.selected = true;
-
-                    } else {
-                        item.selected = false;
-                    }
+                    if (ui.userAgents.mobile) item.selected = true;
+                    else item.selected = false;
 
                 });
 
@@ -43,12 +39,8 @@ ui.dualMultiSelect = {
 
                 item => {
 
-                    if (ui.userAgents.mobile || isSubmit !== undefined) {
-                        item.selected = true;
-
-                    } else {
-                        item.selected = false;
-                    }
+                    if (ui.userAgents.mobile || isSubmit !== undefined) item.selected = true;
+                    else item.selected = false;
 
                 });
 
@@ -85,7 +77,7 @@ ui.dualMultiSelect = {
                                 arr.push(index);
                                 arrStart.push(index);
 
-                            } else { arr.push(''); }
+                            } else arr.push('');
 
                         });
 
@@ -130,18 +122,12 @@ ui.dualMultiSelect = {
                             if (userArr.length > 0) { // move user defined options from source to target by index
 
                                 const index = Number(arr.indexOf(userArr[i]));
-
-                                if (index > -1) {
-                                    selects[1].appendChild(options[index]);
-                                }
+                                if (index > -1) selects[1].appendChild(options[index]);
 
                             } else { // move options selected with attribute from source to target
 
                                 const selected = item.getAttribute('selected');
-
-                                if (selected !== null) {
-                                    selects[1].appendChild(item);
-                                }
+                                if (selected !== null) selects[1].appendChild(item);
 
                             }
 
@@ -169,12 +155,8 @@ ui.dualMultiSelect = {
                 // only one option in list
                 const firstIndex = Number(sourceList[0].getAttribute(ui.dualMultiSelect.dataIndex));
 
-                if (i > firstIndex) {
-                    selects[0].appendChild(that);
-
-                } else {
-                    selects[0].insertBefore(that, sourceList[0]);
-                }
+                if (i > firstIndex) selects[0].appendChild(that);
+                else selects[0].insertBefore(that, sourceList[0]);
 
             } else {
 
@@ -219,7 +201,7 @@ ui.dualMultiSelect = {
 
             function (e) {
 
-                if (!e.isTrusted) { return; } // prevent trigger change event listeners
+                if (!e.isTrusted) return; // prevent trigger change event listeners
 
                 let that;
                 const options = Array.prototype.slice.call(e.target); // get option list
@@ -241,12 +223,8 @@ ui.dualMultiSelect = {
                 const parent = ui.closest(that, '.' + ui.dualMultiSelect.nameSelectMulti + ' select[multiple]')[0];
                 const dir = Array.prototype.slice.call(multi).indexOf(parent);
 
-                if (dir === 0) { // move from source to target select
-                    multi[1].appendChild(that);
-
-                } else { // move from target to source select
-                    movetoSource(that, multi);
-                }
+                if (dir === 0) multi[1].appendChild(that); // move from source to target select
+                else movetoSource(that, multi); // move from target to source select
 
                 resetOptions(multi); // reset options
 
@@ -292,12 +270,8 @@ ui.dualMultiSelect = {
                                     selected = item.getAttribute('selected');
                                     if (selected !== null) { // move options to target that selected with attribute
 
-                                        if (targetList.length === 0) {
-                                            selects[1].appendChild(item);
-
-                                        } else {
-                                            selects[1].insertBefore(item, targetList[index]);
-                                        }
+                                        if (targetList.length === 0) selects[1].appendChild(item);
+                                        else selects[1].insertBefore(item, targetList[index]);
                                     }
 
                                 });
@@ -346,11 +320,7 @@ ui.dualMultiSelect = {
         ui.globals.eventAjaxCallback,
 
         () => {
-
-            if (ui.ajax.classNames.indexOf(ui.dualMultiSelect.target) > 0) {
-                ui.dualMultiSelect.Init();
-            }
-
+            if (ui.ajax.classNames.indexOf(ui.dualMultiSelect.target) > 0) ui.dualMultiSelect.Init();
         });
 
 })();

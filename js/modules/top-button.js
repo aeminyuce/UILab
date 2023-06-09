@@ -33,12 +33,9 @@ ui.topButton = {
         if (ui.globals.inlineSvg) {
             html += '<svg class="' + ui.topButton.stylesIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.topButton.icon;
 
-        } else {
-            html += '<svg class="' + ui.topButton.stylesIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.topButton.icon + '"/>';
-        }
+        } else html += '<svg class="' + ui.topButton.stylesIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.topButton.icon + '"/>';
 
         html += '</svg>' +
-
             '</button>';
 
         var topBtn;
@@ -64,16 +61,13 @@ ui.topButton = {
                 } else {
 
                     topBtn = ui.find('.' + ui.topButton.target)[0];
+
                     if (topBtn !== undefined) {
 
                         ui.removeClass(topBtn, ui.topButton.nameOpenEase);
 
                         setTimeout(() => {
-
-                            if (topBtn.parentNode !== null) {
-                                topBtn.parentNode.removeChild(topBtn);
-                            }
-
+                            if (topBtn.parentNode !== null) topBtn.parentNode.removeChild(topBtn);
                         }, ui.globals.slow);
 
                     }

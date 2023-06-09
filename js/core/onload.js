@@ -28,27 +28,19 @@ ui.onload = (callback) => {
 
             }
 
-        } else { return; }
+        } else return;
 
     };
 
     if (document.attachEvent) {
 
-        if (document.readyState === 'complete') {
-            callback();
-
-        } else {
-            handlerFnc(document, 'DOMContentLoaded');
-        }
+        if (document.readyState === 'complete') callback();
+        else handlerFnc(document, 'DOMContentLoaded');
 
     } else {
 
-        if (document.readyState !== 'loading') {
-            callback();
-
-        } else {
-            handlerFnc(document, 'DOMContentLoaded');
-        }
+        if (document.readyState !== 'loading') callback();
+        else handlerFnc(document, 'DOMContentLoaded');
 
     }
 

@@ -33,7 +33,7 @@ ui.iconlist.Start = () => {
     const list = ui.find('.' + ui.iconlist.target);
     const tools = ui.find('.' + ui.iconlist.nameTools + ' .' + ui.iconlist.nameBtn);
 
-    if (list[0] === undefined || tools[0] === undefined) { return; }
+    if (list[0] === undefined || tools[0] === undefined) return;
 
     let totalIcons = 0;
 

@@ -49,12 +49,8 @@
             menuInner.style.transform = 'translateX(-100%)';
 
             // toggle classnames
-            if (onload) {
-                setTimeout(toggleClasses, ui.globals.slow);
-
-            } else {
-                toggleClasses();
-            }
+            if (onload) setTimeout(toggleClasses, ui.globals.slow);
+            else toggleClasses();
 
         }
 

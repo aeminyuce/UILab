@@ -47,7 +47,7 @@ ui.pieChart = {
         var chart, elems;
 
         chart = ui.find('.' + ui.pieChart.target);
-        if (chart.length < 1) { return; }
+        if (chart.length < 1) return;
 
         ui.each(chart,
 
@@ -67,26 +67,23 @@ ui.pieChart = {
             var chart, elems, deg, textDeg, loadFnc, arr, fill, percent, html, title, customTitle, msgHolder;
 
             chart = ui.find('.' + ui.pieChart.target);
-            if (chart.length < 1) { return; }
+            if (chart.length < 1) return;
 
             arr = [];
 
             loadFnc = function (parent, that, i) {
 
                 const prevPercents = ui.find(ui.pieChart.tagPiesHolder, that);
-
                 if (prevPercents.length > 0) { // remove previous loaded pies
 
-                    for (let i = 0; i < prevPercents.length; i++) {
-                        that.removeChild(prevPercents[i]);
+                    for (let k = 0; k < prevPercents.length; k++) {
+                        that.removeChild(prevPercents[k]);
+
                     }
                 }
 
                 percent = that.getAttribute(ui.pieChart.dataPercent);
-
-                if (percent === null && percent === '') {
-                    percent = 0;
-                }
+                if (percent === null && percent === '') percent = 0;
 
                 fill = that.getAttribute(ui.pieChart.dataFill);
 
@@ -111,19 +108,19 @@ ui.pieChart = {
                             '</' + ui.pieChart.tagPiesHolder + '>';
 
                 } else {
+
                     html = '<' + ui.pieChart.tagPiesHolder + ' class="' + ui.pieChart.namePieRight + '">' +
 
                                 '<' + ui.pieChart.tagPie + ' style="-ms-transform: rotate(' + deg + 'deg); transform: rotate(' + deg + 'deg);">' +
                                 '</' + ui.pieChart.tagPie + '>' +
 
                             '</' + ui.pieChart.tagPiesHolder + '>';
+
                 }
 
                 that.insertAdjacentHTML('beforeEnd', html);
 
-                if (arr[i - 1] === undefined) {
-                    arr[i - 1] = 0;
-                }
+                if (arr[i - 1] === undefined) arr[i - 1] = 0;
 
                 textDeg = arr[i - 1] - 90 + (deg / 2);
                 title = that.getAttribute(ui.pieChart.dataTitle);
@@ -135,21 +132,14 @@ ui.pieChart = {
                 if (title !== null && title !== '') { // add titles for dataTitle attributes
 
                     html += ' title="' + title + '"';
-
-                    if (ui.tooltip !== undefined) { // Optional!
-                        html += ' ' + ui.tooltip.dataTooltip;
-                    }
+                    if (ui.tooltip !== undefined) html += ' ' + ui.tooltip.dataTooltip; // Optional!
 
                 }
 
                 customTitle = that.getAttribute(ui.pieChart.dataCustom);
 
-                if (customTitle !== null && customTitle !== '') { // show custom titles optional!
-                    html += '>' + customTitle;
-
-                } else {
-                    html += '>' + percent + '%';
-                }
+                if (customTitle !== null && customTitle !== '') html += '>' + customTitle; // show custom titles optional!
+                else html += '>' + percent + '%';
 
                 html += '</' + ui.pieChart.tagTitle + '>' +
                     '</' + ui.pieChart.tagMsg + '>';
@@ -172,6 +162,7 @@ ui.pieChart = {
                 if (elems.length > 0) {
 
                     i = Array.prototype.slice.call(elems).indexOf(that);
+
                     if (i > 0) {
 
                         that.style.transform = 'rotate(' + arr[i - 1] + 'deg)';
@@ -179,7 +170,7 @@ ui.pieChart = {
 
                         arr[i] = arr[i - 1] + deg;
 
-                    } else { arr[i] = deg; }
+                    } else arr[i] = deg;
 
                 }
 
@@ -244,11 +235,7 @@ ui.pieChart = {
         ui.globals.eventAjaxCallback,
 
         () => {
-
-            if (ui.ajax.classNames.indexOf(ui.pieChart.target) > -1) {
-                ui.pieChart.Init();
-            }
-
+            if (ui.ajax.classNames.indexOf(ui.pieChart.target) > -1) ui.pieChart.Init();
         });
 
 })();

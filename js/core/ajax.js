@@ -13,7 +13,7 @@ ui.ajax = function (props) {
         props.callback
     */
 
-    if (props.url === undefined) { return; }
+    if (props.url === undefined) return;
 
     if (props.type === undefined || props.type === '') {
         props.type = 'GET'; // send strings
@@ -39,10 +39,8 @@ ui.ajax = function (props) {
     }
 
     // check params in url
-    if (props.data !== '' && props.data !== undefined) {
-        ui.ajax.requests[i].send(props.data);
-
-    } else { ui.ajax.requests[i].send(); }
+    if (props.data !== '' && props.data !== undefined) ui.ajax.requests[i].send(props.data);
+    else ui.ajax.requests[i].send();
 
     // xhr loading
     ui.ajax.requests[i].onload = () => {
@@ -58,12 +56,8 @@ ui.ajax = function (props) {
 
             ui.ajax.data = ui.ajax.requests[i].responseText.match(re);
 
-            if (ui.ajax.data === null) {
-                ui.ajax.data = '';
-
-            } else {
-                ui.ajax.data = ui.ajax.data.toString();
-            }
+            if (ui.ajax.data === null) ui.ajax.data = '';
+            else ui.ajax.data = ui.ajax.data.toString();
 
             // get list of classnames
             ui.ajax.classNames += ui.ajax.requests[i].responseText.match(/\sclass=\"+[\w\s\d\-\_\=]+\"[\s\>]/g);
@@ -95,9 +89,7 @@ ui.ajax = function (props) {
             ui.ajax.classNames = '';
             ui.ajax.data = '';
 
-        } else { // error
-            props.callback('error', '', ui.ajax.requests[i]);
-        }
+        } else props.callback('error', '', ui.ajax.requests[i]); // error
 
     };
 

@@ -136,12 +136,8 @@ ui.sidebar = {
 
                         index = importers[i].getAttribute(ui.sidebar.dataImport);
 
-                        if (index !== null && index !== '') {
-                            indexArr.push(Number(index));
-
-                        } else {
-                            indexArr.push(i);
-                        }
+                        if (index !== null && index !== '') indexArr.push(Number(index));
+                        else indexArr.push(i);
 
                     }
 
@@ -149,7 +145,7 @@ ui.sidebar = {
                         moveFnc(importers[i], indexArr[i]);
                     }
 
-                } else { return; }
+                } else return;
 
                 panel = ui.find('.' + ui.sidebar.target + '.' + ui.sidebar.nameShowPrefix + position);
                 content = ui.find('.' + ui.sidebar.nameContent, panel);
@@ -219,14 +215,11 @@ ui.sidebar = {
 
         () => {
 
-            if (window.innerWidth === getScrollPos) { return; } // close only horizontal resizing
+            if (window.innerWidth === getScrollPos) return; // close only horizontal resizing
 
             var panel = ui.find('.' + ui.sidebar.target + '.' + ui.sidebar.nameOpen);
 
-            if (panel.length > 0) {
-                ui.sidebar.close(panel);
-            }
-
+            if (panel.length > 0) ui.sidebar.close(panel);
             getScrollPos = window.innerWidth;
 
         });

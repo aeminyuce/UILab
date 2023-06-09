@@ -19,7 +19,7 @@ ui.icons = {
 ui.icons.Start = () => {
 
     // svg icon reference replacement for IE
-    if (!ui.userAgents.ie) { return; }
+    if (!ui.userAgents.ie) return;
 
     let iconsList = ui.find(ui.icons.tagIcon);
 
@@ -79,9 +79,5 @@ ui.on(document,
     ui.globals.eventAjaxCallback,
 
     () => {
-
-        if (ui.ajax.classNames.indexOf(ui.formSpinner.nameIcon) > -1) {
-            ui.icons.Start();
-        }
-
+        if (ui.ajax.classNames.indexOf(ui.formSpinner.nameIcon) > -1) ui.icons.Start();
     });

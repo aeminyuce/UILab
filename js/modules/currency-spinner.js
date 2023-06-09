@@ -35,12 +35,8 @@ ui.currencySpinner = {
                 let number = s.replace(regDecimal, '');
                 let decimal = s.match(regDecimal);
 
-                if (decimal === null) {
-                    decimal = '0';
-
-                } else {
-                    decimal = decimal[0];
-                }
+                if (decimal === null) decimal = '0';
+                else decimal = decimal[0];
 
                 number = Number(number.replace(regClear, ''));
                 decimal = Number(decimal.replace(regClear, ''));
@@ -50,9 +46,7 @@ ui.currencySpinner = {
                 s.push(number);
                 s.push(decimal);
 
-            } else {
-                s = Number(s.replace(/(\s)|(\.)|(\,+\d+)|(\,)/g, ''));
-            }
+            } else s = Number(s.replace(/(\s)|(\.)|(\,+\d+)|(\,)/g, ''));
 
             return s;
 
@@ -86,7 +80,7 @@ ui.currencySpinner = {
                         val[0] += step[0];
                         val[1] += step[1];
 
-                    } else { val += step; }
+                    } else val += step;
 
                 } else {
 
@@ -164,10 +158,7 @@ ui.currencySpinner = {
                 } else {
 
                     char = e.keyCode;
-
-                    if (char === 116) { // f5
-                        isRefresh = true;
-                    }
+                    if (char === 116) isRefresh = true; // f5
 
                 }
 
@@ -211,14 +202,9 @@ ui.currencySpinner = {
                 }
 
                 if (ui.currencySpinner.decimals) {
+                    if (e.type === 'blur') currencyChange(this);
 
-                    if (e.type === 'blur') {
-                        currencyChange(this);
-                    }
-
-                } else {
-                    currencyChange(this);
-                }
+                } else currencyChange(this);
 
                 if (e.type === 'blur') {
 
@@ -245,7 +231,7 @@ ui.currencySpinner = {
                     e.preventDefault();
                     ui.trigger('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameInput + ' input', 'blur');
 
-                } else { return; }
+                } else return;
 
             });
 

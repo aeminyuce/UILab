@@ -109,9 +109,11 @@ ui.loadingMask = {
                     status = 'hide';
 
                     maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
+                    ui.removeClass(maskHolders[i], ui.loadingMask.nameOpenEase);
 
-                    ui.removeClass(maskHolders[i], ui.loadingMask.nameOpenEase)
-                    setTimeout(() => ui.removeClass(maskHolders[i], ui.loadingMask.nameOpen), ui.globals.ease);
+                    setTimeout(() => {
+                        ui.removeClass(maskHolders[i], ui.loadingMask.nameOpen);
+                    }, ui.globals.ease);
 
                     maskItems[i] = l[i];
 
@@ -141,14 +143,10 @@ ui.loadingMask = {
 
                     ui.addClass(l[i], ui.loadingMask.target);
 
-                    if (l[i].offsetWidth >= (window.innerWidth - 15)) {
-                        sticky = true;
+                    if (l[i].offsetWidth >= (window.innerWidth - 15)) sticky = true;
+                    else sticky = false;
 
-                    } else { sticky = false; }
-
-                    if (sticky) {
-                        ui.addClass(l[i], ui.loadingMask.nameSticky);
-                    }
+                    if (sticky) ui.addClass(l[i], ui.loadingMask.nameSticky);
 
                     maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
                     ui.addClass(maskHolders[i], ui.loadingMask.nameOpen);

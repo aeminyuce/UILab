@@ -22,7 +22,7 @@ ui.countdown = {
     ui.countdown.Start = () => {
 
         const countdown = ui.find('.' + ui.countdown.target);
-        if (ui.countdown.length === 0) { return; }
+        if (ui.countdown.length === 0) return;
 
         const arr = [];
 
@@ -96,14 +96,13 @@ ui.countdown = {
                     const day = ui.find('.' + ui.countdown.nameDay, el)[0];
                     if (day !== undefined) {
 
-                        if (dateLeft[0] === '0') { day.textContent = '00'; } else {
+                        if (dateLeft[0] === '0') {
+                            day.textContent = '00';
 
-                            if (dateLeft[0].length === 1) {
-                                day.textContent = '0' + dateLeft[0];
+                        } else {
 
-                            } else {
-                                day.textContent = dateLeft[0];
-                            }
+                            if (dateLeft[0].length === 1) day.textContent = '0' + dateLeft[0];
+                            else day.textContent = dateLeft[0];
 
                         }
 
@@ -112,14 +111,13 @@ ui.countdown = {
                     const hour = ui.find('.' + ui.countdown.nameHour, el)[0];
                     if (hour !== undefined) {
 
-                        if (dateLeft[1] === '0') { hour.textContent = '00'; } else {
+                        if (dateLeft[1] === '0') {
+                            hour.textContent = '00';
 
-                            if (dateLeft[1].length === 1) {
-                                hour.textContent = '0' + dateLeft[1];
+                        } else {
 
-                            } else {
-                                hour.textContent = dateLeft[1];
-                            }
+                            if (dateLeft[1].length === 1) hour.textContent = '0' + dateLeft[1];
+                            else hour.textContent = dateLeft[1];
 
                         }
 
@@ -128,14 +126,13 @@ ui.countdown = {
                     const minute = ui.find('.' + ui.countdown.nameMinute, el)[0];
                     if (minute !== undefined) {
 
-                        if (dateLeft[2] === '0') { minute.textContent = '00'; } else {
+                        if (dateLeft[2] === '0') {
+                            minute.textContent = '00';
 
-                            if (dateLeft[2].length === 1) {
-                                minute.textContent = '0' + dateLeft[2];
+                        } else {
 
-                            } else {
-                                minute.textContent = dateLeft[2];
-                            }
+                            if (dateLeft[2].length === 1) minute.textContent = '0' + dateLeft[2];
+                            else minute.textContent = dateLeft[2];
 
                         }
 
@@ -144,14 +141,13 @@ ui.countdown = {
                     const sec = ui.find('.' + ui.countdown.nameSecond, el)[0];
                     if (sec !== undefined) {
 
-                        if (dateLeft[3] === '0') { sec.textContent = '00'; } else {
+                        if (dateLeft[3] === '0') {
+                            sec.textContent = '00';
 
-                            if (dateLeft[3].length === 1) {
-                                sec.textContent = '0' + dateLeft[3];
+                        } else {
 
-                            } else {
-                                sec.textContent = dateLeft[3];
-                            }
+                            if (dateLeft[3].length === 1) sec.textContent = '0' + dateLeft[3];
+                            else sec.textContent = dateLeft[3];
 
                         }
 
@@ -171,11 +167,7 @@ ui.countdown = {
         ui.globals.eventAjaxCallback,
 
         () => {
-
-            if (ui.ajax.classNames.indexOf(ui.countdown.target) > -1) {
-                ui.countdown.Start();
-            }
-
+            if (ui.ajax.classNames.indexOf(ui.countdown.target) > -1) ui.countdown.Start();
         });
 
 })();
