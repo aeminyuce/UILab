@@ -234,6 +234,7 @@ ui.lineChart.Start = () => {
 
                 // check column stepping
                 data.step = this.getAttribute(ui.lineChart.dataStep);
+
                 if (data.step !== null && data.step !== '' && data.step !== '0') {
 
                     if (isNaN(data.step)) {
@@ -553,21 +554,20 @@ ui.lineChart.Start = () => {
 
                             }
 
-                            // add curves
                             if (type.indexOf(ui.lineChart.curved) > -1) { // curved
 
-                                data.percent = parseInt((ui.lineChart.curveSize * (n * col)) / 100);
+                                const percent = parseInt((ui.lineChart.curveSize * (n * col)) / 100);
 
                                 if (n === 1) { // start curves
 
-                                    paths += ' C ' + (col + data.percent) + ' ' + (posY - data.percent) + ',' +
-                                        ' ' + (col + data.percent) + ' ' + posY + ',' +
-                                        ' ' + posX + ' ' + posY;
+                                    paths += ' C ' + (col + percent) + ' ' + (posY - percent) + ',' +
+                                            ' ' + (col + percent) + ' ' + posY + ',' +
+                                            ' ' + posX + ' ' + posY;
 
                                 } else if (n > 0) { // other curves
 
-                                    paths += ' S ' + ((n * col) - data.percent) + ' ' + posY + ',' +
-                                        ' ' + posX + ' ' + posY;
+                                    paths += ' S ' + ((n * col) - percent) + ' ' + posY + ',' +
+                                            ' ' + posX + ' ' + posY;
 
                                 }
 
@@ -575,7 +575,7 @@ ui.lineChart.Start = () => {
 
                             // create circles and paths
                             if (noRepeatedCircles) {
-                                if (y[n - 1] !== y[n] || y[n] !== y[n + 1]) createCircles(n);
+                                if (n < y.length - 1 && (y[n - 1] !== y[n] || y[n] !== y[n + 1])) createCircles(n);
 
                             } else if (onlyRepeated) {
 
@@ -596,13 +596,17 @@ ui.lineChart.Start = () => {
 
                                 ) {
 
-                                    if (y[n - 1] !== y[n] || y[n] !== y[n + 1]) createCircles(n); // only start & finish circles
-                                    repeatedPaths[repeatedIndex] = paths;
+                                    if (n > 0 && n < y.length - 1 && y[n - 1] === y[n] && y[n] !== y[n + 1] && y[n + 1] === y[n + 2]) { // multi&multi
 
-                                    if (n > 0 && y[n - 1] === y[n] && y[n] !== y[n + 1] && y[n + 1] === y[n + 2]) { // detect multiple after multiple
+                                        repeatedPaths[repeatedIndex] = paths + ' L ' + (((n + 1) * col) + ui.lineChart.left) + ' ' + posY;
 
                                         clearBeforeRepeat();
                                         repeatedMultiple = true;
+
+                                    } else { // not multi&multi
+
+                                        repeatedPaths[repeatedIndex] = paths;
+                                        if (y[n - 1] !== y[n]) createCircles(n); // only start circles
 
                                     }
 

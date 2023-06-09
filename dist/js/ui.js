@@ -6691,26 +6691,28 @@ ui.lineChart.Start = function () {
             pathStart.y = posY;
           }
           if (type.indexOf(ui.lineChart.curved) > -1) {
-            data.percent = parseInt(ui.lineChart.curveSize * (n * col) / 100);
+            var percent = parseInt(ui.lineChart.curveSize * (n * col) / 100);
             if (n === 1) {
-              paths += ' C ' + (col + data.percent) + ' ' + (posY - data.percent) + ',' + ' ' + (col + data.percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
+              paths += ' C ' + (col + percent) + ' ' + (posY - percent) + ',' + ' ' + (col + percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
             } else if (n > 0) {
-              paths += ' S ' + (n * col - data.percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
+              paths += ' S ' + (n * col - percent) + ' ' + posY + ',' + ' ' + posX + ' ' + posY;
             }
           } else if (n > 0) paths += ' L ' + posX + ' ' + posY;
           if (noRepeatedCircles) {
-            if (y[n - 1] !== y[n] || y[n] !== y[n + 1]) createCircles(n);
+            if (n < y.length - 1 && (y[n - 1] !== y[n] || y[n] !== y[n + 1])) createCircles(n);
           } else if (onlyRepeated) {
             var clearBeforeRepeat = function clearBeforeRepeat() {
               paths = '';
               repeatedIndex += 1;
             };
             if (n === 0 && y[n] === y[n + 1] || n > 0 && y[n - 1] === y[n] || n < y.length - 1 && y[n + 1] === y[n] || n === y.length - 1 && y[n - 1] === y[n]) {
-              if (y[n - 1] !== y[n] || y[n] !== y[n + 1]) createCircles(n);
-              repeatedPaths[repeatedIndex] = paths;
-              if (n > 0 && y[n - 1] === y[n] && y[n] !== y[n + 1] && y[n + 1] === y[n + 2]) {
+              if (n > 0 && n < y.length - 1 && y[n - 1] === y[n] && y[n] !== y[n + 1] && y[n + 1] === y[n + 2]) {
+                repeatedPaths[repeatedIndex] = paths + ' L ' + ((n + 1) * col + ui.lineChart.left) + ' ' + posY;
                 clearBeforeRepeat();
                 repeatedMultiple = true;
+              } else {
+                repeatedPaths[repeatedIndex] = paths;
+                if (y[n - 1] !== y[n]) createCircles(n);
               }
               if (n === 0 && posX === pathStart.x) repeatedFromStart = true;
               if (y[n - 1] !== y[n] && y[n] === y[n + 1]) filledPathCuts[repeatedIndex] = n * col + ui.lineChart.left;

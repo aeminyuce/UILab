@@ -306,7 +306,7 @@
                                 <li data-ui-y="120"></li>
                                 <li data-ui-y="35"></li>
                             </ul>
-                            <ul class="ui-line-chart" data-ui-name="2x Multi" data-ui-only-repeated="true">
+                            <ul class="ui-line-chart" data-ui-name="Multi&Multi" data-ui-only-repeated="true">
                                 <li data-ui-y="25"></li>
                                 <li data-ui-y="110"></li>
                                 <li data-ui-y="110"></li>
@@ -365,7 +365,7 @@
                                 <li data-ui-y="120"></li>
                                 <li data-ui-y="35"></li>
                             </ul>
-                            <ul class="ui-line-chart" data-ui-name="2x Multi" data-ui-type="curved filled" data-ui-only-repeated="true">
+                            <ul class="ui-line-chart" data-ui-name="Multi&Multi" data-ui-type="curved filled" data-ui-only-repeated="true">
                                 <li data-ui-y="25"></li>
                                 <li data-ui-y="110"></li>
                                 <li data-ui-y="110"></li>
