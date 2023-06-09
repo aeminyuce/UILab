@@ -118,11 +118,11 @@ ui.lineChart.Start = () => {
 
         let html = '';
 
-        ui.each(charts,
+        Array.prototype.forEach.call(charts,
 
-            function () {
+            el => {
 
-                const lines = ui.find('.' + ui.lineChart.nameLines, this);
+                const lines = ui.find('.' + ui.lineChart.nameLines, el);
                 if (lines.length === 0) return;
 
                 let data = [];
@@ -131,14 +131,14 @@ ui.lineChart.Start = () => {
                 data.color = [];
 
                 if (resizer !== undefined && resizer) {
-                    ui.addClass(this, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
+                    ui.addClass(el, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
 
                 } else {
-                    ui.addClass(this, ui.lineChart.nameLoaded);
+                    ui.addClass(el, ui.lineChart.nameLoaded);
                 }
 
                 // calculate height of chart
-                let size = this.getAttribute(ui.lineChart.dataSize);
+                let size = el.getAttribute(ui.lineChart.dataSize);
 
                 let rows = ui.lineChart.rows;
                 let rowsHeight = ui.lineChart.rowsHeight;
@@ -155,11 +155,11 @@ ui.lineChart.Start = () => {
 
                 }
 
-                data.width = this.offsetWidth;
+                data.width = el.offsetWidth;
                 data.height = rows * rowsHeight;
 
                 // read all x parameters
-                let x = this.getAttribute(ui.lineChart.dataX);
+                let x = el.getAttribute(ui.lineChart.dataX);
 
                 if (x !== null && x !== '') data.x = x.split(','); else return;
                 x = data.x;
@@ -230,7 +230,7 @@ ui.lineChart.Start = () => {
                 html = '<svg style="width: ' + data.width + 'px; height: ' + data.svgHeight + 'px;">';
 
                 // check column stepping
-                data.step = this.getAttribute(ui.lineChart.dataStep);
+                data.step = el.getAttribute(ui.lineChart.dataStep);
 
                 if (data.step !== null && data.step !== '' && data.step !== '0') {
 
@@ -321,10 +321,10 @@ ui.lineChart.Start = () => {
                 html += '</g>' +
                     '<g class="' + ui.lineChart.nameGridY + '">';
 
-                let prefix = this.getAttribute(ui.lineChart.dataPrefix);
+                let prefix = el.getAttribute(ui.lineChart.dataPrefix);
                 if (prefix === null || size === '') prefix = '';
 
-                let suffix = this.getAttribute(ui.lineChart.dataSuffix);
+                let suffix = el.getAttribute(ui.lineChart.dataSuffix);
                 if (suffix === null || size === '') suffix = '';
 
                 for (let l = 0; l <= rows; l++) {
@@ -663,7 +663,7 @@ ui.lineChart.Start = () => {
                 html += circles + '</g></svg>';
 
                 if (data.width === 0) {
-                    ui.removeClass(this, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
+                    ui.removeClass(el, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
                 }
 
                 // create info
@@ -706,13 +706,13 @@ ui.lineChart.Start = () => {
                 }
 
                 // parse html
-                const svg = ui.find('svg', this)[0];
-                if (svg) this.removeChild(svg);
+                const svg = ui.find('svg', el)[0];
+                if (svg) el.removeChild(svg);
 
-                const info = ui.find('.' + ui.lineChart.nameInfo, this)[0];
-                if (info) this.removeChild(info);
+                const info = ui.find('.' + ui.lineChart.nameInfo, el)[0];
+                if (info) el.removeChild(info);
 
-                this.insertAdjacentHTML('beforeEnd', html);
+                el.insertAdjacentHTML('beforeEnd', html);
 
                 // empty variables
                 data = [];

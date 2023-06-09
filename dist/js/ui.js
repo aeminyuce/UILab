@@ -5825,18 +5825,18 @@ ui.lineChart.Start = function () {
     } else charts = ui.find('.' + ui.lineChart.target + ':not(.' + ui.lineChart.nameLoaded + ')');
     if (charts.length === 0) return;
     var html = '';
-    ui.each(charts, function () {
-      var lines = ui.find('.' + ui.lineChart.nameLines, this);
+    Array.prototype.forEach.call(charts, function (el) {
+      var lines = ui.find('.' + ui.lineChart.nameLines, el);
       if (lines.length === 0) return;
       var data = [];
       data.name = [];
       data.color = [];
       if (resizer !== undefined && resizer) {
-        ui.addClass(this, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
+        ui.addClass(el, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
       } else {
-        ui.addClass(this, ui.lineChart.nameLoaded);
+        ui.addClass(el, ui.lineChart.nameLoaded);
       }
-      var size = this.getAttribute(ui.lineChart.dataSize);
+      var size = el.getAttribute(ui.lineChart.dataSize);
       var rows = ui.lineChart.rows;
       var rowsHeight = ui.lineChart.rowsHeight;
       if (size !== null && size !== '') {
@@ -5846,9 +5846,9 @@ ui.lineChart.Start = function () {
           rowsHeight = size[1];
         }
       }
-      data.width = this.offsetWidth;
+      data.width = el.offsetWidth;
       data.height = rows * rowsHeight;
-      var x = this.getAttribute(ui.lineChart.dataX);
+      var x = el.getAttribute(ui.lineChart.dataX);
       if (x !== null && x !== '') data.x = x.split(',');else return;
       x = data.x;
       var yMax = [];
@@ -5885,7 +5885,7 @@ ui.lineChart.Start = function () {
       if (ui.lineChart.showInfo) data.svgHeight += ui.lineChart.showInfoSpace;
       if (ui.lineChart.showGridText) data.svgHeight += ui.lineChart.gridYTextSpace;
       html = '<svg style="width: ' + data.width + 'px; height: ' + data.svgHeight + 'px;">';
-      data.step = this.getAttribute(ui.lineChart.dataStep);
+      data.step = el.getAttribute(ui.lineChart.dataStep);
       if (data.step !== null && data.step !== '' && data.step !== '0') {
         if (isNaN(data.step)) {
           data.step = false;
@@ -5925,9 +5925,9 @@ ui.lineChart.Start = function () {
         }
       }
       html += '</g>' + '<g class="' + ui.lineChart.nameGridY + '">';
-      var prefix = this.getAttribute(ui.lineChart.dataPrefix);
+      var prefix = el.getAttribute(ui.lineChart.dataPrefix);
       if (prefix === null || size === '') prefix = '';
-      var suffix = this.getAttribute(ui.lineChart.dataSuffix);
+      var suffix = el.getAttribute(ui.lineChart.dataSuffix);
       if (suffix === null || size === '') suffix = '';
       for (var l = 0; l <= rows; l++) {
         posY = l * (data.height - (ui.lineChart.top + ui.lineChart.bottom)) / rows + ui.lineChart.top;
@@ -6087,7 +6087,7 @@ ui.lineChart.Start = function () {
       });
       html += circles + '</g></svg>';
       if (data.width === 0) {
-        ui.removeClass(this, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
+        ui.removeClass(el, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
       }
       if (ui.lineChart.showInfo) {
         html += '<ul class="' + ui.lineChart.nameInfo + '">';
@@ -6106,11 +6106,11 @@ ui.lineChart.Start = function () {
         }
         html += '</ul>';
       }
-      var svg = ui.find('svg', this)[0];
-      if (svg) this.removeChild(svg);
-      var info = ui.find('.' + ui.lineChart.nameInfo, this)[0];
-      if (info) this.removeChild(info);
-      this.insertAdjacentHTML('beforeEnd', html);
+      var svg = ui.find('svg', el)[0];
+      if (svg) el.removeChild(svg);
+      var info = ui.find('.' + ui.lineChart.nameInfo, el)[0];
+      if (info) el.removeChild(info);
+      el.insertAdjacentHTML('beforeEnd', html);
       data = [];
       html = '';
     });
