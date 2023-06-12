@@ -7,7 +7,7 @@ const config = {
     output: {
         filename: 'js/[name].[contenthash].js',
         chunkFilename: 'js/[name].[contenthash].js',
-        publicPath: '/', // for page refresh for BrowserRouter
+        publicPath: 'auto', // for page refresh for BrowserRouter
         clean: true, // clean the output directory before emit.
     },
     optimization: {

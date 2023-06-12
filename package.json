@@ -21,7 +21,7 @@
   "license": "MIT",
   "scripts": {
     "build:update": "npm update && npm run build",
-    "build": "webpack serve --mode production",
+    "build": "webpack --mode production",
     "start:update": "npm update && npm run start",
     "start": "webpack serve --mode development",
     "test": "mocha tests/unit/*.test.js --require @babel/register",
