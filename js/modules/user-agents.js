@@ -70,7 +70,7 @@ ui.onload(() => {
 
     if (ua.indexOf('chrome') > -1) {
 
-        classes.push(ui.userAgents.nameChrome);
+        if (ua.indexOf('edge') === -1 && ua.indexOf('edg') === -1) classes.push(ui.userAgents.nameChrome);
         out(ui.userAgents.nameSafari);
 
     }
