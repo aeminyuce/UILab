@@ -45,7 +45,7 @@ const PieChartHolder = function (
 
 interface PieChartItemProps {
 
-    percent: number,
+    percent: any,
     fill: string,
 
     customName?: string,

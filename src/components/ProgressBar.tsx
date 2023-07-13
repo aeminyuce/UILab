@@ -33,7 +33,7 @@ const ProgressBar = function (
 
 interface ProgressBarItemProps {
 
-    percent: number,
+    percent: any,
 
     prefix?: string,
     suffix?: string,
