@@ -223,6 +223,7 @@ interface FormSelectProps {
     onChange?: React.ReactEventHandler,
     onInput?: React.ReactEventHandler,
 
+    title?: string,
     name?: string,
     tabIndex?: number,
     value?: any,
@@ -245,7 +246,7 @@ interface FormSelectProps {
 
 const FormSelect = function (
 
-    { children, onChange, onInput, name, tabIndex, value, defaultValue, disabled, light, inline, required, myRef, noease, id, className, style }:FormSelectProps) {
+    { children, onChange, onInput, title, name, tabIndex, value, defaultValue, disabled, light, inline, required, myRef, noease, id, className, style }:FormSelectProps) {
 
         // classes
         const setClassName = className ? ' ' + className : '';
@@ -272,7 +273,7 @@ const FormSelect = function (
         return (
             <div className={classes} style={style}>
                 <Icon path src={icon_angle_down} />
-                <select id={id} ref={myRef} name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} className={childrenClasses} disabled={disabled}
+                <select id={id} ref={myRef} title={title} name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} className={childrenClasses} disabled={disabled}
                     onChange={onChange} onInput={onInput}>
                         {children}
                 </select>
