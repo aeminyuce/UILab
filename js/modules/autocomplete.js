@@ -42,9 +42,7 @@ ui.autocomplete = {
 
 ui.autocomplete.Start = () => {
 
-    let
-        formEventListeners,
-        autocompleteRequests = [];
+    let formEventListeners;
 
     const customLowerCase = function (string) { // custom lowercase
 
@@ -139,146 +137,124 @@ ui.autocomplete.Start = () => {
 
                 if (val !== '') {
 
-                    const getVal = parent.getAttribute(ui.autocomplete.dataVal);
-                    if (getVal !== null && getVal !== '') {
+                    // create list
+                    const createList = (response) => {
 
-                        // create list
-                        const createList = (response) => {
+                        if (response.length > 0) {
 
-                            response = JSON.parse(response);
+                            ui.addClass(parent, ui.autocomplete.nameOpen);
 
-                            if (response.length !== 'undefined') {
+                            setTimeout(() => {
+                                ui.addClass(parent, ui.autocomplete.nameOpenEase);
+                            }, 0);
 
-                                let k = 0;
+                            ui.removeClass(parent, ui.autocomplete.nameMenuTop);
+                            list[0].innerHTML = '';
 
-                                ui.addClass(parent, ui.autocomplete.nameOpen);
+                            let k = 0;
 
-                                setTimeout(() => {
-                                    ui.addClass(parent, ui.autocomplete.nameOpenEase);
-                                }, 0);
+                            Array.prototype.forEach.call(response,
 
-                                ui.removeClass(parent, ui.autocomplete.nameMenuTop);
-                                list[0].innerHTML = '';
+                                item => {
 
-                                Array.prototype.forEach.call(response,
+                                    let txt = '';
 
-                                    item => {
+                                    if (item !== null) {
 
-                                        const key = item[getVal];
-                                        let txt = '';
+                                        if (typeof item === 'boolean') return; // booleans not supported!
 
-                                        if (key !== null) {
+                                        let modified = item;
 
-                                            if (typeof key === 'boolean') return; // booleans not supported!
+                                        if (typeof item === 'number') {
+                                            modified = modified.toString().match(val, 'g');
 
-                                            let modified = key;
+                                        } else {
 
-                                            if (typeof key === 'number') {
-                                                modified = modified.toString().match(val, 'g');
-
-                                            } else {
-
-                                                modified = customLowerCase(modified);
-                                                modified = modified.match(val, 'g');
-
-                                            }
-
-                                            if (modified !== null) {
-
-                                                clearTimeout(timerShowLines);
-                                                timerShowLines = setTimeout(() => { // create dropdown
-
-                                                    const offset = parent.getBoundingClientRect();
-
-                                                    const tHeight = parent.offsetHeight;
-                                                    const dHeight = list[0].offsetHeight;
-
-                                                    if (offset.top + parseInt(tHeight + dHeight) >= window.innerHeight) {
-
-                                                        if (offset.top - parseInt(tHeight + dHeight) + tHeight > 0) {
-                                                            ui.addClass(parent, ui.autocomplete.nameMenuTop);
-
-                                                        } else list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight) - window.innerHeight) - ui.autocomplete.scrollbarSize) + 'px';
-
-                                                    }
-
-                                                }, 10);
-
-                                                // show max. number of lines: 5
-                                                k += 1;
-                                                if (k > 5) return;
-
-                                                // create lines
-                                                if (typeof key === 'number') {
-
-                                                    for (let i = 0; i < key.toString().length; i++) {
-
-                                                        if (i === key.toString().indexOf(modified)) { txt += '<' + ui.autocomplete.tagHighlight + '>'; }
-                                                        if (i === (key.toString().indexOf(modified) + val.length)) { txt += '</' + ui.autocomplete.tagHighlight + '>'; }
-
-                                                        txt += key.toString().charAt(i);
-
-                                                    }
-
-                                                } else {
-
-                                                    for (let j = 0; j < key.length; j++) {
-
-                                                        if (j === customLowerCase(key).indexOf(modified)) { txt += '<' + ui.autocomplete.tagHighlight + '>'; }
-                                                        if (j === (customLowerCase(key).indexOf(modified) + val.length)) { txt += '</' + ui.autocomplete.tagHighlight + '>'; }
-
-                                                        txt += key.charAt(j);
-
-                                                    }
-
-                                                }
-
-                                                list[0].insertAdjacentHTML(
-                                                    'beforeend',
-                                                    '<li>' + txt + '</li>'
-                                                );
-
-                                            }
+                                            modified = customLowerCase(modified);
+                                            modified = modified.match(val, 'g');
 
                                         }
 
-                                    });
+                                        if (modified !== null) {
 
-                            }
+                                            clearTimeout(timerShowLines);
+                                            timerShowLines = setTimeout(() => { // create dropdown
 
-                            response = '';
+                                                const offset = parent.getBoundingClientRect();
+
+                                                const tHeight = parent.offsetHeight;
+                                                const dHeight = list[0].offsetHeight;
+
+                                                if (offset.top + parseInt(tHeight + dHeight) >= window.innerHeight) {
+
+                                                    if (offset.top - parseInt(tHeight + dHeight) + tHeight > 0) {
+                                                        ui.addClass(parent, ui.autocomplete.nameMenuTop);
+
+                                                    } else list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight) - window.innerHeight) - ui.autocomplete.scrollbarSize) + 'px';
+
+                                                }
+
+                                            }, 10);
+
+                                            // show max. number of lines: 5
+                                            k += 1;
+                                            if (k > 5) return;
+
+                                            // create lines
+                                            if (typeof item === 'number') {
+
+                                                for (let i = 0; i < item.toString().length; i++) {
+
+                                                    if (i === item.toString().indexOf(modified)) { txt += '<' + ui.autocomplete.tagHighlight + '>'; }
+                                                    if (i === (item.toString().indexOf(modified) + val.length)) { txt += '</' + ui.autocomplete.tagHighlight + '>'; }
+
+                                                    txt += item.toString().charAt(i);
+
+                                                }
+
+                                            } else {
+
+                                                for (let j = 0; j < item.length; j++) {
+
+                                                    if (j === customLowerCase(item).indexOf(modified)) { txt += '<' + ui.autocomplete.tagHighlight + '>'; }
+                                                    if (j === (customLowerCase(item).indexOf(modified) + val.length)) { txt += '</' + ui.autocomplete.tagHighlight + '>'; }
+
+                                                    txt += item.charAt(j);
+
+                                                }
+
+                                            }
+
+                                            list[0].insertAdjacentHTML(
+                                                'beforeend',
+                                                '<li>' + txt + '</li>'
+                                            );
+
+                                        }
+
+                                    }
+
+                                });
 
                         }
 
-                        // load json file
-                        const src = parent.getAttribute(ui.autocomplete.dataSrc);
-                        if (src !== null && src !== '') {
+                        response = '';
 
-                            // get json data with ajax
-                            ui.ajax({
+                    }
 
-                                url : src + '?' + ui.autocomplete.queryParameter + '=' + val,
-                                beforesend: (xhr) => {
+                    // load html datalist options
+                    const datalist = ui.find('datalist', parent)[0];
+                    if (datalist) {
 
-                                    // abort still processing previous autocomplete requests
-                                    Array.prototype.forEach.call(autocompleteRequests,
+                        const options = [];
 
-                                        (item, n) => {
+                        Array.prototype.forEach.call(ui.find('option', datalist),
 
-                                            item.abort();
-                                            autocompleteRequests.splice(n, 1);
-
-                                        });
-
-                                    autocompleteRequests.push(xhr);
-
-                                },
-                                callback: (status, response) => {
-                                    if (status === 'success') createList(response);
-                                }
+                            item => {
+                                options.push(item.textContent);
                             });
 
-                        }
+                        createList(options);
 
                     } else return;
 

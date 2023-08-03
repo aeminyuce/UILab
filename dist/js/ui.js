@@ -1140,8 +1140,7 @@ ui.autocomplete = {
   dataVal: 'data-ui-val'
 };
 ui.autocomplete.Start = function () {
-  var formEventListeners,
-    autocompleteRequests = [];
+  var formEventListeners;
   var customLowerCase = function customLowerCase(string) {
     var keys = Object.keys(ui.autocomplete.customLetters);
     var chars = '(([';
@@ -1193,88 +1192,75 @@ ui.autocomplete.Start = function () {
       val = customLowerCase(val);
       val = val.replace(/\s+$/g, '');
       if (val !== '') {
-        var getVal = parent.getAttribute(ui.autocomplete.dataVal);
-        if (getVal !== null && getVal !== '') {
-          var createList = function createList(response) {
-            response = JSON.parse(response);
-            if (response.length !== 'undefined') {
-              var k = 0;
-              ui.addClass(parent, ui.autocomplete.nameOpen);
-              setTimeout(function () {
-                ui.addClass(parent, ui.autocomplete.nameOpenEase);
-              }, 0);
-              ui.removeClass(parent, ui.autocomplete.nameMenuTop);
-              list[0].innerHTML = '';
-              Array.prototype.forEach.call(response, function (item) {
-                var key = item[getVal];
-                var txt = '';
-                if (key !== null) {
-                  if (typeof key === 'boolean') return;
-                  var modified = key;
-                  if (typeof key === 'number') {
-                    modified = modified.toString().match(val, 'g');
-                  } else {
-                    modified = customLowerCase(modified);
-                    modified = modified.match(val, 'g');
-                  }
-                  if (modified !== null) {
-                    clearTimeout(timerShowLines);
-                    timerShowLines = setTimeout(function () {
-                      var offset = parent.getBoundingClientRect();
-                      var tHeight = parent.offsetHeight;
-                      var dHeight = list[0].offsetHeight;
-                      if (offset.top + parseInt(tHeight + dHeight) >= window.innerHeight) {
-                        if (offset.top - parseInt(tHeight + dHeight) + tHeight > 0) {
-                          ui.addClass(parent, ui.autocomplete.nameMenuTop);
-                        } else list[0].style.height = dHeight - (offset.top + parseInt(tHeight + dHeight) - window.innerHeight) - ui.autocomplete.scrollbarSize + 'px';
-                      }
-                    }, 10);
-                    k += 1;
-                    if (k > 5) return;
-                    if (typeof key === 'number') {
-                      for (var i = 0; i < key.toString().length; i++) {
-                        if (i === key.toString().indexOf(modified)) {
-                          txt += '<' + ui.autocomplete.tagHighlight + '>';
-                        }
-                        if (i === key.toString().indexOf(modified) + val.length) {
-                          txt += '</' + ui.autocomplete.tagHighlight + '>';
-                        }
-                        txt += key.toString().charAt(i);
-                      }
-                    } else {
-                      for (var j = 0; j < key.length; j++) {
-                        if (j === customLowerCase(key).indexOf(modified)) {
-                          txt += '<' + ui.autocomplete.tagHighlight + '>';
-                        }
-                        if (j === customLowerCase(key).indexOf(modified) + val.length) {
-                          txt += '</' + ui.autocomplete.tagHighlight + '>';
-                        }
-                        txt += key.charAt(j);
-                      }
-                    }
-                    list[0].insertAdjacentHTML('beforeend', '<li>' + txt + '</li>');
-                  }
+        var createList = function createList(response) {
+          if (response.length > 0) {
+            ui.addClass(parent, ui.autocomplete.nameOpen);
+            setTimeout(function () {
+              ui.addClass(parent, ui.autocomplete.nameOpenEase);
+            }, 0);
+            ui.removeClass(parent, ui.autocomplete.nameMenuTop);
+            list[0].innerHTML = '';
+            var k = 0;
+            Array.prototype.forEach.call(response, function (item) {
+              var txt = '';
+              if (item !== null) {
+                if (typeof item === 'boolean') return;
+                var modified = item;
+                if (typeof item === 'number') {
+                  modified = modified.toString().match(val, 'g');
+                } else {
+                  modified = customLowerCase(modified);
+                  modified = modified.match(val, 'g');
                 }
-              });
-            }
-            response = '';
-          };
-          var src = parent.getAttribute(ui.autocomplete.dataSrc);
-          if (src !== null && src !== '') {
-            ui.ajax({
-              url: src + '?' + ui.autocomplete.queryParameter + '=' + val,
-              beforesend: function beforesend(xhr) {
-                Array.prototype.forEach.call(autocompleteRequests, function (item, n) {
-                  item.abort();
-                  autocompleteRequests.splice(n, 1);
-                });
-                autocompleteRequests.push(xhr);
-              },
-              callback: function callback(status, response) {
-                if (status === 'success') createList(response);
+                if (modified !== null) {
+                  clearTimeout(timerShowLines);
+                  timerShowLines = setTimeout(function () {
+                    var offset = parent.getBoundingClientRect();
+                    var tHeight = parent.offsetHeight;
+                    var dHeight = list[0].offsetHeight;
+                    if (offset.top + parseInt(tHeight + dHeight) >= window.innerHeight) {
+                      if (offset.top - parseInt(tHeight + dHeight) + tHeight > 0) {
+                        ui.addClass(parent, ui.autocomplete.nameMenuTop);
+                      } else list[0].style.height = dHeight - (offset.top + parseInt(tHeight + dHeight) - window.innerHeight) - ui.autocomplete.scrollbarSize + 'px';
+                    }
+                  }, 10);
+                  k += 1;
+                  if (k > 5) return;
+                  if (typeof item === 'number') {
+                    for (var i = 0; i < item.toString().length; i++) {
+                      if (i === item.toString().indexOf(modified)) {
+                        txt += '<' + ui.autocomplete.tagHighlight + '>';
+                      }
+                      if (i === item.toString().indexOf(modified) + val.length) {
+                        txt += '</' + ui.autocomplete.tagHighlight + '>';
+                      }
+                      txt += item.toString().charAt(i);
+                    }
+                  } else {
+                    for (var j = 0; j < item.length; j++) {
+                      if (j === customLowerCase(item).indexOf(modified)) {
+                        txt += '<' + ui.autocomplete.tagHighlight + '>';
+                      }
+                      if (j === customLowerCase(item).indexOf(modified) + val.length) {
+                        txt += '</' + ui.autocomplete.tagHighlight + '>';
+                      }
+                      txt += item.charAt(j);
+                    }
+                  }
+                  list[0].insertAdjacentHTML('beforeend', '<li>' + txt + '</li>');
+                }
               }
             });
           }
+          response = '';
+        };
+        var datalist = ui.find('datalist', parent)[0];
+        if (datalist) {
+          var options = [];
+          Array.prototype.forEach.call(ui.find('option', datalist), function (item) {
+            options.push(item.textContent);
+          });
+          createList(options);
         } else return;
       } else {
         ui.removeClass(parent, ui.autocomplete.nameOpenEase);

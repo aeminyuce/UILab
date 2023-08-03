@@ -9,12 +9,21 @@
                 <div class="ui-sidebar-add-r">
 
                     <div class="ui-card ui-p-15 ui-round ui-shadow-lg">
-                        <div data-ui-src="json/headphones.json" data-ui-val="name" class="ui-autocomplete ui-input ui-form-icon-all ui-round ui-ease-form ui-form-has-clear">
+                        <div class="ui-autocomplete ui-input ui-form-icon-all ui-round ui-ease-form ui-form-has-clear">
                             <svg class="ui-icon ui-form-icon-l"><use href="../dist/icons.svg#search"/></svg>
                             <button type="button" class="ui-form-clear">
                                 <svg class="ui-icon"><use href="../dist/icons.svg#remove"/></svg>
                             </button>
                             <input type="text" placeholder="Search" autocomplete="off">
+                            <datalist>
+                                <option>Sony</option>
+                                <option>Logitech</option>
+                                <option>JBL</option>
+                                <option>Beats</option>
+                                <option>Pioneer</option>
+                                <option>Philips</option>
+                                <option>Sony</option>
+                            </datalist>
                         </div>
 
                         <span class="ui-sp-25"></span>
