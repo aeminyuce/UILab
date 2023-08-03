@@ -1137,7 +1137,6 @@ ui.autocomplete = {
     "Ç": "ç"
   },
   dataSrc: 'data-ui-src',
-  dataJson: 'data-ui-json',
   dataVal: 'data-ui-val'
 };
 ui.autocomplete.Start = function () {
@@ -1276,8 +1275,6 @@ ui.autocomplete.Start = function () {
               }
             });
           }
-          var json = parent.getAttribute(ui.autocomplete.dataJson);
-          if (json && json !== '') createList(json);
         } else return;
       } else {
         ui.removeClass(parent, ui.autocomplete.nameOpenEase);

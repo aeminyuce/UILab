@@ -36,8 +36,6 @@ ui.autocomplete = {
 
     // data attributes
     dataSrc: 'data-ui-src',
-    dataJson: 'data-ui-json',
-
     dataVal: 'data-ui-val'
 
 };
@@ -144,6 +142,7 @@ ui.autocomplete.Start = () => {
                     const getVal = parent.getAttribute(ui.autocomplete.dataVal);
                     if (getVal !== null && getVal !== '') {
 
+                        // create list
                         const createList = (response) => {
 
                             response = JSON.parse(response);
@@ -280,10 +279,6 @@ ui.autocomplete.Start = () => {
                             });
 
                         }
-
-                        // load inner json data
-                        const json = parent.getAttribute(ui.autocomplete.dataJson);
-                        if (json && json !== '') createList(json);
 
                     } else return;
 
