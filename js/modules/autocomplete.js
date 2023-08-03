@@ -36,6 +36,8 @@ ui.autocomplete = {
 
     // data attributes
     dataSrc: 'data-ui-src',
+    dataJson: 'data-ui-json',
+
     dataVal: 'data-ui-val'
 
 };
@@ -142,6 +144,114 @@ ui.autocomplete.Start = () => {
                     const getVal = parent.getAttribute(ui.autocomplete.dataVal);
                     if (getVal !== null && getVal !== '') {
 
+                        const createList = (response) => {
+
+                            response = JSON.parse(response);
+
+                            if (response.length !== 'undefined') {
+
+                                let k = 0;
+
+                                ui.addClass(parent, ui.autocomplete.nameOpen);
+
+                                setTimeout(() => {
+                                    ui.addClass(parent, ui.autocomplete.nameOpenEase);
+                                }, 0);
+
+                                ui.removeClass(parent, ui.autocomplete.nameMenuTop);
+                                list[0].innerHTML = '';
+
+                                Array.prototype.forEach.call(response,
+
+                                    item => {
+
+                                        const key = item[getVal];
+                                        let txt = '';
+
+                                        if (key !== null) {
+
+                                            if (typeof key === 'boolean') return; // booleans not supported!
+
+                                            let modified = key;
+
+                                            if (typeof key === 'number') {
+                                                modified = modified.toString().match(val, 'g');
+
+                                            } else {
+
+                                                modified = customLowerCase(modified);
+                                                modified = modified.match(val, 'g');
+
+                                            }
+
+                                            if (modified !== null) {
+
+                                                clearTimeout(timerShowLines);
+                                                timerShowLines = setTimeout(() => { // create dropdown
+
+                                                    const offset = parent.getBoundingClientRect();
+
+                                                    const tHeight = parent.offsetHeight;
+                                                    const dHeight = list[0].offsetHeight;
+
+                                                    if (offset.top + parseInt(tHeight + dHeight) >= window.innerHeight) {
+
+                                                        if (offset.top - parseInt(tHeight + dHeight) + tHeight > 0) {
+                                                            ui.addClass(parent, ui.autocomplete.nameMenuTop);
+
+                                                        } else list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight) - window.innerHeight) - ui.autocomplete.scrollbarSize) + 'px';
+
+                                                    }
+
+                                                }, 10);
+
+                                                // show max. number of lines: 5
+                                                k += 1;
+                                                if (k > 5) return;
+
+                                                // create lines
+                                                if (typeof key === 'number') {
+
+                                                    for (let i = 0; i < key.toString().length; i++) {
+
+                                                        if (i === key.toString().indexOf(modified)) { txt += '<' + ui.autocomplete.tagHighlight + '>'; }
+                                                        if (i === (key.toString().indexOf(modified) + val.length)) { txt += '</' + ui.autocomplete.tagHighlight + '>'; }
+
+                                                        txt += key.toString().charAt(i);
+
+                                                    }
+
+                                                } else {
+
+                                                    for (let j = 0; j < key.length; j++) {
+
+                                                        if (j === customLowerCase(key).indexOf(modified)) { txt += '<' + ui.autocomplete.tagHighlight + '>'; }
+                                                        if (j === (customLowerCase(key).indexOf(modified) + val.length)) { txt += '</' + ui.autocomplete.tagHighlight + '>'; }
+
+                                                        txt += key.charAt(j);
+
+                                                    }
+
+                                                }
+
+                                                list[0].insertAdjacentHTML(
+                                                    'beforeend',
+                                                    '<li>' + txt + '</li>'
+                                                );
+
+                                            }
+
+                                        }
+
+                                    });
+
+                            }
+
+                            response = '';
+
+                        }
+
+                        // load json file
                         const src = parent.getAttribute(ui.autocomplete.dataSrc);
                         if (src !== null && src !== '') {
 
@@ -165,118 +275,15 @@ ui.autocomplete.Start = () => {
 
                                 },
                                 callback: (status, response) => {
-
-                                    if (status === 'success') {
-
-                                        response = JSON.parse(response);
-                                        if (response.length !== 'undefined') {
-
-                                            let k = 0;
-
-                                            ui.addClass(parent, ui.autocomplete.nameOpen);
-
-                                            setTimeout(() => {
-                                                ui.addClass(parent, ui.autocomplete.nameOpenEase);
-                                            }, 0);
-
-                                            ui.removeClass(parent, ui.autocomplete.nameMenuTop);
-                                            list[0].innerHTML = '';
-
-                                            Array.prototype.forEach.call(response,
-
-                                                item => {
-
-                                                    const key = item[getVal];
-                                                    let txt = '';
-
-                                                    if (key !== null) {
-
-                                                        if (typeof key === 'boolean') return; // booleans not supported!
-
-                                                        let modified = key;
-
-                                                        if (typeof key === 'number') {
-                                                            modified = modified.toString().match(val, 'g');
-
-                                                        } else {
-
-                                                            modified = customLowerCase(modified);
-                                                            modified = modified.match(val, 'g');
-
-                                                        }
-
-                                                        if (modified !== null) {
-
-                                                            clearTimeout(timerShowLines);
-                                                            timerShowLines = setTimeout(() => { // create dropdown
-
-                                                                const offset = parent.getBoundingClientRect();
-
-                                                                const tHeight = parent.offsetHeight;
-                                                                const dHeight = list[0].offsetHeight;
-
-                                                                if (offset.top + parseInt(tHeight + dHeight) >= window.innerHeight) {
-
-                                                                    if (offset.top - parseInt(tHeight + dHeight) + tHeight > 0) {
-                                                                        ui.addClass(parent, ui.autocomplete.nameMenuTop);
-
-                                                                    } else list[0].style.height = (dHeight - (offset.top + parseInt(tHeight + dHeight) - window.innerHeight) - ui.autocomplete.scrollbarSize) + 'px';
-
-                                                                }
-
-                                                            }, 10);
-
-                                                            // show max. number of lines: 5
-                                                            k += 1;
-                                                            if (k > 5) return;
-
-                                                            // create lines
-                                                            if (typeof key === 'number') {
-
-                                                                for (let i = 0; i < key.toString().length; i++) {
-
-                                                                    if (i === key.toString().indexOf(modified)) { txt += '<' + ui.autocomplete.tagHighlight + '>'; }
-                                                                    if (i === (key.toString().indexOf(modified) + val.length)) { txt += '</' + ui.autocomplete.tagHighlight + '>'; }
-
-                                                                    txt += key.toString().charAt(i);
-
-                                                                }
-
-                                                            } else {
-
-                                                                for (let j = 0; j < key.length; j++) {
-
-                                                                    if (j === customLowerCase(key).indexOf(modified)) { txt += '<' + ui.autocomplete.tagHighlight + '>'; }
-                                                                    if (j === (customLowerCase(key).indexOf(modified) + val.length)) { txt += '</' + ui.autocomplete.tagHighlight + '>'; }
-
-                                                                    txt += key.charAt(j);
-
-                                                                }
-
-                                                            }
-
-                                                            list[0].insertAdjacentHTML(
-                                                                'beforeend',
-                                                                '<li>' + txt + '</li>'
-                                                            );
-
-                                                        }
-
-                                                    }
-
-                                                });
-
-                                        }
-
-                                        response = '';
-
-                                    }
-
+                                    if (status === 'success') createList(response);
                                 }
                             });
 
                         }
 
+                        // load inner json data
+                        const json = parent.getAttribute(ui.autocomplete.dataJson);
+                        if (json && json !== '') createList(json);
 
                     } else return;
 
