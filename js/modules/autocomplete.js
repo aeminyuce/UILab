@@ -42,8 +42,6 @@ ui.autocomplete = {
 
 ui.autocomplete.Start = () => {
 
-    let formEventListeners;
-
     const customLowerCase = function (string) { // custom lowercase
 
         const keys = Object.keys(ui.autocomplete.customLetters); // returns array
@@ -59,8 +57,35 @@ ui.autocomplete.Start = () => {
 
     };
 
+    // create autocomplete lists
+    function createFnc(that) {
+
+        ui.addClass(that, ui.autocomplete.nameLoaded);
+        let styles = ui.autocomplete.stylesList;
+
+        const input = ui.find('input', that)[0];
+        input.setAttribute('autocomplete', 'off');
+
+        if (ui.hasClass(that, ui.autocomplete.nameRound)) {
+            styles += ' ' + ui.autocomplete.nameRound;
+        }
+
+        that.insertAdjacentHTML(
+            'beforeend',
+            '<ul class="' + styles + '"></ul>'
+        );
+
+    }
+
+    // ckeck not loaded autocomplete forms
+    const loadForms = ui.find('.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + ':not(.' + ui.autocomplete.nameLoaded + ')');
+
+    if (loadForms.length > 0) {
+        Array.prototype.forEach.call(loadForms, el => { createFnc(el); });
+    }
+
     // Event Listeners
-    formEventListeners = ui.find('.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + ' > [type="text"]');
+    const formEventListeners = ui.find('.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + ' > [type="text"]');
 
     ui.on(document,
         'keyup',
@@ -180,10 +205,10 @@ ui.autocomplete.Start = () => {
                                             clearTimeout(timerShowLines);
                                             timerShowLines = setTimeout(() => { // create dropdown
 
-                                                const offset = parent.getBoundingClientRect();
+                                            const offset = parent.getBoundingClientRect();
 
-                                                const tHeight = parent.offsetHeight;
-                                                const dHeight = list[0].offsetHeight;
+                                            const tHeight = parent.offsetHeight;
+                                            const dHeight = list[0].offsetHeight;
 
                                                 if (offset.top + parseInt(tHeight + dHeight) >= window.innerHeight) {
 
@@ -312,21 +337,17 @@ ui.autocomplete.Start = () => {
         function () {
 
             const parent = this.parentNode;
-            let styles = ui.autocomplete.stylesList;
+            const list = ui.find('ul', parent);
 
-            this.setAttribute('autocomplete', 'off');
+            if (list.length >= 1) {
 
-            ui.addClass(parent, ui.autocomplete.nameOpen);
-            ui.removeClass(parent, ui.autocomplete.nameMenuTop);
+                ui.addClass(parent, ui.autocomplete.nameOpen);
 
-            if (ui.hasClass(parent, ui.autocomplete.nameRound)) {
-                styles += ' ' + ui.autocomplete.nameRound;
+                setTimeout(() => {
+                    ui.addClass(parent, ui.autocomplete.nameOpenEase);
+                }, ui.globals.ease);
+
             }
-
-            parent.insertAdjacentHTML(
-                'beforeend',
-                '<ul class="' + styles + '"></ul>'
-            );
 
         });
 
@@ -338,14 +359,10 @@ ui.autocomplete.Start = () => {
         function () {
 
             const parent = this.parentNode;
-            const list = ui.find('ul', parent);
-
             ui.removeClass(parent, ui.autocomplete.nameOpenEase);
+
             setTimeout(() => {
-
                 ui.removeClass(parent, ui.autocomplete.nameOpen);
-                if (list.length > 0) parent.removeChild(list[0]);
-
             }, ui.globals.ease);
 
         });
@@ -369,3 +386,11 @@ ui.autocomplete.Start = () => {
 
 // loaders
 ui.onload(ui.autocomplete.Start);
+
+// ajax callback loader
+ui.on(document,
+    ui.globals.eventAjaxCallback,
+
+    () => {
+        if (ui.ajax.classNames.indexOf(ui.autocomplete.target) > -1) ui.autocomplete.Start();
+    });

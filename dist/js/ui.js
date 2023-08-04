@@ -1140,7 +1140,6 @@ ui.autocomplete = {
   dataVal: 'data-ui-val'
 };
 ui.autocomplete.Start = function () {
-  var formEventListeners;
   var customLowerCase = function customLowerCase(string) {
     var keys = Object.keys(ui.autocomplete.customLetters);
     var chars = '(([';
@@ -1152,7 +1151,23 @@ ui.autocomplete.Start = function () {
     });
     return string.toLowerCase();
   };
-  formEventListeners = ui.find('.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + ' > [type="text"]');
+  function createFnc(that) {
+    ui.addClass(that, ui.autocomplete.nameLoaded);
+    var styles = ui.autocomplete.stylesList;
+    var input = ui.find('input', that)[0];
+    input.setAttribute('autocomplete', 'off');
+    if (ui.hasClass(that, ui.autocomplete.nameRound)) {
+      styles += ' ' + ui.autocomplete.nameRound;
+    }
+    that.insertAdjacentHTML('beforeend', '<ul class="' + styles + '"></ul>');
+  }
+  var loadForms = ui.find('.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + ':not(.' + ui.autocomplete.nameLoaded + ')');
+  if (loadForms.length > 0) {
+    Array.prototype.forEach.call(loadForms, function (el) {
+      createFnc(el);
+    });
+  }
+  var formEventListeners = ui.find('.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + ' > [type="text"]');
   ui.on(document, 'keyup', formEventListeners, function (e) {
     var timerShowLines;
     var parent = this.parentNode;
@@ -1287,22 +1302,19 @@ ui.autocomplete.Start = function () {
   });
   ui.on(document, 'focus', formEventListeners, function () {
     var parent = this.parentNode;
-    var styles = ui.autocomplete.stylesList;
-    this.setAttribute('autocomplete', 'off');
-    ui.addClass(parent, ui.autocomplete.nameOpen);
-    ui.removeClass(parent, ui.autocomplete.nameMenuTop);
-    if (ui.hasClass(parent, ui.autocomplete.nameRound)) {
-      styles += ' ' + ui.autocomplete.nameRound;
+    var list = ui.find('ul', parent);
+    if (list.length >= 1) {
+      ui.addClass(parent, ui.autocomplete.nameOpen);
+      setTimeout(function () {
+        ui.addClass(parent, ui.autocomplete.nameOpenEase);
+      }, ui.globals.ease);
     }
-    parent.insertAdjacentHTML('beforeend', '<ul class="' + styles + '"></ul>');
   });
   ui.on(document, 'blur', formEventListeners, function () {
     var parent = this.parentNode;
-    var list = ui.find('ul', parent);
     ui.removeClass(parent, ui.autocomplete.nameOpenEase);
     setTimeout(function () {
       ui.removeClass(parent, ui.autocomplete.nameOpen);
-      if (list.length > 0) parent.removeChild(list[0]);
     }, ui.globals.ease);
   });
   ui.on(document, 'mousedown', '.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + '.' + ui.autocomplete.nameOpen + ' li', function () {
@@ -1313,6 +1325,9 @@ ui.autocomplete.Start = function () {
   });
 };
 ui.onload(ui.autocomplete.Start);
+ui.on(document, ui.globals.eventAjaxCallback, function () {
+  if (ui.ajax.classNames.indexOf(ui.autocomplete.target) > -1) ui.autocomplete.Start();
+});
 ui.currencySpinner = {
   target: 'ui-currency-spinner',
   nameUp: 'ui-currency-up',
@@ -5682,7 +5697,6 @@ ui.weather = {
 ui.donutChart = {
   target: 'ui-donut-chart',
   targetBg: 'ui-donut-chart-bg',
-  nameLoaded: 'ui-loaded',
   nameSelected: 'ui-selected',
   tagMsg: 'strong',
   dataPercent: 'data-ui-percent',
@@ -5712,7 +5726,6 @@ ui.donutChart.Start = function () {
             item.setAttribute('transform', 'rotate(' + angle + ' 80 80)');
           } else arrAngle.push(0);
           if (ui.userAgents.ie) el.style.height = el.offsetWidth + 'px';
-          ui.addClass(item, ui.donutChart.nameLoaded);
         });
         arrPercent = [];
         arrAngle = [];
