@@ -622,7 +622,7 @@
                         <div class="ui-col-9">
                             <div class="ui-autocomplete ui-input ui-form-icon ui-round ui-border-dual ui-ease-form ui-form-inline-xs">
                                 <svg class="ui-icon"><use href="../dist/icons.svg#keyboard"/></svg>
-                                <input id="autoc100" name="autoc100" type="text" placeholder="Country Code">
+                                <input type="text" placeholder="Country Code">
                                 <datalist>
                                     <option>Afghanistan</option>
                                     <option>Albania</option>
