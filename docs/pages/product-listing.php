@@ -14,7 +14,7 @@
                             <button type="button" class="ui-form-clear">
                                 <svg class="ui-icon"><use href="../dist/icons.svg#remove"/></svg>
                             </button>
-                            <input type="text" placeholder="Search" autocomplete="off">
+                            <input type="text" placeholder="Search">
                             <datalist>
                                 <option>Sony</option>
                                 <option>Logitech</option>

@@ -135,7 +135,7 @@ const LineChartItems = function (
 
     { y, url }:LineChartItemsProps) {
 
-        const id = useId();
+        const keyId = useId();
 
         return (y && Array.isArray(y) &&
             <>
@@ -143,7 +143,7 @@ const LineChartItems = function (
                     y.map((value, i) => {
 
                         return (
-                            <React.Fragment key={id + i}>
+                            <React.Fragment key={keyId + i}>
                                 <li data-ui-y={value} data-ui-url={url}></li>
                             </React.Fragment>
                         )

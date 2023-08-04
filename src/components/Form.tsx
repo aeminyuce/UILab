@@ -1,11 +1,15 @@
 import * as React from 'react';
+import { useId, useEffect } from 'react';
+import { ui } from '@ui';
 import Icon from '@components/Icon';
 
 // assets
 const icon_angle_down = 'M132 202h-.024a11 11 0 0 1-7.788-3.255l-117-118a11 11 0 0 1 15.623-15.49L132.033 175.41 242.222 65.222a11 11 0 0 1 15.556 15.556l-118 118A11 11 0 0 1 132 202Z';
 
+import '@less/modules/autocomplete';
 import '@less/modules/forms';
 
+import '@js/modules/autocomplete';
 import '@js/modules/required-forms';
 import '@js/modules/forms';
 
@@ -57,6 +61,7 @@ interface FormInputProps {
     light?: boolean,
     inline?: 'always' | 'xs',
     autoComplete?: 'on' | 'off' | 'username' | 'current-password' | string,
+    autoCompleteData?: string[],
 
     icons?: 'r' | 'l' | 'all',
 
@@ -85,12 +90,22 @@ interface FormInputProps {
 
 const FormInput = function (
 
-    { children, onChange, onInput, onBlur, type, name, tabIndex, value, defaultValue, placeholder, disabled, light, inline, autoComplete, icons, multiple, readOnly, word, number, numberFloat, required, hasClear, minlength, maxlength, min, max, myRef, noease, id, className, style }:FormInputProps) {
+    { children, onChange, onInput, onBlur, type, name, tabIndex, value, defaultValue, placeholder, disabled, light, inline, autoComplete, autoCompleteData, icons, multiple, readOnly, word, number, numberFloat, required, hasClear, minlength, maxlength, min, max, myRef, noease, id, className, style }:FormInputProps) {
+
+        const keyId = useId();
+
+        useEffect(() => {
+
+            // start
+            if (autoCompleteData) ui.autocomplete.Start();
+
+        }, []); // Runs only first render
 
         // types
         const setType = type ? type : 'text';
 
         // classes
+        const setAutoCompleteData = autoCompleteData ? ' ui-autocomplete' : '';
         const setClassName = className ? ' ' + className : '';
         const setDisabled = disabled ? ' ui-form-disabled' : '';
         const setHasClear = hasClear ? ' ui-form-has-clear' : '';
@@ -118,7 +133,7 @@ const FormInput = function (
             setIcons = ' ui-form-icon-all';
         }
 
-        const classes = 'ui-input' + setIcons + setDisabled + setHasClear + setlight + setClassName + setInline + setEase;
+        const classes = 'ui-input' + setAutoCompleteData + setIcons + setDisabled + setHasClear + setlight + setClassName + setInline + setEase;
 
         // children classes
         const setNumber = number ? ' ui-number' : '';
@@ -135,9 +150,21 @@ const FormInput = function (
             <div className={classes} style={style}>
                 {children}
                 <input id={id} ref={myRef} type={setType} name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} placeholder={placeholder}
-                    autoComplete={autoComplete} className={childrenClasses} disabled={disabled} multiple={multiple} readOnly={readOnly}
+                    autoComplete={autoCompleteData ? 'off' : autoComplete} className={childrenClasses} disabled={disabled} multiple={multiple} readOnly={readOnly}
                     minLength={minlength} maxLength={maxlength} min={min} max={max}
-                    onChange={onChange} onInput={onInput} onBlur={onBlur} />
+                    onChange={onChange} onInput={onInput} onBlur={onBlur}
+                />
+                <>
+                    {autoCompleteData &&
+                        <datalist>
+                            {
+                                autoCompleteData.map((name: string, i: number) => {
+                                    return <option key={keyId + i}>{name}</option>
+                                })
+                            }
+                        </datalist>
+                    }
+                </>
             </div>
         );
     }
@@ -347,7 +374,7 @@ const FormCheck = function (
             <label className="ui-label">
                 <span className={classes} style={style}>
                     <input id={id} name={name} tabIndex={tabIndex} value={value} type={setType} checked={checked} className={childrenClasses} disabled={disabled} onChange={onChange} />
-                        <i className={stateClasses} style={stateStyle}></i>
+                    <i className={stateClasses} style={stateStyle}></i>
                 </span>
                 {label}
             </label>

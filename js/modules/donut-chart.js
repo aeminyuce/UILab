@@ -10,7 +10,6 @@ ui.donutChart = {
     targetBg: 'ui-donut-chart-bg',
 
     // helper classnames
-    nameLoaded: 'ui-loaded',
     nameSelected: 'ui-selected',
 
     // tags
@@ -64,7 +63,6 @@ ui.donutChart.Start = () => {
                             } else arrAngle.push(0);
 
                             if (ui.userAgents.ie) el.style.height = el.offsetWidth + 'px'; // transformed circle has highest height on IE
-                            ui.addClass(item, ui.donutChart.nameLoaded);
 
                         });
 

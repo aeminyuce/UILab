@@ -20,7 +20,7 @@ export default function Map(
 
     { sizes, defaultValue, className, style }:MapProps) {
 
-        const id = useId();
+        const keyId = useId();
 
         useEffect(() => {
 
@@ -159,7 +159,7 @@ export default function Map(
                                     if (i + 1 === arr.length) emptyPaths = Object.keys(paths).filter(name => !loadedPaths.includes(name));
 
                                     return <path
-                                        key={id + 1 + i}
+                                        key={keyId + 1 + i}
                                         name={info}
                                         data-ui-size={size}
                                         data-ui-tooltip
@@ -175,7 +175,7 @@ export default function Map(
                                     const info = '<strong>' + value + '</strong>: ' + size;
 
                                     return <path
-                                        key={id + 2 + i}
+                                        key={keyId + 2 + i}
                                         name={info}
                                         data-ui-size={size}
                                         data-ui-tooltip
