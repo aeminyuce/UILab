@@ -71,7 +71,8 @@ ui.lineChart = {
     right: 25,
     bottom: 15,
 
-    sepSize : 6,
+    sepSize : 3,
+    sepSpace : 6,
     showInfoSpace: 10,
 
     dotted: 'dotted',
@@ -265,11 +266,14 @@ ui.lineChart.Start = () => {
                 const dataLength = yMaxLength > yMinLength ? yMaxLength : yMinLength;
 
                 let chartLeftSpace = ui.lineChart.gridStroke + (ui.lineChart.gridXTextSpace * 2);
-                chartLeftSpace += dataLength * ui.lineChart.sepSize;
+                chartLeftSpace += dataLength * ui.lineChart.sepSpace;
 
-                if (prefix) chartLeftSpace += (prefix.length * ui.lineChart.sepSize);
-                if (suffix) chartLeftSpace += (suffix.length * ui.lineChart.sepSize);
-                if (seperator) chartLeftSpace += ui.lineChart.sepSize;
+                if (prefix) chartLeftSpace += (prefix.length * ui.lineChart.sepSpace);
+                if (suffix) chartLeftSpace += (suffix.length * ui.lineChart.sepSpace);
+                if (seperator) chartLeftSpace += ui.lineChart.sepSpace;
+
+                let sepRex = '\\B(?=(\\d{' + ui.lineChart.sepSize + '})+(?!\\d))';
+                sepRex = new RegExp(sepRex, 'g');
 
                 // create grids
                 let col = (data.width - (ui.lineChart.right + chartLeftSpace));
@@ -359,7 +363,7 @@ ui.lineChart.Start = () => {
                         if (yMax <= 50 && val > 5) val = Math.round(val / 5) * 5;
                         if (yMax >= -50 && val < -5) val = Math.floor(val / 5) * 5;
 
-                        if (seperator) val = val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, seperator);
+                        if (seperator) val = val.toString().replace(sepRex, seperator);
 
                         html += '<text ' +
                                     'x="' + (chartLeftSpace - ui.lineChart.gridXTextSpace) + '" ' +
@@ -447,17 +451,18 @@ ui.lineChart.Start = () => {
                                 circles += 'onclick="location.href = \'' + data[j].links[n] + '\';"';
                             }
 
+                            let val = y[n] ? y[n] : 0;
+                            val = prefix + val + suffix;
+
+                            if (seperator) val = val.toString().replace(sepRex, seperator);
+
                             if (ui.tooltip === undefined) {
 
                                 circles += '/>' +
-                                            '<title>' + (y[n] ? y[n] : 0) + '</title>';
+                                        '<title>' + val + '</title>';
 
                             } else { // Optional!
-
-                                circles += ui.tooltip.dataTooltip + ' ' +
-                                            'name="' + (y[n] ? y[n] : 0) + '" ' +
-                                        '/>';
-
+                                circles += ui.tooltip.dataTooltip + ' name="' + val + '" />';
                             }
 
                             '</circle>';
