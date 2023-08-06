@@ -5796,7 +5796,7 @@ ui.lineChart = {
   top: 15,
   right: 25,
   bottom: 15,
-  left: 50,
+  sepSize: 6,
   showInfoSpace: 10,
   dotted: 'dotted',
   dashed: 'dashed',
@@ -5806,6 +5806,7 @@ ui.lineChart = {
   dataY: 'data-ui-y',
   dataPrefix: 'data-ui-prefix',
   dataSuffix: 'data-ui-suffix',
+  dataSep: 'data-ui-sep',
   dataSize: 'data-ui-size',
   dataLink: 'data-ui-url',
   dataType: 'data-ui-type',
@@ -5896,7 +5897,21 @@ ui.lineChart.Start = function () {
           }
         }
       } else data.step = false;
-      var col = data.width - (ui.lineChart.right + ui.lineChart.left);
+      var prefix = el.getAttribute(ui.lineChart.dataPrefix);
+      if (prefix === null) prefix = '';
+      var suffix = el.getAttribute(ui.lineChart.dataSuffix);
+      if (suffix === null) suffix = '';
+      var seperator = el.getAttribute(ui.lineChart.dataSep);
+      if (seperator === null && seperator === '') seperator = null;
+      var yMaxLength = yMax.toString().length;
+      var yMinLength = yMin.toString().length;
+      var dataLength = yMaxLength > yMinLength ? yMaxLength : yMinLength;
+      var chartLeftSpace = ui.lineChart.gridStroke + ui.lineChart.gridXTextSpace * 2;
+      chartLeftSpace += dataLength * ui.lineChart.sepSize;
+      if (prefix) chartLeftSpace += prefix.length * ui.lineChart.sepSize;
+      if (suffix) chartLeftSpace += suffix.length * ui.lineChart.sepSize;
+      if (seperator) chartLeftSpace += ui.lineChart.sepSize;
+      var col = data.width - (ui.lineChart.right + chartLeftSpace);
       var rowLength = x.length - 1;
       if (rowLength === 0) rowLength = 1;
       col = col / rowLength;
@@ -5904,7 +5919,7 @@ ui.lineChart.Start = function () {
       var posX = 0;
       var posY = 0;
       for (var k = 0; k < x.length; k++) {
-        posX = k * col + ui.lineChart.left;
+        posX = k * col + chartLeftSpace;
         if (ui.lineChart.showGridText) {
           if (data.step) {
             if (data.stepArr.indexOf(k) > -1) {
@@ -5925,10 +5940,6 @@ ui.lineChart.Start = function () {
         }
       }
       html += '</g>' + '<g class="' + ui.lineChart.nameGridY + '">';
-      var prefix = el.getAttribute(ui.lineChart.dataPrefix);
-      if (prefix === null || size === '') prefix = '';
-      var suffix = el.getAttribute(ui.lineChart.dataSuffix);
-      if (suffix === null || size === '') suffix = '';
       for (var l = 0; l <= rows; l++) {
         posY = l * (data.height - (ui.lineChart.top + ui.lineChart.bottom)) / rows + ui.lineChart.top;
         if (ui.lineChart.showGridText) {
@@ -5937,14 +5948,15 @@ ui.lineChart.Start = function () {
           if (yMax <= -50 && val < -10) val = Math.floor(val / 10) * 10;
           if (yMax <= 50 && val > 5) val = Math.round(val / 5) * 5;
           if (yMax >= -50 && val < -5) val = Math.floor(val / 5) * 5;
-          html += '<text ' + 'x="' + (ui.lineChart.left - ui.lineChart.gridXTextSpace) + '" ' + 'y="' + (posY + 4) + '">' + prefix + val + suffix + '</text>';
+          if (seperator) val = val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, seperator);
+          html += '<text ' + 'x="' + (chartLeftSpace - ui.lineChart.gridXTextSpace) + '" ' + 'y="' + (posY + 4) + '">' + prefix + val + suffix + '</text>';
         }
         if (ui.lineChart.showGrid) {
           html += '<line ' + 'x2="' + (data.width - ui.lineChart.right) + '" ' + 'y1="' + posY + '" ' + 'y2="' + posY + '" ';
           if (l >= rows) {
-            html += 'x1="' + Math.ceil(ui.lineChart.left - ui.lineChart.gridStroke / 2) + '" ' + 'class="' + ui.lineChart.nameGridRoot + '" ' + 'stroke-width="' + ui.lineChart.gridStroke + '"';
+            html += 'x1="' + Math.ceil(chartLeftSpace - ui.lineChart.gridStroke / 2) + '" ' + 'class="' + ui.lineChart.nameGridRoot + '" ' + 'stroke-width="' + ui.lineChart.gridStroke + '"';
           } else {
-            html += 'x1="' + Math.floor(ui.lineChart.left + ui.lineChart.gridStroke) + '" ' + 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
+            html += 'x1="' + Math.floor(chartLeftSpace + ui.lineChart.gridStroke) + '" ' + 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
           }
           html += '></line>';
         }
@@ -6000,13 +6012,13 @@ ui.lineChart.Start = function () {
             html += '<linearGradient id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' + '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' + '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' + '</linearGradient>';
             html += '<path d="M';
             if (fromStart) html += ' ' + (pathStart.x + ui.lineChart.gridStroke / 2) + ' ' + pathStart.y;
-            var cuttedStart = cutted ? cutted : ui.lineChart.gridStroke / 2 + ui.lineChart.left;
+            var cuttedStart = cutted ? cutted : ui.lineChart.gridStroke / 2 + chartLeftSpace;
             html += pathsData + ' V ' + (data.height - ui.lineChart.bottom - ui.lineChart.gridStroke / 2) + ' H ' + cuttedStart + ' Z" ' + 'stroke="0" ' + 'fill="url(#' + ui.lineChart.idGradient + id + ')" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + 'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' + '/>';
             html = removeReTypedCurves(html);
           }
         };
         if (y.length === 0) {
-          posX = ui.lineChart.left;
+          posX = chartLeftSpace;
           posY = data.svgHeight - (ui.lineChart.top + ui.lineChart.bottom);
           pathStart.x = posX;
           pathStart.y = posY;
@@ -6020,7 +6032,7 @@ ui.lineChart.Start = function () {
         var repeatedFromStart = false;
         var filledPathCuts = [];
         for (var n = 0; n < y.length; n++) {
-          posX = n * col + ui.lineChart.left;
+          posX = n * col + chartLeftSpace;
           var range = yMax - yMin;
           if (range === 0) range = 1;
           if (yMax + yMin === 0) {
@@ -6049,7 +6061,7 @@ ui.lineChart.Start = function () {
             };
             if (n === 0 && y[n] === y[n + 1] || n > 0 && y[n - 1] === y[n] || n < y.length - 1 && y[n + 1] === y[n] || n === y.length - 1 && y[n - 1] === y[n]) {
               if (n > 0 && n < y.length - 1 && y[n - 1] === y[n] && y[n] !== y[n + 1] && y[n + 1] === y[n + 2]) {
-                repeatedPaths[repeatedIndex] = paths + ' L ' + ((n + 1) * col + ui.lineChart.left) + ' ' + posY;
+                repeatedPaths[repeatedIndex] = paths + ' L ' + ((n + 1) * col + chartLeftSpace) + ' ' + posY;
                 clearBeforeRepeat();
                 repeatedMultiple = true;
               } else {
@@ -6057,7 +6069,7 @@ ui.lineChart.Start = function () {
                 if (y[n - 1] !== y[n]) createCircles(n);
               }
               if (n === 0 && posX === pathStart.x) repeatedFromStart = true;
-              if (y[n - 1] !== y[n] && y[n] === y[n + 1]) filledPathCuts[repeatedIndex] = n * col + ui.lineChart.left;
+              if (y[n - 1] !== y[n] && y[n] === y[n + 1]) filledPathCuts[repeatedIndex] = n * col + chartLeftSpace;
             } else clearBeforeRepeat();
           } else createCircles(n);
         }
@@ -6081,9 +6093,7 @@ ui.lineChart.Start = function () {
           createFilledPaths(randomId, paths, true);
         }
         var name = el.getAttribute(ui.lineChart.dataName);
-        if (name !== null && name !== '') {
-          data.name.push(name);
-        } else data.name.push('');
+        if (name !== null && name !== '') data.name.push(name);else data.name.push('');
       });
       html += circles + '</g></svg>';
       if (data.width === 0) {

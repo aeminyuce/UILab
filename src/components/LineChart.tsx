@@ -20,6 +20,7 @@ interface LineChartHolderProps {
     },
     prefix? : string,
     suffix? : string,
+    sep? : '.' | ',',
 
     showGrid?: boolean,
     gridStroke?: number,
@@ -34,7 +35,7 @@ interface LineChartHolderProps {
 
 const LineChartHolder = function (
 
-    { children, x, step, size, prefix, suffix, showGrid, gridStroke, showGridText, showInfo, showInfoStats, className, style }:LineChartHolderProps) {
+    { children, x, step, size, prefix, suffix, sep, showGrid, gridStroke, showGridText, showInfo, showInfoStats, className, style }:LineChartHolderProps) {
 
         // settings
         const setShowGrid = showGrid ? showGrid : false;
@@ -75,7 +76,7 @@ const LineChartHolder = function (
             <div
                 className={classes} style={style} data-ui-x={x}
                 data-ui-size={setSize} data-ui-step={step}
-                data-ui-prefix={prefix} data-ui-suffix={suffix}>
+                data-ui-prefix={prefix} data-ui-suffix={suffix} data-ui-sep={sep}>
                     {children}
             </div>
         );

@@ -70,8 +70,8 @@ ui.lineChart = {
     top: 15,
     right: 25,
     bottom: 15,
-    left: 50,
 
+    sepSize : 6,
     showInfoSpace: 10,
 
     dotted: 'dotted',
@@ -85,6 +85,7 @@ ui.lineChart = {
 
     dataPrefix: 'data-ui-prefix',
     dataSuffix: 'data-ui-suffix',
+    dataSep: 'data-ui-sep',
 
     dataSize: 'data-ui-size',
     dataLink: 'data-ui-url',
@@ -249,8 +250,29 @@ ui.lineChart.Start = () => {
 
                 } else data.step = false;
 
+                // calculate chart left space
+                let prefix = el.getAttribute(ui.lineChart.dataPrefix);
+                if (prefix === null) prefix = '';
+
+                let suffix = el.getAttribute(ui.lineChart.dataSuffix);
+                if (suffix === null) suffix = '';
+
+                let seperator = el.getAttribute(ui.lineChart.dataSep);
+                if (seperator === null && seperator === '') seperator = null;
+
+                const yMaxLength = yMax.toString().length; // for positive number datas
+                const yMinLength = yMin.toString().length; // for negative number datas
+                const dataLength = yMaxLength > yMinLength ? yMaxLength : yMinLength;
+
+                let chartLeftSpace = ui.lineChart.gridStroke + (ui.lineChart.gridXTextSpace * 2);
+                chartLeftSpace += dataLength * ui.lineChart.sepSize;
+
+                if (prefix) chartLeftSpace += (prefix.length * ui.lineChart.sepSize);
+                if (suffix) chartLeftSpace += (suffix.length * ui.lineChart.sepSize);
+                if (seperator) chartLeftSpace += ui.lineChart.sepSize;
+
                 // create grids
-                let col = (data.width - (ui.lineChart.right + ui.lineChart.left));
+                let col = (data.width - (ui.lineChart.right + chartLeftSpace));
 
                 let rowLength = x.length - 1;
                 if (rowLength === 0) rowLength = 1; // ignore infinity
@@ -264,7 +286,7 @@ ui.lineChart.Start = () => {
 
                 for (let k = 0; k < x.length; k++) {
 
-                    posX = (k * col) + ui.lineChart.left;
+                    posX = (k * col) + chartLeftSpace;
 
                     if (ui.lineChart.showGridText) {
 
@@ -321,12 +343,6 @@ ui.lineChart.Start = () => {
                 html += '</g>' +
                     '<g class="' + ui.lineChart.nameGridY + '">';
 
-                let prefix = el.getAttribute(ui.lineChart.dataPrefix);
-                if (prefix === null || size === '') prefix = '';
-
-                let suffix = el.getAttribute(ui.lineChart.dataSuffix);
-                if (suffix === null || size === '') suffix = '';
-
                 for (let l = 0; l <= rows; l++) {
 
                     posY = (l * (data.height - (ui.lineChart.top + ui.lineChart.bottom)) / rows) + ui.lineChart.top;
@@ -343,8 +359,10 @@ ui.lineChart.Start = () => {
                         if (yMax <= 50 && val > 5) val = Math.round(val / 5) * 5;
                         if (yMax >= -50 && val < -5) val = Math.floor(val / 5) * 5;
 
+                        if (seperator) val = val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, seperator);
+
                         html += '<text ' +
-                                    'x="' + (ui.lineChart.left - ui.lineChart.gridXTextSpace) + '" ' +
+                                    'x="' + (chartLeftSpace - ui.lineChart.gridXTextSpace) + '" ' +
                                     'y="' + (posY + 4) +
                                 '">' +
                                     prefix + val + suffix +
@@ -360,13 +378,13 @@ ui.lineChart.Start = () => {
 
                         if (l >= rows) { // root of y grid
 
-                            html += 'x1="' + Math.ceil(ui.lineChart.left - (ui.lineChart.gridStroke / 2)) + '" ' +
+                            html += 'x1="' + Math.ceil(chartLeftSpace - (ui.lineChart.gridStroke / 2)) + '" ' +
                                     'class="' + ui.lineChart.nameGridRoot + '" ' +
                                     'stroke-width="' + ui.lineChart.gridStroke + '"';
 
                         } else {
 
-                            html += 'x1="' + Math.floor(ui.lineChart.left + ui.lineChart.gridStroke) + '" ' +
+                            html += 'x1="' + Math.floor(chartLeftSpace + ui.lineChart.gridStroke) + '" ' +
                                     'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
 
                         }
@@ -484,7 +502,7 @@ ui.lineChart.Start = () => {
                                 html += '<path d="M';
                                 if (fromStart) html += ' ' + (pathStart.x + (ui.lineChart.gridStroke / 2)) + ' ' + pathStart.y;
 
-                                const cuttedStart = cutted ? cutted : (ui.lineChart.gridStroke / 2) + ui.lineChart.left
+                                const cuttedStart = cutted ? cutted : (ui.lineChart.gridStroke / 2) + chartLeftSpace
 
                                 html += pathsData +
 
@@ -506,7 +524,7 @@ ui.lineChart.Start = () => {
 
                         if (y.length === 0) { // no y datas
 
-                            posX = ui.lineChart.left;
+                            posX = chartLeftSpace;
                             posY = (data.svgHeight - (ui.lineChart.top + ui.lineChart.bottom));
 
                             pathStart.x = posX;
@@ -531,7 +549,7 @@ ui.lineChart.Start = () => {
 
                         for (let n = 0; n < y.length; n++) {
 
-                            posX = (n * col) + ui.lineChart.left;
+                            posX = (n * col) + chartLeftSpace;
 
                             let range = yMax - yMin; // ignore infinity
                             if (range === 0) range = 1;
@@ -596,7 +614,7 @@ ui.lineChart.Start = () => {
 
                                     if (n > 0 && n < y.length - 1 && y[n - 1] === y[n] && y[n] !== y[n + 1] && y[n + 1] === y[n + 2]) { // multi&multi
 
-                                        repeatedPaths[repeatedIndex] = paths + ' L ' + (((n + 1) * col) + ui.lineChart.left) + ' ' + posY;
+                                        repeatedPaths[repeatedIndex] = paths + ' L ' + (((n + 1) * col) + chartLeftSpace) + ' ' + posY;
 
                                         clearBeforeRepeat();
                                         repeatedMultiple = true;
@@ -609,7 +627,7 @@ ui.lineChart.Start = () => {
                                     }
 
                                     if (n === 0 && posX === pathStart.x) repeatedFromStart = true;
-                                    if (y[n - 1] !== y[n] && y[n] === y[n + 1]) filledPathCuts[repeatedIndex] = (n * col) + ui.lineChart.left; // filled path cut start points
+                                    if (y[n - 1] !== y[n] && y[n] === y[n + 1]) filledPathCuts[repeatedIndex] = (n * col) + chartLeftSpace; // filled path cut start points
 
                                 } else clearBeforeRepeat();
 
@@ -652,10 +670,8 @@ ui.lineChart.Start = () => {
                         // get data names
                         const name = el.getAttribute(ui.lineChart.dataName);
 
-                        if (name !== null && name !== '') {
-                            data.name.push(name);
-
-                        } else data.name.push('');
+                        if (name !== null && name !== '') data.name.push(name);
+                        else data.name.push('');
 
                     });
 
