@@ -159,16 +159,17 @@ const RandomColors = (size: number) => {
 
     // colors
     let defaultColors = [
-        'hsl(199, 88%, 56%)',       // 1. blue
-        'hsl(20, 100%, 66%)',       // 2. orange
-        'hsl(347, 100%, 69%)',      // 3. red
-        'hsl(260, 100%, 70%)',      // 4. purple
-        'hsl(180, 48%, 52%)',       // 5. turquoise
-        'hsl(42, 100%, 67%)',       // 6. yellow
-        'hsl(226, 52.2%, 50%)',     // 7. dark blue
-        'hsl(284.9, 69.9%, 70%)',   // 8. light purple
-        'hsl(186.3, 70.6%, 68%)',   // 9. light turquoise
-        'hsl(210.2, 86.5%, 68%)',   // 10. middle blue
+        'hsl(199, 88%, 56%)',       // blue
+        'hsl(20, 100%, 66%)',       // orange
+        'hsl(260, 100%, 70%)',      // purple
+        'hsl(347, 100%, 69%)',      // red
+        'hsl(180, 48%, 52%)',       // turquoise
+        'hsl(42, 100%, 67%)',       // yellow
+        'hsl(226, 52.2%, 50%)',     // dark blue
+        'hsl(142, 82%, 42%)',       // green
+        'hsl(284.9, 69.9%, 70%)',   // light purple
+        'hsl(28.2, 100%, 36.3%)',   // brown
+        'hsl(210.2, 86.5%, 68%)',   // middle blue
     ];
 
     const randomColors = [];
