@@ -319,14 +319,14 @@
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#user-remove"/></svg><span>user-remove</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#user-search"/></svg><span>user-search</span></li>
                     <li><svg class="ui-icon"><use href="../dist/icons.svg#user-ban"/></svg><span>user-ban</span></li>
-                    <li><svg class="ui-icon ui-animate-spin ui-icon-xxl"><use href="../dist/icons.svg#loader-line"/></svg><span>loader-line</span></li>
-                    <li><svg class="ui-icon ui-animate-spin ui-icon-xxl"><use href="../dist/icons.svg#loader-line-dual"/></svg><span>loader-line-dual</span></li>
-                    <li><svg class="ui-icon ui-animate-spin ui-icon-xxl"><use href="../dist/icons.svg#loader-line-dash"/></svg><span>loader-line-dash</span></li>
-                    <li><svg class="ui-icon ui-animate-spin ui-icon-xxl"><use href="../dist/icons.svg#loader-roll"/></svg><span>loader-roll</span></li>
-                    <li><svg class="ui-icon ui-animate-spin ui-icon-xxl"><use href="../dist/icons.svg#loader-spin"/></svg><span>loader-spin</span></li>
-                    <li><svg class="ui-icon ui-animate-spin ui-icon-xxl"><use href="../dist/icons.svg#loader-circle-sm"/></svg><span>loader-circle-sm</span></li>
-                    <li><svg class="ui-icon ui-animate-spin ui-icon-xxl"><use href="../dist/icons.svg#loader-circle"/></svg><span>loader-circle</span></li>
-                    <li><svg class="ui-icon ui-animate-spin ui-icon-xxl"><use href="../dist/icons.svg#loader-drop"/></svg><span>loader-drop</span></li>
+                    <li><svg class="ui-icon ui-animate-spin"><use href="../dist/icons.svg#loader-line"/></svg><span>loader-line</span></li>
+                    <li><svg class="ui-icon ui-animate-spin"><use href="../dist/icons.svg#loader-line-dual"/></svg><span>loader-line-dual</span></li>
+                    <li><svg class="ui-icon ui-animate-spin"><use href="../dist/icons.svg#loader-line-dash"/></svg><span>loader-line-dash</span></li>
+                    <li><svg class="ui-icon ui-animate-spin"><use href="../dist/icons.svg#loader-roll"/></svg><span>loader-roll</span></li>
+                    <li><svg class="ui-icon ui-animate-spin"><use href="../dist/icons.svg#loader-spin"/></svg><span>loader-spin</span></li>
+                    <li><svg class="ui-icon ui-animate-spin"><use href="../dist/icons.svg#loader-circle-sm"/></svg><span>loader-circle-sm</span></li>
+                    <li><svg class="ui-icon ui-animate-spin"><use href="../dist/icons.svg#loader-circle"/></svg><span>loader-circle</span></li>
+                    <li><svg class="ui-icon ui-animate-spin"><use href="../dist/icons.svg#loader-drop"/></svg><span>loader-drop</span></li>
                 </ul>
 
                 <h2 class="ui-h2">Touch Icons</h2>
