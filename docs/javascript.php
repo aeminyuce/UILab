@@ -32,7 +32,7 @@
                     <span class="ui-sp-30"></span>
 
                     <b class="ui-m-5-b">Remove delegated event listeners:</b>
-                    <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.off(parentElement, event);</pre>
+                    <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.off(parentElement, event); // do not use with document (use html, body, main etc.)</pre>
 
                     <span class="ui-sp-30"></span>
 
