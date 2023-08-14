@@ -71,6 +71,44 @@
 
                 <h5 class="ui-h5 ui-font-bold ui-align-c ui-m-15-b">Steps with Tooltip</h5>
                 <div class="ui-p-30-b">
+                    <ul class="ui-steps-bar ui-steps-info">
+                        <li>
+                            <span data-ui-tooltip title="Completed">1</span>
+                            Step Name Here
+                        </li>
+                        <li class="ui-active">
+                            <span data-ui-tooltip title="Completed">2</span>
+                            Step Name Here
+                        </li>
+                        <li>
+                            <span data-ui-tooltip title="Not Started"></span>
+                            Step Name Here
+                        </li>
+                        <li>
+                            <span data-ui-tooltip title="Not Started"></span>
+                            Step Name Here
+                        </li>
+                    </ul>
+                    <span class="ui-sp-15"></span>
+                    <ul class="ui-steps-bar ui-steps-info ui-theme-yellow ui-text">
+                        <li>
+                            <span data-ui-tooltip title="Completed">A</span>
+                            Step Name Here
+                        </li>
+                        <li>
+                            <span data-ui-tooltip title="Completed">B</span>
+                            Step Name Here
+                        </li>
+                        <li class="ui-active">
+                            <span data-ui-tooltip title="Completed">C</span>
+                            Step Name Here
+                        </li>
+                        <li>
+                            <span data-ui-tooltip title="Not Started"></span>
+                            Step Name Here
+                        </li>
+                    </ul>
+                    <span class="ui-sp-15"></span>
                     <ul class="ui-steps-bar ui-steps-icon">
                         <li>
                             <svg class="ui-icon" data-ui-tooltip name="Completed"><use href="../dist/icons.svg#check-circle"/></svg>
@@ -81,11 +119,11 @@
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="ui-icon" data-ui-tooltip name="Completed"><use href="../dist/icons.svg#check-circle"/></svg>
+                            <svg class="ui-icon" data-ui-tooltip name="Not Started"><use href="../dist/icons.svg#check-circle"/></svg>
                             Step Name Here
                         </li>
                         <li>
-                            <svg class="ui-icon" data-ui-tooltip name="Completed"><use href="../dist/icons.svg#check-circle"/></svg>
+                            <svg class="ui-icon" data-ui-tooltip name="Not Started"><use href="../dist/icons.svg#check-circle"/></svg>
                             Step Name Here
                         </li>
                     </ul>
@@ -108,7 +146,7 @@
                             Step Name Here
                         </li>
                         <li>
-                            <span data-ui-tooltip title="Completed"></span>
+                            <span data-ui-tooltip title="Not Started"></span>
                             Step Name Here
                         </li>
                     </ul>
@@ -179,6 +217,44 @@
 
                     <h5 class="ui-h5 ui-font-bold ui-align-c ui-m-15-b">Steps with Tooltip</h5>
                     <div class="ui-p-30-b">
+                        <ul class="ui-steps-bar ui-steps-info">
+                            <li>
+                                <span data-ui-tooltip title="Completed">1</span>
+                                Step Name Here
+                            </li>
+                            <li class="ui-active">
+                                <span data-ui-tooltip title="Completed">2</span>
+                                Step Name Here
+                            </li>
+                            <li>
+                                <span data-ui-tooltip title="Not Started"></span>
+                                Step Name Here
+                            </li>
+                            <li>
+                                <span data-ui-tooltip title="Not Started"></span>
+                                Step Name Here
+                            </li>
+                        </ul>
+                        <span class="ui-sp-15"></span>
+                        <ul class="ui-steps-bar ui-steps-info ui-theme-yellow ui-text">
+                            <li>
+                                <span data-ui-tooltip title="Completed">A</span>
+                                Step Name Here
+                            </li>
+                            <li>
+                                <span data-ui-tooltip title="Completed">B</span>
+                                Step Name Here
+                            </li>
+                            <li class="ui-active">
+                                <span data-ui-tooltip title="Completed">C</span>
+                                Step Name Here
+                            </li>
+                            <li>
+                                <span data-ui-tooltip title="Not Started"></span>
+                                Step Name Here
+                            </li>
+                        </ul>
+                        <span class="ui-sp-15"></span>
                         <ul class="ui-steps-bar ui-steps-icon">
                             <li>
                                 <svg class="ui-icon" data-ui-tooltip name="Completed"><use href="../dist/icons.svg#check-circle"/></svg>
@@ -189,11 +265,11 @@
                                 Step Name Here
                             </li>
                             <li>
-                                <svg class="ui-icon" data-ui-tooltip name="Completed"><use href="../dist/icons.svg#check-circle"/></svg>
+                                <svg class="ui-icon" data-ui-tooltip name="Not Started"><use href="../dist/icons.svg#check-circle"/></svg>
                                 Step Name Here
                             </li>
                             <li>
-                                <svg class="ui-icon" data-ui-tooltip name="Completed"><use href="../dist/icons.svg#check-circle"/></svg>
+                                <svg class="ui-icon" data-ui-tooltip name="Not Started"><use href="../dist/icons.svg#check-circle"/></svg>
                                 Step Name Here
                             </li>
                         </ul>
@@ -216,7 +292,7 @@
                                 Step Name Here
                             </li>
                             <li>
-                                <span data-ui-tooltip title="Completed"></span>
+                                <span data-ui-tooltip title="Not Started"></span>
                                 Step Name Here
                             </li>
                         </ul>

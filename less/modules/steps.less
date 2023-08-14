@@ -3,8 +3,8 @@
 @import (reference) '../core/globals.less';
 @import (reference) '../core/mixins.less';
 
-@steps-active-size:                     18px;
-@steps-passive-size:                    10px;
+@steps-active-size:                     20px;
+@steps-passive-size:                    12px;
 @steps-margin-v:                        5px;
 @steps-line-size:                       2px;
 @steps-icon-opacity:                    .42;
@@ -81,15 +81,20 @@
         }
         &:not(.ui-steps-icon) {
             li {
-                &:before { background-color: @green; }
                 &.ui-active {
                     &:before { ._bg-var(body-bg); }
                 }
             }
         }
+        &:not(.ui-steps-info) {
+            li {
+                &:before { background-color: currentColor; }
+            }
+        }
+
         &[class*="ui-text"] {
             li {
-                &:before { background-color: currentColor; border-color: currentColor; }
+                &:before { border-color: currentColor; }
                 &:after { background-color: currentColor; }
             }
         }
@@ -104,7 +109,17 @@
 
                 & > .ui-icon { color: currentColor; width: @steps-active-size; height: @steps-active-size; display: block; position: absolute; top: @steps-margin-v; left: 50%; z-index: 2; transform: translateX(-50%); }
                 &.ui-active ~ li {
-                    & > .ui-icon { opacity: 0; }
+                    & > .ui-icon { width: @steps-passive-size; height: @steps-passive-size; top: (@steps-margin-v + (@steps-active-size - @steps-passive-size) / 2); opacity: 0; }
+                }
+            }
+        }
+        &.ui-steps-info {
+            li {
+                &:before { border-color: currentColor; }
+                & > span,& > strong { color: currentColor; font-size: (@steps-active-size / 2); line-height: @steps-active-size; width: @steps-active-size; height: @steps-active-size; display: block; position: absolute; top: @steps-margin-v; left: 50%; z-index: 2; transform: translateX(-50%); @no-selection(); }
+
+                &.ui-active ~ li {
+                    & > span,& > strong { width: @steps-passive-size; height: @steps-passive-size; top: (@steps-margin-v + (@steps-active-size - @steps-passive-size) / 2); }
                 }
             }
         }
