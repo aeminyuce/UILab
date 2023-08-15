@@ -1796,8 +1796,8 @@ html .ui-row {
   --ui-code-bg: hsl(343, 37%, 96%);
 }
 [data-ui-mode="dark"] {
-  --ui-black-25: hsla(0, 0%, 100%, 0.72);
-  --ui-black-50: hsla(0, 0%, 100%, 0.87);
+  --ui-black-25: hsla(0, 0%, 100%, 0.45);
+  --ui-black-50: hsla(0, 0%, 100%, 0.65);
   --ui-code-color: hsl(0, 0%, 100%);
   --ui-code-bg: hsl(345, 74%, 52%);
 }
@@ -1815,13 +1815,13 @@ html .ui-row {
 .ui-color-white-50 .ui-icon:not([class*="ui-text-"]):not([class*="ui-fill-"]),
 .ui-color-white-50 a:not([class*="ui-text-"]):not([class*="ui-fill-"]),
 .ui-color-white-50 button:not([class*="ui-text-"]):not([class*="ui-fill-"]) {
-  color: hsla(0, 0%, 100%, 0.87) !important;
+  color: hsla(0, 0%, 100%, 0.65) !important;
 }
 .ui-color-white-25,
 .ui-color-white-25 .ui-icon:not([class*="ui-text-"]):not([class*="ui-fill-"]),
 .ui-color-white-25 a:not([class*="ui-text-"]):not([class*="ui-fill-"]),
 .ui-color-white-25 button:not([class*="ui-text-"]):not([class*="ui-fill-"]) {
-  color: hsla(0, 0%, 100%, 0.72) !important;
+  color: hsla(0, 0%, 100%, 0.45) !important;
 }
 .ui-color-black,
 .ui-color-black .ui-icon:not([class*="ui-text"]):not([class*="ui-fill-"]),
