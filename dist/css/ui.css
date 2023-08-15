@@ -4816,7 +4816,7 @@ a.ui-btn-no-style {
   --ui-range-track-hover-bg: hsla(0, 0%, 100%, 0.15);
   --ui-check-bg: hsla(0, 0%, 100%, 0.65);
   --ui-switch-bg: hsla(0, 0%, 100%, 0.15);
-  --ui-form-disabled-bg: hsla(0, 0%, 100%, 0.075);
+  --ui-form-disabled-bg: hsla(0, 0%, 100%, 0.225);
   --ui-form-readonly-color: hsla(0, 0%, 100%, 0.65);
 }
 .ui-ease-form,
@@ -5455,7 +5455,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   opacity: 0.65;
 }
 .ui-form-disabled.ui-form-light {
-  background-color: hsla(0, 0%, 100%, 0.075);
+  background-color: hsla(0, 0%, 100%, 0.225);
 }
 .ui-form-readonly input,
 .ui-form-readonly textarea {
