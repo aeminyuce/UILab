@@ -8,6 +8,8 @@ interface ButtonProps {
 
     children?: React.ReactNode,
 
+    as?: 'div' | 'span',
+
     onClick?: React.ReactEventHandler,
     onMouseDown?: React.ReactEventHandler,
     onMouseUp?: React.ReactEventHandler,
@@ -48,7 +50,7 @@ interface ButtonProps {
 
 const Button = function (
 
-    { children, onClick, onMouseDown, onMouseUp, value, disabled, title, to, state, href, target, active, passive, multi, square, ghost, block, myRef, noease, nostyle, type, size, fluid, id, form, className, style, data }:ButtonProps) {
+    { children, as, onClick, onMouseDown, onMouseUp, value, disabled, title, to, state, href, target, active, passive, multi, square, ghost, block, myRef, noease, nostyle, type, size, fluid, id, form, className, style, data }:ButtonProps) {
 
         // classes
         const setActive = active ? ' ui-btn-active' : '';
@@ -85,7 +87,22 @@ const Button = function (
 
         }
 
-        return (
+        if (as) return (
+            <>
+                {as === 'div' &&
+                    <div ref={myRef} className={classes} {...setData} style={style} onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
+                        {children}
+                    </div>
+                }
+                {as === 'span' &&
+                    <span ref={myRef} className={classes} {...setData} style={style} onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
+                        {children}
+                    </span>
+                }
+            </>
+        );
+
+        else return (
             <>
                 {href &&
                     <a ref={myRef} href={href} id={id} target={target} title={title} className={classes} {...setData} style={style}

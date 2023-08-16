@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useId, useEffect } from 'react';
 import { ui } from '@ui';
+import Button from '@components/Button';
 import Icon from '@components/Icon';
 
 // assets
@@ -165,6 +166,91 @@ const FormInput = function (
                         </datalist>
                     }
                 </>
+            </div>
+        );
+    }
+
+interface FormFileProps {
+
+    onChange?: React.ReactEventHandler,
+    onInput?: React.ReactEventHandler,
+    onBlur?: React.ReactEventHandler,
+
+    btnName?: string,
+    placeholder?: string,
+
+    name?: string,
+    tabIndex?: number,
+    value?: any,
+    defaultValue?: any,
+    disabled?: boolean,
+    light?: boolean,
+    inline?: 'always' | 'xs',
+
+    multiple?: boolean,
+    readOnly?: boolean,
+    required?: boolean,
+
+    myRef?: any,
+
+    noease?: boolean,
+
+    id?: any,
+    className?: string,
+    btnClassName?: string,
+    style?: any,
+
+}
+
+const FormFile = function (
+
+    { onChange, onInput, onBlur, btnName, placeholder, name, tabIndex, value, defaultValue, disabled, light, inline, multiple, readOnly, required, myRef, noease, id, className, btnClassName, style }:FormFileProps) {
+
+        // names
+        const setBtnName = btnName ? btnName : 'Dosya Seç';
+        const setPlaceholder = placeholder ? placeholder : 'Seçilen dosya yok';
+
+
+        // classes
+        const setClassName = className ? ' ' + className : '';
+        const setDisabled = disabled ? ' ui-form-disabled' : '';
+        const setlight = light ? ' ui-form-light' : '';
+        const setEase = noease ? '' : ' ui-ease-form';
+
+        let setInline = '';
+
+        if (inline) {
+
+            if (inline === 'always') setInline = ' ui-form-inline';
+            if (inline === 'xs') setInline = ' ui-form-inline-xs';
+
+        }
+
+        const classes = 'ui-file' + setDisabled + setlight + setClassName + setInline + setEase;
+
+        // children classes
+        const setRequired = required ? ' ui-required' : '';
+
+        let childrenClasses = setRequired;
+        childrenClasses = childrenClasses.replace(/^\s+/g, ''); // remove first spaces
+
+        if (childrenClasses === '') childrenClasses = null;
+
+        // btn classes
+        let btnClasses = btnClassName ? btnClassName : null;
+
+        if (childrenClasses === '') childrenClasses = null;
+
+        return (
+            <div className={classes} style={style}>
+                <input id={id} ref={myRef} type="file" name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} placeholder={setPlaceholder}
+                    className={childrenClasses} disabled={disabled} multiple={multiple} readOnly={readOnly}
+                    onChange={onChange} onInput={onInput} onBlur={onBlur}
+                />
+                <i>{setPlaceholder}</i>
+                <Button as="span" className={btnClasses}>
+                    {setBtnName}
+                </Button>
             </div>
         );
     }
@@ -445,6 +531,7 @@ const FormHint = function (
 export default Object.assign(Form, {
     Label: FormLabel,
     Input: FormInput,
+    File: FormFile,
     Textarea: FormTextarea,
     Select: FormSelect,
     Check: FormCheck,

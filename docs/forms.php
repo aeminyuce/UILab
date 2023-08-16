@@ -1097,25 +1097,25 @@
                 <h3 class="ui-h3">File Input</h3>
                 <div class="ui-p-30-b">
                     <div class="ui-file ui-round ui-no-border ui-ease-form">
-                        <input type="file">
+                        <input type="file" placeholder="Choose file">
+                        <i>Choose file</i>
                         <span class="ui-btn ui-ease-btn">Browse</span>
-                        <i>Choose file.</i>
                     </div>
 
                     <span class="ui-sp-10"></span>
 
                     <div class="ui-file ui-round ui-ease-form">
-                        <input type="file">
+                        <input type="file" placeholder="Choose file">
+                        <i>Choose file</i>
                         <span class="ui-btn ui-ease-btn">Browse</span>
-                        <i>Choose file.</i>
                     </div>
 
                     <span class="ui-sp-10"></span>
 
                     <div class="ui-file ui-round ui-border-dual ui-ease-form">
-                        <input type="file">
+                        <input type="file" placeholder="Choose file">
+                        <i>Choose file</i>
                         <span class="ui-btn ui-ease-btn">Browse</span>
-                        <i>Choose file.</i>
                     </div>
 
                     <span class="ui-sp-10"></span>
@@ -1123,25 +1123,25 @@
                     <label class="ui-form-label ui-p-10-b">File Input with Large Forms</label>
                     <div class="ui-form-lg ui-ease-1st-form">
                         <div class="ui-file ui-round ui-no-border">
-                            <input type="file">
+                            <input type="file" placeholder="Choose file">
+                            <i>Choose file</i>
                             <span class="ui-btn ui-ease-btn">Browse</span>
-                            <i>Choose file.</i>
                         </div>
 
                         <span class="ui-sp-10"></span>
 
                         <div class="ui-file ui-round">
-                            <input type="file">
+                            <input type="file" placeholder="Choose file">
+                            <i>Choose file</i>
                             <span class="ui-btn ui-ease-btn">Browse</span>
-                            <i>Choose file.</i>
                         </div>
 
                         <span class="ui-sp-10"></span>
 
                         <div class="ui-file ui-round ui-border-dual">
-                            <input type="file">
+                            <input type="file" placeholder="Choose file">
+                            <i>Choose file</i>
                             <span class="ui-btn ui-ease-btn">Browse</span>
-                            <i>Choose file.</i>
                         </div>
                     </div>
 
@@ -2227,9 +2227,9 @@
                             </div>
                             <div class="ui-col-9">
                                 <div class="ui-file ui-round ui-border-dual ui-ease-form">
-                                    <input class="ui-required" type="file">
+                                    <input class="ui-required" type="file" placeholder="Choose file">
                                     <span class="ui-btn ui-ease-btn">Browse</span>
-                                    <i>Choose file.</i>
+                                    <i>Choose file</i>
                                 </div>
                                 <p class="ui-required-msg">Please, select a file.</p>
                                 <i class="ui-form-hint ui-color-black-25">* Required</i>

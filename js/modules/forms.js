@@ -155,10 +155,7 @@ ui.forms = {
             function () {
 
                 const info = ui.find(ui.forms.tagFileInfo, this.parentElement)[0];
-
-                if (info !== undefined) {
-                    info.innerHTML = this.value;
-                }
+                if (info !== undefined) info.innerHTML = this.value;
 
             });
 
@@ -276,6 +273,14 @@ ui.forms = {
                             // trigger defined event listeners after form clear
                             if (!ui.hasClass(el, ui.forms.nameRequired)) { // discard required forms
                                 ui.trigger(el, 'keydown keyup');
+                            }
+
+                            // reset file info with placeholder
+                            if (el.type === 'file') {
+
+                                const info = ui.find(ui.forms.tagFileInfo, el.parentElement)[0];
+                                if (info !== undefined) info.innerHTML = el.placeholder;
+
                             }
 
                         });

@@ -268,20 +268,21 @@
             }
             &.ui-round {
                 &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
-
-                .ui-btn:not(.ui-btn-square) { border-radius: (@round - (@round * 0.3333333333) - 1) 0 0 (@round - (@round * 0.3333333333) - 1); }
             }
             .ui-desktop &:hover {
                 input[class] { opacity: @file-input-hover-opacity; }
                 .ui-btn:not([class*="ui-fill-"]):not(.ui-btn-passive) { ._bg-var(btn-hover-bg); }
             }
 
+            &:not(.ui-no-border):not(.ui-border-dual) {
+                .ui-btn { height: (@btn-default - 2); }
+            }
             &.ui-no-border {
                 .ui-btn { line-height: (@btn-default - @file-btn-padding * 2) !important; }
                 & > i { line-height: @btn-default; }
             }
             &.ui-border-dual {
-                .ui-btn { line-height: (@btn-default - (@file-btn-padding * 2 + @border-dual * 2)) !important; }
+                .ui-btn { line-height: (@btn-default - (@file-btn-padding * 2 + @border-dual * 2)) !important; height: (@btn-default - @border-dual * 2); }
                 & > i { line-height: (@btn-default - 4); }
             }
         }
@@ -590,17 +591,18 @@
                 & > i { font-size: @font-16; line-height: (@btn-lg - 2); }
 
                 .ui-btn {
-                    line-height: (@btn-lg - (@file-btn-padding-lg * 2 + 2));
-
                     .ui-icon { ._icon((@btn-lg-icon - 2)); }
                 }
 
+                &:not(.ui-no-border):not(.ui-border-dual) {
+                    .ui-btn { line-height: (@btn-lg - (@file-btn-padding-lg * 2 - @border-dual)); height: (@btn-lg - 2); }
+                }
                 &.ui-no-border {
-                    .ui-tn { line-height: (@btn-lg - @file-btn-padding-lg * 2); }
+                    .ui-btn { line-height: (@btn-lg - @file-btn-padding-lg * 2); }
                     & > i { line-height: @btn-lg; }
                 }
                 &.ui-border-dual {
-                    .ui-btn { line-height: (@btn-lg - (@file-btn-padding-lg * 2 + @border-dual * 2)); }
+                    .ui-btn { line-height: (@btn-lg - (@file-btn-padding-lg * 2 - @border-dual * 2)); height: (@btn-lg - @border-dual * 2); }
                     & > i { line-height: (@btn-lg - 4); }
                 }
             }

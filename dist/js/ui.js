@@ -1678,9 +1678,7 @@ ui.forms = {
     });
     ui.on(document, 'change', '.' + ui.forms.targetFile + ' input', function () {
       var info = ui.find(ui.forms.tagFileInfo, this.parentElement)[0];
-      if (info !== undefined) {
-        info.innerHTML = this.value;
-      }
+      if (info !== undefined) info.innerHTML = this.value;
     });
     ui.on(document, 'click', 'input[type="checkbox"].' + ui.forms.targetIndeterminate, function () {
       if (this.readOnly) this.checked = this.readOnly = false;else if (!this.checked) this.readOnly = this.indeterminate = true;
@@ -1725,6 +1723,10 @@ ui.forms = {
         Array.prototype.forEach.call(forms, function (el) {
           if (!ui.hasClass(el, ui.forms.nameRequired)) {
             ui.trigger(el, 'keydown keyup');
+          }
+          if (el.type === 'file') {
+            var info = ui.find(ui.forms.tagFileInfo, el.parentElement)[0];
+            if (info !== undefined) info.innerHTML = el.placeholder;
           }
         });
         ui.removeClass(errors, ui.forms.nameError);

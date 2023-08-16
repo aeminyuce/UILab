@@ -5105,15 +5105,15 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 .ui-file.ui-round.ui-round {
   border-radius: 6.66666667px;
 }
-.ui-file.ui-round .ui-btn:not(.ui-btn-square) {
-  border-radius: 5.66666667px 0 0 5.66666667px;
-}
 .ui-desktop .ui-file:hover input[class] {
   opacity: 0.35;
 }
 .ui-desktop .ui-file:hover .ui-btn:not([class*="ui-fill-"]):not(.ui-btn-passive) {
   background-color: hsla(0, 0%, 0%, 0.15);
   background-color: var(--ui-btn-hover-bg);
+}
+.ui-file:not(.ui-no-border):not(.ui-border-dual) .ui-btn {
+  height: 40px;
 }
 .ui-file.ui-no-border .ui-btn {
   line-height: 22px !important;
@@ -5123,6 +5123,7 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
 }
 .ui-file.ui-border-dual .ui-btn {
   line-height: 18px !important;
+  height: 38px;
 }
 .ui-file.ui-border-dual > i {
   line-height: 38px;
@@ -5645,21 +5646,23 @@ html:not(.ui-no-effects) .ui-ease-range::-moz-range-track {
   font-size: 16px;
   line-height: 46px;
 }
-.ui-form-lg .ui-file .ui-btn {
-  line-height: 18px;
-}
 .ui-form-lg .ui-file .ui-btn .ui-icon {
   width: 23px;
   height: 23px;
 }
-.ui-form-lg .ui-file.ui-no-border .ui-tn {
+.ui-form-lg .ui-file:not(.ui-no-border):not(.ui-border-dual) .ui-btn {
+  line-height: 22px;
+  height: 46px;
+}
+.ui-form-lg .ui-file.ui-no-border .ui-btn {
   line-height: 20px;
 }
 .ui-form-lg .ui-file.ui-no-border > i {
   line-height: 48px;
 }
 .ui-form-lg .ui-file.ui-border-dual .ui-btn {
-  line-height: 16px;
+  line-height: 24px;
+  height: 44px;
 }
 .ui-form-lg .ui-file.ui-border-dual > i {
   line-height: 44px;
