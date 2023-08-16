@@ -76,11 +76,6 @@
 
                     <span class="ui-sp-30"></span>
 
-                    <b class="ui-m-5-b">.each() Run for each matched element:</b>
-                    <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.each(element, function);</pre>
-
-                    <span class="ui-sp-30"></span>
-
                     <b class="ui-m-5-b">.closest() Returns the first ancestor:</b>
                     <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.closest(element, parentElement);</pre>
 

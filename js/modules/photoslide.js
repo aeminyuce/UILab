@@ -46,14 +46,14 @@ ui.photoslide = {
         var slider, j, images, dataSrc, nav, navDots, re;
 
         images = ui.find('.' + ui.photoslide.target + ' img');
-        ui.each(images,
+        Array.prototype.forEach.call(images,
 
-            function (i) {
+            (el, i) => {
 
                 if (dataSrcLists[i] !== undefined) return;
-                dataSrc = images[i].getAttribute(ui.photoslide.dataSrc);
+                dataSrc = el.getAttribute(ui.photoslide.dataSrc);
 
-                slider = ui.closest(this, '.' + ui.photoslide.target)[0];
+                slider = ui.closest(el, '.' + ui.photoslide.target)[0];
                 ui.addClass(slider, ui.photoslide.nameLoaded);
 
                 if (dataSrc !== null && dataSrc !== '') {
@@ -71,7 +71,7 @@ ui.photoslide = {
                 re = new RegExp(ui.photoslide.rexFiles);
                 if (!dataSrcLists[i][0].match(re)) return;
 
-                images[i].removeAttribute(ui.photoslide.dataSrc);
+                el.removeAttribute(ui.photoslide.dataSrc);
 
                 // create nav
                 nav = ui.find('.' + ui.photoslide.nameNav, slider)[0];

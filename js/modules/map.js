@@ -33,32 +33,32 @@ ui.map.Start = () => {
 
     arr = [];
 
-    ui.each(map,
+    Array.prototype.forEach.call(map,
 
-        function (i) {
+        (el, i) => {
 
             arr[i] = [];
-            items = ui.find(ui.map.tagTarget + '[' + ui.map.dataSize + ']', this);
+            items = ui.find(ui.map.tagTarget + '[' + ui.map.dataSize + ']', el);
 
-            ui.each(items,
+            Array.prototype.forEach.call(items,
 
-                function () {
+                item => {
 
-                    data = this.getAttribute(ui.map.dataSize);
+                    data = item.getAttribute(ui.map.dataSize);
                     if (data > 0) { arr[i].push(data); }
 
                 });
 
             arr[i] = arr[i].sort((a, b) => b - a);
 
-            ui.each(items,
+            Array.prototype.forEach.call(items,
 
-                function () {
+                item => {
 
-                    data = this.getAttribute(ui.map.dataSize);
+                    data = item.getAttribute(ui.map.dataSize);
                     if (data > 0) {
 
-                        ui.addClass(this, ui.map.nameActive);
+                        ui.addClass(item, ui.map.nameActive);
 
                         opacity = Math.sqrt(data) / Math.sqrt(arr[i][0]);
                         opacity = opacity.toFixed(2);
@@ -71,7 +71,7 @@ ui.map.Start = () => {
                             opacity = ui.map.opacityMin;
                         }
 
-                        this.setAttribute('style', 'opacity: ' + opacity + ';');
+                        item.setAttribute('style', 'opacity: ' + opacity + ';');
 
                     }
 

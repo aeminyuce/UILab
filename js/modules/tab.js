@@ -54,14 +54,10 @@ ui.tab.Start = () => {
             innerTabs = ui.find('.' + ui.tab.targetParent + ' .' + ui.tab.targetParent + ' .' + ui.tab.targetTab, parent);
             innerTabs = Array.prototype.slice.call(innerTabs);
 
-            ui.each(tabs,
+            Array.prototype.forEach.call(tabs,
 
-                function () {
-
-                    if (innerTabs.indexOf(this) === -1) {
-                        outerTabs.push(this);
-                    }
-
+                el => {
+                    if (innerTabs.indexOf(el) === -1) outerTabs.push(el);
                 });
 
             if (outerTabs.length !== 0) { tabs = outerTabs; }
@@ -73,14 +69,10 @@ ui.tab.Start = () => {
             innerContent = ui.find('.' + ui.tab.targetParent + ' .' + ui.tab.targetParent + ' .' + ui.tab.nameContent, parent);
             innerContent = Array.prototype.slice.call(innerContent);
 
-            ui.each(content,
+            Array.prototype.forEach.call(content,
 
-                function () {
-
-                    if (innerContent.indexOf(this) === -1) {
-                        outerContent.push(this);
-                    }
-
+                el => {
+                    if (innerContent.indexOf(el) === -1) outerContent.push(el);
                 });
 
             if (outerContent.length !== 0) { content = outerContent; }
@@ -165,14 +157,14 @@ ui.tab.Start = () => {
 
                     lastOpened = '';
 
-                    ui.each(content,
+                    Array.prototype.forEach.call(content,
 
-                        function () {
+                        el => {
 
-                            if (this !== currentContent) {
+                            if (el !== currentContent) {
 
-                                if (ui.hasClass(this, ui.tab.nameOpen)) {
-                                    lastOpened = this; // find last opened content
+                                if (ui.hasClass(el, ui.tab.nameOpen)) {
+                                    lastOpened = el; // find last opened content
                                 }
 
                             }

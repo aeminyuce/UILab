@@ -50,10 +50,10 @@ ui.textareaCounter.Start = () => {
 
     ui.textareaCounter.Init = () => {
 
-        ui.each('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + ']:not(.' + ui.textareaCounter.nameToggle + '):not(.' + ui.textareaCounter.nameChange + ')',
+        Array.prototype.forEach.call(ui.find('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + ']:not(.' + ui.textareaCounter.nameToggle + '):not(.' + ui.textareaCounter.nameChange + ')'),
 
-            function () {
-                counter(ui.find('textarea', this)[0]);
+            el => {
+                counter(ui.find('textarea', el)[0]);
             });
 
     };

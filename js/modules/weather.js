@@ -54,7 +54,7 @@ ui.weather = {
 
     ui.weather.Start = () => {
 
-        var date, dateText, dateHtml, clockText, clockHtml, minute, hour, day, month, that, graphs, animations, sun, sunPos, sunrise, sunset;
+        var date, dateText, dateHtml, clockText, clockHtml, minute, hour, day, month, that, animations, sun, sunPos, sunrise, sunset;
 
         animations = [];
 
@@ -63,12 +63,11 @@ ui.weather = {
 
             var i, html;
 
-            graphs = ui.find('.' + ui.weather.target + ' .' + ui.weather.nameGraphs + ':not(.' + ui.weather.nameLoaded + ')');
-            ui.each(graphs,
+            Array.prototype.forEach.call(ui.find('.' + ui.weather.target + ' .' + ui.weather.nameGraphs + ':not(.' + ui.weather.nameLoaded + ')'),
 
-                function () {
+                el => {
 
-                    var data = this.getAttribute(ui.weather.dataGraphs);
+                    var data = el.getAttribute(ui.weather.dataGraphs);
                     if (data !== null && data !== '') {
 
                         data = data.replace(re, ' ').replace(rex, '');
@@ -80,7 +79,7 @@ ui.weather = {
                                 html = '';
                                 animations = [];
 
-                                ui.addClass(this, ui.weather.nameLoaded);
+                                ui.addClass(el, ui.weather.nameLoaded);
 
                                 for (i = 0; i < data.length; i++) {
 
@@ -120,7 +119,7 @@ ui.weather = {
 
                                 }
 
-                                this.insertAdjacentHTML('beforeend', html);
+                                el.insertAdjacentHTML('beforeend', html);
                                 html = '';
 
                             }
@@ -156,10 +155,10 @@ ui.weather = {
 
             if (dateLoaded !== dateText) {
 
-                ui.each('.' + ui.weather.nameWdate,
+                Array.prototype.forEach.call(ui.find('.' + ui.weather.nameWdate),
 
-                    function () {
-                        this.innerHTML = dateHtml;
+                    el => {
+                        el.innerHTML = dateHtml;
                     });
 
             }
@@ -178,19 +177,18 @@ ui.weather = {
 
             if (clockLoaded !== clockText) {
 
-                ui.each('.' + ui.weather.nameWclock,
+                Array.prototype.forEach.call(ui.find('.' + ui.weather.nameWclock),
 
-                    function () {
-                        this.innerHTML = clockHtml;
+                    el => {
+                        el.innerHTML = clockHtml;
                     });
 
                 // check sunrise and sunset
-                graphs = ui.find('.' + ui.weather.target + ' .' + ui.weather.nameGraphs + '[' + ui.weather.dataDay + ']');
-                ui.each(graphs,
+                Array.prototype.forEach.call(ui.find('.' + ui.weather.target + ' .' + ui.weather.nameGraphs + '[' + ui.weather.dataDay + ']'),
 
-                    function () {
+                    el => {
 
-                        sunPos = this.getAttribute(ui.weather.dataDay);
+                        sunPos = el.getAttribute(ui.weather.dataDay);
                         if (sunPos === null || sunPos === '') return;
 
                         sunPos = sunPos.split(',');
@@ -209,8 +207,8 @@ ui.weather = {
                         if (sunset[1].length === 1) { sunset[1] = '0' + sunset[1]; } // sunset minute
 
                         // convert day or night
-                        sun = ui.find('.' + ui.weather.nameClear, this)[0];
-                        that = ui.closest(this, '.' + ui.weather.target)[0];
+                        sun = ui.find('.' + ui.weather.nameClear, el)[0];
+                        that = ui.closest(el, '.' + ui.weather.target)[0];
 
                         if (((hour === sunrise[0] && minute < sunrise[1]) || hour < sunrise[0]) || ((hour === sunset[0] && minute > sunset[1]) || hour > sunset[0])) { // night
 

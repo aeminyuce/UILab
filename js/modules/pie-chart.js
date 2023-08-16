@@ -49,11 +49,11 @@ ui.pieChart = {
         chart = ui.find('.' + ui.pieChart.target);
         if (chart.length < 1) return;
 
-        ui.each(chart,
+        Array.prototype.forEach.call(chart,
 
-            function () {
+            el => {
 
-                elems = ui.find(ui.pieChart.tagDatasHolder, this)[0];
+                elems = ui.find(ui.pieChart.tagDatasHolder, el)[0];
                 elems.style.height = elems.offsetWidth + 'px';
 
             });
@@ -176,16 +176,14 @@ ui.pieChart = {
 
             };
 
-            ui.each(chart,
+            Array.prototype.forEach.call(chart,
 
-                function () {
+                el => {
 
-                    var that = this;
+                    elems = ui.find(ui.pieChart.tagData, el);
+                    ui.find(ui.pieChart.tagDatasHolder, el)[0].style.height = el.offsetWidth + 'px';
 
-                    elems = ui.find(ui.pieChart.tagData, that);
-                    ui.find(ui.pieChart.tagDatasHolder, this)[0].style.height = that.offsetWidth + 'px';
-
-                    const prevMsg = ui.find(ui.pieChart.tagMsgHolder, that)[0];
+                    const prevMsg = ui.find(ui.pieChart.tagMsgHolder, el)[0];
 
                     if (prevMsg !== undefined) { // remove previous loaded messages
 
@@ -196,21 +194,22 @@ ui.pieChart = {
                         }
                     }
 
-                    ui.each(elems,
+                    Array.prototype.forEach.call(elems,
 
-                        function (i) {
-                            loadFnc(that, this, i);
+                        (item, i) => {
+                            loadFnc(el, item, i);
                         });
 
                     if (ui.hasClass(document, ui.pieChart.nameNoEffects)) {
-                        ui.addClass(that, ui.pieChart.nameOpen + ' ' + ui.pieChart.nameOpenEase);
+                        ui.addClass(el, ui.pieChart.nameOpen + ' ' + ui.pieChart.nameOpenEase);
 
                     } else {
 
-                        ui.addClass(that, ui.pieChart.nameOpen);
+                        ui.addClass(el, ui.pieChart.nameOpen);
 
                         setTimeout(() => {
-                            ui.addClass(that, ui.pieChart.nameOpenEase);
+                            ui.addClass(el, ui.pieChart.nameOpenEase);
+
                         }, ui.globals.slow5x); // wait for animations complete
 
                     }

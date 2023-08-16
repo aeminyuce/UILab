@@ -185,16 +185,16 @@ ui.requiredForms.Start = () => {
             holderForms = ui.find('.' + ui.requiredForms.nameInput + ' input.' + ui.requiredForms.target + ',' + '.' + ui.requiredForms.nameSelect + ' select.' + ui.requiredForms.target, p);
             hideErr();
 
-            ui.each(holderForms,
+            Array.prototype.forEach.call(holderForms,
 
-                function () {
+                el => {
 
-                    if (this.tagName === 'SELECT') {
+                    if (el.tagName === 'SELECT') {
                         type = ui.requiredForms.nameSelect;
 
                     } else {
 
-                        type = this.getAttribute('type');
+                        type = el.getAttribute('type');
                         if (type === null || type === '') return;
 
                         if (type === 'text') type = ui.requiredForms.nameInput;
@@ -202,7 +202,7 @@ ui.requiredForms.Start = () => {
 
                     }
 
-                    checkForms(this);
+                    checkForms(el);
 
                 });
 
@@ -238,10 +238,21 @@ ui.requiredForms.Start = () => {
 
             if (formElems.length !== success) {
 
-                ui.each(formElems,
+                Array.prototype.forEach.call(formElems,
 
-                    function () {
-                        ui.trigger(this, 'keyup change');
+                    el => {
+
+                        // trigger defined event listeners after form clear
+                        ui.trigger(el, 'keyup change');
+
+                        // reset file info with placeholder
+                        if (el.type === 'file') {
+
+                            const info = ui.find(ui.forms.tagFileInfo, el.parentElement)[0];
+                            if (info !== undefined) info.innerHTML = el.placeholder;
+
+                        }
+
                     });
 
             }

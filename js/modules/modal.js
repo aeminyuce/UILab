@@ -186,17 +186,17 @@ ui.modal = {
             win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow);
             if (win.length === 0) return;
 
-            ui.each(win,
+            Array.prototype.forEach.call(win,
 
-                function () {
-                    ui.removeClass(this, ui.modal.nameShowEase);
+                el => {
+                    ui.removeClass(el, ui.modal.nameShowEase);
                 });
 
             setTimeout(() => {
 
-                ui.each(win,
+                Array.prototype.forEach.call(win,
 
-                    function () {
+                    el => {
 
                         removeModal = ui.find('.' + ui.modal.nameRemovable, win[0]).length;
 
@@ -204,7 +204,7 @@ ui.modal = {
                             win[0].parentNode.removeChild(win[0]);
 
                         } else { // hide modal window
-                            ui.removeClass(this, ui.modal.nameShow);
+                            ui.removeClass(el, ui.modal.nameShow);
                         }
 
                     });
@@ -240,7 +240,7 @@ ui.modal = {
                 props.callback
             */
 
-            var closeBtn, nonClosable, typeArr, type, created, temp, getSize, size, customSize, sizeArr, forms, bg, html, win, content;
+            var closeBtn, nonClosable, typeArr, type, created, temp, getSize, size, customSize, sizeArr, bg, html, win, content;
 
             if (props === undefined) return;
             if (props.source === undefined) return;
@@ -454,11 +454,10 @@ ui.modal = {
                     showModal();
 
                     // reset forms
-                    forms = ui.find('form', content);
-                    ui.each(forms,
+                    Array.prototype.forEach.call(ui.find('form', content),
 
-                        function () {
-                            this.reset();
+                        el => {
+                            el.reset();
                         });
 
                 } else { // create modal
@@ -466,10 +465,10 @@ ui.modal = {
                     // move source
                     temp = document.createDocumentFragment();
 
-                    ui.each(props.source,
+                    Array.prototype.forEach.call(props.source,
 
-                        function (i) {
-                            temp.appendChild(props.source[i]);
+                        (el) => {
+                            temp.appendChild(el);
                         });
 
                     createModal();

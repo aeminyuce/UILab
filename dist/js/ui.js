@@ -279,11 +279,6 @@ ui.toggleClass = function (that, name) {
     }
   });
 };
-ui.each = function (t, callback) {
-  var l = ui.find(t),
-    i;
-  for (i = 0; i < l.length; i++) callback.call(l[i], i);
-};
 ui.closest = function (that, outer) {
   var outerEl, parentEl;
   if (outer instanceof Object) outerEl = [outer];else outerEl = ui.find(outer);
@@ -905,10 +900,8 @@ ui.tab.Start = function () {
     tabs = ui.find('.' + ui.tab.targetTab, parent);
     innerTabs = ui.find('.' + ui.tab.targetParent + ' .' + ui.tab.targetParent + ' .' + ui.tab.targetTab, parent);
     innerTabs = Array.prototype.slice.call(innerTabs);
-    ui.each(tabs, function () {
-      if (innerTabs.indexOf(this) === -1) {
-        outerTabs.push(this);
-      }
+    Array.prototype.forEach.call(tabs, function (el) {
+      if (innerTabs.indexOf(el) === -1) outerTabs.push(el);
     });
     if (outerTabs.length !== 0) {
       tabs = outerTabs;
@@ -917,10 +910,8 @@ ui.tab.Start = function () {
     content = ui.find('.' + ui.tab.nameContent, parent);
     innerContent = ui.find('.' + ui.tab.targetParent + ' .' + ui.tab.targetParent + ' .' + ui.tab.nameContent, parent);
     innerContent = Array.prototype.slice.call(innerContent);
-    ui.each(content, function () {
-      if (innerContent.indexOf(this) === -1) {
-        outerContent.push(this);
-      }
+    Array.prototype.forEach.call(content, function (el) {
+      if (innerContent.indexOf(el) === -1) outerContent.push(el);
     });
     if (outerContent.length !== 0) {
       content = outerContent;
@@ -973,10 +964,10 @@ ui.tab.Start = function () {
       ui.addClass(tabs[index], ui.tab.nameActive);
       if (toggle || accordion) {
         lastOpened = '';
-        ui.each(content, function () {
-          if (this !== currentContent) {
-            if (ui.hasClass(this, ui.tab.nameOpen)) {
-              lastOpened = this;
+        Array.prototype.forEach.call(content, function (el) {
+          if (el !== currentContent) {
+            if (ui.hasClass(el, ui.tab.nameOpen)) {
+              lastOpened = el;
             }
           }
         });
@@ -1899,15 +1890,15 @@ ui.requiredForms.Start = function () {
       p = checkHolder;
       holderForms = ui.find('.' + ui.requiredForms.nameInput + ' input.' + ui.requiredForms.target + ',' + '.' + ui.requiredForms.nameSelect + ' select.' + ui.requiredForms.target, p);
       hideErr();
-      ui.each(holderForms, function () {
-        if (this.tagName === 'SELECT') {
+      Array.prototype.forEach.call(holderForms, function (el) {
+        if (el.tagName === 'SELECT') {
           type = ui.requiredForms.nameSelect;
         } else {
-          type = this.getAttribute('type');
+          type = el.getAttribute('type');
           if (type === null || type === '') return;
           if (type === 'text') type = ui.requiredForms.nameInput;else type = ui.requiredForms.nameTypePrefix + type;
         }
-        checkForms(this);
+        checkForms(el);
       });
     }
   }
@@ -1924,8 +1915,12 @@ ui.requiredForms.Start = function () {
     success = 0;
     getIndex = 0;
     if (formElems.length !== success) {
-      ui.each(formElems, function () {
-        ui.trigger(this, 'keyup change');
+      Array.prototype.forEach.call(formElems, function (el) {
+        ui.trigger(el, 'keyup change');
+        if (el.type === 'file') {
+          var info = ui.find(ui.forms.tagFileInfo, el.parentElement)[0];
+          if (info !== undefined) info.innerHTML = el.placeholder;
+        }
       });
     }
     for (i = 0; i < formElems.length; i++) {
@@ -1996,8 +1991,8 @@ ui.textareaCounter.Start = function () {
     return false;
   }
   ui.textareaCounter.Init = function () {
-    ui.each('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + ']:not(.' + ui.textareaCounter.nameToggle + '):not(.' + ui.textareaCounter.nameChange + ')', function () {
-      counter(ui.find('textarea', this)[0]);
+    Array.prototype.forEach.call(ui.find('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + ']:not(.' + ui.textareaCounter.nameToggle + '):not(.' + ui.textareaCounter.nameChange + ')'), function (el) {
+      counter(ui.find('textarea', el)[0]);
     });
   };
   ui.textareaCounter.Init();
@@ -4931,16 +4926,16 @@ ui.modal = {
       var win, bg, removeModal;
       win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow);
       if (win.length === 0) return;
-      ui.each(win, function () {
-        ui.removeClass(this, ui.modal.nameShowEase);
+      Array.prototype.forEach.call(win, function (el) {
+        ui.removeClass(el, ui.modal.nameShowEase);
       });
       setTimeout(function () {
-        ui.each(win, function () {
+        Array.prototype.forEach.call(win, function (el) {
           removeModal = ui.find('.' + ui.modal.nameRemovable, win[0]).length;
           if (removeModal > 0) {
             win[0].parentNode.removeChild(win[0]);
           } else {
-            ui.removeClass(this, ui.modal.nameShow);
+            ui.removeClass(el, ui.modal.nameShow);
           }
         });
         bg = ui.find('.' + ui.modal.targetBg);
@@ -4956,7 +4951,7 @@ ui.modal = {
       }, ui.globals.ease);
     };
     ui.modal.open = function (props) {
-      var closeBtn, nonClosable, typeArr, type, created, temp, getSize, size, customSize, sizeArr, forms, bg, html, win, content;
+      var closeBtn, nonClosable, typeArr, type, created, temp, getSize, size, customSize, sizeArr, bg, html, win, content;
       if (props === undefined) return;
       if (props.source === undefined) return;
       ui.modal.close();
@@ -5077,14 +5072,13 @@ ui.modal = {
           win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameActive)[0];
           content = ui.find('.' + ui.modal.nameContent, win)[0];
           showModal();
-          forms = ui.find('form', content);
-          ui.each(forms, function () {
-            this.reset();
+          Array.prototype.forEach.call(ui.find('form', content), function (el) {
+            el.reset();
           });
         } else {
           temp = document.createDocumentFragment();
-          ui.each(props.source, function (i) {
-            temp.appendChild(props.source[i]);
+          Array.prototype.forEach.call(props.source, function (el) {
+            temp.appendChild(el);
           });
           createModal();
           content.appendChild(temp);
@@ -5153,10 +5147,10 @@ ui.photoslide = {
   ui.photoslide.Init = function () {
     var slider, j, images, dataSrc, nav, navDots, re;
     images = ui.find('.' + ui.photoslide.target + ' img');
-    ui.each(images, function (i) {
+    Array.prototype.forEach.call(images, function (el, i) {
       if (dataSrcLists[i] !== undefined) return;
-      dataSrc = images[i].getAttribute(ui.photoslide.dataSrc);
-      slider = ui.closest(this, '.' + ui.photoslide.target)[0];
+      dataSrc = el.getAttribute(ui.photoslide.dataSrc);
+      slider = ui.closest(el, '.' + ui.photoslide.target)[0];
       ui.addClass(slider, ui.photoslide.nameLoaded);
       if (dataSrc !== null && dataSrc !== '') {
         loadedImages[i] = [];
@@ -5167,7 +5161,7 @@ ui.photoslide = {
       }
       re = new RegExp(ui.photoslide.rexFiles);
       if (!dataSrcLists[i][0].match(re)) return;
-      images[i].removeAttribute(ui.photoslide.dataSrc);
+      el.removeAttribute(ui.photoslide.dataSrc);
       nav = ui.find('.' + ui.photoslide.nameNav, slider)[0];
       if (dataSrcLists[i].length > 1) {
         ui.addClass(ui.find('.' + ui.photoslide.nameBtn, slider), ui.photoslide.nameShow);
@@ -5576,13 +5570,12 @@ ui.weather = {
     re = new RegExp('\\s+\\s'),
     rex = new RegExp('^\\s|\\s+$');
   ui.weather.Start = function () {
-    var date, dateText, dateHtml, clockText, clockHtml, minute, hour, day, month, that, graphs, animations, sun, sunPos, sunrise, sunset;
+    var date, dateText, dateHtml, clockText, clockHtml, minute, hour, day, month, that, animations, sun, sunPos, sunrise, sunset;
     animations = [];
     ui.weather.Init = function () {
       var i, html;
-      graphs = ui.find('.' + ui.weather.target + ' .' + ui.weather.nameGraphs + ':not(.' + ui.weather.nameLoaded + ')');
-      ui.each(graphs, function () {
-        var data = this.getAttribute(ui.weather.dataGraphs);
+      Array.prototype.forEach.call(ui.find('.' + ui.weather.target + ' .' + ui.weather.nameGraphs + ':not(.' + ui.weather.nameLoaded + ')'), function (el) {
+        var data = el.getAttribute(ui.weather.dataGraphs);
         if (data !== null && data !== '') {
           data = data.replace(re, ' ').replace(rex, '');
           if (data !== '') {
@@ -5590,7 +5583,7 @@ ui.weather = {
             if (data.length > 0) {
               html = '';
               animations = [];
-              ui.addClass(this, ui.weather.nameLoaded);
+              ui.addClass(el, ui.weather.nameLoaded);
               for (i = 0; i < data.length; i++) {
                 if (data[i] === ui.weather.animateClear) {
                   animations.push(ui.weather.animateStars);
@@ -5612,7 +5605,7 @@ ui.weather = {
               for (i = 0; i < animations.length; i++) {
                 html += '<div ' + 'class="' + ui.weather.nameAnimatePrefix + animations[i] + '" ' + 'style="background-image: url(' + ui.weather.graphPath + animations[i] + '.' + ui.weather.fileType + ');">' + '</div>';
               }
-              this.insertAdjacentHTML('beforeend', html);
+              el.insertAdjacentHTML('beforeend', html);
               html = '';
             }
           }
@@ -5634,8 +5627,8 @@ ui.weather = {
       dateHtml = '<span class="' + ui.weather.nameWday + '">' + dateText + '</span>, ' + month + ' ' + date.getDate() + ', ' + date.getFullYear();
       dateText = dateText + ', ' + month + ' ' + day + ', ' + date.getFullYear();
       if (dateLoaded !== dateText) {
-        ui.each('.' + ui.weather.nameWdate, function () {
-          this.innerHTML = dateHtml;
+        Array.prototype.forEach.call(ui.find('.' + ui.weather.nameWdate), function (el) {
+          el.innerHTML = dateHtml;
         });
       }
       dateLoaded = dateText;
@@ -5650,12 +5643,11 @@ ui.weather = {
       clockHtml = '<span>' + hour + '</span><span>' + minute + '</span>';
       clockText = hour + ':' + minute;
       if (clockLoaded !== clockText) {
-        ui.each('.' + ui.weather.nameWclock, function () {
-          this.innerHTML = clockHtml;
+        Array.prototype.forEach.call(ui.find('.' + ui.weather.nameWclock), function (el) {
+          el.innerHTML = clockHtml;
         });
-        graphs = ui.find('.' + ui.weather.target + ' .' + ui.weather.nameGraphs + '[' + ui.weather.dataDay + ']');
-        ui.each(graphs, function () {
-          sunPos = this.getAttribute(ui.weather.dataDay);
+        Array.prototype.forEach.call(ui.find('.' + ui.weather.target + ' .' + ui.weather.nameGraphs + '[' + ui.weather.dataDay + ']'), function (el) {
+          sunPos = el.getAttribute(ui.weather.dataDay);
           if (sunPos === null || sunPos === '') return;
           sunPos = sunPos.split(',');
           if (sunPos.length !== 2) return;
@@ -5675,8 +5667,8 @@ ui.weather = {
           if (sunset[1].length === 1) {
             sunset[1] = '0' + sunset[1];
           }
-          sun = ui.find('.' + ui.weather.nameClear, this)[0];
-          that = ui.closest(this, '.' + ui.weather.target)[0];
+          sun = ui.find('.' + ui.weather.nameClear, el)[0];
+          that = ui.closest(el, '.' + ui.weather.target)[0];
           if (hour === sunrise[0] && minute < sunrise[1] || hour < sunrise[0] || hour === sunset[0] && minute > sunset[1] || hour > sunset[0]) {
             ui.addClass(that, ui.weather.nameNight);
             if (sun !== undefined) sun.style.removeProperty('left');
@@ -6172,8 +6164,8 @@ ui.pieChart = {
     var chart, elems;
     chart = ui.find('.' + ui.pieChart.target);
     if (chart.length < 1) return;
-    ui.each(chart, function () {
-      elems = ui.find(ui.pieChart.tagDatasHolder, this)[0];
+    Array.prototype.forEach.call(chart, function (el) {
+      elems = ui.find(ui.pieChart.tagDatasHolder, el)[0];
       elems.style.height = elems.offsetWidth + 'px';
     });
   };
@@ -6229,26 +6221,25 @@ ui.pieChart = {
           } else arr[i] = deg;
         }
       };
-      ui.each(chart, function () {
-        var that = this;
-        elems = ui.find(ui.pieChart.tagData, that);
-        ui.find(ui.pieChart.tagDatasHolder, this)[0].style.height = that.offsetWidth + 'px';
-        var prevMsg = ui.find(ui.pieChart.tagMsgHolder, that)[0];
+      Array.prototype.forEach.call(chart, function (el) {
+        elems = ui.find(ui.pieChart.tagData, el);
+        ui.find(ui.pieChart.tagDatasHolder, el)[0].style.height = el.offsetWidth + 'px';
+        var prevMsg = ui.find(ui.pieChart.tagMsgHolder, el)[0];
         if (prevMsg !== undefined) {
           var msgs = ui.find(ui.pieChart.tagMsg, prevMsg);
           for (var j = 0; j < msgs.length; j++) {
             prevMsg.removeChild(msgs[j]);
           }
         }
-        ui.each(elems, function (i) {
-          loadFnc(that, this, i);
+        Array.prototype.forEach.call(elems, function (item, i) {
+          loadFnc(el, item, i);
         });
         if (ui.hasClass(document, ui.pieChart.nameNoEffects)) {
-          ui.addClass(that, ui.pieChart.nameOpen + ' ' + ui.pieChart.nameOpenEase);
+          ui.addClass(el, ui.pieChart.nameOpen + ' ' + ui.pieChart.nameOpenEase);
         } else {
-          ui.addClass(that, ui.pieChart.nameOpen);
+          ui.addClass(el, ui.pieChart.nameOpen);
           setTimeout(function () {
-            ui.addClass(that, ui.pieChart.nameOpenEase);
+            ui.addClass(el, ui.pieChart.nameOpenEase);
           }, ui.globals.slow5x);
         }
       });
@@ -6277,11 +6268,11 @@ ui.map.Start = function () {
   map = ui.find('.' + ui.map.target);
   if (map.length === 0) return;
   arr = [];
-  ui.each(map, function (i) {
+  Array.prototype.forEach.call(map, function (el, i) {
     arr[i] = [];
-    items = ui.find(ui.map.tagTarget + '[' + ui.map.dataSize + ']', this);
-    ui.each(items, function () {
-      data = this.getAttribute(ui.map.dataSize);
+    items = ui.find(ui.map.tagTarget + '[' + ui.map.dataSize + ']', el);
+    Array.prototype.forEach.call(items, function (item) {
+      data = item.getAttribute(ui.map.dataSize);
       if (data > 0) {
         arr[i].push(data);
       }
@@ -6289,10 +6280,10 @@ ui.map.Start = function () {
     arr[i] = arr[i].sort(function (a, b) {
       return b - a;
     });
-    ui.each(items, function () {
-      data = this.getAttribute(ui.map.dataSize);
+    Array.prototype.forEach.call(items, function (item) {
+      data = item.getAttribute(ui.map.dataSize);
       if (data > 0) {
-        ui.addClass(this, ui.map.nameActive);
+        ui.addClass(item, ui.map.nameActive);
         opacity = Math.sqrt(data) / Math.sqrt(arr[i][0]);
         opacity = opacity.toFixed(2);
         if (opacity > ui.map.opacityMax) {
@@ -6301,7 +6292,7 @@ ui.map.Start = function () {
         if (opacity < ui.map.opacityMin) {
           opacity = ui.map.opacityMin;
         }
-        this.setAttribute('style', 'opacity: ' + opacity + ';');
+        item.setAttribute('style', 'opacity: ' + opacity + ';');
       }
     });
     arr[i] = [];
