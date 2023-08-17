@@ -1328,73 +1328,80 @@ ui.currencySpinner = {
 };
 (function () {
   var cacheCurrencySpinner;
-  ui.currencySpinner.Start = function () {
-    var convert = function convert(s) {
-      var regDecimal = new RegExp(/(\,+\d+)/g);
-      var regClear = new RegExp(/(\s)|(\.)|(\,)/g);
-      if (ui.currencySpinner.decimals) {
-        var number = s.replace(regDecimal, '');
-        var decimal = s.match(regDecimal);
-        if (decimal === null) decimal = '0';else decimal = decimal[0];
-        number = Number(number.replace(regClear, ''));
-        decimal = Number(decimal.replace(regClear, ''));
-        s = [];
-        s.push(number);
-        s.push(decimal);
-      } else s = Number(s.replace(/(\s)|(\.)|(\,+\d+)|(\,)/g, ''));
-      return s;
-    };
-    function locales(l) {
-      return l.toLocaleString();
-    }
-    function currencyChange(that) {
-      var parent = ui.closest(that, '.' + ui.currencySpinner.target);
-      var input = ui.find('[type="text"]', parent);
-      var nav = [];
-      nav.up = ui.hasClass(that, ui.currencySpinner.nameUp);
-      nav.down = ui.hasClass(that, ui.currencySpinner.nameDown);
-      var val = convert(input.value);
-      if (nav.up || nav.down) {
-        var step = convert(input.getAttribute('step'));
-        var min = convert(input.getAttribute('min'));
-        if (nav.up) {
-          if (ui.currencySpinner.decimals) {
-            val[0] += step[0];
-            val[1] += step[1];
-          } else val += step;
+  var convert = function convert(s) {
+    var regDecimal = new RegExp(/(\,+\d+)/g);
+    var regClear = new RegExp(/(\s)|(\.)|(\,)/g);
+    if (ui.currencySpinner.decimals) {
+      var number = s.replace(regDecimal, '');
+      var decimal = s.match(regDecimal);
+      if (decimal === null) decimal = '0';else decimal = decimal[0];
+      number = Number(number.replace(regClear, ''));
+      decimal = Number(decimal.replace(regClear, ''));
+      s = [];
+      s.push(number);
+      s.push(decimal);
+    } else s = Number(s.replace(/(\s)|(\.)|(\,+\d+)|(\,)/g, ''));
+    return s;
+  };
+  function locales(l) {
+    return l.toLocaleString();
+  }
+  function currencyChange(that) {
+    var parent = ui.closest(that, '.' + ui.currencySpinner.target);
+    var input = ui.find('[type="text"]', parent);
+    var nav = [];
+    nav.up = ui.hasClass(that, ui.currencySpinner.nameUp);
+    nav.down = ui.hasClass(that, ui.currencySpinner.nameDown);
+    var val = convert(input.value);
+    if (nav.up || nav.down) {
+      var step = convert(input.getAttribute('step'));
+      var min = convert(input.getAttribute('min'));
+      if (nav.up) {
+        if (ui.currencySpinner.decimals) {
+          val[0] += step[0];
+          val[1] += step[1];
+        } else val += step;
+      } else {
+        if (ui.currencySpinner.decimals) {
+          val[0] -= step[0];
+          val[1] -= step[1];
+          if (val[0] <= min[0]) {
+            val[0] = min[0];
+          }
+          if (val[1] <= min[1]) {
+            val[1] = min[1];
+          }
         } else {
-          if (ui.currencySpinner.decimals) {
-            val[0] -= step[0];
-            val[1] -= step[1];
-            if (val[0] <= min[0]) {
-              val[0] = min[0];
-            }
-            if (val[1] <= min[1]) {
-              val[1] = min[1];
-            }
-          } else {
-            val -= step;
-            if (val <= min) {
-              val = min;
-            }
+          val -= step;
+          if (val <= min) {
+            val = min;
           }
         }
-        if (ui.currencySpinner.decimals) {
-          step[0] = locales(step[0]);
-          min[0] = locales(min[0]);
-        } else {
-          step = locales(step);
-          min = locales(min);
-        }
       }
       if (ui.currencySpinner.decimals) {
-        val[0] = locales(val[0]);
-        input.value = val[0] + ',' + val[1];
+        step[0] = locales(step[0]);
+        min[0] = locales(min[0]);
       } else {
-        val = locales(val);
-        input.value = val;
+        step = locales(step);
+        min = locales(min);
       }
     }
+    if (ui.currencySpinner.decimals) {
+      val[0] = locales(val[0]);
+      input.value = val[0] + ',' + val[1];
+    } else {
+      val = locales(val);
+      input.value = val;
+    }
+  }
+  ui.currencySpinner.Init = function () {
+    Array.prototype.forEach.call(ui.find('.' + ui.currencySpinner.target), function (el) {
+      var that = ui.find('input[type="text"]', el)[0];
+      if (that.value) currencyChange(that);
+    });
+  };
+  ui.currencySpinner.Start = function () {
+    ui.currencySpinner.Init();
     ui.on(document, 'click', '.' + ui.currencySpinner.nameUp + ',.' + ui.currencySpinner.nameDown, function (e) {
       e.preventDefault();
       currencyChange(this);
@@ -1445,6 +1452,9 @@ ui.currencySpinner = {
     });
   };
   ui.onload(ui.currencySpinner.Start);
+  ui.on(document, ui.globals.eventAjaxCallback, function () {
+    if (ui.ajax.classNames.indexOf(ui.currencySpinner.target) > -1) ui.currencySpinner.Init();
+  });
 })();
 ui.dualMultiSelect = {
   target: 'ui-dual-multi-select',
@@ -1828,9 +1838,7 @@ ui.requiredForms.Start = function () {
       if (type !== ui.requiredForms.targetAccept) {
         val = el.value.toLowerCase();
         val = val.replace(/^\s+|\s+$/g, '');
-        if (val === '') {
-          showErr();
-        }
+        if (val === '') showErr();
       } else {
         if (el.type === 'radio') {
           radiosCheck = 0;
@@ -1838,9 +1846,7 @@ ui.requiredForms.Start = function () {
           for (i = 0; i < radios.length; i++) {
             if (radios[i].checked) radiosCheck += 1;
           }
-          if (radiosCheck === 0) {
-            showErr();
-          }
+          if (radiosCheck === 0) showErr();
         } else {
           if (!el.checked) {
             if (ui.hasClass(el, ui.requiredForms.nameIndeterminate) && el.indeterminate) return;
@@ -1851,30 +1857,23 @@ ui.requiredForms.Start = function () {
       if (type !== ui.requiredForms.nameSelect) {
         min = el.getAttribute('minlength');
         if (min !== null && min !== '' && !isNaN(min)) {
-          if (val.length < min) {
-            showErr();
-          }
+          if (val.length < min) showErr();
         }
       }
       if (type !== ui.requiredForms.nameSelect) {
+        val = val.replace(/\.|\,/g, '');
         min = el.getAttribute('min');
         if (min !== null && min !== '' && !isNaN(min)) {
-          if (!isNaN(val)) if (Number(val) < Number(min)) {
-            showErr();
-          } else showErr();
+          if (Number(val) < Number(min)) showErr();
         }
         max = el.getAttribute('max');
         if (max !== null && max !== '' && !isNaN(max)) {
-          if (!isNaN(val)) if (Number(val) > Number(max)) {
-            showErr();
-          } else showErr();
+          if (Number(val) > Number(max)) showErr();
         }
       }
       if (type === ui.requiredForms.nameTypePrefix + 'email') {
         reMail = new RegExp(ui.requiredForms.rexMail);
-        if (val.match(reMail) === null) {
-          showErr();
-        }
+        if (val.match(reMail) === null) showErr();
       }
     };
     checkHolder = ui.closest(that, '.' + ui.requiredForms.nameHolder)[0];

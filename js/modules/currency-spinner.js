@@ -23,93 +23,77 @@ ui.currencySpinner = {
 
     let cacheCurrencySpinner;
 
-    ui.currencySpinner.Start = () => {
+    const convert = (s) => {
 
-        const convert = (s) => {
+        const regDecimal = new RegExp(/(\,+\d+)/g);
+        const regClear = new RegExp(/(\s)|(\.)|(\,)/g);
 
-            const regDecimal = new RegExp(/(\,+\d+)/g);
-            const regClear = new RegExp(/(\s)|(\.)|(\,)/g);
+        if (ui.currencySpinner.decimals) {
 
-            if (ui.currencySpinner.decimals) {
+            let number = s.replace(regDecimal, '');
+            let decimal = s.match(regDecimal);
 
-                let number = s.replace(regDecimal, '');
-                let decimal = s.match(regDecimal);
+            if (decimal === null) decimal = '0';
+            else decimal = decimal[0];
 
-                if (decimal === null) decimal = '0';
-                else decimal = decimal[0];
+            number = Number(number.replace(regClear, ''));
+            decimal = Number(decimal.replace(regClear, ''));
 
-                number = Number(number.replace(regClear, ''));
-                decimal = Number(decimal.replace(regClear, ''));
+            s = [];
 
-                s = [];
+            s.push(number);
+            s.push(decimal);
 
-                s.push(number);
-                s.push(decimal);
+        } else s = Number(s.replace(/(\s)|(\.)|(\,+\d+)|(\,)/g, ''));
 
-            } else s = Number(s.replace(/(\s)|(\.)|(\,+\d+)|(\,)/g, ''));
+        return s;
 
-            return s;
+    }
 
-        }
+    function locales(l) {
+        return l.toLocaleString();
+    }
 
-        function locales(l) {
-            return l.toLocaleString();
-        }
+    function currencyChange(that) {
 
-        function currencyChange(that) {
+        const parent = ui.closest(that, '.' + ui.currencySpinner.target);
+        const input = ui.find('[type="text"]', parent);
 
-            const parent = ui.closest(that, '.' + ui.currencySpinner.target);
-            const input = ui.find('[type="text"]', parent);
+        const nav = [];
 
-            const nav = [];
+        nav.up = ui.hasClass(that, ui.currencySpinner.nameUp);
+        nav.down = ui.hasClass(that, ui.currencySpinner.nameDown);
 
-            nav.up = ui.hasClass(that, ui.currencySpinner.nameUp);
-            nav.down = ui.hasClass(that, ui.currencySpinner.nameDown);
+        let val = convert(input.value);
 
-            let val = convert(input.value);
+        if (nav.up || nav.down) {
 
-            if (nav.up || nav.down) {
+            let step = convert(input.getAttribute('step'));
+            let min = convert(input.getAttribute('min'));
 
-                let step = convert(input.getAttribute('step'));
-                let min = convert(input.getAttribute('min'));
-
-                if (nav.up) {
-
-                    if (ui.currencySpinner.decimals) {
-
-                        val[0] += step[0];
-                        val[1] += step[1];
-
-                    } else val += step;
-
-                } else {
-
-                    if (ui.currencySpinner.decimals) {
-
-                        val[0] -= step[0];
-                        val[1] -= step[1];
-
-                        if (val[0] <= min[0]) { val[0] = min[0]; }
-                        if (val[1] <= min[1]) { val[1] = min[1]; }
-
-                    } else {
-
-                        val -= step;
-                        if (val <= min) { val = min; }
-
-                    }
-
-                }
+            if (nav.up) {
 
                 if (ui.currencySpinner.decimals) {
 
-                    step[0] = locales(step[0]);
-                    min[0] = locales(min[0]);
+                    val[0] += step[0];
+                    val[1] += step[1];
+
+                } else val += step;
+
+            } else {
+
+                if (ui.currencySpinner.decimals) {
+
+                    val[0] -= step[0];
+                    val[1] -= step[1];
+
+                    if (val[0] <= min[0]) { val[0] = min[0]; }
+                    if (val[1] <= min[1]) { val[1] = min[1]; }
 
                 } else {
 
-                    step = locales(step);
-                    min = locales(min);
+                    val -= step;
+                    if (val <= min) { val = min; }
 
                 }
 
@@ -117,17 +101,50 @@ ui.currencySpinner = {
 
             if (ui.currencySpinner.decimals) {
 
-                val[0] = locales(val[0]);
-                input.value = val[0] + ',' + val[1];
+                step[0] = locales(step[0]);
+                min[0] = locales(min[0]);
 
             } else {
 
-                val = locales(val);
-                input.value = val;
+                step = locales(step);
+                min = locales(min);
 
             }
 
         }
+
+        if (ui.currencySpinner.decimals) {
+
+            val[0] = locales(val[0]);
+            input.value = val[0] + ',' + val[1];
+
+        } else {
+
+            val = locales(val);
+            input.value = val;
+
+        }
+
+    }
+
+    ui.currencySpinner.Init = () => {
+
+        Array.prototype.forEach.call(ui.find('.' + ui.currencySpinner.target),
+
+            el => {
+
+                const that = ui.find('input[type="text"]', el)[0];
+                if (that.value) currencyChange(that);
+
+            }
+
+        );
+
+    }
+
+    ui.currencySpinner.Start = () => {
+
+        ui.currencySpinner.Init();
 
         // Event Listeners
         ui.on(document,
@@ -239,5 +256,13 @@ ui.currencySpinner = {
 
     // loaders
     ui.onload(ui.currencySpinner.Start);
+
+    // ajax callback loader
+    ui.on(document,
+        ui.globals.eventAjaxCallback,
+
+        () => {
+            if (ui.ajax.classNames.indexOf(ui.currencySpinner.target) > -1) ui.currencySpinner.Init();
+        });
 
 })();

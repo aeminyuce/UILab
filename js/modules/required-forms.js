@@ -94,7 +94,7 @@ ui.requiredForms.Start = () => {
                 val = el.value.toLowerCase();
                 val = val.replace(/^\s+|\s+$/g, ''); // remove first and last spaces
 
-                if (val === '') { showErr(); }
+                if (val === '') showErr();
 
             } else {
 
@@ -107,7 +107,7 @@ ui.requiredForms.Start = () => {
                         if (radios[i].checked) radiosCheck += 1;
                     }
 
-                    if (radiosCheck === 0) { showErr(); }
+                    if (radiosCheck === 0) showErr();
 
                 } else {
 
@@ -128,7 +128,7 @@ ui.requiredForms.Start = () => {
                 min = el.getAttribute('minlength');
 
                 if (min !== null && min !== '' && !isNaN(min)) {
-                    if (val.length < min) { showErr(); }
+                    if (val.length < min) showErr();
                 }
 
             }
@@ -136,20 +136,18 @@ ui.requiredForms.Start = () => {
             // check min and max numbers
             if (type !== ui.requiredForms.nameSelect) {
 
+                val = val.replace(/\.|\,/g, ''); // remove dots and commas
+
                 min = el.getAttribute('min');
+
                 if (min !== null && min !== '' && !isNaN(min)) {
-
-                    if (!isNaN(val)) if (Number(val) < Number(min)) { showErr(); }
-                    else showErr();
-
+                    if (Number(val) < Number(min)) showErr();
                 }
 
                 max = el.getAttribute('max');
+
                 if (max !== null && max !== '' && !isNaN(max)) {
-
-                    if (!isNaN(val)) if (Number(val) > Number(max)) { showErr(); }
-                    else showErr();
-
+                    if (Number(val) > Number(max)) showErr();
                 }
 
             }
@@ -158,7 +156,7 @@ ui.requiredForms.Start = () => {
             if (type === ui.requiredForms.nameTypePrefix + 'email') {
 
                 reMail = new RegExp(ui.requiredForms.rexMail);
-                if (val.match(reMail) === null) { showErr(); }
+                if (val.match(reMail) === null) showErr();
 
             }
 

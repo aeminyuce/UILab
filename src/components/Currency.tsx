@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { useEffect } from 'react';
+import { ui } from '@ui';
 
 // assets
 import '@js/modules/currency-spinner';
@@ -17,6 +19,13 @@ interface CurrencySpinnerProps {
 const CurrencySpinner = function (
 
     { children, className, style }:CurrencySpinnerProps) {
+
+        useEffect(() => {
+
+            // init
+            ui.currencySpinner.Init();
+
+        }); // Runs every render
 
         // classes
         const setClassName = className ? ' ' + className : '';

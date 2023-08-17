@@ -2223,6 +2223,19 @@
                             </div>
 
                             <div class="ui-col-3">
+                                <label class="ui-form-info">Currency Form</label>
+                            </div>
+                            <div class="ui-col-9">
+                                <div class="ui-currency-spinner ui-no-fluid">
+                                    <div class="ui-input ui-round ui-border-dual ui-ease-form">
+                                        <input class="ui-required" type="text" min="0" maxlength="12" autocomplete="off">
+                                    </div>
+                                </div>
+                                <p class="ui-required-msg">Enter a currency value.</p>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
+                            </div>
+
+                            <div class="ui-col-3">
                                 <label class="ui-form-info">Required with file inputs.</label>
                             </div>
                             <div class="ui-col-9">
