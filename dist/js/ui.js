@@ -1634,7 +1634,7 @@ ui.forms = {
 (function () {
   ui.forms.Start = function () {
     function formFocus(that, type) {
-      var classes = [ui.forms.targetText, ui.forms.targetSelect, ui.forms.targetSelectMulti, ui.forms.targetTextarea];
+      var classes = [ui.forms.targetText, ui.forms.targetFile, ui.forms.targetSelect, ui.forms.targetSelectMulti, ui.forms.targetTextarea];
       var holder = ui.closest(that, '.' + ui.forms.nameHolder);
       if (holder.length === 1) {
         ui.removeClass('.' + ui.forms.nameHolderFocus, ui.forms.nameHolderFocus);
@@ -1671,7 +1671,7 @@ ui.forms = {
       });
     };
     ui.forms.Init();
-    ui.on(document, 'focus', '.' + ui.forms.targetText + ' input,' + '.' + ui.forms.targetSelect + ' select,' + '.' + ui.forms.targetSelectMulti + ' select,' + '.' + ui.forms.targetTextarea + ' textarea', function () {
+    ui.on(document, 'focus', '.' + ui.forms.targetText + ' input,' + '.' + ui.forms.targetFile + ' input,' + '.' + ui.forms.targetSelect + ' select,' + '.' + ui.forms.targetSelectMulti + ' select,' + '.' + ui.forms.targetTextarea + ' textarea', function () {
       formFocus(this, 'add');
     });
     ui.on(document, 'blur', 'input,select,textarea', function () {

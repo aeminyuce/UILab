@@ -58,6 +58,7 @@ ui.forms = {
 
             const classes = [
                 ui.forms.targetText,
+                ui.forms.targetFile,
                 ui.forms.targetSelect,
                 ui.forms.targetSelectMulti,
                 ui.forms.targetTextarea
@@ -129,6 +130,7 @@ ui.forms = {
             'focus',
 
             '.' + ui.forms.targetText + ' input,' +
+            '.' + ui.forms.targetFile + ' input,' +
             '.' + ui.forms.targetSelect + ' select,' +
             '.' + ui.forms.targetSelectMulti + ' select,' +
             '.' + ui.forms.targetTextarea + ' textarea',
