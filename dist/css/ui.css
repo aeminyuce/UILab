@@ -6888,11 +6888,11 @@ html:not(.ui-ie) .ui-steps-bar li {
   text-align: center;
   background-color: hsl(0, 0%, 98%);
   background-color: var(--ui-body-bg);
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   margin: 5px auto;
   display: block;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   border-radius: 50%;
   position: relative;
   z-index: 1;
@@ -6904,10 +6904,10 @@ html:not(.ui-ie) .ui-steps-bar li {
 .ui-steps-bar li:after {
   content: "";
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: hsl(142, 82%, 42%);
   position: absolute;
-  top: 14px;
+  top: 19.5px;
   left: -50%;
   opacity: 0.42;
 }
@@ -6926,11 +6926,11 @@ html:not(.ui-ie) .ui-steps-bar li {
   color: var(--ui-steps-inactive-color);
 }
 .ui-steps-bar li.ui-active ~ li:before {
-  width: 12px;
-  height: 12px;
+  width: 32px;
+  height: 32px;
   background-color: hsl(0, 0%, 98%);
   background-color: var(--ui-body-bg);
-  margin: 9px auto;
+  margin: 5px auto;
   border-color: hsla(0, 0%, 0%, 0.12);
   border-color: var(--ui-steps-border);
 }
@@ -6945,15 +6945,20 @@ html:not(.ui-ie) .ui-steps-bar li {
   background-color: var(--ui-steps-border);
   left: -50%;
 }
-.ui-steps-bar li > span {
-  width: 20px;
-  height: 20px;
+.ui-steps-bar li > span:not(.ui-no-steps),
+.ui-steps-bar li > strong:not(.ui-no-steps) {
+  width: 32px;
+  height: 32px;
   display: block;
   position: absolute;
   top: 5px;
   left: 50%;
   z-index: 2;
   transform: translateX(-50%);
+}
+.ui-steps-bar li > span:not(.ui-no-steps) + .ui-icon,
+.ui-steps-bar li > strong:not(.ui-no-steps) + .ui-icon {
+  display: none !important;
 }
 .ui-steps-bar:not(.ui-steps-icon) li.ui-active:before {
   background-color: hsl(0, 0%, 98%);
@@ -6982,8 +6987,8 @@ html:not(.ui-ie) .ui-steps-bar li {
 }
 .ui-steps-bar.ui-steps-icon li > .ui-icon {
   color: currentColor;
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   display: block;
   position: absolute;
   top: 5px;
@@ -6991,22 +6996,26 @@ html:not(.ui-ie) .ui-steps-bar li {
   z-index: 2;
   transform: translateX(-50%);
 }
+.ui-steps-bar.ui-steps-icon li > .ui-icon + span:not(.ui-no-steps),
+.ui-steps-bar.ui-steps-icon li > .ui-icon + strong:not(.ui-no-steps) {
+  font-size: 0 !important;
+}
 .ui-steps-bar.ui-steps-icon li.ui-active ~ li > .ui-icon {
-  width: 12px;
-  height: 12px;
-  top: 9px;
+  width: 32px;
+  height: 32px;
+  top: 5px;
   opacity: 0;
 }
 .ui-steps-bar.ui-steps-info li:before {
   border-color: currentColor;
 }
-.ui-steps-bar.ui-steps-info li > span,
-.ui-steps-bar.ui-steps-info li > strong {
+.ui-steps-bar.ui-steps-info li > span:not(.ui-no-steps),
+.ui-steps-bar.ui-steps-info li > strong:not(.ui-no-steps) {
   color: currentColor;
-  font-size: 10px;
-  line-height: 20px;
-  width: 20px;
-  height: 20px;
+  font-size: 16px;
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
   display: block;
   position: absolute;
   top: 5px;
@@ -7018,11 +7027,12 @@ html:not(.ui-ie) .ui-steps-bar li {
   -moz-user-select: none;
   user-select: none;
 }
-.ui-steps-bar.ui-steps-info li.ui-active ~ li > span,
-.ui-steps-bar.ui-steps-info li.ui-active ~ li > strong {
-  width: 12px;
-  height: 12px;
-  top: 9px;
+.ui-steps-bar.ui-steps-info li.ui-active ~ li > span:not(.ui-no-steps),
+.ui-steps-bar.ui-steps-info li.ui-active ~ li > strong:not(.ui-no-steps) {
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+  top: 5px;
 }
 /* header sticky */
 .ui-header-sticky.ui-sticky {

@@ -33,7 +33,7 @@ const Timeline = function (
         );
     }
 
-interface TimeLineItemProps {
+interface TimelineItemProps {
 
     children?: React.ReactNode,
 
@@ -46,9 +46,9 @@ interface TimeLineItemProps {
 
 }
 
-const TimeLineItem = function (
+const TimelineItem = function (
 
-    { children, onClick, align, className, style }:TimeLineItemProps) {
+    { children, onClick, align, className, style }:TimelineItemProps) {
 
         // classes
         const setAlign = align ? 'ui-timeline-align-' + align : '';
@@ -64,5 +64,5 @@ const TimeLineItem = function (
     }
 
 export default Object.assign(Timeline, {
-    Item: TimeLineItem,
+    Item: TimelineItem,
 });

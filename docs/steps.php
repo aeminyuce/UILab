@@ -21,7 +21,11 @@
 
                 <div class="ui-p-30-v">
                     <ul class="ui-steps-bar">
-                        <li class="ui-active">Step Name Here</li>
+                        <li class="ui-active">
+                            <span class="ui-no-steps ui-p-10-h ui-inline-block ui-round ui-theme-gray ui-fill-light-100 ui-text">
+                                Step Name Here
+                            </span>
+                        </li>
                         <li>Step Name Here</li>
                         <li>Step Name Here</li>
                     </ul>
@@ -73,8 +77,10 @@
                 <div class="ui-p-30-b">
                     <ul class="ui-steps-bar ui-steps-info">
                         <li>
+                            <span class="ui-no-steps ui-p-10-h ui-inline-block ui-round ui-theme-gray ui-fill-light-100 ui-text">
+                                Step Name Here
+                            </span>
                             <span data-ui-tooltip title="Completed">1</span>
-                            Step Name Here
                         </li>
                         <li class="ui-active">
                             <span data-ui-tooltip title="Completed">2</span>
@@ -172,7 +178,11 @@
 
                     <div class="ui-p-30-v">
                         <ul class="ui-steps-bar">
-                            <li class="ui-active">Step Name Here</li>
+                            <li class="ui-active">
+                                <span class="ui-no-steps ui-p-10-h ui-inline-block ui-round ui-theme-gray ui-fill-light-100 ui-text">
+                                    Step Name Here
+                                </span>
+                            </li>
                             <li>Step Name Here</li>
                             <li>Step Name Here</li>
                         </ul>
@@ -219,8 +229,10 @@
                     <div class="ui-p-30-b">
                         <ul class="ui-steps-bar ui-steps-info">
                             <li>
+                                <span class="ui-no-steps ui-p-10-h ui-inline-block ui-round ui-theme-gray ui-fill-light-100 ui-text">
+                                    Step Name Here
+                                </span>
                                 <span data-ui-tooltip title="Completed">1</span>
-                                Step Name Here
                             </li>
                             <li class="ui-active">
                                 <span data-ui-tooltip title="Completed">2</span>
