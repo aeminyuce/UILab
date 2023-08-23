@@ -7,6 +7,11 @@
 
                 <div class="ui-p-30-b">
                     <ul class="ui-steps-bar">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="ui-steps-bar">
                         <li class="ui-active"></li>
                         <li></li>
                         <li></li>

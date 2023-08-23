@@ -7006,6 +7006,10 @@ html:not(.ui-ie) .ui-steps-bar li {
   top: 5px;
   opacity: 0;
 }
+.ui-steps-bar.ui-steps-icon li.ui-active ~ li > .ui-icon + span:not(.ui-no-steps),
+.ui-steps-bar.ui-steps-icon li.ui-active ~ li > .ui-icon + strong:not(.ui-no-steps) {
+  font-size: 16px !important;
+}
 .ui-steps-bar.ui-steps-info li:before {
   border-color: currentColor;
 }
@@ -7014,8 +7018,6 @@ html:not(.ui-ie) .ui-steps-bar li {
   color: currentColor;
   font-size: 16px;
   line-height: 32px;
-  width: 32px;
-  height: 32px;
   display: block;
   position: absolute;
   top: 5px;
