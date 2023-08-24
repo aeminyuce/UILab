@@ -234,7 +234,7 @@
                                 <div class="ui-row">
                                     <div class="ui-col-12 ui-no-p">
                                         <div class="ui-input ui-no-border ui-ease-form">
-                                            <input class="ui-font-bold ui-align-c ui-font-18" type="text" value="645.000" min="645.000" step="5.000" maxlength="12" autocomplete="off">
+                                            <input class="ui-font-bold ui-align-c ui-font-18" type="text" value="645.000" min="645.000" step="5.000" maxlength="12">
                                         </div>
                                     </div>
                                 </div>
