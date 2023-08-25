@@ -66,16 +66,6 @@
 
                     <span class="ui-sp-30"></span>
 
-                    <b class="ui-m-5-b">Show element:</b>
-                    <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.show(element);</pre>
-
-                    <span class="ui-sp-30"></span>
-
-                    <b class="ui-m-5-b">Hide element:</b>
-                    <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.hide(element);</pre>
-
-                    <span class="ui-sp-30"></span>
-
                     <b class="ui-m-5-b">.closest() Returns the first ancestor:</b>
                     <pre class="ui-pre ui-ease-pre ui-round ui-m-5-b">ui.closest(element, parentElement);</pre>
 
