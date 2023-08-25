@@ -65,6 +65,7 @@ interface CurrencyFormProps {
     maxlength: number,
     min: number,
     step?: number,
+    decimal?: boolean,
 
     myRef?: any,
 
@@ -78,7 +79,7 @@ interface CurrencyFormProps {
 
 const CurrencyForm = function (
 
-    { children, onChange, onInput, onBlur, name, tabIndex, value, defaultValue, placeholder, disabled, light, inline, autoComplete, icons, readOnly, required, hasClear, maxlength, min, step, myRef, noease, id, className, style }:CurrencyFormProps) {
+    { children, onChange, onInput, onBlur, name, tabIndex, value, defaultValue, placeholder, disabled, light, inline, autoComplete, icons, readOnly, required, hasClear, maxlength, min, step, decimal, myRef, noease, id, className, style }:CurrencyFormProps) {
 
          // classes
         const setClassName = className ? ' ' + className : '';
@@ -123,7 +124,7 @@ const CurrencyForm = function (
                 {children}
                 <input id={id} ref={myRef} type="text" name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} placeholder={placeholder}
                     className={childrenClasses} disabled={disabled} readOnly={readOnly} autoComplete={autoComplete}
-                    maxLength={maxlength} min={min} step={step}
+                    maxLength={maxlength} min={min} step={step} data-ui-decimal={decimal}
                     onChange={onChange} onInput={onInput} onBlur={onBlur} />
             </div>
         );

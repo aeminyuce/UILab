@@ -1324,19 +1324,25 @@ ui.currencySpinner = {
   nameUp: 'ui-currency-up',
   nameDown: 'ui-currency-down',
   nameInput: 'ui-input',
-  decimals: false
+  decimalLenght: 2,
+  dataDecimal: 'data-ui-decimal'
 };
 (function () {
   var cacheCurrencySpinner;
-  var convert = function convert(s) {
+  var convert = function convert(s, isDecimal) {
     var regDecimal = new RegExp(/(\,+\d+)/g);
     var regClear = new RegExp(/(\s)|(\.)|(\,)/g);
-    if (ui.currencySpinner.decimals) {
+    if (isDecimal) {
       var number = s.replace(regDecimal, '');
       var decimal = s.match(regDecimal);
-      if (decimal === null) decimal = '0';else decimal = decimal[0];
+      if (decimal === null) {
+        decimal = '';
+        for (var i = 0; i < ui.currencySpinner.decimalLenght; i++) {
+          decimal += '0';
+        }
+      } else decimal = decimal[0];
       number = Number(number.replace(regClear, ''));
-      decimal = Number(decimal.replace(regClear, ''));
+      decimal = decimal.replace(regClear, '').substring(0, ui.currencySpinner.decimalLenght);
       s = [];
       s.push(number);
       s.push(decimal);
@@ -1349,20 +1355,22 @@ ui.currencySpinner = {
   function currencyChange(that) {
     var parent = ui.closest(that, '.' + ui.currencySpinner.target);
     var input = ui.find('[type="text"]', parent);
+    var isDecimal = input.getAttribute(ui.currencySpinner.dataDecimal);
+    isDecimal = isDecimal !== null ? true : false;
     var nav = [];
     nav.up = ui.hasClass(that, ui.currencySpinner.nameUp);
     nav.down = ui.hasClass(that, ui.currencySpinner.nameDown);
-    var val = convert(input.value);
+    var val = convert(input.value, isDecimal);
     if (nav.up || nav.down) {
-      var step = convert(input.getAttribute('step'));
-      var min = convert(input.getAttribute('min'));
+      var step = convert(input.getAttribute('step'), isDecimal);
+      var min = convert(input.getAttribute('min'), isDecimal);
       if (nav.up) {
-        if (ui.currencySpinner.decimals) {
+        if (isDecimal) {
           val[0] += step[0];
           val[1] += step[1];
         } else val += step;
       } else {
-        if (ui.currencySpinner.decimals) {
+        if (isDecimal) {
           val[0] -= step[0];
           val[1] -= step[1];
           if (val[0] <= min[0]) {
@@ -1378,7 +1386,7 @@ ui.currencySpinner = {
           }
         }
       }
-      if (ui.currencySpinner.decimals) {
+      if (isDecimal) {
         step[0] = locales(step[0]);
         min[0] = locales(min[0]);
       } else {
@@ -1386,9 +1394,9 @@ ui.currencySpinner = {
         min = locales(min);
       }
     }
-    if (ui.currencySpinner.decimals) {
+    if (isDecimal) {
       val[0] = locales(val[0]);
-      input.value = val[0] + ',' + val[1];
+      input.value = val[0] + ',' + val[1].substring(0, ui.currencySpinner.decimalLenght);
     } else {
       val = locales(val);
       input.value = val;
@@ -1409,16 +1417,13 @@ ui.currencySpinner = {
     ui.on(document, 'keypress', '.' + ui.currencySpinner.target + ' input[type="text"]', function (e) {
       var char, ignoreList;
       var isRefresh = false;
-      if (e.which) {
-        char = e.which;
-      } else {
+      if (e.which) char = e.which;else {
         char = e.keyCode;
         if (char === 116) isRefresh = true;
       }
       ignoreList = [8, 9, 35, 36, 37, 39];
-      if (ui.currencySpinner.decimals) {
-        ignoreList.push(44);
-      }
+      var isDecimal = this.getAttribute(ui.currencySpinner.dataDecimal);
+      if (isDecimal !== null) ignoreList.push(44);
       if (ignoreList.indexOf(char) === -1 && !isRefresh && (char < 48 || char > 57)) {
         e.preventDefault();
       }
@@ -1426,22 +1431,33 @@ ui.currencySpinner = {
     ui.on(document, 'focus', '.' + ui.currencySpinner.target + ' input[type="text"]', function () {
       cacheCurrencySpinner = this.value;
     });
-    ui.on(document, 'keyup blur', '.' + ui.currencySpinner.target + ' input[type="text"]', function (e) {
+    ui.on(document, 'input blur', '.' + ui.currencySpinner.target + ' input[type="text"]', function (e) {
       if (this.value.length === 0) return;
       if (e.keyCode === 27) {
         this.value = cacheCurrencySpinner;
         ui.trigger(this, 'blur');
         return;
       }
-      if (ui.currencySpinner.decimals) {
-        if (e.type === 'blur') currencyChange(this);
-      } else currencyChange(this);
+      var caretPos = Number(e.target.selectionStart);
+      var prevDots = this.value.match(/(\.)/g);
+      var prevDotslength = 0;
+      if (prevDots !== null) prevDotslength = prevDots.length;
+      caretPos -= prevDotslength;
+      currencyChange(this);
+      var newDots = this.value.match(/(\.)/g);
+      var newDotsLength = 0;
+      if (newDots !== null) newDotsLength = newDots.length;
+      caretPos += newDotsLength;
+      var valLength = this.value.length;
+      if (caretPos <= valLength) {
+        this.setSelectionRange(caretPos, caretPos);
+      }
       if (e.type === 'blur') {
+        var isDecimal = this.getAttribute(ui.currencySpinner.dataDecimal);
+        isDecimal = isDecimal !== null ? true : false;
         var input = ui.find('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameInput + ' input')[0];
-        var min = convert(input.getAttribute('min'));
-        if (convert(input.value) < min) {
-          input.value = locales(min);
-        }
+        var min = convert(input.getAttribute('min'), isDecimal);
+        if (convert(input.value, isDecimal) < min) input.value = locales(min);
       }
     });
     ui.on(document, 'keydown', ui.closest('.' + ui.currencySpinner.target, 'form'), function (e) {

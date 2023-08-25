@@ -2046,6 +2046,20 @@
                     </div>
 
                     <div class="ui-col-3">
+                        <label class="ui-form-info">Currency Form with Decimals</label>
+                    </div>
+                    <div class="ui-col-9">
+                        <div class="ui-currency-spinner ui-no-fluid">
+                            <div class="ui-input ui-form-icon ui-form-has-clear ui-round ui-border-dual ui-ease-form">
+                                <button type="button" class="ui-form-clear">
+                                    <svg class="ui-icon"><use href="../dist/icons.svg#remove"/></svg>
+                                </button>
+                                <input type="text" min="0" maxlength="12" value="1000000" data-ui-decimal>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui-col-3">
                         <label class="ui-form-info">Currency Spinner</label>
                     </div>
                     <div class="ui-col-9">
@@ -2060,6 +2074,33 @@
                                 <div class="ui-col-12">
                                     <div class="ui-input ui-round ui-border-dual ui-ease-form">
                                         <input type="text" value="645.000" min="645.000" step="5.000" maxlength="12">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui-col-42">
+                                <button class="ui-currency-up ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-round ui-ease-btn">
+                                    <svg class="ui-icon"><use href="../dist/icons.svg#plus"/></svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="ui-col-3">
+                        <label class="ui-form-info">Currency Spinner with Decimals</label>
+                    </div>
+                    <div class="ui-col-9">
+                        <div class="ui-currency-spinner ui-form-holder ui-col-static ui-no-fluid">
+
+                            <div class="ui-col-42">
+                                <button class="ui-currency-down ui-btn ui-btn-square ui-btn-ghost ui-border-dual ui-round ui-ease-btn">
+                                    <svg class="ui-icon"><use href="../dist/icons.svg#minus"/></svg>
+                                </button>
+                            </div>
+                            <div class="ui-row ui-no-row-gap">
+                                <div class="ui-col-12">
+                                    <div class="ui-input ui-round ui-border-dual ui-ease-form">
+                                        <input type="text" value="645.000" min="645.000" step="5.000" maxlength="12" data-ui-decimal>
                                     </div>
                                 </div>
                             </div>

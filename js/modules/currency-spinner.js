@@ -16,28 +16,38 @@ ui.currencySpinner = {
     nameInput: 'ui-input',
 
     // values
-    decimals: false
+    decimalLenght: 2,
+
+    // data attributes
+    dataDecimal: 'data-ui-decimal'
 };
 
 (() => {
 
     let cacheCurrencySpinner;
 
-    const convert = (s) => {
+    const convert = (s, isDecimal) => {
 
         const regDecimal = new RegExp(/(\,+\d+)/g);
         const regClear = new RegExp(/(\s)|(\.)|(\,)/g);
 
-        if (ui.currencySpinner.decimals) {
+        if (isDecimal) {
 
             let number = s.replace(regDecimal, '');
             let decimal = s.match(regDecimal);
 
-            if (decimal === null) decimal = '0';
-            else decimal = decimal[0];
+            if (decimal === null) {
+
+                decimal = '';
+
+                for (let i = 0; i < ui.currencySpinner.decimalLenght; i++) { // add zero as decimallength
+                    decimal += '0';
+                }
+
+            } else decimal = decimal[0];
 
             number = Number(number.replace(regClear, ''));
-            decimal = Number(decimal.replace(regClear, ''));
+            decimal = decimal.replace(regClear, '').substring(0, ui.currencySpinner.decimalLenght);
 
             s = [];
 
@@ -59,21 +69,24 @@ ui.currencySpinner = {
         const parent = ui.closest(that, '.' + ui.currencySpinner.target);
         const input = ui.find('[type="text"]', parent);
 
+        let isDecimal = input.getAttribute(ui.currencySpinner.dataDecimal);
+        isDecimal = isDecimal !== null ? true : false;
+
         const nav = [];
 
         nav.up = ui.hasClass(that, ui.currencySpinner.nameUp);
         nav.down = ui.hasClass(that, ui.currencySpinner.nameDown);
 
-        let val = convert(input.value);
+        let val = convert(input.value, isDecimal);
 
         if (nav.up || nav.down) {
 
-            let step = convert(input.getAttribute('step'));
-            let min = convert(input.getAttribute('min'));
+            let step = convert(input.getAttribute('step'), isDecimal);
+            let min = convert(input.getAttribute('min'), isDecimal);
 
             if (nav.up) {
 
-                if (ui.currencySpinner.decimals) {
+                if (isDecimal) {
 
                     val[0] += step[0];
                     val[1] += step[1];
@@ -82,7 +95,7 @@ ui.currencySpinner = {
 
             } else {
 
-                if (ui.currencySpinner.decimals) {
+                if (isDecimal) {
 
                     val[0] -= step[0];
                     val[1] -= step[1];
@@ -99,7 +112,7 @@ ui.currencySpinner = {
 
             }
 
-            if (ui.currencySpinner.decimals) {
+            if (isDecimal) {
 
                 step[0] = locales(step[0]);
                 min[0] = locales(min[0]);
@@ -113,10 +126,10 @@ ui.currencySpinner = {
 
         }
 
-        if (ui.currencySpinner.decimals) {
+        if (isDecimal) {
 
             val[0] = locales(val[0]);
-            input.value = val[0] + ',' + val[1];
+            input.value = val[0] + ',' + val[1].substring(0, ui.currencySpinner.decimalLenght);
 
         } else {
 
@@ -169,10 +182,8 @@ ui.currencySpinner = {
                 let char, ignoreList;
                 let isRefresh = false;
 
-                if (e.which) {
-                    char = e.which;
-
-                } else {
+                if (e.which) char = e.which;
+                else {
 
                     char = e.keyCode;
                     if (char === 116) isRefresh = true; // f5
@@ -181,9 +192,8 @@ ui.currencySpinner = {
 
                 ignoreList = [8, 9, 35, 36, 37, 39]; // backspace, tab, end, home, arrow left, arrow right
 
-                if (ui.currencySpinner.decimals) {
-                    ignoreList.push(44); // print screen
-                }
+                let isDecimal = this.getAttribute(ui.currencySpinner.dataDecimal);
+                if (isDecimal !== null) ignoreList.push(44); // print screen
 
                 if (ignoreList.indexOf(char) === -1 && !isRefresh && (char < 48 || char > 57)) { // 48-57: 0-9
                     e.preventDefault();
@@ -201,7 +211,7 @@ ui.currencySpinner = {
             });
 
         ui.on(document,
-            'keyup blur',
+            'input blur',
 
             '.' + ui.currencySpinner.target + ' input[type="text"]',
 
@@ -218,19 +228,40 @@ ui.currencySpinner = {
 
                 }
 
-                if (ui.currencySpinner.decimals) {
-                    if (e.type === 'blur') currencyChange(this);
+                // get previous caret position
+                let caretPos = Number(e.target.selectionStart);
 
-                } else currencyChange(this);
+                const prevDots = this.value.match(/(\.)/g);
+                let prevDotslength = 0;
+
+                if (prevDots !== null) prevDotslength = prevDots.length;
+                caretPos -= prevDotslength; // remove previous dots
+
+                // convert value
+                currencyChange(this);
+
+                // set new caret position
+                const newDots = this.value.match(/(\.)/g);
+                let newDotsLength = 0;
+
+                if (newDots !== null) newDotsLength = newDots.length;
+                caretPos += newDotsLength;
+
+                let valLength = this.value.length;
+
+                if (caretPos <= valLength) {
+                    this.setSelectionRange(caretPos, caretPos);
+                }
 
                 if (e.type === 'blur') {
 
-                    const input = ui.find('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameInput + ' input')[0];
-                    const min = convert(input.getAttribute('min'));
+                    let isDecimal = this.getAttribute(ui.currencySpinner.dataDecimal);
+                    isDecimal = isDecimal !== null ? true : false;
 
-                    if (convert(input.value) < min) {
-                        input.value = locales(min);
-                    }
+                    const input = ui.find('.' + ui.currencySpinner.target + ' .' + ui.currencySpinner.nameInput + ' input')[0];
+                    const min = convert(input.getAttribute('min'), isDecimal);
+
+                    if (convert(input.value, isDecimal) < min) input.value = locales(min);
 
                 }
 
