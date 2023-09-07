@@ -8,10 +8,12 @@ import Icon from '@components/Icon';
 const icon_angle_down = 'M132 202h-.024a11 11 0 0 1-7.788-3.255l-117-118a11 11 0 0 1 15.623-15.49L132.033 175.41 242.222 65.222a11 11 0 0 1 15.556 15.556l-118 118A11 11 0 0 1 132 202Z';
 
 import '@less/modules/autocomplete';
+import '@less/modules/textarea-counter';
 import '@less/modules/forms';
 
 import '@js/modules/autocomplete';
 import '@js/modules/required-forms';
+import '@js/modules/textarea-counter';
 import '@js/modules/forms';
 
 const Form = function () {}
