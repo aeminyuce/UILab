@@ -86,16 +86,12 @@ ui.loadingMask = {
 
                 } else { // show
 
-                    setTimeout(() => {
+                    for (j = 0; j < l.length; j++) {
 
-                        for (j = 0; j < l.length; j++) {
+                        ui.addClass(maskHolders[j], ui.loadingMask.nameOpenEase);
+                        emptyVars(j, l);
 
-                            ui.addClass(maskHolders[j], ui.loadingMask.nameOpenEase);
-                            emptyVars(j, l);
-
-                        }
-
-                    }, 0);
+                    }
 
                 }
 

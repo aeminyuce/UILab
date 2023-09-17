@@ -4787,12 +4787,10 @@ ui.loadingMask = {
             }
           }, ui.globals.ease * 2);
         } else {
-          setTimeout(function () {
-            for (j = 0; j < l.length; j++) {
-              ui.addClass(maskHolders[j], ui.loadingMask.nameOpenEase);
-              emptyVars(j, l);
-            }
-          }, 0);
+          for (j = 0; j < l.length; j++) {
+            ui.addClass(maskHolders[j], ui.loadingMask.nameOpenEase);
+            emptyVars(j, l);
+          }
         }
       }
       for (i = 0; i < l.length; i++) {
