@@ -6979,6 +6979,10 @@ html:not(.ui-ie) .ui-steps-bar li {
   border-color: hsl(0, 0%, 98%);
   border-color: var(--ui-body-bg);
 }
+.ui-card .ui-steps-bar.ui-steps-icon li:before {
+  background-color: hsl(0, 0%, 100%);
+  background-color: var(--ui-card-bg);
+}
 .ui-steps-bar.ui-steps-icon li > .ui-icon {
   color: currentColor;
   width: 32px;
