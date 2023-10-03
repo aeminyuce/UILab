@@ -801,6 +801,30 @@
                     </div>
                 </div>
 
+                <h5 class="ui-h5 ui-font-bold">Dropdowns with Button Holder</h5>
+                <div class="ui-row ui-p-30-b">
+                    <div class="ui-col-12">
+                        <div class="ui-btn-holder ui-btn-sm-fluid ui-form-lg ui-theme-base ui-ease-1st-btn">
+                            <button class="ui-btn ui-round ui-fill-dark-100">1</button>
+                            <button class="ui-btn ui-round ui-fill-dark-100">2</button>
+                            <div class="ui-dropdown ui-ease-dropdown">
+                                <button class="ui-btn ui-round ui-fill-dark-100">
+                                    Dropdown
+                                    <svg class="ui-toggle-icon ui-icon ui-float-r"><use href="../dist/icons.svg#angle-down"/></svg>
+                                </button>
+                                <ul class="ui-dropdown-menu ui-round ui-shadow-lg">
+                                    <li>Dropdown Item</li>
+                                    <li>Dropdown Item</li>
+                                    <li>Dropdown Item</li>
+                                    <li>Dropdown Item</li>
+                                </ul>
+                            </div>
+                            <button class="ui-btn ui-round ui-fill-dark-100">3</button>
+                            <button class="ui-btn ui-round ui-fill-dark-100">4</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
