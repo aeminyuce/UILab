@@ -61,6 +61,10 @@ ui.requiredForms.Start = () => {
             ui.removeClass(p, ui.requiredForms.nameError);
             if (showMsg) ui.removeClass(next, ui.requiredForms.nameShow);
 
+            setTimeout(() => { // resize modals
+                if (ui.modal !== undefined) ui.modal.resizer();
+            }, 0);
+
         };
 
         checkForms = function (el) {
@@ -85,6 +89,10 @@ ui.requiredForms.Start = () => {
 
                 ui.addClass(p, ui.requiredForms.nameError);
                 if (showMsg) ui.addClass(next, ui.requiredForms.nameShow);
+
+                setTimeout(() => { // resize modals
+                    if (ui.modal !== undefined) ui.modal.resizer();
+                }, 0);
 
             };
 

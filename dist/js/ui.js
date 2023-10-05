@@ -1836,6 +1836,9 @@ ui.requiredForms.Start = function () {
       } else ui.addClass(that, ui.requiredForms.nameSuccess);
       ui.removeClass(p, ui.requiredForms.nameError);
       if (showMsg) ui.removeClass(next, ui.requiredForms.nameShow);
+      setTimeout(function () {
+        if (ui.modal !== undefined) ui.modal.resizer();
+      }, 0);
     };
     checkForms = function checkForms(el) {
       var showAlertTimer;
@@ -1850,6 +1853,9 @@ ui.requiredForms.Start = function () {
         } else ui.removeClass(el, ui.requiredForms.nameSuccess);
         ui.addClass(p, ui.requiredForms.nameError);
         if (showMsg) ui.addClass(next, ui.requiredForms.nameShow);
+        setTimeout(function () {
+          if (ui.modal !== undefined) ui.modal.resizer();
+        }, 0);
       };
       if (type !== ui.requiredForms.targetAccept) {
         val = el.value.toLowerCase();
@@ -4876,8 +4882,8 @@ ui.modal = {
   dataOpenSize: 'data-ui-openSize'
 };
 (function () {
-  var pageYPos, modalResizer;
-  modalResizer = function modalResizer() {
+  var pageYPos;
+  ui.modal.resizer = function () {
     var win, type, container, bg, openSize, userDefined, customW, customH, minHeight;
     win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow + ' .' + ui.modal.nameContent + ':not(.' + ui.modal.nameFullscreen + ')')[0];
     if (win !== undefined) {
@@ -5063,7 +5069,7 @@ ui.modal = {
             setTimeout(function () {
               ui.addClass(win, ui.modal.nameShowEase);
               ui.removeClass(win, ui.modal.nameActive);
-              modalResizer();
+              ui.modal.resizer();
               setTimeout(function () {
                 ui.trigger(document, ui.globals.eventDomChange);
               }, ui.globals.ease);
@@ -5140,7 +5146,7 @@ ui.modal = {
     });
   };
   ui.onload(ui.modal.Start);
-  ui.on(window, 'resize', modalResizer);
+  ui.on(window, 'resize', ui.modal.resizer);
 })();
 ui.photoslide = {
   target: 'ui-photoslide',

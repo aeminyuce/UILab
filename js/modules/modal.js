@@ -84,9 +84,9 @@ ui.modal = {
 
 (() => {
 
-    var pageYPos, modalResizer;
+    var pageYPos
 
-    modalResizer = () => {
+    ui.modal.resizer = () => {
 
         var win, type, container, bg, openSize, userDefined, customW, customH, minHeight;
 
@@ -414,7 +414,7 @@ ui.modal = {
                             ui.addClass(win, ui.modal.nameShowEase);
                             ui.removeClass(win, ui.modal.nameActive);
 
-                            modalResizer();
+                            ui.modal.resizer();
 
                             setTimeout(() => { // wait for modal dom is ready
                                 ui.trigger(document, ui.globals.eventDomChange); // set custom event
@@ -554,6 +554,6 @@ ui.modal = {
 
     // loaders
     ui.onload(ui.modal.Start);
-    ui.on(window, 'resize', modalResizer);
+    ui.on(window, 'resize', ui.modal.resizer);
 
 })();
