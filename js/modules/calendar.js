@@ -891,6 +891,7 @@ ui.calendar.Start = () => {
 
             } else form.value = day + ui.calendar.pickerSep + month + ui.calendar.pickerSep + date.getFullYear(); // dd mm yyyy
 
+            ui.trigger(form, 'keyup'); // trigger change event
             ui.trigger(document, ui.calendar.pickerChange); // set custom event
 
             // close picker

@@ -2296,6 +2296,18 @@
                             </div>
 
                             <div class="ui-col-3">
+                                <label class="ui-form-info">Required with calendar picker.</label>
+                            </div>
+                            <div class="ui-col-9">
+                                <div class="ui-calendar-picker ui-input ui-form-icon-l ui-round ui-border-dual">
+                                    <svg class="ui-icon"><use href="../dist/icons.svg#calendar"/></svg>
+                                    <input class="ui-required" type="text">
+                                </div>
+                                <p class="ui-required-msg">Please, select a date.</p>
+                                <i class="ui-form-hint ui-color-black-25">* Required</i>
+                            </div>
+
+                            <div class="ui-col-3">
                                 <label class="ui-form-info">Required with HTML5 Date</label>
                             </div>
                             <div class="ui-col-9">

@@ -1883,7 +1883,7 @@ ui.requiredForms.Start = function () {
         }
       }
       if (type !== ui.requiredForms.nameSelect) {
-        val = val.replace(/\.|\,/g, '');
+        val = val ? val.replace(/\.|\,/g, '') : val;
         min = el.getAttribute('min');
         if (min !== null && min !== '' && !isNaN(min)) {
           if (Number(val) < Number(min)) showErr();
@@ -2857,6 +2857,7 @@ ui.calendar.Start = function () {
     if (ui.calendar.dateFormat === 1) {
       form.value = month + ui.calendar.pickerSep + day + ui.calendar.pickerSep + date.getFullYear();
     } else form.value = day + ui.calendar.pickerSep + month + ui.calendar.pickerSep + date.getFullYear();
+    ui.trigger(form, 'keyup');
     ui.trigger(document, ui.calendar.pickerChange);
     pickerCloseFnc('default', form);
   });

@@ -144,7 +144,7 @@ ui.requiredForms.Start = () => {
             // check min and max numbers
             if (type !== ui.requiredForms.nameSelect) {
 
-                val = val.replace(/\.|\,/g, ''); // remove dots and commas
+                val = val ? val.replace(/\.|\,/g, '') : val; // remove dots and commas
 
                 min = el.getAttribute('min');
 
