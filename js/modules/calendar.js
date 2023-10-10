@@ -806,10 +806,14 @@ ui.calendar.Start = () => {
 
             }
 
-            if (offset.top + parseInt(formHeight + pickerHeight) >= window.innerHeight) {
+            if (ui.modal !== undefined && ui.closest(this, '.' + ui.modal.targetWin)[0] === undefined) { // prevent vertical positioning when picker in modal!
 
-                if (offset.top - parseInt(formHeight + pickerHeight) + formHeight > 0) {
-                    ui.addClass(form, ui.calendar.namePickerTop);
+                if (offset.top + parseInt(formHeight + pickerHeight) >= window.innerHeight) {
+
+                    if (offset.top - parseInt(formHeight + pickerHeight) + formHeight > 0) {
+                        ui.addClass(form, ui.calendar.namePickerTop);
+                    }
+
                 }
 
             }

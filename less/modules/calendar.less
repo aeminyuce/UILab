@@ -5,8 +5,8 @@
 
 @calendar-padding:                      5px;
 @calendar-max-width:                    (@sm-breakpoint - @highlight-space - (@border-dual * 2));
-@calendar-min-width:                    260px;
-@calendar-min-width-mobile:             (@layout-min - 55px);
+@calendar-min-width:                    280px;
+@calendar-min-width-mobile:             (@layout-min - 40px);
 @calendar-shadow-size:                  5px 15px;
 
 @calendar-days-padding:                 8px;
@@ -126,10 +126,10 @@
                 padding: @calendar-days-gap;
 
                 &.ui-calendar-days-passive {
-                    span { box-sizing: border-box; font-size: @font-16; min-height: @btn-sm; padding: (@calendar-days-padding - (@calendar-days-gap * 2)); display: block; opacity: @calendar-days-passive-opacity; }
+                    span { box-sizing: border-box; font-size: @font-16; height: @btn-sm; padding: (@calendar-days-padding - (@calendar-days-gap * 2)); display: block; opacity: @calendar-days-passive-opacity; }
                 }
 
-                button { font-size: @font-16; width: 100%; min-height: @btn-sm; background: @no-color; padding: (@calendar-days-padding - @calendar-days-gap); display: block; border: 0; position: relative; }
+                button { font-size: @font-16; width: 100%; height: @btn-sm; background: @no-color; padding: (@calendar-days-padding - @calendar-days-gap); display: block; border: 0; position: relative; }
 
                 &.ui-calendar-toggle-details {
                     button {
@@ -385,6 +385,12 @@
                 min-width: @calendar-min-width;
             }
         }
+
+        .ui-modal {
+			.ui-calendar-picker {
+                .ui-calendar { max-width: 514px; position: fixed; }
+            }
+		}
     }
     @media (@xs-finish) {
         .ui-input {
@@ -392,6 +398,12 @@
                 min-width: @calendar-min-width-mobile;
             }
         }
+
+        .ui-modal {
+			.ui-calendar-picker {
+                .ui-calendar { width: 332px; height: 340px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+            }
+		}
     }
 
 }

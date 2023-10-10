@@ -2817,9 +2817,11 @@ ui.calendar.Start = function () {
         ui.addClass(form, ui.calendar.namePickerLeft);
       }
     }
-    if (offset.top + parseInt(formHeight + pickerHeight) >= window.innerHeight) {
-      if (offset.top - parseInt(formHeight + pickerHeight) + formHeight > 0) {
-        ui.addClass(form, ui.calendar.namePickerTop);
+    if (ui.modal !== undefined && ui.closest(this, '.' + ui.modal.targetWin)[0] === undefined) {
+      if (offset.top + parseInt(formHeight + pickerHeight) >= window.innerHeight) {
+        if (offset.top - parseInt(formHeight + pickerHeight) + formHeight > 0) {
+          ui.addClass(form, ui.calendar.namePickerTop);
+        }
       }
     }
     setTimeout(function () {

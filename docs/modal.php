@@ -214,6 +214,12 @@
                 </div>
             </div>
         </div>
+        <div class="ui-align-r">
+            <div class="ui-calendar-picker ui-input ui-form-icon-l ui-form-inline-xs ui-m-10-b ui-round ui-border-dual">
+                <svg class="ui-icon"><use href="../dist/icons.svg#calendar"/></svg>
+                <input type="text">
+            </div>
+        </div>
         Quisque ac posuere lectus. Morbi quam diam, cursus et metus at, lobortis iaculis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus lectus nibh, non elementum justo facilisis a. Aliquam erat volutpat. Vestibulum auctor et diam eget eleifend. Donec blandit ligula aliquam mi lacinia lacinia. Cras ac bibendum urna. Suspendisse posuere ullamcorper enim, non varius diam mattis vehicula. Donec nec lacinia diam.
         <img class="ui-img-fluid ui-m-30-v ui-round ui-m-auto ui-block ui-shadow-lg" src="../public/img/image_05.jpg" style="max-width: 700px" alt="">
         Pellentesque congue eget elit vitae rutrum. Morbi bibendum dignissim convallis. Etiam lacinia quam et ipsum convallis, a congue metus sagittis. Nunc posuere iaculis nulla, nec rutrum neque condimentum at. Donec nec elementum sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor libero sem, sed bibendum elit viverra vitae.

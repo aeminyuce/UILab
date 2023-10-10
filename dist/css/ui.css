@@ -8041,7 +8041,7 @@ button.ui-dialog-custom {
 .ui-calendar tbody td.ui-calendar-days-passive span {
   box-sizing: border-box;
   font-size: 16px;
-  min-height: 32px;
+  height: 32px;
   padding: 4px;
   display: block;
   opacity: 0.45;
@@ -8049,7 +8049,7 @@ button.ui-dialog-custom {
 .ui-calendar tbody td button {
   font-size: 16px;
   width: 100%;
-  min-height: 32px;
+  height: 32px;
   background: transparent;
   padding: 6px;
   display: block;
@@ -8441,12 +8441,24 @@ button.ui-dialog-custom {
 }
 @media (min-width: 481px) {
   .ui-input .ui-calendar {
-    min-width: 260px;
+    min-width: 280px;
+  }
+  .ui-modal .ui-calendar-picker .ui-calendar {
+    max-width: 514px;
+    position: fixed;
   }
 }
 @media (max-width: 480px) {
   .ui-input .ui-calendar {
-    min-width: 265px;
+    min-width: 280px;
+  }
+  .ui-modal .ui-calendar-picker .ui-calendar {
+    width: 332px;
+    height: 340px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 /* carousel */
