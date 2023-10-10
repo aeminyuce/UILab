@@ -543,6 +543,25 @@
                     </div>
                 </div>
 
+                <h3 class="ui-h3">Column Aligning with Flex</h3>
+                <div class="ui-p-30-b">
+                    <div class="ui-row ui-row-align-l">
+                        <div class="ui-col-4">
+                            <div class="ui-card ui-border ui-p-20 ui-shadow ui-scroll-h">ui-col-4 (left aligned)</div>
+                        </div>
+                    </div>
+                    <div class="ui-row ui-row-align-r">
+                        <div class="ui-col-4">
+                            <div class="ui-card ui-border ui-p-20 ui-shadow ui-scroll-h">ui-col-4 (right aligned)</div>
+                        </div>
+                    </div>
+                    <div class="ui-row ui-row-align-c">
+                        <div class="ui-col-4">
+                            <div class="ui-card ui-border ui-p-20 ui-shadow ui-scroll-h">ui-col-4 (center aligned)</div>
+                        </div>
+                    </div>
+                </div>
+
                 <h3 class="ui-h3">Column Offsetting</h3>
                 <div class="ui-p-30-b">
                     <div class="ui-row">
