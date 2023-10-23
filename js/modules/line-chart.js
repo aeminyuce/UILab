@@ -333,7 +333,7 @@ ui.lineChart.Start = () => {
 
                         } else {
 
-                            html += 'y2="' + data.height + '" ' +
+                            html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + (ui.lineChart.gridStroke / 2))) + '" ' +
                                     'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
 
                         }

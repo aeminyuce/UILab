@@ -5953,7 +5953,7 @@ ui.lineChart.Start = function () {
           if (k === 0) {
             html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + ui.lineChart.gridStroke / 2)) + '" ' + 'class="' + ui.lineChart.nameGridRoot + '" ' + 'stroke-width="' + ui.lineChart.gridStroke + '"';
           } else {
-            html += 'y2="' + data.height + '" ' + 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
+            html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + ui.lineChart.gridStroke / 2)) + '" ' + 'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
           }
           html += '></line>';
         }
