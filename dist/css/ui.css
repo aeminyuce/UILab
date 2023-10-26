@@ -8404,7 +8404,7 @@ button.ui-dialog-custom {
   width: 100%;
   max-width: 744px;
   position: absolute;
-  z-index: 10;
+  z-index: 20;
   box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.15);
 }
 .ui-input .ui-calendar:not(.ui-open-ease) {
