@@ -52,7 +52,7 @@ ui.lineChart = {
     includeZero: true,
 
     showGrid: true,
-    showGridRootsOnly: true,
+    showGridRootsOnly: false,
     showGridText: true,
 
     showInfo: true,
@@ -565,7 +565,7 @@ ui.lineChart.Start = () => {
                                 html += '<linearGradient';
 
                                 if (name !== null && name !== '') html += ' name="' + name + '"'; // add name
-                                if (!selected) html += ' style="display: none;"'; // add no selected
+                                if (!selected) html += ' class="' + ui.lineChart.nameHide + '"'; // add no selected
 
                                 html += ' id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' +
                                             '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' +
@@ -826,6 +826,8 @@ ui.on(document,
         const items = ui.find('[name="' + name + '"]:not(li)', parent);
 
         if (items.length > 0) {
+
+            ui.addClass(parent, ui.lineChart.nameResized);
 
             if (ui.hasClass(this, ui.lineChart.nameSelected)) {
 

@@ -5799,7 +5799,7 @@ ui.lineChart = {
   colors: ['hsl(30, 100%, 63%)', 'hsl(347, 100%, 69%)', 'hsl(260, 100%, 70%)', 'hsl(180, 48%, 52%)', 'hsl(42, 100%, 67%)', 'hsl(13, 26%, 41%)', 'hsl(65, 49%, 54%)', 'hsl(0, 0%, 42%)', 'hsl(225, 43%, 57%)'],
   includeZero: true,
   showGrid: true,
-  showGridRootsOnly: true,
+  showGridRootsOnly: false,
   showGridText: true,
   showInfo: true,
   showInfoStats: true,
@@ -6057,7 +6057,7 @@ ui.lineChart.Start = function () {
           if (type.indexOf(ui.lineChart.filled) > -1) {
             html += '<linearGradient';
             if (name !== null && name !== '') html += ' name="' + name + '"';
-            if (!selected) html += ' style="display: none;"';
+            if (!selected) html += ' class="' + ui.lineChart.nameHide + '"';
             html += ' id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' + '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' + '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' + '</linearGradient>';
             html += '<path d="M';
             if (fromStart) html += ' ' + (pathStart.x + ui.lineChart.gridStroke / 2) + ' ' + pathStart.y;
@@ -6181,6 +6181,7 @@ ui.on(document, 'click', '.' + ui.lineChart.nameInfo + ' li', function () {
   var parent = ui.closest(this, '.' + ui.lineChart.target)[0];
   var items = ui.find('[name="' + name + '"]:not(li)', parent);
   if (items.length > 0) {
+    ui.addClass(parent, ui.lineChart.nameResized);
     if (ui.hasClass(this, ui.lineChart.nameSelected)) {
       ui.removeClass(this, ui.lineChart.nameSelected);
       ui.addClass(items, ui.lineChart.nameHide);
