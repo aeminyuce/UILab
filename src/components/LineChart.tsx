@@ -23,8 +23,10 @@ interface LineChartHolderProps {
     sep? : '.' | ',',
 
     showGrid?: boolean,
-    gridStroke?: number,
+    showGridRootsOnly?: boolean,
     showGridText?: boolean,
+    gridStroke?: number,
+
     showInfo?: boolean,
     showInfoStats?: boolean,
 
@@ -35,12 +37,13 @@ interface LineChartHolderProps {
 
 const LineChartHolder = function (
 
-    { children, x, step, size, prefix, suffix, sep, showGrid, gridStroke, showGridText, showInfo, showInfoStats, className, style }:LineChartHolderProps) {
+    { children, x, step, size, prefix, suffix, sep, showGrid, showGridRootsOnly, showGridText, gridStroke, showInfo, showInfoStats, className, style }:LineChartHolderProps) {
 
         // settings
         const setShowGrid = showGrid ? showGrid : false;
-        const setGridStoke = gridStroke ? gridStroke : 0;
+        const setShowGridRootsOnly = showGridRootsOnly ? showGridRootsOnly : false;
         const setShowGridText = showGridText ? showGridText : false;
+        const setGridStoke = gridStroke ? gridStroke : 0;
         const setShowInfo = showInfo ? showInfo : false;
         const setShowInfoStats = showInfoStats ? showInfoStats : false;
 
@@ -49,8 +52,9 @@ const LineChartHolder = function (
             // values
             ui.lineChart.colors = RandomColors(10);
             ui.lineChart.showGrid = setShowGrid;
-            ui.lineChart.gridStroke = setGridStoke;
+            ui.lineChart.showGridRootsOnly = setShowGridRootsOnly;
             ui.lineChart.showGridText = setShowGridText;
+            ui.lineChart.gridStroke = setGridStoke;
             ui.lineChart.showInfo = setShowInfo;
             ui.lineChart.showInfoStats = setShowInfoStats;
 
@@ -87,6 +91,7 @@ interface LineChartLineProps {
     children?: React.ReactNode,
 
     name?: string,
+    noSelected?: boolean,
 
     curved?: boolean,
     dotted?: boolean,
@@ -102,7 +107,7 @@ interface LineChartLineProps {
 
 const LineChartLine = function (
 
-    { children, name, curved, dotted, dashed, filled, noCircles, noRepeatedCircles, onlyRepeated }:LineChartLineProps) {
+    { children, name, noSelected, curved, dotted, dashed, filled, noCircles, noRepeatedCircles, onlyRepeated }:LineChartLineProps) {
 
         // types
         const setCurved = curved ? ' curved' : '';
@@ -118,7 +123,7 @@ const LineChartLine = function (
 
         return (
             <ul
-                className={classes} data-ui-name={name} data-ui-type={setType}
+                className={classes} data-ui-name={name} data-ui-no-selected={noSelected} data-ui-type={setType}
                 data-ui-no-circles={noCircles} data-ui-no-repeated-circles={noRepeatedCircles} data-ui-only-repeated={onlyRepeated}>
                     {children}
             </ul>

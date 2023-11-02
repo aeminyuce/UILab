@@ -26,7 +26,7 @@ export const ui = {
         passiveEvents: ['touchstart', 'touchmove'],
 
         // svg elements
-        svgElems: ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text'],
+        svgElems: ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text', 'lineargradient'],
 
         // icons
         iconSrc: '../dist/icons.svg', // IE not support SVG external reference!

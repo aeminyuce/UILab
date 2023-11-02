@@ -9819,6 +9819,14 @@ button.ui-dialog-custom {
   display: none;
 }
 /* line chart */
+[data-ui-mode="light"] {
+  --ui-line-chart-info-selected-bg: hsla(0, 0%, 0%, 0.08);
+  --ui-line-chart-info-hover-bg: hsla(0, 0%, 0%, 0.18);
+}
+[data-ui-mode="dark"] {
+  --ui-line-chart-info-selected-bg: hsla(0, 0%, 100%, 0.14);
+  --ui-line-chart-info-hover-bg: hsla(0, 0%, 100%, 0.24);
+}
 @keyframes ui-line-draw {
   to {
     stroke-dashoffset: 0;
@@ -9845,6 +9853,10 @@ button.ui-dialog-custom {
   transition-property: stroke-width;
   transition-duration: 0.15s;
 }
+.ui-ease-line-chart li {
+  transition-property: background-color;
+  transition-duration: 0.15s;
+}
 .ui-line-chart-holder {
   -ms-user-select: none;
   -webkit-user-select: none;
@@ -9860,14 +9872,29 @@ button.ui-dialog-custom {
   display: block;
 }
 .ui-line-chart-holder .ui-line-chart-info li {
+  padding: 0 5px;
   margin: 0 5px 3px 5px;
   display: inline-block;
+  border-radius: 1000px;
+  cursor: pointer;
+}
+.ui-line-chart-holder .ui-line-chart-info li.ui-selected {
+  background-color: hsla(0, 0%, 0%, 0.08);
+  background-color: var(--ui-line-chart-info-selected-bg);
+}
+.ui-line-chart-holder .ui-line-chart-info li.ui-selected:hover {
+  background-color: hsla(0, 0%, 0%, 0.18);
+  background-color: var(--ui-line-chart-info-hover-bg);
+}
+.ui-line-chart-holder .ui-line-chart-info li:not(.ui-selected):hover {
+  background-color: hsla(0, 0%, 0%, 0.08);
+  background-color: var(--ui-line-chart-info-selected-bg);
 }
 .ui-line-chart-holder .ui-line-chart-info li span {
   vertical-align: middle;
   width: 13px;
   height: 13px;
-  margin: -3px 5px 0 0;
+  margin: -1px 5px 0 0;
   display: inline-block;
   border-radius: 50%;
 }

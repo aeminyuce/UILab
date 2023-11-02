@@ -20,10 +20,12 @@ ui.lineChart = {
     nameTypePrefix: 'ui-',
 
     // helper classnames
+    nameHide: 'ui-hidden',
     nameLoaded: 'ui-loaded',
     nameNotLoaded: 'ui-no-loaded',
 
     nameResized: 'ui-resized',
+    nameSelected: 'ui-selected',
 
     // ids
     idGradient: 'ui-gradient',
@@ -50,7 +52,9 @@ ui.lineChart = {
     includeZero: true,
 
     showGrid: true,
+    showGridRootsOnly: true,
     showGridText: true,
+
     showInfo: true,
     showInfoStats: true,
 
@@ -92,6 +96,7 @@ ui.lineChart = {
     dataLink: 'data-ui-url',
     dataType: 'data-ui-type',
     dataName: 'data-ui-name',
+    dataNoSelected: 'data-ui-no-selected',
     dataStep: 'data-ui-step',
 
     dataNoCircles: 'data-ui-no-circles',
@@ -130,6 +135,7 @@ ui.lineChart.Start = () => {
                 let data = [];
 
                 data.name = [];
+                data.selected = [];
                 data.color = [];
 
                 if (resizer !== undefined && resizer) {
@@ -236,10 +242,8 @@ ui.lineChart.Start = () => {
 
                 if (data.step !== null && data.step !== '' && data.step !== '0') {
 
-                    if (isNaN(data.step)) {
-                        data.step = false;
-
-                    } else {
+                    if (isNaN(data.step)) data.step = false;
+                    else {
 
                         data.stepArr = [];
 
@@ -320,25 +324,40 @@ ui.lineChart.Start = () => {
 
                     if (ui.lineChart.showGrid) {
 
-                        html += '<line ' +
-                                    'x1="' + posX + '" ' +
-                                    'x2="' + posX + '" ' +
-                                    'y1="' + ui.lineChart.top + '" ';
+                        if (ui.lineChart.showGridRootsOnly) { // root of x grid
 
-                        if (k === 0) { // root of x grid
-
-                            html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + (ui.lineChart.gridStroke / 2))) + '" ' +
-                                    'class="' + ui.lineChart.nameGridRoot + '" ' +
-                                    'stroke-width="' + ui.lineChart.gridStroke + '"';
+                            if (k === 0) html += '<line ' +
+                                        'x1="' + posX + '" ' +
+                                        'x2="' + posX + '" ' +
+                                        'y1="' + ui.lineChart.top + '" ' +
+                                        'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + (ui.lineChart.gridStroke / 2))) + '" ' +
+                                        'class="' + ui.lineChart.nameGridRoot + '" ' +
+                                        'stroke-width="' + ui.lineChart.gridStroke + '">' +
+                                    '</line>'
 
                         } else {
 
-                            html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + (ui.lineChart.gridStroke / 2))) + '" ' +
-                                    'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
+                            html += '<line ' +
+                                        'x1="' + posX + '" ' +
+                                        'x2="' + posX + '" ' +
+                                        'y1="' + ui.lineChart.top + '" ';
+
+                            if (k === 0) { // root of x grid
+
+                                html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + (ui.lineChart.gridStroke / 2))) + '" ' +
+                                        'class="' + ui.lineChart.nameGridRoot + '" ' +
+                                        'stroke-width="' + ui.lineChart.gridStroke + '"';
+
+                            } else {
+
+                                html += 'y2="' + Math.ceil(data.height - (ui.lineChart.bottom + (ui.lineChart.gridStroke / 2))) + '" ' +
+                                        'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
+
+                            }
+
+                            html += '></line>';
 
                         }
-
-                        html += '></line>';
 
                     }
 
@@ -375,25 +394,40 @@ ui.lineChart.Start = () => {
 
                     if (ui.lineChart.showGrid) {
 
-                        html += '<line ' +
+                        if (ui.lineChart.showGridRootsOnly) { // root of y grid
+
+                            if (l >= rows) html += '<line ' +
+                                        'x2="' + (data.width - ui.lineChart.right) + '" ' +
+                                        'y1="' + posY + '" ' +
+                                        'y2="' + posY + '" ' +
+                                        'x1="' + Math.ceil(chartLeftSpace - (ui.lineChart.gridStroke / 2)) + '" ' +
+                                        'class="' + ui.lineChart.nameGridRoot + '" ' +
+                                        'stroke-width="' + ui.lineChart.gridStroke + '">' +
+                                    '</line>';
+
+                        } else {
+
+                            html += '<line ' +
                                     'x2="' + (data.width - ui.lineChart.right) + '" ' +
                                     'y1="' + posY + '" ' +
                                     'y2="' + posY + '" ';
 
-                        if (l >= rows) { // root of y grid
+                            if (l >= rows) { // root of y grid
 
-                            html += 'x1="' + Math.ceil(chartLeftSpace - (ui.lineChart.gridStroke / 2)) + '" ' +
-                                    'class="' + ui.lineChart.nameGridRoot + '" ' +
-                                    'stroke-width="' + ui.lineChart.gridStroke + '"';
+                                html += 'x1="' + Math.ceil(chartLeftSpace - (ui.lineChart.gridStroke / 2)) + '" ' +
+                                        'class="' + ui.lineChart.nameGridRoot + '" ' +
+                                        'stroke-width="' + ui.lineChart.gridStroke + '"';
 
-                        } else {
+                            } else {
 
-                            html += 'x1="' + Math.floor(chartLeftSpace + ui.lineChart.gridStroke) + '" ' +
-                                    'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
+                                html += 'x1="' + Math.floor(chartLeftSpace + ui.lineChart.gridStroke) + '" ' +
+                                        'stroke-dasharray="' + ui.lineChart.gridStrokeArray + '"';
+
+                            }
+
+                            html += '></line>';
 
                         }
-
-                        html += '></line>';
 
                     }
 
@@ -421,6 +455,18 @@ ui.lineChart.Start = () => {
 
                         } else data.color.push(ui.lineChart.colors[j]);
 
+                        // get data names
+                        const name = el.getAttribute(ui.lineChart.dataName);
+
+                        if (name !== null && name !== '') data.name.push(name);
+                        else data.name.push('');
+
+                        // selected or no selected
+                        let selected = el.getAttribute(ui.lineChart.dataNoSelected);
+
+                        selected = selected !== null && selected === 'true' ? false : true; // check selected
+                        data.selected.push(selected);
+
                         // create paths and circles
                         let noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
                         noCircles = noCircles === null || noCircles === '' ? false : true;
@@ -446,6 +492,9 @@ ui.lineChart.Start = () => {
                                             'fill="' + data.color[j] + '" ' +
                                             'stroke="' + data.color[j] + '" ' +
                                             'stroke-width="0" ';
+
+                            if (name !== null && name !== '') circles += ' name="' + name + '"'; // add name
+                            if (!selected) circles += ' class="' + ui.lineChart.nameHide + '"'; // add no selected
 
                             if (data[j].links[n] !== '') { // check links
                                 circles += 'onclick="location.href = \'' + data[j].links[n] + '\';"';
@@ -475,13 +524,27 @@ ui.lineChart.Start = () => {
 
                         const createPaths = (pathsData, fromStart) => {
 
+                            let classes = '';
+
                             if (type.indexOf(ui.lineChart.dashed) > -1) { // dashed
-                                html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dashed + '" ';
+
+                                classes += ui.lineChart.nameTypePrefix + ui.lineChart.dashed;
+                                if (!selected) classes += ' ui-hidden'; // add no selected
+
+                                html += '<path class="' + classes + '" ';
 
                             } else if (type.indexOf(ui.lineChart.dotted) > -1) { // dotted
-                                html += '<path class="' + ui.lineChart.nameTypePrefix + ui.lineChart.dotted + '" ';
 
-                            } else html += '<path ';
+                                classes += ui.lineChart.nameTypePrefix + ui.lineChart.dotted;
+                                if (!selected) classes += ' ui-hidden'; // add no selected
+
+                                html += '<path class="' + classes + '" ';
+
+                            }
+                            else if (!selected) html += '<path class="ui-hidden" ';
+                            else html += '<path ';
+
+                            if (name !== null && name !== '') html += ' name="' + name + '"'; // add name
 
                             html += 'd="M';
                             if (fromStart) html += ' ' + pathStart.x + ' ' + pathStart.y;
@@ -499,7 +562,12 @@ ui.lineChart.Start = () => {
 
                             if (type.indexOf(ui.lineChart.filled) > -1) {
 
-                                html += '<linearGradient id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' +
+                                html += '<linearGradient';
+
+                                if (name !== null && name !== '') html += ' name="' + name + '"'; // add name
+                                if (!selected) html += ' style="display: none;"'; // add no selected
+
+                                html += ' id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' +
                                             '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' +
                                             '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' +
                                         '</linearGradient>';
@@ -672,12 +740,6 @@ ui.lineChart.Start = () => {
 
                         }
 
-                        // get data names
-                        const name = el.getAttribute(ui.lineChart.dataName);
-
-                        if (name !== null && name !== '') data.name.push(name);
-                        else data.name.push('');
-
                     });
 
                 // close svg tag
@@ -698,11 +760,14 @@ ui.lineChart.Start = () => {
 
                         for (let n = 0; n < data[p].y.length; n++) {
                             total += parseInt(data[p].y[n]);
-                        }
 
+                        }
                         if (data.name[p] !== '') {
 
-                            html += '<li>' +
+                            html += '<li name="' + data.name[p] + '"';
+                            if (data.selected[p]) html += ' class="' + ui.lineChart.nameSelected + '"';
+
+                            html += '>' +
                                         '<' + ui.lineChart.tagInfoColor +' style="background: ' +
                                             data.color[p] + '">' +
                                         '</' + ui.lineChart.tagInfoColor + '>' +
@@ -746,6 +811,39 @@ ui.lineChart.Start = () => {
     ui.lineChart.Init(ui.lineChart.nameNotLoaded); // show not loaded charts
 
 };
+
+// Event Listeners
+ui.on(document,
+    'click',
+
+    '.' + ui.lineChart.nameInfo + ' li',
+
+    function () {
+
+        const name = this.getAttribute('name');
+
+        const parent = ui.closest(this, '.' + ui.lineChart.target)[0];
+        const items = ui.find('[name="' + name + '"]:not(li)', parent);
+
+        if (items.length > 0) {
+
+            if (ui.hasClass(this, ui.lineChart.nameSelected)) {
+
+                // hide
+                ui.removeClass(this, ui.lineChart.nameSelected);
+                ui.addClass(items, ui.lineChart.nameHide);
+
+            } else {
+
+                // show
+                ui.addClass(this, ui.lineChart.nameSelected);
+                ui.removeClass(items, ui.lineChart.nameHide);
+
+            }
+
+        }
+
+    });
 
 // loaders
 ui.onload(ui.lineChart.Start);
