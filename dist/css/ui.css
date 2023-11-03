@@ -9871,7 +9871,8 @@ button.ui-dialog-custom {
 }
 .ui-line-chart-holder .ui-line-chart-info li {
   color: hsl(0, 0%, 100%);
-  height: 20px;
+  font-size: 13px;
+  height: 19px;
   padding: 0 5px;
   margin: 0 5px 3px 5px;
   display: inline-block;
