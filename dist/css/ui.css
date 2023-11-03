@@ -9873,8 +9873,8 @@ button.ui-dialog-custom {
   color: hsl(0, 0%, 100%);
   font-size: 13px;
   height: 19px;
-  padding: 0 5px;
-  margin: 0 5px 3px 5px;
+  padding: 0 6px;
+  margin: 0 2px 1px 2px;
   display: inline-block;
   border-radius: 1000px;
 }
