@@ -26,6 +26,7 @@ ui.lineChart = {
 
     nameResized: 'ui-resized',
     nameSelected: 'ui-selected',
+    nameToggle: 'ui-toggle',
 
     // ids
     idGradient: 'ui-gradient',
@@ -465,7 +466,7 @@ ui.lineChart.Start = () => {
                         let selected = el.getAttribute(ui.lineChart.dataNoSelected);
 
                         selected = selected !== null && selected === 'true' ? false : true; // check selected
-                        data.selected.push(selected);
+                        data.selected.push(lines.length === 1 ? '' : selected);
 
                         // create paths and circles
                         let noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
@@ -762,16 +763,23 @@ ui.lineChart.Start = () => {
                             total += parseInt(data[p].y[n]);
 
                         }
+
                         if (data.name[p] !== '') {
 
-                            html += '<li name="' + data.name[p] + '"';
-                            if (data.selected[p]) html += ' class="' + ui.lineChart.nameSelected + '"';
+                            const selected = data.selected[p];
 
-                            html += '>' +
-                                        '<' + ui.lineChart.tagInfoColor +' style="background: ' +
-                                            data.color[p] + '">' +
-                                        '</' + ui.lineChart.tagInfoColor + '>' +
-                                        data.name[p];
+                            html += '<li name="' + data.name[p] + '"';
+
+                            if (selected !== '') {
+
+                                html += ' class="' + ui.lineChart.nameToggle;
+                                if (selected) html += ' ' + ui.lineChart.nameSelected;
+                                html += '"';
+
+                            }
+
+                            html += ' style="background: ' + data.color[p] + '"';
+                            html += '>' + data.name[p];
 
                             if (ui.lineChart.showInfoStats) {
 
@@ -816,7 +824,7 @@ ui.lineChart.Start = () => {
 ui.on(document,
     'click',
 
-    '.' + ui.lineChart.nameInfo + ' li',
+    '.' + ui.lineChart.nameInfo + ' li.' + ui.lineChart.nameToggle,
 
     function () {
 

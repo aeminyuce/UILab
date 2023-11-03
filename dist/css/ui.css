@@ -9821,11 +9821,9 @@ button.ui-dialog-custom {
 /* line chart */
 [data-ui-mode="light"] {
   --ui-line-chart-info-selected-bg: hsla(0, 0%, 0%, 0.08);
-  --ui-line-chart-info-hover-bg: hsla(0, 0%, 0%, 0.18);
 }
 [data-ui-mode="dark"] {
   --ui-line-chart-info-selected-bg: hsla(0, 0%, 100%, 0.14);
-  --ui-line-chart-info-hover-bg: hsla(0, 0%, 100%, 0.24);
 }
 @keyframes ui-line-draw {
   to {
@@ -9872,31 +9870,21 @@ button.ui-dialog-custom {
   display: block;
 }
 .ui-line-chart-holder .ui-line-chart-info li {
+  color: hsl(0, 0%, 100%);
+  height: 20px;
   padding: 0 5px;
   margin: 0 5px 3px 5px;
   display: inline-block;
   border-radius: 1000px;
+}
+.ui-line-chart-holder .ui-line-chart-info li.ui-toggle {
   cursor: pointer;
 }
-.ui-line-chart-holder .ui-line-chart-info li.ui-selected {
-  background-color: hsla(0, 0%, 0%, 0.08);
-  background-color: var(--ui-line-chart-info-selected-bg);
-}
-.ui-line-chart-holder .ui-line-chart-info li.ui-selected:hover {
-  background-color: hsla(0, 0%, 0%, 0.18);
-  background-color: var(--ui-line-chart-info-hover-bg);
-}
-.ui-line-chart-holder .ui-line-chart-info li:not(.ui-selected):hover {
-  background-color: hsla(0, 0%, 0%, 0.08);
-  background-color: var(--ui-line-chart-info-selected-bg);
-}
-.ui-line-chart-holder .ui-line-chart-info li span {
-  vertical-align: middle;
-  width: 13px;
-  height: 13px;
-  margin: -1px 5px 0 0;
-  display: inline-block;
-  border-radius: 50%;
+.ui-line-chart-holder .ui-line-chart-info li.ui-toggle:not(.ui-selected) {
+  color: hsl(0, 0%, 0%);
+  color: var(--ui-black);
+  background-color: hsla(0, 0%, 0%, 0.08) !important;
+  background-color: var(--ui-line-chart-info-selected-bg) !important;
 }
 .ui-line-chart-holder svg {
   width: 100%;

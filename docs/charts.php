@@ -128,15 +128,6 @@
                     <div class="ui-col-6">
                         <h5 class="ui-h5 ui-font-bold ui-align-c">Line Charts</h5>
                         <div class="ui-line-chart-holder ui-ease-line-chart" data-ui-size="10,25" data-ui-x="Mon,Tue,Wed,Thu,Fri,Sat,Sun">
-                            <ul class="ui-line-chart" data-ui-name="1st">
-                                <li data-ui-y="-34" data-ui-url="#1"></li>
-                                <li data-ui-y="-56" data-ui-url="#2"></li>
-                                <li data-ui-y="-112" data-ui-url="#3"></li>
-                                <li data-ui-y="-140" data-ui-url="#4"></li>
-                                <li data-ui-y="-28" data-ui-url="#5"></li>
-                                <li data-ui-y="-20" data-ui-url="#6"></li>
-                                <li data-ui-y="-28" data-ui-url="#7"></li>
-                            </ul>
                             <ul class="ui-line-chart" data-ui-name="2nd">
                                 <li data-ui-y="120" data-ui-url="#1"></li>
                                 <li data-ui-y="20" data-ui-url="#2"></li>

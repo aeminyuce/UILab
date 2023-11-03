@@ -5792,6 +5792,7 @@ ui.lineChart = {
   nameNotLoaded: 'ui-no-loaded',
   nameResized: 'ui-resized',
   nameSelected: 'ui-selected',
+  nameToggle: 'ui-toggle',
   idGradient: 'ui-gradient',
   tagLines: 'li',
   tagInfoColor: 'span',
@@ -6005,7 +6006,7 @@ ui.lineChart.Start = function () {
         if (name !== null && name !== '') data.name.push(name);else data.name.push('');
         var selected = el.getAttribute(ui.lineChart.dataNoSelected);
         selected = selected !== null && selected === 'true' ? false : true;
-        data.selected.push(selected);
+        data.selected.push(lines.length === 1 ? '' : selected);
         var noCircles = el.getAttribute(ui.lineChart.dataNoCircles);
         noCircles = noCircles === null || noCircles === '' ? false : true;
         var noRepeatedCircles = el.getAttribute(ui.lineChart.dataNoRepeatedCircles);
@@ -6154,9 +6155,15 @@ ui.lineChart.Start = function () {
             total += parseInt(data[p].y[n]);
           }
           if (data.name[p] !== '') {
+            var selected = data.selected[p];
             html += '<li name="' + data.name[p] + '"';
-            if (data.selected[p]) html += ' class="' + ui.lineChart.nameSelected + '"';
-            html += '>' + '<' + ui.lineChart.tagInfoColor + ' style="background: ' + data.color[p] + '">' + '</' + ui.lineChart.tagInfoColor + '>' + data.name[p];
+            if (selected !== '') {
+              html += ' class="' + ui.lineChart.nameToggle;
+              if (selected) html += ' ' + ui.lineChart.nameSelected;
+              html += '"';
+            }
+            html += ' style="background: ' + data.color[p] + '"';
+            html += '>' + data.name[p];
             if (ui.lineChart.showInfoStats) {
               html += ': <' + ui.lineChart.tagInfoStat + '>' + total + '</' + ui.lineChart.tagInfoStat + '>';
             }
@@ -6176,7 +6183,7 @@ ui.lineChart.Start = function () {
   };
   ui.lineChart.Init(ui.lineChart.nameNotLoaded);
 };
-ui.on(document, 'click', '.' + ui.lineChart.nameInfo + ' li', function () {
+ui.on(document, 'click', '.' + ui.lineChart.nameInfo + ' li.' + ui.lineChart.nameToggle, function () {
   var name = this.getAttribute('name');
   var parent = ui.closest(this, '.' + ui.lineChart.target)[0];
   var items = ui.find('[name="' + name + '"]:not(li)', parent);
