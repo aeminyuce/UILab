@@ -457,9 +457,9 @@ ui.lineChart.Start = () => {
                         } else data.color.push(ui.lineChart.colors[j]);
 
                         // get data names
-                        const name = el.getAttribute(ui.lineChart.dataName);
+                        const dataName = el.getAttribute(ui.lineChart.dataName);
 
-                        if (name !== null && name !== '') data.name.push(name);
+                        if (dataName !== null && dataName !== '') data.name.push(dataName);
                         else data.name.push('');
 
                         // selected or no selected
@@ -494,7 +494,7 @@ ui.lineChart.Start = () => {
                                             'stroke="' + data.color[j] + '" ' +
                                             'stroke-width="0" ';
 
-                            if (name !== null && name !== '') circles += ' name="' + name + '"'; // add name
+                            if (dataName !== null && dataName !== '') circles += ' data-name="' + dataName + '"'; // add data-name
                             if (!selected) circles += ' class="' + ui.lineChart.nameHide + '"'; // add no selected
 
                             if (data[j].links[n] !== '') { // check links
@@ -545,7 +545,7 @@ ui.lineChart.Start = () => {
                             else if (!selected) html += '<path class="ui-hidden" ';
                             else html += '<path ';
 
-                            if (name !== null && name !== '') html += ' name="' + name + '"'; // add name
+                            if (dataName !== null && dataName !== '') html += ' data-name="' + dataName + '"'; // add data-name
 
                             html += 'd="M';
                             if (fromStart) html += ' ' + pathStart.x + ' ' + pathStart.y;
@@ -565,7 +565,7 @@ ui.lineChart.Start = () => {
 
                                 html += '<linearGradient';
 
-                                if (name !== null && name !== '') html += ' name="' + name + '"'; // add name
+                                if (dataName !== null && dataName !== '') html += ' data-name="' + dataName + '"'; // add data-name
                                 if (!selected) html += ' class="' + ui.lineChart.nameHide + '"'; // add no selected
 
                                 html += ' id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' +
@@ -831,7 +831,7 @@ ui.on(document,
         const name = this.getAttribute('name');
 
         const parent = ui.closest(this, '.' + ui.lineChart.target)[0];
-        const items = ui.find('[name="' + name + '"]:not(li)', parent);
+        const items = ui.find('[data-name="' + name + '"]:not(li)', parent);
 
         if (items.length > 0) {
 

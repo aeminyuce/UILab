@@ -6002,8 +6002,8 @@ ui.lineChart.Start = function () {
         if (j > ui.lineChart.colors.length - 1) {
           data.color.push(ui.lineChart.colors[j - ui.lineChart.colors.length]);
         } else data.color.push(ui.lineChart.colors[j]);
-        var name = el.getAttribute(ui.lineChart.dataName);
-        if (name !== null && name !== '') data.name.push(name);else data.name.push('');
+        var dataName = el.getAttribute(ui.lineChart.dataName);
+        if (dataName !== null && dataName !== '') data.name.push(dataName);else data.name.push('');
         var selected = el.getAttribute(ui.lineChart.dataNoSelected);
         selected = selected !== null && selected === 'true' ? false : true;
         data.selected.push(lines.length === 1 ? '' : selected);
@@ -6020,7 +6020,7 @@ ui.lineChart.Start = function () {
         var createCircles = function createCircles(n) {
           if (noCircles) return;
           circles += '<circle ' + 'cx="' + posX + '" ' + 'cy="' + posY + '" ' + 'r="' + ui.lineChart.circleSize + '" ' + 'fill="' + data.color[j] + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="0" ';
-          if (name !== null && name !== '') circles += ' name="' + name + '"';
+          if (dataName !== null && dataName !== '') circles += ' data-name="' + dataName + '"';
           if (!selected) circles += ' class="' + ui.lineChart.nameHide + '"';
           if (data[j].links[n] !== '') {
             circles += 'onclick="location.href = \'' + data[j].links[n] + '\';"';
@@ -6048,7 +6048,7 @@ ui.lineChart.Start = function () {
             if (!selected) classes += ' ui-hidden';
             html += '<path class="' + classes + '" ';
           } else if (!selected) html += '<path class="ui-hidden" ';else html += '<path ';
-          if (name !== null && name !== '') html += ' name="' + name + '"';
+          if (dataName !== null && dataName !== '') html += ' data-name="' + dataName + '"';
           html += 'd="M';
           if (fromStart) html += ' ' + pathStart.x + ' ' + pathStart.y;
           html += pathsData + '" ' + 'stroke="' + data.color[j] + '" ' + 'stroke-width="' + ui.lineChart.lineStroke + '" ' + '/>';
@@ -6057,7 +6057,7 @@ ui.lineChart.Start = function () {
         var createFilledPaths = function createFilledPaths(id, pathsData, fromStart, cutted) {
           if (type.indexOf(ui.lineChart.filled) > -1) {
             html += '<linearGradient';
-            if (name !== null && name !== '') html += ' name="' + name + '"';
+            if (dataName !== null && dataName !== '') html += ' data-name="' + dataName + '"';
             if (!selected) html += ' class="' + ui.lineChart.nameHide + '"';
             html += ' id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' + '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' + '<stop offset="100%" stop-color="' + data.color[j] + '" stop-opacity="0.0"></stop>' + '</linearGradient>';
             html += '<path d="M';
@@ -6186,7 +6186,7 @@ ui.lineChart.Start = function () {
 ui.on(document, 'click', '.' + ui.lineChart.nameInfo + ' li.' + ui.lineChart.nameToggle, function () {
   var name = this.getAttribute('name');
   var parent = ui.closest(this, '.' + ui.lineChart.target)[0];
-  var items = ui.find('[name="' + name + '"]:not(li)', parent);
+  var items = ui.find('[data-name="' + name + '"]:not(li)', parent);
   if (items.length > 0) {
     ui.addClass(parent, ui.lineChart.nameResized);
     if (ui.hasClass(this, ui.lineChart.nameSelected)) {
