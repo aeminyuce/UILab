@@ -179,7 +179,7 @@ interface FormFileProps {
     onInput?: React.ReactEventHandler,
     onBlur?: React.ReactEventHandler,
 
-    as?: 'input' | 'button',
+    as: 'input' | 'button',
 
     btnName?: string,
     placeholder?: string,
