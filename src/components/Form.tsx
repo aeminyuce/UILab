@@ -6,6 +6,7 @@ import Icon from '@components/Icon';
 
 // assets
 const icon_angle_down = 'M132 202h-.024a11 11 0 0 1-7.788-3.255l-117-118a11 11 0 0 1 15.623-15.49L132.033 175.41 242.222 65.222a11 11 0 0 1 15.556 15.556l-118 118A11 11 0 0 1 132 202Z';
+const icon_plus = 'M121.5 252V142.5H12a11 11 0 0 1-11-11 11 11 0 0 1 11-11h109.5V12a11 11 0 0 1 11-11 11 11 0 0 1 11 11v108.5H252a11 11 0 0 1 11 11 11 11 0 0 1-11 11H143.5V252a11 11 0 0 1-11 11 11 11 0 0 1-11-11Z';
 
 import '@less/modules/autocomplete';
 import '@less/modules/textarea-counter';
@@ -178,6 +179,8 @@ interface FormFileProps {
     onInput?: React.ReactEventHandler,
     onBlur?: React.ReactEventHandler,
 
+    as?: 'input' | 'button',
+
     btnName?: string,
     placeholder?: string,
 
@@ -206,12 +209,11 @@ interface FormFileProps {
 
 const FormFile = function (
 
-    { onChange, onInput, onBlur, btnName, placeholder, name, tabIndex, value, defaultValue, disabled, light, inline, multiple, readOnly, required, myRef, noease, id, className, btnClassName, style }:FormFileProps) {
+    { onChange, onInput, onBlur, as, btnName, placeholder, name, tabIndex, value, defaultValue, disabled, light, inline, multiple, readOnly, required, myRef, noease, id, className, btnClassName, style }:FormFileProps) {
 
         // names
         const setBtnName = btnName ? btnName : 'Dosya Seç';
         const setPlaceholder = placeholder ? placeholder : 'Seçilen dosya yok';
-
 
         // classes
         const setClassName = className ? ' ' + className : '';
@@ -249,10 +251,19 @@ const FormFile = function (
                     className={childrenClasses} disabled={disabled} multiple={multiple} readOnly={readOnly}
                     onChange={onChange} onInput={onInput} onBlur={onBlur}
                 />
-                <i>{setPlaceholder}</i>
-                <Button as="span" className={btnClasses}>
-                    {setBtnName}
-                </Button>
+                {as === 'input' &&
+                    <>
+                        <i>{setPlaceholder}</i>
+                        <Button as="span" className={btnClasses}>
+                            {setBtnName}
+                        </Button>
+                    </>
+                }
+                {as === 'button' &&
+                    <Button square as="span" className={btnClasses}>
+                        <Icon path src={icon_plus} />
+                    </Button>
+                }
             </div>
         );
     }
