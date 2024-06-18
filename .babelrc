@@ -5,7 +5,7 @@
         [
             "@babel/preset-env", {
                 "targets": {
-                    "ie": "10" // Supported IE Version
+                    "edge": "79" // Supported Edge (First Chromium) Version
                 }
             }
         ]

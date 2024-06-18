@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require('webpack');
 
 const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
@@ -102,15 +103,23 @@ module.exports = (env, argv) => {
             host: 'localhost', // localhost
             port: 3000, // port number
             open: true, // Opens browser on a new tab automatically
-            historyApiFallback: true, // enable page refresh for HashRouter
+            historyApiFallback: true, // enable page refresh
             hot: true, // always make hot refresh when code updated
         };
 
     }
 
+    // send custom variables to process.env
+    const customVars = {
+        SERVICE_URL: JSON.stringify('mockoon'),
+    };
+
     // plugins
     config.plugins = [
         new HtmlWebPackPlugin( htmlWebpackPlugin ),
+        new webpack.DefinePlugin({
+            process: { env: customVars }
+        }),
         new CopyPlugin({
             patterns: [{ from: "public" }], // copy files from public folder
         }),
