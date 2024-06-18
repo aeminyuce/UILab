@@ -39,6 +39,7 @@ interface ButtonProps {
     type?: 'submit' | 'button' | 'reset',
     size?: 'lg' | 'sm' | 'xs',
     fluid?: 'md' | 'sm' | 'xs',
+    rel?: string,
 
     id?: any,
     form?: any,
@@ -50,7 +51,7 @@ interface ButtonProps {
 
 const Button = function (
 
-    { children, as, onClick, onMouseDown, onMouseUp, value, disabled, title, to, state, href, target, active, passive, multi, square, ghost, block, myRef, noease, nostyle, type, size, fluid, id, form, className, style, data }:ButtonProps) {
+    { children, as, onClick, onMouseDown, onMouseUp, value, disabled, title, to, state, href, target, active, passive, multi, square, ghost, block, myRef, noease, nostyle, type, size, rel, fluid, id, form, className, style, data }:ButtonProps) {
 
         // classes
         const setActive = active ? ' ui-btn-active' : '';
@@ -76,6 +77,9 @@ const Button = function (
         } else {
             classes = 'ui-btn' + setSize + setFluid + setActive + setPassive + setMulti + setSquare + setGhost + setBlock + setClassName + setEase;
         }
+
+        // attributes
+        const setType = type ? type : 'button';
 
         // data attributes
         let setData = [];
@@ -105,19 +109,19 @@ const Button = function (
         else return (
             <>
                 {href &&
-                    <a ref={myRef} href={href} id={id} target={target} title={title} className={classes} {...setData} style={style}
+                    <a ref={myRef} href={href} id={id} target={target} title={title} className={classes} {...setData} style={style} rel={rel}
                         onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
                             {children}
                     </a>
                 }
                 {to &&
-                    <Link ref={myRef} to={to} id={id} state={state} title={title} className={classes} {...setData} style={style}
+                    <Link ref={myRef} to={to} id={id} state={state} title={title} className={classes} {...setData} style={style} rel={rel}
                         onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
                             {children}
                     </Link>
                 }
                 {!href && !to &&
-                    <button ref={myRef} id={id} form={form} type={type} value={value} disabled={disabled} title={title} className={classes} {...setData} style={style}
+                    <button ref={myRef} id={id} form={form} type={setType} value={value} disabled={disabled} title={title} className={classes} {...setData} style={style}
                         onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
                             {children}
                     </button>
