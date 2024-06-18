@@ -14,15 +14,13 @@ import {
 
 export default function () {
     return (
-        <>
-            <Routes>
-                <Route path="/" element={
-                    <PageTitle title="Home"><Home /></PageTitle>
-                } />
-                <Route path="calendar" element={
-                    <PageTitle title="Calendar"><Calendar /></PageTitle>
-                } />
-            </Routes>
-        </>
+        <Routes>
+            <Route path="/*" element={
+                <PageTitle title="Home"><Home /></PageTitle>
+            } />
+            <Route path="calendar" element={
+                <PageTitle title="Calendar"><Calendar /></PageTitle>
+            } />
+        </Routes>
     );
 }

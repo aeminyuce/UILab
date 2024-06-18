@@ -8,7 +8,6 @@ import '@js/core/hasclass';
 import '@js/core/addclass';
 import '@js/core/removeclass';
 import '@js/core/toggleclass';
-import '@js/core/each';
 import '@js/core/closest';
 import '@js/core/ajax';
 
