@@ -3,8 +3,8 @@ import { ui } from '@ui';
 // assets
 const icon_remove = '<path d="M244.222 259.778 132 147.557 19.778 259.778A10.966 10.966 0 0 1 12 263a10.961 10.961 0 0 1-7.777-3.223 11 11 0 0 1 0-15.556L116.444 132 4.223 19.779a11 11 0 0 1 0-15.557 11 11 0 0 1 15.556 0L132 116.443 244.221 4.221a11 11 0 0 1 15.557 0 11 11 0 0 1 0 15.557L147.557 132l112.222 112.222a11 11 0 0 1 0 15.556A10.966 10.966 0 0 1 252 263a10.966 10.966 0 0 1-7.778-3.222Z" />'
 
-import '@less/modules/alerts';
-import '@js/modules/alerts';
+import '@ui-less/modules/alerts';
+import '@ui-js/modules/alerts';
 
 const Alerts = function () {}
 

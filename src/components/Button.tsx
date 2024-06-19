@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 
 // assets
-import '@less/modules/buttons';
+import '@ui-less/modules/buttons';
 
 interface ButtonProps {
 

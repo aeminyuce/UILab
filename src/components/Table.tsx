@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // assets
-import '@less/modules/tables';
+import '@ui-less/modules/tables';
 
 interface TableProps {
 

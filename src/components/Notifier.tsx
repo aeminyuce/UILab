@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // assets
-import '@less/modules/notifier';
+import '@ui-less/modules/notifier';
 
 interface NotifierProps {
 

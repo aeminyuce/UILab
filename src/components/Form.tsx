@@ -1,21 +1,21 @@
 import * as React from 'react';
 import { useId, useEffect } from 'react';
 import { ui } from '@ui';
-import Button from '@components/Button';
-import Icon from '@components/Icon';
+import Button from '@ui-components/Button';
+import Icon from '@ui-components/Icon';
 
 // assets
 const icon_angle_down = 'M132 202h-.024a11 11 0 0 1-7.788-3.255l-117-118a11 11 0 0 1 15.623-15.49L132.033 175.41 242.222 65.222a11 11 0 0 1 15.556 15.556l-118 118A11 11 0 0 1 132 202Z';
 const icon_plus = 'M121.5 252V142.5H12a11 11 0 0 1-11-11 11 11 0 0 1 11-11h109.5V12a11 11 0 0 1 11-11 11 11 0 0 1 11 11v108.5H252a11 11 0 0 1 11 11 11 11 0 0 1-11 11H143.5V252a11 11 0 0 1-11 11 11 11 0 0 1-11-11Z';
 
-import '@less/modules/autocomplete';
-import '@less/modules/textarea-counter';
-import '@less/modules/forms';
+import '@ui-less/modules/autocomplete';
+import '@ui-less/modules/textarea-counter';
+import '@ui-less/modules/forms';
 
-import '@js/modules/autocomplete';
-import '@js/modules/required-forms';
-import '@js/modules/textarea-counter';
-import '@js/modules/forms';
+import '@ui-js/modules/autocomplete';
+import '@ui-js/modules/required-forms';
+import '@ui-js/modules/textarea-counter';
+import '@ui-js/modules/forms';
 
 const Form = function () {}
 

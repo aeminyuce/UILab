@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 // assets
-import '@less/modules/tab';
-import '@js/modules/tab';
+import '@ui-less/modules/tab';
+import '@ui-js/modules/tab';
 
 const Tab = function () {}
 

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 // layouts
-import PageTitle from '@layouts/PageTitle';
+import PageTitle from '@ui-layouts/PageTitle';
 
 // utils
 import {
@@ -10,7 +10,7 @@ import {
     Home,
     Calendar,
 
-} from '@utils/PageRoutes';
+} from '@ui-utils/PageRoutes';
 
 export default function () {
     return (

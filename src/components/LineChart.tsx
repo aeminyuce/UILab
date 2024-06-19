@@ -3,8 +3,8 @@ import { useId, useEffect } from 'react';
 import { ui } from '@ui';
 
 // assets
-import '@less/modules/line-chart';
-import '@js/modules/line-chart';
+import '@ui-less/modules/line-chart';
+import '@ui-js/modules/line-chart';
 
 const LineChart = function () {}
 

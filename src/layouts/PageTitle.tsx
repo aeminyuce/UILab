@@ -15,12 +15,9 @@ export default function PageTitle(
         const setTitle = title ? title : '';
 
         useEffect(() => {
-            document.title = setTitle + ' | UI Lab';
+            document.title = setTitle + ' | ' + process.env.PROJECT_NAME;
+        });
 
-        }); // Runs only first render
-
-        return (
-            <>{children}</>
-        )
+        return children
 
     }

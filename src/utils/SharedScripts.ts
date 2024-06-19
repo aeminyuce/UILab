@@ -1,20 +1,20 @@
 // Core
-import '@js/core/find';
-import '@js/core/on';
-import '@js/core/off';
-import '@js/core/onload';
-import '@js/core/trigger';
-import '@js/core/hasclass';
-import '@js/core/addclass';
-import '@js/core/removeclass';
-import '@js/core/toggleclass';
-import '@js/core/closest';
-import '@js/core/ajax';
+import '@ui-js/core/find';
+import '@ui-js/core/on';
+import '@ui-js/core/off';
+import '@ui-js/core/onload';
+import '@ui-js/core/trigger';
+import '@ui-js/core/hasclass';
+import '@ui-js/core/addclass';
+import '@ui-js/core/removeclass';
+import '@ui-js/core/toggleclass';
+import '@ui-js/core/closest';
+import '@ui-js/core/ajax';
 
 // Modifiers
-import '@js/modules/user-agents';
-import '@js/modules/dark-mode';
-import '@js/modules/effects';
+import '@ui-js/modules/user-agents';
+import '@ui-js/modules/dark-mode';
+import '@ui-js/modules/effects';
 
 // Components
-import '@js/modules/tooltip';
+import '@ui-js/modules/tooltip';

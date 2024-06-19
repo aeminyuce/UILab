@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import { ui } from '@ui';
 
 // assets
-import '@less/modules/donut-chart';
-import '@js/modules/donut-chart';
+import '@ui-less/modules/donut-chart';
+import '@ui-js/modules/donut-chart';
 
 const DonutChart = function () {}
 

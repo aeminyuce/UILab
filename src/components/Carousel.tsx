@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import { ui } from '@ui';
 
 // assets
-import '@less/modules/carousel';
-import '@js/modules/carousel';
+import '@ui-less/modules/carousel';
+import '@ui-js/modules/carousel';
 
 const gridSizes = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 

@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // assets
-import '@less/modules/progress-bar';
+import '@ui-less/modules/progress-bar';
 
 interface ProgressBarProps {
 

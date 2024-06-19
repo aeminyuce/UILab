@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // assets
-import '@less/modules/avatars';
+import '@ui-less/modules/avatars';
 
 interface AvatarProps {
 

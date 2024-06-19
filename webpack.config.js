@@ -20,12 +20,12 @@ const config = {
         extensions: ['.js', '.ts', '.tsx', '.less'], // file types
         alias: {
             '@ui': path.resolve(__dirname, 'js/core/globals'),
-            '@layouts': path.resolve(__dirname, './src/layouts/'),
-            '@components': path.resolve(__dirname, './src/components/'),
-            '@utils': path.resolve(__dirname, './src/utils/'),
-            '@icon': path.resolve(__dirname, './icon/'),
-            '@less': path.resolve(__dirname, './less/'),
-            '@js': path.resolve(__dirname, './js/'),
+            '@ui-layouts': path.resolve(__dirname, './src/layouts/'),
+            '@ui-components': path.resolve(__dirname, './src/components/'),
+            '@ui-utils': path.resolve(__dirname, './src/utils/'),
+            '@ui-icon': path.resolve(__dirname, './icon/'),
+            '@ui-less': path.resolve(__dirname, './less/'),
+            '@ui-js': path.resolve(__dirname, './js/'),
         },
     },
     performance: {
@@ -111,6 +111,9 @@ module.exports = (env, argv) => {
 
     // send custom variables to process.env
     const customVars = {
+        PROJECT_NAME: JSON.stringify('UI lab'),
+        GITHUB_URL: JSON.stringify('https://github.com/aeminyuce/UILab'),
+        DRIBBBLE_URL: JSON.stringify('https://dribbble.com/aeminyuce'),
         SERVICE_URL: JSON.stringify('mockoon'),
     };
 

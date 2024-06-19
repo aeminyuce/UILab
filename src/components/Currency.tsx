@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { ui } from '@ui';
 
 // assets
-import '@js/modules/currency-spinner';
+import '@ui-js/modules/currency-spinner';
 
 const Currency = function () {}
 

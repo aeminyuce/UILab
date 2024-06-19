@@ -3,8 +3,8 @@ import { useId, useEffect } from 'react';
 import { ui } from '@ui';
 
 // assets
-import '@less/modules/map';
-import '@js/modules/map';
+import '@ui-less/modules/map';
+import '@ui-js/modules/map';
 
 interface MapProps {
 

@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import { ui } from '@ui';
 
 // assets
-import '@less/modules/pie-chart';
-import '@js/modules/pie-chart';
+import '@ui-less/modules/pie-chart';
+import '@ui-js/modules/pie-chart';
 
 const PieChart = function () {}
 

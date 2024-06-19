@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import Calendar from '@components/Calendar';
-import Grid from '@components/Grid';
+import Calendar from '@ui-components/Calendar';
+import Grid from '@ui-components/Grid';
 
 export default function () {
     return (

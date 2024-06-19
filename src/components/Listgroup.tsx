@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // assets
-import '@less/modules/listgroup';
+import '@ui-less/modules/listgroup';
 
 interface ListgroupProps {
 

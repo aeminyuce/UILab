@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // assets
-import '@less/modules/icons';
+import '@ui-less/modules/icons';
 
 interface IconProps {
 

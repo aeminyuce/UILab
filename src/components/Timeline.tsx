@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // assets
-import '@less/modules/timeline';
+import '@ui-less/modules/timeline';
 
 interface TimelineProps {
 

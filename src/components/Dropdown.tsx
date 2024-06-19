@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 // assets
-import '@less/modules/dropdown';
-import '@js/modules/dropdown';
+import '@ui-less/modules/dropdown';
+import '@ui-js/modules/dropdown';
 
 interface DropdownProps {
 

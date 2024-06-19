@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import { ui } from '@ui';
 
 // assets
-import '@less/modules/header-sticky';
-import '@js/modules/header-sticky';
+import '@ui-less/modules/header-sticky';
+import '@ui-js/modules/header-sticky';
 
 interface HeaderStickyProps {
 

@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 // assets
-import '@less/modules/card';
-import '@js/modules/card';
+import '@ui-less/modules/card';
+import '@ui-js/modules/card';
 
 interface CardProps {
 

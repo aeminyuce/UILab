@@ -1,30 +1,30 @@
 // ui
-import '@less/core/globals';
-import '@less/core/variables';
-import '@less/core/mixins';
-import '@less/core/reset';
+import '@ui-less/core/globals';
+import '@ui-less/core/variables';
+import '@ui-less/core/mixins';
+import '@ui-less/core/reset';
 
 // Modifiers
-import '@less/modules/user-agents';
-import '@less/modules/dark-mode';
-import '@less/modules/effects';
+import '@ui-less/modules/user-agents';
+import '@ui-less/modules/dark-mode';
+import '@ui-less/modules/effects';
 
 // Typography
-import '@less/modules/typography';
-import '@less/modules/listings';
+import '@ui-less/modules/typography';
+import '@ui-less/modules/listings';
 
 // Utilities
-import '@less/modules/helpers';
-import '@less/modules/borders';
-import '@less/modules/paddings';
-import '@less/modules/margins';
+import '@ui-less/modules/helpers';
+import '@ui-less/modules/borders';
+import '@ui-less/modules/paddings';
+import '@ui-less/modules/margins';
 
 // Layout
-import '@less/modules/scrollbar';
+import '@ui-less/modules/scrollbar';
 
 // Themes
-import '@less/modules/themes';
-import '@less/modules/themes-ext';
+import '@ui-less/modules/themes';
+import '@ui-less/modules/themes-ext';
 
 // Components
-import '@less/modules/tooltip';
+import '@ui-less/modules/tooltip';

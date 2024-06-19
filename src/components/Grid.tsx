@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import { ui } from '@ui';
 
 // assets
-import '@less/modules/grid';
-import '@js/modules/grid';
+import '@ui-less/modules/grid';
+import '@ui-js/modules/grid';
 
 const Grid = function () {}
 

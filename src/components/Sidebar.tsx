@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 // assets
-import '@less/modules/sidebar';
-import '@js/modules/sidebar';
+import '@ui-less/modules/sidebar';
+import '@ui-js/modules/sidebar';
 
 interface SidebarProps {
 

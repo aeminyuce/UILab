@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // layouts
-import HeaderHome from '@layouts/HeaderHome';
+import HeaderHome from '@ui-layouts/HeaderHome';
 
 export default function () {
     return (
