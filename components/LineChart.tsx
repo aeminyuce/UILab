@@ -95,17 +95,13 @@ const LineChartItems = function (
 
         return (y && Array.isArray(y) &&
             <>
-                {
-                    y.map((value, i) => {
-
-                        return (
-                            <React.Fragment key={keyId + i}>
-                                <li data-ui-y={value} data-ui-url={url}></li>
-                            </React.Fragment>
-                        )
-
-                    })
-                }
+            {y.map((value: any, i: number) => {
+                return (
+                    <React.Fragment key={keyId + i}>
+                        <li data-ui-y={value} data-ui-url={url}></li>
+                    </React.Fragment>
+                )
+            })}
             </>
         );
     }
@@ -127,7 +123,7 @@ const RandomColors = (size: number) => {
         'hsl(210.2, 86.5%, 68%)',   // middle blue
     ];
 
-    const randomColors = [];
+    const randomColors: string[] = [];
 
     for (let c = 0; c < size; c++) {
 

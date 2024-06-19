@@ -22,16 +22,16 @@ const Card = function (
 
         return (
             <>
-                {setAs === 'div' &&
-                    <div ref={myRef} className={classes} style={style}>
-                        {children}
-                    </div>
-                }
-                {setAs === 'span' &&
-                    <span ref={myRef} className={classes} style={style}>
-                        {children}
-                    </span>
-                }
+            {setAs === 'div' &&
+                <div ref={myRef} className={classes} style={style}>
+                    {children}
+                </div>
+            }
+            {setAs === 'span' &&
+                <span ref={myRef} className={classes} style={style}>
+                    {children}
+                </span>
+            }
             </>
         );
 

@@ -19,16 +19,16 @@ let Modal = function (
 
         return (
             <>
-                {as === 'div' &&
-                    <div id={id} className={classes} style={style}>
-                        {children}
-                    </div>
-                }
-                {as === 'span' &&
-                    <span id={id} className={classes} style={style}>
-                        {children}
-                    </span>
-                }
+            {as === 'div' &&
+                <div id={id} className={classes} style={style}>
+                    {children}
+                </div>
+            }
+            {as === 'span' &&
+                <span id={id} className={classes} style={style}>
+                    {children}
+                </span>
+            }
             </>
         );
 
@@ -129,7 +129,7 @@ export const modalOpen = function (
         ui.modal.closeIcon = icon_remove;
 
         // sizes
-        let setSize = null;
+        let setSize: any = null;
 
         if (size instanceof Object) {
 

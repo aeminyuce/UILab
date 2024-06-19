@@ -92,7 +92,7 @@ const FormInput = function (
         const setWord = word ? ' ui-word' : '';
         const setRequired = required ? ' ui-required' : '';
 
-        let childrenClasses = setNumber + setNumberFloat + setWord + setRequired;
+        let childrenClasses: any = setNumber + setNumberFloat + setWord + setRequired;
         childrenClasses = childrenClasses.replace(/^\s+/g, ''); // remove first spaces
 
         if (childrenClasses === '') childrenClasses = null;
@@ -106,15 +106,13 @@ const FormInput = function (
                     onChange={onChange} onInput={onInput} onBlur={onBlur}
                 />
                 <>
-                    {autoCompleteData &&
-                        <datalist>
-                            {
-                                autoCompleteData.map((name: string, i: number) => {
-                                    return <option key={keyId + i}>{name}</option>
-                                })
-                            }
-                        </datalist>
-                    }
+                {autoCompleteData &&
+                    <datalist>
+                        {autoCompleteData.map((name: string, i: number) => {
+                            return <option key={keyId + i}>{name}</option>
+                        })}
+                    </datalist>
+                }
                 </>
             </div>
         );
@@ -148,15 +146,15 @@ const FormFile = function (
         // children classes
         const setRequired = required ? ' ui-required' : '';
 
-        let childrenClasses = setRequired;
+        let childrenClasses: any = setRequired;
         childrenClasses = childrenClasses.replace(/^\s+/g, ''); // remove first spaces
 
         if (childrenClasses === '') childrenClasses = null;
 
         // btn classes
-        let btnClasses = btnClassName ? btnClassName : null;
+        let btnClasses: any = btnClassName ? btnClassName : null;
 
-        if (childrenClasses === '') childrenClasses = null;
+        if (btnClasses === '') btnClasses = null;
 
         return (
             <div className={classes} style={style}>
@@ -166,10 +164,10 @@ const FormFile = function (
                 />
                 {as === 'input' &&
                     <>
-                        <i>{setPlaceholder}</i>
-                        <Button as="span" className={btnClasses}>
-                            {setBtnName}
-                        </Button>
+                    <i>{setPlaceholder}</i>
+                    <Button as="span" className={btnClasses}>
+                        {setBtnName}
+                    </Button>
                     </>
                 }
                 {as === 'button' &&
@@ -274,7 +272,7 @@ const FormCheck = function (
         const setLight = light ? ' ui-form-light' : '';
         const setEase = noease ? '' : ' ui-ease-form';
 
-        let classes = null;
+        let classes: any = null;
 
         if (type === 'check') classes = 'ui-check';
         else if (type === 'radio') classes = 'ui-radio';

@@ -119,64 +119,60 @@ export default function Map(
                 <svg viewBox="0 0 940 405" className="ui-text ui-ease-1st-svg">
                     {
                         <>
-                            {
-                                Object.keys(sizes).map((value, i, arr) => {
+                        {Object.keys(sizes).map((value: any, i: number, arr: any) => {
 
-                                    const val = JSON.stringify(value).replace(/\"/g, '');
+                            const val = JSON.stringify(value).replace(/\"/g, '');
 
-                                    let size = sizes[val] ? sizes[val] : 0;
-                                    let info = '';
+                            let size = sizes[val] ? sizes[val] : 0;
+                            let info = '';
 
-                                    if (size instanceof Object) { // check inner arrays
+                            if (size instanceof Object) { // check inner arrays
 
-                                        info = '<strong class="ui-m-5-b ui-block">' + val + ': ' + size[defaultValue] + '</strong>';
+                                info = '<strong class="ui-m-5-b ui-block">' + val + ': ' + size[defaultValue] + '</strong>';
 
-                                        Object.keys(size).map((val: any, i: number, arr: any) => {
+                                Object.keys(size).map((val: any, i: number, arr: any) => {
 
-                                            if (val !== defaultValue) {
+                                    if (val !== defaultValue) {
 
-                                                info += val + ': ' + size[val];
-                                                if (i + 1 < arr.length) info += '<br>';
+                                        info += val + ': ' + size[val];
+                                        if (i + 1 < arr.length) info += '<br>';
 
-                                            }
+                                    }
 
-                                        });
+                                });
 
-                                        size = size[defaultValue];
+                                size = size[defaultValue];
 
-                                    } else info = '<strong>' + val + '</strong>: ' + size;
+                            } else info = '<strong>' + val + '</strong>: ' + size;
 
-                                    const unescaped = UnescapedUnicode(value);
-                                    loadedPaths.push(unescaped);
+                            const unescaped = UnescapedUnicode(value);
+                            loadedPaths.push(unescaped);
 
-                                    if (i + 1 === arr.length) emptyPaths = Object.keys(paths).filter((name: string) => !loadedPaths.includes(name));
+                            if (i + 1 === arr.length) emptyPaths = Object.keys(paths).filter((name: string) => !loadedPaths.includes(name));
 
-                                    return <path
-                                        key={keyId + 1 + i}
-                                        name={info}
-                                        data-ui-size={size}
-                                        data-ui-tooltip
-                                        d={paths[unescaped]}
-                                    />
+                            return <path
+                                key={keyId + 1 + i}
+                                name={info}
+                                data-ui-size={size}
+                                data-ui-tooltip
+                                d={paths[unescaped]}
+                            />
 
-                                })
-                            }
-                            {
-                                emptyPaths.map((value: any, i: number) => {
+                        })}
+                        {emptyPaths.map((value: any, i: number) => {
 
-                                    const size = sizes[value] ? sizes[value] : 0;
-                                    const info = '<strong>' + value + '</strong>: ' + size;
+                            const size = sizes[value] ? sizes[value] : 0;
+                            const info = '<strong>' + value + '</strong>: ' + size;
 
-                                    return <path
-                                        key={keyId + 2 + i}
-                                        name={info}
-                                        data-ui-size={size}
-                                        data-ui-tooltip
-                                        d={paths[value]}
-                                    />
+                            return <path
+                                key={keyId + 2 + i}
+                                name={info}
+                                data-ui-size={size}
+                                data-ui-tooltip
+                                d={paths[value]}
+                            />
 
-                                })
-                            }
+                        })}
                         </>
                     }
                 </svg>

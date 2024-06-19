@@ -51,39 +51,39 @@ const Button = function (
 
         if (as) return (
             <>
-                {as === 'div' &&
-                    <div ref={myRef} className={classes} {...setData} style={style} onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
-                        {children}
-                    </div>
-                }
-                {as === 'span' &&
-                    <span ref={myRef} className={classes} {...setData} style={style} onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
-                        {children}
-                    </span>
-                }
+            {as === 'div' &&
+                <div ref={myRef} className={classes} {...setData} style={style} onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
+                    {children}
+                </div>
+            }
+            {as === 'span' &&
+                <span ref={myRef} className={classes} {...setData} style={style} onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
+                    {children}
+                </span>
+            }
             </>
         );
 
         else return (
             <>
-                {href &&
-                    <a ref={myRef} href={href} id={id} target={target} title={title} className={classes} {...setData} style={style} rel={rel}
-                        onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
-                            {children}
-                    </a>
-                }
-                {to &&
-                    <Link ref={myRef} to={to} id={id} state={state} title={title} className={classes} {...setData} style={style} rel={rel}
-                        onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
-                            {children}
-                    </Link>
-                }
-                {!href && !to &&
-                    <button ref={myRef} id={id} form={form} type={setType} value={value} disabled={disabled} title={title} className={classes} {...setData} style={style}
-                        onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
-                            {children}
-                    </button>
-                }
+            {href &&
+                <a ref={myRef} href={href} id={id} target={target} title={title} className={classes} {...setData} style={style} rel={rel}
+                    onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
+                        {children}
+                </a>
+            }
+            {to &&
+                <Link ref={myRef} to={to} id={id} state={state} title={title} className={classes} {...setData} style={style} rel={rel}
+                    onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
+                        {children}
+                </Link>
+            }
+            {!href && !to &&
+                <button ref={myRef} id={id} form={form} type={setType} value={value} disabled={disabled} title={title} className={classes} {...setData} style={style}
+                    onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
+                        {children}
+                </button>
+            }
             </>
         );
     }
@@ -99,7 +99,7 @@ const ButtonWrapper = function (
 
         const setClassName = className ? ' ' + className : '';
 
-        let classes = setEase + setAs + setLargeButtons + setClassName;
+        let classes: any = setEase + setAs + setLargeButtons + setClassName;
         if (classes === '') { classes = null; }
 
         // data attributes

@@ -44,21 +44,17 @@ const BreadcrumbsItem = function (
 
         return (
             <>
-                {to ? (
-
-                    <li>
-                        <Link to={to} className={classes} {...setData} style={style}>
-                            {children}
-                        </Link>
-                    </li>
-
-                ) : (
-
-                    <li className={classes} {...setData} style={style}>
+            {to ? (
+                <li>
+                    <Link to={to} className={classes} {...setData} style={style}>
                         {children}
-                    </li>
-
-                )}
+                    </Link>
+                </li>
+            ) : (
+                <li className={classes} {...setData} style={style}>
+                    {children}
+                </li>
+            )}
             </>
         );
     }

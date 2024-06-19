@@ -202,7 +202,7 @@ export interface CrouselContentProps {
 
     children?: React.ReactNode,
 
-    animate? : number,
+    animate?: number,
 
     className?: string,
     style?: any,
@@ -672,9 +672,9 @@ export interface LineChartHolderProps {
         rows: number,
         rowsHeight: number,
     },
-    prefix? : string,
-    suffix? : string,
-    sep? : '.' | ',',
+    prefix?: string,
+    suffix?: string,
+    sep?: '.' | ',',
 
     showGrid?: boolean,
     showGridRootsOnly?: boolean,
@@ -968,7 +968,7 @@ export interface TabHolderProps {
     noease?: boolean,
 
     className?: string,
-    dataClasses? : string,
+    dataClasses?: string,
     style?: any,
 
 }

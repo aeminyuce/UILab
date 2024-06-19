@@ -47,7 +47,7 @@ const StepsItem = function (
                     </span>
                     :
                     <>
-                        {infoText && <span>{infoText}</span>}
+                    {infoText && <span>{infoText}</span>}
                     </>
                 }
             </li>

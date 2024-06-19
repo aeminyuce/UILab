@@ -54,26 +54,26 @@ const GridContainer = function (
 
         return (
             <>
-                {as === 'div' &&
-                    <div id={id} className={classes} style={style}>
-                        {children}
-                    </div>
-                }
-                {as === 'header' &&
-                    <header id={id} className={classes} style={style}>
-                        {children}
-                    </header>
-                }
-                {as === 'main' &&
-                    <main id={id} className={classes} style={style}>
-                        {children}
-                    </main>
-                }
-                {as === 'footer' &&
-                    <footer id={id} className={classes} style={style}>
-                        {children}
-                    </footer>
-                }
+            {as === 'div' &&
+                <div id={id} className={classes} style={style}>
+                    {children}
+                </div>
+            }
+            {as === 'header' &&
+                <header id={id} className={classes} style={style}>
+                    {children}
+                </header>
+            }
+            {as === 'main' &&
+                <main id={id} className={classes} style={style}>
+                    {children}
+                </main>
+            }
+            {as === 'footer' &&
+                <footer id={id} className={classes} style={style}>
+                    {children}
+                </footer>
+            }
             </>
         );
 
@@ -133,21 +133,21 @@ const GridRow = function (
 
         return (
             <>
-                {!as &&
-                    <div className={classes} {...setData} style={style}>
-                        {children}
-                    </div>
-                }
-                {as === 'span' &&
-                    <span className={classes} {...setData} style={style}>
-                        {children}
-                    </span>
-                }
-                {as === 'dl' &&
-                    <dl className={classes} {...setData} style={style}>
-                        {children}
-                    </dl>
-                }
+            {!as &&
+                <div className={classes} {...setData} style={style}>
+                    {children}
+                </div>
+            }
+            {as === 'span' &&
+                <span className={classes} {...setData} style={style}>
+                    {children}
+                </span>
+            }
+            {as === 'dl' &&
+                <dl className={classes} {...setData} style={style}>
+                    {children}
+                </dl>
+            }
             </>
         );
     }
@@ -226,7 +226,7 @@ const GridCol = function (
             setOrder += order.when ? ' ui-order-' + order.when + '-' + order.position : '';
         }
 
-        let classes = defaults + responsiveSizes + setFluid + setClassName + setOrder;
+        let classes: any = defaults + responsiveSizes + setFluid + setClassName + setOrder;
         if (classes === '') { classes = null; }
 
         // data attributes
@@ -248,26 +248,26 @@ const GridCol = function (
 
         return (
             <>
-                {!as &&
-                    <div className={classes} {...setData} style={style}>
-                        {children}
-                    </div>
-                }
-                {(as === 'span') &&
-                    <span className={classes} {...setData} style={style}>
-                        {children}
-                    </span>
-                }
-                {(as === 'dt') &&
-                    <dt className={classes} {...setData} style={style}>
-                        {children}
-                    </dt>
-                }
-                {(as === 'dd') &&
-                    <dd className={classes} {...setData} style={style}>
-                        {children}
-                    </dd>
-                }
+            {!as &&
+                <div className={classes} {...setData} style={style}>
+                    {children}
+                </div>
+            }
+            {(as === 'span') &&
+                <span className={classes} {...setData} style={style}>
+                    {children}
+                </span>
+            }
+            {(as === 'dt') &&
+                <dt className={classes} {...setData} style={style}>
+                    {children}
+                </dt>
+            }
+            {(as === 'dd') &&
+                <dd className={classes} {...setData} style={style}>
+                    {children}
+                </dd>
+            }
             </>
         );
     }
@@ -284,16 +284,16 @@ const GridStatic = function (
 
         return (
             <>
-                {!as &&
-                    <div className={classes} style={style}>
-                        {children}
-                    </div>
-                }
-                {as === 'span' &&
-                    <span className={classes} style={style}>
-                        {children}
-                    </span>
-                }
+            {!as &&
+                <div className={classes} style={style}>
+                    {children}
+                </div>
+            }
+            {as === 'span' &&
+                <span className={classes} style={style}>
+                    {children}
+                </span>
+            }
             </>
         );
     }

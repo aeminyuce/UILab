@@ -22,7 +22,7 @@ const AlertsDialog = function (
         ui.alerts.msgDialogSuccess = 'OK';
 
         // custom buttons
-        let setCustom : string[] = [];
+        let setCustom: string[] = [];
 
         if (custom instanceof Object) {
 

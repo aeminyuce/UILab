@@ -45,20 +45,20 @@ const DropdownMenu = function (
 
         return (
             <>
-                {as === 'div' &&
-                    <div className={classes} style={style}>
-                        {children}
-                    </div>
-                }
-                {as === 'span' &&
-                    <span className={classes} style={style}>
-                        {children}
-                    </span>
-                }
-                {(as !== 'div' && as !== 'span') &&
-                    <ul className={classes} style={style}>
-                        {children}
-                    </ul>
+            {as === 'div' &&
+                <div className={classes} style={style}>
+                    {children}
+                </div>
+            }
+            {as === 'span' &&
+                <span className={classes} style={style}>
+                    {children}
+                </span>
+            }
+            {(as !== 'div' && as !== 'span') &&
+                <ul className={classes} style={style}>
+                    {children}
+                </ul>
             }
             </>
         );
@@ -72,7 +72,7 @@ const DropdownItem = function (
         const setSelected = selected ? ' ui-selected' : '';
         const setClassName = className ? ' ' + className : '';
 
-        let classes = setSelected + setClassName;
+        let classes: any = setSelected + setClassName;
         classes = classes.replace(/^\s+/g, ''); // remove first spaces
 
         if (classes === '') { classes = null; }

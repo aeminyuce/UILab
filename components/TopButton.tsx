@@ -22,8 +22,6 @@ export default function TopButton() {
 
     }, []);
 
-    return (
-        <></>
-    );
+    return <></>;
 
 }
