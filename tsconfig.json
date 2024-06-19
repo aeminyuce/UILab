@@ -2,13 +2,10 @@
   "compilerOptions": {
       "baseUrl": "./",
       "paths": {
-        "@ui": ["js/core/globals"],
-        "@ui-layouts/*": ["src/layouts/*"],
-        "@ui-components/*": ["src/components/*"],
-        "@ui-utils/*": ["src/utils/*"],
-        "@ui-icon/*": ["icon/*"],
-        "@ui-less/*": ["less/*"],
-        "@ui-js/*": ["js/*"],
+        "@layouts/*": ["src/layouts/*"],
+        "@components/*": ["components/*"],
+        "@utils/*": ["src/utils/*"],
+        "@icon/*": ["icon/*"],
       },
       "jsx": "react",
       "allowSyntheticDefaultImports": true,

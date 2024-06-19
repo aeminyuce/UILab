@@ -1,16 +1,16 @@
 import * as React from 'react';
 import { useId } from 'react';
-import Button from '@ui-components/Button';
-import Grid from '@ui-components/Grid';
-import HeaderSticky from '@ui-components/HeaderSticky';
-import Icon from '@ui-components/Icon';
+import Button from '@components/Button';
+import Grid from '@components/Grid';
+import HeaderSticky from '@components/HeaderSticky';
+import Icon from '@components/Icon';
 
 // assets
-const icon_dribbble = require('@ui-icon/dribbble.svg') as string;
-const icon_github = require('@ui-icon/github.svg') as string;
-const icon_bars_right = require('@ui-icon/bars-right.svg') as string;
-const icon_sun = require('@ui-icon/sun.svg') as string;
-const icon_moon = require('@ui-icon/moon.svg') as string;
+const icon_dribbble = require('@icon/dribbble.svg') as string;
+const icon_github = require('@icon/github.svg') as string;
+const icon_bars_right = require('@icon/bars-right.svg') as string;
+const icon_sun = require('@icon/sun.svg') as string;
+const icon_moon = require('@icon/moon.svg') as string;
 
 export default function () {
 
@@ -18,7 +18,7 @@ export default function () {
 
     // responsive logo
     const logo = 'img/uilab-logo.png';
-    const srcSet = '/img/uilab-logo@2x.png 2x';
+    const logoSrcSet = '/img/uilab-logo@2x.png 2x';
 
     // social links
     const socialUrls = [
@@ -38,11 +38,11 @@ export default function () {
         <HeaderSticky className='ui-container ui-form-lg ui-invert-bg ui-theme-base ui-fill-dark-100 ui-visible' dataClasses='ui-shadow-lg'>
             <Grid.Row>
                 <Grid.Static fluid='no'>
-                    <Grid.Col size={'250'} xs={'100'} className='ui-p-15-l ui-p-10-v'>
-                        <img className='ui-m-5-t' src={logo} alt='UI lab' srcSet={srcSet} />
+                    <Grid.Col size={'100'} className='ui-p-15-l ui-p-10-v'>
+                        <img className='ui-m-5-t' src={logo} alt='UI lab' srcSet={logoSrcSet} />
                     </Grid.Col>
                     <Grid.Row>
-                        <Grid.Col size={'12'} className='ui-align-r ui-no-p-l ui-icons-no-opacity ui-ease-1st-btn'>
+                        <Grid.Col size={'12'} className='ui-align-r ui-icons-no-opacity ui-ease-1st-btn'>
                             <>
                                 {socialUrls.map((item: any, j: number) => {
                                     return (

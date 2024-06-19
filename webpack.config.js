@@ -19,13 +19,10 @@ const config = {
     resolve: {
         extensions: ['.js', '.ts', '.tsx', '.less'], // file types
         alias: {
-            '@ui': path.resolve(__dirname, 'js/core/globals'),
-            '@ui-layouts': path.resolve(__dirname, './src/layouts/'),
-            '@ui-components': path.resolve(__dirname, './src/components/'),
-            '@ui-utils': path.resolve(__dirname, './src/utils/'),
-            '@ui-icon': path.resolve(__dirname, './icon/'),
-            '@ui-less': path.resolve(__dirname, './less/'),
-            '@ui-js': path.resolve(__dirname, './js/'),
+            '@layouts': path.resolve(__dirname, './src/layouts/'),
+            '@components': path.resolve(__dirname, './components/'),
+            '@utils': path.resolve(__dirname, './src/utils/'),
+            '@icon': path.resolve(__dirname, './icon/'),
         },
     },
     performance: {

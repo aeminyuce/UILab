@@ -3,8 +3,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
 
 // shared assets
-import "@ui-utils/SharedStyles";
-import "@ui-utils/SharedScripts";
+import "../less/ui.less";
+import "../js/ui.js";
 
 // app
 import App from './App';

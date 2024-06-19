@@ -1,37 +1,4 @@
-## Non React Projects
-### ConfigurationFiles:
-.babelrc\
-.eslintrc.js\
-.gitignore\
-package.json\
-svgo.config.js\
-webpack.config.js
-### Installed Packages:
-**Less**
-```
-npm i -D less
-```
-**JS**
-```
-npm i -D @babel/core @babel/cli @babel/node @babel/preset-env @babel/eslint-parser
-npm i -D rollup
-```
-**ES Lint**
-```
-npm i -D eslint
-npm init @eslint/config
-```
-**Icons**
-```
-npm i -D svgo svgstore-cli
-```
-**Test**
-```
-npm i -D @babel/register
-npm i -D mocha chai puppeteer
-```
-## React Projects
-### ConfigurationFiles:
+## Configuration Files:
 .babelrc\
 .eslintrc.js\
 .gitignore\
@@ -40,7 +7,8 @@ package.json\
 svgo.config.js\
 tsconfig.json\
 webpack.config.js
-### Installed Packages:
+
+## Installed Packages:
 **JS**
 ```
 npm i -D @babel/preset-env @babel/eslint-parser
