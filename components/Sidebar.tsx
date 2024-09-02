@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // imports
-import { SidebarProps, SidebarContentProps } from './_Models';
+import { SidebarProps, SidebarTitleProps, SidebarContentProps } from './_Models';
 
 // assets
 import '../less/modules/sidebar';
@@ -16,6 +16,21 @@ const Sidebar = function (
 
         const setClassName = className ? ' ' + className : '';
         const classes = 'ui-sidebar' + setPos + setClassName + ' ui-ease-layout ui-ease-in-out';
+
+        return (
+            <div className={classes} style={style}>
+                {children}
+            </div>
+        );
+    }
+
+const SidebarTitle = function (
+
+    { children, className, style }:SidebarTitleProps) {
+
+        // classes
+        const setClassName = className ? ' ' + className : '';
+        const classes = 'ui-sidebar-title' + setClassName;
 
         return (
             <div className={classes} style={style}>
@@ -40,5 +55,6 @@ const SidebarContent = function (
     }
 
 export default Object.assign(Sidebar, {
+    Title: SidebarTitle,
     Content: SidebarContent,
 });

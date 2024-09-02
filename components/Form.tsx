@@ -8,7 +8,7 @@ import Icon from './Icon';
 import { FormLabelProps, FormInputProps, FormFileProps, FormTextareaProps, FormSelectProps, FormCheckProps, FormRequiredMessageProps, FormHintProps } from './_Models';
 
 // imports
-import { icon_angle_down, icon_plus } from './_Icons';
+import { icon_angle_down, icon_plus } from './_Assets';
 
 // assets
 import '../less/modules/autocomplete';

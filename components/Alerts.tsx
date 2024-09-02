@@ -1,7 +1,7 @@
 import { ui } from '../js/core/globals';
 
 // imports
-import { icon_remove } from './_Icons';
+import { icon_remove } from './_Assets';
 import { AlertsDialogProps, AlertsMessageProps } from './_Models';
 
 // assets

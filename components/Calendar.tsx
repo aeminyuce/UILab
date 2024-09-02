@@ -5,7 +5,7 @@ import { ui } from '../js/core/globals';
 // imports
 import Icon from './Icon';
 import Form from './Form';
-import { icon_arrow_left, icon_arrow_right, icon_angle_left, icon_calendar } from './_Icons';
+import { icon_arrow_left, icon_arrow_right, icon_angle_left, icon_calendar } from './_Assets';
 import { CalendarPickerProps } from './_Models';
 
 // assets
