@@ -911,6 +911,15 @@ export interface SidebarProps {
 
 }
 
+export interface SidebarTitleProps {
+
+    children?: React.ReactNode,
+
+    className?: string,
+    style?: any,
+
+}
+
 export interface SidebarContentProps {
 
     children?: React.ReactNode,
