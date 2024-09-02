@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 interface PageTtitleProps {
 
-    title: any,
+    title: string,
     children: React.ReactNode,
 
 }
