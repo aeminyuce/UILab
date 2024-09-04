@@ -127,6 +127,13 @@ export interface ButtonWrapperProps {
 }
 
 // Calendar
+export interface CalendarProps {
+
+    className?: string,
+    style?: any,
+
+}
+
 export interface CalendarPickerProps {
 
     onChange?: React.ReactEventHandler,

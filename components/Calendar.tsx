@@ -6,32 +6,38 @@ import { ui } from '../js/core/globals';
 import Icon from './Icon';
 import Form from './Form';
 import { icon_arrow_left, icon_arrow_right, icon_angle_left, icon_calendar } from './_Assets';
-import { CalendarPickerProps } from './_Models';
+import { CalendarProps, CalendarPickerProps } from './_Models';
 
 // assets
 import '../less/modules/calendar';
 import '../js/modules/calendar';
 
-const Calendar = function () {
+const Calendar = function (
 
-    useEffect(() => {
+    { className, style }:CalendarProps) {
 
-        // icons
-        ui.globals.inlineSvg = true;
+        useEffect(() => {
 
-        ui.calendar.prevIcon = icon_arrow_left;
-        ui.calendar.nextIcon = icon_arrow_right;
-        ui.calendar.backIcon = icon_angle_left;
+            // icons
+            ui.globals.inlineSvg = true;
 
-        // init
-        ui.calendar.Init();
+            ui.calendar.prevIcon = icon_arrow_left;
+            ui.calendar.nextIcon = icon_arrow_right;
+            ui.calendar.backIcon = icon_angle_left;
 
-    }, []);
+            // init
+            ui.calendar.Init();
 
-    return (
-        <div className="ui-calendar ui-ease-calendar"></div>
-    );
-}
+        }, []);
+
+        // classes
+        const setClassName = className ? ' ' + className : '';
+        const classes = 'ui-calendar ui-ease-calendar' + setClassName;
+
+        return (
+            <div className={classes} style={style}></div>
+        );
+    }
 
 const CalendarPicker = function (
 
