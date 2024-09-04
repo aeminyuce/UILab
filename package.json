@@ -1,6 +1,14 @@
 {
   "name": "uilab",
+  "description": "UI lab is a modular design system. For developing web interfaces fastly!",
+  "homepage": "https://github.com/aeminyuce/uilab",
   "version": "1.0.0",
+  "main": "js/ui.js",
+  "style": "less/ui.less",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aeminyuce/uilab.git"
+  },
   "keywords": [
     "uilab",
     "responsive",
