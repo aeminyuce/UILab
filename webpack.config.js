@@ -109,9 +109,8 @@ module.exports = (env, argv) => {
     // send custom variables to process.env
     const customVars = {
         PROJECT_NAME: JSON.stringify('UI lab'),
-        GITHUB_URL: JSON.stringify('https://github.com/aeminyuce/UILab'),
+        GITHUB_URL: JSON.stringify('https://github.com/aeminyuce/uilab'),
         DRIBBBLE_URL: JSON.stringify('https://dribbble.com/aeminyuce'),
-        SERVICE_URL: JSON.stringify('mockoon'),
     };
 
     // plugins

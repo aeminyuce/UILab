@@ -19,7 +19,7 @@
 
 <head>
 
-    <title>UI lab is a modular design system for developing web interfaces fastly!</title>
+    <title>UI Lab</title>
 
     <meta name="keywords" content="responsive, design system, ui examples, web, css, less, javascript">
     <meta name="description" content="UI lab is a modular design system for developing web interfaces fastly!">
@@ -122,7 +122,7 @@
                             <svg class="ui-icon ui-visible-dark"><use href="../dist/icons.svg#moon"/></svg>
                             <svg class="ui-icon ui-visible-light"><use href="../dist/icons.svg#sun"/></svg>
                         </button>
-                        <a title="GitHub" href="https://github.com/aeminyuce/UILab" class="ui-btn ui-btn-square ui-btn-ghost ui-circle" target="_blank">
+                        <a title="GitHub" href="https://github.com/aeminyuce/uilab" class="ui-btn ui-btn-square ui-btn-ghost ui-circle" target="_blank">
                             <svg class="ui-icon"><use href="../dist/icons.svg#github"/></svg>
                         </a>
                         <a title="GitHub" href="https://dribbble.com/aeminyuce" class="ui-btn ui-btn-square ui-btn-ghost ui-circle" target="_blank">

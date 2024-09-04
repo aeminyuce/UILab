@@ -72,8 +72,8 @@ export default function () {
     ]
 
     // slogans
-    const title = 'UI lab is a modular design system.';
-    const titleSlogan = 'For developing web interfaces fastly!';
+    const title = 'UI Lab is a modular design system.';
+    const titleSlogan = 'For developing web interfaces fastly with React.';
 
     // slogans button list
     const sloganBtnList = [

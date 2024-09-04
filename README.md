@@ -1,5 +1,5 @@
 # UI Lab
-A modular design system for developing web interfaces fastly!
+A modular design system for developing web interfaces fastly with React.
 
 ## Configuration Files:
 .babelrc\
