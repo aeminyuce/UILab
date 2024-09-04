@@ -16,7 +16,6 @@ const icon_sun = require('@icon/sun.svg') as string;
 const icon_moon = require('@icon/moon.svg') as string;
 const icon_brackets_curly = require('@icon/brackets-curly.svg') as string;
 const icon_draw = require('@icon/draw.svg') as string;
-const icon_remove = require('@icon/remove.svg') as string;
 const icon_angle_right = require('@icon/angle-right.svg') as string;
 
 export default function () {
@@ -97,122 +96,122 @@ export default function () {
 
     return (
         <>
-            {/* home page header */}
-            <HeaderSticky className='ui-container ui-form-lg ui-theme-base ui-fill-dark-100 ui-visible' dataClasses='ui-shadow-lg'>
-                <Grid.Row>
-                    <Grid.Static fluid='no'>
-                        <Grid.Col size={'100'} className='ui-p-15-l ui-p-5-v'>
-                            <img className='ui-m-5-t' src={logo} alt='UI lab' srcSet={logoSrcSet} />
-                        </Grid.Col>
-                        <Grid.Row vGap='md'>
-                            <Grid.Col size={12} className='ui-align-r ui-icons-no-opacity ui-ease-1st-btn'>
-                                <>
-                                {socialUrls.map((item: { title: string, url: string, icon: string }, i: number) => {
-                                    return (
-                                        <Button key={keyId + i} noease square ghost title={item.title} href={item.url} className='ui-circle' target='_blank' rel='nofollow'>
-                                            <Icon src={item.icon} />
-                                        </Button>
-                                    )
-                                })}
-                                <Button noease square ghost title='Toggle Dark Mode' data={{ 'tooltip': '', 'only': 'desktop' }} className='ui-darkmode-toggle ui-circle'>
-                                    <Icon className='ui-visible-dark' src={icon_moon} />
-                                    <Icon className='ui-visible-light' src={icon_sun} />
-                                </Button>
-                                <Button noease square ghost title='Toggle Sidebar' className='ui-sidebar-show-r ui-visible-md ui-circle'>
-                                    <Icon src={icon_bars_right} />
-                                </Button>
-                                </>
-                            </Grid.Col>
-                        </Grid.Row>
-                    </Grid.Static>
-                </Grid.Row>
-            </HeaderSticky>
-
-            {/* home page */}
-            <Grid.Container as='main' noGutter='all'>
+        {/* home page header */}
+        <HeaderSticky className='ui-container ui-form-lg ui-theme-base ui-fill-dark-100 ui-visible' dataClasses='ui-shadow-lg'>
+            <Grid.Row>
                 <Grid.Static fluid='no'>
-                    <Grid.Col size={'250'} className='ui-theme-gray ui-fill-light-200 ui-hidden-md'>
-
-                        {/* menu */}
-                        <div className="ui-sidebar-add-r">
-                            <ul className="ui-list-unstyled ui-align-l ui-block-2nd ui-ease-2nd-btn">
-                                {menuList.map((item: { name: string, to: string, sep: boolean }, j: number) => {
-                                    return (
-                                        <React.Fragment key={keyId + j}>
-                                            <li>
-                                                <Button noease ghost to={item.to}>{item.name}</Button>
-                                            </li>
-                                            {item.sep &&
-                                                <li>
-                                                    <hr className="ui-hr ui-no-m-v" />
-                                                </li>
-                                            }
-                                        </React.Fragment>
-                                    )
-                                })}
-                            </ul>
-                        </div>
-
+                    <Grid.Col size={'100'} className='ui-p-15-l ui-p-5-v'>
+                        <img className='ui-m-5-t' src={logo} alt='UI lab' srcSet={logoSrcSet} />
                     </Grid.Col>
-                    <Grid.Row>
-                        <Grid.Col size={12} className='ui-p-15'>
-                            <Grid.Container fixed='xl' as='div' className='ui-p-15 ui-m-30-v ui-sm-no-p'>
-
-                                {/* slogans */}
-                                <div className="ui-highlight ui-align-c ui-p-30 ui-xs-no-p ui-round ui-theme-sub">
-
-                                    <div className="ui-cursor-default ui-no-selection ui-highlight">
-                                        <h1 className="ui-h1 ui-font-light">{title}</h1>
-                                        <h4 className="ui-h4 ui-font-bold ui-text">{titleSlogan}</h4>
-                                    </div>
-
-                                    <Spacer size={15} />
-
-                                    <div className="ui-sm-align-l ui-form-lg ui-ease-1st-btn">
-                                        {sloganBtnList.map((item: { name: string, to: string, icon: string }, k: number) => {
-                                            return (
-                                                <Button key={keyId + k} ghost fluid='sm' to={item.to} className='ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle'>
-                                                    <Icon className='ui-m-5-r' src={item.icon} />
-                                                    {item.name}
-                                                </Button>
-                                            )
-                                        })}
-                                    </div>
-                                </div>
-
-                                <Spacer size={30} />
-
-                                {/* examples */}
-                                <Grid.Row gap='lg' fluid='sm' className='ui-align-c ui-hover-shadow-2nd ui-hover-t-2nd ui-block-2nd'>
-                                    {examplesList.map((item: { name: string, to: string, img: string }, l: number) => {
-                                        return (
-                                            <Grid.Col key={keyId + l} lg={4} size={6}>
-                                                <Link to={item.to} className='ui-link ui-p-2 ui-round ui-shadow-lg ui-ease-layout ui-bg-white ui-invert-bg'>
-                                                    <img className="ui-img-fluid ui-round-t ui-visible-light" src={'img/' + item.img + '.jpg'} alt={item.name} />
-                                                    <img className="ui-img-fluid ui-round-t ui-visible-dark" src={'img/' + item.img + '-dark.jpg'} alt={item.name + ' Dark'} />
-                                                    <h4 className="ui-h4 ui-inline-block ui-p-10-v">{item.name}</h4>
-                                                </Link>
-                                            </Grid.Col>
-                                        )
-                                    })}
-                                </Grid.Row>
-
-                            </Grid.Container>
+                    <Grid.Row vGap='md'>
+                        <Grid.Col size={12} className='ui-align-r ui-icons-no-opacity ui-ease-1st-btn'>
+                            <>
+                            {socialUrls.map((item: { title: string, url: string, icon: string }, i: number) => {
+                                return (
+                                    <Button key={keyId + i} noease square ghost title={item.title} href={item.url} className='ui-circle' target='_blank' rel='nofollow'>
+                                        <Icon src={item.icon} />
+                                    </Button>
+                                )
+                            })}
+                            <Button noease square ghost title='Toggle Dark Mode' className='ui-darkmode-toggle ui-circle'>
+                                <Icon className='ui-visible-dark' src={icon_moon} />
+                                <Icon className='ui-visible-light' src={icon_sun} />
+                            </Button>
+                            <Button noease square ghost title='Toggle Sidebar' className='ui-sidebar-show-r ui-visible-md ui-circle'>
+                                <Icon src={icon_bars_right} />
+                            </Button>
+                            </>
                         </Grid.Col>
                     </Grid.Row>
                 </Grid.Static>
-            </Grid.Container>
+            </Grid.Row>
+        </HeaderSticky>
 
-            {/* sidebar */}
-            <Sidebar pos="r" className="ui-round ui-theme-base">
-                <Sidebar.Title className="ui-sidebar-title ui-p-15-h ui-p-10-v ui-fill-dark-100">
-                    <Button square ghost title="Close" className="ui-sidebar-close ui-circle">
-                        <Icon src={icon_angle_right} />
-                    </Button>
-                    <img className="ui-m-5-v ui-m-3-l" src={logo} alt='UI lab' srcSet={logoSrcSet} />
-                </Sidebar.Title>
-                <Sidebar.Content className="ui-no-p ui-scroll-v" />
-            </Sidebar>
+        {/* home page */}
+        <Grid.Container as='main' noGutter='all'>
+            <Grid.Static fluid='no'>
+                <Grid.Col size={'250'} className='ui-theme-gray ui-fill-light-200 ui-hidden-md'>
+
+                    {/* menu */}
+                    <div className="ui-sidebar-add-r">
+                        <ul className="ui-list-unstyled ui-align-l ui-block-2nd ui-ease-2nd-btn">
+                            {menuList.map((item: { name: string, to: string, sep: boolean }, j: number) => {
+                                return (
+                                    <React.Fragment key={keyId + j}>
+                                        <li>
+                                            <Button noease ghost to={item.to}>{item.name}</Button>
+                                        </li>
+                                        {item.sep &&
+                                            <li>
+                                                <hr className="ui-hr ui-no-m-v" />
+                                            </li>
+                                        }
+                                    </React.Fragment>
+                                )
+                            })}
+                        </ul>
+                    </div>
+
+                </Grid.Col>
+                <Grid.Row>
+                    <Grid.Col size={12} className='ui-p-15'>
+                        <Grid.Container fixed='xl' as='div' className='ui-p-15 ui-m-30-v ui-sm-no-p'>
+
+                            {/* slogans */}
+                            <div className="ui-highlight ui-align-c ui-p-30 ui-xs-no-p ui-round ui-theme-sub">
+
+                                <div className="ui-cursor-default ui-no-selection ui-highlight">
+                                    <h1 className="ui-h1 ui-font-light">{title}</h1>
+                                    <h4 className="ui-h4 ui-font-bold ui-text">{titleSlogan}</h4>
+                                </div>
+
+                                <Spacer size={15} />
+
+                                <div className="ui-sm-align-l ui-form-lg ui-ease-1st-btn">
+                                    {sloganBtnList.map((item: { name: string, to: string, icon: string }, k: number) => {
+                                        return (
+                                            <Button key={keyId + k} ghost fluid='sm' to={item.to} className='ui-m-5-h ui-xs-no-m-h ui-border-dual ui-circle'>
+                                                <Icon className='ui-m-5-r' src={item.icon} />
+                                                {item.name}
+                                            </Button>
+                                        )
+                                    })}
+                                </div>
+                            </div>
+
+                            <Spacer size={30} />
+
+                            {/* examples */}
+                            <Grid.Row gap='lg' fluid='sm' className='ui-align-c ui-hover-shadow-2nd ui-hover-t-2nd ui-block-2nd'>
+                                {examplesList.map((item: { name: string, to: string, img: string }, l: number) => {
+                                    return (
+                                        <Grid.Col key={keyId + l} lg={4} size={6}>
+                                            <Link to={item.to} className='ui-link ui-p-2 ui-round ui-shadow-lg ui-ease-layout ui-bg-white ui-invert-bg'>
+                                                <img className="ui-img-fluid ui-round-t ui-visible-light" src={'img/' + item.img + '.jpg'} alt={item.name} />
+                                                <img className="ui-img-fluid ui-round-t ui-visible-dark" src={'img/' + item.img + '-dark.jpg'} alt={item.name + ' Dark'} />
+                                                <h4 className="ui-h4 ui-inline-block ui-p-10-v">{item.name}</h4>
+                                            </Link>
+                                        </Grid.Col>
+                                    )
+                                })}
+                            </Grid.Row>
+
+                        </Grid.Container>
+                    </Grid.Col>
+                </Grid.Row>
+            </Grid.Static>
+        </Grid.Container>
+
+        {/* sidebar */}
+        <Sidebar pos="r" className="ui-round ui-theme-base">
+            <Sidebar.Title className="ui-sidebar-title ui-p-15-h ui-p-10-v ui-fill-dark-100">
+                <Button square ghost title="Close" className="ui-sidebar-close ui-circle">
+                    <Icon src={icon_angle_right} />
+                </Button>
+                <img className="ui-m-5-v ui-m-3-l" src={logo} alt='UI lab' srcSet={logoSrcSet} />
+            </Sidebar.Title>
+            <Sidebar.Content className="ui-no-p ui-scroll-v" />
+        </Sidebar>
         </>
     );
 }

@@ -8,11 +8,11 @@ import RoutePaths from '@layouts/RoutePaths';
 export default function () {
     return (
         <>
-            <Suspense>
-                <RoutePaths />
-            </Suspense>
+        <Suspense>
+            <RoutePaths />
+        </Suspense>
 
-            <TopButton />
+        <TopButton />
         </>
     );
 }
