@@ -18,6 +18,6 @@ export default function PageTitle(
             document.title = setTitle + ' | ' + process.env.PROJECT_NAME;
         });
 
-        return children
+        return children;
 
     }
