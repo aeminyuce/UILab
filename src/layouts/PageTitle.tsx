@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useEffect } from 'react';
 
-interface PageTtitleProps {
+interface PageTitleProps {
 
     title: string,
     children: React.ReactNode,
@@ -10,8 +10,7 @@ interface PageTtitleProps {
 
 export default function PageTitle(
 
-    { title, children }:PageTtitleProps) {
-
+    { title, children }:PageTitleProps) {
         const setTitle = title ? title : '';
 
         useEffect(() => {
@@ -19,5 +18,4 @@ export default function PageTitle(
         });
 
         return children;
-
     }

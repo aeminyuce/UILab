@@ -18,7 +18,7 @@ export default function TopButton() {
         ui.topButton.icon = icon_arrow_to_top;
 
         // settings
-        ui.topButton.stylesTarget = 'ui-circle ui-ease-layout ui-theme-sub ui-fill-dark-100';
+        ui.topButton.stylesTarget = 'ui-circle ui-ease-layout';
 
     }, []);
 
