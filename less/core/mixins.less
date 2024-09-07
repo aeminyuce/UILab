@@ -1,74 +1,34 @@
-// color mixins
-
 @import (reference) 'globals.less';
 
-._color-var (@var) when (@dark-mode = false) {
-    color: @@var;
-}
+// color mixins
 ._color-var (@var) when (@dark-mode = true) {
-    color: @@var; // fallback
     color: ~'var(--ui-@{var})';
 }
-
-._bg-var (@var) when (@dark-mode = false) {
-    background-color: @@var;
-}
 ._bg-var (@var) when (@dark-mode = true) {
-    background-color: @@var; // fallback
     background-color: ~'var(--ui-@{var})';
 }
-
-._gradient-var (@var) when (@dark-mode = false) {
-    background-image: @@var;
-}
 ._gradient-var (@var) when (@dark-mode = true) {
-    background-image: @@var; // fallback
     background-image: ~'var(--ui-@{var})';
 }
-
-._border-color-var (@var: border-color) when (@dark-mode = false) {
-    border-color: @@var;
-}
 ._border-color-var (@var: border-color) when (@dark-mode = true) {
-    border-color: @@var; // fallback
     border-color: ~'var(--ui-@{var})';
 }
-
-._border-var (@dir: border; @style: solid; @width: 1px; @var: border-color) when (@dark-mode = false) {
-    @{dir}: @style @width @@var;
-}
 ._border-var (@dir: border; @style: solid; @width: 1px; @var: border-color) when (@dark-mode = true) {
-    @{dir}: @style @width @@var; // fallback
     @{dir}: @style @width ~'var(--ui-@{var})';
 }
-
-._shadow-var (@h: 0; @v: 0; @blur: 0; @spread: 0; @var: border-color) when (@dark-mode = false) {
-    box-shadow: @h @v @blur @spread @@var;
-}
 ._shadow-var (@h: 0; @v: 0; @blur: 0; @spread: 0; @var: border-color) when (@dark-mode = true) {
-    box-shadow: @h @v @blur @spread @@var; // fallback
     box-shadow: @h @v @blur @spread ~'var(--ui-@{var})';
 }
-
-._fill-var (@var) when (@dark-mode = false) {
-    fill: @@var;
-}
 ._fill-var (@var) when (@dark-mode = true) {
-    fill: @@var; // fallback
     fill: ~'var(--ui-@{var})';
 }
-
-._stroke-var (@var) when (@dark-mode = false) {
-    stroke: @@var;
-}
 ._stroke-var (@var) when (@dark-mode = true) {
-    stroke: @@var; // fallback
     stroke: ~'var(--ui-@{var})';
 }
 
 // font mixins
 ._font-scale (@size) when (@large-fonts-scaling = false) {
-    font-size: @size; // fallback
+    font-size: @size;
 }
 ._font-scale (@size) when (@large-fonts-scaling = true) {
     @unit: (@size / 4);
