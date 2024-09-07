@@ -25,7 +25,7 @@ export default function () {
     ]
 
     return (
-        <Grid.Container as='main'>
+        <Grid.Container as='main' noGutter='lg'>
             <Grid.Container fixed='xl' as='div' className='ui-p-15 ui-m-30-v ui-sm-no-p'>
 
                 {/* slogans */}
