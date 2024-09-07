@@ -556,7 +556,7 @@ export interface GridContainerProps {
 
     as: 'div' | 'header' | 'main' | 'footer',
 
-    noGutter?: 'all' | 'xl' | 'lg' | 'sm' | 'xs',
+    noGutter?: 'all' | 'xl' | 'lg' | 'md' | 'sm' | 'xs',
     fixed?: true | 'xl',
 
     id?: any,
