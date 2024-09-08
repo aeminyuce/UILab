@@ -95,7 +95,12 @@
         }
     }
 
-    [class*="ui-col-"] { min-height: 1px; }
+    [class*="ui-col-"] {
+        min-height: 1px;
+
+        &:before,&:after { content: "" !important; display: table !important; }
+        &:after { clear: both !important; }
+    }
     [class*="ui-push-"],[class*="ui-pull-"] { position: relative; }
 
     ._create-cols(@name; @i) {
