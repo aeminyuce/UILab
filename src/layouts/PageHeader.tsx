@@ -23,7 +23,7 @@ export default function PageHeader(
                 <Button square ghost title='Back to Home' to='/' className='ui-circle ui-m-10-r'>
                     <Icon src={icon_house_alt} />
                 </Button>
-                <h1 className="ui-h1 ui-font-18 ui-inline-block">
+                <h1 className='ui-h1 ui-font-18 ui-inline-block'>
                     {setPageTitle}
                 </h1>
             </div>

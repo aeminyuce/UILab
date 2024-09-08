@@ -6,7 +6,7 @@ import Icon from '@components/Icon';
 // assets
 const icon_clone = require('@icon/clone.svg') as string;
 
-interface CodePreviewProps {
+interface CodeProps {
 
     indSize: number,
     value: string,
@@ -16,9 +16,9 @@ interface CodePreviewProps {
 
 }
 
-export default function CodePreview(
+export default function Code(
 
-    { indSize, value, className, style }:CodePreviewProps) {
+    { indSize, value, className, style }:CodeProps) {
 
         const space = 4; // default indentation
 
@@ -36,8 +36,8 @@ export default function CodePreview(
         return (
             <pre className={classes} style={style}>
                 <div className='ui-p-4 ui-set-absolute ui-set-t ui-set-r'>
-                    <Button square ghost size='xs' title='Copy' className='ui-round ui-m-5' onClick={() => copyToClipboard(value)}>
-                        <Icon src={icon_clone} />
+                    <Button square ghost size='xs' title='Copy' className='ui-round ui-m-5 ui-theme-gray ui-fill-light-100' onClick={() => copyToClipboard(value)}>
+                        <Icon src={icon_clone} className='ui-color-white' />
                     </Button>
                 </div>
                 <code>{value}</code>
