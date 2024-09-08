@@ -61,7 +61,6 @@ ui.onload(() => {
 
         doc.setAttribute(ui.darkMode.dataMod, mode);
 
-
     }, 0); // wait cookie
 
     // Event Listeners
