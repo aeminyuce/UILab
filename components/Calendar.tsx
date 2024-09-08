@@ -25,10 +25,14 @@ const Calendar = function (
             ui.calendar.nextIcon = icon_arrow_right;
             ui.calendar.backIcon = icon_angle_left;
 
+        }, []);
+
+        useEffect(() => {
+
             // init
             ui.calendar.Init();
 
-        }, []);
+        }, [className, style]);
 
         // classes
         const setClassName = className ? ' ' + className : '';
@@ -51,10 +55,14 @@ const CalendarPicker = function (
             ui.calendar.prevIcon = icon_arrow_left;
             ui.calendar.nextIcon = icon_arrow_right;
 
+        }, []);
+
+        useEffect(() => {
+
             // init
             ui.calendar.Init();
 
-        }, []);
+        }, [className, style]);
 
         // classes
         const setClassName = className ? ' ' + className : '';

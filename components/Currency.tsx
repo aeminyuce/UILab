@@ -68,7 +68,7 @@ const CurrencyForm = function (
         // children classes
         const setRequired = required ? ' ui-required' : '';
 
-        let childrenClasses = setRequired;
+        let childrenClasses: any = setRequired;
         childrenClasses = childrenClasses.replace(/^\s+/g, ''); // remove first spaces
 
         if (childrenClasses === '') childrenClasses = null;

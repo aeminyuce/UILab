@@ -34,10 +34,14 @@ const LineChartHolder = function (
             ui.lineChart.showInfo = setShowInfo;
             ui.lineChart.showInfoStats = setShowInfoStats;
 
-            // inits
+        }, []);
+
+        useEffect(() => {
+
+            // init
             ui.lineChart.Init();
 
-        }, []);
+        }, [className, style]);
 
         useEffect(() => {
 
