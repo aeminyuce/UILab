@@ -9,21 +9,21 @@ import PageHeader from '@layouts/PageHeader';
 import PageNav from '@layouts/PageNav';
 import Preview from '@layouts/Preview';
 
-// contexes
-import { StoreContext } from './App';
+// utils
+import { StoreContext } from '@utils/StoreReducer';
 
 export default function () {
-    const storeContext = useContext(StoreContext);
-    const activeTheme = storeContext.store.previewTheme;
+    const { store } = useContext(StoreContext);
+    const storedTheme = store?.previewTheme;
 
     // theme colors
     const themeColors = [
         { name: 'Base', theme: 'ui-theme-base', color: 'ui-fill-dark-100' },
-        { name: 'Sub', theme: 'ui-theme-sub', color: 'ui-fill-dark-100' },
-        { name: 'Green', theme: 'ui-theme-green', color: 'ui-fill-dark-100' },
-        { name: 'Yellow', theme: 'ui-theme-yellow', color: 'ui-fill-dark-100' },
-        { name: 'Orange', theme: 'ui-theme-orange', color: 'ui-fill-dark-100' },
-        { name: 'Red', theme: 'ui-theme-red', color: 'ui-fill-dark-100' },
+        { name: 'Sub', theme: 'ui-theme-sub', color: 'ui-fill-dark-200' },
+        { name: 'Green', theme: 'ui-theme-green', color: 'ui-fill-dark-200' },
+        { name: 'Yellow', theme: 'ui-theme-yellow', color: 'ui-fill-dark-200' },
+        { name: 'Orange', theme: 'ui-theme-orange', color: 'ui-fill-dark-200' },
+        { name: 'Red', theme: 'ui-theme-red', color: 'ui-fill-dark-200' },
     ]
 
     return (
@@ -46,11 +46,11 @@ export default function () {
                             <Preview indSize={8} themeColors={themeColors} value={`
                                 export default function () {
                                     return (
-                                        <Calendar className='ui-round ui-shadow-lg${activeTheme ? ` ${activeTheme}` : ''}' />
+                                        <Calendar className='ui-round ui-shadow-lg${storedTheme ? ` ${storedTheme}` : ''}' />
                                     );
                                 }
                             `}>
-                                <Calendar className={`ui-round ui-shadow-lg${activeTheme ? ` ${activeTheme}` : ''}`} />
+                                <Calendar className={`ui-round ui-shadow-lg${storedTheme ? ` ${storedTheme}` : ''}`} />
                             </Preview>
 
                             <h3 className='ui-h3'>Javascript</h3>

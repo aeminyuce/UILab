@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { useContext, useState, useEffect } from 'react';
+import { useContext } from 'react';
 import Button from '@components/Button';
 import Grid from '@components/Grid';
 
 // layouts
 import Code from '@layouts/Code';
 
-// contexes
-import { StoreContext } from './../App';
+// utils
+import { StoreContext } from '@utils/StoreReducer';
 
 interface PreviewProps {
 
@@ -30,30 +30,23 @@ interface ColorsProps {
 export default function Preview(
 
     { children, value, indSize, themeColors }:PreviewProps) {
-
-        const storeContext = useContext(StoreContext);
+        const { setStore } = useContext(StoreContext);
 
         // theme switcher
-        const [switchTheme, setSwitchTheme] = useState(null);
-
-        useEffect(() => {
-            if (switchTheme) {
-                storeContext.setStore((values: any) => ({...values, ['previewTheme']: switchTheme}));
-            }
-        }, [switchTheme]);
+        const switcherClasses = 'ui-m-1-h ui-m-1-r';
+        const switcherStyles = { height: '10px', borderRadius: '2px' };
 
         return (
             <>
             <h3 className='ui-h3'>Preview</h3>
             <Button.Wrapper ease='1st' className='ui-align-r ui-md-align-c ui-p-10 ui-border-h ui-border-t ui-round-t'>
-                <span className='ui-m-10-r ui-opacity-half'>Themes</span>
-
+                <Button title="No Theme" square noease size='xs' className={switcherClasses} style={switcherStyles} onClick={() => setStore({ type: 'unset theme', theme: null })} />
                 {themeColors && themeColors.map((item: ColorsProps) => {
                     const theme = `${item.theme} ${item.color}`
-                    const classes = `ui-m-1-h ui-m-1-r ui-round ${theme}`;
+                    const classes = `${switcherClasses} ${theme}`;
 
                     return (
-                        <Button key={item.name} title={`${item.name} Theme`} square noease size='xs' className={classes} onClick={() => setSwitchTheme(theme)} />
+                        <Button key={item.name} title={`${item.name} Theme`} square noease size='xs' className={classes} style={switcherStyles} onClick={() => setStore({ type: 'set theme', theme: theme })} />
                     )
                 })}
             </Button.Wrapper>
@@ -62,9 +55,7 @@ export default function Preview(
                     {children}
                 </Grid.Col>
             </Grid.Row>
-            <div className='ui-p-10 ui-border-h ui-border-t'>
-                Usage
-            </div>
+            <div className='ui-p-10 ui-border-h ui-border-t'>Usage</div>
             <Code indSize={indSize} className='ui-round-b' value={value} />
             </>
         )

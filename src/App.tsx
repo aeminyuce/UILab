@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Suspense, createContext, useState } from 'react';
+import { Suspense, useReducer } from 'react';
 import { useLocation } from 'react-router-dom';
 import Button from '@components/Button';
 import Icon from '@components/Icon';
@@ -13,7 +13,7 @@ import TopButton from '@components/TopButton';
 import RoutePaths from '@layouts/RoutePaths';
 
 // utils
-import { StoredContexes } from '@utils/StoredContexes';
+import { StoreContext, StoreReducer, StoreInitials } from '@utils/StoreReducer';
 
 // assets
 const icon_dribbble = require('@icon/dribbble.svg') as string;
@@ -24,14 +24,6 @@ const icon_sun = require('@icon/sun.svg') as string;
 const icon_moon = require('@icon/moon.svg') as string;
 const icon_angle_left = require('@icon/angle-left.svg') as string;
 const icon_angle_right = require('@icon/angle-right.svg') as string;
-
-// contexes
-export const StoreContext = createContext({
-
-    store: null,
-    setStore: null,
-
-});
 
 interface HeaderLinksProps {
 
@@ -49,7 +41,7 @@ interface SocialLinksProps {
 }
 
 export default function () {
-    const [store, setStore] = useState(StoredContexes);
+    const [store, setStore] = useReducer(StoreReducer, StoreInitials);
     const { pathname } = useLocation();
 
     // responsive logo

@@ -36,7 +36,15 @@ export default function Code(
         return (
             <pre className={classes} style={style}>
                 <div className='ui-p-4 ui-set-absolute ui-set-t ui-set-r'>
-                    <Button square ghost size='xs' title='Copy' className='ui-round ui-m-5 ui-theme-gray ui-fill-light-100' onClick={() => copyToClipboard(value)}>
+                    <Button square ghost size='xs' title='Copy' className='ui-round ui-m-5 ui-theme-gray ui-fill-light-100' onClick={() => {
+                        // copy to clipboard
+                        navigator.clipboard.writeText(value);
+
+                        Alerts.Message({
+                            msg: 'Copied!',
+                            pos: 'br',
+                        });
+                    }}>
                         <Icon src={icon_clone} className='ui-color-white' />
                     </Button>
                 </div>
@@ -44,13 +52,3 @@ export default function Code(
             </pre>
         )
     }
-
-// copy to clipboard
-const copyToClipboard = (value: string) => {
-    navigator.clipboard.writeText(value);
-
-    Alerts.Message({
-        msg: 'Copied!',
-        pos: 'br',
-    });
-}

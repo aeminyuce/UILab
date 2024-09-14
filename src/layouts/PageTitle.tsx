@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useEffect } from 'react';
 
 interface PageTitleProps {
 
@@ -11,11 +10,8 @@ interface PageTitleProps {
 export default function PageTitle(
 
     { title, children }:PageTitleProps) {
-        const setTitle = title ? title : '';
-
-        useEffect(() => {
-            document.title = `${setTitle} | ${process.env.PROJECT_NAME}`;
-        });
+        const setTitle = title ? `${title} | ` : '';
+        document.title = setTitle + process.env.PROJECT_NAME;
 
         return children;
     }
