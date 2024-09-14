@@ -13,14 +13,22 @@ interface PreviewProps {
 
     children?: React.ReactNode,
 
-    value: string,
-    indSize: number,
+    value: string;
+    indSize: number;
+    themeColors: ColorsProps[];
+
+}
+
+interface ColorsProps {
+
+    theme: string;
+    color: string;
 
 }
 
 export default function Preview(
 
-    { children, value, indSize }:PreviewProps) {
+    { children, value, indSize, themeColors }:PreviewProps) {
 
         const storeContext = useContext(StoreContext);
 

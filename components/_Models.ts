@@ -3,1064 +3,1064 @@ const gridSizes = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 // Alerts
 export interface AlertsDialogProps {
 
-    msg: any,
+    msg: any;
 
-    success?: string,
-    error?: string,
+    success?: string;
+    error?: string;
     custom?: {
-        first?: string,
-        second?: string,
-        third?: string,
-    },
+        first?: string;
+        second?: string;
+        third?: string;
+    };
 
-    callback?(value: any): any,
+    callback?(value: any): any;
 
 }
 
 export interface AlertsMessageProps {
 
-    msg: any,
+    msg: any;
 
-    pos?: 'tl' | 'tr' | 'bl' | 'br',
-    theme?: 'success' | 'warning' | 'danger',
+    pos?: 'tl' | 'tr' | 'bl' | 'br';
+    theme?: 'success' | 'warning' | 'danger';
 
 }
 
 // Avatar
 export interface AvatarProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    onClick?: React.ReactEventHandler,
-    onMouseDown?: React.ReactEventHandler,
-    onMouseUp?: React.ReactEventHandler,
+    onClick?: React.ReactEventHandler;
+    onMouseDown?: React.ReactEventHandler;
+    onMouseUp?: React.ReactEventHandler;
 
-    size?: 'lg' | 'sm' | 'xs',
-    title?: string,
+    size?: 'lg' | 'sm' | 'xs';
+    title?: string;
 
-    className?: string,
-    data?: any,
-    style?: any,
+    className?: string;
+    data?: any;
+    style?: any;
 
 }
 
 // Breadcrumbs
 export interface BreadcrumbsProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface BreadcrumbsItemProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    to?: string,
+    to?: string;
 
-    className?: string,
-    data?: any,
-    style?: any,
+    className?: string;
+    data?: any;
+    style?: any;
 
 }
 
 // Buttons
 export interface ButtonProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    as?: 'div' | 'span',
+    as?: 'div' | 'span';
 
-    onClick?: React.ReactEventHandler,
-    onMouseDown?: React.ReactEventHandler,
-    onMouseUp?: React.ReactEventHandler,
+    onClick?: React.ReactEventHandler;
+    onMouseDown?: React.ReactEventHandler;
+    onMouseUp?: React.ReactEventHandler;
 
-    value?: any,
-    disabled?: boolean,
+    value?: any;
+    disabled?: boolean;
 
-    title?: string,
-    to?: string,
-    state?: any,
+    title?: string;
+    to?: string;
+    state?: any;
 
-    href?: string,
-    target?: '_blank' | '_self' | '_parent' | '_top',
+    href?: string;
+    target?: '_blank' | '_self' | '_parent' | '_top';
 
-    active?: boolean,
-    passive?: boolean,
-    multi?: boolean,
-    square?: boolean,
-    ghost?: boolean,
-    block?: boolean,
+    active?: boolean;
+    passive?: boolean;
+    multi?: boolean;
+    square?: boolean;
+    ghost?: boolean;
+    block?: boolean;
 
-    myRef?: any,
+    myRef?: any;
 
-    noease?: boolean,
-    nostyle?: boolean,
+    noease?: boolean;
+    nostyle?: boolean;
 
-    type?: 'submit' | 'button' | 'reset',
-    size?: 'lg' | 'sm' | 'xs',
-    fluid?: 'md' | 'sm' | 'xs',
-    rel?: string,
+    type?: 'submit' | 'button' | 'reset';
+    size?: 'lg' | 'sm' | 'xs';
+    fluid?: 'md' | 'sm' | 'xs';
+    rel?: string;
 
-    id?: any,
-    form?: any,
-    className?: string,
-    data?: any,
-    style?: any,
+    id?: any;
+    form?: any;
+    className?: string;
+    data?: any;
+    style?: any;
 
 }
 
 export interface ButtonWrapperProps {
 
-    children?: React.ReactNode,
-    as?: 'holder' | 'list',
+    children?: React.ReactNode;
+    as?: 'holder' | 'list';
 
-    ease: '1st' | '2nd',
-    largeButtons?: boolean,
+    ease: '1st' | '2nd';
+    largeButtons?: boolean;
 
-    className?: string,
-    data?: any,
-    style?: any,
+    className?: string;
+    data?: any;
+    style?: any;
 
 }
 
 // Calendar
 export interface CalendarProps {
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface CalendarPickerProps {
 
-    onChange?: React.ReactEventHandler,
-    onInput?: React.ReactEventHandler,
-    onBlur?: React.ReactEventHandler,
+    onChange?: React.ReactEventHandler;
+    onInput?: React.ReactEventHandler;
+    onBlur?: React.ReactEventHandler;
 
-    name?: string,
-    tabIndex?: number,
-    value?: any,
-    defaultValue?: any,
-    placeholder?: string,
-    disabled?: boolean,
-    autoComplete?: 'on' | 'off' | 'username' | 'current-password' | string,
-    number?: boolean,
-    numberFloat?: boolean,
-    required?: boolean,
+    name?: string;
+    tabIndex?: number;
+    value?: any;
+    defaultValue?: any;
+    placeholder?: string;
+    disabled?: boolean;
+    autoComplete?: 'on' | 'off' | 'username' | 'current-password' | string;
+    number?: boolean;
+    numberFloat?: boolean;
+    required?: boolean;
 
-    minlength?: number,
-    maxlength?: number,
+    minlength?: number;
+    maxlength?: number;
 
-    myRef?: any,
+    myRef?: any;
 
-    id?: any,
-    className?: string,
-    style?: any,
+    id?: any;
+    className?: string;
+    style?: any;
 
 }
 
 // Card
 export interface CardProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    as?: 'div' | 'span',
-    type?: 'info' | 'success' | 'warning' | 'danger',
+    as?: 'div' | 'span';
+    type?: 'info' | 'success' | 'warning' | 'danger';
 
-    myRef?: any,
+    myRef?: any;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 // Carousel
 export interface CarouselProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    col?: typeof gridSizes,
+    col?: typeof gridSizes;
 
-    xl?: typeof gridSizes,
-    lg?: typeof gridSizes,
-    md?: typeof gridSizes,
-    sm?: typeof gridSizes,
-    xs?: typeof gridSizes,
+    xl?: typeof gridSizes;
+    lg?: typeof gridSizes;
+    md?: typeof gridSizes;
+    sm?: typeof gridSizes;
+    xs?: typeof gridSizes;
 
-    slide?: number,
+    slide?: number;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 }
 
 export interface CrouselSliderProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface CrouselContentProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    animate?: number,
+    animate?: number;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface CrouselNavProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface CrouselDotsProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 // Currency
 export interface CurrencySpinnerProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface CurrencyFormProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    onChange?: React.ReactEventHandler,
-    onInput?: React.ReactEventHandler,
-    onBlur?: React.ReactEventHandler,
+    onChange?: React.ReactEventHandler;
+    onInput?: React.ReactEventHandler;
+    onBlur?: React.ReactEventHandler;
 
-    name?: string,
-    tabIndex?: number,
-    value?: any,
-    defaultValue?: any,
-    placeholder?: string,
-    disabled?: boolean,
-    light?: boolean,
-    inline?: 'always' | 'xs',
-    autoComplete?: 'on' | 'off' | string,
+    name?: string;
+    tabIndex?: number;
+    value?: any;
+    defaultValue?: any;
+    placeholder?: string;
+    disabled?: boolean;
+    light?: boolean;
+    inline?: 'always' | 'xs';
+    autoComplete?: 'on' | 'off' | string;
 
-    icons?: 'r' | 'l' | 'all',
+    icons?: 'r' | 'l' | 'all';
 
-    readOnly?: boolean,
-    required?: boolean,
-    hasClear?: boolean,
+    readOnly?: boolean;
+    required?: boolean;
+    hasClear?: boolean;
 
-    maxlength: number,
-    min: number,
-    step?: number,
-    decimal?: boolean,
+    maxlength: number;
+    min: number;
+    step?: number;
+    decimal?: boolean;
 
-    myRef?: any,
+    myRef?: any;
 
-    noease?: boolean,
+    noease?: boolean;
 
-    id?: any,
-    className?: string,
-    style?: any,
+    id?: any;
+    className?: string;
+    style?: any;
 
 }
 
 // Donut Chart
 export interface DonutChartHolderProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    msg?: string,
+    msg?: string;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface DonutChartItemProps {
 
-    stroke: string,
+    stroke: string;
 
-    percent: number,
-    title?: string,
+    percent: number;
+    title?: string;
 
 }
 
 // Dropdown
 export interface DropdownProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    hover?: boolean,
-    block?: boolean,
-    align?: 'l' | 'c',
-    pos?: 'l' | 'r',
-    nav?: true | 'full-h',
+    hover?: boolean;
+    block?: boolean;
+    align?: 'l' | 'c';
+    pos?: 'l' | 'r';
+    nav?: true | 'full-h';
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface DropdownMenuProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
     as?: 'div' | 'span';
 
-    hasIcon?: boolean,
+    hasIcon?: boolean;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface DropdownItemProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    onClick?: React.ReactEventHandler,
-    onMouseDown?: React.ReactEventHandler,
-    onMouseUp?: React.ReactEventHandler,
+    onClick?: React.ReactEventHandler;
+    onMouseDown?: React.ReactEventHandler;
+    onMouseUp?: React.ReactEventHandler;
 
-    selected?: boolean,
+    selected?: boolean;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 // Form
 export interface FormLabelProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    noease?: boolean,
+    noease?: boolean;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface FormInputProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    onChange?: React.ReactEventHandler,
-    onInput?: React.ReactEventHandler,
-    onBlur?: React.ReactEventHandler,
+    onChange?: React.ReactEventHandler;
+    onInput?: React.ReactEventHandler;
+    onBlur?: React.ReactEventHandler;
 
-    type?: 'text' | 'password' | 'date' | 'datetime-local' | 'month' | 'week' | 'email' | 'tel' | 'time',
-    name?: string,
-    tabIndex?: number,
-    value?: any,
-    defaultValue?: any,
-    placeholder?: string,
-    disabled?: boolean,
-    light?: boolean,
-    inline?: 'always' | 'xs',
-    autoComplete?: 'on' | 'off' | 'username' | 'current-password' | string,
-    autoCompleteData?: string[],
+    type?: 'text' | 'password' | 'date' | 'datetime-local' | 'month' | 'week' | 'email' | 'tel' | 'time';
+    name?: string;
+    tabIndex?: number;
+    value?: any;
+    defaultValue?: any;
+    placeholder?: string;
+    disabled?: boolean;
+    light?: boolean;
+    inline?: 'always' | 'xs';
+    autoComplete?: 'on' | 'off' | 'username' | 'current-password' | string;
+    autoCompleteData?: string[];
 
-    icons?: 'r' | 'l' | 'all',
+    icons?: 'r' | 'l' | 'all';
 
-    multiple?: boolean,
-    readOnly?: boolean,
-    number?: boolean,
-    numberFloat?: boolean,
-    word?: boolean,
-    required?: boolean,
-    hasClear?: boolean,
+    multiple?: boolean;
+    readOnly?: boolean;
+    number?: boolean;
+    numberFloat?: boolean;
+    word?: boolean;
+    required?: boolean;
+    hasClear?: boolean;
 
-    minlength?: number,
-    maxlength?: number,
-    min?: number,
-    max?: number,
+    minlength?: number;
+    maxlength?: number;
+    min?: number;
+    max?: number;
 
-    myRef?: any,
+    myRef?: any;
 
-    noease?: boolean,
+    noease?: boolean;
 
-    id?: any,
-    className?: string,
-    style?: any,
+    id?: any;
+    className?: string;
+    style?: any;
 
 }
 
 export interface FormFileProps {
 
-    onChange?: React.ReactEventHandler,
-    onInput?: React.ReactEventHandler,
-    onBlur?: React.ReactEventHandler,
+    onChange?: React.ReactEventHandler;
+    onInput?: React.ReactEventHandler;
+    onBlur?: React.ReactEventHandler;
 
-    as: 'input' | 'button',
+    as: 'input' | 'button';
 
-    btnName?: string,
-    placeholder?: string,
+    btnName?: string;
+    placeholder?: string;
 
-    name?: string,
-    tabIndex?: number,
-    value?: any,
-    defaultValue?: any,
-    disabled?: boolean,
-    light?: boolean,
-    inline?: 'always' | 'xs',
+    name?: string;
+    tabIndex?: number;
+    value?: any;
+    defaultValue?: any;
+    disabled?: boolean;
+    light?: boolean;
+    inline?: 'always' | 'xs';
 
-    multiple?: boolean,
-    readOnly?: boolean,
-    required?: boolean,
+    multiple?: boolean;
+    readOnly?: boolean;
+    required?: boolean;
 
-    myRef?: any,
+    myRef?: any;
 
-    noease?: boolean,
+    noease?: boolean;
 
-    id?: any,
-    className?: string,
-    btnClassName?: string,
-    style?: any,
+    id?: any;
+    className?: string;
+    btnClassName?: string;
+    style?: any;
 
 }
 
 export interface FormTextareaProps {
 
-    onChange?: React.ReactEventHandler,
-    onInput?: React.ReactEventHandler,
+    onChange?: React.ReactEventHandler;
+    onInput?: React.ReactEventHandler;
 
-    rows?: number,
-    cols?: number,
+    rows?: number;
+    cols?: number;
 
-    name?: string,
-    tabIndex?: number,
-    value?: any,
-    placeholder?: string,
-    disabled?: boolean,
-    light?: boolean,
-    inline?: 'always' | 'xs',
-    readOnly?: boolean,
-    required?: boolean,
+    name?: string;
+    tabIndex?: number;
+    value?: any;
+    placeholder?: string;
+    disabled?: boolean;
+    light?: boolean;
+    inline?: 'always' | 'xs';
+    readOnly?: boolean;
+    required?: boolean;
 
-    minlength?: number,
-    maxlength?: number,
+    minlength?: number;
+    maxlength?: number;
 
-    myRef?: any,
+    myRef?: any;
 
-    toggle?: boolean,
-    noease?: boolean,
-    counter?: number,
+    toggle?: boolean;
+    noease?: boolean;
+    counter?: number;
 
-    id?: any,
-    className?: string,
-    style?: any,
+    id?: any;
+    className?: string;
+    style?: any;
 
 }
 
 export interface FormSelectProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    onChange?: React.ReactEventHandler,
-    onInput?: React.ReactEventHandler,
+    onChange?: React.ReactEventHandler;
+    onInput?: React.ReactEventHandler;
 
-    title?: string,
-    name?: string,
-    tabIndex?: number,
-    value?: any,
-    defaultValue?: any,
+    title?: string;
+    name?: string;
+    tabIndex?: number;
+    value?: any;
+    defaultValue?: any;
 
-    disabled?: boolean,
-    inline?: 'always' | 'xs',
-    required?: boolean,
-    light?: boolean,
+    disabled?: boolean;
+    inline?: 'always' | 'xs';
+    required?: boolean;
+    light?: boolean;
 
-    myRef?: any,
+    myRef?: any;
 
-    noease?: boolean,
+    noease?: boolean;
 
-    id?: any,
-    className?: string,
-    style?: any,
+    id?: any;
+    className?: string;
+    style?: any;
 
 }
 
 export interface FormCheckProps {
 
-    type?: 'check' | 'radio' | 'switch',
-    label?: any,
+    type?: 'check' | 'radio' | 'switch';
+    label?: any;
 
-    onChange?: React.ReactEventHandler,
+    onChange?: React.ReactEventHandler;
 
-    id?: any,
-    name?: string,
-    tabIndex?: number,
-    value?: string,
-    checked?: boolean,
-    disabled?: boolean,
-    indeterminate?: boolean,
-    light?: boolean,
+    id?: any;
+    name?: string;
+    tabIndex?: number;
+    value?: string;
+    checked?: boolean;
+    disabled?: boolean;
+    indeterminate?: boolean;
+    light?: boolean;
 
-    required?: boolean,
+    required?: boolean;
 
-    noease?: boolean,
+    noease?: boolean;
 
-    className?: string,
-    style?: any,
-    stateStyle?: any,
+    className?: string;
+    style?: any;
+    stateStyle?: any;
 
 }
 
 export interface FormRequiredMessageProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    myRef?: any,
+    myRef?: any;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface FormHintProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    myRef?: any,
-    theme?: 'warning' | 'error',
+    myRef?: any;
+    theme?: 'warning' | 'error';
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 // Grid
 export interface GridContainerProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    as: 'div' | 'header' | 'main' | 'footer',
+    as: 'div' | 'header' | 'main' | 'footer';
 
-    noGutter?: 'all' | 'xl' | 'lg' | 'md' | 'sm' | 'xs',
-    fixed?: true | 'xl',
+    noGutter?: 'all' | 'xl' | 'lg' | 'md' | 'sm' | 'xs';
+    fixed?: true | 'xl';
 
-    id?: any,
-    className?: string,
-    style?: any,
+    id?: any;
+    className?: string;
+    style?: any;
 
 }
 
 export interface GridRowProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    as?: 'span' | 'dl',
+    as?: 'span' | 'dl';
 
-    formHolder?: boolean,
+    formHolder?: boolean;
 
-    align?: 'l' | 'c' | 'r',
-    fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs',
+    align?: 'l' | 'c' | 'r';
+    fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs';
 
-    gap?: 'no' | 'lg' | 'md' | 'sm' | 'xs',
-    vGap?: 'no' | 'lg' | 'md' | 'sm' | 'xs',
-    hGap?: 'no' | 'lg' | 'md' | 'sm' | 'xs',
+    gap?: 'no' | 'lg' | 'md' | 'sm' | 'xs';
+    vGap?: 'no' | 'lg' | 'md' | 'sm' | 'xs';
+    hGap?: 'no' | 'lg' | 'md' | 'sm' | 'xs';
 
-    className?: string,
-    data?: any,
-    style?: any,
+    className?: string;
+    data?: any;
+    style?: any;
 
 }
 
 export interface GridColProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    as?: 'span' | 'dt' | 'dd',
+    as?: 'span' | 'dt' | 'dd';
 
-    size: typeof gridSizes | string, // string: for string col names
-    offset?: typeof gridSizes,
-    push?: typeof gridSizes,
-    pull?: typeof gridSizes,
+    size: typeof gridSizes | string; // string: for string col names
+    offset?: typeof gridSizes;
+    push?: typeof gridSizes;
+    pull?: typeof gridSizes;
 
     xl?: typeof gridSizes | string | {
-        size?: typeof gridSizes | string, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
-    },
+        size?: typeof gridSizes | string; offset?: typeof gridSizes; push?: typeof gridSizes; pull?: typeof gridSizes
+    };
     lg?: typeof gridSizes | string | {
-        size?: typeof gridSizes | string, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
-    },
+        size?: typeof gridSizes | string; offset?: typeof gridSizes; push?: typeof gridSizes; pull?: typeof gridSizes
+    };
     md?: typeof gridSizes | string | {
-        size?: typeof gridSizes | string, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
-    },
+        size?: typeof gridSizes | string; offset?: typeof gridSizes; push?: typeof gridSizes; pull?: typeof gridSizes
+    };
     sm?: typeof gridSizes | string | {
-        size?: typeof gridSizes | string, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
-    },
+        size?: typeof gridSizes | string; offset?: typeof gridSizes; push?: typeof gridSizes; pull?: typeof gridSizes
+    };
     xs?: typeof gridSizes | string | {
-        size?: typeof gridSizes | string, offset?: typeof gridSizes, push?: typeof gridSizes, pull?: typeof gridSizes
-    },
+        size?: typeof gridSizes | string; offset?: typeof gridSizes; push?: typeof gridSizes; pull?: typeof gridSizes
+    };
 
-    fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs',
+    fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs';
 
     order?: {
-        when: 'xl' | 'lg' | 'default' | 'md' | 'sm' | 'xs',
-        position: 'first' | 'last',
-    },
+        when: 'xl' | 'lg' | 'default' | 'md' | 'sm' | 'xs';
+        position: 'first' | 'last';
+    };
 
-    className?: string,
-    data?: any,
-    style?: any,
+    className?: string;
+    data?: any;
+    style?: any;
 
 }
 
 export interface GridStaticProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    as?: 'span',
+    as?: 'span';
 
-    fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs',
+    fluid?: 'no' | 'xl' | 'lg' | 'sm' | 'xs';
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 // Header Sticky
 export interface HeaderStickyProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    className?: string,
-    dataClasses?: string,
-    dataSpace?: number,
-    style?: any,
+    className?: string;
+    dataClasses?: string;
+    dataSpace?: number;
+    style?: any;
 
 }
 
 // Icon
 export interface IconProps {
 
-    src: string,
+    src: string;
 
-    size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl',
-    float?: 'l' | 'r',
-    opacity?: 'no' | 'more' | 'half' | 'full',
-    animate?: string,
+    size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
+    float?: 'l' | 'r';
+    opacity?: 'no' | 'more' | 'half' | 'full';
+    animate?: string;
 
-    path?: boolean,
-    toggle?: boolean,
+    path?: boolean;
+    toggle?: boolean;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 }
 
 // Line Chart
 export interface LineChartHolderProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    x: string[],
-    step?: number,
+    x: string[];
+    step?: number;
     size?: {
-        rows: number,
-        rowsHeight: number,
-    },
-    prefix?: string,
-    suffix?: string,
-    sep?: '.' | ',',
+        rows: number;
+        rowsHeight: number;
+    };
+    prefix?: string;
+    suffix?: string;
+    sep?: '.' | ';';
 
-    showGrid?: boolean,
-    showGridRootsOnly?: boolean,
-    showGridText?: boolean,
-    gridStroke?: number,
+    showGrid?: boolean;
+    showGridRootsOnly?: boolean;
+    showGridText?: boolean;
+    gridStroke?: number;
 
-    showInfo?: boolean,
-    showInfoStats?: boolean,
+    showInfo?: boolean;
+    showInfoStats?: boolean;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface LineChartLineProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    name?: string,
-    noSelected?: boolean,
+    name?: string;
+    noSelected?: boolean;
 
-    curved?: boolean,
-    dotted?: boolean,
-    dashed?: boolean,
-    filled?: boolean,
+    curved?: boolean;
+    dotted?: boolean;
+    dashed?: boolean;
+    filled?: boolean;
 
-    noCircles?: boolean,
-    noRepeatedCircles?: boolean,
+    noCircles?: boolean;
+    noRepeatedCircles?: boolean;
 
-    onlyRepeated?: boolean,
+    onlyRepeated?: boolean;
 
 }
 
 export interface LineChartItemsProps {
 
-    y: number[],
-    url?: string,
+    y: number[];
+    url?: string;
 
 }
 
 // List Group
 export interface ListgroupProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface ListgroupListProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    iconSize?: 'xxl' | 'xl' | 'lg' | 'sm' | 'xs',
-    avatarSize?: 'lg' | 'default' | 'sm' | 'xs',
+    iconSize?: 'xxl' | 'xl' | 'lg' | 'sm' | 'xs';
+    avatarSize?: 'lg' | 'default' | 'sm' | 'xs';
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface ListgroupItemProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    onClick?: React.ReactEventHandler,
-    onMouseDown?: React.ReactEventHandler,
-    onMouseUp?: React.ReactEventHandler,
+    onClick?: React.ReactEventHandler;
+    onMouseDown?: React.ReactEventHandler;
+    onMouseUp?: React.ReactEventHandler;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 // Map
 export interface MapProps {
 
-    sizes: any,
+    sizes: any;
 
-    defaultValue?: any,
+    defaultValue?: any;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 }
 
 // Modal
 export interface ModalProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    as: 'div' | 'span',
+    as: 'div' | 'span';
 
-    id?: any,
-    className?: string,
-    style?: any,
+    id?: any;
+    className?: string;
+    style?: any;
 
 }
 
 export interface ModalHeaderProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    id?: any,
-    className?: string,
-    style?: any,
+    id?: any;
+    className?: string;
+    style?: any;
 
 }
 
 export interface ModalTitleProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    id?: any,
-    className?: string,
-    style?: any,
+    id?: any;
+    className?: string;
+    style?: any;
 
 }
 
 export interface ModalButtonsProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    id?: any,
-    className?: string,
-    style?: any,
+    id?: any;
+    className?: string;
+    style?: any;
 
 }
 
 export interface ModalContainerProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    id?: any,
-    className?: string,
-    style?: any,
+    id?: any;
+    className?: string;
+    style?: any;
 
 }
 
 export interface ModalFooterProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    id?: any,
-    className?: string,
-    style?: any,
+    id?: any;
+    className?: string;
+    style?: any;
 
 }
 
 export interface ModalOpenProps {
 
-    source: string,
+    source: string;
 
-    bg?: 'true' | 'false',
-    closable?: boolean,
+    bg?: 'true' | 'false';
+    closable?: boolean;
 
-    type?: 'ajax' | 'iframe',
+    type?: 'ajax' | 'iframe';
     size?: 'lg' |'md' | 'sm' | 'fullscreen' | 'inline' | {
-        width: number, height: number
-    },
+        width: number; height: number
+    };
 
-    callback?(): any,
+    callback?(): any;
 
 }
 
 // Notifier
 export interface NotifierProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    lg?: boolean,
+    lg?: boolean;
 
-    className?: string,
-    dataVal?: any,
-    style?: any,
+    className?: string;
+    dataVal?: any;
+    style?: any;
 
 }
 
 // Pie Chart
 export interface PieChartHolderProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    info?: string,
+    info?: string;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface PieChartItemProps {
 
-    percent: any,
-    fill: string,
+    percent: any;
+    fill: string;
 
-    customName?: string,
-    title?: string,
+    customName?: string;
+    title?: string;
 
 }
 
 // Progress Bar
 export interface ProgressBarProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    size?: 'xxl' | 'xl' | 'lg' | 'sm',
+    size?: 'xxl' | 'xl' | 'lg' | 'sm';
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface ProgressBarItemProps {
 
-    percent: any,
+    percent: any;
 
-    prefix?: string,
-    suffix?: string,
+    prefix?: string;
+    suffix?: string;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 // Sidebar
 export interface SidebarProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    pos: 'l' | 'r',
+    pos: 'l' | 'r';
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface SidebarTitleProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface SidebarContentProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 // Spacer
 export interface SpacerProps {
 
-    size: typeof gridSizes,
+    size: typeof gridSizes;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 // Steps
 export interface StepsProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    hasInfo?: boolean,
-    hasIcon?: boolean,
+    hasInfo?: boolean;
+    hasIcon?: boolean;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface StepsItemProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    onClick?: React.ReactEventHandler,
+    onClick?: React.ReactEventHandler;
 
-    active?: boolean,
+    active?: boolean;
 
-    infoText?: string,
-    tooltipText?: string,
+    infoText?: string;
+    tooltipText?: string;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 // Tab
 export interface TabHolderProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    accordion?: boolean,
-    noease?: boolean,
+    accordion?: boolean;
+    noease?: boolean;
 
-    className?: string,
-    dataClasses?: string,
-    style?: any,
+    className?: string;
+    dataClasses?: string;
+    style?: any;
 
 }
 
 export interface TabContentProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    open?: boolean,
+    open?: boolean;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 // Table
 export interface TableProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    bottomCaption?: boolean,
-    condensed?: boolean,
-    condensedMore?: boolean,
-    noSep?: boolean,
-    nowrap?: boolean,
-    sidebar?: boolean,
-    valign?: boolean,
-    striped?: boolean,
-    hover?: boolean,
-    border?: boolean,
+    bottomCaption?: boolean;
+    condensed?: boolean;
+    condensedMore?: boolean;
+    noSep?: boolean;
+    nowrap?: boolean;
+    sidebar?: boolean;
+    valign?: boolean;
+    striped?: boolean;
+    hover?: boolean;
+    border?: boolean;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface TableScrollProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface TableFluidProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 // Timeline
 export interface TimelineProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    left?: boolean,
-    hide?: 'lines' | 'h-lines',
+    left?: boolean;
+    hide?: 'lines' | 'h-lines';
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
 export interface TimelineItemProps {
 
-    children?: React.ReactNode,
+    children?: React.ReactNode;
 
-    onClick?: React.ReactEventHandler,
+    onClick?: React.ReactEventHandler;
 
-    align?: 'l' | 'r',
+    align?: 'l' | 'r';
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }

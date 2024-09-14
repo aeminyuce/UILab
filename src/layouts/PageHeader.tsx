@@ -7,7 +7,7 @@ const icon_print = require('@icon/print.svg') as string;
 const icon_house_alt = require('@icon/house-alt.svg') as string;
 
 interface PageHeaderProps {
-    pageTitle: string,
+    pageTitle: string;
 }
 
 export default function PageHeader(

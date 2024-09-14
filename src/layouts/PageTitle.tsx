@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 
 interface PageTitleProps {
 
-    title: string,
-    children: React.ReactNode,
+    title: string;
+    children: React.ReactNode;
 
 }
 

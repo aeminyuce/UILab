@@ -8,11 +8,11 @@ const icon_clone = require('@icon/clone.svg') as string;
 
 interface CodeProps {
 
-    indSize: number,
-    value: string,
+    indSize: number;
+    value: string;
 
-    className?: string,
-    style?: any,
+    className?: string;
+    style?: any;
 
 }
 
