@@ -12,10 +12,10 @@ const Timeline = function (
 
         // classes
         const setLeft = left ? ' ui-timeline-l' : '';
-        const setHide = hide ? ' ui-timeline-no-' + hide : '';
+        const setHide = hide ? ` ui-timeline-no-${hide}` : '';
 
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-timeline' + setClassName + setLeft + setHide;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-timeline${setClassName}${setLeft}${setHide}`;
 
         return (
             <ul className={classes} style={style}>
@@ -29,9 +29,9 @@ const TimelineItem = function (
     { children, onClick, align, className, style }:TimelineItemProps) {
 
         // classes
-        const setAlign = align ? 'ui-timeline-align-' + align : '';
+        const setAlign = align ? `ui-timeline-align-${align}` : '';
 
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
         const classes = setAlign + setClassName;
 
         return (

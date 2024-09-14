@@ -11,7 +11,7 @@ const Table = function (
     { children, bottomCaption, condensed, condensedMore, noSep, nowrap, sidebar, valign, striped, hover, border, className, style }:TableProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
 
         const setBottomCaption = bottomCaption ? ' ui-table-caption-b' : '';
         const setCondensed = condensed ? ' ui-table-condensed' : '';
@@ -26,7 +26,7 @@ const Table = function (
 
         const setClasses = setBottomCaption + setCondensed + setCondensedMore + setNoSep + setNowrap + setSidebar + setValign + setStriped + setHover + setBorder;
 
-        const classes = 'ui-table' + setClasses + setClassName + ' ui-ease-table';
+        const classes = `ui-table${setClasses}${setClassName} ui-ease-table`;
 
         return (
             <table className={classes} style={style}>
@@ -40,8 +40,8 @@ const TableScroll =  function (
     { children, className, style }:TableScrollProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-table-scroll' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-table-scroll${setClassName}`;
 
         return (
             <div className={classes} style={style}>
@@ -55,8 +55,8 @@ const TableFluid =  function (
     { children, className, style }:TableFluidProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-table-fluid' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-table-fluid${setClassName}`;
 
         return (
             <div className={classes} style={style}>

@@ -11,17 +11,17 @@ export default function Avatar(
     { children, onClick, onMouseDown, onMouseUp, size, title, className, data, style }:AvatarProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const setSize = size ? ' ui-avatar-' + size : '';
+        const setClassName = className ? ` ${className}` : '';
+        const setSize = size ? ` ui-avatar-${size}` : '';
 
-        const classes = 'ui-avatar' + setSize + setClassName;
+        const classes = `ui-avatar${setSize}${setClassName}`;
 
         // data attributes
         let setData = [];
 
         for (const name in data) {
 
-            const attr = 'data-ui-' + name;
+            const attr = `data-ui-${name}`;
             setData[attr] = data[name];
 
         }

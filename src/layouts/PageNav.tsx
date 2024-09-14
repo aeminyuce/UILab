@@ -1,11 +1,17 @@
 import * as React from 'react';
 import { useLocation } from 'react-router-dom';
-import { useId } from 'react';
 import Button from '@components/Button';
 import Grid from '@components/Grid';
 
+interface MenuListProps {
+
+    name: string;
+    to: string;
+    sep: boolean;
+
+}
+
 export default function PageNav() {
-    const keyId = useId();
     const { pathname } = useLocation();
 
     const menuList = [
@@ -50,10 +56,10 @@ export default function PageNav() {
             <div className='ui-font-18 ui-m-15'>Docs</div>
             <div className='ui-sidebar-add-r'>
                 <ul className='ui-list-unstyled ui-align-l ui-block-2nd ui-ease-2nd-btn'>
-                    {menuList.map((item: { name: string, to: string, sep: boolean }, i: number) => {
+                    {menuList.map((item: MenuListProps) => {
                         return (
-                            <li key={keyId + i}>
-                                <Button noease size='sm' ghost={pathname === '/' + item.to ? false : true} to={item.to}>{item.name}</Button>
+                            <li key={item.name}>
+                                <Button noease size='sm' ghost={pathname === item.to ? false : true} to={item.to}>{item.name}</Button>
                             </li>
                         )
                     })}

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useId, useEffect } from 'react';
+import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
 // imports
@@ -27,10 +27,10 @@ const FormLabel = function (
     { children, noease, className, style }:FormLabelProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
 
         const setEase = noease ? '' : ' ui-ease-form';
-        const classes = 'ui-form-label' + setClassName + setEase;
+        const classes = `ui-form-label${setClassName}${setEase}`;
 
         return (
             <label className={classes} style={style}>
@@ -42,8 +42,6 @@ const FormLabel = function (
 const FormInput = function (
 
     { children, onChange, onInput, onBlur, type, name, tabIndex, value, defaultValue, placeholder, disabled, light, inline, autoComplete, autoCompleteData, icons, multiple, readOnly, word, number, numberFloat, required, hasClear, minlength, maxlength, min, max, myRef, noease, id, className, style }:FormInputProps) {
-
-        const keyId = useId();
 
         useEffect(() => {
 
@@ -57,7 +55,7 @@ const FormInput = function (
 
         // classes
         const setAutoCompleteData = autoCompleteData ? ' ui-autocomplete' : '';
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
         const setDisabled = disabled ? ' ui-form-disabled' : '';
         const setHasClear = hasClear ? ' ui-form-has-clear' : '';
         const setlight = light ? ' ui-form-light' : '';
@@ -84,7 +82,7 @@ const FormInput = function (
             setIcons = ' ui-form-icon-all';
         }
 
-        const classes = 'ui-input' + setAutoCompleteData + setIcons + setDisabled + setHasClear + setlight + setClassName + setInline + setEase;
+        const classes = `ui-input${setAutoCompleteData}${setIcons}${setDisabled}${setHasClear}${setlight}${setClassName}${setInline}${setEase}`;
 
         // children classes
         const setNumber = number ? ' ui-number' : '';
@@ -108,8 +106,8 @@ const FormInput = function (
                 <>
                 {autoCompleteData &&
                     <datalist>
-                        {autoCompleteData.map((name: string, i: number) => {
-                            return <option key={keyId + i}>{name}</option>
+                        {autoCompleteData.map((name: string) => {
+                            return <option key={name}>{name}</option>
                         })}
                     </datalist>
                 }
@@ -127,7 +125,7 @@ const FormFile = function (
         const setPlaceholder = placeholder ? placeholder : 'Seçilen dosya yok';
 
         // classes
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
         const setDisabled = disabled ? ' ui-form-disabled' : '';
         const setlight = light ? ' ui-form-light' : '';
         const setEase = noease ? '' : ' ui-ease-form';
@@ -141,7 +139,7 @@ const FormFile = function (
 
         }
 
-        const classes = 'ui-file' + setDisabled + setlight + setClassName + setInline + setEase;
+        const classes = `ui-file${setDisabled}${setlight}${setClassName}${setInline}${setEase}`;
 
         // children classes
         const setRequired = required ? ' ui-required' : '';
@@ -184,7 +182,7 @@ const FormTextarea = function (
     { onChange, onInput, rows, cols, name, tabIndex, value, placeholder, disabled, light, inline, readOnly, required, minlength, maxlength, myRef, toggle, noease, counter, id, className, style }:FormTextareaProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
         const setDisabled = disabled ? ' ui-form-disabled' : '';
         const setlight = light ? ' ui-form-light' : '';
         const setToggle = toggle ? ' ui-textarea-toggle' : '';
@@ -199,7 +197,7 @@ const FormTextarea = function (
 
         }
 
-        const classes = 'ui-textarea' + setDisabled + setlight + setClassName + setInline + setToggle + setEase;
+        const classes = `ui-textarea${setDisabled}${setlight}${setClassName}${setInline}${setToggle}${setEase}`;
 
         // children classes
         const setRequired = required ? ' ui-required' : '';
@@ -225,7 +223,7 @@ const FormSelect = function (
     { children, onChange, onInput, title, name, tabIndex, value, defaultValue, disabled, light, inline, required, myRef, noease, id, className, style }:FormSelectProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
         const setDisabled = disabled ? ' ui-form-disabled' : '';
         const setLight = light ? ' ui-form-light' : '';
         const setEase = noease ? '' : ' ui-ease-form';
@@ -239,7 +237,7 @@ const FormSelect = function (
 
         }
 
-        const classes = 'ui-select' + setDisabled + setLight + setClassName + setInline + setEase;
+        const classes = `ui-select${setDisabled}${setLight}${setClassName}${setInline}${setEase}`;
 
         // children classes
         const setRequired = required ? ' ui-required' : '';
@@ -265,7 +263,7 @@ const FormCheck = function (
         const setType = (type === 'radio') ? 'radio' : 'checkbox';
 
         // classes
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
         const setLabelSpace = label ? ' ui-m-5-r' : '';
         const setDisabled = disabled ? ' ui-form-disabled' : '';
         const setIndeterminate = indeterminate ? ' ui-indeterminate' : '';
@@ -291,7 +289,7 @@ const FormCheck = function (
 
         // state classes
         const setStateTheme = (type === 'switch') ? ' ui-fill-dark-100' : '';
-        const stateClasses = 'ui-form-state' + setStateTheme;
+        const stateClasses = `ui-form-state${setStateTheme}`;
 
         return (
             <label className="ui-label">
@@ -309,8 +307,8 @@ const FormRequiredMessage = function (
     { children, myRef, className, style }:FormRequiredMessageProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-required-msg' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-required-msg${setClassName}`;
 
         // styles
         let styles = {};
@@ -330,10 +328,10 @@ const FormHint = function (
     { children, myRef, theme, className, style }:FormHintProps) {
 
         // classes
-        const setType = theme ? ' ui-form-' + theme : '';
-        const setClassName = className ? ' ' + className : '';
+        const setType = theme ? ` ui-form-${theme}` : '';
+        const setClassName = className ? ` ${className}` : '';
 
-        const classes = 'ui-form-hint' + setType + setClassName;
+        const classes = `ui-form-hint${setType}${setClassName}`;
 
         return (
             <p ref={myRef} className={classes} style={style}>

@@ -1,12 +1,17 @@
 import * as React from 'react';
-import { useId } from 'react';
 import { Link } from 'react-router-dom';
 import Grid from '@components/Grid';
 import Spacer from '@components/Spacer';
 
-export default function () {
-    const keyId = useId();
+interface ExamplesProps {
 
+    name: string;
+    to: string;
+    img: string;
+
+}
+
+export default function () {
     // slogans
     const title = 'UI Lab is a modular design system.';
     const titleSlogan = 'For developing web interfaces fastly with React.';
@@ -38,12 +43,12 @@ export default function () {
 
                 {/* examples */}
                 <Grid.Row gap='lg' fluid='sm' className='ui-align-c ui-hover-shadow-2nd ui-hover-t-2nd ui-block-2nd'>
-                    {examplesList.map((item: { name: string, to: string, img: string }, j: number) => {
+                    {examplesList.map((item: ExamplesProps) => {
                         return (
-                            <Grid.Col key={keyId + j} lg={4} size={6}>
+                            <Grid.Col key={item.name} lg={4} size={6}>
                                 <Link to={item.to} className='ui-link ui-p-2 ui-round ui-shadow-lg ui-ease-layout ui-bg-white ui-invert-bg'>
-                                    <img className='ui-img-fluid ui-round-t ui-visible-light' src={'img/' + item.img + '.jpg'} alt={item.name} />
-                                    <img className='ui-img-fluid ui-round-t ui-visible-dark' src={'img/' + item.img + '-dark.jpg'} alt={item.name + ' Dark'} />
+                                    <img className='ui-img-fluid ui-round-t ui-visible-light' src={`img/${item.img}.jpg`} alt={item.name} />
+                                    <img className='ui-img-fluid ui-round-t ui-visible-dark' src={`img/${item.img}-dark.jpg`} alt={`${item.name} Dark`} />
                                     <div className='ui-font-15 ui-inline-block ui-p-10-v'>{item.name}</div>
                                 </Link>
                             </Grid.Col>

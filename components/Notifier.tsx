@@ -12,9 +12,9 @@ export default function Notifier(
 
         // classes
         const setLarge = lg ? ' ui-notifier-lg' : '';
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
 
-        const classes = dataVal ? 'ui-notifier' + setLarge + setClassName : undefined;
+        const classes = dataVal ? `ui-notifier${setLarge}${setClassName}` : undefined;
 
         return (
             <span className={classes} data-ui-val={dataVal} style={style}>

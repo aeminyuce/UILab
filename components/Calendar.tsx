@@ -35,8 +35,8 @@ const Calendar = function (
         }, [className, style]);
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-calendar ui-ease-calendar' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-calendar ui-ease-calendar${setClassName}`;
 
         return (
             <div className={classes} style={style}></div>
@@ -65,8 +65,8 @@ const CalendarPicker = function (
         }, [className, style]);
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-calendar-picker ui-form-icon-l' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-calendar-picker ui-form-icon-l${setClassName}`;
 
         return (
             <Form.Input id={id} myRef={myRef} name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} placeholder={placeholder}

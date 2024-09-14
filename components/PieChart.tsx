@@ -23,8 +23,8 @@ const PieChartHolder = function (
         });
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-pie-chart' + setClassName + ' ui-ease-pie-chart';
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-pie-chart${setClassName} ui-ease-pie-chart`;
 
         return (
             <div className={classes} style={style} data-ui-info={info}>

@@ -14,8 +14,8 @@ const Dropdown = function (
         // classes
         const setHover = hover ? ' ui-menu-hover' : '';
         const setBlock = block ? ' ui-block' : '';
-        const setAlign = align ? ' ui-menu-' + align : '';
-        const setPos = pos ? ' ui-menu-pos-' + pos : '';
+        const setAlign = align ? ` ui-menu-${align}` : '';
+        const setPos = pos ? ` ui-menu-pos-${pos}` : '';
 
         let setNav = '';
 
@@ -23,8 +23,8 @@ const Dropdown = function (
             setNav = nav === true ? ' ui-nav' : ' ui-nav ui-nav-full-h';
         }
 
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-dropdown' + setHover + setBlock + setAlign + setPos + setNav + setClassName + ' ui-ease-dropdown';
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-dropdown${setHover}${setBlock}${setAlign}${setPos}${setNav}${setClassName} ui-ease-dropdown`;
 
         return (
             <div className={classes} style={style}>
@@ -40,8 +40,8 @@ const DropdownMenu = function (
         // classes
         const setHasIcon = hasIcon ? ' ui-dropdown-has-icon' : '';
 
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-dropdown-menu' + setHasIcon + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-dropdown-menu${setHasIcon}${setClassName}`;
 
         return (
             <>
@@ -70,7 +70,7 @@ const DropdownItem = function (
 
         // classes
         const setSelected = selected ? ' ui-selected' : '';
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
 
         let classes: any = setSelected + setClassName;
         classes = classes.replace(/^\s+/g, ''); // remove first spaces

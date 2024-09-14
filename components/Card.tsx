@@ -12,10 +12,10 @@ const Card = function (
     { children, as, type, myRef, className, style }:CardProps) {
 
         // classes
-        const setType = type ? ' ui-card-' + type : '';
-        const setClassName = className ? ' ' + className : '';
+        const setType = type ? ` ui-card-${type}` : '';
+        const setClassName = className ? ` ${className}` : '';
 
-        const classes = 'ui-card' + setType + setClassName;
+        const classes = `ui-card${setType}${setClassName}`;
 
         // type
         const setAs = as ? as : 'div';
@@ -42,8 +42,8 @@ const CardSide = function (
     { children, myRef, className, style }:CardProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-card-side' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-card-side${setClassName}`;
 
         return (
             <div ref={myRef} className={classes} style={style}>

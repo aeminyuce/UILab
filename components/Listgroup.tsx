@@ -11,8 +11,8 @@ const Listgroup = function (
     { children, className, style }:ListgroupProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-listgroup' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-listgroup${setClassName}`;
 
         return (
             <div className={classes} style={style}>
@@ -27,12 +27,12 @@ const ListgroupList = function (
     { children, iconSize, avatarSize, className, style }:ListgroupListProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
 
-        const setIconSize = iconSize ? ' ui-listgroup-has-icon-' + iconSize : '';
-        const setAvatarSize = avatarSize ? ' ui-listgroup-has-avatar-' + avatarSize : '';
+        const setIconSize = iconSize ? ` ui-listgroup-has-icon-${iconSize}` : '';
+        const setAvatarSize = avatarSize ? ` ui-listgroup-has-avatar-${avatarSize}` : '';
 
-        const classes = 'ui-ease-listgroup' + setIconSize + setAvatarSize + setClassName;
+        const classes = `ui-ease-listgroup${setIconSize}${setAvatarSize}${setClassName}`;
 
         return (
             <ul className={classes} style={style}>

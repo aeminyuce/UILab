@@ -14,8 +14,8 @@ const Steps = function (
         const setHasInfo = hasInfo ? ' ui-steps-info' : '';
         const setHasIcon = hasIcon ? ' ui-steps-icon' : '';
 
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-steps-bar' + setClassName + setHasInfo + setHasIcon;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-steps-bar${setClassName}${setHasInfo}${setHasIcon}`;
 
         return (
             <ul className={classes} style={style}>
@@ -31,7 +31,7 @@ const StepsItem = function (
         // classes
         const setActive = active ? 'ui-active' : '';
 
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
         const classes = setActive + setClassName;
 
         // data attributes

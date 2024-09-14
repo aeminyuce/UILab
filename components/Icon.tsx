@@ -23,12 +23,12 @@ export default function Icon(
         }
 
         // classes
-        const setSize = size ? ' ui-icon-' + size : '';
-        const setAnimate = animate ? " ui-animate-" + animate : '';
-        const setFloat = float ? ' ui-float-' + float : '';
+        const setSize = size ? ` ui-icon-${size}` : '';
+        const setAnimate = animate ? ` ui-animate-${animate}` : '';
+        const setFloat = float ? ` ui-float-${float}` : '';
         const setToggle = toggle ? ' ui-toggle-icon' : '';
 
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
 
         let setOpacity: string = '';
 
@@ -38,12 +38,12 @@ export default function Icon(
                 setOpacity = ' ui-no-opacity';
 
             } else {
-                setOpacity = ' ui-opacity-' + opacity;
+                setOpacity = ` ui-opacity-${opacity}`;
             }
 
         }
 
-        const classes = 'ui-icon' + setSize + setAnimate + setFloat + setToggle + setOpacity + setClassName;
+        const classes = `ui-icon${setSize}${setAnimate}${setFloat}${setToggle}${setOpacity}${setClassName}`;
 
         return (
             <svg className={classes} style={style} viewBox="0 0 264 264">

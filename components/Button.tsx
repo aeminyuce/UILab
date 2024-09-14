@@ -22,18 +22,18 @@ const Button = function (
 
         const setEase = noease ? '' : ' ui-ease-btn';
 
-        const setSize = size ? ' ui-btn-' + size : '';
-        const setFluid = fluid ? ' ui-btn-' + fluid + '-fluid' : '';
+        const setSize = size ? ` ui-btn-${size}` : '';
+        const setFluid = fluid ? ` ui-btn-${fluid}-fluid` : '';
 
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
 
         let classes = null;
 
         if (nostyle) {
-            classes = 'ui-btn-no-style' + setClassName;
+            classes = `ui-btn-no-style${setClassName}`;
 
         } else {
-            classes = 'ui-btn' + setSize + setFluid + setActive + setPassive + setMulti + setSquare + setGhost + setBlock + setClassName + setEase;
+            classes = `ui-btn${setSize}${setFluid}${setActive}${setPassive}${setMulti}${setSquare}${setGhost}${setBlock}${setClassName}${setEase}`;
         }
 
         // attributes
@@ -44,7 +44,7 @@ const Button = function (
 
         for (const name in data) {
 
-            const attr = 'data-ui-' + name;
+            const attr = `data-ui-${name}`;
             setData[attr] = data[name];
 
         }
@@ -93,11 +93,11 @@ const ButtonWrapper = function (
     { children, as, ease, largeButtons, className, data, style }:ButtonWrapperProps) {
 
         // classes
-        const setEase = ease ? 'ui-ease-' + ease + '-btn' : '';
-        const setAs = as ? ' ui-btn-' + as : '';
+        const setEase = ease ? `ui-ease-${ease}-btn` : '';
+        const setAs = as ? ` ui-btn-${as}` : '';
         const setLargeButtons = largeButtons ? ' ui-form-lg' : '';
 
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
 
         let classes: any = setEase + setAs + setLargeButtons + setClassName;
         if (classes === '') { classes = null; }
@@ -107,7 +107,7 @@ const ButtonWrapper = function (
 
         for (const name in data) {
 
-            const attr = 'data-ui-' + name;
+            const attr = `data-ui-${name}`;
             setData[attr] = data[name];
 
         }

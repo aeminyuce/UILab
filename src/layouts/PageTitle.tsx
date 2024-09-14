@@ -14,7 +14,7 @@ export default function PageTitle(
         const setTitle = title ? title : '';
 
         useEffect(() => {
-            document.title = setTitle + ' | ' + process.env.PROJECT_NAME;
+            document.title = `${setTitle} | ${process.env.PROJECT_NAME}`;
         });
 
         return children;

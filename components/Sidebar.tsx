@@ -12,10 +12,10 @@ const Sidebar = function (
     { children, pos, className, style }:SidebarProps) {
 
         // classes
-        const setPos = pos ? ' ui-sidebar-' + pos : '';
+        const setPos = pos ? ` ui-sidebar-${pos}` : '';
 
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-sidebar' + setPos + setClassName + ' ui-ease-layout ui-ease-in-out';
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-sidebar${setPos}${setClassName} ui-ease-layout ui-ease-in-out`;
 
         return (
             <div className={classes} style={style}>
@@ -29,8 +29,8 @@ const SidebarTitle = function (
     { children, className, style }:SidebarTitleProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-sidebar-title' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-sidebar-title${setClassName}`;
 
         return (
             <div className={classes} style={style}>
@@ -44,8 +44,8 @@ const SidebarContent = function (
     { children, className, style }:SidebarContentProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-sidebar-content' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-sidebar-content${setClassName}`;
 
         return (
             <div className={classes} style={style}>

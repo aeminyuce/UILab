@@ -23,15 +23,15 @@ export default function Code(
         const space = 4; // default indentation
 
         // replacers
-        const reFirstSpace = new RegExp('^\\s{' + ((indSize * space) + 1) + '}', 'g'); // remove first space
-        const reSpaces = new RegExp('(?!\\n|\\r)\\s{' + indSize * space + '}', 'g'); // remove spaces by specified tab size except new lines
+        const reFirstSpace = new RegExp(`^\\s{${(((indSize * space) + 1))}}`, 'g'); // remove first space
+        const reSpaces = new RegExp(`(?!\\n|\\r)\\s{${indSize * space}}`, 'g'); // remove spaces by specified tab size except new lines
         const reLastSpace = new RegExp(/\s+$/g); // remove last space
 
         value = value.replace(reFirstSpace, '').replace(reSpaces, '').replace(reLastSpace, '');
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-pre ui-ease-pre ui-set-relative' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-pre ui-ease-pre ui-set-relative${setClassName}`;
 
         return (
             <pre className={classes} style={style}>

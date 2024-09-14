@@ -16,7 +16,7 @@ const Carousel = function (
         useEffect(() => {
 
             // remove active carousels
-            ui.removeClass('.' + ui.carousel.target, ui.carousel.nameActive);
+            ui.removeClass(`.${ui.carousel.target}`, ui.carousel.nameActive);
 
             // init
             ui.carousel.Init();
@@ -24,8 +24,8 @@ const Carousel = function (
         });
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-carousel' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-carousel${setClassName}`;
 
         return (
             <div className={classes} style={style} data-ui-slide={slide} data-ui-col={col}
@@ -40,8 +40,8 @@ const CrouselSlider = function (
     { children, className, style }:CrouselSliderProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-carousel-slider ui-ease-layout ui-ease-in-out' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-carousel-slider ui-ease-layout ui-ease-in-out${setClassName}`;
 
         return (
             <div className={classes} style={style}>
@@ -55,8 +55,8 @@ const CrouselContent = function (
     { children, animate, className, style }:CrouselContentProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-carousel-content' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-carousel-content${setClassName}`;
 
         return (
             <div className={classes} style={style} data-ui-animate={animate}>
@@ -70,8 +70,8 @@ const CrouselNav = function (
     { children, className, style }:CrouselNavProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-carousel-nav ui-ease-1st-btn' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-carousel-nav ui-ease-1st-btn${setClassName}`;
 
         return (
             <div className={classes} style={style}>
@@ -85,8 +85,8 @@ const CrouselDots = function (
     { children, className, style }:CrouselDotsProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-carousel-dots' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-carousel-dots${setClassName}`;
 
         return (
             <span className={classes} style={style}>

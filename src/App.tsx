@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Suspense, useId, createContext, useState } from 'react';
+import { Suspense, createContext, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Button from '@components/Button';
 import Icon from '@components/Icon';
@@ -33,10 +33,23 @@ export const StoreContext = createContext({
 
 });
 
+interface HeaderLinksProps {
+
+    name: string;
+    to: string;
+
+}
+
+interface SocialLinksProps {
+
+    title: string;
+    url: string;
+    icon: string;
+
+}
+
 export default function () {
     const [store, setStore] = useState(StoredContexes);
-
-    const keyId = useId();
     const { pathname } = useLocation();
 
     // responsive logo
@@ -86,12 +99,12 @@ export default function () {
                                 {/* header links */}
                                 <span className='ui-hidden-md'>
                                     <span className='ui-sidebar-add-l'>
-                                        {headerLinks.map((item: { name: string, to: string }, i: number) => {
+                                        {headerLinks.map((item: HeaderLinksProps) => {
                                             const path = item.to.replace(/\//g, '');
 
                                             return (
-                                                <React.Fragment key={keyId + i}>
-                                                    <Button ghost={pathname === '/' + path ? false : true} to={item.to} className='ui-m-2-r ui-round'>
+                                                <React.Fragment key={item.name}>
+                                                    <Button ghost={pathname === `/${path}` ? false : true} to={item.to} className='ui-m-2-r ui-round'>
                                                         {item.name}
                                                     </Button>
                                                     <Spacer size={2} className='ui-visible-md' />
@@ -118,9 +131,9 @@ export default function () {
                                 <span className='ui-hidden-md'>
                                     <span className='ui-sidebar-add-l'>
                                         <div className='ui-m-15-v ui-visible-md' />
-                                        {socialLinks.map((item: { title: string, url: string, icon: string }, j: number) => {
+                                        {socialLinks.map((item: SocialLinksProps) => {
                                             return (
-                                                <Button key={keyId + j} square ghost title={item.title} href={item.url} className='ui-circle ui-float-r ui-no-float-md' target='_blank' rel='nofollow'>
+                                                <Button key={item.title} square ghost title={item.title} href={item.url} className='ui-circle ui-float-r ui-no-float-md' target='_blank' rel='nofollow'>
                                                     <Icon src={item.icon} />
                                                 </Button>
                                             )

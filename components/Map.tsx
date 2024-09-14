@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useId, useEffect } from 'react';
+import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
 // imports
@@ -13,8 +13,6 @@ export default function Map(
 
     { sizes, defaultValue, className, style }:MapProps) {
 
-        const keyId = useId();
-
         useEffect(() => {
 
             // start
@@ -23,8 +21,8 @@ export default function Map(
         }, []);
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-map' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-map${setClassName}`;
 
         // values
         const paths = {
@@ -128,14 +126,14 @@ export default function Map(
 
                             if (size instanceof Object) { // check inner arrays
 
-                                info = '<strong class="ui-m-5-b ui-block">' + val + ': ' + size[defaultValue] + '</strong>';
+                                info = `<strong class="ui-m-5-b ui-block">${val}: ${size[defaultValue]}</strong>`;
 
-                                Object.keys(size).map((val: any, i: number, arr: any) => {
+                                Object.keys(size).map((val: any, j: number, arr: any) => {
 
                                     if (val !== defaultValue) {
 
-                                        info += val + ': ' + size[val];
-                                        if (i + 1 < arr.length) info += '<br>';
+                                        info += `${val}: ${size[val]}`;
+                                        if (j + 1 < arr.length) info += '<br>';
 
                                     }
 
@@ -143,7 +141,7 @@ export default function Map(
 
                                 size = size[defaultValue];
 
-                            } else info = '<strong>' + val + '</strong>: ' + size;
+                            } else info = `<strong>${val}</strong>: ${size}`;
 
                             const unescaped = UnescapedUnicode(value);
                             loadedPaths.push(unescaped);
@@ -151,7 +149,7 @@ export default function Map(
                             if (i + 1 === arr.length) emptyPaths = Object.keys(paths).filter((name: string) => !loadedPaths.includes(name));
 
                             return <path
-                                key={keyId + 1 + i}
+                                key={value.toString()}
                                 name={info}
                                 data-ui-size={size}
                                 data-ui-tooltip
@@ -159,13 +157,13 @@ export default function Map(
                             />
 
                         })}
-                        {emptyPaths.map((value: any, i: number) => {
+                        {emptyPaths.map((value: any) => {
 
                             const size = sizes[value] ? sizes[value] : 0;
-                            const info = '<strong>' + value + '</strong>: ' + size;
+                            const info = `<strong>${value}</strong>: ${size}`;
 
                             return <path
-                                key={keyId + 2 + i}
+                                key={value.toString()}
                                 name={info}
                                 data-ui-size={size}
                                 data-ui-tooltip

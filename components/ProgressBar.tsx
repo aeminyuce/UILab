@@ -11,10 +11,10 @@ const ProgressBar = function (
     { children, size, className, style }:ProgressBarProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const setSize = size ? ' ui-progress-' + size : '';
+        const setClassName = className ? ` ${className}` : '';
+        const setSize = size ? ` ui-progress-${size}` : '';
 
-        const classes = 'ui-progress-bar' + setSize + setClassName;
+        const classes = `ui-progress-bar${setSize}${setClassName}`;
 
         return (
             <div className={classes} style={style}>
@@ -28,16 +28,16 @@ const ProgressBarItem = function (
     { percent, prefix, suffix, className, style }:ProgressBarItemProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
         const classes = setClassName;
 
         // styles
-        let styles = null;
+        let styles: any = null;
 
         if (style) {
-            styles = {['width']: percent + '%', ...style};
+            styles = {['width']: `${percent}%`, ...style};
 
-        } else styles = {['width']: percent + '%'};
+        } else styles = {['width']: `${percent}%`};
 
         return (
             <span className={classes} style={styles}>

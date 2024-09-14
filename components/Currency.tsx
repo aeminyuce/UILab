@@ -22,8 +22,8 @@ const CurrencySpinner = function (
         });
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-currency-spinner ui-form-holder' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-currency-spinner ui-form-holder${setClassName}`;
 
         return (
             <div className={classes} style={style}>
@@ -36,7 +36,7 @@ const CurrencyForm = function (
     { children, onChange, onInput, onBlur, name, tabIndex, value, defaultValue, placeholder, disabled, light, inline, autoComplete, icons, readOnly, required, hasClear, maxlength, min, step, decimal, myRef, noease, id, className, style }:CurrencyFormProps) {
 
          // classes
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
         const setDisabled = disabled ? ' ui-form-disabled' : '';
         const setHasClear = hasClear ? ' ui-form-has-clear' : '';
         const setlight = light ? ' ui-form-light' : '';
@@ -63,7 +63,7 @@ const CurrencyForm = function (
             setIcons = ' ui-form-icon-all';
         }
 
-        const classes = 'ui-input' + setIcons + setDisabled + setHasClear + setlight + setClassName + setInline + setEase;
+        const classes = `ui-input${setIcons}${setDisabled}${setHasClear}${setlight}${setClassName}${setInline}${setEase}`;
 
         // children classes
         const setRequired = required ? ' ui-required' : '';

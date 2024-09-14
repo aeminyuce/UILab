@@ -21,8 +21,8 @@ export default function HeaderSticky(
         });
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-header-sticky' + setClassName + ' ui-ease-layout';
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-header-sticky${setClassName} ui-ease-layout`;
 
         return (
             <header className={classes} data-ui-classes={dataClasses} data-ui-space={dataSpace} style={style}>

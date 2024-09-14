@@ -26,8 +26,8 @@ const DonutChartHolder = function (
         const setMsg = msg ? msg : '';
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-donut-chart' + setClassName + ' ui-ease-donut-chart';
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-donut-chart${setClassName} ui-ease-donut-chart`;
 
         const bgClasses = 'ui-donut-chart-bg';
 

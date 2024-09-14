@@ -16,6 +16,16 @@ export default function () {
     const storeContext = useContext(StoreContext);
     const activeTheme = storeContext.store.previewTheme;
 
+    // theme colors
+    const themeColors = [
+        { name: 'Base', theme: 'ui-theme-base', color: 'ui-fill-dark-100' },
+        { name: 'Sub', theme: 'ui-theme-sub', color: 'ui-fill-dark-100' },
+        { name: 'Green', theme: 'ui-theme-green', color: 'ui-fill-dark-100' },
+        { name: 'Yellow', theme: 'ui-theme-yellow', color: 'ui-fill-dark-100' },
+        { name: 'Orange', theme: 'ui-theme-orange', color: 'ui-fill-dark-100' },
+        { name: 'Red', theme: 'ui-theme-red', color: 'ui-fill-dark-100' },
+    ]
+
     return (
         <Grid.Container as='div' noGutter='all'>
             <Grid.Static fluid='no'>
@@ -33,7 +43,7 @@ export default function () {
                                 import Calendar from '@components/Calendar';
                             `} />
 
-                            <Preview indSize={8} value={`
+                            <Preview indSize={8} themeColors={themeColors} value={`
                                 export default function () {
                                     return (
                                         <Calendar className='ui-round ui-shadow-lg${activeTheme ? ` ${activeTheme}` : ''}' />

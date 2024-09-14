@@ -12,8 +12,8 @@ const Breadcrumbs = function (
     { children, className, style }:BreadcrumbsProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-breadcrumbs' + setClassName;
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-breadcrumbs${setClassName}`;
 
         return (
             <nav className={classes} style={style}>
@@ -29,7 +29,7 @@ const BreadcrumbsItem = function (
     { children, to, className, data, style }:BreadcrumbsItemProps) {
 
         // classes
-        const setClassName = className ? ' ' + className : '';
+        const setClassName = className ? ` ${className}` : '';
         const classes = setClassName;
 
         // data attributes
@@ -37,7 +37,7 @@ const BreadcrumbsItem = function (
 
         for (const name in data) {
 
-            const attr = 'data-ui-' + name;
+            const attr = `data-ui-${name}`;
             setData[attr] = data[name];
 
         }

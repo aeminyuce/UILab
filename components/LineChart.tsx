@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useId, useEffect } from 'react';
+import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
 // imports
@@ -50,11 +50,11 @@ const LineChartHolder = function (
 
         }, [x]);
 
-        const setSize = size ? size.rows + ',' + size.rowsHeight : null;
+        const setSize = size ? `${size.rows},${size.rowsHeight}` : null;
 
         // classes
-        const setClassName = className ? ' ' + className : '';
-        const classes = 'ui-line-chart-holder' + setClassName + ' ui-ease-line-chart';
+        const setClassName = className ? ` ${className}` : '';
+        const classes = `ui-line-chart-holder${setClassName} ui-ease-line-chart`;
 
         return (
             <div
@@ -95,13 +95,11 @@ const LineChartItems = function (
 
     { y, url }:LineChartItemsProps) {
 
-        const keyId = useId();
-
         return (y && Array.isArray(y) &&
             <>
-            {y.map((value: any, i: number) => {
+            {y.map((value: any) => {
                 return (
-                    <React.Fragment key={keyId + i}>
+                    <React.Fragment key={value.toString()}>
                         <li data-ui-y={value} data-ui-url={url}></li>
                     </React.Fragment>
                 )
