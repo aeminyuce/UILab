@@ -15,7 +15,8 @@
 @dropdown-toggle-float-icon-xs-margins:   3px;
 
 @dropdown-menu-space:                     1px;
-@dropdown-menu-min-width:                 100%;
+@dropdown-menu-width:                     100%;
+@dropdown-menu-min-width:                 (@layout-min - 60px);
 @dropdown-menu-max-width:                 (@sm-breakpoint - @highlight-space - (@border-dual * 2));
 
 @dropdown-list-line-height:               20px;
@@ -298,7 +299,7 @@
     @media (@md-start) {
         .ui-dropdown {
             .ui-dropdown-menu {
-                min-width: @dropdown-menu-min-width;
+                width: @dropdown-menu-width; min-width: @dropdown-menu-min-width;
 
                 &.ui-list-col-2 { min-width: @dropdown-list-col-2-min-width; }
                 &[class*="ui-list-col-"] { min-width: @dropdown-list-col-min-width; }
