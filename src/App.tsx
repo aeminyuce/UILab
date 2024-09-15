@@ -61,7 +61,7 @@ export default function () {
     return (
         <>
             {/* header */}
-            <HeaderSticky className='ui-container ui-theme-base ui-fill-dark-100 ui-visible' dataClasses='ui-shadow-lg'>
+            <HeaderSticky className='ui-container ui-theme-blue ui-fill-dark-100 ui-visible' dataClasses='ui-shadow-lg'>
                 <Grid.Row>
                     <Grid.Static fluid='no'>
 

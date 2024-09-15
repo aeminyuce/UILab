@@ -4,16 +4,20 @@
 @import (reference) '../modules/themes.less';
 @import (reference) '../core/mixins.less';
 
-@base:                                  hsl(226, 52%, 50%);
-@sub:                                   hsl(206, 87%, 50%);
+@jungle:                                hsl(161, 54%, 40%);
+@sea:                                   hsl(180, 58%, 38%);
+@ice:                                   hsl(206, 56%, 50%);
+@blue:                                  hsl(226, 48%, 52%);
+@orchid:                                hsl(293, 48%, 48%);
+@pink:                                  hsl(333, 60%, 46%);
 
-@theme-ext-colors:                      base sub;
+@theme-ext-colors:                      jungle sea ice blue orchid pink;
 
 & when (@referenceCompiling = false) { // not compiled when reference importing
 
     each(@theme-ext-colors, {
         @color: @@value;
-        ._theme(@value,  @color);
+        ._theme(@value, @color);
     });
 
 }

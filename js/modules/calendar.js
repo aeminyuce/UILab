@@ -59,7 +59,7 @@ ui.calendar = {
     stylesContainer: 'ui-ease-layout ui-ease-slow ui-ease-in-out',
     stylesPanel: 'ui-ease-layout ui-ease-slow ui-ease-in-out',
 
-    stylesToday: 'ui-theme-sub ui-fill-dark-100',
+    stylesToday: '',
     stylesPickerDay: 'ui-theme-red ui-fill-dark-100',
 
     stylesDetailScroll: 'ui-scrollbar-faded',

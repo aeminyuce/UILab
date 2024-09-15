@@ -34,7 +34,7 @@ export default function () {
             <Grid.Container fixed='xl' as='div' className='ui-p-15 ui-m-30-v ui-sm-no-p'>
 
                 {/* slogans */}
-                <div className='ui-align-c ui-p-30 ui-xs-no-p ui-round ui-theme-sub'>
+                <div className='ui-align-c ui-p-30 ui-xs-no-p ui-round ui-theme-ice'>
                     <h1 className='ui-h1 ui-font-light'>{title}</h1>
                     <h4 className='ui-h4 ui-font-bold ui-text'>{titleSlogan}</h4>
                 </div>

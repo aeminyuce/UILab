@@ -20,8 +20,13 @@ export default function () {
 
     // theme colors
     const themeColors = [
-        { name: 'Base', theme: 'ui-theme-base', color: 'ui-fill-dark-100' },
-        { name: 'Sub', theme: 'ui-theme-sub', color: 'ui-fill-dark-100' },
+        { name: 'Gray', theme: 'ui-theme-gray', color: 'ui-fill-dark-200' },
+        { name: 'Jungle', theme: 'ui-theme-jungle', color: 'ui-fill-dark-100' },
+        { name: 'Sea', theme: 'ui-theme-sea', color: 'ui-fill-dark-100' },
+        { name: 'Blue', theme: 'ui-theme-blue', color: 'ui-fill-dark-100' },
+        { name: 'Ice', theme: 'ui-theme-ice', color: 'ui-fill-dark-100' },
+        { name: 'Orchid', theme: 'ui-theme-orchid', color: 'ui-fill-dark-100' },
+        { name: 'Pink', theme: 'ui-theme-pink', color: 'ui-fill-dark-100' },
     ]
 
     return (
