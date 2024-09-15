@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Suspense, useReducer } from 'react';
 import { useLocation } from 'react-router-dom';
 import Button from '@components/Button';
 import Icon from '@components/Icon';
@@ -11,9 +10,6 @@ import TopButton from '@components/TopButton';
 
 // layouts
 import RoutePaths from '@layouts/RoutePaths';
-
-// utils
-import { StoreContext, StoreReducer, StoreInitials } from '@utils/StoreReducer';
 
 // assets
 const icon_dribbble = require('@icon/dribbble.svg') as string;
@@ -41,7 +37,6 @@ interface SocialLinksProps {
 }
 
 export default function () {
-    const [store, setStore] = useReducer(StoreReducer, StoreInitials);
     const { pathname } = useLocation();
 
     // responsive logo
@@ -64,7 +59,7 @@ export default function () {
     ];
 
     return (
-        <StoreContext.Provider value={{ store, setStore }}>
+        <>
             {/* header */}
             <HeaderSticky className='ui-container ui-theme-base ui-fill-dark-100 ui-visible' dataClasses='ui-shadow-lg'>
                 <Grid.Row>
@@ -141,9 +136,7 @@ export default function () {
             </HeaderSticky>
 
             {/* routes */}
-            <Suspense>
-                <RoutePaths />
-            </Suspense>
+            <RoutePaths />
 
             {/* top button */}
             <TopButton />
@@ -171,6 +164,6 @@ export default function () {
                     <Sidebar.Content className='ui-no-p ui-scroll-v' />
                 </Sidebar>
             }
-        </StoreContext.Provider>
+        </>
     );
 }

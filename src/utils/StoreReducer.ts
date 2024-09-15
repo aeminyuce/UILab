@@ -1,32 +1,41 @@
 import { createContext } from 'react';
 
 interface ReducerStateProps {
-    previewTheme: string;
+    calendar: ComponentProps;
+}
+
+interface ComponentProps {
+
+	theme: null;
+	style: null;
+
 }
 
 interface ReducerActionProps {
 
     type: string;
-    theme: string;
+
+    theme?: string;
+    style?: string;
 
 }
 
 export const StoreContext = createContext({
-
 	store: null,
 	setStore: null,
-
 });
 
 export const StoreReducer = (state: ReducerStateProps, action: ReducerActionProps) => {
 	switch (action?.type) {
 
         // themes
-		case 'set theme': {
-			return {...state, ...{ previewTheme: action.theme }};
+		case 'CALENDAR_THEME': {
+			return {...state, ...{calendar: { theme: action.theme }}};
 		}
-		case 'unset theme': {
-			return {...state, ...{ previewTheme: null }};
+
+		// styles
+		case 'CALENDAR_STYLE': {
+			return {...state, ...{calendar: { style: action.style }}};
 		}
 
 	}
@@ -34,7 +43,7 @@ export const StoreReducer = (state: ReducerStateProps, action: ReducerActionProp
 
 export const StoreInitials = {
 
-	// themes
-	previewTheme: null,
+	// components
+	calendar: { theme: null, style: null }
 
 }

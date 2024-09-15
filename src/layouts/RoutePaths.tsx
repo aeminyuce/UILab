@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 // layouts
@@ -8,17 +9,19 @@ import PageTitle from '@layouts/PageTitle';
 import {
     Home,
     Calendar
-} from '@utils/PageRoutes';
+} from '@utils/RouteComponents';
 
 export default function RoutePaths() {
     return (
-        <Routes>
-            <Route path='/*' element={
-                <PageTitle title='Home'><Home /></PageTitle>
-            } />
-            <Route path='calendar' element={
-                <PageTitle title='Calendar'><Calendar /></PageTitle>
-            } />
-        </Routes>
+        <Suspense>
+            <Routes>
+                <Route path='/*' element={
+                    <PageTitle title='Home'><Home /></PageTitle>
+                } />
+                <Route path='calendar' element={
+                    <PageTitle title='Calendar'><Calendar /></PageTitle>
+                } />
+            </Routes>
+        </Suspense>
     );
 }

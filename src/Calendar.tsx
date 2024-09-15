@@ -14,7 +14,9 @@ import { StoreContext } from '@utils/StoreReducer';
 
 export default function () {
     const { store } = useContext(StoreContext);
-    const storedTheme = store?.previewTheme;
+
+    const storedTheme = store?.calendar?.theme;
+    const storedStyle = store?.calendar?.style;
 
     // theme colors
     const themeColors = [
@@ -43,7 +45,7 @@ export default function () {
                                 import Calendar from '@components/Calendar';
                             `} />
 
-                            <Preview indSize={8} themeColors={themeColors} value={`
+                            <Preview indSize={8} actions={{ theme: 'CALENDAR_THEME' }} themeColors={themeColors} value={`
                                 export default function () {
                                     return (
                                         <Calendar className='ui-round ui-shadow-lg${storedTheme ? ` ${storedTheme}` : ''}' />
