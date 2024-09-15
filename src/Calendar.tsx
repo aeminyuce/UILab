@@ -21,11 +21,7 @@ export default function () {
     // theme colors
     const themeColors = [
         { name: 'Base', theme: 'ui-theme-base', color: 'ui-fill-dark-100' },
-        { name: 'Sub', theme: 'ui-theme-sub', color: 'ui-fill-dark-200' },
-        { name: 'Green', theme: 'ui-theme-green', color: 'ui-fill-dark-200' },
-        { name: 'Yellow', theme: 'ui-theme-yellow', color: 'ui-fill-dark-200' },
-        { name: 'Orange', theme: 'ui-theme-orange', color: 'ui-fill-dark-200' },
-        { name: 'Red', theme: 'ui-theme-red', color: 'ui-fill-dark-200' },
+        { name: 'Sub', theme: 'ui-theme-sub', color: 'ui-fill-dark-100' },
     ]
 
     return (

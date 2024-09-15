@@ -51,19 +51,24 @@ export default function PageNav() {
         { name: 'Weather', to: '/weather' },
     ]
 
+    const pageNavWidth = 250; // px
+    const headerHeight = 62; // px
+
     return (
-        <Grid.Col size={'200'} className='ui-border-r ui-border-light ui-hidden-md'>
-            <div className='ui-font-18 ui-m-15'>Docs</div>
-            <div className='ui-sidebar-add-r'>
-                <ul className='ui-list-unstyled ui-align-l ui-block-2nd ui-ease-2nd-btn'>
-                    {menuList.map((item: MenuListProps) => {
-                        return (
-                            <li key={item.name}>
-                                <Button noease size='sm' ghost={pathname === item.to ? false : true} to={item.to}>{item.name}</Button>
-                            </li>
-                        )
-                    })}
-                </ul>
+        <Grid.Col size={pageNavWidth} className='ui-border-r ui-border-light ui-hidden-md'>
+            <div className='ui-scroll ui-scrollbar-round ui-scrollbar-faded ui-set-fixed ui-set-v' style={{ width: `${pageNavWidth - 1}px`, top: `${headerHeight}px` }}>
+                <div className='ui-font-18 ui-m-15 ui-p-2-l'>Docs</div>
+                <div className='ui-sidebar-add-r'>
+                    <ul className='ui-list-unstyled ui-align-l ui-block-2nd ui-ease-2nd-btn'>
+                        {menuList.map((item: MenuListProps) => {
+                            return (
+                                <li key={item.name}>
+                                    <Button noease ghost={pathname === item.to ? false : true} to={item.to}>{item.name}</Button>
+                                </li>
+                            )
+                        })}
+                    </ul>
+            </div>
             </div>
         </Grid.Col>
     );

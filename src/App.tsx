@@ -73,7 +73,7 @@ export default function () {
                         </Grid.Col>
 
                         {/* logo */}
-                        <Grid.Col size={'200'} className='ui-p-15-l ui-p-5-v'>
+                        <Grid.Col size={'250'} className='ui-p-15-l ui-p-5-v'>
                             <Button nostyle to='/' title='UI Lab Home' className='ui-m-3-l'>
                                 <img className='ui-m-5-t' src={logo} alt='UI lab' srcSet={logoSrcSet} />
                             </Button>
@@ -159,7 +159,7 @@ export default function () {
                         <Button square ghost title='Close' className='ui-sidebar-close ui-circle'>
                             <Icon src={icon_angle_right} />
                         </Button>
-                        <div className='ui-font-16 ui-m-15-v ui-m-3-l'>Docs</div>
+                        <div className='ui-font-16 ui-m-15-v ui-m-4-l'>Docs</div>
                     </Sidebar.Title>
                     <Sidebar.Content className='ui-no-p ui-scroll-v' />
                 </Sidebar>
