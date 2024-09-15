@@ -9,9 +9,6 @@
 @scrollbar-scroll-bg:                   darken(@body-bg, 6%);
 @scrollbar-scroll-bg-dark:              lighten(@body-bg-dark, 8%);
 
-@scrollbar-scroll-faded-bg:             fade(@black, 4.5%);
-@scrollbar-scroll-faded-bg-dark:        fade(@white, 4.5%);
-
 @scrollbar-thumb-bg:                    fade(@black, 20%);
 @scrollbar-thumb-bg-dark:               fade(@white, 30%);
 
@@ -25,7 +22,6 @@
 
     ._global-vars () {
         --ui-scrollbar-scroll-bg: @scrollbar-scroll-bg;
-        --ui-scrollbar-scroll-fadedbg: @scrollbar-scroll-faded-bg;
 
         --ui-scrollbar-thumb-bg: @scrollbar-thumb-bg;
         --ui-scrollbar-thumb-hover-bg: @scrollbar-thumb-hover-bg;
@@ -33,7 +29,6 @@
     }
     ._global-vars-dark () {
         --ui-scrollbar-scroll-bg: @scrollbar-scroll-bg-dark;
-        --ui-scrollbar-scroll-faded-bg: @scrollbar-scroll-faded-bg-dark;
 
         --ui-scrollbar-thumb-bg: @scrollbar-thumb-bg-dark;
         --ui-scrollbar-thumb-hover-bg: @scrollbar-thumb-hover-bg-dark;
@@ -59,7 +54,7 @@
         ::-webkit-scrollbar { width: @scrollbar-size; height: @scrollbar-size; ._bg-var(scrollbar-scroll-bg); }
 
         .ui-scrollbar-faded {
-            &::-webkit-scrollbar { ._bg-var(scrollbar-scroll-faded-bg); }
+            &::-webkit-scrollbar { background-color: @no-color; }
         }
 
         body::-webkit-scrollbar { width: @page-scrollbar-size; height: @page-scrollbar-size; }
@@ -71,7 +66,7 @@
             &:active { ._bg-var(scrollbar-thumb-bg-active); }
         }
 
-        .ui-round {
+        .ui-round,.ui-scrollbar-round {
             &::-webkit-scrollbar,&::-webkit-scrollbar-thumb { border-radius: @round; }
         }
 
