@@ -62,7 +62,7 @@ ui.calendar = {
     stylesToday: '',
     stylesPickerDay: 'ui-theme-red ui-fill-dark-100',
 
-    stylesDetailScroll: 'ui-scrollbar-faded',
+    stylesDetailScroll: 'ui-scrollbar-faded ui-scrollbar-round',
 
     // icons
     prevIcon: 'arrow-left', // header's previous button
@@ -212,6 +212,7 @@ ui.calendar.Start = () => {
 
         // create table
         let html = '';
+
         let container = ui.find('.' + ui.calendar.nameContainer, that)[0];
 
         if (container === undefined) {
@@ -524,7 +525,14 @@ ui.calendar.Start = () => {
         const calendars = ui.find('.' + ui.calendar.target + ':not(.' + ui.calendar.nameActive + ')');
 
         if (calendars.length > 0) {
-            Array.prototype.forEach.call(calendars, el => { createFnc(el); });
+            Array.prototype.forEach.call(calendars, el => {
+
+                // remove opened panels first
+                let panel = ui.find('.' + ui.calendar.namePanel, el)[0];
+                if (panel) panel.remove();
+
+                createFnc(el);
+            });
         }
 
     };
@@ -588,7 +596,7 @@ ui.calendar.Start = () => {
             getAttr(that, date);
 
             // create panel
-            let html = '<div class="' + ui.calendar.namePanel + ' ' + ui.calendar.stylesPanel + '">' +
+            let html = '<div class="' + ui.calendar.namePanel + ' ' + ui.calendar.stylesDetailScroll + ' ' + ui.calendar.stylesPanel + '">' +
                         '<ul>';
 
             if (ui.hasClass(this, ui.calendar.nameYear)) { // years
@@ -691,7 +699,7 @@ ui.calendar.Start = () => {
             }
 
             setTimeout(() => {
-                that.removeChild(ui.find('.' + ui.calendar.namePanel, that)[0]);
+                ui.find('.' + ui.calendar.namePanel, that)[0].remove();
             }, ui.globals.slow);
 
         });
@@ -704,7 +712,7 @@ ui.calendar.Start = () => {
 
         function removePicker(form, picker) {
 
-            form.removeChild(picker);
+            picker.remove();
             ui.removeClass(form, ui.calendar.namePickerLeft + ' ' + ui.calendar.namePickerTop);
 
         }
