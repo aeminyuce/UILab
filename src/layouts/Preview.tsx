@@ -60,7 +60,6 @@ export default function Preview(
 
         return (
             <>
-            <h3 className='ui-h3'>Preview</h3>
             <div className='ui-align-r ui-md-align-c ui-p-5 ui-border-h ui-border-t ui-round-t'>
                 {actions.theme &&
                     <Dropdown align='l'>

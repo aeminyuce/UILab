@@ -16,10 +16,13 @@ export default function () {
     const { store } = useContext(StoreContext);
 
     const storedTheme = store?.calendar?.theme;
-    const storedStyle = store?.calendar?.style;
+    const theme = storedTheme ? ` ${storedTheme}` : '';
 
-    // theme colors
-    const themeColors = [
+    const storedStyle = store?.calendar?.style;
+    const style = storedStyle ? ` ${storedStyle}` : '';
+
+    // themes
+    const themes = [
         { name: 'Gray', theme: 'ui-theme-gray', color: 'ui-fill-dark-200' },
         { name: 'Jungle', theme: 'ui-theme-jungle', color: 'ui-fill-dark-100' },
         { name: 'Sea', theme: 'ui-theme-sea', color: 'ui-fill-dark-100' },
@@ -40,20 +43,17 @@ export default function () {
 
                             <p>The Calendar component lets users select a day, month, or year.</p>
 
-                            <h3 className='ui-h3'>Import</h3>
-                            <Code indSize={8} className='ui-round' value={`
+                            <Preview indSize={8} actions={{ theme: 'CALENDAR_THEME' }} themeColors={themes} value={`
                                 import * as React from 'react';
                                 import Calendar from '@components/Calendar';
-                            `} />
 
-                            <Preview indSize={8} actions={{ theme: 'CALENDAR_THEME' }} themeColors={themeColors} value={`
                                 export default function () {
                                     return (
-                                        <Calendar className='ui-round ui-shadow-lg${storedTheme ? ` ${storedTheme}` : ''}' />
+                                        <Calendar className='ui-round ui-shadow-lg${theme}' />
                                     );
                                 }
                             `}>
-                                <Calendar className={`ui-round ui-shadow-lg${storedTheme ? ` ${storedTheme}` : ''}`} />
+                                <Calendar className={`ui-round ui-shadow-lg${theme}`} />
                             </Preview>
 
                             <h3 className='ui-h3'>Javascript</h3>
