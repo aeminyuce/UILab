@@ -32,6 +32,27 @@ export default function () {
         { name: 'Pink', theme: 'ui-theme-pink', color: 'ui-fill-dark-100' },
     ]
 
+    // styles
+    const styles = {
+        basic: `
+            import * as React from 'react';
+            import Calendar from '@components/Calendar';
+            import { Calendar } from '@components/Calendar';
+            import { Calendar, Button } from '@components/Calendar';
+
+            import {
+                Calendar,
+                Button,
+            } from '@components/Calendar';
+
+            export default function () {
+                return (
+                    <Calendar className='ui-round ui-shadow-lg${theme}' />
+                );
+            }
+        `
+    }
+
     return (
         <Grid.Container as='div' noGutter='all'>
             <Grid.Static fluid='no'>
@@ -43,16 +64,7 @@ export default function () {
 
                             <p>The Calendar component lets users select a day, month, or year.</p>
 
-                            <Preview indSize={8} actions={{ theme: 'CALENDAR_THEME' }} themeColors={themes} value={`
-                                import * as React from 'react';
-                                import Calendar from '@components/Calendar';
-
-                                export default function () {
-                                    return (
-                                        <Calendar className='ui-round ui-shadow-lg${theme}' />
-                                    );
-                                }
-                            `}>
+                            <Preview indSize={3} actions={{ theme: 'CALENDAR_THEME' }} themes={themes} value={styles.basic}>
                                 <Calendar className={`ui-round ui-shadow-lg${theme}`} />
                             </Preview>
 

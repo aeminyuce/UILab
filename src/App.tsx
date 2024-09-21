@@ -73,7 +73,7 @@ export default function () {
                         </Grid.Col>
 
                         {/* logo */}
-                        <Grid.Col size={'250'} className='ui-p-15-l ui-p-5-v'>
+                        <Grid.Col size={'250'} sm={'150'} xs={'150'} className='ui-p-15-l ui-p-5-v'>
                             <Button nostyle to='/' title='UI Lab Home' className='ui-m-3-l'>
                                 <img className='ui-m-5-t' src={logo} alt='UI lab' srcSet={logoSrcSet} />
                             </Button>

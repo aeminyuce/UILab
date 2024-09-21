@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useContext, useState, useEffect } from 'react';
+import { useContext } from 'react';
 import Button from '@components/Button';
 import Dropdown from '@components/Dropdown';
 import Grid from '@components/Grid';
@@ -24,7 +24,7 @@ interface PreviewProps {
         theme?: string;
         style?: string;
     };
-    themeColors: ColorsProps[];
+    themes: ColorsProps[];
 
 }
 
@@ -38,25 +38,20 @@ interface ColorsProps {
 
 export default function Preview(
 
-    { children, value, indSize, actions, themeColors }:PreviewProps) {
+    { children, value, indSize, actions, themes }:PreviewProps) {
         const { store, setStore } = useContext(StoreContext);
 
         const storedTheme = store?.calendar?.theme;
         const storedStyle = store?.calendar?.style;
 
-        const [selectedColor, setSelectedColor] = useState('No');
-
-        useEffect(() => {
-
-            // update selected color when theme switches
-            if (themeColors) { themeColors.forEach((item: ColorsProps) => {
-                const theme = `${item.theme} ${item.color}`;
-                if (theme === storedTheme) setSelectedColor(item.name);
-            }); }
-
-        }, [storedTheme]);
-
         const switcherItemClasses = 'ui-cursor-default';
+
+        let selectedColor = '';
+
+        themes.forEach((item: ColorsProps) => { // update selected color when theme switches
+            const theme = `${item.theme} ${item.color}`;
+            if (theme === storedTheme) selectedColor = item.name;
+        });
 
         return (
             <>
@@ -73,7 +68,7 @@ export default function Preview(
                                 <ShowColor name='No' />
                             </Dropdown.Item>
 
-                            {themeColors && themeColors.map((item: ColorsProps) => {
+                            {themes.map((item: ColorsProps) => {
                                 const theme = `${item.theme} ${item.color}`
 
                                 return (
