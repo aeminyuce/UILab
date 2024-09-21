@@ -5,9 +5,13 @@ import Icon from '@components/Icon';
 
 // assets
 const icon_clone = require('@icon/clone.svg') as string;
+const icon_code = require('@icon/code.svg') as string;
+const icon_brackets = require('@icon/brackets.svg') as string;
+const icon_brackets_curly = require('@icon/brackets-curly.svg') as string;
 
 interface CodeProps {
 
+    type: 'react' | 'js' | 'css';
     indSize: number;
     value: string;
 
@@ -18,7 +22,7 @@ interface CodeProps {
 
 export default function Code(
 
-    { indSize, value, className, style }:CodeProps) {
+    { type, indSize, value, className, style }:CodeProps) {
 
         // clean up spaces
         const indent = 4; // default indentation
@@ -32,39 +36,62 @@ export default function Code(
         // split lines
         const codeLines = value.split('\n');
 
-        // colors
-        const colorHighlight = 'hsl(328, 100%, 80%)';
-
         // replacers
         const replacers = {
-            start: [
-                'import\\s\\*\\s+as',                                   // import * as
-                'import\\s\\{',                                         // import {
-                'import',                                               // import
+            react: {
+                start: [
+                    "import\\s\\*\\s+as",                                   // import * as
+                    "import\\s\\{",                                         // import {
+                    'import',                                               // import
 
-                '\\}\\s+from',                                          // } from '
-                '\\s*\\}|\\}',                                          // }
-                '\\s*\\)\\;|\\)\\;',                                    // );
+                    "\\}\\s+from",                                          // } from '
+                    "\\s*\\}|\\}",                                          // }
+                    "\\s*\\)\\;|\\)\\;",                                    // );
 
-                'export\\s+default\\s+function\\s\\(\\)\\s\{',          // export default function () {
-                '\\s*return\\s\\(|return\\s\\(',                        // return (
+                    "export\\s+default\\s+function\\s\\(\\)\\s\{",          // export default function () {
+                    "\\s*return\\s\\(|return\\s\\(",                        // return (
 
-                '\\s*\\<[\\w\\d\\_\\-]+',                               // <ComponentName
-            ],
+                    "\\s*\\<[\\w\\d\\_\\-]+",                               // <ComponentName
+                ],
 
-            middle: [
-                '\\s+from\\s',                                          // ComponentName from '
-                '\\s\\}\\s+from\\s',                                    // } from '
-            ],
+                middle: [
+                    "\\'[\\@\\w\\d\\_\\-\\/]+\\'",                          // '@alias/ComponentName'
+                    "\\s+from\\s",                                          // ComponentName from '
+                    "\\s\\}\\s+from\\s",                                    // } from '
+                ],
 
-            end: [
-                '\\/\\>',                                               // />
-            ],
+                end: [
+                    "\\/\\>",                                               // />
+                ],
+            }
+        }
+
+        // colors
+        const colorHighlight = 'hsl(328, 100%, 80%)';
+        const colorWhite = 'hsl(0, 0%, 100%)';
+
+        // token helpers
+        const regexFromArr = (arr: string[] | string) => new RegExp(`${arr.toString().replace(/\,/g, '|')}`, 'g');
+
+        const createSpans = (token: string[]) => {
+            let setColor = colorHighlight;
+
+            const spans = token.map((item: any, i: number) => {
+                if (regexFromArr(replacers[type].middle[0]).test(item)) setColor = colorWhite;
+
+                return (
+                    <span key={`token_${i}`} style={{ color: setColor }}>
+                        {item}
+                    </span>
+                )
+            });
+
+            return spans;
         }
 
         // tokens
         const middleTokens = (val: string) => {
-            const reMiddle = new RegExp(`${replacers.middle.toString().replace(/\,/g, '|')}`, 'g');
+            const reMiddle = regexFromArr(replacers[type].middle);
             const getMiddle = val.match(reMiddle);
 
             if (getMiddle) {
@@ -76,33 +103,33 @@ export default function Code(
                 return (
                     <>
                         {valArr[0]}
-                        <span style={{ color: colorHighlight }}>{getMiddle}</span>
-                        {valArr[1]}
+                        {createSpans(getMiddle)}
+                        {valArr[valArr.length - 1]}
                     </>
                 )
             } else return val;
         }
 
         const endTokens = (val: string) => {
-            const reEnd = new RegExp(`(${replacers.end.toString().replace(/\,/g, '|')})$`, 'g');
+            const reEnd = regexFromArr(replacers[type].end);
             const getEnd = val.match(reEnd);
 
             if (getEnd) return (
                 <>
                     {middleTokens(val.replace(reEnd, ''))}
-                    <span style={{ color: colorHighlight }}>{getEnd}</span>
+                    {createSpans(getEnd)}
                 </>
             )
             else return middleTokens(val);
         }
 
         const startTokens = (val: string) => {
-            const reStart = new RegExp(`^(${replacers.start.toString().replace(/\,/g, '|')})`, 'g');
+            const reStart = regexFromArr(replacers[type].start);
             const getStart = val.match(reStart);
 
             if (getStart) return (
                 <>
-                    <span style={{ color: colorHighlight }}>{getStart}</span>
+                    {createSpans(getStart)}
                     {endTokens(val.replace(reStart, ''))}
                 </>
             )
@@ -112,6 +139,13 @@ export default function Code(
         // classes
         const setClassName = className ? ` ${className}` : '';
         const classes = `ui-pre ui-ease-pre ui-set-relative${setClassName}`;
+
+        // title icons
+        const titleIcons = {
+            react: icon_code,
+            js: icon_brackets,
+            css: icon_brackets_curly,
+        }
 
         return (
             <pre className={classes} style={style}>
@@ -129,13 +163,18 @@ export default function Code(
                     </Button>
                 </div>
 
-                {codeLines.map((line: string, i: number) => {
+                <div className='ui-color-white-25 ui-p-15-b'>
+                    <Icon src={titleIcons[type]} size='sm' className='ui-color-white' />
+                    <span className='ui-m-5-l ui-inline-block'>{type}</span>
+                </div>
+
+                {codeLines.map((line: string, j: number) => {
                     if (line === '') { // empty lines
-                        return <br key={`line_${i}`} />;
+                        return <br key={`line_${j}`} />;
 
                     } else return ( // tokens
-                        <div key={`line_${i}`} className='ui-pre-line'>
-                            {startTokens(line)}
+                        <div key={`line_${j}`} className='ui-pre-line'>
+                            {replacers[type] ? startTokens(line) : line}
                         </div>
                     )
                 })}

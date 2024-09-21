@@ -64,14 +64,14 @@ export default function () {
 
                             <p>The Calendar component lets users select a day, month, or year.</p>
 
-                            <Preview indSize={3} actions={{ theme: 'CALENDAR_THEME' }} themes={themes} value={styles.basic}>
+                            <Preview indSize={3} actions={{ theme: 'CALENDAR_THEME' }} themes={themes} type='react' value={styles.basic}>
                                 <Calendar className={`ui-round ui-shadow-lg${theme}`} />
                             </Preview>
 
                             <h3 className='ui-h3'>Javascript</h3>
                             <p>You can change calendar component's global settings.</p>
 
-                            <Code indSize={8} className='ui-round' value={`
+                            <Code indSize={8} className='ui-round' type='js' value={`
                                 ui.globals.pickerSep = '/';
 
                                 ui.globals.days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
