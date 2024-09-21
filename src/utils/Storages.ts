@@ -25,9 +25,12 @@ export const getStorage = ({ name, jsonData }:GetStorageProps) => {
 
 	let getData = sessionStorage.getItem(window.btoa(name));
 
-	let data = decodeURI(window.atob(getData));
-	data = jsonData ? JSON.parse(data) : data;
+	if (getData) {
+		let data = decodeURI(window.atob(getData));
+		data = jsonData ? JSON.parse(data) : data;
 
-	return getData ? getData = data : null;
+		return data === 'null' ? null : data;
+
+	} else return null;
 
 }
