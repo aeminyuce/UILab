@@ -10,10 +10,13 @@
 
 @heading-icon-right:                    5px;
 @heading-auto-center:                   true;
+@heading-2nd-text-margin-top:           5px;
 
 @pre-color:                             hsl(200, 100%, 80%);
 @pre-bg:                                hsl(220, 8%, 22%);
-@pre-hover-bg:                          hsl(220, 8%, 24%);
+@pre-padding:                           15px;
+@pre-bg:                                hsl(220, 8%, 22%);
+@pre-line-hover-bg:                     hsl(220, 8%, 28%);
 @pre-max-height:                        350px;
 
 @code-color:                            @featured-color;
@@ -182,14 +185,17 @@
         &code { ._color-var(code-color); font-size: 90%; ._bg-var(code-bg); padding-right: @code-padding-h; padding-left: @code-padding-h; display: inline-block; border-radius: @code-radius; }
 
         &pre {
-            color: @pre-color; line-height: @line-height-readable; min-height: @btn-default; background-color: @pre-bg; padding: 10px !important; overflow-x: auto !important; overflow-y: auto !important; display: block; cursor: text;
+            color: @pre-color; line-height: @line-height-readable; min-height: @btn-default; background-color: @pre-bg; padding: @pre-padding !important; overflow-x: auto !important; overflow-y: auto !important; display: block; cursor: text;
 
             &:not(:last-child) { margin-bottom: @highlight-space; }
 
             &.ui-round { border-radius: (@round - (@round * 0.3333333333)); }
             &.ui-scroll-v { max-height: @pre-max-height; }
 
-            .ui-desktop &:hover { color: @white; background-color: @pre-hover-bg; }
+            &-line {
+                padding-right: @pre-padding; padding-left: @pre-padding; margin-right: -@pre-padding; margin-left: -@pre-padding;
+                &:hover { background-color: @pre-line-hover-bg; }
+            }
         }
     }
 
@@ -197,7 +203,7 @@
         .ui-{
             &h1,&h2,&h3,&h4,&h5,&h6 {
                 & when (@heading-auto-center = true) { text-align: center; }
-                & > span { margin-top: 5px; display: block; }
+                & > span:not(:first-child) { margin-top: @heading-2nd-text-margin-top; display: block; }
             }
         }
     }
