@@ -89,7 +89,6 @@ export default function Preview(
                     {children}
                 </Grid.Col>
             </Grid.Row>
-            <div className='ui-p-10 ui-border-h ui-border-t'>Usage</div>
             <Code indSize={indSize} className='ui-round-b' type={type} value={value} />
             </>
         )

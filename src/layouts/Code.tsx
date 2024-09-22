@@ -28,7 +28,7 @@ export default function Code(
         const indent = 4; // default indentation
 
         const reFirstSpace = new RegExp(`^\\s{${(((indSize * indent) + 1))}}`, 'g'); // remove first space
-        const reSpaces = new RegExp(`(?!\\n|\\r)\\s{${indSize * indent}}`, 'gm'); // remove spaces by specified tab size except new lines
+        const reSpaces = new RegExp(`^(?!\\n|\\r)\\s{${indSize * indent}}`, 'gm'); // remove spaces by specified tab size except new lines
         const reLastSpace = new RegExp(/\s+$/g); // remove last space
 
         value = value.replace(reFirstSpace, '').replace(reSpaces, '').replace(reLastSpace, '');
@@ -39,50 +39,107 @@ export default function Code(
         // replacers
         const replacers = {
             react: {
-                start: [
-                    "import\\s\\*\\s+as",                                   // import * as
-                    "import\\s\\{",                                         // import {
-                    'import',                                               // import
+                start: {
+                    importAs: "import\\s\\*\\s+as",                                             // import * as
+                    importCurly: "import\\s\\{",                                                // import {
+                    import: "import",                                                           // import
 
-                    "\\}\\s+from",                                          // } from '
-                    "\\s*\\}|\\}",                                          // }
-                    "\\s*\\)\\;|\\)\\;",                                    // );
+                    curlyFromQuot: "\\}\\s+from\\s",                                            // } from '
+                    curly: "\\s*\\}|\\}",                                                       // }
+                    bracketSemicol: "\\s*\\)\\;|\\)\\;",                                        // );
 
-                    "export\\s+default\\s+function\\s\\(\\)\\s\{",          // export default function () {
-                    "\\s*return\\s\\(|return\\s\\(",                        // return (
+                    expDefFunc: "export\\s+default\\s+function\\s\\(\\)\\s\{",                  // export default function () {
+                    returnBracket: "\\s*return\\s\\(|return\\s\\(",                             // return (
 
-                    "\\s*\\<[\\w\\d\\_\\-]+",                               // <ComponentName
-                ],
+                    compName: "\\s*\\<[^\\s]*|\\<[^\\s]*",                                      // <ComponentName
 
-                middle: [
-                    "\\'[\\@\\w\\d\\_\\-\\/]+\\'",                          // '@alias/ComponentName'
-                    "\\s+from\\s",                                          // ComponentName from '
-                    "\\s\\}\\s+from\\s",                                    // } from '
-                ],
+                    jsxComment: "\\s*\\{\\/\\*[^\\*]*\\*\\/}|\\{\\/\\*[^\\*]*\\*\\/}",          // {* comment *}
+                    jsComment: "\\//[^\\//\\n]*",                                               // // comment
+                },
+                middle: {
+                    aliasCompName: "\\'[^\\']*\\'",                                             // '@alias/ComponentName'
+                    compNameFromQuot: "\\s+from\\s",                                            // ComponentName from '
+                    curlyFromQuot: "\\s\\}\\s+from\\s",                                         // } from '
+                    classNameStr: "\\'[^\\']*\\'",                                              // className='string'
+                },
 
-                end: [
-                    "\\/\\>",                                               // />
-                ],
+                end: {
+                    closeTag: "\\/\\>",                                                         // />
+                    semicol: ";",                                                               // ;
+                },
+            },
+            js: {
+                start: {},
+                middle: {
+                    quotStrQuot: "\\'[^\\']*\\'",                                               // 'string'
+                    jsComment: "\\//[^\\//\\n]*",                                               // // comment
+                },
+                end: {},
+            },
+            css: {
+                start: {},
+                middle: {},
+                end: {},
             }
+        }
+
+        // token helpers
+        const reFromArr = (name: string, obj: {}) => {
+            let re = '';
+            Object.values(obj).forEach((item: string, i: number) => re += i === 0 ? item : `|${item}`);
+
+            let rex = null;
+            if (name === 'start') rex = new RegExp(`^(${re})`, 'g');
+            if (name === 'middle') rex = new RegExp(re, 'g');
+            if (name === 'end') rex = new RegExp(`(${re})$`, 'g');
+
+            return rex;
         }
 
         // colors
         const colorHighlight = 'hsl(328, 100%, 80%)';
         const colorWhite = 'hsl(0, 0%, 100%)';
+        const colorComment = 'hsla(0, 0%, 100%, 0.45)';
 
-        // token helpers
-        const regexFromArr = (arr: string[] | string) => new RegExp(`${arr.toString().replace(/\,/g, '|')}`, 'g');
+        const reFromStr = (str: string) => new RegExp(str, 'g');
 
-        const createSpans = (token: string[]) => {
+        const createSpans = (token: string[], noTokenArr?: string[]) => {
             let setColor = colorHighlight;
 
             const spans = token.map((item: any, i: number) => {
-                if (regexFromArr(replacers[type].middle[0]).test(item)) setColor = colorWhite;
+                let s = null;
+                let m = null;
+                let e = null;
+
+                if (type === 'react') { // react colors
+                    s = replacers.react.start;
+                    m = replacers.react.middle;
+
+                    if (reFromStr(s.jsxComment).test(item)) setColor = colorComment;
+                    if (reFromStr(s.jsComment).test(item)) setColor = colorComment;
+
+                    if (reFromStr(m.aliasCompName).test(item)) setColor = colorWhite;
+                    if (reFromStr(m.classNameStr).test(item)) setColor = colorWhite;
+                }
+
+                if (type === 'js') { // js colors
+                    m = replacers.js.middle;
+
+                    if (reFromStr(m.quotStrQuot).test(item)) setColor = colorWhite;
+                    if (reFromStr(m.jsComment).test(item)) setColor = colorComment;
+                }
+
+                if (type === 'css') { // css colors
+                }
 
                 return (
-                    <span key={`token_${i}`} style={{ color: setColor }}>
-                        {item}
-                    </span>
+                    <React.Fragment key={`token_${i}`}>
+                        {noTokenArr && i === 0 && noTokenArr[i]}
+                        <span style={{ color: setColor }}>
+                            {item}
+                        </span>
+                        {noTokenArr && noTokenArr[i + 1]}
+                    </React.Fragment>
                 )
             });
 
@@ -91,7 +148,7 @@ export default function Code(
 
         // tokens
         const middleTokens = (val: string) => {
-            const reMiddle = regexFromArr(replacers[type].middle);
+            const reMiddle = reFromArr('middle', replacers[type].middle);
             const getMiddle = val.match(reMiddle);
 
             if (getMiddle) {
@@ -100,18 +157,12 @@ export default function Code(
                 val = val.replace(reMiddle, splitter);
                 const valArr = val.split(splitter);
 
-                return (
-                    <>
-                        {valArr[0]}
-                        {createSpans(getMiddle)}
-                        {valArr[valArr.length - 1]}
-                    </>
-                )
+                return createSpans(getMiddle, valArr);
             } else return val;
         }
 
         const endTokens = (val: string) => {
-            const reEnd = regexFromArr(replacers[type].end);
+            const reEnd = reFromArr('end', replacers[type].end);
             const getEnd = val.match(reEnd);
 
             if (getEnd) return (
@@ -124,7 +175,7 @@ export default function Code(
         }
 
         const startTokens = (val: string) => {
-            const reStart = regexFromArr(replacers[type].start);
+            const reStart = reFromArr('start', replacers[type].start);
             const getStart = val.match(reStart);
 
             if (getStart) return (
@@ -141,10 +192,10 @@ export default function Code(
         const classes = `ui-pre ui-ease-pre ui-set-relative${setClassName}`;
 
         // title icons
-        const titleIcons = {
-            react: icon_code,
-            js: icon_brackets,
-            css: icon_brackets_curly,
+        const titles = {
+            react: { name: 'React TSX', icon: icon_code },
+            js: { name: 'Javascript', icon: icon_brackets },
+            css: { name: 'CSS', icon: icon_brackets_curly },
         }
 
         return (
@@ -164,8 +215,8 @@ export default function Code(
                 </div>
 
                 <div className='ui-color-white-25 ui-p-15-b'>
-                    <Icon src={titleIcons[type]} size='sm' className='ui-color-white' />
-                    <span className='ui-m-5-l ui-inline-block'>{type}</span>
+                    <Icon src={titles[type].icon} size='sm' className='ui-color-white' />
+                    <span className='ui-m-5-l ui-inline-block'>{titles[type].name}</span>
                 </div>
 
                 {codeLines.map((line: string, j: number) => {

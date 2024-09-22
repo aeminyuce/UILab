@@ -45,8 +45,10 @@ export default function () {
                 Button,
             } from '@components/Calendar';
 
+            // js comment
             export default function () {
                 return (
+                    {/* jsx comment */}
                     <Calendar className='ui-round ui-shadow-lg${theme}' />
                 );
             }
@@ -68,19 +70,20 @@ export default function () {
                                 <Calendar className={`ui-round ui-shadow-lg${theme}`} />
                             </Preview>
 
-                            <h3 className='ui-h3'>Javascript</h3>
+                            <h3 className='ui-h3'>Globals</h3>
                             <p>You can change calendar component's global settings.</p>
 
                             <Code indSize={8} className='ui-round' type='js' value={`
                                 ui.globals.pickerSep = '/';
 
+                                // js comment
                                 ui.globals.days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
                                 ui.globals.months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-                                ui.globals.dateFormat = 1;               // 0: dd mm yyyy, 1: mm dd yyyy
-                                ui.globals.startDayofWeek = 1;           // 0: Sunday, 1: Monday
+                                ui.globals.dateFormat = 1;                                              // 0: dd mm yyyy, 1: mm dd yyyy
+                                ui.globals.startDayofWeek = 1;                                          // 0: Sunday, 1: Monday
 
-                                ui.globals.fillWeekends = true;          // true: fills dark color to weekends' background
+                                ui.globals.fillWeekends = true;                                         // true: fills dark color to weekends' background
 
                                 ui.globals.calendarPadding = 5;
                                 ui.globals.scrollbarSize = 15;
