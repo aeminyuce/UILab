@@ -2,8 +2,8 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
-// imports
-import { CurrencySpinnerProps, CurrencyFormProps } from './_Models';
+// utils
+import { CurrencySpinnerProps, CurrencyFormProps } from './utils/models';
 
 // assets
 import '../js/modules/currency-spinner';

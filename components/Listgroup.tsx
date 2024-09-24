@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-// imports
-import { ListgroupProps, ListgroupListProps, ListgroupItemProps } from './_Models';
+// utils
+import { ListgroupProps, ListgroupListProps, ListgroupItemProps } from './utils/models';
 
 // assets
 import '../less/modules/listgroup';

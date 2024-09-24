@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-// imports
-import { CardProps } from './_Models';
+// utils
+import { CardProps } from './utils/models';
 
 // assets
 import '../less/modules/card';

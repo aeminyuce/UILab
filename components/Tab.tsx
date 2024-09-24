@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-// imports
-import { TabHolderProps, TabContentProps } from './_Models';
+// utils
+import { TabHolderProps, TabContentProps } from './utils/models';
 
 // assets
 import '../less/modules/tab';

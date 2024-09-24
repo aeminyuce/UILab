@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-// imports
-import { TableProps, TableScrollProps, TableFluidProps } from './_Models';
+// utils
+import { TableProps, TableScrollProps, TableFluidProps } from './utils/models';
 
 // assets
 import '../less/modules/tables';

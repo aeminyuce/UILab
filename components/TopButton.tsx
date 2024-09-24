@@ -2,8 +2,8 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
-// imports
-import { icon_arrow_to_top } from './_Assets';
+// utils
+import { icon_arrow_to_top } from './utils/assets';
 
 // assets
 import '../less/modules/top-button';

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
-// imports
-import { ButtonProps, ButtonWrapperProps } from './_Models';
+// utils
+import { ButtonProps, ButtonWrapperProps } from './utils/models';
 
 // assets
 import '../less/modules/buttons';

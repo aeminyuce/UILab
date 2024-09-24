@@ -2,8 +2,8 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
-// imports
-import { MapProps } from './_Models';
+// utils
+import { MapProps } from './utils/models';
 
 // assets
 import '../less/modules/map';

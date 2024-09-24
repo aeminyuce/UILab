@@ -2,11 +2,11 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
-// imports
+// utils
 import Icon from './Icon';
 import Form from './Form';
-import { icon_arrow_left, icon_arrow_right, icon_angle_left, icon_calendar } from './_Assets';
-import { CalendarProps, CalendarPickerProps } from './_Models';
+import { icon_arrow_left, icon_arrow_right, icon_angle_left, icon_calendar } from './utils/assets';
+import { CalendarProps, CalendarPickerProps } from './utils/models';
 
 // assets
 import '../less/modules/calendar';

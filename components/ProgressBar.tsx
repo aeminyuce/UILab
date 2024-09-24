@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-// imports
-import { ProgressBarProps, ProgressBarItemProps } from './_Models';
+// utils
+import { ProgressBarProps, ProgressBarItemProps } from './utils/models';
 
 // assets
 import '../less/modules/progress-bar';

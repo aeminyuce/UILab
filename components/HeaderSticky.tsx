@@ -2,8 +2,8 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
-// imports
-import { HeaderStickyProps } from './_Models';
+// utils
+import { HeaderStickyProps } from './utils/models';
 
 // assets
 import '../less/modules/header-sticky';

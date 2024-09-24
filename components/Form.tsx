@@ -2,13 +2,13 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
-// imports
+// utils
 import Button from './Button';
 import Icon from './Icon';
-import { FormLabelProps, FormInputProps, FormFileProps, FormTextareaProps, FormSelectProps, FormCheckProps, FormRequiredMessageProps, FormHintProps } from './_Models';
+import { FormLabelProps, FormInputProps, FormFileProps, FormTextareaProps, FormSelectProps, FormCheckProps, FormRequiredMessageProps, FormHintProps } from './utils/models';
 
-// imports
-import { icon_angle_down, icon_plus } from './_Assets';
+// utils
+import { icon_angle_down, icon_plus } from './utils/assets';
 
 // assets
 import '../less/modules/autocomplete';

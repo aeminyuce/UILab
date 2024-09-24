@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-// imports
-import { AvatarProps } from './_Models';
+// utils
+import { AvatarProps } from './utils/models';
 
 // assets
 import '../less/modules/avatars';

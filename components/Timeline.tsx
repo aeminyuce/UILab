@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-// imports
-import { TimelineProps, TimelineItemProps } from './_Models';
+// utils
+import { TimelineProps, TimelineItemProps } from './utils/models';
 
 // assets
 import '../less/modules/timeline';

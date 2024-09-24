@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-// imports
-import { IconProps } from './_Models';
+// utils
+import { IconProps } from './utils/models';
 
 // assets
 import '../less/modules/icons';

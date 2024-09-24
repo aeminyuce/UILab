@@ -2,8 +2,8 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
-// imports
-import { DonutChartHolderProps, DonutChartItemProps } from './_Models';
+// utils
+import { DonutChartHolderProps, DonutChartItemProps } from './utils/models';
 
 // assets
 import '../less/modules/donut-chart';

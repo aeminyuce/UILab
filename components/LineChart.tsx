@@ -2,8 +2,8 @@ import * as React from 'react';
 import { useEffect, Fragment } from 'react';
 import { ui } from '../js/core/globals';
 
-// imports
-import { LineChartHolderProps, LineChartLineProps, LineChartItemsProps } from './_Models';
+// utils
+import { LineChartHolderProps, LineChartLineProps, LineChartItemsProps } from './utils/models';
 
 // assets
 import '../less/modules/line-chart';

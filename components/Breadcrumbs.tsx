@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
-// imports
-import { BreadcrumbsProps, BreadcrumbsItemProps } from './_Models';
+// utils
+import { BreadcrumbsProps, BreadcrumbsItemProps } from './utils/models';
 
 // assets
 import '../less/modules/breadcrumbs';

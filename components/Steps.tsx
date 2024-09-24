@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-// imports
-import { StepsProps, StepsItemProps } from './_Models';
+// utils
+import { StepsProps, StepsItemProps } from './utils/models';
 
 // assets
 import '../less/modules/steps';

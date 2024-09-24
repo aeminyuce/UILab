@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-// imports
-import { SpacerProps } from './_Models';
+// utils
+import { SpacerProps } from './utils/models';
 
 export default function Spacer(
 

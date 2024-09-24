@@ -2,8 +2,8 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
-// imports
-import { GridContainerProps, GridRowProps, GridColProps, GridStaticProps } from './_Models';
+// utils
+import { GridContainerProps, GridRowProps, GridColProps, GridStaticProps } from './utils/models';
 
 // assets
 import '../less/modules/grid';

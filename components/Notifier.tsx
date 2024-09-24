@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-// imports
-import { NotifierProps } from './_Models';
+// utils
+import { NotifierProps } from './utils/models';
 
 // assets
 import '../less/modules/notifier';

@@ -2,8 +2,8 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
-// imports
-import { CarouselProps, CrouselSliderProps, CrouselContentProps, CrouselNavProps, CrouselDotsProps } from './_Models';
+// utils
+import { CarouselProps, CrouselSliderProps, CrouselContentProps, CrouselNavProps, CrouselDotsProps } from './utils/models';
 
 // assets
 import '../less/modules/carousel';

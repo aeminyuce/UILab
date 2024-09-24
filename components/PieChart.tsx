@@ -2,8 +2,8 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
-// imports
-import { PieChartHolderProps, PieChartItemProps } from './_Models';
+// utils
+import { PieChartHolderProps, PieChartItemProps } from './utils/models';
 
 // assets
 import '../less/modules/pie-chart';
