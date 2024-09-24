@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Fragment } from 'react';
 import Alerts from '@components/Alerts';
 import Button from '@components/Button';
 import Icon from '@components/Icon';
@@ -133,13 +134,13 @@ export default function Code(
                 }
 
                 return (
-                    <React.Fragment key={`token_${i}`}>
+                    <Fragment key={`token_${i}`}>
                         {noTokenArr && i === 0 && noTokenArr[i]}
                         <span style={{ color: setColor }}>
                             {item}
                         </span>
                         {noTokenArr && noTokenArr[i + 1]}
-                    </React.Fragment>
+                    </Fragment>
                 )
             });
 

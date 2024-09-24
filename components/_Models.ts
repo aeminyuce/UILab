@@ -1,3 +1,5 @@
+import { ReactNode, ReactEventHandler } from 'react';
+
 const gridSizes = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
 // Alerts
@@ -29,11 +31,11 @@ export interface AlertsMessageProps {
 // Avatar
 export interface AvatarProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
-    onClick?: React.ReactEventHandler;
-    onMouseDown?: React.ReactEventHandler;
-    onMouseUp?: React.ReactEventHandler;
+    onClick?: ReactEventHandler;
+    onMouseDown?: ReactEventHandler;
+    onMouseUp?: ReactEventHandler;
 
     size?: 'lg' | 'sm' | 'xs';
     title?: string;
@@ -47,7 +49,7 @@ export interface AvatarProps {
 // Breadcrumbs
 export interface BreadcrumbsProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     className?: string;
     style?: any;
@@ -56,7 +58,7 @@ export interface BreadcrumbsProps {
 
 export interface BreadcrumbsItemProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     to?: string;
 
@@ -69,13 +71,13 @@ export interface BreadcrumbsItemProps {
 // Buttons
 export interface ButtonProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     as?: 'div' | 'span';
 
-    onClick?: React.ReactEventHandler;
-    onMouseDown?: React.ReactEventHandler;
-    onMouseUp?: React.ReactEventHandler;
+    onClick?: ReactEventHandler;
+    onMouseDown?: ReactEventHandler;
+    onMouseUp?: ReactEventHandler;
 
     value?: any;
     disabled?: boolean;
@@ -114,7 +116,7 @@ export interface ButtonProps {
 
 export interface ButtonWrapperProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
     as?: 'holder' | 'list';
 
     ease: '1st' | '2nd';
@@ -136,9 +138,9 @@ export interface CalendarProps {
 
 export interface CalendarPickerProps {
 
-    onChange?: React.ReactEventHandler;
-    onInput?: React.ReactEventHandler;
-    onBlur?: React.ReactEventHandler;
+    onChange?: ReactEventHandler;
+    onInput?: ReactEventHandler;
+    onBlur?: ReactEventHandler;
 
     name?: string;
     tabIndex?: number;
@@ -165,7 +167,7 @@ export interface CalendarPickerProps {
 // Card
 export interface CardProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     as?: 'div' | 'span';
     type?: 'info' | 'success' | 'warning' | 'danger';
@@ -180,7 +182,7 @@ export interface CardProps {
 // Carousel
 export interface CarouselProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     col?: typeof gridSizes;
 
@@ -198,7 +200,7 @@ export interface CarouselProps {
 
 export interface CrouselSliderProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     className?: string;
     style?: any;
@@ -207,7 +209,7 @@ export interface CrouselSliderProps {
 
 export interface CrouselContentProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     animate?: number;
 
@@ -218,7 +220,7 @@ export interface CrouselContentProps {
 
 export interface CrouselNavProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     className?: string;
     style?: any;
@@ -227,7 +229,7 @@ export interface CrouselNavProps {
 
 export interface CrouselDotsProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     className?: string;
     style?: any;
@@ -237,7 +239,7 @@ export interface CrouselDotsProps {
 // Currency
 export interface CurrencySpinnerProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     className?: string;
     style?: any;
@@ -246,11 +248,11 @@ export interface CurrencySpinnerProps {
 
 export interface CurrencyFormProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
-    onChange?: React.ReactEventHandler;
-    onInput?: React.ReactEventHandler;
-    onBlur?: React.ReactEventHandler;
+    onChange?: ReactEventHandler;
+    onInput?: ReactEventHandler;
+    onBlur?: ReactEventHandler;
 
     name?: string;
     tabIndex?: number;
@@ -286,7 +288,7 @@ export interface CurrencyFormProps {
 // Donut Chart
 export interface DonutChartHolderProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     msg?: string;
 
@@ -307,7 +309,7 @@ export interface DonutChartItemProps {
 // Dropdown
 export interface DropdownProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     hover?: boolean;
     block?: boolean;
@@ -322,7 +324,7 @@ export interface DropdownProps {
 
 export interface DropdownMenuProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     as?: 'div' | 'span';
 
@@ -335,11 +337,11 @@ export interface DropdownMenuProps {
 
 export interface DropdownItemProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
-    onClick?: React.ReactEventHandler;
-    onMouseDown?: React.ReactEventHandler;
-    onMouseUp?: React.ReactEventHandler;
+    onClick?: ReactEventHandler;
+    onMouseDown?: ReactEventHandler;
+    onMouseUp?: ReactEventHandler;
 
     selected?: boolean;
 
@@ -351,7 +353,7 @@ export interface DropdownItemProps {
 // Form
 export interface FormLabelProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     noease?: boolean;
 
@@ -362,11 +364,11 @@ export interface FormLabelProps {
 
 export interface FormInputProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
-    onChange?: React.ReactEventHandler;
-    onInput?: React.ReactEventHandler;
-    onBlur?: React.ReactEventHandler;
+    onChange?: ReactEventHandler;
+    onInput?: ReactEventHandler;
+    onBlur?: ReactEventHandler;
 
     type?: 'text' | 'password' | 'date' | 'datetime-local' | 'month' | 'week' | 'email' | 'tel' | 'time';
     name?: string;
@@ -407,9 +409,9 @@ export interface FormInputProps {
 
 export interface FormFileProps {
 
-    onChange?: React.ReactEventHandler;
-    onInput?: React.ReactEventHandler;
-    onBlur?: React.ReactEventHandler;
+    onChange?: ReactEventHandler;
+    onInput?: ReactEventHandler;
+    onBlur?: ReactEventHandler;
 
     as: 'input' | 'button';
 
@@ -441,8 +443,8 @@ export interface FormFileProps {
 
 export interface FormTextareaProps {
 
-    onChange?: React.ReactEventHandler;
-    onInput?: React.ReactEventHandler;
+    onChange?: ReactEventHandler;
+    onInput?: ReactEventHandler;
 
     rows?: number;
     cols?: number;
@@ -474,10 +476,10 @@ export interface FormTextareaProps {
 
 export interface FormSelectProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
-    onChange?: React.ReactEventHandler;
-    onInput?: React.ReactEventHandler;
+    onChange?: ReactEventHandler;
+    onInput?: ReactEventHandler;
 
     title?: string;
     name?: string;
@@ -505,7 +507,7 @@ export interface FormCheckProps {
     type?: 'check' | 'radio' | 'switch';
     label?: any;
 
-    onChange?: React.ReactEventHandler;
+    onChange?: ReactEventHandler;
 
     id?: any;
     name?: string;
@@ -528,7 +530,7 @@ export interface FormCheckProps {
 
 export interface FormRequiredMessageProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     myRef?: any;
 
@@ -539,7 +541,7 @@ export interface FormRequiredMessageProps {
 
 export interface FormHintProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     myRef?: any;
     theme?: 'warning' | 'error';
@@ -552,7 +554,7 @@ export interface FormHintProps {
 // Grid
 export interface GridContainerProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     as: 'div' | 'header' | 'main' | 'footer';
 
@@ -567,7 +569,7 @@ export interface GridContainerProps {
 
 export interface GridRowProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     as?: 'span' | 'dl';
 
@@ -588,7 +590,7 @@ export interface GridRowProps {
 
 export interface GridColProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     as?: 'span' | 'dt' | 'dd';
 
@@ -628,7 +630,7 @@ export interface GridColProps {
 
 export interface GridStaticProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     as?: 'span';
 
@@ -642,7 +644,7 @@ export interface GridStaticProps {
 // Header Sticky
 export interface HeaderStickyProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     className?: string;
     dataClasses?: string;
@@ -671,7 +673,7 @@ export interface IconProps {
 // Line Chart
 export interface LineChartHolderProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     x: string[];
     step?: number;
@@ -698,7 +700,7 @@ export interface LineChartHolderProps {
 
 export interface LineChartLineProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     name?: string;
     noSelected?: boolean;
@@ -725,7 +727,7 @@ export interface LineChartItemsProps {
 // List Group
 export interface ListgroupProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     className?: string;
     style?: any;
@@ -734,7 +736,7 @@ export interface ListgroupProps {
 
 export interface ListgroupListProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     iconSize?: 'xxl' | 'xl' | 'lg' | 'sm' | 'xs';
     avatarSize?: 'lg' | 'default' | 'sm' | 'xs';
@@ -746,11 +748,11 @@ export interface ListgroupListProps {
 
 export interface ListgroupItemProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
-    onClick?: React.ReactEventHandler;
-    onMouseDown?: React.ReactEventHandler;
-    onMouseUp?: React.ReactEventHandler;
+    onClick?: ReactEventHandler;
+    onMouseDown?: ReactEventHandler;
+    onMouseUp?: ReactEventHandler;
 
     className?: string;
     style?: any;
@@ -771,7 +773,7 @@ export interface MapProps {
 // Modal
 export interface ModalProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     as: 'div' | 'span';
 
@@ -783,7 +785,7 @@ export interface ModalProps {
 
 export interface ModalHeaderProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     id?: any;
     className?: string;
@@ -793,7 +795,7 @@ export interface ModalHeaderProps {
 
 export interface ModalTitleProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     id?: any;
     className?: string;
@@ -803,7 +805,7 @@ export interface ModalTitleProps {
 
 export interface ModalButtonsProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     id?: any;
     className?: string;
@@ -813,7 +815,7 @@ export interface ModalButtonsProps {
 
 export interface ModalContainerProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     id?: any;
     className?: string;
@@ -823,7 +825,7 @@ export interface ModalContainerProps {
 
 export interface ModalFooterProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     id?: any;
     className?: string;
@@ -850,7 +852,7 @@ export interface ModalOpenProps {
 // Notifier
 export interface NotifierProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     lg?: boolean;
 
@@ -863,7 +865,7 @@ export interface NotifierProps {
 // Pie Chart
 export interface PieChartHolderProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     info?: string;
 
@@ -885,7 +887,7 @@ export interface PieChartItemProps {
 // Progress Bar
 export interface ProgressBarProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     size?: 'xxl' | 'xl' | 'lg' | 'sm';
 
@@ -909,7 +911,7 @@ export interface ProgressBarItemProps {
 // Sidebar
 export interface SidebarProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     pos: 'l' | 'r';
 
@@ -920,7 +922,7 @@ export interface SidebarProps {
 
 export interface SidebarTitleProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     className?: string;
     style?: any;
@@ -929,7 +931,7 @@ export interface SidebarTitleProps {
 
 export interface SidebarContentProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     className?: string;
     style?: any;
@@ -949,7 +951,7 @@ export interface SpacerProps {
 // Steps
 export interface StepsProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     hasInfo?: boolean;
     hasIcon?: boolean;
@@ -961,9 +963,9 @@ export interface StepsProps {
 
 export interface StepsItemProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
-    onClick?: React.ReactEventHandler;
+    onClick?: ReactEventHandler;
 
     active?: boolean;
 
@@ -978,7 +980,7 @@ export interface StepsItemProps {
 // Tab
 export interface TabHolderProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     accordion?: boolean;
     noease?: boolean;
@@ -991,7 +993,7 @@ export interface TabHolderProps {
 
 export interface TabContentProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     open?: boolean;
 
@@ -1003,7 +1005,7 @@ export interface TabContentProps {
 // Table
 export interface TableProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     bottomCaption?: boolean;
     condensed?: boolean;
@@ -1023,7 +1025,7 @@ export interface TableProps {
 
 export interface TableScrollProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     className?: string;
     style?: any;
@@ -1032,7 +1034,7 @@ export interface TableScrollProps {
 
 export interface TableFluidProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     className?: string;
     style?: any;
@@ -1042,7 +1044,7 @@ export interface TableFluidProps {
 // Timeline
 export interface TimelineProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
     left?: boolean;
     hide?: 'lines' | 'h-lines';
@@ -1054,9 +1056,9 @@ export interface TimelineProps {
 
 export interface TimelineItemProps {
 
-    children?: React.ReactNode;
+    children?: ReactNode;
 
-    onClick?: React.ReactEventHandler;
+    onClick?: ReactEventHandler;
 
     align?: 'l' | 'r';
 

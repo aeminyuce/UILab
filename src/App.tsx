@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Fragment } from 'react';
 import { useLocation } from 'react-router-dom';
 import Button from '@components/Button';
 import Icon from '@components/Icon';
@@ -90,12 +91,12 @@ export default function () {
                                             const path = item.to.replace(/\//g, '');
 
                                             return (
-                                                <React.Fragment key={item.name}>
+                                                <Fragment key={item.name}>
                                                     <Button ghost={pathname === `/${path}` ? false : true} to={item.to} className='ui-m-2-r ui-round'>
                                                         {item.name}
                                                     </Button>
                                                     <Spacer size={2} className='ui-visible-md' />
-                                                </React.Fragment>
+                                                </Fragment>
                                             )
                                         })}
                                     </span>

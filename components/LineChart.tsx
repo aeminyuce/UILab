@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useEffect } from 'react';
+import { useEffect, Fragment } from 'react';
 import { ui } from '../js/core/globals';
 
 // imports
@@ -99,9 +99,9 @@ const LineChartItems = function (
             <>
             {y.map((value: any) => {
                 return (
-                    <React.Fragment key={value.toString()}>
+                    <Fragment key={value.toString()}>
                         <li data-ui-y={value} data-ui-url={url}></li>
-                    </React.Fragment>
+                    </Fragment>
                 )
             })}
             </>

@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { useReducer } from 'react';
+import { useReducer, ReactNode } from 'react';
 
 // utils
 import { StoreContext, StoreReducer, StoreInitials } from '@utils/StoreReducer';
 
 interface StoreProviderProps {
-    children: React.ReactNode;
+    children: ReactNode;
 }
 
 export default function StoreProvider(

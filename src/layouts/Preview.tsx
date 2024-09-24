@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useContext } from 'react';
+import { useContext, ReactNode } from 'react';
 import Button from '@components/Button';
 import Dropdown from '@components/Dropdown';
 import Grid from '@components/Grid';
@@ -16,7 +16,7 @@ const icon_angle_down = require('@icon/angle-down.svg') as string;
 
 interface PreviewProps {
 
-    children?: React.ReactNode,
+    children?: ReactNode,
 
     type: 'react' | 'js' | 'css';
     value: string;

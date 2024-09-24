@@ -1,9 +1,10 @@
 import * as React from 'react';
+import { ReactNode } from 'react';
 
 interface PageTitleProps {
 
     title: string;
-    children: React.ReactNode;
+    children: ReactNode;
 
 }
 
