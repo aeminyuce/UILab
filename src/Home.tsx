@@ -4,11 +4,9 @@ import Grid from '@components/Grid';
 import Spacer from '@components/Spacer';
 
 interface ExamplesProps {
-
     name: string;
     to: string;
     img: string;
-
 }
 
 export default function () {

@@ -4,11 +4,9 @@ import Button from '@components/Button';
 import Grid from '@components/Grid';
 
 interface MenuListProps {
-
     name: string;
     to: string;
     sep: boolean;
-
 }
 
 export default function PageNav() {

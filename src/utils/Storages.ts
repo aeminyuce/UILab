@@ -1,17 +1,12 @@
 interface SetStorageProps {
-
 	name: string;
 	value: any;
-
 	jsonData?: boolean;
-
 }
 
 interface GetStorageProps {
-
 	name: string;
 	jsonData?: boolean;
-
 }
 
 export const setStorage = ({ name, value, jsonData }:SetStorageProps) => {

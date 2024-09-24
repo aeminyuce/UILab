@@ -15,27 +15,21 @@ import { StoreContext } from '@utils/StoreReducer';
 const icon_angle_down = require('@icon/angle-down.svg') as string;
 
 interface PreviewProps {
-
     children?: ReactNode,
-
     type: 'react' | 'js' | 'css';
     value: string;
     indSize: number;
-
     actions: {
         theme?: string;
         style?: string;
     };
     themes: ColorsProps[];
-
 }
 
 interface ColorsProps {
-
     name: string;
     theme: string;
     color: string;
-
 }
 
 export default function Preview(
@@ -95,10 +89,8 @@ export default function Preview(
     }
 
 interface ShowColorProps {
-
     name: string;
     theme?: string;
-
 }
 
 const ShowColor = ({ name, theme }:ShowColorProps) => {

@@ -2,10 +2,8 @@ import * as React from 'react';
 import { ReactNode } from 'react';
 
 interface PageTitleProps {
-
     title: string;
     children: ReactNode;
-
 }
 
 export default function PageTitle(

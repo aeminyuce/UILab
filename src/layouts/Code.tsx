@@ -11,14 +11,11 @@ const icon_brackets = require('@icon/brackets.svg') as string;
 const icon_brackets_curly = require('@icon/brackets-curly.svg') as string;
 
 interface CodeProps {
-
     type: 'react' | 'js' | 'css';
     indSize: number;
     value: string;
-
     className?: string;
     style?: any;
-
 }
 
 export default function Code(

@@ -13,19 +13,14 @@ interface ReducerStateProps {
 }
 
 interface ComponentProps {
-
 	theme: string;
 	style: string;
-
 }
 
 interface ReducerActionProps {
-
     type: string;
-
     theme?: string;
     style?: string;
-
 }
 
 const themes = {

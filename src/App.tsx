@@ -23,18 +23,14 @@ const icon_angle_left = require('@icon/angle-left.svg') as string;
 const icon_angle_right = require('@icon/angle-right.svg') as string;
 
 interface HeaderLinksProps {
-
     name: string;
     to: string;
-
 }
 
 interface SocialLinksProps {
-
     title: string;
     url: string;
     icon: string;
-
 }
 
 export default function () {
