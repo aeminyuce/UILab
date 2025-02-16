@@ -31,7 +31,7 @@ npm i -D style-loader ts-loader css-loader less-loader svg-url-loader
 ```
 **Icons**
 ```
-npm i -D svgo
+npm i -D svgo svgstore-cli
 ```
 **Test**
 ```

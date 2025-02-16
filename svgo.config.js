@@ -27,7 +27,7 @@ module.exports = { // https://github.com/svg/svgo
         'inlineStyles',
         'minifyStyles',
         'removeUnknownsAndDefaults',
-        'cleanupIDs',
+        'cleanupIds',
         'removeStyleElement',
         'removeUselessDefs',
         'convertColors',
