@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
 
 // layouts
@@ -15,8 +15,14 @@ import App from './App';
 const root = createRoot(document.getElementById('app'));
 root.render(
     <StoreProvider>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
+        {process.env.NODE_ENV === 'production' ?
+            <HashRouter>
+                <App />
+            </HashRouter>
+            :
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
+        }
     </StoreProvider>
 );
