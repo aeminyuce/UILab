@@ -19,11 +19,11 @@ const getArgs = () =>
 const args = getArgs();
 
 // code template
-const generateCode = (data) => `
+const generateCode = (name, data) => `
     'use strict';
     var  React = require('react');
 
-    var Abacus = function (props) {
+    var ${name} = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -31,7 +31,7 @@ const generateCode = (data) => `
         );
     }
 
-    module.exports = Abacus;
+    module.exports = ${name};
 `;
 
 // get svg path
@@ -50,19 +50,19 @@ fs.readdir(directoryPath, (err, files) => {
 
     // read SVG files
     files.forEach((fileName) => {
-        const iconPath = path.join(__dirname, `./icon/${fileName}`);
+        const iconPath = `${directoryPath}\\${fileName}`;
 
         fs.readFile(iconPath, {encoding: 'utf-8'}, (err, data) => {
             if (!err) {
 
                 // create JS files
-                const code = generateCode(getPath(data));
                 const name = `${fileName.split('.')[0]}.js`;
+                const code = generateCode(name, getPath(data));
 
                 const outputPath = path.join(__dirname, args.dest, name); // destination folder name
                 fs.writeFile(outputPath, code, (e) => {
                     if (e) throw e;
-                    console.log(`${name} created in icons folder!`);
+                    console.log(`${name} created in ${outputPath} folder!`);
                 });
 
             } else throw err;
