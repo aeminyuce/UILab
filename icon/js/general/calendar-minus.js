@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var calendar-minus.js = function (props) {
+    var calendar-minus = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = calendar-minus.js;
+    module.exports = calendar-minus;

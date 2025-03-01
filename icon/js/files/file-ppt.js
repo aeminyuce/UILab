@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var file-ppt.js = function (props) {
+    var file-ppt = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = file-ppt.js;
+    module.exports = file-ppt;

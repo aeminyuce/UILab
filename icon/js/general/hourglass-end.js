@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var hourglass-end.js = function (props) {
+    var hourglass-end = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = hourglass-end.js;
+    module.exports = hourglass-end;

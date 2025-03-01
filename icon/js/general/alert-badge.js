@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var alert-badge.js = function (props) {
+    var alert-badge = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = alert-badge.js;
+    module.exports = alert-badge;

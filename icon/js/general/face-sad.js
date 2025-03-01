@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var face-sad.js = function (props) {
+    var face-sad = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = face-sad.js;
+    module.exports = face-sad;

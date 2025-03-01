@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var sort-down.js = function (props) {
+    var sort-down = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = sort-down.js;
+    module.exports = sort-down;

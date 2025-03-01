@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var arrow-circle-down.js = function (props) {
+    var arrow-circle-down = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = arrow-circle-down.js;
+    module.exports = arrow-circle-down;

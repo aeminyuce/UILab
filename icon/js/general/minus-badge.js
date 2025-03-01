@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var minus-badge.js = function (props) {
+    var minus-badge = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = minus-badge.js;
+    module.exports = minus-badge;

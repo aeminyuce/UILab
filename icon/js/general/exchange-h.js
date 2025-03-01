@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var exchange-h.js = function (props) {
+    var exchange-h = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = exchange-h.js;
+    module.exports = exchange-h;

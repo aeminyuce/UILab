@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var power.js = function (props) {
+    var power = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = power.js;
+    module.exports = power;

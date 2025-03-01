@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var tablet-h.js = function (props) {
+    var tablet-h = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = tablet-h.js;
+    module.exports = tablet-h;

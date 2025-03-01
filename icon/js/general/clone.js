@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var clone.js = function (props) {
+    var clone = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = clone.js;
+    module.exports = clone;

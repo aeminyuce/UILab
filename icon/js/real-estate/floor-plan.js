@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var floor-plan.js = function (props) {
+    var floor-plan = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = floor-plan.js;
+    module.exports = floor-plan;

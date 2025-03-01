@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var clock-alarm.js = function (props) {
+    var clock-alarm = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = clock-alarm.js;
+    module.exports = clock-alarm;

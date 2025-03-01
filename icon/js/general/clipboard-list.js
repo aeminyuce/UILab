@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var clipboard-list.js = function (props) {
+    var clipboard-list = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = clipboard-list.js;
+    module.exports = clipboard-list;

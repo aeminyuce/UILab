@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var remove-marker.js = function (props) {
+    var remove-marker = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = remove-marker.js;
+    module.exports = remove-marker;

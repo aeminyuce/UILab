@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var touch-dual.js = function (props) {
+    var touch-dual = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = touch-dual.js;
+    module.exports = touch-dual;

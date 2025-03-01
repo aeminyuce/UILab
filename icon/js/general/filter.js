@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var filter.js = function (props) {
+    var filter = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = filter.js;
+    module.exports = filter;

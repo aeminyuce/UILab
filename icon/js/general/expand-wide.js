@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var expand-wide.js = function (props) {
+    var expand-wide = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = expand-wide.js;
+    module.exports = expand-wide;

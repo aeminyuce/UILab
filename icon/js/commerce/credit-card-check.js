@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var credit-card-check.js = function (props) {
+    var credit-card-check = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = credit-card-check.js;
+    module.exports = credit-card-check;

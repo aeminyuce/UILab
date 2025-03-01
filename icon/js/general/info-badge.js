@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var info-badge.js = function (props) {
+    var info-badge = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = info-badge.js;
+    module.exports = info-badge;

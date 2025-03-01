@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var cloud-wind.js = function (props) {
+    var cloud-wind = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = cloud-wind.js;
+    module.exports = cloud-wind;

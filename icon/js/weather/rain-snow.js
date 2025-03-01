@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var rain-snow.js = function (props) {
+    var rain-snow = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = rain-snow.js;
+    module.exports = rain-snow;

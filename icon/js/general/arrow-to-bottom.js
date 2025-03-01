@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var arrow-to-bottom.js = function (props) {
+    var arrow-to-bottom = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = arrow-to-bottom.js;
+    module.exports = arrow-to-bottom;

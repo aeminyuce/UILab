@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var watch-fitness.js = function (props) {
+    var watch-fitness = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = watch-fitness.js;
+    module.exports = watch-fitness;

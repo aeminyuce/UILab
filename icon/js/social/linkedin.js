@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var linkedin.js = function (props) {
+    var linkedin = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = linkedin.js;
+    module.exports = linkedin;

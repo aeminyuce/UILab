@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var money-lira.js = function (props) {
+    var money-lira = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = money-lira.js;
+    module.exports = money-lira;

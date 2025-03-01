@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var user-plus.js = function (props) {
+    var user-plus = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = user-plus.js;
+    module.exports = user-plus;

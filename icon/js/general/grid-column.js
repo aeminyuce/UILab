@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var grid-column.js = function (props) {
+    var grid-column = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = grid-column.js;
+    module.exports = grid-column;

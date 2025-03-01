@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var house-check.js = function (props) {
+    var house-check = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = house-check.js;
+    module.exports = house-check;

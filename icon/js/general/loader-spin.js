@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var loader-spin.js = function (props) {
+    var loader-spin = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = loader-spin.js;
+    module.exports = loader-spin;

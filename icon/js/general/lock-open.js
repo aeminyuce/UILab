@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var lock-open.js = function (props) {
+    var lock-open = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = lock-open.js;
+    module.exports = lock-open;

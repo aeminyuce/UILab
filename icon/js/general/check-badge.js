@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var check-badge.js = function (props) {
+    var check-badge = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = check-badge.js;
+    module.exports = check-badge;

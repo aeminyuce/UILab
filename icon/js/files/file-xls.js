@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var file-xls.js = function (props) {
+    var file-xls = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = file-xls.js;
+    module.exports = file-xls;

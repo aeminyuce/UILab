@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var database.js = function (props) {
+    var database = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = database.js;
+    module.exports = database;

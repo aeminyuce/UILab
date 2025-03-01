@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var sign-in.js = function (props) {
+    var sign-in = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = sign-in.js;
+    module.exports = sign-in;

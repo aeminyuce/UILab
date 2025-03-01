@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var house-alt-360.js = function (props) {
+    var house-alt-360 = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = house-alt-360.js;
+    module.exports = house-alt-360;

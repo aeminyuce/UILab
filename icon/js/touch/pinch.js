@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var pinch.js = function (props) {
+    var pinch = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = pinch.js;
+    module.exports = pinch;

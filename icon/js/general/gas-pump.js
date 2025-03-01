@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var gas-pump.js = function (props) {
+    var gas-pump = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = gas-pump.js;
+    module.exports = gas-pump;

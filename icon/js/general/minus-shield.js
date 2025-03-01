@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var minus-shield.js = function (props) {
+    var minus-shield = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = minus-shield.js;
+    module.exports = minus-shield;

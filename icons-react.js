@@ -56,13 +56,15 @@ fs.readdir(directoryPath, (err, files) => {
             if (!err) {
 
                 // create JS files
-                const name = `${fileName.split('.')[0]}.js`;
+                const name = fileName.split('.')[0];
                 const code = generateCode(name, getPath(data));
 
-                const outputPath = path.join(__dirname, args.dest, name); // destination folder name
+                const jsFilename = `${fileName.split('.')[0]}.js`;
+
+                const outputPath = path.join(__dirname, args.dest, jsFilename); // destination folder name
                 fs.writeFile(outputPath, code, (e) => {
                     if (e) throw e;
-                    console.log(`${name} created in ${outputPath} folder!`);
+                    console.log(`${jsFilename} created in ${outputPath} folder!`);
                 });
 
             } else throw err;

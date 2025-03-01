@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var cloud-moon.js = function (props) {
+    var cloud-moon = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = cloud-moon.js;
+    module.exports = cloud-moon;

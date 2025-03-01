@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var ellipsis-h.js = function (props) {
+    var ellipsis-h = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = ellipsis-h.js;
+    module.exports = ellipsis-h;

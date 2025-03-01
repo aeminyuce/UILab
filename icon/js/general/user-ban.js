@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var user-ban.js = function (props) {
+    var user-ban = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = user-ban.js;
+    module.exports = user-ban;

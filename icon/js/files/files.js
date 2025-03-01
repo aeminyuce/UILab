@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var files.js = function (props) {
+    var files = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = files.js;
+    module.exports = files;

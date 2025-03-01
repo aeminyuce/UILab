@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var house-heat.js = function (props) {
+    var house-heat = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = house-heat.js;
+    module.exports = house-heat;

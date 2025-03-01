@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var signal-wifi.js = function (props) {
+    var signal-wifi = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = signal-wifi.js;
+    module.exports = signal-wifi;

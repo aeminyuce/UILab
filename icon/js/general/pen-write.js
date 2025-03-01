@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var pen-write.js = function (props) {
+    var pen-write = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = pen-write.js;
+    module.exports = pen-write;

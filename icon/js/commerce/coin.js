@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var coin.js = function (props) {
+    var coin = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = coin.js;
+    module.exports = coin;

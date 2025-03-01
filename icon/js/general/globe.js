@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var globe.js = function (props) {
+    var globe = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = globe.js;
+    module.exports = globe;

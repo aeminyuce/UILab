@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var clipboard-remove.js = function (props) {
+    var clipboard-remove = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = clipboard-remove.js;
+    module.exports = clipboard-remove;

@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var cloud-download.js = function (props) {
+    var cloud-download = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = cloud-download.js;
+    module.exports = cloud-download;

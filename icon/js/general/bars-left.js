@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var bars-left.js = function (props) {
+    var bars-left = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = bars-left.js;
+    module.exports = bars-left;

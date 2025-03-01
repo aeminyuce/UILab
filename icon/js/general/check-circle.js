@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var check-circle.js = function (props) {
+    var check-circle = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = check-circle.js;
+    module.exports = check-circle;

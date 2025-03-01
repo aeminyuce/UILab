@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var user-remove.js = function (props) {
+    var user-remove = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = user-remove.js;
+    module.exports = user-remove;

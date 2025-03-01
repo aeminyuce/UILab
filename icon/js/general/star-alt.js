@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var star-alt.js = function (props) {
+    var star-alt = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = star-alt.js;
+    module.exports = star-alt;

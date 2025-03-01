@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var loader-line-dual.js = function (props) {
+    var loader-line-dual = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = loader-line-dual.js;
+    module.exports = loader-line-dual;

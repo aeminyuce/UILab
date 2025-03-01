@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var money-euro.js = function (props) {
+    var money-euro = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = money-euro.js;
+    module.exports = money-euro;

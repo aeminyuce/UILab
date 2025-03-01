@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var percent-shield.js = function (props) {
+    var percent-shield = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = percent-shield.js;
+    module.exports = percent-shield;

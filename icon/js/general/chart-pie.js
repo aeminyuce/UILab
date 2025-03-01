@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var chart-pie.js = function (props) {
+    var chart-pie = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = chart-pie.js;
+    module.exports = chart-pie;

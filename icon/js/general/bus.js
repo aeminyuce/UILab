@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var bus.js = function (props) {
+    var bus = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = bus.js;
+    module.exports = bus;

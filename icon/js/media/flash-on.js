@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var flash-on.js = function (props) {
+    var flash-on = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = flash-on.js;
+    module.exports = flash-on;

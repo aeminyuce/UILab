@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var question-marker.js = function (props) {
+    var question-marker = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = question-marker.js;
+    module.exports = question-marker;

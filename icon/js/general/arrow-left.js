@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var arrow-left.js = function (props) {
+    var arrow-left = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = arrow-left.js;
+    module.exports = arrow-left;

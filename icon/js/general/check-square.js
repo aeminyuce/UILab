@@ -2,7 +2,7 @@
     'use strict';
     var  React = require('react');
 
-    var check-square.js = function (props) {
+    var check-square = function (props) {
         return React.createElement(
             'svg',
             Object.assign({}, props, { viewBox: '0 0 264 264}' }),
@@ -10,4 +10,4 @@
         );
     }
 
-    module.exports = check-square.js;
+    module.exports = check-square;
