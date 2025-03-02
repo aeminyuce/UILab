@@ -1,4 +1,4 @@
-import { ReactNode, ReactEventHandler } from 'react';
+import { ReactNode, ReactEventHandler, ElementType } from 'react';
 
 const gridSizes = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
@@ -471,12 +471,12 @@ export interface HeaderStickyProps {
 
 // Icon
 export interface IconProps {
-    src: string;
+    src?: ElementType;
+    path?: string;
     size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
     float?: 'l' | 'r';
     opacity?: 'no' | 'more' | 'half' | 'full';
     animate?: string;
-    path?: boolean;
     toggle?: boolean;
     className?: string;
     style?: any;

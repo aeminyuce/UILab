@@ -170,7 +170,7 @@ const FormFile = function (
                 }
                 {as === 'button' &&
                     <Button square as="span" className={btnClasses}>
-                        <Icon path src={icon_plus} />
+                        <Icon path={icon_plus} />
                     </Button>
                 }
             </div>
@@ -246,7 +246,7 @@ const FormSelect = function (
 
         return (
             <div className={classes} style={style}>
-                <Icon path src={icon_angle_down} />
+                <Icon path={icon_angle_down} />
                 <select id={id} ref={myRef} title={title} name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} className={childrenClasses} disabled={disabled}
                     onChange={onChange} onInput={onInput}>
                         {children}

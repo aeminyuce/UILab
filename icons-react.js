@@ -19,20 +19,23 @@ const getArgs = () =>
 const args = getArgs();
 
 // code template
-const generateCode = (name, data) => `
-    'use strict';
-    var  React = require('react');
+const generateCode = (name, data) => {
+    let fileName = name.split('.')[0];
+    fileName = `icon_${fileName}`;
 
-    var ${name} = function (props) {
-        return React.createElement(
-            'svg',
-            Object.assign({}, props, { viewBox: '0 0 264 264' }),
-            React.createElement('path', { d: '${data}' })
-        );
-    }
+    return `'use strict';
+        var  React = require('react');
 
-    module.exports = ${name};
-`;
+        var ${fileName} = function (props) {
+            return React.createElement(
+                'svg',
+                Object.assign({}, props, { viewBox: '0 0 264 264' }),
+                React.createElement('path', { d: '${data}' })
+            );
+        }
+
+        module.exports = ${fileName};`
+};
 
 // get svg path
 const getPath = (data) => {
@@ -56,9 +59,9 @@ fs.readdir(directoryPath, (err, files) => {
             if (!err) {
 
                 // create JS files
-                const name = fileName.split('.')[0];
-                const code = generateCode(name, getPath(data));
+                fileName = fileName.replace(/\-/g, '_');
 
+                const code = generateCode(fileName, getPath(data));
                 const jsFilename = `${fileName.split('.')[0]}.js`;
 
                 const outputPath = path.join(__dirname, args.dest, jsFilename); // destination folder name

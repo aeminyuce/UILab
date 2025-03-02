@@ -12,7 +12,7 @@ import Code from '@layouts/Code';
 import { StoreContext } from '@utils/StoreReducer';
 
 // assets
-const icon_angle_down = require('@icon/angle-down.svg') as string;
+import { icon_angle_down } from '@icon/js/general/angle_down';
 
 interface PreviewProps {
     children?: ReactNode,

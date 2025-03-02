@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Fragment } from 'react';
+import { Fragment, ElementType } from 'react';
 import { useLocation } from 'react-router-dom';
 import Button from '@components/Button';
 import Icon from '@components/Icon';
@@ -13,14 +13,14 @@ import TopButton from '@components/TopButton';
 import RoutePaths from '@layouts/RoutePaths';
 
 // assets
-const icon_dribbble = require('@icon/dribbble.svg') as string;
-const icon_github = require('@icon/github.svg') as string;
-const icon_bars_left = require('@icon/bars-left.svg') as string;
-const icon_bars_right = require('@icon/bars-right.svg') as string;
-const icon_sun = require('@icon/sun.svg') as string;
-const icon_moon = require('@icon/moon.svg') as string;
-const icon_angle_left = require('@icon/angle-left.svg') as string;
-const icon_angle_right = require('@icon/angle-right.svg') as string;
+import { icon_dribbble } from '@icon/js/social/dribbble';
+import { icon_github } from '@icon/js/social/github';
+import { icon_bars_left } from '@icon/js/general/bars_left';
+import { icon_bars_right } from '@icon/js/general/bars_right';
+import { icon_sun } from '@icon/js/weather/sun';
+import { icon_moon } from '@icon/js/weather/moon';
+import { icon_angle_left } from '@icon/js/general/angle_left';
+import { icon_angle_right } from '@icon/js/general/angle_right';
 
 interface HeaderLinksProps {
     name: string;
@@ -30,7 +30,7 @@ interface HeaderLinksProps {
 interface SocialLinksProps {
     title: string;
     url: string;
-    icon: string;
+    icon: ElementType;
 }
 
 export default function () {

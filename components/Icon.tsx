@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { createElement } from 'react';
 
 // utils
 import { IconProps } from './utils/models';
@@ -8,19 +9,7 @@ import '../less/modules/icons';
 
 export default function Icon(
 
-    {src, size, float, opacity, animate, path, toggle, className, style }:IconProps) {
-
-        // get svg path
-        const getPath = function(str: string) {
-
-            const from = str.indexOf("d='") + 3;
-
-            const cut = str.indexOf("'/%");
-            const to = str.length - (str.length - cut);
-
-            return str.substring(from, to);
-
-        }
+    {src, path, size, float, opacity, animate, toggle, className, style }:IconProps) {
 
         // classes
         const setSize = size ? ` ui-icon-${size}` : '';
@@ -45,10 +34,14 @@ export default function Icon(
 
         const classes = `ui-icon${setSize}${setAnimate}${setFloat}${setToggle}${setOpacity}${setClassName}`;
 
-        return (
-            <svg className={classes} style={style} viewBox="0 0 264 264">
-                <path d={path ? src : getPath(src)} />
-            </svg>
-        );
+        if (src) {
+            return createElement(src, { className: classes, style: style });
 
+        } else {
+            return (
+                <svg className={classes} style={style} viewBox="0 0 264 264">
+                    <path d={path} />
+                </svg>
+            );
+        }
     }

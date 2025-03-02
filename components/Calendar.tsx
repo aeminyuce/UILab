@@ -73,7 +73,7 @@ const CalendarPicker = function (
                  autoComplete={autoComplete} required={required} className={classes} style={style} disabled={disabled}
                  number={number} numberFloat={numberFloat} minlength={minlength} maxlength={maxlength}
                  onChange={onChange} onInput={onInput} onBlur={onBlur}>
-                    <Icon path src={icon_calendar} />
+                    <Icon path={icon_calendar} />
             </Form.Input>
         );
     }

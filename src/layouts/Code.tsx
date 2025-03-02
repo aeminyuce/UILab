@@ -5,10 +5,10 @@ import Button from '@components/Button';
 import Icon from '@components/Icon';
 
 // assets
-const icon_clone = require('@icon/clone.svg') as string;
-const icon_code = require('@icon/code.svg') as string;
-const icon_brackets = require('@icon/brackets.svg') as string;
-const icon_brackets_curly = require('@icon/brackets-curly.svg') as string;
+import { icon_clone } from '@icon/js/general/clone';
+import { icon_code } from '@icon/js/general/code';
+import { icon_brackets } from '@icon/js/general/code';
+import { icon_brackets_curly } from '@icon/js/general/brackets_curly';
 
 interface CodeProps {
     type: 'react' | 'js' | 'css';

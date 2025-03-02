@@ -3,8 +3,8 @@ import Button from '@components/Button';
 import Icon from '@components/Icon';
 
 // assets
-const icon_print = require('@icon/print.svg') as string;
-const icon_house_alt = require('@icon/house-alt.svg') as string;
+import { icon_print } from '@icon/js/general/print';
+import { icon_house_alt } from '@icon/js/real-estate/house_alt';
 
 interface PageHeaderProps {
     pageTitle: string;

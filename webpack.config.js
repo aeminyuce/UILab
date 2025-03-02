@@ -66,8 +66,8 @@ const config = {
                 use: ["style-loader", "css-loader"],
             },
             { // do not use exclude!
-                test: /\.svg$/,
-                use: "svg-url-loader",
+                test: /\.(png|jpg|gif|svg)$/,
+                use: "file-loader",
             },
         ],
     },
