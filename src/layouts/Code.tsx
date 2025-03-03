@@ -5,10 +5,10 @@ import Button from '@components/Button';
 import Icon from '@components/Icon';
 
 // assets
-import { icon_clone } from '@icon/js/general/clone';
-import { icon_code } from '@icon/js/general/code';
-import { icon_brackets } from '@icon/js/general/code';
-import { icon_brackets_curly } from '@icon/js/general/brackets_curly';
+import { IconClone } from '@icon/js/general/clone';
+import { IconCode } from '@icon/js/general/code';
+import { IconBrackets } from '@icon/js/general/brackets';
+import { IconBracketsCurly } from '@icon/js/general/brackets-curly';
 
 interface CodeProps {
     type: 'react' | 'js' | 'css';
@@ -191,9 +191,9 @@ export default function Code(
 
         // title icons
         const titles = {
-            react: { name: 'React TSX', icon: icon_code },
-            js: { name: 'Javascript', icon: icon_brackets },
-            css: { name: 'CSS', icon: icon_brackets_curly },
+            react: { name: 'React TSX', icon: IconCode },
+            js: { name: 'Javascript', icon: IconBrackets },
+            css: { name: 'CSS', icon: IconBracketsCurly },
         }
 
         return (
@@ -208,7 +208,7 @@ export default function Code(
                             pos: 'br',
                         });
                     }}>
-                        <Icon src={icon_clone} className='ui-color-white' />
+                        <Icon src={IconClone} className='ui-color-white' />
                     </Button>
                 </div>
 

@@ -13,14 +13,14 @@ import TopButton from '@components/TopButton';
 import RoutePaths from '@layouts/RoutePaths';
 
 // assets
-import { icon_dribbble } from '@icon/js/social/dribbble';
-import { icon_github } from '@icon/js/social/github';
-import { icon_bars_left } from '@icon/js/general/bars_left';
-import { icon_bars_right } from '@icon/js/general/bars_right';
-import { icon_sun } from '@icon/js/weather/sun';
-import { icon_moon } from '@icon/js/weather/moon';
-import { icon_angle_left } from '@icon/js/general/angle_left';
-import { icon_angle_right } from '@icon/js/general/angle_right';
+import { IconDribbble } from '@icon/js/social/dribbble';
+import { IconGithub } from '@icon/js/social/github';
+import { IconBarsLeft } from '@icon/js/general/bars-left';
+import { IconBarsRight } from '@icon/js/general/bars-right';
+import { IconSun } from '@icon/js/weather/sun';
+import { IconMoon } from '@icon/js/weather/moon';
+import { IconAngleLeft } from '@icon/js/general/angle-left';
+import { IconAngleRight } from '@icon/js/general/angle-right';
 
 interface HeaderLinksProps {
     name: string;
@@ -51,8 +51,8 @@ export default function () {
 
     // social links
     const socialLinks = [
-        { title: 'GitHub', url: process.env.GITHUB_URL, icon: icon_github },
-        { title: 'Dribbble', url: process.env.DRIBBBLE_URL, icon: icon_dribbble },
+        { title: 'GitHub', url: process.env.GITHUB_URL, icon: IconGithub },
+        { title: 'Dribbble', url: process.env.DRIBBBLE_URL, icon: IconDribbble },
     ];
 
     return (
@@ -65,7 +65,7 @@ export default function () {
                         {/* toggle header sidebar */}
                         <Grid.Col size={'50'} className='ui-p-10-v ui-p-10-l ui-visible-md'>
                             <Button square ghost title='Toggle Nav' className='ui-sidebar-show-l ui-circle'>
-                                <Icon src={icon_bars_left} opacity='no' />
+                                <Icon src={IconBarsLeft} opacity='no' />
                             </Button>
                         </Grid.Col>
 
@@ -101,14 +101,14 @@ export default function () {
                                 {/* toggle page sidebar */}
                                 {pathname !== '/' &&
                                     <Button square ghost title='Toggle Docs' className='ui-sidebar-show-r ui-visible-md ui-circle ui-float-r'>
-                                        <Icon src={icon_bars_right} opacity='no' />
+                                        <Icon src={IconBarsRight} opacity='no' />
                                     </Button>
                                 }
 
                                 {/* toggle dark mode */}
                                 <Button square ghost title='Toggle Dark Mode' className='ui-darkmode-toggle ui-circle ui-float-r'>
-                                    <Icon className='ui-visible-dark' src={icon_moon} />
-                                    <Icon className='ui-visible-light' src={icon_sun} />
+                                    <Icon className='ui-visible-dark' src={IconMoon} />
+                                    <Icon className='ui-visible-light' src={IconSun} />
                                 </Button>
 
                                 {/* social links */}
@@ -142,7 +142,7 @@ export default function () {
             <Sidebar pos='l' className='ui-round'>
                 <Sidebar.Title className='ui-sidebar-title ui-p-15-h ui-p-10-v ui-border-b ui-border-light'>
                     <Button square ghost title='Close' className='ui-sidebar-close ui-circle'>
-                        <Icon src={icon_angle_left} />
+                        <Icon src={IconAngleLeft} />
                     </Button>
                     <img className='ui-m-5-v ui-m-3-l' src={logo} alt='UI lab' srcSet={logoSrcSet} />
                 </Sidebar.Title>
@@ -154,7 +154,7 @@ export default function () {
                 <Sidebar pos='r' className='ui-round'>
                     <Sidebar.Title className='ui-sidebar-title ui-p-15-h ui-p-10-v ui-border-b ui-border-light'>
                         <Button square ghost title='Close' className='ui-sidebar-close ui-circle'>
-                            <Icon src={icon_angle_right} />
+                            <Icon src={IconAngleRight} />
                         </Button>
                         <div className='ui-font-16 ui-m-15-v ui-m-4-l'>Docs</div>
                     </Sidebar.Title>

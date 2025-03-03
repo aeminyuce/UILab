@@ -12,7 +12,7 @@ import Code from '@layouts/Code';
 import { StoreContext } from '@utils/StoreReducer';
 
 // assets
-import { icon_angle_down } from '@icon/js/general/angle_down';
+import { IconAngleDown } from '@icon/js/general/angle-down';
 
 interface PreviewProps {
     children?: ReactNode,
@@ -56,7 +56,7 @@ export default function Preview(
                     <Dropdown align='l'>
                         <Button ghost className='ui-round'>
                             <ShowColor name={selectedColor} theme={storedTheme} />
-                            <Icon toggle src={icon_angle_down} className='ui-m-15-l' />
+                            <Icon toggle src={IconAngleDown} className='ui-m-15-l' />
                         </Button>
                         <Dropdown.Menu hasIcon className='ui-round ui-shadow-lg'>
 

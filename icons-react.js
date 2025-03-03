@@ -21,20 +21,22 @@ const args = getArgs();
 // code template
 const generateCode = (name, data) => {
     let fileName = name.split('.')[0];
-    fileName = `icon_${fileName}`;
 
-    return `'use strict';
-        var  React = require('react');
+    fileName = fileName.split('-').map((part) => {
+        return part.charAt(0).toUpperCase() + part.slice(1);
+    }).join('');
 
-        var ${fileName} = function (props) {
-            return React.createElement(
-                'svg',
-                Object.assign({}, props, { viewBox: '0 0 264 264' }),
-                React.createElement('path', { d: '${data}' })
-            );
-        }
+    var code = `'use strict';
+var  React = require('react');
 
-        module.exports = ${fileName};`
+module.exports.Icon${fileName} = function (props) {
+    return React.createElement(
+        'svg',
+        Object.assign({}, props, { viewBox: '0 0 264 264' }),
+        React.createElement('path', { d: '${data}' })
+    );
+}`
+    return code;
 };
 
 // get svg path
@@ -59,8 +61,6 @@ fs.readdir(directoryPath, (err, files) => {
             if (!err) {
 
                 // create JS files
-                fileName = fileName.replace(/\-/g, '_');
-
                 const code = generateCode(fileName, getPath(data));
                 const jsFilename = `${fileName.split('.')[0]}.js`;
 
