@@ -469,10 +469,11 @@ export interface HeaderStickyProps {
     style?: any;
 }
 
-// Icon
-export interface IconProps {
-    src?: ElementType;
-    path?: string;
+// Svg Icon
+export interface SvgIconProps {
+    as: 'js' | 'file' | 'sprite' | 'path';
+    src: ElementType | string;
+    ssymbolId?: string;
     size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
     float?: 'l' | 'r';
     opacity?: 'no' | 'more' | 'half' | 'full';

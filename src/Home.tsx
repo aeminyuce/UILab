@@ -2,12 +2,17 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import Grid from '@components/Grid';
 import Spacer from '@components/Spacer';
+import SvgIcon from '@components/SvgIcon';
 
 interface ExamplesProps {
     name: string;
     to: string;
     img: string;
 }
+
+// assets
+import IconLab from '@icon/svg/general/lab.svg';
+import SpriteFiles from '@icon/sprite/files.svg';
 
 export default function () {
     // slogans
@@ -35,6 +40,8 @@ export default function () {
                 <div className='ui-align-c ui-p-30 ui-xs-no-p ui-round ui-theme-ice'>
                     <h1 className='ui-h1 ui-font-light'>{title}</h1>
                     <h4 className='ui-h4 ui-font-bold ui-text'>{titleSlogan}</h4>
+                    <SvgIcon as='file' src={IconLab} size='xl' className='ui-m-10-t' />
+                    <SvgIcon as='sprite' src={SpriteFiles} ssymbolId='files' size='xl' className='ui-m-10-t' />
                 </div>
 
                 <Spacer size={30} />

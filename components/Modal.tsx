@@ -2,7 +2,7 @@ import * as React from 'react';
 import { ui } from '../js/core/globals';
 
 // utils
-import { icon_remove } from './utils/assets';
+import { IconRemove } from './utils/assets';
 import { ModalProps, ModalHeaderProps, ModalTitleProps, ModalButtonsProps, ModalContainerProps, ModalFooterProps, ModalOpenProps } from './utils/models';
 
 // assets
@@ -126,7 +126,7 @@ export const modalOpen = function (
 
         // icons
         ui.globals.inlineSvg = true;
-        ui.modal.closeIcon = icon_remove;
+        ui.modal.closeIcon = IconRemove;
 
         // sizes
         let setSize: any = null;

@@ -3,9 +3,10 @@ import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
 // utils
-import Icon from './Icon';
 import Form from './Form';
-import { icon_arrow_left, icon_arrow_right, icon_angle_left, icon_calendar } from './utils/assets';
+import SvgIcon from './SvgIcon';
+
+import { IconArrowLeft, IconArrowRight, IconAngleLeft, IconCalendar } from './utils/assets';
 import { CalendarProps, CalendarPickerProps } from './utils/models';
 
 // assets
@@ -21,9 +22,9 @@ const Calendar = function (
             // icons
             ui.globals.inlineSvg = true;
 
-            ui.calendar.prevIcon = icon_arrow_left;
-            ui.calendar.nextIcon = icon_arrow_right;
-            ui.calendar.backIcon = icon_angle_left;
+            ui.calendar.prevIcon = IconArrowLeft;
+            ui.calendar.nextIcon = IconArrowRight;
+            ui.calendar.backIcon = IconAngleLeft;
 
         }, []);
 
@@ -52,8 +53,8 @@ const CalendarPicker = function (
             // icons
             ui.globals.inlineSvg = true;
 
-            ui.calendar.prevIcon = icon_arrow_left;
-            ui.calendar.nextIcon = icon_arrow_right;
+            ui.calendar.prevIcon = IconArrowLeft;
+            ui.calendar.nextIcon = IconArrowRight;
 
         }, []);
 
@@ -73,7 +74,7 @@ const CalendarPicker = function (
                  autoComplete={autoComplete} required={required} className={classes} style={style} disabled={disabled}
                  number={number} numberFloat={numberFloat} minlength={minlength} maxlength={maxlength}
                  onChange={onChange} onInput={onInput} onBlur={onBlur}>
-                    <Icon path={icon_calendar} />
+                    <SvgIcon as='path' src={IconCalendar} />
             </Form.Input>
         );
     }

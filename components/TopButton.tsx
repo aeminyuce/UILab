@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
 // utils
-import { icon_arrow_to_top } from './utils/assets';
+import { IconArrowToTop } from './utils/assets';
 
 // assets
 import '../less/modules/top-button';
@@ -15,7 +15,7 @@ export default function TopButton() {
 
         // icons
         ui.globals.inlineSvg = true;
-        ui.topButton.icon = icon_arrow_to_top;
+        ui.topButton.icon = IconArrowToTop;
 
         // settings
         ui.topButton.stylesTarget = 'ui-circle ui-ease-layout';

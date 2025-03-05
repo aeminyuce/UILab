@@ -4,11 +4,11 @@ import { ui } from '../js/core/globals';
 
 // utils
 import Button from './Button';
-import Icon from './Icon';
+import SvgIcon from './SvgIcon';
 import { FormLabelProps, FormInputProps, FormFileProps, FormTextareaProps, FormSelectProps, FormCheckProps, FormRequiredMessageProps, FormHintProps } from './utils/models';
 
 // utils
-import { icon_angle_down, icon_plus } from './utils/assets';
+import { IconAngleDown, IconPlus } from './utils/assets';
 
 // assets
 import '../less/modules/autocomplete';
@@ -170,7 +170,7 @@ const FormFile = function (
                 }
                 {as === 'button' &&
                     <Button square as="span" className={btnClasses}>
-                        <Icon path={icon_plus} />
+                        <SvgIcon as='path' src={IconPlus} />
                     </Button>
                 }
             </div>
@@ -246,7 +246,7 @@ const FormSelect = function (
 
         return (
             <div className={classes} style={style}>
-                <Icon path={icon_angle_down} />
+                <SvgIcon as='path' src={IconAngleDown} />
                 <select id={id} ref={myRef} title={title} name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} className={childrenClasses} disabled={disabled}
                     onChange={onChange} onInput={onInput}>
                         {children}

@@ -3,7 +3,7 @@ import { useContext, ReactNode } from 'react';
 import Button from '@components/Button';
 import Dropdown from '@components/Dropdown';
 import Grid from '@components/Grid';
-import Icon from '@components/Icon';
+import SvgIcon from '@components/SvgIcon';
 
 // layouts
 import Code from '@layouts/Code';
@@ -56,7 +56,7 @@ export default function Preview(
                     <Dropdown align='l'>
                         <Button ghost className='ui-round'>
                             <ShowColor name={selectedColor} theme={storedTheme} />
-                            <Icon toggle src={IconAngleDown} className='ui-m-15-l' />
+                            <SvgIcon as='js' toggle src={IconAngleDown} className='ui-m-15-l' />
                         </Button>
                         <Dropdown.Menu hasIcon className='ui-round ui-shadow-lg'>
 

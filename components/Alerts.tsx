@@ -1,7 +1,7 @@
 import { ui } from '../js/core/globals';
 
 // utils
-import { icon_remove } from './utils/assets';
+import { IconRemove } from './utils/assets';
 import { AlertsDialogProps, AlertsMessageProps } from './utils/models';
 
 // assets
@@ -16,7 +16,7 @@ const AlertsDialog = function (
 
         // icons
         ui.globals.inlineSvg = true;
-        ui.alerts.closeIcon = icon_remove;
+        ui.alerts.closeIcon = IconRemove;
 
         // messages
         ui.alerts.msgDialogSuccess = 'OK';

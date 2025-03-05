@@ -2,11 +2,11 @@ import * as React from 'react';
 import { Fragment, ElementType } from 'react';
 import { useLocation } from 'react-router-dom';
 import Button from '@components/Button';
-import Icon from '@components/Icon';
 import Grid from '@components/Grid';
 import HeaderSticky from '@components/HeaderSticky';
 import Sidebar from '@components/Sidebar';
 import Spacer from '@components/Spacer';
+import SvgIcon from '@components/SvgIcon';
 import TopButton from '@components/TopButton';
 
 // layouts
@@ -65,7 +65,7 @@ export default function () {
                         {/* toggle header sidebar */}
                         <Grid.Col size={'50'} className='ui-p-10-v ui-p-10-l ui-visible-md'>
                             <Button square ghost title='Toggle Nav' className='ui-sidebar-show-l ui-circle'>
-                                <Icon src={IconBarsLeft} opacity='no' />
+                                <SvgIcon as='js' src={IconBarsLeft} opacity='no' />
                             </Button>
                         </Grid.Col>
 
@@ -101,14 +101,14 @@ export default function () {
                                 {/* toggle page sidebar */}
                                 {pathname !== '/' &&
                                     <Button square ghost title='Toggle Docs' className='ui-sidebar-show-r ui-visible-md ui-circle ui-float-r'>
-                                        <Icon src={IconBarsRight} opacity='no' />
+                                        <SvgIcon as='js' src={IconBarsRight} opacity='no' />
                                     </Button>
                                 }
 
                                 {/* toggle dark mode */}
                                 <Button square ghost title='Toggle Dark Mode' className='ui-darkmode-toggle ui-circle ui-float-r'>
-                                    <Icon className='ui-visible-dark' src={IconMoon} />
-                                    <Icon className='ui-visible-light' src={IconSun} />
+                                    <SvgIcon as='js' src={IconMoon} className='ui-visible-dark' />
+                                    <SvgIcon as='js' src={IconSun} className='ui-visible-light' />
                                 </Button>
 
                                 {/* social links */}
@@ -118,7 +118,7 @@ export default function () {
                                         {socialLinks.map((item: SocialLinksProps) => {
                                             return (
                                                 <Button key={item.title} square ghost title={item.title} href={item.url} className='ui-circle ui-float-r ui-no-float-md' target='_blank' rel='nofollow'>
-                                                    <Icon src={item.icon} />
+                                                    <SvgIcon as='js' src={item.icon} />
                                                 </Button>
                                             )
                                         })}
@@ -142,7 +142,7 @@ export default function () {
             <Sidebar pos='l' className='ui-round'>
                 <Sidebar.Title className='ui-sidebar-title ui-p-15-h ui-p-10-v ui-border-b ui-border-light'>
                     <Button square ghost title='Close' className='ui-sidebar-close ui-circle'>
-                        <Icon src={IconAngleLeft} />
+                        <SvgIcon as='js' src={IconAngleLeft} />
                     </Button>
                     <img className='ui-m-5-v ui-m-3-l' src={logo} alt='UI lab' srcSet={logoSrcSet} />
                 </Sidebar.Title>
@@ -154,7 +154,7 @@ export default function () {
                 <Sidebar pos='r' className='ui-round'>
                     <Sidebar.Title className='ui-sidebar-title ui-p-15-h ui-p-10-v ui-border-b ui-border-light'>
                         <Button square ghost title='Close' className='ui-sidebar-close ui-circle'>
-                            <Icon src={IconAngleRight} />
+                            <SvgIcon as='js' src={IconAngleRight} />
                         </Button>
                         <div className='ui-font-16 ui-m-15-v ui-m-4-l'>Docs</div>
                     </Sidebar.Title>

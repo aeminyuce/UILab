@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Button from '@components/Button';
-import Icon from '@components/Icon';
+import SvgIcon from '@components/SvgIcon';
 
 // assets
 import { IconPrint } from '@icon/js/general/print';
@@ -18,10 +18,10 @@ export default function PageHeader(
         return (
             <div className='ui-border-b ui-border-light ui-p-10'>
                 <Button square ghost title='Print' className='ui-circle ui-float-r' onClick={() => window.print()}>
-                    <Icon src={IconPrint} />
+                    <SvgIcon as='js' src={IconPrint} />
                 </Button>
                 <Button square ghost title='Back to Home' to='/' className='ui-circle ui-m-10-r'>
-                    <Icon src={IconHouseAlt} />
+                    <SvgIcon as='js' src={IconHouseAlt} />
                 </Button>
                 <h1 className='ui-h1 ui-font-18 ui-inline-block'>
                     {setPageTitle}

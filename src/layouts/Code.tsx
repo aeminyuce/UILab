@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Fragment } from 'react';
 import Alerts from '@components/Alerts';
 import Button from '@components/Button';
-import Icon from '@components/Icon';
+import SvgIcon from '@components/SvgIcon';
 
 // assets
 import { IconClone } from '@icon/js/general/clone';
@@ -208,12 +208,12 @@ export default function Code(
                             pos: 'br',
                         });
                     }}>
-                        <Icon src={IconClone} className='ui-color-white' />
+                        <SvgIcon as='js' src={IconClone} className='ui-color-white' />
                     </Button>
                 </div>
 
                 <div className='ui-color-white-25 ui-p-15-b'>
-                    <Icon src={titles[type].icon} size='sm' className='ui-color-white' />
+                    <SvgIcon as='js' src={titles[type].icon} size='sm' className='ui-color-white' />
                     <span className='ui-m-5-l ui-inline-block'>{titles[type].name}</span>
                 </div>
 
