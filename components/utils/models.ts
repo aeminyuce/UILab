@@ -473,7 +473,7 @@ export interface HeaderStickyProps {
 export interface SvgIconProps {
     as: 'js' | 'file' | 'sprite' | 'path';
     src: ElementType | string;
-    ssymbolId?: string;
+    symbolId?: string;
     size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
     float?: 'l' | 'r';
     opacity?: 'no' | 'more' | 'half' | 'full';

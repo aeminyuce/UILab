@@ -41,7 +41,7 @@ export default function () {
                     <h1 className='ui-h1 ui-font-light'>{title}</h1>
                     <h4 className='ui-h4 ui-font-bold ui-text'>{titleSlogan}</h4>
                     <SvgIcon as='file' src={IconLab} size='xl' className='ui-m-10-t' />
-                    <SvgIcon as='sprite' src={SpriteFiles} ssymbolId='files' size='xl' className='ui-m-10-t' />
+                    <SvgIcon as='sprite' src={SpriteFiles} symbolId='files' size='xl' className='ui-m-10-t' />
                 </div>
 
                 <Spacer size={30} />
