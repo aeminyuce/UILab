@@ -170,8 +170,8 @@ ui.datatable = {
         classes = classes.replace(re, ' ').replace(rex, '');
 
         let html = '<button class="' + classes + '">' +
-                '<svg class="' + ui.datatable.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.datatable.prevIcon + '"/></svg>' +
-            '</button>\n';
+                        '<svg class="' + ui.datatable.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.datatable.prevIcon + '</svg>' +
+                    '</button>\n';
 
         for (let i = min; i <= max; i++) {
 
@@ -191,8 +191,8 @@ ui.datatable = {
 
         classes = classes.replace(re, ' ').replace(rex, '');
         html += '<button class="' + classes + '">' +
-                '<svg class="' + ui.datatable.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.datatable.nextIcon + '"/></svg>' +
-            '</button>\n';
+                    '<svg class="' + ui.datatable.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.datatable.nextIcon + '</svg>' +
+                '</button>\n';
 
         paging[0].innerHTML = '';
         paging[0].insertAdjacentHTML('beforeend', html);
@@ -369,11 +369,7 @@ ui.datatable = {
                     if (!ui.hasClass(el, ui.datatable.nameActive)) {
 
                         ui.removeClass(el, ui.datatable.nameAsc + ' ' + ui.datatable.nameDesc);
-
-                        if (ui.globals.inlineSvg) {
-                            ui.find('.' + ui.datatable.nameIcon, el)[0] = ui.datatable.sortIcon;
-
-                        } else ui.find('.' + ui.datatable.nameIcon + ' use', el)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.sortIcon);
+                        ui.find('.' + ui.datatable.nameIcon, el)[0] = ui.datatable.sortIcon;
 
                     }
 
@@ -390,19 +386,10 @@ ui.datatable = {
                 ui.addClass(this, ui.datatable.nameDesc);
 
                 if (sortType === ui.datatable.sortTypeNumber) {
-
-                    if (ui.globals.inlineSvg) {
-                        ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.descNumberIcon;
-
-                    } else ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descNumberIcon);
+                    ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.descNumberIcon;
 
                 } else {
-
-                    if (ui.globals.inlineSvg) {
-                        ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.descIcon;
-
-                    } else ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.descIcon);
-
+                    ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.descIcon;
                 }
 
             } else {
@@ -411,21 +398,11 @@ ui.datatable = {
                 ui.addClass(this, ui.datatable.nameAsc);
 
                 if (sortType === ui.datatable.sortTypeNumber) {
-
-                    if (ui.globals.inlineSvg) {
-                        ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.ascNumberIcon;
-
-                    } else ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascNumberIcon);
+                    ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.ascNumberIcon;
 
                 } else {
-
-                    if (ui.globals.inlineSvg) {
-                        ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.ascIcon;
-
-                    } else ui.find('.' + ui.datatable.nameIcon + ' use', this)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.datatable.ascIcon);
-
+                    ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.ascIcon;
                 }
-
 
             }
 

@@ -20,8 +20,6 @@ const Calendar = function (
         useEffect(() => {
 
             // icons
-            ui.globals.inlineSvg = true;
-
             ui.calendar.prevIcon = IconArrowLeft;
             ui.calendar.nextIcon = IconArrowRight;
             ui.calendar.backIcon = IconAngleLeft;
@@ -51,8 +49,6 @@ const CalendarPicker = function (
         useEffect(() => {
 
             // icons
-            ui.globals.inlineSvg = true;
-
             ui.calendar.prevIcon = IconArrowLeft;
             ui.calendar.nextIcon = IconArrowRight;
 

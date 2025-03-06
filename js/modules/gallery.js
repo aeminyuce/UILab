@@ -214,48 +214,25 @@ ui.photoGallery = {
             let index = Array.prototype.slice.call(images).indexOf(that);
 
             let html = '<div class="' + ui.photoGallery.targetPreview + ' ' + ui.photoGallery.stylesPreview + '">' +
-                        '<div class="' + ui.photoGallery.namePreviewBg + '"></div>' +
+                            '<div class="' + ui.photoGallery.namePreviewBg + '"></div>' +
 
-                            '<button class="' + ui.photoGallery.namePreviewClose + ' ' + ui.photoGallery.stylesCloseIcon +'">';
-
-            if (ui.globals.inlineSvg) {
-                html += '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.closeIcon;
-
-            } else html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.closeIcon + '"/>';
-
-            html += '</svg>' +
-
+                            '<button class="' + ui.photoGallery.namePreviewClose + ' ' + ui.photoGallery.stylesCloseIcon +'">' +
+                                '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.closeIcon + '</svg>' +
                             '</button>' +
-                            '<button type="button" class="' + ui.photoGallery.namePreviewPrev + ' ' + ui.photoGallery.stylesPreviewBtn + '">';
 
-            if (ui.globals.inlineSvg) {
-                html += '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.prevIcon;
-
-            } else html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.prevIcon + '"/>';
-
-            html += '</svg>' +
-
+                            '<button type="button" class="' + ui.photoGallery.namePreviewPrev + ' ' + ui.photoGallery.stylesPreviewBtn + '">' +
+                                '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.prevIcon + '</svg>' +
                             '</button>' +
-                            '<button type="button" class="' + ui.photoGallery.namePreviewNext + ' ' + ui.photoGallery.stylesPreviewBtn + '">';
 
-            if (ui.globals.inlineSvg) {
-                html += '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.nextIcon;
+                            '<button type="button" class="' + ui.photoGallery.namePreviewNext + ' ' + ui.photoGallery.stylesPreviewBtn + '">' +
+                                '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.nextIcon + '</svg>' +
+                            '</button>' +
 
-            } else html += '<svg class="' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.nextIcon + '"/>';
-
-            html += '</svg>' +
-
-                            '</button>';
-
-            if (ui.globals.inlineSvg) {
-                html += '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.photoGallery.loaderIcon;
-
-            } else html += '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.photoGallery.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon + '"/>';
-
-            html += '</svg>' +
+                            '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.loaderIcon + '</svg>' +
                             '<span class="' + ui.photoGallery.namePreviewInfo + ' ' + ui.photoGallery.stylesPreview + '"></span>' +
 
                             '<img class="' + ui.photoGallery.stylesPreview + '">' +
+
                         '</div>';
 
             ui.find('body')[0].insertAdjacentHTML('beforeend', html);
@@ -294,9 +271,7 @@ ui.photoGallery = {
             const notLoadedImage = () => {
 
                 ui.addClass(loader, ui.photoGallery.namePause);
-
-                if (ui.globals.inlineSvg) loader.innerHTML = ui.photoGallery.errorIcon;
-                else ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.errorIcon);
+                loader.innerHTML = ui.photoGallery.errorIcon;
 
             }
 
@@ -411,9 +386,7 @@ ui.photoGallery = {
                 loader.style.display = 'block';
 
                 ui.removeClass(loader, ui.photoGallery.namePause);
-
-                if (ui.globals.inlineSvg) loader.innerHTML = ui.photoGallery.loaderIcon;
-                else ui.find('use', loader)[0].setAttribute('href', ui.globals.iconSrc + '#' + ui.photoGallery.loaderIcon);
+                loader.innerHTML = ui.photoGallery.loaderIcon;
 
                 toggleGalleryTools();
 

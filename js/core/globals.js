@@ -29,10 +29,7 @@ export const ui = {
         svgElems: ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text', 'lineargradient'],
 
         // icons
-        iconSrc: '../dist/icons.svg', // IE not support SVG external reference!
-
-        inlineSvg: false,
-        inlineSvgViewBox: '0 0 264 264',
+        svgIconViewBox: '0 0 264 264',
 
         // data attributes
         dataPrefix: 'data-ui-',

@@ -14,7 +14,6 @@ export default function TopButton() {
     useEffect(() => {
 
         // icons
-        ui.globals.inlineSvg = true;
         ui.topButton.icon = IconArrowToTop;
 
         // settings

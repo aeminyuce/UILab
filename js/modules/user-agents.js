@@ -87,7 +87,6 @@ ui.onload(() => {
     if (ua.indexOf("MSIE ") > 0 || !!document.documentMode || ua.indexOf('edge') > -1) {
 
         ui.userAgents.ie = true;
-        ui.globals.iconSrc = ''; // IE not support SVG external reference!
 
         classes.push(ui.userAgents.nameIE);
         out(ui.userAgents.nameChrome);

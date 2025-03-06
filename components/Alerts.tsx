@@ -15,7 +15,6 @@ const AlertsDialog = function (
     { msg, success, error, custom, callback }:AlertsDialogProps) {
 
         // icons
-        ui.globals.inlineSvg = true;
         ui.alerts.closeIcon = IconRemove;
 
         // messages

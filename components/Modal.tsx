@@ -125,7 +125,6 @@ export const modalOpen = function (
         ui.modal.stylesContent = 'ui-round ui-shadow-lg ui-ease-layout';
 
         // icons
-        ui.globals.inlineSvg = true;
         ui.modal.closeIcon = IconRemove;
 
         // sizes

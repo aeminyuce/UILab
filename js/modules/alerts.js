@@ -183,17 +183,9 @@ ui.alerts = {
                 // create close icon
                 cancelCloseDialog = true;
 
-                closeBtn = '<button class="' + ui.alerts.nameCloseDialog + ' ' + ui.alerts.stylesCloseDialog + '">';
-
-                if (ui.globals.inlineSvg) {
-                    closeBtn += '<svg class="' + ui.alerts.nameIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.alerts.closeIcon;
-
-                } else {
-                    closeBtn += '<svg class="' + ui.alerts.nameIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.alerts.closeIcon + '"/>';
-                }
-
-                closeBtn += '</svg>' +
-                        '</button>';
+                closeBtn = '<button class="' + ui.alerts.nameCloseDialog + ' ' + ui.alerts.stylesCloseDialog + '">' +
+                                '<svg class="' + ui.alerts.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.alerts.closeIcon + '</svg>' +
+                            '</button>';
             }
 
             // create dialog
@@ -201,16 +193,17 @@ ui.alerts = {
 
             let html = '<div class="' + ui.alerts.targetDialog + ' ' + ui.alerts.stylesDialog + '">' +
 
-                        closeBtn +
+                            closeBtn +
 
-                        '<div class="' + ui.alerts.nameDialogMsg + '">' +
-                            props.msg +
-                        '</div>' +
-                        '<div class="' + ui.alerts.nameDialogBtnHolder + ' ' + ui.alerts.stylesDialogBtnHolder + '">' +
-                            buttons +
-                        '</div>' +
+                            '<div class="' + ui.alerts.nameDialogMsg + '">' +
+                                props.msg +
+                            '</div>' +
 
-                    '</div>';
+                            '<div class="' + ui.alerts.nameDialogBtnHolder + ' ' + ui.alerts.stylesDialogBtnHolder + '">' +
+                                buttons +
+                            '</div>' +
+
+                        '</div>';
 
             if (bgOld === undefined) {
 

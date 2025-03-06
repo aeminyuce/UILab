@@ -28,15 +28,9 @@ ui.topButton = {
 
     var togglerFnc = () => {
 
-        var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + ' ' + ui.topButton.nameOpen + '" title="' + ui.topButton.titleText + '">';
-
-        if (ui.globals.inlineSvg) {
-            html += '<svg class="' + ui.topButton.stylesIcon + '" viewBox="' + ui.globals.inlineSvgViewBox + '">' + ui.topButton.icon;
-
-        } else html += '<svg class="' + ui.topButton.stylesIcon + '"><use href="' + ui.globals.iconSrc + '#' + ui.topButton.icon + '"/>';
-
-        html += '</svg>' +
-            '</button>';
+        var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + ' ' + ui.topButton.nameOpen + '" title="' + ui.topButton.titleText + '">' +
+                        '<svg class="' + ui.topButton.stylesIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.topButton.icon + '</svg>' +
+                    '</button>';
 
         var topBtn;
 
