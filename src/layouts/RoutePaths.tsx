@@ -8,7 +8,8 @@ import PageTitle from '@layouts/PageTitle';
 // utils
 import {
     Home,
-    Calendar
+    Calendar,
+    SvgIcons
 } from '@utils/RouteComponents';
 
 export default function RoutePaths() {
@@ -20,6 +21,9 @@ export default function RoutePaths() {
                 } />
                 <Route path='calendar' element={
                     <PageTitle title='Calendar'><Calendar /></PageTitle>
+                } />
+                <Route path='icons' element={
+                    <PageTitle title='Icons'><SvgIcons /></PageTitle>
                 } />
             </Routes>
         </Suspense>

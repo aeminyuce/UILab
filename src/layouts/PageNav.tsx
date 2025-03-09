@@ -53,8 +53,8 @@ export default function PageNav() {
     const headerHeight = 62; // px
 
     return (
-        <Grid.Col size={pageNavWidth} className='ui-border-r ui-border-light ui-hidden-md'>
-            <div className='ui-scroll ui-scrollbar-round ui-scrollbar-faded ui-set-fixed ui-set-v' style={{ width: `${pageNavWidth - 1}px`, top: `${headerHeight}px` }}>
+        <Grid.Col size={pageNavWidth} className='ui-hidden-md'>
+            <div className='ui-scroll ui-scrollbar-round ui-border-r ui-border-light ui-scrollbar-faded ui-set-fixed ui-set-v' style={{ width: `${pageNavWidth - 1}px`, top: `${headerHeight}px` }}>
                 <div className='ui-font-18 ui-m-15 ui-p-2-l'>Docs</div>
                 <div className='ui-sidebar-add-r'>
                     <ul className='ui-list-unstyled ui-align-l ui-block-2nd ui-ease-2nd-btn'>
