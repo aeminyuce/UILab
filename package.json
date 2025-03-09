@@ -54,7 +54,7 @@
     "icon:sprite:commerce": "svgstore -o icon/sprite/commerce.svg icon/svg/commerce/*.svg",
     "icon:sprite:files": "svgstore -o icon/sprite/files.svg icon/svg/files/*.svg",
     "icon:sprite:general": "svgstore -o icon/sprite/general.svg icon/svg/general/*.svg",
-    "icon:sprite:kitchen": "svgstore -o icon/sprite/kitchen.svg icon/kitchen/*.svg",
+    "icon:sprite:kitchen": "svgstore -o icon/sprite/kitchen.svg icon/svg/kitchen/*.svg",
     "icon:sprite:media": "svgstore -o icon/sprite/media.svg icon/svg/media/*.svg",
     "icon:sprite:real-estate": "svgstore -o icon/sprite/real-estate.svg icon/svg/real-estate/*.svg",
     "icon:sprite:social": "svgstore -o icon/sprite/social.svg icon/svg/social/*.svg",

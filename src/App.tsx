@@ -13,6 +13,8 @@ import TopButton from '@components/TopButton';
 import RoutePaths from '@layouts/RoutePaths';
 
 // assets
+import "../less/helpers/iconlist.less";
+
 import { IconDribbble } from '@icon/js/social/dribbble';
 import { IconGithub } from '@icon/js/social/github';
 import { IconBarsLeft } from '@icon/js/general/bars-left';

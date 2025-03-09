@@ -1,0 +1,23 @@
+[
+    {
+        "category": "General",
+        "icons": [
+            "angle-down",
+            "angle-left",
+            "angle-right",
+            "angle-up",
+            "arrow-down",
+            "arrow-left",
+            "arrow-right",
+            "arrow-up"
+        ]
+    },
+    {
+        "category": "Files",
+        "icons": [
+            "file",
+            "files",
+            "file-check"
+        ]
+    }
+]

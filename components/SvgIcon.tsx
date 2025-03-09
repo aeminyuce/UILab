@@ -19,19 +19,29 @@ export default function SvgIcon(
 
         // get svg path
         const getPath = (str: string) => {
-            const pathMatch = str.match(/\s+d=['"]([^'"]*)['"]/);
-            return pathMatch ? pathMatch[1] : '';
+            const pathMatch = str.match(/<path[^>]*>/g);
+
+            let pathTags = [];
+            if (pathMatch) pathMatch.map((path: string) => pathTags.push(path));
+
+            return pathTags;
+        }
+
+        // get svg path d='' attribute
+        const getPathAttr = (str: string) => {
+            const pathAttrMatch = str.match(/\s+d=['"]([^'"]*)['"]/g);
+            return pathAttrMatch ? pathAttrMatch[0].replace(" d=", "").replace(/\'/g, '') : '';
         }
 
         // get svg viewbox
         const getViewbox = (str: string) => {
-            const viewBoxMatch = str.match(/\s+viewBox=['"]([^'"]*)['"]/);
-            return viewBoxMatch ? viewBoxMatch[1] : null;
+            const viewBoxMatch = str.match(/\s+viewBox=['"]([^'"]*)['"]/g);
+            return viewBoxMatch ? viewBoxMatch[0].replace(" viewBox=", "").replace(/\'/g, '') : null;
         }
 
         // get svg symbol
         const getSymbol = (id: string, str: string) => {
-            const re = `<symbol id=['"]${id}['"][^]*<\/symbol>`;
+            const re = `<symbol id=['"]${id}['"][^]*?<\/symbol>`;
             const rex = new RegExp(re, 'g');
             const symbolMatch = str.match(rex);
 
@@ -68,16 +78,19 @@ export default function SvgIcon(
             if (as === 'file') {
                 return (
                     <svg className={classes} style={style} viewBox={getViewbox(loadSrc)}>
-                        <path d={getPath(loadSrc)} />
+                        <path d={getPathAttr(loadSrc)} />
                     </svg>
                 )
             }
             if (as === 'sprite') {
                 const loadSymbol = getSymbol(symbolId, loadSrc);
+                const pathItems = getPath(loadSymbol); // for mutliple paths
 
                 return (
                     <svg className={classes} style={style} viewBox={getViewbox(loadSymbol)}>
-                        <path d={getPath(loadSymbol)} />
+                        {pathItems && pathItems.map((path: string, i: number) => {
+                            return <path key={symbolId + i} d={getPathAttr(path)} />
+                        })}
                     </svg>
                 )
             }
