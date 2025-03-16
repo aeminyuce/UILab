@@ -47,6 +47,66 @@ const getPath = (data) => {
     return pathAttribute;
 }
 
+// save json file
+const saveJsonFile = (results) => {
+    const resultsStr = JSON.stringify(results, null, 2);
+
+    fs.writeFile('icons-list.json', resultsStr.toString(), (e) => {
+        if (e) throw e;
+        console.log('icons-list.json file saved!');
+    });
+}
+
+// read and update json file
+const updateJsonFile = (categoryJson) => {
+    fs.readFile('icons-list.json', {encoding: 'utf-8'}, (err, data) => {
+        if (!err) {
+            try {
+                const results = JSON.parse(data);
+                let categoryMatch = false;
+
+                results.forEach((item) => {
+                    if (item.category === args.cName) {
+                        item.icons = categoryJson.icons;
+                        categoryMatch = true;
+                    }
+                });
+
+                if (!categoryMatch) {
+                    results.push(categoryJson);
+                }
+
+                saveJsonFile(results);
+            }
+            catch (e) {
+                const results = [].concat(categoryJson);
+                saveJsonFile(results);
+            }
+        } else throw err;
+    });
+}
+
+const addJson = (iconsList) => {
+    // create category json
+    const categoryJson = {
+        category: args.cName, // category name
+        icons: iconsList
+    };
+
+    // add icons json to main json
+    updateJsonFile(categoryJson);
+}
+
+const newIconsList = []; // new icons list array
+
+const addIcon = (name, isFinished) => {
+    newIconsList.push(name);
+
+    if (isFinished) {
+        addJson(newIconsList);
+    }
+}
+
 // read files from folder
 const directoryPath = path.join(__dirname, args.src); // source folder name
 
@@ -54,21 +114,25 @@ fs.readdir(directoryPath, (err, files) => {
     if (err) throw `Unable to scan directory: ${err}`;
 
     // read SVG files
-    files.forEach((fileName) => {
+    files.forEach((fileName, index) => {
         const iconPath = `${directoryPath}\\${fileName}`;
 
         fs.readFile(iconPath, {encoding: 'utf-8'}, (err, data) => {
             if (!err) {
 
                 // create JS files
+                const name = fileName.split('.')[0];
                 const code = generateCode(fileName, getPath(data));
-                const jsFilename = `${fileName.split('.')[0]}.js`;
+                const jsFilename = `${name}.js`;
 
                 const outputPath = path.join(__dirname, args.dest, jsFilename); // destination folder name
-                fs.writeFile(outputPath, code, (e) => {
-                    if (e) throw e;
-                    console.log(`${jsFilename} created in ${outputPath} folder!`);
-                });
+                // fs.writeFile(outputPath, code, (e) => {
+                //     if (e) throw e;
+                //     console.log(`${jsFilename} created in ${outputPath} folder!`);
+                // });
+
+                // add icons for json file
+                addIcon(name, index + 1 === files.length);
 
             } else throw err;
         });
