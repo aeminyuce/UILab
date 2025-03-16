@@ -6,8 +6,8 @@ import { ui } from '../js/core/globals';
 import Form from './Form';
 import SvgIcon from './SvgIcon';
 
-import { IconArrowLeft, IconArrowRight, IconAngleLeft, IconCalendar } from './utils/assets';
-import { CalendarProps, CalendarPickerProps } from './utils/models';
+import { IconArrowLeft, IconArrowRight, IconAngleLeft, IconCalendar } from './utils/Assets';
+import { CalendarProps, CalendarPickerProps } from './utils/Models';
 
 // assets
 import '../less/modules/calendar';

@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
 // utils
-import { GridContainerProps, GridRowProps, GridColProps, GridStaticProps } from './utils/models';
+import { GridContainerProps, GridRowProps, GridColProps, GridStaticProps } from './utils/Models';
 
 // assets
 import '../less/modules/grid';

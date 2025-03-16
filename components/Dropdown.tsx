@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // utils
-import { DropdownProps, DropdownMenuProps, DropdownItemProps } from './utils/models';
+import { DropdownProps, DropdownMenuProps, DropdownItemProps } from './utils/Models';
 
 // assets
 import '../less/modules/dropdown';

@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
 // utils
-import { IconArrowToTop } from './utils/assets';
+import { IconArrowToTop } from './utils/Assets';
 
 // assets
 import '../less/modules/top-button';

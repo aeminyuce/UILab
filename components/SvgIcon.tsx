@@ -2,7 +2,7 @@ import * as React from 'react';
 import { createElement } from 'react';
 
 // utils
-import { SvgIconProps } from './utils/models';
+import { SvgIconProps } from './utils/Models';
 
 // assets
 import '../less/modules/icons';

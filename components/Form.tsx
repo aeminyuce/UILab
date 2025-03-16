@@ -5,10 +5,10 @@ import { ui } from '../js/core/globals';
 // utils
 import Button from './Button';
 import SvgIcon from './SvgIcon';
-import { FormLabelProps, FormInputProps, FormFileProps, FormTextareaProps, FormSelectProps, FormCheckProps, FormRequiredMessageProps, FormHintProps } from './utils/models';
+import { FormLabelProps, FormInputProps, FormFileProps, FormTextareaProps, FormSelectProps, FormCheckProps, FormRequiredMessageProps, FormHintProps } from './utils/Models';
 
 // utils
-import { IconAngleDown, IconPlus } from './utils/assets';
+import { IconAngleDown, IconPlus } from './utils/Assets';
 
 // assets
 import '../less/modules/autocomplete';

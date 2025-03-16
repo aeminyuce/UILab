@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // utils
-import { SidebarProps, SidebarTitleProps, SidebarContentProps } from './utils/models';
+import { SidebarProps, SidebarTitleProps, SidebarContentProps } from './utils/Models';
 
 // assets
 import '../less/modules/sidebar';

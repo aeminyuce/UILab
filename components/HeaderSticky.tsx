@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { ui } from '../js/core/globals';
 
 // utils
-import { HeaderStickyProps } from './utils/models';
+import { HeaderStickyProps } from './utils/Models';
 
 // assets
 import '../less/modules/header-sticky';
