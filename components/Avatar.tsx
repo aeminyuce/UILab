@@ -6,30 +6,31 @@ import { AvatarProps } from './utils/models';
 // assets
 import '../less/modules/avatars';
 
-export default function Avatar(
+export default function Avatar(props:AvatarProps) {
 
-    { children, onClick, onMouseDown, onMouseUp, size, title, className, data, style }:AvatarProps) {
+    const { children, onClick, onMouseDown, onMouseUp, size, title, className, data, style } = props;
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const setSize = size ? ` ui-avatar-${size}` : '';
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const setSize = size ? ` ui-avatar-${size}` : '';
 
-        const classes = `ui-avatar${setSize}${setClassName}`;
+    const classes = `ui-avatar${setSize}${setClassName}`;
 
-        // data attributes
-        let setData = [];
+    // data attributes
+    let setData = [];
 
-        for (const name in data) {
+    for (const name in data) {
 
-            const attr = `data-ui-${name}`;
-            setData[attr] = data[name];
+        const attr = `data-ui-${name}`;
+        setData[attr] = data[name];
 
-        }
-
-        return (
-            <span className={classes} {...setData} style={style} title={title}
-                onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
-                    {children}
-            </span>
-        );
     }
+
+    return (
+        <span className={classes} {...setData} style={style} title={title}
+            onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
+                {children}
+        </span>
+    );
+
+}

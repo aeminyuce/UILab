@@ -11,38 +11,40 @@ import '../js/modules/pie-chart';
 
 const PieChart = function () {}
 
-const PieChartHolder = function (
+const PieChartHolder = function (props:PieChartHolderProps) {
 
-    { children, info, className, style }:PieChartHolderProps) {
+    const { children, info, className, style } = props;
 
-        useEffect(() => {
+    useEffect(() => {
 
-            // inits
-            ui.pieChart.Init();
+        // inits
+        ui.pieChart.Init();
 
-        });
+    });
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-pie-chart${setClassName} ui-ease-pie-chart`;
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-pie-chart${setClassName} ui-ease-pie-chart`;
 
-        return (
-            <div className={classes} style={style} data-ui-info={info}>
-                <ul>
-                    {children}
-                </ul>
-            </div>
-        );
-    }
+    return (
+        <div className={classes} style={style} data-ui-info={info}>
+            <ul>
+                {children}
+            </ul>
+        </div>
+    );
 
-const PieChartItem = function (
+}
 
-    { percent, fill, customName, title }:PieChartItemProps) {
+const PieChartItem = function (props:PieChartItemProps) {
 
-        return (
-            <li data-ui-percent={percent} data-ui-custom={customName} data-ui-fill={fill} data-ui-title={title}></li>
-        );
-    }
+    const { percent, fill, customName, title } = props;
+
+    return (
+        <li data-ui-percent={percent} data-ui-custom={customName} data-ui-fill={fill} data-ui-title={title}></li>
+    );
+
+}
 
 export default Object.assign(PieChart, {
     Holder: PieChartHolder,

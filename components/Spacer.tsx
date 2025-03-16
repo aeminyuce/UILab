@@ -3,13 +3,14 @@ import * as React from 'react';
 // utils
 import { SpacerProps } from './utils/models';
 
-export default function Spacer(
+export default function Spacer(props:SpacerProps) {
 
-    { size, className, style }:SpacerProps) {
+    const { size, className, style } = props;
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-sp-${size}${setClassName}`;
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-sp-${size}${setClassName}`;
 
-        return <span className={classes} style={style}></span>
-    }
+    return <span className={classes} style={style}></span>
+
+}

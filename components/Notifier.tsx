@@ -6,19 +6,20 @@ import { NotifierProps } from './utils/models';
 // assets
 import '../less/modules/notifier';
 
-export default function Notifier(
+export default function Notifier(props:NotifierProps) {
 
-    { children, lg, className, dataVal, style }:NotifierProps) {
+    const { children, lg, className, dataVal, style } = props;
 
-        // classes
-        const setLarge = lg ? ' ui-notifier-lg' : '';
-        const setClassName = className ? ` ${className}` : '';
+    // classes
+    const setLarge = lg ? ' ui-notifier-lg' : '';
+    const setClassName = className ? ` ${className}` : '';
 
-        const classes = dataVal ? `ui-notifier${setLarge}${setClassName}` : undefined;
+    const classes = dataVal ? `ui-notifier${setLarge}${setClassName}` : undefined;
 
-        return (
-            <span className={classes} data-ui-val={dataVal} style={style}>
-                {children}
-            </span>
-        );
-    }
+    return (
+        <span className={classes} data-ui-val={dataVal} style={style}>
+            {children}
+        </span>
+    );
+
+}

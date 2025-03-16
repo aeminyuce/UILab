@@ -6,51 +6,54 @@ import { ListgroupProps, ListgroupListProps, ListgroupItemProps } from './utils/
 // assets
 import '../less/modules/listgroup';
 
-const Listgroup = function (
+const Listgroup = function (props:ListgroupProps) {
 
-    { children, className, style }:ListgroupProps) {
+    const { children, className, style } = props;
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-listgroup${setClassName}`;
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-listgroup${setClassName}`;
 
-        return (
-            <div className={classes} style={style}>
-                {children}
-            </div>
-        );
-    }
+    return (
+        <div className={classes} style={style}>
+            {children}
+        </div>
+    );
+
+}
 
 
-const ListgroupList = function (
+const ListgroupList = function (props:ListgroupListProps) {
 
-    { children, iconSize, avatarSize, className, style }:ListgroupListProps) {
+    const { children, iconSize, avatarSize, className, style } = props;
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
+    // classes
+    const setClassName = className ? ` ${className}` : '';
 
-        const setIconSize = iconSize ? ` ui-listgroup-has-icon-${iconSize}` : '';
-        const setAvatarSize = avatarSize ? ` ui-listgroup-has-avatar-${avatarSize}` : '';
+    const setIconSize = iconSize ? ` ui-listgroup-has-icon-${iconSize}` : '';
+    const setAvatarSize = avatarSize ? ` ui-listgroup-has-avatar-${avatarSize}` : '';
 
-        const classes = `ui-ease-listgroup${setIconSize}${setAvatarSize}${setClassName}`;
+    const classes = `ui-ease-listgroup${setIconSize}${setAvatarSize}${setClassName}`;
 
-        return (
-            <ul className={classes} style={style}>
-                {children}
-            </ul>
-        );
-    }
+    return (
+        <ul className={classes} style={style}>
+            {children}
+        </ul>
+    );
 
-const ListgroupItem = function (
+}
 
-    { children, onClick, onMouseDown, onMouseUp, className, style }:ListgroupItemProps) {
+const ListgroupItem = function (props:ListgroupItemProps) {
 
-        return (
-            <li className={className} style={style} onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
-                {children}
-            </li>
-        );
-    }
+    const { children, onClick, onMouseDown, onMouseUp, className, style } = props;
+
+    return (
+        <li className={className} style={style} onClick={onClick} onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
+            {children}
+        </li>
+    );
+
+}
 
 export default Object.assign(Listgroup, {
     List: ListgroupList,

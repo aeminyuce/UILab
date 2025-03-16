@@ -6,53 +6,55 @@ import { StepsProps, StepsItemProps } from './utils/models';
 // assets
 import '../less/modules/steps';
 
-const Steps = function (
+const Steps = function (props:StepsProps) {
 
-    { children, hasInfo, hasIcon, className, style }:StepsProps) {
+    const { children, hasInfo, hasIcon, className, style } = props;
 
-        // classes
-        const setHasInfo = hasInfo ? ' ui-steps-info' : '';
-        const setHasIcon = hasIcon ? ' ui-steps-icon' : '';
+    // classes
+    const setHasInfo = hasInfo ? ' ui-steps-info' : '';
+    const setHasIcon = hasIcon ? ' ui-steps-icon' : '';
 
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-steps-bar${setClassName}${setHasInfo}${setHasIcon}`;
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-steps-bar${setClassName}${setHasInfo}${setHasIcon}`;
 
-        return (
-            <ul className={classes} style={style}>
-                {children}
-            </ul>
-        );
-    }
+    return (
+        <ul className={classes} style={style}>
+            {children}
+        </ul>
+    );
 
-const StepsItem = function (
+}
 
-    { children, onClick, active, infoText, tooltipText, className, style }:StepsItemProps) {
+const StepsItem = function (props:StepsItemProps) {
 
-        // classes
-        const setActive = active ? 'ui-active' : '';
+    const { children, onClick, active, infoText, tooltipText, className, style } = props;
 
-        const setClassName = className ? ` ${className}` : '';
-        const classes = setActive + setClassName;
+    // classes
+    const setActive = active ? 'ui-active' : '';
 
-        // data attributes
-        const setTooltip = tooltipText ? true : null;
+    const setClassName = className ? ` ${className}` : '';
+    const classes = setActive + setClassName;
 
-        return (
-            <li className={classes} style={style} onClick={onClick}>
-                {children}
+    // data attributes
+    const setTooltip = tooltipText ? true : null;
 
-                {tooltipText ?
-                    <span data-ui-tooltip={setTooltip} title={tooltipText}>
-                        {infoText}
-                    </span>
-                    :
-                    <>
-                    {infoText && <span>{infoText}</span>}
-                    </>
-                }
-            </li>
-        );
-    }
+    return (
+        <li className={classes} style={style} onClick={onClick}>
+            {children}
+
+            {tooltipText ?
+                <span data-ui-tooltip={setTooltip} title={tooltipText}>
+                    {infoText}
+                </span>
+                :
+                <>
+                {infoText && <span>{infoText}</span>}
+                </>
+            }
+        </li>
+    );
+
+}
 
 export default Object.assign(Steps, {
     Item: StepsItem,

@@ -7,57 +7,59 @@ import { BreadcrumbsProps, BreadcrumbsItemProps } from './utils/models';
 // assets
 import '../less/modules/breadcrumbs';
 
-const Breadcrumbs = function (
+const Breadcrumbs = function (props:BreadcrumbsProps) {
 
-    { children, className, style }:BreadcrumbsProps) {
+    const { children, className, style } = props;
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-breadcrumbs${setClassName}`;
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-breadcrumbs${setClassName}`;
 
-        return (
-            <nav className={classes} style={style}>
-                <ul>
-                    {children}
-                </ul>
-            </nav>
-        );
+    return (
+        <nav className={classes} style={style}>
+            <ul>
+                {children}
+            </ul>
+        </nav>
+    );
+
+}
+
+const BreadcrumbsItem = function (props:BreadcrumbsItemProps) {
+
+    const { children, to, className, data, style } = props;
+
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = setClassName;
+
+    // data attributes
+    let setData = [];
+
+    for (const name in data) {
+
+        const attr = `data-ui-${name}`;
+        setData[attr] = data[name];
+
     }
 
-const BreadcrumbsItem = function (
-
-    { children, to, className, data, style }:BreadcrumbsItemProps) {
-
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = setClassName;
-
-        // data attributes
-        let setData = [];
-
-        for (const name in data) {
-
-            const attr = `data-ui-${name}`;
-            setData[attr] = data[name];
-
-        }
-
-        return (
-            <>
-            {to ? (
-                <li>
-                    <Link to={to} className={classes} {...setData} style={style}>
-                        {children}
-                    </Link>
-                </li>
-            ) : (
-                <li className={classes} {...setData} style={style}>
+    return (
+        <>
+        {to ? (
+            <li>
+                <Link to={to} className={classes} {...setData} style={style}>
                     {children}
-                </li>
-            )}
-            </>
-        );
-    }
+                </Link>
+            </li>
+        ) : (
+            <li className={classes} {...setData} style={style}>
+                {children}
+            </li>
+        )}
+        </>
+    );
+
+}
 
 export default Object.assign(Breadcrumbs, {
     Item: BreadcrumbsItem,

@@ -13,67 +13,69 @@ import { CalendarProps, CalendarPickerProps } from './utils/models';
 import '../less/modules/calendar';
 import '../js/modules/calendar';
 
-const Calendar = function (
+const Calendar = function (props:CalendarProps) {
 
-    { className, style }:CalendarProps) {
+    const { className, style } = props;
 
-        useEffect(() => {
+    useEffect(() => {
 
-            // icons
-            ui.calendar.prevIcon = IconArrowLeft;
-            ui.calendar.nextIcon = IconArrowRight;
-            ui.calendar.backIcon = IconAngleLeft;
+        // icons
+        ui.calendar.prevIcon = IconArrowLeft;
+        ui.calendar.nextIcon = IconArrowRight;
+        ui.calendar.backIcon = IconAngleLeft;
 
-        }, []);
+    }, []);
 
-        useEffect(() => {
+    useEffect(() => {
 
-            // init
-            ui.calendar.Init();
+        // init
+        ui.calendar.Init();
 
-        }, [className, style]);
+    }, [className, style]);
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-calendar ui-ease-calendar${setClassName}`;
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-calendar ui-ease-calendar${setClassName}`;
 
-        return (
-            <div className={classes} style={style}></div>
-        );
-    }
+    return (
+        <div className={classes} style={style}></div>
+    );
 
-const CalendarPicker = function (
+}
 
-    { onChange, onInput, onBlur, name, tabIndex, value, defaultValue, placeholder, disabled, autoComplete, number, numberFloat, required, minlength, maxlength, myRef, id, className, style }:CalendarPickerProps) {
+const CalendarPicker = function (props:CalendarPickerProps) {
 
-        useEffect(() => {
+    const { onChange, onInput, onBlur, name, tabIndex, value, defaultValue, placeholder, disabled, autoComplete, number, numberFloat, required, minlength, maxlength, myRef, id, className, style } = props;
 
-            // icons
-            ui.calendar.prevIcon = IconArrowLeft;
-            ui.calendar.nextIcon = IconArrowRight;
+    useEffect(() => {
 
-        }, []);
+        // icons
+        ui.calendar.prevIcon = IconArrowLeft;
+        ui.calendar.nextIcon = IconArrowRight;
 
-        useEffect(() => {
+    }, []);
 
-            // init
-            ui.calendar.Init();
+    useEffect(() => {
 
-        }, [className, style]);
+        // init
+        ui.calendar.Init();
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-calendar-picker ui-form-icon-l${setClassName}`;
+    }, [className, style]);
 
-        return (
-            <Form.Input id={id} myRef={myRef} name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} placeholder={placeholder}
-                 autoComplete={autoComplete} required={required} className={classes} style={style} disabled={disabled}
-                 number={number} numberFloat={numberFloat} minlength={minlength} maxlength={maxlength}
-                 onChange={onChange} onInput={onInput} onBlur={onBlur}>
-                    <SvgIcon as='path' src={IconCalendar} />
-            </Form.Input>
-        );
-    }
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-calendar-picker ui-form-icon-l${setClassName}`;
+
+    return (
+        <Form.Input id={id} myRef={myRef} name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} placeholder={placeholder}
+                autoComplete={autoComplete} required={required} className={classes} style={style} disabled={disabled}
+                number={number} numberFloat={numberFloat} minlength={minlength} maxlength={maxlength}
+                onChange={onChange} onInput={onInput} onBlur={onBlur}>
+                <SvgIcon as='path' src={IconCalendar} />
+        </Form.Input>
+    );
+
+}
 
 export default Object.assign(Calendar, {
     Picker: CalendarPicker,

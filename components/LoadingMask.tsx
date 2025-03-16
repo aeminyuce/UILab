@@ -4,6 +4,6 @@ import { ui } from '../js/core/globals';
 import '../less/modules/loading-mask';
 import '../js/modules/loading-mask';
 
-export default function LoadingMask( { toggle }:any ) {
+export default function LoadingMask(toggle: any) {
     ui.loadingMask.toggle(toggle);
 }

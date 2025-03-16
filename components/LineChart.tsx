@@ -11,102 +11,105 @@ import '../js/modules/line-chart';
 
 const LineChart = function () {}
 
-const LineChartHolder = function (
+const LineChartHolder = function (props:LineChartHolderProps) {
 
-    { children, x, step, size, prefix, suffix, sep, showGrid, showGridRootsOnly, showGridText, gridStroke, showInfo, showInfoStats, className, style }:LineChartHolderProps) {
+    const { children, x, step, size, prefix, suffix, sep, showGrid, showGridRootsOnly, showGridText, gridStroke, showInfo, showInfoStats, className, style } = props;
 
-        // settings
-        const setShowGrid = showGrid ? showGrid : false;
-        const setShowGridRootsOnly = showGridRootsOnly ? showGridRootsOnly : false;
-        const setShowGridText = showGridText ? showGridText : false;
-        const setGridStoke = gridStroke ? gridStroke : 0;
-        const setShowInfo = showInfo ? showInfo : false;
-        const setShowInfoStats = showInfoStats ? showInfoStats : false;
+    // settings
+    const setShowGrid = showGrid ? showGrid : false;
+    const setShowGridRootsOnly = showGridRootsOnly ? showGridRootsOnly : false;
+    const setShowGridText = showGridText ? showGridText : false;
+    const setGridStoke = gridStroke ? gridStroke : 0;
+    const setShowInfo = showInfo ? showInfo : false;
+    const setShowInfoStats = showInfoStats ? showInfoStats : false;
 
-        useEffect(() => {
+    useEffect(() => {
 
-            // values
-            ui.lineChart.colors = RandomColors(10);
-            ui.lineChart.showGrid = setShowGrid;
-            ui.lineChart.showGridRootsOnly = setShowGridRootsOnly;
-            ui.lineChart.showGridText = setShowGridText;
-            ui.lineChart.gridStroke = setGridStoke;
-            ui.lineChart.showInfo = setShowInfo;
-            ui.lineChart.showInfoStats = setShowInfoStats;
+        // values
+        ui.lineChart.colors = RandomColors(10);
+        ui.lineChart.showGrid = setShowGrid;
+        ui.lineChart.showGridRootsOnly = setShowGridRootsOnly;
+        ui.lineChart.showGridText = setShowGridText;
+        ui.lineChart.gridStroke = setGridStoke;
+        ui.lineChart.showInfo = setShowInfo;
+        ui.lineChart.showInfoStats = setShowInfoStats;
 
-        }, []);
+    }, []);
 
-        useEffect(() => {
+    useEffect(() => {
 
-            // init
-            ui.lineChart.Init();
+        // init
+        ui.lineChart.Init();
 
-        }, [className, style]);
+    }, [className, style]);
 
-        useEffect(() => {
+    useEffect(() => {
 
-            // inits for loaded charts
-            ui.lineChart.Init(ui.lineChart.nameLoaded);
+        // inits for loaded charts
+        ui.lineChart.Init(ui.lineChart.nameLoaded);
 
-        }, [x]);
+    }, [x]);
 
-        const setSize = size ? `${size.rows},${size.rowsHeight}` : null;
+    const setSize = size ? `${size.rows},${size.rowsHeight}` : null;
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-line-chart-holder${setClassName} ui-ease-line-chart`;
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-line-chart-holder${setClassName} ui-ease-line-chart`;
 
-        return (
-            <div
-                className={classes} style={style} data-ui-x={x}
-                data-ui-size={setSize} data-ui-step={step}
-                data-ui-prefix={prefix} data-ui-suffix={suffix} data-ui-sep={sep}>
-                    {children}
-            </div>
-        );
-    }
+    return (
+        <div
+            className={classes} style={style} data-ui-x={x}
+            data-ui-size={setSize} data-ui-step={step}
+            data-ui-prefix={prefix} data-ui-suffix={suffix} data-ui-sep={sep}>
+                {children}
+        </div>
+    );
 
-const LineChartLine = function (
+}
 
-    { children, name, noSelected, curved, dotted, dashed, filled, noCircles, noRepeatedCircles, onlyRepeated }:LineChartLineProps) {
+const LineChartLine = function (props:LineChartLineProps) {
 
-        // types
-        const setCurved = curved ? ' curved' : '';
-        const setDotted = dotted ? ' dotted' : '';
-        const setDashed = dashed ? ' dashed' : '';
-        const setFilled = filled ? ' filled' : '';
+    const { children, name, noSelected, curved, dotted, dashed, filled, noCircles, noRepeatedCircles, onlyRepeated } = props;
 
-        let setType = setCurved + setDotted + setDashed + setFilled;
-        setType = setType.replace(/^\s+/g, ''); // remove first spaces
+    // types
+    const setCurved = curved ? ' curved' : '';
+    const setDotted = dotted ? ' dotted' : '';
+    const setDashed = dashed ? ' dashed' : '';
+    const setFilled = filled ? ' filled' : '';
 
-        // classes
-        const classes = 'ui-line-chart';
+    let setType = setCurved + setDotted + setDashed + setFilled;
+    setType = setType.replace(/^\s+/g, ''); // remove first spaces
 
-        return (
-            <ul
-                className={classes} data-ui-name={name} data-ui-no-selected={noSelected} data-ui-type={setType}
-                data-ui-no-circles={noCircles} data-ui-no-repeated-circles={noRepeatedCircles} data-ui-only-repeated={onlyRepeated}>
-                    {children}
-            </ul>
-        );
-    }
+    // classes
+    const classes = 'ui-line-chart';
 
-const LineChartItems = function (
+    return (
+        <ul
+            className={classes} data-ui-name={name} data-ui-no-selected={noSelected} data-ui-type={setType}
+            data-ui-no-circles={noCircles} data-ui-no-repeated-circles={noRepeatedCircles} data-ui-only-repeated={onlyRepeated}>
+                {children}
+        </ul>
+    );
 
-    { y, url }:LineChartItemsProps) {
+}
 
-        return (y && Array.isArray(y) &&
-            <>
-            {y.map((value: any) => {
-                return (
-                    <Fragment key={value.toString()}>
-                        <li data-ui-y={value} data-ui-url={url}></li>
-                    </Fragment>
-                )
-            })}
-            </>
-        );
-    }
+const LineChartItems = function (props:LineChartItemsProps) {
+
+    const { y, url } = props;
+
+    return (y && Array.isArray(y) &&
+        <>
+        {y.map((value: any) => {
+            return (
+                <Fragment key={value.toString()}>
+                    <li data-ui-y={value} data-ui-url={url}></li>
+                </Fragment>
+            )
+        })}
+        </>
+    );
+
+}
 
 const RandomColors = (size: number) => {
 

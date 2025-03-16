@@ -10,57 +10,58 @@ import '../js/modules/alerts';
 
 const Alerts = function () {}
 
-const AlertsDialog = function (
+const AlertsDialog = function (props:AlertsDialogProps) {
 
-    { msg, success, error, custom, callback }:AlertsDialogProps) {
+    const { msg, success, error, custom, callback } = props;
 
-        // icons
-        ui.alerts.closeIcon = IconRemove;
+    // icons
+    ui.alerts.closeIcon = IconRemove;
 
-        // messages
-        ui.alerts.msgDialogSuccess = 'OK';
+    // messages
+    ui.alerts.msgDialogSuccess = 'OK';
 
-        // custom buttons
-        let setCustom: string[] = [];
+    // custom buttons
+    let setCustom: string[] = [];
 
-        if (custom instanceof Object) {
+    if (custom instanceof Object) {
 
-            const first = custom.first ? custom.first : null;
-            const second = custom.second ? custom.second : null;
-            const third = custom.third ? custom.third : null;
+        const first = custom.first ? custom.first : null;
+        const second = custom.second ? custom.second : null;
+        const third = custom.third ? custom.third : null;
 
-            if (first || second || third) {
+        if (first || second || third) {
 
-                setCustom = [];
+            setCustom = [];
 
-                if (first) { setCustom.push(first); }
-                if (second) { setCustom.push(second); }
-                if (third) { setCustom.push(third); }
-
-            }
+            if (first) { setCustom.push(first); }
+            if (second) { setCustom.push(second); }
+            if (third) { setCustom.push(third); }
 
         }
 
-        ui.alerts.dialog({
-            msg: msg,
-            success: success,
-            error: error,
-            custom: setCustom,
-            callback: callback,
-        });
-
     }
-const AlertsMessage = function (
 
-    { msg, pos, theme }:AlertsMessageProps) {
+    ui.alerts.dialog({
+        msg: msg,
+        success: success,
+        error: error,
+        custom: setCustom,
+        callback: callback,
+    });
 
-        ui.alerts.message({
-            msg: msg,
-            pos: pos,
-            theme: theme,
-        });
+}
 
-    }
+const AlertsMessage = function (props:AlertsMessageProps) {
+
+    const { msg, pos, theme } = props;
+
+    ui.alerts.message({
+        msg: msg,
+        pos: pos,
+        theme: theme,
+    });
+
+}
 
 export default Object.assign(Alerts, {
     Dialog: AlertsDialog,

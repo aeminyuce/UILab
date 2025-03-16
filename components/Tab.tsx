@@ -9,42 +9,44 @@ import '../js/modules/tab';
 
 const Tab = function () {}
 
-const TabHolder = function (
+const TabHolder = function (props:TabHolderProps) {
 
-    { children, accordion, noease, className, dataClasses, style }:TabHolderProps) {
+    const { children, accordion, noease, className, dataClasses, style } = props;
 
-        // classes
-        const setAccordion = accordion ? ' ui-tab-accordion' : '';
-        const setEase = noease ? '' : ' ui-ease-tab';
+    // classes
+    const setAccordion = accordion ? ' ui-tab-accordion' : '';
+    const setEase = noease ? '' : ' ui-ease-tab';
 
-        const setClassName = className ? ` ${className}` : '';
+    const setClassName = className ? ` ${className}` : '';
 
-        const classes = `ui-tab-holder${setAccordion}${setClassName}${setEase}`;
+    const classes = `ui-tab-holder${setAccordion}${setClassName}${setEase}`;
 
-        return (
-            <div className={classes} data-ui-classes={dataClasses} style={style}>
-                {children}
-            </div>
-        );
-    }
+    return (
+        <div className={classes} data-ui-classes={dataClasses} style={style}>
+            {children}
+        </div>
+    );
+
+}
 
 
-const TabContent = function (
+const TabContent = function (props:TabContentProps) {
 
-    { children, open, className, style }:TabContentProps) {
+    const { children, open, className, style } = props;
 
-        // classes
-        const setOpen = open ? ' ui-open ui-open-ease' : '';
+    // classes
+    const setOpen = open ? ' ui-open ui-open-ease' : '';
 
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-tab-content${setClassName}${setOpen}`;
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-tab-content${setClassName}${setOpen}`;
 
-        return (
-            <div className={classes} style={style}>
-                {children}
-            </div>
-        );
-    }
+    return (
+        <div className={classes} style={style}>
+            {children}
+        </div>
+    );
+
+}
 
 export default Object.assign(Tab, {
     Holder: TabHolder,

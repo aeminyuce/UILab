@@ -9,24 +9,25 @@ import { HeaderStickyProps } from './utils/models';
 import '../less/modules/header-sticky';
 import '../js/modules/header-sticky';
 
-export default function HeaderSticky(
+export default function HeaderSticky(props:HeaderStickyProps) {
 
-    { children, className, dataClasses, dataSpace, style }:HeaderStickyProps) {
+    const { children, className, dataClasses, dataSpace, style } = props;
 
-        useEffect(() => {
+    useEffect(() => {
 
-            // start
-            ui.headerSticky.Start();
+        // start
+        ui.headerSticky.Start();
 
-        });
+    });
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-header-sticky${setClassName} ui-ease-layout`;
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-header-sticky${setClassName} ui-ease-layout`;
 
-        return (
-            <header className={classes} data-ui-classes={dataClasses} data-ui-space={dataSpace} style={style}>
-                {children}
-            </header>
-        );
-    }
+    return (
+        <header className={classes} data-ui-classes={dataClasses} data-ui-space={dataSpace} style={style}>
+            {children}
+        </header>
+    );
+
+}

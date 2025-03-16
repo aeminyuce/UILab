@@ -6,47 +6,49 @@ import { ProgressBarProps, ProgressBarItemProps } from './utils/models';
 // assets
 import '../less/modules/progress-bar';
 
-const ProgressBar = function (
+const ProgressBar = function (props:ProgressBarProps) {
 
-    { children, size, className, style }:ProgressBarProps) {
+    const { children, size, className, style } = props;
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const setSize = size ? ` ui-progress-${size}` : '';
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const setSize = size ? ` ui-progress-${size}` : '';
 
-        const classes = `ui-progress-bar${setSize}${setClassName}`;
+    const classes = `ui-progress-bar${setSize}${setClassName}`;
 
-        return (
-            <div className={classes} style={style}>
-                {children}
-            </div>
-        );
-    }
+    return (
+        <div className={classes} style={style}>
+            {children}
+        </div>
+    );
 
-const ProgressBarItem = function (
+}
 
-    { percent, prefix, suffix, className, style }:ProgressBarItemProps) {
+const ProgressBarItem = function (props:ProgressBarItemProps) {
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = setClassName;
+    const { percent, prefix, suffix, className, style } = props;
 
-        // styles
-        let styles: any = null;
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = setClassName;
 
-        if (style) {
-            styles = {['width']: `${percent}%`, ...style};
+    // styles
+    let styles: any = null;
 
-        } else styles = {['width']: `${percent}%`};
+    if (style) {
+        styles = {['width']: `${percent}%`, ...style};
 
-        return (
-            <span className={classes} style={styles}>
-                {prefix && prefix}
-                {percent}
-                {suffix && suffix}
-            </span>
-        );
-    }
+    } else styles = {['width']: `${percent}%`};
+
+    return (
+        <span className={classes} style={styles}>
+            {prefix && prefix}
+            {percent}
+            {suffix && suffix}
+        </span>
+    );
+
+}
 
 export default Object.assign(ProgressBar, {
     Item: ProgressBarItem,

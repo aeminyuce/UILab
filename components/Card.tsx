@@ -7,50 +7,51 @@ import { CardProps } from './utils/models';
 import '../less/modules/card';
 import '../js/modules/card';
 
-const Card = function (
+const Card = function (props:CardProps) {
 
-    { children, as, type, myRef, className, style }:CardProps) {
+    const { children, as, type, myRef, className, style } = props;
 
-        // classes
-        const setType = type ? ` ui-card-${type}` : '';
-        const setClassName = className ? ` ${className}` : '';
+    // classes
+    const setType = type ? ` ui-card-${type}` : '';
+    const setClassName = className ? ` ${className}` : '';
 
-        const classes = `ui-card${setType}${setClassName}`;
+    const classes = `ui-card${setType}${setClassName}`;
 
-        // type
-        const setAs = as ? as : 'div';
+    // type
+    const setAs = as ? as : 'div';
 
-        return (
-            <>
-            {setAs === 'div' &&
-                <div ref={myRef} className={classes} style={style}>
-                    {children}
-                </div>
-            }
-            {setAs === 'span' &&
-                <span ref={myRef} className={classes} style={style}>
-                    {children}
-                </span>
-            }
-            </>
-        );
-
-    }
-
-const CardSide = function (
-
-    { children, myRef, className, style }:CardProps) {
-
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-card-side${setClassName}`;
-
-        return (
+    return (
+        <>
+        {setAs === 'div' &&
             <div ref={myRef} className={classes} style={style}>
                 {children}
             </div>
-        );
-    }
+        }
+        {setAs === 'span' &&
+            <span ref={myRef} className={classes} style={style}>
+                {children}
+            </span>
+        }
+        </>
+    );
+
+}
+
+const CardSide = function (props:CardProps) {
+
+    const { children, myRef, className, style } = props;
+
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-card-side${setClassName}`;
+
+    return (
+        <div ref={myRef} className={classes} style={style}>
+            {children}
+        </div>
+    );
+
+}
 
 export default Object.assign(Card, {
     Side: CardSide,

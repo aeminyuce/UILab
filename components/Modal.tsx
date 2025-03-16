@@ -9,148 +9,148 @@ import { ModalProps, ModalHeaderProps, ModalTitleProps, ModalButtonsProps, Modal
 import '../less/modules/modal';
 import '../js/modules/modal';
 
-let Modal = function (
+let Modal = function (props:ModalProps) {
 
-    { children, as, id, className, style }:ModalProps) {
+    const { children, as, id, className, style } = props;
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-modal${setClassName}`;
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-modal${setClassName}`;
 
-        return (
-            <>
-            {as === 'div' &&
-                <div id={id} className={classes} style={style}>
-                    {children}
-                </div>
-            }
-            {as === 'span' &&
-                <span id={id} className={classes} style={style}>
-                    {children}
-                </span>
-            }
-            </>
-        );
-
-    }
-
-const modalHeader = function (
-
-    { children, id, className, style }:ModalHeaderProps) {
-
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-modal-header${setClassName}`;
-
-        return (
+    return (
+        <>
+        {as === 'div' &&
             <div id={id} className={classes} style={style}>
                 {children}
             </div>
-        );
-
-    }
-
-const modalTitle = function (
-
-    { children, id, className, style }:ModalTitleProps) {
-
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-h4${setClassName}`;
-
-        return (
-            <h4 id={id} className={classes} style={style}>
+        }
+        {as === 'span' &&
+            <span id={id} className={classes} style={style}>
                 {children}
-            </h4>
-        );
+            </span>
+        }
+        </>
+    );
 
-    }
+}
 
-const modalButtons = function (
+const modalHeader = function (props:ModalHeaderProps) {
 
-    { children, id, className, style }:ModalButtonsProps) {
+    const { children, id, className, style } = props;
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-modal-buttons ui-ease-1st-btn${setClassName}`;
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-modal-header${setClassName}`;
 
-        return (
-            <div id={id} className={classes} style={style}>
-                {children}
-            </div>
-        );
+    return (
+        <div id={id} className={classes} style={style}>
+            {children}
+        </div>
+    );
 
-    }
+}
 
-const modalContainer = function (
+const modalTitle = function (props:ModalTitleProps) {
 
-    { children, id, className, style }:ModalContainerProps) {
+    const { children, id, className, style } = props;
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-modal-container${setClassName}`;
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-h4${setClassName}`;
 
-        return (
-            <div id={id} className={classes} style={style}>
-                {children}
-            </div>
-        );
+    return (
+        <h4 id={id} className={classes} style={style}>
+            {children}
+        </h4>
+    );
 
-    }
+}
 
-const modalFooter = function (
+const modalButtons = function (props:ModalButtonsProps) {
 
-    { children, id, className, style }:ModalFooterProps) {
+    const { children, id, className, style } = props;
 
-        // classes
-        const setClassName = className ? ` ${className}` : '';
-        const classes = `ui-modal-footer${setClassName}`;
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-modal-buttons ui-ease-1st-btn${setClassName}`;
 
-        return (
-            <div id={id} className={classes} style={style}>
-                {children}
-            </div>
-        );
+    return (
+        <div id={id} className={classes} style={style}>
+            {children}
+        </div>
+    );
 
-    }
+}
 
-export const modalOpen = function (
+const modalContainer = function (props:ModalContainerProps) {
 
-    { source, bg, closable, type, size, callback }:ModalOpenProps) {
+    const { children, id, className, style } = props;
 
-        // targets
-        ui.modal.targetHolder = '#app';
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-modal-container${setClassName}`;
 
-        // styling classnames
-        ui.modal.stylesContent = 'ui-round ui-shadow-lg ui-ease-layout';
+    return (
+        <div id={id} className={classes} style={style}>
+            {children}
+        </div>
+    );
 
-        // icons
-        ui.modal.closeIcon = IconRemove;
+}
 
-        // sizes
-        let setSize: any = null;
+const modalFooter = function (props:ModalFooterProps) {
 
-        if (size instanceof Object) {
+    const { children, id, className, style } = props;
 
-            const width = size.width ? size.width : null;
-            const height = size.height ? size.height : null;
+    // classes
+    const setClassName = className ? ` ${className}` : '';
+    const classes = `ui-modal-footer${setClassName}`;
 
-            if (width && height) {
-                setSize = `${width}x${height}`;
-            }
+    return (
+        <div id={id} className={classes} style={style}>
+            {children}
+        </div>
+    );
 
-        } else { setSize = size ? size : null; }
+}
 
-        ui.modal.open({
-            source: source,
-            size: setSize,
-            type: type,
-            bg: bg,
-            closable: closable,
-            callback: callback,
-        });
+export const modalOpen = function (props:ModalOpenProps) {
 
-    }
+    const { source, bg, closable, type, size, callback } = props;
+
+    // targets
+    ui.modal.targetHolder = '#app';
+
+    // styling classnames
+    ui.modal.stylesContent = 'ui-round ui-shadow-lg ui-ease-layout';
+
+    // icons
+    ui.modal.closeIcon = IconRemove;
+
+    // sizes
+    let setSize: any = null;
+
+    if (size instanceof Object) {
+
+        const width = size.width ? size.width : null;
+        const height = size.height ? size.height : null;
+
+        if (width && height) {
+            setSize = `${width}x${height}`;
+        }
+
+    } else { setSize = size ? size : null; }
+
+    ui.modal.open({
+        source: source,
+        size: setSize,
+        type: type,
+        bg: bg,
+        closable: closable,
+        callback: callback,
+    });
+
+}
 
 export const modalClose = function () {
     ui.modal.close();
