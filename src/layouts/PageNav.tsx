@@ -3,11 +3,8 @@ import { useLocation } from 'react-router-dom';
 import Button from '@components/Button';
 import Grid from '@components/Grid';
 
-interface MenuListProps {
-    name: string;
-    to: string;
-    sep: boolean;
-}
+// utils
+import type { MenuListProps } from '@utils/Models';
 
 export default function PageNav() {
     const { pathname } = useLocation();
@@ -70,4 +67,5 @@ export default function PageNav() {
             </div>
         </Grid.Col>
     );
+
 }

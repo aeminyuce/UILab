@@ -4,11 +4,8 @@ import Grid from '@components/Grid';
 import Spacer from '@components/Spacer';
 import SvgIcon from '@components/SvgIcon';
 
-interface ExamplesProps {
-    name: string;
-    to: string;
-    img: string;
-}
+// utils
+import type { ExamplesProps } from '@utils/Models';
 
 // assets
 import IconLab from '@icon/svg/general/lab.svg';
@@ -64,4 +61,5 @@ export default function () {
             </Grid.Container>
         </Grid.Container>
     );
+
 }

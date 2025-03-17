@@ -1,16 +1,13 @@
-import * as React from 'react';
-import { ReactNode } from 'react';
+// utils
+import type { PageTitleProps } from '@utils/Models';
 
-interface PageTitleProps {
-    title: string;
-    children: ReactNode;
+export default function PageTitle(props:PageTitleProps) {
+
+    const { title, children } = props;
+
+    const setTitle = title ? `${title} | ` : '';
+    document.title = setTitle + process.env.PROJECT_NAME;
+
+    return children;
+
 }
-
-export default function PageTitle(
-
-    { title, children }:PageTitleProps) {
-        const setTitle = title ? `${title} | ` : '';
-        document.title = setTitle + process.env.PROJECT_NAME;
-
-        return children;
-    }

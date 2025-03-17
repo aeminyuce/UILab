@@ -13,6 +13,7 @@ import {
 } from '@utils/RouteComponents';
 
 export default function RoutePaths() {
+
     return (
         <Suspense>
             <Routes>
@@ -28,4 +29,5 @@ export default function RoutePaths() {
             </Routes>
         </Suspense>
     );
+
 }

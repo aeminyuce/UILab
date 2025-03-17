@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Fragment, ElementType } from 'react';
+import { Fragment } from 'react';
 import { useLocation } from 'react-router-dom';
 import Button from '@components/Button';
 import Grid from '@components/Grid';
@@ -8,6 +8,9 @@ import Sidebar from '@components/Sidebar';
 import Spacer from '@components/Spacer';
 import SvgIcon from '@components/SvgIcon';
 import TopButton from '@components/TopButton';
+
+// utils
+import type { HeaderLinksProps, SocialLinksProps } from '@utils/Models';
 
 // layouts
 import RoutePaths from '@layouts/RoutePaths';
@@ -23,17 +26,6 @@ import { IconSun } from '@icon/js/weather/sun';
 import { IconMoon } from '@icon/js/weather/moon';
 import { IconAngleLeft } from '@icon/js/general/angle-left';
 import { IconAngleRight } from '@icon/js/general/angle-right';
-
-interface HeaderLinksProps {
-    name: string;
-    to: string;
-}
-
-interface SocialLinksProps {
-    title: string;
-    url: string;
-    icon: ElementType;
-}
 
 export default function () {
     const { pathname } = useLocation();
@@ -165,4 +157,5 @@ export default function () {
             }
         </>
     );
+
 }

@@ -4,6 +4,9 @@ import Button from '@components/Button';
 import Grid from '@components/Grid';
 import SvgIcon from '@components/SvgIcon';
 
+// utils
+import type { SizeListProps, IconsListProps } from '@utils/Models';
+
 // assets
 import iconsList from './../icons-list.json';
 
@@ -21,20 +24,9 @@ import SpriteBrands from '@icon/sprite/brands.svg';
 // utils
 import { StoreContext } from '@utils/StoreReducer';
 
-interface SizeListProps {
-    name: string;
-    size: string;
-    selected: boolean;
-}
-
-interface IconsListProps {
-    category: string;
-    icons: string[];
-}
-
 export default function () {
 
-    const { store } = useContext(StoreContext);
+    const { store, setStore } = useContext(StoreContext);
 
     // icon sizes
     const sizeList = [

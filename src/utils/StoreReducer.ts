@@ -3,25 +3,13 @@ import { createContext } from 'react';
 // utils
 import { setStorage, getStorage } from '@utils/Storages';
 
+// imports
+import type { ReducerStateProps, ReducerActionProps } from './Models';
+
 export const StoreContext = createContext({
 	store: null,
 	setStore: null,
 });
-
-interface ReducerStateProps {
-    calendar: ComponentProps;
-}
-
-interface ComponentProps {
-	theme: string;
-	style: string;
-}
-
-interface ReducerActionProps {
-    type: string;
-    theme?: string;
-    style?: string;
-}
 
 const themes = {
 	calendar: 'CALENDAR_THEME',
@@ -46,6 +34,8 @@ export const StoreReducer = (state: ReducerStateProps, action: ReducerActionProp
 		return {...state, [key]: { ...state[key], style: action.style }};
 
 	}
+
+	console.log(state);
 
 	switch (action?.type) {
 

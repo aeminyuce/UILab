@@ -1,22 +1,18 @@
-interface SetStorageProps {
-	name: string;
-	value: any;
-	jsonData?: boolean;
-}
+// utils
+import type { SetStorageProps, GetStorageProps } from '@utils/Models';
 
-interface GetStorageProps {
-	name: string;
-	jsonData?: boolean;
-}
+export const setStorage = (props:SetStorageProps) => {
 
-export const setStorage = ({ name, value, jsonData }:SetStorageProps) => {
+	const { name, value, jsonData } = props;
 
 	const data = jsonData ? JSON.stringify(value) : value;
 	sessionStorage.setItem(window.btoa(name), window.btoa(encodeURI(data)));
 
 }
 
-export const getStorage = ({ name, jsonData }:GetStorageProps) => {
+export const getStorage = (props:GetStorageProps) => {
+
+	const { name, jsonData } = props;
 
 	let getData = sessionStorage.getItem(window.btoa(name));
 
