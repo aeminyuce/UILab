@@ -97,6 +97,7 @@ export interface SetStorageProps {
 export interface GetStorageProps {
 	name: string;
 	jsonData?: boolean;
+	initialData?: string,
 }
 
 // Store reducer

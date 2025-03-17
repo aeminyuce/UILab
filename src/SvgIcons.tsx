@@ -27,12 +27,15 @@ import { StoreContext } from '@utils/StoreReducer';
 export default function () {
 
     const { store, setStore } = useContext(StoreContext);
+    const storedIconSize = store?.iconSize;
+
+    // TODO: get total length from iconsList object!
 
     // icon sizes
     const sizeList = [
         { name: 'XXL', size: 'xxl', selected: false },
         { name: 'XL', size: 'xl', selected: true },
-        { name: 'L', size: 'l', selected: false },
+        { name: 'L', size: 'lg', selected: false },
         { name: '-', size: '', selected: false },
         { name: 'SM', size: 'sm', selected: false },
         { name: 'XS', size: 'xs', selected: false },
@@ -62,7 +65,7 @@ export default function () {
                         <Grid.Col size={12}>
                             <h2 className='ui-h2'>
                                 SVG Icons
-                                <span className='ui-font-18 ui-m-5-v ui-block ui-opacity-half'>(Total Icons: 542)</span>
+                                <span className='ui-font-18 ui-m-5-v ui-block ui-opacity-half'>(Total Icons: 0)</span>
                             </h2>
                         </Grid.Col>
                     </Grid.Row>
@@ -73,10 +76,10 @@ export default function () {
                             <Button.Wrapper largeButtons as='holder' ease='1st' className='ui-m-20-b ui-theme-ice'>
                                 {sizeList.map((item: SizeListProps) => {
                                     let classes = 'ui-round';
-                                    if (item.selected) classes += ' ui-fill-dark-100';
+                                    if ((storedIconSize === null && item.selected) || (storedIconSize !== null && item.size === storedIconSize)) classes += ' ui-fill-dark-100';
 
                                     return (
-                                        <Button noease key={item.name} size-ui-size={item.size} className={classes}>
+                                        <Button noease key={item.name} size-ui-size={item.size} className={classes} onClick={() => setStore({ type: 'ICON_SIZE', size: item.size })}>
                                             {item.name}
                                         </Button>
                                     )
@@ -88,6 +91,12 @@ export default function () {
                     <Grid.Row>
                         <Grid.Col size={12}>
                             {iconsList.map((item: IconsListProps) => {
+                                let listClasses = 'iconlist ui-list-custom ui-theme-base ui-ease-1st-bg';
+
+                                if (storedIconSize !== '') {
+                                    listClasses += storedIconSize === null ? ' ui-icons-xl' : ` ui-icons-${storedIconSize}`;
+                                }
+
                                 return (
                                     <Fragment key={item.category}>
                                         <h2 className="ui-h2">
@@ -96,7 +105,7 @@ export default function () {
                                                 ({item.icons.length} icons)
                                             </span>
                                         </h2>
-                                        <ul className="iconlist ui-icons-xl ui-list-custom ui-theme-base ui-ease-1st-bg">
+                                        <ul className={listClasses}>
                                             {item.icons.map((name: string) => {
                                                 return (
                                                     <li key={name}>
