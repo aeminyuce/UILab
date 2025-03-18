@@ -68,6 +68,7 @@ const updateJsonFile = (categoryJson) => {
                 results.forEach((item) => {
                     if (item.category === args.cName) {
                         item.icons = categoryJson.icons;
+                        item.length = categoryJson.icons.length;
                         categoryMatch = true;
                     }
                 });
@@ -126,10 +127,10 @@ fs.readdir(directoryPath, (err, files) => {
                 const jsFilename = `${name}.js`;
 
                 const outputPath = path.join(__dirname, args.dest, jsFilename); // destination folder name
-                // fs.writeFile(outputPath, code, (e) => {
-                //     if (e) throw e;
-                //     console.log(`${jsFilename} created in ${outputPath} folder!`);
-                // });
+                fs.writeFile(outputPath, code, (e) => {
+                    if (e) throw e;
+                    console.log(`${jsFilename} created in ${outputPath} folder!`);
+                });
 
                 // add icons for json file
                 addIcon(name, index + 1 === files.length);

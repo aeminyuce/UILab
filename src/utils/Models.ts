@@ -23,6 +23,7 @@ export interface SizeListProps {
 export interface IconsListProps {
 	category: string;
 	icons: string[];
+	length: number;
 }
 
 export interface SocialLinksProps {

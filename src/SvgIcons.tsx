@@ -1,8 +1,10 @@
 import * as React from 'react';
-import { Fragment, useContext } from 'react';
+import { Fragment, useContext, useEffect } from 'react';
+import Alerts from '@components/Alerts';
 import Button from '@components/Button';
 import Grid from '@components/Grid';
 import SvgIcon from '@components/SvgIcon';
+import { ui } from '../js/core/globals';
 
 // utils
 import type { SizeListProps, IconsListProps } from '@utils/Models';
@@ -24,12 +26,40 @@ import SpriteBrands from '@icon/sprite/brands.svg';
 // utils
 import { StoreContext } from '@utils/StoreReducer';
 
+import "../less/helpers/iconlist";
+
 export default function () {
 
     const { store, setStore } = useContext(StoreContext);
     const storedIconSize = store?.iconSize;
 
-    // TODO: get total length from iconsList object!
+    const iconActions = () => {
+
+        const icons = ui.find('.iconlist li');
+
+        ui.on(icons, 'click', function () {
+
+            const range = document.createRange();
+            const iconName = ui.find('span', this)[0];
+
+            range.selectNode(iconName);
+
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+
+            navigator.clipboard.writeText(iconName.textContent || '');
+
+            Alerts.Message({
+                msg: '<b>Copied!</b><br>' + iconName.textContent,
+            });
+
+        });
+
+    };
+
+    useEffect(() => {
+        ui.onload(() => iconActions());
+    }, []);
 
     // icon sizes
     const sizeList = [
@@ -55,6 +85,13 @@ export default function () {
         'Brands': SpriteBrands,
     }
 
+    // get total icons length
+    let totalLength = 0;
+
+    iconsList.map((item: IconsListProps) => {
+        totalLength += item.length;
+    });
+
     return (
         <Grid.Container as='main' noGutter='lg'>
             <Grid.Container fixed='xl' as='div' className='ui-p-15 ui-m-30-v ui-sm-no-p'>
@@ -65,7 +102,7 @@ export default function () {
                         <Grid.Col size={12}>
                             <h2 className='ui-h2'>
                                 SVG Icons
-                                <span className='ui-font-18 ui-m-5-v ui-block ui-opacity-half'>(Total Icons: 0)</span>
+                                <span className='ui-font-18 ui-m-5-v ui-block ui-opacity-half'>(Total Icons: {totalLength})</span>
                             </h2>
                         </Grid.Col>
                     </Grid.Row>
@@ -102,14 +139,16 @@ export default function () {
                                         <h2 className="ui-h2">
                                             {item.category} Icons
                                             <span className="ui-font-16 ui-m-5-v ui-block ui-opacity-half">
-                                                ({item.icons.length} icons)
+                                                ({item.length} icons)
                                             </span>
                                         </h2>
                                         <ul className={listClasses}>
                                             {item.icons.map((name: string) => {
+                                                const classes = name.includes('loader-') ? 'ui-animate-spin' : null;
+
                                                 return (
                                                     <li key={name}>
-                                                        <SvgIcon as='sprite' src={spritesList[item.category]} symbolId={name} />
+                                                        <SvgIcon as='sprite' src={spritesList[item.category]} symbolId={name} className={classes} />
                                                         <span>{name}</span>
                                                     </li>
                                                 )
