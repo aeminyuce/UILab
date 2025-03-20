@@ -1,10 +1,9 @@
 import * as React from 'react';
-import { Fragment, useContext, useEffect } from 'react';
+import { Fragment, useContext } from 'react';
 import Alerts from '@components/Alerts';
 import Button from '@components/Button';
 import Grid from '@components/Grid';
 import SvgIcon from '@components/SvgIcon';
-import { ui } from '../js/core/globals';
 
 // utils
 import type { SizeListProps, IconsListProps } from '@utils/Models';
@@ -25,37 +24,16 @@ import SpriteBrands from '@icon/sprite/brands.svg';
 
 // utils
 import { StoreContext } from '@utils/StoreReducer';
+import { StoreActions } from '@utils/StoreActions';
 
 import "../less/helpers/iconlist";
 
 export default function () {
 
-    const { store, setStore } = useContext(StoreContext);
+    const { store } = useContext(StoreContext);
+    const { iconCopy, iconSize } = StoreActions();
 
     const storedIconSize = store?.icons?.size;
-    const storedIconCopy = store?.icons?.copy;
-
-    // TODO: StoreReducerHelper(storedIconCopy)
-    const iconCopy = (text: string) => {
-
-        if (document.hasFocus()) {
-            navigator.clipboard.writeText(text).then(() => {
-                Alerts.Message({
-                    msg: `<b>Copied!</b><br>${text}`,
-                });
-            }).catch((err) => {
-                Alerts.Message({
-                    msg: `<b>Failed to copy ${text}!</b><br>${err}`,
-                    theme: 'warning'
-                });
-            });
-        }
-
-    };
-
-    useEffect(() => {
-        iconCopy(storedIconCopy);
-    }, [storedIconCopy]);
 
     // icon sizes
     const sizeList = [
@@ -88,6 +66,23 @@ export default function () {
         totalLength += item.length;
     });
 
+    // helpers
+    const copyText = (text: string) => {
+        if (document.hasFocus()) {
+            navigator.clipboard.writeText(text).then(() => {
+                Alerts.Message({
+                    msg: `<b>Copied!</b><br>${text}`,
+                });
+            }).catch((err) => {
+                Alerts.Message({
+                    msg: `<b>Failed to copy ${text}!</b><br>${err}`,
+                    theme: 'warning'
+                });
+            });
+        }
+    };
+
+
     return (
         <Grid.Container as='main' noGutter='lg'>
             <Grid.Container fixed='xl' as='div' className='ui-p-15 ui-m-30-v ui-sm-no-p'>
@@ -112,7 +107,7 @@ export default function () {
                                     if ((storedIconSize === null && item.selected) || (storedIconSize !== null && item.size === storedIconSize)) classes += ' ui-fill-dark-100';
 
                                     return (
-                                        <Button noease key={item.name} size-ui-size={item.size} className={classes} onClick={() => setStore({ type: 'ICON_SIZE', size: item.size })}>
+                                        <Button noease key={item.name} size-ui-size={item.size} className={classes} onClick={() => iconSize(item.size)}>
                                             {item.name}
                                         </Button>
                                     )
@@ -143,7 +138,7 @@ export default function () {
                                                 const classes = name.includes('loader-') ? 'ui-animate-spin' : null;
 
                                                 return (
-                                                    <li key={name} onClick={() => setStore({ type: 'ICON_COPY', copy: name })}>
+                                                    <li key={name} onClick={() => copyText(iconCopy(name))}>
                                                         <SvgIcon as='sprite' src={spritesList[item.category]} symbolId={name} className={classes} />
                                                         <span>{name}</span>
                                                     </li>
