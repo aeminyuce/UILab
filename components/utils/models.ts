@@ -610,7 +610,7 @@ export interface ModalOpenProps {
     closable?: boolean;
     type?: 'ajax' | 'iframe';
     size?: 'lg' |'md' | 'sm' | 'fullscreen' | 'inline' | ModalOpenSizeProps;
-    callback?(): any;
+    callback?: () => void;
 }
 
 // Notifier
