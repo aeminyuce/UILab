@@ -11,49 +11,61 @@ export const StoreContext = createContext({
 	setStore: null,
 });
 
-const actions = {
+// actions
+export const actions = {
 	themes: {
 		calendar: 'CALENDAR_THEME',
 	},
 	styles: {
 		calendar: 'CALENDAR_STYLE',
 	},
-	iconSize: 'ICON_SIZE',
+	icons: {
+		size: 'ICON_SIZE',
+		copy: 'ICON_COPY',
+	}
 }
 
 export const StoreReducer = (state: ReducerStateProps, action: ReducerActionProps) => {
 
 	const theme = (key: string) => {
 
-		setStorage({ name: actions.themes[key], value: action.theme });
-		return {...state, [key]: { ...state[key], theme: action.theme }};
+			setStorage({ name: actions.themes[key], value: action.theme });
+			return {...state, [key]: { ...state[key], theme: action.theme }};
 
-	}
+		}
 
 	const style = (key: string) => {
 
-		setStorage({ name: actions.styles[key], value: action.style });
-		return {...state, [key]: { ...state[key], style: action.style }};
+			setStorage({ name: actions.styles[key], value: action.style });
+			return {...state, [key]: { ...state[key], style: action.style }};
 
-	}
+		}
 
 	const iconSize = (key: string) => {
 
-		setStorage({ name: actions.iconSize, value: key });
-		return {...state, iconSize: key};
+			setStorage({ name: actions.icons.size, value: key });
+			return {...state, icons: {...state.icons, size: action.size }};
 
-	}
+		}
 
-	switch (action?.type) {
+		const iconCopy = (state: ReducerStateProps, action: ReducerActionProps, key: string) => {
 
-        // themes
-		case actions.themes.calendar: return theme('calendar');
+			setStorage({ name: actions.icons.copy, value: key });
+			return {...state, icons: {...state.icons, copy: action.copy }}
 
-        // styles
-		case actions.styles.calendar: return style('calendar');
+		}
 
-		// icons
-		case actions.iconSize: return iconSize(action.size);
+		switch (action?.type) {
+
+			// themes
+			case actions.themes.calendar: return theme('calendar');
+
+			// styles
+			case actions.styles.calendar: return style('calendar');
+
+			// icons
+			case actions.icons.size: return iconSize(action.size);
+			case actions.icons.copy: return iconSize(action.copy);
 
 	}
 
@@ -65,6 +77,9 @@ export const StoreInitials = {
 		theme: getStorage({ name: actions.themes.calendar }),
 		style: getStorage({ name: actions.styles.calendar }),
 	},
-	iconSize: getStorage({ name: actions.iconSize }),
+	icons: {
+		size: getStorage({ name: actions.icons.size }),
+		copy: getStorage({ name: actions.icons.copy }),
+	}
 
 }

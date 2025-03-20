@@ -31,35 +31,31 @@ import "../less/helpers/iconlist";
 export default function () {
 
     const { store, setStore } = useContext(StoreContext);
-    const storedIconSize = store?.iconSize;
 
-    const iconActions = () => {
+    const storedIconSize = store?.icons?.size;
+    const storedIconCopy = store?.icons?.copy;
 
-        const icons = ui.find('.iconlist li');
+    // TODO: StoreReducerHelper(storedIconCopy)
+    const iconCopy = (text: string) => {
 
-        ui.on(icons, 'click', function () {
-
-            const range = document.createRange();
-            const iconName = ui.find('span', this)[0];
-
-            range.selectNode(iconName);
-
-            window.getSelection().removeAllRanges();
-            window.getSelection().addRange(range);
-
-            navigator.clipboard.writeText(iconName.textContent || '');
-
-            Alerts.Message({
-                msg: '<b>Copied!</b><br>' + iconName.textContent,
+        if (document.hasFocus()) {
+            navigator.clipboard.writeText(text).then(() => {
+                Alerts.Message({
+                    msg: `<b>Copied!</b><br>${text}`,
+                });
+            }).catch((err) => {
+                Alerts.Message({
+                    msg: `<b>Failed to copy ${text}!</b><br>${err}`,
+                    theme: 'warning'
+                });
             });
-
-        });
+        }
 
     };
 
     useEffect(() => {
-        ui.onload(() => iconActions());
-    }, []);
+        iconCopy(storedIconCopy);
+    }, [storedIconCopy]);
 
     // icon sizes
     const sizeList = [
@@ -147,7 +143,7 @@ export default function () {
                                                 const classes = name.includes('loader-') ? 'ui-animate-spin' : null;
 
                                                 return (
-                                                    <li key={name}>
+                                                    <li key={name} onClick={() => setStore({ type: 'ICON_COPY', copy: name })}>
                                                         <SvgIcon as='sprite' src={spritesList[item.category]} symbolId={name} className={classes} />
                                                         <span>{name}</span>
                                                     </li>

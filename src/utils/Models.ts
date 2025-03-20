@@ -106,9 +106,14 @@ export interface ComponentProps {
 	theme: string;
 	style: string;
 }
+export interface IconsProps {
+	size?: string;
+	copy?: string;
+}
 
 export interface ReducerStateProps {
     calendar: ComponentProps;
+	icons: IconsProps;
 }
 
 export interface ReducerActionProps {
@@ -116,4 +121,5 @@ export interface ReducerActionProps {
     theme?: string;
     style?: string;
     size?: string;
+    copy?: string;
 }
