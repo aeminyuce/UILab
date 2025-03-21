@@ -17,6 +17,7 @@ export interface ExamplesProps {
 export interface SizeListProps {
 	name: string;
 	size: string;
+	selected: boolean;
 }
 
 export interface IconsListProps {
@@ -105,14 +106,11 @@ export interface ComponentProps {
 	theme: string;
 	style: string;
 }
-export interface IconsProps {
-	size?: string;
-	copy?: string;
-}
 
 export interface ReducerStateProps {
     calendar: ComponentProps;
-	icons: IconsProps;
+	iconSize: string;
+	iconCopy: string;
 }
 
 export interface ReducerActionProps {

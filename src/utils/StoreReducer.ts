@@ -12,7 +12,7 @@ export const StoreContext = createContext({
 });
 
 // actions
-export const actions = {
+const actions = {
 	themes: {
 		calendar: 'CALENDAR_THEME',
 	},
@@ -54,20 +54,14 @@ export const StoreReducer = (state: ReducerStateProps, action: ReducerActionProp
 			setStorage({ name: actions.iconSize, value: action.size });
 			return {
 				...state,
-				icons: {
-					...state.icons,
-					size: action.size,
-				}
+				iconSize: action.size,
 			};
 
 		case actions.iconCopy:
 			setStorage({ name: actions.iconCopy, value: action.copy });
 			return {
 				...state,
-				icons: {
-					...state.icons,
-					copy: action.copy,
-				}
+				iconCopy: action.copy,
 			};
 	}
 
@@ -78,8 +72,6 @@ export const StoreInitials = {
 		theme: getStorage({ name: actions.themes.calendar }),
 		style: getStorage({ name: actions.styles.calendar }),
 	},
-	icons: {
-		size: getStorage({ name: actions.iconSize }),
-		copy: getStorage({ name: actions.iconCopy }),
-	}
+	iconSize: getStorage({ name: actions.iconSize }),
+	iconCopy: getStorage({ name: actions.iconCopy }),
 }
