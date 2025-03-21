@@ -6,6 +6,7 @@ import SvgIcon from '@components/SvgIcon';
 
 // utils
 import type { SizeListProps, IconsListProps } from '@utils/Models';
+import { StoreActions } from '@utils/StoreActions';
 
 // assets
 import iconsList from './../icons-list.json';
@@ -20,9 +21,6 @@ import SpriteCommerce from '@icon/sprite/commerce.svg';
 import SpriteFiles from '@icon/sprite/files.svg';
 import SpriteSocial from '@icon/sprite/social.svg';
 import SpriteBrands from '@icon/sprite/brands.svg';
-
-// utils
-import { StoreActions } from '@utils/StoreActions';
 
 import "../less/helpers/iconlist";
 
