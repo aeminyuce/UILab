@@ -19,10 +19,8 @@ export const actions = {
 	styles: {
 		calendar: 'CALENDAR_STYLE',
 	},
-	icons: {
-		size: 'ICON_SIZE',
-		copy: 'ICON_COPY',
-	}
+	iconSize: 'ICON_SIZE',
+	iconCopy: 'ICON_COPY',
 }
 
 export const StoreReducer = (state: ReducerStateProps, action: ReducerActionProps) => {
@@ -52,8 +50,8 @@ export const StoreReducer = (state: ReducerStateProps, action: ReducerActionProp
 			return style('calendar');
 
 		// icons
-		case actions.icons.size:
-			setStorage({ name: actions.icons.size, value: action.size });
+		case actions.iconSize:
+			setStorage({ name: actions.iconSize, value: action.size });
 			return {
 				...state,
 				icons: {
@@ -62,8 +60,8 @@ export const StoreReducer = (state: ReducerStateProps, action: ReducerActionProp
 				}
 			};
 
-		case actions.icons.copy:
-			setStorage({ name: actions.icons.copy, value: action.copy });
+		case actions.iconCopy:
+			setStorage({ name: actions.iconCopy, value: action.copy });
 			return {
 				...state,
 				icons: {
@@ -81,7 +79,7 @@ export const StoreInitials = {
 		style: getStorage({ name: actions.styles.calendar }),
 	},
 	icons: {
-		size: getStorage({ name: actions.icons.size }),
-		copy: getStorage({ name: actions.icons.copy }),
+		size: getStorage({ name: actions.iconSize }),
+		copy: getStorage({ name: actions.iconCopy }),
 	}
 }

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Fragment, useContext } from 'react';
+import { Fragment, useState } from 'react';
 import Alerts from '@components/Alerts';
 import Button from '@components/Button';
 import Grid from '@components/Grid';
@@ -7,6 +7,7 @@ import SvgIcon from '@components/SvgIcon';
 
 // utils
 import type { SizeListProps, IconsListProps } from '@utils/Models';
+import { getStorage } from '@utils/Storages';
 
 // assets
 import iconsList from './../icons-list.json';
@@ -23,26 +24,24 @@ import SpriteSocial from '@icon/sprite/social.svg';
 import SpriteBrands from '@icon/sprite/brands.svg';
 
 // utils
-import { StoreContext } from '@utils/StoreReducer';
+import { actions } from '@utils/StoreReducer';
 import { StoreActions } from '@utils/StoreActions';
 
 import "../less/helpers/iconlist";
 
 export default function () {
 
-    const { store } = useContext(StoreContext);
     const { iconCopy, iconSize } = StoreActions();
-
-    const storedIconSize = store?.icons?.size;
+    const [size, setSize] = useState(getStorage({ name: actions.iconSize }) || 'xl');
 
     // icon sizes
     const sizeList = [
-        { name: 'XXL', size: 'xxl', selected: false },
-        { name: 'XL', size: 'xl', selected: true },
-        { name: 'L', size: 'lg', selected: false },
-        { name: '-', size: '', selected: false },
-        { name: 'SM', size: 'sm', selected: false },
-        { name: 'XS', size: 'xs', selected: false },
+        { name: 'XXL', size: 'xxl' },
+        { name: 'XL', size: 'xl' },
+        { name: 'L', size: 'lg' },
+        { name: '-', size: '' },
+        { name: 'SM', size: 'sm' },
+        { name: 'XS', size: 'xs' },
     ]
 
     // sprites
@@ -82,7 +81,6 @@ export default function () {
         }
     };
 
-
     return (
         <Grid.Container as='main' noGutter='lg'>
             <Grid.Container fixed='xl' as='div' className='ui-p-15 ui-m-30-v ui-sm-no-p'>
@@ -104,10 +102,10 @@ export default function () {
                             <Button.Wrapper largeButtons as='holder' ease='1st' className='ui-m-20-b ui-theme-ice'>
                                 {sizeList.map((item: SizeListProps) => {
                                     let classes = 'ui-round';
-                                    if ((storedIconSize === null && item.selected) || (storedIconSize !== null && item.size === storedIconSize)) classes += ' ui-fill-dark-100';
+                                    if (item.size === size) classes += ' ui-fill-dark-100';
 
                                     return (
-                                        <Button noease key={item.name} size-ui-size={item.size} className={classes} onClick={() => iconSize(item.size)}>
+                                        <Button noease key={item.name} size-ui-size={item.size} className={classes} onClick={() => setSize(iconSize(item.size))}>
                                             {item.name}
                                         </Button>
                                     )
@@ -121,8 +119,8 @@ export default function () {
                             {iconsList.map((item: IconsListProps) => {
                                 let listClasses = 'iconlist ui-list-custom ui-theme-base ui-ease-1st-bg';
 
-                                if (storedIconSize !== '') {
-                                    listClasses += storedIconSize === null ? ' ui-icons-xl' : ` ui-icons-${storedIconSize}`;
+                                if (size !== '') {
+                                    listClasses += ` ui-icons-${size}`;
                                 }
 
                                 return (

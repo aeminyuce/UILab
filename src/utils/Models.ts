@@ -17,7 +17,6 @@ export interface ExamplesProps {
 export interface SizeListProps {
 	name: string;
 	size: string;
-	selected: boolean;
 }
 
 export interface IconsListProps {
