@@ -46,7 +46,6 @@ export const StoreActions = () => {
         calendarStyle, setCalendarStyle,
 
         // icons
-        iconSize, setIconSize,
-        iconCopy, setIconCopy,
+        iconSize, setIconSize, iconCopy, setIconCopy,
     }
 }

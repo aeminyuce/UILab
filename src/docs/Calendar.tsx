@@ -12,10 +12,7 @@ import Preview from '@layouts/Preview';
 import { StoreActions } from '@utils/StoreActions';
 
 export default function () {
-    const {
-        calendarTheme, setCalendarTheme,
-        calendarStyle, setCalendarStyle,
-    } = StoreActions();
+    const { calendarTheme, setCalendarTheme, calendarStyle, setCalendarStyle } = StoreActions();
 
     // themes
     const selectedTheme = calendarTheme ? ' ' + calendarTheme : '';

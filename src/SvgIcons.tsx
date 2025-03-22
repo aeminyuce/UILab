@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Fragment } from 'react';
+import Alerts from '@components/Alerts';
 import Button from '@components/Button';
 import Grid from '@components/Grid';
 import SvgIcon from '@components/SvgIcon';
@@ -26,10 +27,7 @@ import "../less/helpers/iconlist";
 
 export default function () {
 
-    const {
-        iconSize, setIconSize,
-        iconCopy, setIconCopy,
-    } = StoreActions();
+    const { iconSize, setIconSize, setIconCopy } = StoreActions();
 
     // icon sizes
     const sizeList = [
@@ -62,17 +60,27 @@ export default function () {
         totalLength += item.length;
     });
 
+    // helpers
+    const copyText = (text: string) => {
+        if (document.hasFocus()) {
+            navigator.clipboard.writeText(text).then(() => {
+                Alerts.Message({
+                    msg: `<b>Copied!</b><br>${text}`
+                });
+            }).catch((err) => {
+                Alerts.Message({
+                    msg: `<b>Failed to copy ${text}!</b><br>${err}`,
+                    theme: 'danger'
+                });
+            });
+        }
+    };
+
     return (
         <Grid.Container as='main' noGutter='lg'>
             <Grid.Container fixed='xl' as='div' className='ui-p-15 ui-m-30-v ui-sm-no-p'>
 
                 <div className='ui-sm-no-p ui-align-c ui-p-30-v'>
-
-                    {iconCopy &&
-                        <div className="ui-font-condensed ui-p-10 ui-round ui-theme-yellow ui-fill-dark-100 ui-set-fixed" style={{ width: '160px', top: '82px', right: '20px' }}>
-                            <strong>Icon copied!</strong><br />{iconCopy}
-                        </div>
-                    }
 
                     <Grid.Row>
                         <Grid.Col size={12}>
@@ -123,7 +131,7 @@ export default function () {
                                                 const classes = name.includes('loader-') ? 'ui-animate-spin' : null;
 
                                                 return (
-                                                    <li key={name} onClick={() => setIconCopy(name)}>
+                                                    <li key={name} onClick={() => copyText(setIconCopy(name))}>
                                                         <SvgIcon as='sprite' src={spritesList[item.category]} symbolId={name} className={classes} />
                                                         <span>{name}</span>
                                                     </li>
