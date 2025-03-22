@@ -47,13 +47,6 @@ ui.photoGallery = {
     // tags
     tagGalleryInfo: 'span',
 
-    // icons
-    closeIcon: 'remove',
-    prevIcon: 'angle-left',
-    nextIcon: 'angle-right',
-    loaderIcon: 'loader-line',
-    errorIcon: 'ban',
-
     // values
     imgVerRatio: 1.33,
     imgZoomSize: 2,
@@ -214,18 +207,26 @@ ui.photoGallery = {
                             '<div class="' + ui.photoGallery.namePreviewBg + '"></div>' +
 
                             '<button class="' + ui.photoGallery.namePreviewClose + ' ' + ui.photoGallery.stylesCloseIcon +'">' +
-                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.closeIcon + '</svg>' +
+                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' +
+                                    '<path d="' + ui.assets('iconRemove') + '" />' +
+                                '</svg>' +
                             '</button>' +
 
                             '<button type="button" class="' + ui.photoGallery.namePreviewPrev + ' ' + ui.photoGallery.stylesPreviewBtn + '">' +
-                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.prevIcon + '</svg>' +
+                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' +
+                                    '<path d="' + ui.assets('iconAngleLeft') + '" />' +
+                                '</svg>' +
                             '</button>' +
 
                             '<button type="button" class="' + ui.photoGallery.namePreviewNext + ' ' + ui.photoGallery.stylesPreviewBtn + '">' +
-                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.nextIcon + '</svg>' +
+                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' +
+                                    '<path d="' + ui.assets('iconAngleRight') + '" />' +
+                                '</svg>' +
                             '</button>' +
 
-                            '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.loaderIcon + '</svg>' +
+                            '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' +
+                                '<path d="' + ui.assets('iconLoaderLine') + '" />' +
+                            '</svg>' +
                             '<span class="' + ui.photoGallery.namePreviewInfo + ' ' + ui.photoGallery.stylesPreview + '"></span>' +
 
                             '<img class="' + ui.photoGallery.stylesPreview + '">' +
@@ -268,7 +269,7 @@ ui.photoGallery = {
             const notLoadedImage = () => {
 
                 ui.addClass(loader, ui.photoGallery.namePause);
-                loader.innerHTML = ui.photoGallery.errorIcon;
+                loader.innerHTML = '<path d="' + ui.assets('iconBan') + '" />';
 
             }
 
@@ -383,7 +384,7 @@ ui.photoGallery = {
                 loader.style.display = 'block';
 
                 ui.removeClass(loader, ui.photoGallery.namePause);
-                loader.innerHTML = ui.photoGallery.loaderIcon;
+                loader.innerHTML = '<path d="' + ui.assets('iconLoaderLine') + '" />';
 
                 toggleGalleryTools();
 

@@ -178,7 +178,9 @@ ui.alerts = {
                 cancelCloseDialog = true;
 
                 closeBtn = '<button class="' + ui.alerts.nameCloseDialog + ' ' + ui.alerts.stylesCloseDialog + '">' +
-                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.assets('iconRemove') + '</svg>' +
+                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' +
+                                    '<path d="' + ui.assets('iconRemove') + '" />' +
+                                '</svg>' +
                             '</button>';
             }
 

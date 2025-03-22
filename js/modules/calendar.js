@@ -223,7 +223,9 @@ ui.calendar.Start = () => {
         '<caption>' +
 
             '<button type="button" tabindex="-1" class="' + ui.calendar.namePrev + '">' +
-                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.assets('iconArrowLeft') + '</svg>' +
+                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' +
+                    '<path d="' + ui.assets('iconArrowLeft') + '" />' +
+                '</svg>' +
             '</button>' +
 
             '<span class="' + ui.calendar.nameTitle + ' ' + ui.calendar.stylesTitle + '">' +
@@ -232,7 +234,9 @@ ui.calendar.Start = () => {
             '</span>' +
 
             '<button type="button" tabindex="-1" class="' + ui.calendar.nameNext + '">' +
-                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.assets('iconArrowRight') + '</svg>' +
+                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' +
+                    '<path d="' + ui.assets('iconArrowRight') + '" />' +
+                '</svg>' +
             '</button>' +
 
         '</caption>' +
@@ -437,7 +441,9 @@ ui.calendar.Start = () => {
                             detailsTemp = '<div class="' + ui.calendar.nameDetails + '">' +
 
                                             '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">' +
-                                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.assets('iconAngleLeft') + '</svg>' +
+                                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' +
+                                                    '<path d="' +ui.assets('iconAngleLeft') + '" />' +
+                                                '</svg>' +
                                             '</button>' +
 
                                             '<ul class="' + ui.calendar.stylesDetailScroll + '">' + details + '</ul>' +
@@ -454,7 +460,9 @@ ui.calendar.Start = () => {
                             details = '<div class="' + ui.calendar.nameDetails + ' ' + ui.calendar.nameEmptyDetails + '">' +
 
                                             '<button class="' + ui.calendar.nameToggleDetails + '" type="button" tabindex="-1">' +
-                                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.assets('iconAngleLeft') + '</svg>' +
+                                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' +
+                                                    '<path d="' + ui.assets('iconAngleLeft') + '" />' +
+                                                '</svg>' +
                                             '</button>' +
 
                                             '<ul>' +

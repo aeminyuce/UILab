@@ -30,7 +30,7 @@ ui.datatable = {
     nameActive: 'ui-active',
     nameEven: 'ui-even',
 
-    nameShow: 'ui-showed',
+    nameShowed: 'ui-showed',
     nameFiltered: 'ui-filtered',
     nameChecked: 'ui-checked',
 
@@ -50,9 +50,6 @@ ui.datatable = {
     descIcon : 'sort-down',
     ascNumberIcon : 'sort-number-up',
     descNumberIcon : 'sort-number-down',
-
-    prevIcon : 'angle-left',
-    nextIcon : 'angle-right',
 
     // values
     valueSplit : '|',
@@ -168,7 +165,9 @@ ui.datatable = {
         classes = classes.replace(re, ' ').replace(rex, '');
 
         let html = '<button class="' + classes + '">' +
-                        '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.datatable.prevIcon + '</svg>' +
+                        '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' +
+                            '<path d="' + ui.assets('iconAngleLeft') + '" />' +
+                        '</svg>' +
                     '</button>\n';
 
         for (let i = min; i <= max; i++) {
@@ -189,7 +188,9 @@ ui.datatable = {
 
         classes = classes.replace(re, ' ').replace(rex, '');
         html += '<button class="' + classes + '">' +
-                    '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.datatable.nextIcon + '</svg>' +
+                    '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' +
+                        '<path d="' + ui.assets('iconAngleRight') + '" />' +
+                    '</svg>' +
                 '</button>\n';
 
         paging[0].innerHTML = '';
@@ -246,7 +247,7 @@ ui.datatable = {
         let isEven = false;
         const gridStriped = ui.hasClass(that, ui.datatable.nameListStriped);
 
-        ui.removeClass(ui.find('.' + ui.datatable.nameListContent + '.' + ui.datatable.nameShow, that), ui.datatable.nameShow);
+        ui.removeClass(ui.find('.' + ui.datatable.nameListContent + '.' + ui.datatable.nameShowed, that), ui.datatable.nameShowed);
 
         function evenList(el) {
 
@@ -266,7 +267,7 @@ ui.datatable = {
 
             }
 
-            ui.addClass(el, ui.datatable.nameShow);
+            ui.addClass(el, ui.datatable.nameShowed);
 
         }
 

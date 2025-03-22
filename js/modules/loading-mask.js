@@ -22,10 +22,7 @@ ui.loadingMask = {
 
     // values
     staticIconTop: 220,
-
     loadingSize: 0.32,
-    loadingBox: '0 0 264 264',
-    loadingPath: '<path d="M1 132a11 11 0 0 1 11-11 11 11 0 0 1 11 11 109.123 109.123 0 0 0 109 109 11 11 0 0 1 11 11 11 11 0 0 1-11 11C59.766 263 1 204.233 1 132Zm240 0A109.122 109.122 0 0 0 132 23a11 11 0 0 1-11-11 11 11 0 0 1 11-11c72.233 0 131 58.768 131 131a11 11 0 0 1-11 11 11 11 0 0 1-11-11Z"/>'
 
 };
 
@@ -127,10 +124,10 @@ ui.loadingMask = {
 
                     html += '<svg ' +
                             'xmlns="http://www.w3.org/2000/svg"' +
-                            'viewBox="' + ui.loadingMask.loadingBox + '"' +
+                            'viewBox="' + ui.globals.svgIconViewBox + '"' +
                             'class="' + ui.loadingMask.stylesIcon + '" ' +
                             'style="height: ' + (l[i].offsetHeight * ui.loadingMask.loadingSize) + 'px;">' +
-                                ui.loadingMask.loadingPath +
+                                '<path d="' + ui.assets('iconLoaderLineDual') + '" />' +
                             '</svg>' +
                         '</span>' +
                     '</span>';

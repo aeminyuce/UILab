@@ -26,7 +26,9 @@ ui.topButton = {
     var togglerFnc = () => {
 
         var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + ' ' + ui.topButton.nameOpen + '" title="' + ui.topButton.titleText + '">' +
-                        '<svg class="' + ui.globals.nameIcon + (ui.topButton.stylesIcon ? ' ' + ui.topButton.stylesIcon : '') + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.assets('iconArrowToTop') + '</svg>' +
+                        '<svg class="' + ui.globals.nameIcon + (ui.topButton.stylesIcon ? ' ' + ui.topButton.stylesIcon : '') + '" viewBox="' + ui.globals.svgIconViewBox + '">' +
+                            '<path d="' + ui.assets('iconArrowToTop') + '" />' +
+                        '</svg>' +
                     '</button>';
 
         var topBtn;
