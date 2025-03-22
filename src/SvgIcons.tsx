@@ -23,16 +23,16 @@ import SpriteFiles from '@icon/sprite/files.svg';
 import SpriteSocial from '@icon/sprite/social.svg';
 import SpriteBrands from '@icon/sprite/brands.svg';
 
-import "../less/helpers/iconlist";
-
 export default function () {
 
     const { iconSize, setIconSize, setIconCopy } = StoreActions();
 
     // icon sizes
+    const selectedSize = 'xl';
+
     const sizeList = [
         { name: 'XXL', size: 'xxl' },
-        { name: 'XL', size: 'xl', selected: true },
+        { name: 'XL', size: 'xl' },
         { name: 'L', size: 'lg' },
         { name: '-', size: '-' },
         { name: 'SM', size: 'sm' },
@@ -78,7 +78,7 @@ export default function () {
 
     return (
         <Grid.Container as='main' noGutter='lg'>
-            <Grid.Container fixed='xl' as='div' className='ui-p-15 ui-m-30-v ui-sm-no-p'>
+            <Grid.Container fixed='xl' as='div' className='ui-p-15 ui-sm-no-p'>
 
                 <div className='ui-sm-no-p ui-align-c ui-p-30-v'>
 
@@ -97,7 +97,7 @@ export default function () {
                             <Button.Wrapper largeButtons as='holder' ease='1st' className='ui-m-20-b ui-theme-ice'>
                                 {sizeList.map((item: SizeListProps) => {
                                     let classes = 'ui-round';
-                                    if ((iconSize === null && item.selected) || (iconSize !== null && item.size === iconSize)) classes += ' ui-fill-dark-100';
+                                    if ((iconSize === null && item.size === selectedSize) || (iconSize !== null && item.size === iconSize)) classes += ' ui-fill-dark-100';
 
                                     return (
                                         <Button noease key={item.name} size-ui-size={item.size} className={classes} onClick={() => setIconSize(item.size)}>
@@ -112,32 +112,26 @@ export default function () {
                     <Grid.Row>
                         <Grid.Col size={12}>
                             {iconsList.map((item: IconsListProps) => {
-                                let listClasses = 'iconlist ui-list-custom ui-theme-base ui-ease-1st-bg';
-
-                                if (iconSize !== '') {
-                                    listClasses += ` ui-icons-${iconSize}`;
-                                }
-
                                 return (
                                     <Fragment key={item.category}>
-                                        <h2 className="ui-h2">
+                                        <h2 className='ui-h2 ui-m-30-v'>
                                             {item.category} Icons
-                                            <span className="ui-font-16 ui-m-5-v ui-block ui-opacity-half">
+                                            <span className='ui-font-16 ui-m-5-v ui-block ui-opacity-half'>
                                                 ({item.length} icons)
                                             </span>
                                         </h2>
-                                        <ul className={listClasses}>
+                                        <Button.Wrapper ease='1st' className={`ui-highlight ui-icons-${iconSize ? iconSize : selectedSize}`}>
                                             {item.icons.map((name: string) => {
                                                 const classes = name.includes('loader-') ? 'ui-animate-spin' : null;
 
                                                 return (
-                                                    <li key={name} onClick={() => copyText(setIconCopy(name))}>
-                                                        <SvgIcon as='sprite' src={spritesList[item.category]} symbolId={name} className={classes} />
-                                                        <span>{name}</span>
-                                                    </li>
+                                                    <Button key={name} multi noease className='ui-col-150 ui-p-10-v ui-no-p-h ui-m-1 ui-round' onClick={() => copyText(setIconCopy(name))}>
+                                                        <SvgIcon as='sprite' src={spritesList[item.category]} symbolId={name} className={classes} opacity='no' />
+                                                        <span className='ui-font-13 ui-color-white-25 ui-m-5-t ui-block'>{name}</span>
+                                                    </Button>
                                                 )
                                             })}
-                                        </ul>
+                                        </Button.Wrapper>
                                     </Fragment>
                                 )
                             })}
