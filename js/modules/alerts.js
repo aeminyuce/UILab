@@ -32,9 +32,6 @@ ui.alerts = {
     nameShow: 'ui-show',
     nameShowEase: 'ui-show-ease',
 
-    // outer classnames
-    nameIcon: 'ui-icon',
-
     // styling classnames
     stylesDialog: 'ui-round ui-shadow-lg ui-ease-layout ui-ease-in-out',
     stylesCloseDialog: 'ui-ease-layout',
@@ -181,7 +178,7 @@ ui.alerts = {
                 cancelCloseDialog = true;
 
                 closeBtn = '<button class="' + ui.alerts.nameCloseDialog + ' ' + ui.alerts.stylesCloseDialog + '">' +
-                                '<svg class="' + ui.alerts.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.assets('iconRemove') + '</svg>' +
+                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.assets('iconRemove') + '</svg>' +
                             '</button>';
             }
 

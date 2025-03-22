@@ -14,7 +14,7 @@ ui.topButton = {
 
     // styling classnames
     stylesTarget: 'ui-round ui-ease-layout',
-    stylesIcon: 'ui-icon ui-ease-layout',
+    stylesIcon: 'ui-ease-layout',
 
     // custom texts
     titleText : 'Back to top!'
@@ -26,7 +26,7 @@ ui.topButton = {
     var togglerFnc = () => {
 
         var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + ' ' + ui.topButton.nameOpen + '" title="' + ui.topButton.titleText + '">' +
-                        '<svg class="' + ui.topButton.stylesIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.assets('iconArrowToTop') + '</svg>' +
+                        '<svg class="' + ui.globals.nameIcon + (ui.topButton.stylesIcon ? ' ' + ui.topButton.stylesIcon : '') + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.assets('iconArrowToTop') + '</svg>' +
                     '</button>';
 
         var topBtn;

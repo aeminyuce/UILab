@@ -30,6 +30,7 @@ export const ui = {
 
         // icons
         svgIconViewBox: '0 0 264 264',
+        nameIcon: 'ui-icon',
 
         // data attributes
         dataPrefix: 'data-ui-',

@@ -38,8 +38,6 @@ ui.datatable = {
     nameDesc: 'ui-desc',
 
     // outer classnames
-    nameIcon: 'ui-icon',
-
     nameBtnActive: 'ui-btn-active',
     nameBtnPassive: 'ui-btn-passive',
 
@@ -170,7 +168,7 @@ ui.datatable = {
         classes = classes.replace(re, ' ').replace(rex, '');
 
         let html = '<button class="' + classes + '">' +
-                        '<svg class="' + ui.datatable.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.datatable.prevIcon + '</svg>' +
+                        '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.datatable.prevIcon + '</svg>' +
                     '</button>\n';
 
         for (let i = min; i <= max; i++) {
@@ -191,7 +189,7 @@ ui.datatable = {
 
         classes = classes.replace(re, ' ').replace(rex, '');
         html += '<button class="' + classes + '">' +
-                    '<svg class="' + ui.datatable.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.datatable.nextIcon + '</svg>' +
+                    '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.datatable.nextIcon + '</svg>' +
                 '</button>\n';
 
         paging[0].innerHTML = '';
@@ -369,7 +367,7 @@ ui.datatable = {
                     if (!ui.hasClass(el, ui.datatable.nameActive)) {
 
                         ui.removeClass(el, ui.datatable.nameAsc + ' ' + ui.datatable.nameDesc);
-                        ui.find('.' + ui.datatable.nameIcon, el)[0] = ui.datatable.sortIcon;
+                        ui.find('.' + ui.globals.nameIcon, el)[0] = ui.datatable.sortIcon;
 
                     }
 
@@ -386,10 +384,10 @@ ui.datatable = {
                 ui.addClass(this, ui.datatable.nameDesc);
 
                 if (sortType === ui.datatable.sortTypeNumber) {
-                    ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.descNumberIcon;
+                    ui.find('.' + ui.globals.nameIcon, this)[0] = ui.datatable.descNumberIcon;
 
                 } else {
-                    ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.descIcon;
+                    ui.find('.' + ui.globals.nameIcon, this)[0] = ui.datatable.descIcon;
                 }
 
             } else {
@@ -398,10 +396,10 @@ ui.datatable = {
                 ui.addClass(this, ui.datatable.nameAsc);
 
                 if (sortType === ui.datatable.sortTypeNumber) {
-                    ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.ascNumberIcon;
+                    ui.find('.' + ui.globals.nameIcon, this)[0] = ui.datatable.ascNumberIcon;
 
                 } else {
-                    ui.find('.' + ui.datatable.nameIcon, this)[0] = ui.datatable.ascIcon;
+                    ui.find('.' + ui.globals.nameIcon, this)[0] = ui.datatable.ascIcon;
                 }
 
             }

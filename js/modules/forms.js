@@ -39,9 +39,6 @@ ui.forms = {
     nameOpen: 'ui-open',
     nameOpenEase: 'ui-open-ease',
 
-    // outer classnames
-    nameIcon: 'ui-icon',
-
     // tags
     tagFileInfo: 'i',
 
@@ -228,8 +225,8 @@ ui.forms = {
             ui.on(document,
                 'mousedown',
 
-                '[class*="' + ui.forms.nameFormIcon + '"] > button.' + ui.forms.nameIcon + ',' +
-                '[class*="' + ui.forms.nameFormIcon + '"] > input.' + ui.forms.nameIcon,
+                '[class*="' + ui.forms.nameFormIcon + '"] > button.' + ui.globals.nameIcon + ',' +
+                '[class*="' + ui.forms.nameFormIcon + '"] > input.' + ui.globals.nameIcon,
 
                 function (e) {
 

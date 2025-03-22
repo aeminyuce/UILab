@@ -44,9 +44,6 @@ ui.photoGallery = {
     stylesPreview: 'ui-ease-layout',
     stylesPreviewBtn: 'ui-circle ui-ease-btn',
 
-    // outer classnames
-    nameIcon: 'ui-icon',
-
     // tags
     tagGalleryInfo: 'span',
 
@@ -217,18 +214,18 @@ ui.photoGallery = {
                             '<div class="' + ui.photoGallery.namePreviewBg + '"></div>' +
 
                             '<button class="' + ui.photoGallery.namePreviewClose + ' ' + ui.photoGallery.stylesCloseIcon +'">' +
-                                '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.closeIcon + '</svg>' +
+                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.closeIcon + '</svg>' +
                             '</button>' +
 
                             '<button type="button" class="' + ui.photoGallery.namePreviewPrev + ' ' + ui.photoGallery.stylesPreviewBtn + '">' +
-                                '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.prevIcon + '</svg>' +
+                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.prevIcon + '</svg>' +
                             '</button>' +
 
                             '<button type="button" class="' + ui.photoGallery.namePreviewNext + ' ' + ui.photoGallery.stylesPreviewBtn + '">' +
-                                '<svg class="' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.nextIcon + '</svg>' +
+                                '<svg class="' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.nextIcon + '</svg>' +
                             '</button>' +
 
-                            '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.photoGallery.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.loaderIcon + '</svg>' +
+                            '<svg class="' + ui.photoGallery.namePreviewLoader + ' ' + ui.globals.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.photoGallery.loaderIcon + '</svg>' +
                             '<span class="' + ui.photoGallery.namePreviewInfo + ' ' + ui.photoGallery.stylesPreview + '"></span>' +
 
                             '<img class="' + ui.photoGallery.stylesPreview + '">' +
