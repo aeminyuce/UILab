@@ -6,7 +6,6 @@ import { ui } from '../js/core/globals';
 import Form from './Form';
 import SvgIcon from './SvgIcon';
 
-import { IconArrowLeft, IconArrowRight, IconAngleLeft, IconCalendar } from './utils/Assets';
 import { CalendarProps, CalendarPickerProps } from './utils/Models';
 
 // assets
@@ -16,15 +15,6 @@ import '../js/modules/calendar';
 const Calendar = function (props:CalendarProps) {
 
     const { className, style } = props;
-
-    useEffect(() => {
-
-        // icons
-        ui.calendar.prevIcon = IconArrowLeft;
-        ui.calendar.nextIcon = IconArrowRight;
-        ui.calendar.backIcon = IconAngleLeft;
-
-    }, []);
 
     useEffect(() => {
 
@@ -49,14 +39,6 @@ const CalendarPicker = function (props:CalendarPickerProps) {
 
     useEffect(() => {
 
-        // icons
-        ui.calendar.prevIcon = IconArrowLeft;
-        ui.calendar.nextIcon = IconArrowRight;
-
-    }, []);
-
-    useEffect(() => {
-
         // init
         ui.calendar.Init();
 
@@ -71,7 +53,7 @@ const CalendarPicker = function (props:CalendarPickerProps) {
                 autoComplete={autoComplete} required={required} className={classes} style={style} disabled={disabled}
                 number={number} numberFloat={numberFloat} minlength={minlength} maxlength={maxlength}
                 onChange={onChange} onInput={onInput} onBlur={onBlur}>
-                <SvgIcon as='path' src={IconCalendar} />
+                <SvgIcon as='path' src={ui.assets('iconCalendar')} />
         </Form.Input>
     );
 

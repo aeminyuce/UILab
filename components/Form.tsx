@@ -7,9 +7,6 @@ import Button from './Button';
 import SvgIcon from './SvgIcon';
 import { FormLabelProps, FormInputProps, FormFileProps, FormTextareaProps, FormSelectProps, FormCheckProps, FormRequiredMessageProps, FormHintProps } from './utils/Models';
 
-// utils
-import { IconAngleDown, IconPlus } from './utils/Assets';
-
 // assets
 import '../less/modules/autocomplete';
 import '../less/modules/textarea-counter';
@@ -172,7 +169,7 @@ const FormFile = function (props:FormFileProps) {
             }
             {as === 'button' &&
                 <Button square as="span" className={btnClasses}>
-                    <SvgIcon as='path' src={IconPlus} />
+                    <SvgIcon as='path' src={ui.assets('iconPlus')} />
                 </Button>
             }
         </div>
@@ -250,7 +247,7 @@ const FormSelect = function (props:FormSelectProps) {
 
     return (
         <div className={classes} style={style}>
-            <SvgIcon as='path' src={IconAngleDown} />
+            <SvgIcon as='path' src={ui.assets('iconAngleDown')} />
             <select id={id} ref={myRef} title={title} name={name} tabIndex={tabIndex} value={value} defaultValue={defaultValue} className={childrenClasses} disabled={disabled}
                 onChange={onChange} onInput={onInput}>
                     {children}

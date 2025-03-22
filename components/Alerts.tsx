@@ -1,7 +1,6 @@
 import { ui } from '../js/core/globals';
 
 // utils
-import { IconRemove } from './utils/Assets';
 import { AlertsDialogProps, AlertsMessageProps } from './utils/Models';
 
 // assets
@@ -13,9 +12,6 @@ const Alerts = function () {}
 const AlertsDialog = function (props:AlertsDialogProps) {
 
     const { msg, success, error, custom, callback } = props;
-
-    // icons
-    ui.alerts.closeIcon = IconRemove;
 
     // messages
     ui.alerts.msgDialogSuccess = 'OK';

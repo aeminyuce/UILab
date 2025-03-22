@@ -2,7 +2,6 @@ import * as React from 'react';
 import { ui } from '../js/core/globals';
 
 // utils
-import { IconRemove } from './utils/assets';
 import { ModalProps, ModalHeaderProps, ModalTitleProps, ModalButtonsProps, ModalContainerProps, ModalFooterProps, ModalOpenProps } from './utils/models';
 
 // assets
@@ -123,9 +122,6 @@ export const modalOpen = function (props:ModalOpenProps) {
 
     // styling classnames
     ui.modal.stylesContent = 'ui-round ui-shadow-lg ui-ease-layout';
-
-    // icons
-    ui.modal.closeIcon = IconRemove;
 
     // sizes
     let setSize: any = null;

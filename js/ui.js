@@ -10,6 +10,7 @@ import './core/removeclass.js';
 import './core/toggleclass.js';
 import './core/closest.js';
 import './core/ajax.js';
+import './core/assets.js';
 
 // Modifiers
 import './modules/user-agents.js';

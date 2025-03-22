@@ -54,9 +54,6 @@ ui.modal = {
     stylesCloseBtn: 'ui-ease-btn',
     stylesModalBg: 'ui-ease-layout',
 
-    // icons
-    closeIcon: 'remove',
-
     // values
     winMargin: 15,
 
@@ -368,7 +365,7 @@ ui.modal = {
                     if (closeBtn === undefined) {
 
                         closeBtn = '<button class="' + ui.modal.nameModalClose + ' ' + ui.modal.stylesCloseBtn + '">' +
-                                        '<svg class="' + ui.modal.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.modal.closeIcon + '</svg>' +
+                                        '<svg class="' + ui.modal.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.assets('iconRemove') + '</svg>' +
                                     '</button>';
 
                         content.insertAdjacentHTML('afterbegin', closeBtn);

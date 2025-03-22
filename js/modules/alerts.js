@@ -45,9 +45,6 @@ ui.alerts = {
 
     stylesBg: 'ui-ease-layout',
 
-    // icons
-    closeIcon: 'remove',
-
     // values
     dialogMessages: false, // shows automatically clicked buttons text
     successBtnValue: 'success',
@@ -184,7 +181,7 @@ ui.alerts = {
                 cancelCloseDialog = true;
 
                 closeBtn = '<button class="' + ui.alerts.nameCloseDialog + ' ' + ui.alerts.stylesCloseDialog + '">' +
-                                '<svg class="' + ui.alerts.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.alerts.closeIcon + '</svg>' +
+                                '<svg class="' + ui.alerts.nameIcon + '" viewBox="' + ui.globals.svgIconViewBox + '">' + ui.assets('iconRemove') + '</svg>' +
                             '</button>';
             }
 
