@@ -12,8 +12,6 @@ ui.requiredForms = {
     targetAccept: 'ui-required-holder',
     nameMsg: 'ui-required-msg',
 
-    nameTypePrefix: 'ui-',
-
     // outer classnames
     nameHolder: 'ui-form-holder',
 
@@ -157,7 +155,7 @@ ui.requiredForms.Start = () => {
             }
 
             // check emails
-            if (type === ui.requiredForms.nameTypePrefix + 'email') {
+            if (type === ui.globals.prefix + 'email') {
 
                 reMail = new RegExp(ui.requiredForms.rexMail);
                 if (val.match(reMail) === null) showErr();
@@ -200,7 +198,7 @@ ui.requiredForms.Start = () => {
                         if (type === null || type === '') return;
 
                         if (type === 'text') type = ui.requiredForms.nameInput;
-                        else type = ui.requiredForms.nameTypePrefix + type;
+                        else type = ui.globals.prefix + type;
 
                     }
 
@@ -307,7 +305,7 @@ ui.requiredForms.Start = () => {
         '.' + ui.requiredForms.nameInput + ' input.' + ui.requiredForms.target,
 
         function () {
-            required(this, ui.requiredForms.nameTypePrefix + this.type);
+            required(this, ui.globals.prefix + this.type);
         });
 
     ui.on(document,
@@ -317,7 +315,7 @@ ui.requiredForms.Start = () => {
         '.' + ui.requiredForms.nameInput + ' input.' + ui.requiredForms.target + '[type="time"]',
 
         function () {
-            required(this, ui.requiredForms.nameTypePrefix + this.type);
+            required(this, ui.globals.prefix + this.type);
         });
 
     ui.on(document,

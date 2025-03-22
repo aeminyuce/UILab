@@ -3,6 +3,9 @@
 export const ui = {
     globals: {
 
+        // prefix
+        prefix: 'ui-',
+
         // responsive breakpoints
         xl: 1680,
         lg: 1400,

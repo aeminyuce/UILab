@@ -17,8 +17,6 @@ ui.lineChart = {
 
     nameInfo: 'ui-line-chart-info',
 
-    nameTypePrefix: 'ui-',
-
     // ids
     idGradient: 'ui-gradient',
 
@@ -520,14 +518,14 @@ ui.lineChart.Start = () => {
 
                             if (type.indexOf(ui.lineChart.dashed) > -1) { // dashed
 
-                                classes += ui.lineChart.nameTypePrefix + ui.lineChart.dashed;
+                                classes += ui.globals.prefix + ui.lineChart.dashed;
                                 if (!selected) classes += ' ui-hidden'; // add no selected
 
                                 html += '<path class="' + classes + '" ';
 
                             } else if (type.indexOf(ui.lineChart.dotted) > -1) { // dotted
 
-                                classes += ui.lineChart.nameTypePrefix + ui.lineChart.dotted;
+                                classes += ui.globals.prefix + ui.lineChart.dotted;
                                 if (!selected) classes += ' ui-hidden'; // add no selected
 
                                 html += '<path class="' + classes + '" ';
@@ -577,7 +575,7 @@ ui.lineChart.Start = () => {
                                         'stroke="0" ' +
                                         'fill="url(#' + ui.lineChart.idGradient + id + ')" ' +
                                         'stroke-width="' + ui.lineChart.lineStroke + '" ' +
-                                        'class="' + ui.lineChart.nameTypePrefix + ui.lineChart.filled + '" ' +
+                                        'class="' + ui.globals.prefix + ui.lineChart.filled + '" ' +
 
                                     '/>';
 

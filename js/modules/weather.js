@@ -17,8 +17,6 @@ ui.weather = {
     nameWdate: 'ui-w-date',
     nameWclock: 'ui-w-clock',
 
-    nameAnimatePrefix: 'ui-',
-
     // animations
     animateClear: 'clear',
     animateStars: 'stars',
@@ -110,7 +108,7 @@ ui.weather = {
                                 for (i = 0; i < animations.length; i++) {
 
                                     html += '<div ' +
-                                                'class="' + ui.weather.nameAnimatePrefix + animations[i] + '" ' +
+                                                'class="' + ui.globals.prefix + animations[i] + '" ' +
                                                 'style="background-image: url(' + ui.weather.graphPath + animations[i] + '.' + ui.weather.fileType + ');">' +
                                             '</div>';
 

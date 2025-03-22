@@ -23,8 +23,6 @@ ui.alerts = {
     nameMsgHolder: 'ui-alerts-msg-holder',
     nameMsgThemePrefix: 'ui-msg-',
 
-    namePosPrefix: 'ui-',
-
     // styling classnames
     stylesDialog: 'ui-round ui-shadow-lg ui-ease-layout ui-ease-in-out',
     stylesCloseDialog: 'ui-ease-layout',
@@ -372,7 +370,7 @@ ui.alerts = {
 
             msgStyles += ui.alerts.stylesMsg;
 
-            html += '<div class="' + ui.alerts.targetMsg + ' ' + ui.alerts.namePosPrefix + props.pos + ' ' + msgStyles + '">' +
+            html += '<div class="' + ui.alerts.targetMsg + ' ' + ui.globals.prefix + props.pos + ' ' + msgStyles + '">' +
                         props.msg +
                     '</div>';
 
@@ -399,7 +397,7 @@ ui.alerts = {
                 // move same position elements
                 if (holder !== undefined) {
 
-                    const prev = ui.find('.' + ui.alerts.targetMsg + '.' + ui.alerts.namePosPrefix + props.pos);
+                    const prev = ui.find('.' + ui.alerts.targetMsg + '.' + ui.globals.prefix + props.pos);
                     Array.prototype.forEach.call(prev,
 
                         (el, j, arr) => {
@@ -414,7 +412,7 @@ ui.alerts = {
                                 slide = -1 * slide;
                             }
 
-                            if (ui.hasClass(el, 'ui-' + ui.alerts.posCenter)) {
+                            if (ui.hasClass(el, ui.globals.prefix + ui.alerts.posCenter)) {
                                 prev[j].style.transform = 'translate(-50%,' + slide + 'px)';
 
                             } else prev[j].style.transform = 'translateY(' + slide + 'px)';
