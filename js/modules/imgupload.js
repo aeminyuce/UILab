@@ -432,7 +432,7 @@ ui.imgUpload.Start = () => {
 
                     }
 
-                    item.parentNode.removeChild(item);
+                    item.remove();
 
                 });
 

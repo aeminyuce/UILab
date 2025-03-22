@@ -51,7 +51,7 @@ ui.sidebar = {
         ui.removeClass(panel, ui.globals.nameOpenEase);
         ui.removeClass(bg, ui.globals.nameOpenEase);
 
-        ui.removeClass(document, ui.globals.nameOpened);
+        ui.removeClass(document, ui.sidebar.nameOpened);
 
         setTimeout(() => {
 
@@ -71,8 +71,7 @@ ui.sidebar = {
 
             el.appendChild(contents[i]);
             el.parentNode.insertBefore(el.firstChild, el);
-
-            el.parentNode.removeChild(el);
+            el.remove();
 
         }
 
@@ -164,7 +163,7 @@ ui.sidebar = {
 
                 }
 
-                ui.addClass(document, ui.globals.nameOpened);
+                ui.addClass(document, ui.sidebar.nameOpened);
 
                 ui.addClass(panel, ui.globals.nameOpen);
                 ui.addClass(bg, ui.globals.nameOpen);

@@ -391,7 +391,7 @@ ui.dropdown = {
                 const input = ui.find('input', target)[0];
 
                 if (input !== undefined) {
-                    input.parentNode.removeChild(input);
+                    input.remove();
                 }
 
                 ui.removeClass(ui.find('.' + ui.globals.nameSelected, parent), ui.globals.nameSelected);

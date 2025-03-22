@@ -78,7 +78,7 @@ ui.alerts = {
 
             setTimeout(() => {
 
-                dialog.parentNode.removeChild(dialog);
+                dialog.remove();
 
                 const bg = ui.find('.' + ui.alerts.targetBg);
                 ui.removeClass(bg, ui.globals.nameOpenEase);
@@ -323,7 +323,7 @@ ui.alerts = {
                 ui.removeClass(win, ui.globals.nameShow);
 
                 if (win.parentNode !== null) {
-                    win.parentNode.removeChild(win);
+                    win.remove();
                 }
 
             }, ui.globals.ease);

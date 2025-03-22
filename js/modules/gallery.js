@@ -188,7 +188,7 @@ ui.photoGallery = {
                 Array.prototype.forEach.call(previousOpened,
 
                     el => {
-                        el.parentNode.removeChild(el);
+                        el.remove();
                     });
 
             }
@@ -326,7 +326,7 @@ ui.photoGallery = {
                 setTimeout(() => {
 
                     ui.removeClass(preview, ui.globals.nameOpen);
-                    preview[0].parentNode.removeChild(preview[0]);
+                    preview[0].remove();
 
                 }, ui.globals.ease);
 

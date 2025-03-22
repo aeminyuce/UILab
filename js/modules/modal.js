@@ -186,7 +186,7 @@ ui.modal = {
                         removeModal = ui.find('.' + ui.modal.nameRemovable, win[0]).length;
 
                         if (removeModal > 0) { // remove modal window
-                            win[0].parentNode.removeChild(win[0]);
+                            win[0].remove();
 
                         } else { // hide modal window
                             ui.removeClass(el, ui.globals.nameShow);
@@ -345,7 +345,7 @@ ui.modal = {
                 if (nonClosable) {
 
                     if (closeBtn !== undefined) {
-                        closeBtn.parentNode.removeChild(closeBtn);
+                        closeBtn.remove();
                     }
 
                 } else {

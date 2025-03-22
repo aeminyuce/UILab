@@ -56,7 +56,7 @@ ui.topButton = {
                         ui.removeClass(topBtn, ui.globals.nameOpenEase);
 
                         setTimeout(() => {
-                            if (topBtn.parentNode !== null) topBtn.parentNode.removeChild(topBtn);
+                            topBtn.remove();
                         }, ui.globals.slow);
 
                     }

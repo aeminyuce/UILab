@@ -27,7 +27,7 @@ ui.card.Start = () => {
             ui.addClass(parentEl, ui.card.stylesClosing);
 
             setTimeout(() => {
-                parentEl.parentNode.removeChild(parentEl);
+                parentEl.remove();
             }, ui.globals.ease * 2);
 
         });
