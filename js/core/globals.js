@@ -32,8 +32,8 @@ export const ui = {
         svgElems: ['svg', 'path', 'g', 'circle', 'rect', 'polygon', 'ellipse', 'text', 'lineargradient'],
 
         // icons
-        svgIconViewBox: '0 0 264 264',
         nameIcon: 'ui-icon',
+        svgIconViewBox: '0 0 264 264',
 
         // classnames
         nameOpen: 'ui-open',
@@ -49,6 +49,9 @@ export const ui = {
         nameLoaded: 'ui-loaded',
         nameNotLoaded: 'ui-no-loaded',
 
+        nameAsc: 'ui-asc',
+        nameDesc: 'ui-desc',
+
         nameSuccess: 'ui-success',
         nameHide: 'ui-hidden',
         nameFaded: 'ui-faded',
@@ -59,9 +62,6 @@ export const ui = {
         nameChecked: 'ui-checked',
         nameToggle: 'ui-toggle',
         nameChange: 'ui-changed',
-
-        nameAsc: 'ui-asc',
-        nameDesc: 'ui-desc',
 
         // data attributes
         dataPrefix: 'data-ui-',
