@@ -28,17 +28,6 @@ ui.carousel = {
 
     nameGalleryThumbs: 'ui-carousel-gallery-thumbs',
 
-    // helper classnames
-    nameShow: 'ui-show',
-    nameFaded: 'ui-faded',
-    nameActive: 'ui-active',
-
-    nameResized: 'ui-resized',
-
-    nameFiltered: 'ui-filtered',
-    nameNavSelected: 'ui-selected',
-    nameGallerySelected: 'ui-selected',
-
     // outer classnames
     namePhoto: 'ui-photo',
 
@@ -157,12 +146,12 @@ ui.carousel = {
 
             if (elems.length === 0) return;
 
-            if (ui.closest(content, '.' + ui.carousel.nameResized)[0] !== undefined) { // detect carousel is resizing
+            if (ui.closest(content, '.' + ui.globals.nameResized)[0] !== undefined) { // detect carousel is resizing
                 return;
             }
 
             if (type === 'static') {
-                ui.removeClass(elems, ui.carousel.nameShow);
+                ui.removeClass(elems, ui.globals.nameShow);
             }
 
             setTimeout(() => { // wait for dom loading or slider ease time
@@ -171,7 +160,7 @@ ui.carousel = {
 
                     setTimeout(() => {
 
-                        ui.addClass(elems[i], ui.carousel.nameShow);
+                        ui.addClass(elems[i], ui.globals.nameShow);
                         i += 1;
 
                         if (i < elems.length) { show(); }
@@ -189,29 +178,29 @@ ui.carousel = {
 
     function filterDots(navDots, navDotsEl, count, i) {
 
-        ui.removeClass(navDots, ui.carousel.nameFiltered);
-        ui.removeClass(navDotsEl, ui.carousel.nameShow + ' ' + ui.carousel.nameFaded);
+        ui.removeClass(navDots, ui.globals.nameFiltered);
+        ui.removeClass(navDotsEl, ui.globals.nameShow + ' ' + ui.globals.nameFaded);
 
         const col = getCols(i); // get responsive cols
 
-        ui.addClass(navDots, ui.carousel.nameFiltered);
+        ui.addClass(navDots, ui.globals.nameFiltered);
 
         if ((count - 1) > -1) {
 
-            ui.addClass(navDotsEl[count - 1], ui.carousel.nameShow);
+            ui.addClass(navDotsEl[count - 1], ui.globals.nameShow);
 
             if ((count - 2) > -1) {
-                ui.addClass(navDotsEl[count - 2], ui.carousel.nameFaded);
+                ui.addClass(navDotsEl[count - 2], ui.globals.nameFaded);
             }
 
         }
 
         if ((count + col) < navDotsEl.length) {
 
-            ui.addClass(navDotsEl[count + 1], ui.carousel.nameShow);
+            ui.addClass(navDotsEl[count + 1], ui.globals.nameShow);
 
             if ((count + col + 1) < navDotsEl.length) {
-                ui.addClass(navDotsEl[count + 2], ui.carousel.nameFaded);
+                ui.addClass(navDotsEl[count + 2], ui.globals.nameFaded);
             }
 
         }
@@ -264,8 +253,8 @@ ui.carousel = {
         const navDots = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots, that);
         const navDotsEl = ui.find('.' + ui.carousel.targetNav + ' .' + ui.carousel.nameDots + ' i', that);
 
-        ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
-        ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
+        ui.removeClass(navDotsEl, ui.globals.nameSelected);
+        ui.addClass(navDotsEl[counts[i]], ui.globals.nameSelected);
 
         filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
 
@@ -339,8 +328,8 @@ ui.carousel = {
 
         that.setAttribute(ui.carousel.dataContent, (counts[i] + 1));
 
-        ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
-        ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
+        ui.removeClass(navDotsEl, ui.globals.nameSelected);
+        ui.addClass(navDotsEl[counts[i]], ui.globals.nameSelected);
 
         filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
         let slide = counts[i] * contents[0].offsetWidth;
@@ -377,7 +366,7 @@ ui.carousel = {
                         const i = Number(el.getAttribute(ui.carousel.dataID));
                         if (i === null) return;
 
-                        ui.addClass(el, ui.carousel.nameResized);
+                        ui.addClass(el, ui.globals.nameResized);
                         carouselModifier(i, el, 'resize');
 
                         const slider = ui.find('.' + ui.carousel.targetSlider, el)[0];
@@ -400,7 +389,7 @@ ui.carousel = {
                     const i = Number(el.getAttribute(ui.carousel.dataID));
                     if (i === null) return;
 
-                    ui.removeClass(el, ui.carousel.nameResized);
+                    ui.removeClass(el, ui.globals.nameResized);
 
                     if (autoTimer[i] !== null && autoTimer[i] !== undefined) {
 
@@ -425,7 +414,7 @@ ui.carousel = {
 
     ui.carousel.Init = () => {
 
-        const carousels = ui.find('.' + ui.carousel.target + ':not(.' + ui.carousel.nameActive + ')');
+        const carousels = ui.find('.' + ui.carousel.target + ':not(.' + ui.globals.nameActive + ')');
         if (carousels.length > 0) {
 
             // load carousels
@@ -542,7 +531,7 @@ ui.carousel = {
 
                     if (nav === undefined || navDots === undefined) return;
 
-                    ui.addClass(el, ui.carousel.nameActive);
+                    ui.addClass(el, ui.globals.nameActive);
                     carouselModifier(j, el, 'static');
 
                     // create nav
@@ -570,8 +559,8 @@ ui.carousel = {
                     counts[j] = 0;
                     el.setAttribute(ui.carousel.dataContent, (counts[j] + 1));
 
-                    ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
-                    ui.addClass(navDotsEl[counts[j]], ui.carousel.nameNavSelected);
+                    ui.removeClass(navDotsEl, ui.globals.nameSelected);
+                    ui.addClass(navDotsEl[counts[j]], ui.globals.nameSelected);
 
                     filterDots(navDots, navDotsEl, counts[j], j); // filter dots when dots number exceeds
 
@@ -849,8 +838,8 @@ ui.carousel = {
                                 slider.style.transform = 'translateX(' + move + 'px)';
                                 that.setAttribute(ui.carousel.dataContent, (counts[i] + 1));
 
-                                ui.removeClass(navDotsEl, ui.carousel.nameNavSelected);
-                                ui.addClass(navDotsEl[counts[i]], ui.carousel.nameNavSelected);
+                                ui.removeClass(navDotsEl, ui.globals.nameSelected);
+                                ui.addClass(navDotsEl[counts[i]], ui.globals.nameSelected);
 
                                 filterDots(navDots, navDotsEl, counts[i], i); // filter dots when dots number exceeds
 
@@ -924,8 +913,8 @@ ui.carousel = {
 
                 };
 
-                ui.removeClass(thumbs, ui.carousel.nameGallerySelected);
-                ui.addClass(this, ui.carousel.nameGallerySelected);
+                ui.removeClass(thumbs, ui.globals.nameSelected);
+                ui.addClass(this, ui.globals.nameSelected);
 
             });
 

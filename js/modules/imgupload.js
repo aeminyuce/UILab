@@ -20,10 +20,6 @@ ui.imgUpload = {
     nameLoading: 'ui-imgupload-loading',
     nameUploading: 'ui-imgupload-uploading',
 
-    // helper classnames
-    nameOpen: 'ui-open',
-    nameOpenEase: 'ui-open-ease',
-
     // tags
     tagList: 'li',
 
@@ -271,7 +267,7 @@ ui.imgUpload.Start = () => {
 
                                 if (img !== undefined) { // return when image loading failed
 
-                                    html += '<' + ui.imgUpload.tagList + ' class="' + ui.imgUpload.nameOpenEase + '">' +
+                                    html += '<' + ui.imgUpload.tagList + ' class="' + ui.globals.nameOpenEase + '">' +
 
                                                 '<span class="' + ui.imgUpload.targetImages + '">' +
                                                     '<img id="' + img.id + '" src="' + img.data + '" draggable="false">' +
@@ -305,7 +301,7 @@ ui.imgUpload.Start = () => {
                     }, 0);
 
                     const listCont = ui.find('.' + ui.imgUpload.nameList, uploader)[0];
-                    ui.addClass(listCont, ui.imgUpload.nameOpen);
+                    ui.addClass(listCont, ui.globals.nameOpen);
 
                     let showTimer;
 
@@ -314,12 +310,12 @@ ui.imgUpload.Start = () => {
 
                     setTimeout(() => {
 
-                        Array.prototype.forEach.call(ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList + '.' + ui.imgUpload.nameOpenEase, listCont),
+                        Array.prototype.forEach.call(ui.find('.' + ui.imgUpload.nameList + ' ' + ui.imgUpload.tagList + '.' + ui.globals.nameOpenEase, listCont),
 
                             (newImg, i) => {
 
                                 setTimeout(() => {
-                                    ui.removeClass(newImg, ui.imgUpload.nameOpenEase);
+                                    ui.removeClass(newImg, ui.globals.nameOpenEase);
                                 }, (ui.globals.fast / 2) * i);
 
                             });

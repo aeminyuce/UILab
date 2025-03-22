@@ -35,10 +35,6 @@ ui.forms = {
 
     nameError: 'ui-form-error',
 
-    // helper classnames
-    nameOpen: 'ui-open',
-    nameOpenEase: 'ui-open-ease',
-
     // tags
     tagFileInfo: 'i',
 
@@ -93,18 +89,18 @@ ui.forms = {
 
             if (that.value !== '') {
 
-                ui.addClass(btn, ui.forms.nameOpen);
+                ui.addClass(btn, ui.globals.nameOpen);
 
                 setTimeout(() => {
-                    ui.addClass(btn, ui.forms.nameOpenEase);
+                    ui.addClass(btn, ui.globals.nameOpenEase);
                 }, 10);
 
             } else {
 
-                ui.removeClass(btn, ui.forms.nameOpenEase);
+                ui.removeClass(btn, ui.globals.nameOpenEase);
 
                 setTimeout(() => {
-                    ui.removeClass(btn, ui.forms.nameOpen);
+                    ui.removeClass(btn, ui.globals.nameOpen);
                 }, ui.globals.ease);
 
             }

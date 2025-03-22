@@ -25,13 +25,6 @@ ui.alerts = {
 
     namePosPrefix: 'ui-',
 
-    // helper classnames
-    nameOpen: 'ui-open',
-    nameOpenEase: 'ui-open-ease',
-
-    nameShow: 'ui-show',
-    nameShowEase: 'ui-show-ease',
-
     // styling classnames
     stylesDialog: 'ui-round ui-shadow-lg ui-ease-layout ui-ease-in-out',
     stylesCloseDialog: 'ui-ease-layout',
@@ -83,14 +76,14 @@ ui.alerts = {
         ui.alerts.closeDialog = function () {
 
             const dialog = ui.find('.' + ui.alerts.targetDialog)[0];
-            ui.removeClass(dialog, ui.alerts.nameShowEase);
+            ui.removeClass(dialog, ui.globals.nameShowEase);
 
             setTimeout(() => {
 
                 dialog.parentNode.removeChild(dialog);
 
                 const bg = ui.find('.' + ui.alerts.targetBg);
-                ui.removeClass(bg, ui.alerts.nameOpenEase);
+                ui.removeClass(bg, ui.globals.nameOpenEase);
 
                 ui.removeClass(document, ui.alerts.nameDialogOpened);
 
@@ -99,7 +92,7 @@ ui.alerts = {
                 }
 
                 setTimeout(() => {
-                    ui.removeClass(bg, ui.alerts.nameOpen);
+                    ui.removeClass(bg, ui.globals.nameOpen);
                 }, ui.globals.ease);
 
             }, ui.globals.ease);
@@ -214,21 +207,21 @@ ui.alerts = {
             const bgNew = ui.find('.' + ui.alerts.targetBg);
 
             // show dialog
-            ui.addClass(bgNew, ui.alerts.nameOpen);
+            ui.addClass(bgNew, ui.globals.nameOpen);
 
             setTimeout(() => {
 
-                ui.addClass(bgNew, ui.alerts.nameOpenEase);
+                ui.addClass(bgNew, ui.globals.nameOpenEase);
 
                 setTimeout(() => {
 
                     dialog = ui.find('.' + ui.alerts.targetDialog);
-                    ui.addClass(dialog, ui.alerts.nameShow);
+                    ui.addClass(dialog, ui.globals.nameShow);
 
                     ui.find('.' + ui.alerts.nameDialogSuccess)[0].focus(); // fosuc success button
 
                     setTimeout(() => {
-                        ui.addClass(dialog, ui.alerts.nameShowEase);
+                        ui.addClass(dialog, ui.globals.nameShowEase);
                     }, 10);
 
                     // Event Listeners
@@ -326,10 +319,10 @@ ui.alerts = {
         // messages
         ui.alerts.closeMessage = function (win) {
 
-            ui.removeClass(win, ui.alerts.nameShowEase);
+            ui.removeClass(win, ui.globals.nameShowEase);
             setTimeout(() => {
 
-                ui.removeClass(win, ui.alerts.nameShow);
+                ui.removeClass(win, ui.globals.nameShow);
 
                 if (win.parentNode !== null) {
                     win.parentNode.removeChild(win);
@@ -397,11 +390,11 @@ ui.alerts = {
 
             // show message
             const message = ui.find('.' + ui.alerts.targetMsg + ':last-child');
-            ui.addClass(message, ui.alerts.nameShow);
+            ui.addClass(message, ui.globals.nameShow);
 
             setTimeout(() => {
 
-                ui.addClass(message, ui.alerts.nameShowEase);
+                ui.addClass(message, ui.globals.nameShowEase);
 
                 // move same position elements
                 if (holder !== undefined) {

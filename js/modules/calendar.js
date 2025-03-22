@@ -40,13 +40,6 @@ ui.calendar = {
     nameHasDetails: 'ui-calendar-has-details',
     nameEmptyDetails: 'ui-calendar-details-empty',
 
-    // helper classnames
-    nameOpen: 'ui-open',
-    nameOpenEase: 'ui-open-ease',
-
-    nameActive: 'ui-active',
-    nameSelected: 'ui-selected',
-
     // outer classnames
     nameHover: 'ui-hover',
     nameRound: 'ui-round',
@@ -429,7 +422,7 @@ ui.calendar.Start = () => {
                         if (ui.hasClass(that, ui.calendar.nameShowDetails)) {
 
                             setTimeout(() => {
-                                ui.addClass(ui.find('.' + ui.calendar.nameDetails, container), ui.calendar.nameOpen);
+                                ui.addClass(ui.find('.' + ui.calendar.nameDetails, container), ui.globals.nameOpen);
                             }, 10);
 
                         }
@@ -493,14 +486,14 @@ ui.calendar.Start = () => {
         }
 
         html = '';
-        ui.addClass(that, ui.calendar.nameActive);
+        ui.addClass(that, ui.globals.nameActive);
 
     }
 
     // ckeck not loaded calendars
     ui.calendar.Init = () => {
 
-        const calendars = ui.find('.' + ui.calendar.target + ':not(.' + ui.calendar.nameActive + ')');
+        const calendars = ui.find('.' + ui.calendar.target + ':not(.' + ui.globals.nameActive + ')');
 
         if (calendars.length > 0) {
             Array.prototype.forEach.call(calendars, el => {
@@ -590,7 +583,7 @@ ui.calendar.Start = () => {
                                 '<button type="button" tabindex="-1" ';
 
                     if (year === i) {
-                        html += 'class="' + ui.calendar.namePanelCall + ' ' + ui.calendar.nameSelected + '" ';
+                        html += 'class="' + ui.calendar.namePanelCall + ' ' + ui.globals.nameSelected + '" ';
 
                     } else html += 'class="' + ui.calendar.namePanelCall + '" ';
 
@@ -612,7 +605,7 @@ ui.calendar.Start = () => {
                                     '<button type="button" tabindex="-1" ';
 
                         if (month === item) {
-                            html += 'class="' + ui.calendar.namePanelCall + ' ' + ui.calendar.nameSelected + '" ';
+                            html += 'class="' + ui.calendar.namePanelCall + ' ' + ui.globals.nameSelected + '" ';
 
                         } else html += 'class="' + ui.calendar.namePanelCall + '" ';
 
@@ -639,7 +632,7 @@ ui.calendar.Start = () => {
                 if (panelType === 'year') {
 
                     let getList = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall, that);
-                    const getSelected = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall + '.' + ui.calendar.nameSelected, that)[0];
+                    const getSelected = ui.find('.' + ui.calendar.target + ' .' + ui.calendar.namePanel + ' .' + ui.calendar.namePanelCall + '.' + ui.globals.nameSelected, that)[0];
 
                     const getIndex = Math.floor(Array.prototype.slice.call(getList).indexOf(getSelected) / 12);
                     ui.find('.' + ui.calendar.namePanel, that)[0].scrollTop = (getIndex * (that.offsetHeight - (ui.calendar.calendarPadding * 2))); // IE, EDGE: scrollTo() not supported for div element
@@ -666,7 +659,7 @@ ui.calendar.Start = () => {
             getAttr(that, date);
             ui.removeClass(that, ui.calendar.nameShowPanel);
 
-            if (!ui.hasClass(this, ui.calendar.nameSelected)) { // check user selected different date
+            if (!ui.hasClass(this, ui.globals.nameSelected)) { // check user selected different date
 
                 if (this.name.length === 4) { // selected year
                     createFnc(that, this.name + ',' + date.getMonth());
@@ -701,7 +694,7 @@ ui.calendar.Start = () => {
 
                 (item, i) => {
 
-                    ui.removeClass(item, ui.calendar.nameOpenEase);
+                    ui.removeClass(item, ui.globals.nameOpenEase);
 
                     setTimeout(() => {
 
@@ -723,7 +716,7 @@ ui.calendar.Start = () => {
 
                     const form = item.parentElement;
 
-                    ui.removeClass(item, ui.calendar.nameOpenEase);
+                    ui.removeClass(item, ui.globals.nameOpenEase);
 
                     setTimeout(() => {
                         removePicker(form, item);
@@ -806,7 +799,7 @@ ui.calendar.Start = () => {
 
             // show picker
             setTimeout(() => {
-                ui.addClass(picker, ui.calendar.nameOpenEase);
+                ui.addClass(picker, ui.globals.nameOpenEase);
             }, 10);
 
             // close event listeners
@@ -905,12 +898,12 @@ ui.calendar.Start = () => {
                 ui.removeClass(that, ui.calendar.nameShowDetails);
 
                 setTimeout(() => {
-                    ui.removeClass(details, ui.calendar.nameOpen);
+                    ui.removeClass(details, ui.globals.nameOpen);
                 }, ui.globals.ease * 2);
 
             } else {
 
-                ui.addClass(details, ui.calendar.nameOpen);
+                ui.addClass(details, ui.globals.nameOpen);
 
                 setTimeout(() => {
                     ui.addClass(that, ui.calendar.nameShowDetails);

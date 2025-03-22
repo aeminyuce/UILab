@@ -37,15 +37,6 @@ ui.modal = {
     nameInline: 'ui-modal-inline',
     nameFullscreen: 'ui-modal-fullscreen',
 
-    // helper classnames
-    nameOpen: 'ui-open',
-    nameOpenEase: 'ui-open-ease',
-
-    nameShow: 'ui-show',
-    nameShowEase: 'ui-show-ease',
-
-    nameActive: 'ui-active',
-
     // styling classnames
     stylesContent: 'ui-shadow-lg ui-ease-layout',
     stylesCloseBtn: 'ui-ease-btn',
@@ -84,7 +75,7 @@ ui.modal = {
 
         var win, type, container, bg, openSize, userDefined, customW, customH, minHeight;
 
-        win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow + ' .' + ui.modal.nameContent + ':not(.' + ui.modal.nameFullscreen + ')')[0];
+        win = ui.find('.' + ui.modal.targetWin + '.' + ui.globals.nameShow + ' .' + ui.modal.nameContent + ':not(.' + ui.modal.nameFullscreen + ')')[0];
         if (win !== undefined) {
 
             bg = ui.find('.' + ui.modal.targetBg)[0];
@@ -177,13 +168,13 @@ ui.modal = {
 
             var win, bg, removeModal;
 
-            win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow);
+            win = ui.find('.' + ui.modal.targetWin + '.' + ui.globals.nameShow);
             if (win.length === 0) return;
 
             Array.prototype.forEach.call(win,
 
                 el => {
-                    ui.removeClass(el, ui.modal.nameShowEase);
+                    ui.removeClass(el, ui.globals.nameShowEase);
                 });
 
             setTimeout(() => {
@@ -198,13 +189,13 @@ ui.modal = {
                             win[0].parentNode.removeChild(win[0]);
 
                         } else { // hide modal window
-                            ui.removeClass(el, ui.modal.nameShow);
+                            ui.removeClass(el, ui.globals.nameShow);
                         }
 
                     });
 
                 bg = ui.find('.' + ui.modal.targetBg);
-                ui.removeClass(bg, ui.modal.nameOpenEase);
+                ui.removeClass(bg, ui.globals.nameOpenEase);
 
                 ui.removeClass(document, ui.modal.nameModalOpened);
 
@@ -213,7 +204,7 @@ ui.modal = {
                 }
 
                 setTimeout(() => {
-                    ui.removeClass(bg, ui.modal.nameOpen);
+                    ui.removeClass(bg, ui.globals.nameOpen);
                 }, ui.globals.ease);
 
                 ui.trigger(document, ui.globals.eventDomChange); // set custom event
@@ -262,7 +253,7 @@ ui.modal = {
                     html += ' ' + ui.modal.nameWinNoBG;
                 }
 
-                html += ' ' + ui.modal.nameActive + '">' +
+                html += ' ' + ui.globals.nameActive + '">' +
                             '<div class="' + ui.modal.nameContent + ' ' + ui.modal.stylesContent + '"></div>' +
                         '</div>';
 
@@ -272,7 +263,7 @@ ui.modal = {
 
                 ui.find(ui.modal.targetHolder)[0].insertAdjacentHTML('beforeend', html);
 
-                win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameActive)[0];
+                win = ui.find('.' + ui.modal.targetWin + '.' + ui.globals.nameActive)[0];
                 content = ui.find('.' + ui.modal.nameContent, win)[0];
 
             }
@@ -377,15 +368,15 @@ ui.modal = {
                 ui.addClass(document, ui.modal.nameModalOpened);
 
                 bg = ui.find('.' + ui.modal.targetBg);
-                ui.addClass(bg, ui.modal.nameOpen);
+                ui.addClass(bg, ui.moglobalsdal.nameOpen);
 
                 setTimeout(() => {
 
-                    ui.addClass(bg, ui.modal.nameOpenEase);
+                    ui.addClass(bg, ui.globals.nameOpenEase);
 
                     setTimeout(() => {
 
-                        ui.addClass(win, ui.modal.nameShow);
+                        ui.addClass(win, ui.globals.nameShow);
 
                         content.style.top = Math.floor((bg[0].offsetHeight - content.offsetHeight) / 2) + 'px';
                         content.style.left = Math.floor((bg[0].offsetWidth - content.offsetWidth) / 2) + 'px';
@@ -400,8 +391,8 @@ ui.modal = {
 
                         setTimeout(() => {
 
-                            ui.addClass(win, ui.modal.nameShowEase);
-                            ui.removeClass(win, ui.modal.nameActive);
+                            ui.addClass(win, ui.globals.nameShowEase);
+                            ui.removeClass(win, ui.globals.nameActive);
 
                             ui.modal.resizer();
 
@@ -436,8 +427,8 @@ ui.modal = {
                 created = ui.closest(props.source, '.' + ui.modal.targetWin);
                 if (created.length > 0) { // modal created before
 
-                    ui.addClass(created, ui.modal.nameActive);
-                    win = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameActive)[0];
+                    ui.addClass(created, ui.globals.nameActive);
+                    win = ui.find('.' + ui.modal.targetWin + '.' + ui.globals.nameActive)[0];
 
                     content = ui.find('.' + ui.modal.nameContent, win)[0];
                     showModal();
@@ -527,7 +518,7 @@ ui.modal = {
         // Event Listeners
         function userClose() {
 
-            var p = ui.find('.' + ui.modal.targetWin + '.' + ui.modal.nameShow + '.' + ui.modal.nameClosable)[0];
+            var p = ui.find('.' + ui.modal.targetWin + '.' + ui.globals.nameShow + '.' + ui.modal.nameClosable)[0];
             if (p !== undefined) { ui.modal.close(); }
 
         }

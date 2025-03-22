@@ -41,10 +41,10 @@ ui.effects = {
                 if ((e.type === 'scroll' && ui.effects.pauseScroll) || (e.type === 'resize' && ui.effects.pauseResize)) {
 
                     clearTimeout(pauseTransitionsTimer);
-                    ui.addClass(ui.effects.target, ui.effects.namePause);
+                    ui.addClass(ui.effects.target, ui.globals.namePause);
 
                     pauseTransitionsTimer = setTimeout(() => {
-                        ui.removeClass(ui.effects.target, ui.effects.namePause);
+                        ui.removeClass(ui.effects.target, ui.globals.namePause);
                     }, ui.globals.ease * 2);
 
                 }
@@ -99,10 +99,10 @@ ui.effects = {
             // wait page preload to start transitions
             if (ui.effects.preload) {
 
-                ui.addClass(ui.effects.target, ui.effects.namePause);
+                ui.addClass(ui.effects.target, ui.globals.namePause);
 
                 setTimeout(() => {
-                    ui.removeClass(ui.effects.target, ui.effects.namePause);
+                    ui.removeClass(ui.effects.target, ui.globals.namePause);
                 }, ui.globals.ease * 2);
 
             }

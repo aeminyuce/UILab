@@ -19,15 +19,6 @@ ui.lineChart = {
 
     nameTypePrefix: 'ui-',
 
-    // helper classnames
-    nameHide: 'ui-hidden',
-    nameLoaded: 'ui-loaded',
-    nameNotLoaded: 'ui-no-loaded',
-
-    nameResized: 'ui-resized',
-    nameSelected: 'ui-selected',
-    nameToggle: 'ui-toggle',
-
     // ids
     idGradient: 'ui-gradient',
 
@@ -114,13 +105,13 @@ ui.lineChart.Start = () => {
 
         let charts;
 
-        if (method === ui.lineChart.nameLoaded) {
-            charts = ui.find('.' + ui.lineChart.target + '.' + ui.lineChart.nameLoaded);
+        if (method === ui.globals.nameLoaded) {
+            charts = ui.find('.' + ui.lineChart.target + '.' + ui.globals.nameLoaded);
 
         } else if (method === ui.globals.eventDomChange) {
-            charts = ui.find('.' + ui.lineChart.target + ':not(.' + ui.lineChart.nameLoaded + '):not(.' + ui.lineChart.nameResized + ')');
+            charts = ui.find('.' + ui.lineChart.target + ':not(.' + ui.globals.nameLoaded + '):not(.' + ui.globals.nameResized + ')');
 
-        } else charts = ui.find('.' + ui.lineChart.target + ':not(.' + ui.lineChart.nameLoaded + ')');
+        } else charts = ui.find('.' + ui.lineChart.target + ':not(.' + ui.globals.nameLoaded + ')');
 
         if (charts.length === 0) return;
 
@@ -140,10 +131,10 @@ ui.lineChart.Start = () => {
                 data.color = [];
 
                 if (resizer !== undefined && resizer) {
-                    ui.addClass(el, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
+                    ui.addClass(el, ui.globals.nameLoaded + ' ' + ui.globals.nameResized);
 
                 } else {
-                    ui.addClass(el, ui.lineChart.nameLoaded);
+                    ui.addClass(el, ui.globals.nameLoaded);
                 }
 
                 // calculate height of chart
@@ -495,7 +486,7 @@ ui.lineChart.Start = () => {
                                             'stroke-width="0" ';
 
                             if (dataName !== null && dataName !== '') circles += ' data-name="' + dataName + '"'; // add data-name
-                            if (!selected) circles += ' class="' + ui.lineChart.nameHide + '"'; // add no selected
+                            if (!selected) circles += ' class="' + ui.globals.nameHide + '"'; // add no selected
 
                             if (data[j].links[n] !== '') { // check links
                                 circles += 'onclick="location.href = \'' + data[j].links[n] + '\';"';
@@ -566,7 +557,7 @@ ui.lineChart.Start = () => {
                                 html += '<linearGradient';
 
                                 if (dataName !== null && dataName !== '') html += ' data-name="' + dataName + '"'; // add data-name
-                                if (!selected) html += ' class="' + ui.lineChart.nameHide + '"'; // add no selected
+                                if (!selected) html += ' class="' + ui.globals.nameHide + '"'; // add no selected
 
                                 html += ' id="' + ui.lineChart.idGradient + id + '" x1="0" y1="0" x2="0" y2="100%">' +
                                             '<stop offset="0" stop-color="' + data.color[j] + '"></stop>' +
@@ -747,7 +738,7 @@ ui.lineChart.Start = () => {
                 html += circles + '</g></svg>';
 
                 if (data.width === 0) {
-                    ui.removeClass(el, ui.lineChart.nameLoaded + ' ' + ui.lineChart.nameResized);
+                    ui.removeClass(el, ui.globals.nameLoaded + ' ' + ui.globals.nameResized);
                 }
 
                 // create info
@@ -772,8 +763,8 @@ ui.lineChart.Start = () => {
 
                             if (selected !== '') {
 
-                                html += ' class="' + ui.lineChart.nameToggle;
-                                if (selected) html += ' ' + ui.lineChart.nameSelected;
+                                html += ' class="' + ui.globals.nameToggle;
+                                if (selected) html += ' ' + ui.globals.nameSelected;
                                 html += '"';
 
                             }
@@ -816,7 +807,7 @@ ui.lineChart.Start = () => {
 
     };
 
-    ui.lineChart.Init(ui.lineChart.nameNotLoaded); // show not loaded charts
+    ui.lineChart.Init(ui.globals.nameNotLoaded); // show not loaded charts
 
 };
 
@@ -824,7 +815,7 @@ ui.lineChart.Start = () => {
 ui.on(document,
     'click',
 
-    '.' + ui.lineChart.nameInfo + ' li.' + ui.lineChart.nameToggle,
+    '.' + ui.lineChart.nameInfo + ' li.' + ui.globals.nameToggle,
 
     function () {
 
@@ -835,19 +826,19 @@ ui.on(document,
 
         if (items.length > 0) {
 
-            ui.addClass(parent, ui.lineChart.nameResized);
+            ui.addClass(parent, ui.globals.nameResized);
 
-            if (ui.hasClass(this, ui.lineChart.nameSelected)) {
+            if (ui.hasClass(this, ui.globals.nameSelected)) {
 
                 // hide
-                ui.removeClass(this, ui.lineChart.nameSelected);
-                ui.addClass(items, ui.lineChart.nameHide);
+                ui.removeClass(this, ui.globals.nameSelected);
+                ui.addClass(items, ui.globals.nameHide);
 
             } else {
 
                 // show
-                ui.addClass(this, ui.lineChart.nameSelected);
-                ui.removeClass(items, ui.lineChart.nameHide);
+                ui.addClass(this, ui.globals.nameSelected);
+                ui.removeClass(items, ui.globals.nameHide);
 
             }
 
@@ -862,7 +853,7 @@ ui.on(window,
     'resize',
 
     () => {
-        ui.lineChart.Init(ui.lineChart.nameLoaded, true); // resize loaded charts
+        ui.lineChart.Init(ui.globals.nameLoaded, true); // resize loaded charts
     });
 
 ui.on(document,
@@ -879,7 +870,7 @@ ui.on(document,
     () => {
 
         if (ui.ajax.classNames.indexOf(ui.lineChart.target) > -1) {
-            ui.lineChart.Init(ui.lineChart.nameNotLoaded); // show not loaded charts
+            ui.lineChart.Init(ui.globals.nameNotLoaded); // show not loaded charts
         }
 
     });

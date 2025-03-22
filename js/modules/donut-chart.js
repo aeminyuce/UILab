@@ -9,9 +9,6 @@ ui.donutChart = {
     target: 'ui-donut-chart',
     targetBg: 'ui-donut-chart-bg',
 
-    // helper classnames
-    nameSelected: 'ui-selected',
-
     // tags
     tagMsg: 'strong',
 
@@ -90,7 +87,7 @@ ui.donutChart.Start = () => {
             const circle = ui.find('circle', chart);
 
             setTimeout(() => {
-                ui.removeClass(circle, ui.donutChart.nameSelected);
+                ui.removeClass(circle, ui.globals.nameSelected);
             }, 0);
 
             if (e.type === 'mouseleave') {
@@ -118,7 +115,7 @@ ui.donutChart.Start = () => {
                 setTimeout(() => {
 
                     if (title !== null && title !== '') msg.innerHTML = title;
-                    ui.addClass(this, ui.donutChart.nameSelected);
+                    ui.addClass(this, ui.globals.nameSelected);
 
                 }, 0);
 

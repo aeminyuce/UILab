@@ -22,12 +22,6 @@ ui.dropdown = {
     nameNav: 'ui-nav',
     nameNavFullHor: 'ui-nav-full-h',
 
-    // helper classnames
-    nameOpen: 'ui-open',
-    nameOpenEase: 'ui-open-ease',
-
-    nameSelected: 'ui-selected',
-
     // outer classnames
     nameBtn: 'ui-btn',
     nameSidebar: 'ui-sidebar',
@@ -68,10 +62,10 @@ ui.dropdown = {
 
         let that;
 
-        if (innerParent === undefined) that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen);
-        else that = ui.find('.' + ui.dropdown.target + '.' + ui.dropdown.nameOpen, innerParent);
+        if (innerParent === undefined) that = ui.find('.' + ui.dropdown.target + '.' + ui.globals.nameOpen);
+        else that = ui.find('.' + ui.dropdown.target + '.' + ui.globals.nameOpen, innerParent);
 
-        ui.removeClass(that, ui.dropdown.nameOpenEase);
+        ui.removeClass(that, ui.globals.nameOpenEase);
 
         clearTimeout(dropdownLeaveTimer);
         dropdownLeaveTimer = setTimeout(() => {
@@ -106,7 +100,7 @@ ui.dropdown = {
 
                         }
 
-                        ui.removeClass(that, ui.dropdown.nameMenuTop + ' ' + ui.dropdown.nameOpen);
+                        ui.removeClass(that, ui.dropdown.nameMenuTop + ' ' + ui.globals.nameOpen);
 
                     }, ui.globals.ease);
 
@@ -149,10 +143,10 @@ ui.dropdown = {
                 }
 
                 clearTimeout(dropdownOpenTimer);
-                ui.addClass(parent, ui.dropdown.nameOpen);
+                ui.addClass(parent, ui.globals.nameOpen);
 
                 dropdownOpenTimer = setTimeout(() => {
-                    ui.addClass(parent, ui.dropdown.nameOpenEase);
+                    ui.addClass(parent, ui.globals.nameOpenEase);
                 }, dropdownHoverTimer / 6);
 
                 const offset = parent.getBoundingClientRect();
@@ -343,8 +337,8 @@ ui.dropdown = {
         ui.on(document,
             'click',
 
-            '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + ':not(.' + ui.dropdown.nameHover + '):not(.' + ui.dropdown.nameOpenEase + ') > .' + ui.dropdown.nameBtn + ',' +
-            '.' + ui.userAgents.nameMobile + ' .' + ui.dropdown.target + ':not(.' + ui.dropdown.nameOpenEase + ') > .' + ui.dropdown.nameBtn,
+            '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + ':not(.' + ui.dropdown.nameHover + '):not(.' + ui.globals.nameOpenEase + ') > .' + ui.dropdown.nameBtn + ',' +
+            '.' + ui.userAgents.nameMobile + ' .' + ui.dropdown.target + ':not(.' + ui.globals.nameOpenEase + ') > .' + ui.globals.nameBtn,
 
             function (e) {
 
@@ -356,7 +350,7 @@ ui.dropdown = {
         ui.on(document,
             'mouseenter',
 
-            '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + '.' + ui.dropdown.nameHover + ':not(.' + ui.dropdown.nameOpenEase + ') > .' + ui.dropdown.nameBtn,
+            '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + '.' + ui.dropdown.nameHover + ':not(.' + ui.globals.nameOpenEase + ') > .' + ui.dropdown.nameBtn,
 
             function (e) {
 
@@ -370,8 +364,8 @@ ui.dropdown = {
         ui.on(document,
             'mouseenter',
 
-            '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + '.' + ui.dropdown.nameHover + '.' + ui.dropdown.nameOpen + ' > .' + ui.dropdown.nameBtn + ',' +
-            '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + '.' + ui.dropdown.nameHover + '.' + ui.dropdown.nameOpenEase + ' .' + ui.dropdown.nameMenu,
+            '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + '.' + ui.dropdown.nameHover + '.' + ui.globals.nameOpen + ' > .' + ui.dropdown.nameBtn + ',' +
+            '.' + ui.userAgents.nameDesktop + ' .' + ui.dropdown.target + '.' + ui.dropdown.nameHover + '.' + ui.globals.nameOpenEase + ' .' + ui.dropdown.nameMenu,
 
             function () {
 
@@ -400,8 +394,8 @@ ui.dropdown = {
                     input.parentNode.removeChild(input);
                 }
 
-                ui.removeClass(ui.find('.' + ui.dropdown.nameSelected, parent), ui.dropdown.nameSelected);
-                ui.addClass(this.parentNode, ui.dropdown.nameSelected);
+                ui.removeClass(ui.find('.' + ui.globals.nameSelected, parent), ui.globals.nameSelected);
+                ui.addClass(this.parentNode, ui.globals.nameSelected);
 
             });
 

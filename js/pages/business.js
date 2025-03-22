@@ -78,16 +78,16 @@ ui.lineChart.colors = [baseColor, subColor];
         // open last opened tab
         const openLastOpenedTab = () => {
 
-            ui.addClass(ui.find(leftPanelMinTabs)[lastOpenedTab], ui.tab.nameActive + ' ' + nameBtnVisible);
-            ui.addClass(ui.find(leftPanelContents)[lastOpenedTab], ui.tab.nameOpen + ' ' + ui.tab.nameOpenEase);
+            ui.addClass(ui.find(leftPanelMinTabs)[lastOpenedTab], ui.globals.nameActive + ' ' + nameBtnVisible);
+            ui.addClass(ui.find(leftPanelContents)[lastOpenedTab], ui.globals.nameOpen + ' ' + ui.globals.nameOpenEase);
 
         }
 
         // clear last opened tab
         const clearLastOpenedTab = () => {
 
-            ui.removeClass(leftPanelMinTabs, ui.tab.nameActive + ' ' + nameBtnVisible);
-            ui.removeClass(leftPanelContents, ui.tab.nameOpen + ' ' + ui.tab.nameOpenEase);
+            ui.removeClass(leftPanelMinTabs, ui.globals.nameActive + ' ' + nameBtnVisible);
+            ui.removeClass(leftPanelContents, ui.globals.nameOpen + ' ' + ui.globals.nameOpenEase);
 
         }
 
@@ -100,12 +100,12 @@ ui.lineChart.colors = [baseColor, subColor];
             if (window.innerWidth < ui.globals.xl && window.innerWidth > ui.globals.md) { // activate menu
 
                 // change tabs to toggle
-                ui.addClass(leftPanelMinTabs, ui.tab.nameToggle);
+                ui.addClass(leftPanelMinTabs, ui.globals.nameToggle);
 
             } else { // deactivate menu
 
                 // change tabs from toggle
-                ui.removeClass(leftPanelMinTabs, ui.tab.nameToggle);
+                ui.removeClass(leftPanelMinTabs, ui.globals.nameToggle);
 
                 // open last opened tab
                 if (window.innerWidth >= ui.globals.xl) {
@@ -283,7 +283,7 @@ ui.lineChart.colors = [baseColor, subColor];
                     ui.toggleClass(leftPanelHolder, nameToggleMenu);
 
                     if (ui.lineChart !== undefined) {
-                        ui.lineChart.Init(ui.lineChart.nameLoaded, true); // resize loaded charts
+                        ui.lineChart.Init(ui.globals.nameLoaded, true); // resize loaded charts
                     }
 
                     ui.trigger(document, ui.globals.eventDomChange); // set custom event

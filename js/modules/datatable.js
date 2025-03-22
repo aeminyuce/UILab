@@ -26,17 +26,6 @@ ui.datatable = {
     nameTotal: 'ui-datatable-total',
     namePaging: 'ui-datatable-paging',
 
-    // helper classnames
-    nameActive: 'ui-active',
-    nameEven: 'ui-even',
-
-    nameShowed: 'ui-showed',
-    nameFiltered: 'ui-filtered',
-    nameChecked: 'ui-checked',
-
-    nameAsc: 'ui-asc',
-    nameDesc: 'ui-desc',
-
     // outer classnames
     nameBtnActive: 'ui-btn-active',
     nameBtnPassive: 'ui-btn-passive',
@@ -213,7 +202,7 @@ ui.datatable = {
         let list;
 
         if (ui.hasClass(that, ui.datatable.nameListFiltered)) {
-            list = ui.find('.' + ui.datatable.nameListContent + '.' + ui.datatable.nameFiltered, that);
+            list = ui.find('.' + ui.datatable.nameListContent + '.' + ui.globals.nameFiltered, that);
 
         } else list = ui.find('.' + ui.datatable.nameListContent, that);
 
@@ -247,7 +236,7 @@ ui.datatable = {
         let isEven = false;
         const gridStriped = ui.hasClass(that, ui.datatable.nameListStriped);
 
-        ui.removeClass(ui.find('.' + ui.datatable.nameListContent + '.' + ui.datatable.nameShowed, that), ui.datatable.nameShowed);
+        ui.removeClass(ui.find('.' + ui.datatable.nameListContent + '.' + ui.globals.nameShowed, that), ui.globals.nameShowed);
 
         function evenList(el) {
 
@@ -267,7 +256,7 @@ ui.datatable = {
 
             }
 
-            ui.addClass(el, ui.datatable.nameShowed);
+            ui.addClass(el, ui.globals.nameShowed);
 
         }
 
@@ -358,16 +347,16 @@ ui.datatable = {
             // modify buttons
             let buttons = ui.find('[' + ui.datatable.dataSort + ']', that);
 
-            ui.removeClass(buttons, ui.datatable.nameActive);
-            ui.addClass(this, ui.datatable.nameActive);
+            ui.removeClass(buttons, ui.globals.nameActive);
+            ui.addClass(this, ui.globals.nameActive);
 
             Array.prototype.forEach.call(buttons,
 
                 el => {
 
-                    if (!ui.hasClass(el, ui.datatable.nameActive)) {
+                    if (!ui.hasClass(el, ui.globals.nameActive)) {
 
-                        ui.removeClass(el, ui.datatable.nameAsc + ' ' + ui.datatable.nameDesc);
+                        ui.removeClass(el, ui.globals.nameAsc + ' ' + ui.globals.nameDesc);
                         ui.find('.' + ui.globals.nameIcon, el)[0] = ui.datatable.sortIcon;
 
                     }
@@ -377,12 +366,12 @@ ui.datatable = {
             let sortType = this.getAttribute(ui.datatable.dataType);
             if (sortType === null) { sortType = ''; }
 
-            const isAsc = ui.hasClass(this, ui.datatable.nameAsc);
+            const isAsc = ui.hasClass(this, ui.globals.nameAsc);
 
             if (isAsc) {
 
-                ui.removeClass(this, ui.datatable.nameAsc);
-                ui.addClass(this, ui.datatable.nameDesc);
+                ui.removeClass(this, ui.globals.nameAsc);
+                ui.addClass(this, ui.globals.nameDesc);
 
                 if (sortType === ui.datatable.sortTypeNumber) {
                     ui.find('.' + ui.globals.nameIcon, this)[0] = ui.datatable.descNumberIcon;
@@ -393,8 +382,8 @@ ui.datatable = {
 
             } else {
 
-                ui.removeClass(this, ui.datatable.nameDesc);
-                ui.addClass(this, ui.datatable.nameAsc);
+                ui.removeClass(this, ui.globals.nameDesc);
+                ui.addClass(this, ui.globals.nameAsc);
 
                 if (sortType === ui.datatable.sortTypeNumber) {
                     ui.find('.' + ui.globals.nameIcon, this)[0] = ui.datatable.ascNumberIcon;
@@ -573,9 +562,9 @@ ui.datatable = {
 
                 el => {
 
-                    if (ui.hasClass(el, ui.datatable.nameChecked)) {
+                    if (ui.hasClass(el, ui.globals.nameChecked)) {
 
-                        ui.removeClass(el, ui.datatable.nameChecked);
+                        ui.removeClass(el, ui.globals.nameChecked);
                         ui.find('.' + ui.datatable.nameCheck, el)[0].checked = false;
 
                     }
@@ -616,15 +605,15 @@ ui.datatable = {
 
                         }
 
-                        if (activeFilters.length === passed.length) ui.addClass(el, ui.datatable.nameFiltered);
-                        else ui.removeClass(el, ui.datatable.nameFiltered);
+                        if (activeFilters.length === passed.length) ui.addClass(el, ui.globals.nameFiltered);
+                        else ui.removeClass(el, ui.globals.nameFiltered);
 
                     });
 
             } else {
 
                 ui.removeClass(that, ui.datatable.nameListFiltered);
-                ui.removeClass(list, ui.datatable.nameFiltered);
+                ui.removeClass(list, ui.globals.nameFiltered);
 
             }
 
@@ -685,12 +674,12 @@ ui.datatable = {
 
             const checkFnc = (el) => {
 
-                if (!ui.hasClass(el, ui.datatable.nameChecked)) {
+                if (!ui.hasClass(el, ui.globals.nameChecked)) {
 
                     const form = ui.find('.' + ui.datatable.nameCheck, el)[0];
                     if (form !== undefined) {
 
-                        ui.addClass(el, ui.datatable.nameChecked);
+                        ui.addClass(el, ui.globals.nameChecked);
                         form.checked = true;
 
                     }
@@ -701,12 +690,12 @@ ui.datatable = {
 
             const uncheckFnc = (el) => {
 
-                if (ui.hasClass(el, ui.datatable.nameChecked)) {
+                if (ui.hasClass(el, ui.globals.nameChecked)) {
 
                     const form = ui.find('.' + ui.datatable.nameCheck, el)[0];
                     if (form !== undefined) {
 
-                        ui.removeClass(el, ui.datatable.nameChecked);
+                        ui.removeClass(el, ui.globals.nameChecked);
                         form.checked = false;
 
                     }
@@ -726,7 +715,7 @@ ui.datatable = {
 
                         if (ui.hasClass(that, ui.datatable.nameListFiltered)) {
 
-                            if (ui.hasClass(el, ui.datatable.nameFiltered)) checkFnc(el);
+                            if (ui.hasClass(el, ui.globals.nameFiltered)) checkFnc(el);
                             else uncheckFnc(el);
 
                         } else checkFnc(el);
@@ -748,11 +737,11 @@ ui.datatable = {
             const list = ui.closest(this, '.' + ui.datatable.nameListContent)[0];
 
             if (this.checked) {
-                ui.addClass(list, ui.datatable.nameChecked);
+                ui.addClass(list, ui.globals.nameChecked);
 
             } else {
 
-                ui.removeClass(list, ui.datatable.nameChecked);
+                ui.removeClass(list, ui.globals.nameChecked);
 
                 const checkAll = ui.find('.' + ui.datatable.nameCheckAll, that)[0];
 

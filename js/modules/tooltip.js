@@ -13,10 +13,6 @@ ui.tooltip = {
     nameActive: 'ui-tooltip-active',
     nameContent: 'ui-tooltip-content',
 
-    // helper classnames
-    nameOpen: 'ui-open',
-    nameOpenEase: 'ui-open-ease',
-
     // styling classnames
     stylesTarget: 'ui-round ui-ease-tooltip',
     stylesArrow: '',
@@ -68,11 +64,11 @@ ui.tooltip = {
 
         removeTimer = setTimeout(() => {
 
-            ui.removeClass(that, ui.tooltip.nameOpenEase);
+            ui.removeClass(that, ui.globals.nameOpenEase);
 
             removeTimer2x = setTimeout(() => {
 
-                ui.removeClass(that, ui.tooltip.nameOpen);
+                ui.removeClass(that, ui.globals.nameOpen);
 
                 var parent = that.parentNode;
 
@@ -120,7 +116,7 @@ ui.tooltip = {
         }
 
         // show
-        ui.addClass(win, ui.tooltip.nameOpen);
+        ui.addClass(win, ui.globals.nameOpen);
 
         setTimeout(() => {
 
@@ -206,7 +202,7 @@ ui.tooltip = {
             win[0].style.left = (sourceRect.left + window.pageXOffset + calc.hor) + 'px';
 
             win[0].setAttribute(ui.tooltip.dataPos, pos);
-            ui.addClass(win, ui.tooltip.nameOpenEase);
+            ui.addClass(win, ui.globals.nameOpenEase);
 
         }, 10);
 
@@ -234,7 +230,7 @@ ui.tooltip = {
             that.setAttribute(ui.tooltip.dataTitle, title);
             that.removeAttribute(attr);
 
-            ui.addClass(that, ui.tooltip.nameActive);
+            ui.addClass(that, ui.globals.nameActive);
 
         } else {
 
@@ -245,7 +241,7 @@ ui.tooltip = {
 
                     ui.tooltip.Close(that);
 
-                    ui.removeClass(that, ui.tooltip.nameActive);
+                    ui.removeClass(that, ui.globals.nameActive);
                     clearTimeout(tooltipOpenedTimer);
 
                     tooltipOpenedTimer = setTimeout(() => {
@@ -310,7 +306,7 @@ ui.tooltip = {
                 var that = this;
 
                 if (e.type === 'touchstart') {
-                    touchControl = ui.hasClass(that, ui.tooltip.nameActive);
+                    touchControl = ui.hasClass(that, ui.globals.nameActive);
                 }
 
                 ui.off(that, 'touchmove.' + ui.tooltip.eventClose);

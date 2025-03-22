@@ -31,13 +31,6 @@ ui.photoGallery = {
     namePreviewPrev: 'ui-gallery-preview-prev',
     namePreviewNext: 'ui-gallery-preview-next',
 
-    // helper classnames
-    nameOpen: 'ui-open',
-    nameOpenEase: 'ui-open-ease',
-
-    namePause: 'ui-pause',
-    namePauseEase: 'ui-pause-ease',
-
     // styling classnames
     stylesCloseIcon: 'ui-btn ui-btn-lg ui-btn-square ui-btn-ghost ui-circle ui-ease-btn',
 
@@ -255,20 +248,20 @@ ui.photoGallery = {
                 imgWidth = img.width;
                 imgHeight = img.height;
 
-                ui.addClass(loader, ui.photoGallery.namePause);
+                ui.addClass(loader, ui.globals.namePause);
                 loader.style.display = 'none';
 
-                ui.addClass(img, ui.photoGallery.nameOpen);
+                ui.addClass(img, ui.globals.nameOpen);
 
                 setTimeout(() => {
-                    ui.addClass(img, ui.photoGallery.nameOpenEase);
+                    ui.addClass(img, ui.globals.nameOpenEase);
                 }, ui.globals.ease + 10);
 
             }
 
             const notLoadedImage = () => {
 
-                ui.addClass(loader, ui.photoGallery.namePause);
+                ui.addClass(loader, ui.globals.namePause);
                 loader.innerHTML = '<path d="' + ui.assets('iconBan') + '" />';
 
             }
@@ -287,7 +280,7 @@ ui.photoGallery = {
 
                 // show/hide info window
                 const info = ui.find('.' + ui.photoGallery.namePreviewInfo)[0];
-                ui.removeClass(info, ui.photoGallery.nameOpen);
+                ui.removeClass(info, ui.globals.nameOpen);
 
                 setTimeout(() => {
 
@@ -296,7 +289,7 @@ ui.photoGallery = {
 
                     } else {
 
-                        ui.addClass(info, ui.photoGallery.nameOpen);
+                        ui.addClass(info, ui.globals.nameOpen);
                         info.innerHTML = loadedTitles[index];
 
                     }
@@ -309,10 +302,10 @@ ui.photoGallery = {
 
             // show gallery
             ui.addClass(document, ui.photoGallery.namePreviewOpened);
-            ui.addClass(preview, ui.photoGallery.nameOpen);
+            ui.addClass(preview, ui.globals.nameOpen);
 
             setTimeout(() => {
-                ui.addClass(preview, ui.photoGallery.nameOpenEase);
+                ui.addClass(preview, ui.globals.nameOpenEase);
             }, 10);
 
             // close gallery
@@ -320,7 +313,7 @@ ui.photoGallery = {
 
                 imgZoomMove = false;
 
-                ui.removeClass(preview, ui.photoGallery.nameOpenEase);
+                ui.removeClass(preview, ui.globals.nameOpenEase);
                 ui.removeClass(document, ui.photoGallery.namePreviewOpened);
 
                 if (ui.userAgents.mobile) {
@@ -332,7 +325,7 @@ ui.photoGallery = {
 
                 setTimeout(() => {
 
-                    ui.removeClass(preview, ui.photoGallery.nameOpen);
+                    ui.removeClass(preview, ui.globals.nameOpen);
                     preview[0].parentNode.removeChild(preview[0]);
 
                 }, ui.globals.ease);
@@ -380,17 +373,17 @@ ui.photoGallery = {
                 }
 
                 // hide current image and load new one
-                ui.removeClass(img, ui.photoGallery.nameOpenEase);
+                ui.removeClass(img, ui.globals.nameOpenEase);
                 loader.style.display = 'block';
 
-                ui.removeClass(loader, ui.photoGallery.namePause);
+                ui.removeClass(loader, ui.globals.namePause);
                 loader.innerHTML = '<path d="' + ui.assets('iconLoaderLine') + '" />';
 
                 toggleGalleryTools();
 
                 setTimeout(() => {
 
-                    ui.removeClass(img, ui.photoGallery.nameOpen);
+                    ui.removeClass(img, ui.globals.nameOpen);
                     ui.removeClass(img, ui.photoGallery.targetPhotoVer);
 
                     newImg.src = loadedImages[index];
@@ -563,7 +556,7 @@ ui.photoGallery = {
                                 }
 
                                 imgZoomMove = true;
-                                ui.addClass(img, ui.photoGallery.namePauseEase);
+                                ui.addClass(img, ui.globals.namePauseEase);
 
                                 imgPosX = parseFloat((getX - sx) / imgWidth) * 100 + parseFloat((matrix[4] / imgWidth) * 100);
                                 imgPosY = parseFloat((getY - sy) / imgHeight) * 100 + parseFloat((matrix[5] / imgHeight) * 100);
@@ -595,7 +588,7 @@ ui.photoGallery = {
                             }
 
                             ui.off(img, 'mousemove mouseup mouseleave touchmove touchend touchcancel');
-                            ui.removeClass(img, ui.photoGallery.namePauseEase);
+                            ui.removeClass(img, ui.globals.namePauseEase);
 
                         });
 

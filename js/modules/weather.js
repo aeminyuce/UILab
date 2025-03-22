@@ -19,9 +19,6 @@ ui.weather = {
 
     nameAnimatePrefix: 'ui-',
 
-    // helper classnames
-    nameLoaded: 'ui-loaded',
-
     // animations
     animateClear: 'clear',
     animateStars: 'stars',
@@ -63,7 +60,7 @@ ui.weather = {
 
             var i, html;
 
-            Array.prototype.forEach.call(ui.find('.' + ui.weather.target + ' .' + ui.weather.nameGraphs + ':not(.' + ui.weather.nameLoaded + ')'),
+            Array.prototype.forEach.call(ui.find('.' + ui.weather.target + ' .' + ui.weather.nameGraphs + ':not(.' + ui.globals.nameLoaded + ')'),
 
                 el => {
 
@@ -79,7 +76,7 @@ ui.weather = {
                                 html = '';
                                 animations = [];
 
-                                ui.addClass(el, ui.weather.nameLoaded);
+                                ui.addClass(el, ui.globals.nameLoaded);
 
                                 for (i = 0; i < data.length; i++) {
 

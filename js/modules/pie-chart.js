@@ -12,10 +12,6 @@ ui.pieChart = {
     namePieLeft: 'ui-pie-l',
     namePieRight: 'ui-pie-r',
 
-    // helper classnames
-    nameOpen: 'ui-open',
-    nameOpenEase: 'ui-open-ease',
-
     // outer classnames
     nameNoEffects: 'ui-no-effects',
 
@@ -201,14 +197,14 @@ ui.pieChart = {
                         });
 
                     if (ui.hasClass(document, ui.pieChart.nameNoEffects)) {
-                        ui.addClass(el, ui.pieChart.nameOpen + ' ' + ui.pieChart.nameOpenEase);
+                        ui.addClass(el, ui.globals.nameOpen + ' ' + ui.globals.nameOpenEase);
 
                     } else {
 
-                        ui.addClass(el, ui.pieChart.nameOpen);
+                        ui.addClass(el, ui.globals.nameOpen);
 
                         setTimeout(() => {
-                            ui.addClass(el, ui.pieChart.nameOpenEase);
+                            ui.addClass(el, ui.globals.nameOpenEase);
 
                         }, ui.globals.slow5x); // wait for animations complete
 

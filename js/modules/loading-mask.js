@@ -12,10 +12,6 @@ ui.loadingMask = {
     nameSticky: 'ui-loading-mask-sticky',
     nameLoader: 'ui-loading-mask-loader',
 
-    // helper classnames
-    nameOpen: 'ui-open',
-    nameOpenEase: 'ui-open-ease',
-
     // styling classnames
     stylesLoader: 'ui-ease-layout',
     stylesIcon: 'ui-animate-spin',
@@ -85,7 +81,7 @@ ui.loadingMask = {
 
                     for (j = 0; j < l.length; j++) {
 
-                        ui.addClass(maskHolders[j], ui.loadingMask.nameOpenEase);
+                        ui.addClass(maskHolders[j], ui.globals.nameOpenEase);
                         emptyVars(j, l);
 
                     }
@@ -102,10 +98,10 @@ ui.loadingMask = {
                     status = 'hide';
 
                     maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
-                    ui.removeClass(maskHolders[i], ui.loadingMask.nameOpenEase);
+                    ui.removeClass(maskHolders[i], ui.globals.nameOpenEase);
 
                     setTimeout(() => {
-                        ui.removeClass(maskHolders[i], ui.loadingMask.nameOpen);
+                        ui.removeClass(maskHolders[i], ui.globals.nameOpen);
                     }, ui.globals.ease);
 
                     maskItems[i] = l[i];
@@ -142,7 +138,7 @@ ui.loadingMask = {
                     if (sticky) ui.addClass(l[i], ui.loadingMask.nameSticky);
 
                     maskHolders[i] = ui.find('.' + ui.loadingMask.nameLoader, l[i])[0];
-                    ui.addClass(maskHolders[i], ui.loadingMask.nameOpen);
+                    ui.addClass(maskHolders[i], ui.globals.nameOpen);
 
                 }
 

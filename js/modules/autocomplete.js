@@ -11,13 +11,6 @@ ui.autocomplete = {
     // main classnames
     nameMenuTop: 'ui-autocomplete-t',
 
-    // helper classnames
-    nameOpen: 'ui-open',
-    nameOpenEase: 'ui-open-ease',
-
-    nameLoaded: 'ui-loaded',
-    nameSelected: 'ui-selected',
-
     // outer classnames
     nameRound: 'ui-round',
     nameInput: 'ui-input',
@@ -60,7 +53,7 @@ ui.autocomplete.Start = () => {
     // create autocomplete lists
     function createFnc(that) {
 
-        ui.addClass(that, ui.autocomplete.nameLoaded);
+        ui.addClass(that, ui.globals.nameLoaded);
         let styles = ui.autocomplete.stylesList;
 
         const input = ui.find('input', that)[0];
@@ -78,7 +71,7 @@ ui.autocomplete.Start = () => {
     }
 
     // ckeck not loaded autocomplete forms
-    const loadForms = ui.find('.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + ':not(.' + ui.autocomplete.nameLoaded + ')');
+    const loadForms = ui.find('.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + ':not(.' + ui.globals.nameLoaded + ')');
 
     if (loadForms.length > 0) {
         Array.prototype.forEach.call(loadForms, el => { createFnc(el); });
@@ -107,7 +100,7 @@ ui.autocomplete.Start = () => {
                 if (listItems.length > 0) {
 
                     let navIndex;
-                    const navSelected = ui.find('li.' + ui.autocomplete.nameSelected, list[0]);
+                    const navSelected = ui.find('li.' + ui.globals.nameSelected, list[0]);
 
                     if (navSelected.length > 0) {
 
@@ -132,8 +125,8 @@ ui.autocomplete.Start = () => {
 
                     }
 
-                    ui.removeClass(navSelected, ui.autocomplete.nameSelected);
-                    ui.addClass(listItems[navIndex], ui.autocomplete.nameSelected);
+                    ui.removeClass(navSelected, ui.globals.nameSelected);
+                    ui.addClass(listItems[navIndex], ui.globals.nameSelected);
 
                     this.value = listItems[navIndex].textContent;
 
@@ -143,10 +136,10 @@ ui.autocomplete.Start = () => {
 
                 if (list.length >= 1) {
 
-                    ui.removeClass(parent, ui.autocomplete.nameOpenEase);
+                    ui.removeClass(parent, ui.globals.nameOpenEase);
                     setTimeout(() => {
 
-                        ui.removeClass(parent, ui.autocomplete.nameOpen);
+                        ui.removeClass(parent, ui.globals.nameOpen);
                         list[0].innerHTML = '';
 
                     }, ui.globals.ease);
@@ -167,13 +160,13 @@ ui.autocomplete.Start = () => {
 
                         if (response.length > 0) {
 
-                            ui.addClass(parent, ui.autocomplete.nameOpen);
+                            ui.addClass(parent, ui.globals.nameOpen);
 
                             setTimeout(() => {
-                                ui.addClass(parent, ui.autocomplete.nameOpenEase);
+                                ui.addClass(parent, ui.globals.nameOpenEase);
                             }, 0);
 
-                            ui.removeClass(parent, ui.autocomplete.nameMenuTop);
+                            ui.removeClass(parent, ui.globals.nameMenuTop);
                             list[0].innerHTML = '';
 
                             let k = 0;
@@ -285,11 +278,11 @@ ui.autocomplete.Start = () => {
 
                 } else {
 
-                    ui.removeClass(parent, ui.autocomplete.nameOpenEase);
+                    ui.removeClass(parent, ui.globals.nameOpenEase);
 
                     setTimeout(() => {
 
-                        ui.removeClass(list, ui.autocomplete.nameOpen);
+                        ui.removeClass(list, ui.globals.nameOpen);
                         list[0].innerHTML = '';
 
                     }, ui.globals.ease);
@@ -310,17 +303,17 @@ ui.autocomplete.Start = () => {
             if (e.keyCode === 13) {
 
                 const parent = this.parentNode;
-                const list = ui.find('li.' + ui.autocomplete.nameSelected, parent);
+                const list = ui.find('li.' + ui.globals.nameSelected, parent);
 
                 if (list.length > 0) {
 
                     e.preventDefault();
                     e.stopPropagation();
 
-                    ui.removeClass(parent, ui.autocomplete.nameOpenEase);
+                    ui.removeClass(parent, ui.globals.nameOpenEase);
 
                     setTimeout(() => {
-                        ui.removeClass(parent, ui.autocomplete.nameOpen);
+                        ui.removeClass(parent, ui.globals.nameOpen);
                     }, ui.globals.ease);
 
                 }
@@ -341,10 +334,10 @@ ui.autocomplete.Start = () => {
 
             if (list.length >= 1) {
 
-                ui.addClass(parent, ui.autocomplete.nameOpen);
+                ui.addClass(parent, ui.globals.nameOpen);
 
                 setTimeout(() => {
-                    ui.addClass(parent, ui.autocomplete.nameOpenEase);
+                    ui.addClass(parent, ui.globals.nameOpenEase);
                 }, ui.globals.ease);
 
             }
@@ -359,10 +352,10 @@ ui.autocomplete.Start = () => {
         function () {
 
             const parent = this.parentNode;
-            ui.removeClass(parent, ui.autocomplete.nameOpenEase);
+            ui.removeClass(parent, ui.globals.nameOpenEase);
 
             setTimeout(() => {
-                ui.removeClass(parent, ui.autocomplete.nameOpen);
+                ui.removeClass(parent, ui.globals.nameOpen);
             }, ui.globals.ease);
 
         });
@@ -370,7 +363,7 @@ ui.autocomplete.Start = () => {
     ui.on(document,
         'mousedown',
 
-        '.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + '.' + ui.autocomplete.nameOpen + ' li',
+        '.' + ui.autocomplete.nameInput + '.' + ui.autocomplete.target + '.' + ui.globals.nameOpen + ' li',
 
         function () { // trigger defined event listeners after autocomplete selected
 

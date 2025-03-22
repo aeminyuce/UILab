@@ -8,9 +8,6 @@ ui.map = {
     // targets
     target: 'ui-map',
 
-    // helper classnames
-    nameActive: 'ui-active',
-
     // tags
     tagTarget: 'path',
 
@@ -58,7 +55,7 @@ ui.map.Start = () => {
                     data = item.getAttribute(ui.map.dataSize);
                     if (data > 0) {
 
-                        ui.addClass(item, ui.map.nameActive);
+                        ui.addClass(item, ui.globals.nameActive);
 
                         opacity = Math.sqrt(data) / Math.sqrt(arr[i][0]);
                         opacity = opacity.toFixed(2);

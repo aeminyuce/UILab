@@ -23,10 +23,6 @@ ui.sidebar = {
     nameLeftSuffix: 'l',
     nameRightSuffix: 'r',
 
-    // helper classnames
-    nameOpen: 'ui-open',
-    nameOpenEase: 'ui-open-ease',
-
     // styling classnames
     stylesBg: 'ui-ease-slow ui-ease-layout',
 
@@ -52,15 +48,15 @@ ui.sidebar = {
 
         bg = ui.find('.' + ui.sidebar.targetBg)[0];
 
-        ui.removeClass(panel, ui.sidebar.nameOpenEase);
-        ui.removeClass(bg, ui.sidebar.nameOpenEase);
+        ui.removeClass(panel, ui.globals.nameOpenEase);
+        ui.removeClass(bg, ui.globals.nameOpenEase);
 
-        ui.removeClass(document, ui.sidebar.nameOpened);
+        ui.removeClass(document, ui.globals.nameOpened);
 
         setTimeout(() => {
 
-            ui.removeClass(panel, ui.sidebar.nameOpen);
-            ui.removeClass(bg, ui.sidebar.nameOpen);
+            ui.removeClass(panel, ui.globals.nameOpen);
+            ui.removeClass(bg, ui.globals.nameOpen);
 
         }, ui.globals.slow);
 
@@ -168,15 +164,15 @@ ui.sidebar = {
 
                 }
 
-                ui.addClass(document, ui.sidebar.nameOpened);
+                ui.addClass(document, ui.globals.nameOpened);
 
-                ui.addClass(panel, ui.sidebar.nameOpen);
-                ui.addClass(bg, ui.sidebar.nameOpen);
+                ui.addClass(panel, ui.globals.nameOpen);
+                ui.addClass(bg, ui.globals.nameOpen);
 
                 setTimeout(() => {
 
-                    ui.addClass(panel, ui.sidebar.nameOpenEase);
-                    ui.addClass(bg, ui.sidebar.nameOpenEase);
+                    ui.addClass(panel, ui.globals.nameOpenEase);
+                    ui.addClass(bg, ui.globals.nameOpenEase);
 
                     setTimeout(() => {
                         ui.trigger(document, ui.sidebar.eventMenuOpen + ' ' + ui.globals.eventDomChange); // set custom event
@@ -200,7 +196,7 @@ ui.sidebar = {
 
             function () {
 
-                var panel = ui.find('.' + ui.sidebar.target + '.' + ui.sidebar.nameOpen);
+                var panel = ui.find('.' + ui.sidebar.target + '.' + ui.globals.nameOpen);
                 ui.sidebar.close(panel);
 
             });
@@ -217,7 +213,7 @@ ui.sidebar = {
 
             if (window.innerWidth === getScrollPos) return; // close only horizontal resizing
 
-            var panel = ui.find('.' + ui.sidebar.target + '.' + ui.sidebar.nameOpen);
+            var panel = ui.find('.' + ui.sidebar.target + '.' + ui.globals.nameOpen);
 
             if (panel.length > 0) ui.sidebar.close(panel);
             getScrollPos = window.innerWidth;

@@ -8,10 +8,6 @@ ui.topButton = {
     // targets
     target: 'ui-top-button',
 
-    // helper classnames
-    nameOpen: 'ui-open',
-    nameOpenEase: 'ui-open-ease',
-
     // styling classnames
     stylesTarget: 'ui-round ui-ease-layout',
     stylesIcon: 'ui-ease-layout',
@@ -25,7 +21,7 @@ ui.topButton = {
 
     var togglerFnc = () => {
 
-        var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + ' ' + ui.topButton.nameOpen + '" title="' + ui.topButton.titleText + '">' +
+        var html = '<button class="' + ui.topButton.target + ' ' + ui.topButton.stylesTarget + ' ' + ui.globals.nameOpen + '" title="' + ui.topButton.titleText + '">' +
                         '<svg class="' + ui.globals.nameIcon + (ui.topButton.stylesIcon ? ' ' + ui.topButton.stylesIcon : '') + '" viewBox="' + ui.globals.svgIconViewBox + '">' +
                             '<path d="' + ui.assets('iconArrowToTop') + '" />' +
                         '</svg>' +
@@ -46,7 +42,7 @@ ui.topButton = {
                         topBtn = ui.find('.' + ui.topButton.target)[0];
 
                         setTimeout(() => {
-                            ui.addClass(topBtn, ui.topButton.nameOpenEase);
+                            ui.addClass(topBtn, ui.globals.nameOpenEase);
                         }, ui.globals.slow);
 
                     }
@@ -57,7 +53,7 @@ ui.topButton = {
 
                     if (topBtn !== undefined) {
 
-                        ui.removeClass(topBtn, ui.topButton.nameOpenEase);
+                        ui.removeClass(topBtn, ui.globals.nameOpenEase);
 
                         setTimeout(() => {
                             if (topBtn.parentNode !== null) topBtn.parentNode.removeChild(topBtn);

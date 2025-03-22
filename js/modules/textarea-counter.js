@@ -11,9 +11,6 @@ ui.textareaCounter = {
     // main classnames
     nameToggle: 'ui-textarea-toggle',
 
-    // helper classnames
-    nameChange: 'ui-changed',
-
     // data attributes
     dataCounter: 'data-ui-counter',
     dataChange: 'data-ui-changed'
@@ -41,7 +38,7 @@ ui.textareaCounter.Start = () => {
 
         }
 
-        ui.addClass(p, ui.textareaCounter.nameChange);
+        ui.addClass(p, ui.globals.nameChange);
         p.setAttribute(ui.textareaCounter.dataChange, length);
 
         return false;
@@ -50,7 +47,7 @@ ui.textareaCounter.Start = () => {
 
     ui.textareaCounter.Init = () => {
 
-        Array.prototype.forEach.call(ui.find('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + ']:not(.' + ui.textareaCounter.nameToggle + '):not(.' + ui.textareaCounter.nameChange + ')'),
+        Array.prototype.forEach.call(ui.find('.' + ui.textareaCounter.target + '[' + ui.textareaCounter.dataCounter + ']:not(.' + ui.globals.nameToggle + '):not(.' + ui.globals.nameChange + ')'),
 
             el => {
                 counter(ui.find('textarea', el)[0]);

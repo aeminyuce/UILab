@@ -14,10 +14,6 @@ ui.tab = {
     nameToggle: 'ui-tab-toggle',
     nameAccordion: 'ui-tab-accordion',
 
-    // helper classnames
-    nameOpen: 'ui-open',
-    nameOpenEase: 'ui-open-ease',
-
     nameActive: 'ui-active',
 
     // data attributes
@@ -96,11 +92,11 @@ ui.tab.Start = () => {
                 accordion = true;
             }
 
-            if (ui.hasClass(this, ui.tab.nameToggle)) {
+            if (ui.hasClass(this, ui.globals.nameToggle)) {
                 toggle = true;
             }
 
-            if (ui.hasClass(this, ui.tab.nameActive)) {
+            if (ui.hasClass(this, ui.globals.nameActive)) {
 
                 if (toggle || accordion) {
 
@@ -119,7 +115,7 @@ ui.tab.Start = () => {
 
                         setTimeout(() => {
 
-                            ui.removeClass(currentContent, ui.tab.nameOpen);
+                            ui.removeClass(currentContent, ui.globals.nameOpen);
 
                             if (accordion) {
 
@@ -134,8 +130,8 @@ ui.tab.Start = () => {
                             ui.toggleClass(tabs[index], classes);
                         }
 
-                        ui.removeClass(tabs[index], ui.tab.nameActive);
-                        ui.removeClass(currentContent, ui.tab.nameOpenEase);
+                        ui.removeClass(tabs[index], ui.globals.nameActive);
+                        ui.removeClass(currentContent, ui.globals.nameOpenEase);
 
                     }, 0);
 
@@ -150,8 +146,8 @@ ui.tab.Start = () => {
 
                 }
 
-                ui.removeClass(tabs, ui.tab.nameActive);
-                ui.addClass(tabs[index], ui.tab.nameActive);
+                ui.removeClass(tabs, ui.globals.nameActive);
+                ui.addClass(tabs[index], ui.globals.nameActive);
 
                 if (toggle || accordion) {
 
@@ -163,7 +159,7 @@ ui.tab.Start = () => {
 
                             if (el !== currentContent) {
 
-                                if (ui.hasClass(el, ui.tab.nameOpen)) {
+                                if (ui.hasClass(el, ui.globals.nameOpen)) {
                                     lastOpened = el; // find last opened content
                                 }
 
@@ -186,7 +182,7 @@ ui.tab.Start = () => {
 
                                 setTimeout(() => {
 
-                                    ui.removeClass(lastOpened, ui.tab.nameOpen);
+                                    ui.removeClass(lastOpened, ui.globals.nameOpen);
 
                                     if (accordion) {
 
@@ -197,7 +193,7 @@ ui.tab.Start = () => {
 
                                 }, accordion ? ui.globals.ease * 2 : ui.globals.fast / 2);
 
-                                ui.removeClass(lastOpened, ui.tab.nameOpenEase);
+                                ui.removeClass(lastOpened, ui.globals.nameOpenEase);
 
                             }, 0);
 
@@ -205,7 +201,7 @@ ui.tab.Start = () => {
 
                     setTimeout(() => { // open current clicked content
 
-                        ui.addClass(currentContent, ui.tab.nameOpen);
+                        ui.addClass(currentContent, ui.globals.nameOpen);
 
                         if (accordion) {
 
@@ -218,7 +214,7 @@ ui.tab.Start = () => {
 
                         setTimeout(() => {
 
-                            ui.addClass(currentContent, ui.tab.nameOpenEase);
+                            ui.addClass(currentContent, ui.globals.nameOpenEase);
                             currentContent.style.height = currentHeight + 'px';
 
                             ui.trigger(document, ui.globals.eventDomChange); // set custom event
@@ -253,7 +249,7 @@ ui.tab.Start = () => {
                                 if (ui.closest(holderEl, '.' + ui.tab.targetParent)[0] !== undefined) return; // inner tabs
 
                                 // controlling active toggle tabs length
-                                if (ui.find('.' + ui.tab.nameToggle + '.' + ui.tab.nameActive, parent).length === 0) return;
+                                if (ui.find('.' + ui.globals.nameToggle + '.' + ui.globals.nameActive, parent).length === 0) return;
 
                                 if (accordion) {
 
@@ -270,7 +266,7 @@ ui.tab.Start = () => {
 
                                     setTimeout(() => {
 
-                                        ui.removeClass(content, ui.tab.nameOpen);
+                                        ui.removeClass(content, ui.globals.nameOpen);
 
                                         if (accordion) {
 
@@ -285,8 +281,8 @@ ui.tab.Start = () => {
                                         ui.removeClass(tabs, classes);
                                     }
 
-                                    ui.removeClass(tabs, ui.tab.nameActive);
-                                    ui.removeClass(content, ui.tab.nameOpenEase);
+                                    ui.removeClass(tabs, ui.globals.nameActive);
+                                    ui.removeClass(content, ui.globals.nameOpenEase);
 
                                 }, 0);
 
@@ -299,16 +295,16 @@ ui.tab.Start = () => {
 
                 } else {
 
-                    ui.removeClass(content, ui.tab.nameOpenEase);
+                    ui.removeClass(content, ui.globals.nameOpenEase);
 
                     setTimeout(() => {
 
-                        ui.removeClass(content, ui.tab.nameOpen);
-                        ui.addClass(currentContent, ui.tab.nameOpen);
+                        ui.removeClass(content, ui.globals.nameOpen);
+                        ui.addClass(currentContent, ui.globals.nameOpen);
 
                         setTimeout(() => {
 
-                            ui.addClass(currentContent, ui.tab.nameOpenEase);
+                            ui.addClass(currentContent, ui.globals.nameOpenEase);
                             ui.trigger(document, ui.globals.eventDomChange); // set custom event
 
                         }, ui.globals.fast / 2);

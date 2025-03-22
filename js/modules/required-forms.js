@@ -14,10 +14,6 @@ ui.requiredForms = {
 
     nameTypePrefix: 'ui-',
 
-    // helper classnames
-    nameSuccess: 'ui-success',
-    nameShow: 'ui-show',
-
     // outer classnames
     nameHolder: 'ui-form-holder',
 
@@ -54,12 +50,12 @@ ui.requiredForms.Start = () => {
             if (that.type === 'radio') {
 
                 radios = ui.find('[type="radio"][name="' + that.name + '"]');
-                ui.addClass(radios, ui.requiredForms.nameSuccess);
+                ui.addClass(radios, ui.globals.nameSuccess);
 
-            } else ui.addClass(that, ui.requiredForms.nameSuccess);
+            } else ui.addClass(that, ui.globals.nameSuccess);
 
             ui.removeClass(p, ui.requiredForms.nameError);
-            if (showMsg) ui.removeClass(next, ui.requiredForms.nameShow);
+            if (showMsg) ui.removeClass(next, ui.globals.nameShow);
 
             setTimeout(() => { // resize modals
                 if (ui.modal !== undefined) ui.modal.resizer();
@@ -83,12 +79,12 @@ ui.requiredForms.Start = () => {
                 if (el.type === 'radio') {
 
                     radios = ui.find('[type="radio"][name="' + that.name + '"]');
-                    ui.removeClass(radios, ui.requiredForms.nameSuccess);
+                    ui.removeClass(radios, ui.globals.nameSuccess);
 
-                } else ui.removeClass(el, ui.requiredForms.nameSuccess);
+                } else ui.removeClass(el, ui.globals.nameSuccess);
 
                 ui.addClass(p, ui.requiredForms.nameError);
-                if (showMsg) ui.addClass(next, ui.requiredForms.nameShow);
+                if (showMsg) ui.addClass(next, ui.globals.nameShow);
 
                 setTimeout(() => { // resize modals
                     if (ui.modal !== undefined) ui.modal.resizer();
@@ -265,7 +261,7 @@ ui.requiredForms.Start = () => {
 
             for (i = 0; i < formElems.length; i++) {
 
-                if (ui.hasClass(formElems[i], ui.requiredForms.nameSuccess)) {
+                if (ui.hasClass(formElems[i], ui.globals.nameSuccess)) {
                     success += 1;
 
                 } else {

@@ -94,7 +94,7 @@ ui.onload(() => {
     ui.on(document,
         'click',
 
-        `.${ui.darkMode.nameToggle}`,
+        `.${ui.globals.nameToggle}`,
 
         function (e) {
 

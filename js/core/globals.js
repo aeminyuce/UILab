@@ -32,6 +32,34 @@ export const ui = {
         svgIconViewBox: '0 0 264 264',
         nameIcon: 'ui-icon',
 
+        // classnames
+        nameOpen: 'ui-open',
+        nameOpenEase: 'ui-open-ease',
+
+        nameShow: 'ui-show',
+        nameShowEase: 'ui-show-ease',
+        nameShowed: 'ui-showed',
+
+        namePause: 'ui-pause',
+        namePauseEase: 'ui-pause-ease',
+
+        nameLoaded: 'ui-loaded',
+        nameNotLoaded: 'ui-no-loaded',
+
+        nameSuccess: 'ui-success',
+        nameHide: 'ui-hidden',
+        nameFaded: 'ui-faded',
+        nameResized: 'ui-resized',
+        nameFiltered: 'ui-filtered',
+        nameActive: 'ui-active',
+        nameSelected: 'ui-selected',
+        nameChecked: 'ui-checked',
+        nameToggle: 'ui-toggle',
+        nameChange: 'ui-changed',
+
+        nameAsc: 'ui-asc',
+        nameDesc: 'ui-desc',
+
         // data attributes
         dataPrefix: 'data-ui-',
         dataClasses: 'data-ui-classes',

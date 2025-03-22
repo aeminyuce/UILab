@@ -14,12 +14,6 @@ ui.photoslide = {
     namePrev: 'ui-photoslide-prev',
     nameNext: 'ui-photoslide-next',
 
-    // helper classNames
-    nameShow: 'ui-show',
-    nameSelected: 'ui-selected',
-
-    nameLoaded: 'ui-loaded',
-
     // outer classnames
     nameBtn: 'ui-btn',
 
@@ -54,7 +48,7 @@ ui.photoslide = {
                 dataSrc = el.getAttribute(ui.photoslide.dataSrc);
 
                 slider = ui.closest(el, '.' + ui.photoslide.target)[0];
-                ui.addClass(slider, ui.photoslide.nameLoaded);
+                ui.addClass(slider, ui.globals.nameLoaded);
 
                 if (dataSrc !== null && dataSrc !== '') {
 
@@ -77,8 +71,8 @@ ui.photoslide = {
                 nav = ui.find('.' + ui.photoslide.nameNav, slider)[0];
                 if (dataSrcLists[i].length > 1) {
 
-                    ui.addClass(ui.find('.' + ui.photoslide.nameBtn, slider), ui.photoslide.nameShow);
-                    ui.addClass(nav, ui.photoslide.nameShow);
+                    ui.addClass(ui.find('.' + ui.photoslide.nameBtn, slider), ui.globals.nameShow);
+                    ui.addClass(nav, ui.globals.nameShow);
 
                     if (nav.innerHTML === '') {
 
@@ -87,7 +81,7 @@ ui.photoslide = {
                         for (j = 0; j < dataSrcLists[i].length; j++) {
 
                             if (j === 0) {
-                                navDots += '<' + ui.photoslide.tagNavDot + ' class="' + ui.photoslide.nameSelected + '"></' + ui.photoslide.tagNavDot + '>';
+                                navDots += '<' + ui.photoslide.tagNavDot + ' class="' + ui.globals.nameSelected + '"></' + ui.photoslide.tagNavDot + '>';
 
                             } else navDots += '<' + ui.photoslide.tagNavDot + '></' + ui.photoslide.tagNavDot + '>';
 
@@ -152,10 +146,10 @@ ui.photoslide = {
 
                 dots = ui.find('.' + ui.photoslide.nameNav + ' i', slider);
 
-                ui.removeClass(dots, ui.photoslide.nameSelected);
-                ui.addClass(dots[count[i]], ui.photoslide.nameSelected);
+                ui.removeClass(dots, ui.globals.nameSelected);
+                ui.addClass(dots[count[i]], ui.globals.nameSelected);
 
-                ui.removeClass(slider, ui.photoslide.nameLoaded);
+                ui.removeClass(slider, ui.globals.nameLoaded);
 
                 if (loadedImages[i][count[i]] === undefined) {
 
@@ -165,19 +159,19 @@ ui.photoslide = {
                     loadedImages[i][count[i]].onload = () => {
 
                         img.src = loadedImages[i][count[i]].src;
-                        ui.addClass(slider, ui.photoslide.nameLoaded);
+                        ui.addClass(slider, ui.globals.nameLoaded);
 
                     };
 
                     img.onerror = () => {
-                        ui.removeClass(slider, ui.photoslide.nameLoaded);
+                        ui.removeClass(slider, ui.globals.nameLoaded);
                     };
 
 
                 } else {
 
                     img.src = loadedImages[i][count[i]].src;
-                    ui.addClass(slider, ui.photoslide.nameLoaded);
+                    ui.addClass(slider, ui.globals.nameLoaded);
 
                 }
 
