@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useContext } from 'react';
 import Calendar from '@components/Calendar';
 import Grid from '@components/Grid';
 
@@ -10,19 +9,18 @@ import PageNav from '@layouts/PageNav';
 import Preview from '@layouts/Preview';
 
 // utils
-import { StoreContext } from '@utils/StoreReducer';
+import { StoreActions } from '@utils/StoreActions';
 
 export default function () {
-    const { store } = useContext(StoreContext);
-
-    const storedTheme = store?.calendar?.theme;
-    const theme = storedTheme ? ` ${storedTheme}` : '';
-
-    const storedStyle = store?.calendar?.style;
-    const style = storedStyle ? ` ${storedStyle}` : '';
+    const {
+        calendarTheme, setCalendarTheme,
+        calendarStyle, setCalendarStyle,
+    } = StoreActions();
 
     // themes
-    const themes = [
+    const selectedTheme = calendarTheme ? ' ' + calendarTheme : '';
+
+    const themeList = [
         { name: 'Gray', theme: 'ui-theme-gray', color: 'ui-fill-dark-200' },
         { name: 'Jungle', theme: 'ui-theme-jungle', color: 'ui-fill-dark-100' },
         { name: 'Sea', theme: 'ui-theme-sea', color: 'ui-fill-dark-100' },
@@ -49,7 +47,7 @@ export default function () {
             export default function () {
                 return (
                     {/* jsx comment */}
-                    <Calendar className='ui-round ui-shadow-lg${theme}' />
+                    <Calendar className='ui-round ui-shadow-lg${selectedTheme}' />
                 );
             }
         `
@@ -66,8 +64,8 @@ export default function () {
 
                             <p>The Calendar component lets users select a day, month, or year.</p>
 
-                            <Preview indSize={3} actions={{ theme: 'CALENDAR_THEME' }} themes={themes} type='react' value={styles.basic}>
-                                <Calendar className={`ui-round ui-shadow-lg${theme}`} />
+                            <Preview indSize={3} theme={{ get: selectedTheme, set: setCalendarTheme}} themeList={themeList} type='react' value={styles.basic}>
+                                <Calendar className={`ui-round ui-shadow-lg${selectedTheme}`} />
                             </Preview>
 
                             <h3 className='ui-h3'>Globals</h3>

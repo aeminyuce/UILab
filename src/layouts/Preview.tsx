@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useContext } from 'react';
 import Button from '@components/Button';
 import Dropdown from '@components/Dropdown';
 import Grid from '@components/Grid';
@@ -9,50 +8,44 @@ import SvgIcon from '@components/SvgIcon';
 import Code from '@layouts/Code';
 
 // utils
-import type { PreviewProps, ColorsProps, ShowColorProps } from '@utils/Models';
-import { StoreContext } from '@utils/StoreReducer';
+import type { PreviewProps, ThemeListProps, ShowColorProps } from '@utils/Models';
 
 // assets
 import { IconAngleDown } from '@icon/js/general/angle-down';
 
 export default function Preview(props:PreviewProps) {
 
-    const { children, type, value, indSize, actions, themes } = props;
-    const { store, setStore } = useContext(StoreContext);
-
-    const storedTheme = store?.calendar?.theme;
-    const storedStyle = store?.calendar?.style;
+    const { children, type, value, indSize, theme, style, themeList } = props;
 
     const switcherItemClasses = 'ui-cursor-default';
-
     let selectedColor = '';
 
-    themes.forEach((item: ColorsProps) => { // update selected color when theme switches
-        const theme = `${item.theme} ${item.color}`;
-        if (theme === storedTheme) selectedColor = item.name;
+    themeList.forEach((item: ThemeListProps) => { // update selected color when theme switches
+        const name = `${item.theme} ${item.color}`;
+        if (name === theme.get) selectedColor = item.name;
     });
 
     return (
         <>
         <div className='ui-align-r ui-md-align-c ui-p-5 ui-border-h ui-border-t ui-round-t'>
-            {actions.theme &&
+            {theme.set &&
                 <Dropdown align='l'>
                     <Button ghost className='ui-round'>
-                        <ShowColor name={selectedColor} theme={storedTheme} />
+                        <ShowColor name={selectedColor} theme={theme.get} />
                         <SvgIcon as='js' toggle src={IconAngleDown} className='ui-m-15-l' />
                     </Button>
                     <Dropdown.Menu hasIcon className='ui-round ui-shadow-lg'>
 
-                        <Dropdown.Item selected className={switcherItemClasses} onClick={() => setStore({ type: actions.theme, theme: null })}>
+                        <Dropdown.Item selected className={switcherItemClasses} onClick={() => theme.set(null)}>
                             <ShowColor name='No' />
                         </Dropdown.Item>
 
-                        {themes.map((item: ColorsProps) => {
-                            const theme = `${item.theme} ${item.color}`
+                        {themeList.map((item: ThemeListProps) => {
+                            const name = `${item.theme} ${item.color}`;
 
                             return (
-                                <Dropdown.Item key={item.name} className={switcherItemClasses} onClick={() => setStore({ type: actions.theme, theme: theme })}>
-                                    <ShowColor name={item.name} theme={theme} />
+                                <Dropdown.Item key={item.name} className={switcherItemClasses} onClick={() => theme.set(name)}>
+                                    <ShowColor name={item.name} theme={name} />
                                 </Dropdown.Item>
                             )
                         })}

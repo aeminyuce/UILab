@@ -12,7 +12,7 @@ export const StoreContext = createContext({
 });
 
 // actions
-const actions = {
+export const actions = {
 	themes: {
 		calendar: 'CALENDAR_THEME',
 	},

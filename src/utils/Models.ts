@@ -60,7 +60,7 @@ export interface CodeProps {
 }
 
 // Preview
-export interface ColorsProps {
+export interface ThemeListProps {
 	name: string;
 	theme: string;
 	color: string;
@@ -71,11 +71,15 @@ export interface PreviewProps {
 	type: 'react' | 'js' | 'css';
 	value: string;
 	indSize: number;
-	actions: {
-		theme?: string;
-		style?: string;
-	};
-	themes: ColorsProps[];
+	theme?: {
+		get?: string;
+		set?(name: string): void;
+	}
+	style?: {
+		get?: string;
+		set?(name: string): void;
+	}
+	themeList: ThemeListProps[];
 }
 
 export interface ShowColorProps {
