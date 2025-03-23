@@ -13,9 +13,9 @@ import './core/ajax.js';
 import './core/assets.js';
 
 // Modifiers
-import './modules/user-agents.js';
-import './modules/dark-mode.js';
-import './modules/effects.js';
+import './modifiers/user-agents.js';
+import './modifiers/dark-mode.js';
+import './modifiers/effects.js';
 
-// Components
+// Modules
 import './modules/tooltip.js';
