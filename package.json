@@ -23,11 +23,12 @@
   ],
   "files": [
     "components",
-    "icon",
-    "js/core",
-    "js/modules",
+    "icon/js",
+    "icon/sprite",
     "less/core",
-    "less/modules"
+    "less/modules",
+    "js/core",
+    "js/modules"
   ],
   "license": "MIT",
   "scripts": {

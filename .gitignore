@@ -10,3 +10,5 @@ less/.npmignore
 
 js/package.json
 js/.npmignore
+
+svg
