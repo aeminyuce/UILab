@@ -127,7 +127,7 @@ export default function () {
                                                 return (
                                                     <Button key={name} multi noease className='ui-col-150 ui-p-10-v ui-no-p-h ui-m-1 ui-round' onClick={() => copyText(setIconCopy(name))}>
                                                         <SvgIcon as='sprite' src={spritesList[item.category]} symbolId={name} className={classes} opacity='no' />
-                                                        <span className='ui-font-13 ui-color-white-25 ui-m-5-t ui-block'>{name}</span>
+                                                        <span className='ui-font-13 ui-opacity-half ui-m-5-t ui-block'>{name}</span>
                                                     </Button>
                                                 )
                                             })}
