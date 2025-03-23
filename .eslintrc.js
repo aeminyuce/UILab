@@ -12,51 +12,6 @@ module.exports = {
             "version": "detect"
         },
     },
-    globals: {
-
-        "ui": true,
-
-        "window": true,
-        "document": true,
-
-        "Event": true,
-        "navigator": true,
-
-        "require": true,
-        "module": true,
-        "Promise": true,
-
-        "NodeList": true,
-        "Image": true,
-
-        "setInterval": true,
-        "clearInterval": true,
-        "setTimeout": true,
-        "clearTimeout": true,
-
-        "atob": true,
-        "Blob": true,
-        "Uint8Array": true,
-        "confirm": true,
-        "performance": true,
-
-        "XMLHttpRequest": true,
-        "FileReader": true,
-        "FormData": true,
-        "sessionStorage": true,
-
-        "alert": true,
-        "console": true,
-
-        "global": true,
-        "__dirname": true,
-
-        "describe": true,
-        "before": true,
-        "it": true,
-        "after": true
-
-    },
     rules: { // https://eslint.org/docs/rules/
 
         "array-bracket-spacing": "error",
